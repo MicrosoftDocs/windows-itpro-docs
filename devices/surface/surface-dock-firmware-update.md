@@ -21,7 +21,7 @@ Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface 
 > [!IMPORTANT]
 >Microsoft periodically releases new versions of Surface Dock Firmware Update. The MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version.
 
-## Monitor the Surface Dock Firmare Update
+## Monitor the Surface Dock Firmware Update
 
 This section is optional and provides an overview of how to monitor installation of the firmware update. When you are ready to install the update, see [Install the Surface Dock Firmware Update](#install-the-surface-dock-firmware-update) below. For more detailed information about monitoring the update process, see the following sections in this article: 
   - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
