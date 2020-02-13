@@ -260,11 +260,6 @@
 ##### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 
-
-
-
-
-
 ### [Operations]()
 #### [Security operations]()
 ##### [Portal overview](microsoft-defender-atp/portal-overview.md)
