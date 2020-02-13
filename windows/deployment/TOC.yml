@@ -9,16 +9,13 @@
           href: windows-10-deployment-scenarios.md
           items: 
             - name: H3
-              href: windows-10-deployment-scenarios.md
               items:
                 - name: H4
-                  href: windows-10-deployment-scenarios.md
                   items:
                     - name: H5
-                      href: windows-10-deployment-scenarios.md
                       items:
                         - name: H6
-                          href: windows-10-deployment-scenarios.md
                           items:
                             - name: H7
-                              href: windows-10-deployment-scenarios.md
+                              items:
+                                - name: foo
