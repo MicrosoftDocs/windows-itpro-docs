@@ -911,7 +911,6 @@ The following list shows the supported values:
         </Target>
         <Meta>
             <Format xmlns="syncml:metinf">int</Format>
-        </Meta>
         <Data>0</Data>
     </Item>
 </Replace>
@@ -961,11 +960,16 @@ If you want to disable this policy use the following SyncML:
  </Replace>
 ```
 <!--/Policy-->
+
 <!--Policy-->
+
 <a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+
 <!--Description-->
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+
 <!--/Description-->
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -988,14 +992,19 @@ This setting initiates a client-driven recovery password refresh after an OS dri
 </tr>
 </table> 
 <!--/SupportedSKUs-->
+
 Value type is int. Supported operations are Add, Delete, Get, and Replace.
+
 <!--SupportedValues-->
+
 Supported values are:
 - 0 – Refresh off (default)
 - 1 – Refresh on for Azure AD-joined devices 
 - 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
+
 <!--/SupportedValues-->
 <!--/Policy-->
+
 <!--Policy-->
 
 <a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
@@ -1038,11 +1047,14 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 </tr>
 </table> 
 <!--/SupportedSKUs-->
+
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
+
 <!--/Policy-->
+
 <!--Policy-->
 <a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
 <!--Description-->
@@ -1070,13 +1082,17 @@ This node reports compliance state of device encryption on the system.
 </tr>
 </table> 
 <!--/SupportedSKUs-->
+
 <!--SupportedValues-->
 Supported values:  
 - 0 - Indicates that the device is compliant.
 - Any other value represents a non-compliant device.
+
 <!--/SupportedValues-->
 Value type is int. Supported operation is Get.
+
 <!--/Policy-->
+
 <!--Policy-->
 
 <a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
@@ -1113,11 +1129,15 @@ Status code can be one of the following:
 </tr>
 </table> 
 <!--/SupportedSKUs-->
+
 Value type is int. Supported operation is Get.
+
 <!--/Policy-->
+
 <!--Policy-->
 
 <a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+
 <!--Description-->
 This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
@@ -1143,7 +1163,9 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+
 <!--/SupportedSKUs-->
+
 Value type is string. Supported operation is Get.
 
 ### SyncML example
