@@ -36,9 +36,9 @@ Broad deployment of Surface devices through Windows Autopilot, including enrollm
 
 These Windows versions support a 4,000-byte (4k) hash value that uniquely identifies devices for Windows Autopilot, which is necessary for deployments at scale. All new Surface devices, including Surface Pro 7, Surface Pro X, and Surface Laptop 3, ship with Windows 10 Version 1903 or later.
 
-## Exchange experience on Surface devices in need of repair
+## Exchange experience on Surface devices in need of repair or replacement
 
-When receiving an exchange service order directly from a customer, Microsoft automatically checks for Windows Autopilot service enrollment and then deregisters the device from the customer’s tenant.  Upon shipping back to the customer, Microsoft ensures the replacement device is enrolled into Windows Autopilot.
+Microsoft automatically checks every Surface for Autopilot enrollment and will deregister the device from the customer’s tenant.  Microsoft ensures the replacement device is enrolled into Windows Autopilot once a replacement is shipped back to the customer. This service is available on all device exchange service orders directly with Microsoft.
 
 > [!NOTE]
 > When customers use a Partner to return devices, the Partner is responsible for managing the exchange process including deregistering and enrolling devices into Windows Autopilot.
