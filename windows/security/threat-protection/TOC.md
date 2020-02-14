@@ -17,15 +17,15 @@
 ### [Deployment guide]()
 #### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 
-#### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
+#### [Phase 1: Prepare Microsoft Defender ATP deployment](microsoft-defender-atp/prepare-deployment.md)
 ##### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
 ##### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 ##### [Security compass](microsoft-defender-atp/security-compass.md)
 
-#### [Phase 2: Onboard](microsoft-defender-atp/production-deployment.md)
+#### [Phase 2:  Setup the Microsoft Defender ATP service](microsoft-defender-atp/production-deployment.md)
 
 
-#### [Phase 3: Configure](microsoft-defender-atp/configure.md)
+#### [Phase 3: Onboard](microsoft-defender-atp/configure.md)
 
 
 ### [Manage capabilities]()

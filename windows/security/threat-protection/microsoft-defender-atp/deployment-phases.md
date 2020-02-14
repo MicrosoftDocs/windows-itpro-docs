@@ -31,13 +31,13 @@ There are three phases in deploying Microsoft Defender ATP:
     </td>
      <td align="center">
       <a href="windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/oboard.png" alt="Onboard to the Microsoft Defender ATP service" title="Onboard to Microsoft Defender ATP" />
-      <br/>Onboard </a><br>
+        <img src="images/oboard.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
+      <br/>Setup </a><br>
     </td>
     <td align="center">
       <a href="windows/security/threat-protection/microsoft-defender-atp/configure">
-        <img src="images/configure.png" alt="Configure capabilities" title="Configure capabilities" />
-      <br/>Configure </a><br>
+        <img src="images/configure.png" alt="Onboard" title="Onboard" />
+      <br/>Onboard </a><br>
 </td>
   </tr>
   <tr>
@@ -52,12 +52,12 @@ There are three phases in deploying Microsoft Defender ATP:
 You can use the security compass to better prepare you in the deployment journey. 
     </td>
     <td valign="top" style="width:25%; border:0;">
-     The onboarding phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
+     The setup phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
 
 - Validating the licensing
 - Completing the setup wizard within the portal
 - Network configuration
-- Onboarding a device 
+
 </td>
     <td valign="top" style="width:25%; border:0;">
 Maximize the Microsoft Defender ATP capabilities by configuring the components that make up the platform. 
