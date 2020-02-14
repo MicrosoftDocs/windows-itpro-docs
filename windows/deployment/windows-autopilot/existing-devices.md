@@ -205,7 +205,7 @@ See the following examples.
    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
 
      > [!IMPORTANT]
-     >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (sysprep). This action will fail if the target machine is joined to a domain.
+     > The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which uses the System Preparation Tool (sysprep). This action will fail if the target machine is joined to a domain.
      
      >[!IMPORTANT]
      >The System Preparation Tool (sysprep) will run with the /Generalize parameter which on Windows 10 1903 & Windows 10 1909 versions will delete the AutoPilot profile file and the machine will boot into OOBE phase instead of AutoPilot. Please see Michael Niehaus's blog with instructions [A challenge with Windows Autopilot for existing devices and Windows 10 1903](https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/) on the solution to prevent this.
