@@ -42,9 +42,8 @@ There are three phases in deploying Microsoft Defender ATP:
   </tr>
   <tr>
     <td style="width:25%; border:0;">
-    The planning phase guides you through what you need to consider when deploying Microsoft Defender ATP. 
+    The planning phase guides you through what you need to consider when deploying Microsoft Defender ATP:
 
-You will need to consider the following:
 - Stakeholders and Sign-off
 - Environment considerations
 - Access 
@@ -66,4 +65,6 @@ Maximize the Microsoft Defender ATP capabilities by configuring the components t
   </tr>
 </table>
 
- 
+ The deployment guide will walk you through the recommended path in deploying Microsoft Defender ATP. 
+
+

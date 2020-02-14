@@ -22,6 +22,47 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+
+Deploying Microsoft Defender ATP is a three-phase process:
+
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;">
+      <a href= "windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
+        <img src="images/plan.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+      <br/>Plan </a><br>
+    </td>
+     <td align="center">
+      <a href="windows/security/threat-protection/microsoft-defender-atp/production-deployment">
+        <img src="images/oboard.png" alt="Onboard to the Microsoft Defender ATP service" title="Onboard to Microsoft Defender ATP" />
+      <br/>Onboard </a><br>
+    </td>
+    <td align="center">
+      <a href="windows/security/threat-protection/microsoft-defender-atp/configure">
+        <img src="images/configure.png" alt="Configure capabilities" title="Configure capabilities" />
+      <br/>Configure </a><br>
+</td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+  </tr>
+</table>
+
+You are currently in the onboard phase
+
+![Icons](images/onboard-page.png)
+
+
+
 Proper planning is the foundation of a successful deployment. In this deployment scenario, you'll be guided through the steps on:
 - Tenant configuration
 - Network configuration
