@@ -94,7 +94,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**.
-    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
+    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column. 
 
 5. Click **OK**.
 
@@ -364,3 +364,4 @@ You can also copy the string into a blank text file and attempt to save it with 
 - [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
 - [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Handling false positives/negatives](antivirus-false-positives-negatives.md)

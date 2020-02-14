@@ -43,7 +43,7 @@ The Microsoft Defender ATP solution is built on top of an integration-ready plat
 
 Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities.
 
-![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)
+![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)  
 
 The Microsoft Defender ATP APIs can be grouped into three:
 - Microsoft Defender ATP APIs 
@@ -53,6 +53,9 @@ The Microsoft Defender ATP APIs can be grouped into three:
 ## Microsoft Defender ATP APIs
 
 Microsoft Defender ATP offers a layered API model exposing data and capabilities in a structured, clear and easy to use model, exposed through a standard Azure  AD-based authentication and authorization model allowing access in context of users or SaaS applications. The API model was designed to expose entities and capabilities in a consistent form. 
+
+Watch this video for a quick overview of Microsoft Defender ATP's APIs. 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 The **Investigation API** exposes the richness of Microsoft Defender ATP - exposing calculated or 'profiled' entities (for example, machine, user, and file) and discrete events (for example, process creation and file creation) which typically describes a behavior related to an entity, enabling access to data via investigation interfaces allowing a query-based access to data. For more information see, [Supported APIs](exposed-apis-list.md).
 

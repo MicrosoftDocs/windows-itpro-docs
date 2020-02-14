@@ -34,14 +34,14 @@ Before you get started, see [the main Microsoft Defender ATP for Mac page](micro
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Windows Defender Security Center:
+Download the installation and onboarding packages from Microsoft Defender Security Center:
 
-1. In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
 2. In Section 1 of the page, set operating system to **Linux, macOS, iOS, and Android** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](../windows-defender-antivirus/images/ATP-Portal-Onboarding-page.png)
+    ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/ATP-Portal-Onboarding-page.png)
 
 5. From a command prompt, verify that you have the two files.
     Extract the contents of the .zip files:
@@ -112,6 +112,7 @@ The installation proceeds.
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+   
 
 ## How to Allow Full Disk Access
 

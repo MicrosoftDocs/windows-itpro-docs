@@ -336,7 +336,7 @@
 ##### [Understand Microsoft Defender ATP APIs](use-apis.md)
 ##### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
 
-##### [Get started with Microsoft Defender ATP APIs]()
+##### [Get started]()
 ###### [Introduction](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
@@ -345,6 +345,7 @@
 
 ##### [APIs]()
 ###### [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+###### [Common REST API error codes](common-errors.md)
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
 ###### [Alert]()

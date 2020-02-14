@@ -81,7 +81,8 @@ Here is an example of the response.
             "installations": 750,
             "vulnerabilities": 0
         }
-        ]
+		...
+    ]
 }
 ```
 

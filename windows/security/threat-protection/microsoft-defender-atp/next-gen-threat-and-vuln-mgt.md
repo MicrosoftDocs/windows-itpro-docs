@@ -27,6 +27,10 @@ Effectively identifying, assessing, and remediating endpoint weaknesses is pivot
 
 It helps organizations discover vulnerabilities and misconfigurations in real-time, based on sensors, without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
 
+Watch this video for a quick overview of Threat & Vulnerability Management.    
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+
 ## Next-generation capabilities 
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
@@ -75,3 +79,4 @@ Microsoft Defender ATP’s Threat & Vulnerability Management allows security adm
 - [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
 - [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
 - [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [BLOG: Microsoft’s Threat & Vulnerability Management now helps thousands of customers to discover, prioritize, and remediate vulnerabilities in real time](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

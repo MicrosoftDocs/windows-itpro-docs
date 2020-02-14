@@ -26,6 +26,11 @@ Cyberthreats are emerging more frequently and prevalently. It is critical for or
 
 Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and identify actions that can contain them.
 
+Watch this short video to quickly understand how threat analytics can help you track the latest threats and stop them.
+<p></p>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
+
 ## View the threat analytics dashboard
 
 The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It provides several overviews about the threats covered in the reports:

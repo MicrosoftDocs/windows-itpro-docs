@@ -98,14 +98,16 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
 3. Expand the tree to **Windows components > Windows Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access**.
 
 4. Double-click the **Configure Controlled folder access** setting and set the option to **Enabled**. In the options section you must specify one of the following:
-    * **Enable** - Malicious and suspicious apps will not be allowed to make changes to files in protected folders. A notification will be provided in the Windows event log
+    * **Enable** - Malicious and suspicious apps will not be allowed to make changes to files in protected folders. A notification will be provided in the Windows event log.
     * **Disable (Default)** - The Controlled folder access feature will not work. All apps can make changes to files in protected folders.
     * **Audit Mode** - If a malicious or suspicious app attempts to make a change to a file in a protected folder, the change will be allowed but will be recorded in the Windows event log. This allows you to assess the impact of this feature on your organization.
+    * **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
+    * **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational** > **ID 1124**). Attempts to modify or delete files in protected folders will not be recorded.
 
-      ![Screenshot of group policy option with Enabled and then Enable selected in the drop-down](../images/cfa-gp-enable.png)
+      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](../images/cfa-gp-enable.png)
 
 > [!IMPORTANT]
-> To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and also select **Enable** in the options drop-down menu.
+> To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and select **Block** in the options drop-down menu.
 
 ## PowerShell
 

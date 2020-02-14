@@ -253,6 +253,7 @@
 ##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
+#### [Update Windows 10 media with Dynamic Update](update/media-dynamic-update.md)
 #### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
 #### [Deploy feature updates for user-initiated installations](update/feature-update-user-install.md)
 #### [Conclusion](update/feature-update-conclusion.md)
@@ -271,29 +272,4 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-## Windows Analytics
-### [Windows Analytics overview](update/windows-analytics-overview.md)
-### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
-### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
-### Upgrade Readiness
-#### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
-#### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
-#### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
-#### Get started
-##### [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)
-##### [Upgrade Readiness deployment script](upgrade/upgrade-readiness-deployment-script.md)
-#### Use Upgrade Readiness
-##### [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)
-##### [Upgrade overview](upgrade/upgrade-readiness-upgrade-overview.md)
-##### [Step 1: Identify apps](upgrade/upgrade-readiness-identify-apps.md)
-##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
-##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
-##### [Step 4: Monitor deployment](upgrade/upgrade-readiness-monitor-deployment.md)
-##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
-##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
-### Device Health
-#### [Device Health overview](update/device-health-monitor.md)
-#### [Get started with Device Health](update/device-health-get-started.md)
-#### [Using Device Health](update/device-health-using.md)
-### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
-### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
+

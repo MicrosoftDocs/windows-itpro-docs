@@ -1,6 +1,6 @@
 ---
-title: Get Device Secure score
-description: Retrieves the organizational device secure score.
+title: Get Machine Secure score
+description: Retrieves the organizational machine secure score.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get Device Secure score
+# Get Machine Secure score
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -75,8 +75,7 @@ Here is an example of the response.
 {
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#ConfigurationScore/$entity",
     "time": "2019-12-03T09:15:58.1665846Z",
-    "score": 340,
-    "rbacGroupId": null
+    "score": 340
 }
 ```
 
