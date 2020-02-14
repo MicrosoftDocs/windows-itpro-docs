@@ -38,6 +38,17 @@ There are three phases in deploying Microsoft Defender ATP:
       <a href="/windows/microsoft-defender-atp/configure">
         <img src="images/configure.png" alt="Configure capabilities" title="Configure capabilities" />
       <br/>Configure </a><br>
+</td>
+  </tr>
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;">
+     
+    </td>
+    <td align="center" style="width:25%; border:0;">
+     
+</td>
+    <td align="center" style="width:25%; border:0;">
+</td>    
   </tr>
 </table>
 
