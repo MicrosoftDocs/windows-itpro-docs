@@ -18,7 +18,7 @@
 #### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 
 #### [Phase 1: Plan](microsoft-defender-atp/prepare-deployment.md)
-#### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+##### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
 ##### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 ##### [Security compass](microsoft-defender-atp/security-compass.md)
 

@@ -40,20 +40,9 @@ There are three phases in deploying Microsoft Defender ATP:
       <br/>Configure </a><br>
 </td>
   </tr>
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;">
-     
-    </td>
-    <td align="center" style="width:25%; border:0;">
-     
-</td>
-    <td align="center" style="width:25%; border:0;">
-</td>    
-  </tr>
-</table>
-
-## Plan 
-The planning phase guides you through what you need to consider when deploying Microsoft Defender ATP. 
+  <tr>
+    <td style="width:25%; border:0;">
+    The planning phase guides you through what you need to consider when deploying Microsoft Defender ATP. 
 
 You will need to consider the following:
 - Stakeholders and Sign-off
@@ -62,14 +51,19 @@ You will need to consider the following:
 - Adoption order
 
 You can use the security compass to better prepare you in the deployment journey. 
-
-## Onboard
-The onboarding phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+     The onboarding phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
 
 - Validating the licensing
 - Completing the setup wizard within the portal
 - Network configuration
-= Onboarding a device 
-
-## Configure
+- Onboarding a device 
+</td>
+    <td valign="top" style="width:25%; border:0;">
 Maximize the Microsoft Defender ATP capabilities by configuring the components that make up the platform. 
+</td>    
+  </tr>
+</table>
+
+ 
