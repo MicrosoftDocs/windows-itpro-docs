@@ -51,7 +51,7 @@ Surface partners that are enabled for Windows Autopilot include:
 
 - [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) 
 - [Atea](https://www.atea.com/)
-- [Bechtle](https://www.bechtle.com/backend/cms/marken/microsoft/microsoft-windows-autopilot) 
+- [Bechtle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) 
 - [Cancom](https://www.cancom.de/)
 - [CDW](https://www.cdw.com/)
 - [Computacenter](https://www.computacenter.com/uk)
