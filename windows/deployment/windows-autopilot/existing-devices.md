@@ -204,7 +204,7 @@ See the following examples.
    - <u>Enable the account and specify the local administrator password</u>: Optional.
    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
 
-     >[!IMPORTANT]
+     > [!IMPORTANT]
      >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (sysprep). This action will fail if the target machine is joined to a domain.
      
      >[!IMPORTANT]
