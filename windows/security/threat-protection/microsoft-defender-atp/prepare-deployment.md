@@ -61,8 +61,6 @@ Deploying Microsoft Defender ATP is a three-phase process:
 
 You are currently in the planning phase.
 
-![Icons](images/plan-page.png)
-
 
 
 
