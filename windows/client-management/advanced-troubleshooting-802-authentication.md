@@ -59,7 +59,7 @@ First, validate the type of EAP method being used:
  
 ![eap authentication type comparison](images/comparisontable.png)
 
-If a certificate is used for its authentication method, check if the certificate is valid. For server (NPS) side, you can confirm what certificate is being used from the EAP property menu (In **NPS snapp-in** go to **Policies** -> **Network Policies** -> Right click on the policy and select **Properties** -> In the appeared window go to **Constraints** tab and select **Authentication methods** section):
+If a certificate is used for its authentication method, check if the certificate is valid. For server (NPS) side, you can confirm what certificate is being used from the EAP property menu. In **NPS snapp-in**, go to **Policies** > **Network Policies**. Right click on the policy and select **Properties**. In the pop-up window, go to the **Constraints** tab and select select the **Authentication methods** section.
 
 ![Constraints tab of the secure wireless connections properties](images/eappropertymenu.png)
  
@@ -118,4 +118,3 @@ Even if audit policy appears to be fully enabled, it sometimes helps to disable 
 
 [Troubleshooting Windows Vista 802.11 Wireless Connections](https://technet.microsoft.com/library/cc766215%28v=ws.10%29.aspx)<br>
 [Troubleshooting Windows Vista Secure 802.3 Wired Connections](https://technet.microsoft.com/library/cc749352%28v=ws.10%29.aspx)
-
