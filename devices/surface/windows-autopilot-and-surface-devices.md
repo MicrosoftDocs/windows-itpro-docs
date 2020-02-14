@@ -13,7 +13,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 02/13/2020
+ms.date: 02/14/2020
 ---
 
 # Windows Autopilot and Surface devices
