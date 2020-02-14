@@ -18,11 +18,14 @@
 #### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 
 #### [Phase 1: Plan](microsoft-defender-atp/prepare-deployment.md)
-##### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+#### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+##### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
+##### [Security compass](microsoft-defender-atp/security-compass.md)
 
-#### [Phase 2: Pilot/Evaluate the capabilities](microsoft-defender-atp/evaluation-lab.md)
+#### [Phase 2: Onboard](microsoft-defender-atp/production-deployment.md)
 
-#### [Phase 3: Deploy](microsoft-defender-atp/production-deployment.md)
+
+#### [Phase 3: Configure](microsoft-defender-atp/configure.md)
 
 ### [Configuration guide]()
 #### [Configure and manage capabilities]()
@@ -309,9 +312,9 @@
 
 
 
-#### [Custom detections]()
-##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Custom detections]()
+###### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
+###### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
 
 #### [Security administration]()
@@ -374,7 +377,7 @@
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 #### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
-##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoftntivirus.md)
+##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 
 #### [Endpoint detection and response]()
 #####[Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
