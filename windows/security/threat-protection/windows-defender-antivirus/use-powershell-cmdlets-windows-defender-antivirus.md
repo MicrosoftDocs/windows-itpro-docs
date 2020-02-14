@@ -40,9 +40,9 @@ PowerShell is typically installed under the folder _%SystemRoot%\system32\Window
 
 ## Use Windows Defender Antivirus PowerShell cmdlets
 
-1. On the Windows taskbar, select **Start**, type **powershell**, and press **Enter**.
-2. Select **Windows PowerShell** to open the interface.
-3. Enter the command and parameters.
+1. In the Windows search bar, type **powershell**.
+2. Select **Windows PowerShell** from the results to open the interface.
+3. Enter the PowerShell command and any parameters.
 
 > [!NOTE]
 > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
