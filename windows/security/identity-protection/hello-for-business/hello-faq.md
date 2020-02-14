@@ -51,7 +51,7 @@ It is currently possible to set a convenience PIN on Azure Active Directory Join
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
 
 ## Why is authentication failed after setting up PIN registration?
-In hybrid mode a lot sync happened after enrollment for authentication to work. Authentication will only work when the sync between AD Connect server to Azure AD will be completed.This sync depends on the sync time setup for AD Connect server to Azure AD.
+In hybrid mode, a lot of sync happen after enrollment for authentication to work. Authentication will only work when the sync between the AD Connect server to Azure AD is completed. This sync depends on the sync time setup for AD Connect server to Azure AD.
 
 ## What is the password-less strategy?
 Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**.
@@ -169,4 +169,3 @@ Windows Hello for Business can work with any third-party federation servers that
 
 ## Does Windows Hello for Business work with Mac and Linux clients?
 Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
-
