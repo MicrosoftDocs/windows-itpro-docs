@@ -1,20 +1,22 @@
 - name: Windows 10 deployment resources and documentation
   href: index.yml
   items: 
-    - name: Explore
+    - name: Get started
       items: 
-        - name: Windows 10 deployment scenarios
-          href: windows-10-deployment-scenarios.md
-        - name: Windows as a service
+        - name: Deployment tools and methods
           href: file1.md
-        - name: Deployment test lab 
+        - name: Understand Windows as a service
+          href: file1.md
+        - name: Calendar of operations
+          href: file1.md
+        - name: Deployment test lab
           items: 
             - name: Windows 10 deployment test lab
-              href: windows-10-deployment-scenarios.md
+              href: file1.md
             - name: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit
-              href: windows-10-poc-mdt.md
+              href: file1.md
             - name: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
-              href: windows-10-poc-sc-config-mgr.md
+              href: file1.md
 
     - name: Plan
       items: 
@@ -36,14 +38,20 @@
 
     - name: Manage Windows 10 updates
       items: 
-        - name: Manage with Configuration Manager
-          href: file1.md
-        - name: Manage with Group Policy 
-          href: file1.md
-        - name: Manage with WSUS 
-          href: file1.md
-        - name: Monitor updates 
-          href: file1.md
+        - name: Manage updates locally
+          items: 
+            - name: Manage updates with WSUS
+              href: file1.md
+            - name: Manage updates using images
+              href: file1.md
+        - name: Manage updates from the cloud
+          items: 
+            - name: Manage updates with Configuration Manager
+              href: file1.md
+            - name: Manage updates with Intune
+              href: file1.md
+            - name: Manage with Group Policy 
+              href: file1.md
 
     - name: Reference
       items: 
