@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Plan Microsoft Defender ATP deployment
+# Prepare Microsoft Defender ATP deployment
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
