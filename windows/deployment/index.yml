@@ -30,8 +30,8 @@ landingContent:
             url: file1.md
           - text: Article1b
             url:  file1.md
-          - text: Windows as a service
-            url: Article1c
+          - text: Article1c
+            url: file1.md
 
   # Card (optional)
   - title: Title2
