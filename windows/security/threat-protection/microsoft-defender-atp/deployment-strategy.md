@@ -1,5 +1,5 @@
 ---
-title: Security compass
+title: Deployment strategy
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -16,9 +16,9 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Security compass
+# Deployment strategy
 
-Use the security compass as a guide in 
+Use the security 
 
 
 Put Chris Hatley's visios here
