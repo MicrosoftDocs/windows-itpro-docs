@@ -64,8 +64,8 @@ Guides only require network access to download and use the app.
 
 ## Azure Active Directory Guidance
 
->[!NOTE]
->This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
+> [!NOTE]
+> This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
 
 1. Ensure that you have an Azure AD License.
 Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md)for additional information.
@@ -99,8 +99,8 @@ These steps ensure that your company’s users (or a group of users) can add dev
 
 ### Ongoing device management
 
->[!NOTE]
->This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
+> [!NOTE]
+> This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
 Ongoing device management will depend on your mobile device management infrastructure.  Most have the same general functionality but the user interface may vary widely.
 
 1. [CSPs (Configuration Service Providers)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) allows you to create and deploy management settings for the devices on your network. Some CSPs are supported by HoloLens devices. (See the list of CSPs for HoloLens [here](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)).
@@ -150,8 +150,8 @@ Steps for SCEP can be found [here](https://docs.microsoft.com/intune/protect/cer
 
 ### How to Upgrade to Holographics for Business Commercial Suite
 
->[!NOTE]
->Windows Holographics for Business (commercial suite) is only intended for HoloLens 1st gen devices. The profile will not be applied to HoloLens 2 devices.
+> [!NOTE]
+> Windows Holographics for Business (commercial suite) is only intended for HoloLens 1st gen devices. The profile will not be applied to HoloLens 2 devices.
 
 Directions for upgrading to the commercial suite can be found [here](https://docs.microsoft.com/intune/configuration/holographic-upgrade).
 

@@ -69,8 +69,8 @@ To go back to a previous version of HoloLens (1st gen), follow these steps:
 
 # Use policies to manage updates to HoloLens
 
->[!NOTE]
->HoloLens (1st gen) devices must be [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md) to manage updates.
+> [!NOTE]
+> HoloLens (1st gen) devices must be [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md) to manage updates.
 
 To configure how and when updates are applied, use the following policies:
 
