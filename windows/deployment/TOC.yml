@@ -1,13 +1,15 @@
 - name: Windows 10 deployment resources and documentation
   href: index.yml
   items: 
+    - name: What's new in Windows 10 deployment
+      href: file1.md
     - name: Get started
       items: 
         - name: Deployment tools and methods
           href: file1.md
-        - name: Understand Windows as a service
+        - name: Deployment process posters
           href: file1.md
-        - name: Calendar of operations
+        - name: Windows as a service
           href: file1.md
         - name: Deployment test lab
           items: 
@@ -21,7 +23,23 @@
     - name: Plan
       items: 
         - name: Plan your Windows 10 deployment
-          href: file1.md
+          items:
+            - name: Windows 10 compatibility
+              href: file1.md 
+            - name: Windows 10 infrastructure requirements
+              href: file1.md   
+            - name: Windows 10 volume license media
+              href: file1.md
+            - name: Plan for volume activation
+              href: file1.md 
+            - name: Features removed or planned for replacement
+              items:
+                - name: Windows 10 features lifecycle
+                  href: file1.md
+                - name: Features we're no longer developing
+                  href: file1.md
+                - name: Features we removed
+                  href: file1.md         
         - name: Plan an update management strategy
           href: file1.md
         - name: Review application compatibility 
