@@ -33,20 +33,21 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 ### Requirements
 
 - [Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access and all updates applied
-- [Windows 10, version 1809 ADK](https://go.microsoft.com/fwlink/?linkid=2026036)
-- [SQL Server 2017 Express](https://www.microsoft.com/sql-server/sql-server-editions-express)
+- [Windows 10, version 1903 ADK](https://go.microsoft.com/fwlink/?linkid=2086042)
+- [SQL Server 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658)
 - alternatively any full SQL instance e.g. SQL Server 2014 or newer incl. CU / SP
 
-### Install SQL Server 2017 Express / alternatively use any Full SQL instance e.g. SQL Server 2014 or newer
+### Install SQL Server 2019 Express 
+### If you want to use a Full SQL instance e.g. SQL Server 2014 or newer, then skip to the next paragraph
 
-1. Download and open the [SQL Server 2017 Express](https://www.microsoft.com/sql-server/sql-server-editions-express) package.
+1. Download and open the [SQL Server 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658) package.
 2. Select **Basic**.
 3. Accept the license terms.
 4. Enter an install location or use the default path, and then select **Install**.
 5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**. 
     ![In this example, the instance name is SQLEXPRESS01](images/sql-instance.png)
 
-### Install VAMT using the ADK
+### Install VAMT using the latest ADK
 
 1. Download and open the [Windows 10, version 1903 ADK](https://go.microsoft.com/fwlink/?linkid=2086042) package.
 Reminder: There won't be new ADK release for 1909.
@@ -56,16 +57,27 @@ Reminder: There won't be new ADK release for 1909.
 5. On the **Select the features you want to install** page, select **Volume Activation Management Tool (VAMT)**, and then select **Install**. (You can select additional features to install as well.)
 6. On the completion page, select **Close**.
 
-### Configure VAMT to connect to SQL Server 2017 Express or full SQL Server
+### Configure VAMT to connect to SQL Server 2017 Express or a full (remote) SQL Server
 
 1. Open **Volume Active Management Tool 3.1** from the Start menu.
-2. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
-    ![Server name is .\SQLEXPRESS and database name is VAMT](images/vamt-db.png)
+2a. Setting up a new database on a Local SQL Express instance
 
-for remote SQL Server use
-servername.yourdomain.com
+Enter the server instance name and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
+   ![Server name is .\SQLEXPRESS and database name is VAMT](images/vamt-db.png)
+
+2b. Setting up a new database on a Local or remote Full SQL instance
+
+Enter the server instance name (for a remote SQL use the FQDN like servername.contoso.com if the instance has the default name (MSSQLSERVER) otherwise use servername.contoso.com\yourinstancename or use the browsing ability.
+You can choose **any name** for a new the database (default: VAMT), select **Connect**, and then select **Yes** to create the database.
+
+    If you have issues to connect to the remote SQL server:
+    - check remote TCP/IP connections are enabled on the SQL Server
+    - SQL browsing is allowed
+    - ingoing firewall settings on the SQL Server are ok, especially when located on a different subnet
+    - check your account against SQL permissions.
+[Generic troubleshooting for remote access on SQL Server](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/troubleshoot-connecting-to-the-sql-server-database-engine?view=sql-server-ver15)
 
 
 ## Uninstall VAMT
