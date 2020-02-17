@@ -37,7 +37,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 
 ## Configure Microsoft's Linux Software Repository
 
-Follow the steps given in [Configure Microsoft's Linux Software Repository](https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software) to setup the repository.
+Follow the steps given in [Configure Microsoft's Linux Software Repository](https://docs.microsoft.com/windows-server/administration/linux-package-repository-for-microsoft-software) to setup the repository.
 
 ## Download onboarding package
 
@@ -121,8 +121,8 @@ Copy and run the command below:
 
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-linux-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Linux from client devices.
+See [Uninstalling](linux-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Linux from client devices.

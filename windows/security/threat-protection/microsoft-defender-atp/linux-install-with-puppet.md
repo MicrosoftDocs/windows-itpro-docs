@@ -45,7 +45,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 2. In the first drop down, set operating system to **Windows 10** and in second drop down, Deployment method to **Mobile Device Management / Microsoft Intune**.
 3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_win_intune.png)
+    ![Windows Defender Security Center screenshot](images/atp-portal-onboarding-win-intune.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the .zip file and create mdatp_onboard.json file as follows:
@@ -160,7 +160,7 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
