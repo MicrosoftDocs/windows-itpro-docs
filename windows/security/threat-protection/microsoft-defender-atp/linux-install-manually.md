@@ -37,7 +37,132 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 
 ## Configure Microsoft's Linux Software Repository
 
-Follow the steps given in [Configure Microsoft's Linux Software Repository](https://docs.microsoft.com/windows-server/administration/linux-package-repository-for-microsoft-software) to setup the repository.
+### RHEL and variants (CentOS and Oracle EL)
+
+- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
+
+    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
+    >[!Note] In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
+
+    ```bash
+    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 
+    ```
+
+    For example, if you are running CentOS 7:  
+
+    ```bash
+    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
+    ```
+
+- Install the Microsoft GPG public key: 
+
+    ```bash
+    $ curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
+    $ sudo rpm --import microsoft.asc
+    ```
+
+- Download and make usable all the metadata for the currently enabled yum repositories: 
+
+    ```bash
+    $ yum makecache
+    ```
+
+### SLES and variants 
+
+- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
+
+    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
+
+    ```bash
+    $ sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 
+    ```
+
+    For example, if you are running SLES 12:  
+
+    ```bash
+    $ sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
+    ```
+
+- Install the Microsoft GPG public key:
+
+    ```bash
+    $ curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
+    $ rpm --import microsoft.asc
+    ```
+
+### Ubuntu and Debian systems 
+
+- Install `‘curl’` if not already installed:
+
+    ```bash
+    $ sudo apt-get install curl
+    ```
+
+- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config`
+
+    In the below command, replace *[distro]* and *[version]* with the information identified in the previous step:
+
+    ```bash
+    $ curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.list
+    ```
+
+    For example, if you are running Ubuntu 18.04:
+
+    ```bash
+    $ curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list 
+    ```
+
+- Install the repository configuration:
+
+    ```bash
+    $ sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
+    ```
+
+- Install the gpg package if not already installed:
+
+    ```bash
+    $ sudo apt-get install gpg
+    ```
+
+- Install the Microsoft GPG public key:
+
+    ```bash
+    $ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    $ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
+
+    ```
+
+- Install the https driver in case not already present:
+
+    ```bash
+    $ sudo apt-get install apt-transport-https
+    ```
+
+- Update the repository metadata 
+
+    ```bash
+    $ sudo apt-get update
+    ```
+
+## Application installation
+
+- RHEL and variants (CentOS and Oracle EL)
+
+    ```bash
+    sudo yum install mdatp
+    ```
+
+- SLES and variants
+
+    ```bash
+    sudo zypper install mdatp
+    ```
+
+- Ubuntu and Debian system
+
+    ```bash
+    sudo apt-get install -t insiders-fast mdatp
+    ```
 
 ## Download onboarding package
 
@@ -58,25 +183,6 @@ Download the onboarding package from Microsoft Defender Security Center:
     -rw-r--r-- 1 test  staff  6287 Oct 21 11:22 WindowsDefenderATPOnboardingPackage.zip
     $ unzip -p WindowsDefenderATPOnboardingPackage.zip | python -c 'import sys,json;data={"onboardingInfo":"\n".join(sys.stdin.readlines())};print(json.dumps(data));' >mdatp_onboard.json
     ```
-
-## Application installation
-
-To complete this process, you must have admin privileges on the machine.
-
-1. Install Microsoft Defender ATP for Linux
-
-    - ### Enterprise Linux (RHEL and variants)
-
-    ```bash
-    sudo yum -y install mdatp
-    ```
-
-    - ### Ubuntu and Debian systems
-
-    ```bash
-    sudo apt-get -y install mdatp
-    ```
-
 
 ## Client configuration
 
@@ -101,7 +207,7 @@ To complete this process, you must have admin privileges on the machine.
     E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
 
-4. After installation, you can see the status by running the following command:
+4. A few minutes following the completion of the installation, you can see the status by running the following command. A return value of `'1'` denotes that the product is functioning as expected.
 
     ```bash
     $ mdatp --health healthy
@@ -117,6 +223,12 @@ Copy and run the command below:
 
     ``` bash
     curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+    ```
+
+6. The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
+
+    ```bash
+    $ mdatp --threat --list --pretty
     ```
 
 ## Logging installation issues
