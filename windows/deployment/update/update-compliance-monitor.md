@@ -17,13 +17,11 @@ ms.topic: article
 
 # Monitor Windows Updates with Update Compliance
 
->[!IMPORTANT]
->The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 
 ## Introduction
 
-Update Compliance is a [Windows Analytics solution](windows-analytics-overview.md) that enables organizations to:
+Update Compliance enables organizations to:
 
 * Monitor security, quality, and feature updates for Windows 10 Professional, Education, and Enterprise editions.
 * View a report of device and update issues related to compliance that need attention.

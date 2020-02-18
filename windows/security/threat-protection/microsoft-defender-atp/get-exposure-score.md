@@ -76,11 +76,13 @@ Here is an example of the response.
 {
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#ExposureScore/$entity",
     "time": "2019-12-03T07:23:53.280499Z",
-    "score": 33.491554051195706,
-    "rbacGroupId": null
+    "score": 33.491554051195706
 }
 
 ```
 
 ## Related topics
-- [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability exposure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-exposure-score)
+
+

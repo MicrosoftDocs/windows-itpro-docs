@@ -17,15 +17,15 @@ ms.topic: article
 ---
 
 # List software inventory API
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves the organization software inventory
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+Retrieves the organization software inventory.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -66,19 +66,25 @@ GET https://api.securitycenter.windows.com/api/Software
 Here is an example of the response.
 
 
-```
+```json
 {
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Software",
     "value": [
-        {
-            "id": "microsoft-_-edge",
-            "name": "edge",
-            "vendor": "microsoft",
-            "weaknesses": 467,
-            "publicExploit": true,
-            "activeAlert": false,
-            "exposedMachines": 172,
-            "impactScore": 2.39947438
-        },
-….
+			{
+				"id": "microsoft-_-edge",
+				"name": "edge",
+				"vendor": "microsoft",
+				"weaknesses": 467,
+				"publicExploit": true,
+				"activeAlert": false,
+				"exposedMachines": 172,
+				"impactScore": 2.39947438
+			}
+			...
+        ]
 }
+```
+
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory)

@@ -25,7 +25,7 @@ ms.topic: article
 Retrieves a security recommendation related to a specific software.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -65,8 +65,7 @@ GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chr
 
 Here is an example of the response.
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Analytics.Contracts.PublicAPI.PublicProductDto",
     "id": "google-_-chrome",
@@ -79,3 +78,7 @@ Content-type: json
     "impactScore": 3.94418621
 }
 ```
+
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)

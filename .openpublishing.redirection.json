@@ -14017,6 +14017,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "store-for-business/work-with-partner-microsoft-store-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-partners",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/manage/windows-10-mobile-and-mdm.md",
 "redirect_url": "https://docs.microsoft.com/windows/client-management/windows-10-mobile-and-mdm",
 "redirect_document_id": true
@@ -15595,6 +15600,116 @@
 "source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
 "redirect_document_id": false
-}
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-azure-portal.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-FAQ-troubleshooting.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-overview.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-privacy.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-monitor.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-using.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-additional-insights.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-architecture.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-data-sharing.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-deployment-script.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-deploy-windows.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-identify-apps.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-monitor-deployment.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-requirements.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-resolve-issues.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-target-new-OS.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-upgrade-overview.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
 ]
 }

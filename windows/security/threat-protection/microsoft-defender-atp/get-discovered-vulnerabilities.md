@@ -87,3 +87,7 @@ Here is an example of the response.
         }
 }
 ```
+
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)

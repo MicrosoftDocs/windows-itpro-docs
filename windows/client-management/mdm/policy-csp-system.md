@@ -307,6 +307,10 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   1 – Allowed.
 
 <!--/SupportedValues-->
 <!--Example-->

@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get all vulnerabilities
+# List vulnerabilities
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -25,7 +25,7 @@ ms.topic: article
 Retrieves a list of all the vulnerabilities affecting the organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -66,8 +66,7 @@ GET https://api.securitycenter.windows.com/api/Vulnerabilities
 Here is an example of the response.
 
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Vulnerabilities",
     "value": [
@@ -85,8 +84,13 @@ Content-type: json
             "exploitInKit": false,
             "exploitTypes": [],
             "exploitUris": []
-        },
-        {
-..
+        }
+		...
+    ]
+
 }
 ```
+
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)
