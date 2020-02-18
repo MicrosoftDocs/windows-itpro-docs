@@ -42,7 +42,8 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 - Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
 
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
-    >[!Note] In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
+
+    > [!NOTE] In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
 
     ```bash
     $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 
@@ -54,7 +55,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
     ```
 
-- Install the Microsoft GPG public key: 
+- Install the Microsoft GPG public key:
 
     ```bash
     $ curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
@@ -67,7 +68,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     $ yum makecache
     ```
 
-### SLES and variants 
+### SLES and variants
 
 - Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
 
@@ -90,7 +91,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     $ rpm --import microsoft.asc
     ```
 
-### Ubuntu and Debian systems 
+### Ubuntu and Debian systems
 
 - Install `‘curl’` if not already installed:
 
@@ -138,7 +139,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     $ sudo apt-get install apt-transport-https
     ```
 
-- Update the repository metadata 
+- Update the repository metadata
 
     ```bash
     $ sudo apt-get update

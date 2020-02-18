@@ -29,7 +29,6 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Ansi
 - [Download the onboarding packages](#download-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
 - [Deployment](#deployment)
-- [Check onboarding status](#check-onboarding-status)
 - [References](#references)
 
 ## Prerequisites and system requirements

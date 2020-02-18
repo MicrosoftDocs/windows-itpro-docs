@@ -42,7 +42,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
     Acquire::https::Proxy "http://proxy.server:port/";
     ```
 
-> [!Caution]
+> [!CAUTION]
 > Note that above two methods could define the proxy to use for other applications on your system. Use this method with caution, or only if this is mean to be a generally global configuration.
   
 - The `HTTPS_PROXY` variable is prepended to the installation and/or uninstallation commands. For example with the APT package manager, prepend the variable as follows when installing Microsoft Defender ATP: 
@@ -51,7 +51,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
     $ HTTPS_PROXY=”http://proxy.server:port/" apt install mdatp
     ```
 
-    >[!Note] Do not add sudo between the environment variable definition and apt, otherwise the variable will not be propagated.
+    >[!NOTE] Do not add sudo between the environment variable definition and apt, otherwise the variable will not be propagated.
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 

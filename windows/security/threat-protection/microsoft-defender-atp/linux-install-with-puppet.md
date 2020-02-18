@@ -82,7 +82,7 @@ class install_mdatp {
 
     if ($osfamily == 'Debian') {
         apt::source { 'microsoftpackages' :
-            location => 'https://packages.microsoft.com/ubuntu/18.04/prod', # change the version based on your OS 
+            location => 'https://packages.microsoft.com/ubuntu/18.04/prod', # change the version and distro based on your OS 
             release  => 'stable',
             repos    => 'main',
             key      => {
@@ -93,7 +93,7 @@ class install_mdatp {
     }
     else {
         yumrepo { 'microsoftpackages' :
-            baseurl  => 'https://packages.microsoft.com/rhel/7/prod', # change the version based on your OS 
+            baseurl  => 'https://packages.microsoft.com/rhel/7/prod', # change the version and distro based on your OS 
             enabled  => 1,
             gpgcheck => 1,
             gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
