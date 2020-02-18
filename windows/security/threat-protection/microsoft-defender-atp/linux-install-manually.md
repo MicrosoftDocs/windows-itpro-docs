@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following steps:
 
-- [Configure Microsoft's Linux Software Repository](#configure-microsoft's-linux-software-repository)
+- [Configure Microsoft's Linux Software Repository](#configure-microsoft-linux-software-repository)
 - [Download onboarding packages](#download-onboarding-package)
 - [Application installation](#application-installation)
 - [Client configuration](#client-configuration)
@@ -35,7 +35,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux manually. A 
 
 Before you get started, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-## Configure Microsoft's Linux Software Repository
+## Configure Microsoft Linux Software Repository
 
 ### RHEL and variants (CentOS and Oracle EL)
 
@@ -43,7 +43,8 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
 
-    > [!NOTE] In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
+    > [!NOTE]
+    > In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
 
     ```bash
     $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 

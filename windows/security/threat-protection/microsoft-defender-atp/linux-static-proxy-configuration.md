@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Configuring Microsoft Defender ATP for static proxy discovery 
+# Configuring Microsoft Defender ATP for static proxy discovery
 
 **Applies to:**
 
@@ -51,7 +51,8 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
     $ HTTPS_PROXY=”http://proxy.server:port/" apt install mdatp
     ```
 
-    >[!NOTE] Do not add sudo between the environment variable definition and apt, otherwise the variable will not be propagated.
+    > [!NOTE]
+    > Do not add sudo between the environment variable definition and apt, otherwise the variable will not be propagated.
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
