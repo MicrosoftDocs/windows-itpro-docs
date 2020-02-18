@@ -41,11 +41,11 @@ In general you need to take the following steps:
 
 - Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
 - Deploy Microsoft Defender ATP for Linux using one of the following deployment methods:
+  - Via the command-line tool:
+    - [Manual deployment](linux-install-manually.md)
   - Via third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansbile configuration management tool](linux-install-with-ansible.md)
-  - Via the command-line tool:
-    - [Manual deployment](linux-install-manually.md)
 
 ### System requirements
 
@@ -79,7 +79,7 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 - Transparent proxy
 - Manual static proxy configuration
 
-If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Microsoft Defender ATP. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
 ## Validating cloud connectivity
 
