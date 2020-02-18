@@ -117,7 +117,7 @@ Alice follows these steps to complete this task:
       $PathRules += New-CIPolicyRule -FilePathRule "%windir%\*"
       $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files\*"
       $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files (x86)\*"
-      Merge-CIPolicy -OutputFilePath = $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
+      Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
       ```
 
 7. If appropriate, add additional signer or file rules to further customize the policy for your organization.
