@@ -255,7 +255,7 @@ The following configuration profile will:
    "cloudService":{
       "automaticSampleSubmission":true,
       "enabled":true,
-   },
+   }
 }
 ```
 
@@ -266,45 +266,45 @@ The following configuration profile contains entries for all settings described 
 ### Full profile
 
 ```JSON
-{ 
-   "antivirusEngine":{ 
+{
+   "antivirusEngine":{
       "enableRealTimeProtection":true,
       "passiveMode":false,
-      "exclusions":[ 
-         { 
+      "exclusions":[
+         {
             "$type":"excludedPath",
             "isDirectory":false,
             "path":"/var/log/system.log"
          },
-         { 
+         {
             "$type":"excludedPath",
             "isDirectory":true,
             "path":"/home"
          },
-         { 
+         {
             "$type":"excludedFileExtension",
             "extension":"pdf"
          }
       ],
-      "allowedThreats":[ 
+      "allowedThreats":[
          "EICAR-Test-File (not a virus)"
       ],
-      "threatTypeSettings":[ 
-         { 
+      "threatTypeSettings":[
+         {
             "key":"potentially_unwanted_application",
             "value":"block"
          },
-         { 
+         {
             "key":"archive_bomb",
             "value":"audit"
          }
       ]
    },
-   "cloudService":{ 
+   "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
       "automaticSampleSubmission":true,
-   },
+   }
 }
 ```
 
