@@ -74,4 +74,3 @@ We then pass that to the device and then the device generates it’s CSR and pas
     1. Connector checks in with Intune, and will process and any cert revocation transactions (i.e, if the Intune tenant admin issues a remote wipe – full or partial,  also If a user unenrolls their device from Intune), reporting on issued certs, renewing the connectors’ SC_Online_Issuing  certificate from Intune.  Also note: the NDES Intune connector has shared PKCS cert functionality (if you decide to issue PKCS/PFX based certs) so the connector checks to Intune for PKCS cert requests even though there won’t be any requests to process.  We are splitting that functionality out, so this connector just handles SCEP, but no ETA yet.
 
 1. [Here](https://docs.microsoft.com/intune/intune-endpoints#microsoft-intune-certificate-connector) is a reference for Intune NDES connector network communications.
-

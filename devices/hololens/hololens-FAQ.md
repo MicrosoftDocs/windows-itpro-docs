@@ -231,4 +231,3 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 *Coming soon*
 
 [Back to list](#list)
-
