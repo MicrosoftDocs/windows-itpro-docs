@@ -167,7 +167,7 @@ There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint 
 
 1. For this example, on the **Upgrades** page, click **Next** to leave the criterion blank.
 
-1. On the **Deployment Schedule** page, click **Next** to keep the default values of making the content available immediately and requiring installation by the 7-day deadline.
+1. On the **Deployment Schedule** page, click **Next** to keep the default values of making the content available immediately and requiring installation by the seven-day deadline.
 
 1. On the **User Experience** page, from the **Deadline behavior** list, select **Software Installation and System restart (if necessary)**. From the **Device restart behavior** list, select **Workstations**, and then click **Next**.
 
