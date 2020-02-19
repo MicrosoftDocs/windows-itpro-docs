@@ -200,7 +200,7 @@ There are times when deploying a Windows 10 feature update requires the use of a
 
 Each time Microsoft releases a new Windows 10 build, it releases a new .iso file containing the latest build, as well. Regardless of the scenario that requires a task sequence to deploy the Windows 10 upgrade, the base process is the same. Start by creating an Operating System Upgrade Package in the Configuration Manager console:
 
-1. In the Configuration Manager console, go to Software Library > Overview > Operating Systems > Operating System Upgrade Packages.
+1. In the Configuration Manager console, go to **Software Library** > **Overview** > **Operating Systems** > **Operating System Upgrade Packages**.
 
 1. On the Ribbon, in the **Create** group, click **Add Operating System Upgrade Package**.
 
