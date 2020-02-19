@@ -27,7 +27,7 @@ There are three phases in deploying Microsoft Defender ATP:
     <td align="center" style="width:25%; border:0;">
       <a href= "prepare-deployment"> 
         <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
-      <br/>Plan </a><br>
+      <br/>Prepare </a><br>
     </td>
      <td align="center">
       <a href="production-deployment">
