@@ -35,7 +35,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Pupp
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have a Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
 ## Download onboarding package
 
@@ -53,6 +53,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ ls -l
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -152,9 +153,9 @@ orgId                                   : "[your organization identifier]"
 ...
 ```
 
-- **licensed**: This confirms that the device has an ATP license.
+- **licensed**: This confirms that the device is tied to your organization.
 
-- **orgid**: your Microsoft Defender ATP org id; it will be the same for your organization.
+- **orgId**: your Microsoft Defender ATP organization identifier.
 
 ## Check onboarding status
 
@@ -164,12 +165,12 @@ You can check that devices have been correctly onboarded by creating a script. F
 $ mdatp --health healthy
 ```
 
-The above command prints "1" if the product is onboarded and functioning as expected.
+The above command prints `1` if the product is onboarded and functioning as expected.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
 
 - 1 if the device is not yet onboarded
-- 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
+- 3 if the connection to the daemon cannot be established
 
 ## Logging installation issues
 

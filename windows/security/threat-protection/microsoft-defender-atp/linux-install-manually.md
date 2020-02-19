@@ -189,7 +189,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ ls -l
     total 8
     -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    
+
     $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: WindowsDefenderATPOnboarding.py
@@ -218,7 +218,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     [your organization identifier]
     ```
 
-4. A few minutes following the completion of the installation, you can see the status by running the following command. A return value of `'1'` denotes that the product is functioning as expected.
+4. A few minutes following the completion of the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected.
 
     ```bash
     $ mdatp --health healthy

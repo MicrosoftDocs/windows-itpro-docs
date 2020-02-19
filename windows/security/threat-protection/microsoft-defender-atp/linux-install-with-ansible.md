@@ -77,7 +77,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask / role files which contribute to an actual task. Create below files under `/etc/ansible/roles` directory.
+Create subtask / role files which contribute to an actual task. Create the below files under the `/etc/ansible/roles` directory.
 
 - Copy onboarding package to all client machines  
 
@@ -237,6 +237,10 @@ Now run the tasks files under `/etc/ansible/playbooks/`
 - Un-Installation
 
     `# ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts`
+
+## Logging installation issues
+
+See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## References
 
