@@ -45,9 +45,9 @@ Deploying Microsoft Defender ATP is a three-phase process:
 </table>
 You are currently in the configuration phase.
 
-## Onboarding using System Center Configuration Manager 
+## Onboarding using Microsoft Endpoint Configuration Manager 
 ### Collection creation
-To onboard Windows 10 devices with System Center Configuration Manager, the
+To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the
 deployment can target either and existing collection or a new collection can be
 created for testing. The onboarding like group policy or manual method does
 not install any agent on the system. Within the Configuration Manager console
@@ -57,41 +57,41 @@ maintain that configuration for as long as the Configuration Manager client
 continues to receive this policy from the management point. Follow the steps
 below to onboard systems with Configuration Manager.
 
-1. In System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
+1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-device-collections.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-device-collections.png)
 
 2. Right Click **Device Collection** and select **Create Device Collection**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-create-device-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-device-collection.png)
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-limiting-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-limiting-collection.png)
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-query-rule.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-query-rule.png)
 
 5.  Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.
 
-     ![Image of System Center Configuration Manager wizard](images/sccm-direct-membership.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-direct-membership.png)
 
 6. Select **Criteria** and then choose the star icon.
 
-     ![Image of System Center Configuration Manager wizard](images/sccm-criteria.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-criteria.png)
 
 7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-simple-value.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-simple-value.png)
 
 8. Select **Next** and **Close**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-membership-rules.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-membership-rules.png)
 
 9. Select **Next**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-confirm.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-confirm.png)
 
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
@@ -105,7 +105,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 
 
-2. Under Deployment method select the supported version of **System Center Configuration Manager**.
+2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager **.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 
@@ -114,15 +114,15 @@ Manager and deploy that policy to Windows 10 devices.
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
 4. Save the package to an accessible location.
-5. In  System Center Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. In  Microsoft Endpoint Configuration Manager , navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-create-policy.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-policy.png)
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    ![Image of System Center Configuration Manager wizard](images/sccm-policy-name.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-policy-name.png)
 
 8. Click **Browse**.
 
@@ -145,7 +145,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 15. Click **Close** when the Wizard completes.
 
-16.  In the System Center Configuration Manager console, right-click the Microsoft Defender ATP policy you just created and select **Deploy**.
+16.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP policy you just created and select **Deploy**.
 
      ![Image of configuration settings](images/4a37f3687e6ff53a593d3670b1dad3aa.png)
 
@@ -211,14 +211,14 @@ Specifically, for Windows 7 SP1, the following patches must be installed:
     [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
     Do not install both on the same system.
 
-To deploy the MMA with System Center Configuration Manager, follow the steps
+To deploy the MMA with Microsoft Endpoint Configuration Manager , follow the steps
 below to utilize the provided batch files to onboard the systems. The CMD file
 when executed, will require the system to copy files from a network share by the
 System, the System will install MMA, Install the DependencyAgent, and configure
 MMA for enrollment into the workspace.
 
 
-1. In  System Center Configuration Manager console, navigate to **Software
+1. In  Microsoft Endpoint Configuration Manager console, navigate to **Software
     Library**.
 
 2.  Expand **Application Management**.
@@ -227,15 +227,15 @@ MMA for enrollment into the workspace.
 
 4. Provide a Name for the package, then click **Next**
 
-    ![Image of System Center Configuration Manager console](images/e156a7ef87ea6472d57a3dc594bf08c2.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/e156a7ef87ea6472d57a3dc594bf08c2.png)
 
 5. Verify **Standard Program** is selected.
 
-   ![Image of System Center Configuration Manager console](images/227f249bcb6e7f29c4d43aa1ffaccd20.png)
+   ![Image of Microsoft Endpoint Configuration Manager console](images/227f249bcb6e7f29c4d43aa1ffaccd20.png)
 
 6.  Click **Next**.
 
-    ![Image of System Center Configuration Manager console](images/2c7f9d05a2ebd19607cc76b6933b945b.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/2c7f9d05a2ebd19607cc76b6933b945b.png)
 
 7. Enter a program name.
 
@@ -251,17 +251,17 @@ MMA for enrollment into the workspace.
 
 13.  Click **Next**.
 
-   ![Image of System Center Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
+   ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
 
 14. Verify the configuration, then click **Next**.
 
-    ![Image of System Center Configuration Manager console](images/a9d3cd78aa5ca90d3c2fbd2e57618faf.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/a9d3cd78aa5ca90d3c2fbd2e57618faf.png)
 
 15. Click **Next**.
 
 16. Click **Close**.
 
-17.  In the System Center Configuration Manager console, right-click the Microsoft Defender ATP
+17.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
     Onboarding Package just created and select **Deploy**.
 
 18. On the right panel select the appropriate collection.
@@ -271,7 +271,7 @@ MMA for enrollment into the workspace.
 ## Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
 
-1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
     ![Image of antimalware policy](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -321,9 +321,9 @@ Protection. All these features provide an audit mode and a block mode. In audit 
 
 To set ASR rules in Audit mode:
 
-1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-   ![Image of System Center Configuration Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   ![Image of Microsoft Endpoint Configuration Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 
 2.  Select **Attack Surface Reduction**.
@@ -331,26 +331,26 @@ To set ASR rules in Audit mode:
 
 3. Set rules to **Audit** and click **Next**.
 
-    ![Image of System Center Configuration Manager console](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
 
 4. Confirm the new Exploit Guard policy by clicking on **Next**.
 
-    ![Image of System Center Configuration Manager console](images/0a6536f2c4024c08709cac8fcf800060.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/0a6536f2c4024c08709cac8fcf800060.png)
 
     
 5. Once the policy is created click **Close**.
 
-    ![Image of System Center Configuration Manager console](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/95d23a07c2c8bc79176788f28cef7557.png)
 
     
 
 6.  Right-click on the newly created policy and choose **Deploy**.
     
-    ![Image of System Center Configuration Manager console](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
 7. Target the policy to the newly created Windows 10 collection and click **OK**.
 
-    ![Image of System Center Configuration Manager console](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 After completing this task, you now have successfully configured ASR rules in audit mode.  
   
@@ -381,7 +381,7 @@ detections](https://docs.microsoft.com/windows/security/threat-protection/micros
 
 
 ### To set Network Protection rules in Audit mode:
-1. In the System Center Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
     ![A screenshot System Center Confirugatiom Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
@@ -401,42 +401,42 @@ detections](https://docs.microsoft.com/windows/security/threat-protection/micros
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-    ![A screenshot System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![A screenshot Microsoft Endpoint Configuration Manager ](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
 7. Select the policy to the newly created Windows 10 collection and choose **OK**.
 
-    ![A screenshot System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![A screenshot Microsoft Endpoint Configuration Manager ](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 After completing this task, you now have successfully configured Network
 Protection in audit mode.
 
 ### To set Controlled Folder Access rules in Audit mode:
 
-1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-    ![A screenshot of System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Select **Controlled folder access**.
     
 3. Set the configuration to **Audit** and click **Next**.
 
-    ![A screenshot of System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
     
 4. Confirm the new Exploit Guard Policy by clicking on **Next**.
 
-    ![A screenshot of System Center Configuration Manager](images/0a6536f2c4024c08709cac8fcf800060.png)
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/0a6536f2c4024c08709cac8fcf800060.png)
 
 5. Once the policy is created click on **Close**.
 
-    ![A screenshot of System Center Configuration Manager](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/95d23a07c2c8bc79176788f28cef7557.png)
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-    ![A screenshot of System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
 7.  Target the policy to the newly created Windows 10 collection and click **OK**.
 
-    ![A screenshot of System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![A screenshot of Microsoft Endpoint Configuration Manager ](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 After completing this task, you now have successfully configured Controlled folder access in audit mode.
 
