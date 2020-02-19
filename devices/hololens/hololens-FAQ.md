@@ -218,7 +218,7 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 1. **Does the HoloLens support branding?**
     1. No. However, one work around is to create a custom app and enable Kiosk mode. The custom app can have branding which can then launch other apps (such as Remote Assist). Another option is to change all of the users profile pictures in AAD to your company logo. (However, this may not be desirable for all scenarios)
 1. **What logging capabilities are available on HL1 and HL2?**
-    1. Are the logging capabilities on HL1/HL2 similar to Windows computers?
+    1. Logging is limited to traces captured in developer/troubleshooting scenarios or telemetry sent to Microsoft servers.
 
 ## How do I delete all spaces?
 
