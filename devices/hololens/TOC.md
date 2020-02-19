@@ -62,6 +62,7 @@
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 ## [Hololens services status](hololens-status.md)
+## [SCEP Whitepaper](scep-whitepaper.md)
 
 # [Release Notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
