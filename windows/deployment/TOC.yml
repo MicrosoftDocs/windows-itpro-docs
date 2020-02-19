@@ -1,16 +1,18 @@
 - name: Windows 10 deployment resources and documentation
   href: index.yml
   items: 
-    - name: What's new in Windows 10 deployment
-      href: file1.md
     - name: Get started
       items: 
+        - name: What's new in Windows 10 deployment
+          href: file1.md
         - name: Deployment tools and methods
           href: file1.md
         - name: Deployment process posters
           href: file1.md
         - name: Windows as a service
-          href: file1.md
+          items: 
+            - name: Recommended calendar of operations
+              href: file1.md
         - name: Deployment test lab
           items: 
             - name: Windows 10 deployment test lab
@@ -40,10 +42,26 @@
                   href: file1.md
                 - name: Features we removed
                   href: file1.md         
-        - name: Plan an update management strategy
-          href: file1.md
-        - name: Review application compatibility 
-          href: file1.md
+        - name: Plan your update strategy
+          items:
+            - name: Plan image-based management 
+              href: file1.md
+            - name: Plan cloud (Waas management)
+              items: 
+                - name: Designate rings, channels, and policies
+                  href: file1.md
+                - name: Chooose a delivery optimization strategy
+                  href: file1.md
+                - name: Choose a monitoring approach
+                  href: file1.md 
+                - name: Assess apps
+                  items:
+                    - name: With Desktop Analytics
+                      href: file1.md
+                    - name: By other means
+                      href: file1.md
+                - name: Other prep activities
+                  href: file1.md
 
     - name: Deploy Windows 10
       items: 
@@ -65,11 +83,37 @@
         - name: Manage updates from the cloud
           items: 
             - name: Manage updates with Configuration Manager
-              href: file1.md
+              items:
+                - name: Set up rings, channels, optimization, polices
+                  href: file1.md
+                - name: Perform a pilot deployment
+                  href: file1.md
+                - name: Perform a broad deployment
+                  href: file1.md
             - name: Manage updates with Intune
-              href: file1.md
+              items:
+                - name: Set up rings, channels, optimization, polices
+                  href: file1.md
+                - name: Perform a pilot deployment
+                  href: file1.md
+                - name: Perform a broad deployment
+                  href: file1.md
             - name: Manage with Group Policy 
+              items:
+                - name: Set up rings, channels, optimization, polices
+                  href: file1.md
+                - name: Perform a pilot deployment
+                  href: file1.md
+                - name: Perform a broad deployment
+                  href: file1.md
+        - name: Monitor updates
+          items: 
+            - name: Monitor updates with Update Compliance
               href: file1.md
+            - name: Monitor updates with Desktop Analytics
+              href: file1.md
+            - name: Monitor Delivery Optimization
+              href: file1.md                 
 
     - name: Reference
       items: 
