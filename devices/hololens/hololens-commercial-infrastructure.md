@@ -145,7 +145,7 @@ Read more about [installing apps on HoloLens](https://docs.microsoft.com/hololen
 
 ### Certificates
 
-You can distribute certifcates through your MDM provider. If your company requires certificates, Intune supports PKCS, PFX, and SCEP. It is important to understand which certificate is right for your company. Please visit [here](https://docs.microsoft.com/intune/protect/certificates-configure) to determine which cert is best for you. If you plan to use certificates for HoloLens Authentication, PFX or SCEP may be right for you.
+You can distribute certificates through your MDM provider. If your company requires certificates, Intune supports PKCS, PFX, and SCEP. It is important to understand which certificate is right for your company. Please visit [here](https://docs.microsoft.com/intune/protect/certificates-configure) to determine which cert is best for you. If you plan to use certificates for HoloLens Authentication, PFX or SCEP may be right for you.
 
 Steps for SCEP can be found [here](https://docs.microsoft.com/intune/protect/certificates-profile-scep).
 
