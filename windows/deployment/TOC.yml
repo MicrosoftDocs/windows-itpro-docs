@@ -3,6 +3,8 @@
   items: 
     - name: Get started
       items: 
+        - name: Learn about Windows 10 (new)
+          href: file1.md
         - name: What's new in Windows 10 deployment
           href: file1.md
         - name: Deployment tools and methods
@@ -11,7 +13,7 @@
           href: file1.md
         - name: Windows as a service
           items: 
-            - name: Recommended calendar of operations
+            - name: Recommended calendar of operations (new)
               href: file1.md
         - name: Deployment test lab
           items: 
@@ -44,8 +46,6 @@
                   href: file1.md         
         - name: Plan your update strategy
           items:
-            - name: Plan image-based management 
-              href: file1.md
             - name: Plan cloud (Waas management)
               items: 
                 - name: Designate rings, channels, and policies
@@ -62,6 +62,8 @@
                       href: file1.md
                 - name: Other prep activities
                   href: file1.md
+            - name: Plan image-based management 
+              href: file1.md
 
     - name: Deploy Windows 10
       items: 
@@ -74,12 +76,6 @@
 
     - name: Manage Windows 10 updates
       items: 
-        - name: Manage updates locally
-          items: 
-            - name: Manage updates with WSUS
-              href: file1.md
-            - name: Manage updates using images
-              href: file1.md
         - name: Manage updates from the cloud
           items: 
             - name: Manage updates with Configuration Manager
@@ -106,6 +102,12 @@
                   href: file1.md
                 - name: Perform a broad deployment
                   href: file1.md
+        - name: Manage updates locally
+          items: 
+            - name: Manage updates with WSUS
+              href: file1.md
+            - name: Manage updates using images
+              href: file1.md
         - name: Monitor updates
           items: 
             - name: Monitor updates with Update Compliance
