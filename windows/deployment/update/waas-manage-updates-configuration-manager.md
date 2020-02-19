@@ -234,7 +234,7 @@ Now that the operating system upgrade package has been created, the content in t
 
 Now that the upgrade package has been created and its contents distributed, create the task sequence that will use it. Complete the following steps to create the task sequence, using the previously created deployment package:
 
-1. In the Configuration Manager console, go to Software Library > Overview > Operating Systems > Task Sequences.
+1. In the Configuration Manager console, go to **Software Library** > **Overview** > **Operating Systems** > **Task Sequences**.
 
 1. On the Ribbon, in the **Create** group, click **Create Task Sequence**.
 
