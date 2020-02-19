@@ -9,6 +9,7 @@ keywords: hololens, Windows Mixed Reality, security
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
+audience: ITPro
 ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
