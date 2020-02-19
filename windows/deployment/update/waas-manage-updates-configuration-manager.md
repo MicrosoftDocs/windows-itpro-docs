@@ -116,7 +116,7 @@ Regardless of the method by which you deploy Windows 10 feature updates to your 
 
 After you have updated the membership, this new collection will contain all managed clients on the CBB servicing branch. You will use this collection as a limiting collection for future CBB-based collections and the **Ring 4 Broad broad business users** collection. Complete the following steps to create the **Ring 4 Broad business users** device collection, which you’ll use as a CBB deployment ring for servicing plans or task sequences.
 
-1. In the Configuration Manager console, go to Assets and Compliance > Overview > Device Collections.
+1. In the Configuration Manager console, go to **Assets and Compliance** > **Overview** > **Device Collections**.
 
 1. On the Ribbon, in the **Create** group, click **Create Device Collection**.
 
