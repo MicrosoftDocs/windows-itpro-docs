@@ -36,7 +36,7 @@ The Windows 10 servicing dashboard gives you a quick-reference view of your acti
 For the Windows 10 servicing dashboard to display information, you must adhere to the following requirements:
 
 - **Heartbeat discovery**. Enable heartbeat discovery for the site receiving Windows 10 servicing information. Configuration for heartbeat discovery can be found in Administration > Overview > Hierarchy Configuration > Discovery Methods.
-- **Windows Server Update Service (WSUS)**. Microsoft Endpoint Configuration Manager must have the Software update point site system role added and configured to receive updates from WSUS
+- **Windows Server Update Service (WSUS)**. Microsoft Endpoint Configuration Manager must have the Software update point site system role added and be configured to receive updates from WSUS.
   - Minimum a WSUS 4.0 server with the hotfix KB3095113 installed.
 - **Service connection point**. Add the Service connection point site system role in Online, persistent connection mode.
 - **Upgrade classification**. Select **Upgrade** from the list of synchronized software update classifications.
