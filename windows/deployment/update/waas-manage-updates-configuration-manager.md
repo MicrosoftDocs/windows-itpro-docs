@@ -62,7 +62,7 @@ Regardless of the method by which you deploy Windows 10 feature updates to your 
 
 ### To create collections for deployment rings
 
-1. In the Configuration Manager console, go to Assets and Compliance > Overview > Device Collections.
+1. In the Configuration Manager console, go to **Assets and Compliance** > **Overview** > **Device Collections**.
 
 1. On the Ribbon, in the **Create** group, click **Create Device Collection**.
 
