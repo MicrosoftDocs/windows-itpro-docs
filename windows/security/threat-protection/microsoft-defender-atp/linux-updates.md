@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender ATP for Linux manually, execute command
+To update Microsoft Defender ATP for Linux manually, execute the following command:
 
 - ### For Debian family distros
 
