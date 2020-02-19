@@ -12,18 +12,15 @@
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
-## [Design]()
-### [Design your Microsoft Defender ATP](microsoft-defender-atp/deployment-strategy.md)
+## [Plan deployment strategy](microsoft-defender-atp/deployment-strategy.md)
+
 
 ## [Deployment guide]()
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 
 ### [Phase 1: Prepare Microsoft Defender ATP deployment](microsoft-defender-atp/prepare-deployment.md)
-#### [Validate licensing and complete setup - NEED DATA IF CAN KILL](microsoft-defender-atp/licensing.md)
-
 
 ### [Phase 2:  Setup the Microsoft Defender ATP service](microsoft-defender-atp/production-deployment.md)
-
 
 ### [Phase 3: Onboard](microsoft-defender-atp/configure.md)
 
