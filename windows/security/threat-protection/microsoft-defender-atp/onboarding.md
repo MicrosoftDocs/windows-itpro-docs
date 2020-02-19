@@ -45,6 +45,18 @@ Deploying Microsoft Defender ATP is a three-phase process:
 </table>
 You are currently in the configuration phase.
 
+
+
+To deploy Microsoft Defender ATP, you'll need to onboard devices to the service. Depending on the architecture of your environment, you'll need to use the appropriate management tool that best suites your requirements. 
+
+The deployment guide uses Microsoft Endpoint Configuration Manager to demonstrate an end-to-end deployment. 
+
+This article will guide you on:
+- Setting up Microsoft Endpoint Configuration Manager 
+- Endpoint detection and response configuration
+- Next-generation protection configuration
+- Attack surface reduction configuration
+
 ## Onboarding using Microsoft Endpoint Configuration Manager 
 ### Collection creation
 To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the
@@ -315,9 +327,11 @@ needs on how Antivirus is configured.
 After completing this task, you now have successfully configured Windows
 Defender Antivirus.
 
-## Attack Surface Reduction
+## Attack surface reduction
 The attack surface reduction pillar of Microsoft Defender ATP includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
-Protection. All these features provide an audit mode and a block mode. In audit mode there is no end user impact all it does is collect additional telemetry and make it available in the Microsoft Defender Security Center. The goal with a deployment is to step by step move security controls into block mode.
+Protection. 
+
+All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft Defender Security Center. The goal with a deployment is to step-by-step move security controls into block mode.
 
 To set ASR rules in Audit mode:
 
