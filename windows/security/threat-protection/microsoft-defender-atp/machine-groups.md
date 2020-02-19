@@ -53,7 +53,7 @@ As part of the process of creating a machine group, you'll:
 
 2. Click **Add machine group**.
 
-3. Enter the group name and automation settings and specify the matching rule that determines which machines belong to the group. For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations.md#understand-the-automated-investigation-flow).
+3. Enter the group name and automation settings and specify the matching rule that determines which machines belong to the group. See [How the automated investigation starts](automated-investigations.md#how-the-automated-investigation-starts).
 
     >[!TIP]
     >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage machine tags](machine-tags.md).
@@ -83,7 +83,6 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 ## Related topics
 
-## Related topic
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage machine tags](machine-tags.md)
 - [Get list of tenant machine groups using Graph API](get-machinegroups-collection.md)

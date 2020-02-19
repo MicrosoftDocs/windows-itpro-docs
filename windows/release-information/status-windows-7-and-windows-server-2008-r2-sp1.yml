@@ -60,6 +60,7 @@ sections:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='390msg'></div><b>After installing an update and restarting, you might receive an error</b><br>You might receive the error, “Failure to configure Windows updates. Reverting Changes.” or \"Failed\" in Update History.<br><br><a href = '#390msgdesc'>See details ></a></td><td>February 11, 2020<br><a href ='https://support.microsoft.com/help/4537820' target='_blank'>KB4537820</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>February 12, 2020 <br>05:37 PM PT</td></tr>
       <tr><td><div id='384msg'></div><b>Custom wallpaper displays as black</b><br>Using a custom image set to \"Stretch\" might not display as expected.<br><br><a href = '#384msgdesc'>See details ></a></td><td>January 14, 2020<br><a href ='https://support.microsoft.com/help/4534310' target='_blank'>KB4534310</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4539601' target='_blank'>KB4539601</a></td><td>February 07, 2020 <br>10:00 AM PT</td></tr>
       <tr><td><div id='374msg'></div><b>MSRT might fail to install and be re-offered from Windows Update or WSUS </b><br>The November 2019 update for Windows Malicious Software Removal Tool (MSRT) might fail to install from WU/WSUS.<br><br><a href = '#374msgdesc'>See details ></a></td><td><br><a href ='' target='_blank'></a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>January 23, 2020 <br>02:08 PM PT</td></tr>
       <tr><td><div id='364msg'></div><b>TLS connections might fail or timeout</b><br>Transport Layer Security (TLS) connections might fail or timeout when connecting or attempting a resumption.<br><br><a href = '#364msgdesc'>See details ></a></td><td>October 08, 2019<br><a href ='https://support.microsoft.com/help/4519976' target='_blank'>KB4519976</a></td><td>Mitigated External<br></td><td>November 05, 2019 <br>03:36 PM PT</td></tr>
@@ -74,6 +75,15 @@ sections:
         <div>
         </div> 
       "
+- title: February 2020
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='390msgdesc'></div><b>After installing an update and restarting, you might receive an error</b><div>After installing <a href='https://support.microsoft.com/help/4537820' target='_blank'>KB4537820</a> and restarting your device, you might receive the error, “Failure to configure Windows updates. Reverting Changes. Do not turn off your computer,” and the update might show as&nbsp;<strong>Failed&nbsp;</strong>in&nbsp;<strong>Update History</strong>.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 7 SP1</li><li>Server: Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution: </strong>This is expected in the following circumstances:</div><ul><li>If you are installing this update on a device that is running an edition that is not supported for ESU. For a complete list of which editions are supported, see&nbsp;<a href=\"https://support.microsoft.com/help/4497181\" rel=\"noopener noreferrer\" target=\"_blank\">KB4497181</a>.</li><li>If you do not have an ESU MAK add-on key installed and activated.&nbsp;</li></ul><div></div><div>If you have purchased an ESU key and have encountered this issue, please verify you have applied all prerequisites and that your key is activated. For information on activation, please see this&nbsp;<a href=\"https://aka.ms/Windows7ESU\" rel=\"noopener noreferrer\" target=\"_blank\">blog</a>&nbsp;post.&nbsp;For information on the prerequisites, see the \"How to get this update\" section of this article.</div><br><a href ='#390msg'>Back to top</a></td><td>February 11, 2020<br><a href ='https://support.microsoft.com/help/4537820' target='_blank'>KB4537820</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>Resolved:<br>February 12, 2020 <br>05:37 PM PT<br><br>Opened:<br>February 12, 2020 <br>03:47 PM PT</td></tr>
+      </table>
+      "
+
 - title: January 2020
 - items:
   - type: markdown
