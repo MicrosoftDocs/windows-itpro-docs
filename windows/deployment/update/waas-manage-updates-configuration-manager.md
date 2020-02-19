@@ -261,7 +261,7 @@ With the task sequence created, you’re ready to deploy it. If you’re using t
 
 ### To deploy your task sequence
 
-1. In the Configuration Manager console, go to Software Library > Overview > Operating Systems > Task Sequences, and then select the **Upgrade Windows 10 Enterprise – Version 1607** task sequence.
+1. In the Configuration Manager console, go to **Software Library** > **Overview** > **Operating Systems** > **Task Sequences**, and then select the **Upgrade Windows 10 Enterprise – Version 1607** task sequence.
 
 1. On the Ribbon, in the **Deployment** group, click **Deploy**.
 
