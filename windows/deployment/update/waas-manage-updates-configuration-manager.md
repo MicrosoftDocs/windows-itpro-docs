@@ -171,7 +171,7 @@ There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint 
 
 1. On the **User Experience** page, from the **Deadline behavior** list, select **Software Installation and System restart (if necessary)**. From the **Device restart behavior** list, select **Workstations**, and then click **Next**.
 
-    a. Doing so allows installation and restarts after the 7-day deadline on workstations only.
+    a. Doing so allows installation and restarts after the seven-day deadline on workstations only.
 
 1. On the **Deployment Package** page, select **Create a new deployment package**. In **Name**, type **CBB Upgrades**, select a share for your package source location, and then click **Next**.
 
