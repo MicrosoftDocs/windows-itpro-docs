@@ -75,6 +75,17 @@ Whether the antivirus engine runs in passive mode or not. In passive mode:
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
 
+#### Exclusion merge policy
+
+Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+
+|||
+|:---|:---|
+| **Key** | exclusionsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
 #### Scan exclusions
 
 Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
@@ -128,9 +139,9 @@ Used to exclude content from the scan by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-**Name of excluded content**
+**Process excluded from the scan**
 
-Used to exclude content from the scan by file name.
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
 
 |||
 |:---|:---|
@@ -147,6 +158,17 @@ List of threats (identified by their name) that are not blocked by the product a
 |:---|:---|
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
+
+#### Disallowed threat actions
+
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+
+|||
+|:---|:---|
+| **Key** | disallowedThreatActions |
+| **Data type** | Array of strings |
+| **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 #### Threat type settings
 
@@ -181,6 +203,17 @@ Action to take when coming across a threat of the type specified in the precedin
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
+
+#### Threat type settings merge policy
+
+Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
+
+|||
+|:---|:---|
+| **Key** | threatTypeSettingsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 ### Cloud delivered protection preferences
 
@@ -270,6 +303,7 @@ The following configuration profile contains entries for all settings described 
    "antivirusEngine":{
       "enableRealTimeProtection":true,
       "passiveMode":false,
+      "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
             "$type":"excludedPath",
@@ -284,11 +318,20 @@ The following configuration profile contains entries for all settings described 
          {
             "$type":"excludedFileExtension",
             "extension":"pdf"
+         },
+         {
+            "$type":"excludedFileName",
+            "name":"cat"
          }
       ],
       "allowedThreats":[
          "EICAR-Test-File (not a virus)"
       ],
+      "disallowedThreatActions":[
+         "allow",
+         "restore"
+      ],
+      "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
             "key":"potentially_unwanted_application",
