@@ -352,6 +352,13 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
 
+### [Configure integration with other Microsoft solutions]()
+#### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
+#### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
+#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
+
+
+
 
 ## Reference
 ### [Capabilities]()
@@ -397,12 +404,7 @@
 #### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 
 
-### [Role-based access control]()
-#### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
-#### [Create and manage roles](microsoft-defender-atp/user-roles.md)
-#### [Create and manage machine groups]()
-##### [Using machine groups](microsoft-defender-atp/machine-groups.md)
-##### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
+
 
 
 
@@ -535,40 +537,38 @@
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 
+#### [SIEM integration]()
+##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
+##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
+##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
+ 
 
 #### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
 ##### [Connected applications](microsoft-defender-atp/connected-applications.md)
 ##### [API explorer](microsoft-defender-atp/api-explorer.md)
 
+#### [Role-based access control]()
+##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
+##### [Create and manage roles](microsoft-defender-atp/user-roles.md)
+##### [Create and manage machine groups]()
+###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
+###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-
-### [Pull detections to your SIEM tools]()
-
-### [SIEM integration]()
-#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-#### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
-#### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-#### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
-#### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
-#### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
-#### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
-#### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
+#### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
 #### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
 #### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
 
-### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
-
-### [Configure Microsoft threat protection integration]()
-#### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
-#### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
-#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
-
-### [Integrations]()
+### [Integrations with Microsoft solutions]()
 #### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
