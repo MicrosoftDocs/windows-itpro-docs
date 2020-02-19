@@ -10,6 +10,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 3/20/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business
@@ -49,7 +51,7 @@ You'll need to get permissions for the admin that manages the domain you want to
 In some cases, we might not have info on who the global admin is for the tenant that you select. It might be that the tenant is unmanaged, and you'll need to identify a global admin. Or, you might only need to share account info for the global admin.
 
 If you need to nominate someone to be the global admin, they need sufficient permissions:
-- someone who can distribute sofware
+- someone who can distribute software
 - in Business Center Portal (BCP), it should be someone with **Agreement Admin** role
 
 **To add a global admin to a tenant**

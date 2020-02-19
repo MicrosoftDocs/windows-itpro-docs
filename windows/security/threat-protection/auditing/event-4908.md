@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4908(S): Special Groups Logon table modified.
@@ -31,7 +34,7 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 
 More information about Special Groups auditing can be found here:
 
-<http://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
+<https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
 
 <https://support.microsoft.com/kb/947223>
 

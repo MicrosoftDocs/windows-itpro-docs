@@ -1,13 +1,16 @@
 ---
-title: Perform an in-place upgrade to Windows 10 using Configuration Manager (Windows 10)
-description: The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. Use a System Center Configuration Manager task sequence to completely automate the process.
+title: Perform in-place upgrade to Windows 10 via Configuration Manager
+description: In-place upgrades make upgrading Windows 7, Windows 8, and Windows 8.1 to Windows 10 easy -- you can even automate the whole process with a Microsoft Endpoint Configuration Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -18,7 +21,10 @@ ms.topic: article
 
 -   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Configuration Manager task sequence to completely automate the process.
+
+>[!IMPORTANT]
+>Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must removed from a device before performing an in-place upgrade to Windows 10.
 
 ## Proof-of-concept environment
 
@@ -108,15 +114,15 @@ Figure 2. Upgrade from Windows 7 to Windows 10 Enterprise x64 with a task sequ
 
 After the task sequence finishes, the computer will be fully upgraded to Windows 10.
 
-## Upgrade to Windows 10 with System Center Configuration Manager Current Branch
+## Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager Current Branch
 
 
-With System Center Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
+With Microsoft Endpoint Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
 
 **Note**  
 For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
- 
+ 
 
 ### Create the OS upgrade package
 
@@ -144,7 +150,7 @@ Figure 3. The Configuration Manager upgrade task sequence.
 
 ### Create a device collection
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of System Center Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of Microsoft Endpoint Configuration Manager client installed.
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     -   General
@@ -204,9 +210,9 @@ After the task sequence completes, the computer will be fully upgraded to Window
 
 [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
 
- 
+ 
 
- 
+ 
 
 
 

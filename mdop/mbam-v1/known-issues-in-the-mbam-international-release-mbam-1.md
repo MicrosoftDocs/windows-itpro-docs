@@ -1,12 +1,15 @@
 ---
 title: Known Issues in the MBAM International Release
 description: Known Issues in the MBAM International Release
-author: jamiejdt
+author: dansimp
 ms.assetid: bbf888dc-93c1-4323-b43c-0ded098e9b93
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -33,7 +36,7 @@ If you are using a certificate for authentication between MBAM servers, after up
 
 ### MBAM Svclog File Filling Disk Space
 
-If you have followed Knowledge Base article 2668170, [http://support.microsoft.com/kb/2668170](https://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
+If you have followed Knowledge Base article 2668170, [https://support.microsoft.com/kb/2668170](https://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
 
 **Workaround**: None.
 

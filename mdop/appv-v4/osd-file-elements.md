@@ -1,12 +1,15 @@
 ---
 title: OSD File Elements
 description: OSD File Elements
-author: jamiejdt
+author: dansimp
 ms.assetid: 8211b562-7549-4331-8321-144f52574e99
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

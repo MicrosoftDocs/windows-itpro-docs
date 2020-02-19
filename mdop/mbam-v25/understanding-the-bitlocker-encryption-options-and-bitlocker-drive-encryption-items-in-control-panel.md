@@ -1,8 +1,11 @@
 ---
 title: Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel
 description: Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel
-author: jamiejdt
+author: dansimp
 ms.assetid: f8a01cc2-0c77-48b9-8351-8194e80b0cf8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -63,19 +66,18 @@ The following table lists the tasks you can perform from each Control Panel item
 <td align="left"><p>How the Control Panel item is created</p></td>
 <td align="left"><p>Created in Control Panel when you install the MBAM Client. This item cannot be hidden.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This item appears in addition to, but does not replace, the default BitLocker Drive Encryption Control Panel item.</p>
+<strong>Note</strong><br/><p>This item appears in addition to, but does not replace, the default BitLocker Drive Encryption Control Panel item.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Appears by default in Control Panel as part of the Windows operating system, but you can hide it.</p>
-<p>To hide it, see [Hiding the Default BitLocker Drive Encryption Item in Control Panel](hiding-the-default-bitlocker-drive-encryption-item-in-control-panel-mbam-25.md).</p></td>
+<p>To hide it, see <a href="hiding-the-default-bitlocker-drive-encryption-item-in-control-panel-mbam-25.md" data-raw-source="[Hiding the Default BitLocker Drive Encryption Item in Control Panel](hiding-the-default-bitlocker-drive-encryption-item-in-control-panel-mbam-25.md)">Hiding the Default BitLocker Drive Encryption Item in Control Panel</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="-manage-bitlocker--shortcut-menu"></a>“Manage BitLocker” shortcut menu
 
@@ -111,7 +113,7 @@ The following table describes how the **Manage BitLocker** shortcut menu differs
 </tbody>
 </table>
 
- 
+
 
 
 ## Related topics
@@ -119,11 +121,11 @@ The following table describes how the **Manage BitLocker** shortcut menu differs
 
 [Administering MBAM 2.5 Features](administering-mbam-25-features.md)
 
- 
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

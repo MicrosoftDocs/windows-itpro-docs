@@ -1,13 +1,19 @@
 ---
 title: Windows Defender Application Control and .NET Hardening (Windows 10)
 description: Dynamic Code Security is an application control feature that can verify code loaded by .NET at runtime.
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: morganbr
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 08/20/2018
 ---
 
@@ -24,7 +30,7 @@ Dynamic Code Security is not enabled by default because existing policies may no
 Additionally, a small number of .NET loading features, including loading unsigned assemblies built with System.Reflection.Emit, are not currently supported with Dynamic Code Security enabled. 
 Microsoft recommends testing Dynamic Code Security in audit mode before enforcing it to discover whether any new libraries should be included in the policy. 
 
-To enable Dynamic Code Security, add the following option to the <Rules> section of your policy: 
+To enable Dynamic Code Security, add the following option to the `<Rules>` section of your policy: 
 
 ```xml
 <Rule> 

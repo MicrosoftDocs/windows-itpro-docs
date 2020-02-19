@@ -1,12 +1,15 @@
 ---
 title: MBAM 2.0 Privacy Statement
 description: MBAM 2.0 Privacy Statement
-author: jamiejdt
+author: dansimp
 ms.assetid: fce72ad4-a837-4d17-8d3b-4d93f1a399be
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -89,7 +92,7 @@ Incorrectly editing the registry may severely damage your system. Before making 
 
 Important Information: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their PCs. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available on [TechNet](https://technet.microsoft.com/library/cc709644.aspx).
 
-Additional information on how to modify enable and disable error reporting is available at this support article: [(http://support.microsoft.com/kb/188296)](https://support.microsoft.com/kb/188296).
+Additional information on how to modify enable and disable error reporting is available at this support article: [(https://support.microsoft.com/kb/188296)](https://support.microsoft.com/kb/188296).
 
 ### Microsoft Update
 

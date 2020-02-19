@@ -2,12 +2,14 @@
 title: Planning Network Access Groups (Windows 10)
 description: Planning Network Access Groups
 ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,4 +38,4 @@ For the Woodgrove Bank scenario, access to the devices running SQL Server that s
 
 >**Note:**  Membership in a NAG does not control the level of IPsec traffic protection. The IKE negotiation is only aware of whether the device or user passed or failed the Kerberos V5 authentication process. The connection security rules in the applied GPO control the security methods that are used for protecting traffic and are independent of the identity being authenticated by Kerberos V5.
 
-**Next: **[Planning the GPOs](planning-the-gpos.md)
+**Next:** [Planning the GPOs](planning-the-gpos.md)

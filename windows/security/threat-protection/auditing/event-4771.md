@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4771(F): Kerberos pre-authentication failed.
@@ -66,7 +69,6 @@ This event is not generated if “Do not require Kerberos preauthentication” o
  <Data Name="CertThumbprint" /> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -182,6 +184,7 @@ The most common values:
 | 2    | PA-ENC-TIMESTAMP       | This is a normal type for standard password authentication.                                                                                                                                                                                                                                                                                                                                                      |
 | 11   | PA-ETYPE-INFO          | The ETYPE-INFO pre-authentication type is sent by the KDC in a KRB-ERROR indicating a requirement for additional pre-authentication. It is usually used to notify a client of which key to use for the encryption of an encrypted timestamp for the purposes of sending a PA-ENC-TIMESTAMP pre-authentication value.<br>Never saw this Pre-Authentication Type in Microsoft Active Directory environment.  |
 | 15   | PA-PK-AS-REP\_OLD      | Used for Smart Card logon authentication.                                                                                                                                                                                                                                                                                                                                                                        |
+| 16   | PA-PK-AS-REQ           | Request sent to KDC in Smart Card authentication scenarios.|
 | 17   | PA-PK-AS-REP           | This type should also be used for Smart Card authentication, but in certain Active Directory environments, it is never seen.                                                                                                                                                                                                                                                                                     |
 | 19   | PA-ETYPE-INFO2         | The ETYPE-INFO2 pre-authentication type is sent by the KDC in a KRB-ERROR indicating a requirement for additional pre-authentication. It is usually used to notify a client of which key to use for the encryption of an encrypted timestamp for the purposes of sending a PA-ENC-TIMESTAMP pre-authentication value.<br>Never saw this Pre-Authentication Type in Microsoft Active Directory environment. |
 | 20   | PA-SVR-REFERRAL-INFO   | Used in KDC Referrals tickets.                                                                                                                                                                                                                                                                                                                                                                                   |

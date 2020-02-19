@@ -2,11 +2,13 @@
 title: Get seats assigned to a user
 description: The Get seats assigned to a user operation retrieves information about assigned seats in the Micosoft Store for Business.
 ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

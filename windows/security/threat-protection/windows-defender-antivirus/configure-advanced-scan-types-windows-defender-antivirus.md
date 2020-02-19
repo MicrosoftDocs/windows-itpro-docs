@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
-ms.date: 10/25/2018
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
+ms.reviewer: 
+manager: dansimp
 
 ---
 
@@ -19,7 +21,7 @@ ms.date: 10/25/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 **Use Microsoft Intune to configure scanning options**
 
@@ -27,11 +29,11 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 <a id="ref1"></a>
 
-**Use Configuration Manager to configure scanning options:**
+## Use Microsoft Endpoint Configuration Manager to configure scanning options:
 
-See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
-**Use Group Policy to configure scanning options**
+## Use Group Policy to configure scanning options
 
 To configure the Group Policy settings described in the following table:
 
@@ -60,15 +62,15 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
 >[!NOTE]
 >If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
 
-**Use PowerShell to configure scanning options**
+## Use PowerShell to configure scanning options
 
 See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use WMI to configure scanning options**
+## Use WMI to configure scanning options
 
 For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
 
-### Email scanning limitations
+## Email scanning limitations
 
 We recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 

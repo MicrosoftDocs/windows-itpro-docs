@@ -2,12 +2,14 @@
 title: AppLocker design guide (Windows 10)
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker design guide
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 

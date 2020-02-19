@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/04/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4716(S): Trusted domain information was modified.
@@ -151,3 +154,69 @@ For 4716(S): Trusted domain information was modified.
 
 -   Any changes in Active Directory domain trust settings must be monitored and alerts should be triggered. If this change was not planned, investigate the reason for the change.
 
+## Anonymous Logon account
+
+If the account reported in the event is **Anonymous Logon**, it means the password is changed by system automatic password reset. For example:
+
+```
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          <time>
+Event ID:      4716
+Task Category: Authentication Policy Change
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      <fqdn>
+Description:
+Trusted domain information was modified.    //When trust gets reset, this event generates
+Subject:
+ Security ID:  ANONYMOUS LOGON              //Confirms that anonymous logon account is reported when Automatic password reset for the trust is performed
+ Account Name:  ANONYMOUS LOGON
+ Account Domain:  NT AUTHORITY
+ Logon ID:  0x3E6
+```
+
+After the event, one more event ID is generated:
+
+```
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          <time>
+Event ID:      4742
+Task Category: Computer Account Management
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      <fqdn>
+Description:
+A computer account was changed.
+Subject:
+ Security ID:  ANONYMOUS LOGON
+ Account Name:  ANONYMOUS LOGON
+ Account Domain:  NT AUTHORITY
+ Logon ID:  0x3E6
+Computer Account That Was Changed:
+ Security ID:  CONTOSO\CONTOSOPEERTREE$     //OBJECT representing the TRUST object
+ Account Name:  CONTOSOPEERTREE$
+ Account Domain:  CONTOSO
+ Password Last Set: 10/9/2019 12:02:08 PM
+ 
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          10/1/2019 4:02:43 PM
+Event ID:      4716
+Task Category: Authentication Policy Change
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      W-REDAD-P01.red.lhgroup.de
+Description:
+Trusted domain information was modified.
+ 
+Subject:
+                    Security ID:       S-1-5-21-1313371058-2156521407-1595812000-1103        //Shows the respective domain Sid
+                    Account Name:      U806391a                                              //Users who has modified the attribute.
+                    Account Domain:    RED
+                    Logon ID:          0x16049916
+```

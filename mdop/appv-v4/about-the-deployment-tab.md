@@ -1,12 +1,15 @@
 ---
 title: About the Deployment Tab
 description: About the Deployment Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: 12891798-baa4-45a5-b845-b9505ab95633
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -47,16 +50,15 @@ Use the **Server URL** controls to specify the virtual application server config
 <td align="left"><p><strong>Hostname</strong></p></td>
 <td align="left"><p>Enables you to select the virtual application server or the load balancer in front of a group of virtual application servers that will stream the software package to an Application Virtualization Desktop Client. You must complete this item to create a sequenced application package, but you can change from the default %SFT_SOFTGRIDSERVER% environment variable to the actual hostname or IP address of a virtual application server.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you choose not to specify a static hostname or IP address, on each Application Virtualization Desktop Client you must set up an environment variable called SFT_SOFTGRIDSERVER. Its value must be the hostname or IP address of the virtual application server or load balancer that is this client's source of applications. You should make this environment variable a system variable rather than a user variable. Any Application Virtualization Desktop Client session that is running on this computer during your assignment of this variable must be closed and then opened so that the resumed session will be aware of its new application source.</p>
+<strong>Note</strong><br/><p>If you choose not to specify a static hostname or IP address, on each Application Virtualization Desktop Client you must set up an environment variable called SFT_SOFTGRIDSERVER. Its value must be the hostname or IP address of the virtual application server or load balancer that is this client&#39;s source of applications. You should make this environment variable a system variable rather than a user variable. Any Application Virtualization Desktop Client session that is running on this computer during your assignment of this variable must be closed and then opened so that the resumed session will be aware of its new application source.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Port</strong></p></td>
-<td align="left"><p>Enables you to specify the port on which the virtual application server or the load balancer will listen for an Application Virtualization Desktop Client's request for the package. This information is required to create a package, but you can change it. The default port is 554.</p></td>
+<td align="left"><p>Enables you to specify the port on which the virtual application server or the load balancer will listen for an Application Virtualization Desktop Client&#39;s request for the package. This information is required to create a package, but you can change it. The default port is 554.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Path</strong></p></td>
@@ -65,7 +67,7 @@ Use the **Server URL** controls to specify the virtual application server config
 </tbody>
 </table>
 
- 
+
 
 ## Operating Systems
 
@@ -95,7 +97,7 @@ Use the **Operating Systems** controls to specify the application's operating sy
 </tbody>
 </table>
 
- 
+
 
 ## Output Options
 
@@ -118,7 +120,7 @@ Use the **Output Options** controls to specify the output options for the applic
 <td align="left"><p><strong>Compression Algorithm</strong></p></td>
 <td align="left"><p>Use to select the method for compressing the SFT file for streaming across a network. Select one of the following compression methods:</p>
 <ul>
-<li><p><strong>Compressed</strong>—Specifies that the SFT file be compressed in the [ZLIB](https://go.microsoft.com/fwlink/?LinkId=111475) format.</p></li>
+<li><p><strong>Compressed</strong>—Specifies that the SFT file be compressed in the <a href="https://go.microsoft.com/fwlink/?LinkId=111475" data-raw-source="[ZLIB](https://go.microsoft.com/fwlink/?LinkId=111475)">ZLIB</a> format.</p></li>
 <li><p><strong>Not Compressed</strong>—The default; specifies that the SFT file not be compressed.</p></li>
 </ul></td>
 </tr>
@@ -133,7 +135,7 @@ Use the **Output Options** controls to specify the output options for the applic
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -142,9 +144,9 @@ Use the **Output Options** controls to specify the output options for the applic
 
 [Sequencer Console](sequencer-console.md)
 
- 
 
- 
+
+
 
 
 

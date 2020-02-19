@@ -2,11 +2,13 @@
 title: Reporting CSP
 description: The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs.
 ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -79,7 +81,7 @@ Supported operations are Get and Replace.
 
 Retrieve all available Windows Information Protection (formerly known as Enterprise Data Protection) logs starting from the specified StartTime.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -102,7 +104,7 @@ Retrieve all available Windows Information Protection (formerly known as Enterpr
 
 Retrieve a specified number of security auditing logs starting from the specified StartTime.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

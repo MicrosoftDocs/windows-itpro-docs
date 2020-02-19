@@ -2,11 +2,13 @@
 title: PowerShell for Surface Hub (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
+ms.reviewer: 
+manager: dansimp
 keywords: PowerShell, set up Surface Hub, manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 01/10/2018
 ms.localizationpriority: medium
@@ -496,7 +498,7 @@ if (![System.String]::IsNullOrEmpty($strRegPoolEntry))
     $strRegPool = $strRegPoolEntry
 }
 
-# Try to SfB-enable the account. Note that it may not work right away as the account needs to propogate to active directory
+# Try to SfB-enable the account. Note that it may not work right away as the account needs to propagate to active directory
 PrintAction "Enabling Skype for Business..."
 Start-Sleep -s 10
 $Error.Clear()
@@ -532,7 +534,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot"
+            $v += " Go to https://aka.ms/shubtshoot"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
@@ -609,13 +611,13 @@ function ExitIfError($strMsg)
 
 ## Check dependencies ##
 try {
-    Import-Module LyncOnlineConnector
+    Import-Module SkypeOnlineConnector
     Import-Module MSOnline
 }
 catch
 {
     PrintError "Some dependencies are missing"
-    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
     PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
@@ -876,7 +878,7 @@ if (![System.String]::IsNullOrEmpty($strRegPoolEntry))
 }
 #>
 
-# Try to SfB-enable the account. Note that it may not work right away as the account needs to propogate to active directory
+# Try to SfB-enable the account. Note that it may not work right away as the account needs to propagate to active directory
 PrintAction "Enabling Skype for Business on $strRegPool"
 Start-Sleep -s 10
 $Error.Clear()
@@ -976,7 +978,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot for help"
+            $v += " Go to https://aka.ms/shubtshoot for help"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
@@ -1098,11 +1100,11 @@ if ($fSfbIsOnline -or $fExIsOnline)
 if ($fSfbIsOnline)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {
-        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from http://www.microsoft.com/download/details.aspx?id=39366"
+        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from https://www.microsoft.com/download/details.aspx?id=39366"
     }
 }
 else
@@ -1350,7 +1352,7 @@ Validate -Test "ActiveSync devices are allowed" -Condition ($strDefaultAccessLev
 
 # Check if there exists a device access rule that bans the device type Windows Mail
 $blockingRules = Get-ActiveSyncDeviceAccessRule | where {($_.AccessLevel -eq 'Block' -or $_.AccessLevel -eq 'Quarantine') -and $_.Characteristic -eq 'DeviceType'-and $_.QueryString -eq 'WindowsMail'}
-Validate -Test "Windows mail devices are not blocked or quarantined" -Condition ($blockingRules -eq $null -or $blockingRules.Length -eq 0) -FailureMsg "DeviceType Windows Mail is accessible - devices are blocked or quaratined - the surface hub will not be able to send mail or sync its calendar."
+Validate -Test "Windows mail devices are not blocked or quarantined" -Condition ($blockingRules -eq $null -or $blockingRules.Length -eq 0) -FailureMsg "DeviceType Windows Mail is accessible - devices are blocked or quarantined - the surface hub will not be able to send mail or sync its calendar."
 
 ## End Exchange ##
 
@@ -1409,7 +1411,7 @@ if ($fHasOnline)
     }
 }
 
-#If there is an on-prem component, we can get the authorative AD user from mailbox
+#If there is an on-prem component, we can get the authoritative AD user from mailbox
 if ($fHasOnPrem)
 {
     $accountOnPrem = $null
@@ -1511,12 +1513,12 @@ else
 if ($online)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {
         PrintError "Some dependencies are missing"
-        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
         PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }

@@ -1,8 +1,11 @@
 ---
 title: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
 description: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
-author: jamiejdt
+author: dansimp
 ms.assetid: 35f8c5f6-8be3-443d-baf0-56d68b08f3bc
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ For a list of the supported versions of the software mentioned in this topic, se
 **Note**  
 We recommend you use a single-server architecture in test environments only.
 
- 
+ 
 
 ## Recommended number of servers and supported number of clients
 
@@ -52,7 +55,7 @@ The recommended number of servers and supported number of clients in a productio
 </tbody>
 </table>
 
- 
+ 
 
 ## Recommended MBAM high-level architecture with the Stand-alone topology
 
@@ -111,7 +114,7 @@ The **monitoring web services** are used by the MBAM Client and the websites to 
 **Important**  
 The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database.
 
- 
+ 
 
 Management workstation
 
@@ -146,7 +149,7 @@ The MBAM Client:
 
 [Illustrated Features of an MBAM 2.5 Deployment](illustrated-features-of-an-mbam-25-deployment.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

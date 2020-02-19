@@ -1,8 +1,11 @@
 ---
 title: Uncontrolled GPO Commands
 description: Uncontrolled GPO Commands
-author: jamiejdt
+author: dansimp
 ms.assetid: 05a8050f-adc3-465b-8524-bbe95745165c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

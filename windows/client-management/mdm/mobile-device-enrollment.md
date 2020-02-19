@@ -2,11 +2,13 @@
 title: Mobile device enrollment
 description: Mobile device enrollment is the first phase of enterprise management.
 ms.assetid: 08C8B3DB-3263-414B-A368-F47B94F47A11
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/11/2017
 ---
 
@@ -32,7 +34,7 @@ The enrollment process includes the following steps:
 ## Enrollment protocol
 
 
-There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 The enrollment process involves the following steps:
 
@@ -101,7 +103,7 @@ To manually trigger enrollment migration, you can run MDMMaintenenceTask.
 
 The enrollment server can decline enrollment messages using the SOAP Fault format. Errors created can be sent as follows:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
@@ -198,7 +200,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>

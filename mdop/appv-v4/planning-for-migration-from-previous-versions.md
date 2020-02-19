@@ -1,12 +1,15 @@
 ---
 title: Planning for Migration from Previous Versions
 description: Planning for Migration from Previous Versions
-author: jamiejdt
+author: dansimp
 ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -25,7 +28,7 @@ To help ensure a successful migration, the Application Virtualization system com
     **Note**  
     If you have more than one server sharing access to the Application Virtualization database, all those servers must be taken offline while the database is being upgraded. You should follow your normal business practices for the database upgrade, but it is highly advisable that you test the database upgrade by using a backup copy of the database first on a test server. Then, you should select one of the servers for the first upgrade, which will upgrade the database schema. After the production database has been successfully upgraded, you can upgrade the other servers.
 
-     
+     
 
 3.  **Microsoft Application Virtualization Management Web Service.** This step applies only if the Management Web Service is on a separate server, which would require that you run the server installer program on that separate server to upgrade the Web service. Otherwise, the previous server upgrade step will automatically upgrade the Management Web Service.
 
@@ -84,14 +87,14 @@ You can deploy packages created in previous versions of App-V to App-V 4.6 Clie
 </tbody>
 </table>
 
- 
+ 
 
 To run a newly created 32-bit package, you must sequence the application on a computer running a 32-bit operating system with the App-V 4.6 Sequencer installed. After you have sequenced the application, in the Sequencer console, select the **Deployment** tab and then specify the appropriate operating system and chip architecture as required.
 
 **Important**  
 Applications sequenced on a computer running a 64-bit operating system must be deployed to computers running a 64-bit operating system. New 32-bit packages created by using the App-V 4.6 Sequencer will not run on computers running the App-V 4.5 Client.
 
- 
+ 
 
 To run new 64-bit packages on the App-V 4.6 Client, you must sequence the application on a computer running the App-V 4.6 Sequencer and that is running a 64-bit operating system. After you have sequenced the application, in the Sequencer console, select the **Deployment** tab and then specify the appropriate operating system and chip architecture as required.
 
@@ -176,14 +179,14 @@ The following table lists which client versions will run packages created by usi
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to all versions of the App-V 4.5 Client, including App-V 4.5, App-V 4.5 CU1 and App-V 4.5 SP1.
 
 ## Additional Migration Considerations
 
 
-One of the features of the App-V 4.5 Sequencer is the ability to create Windows Installer files (.msi) as control points for virtual application package interoperability with electronic software distribution (ESD) systems such as Microsoft System Center Configuration Manager. Previous Windows Installer files created with the .msi tool for Application Virtualization that were installed on a App-V 4.1 or 4.2 Client that is subsequently upgraded to 4.5 continue to work, although they cannot be installed on the 4.5 Client. However, they cannot be removed or upgraded unless they are upgraded in the 4.5 Sequencer. The original pre-4.5 virtual application package would need to be opened in the 4.5 Sequencer and then saved as a Windows Installer File.
+One of the features of the App-V 4.5 Sequencer is the ability to create Windows Installer files (.msi) as control points for virtual application package interoperability with electronic software distribution (ESD) systems such as Microsoft Endpoint Configuration Manager. Previous Windows Installer files created with the .msi tool for Application Virtualization that were installed on a App-V 4.1 or 4.2 Client that is subsequently upgraded to 4.5 continue to work, although they cannot be installed on the 4.5 Client. However, they cannot be removed or upgraded unless they are upgraded in the 4.5 Sequencer. The original pre-4.5 virtual application package would need to be opened in the 4.5 Sequencer and then saved as a Windows Installer File.
 
 **Note**  
 If the App-V 4.2 Client has already been upgraded to 4.5, it is possible to use script as a workaround to preserve the 4.2 packages on 4.5 clients and allow them to be managed. This script must copy two files, msvcp71.dll and msvcr71.dll, to the App-V installation folder and set the following registry key values under the registry key \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Configuration\]:
@@ -192,7 +195,7 @@ If the App-V 4.2 Client has already been upgraded to 4.5, it is possible to us
 
 "GlobalDataDirectory"="C:\\\\Documents and Settings\\\\All Users\\\\Documents\\\\" (a globally writeable location)
 
- 
+ 
 
 Windows Installer files generated by the App-V 4.5 Sequencer display the error message "This package requires Microsoft Application Virtualization Client 4.5 or later" when you try to run them on an App-V 4.6 Client. Open the old package with either the App-V 4.5 SP1 Sequencer or the App-V 4.6 Sequencer and generate a new .msi for the package.
 
@@ -205,9 +208,9 @@ For additional information about upgrading from previous versions, see [Upgradin
 
 [Planning for Application Virtualization System Deployment](planning-for-application-virtualization-system-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

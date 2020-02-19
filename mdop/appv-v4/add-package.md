@@ -1,12 +1,15 @@
 ---
 title: ADD PACKAGE
 description: ADD PACKAGE
-author: jamiejdt
+author: dansimp
 ms.assetid: aa83928d-a234-4395-831e-2a7ef786ff53
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

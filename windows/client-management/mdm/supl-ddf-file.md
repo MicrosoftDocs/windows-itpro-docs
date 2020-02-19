@@ -2,26 +2,28 @@
 title: SUPL DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the SUPL configuration service provider.
 ms.assetid: 514B7854-80DC-4ED9-9805-F5276BF38034
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/20/2018
 ---
 
 # SUPL DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider.
+This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider (CSP).
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the DDF for the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -45,7 +47,7 @@ The XML below is for Windows 10, version 1809.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/SUPL</MIME>
+            <MIME>com.microsoft/1.2/MDM/SUPL</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -157,9 +159,32 @@ The XML below is for Windows 10, version 1809.
                     <Replace />
                   </AccessType>
                   <DefaultValue>1</DefaultValue>
-                  <Description>Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to 1. For SUPL 2.0, set this value to 2. The default is 1.</Description>
+                  <Description>Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.</Description>
                   <DFFormat>
                     <int />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+              <Node>
+                <NodeName>FullVersion</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DefaultValue>1.0.0</DefaultValue>
+                  <Description>Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.</Description>
+                  <DFFormat>
+                    <chr />
                   </DFFormat>
                   <Occurrence>
                     <One />

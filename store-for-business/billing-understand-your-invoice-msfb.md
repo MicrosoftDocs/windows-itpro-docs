@@ -10,6 +10,8 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Understand your Microsoft Customer Agreement invoice
@@ -24,7 +26,6 @@ Invoices are your bill from Microsoft. A few things to note:
 - **Billing profile** - Billing profiles are created during your purchase. Invoices are created for each billing profile. Billing profiles let you customize what products are purchased, how you pay for them, and who can make purchases. For more information, see [Understand billing profiles](billing-profile.md)
 - **Items included** - Your invoice includes total charges for all first and third-party software and hardware products purchased under a Microsoft Customer Agreement. That includes items purchased from Microsoft Store for Business and Azure Marketplace. 
 - **Charges** - Your invoice provides information about products purchased and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. 
-- **International customers** - Charges on invoices for international customers are converted to their local currencies. Exchange rate information is listed at the bottom of the invoice.
 
 ## Online invoice
 For Store for Business customers, invoices are also available online. A few things to note:
@@ -105,11 +106,8 @@ At the bottom of the invoice, there are instructions for paying your bill. You c
 ### Publisher information
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
 
-### Exchange rate
-If prices were converted to your local currency, the exchange rates are listed in this section at the bottom of the invoice. All Azure charges are priced in USD and third-party services are priced in the seller's currency.
-
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-invoice-mca).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice-mca).
 
 ## Need help? Contact us.
 

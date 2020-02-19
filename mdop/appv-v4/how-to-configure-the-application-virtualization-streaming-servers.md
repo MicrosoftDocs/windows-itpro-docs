@@ -1,12 +1,15 @@
 ---
 title: How to Configure the Application Virtualization Streaming Servers
 description: How to Configure the Application Virtualization Streaming Servers
-author: jamiejdt
+author: dansimp
 ms.assetid: 3e2dde35-9d72-40ba-9fdf-d0338bd4d561
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Before virtual applications can be streamed to the Application Virtualization De
 **Important**  
 Application Virtualization Servers stream SFT files to the Desktop Client and the Client for Remote Desktop Services using only RTSP or RTSPS protocols. The ICO (icon) file and the OSD (open software descriptor) file can be configured to stream from a different file or HTTP server.
 
- 
+ 
 
 **To configure the Application Virtualization Streaming Servers**
 
@@ -44,9 +47,9 @@ Application Virtualization Servers stream SFT files to the Desktop Client and th
 
 [How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)
 
- 
+ 
 
- 
+ 
 
 
 

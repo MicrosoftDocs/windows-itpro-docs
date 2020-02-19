@@ -3,238 +3,217 @@ title: FIPS 140 Validation
 description: This topic provides information on how Microsoft products and cryptographic modules comply with the U.S. Federal government standard FIPS 140.
 ms.prod: w10
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/03/2018
+ms.date: 11/05/2019
+ms.reviewer: 
 ---
 
+# FIPS 140-2 Validation
 
-# FIPS 140 Validation
+## FIPS 140-2 standard overview
 
-On this page
+The Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard that defines minimum security requirements for cryptographic modules in information technology products, as defined in Section 5131 of the Information Technology Management Reform Act of 1996.
 
-  - [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
-  - [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
-  - [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
-  - [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
-  - [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
-  - [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
-  - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
-  - [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
+The [Cryptographic Module Validation Program (CMVP)](https://csrc.nist.gov/Projects/cryptographic-module-validation-program), a joint effort of the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS), validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140-2) and related FIPS cryptography standards. The FIPS 140-2 security requirements cover eleven areas related to the design and implementation of a cryptographic module. The NIST Information Technology Laboratory operates a related program that validates the FIPS approved cryptographic algorithms in the module.
 
-Updated: March 2018
+## Microsoft’s approach to FIPS 140-2 validation
 
- 
+Microsoft maintains an active commitment to meeting the requirements of the FIPS 140-2 standard, having validated cryptographic modules against it since the inception of the standard in 2001.  Microsoft validates its cryptographic modules under the NIST CMVP, as described above.  Multiple Microsoft products, including Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
 
-## Introduction
+## Using Windows in a FIPS 140-2 approved mode of operation
 
-This document provides information on how Microsoft products and cryptographic modules comply with the U.S. Federal government standard, *Federal Information Processing Standard (FIPS) 140 – Security Requirements for Cryptographic Modules* \[FIPS 140\].
+Windows 10 and Windows server may be configured to run in a FIPS 140-2 approved mode of operation.  This is commonly referred to as “FIPS mode.”  Achieving this mode of operation requires administrators to complete all four steps outlined below.
 
-### Audience
+### Step 1: Ensure FIPS 140-2 validated cryptographic modules are installed
 
-This document is primarily focused on providing information for three parties:
+Administrators must ensure that all cryptographic modules installed are FIPS 140-2 validated.  This is accomplished by cross-checking the version number of the cryptographic module with the table of validated modules at the end of this topic, organized by operating system release.
 
-[Procurement Officer](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_product_validation) – Responsible for verifying that Microsoft products (or even third-party applications) are either FIPS 140 validated or utilize a Microsoft FIPS 140 validated cryptographic module.
+### Step 2: Ensure all security policies for all cryptographic modules are followed
 
-[System Integrator](https://technet.microsoft.com/library/cc750357.aspx#_information_for_system) – Responsible for ensuring that Microsoft Products are configured properly to use only FIPS 140 validated cryptographic modules.
+Each of the cryptographic modules has a defined security policy that must be met for the module to operate in its FIPS 140-2 approved mode.  The security policy may be found in each module’s published Security Policy Document (SPD).  The SPDs for each module may be found by following the links in the table of validated modules at the end of this topic.  Click on the module version number to view the published SPD for the module. 
+ 
+### Step 3: Enable the FIPS security policy
 
-[Software Developer](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) – Responsible for building software products that utilize Microsoft FIPS 140 validated cryptographic modules.
+Windows provides the security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing,” which is used by some Microsoft products to determine whether to operate in a FIPS 140-2 approved mode.  When this policy is enabled, the validated cryptographic modules in Windows will also operate in FIPS approved mode.  The policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
 
-### Document Map
+### Step 4: Ensure only FIPS validated cryptographic algorithms are used
 
-This document is broken into seven major sections:
+Neither the operating system nor the cryptographic modules can enforce a FIPS approved mode of operation, regardless of the FIPS security policy setting.  To run in a FIPS approved mode, an application or service must check for the policy flag and enforce the security policies of the validated modules.  If an application or service uses a non-approved cryptographic algorithm or does not follow the security policies of the validated modules, it is not operating in a FIPS approved mode.
 
-[FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#_fips_140_overview) – Provides an overview of the FIPS 140 standard as well as provides some historical information about the standard.
+## Frequently asked questions
 
-[Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_product_validation) – Provides information on how Microsoft products are FIPS 140 validated.
+### How long does it take to certify cryptographic modules?
 
-[Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#_information_for_system) – Describes how to configure and verify that Microsoft Products are being used in a manner consistent with the product’s FIPS 140 Security Policy.
+Microsoft begins certification of cryptographic modules after each major feature release of Windows 10 and Windows Server. The duration of each evaluation varies, depending on many factors.
 
-[Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) – Identifies how developers can leverage the Microsoft FIPS 140 validated cryptographic modules.
+### When does Microsoft undertake a FIPS 140 validation?
 
-[FAQ](https://technet.microsoft.com/library/cc750357.aspx#_fips_140_faq) – Frequently Asked Questions.
+The cadence for starting module validation aligns with the feature updates of Windows 10 and Windows Server.  As the software industry evolves, operating systems release more frequently. Microsoft completes validation work on major releases but, in between releases, seeks to minimize the changes to the cryptographic modules.  
 
-[Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) – Explains Microsoft cryptographic architecture and identifies specific modules that are FIPS 140 validated.
+### What is the difference between “FIPS 140 validated” and “FIPS 140 compliant”?
 
-[Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#_cryptographic_algorithms) – Lists the cryptographic algorithm, modes, states, key sizes, Windows versions, and corresponding cryptographic algorithm validation certificates.
+“FIPS 140 validated” means that the cryptographic module, or a product that embeds the module, has been validated (“certified”) by the CMVP as meeting the FIPS 140-2 requirements. “FIPS 140 compliant” is an industry term for IT products that rely on FIPS 140 validated products for cryptographic functionality.
 
-## FIPS 140 Overview
+### I need to know if a Windows service or application is FIPS 140-2 validated.
 
-### FIPS 140 Standard
+The cryptographic modules leveraged in Windows are validated through the CMVP, not individual services, applications, hardware peripherals, or other solutions.  For a solution to be considered compliant, it must call a FIPS 140-2 validated cryptographic module in the underlying OS and the OS must be configured to run in FIPS mode.  Contact the vendor of the service, application, or product for information on whether it calls a validated cryptographic module.
 
-FIPS 140 is a US government and Canadian government standard that defines a minimum set of the security requirements for products that implement cryptography. This standard is designed for cryptographic modules that are used to secure sensitive but unclassified information. Testing against the FIPS 140 standard is maintained by the Cryptographic Module Validation Program (CMVP), a joint effort between the US National Institute of Standards and Technology (NIST) and the Communications Security Establishment of Canada (CSEC).
+### What does "When operated in FIPS mode" mean on a certificate?
 
-The current standard defines four-levels of increasing security, 1 through 4. Most software products (including all Microsoft products) are tested against the Level 1 security requirements.
+This caveat identifies required configuration and security rules that must be followed to use the cryptographic module in a way that is consistent with its FIPS 140-2 security policy. Each module has its own security policy—a precise specification of the security rules under which it will operate—and employs approved cryptographic algorithms, cryptographic key management, and authentication techniques. The security rules are defined in the Security Policy Document (SPD) for each module.
 
-### Applicability of the FIPS standard
+### What is the relationship between FIPS 140-2 and Common Criteria?
 
-Within the US Federal government, the FIPS 140 standard applies to any security system (whether hardware, firmware, software, or a combination thereof) to be used by agencies for protecting sensitive but unclassified information. Some agencies have expanded its use by requiring that the modules to be procured for secret systems also meet the FIPS 140 requirements.
-
-The FIPS 140 standard has also been used by different standards bodies, specification groups, nations, and private institutions as a requirement or guideline for those products (e.g. – Digital Cinema Systems Specification).
-
-### History of 140-1
-
-FIPS 140-1 is the original working version of the standard made official on January 11, 1994. The standard remained in effect until FIPS 140-2 became mandatory for new products on May 25, 2002.
-
-### FIPS 140-2
-
-FIPS 140-2 is currently the active version of the standard.
-
-### Microsoft FIPS Support Policy
-
-Microsoft actively maintains FIPS 140 validation for its cryptographic modules.
-
-### FIPS Mode of Operation
-
-The common term “FIPS mode” is used in this document and Security Policy documents. When a cryptographic module contains both FIPS-approved and non-FIPS approved security methods, it must have a "FIPS mode of operation" to ensure only FIPS-approved security methods may be used. When a module is in "FIPS mode", a non-FIPS approved method cannot be used instead of a FIPS-approved method.
-
-## Microsoft Product Validation (Information for Procurement Officers and Auditors)
-
-This section provides information for Procurement Officers and Auditors who are responsible for ensuring that Microsoft products with FIPS 140 validated cryptographic modules are used in their organization. The goal of this section is to provide an overview of the Microsoft developed products and modules and explain how the validated cryptographic modules are used.
-
-### Microsoft Product Relationship with CNG and CAPI libraries
-
-Rather than validate individual components and products, Microsoft chooses to validate only the underlying cryptographic modules. Subsequently, many Windows components and Microsoft products are built to rely on the Cryptographic API: Next Generation (CNG) and legacy Cryptographic API (CAPI) FIPS 140 validated cryptographic modules. Windows components and Microsoft products use the documented application programming interfaces (APIs) for each of the modules to access various cryptographic services.
-
-The following list contains some of the Windows components and Microsoft products that rely on FIPS 140 validated cryptographic modules:
-
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
-
-## Information for System Integrators
-
-This section provides information for System Integrators and Auditors who are responsible for deploying Microsoft products in a manner consistent with the product’s FIPS 140 Security Policy.
-
-There are two steps to ensure that Microsoft products operate in FIPS mode:
-
-1.  Selecting/Installing FIPS 140 validated cryptographic modules
-2.  Setting FIPS local/group security policy flag.
-
-### Step 1 – Selecting/Installing FIPS 140 Validated Cryptographic Modules
-
-Systems Integrators must ensure that all cryptographic modules installed are, in fact, FIPS 140 validated. This can be accomplished by cross-checking the version number of the installed module with the list of validated binaries. The list of validated CAPI binaries is identified in the [CAPI Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_capi_validated_cryptographic) section below and the list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_cng_validated_cryptographic) section below. There are similar sections for all other validated cryptographic modules.
-
-The version number of the installed binary is found by right-clicking the module file and clicking on the Version or Details tab. Cryptographic modules are stored in the "windows\\system32" or "windows\\system32\\drivers" directory.
-
-### Step 2 – Setting FIPS Local/Group Security Policy Flag
-
-The Windows operating system provides a group (or local) security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing”, which is used by many Microsoft products to determine whether to operate in a FIPS-approved mode. When this policy is set, the validated cryptographic modules in Windows will also operate in a FIPS-approved mode.
-
-**Note** – There is no enforcement of the FIPS policy by the operating system or the validated cryptographic modules. Instead, each individual application must check this flag and enforce the Security Policy of the validated cryptographic modules.
-
-#### Instructions on Setting the FIPS Local/Group Security Policy Flag
-
-While there are alternative methods for setting the FIPS local/group security policy flag, the following method is included as a guide to users with Administrative privileges. This description is for the Local Security Policy, but the Group Security Policy may be set in a similar manner.
-
-1.  Open the 'Run' menu by pressing the combination 'Windows Key + R'.
-2.  Type 'secpol.msc' and press 'Enter' or click the 'Ok' button.
-3.  In the Local Security Policy management console window that opens, use the left tab to navigate to the Local Policies -\&gt; Security Options.
-4.  Scroll down the right pane and double-click 'System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing'.
-5.  In the properties window, select the 'Enabled' option and click the 'Apply' button.
-
-#### Microsoft Components and Products That Utilize FIPS Local/Group Security Policy
-
-The following list details some of the Microsoft components that use the cryptographic functionality implemented by either CNG or legacy CAPI. When the FIPS Local/Group Security Policy is set, the following components will enforce the validated module Security Policy.
-
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
-
-#### Effects of Setting FIPS Local/Group Security Policy Flag
-
-When setting the FIPS local/group security policy flag, the behavior of several Microsoft components and products are affected. The most noticeable difference will be that the components enforcing this setting will only use those algorithms approved or allowed in FIPS mode. The specific changes to the products listed above are:
-
-  - Schannel Security Package forced to negotiate sessions using TLS. The following supported Cipher Suites are disabled:
-
-  -  - TLS\_RSA\_WITH\_RC4\_128\_SHA
-      - TLS\_RSA\_WITH\_RC4\_128\_MD5
-      - SSL\_CK\_RC4\_128\_WITH\_MD5
-      - SSL\_CK\_DES\_192\_EDE3\_CBC\_WITH\_MD5
-      - TLS\_RSA\_WITH\_NULL\_MD5
-      - TLS\_RSA\_WITH\_NULL\_SHA
-
-  - The set of cryptographic algorithms that a Remote Desktop Protocol (RDP) server will use is scoped to:
-
-  -  - CALG\_RSA\_KEYX - RSA public key exchange algorithm
-      - CALG\_3DES - Triple DES encryption algorithm
-      - CALG\_AES\_128 - 128 bit AES
-      - CALG\_AES\_256 - 256 bit AES
-      - CALG\_SHA1 - SHA hashing algorithm
-      - CALG\_SHA\_256 - 256 bit SHA hashing algorithm
-      - CALG\_SHA\_384 - 384 bit SHA hashing algorithm
-      - CALG\_SHA\_512 - 512 bit SHA hashing algorithm
-
-  - Any Microsoft .NET Framework applications, such as Microsoft ASP.NET or Windows Communication Foundation (WCF), only allow algorithm implementations that are validated to FIPS 140, meaning only classes that end in "CryptoServiceProvider" or "Cng" can be used. Any attempt to create an instance of other cryptographic algorithm classes or create instances that use non-allowed algorithms will cause an InvalidOperationException exception.
-
-  - Verification of ClickOnce applications fails unless the client computer has .NET Framework 2.0 SP1 or later service pack installed or .NET Framework 3.5 or later installed.
-
-  - On Windows Vista and Windows Server 2008 and later, BitLocker Drive Encryption switches from AES-128 using the elephant diffuser to using the approved AES-256 encryption. Recovery passwords are not created or backed up. Instead, backup a recovery key on a local drive or on a network share. To use the recovery key, put the key on a USB device and plug the device into the computer.
-
-Please be aware that selection of FIPS mode can limit product functionality (See <http://support.microsoft.com/kb/811833>).
-
-## Information for Software Developers
-
-This section is targeted at developers who wish to build their own applications using the FIPS 140 validated cryptographic modules.
-
-Each of the validated cryptographic modules defines a series of rules that must be followed. The security rules for each validated cryptographic module are specified in the Security Policy document. Links to each of the Security Policy documents is provided in the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) section below. Generally, the restriction in Microsoft validated cryptographic modules is limiting the use of cryptography to only FIPS Approved cryptographic algorithms, modes, and key sizes.
-
-### Using Microsoft Cryptographic Modules in a FIPS mode of operation
-
-No matter whether developing with native languages or using .NET, it is important to first check whether the CNG modules for the target system are FIPS validated. The list of validated CNG binaries is identified in the [CNG Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_cng_validated_cryptographic) section.
-
-When developing using CNG directly, it is the responsibility of the developer to follow the security rules outlined in the FIPS 140 Security Policy for each module. The security policy for each module is provided on the CMVP website. Links to each of the Security Policy documents is provided in the tables below. It is important to remember that setting the FIPS local/group security policy Flag (discussed above) does not affect the behavior of the modules when used for developing custom applications.
-
-If you are developing your application using .NET instead of using the native libraries, then setting the FIPS local policy flag will generate an exception when an improper .NET class is used for cryptography (i.e. the cryptographic classes whose names end in "Managed"). The names of these allowed classes end with "Cng", which use the CNG binaries or "CryptoServiceProvider", which use the legacy CAPI binaries.
-
-### Key Strengths and Validity Periods
-
-NIST Special Publication 800-131A Revision 1, Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths, dated November 2015, \[[SP 800-131A](http://dx.doi.org/10.6028/nist.sp.800-131ar1)\], offers guidance for moving to stronger cryptographic keys and algorithms. This does not replace NIST SP 800-57, Recommendation for Key Management Part 1: General, \[[SP 800-57](http://csrc.nist.gov/publications/pubssps.html#800-57-part1)\], but gives more specific guidance. One of the most important topics discussed in these publications deals with the key strengths of FIPS Approved algorithms and their validity periods. When developing applications that use FIPS Approved algorithms, it is also extremely important to select appropriate key sizes based on the security lifetimes recommended by NIST.
-
-## FIPS 140 FAQ
-
-The following are answers to commonly asked questions for the FIPS 140-2 validation of Microsoft products.
-
-1.  How does FIPS 140 relate to the Common Criteria?  
-    **Answer:** These are two separate security standards with different, but complementary, purposes. FIPS 140 is a standard designed specifically for validating product modules that implement cryptography. On the other hand, Common Criteria is designed to help evaluate security functions in IT products.  
-    In many cases, Common Criteria evaluations will rely on FIPS 140 validations to provide assurance that cryptographic functionality is implemented properly.
-2.  How does FIPS 140 relate to Suite B?  
-    **Answer:** Suite B is simply a set of cryptographic algorithms defined by the U.S. National Security Agency (NSA) as part of its Cryptographic Modernization Program. The set of Suite B cryptographic algorithms are to be used for both unclassified information and most classified information.  
-    The Suite B cryptographic algorithms are a subset of the FIPS Approved cryptographic algorithms as allowed by the FIPS 140 standard.
-3.  There are so many modules listed on the NIST website for each release, how are they related and how do I tell which one applies to me?  
-    **Answer:** Microsoft strives to validate all releases of its cryptographic modules. Each module provides a different set of cryptographic algorithms. If you are required to use only FIPS validated cryptographic modules, you simply need to verify that the version being used appears on the validation list.  
-    Please see the [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140)section for a complete list of Microsoft validated modules.
-4.  My application links against crypt32.dll, cryptsp.dll, advapi32.dll, bcrypt.dll, bcryptprimitives.dll, or ncrypt.dll. What do I need to do to assure I’m using FIPS 140 validated cryptographic modules?  
-    **Answer:** crypt32.dll, cryptsp.dll, advapi32.dll, and ncrypt.dll are intermediary libraries that will offload all cryptographic operations to the FIPS validated cryptographic modules. Bcrypt.dll itself is a validated cryptographic module for Windows Vista and Windows Server 2008. For Windows 7 and Windows Server 2008 R2 and later, bcryptprimitives.dll is the validated module, but bcrypt.dll remains as one of the libraries to link against.  
-    You must first verify that the underlying CNG cryptographic module is validated. Once verified, you'll need to confirm that you're using the module correctly in FIPS mode (See [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#_information_for_software) section for details).
-5.  What does "When operated in FIPS mode" mean on certificates?  
-    **Answer:** This caveat identifies that a required configuration and security rules must be followed in order to use the cryptographic module in a manner consistent with its FIPS 140 Security Policy. The security rules are defined in the Security Policy for the module and usually revolve around using only FIPS Approved cryptographic algorithms and key sizes. Please see the Security Policy for the specific security rules for each cryptographic module (See [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#_microsoft_fips_140) section for links to each policy).
-6.  Which FIPS validated module is called when Windows 7 or Windows 8 is configured to use the FIPS setting in the wireless configuration?  
-    **Answer:** CNG is used. This setting tells the wireless driver to call FIPS 140-2 validated cryptographic modules instead of using the driver’s own cryptography, if any.
-7.  Is BitLocker to Go FIPS 140-2 validated?  
-    **Answer:** There are two separate parts for BitLocker to Go. One part is simply a native feature of BitLocker and as such, it uses FIPS 140-2 validated cryptographic modules. The other part is the BitLocker to Go Reader application for down-level support of older operating systems such as Windows XP and Windows Vista. The Reader application does not use FIPS 140-2 validated cryptographic modules.
-8.  Are applications FIPS 140-2 validated?  
-    **Answer:** Microsoft only has low-level cryptographic modules in Windows FIPS 140-2 validated, not high-level applications. A better question is whether a certain application calls a FIPS 140-2 validated cryptographic module in the underlying Windows OS. That question needs to be directed to the company/product group that created the application of interest.
-9.  How can Systems Center Operations Manager 2012 be configured to use FIPS 140-2 validated cryptographic modules?  
-    **Answer:** See [http://technet.microsoft.com/library/hh914094.aspx](https://technet.microsoft.com/library/hh914094.aspx)
-
-## Microsoft FIPS 140 Validated Cryptographic Modules
-
-### Modules By Operating System
-
-The following tables identify the Cryptographic Modules for an operating system.
-
-#### Windows
+These are two separate security standards with different, but complementary, purposes. FIPS 140-2 is designed specifically for validating software and hardware cryptographic modules, while Common Criteria is designed to evaluate security functions in IT software and hardware products. Common Criteria evaluations often rely on FIPS 140-2 validations to provide assurance that basic cryptographic functionality is implemented properly.
+
+### How does FIPS 140 relate to Suite B?
+
+Suite B is a set of cryptographic algorithms defined by the U.S. National Security Agency (NSA) as part of its Cryptographic Modernization Program. The set of Suite B cryptographic algorithms are to be used for both unclassified information and most classified information. The Suite B cryptographic algorithms are a subset of the FIPS Approved cryptographic algorithms as allowed by the FIPS 140-2 standard.
+
+## Microsoft FIPS 140-2 validated cryptographic modules
+
+The following tables identify the cryptographic modules used in an operating system, organized by release.
+
+## Modules used by Windows
+
+##### Windows 10 Spring 2018 Update (Version 1803)
+
+Validated Editions: Home, Pro, Enterprise, Education
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Cryptographic Module</strong></td>
+<td><strong>Version (link to Security Policy)</strong></td>
+<td><strong>FIPS Certificate #</strong></td>
+<td><strong>Algorithms</strong></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3195.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3195">#3195</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3480.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3480">#3480</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096">#3096</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Windows 10 Fall Creators Update (Version 1709)
+
+Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Cryptographic Module</strong></td>
+<td><strong>Version (link to Security Policy)</strong></td>
+<td><strong>FIPS Certificate #</strong></td>
+<td><strong>Algorithms</strong></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3195.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3195">#3195</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3194.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3194">#3194</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096">#3096</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Windows Resume</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3091.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3091">#3091</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
 
 ##### Windows 10 Creators Update (Version 1703)
 
@@ -1289,7 +1268,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp76.pdf">5.0.2150.1</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76">76</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">29</a>); RSA (vendor affirmed)</p>
@@ -1316,7 +1295,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp75.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/75">75</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); SHA-1 (Certs. <a href="https://social.msdn.microsoft.com/forums/en-us/f93c9ee5-89b9-41a4-96c4-6eb9346625b9/msrai-msra-parsing-remote-assistance-packets-in-network-monitor?forum=os_windowsprotocolshttps://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#20">#20</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#21">21</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#25">#25</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#26">26</a>); RSA (vendor- affirmed)</p>
@@ -1347,8 +1326,141 @@ Validated Editions: Ultimate Edition
 </tbody>
 </table>
 
+## Modules used by Windows Server
 
-#### Windows Server
+##### Windows Server (Version 1803)
+
+Validated Editions: Standard, Datacenter
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Cryptographic Module</strong></td>
+<td><strong>Version (link to Security Policy)</strong></td>
+<td><strong>FIPS Certificate #</strong></td>
+<td><strong>Algorithms</strong></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3195.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3195">#3195</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3480.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3480">#3480</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096">#3096</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.17134</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
+
+##### Windows Server (Version 1709)
+
+Validated Editions: Standard, Datacenter
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Cryptographic Module</strong></td>
+<td><strong>Version (link to Security Policy)</strong></td>
+<td><strong>FIPS Certificate #</strong></td>
+<td><strong>Algorithms</strong></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3195.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3195">#3195</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3194.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3194">#3194</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096">#3096</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Windows Resume</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3091.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3091">#3091</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.16299</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
 
 ##### Windows Server 2016
 
@@ -1978,7 +2090,7 @@ Validated Editions: Server, Storage Server
 </tbody>
 </table>
 
- 
+ 
 
 ### Cryptographic Algorithms
 
@@ -5818,7 +5930,7 @@ SIG(Ver) (1024 SHA( 1 , 256 , 384 , 512 )) (2048 SHA( 1 , 256 , 384 , 512 )) (30
 <tr class="odd">
 <td><p><strong>FIPS186-4:<br />
 [RSASSA-PSS]:</strong> Sig(Gen): (2048 SHA( 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))<br />
- Sig(Ver): (1024 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 62 ) )) (2048 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))</p>
+ Sig(Ver): (1024 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 62 ) )) (2048 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) )) (3072 SHA( 1 SaltLen( 20 ) , 256 SaltLen( 32 ) , 384 SaltLen( 48 ) , 512 SaltLen( 64 ) ))</p>
 <p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry and Microsoft StorSimple 8100 Cryptography Next Generation Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a></p>
 <p>Version 6.3.9600</p></td>
@@ -6218,7 +6330,7 @@ Version 6.3.9600</td>
 <strong>SHA-256</strong> (BYTE-only)<br />
 <strong>SHA-384</strong> (BYTE-only)<br />
 <strong>SHA-512</strong> (BYTE-only)</td>
-<td><p>Windows 7and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
+<td><p>Windows 7 and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
 <p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816.">#816</a></p></td>
 </tr>
 <tr class="odd">
@@ -7080,10 +7192,3 @@ Version 6.3.9600</p></td>
 \[[SP 800-57](http://csrc.nist.gov/publications/pubssps.html#800-57-part1)\] - Recommendation for Key Management – Part 1: General (Revised)
 
 \[[SP 800-131A](http://csrc.nist.gov/publications/nistpubs/800-131a/sp800-131a.pdf)\] - Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths
-
-## Additional Microsoft References
-
-Enabling FIPS mode - <http://support.microsoft.com/kb/811833>
-
-Cipher Suites in Schannel - [http://msdn.microsoft.com/library/aa374757(VS.85).aspx](https://msdn.microsoft.com/library/aa374757\(vs.85\).aspx)
-

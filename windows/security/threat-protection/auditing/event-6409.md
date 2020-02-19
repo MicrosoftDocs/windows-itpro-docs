@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 6409(-): BranchCache: A service connection point object could not be parsed.
@@ -25,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: A service connection point object could not be parsed. *
+*BranchCache: A service connection point object could not be parsed.*
 
 *SCP object GUID: %1*
 

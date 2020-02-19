@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Frequently Asked Questions
 
@@ -21,18 +22,21 @@ ms.date: 08/19/2018
 -   Windows 10
 
 ## What about virtual smart cards?
-Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future but not date at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
+Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
 
 ## What about convenience PIN?
 Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
-## Can I deploy Windows Hello for Business using System Center Configuration Manager?
-Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no longer be supported after November 2018.
+## Can I use Windows Hello for Business key trust and RDP?
+RDP currently does not support key based authentication and does not support self signed certificates. RDP with Windows Hello for Business is currently only supported with certificate based deployments.
+
+## Can I deploy Windows Hello for Business using Microsoft Endpoint Configuration Manager?
+Windows Hello for Business deployments using Configuration Manager should use the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-hello-for-business-settings).
 
 ## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
 The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
 
-## How can PIN be more secure than a Password?
+## How can a PIN be more secure than a password?
 When using Windows Hello for Business, the PIN is not a symmetric key where is the password is a symmetric key.  With passwords, there is a server that has some representation of the password.  With Windows Hello for Business, the PIN is user provided entropy used to load the private key in the TPM.  The server does not have a copy of the PIN.  For that matter, the Windows client does not have a copy of the current PIN either.  The user must provide the entropy, the TPM protected key, and the TPM that generated that key to successfully have access to the private key.
 
 The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN.  It is about the difference of providing entropy vs continuing the use of a symmetric key (the password).  The TPM has anti-hammering features which thwart brute-force PIN attacks (an attackers continuous attempt to try all combination of PINs).  Some organizations may worry about shoulder surfing.  For those organizations, rather than increased the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
@@ -40,14 +44,14 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 ## Why is the Key Admins group missing, I have Windows Server 2016 domain controller(s)?
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
-## Can I use convenience PIN with Azure AD?
-No. If you want to use PIN or biometrics with Azure Active Directory identities on Azure AD registered, Azure AD joined, or hybrid Azure AD joined devices, then you must deploy Windows Hello for Business.
+## Can I use a convenience PIN with Azure AD?
+It is currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
 
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
 
 ## What is the password-less strategy?
-Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
+Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**.
 
 [Microsoft's password-less strategy](hello-videos.md#microsofts-passwordless-strategy)
 
@@ -75,8 +79,8 @@ If your environment uses Microsoft Intune, you need these additional URLs:
 - portal.manage-beta.microsoft.com
 - portal.manage.microsoft.com
 
-## What is the difference between non-destructive and destructive PIN Reset?
-Windows Hello for Business has two types of PIN reset: non-destructive and destructive.  Organizations running Windows 10 Enterprise and Azure Active Directory can take advantage of the Microsoft PIN Reset service.  Once on-boarded to a tenant and deployed to computers, users who have forgotten their PINs can authenticate to Azure, provided a second factor of authentication, and reset their PIN without re-provisioning a new Windows Hello for Business enrollment. This is a non-destructive PIN reset because the user does not delete the current credential and obtain a new one.  Read [PIN Reset](hello-features.md#pin-reset) from our [Windows Hello for Business Features](hello-features.md) page for more information.
+## What is the difference between non-destructive and destructive PIN reset?
+Windows Hello for Business has two types of PIN reset: non-destructive and destructive.  Organizations running Windows 10 Enterprise and Azure Active Directory can take advantage of the Microsoft PIN Reset service.  Once on-boarded to a tenant and deployed to computers, users who have forgotten their PINs can authenticate to Azure, provided a second factor of authentication, and reset their PIN without re-provisioning a new Windows Hello for Business enrollment. This is a non-destructive PIN reset because the user does not delete the current credential and obtain a new one.  Read [PIN Reset](hello-feature-pin-reset.md) page for more information.
 
 Organizations that have the on-premises deployment of Windows Hello for Business, or those not using Windows 10 Enterprise can use destructive PIN reset.  with destructive PIN reset, users that have forgotten their PIN can authenticate using their password, perform a second factor of authentication to re-provision their Windows Hello for Business credential. Re-provisioning deletes the old credential and requests a new credential and certificate.  On-premises deployments need network connectivity to their domain controllers, Active Directory Federation Services, and their issuing certificate authority to perform a destructive PIN reset. Also, for hybrid deployments, destructive PIN reset is only supported with the certificate trust model and the latest updates to Active Directory Federation Services.
 
@@ -89,7 +93,7 @@ The **key trust** model authenticates to Active Directory using a raw key.  Wind
 The **certificate trust** model authenticates to Active Directory using a certificate.  Because this authentication uses a certificate, domain controllers running previous versions of Windows Server can authenticate the user. Therefore, you need to issue certificates to your end users, but you do not need Windows Server 2016 domain controllers.  The certificate used in certificate trust uses the TPM protected private key to request a certificate from your enterprise's issuing certificate authority. 
 
 ## Do I need Windows Server 2016 domain controllers?
-There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment
+There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment.
 
 ## What attributes are synchronized by Azure AD Connect with Windows Hello for Business?
 Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that are sync based on scenarios.  The base scenarios that include Windows Hello for Business are [Windows 10](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
@@ -100,28 +104,32 @@ Windows Hello for Business is two-factor authentication based the observed authe
 ## What are the biometric requirements for Windows Hello for Business?
 Read [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
 
-## Can I use PIN and biometrics to unlock my device?
+## Can I use both a PIN and biometrics to unlock my device?
 Starting in Windows 10, version 1709, you can use multi-factor unlock to require the user to provide an additional factor to unlock the device.  Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.  Read more about [multifactor unlock](feature-multifactor-unlock.md).
 
 ## What is the difference between Windows Hello and Windows Hello for Business?
 Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
 
-## Why can I not enroll biometrics for my local built-in Administrator?
-Windows 10 does not allow the local administrator to enroll biometric gestures(face or fingerprint).
+## Why can't I enroll biometrics for my local built-in Administrator?
+Windows 10 does not allow the local administrator to enroll biometric gestures (face or fingerprint).
 
 ## I have extended Active Directory to Azure Active Directory.  Can I use the on-premises deployment model?
 No. If your organization is federated or using on-line services, such as Azure AD Connect, Office 365, or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
 ## Does Windows Hello for Business prevent the use of simple PINs?
-Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
+Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next. The algorithm counts the number of steps required to reach the next digit, overflowing at ten ('zero').
 So, for example:
-* 1111 has a constant delta of 0, so it is not allowed
-* 1234 has a constant delta of 1, so it is not allowed
-* 1357 has a constant delta of 2, so it is not allowed
-* 9630 has a constant delta of -3, so it is not allowed
-* 1231 does not have a constant delta, so it is okay
-* 1593 does not have a constant delta, so it is okay
+* The PIN 1111 has a constant delta of (0,0,0), so it is not allowed
+* The PIN 1234 has a constant delta of (1,1,1), so it is not allowed
+* The PIN 1357 has a constant delta of (2,2,2), so it is not allowed
+* The PIN 9630 has a constant delta of (7,7,7), so it is not allowed
+* The PIN 1593 has a constant delta of (4,4,4), so it is not allowed
+* The PIN 7036 has a constant delta of (3,3,3), so it is not allowed
+* The PIN 1231 does not have a constant delta (1,1,8), so it is allowed
+* The PIN 1872 does not have a constant delta (7,9,5), so it is allowed
 
+This prevents repeating numbers, sequential numbers, and simple patterns.
+It always results in a list of 100 disallowed PINs (independent of the PIN length).
 This algorithm does not apply to alphanumeric PINs.
 
 ## How does PIN caching work with Windows Hello for Business?
@@ -135,19 +143,19 @@ The smart card emulation feature of Windows Hello for Business verifies the PIN 
 ## Can I disable the PIN while using Windows Hello for Business?
 No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurrence where you cannot authenticate with biometrics, you need a fall back mechanism that is not a password.  The PIN is the fall back mechanism.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
 
-## How keys are protected?
-Wherever possible, Windows Hello for Business takes advantage of trusted platform module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business does not require a TPM. Administrators can choose to allow key operations in software  
+## How are keys protected?
+Wherever possible, Windows Hello for Business takes advantage of trusted platform module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business does not require a TPM. Administrators can choose to allow key operations in software.
 
 Whenever possible, Microsoft strongly recommends the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will have to reset the PIN (which means he or she will have to use MFA to re-authenticate to the IDP before the IDP allows him or her to re-register).
 
-## Can Windows Hello for Business work in air gapped environments?
+## Can Windows Hello for Business work in air-gapped environments?
 Yes.  You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that does not require Internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
 
 ## Can I use third-party authentication providers with Windows Hello for Business?
 Yes, if you are federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter.  A list of third-party MFA adapters can be found [here](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
 
 ## Does Windows Hello for Business work with third party federation servers?
-Windows Hello for Business can work with any third-party federation servers that support the protocols used during provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
+Windows Hello for Business can work with any third-party federation servers that support the protocols used during provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
 
 | Protocol | Description |
 | :---: | :--- |
@@ -157,5 +165,5 @@ Windows Hello for Business can work with any third-party federation servers that
 | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](https://msdn.microsoft.com/library/mt766592.aspx) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the end user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enable the discovery of the issuer of access tokens and give additional information about provider capabilities. |
 
 ## Does Windows Hello for Business work with Mac and Linux clients?
-Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
+Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
 

@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4670(S): Permissions on an object were changed.
@@ -67,7 +70,6 @@ Before this event can generate, certain ACEs might need to be set in the object�
  <Data Name="ProcessName">C:\\Windows\\System32\\dllhost.exe</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -140,12 +142,12 @@ Before this event can generate, certain ACEs might need to be set in the object�
 
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the object.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> 
 > Example:
-
+> 
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-
+> 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
 > See the list of possible values in the table below:
 
@@ -268,9 +270,9 @@ For file system and registry objects, the following recommendations apply.
 
 <!-- -->
 
--   If you have a pre-defined list of restricted substrings or words in process names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Process Name**.”
+- If you have a pre-defined list of restricted substrings or words in process names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Process Name**.”
 
--   If you have critical registry objects for which you need to monitor all modifications (especially permissions changes and owner changes), monitor for the specific **Object\\Object Name.**
+- If you have critical registry objects for which you need to monitor all modifications (especially permissions changes and owner changes), monitor for the specific **Object\\Object Name.**
 
--   If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers**.** For example, you could monitor the **ntds.dit** file on domain controllers.
+- If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<strong>.</strong> For example, you could monitor the **ntds.dit** file on domain controllers.
 

@@ -1,12 +1,15 @@
 ---
 title: How to Configure the Image Web Distribution Server
 description: How to Configure the Image Web Distribution Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 2d32ae79-dff5-4c05-a412-dd15452b6007
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

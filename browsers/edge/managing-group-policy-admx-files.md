@@ -2,12 +2,15 @@
 title: Managing group policy ADMX files
 description: Learn how to centrally administer and incorporate ADMX files when editing the administrative template policy settings inside a local or domain-based Group Policy object.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/19/2018 
+ms.date: 10/19/2018
 ---
 
 # Managing group policy ADMX files

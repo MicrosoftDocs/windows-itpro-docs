@@ -6,12 +6,15 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: denisebmsft
+ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.reviewer: 
+ms.custom: asr
 ---
 
 # Windows Defender Firewall with Advanced Security

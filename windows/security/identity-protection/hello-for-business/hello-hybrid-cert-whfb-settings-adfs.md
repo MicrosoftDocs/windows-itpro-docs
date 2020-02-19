@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+ms.reviewer: 
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 
@@ -27,15 +28,18 @@ The Windows Server 2016 Active Directory Federation Server Certificate Registrat
 
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
 
+> [!NOTE]
+> In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the https://enterpriseregistration.windows.net endpoint.
+
 ### Configure the Registration Authority
 
 Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
 
-1.	Open a **Windows PowerShell** prompt.
-2.	Type the following command   
+1. Open a **Windows PowerShell** prompt.
+2. Type the following command   
   
     ```PowerShell
-    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
     ```
 
 
@@ -47,25 +51,28 @@ Sign-in the AD FS server with *Domain Admin* equivalent credentials.
 
 The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
+> [!TIP]
+> The adfssvc account is the AD FS service account.
+
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
 3. Right-click **Windows Hello for Business Users** group
 4. Click the **Members** tab and click **Add**
-5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-6.	Click **OK** to return to **Active Directory Users and Computers**.
-7.	Restart the AD FS server.
+5. In the **Enter the object names to select** text box, type **adfssvc** or substitute the name of the AD FS service account in your AD FS deployment.  Click **OK**.
+6. Click **OK** to return to **Active Directory Users and Computers**.
+7. Restart the AD FS server.
 
 ### Section Review
 > [!div class="checklist"]
 > * Configure the registration authority
 > * Update group memberships for the AD FS service account
-
-
->[!div class="step-by-step"]
-[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
-[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
+> 
+> 
+> [!div class="step-by-step"]
+> [< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+> [Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
 
 <br><br>
 

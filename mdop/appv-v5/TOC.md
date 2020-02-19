@@ -62,7 +62,7 @@
 ##### [How to Create a Custom Configuration File by Using the App-V 5.1 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md)
 ##### [How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console 5.1](how-to-transfer-access-and-configurations-to-another-version-of-a-package-by-using-the-management-console51.md)
 ##### [How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console 5.1](how-to-customize-virtual-applications-extensions-for-a-specific-ad-group-by-using-the-management-console51.md)
-##### [How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console  5.1](how-to-view-and-configure-applications-and-default-virtual-application-extensions-by-using-the-management-console-51.md)
+##### [Configure Applications and Default Virtual Application Extensions in Management Console](configure-applications-and-default-virtual-application-extensions-in-management-console.md)
 #### [Managing Connection Groups 5.1](managing-connection-groups51.md)
 ##### [About the Connection Group Virtual Environment 5.1](about-the-connection-group-virtual-environment51.md)
 ##### [About the Connection Group File 5.1](about-the-connection-group-file51.md)

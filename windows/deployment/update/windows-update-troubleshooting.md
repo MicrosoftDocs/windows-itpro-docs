@@ -3,11 +3,14 @@ title: Windows Update troubleshooting
 description: Learn how to troubleshoot Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
-ms.sitesec: library
-author: kaushika-msft
-ms.localizationpriority: medium
-ms.author: elizapo
-ms.date: 09/18/2018
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -21,6 +24,7 @@ If you run into problems when using Windows Update, start with the following ste
 2. Install the most recent Servicing Stack Update (SSU) that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on SSU. 
 3. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system: 
 
+   - [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/help/4498140)
    - [Windows 10, version 1809 and Windows Server 2019](https://support.microsoft.com/help/4464619/windows-10-update-history)
    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479/windows-10-update-history) 
    - [Windows 10, version 1709](https://support.microsoft.com/help/4043454) 
@@ -45,7 +49,7 @@ The update that is offered to a device depends on several factors. Some of the m
 
 If the update you're offered isn't the most current available, it might be because your device is being managed by a WSUS server, and you're being offered the updates available on that server. It's also possible, if your device is part of a Windows as a Service deployment ring, that your admin is intentionally slowing the rollout of updates. Since the WaaS rollout is slow and measured to begin with, all devices will not receive the update on the same day.  
  
-## My machine is frozen at scan. Why? 
+## My device is frozen at scan. Why? 
 The Settings UI is talking to the Update Orchestrator service which in turn is talking to Windows Update service. If these services stop unexpectedly then you might see this behavior. In such cases, do the following:  
 1. Close the Settings app and reopen it.  
 2. Launch Services.msc and check if the following services are running:  
@@ -56,7 +60,7 @@ The Settings UI is talking to the Update Orchestrator service which in turn is t
 On computers running [Windows 10 1709 or higher](#BKMK_DCAT) configured to update from Windows Update (usually WUfB scenario) servicing and definition updates are being installed successfully, but feature updates are never offered.
 
 Checking the WindowsUpdate.log reveals the following error:
-```
+```console
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * START * Finding updates CallerId = Update;taskhostw  Id = 25
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Online = Yes; Interactive = No; AllowCachedResults = No; Ignore download priority = No
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           ServiceID = {855E8A7C-ECB4-4CA3-B045-1DFA50104289} Third party service
@@ -81,7 +85,7 @@ YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * END * Finding updates Caller
 ``` 
 
 The 0x80070426 error code translates to:
-```
+```console
 ERROR_SERVICE_NOT_ACTIVE - # The service has not been started.
 ```
 
@@ -94,7 +98,7 @@ Windows Update uses WinHttp with Partial Range requests (RFC 7233) to download u
  
 To fix this issue, configure a proxy in WinHTTP by using the following netsh command: 
 
-``` 
+```console
 netsh winhttp set proxy ProxyServerName:PortNumber 
 ```
 
@@ -124,25 +128,41 @@ The most common reasons for this error are described in the following table:
 
 ## Issues related to firewall configuration 
 Error that may be seen in the WU logs:  
-```
+```console
 DownloadManager    Error 0x800706d9 occurred while downloading update; notifying dependent calls. 
 ```
 Or 
-``` 
+```console
 [DownloadManager] BITS job {A4AC06DD-D6E6-4420-8720-7407734FDAF2} hit a transient error, updateId = {D053C08A-6250-4C43-A111-56C5198FE142}.200 <NULL>, error = 0x800706D9 
 ``` 
 Or 
-``` 
+```console
 DownloadManager [0]12F4.1FE8::09/29/2017-13:45:08.530 [agent]DO job {C6E2F6DC-5B78-4608-B6F1-0678C23614BD} hit a transient error, updateId = 5537BD35-BB74-40B2-A8C3-B696D3C97CBA.201 <NULL>, error = 0x80D0000A 
 ``` 
  
-Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information , see [I need to disable Windows Firewall](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337\(v=ws.10\)) or [Windows Update stuck at 0 percent on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4039473/windows-update-stuck-at-0-percent-on-windows-10-and-windows-server-201).
+Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information, see [I need to disable Windows Firewall](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337(v=ws.10)).
  
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policies to control the behavior of WU service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting polices may lead to unexpected behaviors. 
  
 See [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+
+## Device cannot access update files
+Check that your device can access these Windows Update endpoints:
+
+- `http://windowsupdate.microsoft.com`
+- `http://*.windowsupdate.microsoft.com`
+- `https://*.windowsupdate.microsoft.com`
+- `http://*.update.microsoft.com`
+- `https://*.update.microsoft.com`
+- `http://*.windowsupdate.com`
+- `http://download.windowsupdate.com`
+- `https://download.microsoft.com`
+- `http://*.download.windowsupdate.com`
+- `http://wustat.windows.com`
+- `http://ntservicepack.microsoft.com`
  
+ Whitelist these endpoints for future use.
  
 ## Updates aren't downloading from the intranet endpoint (WSUS/SCCM) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  
@@ -163,13 +183,13 @@ Check the output for the Name and OffersWindowsUPdates parameters, which you can
 ## You have a bad setup in the environment 
 If we look at the GPO being set through registry, the system is configured to use WSUS to download updates: 
 
-``` 
+```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU] 
 "UseWUServer"=dword:00000001                                        ===================================> it says use WSUS server.  
 ```
 
 From the WU logs: 
-```
+```console
 2018-08-06 09:33:31:085  480 1118 Agent ** START **  Agent: Finding updates [CallerId = OperationalInsight  Id = 49] 
 2018-08-06 09:33:31:085  480 1118 Agent ********* 
 2018-08-06 09:33:31:085  480 1118 Agent   * Include potentially superseded updates 
@@ -186,7 +206,7 @@ In the above log snippet, we see that the Criteria = "IsHidden = 0 AND Deploymen
 
 Now if you look at the below logs, the Automatic update runs the scan and finds no update approved for it. So it reports there are 0 updates to install or download. This is due to bad setup or configuration in the environment. The WSUS side should approve the patches for WU so that it fetches the updates and installs it on the specified time according to the policy. Since this scenario doesn't include SCCM, there's no way to install unapproved updates. And that is the problem you are facing. You expect that the scan should be done by the operational insight agent and automatically trigger download and install but that won’t happen here.  
 
-```
+```console
 2018-08-06 10:58:45:992  480 5d8 Agent ** START **  Agent: Finding updates [CallerId = AutomaticUpdates  Id = 57] 
 2018-08-06 10:58:45:992  480 5d8 Agent ********* 
 2018-08-06 10:58:45:992  480 5d8 Agent   * Online = Yes; Ignore download priority = No 
@@ -204,12 +224,12 @@ Users may see that Windows 10 is consuming all the bandwidth in the different of
 
 The following group policies can help mitigate this: 
  
-- Blocking access to Windows Update servers: [Policy Turn off access to all Windows Update features](http://gpsearch.azurewebsites.net/#4728) (Set to enabled)
-- Driver search: [Policy Specify search order for device driver source locations](http://gpsearch.azurewebsites.net/#183) (Set to "Do not search Windows Update")
-- Windows Store automatic update: [Policy Turn off Automatic Download and Install of updates](http://gpsearch.azurewebsites.net/#10876) (Set to enabled)
+- Blocking access to Windows Update servers: [Policy Turn off access to all Windows Update features](https://gpsearch.azurewebsites.net/#4728) (Set to enabled)
+- Driver search: [Policy Specify search order for device driver source locations](https://gpsearch.azurewebsites.net/#183) (Set to "Do not search Windows Update")
+- Windows Store automatic update: [Policy Turn off Automatic Download and Install of updates](https://gpsearch.azurewebsites.net/#10876) (Set to enabled)
  
 Other components that reach out to the internet:
 
-- Windows Spotlight: [Policy Configure Windows spotlight on lock screen](http://gpsearch.azurewebsites.net/#13362) (Set to disabled) 
-- Consumer experiences: [Policy Turn off Microsoft consumer experiences](http://gpsearch.azurewebsites.net/#13329) (Set to enabled) 
-- Background traffic from Windows apps: [Policy Let Windows apps run in the background](http://gpsearch.azurewebsites.net/#13571) 
+- Windows Spotlight: [Policy Configure Windows spotlight on lock screen](https://gpsearch.azurewebsites.net/#13362) (Set to disabled) 
+- Consumer experiences: [Policy Turn off Microsoft consumer experiences](https://gpsearch.azurewebsites.net/#13329) (Set to enabled) 
+- Background traffic from Windows apps: [Policy Let Windows apps run in the background](https://gpsearch.azurewebsites.net/#13571) 

@@ -1,12 +1,15 @@
 ---
 title: How to Configure the File Server
 description: How to Configure the File Server
-author: jamiejdt
+author: dansimp
 ms.assetid: 0977554c-1741-411b-85e7-7e1cd017542f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ If you are using an Application Virtualization Management Server as a distributi
 **Important**  
 For applications to stream properly to the Application Virtualization Desktop Client and the Client for Remote Desktop Services, the SFT file streams from the content directory on the server where you store the virtual application; the ICO (icon) file and the OSD (open software descriptor) file can be configured to stream from a different server.
 
- 
+ 
 
 **To configure the Application Virtualization file server**
 
@@ -32,14 +35,14 @@ For applications to stream properly to the Application Virtualization Desktop Cl
     **Note**  
     During the installation procedure, you specify the location of the \\Content directory on the **Content Path** screen.
 
-     
+     
 
 2.  Create a \\Content directory, which corresponds to the directory you specified when you installed the server, on each computer that you are using as a file share.
 
     **Important**  
     Configure the Application Virtualization Desktop Clients to stream applications from the computer you are using as a file share rather than from an Application Virtualization Server or IIS server.
 
-     
+     
 
 3.  When the \\Content directory is created, configure this directory as a standard file share.
 
@@ -56,9 +59,9 @@ For applications to stream properly to the Application Virtualization Desktop Cl
 
 [How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)
 
- 
+ 
 
- 
+ 
 
 
 

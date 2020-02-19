@@ -1,6 +1,6 @@
 ---
-title: Validate Active Directory prerequisites (Windows Hello for Business)
-description: How to Validate Active Directory prerequisites for Windows Hello for Business
+title: Update Active Directory schema for cert-trust deployment (Windows Hello for Business)
+description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Validate Active Directory prerequisites
 
@@ -23,7 +24,7 @@ ms.date: 08/19/2018
 -   Certificate trust
 
 
-The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the next step.
+The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
@@ -43,11 +44,11 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
-1.	Open an elevated command prompt.
-2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
-3.	To update the schema, type ```adprep /forestprep```.
-4.	Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
-5.	Close the Command Prompt and sign-out.
+1. Open an elevated command prompt.
+2. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
+3. To update the schema, type ```adprep /forestprep```.
+4. Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
+5. Close the Command Prompt and sign-out.
 
 ## Create the KeyCredential Admins Security Global Group
 
@@ -55,12 +56,12 @@ The Windows Server 2016 Active Directory Federation Services (AD FS) role regist
 
 Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advance Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **KeyCredential Admins** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advance Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **KeyCredential Admins** in the **Group Name** text box.
+6. Click **OK**.
 
 ## Create the Windows Hello for Business Users Security Global Group
 
@@ -68,12 +69,12 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 Sign into a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide

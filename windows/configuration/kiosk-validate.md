@@ -2,11 +2,14 @@
 title: Validate kiosk configuration (Windows 10)
 description: This topic explains what to expect on a multi-app kiosk.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.topic: article
@@ -25,7 +28,7 @@ Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applic
 
 To test the kiosk, sign in with the assigned access user account you specified in the configuration to check out the multi-app experience. 
 
->[!NOTE] 
+>[!NOTE]
 >The kiosk configuration setting will take effect the next time the assigned access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience. 
 
 The following sections explain what to expect on a multi-app kiosk.

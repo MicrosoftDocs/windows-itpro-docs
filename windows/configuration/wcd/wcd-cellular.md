@@ -1,14 +1,15 @@
 ---
 title: Cellular (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
-ms.date: 10/02/2018
 ---
 
 # Cellular (Windows Configuration Designer reference)
@@ -51,6 +52,10 @@ Enter the destination path for the BrandingIcon .ico file.
 ### BrandingName
 
 Enter the service provider name for the mobile operator.
+
+### DataClassMappingTable
+
+Enter a customized string for the appropriate [data class](https://docs.microsoft.com/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
 
 ### NetworkBlockList
 

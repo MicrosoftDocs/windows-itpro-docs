@@ -1,17 +1,18 @@
 ---
 title: Windows security baselines
-description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
+description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server, and Office 365 ProPlus.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: sagaudre
-author: justinha
+ms.author: dansimp
+author: dulcemontemayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
+ms.reviewer: 
 ---
 
 # Windows security baselines
@@ -19,8 +20,8 @@ ms.date: 06/25/2018
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
+-   Windows Server 
+-   Office 365 ProPlus 
 
 ## Using security baselines in your organization 
 
@@ -44,13 +45,13 @@ Security baselines are an essential benefit to customers because they bring toge
 
 For example, there are over 3,000 Group Policy settings for Windows 10, which does not include over 1,800 Internet Explorer 11 settings. Of these 4,800 settings, only some are security-related. Although Microsoft provides extensive guidance on different security features, exploring each one can take a long time. You would have to determine the security impact of each setting on your own. Then, you would still need to determine  the appropriate value for each setting. 
 
-In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to Windows security settings to help mitigate these threats. To enable faster deployments and make managing Windows easier, Microsoft provides customers with security baselines that are available in consumable formats, such as Group Policy Objects backups.
+In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to Windows security settings to help mitigate these threats. To enable faster deployments and make managing Windows easier, Microsoft provides customers with security baselines that are available in consumable formats, such as Group Policy Objects Backups.
 
 ## How can you use security baselines? 
 
 You can use security baselines to: 
 -   Ensure that user and device configuration settings are compliant with the baseline. 
--   Set configuration settings. For example, you can use Group Policy, System Center Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
+-   Set configuration settings. For example, you can use Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
 
 ## Where can I get the security baselines? 
 
@@ -72,7 +73,7 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+-   [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
 -   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)

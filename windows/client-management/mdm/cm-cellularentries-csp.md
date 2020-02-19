@@ -2,11 +2,13 @@
 title: CM\_CellularEntries CSP
 description: CM\_CellularEntries CSP
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/02/2017
 ---
 
@@ -20,24 +22,24 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 ![cm\-cellularentries csp](images/provisioning-csp-cm-cellularentries.png)
 
-<a href="" id="entryname"></a>**_entryname_**  
+<a href="" id="entryname"></a>***entryname***  
 <p style="margin-left: 20px">Defines the name of the connection.</p>
 
-<p style="margin-left: 20px">The [CMPolicy configuration service provider](cmpolicy-csp.md) uses the value of *entryname* to identify the connection that is associated with a policy and [CM\_ProxyEntries configuration service provider](cm-proxyentries-csp.md) uses the value of *entryname* to identify the connection that is associated with a proxy.</p>
+<p style="margin-left: 20px">The <a href="cmpolicy-csp.md" data-raw-source="[CMPolicy configuration service provider](cmpolicy-csp.md)">CMPolicy configuration service provider</a> uses the value of <em>entryname</em> to identify the connection that is associated with a policy and <a href="cm-proxyentries-csp.md" data-raw-source="[CM\_ProxyEntries configuration service provider](cm-proxyentries-csp.md)">CM_ProxyEntries configuration service provider</a> uses the value of <em>entryname</em> to identify the connection that is associated with a proxy.</p>
 
 <a href="" id="alwayson"></a>**AlwaysOn**  
 <p style="margin-left: 20px">Type: Int. Specifies if the Connection Manager will automatically attempt to connect to the APN when a connection is available.
 
-<p style="margin-left: 20px">A value of "0" specifies that AlwaysOn is not supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally, for example, an APN that only controls MMS.
+<p style="margin-left: 20px">A value of &quot;0&quot; specifies that AlwaysOn is not supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally, for example, an APN that only controls MMS.
 
-<p style="margin-left: 20px">A value of "1" specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it is available. This setting is recommended for general purpose Internet APNs.
+<p style="margin-left: 20px">A value of &quot;1&quot; specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it is available. This setting is recommended for general purpose Internet APNs.
 
 <p style="margin-left: 20px">There must be at least one AlwaysOn Internet connection provisioned for the mobile operator.
 
 <a href="" id="authtype"></a>**AuthType**  
 <p style="margin-left: 20px">Optional. Type: String. Specifies the method of authentication used for a connection.
 
-<p style="margin-left: 20px">A value of "CHAP" specifies the Challenge Handshake Application Protocol. A value of "PAP" specifies the Password Authentication Protocol. A value of "None" specifies that the UserName and Password parameters are ignored. The default value is "None".
+<p style="margin-left: 20px">A value of &quot;CHAP&quot; specifies the Challenge Handshake Application Protocol. A value of &quot;PAP&quot; specifies the Password Authentication Protocol. A value of &quot;None&quot; specifies that the UserName and Password parameters are ignored. The default value is &quot;None&quot;.
 
 <a href="" id="connectiontype"></a>**ConnectionType**  
 <p style="margin-left: 20px">Optional. Type: String. Specifies the type of connection used for the APN. The following connection types are available:
@@ -75,48 +77,48 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="desc-langid"></a>**Desc.langid**  
 <p style="margin-left: 20px">Optional. Specifies the UI display string used by the defined language ID.
 
-<p style="margin-left: 20px"> A parameter name in the format of Desc.langid will be used as the language-specific identifier for the specified entry. For example, a parameter defined as `Desc.0409` with a value of `"GPRS Connection"` will force "GPRS Connection" to be displayed in the UI to represent this connection when the device is set to English language (language ID 0409). Descriptions for multiple languages may be provisioned using this mechanism, and the system will automatically switch among them if the user changes language preferences on the device. If no **Desc** parameter is provisioned for a given language, the system will default to the name used to create the entry.
+<p style="margin-left: 20px"> A parameter name in the format of Desc.langid will be used as the language-specific identifier for the specified entry. For example, a parameter defined as <code>Desc.0409</code> with a value of <code>&quot;GPRS Connection&quot;</code> will force &quot;GPRS Connection&quot; to be displayed in the UI to represent this connection when the device is set to English language (language ID 0409). Descriptions for multiple languages may be provisioned using this mechanism, and the system will automatically switch among them if the user changes language preferences on the device. If no <strong>Desc</strong> parameter is provisioned for a given language, the system will default to the name used to create the entry.
 
 <a href="" id="enabled"></a>**Enabled**  
 <p style="margin-left: 20px"> Specifies if the connection is enabled.
 
-<p style="margin-left: 20px"> A value of "0" specifies that the connection is disabled. A value of "1" specifies that the connection is enabled.
+<p style="margin-left: 20px"> A value of &quot;0&quot; specifies that the connection is disabled. A value of &quot;1&quot; specifies that the connection is enabled.
 
 <a href="" id="ipheadercompression"></a>**IpHeaderCompression**  
 <p style="margin-left: 20px"> Optional. Specifies if IP header compression is enabled.
 
-<p style="margin-left: 20px"> A value of "0" specifies that IP header compression for the connection is disabled. A value of "1" specifies that IP header compression for the connection is enabled.
+<p style="margin-left: 20px"> A value of &quot;0&quot; specifies that IP header compression for the connection is disabled. A value of &quot;1&quot; specifies that IP header compression for the connection is enabled.
 
 <a href="" id="password"></a>**Password**  
-<p style="margin-left: 20px"> Required if AuthType is set to a value other than "None". Specifies the password used to connect to the APN.
+<p style="margin-left: 20px"> Required if AuthType is set to a value other than &quot;None&quot;. Specifies the password used to connect to the APN.
 
 <a href="" id="swcompression"></a>**SwCompression**  
 <p style="margin-left: 20px"> Optional. Specifies if software compression is enabled.
 
-<p style="margin-left: 20px"> A value of "0" specifies that software compression for the connection is disabled. A value of "1" specifies that software compression for the connection is enabled.
+<p style="margin-left: 20px"> A value of &quot;0&quot; specifies that software compression for the connection is disabled. A value of &quot;1&quot; specifies that software compression for the connection is enabled.
 
 <a href="" id="username"></a>**UserName**  
-<p style="margin-left: 20px"> Required if AuthType is set to a value other than "None". Specifies the user name used to connect to the APN.
+<p style="margin-left: 20px"> Required if AuthType is set to a value other than &quot;None&quot;. Specifies the user name used to connect to the APN.
 
 <a href="" id="userequiresmappingspolicy"></a>**UseRequiresMappingsPolicy**  
 <p style="margin-left: 20px"> Optional. Specifies if the connection requires a corresponding mappings policy.
 
-<p style="margin-left: 20px"> A value of "0" specifies that the connection can be used for any general Internet communications. A value of "1" specifies that the connection is only used if a mapping policy is present.
+<p style="margin-left: 20px"> A value of &quot;0&quot; specifies that the connection can be used for any general Internet communications. A value of &quot;1&quot; specifies that the connection is only used if a mapping policy is present.
 
-<p style="margin-left: 20px"> For example, if the multimedia messaging service (MMS) APN should not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to "1" and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
+<p style="margin-left: 20px"> For example, if the multimedia messaging service (MMS) APN should not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to &quot;1&quot; and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
 
 <a href="" id="version"></a>**Version**  
-<p style="margin-left: 20px"> Type: Int. Specifies the XML version number and is used to verify that the XML is supported by Connection Manager's configuration service provider.
+<p style="margin-left: 20px"> Type: Int. Specifies the XML version number and is used to verify that the XML is supported by Connection Manager&#39;s configuration service provider.
 
-<p style="margin-left: 20px"> This value must be "1" if included.
+<p style="margin-left: 20px"> This value must be &quot;1&quot; if included.
 
 <a href="" id="gprsinfoaccesspointname"></a>**GPRSInfoAccessPointName**  
-<p style="margin-left: 20px"> Specifies the logical name to select the GPRS gateway. For more information about allowable values, see GSM specification 07.07 "10.1.1 Define PDP Context +CGDCONT".
+<p style="margin-left: 20px"> Specifies the logical name to select the GPRS gateway. For more information about allowable values, see GSM specification 07.07 &quot;10.1.1 Define PDP Context +CGDCONT&quot;.
 
 <a href="" id="roaming"></a>**Roaming**  
 <p style="margin-left: 20px"> Optional. Type: Int. This parameter specifies the roaming conditions under which the connection should be activated. The following conditions are available:
@@ -132,22 +134,22 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <p style="margin-left: 20px"> Optional. Type: GUID. Specifies a GUID to use to identify a specific connection in the modem. If a value is not specified, the default value is 00000000-0000-0000-0000-000000000000. This parameter is only used on LTE devices.
 
 <a href="" id="apnid"></a>**ApnId**  
-<p style="margin-left: 20px"> Optional. Type: Int. Specifies the purpose of the APN. If a value is not specified, the default value is "0" (none). This parameter is only used on LTE devices.
+<p style="margin-left: 20px"> Optional. Type: Int. Specifies the purpose of the APN. If a value is not specified, the default value is &quot;0&quot; (none). This parameter is only used on LTE devices.
 
 <a href="" id="iptype"></a>**IPType**  
-<p style="margin-left: 20px"> Optional. Type: String. Specifies the network protocol of the connection. Available values are "IPv4", "IPv6", "IPv4v6", and "IPv4v6xlat". If a value is not specified, the default value is "IPv4".
+<p style="margin-left: 20px"> Optional. Type: String. Specifies the network protocol of the connection. Available values are &quot;IPv4&quot;, &quot;IPv6&quot;, &quot;IPv4v6&quot;, and &quot;IPv4v6xlat&quot;. If a value is not specified, the default value is &quot;IPv4&quot;.
 
-> [!Warning]  
+> [!WARNING]
 > Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
 
- 
+ 
 
 <a href="" id="exemptfromdisablepolicy"></a>**ExemptFromDisablePolicy**  
-<p style="margin-left: 20px"> Added back in Windows 10, version 1511. Optional. Type: Int. This should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of "0" specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of "1" specifies that the connection is exempt. If a value is not specified, the default value is "0" (not exempt).
+<p style="margin-left: 20px"> Added back in Windows 10, version 1511. Optional. Type: Int. This should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of &quot;0&quot; specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of &quot;1&quot; specifies that the connection is exempt. If a value is not specified, the default value is &quot;0&quot; (not exempt).
 
-<p style="margin-left: 20px"> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
+<p style="margin-left: 20px"> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to &quot;1&quot;. This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
 
-> [!Important]  
+> [!IMPORTANT]
 > Do not set ExemptFromDisablePolicy to "1", ExemptFromRoaming to "1", or UseRequiresMappingsPolicy to "1" for general purpose connections.
 
 <p style="margin-left: 20px"> To avoid UX inconsistency with certain value combinations of ExemptFromDisablePolicy and AllowMmsIfDataIsOff, when you do not set ExemptFromDisablePolicy to 1 (default is 0), you should:
@@ -155,26 +157,25 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 -   Hide the toggle for AllowMmsIfDataIsOff by setting AllowMmsIfDataIsOffEnabled to 0 (default is 1)
 -   Set AllowMMSIfDataIsOff to 1 (default is 0)
 
- 
+ 
 
 <a href="" id="exemptfromroaming"></a>**ExemptFromRoaming**  
-<p style="margin-left: 20px"> Added back in Windows 10, version 1511. Optional. Type: Int. This should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of "0" specifies that the connection is subject to the roaming policy (not exempt). A value of "1" specifies that the connection is exempt (unaffected by the roaming policy). If a value is not specified, the default value is "0" (not exempt).
+<p style="margin-left: 20px"> Added back in Windows 10, version 1511. Optional. Type: Int. This should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of &quot;0&quot; specifies that the connection is subject to the roaming policy (not exempt). A value of &quot;1&quot; specifies that the connection is exempt (unaffected by the roaming policy). If a value is not specified, the default value is &quot;0&quot; (not exempt).
 
 <a href="" id="tetheringnai"></a>**TetheringNAI**  
-<p style="margin-left: 20px"> Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of "0" specifies that the connection is not a tethering connection. A value of "1" specifies that the connection is a tethering connection. If a value is not specified, the default value is "0".
+<p style="margin-left: 20px"> Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of &quot;0&quot; specifies that the connection is not a tethering connection. A value of &quot;1&quot; specifies that the connection is a tethering connection. If a value is not specified, the default value is &quot;0&quot;.
 
 <a href="" id="idledisconnecttimeout"></a>**IdleDisconnectTimeout**  
 <p style="margin-left: 20px"> Optional. Type: Int. Specifies how long an on-demand connection can be unused before Connection Manager tears the connection down. This value is specified in seconds. Valid value range is 5 to 60 seconds. If not specified, the default is 30 seconds.
 
-> [!Important]  
-<p style="margin-left: 20px"> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
+> [!IMPORTANT]
+> <p style="margin-left: 20px"> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
 
- 
 
-> [!Note]  
+> [!NOTE]
 > If tear-down/activation requests occur too frequently, this value should be set to greater than 5 seconds.
 
- 
+ 
 
 <a href="" id="simiccid"></a>**SimIccId**  
 <p style="margin-left: 20px"> For single SIM phones, this parm is optional. However, it is highly recommended to include this value when creating future updates. For dual SIM phones, this parm is required. Type: String. Specifies the SIM ICCID that services the connection.
@@ -183,6 +184,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <p style="margin-left: 20px"> Required. Type: String. Specifies the purposes of the connection by a comma-separated list of GUIDs representing purpose values. The following purpose values are available:
 
 -   Internet - 3E5545D2-1137-4DC8-A198-33F1C657515F
+-   LTE attach - 11A6FE68-5B47-4859-9CB6-1EAC96A8F0BD
 -   MMS - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8
 -   IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13
 -   SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD
@@ -196,7 +198,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 To delete a connection, you must first delete any associated proxies and then delete the connection. The following example shows how to delete the proxy and then the connection.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_ProxyEntries">
       <nocharacteristic type="GPRS_Proxy"/>
@@ -212,7 +214,7 @@ To delete a connection, you must first delete any associated proxies and then de
 
 Configuring a GPRS connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="GPRSConn">
@@ -229,7 +231,7 @@ Configuring a GPRS connection:
 
 Configuring an LTE connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="LteConn">
@@ -248,7 +250,7 @@ Configuring an LTE connection:
 
 Configuring a CDMA connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="CDMAConn">
@@ -297,16 +299,16 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

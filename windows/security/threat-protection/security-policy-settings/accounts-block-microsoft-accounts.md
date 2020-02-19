@@ -2,12 +2,14 @@
 title: Accounts Block Microsoft accounts (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Accounts Block Microsoft accounts security policy setting.
 ms.assetid: 94c76f45-057c-4d80-8d01-033cf28ef2f7
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -62,7 +64,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled |
 | Member Server Effective Default Settings | Disabled |
 | Client Computer Effective Default Settings | Disabled |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -90,5 +92,5 @@ Establishing greater control over accounts in your organization can give you mor
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

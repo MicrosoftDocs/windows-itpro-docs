@@ -1,5 +1,7 @@
 # [Identity and access management](index.md)
 
+## [Technical support policy for lost or forgotten passwords](password-support-policy.md)
+
 ## [Access Control Overview](access-control/access-control.md)
 ### [Dynamic Access Control Overview](access-control/dynamic-access-control.md)
 ### [Security identifiers](access-control/security-identifiers.md)

@@ -1,12 +1,12 @@
 ---
 title: Microsoft Enterprise Desktop Virtualization Planning, Deployment, and Operations Guide
 description: Microsoft Enterprise Desktop Virtualization Planning, Deployment, and Operations Guide
-author: jamiejdt
+author: dansimp
 ms.assetid: 7bc3e120-df77-4f4c-bc8e-7aaa4c2a6525
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

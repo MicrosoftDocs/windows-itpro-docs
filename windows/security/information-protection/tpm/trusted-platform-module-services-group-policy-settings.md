@@ -2,12 +2,13 @@
 title: TPM Group Policy settings (Windows 10)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: andreabichsel
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -122,24 +123,24 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 
 > [!IMPORTANT]
 > Setting this policy will take effect only if:  
--   The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
--   The system has a TPM 2.0. 
-
+> -   The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
+> -   The system has a TPM 2.0. 
+> 
 > [!NOTE]
 > Enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only ways for the disabled setting of this policy to take effect on a system where it was once enabled are to either:
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
-# TPM Group Policy settings in the Windows Security app
+## TPM Group Policy settings in the Windows Security app
 
 You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
 
 **Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
 
-## Disable the Clear TPM button
+### Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
 
-## Hide the TPM Firmware Update recommendation
+### Hide the TPM Firmware Update recommendation
 If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics

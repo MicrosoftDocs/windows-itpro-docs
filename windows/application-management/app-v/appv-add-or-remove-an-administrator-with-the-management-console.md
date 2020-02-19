@@ -1,12 +1,15 @@
 ---
 title: How to Add or Remove an Administrator by Using the Management Console (Windows 10)
 description: How to add or remove an administrator by using the Management Console
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 # How to add or remove an administrator by using the Management Console

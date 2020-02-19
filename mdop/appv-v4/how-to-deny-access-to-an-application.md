@@ -1,12 +1,15 @@
 ---
 title: How to Deny Access to an Application
 description: How to Deny Access to an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 14f5e201-7265-462c-b738-57938dc3fc30
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -29,7 +32,7 @@ Users must be in an application's **Access Permissions** list to load and use th
     **Note**  
     To control access to applications, you can also limit the application licenses. Setting up the proper user groups in Active Directory Domain Services provides the easiest way to grant and deny access to specific sets of users.
 
-     
+     
 
 ## Related topics
 
@@ -40,9 +43,9 @@ Users must be in an application's **Access Permissions** list to load and use th
 
 [How to Manage Applications in the Server Management Console](how-to-manage-applications-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

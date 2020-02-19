@@ -2,13 +2,16 @@
 title: Add a Windows 10 operating system image using Configuration Manager (Windows 10)
 description: Operating system images are typically the production image used for deployment throughout the organization.
 ms.assetid: 77f769cc-1a47-4f36-8082-201cd77b8d3b
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: image, deploy, distribute
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -20,10 +23,10 @@ ms.topic: article
 -   Windows 10 versions 1507, 1511
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
-Operating system images are typically the production image used for deployment throughout the organization. This topic shows you how to add a Windows 10 operating system image created with Microsoft System Center 2012 R2 Configuration Manager, and how to distribute the image to a distribution point.
+Operating system images are typically the production image used for deployment throughout the organization. This topic shows you how to add a Windows 10 operating system image created with Microsoft Endpoint Configuration Manager, and how to distribute the image to a distribution point.
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard, as the distribution point. CM01 is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md). Our image is named REFW10-X64-001.wim. For details on building this image, please see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
 

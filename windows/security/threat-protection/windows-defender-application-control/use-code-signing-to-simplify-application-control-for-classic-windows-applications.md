@@ -1,13 +1,22 @@
 ---
 title: Use code signing to simplify application control for classic Windows applications (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: With embedded signing, your WDAC policies typically do not have to be updated when an app is updated. To set this up, you can choose from a variety of methods.
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+audience: ITPro
+ms.collection: M365-security-compliance
 author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/03/2018
 ---
 

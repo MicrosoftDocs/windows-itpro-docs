@@ -4,11 +4,13 @@ description: This section describes the ADMXIngestion settings that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # ADMXIngestion (Windows Configuration Designer reference)
@@ -49,7 +51,7 @@ In **ConfigADMXInstalledPolicy**, you provide a policy setting and value for tha
 
 ## ConfigOperations
 
-Use **ConfigOperations** to import an ADXM file or policies from an ADMX file.
+Use **ConfigOperations** to import an ADMX file or policies from an ADMX file.
 
 1. Enter an app name, and then click **Add**. 
 
@@ -70,8 +72,8 @@ Use **ConfigOperations** to import an ADXM file or policies from an ADMX file.
     
 5. Repeat for each ADMX, or set of ADMX policies, that you want to add, and then configure [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) for each one.
 
+<span id="convert"/>
 
-<span id="convert" />
 ## Convert multi-line to single line
 
 Use the following PowerShell cmdlet to remove carriage returns and line feeds from a multi-line file to create a single-line file that you can paste in **AdmxFileUid**.

@@ -1,12 +1,15 @@
 ---
 title: How to Change the Log Reporting Levels and Reset the Log Files
 description: How to Change the Log Reporting Levels and Reset the Log Files
-author: jamiejdt
+author: dansimp
 ms.assetid: 9561d6fb-b35c-491b-a355-000064583194
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -25,14 +28,14 @@ You can use the following procedure to change the log reporting level from the *
     **Note**  
     If you choose **Verbose** as the logging level, the log files will grow large very quickly. This might inhibit client performance, so best practice is to use this log level only for diagnosing specific problems.
 
-     
+     
 
 3.  On the **General** tab in the **Properties** dialog box, from the **System Log Level** drop-down list, select the desired log level.
 
     **Note**  
     The **System Log Level** setting controls the level of messages sent to the system event log. The logged messages are identical to the messages that get logged to the client event log, but they are stored in a different location.
 
-     
+     
 
 4.  Click **OK** or **Apply** to change the setting.
 
@@ -51,9 +54,9 @@ You can use the following procedure to change the log reporting level from the *
 
 [User Access Permissions in Application Virtualization Client](user-access-permissions-in-application-virtualization-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

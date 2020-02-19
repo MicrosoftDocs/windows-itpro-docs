@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 6403(-): BranchCache: The hosted cache sent an incorrectly formatted response to the client.
@@ -25,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: The hosted cache sent an incorrectly formatted response to the client’s message to offer it data. *
+*BranchCache: The hosted cache sent an incorrectly formatted response to the client’s message to offer it data.*
 
 *Domain name of the hosted cache is:%1*
 

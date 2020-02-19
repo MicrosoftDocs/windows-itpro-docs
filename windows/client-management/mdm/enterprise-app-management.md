@@ -2,11 +2,13 @@
 title: Enterprise app management
 description: This topic covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows.
 ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/22/2017
 ---
 
@@ -49,7 +51,7 @@ Inventory is specific to the package full name and lists bundled packs and resou
 
 > **Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
 
- 
+ 
 Here are the nodes for each package full name:
 
 -   Name
@@ -76,7 +78,7 @@ Note that performing a full inventory of a device can be resource intensive on t
 
 Here is an example of a query for all apps on the device.
 
-``` syntax
+```xml
 <!-- Get all apps under AppManagement -->
 <Get>
    <CmdID>1</CmdID>
@@ -90,7 +92,7 @@ Here is an example of a query for all apps on the device.
 
 Here is an example of a query for a specific app for a user.
 
-``` syntax
+```xml
 <!-- Get all information of a specific app for a user -->
 <Get>
    <CmdID>1</CmdID>
@@ -119,7 +121,7 @@ For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](
 
 Here is an example of a query for all app licenses on a device.
 
-``` syntax
+```xml
 <!-- Get all app licenses for the device -->
 <Get>
    <CmdID>1</CmdID>
@@ -133,7 +135,7 @@ Here is an example of a query for all app licenses on a device.
 
 Here is an example of a query for all app licenses for a user.
 
-``` syntax
+```xml
 <!-- Get a specific app license for a user -->
 <Get>
    <CmdID>1</CmdID>
@@ -159,7 +161,7 @@ For more information about the AllowAllTrustedApps policy, see [Policy CSP](poli
 
 Here are some examples.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
   <CmdID>1</CmdID>
@@ -197,7 +199,7 @@ For more information about the AllowDeveloperUnlock policy, see [Policy CSP](pol
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
   <CmdID>1</CmdID>
@@ -242,7 +244,7 @@ Here are the requirements for this scenario:
 
 Here are some examples.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
           <Item>
@@ -279,7 +281,7 @@ In the SyncML, you need to specify the following information in the Exec command
 
 Here is an example of an offline license installation.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
    <Item>
@@ -301,19 +303,19 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
--   The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
--   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
--   The user must be logged in, but association with AAD identity is not required.
+- The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
+- The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
+- The user must be logged in, but association with AAD identity is not required.
 
 > **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
- 
+ 
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 Here is an example of a line-of-business app installation.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -340,7 +342,7 @@ Here is an example of a line-of-business app installation.
 
 Here is an example of an app installation with dependencies.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -374,7 +376,7 @@ Here is an example of an app installation with dependencies.
 
 Here is an example of an app installation with dependencies and optional packages.
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -418,25 +420,25 @@ Provisioning allows you to stage the app to the device and all users of the devi
 
 Here are the requirements for this scenario:
 
--   The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
--   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Microsoft Store, or store services enabled.
--   The device does not need any AAD identity or domain membership.
--   For nonStore app, your device must be unlocked.
--   For Store offline apps, the required licenses must be deployed prior to deploying the apps.
+- The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
+- The device does not need to have connectivity to the Microsoft Store, or store services enabled.
+- The device does not need any AAD identity or domain membership.
+- For nonStore app, your device must be unlocked.
+- For Store offline apps, the required licenses must be deployed prior to deploying the apps.
 
 To provision app for all users of a device from a hosted location, the management server performs an Add and Exec command on the AppInstallation node in the device context. The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 > **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
- 
+ 
 
 Here is an example of app installation.
 
 > **Note**  This is only supported in Windows 10 for desktop editions.
 
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -473,7 +475,7 @@ Here is an example of app installation with dependencies.
 > **Note**  This is only supported in Windows 10 for desktop editions.
 
 
-``` syntax
+```xml
 <!-- Add PackageFamilyName -->
 <Add>
    <CmdID>0</CmdID>
@@ -524,7 +526,7 @@ When an app is installed successfully, the node is cleaned up and no longer pres
 
 Here is an example of a query for a specific app installation.
 
-``` syntax
+```xml
 <!-- Get all app status under AppInstallation for a specific app-->
 <Get>
    <CmdID>2</CmdID>
@@ -538,7 +540,7 @@ Here is an example of a query for a specific app installation.
 
 Here is an example of a query for all app installations.
 
-``` syntax
+```xml
 <!-- Get all app status under AppInstallation-->
 <Get>
    <CmdID>2</CmdID>
@@ -556,7 +558,7 @@ Application installations can take some time to complete, hence they are done as
 
 Here is an example of an alert.
 
-``` syntax
+```xml
 <Alert>
     <CmdID>4</CmdID>
     <Data>1226</Data>
@@ -592,7 +594,7 @@ To uninstall an app, you delete it under the origin node, package family name, a
 
 Here is an example for uninstalling all versions of an app for a user.
 
-``` syntax
+```xml
 <!-- Uninstall App for a Package Family-->
 <Delete>
    <CmdID>1</CmdID>
@@ -606,7 +608,7 @@ Here is an example for uninstalling all versions of an app for a user.
 
 Here is an example for uninstalling a specific version of the app for a user.
 
-``` syntax
+```xml
 <!-- Uninstall App for a specific package full name-->
 <Delete>
    <CmdID>1</CmdID>
@@ -624,12 +626,12 @@ You can remove provisioned apps from a device for a specific version or for all 
 
 > **Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
 
- 
+ 
 Removing provisioned app occurs in the device context.
 
 Here is an example for removing a provisioned app from a device.
 
-``` syntax
+```xml
 <!— Remove Provisioned App for a Package Family-->
 <Delete>
    <CmdID>1</CmdID>
@@ -643,7 +645,7 @@ Here is an example for removing a provisioned app from a device.
 
 Here is an example for removing a specific version of a provisioned app from a device:
 
-``` syntax
+```xml
 <!-- Remove Provisioned App for a specific package full name-->
 <Delete>
    <CmdID>1</CmdID>
@@ -661,7 +663,7 @@ You can remove app licenses from a device per app based on the content ID.
 
 Here is an example for removing an app license for a user.
 
-``` syntax
+```xml
 <!-- Remove App License for a User-->
 <Delete>
    <CmdID>1</CmdID>
@@ -675,7 +677,7 @@ Here is an example for removing an app license for a user.
 
 Here is an example for removing an app license for a provisioned package (device context).
 
-``` syntax
+```xml
 <!-- Remove App License for a provisioned package (device) -->
 <Delete>
    <CmdID>1</CmdID>
@@ -695,7 +697,7 @@ For user-based uninstallation, use ./User in the LocURI, and for provisioning, u
 
 Here is an example. There is only one uninstall for hosted and store apps.
 
-``` syntax
+```xml
 <Alert>
     <Data>1226</Data>
     <Item>
@@ -721,7 +723,7 @@ To update an app from Microsoft Store, the device requires contact with the stor
 
 Here is an example of an update scan.
 
-``` syntax
+```xml
 <!— Initiate a update scan for a user-->
 <Exec>
    <CmdID>1</CmdID>
@@ -735,7 +737,7 @@ Here is an example of an update scan.
 
 Here is an example of a status check.
 
-``` syntax
+```xml
 <!— Get last error related to the update scan-->
 <Get>
    <CmdID>1</CmdID>
@@ -764,7 +766,7 @@ Turning off updates only applies to updates from the Microsoft Store at the devi
 
 Here is an example.
 
-``` syntax
+```xml
 <!— Prevent app from being automatically updated-->
 <Replace>
    <CmdID>1</CmdID>
@@ -793,7 +795,7 @@ You can install app on non-system volumes, such as a secondary partition or remo
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>
@@ -825,12 +827,12 @@ In Windows 10 Mobile IT administrators can set a policy to restrict user applic
 
 > **Note**  The feature is only for Windows 10 Mobile.
 
- 
+ 
 The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-service-provider.md) enables you to restrict all user application data to stay on the system volume. When the policy is not configured or if it is disabled, and you move a package or when it is installed to a difference volume, then the user application data will moved to the same volume. You can set this policy to 0 (off, default) or 1.
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>
@@ -871,7 +873,7 @@ The valid values are 0 (off, default value) and 1 (on).
 
 Here is an example.
 
-``` syntax
+```xml
 <!-- Get policy (Default)-->
 <Get>
    <CmdID>1</CmdID>
@@ -897,7 +899,7 @@ Here is an example.
 </Replace>
 ```
 
- 
+ 
 
 
 

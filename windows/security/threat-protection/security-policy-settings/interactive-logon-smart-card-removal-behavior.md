@@ -1,13 +1,15 @@
 ---
 title: Interactive logon Smart card removal behavior (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Smart card removal behavior security policy setting.
+description: Best practices, location, values, policy management and security considerations for the security policy setting, Interactive logon Smart card removal behavior.
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -29,6 +31,9 @@ This policy setting determines what happens when the smart card for a logged-on 
 If smart cards are used for authentication, the device should automatically lock itself when the card is removed—that way, if users forget to manually lock their devices when they are away from them, malicious users cannot gain access.
 
 If you select **Force Logoff** in the property sheet for this policy setting, the user is automatically logged off when the smart card is removed. Users will have to reinsert their smart cards and reenter their PINs when they return to their workstations.
+
+> [!NOTE]
+> This policy depends on **Smart Card Removal Policy** service. The service must be running for the policy to take effect, so it is recommended to set the startup type of the service to **Automatic**.
 
 ### Possible values
 
@@ -67,7 +72,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | No Action| 
 | Member Server Effective Default Settings | No Action| 
 | Client Computer Effective Default Settings | No Action| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

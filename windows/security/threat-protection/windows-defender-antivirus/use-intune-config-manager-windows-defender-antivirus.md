@@ -1,6 +1,6 @@
 ---
 title: Configure Windows Defender Antivirus with Configuration Manager and Intune
-description: Use System Center Configuration Manager and Microsoft Intune to configure Windows Defender AV and Endpoint Protection
+description: Use Microsoft Endpoint Configuration Manager and Microsoft Intune to configure Windows Defender AV and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -9,18 +9,21 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
-# Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender Antivirus
+# Use Microsoft Endpoint Configuration Manager and Microsoft Intune to configure and manage Windows Defender Antivirus
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
+If you are using Microsoft Endpoint Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender Antivirus scans.
 
 In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender Antivirus.
 
@@ -29,7 +32,7 @@ See the [Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use
 For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 
-## Related topics
+## Related articles
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

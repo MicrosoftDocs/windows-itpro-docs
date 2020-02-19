@@ -2,6 +2,8 @@
 title: Manage private store settings (Windows 10)
 description: The private store is a feature in the Microsoft Store for Business and Microsoft Store for Education that organizations receive during the sign up process.
 ms.assetid: 2D501538-0C6E-4408-948A-2BF5B05F7A0C
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -100,7 +102,7 @@ We've recently made performance improvements for changes in the private store. T
 | ------------------------------------------------------ | -------------- |
 | Add a product to the private store <br> - Apps recently added to your inventory, including line-of-business (LOB) apps and new purchases, will take up to 36 hours to add to the private store. That time begins when the product is purchased, or added to your inventory. <br> - It will take an additional 36 hours for the product to be searchable in private store, even if you see the app available from the private store tab. | - 15 minutes: available on private store tab <br> - 36 hours: searchable in private store <br> - 36 hours: searchable in private store tab |
 | Remove a product from private store |  - 15 minutes: private store tab <br> - 36 hours: searchable in private store |
-| Accept a new LOB app into your inventory (under **Products & services)**) | - 15 minutes: available on private store tab <br> - 36 hours: searchable in private store |
+| Accept a new LOB app into your inventory (under **Products & services**) | - 15 minutes: available on private store tab <br> - 36 hours: searchable in private store |
 | Create a new collection | 15 minutes|
 | Edit or remove a collection | 15 minutes |
 | Create private store tab | 4-6 hours |

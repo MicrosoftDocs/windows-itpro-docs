@@ -1,12 +1,15 @@
 ---
 title: How to Configure the Client in the Application Virtualization Client Management Console
 description: How to Configure the Client in the Application Virtualization Client Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: d0868c9f-8fe9-442f-a9ad-ef30efb0f6b1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

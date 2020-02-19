@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4742(S): A computer account was changed.
@@ -92,7 +95,6 @@ You might see this event without any changes inside, that is, where all **Change
  <Data Name="ServicePrincipalNames">-</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -239,17 +241,17 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 <!-- -->
 
--   **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. If the SPN list of a computer account changed, you will see the new SPN list in **Service Principal Names** field (note that you will see the new list instead of changes). If the value of **servicePrincipalName** attribute of computer object was changed, you will see the new value here.
+- **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. If the SPN list of a computer account changed, you will see the new SPN list in **Service Principal Names** field (note that you will see the new list instead of changes). If the value of **servicePrincipalName** attribute of computer object was changed, you will see the new value here.
 
-    Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots**:**
+  Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots<strong>:</strong>
 
-    HOST/Win81.contoso.local
+  HOST/Win81.contoso.local
 
-    RestrictedKrbHost/Win81.contoso.local
+  RestrictedKrbHost/Win81.contoso.local
 
-    HOST/WIN81
+  HOST/WIN81
 
-    RestrictedKrbHost/WIN81
+  RestrictedKrbHost/WIN81
 
 TERMSRV/Win81.contoso.local
 
@@ -274,7 +276,7 @@ For 4742(S): A computer account was changed.
 | **Display Name** is not -<br>**User Principal Name** is not -<br>**Home Directory** is not -<br>**Home Drive** is not -<br>**Script Path** is not -<br>**Profile Path** is not -<br>**User Workstations** is not -<br>**Account Expires** is not -<br>**Logon Hours** is not **-** | Typically these fields are **-** for computer accounts. Other values might indicate an anomaly and should be monitored.                                                                                                                                                          |
 | **Password Last Set** changes occur more often than usual                                                                                                                                                                                                                                                                          | Changes that are more frequent than the default (typically once a month) might indicate an anomaly or attack.                                                                                                                                                                    |
 | **Primary Group ID** is not 516, 521, or 515                                                                                                                                                                                                                                                                                       | Typically, the **Primary Group ID** value is one of the following:<br>**516** for domain controllers<br>**521** for read only domain controllers (RODCs)<br>**515** for servers and workstations (domain computers)<br>Other values should be monitored. |
-| For computer accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt; **                                                                                                                                                                    | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on computers that previously had a services list (on the **Delegation** tab), it means the list was cleared.                                                                                                      |
+| For computer accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt;**                                                                                                                                                                    | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on computers that previously had a services list (on the **Delegation** tab), it means the list was cleared.                                                                                                      |
 | **SID History** is not -                                                                                                                                                                                                                                                                                                           | This field will always be set to - unless the account was migrated from another domain.                                                                                                                                                                                          |
 
 -   Consider whether to track the following account control flags:

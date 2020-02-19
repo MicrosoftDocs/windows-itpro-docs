@@ -1,12 +1,15 @@
 ---
 title: Configuring Certificates to Support Secure Streaming
 description: Configuring Certificates to Support Secure Streaming
-author: jamiejdt
+author: dansimp
 ms.assetid: 88dc76d8-7745-4729-92a1-af089c921244
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -32,7 +35,7 @@ The scenarios for obtaining and installing a certificate for App-V are as follow
     **Note**  
     If you need to obtain a certificate from a third-party CA, follow the documentation available on that CA’s Web site.
 
-     
+     
 
 If a PKI infrastructure has been deployed, consult with the PKI administrators to acquire a certificate that complies with the requirements described in this topic. If a PKI infrastructure is not available, use a third-party CA to obtain a valid certificate.
 
@@ -44,9 +47,9 @@ For step-by-step guidance for obtaining and installing a certificate, see <https
 Configuring Certificates to Support Secure Streaming
 [How to Modify Private Key Permissions to Support Management Server or Streaming Server](how-to-modify-private-key-permissions-to-support-management-server-or-streaming-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

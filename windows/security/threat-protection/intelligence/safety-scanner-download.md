@@ -1,5 +1,6 @@
 ---
 title: Microsoft Safety Scanner Download
+ms.reviewer: 
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
 ms.prod: w10
@@ -22,13 +23,18 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 - [Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)
 
-> **NOTE** The security intelligence update version of the Microsoft Safety Scaner matches the version described [in this web page](https://www.microsoft.com/en-us/wdsi/definitions).
+> [!NOTE]
+> Starting November 2019, Safety Scanner will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to run Safety Scanner. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
-Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
+## Important information
 
-> **NOTE:** This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/en-us/windows/windows-defender) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection).
+- The security intelligence update version of the Microsoft Safety Scanner matches the version described [in this web page](https://www.microsoft.com/wdsi/definitions).
 
-> **NOTE:** Safety scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.
+- Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
+
+- Safety scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.
+
+- This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
 
 ## System requirements
 
@@ -51,4 +57,4 @@ For more information about the Safety Scanner, see the support article on [how t
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
 - [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
 - [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)
-- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)

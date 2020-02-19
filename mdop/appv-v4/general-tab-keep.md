@@ -1,12 +1,15 @@
 ---
 title: General Tab
 description: General Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: aeefae39-60cd-4ad4-9575-c07d7e2b1e59
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

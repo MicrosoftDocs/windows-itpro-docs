@@ -9,17 +9,28 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**"],
+          "files": ["**/images/**", "**/*.pdf"],
           "exclude": ["**/obj/**"]
         }
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
+        "audience": "ITPro",
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
 			  "depot_name": "Win.windows"
-			}
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+     ], 
 		}
     },
     "externalReference": [

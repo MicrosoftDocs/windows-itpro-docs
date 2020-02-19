@@ -1,8 +1,11 @@
 ---
 title: How to Create and Use a Project Template
 description: How to Create and Use a Project Template
-author: jamiejdt
+author: dansimp
 ms.assetid: 2063f0b3-47a1-4090-bf99-0f26b107331c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,10 +33,10 @@ Use the following procedures to create and apply a new template.
 **Note**  
     If the virtual application package is currently open in the App-V 5.0 Sequencer console, skip to step 3 of this procedure.
 
-2.  To open the existing virtual application package that contains the settings you want to save with the App-V 5.0 project template, click **File** / **Open**, and then click **Edit Package**. On the **Select Package** page, click **Browse** and locate the virtual application package that you want to open. Click **Edit**.
+2. To open the existing virtual application package that contains the settings you want to save with the App-V 5.0 project template, click **File** / **Open**, and then click **Edit Package**. On the **Select Package** page, click **Browse** and locate the virtual application package that you want to open. Click **Edit**.
 
-3.  In the App-V 5.0 Sequencer console, to save the template file, click **File** / **Save As Template**. After you have reviewed the settings that will be saved with the new template, click **OK**. Specify a name that will be associated with the new App-V 5.0 project template. Click Save.
-The new App-V 5.0 project template is saved in the directory specified in step 3 of this procedure.
+3. In the App-V 5.0 Sequencer console, to save the template file, click **File** / **Save As Template**. After you have reviewed the settings that will be saved with the new template, click **OK**. Specify a name that will be associated with the new App-V 5.0 project template. Click Save.
+   The new App-V 5.0 project template is saved in the directory specified in step 3 of this procedure.
 
 **To apply a project template**
 
@@ -48,7 +51,7 @@ The new App-V 5.0 project template is saved in the directory specified in step 3
 
     Create the new virtual application package. The settings saved with the specified template will be applied to the new virtual application package that you are creating.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

@@ -1,13 +1,15 @@
 ---
-title: Enable computer and user accounts to be trusted for delegation (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Enable computer and user accounts to be trusted for delegation security policy setting.
+title: Trust computer and user accounts for delegation (Windows 10)
+description: Learn about best practices, security considerations and more for the security policy setting, Enable computer and user accounts to be trusted for delegation.
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,7 +60,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators| 
 | Member Server Effective Default Settings | Administrators| 
 | Client Computer Effective Default Settings | Administrators| 
- 
+ 
 ## Policy management
 
 This section describes features, tools and guidance to help you manage this policy.
@@ -82,6 +84,9 @@ Settings are applied in the following order through a Group Policy Object (GPO),
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
+> [!NOTE]
+> More information about configuring the policy can be found [here](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings).
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
@@ -96,7 +101,7 @@ after a security incident.
 The **Enable computer and user accounts to be trusted for delegation** user right should be assigned only if there is a clear need for its functionality. When you assign this right, you should investigate the use of constrained delegation to control what the delegated accounts can do. On domain controllers, this right is assigned to the Administrators group by default.
 
 >**Note:**  There is no reason to assign this user right to anyone on member servers and workstations that belong to a domain because it has no meaning in those contexts. It is only relevant on domain controllers and stand-alone computers.
- 
+ 
 ### Potential impact
 
 None. Not defined is the default configuration.

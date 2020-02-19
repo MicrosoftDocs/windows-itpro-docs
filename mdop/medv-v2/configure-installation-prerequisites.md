@@ -1,12 +1,15 @@
 ---
 title: Configure Installation Prerequisites
 description: Configure Installation Prerequisites
-author: jamiejdt
+author: dansimp
 ms.assetid: ff9cf28a-3eac-4b6c-8ce9-bfc202f57947
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -28,7 +31,7 @@ The following instructions are prerequisites for installing and using Microsoft 
 **Important**  
 If a version of Virtual PC for Windows already exists on the host computer, you must uninstall it before you install Windows Virtual PC.
 
- 
+ 
 
 **To install Windows Virtual PC**
 
@@ -39,7 +42,7 @@ If a version of Virtual PC for Windows already exists on the host computer, you 
 **Important**  
 Windows Virtual PC includes the Integration Components package, which provides features that improve the interaction between the virtual environment and the physical computer. For example, it lets your mouse move between the host and the guest computers. MED-V requires the installation of the Integration Components package.
 
- 
+ 
 
 ## <a href="" id="bkmk-howtoinstallandconfiguremicrosoftvirtualpc7update"></a>How to Install and Configure the Windows Virtual PC Update
 
@@ -49,12 +52,12 @@ The Microsoft update associated with article KB977206 enables Windows XP Mode fo
 **Important**  
 You do not have to install this update when you are installing MED-V on host computers that are running Windows 7 with Service Pack 1.
 
- 
+ 
 
 **Tip**  
 In addition to the update listed here, we recommend that you review all available Windows Virtual PC updates and apply those updates that are appropriate or necessary for your environment.
 
- 
+ 
 
 **To install the Windows Virtual PC Update**
 
@@ -90,9 +93,9 @@ To prevent antivirus activity from affecting the performance of the virtual desk
 
 [MED-V 2.0 Supported Configurations](med-v-20-supported-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: What's New in AGPM 4.0 SP2
 description: What's New in AGPM 4.0 SP2
-author: jamiejdt
+author: dansimp
 ms.assetid: 5c0dcab4-f27d-4153-8b8e-b280b080be51
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

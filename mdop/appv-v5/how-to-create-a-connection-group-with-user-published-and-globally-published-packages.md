@@ -1,8 +1,11 @@
 ---
 title: How to Create a Connection Group with User-Published and Globally Published Packages
 description: How to Create a Connection Group with User-Published and Globally Published Packages
-author: jamiejdt
+author: dansimp
 ms.assetid: 82f7ea7f-7b14-4506-8940-fdcd6c3e117f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -49,9 +52,9 @@ You can create user-entitled connection groups that contain both user-published 
 
 1.  Add and publish packages by using the following commands:
 
-    **Add-AppvClientPackage Pacakage1\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package1\_AppV\_file\_Path**
 
-    **Add-AppvClientPackage Pacakage2\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package2\_AppV\_file\_Path**
 
     **Publish-AppvClientPackage -PackageId Package1\_ID -VersionId Package1\_Version ID -Global**
 
@@ -73,7 +76,7 @@ You can create user-entitled connection groups that contain both user-published 
 
 3.  Follow the instructions in [How to Create a Connection Group](how-to-create-a-connection-group.md) to create the connection group, and add the user-published and globally published packages.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

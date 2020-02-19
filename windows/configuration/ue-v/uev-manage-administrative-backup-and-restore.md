@@ -1,12 +1,15 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V
 description: Manage Administrative Backup and Restore in UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -23,7 +26,7 @@ As an administrator of User Experience Virtualization (UE-V), you can restore ap
 
 To restore settings when a user adopts a new device, you can put a settings location template in **backup** or **roam (default)** profile using the Set-UevTemplateProfile PowerShell cmdlet. This lets computer settings sync to the new computer, in addition to user settings. Templates assigned to the backup profile are backed up for that device and configured on a per-device basis. To backup settings for a template, use the following cmdlet in Windows PowerShell:
 
-``` syntax
+```powershell
 Set-UevTemplateProfile -ID <TemplateID> -Profile <backup>
 ```
 
@@ -35,7 +38,7 @@ When replacing a user’s device, UE-V automatically restores settings if the us
 
 You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
-``` syntax
+```powershell
 Restore-UevBackup -ComputerName <Computer name>
 ```
 
@@ -89,10 +92,10 @@ Restoring a user’s device restores the currently registered Template’s setti
 
     If the user’s UE-V settings storage path, domain, and Computer name match the current user then all of the settings for that user are synchronized, with only the latest settings applied. If a user logs on to a new device for the first time and these criteria are met, the settings data is applied to that device.
 
-    **Note**  
+    **Note**  
     Accessibility and Windows Desktop settings require the user to re-logon to Windows to be applied.
 
-     
+
 
 -   **Manual Restore**
 
@@ -128,7 +131,7 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
     </tbody>
     </table>
 
-     
+
 
 **To restore application settings and Windows settings with WMI**
 
@@ -155,12 +158,14 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
     </tbody>
     </table>
 
-     
 
-    **Note**  
-    UE-V does not provide a settings rollback for Windows apps.
 
-     
+~~~
+**Note**  
+UE-V does not provide a settings rollback for Windows apps.
+~~~
+
+
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: Client Management Console Application Virtualization Properties
 description: Client Management Console Application Virtualization Properties
-author: jamiejdt
+author: dansimp
 ms.assetid: 70319e4c-5032-4cb3-bbb8-4292809dcea2
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,13 +1,14 @@
-
 ---
-title: Override Process Mitigation Options to help enforce app-related security policies (Windows 10)
+manager: dansimp
+ms.author: dansimp
+title: Override Process Mitigation Options (Windows 10)
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
 keywords: Process Mitigation Options, Mitigation Options, Group Policy Mitigation Options
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
-ms.date: 04/19/2017
+author: dulcemontemayor
 ms.localizationpriority: medium
 ---
 
@@ -45,12 +46,12 @@ The following procedure describes how to use Group Policy to override individual
 
     **Important**<br>For each app you want to include, you must include:
     
-    - **Value name.** The app file name, including the extension. For example, iexplore.exe.
-    - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to 0 (where the setting is forced off), 1 (where the setting is forced on), or ? (where the setting retains the previous, existing value).
+   - **Value name.** The app file name, including the extension. For example, iexplore.exe.
+   - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to 0 (where the setting is forced off), 1 (where the setting is forced on), or ? (where the setting retains the previous, existing value).
     
-        **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
+       **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
 
-    ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
+     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
 Here’s a visual representation of the bit flag locations for the various Process Mitigation Options settings:

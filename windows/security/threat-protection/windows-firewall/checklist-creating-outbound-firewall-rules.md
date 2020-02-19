@@ -2,12 +2,14 @@
 title: Checklist Creating Outbound Firewall Rules (Windows 10)
 description: Checklist Creating Outbound Firewall Rules
 ms.assetid: 611bb98f-4e97-411f-82bf-7a844a4130de
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

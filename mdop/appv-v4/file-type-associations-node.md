@@ -1,12 +1,15 @@
 ---
 title: File Type Associations Node
 description: File Type Associations Node
-author: jamiejdt
+author: dansimp
 ms.assetid: a3f35562-32d0-4a43-8604-3a54189ade92
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

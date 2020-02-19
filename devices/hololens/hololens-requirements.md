@@ -1,86 +1,114 @@
 ---
-title: HoloLens in the enterprise requirements and FAQ (HoloLens)
-description: Requirements and FAQ for general use, Wi-Fi, and device management for HoloLens in the enterprise.
+title: Set up HoloLens in a commercial environment
+description: Learn more about deploying and managing HoloLens in enterprise environments.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
+author: scooley
+ms.author: scooley
+audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/04/2018
+ms.date: 07/15/2019
 ---
 
-# Microsoft HoloLens in the enterprise: requirements and FAQ
+# Deploy HoloLens in a commercial environment
 
-When you develop for HoloLens, there are [system requirements and tools](https://developer.microsoft.com/windows/mixed-reality/install_the_tools) that you need. In an enterprise environment, there are also a few requirements to use and manage HoloLens which are listed below.
+You can deploy and configure HoloLens at scale in a commercial setting. This article provides instructions for deploying HoloLens devices in a commercial environment. This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
 
-## Requirements
+This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network. Frequently asked security questions can be found [here](hololens-faq-security.md)
 
-### General use
-- Microsoft account or Azure Active Directory (Azure AD) account
-- Wi-Fi network to set up HoloLens
+## Overview of Deployment Steps
 
->[!NOTE]
->After you set up HoloLens, you can use it offline [with some limitations](https://support.microsoft.com/help/12645/hololens-use-hololens-offline).
+1. [Determine what features you need](hololens-requirements.md#step-1-determine-what-you-need)
+1. [Determine what licenses you need](hololens-licenses-requirements.md)
+1. [Configure your network for HoloLens](hololens-commercial-infrastructure.md).
+    1. This section includes bandwidth requirements, URL, and ports that need to be whitelisted on your firewall; Azure AD guidance; Mobile Device Management (MDM) Guidance; app deployment/management guidance; and certificate guidance.
+1. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
+1. [Enroll Device](hololens-enroll-mdm.md)
+1. [Set up ring based updates for HoloLens](hololens-updates.md)
+1. [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
+## Step 1. Determine what you need
 
-### Supported wireless network EAP methods 
-- PEAP-MS-CHAPv2
-- PEAP-TLS
-- TLS 
-- TTLS-CHAP
-- TTLS-CHAPv2
-- TTLS-MS-CHAPv2
-- TTLS-PAP
-- TTLS-TLS
+Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed.
 
-### Device management 
-   - Users have Azure AD accounts with [Intune license assigned](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)
-   - Wi-Fi network
-   - Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
-   
-### Upgrade to Windows Holographic for Business 
-- HoloLens Enterprise license XML file
+### Type of Features
 
+Your feature requirements will determine which HoloLens you need. One popular feature that we see deployed in customer environments frequently is Kiosk Mode. A list of HoloLens key features, and the editions of HoloLens that support them, can be found [here](hololens-commercial-features.md).
 
-## FAQ for HoloLens
+**What is Kiosk Mode?**
 
-<span id="pin"/>
-#### Is Windows Hello for Business supported on HoloLens?
+Kiosk mode is a way to restrict the apps that a user has access to. This means that users will only be allowed to access certain apps.
 
-Windows Hello for Business (using a PIN to sign in) is supported for HoloLens. To allow Windows Hello for Business PIN sign-in on HoloLens:
+**What Kiosk Mode do I require?**
 
-1. The HoloLens device must be [managed by MDM](hololens-enroll-mdm.md).
-2. You must enable Windows Hello for Business for the device. ([See instructions for Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
-3. On HoloLens, the user can then set up a PIN from **Settings** > **Sign-in Options** > **Add PIN**.
+There are two types of Kiosk Modes: Single app and multi-app. Single app kiosk mode allows user to only access one app while multi-app kiosk mode allows users to access multiple, specified apps. To determine which kiosk mode is right for your corporation, the following two questions need to be answered:
 
->[!NOTE]
->Users who sign in with a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+1. **Do different users require different experiences/restrictions?** Consider the following example: User A is a field service engineer who only needs access to Remote Assist. User B is a trainee who only needs access to Guides.
+    1. If yes, you will require the following:
+        1. Azure AD Accounts as the method of signing into the device.
+        1. **Multi-app** kiosk mode.
+    1. If no, continue to question two
+1. **Do you require a multi-app experience?**
+    1. If yes, **Multi-app** kiosk is mode is needed
+    1. If your answer to question 1 and 2 are both no, **single-app** kiosk mode can be used
 
-#### Does the type of account change the sign-in behavior?
+**How to Configure Kiosk Mode:**
 
-Yes, the behavior for the type of account impacts the sign-in behavior. If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type.
+There are two main ways ([provisioning packages](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) and [MDM](hololens-kiosk.md#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803)) to deploy kiosk mode for HoloLens. These options will be discussed later in the document; however, you can use the links above to jump to the respective sections in this doc.
 
-- Microsoft account: signs in automatically
-- Local account: always asks for password, not configurable in **Settings**
-- Azure AD: asks for password by default; configurable by **Settings** to no longer ask for password. 
+### Apps
 
->[!NOTE]
->Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is respected only when the device goes into StandBy. 
+The majority of the steps found in this document will also apply to the following apps:
 
+1. Remote Assist
+2. Guides
+3. Customer Apps
 
-#### How do I remove a HoloLens device from the Intune dashboard?
+### Type of identity
 
-You cannot [unenroll](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens from Intune remotely. If the administrator unenrolls the device using MDM, the device will age out of the Intune dashboard.
+Determine the type of identity that will be used to sign into the device.
 
+1. **Local Accounts:** This account is local to the device (like a local admin account on a windows PC). This will allow only 1 user to log into the device.
+2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
+3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
 
-## Related resources
+### Determine your enrollment method
 
-[Getting started with Azure Active Directory Premium](https://azure.microsoft.com/documentation/articles/active-directory-get-started-premium/)
+1. Bulk enrollment with a security token in a provisioning package.  
+  Pros: this is the most automated approach  
+  Cons: takes initial server-side setup  
+1. Auto-enroll on user sign in.  
+  Pros: easiest approach  
+  Cons: users will need to complete set up after the provisioning package has been applied
+1. _not recommended_ - Manually enroll post-setup.  
+  Pros: possible to enroll after set up  
+  Cons: most manual approach and devices aren't centrally manageable until they're manually enrolled.
 
-[Get started with Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)
+  More information can be found [here](hololens-enroll-mdm.md)
 
-[Enroll devices for management in Intune](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune#supported-device-platforms)
+### Determine if you need to create a provisioning package
 
-[Azure AD editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)
+There are two methods to configure a HoloLens device (Provisioning packages and MDMs). We suggest using your MDM to configure you HoloLens device. However, there are some scenarios where using a provisioning package is the better choice:
 
+1. You want to configure the HoloLens to skip the Out of Box Experience (OOBE)
+1. You are having trouble deploying certificate in a complex network. The majority of the time you can deploy certificates using MDM (even in complex environments). However, some scenarios require certificates to be deployed through the provisioning package.
+
+Some of the HoloLens configurations you can apply in a provisioning package:
+
+- Apply certificates to the device
+- Set up a Wi-Fi connection
+- Pre-configure out of box questions like language and locale
+- (HoloLens 2) bulk enroll in mobile device management
+- (HoloLens v1) Apply key to enable Windows Holographic for Business
+
+If you decide to use provisioning packages, follow [this guide](hololens-provisioning.md).
+
+## Next Step: [Determine what licenses you need](hololens-licenses-requirements.md)
+
+## Get support
+
+Get support through the Microsoft support site.
+
+[File a support request](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)

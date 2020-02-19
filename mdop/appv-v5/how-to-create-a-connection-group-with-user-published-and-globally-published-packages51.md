@@ -1,8 +1,11 @@
 ---
 title: How to Create a Connection Group with User-Published and Globally Published Packages
 description: How to Create a Connection Group with User-Published and Globally Published Packages
-author: jamiejdt
+author: dansimp
 ms.assetid: 851b8742-0283-4aa6-b3a3-f7f6289824c3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -50,9 +53,9 @@ You can create user-entitled connection groups that contain both user-published 
 
 1.  Add and publish packages by using the following commands:
 
-    **Add-AppvClientPackage Pacakage1\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package1\_AppV\_file\_Path**
 
-    **Add-AppvClientPackage Pacakage2\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package2\_AppV\_file\_Path**
 
     **Publish-AppvClientPackage -PackageId Package1\_ID -VersionId Package1\_Version ID -Global**
 

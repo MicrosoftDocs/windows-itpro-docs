@@ -2,11 +2,14 @@
 title: Change history for Deploy Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Deploy Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 19C50373-6B25-4F5C-A6EF-643D36904349
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
-ms.date: 11/08/2017
 ms.topic: article
 ---
 
@@ -44,7 +47,7 @@ New or changed topic | Description
 ## April 2017
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | Updated: The "refresh" and "replace" procedures were swapped in order so that it would not be necessary to save and restore VMs. Also a missing step was added to include the State migration point role. | 
+| [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md) | Updated: The "refresh" and "replace" procedures were swapped in order so that it would not be necessary to save and restore VMs. Also a missing step was added to include the State migration point role. | 
 | [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)| Updated with minor fixes. |
 | [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)| Updated child topics under this node to include new feature and user interface changes. |
 | [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)| Added a table summarizing connection scenarios under the Enable data sharing topic. |
@@ -59,7 +62,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 |----------------------|-------------|
 | [What's new in Windows 10 deployment](deploy-whats-new.md) | New | 
 | [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Topic moved under [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
-| [Upgrade to Windows 10 with System Center Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md) | Topic moved under [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
+| [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md) | Topic moved under [Deploy Windows 10 with Microsoft Endpoint Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
 | [Convert MBR partition to GPT](mbr-to-gpt.md) | New | 
 
 ## February 2017
@@ -82,7 +85,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 |----------------------|-------------|
 | [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md) | New | 
 | [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) | New | 
-| [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
+| [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
 | [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) | New (previously published in other topics) | 
 | [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package) | New (previously published in Hardware Dev Center on MSDN) | 
 | [Create a provisioning package with multivariant settings](/windows/configuration/provisioning-packages/provisioning-multivariant) | New (previously published in Hardware Dev Center on MSDN) | 

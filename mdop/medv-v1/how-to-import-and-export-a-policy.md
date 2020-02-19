@@ -1,12 +1,15 @@
 ---
 title: How to Import and Export a Policy
 description: How to Import and Export a Policy
-author: jamiejdt
+author: dansimp
 ms.assetid: c86455de-2096-4bb1-b9d3-22efb42f3317
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

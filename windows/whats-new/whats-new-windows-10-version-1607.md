@@ -1,13 +1,15 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 (version 1607) and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.reviewer: 
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.topic: article
 ---
 

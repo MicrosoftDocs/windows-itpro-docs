@@ -2,12 +2,14 @@
 title: Planning Group Policy Deployment for Your Isolation Zones (Windows 10)
 description: Planning Group Policy Deployment for Your Isolation Zones
 ms.assetid: ea7c0acd-af28-4347-9d4a-4801b470557c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

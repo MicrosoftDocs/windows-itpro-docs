@@ -1,12 +1,15 @@
 ---
 title: Get Started with UE-V
 description: Get Started with UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 03/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Get Started with UE-V
@@ -28,7 +31,7 @@ The standard installation of UE-V synchronizes the default Microsoft Windows and
 
 -   [Step 2: Deploy the settings storage location](#step-2-deploy-the-settings-storage-location). Explains how to deploy a settings storage location. All UE-V deployments require a location to store settings packages that contain the synchronized setting values.
 
--   [Step 3: Enable and configure the UE-V service](#step-3-enable-the-ue-v-service-on-user-devices). Explains how to enable to UE-V service on user devices and configure the storage path. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
+-   [Step 3: Enable and configure the UE-V service](#step-3-enable-and-configure-the-ue-v-service-on-user-devices). Explains how to enable to UE-V service on user devices and configure the storage path. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
 
 -   [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-ue-v-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
 
@@ -163,8 +166,8 @@ For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.c
 
 -   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V ](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V ](uev-troubleshooting.md)
+-   [Troubleshooting UE-V](uev-troubleshooting.md)
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)

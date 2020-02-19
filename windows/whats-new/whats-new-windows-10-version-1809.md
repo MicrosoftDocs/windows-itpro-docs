@@ -1,11 +1,14 @@
 ---
 title: What's new in Windows 10, version 1809
+ms.reviewer: 
 description: New and updated features in Windows 10, version 1809
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -64,7 +67,7 @@ This is an update to the [BitLocker CSP](https://docs.microsoft.com/windows/clie
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-####  Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to AutoPilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
@@ -77,6 +80,8 @@ To achieve this:
     - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
 3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
     - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/bitlocker).
 
 ### Windows Defender Application Guard Improvements
 
@@ -155,6 +160,15 @@ Windows Defender ATP now adds support for Windows Server 2019. You'll be able to
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
 
+## Cloud Clipboard
+
+Cloud clipboard helps users copy content between devices. It also manages the clipboard history so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
+
+1. Go to **Windows Settings** and select **Systems**.
+2. On the left menu, click on **Clipboard**.
+3. Turn on **Clipboard history**.
+4. Turn on **Sync across devices**. Chose whether or not to automatically sync copied text across your devices.
+
 ## Kiosk setup experience
 
 We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
@@ -173,7 +187,7 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
 >[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>The following Microsoft Edge kiosk mode types cannot be set up using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 
@@ -203,9 +217,12 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
     ![fast sign-in](images/fastsignin.png "fast sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Web sign-in to Windows 10
+
+>[!IMPORTANT]
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
@@ -218,7 +235,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
     ![Web sign-in](images/websignin.png "web sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Your Phone app
 

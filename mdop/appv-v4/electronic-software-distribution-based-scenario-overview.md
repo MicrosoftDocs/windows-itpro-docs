@@ -1,12 +1,15 @@
 ---
 title: Electronic Software Distribution-Based Scenario Overview
 description: Electronic Software Distribution-Based Scenario Overview
-author: jamiejdt
+author: dansimp
 ms.assetid: e9e94b8a-6cba-4de8-9b57-73897796b6a0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -17,9 +20,9 @@ ms.date: 08/30/2016
 If you plan to use an electronic software distribution (ESD) solution to deploy virtual applications, it is important to understand the factors that go into and are affected by that decision. This topic describes the benefits of using an ESD-based scenario and provides information about the publishing and package streaming methods that you will need to consider as you proceed with your deployment.
 
 **Important**  
-Whichever ESD solution you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or later, see the System Center Configuration Manager documentation at <https://go.microsoft.com/fwlink/?LinkId=66999>.
+Whichever ESD solution you use, you must be familiar with the requirements of your particular solution. If you are using Microsoft Endpoint Configuration Manager, see the Configuration Manager documentation at <https://go.microsoft.com/fwlink/?LinkId=66999>.
 
- 
+ 
 
 Using an existing ESD system provides you with the following benefits:
 
@@ -72,9 +75,9 @@ For more detailed information about the preceding streaming methods, see [Determ
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

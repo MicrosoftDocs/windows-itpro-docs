@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- Helpful information and additional resources -->
@@ -22,7 +24,7 @@ ms:topic: include
 
 - [Web Application Compatibility Lab Kit](https://technet.microsoft.com/microsoft-edge/mt612809.aspx)
 
-- [Microsoft Services Support](https://www.microsoft.com/en-us/microsoftservices/support.aspx)
+- [Microsoft Services Support](https://www.microsoft.com/microsoftservices/support.aspx)
 
 - [Find a Microsoft partner on Pinpoint](https://partnercenter.microsoft.com/pcv/search)
 

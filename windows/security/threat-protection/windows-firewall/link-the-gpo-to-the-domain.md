@@ -2,12 +2,14 @@
 title: Link the GPO to the Domain (Windows 10)
 description: Link the GPO to the Domain
 ms.assetid: 746d4553-b1a6-4954-9770-a948926b1165
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

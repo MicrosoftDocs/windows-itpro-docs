@@ -2,12 +2,14 @@
 title: Create an Authentication Exemption List Rule (Windows 10)
 description: Create an Authentication Exemption List Rule
 ms.assetid: 8f6493f3-8527-462a-82c0-fd91a6cb5dd8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -26,7 +28,7 @@ In almost any isolated server or isolated domain scenario, there are some device
 **Important**  
 Adding devices to the exemption list for a zone reduces security because it permits devices in the zone to send network traffic that is unprotected by IPsec to the devices on the list. As discussed in the Windows Defender Firewall with Advanced Security Design Guide, you must add only managed and trusted devices to the exemption list.
 
- 
+ 
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.

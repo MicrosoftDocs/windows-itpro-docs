@@ -1,12 +1,15 @@
 ---
 title: DELETE OBJ
 description: DELETE OBJ
-author: jamiejdt
+author: dansimp
 ms.assetid: fb17a261-f378-4ce6-a538-ab2f0ada0f2d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

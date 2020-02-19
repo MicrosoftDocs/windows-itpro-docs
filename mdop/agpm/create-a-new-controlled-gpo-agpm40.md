@@ -1,8 +1,11 @@
 ---
 title: Create a New Controlled GPO
 description: Create a New Controlled GPO
-author: jamiejdt
+author: dansimp
 ms.assetid: 5ce760f6-9f05-42b4-b787-7835ab8e324e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

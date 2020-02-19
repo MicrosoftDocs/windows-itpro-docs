@@ -1,14 +1,15 @@
 ---
 title: WLAN (Windows 10)
+ms.reviewer: 
+manager: dansimp
 description: This section describes the WLAN settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
-ms.date: 10/02/2018
 ---
 
 # WLAN (reference)

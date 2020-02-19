@@ -2,11 +2,13 @@
 title: RemoteLock CSP
 description: RemoteLock CSP
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -115,7 +117,7 @@ A Get operation on this node must follow an Exec operation on the /RemoteLock/Lo
 
 Initiate a remote lock of the device.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
    <Item>
@@ -128,7 +130,7 @@ Initiate a remote lock of the device.
 
 Initiate a remote lock and PIN reset of the device. To successfully retrieve the new device-generated PIN, the commands must be executed together and in the proper sequence as shown below.
 
-``` syntax
+```xml
 <Sequence>
     <CmdID>1</CmdID>
     <Exec>

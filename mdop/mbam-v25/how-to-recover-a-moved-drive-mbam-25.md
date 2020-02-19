@@ -1,8 +1,11 @@
 ---
 title: How to Recover a Moved Drive
 description: How to Recover a Moved Drive
-author: jamiejdt
+author: dansimp
 ms.assetid: 0d38ce7e-bc64-473e-ae85-99b7099ca758
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -24,7 +27,7 @@ To recover a moved drive, you must use the **Drive Recovery** area of the Admini
     **Note**  
     In some cases, you may be able to click **I forgot the PIN** during the startup process, and then enter the recovery mode to display the recovery key ID.
 
-     
+     
 
 3.  Use the recovery key ID to retrieve the recovery password and unlock the drive from the Administration and Monitoring Website. For instructions, see [How to Recover a Drive in Recovery Mode](how-to-recover-a-drive-in-recovery-mode-mbam-25.md).
 
@@ -41,7 +44,7 @@ To recover a moved drive, you must use the **Drive Recovery** area of the Admini
 
 [Performing BitLocker Management with MBAM 2.5](performing-bitlocker-management-with-mbam-25.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

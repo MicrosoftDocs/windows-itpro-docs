@@ -1,12 +1,15 @@
 ---
 title: About MED-V 1.0 SP1
 description: About MED-V 1.0 SP1
-author: jamiejdt
+author: dansimp
 ms.assetid: 4c16e935-46c4-49c3-9e53-c60404d5da0c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

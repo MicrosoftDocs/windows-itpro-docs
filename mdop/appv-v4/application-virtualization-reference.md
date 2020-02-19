@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization Reference
 description: Application Virtualization Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: 5f994be7-41fa-416b-8a4c-6ed52fcd9b72
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

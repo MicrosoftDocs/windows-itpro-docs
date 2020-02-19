@@ -1,12 +1,15 @@
 ---
 title: Planning and Deployment Guide for the Application Virtualization System
 description: Planning and Deployment Guide for the Application Virtualization System
-author: jamiejdt
+author: dansimp
 ms.assetid: 6c012e33-9ac6-4cd8-84ff-54f40973833f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -18,7 +21,7 @@ Microsoft Application Virtualization Management provides the capability to make 
 
 The Application Virtualization Client is the Application Virtualization system component that enables the end user to interact with the applications after they have been published to the computer. The client manages the virtual environment in which the virtualized applications run on each computer. After the client has been installed on a computer, the applications must be made available to the computer through a process known as *publishing*, which enables the end user to run the virtual applications. The publishing process places the virtual application icons and shortcuts on the computer—typically on the Windows desktop or on the **Start** menu—and also places the package definition and file type association information on the computer. Publishing also makes the application package content available to the end user’s computer.
 
-The virtual application package content can be placed on one or more Application Virtualization servers so that it can be streamed down to the clients on demand and cached locally. File servers and Web servers can also be used as streaming servers, or the content can be placed directly on the end user’s computer—for example, if you are using an electronic software distribution system, such as Microsoft System Center Configuration Manager 2007. In a multi-server implementation, maintaining the package content and keeping it up to date on all the streaming servers requires a comprehensive package management solution. Depending on the size of your organization, you might need to have many virtual applications accessible to end users located all over the world. Managing the packages to ensure that the right applications are available to all users where and when they need access to them is therefore an essential requirement.
+The virtual application package content can be placed on one or more Application Virtualization servers so that it can be streamed down to the clients on demand and cached locally. File servers and Web servers can also be used as streaming servers, or the content can be placed directly on the end user’s computer—for example, if you are using an electronic software distribution system, such as Microsoft Endpoint Configuration Manager. In a multi-server implementation, maintaining the package content and keeping it up to date on all the streaming servers requires a comprehensive package management solution. Depending on the size of your organization, you might need to have many virtual applications accessible to end users located all over the world. Managing the packages to ensure that the right applications are available to all users where and when they need access to them is therefore an essential requirement.
 
 The Application Virtualization Planning and Deployment Guide provides information to help you better understand and deploy the Microsoft Application Virtualization application and its components. It also provides step-by-step procedures for implementing the key deployment scenarios.
 

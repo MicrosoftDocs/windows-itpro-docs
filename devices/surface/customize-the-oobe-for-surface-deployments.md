@@ -2,22 +2,24 @@
 title: Customize the OOBE for Surface deployments (Surface)
 description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
+ms.reviewer: 
+manager: dansimp
 keywords: deploy, customize, automate, network, Pen, pair, boot
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jobotto
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.audience: itpro
+ms.date: 10/21/2019
 ---
 
 # Customize the OOBE for Surface deployments
 
-
-This article walks you through the process of customizing the Surface out-of-box experience for end users in your organization.
+This article describes customizing the Surface out-of-box experience for end users in your organization.
 
 It is common practice in a Windows deployment to customize the user experience for the first startup of deployed computers — the out-of-box experience, or OOBE.
 
@@ -26,10 +28,13 @@ It is common practice in a Windows deployment to customize the user experience f
 
 In some scenarios, you may want to provide complete automation to ensure that at the end of a deployment, computers are ready for use without any interaction from the user. In other scenarios, you may want to leave key elements of the experience for users to perform necessary actions or select between important choices. For administrators deploying to Surface devices, each of these scenarios presents a unique challenge to overcome.
 
+> [!NOTE]
+> This article does not apply to Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
+
 This article provides a summary of the scenarios where a deployment might require additional steps. It also provides the required information to ensure that the desired experience is achieved on any newly deployed Surface device. This article is intended for administrators who are familiar with the deployment process, as well as concepts such as answer files and [reference images](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image).
 
 >[!NOTE]
->Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
+>Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117) or Microsoft Endpoint Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
 >- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 >- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
 
@@ -55,7 +60,7 @@ To provide the factory Surface Pen pairing experience in OOBE, you must copy fou
 -   %windir%\\system32\\oobe\\info\\default\\1033\\PenSuccess\_en-US.png
 
 >[!NOTE]
->You should copy the files from a factory image for the same model Surface device that you intend to deploy to. For example, you should use the files from a Surface Pro 3 to deploy to Surface Pro 3, and the files from Surface Book to deploy Surface Book, but you should not use the files from a Surface Pro 3 to deploy Surface Book or Surface Pro 4.
+>You should copy the files from a factory image for the same model Surface device that you intend to deploy to. For example, you should use the files from a Surface Pro 7 to deploy to Surface Pro 7, and the files from Surface Book 2 to deploy Surface Book 2, but you should not use the files from a Surface Pro 7 to deploy Surface Book or Surface Pro 6.
 
  
 

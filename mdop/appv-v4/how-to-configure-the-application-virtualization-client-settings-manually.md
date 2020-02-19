@@ -1,12 +1,15 @@
 ---
 title: How to Configure the Application Virtualization Client Settings Manually
 description: How to Configure the Application Virtualization Client Settings Manually
-author: jamiejdt
+author: dansimp
 ms.assetid: 53bd21d8-49eb-4c77-9692-c093ffe4c17c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

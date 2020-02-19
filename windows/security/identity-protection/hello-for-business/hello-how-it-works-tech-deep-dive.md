@@ -1,6 +1,6 @@
 ---
-title: How Windows Hello for Business works - Techincal Deep Dive
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+title: How Windows Hello for Business works - Technical Deep Dive
+description: Deeply explore how Windows Hello for Business works, and how it can help your users authenticate to services.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, works 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Technical Deep Dive
 
@@ -21,9 +22,9 @@ ms.date: 08/19/2018
 -   Windows 10
 
 Windows Hello for Business authentication works through collection of components and infrastructure working together.  You can group the infrastructure and components in three categories:
-- [Registration](#Registration)
-- [Provisioning](#Provisioning)
-- [Authentication](#Authentication)
+- [Registration](#registration)
+- [Provisioning](#provisioning)
+- [Authentication](#authentication)
 
 ## Registration
 

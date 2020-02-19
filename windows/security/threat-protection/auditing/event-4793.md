@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4793(S): The Password Policy Checking API was called.
@@ -27,7 +30,7 @@ This event generates each time the [Password Policy Checking API](https://msdn.m
 
 The Password Policy Checking API allows an application to check password compliance against an application-provided account database or single account and verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy.
 
-This event, for example, generates during Directory Services Restore Mode ([DSRM](http://blogs.technet.com/b/askds/archive/2009/03/11/ds-restore-mode-password-maintenance.aspx)) account password reset procedure to check new DSRM password.
+This event, for example, generates during Directory Services Restore Mode ([DSRM](https://blogs.technet.com/b/askds/archive/2009/03/11/ds-restore-mode-password-maintenance.aspx)) account password reset procedure to check new DSRM password.
 
 This event generates on the computer where Password Policy Checking API was called.
 

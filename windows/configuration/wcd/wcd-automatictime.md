@@ -4,11 +4,13 @@ description: This section describes the AutomaticTime settings that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # AutomaticTime (Windows Configuration Designer reference)

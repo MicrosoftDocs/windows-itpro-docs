@@ -1,12 +1,15 @@
 ---
 title: How to Delete a Package Version
 description: How to Delete a Package Version
-author: jamiejdt
+author: dansimp
 ms.assetid: a55adb9d-ffa6-4df3-a2d1-5e0c73c35e1b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ From the Application Virtualization Server Management Console, for a package tha
 **Note**  
 When you choose to delete a version, a confirmation box reminds you that client computers might still be using it. You should advise users to exit and unload any applications before you remove a version that is in use.
 
- 
+ 
 
 **To delete a package version**
 
@@ -34,7 +37,7 @@ When you choose to delete a version, a confirmation box reminds you that client 
     **Note**  
     If you have users in disconnected operation, their applications will be replaced with the new versions the next time they connect to the servers. After you are sure all users have updated applications, you can delete old versions.
 
-     
+     
 
 ## Related topics
 
@@ -43,9 +46,9 @@ When you choose to delete a version, a confirmation box reminds you that client 
 
 [How to Manage Packages in the Server Management Console](how-to-manage-packages-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: Understanding MBAM Reports in Configuration Manager
 description: Understanding MBAM Reports in Configuration Manager
-author: jamiejdt
+author: dansimp
 ms.assetid: b2582190-c9de-4e64-bd5a-f31ac1916f53
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -142,7 +145,7 @@ This report shows information about the overall BitLocker compliance across your
 </tbody>
 </table>
 
- 
+ 
 
 **BitLocker Enterprise Compliance Details Report - Compliance States**
 
@@ -173,7 +176,7 @@ This report shows information about the overall BitLocker compliance across your
 </tbody>
 </table>
 
- 
+ 
 
 ### BitLocker Enterprise Compliance Summary Report
 
@@ -240,7 +243,7 @@ Use this report type to show information about the overall BitLocker compliance 
 </tbody>
 </table>
 
- 
+ 
 
 **BitLocker Enterprise Compliance Summary Report - Computer Details**
 
@@ -287,7 +290,7 @@ Use this report type to show information about the overall BitLocker compliance 
 </tbody>
 </table>
 
- 
+ 
 
 ### BitLocker Computer Compliance Report
 
@@ -296,7 +299,7 @@ Use this report type to collect information that is specific to a computer. The 
 **Note**  
 Removable Data Volume encryption status is not shown in the report.
 
- 
+ 
 
 **BitLocker Computer Compliance Report – Computer Details Fields**
 
@@ -387,7 +390,7 @@ Removable Data Volume encryption status is not shown in the report.
 </tbody>
 </table>
 
- 
+ 
 
 **BitLocker Computer Compliance Report – Computer Volume Fields**
 
@@ -430,16 +433,16 @@ Removable Data Volume encryption status is not shown in the report.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Using MBAM with Configuration Manager](using-mbam-with-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,12 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+audience: itpro
+manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow Adobe Flash -->
@@ -14,10 +17,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented |
-|Enabled **(default)** |1 |1 |Allowed |
+|     Group Policy      | MDM | Registry | Description |
+|-----------------------|:---:|:--------:|-------------|
+|       Disabled        |  0  |    0     |  Prevented  |
+| Enabled **(default)** |  1  |    1     |   Allowed   |
+
 --- 
 
 ### ADMX info and settings
@@ -31,7 +35,7 @@ ms:topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAdobeFlash 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlash 
 - **Data type:** Integer
 
 #### Registry settings

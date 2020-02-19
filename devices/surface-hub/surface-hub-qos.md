@@ -1,10 +1,12 @@
 ---
-title: Implement Quality of Service on Surface Hub   
+title: Implement Quality of Service on Surface Hub
+ms.reviewer: 
+manager: dansimp
 description: Learn how to configure QoS on Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---

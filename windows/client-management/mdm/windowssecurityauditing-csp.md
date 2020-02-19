@@ -2,11 +2,13 @@
 title: WindowsSecurityAuditing CSP
 description: The WindowsSecurityAuditing configuration service provider (CSP) is used to enable logging of security audit events. This CSP was added in Windows 10, version 1511.
 ms.assetid: 611DF7FF-21CE-476C-AAB5-3D09C1CDF08A
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -37,7 +39,7 @@ Supported operations are Get and Replace.
 
 Enable logging of audit events.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

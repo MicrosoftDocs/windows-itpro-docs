@@ -9,9 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage Windows Security in Windows 10 in S mode
@@ -36,7 +38,7 @@ The Windows Security interface is a little different in Windows 10 in S mode. Th
 
 For more information about Windows 10 in S mode, including how to switch out of S mode, see [Windows 10 Pro/Enterprise in S mode](https://docs.microsoft.com/windows/deployment/windows-10-pro-in-s-mode).
 
-##Managing Windows Security settings with Intune
+## Managing Windows Security settings with Intune
 
 In the enterprise, you can only manage security settings for devices running Windows 10 in S mode with Microsoft Intune or other mobile device management apps. Windows 10 in S mode prevents making changes via PowerShell scripts.
 

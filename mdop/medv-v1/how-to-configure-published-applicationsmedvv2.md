@@ -1,12 +1,15 @@
 ---
 title: How to Configure Published Applications
 description: How to Configure Published Applications
-author: jamiejdt
+author: dansimp
 ms.assetid: 43a59ff7-5d4e-49dc-84e5-1082bc4dd8f4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -35,10 +38,10 @@ An application can be published in one of the following ways:
 
 4.  On the **Policy** menu, select **Commit**.
 
-    **Note**  
+    **Note**  
     If you are setting Internet Explorer as a published application to ensure that Web redirection works properly, make certain that any parameters are not in parentheses.
 
-     
+
 
 **Published Application Properties**
 
@@ -60,30 +63,28 @@ An application can be published in one of the following ways:
 </tr>
 <tr class="even">
 <td align="left"><p>Display name</p></td>
-<td align="left"><p>The name of the shortcut in the user's Windows Start menu.</p>
+<td align="left"><p>The name of the shortcut in the user&#39;s Windows Start menu.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The display name is <strong>not</strong> case sensitive.</p>
+<strong>Note</strong><br/><p>The display name is <strong>not</strong> case sensitive.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
-<td align="left"><p>A description of the published application, which appears as a tooltip when the user's mouse hovers over the shortcut.</p></td>
+<td align="left"><p>A description of the published application, which appears as a tooltip when the user&#39;s mouse hovers over the shortcut.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Command line</p></td>
 <td align="left"><p>The command used to run the application from within the MED-V workspace. The full path is required, and the parameters can be passed to the application in a similar fashion as in any other Windows command.</p>
-<p>In a revertible MED-V workspace, you can map a network drive with MapNetworkDrive syntax: &quot;<em>MapNetworkDrive &lt;drive&gt; &lt;path&gt;</em>&quot;—for example, &quot;<em>MapNetworkDrive t: \\tux\date</em>&quot;.</p>
-<p>For example, to publish Windows Explorer, use the following syntax: &quot;<em>c:\</em>&quot; or &quot;<em>c:\windows</em>.&quot;</p>
+<p>In a revertible MED-V workspace, you can map a network drive with MapNetworkDrive syntax: &quot;<em>MapNetworkDrive &lt;drive&gt; &lt;path&gt;</em>&quot;—for example, &quot;<em>MapNetworkDrive t: \tux\date</em>&quot;.</p>
+<p>For example, to publish Windows Explorer, use the following syntax: &quot;<em>c:&lt;/em&gt;&quot; or &quot;<em>c:\windows</em>.&quot;</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>To have a name resolution, you need to perform one of the following:</p>
+<strong>Note</strong><br/><p>To have a name resolution, you need to perform one of the following:</p>
 </div>
 <div>
- 
+
 </div>
 <ul>
 <li><p>Configure the DNS in the base MED-V workspace image.</p></li>
@@ -91,28 +92,26 @@ An application can be published in one of the following ways:
 <li><p>Use the IP for defining the network drive.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the path includes spaces, the entire path must be inside quotation marks.</p>
+<strong>Note</strong><br/><p>If the path includes spaces, the entire path must be inside quotation marks.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>The path should not end with a backslash ().</p>
+<strong>Note</strong><br/><p>The path should not end with a backslash ().</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Start menu</p></td>
-<td align="left"><p>Select this check box to create a shortcut for the application in the user's Windows Start menu.</p></td>
+<td align="left"><p>Select this check box to create a shortcut for the application in the user&#39;s Windows Start menu.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 All published applications appear as shortcuts in the Windows **Start** menu (**Start &gt;All Programs&gt; MED-V Applications**).
 
@@ -164,35 +163,34 @@ All published applications appear as shortcuts in the Windows **Start** menu (**
 </tr>
 <tr class="even">
 <td align="left"><p>Display name</p></td>
-<td align="left"><p>The name of the shortcut in the user's Windows Start menu.</p></td>
+<td align="left"><p>The name of the shortcut in the user&#39;s Windows Start menu.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
-<td align="left"><p>The description, which appears as a tooltip when the user's mouse hovers over the shortcut.</p></td>
+<td align="left"><p>The description, which appears as a tooltip when the user&#39;s mouse hovers over the shortcut.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Folder in workspace</p></td>
 <td align="left"><p>Select the folder to publish as a menu containing all the applications within the folder.</p>
 <p>The text displayed is a relative path from the Programs folder.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If left blank, all programs on the host will be published as a menu.</p>
+<strong>Note</strong><br/><p>If left blank, all programs on the host will be published as a menu.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 All published menus appear as shortcuts in the Windows **Start** menu (**Start &gt;All Programs&gt; MED-V Applications**). You can change the name of the shortcut in the **Start-menu shortcuts folder** field.
 
-**Note**  
+**Note**  
 When configuring two MED-V workspaces, it is recommended to configure a different name for the Start menu shortcuts folder.
 
- 
+
 
 ## How to Remove a Published Menu from a MED-V Workspace
 
@@ -218,10 +216,10 @@ The administrator can run published applications from any location, such as a de
 "<Install path>\Manager\KidaroCommands.exe" /run "<published application name>" "<MED-V workspace name>"
 ```
 
-**Note**  
+**Note**  
 The MED-V workspace in which the published application is defined must be running.
 
- 
+
 
 ## Related topics
 
@@ -232,9 +230,9 @@ The MED-V workspace in which the published application is defined must be runnin
 
 [Creating a MED-V Workspace](creating-a-med-v-workspacemedv-10-sp1.md)
 
- 
 
- 
+
+
 
 
 

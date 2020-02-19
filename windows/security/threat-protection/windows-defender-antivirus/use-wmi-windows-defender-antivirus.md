@@ -9,16 +9,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender Antivirus
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
 
@@ -28,7 +31,7 @@ Windows Defender Antivirus has a number of specific WMI classes that can be used
 
 The [MSDN Windows Defender WMIv2 Provider reference library](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) lists the available WMI classes for Windows Defender Antivirus, and includes example scripts.
 
-Changes made with WMI will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with WMI. 
+Changes made with WMI will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with WMI. 
 
 You can [configure which settings can be overridden locally  with local policy overrides](configure-local-policy-overrides-windows-defender-antivirus.md).
 

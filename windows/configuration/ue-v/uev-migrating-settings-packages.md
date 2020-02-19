@@ -1,12 +1,15 @@
 ---
 title: Migrating UE-V settings packages
 description: Migrating UE-V settings packages
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -39,7 +42,7 @@ Simply copying the files and folders does not preserve the security settings and
     **Note**  
     To monitor the copy progress, open MySettings.txt with a log viewer such as Trace32.
 
-     
+     
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 

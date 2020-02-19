@@ -2,7 +2,9 @@
 title: GPO\_DOMISO\_Encryption\_WS2008 (Windows 10)
 description: GPO\_DOMISO\_Encryption\_WS2008
 ms.assetid: 84375480-af6a-4c79-aafe-0a37115a7446
-author: justinha
+ms.reviewer: 
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -48,7 +50,7 @@ Change the action for every inbound firewall rule from **Allow the connection** 
 
 Make sure that the GPO that contains firewall rules for the isolated domain does not also apply to the boundary zone to prevent overlapping, and possibly conflicting rules.
 
-**Next: **[Server Isolation GPOs](server-isolation-gpos.md)
+**Next:** [Server Isolation GPOs](server-isolation-gpos.md)
 
  
 

@@ -1,13 +1,15 @@
 ---
 title: VPN profile options (Windows 10)
-description: Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect.
+description: Windows 10 adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 ms.assetid: E3F99DF9-863D-4E28-BAED-5C1B1B913523
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: shortpatti
-ms.author: pashort
+author: dulcemontemayor
+ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/17/2018
 ---
@@ -18,7 +20,7 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows 10 Mobile
 
-Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
+Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
 
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
@@ -298,7 +300,7 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Go to **Intune** > **Device Configuration** > **Properties**.
+2. Go to **Intune** > **Device Configuration** > **Profiles**.
 3. Click **Create Profile**.
 4. Enter a name and (optionally) a description.
 5. Choose **Windows 10 and later** as the platform.

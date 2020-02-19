@@ -1,12 +1,15 @@
 ---
 title: Technical Reference
 description: Technical Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: 387462c7-bb46-40b8-b4cf-ee9453972582
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

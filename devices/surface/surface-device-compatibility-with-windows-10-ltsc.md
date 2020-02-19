@@ -6,10 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: brecords
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 01/03/2018
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
+ms.reviewer: scottmca
+manager: dansimp
 ---
 
 # Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)
@@ -53,8 +57,8 @@ Before you choose to use Windows 10 Enterprise LTSC edition on Surface devices, 
 * Surface device replacements (for example, devices replaced under warranty) may contain subtle variations in hardware components that require updated device drivers and firmware. Compatibility with these updates may require the installation of a more recent version of Windows 10 Enterprise LTSC or Windows 10 Pro or Enterprise with the SAC servicing option.
 
 >[!NOTE]
->Organizations that standardize on a specific version of Windows 10 Enterprise LTSC may be unable to adopt new generations of Surface hardware without also updating to a later version of Windows 10 Enterprise LTSC or Windows 10 Pro or Enterprise. For more information, see the **How will Windows 10 LTSBs be supported?** topic in the **Supporting the latest processor and chipsets on Windows** section of [Lifecycle Policy FAQ—Windows products](https://support.microsoft.com/help/18581/lifecycle-policy-faq-windows-products#b4).
+>Organizations that standardize on a specific version of Windows 10 Enterprise LTSC may be unable to adopt new generations of Surface hardware such as Surface Pro 7, Surface Pro X, or Surface Laptop 3 without also updating to a later version of Windows 10 Enterprise LTSC or Windows 10 Pro or Enterprise. For more information, see the **How will Windows 10 LTSBs be supported?** topic in the **Supporting the latest processor and chipsets on Windows** section of [Lifecycle Policy FAQ—Windows products](https://support.microsoft.com/help/18581/lifecycle-policy-faq-windows-products#b4).
 
 Surface devices running Windows 10 Enterprise LTSC edition will not receive new features. In many cases these features are requested by customers to improve the usability and capabilities of Surface hardware. For example, new improvements for High DPI applications in Windows 10, version 1703. Customers that use Surface devices in the LTSC configuration will not see the improvements until they either update to a new Windows 10 Enterprise LTSC release or upgrade to a version of Windows 10 with support for the SAC servicing option.
 
-Devices can be changed from Windows 10 Enterprise LTSC to a more recent version of Windows 10 Enterprise, with support for the SAC servicing option, without the loss of user data by performing an upgrade installation. You can also perform an upgrade installation on multiple devices by leveraging the Upgrade Task Sequence Templates available in the Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager. For more information, see [Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/upgrade-surface-devices-to-windows-10-with-mdt).
+Devices can be changed from Windows 10 Enterprise LTSC to a more recent version of Windows 10 Enterprise, with support for the SAC servicing option, without the loss of user data by performing an upgrade installation. You can also perform an upgrade installation on multiple devices by leveraging the Upgrade Task Sequence Templates available in the Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. For more information, see [Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/upgrade-surface-devices-to-windows-10-with-mdt).

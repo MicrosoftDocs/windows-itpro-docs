@@ -1,12 +1,15 @@
 ---
 title: App-V 4.6 SP1 Release Notes
 description: App-V 4.6 SP1 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: aeb6784a-864a-4f4e-976b-40c34dcfd8d6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -19,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Microsoft Application Virtualization (App-V) Management System. These Release Notes contain information that helps you successfully install Application Virtualization (App-V) 4.6 SP1. This document contains information that is not available in the product documentation. If there is a difference between these Release Notes and other App-V documentation, the latest change should be considered authoritative.
 
- 
+ 
 
 ## Protect Against Security Vulnerabilities and Viruses
 
@@ -95,9 +98,9 @@ Microsoft, Active Directory, ActiveSync, ActiveX, Excel, SQL Server, Windows, Wi
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

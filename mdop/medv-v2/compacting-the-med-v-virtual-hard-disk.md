@@ -1,12 +1,15 @@
 ---
 title: Compacting the MED-V Virtual Hard Disk
 description: Compacting the MED-V Virtual Hard Disk
-author: jamiejdt
+author: dansimp
 ms.assetid: 5e6122d1-9847-4b33-adab-594919eec3c5
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Although it is optional, you can compact the virtual hard disk (VHD) to reclaim 
 **Important**  
 Before you proceed, create a backup copy of your Windows XP image.
 
- 
+ 
 
 **Preparing the Virtual Hard Disk**
 
@@ -110,9 +113,9 @@ Create a backup copy of your compacted virtual hard disk.
 
 [Technical Reference for MED-V](technical-reference-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

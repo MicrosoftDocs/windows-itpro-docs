@@ -1,12 +1,15 @@
 ---
 title: How to Manage Virtual Applications Using the Command Line
 description: How to Manage Virtual Applications Using the Command Line
-author: jamiejdt
+author: dansimp
 ms.assetid: 9394f34d-2b1e-4ea7-bf6f-1f56101ab4de
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

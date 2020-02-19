@@ -1,14 +1,17 @@
 ---
-title: Create an application to deploy with Windows 10 using Configuration Manager (Windows 10)
-description: Microsoft System Center 2012 R2 Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
+title: Create an app to deploy with Windows 10 using Configuration Manager
+description: Microsoft Microsoft Endpoint Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, task sequence, custom, customize
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -20,14 +23,14 @@ ms.topic: article
 -   Windows 10 versions 1507, 1511
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for  Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
-Microsoft System Center 2012 R2 Configuration Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in System Center 2012 R2 Configuration Manager that you later configure the task sequence to use.
+Microsoft Endpoint Configuration Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in Microsoft Endpoint Configuration Manager that you later configure the task sequence to use.
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
->[!NOTE]  
+>[!NOTE]
 >Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
 
 ## Example: Create the Adobe Reader XI application
@@ -95,9 +98,9 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
- 
+ 
 
- 
+ 
 
 
 

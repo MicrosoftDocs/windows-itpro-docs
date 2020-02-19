@@ -2,12 +2,14 @@
 title: Account Lockout Policy (Windows 10)
 description: Describes the Account Lockout Policy settings and links to information about each policy setting.
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,9 +38,9 @@ The following topics provide a discussion of each policy setting's implementatio
 | [Account lockout threshold](account-lockout-threshold.md) | Describes the best practices, location, values, and security considerations for the **Account lockout threshold** security policy setting. |
 | [Account lockout duration](account-lockout-duration.md) | Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting. |
 | [Reset account lockout counter after](reset-account-lockout-counter-after.md) | Describes the best practices, location, values, and security considerations for the **Reset account lockout counter after** security policy setting. |
- 
+ 
 ## Related topics
 
 [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
- 
+ 
+ 

@@ -1,12 +1,15 @@
 ---
 title: Using UE-V with Application Virtualization applications
 description: Using UE-V with Application Virtualization applications
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -34,7 +37,7 @@ UE-V monitors when an application opens by the program name and, optionally, by 
     **Note**  
     If you publish the newly created template to the settings template catalog, the client does not receive the template until the sync provider updates the settings. To manually start this process, open **Task Scheduler**, expand **Task Scheduler Library**, expand **Microsoft**, and expand **UE-V**. In the results pane, right-click **Template Auto Update**, and then click **Run**.
 
-     
+     
 
 4.  Start the App-V package.
 
@@ -48,9 +51,9 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
 [Administering UE-V](uev-administering-uev.md)
 
- 
+ 
 
- 
+ 
 
 
 

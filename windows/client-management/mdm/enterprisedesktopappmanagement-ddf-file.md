@@ -2,11 +2,13 @@
 title: EnterpriseDesktopAppManagement DDF
 description: This topic shows the OMA DM device description framework (DDF) for the EnterpriseDesktopAppManagement configuration service provider.
 ms.assetid: EF448602-65AC-4D59-A0E8-779876542FE3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
 
 DDF files are used only with OMA DM provisioning XML.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

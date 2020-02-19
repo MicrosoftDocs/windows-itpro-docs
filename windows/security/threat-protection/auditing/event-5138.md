@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5138(S): A directory service object was undeleted.
@@ -65,7 +68,6 @@ This event only generates if the container to which the Active Directory object 
  <Data Name="ObjectClass">user</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -109,15 +111,15 @@ This event only generates if the container to which the Active Directory object 
 -   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx) folder, in case if it was restored from it.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 -   **New DN** \[Type = UnicodeString\]: New distinguished name of undeleted object. The Active Directory container to which the object was restored.

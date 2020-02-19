@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4964(S): Special groups have been assigned to a new logon.
@@ -23,7 +26,7 @@ ms.date: 04/19/2017
 
 ***Event Description:***
 
-This event occurs when an account that is a member of any defined [Special Group](http://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx) logs in.
+This event occurs when an account that is a member of any defined [Special Group](https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx) logs in.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -91,7 +94,7 @@ This event occurs when an account that is a member of any defined [Special Group
 
 &gt; S-1-5-32-544;S-1-5-32-123-54-65
 
-&gt; For more information see: <http://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
+&gt; For more information see: <https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
 
 ***Field Descriptions:***
 

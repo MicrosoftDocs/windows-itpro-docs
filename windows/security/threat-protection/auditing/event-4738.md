@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4738(S): A user account was changed.
@@ -193,7 +196,7 @@ Typical **Primary Group** values for user accounts:
 
 -   **New UAC Value** \[Type = UnicodeString\]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user account. If the value of **userAccountControl** attribute of user object was changed, you will see the new value here.
 
-To decode this value, you can go through the property value definitions in the “Table 7. User’s or Computer’s account UAC flags.” from largest to smallest. Compare each property value to the flags value in the event. If the flags value in the event is greater than or equal to the property value, then the property is "set" and applies to that event. Subtract the property value from the flags value in the event and note that the flag applies and then go on to the next flag.
+To decode this value, you can go through the property value definitions in the [User’s or Computer’s account UAC flags.](https://support.microsoft.com/help/305144/how-to-use-useraccountcontrol-to-manipulate-user-account-properties) from largest to smallest. Compare each property value to the flags value in the event. If the flags value in the event is greater than or equal to the property value, then the property is "set" and applies to that event. Subtract the property value from the flags value in the event and note that the flag applies and then go on to the next flag.
 
 Here's an example: Flags value from event: 0x15
 
@@ -223,7 +226,7 @@ Decoding:
 
 So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
--   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: “Table 7. User’s or Computer’s account UAC flags.”. In the “User Account Control field text” column, you can see the text that will be displayed in the **User Account Control** field in 4738 event.
+-   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: [User’s or Computer’s account UAC flags](https://support.microsoft.com/help/305144/how-to-use-useraccountcontrol-to-manipulate-user-account-properties). In the “User Account Control field text” column, you can see the text that will be displayed in the **User Account Control** field in 4738 event.
 
 -   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of user’s account properties, then you will see **&lt;value changed, but not displayed&gt;** in this field. For local accounts, this field is not applicable and always has “&lt;value not set&gt;“ value.
 
@@ -263,7 +266,7 @@ For 4738(S): A user account was changed.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Display Name**<br>**User Principal Name**<br>**Home Directory**<br>**Home Drive**<br>**Script Path**<br>**Profile Path**<br>**User Workstations**<br>**Password Last Set**<br>**Account Expires**<br>**Primary Group ID<br>Logon Hours** | We recommend monitoring all changes for these fields for critical domain and local accounts.                                                                                    |
 | **Primary Group ID** is not 513                                                                                                                                                                                                                                                                        | Typically, the **Primary Group** value is 513 for domain and local users. Other values should be monitored.                                                                     |
-| For user accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt; **                                                                                                                                            | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on user accounts that previously had a services list (on the **Delegation** tab), it means the list was cleared. |
+| For user accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt;**                                                                                                                                            | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on user accounts that previously had a services list (on the **Delegation** tab), it means the list was cleared. |
 | **SID History** is not -                                                                                                                                                                                                                                                                               | This field will always be set to - unless the account was migrated from another domain.                                                                                         |
 
 -   Consider whether to track the following user account control flags:

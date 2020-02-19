@@ -1,12 +1,15 @@
 ---
 title: MED-V Client Operations
 description: MED-V Client Operations
-author: jamiejdt
+author: dansimp
 ms.assetid: 4a5fffd2-f3f4-4e86-8529-e1386ba46c9a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

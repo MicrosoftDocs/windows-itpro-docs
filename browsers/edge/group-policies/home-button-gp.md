@@ -1,10 +1,12 @@
 ---
 title: Microsoft Edge - Home button group policies
 description: Microsoft Edge shows the home button, by default, and by clicking it the Start page loads. With the relevant Home button policies, you can configure the Home button to load the New tab page or a specific page. You can also configure Microsoft Edge to hide the home button.
-manager: dougkim
-ms.author: pashort
-author: shortpatti
+audience: itpro
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -13,6 +15,9 @@ ms.topic: reference
 ---
 
 # Home button 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 Microsoft Edge shows the home button, by default, and by clicking it the Start page loads. With the relevant Home button policies, you can configure the Home button to load the New tab page or a specific page. You can also configure Microsoft Edge to hide the home button. 
 

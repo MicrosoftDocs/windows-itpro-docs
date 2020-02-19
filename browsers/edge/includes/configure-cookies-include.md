@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure cookies -->
@@ -14,11 +16,12 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Enabled |0 |0 |Block all cookies from all sites. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Block only coddies from third party websites. | |
-|Disabled or not configured<br>**(default)** |2 |2 |Allow all cookies from all sites. | |
+|                Group Policy                 | MDM | Registry |                  Description                  |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|-----------------------------------------------|:------------------------------------------------:|
+|                   Enabled                   |  0  |    0     |       Block all cookies from all sites.       | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     | Block only cookies from third party websites. |                                                  |
+| Disabled or not configured<br>**(default)** |  2  |    2     |       Allow all cookies from all sites.       |                                                  |
+
 ---
 
 ### ADMX info and settings

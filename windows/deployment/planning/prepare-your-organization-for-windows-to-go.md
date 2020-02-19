@@ -2,13 +2,16 @@
 title: Prepare your organization for Windows To Go (Windows 10)
 description: Prepare your organization for Windows To Go
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: ["mobile, device, USB, deploy"]
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
-author: mtniehaus
-ms.date: 04/19/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -18,6 +21,9 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
+
+>[!IMPORTANT]
+>Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the “what”, “why”, and “when” questions an IT professional might have when planning to deploy Windows To Go.
 
@@ -29,13 +35,9 @@ Windows To Go is a feature of Windows 10 Enterprise and Windows 10 Education t
 Enterprise customers utilizing Volume Activation Windows licensing will be able to deploy USB drives provisioned with Windows To Go workspace. These drives will be bootable on multiple compatible host computers. Compatible host computers are computers that are:
 
 -   USB boot capable
-
 -   Have USB boot enabled in the firmware
-
 -   Meet Windows 7 minimum system requirements
-
 -   Have compatible processor architectures (for example, x86 or AMD64) as the image used to create the Windows To Go workspace. ARM is not a supported processor for Windows To Go.
-
 -   Have firmware architecture that is compatible with the architecture of the image used for the Windows To Go workspace
 
 Booting a Windows To Go workspace requires no specific software on the host computer. PCs certified for Windows 7 and later can host Windows To Go.
@@ -53,14 +55,14 @@ The following scenarios are examples of situations in which Windows To Go worksp
 
 -   **Managed free seating.** The employee is issued a Windows To Go drive that is then used with the host computer assigned to that employee for a given session (this could be a vehicle, workspace, or standalone laptop). When the employee leaves the session, the next time they return they use the same USB flash drive but use a different host computer.
 
--   **Work from home.** In this situation, the Windows To Go drive can be provisioned for employees using various methods including System Center Configuration Manager or other deployment tools and then distributed to employees. The employee is instructed to boot the Windows To Go drive initially at work, which caches the employee’s credentials on the Windows To Go workspace and allows the initial data synchronization between the enterprise network and the Windows To Go workspace. The user can then bring the Windows To Go drive home where it can be used with their home computer, with or without enterprise network connectivity.
+-   **Work from home.** In this situation, the Windows To Go drive can be provisioned for employees using various methods including Microsoft Endpoint Configuration Manager or other deployment tools and then distributed to employees. The employee is instructed to boot the Windows To Go drive initially at work, which caches the employee’s credentials on the Windows To Go workspace and allows the initial data synchronization between the enterprise network and the Windows To Go workspace. The user can then bring the Windows To Go drive home where it can be used with their home computer, with or without enterprise network connectivity.
 
 -   **Travel lightly.** In this situation you have employees who are moving from site to site, but who always will have access to a compatible host computer on site. Using Windows To Go workspaces allows them to travel without the need to pack their PC.
 
-**Note**  
-If the employee wants to work offline for the majority of the time, but still maintain the ability to use the drive on the enterprise network, they should be informed of how often the Windows To Go workspace needs to be connected to the enterprise network. Doing so will ensure that the drive retains its access privileges and the workspace’s computer object is not potentially deleted from Active Directory Domain Services (AD DS).
+> [!NOTE]
+> If the employee wants to work offline for the majority of the time, but still maintain the ability to use the drive on the enterprise network, they should be informed of how often the Windows To Go workspace needs to be connected to the enterprise network. Doing so will ensure that the drive retains its access privileges and the workspace’s computer object is not potentially deleted from Active Directory Domain Services (AD DS).
 
- 
+ 
 
 ## Infrastructure considerations
 
@@ -76,10 +78,10 @@ Microsoft software, such as Microsoft Office, distributed to a Windows To Go wor
 
 You should investigate other software manufacturer’s licensing requirements to ensure they are compatible with roaming usage before deploying them to a Windows To Go workspace.
 
-**Note**  
-Using Multiple Activation Key (MAK) activation is not a supported activation method for Windows To Go as each different PC-host would require separate activation. MAK activation should not be used for activating Windows, Office, or any other application on a Windows To Go drive.
+> [!NOTE]
+> Using Multiple Activation Key (MAK) activation is not a supported activation method for Windows To Go as each different PC-host would require separate activation. MAK activation should not be used for activating Windows, Office, or any other application on a Windows To Go drive.
 
- 
+ 
 
 See [Plan for Volume Activation](https://go.microsoft.com/fwlink/p/?LinkId=618923) for more information about these activation methods and how they can be used in your organization.
 
@@ -120,9 +122,9 @@ If you want Windows To Go to be able to connect back to organizational resources
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

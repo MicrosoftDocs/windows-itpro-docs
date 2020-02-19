@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2017
+ms.reviewer: 
 ---
 
 # Windows 10 diagnostic data for the Full diagnostic data level
@@ -20,7 +21,7 @@ ms.date: 11/28/2017
 **Applies to:**
 - Windows 10, version 1703
 
-Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full diagnostic data level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md).
+Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full diagnostic data level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 Basic level diagnostic events and fields](https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703).
 
 The data covered in this article is grouped into the following categories:
 
@@ -32,7 +33,7 @@ The data covered in this article is grouped into the following categories:
 -   Browsing History data
 -   Inking, Typing, and Speech Utterance data
 
-> [!NOTE]  
+> [!NOTE]
 > The majority of diagnostic data falls into the first four categories.
 
 ## Common data

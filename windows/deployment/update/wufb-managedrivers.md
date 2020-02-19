@@ -3,11 +3,15 @@ title: Managing drivers, dual-managed environments, and Delivery Optimization wi
 description: Learn how to manage drivers, dual managed environments, and bandwidth (Delivery Optimization) with GPOs in Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: lizap
-ms.localizationpriority: medium
-ms.author: elizapo
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.date: 06/21/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 # Managing drivers, dual-managed environments, and Delivery Optimization with group policies
@@ -37,7 +41,7 @@ You can use an on-premises catalog, like WSUS, to deploy 3rd Party patches and u
 
 |Policy| Description |
 |-|-|
-|Specify Intranet Microsoft Update Service Location| Used for WSUS/System Center Configuration Manager customers who want to install custom packages that are not offered through Windows Update.|
+|Specify Intranet Microsoft Update Service Location| Used for WSUS/Microsoft Endpoint Configuration Manager customers who want to install custom packages that are not offered through Windows Update.|
 
 ### Suggested configuration 
 

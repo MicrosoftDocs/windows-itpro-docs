@@ -1,12 +1,15 @@
 ---
 title: About Virtual Environments
 description: About Virtual Environments
-author: jamiejdt
+author: dansimp
 ms.assetid: e03a8c72-56c1-4ae9-aa45-0283c50a154c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

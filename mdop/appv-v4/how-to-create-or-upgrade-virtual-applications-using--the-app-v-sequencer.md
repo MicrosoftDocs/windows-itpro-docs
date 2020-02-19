@@ -1,12 +1,15 @@
 ---
 title: How to Create or Upgrade Virtual Applications Using the App-V Sequencer
 description: How to Create or Upgrade Virtual Applications Using the App-V Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: 661d4f8c-2527-4654-9d92-15ecc652c0db
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

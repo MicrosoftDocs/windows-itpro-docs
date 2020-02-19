@@ -1,11 +1,13 @@
 ---
 title: Change history for Surface Hub
+ms.reviewer: 
+manager: dansimp
 description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -20,7 +22,7 @@ New or changed topic | Description
 --- | ---
 [Surface Hub Site Readiness Guide](surface-hub-site-readiness-guide.md) | New; previously available for download only
 [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md) | New; previously available for download and on [Surface Hub Tech Spec](https://support.microsoft.com/help/4483539/surface-hub-tech-spec)
-[Technical information for 84” Microsoft Surface Hub ](surface-hub-technical-84.md) | New; previously available for download and on [Surface Hub Tech Spec](https://support.microsoft.com/help/4483539/surface-hub-tech-spec)
+[Technical information for 84” Microsoft Surface Hub](surface-hub-technical-84.md) | New; previously available for download and on [Surface Hub Tech Spec](https://support.microsoft.com/help/4483539/surface-hub-tech-spec)
 [Surface Hub SSD replacement](surface-hub-ssd-replacement.md) | New; previously available for download only
 [Implement Quality of Service on Surface Hub](surface-hub-qos.md) | New
 

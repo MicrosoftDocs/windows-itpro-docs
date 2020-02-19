@@ -1,12 +1,15 @@
 ---
 title: Identify the Number of MED-V Instances
 description: Identify the Number of MED-V Instances
-author: jamiejdt
+author: dansimp
 ms.assetid: edea9bdf-a28c-4d24-9298-7bd6536c3a94
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

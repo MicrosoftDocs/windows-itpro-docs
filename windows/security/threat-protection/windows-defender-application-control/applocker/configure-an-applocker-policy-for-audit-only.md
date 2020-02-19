@@ -2,12 +2,14 @@
 title: Configure an AppLocker policy for audit only (Windows 10)
 description: This topic for IT professionals describes how to set AppLocker policies to Audit only within your IT environment by using AppLocker.
 ms.assetid: 10bc87d5-cc7f-4500-b7b3-9006e50afa50
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 06/08/2018
 # Configure an AppLocker policy for audit only
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes how to set AppLocker policies to **Audit only** within your IT environment by using AppLocker.
 

@@ -1,8 +1,11 @@
 ---
 title: How to Make a Connection Group Ignore the Package Version
 description: How to Make a Connection Group Ignore the Package Version
-author: jamiejdt
+author: dansimp
 ms.assetid: 6ebc1bff-d190-4f4c-a6da-e09a4cca7874
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -58,7 +61,7 @@ To upgrade a package in earlier versions of App-V, you had to perform several st
 <li><p>Click <strong>EDIT</strong> in the CONNECTED PACKAGES pane.</p></li>
 <li><p>Select <strong>Use Any Version</strong> check box next to the package name, and click <strong>Apply</strong>.</p></li>
 </ol>
-<p>For more about adding or upgrading packages, see [How to Add or Upgrade Packages by Using the Management Console](how-to-add-or-upgrade-packages-by-using-the-management-console-beta-gb18030.md).</p></td>
+<p>For more about adding or upgrading packages, see <a href="how-to-add-or-upgrade-packages-by-using-the-management-console-beta-gb18030.md" data-raw-source="[How to Add or Upgrade Packages by Using the Management Console](how-to-add-or-upgrade-packages-by-using-the-management-console-beta-gb18030.md)">How to Add or Upgrade Packages by Using the Management Console</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V Client on a Stand-alone computer</p></td>
@@ -76,8 +79,8 @@ To upgrade a package in earlier versions of App-V, you had to perform several st
 </ol>
 <p>For more information, see:</p>
 <ul>
-<li><p>The example XML file, <strong>Connection group XML file with optional packages</strong>, in this section: [How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)</p></li>
-<li><p>[How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md)</p></li>
+<li><p>The example XML file, <strong>Connection group XML file with optional packages</strong>, in this section: <a href="how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional" data-raw-source="[How to Use Optional Packages in Connection Groups](how-to-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)">How to Use Optional Packages in Connection Groups</a></p></li>
+<li><p><a href="how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md" data-raw-source="[How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md)">How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -87,7 +90,7 @@ To upgrade a package in earlier versions of App-V, you had to perform several st
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -99,9 +102,9 @@ To upgrade a package in earlier versions of App-V, you had to perform several st
 
 [Managing Connection Groups](managing-connection-groups.md)
 
- 
+ 
 
- 
+ 
 
 
 

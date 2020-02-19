@@ -30,15 +30,16 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-deploy",
-                          "folder_relative_path_in_docset": "./"
-			}
-		}
-	},
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-deploy",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-deploy"
+    "dest": "windows-deploy",
+    "markdownEngineName": "markdig"
   }
 }

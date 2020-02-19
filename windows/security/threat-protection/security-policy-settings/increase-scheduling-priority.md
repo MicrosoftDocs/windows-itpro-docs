@@ -2,23 +2,25 @@
 title: Increase scheduling priority (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase scheduling priority security policy setting.
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/13/2017
+ms.date: 2/6/2020
 ---
 
 # Increase scheduling priority
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Increase scheduling priority** security policy setting.
 
@@ -43,7 +45,7 @@ Constant: SeIncreaseBasePriorityPrivilege
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -73,11 +75,16 @@ A user who is assigned this user right could increase the scheduling priority of
 
 ### Countermeasure
 
-Verify that only Administrators and Window Manager/Window Manager Group have the **Increase scheduling priority** user right assigned to them.
+Verify that only Administrators and Window Manager\Window Manager Group have the **Increase scheduling priority** user right assigned to them.
 
 ### Potential impact
 
-None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager/Window Manager Group is the default configuration.
+None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager\Window Manager Group is the default configuration.
+
+> [!Warning]  
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
+>  
+> On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 
 ## Related topics
 

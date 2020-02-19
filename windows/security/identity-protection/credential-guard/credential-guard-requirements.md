@@ -1,18 +1,19 @@
 ---
 title: Windows Defender Credential Guard Requirements (Windows 10)
-description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security associated with available hardware and firmware options.
+description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 01/12/2018
+ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Requirements
@@ -30,7 +31,7 @@ For Windows Defender Credential Guard to provide protection, the computers you a
 To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Windows Defender Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
-- TPM 1.2 or 2.0, either discrete or firmware (preferred - provides binding to hardware)
+- TPM 1.2 or 2.0 (preferred - provides binding to hardware), either discrete or firmware 
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
 The Virtualization-based security requires:
@@ -47,9 +48,9 @@ Credential Guard can protect secrets in a Hyper-V virtual machine, just as it wo
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and be running at least Windows Server 2016 or Windows 10.
 
-For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/)
+For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/).
 
-For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements)
+For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements).
 
 ## Application requirements
 
@@ -77,9 +78,6 @@ Applications may cause performance issues when they attempt to hook the isolated
 
 Services or protocols that rely on Kerberos, such as file shares, remote desktop, or BranchCache, continue to work and are not affected by Windows Defender Credential Guard.
 
-See this video: [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-
-
 ## Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard.
@@ -87,8 +85,9 @@ Computers that meet additional qualifications can provide additional protections
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]
-> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
-> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
+> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers.
+> 
+> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
 
 ### Baseline protections
 
@@ -107,11 +106,11 @@ The following tables describe baseline protections, plus protections for improve
 
 ### 2015 Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016 Technical Preview 4
 
-| Protections for Improved Security          | Description                                        |
-|---------------------------------------------|----------------------------------------------------|
-| Hardware: **IOMMU** (input/output memory management unit)  |  **Requirement**: VT-D or AMD Vi IOMMU **Security benefits**: An IOMMU can enhance system resiliency against memory attacks. For more information, see [ACPI description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables). |
-| Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>• BIOS password or stronger authentication must be supported.<br>• In the BIOS configuration, BIOS authentication must be set.<br>• There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>• In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. | **Security benefits**:<br>• BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>• Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
-| Firmware: **Secure MOR, revision 2 implementation**  |  **Requirement**: Secure MOR, revision 2 implementation | **Security benefits**: A secure MOR bit prevents advanced memory attacks. For more information, see [Secure MOR implementation](https://msdn.microsoft.com/windows/hardware/drivers/bringup/device-guard-requirements). |
+|             Protections for Improved Security             |                                                                                                                                                                                                                                                                                                               Description                                                                                                                                                                                                                                                                                                                |
+|-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hardware: **IOMMU** (input/output memory management unit) |                                                                                                                                                                               **Requirement**: VT-D or AMD Vi IOMMU **Security benefits**: An IOMMU can enhance system resiliency against memory attacks. For more information, see [ACPI description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables).                                                                                                                                                                               |
+| Firmware: **Securing Boot Configuration and Management**  | **Requirements**:<br>• BIOS password or stronger authentication must be supported.<br>• In the BIOS configuration, BIOS authentication must be set.<br>• There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>• In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. |
+|    Firmware: **Secure MOR, revision 2 implementation**    |                                                                                                                                                                                                                                                                                          **Requirement**: Secure MOR, revision 2 implementation                                                                                                                                                                                                                                                                                          |
 
 <br>
 

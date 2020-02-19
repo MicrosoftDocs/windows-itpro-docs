@@ -1,12 +1,15 @@
 ---
 title: How to Configure Web Settings for a MED-V Workspace
 description: How to Configure Web Settings for a MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: 9a6cd28f-7e4f-468f-830a-7b1d9abd3af3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -18,10 +21,10 @@ Web sites that can only be displayed in older versions of Internet Explorer and 
 
 The following procedures describe how you can set a list of Web browsing rules for a MED-V workspace. All sites included in the rules can be browsed either in the MED-V workspace or on the host, as defined by the administrator. All sites not defined within the rules are browsed from the environment in which they were requested. However, you can configure them as a group as well, to be browsed in the MED-V workspace or the host.
 
-**Note**  
+**Note**  
 Web settings are applied only to Internet Explorer and to no other browsers.
 
- 
+
 
 All Web settings are configured in the **Policy** module, on the **Web** tab.
 
@@ -84,7 +87,7 @@ All Web settings are configured in the **Policy** module, on the **Web** tab.
 <td align="left"><ul>
 <li><p><strong>Domain suffix</strong>—Access to any host address ending with the suffix specified in the <strong>Value</strong> property and is set according to the option set in <strong>Web Browsing</strong>.</p></li>
 <li><p><strong>IP Prefix</strong>—Access to any full or partial IP address in the range of the prefix specified in the <strong>Value</strong> property and is set according to the option set in <strong>Web Browsing</strong>.</p></li>
-<li><p><strong>All Local Addresses</strong>—Access to all addresses without a '.' and is set according to the option set in <strong>Web Browsing</strong>.</p></li>
+<li><p><strong>All Local Addresses</strong>—Access to all addresses without a &#39;.&#39; and is set according to the option set in <strong>Web Browsing</strong>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -92,14 +95,13 @@ All Web settings are configured in the **Policy** module, on the **Web** tab.
 <td align="left"><ul>
 <li><p>If <strong>Domain suffix</strong> is selected in the <strong>Type</strong> property, enter a domain suffix.</p>
 <div class="alert">
-<strong>Note</strong>  
-<ul>
+<strong>Note</strong><br/><ul>
 <li><p>Do not enter &quot;*&quot; before the suffix.</p></li>
 <li><p>Domain suffixes support aliases as well.</p></li>
 </ul>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>If IP Prefix is selected in the <strong>Type</strong> property, enter a full or partial IP address.</p></li>
 </ul></td>
@@ -107,7 +109,7 @@ All Web settings are configured in the **Policy** module, on the **Web** tab.
 </tbody>
 </table>
 
- 
+
 
 ## How to Delete a Web Rule
 
@@ -127,9 +129,9 @@ All Web settings are configured in the **Policy** module, on the **Web** tab.
 
 [Creating a MED-V Workspace](creating-a-med-v-workspacemedv-10-sp1.md)
 
- 
 
- 
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender Antivirus features
-description: You can configure Windows Defender Antivirus features with Intune, System Center Configuration Manager, Group Policy, and PowerShell.
-keywords: Windows Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, System Center Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
+description: You can configure Windows Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
+keywords: Windows Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -9,21 +9,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Windows Defender Antivirus features
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can configure Windows Defender Antivirus with a number of tools, including:
 
 - Microsoft Intune
-- System Center Configuration Manager
+- Microsoft Endpoint Configuration Manager
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)
@@ -36,7 +39,7 @@ The following broad categories of features can be configured:
 
 The topics in this section describe how to perform key tasks when configuring Windows Defender Antivirus. Each topic includes instructions for the applicable configuration tool (or tools).
 
-You can also review the [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md) topic for an overview of each tool and links to further help.
+You can also review the [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md) topic for an overview of each tool and links to further help. 
 
 ## In this section
 Topic | Description

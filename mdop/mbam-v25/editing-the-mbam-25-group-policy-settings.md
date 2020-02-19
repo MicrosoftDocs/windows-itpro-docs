@@ -1,8 +1,11 @@
 ---
 title: Editing the MBAM 2.5 Group Policy Settings
 description: Editing the MBAM 2.5 Group Policy Settings
-author: jamiejdt
+author: dansimp
 ms.assetid: a50b6b0c-6818-4419-8447-d0520a533dba
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -30,11 +33,11 @@ To successfully deploy Microsoft BitLocker Administration and Monitoring (MBAM),
 <tbody>
 <tr class="odd">
 <td align="left"><p>Copy the MBAM 2.5 Group Policy Templates.</p></td>
-<td align="left"><p>[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)</p></td>
+<td align="left"><p><a href="copying-the-mbam-25-group-policy-templates.md" data-raw-source="[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)">Copying the MBAM 2.5 Group Policy Templates</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Determine which Group Policy Objects (GPOs) you want to use in your MBAM implementation. Based on the needs of your organization, you might have to configure additional Group Policy settings.</p></td>
-<td align="left"><p>[Planning for MBAM 2.5 Group Policy Requirements](planning-for-mbam-25-group-policy-requirements.md) – contains descriptions of the GPOs</p></td>
+<td align="left"><p><a href="planning-for-mbam-25-group-policy-requirements.md" data-raw-source="[Planning for MBAM 2.5 Group Policy Requirements](planning-for-mbam-25-group-policy-requirements.md)">Planning for MBAM 2.5 Group Policy Requirements</a> – contains descriptions of the GPOs</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Set the Group Policy settings for your organization.</p></td>
@@ -43,12 +46,12 @@ To successfully deploy Microsoft BitLocker Administration and Monitoring (MBAM),
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 Do not change the Group Policy settings in the **BitLocker Drive Encryption** node, or MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the **BitLocker Drive Encryption** settings for you.
 
- 
+ 
 
 **To edit MBAM Client Group Policy settings**
 
@@ -89,7 +92,7 @@ Do not change the Group Policy settings in the **BitLocker Drive Encryption** no
     </tbody>
     </table>
 
-     
+     
 
 ## Related topics
 
@@ -98,11 +101,11 @@ Do not change the Group Policy settings in the **BitLocker Drive Encryption** no
 
 [Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: About Application Virtualization Applications
 description: About Application Virtualization Applications
-author: jamiejdt
+author: dansimp
 ms.assetid: 3bf833b7-d172-4eef-a9e8-4b4f0c7eb15b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

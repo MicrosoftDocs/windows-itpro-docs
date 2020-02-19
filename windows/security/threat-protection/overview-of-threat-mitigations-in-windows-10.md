@@ -1,13 +1,16 @@
-﻿---
+---
 title: Mitigate threats by using Windows 10 security features (Windows 10)
-description: This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. 
+description: An overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dulcemontemayor
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Mitigate threats by using Windows 10 security features
@@ -81,7 +84,7 @@ As an IT professional, you can ask application developers and software vendors t
 
 Windows Defender SmartScreen notifies users if they click on reported phishing and malware websites, and helps protect them against unsafe downloads or make informed decisions about downloads.
 
-For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
+For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows Windows Defender SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, Windows Defender SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, Windows Defender SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
 For more information, see [Windows Defender SmartScreen overview](windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
@@ -103,7 +106,7 @@ Windows Defender Antivirus in Windows 10 uses a multi-pronged approach to improv
 
 For more information, see [Windows Defender in Windows 10](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) and [Windows Defender Overview for Windows Server](https://technet.microsoft.com/windows-server-docs/security/windows-defender/windows-defender-overview-windows-server).
 
-For information about Windows Defender Advanced Threat Protection, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp) (resources) and [Windows Defender Advanced Threat Protection (ATP)](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-advanced-threat-protection) (documentation).
+For information about Microsoft Defender Advanced Threat Protection, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
 
 ### Data Execution Prevention
 
@@ -189,7 +192,7 @@ Control Flow Guard (CFG) is a mitigation that does not need configuration within
 | **Heap protections**<br>help prevent<br>exploitation of the heap | Windows 10 includes protections for the heap, such as the use of internal data structures which help protect against corruption of memory used by the heap.<br><br>**More information**: [Windows heap protections](#windows-heap-protections), later in this topic. |
 | **Kernel pool protections**<br>help prevent<br>exploitation of pool memory<br>used by the kernel | Windows 10 includes protections for the pool of memory used by the kernel. For example, safe unlinking protects against pool overruns that are combined with unlinking operations that can be used to create an attack.<br><br>**More information**: [Kernel pool protections](#kernel-pool-protections), later in this topic. |
 | **Control Flow Guard**<br>helps mitigate exploits<br>that are based on<br>flow between code locations<br>in memory | Control Flow Guard (CFG) is a mitigation that requires no configuration within the operating system, but instead is built into software when it’s compiled. It is built into Microsoft Edge, IE11, and other areas in Windows 10. CFG can be built into applications written in C or C++, or applications compiled using Visual Studio 2015.<br>For such an application, CFG can detect an attacker’s attempt to change the intended flow of code. If this occurs, CFG terminates the application. You can request software vendors to deliver Windows applications compiled with CFG enabled.<br><br>**More information**: [Control Flow Guard](#control-flow-guard), later in this topic. |
-| **Protections built into Microsoft Edge** (the browser)<br>helps mitigate multiple<br>threats | Windows 10 includes an entirely new browser, Microsoft Edge, designed with multiple security improvements.<br><br>**More information**: [Microsoft Edge and Internet Explorer 11](#microsoft-edge-and-internet-explorer-11), later in this topic. |
+| **Protections built into Microsoft Edge** (the browser)<br>helps mitigate multiple<br>threats | Windows 10 includes an entirely new browser, Microsoft Edge, designed with multiple security improvements.<br><br>**More information**: [Microsoft Edge and Internet Explorer 11](#microsoft-edge-and-internet-explorer11), later in this topic. |
 
 ### SMB hardening improvements for SYSVOL and NETLOGON shares
 
@@ -442,15 +445,15 @@ Examples:
 
 #### EMET-related products
 
-Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md) (ATP).
+Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Microsoft Defender Advanced Threat Protection](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (ATP).
 
 ## Related topics
 
 - [Security and Assurance in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/security/security-and-assurance)
-- [Windows Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
-- [Windows Defender Advanced Threat Protection (ATP) - documentation](windows-defender-atp/windows-defender-advanced-threat-protection.md)
+- [Microsoft Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+- [Microsoft Defender Advanced Threat Protection (ATP) - documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Exchange Online Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)
 - [Office 365 Advanced Threat Protection](https://products.office.com/en-us/exchange/online-email-threat-protection)
-- [Microsoft Malware Protection Center](https://www.microsoft.com/en-us/security/portal/mmpc/default.aspx)
+- [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/mmpc/default.aspx)
 
 

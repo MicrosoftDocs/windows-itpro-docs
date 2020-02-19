@@ -1,12 +1,15 @@
 ---
 title: How to Exit the App-V Client from the Notification Area
 description: How to Exit the App-V Client from the Notification Area
-author: jamiejdt
+author: dansimp
 ms.assetid: 71ebf88b-ef51-41a5-ae34-4e197d9d6ee6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

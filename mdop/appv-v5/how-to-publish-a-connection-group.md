@@ -1,8 +1,11 @@
 ---
 title: How to Publish a Connection Group
 description: How to Publish a Connection Group
-author: jamiejdt
+author: dansimp
 ms.assetid: c61db00a-8393-485c-949e-af2098b9e258
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +25,7 @@ After you create a connection group, you must publish it to computers that run t
 
 2.  Right-click the connection group to be published, and select **publish**.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

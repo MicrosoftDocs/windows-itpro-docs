@@ -1,13 +1,16 @@
 ---
 title: Quick fixes - Windows IT Pro
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
+description: Learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
-ms.date: 05/03/2018
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -25,23 +28,24 @@ The following list of fixes can resolve many Windows upgrade problems. You shoul
 
 The Microsoft Virtual Agent provided by [Microsoft Support](https://support.microsoft.com/contactus/) can help you to analyze and correct some Windows upgrade errors. **To talk to a person about your issue**, start the Virtual Agent (click **Get started**) and enter "Talk to a person" two times. 
 
->You might also wish to try a new tool available from Microsoft that helps to diagnose many Windows upgrade errors. For more information and to download this tool, see [SetupDiag](setupdiag.md). The topic is more advanced (300 level) because several advanced options are available for using the tool. However, you can now just download and then double-click the tool to run it. By default when you click Save, the tool is saved in your **Downloads** folder. Double-click the tool in the folder and wait until it finishes running (it might take a few minutes), then double-click the **SetupDiagResults.log** file and open it using Notepad to see the results of the analysis.
+> [!TIP]
+> You might also wish to try a new tool available from Microsoft that helps to diagnose many Windows upgrade errors. For more information and to download this tool, see [SetupDiag](setupdiag.md). The topic is more advanced (300 level) because several advanced options are available for using the tool. However, you can now just download and then double-click the tool to run it. By default when you click Save, the tool is saved in your **Downloads** folder. Double-click the tool in the folder and wait until it finishes running (it might take a few minutes), then double-click the **SetupDiagResults.log** file and open it using Notepad to see the results of the analysis.
 
 ## List of fixes
 
 <ol>
-<li>Remove nonessential external hardware, such as docks and USB devices. [More information](#remove-external-hardware).</li>
-<li>Check the system drive for errors and attempt repairs. [More information](#repair-the-system-drive).</li>
-<li>Run the Windows Update troubleshooter. [More information](#windows-update-troubleshooter).</li>
-<li>Attempt to restore and repair system files. [More information](#repair-system-files).</li>
-<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. [More information](#update-windows).</li>
+<li>Remove nonessential external hardware, such as docks and USB devices. <a href="#remove-external-hardware" data-raw-source="[More information](#remove-external-hardware)">More information</a>.</li>
+<li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
+<li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
+<li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
+<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
-  [More information](#uninstall-non-microsoft-antivirus-software).</li>
+  <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
 
-<li>Uninstall all nonessential software. [More information](#uninstall-non-essential-software).</li>
-<li>Update firmware and drivers. [More information](#update-firmware-and-drivers)</li>
-<li>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. [More information](#ensure-that-download-and-install-updates-is-selected).</li>
-<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. [More information](#verify-disk-space).</li>
+<li>Uninstall all nonessential software. <a href="#uninstall-non-essential-software" data-raw-source="[More information](#uninstall-non-essential-software)">More information</a>.</li>
+<li>Update firmware and drivers. <a href="#update-firmware-and-drivers" data-raw-source="[More information](#update-firmware-and-drivers)">More information</a></li>
+<li>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. <a href="#ensure-that-download-and-install-updates-is-selected" data-raw-source="[More information](#ensure-that-download-and-install-updates-is-selected)">More information</a>.</li>
+<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. <a href="#verify-disk-space" data-raw-source="[More information](#verify-disk-space)">More information</a>.</li>
 </ol>
 
 ## Step by step instructions
@@ -147,7 +151,8 @@ To check and repair system files:
     The operation completed successfully.
 
     ```
-    >It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
+    > [!NOTE] 
+    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
 
 
 ### Update Windows
@@ -218,11 +223,12 @@ When you run Disk Cleanup and enable the option to Clean up system files, you ca
 
 ### Open an elevated command prompt
 
->It is no longer necessary to open an elevated command prompt to run the [SetupDiag](setupdiag.md) tool. However, this is still the optimal way to run the tool.
+> [!TIP]
+> It is no longer necessary to open an elevated command prompt to run the [SetupDiag](setupdiag.md) tool. However, this is still the optimal way to run the tool.
 
 To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then Alt+C to confirm the elevation prompt. Screenshots and other steps to open an administrator (aka elevated) command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
 
-Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
+Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
 
 If this is too complicated for you, then use File Explorer to create a new folder under C: with a short name such as "new" then copy or move the programs you want to run (like SetupDiag) to this folder using File Explorer. When you open an elevated command prompt, change to this directory by typing "cd c:\new" and now you can run the programs in that folder.
 
@@ -232,6 +238,6 @@ If you downloaded the SetupDiag.exe program to your computer, then copied it to 
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

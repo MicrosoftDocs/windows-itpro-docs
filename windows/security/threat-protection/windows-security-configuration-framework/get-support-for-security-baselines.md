@@ -1,24 +1,25 @@
 ---
-title: Get support
-description: This article, and the articles it links to, answers frequently asked question on how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics in your organization
+title: Get support for Windows security baselines
+description: Find answers to frequently asked question on how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: sagaudre
-author: justinha
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
+ms.reviewer: 
 ---
 
 # Get Support
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 
-The Security Compliance Manager (SCM) is now retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
+The Security Compliance Manager (SCM) is now retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO Backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
 
 More information about this change can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2017/06/15/security-compliance-manager-scm-retired-new-tools-and-procedures/).
 
@@ -39,9 +40,9 @@ The toolkit supports formats created by the Windows GPO backup feature (.pol, .i
 
 Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently developing a tool to provide customers with these features.
 
-**Does SCT support the creation of System Center Configuration Manager (SCCM) DCM packs?**
+**Does SCT support the creation of Microsoft Endpoint Configuration Manager DCM packs?**
 
-No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
+No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
 **Does SCT support the creation of Security Content Automation Protocol (SCAP)-format policies?**
 
@@ -80,16 +81,17 @@ Windows Server 2008 R2 |[SP1](https://technet.microsoft.com/library/gg236605.asp
 
 **Microsoft Products**
 
-| Name | Details | Security Tools |
-|---|---|---|
-Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final/)|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)|
-|Internet Explorer 10|[Technet](https://technet.microsoft.com/library/jj898540.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
-|Internet Explorer 9|[Technet](https://technet.microsoft.com/library/hh539027.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Internet Explorer 8|[Technet](https://technet.microsoft.com/library/ee712766.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Exchange Server 2010|[Technet](https://technet.microsoft.com/library/hh913521.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Exchange Server 2007|[Technet](https://technet.microsoft.com/library/hh913520.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Microsoft Office 2010|[Technet](https://technet.microsoft.com/library/gg288965.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Microsoft Office 2007 SP2|[Technet](https://technet.microsoft.com/library/cc500475.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
+
+|           Name            |                                                                            Details                                                                            |                               Security Tools                                |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+|   Internet Explorer 11    | [SecGuide](https://blogs.technet.microsoft.com/secguide/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final/) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
+|   Internet Explorer 10    |                                                [Technet](https://technet.microsoft.com/library/jj898540.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|    Internet Explorer 9    |                                                [Technet](https://technet.microsoft.com/library/hh539027.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|    Internet Explorer 8    |                                                [Technet](https://technet.microsoft.com/library/ee712766.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Exchange Server 2010    |                                                [Technet](https://technet.microsoft.com/library/hh913521.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Exchange Server 2007    |                                                [Technet](https://technet.microsoft.com/library/hh913520.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Microsoft Office 2010   |                                                [Technet](https://technet.microsoft.com/library/gg288965.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+| Microsoft Office 2007 SP2 |                                                [Technet](https://technet.microsoft.com/library/cc500475.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
 
 <br />
 

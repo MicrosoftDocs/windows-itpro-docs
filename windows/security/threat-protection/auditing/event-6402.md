@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 6402(-): BranchCache: The message to the hosted cache offering it data is incorrectly formatted.
@@ -25,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: The message to the hosted cache offering it data is incorrectly formatted. *
+*BranchCache: The message to the hosted cache offering it data is incorrectly formatted.*
 
 *IP address of the client that sent this message: %1*
 

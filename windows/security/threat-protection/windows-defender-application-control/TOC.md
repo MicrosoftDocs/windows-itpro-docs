@@ -1,24 +1,27 @@
 # [Windows Defender Application Control](windows-defender-application-control.md)
 
 ## [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md)
-### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
-### [Select the types of rules to create](select-types-of-rules-to-create.md)
-### [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
-#### [Document your application control management processes](document-your-windows-defender-application-control-management-processes.md)
-### [Create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md)
+### [Plan for WDAC policy lifecycle management](plan-windows-defender-application-control-management.md)
+### Design and create your WDAC policy
+#### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
+#### [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md)
+##### [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md)
+##### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
+#### [Example WDAC base policies](example-wdac-base-policies.md)
+#### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
+#### [Common WDAC deployment scenarios](types-of-devices.md)
+##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
+##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
+##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
+##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
-### [Types of devices](types-of-devices.md)
-###Use WDAC with custom policies
-#### [Create an initial default policy](create-initial-default-policy.md)
-#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
-### [Deploy WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
-### [Deploy WDAC with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
+### [Allow COM object registration](allow-com-object-registration-in-windows-defender-application-control-policy.md)
 ### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
 ### [Deploy WDAC policies using Intune](deploy-windows-defender-application-control-policies-using-intune.md)
 ### [Use WDAC with .NET hardening](use-windows-defender-application-control-with-dynamic-code-security.md)
@@ -32,7 +35,9 @@
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
-### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
+### [LOB Win32 Apps on S Mode](LOB-win32-apps-on-s.md)
+
+
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)

@@ -5,11 +5,13 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Start layout XML for mobile editions of Windows 10 (reference)
@@ -34,7 +36,7 @@ On Windows 10 Mobile, the customized Start works by:
 
 The following diagrams show the default Windows 10, version 1607 Start layouts for single SIM and dual SIM devices with Cortana support, and single SIM and dual SIM devices with no Cortana support. 
 
-![Start layout for Windows 10 Mobile](..\images\mobile-start-layout.png)
+![Start layout for Windows 10 Mobile](../images/mobile-start-layout.png)
 
 The diagrams show:
 
@@ -48,7 +50,7 @@ The diagrams show:
 
 IT admins can provision the Start layout by creating a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles.
 
->[!NOTE]  
+>[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when writing your LayoutModification.xml file:
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.

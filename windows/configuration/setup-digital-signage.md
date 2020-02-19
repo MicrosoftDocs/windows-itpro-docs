@@ -2,11 +2,14 @@
 title: Set up digital signs on Windows 10  (Windows 10)
 description: A single-use device such as a digital sign is easy to set up in Windows 10 (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage", "kiosk browser", "browser"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/02/2018
 ms.topic: article
@@ -55,7 +58,7 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
     - Enter a user name and password, and toggle **Auto sign-in** to **Yes**.
     - Under **Configure the kiosk mode app**, enter the user name for the account that you're creating.
     - For **App type**, select **Universal Windows App**.
-    - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe`.
+    - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe!App`.
 11. In the bottom left corner of Windows Configuration Designer, select **Switch to advanced editor**. 
 12. Go to **Runtime settings** > **Policies** > **KioskBrowser**. Let's assume that the URL for your digital signage content is contoso.com/menu.
     - In **BlockedUrlExceptions**, enter `https://www.contoso.com/menu`.

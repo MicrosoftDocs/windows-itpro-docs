@@ -1,8 +1,11 @@
 ---
 title: How to Recover a Corrupted Drive
 description: How to Recover a Corrupted Drive
-author: jamiejdt
+author: dansimp
 ms.assetid: fa5b846b-dda6-4ae4-bf6c-39e4f1d8aa00
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -30,7 +33,7 @@ You can use this procedure with the Administration and Monitoring Website (also 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Create a recovery key package file by accessing the <strong>Drive Recovery</strong> area of the Administration and Monitoring Website.</p></td>
-<td align="left"><p>To access the <strong>Drive Recovery</strong> area, you must be assigned the MBAM Helpdesk Users role or the MBAM Advanced Helpdesk Users role. You may have given these roles different names when you created them. For more information, see [Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md#bkmk-helpdesk-roles).</p></td>
+<td align="left"><p>To access the <strong>Drive Recovery</strong> area, you must be assigned the MBAM Helpdesk Users role or the MBAM Advanced Helpdesk Users role. You may have given these roles different names when you created them. For more information, see <a href="planning-for-mbam-25-groups-and-accounts.md#bkmk-helpdesk-roles" data-raw-source="[Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md#bkmk-helpdesk-roles)">Planning for MBAM 2.5 Groups and Accounts</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Copy the package file to the computer that contains the corrupted drive.</p></td>
@@ -38,12 +41,12 @@ You can use this procedure with the Administration and Monitoring Website (also 
 </tr>
 <tr class="odd">
 <td align="left"><p>Use the <code>repair-bde</code> command to complete the recovery process.</p></td>
-<td align="left"><p>To avoid a potential loss of data, it is strongly recommended that you review the [Manage-bde](https://go.microsoft.com/fwlink/?LinkId=393567) command before using it.</p></td>
+<td align="left"><p>To avoid a potential loss of data, it is strongly recommended that you review the <a href="https://go.microsoft.com/fwlink/?LinkId=393567" data-raw-source="[Manage-bde](https://go.microsoft.com/fwlink/?LinkId=393567)">Manage-bde</a> command before using it.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To recover a corrupted drive**
 
@@ -56,7 +59,7 @@ You can use this procedure with the Administration and Monitoring Website (also 
     **Note**  
     If you are a member of the Advanced Helpdesk Users access group, you do not have to enter the user’s domain name or user name.
 
-     
+     
 
 4.  Click **Submit**. The recovery key will be displayed.
 
@@ -73,7 +76,7 @@ You can use this procedure with the Administration and Monitoring Website (also 
     **Note**  
     Replace &lt;*fixed drive*&gt; with an available hard disk drive that has free space equal to or larger than the data on the corrupted drive. Data on the corrupted drive is recovered and moved to the specified hard disk drive.
 
-     
+     
 
 
 ## Related topics
@@ -81,11 +84,11 @@ You can use this procedure with the Administration and Monitoring Website (also 
 
 [Performing BitLocker Management with MBAM 2.5](performing-bitlocker-management-with-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

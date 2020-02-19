@@ -1,46 +1,58 @@
 ---
-title: Microsoft HoloLens (HoloLens)
-description: HoloLens provides extra features designed for business in the Commercial Suite.
+title: Microsoft HoloLens
+description: Landing page Microsoft HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
+author: scooley
+ms.author: scooley
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2018
+ms.date: 10/14/2019
+audience: ITPro
+appliesto:
+- HoloLens 1
+- HoloLens 2
+
 ---
 
 # Microsoft HoloLens
 
-
 <table><tbody>
-<tr><td style="border: 0px;width: 75%;valign= top"><p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p><p> Microsoft HoloLens is available in the **Development Edition**, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the **Commercial Suite**, which runs Windows Holographic for Business when you apply the Enterprise license file to the device.</p></td><td align="left" style="border: 0px">![Hololens](images/hololens.png)</td></tr>
+<tr><td style="border: 0px;width: 75%;valign= top">
+<p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p>
+
+<p>Now, with the introduction of HoloLens 2, every device provides commercial ready management enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
+
+<p>To learn more about HoloLens 2 for developers, check out the <a href="https://docs.microsoft.com/windows/mixed-reality/">mixed reality developer documentation</a>.</p>
+
+<p>To buy HoloLens, check out <a href="https://www.microsoft.com/hololens/buy">HoloLens pricing and sales</a> on <a href="https://www.microsoft.com/hololens">microsoft.com/HoloLens</a>.</p>
+</td>
+
+<td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="images/hololens2-side-render-xs.png"/></td></tr>
 </tbody></table>
 
-## In this section
+## Guides in this section
+
+| Guide | Description |
+| --- | --- |
+| [Get started with HoloLens 2](hololens2-setup.md) | Set up HoloLens 2 for the first time.  |
+| [Get started with HoloLens (1st gen)](hololens1-setup.md) | Set up HoloLens (1st gen) for the first time.  |
+| [Get started with HoloLens in a commercial or classroom environment](hololens-requirements.md) | Plan for a multi-device HoloLens deployment and create a strategy for ongoing device management.</br>This section is tailored to IT professionals managing devices with existing device management infrastructure.  |
+
+## Quick reference by topic
 
 | Topic | Description |
 | --- | --- |
-| [What's new in Microsoft HoloLens](hololens-whats-new.md) | Discover the new features in the latest update. |
-| [HoloLens in the enterprise: requirements](hololens-requirements.md) | Lists requirements for general use, Wi-Fi, and device management |
-| [Set up HoloLens](hololens-setup.md) | How to set up HoloLens for the first time  |
-[Install localized version of HoloLens](hololens-install-localized.md) | Install the Chinese or Japanese version of HoloLens
-| [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | How to upgrade your Development Edition HoloLens to Windows Holographic for Business |
-| [Enroll HoloLens in MDM](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using solutions like Microsoft Intune |
-| [Manage updates to HoloLens](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
-| [Set up HoloLens in kiosk mode](hololens-kiosk.md) | Enable kiosk mode for HoloLens, which limits the user's ability to launch new apps or change the running app  |
-[Share HoloLens with multiple people](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
-| [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
-| [Install apps on HoloLens](hololens-install-apps.md) | Use Microsoft Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens |
-| [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens |
-| [Change history for Microsoft HoloLens documentation](change-history-hololens.md) | See new and updated topics in the HoloLens documentation library. |
+| [What's new in HoloLens](hololens-whats-new.md) | Discover new features in the latest updates via HoloLens release notes. |
+| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale.  |
+| [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
+| [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
+| [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
+| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
+| [Get support](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.  |
 
 ## Related resources
 
-- [Help for using HoloLens](https://support.microsoft.com/products/hololens)
-
-- [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
-
-- [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
-
-- [HoloLens release notes](https://developer.microsoft.com/en-us/windows/mixed-reality/release_notes)
+* [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
+* [HoloLens release notes](https://docs.microsoft.com/hololens/hololens-release-notes)
