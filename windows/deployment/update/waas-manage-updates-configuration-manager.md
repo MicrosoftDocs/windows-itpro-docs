@@ -43,7 +43,7 @@ For the Windows 10 servicing dashboard to display information, you must adhere t
 
     **To configure Upgrade classification**
 
-    1. Go to Administration > Overview > Site Configuration > Sites, and then select your site from the list.
+    1. Go to **Administration** > **Overview** > **Site Configuration** > **Sites**, and then select your site from the list.
 
     2. On the Ribbon, in the **Settings** section, click **Configure Site Components**, and then click **Software Update Point**.
 
