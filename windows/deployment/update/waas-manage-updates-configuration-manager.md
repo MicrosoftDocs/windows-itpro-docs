@@ -144,7 +144,7 @@ There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint 
 
 ### To configure Windows feature updates for CBB clients in the Ring 4 Broad business users deployment ring using a servicing plan
 
-1. In the Configuration Manager console, go to Software Library\Overview\Windows 10 Servicing, and then click **Servicing Plans**.
+1. In the Configuration Manager console, go to **Software Library** > **Overview** > **Windows 10 Servicing**, and then click **Servicing Plans**.
 
 1. On the Ribbon, in the **Create** group, click **Create Servicing Plan**.
 
