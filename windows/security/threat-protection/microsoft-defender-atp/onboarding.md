@@ -114,7 +114,7 @@ Manager and deploy that policy to Windows 10 devices.
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
 4. Save the package to an accessible location.
-5. In  Microsoft Endpoint Configuration Manager , navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
@@ -211,7 +211,7 @@ Specifically, for Windows 7 SP1, the following patches must be installed:
     [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
     Do not install both on the same system.
 
-To deploy the MMA with Microsoft Endpoint Configuration Manager , follow the steps
+To deploy the MMA with Microsoft Endpoint Configuration Manager, follow the steps
 below to utilize the provided batch files to onboard the systems. The CMD file
 when executed, will require the system to copy files from a network share by the
 System, the System will install MMA, Install the DependencyAgent, and configure

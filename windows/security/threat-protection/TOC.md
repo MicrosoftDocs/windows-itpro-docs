@@ -568,7 +568,7 @@
 #### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
 
 
-### [Integrations with Microsoft solutions]()
+### [Integrations]()
 #### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
