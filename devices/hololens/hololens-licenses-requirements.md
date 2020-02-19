@@ -60,4 +60,3 @@ Updated licensing and device requirements can be found [here](https://docs.micro
 Additional information regarding kiosk mode will be covered in [Configuring your Network for HoloLens](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
 
 ## Next Step: [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
-
