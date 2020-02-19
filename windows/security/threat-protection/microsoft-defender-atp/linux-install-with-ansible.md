@@ -59,19 +59,20 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, set operating system to **Windows 10** and in second drop down, Deployment method to **Mobile Device Management / Microsoft Intune**.
+2. In the first drop down, set operating system to **Linux Server** and in second drop down, Deployment method to **Your preferred Linux configuration management tool**.
 3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Windows Defender Security Center screenshot](images/atp-portal-onboarding-win-intune.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
-4. From a command prompt, verify that you have the file.
-    Extract the contents of the .zip file and create mdatp_onboard.json file as follows:
+4. From a command prompt, verify that you have the file. Extract the contents of the archive:
   
     ```bash
     $ ls -l
     total 8
-    -rw-r--r-- 1 test  staff  6287 Oct 21 11:22 WindowsDefenderATPOnboardingPackage.zip
-    $ unzip -p WindowsDefenderATPOnboardingPackage.zip | python -c 'import sys,json;data={"onboardingInfo":"\n".join(sys.stdin.readlines())};print(json.dumps(data));' >mdatp_onboard.json
+    -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    Archive:  WindowsDefenderATPOnboardingPackage.zip
+    inflating: mdatp_onboard.json
     ```
 
 ## Create Ansible YAML files
@@ -91,16 +92,17 @@ Create subtask / role files which contribute to an actual task. Create below fil
             mode: '0644'
     ```
 
-- Create a `setup.sh` script which operates on onboarding blob
+- Create a `setup.sh` script which operates on the onboarding file
 
     ```bash
     $ cat /root/setup.sh
 
     #!/bin/bash
 
-    # Unzip the file and creates license blob
+    # Unzip the file and create license file
     mkdir -p /etc/opt/microsoft/mdatp/
-    unzip -p WindowsDefenderATPOnboardingPackage.zip | python -c 'import sys,json;data={"onboardingInfo":"\n".join(sys.stdin.readlines())};print(json.dumps(data));' > /etc/opt/microsoft/mdatp/mdatp_onboard.json
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    cp mdatp_onboard.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
 
     # get the GPG key
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -125,82 +127,96 @@ Create subtask / role files which contribute to an actual task. Create below fil
 
 - Add the Microsoft Defender ATP repository and key
 
-    ```bash
-    $ cat add_apt_repo.yml
-    - name: Add Microsoft repository for MDATP
-        apt_repository:
-            repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/16.04/prod insiders-fast main
-            update_cache: yes
-            state: present
-            filename: microsoft-insiders-fast.list
+    Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
 
-    - name: Add Microsoft APT key
-            apt_key:
-                keyserver: https://packages.microsoft.com/
-                id: BC528686B50D79E339D3721CEB3E94ADBE1229C
-    ```
+    The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
 
-- For Yum based distributions use the following YML file
+    In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
 
-    ```bash
-    $ cat add_yum_repo.yml
-    - name: Add  Microsoft repository for MDATP
-         yum_repository:
-            name: packages-microsoft-com-prod-insiders-fast
-            description: Microsoft Defender ATP
-            file: microsoft-insiders-fast
-            baseurl: https://packages.microsoft.com/centos/7/insiders-fast/
-            gpgcheck: yes
-            enabled: Yes
-    ```
+    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-- Now create the actual install/uninstall YAML files under /etc/ansible/playbooks
+    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
 
-    ```bash
-    $ cat install_mdatp.yml
-    - hosts: servers
+    - For apt-based distributions use the following YAML file
+
+        ```bash
+        $ cat add_apt_repo.yml
+        - name: Add Microsoft repository for MDATP
+            apt_repository:
+                repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+                update_cache: yes
+                state: present
+                filename: microsoft-[channel].list
+
+        - name: Add Microsoft APT key
+                apt_key:
+                    keyserver: https://packages.microsoft.com/
+                    id: BC528686B50D79E339D3721CEB3E94ADBE1229C
+        ```
+
+    - For yum-based distributions use the following YAML file
+
+        ```bash
+        $ cat add_yum_repo.yml
+        - name: Add  Microsoft repository for MDATP
+            yum_repository:
+                name: packages-microsoft-com-prod-[channel]
+                description: Microsoft Defender ATP
+                file: microsoft-[channel]
+                baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+                gpgcheck: yes
+                enabled: Yes
+        ```
+
+- Create the actual install / uninstall YAML files under `/etc/ansible/playbooks`
+
+    - For apt-based distributions use the following YAML file
+
+        ```bash
+        $ cat install_mdatp.yml
+        - hosts: servers
+            tasks:
+                - include: ../roles/download_copy_blob.yml
+                - include: ../roles/setup_blob.yml
+                - include: ../roles/add_apt_repo.yml
+                - apt:
+                    name: mdatp
+                    state: latest
+                    update_cache: yes
+        ```
+
+        ```bash
+        $ cat uninstall_mdatp.yml
+        - hosts: servers
+        tasks:
+            - apt:
+                name: mdatp
+                state: absent
+        ```
+
+    - For yum-based distributions use the following YAML file
+
+        ```bash
+        $ cat install_mdatp_yum.yml
+        - hosts: servers
         tasks:
             - include: ../roles/download_copy_blob.yml
             - include: ../roles/setup_blob.yml
-            - include: ../roles/add_apt_repo.yml
-            - apt:
+            - include: ../roles/add_yum_repo.yml
+            - yum:
                 name: mdatp
                 state: latest
-                update_cache: yes
-    ```
+                enablerepo: packages-microsoft-com-prod-insiders-fast
+        ```
 
-    ```bash
-    $ cat uninstall_mdatp.yml
-    - hosts: servers
-      tasks:
-        - apt:
-            name: mdatp
-            state: absent
-    ```
-
-- For the Yum based distribution
-
-    ```bash
-    $ cat install_mdatp_yum.yml
-    - hosts: servers
-      tasks:
-        - include: ../roles/download_copy_blob.yml
-        - include: ../roles/setup_blob.yml
-        - include: ../roles/add_yum_repo.yml
-        - yum:
-            name: mdatp
-            state: latest
-            enablerepo: packages-microsoft-com-prod-insiders-fast
-    ```
-
-    ```bash
-    $ cat uninstall_mdatp_yum.yml
-    - hosts: servers
-      tasks:
-        - yum:
-            name: mdatp
-            state: absent
-    ```
+        ```bash
+        $ cat uninstall_mdatp_yum.yml
+        - hosts: servers
+        tasks:
+            - yum:
+                name: mdatp
+                state: absent
+        ```
 
 ## Deployment
 
@@ -221,7 +237,10 @@ Now run the tasks files under `/etc/ansible/playbooks/`
 
 ## References
 
-[Add or remove YUM repositories](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)<br/>
-[Manage packages with the yum package manager](https://docs.ansible.com/ansible/latest/modules/yum_module.html)<br/>
-[Add and remove APT repositories](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)<br/>
-[Manage apt-packages](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [Add or remove YUM repositories](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+
+- [Manage packages with the yum package manager](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+
+- [Add and remove APT repositories](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+
+- [Manage apt-packages](https://docs.ansible.com/ansible/latest/modules/apt_module.html)

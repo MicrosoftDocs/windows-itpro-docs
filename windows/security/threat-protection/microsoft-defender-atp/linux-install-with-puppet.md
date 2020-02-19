@@ -42,19 +42,19 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, set operating system to **Windows 10** and in second drop down, Deployment method to **Mobile Device Management / Microsoft Intune**.
+2. In the first drop down, set operating system to **Linux Server** and in second drop down, Deployment method to **Your preferred Linux configuration management tool**.
 3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Windows Defender Security Center screenshot](images/atp-portal-onboarding-win-intune.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
-4. From a command prompt, verify that you have the file.
-    Extract the contents of the .zip file and create mdatp_onboard.json file as follows:
+4. From a command prompt, verify that you have the file. Extract the contents of the archive:
   
     ```bash
     $ ls -l
     total 8
-    -rw-r--r-- 1 test  staff  6287 Oct 21 11:22 WindowsDefenderATPOnboardingPackage.zip
-    $ unzip -p WindowsDefenderATPOnboardingPackage.zip | python -c 'import sys,json;data={"onboardingInfo":"\n".join(sys.stdin.readlines())};print(json.dumps(data));' >mdatp_onboard.json
+    -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    Archive:  WindowsDefenderATPOnboardingPackage.zip
+    inflating: mdatp_onboard.json
     ```
 
 ## Create Puppet manifest

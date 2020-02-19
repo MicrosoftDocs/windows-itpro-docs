@@ -59,8 +59,8 @@ In general you need to take the following steps:
   - Oracle Enterprise Linux 7
 
 - Minimum kernel version 2.6.38
-- The **fanotify** kernel option must be enabled
-- Disk space: 650 MB.
+- The *fanotify* kernel option must be enabled
+- Disk space: 650 MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -96,23 +96,14 @@ The output from this command should be similar to the following:
 > `OK https://x.cp.wd.microsoft.com/api/report`  
 > `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
-You can also use ```mdatp --connectivity-test``` to verify the connectivity.
-
+Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
 $ mdatp --connectivity-test
-Running connectivity test
-Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
-Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
-Testing connection with https://wu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
-Testing connection with https://unitedstates.x.cp.wd.microsoft.com/api/report ... [OK]
-Testing connection with https://ussus1eastprod.blob.core.windows.net ... [OK]
-Testing connection with https://ussus1westprod.blob.core.windows.net ... [OK]
 ```
-
 
 ## How to update Microsoft Defender ATP for Linux
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Linux, refer to [Deploy updates for Microsoft Defender ATP for Linux](linux-updates.md)
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Linux, refer to [Deploy updates for Microsoft Defender ATP for Linux](linux-updates.md).
 
 ## How to configure Microsoft Defender ATP for Linux
 
@@ -120,17 +111,13 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Known Issues
 
-- When a large volume of threats are encountered on the device, the product might exhibit increasingly large memory consumption (until the next product restart / system reboot). The engineering team is actively working on a mitigation for this
 - Logged on users do not appear in the ATP portal
-- While we are working on creating a better onboarding experience for Linux in the Microsoft Defender Security Center portal, the steps below temporarily point to the Windows section of the portal for getting the onboarding package 
-- In SUSE distributions, if the libatomic1 failed to be installed please validate that your OS is registered by typing the following command in the terminal:
+- In SUSE distributions, if installation of *libatomic1* fails, validate that your OS is registered:
 
 ```bash
-sudo SUSEConnect --status-text
+$ sudo SUSEConnect --status-text
 ```
 
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see the [Resources](linux-resources.md) page.
-
-- [Privacy for Microsoft Defender ATP for Linux](linux-privacy.md)

@@ -37,6 +37,12 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 
 ## Configure Microsoft Linux Software Repository
 
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use this repository are provided below.
+
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+
 ### RHEL and variants (CentOS and Oracle EL)
 
 - Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
@@ -44,13 +50,13 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, use [distro] as “rhel”.
+    > In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
 
     ```bash
-    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 
+    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
     ```
 
-    For example, if you are running CentOS 7:  
+    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
 
     ```bash
     $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
@@ -76,10 +82,10 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
 
     ```bash
-    $ sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.repo 
+    $ sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
     ```
 
-    For example, if you are running SLES 12:  
+    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
 
     ```bash
     $ sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
@@ -105,10 +111,10 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
     In the below command, replace *[distro]* and *[version]* with the information identified in the previous step:
 
     ```bash
-    $ curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/insiders-fast.list
+    $ curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insider-fast* channel:
 
     ```bash
     $ curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list 
@@ -117,7 +123,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 - Install the repository configuration:
 
     ```bash
-    $ sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
+    $ sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
 - Install the gpg package if not already installed:
@@ -163,7 +169,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 - Ubuntu and Debian system
 
     ```bash
-    sudo apt-get install -t insiders-fast mdatp
+    sudo apt-get install mdatp
     ```
 
 ## Download onboarding package
@@ -171,42 +177,44 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, set operating system to **Windows 10** and in second drop down, Deployment method to **Mobile Device Management / Microsoft Intune**.
-3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+2. In Section 1 of the page, set operating system to **Linux Server** and Deployment method to **Local script**.
+3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/atp-portal-onboarding-win-intune.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
-    Extract the contents of the .zip file and create mdatp_onboard.json file as follows:
+    Extract the contents of the archive:
   
     ```bash
     $ ls -l
     total 8
-    -rw-r--r-- 1 test  staff  6287 Oct 21 11:22 WindowsDefenderATPOnboardingPackage.zip
-    $ unzip -p WindowsDefenderATPOnboardingPackage.zip | python -c 'import sys,json;data={"onboardingInfo":"\n".join(sys.stdin.readlines())};print(json.dumps(data));' >mdatp_onboard.json
+    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    Archive:  WindowsDefenderATPOnboardingPackage.zip
+    inflating: WindowsDefenderATPOnboarding.py
     ```
 
 ## Client configuration
 
-1. Copy WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Linux.
+1. Copy WindowsDefenderATPOnboarding.py to the target machine.
 
-    The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
+    Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank.
 
     ```bash
     $ mdatp --health orgId
     ```
 
-2. Copy the mdatp_onboard.json created in earlier step to /etc/opt/microsoft/mdatp_onboard.json
+2. Run WindowsDefenderATPOnboarding.py (note that in order to run this command you must have `python` installed on the device).
 
     ```bash
-    $ sudo cp mdatp.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
+    $ python WindowsDefenderATPOnboarding.py
     ```
 
-3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
+3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
 
     ```bash
     $ mdatp --health orgId
-    E6875323-A6C0-4C60-87AD-114BBE7439B8
+    [your organization identifier]
     ```
 
 4. A few minutes following the completion of the installation, you can see the status by running the following command. A return value of `'1'` denotes that the product is functioning as expected.
@@ -216,18 +224,23 @@ Download the onboarding package from Microsoft Defender Security Center:
     1
     ```
 
-5. Run a detection test
-To verify that the machine is properly onboarded and reporting to the service, take the following steps on the newly onboarded machine:
+5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
-    - Ensure Real-time protection setting is ON ```mdatp --health realTimeProtectionEnabled```
+    - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command).
+
+    ```bash
+    $ mdatp --health realTimeProtectionEnabled
+    1
+    ```
+
     - Open a Terminal window
 Copy and run the command below:
 
     ``` bash
-    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+    $ curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
     ```
 
-6. The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
+    - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
     ```bash
     $ mdatp --threat --list --pretty

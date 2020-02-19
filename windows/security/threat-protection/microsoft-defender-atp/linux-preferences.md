@@ -254,7 +254,7 @@ The following configuration profile will:
    },
    "cloudService":{
       "automaticSampleSubmission":true,
-      "enabled":true,
+      "enabled":true
    }
 }
 ```
@@ -303,11 +303,11 @@ The following configuration profile contains entries for all settings described 
    "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
-      "automaticSampleSubmission":true,
+      "automaticSampleSubmission":true
    }
 }
 ```
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft M reads the managed configuration from the file */etc/opt/microsoft/mdatp/managed/mdatp_managed.json*
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft Defender ATP for Linux reads the managed configuration from the file */etc/opt/microsoft/mdatp/managed/mdatp_managed.json*
