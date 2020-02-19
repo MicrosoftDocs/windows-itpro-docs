@@ -18,11 +18,11 @@
 ## [Deployment guide]()
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 
-### [Phase 1: Prepare Microsoft Defender ATP deployment](microsoft-defender-atp/prepare-deployment.md)
+### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 
-### [Phase 2:  Setup the Microsoft Defender ATP service](microsoft-defender-atp/production-deployment.md)
+### [Phase 2: Setup](microsoft-defender-atp/production-deployment.md)
 
-### [Phase 3: Onboard](microsoft-defender-atp/configure.md)
+### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
 
 ## [Operations]()

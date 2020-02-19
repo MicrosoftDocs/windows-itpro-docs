@@ -35,7 +35,7 @@ There are three phases in deploying Microsoft Defender ATP:
       <br/>Setup </a><br>
     </td>
     <td align="center">
-      <a href="configure">
+      <a href="onboarding">
         <img src="images/onboard.png" alt="Onboard" title="Onboard" />
       <br/>Onboard </a><br>
 </td>
@@ -54,6 +54,7 @@ There are three phases in deploying Microsoft Defender ATP:
     <td valign="top" style="width:25%; border:0;">
      The setup phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
 
+
 - Validating the licensing
 - Completing the setup wizard within the portal
 - Network configuration
@@ -71,4 +72,30 @@ Onboard devices to the service so the Microsoft Defender ATP service can get sen
 
  The deployment guide will walk you through the recommended path in deploying Microsoft Defender ATP. 
 
+There are several methods you can use to onboard to the service. The deployment guide will only cover the recommended path. For details on other ways to onboard, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
 
+## In Scope
+
+The following is in scope for this deployment guide:
+-   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service
+-   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
+    capabilities
+
+    -   Next Generation Protection
+
+    -   Attack Surface Reduction
+
+-   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
+    capabilities including automatic investigation and remediation
+
+-   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
+
+
+## Out of scope
+
+The following are out of scope of this deployment guide:
+
+-   Configuration of third-party solutions that might integrate with Microsoft
+    Defender ATP
+
+-   Penetration testing in production environment

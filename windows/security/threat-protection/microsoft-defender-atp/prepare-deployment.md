@@ -32,17 +32,17 @@ Deploying Microsoft Defender ATP is a three-phase process:
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "prepare-deployment"> 
-        <img src="images/plan.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
-      <br/>Plan </a><br>
+        <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+      <br/>Prepare </a><br>
     </td>
      <td align="center"  >
       <a href="production-deployment">
-        <img src="images/oboard.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
+        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
       <br/> Setup </a><br>
         </td>
     <td align="center">
-      <a href="configure">
-        <img src="images/configure.png" alt="Configure capabilities" title="Configure capabilities" />
+      <a href="onboarding">
+        <img src="images/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
       <br/>Onboard</a><br>
 </td>
   </tr>
@@ -59,11 +59,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
 </table>
 
-You are currently in the planning phase.
-
-
-
-
+You are currently in the prepare phase.
 
 
 
@@ -86,33 +82,6 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the organization.*                             | R      |
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
-## Project Management
-
-### In Scope
-
-The following is in scope for this project:
-
--   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
-    capabilities
-
-    -   Next Generation Protection
-
-    -   Attack Surface Reduction
-
--   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
-    capabilities including automatic investigation and remediation
-
--   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
--   Use of System Center Configuration Manager to onboard endpoints into the service.
-
-### Out of scope
-
-The following are out of scope of this project:
-
--   Configuration of third-party solutions that might integrate with Microsoft
-    Defender ATP.
-
--   Penetration testing in production environment.
 
 ## Environment 
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP production deployment
+title: Setup Microsoft Defender ATP deployment
 description: 
 keywords:
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Microsoft Defender ATP production deployment
+# Setup Microsoft Defender ATP deployment
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -39,7 +39,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
       <br/>Setup </a><br>
     </td>
     <td align="center">
-      <a href="configure">
+      <a href="onboarding">
         <img src="images/onboard.png" alt="Onboard" title="Onboard" />
       <br/>Onboard </a><br>
 </td>
@@ -48,22 +48,43 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
 </table>
 
-You are currently in the onboard phase.
+You are currently in the onboarding phase.
 
-
-
-
-
-Proper planning is the foundation of a successful deployment. In this deployment scenario, you'll be guided through the steps on:
+In this deployment scenario, you'll be guided through the steps on:
+- Licensing validation
 - Tenant configuration
 - Network configuration
-- Onboarding using System Center Configuration Manager
-- Endpoint detection and response
-- Next generation protection
-- Attack surface reduction
+
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of System Center Configuration Manager. Microsoft Defnder ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defnder ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+
+## Check license state
+
+Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
+
+1. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+
+   ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
+
+1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
+
+   - On the screen you will see all the provisioned licenses and their current **Status**.
+
+   ![Image of billing licenses](images/atp-billing-subscriptions.png)
+
+
+## Cloud Service Provider validation
+
+To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
+
+1. From the **Partner portal**, click on the **Administer services > Office 365**.
+
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin center.
+
+   ![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
+
+
 
 ## Tenant Configuration
 

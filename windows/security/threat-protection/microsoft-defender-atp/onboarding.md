@@ -1,5 +1,5 @@
 ---
-title: Configure capabilities
+title: Onboard to the Micrsoft Defender ATP service
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure capabilities
+# Onboard to the Micrsoft Defender ATP service
 
 
 Deploying Microsoft Defender ATP is a three-phase process:
