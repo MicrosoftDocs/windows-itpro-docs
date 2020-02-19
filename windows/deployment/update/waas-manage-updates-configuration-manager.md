@@ -216,7 +216,7 @@ Each time Microsoft releases a new Windows 10 build, it releases a new .iso file
 
 Now that the operating system upgrade package has been created, the content in that package must be distributed to the correct distribution points so that the clients can access the content. Complete the following steps to distribute the package content to distribution points:
 
-1. In the Configuration Manager console, go to Software Library > Overview > Operating Systems > Operating System Upgrade Packages, and then select the **Windows 10 Enterprise – Version 1607** software upgrade package.
+1. In the Configuration Manager console, go to **Software Library** > **Overview** > **Operating Systems** > **Operating System Upgrade Packages**, and then select the **Windows 10 Enterprise – Version 1607** software upgrade package.
 
 1. On the Ribbon, in the **Deployment group**, click **Distribute Content**.
 
