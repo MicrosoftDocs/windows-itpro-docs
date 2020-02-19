@@ -61,6 +61,7 @@
 ## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
+## [Frequently Asked Security Questions](hololens-faq-security.md)
 ## [Hololens services status](hololens-status.md)
 ## [SCEP Whitepaper](scep-whitepaper.md)
 
