@@ -108,6 +108,10 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature.
 
+## Microsoft Secure Score
+
+Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning this feature on gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+
 ### Enable the Microsoft Defender ATP integration from the Azure ATP portal
 
 To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
