@@ -37,12 +37,12 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 
 - Ansible needs to be installed at least on one computer (we will call it master)
 - Passwordless SSH must be configured for root user between the master and all clients
-- Below software must be installed on all clients
+- The following software must be installed on all clients:
   - python-apt
   - curl
   - unzip
 
-- All host must be listed in the following format in `/etc/ansible/hosts` file
+- All host must be listed in the following format in `/etc/ansible/hosts` file:
     
     ```bash
     [servers]
@@ -79,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 Create subtask / role files which contribute to an actual task. Create the below files under the `/etc/ansible/roles` directory.
 
-- Copy onboarding package to all client machines  
+- Copy onboarding package to all client machines:
 
     ```bash
     $ cat /etc/ansible/roles/copy_onboarding_pkg.yml
@@ -92,7 +92,7 @@ Create subtask / role files which contribute to an actual task. Create the below
             mode: '0644'
     ```
 
-- Create a `setup.sh` script which operates on the onboarding file
+- Create a `setup.sh` script which operates on the onboarding file:
 
     ```bash
     $ cat /root/setup.sh
@@ -109,7 +109,7 @@ Create subtask / role files which contribute to an actual task. Create the below
     sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
     ```
 
-- Create the onboarding file
+- Create the onboarding file:
 
     ```bash
     $ cat setup_blob.yml
@@ -140,7 +140,7 @@ Create subtask / role files which contribute to an actual task. Create the below
     > [!NOTE]
     > In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
 
-    - For apt-based distributions use the following YAML file
+    - For apt-based distributions use the following YAML file:
 
         ```bash
         $ cat add_apt_repo.yml
@@ -157,7 +157,7 @@ Create subtask / role files which contribute to an actual task. Create the below
                     id: BC528686B50D79E339D3721CEB3E94ADBE1229C
         ```
 
-    - For yum-based distributions use the following YAML file
+    - For yum-based distributions use the following YAML file:
 
         ```bash
         $ cat add_yum_repo.yml
@@ -173,7 +173,7 @@ Create subtask / role files which contribute to an actual task. Create the below
 
 - Create the actual install / uninstall YAML files under `/etc/ansible/playbooks`
 
-    - For apt-based distributions use the following YAML file
+    - For apt-based distributions use the following YAML file:
 
         ```bash
         $ cat install_mdatp.yml
@@ -197,7 +197,7 @@ Create subtask / role files which contribute to an actual task. Create the below
                 state: absent
         ```
 
-    - For yum-based distributions use the following YAML file
+    - For yum-based distributions use the following YAML file:
 
         ```bash
         $ cat install_mdatp_yum.yml
@@ -229,12 +229,12 @@ Now run the tasks files under `/etc/ansible/playbooks/`
 
     `# ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts`
 
-- Validation / Configuration
+- Validation / configuration
 
     `# ansible -m shell -a 'mdatp --connectivity-test' all`<br/>
     `# ansible -m shell -a 'mdatp --health' all`
 
-- Un-Installation
+- Uninstallation
 
     `# ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts`
 
