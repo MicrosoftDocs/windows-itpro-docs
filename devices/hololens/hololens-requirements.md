@@ -6,6 +6,7 @@ ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
 author: scooley
 ms.author: scooley
+audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
@@ -13,14 +14,16 @@ ms.date: 07/15/2019
 
 # Deploy HoloLens in a commercial environment
 
-You can deploy and configure HoloLens at scale in a commercial setting.  This article provides instructions for deploying HoloLens devices in a commercial environment. This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
+You can deploy and configure HoloLens at scale in a commercial setting. This article provides instructions for deploying HoloLens devices in a commercial environment. This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
+
+This document also assumes that the HoloLens has been evaluated by security teams as safe to use on the corporate network. Frequently asked security questions can be found [here](hololens-faq-security.md)
 
 ## Overview of Deployment Steps
 
 1. [Determine what features you need](hololens-requirements.md#step-1-determine-what-you-need)
 1. [Determine what licenses you need](hololens-licenses-requirements.md)
 1. [Configure your network for HoloLens](hololens-commercial-infrastructure.md).
-    1. This section includes bandwidth requirements, URL and Ports that need to be whitelisted on your firewall, Azure AD guidance, Mobile Device Management Guidance, app deployment/management guidance, and certificate guidance.
+    1. This section includes bandwidth requirements, URL, and ports that need to be whitelisted on your firewall; Azure AD guidance; Mobile Device Management (MDM) Guidance; app deployment/management guidance; and certificate guidance.
 1. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 1. [Enroll Device](hololens-enroll-mdm.md)
 1. [Set up ring based updates for HoloLens](hololens-updates.md)
@@ -40,37 +43,35 @@ Kiosk mode is a way to restrict the apps that a user has access to. This means t
 
 **What Kiosk Mode do I require?**
 
-There are two types of Kiosk Modes: Single app and multi-app. Single app kiosk mode allows user to only access one app while multi-app kiosk mode allows users to access multiple specified apps. To determine which kiosk mode is right for your corporation, the following two questions need to be answered:
+There are two types of Kiosk Modes: Single app and multi-app. Single app kiosk mode allows user to only access one app while multi-app kiosk mode allows users to access multiple, specified apps. To determine which kiosk mode is right for your corporation, the following two questions need to be answered:
 
-1. **Do different users who are require different experiences/restrictions?** Example, User A is a field service engineer who only needs access to Remote Assist. User B is a trainee who only needs access to guides… etc.
+1. **Do different users require different experiences/restrictions?** Consider the following example: User A is a field service engineer who only needs access to Remote Assist. User B is a trainee who only needs access to Guides.
     1. If yes, you will require the following:
-        1. Azure AD Accounts as the method of signing into the devices.
-        1. Multi-app kiosk mode.
+        1. Azure AD Accounts as the method of signing into the device.
+        1. **Multi-app** kiosk mode.
     1. If no, continue to question two
 1. **Do you require a multi-app experience?**
-    1. If yes, Multi-app kiosk is mode is needed
-    1. If your answer to question 1 and 2 are both no, Single-app kiosk mode can be used
+    1. If yes, **Multi-app** kiosk is mode is needed
+    1. If your answer to question 1 and 2 are both no, **single-app** kiosk mode can be used
 
-**How to set up Kiosk Mode**
+**How to Configure Kiosk Mode:**
 
 There are two main ways ([provisioning packages](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) and [MDM](hololens-kiosk.md#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803)) to deploy kiosk mode for HoloLens. These options will be discussed later in the document; however, you can use the links above to jump to the respective sections in this doc.
 
 ### Apps
 
-This deployment guide will cover the following types of apps:
+The majority of the steps found in this document will also apply to the following apps:
 
 1. Remote Assist
 2. Guides
 3. Customer Apps
-
-Each step in this document will include instructions for each specific app.
 
 ### Type of identity
 
 Determine the type of identity that will be used to sign into the device.
 
 1. **Local Accounts:** This account is local to the device (like a local admin account on a windows PC). This will allow only 1 user to log into the device.
-2. **MSA:** This will be a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
+2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
 3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
 
 ### Determine your enrollment method
@@ -87,12 +88,22 @@ Determine the type of identity that will be used to sign into the device.
 
   More information can be found [here](hololens-enroll-mdm.md)
 
-### Determine if you need a provisioning package
+### Determine if you need to create a provisioning package
 
-There are two methods to configure a HoloLens device (Provisioning packages and MDMs). We suggest using your MDM to configure you HoloLens device, however, there are some scenarios where using a provisioning package is the better choice:
+There are two methods to configure a HoloLens device (Provisioning packages and MDMs). We suggest using your MDM to configure you HoloLens device. However, there are some scenarios where using a provisioning package is the better choice:
 
-1. You want to skip the Out of Box Experience (OOBE)
+1. You want to configure the HoloLens to skip the Out of Box Experience (OOBE)
 1. You are having trouble deploying certificate in a complex network. The majority of the time you can deploy certificates using MDM (even in complex environments). However, some scenarios require certificates to be deployed through the provisioning package.
+
+Some of the HoloLens configurations you can apply in a provisioning package:
+
+- Apply certificates to the device
+- Set up a Wi-Fi connection
+- Pre-configure out of box questions like language and locale
+- (HoloLens 2) bulk enroll in mobile device management
+- (HoloLens v1) Apply key to enable Windows Holographic for Business
+
+If you decide to use provisioning packages, follow [this guide](hololens-provisioning.md).
 
 ## Next Step: [Determine what licenses you need](hololens-licenses-requirements.md)
 
@@ -100,4 +111,4 @@ There are two methods to configure a HoloLens device (Provisioning packages and 
 
 Get support through the Microsoft support site.
 
-[File a support request](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+[File a support request](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)

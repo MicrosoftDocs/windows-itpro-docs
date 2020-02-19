@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
+audience: ITPro
 manager: bradke
 appliesto:
 - HoloLens (1st gen)
@@ -34,16 +35,6 @@ You may need to upgrade your HoloLens 1st Gen Device to Windows Holographic for 
 
 - Acquire a HoloLens Enterprise license XML file
 - Apply the XML file to the HoloLens. You can do this through a [Provisioning package](hololens-provisioning.md) or through your [Mobile Device Manager](https://docs.microsoft.com/intune/configuration/holographic-upgrade)
-
-Some of the HoloLens configurations you can apply in a provisioning package:
-
-- Apply certificates to the device
-- Set up a Wi-Fi connection
-- Pre-configure out of box questions like language and locale
-- (HoloLens 2) bulk enroll in mobile device management
-- (HoloLens v1) Apply key to enable Windows Holographic for Business
-
-Follow [this guide](hololens-provisioning.md) to create and apply a provisioning package to HoloLens.
 
 ### Remote Assist License Requirements
 
