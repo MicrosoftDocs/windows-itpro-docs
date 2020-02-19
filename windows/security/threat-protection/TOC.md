@@ -360,39 +360,39 @@
 ##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 
 #### [Attack surface reduction]()
-#####[Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
-##### [Application isolation]()
-###### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
-###### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
-
-##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
-
-#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
-#### [Network protection](microsoft-defender-atp/network-protection.md)
-
-#### [Web protection]()
-##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
-#####  [Web threat protection]()
-###### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
-###### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
-######[Respond to web threats](microsoft-defender-atp/web-protection-response.md)
-##### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
-
-#### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
-#### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
-#### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
+##### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
+##### [Hardware-based isolation]()
+###### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
+###### [Application isolation]()
+####### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
+####### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
+ 
+###### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
+ 
+##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+##### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+##### [Network protection](microsoft-defender-atp/network-protection.md)
+ 
+##### [Web protection]()
+###### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
+######  [Web threat protection]()
+####### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
+####### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
+#######[Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+###### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
+ 
+##### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+##### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
+##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 #### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 
-#### [Endpoint detection and response]()
-#####[Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
 
-#### [Automated investigation and remediation]()
-##### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
+#### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
+
+#### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
+
 
 #### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 
@@ -614,10 +614,9 @@
 ##### [Troubleshoot service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
 
-#### [Troubleshoot live response issues]()
-##### [Troubleshoot issues related to live response](microsoft-defender-atp/troubleshoot-live-response.md)
+#### [Troubleshoot live response issues](microsoft-defender-atp/troubleshoot-live-response.md)
  
-#### [Troubleshoot attack surface reduction]()
+#### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
 ##### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
   
