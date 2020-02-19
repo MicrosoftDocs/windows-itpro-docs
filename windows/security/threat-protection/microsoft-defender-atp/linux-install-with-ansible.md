@@ -52,7 +52,9 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 
 - Ping test
 
-    ```$ ansible -m ping all```
+    ```bash
+    $ ansible -m ping all
+    ```
 
 ## Download onboarding package
 
@@ -227,16 +229,22 @@ Now run the tasks files under `/etc/ansible/playbooks/`
 
 - Installation
 
-    `# ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts`
+    ```bash
+    $ ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
+    ```
 
 - Validation / configuration
 
-    `# ansible -m shell -a 'mdatp --connectivity-test' all`<br/>
-    `# ansible -m shell -a 'mdatp --health' all`
+    ```bash
+    $ ansible -m shell -a 'mdatp --connectivity-test' all
+    $ ansible -m shell -a 'mdatp --health' all
+    ```
 
 - Uninstallation
 
-    `# ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts`
+    ```bash
+    $ ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
+    ```
 
 ## Logging installation issues
 
