@@ -36,7 +36,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Ansi
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 - Ansible needs to be installed at least on one computer (we will call it master)
-- Password less SSH must be configured for root user between Master and all clients
+- Passwordless SSH must be configured for root user between the master and all clients
 - Below software must be installed on all clients
   - python-apt
   - curl
@@ -79,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 Create subtask / role files which contribute to an actual task. Create below files under `/etc/ansible/roles` directory.
 
-- Copy onboarding package on all client machines  
+- Copy onboarding package to all client machines  
 
     ```bash
     $ cat /etc/ansible/roles/copy_onboarding_pkg.yml
@@ -99,7 +99,7 @@ Create subtask / role files which contribute to an actual task. Create below fil
 
     #!/bin/bash
 
-    # Unzip the file and create license file
+    # Unzip the archive and create the onboarding file
     mkdir -p /etc/opt/microsoft/mdatp/
     unzip WindowsDefenderATPOnboardingPackage.zip
     cp mdatp_onboard.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
@@ -109,7 +109,7 @@ Create subtask / role files which contribute to an actual task. Create below fil
     sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
     ```
 
-- Create onboarding blob
+- Create the onboarding file
 
     ```bash
     $ cat setup_blob.yml
@@ -121,7 +121,7 @@ Create subtask / role files which contribute to an actual task. Create below fil
             group: root
             mode: '0744'
 
-    - name: Run a script to create license blob
+    - name: Run a script to create the onboarding file
         script: /root/setup.sh
     ```
 
@@ -136,6 +136,9 @@ Create subtask / role files which contribute to an actual task. Create below fil
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
+
+    > [!NOTE]
+    > In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
 
     - For apt-based distributions use the following YAML file
 
@@ -206,7 +209,7 @@ Create subtask / role files which contribute to an actual task. Create below fil
             - yum:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-insiders-fast
+                enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash

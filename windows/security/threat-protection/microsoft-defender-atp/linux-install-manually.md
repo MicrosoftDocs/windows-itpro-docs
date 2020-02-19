@@ -178,7 +178,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
 2. In Section 1 of the page, set operating system to **Linux Server** and Deployment method to **Local script**.
-3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
 
@@ -189,6 +189,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ ls -l
     total 8
     -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    
     $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: WindowsDefenderATPOnboarding.py

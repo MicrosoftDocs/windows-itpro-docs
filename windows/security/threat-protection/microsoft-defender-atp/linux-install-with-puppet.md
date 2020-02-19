@@ -35,7 +35,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Pupp
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have a Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported puppet modules such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to [Puppet documentation](https://puppet.com/docs) for details.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have a Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
 ## Download onboarding package
 
@@ -59,9 +59,9 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Puppet manifest
 
-You need to create a puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by puppet server. This example makes use of *apt* module available from puppetlabs and assumes that apt module has been installed on your puppet server.
+You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of *apt* module available from puppetlabs and assumes that apt module has been installed on your Puppet server.
 
-Create a folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your puppet installation. This typically is located in */etc/puppetlabs/code/environments/production/modules* on your puppet server. Copy the mdatp_onboard.json file created in above step to *install_mdatp/files* folder. Create *init.pp* file which will contain the deployment instructions.
+Create a folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This typically is located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created in above step to *install_mdatp/files* folder. Create a *init.pp* file which contains the deployment instructions.
 
 ```bash
 $ pwd
@@ -75,15 +75,28 @@ install_mdatp
     └── init.pp
 ```
 
-Contents of *install_mdatp/manifests/init.pp*
+### Contents of `install_mdatp/manifests/init.pp`
+
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
+
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+
+Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+
+In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
+
+> [!NOTE]
+> In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
 
 ```puppet
 class install_mdatp {
 
     if ($osfamily == 'Debian') {
         apt::source { 'microsoftpackages' :
-            location => 'https://packages.microsoft.com/ubuntu/18.04/prod', # change the version and distro based on your OS 
-            release  => 'stable',
+            location => 'https://packages.microsoft.com/[distro]/[version]/prod', # change the version and distro based on your OS 
+            release  => '[channel]',
             repos    => 'main',
             key      => {
                 'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
@@ -93,7 +106,7 @@ class install_mdatp {
     }
     else {
         yumrepo { 'microsoftpackages' :
-            baseurl  => 'https://packages.microsoft.com/rhel/7/prod', # change the version and distro based on your OS 
+            baseurl  => 'https://packages.microsoft.com/[distro]/[version]/[channel]', # change the version and distro based on your OS 
             enabled  => 1,
             gpgcheck => 1,
             gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
@@ -127,7 +140,7 @@ node "default" {
 
 Enrolled agent devices periodically poll the Puppet Server, and install new configuration profiles and policies as soon as they are detected.
 
-## Monitoring puppet deployment
+## Monitoring Puppet deployment
 
 On the agent machine, you can also check the onboarding status by running:
 
@@ -135,13 +148,13 @@ On the agent machine, you can also check the onboarding status by running:
 $ mdatp --health
 ...
 licensed                                : true
-orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
+orgId                                   : "[your organization identifier]"
 ...
 ```
 
 - **licensed**: This confirms that the device has an ATP license.
 
-- **orgid**: Your Microsoft Defender ATP org id; it will be the same for your organization.
+- **orgid**: your Microsoft Defender ATP org id; it will be the same for your organization.
 
 ## Check onboarding status
 
