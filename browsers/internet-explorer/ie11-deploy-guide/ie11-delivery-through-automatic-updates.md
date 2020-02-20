@@ -101,7 +101,7 @@ Internet Explorer 11 will be released to WSUS as an Update Rollup package. There
 
 11. Expand *ComputerName*, expand **Updates**, and then click **All Updates**.
 
-12. Choose **Unapproved** in the **Approval**drop down box.
+12. Choose **Unapproved** in the **Approval** drop down box.
 
 13. Check to make sure that Microsoft Internet Explorer 11 is listed as an unapproved update.
 
