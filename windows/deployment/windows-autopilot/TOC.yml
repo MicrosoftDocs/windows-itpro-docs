@@ -5,13 +5,13 @@
   - name: Understand Windows Autopilot
     items:
       - name: Overview
-         href: file1.md
+        href: file1.md
       - name: Requirements
         href: file1.md  
       - name: Scenarios and capabilities
         href: file1.md
       - name: Get started
-         href: file1.md     
+        href: file1.md     
    - name: Deployment scenarios
      items:
       - name: Deployment processes
@@ -53,6 +53,6 @@
         - name: Registration authorization
           href: file1.md
         - name: Device guidelines
-           href: file1.md
+          href: file1.md
         - name: Motherboard replacement
-           href: file1.md
+          href: file1.md
