@@ -134,15 +134,15 @@ GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 ### Block Office applications from creating executable content
 
-This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating executable content.
+This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content.
 
-This rule targets a typical behavior where malware uses Office as a vector to break out of Office and save malicious components to disk, where they persist and survive a computer reboot. This rule prevents malicious code from being written to disk.
+Malware that abuse Office as a vector may attempt to break out of Office and save malicious components to disk. The malicious components saved to disk will survive a computer reboot and persist on the system. This rule prevents malicious code from being written to disk.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
 Intune name: Office apps/macros creating executable content
 
-Configuration Manager name: Block Office applications from creating executable content
+SCCM name: Block Office applications from creating executable content
 
 GUID: 3B576869-A4EC-4529-8536-B80A7769E899
 
