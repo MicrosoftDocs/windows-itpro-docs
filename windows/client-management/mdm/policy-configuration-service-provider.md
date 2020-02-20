@@ -3334,6 +3334,23 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-storage.md#storage-allowdiskhealthmodelupdates" id="storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
   <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesenseglobal"id="storage-allowstoragesenseglobal">Storage/AllowStorageSenseGlobal</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup"id="storage-allowstoragesensetemporaryfilescleanup">Storage/AllowStorageSenseTemporaryFilesCleanup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold"id="storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold"id="storage-configstoragesensedownloadscleanupthreshold">Storage/ConfigStorageSenseDownloadsCleanupThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenseglobalcadence"id="storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenserecyclebincleanupthreshold"id="storage-configstoragesenserecyclebincleanupthreshold">Storage/ConfigStorageSenseRecycleBinCleanupThreshold</a>
+  <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
   <dd>
