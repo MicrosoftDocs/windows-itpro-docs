@@ -18,8 +18,11 @@ ms.topic: article
 
 # MachineAction resource type
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+- See [Response Actions](respond-machine-alerts.md) for more information
 
 | Method                                                            | Return Type                        | Description                                                 |
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
@@ -33,6 +36,7 @@ ms.topic: article
 | [Remove app restriction](unrestrict-code-execution.md)            | [Machine Action](machineaction.md) | Remove application execution restriction.                   |
 | [Run antivirus scan](run-av-scan.md)                              | [Machine Action](machineaction.md) | Run an AV scan using Windows Defender (when applicable).    |
 | [Offboard machine](offboard-machine-api.md)                       | [Machine Action](machineaction.md) | Offboard [machine](machine.md) from Microsoft Defender ATP. |
+| [Stop and quarantine file](stop-and-quarantine-file.md)           | [Machine Action](machineaction.md) | Stop execution of a file on a machine and delete it.        |
 
 <br>
 
@@ -42,11 +46,31 @@ ms.topic: article
 |:--------------------|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                  | Guid           | Identity of the [Machine Action](machineaction.md) entity.                                                                                                                                                     |
 | type                | Enum           | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution" |
+| scope				  | string         | Scope of the action. "Full" or "Selective" in case of Isolation, "Quick" or "Full" in case of Anti-Virus scan.						                                                                            |
 | requestor           | String         | Identity of the person that executed the action.                                                                                                                                                               |
 | requestorComment    | String         | Comment that was written when issuing the action.                                                                                                                                                              |
 | status              | Enum           | Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".                                                                                 |
-| machineId           | String         | Id of the machine on which the action was executed.                                                                                                                                                            |
+| machineId           | String         | Id of the [machine](machine.md) on which the action was executed.                                                                                                                                              |
+| machineId           | String         | Name of the [machine](machine.md) on which the action was executed.                                                                                                                                            |
 | creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | The last date and time when the action status was updated.                                                                                                                                                     |
-| relatedFileInfo     | Class          | Contains two Properties. 1) string 'fileIdentifier' 2) Enum 'fileIdentifierType' with the possible values: "Sha1" ,"Sha256" and "Md5".                                                                         |
+| relatedFileInfo     | Class          | Contains two Properties. string ```fileIdentifier```, Enum ```fileIdentifierType``` with the possible values: "Sha1" ,"Sha256" and "Md5".                                                                         |
 
+
+## Json representation
+
+```json
+{
+        "id": "5382f7ea-7557-4ab7-9782-d50480024a4e",
+        "type": "Isolate",
+		"scope": "Selective",
+        "requestor": "Analyst@TestPrd.onmicrosoft.com",
+        "requestorComment": "test for docs",
+        "status": "Succeeded",
+        "machineId": "7b1f4967d9728e5aa3c06a9e617a22a4a5a17378",
+        "computerDnsName": "desktop-test",
+        "creationDateTimeUtc": "2019-01-02T14:39:38.2262283Z",
+        "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
+        "relatedFileInfo": null
+}
+```

@@ -10,8 +10,10 @@ ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -161,7 +163,7 @@ You can implement Credential Guard on Windows 10 Enterprise devices by turning 
 
     -   Configure Credential Guard registry settings by using the Registry Editor or the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
-    You can automate these manual steps by using a management tool such as System Center Configuration Manager.
+    You can automate these manual steps by using a management tool such as Microsoft Endpoint Configuration Manager.
 
 For more information about implementing Credential Guard, see the following resources:
 

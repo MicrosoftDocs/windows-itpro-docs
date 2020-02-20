@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/20/2019
+ms.date: 1/22/2020
 ms.reviewer: jessko
 manager: dansimp
 ms.audience: itpro
@@ -73,7 +73,7 @@ Surface Pro X was designed to use Windows Update to simplify the process of keep
 
 - Use Windows Update or Windows Update for Business for maintaining the latest drivers and firmware. For more information, see [Deploy Updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 - If your procedures require using a Windows Installer .msi file, contact [Surface for Business support](https://support.microsoft.com/help/4037645). 
-- For more information about deploying and managing updates on Surface devices, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+- For more information about deploying and managing updates on Surface devices, see [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).
 - Note that Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X.
 
 ## Running apps on Surface Pro X
@@ -124,7 +124,7 @@ The following tables show the availability of selected key features on Surface P
 | Deployment                              | Surface Pro 7 | Surface Pro X | Notes                                                                                                                           |
 | --------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Windows Autopilot                       | Yes           | Yes           |                                                                                                                                 |
-| Support for Network Boot (PXE)          | Yes           | Yes           |                                                                                                                                 |
+| Support for Network Boot (PXE)          | Yes           | No           |                                                                                                                                 |
 | Windows Configuration Designer          | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
 | WinPE                                   | Yes           | Yes           | Not recommended for Surface Pro X. Microsoft does not provide the necessary .ISO and drivers to support WinPE with Surface Pro X. |
 | Endpoint Configuration Manager: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |

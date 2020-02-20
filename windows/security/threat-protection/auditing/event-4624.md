@@ -158,7 +158,7 @@ This event generates when a logon session is created (on destination machine). I
 
 -   **Restricted Admin Mode** \[Version 2\] \[Type = UnicodeString\]**:** Only populated for **RemoteInteractive** logon type sessions. This is a Yes/No flag indicating if the credentials provided were passed using Restricted Admin mode. Restricted Admin mode was added in Win8.1/2012R2 but this flag was added to the event in Win10.
 
-    Reference: <http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx>.
+    Reference: <https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx>.
 
     If not a **RemoteInteractive** logon, then this will be "-" string.
 

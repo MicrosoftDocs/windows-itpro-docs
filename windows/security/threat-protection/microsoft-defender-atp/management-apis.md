@@ -1,8 +1,8 @@
 ---
 title: Overview of management and APIs
 ms.reviewer: 
-description: 
-keywords: 
+description: Learn about the management tools and API categories in Microsoft Defender ATP
+keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -29,40 +29,51 @@ Microsoft Defender ATP supports a wide variety of options to ensure that custome
 
 Acknowledging that customer environments and structures can vary, Microsoft Defender ATP was created with flexibility and granular control to fit varying customer requirements. 
 
-Machine onboarding is fully integrated into System Center Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
+## Endpoint onboarding and portal access 
+
+Machine onboarding is fully integrated into Microsoft Endpoint Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
 
 Microsoft Defender ATP provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams
 - Tiered model security operations teams
-- Fully segregated devisions with single centralized global security operations teams 
+- Fully segregated divisions with single centralized global security operations teams 
 
-The Microsoft Defender ATP solution is built on top of an integration-ready platform:
-- It supports integration with a number of security information and event management (SIEM) solutions and also exposes APIs to fully support pulling all the alerts and detection information into any SIEM solution. 
-- It supports a rich set of application programming interface (APIs) providing flexibility for those who are already heavily invested in data enrichment and automation:
-   - Enriching events coming from other security systems with foot print or prevalence information
-   - Triggering file or machine level response actions through APIs
-   - Keeping systems in-sync such as importing machine tags from asset management systems into Microsoft Defender ATP, synchronize alerts and incidents status cross ticketing systems with Microsoft Defender ATP.
+## Available APIs
+The Microsoft Defender ATP solution is built on top of an integration-ready platform.
 
-An important aspect of machine management is the ability to analyze the environment from varying and broad perspectives. This often helps drive new insights and proper priority identification: 
-- The Secure score dashboard provides metrics based method of prioritizing the most important proactive security measures.
-- Microsoft Defender ATP includes a built-in PowerBI based reporting solution to quickly review trends and details related to Microsoft Defender ATP alerts and secure score of  machines. The platform also supports full customization of the reports, including mashing of Microsoft Defender ATP data with your own data stream to produce business specific reports.
+Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities.
+
+![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)  
+
+The Microsoft Defender ATP APIs can be grouped into three:
+- Microsoft Defender ATP APIs 
+- Raw data streaming API
+- SIEM integration
+
+## Microsoft Defender ATP APIs
+
+Microsoft Defender ATP offers a layered API model exposing data and capabilities in a structured, clear and easy to use model, exposed through a standard Azure  AD-based authentication and authorization model allowing access in context of users or SaaS applications. The API model was designed to expose entities and capabilities in a consistent form. 
+
+Watch this video for a quick overview of Microsoft Defender ATP's APIs. 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+
+The **Investigation API** exposes the richness of Microsoft Defender ATP - exposing calculated or 'profiled' entities (for example, machine, user, and file) and discrete events (for example, process creation and file creation) which typically describes a behavior related to an entity, enabling access to data via investigation interfaces allowing a query-based access to data. For more information see, [Supported APIs](exposed-apis-list.md).
+
+The **Response API** exposes the ability to take actions in the service and on devices, enabling customers to ingest indicators, manage settings, alert status, as well as take response actions on devices programmatically such as isolate machines from the network, quarantine files, and others. 
+
+## Raw data streaming API 
+Microsoft Defender ATP raw data streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
+
+The Microsoft Defender ATP event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
+
+For more information see, [Raw data streaming API](raw-data-export.md).
 
 
-## In this section
-Topic | Description 
-:---|:---
-Understand threat intelligence concepts | Learn about alert definitions, indicators of compromise, and other threat intelligence concepts.
-Managed security service provider | Get a quick overview on managed security service provider support.
-
-
-
+## SIEM API
+When you enable security information and event management (SIEM) integration it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant. For more information see, [SIEM integration](enable-siem-integration.md)
 
 ## Related topics
-- [Onboard machines](onboard-configure.md)
-- [Enable the custom threat intelligence application](enable-custom-ti.md)
-- [Microsoft Defender ATP Public API](apis-intro.md)
-- [Pull alerts to your SIEM tools](configure-siem.md)
-- [Create and build Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Role-based access control](rbac.md)
-
+- [Access the Microsoft Defender Advanced Threat Protection APIs ](apis-intro.md)
+- [Supported APIs](exposed-apis-list.md)
+- [Technical partner opportunities](partner-integration.md)
 

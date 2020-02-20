@@ -35,7 +35,7 @@ You can use the following operations to customize the list of automated investig
 
 
 **Triggering alert**</br>
-The alert the initiated the automated investigation.
+The alert that initiated the automated investigation.
 
 **Status**</br>
 An automated investigation can be in one of the following status:
