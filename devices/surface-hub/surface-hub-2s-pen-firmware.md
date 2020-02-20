@@ -1,5 +1,5 @@
 ---
-title: "Update firmware on Surface Hub 2 Pen"
+title: "Update pen firmware on Surface Hub 2S"
 description: "This page describes how to update firmware for the Surface Hub 2 Pen."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -13,7 +13,8 @@ ms.date: 02/29/2020
 ms.localizationpriority: Medium
 ---
 
-# Update firmware on Surface Hub 2 Pen
+# Update pen firmware on Surface Hub 2S
+
 You can update the firmware on Surface Hub 2 Pen from a separate PC running Windows 10.
 
 ## To update firmware:
