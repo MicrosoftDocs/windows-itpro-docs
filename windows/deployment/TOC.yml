@@ -191,7 +191,7 @@
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
                     - name: VAMT technical reference
-                    href: file1.md
+                      href: file1.md
                     - name: Introduction to VAMT
                       href: file1.md
                     - name: Active Directory-Based Activation Overview
