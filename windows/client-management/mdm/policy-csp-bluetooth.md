@@ -448,7 +448,9 @@ There are multiple levels of encryption strength when pairing Bluetooth devices.
 <!--SupportedValues-->
 The following list shows the supported values:  
 - 0 (default) - All Bluetooth traffic is allowed.
-- N - A number from 1 through 16 representing the bytes that must be used in the encryption process. At this time, 16 is the largest allowed value for N and 16 bytes is the largest key size that Bluetooth supports so far. If you wish to enforce Windows to use Bluetooth encryption at all times, but do not care about the precise encryption key strength, use a value of 1.
+- N - A number from 1 through 16 representing the bytes that must be used in the encryption process. Currently, 16 is the largest allowed value for N and 16 bytes is the largest key size that Bluetooth supports. If you want to enforce Windows to always use Bluetooth encryption, ignoring the precise encryption key strength, use 1 as the value for N.
+
+For more information on allowed key sizes, refer to Bluetooth Core Specification v5.1.
 
 <!--/SupportedValues-->
 <!--Example-->
