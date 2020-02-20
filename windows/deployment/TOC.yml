@@ -125,6 +125,18 @@
           href: file1.md
         - name: Deploy Windows 10 with Microsoft 365
           href: file1.md
+        - name: How Windows Update works (new)
+          href: file1.md
+        - name: Additional Windows Update settings
+          href: file1.md
+        - name: Delivery Optimization reference
+          href: file1.md
+        - name: Windows 10 in S mode
+          items:
+            - name:  Windows 10 in S mode overview
+              href: file1.md
+            - name: Switch to Windows 10 Pro/Enterprise from S mode
+              href: file1.md
         - name: Subscription Activation
           items:
             - name: Windows 10 Subscription Activation
@@ -155,12 +167,7 @@
               href: file1.md
             - name: Submit Windows 10 upgrade errors
               href: file1.md
-        - name: How Windows Update works (new)
-          href: file1.md
-        - name: Additional Windows Update settings
-          href: file1.md
-        - name: Delivery Optimization reference
-          href: file1.md
+
 
         - name: Windows 10 deployment tools
           items:
@@ -423,11 +430,8 @@
                   href: file1.md
                 - name: Use the Volume Activation Management Tool [client]
                   href: file1.md
-                - name: "Appendix: Information sent to Microsoft during activation [client]""
+                - name: "Appendix: Information sent to Microsoft during activation [client]"
                   href: file1.md
-            - name: Windows 10 in S mode
-              items:
-                - name: Switch to Windows 10 Pro/Enterprise from S mode
-                  href: file1.md
-            - name: Install fonts in Windows 10
-              href: file1.md
+
+        - name: Install fonts in Windows 10
+          href: file1.md
