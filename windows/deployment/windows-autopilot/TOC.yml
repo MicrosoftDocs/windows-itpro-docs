@@ -1,51 +1,49 @@
-- name: Deploy with Windows Autopilot
-  items:
-    - name: Windows Autopilot deployment
-      href: file1.md
-    - name: What's new in Windows Autopilot
-      href: file1.md
-    - name: Understand Windows Autopilot
-      items:
-        - name: Overview
-          href: file1.md
-        - name: Requirements
-          href: file1.md  
-        - name: Scenarios and capabilities
-          href: file1.md
-        - name: Get started
-          href: file1.md     
-    - name: Deployment scenarios
-      items:
-        - name: Deployment processes
-          href: file1.md
-        - name: User-driven mode
-          href: file1.md  
-        - name: Self-deploying mode
-          href: file1.md
-        - name: Windows Autopilot Reset
-          href: file1.md
-        - name: White glove
-          href: file1.md
-        - name: Support for existing devices
-          href: file1.md
-    - name: Administer Windows Autopilot
-      items:
-        - name: Register devices
-          href: file1.md
-        - name: Configure device profiles
-          href: file1.md  
-        - name: Enrollment Status Page
-          href: file1.md
-        - name: BitLocker encryption
-          href: file1.md
-        - name: DFCI management
-          href: file1.md
-        - name: Windows Autopilot update
-          href: file1.md
-        - name: Troubleshooting
-          href: file1.md
-        - name: Known issues
-          href: file1.md
+  - name: Windows Autopilot deployment
+    href: file1.md
+  - name: What's new in Windows Autopilot
+    href: file1.md
+  - name: Understand Windows Autopilot
+    items:
+      - name: Overview
+         href: file1.md
+      - name: Requirements
+        href: file1.md  
+      - name: Scenarios and capabilities
+        href: file1.md
+      - name: Get started
+         href: file1.md     
+   - name: Deployment scenarios
+     items:
+      - name: Deployment processes
+        href: file1.md
+      - name: User-driven mode
+        href: file1.md  
+      - name: Self-deploying mode
+        href: file1.md
+      - name: Windows Autopilot Reset
+        href: file1.md
+      - name: White glove
+        href: file1.md
+      - name: Support for existing devices
+        href: file1.md
+  - name: Administer Windows Autopilot
+    items:
+      - name: Register devices
+        href: file1.md
+      - name: Configure device profiles
+        href: file1.md  
+      - name: Enrollment Status Page
+        href: file1.md
+      - name: BitLocker encryption
+        href: file1.md
+      - name: DFCI management
+        href: file1.md
+      - name: Windows Autopilot update
+        href: file1.md
+      - name: Troubleshooting
+        href: file1.md
+      - name: Known issues
+        href: file1.md
     - name: Support
       items:
         - name: FAQ
@@ -55,6 +53,6 @@
         - name: Registration authorization
           href: file1.md
         - name: Device guidelines
-          href: file1.md
+           href: file1.md
         - name: Motherboard replacement
-          href: file1.md
+           href: file1.md
