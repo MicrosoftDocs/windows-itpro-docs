@@ -59,7 +59,7 @@ In general you need to take the following steps:
   - Oracle Enterprise Linux 7
 
 - Minimum kernel version 2.6.38
-- The *fanotify* kernel option must be enabled
+- The `fanotify` kernel option must be enabled
 - Disk space: 650 MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
