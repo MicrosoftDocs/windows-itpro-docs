@@ -43,6 +43,7 @@ This FAQ addresses the following questions and issues:
 - [I'm having problems with the HoloLens clicker](#im-having-problems-with-the-hololens-clicker)
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
+- [HoloLens Management Questions](#hololens-management-questions)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
 - [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 
@@ -203,6 +204,21 @@ Here are some things to try if you can't connect to Wi-Fi on HoloLens:
 If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).
 
 [Back to list](#list)
+
+## HoloLens Management Questions
+
+1. **Can I use SCCM to manage the HoloLens?**
+    1. No. An MDM must be used to manage the HoloLens
+1. **Can I use Active Directory to manage HoloLens user accounts?**
+    1. No, Azure AD must be used to manage user accounts.
+1. **Is the HoloLens capable of ADCS auto enrollment?**
+    1. No
+1. **Can the HoloLens participate in WNA/IWA?**
+    1. No
+1. **Does the HoloLens support branding?**
+    1. No. However, one work around is to create a custom app and enable Kiosk mode. The custom app can have branding which can then launch other apps (such as Remote Assist). Another option is to change all of the users profile pictures in AAD to your company logo. (However, this may not be desirable for all scenarios)
+1. **What logging capabilities are available on HL1 and HL2?**
+    1. Logging is limited to traces captured in developer/troubleshooting scenarios or telemetry sent to Microsoft servers.
 
 ## How do I delete all spaces?
 

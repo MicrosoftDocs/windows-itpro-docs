@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
+audience: ITPro
 manager: bradke
 appliesto:
 - HoloLens (1st gen)
@@ -50,12 +51,12 @@ HoloLens does support a limited set of cloud disconnected experiences.
 
 ### HoloLens Specific Network Requirements
 
-Make sure that these ports and URLs are allowed on your network firewall. This will enable HoloLens to function properly. The latest list can be found [here](hololens-offline.md).
+Make sure that [this list](hololens-offline.md) of endpoints are allowed on your network firewall. This will enable HoloLens to function properly.
 
 ### Remote Assist Specific Network Requirements
 
 1. The recommended bandwidth for optimal performance of Remote Assist is 1.5Mbps. Detailed network requirements and additional information can be found [here](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
-**Please note, if you don’t network have network speeds of at least 1.5Mbps, Remote Assist will still work. However, quality may suffer.**
+**(Please note, if you don’t network have network speeds of at least 1.5Mbps, Remote Assist will still work. However, quality may suffer).**
 1. Make sure that these ports and URLs are allowed on your network firewall. This will enable Microsoft Teams to function. The latest list can be found [here](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 ### Guides Specific Network Requirements
@@ -65,17 +66,17 @@ Guides only require network access to download and use the app.
 ## Azure Active Directory Guidance
 
 > [!NOTE]
-> This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
+> This step is only necessary if your company plans on managing the HoloLens.
 
 1. Ensure that you have an Azure AD License.
-Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md)for additional information.
+Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md) for additional information.
 
 1. If you plan on using Auto Enrollment, you will have to [Configure Azure AD enrollment.](https://docs.microsoft.com/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
 1. Ensure that your company’s users are in Azure Active Directory (Azure AD).
 Instructions for adding users can be found [here](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
-1. We suggest that users who will be need similar licenses are added to a group.
+1. We suggest that users who need similar licenses are added to the same group.
     1. [Create a Group](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [Add users to groups](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
@@ -100,10 +101,11 @@ These steps ensure that your company’s users (or a group of users) can add dev
 ### Ongoing device management
 
 > [!NOTE]
-> This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
+> This step is only necessary if your company plans to manage the HoloLens.
+
 Ongoing device management will depend on your mobile device management infrastructure.  Most have the same general functionality but the user interface may vary widely.
 
-1. [CSPs (Configuration Service Providers)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) allows you to create and deploy management settings for the devices on your network. Some CSPs are supported by HoloLens devices. (See the list of CSPs for HoloLens [here](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)).
+1. [CSPs (Configuration Service Providers)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) allows you to create and deploy management settings for the devices on your network. A list of CSPs for HoloLens can be found [here](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices).
 
 1. [Compliance policies](https://docs.microsoft.com/intune/device-compliance-get-started) are rules and settings that devices must meet to be compliant in your corporate infrastructure. Use these policies with Conditional Access to block access to company resources for devices that are non-compliant. For example, you can create a policy that requires Bitlocker be enabled.
 
@@ -144,7 +146,7 @@ Read more about [installing apps on HoloLens](https://docs.microsoft.com/hololen
 
 ### Certificates
 
-You can distribute certifcates through your MDM provider. If your company requires certificates, Intune supports PKCS, PFX, and SCEP. It is important to understand which certificate is right for your company. Please visit [here](https://docs.microsoft.com/intune/protect/certificates-configure) to determine which cert is best for you. If you plan to use certs for HoloLens Authentication, PFX or SCEP may be right for you.
+You can distribute certificates through your MDM provider. If your company requires certificates, Intune supports PKCS, PFX, and SCEP. It is important to understand which certificate is right for your company. Please visit [here](https://docs.microsoft.com/intune/protect/certificates-configure) to determine which cert is best for you. If you plan to use certificates for HoloLens Authentication, PFX or SCEP may be right for you.
 
 Steps for SCEP can be found [here](https://docs.microsoft.com/intune/protect/certificates-profile-scep).
 
@@ -161,8 +163,8 @@ Directions for upgrading to the commercial suite can be found [here](https://doc
 
 1. Check your app settings
     1. Log into your Microsoft Store Business account
-    1. **Manage** > **Products and Services** > **Apps and Software** > **Select the app you want to sync** > **Private Store Availability** > **Select “Everyone” or “Specific Groups”*
-    1. If you do not see your apps in **Intune** > **Client Apps** > **Apps** , you may have to [sync your apps](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) again.
+    1. **Manage > Products and Services > Apps and Software > Select the app you want to sync > Private Store Availability > Select “Everyone” or “Specific Groups”**
+    1. If you do not see your apps in **Intune > Client Apps > Apps** , you may have to [sync your apps](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) again.
 
 1. [Create a device profile for Kiosk mode](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
 
