@@ -12,20 +12,20 @@
         href: file1.md
       - name: Get started
         href: file1.md     
-   - name: Deployment scenarios
-     items:
-       - name: Deployment processes
-         href: file1.md
-       - name: User-driven mode
-         href: file1.md  
-       - name: Self-deploying mode
-         href: file1.md
-       - name: Windows Autopilot Reset
-         href: file1.md
-       - name: White glove
-         href: file1.md
-       - name: Support for existing devices
-         href: file1.md
+  - name: Deployment scenarios
+    items:
+      - name: Deployment processes
+        href: file1.md
+      - name: User-driven mode
+        href: file1.md  
+      - name: Self-deploying mode
+        href: file1.md
+      - name: Windows Autopilot Reset
+        href: file1.md
+      - name: White glove
+        href: file1.md
+      - name: Support for existing devices
+        href: file1.md
   - name: Administer Windows Autopilot
     items:
       - name: Register devices
@@ -44,15 +44,15 @@
         href: file1.md
       - name: Known issues
         href: file1.md
-    - name: Support
-      items:
-        - name: FAQ
-          href: file1.md
-        - name: Contacts
-          href: file1.md
-        - name: Registration authorization
-          href: file1.md
-        - name: Device guidelines
-          href: file1.md
-        - name: Motherboard replacement
-          href: file1.md
+  - name: Support
+    items:
+      - name: FAQ
+        href: file1.md
+      - name: Contacts
+        href: file1.md
+      - name: Registration authorization
+        href: file1.md
+      - name: Device guidelines
+        href: file1.md
+      - name: Motherboard replacement
+        href: file1.md
