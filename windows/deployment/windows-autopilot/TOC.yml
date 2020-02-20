@@ -1,490 +1,60 @@
-         - name: Deploy with Windows Autopilot
-          items:
-            - name: Windows Autopilot deployment
-              href: file1.md
-            - name: What's new in Windows Autopilot
-              href: file1.md
-            - name: Understand Windows Autopilot
-              items:
-                - name: Overview
-                  href: file1.md
-                - name: Requirements
-                  href: file1.md  
-                - name: Scenarios and capabilities
-                  href: file1.md
-                - name: Get started
-                  href: file1.md              
-            - name: Deployment scenarios
-              items:
-                - name: Deployment processes
-                  href: file1.md
-                - name: User-driven mode
-                  href: file1.md  
-                - name: Self-deploying mode
-                  href: file1.md
-                - name: Windows Autopilot Reset
-                  href: file1.md
-                - name: White glove
-                  href: file1.md
-                - name: Support for existing devices
-                  href: file1.md
-            - name: Administer Windows Autopilot
-              items:
-                - name: Register devices
-                  href: file1.md
-                - name: Configure device profiles
-                  href: file1.md  
-                - name: Enrollment Status Page
-                  href: file1.md
-                - name: BitLocker encryption
-                  href: file1.md
-                - name: DFCI management
-                  href: file1.md
-                - name: Windows Autopilot update
-                  href: file1.md
-                - name: Troubleshooting
-                  href: file1.md
-                - name: Known issues
-                  href: file1.md
-            - name: Support
-              items:
-                - name: FAQ
-                  href: file1.md
-                - name: Contacts
-                  href: file1.md
-                - name: Registration authorization
-                  href: file1.md
-                - name: Device guidelines
-                  href: file1.md
-                - name: Motherboard replacement
-                  href: file1.md
-        - name: Deploy with Configuration Manager
-          items:
-            - name: Integrate Configuration Manager with MDT       
-              href: file1.md
-            - name: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-              href: file1.md
-            - name: Create a custom Windows PE boot image with Configuration Manager
-              href: file1.md
-            - name: Add a Windows 10 operating system image using Configuration Manager
-              href: file1.md
-            - name: Create an application to deploy with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
-              href: file1.md
-            - name: Create a task sequence with Configuration Manager and MDT
-              href: file1.md
-            - name: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager
-              href: file1.md
-            - name: Deploy Windows 10 using PXE and Configuration Manager
-              href: file1.md
-            - name: Monitor the Windows 10 deployment with Configuration Manager
-              href: file1.md
-            - name: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Perform an in-place upgrade to Windows 10 using Configuration Manager
-              href: file1.md
-        - name: Deploy with the Microsoft Deployment Toolkit
-          items:
-            - name: Get started with MDT       
-              href: file1.md
-            - name: Deploy Windows 10 with MDT       
-              items:
-                - name: Prepare for deployment with MDT
-                  href: file1.md
-                - name: Create a Windows 10 reference image
-                  href: file1.md
-                - name: Deploy a Windows 10 reference image using MDT
-                  href: file1.md
-                - name: Build a distributed environment for Windows 10 deployment
-                  href: file1.md
-                - name: Refresh a Windows 7 computer with Windows 10
-                  href: file1.md
-                - name: Replace a Windows 7 computer with Windows 10
-                  href: file1.md
-                - name: Perform an in-place upgrade to Windows 10 with MDT
-                  href: file1.md
-            - name: Customize MDT       
-              items:
-                - name: Configure MDT settings
-                  href: file1.md
-                - name: Set up MDT for BitLocker
-                  href: file1.md
-                - name: Configure MDT deployment share rules
-                  href: file1.md
-                - name: Configure MDT UserExit scripts
-                  href: file1.md
-                - name: Simulate a Windows 10 deployment in a test environment
-                  href: file1.md
-                - name: Use the MDT database to state Windows 10 deployment information
-                  href: file1.md
-                - name: Assign applications using roles in MDT
-                  href: file1.md
-                - name: Use web services in MDT
-                  href: file1.md
-                - name: Use Orchestrator runbooks with MDT
-                  href: file1.md
-
-    - name: Manage Windows 10 updates
-      items: 
-        - name: Manage updates from the cloud
-          items: 
-            - name: Manage updates with Configuration Manager
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-            - name: Manage updates with Intune
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-            - name: Manage with Group Policy 
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-        - name: Manage updates locally
-          items: 
-            - name: Manage updates with WSUS
-              href: file1.md
-            - name: Manage updates using images
-              href: file1.md
-        - name: Monitor updates
-          items: 
-            - name: Monitor updates with Update Compliance
-              href: file1.md
-            - name: Monitor updates with Desktop Analytics
-              href: file1.md
-            - name: Monitor Delivery Optimization
-              href: file1.md                 
-
-    - name: Reference
-      items:
-        - name: Windows 10 upgrade paths
-          href: file1.md
-        - name: Windows 10 edition upgrade
-          href: file1.md
-        - name: Deploy Windows 10 with Microsoft 365
-          href: file1.md
-        - name: How Windows Update works (new)
-          href: file1.md
-        - name: Additional Windows Update settings
-          href: file1.md
-        - name: Delivery Optimization reference
-          href: file1.md
-        - name: Windows 10 in S mode
-          items:
-            - name:  Windows 10 in S mode overview
-              href: file1.md
-            - name: Switch to Windows 10 Pro/Enterprise from S mode
-              href: file1.md
-        - name: Subscription Activation
-          items:
-            - name: Windows 10 Subscription Activation
-              href: file1.md
-            - name: Windows 10 Enterprise E3 in CSP
-              href: file1.md
-            - name: Configure VDA for Subscription Activation
-              href: file1.md
-            - name: Deploy Windows 10 Enterprise licenses
-              href: file1.md
-        - name: Resolve upgrade errors
-          items:
-            - name: Resolve Windows 10 upgrade errors
-              href: file1.md
-            - name: Quick fixes
-              href: file1.md
-            - name: SetupDiag
-              href: file1.md
-            - name: Troubleshooting upgrade errors
-              href: file1.md
-            - name: Windows error reporting
-              href: file1.md
-            - name: Upgrade error codes
-              href: file1.md
-            - name: Log files
-              href: file1.md
-            - name: Resolution procedures
-              href: file1.md
-            - name: Submit Windows 10 upgrade errors
-              href: file1.md
-
-
-        - name: Windows 10 deployment tools
-          items:
-            - name: Windows 10 deployment scenarios and tools
-              items:
-                - name: Convert MBR partition to GPT
-                - name: Configure a PXE server to load Windows PE
-                - name: Windows ADK for Windows 10 scenarios for IT Pros
-                - name: Windows To Go
-                  items:
-                    - name: Deploy Windows To Go in your organization
-                      href: file1.md
-                    - name: Feature overview
-                      items:
-                        - name: "Windows To Go: feature overview"
-                          href: file1.md
-                        - name: Best practice recommendations for Windows To Go
-                          href: file1.md
-                        - name: Deployment considerations for Windows To Go
-                          href: file1.md
-                        - name: Prepare your organization for Windows To Go
-                          href: file1.md
-                        - name: Security and data protection considerations for Windows To Go
-                          href: file1.md
-                        - name: "Windows To Go: frequently asked questions"
-                          href: file1.md
-        
-                - name: Volume Activation Management Tool (VAMT) technical reference
-                  items:
-                    - name: VAMT technical reference
-                      href: file1.md
-                    - name: Introduction to VAMT
-                      href: file1.md
-                    - name: Active Directory-Based Activation Overview
-                      href: file1.md
-                    - name: Install and Configure VAMT
-                      href: file1.md
-                    - name: VAMT Requirements
-                      href: file1.md
-                    - name: Install VAMT
-                      href: file1.md
-                    - name: Configure Client Computers
-                      href: file1.md
-                    - name: Add and Manage Products
-                      href: file1.md
-                    - name: Add and Remove Computers
-                      href: file1.md
-                    - name: Update Product Status
-                      href: file1.md
-                    - name: Remove Products
-                      href: file1.md
-                    - name: Manage Product Keys
-                      href: file1.md
-                    - name: Add and Remove a Product Key
-                      href: file1.md
-                    - name: Install a Product Key
-                      href: file1.md
-                    - name: Install a KMS Client Key
-                      href: file1.md
-                    - name: Manage Activations
-                      href: file1.md
-                    - name: Perform Online Activation
-                      href: file1.md
-                    - name: Perform Proxy Activation
-                      href: file1.md
-                    - name: Perform KMS Activation
-                      href: file1.md
-                    - name: Perform Local Reactivation
-                      href: file1.md
-                    - name: Activate an Active Directory Forest Online
-                      href: file1.md
-                    - name: Activate by Proxy an Active Directory Forest
-                      href: file1.md
-                    - name: Manage VAMT Data
-                      href: file1.md
-                    - name: Import and Export VAMT Data
-                      href: file1.md
-                    - name: Use VAMT in Windows PowerShell
-                      href: file1.md
-                    - name: VAMT Step-by-Step Scenarios
-                      href: file1.md
-                    - name: "Scenario 1: Online Activation"
-                      href: file1.md
-                    - name: "Scenario 2: Proxy Activation"
-                      href: file1.md
-                    - name: "Scenario 3: KMS Client Activation"
-                      href: file1.md
-                    - name: VAMT Known Issues
-                      href: file1.md
-        
-                - name: User State Migration Tool (USMT) technical reference
-                  items:
-                    - name: USMT overview topics
-                      items:
-                        - name: USMT overview
-                          href: file1.md
-                        - name: Getting started with the USMT
-                          href: file1.md
-                        - name: Windows upgrade and migration considerations
-                          href: file1.md
-                    - name: USMT How-to topics
-                      items:
-                        - name: Exclude Files and Settings
-                          href: file1.md
-                        - name: Extract Files from a Compressed USMT Migration Store
-                          href: file1.md
-                        - name: Include Files and Settings
-                          href: file1.md
-                        - name: Migrate Application Settings
-                          href: file1.md
-                        - name: Migrate EFS Files and Certificates
-                          href: file1.md
-                        - name: Migrate User Accounts
-                          href: file1.md
-                        - name: Reroute Files and Settings
-                          href: file1.md
-                        - name: Verify the Condition of a Compressed Migration Store
-                          href: file1.md
-                        - name: USMT Troubleshooting
-                          href: file1.md
-                        - name: Common Issues
-                          href: file1.md
-                        - name: Frequently Asked Questions
-                          href: file1.md
-                        - name: Log Files
-                          href: file1.md
-                        - name: Return Codes
-                          href: file1.md
-                        - name: USMT Resources
-                          href: file1.md
-        
-                    - name: USMT Reference
-                      items:
-                        - name: USMT Requirements
-                          href: file1.md
-                        - name: USMT Best Practices
-                          href: file1.md
-                        - name: How USMT Works
-                          href: file1.md
-                        - name: Plan Your Migration
-                          href: file1.md
-                        - name: Common Migration Scenarios
-                          href: file1.md
-                        - name: What Does USMT Migrate?
-                          href: file1.md
-                        - name: Choose a Migration Store Type
-                          href: file1.md
-                        - name: Migration Store Types Overview
-                          href: file1.md
-                        - name: Estimate Migration Store Size
-                          href: file1.md
-                        - name: Hard-Link Migration Store
-                          href: file1.md
-                        - name: Migration Store Encryption
-                          href: file1.md
-                        - name: Determine What to Migrate
-                          href: file1.md
-                        - name: Determine What to Migrate
-                          href: file1.md
-                        - name: Identify Applications Settings
-                          href: file1.md
-                        - name: Identify Operating System Settings
-                          href: file1.md
-                        - name: Identify File Types, Files, and Folders
-                          href: file1.md
-                        - name: Test Your Migration
-                          href: file1.md
-                        - name: USMT Command-line Syntax
-                          href: file1.md
-                        - name: ScanState Syntax
-                          href: file1.md
-                        - name: LoadState Syntax
-                          href: file1.md
-                        - name: UsmtUtils Syntax
-                          href: file1.md
-                        - name: USMT XML Reference
-                          href: file1.md
-                        - name: Understanding Migration XML Files
-                          href: file1.md
-                        - name: Config.xml File
-                          href: file1.md
-                        - name: Customize USMT XML Files
-                          href: file1.md
-                        - name: Custom XML Examples
-                          href: file1.md
-                        - name: Conflicts and Precedence
-                          href: file1.md
-                        - name: General Conventions
-                          href: file1.md
-                        - name: XML File Requirements
-                          href: file1.md
-                        - name: Recognized Environment Variables
-                          href: file1.md
-                        - name: XML Elements Library
-                          href: file1.md
-                        - name: Offline Migration Reference
-                          href: file1.md
-        
-            - name: Application Compatibility Toolkit (ACT) Technical Reference
-              items:
-                - name: SUA User's Guide
-                  href: file1.md
-                - name: Using the SUA Wizard
-                  href: file1.md
-                - name: Using the SUA Tool
-                  href: file1.md
-                - name: Tabs on the SUA Tool Interface
-                  href: file1.md
-                - name: Showing Messages Generated by the SUA Tool
-                  href: file1.md
-                - name: Applying Filters to Data in the SUA Tool
-                  href: file1.md
-                - name: Fixing Applications by Using the SUA Tool
-                  href: file1.md
-                - name: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
-                  href: file1.md
-                - name: Compatibility Administrator User's Guide
-                  href: file1.md
-                - name: Using the Compatibility Administrator Tool
-                  href: file1.md
-                - name: Available Data Types and Operators in Compatibility Administrator
-                  href: file1.md
-                - name: Searching for Fixed Applications in Compatibility Administrator
-                  href: file1.md
-                - name: Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator
-                  href: file1.md
-                - name: Creating a Custom Compatibility Fix in Compatibility Administrator
-                  href: file1.md
-                - name: Creating a Custom Compatibility Mode in Compatibility Administrator
-                  href: file1.md
-                - name: Creating an AppHelp Message in Compatibility Administrator
-                  href: file1.md
-                - name: Viewing the Events Screen in Compatibility Administrator
-                  href: file1.md
-                - name: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
-                  href: file1.md
-                - name: Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator
-                  href: file1.md
-                - name: Managing Application-Compatibility Fixes and Custom Fix Databases
-                  href: file1.md
-                - name: Understanding and Using Compatibility Fixes
-                  href: file1.md
-                - name: Compatibility Fix Database Management Strategies and Deployment
-                  href: file1.md
-                - name: Testing Your Application Mitigation Packages
-                  href: file1.md
-                - name: Using the Sdbinst.exe Command-Line Tool
-                  href: file1.md
-                - name: Volume Activation [client]
-                  href: file1.md
-                - name: Plan for volume activation [client]
-                  href: file1.md
-                - name: Activate using Key Management Service [client]
-                  href: file1.md
-                - name: Activate using Active Directory-based activation [client]
-                  href: file1.md
-                - name: Activate clients running Windows 10
-                  href: file1.md
-                - name: Monitor activation [client]
-                  href: file1.md
-                - name: Use the Volume Activation Management Tool [client]
-                  href: file1.md
-                - name: "Appendix: Information sent to Microsoft during activation [client]"
-                  href: file1.md
-
-        - name: Install fonts in Windows 10
-          href: file1.md
+- name: Deploy with Windows Autopilot
+ items:
+   - name: Windows Autopilot deployment
+     href: file1.md
+   - name: What's new in Windows Autopilot
+     href: file1.md
+   - name: Understand Windows Autopilot
+     items:
+       - name: Overview
+         href: file1.md
+       - name: Requirements
+         href: file1.md  
+       - name: Scenarios and capabilities
+         href: file1.md
+       - name: Get started
+         href: file1.md     
+   - name: Deployment scenarios
+     items:
+       - name: Deployment processes
+         href: file1.md
+       - name: User-driven mode
+         href: file1.md  
+       - name: Self-deploying mode
+         href: file1.md
+       - name: Windows Autopilot Reset
+         href: file1.md
+       - name: White glove
+         href: file1.md
+       - name: Support for existing devices
+         href: file1.md
+   - name: Administer Windows Autopilot
+     items:
+       - name: Register devices
+         href: file1.md
+       - name: Configure device profiles
+         href: file1.md  
+       - name: Enrollment Status Page
+         href: file1.md
+       - name: BitLocker encryption
+         href: file1.md
+       - name: DFCI management
+         href: file1.md
+       - name: Windows Autopilot update
+         href: file1.md
+       - name: Troubleshooting
+         href: file1.md
+       - name: Known issues
+         href: file1.md
+   - name: Support
+     items:
+       - name: FAQ
+         href: file1.md
+       - name: Contacts
+         href: file1.md
+       - name: Registration authorization
+         href: file1.md
+       - name: Device guidelines
+         href: file1.md
+       - name: Motherboard replacement
+         href: file1.md
