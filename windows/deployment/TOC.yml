@@ -175,7 +175,7 @@
                       href: file1.md
                     - name: Feature overview
                       items:
-                        - name: Windows To Go - feature overview
+                        - name: "Windows To Go: feature overview"
                           href: file1.md
                         - name: Best practice recommendations for Windows To Go
                           href: file1.md
@@ -185,7 +185,7 @@
                           href: file1.md
                         - name: Security and data protection considerations for Windows To Go
                           href: file1.md
-                        - name: Windows To Go - frequently asked questions
+                        - name: "Windows To Go: frequently asked questions"
                           href: file1.md
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
@@ -242,11 +242,11 @@
                       href: file1.md
                     - name: VAMT Step-by-Step Scenarios
                       href: file1.md
-                    - name: Scenario 1 - Online Activation
+                    - name: "Scenario 1: Online Activation"
                       href: file1.md
-                    - name: Scenario 2 - Proxy Activation
+                    - name: "Scenario 2: Proxy Activation"
                       href: file1.md
-                    - name: Scenario 3 - KMS Client Activation
+                    - name: "Scenario 3: KMS Client Activation"
                       href: file1.md
                     - name: VAMT Known Issues
                       href: file1.md
@@ -423,7 +423,7 @@
                   href: file1.md
                 - name: Use the Volume Activation Management Tool [client]
                   href: file1.md
-                - name: Appendix - Information sent to Microsoft during activation [client]
+                - name: "Appendix: Information sent to Microsoft during activation [client]""
                   href: file1.md
             - name: Windows 10 in S mode
               items:
