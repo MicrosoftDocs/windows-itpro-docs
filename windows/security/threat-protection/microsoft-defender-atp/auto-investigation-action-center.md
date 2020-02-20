@@ -31,15 +31,13 @@ The action center consists of two main tabs, as described in the following table
 
 |Tab  |Description  |
 |---------|---------|
-|Pending actions     |Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject.         |
-|History     |Acts as an audit log for all of the following: <br/>- All actions taken by automated investigation and remediation in Microsoft Defender ATP <br/>Actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) <br/>- All commands ran and remediation actions that were applied in Live Response (some actions can be undone) <br/>- Remediation actions applied by Windows Defender Antivirus (some actions can be undone) |
+|Pending actions     |Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. <br/><br/>**NOTE**: The Pending tab appears only if there are pending actions to be approved (or rejected).        |
+|History     |Acts as an audit log for all of the following: <br/>- All actions taken by automated investigation and remediation in Microsoft Defender ATP <br/>Actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) <br/>- All commands ran and remediation actions that were applied in Live Response sessions (some actions can be undone) <br/>- Remediation actions that were applied by Windows Defender Antivirus (some actions can be undone) |
 
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 
-From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
+You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
->[!NOTE]
->The tab will only appear if there are pending actions for that category.
 
 ## Investigations page
 
@@ -51,15 +49,6 @@ Use the **Customize columns** menu to select columns that you'd like to show or 
 
 From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
-### Approve or reject an action
-You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
-
-Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
-
-From the panel, you can click on the Open investigation page link to see the investigation details.
-
-You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
-
-Next steps
+## Next steps
 
 [View and approve remediation actions](manage-auto-investigation.md)
