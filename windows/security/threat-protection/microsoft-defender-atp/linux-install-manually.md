@@ -27,8 +27,8 @@ ms.topic: conceptual
 This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following steps:
 
 - [Configure Microsoft's Linux Software Repository](#configure-microsoft-linux-software-repository)
-- [Download onboarding packages](#download-onboarding-package)
 - [Application installation](#application-installation)
+- [Download onboarding packages](#download-onboarding-package)
 - [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements
@@ -37,7 +37,7 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 
 ## Configure Microsoft Linux Software Repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use this repository are provided below.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
 
@@ -50,7 +50,7 @@ In order to preview new features and provide early feedback, it is recommended t
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
+    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
 
     ```bash
     $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
@@ -100,7 +100,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### Ubuntu and Debian systems
 
-- Install `‘curl’` if not already installed:
+- Install `curl` if it is not already installed:
 
     ```bash
     $ sudo apt-get install curl
@@ -177,8 +177,8 @@ In order to preview new features and provide early feedback, it is recommended t
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In Section 1 of the page, set operating system to **Linux Server** and Deployment method to **Local script**.
-3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+2. In the first drop down, select **Linux Server** as the operating system. In the second drop down, select **Local Script (for up to 10 machines)** as the deployment method.
+3. Click on **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
 
@@ -234,8 +234,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     1
     ```
 
-    - Open a Terminal window
-Copy and run the command below:
+    - Open a Terminal window. Copy and execute the following command:
 
     ``` bash
     $ curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt

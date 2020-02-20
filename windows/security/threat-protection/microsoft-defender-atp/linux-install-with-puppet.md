@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for Linux through Puppet. A successful deployment requires the completion of all of the following steps:
 
-- [Download installation and onboarding packages](#download-onboarding-package)
+- [Download onboarding packages](#download-onboarding-package)
 - [Create Puppet manifest](#create-puppet-manifest)
 - [Deployment](#deployment)
 - [Check onboarding status](#check-onboarding-status)
@@ -42,8 +42,8 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, set operating system to **Linux Server** and in second drop down, Deployment method to **Your preferred Linux configuration management tool**.
-3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+2. In the first drop down, select **Linux Server** as the operating system. In the second drop down, select **Your preferred Linux configuration management tool** as the deployment method.
+3. Click on **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
@@ -89,7 +89,7 @@ Note your distribution and version and identify the closest entry for it under `
 In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
 
 > [!NOTE]
-> In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
+> In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
 
 ```puppet
 class install_mdatp {

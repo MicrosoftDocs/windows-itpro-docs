@@ -28,14 +28,20 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender ATP for Linux manually, execute the following command:
 
-- ### For Debian family distros
-
-```bash
-sudo apt-get install --only-upgrade mdatp
-```
-
-- ### For Redhat family distros
+## RHEL and variants (CentOS and Oracle EL)
 
 ```bash
 sudo yum update mdatp
+```
+
+## SLES and variants
+
+```bash
+sudo zypper update mdatp
+```
+
+## Ubuntu and Debian systems
+
+```bash
+sudo apt-get install --only-upgrade mdatp
 ```

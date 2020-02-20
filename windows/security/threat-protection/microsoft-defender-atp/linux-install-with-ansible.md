@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for Linux through Ansible. A successful deployment requires the completion of all of the following steps:
 
-- [Download the onboarding packages](#download-onboarding-package)
+- [Download onboarding package](#download-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
 - [Deployment](#deployment)
 - [References](#references)
@@ -61,8 +61,8 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, set operating system to **Linux Server** and in second drop down, Deployment method to **Your preferred Linux configuration management tool**.
-3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+2. In the first drop down, select **Linux Server** as the operating system. In the second drop down, select **Your preferred Linux configuration management tool** as the deployment method.
+3. Click on **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
@@ -140,7 +140,7 @@ Create subtask / role files which contribute to an actual task. Create the below
     In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, use *[distro]* as “rhel”.
+    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
 
     - For apt-based distributions use the following YAML file:
 
