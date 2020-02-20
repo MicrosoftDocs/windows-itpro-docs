@@ -249,7 +249,7 @@ See the following examples.
 25. Click **OK** to close the Task Sequence Editor.
 
 > [!NOTE]
-> On Windows 10 1903 and 1909, the **AutopilotConfigurationFile.json** is deleted by the **Prepare Windows for Capture** step. See [Windows Autopilot - known issues](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/known-issues) for more information and a workaround.
+> On Windows 10 1903 and 1909, the **AutopilotConfigurationFile.json** is deleted by the **Prepare Windows for Capture** step. See [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues) for more information and a workaround.
 
 ### Deploy Content to Distribution Points
 
