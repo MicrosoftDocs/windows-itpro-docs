@@ -53,7 +53,7 @@ Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to prov
 You are welcome and encouraged to try developing your applications using Insider builds of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started. Those same instructions work with Insider builds of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
 
 
-# Windows Insider Release Notes
+## Windows Insider Release Notes
 
 HoloLens 2 Windows Insider builds are full of new features and improvements.  Sign up for Windows Insider Fast or Slow flights to test them out!
 Here's a quick summary of what's new:
@@ -70,12 +70,12 @@ Here's a quick summary of what's new:
 
 Once you’ve had a chance to explore these new capabilities, use the Feedback Hub app to let us know what you think. Feedback you provide in the Feedback Hub goes directly to our engineers.
 
-## FIDO 2 support
+### FIDO 2 support
 Many of you share a HoloLens with lots of people in a work or school environment.  Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long user names and passwords.  FIDO lets anyone in your organization (AAD tenant) seamlessly sign in to HoloLens without entering a username or password.
 
 Read the [passwordless security docs](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to get started.
 
-## Provisioning package updates
+### Provisioning package updates
 Provisioning packages let you set HoloLens configuration through a config file rather than going through the HoloLens out of box experience.  Previously, provisioning packages had to be copied onto HoloLens' internal memory, now they can be on a USB drive so they're easier to re-use on multiple HoloLens and so more people can provision HoloLens in parallel.
 
 1. To try it out, download the latest version of the Windows Configuration Designer from the Windows store onto your PC.  
@@ -83,7 +83,7 @@ Provisioning packages let you set HoloLens configuration through a config file r
 1. Build your configuration profile and, when you're done, copy all files created to a USB-C storage device.
 1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package.
 
-## System voice commands
+### System voice commands
 You can now can access these commands with your voice:
 - "Restart device"
 - "Shutdown device"
@@ -94,7 +94,7 @@ You can now can access these commands with your voice:
 - "What is my IP address?"
 If you're running your system with a different language, please try the appropriate commands in that language.
 
-## FFU download and flash directions
+### FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
 1. On PC
     1. Download ffu to your PC from: [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
