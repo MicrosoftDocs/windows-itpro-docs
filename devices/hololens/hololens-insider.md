@@ -92,6 +92,7 @@ You can now can access these commands with your voice:
 - "Volume up"
 - "Volume down"
 - "What is my IP address?"
+
 If you're running your system with a different language, please try the appropriate commands in that language.
 
 ### FFU download and flash directions
