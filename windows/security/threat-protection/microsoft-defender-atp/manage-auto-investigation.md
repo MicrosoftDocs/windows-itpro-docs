@@ -21,7 +21,22 @@ ms.topic: conceptual
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *Clean*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
 
-As a best practice, make sure to approve (or reject) pending actions as soon as possible. This helps your automated investigations complete in a timely manner. 
+## Remediation actions
+
+When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defender Advanced Threat Protection takes one of the following remediation actions automatically:
+- Quarantine file
+- Remove registry key
+- Kill process
+- Stop service
+- Remove registry key
+- Disable driver
+- Remove scheduled task
+
+Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to approve (or reject) pending actions as soon as possible. This helps your automated investigations complete in a timely manner. 
+
+No actions are taken when evidence is determined to be *Clean*. 
+
+In Microsoft Defender Advanced Threat Protection, all verdicts are tracked and viewable in the Microsoft Defender Security Center.
 
 ## Review pending actions
 
@@ -35,7 +50,6 @@ As a best practice, make sure to approve (or reject) pending actions as soon as 
 
     You can also select multiple investigations to approve or reject actions on multiple investigations. 
 
- 
 
 ## Review completed actions
 
