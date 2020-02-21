@@ -45,14 +45,13 @@ appliesto:
 | Topic | Description |
 | --- | --- |
 | [What's new in HoloLens](hololens-whats-new.md) | Discover new features in the latest updates via HoloLens release notes. |
-| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale.  |
+| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale. |
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
-| [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
+| [HoloLens user management](hololens-multiple-users.md) | Multiple users can share a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
-| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
-| [Contact Support](https://support.microsoft.com/en-us/supportforbusiness/productselection) | Create a new support request for the Support for business team.
-| [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.
-|
+| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary. |
+| [Contact Support](https://support.microsoft.com/en-us/supportforbusiness/productselection) | Create a new support request for the Support for business team. | 
+| [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise. |
 
 ## Related resources
 
