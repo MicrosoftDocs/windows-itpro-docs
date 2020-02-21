@@ -23,17 +23,29 @@ When an automated investigation runs, a verdict is generated for each piece of e
 
 As a best practice, make sure to approve (or reject) pending actions as soon as possible. This helps your automated investigations complete in a timely manner. 
 
-1. 
+## Review pending actions
 
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. This takes you to your Security dashboard.
 
-You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
+2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
 
-Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
+3. Review any items on the **Pending** tab. 
 
-From the panel, you can click on the Open investigation page link to see the investigation details.
+    Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed. From the panel, you can click on the **Open investigation page** link to see the investigation details.
 
-You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
+    You can also select multiple investigations to approve or reject actions on multiple investigations. 
 
+ 
+
+## Review completed actions
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. This takes you to your Security dashboard.
+
+2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
+
+3. Select the **History** tab. (If need be, expand the time period to display more data.)
+
+4. Select an item to view more details about that remediation action.
  
 ## Related articles
 

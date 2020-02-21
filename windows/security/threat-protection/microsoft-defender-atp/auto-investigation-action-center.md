@@ -18,7 +18,6 @@ ms.topic: article
 
 # View details and results of automated investigations
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *Clean*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. 
 
 Pending and completed actions are listed in the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and the Investigations list ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)).
 
