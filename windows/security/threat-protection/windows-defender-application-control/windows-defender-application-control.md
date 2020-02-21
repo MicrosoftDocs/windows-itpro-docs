@@ -46,7 +46,7 @@ Windows 10 includes two technologies that can be used for application control de
 Windows Defender Application Control (WDAC) was introduced with Windows 10 and allows organizations to control what drivers and applications are allowed to run on their Windows 10 clients. WDAC was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria) defined by the Microsoft Security Response Center (MSRC).
 
 > [!NOTE]
-> Prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity policies.
+> Prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity (CCI) policies.
 
 WDAC policies apply to the managed computer as a whole and affects all users of the device. WDAC rules can be defined based on:
 -   Attributes of the codesigning certificate(s) used to sign an app and its binaries;
@@ -58,9 +58,8 @@ WDAC policies apply to the managed computer as a whole and affects all users of 
 
 ### WDAC System Requirements
 
-WDAC policies can only be created on computers beginning with Windows 10 Enterprise or Windows Server 2016 and above.
-They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and optionally managed via Mobile Device Management (MDM), such as Microsoft Endpoint Manager Intune (Intune).
-Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above.
+WDAC policies can only be created on computers running Windows 10 build 1903+ on any SKU, pre-1903 Windows 10 Enterprise, or Windows Server 2016 and above.
+WDAC policies can be applied to computers running any edition of Windows 10 or Windows Server 2016 via a Mobile Device Management (MDM) solution like Intune, a management interface like Configuration Manager, or a scripthost like PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above, but cannot deploy policies to machines running non-Enterprise SKUs of Windows 10.
 
 ## AppLocker
 

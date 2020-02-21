@@ -26,7 +26,7 @@ ms.topic: article
 
 Web content filtering is part of [Web protection](web-protection-overview.md) in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic due to compliance regulations, bandwidth usage, or other concerns.
 
-You can configure policies across your machine groups to block certain categories, effectively preventing users within specified machine groups from accessing URLs within that category. If a category is not blocked, all your users will be able to access the URLs without disruption. However, web content filtering will continue to gather access statistics that you can use to understand web usage and inform future policy decisions.
+You can configure policies across your machine groups to block certain categories, effectively preventing users within specified machine groups from accessing URLs within that category. If a category is not blocked, all your users will be able to access the URLs without disruption. However, web content filtering will continue to gather access statistics that you can use to understand web usage and inform future policy decisions. If an element on the page you’re viewing is making calls to a resource which is blocked, you will see a block notification.
 
 Web content filtering is available on most major web browsers, with blocks performed by SmartScreen (Edge) and Network Protection (Internet Explorer, Chrome, Firefox, and all other browsers). See the prerequisites section for more information about browser support.
 
@@ -73,7 +73,7 @@ Cyren's web content classification technology is integrated by design into Micro
 
 Learn more at https://www.cyren.com/products/url-filtering.
 
-### Cyren  permissions
+### Cyren Permissions
 
 "Sign in and read user profile" allows Cyren to read your tenant info from your Microsoft Defender ATP account, such as your tenant ID, which will be tied to your Cyren license.
 

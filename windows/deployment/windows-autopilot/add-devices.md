@@ -59,9 +59,9 @@ The hardware ID, also commonly referred to as a hardware hash, contains several 
 
 Note that the hardware hash also contains details about when it was generated, so it will change each time it is generated. When the Windows Autopilot deployment service attempts to match a device, it considers changes like that, as well as more substantial changes such as a new hard drive, and is still able to match successfully. But substantial changes to the hardware, such as a motherboard replacement, would not match, so a new hash would need to be generated and uploaded.
 
-### Collecting the hardware ID from existing devices using System Center Configuration Manager
+### Collecting the hardware ID from existing devices using Microsoft Endpoint Configuration Manager
 
-Starting with System Center Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
+Microsoft Endpoint Configuration Manager automatically collects the hardware hashes for existing Windows 10 devices. For more information, see [Gather information from Configuration Manager for Windows Autopilot](https://docs.microsoft.com/configmgr/comanage/how-to-prepare-win10#windows-autopilot). You can extract the hash information from Configuration Manager into a CSV file.
 
 > [!Note]
 > Before uploading the CSV file on Intune, please make sure that the first row contains the device serial number, Windows product ID, hardware hash, group tag, and assigned user. If there is header information on the top of CSV file, please delete that header information. See details at [Enroll Windows devices in Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).
@@ -135,7 +135,7 @@ A summary of each platform's capabilities is provided below.<br>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a><b><sup>4</sup></b></td>
+<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a></td>
 <td>YES - 1000 at a time max</td>
 <td>YES<b><sup>4</sup></b></td>
 <td>4K HH</td>
@@ -153,7 +153,8 @@ A summary of each platform's capabilities is provided below.<br>
 ><b><sup>1</sup></b>Microsoft recommended platform to use<br>
 ><b><sup>2</sup></b>Intune license required<br>
 ><b><sup>3</sup></b>Feature capabilities are limited<br>
-><b><sup>4</sup></b>To be retired<br>
+><b><sup>4</sup></b>Device profile assignment will be retired from MSfB and Partner Center in the coming months<br>
+
 
 Also see the following topics for more information about device IDs:
 - [Device identification](#device-identification)

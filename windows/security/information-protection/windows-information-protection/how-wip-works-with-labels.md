@@ -47,7 +47,7 @@ Microsoft information protection technologies include:
 ## How WIP protects sensitivity labels with endpoint data loss prevention
 
 You can create and manage [sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) in the Microsoft 365 compliance center. 
-When you create a sensitivity label, you can specify that endpoint data loss prevention applies to content with that label. 
+When you [create a sensitivity label](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels), you can specify that endpoint data loss prevention applies to content with that label. 
 
 ![Endpoint data loss prevention](images/sensitivity-label-endpoint-dlp.png)
 
@@ -110,7 +110,7 @@ You can see sensitive information types in Microsoft 365 compliance under **Clas
 - Auto labelling requires Windows 10, version 1903
 - Devices need to be onboarded to [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection), which scans content for a label and applies WIP policy
 - [Sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) need to be configured in Microsoft 365 compliance center
-- WIP policy needs to be applied to endpoint devices by using [Intune](create-wip-policy-using-intune-azure.md) or [System Center Configuration Manager (SCCM)](overview-create-wip-policy-sccm.md)
+- WIP policy needs to be applied to endpoint devices by using [Intune](create-wip-policy-using-intune-azure.md) or [Microsoft Endpoint Configuration Manager](overview-create-wip-policy-sccm.md)
 
 
 

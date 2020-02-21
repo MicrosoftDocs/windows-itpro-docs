@@ -1,7 +1,7 @@
 ---
 title: Web protection
 description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
-keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -36,7 +36,7 @@ Web threat protection includes:
 
 ## Web content filtering
 
-The cards that make up web content filtering are **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
+The cards that comprise web content filtering are **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
 
 Web content filtering includes:
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away

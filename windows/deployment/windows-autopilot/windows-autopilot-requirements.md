@@ -101,6 +101,9 @@ To provide needed Azure Active Directory (automatic MDM enrollment and company b
 - [Intune for Education subscriptions](https://docs.microsoft.com/intune-education/what-is-intune-for-education), which include all needed Azure AD and Intune features.
 - [Azure Active Directory Premium P1 or P2](https://azure.microsoft.com/services/active-directory/) and [Microsoft Intune subscriptions](https://www.microsoft.com/cloud-platform/microsoft-intune) (or an alternative MDM service).
 
+> [!NOTE]
+> Even when using Microsoft 365 subscriptions, you still need to [assign Intune licenses to the users](https://docs.microsoft.com/intune/fundamentals/licenses-assign).
+
 Additionally, the following are also recommended (but not required):
 - [Office 365 ProPlus](https://www.microsoft.com/p/office-365-proplus/CFQ7TTC0K8R0), which can be deployed easily via Intune (or other MDM services).
 - [Windows Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation), to automatically step up devices from Windows 10 Pro to Windows 10 Enterprise.
@@ -121,8 +124,11 @@ Specific scenarios will then have additional requirements.  Generally, there are
 See [Windows Autopilot Scenarios](windows-autopilot-scenarios.md) for additional details.
 
 For a walkthrough for some of these and related steps, see this video:
-<br>&nbsp;<br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media" gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
 

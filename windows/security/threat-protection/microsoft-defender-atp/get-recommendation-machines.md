@@ -1,5 +1,5 @@
 ---
-title: Get recommendation by machines
+title: List machines by recommendation
 description: Retrieves a list of machines associated with the security recommendation. 
 keywords: apis, graph api, supported apis, get, security recommendation for vulnerable machines, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get recommendation by machines
+# List machines by recommendation
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -73,9 +73,10 @@ Here is an example of the response.
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",
             "computerDnsName": "niw_pc",
             "osPlatform": "Windows10",
-            "rbacGroupId": 2154
+            "rbacGroupName": "GroupTwo"
         }
-        ]
+		...
+    ]
 }
 ```
 

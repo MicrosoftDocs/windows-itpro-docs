@@ -155,10 +155,14 @@ The **Review problem reports** tool opens, showing you your Windows Error Report
 
 **Applicable to:** The new Microsoft Edge (v. 79.x.x.x or higher)
 
-**Issue:** In some cases, diagnostic data collected and sent from the New Microsoft Edge fails to be translated by the decoder, which makes that data appear as blobs of text in the Diagnostic Data Viewer. We are working on a fix for this issue.
+**Issue:** In some cases, diagnostic data collected and sent from the New Microsoft Edge fails to be translated by the decoder. When decoding fails, the data appears as a blob of text in the Diagnostic Data Viewer. We are working on a fix for this issue.
 
-**Workaround:** Restart your computer and open Diagnostic Data Viewer.
+**Workaround:**
 
-**Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a protobuf format to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has decoding capability to translate this protobuf format into readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the Microsoft Edge diagnostic data will appear as blob of text.
+- Restart your computer and open Diagnostic Data Viewer.
 
-Microsoft Edge sends a set of required data about your device, its settings and capabilities when the the “Basic” setting is set in Windows 10 (operating system) settings. This data is used to determine whether Microsoft Edge is up to date, secure and performing properly.  Microsoft Edge usage data, and data about the sites you visit, is collected as part of Windows 10 Diagnostic Data when the "Full" setting is set in Windows 10 (operating system) settings. This data is used to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. The diagnostic data collected by Microsoft Edge can be viewed using Windows Diagnostic Data viewer.
+*OR*
+
+- Restart the *DiagTrack* service, through the Services tab in task manager, and open Diagnostic Data Viewer.
+
+**Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a Protocol Buffers (protobuf) to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has a decoding capability to translate this protobuf format into human readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the New Microsoft Edge diagnostic data will appear as a blob of encoded text.
