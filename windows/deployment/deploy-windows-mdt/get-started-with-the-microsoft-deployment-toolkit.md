@@ -21,8 +21,7 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This topic provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117).  
-- When you are ready to start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ## About MDT
 

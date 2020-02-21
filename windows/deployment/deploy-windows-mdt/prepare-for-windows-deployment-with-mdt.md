@@ -21,11 +21,11 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will walk you through the steps necessary to prepare your network and server infrastructure to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
+This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 10 with the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
 ## Infrastructure
 
-The procedures in this guide use the following fictitious names and infrastructure.
+The procedures in this guide use the following names and infrastructure.
 
 ### Network and servers
 
@@ -42,29 +42,29 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
 
 Several client computers are referenced in this guide with hostnames of PC0001 to PC0007.
 
-- **PC0001.** A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
+- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
   - Client name: PC0001
   - IP Address: DHCP
-- **PC0002.** A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
+- **PC0002**: A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
   - Client name: PC0002
   - IP Address: DHCP
-- **PC0003 - PC0007** These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
+- **PC0003 - PC0007**: These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
 
 ### Storage requirements
 
-MDT01 and HV01 should have the ability to store up to 200 GB of data. You can use a computer with a single, system partition but you will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
+MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:) you will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
-If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
+If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide. This guide is a proof-of-concept guide that has detailed instructions for installing Hyper-V.
 
 ### Network requirements
 
-For this lab, all server and client computers are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also requried to download OS and applicaton updates.
+All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also required to download OS and application updates.
 
 ### Domain credentials
 
-Use your own corporate information to replace the example credentials below that are used in this guide.
+The following generic credentials are used in this guide. You should replace these credentials as they appear in each procedure with your credentials.
 
 **Active Directory domain name**: contoso.com<br>
 **Domain administrator username**: administrator<br>
@@ -88,8 +88,8 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
 >[!TIP]
 >You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
 
-1. Again, on **MDT01**, ensure that you are signed in as an administrator in the CONTOSO domain.
-    - For the purposes of this guide, we are using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use login these credentials.
+1. On **MDT01**, ensure that you are signed in as an administrator in the CONTOSO domain.
+    - For the purposes of this guide, we are using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use these login credentials.
 2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT. Verify that the installation completes successfully before moving to the next step.
 3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
 4. Extract the **WSIM 1903 update** (D:\\Downloads\ADK\\WSIM1903.zip) and then run the **UpdateWSIM.bat** file.
