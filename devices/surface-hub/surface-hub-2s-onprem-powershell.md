@@ -26,12 +26,6 @@ $ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUr
 Import-PSSession $ExchSession
 ```
 
-```PowerShell
-$ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
-$ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
-Import-PSSession $ExchSession
-```
-
 ## Create the device account
 
 ```PowerShell
