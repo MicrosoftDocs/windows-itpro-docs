@@ -100,9 +100,9 @@ Endpoint detection and response capabilities are put in place to detect, investi
 In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
-- [Threat remediation](microsoft-defender-atp/automated-investigations.md#how-threats-are-remediated)
-- [Manage automated investigation](microsoft-defender-atp/manage-auto-investigation.md)
-- [Analyze automated investigation](microsoft-defender-atp/manage-auto-investigation.md#analyze-automated-investigations)
+- [Overview of automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
+- [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+- [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
 <a name="ss"></a>
 

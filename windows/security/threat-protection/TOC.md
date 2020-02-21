@@ -103,10 +103,10 @@
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
 ###### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
-### [Automated investigation and remediation]()
-#### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
-#### [Use the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+### [Automated investigation and remediation (AIR)]()
+#### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
 ### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
