@@ -95,9 +95,6 @@
 #### [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)
 
 
-### [Secure score](overview-secure-score.md)
-
-
 ### [Threat analytics](threat-analytics.md)
 
 
@@ -298,8 +295,6 @@
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-### [Configure Secure score dashboard security controls](secure-score-dashboard.md)
-
 
 ### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
@@ -481,7 +476,6 @@
 ##### [Update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
 ##### [Enable and create Power BI reports using Windows Security app data](powerbi-reports.md)
-##### [Enable Secure score security controls](enable-secure-score.md)
 ##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
