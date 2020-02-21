@@ -120,9 +120,6 @@ Requirements:
 > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have the Windows 10, version 1903 feature update installed. 
 The default behavior for older releases is to revert to **User Credential**.
 
-> [!NOTE]
-> Device credential group policy setting is not supported for enrolling into Microsoft Intune. 
-
 When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
 To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
@@ -174,7 +171,7 @@ Requirements:
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576) or
 >   1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)
->   2. Install the package on the Primary Domain Controller (PDC).
+>   2. Install the package on the Domain Controller.
 >   3. Navigate, depending on the version to the folder:
 >   1803 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**, or  
 >   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**, or
@@ -182,14 +179,13 @@ Requirements:
 >   4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 >   5. Copy PolicyDefinitions folder to **C:\Windows\SYSVOL\domain\Policies**. 
 >   (If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
->   6. Restart the Primary Domain Controller for the policy to be available.
+>   6. Restart the Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
 1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 2. Create a Security Group for the PCs.
 3. Link the GPO.
 4. Filter using Security Groups.
-5. Enforce a GPO link.
 
 ## Troubleshoot auto-enrollment of devices
 
