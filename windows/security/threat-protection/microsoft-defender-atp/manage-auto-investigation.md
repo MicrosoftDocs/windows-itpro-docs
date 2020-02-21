@@ -19,9 +19,9 @@ ms.topic: conceptual
 
 # Review and approve actions following an automated investigation
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *Clean*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
-
 ## Remediation actions
+
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *Clean*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
 
 When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defender Advanced Threat Protection takes one of the following remediation actions automatically:
 - Quarantine file
@@ -32,11 +32,11 @@ When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defe
 - Disable driver
 - Remove scheduled task
 
-Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to approve (or reject) pending actions as soon as possible. This helps your automated investigations complete in a timely manner. 
+Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible. This helps your automated investigations complete in a timely manner. 
 
 No actions are taken when evidence is determined to be *Clean*. 
 
-In Microsoft Defender Advanced Threat Protection, all verdicts are tracked and viewable in the Microsoft Defender Security Center.
+In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and viewable in the Microsoft Defender Security Center](#review-completed-actions).
 
 ## Review pending actions
 
