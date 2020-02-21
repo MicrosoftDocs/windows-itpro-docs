@@ -46,6 +46,7 @@ This FAQ addresses the following questions and issues:
 - [HoloLens Management Questions](#hololens-management-questions)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
 - [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+- [I can't log in to a HoloLens because it was previously set up for someone else](#i-cant-log-in-to-a-hololens-because-it-was-previously-set-up-for-someone-else)
 
 ## My holograms don't look right or are moving around
 
@@ -205,6 +206,15 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 
 [Back to list](#list)
 
+
+## I can't log in to a HoloLens because it was previously set up for someone else
+
+If your device was previously set up for someone else, either a client or former employee and you don't have their password to unlock the device there are two solutions.
+- If your device is MDM managed by Intune then you can remotely [Wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device and it'll reflash itself. Make sure to leave **Retain enrollment state and user account** unchecked.
+- If you have the device with you then you can put the device into **Flashing Mode** and use Advanced Recovery Companion to [recover](https://docs.microsoft.com/hololens/hololens-recovery) the device.
+
+[Back to list](#list)
+
 ## HoloLens Management Questions
 
 1. **Can I use SCCM to manage the HoloLens?**
@@ -231,3 +241,4 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 *Coming soon*
 
 [Back to list](#list)
+
