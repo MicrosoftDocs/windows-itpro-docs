@@ -317,7 +317,6 @@
 ##### [Privacy](microsoft-defender-atp/mac-privacy.md)
 ##### [Resources](microsoft-defender-atp/mac-resources.md)
 
-#### [Configure Secure score dashboard security controls](microsoft-defender-atp/secure-score-dashboard.md)
 
 #### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
@@ -399,11 +398,6 @@
 #### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
 
 #### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
-
-
-#### [Secure score](microsoft-defender-atp/overview-secure-score.md)
-
-
 
 
 

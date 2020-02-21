@@ -27,29 +27,29 @@ Deploying Microsoft Defender ATP is a three-phase process:
     <td align="center" style="width:25%; border:0;" >
       <a href= "prepare-deployment"> 
         <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
-      <br/>Prepare </a><br>
+      <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center">
       <a href="production-deployment">
         <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
-      <br/>Setup </a><br>
+      <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="configure">
         <img src="images/onboard.png" alt="Onboard" title="Onboard" />
-      <br/>Onboard </a><br>
+      <br/>Phase 3: Onboard </a><br>
 </td>
 
 
   </tr>
 </table>
-You are currently in the configuration phase.
+You are currently in the onboarding phase.
 
 
 
 To deploy Microsoft Defender ATP, you'll need to onboard devices to the service. Depending on the architecture of your environment, you'll need to use the appropriate management tool that best suites your requirements. 
 
-The deployment guide uses Microsoft Endpoint Configuration Manager to demonstrate an end-to-end deployment. 
+The deployment guide uses Microsoft Endpoint Configuration Manager as the management tool to demonstrate an end-to-end deployment. 
 
 This article will guide you on:
 - Setting up Microsoft Endpoint Configuration Manager 
