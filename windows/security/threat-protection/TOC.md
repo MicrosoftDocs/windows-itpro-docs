@@ -108,7 +108,6 @@
 #### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
 #### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
-### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 ### [Advanced hunting]()
@@ -342,9 +341,6 @@
 #### [Privacy](microsoft-defender-atp/mac-privacy.md)
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
-
-### [Configure Secure score dashboard security controls](microsoft-defender-atp/secure-score-dashboard.md)
-
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ### [Management and API support]()
@@ -561,7 +557,6 @@
 #### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 #### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
 #### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-#### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
 #### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 ### [Permissions]()

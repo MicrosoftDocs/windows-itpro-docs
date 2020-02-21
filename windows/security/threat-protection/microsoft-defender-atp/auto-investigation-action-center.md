@@ -18,8 +18,7 @@ ms.topic: article
 
 # View details and results of automated investigations
 
-
-Pending and completed actions are listed in the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and the Investigations list ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)).
+Pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) are listed in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)).
 
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the machine or machine group will be able to view the entire investigation. 
@@ -64,7 +63,6 @@ On the **Investigations** page, you can view details and use filters to focus on
 |**Threat** |The category of threat detected during the automated investigation. |
 |**Tags** |Filter using manually added tags that capture the context of an automated investigation.|
 |**Comments** |Select between filtering the list between automated investigations that have comments and those that don't.|
-
 
 ## Automated investigation status
 

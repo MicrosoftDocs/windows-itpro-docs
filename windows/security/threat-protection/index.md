@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Microsoft Defender ATP helps protect against threats.
-keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting, cyber threat hunting, web threat protection
+keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, configuration score, advanced hunting, cyber threat hunting, web threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -100,20 +100,17 @@ Endpoint detection and response capabilities are put in place to detect, investi
 In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
-- [Overview of automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
 - [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
 <a name="ss"></a>
 
-**[Secure score](microsoft-defender-atp/overview-secure-score.md)**<br>
+**[Configuration Score](microsoft-defender-atp/configuration-score.md)**<br>
 >[!NOTE]
->  Secure score is now part of [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)  as [Configuration score](microsoft-defender-atp/configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+> Secure score is now part of [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) as [Configuration score](microsoft-defender-atp/configuration-score.md).
 
-Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
-- [Asset inventory](microsoft-defender-atp/secure-score-dashboard.md)
-- [Recommended improvement actions](microsoft-defender-atp/secure-score-dashboard.md)
-- [Secure score](microsoft-defender-atp/overview-secure-score.md)
+Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+- [Configuration score](microsoft-defender-atp/configuration-score.md)
 - [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 <a name="mte"></a>
