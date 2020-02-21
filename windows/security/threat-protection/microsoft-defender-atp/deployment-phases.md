@@ -20,59 +20,17 @@ ms.topic: article
 
 There are three phases in deploying Microsoft Defender ATP:
 
-
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;">
-      <a href= "prepare-deployment"> 
-        <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
-      <br/>Prepare </a><br>
-    </td>
-     <td align="center">
-      <a href="production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
-      <br/>Setup </a><br>
-    </td>
-    <td align="center">
-      <a href="onboarding">
-        <img src="images/onboard.png" alt="Onboard" title="Onboard" />
-      <br/>Onboard </a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-    This phase guides you through what you need to consider when deploying Microsoft Defender ATP:
-
-- Stakeholders and sign-off
-- Environment considerations
-- Access 
-- Adoption order
-
- 
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-     The setup phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:
+|Phase | Desription | 
+|:-------|:-----|:-----|
+| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| This phase guides you through what you need to consider when deploying Microsoft Defender ATP: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
+|  ![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md)|  The setup phase covers the initial steps you'll take as you first access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
+|  ![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. You'll be guided on:<br><br>- Using Microsoft Endpoint Configuration Manager to onboard devices<br>- Configure capabilities 
 
 
-- Validating the licensing
-- Completing the setup wizard within the portal
-- Network configuration
 
-</td>
-    <td valign="top" style="width:25%; border:0;">
-Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. You'll be guided on:
+ The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
 
-
-- Using Microsoft Endpoint Configuration Manager to onboard devices
-- Configure capabilities 
-</td>    
-  </tr>
-</table>
-
- The deployment guide will walk you through the recommended path in deploying Microsoft Defender ATP. 
-
-There are several methods you can use to onboard to the service. The deployment guide will only cover the recommended path. For details on other ways to onboard, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
 
 ## In Scope
 
