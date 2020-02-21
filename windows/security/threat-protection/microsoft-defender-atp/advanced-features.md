@@ -189,4 +189,3 @@ You'll have access to upcoming features which you can provide feedback on to hel
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Enable Secure Score security controls](enable-secure-score.md)
