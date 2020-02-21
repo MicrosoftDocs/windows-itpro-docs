@@ -50,7 +50,9 @@ appliesto:
 | [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
-| [Get support](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.  |
+| [Contact Support](https://support.microsoft.com/en-us/supportforbusiness/productselection) | Create a new support request for the Support for business team.
+| [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.
+|
 
 ## Related resources
 
