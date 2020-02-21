@@ -394,17 +394,17 @@ On **MDT01**:
 
 3. Click **Edit Bootstrap.ini** and modify using the following information:
 
-   ``` 
-  [Settings]
-  Priority=Default
+``` 
+[Settings]
+Priority=Default
 
-  [Default]
-  DeployRoot=\\MDT01\MDTProduction$
-  UserDomain=CONTOSO
-  UserID=MDT_BA
-  UserPassword=pass@word1
-  SkipBDDWelcome=YES
-   ```
+[Default]
+DeployRoot=\\MDT01\MDTProduction$
+UserDomain=CONTOSO
+UserID=MDT_BA
+UserPassword=pass@word1
+SkipBDDWelcome=YES
+```
 
 4. On the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
 5. On the **General** sub tab (still under the main Windows PE tab), configure the following settings:
