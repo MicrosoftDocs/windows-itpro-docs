@@ -157,7 +157,7 @@ There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint 
     >
     >![This is a high-risk deployment](images/waas-sccm-fig9.png)
     >
-    >For details about how to manage the settings for high-risk deployments in Configuration Manager, see [Settings to manage high-risk deployments for Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt621992.aspx).
+    > For details about how to manage the settings for high-risk deployments in Configuration Manager, see [Settings to manage high-risk deployments for Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/settings-to-manage-high-risk-deployments).
 
 1. On the **Deployment Ring** page, select the **Business Ready (Current Branch for Business)** readiness state, leave the delay at **0 days**, and then click **Next**.
 
