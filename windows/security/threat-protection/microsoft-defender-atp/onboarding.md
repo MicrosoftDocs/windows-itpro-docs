@@ -31,12 +31,12 @@ Deploying Microsoft Defender ATP is a three-phase process:
     </td>
      <td align="center">
       <a href="production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
+        <img src="images/setup.png" alt="Setup the Microsoft Defender ATP service" title="Setup" />
       <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
-      <a href="configure">
-        <img src="images/onboard.png" alt="Onboard" title="Onboard" />
+      <a href="onboarding">
+        <img src="images/onboard.png" alt="Onboard" title="Onboard to the Microsoft Defender ATP service" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 

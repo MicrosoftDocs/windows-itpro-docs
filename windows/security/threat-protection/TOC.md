@@ -138,11 +138,7 @@
 ##### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
 ##### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
-#### [Manage machine configuration]()
-##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
-##### [Monitor and increase machine onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
-##### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
-##### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
+
 
 
 
@@ -169,6 +165,12 @@
 #### [Troubleshoot onboarding issues]()
 ##### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
 ##### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
+
+### [Manage machine configuration]()
+#### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
+#### [Monitor and increase machine onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
+#### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
+#### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
 
 ### [Manage capabilities]()
 

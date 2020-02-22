@@ -62,10 +62,14 @@ Deploying Microsoft Defender ATP is a three-phase process:
 You are currently in the preparation phase.
 
 
+Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
+
 
 ## Stakeholders and Sign-off
 The following section serves to identify all the stakeholders that are involved
-in this project and need to sign-off, review, or stay informed. Add stakeholders
+in the project and need to sign-off, review, or stay informed.
+
+Add stakeholders
 to the table below as appropriate for your organization.
 
 -   SO = Sign-off on this project
@@ -154,8 +158,9 @@ structure required for your environment.
 ## Adoption Order
 In many cases, organizations will have existing endpoint security products in
 place. The bare minimum every organization should have is an antivirus solution. But in some cases, an organization might also have implanted an EDR solution already.
+
 Historically, replacing any security solution used to be time intensive and difficult
-to achieve, due to the tight hooks into the application layer and infrastructure
+to achieve due to the tight hooks into the application layer and infrastructure
 dependencies. However, because Microsoft Defender ATP is built into the
 operating system, replacing third-party solutions is now easy to achieve.
 
@@ -171,6 +176,11 @@ how the endpoint security suite should be enabled.
 | Threat & Vulnerability Management (TVM) | Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 4                   |
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Not applicable      |
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed. [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Not applicable      |
+
+## Next step
+|||
+|:-------|:-----|
+|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Setup Microsoft Defender ATP deployment
 
 ## Related topic
 - [Production deployment](production-deployment.md)
