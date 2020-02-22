@@ -264,7 +264,8 @@ Optional. Number of days after last successful sync to unenroll.
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
-Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.
+
+Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 

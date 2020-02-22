@@ -34,7 +34,6 @@ In general, you’ll need to take the following steps to use the APIs:
 - Use the token to access Microsoft Defender ATP API.
 
 The following steps with guide you how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
-<br>**To become an official partner of Microsoft Defender ATP and appear in our partner page, you will provide us with your application identifier.**
 
 ## Create the multi-tenant app
 

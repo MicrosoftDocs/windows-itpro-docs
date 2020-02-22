@@ -97,7 +97,7 @@ The following steps will guide you through onboarding VDI machines and will high
 
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

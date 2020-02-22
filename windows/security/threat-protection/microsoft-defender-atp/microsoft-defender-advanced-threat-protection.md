@@ -25,6 +25,8 @@ ms.topic: conceptual
 
 Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+
 Microsoft Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
@@ -48,12 +50,11 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
-<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="images/air-icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -97,16 +98,20 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 <a name="ss"></a>
 
-**[Secure score](overview-secure-score.md)**<br>
+**[Configuration score](configuration-score.md)**<br>
 > [!NOTE]
->  Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+> Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md).
 
-Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>
 
 **[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
 Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
+
+>[!IMPORTANT]
+>Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.<p>
+><p>If you are not enrolled yet and would like to experience its benefits, go to <b>Settings</b> > <b>General</b> > <b>Advanced features</b> > <b>Microsoft Threat Experts</b> to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on Demand subscription.
 
 <a name="apis"></a>
 
