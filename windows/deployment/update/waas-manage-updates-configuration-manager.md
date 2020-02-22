@@ -85,7 +85,7 @@ Regardless of the method by which you deploy Windows 10 feature updates to your 
     ![Example of UI](images/waas-sccm-fig5.png)
 
     > [!NOTE]
-    > Configuration Manager discovers clients’ servicing branch and stores that value in the **OSBranch** attribute, which you will use to create collections based on servicing branch. The values in this attribute can be **0 (Current Branch)**, **1 (Current Branch for Business)**, or **2 (Long-Term Servicing Branch)**.
+    > Configuration Manager discovers clients’ servicing branch and stores that value in the **OSBranch** attribute, which you will use to create collections based on that servicing branch. The values in this attribute can be **0 (Current Branch)**, **1 (Current Branch for Business)**, or **2 (Long-Term Servicing Branch)**.
 
 1. Leave **Operator** set to **is equal to**; in the **Value** box, type **1**. Click **OK**.
 
