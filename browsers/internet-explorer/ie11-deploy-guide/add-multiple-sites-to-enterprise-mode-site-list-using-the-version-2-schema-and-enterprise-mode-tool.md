@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -64,13 +65,13 @@ The following is an example of what your XML file should look like when you’re
 
 ```
 <site-list version="205">
-    <!--- File creation header --->
+    <!-- File creation header -->
     <created-by>
         <tool>EnterpriseSitelistManager</tool>
         <version>10240</version>
         <date-created>20150728.135021</date-created>
     </created-by>
-    <!--- Begin Site List ---> 
+    <!-- Begin Site List --> 
     <site url="www.cpandl.com">
         <compat-mode>IE8Enterprise</compat-mode>
         <open-in>MSEdge</open-in>
