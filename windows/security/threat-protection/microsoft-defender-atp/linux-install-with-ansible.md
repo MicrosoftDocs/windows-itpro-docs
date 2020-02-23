@@ -1,7 +1,7 @@
 ---
-title: Install Microsoft Defender ATP for Linux with Ansible
+title: Deploy Microsoft Defender ATP for Linux with Ansible
 ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Linux using Ansible.
+description: Describes how to deploy Microsoft Defender ATP for Linux using Ansible.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,13 +18,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Install Microsoft Defender ATP for Linux with Ansible
+# Deploy Microsoft Defender ATP for Linux with Ansible
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to install Microsoft Defender ATP for Linux using Ansible. A successful installation requires the completion of all of the following tasks:
+This topic describes how to deploy Microsoft Defender ATP for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
