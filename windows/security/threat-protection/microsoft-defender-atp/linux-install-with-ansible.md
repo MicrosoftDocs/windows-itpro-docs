@@ -1,7 +1,7 @@
 ---
-title: Installing Microsoft Defender ATP for Linux with Puppet
+title: Install Microsoft Defender ATP for Linux with Ansible
 ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Linux, using Puppet.
+description: Describes how to install Microsoft Defender ATP for Linux using Ansible.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,15 +18,15 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Ansible based deployment
+# Install Microsoft Defender ATP for Linux with Ansible
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Linux through Ansible. A successful deployment requires the completion of all of the following steps:
+This topic describes how to install Microsoft Defender ATP for Linux using Ansible. A successful installation requires the completion of all of the following tasks:
 
-- [Download onboarding package](#download-onboarding-package)
+- [Download the onboarding package](#download-the-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
 - [Deployment](#deployment)
 - [References](#references)
@@ -35,14 +35,14 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Ansi
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-- Ansible needs to be installed at least on one computer (we will call it master)
-- Passwordless SSH must be configured for root user between the master and all clients
+- Ansible needs to be installed on at least on one computer (we will call it master).
+- Passwordless SSH must be configured for the root user between the master and all clients.
 - The following software must be installed on all clients:
-  - python-apt
-  - curl
-  - unzip
+  - Python-apt
+  - Curl
+  - Unzip
 
-- All host must be listed in the following format in `/etc/ansible/hosts` file:
+- All host must be listed in the following format in the `/etc/ansible/hosts` file:
     
     ```bash
     [servers]
@@ -50,19 +50,19 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
     host2 ansible_ssh_host=51.143.50.51
     ```
 
-- Ping test
+- Ping test:
 
     ```bash
     $ ansible -m ping all
     ```
 
-## Download onboarding package
+## Download the onboarding package
 
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, select **Linux Server** as the operating system. In the second drop down, select **Your preferred Linux configuration management tool** as the deployment method.
-3. Click on **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
+3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
@@ -79,9 +79,9 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask / role files which contribute to an actual task. Create the below files under the `/etc/ansible/roles` directory.
+Create subtask or role files that contribute to an actual task. Create the below files under the `/etc/ansible/roles` directory.
 
-- Copy onboarding package to all client machines:
+- Copy the onboarding package to all client machines:
 
     ```bash
     $ cat /etc/ansible/roles/copy_onboarding_pkg.yml
@@ -94,7 +94,7 @@ Create subtask / role files which contribute to an actual task. Create the below
             mode: '0644'
     ```
 
-- Create a `setup.sh` script which operates on the onboarding file:
+- Create a `setup.sh` script that operates on the onboarding file:
 
     ```bash
     $ cat /root/setup.sh
@@ -127,7 +127,7 @@ Create subtask / role files which contribute to an actual task. Create the below
         script: /root/setup.sh
     ```
 
-- Add the Microsoft Defender ATP repository and key
+- Add the Microsoft Defender ATP repository and key.
 
     Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
 
@@ -137,7 +137,7 @@ Create subtask / role files which contribute to an actual task. Create the below
 
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
+    In the below commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
     > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
@@ -173,7 +173,7 @@ Create subtask / role files which contribute to an actual task. Create the below
                 enabled: Yes
         ```
 
-- Create the actual install / uninstall YAML files under `/etc/ansible/playbooks`
+- Create the actual install/uninstall YAML files under `/etc/ansible/playbooks`.
 
     - For apt-based distributions use the following YAML file:
 
@@ -225,28 +225,28 @@ Create subtask / role files which contribute to an actual task. Create the below
 
 ## Deployment
 
-Now run the tasks files under `/etc/ansible/playbooks/`
+Now run the tasks files under `/etc/ansible/playbooks/`.
 
-- Installation
+- Installation:
 
     ```bash
     $ ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
-- Validation / configuration
+- Validation/configuration:
 
     ```bash
     $ ansible -m shell -a 'mdatp --connectivity-test' all
     $ ansible -m shell -a 'mdatp --health' all
     ```
 
-- Uninstallation
+- Uninstallation:
 
     ```bash
     $ ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## Logging installation issues
+## Log installation issues
 
 See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
