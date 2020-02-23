@@ -25,6 +25,8 @@ This topic for the IT professional explains how to deploy BitLocker on Windows S
 
 ## <a href="" id="installing-bitlocker-"></a>Installing BitLocker
 
+This section will provide an overview about how to install BitLocker on Windows Server 2012 or later.
+
 ### <a href="" id="bkmk-blinstallsrvmgr"></a>To install BitLocker using Server Manager
 
 1.  Open Server Manager by selecting the Server Manager icon or running servermanager.exe.
