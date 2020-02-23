@@ -58,7 +58,7 @@ The following is in scope for this project:
     capabilities including automatic investigation and remediation
 
 -   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
--   Use of System Center Configuration Manager to onboard endpoints into the service.
+-   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service.
 
 ### Out of scope
 
