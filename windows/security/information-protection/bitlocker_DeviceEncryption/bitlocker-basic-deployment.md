@@ -19,6 +19,10 @@ ms.date: 02/28/2019
 
 # BitLocker basic deployment
 
+<!--
+The cmd and PowerShell parts are doubled with the page “BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker”. Better provide a link to the page!
+-->
+
 **Applies to**
 -   Windows 10
 

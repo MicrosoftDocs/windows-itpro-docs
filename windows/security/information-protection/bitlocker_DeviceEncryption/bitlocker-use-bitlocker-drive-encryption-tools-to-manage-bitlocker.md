@@ -19,6 +19,10 @@ ms.date: 02/28/2019
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
+<!--
+The information on this page is doubled with page “BitLocker basic deployment”!
+-->
+
 **Applies to**
 -   Windows 10
 
