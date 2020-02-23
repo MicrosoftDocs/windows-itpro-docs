@@ -1,7 +1,7 @@
 ---
-title: Install Microsoft Defender ATP for Linux manually
+title: Deploy Microsoft Defender ATP for Linux manually
 ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Linux manually from the command line.
+description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,13 +18,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Install Microsoft Defender ATP for Linux manually
+# Deploy Microsoft Defender ATP for Linux manually
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to install Microsoft Defender ATP for Linux manually. A successful installation requires the completion of all of the following tasks:
+This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
 - [Application installation](#application-installation)
@@ -246,7 +246,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ mdatp --threat --list --pretty
     ```
 
-## Logging installation issues
+## Log installation issues
 
 See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
