@@ -244,7 +244,6 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 <p>-Password</p>
 <p>-RecoveryKeyPath</p>
 <p>-RecoveryPassword</p>
-<p>-RecoveryPassword</p>
 <p>-WhatIf</p></td>
 </tr>
 </tbody>
