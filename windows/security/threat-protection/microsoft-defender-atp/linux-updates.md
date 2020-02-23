@@ -1,7 +1,7 @@
 ---
 title: Deploy updates for Microsoft Defender ATP for Linux
 ms.reviewer: 
-description: Describes how to control updates for Microsoft Defender ATP for Linux in enterprise environments.
+description: Describes how to deploy updates for Microsoft Defender ATP for Linux in enterprise environments.
 keywords: microsoft, defender, atp, linux, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender ATP for Linux manually, execute the following command:
+To update Microsoft Defender ATP for Linux manually, execute one of the following commands:
 
 ## RHEL and variants (CentOS and Oracle EL)
 
