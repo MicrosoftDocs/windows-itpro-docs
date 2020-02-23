@@ -66,7 +66,7 @@ The following table compares the features and the requirements of BitLocker to t
 | **Encryption of non-system drive** | available | not available |
 | **Encryption of remvoable storage devices** | available | not available |
 | **System integrity check with TPM** | possible | possible |
-| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
+| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>In the Active Directory Domain Services (AD DS)</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
 | **Pre-Boot authentication** | Password, PIN or removable storage device | not possible |
 
 <!--
