@@ -26,7 +26,7 @@ This topic for the IT professional explains how BitLocker features can be used t
 
 ## Using BitLocker to encrypt volumes
 
-BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data volumes. To support fully encrypted operating system volumes, BitLocker uses an unencrypted system volume for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
+BitLocker provides full disk encryption (FDE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
@@ -41,7 +41,11 @@ BitLocker encryption can be done using the following methods:
 
 ### Encrypting volumes using the BitLocker control panel
 
-Encrypting volumes with the BitLocker control panel (click **Start**, type **bitlocker**, click **Manage BitLocker**) is how many users will utilize BitLocker. The name of the BitLocker control panel is BitLocker Drive Encryption. The BitLocker control panel supports encrypting operating system, fixed data and removable data volumes. The BitLocker control panel will organize available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters will appear properly in the BitLocker control panel applet.
+<!--
+Definition of the word “Volume” is missing!
+-->
+
+Encrypting volumes with the BitLocker control panel (click **Start**, type **BitLocker**, click **Manage BitLocker**) is how many users will utilize BitLocker. The name of the BitLocker control panel is BitLocker Drive Encryption. The BitLocker control panel supports encrypting operating system, fixed data and removable data volumes. The BitLocker control panel will organize available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters will appear properly in the BitLocker control panel applet.
 To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the BitLocker Drive Encryption Wizard. BitLocker Drive Encryption Wizard options vary based on volume type (operating system volume or data volume).
 
 ### Operating system volume
@@ -65,7 +69,9 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 </tr>
 <tr class="even">
 <td align="left"><p>Operating system</p></td>
-<td align="left"><p>BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.</p></td>
+<td align="left"><p>BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.
+<!-- This page applies to Windows 10. Why is Windows Server mentioned here? -->
+</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Hardware TPM</p></td>
@@ -93,19 +99,22 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 </tbody>
 </table>
  
-Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
-Once a strong password has been created for the volume, a recovery key will be generated. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
+<!-- By default BitLocker uses only the TPM, not a password for the system volume --> If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
+During the initial setup, a strong recovery key is created. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Encryption. You can use the recovery key to gain access to your computer if the drive that Windows is installed on is encrypted using BitLocker System Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
 
-You should store the recovery key by printing it, saving it on removable media, or saving it as a file in a network folder or on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot be stored on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.
+You should store the recovery key on another media, since otherwise it is not possible to access the key if the normal access to your device is blocked. For a list of options, where to store the recovery key, see [BitLocker and Device Encryption overview](bitlocker-deviceencryption-overview.md).
+You cannot save the recovery key to the root directory of a non-removable drive and cannot store it on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.
 
-When the recovery key has been properly stored, the BitLocker Drive Encryption Wizard will prompt the user to choose how to encrypt the drive. There are two options:
+<!-- Why is BitLocker to Go mentioned when this is a section for operating system volumes? -->
+
+When the recovery key has been properly stored, the BitLocker System Drive Encryption Wizard will prompt the user to choose how to encrypt the drive. There are two options:
 
 -   Encrypt used disk space only - Encrypts only disk space that contains data
 -   Encrypt entire drive - Encrypts the entire volume including free space
 
 It is recommended that drives with little to no data utilize the **used disk space only** encryption option and that drives with data or an operating system utilize the **encrypt entire drive** option.
 
-> **Note:**  Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
+> **Note:**  Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools. If you want to deploy the most secure option, you have to choose the second option.
  
 Selecting an encryption type and choosing **Next** will give the user the option of running a BitLocker system check (selected by default) which will ensure that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. It is recommended to run this system check before starting the encryption process. If the system check is not run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
 
@@ -113,7 +122,7 @@ After completing the system check (if selected), the BitLocker Drive Encryption 
 
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning BitLocker off.
 
-### Data volume
+### Internal Data volume
 
 Encrypting data volumes using the BitLocker control panel interface works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the control panel to begin the BitLocker Drive Encryption wizard.
 Unlike for operating system volumes, data volumes are not required to pass any configuration tests for the wizard to proceed. Upon launching the wizard, a choice of authentication methods to unlock the drive appears. The available options are **password** and **smart card** and **automatically unlock this drive on this computer**. Disabled by default, the latter option will unlock the data volume without user input when the operating system volume is unlocked.
@@ -126,6 +135,8 @@ With an encryption method chosen, a final confirmation screen displays before be
 Encryption status displays in the notification area or within the BitLocker control panel.
 
 ### <a href="" id="-onedrive-option-"></a> OneDrive option
+
+<!-- I think BitLocker is storing the recovery in the Microsoft account of the user, not on OneDrive directly -->
 
 There is a new option for storing the BitLocker recovery key using the OneDrive. This option requires that computers are not members of a domain and that the user is using a Microsoft Account. Local accounts do not give the option to utilize OneDrive. Using the OneDrive option is the default, recommended recovery key storage method for computers that are not joined to a domain.
 
