@@ -1,7 +1,7 @@
 ---
-title: Install Microsoft Defender ATP for Linux with Puppet
+title: Deploy Microsoft Defender ATP for Linux with Puppet
 ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Linux using Puppet.
+description: Describes how to deploy Microsoft Defender ATP for Linux using Puppet.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,13 +18,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Install Microsoft Defender ATP for Linux with Puppet
+# Deploy Microsoft Defender ATP for Linux with Puppet
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to install Microsoft Defender ATP for Linux using Puppet. A successful installation requires the completion of all of the following tasks:
+This topic describes how to deploy Microsoft Defender ATP for Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Puppet manifest](#create-a-puppet-manifest)
@@ -78,7 +78,7 @@ install_mdatp
 
 ### Contents of `install_mdatp/manifests/init.pp`
 
-Microsoft Defender ATP for Linux can be installed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
 
