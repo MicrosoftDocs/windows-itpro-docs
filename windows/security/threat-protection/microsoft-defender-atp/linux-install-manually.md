@@ -1,7 +1,7 @@
 ---
-title: Installing Microsoft Defender ATP for Linux manually
+title: Deploy Microsoft Defender ATP for Linux manually
 ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Linux manually, from the command line.
+description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,24 +18,24 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Manual deployment
+# Deploy Microsoft Defender ATP for Linux manually
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following steps:
+This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-- [Configure Microsoft's Linux Software Repository](#configure-microsoft-linux-software-repository)
+- [Configure the Linux software repository](#configure-the-linux-software-repository)
 - [Application installation](#application-installation)
-- [Download onboarding packages](#download-onboarding-package)
+- [Download the onboarding package](#download-the-onboarding-package)
 - [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-## Configure Microsoft Linux Software Repository
+## Configure the Linux software repository
 
 Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
@@ -45,9 +45,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### RHEL and variants (CentOS and Oracle EL)
 
-- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
+- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step:
+    In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
     > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
@@ -77,9 +77,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`
+- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information identified in the previous step.
+    In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
     $ sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
@@ -106,9 +106,9 @@ In order to preview new features and provide early feedback, it is recommended t
     $ sudo apt-get install curl
     ```
 
-- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config`
+- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
 
-    In the below command, replace *[distro]* and *[version]* with the information identified in the previous step:
+    In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
     $ curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
@@ -140,13 +140,13 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```
 
-- Install the https driver in case not already present:
+- Install the https driver if it's not already present:
 
     ```bash
     $ sudo apt-get install apt-transport-https
     ```
 
-- Update the repository metadata
+- Update the repository metadata:
 
     ```bash
     $ sudo apt-get update
@@ -154,31 +154,31 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle EL)
+- RHEL and variants (CentOS and Oracle EL):
 
     ```bash
     sudo yum install mdatp
     ```
 
-- SLES and variants
+- SLES and variants:
 
     ```bash
     sudo zypper install mdatp
     ```
 
-- Ubuntu and Debian system
+- Ubuntu and Debian system:
 
     ```bash
     sudo apt-get install mdatp
     ```
 
-## Download onboarding package
+## Download the onboarding package
 
 Download the onboarding package from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop down, select **Linux Server** as the operating system. In the second drop down, select **Local Script (for up to 10 machines)** as the deployment method.
-3. Click on **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 machines)** as the deployment method.
+3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
 
@@ -199,13 +199,13 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 1. Copy WindowsDefenderATPOnboarding.py to the target machine.
 
-    Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank.
+    Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
 
     ```bash
     $ mdatp --health orgId
     ```
 
-2. Run WindowsDefenderATPOnboarding.py (note that in order to run this command you must have `python` installed on the device).
+2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
     $ python WindowsDefenderATPOnboarding.py
@@ -218,7 +218,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     [your organization identifier]
     ```
 
-4. A few minutes following the completion of the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected.
+4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
     $ mdatp --health healthy
@@ -227,7 +227,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
-    - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command).
+    - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
     ```bash
     $ mdatp --health realTimeProtectionEnabled
@@ -246,10 +246,10 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ mdatp --threat --list --pretty
     ```
 
-## Logging installation issues
+## Log installation issues
 
-See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-See [Uninstalling](linux-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall) for details on how to remove Microsoft Defender ATP for Linux from client devices.
