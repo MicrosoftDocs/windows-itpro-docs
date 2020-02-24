@@ -27,7 +27,7 @@ Microsoft Endpoint Configuration Manager provides maximum control over quality a
 You can use Configuration Manager to service Windows 10 devices in two ways. The first option is to use Windows 10 Servicing Plans to deploy Windows 10 feature updates automatically based on specific criteria, similar to an Automatic Deployment Rule for software updates. The second option is to use a task sequence to deploy feature updates, along with anything else in the installation.
 
 > [!NOTE]
-> This topic focuses on updating and upgrading Windows 10 after it has already been deployed. To use Configuration Manager to upgrade your systems from the Windows 8.1, Windows 8, or Windows 7 operating system, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager).
+> This topic focuses on updating and upgrading Windows 10 after it has already been deployed. To use Configuration Manager to upgrade your systems from the Windows 8.1, Windows 8, or Windows 7 operating system, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager).
 
 ## Windows 10 servicing dashboard
 
