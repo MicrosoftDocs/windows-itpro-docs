@@ -140,7 +140,7 @@ After you have updated the membership, this new collection will contain all mana
 
 ## Use Windows 10 servicing plans to deploy Windows 10 feature updates
 
-There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint Configuration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates.
+There are two ways to deploy Windows 10 feature updates with Configuration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates.
 
 ### To configure Windows feature updates for CBB clients in the Ring 4 Broad business users deployment ring using a servicing plan
 
