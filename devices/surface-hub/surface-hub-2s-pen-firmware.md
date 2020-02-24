@@ -28,7 +28,7 @@ Surface Hub automatically installs updates through Windows Update or WSUS and re
 - On Surface Hub, scan for new Bluetooth devices.
 - Select the pen and complete the pairing process.
 
- 2.After the updated firmware is downloaded from Windows Update, press the **top** button to apply the update to the pen. It may take up to two hours to complete.
+2. After the updated firmware is downloaded from Windows Update, press the **top** button to apply the update to the pen. It may take up to two hours to complete.
 
 ## Update firmware using a separate PC
 
@@ -41,7 +41,7 @@ You can update the firmware on Surface Hub 2 Pen from a separate PC running Wind
 - On the PC scan for new Bluetooth devices.
 - Select the pen and complete the pairing process.
 
-2.Temporarily disconnect all other Bluetooth devices from the PC during the firmware update process.
+2. Temporarily disconnect all other Bluetooth devices from the PC during the firmware update process.
 
 3. Go to [Surface Hub Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=52210) and download the Surface Hub 2 Pen Firmware Update Tool to your PC.
 4. Run **PenCfu.exe.** The install progress is displayed in the tool. It may take several minutes to finish updating.
@@ -50,8 +50,8 @@ You can update the firmware on Surface Hub 2 Pen from a separate PC running Wind
 
 1. Run **get_version.bat** and press the **top button** on the pen.
 2. The tool will report the firmware version of the pen. Example:
-- Old firmware is 468.2727.368
-- New firmware is 468.2863.369
+    - Old firmware is 468.2727.368
+    - New firmware is 468.2863.369
 
 ## Command line options
 You can run Surface Hub 2 Pen Firmware Update Tool (PenCfu.exe) from the command line.
