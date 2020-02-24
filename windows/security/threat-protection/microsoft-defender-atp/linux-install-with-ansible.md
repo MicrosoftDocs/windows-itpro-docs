@@ -35,7 +35,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-- Ansible needs to be installed on at least on one computer (we will call it master).
+- Ansible needs to be installed on at least on one computer (we will call it the master).
 - Passwordless SSH must be configured for the root user between the master and all clients.
 - The following software must be installed on all clients:
   - Python-apt
@@ -79,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. Create the below files under the `/etc/ansible/roles` directory.
+Create subtask or role files that contribute to an actual task. Create the following files under the `/etc/ansible/roles` directory.
 
 - Copy the onboarding package to all client machines:
 
@@ -137,7 +137,7 @@ Create subtask or role files that contribute to an actual task. Create the below
 
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information you've identified.
+    In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
     > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
