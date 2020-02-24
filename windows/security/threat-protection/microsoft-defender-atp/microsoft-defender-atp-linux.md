@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender Advanced Threat Protection for Linux
+# Microsoft Defender ATP for Linux
 
-This topic describes how to install, configure, update, and use Microsoft Defender ATP for Linux.
+This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
 
 ## How to install Microsoft Defender ATP for Linux
@@ -34,10 +34,10 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
-### Known Issues
+### Known issues
 
-- Logged on users do not appear in the ATP portal
-- In SUSE distributions, if installation of *libatomic1* fails, validate that your OS is registered:
+- Logged on users do not appear in the ATP portal.
+- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
 ```bash
 $ sudo SUSEConnect --status-text
@@ -49,11 +49,11 @@ There are several methods and deployment tools that you can use to install and c
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
+- Ensure that you have a Microsoft Defender ATP subscription, and that you have access to the Microsoft Defender ATP portal.
 - Deploy Microsoft Defender ATP for Linux using one of the following deployment methods:
-  - Via the command-line tool:
+  - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
-  - Via third-party management tools:
+  - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansbile configuration management tool](linux-install-with-ansible.md)
 
@@ -76,7 +76,7 @@ After you've enabled the service, you may need to configure your network or fire
 
 ### Network connections
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
