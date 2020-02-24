@@ -73,7 +73,7 @@ Enter the server instance name and a name for the database, select **Connect**, 
 
    ![Server name is .\SQLEXPRESS and database name is VAMT](images/vamt-db.png)
 
-2b. Setting up a new database on a Local or remote Full SQL instance
+2. b) Setting up a new database on a Local or remote Full SQL instance
 
 Enter the server instance name (for a remote SQL use the FQDN like servername.contoso.com if the instance has the default name (MSSQLSERVER) otherwise use servername.contoso.com\yourinstancename or use the browsing ability.
 You can choose **any name** for a new the database (default: VAMT), select **Connect**, and then select **Yes** to create the database.
