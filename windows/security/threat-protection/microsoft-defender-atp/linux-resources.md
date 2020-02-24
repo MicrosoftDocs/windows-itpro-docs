@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Linux Resources
+title: Microsoft Defender ATP for Linux resources
 ms.reviewer: 
 description: Describes resources for Microsoft Defender ATP for Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-## Collecting diagnostic information
+## Collect diagnostic information
 
 If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
 
@@ -37,9 +37,9 @@ If you can reproduce a problem, please increase the logging level, run the syste
    Operation succeeded
    ```
 
-2. Reproduce the problem
+2. Reproduce the problem.
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds:
 
    ```bash
    $ sudo mdatp --diagnostic --create
@@ -56,23 +56,23 @@ If you can reproduce a problem, please increase the logging level, run the syste
    Operation succeeded
    ```
 
-## Logging installation issues
+## Log installation issues
 
 If an error occurs during installation, the installer will only report a general failure.
 
 The detailed log will be saved to `/var/log/microsoft/mdatp_install.log`. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
-## Uninstalling
+## Uninstall
 
 There are several ways to uninstall Microsoft Defender ATP for Linux. If you are using a configuration tool such as Puppet, please follow the package uninstallation instructions for the configuration tool.
 
 ### Manual uninstallation
 
-- ```sudo yum remove mdatp``` for RHEL and variants(CentOS and Oracle EL)
-- ```sudo zypper remove mdatp``` for SLES and variants
-- ```sudo apt-get purge mdatp``` for Ubuntu and Debian systems
+- ```sudo yum remove mdatp``` for RHEL and variants(CentOS and Oracle EL).
+- ```sudo zypper remove mdatp``` for SLES and variants.
+- ```sudo apt-get purge mdatp``` for Ubuntu and Debian systems.
 
-## Configuring from the command line
+## Configure from the command line
 
 Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
 
