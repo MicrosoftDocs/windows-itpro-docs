@@ -25,7 +25,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configuring-from-the-command-line).
+>This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
 
 In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
