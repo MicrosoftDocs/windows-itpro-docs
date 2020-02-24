@@ -146,7 +146,7 @@ Supported operations are Get, Replace, and Delete.
 <a href="" id="provider-providerid-syncapplicationversion"></a>**Provider/*ProviderID*/SyncApplicationVersion**  
 Optional. Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there is a client behavior change between 1.0 and 2.0.
 
-> [!NOTE]  
+> [!NOTE]
 > This node is only supported in Windows 10 and later.
 
 Once you set the value to 2.0, it will not go back to 1.0.
