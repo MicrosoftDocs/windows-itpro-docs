@@ -44,7 +44,8 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 - alternatively any full SQL instance e.g. SQL Server 2014 or newer incl. CU / SP
 
 ### Install SQL Server 2019 Express 
-### If you want to use a Full SQL instance e.g. SQL Server 2014 or newer, then skip to the next paragraph
+
+#### If you want to use a Full SQL instance e.g. SQL Server 2014 or newer, then skip to the next paragraph
 
 1. Download and open the [SQL Server 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658) package.
 2. Select **Basic**.
