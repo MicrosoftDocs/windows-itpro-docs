@@ -248,7 +248,7 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
 
 ## Log installation issues
 
-See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## References
 
