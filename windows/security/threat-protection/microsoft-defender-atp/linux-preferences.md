@@ -25,17 +25,17 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](linux-resources.md#configuring-from-the-command-line) page.
+>This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
 
-In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
-This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
+This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
 
 ## Configuration profile structure
 
-The configuration profile is a .json file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
+The configuration profile is a .json file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can be simple, such as a numerical value, or complex, such as a nested list of preferences.
 
-Typically, you would use a configuration management tool to push a file with name ```mdatp_maanged.json``` at location ```/etc/opt/microsoft/mdatp/managed/```
+Typically, you would use a configuration management tool to push a file with the name ```mdatp_maanged.json``` at the location ```/etc/opt/microsoft/mdatp/managed/```.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
@@ -51,7 +51,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Whether real-time protection (scan files as they are accessed) is enabled or not.
+Detemines whether real-time protection (scan files as they are accessed) is enabled or not.
 
 |||
 |:---|:---|
@@ -61,12 +61,12 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 #### Enable / disable passive mode
 
-Whether the antivirus engine runs in passive mode or not. In passive mode:
-- Real-time protection is turned off
-- On-demand scanning is turned on
-- Automatic threat remediation is turned off
-- Security intelligence updates are turned on
-- Status menu icon is hidden
+Detemines whether the antivirus engine runs in passive mode or not. In passive mode:
+- Real-time protection is turned off.
+- On-demand scanning is turned on.
+- Automatic threat remediation is turned off.
+- Security intelligence updates are turned on.
+- Status menu icon is hidden.
 
 |||
 |:---|:---|
@@ -77,7 +77,7 @@ Whether the antivirus engine runs in passive mode or not. In passive mode:
 
 #### Exclusion merge policy
 
-Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
 
 |||
 |:---|:---|
@@ -141,7 +141,7 @@ Used to exclude content from the scan by file extension.
 
 **Process excluded from the scan**
 
-Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
+Specifies a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
 
 |||
 |:---|:---|
@@ -182,7 +182,7 @@ The *threatTypeSettings* preference in the antivirus engine is used to control h
 
 **Threat type**
 
-Type of the threat for which the behavior is configured.
+Type of threat for which the behavior is configured.
 
 |||
 |:---|:---|
@@ -194,9 +194,9 @@ Type of the threat for which the behavior is configured.
 
 Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
-- **Audit**: your device is not protected against this type of threat, but an entry about the threat is logged.
-- **Block**: your device is protected against this type of threat and you are notified in the user interface and the security console.
-- **Off**: your device is not protected against this type of threat and nothing is logged.
+- **Audit**: The device is not protected against this type of threat, but an entry about the threat is logged.
+- **Block**: The device is protected against this type of threat and you are notified in the user interface and the security console.
+- **Off**: The device is not protected against this type of threat and nothing is logged.
 
 |||
 |:---|:---|
@@ -206,7 +206,7 @@ Action to take when coming across a threat of the type specified in the precedin
 
 #### Threat type settings merge policy
 
-Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
+Specifies the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
 
 |||
 |:---|:---|
@@ -215,9 +215,9 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
-### Cloud delivered protection preferences
+### Cloud-delivered protection preferences
 
-The *cloudService* entry in the configuration profile is used to configure the cloud driven protection feature of the product.
+The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
 
 |||
 |:---|:---|
@@ -227,7 +227,7 @@ The *cloudService* entry in the configuration profile is used to configure the c
 
 #### Enable / disable cloud delivered protection
 
-Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.
+Determines whether cloud-delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.
 
 |||
 |:---|:---|
@@ -261,12 +261,12 @@ To get started, we recommend the following configuration profile for your enterp
 
 The following configuration profile will:
 
-- Enable real-time protection (RTP)
+- Enable real-time protection (RTP).
 - Specify how the following threat types are handled:
-  - **Potentially unwanted applications (PUA)** are blocked
-  - **Archive bombs** (file with a high compression rate) are audited to the product logs
-- Enable cloud delivered protection
-- Enable automatic sample submission
+  - **Potentially unwanted applications (PUA)** are blocked.
+  - **Archive bombs** (file with a high compression rate) are audited to the product logs.
+- Enable cloud-delivered protection.
+- Enable automatic sample submission.
 
 ### Sample profile
 
@@ -353,4 +353,4 @@ The following configuration profile contains entries for all settings described 
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft Defender ATP for Linux reads the managed configuration from the file */etc/opt/microsoft/mdatp/managed/mdatp_managed.json*
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft Defender ATP for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
