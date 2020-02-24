@@ -349,7 +349,7 @@
 ##### [Ansible based deployment](microsoft-defender-atp/linux-install-with-ansible.md)
 #### [Update](microsoft-defender-atp/linux-updates.md)
 #### [Configure]()
-##### [Static Proxy Configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
+##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
