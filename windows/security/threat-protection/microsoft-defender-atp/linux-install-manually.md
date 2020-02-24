@@ -77,9 +77,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information you've identified:
+    In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
     $ sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
@@ -106,7 +106,7 @@ In order to preview new features and provide early feedback, it is recommended t
     $ sudo apt-get install curl
     ```
 
-- Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -140,7 +140,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```
 
-- Install the https driver if not already present:
+- Install the https driver if it's not already present:
 
     ```bash
     $ sudo apt-get install apt-transport-https
@@ -205,7 +205,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     $ mdatp --health orgId
     ```
 
-2. Run WindowsDefenderATPOnboarding.py (note that in order to run this command you must have `python` installed on the device):
+2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
     $ python WindowsDefenderATPOnboarding.py
@@ -218,7 +218,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     [your organization identifier]
     ```
 
-4. A few minutes after completing the installation, you can see the status by running the following command (a return value of `1` denotes that the product is functioning as expected):
+4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
     $ mdatp --health healthy
