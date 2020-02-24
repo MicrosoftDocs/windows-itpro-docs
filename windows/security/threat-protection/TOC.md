@@ -341,6 +341,19 @@
 #### [Privacy](microsoft-defender-atp/mac-privacy.md)
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
+### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+#### [Deploy]()
+##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
+##### [Puppet based deployment](microsoft-defender-atp/linux-install-with-puppet.md)
+##### [Ansible based deployment](microsoft-defender-atp/linux-install-with-ansible.md)
+#### [Update](microsoft-defender-atp/linux-updates.md)
+#### [Configure]()
+##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
+##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+#### [Resources](microsoft-defender-atp/linux-resources.md)
+
+### [Configure Secure score dashboard security controls](microsoft-defender-atp/configuration-score.md)
+
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ### [Management and API support]()
