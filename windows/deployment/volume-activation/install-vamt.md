@@ -67,7 +67,7 @@ Reminder: There won't be new ADK release for 1909.
 
 1. Open **Volume Active Management Tool 3.1** from the Start menu.
 
-2a. Setting up a new database on a Local SQL Express instance
+2. a) Setting up a new database on a Local SQL Express instance
 
 Enter the server instance name and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
