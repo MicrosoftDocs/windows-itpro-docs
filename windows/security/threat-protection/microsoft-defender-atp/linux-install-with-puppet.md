@@ -174,7 +174,7 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Log installation issues
 
-See [Logging installation issues](linux-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
