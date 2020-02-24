@@ -31,7 +31,7 @@ You can use Configuration Manager to service Windows 10 devices in two ways. The
 
 ## Windows 10 servicing dashboard
 
-The Windows 10 servicing dashboard gives you a quick-reference view of your active servicing plans, compliance for servicing plan deployment, and other key information about Windows 10 servicing. For details about what each tile on the servicing dashboard represents, see [Manage Windows as a service using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service).
+The Windows 10 servicing dashboard gives you a quick-reference view of your active servicing plans, compliance for servicing plan deployment, and other key information about Windows 10 servicing. For details about what each tile on the servicing dashboard represents, see [Manage Windows as a service using Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service).
 
 For the Windows 10 servicing dashboard to display information, you must adhere to the following requirements:
 
