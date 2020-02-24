@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/20/2018
+ms.date: 02/24/2020
 ---
 
 # Understand WDAC policy rules and file rules
@@ -28,7 +28,7 @@ Windows Defender Application Control (WDAC) provides control over a computer run
 
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
@@ -120,9 +120,9 @@ There is a defined list of SIDs which WDAC recognizes as admins. If a filepath a
 WDAC's list of well-known admin SIDs are: <br>
 S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. 
 
-When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards and include them in your [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) scan using the -Rules switch. 
+When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards using the [-FilePathRules](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule#parameters) switch. 
 
-Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.
+Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\\*` would include `C:\foo\\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path are not supported (ex. `C:\\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`). <br/> The use of macros is also supported and useful in scenarios where the system drive is different from the `C:\` drive. Supported macros: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)

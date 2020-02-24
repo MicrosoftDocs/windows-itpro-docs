@@ -79,7 +79,7 @@ To get the data types for event properties do the following:
 
 ```
 
-- Here is an example for Machine Info event: 
+- Here is an example for Device Info event: 
 
 ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 
