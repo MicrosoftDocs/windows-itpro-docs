@@ -14,7 +14,6 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 06/14/2018
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 
@@ -24,14 +23,13 @@ ms.date: 06/14/2018
 -   Windows 10
 -   Windows Server 2016 and above
 
-Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. 
-In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
+Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
 
-Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) provides a new option, known as Intelligent Security Graph (ISG) authorization, that allows IT administrators to automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation. The ISG option helps IT organizations take a significant first step towards going from having no application control at all to a simple means of preventing the execution of unknown and known bad software.
+Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) provides a new option, known as the Microsoft Intelligent Security Graph authorization, that allows IT administrators to automatically authorize applications that the Microsoft Intelligent Security Graph recognizes as having known good reputation. The the Microsoft Intelligent Security Graph option helps IT organizations take a significant first step towards going from having no application control at all to a simple means of preventing the execution of unknown and known bad software. To learn more about the Microsoft Intelligent Security Graph, see the Security section in [Major services and features in Microsoft Graph](https://docs.microsoft.com/graph/overview-major-services).
 
 ## How does the integration between WDAC and the Intelligent Security Graph work? 
 
-The ISG relies on Microsoft’s vast security intelligence and machine learning analytics to help classify applications as having known good reputation. When users download applications on a system with WDAC enabled with the ISG authorization option specified, the reputation of the downloaded file, commonly an installer, is used to determine whether to run the installer and then that original reputation information is passed along to any files that were written by the installer. When any of these files try to execute after they are installed, the reputation data is used to help make the right policy authorization decision.   
+The the Microsoft Intelligent Security Graph relies on Microsoft’s vast security intelligence and machine learning analytics to help classify applications as having known good reputation. When users download applications on a system with WDAC enabled with the the Microsoft Intelligent Security Graph authorization option specified, the reputation of the downloaded file, commonly an installer, is used to determine whether to run the installer and then that original reputation information is passed along to any files that were written by the installer. When any of these files try to execute after they are installed, the reputation data is used to help make the right policy authorization decision.   
 
 After that initial download and installation, the WDAC component will check for the presence of the positive reputation information when evaluating other application execution control rules specified in the policy. If there are no deny rules present for the file, it will be authorized based on the known good reputation classification.  
 
@@ -44,14 +42,14 @@ Other examples of WDAC policies are available in `C:\Windows\schemas\CodeIntegri
 
 ## Configuring Intelligent Security Graph authorization for Windows Defender Application Control 
 
-Setting up the ISG authorization is easy regardless of what management solution you use. Configuring the ISG option involves these basic steps: 
+Setting up the Microsoft Intelligent Security Graph authorization is easy regardless of what management solution you use. Configuring the Microsoft Intelligent Security Graph option involves these basic steps: 
 
-- [Ensure that the ISG option is enabled in the WDAC policy XML](#ensure-that-the-intelligent-security-graph-option-is-enabled-in-the-wdac-policy-xml) 
-- [Enable the necessary services to allow WDAC to use the ISG correctly on the client](#enable-the-necessary-services-to-allow-wdac-to-use-the-isg-correctly-on-the-client) 
+- [Ensure that the Microsoft Intelligent Security Graph option is enabled in the WDAC policy XML](#ensure-that-the-intelligent-security-graph-option-is-enabled-in-the-wdac-policy-xml) 
+- [Enable the necessary services to allow WDAC to use the Microsoft Intelligent Security Graph correctly on the client](#enable-the-necessary-services-to-allow-wdac-to-use-the-isg-correctly-on-the-client) 
 
 ### Ensure that the Intelligent Security Graph option is enabled in the WDAC policy XML 
 
-In order to enable trust for executables based on classifications in the ISG, the **Enabled:Intelligent Security Graph authorization** option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition, it is recommended from a security perspective to also enable the **Enabled:Invalidate EAs on Reboot** option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. The following example shows both options being set. 
+In order to enable trust for executables based on classifications in the Microsoft Intelligent Security Graph, the **Enabled:Intelligent Security Graph authorization** option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition, it is recommended from a security perspective to also enable the **Enabled:Invalidate EAs on Reboot** option to invalidate the cached Intelligent Security Graph results on reboot to force rechecking of applications against the Microsoft Intelligent Security Graph. Caution is advised if devices will regularly transition to and from environments that may not be able to access the Microsoft Intelligent Security Graph. The following example shows both options being set. 
 
 ```code
 <Rules> 
@@ -81,7 +79,7 @@ In order to enable trust for executables based on classifications in the ISG, th
 
 ### Enable the necessary services to allow WDAC to use the ISG correctly on the client
 
-In order for the heuristics used by the ISG to function properly, a number of component in Windows need to be enabled. The easiest way to do this is to run the appidtel executable in `c:\windows\system32`.
+In order for the heuristics used by the Microsoft Intelligent Security Graph to function properly, a number of component in Windows must be enabled. The easiest way to do this is to run the appidtel executable in `c:\windows\system32`.
 
 ```
 appidtel start
@@ -91,19 +89,19 @@ For WDAC policies deployed over MDM using the AppLocker CSP this step is not req
 
 ## Security considerations with the Intelligent Security Graph 
 
-Since the ISG is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Windows Defender Advanced Threat Protection to help provide optics into what users are doing. 
+Since the Microsoft Intelligent Security Graph is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Microsoft Defender Advanced Threat Protection to help provide optics into what users are doing. 
 
-Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of WDAC when the ISG option is allowed by circumventing or corrupting the heuristics used to assign reputation to application executables. The ISG option uses the same heuristic tracking as managed installer and so for application installers that include an option to automatically run the application at the end of the installation process the heuristic may over-authorize.  
+Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of WDAC when the Microsoft Intelligent Security Graph option is allowed by circumventing or corrupting the heuristics used to assign reputation to application executables. The Microsoft Intelligent Security Graph option uses the same heuristic tracking as managed installer and so for application installers that include an option to automatically run the application at the end of the installation process the heuristic may over-authorize.  
 
 ## Known limitations with using the Intelligent Security Graph
 
-Since the ISG relies on identifying executables as being known good, there are cases where it may classify legitimate executables as unknown, leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in the WDAC policy or by deployment through a WDAC managed installer. Typically, this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
+Since the Microsoft Intelligent Security Graph relies on identifying executables as being known good, there are cases where it may classify legitimate executables as unknown, leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in the WDAC policy or by deployment through a WDAC managed installer. Typically, this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
 
-Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business, it is straightforward to authorize modern apps with signer rules in the WDAC policy.
+Modern apps are not supported with the Microsoft Intelligent Security Graph heuristics and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business, it is straightforward to authorize modern apps with signer rules in the WDAC policy.
 
-The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
+The Microsoft Intelligent Security Graph heuristics do not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
 In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted. Review for functionality and performance for the related applications using the native images maybe necessary in some cases. 
 
 >[!NOTE]
-> A rule that explicitly allows an application will take precedence over the ISG rule that does not allow it. In this scenario, this policy is not compatible with Intune, where there is no option to add rules to the template that enables ISG. In most circumstances you would need to build a custom WDAC policy, including ISG if desired.
+> A rule that explicitly allows an application will take precedence over the Microsoft Intelligent Security Graph rule that does not allow it. In this scenario, this policy is not compatible with Intune, where there is no option to add rules to the template that enables the Microsoft Intelligent Security Graph. In most circumstances you would need to build a custom WDAC policy, including the Microsoft Intelligent Security Graph, if desired.
