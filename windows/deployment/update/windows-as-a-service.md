@@ -1,7 +1,6 @@
 ---
 title: Windows as a service  
-ms.prod: windows-10
-layout: LandingPage  
+ms.prod: windows-10 
 ms.topic: landing-page
 ms.manager: elizapo
 audience: itpro

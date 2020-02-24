@@ -73,7 +73,7 @@ Cyren's web content classification technology is integrated by design into Micro
 
 Learn more at https://www.cyren.com/products/url-filtering.
 
-### Cyren  permissions
+### Cyren Permissions
 
 "Sign in and read user profile" allows Cyren to read your tenant info from your Microsoft Defender ATP account, such as your tenant ID, which will be tied to your Cyren license.
 

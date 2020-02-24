@@ -103,12 +103,11 @@
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
 ###### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
-### [Automated investigation and remediation]()
-#### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
-#### [Use the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+### [Automated investigation and remediation (AIR)]()
+#### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
-### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 ### [Advanced hunting]()
@@ -510,7 +509,7 @@
 
 #### [Pull detections to your SIEM tools]()
 #### [Raw data streaming API]()
-##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 
@@ -571,7 +570,6 @@
 #### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 #### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
 #### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-#### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
 #### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 ### [Permissions]()
