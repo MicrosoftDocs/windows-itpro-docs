@@ -352,8 +352,6 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
-### [Configure Secure score dashboard security controls](microsoft-defender-atp/secure-score-dashboard.md)
-
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ### [Management and API support]()
