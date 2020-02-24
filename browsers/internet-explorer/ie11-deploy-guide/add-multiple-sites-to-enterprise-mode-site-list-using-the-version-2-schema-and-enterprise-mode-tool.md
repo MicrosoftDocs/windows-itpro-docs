@@ -63,7 +63,7 @@ Each XML file must include:
 
 The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
-```
+```xml
 <site-list version="205">
     <!-- File creation header -->
     <created-by>
@@ -118,6 +118,5 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
  
 
  
-
 
 
