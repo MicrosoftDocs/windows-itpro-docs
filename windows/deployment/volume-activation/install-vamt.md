@@ -84,6 +84,7 @@ You can choose **any name** for a new the database (default: VAMT), select **Con
     - SQL browsing is allowed
     - ingoing firewall settings on the SQL Server are ok, especially when located on a different subnet
     - check your account against SQL permissions.
+
 [Generic troubleshooting for remote access on SQL Server](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/troubleshoot-connecting-to-the-sql-server-database-engine?view=sql-server-ver15)
 
 
