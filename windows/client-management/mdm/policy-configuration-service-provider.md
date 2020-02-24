@@ -15,6 +15,8 @@ ms.date: 07/18/2019
 
 # Policy CSP
 
+> [!WARNING] 
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -614,6 +616,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-bluetooth.md#bluetooth-servicesallowedlist" id="bluetooth-servicesallowedlist">Bluetooth/ServicesAllowedList</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize"id=bluetooth-setminimumencryptionkeysize>Bluetooth/SetMinimumEncryptionKeySize</a>
   </dd>
 </dl>
 

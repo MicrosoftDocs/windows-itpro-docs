@@ -31,7 +31,7 @@ This document also assumes that the HoloLens has been evaluated by security team
 
 ## Step 1. Determine what you need
 
-Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed.
+Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed. It is also important to ensure that your security team has approved of the use of the HoloLens on the company's network. Please see [Frequently ask security questions](hololens-faq-security.md) for additional security information.
 
 ### Type of Features
 

@@ -103,12 +103,11 @@
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
 ###### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
-### [Automated investigation and remediation]()
-#### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
-#### [Use the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+### [Automated investigation and remediation (AIR)]()
+#### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
-### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 ### [Advanced hunting]()
@@ -342,6 +341,16 @@
 #### [Privacy](microsoft-defender-atp/mac-privacy.md)
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
+### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+#### [Deploy]()
+##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
+##### [Puppet based deployment](microsoft-defender-atp/linux-install-with-puppet.md)
+##### [Ansible based deployment](microsoft-defender-atp/linux-install-with-ansible.md)
+#### [Update](microsoft-defender-atp/linux-updates.md)
+#### [Configure]()
+##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
+##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+#### [Resources](microsoft-defender-atp/linux-resources.md)
 
 ### [Configure Secure score dashboard security controls](microsoft-defender-atp/secure-score-dashboard.md)
 
@@ -500,7 +509,7 @@
 
 #### [Pull detections to your SIEM tools]()
 #### [Raw data streaming API]()
-##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 
@@ -561,7 +570,6 @@
 #### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 #### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
 #### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-#### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
 #### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 ### [Permissions]()
