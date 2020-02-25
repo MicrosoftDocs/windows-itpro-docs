@@ -25,7 +25,7 @@ Perform the steps in this article to build a distributed environment for Windows
 
 Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we will deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
 
-For the purposes of this article, we assume that you have prepared the MDT02 server with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more details on the infrastructure setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more details on the infrastructure setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ![figure 1](../images/mdt-10-fig01.png)
 
@@ -247,6 +247,10 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     5. Hard disk: 60 GB (dynamic disk)
     6. Install an operating system from a network-based installation server
 2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The machine will now load the Windows PE boot image from the WDS server.
+
+ >[!TIP]
+ >If you are prompted to specify a deployment share when there is no deployment share specified under the **[Default]** section in Bootstrap.ini, this can occur because 
+
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
     1.  Password: pass@word1
     2.  Select a task sequence to execute on this computer:
