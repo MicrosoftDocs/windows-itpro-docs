@@ -77,7 +77,7 @@ The majority of the steps found in this document will also apply to the followin
 ### Determine your enrollment method
 
 1. Bulk enrollment with a security token in a provisioning package.  
-  Pros: this is the most automated approach  k
+  Pros: this is the most automated approach
   Cons: takes initial server-side setup  
 1. Auto-enroll on user sign in.  
   Pros: easiest approach  
