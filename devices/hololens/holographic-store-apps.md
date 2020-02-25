@@ -43,7 +43,7 @@ To set up a payment method, go to [account.microsoft.com](https://account.micros
 1. Select the Store app. Once the Store app opens:
   1. Use the search bar to look for any desired applications. 
   1. Select from one of curated categories to find essential apps or apps made specifically for HoloLens.
-  1. On the top right of the Store app select the **"..."** button and select **My Library**, to view any perviously purchased apps.
+  1. On the top right of the Store app, select the **"..."** button and then select **My Library** to view any previously purchased apps.
 1. Select **Get** or **Install** on the application's page (a purchase may be required).
 
 ## Uninstall apps
