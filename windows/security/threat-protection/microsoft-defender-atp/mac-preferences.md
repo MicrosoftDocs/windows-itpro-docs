@@ -325,6 +325,8 @@ Specify whether to enable EDR early preview features.
 
 Specify a tag name and its value. 
 
+- The GROUP tag, tags the machine with the specified value, this tag is reflected in the portal under machine page and can be used for filtering and groupping machines.
+
 |||
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
@@ -569,6 +571,18 @@ The following configuration profile contains entries for all settings described 
         <key>automaticSampleSubmission</key>
         <true/>
     </dict>
+    <key>edr</key>
+    <dict>
+        <key>tags</key>
+        <array>
+            <dict>
+                <key>key</key>
+                <string>GROUP</string>
+                <key>value</key>
+                <string>ExampleTag</string>
+            </dict>
+        </array>
+    </dict>
     <key>userInterface</key>
     <dict>
         <key>hideStatusMenuIcon</key>
@@ -694,6 +708,18 @@ The following configuration profile contains entries for all settings described 
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                </dict>
+                <key>edr</key>
+                <dict>
+                    <key>tags</key>
+                    <array>
+                        <dict>
+                            <key>key</key>
+                            <string>GROUP</string>
+                            <key>value</key>
+                            <string>ExampleTag</string>
+                        </dict>
+                    </array>
                 </dict>
                 <key>userInterface</key>
                 <dict>
