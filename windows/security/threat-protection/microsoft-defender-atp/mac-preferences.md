@@ -325,7 +325,7 @@ Specify whether to enable EDR early preview features.
 
 Specify a tag name and its value. 
 
-- The GROUP tag, tags the machine with the specified value, this tag is reflected in the portal under machine page and can be used for filtering and groupping machines.
+- The GROUP tag, tags the machine with the specified value. The tag is reflected in the portal under the machine page and can be used for filtering and grouping machines.
 
 |||
 |:---|:---|
