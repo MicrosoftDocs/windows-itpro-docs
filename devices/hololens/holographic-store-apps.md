@@ -33,7 +33,7 @@ Open the Microsoft Store from the **Start** menu. Then browse for apps and games
 
 ## Install apps
 
-To download apps, you'll need to be signed in with a Microsoft account. Some apps are free and can be downloaded right away. Apps that require a purchase require you to be signed into the Store with your Microsoft account and have a valid payment method.
+To download apps, you'll need to be signed in with a Microsoft account. Some apps are free and can be downloaded right away. Apps that require a purchase require you to be signed in to the Store with your Microsoft account and have a valid payment method.
 >[!NOTE]
 >The account you can use on Microsoft Store does not have to be the same as the account you are signed in with. If you are using a Work or School account on your HoloLens then you'll need to sign in with your personal account in the Store App to make a purchase.
 
