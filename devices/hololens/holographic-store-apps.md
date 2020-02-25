@@ -41,7 +41,7 @@ To set up a payment method, go to [account.microsoft.com](https://account.micros
 
 1. To open the [**Start** menu](holographic-home.md), perform a the [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) or [bloom](hololens1-basic-usage.md) gesture on HoloLens 1.
 1. Select the Store app. Once the Store app opens:
-  1. Use the search bar to look for any desired application. 
+  1. Use the search bar to look for any desired applications. 
   1. Select from one of curated categories to find essential apps or apps made specifically for HoloLens.
   1. On the top right of the Store app select the **"..."** button and select **My Library**, to view any perviously purchased apps.
 1. Select **Get** or **Install** on the application's page (a purchase may be required).
