@@ -151,6 +151,9 @@ On **MDT01**:
 
 5. Browse and select the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
 
+ >[!TIP]
+ >If you modify bootstrap.ini again later, be sure to repeat the process of updating the deployment share in the Deployment Workbench and replacing the boot image in the WDS console.
+
    ## Replicate the content
 
    Once the MDT01 and MDT02 servers are prepared, you are ready to configure the actual replication.
@@ -246,21 +249,16 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     4. Memory: 2048 MB
     5. Hard disk: 60 GB (dynamic disk)
     6. Install an operating system from a network-based installation server
-2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The machine will now load the Windows PE boot image from the WDS server.
-
- >[!TIP]
- >If you are prompted to specify a deployment share when there is no deployment share specified under the **[Default]** section in Bootstrap.ini, this can occur because 
-
+2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from the WDS server.
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
-    1.  Password: pass@word1
-    2.  Select a task sequence to execute on this computer:
-        1.  Windows 10 Enterprise x64 RTM Custom Image
-        2.  Computer Name: PC0006
-        3.  Applications: Select the Install - Adobe Reader XI - x86 application
-4.  The setup will now start and do the following:
+    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
+    2.  Computer Name: PC0006
+    3.  Applications: Select the Install - Adobe Reader
+4.  Setup will now start and perform the following:
     1.  Install the Windows 10 Enterprise operating system.
     2.  Install applications.
-    3.  Update the operating system via your local Windows Server Update Services (WSUS) server.
+    3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
+
 
 ## Related topics
 
