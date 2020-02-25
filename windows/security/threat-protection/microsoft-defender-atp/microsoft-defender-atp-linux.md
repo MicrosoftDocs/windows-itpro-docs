@@ -26,6 +26,8 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
 ## How to install Microsoft Defender ATP for Linux
 
 ### Prerequisites
