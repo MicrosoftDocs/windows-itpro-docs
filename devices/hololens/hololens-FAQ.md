@@ -44,6 +44,7 @@ This FAQ addresses the following questions and issues:
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
 - [HoloLens Management Questions](#hololens-management-questions)
+- [HoloLens Security Questions](#hololens-security-questions)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
 - [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 - [I can't log in to a HoloLens because it was previously set up for someone else](#i-cant-log-in-to-a-hololens-because-it-was-previously-set-up-for-someone-else)
@@ -230,6 +231,14 @@ If your device was previously set up for someone else, either a client or former
 1. **What logging capabilities are available on HL1 and HL2?**
     1. Logging is limited to traces captured in developer/troubleshooting scenarios or telemetry sent to Microsoft servers.
 
+[Back to list](#list)
+
+## HoloLens Security Questions
+
+Frequently asked security questions can be found [here](hololens-faq-security.md).
+
+[Back to list](#list)
+
 ## How do I delete all spaces?
 
 *Coming soon*
@@ -241,4 +250,3 @@ If your device was previously set up for someone else, either a client or former
 *Coming soon*
 
 [Back to list](#list)
-
