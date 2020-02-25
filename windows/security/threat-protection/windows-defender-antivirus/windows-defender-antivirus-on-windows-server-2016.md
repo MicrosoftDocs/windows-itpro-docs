@@ -29,11 +29,13 @@ While the functionality, configuration, and management is largely the same for W
 - In Windows Server, [automatic exclusions](configure-server-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
 - In Windows Server, Windows Defender Antivirus will not disable itself if you are running another antivirus product.
 
+## The process at a glance
+
 The process of setting up and running Windows Defender Antivirus on a server platform includes several steps:
 
 1. [Enable the interface](#enable-or-disable-the-user-interface-on-windows-server-2016-or-2019)
 
-2. [Install Windows Defender Anvirus]()
+2. [Install Windows Defender Antivirus](#install-windows-defender-antivirus-on-windows-server-2016-or-2019)
 
 2. [Verify Windows Defender Antivirus is running](#verify-windows-defender-is-running)
 
@@ -43,13 +45,13 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 5. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions)
 
-6. (If needed) [Uninstall Windows Defender Antivirus](#need-to-uninstall-windows-defender-antivirus)
+6. (Only if necessary) [Uninstall Windows Defender Antivirus](#need-to-uninstall-windows-defender-antivirus)
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
 By default, Windows Defender Antivirus is installed and functional on Windows Server 2016 and Windows Server 2019. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Windows Defender Antivirus. And if the GUI is not installed on your server, you can add it.
 
-### Turn on the GUI for Windows Defender Antivirus
+### Turn on the GUI using the Add Roles and Features Wizard
 
 1. Refer to [this article](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
 
@@ -57,20 +59,14 @@ By default, Windows Defender Antivirus is installed and functional on Windows Se
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
-See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
+### Turn on the GUI using PowerShell
 
-The following PowerShell cmdlet will also enable the interface: 
+The following PowerShell cmdlet will enable the interface: 
 
 ```PowerShell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-To hide the interface, use the **Remove Roles and Features Wizard** and deselect the **GUI for Windows Defender** option at the **Features** step, or use the following PowerShell cmdlet:
-
-
-```PowerShell
-Uninstall-WindowsFeature -Name Windows-Defender-GUI
-```
 
 >[!IMPORTANT]
 > Windows Defender AV will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
@@ -186,16 +182,22 @@ If you determine you do want to uninstall Windows Defender Antivirus, follow the
 
 ### Uninstall Windows Defender Antivirus using PowerShell
 
-The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016:
+>[!NOTE]
+>You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
+
+The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016 or 2019:
 
 ```PowerShell
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
-### Turn off the GUI for Windows Defender Antivirus
+### Turn off the GUI using PowerShell
 
->[!NOTE]
->You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
+To turn off the Windows Defender Antivirus GUI, use the following PowerShell cmdlet:
+
+```PowerShell
+Uninstall-WindowsFeature -Name Windows-Defender-GUI
+```
 
 
 ## Related topics
