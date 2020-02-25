@@ -50,7 +50,7 @@ Windows Defender Antivirus has the same hardware requirements as of Windows 10. 
 For information on how to configure next-generation protection services, see [Configure Windows Defender Antivirus features](configure-windows-defender-antivirus-features.md).
 
 > [!Note]  
-> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md).
+> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md).
 
 ## Related articles
 

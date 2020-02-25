@@ -49,7 +49,7 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
-By default, Windows Defender Antivirus is installed and functional on Windows Server 2016 and Windows Server 2019. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Windows Defender Antivirus. And if the GUI is not installed on your server, you can add it.
+By default, Windows Defender Antivirus is installed and functional on Windows Server 2016 and Windows Server 2019. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Windows Defender Antivirus. And if the GUI is not installed on your server, you can add it by using the Add Roles and Features Wizard or PowerShell.
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -67,13 +67,9 @@ The following PowerShell cmdlet will enable the interface:
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-
->[!IMPORTANT]
-> Windows Defender AV will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
-
 ## Install Windows Defender Antivirus on Windows Server 2016 or 2019
 
-You can use the Add Roles and Features Wizard or PowerShell to install Windows Defender Antivirus.
+You can use the **Add Roles and Features Wizard** or PowerShell to install Windows Defender Antivirus.
 
 ### Use the Add Roles and Features Wizard
 
@@ -101,11 +97,11 @@ Get-Service -Name windefend
 
 To verify that firewall protection is turned on, run the following PowerShell cmdlet:
 
-```PowerShell
+```PowerShell 
 Get-Service -Name mpssvc
 ```
 
-As an alternative to PowerShell, you can use Command Prompt to verify that Windows Defender AV is running. To do that, run the following command from a command prompt: 
+As an alternative to PowerShell, you can use Command Prompt to verify that Windows Defender Antivirus is running. To do that, run the following command from a command prompt: 
 
 ```DOS
 sc query Windefend
@@ -141,7 +137,7 @@ The following table lists the services for Windows Defender Antivirus and the de
 |Windows Defender Firewall (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
-## Submit Samples
+## Submit samples
 
 To submit a file, review the [submission guide](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide), and then visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission)
 
@@ -160,7 +156,7 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 ## Configure automatic exclusions
 
-To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender AV on Server 2016.
+To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender Antivirus on Windows Server 2016 or 2019.
 
 See the [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) topic for more information. 
 
@@ -178,7 +174,11 @@ If you determine you do want to uninstall Windows Defender Antivirus, follow the
 
 1. Refer to [this article](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. 
 
-2. When you get to the **Features** step of the wizard, unselect the **Windows Defender Features** option. If you unselect **Windows Defender** by itself under the **Windows Defender Features** section, you will be prompted to remove the interface option **GUI for Windows Defender**. 
+2. When you get to the **Features** step of the wizard, unselect the **Windows Defender Features** option. 
+
+    If you unselect **Windows Defender** by itself under the **Windows Defender Features** section, you will be prompted to remove the interface option **GUI for Windows Defender**. 
+    
+    Windows Defender AV will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
 
 ### Uninstall Windows Defender Antivirus using PowerShell
 
