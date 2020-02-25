@@ -241,7 +241,7 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp --health realTimeProtectionEnabled
         1
-    ```
+        ```
 
     - Open a Terminal window. Copy and execute the following command:
 
