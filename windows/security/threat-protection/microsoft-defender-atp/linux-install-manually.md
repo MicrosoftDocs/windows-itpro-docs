@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
 - [Application installation](#application-installation)
@@ -33,7 +33,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux manually. A 
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Configure the Linux software repository
 
@@ -53,26 +53,29 @@ In order to preview new features and provide early feedback, it is recommended t
     > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
 
     ```bash
-    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
     ```
 
     For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
 
     ```bash
-    $ sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
     ```
 
 - Install the Microsoft GPG public key:
 
     ```bash
-    $ curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    $ sudo rpm --import microsoft.asc
+    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
+    ```
+    
+    ```bash
+    sudo rpm --import microsoft.asc
     ```
 
 - Download and make usable all the metadata for the currently enabled yum repositories: 
 
     ```bash
-    $ yum makecache
+    yum makecache
     ```
 
 ### SLES and variants
@@ -82,20 +85,23 @@ In order to preview new features and provide early feedback, it is recommended t
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    $ sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
     ```
 
     For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
 
     ```bash
-    $ sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
+    sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
     ```
 
 - Install the Microsoft GPG public key:
 
     ```bash
-    $ curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    $ rpm --import microsoft.asc
+    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
+    ```
+    
+    ```bash
+    rpm --import microsoft.asc
     ```
 
 ### Ubuntu and Debian systems
@@ -103,7 +109,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install `curl` if it is not already installed:
 
     ```bash
-    $ sudo apt-get install curl
+    sudo apt-get install curl
     ```
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
@@ -111,45 +117,48 @@ In order to preview new features and provide early feedback, it is recommended t
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    $ curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
     For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insider-fast* channel:
 
     ```bash
-    $ curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list 
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list 
     ```
 
 - Install the repository configuration:
 
     ```bash
-    $ sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
+    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
 - Install the gpg package if not already installed:
 
     ```bash
-    $ sudo apt-get install gpg
+    sudo apt-get install gpg
     ```
 
 - Install the Microsoft GPG public key:
 
     ```bash
-    $ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    $ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    ```
+    
+    ```bash
+    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
 
     ```
 
 - Install the https driver if it's not already present:
 
     ```bash
-    $ sudo apt-get install apt-transport-https
+    sudo apt-get install apt-transport-https
     ```
 
 - Update the repository metadata:
 
     ```bash
-    $ sudo apt-get update
+    sudo apt-get update
     ```
 
 ## Application installation
@@ -186,11 +195,11 @@ Download the onboarding package from Microsoft Defender Security Center:
     Extract the contents of the archive:
   
     ```bash
-    $ ls -l
+    ls -l
     total 8
     -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
 
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: WindowsDefenderATPOnboarding.py
     ```
@@ -202,26 +211,26 @@ Download the onboarding package from Microsoft Defender Security Center:
     Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
 
     ```bash
-    $ mdatp --health orgId
+    mdatp --health orgId
     ```
 
 2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
-    $ python WindowsDefenderATPOnboarding.py
+    python WindowsDefenderATPOnboarding.py
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
 
     ```bash
-    $ mdatp --health orgId
+    mdatp --health orgId
     [your organization identifier]
     ```
 
 4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
-    $ mdatp --health healthy
+    mdatp --health healthy
     1
     ```
 
@@ -229,22 +238,22 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-    ```bash
-    $ mdatp --health realTimeProtectionEnabled
-    1
-    ```
+        ```bash
+        mdatp --health realTimeProtectionEnabled
+        1
+        ```
 
     - Open a Terminal window. Copy and execute the following command:
 
-    ``` bash
-    $ curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
-    ```
+        ``` bash
+        curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+        ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
-    ```bash
-    $ mdatp --threat --list --pretty
-    ```
+        ```bash
+        mdatp --threat --list --pretty
+        ```
 
 ## Log installation issues
 
