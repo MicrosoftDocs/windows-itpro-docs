@@ -33,6 +33,14 @@ This document also assumes that the HoloLens has been evaluated by security team
 
 Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed. It is also important to ensure that your security team has approved of the use of the HoloLens on the company's network. Please see [Frequently ask security questions](hololens-faq-security.md) for additional security information.
 
+### Type of identity
+
+Determine the type of identity that will be used to sign into the device.
+
+1. **Local Accounts:** This account is local to the device (like a local admin account on a windows PC). This will allow only 1 user to log into the device.
+2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
+3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
+
 ### Type of Features
 
 Your feature requirements will determine which HoloLens you need. One popular feature that we see deployed in customer environments frequently is Kiosk Mode. A list of HoloLens key features, and the editions of HoloLens that support them, can be found [here](hololens-commercial-features.md).
@@ -66,18 +74,10 @@ The majority of the steps found in this document will also apply to the followin
 2. Guides
 3. Customer Apps
 
-### Type of identity
-
-Determine the type of identity that will be used to sign into the device.
-
-1. **Local Accounts:** This account is local to the device (like a local admin account on a windows PC). This will allow only 1 user to log into the device.
-2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
-3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
-
 ### Determine your enrollment method
 
 1. Bulk enrollment with a security token in a provisioning package.  
-  Pros: this is the most automated approach  
+  Pros: this is the most automated approach  k
   Cons: takes initial server-side setup  
 1. Auto-enroll on user sign in.  
   Pros: easiest approach  
