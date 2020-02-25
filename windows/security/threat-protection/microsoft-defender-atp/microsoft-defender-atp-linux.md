@@ -26,6 +26,8 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
 ## How to install Microsoft Defender ATP for Linux
 
 ### Prerequisites
@@ -39,9 +41,9 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Logged on users do not appear in the ATP portal.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
-```bash
-$ sudo SUSEConnect --status-text
-```
+    ```bash
+    $ sudo SUSEConnect --status-text
+    ```
 
 ### Installation instructions
 
