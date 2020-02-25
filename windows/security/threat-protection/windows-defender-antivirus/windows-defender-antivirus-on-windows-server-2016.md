@@ -24,10 +24,10 @@ manager: dansimp
 
 Windows Defender Antivirus is available on Windows Server 2016 and Windows Server 2019. In some instances, Windows Defender Antivirus is referred to as Endpoint Protection; however, the protection engine is the same.
 
-While the functionality, configuration, and management is largely the same for Windows Defender Antivirus on Windows 10, there are a few key differences on Windows Server 2016 or Windows Server 2019:
+While the functionality, configuration, and management are largely the same for Windows Defender Antivirus on Windows 10, there are a few key differences on Windows Server 2016 or Windows Server 2019:
 
 - In Windows Server, [automatic exclusions](configure-server-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
-- In Windows Server, Windows Defender Antivirus will not disable itself if you are running another antivirus product.
+- In Windows Server, Windows Defender Antivirus does not automatically disable itself if you are running another antivirus product.
 
 ## The process at a glance
 
@@ -158,7 +158,7 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender Antivirus on Windows Server 2016 or 2019.
 
-See the [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) topic for more information. 
+See [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md). 
 
 ## Need to uninstall Windows Defender Antivirus?
 
