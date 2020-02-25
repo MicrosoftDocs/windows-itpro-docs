@@ -41,9 +41,9 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Logged on users do not appear in the ATP portal.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
-```bash
-$ sudo SUSEConnect --status-text
-```
+    ```bash
+    $ sudo SUSEConnect --status-text
+    ```
 
 ### Installation instructions
 
