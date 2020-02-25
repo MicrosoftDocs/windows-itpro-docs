@@ -163,6 +163,8 @@ Directions for upgrading to the commercial suite can be found [here](https://doc
 1. Check your app settings
     1. Log into your Microsoft Store Business account
     1. **Manage > Products and Services > Apps and Software > Select the app you want to sync > Private Store Availability > Select “Everyone” or “Specific Groups”**
+        >[!NOTE]
+        >If you don't see the app you want, you will have to "get" the app by searching the store for your app. **Click the "Search" bar in the upper right-hand corner > type in the name of the app > click on the app > select "Get"**.
     1. If you do not see your apps in **Intune > Client Apps > Apps** , you may have to [sync your apps](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) again.
 
 1. [Create a device profile for Kiosk mode](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
