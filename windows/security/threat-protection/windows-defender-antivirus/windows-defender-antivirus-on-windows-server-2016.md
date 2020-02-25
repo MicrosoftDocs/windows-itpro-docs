@@ -136,10 +136,10 @@ The following table lists the services for Windows Defender Antivirus and the de
 
 |Service Name|File Location|Description|
 |--------|---------|--------|
-|Windows Defender Service (Windefend)|C:\Program Files\Windows Defender\MsMpEng.exe|This is the main Windows Defender Antivirus service that needs to be running at all times.|
-|Windows Error Reporting Service (Wersvc)|C:\WINDOWS\System32\svchost.exe -k WerSvcGroup|This service sends error reports back to Microsoft.|
-|Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
-|Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
+|Windows Defender Service (Windefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|This is the main Windows Defender Antivirus service that needs to be running at all times.|
+|Windows Error Reporting Service (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|This service sends error reports back to Microsoft.|
+|Windows Defender Firewall (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|We recommend leaving the Windows Defender Firewall service enabled.|
+|Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
 ## Submit Samples
 
@@ -153,10 +153,10 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 |Setting  |Description  |
 |---------|---------|
-|**0** Always prompt.     |The Windows Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Windows Defender Antivirus, but is not recommended for installations on Windows Server 2016 or 2019 without a GUI.         |
-|**1** Send safe samples automatically.     |The Windows Defender Antivirus service sends all files marked as "safe" and prompts for the remainder of the files.         |
-|**2** Never send.      |The Windows Defender Antivirus service does not prompt and does not send any files.         |
-|**3** Send all samples automatically.     |The Windows Defender Antivirus service sends all files without a prompt for confirmation.         |
+|**0** Always prompt     |The Windows Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Windows Defender Antivirus, but is not recommended for installations on Windows Server 2016 or 2019 without a GUI.         |
+|**1** Send safe samples automatically     |The Windows Defender Antivirus service sends all files marked as "safe" and prompts for the remainder of the files.         |
+|**2** Never send      |The Windows Defender Antivirus service does not prompt and does not send any files.         |
+|**3** Send all samples automatically     |The Windows Defender Antivirus service sends all files without a prompt for confirmation.         |
 
 ## Configure automatic exclusions
 
@@ -172,7 +172,7 @@ If you are using a third-party antivirus solution and you're running into issues
 
 - See [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection.
 
-If you determine you do want to uninstall Windows Defender Antivirus, follow these steps:
+If you determine you do want to uninstall Windows Defender Antivirus, follow the steps in the following sections.
 
 ### Uninstall Windows Defender Antivirus using the Remove Roles and Features wizard
 
