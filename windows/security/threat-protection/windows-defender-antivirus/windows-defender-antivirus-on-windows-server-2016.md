@@ -33,7 +33,7 @@ While the functionality, configuration, and management is largely the same for W
 
 The process of setting up and running Windows Defender Antivirus on a server platform includes several steps:
 
-1. [Enable the interface](#enable-or-disable-the-user-interface-on-windows-server-2016-or-2019)
+1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
 
 2. [Install Windows Defender Antivirus](#install-windows-defender-antivirus-on-windows-server-2016-or-2019)
 
