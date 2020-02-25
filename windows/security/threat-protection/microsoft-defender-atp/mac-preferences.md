@@ -24,7 +24,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see the [Resources](mac-resources.md#configuring-from-the-command-line) page.
+>This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## Summary
 
@@ -325,6 +325,8 @@ Specify whether to enable EDR early preview features.
 
 Specify a tag name and its value. 
 
+- The GROUP tag, tags the machine with the specified value. The tag is reflected in the portal under the machine page and can be used for filtering and grouping machines.
+
 |||
 |:---|:---|
 | **Domain** | `com.microsoft.wdav` |
@@ -569,6 +571,18 @@ The following configuration profile contains entries for all settings described 
         <key>automaticSampleSubmission</key>
         <true/>
     </dict>
+    <key>edr</key>
+    <dict>
+        <key>tags</key>
+        <array>
+            <dict>
+                <key>key</key>
+                <string>GROUP</string>
+                <key>value</key>
+                <string>ExampleTag</string>
+            </dict>
+        </array>
+    </dict>
     <key>userInterface</key>
     <dict>
         <key>hideStatusMenuIcon</key>
@@ -694,6 +708,18 @@ The following configuration profile contains entries for all settings described 
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                </dict>
+                <key>edr</key>
+                <dict>
+                    <key>tags</key>
+                    <array>
+                        <dict>
+                            <key>key</key>
+                            <string>GROUP</string>
+                            <key>value</key>
+                            <string>ExampleTag</string>
+                        </dict>
+                    </array>
                 </dict>
                 <key>userInterface</key>
                 <dict>
