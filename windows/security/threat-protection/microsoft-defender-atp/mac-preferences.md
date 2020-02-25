@@ -24,7 +24,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see the [Resources](mac-resources.md#configuring-from-the-command-line) page.
+>This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## Summary
 
