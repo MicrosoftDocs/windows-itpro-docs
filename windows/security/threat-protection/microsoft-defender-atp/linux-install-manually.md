@@ -238,22 +238,22 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-    ```bash
-    mdatp --health realTimeProtectionEnabled
-    1
+        ```bash
+        mdatp --health realTimeProtectionEnabled
+        1
     ```
 
     - Open a Terminal window. Copy and execute the following command:
 
-    ``` bash
-    curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
-    ```
+        ``` bash
+        curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+        ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
-    ```bash
-    mdatp --threat --list --pretty
-    ```
+        ```bash
+        mdatp --threat --list --pretty
+        ```
 
 ## Log installation issues
 
