@@ -47,10 +47,13 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
-By default, Windows Defender Antivirus is installed and functional on Windows Server 2016 and Windows Server 2019. The user interface is installed by default on some SKUs, but is not required. If the interface is not installed on your server, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
+By default, Windows Defender Antivirus is installed and functional on Windows Server 2016 and Windows Server 2019. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Windows Defender Antivirus. And if the GUI is not installed on your server, you can add it.
 
->[!NOTE]
->You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
+### Turn on the GUI for Windows Defender Antivirus
+
+1. Refer to [this article](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
+
+2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option.
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
@@ -144,14 +147,13 @@ The following table lists the services for Windows Defender Antivirus and the de
 
 ## Submit Samples
 
-Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence.
+To submit a file, review the [submission guide](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide), and then visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission)
 
-We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
+Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence. We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
 
 ### Enable automatic sample submission
 
 To enable automatic sample submission, start a Windows PowerShell console as an administrator, and set the **SubmitSamplesConsent** value data according to one of the following settings:
-
 
 |Setting  |Description  |
 |---------|---------|
@@ -189,6 +191,12 @@ The following PowerShell cmdlet will also uninstall Windows Defender AV on Windo
 ```PowerShell
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
+
+### Turn off the GUI for Windows Defender Antivirus
+
+>[!NOTE]
+>You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
+
 
 ## Related topics
 
