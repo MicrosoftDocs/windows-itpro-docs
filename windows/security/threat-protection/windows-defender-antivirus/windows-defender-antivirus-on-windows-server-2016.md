@@ -37,7 +37,7 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 2. [Install Windows Defender Antivirus](#install-windows-defender-antivirus-on-windows-server-2016-or-2019)
 
-2. [Verify Windows Defender Antivirus is running](#verify-windows-defender-is-running)
+2. [Verify Windows Defender Antivirus is running](#verify-windows-defender-antivirus-is-running)
 
 3. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence)
 
