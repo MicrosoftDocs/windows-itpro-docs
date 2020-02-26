@@ -66,8 +66,8 @@ In addition to the command-line switches that control which profiles to migrate,
 In these steps, we assume that you have performed the prerequisite procedures in the following topics, so that you have a deployment share named **MDTProduction$** on MDT01:
 
 - [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
-- [Create a Windows 10 reference image](create-a-windows-10-reference-image)
-- [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
+- [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
+- [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 
 It is also assumed that you have a domain member client computer named PC0001 in your environment running Windows 7, 8.1 or 10 that is ready for a refresh to the latest version of Windows 10.  For demonstration purposes, we will refreshing a Windows 7 SP1 PC to Windows 10, version 1909.
  
