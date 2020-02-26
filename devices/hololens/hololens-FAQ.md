@@ -40,7 +40,7 @@ This FAQ addresses the following questions and issues:
 - [HoloLens doesn't respond to my gestures](#hololens-doesnt-respond-to-my-gestures)
 - [HoloLens doesn't respond to my voice](#hololens-doesnt-respond-to-my-voice)
 - [I'm having problems pairing or using a Bluetooth device](#im-having-problems-pairing-or-using-a-bluetooth-device)
-- [HoloLens Settings lists devices as available, but the devices don’t work]()
+- [HoloLens Settings lists devices as available, but the devices don’t work](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
 - [I'm having problems with the HoloLens clicker](#im-having-problems-with-the-hololens-clicker)
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
