@@ -513,9 +513,9 @@ If your organization has a Microsoft Software Assurance agreement, you also can 
 
 ### Add DaRT 10 to the boot images
 
-If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#bkmk-update-deployment). To enable the remote connection feature in MDT, you need to do the following:
+If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#update-the-deployment-share). To enable the remote connection feature in MDT, you need to do the following:
 
->DaRT 10 is part of [MDOP 2015](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/#how-to-get-mdop). Note: MDOP might be available as a download from your [Visual Studio subscription](https://my.visualstudio.com/Downloads). When searching, be sure to look for **Desktop Optimization Pack**.
+>DaRT 10 is part of [MDOP 2015](https://docs.microsoft.com/microsoft-desktop-optimization-pack/#how-to-get-mdop). Note: MDOP might be available as a download from your [Visual Studio subscription](https://my.visualstudio.com/Downloads). When searching, be sure to look for **Desktop Optimization Pack**.
 
 On **MDT01**:
 
