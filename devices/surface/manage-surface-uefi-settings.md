@@ -1,5 +1,5 @@
 ---
-title: Manage Surface UEFI settings (Surface)
+title: Manage Surface UEFI settings 
 description: Use Surface UEFI settings to enable or disable devices or components, configure security settings, and adjust Surface device boot settings. 
 keywords: firmware, security, features, configure, hardware
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.pagetype: devices, surface
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 02/26/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -90,6 +90,7 @@ On the Security page you can also change the configuration of Secure Boot on you
 Depending on your device, you may also be able to see if your TPM is enabled or disabled. If you do not see the **Enable TPM**  setting, open tpm.msc in Windows to check the status, as shown in Figure 5. The TPM is used to authenticate encryption for your device’s data with BitLocker. To learn more, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
 
 ![TPM console](images/manage-surface-uefi-fig5-a.png "TPM console")
+
 *Figure 5. TPM console*
 
 
@@ -111,11 +112,11 @@ The Devices page allows you to  enable or disable specific devices and component
 
 - Onboard Audio (Speakers and Microphone) 
 
-Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 8. 
+Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 6. 
 
 ![Enable and disable specific devices](images/manage-surface-uefi-fig5a.png "Enable and disable specific devices")
 
-*Figure 8. Enable and disable specific devices*
+*Figure 6. Enable and disable specific devices*
 
 ## UEFI menu: Boot configuration 
 
@@ -131,11 +132,11 @@ The Boot Configuration page allows you to change the order of your boot devices 
 
 You can boot from a specific device immediately, or you can swipe left on that device’s entry in the list using the touchscreen. You can also boot immediately to a USB device or USB Ethernet adapter when the Surface device is powered off by pressing the **Volume Down** button and the **Power** button simultaneously. 
 
-For the specified boot order to take effect, you must set the **Enable Alternate Boot Sequence** option to **On**, as shown in Figure 6. 
+For the specified boot order to take effect, you must set the **Enable Alternate Boot Sequence** option to **On**, as shown in Figure 7. 
 
 ![Configure the boot order for your Surface device](images/manage-surface-uefi-fig6.png "Configure the boot order for your Surface device")
 
-*Figure 6. Configure the boot order for your Surface device* 
+*Figure 7. Configure the boot order for your Surface device* 
 
 You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE Network Boot** option, for example when performing a Windows deployment using PXE where the PXE server is configured for IPv4 only.  
 
@@ -143,7 +144,7 @@ You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE
 The Management page allows you to manage use of Zero Touch UEFI Management and other features on eligible devices including Surface Pro 7, Surface Pro X, and Surface Laptop 3.  
 
 ![Manage access to Zero Touch UEFI Management and other features](images/manage-surface-uefi-fig7a.png "Manage access to Zero Touch UEFI Management and other features")
-*Figure 7. Manage access to Zero Touch UEFI Management and other features* 
+*Figure 8. Manage access to Zero Touch UEFI Management and other features* 
 
 
 Zero Touch UEFI Management lets you remotely manage UEFI settings  by using a device profile within Intune called Device Firmware Configuration Interface (DFCI). If you do not configure this setting, the ability to manage eligible devices with DFCI is set to **Ready**. To prevent DFCI, select **Opt-Out**. 
