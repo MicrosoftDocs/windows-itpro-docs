@@ -61,7 +61,11 @@ You can find up-to-date information about the latest firmware version for your S
 
 ## UEFI Security page 
 
-The Security page allows you to set a password to protect UEFI settings. This password must be entered when you boot the Surface device to UEFI. The password can contain the following characters (as shown in Figure 2): 
+![Configure Surface UEFI security settings](images/manage-surface-uefi-fig4.png "Configure Surface UEFI security settings")
+
+*Figure 2. Configure Surface UEFI security settings*
+
+The Security page allows you to set a password to protect UEFI settings. This password must be entered when you boot the Surface device to UEFI. The password can contain the following characters (as shown in Figure 3): 
 
 - Uppercase letters: A-Z 
 
@@ -75,19 +79,19 @@ The password must be at least 6 characters and is case sensitive.
 
 ![Add a password to protect Surface UEFI settings](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
-*Figure 2. Add a password to protect Surface UEFI settings*
+*Figure 3. Add a password to protect Surface UEFI settings*
 
-On the Security page you can also change the configuration of Secure Boot on your Surface device. Secure Boot technology prevents unauthorized boot code from booting on your Surface device, which protects against bootkit and rootkit-type malware infections. You can disable Secure Boot to allow your Surface device to boot third-party operating systems or bootable media. You can also configure Secure Boot to work with third-party certificates, as shown in Figure 3. Read more about [Secure Boot](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) in the TechNet Library.
+On the Security page you can also change the configuration of Secure Boot on your Surface device. Secure Boot technology prevents unauthorized boot code from booting on your Surface device, which protects against bootkit and rootkit-type malware infections. You can disable Secure Boot to allow your Surface device to boot third-party operating systems or bootable media. You can also configure Secure Boot to work with third-party certificates, as shown in Figure 4. Read more about [Secure Boot](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) in the TechNet Library.
 
 ![Configure Secure Boot](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 
-*Figure 3. Configure Secure Boot*
+*Figure 4. Configure Secure Boot*
 
-You can also enable or disable the Trusted Platform Module (TPM) device on the Security page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
+Depending on your device, you may also be able to see if your TPM is enabled or disabled. If you do not see the **Enable TPM**  setting, open tpm.msc in Windows to check the status, as shown in Figure 5. The TPM is used to authenticate encryption for your device’s data with BitLocker. To learn more, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
 
-![Configure Surface UEFI security settings](images/manage-surface-uefi-fig4.png "Configure Surface UEFI security settings")
+![TPM console](images/manage-surface-uefi-fig5-a.png "TPM console")
+*Figure 5. TPM console*
 
-*Figure 4. Configure Surface UEFI security settings*
 
 ## UEFI menu: Devices 
 
@@ -107,11 +111,11 @@ The Devices page allows you to  enable or disable specific devices and component
 
 - Onboard Audio (Speakers and Microphone) 
 
-Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 5. 
+Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 8. 
 
 ![Enable and disable specific devices](images/manage-surface-uefi-fig5a.png "Enable and disable specific devices")
 
-*Figure 5. Enable and disable specific devices*
+*Figure 8. Enable and disable specific devices*
 
 ## UEFI menu: Boot configuration 
 
@@ -151,11 +155,11 @@ For more information, refer to [Intune management of Surface UEFI settings](surf
 
 ## UEFI menu: Exit 
 
-Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 8. 
+Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 9. 
 
 ![Exit Surface UEFI and restart the device](images/manage-surface-uefi-fig7.png "Exit Surface UEFI and restart the device")
 
-*Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
+*Figure 9. Click Restart Now to exit Surface UEFI and restart the device*
 
 ## Surface UEFI boot screens
 
@@ -163,44 +167,44 @@ When you update Surface device firmware, by using either Windows Update or manua
 
 ![Surface UEFI firmware update with blue progress bar](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
 
-*Figure 9. The Surface UEFI firmware update displays a blue progress bar*
+*Figure 10. The Surface UEFI firmware update displays a blue progress bar*
 
 ![System Embedded Controller firmware with green progress bar](images/manage-surface-uefi-fig9.png "System Embedded Controller firmware with green progress bar")
 
-*Figure 10. The System Embedded Controller firmware update displays a green progress bar*
+*Figure 11. The System Embedded Controller firmware update displays a green progress bar*
 
 ![SAM Controller firmware update with orange progress bar](images/manage-surface-uefi-fig10.png "SAM Controller firmware update with orange progress bar")
 
-*Figure 11. The SAM Controller firmware update displays an orange progress bar*
+*Figure 12. The SAM Controller firmware update displays an orange progress bar*
 
 ![Intel Management Engine firmware with red progress bar](images/manage-surface-uefi-fig11.png "Intel Management Engine firmware with red progress bar")
 
-*Figure 12. The Intel Management Engine firmware update displays a red progress bar*
+*Figure 13. The Intel Management Engine firmware update displays a red progress bar*
 
 ![Surface touch firmware with gray progress bar](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
 
-*Figure 13. The Surface touch firmware update displays a gray progress bar*
+*Figure 14. The Surface touch firmware update displays a gray progress bar*
 
 ![Surface KIP firmware with light green progress bar](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
 
-*Figure 14. The Surface KIP firmware update displays a light green progress bar*
+*Figure 15. The Surface KIP firmware update displays a light green progress bar*
 
 ![Surface ISH firmware with pink progress bar](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
 
-*Figure 15. The Surface ISH firmware update displays a light pink progress bar*
+*Figure 16 The Surface ISH firmware update displays a light pink progress bar*
 
 ![Surface Trackpad firmware with gray progress bar](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
-*Figure 16. The Surface Trackpad firmware update displays a pink progress bar*
+*Figure 17. The Surface Trackpad firmware update displays a pink progress bar*
 
 ![Surface TCON firmware with light gray progress bar](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
 
-*Figure 17. The Surface TCON firmware update displays a light gray progress bar*
+*Figure 18. The Surface TCON firmware update displays a light gray progress bar*
 
 
 ![Surface TPM firmware with light purple progress bar](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
 
-*Figure 18. The Surface TPM firmware update displays a purple progress bar*
+*Figure 19. The Surface TPM firmware update displays a purple progress bar*
 
 
 >[!NOTE]
@@ -208,7 +212,7 @@ When you update Surface device firmware, by using either Windows Update or manua
 
 ![Surface boot screen that indicates Secure Boot has been disabled](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
-*Figure 19. Surface boot screen that indicates Secure Boot has been disabled in Surface UEFI settings*
+*Figure 20. Surface boot screen that indicates Secure Boot has been disabled in Surface UEFI settings*
 
 ## Related topics
 
