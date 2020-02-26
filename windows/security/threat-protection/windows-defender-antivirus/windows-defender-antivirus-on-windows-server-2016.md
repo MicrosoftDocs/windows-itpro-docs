@@ -139,7 +139,7 @@ The following table lists the services for Windows Defender Antivirus and the de
 
 |Service Name|File Location|Description|
 |--------|---------|--------|
-|Windows Defender Service (Windefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|This is the main Windows Defender Antivirus service that needs to be running at all times.|
+|Windows Defender Service (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|This is the main Windows Defender Antivirus service that needs to be running at all times.|
 |Windows Error Reporting Service (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|This service sends error reports back to Microsoft.|
 |Windows Defender Firewall (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
