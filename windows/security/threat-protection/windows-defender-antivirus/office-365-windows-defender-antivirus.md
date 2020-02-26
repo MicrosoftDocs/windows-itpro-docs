@@ -29,11 +29,11 @@ manager: dansimp
 
 You might already know that:
 
-- **Windows Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Windows Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. 
+- **Windows Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Windows Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Windows Defender Antivirus is your next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10). 
 
-- **Office 365 includes antiphishing, antispam, and antimalware protection**. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices. This is true for home and business users. And if you're a business user, and your organization is using Office 365 E5, you get even more protection through Office 365 Advanced Threat Protection.
+- **Office 365 includes antiphishing, antispam, and antimalware protection**. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices. This is true for home and business users. And if you're a business user, and your organization is using Office 365 E5, you get even more protection through Office 365 Advanced Threat Protection. [Protect against threats with Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
-- **OneDrive, included in Office 365, enables you to store your files and folders online, and share them as you see fit**. You can work together with people (for work or fun), and coauthor files that are stored in OneDrive. You can also access your files across all your devices (your PC, phone, and tablet).
+- **OneDrive, included in Office 365, enables you to store your files and folders online, and share them as you see fit**. You can work together with people (for work or fun), and coauthor files that are stored in OneDrive. You can also access your files across all your devices (your PC, phone, and tablet). [Manage sharing in OneDrive](https://docs.microsoft.com/OneDrive/manage-sharing).
 
 **But did you know there's at least one very good security reason to use OneDrive together with Windows Defender Antivirus**? It's ransomware protection!
 
@@ -49,17 +49,17 @@ Think of the time and hassle this can save!
 
 ## More good reasons to use OneDrive
 
-Protection from ransomware is one great reason to put your files in OneDrive. There are more! Take a look at the following video: <br/><br/>
+Protection from ransomware is one great reason to put your files in OneDrive. And there are several more good reasons. Take a look at the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
 ## Want to learn more?
 
-
-
-[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)
+[OneDrive](https://docs.microsoft.com/onedrive)
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+
+[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)
 
 
 
