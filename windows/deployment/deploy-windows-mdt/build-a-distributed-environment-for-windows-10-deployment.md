@@ -60,9 +60,9 @@ On **MDT01**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful.
+2. Wait for installation to comlete, and then verify that the installation was successful. See the following output:
 
-```
+```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 
 Success Restart Needed Exit Code      Feature Result
@@ -80,9 +80,9 @@ On **MDT02**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful.
+2. Wait for installation to comlete, and then verify that the installation was successful. See the following  output:
 
-```
+```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 
 Success Restart Needed Exit Code      Feature Result
@@ -101,9 +101,9 @@ mkdir d:\MDTProduction
 New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
 ```
 
-2. You should see the following  output:
+2. You should see the following output:
 
-```
+```output
 C:\> New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
 
 Name           ScopeName Path             Description
@@ -139,17 +139,17 @@ On **MDT01**:
    UserPassword=pass@word1
    SkipBDDWelcome=YES
    ```
-   **Note**: The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
+   >[!NOTE]
+   >The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
      
 2. Save the Bootstrap.ini file.
 3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**. Use the default settings for the Update Deployment Share Wizard. This process will take a few minutes.
 4. After the update is complete, use the Windows Deployment Services console on MDT01. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
+5. Browse and select the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
 
    ![figure 5](../images/mdt-10-fig05.png)
 
    Replacing the updated boot image in WDS.
-
-5. Browse and select the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
 
  >[!TIP]
  >If you modify bootstrap.ini again later, be sure to repeat the process of updating the deployment share in the Deployment Workbench and replacing the boot image in the WDS console.
@@ -175,11 +175,6 @@ On **MDT01**:
 13. On the **Folders to Replicate** page, click **Add**, enter **D:\\MDTProduction** as the folder to replicate, click **OK**, and then click **Next**.
 14. On the **Local Path of MDTProduction** on the **Other Members** page, select **MDT02**, and click **Edit**.
 15. On the **Edit** page, select the **Enabled** option, type in **D:\\MDTProduction** as the local path of folder, select the **Make the selected replicated folder on this member read-only** check box, click **OK**, and then click **Next**.
-
-    ![figure 7](../images/mdt-10-fig07.png)
-
-    Configure the MDT02 member.
-
 16. On the **Review Settings and Create Replication Group** page, click **Create**.
 17. On the **Confirmation** page, click **Close**.
 
@@ -236,7 +231,7 @@ The DFS Replication Health Report.
 
 Like you did in the previous topic for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
 1. On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
-2. Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
+2. Browse to the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** file and add the image with the default settings.
 
 ## Deploy the Windows 10 client to the remote site
 
