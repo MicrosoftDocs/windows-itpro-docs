@@ -46,7 +46,7 @@
 
 ### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
-#### [Office 365 together with Windows Defender Antivirus](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
+#### [Better together: Office 365 and Windows Defender Antivirus](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
