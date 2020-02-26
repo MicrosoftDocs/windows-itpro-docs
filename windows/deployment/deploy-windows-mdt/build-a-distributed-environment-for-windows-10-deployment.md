@@ -233,9 +233,9 @@ Like you did in the previous topic for MDT01, you need to add the MDT Production
 1. On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
 2. Browse to the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** file and add the image with the default settings.
 
-## Deploy the Windows 10 client to the remote site
+## Deploy a Windows 10 client to the remote site
 
-Now you should have a solution ready for deploying the Windows 10 client to the remote site, Stockholm, connecting to the MDT Production deployment share replica on MDT02.
+Now you should have a solution ready for deploying the Windows 10 client to the remote site, Stockholm, connecting to the MDT Production deployment share replica on MDT02. Deployment to the remote site can be tested using the following procedure. Note: In order to use the remote site server (MDT02) the VM must be assigned a default gateway corresponding to that which was entered in the Boostrap.ini file.
 
 1.  Create a virtual machine with the following settings:
     1. Name: PC0006
