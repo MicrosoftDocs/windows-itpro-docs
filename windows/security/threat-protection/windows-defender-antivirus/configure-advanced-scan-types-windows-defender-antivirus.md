@@ -29,9 +29,9 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 <a id="ref1"></a>
 
-## Use Configuration Manager to configure scanning options:
+## Use Microsoft Endpoint Configuration Manager to configure scanning options:
 
-See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ## Use Group Policy to configure scanning options
 

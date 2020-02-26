@@ -15,6 +15,8 @@ ms.date: 07/18/2019
 
 # Policy CSP
 
+> [!WARNING] 
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -197,6 +199,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-allowshareduserappdata" id="applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a>
+  </dd>
+  <dd> 
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a> 
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
@@ -611,6 +616,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-bluetooth.md#bluetooth-servicesallowedlist" id="bluetooth-servicesallowedlist">Bluetooth/ServicesAllowedList</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize"id=bluetooth-setminimumencryptionkeysize>Bluetooth/SetMinimumEncryptionKeySize</a>
   </dd>
 </dl>
 
@@ -3325,6 +3333,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-storage.md#storage-allowdiskhealthmodelupdates" id="storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesenseglobal"id="storage-allowstoragesenseglobal">Storage/AllowStorageSenseGlobal</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup"id="storage-allowstoragesensetemporaryfilescleanup">Storage/AllowStorageSenseTemporaryFilesCleanup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold"id="storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold"id="storage-configstoragesensedownloadscleanupthreshold">Storage/ConfigStorageSenseDownloadsCleanupThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenseglobalcadence"id="storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenserecyclebincleanupthreshold"id="storage-configstoragesenserecyclebincleanupthreshold">Storage/ConfigStorageSenseRecycleBinCleanupThreshold</a>
   <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>

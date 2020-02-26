@@ -23,7 +23,7 @@ ms.topic: article
 
 ## Overview 
 
-You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. See 
+You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. See [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) for more information. 
 
 An IT administrator can set policies for Windows Update for Business by using Group Policy, or they can be set locally (per device). All of the relevant policies are under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
 
@@ -42,10 +42,10 @@ Follow these steps on a device running the Remote Server Administration Tools or
 
 ### Set up a ring
 1. Start Group Policy Management Console (gpmc.msc).
-2. Expand **Forest > Domains > *\<your domain\>*.
+2. Expand **Forest > Domains > *\<your domain\>**.
 3. Right-click *\<your domain>* and select **Create a GPO in this domain and link it here**.
 4. In the **New GPO** dialog box, enter *Windows Update for Business - Group 1* as the name of the new Group Policy Object.
-5. Right-click the **Windows Update for Business - Group 1" object, and then select **Edit**.
+5. Right-click the **"Windows Update for Business - Group 1"** object, and then select **Edit**.
 6. In the Group Policy Management Editor, go to **Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update**. You are now ready to start assigning policies to this ring (group) of devices.
 
 
@@ -138,7 +138,7 @@ We recommend that you set up a ring to receive preview builds by joining the Win
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)
 
 

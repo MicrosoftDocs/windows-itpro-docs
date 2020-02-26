@@ -32,6 +32,9 @@ If smart cards are used for authentication, the device should automatically lock
 
 If you select **Force Logoff** in the property sheet for this policy setting, the user is automatically logged off when the smart card is removed. Users will have to reinsert their smart cards and reenter their PINs when they return to their workstations.
 
+> [!NOTE]
+> This policy depends on **Smart Card Removal Policy** service. The service must be running for the policy to take effect, so it is recommended to set the startup type of the service to **Automatic**.
+
 ### Possible values
 
 -   No Action

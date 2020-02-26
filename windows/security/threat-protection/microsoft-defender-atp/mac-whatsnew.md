@@ -19,6 +19,12 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+## 100.83.73
+
+- Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions)
+- When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu
+- Performance improvements & bug fixes
+
 ## 100.82.60
 
 - Addressed an issue where the product fails to start following a definition update.

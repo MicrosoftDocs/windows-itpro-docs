@@ -49,7 +49,7 @@ You can also use Group Policy, Intune, or MDM CSPs to configure and deploy the s
 
 ## Review attack surface reduction events in Windows Event Viewer
 
-To review apps that would have been blocked, open Event Viewer and filter for Event ID 1121 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1121 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
 
  Event ID | Description
 -|-

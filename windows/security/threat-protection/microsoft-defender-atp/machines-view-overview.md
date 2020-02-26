@@ -78,7 +78,7 @@ Filter by machines that are well configured or require attention based on the se
 - **Well configured** - Machines have the security controls well configured.
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
-For more information, see [View the Secure Score dashboard](secure-score-dashboard.md).
+For more information, see [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
 
 ### Threat mitigation status
 

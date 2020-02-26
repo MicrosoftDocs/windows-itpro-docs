@@ -36,7 +36,7 @@ Monitoring network connection behind a forward proxy is possible due to addition
 
 Network protection can be controlled using the following modes:
 
-- **Block** <br> Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
+- **Block** <br> Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Microsoft Defender Security Center.
 - **Audit** <br> Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.
 
 

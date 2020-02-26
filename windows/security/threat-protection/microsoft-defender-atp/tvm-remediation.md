@@ -1,6 +1,6 @@
 ---
 title: Remediation and exception
-description: Remediate security weaknesses and fill exceptions by integrating Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
+description: Remediate security weaknesses and fill exceptions by integrating Microsoft Intune and Microsoft Endpoint Configuration Manager. 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -66,10 +66,10 @@ When you submit a remediation request from Threat & Vulnerability Management, it
 
 It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation** page, and it also creates a remediation ticket in Microsoft Intune.
 
-The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
+The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task.
 
 ## When to file for exception instead of remediating issues 
-You can file exceptions to exclude certain recommendation from showing up in reports and affecting risk scores or secure scores.
+You can file exceptions to exclude certain recommendation from showing up in reports and affecting your configuration score.
 
 When you select a security recommendation, it opens up a flyout screen with details and options for your next step. You can either **Open software page**, choose from **Remediation options**, go through **Exception options** to file for exceptions, or **Report inaccuracy**.
 
@@ -113,10 +113,10 @@ Clicking the link opens up to the **Security recommendations** page, where you c
 -   **In effect** - The exception that you've filed is in progress
 
 ### Exception impact on scores
-Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Secure Score (for configurations) of your organization in the following manner:
+Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Configuration Score (for configurations) of your organization in the following manner:
 -   **No impact** - Removes the recommendation from the lists (which can be reverse through filters), but will not affect the scores
 -   **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
--   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Secure Score results out of the exception option that you made
+-   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Configuration Score results out of the exception option that you made
 
 The exception impact shows on both the Security recommendations page column and in the flyout pane.
 
@@ -133,5 +133,10 @@ The exception impact shows on both the Security recommendations page column and 
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
+- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
 
 

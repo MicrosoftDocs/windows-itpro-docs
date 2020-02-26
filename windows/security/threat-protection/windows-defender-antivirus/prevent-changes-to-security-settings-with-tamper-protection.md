@@ -91,7 +91,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
     - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in [Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)).
     - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; this is included in Microsoft 365 E5.)
-    - Your Windows machines must be running Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
+    - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
     - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md).)
 
@@ -119,9 +119,9 @@ Here's what you see in the Windows Security app:
 
 ### Are you using Windows OS 1709, 1803, or 1809?
 
-If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
+If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
 
-#### Use PowerShell to determine whether tamper protection is turned
+#### Use PowerShell to determine whether tamper protection is turned on
 
 1. Open the Windows PowerShell app.
 
@@ -147,7 +147,7 @@ Tamper protection integrates with [Threat & Vulnerability Management](https://do
 
 In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
-![Turn on tamper protection](tamperprotectsecurityrecos.png)
+![Turn on tamper protection](images/tamperprotectsecurityrecos.png)
 
 To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
@@ -155,7 +155,7 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 ### To which Windows OS versions is configuring tamper protection is applicable?
 
-Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 ### Is configuring tamper protection in Intune supported on servers?
 
@@ -193,15 +193,16 @@ Value DisableRealtimeMonitoring = 0
 
 Configuring tamper protection in Intune can be targeted to your entire organization as well as to specific devices and user groups.
 
-### Can I configure tamper protection in System Center Configuration Manager?
 
-Currently, managing tamper protection through System Center Configuration Manager is not supported.
+### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
+
+Currently we do not have support to manage Tamper Protection through Microsoft Endpoint Configuration Manager.
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
 Currently, configuring tamper protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-### What happens if I try to change Microsoft Defender ATP settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when tamper protection is enabled on a device?
+### What happens if I try to change Microsoft Defender ATP settings in Intune, Microsoft Endpoint Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
 You won’t be able to change the features that are protected by tamper protection; such change requests are ignored.
 
