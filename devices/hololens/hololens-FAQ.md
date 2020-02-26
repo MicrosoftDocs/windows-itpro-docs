@@ -9,8 +9,11 @@ ms.author: v-tea
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
-ms.date: 10/30/2019
+ms.date: 02/26/2020
 ms.reviewer: 
+ms.custom: 
+- CI 114606
+- CSSTroubleshooting
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
