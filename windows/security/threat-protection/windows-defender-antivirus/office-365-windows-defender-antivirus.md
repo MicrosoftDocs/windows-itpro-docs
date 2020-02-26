@@ -25,28 +25,39 @@ manager: dansimp
 
 - Windows Defender Antivirus
 
-Windows Defender Antivirus
+## Windows Defender Antivirus together with Office 365
 
-Keep your PC safe with trusted antivirus protection built-in to Windows 10. Windows Defender Antivirus delivers comprehensive, ongoing and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud and the web.
+You might already know that:
 
-Complete, built-in and ongoing protection. Standard, nothing to buy. There's nothing to install. No configuration, no subscriptions, and no nagware.
+- Windows Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware. Windows Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. 
 
-OneDrive
+- Office 365 includes antiphishing, antispam, and antimalware protection. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices.
 
-Work together. Collaborate with people for work or fun. Share your files and folders easily with OneDrive or OneDrive for Business.
+- OneDrive, included in Office 365, enables you to share your files and folders as you see fit. You can work together with people (for work or fun), and coauthor files that are stored in OneDrive.
 
-Office 365
+But did you know there's at least one very good security reason to use OneDrive together with Windows Defender Antivirus? It's ransomware protection!
 
-Achieve more with Office 365. Get premium email and calendars, Office apps, 1 TB of cloud storage, and advanced security across all your devices.
+When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
 
+1. Windows Defender notifies you of the threat. (If your organization is using Microsoft Defender Advanced Threat Protection, your security operations team is notified, too.)
 
+2. Windows Defender Antivirus helps you (and your organization's security team) remove the ransomware.
+
+3. You get the option to use OneDrive Files Restore. This enables you to recover your files in OneDrive to the state they were in before the ransomware attack occurred.
+
+Think of the time and hassle this can save!
+
+## More good reasons to use OneDrive
+
+The following video gives more good reasons to put your files in OneDrive. Take a look!
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
 ## Learn more
 
-[Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
+[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)
 
-[Threat & Vulnerability Management](../microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-
+[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
 
 
