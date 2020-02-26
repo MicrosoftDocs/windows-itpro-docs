@@ -24,8 +24,7 @@ manager: dansimp
 **Applies to:**
 
 - Windows Defender Antivirus
-
-## Windows Defender Antivirus together with Office 365
+- Office 365
 
 You might already know that:
 
