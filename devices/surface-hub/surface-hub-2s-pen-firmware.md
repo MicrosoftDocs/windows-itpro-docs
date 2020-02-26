@@ -19,7 +19,7 @@ You can update firmware on Surface Hub 2 pen from Windows Update for Business or
 
 ## Update pen firmware using Windows Update for Business
 
-This section describes how to update pen firmware via the automated maintenance cycles for Windows Update, configured by default to occur nightly at 3 a.m. You will need to plan for two maintenance cycles to complete before applying the update to the Surface Hub 2 pen. Alternately, like any other update, you can use Windows Server Update Services (WSUS) to apply the firmware update. For more information about managing updates on Surface Hub 2S, see [Managing Windows updates on Surface Hub](manage-windows-updates-for-surface-hub.md).
+This section describes how to update pen firmware via the automated maintenance cycles for Windows Update, configured by default to occur nightly at 3 a.m. You will need to plan for two maintenance cycles to complete before applying the update to the Surface Hub 2 pen. Alternately, like any other update, you can use Windows Server Update Services (WSUS) to apply the firmware update. For more information, see [Managing Windows updates on Surface Hub](manage-windows-updates-for-surface-hub.md).
 
 1. Ensure the Surface Hub 2 pen is paired to Surface Hub 2S: Press and hold the **top** button until the white indicator LED light begins to blink. <br>
 ![Surface Hub 2 pen](images/sh2-pen-1.png) <br>
