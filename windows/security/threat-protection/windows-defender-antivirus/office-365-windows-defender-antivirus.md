@@ -35,7 +35,9 @@ You might already know that:
 
 - **OneDrive, included in Office 365, enables you to store your files and folders online, and share them as you see fit**. You can work together with people (for work or fun), and coauthor files that are stored in OneDrive. You can also access your files across all your devices (your PC, phone, and tablet). [Manage sharing in OneDrive](https://docs.microsoft.com/OneDrive/manage-sharing).
 
-**But did you know there's at least one very good security reason to use OneDrive together with Windows Defender Antivirus**? It's ransomware protection!
+## Ransomware protection and recovery
+
+Did you know there's at least one very good security reason to use OneDrive together with Windows Defender Antivirus? It's ransomware protection!
 
 When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
 
@@ -46,6 +48,22 @@ When you save your files to OneDrive, and Windows Defender Antivirus detects a r
 3. You get the option to use the OneDrive Files Restore feature. This enables you to recover your files in OneDrive to the state they were in before the ransomware attack occurred.
 
 Think of the time and hassle this can save!
+
+## Integration means better protection
+
+Did you know that Office 365 Advanced Threat Protection integrated with Microsoft Defender Advanced Threat Protection means better protection? Here's how:
+
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
+
+    AND
+
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) protects your devices from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves your security posture.
+
+    SO
+
+- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, Microsoft Defender Advanced Threat Protection.
+
+Want to learn more? See [Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
 ## More good reasons to use OneDrive
 
