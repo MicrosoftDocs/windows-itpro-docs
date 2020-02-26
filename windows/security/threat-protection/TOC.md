@@ -529,7 +529,7 @@
 
 
 #### [Raw data streaming API]()
-##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 

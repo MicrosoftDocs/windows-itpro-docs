@@ -164,7 +164,7 @@ under:
     Preview Builds \> Configure Authenticated Proxy usage for the Connected User
     Experience and Telemetry Service
 
-    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
+    -   Set it to **Enabled** and selectï¿½**Disable Authenticated Proxy usage**
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.

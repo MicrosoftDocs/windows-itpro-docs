@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Raw Data Streaming API (Preview)
+# Raw Data Streaming API
 
 **Applies to:**
 
