@@ -40,6 +40,7 @@ This FAQ addresses the following questions and issues:
 - [HoloLens doesn't respond to my gestures](#hololens-doesnt-respond-to-my-gestures)
 - [HoloLens doesn't respond to my voice](#hololens-doesnt-respond-to-my-voice)
 - [I'm having problems pairing or using a Bluetooth device](#im-having-problems-pairing-or-using-a-bluetooth-device)
+- [HoloLens Settings lists devices as available, but the devices don’t work]()
 - [I'm having problems with the HoloLens clicker](#im-having-problems-with-the-hololens-clicker)
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
@@ -166,15 +167,19 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 - Make sure your Bluetooth device is fully charged or has fresh batteries.
 - If you still can't connect, [restart your HoloLens](hololens-recovery.md).
 
-If you're having trouble using a Bluetooth device, make sure it's a supported device. Supported devices include:
+[Back to list](#list)
+
+## HoloLens Settings lists devices as available, but the devices don’t work
+
+HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+
+If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
 
 - English-language QWERTY Bluetooth keyboards, which can be used anywhere you use the holographic keyboard.
 - Bluetooth mice.
 - The [HoloLens clicker](hololens1-clicker.md).
 
-Other Bluetooth HID and GATT devices can be paired, but they might require a companion app from Microsoft Store to work with HoloLens.
-
-HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
+You can pair other Bluetooth HID and GATT devices with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use them.
 
 [Back to list](#list)
 
