@@ -71,6 +71,12 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
+## Want to learn more?
 
+[OneDrive](https://docs.microsoft.com/onedrive)
+
+[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+
+[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)
 
 
