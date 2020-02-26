@@ -256,7 +256,7 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
 
-![pc0001](../images/pc0001.png)
+![pc0001](../images/pc0006.png)
 
 ## Related topics
 
