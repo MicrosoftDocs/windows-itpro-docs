@@ -37,9 +37,7 @@ You might already know that:
 
 ## Ransomware protection and recovery
 
-Did you know there's at least one very good security reason to use [OneDrive](https://docs.microsoft.com/onedrive) together with [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)? It's ransomware protection!
-
-When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
+Did you know there's at least one very good security reason to use [OneDrive](https://docs.microsoft.com/onedrive) together with [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)? It's ransomware protection! When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
 
 1. Windows Defender notifies you of the threat. (If your organization is using Microsoft Defender Advanced Threat Protection, your security operations team is notified, too.)
 
