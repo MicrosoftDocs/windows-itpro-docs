@@ -625,7 +625,7 @@ The Event Viewer showing a successful deployment of PC0005.
 
 ## Multicast deployments
 
-Multicast deployment allows for image deployment with reduced network load during simultaneous deployments. Multicast is a useful operating system deployment feature in MDT deployments, however it is important to ensure that your network supports it and is designed for it.
+Multicast deployment allows for image deployment with reduced network load during simultaneous deployments. Multicast is a useful operating system deployment feature in MDT deployments, however it is important to ensure that your network supports it and is designed for it. If you have a limited number of simultaneous deployments, you probably do not need to enable multicast.
 
 ### Requirements
 
