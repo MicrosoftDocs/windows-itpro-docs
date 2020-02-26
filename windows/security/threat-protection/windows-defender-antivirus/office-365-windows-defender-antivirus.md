@@ -37,7 +37,7 @@ You might already know that:
 
 ## Ransomware protection and recovery
 
-Did you know there's at least one very good security reason to use OneDrive together with Windows Defender Antivirus? It's ransomware protection!
+Did you know there's at least one very good security reason to use [OneDrive](https://docs.microsoft.com/onedrive) together with [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)? It's ransomware protection!
 
 When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
 
@@ -45,9 +45,9 @@ When you save your files to OneDrive, and Windows Defender Antivirus detects a r
 
 2. Windows Defender Antivirus helps you (and your organization's security team) remove the ransomware from your device.
 
-3. You get the option to use the OneDrive Files Restore feature. This enables you to recover your files in OneDrive to the state they were in before the ransomware attack occurred.
+3. You get the option to use the OneDrive Files Restore feature. This enables you to recover your files in OneDrive to the state they were in before the ransomware attack occurred. See [Ransomware detection and recovering your files](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 
-Think of the time and hassle this can save!
+Think of the time and hassle this can save! 
 
 ## Integration means better protection
 
@@ -70,15 +70,6 @@ Want to learn more? See [Integrate Office 365 Advanced Threat Protection with Mi
 Protection from ransomware is one great reason to put your files in OneDrive. And there are several more good reasons. Take a look at the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
-
-## Want to learn more?
-
-[OneDrive](https://docs.microsoft.com/onedrive)
-
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-
-[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)
-
 
 
 
