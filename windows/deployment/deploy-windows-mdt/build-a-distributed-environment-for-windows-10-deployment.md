@@ -235,7 +235,9 @@ Like you did in the previous topic for MDT01, you need to add the MDT Production
 
 ## Deploy a Windows 10 client to the remote site
 
-Now you should have a solution ready for deploying the Windows 10 client to the remote site, Stockholm, connecting to the MDT Production deployment share replica on MDT02. Deployment to the remote site can be tested using the following procedure. Note: In order to use the remote site server (MDT02) the VM must be assigned a default gateway corresponding to that which was entered in the Boostrap.ini file.
+Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following procedure. 
+
+>To use the remote site server (MDT02) the VM must be assigned a default gateway that matches the one you entered in the Boostrap.ini file.
 
 1.  Create a virtual machine with the following settings:
     1. Name: PC0006
@@ -254,6 +256,7 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
 
+![pc0001](../images/pc0001.png)
 
 ## Related topics
 
