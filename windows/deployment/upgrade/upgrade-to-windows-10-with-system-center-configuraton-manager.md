@@ -38,7 +38,7 @@ Figure 1. The machines used in this topic.
 ## Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager
 
 
-Configuration Manager adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
+System Center 2012 R2 Configuration Manager SP 1 adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
 
 ## Create the task sequence
 
