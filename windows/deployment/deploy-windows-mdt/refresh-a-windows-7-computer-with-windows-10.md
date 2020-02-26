@@ -81,7 +81,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
 ### Upgrade (refresh) a Windows 7 SP1 client
 
 >[!IMPORTANT]
->Domain join details [specified in the deployment share rules](deploy-a-windows-10-image-using-mdt.md#configure-the-rules) will be used to rejoin the computer to the domain during the refresh process.  If the Windows 7 client is domain-jonied in a different OU than the one specified by MachineObjectOU, the domain join process will initially fail and then retry without specifying an OU. If the domain account that is specified (ex: MDT_JD) has [limited permissions](deploy-a-windows-10-image-using-mdt.md#step-1-configure-active-directory-permissions) then the domain join will ultimately fail and the previous computer object will be orphaned. In the current guide, computer objects should be located in Contoso > Computers > Workstations.
+>Domain join details [specified in the deployment share rules](deploy-a-windows-10-image-using-mdt.md#configure-the-rules) will be used to rejoin the computer to the domain during the refresh process.  If the Windows 7 client is domain-jonied in a different OU than the one specified by MachineObjectOU, the domain join process will initially fail and then retry without specifying an OU. If the domain account that is specified (ex: MDT_JD) has [limited permissions](deploy-a-windows-10-image-using-mdt.md#step-1-configure-active-directory-permissions) then the domain join will ultimately fail and the client computer object will be orphaned. In the current guide, computer objects should be located in Contoso > Computers > Workstations. Use the Active Directory Users and Computers console to move computer objects if needed. To diagnose MDT domain join errors, see C:\Windows\Temp\DeploymentLogs\ZTIDomainJoin.log on the client computer. 
 
 1. On PC0001, sign in as **contoso\\Administrator** and start the Lite Touch Deploy Wizard by opening **\\\\MDT01\\MDTProduction$\\Scripts\\Litetouch.vbs**. 
 2. Complete the deployment guide using the following settings:
@@ -107,6 +107,8 @@ Starting the computer refresh from an online Windows 7 SP1 client.
 5. If desired, monitor progress of the deployment using the deployment workbench on MDT01. See the following example:
 
  ![monitor deployment](../images/monitor-pc0001.png)
+
+6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts and settings were migrated.
 
 
 
