@@ -64,6 +64,10 @@ For example, the following line configures USMT to migrate only domain user prof
 
 In addition to the command-line switches that control which profiles to migrate, [XML templates](https://docs.microsoft.com/windows/deployment/usmt/understanding-migration-xml-files) control exactly what data is being migrated. You can control data within and outside the user profiles.
 
+### Multicast
+
+Multicast is a technology designed to optimize simultaneous deployment to multiple devices. If you have a limited number of simultaneous deployments, you can disable multicast which was [configured in a previous procedure](deploy-a-windows-10-image-using-mdt.md#set-up-mdt-for-multicast) in this guide. You will also need to update the deployment share after changing this setting.
+
 ## Refresh a Windows 7 SP1 client
 
 In these section, we assume that you have already performed the prerequisite procedures in the following topics, so that you have a deployment share named **MDTProduction$** on MDT01:
@@ -79,28 +83,28 @@ It is also assumed that you have a domain member client computer named PC0001 in
 1. On PC0001, sign in as **contoso\\Administrator** and start the Lite Touch Deploy Wizard by opening **\\\\MDT01\\MDTProduction$\\Scripts\\Litetouch.vbs**. 
 2. Complete the deployment guide using the following settings:
     
-   * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM
+   * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image
    * Computer name: &lt;default&gt;
    * Specify where to save a complete computer backup: Do not back up the existing computer
      >[!NOTE]
      >Skip this optional full WIM backup. The USMT backup will still run.
-         
-3. Select one or more applications to install: Install - Adobe Reader
-4. The setup now starts and does the following:
+   * Select one or more applications to install: Install - Adobe Reader
+4. Setup starts and does the following:
     
    * Backs up user settings and data using USMT.
    * Installs the Windows 10 Enterprise x64 operating system.
-   * Installs the added application(s).
-   * Updates the operating system via your local Windows Server Update Services (WSUS) server.
+   * Installs any added applications.
+   * Updates the operating system using your local Windows Server Update Services (WSUS) server.
    * Restores user settings and data using USMT.
 
-![Start the computer refresh from the running Windows 7 client](../images/fig2-taskseq.png "Start the computer refresh from the running Windows 7 client")
+![Computer refresh](../images/fig2-taskseq.png "Start the computer refresh")
 
-Figure 2. Starting the computer refresh from the running Windows 7 SP1 client.
+Starting the computer refresh from an online Windows 7 SP1 client.
 
 ## Related topics
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
+[Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)<br>
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
 [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
 [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
