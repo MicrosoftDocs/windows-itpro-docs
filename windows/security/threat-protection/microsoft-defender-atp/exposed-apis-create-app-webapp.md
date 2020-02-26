@@ -140,7 +140,7 @@ The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveD
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-1. Copy and paste the f ollowing code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
+1. Copy and paste the following code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
 
     ```
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
