@@ -21,11 +21,14 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The refresh scenario, or computer refresh, is a reinstallation of an operating system on the same computer. You can refresh the device to the same operating system as it is currently running, or to a later version.
+This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of the operating system on the same computer. You can refresh the device to the same operating system as it is currently running, or to a later version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
-MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
+- DC01 is a domain controller for the contoso.com domain.
+- MDT01 is domain member server that hosts your deployment share.
+- PC0001 is a domain member computer running a previous version of Windows that is going to be refreshed to a new version of Windows 10, with data and settings restored. The example used here is a computer running Windows 7 SP1.
 
-For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. DC01 is a domain controller for the contoso.com domain, and MDT01 is domain member server. Both DC01 and MDT01 are running Windows Server 2019, however a supported, earlier version of Windows Server can also be used. PC0001 is a domain member computer running Windows 7 or Windows 8.1 that is going to be refreshed to Windows 10, with data and settings restored. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+Both DC01 and MDT01 are running Windows Server 2019; however a supported, earlier version of Windows Server can also be used. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ![computers](../images/mdt-04-fig01.png "Computers used in this topic")
 
@@ -59,11 +62,11 @@ For example, the following line configures USMT to migrate only domain user prof
  
 ### Support for additional settings
 
-In addition to the command-line switches that control which profiles to migrate, the XML templates control exactly what data is being migrated. You can control data within and outside the user profiles
+In addition to the command-line switches that control which profiles to migrate, [XML templates](https://docs.microsoft.com/windows/deployment/usmt/understanding-migration-xml-files) control exactly what data is being migrated. You can control data within and outside the user profiles.
 
 ## Refresh a Windows 7 SP1 client
 
-In these steps, we assume that you have performed the prerequisite procedures in the following topics, so that you have a deployment share named **MDTProduction$** on MDT01:
+In these section, we assume that you have already performed the prerequisite procedures in the following topics, so that you have a deployment share named **MDTProduction$** on MDT01:
 
 - [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
 - [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
