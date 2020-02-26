@@ -52,7 +52,7 @@ There are two ways to uninstall applications.  You can uninstall applications th
 
 ### Uninstall from the Start menu
 
-On the **Start** menu or in the **All apps** list, browse to the app. Air Tap and hold until the menu appears, then select **Uninstall**.
+On the **Start** menu or in the **All apps** list, browse to the app. Air tap and hold until the menu appears, then select **Uninstall**.
 
 ### Uninstall from the Microsoft Store
 
