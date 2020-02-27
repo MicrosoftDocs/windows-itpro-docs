@@ -18,11 +18,22 @@ search.appverid: met150
 
 # How Microsoft identifies malware and potentially unwanted applications
 
-Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. When you download, install, and run software, you have access to information and tools to do so safely. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. That information is then compared against criteria described in this article.
+Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you are protected against known threats and warned about software that is unknown to us.  
 
-You can participate in this process by [submitting software for analysis](submission-guide.md) to ensure undesirable software is covered by our security solutions.
+You can assist Microsoft by [submitting unknown or suspicious software for analysis](submission-guide.md). This will help ensure that unknown or suspicious software is scanned by our system to start establishing reputation.
 
-Because new forms of malware and potentially unwanted applications are being developed and distributed rapidly, Microsoft reserves the right to adjust, expand, and update these criteria without prior notice or announcements.
+The next sections provide an overview of the classifications we use for applications and the types of behaviors that lead to that classification.
+
+>[!NOTE]
+> New forms of malware and potentially unwanted applications are being developed and distributed rapidly. The following list may not be comprehensive, and Microsoft reserves the right to adjust, expand, and update these without prior notice or announcement.
+
+## Unknown – Unrecognized software  
+
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program. There is a delay between the outbreak of an attack and when it is detected and blocked.
+
+You can think of Unknown /Uncommonly downloaded warnings as an early warning system for potentially undetected malware. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
+
+Once enough data is gathered, Microsoft's security solutions can make a determination. Either no threats are found, or an application or software is categorized as malware or potentially unwanted software.
 
 ## Malware
 
@@ -48,7 +59,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Obfuscator:** A type of malware that hides its code and purpose, making it more difficult for security software to detect or remove.
 
-* **Password stealer:** A type of malware that gathers your personal information, such as user names and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
+* **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
 
 * **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note which states you must pay money, complete surveys, or perform other actions before you can use your device again. [See more information about ransomware](ransomware-malware.md).
 
