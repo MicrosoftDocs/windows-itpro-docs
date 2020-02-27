@@ -64,7 +64,7 @@ Want to learn more? See [Integrate Office 365 Advanced Threat Protection with Mi
 
 ## More good reasons to use OneDrive
 
-Protection from ransomware is one great reason to put your files in OneDrive. And there are several more good reasons. Take a look at the following video: <br/><br/>
+Protection from ransomware is one great reason to put your files in OneDrive. And there are several more good reasons. Take a look at this short video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
