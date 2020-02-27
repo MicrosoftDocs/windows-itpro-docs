@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about HoloLens and holograms
+title: Frequently asked questions about HoloLens devices and holograms
 description: Do you have a quick question about HoloLens or interacting with holograms?  This article provides a quick answer and more resources.
 keywords: hololens, faq, known issue, help
 ms.prod: hololens
@@ -9,7 +9,7 @@ ms.author: v-tea
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
-ms.date: 02/26/2020
+ms.date: 02/27/2020
 ms.reviewer: 
 ms.custom: 
 - CI 114606
@@ -20,7 +20,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# HoloLens and holograms frequently asked questions
+# Frequently asked questions about HoloLens devices and holograms
 
 This article answers some questions that you may have about using HoloLens, placing holograms, working with spaces, and more.
 
@@ -70,7 +70,7 @@ If you're still having problems, trying running the Calibration app. This app ca
 
 When HoloLens is learning or loading a space, you may see a brief message that says "Finding your space." If this message displays for more than a few seconds, you'll see another message under the Start menu that says "Still looking for your space."
 
-These messages mean that HoloLens is having trouble mapping your space. When this happens, you'll be able to open apps, but you won't be able to place holograms in your environment.
+These messages mean that HoloLens is having trouble mapping your space. When this happens, you can open apps, but you can't place holograms in your environment.
 
 If you see these messages often, try one or more of the following fixes:
 
@@ -118,7 +118,7 @@ Holograms can also be blocked or encased by other holograms or by objects such a
 
 ## I can see holograms that are on the other side of a wall
 
-If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you'll be able to see holograms that are in the next room. To scan the wall, stand between one and three meters from the wall and gaze at it.
+If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you can see holograms that are in the next room. To scan the wall, stand between one and three meters from the wall and gaze at it.
 
 A black or reflective object (for example, a black couch or a stainless steel refrigerator) near the wall may cause problems when HoloLens tries to scan the wall. If there is such an object, scan the other side of the wall.
 
@@ -188,7 +188,7 @@ You can pair other Bluetooth HID and GATT devices with your HoloLens. However, y
 
 ## I'm having problems using the HoloLens clicker
 
-Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Additional clicker gestures may vary from app to app.
+Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individial apps may support additional clicker gestures.
 
 If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens-connect-devices.md#pair-the-clicker).
 
@@ -219,10 +219,10 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 
 If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can do one of the following:
 
-- For a device that is enrolled in Intune mobile device management (MDM), you can use Intine to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device and it'll re-flash itself.  
+- For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
    > [!IMPORTANT]  
    > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
-- For a non-MDM device you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) to recover the device.
+- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) to recover the device.
 
 [Back to list](#list)
 
