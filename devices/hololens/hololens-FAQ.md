@@ -154,7 +154,15 @@ To make sure HoloLens can see your gestures, keep your hand in the gesture frame
 
 ## HoloLens doesn't respond to my voice
 
-If Cortana isn't responding to your voice, make sure Cortana is on. In the **All apps** list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+If your HoloLens is not responding to your voice, make sure Speech recognition is on. Go to **Start > Settings > Privacy > Speech** and turn on **Speech recognition**. 
+
+If Cortana isn't responding to your voice, make sure Cortana is on by enabling **Online speech recognition** in that same menu.
+
+- You can also easily reach this menu on HoloLens 2 by selecting the "Speech settings" button, or saying "Speech settings" while in the start menu after enabling Speech recognition.  
+
+- If Cortana is still not responding after enabling Online speech recognition, In the **All apps** list, select and launch **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes. 
+
+To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
 [Back to list](#list)
 
@@ -194,7 +202,7 @@ If that doesn't help, see [Restart or recover the HoloLens clicker](hololens1-cl
 
 Here are some things to try if you can't connect to Wi-Fi on HoloLens:
 
-- Make sure Wi-Fi is turned on. Bloom to go to Start, then select **Settings** > **Network &amp; Internet** > **Wi-Fi** to check. If Wi-Fi is on, try turning it off and on again.
+- Make sure Wi-Fi is turned on. Preform a Start gesture to open the menu, then select **Settings** > **Network &amp; Internet** > **Wi-Fi** to check. If Wi-Fi is on, try turning it off and on again.
 - Move closer to the router or access point.
 - Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
 - If none of these things work, check to make sure your router is using the latest firmware. You can find this information on the manufacturers website.
