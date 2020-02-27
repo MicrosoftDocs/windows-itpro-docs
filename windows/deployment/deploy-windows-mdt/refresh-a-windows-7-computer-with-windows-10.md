@@ -107,9 +107,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
 
      ![monitor deployment](../images/monitor-pc0001.png)
 
-6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts and settings were migrated.
-
-
+6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts, data and settings were migrated.
 
 ## Related topics
 
