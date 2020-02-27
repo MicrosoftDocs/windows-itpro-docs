@@ -47,7 +47,7 @@ This article addresses the following questions and issues:
 - [I'm having problems using the HoloLens clicker](#im-having-problems-using-the-hololens-clicker)
 - [I can't connect to a Wi-Fi network](#i-cant-connect-to-a-wi-fi-network)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
-- [I can't sign in to a HoloLens device because it was previously set up for someone else](#i-cant-log-in-to-a-hololens-because-it-was-previously-set-up-for-someone-else)
+- [I can't sign in to a HoloLens device because it was previously set up for someone else](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
 - [Questions about managing HoloLens devices](#questions-about-managing-hololens-devices)
 - [Questions about securing HoloLens devices](#questions-about-securing-hololens-devices)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
