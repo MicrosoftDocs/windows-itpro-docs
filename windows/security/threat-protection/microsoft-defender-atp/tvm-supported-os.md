@@ -19,9 +19,10 @@ ms.topic: article
 # Threat & Vulnerability Management supported operating systems and platforms
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -33,16 +34,17 @@ Windows 7 | Operating System (OS) vulnerabilities
 Windows 8.1 | Not supported
 Windows 10 1607-1703 | Operating System (OS) vulnerabilities
 Windows 10 1709+ |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment 
-Windows Server 2008R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2012R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
+Windows Server 2008R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2012R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 MacOS | Not supported (planned)
 Linux | Not supported (planned)
 
 Some of the above prerequisites might be different from the [Minimum requirements for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) list.
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
