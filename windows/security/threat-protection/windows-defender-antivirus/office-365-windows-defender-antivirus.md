@@ -36,9 +36,9 @@ You might already know that:
 
 But did you know there are good security reasons to use Windows Defender Antivirus together with Office 365? Here are two:
 
- 1. [You get ransomware protection and recovery](#ransomware-protection-and-recovery)
+ 1. [You get ransomware protection and recovery](#ransomware-protection-and-recovery).
 
- 2. [Integration means better protection](#integration-means-better-protection)
+ 2. [Integration means better protection](#integration-means-better-protection).
 
 Read the following sections to learn more!
 
