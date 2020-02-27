@@ -74,7 +74,7 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
   > [!NOTE]
   > A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]". For example: Msiexec.exe /i \<path to msi file\> /l*v %windir%\logs\ SurfaceDockFWI.log"
 
-For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
+  For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
 > [!IMPORTANT]
 > If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.
@@ -99,7 +99,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 1. Open Regedit and navigate to the following registry path:
 
-  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
 
 2. Look for the registry keys: **Component10CurrentFwVersion and Component20CurrentFwVersion**, which refer to the firmware that is currently on the device.
 
