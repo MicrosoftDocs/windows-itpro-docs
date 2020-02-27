@@ -34,6 +34,14 @@ You might already know that:
 
 - **OneDrive, included in Office 365, enables you to store your files and folders online, and share them as you see fit**. You can work together with people (for work or fun), and coauthor files that are stored in OneDrive. You can also access your files across all your devices (your PC, phone, and tablet). [Manage sharing in OneDrive](https://docs.microsoft.com/OneDrive/manage-sharing).
 
+But did you know there are good security reasons to use Windows Defender Antivirus together with Office 365? Here are two:
+
+ 1. [You get ransomware protection and recovery](#ransomware-protection-and-recovery)
+
+ 2. [Integration means better protection](#integration-means-better-protection)
+
+Read the following sections to learn more!
+
 ## Ransomware protection and recovery
 
 Did you know there's at least one very good security reason to use [OneDrive](https://docs.microsoft.com/onedrive) together with [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)? It's ransomware protection! When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
