@@ -11,7 +11,7 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro
-ms.date: 02/08/2020
+ms.date: 02/07/2020
 ---
 # Microsoft Surface Dock Firmware Update
 
