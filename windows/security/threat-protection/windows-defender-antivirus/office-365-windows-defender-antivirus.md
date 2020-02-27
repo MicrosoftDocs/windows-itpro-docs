@@ -44,7 +44,7 @@ Read the following sections to learn more!
 
 ## Ransomware protection and recovery
 
-Did you know there's at least one very good security reason to use [OneDrive](https://docs.microsoft.com/onedrive) together with [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)? It's ransomware protection! When you save your files to OneDrive, and Windows Defender Antivirus detects a ransomware threat on your device, the following things occur:
+When you save your files to [OneDrive](https://docs.microsoft.com/onedrive), and [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) detects a ransomware threat on your device, the following things occur:
 
 1. **You are told about the threat**. (If your organization is using Microsoft Defender Advanced Threat Protection, your security operations team is notified, too.)
 
@@ -56,7 +56,7 @@ Think of the time and hassle this can save!
 
 ## Integration means better protection
 
-Did you know that Office 365 Advanced Threat Protection integrated with Microsoft Defender Advanced Threat Protection means better protection? Here's how:
+Office 365 Advanced Threat Protection integrated with Microsoft Defender Advanced Threat Protection means better protection. Here's how:
 
 - [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
 
