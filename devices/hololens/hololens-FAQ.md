@@ -157,7 +157,7 @@ To make sure HoloLens can see your gestures, keep your hand in the gesture frame
 If your HoloLens is not responding to your voice, make sure Speech recognition is on. Go to **Start > Settings > Privacy > Speech** and turn on **Speech recognition**. 
 
 > [!NOTE]
-> This setting is not present on HoloLens (1st Gen) and is always on.
+> This setting isn't available on HoloLens (1st Gen) because speech recognition is always on and cannot be disabled
 
 If Cortana isn't responding to your voice, make sure Cortana is on by enabling **Online speech recognition** in that same menu.
 
