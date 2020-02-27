@@ -68,7 +68,7 @@ Office 365 Advanced Threat Protection integrated with Microsoft Defender Advance
 
 - Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, Microsoft Defender Advanced Threat Protection.
 
-Want to learn more? See [Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+See [Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
 ## More good reasons to use OneDrive
 
