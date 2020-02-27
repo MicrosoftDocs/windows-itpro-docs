@@ -50,7 +50,7 @@ It is currently possible to set a convenience PIN on Azure Active Directory Join
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
 
-## Why does authentication fail after setting up PIN registration?
+## Why does authentication fail immediately after provisioning Hybrid Key Trust?
 In hybrid mode, a lot of sync happens after enrollment for authentication to work. Authentication will only work when the sync between the AD Connect server to Azure AD is completed. This sync depends on the sync time setup for AD Connect server to Azure AD.
 
 ## What is the password-less strategy?
