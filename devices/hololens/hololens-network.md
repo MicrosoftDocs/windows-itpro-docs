@@ -55,6 +55,12 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 1. Open the **Start** menu.
 1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
+## Troubleshooting your connection to Wi-Fi
+
+If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq#i-cant-connect-to-wi-fi)
+
+When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
+
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
 ### Using the Settings app on HoloLens
