@@ -31,7 +31,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 
 - Upgrade to the enterprise edition
 
-    >[!NOTE]
+    > [!NOTE]
     > This should only be used for HoloLens 1st Gen devices. Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 - Configure the HoloLens first experience (OOBE)
@@ -41,8 +41,8 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Enable Developer Mode
 - Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803)).
 
->[!WARNING]
->You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+> [!WARNING]
+> You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
 
 Provisioning packages can include management instructions and policies, customization of network connections and policies, and more.
 
@@ -88,8 +88,8 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 ### 3. Create a provisioning package for HoloLens using advanced provisioning
 
->[!NOTE]
->Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+> [!NOTE]
+> Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
@@ -102,15 +102,15 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 7. Expand **Runtime settings** and customize the package with any of the settings [described below](#what-you-can-configure).
 
-    >[!IMPORTANT]
-    >(For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
+    > [!IMPORTANT]
+    > (For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
 8. On the **File** menu, click **Save**.
 
 4. Read the warning that project files may contain sensitive information, and click **OK**.
 
-    >[!IMPORTANT]
-    >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+    > [!IMPORTANT]
+    > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
     
 3. On the **Export** menu, click **Provisioning package**.
 
@@ -118,13 +118,13 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 5. Set a value for **Package Version**.
 
-    >[!TIP]
-    >You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]
+    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 6. On the **Select security details for the provisioning package**, click **Next**.
 
-    >[!WARNING]
-    >If you encrypt the provisioning package, provisioning the HoloLens device will fail.  
+    > [!WARNING]
+    > If you encrypt the provisioning package, provisioning the HoloLens device will fail.  
 
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
 
@@ -154,13 +154,13 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
 
->[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
+> [!NOTE]
+> If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
 
 ### 4. Apply a provisioning package to HoloLens after setup
 
->[!NOTE]
->Windows 10, version 1809 only
+> [!NOTE]
+> Windows 10, version 1809 only
 
 On your PC:
 1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
@@ -189,7 +189,7 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 | **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Policies** | Allow or prevent developer mode on HoloLens. [Policies supported by Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies) |
 
->[!NOTE]
->App installation (**UniversalAppInstall**) using a provisioning package is not currently supported for HoloLens.
+> [!NOTE]
+> App installation (**UniversalAppInstall**) using a provisioning package is not currently supported for HoloLens.
 
 ## Next Step: [Enroll your device](hololens-enroll-mdm.md)
