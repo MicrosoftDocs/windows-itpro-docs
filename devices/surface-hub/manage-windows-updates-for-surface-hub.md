@@ -1,6 +1,6 @@
 ---
-title: Windows updates (Surface Hub)
-description: You can manage Windows updates on your Microsoft Surface Hub by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
+title: Manage Windows updates on Surface Hub
+description: You can manage Windows updates on your Microsoft Surface Hub or Surface Hub 2S by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: 
 manager: dansimp
@@ -13,7 +13,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ---
 
-# Windows updates (Surface Hub)
+# Manage Windows updates on Surface Hub
 
 New releases of the Surface Hub operating system are published through Windows Update, just like releases of Windows 10. There are a couple of ways you can manage which updates are installed on your Surface Hubs, and the timing for when updates are applied.
 - **Windows Update for Business** - New in Windows 10, Windows Update for Business is a set of features designed to provide enterprises additional control over how and when Windows Update installs releases, while reducing device management costs. Using this method, Surface Hubs are directly connected to Microsoft’s Windows Update service.
