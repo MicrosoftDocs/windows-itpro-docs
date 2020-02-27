@@ -131,7 +131,7 @@ Here is an example:
         <member name = "S-1-15-1233433-23423432423-234234324"/>
     </accessgroup>
     <accessgroup desc = "testcsplocal">
-       <member name = "AzureAD\CSPTest@contoso.com" />
+        <member name = "AzureAD\CSPTest@contoso.com" />
     </accessgroup>
 </groupmembership>
 ```
@@ -156,4 +156,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
