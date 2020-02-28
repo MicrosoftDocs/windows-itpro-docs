@@ -23,7 +23,7 @@ This issue affects computers that meet the following criteria:
 - The network adapter is a Broadcom NX1 Gigabit Ethernet network adapter.
 - The number of logical processors is large (for example, a computer that has more than 38 logical processors).
 
-On such a computer, when you update the in-box Broadcom network adapter driver to a later version, the computer experiences a Stop error (also known as a blue screen error or bug check error).
+On such a computer, when you update the in-box Broadcom network adapter driver to a later version or when you install the Intel chipset driver, the computer experiences a Stop error (also known as a blue screen error or bug check error).
 
 ## Cause
 

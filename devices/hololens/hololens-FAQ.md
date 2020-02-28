@@ -44,6 +44,7 @@ This FAQ addresses the following questions and issues:
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
 - [HoloLens Management Questions](#hololens-management-questions)
+- [HoloLens Security Questions](#hololens-security-questions)
 - [How do I delete all spaces?](#how-do-i-delete-all-spaces)
 - [I cannot find or use the keyboard to type in the HoloLens 2 Emulator](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 - [I can't log in to a HoloLens because it was previously set up for someone else](#i-cant-log-in-to-a-hololens-because-it-was-previously-set-up-for-someone-else)
@@ -153,7 +154,18 @@ To make sure HoloLens can see your gestures, keep your hand in the gesture frame
 
 ## HoloLens doesn't respond to my voice
 
-If Cortana isn't responding to your voice, make sure Cortana is on. In the **All apps** list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+If your HoloLens is not responding to your voice, make sure Speech recognition is on. Go to **Start > Settings > Privacy > Speech** and turn on **Speech recognition**. 
+
+> [!NOTE]
+> This setting isn't available on HoloLens (1st Gen) because speech recognition is always on and cannot be disabled
+
+If Cortana isn't responding to your voice, make sure Cortana is on by enabling **Online speech recognition** in that same menu.
+
+- You can also easily reach this menu on HoloLens 2 by selecting the "Speech settings" button, or saying "Speech settings" while in the start menu after enabling Speech recognition.  
+
+- If Cortana is still not responding after enabling Online speech recognition, In the **All apps** list, select and launch **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes. 
+
+To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
 [Back to list](#list)
 
@@ -193,7 +205,7 @@ If that doesn't help, see [Restart or recover the HoloLens clicker](hololens1-cl
 
 Here are some things to try if you can't connect to Wi-Fi on HoloLens:
 
-- Make sure Wi-Fi is turned on. Bloom to go to Start, then select **Settings** > **Network &amp; Internet** > **Wi-Fi** to check. If Wi-Fi is on, try turning it off and on again.
+- Make sure Wi-Fi is turned on. Preform a Start gesture to open the menu, then select **Settings** > **Network &amp; Internet** > **Wi-Fi** to check. If Wi-Fi is on, try turning it off and on again.
 - Move closer to the router or access point.
 - Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
 - If none of these things work, check to make sure your router is using the latest firmware. You can find this information on the manufacturers website.
@@ -230,6 +242,14 @@ If your device was previously set up for someone else, either a client or former
 1. **What logging capabilities are available on HL1 and HL2?**
     1. Logging is limited to traces captured in developer/troubleshooting scenarios or telemetry sent to Microsoft servers.
 
+[Back to list](#list)
+
+## HoloLens Security Questions
+
+Frequently asked security questions can be found [here](hololens-faq-security.md).
+
+[Back to list](#list)
+
 ## How do I delete all spaces?
 
 *Coming soon*
@@ -241,4 +261,3 @@ If your device was previously set up for someone else, either a client or former
 *Coming soon*
 
 [Back to list](#list)
-
