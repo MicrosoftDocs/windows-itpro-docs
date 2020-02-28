@@ -33,7 +33,7 @@ This document also assumes that the HoloLens has been evaluated by security team
 
 Before deploying the HoloLens in your environment, it is important to first determine what features, apps, and type of identities are needed. It is also important to ensure that your security team has approved of the use of the HoloLens on the company's network. Please see [Frequently ask security questions](hololens-faq-security.md) for additional security information.
 
-### Type of identity
+### Type of Identity
 
 Determine the type of identity that will be used to sign into the device.
 
@@ -66,13 +66,15 @@ There are two types of Kiosk Modes: Single app and multi-app. Single app kiosk m
 
 There are two main ways ([provisioning packages](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) and [MDM](hololens-kiosk.md#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803)) to deploy kiosk mode for HoloLens. These options will be discussed later in the document; however, you can use the links above to jump to the respective sections in this doc.
 
-### Apps
+### Apps and App Specific Scenarios
 
 The majority of the steps found in this document will also apply to the following apps:
 
-1. Remote Assist
-2. Guides
-3. Customer Apps
+| App | App Specific Scenarios |
+| --- | --- |
+| Remote Assist | [Cross Tenant Communication]()|
+| Guides  | *Coming Soon* |
+|Custom Apps | |
 
 ### Determine your enrollment method
 
