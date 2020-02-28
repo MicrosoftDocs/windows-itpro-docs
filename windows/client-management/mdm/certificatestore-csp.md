@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 06/26/2017
+ms.date: 02/28/2020
 ---
 
 # CertificateStore CSP
