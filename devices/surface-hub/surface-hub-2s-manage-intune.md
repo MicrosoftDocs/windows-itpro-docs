@@ -44,7 +44,9 @@ For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs
 
 ## Quality of Service (QoS) settings
 
-To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. The settings are identical for Skype for Business and Teams.
+### Microsoft Teams QoS settings 
+
+To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. 
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
@@ -55,6 +57,11 @@ To ensure optimal video and audio quality on Surface Hub 2S, add the following Q
 
 > [!NOTE]
 > These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
+
+### Skype for Business QoS settings
+
+Refer to [Implement Quality of Service (QoS) on Surface Hub](surface-hub-qos.md)
+
 
 ## Microsoft Teams Mode settings
 
