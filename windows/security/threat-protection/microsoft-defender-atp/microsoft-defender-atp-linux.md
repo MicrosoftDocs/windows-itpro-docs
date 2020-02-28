@@ -62,7 +62,7 @@ In general you need to take the following steps:
     - [Manual deployment](linux-install-manually.md)
   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
-    - [Deploy using Ansbile configuration management tool](linux-install-with-ansible.md)
+    - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 
 ### System requirements
 
