@@ -201,7 +201,7 @@ The data type is an integer corresponding to one of the following values:
 | 1     | Private key protected by TPM.                                                                                                                                                                         |
 | 2     | Private key protected by phone TPM if the device supports TPM. All Windows Phone 8.1 devices support TPM and will treat value 2 as 1.                                                                 |
 | 3     | (Default) Private key saved in software KSP.                                                                                                                                                          |
-| 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specifed, otherwise enrollment will fail. |
+| 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specified, otherwise enrollment will fail. |
 
  
 Supported operations are Add, Get, Delete, and Replace.
