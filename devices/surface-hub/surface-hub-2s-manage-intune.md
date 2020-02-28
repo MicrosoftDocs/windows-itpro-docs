@@ -44,9 +44,9 @@ For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs
 
 ## Quality of Service (QoS) settings
 
-### Microsoft Teams QoS settings 
-
 To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. 
+
+### Microsoft Teams QoS settings 
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
@@ -55,13 +55,20 @@ To ensure optimal video and audio quality on Surface Hub 2S, add the following Q
 |**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DestinationPortMatchCondition | String  | 3480 |
 |**Video DSCP**| Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction | Integer | 34 |
 
-> [!NOTE]
-> These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
 
 ### Skype for Business QoS settings
 
-Refer to [Implement Quality of Service (QoS) on Surface Hub](surface-hub-qos.md)
+| Name               | Description         | OMA-URI                                                                  | Type    | Value                          |
+| ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
+| Audio Ports        | Audio Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  | String  | 50000-50019                    |
+| Audio DSCP         | Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction                | Integer | 46                             |
+| Audio Media Source | Skype App name      | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
+| Video Ports        | Video Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition  | String  | 50020-50039                    |
+| Video DSCP         | Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction                | Integer | 34                             |
+| Video Media Source | Skype App name      | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
 
+> [!NOTE]
+> Both tables show default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
 
 ## Microsoft Teams Mode settings
 
