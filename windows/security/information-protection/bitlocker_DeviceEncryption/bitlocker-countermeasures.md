@@ -42,7 +42,7 @@ Before Windows starts, you must rely on security features implemented as part of
 
 ### Trusted Platform Module
 
-A TPM is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
+A Trusted Platform Module (TPM) is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
 On some platforms, TPM can alternatively be implemented as a part of secure firmware. 
 BitLocker binds encryption keys with the TPM to ensure that a computer has not been tampered with while the system was offline. 
 For more info about TPM, see [Trusted Platform Module](https://docs.microsoft.com/windows/device-security/tpm/trusted-platform-module-overview).
@@ -83,15 +83,18 @@ On computers with a compatible TPM, operating system drives that are BitLocker-p
 
 - **TPM-only.** Using TPM-only validation does not require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign in experience is the same as a standard logon. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.  
 - **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume cannot be accessed without the startup key.
-- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume cannot be accessed without entering the PIN. TPMs also have [anti-hammering protection](https://docs.microsoft.com/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
+- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume cannot be accessed without entering the PIN. TPMs also have [anti-hammering protection](https://docs.microsoft.com/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.
+<!-- What exactly is a PIN? (Multiple Numbers)
+What about enhanced PINs? What exactly is a enhanced PIN? (Numbers plus characters)
+What about passwords? What exactly is a password (Numbers plus characters plus symbols) Why is a password not allowed in combination with a TPM? -->
 - **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it cannot be used for access to the drive, because the correct PIN is also required.
 
 In the following Group Policy example, TPM + PIN is required to unlock an operating system drive:
 
 ![Pre-boot authentication setting in Group Policy](images/pre-boot-authentication-group-policy.png)
 
-Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. 
-Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured. 
+Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. <!-- Please describe what an eDrive is --> 
+Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured. <!-- Please provide information about DMA port attacks. Probably link https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt ? -->
 
 On the other hand, Pre-boot authentication prompts can be inconvenient to users. 
 In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization’s support team to obtain a recovery key. 
@@ -125,7 +128,13 @@ For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” sectio
  
 ## Attack countermeasures
 
-This section covers countermeasures for specific types attacks. 
+This section covers countermeasures for specific types of attacks. 
+
+### Booting another operation system
+A physically-present attacker might try to boot another operation system for example from a USB-Drive. If the system drive encryption is enable, the attacker is not able to access the stored data, since he is not able to access the encryption and decryption key.
+
+### Removing and reading the hard disk
+A physically-present attacker might try to remove the internal hard drive and connect it to another computer to access the stored data. If the system drive encryption is enable, the attacker is not able to access the stored data, since he is not able to access the encryption and decryption key.
 
 ### Bootkits and rootkits
 
@@ -171,7 +180,7 @@ Mitigation:
 Targeted attack with plenty of time; this attacker will open the case, will solder, and will use sophisticated hardware or software.
 
 Mitigation:
-- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN to help the TPM anti-hammering mitigation).
+- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN (enhanced PIN) to help the TPM anti-hammering mitigation).
 
   -And-
 
