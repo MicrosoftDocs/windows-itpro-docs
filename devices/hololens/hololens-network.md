@@ -5,7 +5,7 @@ ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
 ms.author: mazeller
 keywords: HoloLens, wifi, wireless, internet, ip, ip address
-ms.date: 02/28/20
+ms.date: 02/27/20
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
