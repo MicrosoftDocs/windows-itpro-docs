@@ -57,7 +57,7 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 
 ## Troubleshooting your connection to Wi-Fi
 
-If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi)
+If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.
 
