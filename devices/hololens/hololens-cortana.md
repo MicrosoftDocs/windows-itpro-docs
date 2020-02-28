@@ -36,8 +36,8 @@ Get around HoloLens faster with these basic commands. In order to use these you 
 
 Use these commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you bring up by saying “select.”
 
->[!NOTE]
->Hand rays are not supported on HoloLens (1st Gen).
+> [!NOTE]
+> Hand rays are not supported on HoloLens (1st Gen).
 
 | Say this | To do this |
 | - | - |
