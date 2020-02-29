@@ -89,7 +89,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 ### 3. Create a provisioning package for HoloLens using advanced provisioning
 
 > [!NOTE]
-> Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+> A provisioning package made in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to succesfully apply to a HoloLens (1st Gen). [See more on Windows Holographic for Business for HoloLens (1st Gen)](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
@@ -140,9 +140,11 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 ## Apply a provisioning package to HoloLens during setup
 
-1. Connect the device via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
+1. Connect the device via USB to a PC and start the device, but do not continue past the **First interactable moment** page of OOBE.   
+    - On HoloLens (1st Gen) this is a blue box. 
+    - On HoloLens 2 this is the hummindbird.
 
-2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously. (This step isn't needed in Windows 10, version 1803.)
+2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously. 
 
 3. HoloLens will show up as a device in File Explorer on the PC.
 
