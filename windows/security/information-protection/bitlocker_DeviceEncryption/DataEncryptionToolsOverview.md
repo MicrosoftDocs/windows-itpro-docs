@@ -22,6 +22,13 @@ ms.date: 01/26/2018
 **Applies to**
 -   Windows 10
 
+Microsoft provides two major tools for encrypting data on windows devices:
+
+1. BitLocker
+1. Device Encryption
+
+While device encryption is primarily intended for consumers, BitLocker is aimed at professional users and companies.
+
 This topic provides a high-level overview of the security features BitLocker and the Device encryption, including a list of system requirements, practical applications, and deprecated features.
 
 ## <a href="" id="introduction"></a>Introduction
@@ -45,36 +52,7 @@ BitLocker is a data protection feature, that is integrated into the Windows 10 e
 
 The requirements and functionality of BitLocker vary greatly depending on the type of data drive, which is going to be encrypted. The following pages describe this information in more detail.
 
-<!-- BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline. -->
-
-<!-- On computers that do not have a TPM version 1.2 or later, you can still use BitLocker to encrypt the Windows operating system drive. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, you can use an operating system volume password to protect the operating system volume on a computer without TPM. Both options do not provide the pre-startup system integrity verification offered by BitLocker with a TPM. -->
-
-<!-- In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device, such as a USB flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented. -->
-
-## <a href="" id="de-over"></a>Device Encryption overview
-Device Encryption is a data protection feature, that is integrated into all Windows editions since Windows version 8.1. The device encryption does only support the encryption of a system drive. The encrpytion of the Device Encryption is identical to the encryption performed with "new encryption mode" of BitLocker.
-
-Further information about the functionality and requirements of the Device Encryption will be given on the next pages.
-
-## <a href="" id="bkmk-over"></a>Comparison between BitLocker and Device encryption
-The following table compares the features and the requirements of BitLocker to those of the Device encryption.
-
-| | BitLocker | Device Encryption |
-|---|---| --- |
-| **Supported Windowsn 10 editions** | Pro, Education, Enterprise | all |
-| **Encryption of system drive** | available | available |
-| **Encryption of non-system drive** | available | not available |
-| **Encryption of remvoable storage devices** | available | not available |
-| **System integrity check with TPM** | possible | possible |
-| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>In the Active Directory Domain Services (AD DS)</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
-| **Pre-Boot authentication** | Password, PIN or removable storage device | not possible |
-
-<!--
-| ** ** |  |  |
--->
-
-
-## <a href="" id="bkmk-app"></a>Practical applications
+### <a href="" id="bkmk-app"></a>BitLocker Management
 There are two additional tools in the Remote Server Administration Tools, which you can use to manage BitLocker.
 
 - BitLocker Recovery Password Viewer. The BitLocker Recovery Password Viewer enables you to locate and view BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS). You can use this tool to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
@@ -83,11 +61,11 @@ There are two additional tools in the Remote Server Administration Tools, which 
 - BitLocker Drive Encryption Tools. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the 
 BitLocker control panel, and they are appropriate to use for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker protected drive cannot be unlocked normally or by using the recovery console.
 
-## <a href="" id="bkmk-new"></a>New and changed functionality in BitLocker
+### <a href="" id="bkmk-new"></a>New and changed functionality in BitLocker
 
 To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
- 
-## <a href="" id=“system-requirements-BitLocker”></a>System requirements BitLocker
+
+### <a href="" id=“system-requirements-BitLocker”></a>System requirements BitLocker
 
 BitLocker has the following hardware requirements:
 
@@ -114,12 +92,30 @@ When installed on a new computer, Windows will automatically create the partitio
 
 When installing the BitLocker optional component on a server you will also need to install the Enhanced Storage feature, which is used to support hardware encrypted drives.
 
-## System requirements Device Encryption
+## <a href="" id="de-over"></a>Device Encryption overview
+Device Encryption is a data protection feature, that is integrated into all Windows editions since Windows version 8.1. The device encryption does only support the encryption of a system drive. The encrpytion of the Device Encryption is identical to the encryption performed with "new encryption mode" of BitLocker.
+
+Further information about the functionality and requirements of the Device Encryption will be given on the next pages.
+
+### System requirements Device Encryption
 * The device contains a TPM (Trusted Platform Module), either TPM 1.2 or TPM 2.0.
 * UEFI Secure Boot is enabled. See [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview) for more information.
 * Platform Secure Boot is enabled
 * Direct memory access (DMA) protection is enabled
 * The user has to be logged in with a Microsoft account or a Azure Active Directory account
+
+## <a href="" id="bkmk-over"></a>Comparison between BitLocker and Device encryption
+The following table compares the features and the requirements of BitLocker to those of the Device encryption.
+
+| | BitLocker | Device Encryption |
+|---|---| --- |
+| **Supported Windowsn 10 editions** | Pro, Education, Enterprise | all |
+| **Encryption of system drive** | available | available |
+| **Encryption of non-system drive** | available | not available |
+| **Encryption of remvoable storage devices** | available | not available |
+| **System integrity check with TPM** | possible | possible |
+| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>In the Active Directory Domain Services (AD DS)</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
+| **Pre-Boot authentication** | PIN, enhanced PIN or removable storage device. Password only if TPM is disabled. | not possible | 
 
 ## In this section
 

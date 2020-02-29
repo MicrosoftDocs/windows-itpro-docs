@@ -22,7 +22,7 @@ ms.reviewer:
 -   Windows 10
 
 This topic explains how Device Encryption can help protect data on devices running Windows 10. 
-For a general overview and list of topics about BitLocker and Device Encryption, see [BitLocker and Device Encryption overview](bitlocker-deviceencryption-overview.md). 
+For a general overview and list of topics about BitLocker and Device Encryption, see [BitLocker and Device Encryption overview](DataEncryptionToolsOverview.md). 
 
 ## Device Encryption 
 
@@ -30,7 +30,7 @@ Beginning in Windows 8.1, Microsoft started to roll out a new feature called Dev
 
 Device Encryption uses BitLocker technology to protect the system by transparently implementing device-wide data encryption. 
 
-For a comparison between the BitLocker feature and the Device Encryption feature, see [BitLocker and Device Encryption overview](bitlocker-deviceencryption-overview.md)
+For a comparison between the BitLocker feature and the Device Encryption feature, see [BitLocker and Device Encryption overview](DataEncryptionToolsOverview.md)
 
 ### Special features Device Encryption
 
