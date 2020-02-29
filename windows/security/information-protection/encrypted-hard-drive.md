@@ -24,6 +24,13 @@ Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Dri
 
 By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand BitLocker deployment with minimal impact on productivity.
 
+<!-- WRONG INFORMATION! 
+Since OS Build 16299.1420 BitLocker uses software encryption for newly encrypted drives!
+
+“Changes the default setting for BitLocker when encrypting a self-encrypting hard drive. Now, the default is to use software encryption for newly encrypted drives. For existing drives, the type of encryption will not change. ”
+
+Source: https://support.microsoft.com/en-us/help/4516071/windows-10-update-kb4516071
+ -->
 Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. You can install Windows to Encrypted Hard Drives without additional modification beginning with Windows 8 and Windows Server 2012.
 
 Encrypted Hard Drives provide:
