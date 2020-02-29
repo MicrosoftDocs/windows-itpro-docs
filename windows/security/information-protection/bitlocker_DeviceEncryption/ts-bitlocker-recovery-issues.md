@@ -33,6 +33,15 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situati
 - [What if BitLocker is enabled on a computer before the computer has joined the domain?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
 - [What happens if the backup initially fails? Will BitLocker retry the backup?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
 
+## BitLocker does not accept the PIN/enhanced PIN/Password
+In the pre-boot environment BitLocker does not accept the PIN, enhanced PIN or password, even though it was entered correctly
+
+### Cause
+In the pre-boot environment BitLocker only supports the QWERTY keyboard layout. During the setup via the Graphical User Interface (GUI) BitLocker uses the keyboard layout configured by the operating system.
+
+### Workaround
+Check what keyboard layout you are using by default. If you are not using the QWERTY layout, please check if your PIN, enhanced PIN or password contains any characters which keyboard position differ from the position on a QWERTY keyboard. Enter the password as if the keyboard had a QWERTY layout.
+
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
 You have a Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker Driver Encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
