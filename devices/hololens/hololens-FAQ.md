@@ -158,7 +158,18 @@ To make sure that HoloLens can see your gestures, keep your hand in the gesture 
 
 ## HoloLens doesn't respond to my voice
 
-If Cortana isn't responding to your voice, make sure that Cortana is on. In the **All apps** list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
+If your HoloLens is not responding to your voice, make sure that Speech recognition is turned on. Select **Start** > **Settings** > **Privacy** > **Speech**, and then turn on **Speech recognition**.
+
+> [!NOTE]  
+> This setting isn't available on HoloLens (1st gen) because on HoloLens (1st gen), speech recognition is always turned on. You cannot turn it off.
+
+If Cortana isn't responding to "Hey Cortana," check that speech is enabled on Start and go to Cortana's settings and check to make sure she's on.
+
+- You can also easily reach this menu on HoloLens 2 by selecting the "Speech settings" button, or saying "Speech settings" while in the start menu after enabling Speech recognition.  
+
+- If Cortana is still not responding after enabling Online speech recognition, In the **All apps** list, select and launch **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes. 
+
+To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
 [Back to list](#list)
 
@@ -202,7 +213,7 @@ If resetting the clicker doesn't help, see [Restart or recover the HoloLens clic
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
 
-- Make sure that Wi-Fi is turned on. To check, use the bloom gesture to go to **Start**, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
+- Make sure that Wi-Fi is turned on. To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**. If Wi-Fi is on, try turning it off and then on again.
 - Move closer to the router or access point.
 - Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
 - If none of these things work, check to make sure that your router is using the latest firmware. You can find this information on the manufacturer website.

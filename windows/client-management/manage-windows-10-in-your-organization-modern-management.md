@@ -21,7 +21,7 @@ Use of personal devices for work, as well as employees working outside the offic
 
 Your organization might have considered bringing in Windows 10 devices and downgrading them to Windows 7 until everything is in place for a formal upgrade process. While this may appear to save costs due to standardization, greater savings can come from avoiding the downgrade and immediately taking advantage of the cost reductions Windows 10 can provide. Because Windows 10 devices can be managed using the same processes and technology as other previous Windows versions, it’s easy for versions to coexist.
 
-Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as System Center Configuration Manager, Microsoft Intune, or other third-party products. This “managed diversity” enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
+Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Endpoint Configuration Manager, Microsoft Intune, or other third-party products. This “managed diversity” enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
 
 This six-minute video demonstrates how users can bring in a new retail device and be up and working with their personalized settings and a managed experience in a few minutes, without being on the corporate network. It also demonstrates how IT can apply policies and configurations to ensure device compliance.
 
@@ -46,7 +46,7 @@ Windows 10 offers a range of management options, as shown in the following diagr
 
 <img src="images/windows-10-management-range-of-options.png" alt="The path to modern IT" width="766" height="654" />
 
-As indicated in the diagram, Microsoft continues to provide support for deep manageability and security through technologies like Group Policy, Active Directory, and System Center Configuration Manager. It also delivers a “mobile-first, cloud-first” approach of simplified, modern management using cloud-based device management solutions such as Microsoft Enterprise Mobility + Security (EMS). Future Windows innovations, delivered through Windows as a Service, are complemented by cloud services like Microsoft Intune, Azure Active Directory, Azure Information Protection, Office 365, and the Microsoft Store for Business.
+As indicated in the diagram, Microsoft continues to provide support for deep manageability and security through technologies like Group Policy, Active Directory, and Microsoft Configuration Manager. It also delivers a “mobile-first, cloud-first” approach of simplified, modern management using cloud-based device management solutions such as Microsoft Enterprise Mobility + Security (EMS). Future Windows innovations, delivered through Windows as a Service, are complemented by cloud services like Microsoft Intune, Azure Active Directory, Azure Information Protection, Office 365, and the Microsoft Store for Business.
 
 ## Deployment and Provisioning
 
@@ -57,7 +57,7 @@ With Windows 10, you can continue to use traditional OS deployment, but you can 
 
 -   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
--   Use traditional imaging techniques such as deploying custom images using [System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction).
+-   Use traditional imaging techniques such as deploying custom images using [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
 
 You have multiple options for [upgrading to Windows 10](https://technet.microsoft.com/itpro/windows/deploy/windows-10-deployment-scenarios). For existing devices running Windows 7 or Windows 8.1, you can use the robust in-place upgrade process for a fast, reliable move to Windows 10 while automatically preserving all the existing apps, data, and settings. This can mean significantly lower deployment costs, as well as improved productivity as end users can be immediately productive – everything is right where they left it. Of course, you can also use a traditional wipe-and-load approach if you prefer, using the same tools that you use today with Windows 7.
 
@@ -86,7 +86,7 @@ You can envision user and device management as falling into these two categories
 
     -   Windows Hello
 
-    Domain joined PCs and tablets can continue to be managed with the [System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction) client or Group Policy.
+    Domain joined PCs and tablets can continue to be managed with the [Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction) client or Group Policy.
 
 For more information about how Windows 10 and Azure AD optimize access to work resources across a mix of devices and scenarios, see [Using Windows 10 devices in your workplace](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-windows10-devices/).
 
@@ -100,7 +100,7 @@ Your configuration requirements are defined by multiple factors, including the l
 
 **MDM**: [MDM](https://www.microsoft.com/cloud-platform/mobile-device-management) gives you a way to configure settings that achieve your administrative intent without exposing every possible setting. (In contrast, Group Policy exposes fine-grained settings that you control individually.) One benefit of MDM is that it enables you to apply broader privacy, security, and application management settings through lighter and more efficient tools. MDM also allows you to target Internet-connected devices to manage policies without using GP that requires on-premises domain-joined devices. This makes MDM the best choice for devices that are constantly on the go.
 
-**Group Policy** and **System Center Configuration Manager**: Your organization might still need to manage domain joined computers at a granular level such as Internet Explorer’s 1,500 configurable Group Policy settings. If so, Group Policy and System Center Configuration Manager continue to be excellent management choices:
+**Group Policy** and **Microsoft Endpoint Configuration Manager**: Your organization might still need to manage domain joined computers at a granular level such as Internet Explorer’s 1,500 configurable Group Policy settings. If so, Group Policy and Configuration Manager continue to be excellent management choices:
 
 -   Group Policy is the best way to granularly configure domain joined Windows PCs and tablets connected to the corporate network using Windows-based tools. Microsoft continues to add Group Policy settings with each new version of Windows.
 
@@ -128,10 +128,10 @@ There are a variety of steps you can take to begin the process of modernizing de
 
 **Optimize your existing investments**. On the road from traditional on-premises management to modern cloud-based management, take advantage of the flexible, hybrid architecture of Configuration Manager and Intune. Starting with Configuration Manager 1710, co-management enables you to concurrently manage Windows 10 devices by using both Configuration Manager and Intune. See these topics for details:
 
--   [Co-management for Windows 10 devices](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
--   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-prepare)
--   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/sccm/core/clients/manage/co-management-switch-workloads)
--   [Co-management dashboard in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/co-management-dashboard)
+-   [Co-management for Windows 10 devices](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+-   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-prepare)
+-   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-switch-workloads)
+-   [Co-management dashboard in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-dashboard)
 
 ## Related topics
 

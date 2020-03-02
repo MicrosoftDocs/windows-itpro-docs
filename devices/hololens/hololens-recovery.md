@@ -74,8 +74,8 @@ If you’re still having problems, press the power button for 4 seconds, until a
 
 ## Reset to factory settings
 
->[!NOTE]
->The battery needs at least 40 percent charge to reset.
+> [!NOTE]
+> The battery needs at least 40 percent charge to reset.
 
 If your HoloLens is still experiencing issues after restarting, try resetting it to factory state.  Resetting your HoloLens keeps the version of the Windows Holographic software that’s installed on it and returns everything else to factory settings.
 
@@ -106,8 +106,8 @@ The Advanced Recovery Companion is a new app in Microsoft Store restore the oper
 5. On the **Device info** page, select **Install software** to install the default package. (If you have a Full Flash Update (FFU) image that you want to install instead, select **Manual package selection**.)
 6. Software installation will begin. Do not use the device or disconnect the cable during installation. When you see the **Installation finished** page, you can disconnect and use your device.
 
->[!TIP]
->In the event that a HoloLens 2 gets into a state where Advanced Recovery Companion cannot recognize the device, and it does not boot, try forcing the device into Flashing Mode and recovering it with Advanced Recovery Companion:
+> [!TIP]
+> In the event that a HoloLens 2 gets into a state where Advanced Recovery Companion cannot recognize the device, and it does not boot, try forcing the device into Flashing Mode and recovering it with Advanced Recovery Companion:
 
 1.	Connect the HoloLens 2 to a PC with Advanced Recovery Companion installed.
 1.	Press and hold the **Volume Up and Power buttons** until the device reboots.  Release the Power button, but continue to hold the Volume Up button until the third LED is lit.

@@ -19,8 +19,8 @@ This is the current list of known issues for HoloLens that affect developers. Ch
 
 ## Unable to connect and deploy to HoloLens through Visual Studio
 
->[!NOTE]
->Last Update: 8/8 @ 5:11PM - Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
+> [!NOTE]
+> Last Update: 8/8 @ 5:11PM - Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
 Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
@@ -36,14 +36,14 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Give the project a name (such as "HoloLensDeploymentFix") and make sure the Framework is set to at least .NET Framework 4.5, then Select **OK**.
 1. Right-click on the **References** node in Solution Explorer and add the following references (select to the **Browse** section and select **Browse**):
 
-    ``` CMD
+    ```CMD
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
     ```
 
-    >[!NOTE]
-    >If you don't have 10.0.18362.0 installed, use the most recent version that you have. 
+    > [!NOTE]
+    > If you don't have 10.0.18362.0 installed, use the most recent version that you have. 
 
 1. Right-click on the project in Solution Explorer and select **Add** > **Existing Item**.
 1. Browse to C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 and change the filter to **All Files (\*.\*)**.
@@ -51,14 +51,14 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change **Copy to Output Directory** in the **Properties** window to **Copy always**.
 1. At the top of the file, add the following to the existing list of `using` statements:
 
-    ``` CMD
+    ```CMD
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
 
 1. Inside of `static void Main(...)`, add the following code:
 
-    ``` PowerShell
+    ```PowerShell
     RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
     client.Connect(new ConnectionOptions()
     {

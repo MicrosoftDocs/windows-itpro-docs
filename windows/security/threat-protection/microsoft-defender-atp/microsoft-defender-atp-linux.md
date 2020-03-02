@@ -22,11 +22,16 @@ ms.topic: conceptual
 
 This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
+<p></p>
+
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
+
 
 ## How to install Microsoft Defender ATP for Linux
 
@@ -57,7 +62,7 @@ In general you need to take the following steps:
     - [Manual deployment](linux-install-manually.md)
   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
-    - [Deploy using Ansbile configuration management tool](linux-install-with-ansible.md)
+    - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 
 ### System requirements
 
