@@ -22,11 +22,11 @@ appliesto:
 
 # Frequently asked questions about HoloLens devices and holograms
 
-This article answers some questions that you may have about using HoloLens, placing holograms, working with spaces, and more.
+This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.
 
-Any time that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Try [restarting it](hololens-restart-recover.md) to see if that fixes things. And please use the Feedback app to send us information about the issue&mdash;you'll find the Feedback app on the [**Start** menu](holographic-home.md).
+Any time that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Try [restarting it](hololens-restart-recover.md) to see whether that fixes things. And please use the Feedback app to send us information about the issue. You'll find the Feedback app on the [**Start** menu](holographic-home.md).
 
-For tips about wearing your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
+For tips about hwo to wear your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
 
 This article addresses the following questions and issues:
 <a id="list"></a>
@@ -177,9 +177,9 @@ To learn more about what you can say, see [Use your voice with HoloLens](hololen
 
 If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:
 
-- Go to **Settings** > **Devices** and make sure Bluetooth is turned on. If it is, try turning if off and on again.
-- Make sure your Bluetooth device is fully charged or has fresh batteries.
-- If you still can't connect, [restart your HoloLens](hololens-recovery.md).
+- Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on. If it is, turn it off and on again.
+- Make sure that your Bluetooth device is fully charged or has fresh batteries.
+- If you still can't connect, [restart the HoloLens](hololens-recovery.md).
 
 [Back to list](#list)
 
@@ -189,11 +189,11 @@ HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such
 
 If you're having trouble using a Bluetooth device, make sure that it's a supported device. Supported devices include the following:
 
-- English-language QWERTY Bluetooth keyboards, which can be used anywhere you use the holographic keyboard.
+- English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).
 - Bluetooth mice.
 - The [HoloLens clicker](hololens1-clicker.md).
 
-You can pair other Bluetooth HID and GATT devices with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use them.
+You can pair other Bluetooth HID and GATT devices together with your HoloLens. However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.
 
 [Back to list](#list)
 
