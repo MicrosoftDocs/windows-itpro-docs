@@ -31,6 +31,8 @@ For the purposes of this article, we assume that MDT02 is prepared with the same
 
 Computers used in this topic.
 
+>HV01 is also used in this topic to host the PC0006 virtual machine.
+
 ## Replicate deployment shares
 
 Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
@@ -235,9 +237,9 @@ Like you did in the previous topic for MDT01, you need to add the MDT Production
 
 ## Deploy a Windows 10 client to the remote site
 
-Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following procedure. 
+Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following optional procedure. 
 
->To use the remote site server (MDT02) the VM must be assigned a default gateway that matches the one you entered in the Boostrap.ini file.
+>For demonstration purposes, the following procedure uses a virtual machine (PC0006) hosted by the Hyper-V server HV01. To use the remote site server (MDT02) the VM must be assigned a default gateway that matches the one you entered in the Boostrap.ini file.
 
 1.  Create a virtual machine with the following settings:
     1. Name: PC0006

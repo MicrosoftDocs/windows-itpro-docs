@@ -35,6 +35,8 @@ For more details on the setup for this topic, please see [Prepare for deployment
 
 The computers used in this topic.
 
+>HV01 is also used in this topic to host the PC0007 virtual machine for demonstration purposes, however typically PC0007 is a physical computer.
+
 ## Prepare for the computer replace
 
  To prepare for the computer replace, you need to create a folder in which to store the backup and a backup only task sequence to run on the old computer.
@@ -104,13 +106,17 @@ On **PC0002**:
 
     The new task sequence running the Capture User State action on PC0002.
 
-4.  On MDT01, verify that you have an USMT.MIG compressed backup file in the **E:\\MigData\\PC0002\\USMT** folder.
+4.  On **MDT01**, verify that you have an USMT.MIG compressed backup file in the **D:\\MigData\\PC0002\\USMT** folder.
 
     ![The USMT backup](../images/mdt-03-fig04.png "The USMT backup")
 
     The USMT backup of PC0002.
 
-### Deploy the PC0007 virtual machine
+### Deploy the replacement computer
+
+To demonstrate deployment of the replacement computer, HV01 is used to host a virtual machine: PC0007.
+
+On **HV01**:
 
 1.  Create a virtual machine with the following settings:
 
@@ -119,8 +125,9 @@ On **PC0002**:
     * Generation: 2
     * Memory: 2048 MB
     * Hard disk: 60 GB (dynamic disk)
+    * Install an operating system from a network-based installation server
 
-2.  Start the PC0007 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from the WDS server.
+2.  Start the PC0007 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from MDT01 (or MDT02 if at a remote site).
 
     ![The initial PXE boot process](../images/mdt-03-fig05.png "The initial PXE boot process")
 
@@ -128,16 +135,18 @@ On **PC0002**:
 
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
 
-    * Password: P@ssw0rd
     * Select a task sequence to execute on this computer:
         * Windows 10 Enterprise x64 RTM Custom Image
         * Computer Name: PC0007
-        * Applications: Select the Install - Adobe Reader XI - x86 application.
+        * Move Data and Settings: Do not move user data and settings.
+        * User Data (Restore) > Specify a location: \\\\MDT01\\MigData$\\PC0002
+        * Applications: Adobe > Install - Adobe Reader
 
-4.  The setup now starts and does the following:
+4.  Setup now starts and does the following:
 
+    * Partitions and formats the disk.
     * Installs the Windows 10 Enterprise operating system.
-    * Installs the added application.
+    * Installs the application.
     * Updates the operating system via your local Windows Server Update Services (WSUS) server.
     * Restores the USMT backup from PC0002.
 
