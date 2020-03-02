@@ -15706,5 +15706,10 @@
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
 "redirect_document_id": false
 },
+{
+"source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager",
+"redirect_document_id": false
+},
 ]
 }
