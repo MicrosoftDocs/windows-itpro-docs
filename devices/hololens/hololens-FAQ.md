@@ -45,7 +45,7 @@ This article addresses the following questions and issues:
 - [I'm having problems pairing or using a Bluetooth device](#im-having-problems-pairing-or-using-a-bluetooth-device)
 - [HoloLens Settings lists devices as available, but the devices don’t work](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
 - [I'm having problems using the HoloLens clicker](#im-having-problems-using-the-hololens-clicker)
-- [I can't connect to a Wi-Fi network](#i-cant-connect-to-a-wi-fi-network)
+- [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
 - [I can't sign in to a HoloLens device because it was previously set up for someone else](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
 - [Questions about managing HoloLens devices](#questions-about-managing-hololens-devices)
@@ -161,13 +161,13 @@ To make sure that HoloLens can see your gestures, keep your hand in the gesture 
 If your HoloLens is not responding to your voice, make sure that Speech recognition is turned on. Select **Start** > **Settings** > **Privacy** > **Speech**, and then turn on **Speech recognition**.
 
 > [!NOTE]  
-> This setting isn't available on HoloLens (1st gen) because on HoloLens (1st gen), speech recognition is always turned on. You cannot turn it off.
+> - On HoloLens (1st gen), after you initially turn on speech recognition, it remains turned on. You cannot turn it off.
+> - On HoloLens 2, you can also check that speech recognition is turned on by selecting the **Speech settings** button.  
 
-If Cortana isn't responding to "Hey Cortana," check that speech is enabled on Start and go to Cortana's settings and check to make sure she's on.
+If Cortana isn't responding to "Hey Cortana," first make sure that Speech recognition is turned on as described previously. Then do one of the following to verify that Cortana itself is turned on:
 
-- You can also easily reach this menu on HoloLens 2 by selecting the "Speech settings" button, or saying "Speech settings" while in the start menu after enabling Speech recognition.  
-
-- If Cortana is still not responding after enabling Online speech recognition, In the **All apps** list, select and launch **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes. 
+- In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
+- On HoloLens 2, say "Speech settings."
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
@@ -209,7 +209,7 @@ If resetting the clicker doesn't help, see [Restart or recover the HoloLens clic
 
 [Back to list](#list)
 
-## I can't connect to a Wi-Fi network
+## I can't connect to Wi-Fi
 
 Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:
 
