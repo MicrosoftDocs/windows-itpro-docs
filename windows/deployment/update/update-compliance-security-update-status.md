@@ -42,7 +42,7 @@ Deployment status summarizes detailed status into higher-level states to get a q
 Detailed status provides a detailed stage-level representation of where in the update process the device was last reported to be in relative to this specific update. Note that with the latency of deployment data, devices might have since moved on from the reported detailed status.
 
 
-|Detaild status  |Description  |
+|Detailed status  |Description  |
 |---------|---------|
 |Scheduled in next X days     |  The device is currently deferring the update with Windows Update for Business policies but will be offered the update within the next X days.       |
 |Compatibility hold     |  The device has been placed under a *compatibility hold* to ensure a smooth feature update experience and will not resume the update until the hold has been cleared. For more information see [Feature Update Status report](update-compliance-feature-update-status.md#compatibility-holds)        |
@@ -59,7 +59,7 @@ Detailed status provides a detailed stage-level representation of where in the u
 |Commit     | The device, after a restart, is committing changes relevant to the update.        |
 |Finalize succeeded     | The device has finished final tasks after a restart to apply the update.        |
 |Update successful     | The device has successfully applied the update.        |
-|Cancelled     | The update was cancelled at some point in the update process.        |
+|Cancelled     | The update was canceled at some point in the update process.        |
 |Uninstalled     | The update was successfully uninstalled from the device.        |
 |Rollback     |  The update failed to apply during the update process, causing the device to roll back changes and revert to the previous update.       |
 
