@@ -73,7 +73,7 @@ Cyren's web content classification technology is integrated by design into Micro
 
 Learn more at https://www.cyren.com/products/url-filtering.
 
-### Cyren  permissions
+### Cyren Permissions
 
 "Sign in and read user profile" allows Cyren to read your tenant info from your Microsoft Defender ATP account, such as your tenant ID, which will be tied to your Cyren license.
 
@@ -81,7 +81,10 @@ Learn more at https://www.cyren.com/products/url-filtering.
 
 ### Signing up for a Cyren License
 
-Cyren is offering a 60-day free trial for all Microsoft Defender ATP customers. To sign up, please follow the steps below from the portal. 
+Cyren is offering a 60-day free trial for all Microsoft Defender ATP customers. To sign up, please follow the steps below from the portal.
+
+>[!NOTE]
+>Make sure to add the URL you get redirected to by the signup process to the list of approved domains. 
 
 >[!NOTE]
 >A user with AAD app admin/global admin permissions is required to complete these steps.
