@@ -126,3 +126,17 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
+
+## Windows Defender Application Control filename rules
+
+File name rule levels provide administrators to specify the level
+
+**Table 3. Windows Defender Application Control policy - filename levels**
+
+| Rule level | Description |
+|----------- | ----------- |
+| **File Description** |  Specifies the file description provided by the developer of the binary. |
+| **Internal Name** |  Specifies the internal name of the binary. |
+| **Original File Name** | Specifies the original file name, or the name with which the file was first created, of the binary. |
+| **Package Family Name** |  Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
+| **Product Name** |  Specifies the name of the product with which the binary ships. |
