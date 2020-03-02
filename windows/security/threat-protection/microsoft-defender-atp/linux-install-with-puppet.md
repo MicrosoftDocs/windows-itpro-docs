@@ -112,6 +112,7 @@ $version = undef
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
                 baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+                descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
                 gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
@@ -181,7 +182,7 @@ orgId                                   : "[your organization identifier]"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-$ mdatp --health healthy
+mdatp --health healthy
 ```
 
 The above command prints `1` if the product is onboarded and functioning as expected.
