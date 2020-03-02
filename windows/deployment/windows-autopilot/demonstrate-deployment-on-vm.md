@@ -225,7 +225,7 @@ Ensure the VM booted from the installation ISO, click **Next** then click **Inst
    ![Windows setup](images/winsetup5.png)
    ![Windows setup](images/winsetup6.png)
 
-> After the VM restarts, during OOBE, it’s fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
+After the VM restarts, during OOBE, it’s fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
 
    ![Windows setup](images/winsetup7.png)
 
