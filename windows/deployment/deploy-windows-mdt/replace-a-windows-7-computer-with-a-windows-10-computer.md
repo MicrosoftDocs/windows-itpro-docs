@@ -131,7 +131,7 @@ On **HV01**:
 
     ![The initial PXE boot process](../images/mdt-03-fig05.png "The initial PXE boot process")
 
-    The initial PXE boot process of PC0005.
+    The initial PXE boot process of PC0007.
 
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
 
@@ -149,6 +149,10 @@ On **HV01**:
     * Installs the application.
     * Updates the operating system via your local Windows Server Update Services (WSUS) server.
     * Restores the USMT backup from PC0002.
+
+You can view progress of the process by clicking the Monitoring node in the Deployment Workbrench on MDT01.
+
+![Monitor progress](../images/mdt-replace.png)
 
 ## Related topics
 
