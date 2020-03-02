@@ -124,7 +124,7 @@ To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](https://
 
 Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell.
 
-To use Windows Powershell we just need to know two things:
+To use Windows PowerShell, we just need to know two things:
 
 1. The location of the Windows 10 ISO file.
    - In the example, we assume the location is **c:\iso\win10-eval.iso**.
@@ -628,7 +628,7 @@ In this example, the computer supports SLAT and Hyper-V.
 
 > If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
-You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
+You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [Coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
 
 <pre style="overflow-y: visible">
 C:>coreinfo -v
