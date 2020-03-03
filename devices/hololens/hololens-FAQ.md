@@ -160,7 +160,7 @@ To make sure that HoloLens can see your gestures, keep your hand in the gesture 
 
 HoloLens (1st gen) and HoloLens 2 have built-in speech recognition, and also support Cortana (online speech recognition).
 
-### Built-in command do not work
+### Built-in voice commands do not work
 
 On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
 
