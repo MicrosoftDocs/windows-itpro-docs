@@ -45,7 +45,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
     
     >[!NOTE]
-    >JamF falls under **Mobile Device Management**. 
+    >Jamf falls under **Mobile Device Management**. 
         
 4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
