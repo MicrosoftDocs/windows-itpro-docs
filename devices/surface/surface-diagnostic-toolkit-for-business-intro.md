@@ -7,7 +7,6 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/11/2019
 ms.reviewer: cottmca
 manager: dansimp
 ms.localizationpriority: medium
@@ -34,7 +33,8 @@ Before you run the diagnostic tool, make sure you have the latest Windows update
 2. Select Run and follow the on-screen instructions. For full details, refer to [Deploy Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business).
 
 The diagnosis and repair time averages 15 minutes but could take an hour or longer, depending on internet connection speed and the number of updates or repairs required. 
-# If you still need help
+
+## If you still need help
 
 If the Surface Diagnostic Toolkit for Business didn’t fix the problem, you can also:
 
