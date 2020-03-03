@@ -86,23 +86,14 @@ Operating system deployment with Configuration Manager is part of the normal sof
 
     **Note**  Configuration Manager SP1 along with the Windows Assessment and Deployment Kit (ADK) for Windows 10 are required to support management and deployment of Windows 10.
 
-     
-
 ## See also
 
-
 -   [Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
-
 -   [Windows deployment tools](../windows-deployment-scenarios-and-tools.md)
-
 -   [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-
--   [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-
+-   [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 -   [Deploy Windows To Go in your organization](../deploy-windows-to-go.md)
-
 -   [Sideload Windows Store apps](https://technet.microsoft.com/library/dn613831.aspx)
-
 -   [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803)
 
  
