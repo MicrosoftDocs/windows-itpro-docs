@@ -29,7 +29,7 @@ The next sections provide an overview of the classifications we use for applicat
 
 ## Unknown – Unrecognized software  
 
-No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program. There is a delay between the outbreak of an attack and when it is detected and blocked.
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program. This can result in a delay in malware detections when a new outbreak occurs.
 
 You can think of Unknown /Uncommonly downloaded warnings as an early warning system for potentially undetected malware. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
 
@@ -49,7 +49,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Downloader:** A type of malware that downloads other malware onto your device. It must connect to the internet to download files.
 
-* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn’t have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
+* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
 * **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
 
@@ -95,7 +95,7 @@ Software that exhibits lack of choice might:
 
 Software must not mislead or coerce you into making decisions about your device. This is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
 
-* Display exaggerated claims about your device’s health.
+* Display exaggerated claims about your device's health.
 
 * Make misleading or inaccurate claims about files, registry entries, or other items on your device.
 
