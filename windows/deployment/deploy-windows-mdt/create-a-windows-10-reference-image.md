@@ -109,7 +109,7 @@ On **MDT01**:
     - Full set of source files
     - Source directory: (location of your source files)
     - Destination directory name: <b>W10EX64RTM</b>
-5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click the added operating system name in the **Operating System** node and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
+5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click it and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
 
     ![Default image](../images/deployment-workbench01.png)
 
@@ -419,7 +419,8 @@ To configure the rules for the MDT Build Lab deployment share:
 On **MDT01**:
 
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab** deployment share and select **Properties**.
-2.  Select the **Rules** tab and replace the existing content with the following information: (edit the settings as needed to match your deployment)
+2.  Select the **Rules** tab and replace the existing content with the following information (edit the settings as needed to match your deployment). For example, If you do not have a WSUS server in your environment, delete the **WSUSServer** line from the configuration:
+
     ``` 
     [Settings]
     Priority=Default
@@ -457,7 +458,7 @@ On **MDT01**:
     ![figure 11](../images/mdt-rules.png)
 
     The server-side rules for the MDT Build Lab deployment share.
-
+ 
 3.  Click **Edit Bootstrap.ini** and modify using the following information:
 
     ``` 
