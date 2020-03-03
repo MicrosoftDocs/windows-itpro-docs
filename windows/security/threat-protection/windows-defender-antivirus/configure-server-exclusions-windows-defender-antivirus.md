@@ -76,7 +76,7 @@ Set-MpPreference -DisableAutoExclusions $true
 
 ### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the **Set** method of the [MSFT_MpPreference](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 DisableAutoExclusions
