@@ -74,7 +74,7 @@ Operating system deployment with Configuration Manager is part of the normal sof
 -   [Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)<br>
 -   [Windows deployment tools](../windows-deployment-scenarios-and-tools.md)<br>
 -   [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)<br>
--   [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)<br>
+-   [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)<br>
 -   [Deploy Windows To Go in your organization](../deploy-windows-to-go.md)<br>
 -   [Sideload Windows Store apps](https://technet.microsoft.com/library/dn613831.aspx)<br>
 -   [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803)
