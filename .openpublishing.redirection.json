@@ -1154,7 +1154,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md",
@@ -1724,7 +1724,22 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/overview-secure-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/secure-score-dashboard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/enable-secure-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/partner-applications.md",
@@ -15709,6 +15724,11 @@
 {
 "source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service",
 "redirect_document_id": false
 },
 ]

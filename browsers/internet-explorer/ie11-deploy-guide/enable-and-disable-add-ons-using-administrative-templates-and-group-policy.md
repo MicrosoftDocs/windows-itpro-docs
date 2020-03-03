@@ -81,8 +81,8 @@ Every add-on has a Class ID (CLSID) that you use to enable and disable specific 
     
 2.  From the copied information, select and copy just the **Class ID** value.
 
-    >[!NOTE]
-    >You want to copy the curly brackets as well as the CLSID: **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
+    > [!NOTE]
+    > You want to copy the curly brackets as well as the CLSID: **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
 
 3.  Open the Group Policy Management Editor and go to: Computer Configuration\Policies\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management.
 <br>**-OR-**<br>

@@ -69,7 +69,7 @@ In organizations that have integrated Active Directory and Azure AD, you can con
 
 - Password
 - Smartcards
-- Windows Hello for Business, if the domain is managed by System Center Configuration Manager
+- Windows Hello for Business, if the domain is managed by Microsoft Endpoint Configuration Manager
 
 In organizations that have integrated Active Directory and Azure AD, you can connect from an Azure AD-joined PC to an AD-joined PC when the Azure AD-joined PC is on the corporate network using:
 

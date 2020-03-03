@@ -45,8 +45,8 @@ To opt out of Insider builds:
 
 Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.  Issues with the Chinese and Japanese version of HoloLens should be reported the same way.
 
->[!NOTE]
->Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
+> [!NOTE]
+> Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
 
 ## Note for developers
 
@@ -61,7 +61,7 @@ Here's a quick summary of what's new:
 - Support for FIDO2 Security Keys to enable secure and easy authentication for shared devices
 - Seamlessly apply a provisioning package from a USB drive to your HoloLens
 - Use a provisioning packages to enroll your HoloLens to your Mobile Device Management system
-- Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use.  Send a note to hlappreview@service.microsoft.com to join the preview.
+- Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use.  Send a note to hlappreview@microsoft.com to join the preview.
 - Dark Mode - many Windows apps support both dark and light modes, and now HoloLens customers can choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time. Navigate to Settings > System > Colors to find "Choose your default app mode."
 - Support for additional system voice commands
 - Hand Tracking improvements to reduce the tendency to close the index finger when pointing. This should make button pressing and 2D slate usage feel more accurate

@@ -9,7 +9,7 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 02/28/2020
 ms.localizationpriority: Medium
 ---
 
@@ -24,7 +24,7 @@ Surface Hub 2S allows IT administrators to manage settings and policies using a 
 1. Sign in as a local administrator on Surface Hub 2S and open the **Settings** app. Select **Surface Hub** > **Device management** and then select **+** to add.
 2. After authenticating, the device will automatically register with Intune.
 
- ![Register Surface Hub 2S with Intune](images/sh2-set-intune1.png)<br>
+   ![Register Surface Hub 2S with Intune](images/sh2-set-intune1.png)<br>
 
 ### Auto registration — Azure Active Directory Affiliated
 
@@ -44,17 +44,31 @@ For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs
 
 ## Quality of Service (QoS) settings
 
-To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. The settings are identical for Skype for Business and Teams.
+To ensure optimal video and audio quality on Surface Hub 2S, add the following QoS settings to the device. 
+
+### Microsoft Teams QoS settings 
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
-|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000-50019 |
+|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DestinationPortMatchCondition | String  | 3478-3479 |
 |**Audio DSCP**| Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction | Integer | 46 |
-|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
+|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DestinationPortMatchCondition | String  | 3480 |
 |**Video DSCP**| Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction | Integer | 34 |
 
+
+### Skype for Business QoS settings
+
+| Name               | Description         | OMA-URI                                                                  | Type    | Value                          |
+| ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
+| Audio Ports        | Audio Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition  | String  | 50000-50019                    |
+| Audio DSCP         | Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction                | Integer | 46                             |
+| Audio Media Source | Skype App name      | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
+| Video Ports        | Video Port range    | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition  | String  | 50020-50039                    |
+| Video DSCP         | Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction                | Integer | 34                             |
+| Video Media Source | Skype App name      | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
+
 > [!NOTE]
-> These are the default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
+> Both tables show default port ranges. Administrators may change the port ranges in the Skype for Business and Teams control panel.
 
 ## Microsoft Teams Mode settings
 

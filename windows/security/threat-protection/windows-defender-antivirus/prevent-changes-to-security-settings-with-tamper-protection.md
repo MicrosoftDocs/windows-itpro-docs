@@ -87,9 +87,9 @@ If you are part of your organization's security team, and your subscription incl
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
-1. Make sure your organization meets all of the following requirements:
+1. Make sure your organization meets all of the following requirements to manage tamper protection using Intune:
 
-    - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in [Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)).
+    - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in [Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)). 
     - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; this is included in Microsoft 365 E5.)
     - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).

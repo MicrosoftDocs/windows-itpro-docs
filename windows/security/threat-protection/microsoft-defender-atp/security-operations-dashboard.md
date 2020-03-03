@@ -121,5 +121,5 @@ Click the user account to see details about the user account. For more informati
 ## Related topics
 - [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
 - [Portal overview](portal-overview.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
+- [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
