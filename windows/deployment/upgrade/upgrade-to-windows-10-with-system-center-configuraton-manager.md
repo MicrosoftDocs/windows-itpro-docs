@@ -30,11 +30,11 @@ The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Wi
 
 For the purposes of this topic, we will use three computers: DC01, CM01, and PC0001. DC01 is a domain controller and CM01 is a domain member server. PC0001 is a computer running Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Prepare for deployment with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md).
 
-![figure 1](../images/upgrademdt-fig1-machines.png)
+![computers](../images/dc01-cm01-pc0001.png)
 
 The computers used in this topic.
 
-## Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager
+## Upgrade to Windows 10 with Configuration Manager
 
 
 System Center 2012 R2 Configuration Manager SP 1 adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
