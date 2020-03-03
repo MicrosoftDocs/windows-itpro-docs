@@ -158,16 +158,20 @@ To make sure that HoloLens can see your gestures, keep your hand in the gesture 
 
 ## HoloLens doesn't respond to my voice
 
-If your HoloLens is not responding to your voice, make sure that Speech recognition is turned on. Select **Start** > **Settings** > **Privacy** > **Speech**, and then turn on **Speech recognition**.
+HoloLens (1st gen) and HoloLens 2 have built-in speech recognition, and also support Cortana (online speech recognition).
 
-> [!NOTE]  
-> - On HoloLens (1st gen), after you initially turn on speech recognition, it remains turned on. You cannot turn it off.
-> - On HoloLens 2, you can also check that speech recognition is turned on by selecting the **Speech settings** button.  
+### Built-in command do not work
 
-If Cortana isn't responding to "Hey Cortana," first make sure that Speech recognition is turned on as described previously. Then do one of the following to verify that Cortana itself is turned on:
+On HoloLens (1st gen), built-in speech recognition is not configurable. It is always turned on. On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.
+
+If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
+
+### Cortana doesn't work
+
+If Cortana isn't responding to your voice, make sure Cortana is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. Then do one of the following to verify that Cortana itself is turned on:
 
 - In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
-- On HoloLens 2, say "Speech settings."
+- On HoloLens 2, select the **Speech settings** button or say "Speech settings."
 
 To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
