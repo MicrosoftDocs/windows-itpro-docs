@@ -28,20 +28,20 @@ The simplest path to upgrade PCs that are currently running Windows 7, Windows�
 
 In-place upgrade differs from [computer refresh](refresh-a-windows-7-computer-with-windows-10.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 10 image to the production deployment share specifically to perform an in-place upgrade.
 
-Four computers are used in this topic: DC01, MDT01, and PC0002. 
+Three computers are used in this topic: DC01, MDT01, and PC0002. 
 
 - DC01 is a domain controller for the contoso.com domain
 - MDT01 is a domain member server 
 - PC0002 is a domain member computer running Windows 7 SP1, targeted for the Windows 10 upgrade
 
-![computers](../images/mdt-upgrade.png)
+ ![computers](../images/mdt-upgrade.png)
 
-The computers used in this topic.
+ The computers used in this topic.
 
 >[!NOTE]
 >For details about the setup for the procedures in this article, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-If you have already completed all the steps in [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt), then you already have a deployment share and you can skip to [Add Windows 10 Enterprise x64 (full source)](#add-windows-10-enterprise-x64-full-source).
+>If you have already completed all the steps in [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md), then you already have a production deployment share and you can skip to [Add Windows 10 Enterprise x64 (full source)](#add-windows-10-enterprise-x64-full-source).
 
 ## Create the MDT production deployment share
 
@@ -57,11 +57,11 @@ On **MDT01**:
 
 ## Add Windows 10 Enterprise x64 (full source)
 
->If you have already have a Windows 10 [reference image](create-a-windows-10-reference-image.md) in the **MDT Build Lab** deployment share, you can use the deployment workbench to copy and paste this image from the MDT Build Lab share to the MDT Production share, and skip the steps below that will create this image again.
+>If you have already have a Windows 10 [reference image](create-a-windows-10-reference-image.md) in the **MDT Build Lab** deployment share, you can use the deployment workbench to copy and paste this image from the MDT Build Lab share to the MDT Production share and skip the steps in this section.
 
 On **MDT01**:
 
-1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01.
+1. Sign in as contoso\\administrator and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01.
 2. Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**.
 3. Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
 4. Expand the **Operating Systems** node, right-click the **Windows 10** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
@@ -105,8 +105,6 @@ On **PC0002**:
 <br>
 
 ![upgrade3](../images/mdt-post-upg.png)
-
-Upgrading to Windows 10 with an MDT task sequence
 
 After the task sequence completes, the computer will be fully upgraded to Windows 10.
 
