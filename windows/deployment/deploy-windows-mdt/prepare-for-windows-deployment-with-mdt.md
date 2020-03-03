@@ -43,7 +43,7 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
 
 Several client computers are referenced in this guide with hostnames of PC0001 to PC0007.
 
-- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
+- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain.
   - Client name: PC0001
   - IP Address: DHCP
 - **PC0002**: A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
@@ -72,6 +72,8 @@ The following generic credentials are used in this guide. You should replace the
 **Domain administrator password**: pass@word1
 
 ### Organizational unit structure
+
+The following OU structure is used in this guide. Instructions are provided [below](#create-the-ou-structure) to help you create the required OUs.
 
 ![figure 2](../images/mdt-01-fig02.jpg)
 
