@@ -24,6 +24,9 @@ ms.custom: nextgen
 
 Windows Defender Antivirus on Windows Server 2016 or 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). Note that these exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
+> [!NOTE]
+> Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
+
 In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to these articles:
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
