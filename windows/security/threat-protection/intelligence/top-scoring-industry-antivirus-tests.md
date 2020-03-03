@@ -2,7 +2,7 @@
 title: Top scoring in industry tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK)
 ms.reviewer: 
 description: Microsoft Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
-keywords: av-test, av-comparatives, SE labs, MITRE ATT&CK, antivirus test, av testing, security product testing, security industry tests, industry antivirus tests, best antivirus, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows Defender Antivirus, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, next generation protection
+keywords: Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, next generation protection
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -50,7 +50,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 ### AV-Comparatives: Protection rating of 99.9% in the latest test
 
-Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system’s performance.
+Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system's performance.
 
 - Business Security Test 2019 (August — September): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp) <sup>**Latest**</sup>
 
@@ -94,7 +94,7 @@ MITRE tested the ability of products to detect techniques commonly used by the t
 
 ## To what extent are tests representative of protection in the real world?
 
-Independent security industry tests aim to evaluate the best antivirus and security products in an unbiased manner. However, it is important to remember that Microsoft sees a wider and broader set of threats beyond what’s tested in the evaluations highlighted in this topic. For example, in an average month Microsoft's security products identify over 100 million new threats. Even if an independent tester can acquire and test 1% of those threats, that is a million tests across 20 or 30 products. In other words, the vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats.
+Independent security industry tests aim to evaluate the best antivirus and security products in an unbiased manner. However, it is important to remember that Microsoft sees a wider and broader set of threats beyond what's tested in the evaluations highlighted in this topic. For example, in an average month Microsoft's security products identify over 100 million new threats. Even if an independent tester can acquire and test 1% of those threats, that is a million tests across 20 or 30 products. In other words, the vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats.
 
 The capabilities within Microsoft Defender ATP provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) that are not factored into industry antivirus tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Microsoft Defender ATP creates a partial picture of how Microsoft's security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Microsoft Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively Microsoft's security suite protects customers in the real world.
 
