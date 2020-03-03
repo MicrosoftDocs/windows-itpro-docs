@@ -2,7 +2,7 @@
 title: Configure Windows Defender Antivirus exclusions on Windows Server 2016 or 2019
 ms.reviewer: 
 manager: dansimp
-description: Windows Server 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
+description: Windows Servers 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Windows Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -22,7 +22,7 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus on Windows Server 2016 or 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). Note that these exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+Windows Defender Antivirus on Windows Server 2016 or 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 > [!NOTE]
 > Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
@@ -70,7 +70,9 @@ Use the following cmdlets:
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+[Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md).
+
+[Use PowerShell with Windows Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016
 
