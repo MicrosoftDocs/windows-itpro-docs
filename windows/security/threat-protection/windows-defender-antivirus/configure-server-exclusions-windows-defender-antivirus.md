@@ -22,46 +22,43 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
+Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) in this article. Note that these exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
-These exclusions will not appear in the standard exclusion lists shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
-
-You can still add or remove custom exclusions (in addition to the server role-defined automatic exclusions) as described in these exclusion-related topics:
-
+You can add or remove custom exclusions (in addition to the server role-defined automatic exclusions). To do that, refer to these articles:
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
 
-Custom exclusions take precedence over automatic exclusions.
+## A few points to keep in mind
 
-> [!TIP]
-> Custom and duplicate exclusions do not conflict with automatic exclusions.
+- Custom exclusions take precedence over automatic exclusions.
 
-Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
+- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
+
+- Custom and duplicate exclusions do not conflict with automatic exclusions.
+
+- Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
-In Windows Server 2016, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, you need to opt out of the automatic exclusions delivered in Security intelligence updates.
+In Windows Server 2016 and Windows Server 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles. 
 
 > [!WARNING]
-> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 roles.
-
-> [!NOTE]
-> This setting is only supported on Windows Server 2016. While this setting exists in Windows 10, it doesn't have an effect on exclusions.
-
+> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 or 2019 roles.
+> 
 > [!TIP]
-> Since the predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path *different than the original one*, you would have to manually add the exclusions using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
+> Since the predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different than the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
 ### Use Group Policy to disable the auto-exclusions list on Windows Server 2016
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx). Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
+3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Exclusions**.
 
-4. Double-click **Turn off Auto Exclusions** and set the option to **Enabled**. Click **OK**. 
+4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
 **Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016:**
 
@@ -85,9 +82,11 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 ## List of automatic exclusions
+
 The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.
 
 ### Default exclusions for all roles
+
 This section lists the default exclusions for all Windows Server 2016 roles.
 
 - Windows "temp.edb" files:
