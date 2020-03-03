@@ -15731,5 +15731,10 @@
 "redirect_url": "https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service",
 "redirect_document_id": false
 },
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+"redirect_document_id": false
+}
 ]
 }
