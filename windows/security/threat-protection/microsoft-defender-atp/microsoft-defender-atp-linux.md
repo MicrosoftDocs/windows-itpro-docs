@@ -92,6 +92,9 @@ The following table lists the services and their associated URLs that your netwo
 | United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
 | United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
 
+> [!NOTE]
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server) 
+
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Transparent proxy
 - Manual static proxy configuration
