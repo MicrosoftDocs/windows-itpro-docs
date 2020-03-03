@@ -60,7 +60,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create a Puppet manifest
 
-You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* module available from puppetlabs, and assumes that the modules has been installed on your Puppet server.
+You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
 
 Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This is typically located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created above to the *install_mdatp/files* folder. Create an *init.pp* file that contains the deployment instructions:
 
