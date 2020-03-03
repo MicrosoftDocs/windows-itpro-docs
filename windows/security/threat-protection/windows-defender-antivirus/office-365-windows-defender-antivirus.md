@@ -19,7 +19,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Better together: Windows Defender Antivirus and Office 365
+# Better together: Windows Defender Antivirus and Office 365 (including OneDrive)
 
 **Applies to:**
 
