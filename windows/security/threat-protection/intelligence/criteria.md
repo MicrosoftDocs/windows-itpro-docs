@@ -38,7 +38,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Downloader:** A type of malware that downloads other malware onto your device. It must connect to the internet to download files.
 
-* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn’t have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
+* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
 * **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
 
@@ -84,7 +84,7 @@ Software that exhibits lack of choice might:
 
 Software must not mislead or coerce you into making decisions about your device. This is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
 
-* Display exaggerated claims about your device’s health.
+* Display exaggerated claims about your device's health.
 
 * Make misleading or inaccurate claims about files, registry entries, or other items on your device.
 

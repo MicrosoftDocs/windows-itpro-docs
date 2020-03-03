@@ -90,7 +90,7 @@
 #### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
 #### [Refresh a Windows 7 computer with Windows 10](deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md)
 #### [Replace a Windows 7 computer with a Windows 10 computer](deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md)
-#### [Perform an in-place upgrade to Windows 10 with MDT](upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
+#### [Perform an in-place upgrade to Windows 10 with MDT](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Configure MDT settings](deploy-windows-mdt/configure-mdt-settings.md)
 ##### [Set up MDT for BitLocker](deploy-windows-mdt/set-up-mdt-for-bitlocker.md)
 ##### [Configure MDT deployment share rules](deploy-windows-mdt/configure-mdt-deployment-share-rules.md)
@@ -272,4 +272,3 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-

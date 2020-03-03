@@ -16,11 +16,9 @@ ms.date: 08/30/2016
 
 # About MBAM 2.0 SP1
 
-
 This topic describes the changes in Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 Service Pack 1 (SP1). For a general description of MBAM, see [Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md).
 
 ## <a href="" id="what-s-new-in-mbam-2-0-sp1"></a>What’s new in MBAM 2.0 SP1
-
 
 This version of MBAM provides the following new features and functionality.
 
@@ -257,8 +255,9 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-# pragma namespace ("\\\\.\\root\\cimv2")
-# pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
+    # pragma namespace ("\\\\.\\root\\cimv2")
+    # pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
+
     [Union, ViewSources{"select DeviceId, BitlockerPersistentVolumeId, BitLockerManagementPersistentVolumeId, BitLockerManagementVolumeType, DriveLetter, Compliant, ReasonsForNonCompliance, KeyProtectorTypes, EncryptionMethod, ConversionStatus, ProtectionStatus, IsAutoUnlockEnabled from Mbam_Volume"}, ViewSpaces{"\\\\.\\root\\microsoft\\mbam"}, dynamic, Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class Win32_BitLockerEncryptionDetails
     {
@@ -290,8 +289,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         Boolean     IsAutoUnlockEnabled;
     };
 
-# pragma namespace ("\\\\.\\root\\cimv2")
-# pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+    # pragma namespace ("\\\\.\\root\\cimv2")
+    # pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
      [DYNPROPS]
     Class Win32Reg_MBAMPolicy
     {
@@ -352,8 +351,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         EncodedComputerName;
     };
 
-# pragma namespace ("\\\\.\\root\\cimv2")
-# pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
+    # pragma namespace ("\\\\.\\root\\cimv2")
+    # pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
     [DYNPROPS]
     Class Win32Reg_MBAMPolicy_64
     {
@@ -414,8 +413,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         EncodedComputerName;
     };
 
-# pragma namespace ("\\\\.\\root\\cimv2")
-# pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+    # pragma namespace ("\\\\.\\root\\cimv2")
+    # pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,OperatingSystemSKU from Win32_OperatingSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_OperatingSystemExtended
@@ -426,8 +425,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         uint32     SKU;
     };
 
-# pragma namespace ("\\\\.\\root\\cimv2")
-# pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+    # pragma namespace ("\\\\.\\root\\cimv2")
+    # pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,PCSystemType from Win32_ComputerSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_ComputerSystemExtended
@@ -449,34 +448,22 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
 MBAM 2.0 SP1 is now available in the following languages:
 
 -   English (United States) en-US
-
 -   French (France) fr-FR
-
 -   Italian (Italy) it-IT
-
 -   German (Germany) de-DE
-
 -   Spanish, International Sort (Spain) es-ES
-
 -   Korean (Korea) ko-KR
-
 -   Japanese (Japan) ja-JP
-
 -   Portuguese (Brazil) pt-BR
-
 -   Russian (Russia) ru-RU
-
 -   Chinese Traditional zh-TW
-
 -   Chinese Simplified zh-CN
 
 ## How to Get MDOP Technologies
 
-
 MBAM 2.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
-
 
 [Release Notes for MBAM 2.0 SP1](release-notes-for-mbam-20-sp1.md)
 
