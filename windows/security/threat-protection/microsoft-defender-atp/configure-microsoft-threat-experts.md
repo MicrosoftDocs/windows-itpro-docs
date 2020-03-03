@@ -77,17 +77,17 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
-  ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
-  A flyout screen opens. The following screen shows when you are on a trial subscription.
-  
-  ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+    A flyout screen opens. The following screen shows when you are on a trial subscription.
 
-  The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
-  
-  ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+    ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
 
-  The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
+    The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
+
+    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+
+    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
 3.  In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
   
