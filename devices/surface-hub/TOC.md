@@ -42,6 +42,7 @@
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)
 ### [Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md)
+### [Update pen firmware on Surface Hub 2S](surface-hub-2s-pen-firmware.md)
 
 ## Secure
 ### [Secure and manage Surface Hub 2S with SEMM and UEFI](surface-hub-2s-secure-with-uefi-semm.md)

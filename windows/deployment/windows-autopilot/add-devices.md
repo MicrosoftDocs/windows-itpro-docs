@@ -135,7 +135,7 @@ A summary of each platform's capabilities is provided below.<br>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a><b><sup>4</sup></b></td>
+<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a></td>
 <td>YES - 1000 at a time max</td>
 <td>YES<b><sup>4</sup></b></td>
 <td>4K HH</td>
@@ -153,7 +153,8 @@ A summary of each platform's capabilities is provided below.<br>
 ><b><sup>1</sup></b>Microsoft recommended platform to use<br>
 ><b><sup>2</sup></b>Intune license required<br>
 ><b><sup>3</sup></b>Feature capabilities are limited<br>
-><b><sup>4</sup></b>To be retired<br>
+><b><sup>4</sup></b>Device profile assignment will be retired from MSfB and Partner Center in the coming months<br>
+
 
 Also see the following topics for more information about device IDs:
 - [Device identification](#device-identification)

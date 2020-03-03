@@ -230,7 +230,7 @@ Use the following information to publish an Office package.
 
 Deploy the App-V package for Office 2016 by using the same methods as the other packages that you've already deployed:
 
-* System Center Configuration Manager
+* Microsoft Endpoint Configuration Manager
 * App-V Server
 * Stand-alone through Windows PowerShell commands
 
@@ -267,10 +267,10 @@ The following steps will tell you how to enable Office plug-ins with your Office
 
 #### Enable plug-ins for Office App-V packages
 
-1. Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
+1. Add a Connection Group through App-V Server, Microsoft Endpoint Configuration Manager, or a Windows PowerShell cmdlet.
 2. Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer that will be used to sequence the plug-in. We recommend that you use Office 365 ProPlus (non-virtual) on the sequencing computer when sequencing Office 2016 plug-ins.
 3. Create an App-V package that includes the plug-ins you want.
-4. Add a Connection Group through the App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
+4. Add a Connection Group through the App-V Server, Configuration Manager, or a Windows PowerShell cmdlet.
 5. Add the Office 2016 App-V package and the plug-ins package you sequenced to the Connection Group you created.
 
     >[!IMPORTANT]
