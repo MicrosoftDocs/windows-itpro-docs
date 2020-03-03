@@ -62,7 +62,7 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
-**Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016:**
+### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016
 
 Use the following cmdlets:
 
