@@ -67,10 +67,10 @@ So, as an example (this is not a device hash, but it's misaligned unpadded Base6
 Now for the padding rules. The padding character is "=". The padding character can only be at the end of the hash, and there can only be a maximum of 2 padding characters. Here's the basic logic.
 
 - Does decoding the hash fail?
- - Yes: Are the last two characters "="?
-  - Yes: Replace both "=" with a single "A" character, then try again
-  - No: Add another "=" character at the end, then try again
- - No: That hash is valid
+  - Yes: Are the last two characters "="?
+     - Yes: Replace both "=" with a single "A" character, then try again
+     - No: Add another "=" character at the end, then try again
+  - No: That hash is valid
 
 Looping the logic above on the previous example hash, we get the following permutations:
 - Q29udG9zbwAAA
