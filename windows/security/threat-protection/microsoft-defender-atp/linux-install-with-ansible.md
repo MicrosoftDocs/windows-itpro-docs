@@ -36,7 +36,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 - Ansible needs to be installed on at least on one computer (we will call it the master).
-- SSH must be configured for an manager account between the master and all clients.
+- SSH must be configured for an administrator account between the master and all clients.
 - The following software must be installed on all clients:
   - curl
   - unzip
