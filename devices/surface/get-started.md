@@ -46,9 +46,10 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
+                         <p><a href="manage-surface-driver-and-firmware-updates.md">Manage and deploy Surface driver and firmware updates</a></p>
                         <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
                         <p><a href="surface-pro-arm-app-management.md">Deploying, managing, and servicing Surface Pro X</a></p>
-                        <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Deploy the latest firmware and drivers</a></p>
+                      
                     </div>
                 </div>
             </div>

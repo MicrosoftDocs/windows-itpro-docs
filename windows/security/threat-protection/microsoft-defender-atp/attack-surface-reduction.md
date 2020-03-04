@@ -81,7 +81,7 @@ The "engine version" of attack surface reduction events in the event log, is gen
 
 ## Attack surface reduction rules
 
-The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use System Center Configuration Manager or Microsoft Intune, you do not need the GUIDs:
+The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs:
 
  Rule name | GUID | File & folder exclusions
 -----------|------|--------------------------
@@ -110,11 +110,11 @@ This rule blocks the following file types from launching from email in Microsoft
 * Executable files (such as .exe, .dll, or .scr)
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Microsoft Endpoint Configuration Manager CB 1710
 
 Intune name: Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
 
-SCCM name: Block executable content from email client and webmail
+Microsoft Endpoint Configuration Manager name: Block executable content from email client and webmail
 
 GUID: BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
 
@@ -124,19 +124,19 @@ This rule blocks Office apps from creating child processes. This includes Word, 
 
 This is a typical malware behavior, especially malware that abuses Office as a vector, using VBA macros and exploit code to download and attempt to run additional payload. Some legitimate line-of-business applications might also use behaviors like this, including spawning a command prompt or using PowerShell to configure registry settings.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Office apps launching child processes
 
-SCCM name: Block Office application from creating child processes
+Configuration Manager name: Block Office application from creating child processes
 
 GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 ### Block Office applications from creating executable content
 
-This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating executable content.
+This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
 
-This rule targets a typical behavior where malware uses Office as a vector to break out of Office and save malicious components to disk, where they persist and survive a computer reboot. This rule prevents malicious code from being written to disk.
+ Malware that abuse Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
 
 This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -152,11 +152,11 @@ Attackers might attempt to use Office apps to migrate malicious code into other 
 
 This rule applies to Word, Excel, and PowerPoint.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Office apps injecting code into other processes (no exceptions)
 
-SCCM name: Block Office applications from injecting code into other processes
+Configuration Manager name: Block Office applications from injecting code into other processes
 
 GUID: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
 
@@ -169,11 +169,11 @@ Malware written in JavaScript or VBS often acts as a downloader to fetch and lau
 > [!IMPORTANT]
 > File and folder exclusions don't apply to this attack surface reduction rule.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
 
-SCCM name: Block JavaScript or VBScript from launching downloaded executable content
+Configuration Manager name: Block JavaScript or VBScript from launching downloaded executable content
 
 GUID: D3E037E1-3EB8-44C8-A917-57927947596D
 
@@ -181,11 +181,11 @@ GUID: D3E037E1-3EB8-44C8-A917-57927947596D
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. This rule detects suspicious properties within an obfuscated script.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Obfuscated js/vbs/ps/macro code
 
-SCCM name: Block execution of potentially obfuscated scripts.
+Configuration Manager name: Block execution of potentially obfuscated scripts.
 
 GUID: 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 
@@ -193,11 +193,11 @@ GUID: 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 
 Office VBA provides the ability to use Win32 API calls, which malicious code can abuse. Most organizations don't use this functionality, but might still rely on using other macro capabilities. This rule allows you to prevent using Win32 APIs in VBA macros, which reduces the attack surface.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Win32 imports from Office macro code
 
-SCCM name: Block Win32 API calls from Office macros
+Configuration Manager name: Block Win32 API calls from Office macros
 
 GUID: 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
 
@@ -215,11 +215,11 @@ This rule blocks the following file types from launching unless they either meet
 >
 >You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
 
-SCCM name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
+Configuration Manager name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
 
 GUID: 01443614-cd74-433a-b99e-2ecdc07bfc25
 
@@ -230,11 +230,11 @@ This rule provides an extra layer of protection against ransomware. It scans exe
 > [!NOTE]
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Advanced ransomware protection
 
-SCCM name: Use advanced protection against ransomware
+Configuration Manager name: Use advanced protection against ransomware
 
 GUID: c1db55ab-c21a-4637-bb3f-a12568109d35
 
@@ -245,11 +245,11 @@ Local Security Authority Subsystem Service (LSASS) authenticates users who log i
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Flag credential stealing from the Windows local security authority subsystem
 
-SCCM name: Block credential stealing from the Windows local security authority subsystem
+Configuration Manager name: Block credential stealing from the Windows local security authority subsystem
 
 GUID: 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 
@@ -261,13 +261,13 @@ This rule blocks processes through PsExec and WMI commands from running, to prev
 > File and folder exclusions do not apply to this attack surface reduction rule.
 
 > [!WARNING]
-> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [System Center Configuration Manager](https://docs.microsoft.com/sccm) because this rule blocks WMI commands the SCCM client uses to function correctly.
+> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
 
 This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019
 
 Intune name: Process creation from PSExec and WMI commands
 
-SCCM name: Not applicable
+Configuration Manager name: Not applicable
 
 GUID: d1e49aac-8f56-4280-b9ba-993a6d77406c
 
@@ -278,11 +278,11 @@ With this rule, admins can prevent unsigned or untrusted executable files from r
 * Executable files (such as .exe, .dll, or .scr)
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Untrusted and unsigned processes that run from USB
 
-SCCM name: Block untrusted and unsigned processes that run from USB
+Configuration Manager name: Block untrusted and unsigned processes that run from USB
 
 GUID: b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
 
@@ -297,7 +297,7 @@ This rule was introduced in: Windows 10 1809, Windows Server 1809, Windows Serve
 
 Intune name: Process creation from Office communication products (beta)
 
-SCCM name: Not yet available
+Configuration Manager name: Not yet available
 
 GUID: 26190899-1602-49e8-8b27-eb1d0a1ce869
 
@@ -309,7 +309,7 @@ This rule was introduced in: Windows 10 1809, Windows Server 1809, Windows Serve
 
 Intune name: Process creation from Adobe Reader (beta)
 
-SCCM name: Not yet available
+Configuration Manager name: Not yet available
 
 GUID: 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
 
@@ -321,7 +321,7 @@ This rule was introduced in: Windows 10 1903, Windows Server 1903
 
 Intune name: Block persistence through WMI event subscription
 
-SCCM name: Not yet available
+Configuration Manager name: Not yet available
 
 GUID: e6db77e5-3df2-4cf1-b95a-636979351e5b
 

@@ -119,11 +119,11 @@ The following commands are available for user roles that's been granted the abil
 Command | Description 
 :---|:---
 analyze | Analyses the entity with various incrimination engines to reach a verdict.
-getfile | Gets a file from the machine. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjuction with `getfile` to automatically run the prerequisite command. 
+getfile | Gets a file from the machine. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. 
 run | Runs a PowerShell script from the library on the machine.
 library | Lists files that were uploaded to the live response library.
 putfile | Puts a file from the library to the machine. Files are saved in a working folder and are deleted when the machine restarts by default.
-remediate | Remediates an entity on the machine. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjuction with `remediate` to automatically run the prerequisite command. 
+remediate | Remediates an entity on the machine. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command. 
 undo | Restores an entity that was remediated. 
 
 

@@ -105,20 +105,24 @@ See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are not blocked by default. Do not disable security monitoring or inspection of these URLs, but allow them as you would other internet traffic. They permit communication with Microsoft Defender ATP service in port 80 and 443:
 
 > [!NOTE]
-> URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only needed if the machine is on Windows 10, version 1803 or later.
+> settings-win.data.microsoft.com is only needed if you have Windows 10 machines running version 1803 or earlier.<br>
+> URLs that include v20 in them are only needed if you have Windows 10 machines running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 machine running version 1803 or later and onboarded to US Data Storage region.
 
  Service location | Microsoft.com DNS record
 -|-
 Common URLs for all locations | ```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` 
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` 
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net```
+European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` <br>```automatedirstrprdweu.blob.core.windows.net``` <br>```automatedirstrprdneu.blob.core.windows.net```
+United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` <br>```automatedirstrprduks.blob.core.windows.net``` <br>```automatedirstrprdukw.blob.core.windows.net```  
+United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net``` <br> ```automatedirstrprdcus.blob.core.windows.net``` <br> ```automatedirstrprdeus.blob.core.windows.net```
+
+> [!NOTE]
+> If you are using Windows Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Windows Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
 ## Microsoft Defender ATP service backend IP range
 
-If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+If your network devices don't support the URLs added to an "allow" list in the prior section, you can use the following information.
 
 Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
 
@@ -139,9 +143,9 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
-1. Download the [connectivity verification tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
+1. Download the [MDATP Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
-2. Extract the contents of MDATPClientAnalyzer on the machine.
+2. Extract the contents of MDATPClientAnalyzer.zip on the machine.
 
 3. Open an elevated command-line:
 

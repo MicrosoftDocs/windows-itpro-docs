@@ -58,7 +58,7 @@ The following is in scope for this project:
     capabilities including automatic investigation and remediation
 
 -   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
--   Use of System Center Configuration Manager to onboard endpoints into the service.
+-   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service.
 
 ### Out of scope
 
@@ -138,16 +138,16 @@ structure required for your environment.
 
 
 ## Adoption Order
-In many cases organizations will have existing endpoint security products in
-place. The bare minimum every organization should have is an antivirus solution. But in some cases an organization might also already implanted an EDR solution.
-Historically, replacing any security solution was time intensive and difficult
-to achieve due to the tight hooks into the application layer and infrastructure
+In many cases, organizations will have existing endpoint security products in
+place. The bare minimum every organization should have is an antivirus solution. But in some cases, an organization might also have implanted an EDR solution already.
+Historically, replacing any security solution used to be time intensive and difficult
+to achieve, due to the tight hooks into the application layer and infrastructure
 dependencies. However, because Microsoft Defender ATP is built into the
-operating system, replacing third-party solutions is easy to achieve.
+operating system, replacing third-party solutions is now easy to achieve.
 
-Choose which component of Microsoft Defender ATP to be used and remove the ones
-that do not apply. The table below indicates the Microsoft recommendation on the
-order on how the endpoint security suite should be enabled.
+Choose the component of Microsoft Defender ATP to be used and remove the ones
+that do not apply. The table below indicates the order Microsoft recommends for
+how the endpoint security suite should be enabled.
 
 | Component                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Adoption Order Rank |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|

@@ -37,7 +37,7 @@ Windows 10 supports end-to-end device lifecycle management to give companies con
 ## Deploy
 
 Windows 10 Mobile has a built-in device management client to deploy, configure, maintain, and support smartphones. Common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT), this client provides a single interface through which Mobile Device Management (MDM) solutions can manage any device that runs Windows 10. Because the MDM client integrates with identity management, the effort required to manage devices throughout the lifecycle is greatly reduced.
-Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or System Center Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050).
+Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or Microsoft Endpoint Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050).
 
 ### <a href="" id="deployment-scenarios"></a>Deployment scenarios
 
@@ -187,7 +187,6 @@ Azure AD is a cloud-based directory service that provides identity and access ma
 
 **Mobile Device Management**
 Microsoft [Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Like Office 365, Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
-You can also integrate Intune with Configuration Manager to gain a single console for managing all devices in the cloud and on premises, mobile or PC. For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](https://technet.microsoft.com/library/jj884158.aspx). For guidance on choosing between a stand-alone Intune installation and Intune integrated with System Center Configuration Manager, see Choose between Intune by itself or integrating Intune with System Center Configuration Manager.
 Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Mobile currently include: AirWatch, Citrix, MobileIron, SOTI, Blackberry and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/). If your organization doesn’t use Azure AD, the user must use an MSA during OOBE before enrolling the device in your MDM using a corporate account.
 
 >**Note:** Although not covered in this guide, you can use Exchange ActiveSync (EAS) to manage mobile devices instead of using a full-featured MDM system. EAS is available in Microsoft Exchange Server 2010 or later and Office 365.
@@ -280,7 +279,7 @@ Employees are usually allowed to change certain personal device settings that yo
 
 *Applies to: Corporate devices*
 
-Windows 10 Mobile devices use state-of-the-art technology that includes popular hardware features such as cameras, global positioning system (GPS) sensors, microphones, speakers, near-field communication (NFC) radios, storage card slots, USB interfaces, Bluetooth interfaces, cellular radios, and Wi Fi. You can use hardware restrictions to control the availability of these features.
+Windows 10 Mobile devices use state-of-the-art technology that includes popular hardware features such as cameras, global positioning system (GPS) sensors, microphones, speakers, near-field communication (NFC) radios, storage card slots, USB interfaces, Bluetooth interfaces, cellular radios, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
 
 The following lists the MDM settings that Windows 10 Mobile supports to configure hardware restrictions.
 
@@ -303,12 +302,12 @@ The following lists the MDM settings that Windows 10 Mobile supports to configur
 
 *Applies to: Personal and corporate devices*
 
-Certificates help improve security by providing account authentication, Wi Fi authentication, VPN encryption, and SSL encryption of web content. Although users can manage certificates on devices manually, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation.
+Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although users can manage certificates on devices manually, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation.
 To install certificates manually, you can post them on Microsoft Edge website or send them directly via email, which is ideal for testing purposes.
 Using SCEP and MDM systems, certificate management is completely transparent and requires no user intervention, helping improve user productivity, and reduce support calls. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Personal Information Exchange (PFX)). The MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
 In addition to SCEP certificate management, Windows 10 Mobile supports deployment of PFX certificates. The table below lists the Windows 10 Mobile PFX certificate deployment settings.
 Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
-Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidently.
+Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidentally.
 
 > **Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
 > -   View a summary of all personal certificates
@@ -322,11 +321,11 @@ Use the Allow Manual Root Certificate Installation setting to prevent users from
 
 *Applies to: Corporate and personal devices*
 
-Wi-Fi is used on mobile devices as much as, or more than, cellular data connections. Most corporate Wi Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention.
+Wi-Fi is used on mobile devices as much as, or more than, cellular data connections. Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention.
 You can create multiple Wi-Fi profiles in your MDM system. The below table lists the Windows 10 Mobile Wi Fi connection profile settings that can be configured by administrators.
 
--   **SSID** The case-sensitive name of the Wi Fi network Service Set Identifier
--   **Security type** The type of security the Wi Fi network uses; can be one of the following authentication types:
+-   **SSID** The case-sensitive name of the Wi-Fi network Service Set Identifier
+-   **Security type** The type of security the Wi-Fi network uses; can be one of the following authentication types:
     -   Open 802.11
     -   Shared 802.11
     -   WPA-Enterprise 802.11
@@ -341,13 +340,13 @@ You can create multiple Wi-Fi profiles in your MDM system. The below table lists
 -   **Extensible Authentication Protocol Transport Layer Security (EAP-TLS)** WPA-Enterprise 802.11 and WPA2-Enterprise 802.11 security types can use EAP-TLS with certificates for authentication
 -   **Protected Extensible Authentication Protocol with Microsoft Challenge Handshake Authentication Protocol version 2 (PEAP-MSCHAPv2)** WPA-Enterprise 802.11 and WPA2-Enterprise 802.11 security types can use PEAP-MSCHAPv2 with a user name and password for authentication
 -   **Shared key** WPA-Personal 802.11 and WPA2-Personal 802.11 security types can use a shared key for authentication.
--   **Proxy** The configuration of any network proxy that the Wi Fi connection requires (to specify the proxy server, use its fully qualified domain name [FQDN], Internet Protocol version 4 [IPv4] address, IP version 6 [IPv6] address, or IPvFuture address)
--   **Disable Internet connectivity checks** Whether the Wi Fi connection should check for Internet connectivity
+-   **Proxy** The configuration of any network proxy that the Wi-Fi connection requires (to specify the proxy server, use its fully qualified domain name [FQDN], Internet Protocol version 4 [IPv4] address, IP version 6 [IPv6] address, or IPvFuture address)
+-   **Disable Internet connectivity checks** Whether the Wi-Fi connection should check for Internet connectivity
 -   **Proxy auto-configuration URL** A URL that specifies the proxy auto-configuration file
 -   **Enable Web Proxy Auto-Discovery Protocol (WPAD)** Specifies whether WPAD is enabled
 
 In addition, you can set a few device wide Wi-Fi settings.
--   **Allow Auto Connect to Wi Fi Sense Hotspots** Whether the device will automatically detect and connect to Wi-Fi  networks
+-   **Allow Auto Connect to Wi-Fi Sense Hotspots** Whether the device will automatically detect and connect to Wi-Fi  networks
 -   **Allow Manual Wi-Fi Configuration** Whether the user can manually configure Wi-Fi  settings
 -   **Allow Wi-Fi** Whether the Wi-Fi hardware is enabled
 -   **Allow Internet Sharing** Allow or disallow Internet sharing
@@ -958,7 +957,7 @@ DHA-enabled device management solutions help IT managers create a unified securi
 
 For more information about health attestation in Windows 10 Mobile, see the [Windows 10 Mobile security guide](/windows/device-security/windows-10-mobile-security-guide).
 
-Thisis a lists of attributes that are supported by DHA and can trigger the corrective actions mentioned above.
+This is a list of attributes that are supported by DHA and can trigger the corrective actions mentioned above.
 -   **Attestation Identity Key (AIK) present** Indicates that an AIK is present (i.e., the device can be trusted more than a device without an AIK).
 -   **Data Execution Prevention (DEP) enabled** Whether a DEP policy is enabled for the device, indicating that the device can be trusted more than a device without a DEP policy.
 -   **BitLocker status** BitLocker helps protect the storage on the device. A device with BitLocker can be trusted more than a device without BitLocker.

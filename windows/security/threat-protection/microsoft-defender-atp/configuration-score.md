@@ -1,6 +1,6 @@
 ---
 title: Overview of Configuration score in Microsoft Defender Security Center
-description: Expand your visibility into the overall security configuration posture of your organization
+description: Your configuration score shows the collective security configuration state of your machines across application, operating system, network, accounts, and security controls
 keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,45 +8,50 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/11/2019
 ---
 # Configuration score
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!NOTE]
->  Secure score is now part of Threat & Vulnerability Management as Configuration score. The secure score page will be available for a few weeks. 
+> Secure score is now part of Threat & Vulnerability Management as Configuration score.
 
-The Microsoft Defender Advanced Threat Protection Configuration score gives you visibility and control over the security posture of your organization based on security best practices. High configuration score means your endpoints are more resilient from cybersecurity threat attacks.
+Your Configuration score is visible in the Threat & Vulnerability Management dashboard of the Microsoft Defender Security Center. It reflects the collective security configuration state of your machines across the following categories:
 
-Your configuration score widget shows the collective security configuration state of your machines across the following categories:
 - Application
 - Operating system
 - Network
 - Accounts
 - Security controls
 
-## How it works
->[!NOTE]
->  Configuration score currently supports configurations set via Group Policy. Due to the current partial Intune support, configurations which might have been set through Intune might show up as misconfigured. Contact your IT Administrator to verify the actual configuration status in case your organization is using Intune for secure configuration management.
+A higher configuration score means your endpoints are more resilient from cybersecurity threat attacks.
 
-The data in the configuration score widget is the product of meticulous and ongoing vulnerability discovery process aggregated with configuration discovery assessments that continuously:
+## How it works
+
+>[!NOTE]
+> Configuration score currently supports configurations set via Group Policy. Due to the current partial Intune support, configurations which might have been set through Intune might show up as misconfigured. Contact your IT Administrator to verify the actual configuration status in case your organization is using Intune for secure configuration management.
+
+The data in the configuration score card is the product of meticulous and ongoing vulnerability discovery process aggregated with configuration discovery assessments that continuously:
+
 - Compare collected configurations to the collected benchmarks to discover misconfigured assets
 - Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction) by remediating the misconfiguration
 - Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)
 - Collect and monitor changes of security control configuration state from all assets
 
-From the widget, you'd be able to see which security aspect requires attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can act on them based on security benchmarks. 
+From the widget, you'd be able to see which security aspect requires attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can act on them based on security benchmarks.
 
 ## Improve your configuration score
+
 The goal is to remediate the issues in the security recommendations list to improve your configuration score. You can filter the view based on:
+
 - **Related component** — **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
 - **Remediation type** — **Configuration change** or **Software update**
 
@@ -64,6 +69,7 @@ See how you can [improve your security configuration](https://docs.microsoft.com
 >2. Key-in the security update KB number that you need to download, then click **Search**.  
 
 ## Related topics
+
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
@@ -74,3 +80,7 @@ See how you can [improve your security configuration](https://docs.microsoft.com
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)

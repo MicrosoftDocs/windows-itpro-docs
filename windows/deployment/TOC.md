@@ -35,7 +35,7 @@
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-#### [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ### [Plan for Windows 10 deployment](planning/index.md)
 #### [Windows 10 Enterprise FAQ for IT Pros](planning/windows-10-enterprise-faq-itpro.md)
@@ -79,19 +79,20 @@
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 
 
-### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-#### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
-##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
-##### [MDT Lite Touch components](deploy-windows-mdt/mdt-lite-touch-components.md)
-##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+### Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)
+#### [Get started with MDT](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
 
-#### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
-#### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
-#### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
-#### [Refresh a Windows 7 computer with Windows 10](deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md)
-#### [Replace a Windows 7 computer with a Windows 10 computer](deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md)
-#### [Perform an in-place upgrade to Windows 10 with MDT](upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-#### [Configure MDT settings](deploy-windows-mdt/configure-mdt-settings.md)
+#### Deploy Windows 10 with MDT
+##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+##### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
+##### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
+##### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
+##### [Refresh a Windows 7 computer with Windows 10](deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md)
+##### [Replace a Windows 7 computer with a Windows 10 computer](deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md)
+##### [Perform an in-place upgrade to Windows 10 with MDT](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
+
+#### Customize MDT
+##### [Configure MDT settings](deploy-windows-mdt/configure-mdt-settings.md)
 ##### [Set up MDT for BitLocker](deploy-windows-mdt/set-up-mdt-for-bitlocker.md)
 ##### [Configure MDT deployment share rules](deploy-windows-mdt/configure-mdt-deployment-share-rules.md)
 ##### [Configure MDT for UserExit scripts](deploy-windows-mdt/configure-mdt-for-userexit-scripts.md)
@@ -253,6 +254,7 @@
 ##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
+#### [Update Windows 10 media with Dynamic Update](update/media-dynamic-update.md)
 #### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
 #### [Deploy feature updates for user-initiated installations](update/feature-update-user-install.md)
 #### [Conclusion](update/feature-update-conclusion.md)
@@ -267,33 +269,7 @@
 ### Use Windows Server Update Services
 #### [Deploy Windows 10 updates using Windows Server Update Services](update/waas-manage-updates-wsus.md)
 #### [Enable FoD and language pack updates in Windows Update](update/fod-and-lang-packs.md)
-### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
+### [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-## Windows Analytics
-### [Windows Analytics overview](update/windows-analytics-overview.md)
-### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
-### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
-### Upgrade Readiness
-#### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
-#### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
-#### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
-#### Get started
-##### [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)
-##### [Upgrade Readiness deployment script](upgrade/upgrade-readiness-deployment-script.md)
-#### Use Upgrade Readiness
-##### [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)
-##### [Upgrade overview](upgrade/upgrade-readiness-upgrade-overview.md)
-##### [Step 1: Identify apps](upgrade/upgrade-readiness-identify-apps.md)
-##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
-##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
-##### [Step 4: Monitor deployment](upgrade/upgrade-readiness-monitor-deployment.md)
-##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
-##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
-### Device Health
-#### [Device Health overview](update/device-health-monitor.md)
-#### [Get started with Device Health](update/device-health-get-started.md)
-#### [Using Device Health](update/device-health-using.md)
-### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
-### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)

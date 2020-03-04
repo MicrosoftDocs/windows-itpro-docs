@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 01/06/2020
+ms.date: 02/12/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -45,11 +45,11 @@ The next major version of Microsoft Edge, which is Chromium-based, blocks potent
 
 #### Enable PUA protection in Chromium-based Microsoft Edge
 
-Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is turned off by default, it can easily be turned on from within the browser.
+Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.
 
-1. From the tool bar, select **Settings and more** > **Settings**.
+1. Select the ellipses, and then choose **Settings**.
 2. Select **Privacy and services**.
-3. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off.
+3. Under the **Services** section, turn on **Block potentially unwanted apps**.
 
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
@@ -79,7 +79,7 @@ The notification appears in the usual [quarantine list within the Windows Securi
 
 #### Configure PUA protection in Windows Defender Antivirus
 
-You can enable PUA protection with Microsoft Intune, System Center Configuration Manager, Group Policy, or via PowerShell cmdlets.
+You can enable PUA protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
 You can also use the PUA audit mode to detect PUAs without blocking them. The detections will be captured in the Windows event log.
 
@@ -94,14 +94,14 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 ##### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the System Center Configuration Manager (Current Branch), starting with  version 1606.
+PUA protection is enabled by default in the Microsoft Endpoint Configuration Manager (Current Branch).
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring System Center Configuration Manager (Current Branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Configuration Manager (Current Branch).
 
-For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
+For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
 > [!NOTE]
-> PUA events blocked by Windows Defender Antivirus are reported in the Windows Event Viewer and not in System Center Configuration Manager.
+> PUA events blocked by Windows Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
 
 ##### Use Group Policy to configure PUA protection
 
@@ -146,7 +146,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 #### View PUA events
 
-PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or in Intune.
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Configuration Manager or in Intune.
 
 You can turn on email notifications to receive mail about PUA detections.
 

@@ -44,5 +44,4 @@ During the onboarding process, a wizard takes you through the general settings o
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Enable Secure Score security controls](enable-secure-score.md)
 - [Configure advanced features](advanced-features.md)

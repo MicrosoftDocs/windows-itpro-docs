@@ -240,4 +240,3 @@ Your feedback helps us get better in protecting your environment from advanced a
 Let us know what you think, by selecting **Provide feedback**.
 
 ![Image of provide feedback](images/send-us-feedback-eval-lab.png)
-

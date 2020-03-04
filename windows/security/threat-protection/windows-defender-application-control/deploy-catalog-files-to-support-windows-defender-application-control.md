@@ -143,7 +143,7 @@ To sign the existing catalog file, copy each of the following commands into an e
 
 5. Copy the catalog file to C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}.
 
-   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as System Center Configuration Manager. Doing this also simplifies the management of catalog versions.
+   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as Microsoft Endpoint Configuration Manager. Doing this also simplifies the management of catalog versions.
 
 ## Add a catalog signing certificate to a Windows Defender Application Control policy
 
@@ -217,9 +217,9 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy.
 
-## Deploy catalog files with System Center Configuration Manager
+## Deploy catalog files with Microsoft Endpoint Configuration Manager
 
-As an alternative to Group Policy, you can use System Center Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, System Center Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
+As an alternative to Group Policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
 
 >[!NOTE]
 >The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
@@ -292,9 +292,9 @@ After you create the deployment package, deploy it to a collection so that the c
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy,.
 
-## Inventory catalog files with System Center Configuration Manager
+## Inventory catalog files with Microsoft Endpoint Configuration Manager
 
-When catalog files have been deployed to the computers within your environment, whether by using Group Policy or System Center Configuration Manager, you can inventory them with the software inventory feature of System Center Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
+When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
 
 >[!NOTE]
 >A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
@@ -332,7 +332,7 @@ When catalog files have been deployed to the computers within your environment, 
 
 9.  Now that you have created the client settings policy, right-click the new policy, click **Deploy**, and then choose the collection on which you would like to inventory the catalog files.
 
-At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in System Center Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
+At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
 
 1.  Open the Configuration Manager console, and select the Assets and Compliance workspace.
 

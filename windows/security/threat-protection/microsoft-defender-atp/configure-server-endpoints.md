@@ -129,11 +129,12 @@ Once completed, you should see onboarded servers in the portal within an hour.
 To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
 
 > [!NOTE]
-> The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+> The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 Supported tools include:
 - Local script
 - Group Policy 
+- Microsoft Endpoint Configuration Manager
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 

@@ -73,7 +73,7 @@ The Administrator account has full control of the files, directories, services, 
 
 The default Administrator account cannot be deleted or locked out, but it can be renamed or disabled.
 
-In Windows 10 and Windows Server 20016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
+In Windows 10 and Windows Server 2016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
 
 **Account group membership**
 
