@@ -114,6 +114,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
+## macOS kernel and system extensions
+
+In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender Advanced Threat Protection for Mac](mac-whatsnew.md) for relevant details.
+
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
