@@ -24,8 +24,8 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 There are two types of updates related to keeping Windows Defender Antivirus up to date:
-1. Protection updates
 
+1. Protection updates
 2. Product updates
 
 You can also apply [Windows security baselines](https://technet.microsoft.com/itpro/windows/keep-secure/windows-security-baselines) to quickly bring your endpoints up to a uniform level of protection.
@@ -44,8 +44,9 @@ Windows Defender Antivirus requires [monthly updates](https://support.microsoft.
 
 You can manage the distribution of updates through Windows Server Update Service (WSUS), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
 
-## Released platform -and engine versions
-Only the main version is listed in the below table as reference
+## Released platform and engine versions
+
+Only the main version is listed in the following table as reference information:
 
 Month	| Platform/Client	| Engine
 ---|---|---
@@ -68,7 +69,7 @@ Dec-18	| 4.18.1812.X	| 1.1.15500.x
 
 ## In this section
 
-Topic | Description 
+Article | Description 
 ---|---
 [Manage how protection updates are downloaded and applied](manage-protection-updates-windows-defender-antivirus.md) | Protection updates can be delivered through a number of sources.
 [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) | You can schedule when protection updates should be downloaded.
