@@ -89,7 +89,7 @@ Note your distribution and version and identify the closest entry for it under `
 ```puppet
 # Puppet manifest to install Microsoft Defender ATP.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (
