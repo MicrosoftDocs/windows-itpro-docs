@@ -118,6 +118,12 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install curl
     ```
 
+- Install `libplist-utils` if it is not already installed:
+
+    ```bash
+    sudo apt-get install libplist-utils
+    ```
+
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
