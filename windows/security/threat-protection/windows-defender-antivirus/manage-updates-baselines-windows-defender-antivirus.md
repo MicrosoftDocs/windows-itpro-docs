@@ -36,7 +36,7 @@ Windows Defender Antivirus uses both [cloud-delivered protection](utilize-micros
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
-Engine updates are included with the Security intelligence updates and are released on a monthly cadense.
+Engine updates are included with the Security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
