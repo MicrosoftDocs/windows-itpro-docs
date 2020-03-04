@@ -41,8 +41,7 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
 ### Windows Security Center
 
-Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** 
-> **Core isolation** > **Firmware protection**.
+Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
   ![Windows Security Center](images/secure-launch-security-app.png)
   
