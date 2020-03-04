@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -59,7 +59,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 If an error occurs during installation, the installer will only report a general failure.
 
-The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
+The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
 ## Uninstalling
 
@@ -72,6 +72,7 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 ### From the command line
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
+- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
 
 ## Configuring from the command line
 
@@ -97,6 +98,10 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]` OR `mdatp --edr --earlyPreview [true/false]` for versions earlier than 100.78.0                                |
 |EDR          |Add group tag to machine. EDR tags are used for managing machine groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
 |EDR          |Remove group tag from machine              |`mdatp --edr --remove-tag [name]`                                            |
+
+## Client Microsoft Defender ATP quarantine directory
+
+`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
 
 ## Microsoft Defender ATP portal information
 
