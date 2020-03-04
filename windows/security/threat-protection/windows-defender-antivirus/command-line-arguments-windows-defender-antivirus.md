@@ -30,6 +30,9 @@ You can find the utility in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_. You 
 
 > [!NOTE]
 > You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+>
+> If you're running with an updated Windows Defender Platform version, please run MpCmdRun from below location:
+> **C:\ProgramData\Microsoft\Windows Defender\Platform\<version>**
 
 The utility has the following commands:
 
@@ -44,7 +47,7 @@ MpCmdRun.exe -scan -2
 | Command  | Description   |
 |:----|:----|
 | `-?` **or** `-h`   | Displays all available options for this tool |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan. |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan. |
 | `-Trace [-Grouping #] [-Level #]` | Starts diagnostic tracing |
 | `-GetFiles` | Collects support information |
 | `-GetFilesDiagTrack`  | Same as `-GetFiles`, but outputs to temporary DiagTrack folder |
