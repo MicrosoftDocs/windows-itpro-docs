@@ -34,25 +34,31 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 ### Group Policy
 
 1. Click **Start** > type and then click **Edit group policy**. 
+
 2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
-![Secure Launch Group Policy](images/secure-launch-group-policy.png)
+  ![Secure Launch Group Policy](images/secure-launch-group-policy.png)
 
 ### Windows Security Center
 
-Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
+Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** 
+> **Core isolation** > **Firmware protection**.
 
-![Windows Security Center](images/secure-launch-security-app.png)
-
+  ![Windows Security Center](images/secure-launch-security-app.png)
+  
 ### Registry
 
 1. Open Registry editor.
+
 2. Click **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **DeviceGuard** > **Scenarios**.
+
 3. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
+
 4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**. 
+
 5. Double-click **Enabled**, change the value to **1**, and click **OK**.
 
-![Secure Launch Registry](images/secure-launch-registry.png)
+  ![Secure Launch Registry](images/secure-launch-registry.png)
 
 > [!IMPORTANT]
 > If System Guard is enabled with a registry key, standard hardware security is not available for the Intel i5 7200U processor.
