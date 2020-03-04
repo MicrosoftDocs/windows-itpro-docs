@@ -349,6 +349,7 @@ GUID: e6db77e5-3df2-4cf1-b95a-636979351e5b
 
 ## Related topics
 
+* [Attack surface reduction FAQ](attack-surface-reduction.md)
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 * [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)

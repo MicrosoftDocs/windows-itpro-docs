@@ -103,3 +103,4 @@ See the [Windows Security](../windows-defender-security-center/windows-defender-
 * [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)

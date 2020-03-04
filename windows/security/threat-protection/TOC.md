@@ -19,6 +19,7 @@
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
+#### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
 

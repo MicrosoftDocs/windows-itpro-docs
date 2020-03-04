@@ -67,3 +67,4 @@ See the [Customize attack surface reduction rules](customize-attack-surface-redu
 
 * [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
 * [Use audit mode to evaluate Windows Defender](audit-windows-defender.md)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)
