@@ -25,6 +25,18 @@ Please refer to the “[Surface Hub Important Information](https://support.micro
 ## Windows 10 Team Creators Update 1703
 
 <details>
+<summary>February 11, 2020—update for Team edition based on KB4537765* (OS Build 15063.2284)</summary>
+
+This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
+
+* Resolves an issue where the Hub 2S cannot be heard well by other participants during Skype for Business calls.
+* Improves reliability for some Arabic, Hebrew, and other RTL language usage scenarios on Surface Hub.
+
+Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
+*[KB4537765](https://support.microsoft.com/help/4537765)
+</details>
+
+<details>
 <summary>January 14, 2020—update for Team edition based on KB4534296* (OS Build 15063.2254)</summary>
 
 This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
