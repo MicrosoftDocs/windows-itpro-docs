@@ -1,7 +1,7 @@
 ---
-title: Better together: Windows Defender Antivirus and Office 365 (including OneDrive) - better protection from ransomware and cyberthreats
-description: Office 365, which includes OneDrive, goes together wonderfully with Windows Defender Antivirus. Read this article to learn more.
-keywords: windows defender, antivirus, office 365, onedrive
+title: "Better together - Windows Defender Antivirus and Office 365 (including OneDrive) - better protection from ransomware and cyberthreats"
+description: "Office 365, which includes OneDrive, goes together wonderfully with Windows Defender Antivirus. Read this article to learn more."
+keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -14,12 +14,12 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/26/2020
+ms.date: 03/04/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Better together: Windows Defender Antivirus and Office 365 (including OneDrive)
+# Better together: Windows Defender Antivirus and Office 365
 
 **Applies to:**
 
@@ -46,9 +46,9 @@ Read the following sections to learn more.
 
 When you save your files to [OneDrive](https://docs.microsoft.com/onedrive), and [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) detects a ransomware threat on your device, the following things occur:
 
-1. **You are told about the threat**. (If your organization is using Microsoft Defender Advanced Threat Protection, your security operations team is notified, too.)
+1. **You are told about the threat**. (If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (ATP), your security operations team is notified, too.)
 
-2. **Windows Defender Antivirus helps you (and your organization's security team) remove the ransomware** from your device(s).
+2. **Windows Defender Antivirus helps you (and your organization's security team) remove the ransomware** from your device(s). (If your organization is using Microsoft Defender ATP, your security operations team can determine whether other devices are infected and take appropriate action, too.)
 
 3. **You get the option to recover your files in OneDrive**. With the OneDrive Files Restore feature, you can recover your files in OneDrive to the state they were in before the ransomware attack occurred. See [Ransomware detection and recovering your files](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 
@@ -56,7 +56,7 @@ Think of the time and hassle this can save.
 
 ## Integration means better protection
 
-Office 365 Advanced Threat Protection integrated with Microsoft Defender Advanced Threat Protection means better protection. Here's how:
+Office 365 Advanced Threat Protection integrated with Microsoft Defender Advanced Threat Protection means better protection for your organization. Here's how:
 
 - [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) safeguards your organization against malicious threats posed in email messages, email attachments, and links (URLs) in Office documents.
 
@@ -68,7 +68,7 @@ Office 365 Advanced Threat Protection integrated with Microsoft Defender Advance
 
 - Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
-If you haven't already done so, [integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+If you haven't already done so, [integrate Office 365 Advanced Threat Protection with Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
 ## More good reasons to use OneDrive
 

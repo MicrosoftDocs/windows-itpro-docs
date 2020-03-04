@@ -22,7 +22,7 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus on Windows Server 2016 or 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+Windows Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 > [!NOTE]
 > Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
@@ -46,13 +46,13 @@ In addition to server role-defined automatic exclusions, you can add or remove c
 In Windows Server 2016 and 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles. 
 
 > [!WARNING]
-> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 or 2019 roles.
+> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles.
 
 Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
-### Use Group Policy to disable the auto-exclusions list on Windows Server 2016
+### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and 2019
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx). Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
@@ -62,7 +62,7 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
-### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016
+### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019
 
 Use the following cmdlets:
 
@@ -74,7 +74,7 @@ Set-MpPreference -DisableAutoExclusions $true
 
 [Use PowerShell with Windows Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
-### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016
+### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and 2019
 
 Use the **Set** method of the [MSFT_MpPreference](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
