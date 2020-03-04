@@ -22,11 +22,16 @@ ms.topic: conceptual
 
 This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
+<p></p>
+
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
+
+
 
 ## How to install Microsoft Defender ATP for Linux
 
@@ -57,7 +62,7 @@ In general you need to take the following steps:
     - [Manual deployment](linux-install-manually.md)
   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
-    - [Deploy using Ansbile configuration management tool](linux-install-with-ansible.md)
+    - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 
 ### System requirements
 
@@ -86,6 +91,9 @@ The following table lists the services and their associated URLs that your netwo
 | European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com |
 | United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
 | United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
+
+> [!NOTE]
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server) 
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Transparent proxy

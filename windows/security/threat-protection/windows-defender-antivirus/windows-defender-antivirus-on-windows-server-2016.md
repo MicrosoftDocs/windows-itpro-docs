@@ -57,7 +57,13 @@ By default, Windows Defender Antivirus is installed and functional on Windows Se
 
 2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option.
 
+In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
+
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
+
+In Windows Server 2019, the **Add Roles and Feature Wizard** looks like this:
+
+![Add roles and features wizard Windows Server 2019](images/WDAV-WinSvr2019-turnfeatureson.jpg)
 
 ### Turn on the GUI using PowerShell
 
@@ -69,7 +75,7 @@ Install-WindowsFeature -Name Windows-Defender-GUI
 
 ## Install Windows Defender Antivirus on Windows Server 2016 or 2019
 
-You can use the **Add Roles and Features Wizard** or PowerShell to install Windows Defender Antivirus.
+You can use either the **Add Roles and Features Wizard** or PowerShell to install Windows Defender Antivirus.
 
 ### Use the Add Roles and Features Wizard
 
@@ -79,12 +85,13 @@ You can use the **Add Roles and Features Wizard** or PowerShell to install Windo
 
 ### Use PowerShell
 
+To use PowerShell to install Windows Defender Antivirus, run the following cmdlet:
+
 ```PowerShell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
-> [!TIP]
-> Event messages for the antimalware engine included with Windows Defender Antivirus can be found in [Windows Defender AV Events](troubleshoot-windows-defender-antivirus.md).
+Event messages for the antimalware engine included with Windows Defender Antivirus can be found in [Windows Defender AV Events](troubleshoot-windows-defender-antivirus.md).
 
 
 ## Verify Windows Defender Antivirus is running
@@ -132,16 +139,21 @@ The following table lists the services for Windows Defender Antivirus and the de
 
 |Service Name|File Location|Description|
 |--------|---------|--------|
-|Windows Defender Service (Windefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|This is the main Windows Defender Antivirus service that needs to be running at all times.|
+|Windows Defender Service (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|This is the main Windows Defender Antivirus service that needs to be running at all times.|
 |Windows Error Reporting Service (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|This service sends error reports back to Microsoft.|
 |Windows Defender Firewall (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
 ## Submit samples
 
-To submit a file, review the [submission guide](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide), and then visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission)
-
 Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence. We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
+
+### Submit a file
+
+1. Review the [submission guide](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
+
+2. Visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission), and submit your file.
+
 
 ### Enable automatic sample submission
 
@@ -158,7 +170,7 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender Antivirus on Windows Server 2016 or 2019.
 
-See [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md). 
+See [Configure exclusions in Windows Defender Antivirus on Windows Server](configure-server-exclusions-windows-defender-antivirus.md). 
 
 ## Need to uninstall Windows Defender Antivirus?
 

@@ -219,7 +219,7 @@ Before you begin testing the deployed catalog file, make sure that the catalog s
 
 ## Deploy catalog files with Microsoft Endpoint Configuration Manager
 
-As an alternative to Group Policy, you can use Microsoft Endpoint Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Microsoft Endpoint Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
+As an alternative to Group Policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
 
 >[!NOTE]
 >The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
@@ -294,7 +294,7 @@ Before you begin testing the deployed catalog file, make sure that the catalog s
 
 ## Inventory catalog files with Microsoft Endpoint Configuration Manager
 
-When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Microsoft Endpoint Configuration Manager, you can inventory them with the software inventory feature of Microsoft Endpoint Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
+When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
 
 >[!NOTE]
 >A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
@@ -332,7 +332,7 @@ When catalog files have been deployed to the computers within your environment, 
 
 9.  Now that you have created the client settings policy, right-click the new policy, click **Deploy**, and then choose the collection on which you would like to inventory the catalog files.
 
-At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in Microsoft Endpoint Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
+At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
 
 1.  Open the Configuration Manager console, and select the Assets and Compliance workspace.
 
