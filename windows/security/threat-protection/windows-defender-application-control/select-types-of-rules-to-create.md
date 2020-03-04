@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ---
 
 # Understand WDAC policy rules and file rules
