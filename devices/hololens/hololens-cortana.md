@@ -63,7 +63,7 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor** on it for a moment to see a voice tip.
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**,**touch cursor** or 1 **hand ray** on it for a moment to see a voice tip.
 
 ### Dictation mode
 
