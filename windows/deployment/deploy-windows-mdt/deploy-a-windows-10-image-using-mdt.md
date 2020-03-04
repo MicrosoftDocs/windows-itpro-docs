@@ -101,7 +101,7 @@ On **MDT01**:
 1.  Ensure you are signed in as **contoso\\administrator**.
 2.  Modify the NTFS permissions for the **D:\\MDTProduction** folder by running the following command in an elevated Windows PowerShell prompt:
 
-    ``` syntax
+    ``` powershell
     icacls "D:\MDTProduction" /grant '"CONTOSO\MDT_BA":(OI)(CI)(M)'
     grant-smbshareaccess -Name MDTProduction$ -AccountName "Contoso\MDT_BA" -AccessRight Full -force
     ```
