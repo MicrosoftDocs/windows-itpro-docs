@@ -15612,6 +15612,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/deployment/update/windows-analytics-azure-portal.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
 "redirect_document_id": false
@@ -15719,6 +15724,16 @@
 {
 "source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
 "redirect_document_id": false
 }
 ]
