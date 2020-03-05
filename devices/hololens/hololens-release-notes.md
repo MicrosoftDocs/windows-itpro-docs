@@ -9,6 +9,9 @@ ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/02/2019
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 1

@@ -11,6 +11,9 @@ ms.sitesec: library
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 manager: bradke
 appliesto:
 - HoloLens 1 (1st gen)

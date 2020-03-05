@@ -6,6 +6,9 @@ ms.author: v-tea
 ms.reviewer: luoreill
 manager: jarrettr
 audience: Admin
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.topic: article
 ms.prod: hololens
 ms.localizationpriority: high

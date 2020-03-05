@@ -6,6 +6,9 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 8/30/2019
 ms.topic: article
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 HoloLens and holograms: Frequently asked questions
 manager: jarrettr
 ms.prod: hololens

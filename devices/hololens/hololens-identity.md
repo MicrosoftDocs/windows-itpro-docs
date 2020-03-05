@@ -5,8 +5,11 @@ keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credential
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
-ms.date: 1/6/2019
+ms.date: 1/6/2020
 ms.prod: hololens
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.topic: article
 ms.sitesec: library
 ms.topic: article

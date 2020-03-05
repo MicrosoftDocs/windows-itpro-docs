@@ -5,6 +5,9 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.topic: article
 audience: ITPro
 ms.prod: hololens

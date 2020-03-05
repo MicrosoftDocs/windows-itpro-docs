@@ -11,6 +11,9 @@ author: mattzmsft
 ms.author: mazeller
 ms.topic: article
 ms.localizationpriority: medium
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

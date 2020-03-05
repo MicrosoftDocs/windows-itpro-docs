@@ -4,6 +4,9 @@ description: HoloLens learns what a space looks like over time. Users can facili
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 author: dorreneb
 ms.author: dobrown
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.date: 09/16/2019
 keywords: hololens, Windows Mixed Reality, design, spatial mapping, HoloLens, surface reconstruction, mesh, head tracking, mapping
 ms.prod: hololens

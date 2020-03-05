@@ -10,6 +10,9 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/14/2019
 audience: ITPro
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

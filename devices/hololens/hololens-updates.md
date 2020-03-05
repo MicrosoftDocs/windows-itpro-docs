@@ -11,6 +11,9 @@ ms.localizationpriority: high
 ms.date: 11/7/2019
 ms.reviewer: jarrettr
 manager: jarrettr
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
