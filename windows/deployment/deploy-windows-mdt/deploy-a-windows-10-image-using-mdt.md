@@ -94,7 +94,7 @@ The steps for creating the deployment share for production are the same as when 
 
 ### Configure permissions for the production deployment share
 
-To read files in the deployment share, you need to assign NTSF and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTProduction** folder
+To read files in the deployment share, you need to assign NTFS and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTProduction** folder
 
 On **MDT01**:
 
@@ -726,6 +726,9 @@ On **MDT01**:
 ### Create a bootable USB stick
 
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
+
+>[!TIP] 
+>In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. To resolve this issue, you must split the .wim file. This can be done using DISM: Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. Windows Setup automatically installs from this file, so long as you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
 
 Follow these steps to create a bootable USB stick from the offline media content:
 
