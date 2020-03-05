@@ -37,11 +37,11 @@ Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defende
 
 ## Configure the Linux software repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast*, *insider-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* and *insider-slow* can try out new features before devices in *prod*.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insider-fast* or *insider-slow*.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
 ### RHEL and variants (CentOS and Oracle EL)
 
@@ -56,7 +56,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -94,7 +94,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
@@ -132,7 +132,7 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
