@@ -54,6 +54,7 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 ## Setup the evaluation lab
 
+
 1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**, then select **Setup lab**.
 
     ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
@@ -63,17 +64,16 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
     ![Image of lab configuration options](images/lab-creation-page.png) 
 
 
-3. (Optional) Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them on the machines you add.  
+3. (Optional) You can choose to install threat simulators in the lab. 
 
-    >[!NOTE]
-    >PLACEHOLDER ... By agreeing to install the selected simulator, you agree that the details you provided ....INSERT APPROVED LEGAL STATEMENT HERE FROM CELA!!!! 
+    >[!IMPORTANT]
+    >You'll first need to accept and provide consent to the terms and information sharing statements. 
 
-    ADD IMAGE HERE OF THE THREAT SIMULATOR SELECTION PAGE!!!
+4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them on the machines you add.  
 
-4.  Review the summary and select **Setup Lab**.  
+5.  Review the summary and select **Setup Lab**.  
 
 After the lab setup process is complete, you can add machines and run simulations. 
-
 
 
 ## Add machines
