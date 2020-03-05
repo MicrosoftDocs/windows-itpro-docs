@@ -16,8 +16,8 @@ ms.topic: article
 
 # Perspectives
 
->[!IMPORTANT]
->On March 31, 2020, the Perspectives feature of Update Compliance will be removed in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
+> [!IMPORTANT]
+> On March 31, 2020, the Perspectives feature of Update Compliance will be removed in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
 
 
 ![Perspectives data view](images/uc-perspectiveupdatedeploymentstatus.png)
@@ -66,5 +66,5 @@ The final blade is the **Detailed Deployment Status** blade. This blade breaks d
 | Reboot Initiated | The scheduled reboot has been initiated. |
 | Update Completed/Commit |    The update has successfully installed. |
 
->[!NOTE]
->Interacting with any rows in the perspective view will automatically apply the given value to the query and execute it with the new parameter, narrowing the perspective to devices that satisfy that criteria. For example, clicking "Not configured (-1)" devices in Deferral Configurations will filter the query to only contain devices that do not have a deferral configuration. These filters can also be applied to queries via the filter sidebar.
+> [!NOTE]
+> Interacting with any rows in the perspective view will automatically apply the given value to the query and execute it with the new parameter, narrowing the perspective to devices that satisfy that criteria. For example, clicking "Not configured (-1)" devices in Deferral Configurations will filter the query to only contain devices that do not have a deferral configuration. These filters can also be applied to queries via the filter sidebar.
