@@ -63,7 +63,7 @@ Key trust deployments do not need client issued certificates for on-premises aut
 The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party enterprise certification authority. The detailed requirements for the Domain Controller certificate are shown below.
 
 * The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL.
-* Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name).
+* The certificate Subject section should contain the directory path of the server object (the distinguished name).
 * The certificate Key Usage section must contain Digital Signature and Key Encipherment.
 * Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].
 * The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2), Server Authentication (1.3.6.1.5.5.7.3.1), and KDC Authentication (1.3.6.1.5.2.3.5).
