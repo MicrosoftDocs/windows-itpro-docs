@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer: ksarens 
 manager: dansimp
 ---
 
@@ -22,17 +22,12 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can perform various Windows Defender Antivirus functions with the dedicated command-line tool *mpcmdrun.exe*.
-
-This utility can be useful when you want to automate Windows Defender Antivirus use.
-
-You can find the utility in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_. You must run it from a command prompt.
+You can perform various Windows Defender Antivirus functions with the dedicated command-line tool *mpcmdrun.exe*. This utility is useful when you want to automate Windows Defender Antivirus use. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
 
 > [!NOTE]
 > You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 >
-> If you're running an updated Windows Defender Platform version, please run MpCmdRun from the location below:
-> **C:\ProgramData\Microsoft\Windows Defender\Platform\<version>**
+> If you're running an updated Windows Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 The utility has the following commands:
 
