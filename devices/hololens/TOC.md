@@ -20,11 +20,11 @@
 ## [Commercial features](hololens-commercial-features.md)
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## [Determine what licenses you need](hololens-licenses-requirements.md)
-## [Configure Your network for HoloLens](hololens-commercial-infrastructure.md)
+## [Configure your network for HoloLens](hololens-commercial-infrastructure.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
-## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
+## [Use a provisioning package to configure HoloLens](hololens-provisioning.md)
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-## [Set up ring-based updates for HoloLens](hololens-updates.md)
+## [Manage HoloLens updates](hololens-updates.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
 # Navigating Windows Holographic
@@ -34,14 +34,14 @@
 ## [Create, share, and view photos and video](holographic-photos-and-videos.md)
 
 # User management and access management
-## [Manage user identity and sign-in on HoloLens](hololens-identity.md)
+## [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk for a single application](hololens-kiosk.md)
+## [Set up HoloLens as a kiosk for specific applications](hololens-kiosk.md)
 
 # Holographic applications
 ## [Use 3D Viewer on HoloLens](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
-## [Install and uninstall custom applications](holographic-custom-apps.md)
+## [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
 # Accessories and connectivity
 ## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
@@ -55,7 +55,7 @@
 ## [Map physical spaces with HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
-## [Manage HoloLens updates](hololens-update-hololens.md)
+## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover HoloLens](hololens-recovery.md)
 ## [Troubleshoot HoloLens issues](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
@@ -64,7 +64,7 @@
 ## [Status of the HoloLens services](hololens-status.md)
 ## [SCEP Whitepaper](scep-whitepaper.md)
 
-# [Release Notes](hololens-release-notes.md)
+# [HoloLens release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
-# [Join the Windows Insider program](hololens-insider.md)
+# [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)

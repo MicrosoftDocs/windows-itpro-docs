@@ -1,6 +1,6 @@
 ---
 title: Manage custom apps for HoloLens
-description: Side load custom apps on HoloLens.  Learn more about installing, and uninstalling holographic apps.
+description: Side load custom apps on HoloLens. Learn more about installing, and uninstalling holographic apps.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 07/01/2019
 manager: v-miegge
@@ -16,7 +16,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Install and manage custom applications (non-store)
+# Manage custom apps for HoloLens
 
 HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens. This article focuses on custom holographic applications.  
 

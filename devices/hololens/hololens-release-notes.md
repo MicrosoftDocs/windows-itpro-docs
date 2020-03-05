@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft HoloLens
+title: HoloLens release notes
 description: Learn about updates in each new HoloLens release.
 author: scooley
 ms.author: scooley
@@ -16,7 +16,7 @@ appliesto:
 
 ---
 
-# HoloLens Release Notes
+# HoloLens release notes
 
 ## HoloLens 2
 
@@ -57,12 +57,12 @@ appliesto:
 | Feature | Details |
 |---|---|
 | **Quick actions menu** | When you're in an app, the Bloom gesture will now open a Quick actions menu to give you quick access to commonly used system features without having to leave the app. <br> See [Set up HoloLens in kiosk mode](hololens-kiosk.md) for information about the Quick actions menu in kiosk mode.<br><br>![sample of the Quick actions menu](images/minimenu.png) |
-| **Stop video capture from the Start or quick actions menu** | If you start video capture from the Start menu or quick actions menu, you’ll be able to stop recording from the same place. (Don’t forget, you can always do this with voice commands too.) |
+| **Stop video capture from the Start or quick actions menu** | If you start video capture from the Start menu or quick actions menu, you'll be able to stop recording from the same place. (Don't forget, you can always do this with voice commands too.) |
 | **Project to a Miracast-enabled device** | Project your HoloLens content to a nearby Surface device or TV/Monitor if using Microsoft Display adapter.  On **Start**, select **Connect**, and then select the device you want to project to. **Note:** You can deploy HoloLens to use Miracast projection without enabling developer mode. |
-| **New notifications** | View and respond to notification toasts on HoloLens, just like you do on a PC. Gaze to respond to or dismiss them (or if you’re in an immersive experience, use the bloom gesture). |
-| **HoloLens overlays**<br>(file picker, keyboard, dialogs, etc.) | You’ll now see overlays such as the keyboard, dialogs, file picker, etc. when using immersive apps. |
-| **Visual feedback overlay UI for volume change** | When you use the volume up/down buttons on your HoloLens you’ll see a visual display of the volume level. |
-| **New UI for device boot** | A loading indicator was added during the boot process to provide visual feedback that the system is loading. Reboot your device to see the new loading indicator—it’s between the "Hello" message and the Windows boot logo. |
+| **New notifications** | View and respond to notification toasts on HoloLens, just like you do on a PC. Gaze to respond to or dismiss them (or if you're in an immersive experience, use the bloom gesture). |
+| **HoloLens overlays**<br>(file picker, keyboard, dialogs, etc.) | You'll now see overlays such as the keyboard, dialogs, file picker, etc. when using immersive apps. |
+| **Visual feedback overlay UI for volume change** | When you use the volume up/down buttons on your HoloLens you'll see a visual display of the volume level. |
+| **New UI for device boot** | A loading indicator was added during the boot process to provide visual feedback that the system is loading. Reboot your device to see the new loading indicator—it's between the "Hello" message and the Windows boot logo. |
 | **Nearby sharing** | Addition of the Windows Nearby Sharing experience, allowing you to share a capture with a nearby Windows device. When you capture a photo or video on HoloLens (or use the share button from an app such as Microsoft Edge), select a nearby Windows device to share with. |
 | **Share from Microsoft Edge** | Share button is now available on Microsoft Edge windows on HoloLens. In Microsoft Edge, select **Share**. Use the HoloLens share picker to share web content. |
 

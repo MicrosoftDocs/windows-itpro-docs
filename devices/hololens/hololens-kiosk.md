@@ -1,5 +1,5 @@
 ---
-title: Set up HoloLens in kiosk mode (HoloLens)
+title: Set up HoloLens as a kiosk for specific applications
 description: Use a kiosk configuration to lock down the apps on HoloLens. 
 ms.prod: hololens
 ms.sitesec: library
@@ -10,13 +10,16 @@ ms.localizationpriority: medium
 ms.date: 11/13/2018
 ms.reviewer: 
 manager: dansimp
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
-# Set up HoloLens in kiosk mode
+# Set up HoloLens as a kiosk for specific applications
 
 In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#add-guest-access-to-the-kiosk-configuration-optional)
 
-When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
+When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) (including [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage) on HoloLens (1st Gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
 
