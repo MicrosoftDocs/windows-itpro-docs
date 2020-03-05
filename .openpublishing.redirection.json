@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "devices/hololens/hololens-whats-new.md",
+"redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
 "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
 "redirect_document_id": true
