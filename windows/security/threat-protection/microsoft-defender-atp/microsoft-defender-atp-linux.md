@@ -27,7 +27,7 @@ ms.topic: conceptual
 > 
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 > 
-> If you have preview features turned on in the Microsoft Defender Security Center, you should be able to access the Linux onboarding page immediately. If you have not yet opted into previews, we encourage you to [turn on preview features](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/preview) in the Microsoft Defender Security Center today. 
+> If you have preview features turned on in the Microsoft Defender Security Center, you should be able to access the Linux onboarding page immediately. If you have not yet opted into previews, we encourage you to [turn on preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview) in the Microsoft Defender Security Center today.
 
 This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
