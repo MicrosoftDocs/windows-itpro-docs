@@ -22,7 +22,7 @@ ms.topic: article
 -   Windows 10
 
 This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
-MDT is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+MDT is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 ## Why integrate MDT with Configuration Manager
 
@@ -64,7 +64,7 @@ The task sequence uses instructions that allow you to reduce the number of task 
 
 ![figure 2](../images/fig2-gather.png)
 
-Figure 2. The Gather action in the task sequence is reading the rules.
+The Gather action in the task sequence is reading the rules.
 
 ### MDT adds an operating system deployment simulation environment
 
@@ -72,7 +72,7 @@ When testing a deployment, it is important to be able to quickly test any change
 
 ![figure 3](../images/mdt-06-fig03.png)
 
-Figure 3. The folder that contains the rules, a few scripts from MDT, and a custom script (Gather.ps1).
+The folder that contains the rules, a few scripts from MDT, and a custom script (Gather.ps1).
 
 ### MDT adds real-time monitoring
 
@@ -80,7 +80,7 @@ With MDT integration, you can follow your deployments in real time, and if you h
 
 ![figure 4](../images/mdt-06-fig04.png)
 
-Figure 4. View the real-time monitoring data with PowerShell.
+View the real-time monitoring data with PowerShell.
 
 ### MDT adds an optional deployment wizard
 
@@ -88,11 +88,11 @@ For some deployment scenarios, you may need to prompt the user for information d
 
 ![figure 5](../images/mdt-06-fig05.png)
 
-Figure 5. The optional UDI wizard open in the UDI Wizard Designer.
+The optional UDI wizard open in the UDI Wizard Designer.
 
 MDT Zero Touch simply extends Configuration Manager with many useful built-in operating system deployment components. By providing well-established, supported solutions, MDT reduces the complexity of deployment in Configuration Manager.
 
-## <a href="" id="sec02"></a>Why use MDT Lite Touch to create reference images
+## Why use MDT Lite Touch to create reference images
 
 You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:
 -   In a deployment project, it is typically much faster to create a reference image using MDT Lite Touch than Configuration Manager.
@@ -104,21 +104,12 @@ You can create reference images for Configuration Manager in Configuration Manag
 
 ## Related topics
 
-[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
-
-[Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
-
-[Add a Windows 10 operating system image using Configuration Manager](../deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md)
-
-[Create an application to deploy with Windows 10 using Configuration Manager](../deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
-
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](../deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
-
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)
-
-[Deploy Windows 10 using PXE and Configuration Manager](../deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md)
-
-
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-
+[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
+[Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
+[Add a Windows 10 operating system image using Configuration Manager](../deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
+[Create an application to deploy with Windows 10 using Configuration Manager](../deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](../deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
+[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Deploy Windows 10 using PXE and Configuration Manager](../deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md) 

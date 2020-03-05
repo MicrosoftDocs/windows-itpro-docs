@@ -1,5 +1,5 @@
 # Deploy Windows 10 with Microsoft Endpoint Configuration Manager
-## Get started with Configuration Manager(get-started-with-configuration-manager.md)
+## [Get started with Configuration Manager](get-started-with-configuration-manager.md)
 
 ## Deploy Windows 10 with Configuration Manager
 ### [Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
