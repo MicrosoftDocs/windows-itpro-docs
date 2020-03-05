@@ -5,9 +5,9 @@ keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
 ms.assetid: b86f603c-d25f-409b-b055-4bbc6edcd301
-author: v-miegge
-ms.author: v-miegge
-manager: v-miegge
+author: Teresa-Motiv
+ms.author: v-tea
+manager: jarrettr
 ms.topic: article
 ms.prod: hololens
 ms.sitesec: library
@@ -17,9 +17,9 @@ appliesto:
 - HoloLens 2
 ---
 
-# Manage connection endpoints for HoloLens 
+# Manage connection endpoints for HoloLens
 
-Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be whitelisted in your network configuratiion (e.g. proxy or firewall) for those components to be functional.    
+Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be whitelisted in your network configuration (e.g. proxy or firewall) for those components to be functional.    
 
 ## Near-offline setup
 

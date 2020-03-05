@@ -30,8 +30,8 @@
 # Navigating Windows Holographic
 ## [Start menu and mixed reality home](holographic-home.md)
 ## [Use your voice with HoloLens](hololens-cortana.md)
-## [Find and save files](holographic-data.md)
-## [Create, share, and view photos and video](holographic-photos-and-videos.md)
+## [Find, open, and save files](holographic-data.md)
+## [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 
 # User management and access management
 ## [Manage user identity and sign-in for HoloLens](hololens-identity.md)
@@ -47,7 +47,7 @@
 ## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
 ## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 ## [Connect to a network](hololens-network.md)
-## [Use HoloLens offline](hololens-offline.md)
+## [Manage connection endpoints for HoloLens](hololens-offline.md)
 
 # Hologram optics and placement in space
 ## [Improve visual quality and comfort](hololens-calibration.md)
@@ -58,11 +58,11 @@
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover HoloLens](hololens-recovery.md)
 ## [Troubleshoot HoloLens issues](hololens-troubleshooting.md)
-## [Known issues](hololens-known-issues.md)
+## [Known issues for HoloLens](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
 ## [Status of the HoloLens services](hololens-status.md)
-## [SCEP Whitepaper](scep-whitepaper.md)
+## [SCEP whitepaper](scep-whitepaper.md)
 
 # [HoloLens release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
