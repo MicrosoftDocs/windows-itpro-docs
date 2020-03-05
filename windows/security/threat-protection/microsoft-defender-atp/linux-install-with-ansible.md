@@ -42,7 +42,7 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
   - Curl
   - Unzip
 
-- All host must be listed in the following format in the `/etc/ansible/hosts` file:
+- All hosts must be listed in the following format in the `/etc/ansible/hosts` file:
     
     ```bash
     [servers]
