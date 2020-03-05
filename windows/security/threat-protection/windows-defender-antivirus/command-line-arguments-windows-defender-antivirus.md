@@ -46,7 +46,7 @@ MpCmdRun.exe -scan -2
 | `-Trace [-Grouping #] [-Level #]` | Starts diagnostic tracing |
 | `-GetFiles` | Collects support information |
 | `-GetFilesDiagTrack`  | Same as `-GetFiles`, but outputs to temporary DiagTrack folder |
-| `-RemoveDefinitions [-All]` | Restores the installed Security intelligence  to a previous backup copy or to the original default set |
+| `-RemoveDefinitions [-All]` | Restores the installed Security intelligence to a previous backup copy or to the original default set |
 | `-RemoveDefinitions [-DynamicSignatures]` | Removes only the dynamically downloaded Security intelligence |
 | `-RemoveDefinitions [-Engine]` | Restores the previous installed engine |
 | `-SignatureUpdate [-UNC \| -MMPC]` | Checks for new Security intelligence updates |
