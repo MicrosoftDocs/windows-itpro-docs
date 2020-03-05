@@ -158,6 +158,7 @@ In order to deploy Windows 10 with MDT successfully, you need drivers for the b
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
 -   Microsoft Surface Pro
+
 For boot images, you need to have storage and network drivers; for the operating system, you need to have the full suite of drivers.
 
 >[!NOTE]
