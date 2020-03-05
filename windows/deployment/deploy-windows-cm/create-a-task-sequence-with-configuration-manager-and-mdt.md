@@ -124,11 +124,11 @@ While creating the task sequence with the MDT wizard, a few operating system dep
 
 
 [Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)<br>
-[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
-[Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
-[Add a Windows 10 operating system image using Configuration Manager](../deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
-[Create an application to deploy with Windows 10 using Configuration Manager](../deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](../deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Deploy Windows 10 using PXE and Configuration Manager](../deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
-[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
+[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
+[Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
+[Add a Windows 10 operating system image using Configuration Manager](../deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
+[Create an application to deploy with Windows 10 using Configuration Manager](../deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](../deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
+[Deploy Windows 10 using PXE and Configuration Manager](../deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
+[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](../deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
