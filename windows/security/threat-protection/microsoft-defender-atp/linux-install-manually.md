@@ -241,6 +241,9 @@ Download the onboarding package from Microsoft Defender Security Center:
     1
     ```
 
+> [!IMPORTANT]
+> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
+
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
