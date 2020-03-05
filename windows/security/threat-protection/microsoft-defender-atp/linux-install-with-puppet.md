@@ -167,6 +167,9 @@ $ mdatp --health healthy
 
 The above command prints `1` if the product is onboarded and functioning as expected.
 
+> [!IMPORTANT]
+> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
+
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
 
 - 1 if the device is not yet onboarded.

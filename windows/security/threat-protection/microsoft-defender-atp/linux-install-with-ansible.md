@@ -233,6 +233,9 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
     $ ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
+> [!IMPORTANT]
+> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
+
 - Validation/configuration:
 
     ```bash
