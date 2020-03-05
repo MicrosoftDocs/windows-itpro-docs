@@ -32,7 +32,7 @@ This topic describes the correct way to add Microsoft Store for Business applica
 
 * Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](/store-for-business/distribute-offline-apps#download-an-offline-licensed-app).
 deploy-windows-cm
-* A Windows Image. For instructions on image creation, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) or [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+* A Windows Image. For instructions on image creation, see [Deploy Windows 10 with Configuration Manager](deploy-windows-cm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) or [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 >[!NOTE]
 > If you'd like to add an internal LOB Microsoft Store application, please follow the instructions on **[Sideload LOB apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)**.
@@ -79,7 +79,7 @@ Now, on the machine where your image file is accessible:
 * [Export-StartLayout](https://technet.microsoft.com/itpro/powershell/windows/startlayout/export-startlayout)
 * [Import-StartLayout](https://technet.microsoft.com/itpro/powershell/windows/startlayout/import-startlayout)
 * [Sideload LOB apps in Windows 10](/windows/application-management/siddeploy-windows-cmws-10)
-* [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
+* [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-cm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 * [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md)
 
