@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens
-description: Landing page Microsoft HoloLens.
+description: Landing page for Microsoft HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.date: 10/14/2019
 audience: ITPro
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 - HoloLens 2
 
 ---

@@ -1,8 +1,8 @@
 ---
-title: HoloLens status
+title: Status of the HoloLens services
 description: Shows the status of HoloLens online services. 
-author: todmccoy
-ms.author: v-todmc
+author: Teresa-Motiv
+ms.author: v-tea
 ms.reviewer: luoreill
 manager: jarrettr
 audience: Admin
@@ -12,7 +12,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ---
 
-# HoloLens status
+# Status of the HoloLens services
 
 ✔️ **All services are active**
 

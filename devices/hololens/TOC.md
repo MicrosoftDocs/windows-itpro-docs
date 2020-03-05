@@ -1,6 +1,6 @@
-# [HoloLens overview](index.md)
+# [Microsoft HoloLens](index.md)
 
-# Get Started with HoloLens 2
+# Get started with HoloLens 2
 ## [HoloLens 2 hardware](hololens2-hardware.md)
 ## [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
@@ -16,15 +16,15 @@
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
-# Deploying HoloLens and Mixed Reality Apps in Commercial Environments
-## [Deployment planning](hololens-requirements.md)
-## [Commercial feature overview](hololens-commercial-features.md)
-## [Lincense Requriements](hololens-licenses-requirements.md)
-## [Commercial Infrastructure Guidance](hololens-commercial-infrastructure.md)
+# Deploy HoloLens and mixed-reality apps in commercial environments
+## [Commercial features](hololens-commercial-features.md)
+## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
+## [Determine what licenses you need](hololens-licenses-requirements.md)
+## [Configure Your network for HoloLens](hololens-commercial-infrastructure.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-## [Set up ring based updates for HoloLens](hololens-updates.md)
+## [Set up ring-based updates for HoloLens](hololens-updates.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
 # Navigating Windows Holographic
@@ -34,13 +34,12 @@
 ## [Create, share, and view photos and video](holographic-photos-and-videos.md)
 
 # User management and access management
-## [Accounts on HoloLens](hololens-identity.md)
+## [Manage user identity and sign-in on HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
-## [Set up limited application access](hololens-kiosk.md)
+## [Set up HoloLens as a kiosk for a single application](hololens-kiosk.md)
 
-# Holographic Applications
-## [Try 3D Viewer](holographic-3d-viewer-beta.md)
+# Holographic applications
+## [Use 3D Viewer on HoloLens](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Install and uninstall custom applications](holographic-custom-apps.md)
 
@@ -51,18 +50,18 @@
 ## [Use HoloLens offline](hololens-offline.md)
 
 # Hologram optics and placement in space
-## [Tips for viewing clear Holograms](hololens-calibration.md)
+## [Improve visual quality and comfort](hololens-calibration.md)
 ## [Environment considerations for HoloLens](hololens-environment-considerations.md)
-## [Spatial mapping on HoloLens](hololens-spaces.md)
+## [Map physical spaces with HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
-## [Update HoloLens](hololens-update-hololens.md)
-## [Restart, reset, or recover](hololens-recovery.md)
-## [Troubleshoot HoloLens](hololens-troubleshooting.md)
+## [Manage HoloLens updates](hololens-update-hololens.md)
+## [Restart, reset, or recover HoloLens](hololens-recovery.md)
+## [Troubleshoot HoloLens issues](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
-## [Hololens services status](hololens-status.md)
+## [Status of the HoloLens services](hololens-status.md)
 ## [SCEP Whitepaper](scep-whitepaper.md)
 
 # [Release Notes](hololens-release-notes.md)
