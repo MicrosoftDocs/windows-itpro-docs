@@ -102,22 +102,22 @@
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
-#### Deploy Windows 10 with Microsoft Endpoint Configuration Manager
-##### [Get started with Configuration Manager](deploy-windows-cm/get-started-with-configuration-manager.md)
-##### Deploy Windows 10 with Configuration Manager
-###### [Integrate Configuration Manager with MDT](deploy-windows-cm/integrate-configuration-manager-with-mdt.md)
-###### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
-###### [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
-###### [Add a Windows 10 operating system image using Configuration Manager](deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager.md)
-###### [Create an application to deploy with Windows 10 using Configuration Manager](deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
-###### [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
-###### [Create a task sequence with Configuration Manager and MDT](deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt.md)
-###### [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
-###### [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
-###### [Monitor the Windows 10 deployment with Configuration Manager](deploy-windows-cm/monitor-windows-10-deployment-with-configuration-manager.md)
-###### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-###### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-###### [Perform an in-place upgrade to Windows 10 using Configuration Manager](deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
+### Deploy Windows 10 with Microsoft Endpoint Configuration Manager
+#### [Get started with Configuration Manager](deploy-windows-cm/get-started-with-configuration-manager.md)
+#### Deploy Windows 10 with Configuration Manager
+##### [Integrate Configuration Manager with MDT](deploy-windows-cm/integrate-configuration-manager-with-mdt.md)
+##### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+##### [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
+##### [Add a Windows 10 operating system image using Configuration Manager](deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager.md)
+##### [Create an application to deploy with Windows 10 using Configuration Manager](deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
+##### [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
+##### [Create a task sequence with Configuration Manager and MDT](deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt.md)
+##### [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
+##### [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
+##### [Monitor the Windows 10 deployment with Configuration Manager](deploy-windows-cm/monitor-windows-10-deployment-with-configuration-manager.md)
+##### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
+##### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
+##### [Perform an in-place upgrade to Windows 10 using Configuration Manager](deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
 
 ### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
