@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP for Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -29,15 +29,12 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
-
-
-
-
 ## How to install Microsoft Defender ATP for Linux
 
 ### Prerequisites
 
 - Access to the Microsoft Defender Security Center portal
+- Enrolled for preview features, and Microsoft AutoUpdate set to "Fast Ring".
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -66,7 +63,7 @@ In general you need to take the following steps:
 
 ### System requirements
 
-- Supported Linux server distributions and versions: 
+- Supported Linux server distributions and versions:
 
   - Red Hat Enterprise Linux 7 or higher
   - CentOS 7 or higher
@@ -93,9 +90,10 @@ The following table lists the services and their associated URLs that your netwo
 | United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
 
 > [!NOTE]
-> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server) 
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
+
 - Transparent proxy
 - Manual static proxy configuration
 
@@ -108,17 +106,18 @@ To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/ap
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 The output from this command should be similar to the following:
 
-> `OK https://x.cp.wd.microsoft.com/api/report`  
+> `OK https://x.cp.wd.microsoft.com/api/report`
 > `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
+
 ```bash
-$ mdatp --connectivity-test
+mdatp --connectivity-test
 ```
 
 ## How to update Microsoft Defender ATP for Linux
