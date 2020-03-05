@@ -31,7 +31,7 @@ You can find the utility in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_. You 
 > [!NOTE]
 > You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 >
-> If you're running with an updated Windows Defender Platform version, please run MpCmdRun from below location:
+> If you're running an updated Windows Defender Platform version, please run MpCmdRun from the location below:
 > **C:\ProgramData\Microsoft\Windows Defender\Platform\<version>**
 
 The utility has the following commands:
