@@ -65,7 +65,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
    - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
 
-![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
+     ![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
 
  - **If the restart is still pending after the deadline passes:**
  
@@ -122,9 +122,11 @@ Once the device is in the pending restart state, it will attempt to restart the 
 #### Notification experience for deadline
 
 Notification users get for a quality update deadline:
+
 ![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
 
 Notification users get for a feature update deadline:
+
 ![The notification users get for an impending feature update deadline](images/wufb-feature-notification.png)
 
 ### Deadline with user engagement 
