@@ -78,11 +78,11 @@ install_mdatp
 
 ### Contents of `install_mdatp/manifests/init.pp`
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast*, *insider-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* and *insider-slow* can try out new features before devices in *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insider-fast* or *insider-slow*.
 
 Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
