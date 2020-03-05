@@ -36,9 +36,10 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 - Ansible needs to be installed on at least on one computer (we will call it the master).
-- SSH must be configured for an manager account between the master and all clients.
+- SSH must be configured for an administrator account between the master and all clients, and it is recommended be configured with public key authentication.
 - The following software must be installed on all clients:
   - curl
+  - python-apt
   - unzip
 
 - All host must be listed in the following format in the `/etc/ansible/hosts` file:
@@ -78,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. Create the following files under the `/etc/ansible/roles` directory.
+Create subtask or role files that contribute to an actual task. First create the `copy_onboarding_pkg.yml` file under the `/etc/ansible/roles` directory:
 
 - Copy the onboarding package to all client machines:
 
@@ -98,18 +99,19 @@ Create subtask or role files that contribute to an actual task. Create the follo
       when: ansible_os_family == "Debian"
     ```
 
-- Create a `setup.sh` script that operates on the onboarding file:
+- Create the `setup.sh` script that operates on the onboarding file, in this example located in the `/root` directory:
 
     ```bash
     #!/bin/bash
-
+    # We assume WindowsDefenderATPOnboardingPackage.zip is stored in /root
+    cd /root || exit 1
     # Unzip the archive and create the onboarding file
     mkdir -p /etc/opt/microsoft/mdatp/
     unzip WindowsDefenderATPOnboardingPackage.zip
     cp mdatp_onboard.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
     ```
 
-- Create the onboarding file:
+- Create the onboarding task, `onboarding_setup.yml`, under the `/etc/ansible/roles` directory:
 
     ```bash
     - name: Register mdatp_onboard.json
