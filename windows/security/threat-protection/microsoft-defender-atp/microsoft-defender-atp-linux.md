@@ -20,14 +20,14 @@ ms.topic: conceptual
 
 # Microsoft Defender ATP for Linux
 
-This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
-
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
 > 
 > This documentation is for a pre-released solution. The guidelines and the solution are subject to change between now and its general availability.
 > 
 > As with any pre-released solution, remember to exercise caution when determining the target population for your deployments.
+
+This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
 
