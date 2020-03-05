@@ -24,7 +24,7 @@ ms.topic: article
 This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 MDT is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
-## <a href="" id="sec01"></a>Why integrate MDT with Configuration Manager
+## Why integrate MDT with Configuration Manager
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
 
