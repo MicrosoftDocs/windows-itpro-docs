@@ -35,7 +35,7 @@ This topic describes the structure of this profile (including a recommended prof
 
 The configuration profile is a .json file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can be simple, such as a numerical value, or complex, such as a nested list of preferences.
 
-Typically, you would use a configuration management tool to push a file with the name ```mdatp_maanged.json``` at the location ```/etc/opt/microsoft/mdatp/managed/```.
+Typically, you would use a configuration management tool to push a file with the name ```mdatp_managed.json``` at the location ```/etc/opt/microsoft/mdatp/managed/```.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
