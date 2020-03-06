@@ -22,6 +22,11 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you
+
+## Shadow protection
+
+
 ## section 1
 
 body
