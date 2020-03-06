@@ -62,6 +62,7 @@
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
 ## [Status of the HoloLens services](hololens-status.md)
+## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)
 ## [SCEP whitepaper](scep-whitepaper.md)
 
 # [HoloLens release notes](hololens-release-notes.md)
