@@ -29,9 +29,9 @@ The next sections provide an overview of the classifications we use for applicat
 
 ## Unknown – Unrecognized software  
 
-No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program. This can result in a delay in malware detections when a new outbreak occurs.
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program.
 
-You can think of Unknown /Uncommonly downloaded warnings as an early warning system for potentially undetected malware. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
+You can think of Unknown/Uncommonly downloaded warnings as an early warning system for potentially undetected malware, as there is generally a delay from the time new malware is released until it is identified. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
 
 Once enough data is gathered, Microsoft's security solutions can make a determination. Either no threats are found, or an application or software is categorized as malware or potentially unwanted software.
 
