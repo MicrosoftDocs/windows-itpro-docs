@@ -1,7 +1,7 @@
 ---
-title: Behavioral blocking in next-generation protection
-description: Learn about behavioral blocking in next-generation protection
-keywords: Windows Defender Antivirus, behavioral monitoring, behavioral blocking, behavior
+title: Shadow protection in next-generation protection
+description: Learn about shadow protection in next-generation protection
+keywords: Windows Defender Antivirus, shadow protection, passive mode
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -16,7 +16,7 @@ ms.custom: next-gen
 ms.collection: 
 ---
 
-# Behavioral blocking in next-generation protection
+# Shadow protection in next-generation protection
 
 **Applies to:**
 
