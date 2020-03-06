@@ -98,20 +98,20 @@ On **MDT02**:
 
 1. Create and share the **D:\\MDTProduction** folder using default permissions by entering the following at an elevated command prompt:
 
-```cmd
-mkdir d:\MDTProduction
-New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
-```
-
+  ```powershell
+  mkdir d:\MDTProduction
+  New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
+  ```
+  
 2. You should see the following output:
 
-```output
-C:\> New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
-
-Name           ScopeName Path             Description
-----           --------- ----             -----------
-MDTProduction$ *         D:\MDTProduction
-```
+  ```output
+  C:\> New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
+  
+  Name           ScopeName Path             Description
+  ----           --------- ----             -----------
+  MDTProduction$ *         D:\MDTProduction
+  ```
 
 ### Configure the deployment share
 
