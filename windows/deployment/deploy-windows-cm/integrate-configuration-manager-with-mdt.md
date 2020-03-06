@@ -21,15 +21,19 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
-MDT is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
+This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit (MDT) with Microsoft Endpoint Configuration Manager when you deploy a new or updated version of the Windows operating system.
+
+MDT is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with Configuration Manager. It is therefore recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 ## Why integrate MDT with Configuration Manager
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
 
-> [!Note] 
-> Microsoft Deployment Toolkit requires you to install [Windows PowerShell 2.0 Engine](https://docs.microsoft.com/powershell/scripting/install/installing-the-windows-powershell-2.0-engine) on your server.
+>[!NOTE]
+>MDT installation requires the following:
+>-   The Windows ADK for Windows 10 (installed in the previous procedure)
+>-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended; type **$host** to check)
+>-   Microsoft .NET Framework
 
 ### MDT enables dynamic deployment
 
@@ -96,8 +100,8 @@ MDT Zero Touch simply extends Configuration Manager with many useful built-in op
 
 You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:
 -   In a deployment project, it is typically much faster to create a reference image using MDT Lite Touch than Configuration Manager.
--   You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center 2012 R2 Virtual Machine Manager (SCVMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
--   Microsoft System Center 2012 R2 performs deployment in the LocalSystem context. This means that you cannot configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
+-   You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center Virtual Machine Manager (VMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
+-   Configuration Manager performs deployment in the LocalSystem context. This means that you cannot configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
 -   The Configuration Manager task sequence does not suppress user interface interaction.
 -   MDT Lite Touch supports a Suspend action that allows for reboots, which is useful when you need to perform a manual installation or check the reference image before it is automatically captured.
 -   MDT Lite Touch does not require any infrastructure and is easy to delegate.

@@ -15,28 +15,10 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Get started deploying Windows 10 with Configuration Manager
+## Components of Configuration Manager operating system deployment (OSD)
 
 **Applies to**
 -   Windows 10
-
-If you have Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT).
-
->[!NOTE]
->See [Scenarios to deploy enterprise operating systems with Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems) for general guidance on all available options for OS deployment with Configuration Manager. The articles presented here provide step by step guidance for common Windows 10-specific deployment scenarios.
-
-For the purposes of this topic, we will use four computers: DC01, CM01, PC0003, and PC0004. 
-- DC01 is a domain controller for the contoso.com domain running Windows Server 2019.
-- CM01 is a domain member server unning Windows Server 2019. 
-- PC0003 and PC0004 are computers running Windows 7 SP1 to which Windows 10 will be deployed via refresh and replace scenarios, respectively.
-
-All servers and clients are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Prepare for deployment with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md).
-
-![figure 1](../images/mdt-06-fig01.png)
-
-The computers used in this topic.
-
-## Components of Configuration Manager operating system deployment
 
 Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are additional components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which is not used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
 
@@ -50,9 +32,7 @@ Operating system deployment with Configuration Manager is part of the normal sof
 -   **Drivers.** Like MDT Lite Touch, Configuration Manager also provides a repository (catalog) of managed device drivers.
 -   **Task sequences.** The task sequences in Configuration Manager look and feel pretty much like the sequences in MDT Lite Touch, and they are used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT provides additional task sequence templates to Configuration Manager.
 
-    **Note**  Configuration Manager SP1 along with the Windows Assessment and Deployment Kit (ADK) for Windows 10 are required to support management and deployment of Windows 10.
-
-     
+    **Note**  The Windows Assessment and Deployment Kit (ADK) for Windows 10 is also required to support management and deployment of Windows 10.
 
 ## See also
 
@@ -60,6 +40,5 @@ Operating system deployment with Configuration Manager is part of the normal sof
 -   [Windows deployment tools](../windows-deployment-scenarios-and-tools.md)<br>
 -   [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)<br>
 -   [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)<br>
--   [Deploy Windows To Go in your organization](../deploy-windows-to-go.md)<br>
 -   [Sideload Windows Store apps](https://technet.microsoft.com/library/dn613831.aspx)<br>
 -   [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803)
