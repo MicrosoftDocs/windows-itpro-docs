@@ -730,13 +730,24 @@ The following configuration profile contains entries for all settings described 
         </array>
 ```
 
+## Configuration profile validation
+
+The configuration profile must be a valid *.plist* file. This can be checked by executing:
+
+```bash
+$ plutil -lint com.microsoft.wdav.plist
+com.microsoft.wdav.plist: OK
+```
+
+If the configuration profile is well-formed, the above command outputs `OK` and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
+
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management console that your enterprise is using. The following sections provide instructions on how to deploy this profile using JAMF and Intune.
 
 ### JAMF deployment
 
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the .plist produced earlier.
+From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the *.plist* produced earlier.
 
 >[!CAUTION]
 >You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender ATP.
