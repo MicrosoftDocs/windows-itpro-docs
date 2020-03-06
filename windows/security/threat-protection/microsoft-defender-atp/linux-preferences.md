@@ -351,6 +351,16 @@ The following configuration profile contains entries for all settings described 
 }
 ```
 
+## Configuration profile validation
+
+The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
+
+```bash
+$ python -m json.tool mdatp_managed.json
+```
+
+If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
+
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft Defender ATP for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
