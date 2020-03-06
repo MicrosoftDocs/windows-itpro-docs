@@ -58,6 +58,6 @@ After you configure settings to monitor changes to central access policy and cen
 8.  In Server Manager, select **Tools** and then **Event Viewer**.
 9.  Expand **Windows Logs**, and then select **Security**. Verify that event 4819 appears in the security log.
 
-### Related resource
+### Related topics
 
 - [Using advanced security auditing options to monitor dynamic access control objects](using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
