@@ -24,7 +24,7 @@ ms.collection:
 
 ## section 1
 
-body
+Behavioral blocking and containment capabilities in Microsoft Defender ATP use machine learning to identify threats through behavioral patterns. When threats are detected, Windows Defender Antivirus works together with your cloud protection monitors suspicious behaviors and processes and sends them to cloud 
 
 ## section 2
 
