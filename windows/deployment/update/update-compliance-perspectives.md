@@ -40,7 +40,7 @@ The third blade is the **Deployment Status** blade. This defines how many days i
 | In Progress |    Devices that report they are "In Progress" are one of the various stages of installing an update; these stages are reported in the Detailed Deployment Status blade. |
 | Deferred | When a device's Windows Update for Business deferral policy dictates that the update is not yet applicable due to deferral, it will report as such in this blade. |
 | Progress stalled | Devices that report as "Progress stalled" have been stuck at "In progress" for more than 7 days. |
-| Cancelled | The update was cancelled. |
+| Cancelled | The update was canceled. |
 | Blocked | There is a hard block on the update being completed. This could be that another update must be completed before this one, or some other task is blocking the installation of the update. |
 | Unknown | Devices that do not report detailed information on the status of their updates will report Unknown. This is most likely devices that do not use Windows Update for deployment. |
 | Update paused | These devices have Windows Update for Business pause enabled, preventing this update from being installed. |
