@@ -1,7 +1,7 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender ATP
 ms.reviewer: 
-description: Learn how to create and manage custom detections rules based on advanced hunting queries
+description: Learn how to create and manage custom detection rules based on advanced hunting queries
 keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: article
 ---
 
 
-# Create and manage custom detections rules
+# Create and manage custom detection rules
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -34,7 +34,7 @@ Custom detection rules built from [Advanced hunting](advanced-hunting-overview.m
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
 #### Required columns in the query results
-To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don’t use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
+To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
 There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each machine. 
 

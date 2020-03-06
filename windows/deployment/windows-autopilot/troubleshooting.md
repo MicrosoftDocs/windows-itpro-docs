@@ -67,10 +67,10 @@ So, as an example (this is not a device hash, but it's misaligned unpadded Base6
 Now for the padding rules. The padding character is "=". The padding character can only be at the end of the hash, and there can only be a maximum of 2 padding characters. Here's the basic logic.
 
 - Does decoding the hash fail?
- - Yes: Are the last two characters "="?
-  - Yes: Replace both "=" with a single "A" character, then try again
-  - No: Add another "=" character at the end, then try again
- - No: That hash is valid
+  - Yes: Are the last two characters "="?
+     - Yes: Replace both "=" with a single "A" character, then try again
+     - No: Add another "=" character at the end, then try again
+  - No: That hash is valid
 
 Looping the logic above on the previous example hash, we get the following permutations:
 - Q29udG9zbwAAA
@@ -127,6 +127,8 @@ On devices running a [supported version](https://docs.microsoft.com/windows/rele
 ## Troubleshooting Azure AD Join issues
 
 The most common issue joining a device to Azure AD is related to Azure AD permissions.  Ensure [the correct configuration is in place](windows-autopilot-requirements.md) to allow users to join devices to Azure AD.  Errors can also happen if the user has exceeded the number of devices that they are allowed to join, as configured in Azure AD.
+
+An Azure AD device is created upon import - it's important that this object not be deleted. It acts as Autopilot's anchor in AAD for group membership and targeting (including the profile) and can lead to join errors if it's deleted. Once this object has been deleted, to fix the issue, deleting and reimporting this autopilot hash will be necessary so it can recreate the associated object.
 
 Error code 801C0003 will typically be reported on an error page titled "Something went wrong".  This error means that the Azure AD join failed.
 

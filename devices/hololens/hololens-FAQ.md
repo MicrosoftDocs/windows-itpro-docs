@@ -43,7 +43,7 @@ This article addresses the following questions and issues:
 - [HoloLens doesn't respond to my gestures](#hololens-doesnt-respond-to-my-gestures)
 - [HoloLens doesn't respond to my voice](#hololens-doesnt-respond-to-my-voice)
 - [I'm having problems pairing or using a Bluetooth device](#im-having-problems-pairing-or-using-a-bluetooth-device)
-- [HoloLens Settings lists devices as available, but the devices don’t work](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
+- [HoloLens Settings lists devices as available, but the devices don't work](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
 - [I'm having problems using the HoloLens clicker](#im-having-problems-using-the-hololens-clicker)
 - [I can't connect to Wi-Fi](#i-cant-connect-to-wi-fi)
 - [My HoloLens isn't running well, is unresponsive, or won't start](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
@@ -166,9 +166,11 @@ On HoloLens (1st gen), built-in speech recognition is not configurable. It is al
 
 If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.
 
-### Cortana doesn't work
+### Cortana or Dictation doesn't work
 
-If Cortana isn't responding to your voice, make sure Cortana is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. Then do one of the following to verify that Cortana itself is turned on:
+If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on. Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings. 
+
+If Cortana is still not responding, do one of the following to verify that Cortana itself is turned on:
 
 - In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.
 - On HoloLens 2, select the **Speech settings** button or say "Speech settings."
@@ -187,7 +189,7 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 
 [Back to list](#list)
 
-## HoloLens Settings lists devices as available, but the devices don’t work
+## HoloLens Settings lists devices as available, but the devices don't work
 
 HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.
 
@@ -255,7 +257,7 @@ No. You have to use Azure Active Directory (AAD) to manage user accounts for Hol
 
 No.
 
-### Can HoloLens participate in WNA or Integrated Windows Authentication?
+### Can HoloLens participate in Integrated Windows Authentication?
 
 No.
 
