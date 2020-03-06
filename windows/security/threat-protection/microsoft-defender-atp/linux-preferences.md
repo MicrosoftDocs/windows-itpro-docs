@@ -51,7 +51,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Detemines whether real-time protection (scan files as they are accessed) is enabled or not.
+Determines whether real-time protection (scan files as they are accessed) is enabled or not.
 
 |||
 |:---|:---|
@@ -61,7 +61,7 @@ Detemines whether real-time protection (scan files as they are accessed) is enab
 
 #### Enable / disable passive mode
 
-Detemines whether the antivirus engine runs in passive mode or not. In passive mode:
+Determines whether the antivirus engine runs in passive mode or not. In passive mode:
 - Real-time protection is turned off.
 - On-demand scanning is turned on.
 - Automatic threat remediation is turned off.
