@@ -1,6 +1,6 @@
 ---
-title: Why you should use Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection
-description: For best results, use Windows Defender Antivirus together with your other Microsoft offerings.
+title: "Why you should use Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection"
+description: "For best results, use Windows Defender Antivirus together with your other Microsoft offerings."
 keywords: windows defender, antivirus, third party av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
