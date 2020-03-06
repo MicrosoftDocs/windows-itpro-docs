@@ -1,6 +1,6 @@
 # Deploy Windows 10 with Microsoft Endpoint Configuration Manager
 
-## [Prepare for Windows 10 deployment with Configuration Manager]
+## Prepare for Windows 10 deployment with Configuration Manager
 ### [Components of Configuration Manager OSD](configuration-manager-components-osd.md)
 ### [Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 ### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
