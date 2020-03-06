@@ -1,9 +1,11 @@
 # Deploy Windows 10 with Microsoft Endpoint Configuration Manager
-## [Get started with Configuration Manager](get-started-with-configuration-manager.md)
 
-## Deploy Windows 10 with Configuration Manager
+## [Prepare for Windows 10 deployment with Configuration Manager]
+### [Components of Configuration Manager OSD](configuration-manager-components-osd.md)
 ### [Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 ### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+
+## Deploy Windows 10 with Configuration Manager
 ### [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
 ### [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
 ### [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
