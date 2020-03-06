@@ -232,7 +232,7 @@ Example: "C:\Test" will be mapped as "C:\users\WDAGUtilityAccount\Desktop\Test b
 
 **Example 1**
 
-The following config file can be used to easily test downloaded files inside Sandbox. To achieve this, the script disables networking and vGPU and restricts the shared downloads folder to *read-only* access in the container. For convenience, the logon command opens the downloads folder inside the container when it is started.
+The following config file can be used to easily test downloaded files inside Sandbox. To do this, the script disables networking and vGPU and restricts the shared downloads folder to *read-only* access in the container. For convenience, the logon command opens the downloads folder inside the container when it's started.
 
 *Downloads.wsb*
 
@@ -256,17 +256,17 @@ The following config file can be used to easily test downloaded files inside San
 
 The following config file installs Visual Studio Code in the Sandbox, which requires a slightly more complicated LogonCommand setup.
 
-Two folders are mapped into the Sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which will install and run VSCode. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using VSCode.
+Two folders are mapped into the Sandbox. The first folder (SandboxScripts) contains VSCodeInstall.cmd, which will install and run Visual Studio Code. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify by using Visual Studio Code.
 
-With the VSCode installer script already mapped into the Sandbox, the LogonCommand can reference it.
+With the Visual Studio Code installer script already mapped into Sandbox, the LogonCommand can reference it.
 
 *VSCodeInstall.cmd*
 
 ```
-REM Download VSCode
+REM Download Visual Studio Code
 curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
 
-REM Install and run VSCode
+REM Install and run Visual Studio Code
 C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 ```
 
@@ -290,76 +290,80 @@ VSCode.wsb
 </Configuration>
 ```
 
-**Audio Input**
+**AudioInput**
 
-Enables or disables audio input to the Sandbox.
+Enables or disables audio input to Sandbox.
 
 `<AudioInput>value</AudioInput>`
 
 Supported values:
-- *Enable*: Enables audio input in the Sandbox. If this value is set, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
-- *Disable*: Disables audio input in the Sandbox. If this value is set, Windows Sandbox will not be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
-- *Default*: This is the default value for audio input support; currently this means audio input is enabled.
+- *Enable*: Enables audio input in Sandbox. If this value is set, Sandbox will be able to receive audio input from the user. Applications that use a microphone may need this setting.
+- *Disable*: Disables audio input in Sandbox. If this value is set, Sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
+- *Default*: This is the default value for audio input support. Currently this means audio input is enabled.
  
-**Video Input**
+**VideoInput**
 
-Enables or disables video input to the Sandbox.
+Enables or disables video input to Sandbox.
 
 `<VideoInput>value</VideoInput>`
 
 Supported values:
-- *Enable*: Enables video input in the Sandbox. 
-- *Disable*: Disables video input into the Sandbox. Applications using video input may not function properly in the Sandbox.
-- *Default*: This is the default value for video input support; currently this means video input is disabled. Applications using video input may not function properly in the Sandbox.
+- *Enable*: Enables video input in Sandbox. 
+- *Disable*: Disables video input in Sandbox. Applications that use video input may not function properly in Sandbox.
+- *Default*: This is the default value for video input support. Currently this means video input is disabled. Applications that use video input may not function properly in Sandbox.
 
 **ProtectedClient**
 
-Places increased security settings on the Sandbox RDP session. These enhanced security mitigations decrease the attack surface of the Sandbox.
+Implements increased-security settings on the Sandbox RDP session. These settings decrease the attack surface of the Sandbox.
 
 `<ProtectedClient>value</ProtectedClient>`
 
 Supported values:
-- *Enable*: Runs Windows Sandbox in Protected Client mode. If this value is set, Windows Sandbox will be run with extra security mitigations enabled.
-- *Disable*: Runs Windows Sandbox in standard mode without extra security mitigations.
-- *Default*: This is the default value for Protected Client mode; currently this means Windows Sandbox will not run in Protected Client mode.
+- *Enable*: Runs Windows Sandbox in Protected Client mode. If this value is set, Sandbox runs with extra security mitigations enabled.
+- *Disable*: Runs Sandbox in standard mode without extra security mitigations.
+- *Default*: This is the default value for Protected Client mode. Currently, Sandbox doesn't run in Protected Client mode under *Default*.
 
 > [!NOTE]
-> This setting may restrict the user's ability to copy/paste files in and out of the Sandbox.
+> This setting may restrict the user's ability to copy/paste files in and out of Sandbox.
 
-**Printer Redirection**
+**PrinterRedirection**
 
 Enables or disables printer sharing from the host into the Sandbox.
 
 `<PrinterRedirection>value</PrinterRedirection>`
 
 Supported values:
-- *Enable*: Enables sharing of host printers into the Sandbox.
-- *Disable*: Disables printer redirection in the Sandbox. If this value is set, Windows Sandbox will not be able to view printers from the host.
-- *Default*: This is the default value for printer redirection support; currently this means that printer redirection is disabled.
+- *Enable*: Enables sharing of host printers into  Sandbox.
+- *Disable*: Disables printer redirection in  Sandbox. If this value is set, Sandbox can't view printers from the host.
+- *Default*: This is the default value for printer redirection support. Currently printer redirection is disabled under *Default*.
 
-**Clipboard Redirection**
+**ClipboardRedirection**
 
 Enables or disables clipboard sharing with the Sandbox.
 
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
 Supported values:
-- *Disable*: Disables clipboard redirection in the Sandbox. If this value is set, copy/paste in and out of the Sandbox will be restricted. 
-- *Default*: This is the default value for clipboard redirection; currently this means that copy/paste between the host and Sandbox are permitted. 
+- *Disable*: Disables clipboard redirection in Sandbox. If this value is set, copy/paste in and out of Sandbox will be restricted. 
+- *Default*: This is the default value for clipboard redirection. Currently copy/paste between the host and Sandbox are permitted under *Default*.
 
-**Memory in MB**
+**MemoryInMB**
 
-Specifies the amount of memory that may be utilized by the Sandbox in megabytes (MB).
+Specifies the amount of memory that Sandbox can use in megabytes (MB).
 
 `<MemoryInMB>value</MemoryInMB>`
 
 Supported values: An integer greater than 2048 (2GB).
 
-[Insert as comment: FAQ (future)
+<!--
 
-[Insert as comment: Release Notes (future?)
+FAQ (future)
+
+Release Notes (future)
 
 EnableVendorExtensions – Paul added new option for Windows Sandbox to enable/disable vGPU vendor extensions. This is as new as 12/2 
 RailMode – allows a user to run programs in Rail mode rather than full desktop. Internal only at this time.
 
-[Insert as comment: Known Issues (future) ]
+Known issues (future)
+
+-->
