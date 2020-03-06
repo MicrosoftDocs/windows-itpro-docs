@@ -107,8 +107,6 @@ In addition to your domain model, determine whether your organization maintains 
 
 > [!IMPORTANT]
 > Including auditing in your organization's security plan also helps you budget resources to the areas where auditing can achieve the best results.
- 
-For details about how to complete these steps and prepare a detailed threat model, download the [IT Infrastructure threat modeling guide](https://go.microsoft.com/fwlink/p/?LinkId=163432).
 
 ### Data and resources
 
