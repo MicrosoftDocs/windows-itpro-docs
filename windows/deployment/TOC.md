@@ -103,10 +103,7 @@
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
 ### Deploy Windows 10 with Microsoft Endpoint Configuration Manager
-#### Prepare for Windows 10 deployment with Configuration Manager
-##### [Components of Configuration Manager OSD](deploy-windows-cm/configuration-manager-components-osd.md)
-##### [Integrate Configuration Manager with MDT](deploy-windows-cm/integrate-configuration-manager-with-mdt.md)
-##### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+#### [Prepare for Windows 10 deployment with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
 #### Deploy Windows 10 with Configuration Manager
 ##### [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)

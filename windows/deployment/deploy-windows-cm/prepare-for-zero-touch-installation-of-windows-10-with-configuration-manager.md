@@ -20,37 +20,29 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 versions 1507, 1511
+-   Windows 10
 
->[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+This topic will walk you through the process of integrating Microsoft Endpoint Configuration Manager with Microsoft Deployment Toolkit (MDT), as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
 
-This topic will walk you through the process of integrating Microsoft Endpoint Configuration Manager SP1 with Microsoft Deployment Toolkit (MDT) 2013 Update 2, as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
+To review the components of Configuration Manager that are used in operating system deployment (OSD) see [Components of Configuration Manager operating system deployment](#components-of-configuration-manager-operating-system-deployment) in this article.
+
+For information about the benefits of integrating MDT with Configuration Manager, see [Why integrate MDT with Configuration Manager](#why-integrate-mdt-with-configuration-manager) in this article.
 
 ## Prerequisites
-
 
 In this topic, you will use an existing Configuration Manager server structure to prepare for operating system deployment. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 -   Active Directory Schema has been extended and System Management container created.
-
 -   Active Directory Forest Discovery and Active Directory System Discovery have been enabled.
-
 -   IP range boundaries and a boundary group for content and site assignment have been created.
-
 -   The Configuration Manager reporting services point role has been added and configured
-
 -   A file system folder structure for packages has been created.
-
 -   A Configuration Manager console folder structure for packages has been created.
-
 -   Microsoft Endpoint Configuration Manager and any additional Windows 10 prerequisites are installed.
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. DC01 and CM01 are both members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
-## <a href="" id="sec01"></a>Create the Configuration Manager service accounts
-
+## Create the Configuration Manager service accounts
 
 To configure permissions for the various service accounts needed for operating system deployment in Configuration Manager, you use a role-based model. To create the Configuration Manager Join Domain account as well as the Configuration Manager Network Access account, follow these steps:
 
@@ -254,25 +246,112 @@ Configuration Manager has many options for starting a deployment, but starting v
 
     Figure 14. The contents of the E:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
+## Components of Configuration Manager operating system deployment
+
+Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are additional components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which is not used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
+
+-   **State migration point (SMP).** The state migration point is used to store user state migration data during computer replace scenarios.
+-   **Distribution point (DP).** The distribution point is used to store all packages in Configuration Manager, including the operating system deployment-related packages.
+-   **Software update point (SUP).** The software update point, which is normally used to deploy updates to existing machines, also can be used to update an operating system as part of the deployment process. You also can use offline servicing to update the image directly on the Configuration Manager server.
+-   **Reporting services point.** The reporting services point can be used to monitor the operating system deployment process.
+-   **Boot images.** Boot images are the Windows Preinstallation Environment (Windows PE) images Configuration Manager uses to start the deployment.
+-   **Operating system images.** The operating system image package contains only one file, the custom .wim image. This is typically the production deployment image.
+-   **Operating system installers.** The operating system installers were originally added to create reference images using Configuration Manager. Instead, we recommend that you use MDT Lite Touch to create your reference images. For more information on how to create a reference image, see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
+-   **Drivers.** Like MDT Lite Touch, Configuration Manager also provides a repository (catalog) of managed device drivers.
+-   **Task sequences.** The task sequences in Configuration Manager look and feel pretty much like the sequences in MDT Lite Touch, and they are used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT provides additional task sequence templates to Configuration Manager.
+
+    **Note**  The Windows Assessment and Deployment Kit (ADK) for Windows 10 is also required to support management and deployment of Windows 10.
+
+## Why integrate MDT with Configuration Manager
+
+As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
+
+>[!NOTE]
+>MDT installation requires the following:
+>-   The Windows ADK for Windows 10 (installed in the previous procedure)
+>-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended; type **$host** to check)
+>-   Microsoft .NET Framework
+
+### MDT enables dynamic deployment
+
+When MDT is integrated with Configuration Manager, the task sequence takes additional instructions from the MDT rules. In its most simple form, these settings are stored in a text file, the CustomSettings.ini file, but you can store the settings in Microsoft SQL Server databases, or have Microsoft Visual Basic Scripting Edition (VBScripts) or web services provide the settings used.
+
+The task sequence uses instructions that allow you to reduce the number of task sequences in Configuration Manager and instead store settings outside the task sequence. Here are a few examples:
+-   The following settings instruct the task sequence to install the HP Hotkeys package, but only if the hardware is a HP EliteBook 8570w. Note that you don't have to add the package to the task sequence.
+
+    ``` syntax
+    [Settings] 
+    Priority=Model
+    [HP EliteBook 8570w] 
+    Packages001=PS100010:Install HP Hotkeys
+    ```
+-   The following settings instruct the task sequence to put laptops and desktops in different organizational units (OUs) during deployment, assign different computer names, and finally have the task sequence install the Cisco VPN client, but only if the machine is a laptop.
+
+    ``` syntax
+    [Settings]
+    Priority= ByLaptopType, ByDesktopType
+    [ByLaptopType]
+    Subsection=Laptop-%IsLaptop%
+    [ByDesktopType]
+    Subsection=Desktop-%IsDesktop%
+    [Laptop-True]
+    Packages001=PS100012:Install Cisco VPN Client
+    OSDComputerName=LT-%SerialNumber%
+    MachineObjectOU=ou=laptops,ou=Contoso,dc=contoso,dc=com
+    [Desktop-True]
+    OSDComputerName=DT-%SerialNumber%
+    MachineObjectOU=ou=desktops,ou=Contoso,dc=contoso,dc=com
+    ```
+
+![figure 2](../images/fig2-gather.png)
+
+The Gather action in the task sequence is reading the rules.
+
+### MDT adds an operating system deployment simulation environment
+
+When testing a deployment, it is important to be able to quickly test any changes you make to the deployment without needing to run through an entire deployment. MDT rules can be tested very quickly, saving significant testing time in a deployment project. For more information, see [Configure MDT settings](../deploy-windows-mdt/configure-mdt-settings.md).
+
+![figure 3](../images/mdt-06-fig03.png)
+
+The folder that contains the rules, a few scripts from MDT, and a custom script (Gather.ps1).
+
+### MDT adds real-time monitoring
+
+With MDT integration, you can follow your deployments in real time, and if you have access to Microsoft Diagnostics and Recovery Toolkit (DaRT), you can even remote into Windows Preinstallation Environment (Windows PE) during deployment. The real-time monitoring data can be viewed from within the MDT Deployment Workbench, via a web browser, Windows PowerShell, the Event Viewer, or Microsoft Excel 2013. In fact, any script or app that can read an Open Data (OData) feed can read the information.
+
+![figure 4](../images/mdt-06-fig04.png)
+
+View the real-time monitoring data with PowerShell.
+
+### MDT adds an optional deployment wizard
+
+For some deployment scenarios, you may need to prompt the user for information during deployment such as the computer name, the correct organizational unit (OU) for the computer, or which applications should be installed by the task sequence. With MDT integration, you can enable the User-Driven Installation (UDI) wizard to gather the required information, and customize the wizard using the UDI Wizard Designer.
+
+![figure 5](../images/mdt-06-fig05.png)
+
+The optional UDI wizard open in the UDI Wizard Designer.
+
+MDT Zero Touch simply extends Configuration Manager with many useful built-in operating system deployment components. By providing well-established, supported solutions, MDT reduces the complexity of deployment in Configuration Manager.
+
+### Why use MDT Lite Touch to create reference images
+
+You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:
+-   In a deployment project, it is typically much faster to create a reference image using MDT Lite Touch than Configuration Manager.
+-   You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center Virtual Machine Manager (VMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
+-   Configuration Manager performs deployment in the LocalSystem context. This means that you cannot configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
+-   The Configuration Manager task sequence does not suppress user interface interaction.
+-   MDT Lite Touch supports a Suspend action that allows for reboots, which is useful when you need to perform a manual installation or check the reference image before it is automatically captured.
+-   MDT Lite Touch does not require any infrastructure and is easy to delegate.
+
 ## Related topics
 
-
-[Integrate Configuration Manager with MDT](../deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
-
-[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
-
-[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
-
-[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
-
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
-
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)
-
-[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)
-
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-
+[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
+[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
+[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
+[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
  
