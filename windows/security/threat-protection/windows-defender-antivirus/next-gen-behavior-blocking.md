@@ -30,7 +30,8 @@ Behavioral blocking is a post-execution protection, as shown in the following di
 
 ![diagram of pre and post execution protection](images/pre-execution-and-post-execution-detection-engines.png)
 
-See [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks).
+> [!TIP]
+> See the blog post, [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks).
 
 ## Components of behavioral blocking
 
