@@ -60,17 +60,13 @@ When shadow protection is turned on, and something is detected, you'll see it in
 
 ### Will shadow protection have any impact on a user's antivirus protection? 
 
-No, there would not be, the detection usually happens if there is miss by primary AV or if there is detected during post breach. This will work in similar way you have defender AV in passive mode, with additional step blocking and remediation. 
-
-### Can I set this feature using registry/MDM/GP? 
-
-No the feature is only supported through Microsoft Defender Security Center portal https://securitycenter.windows.com 
+No. Shadow protection does not affect antivirus protection on a user's machine. Detection usually happens if the primary antivirus protection misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediation for malicious items detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
-MDATP stack works in integration and to get best protection value, you would want to keep Defender AV UpToDate as well.  
+The Microsoft Defender ATP stack works in integration, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
-Cloud Protection is needed to turn on the feature on the device, in addition it allows MDATP to deliver latest and greatest based on the optics received, behavioral and Machine learning model we run on the backend and so on. 
+Cloud protection is needed to turn on the feature on the device. Cloud protection allows Microsoft Defender ATP to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
 
