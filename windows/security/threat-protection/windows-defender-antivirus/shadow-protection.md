@@ -51,9 +51,9 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 
 ## What happens when something is detected
 
-When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the 
+When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as Blocked or Remediated.
 
-## FAQ 
+## Frequently asked questions 
 
 Will this feature have any impact on the active AV on the device? 
 
