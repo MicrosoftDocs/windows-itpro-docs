@@ -31,7 +31,11 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 
 ## What happens when something is detected?
 
-When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as **Blocked** or **Remediated**.
+When shadow protection is turned on, and something is detected, you'll see it in your [alerts queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue) with informational status. (Informational alerts are those that might not be considered harmful to your organization but might be good to keep track of.)
+
+If the item detected turns out to be malicious, you'll see its detection status as **Blocked** or **Remediated**. You can view these items as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
+
+The following images shows an instance of unwanted software that was detected and blocked through shadow protection:
 
 :::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by shadow protection":::
 
