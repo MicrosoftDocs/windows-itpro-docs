@@ -67,7 +67,7 @@ Many buttons and other elements on HoloLens also respond to your voice—for exa
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that."
+Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that." 
 
 > [!NOTE]
 > To use dictation mode, you have to have an internet connection.
