@@ -1,8 +1,8 @@
 ---
-title: Update Compliance - Perspectives
+title: Update Compliance - Windows Defender AV Status report
 ms.reviewer: 
 manager: laurawi
-description: an overview of Update Compliance Perspectives
+description: an overview of the Windows Defender AV Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -14,57 +14,34 @@ ms.collection: M365-analytics
 ms.topic: article
 ---
 
-# Perspectives
+# Windows Defender AV Status
+
 
 > [!IMPORTANT]
-> On March 31, 2020, the Perspectives feature of Update Compliance will be removed in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
+> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/), which allows finer control over security features and updates.
 
+![The Windows Defender AV Status report](images/UC_workspace_WDAV_status.png)
 
-![Perspectives data view](images/uc-perspectiveupdatedeploymentstatus.png)
-
-Perspectives are elaborations on specific queries hand-crafted by developers which data views that provide deeper insight into your data. Perspectives are loaded whenever clicking into more detailed views from both the Security Update Status section and Feature Update Status section of Update Compliance. 
-
-There is only one perspective framework; it is for **Update Deployment Status**. The same framework is utilized for both feature and quality updates. 
-
-The first blade is the **Build Summary** blade. This blade summarizes the most important aspects of the given build being queried, listing the total number of devices, the total number of update failures for the build, and a breakdown of the different errors encountered. 
-
-The second blade is the **Deferral Configurations** blade, breaking down Windows Update for Business deferral settings (if any). 
-
-## Deployment status
-
-The third blade is the **Deployment Status** blade. This defines how many days it has been since the queried version has been released, and breaks down the various states in the update funnel each device has reported to be in. The possible states are as follows:
-
-| State | Description |
-| --- | --- |
-| Update Completed | When a device has finished the update process and is on the queried update, it will display here as Update completed. |
-| In Progress |    Devices that report they are "In Progress" are one of the various stages of installing an update; these stages are reported in the Detailed Deployment Status blade. |
-| Deferred | When a device's Windows Update for Business deferral policy dictates that the update is not yet applicable due to deferral, it will report as such in this blade. |
-| Progress stalled | Devices that report as "Progress stalled" have been stuck at "In progress" for more than 7 days. |
-| Cancelled | The update was canceled. |
-| Blocked | There is a hard block on the update being completed. This could be that another update must be completed before this one, or some other task is blocking the installation of the update. |
-| Unknown | Devices that do not report detailed information on the status of their updates will report Unknown. This is most likely devices that do not use Windows Update for deployment. |
-| Update paused | These devices have Windows Update for Business pause enabled, preventing this update from being installed. |
-| Failed | A device is unable to install an update. This failure could be linked to a serious error in the update installation process or, in some cases, a [compatibility hold](update-compliance-feature-update-status.md#compatibility-holds).  |
-
-## Detailed deployment status
-
-The final blade is the **Detailed Deployment Status** blade. This blade breaks down the detailed stage of deployment a device is in, beyond the generalized terms defined in Deployment Status. The following are the possible stages a device can report:
-
-| State | Description |
-| --- | --- |
-| Update deferred |    When a device's Windows Update for Business policy dictates the update is deferred. |
-| Update paused | The device's Windows Update for Business policy dictates the update is paused from being offered. |
-| Update offered | The device has been offered the update, but has not begun downloading it. |
-| Pre-Download tasks passed | The device has finished all necessary tasks prior to downloading the update. |
-| Compatibility hold | The device has been placed under a *compatibility hold* to ensure a smooth feature update experience and will not resume the update until the hold has been cleared. For more information see [Feature Update Status report](update-compliance-feature-update-status.md#compatibility-holds) |
-| Download Started | The update has begun downloading on the device. |
-| Download Succeeded | The update has successfully completed downloading. |
-| Pre-Install Tasks Passed | Tasks that must be completed prior to installing the update have been completed. |
-| Install Started |    Installation of the update has begun. |
-| Reboot Required |    The device has finished installing the update, and a reboot is required before the update can be completed.
-| Reboot Pending | The device has a scheduled reboot to apply the update. |
-| Reboot Initiated | The scheduled reboot has been initiated. |
-| Update Completed/Commit |    The update has successfully installed. |
+The Windows Defender AV Status section deals with data concerning signature and threat status for devices that use Windows Defender Antivirus. The section tile in the [Overview Blade](update-compliance-using.md#overview-blade) provides the percentage of devices with insufficient protection – this percentage only considers devices using Windows Defender Antivirus.
 
 > [!NOTE]
-> Interacting with any rows in the perspective view will automatically apply the given value to the query and execute it with the new parameter, narrowing the perspective to devices that satisfy that criteria. For example, clicking "Not configured (-1)" devices in Deferral Configurations will filter the query to only contain devices that do not have a deferral configuration. These filters can also be applied to queries via the filter sidebar.
+> Update Compliance's Windows Defender Antivirus status is compatible with E3, B, F1, VL Professional and below licenses. Devices with an E5 license are not shown here; devices with an E5 license can be monitored using the [Windows Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection). If you'd like to learn more about Windows 10 licensing, see the [Windows 10 product licensing options](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx). 
+
+## Windows Defender AV Status sections
+The **Protection Status** blade gives a count for devices that have either out-of-date signatures or real-time protection turned off. Below, it gives a more detailed breakdown of the two issues. Selecting any of these statuses will navigate you to a Log Search view containing the query. 
+
+The **Threat Status** blade shows, among devices that have encountered threats, how many were and were not remediated successfully. It also provides a detailed count. Selecting either of these will take you to the respective query in Log Search for further investigation. 
+
+Here are some important terms to consider when using the Windows Defender AV Status section of Update Compliance:
+* **Signature out of date** devices are devices with a signature older than 14 days.
+* **No real-time protection** devices are devices that are using Windows Defender AV but have turned off real-time protection.
+* **Recently disappeared** devices are devices that were previously seen by Windows Defender AV and are no longer seen in the past 7 days.
+* **Remediation failed** devices are devices where Windows Defender AV failed to remediate the threat. This could be due to a number of reasons, including a full disk, network error, operation aborted, etc. Manual intervention might be needed from IT team.
+* **Not assessed** devices are devices where either a non-Microsoft AV solution is used or it has been more than 7 days since the device recently disappeared.
+
+## Windows Defender data latency
+Because of the way Windows Defender is associated with the rest of Windows device data, Defender data for new devices might take much longer to appear than other data types. This process could take up to 28 days. 
+
+## Related topics
+
+- [Windows Defender Antivirus pre-requisites](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting#confirm-pre-requisites)
