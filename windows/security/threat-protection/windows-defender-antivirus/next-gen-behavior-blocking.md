@@ -33,6 +33,8 @@ Windows Defender Antivirus on your machine works together with Microsoft Defende
 
 ![diagram of pre and post execution protection](images/pre-execution-and-post-execution-detection-engines.png)
 
+## Components of behavioral blocking
+
 Behavioral blocking consists of the following components:
 
 - Behavior-based machine learning
@@ -41,10 +43,9 @@ Behavioral blocking consists of the following components:
 - Client-side behavioral blocking
 - Containment during automated investigation and remediation
 
-  
-
-## section 2
-
-body
 
 ## Next steps
+
+- [Deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
+
+- [Learn more about shadow protection](shadow-protection.md)
