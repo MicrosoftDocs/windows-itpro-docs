@@ -17,7 +17,7 @@ ms.reviewer:
 
 ### Overview
 
-Windows Sandbox provides a lightweight desktop environment for to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains in the "sandboxed" environment and can't affect the host machine. A sandbox is temporary. When it's closed, all the software, files, and state are permanently deleted. You get a brand-new instance of the sandbox every time you open the application.
+Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains in the "sandboxed" and can't affect the host machine. A sandbox is temporary. When it's closed, all the software and files and the state are permanently deleted. You get a brand-new instance of the sandbox every time you open the application.
 
 Software and applications installed on the host aren't directly available in Windows Sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
@@ -26,14 +26,15 @@ Windows Sandbox has the following properties:
 - **Pristine**: Every time Windows Sandbox runs, it's as clean as a brand-new installation of Windows.
 - **Disposable**: Nothing persists on the device. Everything is discarded when the user closes the application.
 - **Secure**: Uses hardware-based virtualization for kernel isolation. It relies on the Microsoft hypervisor to run a separate kernel that isolates Windows Sandbox from the host.
-- **Efficient:** Uses integrated kernel scheduler, smart memory management, and virtual GPU.
+- **Efficient:** Uses the integrated kernel scheduler, smart memory management, and virtual GPU.
 
 The following video provides an overview of Windows Sandbox.
 
 [embed Ignite 2019 Sandbox talk video here, link is here: https://myignite.techcommunity.microsoft.com/sessions/79739?source=sessions ]
 
+[!VIDEO https://www.microsoft.com/videoplayer/embed/***XXXXXX***]  
 <!--
-RedTiger ID for embedding video requested 3/10
+RedTiger ID for embedding video requested 3/10 - Open WorkItem 25505527
 -->
 
 ## Architecture
@@ -42,11 +43,11 @@ RedTiger ID for embedding video requested 3/10
 
 At its core, Windows Sandbox is a lightweight virtual machine, so it needs an operating system image to boot from. Instead of giving the sandbox a separate copy of Windows to boot from, our Dynamic Base Image technology lets us use the copy of Windows that's already installed on the host.
 
-Most OS files are immutable, and we can freely share these files with Windows Sandbox. A small portion of the Windows files is mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
+Most OS files are immutable and can be freely shared with Windows Sandbox. A small portion of the OS file are mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
  
-When Windows Sandbox isn't installed, the dynamic base image is stored in a compressed 25-MB package. Once installed, the dynamic base package occupies about 500 MB of disk space.
+Before Windows Sandbox is installed, the dynamic base image is stored in a compressed 25-MB package. Once it's installed, the dynamic base package occupies about 500 MB of disk space.
 
-![Chart compares scale of dynamic image of files and links with the host file system](images/1-dynamic-host.png)
+![A chart compares scale of dynamic image of files and links with the host file system.](images/1-dynamic-host.png)
 
 ### Memory management
 
@@ -56,7 +57,7 @@ With traditional virtual machines (VMs) a portion of host memory is dedicated fo
 
 When using a VM, the user is effectively partitioning their machine. If the host is under memory pressure, it can't use the memory already allocated to the VM. But applications in the sandbox are treated as equal to apps running on the host, so when apps in sandbox are under memory pressure, you can give more memory to the sandbox (and the same applies to the host). Guest physical pages provided are virtualized.
 
-![Chart compares memory sharing in Windows Sandbox versus a traditional VM](images/2-dynamic-working.png)
+![A chart compares memory sharing in Windows Sandbox versus a traditional VM.](images/2-dynamic-working.png)
 
 ### Memory sharing
 
