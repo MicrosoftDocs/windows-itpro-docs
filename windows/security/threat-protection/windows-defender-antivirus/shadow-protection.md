@@ -70,3 +70,7 @@ The Microsoft Defender ATP stack works in integration, and to get best protectio
 
 Cloud protection is needed to turn on the feature on the device. Cloud protection allows Microsoft Defender ATP to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
 
+## See also
+
+- [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
+
