@@ -24,12 +24,14 @@ ms.collection:
 
 ## What is behavioral blocking?
 
-Behavioral blocking and containment capabilities in Microsoft Defender ATP use machine learning to identify threats through behavioral patterns. When threats are detected, Windows Defender Antivirus works together with your Microsoft cloud protection. Suspicious artifacts and behaviors are monitored, processed, and sent to your cloud protection for real-time classification by machine learning. If artifacts or behaviors are determined to be malicious, these threats are blocked and contained almost instantly. 
+Behavioral blocking and containment capabilities in Microsoft Defender ATP use machine learning to identify threats through behavioral patterns. When threats are detected, they are monitored, processed, classified by machine learning, and blocked, almost instantly. 
 
-Behavioral blocking is a post-execution protection, as shown in the following diagram:
+> [!TIP]
+> See [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks).
+
+Windows Defender Antivirus on your machine works together with Microsoft Defender ATP to offer this protection. Behavioral blocking is a post-execution protection, as shown in the following diagram:
 
 ![diagram of pre and post execution protection](images/pre-execution-and-post-execution-detection-engines.png)
-
 
 Behavioral blocking consists of the following components:
 
