@@ -33,6 +33,8 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 
 When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as **Blocked** or **Remediated**.
 
+:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by shadow protection":::
+
 ## Turn on shadow protection
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
