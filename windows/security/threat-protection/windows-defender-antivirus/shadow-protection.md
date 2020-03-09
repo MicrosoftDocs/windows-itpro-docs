@@ -22,13 +22,14 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+## Shadow protection
+
 Shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if Windows Defender Antivirus is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
 
 > [!TIP]
 > To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 ## Requirements for shadow protection
-
 
 |Requirement  |Details  |
 |---------|---------|
@@ -52,7 +53,7 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 > [!NOTE]
 > Currently, shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off at this time.
 
-## What happens when something is detected
+## What happens when something is detected?
 
 When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as Blocked or Remediated.
 
@@ -60,7 +61,7 @@ When shadow protection is turned on, and something is detected, you'll see it in
 
 ### Will shadow protection have any impact on a user's antivirus protection? 
 
-No. Shadow protection does not affect antivirus protection on a user's machine. Detection usually happens if the primary antivirus protection misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediation for malicious items detected. 
+No. Shadow protection does not affect third-party antivirus protection running on a users' machines. Shadow protection kicks in if the primary antivirus solution misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediating malicious items detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
