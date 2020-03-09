@@ -29,6 +29,21 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 > [!TIP]
 > To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline). And see [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
 
+## What happens when something is detected?
+
+When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as **Blocked** or **Remediated**.
+
+## Turn on shadow protection
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
+
+2. Choose **Settings** > **Advanced features**.
+
+3. Turn shadow protection on.
+
+> [!NOTE]
+> Currently, shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off at this time.
+
 ## Requirements for shadow protection
 
 |Requirement  |Details  |
@@ -42,20 +57,6 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 > [!IMPORTANT]
 > To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOAV, tamper protection etc. See [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus) 
 
-## Turn on shadow protection
-
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
-
-2. Choose **Settings** > **Advanced features**.
-
-3. Turn shadow protection on.
-
-> [!NOTE]
-> Currently, shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off at this time.
-
-## What happens when something is detected?
-
-When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the item detected is malicious, you'll see its detection status as Blocked or Remediated.
 
 ## Frequently asked questions 
 
