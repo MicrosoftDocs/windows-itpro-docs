@@ -28,6 +28,7 @@ Behavioral blocking and containment capabilities in Microsoft Defender ATP use m
 
 Behavioral blocking is a post-execution protection, as shown in the following diagram:
 
+![diagram of pre and post execution protection](images/pre-execution-and-post-execution-detection-engines.png)
 
 
 Behavioral blocking consists of the following components:
