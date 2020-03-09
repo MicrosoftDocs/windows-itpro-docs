@@ -61,15 +61,15 @@ When using a VM, the user is effectively partitioning their machine. If the host
 
 ### Memory sharing
 
-Because Windows Sandbox runs the same operating system image as the host, it has been enhanced to use the same physical memory pages as the host for operating system binaries via a technology referred to as "direct map." For example, when ntdll.dll is loaded into memory in the sandbox, it uses the same executable pages as those of the binary when loaded on the host. Memory sharing between the host and sandbox results in a smaller memory footprint when compared to traditional VMs without compromising valuable host secrets.
+Because Windows Sandbox runs the same operating system image as the host, it has been enhanced to use the same physical memory pages as the host for operating system binaries via a technology referred to as "direct map." For example, when *ntdll.dll* is loaded into memory in the sandbox, it uses the same executable pages as those of the binary when loaded on the host. Memory sharing between the host and sandbox results in a smaller memory footprint when compared to traditional VMs without compromising valuable host secrets.
 
-![Chart compares the memory footprint in Windows Sandbox versus a traditional VM](images/3-memory-sharing.png)
+![A chart compares the memory footprint in Windows Sandbox versus a traditional VM.](images/3-memory-sharing.png)
 
 ### Integrated kernel scheduler
 
-With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses a new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox receives CPU cycles.
+With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses a new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox gets CPU cycles.
 
-![Chart compares the scheduling in Windows Sandbox versus a traditional VM](images/4-integrated-kernal.png)
+![A chart compares the scheduling in Windows Sandbox versus a traditional VM.](images/4-integrated-kernal.png)
 
 Windows Sandbox employs a unique scheduling policy that allows the virtual processors of the sandbox to be scheduled in the same way as threads would be scheduled for a process. High-priority tasks on the host can preempt less important work in the sandbox. The benefit of the integrated scheduler is that the host manages Windows Sandbox as a process rather than a virtual machine, which results in a much more responsive host, similar to Linux KVM.
  
@@ -77,17 +77,17 @@ The goal is to treat Windows Sandbox like an app but with the security guarantee
  
 ### Snapshot and clone
 
-As noted earlier, Windows Sandbox uses the Microsoft hypervisor. It essentially runs another copy of Windows that needs to be booted, and this can take some time. Rather than paying the full cost of booting the Windows Sandbox operating system every time Sandbox starts, two other technologies are utilized: *snapshot* and *clone.*
+As we noted earlier, Windows Sandbox uses the Microsoft hypervisor. It essentially runs another copy of Windows that needs to be booted, and this can take some time. Rather than paying the full cost of booting the Windows Sandbox operating system every time Sandbox starts, two other technologies are utilized: *snapshot* and *clone.*
  
-*Snapshot*  allows us to boot the sandbox environment once and preserve the memory, CPU, and device state to disk. Then we can restore the sandbox environment from disk and put it in memory, rather than booting it when we need a new instance of  Windows Sandbox. By cloning the in-memory snapshot of Windows Sandbox, start time is significantly improved.
+*Snapshot*  allows us to boot the Windows Sandbox environment once and preserve the memory, CPU, and device state to disk. Then we can restore the Sandbox environment from disk and put it in memory, rather than booting it when we need a new instance of Sandbox. By cloning the in-memory snapshot of Windows Sandbox, start time is significantly improved.
  
 ### WDDM GPU virtualization
 
-Hardware-accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intense, or media-heavy uses. But virtual machines are isolated from their hosts and can't access advanced devices like GPUs. The role of graphics virtualization technologies is to bridge this gap and provide hardware acceleration in virtualized environments.
+Hardware-accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intense or media-heavy uses. But virtual machines are isolated from their hosts and can't access advanced devices like GPUs. The role of graphics virtualization technologies is to bridge this gap and provide hardware acceleration in virtualized environments.
  
-Microsoft has been working with its graphics ecosystem partners to integrate modern graphics virtualization capabilities directly into DirectX and WDDM, the driver model that's used for Windows display drivers.
+Microsoft is working with its graphics ecosystem partners to integrate modern graphics virtualization capabilities directly into DirectX and Windows Display Driver Model (WDDM), the driver model that's used for Windows.
 
-![Chart illustrates graphics kernal use in Sandbox managed alongside apps on the host](images/5-wddm-gpu-virtualization.png)
+![A chart illustrates graphics kernal use in Sandbox managed alongside apps on the host.](images/5-wddm-gpu-virtualization.png)
 
 At a high level, this form of graphics virtualization works as follows:
 
@@ -97,9 +97,9 @@ At a high level, this form of graphics virtualization works as follows:
 
 This process is illustrated here:
 
-![Chart illustrates graphics resource use on the host and guest](images/6-wddm-gpu-virtualization-2.png)
+![A chart illustrates graphics resource use on the host and guest.](images/6-wddm-gpu-virtualization-2.png)
 
-This enables the Windows Sandbox VM to benefit from hardware-accelerated rendering, with Windows dynamically allocating graphics resources where they are needed across the host and guest. The result is improved performance and responsiveness for apps running in Windows Sandbox, as well as improved battery life for graphics-heavy uses.
+This enables the Windows Sandbox VM to benefit from hardware-accelerated rendering, with Windows dynamically allocating graphics resources where they're needed across the host and guest. The result is improved performance and responsiveness for apps running in Windows Sandbox, as well as improved battery life for graphics-heavy uses.
 
 To take advantage of these benefits, a system with a compatible GPU and graphics drivers (WDDM 2.5 or newer) is required. Incompatible systems will render apps in Windows Sandbox with the Microsoft CPU-based rendering technology, Windows Advanced Rasterization Platform (WARP).
  
@@ -120,11 +120,11 @@ Windows Sandbox is also aware of the host's battery state, which allows it to op
 
 ### Installation
 
-1. Make sure your machine is using a Windows 10 Pro or Enterprise build version 18305 or later.
-1. Enable virtualization on the machine.
+1. Make sure your machine is using Windows 10 Pro or Enterprise build version 18305 or later.
+2. Enable virtualization on the machine.
 
    - If you're using a physical machine, make sure virtualization capabilities are enabled in the BIOS.
-   - If you're using a virtual machine, run the following PowerShell command to enable nested virtualization:<br/> **Set -VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true**
+   - If you're using a virtual machine, run the following PowerShell command to enable nested virtualization:<br/> **Set -VMProcessor -VMName \<VMName> -ExposeVirtualizationExtensions $true**
 1. Use the search bar on the task bar and type **Turn Windows Features on and off**. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.
 
    - If the **Windows Sandbox** option is unavailable, your computer doesn't meet the requirements to run Windows Sandbox. If you think this is incorrect, review the prerequisite list as well as steps 1 and 2.
