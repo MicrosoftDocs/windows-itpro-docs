@@ -41,6 +41,8 @@ Determine the type of identity that will be used to sign into the device.
 2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
 3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
 
+For more detailed information about identity types, please visit our [HoloLens Identity](#hololens-identity.md) article.
+
 ### Type of Features
 
 Your feature requirements will determine which HoloLens you need. One popular feature that we see deployed in customer environments frequently is Kiosk Mode. A list of HoloLens key features, and the editions of HoloLens that support them, can be found [here](hololens-commercial-features.md).
@@ -72,9 +74,9 @@ The majority of the steps found in this document will also apply to the followin
 
 | App | App Specific Scenarios |
 | --- | --- |
-| Remote Assist | [Cross Tenant Communication]()|
+| Remote Assist | [Cross Tenant Communication](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview)|
 | Guides  | *Coming Soon* |
-|Custom Apps | |
+|Custom Apps | *Coming Soon* |
 
 ### Determine your enrollment method
 
