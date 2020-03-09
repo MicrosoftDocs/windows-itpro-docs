@@ -19,7 +19,7 @@ ms.reviewer:
 
 Windows Sandbox provides a lightweight desktop environment for to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains in the "sandboxed" environment and can't affect the host machine. A sandbox is temporary. When it's closed, all the software, files, and state are permanently deleted. You get a brand-new instance of the sandbox every time you open the application.
 
-Software and applications installed on the host are not directly available in Windows Sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
+Software and applications installed on the host aren't directly available in Windows Sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
 Windows Sandbox has the following properties:
 - **Part of Windows**: Everything required for this feature is included in Windows 10 Pro and Enterprise. There's no need to download a VHD.
@@ -42,7 +42,7 @@ RedTiger ID for embedding video requested 3/10
 
 At its core, Windows Sandbox is a lightweight virtual machine, so it needs an operating system image to boot from. Instead of giving the sandbox a separate copy of Windows to boot from, our Dynamic Base Image technology lets us use the copy of Windows that's already installed on the host.
 
-Most OS files are immutable, and we can freely share these files with Windows Sandbox. A small portion of the Windows files are mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A full Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
+Most OS files are immutable, and we can freely share these files with Windows Sandbox. A small portion of the Windows files is mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
  
 When Windows Sandbox isn't installed, the dynamic base image is stored in a compressed 25-MB package. Once installed, the dynamic base package occupies about 500 MB of disk space.
 
@@ -68,7 +68,7 @@ Because Windows Sandbox runs the same operating system image as the host, it has
 
 With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses a new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox receives CPU cycles.
 
-![Chart compares the scheduling in Windows Sandbox vervus a traditional VM](images/4-integrated-kernal.png)
+![Chart compares the scheduling in Windows Sandbox versus a traditional VM](images/4-integrated-kernal.png)
 
 Windows Sandbox employs a unique scheduling policy that allows the virtual processors of the sandbox to be scheduled in the same way as threads would be scheduled for a process. High-priority tasks on the host can preempt less important work in the sandbox. The benefit of the integrated scheduler is that the host manages Windows Sandbox as a process rather than a virtual machine, which results in a much more responsive host, similar to Linux KVM.
  
@@ -78,11 +78,11 @@ The goal is to treat Windows Sandbox like an app but with the security guarantee
 
 As noted earlier, Windows Sandbox uses the Microsoft hypervisor. It essentially runs another copy of Windows that needs to be booted, and this can take some time. Rather than paying the full cost of booting the Windows Sandbox operating system every time Sandbox starts, two other technologies are utilized: *snapshot* and *clone.*
  
-*Snapshot*  allows us to boot the sandbox environment once and preserve the memory, CPU, and device state to disk. Then we can restore the sandbox environment from disk and put it in memory rather than booting it when we need a new instance of  Windows Sandbox. By cloning the in-memory snapshot of Windows Sandbox, start time is significantly improved.
+*Snapshot*  allows us to boot the sandbox environment once and preserve the memory, CPU, and device state to disk. Then we can restore the sandbox environment from disk and put it in memory, rather than booting it when we need a new instance of  Windows Sandbox. By cloning the in-memory snapshot of Windows Sandbox, start time is significantly improved.
  
 ### WDDM GPU virtualization
 
-Hardware-accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intense or media-heavy uses. But virtual machines are isolated from their hosts and can't access advanced devices like GPUs. The role of graphics virtualization technologies is to bridge this gap and provide hardware acceleration in virtualized environments.
+Hardware-accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intense, or media-heavy uses. But virtual machines are isolated from their hosts and can't access advanced devices like GPUs. The role of graphics virtualization technologies is to bridge this gap and provide hardware acceleration in virtualized environments.
  
 Microsoft has been working with its graphics ecosystem partners to integrate modern graphics virtualization capabilities directly into DirectX and WDDM, the driver model that's used for Windows display drivers.
 
