@@ -22,7 +22,10 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you
+Shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if Windows Defender Antivirus is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
+
+> [!TIP]
+> To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 ## Shadow protection
 
