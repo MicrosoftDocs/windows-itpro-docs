@@ -44,7 +44,7 @@ Make sure you have the required licensing and device. Updated licensing and prod
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
-If you plan on implementing a cross-tenant communication scenario, you may need an [Information Barrier license](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide#required-licenses-and-permissions). Please visit the [Cross Tenant Communication Overview](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) article to determine if an Information Barrier License is required for your scenario.
+If you plan on implementing **[this cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**, you may need an Information Barriers license. Please see [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
 
 ### Guides License Requirements
 
