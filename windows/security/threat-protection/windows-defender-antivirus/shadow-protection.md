@@ -33,22 +33,13 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 |Requirement  |Details  |
 |---------|---------|
 |Operating system     |One of the following: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
-|Windows E5 enrollment     |This is included in Microsoft 365 E5 and in the Identity & Threat Protection offering for Microsoft 365 E3. <br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
+|Windows E5 enrollment     |This is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- The Identity & Threat Protection offering for Microsoft 365 E3 customers. <br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
+|Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) |
+|Windows Defender Antivirus antimalware client version |Using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
+|Windows Defender Antivirus engine version |Using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
-E5 only feature 
-
-
-Windows defender Cloud delivered protection is on (https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) 
-
-To get the best protection value, ensure windows defender is configured to receive regular updates (https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus) and other essential features such as Behavioral monitoring, IOAV, Tamper Protection etc. 
-
-Windows defender client version (AMProductVersion) 4.18.2001.10 or above  
-
-(Run PowerShell Get-MpComputerStatus in admin mode) 
-
-Windows Defender engine version (AMEngineVersion) 1.1.16700.2 or above 
-
-(Run PowerShell Get-MpComputerStatus in admin mode 
+> [!IMPORTANT]
+> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOAV, tamper protection etc. See [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus) 
 
 ## Turn on shadow protection
 
@@ -58,12 +49,30 @@ Windows Defender engine version (AMEngineVersion) 1.1.16700.2 or above
 
 3. Turn shadow protection on.
 
-## section 1
+## What happens when something is detected
 
-body
+When shadow protection is turned on, and something is detected, you'll see it in the [Microsoft Defender Security Center](https://securitycenter.windows.com). If the 
 
-## section 2
+## FAQ 
 
-body
+Will this feature have any impact on the active AV on the device? 
+
+No, there would not be, the detection usually happens if there is miss by primary AV or if there is detected during post breach. This will work in similar way you have defender AV in passive mode, with additional step blocking and remediation. 
+
+Can I set this feature using registry/MDM/GP? 
+
+No the feature is only supported through Microsoft Defender Security Center portal https://securitycenter.windows.com 
+
+Why do I need to keep defender UpToDate? 
+
+MDATP stack works in integration and to get best protection value, you would want to keep Defender AV UpToDate as well.  
+
+Why do we need cloud protection on? 
+
+Cloud Protection is needed to turn on the feature on the device, in addition it allows MDATP to deliver latest and greatest based on the optics received, behavioral and Machine learning model we run on the backend and so on. 
+
+Contact 
+
+If you are interested in being design partner with us to help design this feature, please send email to shwjha@microsoft.com 
 
 ## Next steps
