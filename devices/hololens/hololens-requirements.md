@@ -41,7 +41,7 @@ Determine the type of identity that will be used to sign into the device.
 2. **MSA:** This is a personal account (like outlook, hotmail, gmail, yahoo, etc.) This will allow only 1 user to log into the device.
 3. **Azure Active Directory (Azure AD) accounts:** This is an account created in Azure AD. This grants your corporation the ability to manage the HoloLens device. This will allow multiple users to log into the HoloLens 1st Gen Commercial Suite/the HoloLens 2 device.
 
-For more detailed information about identity types, please visit our [HoloLens Identity](#hololens-identity.md) article.
+For more detailed information about identity types, please visit our [HoloLens Identity](hololens-identity.md) article.
 
 ### Type of Features
 
