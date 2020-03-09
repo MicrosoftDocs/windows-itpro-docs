@@ -1,8 +1,8 @@
 ---
 title: Windows as a service  
-ms.prod: windows-10 
+ms.prod: w10 
 ms.topic: landing-page
-ms.manager: elizapo
+ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
