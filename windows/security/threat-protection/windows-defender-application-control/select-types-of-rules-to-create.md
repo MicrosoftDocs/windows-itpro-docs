@@ -65,10 +65,10 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
-| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported with the Windows 10 version 1709 and higher.|
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported with the Windows 10 version 1903 and higher. |
+| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. NOTE: This option is only supported with the Windows 10 version 1903 and higher. |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. NOTE: This option is only supported with the Windows 10 version 1803 and higher. |
 
 ## Windows Defender Application Control file rule levels
 
