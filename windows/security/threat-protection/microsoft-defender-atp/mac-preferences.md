@@ -356,6 +356,10 @@ Specifies the value of tag
 | **Data type** | String |
 | **Possible values** | any string |
 
+> [!IMPORTANT]  
+> - Only one value per tag type can be set.
+> - Type of tags are unique, and should not be repeated in the same configuration profile.
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
