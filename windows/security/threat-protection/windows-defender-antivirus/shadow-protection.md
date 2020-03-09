@@ -39,6 +39,8 @@ When shadow protection is turned on, and something is detected, you'll see it in
 
 2. Choose **Settings** > **Advanced features**.
 
+    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn shadow protection on":::
+
 3. Turn shadow protection on.
 
 > [!NOTE]
