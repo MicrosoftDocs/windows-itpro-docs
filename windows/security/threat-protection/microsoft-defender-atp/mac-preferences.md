@@ -357,8 +357,8 @@ Specifies the value of tag
 | **Possible values** | any string |
 
 > [!IMPORTANT]  
-> * It is possible to set only one value per tag type.
-> * Type of tags are unique, and should not be repeated in the same configuration profile.
+> - Only one value per tag type can be set.
+> - Type of tags are unique, and should not be repeated in the same configuration profile.
 
 ## Recommended configuration profile
 
