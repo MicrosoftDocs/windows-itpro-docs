@@ -29,17 +29,17 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
-      <a href= "prepare-deployment"> 
+      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
         <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
-      <a href="production-deployment">
+      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
         <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
       <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center">
-      <a href="onboarding">
+      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
         <img src="images/onboard.png" alt="Onboard" title="Onboard" />
       <br/>Phase 3: Onboard </a><br>
 </td>
