@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro 
 ms.topic: article 
 ms.prod: w10 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: next-gen
 ms.collection: 
 ---
