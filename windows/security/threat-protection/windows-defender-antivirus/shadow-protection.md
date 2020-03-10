@@ -24,7 +24,7 @@ ms.collection:
 
 ## What is shadow protection?
 
-Shadow protection (currently in limited private preview) extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
+Shadow protection (currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection)) extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
 
 > [!TIP]
 > To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline). And see [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus).
