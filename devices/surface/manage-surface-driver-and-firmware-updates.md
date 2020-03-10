@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 01/24/2020
+ms.date: 03/10/2020
 ---
 
 # Manage and deploy Surface driver and firmware updates
@@ -48,12 +48,14 @@ Included in Microsoft Endpoint Configuration Manager, the Microsoft Deployment T
  
 For detailed steps, see the following resources:
 
-Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
-
-For instructions on how to deploy updates by using Microsoft Endpoint Configuration Manager refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 - [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
-- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)  
+- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)
+
+Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system.
+
+For instructions on how to deploy updates by using Microsoft Endpoint Configuration Manager refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+
 
 **WindowsPE and Surface firmware and drivers**
 
@@ -62,20 +64,22 @@ Microsoft Endpoint Configuration Manager and MDT both use the Windows Preinstall
 ### Microsoft Endpoint Configuration Manager
 
 Starting in Microsoft Endpoint Configuration Manager, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. The process resembles that for deploying regular updates. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
+
 ## Supported devices
+
 Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. Information about MSI files for the newest Surface devices such as Surface Pro 7, Surface Pro X, and Surface Laptop 3 will be available from this page upon release. 
 
 
 ## Managing firmware with DFCI
+
 With Device Firmware Configuration Interface (DFCI) profiles built into Intune (now available in [public preview](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future. For more information, see:
  
-
 - [Intune management of Surface UEFI settings](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
 
 ## Best practices for update deployment processes
 
-To maintain a stable environment and keep users productive, it’s strongly recommended to maintain parity with the most recent version of Windows 10.  For best practice recommendations, see [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
+To maintain a stable environment and keep users productive, it's strongly recommended to maintain parity with the most recent version of Windows 10.  For best practice recommendations, see [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
 
 ## Downloadable Surface update packages
 
