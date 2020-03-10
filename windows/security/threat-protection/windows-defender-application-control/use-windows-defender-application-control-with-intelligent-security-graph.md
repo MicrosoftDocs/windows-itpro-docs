@@ -14,6 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
+ms.date: 03/10/20
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 
