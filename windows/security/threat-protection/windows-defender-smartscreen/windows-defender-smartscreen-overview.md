@@ -56,7 +56,7 @@ Windows Defender SmartScreen provide an early warning system against websites th
 - **Blocking URLs associated with potentially unwanted applications.** In the next major version of Microsoft Edge (based on Chromium), SmartScreen will blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
 
 > [!IMPORTANT]
-> SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares such asshared folders with a UNC paths (SMB/CIFS shares).
+> SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
 ## Viewing Windows Defender SmartScreen anti-phishing events
 
