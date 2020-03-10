@@ -2,13 +2,13 @@
 title: Use your voice with HoloLens
 description: Cortana can help you do all kinds of things on your HoloLens
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
-ms.date: 11/8/2019
+ms.date: 03/10/2020
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
+author: Teresa-Motiv
 audience: ITPro
-ms.author: v-miegge
+ms.author: v-tea
 ms.topic: article
 manager: jarrettr
 ms.localizationpriority: high
@@ -63,7 +63,7 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**,**touch cursor** or 1 **hand ray** on it for a moment to see a voice tip.
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor**,**touch cursor** or one **hand ray** on it for a moment. If the button is voice-enabled, you'll see a voice tip.
 
 ### Dictation mode
 
