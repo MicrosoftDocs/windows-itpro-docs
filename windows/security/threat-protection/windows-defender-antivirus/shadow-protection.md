@@ -22,6 +22,8 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[](../../includes/prerelease.md)
+
 ## What is shadow protection?
 
 Shadow protection (currently in limited private preview) extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
@@ -78,6 +80,10 @@ The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-
 ### Why do we need cloud protection on? 
 
 Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
+
+### Can I participate in the private preview of shadow protection?
+
+If you would like to participate in our private preview program, please send email to `shwjha@microsoft.com`. 
 
 ## See also
 
