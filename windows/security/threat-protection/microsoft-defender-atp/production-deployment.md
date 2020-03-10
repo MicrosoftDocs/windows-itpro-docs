@@ -164,7 +164,7 @@ under:
     Preview Builds \> Configure Authenticated Proxy usage for the Connected User
     Experience and Telemetry Service
 
-    -   Set it to **Enabled** and select�**Disable Authenticated Proxy usage**
+    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
@@ -258,3 +258,7 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
+## Next step
+|||
+|:-------|:-----|
+|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them

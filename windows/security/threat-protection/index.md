@@ -31,7 +31,7 @@ ms.topic: conceptual
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Management and APIs</a></b></center></td>
+<a href="#apis"><center><b>Centratlized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
 <td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
@@ -124,7 +124,7 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 
 <a name="apis"></a>
 
-**[Management and APIs](microsoft-defender-atp/management-apis.md)**<br>
+**[Centralized configuration and administration, APIs](microsoft-defender-atp/management-apis.md)**<br>
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](microsoft-defender-atp/onboard-configure.md)
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)

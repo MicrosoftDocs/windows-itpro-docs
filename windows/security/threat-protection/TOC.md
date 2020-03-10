@@ -2,8 +2,6 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
-### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
-### [Product brief](microsoft-defender-atp/product-brief.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
@@ -12,7 +10,7 @@
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
-## [Plan deployment strategy](microsoft-defender-atp/deployment-strategy.md)
+## [Deployment strategy](microsoft-defender-atp/deployment-strategy.md)
 
 
 ## [Deployment guide]()
@@ -126,17 +124,16 @@
 
 
 ### [Security administration]()
-#### [Threat & Vulnerability Management]()
-##### [Threat & Vulnerability Management overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-##### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
-##### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-##### [Configuration score](microsoft-defender-atp/configuration-score.md)
-##### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
-##### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
-##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
-##### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-##### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+#### [Threat & Vulnerability Management overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
+#### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+#### [Configuration score](microsoft-defender-atp/configuration-score.md)
+#### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+#### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
+#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
+#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 
 
