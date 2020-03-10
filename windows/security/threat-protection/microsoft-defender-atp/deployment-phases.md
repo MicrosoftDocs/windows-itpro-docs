@@ -1,6 +1,6 @@
 ---
 title: Deployment phases
-description: Learn how to prepare, setup, and onboard endpoints to deploy Microsoft Defender ATP
+description: Learn how deploy Microsoft Defender ATP by preparing, setting up, and onboarding endpoints to that service
 keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -20,7 +20,6 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 There are three phases in deploying Microsoft Defender ATP:
 
