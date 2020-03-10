@@ -28,6 +28,8 @@ Windows Sandbox has the following properties:
 - **Secure**: Uses hardware-based virtualization for kernel isolation. It relies on the Microsoft hypervisor to run a separate kernel that isolates Windows Sandbox from the host.
 - **Efficient:** Uses the integrated kernel scheduler, smart memory management, and virtual GPU.
 
+<!--
+
 The following video provides an overview of Windows Sandbox.
 
 [embed Ignite 2019 Sandbox talk video here, link is here: https://myignite.techcommunity.microsoft.com/sessions/79739?source=sessions ]
