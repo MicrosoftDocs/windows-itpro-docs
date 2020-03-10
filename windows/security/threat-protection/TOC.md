@@ -508,7 +508,7 @@
 #### [Common Vulnerabilities and Exposures (CVE) to KB map]()
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
-#### [Pull detections to your SIEM tools]()
+
 #### [Raw data streaming API]()
 ##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
