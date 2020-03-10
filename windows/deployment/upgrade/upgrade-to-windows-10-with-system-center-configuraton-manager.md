@@ -28,17 +28,16 @@ The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Wi
 
 ## Proof-of-concept environment
 
+For the purposes of this topic, we will use three computers: DC01, CM01, and PC0001. DC01 is a domain controller and CM01 is a domain member server. PC0001 is a computer running Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Prepare for deployment with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md).
 
-For the purposes of this topic, we will use three machines: DC01, CM01, and PC0001. DC01 is a domain controller and CM01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0001 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+![computers](../images/dc01-cm01-pc0001.png)
 
-![figure 1](../images/upgrademdt-fig1-machines.png)
+The computers used in this topic.
 
-Figure 1. The machines used in this topic.
-
-## Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager
+## Upgrade to Windows 10 with Configuration Manager
 
 
-System Center 2012 R2 Configuration Manager SP1 adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
+System Center 2012 R2 Configuration Manager SP 1 adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
 
 ## Create the task sequence
 
@@ -114,13 +113,13 @@ Figure 2. Upgrade from Windows 7 to Windows 10 Enterprise x64 with a task sequ
 
 After the task sequence finishes, the computer will be fully upgraded to Windows 10.
 
-## Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager Current Branch
+## Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager
 
 
-With Microsoft Endpoint Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
+With Configuration Manager, new built-in functionality makes it easier to upgrade to Windows 10.
 
 **Note**  
-For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
+For more details about Configuration Manager, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
  
 
@@ -150,7 +149,7 @@ Figure 3. The Configuration Manager upgrade task sequence.
 
 ### Create a device collection
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of Microsoft Endpoint Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of Configuration Manager client installed.
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     -   General

@@ -1,5 +1,5 @@
 ---
-title: Managing updates to HoloLens
+title: Manage HoloLens updates
 description: Administrators can use mobile device management to manage updates to HoloLens devices.
 ms.prod: hololens
 ms.sitesec: library
@@ -11,12 +11,15 @@ ms.localizationpriority: high
 ms.date: 11/7/2019
 ms.reviewer: jarrettr
 manager: jarrettr
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ---
 
-# Managing HoloLens updates
+# Manage HoloLens updates
 
 HoloLens uses Windows Update, just like other Windows 10 devices. When an update is available, it will be automatically downloaded and installed the next time your device is plugged in and connected to the Internet.
 
@@ -67,10 +70,10 @@ To go back to a previous version of HoloLens (1st gen), follow these steps:
 > [!NOTE]
 > If the WDRT doesn't detect your HoloLens, try restarting your PC. If that doesn't work, select **My device was not detected**, select **Microsoft HoloLens**, and then follow the instructions.
 
-# Use policies to manage updates to HoloLens
+## Use policies to manage updates to HoloLens
 
->[!NOTE]
->HoloLens (1st gen) devices must be [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md) to manage updates.
+> [!NOTE]
+> HoloLens (1st gen) devices must be [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md) to manage updates.
 
 To configure how and when updates are applied, use the following policies:
 

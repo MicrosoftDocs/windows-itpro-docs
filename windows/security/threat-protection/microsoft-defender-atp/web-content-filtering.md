@@ -81,7 +81,10 @@ Learn more at https://www.cyren.com/products/url-filtering.
 
 ### Signing up for a Cyren License
 
-Cyren is offering a 60-day free trial for all Microsoft Defender ATP customers. To sign up, please follow the steps below from the portal. 
+Cyren is offering a 60-day free trial for all Microsoft Defender ATP customers. To sign up, please follow the steps below from the portal.
+
+>[!NOTE]
+>Make sure to add the URL you get redirected to by the signup process to the list of approved domains. 
 
 >[!NOTE]
 >A user with AAD app admin/global admin permissions is required to complete these steps.
