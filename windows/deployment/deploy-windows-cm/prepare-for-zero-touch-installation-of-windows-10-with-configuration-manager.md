@@ -21,24 +21,23 @@ ms.topic: article
 
 -   Windows 10
 
-This topic will walk you through the process of integrating Microsoft Endpoint Configuration Manager with Microsoft Deployment Toolkit (MDT), as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
-
-See [Components of Configuration Manager operating system deployment](#components-of-configuration-manager-operating-system-deployment) for more information about specific components used for operating system deployment with Configuration Manager. For information about the benefits of integrating MDT with Configuration Manager, see [Why integrate MDT with Configuration Manager](#why-integrate-mdt-with-configuration-manager) in this article.
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using [components](#components-of-configuration-manager-operating-system-deployment) of Microsoft Endpoint Configuration Manager that are [integrated with Microsoft Deployment Toolkit](#why-integrate-mdt-with-configuration-manager) (MDT). 
 
 ## Prerequisites
 
-In this topic, you will use an existing Configuration Manager server structure to prepare for operating system deployment. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
+In this topic, you will use an existing Configuration Manager server structure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
--   Active Directory Schema has been extended and System Management container created.
--   Active Directory Forest Discovery and Active Directory System Discovery have been enabled.
--   IP range boundaries and a boundary group for content and site assignment have been created.
--   The Configuration Manager reporting services point role has been added and configured
--   A file system folder structure for packages has been created.
--   A Configuration Manager console folder structure for packages has been created.
--   Microsoft Endpoint Configuration Manager and any additional Windows 10 prerequisites are installed.
+- Configuration Manager current branch + all security and critical updates are installed.
+  - Procedures in this guide use Version 1910.
+- The Active Directory Schema has been extended and System Management container created.
+- Active Directory Forest Discovery and Active Directory System Discovery have been enabled.
+- IP range boundaries and a boundary group for content and site assignment have been created.
+- The Configuration Manager reporting services point role has been added and configured.
+- A file system folder structure and Configuration Manager console folder structure for packages has been created.
+- The Windows ADK (including USMT), Windows PE, MDT, and DaRT (optional) are installed.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
-- DC01 is a domain controller for the contoso.com domain.
+- DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server.
 - CM01 is a domain member server and is configured as a Configuration Manager standalone primary site server. 
 - HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer does not need to be a domain member.
 
@@ -46,38 +45,88 @@ All servers are running Windows Server 2019. However, an earlier, supported vers
 
 All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
+### Domain credentials
+
+The following generic credentials are used in this guide. You should replace these credentials as they appear in each procedure with your credentials.
+
+**Active Directory domain name**: contoso.com<br>
+**Domain administrator username**: administrator<br>
+**Domain administrator password**: pass@word1
+
+## Create the OU structure
+
+>[!NOTE]
+>If you have already [created the OU structure](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md#create-the-ou-structure) that was used in the OSD guide for MDT, the same structure is used here and you can skip this section.
+
+On **DC01**:
+
+To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell. The procedure below uses Windows PowerShell.
+
+To use Windows PowerShell, copy the following commands into a text file and save it as <b>C:\Setup\Scripts\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
+
+```powershell
+$oulist = Import-csv -Path c:\oulist.txt
+ForEach($entry in $oulist){
+    $ouname = $entry.ouname
+    $oupath = $entry.oupath
+    New-ADOrganizationalUnit -Name $ouname -Path $oupath -WhatIf
+    Write-Host -ForegroundColor Green "OU $ouname is created in the location $oupath"
+}
+```
+
+Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+
+```text
+OUName,OUPath
+Contoso,"DC=CONTOSO,DC=COM"
+Accounts,"OU=Contoso,DC=CONTOSO,DC=COM"
+Computers,"OU=Contoso,DC=CONTOSO,DC=COM"
+Groups,"OU=Contoso,DC=CONTOSO,DC=COM"
+Admins,"OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM"
+Service Accounts,"OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM"
+Users,"OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM"
+Servers,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
+Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
+Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
+```
+
+Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
+Set-Location C:\Setup\Scripts
+.\ou.ps1
+```
+
 ## Create the Configuration Manager service accounts
 
-To configure permissions for the various service accounts needed for operating system deployment in Configuration Manager, you use a role-based model. To create the Configuration Manager Join Domain account as well as the Configuration Manager Network Access account, follow these steps:
+A role-based model is used to configure permissions for the service accounts needed for operating system deployment in Configuration Manager. Perform the following steps to create the Configuration Manager **join domain** and **network access** accounts:
 
-1.  On DC01, using Active Directory User and Computers, browse to **contoso.com / Contoso / Service Accounts**.
+On **DC01**:
+
+1.  In the Active Directory Users and Computers console, browse to **contoso.com / Contoso / Service Accounts**.
 2.  Select the Service Accounts OU and create the CM\_JD account using the following settings:
 
     * Name: CM\_JD
     * User logon name: CM\_JD
-    * Password: P@ssw0rd
+    * Password: pass@word1
     * User must change password at next logon: Clear
-    * User cannot change password: Select
-    * Password never expires: Select
+    * User cannot change password: Selected
+    * Password never expires: Selected
 
 3.  Repeat the step, but for the CM\_NAA account.
-
 4.  After creating the accounts, assign the following descriptions:
 
     * CM\_JD: Configuration Manager Join Domain Account
     * CM\_NAA: Configuration Manager Network Access Account
 
-![figure 6](../images/mdt-06-fig06.png)
-
-The Configuration Manager service accounts used for operating system deployment.
-
 ## Configure Active Directory permissions
-
 
 In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
 
-1. On DC01, log on as Administrator in the CONTOSO domain using the password <strong>P@ssw0rd</strong>.
-2. In an elevated Windows PowerShell prompt (run as Administrator), run the following commands, pressing **Enter** after each command:
+On **DC01**:
+
+1. Sign in as contoso\administrtor and enter the following at an elevated Windows PowerShell prompt:
 
    ``` 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
@@ -85,7 +134,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
    .\Set-OUPermissions.ps1 -Account CM_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
    ```
 
-3. The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
+2. The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
 
    * Scope: This object and all descendant objects
    * Create Computer objects
@@ -102,30 +151,27 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 ## Review the Sources folder structure
 
-To support the packages you create in this section, the following folder structure should be created on the Configuration Manager primary site server (CM01):
+On **CM01**:
+
+To support the packages you create in this article, the following folder structure should be created on the Configuration Manager primary site server (CM01):
 
 >[!NOTE]
 >In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
 
--   D:\\Sources
--   D:\\Sources\\OSD
--   D:\\Sources\\OSD\\Boot
--   D:\\Sources\\OSD\\DriverPackages
--   D:\\Sources\\OSD\\DriverSources
--   D:\\Sources\\OSD\\MDT
--   D:\\Sources\\OSD\\OS
--   D:\\Sources\\OSD\\Settings
--   D:\\Sources\\Software
--   D:\\Sources\\Software\\Adobe
--   D:\\Sources\\Software\\Microsoft
+- D:\\Sources
+- D:\\Sources\\OSD
+- D:\\Sources\\OSD\\Boot
+- D:\\Sources\\OSD\\DriverPackages
+- D:\\Sources\\OSD\\DriverSources
+- D:\\Sources\\OSD\\MDT
+- D:\\Sources\\OSD\\OS
+- D:\\Sources\\OSD\\Settings
+- D:\\Sources\\OSD\\Branding
+- D:\\Sources\\Software
+- D:\\Sources\\Software\\Adobe
+- D:\\Sources\\Software\\Microsoft
 
-![figure 7](../images/mdt-06-fig07.png)
-
-The D:\\Sources\\OSD folder structure.
-
-**Note: here**------------------
-
-To create this folder structure, run the following commands from an elevated Windows PowerShell prompt:
+You can run the following commands from an elevated Windows PowerShell prompt to create this folder structure:
 
 ```powershell
 New-Item -ItemType Directory -Path "D:\Sources"
@@ -147,13 +193,13 @@ New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
 
 ## Integrate Configuration Manager with MDT
 
-To extend the Configuration Manager console with MDT wizards and templates, you install MDT in the default location and run the integration setup. In these steps, we assume you have downloaded MDT to the C:\\Setup\\MDT2013 folder on CM01.
+To extend the Configuration Manager console with MDT wizards and templates, install MDT with the default settings and run the Config Manager integration setup. In these steps, we assume you have already [downloaded MDT](https://www.microsoft.com/download/details.aspx?id=54259) and installed it with default settings.
 
-1. On CM01, log on as Administrator in the CONTOSO domain using the password <strong>P@ssw0rd</strong>.
-2. Make sure the Configuration Manager Console is closed before continuing.
-3. Using File Explorer, navigate to the **C:\\Setup\\MDT** folder.
-4. Run the MDT setup (MicrosoftDeploymentToolkit2013\_x64.msi), and use the default options in the setup wizard.
-5. From the Start screen, run Configure ConfigManager Integration with the following settings:
+On **CM01**:
+
+1. Sign in as contoso\administrator.
+2. Ensure the Configuration Manager Console is closed before continuing.
+5. Click Start, type **Configure ConfigManager Integration**, and run the application the following settings:
 
    * Site Server Name: CM01.contoso.com
    * Site code: PS1
@@ -163,7 +209,6 @@ To extend the Configuration Manager console with MDT wizards and templates, you 
 Set up the MDT integration with Configuration Manager.
 
 ## Configure the client settings
-
 
 Most organizations want to display their name during deployment. In this section, you configure the default Configuration Manager client settings with the Contoso organization name.
 
