@@ -38,8 +38,8 @@ Windows Server 2008R2 | Operating System (OS) vulnerabilities<br/>Software produ
 Windows Server 2012R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
 Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
 Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-MacOS | Preview, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)
-Linux | Preview, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux)
+MacOS | Preview, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac) for details
+Linux | Preview, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux) for details
 
 Some of the above prerequisites might be different from the [Minimum requirements for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) list.
 
