@@ -60,7 +60,7 @@ The following images shows an instance of unwanted software that was detected an
 |Windows E5 enrollment     |This is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- The Identity & Threat Protection offering for Microsoft 365 E3 customers. <br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus). |
 |Windows Defender Antivirus antimalware client |To make sure your client is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
-|Windows Defender Antivirus enginen |To make sure your client is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
+|Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
 > To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOAV, tamper protection etc. See [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus) 
@@ -78,7 +78,7 @@ The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-
 
 ### Why do we need cloud protection on? 
 
-Cloud protection is needed to turn on the feature on the device. Cloud protection allows Microsoft Defender ATP to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
+Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
 
 ## See also
 
