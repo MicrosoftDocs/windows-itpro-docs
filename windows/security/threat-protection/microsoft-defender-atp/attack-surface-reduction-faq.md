@@ -29,17 +29,15 @@ ASR was originally a feature of the suite of exploit guard features introduced a
 
 **Do I need to have an enterprise license to run ASR rules?**
 
-The full set of ASR rules and features are only supported if you have an enterprise license for Windows 10: specifically, an E5 license. A limited number of rules may work without an enterprise license, if you have Microsoft 365 Business, set Windows Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full feature-set of ASR will not be available.
+The full set of ASR rules and features are only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license, if you have Microsoft 365 Business, set Windows Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full feature-set of ASR will not be available.
 
 **Is ASR supported if I have an E3 license?**
 
-Yes. ASR is supported for Windows Enterprise E3 and above. Although Windows Enterprise E3 introduced ASR, not all features are available with an E3 license. Windows Enterprise E5 updated ASR with new rules, and added advanced management capabilities by integrating ASR with Microsoft Defender ATP. These capabilities include monitoring and configuring ASR event reports from Security Center, and accessing analytics on vulnerabilities. it is recommended to have an E5 license for a full ASR experience.
-
-See [Use attack surface reduction rules in Windows 10 Enterprise E3](attack-surface-reduction-rules-in-windows-10-enterprise-e3.md) for more details.
+Yes. ASR is supported for Windows Enterprise E3 and above. See [Use attack surface reduction rules in Windows 10 Enterprise E3](attack-surface-reduction-rules-in-windows-10-enterprise-e3.md) for more details.
 
 **Which rules are supported with an E3 license?**
 
-Windows Enterprise E3 supports a subset of the ASR rules. These include:
+Windows Enterprise E3 supports the ASR rules. These include:
 
 - [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 - [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -62,7 +60,7 @@ All of the rules supported with E3 are also supported in E5. E5 also added some 
 - [Block Adobe Reader from creating child processes](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
 - [Block persistence through WMI event subscription](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
 
-E5 also added greater integration with Microsoft Defender ATP. With E5, you can use Microsoft Defender ATP to monitor and review analytics on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
+E5 also added greater integration with Microsoft Defender ATP. With E5, you can [use Microsoft Defender ATP to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
 **What are some good recommendations for getting started with ASR?**
 
@@ -72,7 +70,7 @@ It is generally best to first test how ASR rules will impact your organization b
 
 You should keep the rule in audit mode for about 30 days. This amount of time gives you a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
 
-**I'm making the switch from a third-party security solution to Microsoft Defender ATP. Is there an “easy” way to export rules from another security solution to ASR?**
+**I'm making the switch from a third-party security solution to Microsoft Defender ATP. Is there an "easy" way to export rules from another security solution to ASR?**
 
 Rather than attempting to import sets of rules from another security solution, it is, in most cases, easier and safer to start with the baseline recommendations suggested for your organization by Microsoft Defender ATP, then use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. The default configuration for most ASR rules, combined with Defender's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
