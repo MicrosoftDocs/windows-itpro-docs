@@ -92,8 +92,8 @@
 ##### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ##### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
 
-### [Use the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
+#### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
 
 
 ### [Investigate entities using Live response]()
@@ -414,7 +414,7 @@
 
 #### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
 
-#### [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
+#### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
 
 
 
