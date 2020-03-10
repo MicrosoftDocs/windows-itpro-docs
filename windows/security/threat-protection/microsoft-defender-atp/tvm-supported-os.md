@@ -19,6 +19,7 @@ ms.topic: article
 # Threat & Vulnerability Management supported operating systems and platforms
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -43,6 +44,7 @@ Linux | Preview, see [Microsoft Defender ATP for Linux](https://docs.microsoft.c
 Some of the above prerequisites might be different from the [Minimum requirements for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) list.
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
