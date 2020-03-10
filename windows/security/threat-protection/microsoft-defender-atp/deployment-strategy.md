@@ -17,6 +17,11 @@ ms.topic: article
 ---
 
 # Plan your Microsoft Defender ATP deployment strategy
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+
 Depending on the requirements of your environment, we've put together material to help guide you through the various options you can adopt to deploy Microsoft Defender ATP. 
 
 

@@ -17,6 +17,8 @@ ms.topic: article
 ---
 
 # Onboard to the Micrsoft Defender ATP service
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Deploying Microsoft Defender ATP is a three-phase process:
