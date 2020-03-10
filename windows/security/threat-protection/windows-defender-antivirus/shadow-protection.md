@@ -70,7 +70,7 @@ The following images shows an instance of unwanted software that was detected an
 
 ### Will shadow protection have any impact on a user's antivirus protection? 
 
-No. Shadow protection does not affect third-party antivirus protection running on a users' machines. Shadow protection kicks in if the primary antivirus solution misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediating malicious items detected. 
+No. Shadow protection does not affect third-party antivirus protection running on users' machines. Shadow protection kicks in if the primary antivirus solution misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediating malicious items detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
