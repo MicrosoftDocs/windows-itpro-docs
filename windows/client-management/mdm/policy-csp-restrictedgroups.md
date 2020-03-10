@@ -79,7 +79,8 @@ This security setting allows an administrator to define the members of a securit
 > [!NOTE]
 > DeviceEnroller.exe will not elevate the user if a pre-configured local admin group already exists on the device. This is a security measure in the executable where it checks for other non-disabled Administrators' membership(s). If at least one already exists, the tool will exit without elevating.
 
-Caution: If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
+> [!CAUTION]
+> If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
 
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of 0 members when applying the policy implies clearing the access group and should be used with caution.
 
