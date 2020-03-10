@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "devices/hololens/hololens-whats-new.md",
+"redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
 "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
 "redirect_document_id": true
@@ -15734,6 +15739,16 @@
 {
 "source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/mdt-lite-touch-components.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
 "redirect_document_id": false
 }
 ]
