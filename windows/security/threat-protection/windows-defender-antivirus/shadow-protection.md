@@ -31,9 +31,7 @@ Shadow protection extends behavioral-based blocking and containment capabilities
 
 ## What happens when something is detected?
 
-When shadow protection is turned on, and something is detected, you'll see it in your [alerts queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue) with informational status. (Informational alerts are those that might not be considered harmful to your organization but might be good to keep track of.)
-
-If the item detected turns out to be malicious, you'll see its detection status as **Blocked** or **Remediated**. You can view these items as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
+When shadow protection is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
 
 The following images shows an instance of unwanted software that was detected and blocked through shadow protection:
 
@@ -63,7 +61,7 @@ The following images shows an instance of unwanted software that was detected an
 |Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
-> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection etc. See [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus) 
+> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) 
 
 
 ## Frequently asked questions 
