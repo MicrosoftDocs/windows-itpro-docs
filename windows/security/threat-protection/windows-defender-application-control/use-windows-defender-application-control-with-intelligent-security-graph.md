@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 03/10/20
+ms.date: 03/10/2020
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 
@@ -34,7 +34,7 @@ The Microsoft Intelligent Security Graph relies on the same vast security intell
 
 Additionally, an application installer which is determined to have known good reputation will pass along that positive reputation to any files that it writes. This way, all the files needed to install and run an app are granted positive reputation data.
 
-WDAC periodically re-queries the reputation data on a file. Additonally, enterprises can specify that any cached reputation results are flushed on reboot by using the **Enabled:Invalidate EAs on Reboot** option.
+WDAC periodically re-queries the reputation data on a file. Additionally, enterprises can specify that any cached reputation results are flushed on reboot by using the **Enabled:Invalidate EAs on Reboot** option.
 
 >[!NOTE]
 >Admins should make sure there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, such as custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both Microsoft Endpoint Manager Configuration Manager (MEMCM) and Microsoft Endpoint Manager Intune (MEM Intune) can be used to create and push a WDAC policy to your client machines.  
