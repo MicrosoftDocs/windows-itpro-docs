@@ -44,7 +44,9 @@
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
-### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+### [Next-generation protection]()
+#### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+#### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
 #### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
