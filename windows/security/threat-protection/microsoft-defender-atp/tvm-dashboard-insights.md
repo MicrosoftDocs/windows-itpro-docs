@@ -77,7 +77,7 @@ Area | Description
 **Top remediation activities** | Track the remediation activities generated from the security recommendations. You can select each item on the list to see the details in the **Remediation** page or select **Show more** to view the rest of the remediation activities, and active exceptions.
 **Top exposed machines** | View exposed machine names and their exposure level. Select a machine name from the list to go to the machine page where you can view the alerts, risks, incidents, security recommendations, installed software, and discovered vulnerabilities associated with the exposed machines. Select **Show more** to see the rest of the exposed machines list. From the machines list, you can manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate machine.
 
-See [Microsoft Defender ATP icons](portal-overview#windows-defender-atp-icons.md) for more information on the icons used throughout the portal.
+See [Microsoft Defender ATP icons](portal-overview.md#windows-defender-atp-icons) for more information on the icons used throughout the portal.
 
 ## Related topics
 
