@@ -1204,19 +1204,19 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
@@ -1233,7 +1233,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Added in Windows 10, version 1709. Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1275,19 +1275,19 @@ Default value is 7.
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
@@ -1304,7 +1304,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Added in Windows 10, version 1709. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1345,19 +1345,19 @@ Default value is 7.
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
@@ -1374,7 +1374,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
+Added in Windows 10, version 1709. Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1415,19 +1415,19 @@ Default value is 2.
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
@@ -1444,7 +1444,7 @@ Default value is 2.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. If enabled (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will not automatically restart outside of active hours until the deadline is reached, even if applicable updates are already installed and pending a restart.
+Added in Windows 10, version 1709. If enabled (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will not automatically restart outside of active hours until the deadline is reached, even if applicable updates are already installed and pending a restart.
 
 When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
 <!--/Description-->
