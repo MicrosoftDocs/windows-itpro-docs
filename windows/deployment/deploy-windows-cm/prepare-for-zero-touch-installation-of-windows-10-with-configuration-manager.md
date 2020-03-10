@@ -23,9 +23,7 @@ ms.topic: article
 
 This topic will walk you through the process of integrating Microsoft Endpoint Configuration Manager with Microsoft Deployment Toolkit (MDT), as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
 
-To review the components of Configuration Manager that are used in operating system deployment (OSD) see [Components of Configuration Manager operating system deployment](#components-of-configuration-manager-operating-system-deployment) in this article.
-
-For information about the benefits of integrating MDT with Configuration Manager, see [Why integrate MDT with Configuration Manager](#why-integrate-mdt-with-configuration-manager) in this article.
+See [Components of Configuration Manager operating system deployment](#components-of-configuration-manager-operating-system-deployment) for more information about specific components used for operating system deployment with Configuration Manager. For information about the benefits of integrating MDT with Configuration Manager, see [Why integrate MDT with Configuration Manager](#why-integrate-mdt-with-configuration-manager) in this article.
 
 ## Prerequisites
 
@@ -83,11 +81,8 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
    ``` 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-
    Set-Location C:\Setup\Scripts
-
-   .\Set-OUPermissions.ps1 -Account CM_JD 
-   -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
+   .\Set-OUPermissions.ps1 -Account CM_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
    ```
 
 3. The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
@@ -112,21 +107,43 @@ To support the packages you create in this section, the following folder structu
 >[!NOTE]
 >In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
 
--   E:\\Sources
--   E:\\Sources\\OSD
--   E:\\Sources\\OSD\\Boot
--   E:\\Sources\\OSD\\DriverPackages
--   E:\\Sources\\OSD\\DriverSources
--   E:\\Sources\\OSD\\MDT
--   E:\\Sources\\OSD\\OS
--   E:\\Sources\\OSD\\Settings
--   E:\\Sources\\Software
--   E:\\Sources\\Software\\Adobe
--   E:\\Sources\\Software\\Microsoft
+-   D:\\Sources
+-   D:\\Sources\\OSD
+-   D:\\Sources\\OSD\\Boot
+-   D:\\Sources\\OSD\\DriverPackages
+-   D:\\Sources\\OSD\\DriverSources
+-   D:\\Sources\\OSD\\MDT
+-   D:\\Sources\\OSD\\OS
+-   D:\\Sources\\OSD\\Settings
+-   D:\\Sources\\Software
+-   D:\\Sources\\Software\\Adobe
+-   D:\\Sources\\Software\\Microsoft
 
 ![figure 7](../images/mdt-06-fig07.png)
 
-The E:\\Sources\\OSD folder structure.
+The D:\\Sources\\OSD folder structure.
+
+**Note: here**------------------
+
+To create this folder structure, run the following commands from an elevated Windows PowerShell prompt:
+
+```powershell
+New-Item -ItemType Directory -Path "D:\Sources"
+New-Item -ItemType Directory -Path "D:\Sources\OSD"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\Boot"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\DriverPackages"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\DriverSources"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\OS"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\Settings"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\Branding"
+New-Item -ItemType Directory -Path "D:\Sources\OSD\MDT"
+New-Item -ItemType Directory -Path "D:\Sources\Software"
+New-Item -ItemType Directory -Path "D:\Sources\Software\Adobe"
+New-Item -ItemType Directory -Path "D:\Sources\Software\Microsoft"
+New-Item -ItemType Directory -Path "D:\Logs"
+New-SmbShare -Name Sources$ -Path D:\Sources -ChangeAccess EVERYONE
+New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
+```
 
 ## Integrate Configuration Manager with MDT
 
@@ -193,17 +210,17 @@ Configuration Manager has many options for starting a deployment, but starting v
 
     Configure the CM01 distribution point for PXE.
 
-4.  Using the Configuration Manager Trace Log Tool, review the E:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
+4.  Using the Configuration Manager Trace Log Tool, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
     ![figure 13](../images/mdt-06-fig14.png)
 
     The distmgr.log displays a successful configuration of PXE on the distribution point.
 
-5.  Verify that you have seven files in each of the folders **E:\\RemoteInstall\\SMSBoot\\x86** and **E:\\RemoteInstall\\SMSBoot\\x64**.
+5.  Verify that you have seven files in each of the folders **D:\\RemoteInstall\\SMSBoot\\x86** and **D:\\RemoteInstall\\SMSBoot\\x64**.
 
     ![figure 14](../images/mdt-06-fig15.png)
 
-    The contents of the E:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
+    The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
 ## Components of Configuration Manager operating system deployment
 
