@@ -35,7 +35,7 @@ Depending on your environment, some tools are better suited for certain architec
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](../../../../downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
+|[![Thumb image for Microsoft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](./downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](./downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/live/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
    
 ## Related topics
