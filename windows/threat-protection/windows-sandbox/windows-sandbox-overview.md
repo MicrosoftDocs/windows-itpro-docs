@@ -43,7 +43,7 @@ RedTiger ID for embedding video requested 3/10 - Open WorkItem 25505527
 
 At its core, Windows Sandbox is a lightweight virtual machine, so it needs an operating system image to boot from. Instead of giving the sandbox a separate copy of Windows to boot from, our Dynamic Base Image technology lets us use the copy of Windows that's already installed on the host.
 
-Most OS files are immutable and can be freely shared with Windows Sandbox. A small portion of the OS file are mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
+Most OS files are immutable and can be freely shared with Windows Sandbox. A small portion of the OS files are mutable and we can't be shared. Windows Sandbox contains pristine copies of these files. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
  
 Before Windows Sandbox is installed, the dynamic base image is stored in a compressed 25-MB package. Once it's installed, the dynamic base package occupies about 500 MB of disk space.
 
@@ -51,7 +51,7 @@ Before Windows Sandbox is installed, the dynamic base image is stored in a compr
 
 ### Memory management
 
-With traditional virtual machines (VMs) a portion of host memory is dedicated for exclusive use by the VM.  If the host later comes under resource pressure, it can't use the memory that was dedicated to the VM.  Nor can it provide more memory, if available, to the VM. Windows Sandbox treats memory more like how memory is allocated to applications. All apps on the machine can request the amount of memory that they need. The amount that they get will be a function of what other apps are running and how much memory they need. And the amount of memory available for use by an application can change over time.
+For traditional virtual machines (VMs), a portion of host memory is dedicated for exclusive use by the VM.  If the host later comes under resource pressure, it can't use the memory that was dedicated to the VM.  Nor can it provide more memory, if available, to the VM. Windows Sandbox treats memory more like how memory is allocated to applications. All apps on the machine can request the amount of memory that they need. The amount that they get will be a function of what other apps are running and how much memory they need. And the amount of memory available for use by an application can change over time.
  
 ### Dynamic working set
 
@@ -116,7 +116,7 @@ Windows Sandbox is also aware of the host's battery state, which allows it to op
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
 - At least 1 GB of free disk space (SSD recommended)
-- At least 2 CPU cores (4 cores with hyperthreading recommended)
+- At least two CPU cores (four cores with hyperthreading recommended)
 
 ### Installation
 
@@ -133,12 +133,12 @@ Windows Sandbox is also aware of the host's battery state, which allows it to op
 ### Usage 
 1. Copy an executable file (and any other files needed to run the application) from the host into the Windows Sandbox window.
 2. Run the executable file or installer inside the sandbox.
-3.  When you're finished experimenting, close the sandbox. A dialog box will state that all sthe sandbox content will be discarded and permanently deleted. Select **ok**.
+3.  When you're finished experimenting, close the sandbox. A dialog box will state that all sandbox content will be discarded and permanently deleted. Select **ok**.
 4. Confirm that your host machine doesn't exhibit any of the modifications that you made in Windows Sandbox.
 
 ## Use a .wsb file to configure Windows Sandbox
 
-Windows Sandbox supports simple configuration files (that have a .wsb file extension), which provide a minimal set of customization parameters for Sandbox. This feature can be used with any Windows 10 build 18342 or later.
+Windows Sandbox supports simple configuration files (that have a .wsb file extension), which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later.
 
 Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the .wsb file extension. To use a configuration file, double-click it to open it in the sandbox. You can also invoke it via the command line as shown here:<BR/>
     **C:\Temp> MyConfigFile.wsb** 
@@ -215,7 +215,7 @@ Example: "C:\Test" will be mapped as "C:\users\WDAGUtilityAccount\Desktop\Test b
 
 *SandboxFolder*: Specifies the destination in the Sandbox to map the folder to. If the folder doesn't exist, it will be created.
 
-*ReadOnly*: If *true*, enforces *read-only* access to the shared folder from within the container. Supported values: true/false. Defaults to false.
+*ReadOnly*: If *true*, enforces *read-only* access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
 > [!NOTE] 
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
@@ -228,7 +228,7 @@ Example: "C:\Test" will be mapped as "C:\users\WDAGUtilityAccount\Desktop\Test b
 </LogonCommand>
 ```
 
-*Command*: A path to an executable or script inside of the container that will be executed after login.
+*Command*: A path to an executable or script inside the container that will be executed after login.
 
 > [!NOTE]
 > Although very simple commands work (such as launching an executable or script), more-complicated scenarios that have multiple steps should be placed in a script file. This script file can be mapped to the container via a shared folder and then executed via the *LogonCommand* directive.
@@ -295,13 +295,13 @@ VSCode.wsb
 
 **AudioInput**
 
-Enables or disables audio input to Sandbox.
+Enables or disables audio input to the sandbox.
 
 `<AudioInput>value</AudioInput>`
 
 Supported values:
-- *Enable*: Enables audio input in Sandbox. If this value is set, Sandbox will be able to receive audio input from the user. Applications that use a microphone may need this setting.
-- *Disable*: Disables audio input in Sandbox. If this value is set, Sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
+- *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox will be able to receive audio input from the user. Applications that use a microphone may need this setting.
+- *Disable*: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
 - *Default*: This is the default value for audio input support. Currently this means audio input is enabled.
  
 **VideoInput**
@@ -312,8 +312,8 @@ Enables or disables video input to the sandbox.
 
 Supported values:
 - *Enable*: Enables video input in the sandbox. 
-- *Disable*: Disables video input in the sandbox. Applications that use video input may not function properly in Windows Sandbox.
-- *Default*: This is the default value for video input support. Currently this means video input is disabled. Applications that use video input may not function properly in Windows Sandbox.
+- *Disable*: Disables video input in the sandbox. Applications that use video input may not function properly in the sandbox.
+- *Default*: This is the default value for video input support. Currently this means video input is disabled. Applications that use video input may not function properly in the sandbox.
 
 **ProtectedClient**
 
