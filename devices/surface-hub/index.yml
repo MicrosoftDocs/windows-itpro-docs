@@ -13,8 +13,11 @@ metadata:
   ms.topic: hub-page # Required
   ms.prod: surface-hub
   ms.technology: windows
+  audience: ITPro
+  ms.localizationpriority: medium
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  manager: laurawi
 
 # highlightedContent section (optional)
 # Maximum of 8 items
