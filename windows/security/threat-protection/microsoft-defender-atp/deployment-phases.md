@@ -1,7 +1,7 @@
 ---
 title: Deployment phases
-description: 
-keywords: 
+description: Learn how to prepare, setup, and onboard endpoints to deploy Microsoft Defender ATP
+keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
