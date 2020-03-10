@@ -40,6 +40,10 @@ You can use the Threat & Vulnerability Management capability in [Microsoft Defen
 > [!NOTE]
 > Machines that are not active in the last 30 days are not factored in on the data that reflects your organization's Threat & Vulnerability Management exposure score and configuration score.
 
+Watch this video for a quick overview of what is in the Threat & Vulnerability Management dashboard.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r1nv]
+
 ## Threat & Vulnerability Management in Microsoft Defender Security Center
 
 When you open the portal, you'll see the main areas of the capability:
