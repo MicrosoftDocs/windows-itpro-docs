@@ -27,12 +27,16 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 - Mobile Device Management tools
 - Local script
 
-Some tools are better suited for certain architectures. The architectural material helps you plan your deployment for the following architectures:
-- Cloud-native
-- Co-management
-- On-premise
-- Evaluation and local onboarding
+
+## Microsoft Defender ATP deployment strategy
+
+Depending on your environment, some tools are better suited for certain architectures.
 
 
-PUT LINKS TO THE FINALIZED VERSIONS OF CHRIS H'S VISIOS
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microosft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](../../../../downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
+   
+## Related topics
+- [Deployment phases](deployment-phases.md)

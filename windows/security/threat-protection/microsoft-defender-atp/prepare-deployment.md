@@ -182,5 +182,3 @@ how the endpoint security suite should be enabled.
 |:-------|:-----|
 |![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Setup Microsoft Defender ATP deployment
 
-## Related topic
-- [Production deployment](production-deployment.md)
