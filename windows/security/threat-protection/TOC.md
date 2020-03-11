@@ -31,7 +31,7 @@
 ### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 ### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 ### [Configuration score](microsoft-defender-atp/configuration-score.md)
-### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 ### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 ### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
@@ -456,7 +456,7 @@
 ####### [Get machine related alerts](microsoft-defender-atp/get-machine-related-alerts.md)
 ####### [Get installed software](microsoft-defender-atp/get-installed-software.md)
 ####### [Get discovered vulnerabilities](microsoft-defender-atp/get-discovered-vulnerabilities.md)
-####### [Get security recommendation](microsoft-defender-atp/get-security-recommendations.md)
+####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 
