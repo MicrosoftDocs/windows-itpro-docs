@@ -29,16 +29,17 @@ In this topic, you will use an existing Configuration Manager server structure t
 
 - Configuration Manager current branch + all security and critical updates are installed.
   - Procedures in this guide use Version 1910.
-- The Active Directory Schema has been extended and System Management container created.
-- Active Directory Forest Discovery and Active Directory System Discovery have been enabled.
-- IP range boundaries and a boundary group for content and site assignment have been created.
-- The Configuration Manager reporting services point role has been added and configured.
-- A file system folder structure and Configuration Manager console folder structure for packages has been created.
-- The Windows ADK (including USMT), Windows PE, MDT, and DaRT (optional) are installed.
+- The [Active Directory Schema has been extended](https://docs.microsoft.com/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
+- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/configure-discovery-methods).
+- IP range [boundaries and a boundary group](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
+- The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
+- A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided in this article](#review-the-sources-folder-structure).
+- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT), Windows PE add-on, WSIM update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259), and DaRT (optional) are installed.
+- The CMTrace tool (part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717)) is installed on the distribution point.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
 - DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server.
-- CM01 is a domain member server and is configured as a Configuration Manager standalone primary site server. 
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
 - HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer does not need to be a domain member.
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
@@ -193,7 +194,7 @@ New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
 
 ## Integrate Configuration Manager with MDT
 
-To extend the Configuration Manager console with MDT wizards and templates, install MDT with the default settings and run the Config Manager integration setup. In these steps, we assume you have already [downloaded MDT](https://www.microsoft.com/download/details.aspx?id=54259) and installed it with default settings.
+To extend the Configuration Manager console with MDT wizards and templates, install MDT with the default settings and run the **Configure ConfigManager Integration** desktop app. In these steps, we assume you have already [downloaded MDT](https://www.microsoft.com/download/details.aspx?id=54259) and installed it with default settings.
 
 On **CM01**:
 
@@ -206,14 +207,16 @@ On **CM01**:
 
 ![figure 8](../images/mdt-06-fig08.png)
 
-Set up the MDT integration with Configuration Manager.
+MDT integration with Configuration Manager.
 
 ## Configure the client settings
 
 Most organizations want to display their name during deployment. In this section, you configure the default Configuration Manager client settings with the Contoso organization name.
 
-1.  On CM01, using the Configuration Manager Console, in the Administration workspace, select **Client Settings**.
-2.  In the right pane, right-click **Default Client Settings**, and select **Properties**.
+On **CM01**:
+
+1.  Open the Configuration Manager Console, select the Administration workspace, then click **Client Settings**.
+2.  In the right pane, right-click **Default Client Settings** and then click **Properties**.
 3.  In the **Computer Agent** node, in the **Organization name displayed in Software Center** text box, type in **Contoso** and click **OK**.
 
 ![figure 9](../images/mdt-06-fig10.png)
@@ -226,14 +229,15 @@ The Contoso organization name displayed during deployment.
 
 ## Configure the Network Access account
 
+Configuration Manager uses the Network Access account during the Windows 10 deployment process to access content on the distribution points. In this section, you configure the Network Access account.
 
-Configuration Manager uses the Network Access account during the Windows 10 deployment process to access content on the distribution point(s). In this section, you configure the Network Access account.
+On **CM01**:
 
 1.  Using the Configuration Manager Console, in the Administration workspace, expand **Site Configuration** and select **Sites**.
-2.  Right-click **PS1 - Primary Site 1**, select **Configure Site Components**, and then select **Software Distribution**.
-3.  In the **Network Access Account** tab, configure the **CONTOSO\\CM\_NAA** user account (select New Account) as the Network Access account. Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
+2.  Right-click **PS1 - Primary Site 1**, point to **Configure Site Components**, and then select **Software Distribution**.
+3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the **CONTOSO\\CM\_NAA** user account (select New Account) as the Network Access account. Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
 
-![figure 11](../images/mdt-06-fig12.png)
+![figure 12](../images/mdt-06-fig12.png)
 
 Test the connection for the Network Access account.
 
@@ -241,21 +245,26 @@ Test the connection for the Network Access account.
 
 Configuration Manager has many options for starting a deployment, but starting via PXE is certainly the most flexible in a large environment. In this section, you enable PXE on the CM01 distribution point.
 
+On **CM01**:
+
 1.  In the Configuration Manager Console, in the Administration workspace, select **Distribution Points**.
 2.  Right-click the **\\\\CM01.CONTOSO.COM distribution point** and select **Properties**.
-3.  In the **PXE** tab, select the following settings:
+3.  On the **PXE** tab, use the following settings:
 
     * Enable PXE support for clients
     * Allow this distribution point to respond to incoming PXE requests
-    * Enable unknown computer support
+    * Enable unknown computer
     * Require a password when computers use PXE
-    * Password and Confirm password: Passw0rd!
+    * Password and Confirm password: pass@word1
 
     ![figure 12](../images/mdt-06-fig13.png)
 
     Configure the CM01 distribution point for PXE.
 
-4.  Using the Configuration Manager Trace Log Tool, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
+    >[!NOTE]
+    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+
+4.  Using the CMTrace tool, review the C:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
     ![figure 13](../images/mdt-06-fig14.png)
 
@@ -266,6 +275,10 @@ Configuration Manager has many options for starting a deployment, but starting v
     ![figure 14](../images/mdt-06-fig15.png)
 
     The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
+
+    **Note**: These files are used by WDS. They are not used by the ConfigMgr PXE Responder.
+
+Next, see [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
 
 ## Components of Configuration Manager operating system deployment
 
@@ -374,12 +387,3 @@ You can create reference images for Configuration Manager in Configuration Manag
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-
- 
-
- 
-
-
-
-
-

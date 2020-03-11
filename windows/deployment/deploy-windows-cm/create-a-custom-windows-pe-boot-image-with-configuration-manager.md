@@ -20,18 +20,18 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 versions 1507, 1511
-
->[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+-   Windows 10
 
 In Microsoft Microsoft Endpoint Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This topic shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
 
-For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. Both are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
+- DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server.
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
+- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer does not need to be a domain member.
 
-## <a href="" id="sec01"></a>Add DaRT 10 files and prepare to brand the boot image
+All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
+## Add DaRT 10 files and prepare to brand the boot image
 
 The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. We assume you have downloaded Microsoft Desktop Optimization Pack (MDOP) 2015 and copied the x64 version of MSDaRT10.msi to the C:\\Setup\\DaRT 10 folder. We also assume you have created a custom background image and saved it in C:\\Setup\\Branding on CM01. In this section, we use a custom background image named ContosoBackground.bmp.
 
