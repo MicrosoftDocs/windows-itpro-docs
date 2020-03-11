@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "devices/hololens/hololens-whats-new.md",
+"redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
 "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
 "redirect_document_id": true
@@ -1377,11 +1382,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-secure-score",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
@@ -1727,17 +1727,12 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/overview-secure-score.md",
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-secure-score.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/secure-score-dashboard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
-"redirect_document_id": false
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/enable-secure-score.md",
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
 "redirect_document_id": false
 },
@@ -15612,6 +15607,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/deployment/update/windows-analytics-azure-portal.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
 "redirect_document_id": false
@@ -15719,6 +15719,26 @@
 {
 "source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/mdt-lite-touch-components.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
 "redirect_document_id": false
 }
 ]

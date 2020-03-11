@@ -44,7 +44,9 @@
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
-### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+### [Next-generation protection]()
+#### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+#### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
 #### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
@@ -136,8 +138,8 @@
 
 
 #### [Custom detections]()
-##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
+##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
@@ -277,7 +279,7 @@
 ###### [Exclusions overview](windows-defender-antivirus/configure-exclusions-windows-defender-antivirus.md)
 ###### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)
 ###### [Configure and validate exclusions for files opened by processes](windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-###### [Configure antivirus exclusions Windows Server 2016](windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus.md)
+###### [Configure antivirus exclusions Windows Server 2016 and 2019](windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus.md)
 
 ##### [Configure scanning antivirus options](windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus.md)
 ##### [Configure remediation for scans](windows-defender-antivirus/configure-remediation-windows-defender-antivirus.md)
@@ -508,7 +510,7 @@
 #### [Common Vulnerabilities and Exposures (CVE) to KB map]()
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
-#### [Pull detections to your SIEM tools]()
+
 #### [Raw data streaming API]()
 ##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)

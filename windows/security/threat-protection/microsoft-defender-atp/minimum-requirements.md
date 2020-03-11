@@ -37,6 +37,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
 
