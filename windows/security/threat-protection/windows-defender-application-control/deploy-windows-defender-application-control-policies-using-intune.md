@@ -14,11 +14,8 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/17/2018
+ms.date: 02/28/2020
 ---
-
-> [!NOTE]
-> For WDAC enhancements see [Delivering major enhancements in Windows Defender Application Control with the Windows 10 May 2019 Update](https://www.microsoft.com/security/blog/2019/07/01/).
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
 
@@ -32,6 +29,10 @@ You can use Microsoft Endpoint Manager (MEM) Intune to configure Windows Defende
 In order to deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. Beginning in 1903, Custom OMA-URI policy deployment leverages the [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp), which has support for multiple policies and rebootless policies. Custom OMA-URI can also be used on pre-1903 systems to deploy custom policies via the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
 
 ## Using Intune's Built-In Policies
+
+Intune's built-in WDAC support enables you to deploy a policy which only allows Windows components and Microsoft Store apps to run. This policy is the non-Multiple Policy Format version of the DefaultWindows policy; the Multiple Policy Format version can be found at C:\Windows\schemas\CodeIntegrity\ExamplePolicies.
+
+Setting "Trust apps with good reputation" to enabled is equivalent to adding [Option 14 (Enabled: Intelligent Security Graph Authorization)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-policy-rules) to the DefaultWindows policy.
 
 1. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
 
