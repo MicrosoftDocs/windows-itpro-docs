@@ -7,6 +7,10 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: medium
+ms.custom: 
+- CI 115225
+- CSSTroubleshooting
+keywords: localize, language support, display language, keyboard language, IME, keyboard layout
 ms.date: 9/12/2019
 audience: ITPro
 ms.reviewer: jarrettr
@@ -49,7 +53,7 @@ The setup process configures your HoloLens for a region and language. You can ch
 1. Go to the **Start** menu, and then select **Settings** > **Time and language** > **Language**.
 2. Select **Windows display language**, and then select a language.  
 
-If the supported language you’re looking for is not in the menu, follow these steps: 
+If the supported language you're looking for is not in the menu, follow these steps: 
 
 1. Under **Preferred languages** select **Add a language**. 
 2. Search for and add the language.
