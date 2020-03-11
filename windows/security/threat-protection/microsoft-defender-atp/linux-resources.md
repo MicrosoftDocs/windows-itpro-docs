@@ -68,7 +68,7 @@ There are several ways to uninstall Microsoft Defender ATP for Linux. If you are
 
 ### Manual uninstallation
 
-- ```sudo yum remove mdatp``` for RHEL and variants(CentOS and Oracle EL).
+- ```sudo yum remove mdatp``` for RHEL and variants(CentOS and Oracle Linux).
 - ```sudo zypper remove mdatp``` for SLES and variants.
 - ```sudo apt-get purge mdatp``` for Ubuntu and Debian systems.
 

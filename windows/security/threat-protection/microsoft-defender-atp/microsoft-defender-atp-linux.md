@@ -82,7 +82,7 @@ In general you need to take the following steps:
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
-  - Oracle Enterprise Linux 7
+  - Oracle Linux 7
 
 - Minimum kernel version 2.6.38
 - The `fanotify` kernel option must be enabled
