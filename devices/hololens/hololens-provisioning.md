@@ -1,5 +1,4 @@
 ---
-
 title: Configure HoloLens by using a provisioning package (HoloLens)
 
 description: Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging.
@@ -55,7 +54,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
 
-Provisioning packages can include management instructions and policies, customization of network connections and policies, and more.
+Provisioning packages can include management instructions and policies, custom network connections and policies, and more.
 
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
