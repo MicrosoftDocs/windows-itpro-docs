@@ -24,6 +24,7 @@ ms.topic: conceptual
 > For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
+<p></p>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
@@ -58,7 +59,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Management and APIs</a></b></center></td>
+<a href="#apis"><center><b>Centratlized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
 <td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
@@ -115,7 +116,7 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 
 <a name="apis"></a>
 
-**[Management and APIs](management-apis.md)**<br>
+**[Centralized configuration and administration, APIs](management-apis.md)**<br>
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 
 <a name="mtp"></a>
@@ -132,15 +133,6 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 **[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
  With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.
 
-## In this section
-To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Microsoft Defender Security Center. 
-
-Topic | Description
-:---|:---
-[Overview](overview.md) | Understand the concepts behind the capabilities in Microsoft Defender ATP so you take full advantage of the complete threat protection platform. 
-[Minimum requirements](minimum-requirements.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Microsoft Defender ATP.
-[Configure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Microsoft Defender ATP. 
-[Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md) | Learn how to address issues that you might encounter while using the platform.
 
 ## Related topic
 [Microsoft Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
