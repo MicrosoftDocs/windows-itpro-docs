@@ -73,7 +73,7 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Server 2016, version 1803
+  - Windows Server, version 1803 or later
   - Windows Server 2019
 
 Machines on your network must be running one of these editions.
