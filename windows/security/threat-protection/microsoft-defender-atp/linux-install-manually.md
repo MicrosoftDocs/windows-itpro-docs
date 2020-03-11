@@ -50,7 +50,7 @@ In order to preview new features and provide early feedback, it is recommended t
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
-    > In case of Oracle Linux and CentOS 8, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
