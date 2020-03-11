@@ -11,7 +11,7 @@ metadata:
   manager: laurawi
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.audience: itpro
+  audience: itpro
   ms.localizationpriority: High
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
