@@ -140,7 +140,7 @@ Create subtask or role files that contribute to an actual task. Create the follo
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux and CentOS 8, replace *[distro]* with “rhel”.
 
     - For apt-based distributions use the following YAML file:
 
