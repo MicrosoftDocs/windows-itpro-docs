@@ -23,7 +23,7 @@ appliesto:
 
 If you plan on managing your HoloLens devices, you will need Azure AD and an MDM. Active Director (AD) cannot be used to manage HoloLens devices.
 If you plan on using an MDM other than Intune, an [Azure Active Directory Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
-If you plan on using Intune as your MDM, you can acquire an [Enterprise Mobility + Security (EMS) suite (E3 or E5) licenses](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing). **Please note that Azure AD is included in both suites.**
+If you plan on using Intune as your MDM,  [here](https://docs.microsoft.com/intune/fundamentals/licenses) are a list of suites that includes Intune licenses. **Please note that Azure AD is included in the majority of these suites.**
 
 ## Identify the licenses needed for your scenario and products
 
@@ -43,6 +43,8 @@ Make sure you have the required licensing and device. Updated licensing and prod
 1. [Remote Assist License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure Active Directory (Azure AD) License](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+
+If you plan on implementing **[this cross-tenant scenario](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**, you may need an Information Barriers license. Please see [this article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) to determine if an Information Barrier License is required.
 
 ### Guides License Requirements
 

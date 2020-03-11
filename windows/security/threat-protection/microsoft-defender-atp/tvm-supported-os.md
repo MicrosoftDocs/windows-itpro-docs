@@ -1,15 +1,15 @@
 ---
-title: Threat & Vulnerability Management supported operating systems
+title: Threat & Vulnerability Management supported operating systems and platforms
 description: Before you begin, ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your all devices are properly accounted for. 
-keywords: mdatp-tvm supported os, mdatp-tvm, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
+keywords: threat & vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -54,4 +54,3 @@ Some of the above prerequisites might be different from the [Minimum requirement
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-
