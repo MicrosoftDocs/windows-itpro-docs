@@ -53,8 +53,6 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 
 ## HoloLens 2: Connect USB-C devices
 
-HoloLens 2 lets you connect a wide range of USB-C devices.
-
 HoloLens 2 supports the following classes of USB-C devices:
 
 - Mass storage devices (such as thumb drives)
