@@ -605,7 +605,7 @@
 
 
 
-### [Access the Windows Defender Security Center Community Center](microsoft-defender-atp/community.md)
+### [Access the Microsoft Defender ATP Community Center](microsoft-defender-atp/community.md)
 
 
 
