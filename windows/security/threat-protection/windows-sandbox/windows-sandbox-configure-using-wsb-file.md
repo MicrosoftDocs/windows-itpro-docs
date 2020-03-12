@@ -15,7 +15,7 @@ ms.reviewer:
 
 # Use a .wsb file to configure Windows Sandbox
 
-Windows Sandbox supports simple configuration files (that have a .wsb file extension), which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later.
+Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later.
 
 Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the .wsb file extension. To use a configuration file, double-click it to open it in the sandbox. You can also invoke it via the command line as shown here:
 
@@ -25,7 +25,7 @@ Windows Sandbox configuration files are formatted as XML and are associated with
 - **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox will use WARP (software rasterizer).
 - **Networking**: Enable or disable network access within the sandbox.
 - **Mapped folders**: Share folders from the host with *read* or *write* permissions. Note that exposing host directories may allow malicious software to affect the system or steal data.
-- **Logon command**: A command that's executed when Windows Sandbox starts. <LogonCommand>
+- **Logon command**: A command that's executed when Windows Sandbox starts.
 - **Audio input**: Shares the host's microphone input into the sandbox.
 - **Video input**: Shares the host's webcam input into the sandbox.
 - **Protected client**: Places increased security settings on the RDP session to the sandbox.
@@ -58,37 +58,33 @@ Supported values:
 > [!NOTE]
 > Enabling networking can expose untrusted applications to the internal network.
 
-**MappedFolders**: Wraps a list of MappedFolder objects.
+**Mapped Folders**: An array of folders, each representing a location on the host machine which will be shared into the sandbox at the specified path. If no path is specified, the folder will be mapped to the container user's desktop.
 
 `<MappedFolders>`
-    list of MappedFolder objects
+      list of MappedFolder objects  <MappedFolder> 
+       <HostFolder>path to the host folder</HostFolder> 
+       <SandboxFolder>path to the sandbox folder</SandboxFolder> 
+       <ReadOnly>value</ReadOnly> 
+  </MappedFolder>
+  <MappedFolder>  
+    ...
+  </MappedFolder>
+
 `</MappedFolders>`
 
-> [!NOTE]
-> Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
-
-**MappedFolder**: Specifies a single folder on the host machine that will be shared on the container desktop. Apps in the sandbox are run under the user account *WDAGUtilityAccount*. If no sandbox path is specified, a folder is mapped to the following path:<br/>`C:\Users\WDAGUtilityAccount\Desktop`
-
-Example: "C:\Test" will be mapped as "C:\users\WDAGUtilityAccount\Desktop\Test by default.
-
-```
-<MappedFolder>
-     <HostFolder>path to the host folder</HostFolder>
-     <SandboxFolder>path to the sandbox folder</SandboxFolder>
-     <ReadOnly>value</ReadOnly>
-</MappedFolder>
 ```
 
-*HostFolder*: Specifies the folder on the host machine to share to the sandbox. The folder must already exist on the host, or the container will fail to start if the folder isn't found.
+*HostFolder*: Specifies the folder on the host machine to share into the sandbox. Note that the folder must already exist on the host or the container will fail to start.
 
-*SandboxFolder*: Specifies the destination in the Sandbox to map the folder to. If the folder doesn't exist, it will be created.
+*SandboxFolder*: Specifies the destination in the sandbox to map the folder to. If the folder does not exist, it will be created. If no sandbox folder is specified, the folder will be mapped to the container desktop.
 
-*ReadOnly*: If *true*, enforces *read-only* access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
+*ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: true/false. Defaults to false.
+
 
 > [!NOTE] 
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
 
-**LogonCommand**: Specifies a single command that will be invoked automatically after the sandbox logs on.
+**Logon Command**: Specifies a single command which will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
 
 ```
 <LogonCommand>
@@ -99,11 +95,69 @@ Example: "C:\Test" will be mapped as "C:\users\WDAGUtilityAccount\Desktop\Test b
 *Command*: A path to an executable or script inside the container that will be executed after login.
 
 > [!NOTE]
-> Although very simple commands work (such as launching an executable or script), more-complicated scenarios that have multiple steps should be placed in a script file. This script file can be mapped to the container via a shared folder and then executed via the *LogonCommand* directive.
+> Although very simple commands will work (launching an executable or script), more complicated scenarios involving multiple steps should be placed into a script file. This script file may be mapped into the container via a shared folder, and then executed via the *LogonCommand* directive.
 
-***Example 1***
+**AudioInput**: Enables or disables audio input to the sandbox.
 
-The following config file can be used to easily test downloaded files inside the sandbox. To do this, the script disables networking and vGPU and restricts the shared downloads folder to *read-only* access in the container. For convenience, the logon command opens the downloads folder inside the container when it's started.
+`<AudioInput>value</AudioInput>`
+
+Supported values:
+- *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox will be able to receive audio input from the user. Applications that use a microphone may need this setting.
+- *Disable*: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
+- *Default*: This is the default value for audio input support. Currently this means audio input is enabled.
+
+> [!NOTE]
+> There may be security implications of exposing host audio input to the container.
+ 
+**VideoInput**: Enables or disables video input to the sandbox.
+
+`<VideoInput>value</VideoInput>`
+
+Supported values:
+- *Enable*: Enables video input in the sandbox. 
+- *Disable*: Disables video input in the sandbox. Applications that use video input may not function properly in the sandbox.
+- *Default*: This is the default value for video input support. Currently this means video input is disabled. Applications that use video input may not function properly in the sandbox.
+
+> [!NOTE]
+> There may be security implications of exposing host video input to the container.
+
+**Protected Client**: Implements increased-security settings on the sandbox RDP session. These settings decrease the attack surface of the sandbox.
+
+`<ProtectedClient>value</ProtectedClient>`
+
+Supported values:
+- *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the sandbox runs with extra security mitigations enabled.
+- *Disable*: Runs the sandbox in standard mode without extra security mitigations.
+- *Default*: This is the default value for Protected Client mode. Currently, this means the sandbox doesn't run in Protected Client mode.
+
+> [!NOTE]
+> This setting may restrict the user's ability to copy/paste files in and out of the sandbox.
+
+**Printer Redirection**: Enables or disables printer sharing from the host into the sandbox.
+
+`<PrinterRedirection>value</PrinterRedirection>`
+
+Supported values:
+- *Enable*: Enables sharing of host printers into the sandbox.
+- *Disable*: Disables printer redirection in the sandbox. If this value is set, the sandbox can't view printers from the host.
+- *Default*: This is the default value for printer redirection support. Currently this means printer redirection is disabled.
+
+**ClipboardRedirection**: Enables or disables sharing of the host clipboard with the sandbox.
+
+`<ClipboardRedirection>value</ClipboardRedirection>`
+
+Supported values:
+- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
+- *Default*: This is the default value for clipboard redirection. Currently copy/paste between the host and sandbox are permitted under *Default*.
+
+**MemoryInMB**: Specifies the amount of memory that the sandbox can use in megabytes (MB).
+
+`<MemoryInMB>value</MemoryInMB>`
+
+If the memory value specified is insufficient to boot a sandbox, it will be automatically increased to the required minimum amount.
+
+***Example 1***   
+The following config file can be used to easily test downloaded files inside of the sandbox. To achieve this, the script disables networking and vGPU, and restricts the shared downloads folder to read-only access in the container. For convenience, the logon command opens the downloads folder inside of the container when it is started.
 
 *Downloads.wsb*
 
@@ -114,34 +168,33 @@ The following config file can be used to easily test downloaded files inside the
  <MappedFolders>
     <MappedFolder>
       <HostFolder>C:\Users\Public\Downloads</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads</SandboxFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
  </MappedFolders>
  <LogonCommand>
-    <Command>explorer.exe C:\users\WDAGUtilityAccount\Desktop\Downloads</Command>
+    <Command>explorer.exe C:\users\WDAGUtilityAccount\Downloads</Command>
  </LogonCommand>
-</Configuration>
+</```Configuration>
 ```
-
 ***Example 2***
-
 The following config file installs Visual Studio Code in the sandbox, which requires a slightly more complicated LogonCommand setup.
 
-Two folders are mapped into the sandbox. The first folder (SandboxScripts) contains VSCodeInstall.cmd, which installs and runs Visual Studio Code. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify by using Visual Studio Code.
+Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which will install and run VSCode. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using VSCode.
 
-With the Visual Studio Code installer script already mapped into the sandbox, the LogonCommand can reference it.
+With the VSCode installer script already mapped into the sandbox, the LogonCommand can reference it.
 
 *VSCodeInstall.cmd*
 
 ```
-REM Download Visual Studio Code
+REM Download VSCode
 curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
 
-REM Install and run Visual Studio Code
+REM Install and run VSCode
 C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 ```
 
-VSCode.wsb
+8VSCode.wsb*
 
 ```
 <Configuration>
@@ -160,59 +213,6 @@ VSCode.wsb
  </LogonCommand>
 </Configuration>
 ```
-
-**AudioInput**: Enables or disables audio input to the sandbox.
-
-`<AudioInput>value</AudioInput>`
-
-Supported values:
-- *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox will be able to receive audio input from the user. Applications that use a microphone may need this setting.
-- *Disable*: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
-- *Default*: This is the default value for audio input support. Currently this means audio input is enabled.
- 
-**VideoInput**: Enables or disables video input to the sandbox.
-
-`<VideoInput>value</VideoInput>`
-
-Supported values:
-- *Enable*: Enables video input in the sandbox. 
-- *Disable*: Disables video input in the sandbox. Applications that use video input may not function properly in the sandbox.
-- *Default*: This is the default value for video input support. Currently this means video input is disabled. Applications that use video input may not function properly in the sandbox.
-
-**ProtectedClient**: Implements increased-security settings on the sandbox RDP session. These settings decrease the attack surface of the sandbox.
-
-`<ProtectedClient>value</ProtectedClient>`
-
-Supported values:
-- *Enable*: Runs Windows Sandbox in Protected Client mode. If this value is set, the sandbox runs with extra security mitigations enabled.
-- *Disable*: Runs the sandbox in standard mode without extra security mitigations.
-- *Default*: This is the default value for Protected Client mode. Currently, this means the sandbox doesn't run in Protected Client mode.
-
-> [!NOTE]
-> This setting may restrict the user's ability to copy/paste files in and out of the sandbox.
-
-**PrinterRedirection**: Enables or disables printer sharing from the host into the sandbox.
-
-`<PrinterRedirection>value</PrinterRedirection>`
-
-Supported values:
-- *Enable*: Enables sharing of host printers into the sandbox.
-- *Disable*: Disables printer redirection in the sandbox. If this value is set, the sandbox can't view printers from the host.
-- *Default*: This is the default value for printer redirection support. Currently this means printer redirection is disabled.
-
-**ClipboardRedirection**: Enables or disables clipboard sharing with the sandbox.
-
-`<ClipboardRedirection>value</ClipboardRedirection>`
-
-Supported values:
-- *Disable*: Disables clipboard redirection in Sandbox. If this value is set, copy/paste in and out of Sandbox will be restricted. 
-- *Default*: This is the default value for clipboard redirection. Currently copy/paste between the host and Sandbox are permitted under *Default*.
-
-**MemoryInMB**: Specifies the amount of memory that the sandbox can use in megabytes (MB).
-
-`<MemoryInMB>value</MemoryInMB>`
-
-Supported values: An integer greater than 2048 (2 GB).
 
 <!--
 
