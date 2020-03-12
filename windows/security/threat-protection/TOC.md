@@ -315,6 +315,7 @@
 ###### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
 ##### [Troubleshoot]()
+###### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
 ###### [Troubleshoot performance issues](microsoft-defender-atp/mac-support-perf.md)
 ###### [Troubleshoot kernel extension issues](microsoft-defender-atp/mac-support-kext.md)
 ##### [Privacy](microsoft-defender-atp/mac-privacy.md)
@@ -409,6 +410,7 @@
 #### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 ##### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
+##### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
 
 
 
@@ -604,7 +606,7 @@
 
 
 
-### [Access the Windows Defender Security Center Community Center](microsoft-defender-atp/community.md)
+### [Access the Microsoft Defender ATP Community Center](microsoft-defender-atp/community.md)
 
 
 
