@@ -30,7 +30,7 @@ For the purposes of this guide, we will use one server computer: CM01.
 
 ## Add DaRT 10 files and prepare to brand the boot image
 
-The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. We assume you have downloaded [Microsoft Desktop Optimization Pack (MDOP) 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015) and copied the x64 version of MSDaRT100.msi to the **C:\\Setup\\DaRT 10** folder on CM01. We also assume you have created a custom background image and saved it in **C:\\Setup\\Branding** on CM01. In this section, we use a custom background image named <a href="../images/ContosoBackground.bmp">ContosoBackground.bmp</a>.
+The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. We assume you have downloaded [Microsoft Desktop Optimization Pack (MDOP) 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015) and copied the x64 version of MSDaRT100.msi to the **C:\\Setup\\DaRT 10** folder on CM01. We also assume you have created a custom background image and saved it in **C:\\Setup\\Branding** on CM01. In this section, we use a custom background image named <a href="../images/ContosoBackground.png">ContosoBackground.bmp</a>.
 
 On **CM01**:
 
