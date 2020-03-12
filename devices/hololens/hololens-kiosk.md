@@ -84,12 +84,14 @@ There are three methods that you can use to configure the device as a kiosk:
 
 Process:
 
-1. [Create a Device Configuration Policy](#create-a-device-configuration-policy).
-1. [Select the settings that you want to see in your kiosk](#select-the-settings-that-you-want-to-see-in-your-kiosk).
-1. Assign the Policy to the group to receive the policy.
+1. [Create a device configuration policy](#create-a-device-configuration-policy).
+1. Select the settings that you want to see in your kiosk.
+   - [Configure the settings for a single-app kiosk](#configure-the-settings-for-a-single-app-kiosk).
+   - [Configure the settings for a multi-app kiosk](#configure-the-settings-for-a-multi-app-kiosk).
+1. [Assign the policy to the group to receive the policy](#assign-the-policy-to-the-group-to-receive-the-policy).
 1. Set up the device.
-   - Single app Kiosk.
-   - Multi app Kiosk.
+   - [Set up a single-app kiosk](#set-up-a-single-app-kiosk).
+   - [Set up a multi-app kiosk](#set-up-a-multi-app-kiosk).
 
 ### Create a device configuration policy
 
@@ -103,15 +105,15 @@ For full details creating a device profile for Kiosk mode check out [Kiosk setti
 
 ### Select the settings that you want to see in your kiosk
 
-#### Configure a single-app kiosk
+#### Configure the settings for a single-app kiosk
 
 Select **Single-app kiosk**, then select **Local user account**. You’ll need to enter either the name of your local user, or your Microsoft Account you intend to be logged onto the device.
 Finally you’ll select the one app you want to be used in your kiosk. Ideally this should be a store app.
 For full details visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks).
 
-#### Configure a multi-app kiosk
+#### Configure the settings for a multi-app kiosk
 **Target Windows 10 in S mode devices**: Choose **No**. S mode isn't supported on Windows Holographic for Business.
-For **User logon type**: Add one or more user accounts that can use the apps you add. Your options that work with Windows Holographic are : **Azure AD user or group** or **HoloLens visitor**.
+For **User logon type**: Add one or more user accounts that can use the apps you add. Your options that work with Windows Holographic are: **Azure AD user or group** or **HoloLens visitor**.
 
 It’s important that the group or groups you choose includes users you want to use the Kiosk, if a user signs in with an account not included in this list  they will not have a Kiosk experience.
 
@@ -152,9 +154,9 @@ There is an important distinction between the **User logon type** and the **Assi
 ## Set up the device
 Now it’s time to set up the device to both receive the policy and log into the account the policy has enabled for kiosk mode.
 
-### Single-app kiosk
+### Set up a single-app kiosk
 
-Since Single-app kiosk mode targets a local user or Microsoft account you need to take a few extra steps to [enroll the HoloLens in MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm ), but sign in will be easy and can be automatic. 
+Since Single-app kiosk mode targets a local user or Microsoft account you need to take a few extra steps to [enroll the HoloLens in MDM](hololens-enroll-mdm.md), but sign in will be easy and can be automatic. 
 
 During OOBE sign into your **Microsoft Account** specified as a **Logon User Account**. 
 Then enroll the device so that your **device is enrolled in a group** for a group selected under the Kiosk mode policy’s **assignment**. 
@@ -162,7 +164,8 @@ Give your store app a short amount time to download as well as policy to be appl
 
 If you’re not seeing your Kiosk mode yet, make sure to [check the assignment status]( https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
-### Multi app Kiosk
+### Set up a multi-app kiosk
+
 For multi app Kiosk you’ll be using a device that you Azure AD join to your tenant during OOBE. 
 
 If you’re targeting a user group. you’ll want to sign in to an account that is a member of a group that’s also a group that the Kiosk is assigned to.
@@ -180,11 +183,12 @@ For HoloLens devices that are managed by Microsoft Intune, directions can be fou
 
 For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-a-kiosk-configuration-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
-## Set up kiosk mode using a provisioning package
+## Set up kiosk mode by using a provisioning package
 
 As part of creating your Provisioning package, you’ll need to create a [start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens).
 
 Process:
+
 1. [Create an XML file that defines the kiosk configuration.](#create-a-kiosk-configuration-xml-file)
 2. [Add the XML file to a provisioning package.](#add-the-kiosk-configuration-xml-file-to-a-provisioning-package)
 3. [Apply the provisioning package to HoloLens.](#apply-the-provisioning-package-to-hololens)
