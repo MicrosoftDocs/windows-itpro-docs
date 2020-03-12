@@ -69,17 +69,17 @@ On **CM01**:
 6.  On the **Customization** page, select the **Use a custom background bitmap file** check box, and in the **UNC path:** text box, browse to **\\\\CM01\\Sources$\\OSD\\Branding\\ContosoBackground.bmp** and then click **Next** twice. Wait a few minutes while the boot image is generated, and then click **Finish**.
 7.  Distribute the boot image to the CM01 distribution point by selecting the **Boot images** node, right-clicking the **Zero Touch WinPE x64** boot image, and selecting **Distribute Content**.
 8.  In the Distribute Content Wizard, add the CM01 distribution point, and complete the wizard.
-9.  Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Do not continue until you can see that the boot image is distributed. Look for the line that reads **STATMSG: ID=2301**. You also can monitor Content Status in the Configuration Manager Console under \Monitoring\Overview\Distribution Status\Content Status\Zero Touch WinPE x64. See the following examples:
+9.  Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Do not continue until you can see that the boot image is distributed. Look for the line that reads **STATMSG: ID=2301**. You also can monitor Content Status in the Configuration Manager Console at **\Monitoring\Overview\Distribution Status\Content Status\Zero Touch WinPE x64**. See the following examples:
 
     ![Content status for the Zero Touch WinPE x64 boot image](../images/fig16-contentstatus1.png "Content status for the Zero Touch WinPE x64 boot image")<br>
     ![Content status for the Zero Touch WinPE x64 boot image](../images/fig16-contentstatus2.png "Content status for the Zero Touch WinPE x64 boot image")
 
     Content status for the Zero Touch WinPE x64 boot image
 
-10. Using the Configuration Manager Console, in the Software Library workspace, under Boot Images, right-click the **Zero Touch WinPE x64** boot image and select **Properties**.
+10. Using the Configuration Manager Console, in the Software Library workspace, under **Boot Images**, right-click the **Zero Touch WinPE x64** boot image and select **Properties**.
 11. On the **Data Source** tab, select the **Deploy this boot image from the PXE-enabled distribution point** check box, and click **OK**.
-12. Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for this text: Expanding PS100009 to D:\\RemoteInstall\\SMSImages.
-13. Review the **D:\\RemoteInstall\\SMSImages** folder. You should see three folders containing boot images. Two are from the default boot images, and the third folder (PS100009) is from your new boot image with DaRT.
+12. Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for this text: **Expanding PS100009 to D:\\RemoteInstall\\SMSImages**.
+13. Review the **D:\\RemoteInstall\\SMSImages** folder. You should see three folders containing boot images. Two are from the default boot images, and the third folder (PS100009) is from your new boot image with DaRT. See the examples below:
 
     ![PS100009-1](../images/ps100009-1.png)<br>
     ![PS100009-2](../images/ps100009-2.png)
