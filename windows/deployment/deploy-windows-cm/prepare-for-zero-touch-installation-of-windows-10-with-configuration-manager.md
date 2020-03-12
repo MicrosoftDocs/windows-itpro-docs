@@ -21,20 +21,20 @@ ms.topic: article
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using [components](#components-of-configuration-manager-operating-system-deployment) of Microsoft Endpoint Configuration Manager that are [integrated with Microsoft Deployment Toolkit](#why-integrate-mdt-with-configuration-manager) (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager [integrated with Microsoft Deployment Toolkit](#why-integrate-mdt-with-configuration-manager) (MDT). 
 
 ## Prerequisites
 
-In this topic, you will use an existing Configuration Manager server structure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
+In this topic, you will use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 - Configuration Manager current branch + all security and critical updates are installed.
-  - Procedures in this guide use Version 1910.
+  - Note: Procedures in this guide use Version 1910.
 - The [Active Directory Schema has been extended](https://docs.microsoft.com/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
 - Active Directory Forest Discovery and Active Directory System Discovery are [enabled](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/configure-discovery-methods).
 - IP range [boundaries and a boundary group](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
 - The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
-- A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided in this article](#review-the-sources-folder-structure).
-- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT), Windows PE add-on, WSIM update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259), and DaRT (optional) are installed.
+- A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
+- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT), Windows PE add-on, WSIM update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259), and DaRT (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
 - The CMTrace tool (part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717)) is installed on the distribution point.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
