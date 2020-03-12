@@ -25,11 +25,9 @@ In Microsoft Microsoft Endpoint Configuration Manager, you can create custom Win
 
 ## Infrastructure
 
-For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
-- DC01 is a domain controller and DNS server for the contoso.com domain. DHCP is optionally installed on DC01 or another server.
+For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer does not need to be a domain member.
-- All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
+- CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
  An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
@@ -83,6 +81,8 @@ On **CM01**:
 
     ![PS100009-1](../images/ps100009-1.png)<br>
     ![PS100009-2](../images/ps100009-2.png)
+
+Next, see [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md). 
 
 ## Related topics
 
