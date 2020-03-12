@@ -89,7 +89,7 @@ Note your distribution and version and identify the closest entry for it under `
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
 > [!NOTE]
-> In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
+> In case of Oracle Linux, replace *[distro]* with “rhel”.
 
 ```puppet
 class install_mdatp {
