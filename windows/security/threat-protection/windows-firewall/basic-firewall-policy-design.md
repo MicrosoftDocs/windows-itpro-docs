@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
 ---
 
 # Basic Firewall Policy Design
@@ -37,7 +36,7 @@ Many network administrators do not want to tackle the difficult task of determin
 
   For example, when you install a server role, the appropriate firewall rules are created and enabled automatically.
 
-- For other standard network behavior, the predefined rules that are built into Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, and Windows 10 can easily be configured in a GPO and deployed to the devices in your organization.
+- For other standard network behavior, the predefined rules that are built into Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
 
   For example, by using the predefined groups for Core Networking and File and Printer Sharing you can easily configure GPOs with rules for those frequently used networking protocols.
 
