@@ -42,9 +42,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 In the example above the actual reason is prefixed with `[ERROR]`.
 The installation failed because a downgrade between these versions is not supported.
 
-## No Defender's install log
+## No MDATP's install log
 
-In rare cases installation leaves no trace in Defender's /Library/Logs/Microsoft/mdatp/install.log file.
+In rare cases installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.
 You can verify that installation happened and analyze possible errors by querying macOS logs (this can be helpful in case of MDM deployment, when there is no client UI). It is recommended to have a narrow time window to query and filter by the logging process name, as there will be huge amount of information;
 
 ```bash
