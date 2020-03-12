@@ -27,7 +27,7 @@ ms.topic: conceptual
 
 For manual installation, it is Summary page of the installation wizard that says "An error occurred during installation. The Installer encountered an error that caused the installation to fail. Contact the software manufacturer for assistance". For MDM deployments it would be exposed as a generic installation failure as well.
 
-While we do not expose exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`. Each installation session appends to this log file, you can use sed to output the last installation session only:
+While we do not expose exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`. Each installation session appends to this log file, you can use `sed` to output the last installation session only:
 
 ```bash
 $ sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
