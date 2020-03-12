@@ -20,97 +20,162 @@ appliesto:
 
 # Set up HoloLens as a kiosk for specific applications
 
-In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#add-guest-access-to-the-kiosk-configuration-optional)
+A convenient feature many choose to use as a solution for focusing on business apps, or using to show an app demo is Kiosk mode. There are two different types of kiosks, and three methods of deploying them. 
+-	All HoloLens 2 devices are Kiosk mode capable. 
+-	In order to use Kiosk Mode with HoloLens (1st Gen) you’ll need to be updated to at least Windows 10, version 1803 which released April 2018. If you have recovered your HoloLens (1st gen) device with Windows Device Recovery Tool using the default build, or have taken the most recent updates then you are ready. 
 
-When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
+# Picking a Kiosk Mode
+When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
-Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) (including [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage) on HoloLens (1st Gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
-
-The following table lists the device capabilities in the different kiosk modes.
-
-Kiosk mode | Voice and Bloom commands | Quick actions menu | Camera and video | Miracast
---- | --- | --- | --- | ---
-Single-app kiosk | ![no](images/crossmark.png)  |  ![no](images/crossmark.png)    | ![no](images/crossmark.png)     |  ![no](images/crossmark.png)  
-Multi-app kiosk | ![yes](images/checkmark.png)  | ![yes](images/checkmark.png) with **Home** and **Volume** (default)<br><br>Photo and video buttons shown in Quick actions menu if the Camera app is enabled in the kiosk configuration.<br><br>Miracast is shown if the Camera app and device picker app are enabled in the kiosk configuration.    | ![yes](images/checkmark.png) if the Camera app is enabled in the kiosk configuration.   | ![yes](images/checkmark.png) if the Camera app and device picker app are enabled in the kiosk configuration.
-
-> [!NOTE]
-> Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
-
-The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) enables kiosk configuration. 
+Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) (including [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage) on HoloLens (1st Gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings.
 
 > [!WARNING]
 > The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
 >
 > Be aware that voice commands are enabled for kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app. 
 
-For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
-- You can use [Microsoft Intune or other mobile device management (MDM) service](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803) to configure single-app and multi-app kiosks.
-- You can [use a provisioning package](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure single-app and multi-app kiosks.
-- You can [use the Windows Device Portal](#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
-For HoloLens devices running Windows 10, version 1607, you can [use the Windows Device Portal](#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) to configure single-app kiosks.
+The following table lists the device capabilities in the different kiosk modes.
 
-## Start layout for HoloLens
+|                  | Start Gesture / Pins Panel | Quick Actions Menu | Camera and Video | Miracast | Supported User Types | Auto Login | Can distinguish different users to use Kiosk mode or full access |
+|------------------|----------------------------|--------------------|------------------|----------|----------------------|------------|------------------------------------------------------------------|
+| Single-app kiosk | No                         | No                 | No*              | No       | MSA or Local         | Yes        | No                                                               |
+| Multi-app kiosk  | Yes                        | Yes*               | Yes*             | Yes*     | AAD                  | No         | Yes                                                              |
 
-If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
-
-> [!NOTE]
-> Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
-
-### Start layout file for MDM (Intune and others)
-
-Save the following sample as an XML file. You can use this file when you configure the multi-app kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
+While camera and video voice commands and UI are disabled by default the button commands can still be used. 
+To enable the camera, device picker, or Miracast on the system menu include the AUMIDs below in your Multi-app kiosk.
 
 > [!NOTE]
-> If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package).
+> Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
 
-```xml
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-  <RequiredStartGroupsCollection>
-    <RequiredStartGroups>
-      <AppendGroup Name="">
-        <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-      </AppendGroup>      
-    </RequiredStartGroups>
-  </RequiredStartGroupsCollection>
- </LayoutModificationTemplate>
-```
+The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) enables kiosk configuration. 
 
-### Start layout for a provisioning package
+One Device can easily be set up to have one Kiosk set up for it. If you opt for Multi-app Kiosk then not you don’t need to require all users to use the Kiosk. 
+Examples scenarios of when to use which Kiosk:
+- A device dedicated to Guides to help new hires: Single-app kiosk
+- A device that has both Guides and Remote Assist for a range of employees: Multi-app kiosk
+- You have a custom app and only allow access to it: Single-app kiosk
+- You want a device the majority of your users can only use custom App, but that one user group can use your custom app, Remote Assist, Feedback Hub, and Settings if needed: Multi-app Kiosk mode (With only your custom app in the Kiosk, and the one user group has full access to Windows Holographic.)
 
-You will [create an XML file](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
+# Picking a Deployment Method
 
-```xml
-<!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
-            <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-                      <LayoutOptions StartTileGroupCellWidth="6" />
-                      <DefaultLayoutOverride>
-                        <StartLayoutCollection>
-                          <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="">
-                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-                            </start:Group>
-                          </defaultlayout:StartLayout>
-                        </StartLayoutCollection>
-                      </DefaultLayoutOverride>
-                    </LayoutModificationTemplate>
-                ]]>
-            </StartLayout>
-            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
-```
+There are three methods that you can use to configure the device as a kiosk:
+- You can use [Microsoft Intune or other mobile device management (MDM) service](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-microsoft-intune-or-mdm) to configure single-app and multi-app kiosks.
+- You can [use a provisioning package](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-a-provisioning-package) to configure single-app and multi-app kiosks.
+- You can [use the Windows Device Portal](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
-## Set up kiosk mode using Microsoft Intune or MDM (Windows 10, version 1803)
+|                              | Device Portal | Provisioning Package | MDM  |
+|------------------------------|---------------|----------------------|------|
+| Single-app kiosk available   | Yes           | Yes                  | Yes  |
+| Multi-app kiosk available    | No            | Yes                  | Yes  |
+| Need device locally to apply | Yes           | Yes                  | No   |
+| Need developer mode          | Yes           | No                   | No   |
+| Need AAD                     | No            | No                   | Yes  |
+| Automatically deploy         | No            | No                   | Yes  |
+| Speed                        | Fastest       | Fast                 | Slow |
+| Recommended for scale        | No            | No                   | Yes  |
+
+
+## Set up kiosk mode using Microsoft Intune or MDM
+
+Process: 
+1.	Create a Device Configuration Policy
+1.	Select the settings you want to see in your Kiosk
+1.	Assign the Policy to the group to receive the policy
+1.	Set up the device
+    1.	Single app Kiosk
+    1.	Multi app Kiosk
+
+## Create a Device configuration policy
+
+Navigate to https://portal.azure.com/ and sign in to your Intune administrator account. 
+Select **Microsoft Intune > Device configuration - Profiles > + Create profile**
+Walk through the steps setting a name, **Platform** as **Windows 10 and later**, and **Profile** type as **Kiosk**.
+Your next settings after this will be different depending on if you pick Single app kiosk or Multi app kiosk.
+For full details creating a device profile for Kiosk mode check out [Kiosk settings]( https://docs.microsoft.com/intune/configuration/kiosk-settings).
+
+## Select the settings you want to see in your Kiosk.
+
+### Single-app kiosk
+Select **Single-app kiosk**, then select **Local user account**. You’ll need to enter either the name of your local user, or your Microsoft Account you intend to be logged onto the device.
+Finally you’ll select the one app you want to be used in your kiosk. Ideally this should be a store app.
+For full details visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks).
+
+### Multi App Kiosk
+**Target Windows 10 in S mode devices**: Choose **No**. S mode isn't supported on Windows Holographic for Business.
+For **User logon type**: Add one or more user accounts that can use the apps you add. Your options that work with Windows Holographic are : **Azure AD user or group** or **HoloLens visitor**.
+
+It’s important that the group or groups you choose includes users you want to use the Kiosk, if a user signs in with an account not included in this list  they will not have a Kiosk experience.
+
+Now you choose which Apps to include in your kiosk. You may choose to add just one or add many. 
+
+To choose an app you’ve uploaded as a **Line of business app** choose the **Add store app** option. You many also choose to add an app via it’s **Application user model ID** by selecting **Add by AUMID**. 
+Some common in-box apps you may wish to use are:
+
+| App Name      | AUMID                                                                |
+|---------------|----------------------------------------------------------------------|
+| Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist |
+| Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides           |
+| Camera        | HoloCamera_cw5n1h2txyewy!HoloCamera                                  |
+| Device picker | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                        |
+| Feedback Hub  | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                       |
+
+For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/en-us/intune/configuration/kiosk-settings-holographic).
+
+## Assign the Policy to the group to receive the policy
+Once you have created and saved your Kiosk mode policy you must assign it to the group(s) that you want it deployed to, or your devices will never receive it.
+Click assignments and add the group(s) that you want the Kiosk mode policy deployed to.
+
+
+> [! IMPORTANT]
+> If two more or more different Kiosk polices target a device they will conflict and the device will receive neither. Other policies such as device restrictions do not conflict with Kiosk mode or additional device restrictions. 
+
+For more information on group type, and group assignments please visit [here](https://docs.microsoft.com/en-us/intune/configuration/device-profile-assign).
+
+There is an important distinction between the **User logon type** and the **Assignments**. Assignments is how the deployment of the Kiosk to a device is determined. Once a Kiosk policy is on the device, it uses the User logon type to determine which users should be using the Kiosk.
+
+Examples:
+- You have a single group that you use for both logon type and assignments. Users A B and C are in both groups. No matter which user the device is first set up for they will join the tenant in this group and the kiosk policy will deploy. Also each user is in the logon group so users A B and C will all experience the Kiosk.
+
+- You have an assignment group with users A, B and C in it. The logon group is different with users B and C. Even if user A sets up the device and joins the tenant with the device the Kiosk policy will still deploy. Users B and C will still be logged in to the Kiosk, but user A can still log in if troubleshooting, changing of settings or any other need for full access to windows is needed.
+
+- You have devices you contract out to two different vendors. Instead of user groups you have device groups. Each device group needs a different Kiosk. Those devices when joined receive policy for their own respective Kiosk. The logon user group may include users from both sites, and thus each regional area’s device would allow kiosks for both sets of users. 
+
+
+## Set up the device
+Now it’s time to set up the device to both receive the policy and log into the account the policy has enabled for kiosk mode.
+
+### Single-app kiosk
+
+Since Single-app kiosk mode targets a local user or Microsoft account you need to take a few extra steps to [enroll the HoloLens in MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm ), but sign in will be easy and can be automatic. 
+
+During OOBE sign into your **Microsoft Account** specified as a **Logon User Account**. 
+Then enroll the device so that your **device is enrolled in a group** for a group selected under the Kiosk mode policy’s **assignment**. 
+Give your store app a short amount time to download as well as policy to be applied, once it is restart the device. Once your account is signed in your Kiosk mode will be enabled and your app should automatically launch. 
+
+If you’re not seeing your Kiosk mode yet, make sure to [check the assignment status]( https://docs.microsoft.com/intune/configuration/device-profile-monitor).
+
+### Multi app Kiosk
+For multi app Kiosk you’ll be using a device that you Azure AD join to your tenant during OOBE. 
+
+If you’re targeting a user group. you’ll want to sign in to an account that is a member of a group that’s also a group that the Kiosk is assigned to.
+
+Once you’ve completed OOBE, if you have apps you need to manually install via sideloading or the Microsoft store please do so. If your apps are going to install automatically, such as being a [required app](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) for the same group that the Kiosk mode is assigned to, then it will become a part of your kiosk even if you enter the kiosk before it finishes downloading.
+
+To enable Kiosk mode simply **sign out** of your account and **sign in** to a profile that is a member of a group targeted by the Logon user account setting. (This may be the same user.)
+
+If you’re not seeing your Kiosk mode yet, make sure to [check the assignment status]( https://docs.microsoft.com/en-us/intune/configuration/device-profile-monitor).
+
+
+Additional information:
 
 For HoloLens devices that are managed by Microsoft Intune, directions can be found [here](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
 
 For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-a-kiosk-configuration-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
-## Set up kiosk mode using a provisioning package (Windows 10, version 1803)
+## Set up kiosk mode using a provisioning package
+
+As part of creating your Provisioning package, you’ll need to create a [start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens).
 
 Process:
 1. [Create an XML file that defines the kiosk configuration.](#create-a-kiosk-configuration-xml-file)
@@ -170,25 +235,16 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
     
 ### Apply the provisioning package to HoloLens
 
-1. Connect HoloLens via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
+You can intially [apply a provisioning package to HoloLens during setup](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
 
-3. HoloLens will show up as a device in File Explorer on the PC.
+You can also [apply a provisioning package to HoloLens after setup](https://docs.microsoft.com/hololens/hololens-provisioning#4-apply-a-provisioning-package-to-hololens-after-setup).
 
-4. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
-
-5. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the **fit** page.
-
-6. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.
-
-7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
-
-
-## Set up kiosk mode using the Windows Device Portal (Windows 10, version 1607 and version 1803) 
+## Set up kiosk mode using the Windows Device Portal 
 
 1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
     > [!IMPORTANT]
-    > When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has been upgraded to Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
 2. On a PC, connect to the HoloLens using [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_wi-fi) or [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_usb).
 
@@ -202,16 +258,73 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
     ![Kiosk Mode](images/kiosk.png)
 
     > [!NOTE]
-    > The kiosk mode option will be available if the device is [enrolled in device management](hololens-enroll-mdm.md) and has a [license to upgrade to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > The kiosk mode option will be available if the device has [Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
 
+6. Reboot the HoloLens. If you still have your Device Portal page open you can use the **Power** option in the top right and click **Restart.**
+
+## Start layout for HoloLens
+
+If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+
+> [!NOTE]
+> Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
+
+### Start layout file for MDM (Intune and others)
+
+Save the following sample as an XML file. You can use this file when you configure the multi-app kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
+
+> [!NOTE]
+> If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package).
+
+```xml
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    Version="1">
+  <RequiredStartGroupsCollection>
+    <RequiredStartGroups>
+      <AppendGroup Name="">
+        <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
+      </AppendGroup>      
+    </RequiredStartGroups>
+  </RequiredStartGroupsCollection>
+ </LayoutModificationTemplate>
+```
+
+### Start layout for a provisioning package
+
+You will [create an XML file](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
+
+```xml
+<!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+```
+
 ## Kiosk app recommendations
 
-- You cannot select Microsoft Edge, Microsoft Store, or the Shell app as a kiosk app.
-- We recommend that you do **not** select the Settings app and the File Explorer app as a kiosk app.
+- You cannot select  the Shell app as a kiosk app.
+- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app. 
 - You can select Cortana as a kiosk app.
 - To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
+- While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours. 
 
 ## More information
 
