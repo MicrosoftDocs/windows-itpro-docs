@@ -43,14 +43,14 @@ The choice of the channel determines the type and frequency of updates that are 
 
 In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-### RHEL and variants (CentOS and Oracle EL)
+### RHEL and variants (CentOS and Oracle Linux)
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
@@ -170,7 +170,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle EL):
+- RHEL and variants (CentOS and Oracle Linux):
 
     ```bash
     sudo yum install mdatp
