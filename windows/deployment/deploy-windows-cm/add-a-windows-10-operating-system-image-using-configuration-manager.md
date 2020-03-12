@@ -32,11 +32,9 @@ For the purposes of this guide, we will use one server computer: CM01.
 An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
 >[!IMPORTANT]
->The procedures in this article require a reference image. Our reference images is named **REFW10-X64-001.wim**. If you have not already created a reference image, then perform all the steps in [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md) on CM01, replacing MDT01 with CM01. The final result will be a reference image located in the D:\MDTBuildLab\Captures folder that you can use in the procedures below.
+>The procedures in this article require a reference image. Our reference images is named **REFW10-X64-001.wim**. If you have not already created a reference image, then perform all the steps in [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md) on CM01, replacing MDT01 with CM01. The final result will be a reference image located in the D:\MDTBuildLab\Captures folder that you can use for the procedure below.
 
- ## Procedures
-
-
+ ## Add a Windows 10 operating system image
 
  On **CM01**:
 
@@ -48,21 +46,20 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
     The Windows 10 image being copied to the Sources folder structure.
 
 3.  Using the Configuration Manager Console, in the Software Library workspace, right-click **Operating System Images**, and select **Add Operating System Image**.
-4.  On the **Data Source** page, in the **Path:** text box, browse to \\\\CM01\\Sources$\\OSD\\OS\\Windows 10 Enterprise x64 RTM\\REFW10-X64-001.wim and click **Next**.
-5.  On the **General** page, assign the name Windows 10 Enterprise x64 RTM and click **Next** twice, and then click **Close**.
-6.  Distribute the operating system image to the CM01 distribution point by right-clicking the Windows 10 Enterprise x64 RTM operating system image and selecting **Distribute Content**.
-7.  In the Distribute Content Wizard, add the CM01 distribution point.
-
-8.  View the content status for the Windows 10 Enterprise x64 RTM package. Do not continue until the distribution is completed. You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
+4.  On the **Data Source** page, in the **Path:** text box, browse to \\\\CM01\\Sources$\\OSD\\OS\\Windows 10 Enterprise x64 RTM\\REFW10-X64-001.wim, select x64 next to Architecture and choose a language, then click **Next**.
+5.  On the **General** page, assign the name Windows 10 Enterprise x64 RTM, click **Next** twice, and then click **Close**.
+6.  Distribute the operating system image to the CM01 distribution point by right-clicking the **Windows 10 Enterprise x64 RTM** operating system image and then clicking **Distribute Content**.
+7.  In the Distribute Content Wizard, add the CM01 distribution point, click **Next** and click **Close**.
+8.  View the content status for the Windows 10 Enterprise x64 RTM package. Do not continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
     ![figure 18](../images/fig18-distwindows.png)
 
     The distributed Windows 10 Enterprise x64 RTM package.
 
+Next, see [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md). 
+
 ## Related topics
 
-
-[Integrate Configuration Manager with MDT](../deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)<br>
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>

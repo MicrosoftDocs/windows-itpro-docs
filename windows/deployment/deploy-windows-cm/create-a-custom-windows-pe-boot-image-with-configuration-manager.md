@@ -23,11 +23,8 @@ ms.topic: article
 
 In Microsoft Microsoft Endpoint Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This topic shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
 
-## Infrastructure
-
 For the purposes of this guide, we will use one server computer: CM01.
-- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-- CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
  An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
