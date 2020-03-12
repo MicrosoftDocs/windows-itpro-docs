@@ -315,6 +315,7 @@
 ###### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
 ##### [Troubleshoot]()
+###### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
 ###### [Troubleshoot performance issues](microsoft-defender-atp/mac-support-perf.md)
 ###### [Troubleshoot kernel extension issues](microsoft-defender-atp/mac-support-kext.md)
 ##### [Privacy](microsoft-defender-atp/mac-privacy.md)
