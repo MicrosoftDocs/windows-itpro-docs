@@ -186,60 +186,16 @@ The following table describes how the wildcards can be used and provides some ex
 |Wildcard  |Examples  |
 |---------|---------|
 |`*` (asterisk) <br/><br/>In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple, nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` would include `C:\MyData\notes.txt`<br/><br/>`C:\somepath\*\Data` would include any file in `C:\somepath\Archives\Data and its subfolders` and `C:\somepath\Authorized\Data and its subfolders` <br/><br/>`C:\Serv\*\*\Backup` would include any file in `C:\Serv\Primary\Denied\Backup and its subfolders` and `C:\Serv\Secondary\Allowed\Backup and its subfolders`     |
-|`?` (question mark)     |         |
-|Row3     |         |
-|Row4     |         |
-|Row5     |         |
-
-
-            <b>?</b> (question mark)
-        </td>
-        <td>
-            Replaces a single character. <br />
-            Only applies to files in the last folder defined in the argument.
-        </td>
-        <td>
-            Replaces a single character in a folder name. </br>
-            After matching the number of wild carded and named folders, all subfolders will also be included.
-        </td>
-        <td>
-            <ol>
-                <li>C:\MyData\my<b>?</b>.zip</li>
-                <li>C:\somepath\<b>?</b>\Data</li>
-                <li>C:\somepath\test0<b>?</b>\Data</li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>C:\MyData\my<b>1</b>.zip</li>
-                <li>Any file in C:\somepath\<b>P</b>\Data and its subfolders</li>
-                <li>Any file in C:\somepath\test0<b>1</b>\Data and its subfolders</li>
-            </ol>
-        </td>
-    </tr>
-    <tr>
-        <td>Environment variables</td>
-        <td>The defined variable will be populated as a path when the exclusion is evaluated.</td>
-        <td>Same as file and extension use. </td>
-        <td>
-            <ol>
-                <li><b>%ALLUSERSPROFILE%</b>\CustomLogFiles</li>
-            </ol> 
-        </td>
-        <td>
-            <ol>
-                <li><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</li>
-            </ol>
-        </td>
-    </tr>
-</table>
+|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
+|Environment variables <br/><br/>The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
+        
 
 >[!IMPORTANT]
 >If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
 >
->For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
+>For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
 >
->This argument, however, will not match any files in **subfolders** under `c:\data\final\marked` or `c:\data\review\marked`.
+>This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
