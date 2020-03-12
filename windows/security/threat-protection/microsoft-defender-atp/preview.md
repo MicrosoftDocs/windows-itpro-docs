@@ -52,7 +52,7 @@ The following features are included in the preview release:
  
  - [Threat & Vulnerability Management Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy) <BR> You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy), [software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory#report-inaccuracy), and [discovered vulnerabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses#report-inaccuracy).  
 
-- [Machine health and compliance report](machine-reports.md)  The machine health and compliance report provides high-level information about the devices in your organization.
+- [Machine health and compliance report](machine-reports.md) <br/> The machine health and compliance report provides high-level information about the devices in your organization.
 
 - [Information protection](information-protection-in-windows-overview.md)<BR>
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace. Microsoft Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices.
