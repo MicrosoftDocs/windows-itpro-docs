@@ -21,7 +21,7 @@ appliesto:
 
 # Supported languages for HoloLens 2
 
-HoloLens 2 supports the following languages, including speech commands and dictation features, keyboard layouts, and OCR recognition within apps.
+HoloLens 2 is localized into the following languages. The localized features include speech commands and dictation, keyboard layouts, and OCR recognition within apps.
 
 - Chinese Simplified (China)
 - English (Australia)
@@ -59,7 +59,7 @@ The setup process configures your HoloLens for a specific region and language. Y
 1. Go to the **Start** menu, and then select **Settings** > **Time and language** > **Language**.
 2. Select **Windows display language**, and then select a language.  
 
-If the supported language that you're looking for is not in the menu, follow these steps: 
+If the supported language that you're looking for is not in the menu, follow these steps:  
 
 1. Under **Preferred languages**, select **Add a language**.
 2. Search for and add the language.
