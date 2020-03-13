@@ -22,6 +22,8 @@ ms.topic: article
 
 -   Windows 10
 
+----start here and edit------------
+
 In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines. Even though the Windows PE boot image and the Windows 10 operating system contain many out-of-the-box drivers, it is likely you will have to add new or updated drivers to support all your hardware. In this section, you import drivers for both Windows PE and the full Windows 10 operating system.
 
 For the purposes of this guide, we will use one server computer: CM01.
