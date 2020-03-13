@@ -15,14 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/11/2019
 ---
 # Remediation activities and exceptions
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
@@ -31,7 +30,7 @@ After your organization's cybersecurity weaknesses are identified and mapped to 
 
 Lower your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
-## Remediation 
+## Remediation
 
 ## How remediation requests work
 
@@ -41,7 +40,7 @@ The dashboard will show the status of your top remediation activities. Select an
 
 ## Accessing the Remediation page
 
-You can access the remediation page in a few places in the portal:
+You can access the Remediation page in a few places in the portal:
 
 - Security recommendations flyout panel
 - Navigation menu
