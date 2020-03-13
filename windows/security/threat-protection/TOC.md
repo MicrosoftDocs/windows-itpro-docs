@@ -607,7 +607,7 @@
 #### [SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
 #### [Set up and use SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
-### [Windows Sandbox overview](windows-sandbox/windows-sandbox-overview.md)
+### [Windows Sandbox](windows-sandbox/windows-sandbox-overview.md)
 #### [Windows Sandbox architecture](windows-sandbox/windows-sandbox-architecture.md)
 #### [Windows Sandbox configuration](windows-sandbox/windows-sandbox-configure-using-wsb-file.md)
 
