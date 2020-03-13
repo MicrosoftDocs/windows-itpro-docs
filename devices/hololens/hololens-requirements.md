@@ -66,7 +66,7 @@ There are two types of Kiosk Modes: Single app and multi-app. Single app kiosk m
 
 **How to Configure Kiosk Mode:**
 
-There are two main ways ([provisioning packages](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) and [MDM](hololens-kiosk.md#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803)) to deploy kiosk mode for HoloLens. These options will be discussed later in the document; however, you can use the links above to jump to the respective sections in this doc.
+There are two main ways ([provisioning packages](hololens-kiosk.md#set-up-kiosk-mode-by-using-a-provisioning-package) and [MDM](hololens-kiosk.md#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm)) to deploy kiosk mode for HoloLens. These options will be discussed later in the document; however, you can use the links above to jump to the respective sections in this doc.
 
 ### Apps and App Specific Scenarios
 

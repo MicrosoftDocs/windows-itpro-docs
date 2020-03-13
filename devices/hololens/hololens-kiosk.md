@@ -24,7 +24,7 @@ appliesto:
 A convenient feature many choose to use as a solution for focusing on business apps, or using to show an app demo is Kiosk mode. There are two different types of kiosks, and three methods of deploying them.
 
 - All HoloLens 2 devices are Kiosk-mode capable.
-- In order to use Kiosk Mode with HoloLens (1st gen) you'll need to be updated to at least Windows 10, version 1803 which released April 2018. If you have recovered your HoloLens (1st gen) device with Windows Device Recovery Tool using the default build, or have taken the most recent updates then you are ready. 
+- In order to use Kiosk Mode with HoloLens (1st gen) you'll need to be updated to at least Windows 10, version 1803 which released April 2018. If you have recovered your HoloLens (1st gen) device with Windows Device Recovery Tool using the default build, or have taken the most recent updates then you are ready.
 
 ## Select a kiosk mode
 
@@ -250,7 +250,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 
 ### Apply the provisioning package to HoloLens
 
-You can intially [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+You can initially [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
 You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
 
@@ -260,7 +260,7 @@ You can also [apply a provisioning package to HoloLens after setup](hololens-pro
 
     > [!IMPORTANT]
     > When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
-    
+  
 2. On a PC, connect to the HoloLens using [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_wi-fi) or [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_usb).
 
 3. [Create a user name and password](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#creating_a_username_and_password) if this is the first time you connect to the Windows Device Portal, or enter the user name and password that you previously set up.
@@ -311,7 +311,7 @@ Save the following sample as an XML file. You can use this file when you configu
 
 ### Start layout for a provisioning package
 
-You will [create an XML file](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
+You will [create an XML file](#set-up-kiosk-mode-by-using-a-provisioning-package) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
@@ -335,11 +335,11 @@ You will [create an XML file](#set-up-kiosk-mode-using-a-provisioning-package-wi
 
 ## Kiosk app recommendations
 
-- You cannot select  the Shell app as a kiosk app.
-- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app. 
+- You cannot select the Shell app as a kiosk app.
+- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, or the File Explorer app as kiosk apps.
 - You can select Cortana as a kiosk app.
 - To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
-- While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours. 
+- While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours.
 
 ## More information
 
