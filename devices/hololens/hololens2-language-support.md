@@ -21,7 +21,7 @@ appliesto:
 
 # Supported languages for HoloLens 2
 
-HoloLens 2 is localized into the following languages. The localized features include speech commands and dictation, keyboard layouts, and OCR recognition within apps.
+HoloLens 2 is localized into the following languages. The localization features include speech commands and dictation, keyboard layouts, and OCR recognition within apps.
 
 - Chinese Simplified (China)
 - English (Australia)
@@ -41,7 +41,7 @@ HoloLens 2 also supports the following languages. However, this support does not
 - Dutch (Netherlands)
 - Korean (Korea)
 
-Some features of HoloLens 2 use the Windows display language. Windows display language affects the following settings for Windows and for apps that support localization:
+Some features of HoloLens 2 use the Windows display language. The Windows display language affects the following settings for Windows and for apps that support localization:
 
 - The user interface text language.
 - The speech language.
@@ -56,22 +56,22 @@ The setup process configures your HoloLens for a specific region and language. Y
 
 ### To change the Windows display language
 
-1. Go to the **Start** menu, and then select **Settings** > **Time and language** > **Language**.
+1. Open the **Start** menu, and then select **Settings** > **Time and language** > **Language**.
 2. Select **Windows display language**, and then select a language.  
 
 If the supported language that you're looking for is not in the menu, follow these steps:  
 
 1. Under **Preferred languages**, select **Add a language**.
-2. Search for and add the language.
+2. Locater and add the language.
 3. Select the **Windows display language** menu again, and then select the language that you added in the previous step.
 
 ### To change the keyboard layout
 
-To add or remove a keyboard layout, open the **Start** menu and then select **Settings** > **Time & language** > **Keyboard**.
+To add or remove a keyboard layout, open the **Start** menu, and then select **Settings** > **Time & language** > **Keyboard**.
 
 If your HoloLens has more than one keyboard layout, use the **Layout** key to switch between them. The **Layout** key is in the lower right corner of the on-screen keyboard.
 
 > [!NOTE]  
 > The on-screen keyboard can use Input Method Editor (IME) to enter characters in languages such as Chinese. However, HoloLens does not support external Bluetooth keyboards that use IME.
 >  
-> While you use IME with the on-screen keyboard, you can continue to use a Bluetooth keyboard to type in English. To switch between keyboards, press **~**.
+> While you use IME together with the on-screen keyboard, you can continue to use a Bluetooth keyboard to type in English. To switch between keyboards, press the tilde character button (**~**).
