@@ -121,7 +121,8 @@ It's important that the group or groups you choose includes users you want to us
 
 Now you choose which Apps to include in your kiosk. You may choose to add just one or add many. 
 
-To choose an app you've uploaded as a **Line of business app** choose the **Add store app** option. You many also choose to add an app via it's **Application user model ID** by selecting **Add by AUMID**. 
+To choose an app you've uploaded as a **Line of business app** choose the **Add store app** option. You many also choose to add an app via it's **Application user model ID** by selecting **Add by AUMID**.  
+
 Some common in-box apps you may wish to use are:
 
 | App Name      | AUMID                                                                |
@@ -140,7 +141,7 @@ Once you have created and saved your Kiosk mode policy you must assign it to the
 Click assignments and add the group(s) that you want the Kiosk mode policy deployed to.
 
 > [!IMPORTANT]  
-> If two more or more different kiosk polices target a device they will conflict and the device will receive neither. Other policies such as device restrictions do not conflict with Kiosk mode or additional device restrictions. 
+> If two more or more different kiosk polices target a device they will conflict and the device will receive neither. Other policies such as device restrictions do not conflict with Kiosk mode or additional device restrictions.  
 
 For more information on group type, and group assignments please visit [here](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -281,7 +282,7 @@ You can also [apply a provisioning package to HoloLens after setup](hololens-pro
 
 ## Start layout for HoloLens
 
-If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout.
 
 > [!NOTE]
 > Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
@@ -303,7 +304,7 @@ Save the following sample as an XML file. You can use this file when you configu
     <RequiredStartGroups>
       <AppendGroup Name="">
         <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-      </AppendGroup>      
+      </AppendGroup>  
     </RequiredStartGroups>
   </RequiredStartGroupsCollection>
  </LayoutModificationTemplate>
