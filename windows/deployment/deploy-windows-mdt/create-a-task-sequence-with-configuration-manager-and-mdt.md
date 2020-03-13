@@ -1,6 +1,6 @@
 ---
 title: Create a task sequence with Configuration Manager (Windows 10)
-description: Create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
+description: Create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
 ms.assetid: 0b069bec-5be8-47c6-bf64-7a630f41ac98
 ms.reviewer: 
 manager: laurawi
@@ -23,14 +23,14 @@ ms.topic: article
 
 -   Windows 10
 
-In this topic, you will learn how to create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in System Center 2012 R2 Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
+In this topic, you will learn how to create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard, both of which are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ## <a href="" id="sec01"></a>Create a task sequence using the MDT Integration Wizard
 
 
-This section walks you through the process of creating a System Center 2012 R2 Configuration Manager task sequence for production use.
+This section walks you through the process of creating a Configuration Manager task sequence for production use.
 
 1.  On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
 

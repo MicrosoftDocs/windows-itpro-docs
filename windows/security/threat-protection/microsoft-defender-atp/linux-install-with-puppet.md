@@ -78,13 +78,18 @@ install_mdatp
 
 ### Contents of `install_mdatp/manifests/init.pp`
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
 Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+
+In the below commands, replace *[distro]* and *[version]* with the information you've identified:
+
+> [!NOTE]
+> In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
 # Puppet manifest to install Microsoft Defender ATP.
@@ -186,6 +191,9 @@ mdatp --health healthy
 ```
 
 The above command prints `1` if the product is onboarded and functioning as expected.
+
+> [!IMPORTANT]
+> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
 

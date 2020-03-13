@@ -1,8 +1,11 @@
 ---
-title: Configure HoloLens using a provisioning package (HoloLens)
+title: Use a provisioning package to configure HoloLens
 description: Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging.
 ms.prod: hololens
 ms.sitesec: library
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 author: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -10,9 +13,12 @@ ms.localizationpriority: medium
 ms.date: 11/13/2018
 ms.reviewer: 
 manager: dansimp
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
-# Configure HoloLens using a provisioning package
+# Use a provisioning package to configure HoloLens
 
 [Windows provisioning](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings which are then built into provisioning packages.
 

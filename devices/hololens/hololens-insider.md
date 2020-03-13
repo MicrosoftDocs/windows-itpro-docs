@@ -1,11 +1,14 @@
 ---
-title: Insider preview for Microsoft HoloLens (HoloLens)
-description: It’s simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
+title: Insider preview for Microsoft HoloLens
+description: It's simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
 ms.author: scooley
 ms.topic: article
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
 ms.date: 1/6/2020
@@ -17,13 +20,13 @@ appliesto:
 
 # Insider preview for Microsoft HoloLens
 
-Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens.
+Welcome to the latest Insider Preview builds for HoloLens!  It's simple to get started and provide valuable feedback for our next major operating system update for HoloLens.
 
 ## Start receiving Insider builds
 
 On a HoloLens 2 device go to **Settings** -> **Update & Security** -> **Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider.
 
-Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms.
+Then, select **Active development of Windows**, choose whether you'd like to receive **Fast** or **Slow** builds, and review the program terms.
 
 Select **Confirm -> Restart Now** to finish up. After your device has rebooted, go to **Settings -> Update & Security -> Check for updates** to get the latest build.
 
@@ -46,7 +49,7 @@ To opt out of Insider builds:
 Please use [the Feedback Hub app](hololens-feedback.md) on your HoloLens to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.  Issues with the Chinese and Japanese version of HoloLens should be reported the same way.
 
 > [!NOTE]
-> Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
+> Be sure to accept the prompt that asks whether you'd like Feedback Hub to access your Documents folder (select **Yes** when prompted).
 
 ## Note for developers
 
@@ -68,7 +71,7 @@ Here's a quick summary of what's new:
 - Performance and stability improvements across the product
 - More information in settings on HoloLens about the policy pushed to the device
 
-Once you’ve had a chance to explore these new capabilities, use the Feedback Hub app to let us know what you think. Feedback you provide in the Feedback Hub goes directly to our engineers.
+Once you've had a chance to explore these new capabilities, use the Feedback Hub app to let us know what you think. Feedback you provide in the Feedback Hub goes directly to our engineers.
 
 ### FIDO 2 support
 Many of you share a HoloLens with lots of people in a work or school environment.  Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long user names and passwords.  FIDO lets anyone in your organization (AAD tenant) seamlessly sign in to HoloLens without entering a username or password.

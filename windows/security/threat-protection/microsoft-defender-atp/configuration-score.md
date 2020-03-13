@@ -19,12 +19,13 @@ ms.topic: conceptual
 # Configuration score
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!NOTE]
 > Secure score is now part of Threat & Vulnerability Management as Configuration score.
 
-Your Configuration score is visible in the Threat & Vulnerability Management dashboard of the Microsoft Defender Security Center. It reflects the collective security configuration state of your machines across the following categories:
+Your Configuration score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects the collective security configuration state of your machines across the following categories:
 
 - Application
 - Operating system
