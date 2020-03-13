@@ -15,7 +15,7 @@ ms.reviewer:
 
 # Windows Sandbox overview
 
-Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains in the "sandboxed" and can't affect the host machine.
+Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains "sandboxed" and can't affect the host machine.
 
 A sandbox is temporary. When it's closed, all the software and files and the state are permanently deleted. You get a brand-new instance of the sandbox every time you open the application.
 
@@ -44,7 +44,7 @@ The following video provides an overview of Windows Sandbox.
 
 ## Installation
 
-1. Ensure that your machine is using Windows 10 Pro or Enterprise build version 18305 or later.
+1. Ensure that your machine is using Windows 10 Pro or Enterprise, build version 18305 or later.
 2. Enable virtualization on the machine.
 
    - If you're using a physical machine, make sure virtualization capabilities are enabled in the BIOS.

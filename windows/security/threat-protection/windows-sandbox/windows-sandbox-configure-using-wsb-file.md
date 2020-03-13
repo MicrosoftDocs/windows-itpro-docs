@@ -22,7 +22,7 @@ Windows Sandbox configuration files are formatted as XML and are associated with
 **C:\Temp> MyConfigFile.wsb** 
 
  A configuration file enables the user to control the following aspects of Windows Sandbox:
-- **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox will use WARP (software rasterizer).
+- **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox will use Windows Advanced Rasterization Platform (WARP).
 - **Networking**: Enable or disable network access within the sandbox.
 - **Mapped folders**: Share folders from the host with *read* or *write* permissions. Note that exposing host directories may allow malicious software to affect the system or steal data.
 - **Logon command**: A command that's executed when Windows Sandbox starts.
@@ -41,7 +41,7 @@ Windows Sandbox configuration files are formatted as XML and are associated with
 
 Supported values:
 - *Enable*: Enables vGPU support in the sandbox.
-- *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox will use software rendering, which can be slower than virtualized GPU.
+- *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox will use software rendering, which may be slower than virtualized GPU.
 - *Default* This is the default value for vGPU support. Currently this means vGPU is disabled.
 
 > [!NOTE]
@@ -58,8 +58,9 @@ Supported values:
 > [!NOTE]
 > Enabling networking can expose untrusted applications to the internal network.
 
-**Mapped Folders**: An array of folders, each representing a location on the host machine which will be shared into the sandbox at the specified path. If no path is specified, the folder will be mapped to the container user's desktop.
+**Mapped folders**: An array of folders, each representing a location on the host machine that will be shared into the sandbox at the specified path. If no path is specified, the folder will be mapped to the container user's desktop.
 
+```
 `<MappedFolders>`
       list of MappedFolder objects  <MappedFolder> 
        <HostFolder>path to the host folder</HostFolder> 
@@ -69,22 +70,20 @@ Supported values:
   <MappedFolder>  
     ...
   </MappedFolder>
-
 `</MappedFolders>`
-
 ```
 
-*HostFolder*: Specifies the folder on the host machine to share into the sandbox. Note that the folder must already exist on the host or the container will fail to start.
+*HostFolder*: Specifies the folder on the host machine to share into the sandbox. Note that the folder must already exist on the host, or the container will fail to start.
 
-*SandboxFolder*: Specifies the destination in the sandbox to map the folder to. If the folder does not exist, it will be created. If no sandbox folder is specified, the folder will be mapped to the container desktop.
+*SandboxFolder*: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it will be created. If no sandbox folder is specified, the folder will be mapped to the container desktop.
 
-*ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: true/false. Defaults to false.
+*ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
 
 > [!NOTE] 
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
 
-**Logon Command**: Specifies a single command which will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
+**Logon command**: Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
 
 ```
 <LogonCommand>
@@ -95,9 +94,9 @@ Supported values:
 *Command*: A path to an executable or script inside the container that will be executed after login.
 
 > [!NOTE]
-> Although very simple commands will work (launching an executable or script), more complicated scenarios involving multiple steps should be placed into a script file. This script file may be mapped into the container via a shared folder, and then executed via the *LogonCommand* directive.
+> Although very simple commands will work (such as launching an executable or script), more complicated scenarios involving multiple steps should be placed into a script file. This script file may be mapped into the container via a shared folder, and then executed via the *LogonCommand* directive.
 
-**AudioInput**: Enables or disables audio input to the sandbox.
+**Audio input**: Enables or disables audio input to the sandbox.
 
 `<AudioInput>value</AudioInput>`
 
@@ -109,7 +108,7 @@ Supported values:
 > [!NOTE]
 > There may be security implications of exposing host audio input to the container.
  
-**VideoInput**: Enables or disables video input to the sandbox.
+**Video input**: Enables or disables video input to the sandbox.
 
 `<VideoInput>value</VideoInput>`
 
@@ -121,7 +120,7 @@ Supported values:
 > [!NOTE]
 > There may be security implications of exposing host video input to the container.
 
-**Protected Client**: Implements increased-security settings on the sandbox RDP session. These settings decrease the attack surface of the sandbox.
+**Protected client**: Implements increased-security settings on the sandbox RDP session. These settings decrease the attack surface of the sandbox.
 
 `<ProtectedClient>value</ProtectedClient>`
 
@@ -133,7 +132,7 @@ Supported values:
 > [!NOTE]
 > This setting may restrict the user's ability to copy/paste files in and out of the sandbox.
 
-**Printer Redirection**: Enables or disables printer sharing from the host into the sandbox.
+**Printer redirection**: Enables or disables printer sharing from the host into the sandbox.
 
 `<PrinterRedirection>value</PrinterRedirection>`
 
@@ -142,7 +141,7 @@ Supported values:
 - *Disable*: Disables printer redirection in the sandbox. If this value is set, the sandbox can't view printers from the host.
 - *Default*: This is the default value for printer redirection support. Currently this means printer redirection is disabled.
 
-**ClipboardRedirection**: Enables or disables sharing of the host clipboard with the sandbox.
+**Clipboard redirection**: Enables or disables sharing of the host clipboard with the sandbox.
 
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
@@ -150,14 +149,14 @@ Supported values:
 - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
 - *Default*: This is the default value for clipboard redirection. Currently copy/paste between the host and sandbox are permitted under *Default*.
 
-**MemoryInMB**: Specifies the amount of memory that the sandbox can use in megabytes (MB).
+**Memory in MB**: Specifies the amount of memory that the sandbox can use in megabytes (MB).
 
 `<MemoryInMB>value</MemoryInMB>`
 
 If the memory value specified is insufficient to boot a sandbox, it will be automatically increased to the required minimum amount.
 
 ***Example 1***   
-The following config file can be used to easily test downloaded files inside of the sandbox. To achieve this, the script disables networking and vGPU, and restricts the shared downloads folder to read-only access in the container. For convenience, the logon command opens the downloads folder inside of the container when it is started.
+The following config file can be used to easily test downloaded files inside the sandbox. To achieve this, the script disables networking and vGPU and restricts the shared downloads folder to read-only access in the container. For convenience, the logon command opens the downloads folder inside the container when it's started.
 
 *Downloads.wsb*
 
@@ -175,26 +174,27 @@ The following config file can be used to easily test downloaded files inside of 
  <LogonCommand>
     <Command>explorer.exe C:\users\WDAGUtilityAccount\Downloads</Command>
  </LogonCommand>
-</```Configuration>
+</Configuration>
 ```
 ***Example 2***
+
 The following config file installs Visual Studio Code in the sandbox, which requires a slightly more complicated LogonCommand setup.
 
-Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which will install and run VSCode. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using VSCode.
+Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which will install and run Visual Studio Code. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using Visual Studio Code.
 
-With the VSCode installer script already mapped into the sandbox, the LogonCommand can reference it.
+With the Visual Studio Code installer script already mapped into the sandbox, the LogonCommand can reference it.
 
 *VSCodeInstall.cmd*
 
 ```
-REM Download VSCode
+REM Download Visual Studio Code
 curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
 
-REM Install and run VSCode
+REM Install and run Visual Studio Code
 C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 ```
 
-8VSCode.wsb*
+*8VSCode.wsb*
 
 ```
 <Configuration>
