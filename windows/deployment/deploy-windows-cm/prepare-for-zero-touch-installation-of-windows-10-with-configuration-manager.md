@@ -21,20 +21,20 @@ ms.topic: article
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager [integrated with Microsoft Deployment Toolkit](#why-integrate-mdt-with-configuration-manager) (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
 
 ## Prerequisites
 
 In this topic, you will use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 - Configuration Manager current branch + all security and critical updates are installed.
-  - Note: Procedures in this guide use Version 1910.
+  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 - The [Active Directory Schema has been extended](https://docs.microsoft.com/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
 - Active Directory Forest Discovery and Active Directory System Discovery are [enabled](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/configure-discovery-methods).
 - IP range [boundaries and a boundary group](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
 - The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
 - A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
-- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT), Windows PE add-on, WSIM update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259), and DaRT (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
+- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
 - The CMTrace tool (part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717)) is installed on the distribution point.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
@@ -276,7 +276,7 @@ On **CM01**:
 
     The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
-    **Note**: These files are used by WDS. They are not used by the ConfigMgr PXE Responder.
+    **Note**: These files are used by WDS. They are not used by the ConfigMgr PXE Responder. This article does not use the ConfigMgr PXE Responder.
 
 Next, see [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
 

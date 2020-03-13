@@ -79,6 +79,8 @@ On **CM01**:
     ![PS100009-1](../images/ps100009-1.png)<br>
     ![PS100009-2](../images/ps100009-2.png)
 
+>Note: Depending on your infrastructure and the number of packages and boot images present, the Image ID might be a different number than PS100009.
+
 Next, see [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md). 
 
 ## Related topics
