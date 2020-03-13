@@ -31,7 +31,7 @@ ms.topic: conceptual
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Management and APIs</a></b></center></td>
+<a href="#apis"><center><b>Centratlized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
 <td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
@@ -74,10 +74,10 @@ The attack surface reduction set of capabilities provide the first line of defen
 **[Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-- [Behavior monitoring](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-- [Cloud-based protection](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+- [Behavior monitoring](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
+- [Cloud-based protection](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
 - [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-- [URL Protection](/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
+- [URL Protection](/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md)
 - [Automated sandbox service](windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
 
 <a name="edr"></a>
@@ -124,7 +124,7 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 
 <a name="apis"></a>
 
-**[Management and APIs](microsoft-defender-atp/management-apis.md)**<br>
+**[Centralized configuration and administration, APIs](microsoft-defender-atp/management-apis.md)**<br>
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](microsoft-defender-atp/onboard-configure.md)
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)

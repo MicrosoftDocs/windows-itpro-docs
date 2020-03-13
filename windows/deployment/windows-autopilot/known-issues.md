@@ -32,9 +32,9 @@ ms.topic: article
 <li>Run the command <b>w32tm /resync /force</b> to sync the time with the default time server (time.windows.com).</ol>
 </tr>
 
-<tr><td>Windows Autopilot for existing devices does not work for Windows 10, version 1903; you see screens that you've disabled in your Windows Autopilot profile, such as the Windows 10 License Agreement screen.
+<tr><td>Windows Autopilot for existing devices does not work for Windows 10, version 1903 or 1909; you see screens that you've disabled in your Windows Autopilot profile, such as the Windows 10 License Agreement screen.
 <br>&nbsp;<br>
-This happens because Windows 10, version 1903 deletes the AutopilotConfigurationFile.json file.
+This happens because Windows 10, version 1903 and 1909 deletes the AutopilotConfigurationFile.json file.
 <td>To fix this issue: <ol><li>Edit the Configuration Manager task sequence and disable the <b>Prepare Windows for Capture</b> step.
 <li>Add a new <b>Run command line</b> step that runs <b>c:\windows\system32\sysprep\sysprep.exe /oobe /reboot</b>.</ol>
 <a href="https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/">More information</a></tr>
