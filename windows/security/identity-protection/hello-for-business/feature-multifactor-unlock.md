@@ -23,10 +23,8 @@ ms.reviewer:
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
-* Azure AD joined device (Cloud and Hybrid deployments)
-* Hybrid Azure AD joined (Hybrid deployments)
-* Domain Joined (on-premises deployments) 
-* Windows 10, version 1709
+* Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
+* Windows 10, version 1709 or newer
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.

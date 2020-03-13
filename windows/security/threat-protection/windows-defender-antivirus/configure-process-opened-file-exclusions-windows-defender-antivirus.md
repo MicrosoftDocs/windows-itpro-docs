@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/10/2018
 ms.reviewer: 
 manager: dansimp
 ---
