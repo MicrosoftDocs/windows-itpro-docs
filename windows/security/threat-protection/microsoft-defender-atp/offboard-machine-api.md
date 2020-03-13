@@ -33,6 +33,9 @@ Offboard machine from Microsoft Defender ATP.
 
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
+>[!Note]
+> This does not support offboarding macOS Devices
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
