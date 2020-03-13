@@ -28,7 +28,7 @@ For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
 >[!NOTE]
->The reference image used in the [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md) already contains some applications, such as Microsoft Office 365 Pro Plus x64. The procedure demonstrated here enables you to add some additional custom applications beyond those included in the reference image.
+>The [reference image](add-a-windows-10-operating-system-image-using-configuration-manager.md) used in this lab already contains some applications, such as Microsoft Office 365 Pro Plus x64. The procedure demonstrated in this article enables you to add some additional custom applications beyond those included in the reference image.
 
 ## Example: Create the Adobe Reader application
 
@@ -62,12 +62,12 @@ On **CM01**:
 9.  On the **Import Information** page, review the information and then click **Next**.
 10.  On the **General Information** page, name the application Adobe Acrobat Reader DC - OSD Install, click **Next** twice, and then click **Close**.
 
-    >[!NOTE]
-    >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
+  >[!NOTE]
+  >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
   
-    ![Add the OSD Install suffix to the application name](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
+  ![Add the OSD Install suffix to the application name](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
   
-    Add the "OSD Install" suffix to the application name
+  Add the "OSD Install" suffix to the application name
 
 11.  In the **Applications** node, select the Adobe Reader - OSD Install application, and click **Properties** on the ribbon bar (this is another place to view properties, you can also right-click and select properties).
 12. On the **General Information** tab, select the **Allow this application to be installed from the Install Application task sequence action without being deployed** check box, and click **OK**.
