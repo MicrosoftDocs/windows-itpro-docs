@@ -318,7 +318,7 @@
 ###### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
 ###### [Troubleshoot performance issues](microsoft-defender-atp/mac-support-perf.md)
 ###### [Troubleshoot kernel extension issues](microsoft-defender-atp/mac-support-kext.md)
-###### [Troubleshoot license issues](microsoft-defender-atp/mac-support-license.md)]
+###### [Troubleshoot license issues](microsoft-defender-atp/mac-support-license.md)
 ##### [Privacy](microsoft-defender-atp/mac-privacy.md)
 ##### [Resources](microsoft-defender-atp/mac-resources.md)
 
