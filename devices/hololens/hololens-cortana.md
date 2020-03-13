@@ -30,7 +30,7 @@ This article teaches you how to control HoloLens and your holographic world with
 
 ## Built-in voice commands
 
-Get around HoloLens faster with these basic commands. In order to use these you need to enable Speech during first run of the device or in **Settings** > **Privacy** > **Speech**. You can always check whether speech is enabled by looking at the status at the top of Start menu. For the best recognition of speech commands, HoloLens 2 will use the Microsoft cloud-bases services, but you can also choose to disable this in Settings under **Online speech recogntion** to only run locally instead.
+Get around HoloLens faster with these basic commands. In order to use these you need to enable Speech during first run of the device or in **Settings** > **Privacy** > **Speech**. You can always check whether speech is enabled by looking at the status at the top of Start menu. For the best recognition of speech commands, HoloLens 2 will use the Microsoft cloud-bases services, but you can also choose to disable this in Settings, under **Online speech recogntion**, to only run locally instead.
 
 ### General speech commands
 
