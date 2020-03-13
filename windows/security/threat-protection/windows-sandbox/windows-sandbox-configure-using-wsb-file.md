@@ -1,5 +1,5 @@
 ---
-title: Use a .wsb file to configure Windows Sandbox
+title: Windows Sandbox configuration
 description: 
 ms.prod: w10
 audience: ITPro
@@ -13,7 +13,7 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Use a .wsb file to configure Windows Sandbox
+# Windows Sandbox configuration
 
 Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later.
 
