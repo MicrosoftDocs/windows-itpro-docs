@@ -66,12 +66,16 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 3. (Optional) You can choose to install threat simulators in the lab. 
 
+    ![Image of install simulators agent](images/install-agent.png)
+
     >[!IMPORTANT]
     >You'll first need to accept and provide consent to the terms and information sharing statements. 
 
 4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them on the machines you add.  
+    
+    ![Image of summary page](images/lab-setup-summary.png)
 
-5.  Review the summary and select **Setup Lab**.  
+5.  Review the summary and select **Setup lab**.  
 
 After the lab setup process is complete, you can add machines and run simulations. 
 
@@ -106,9 +110,6 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add machine**. 
 
-    ![Image of lab setup page](images/lab-setup-page.png)
-
-
 2. Choose the type of machine to add. You can choose to add Windows 10 or Windows Server 2019.
 
     ![Image of lab setup with machine options](images/add-machine-options.png)
@@ -128,8 +129,11 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 5. See the status of test machines, the risk and exposure levels, and the status of simulator installations by selecting the **Machines** tab. 
 
-  >[!TIP]
-  >In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+    ![Image of machines tab](images/machines-tab.png)
+    
+
+    >[!TIP]
+    >In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
 
 
 
@@ -142,7 +146,7 @@ You can simulate attack scenarios using:
 
 You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
-### Do it yourself attack scenarios
+### Do-it-yourself attack scenarios
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
 
@@ -166,7 +170,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
    ![Image of window to enter credentials](images/enter-password.png)
 
-4. Run Do it yourself attack simulations on the machine. 
+4. Run Do-it-yourself attack simulations on the machine. 
 
 
 ### Threat simulator scenarios
@@ -180,22 +184,22 @@ Running threat simulations using third-party platforms is a good way to evaluate
 >- Machines must be added  to the evaluation lab
 >- Threat simulators must be installed in the evaluation lab
 
-1. From the portal select **Run simulation**.
+1. From the portal select **Create simulation**.
 
 2. Select a threat simulator.
+
+    ![Image of threat simulator selection](images/select-simulator.png)
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
 4. Select the devices where you'd like to run the simulation on.
 
-5. Select **Run**.
+5. Select **Create simulation**.
 
 6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details. 
 
-
->INSERT IMAGE OF SIMULATIONS TAB HERE!!!! 
-
-
+    ![Image of simulations tab](images/simulations-tab.png)
+    
 After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if the attack simulations you ran triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
 
 
