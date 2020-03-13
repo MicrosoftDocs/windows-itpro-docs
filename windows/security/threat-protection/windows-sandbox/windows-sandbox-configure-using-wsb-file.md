@@ -194,7 +194,7 @@ REM Install and run Visual Studio Code
 C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 ```
 
-*8VSCode.wsb*
+*VSCode.wsb*
 
 ```
 <Configuration>
