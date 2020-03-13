@@ -67,8 +67,8 @@ Examples scenarios of when to use which kiosk:
 There are three methods that you can use to configure the device as a kiosk:
 
 - You can use [Microsoft Intune or other mobile device management (MDM) service](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm) to configure single-app and multi-app kiosks.
-- You can [use a provisioning package](#set-up-kiosk-mode-using-a-provisioning-package) to configure single-app and multi-app kiosks.
-- You can [use the Windows Device Portal](#set-up-kiosk-mode-using-the-windows-device-portal) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
+- You can [use a provisioning package](#set-up-kiosk-mode-by-using-a-provisioning-package) to configure single-app and multi-app kiosks.
+- You can [use the Windows Device Portal](#set-up-kiosk-mode-by-using-the-windows-device-portal) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
 |                              | Device Portal | Provisioning Package | MDM  |
 |------------------------------|---------------|----------------------|------|
@@ -254,7 +254,7 @@ You can intially [apply a provisioning package to HoloLens during setup](hololen
 
 You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
 
-## Set up kiosk mode using the Windows Device Portal
+## Set up kiosk mode by using the Windows Device Portal
 
 1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
@@ -281,7 +281,7 @@ You can also [apply a provisioning package to HoloLens after setup](hololens-pro
 
 ## Start layout for HoloLens
 
-If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm), or a [provisioning package](#set-up-kiosk-mode-by-using-a-provisioning-package) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
 
 > [!NOTE]
 > Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
