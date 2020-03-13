@@ -275,7 +275,7 @@ You can also [apply a provisioning package to HoloLens after setup](hololens-pro
     > [!NOTE]
     > The kiosk mode option will be available if the device has [Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
-5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
+5. Select **Enable Kiosk Mode**, select an app to run when the device starts, and then select **Save**.
 
 6. Reboot the HoloLens. If you still have your Device Portal page open you can use the **Power** option in the top right and click **Restart.**
 
