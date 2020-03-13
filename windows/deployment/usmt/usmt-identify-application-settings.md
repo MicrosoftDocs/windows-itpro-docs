@@ -2,7 +2,7 @@
 title: Identify Applications Settings (Windows 10)
 description: Identify which applications and settings you want to migrate before using the User State Migration Tool (USMT).
 ms.assetid: eda68031-9b02-4a5b-a893-3786a6505381
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10

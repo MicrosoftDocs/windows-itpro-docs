@@ -1,4 +1,4 @@
-﻿# [Windows Hello for Business](hello-identity-verification.md)
+# [Windows Hello for Business](hello-identity-verification.md)
 
 ## [Password-less Strategy](passwordless-strategy.md)
 

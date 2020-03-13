@@ -2,7 +2,7 @@
 title: Scenario 1 Online Activation (Windows 10)
 description: Achieve network access by deploying the Volume Activation Management Tool (VAMT) in a Core Network environment.
 ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -89,7 +89,7 @@ To collect the status from select computers in the database, you can select comp
 - In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box, type the appropriate user name and password and then click **OK**.
 - VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-  **Note**  
+  **Note**
   If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## <a href="" id="bkmk-partseven"></a>Step 7: Add product keys and determine the remaining activation count
@@ -128,10 +128,10 @@ To collect the status from select computers in the database, you can select comp
 
     **Note**  
     Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network.
-    
+
     RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+
+

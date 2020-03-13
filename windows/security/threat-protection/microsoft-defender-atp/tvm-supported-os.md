@@ -1,7 +1,7 @@
 ---
 title: Supported operating systems and platforms for threat and vulnerability management
-description: Before you begin, ensure that you meet the operating system or platform requisites for threat and vulnerability management so the activities in your all devices are properly accounted for. 
-keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
+description: Before you begin, ensure that you meet the operating system or platform requisites for threat and vulnerability management so the activities in your all devices are properly accounted for.
+keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -34,7 +34,7 @@ Operating system | Security assessment support
 Windows 7 | Operating System (OS) vulnerabilities
 Windows 8.1 | Not supported
 Windows 10 1607-1703 | Operating System (OS) vulnerabilities
-Windows 10 1709+ |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment 
+Windows 10 1709+ |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2008 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2012 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment

@@ -1,9 +1,9 @@
 ---
 title: Upgrade Windows Phone 8.1 to Windows 10 Mobile in an MDM environment (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
-description: This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. 
+description: This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM.
 keywords: upgrade, update, windows, phone, windows 10, mdm, mobile
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.topic: article
 
 ## Summary
 
-This article describes how system administrators can upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM). 
+This article describes how system administrators can upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM).
 
 >[!IMPORTANT]
 >If you are not a system administrator, see the [Windows 10 Mobile Upgrade & Updates](https://www.microsoft.com/windows/windows-10-mobile-upgrade) page for details about updating your Windows 8.1 Mobile device to Windows 10 Mobile using the [Upgrade Advisor](https://www.microsoft.com/store/p/upgrade-advisor/9nblggh0f5g4).
@@ -53,7 +53,7 @@ To provide enterprises with a solution that's independent of the Upgrade Advisor
 The registry CSP is used to push the GUID value to the following registry key for which the Open Mobile Alliance (OMA) Device Management (DM) client has Read/Write access and for which the Device Update service has Read access.
 
 ```
-[HKLM\Software\Microsoft\Provisioning\OMADM] 
+[HKLM\Software\Microsoft\Provisioning\OMADM]
 "EnterpriseUpgrade"="d369c9b6-2379-466d-9162-afc53361e3c2”
 ```
 
@@ -61,7 +61,7 @@ The registry CSP is used to push the GUID value to the following registry key fo
 The complete SyncML command for the solution is as follows. Note: The SyncML may vary, depending on your MDM solution.
 
 ```
-SyncML xmlns="SYNCML:SYNCML1.1"> 
+SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Add>
       <CmdID>250</CmdID>

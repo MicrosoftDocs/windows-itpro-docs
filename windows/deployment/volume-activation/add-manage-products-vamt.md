@@ -2,7 +2,7 @@
 title: Add and Manage Products (Windows 10)
 description: Add and manage computers with the Volume Activation Management Tool (VAMT).
 ms.assetid: a48fbc23-917d-40f7-985c-e49702c05e51
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -26,6 +26,6 @@ This section describes how to add client computers into the Volume Activation Ma
 |[Add and Remove Computers](add-remove-computers-vamt.md) |Describes how to add client computers to VAMT. |
 |[Update Product Status](update-product-status-vamt.md) |Describes how to update the status of product license. |
 |[Remove Products](remove-products-vamt.md) |Describes how to remove a product from the product list. |
- 
- 
- 
+
+
+

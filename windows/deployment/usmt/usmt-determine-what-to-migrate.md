@@ -2,7 +2,7 @@
 title: Determine What to Migrate (Windows 10)
 description: Determine migration settings for standard or customized for the User State Migration Tool (USMT) 10.0.
 ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10

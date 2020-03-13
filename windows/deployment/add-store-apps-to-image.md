@@ -10,7 +10,7 @@ ms.pagetype: deploy
 audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -30,7 +30,7 @@ This topic describes the correct way to add Microsoft Store for Business applica
 
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md) for the tools required to mount and edit Windows images.
 
-* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app). 
+* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
 * A Windows Image. For instructions on image creation, see [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 >[!NOTE]
@@ -62,7 +62,7 @@ On a test machine:
 5. Copy the XML file you created to a location accessible by the machine you previously used to add Store applications to your image.
 
 Now, on the machine where your image file is accessible:
-1. Import the Start layout. At the Windows PowerShell prompt, type: 
+1. Import the Start layout. At the Windows PowerShell prompt, type:
 `Import-StartLayout -LayoutPath "<path><file name>.xml" -MountPath "C:\test\"`
 2. Save changes and dismount the image. At the Windows PowerShell prompt, type:
 `Dismount-WindowsImage -Path c:\test -Save`

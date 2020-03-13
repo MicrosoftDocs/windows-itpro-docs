@@ -2,7 +2,7 @@
 title: Migration Store Encryption (Windows 10)
 description:  Learn how the User State Migration Tool (USMT) enables support for stronger encryption algorithms, called Advanced Encryption Standard (AES).
 ms.assetid: b28c2657-b986-4487-bd38-cb81500b831d
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -55,21 +55,21 @@ The following table describes the command-line encryption options in USMT.
 </tbody>
 </table>
 
- 
+
 
 **Important**  
 Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the UsmtUtils command with the **/ec** option. For more information see [UsmtUtils Syntax](usmt-utilities.md)
 
- 
+
 
 ## Related topics
 
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
 
- 
+
+
 
 
 

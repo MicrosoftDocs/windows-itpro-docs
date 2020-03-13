@@ -1,6 +1,6 @@
 ---
 title: Submit Windows 10 upgrade errors using Feedback Hub
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description: Download the Feedback Hub app, and then submit Windows 10 upgrade errors for diagnosis using feedback hub.
@@ -52,8 +52,8 @@ The Feedback Hub will open.
 - Additional details
     - What type of security software is installed?
     - Is the computer up to date with latest drivers and firmware?
-    - Are there any external devices connected? 
-- If you used the link above, the category and subcategory will be automatically selected. If it is not selected, choose **Install and Update** and **Windows Installation**. 
+    - Are there any external devices connected?
+- If you used the link above, the category and subcategory will be automatically selected. If it is not selected, choose **Install and Update** and **Windows Installation**.
 
 You can attach a screenshot or file if desired. This is optional, but can be extremely helpful when diagnosing your upgrade issue. The location of these files is described here: [Windows Setup log files and event logs](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
 
@@ -61,7 +61,7 @@ Click **Submit** to send your feedback.
 
 See the following example:
 
-![feedback example](../images/feedback.png) 
+![feedback example](../images/feedback.png)
 
 After you click Submit, that's all you need to do. Microsoft will receive your feedback and begin analyzing the issue.  You can check on your feedback periodically to see what solutions have been provided.
 
@@ -69,7 +69,7 @@ After you click Submit, that's all you need to do. Microsoft will receive your f
 
 After your feedback is submitted, you can email or post links to it by opening the Feedback Hub, clicking My feedback at the top, clicking the feedback item you submitted, clicking **Share**, then copying the short link that is displayed.
 
-![share](../images/share.jpg) 
+![share](../images/share.jpg)
 
 ## Related topics
 

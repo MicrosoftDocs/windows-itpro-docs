@@ -60,7 +60,7 @@ To support Inherited Activation, both the host computer and the VM must be runni
 
 ## The evolution of deployment
 
-> [!NOTE] 
+> [!NOTE]
 > The original version of this section can be found at [Changing between Windows SKUs](https://blogs.technet.microsoft.com/mniehaus/2017/10/09/changing-between-windows-skus/).
 
 The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
@@ -156,7 +156,7 @@ After Windows 10, version 1903:<br>
 
 > [!NOTE]
 > - A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-> 
+>
 > - A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios

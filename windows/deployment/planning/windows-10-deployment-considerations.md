@@ -2,7 +2,7 @@
 title: Windows 10 deployment considerations (Windows 10)
 description: There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
 ms.assetid: A8DD6B37-1E11-4CD6-B588-92C2404219FE
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, upgrade, update, in-place
@@ -108,7 +108,7 @@ In either of these scenarios, you can make a variety of configuration changes to
 For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will be deployed two times per year. You can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
--   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). 
+-   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update).
 -   Configuration Manager task sequences.
 -   Configuration Manager software update capabilities (deploying like an update).
 

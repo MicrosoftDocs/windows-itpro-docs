@@ -12,7 +12,7 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -36,7 +36,7 @@ Delegated (work or school account) | Software.Read | 'Read Threat and Vulnerabil
 
 ## HTTP request
 ```
-GET /api/Software/{Id}/machineReferences 
+GET /api/Software/{Id}/machineReferences
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ GET /api/Software/{Id}/machineReferences
 Empty
 
 ## Response
-If successful, this method returns 200 OK and a list of devices with the software installed in the body. 
+If successful, this method returns 200 OK and a list of devices with the software installed in the body.
 
 
 ## Example

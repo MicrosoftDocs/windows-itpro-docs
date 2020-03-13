@@ -2,7 +2,7 @@
 title: Install VAMT (Windows 10)
 description: Install VAMT
 ms.assetid: 2eabd3e2-0a68-43a5-8189-2947e46482fc
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -28,7 +28,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 >VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products’ license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For Active Directory-Based Activation use, for best results we recommend running VAMT while logged on as a domain administrator. 
 
 >[!NOTE]
->The VAMT Microsoft Management Console snap-in ships as an x86 package. 
+>The VAMT Microsoft Management Console snap-in ships as an x86 package.
 
 ### Requirements
 
@@ -43,7 +43,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 2. Select **Basic**.
 3. Accept the license terms.
 4. Enter an install location or use the default path, and then select **Install**.
-5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**. 
+5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**.
 
     ![In this example, the instance name is SQLEXPRESS01](images/sql-instance.png)
 
@@ -76,5 +76,5 @@ To uninstall VAMT using the **Programs and Features** Control Panel:
 2.  Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
 
 
- 
- 
+
+

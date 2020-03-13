@@ -32,6 +32,7 @@ ms.topic: include
 > [!TIP]
 > If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home Button** policy or **Set Home Button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>
 
+
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Configure Home Button

@@ -2,7 +2,7 @@
 title: USMT Requirements (Windows 10)
 description: While the User State Migration Tool (USMT) doesn't have many requirements, these tips and tricks can help smooth the migration process.
 ms.assetid: 2b0cf3a3-9032-433f-9622-1f9df59d6806
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -83,7 +83,7 @@ The following table lists the operating systems supported in USMT.
 </tbody>
 </table>
 
- 
+
 
 **Note**  
 You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
@@ -152,9 +152,9 @@ This documentation assumes that IT professionals using USMT understand command-l
 [Estimate Migration Store Size](usmt-estimate-migration-store-size.md)<BR>
 [User State Migration Tool (USMT) Overview Topics](usmt-topics.md)<BR>
 
- 
 
- 
+
+
 
 
 

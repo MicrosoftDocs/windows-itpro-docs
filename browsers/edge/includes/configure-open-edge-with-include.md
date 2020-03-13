@@ -60,4 +60,3 @@ ms.topic: include
 - [Disable lockdown of Start pages](../available-policies.md#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
 
 
----

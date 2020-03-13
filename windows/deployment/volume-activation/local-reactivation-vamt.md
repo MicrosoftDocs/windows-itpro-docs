@@ -2,7 +2,7 @@
 title: Perform Local Reactivation (Windows 10)
 description: An initially activated a computer using scenarios like MAK, retail, or CSLVK (KMS host), can be reactivated with Volume Activation Management Tool (VAMT).
 ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -36,7 +36,7 @@ During the initial proxy activation, the CID is bound to a digital “fingerprin
 6.  In the right-side pane, click **Activate**, and then click **Apply Confirmation ID**.
 7.  Click a credential option. Choose **Alternate credentials** only if you are reactivating products that require administrator credentials different from the ones you are currently using.
 8.  If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and click **OK**.
-    
+
     VAMT displays the **Apply Confirmation ID** dialog box.
 
 10. If you are using a different product key than the product key used for initial activation, you must complete a new activation to obtain a new CID.
