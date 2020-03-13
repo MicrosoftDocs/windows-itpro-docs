@@ -20,14 +20,16 @@ ms.topic: article
 # Windows 10 deployment scenarios
 
 **Applies to**
--   Windows 10
+
+- Windows 10
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
 
-The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
+The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories.
+
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
-- Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
-- Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
+- Dynamic deployment methods enable you to configure applications and settings for specific use cases.
+- Traditional deployment methods use existing tools to deploy operating system images.
 
 <table border="0">
   <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
@@ -121,7 +123,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. 
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/configmgr/osd/deploy-use/refresh-an-existing-computer-with-a-new-version-of-windows">Refresh an existing computer with a new version of Windows</a>
     </td>
   </tr>
   <tr>
@@ -133,17 +135,15 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/configmgr/osd/deploy-use/replace-an-existing-computer-and-transfer-settings">Replace an existing computer and transfer settings with Microsoft Endpoint Configuration Manager</a>
     </td>
   </tr>
 </table>
 
-<br>&nbsp;
 
-
->[!IMPORTANT]
->The Windows Autopilot and Subscription Activation scenarios require that the beginning OS be Windows 10 version 1703, or later.<br>
->Except for clean install scenarios such as traditional bare metal and Windows Autopilot, all the methods described can optionally migrate apps and settings to the new OS. 
+> [!IMPORTANT]
+> The Windows Autopilot and Subscription Activation scenarios require that the beginning OS be Windows 10 version 1703, or later.  
+> Except for clean install scenarios such as traditional bare metal and Windows Autopilot, all the methods described can optionally migrate apps and settings to the new OS. 
 
 ## Modern deployment methods
 
@@ -169,17 +169,20 @@ Scenarios that support in-place upgrade with some additional procedures include 
 
 - **Legacy BIOS to UEFI booting**: To perform an in-place upgrade on a UEFI-capable system that currently boots using legacy BIOS, first perform the in-place upgrade to Windows 10, maintaining the legacy BIOS boot mode. Windows 10 does not require UEFI, so it will work fine to upgrade a system using legacy BIOS emulation. After the upgrade, if you wish to enable Windows 10 features that require UEFI (such as Secure Boot), you can convert the system disk to a format that supports UEFI boot using the [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) tool. Note: [UEFI specification](http://www.uefi.org/specifications) requires GPT disk layout. After the disk has been converted, you must also configure the firmware to boot in UEFI mode.
 
--   **Non-Microsoft disk encryption software**: While devices encrypted with BitLocker can easily be upgraded, more work is necessary for non-Microsoft disk encryption tools. Some ISVs will provide instructions on how to integrate their software into the in-place upgrade process. Check with your ISV to see if they have instructions. The following articles provide details on how to provision encryption drivers for use during Windows Setup via the ReflectDrivers setting:
-    - [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview)
-    - [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options)
+- **Non-Microsoft disk encryption software**: While devices encrypted with BitLocker can easily be upgraded, more work is necessary for non-Microsoft disk encryption tools. Some ISVs will provide instructions on how to integrate their software into the in-place upgrade process. Check with your ISV to see if they have instructions. The following articles provide details on how to provision encryption drivers for use during Windows Setup via the ReflectDrivers setting:
+  - [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview)
+  - [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options)
 
 There are some situations where you cannot use in-place upgrade; in these situations, you can use traditional deployment (wipe-and-load) instead. Examples of these situations include:
 
--   Changing from Windows 7, Windows 8, or Windows 8.1 x86 to Windows 10 x64. The upgrade process cannot change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
--   Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
--   Updating existing images. While it might be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image, this is not supported – preparing an upgraded OS for imaging (using Sysprep.exe) is not supported and will not work when it detects the upgraded OS.
--   Dual-boot and multi-boot systems. The upgrade process is designed for devices running a single OS; if using dual-boot or multi-boot systems with multiple operating systems (not leveraging virtual machines for the second and subsequent operating systems), additional care should be taken.
-
+- Changing from Windows 7, Windows 8, or Windows 8.1 x86 to Windows 10 x64.\
+The upgrade process cannot change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
+- Windows To Go and Boot from VHD installations.\
+The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
+- Updating existing images.\
+While it might be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image, this is not supported – preparing an upgraded OS for imaging (using Sysprep.exe) is not supported and will not work when it detects the upgraded OS.
+- Dual-boot and multi-boot systems.\
+The upgrade process is designed for devices running a single OS; if using dual-boot or multi-boot systems with multiple operating systems (not leveraging virtual machines for the second and subsequent operating systems), additional care should be taken.
 
 ## Dynamic provisioning
 
@@ -187,10 +190,9 @@ For new PCs, organizations have historically replaced the version of Windows inc
 
 The goal of dynamic provisioning is to take a new PC out of the box, turn it on, and transform it into a productive organization device, with minimal time and effort. The types of transformations that are available include:
 
-### Windows 10 Subscription Activation<A ID="windows-10-subscription-activation"></A>
+### Windows 10 Subscription Activation
 
 Windows 10 Subscription Activation is a modern deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation).
-
 
 ### Azure Active Directory (AAD) join with automatic mobile device management (MDM) enrollment
 
@@ -198,25 +200,25 @@ In this scenario, the organization member just needs to provide their work or sc
 
 ### Provisioning package configuration
 
-Using the [Windows Imaging and Configuration Designer (ICD)](https://go.microsoft.com/fwlink/p/?LinkId=619358), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through a variety of means, typically by IT professionals. For more information, see [Configure devices without MDM](/windows/configuration/configure-devices-without-mdm).
+Using the [Windows Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=619358), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through a variety of means, typically by IT professionals. For more information, see [Configure devices without MDM](/windows/configuration/configure-devices-without-mdm).
 
-These scenarios can be used to enable “choose your own device” (CYOD) programs where the organization’s users can pick their own PC and not be restricted to a small list of approved or certified models (programs that are difficult to implement using traditional deployment scenarios).
+These scenarios can be used to enable "choose your own device" (CYOD) programs where the organization's users can pick their own PC and not be restricted to a small list of approved or certified models (programs that are difficult to implement using traditional deployment scenarios).
 
 While the initial Windows 10 release includes a variety of provisioning settings and deployment mechanisms, these will continue to be enhanced and extended based on feedback from organizations. As with all Windows features, organizations can submit suggestions for additional features through the Windows Feedback app or through their Microsoft Support contacts.
 
-## Traditional deployment: 
+## Traditional deployment
 
-New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [Microsoft Endpoint Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
+New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems).
 
 With the release of Windows 10, all of these tools are being updated to fully support Windows 10. Although newer scenarios such as in-place upgrade and dynamic provisioning may reduce the need for traditional deployment capabilities in some organizations, these traditional methods remain important and will continue to be available to organizations that need them.
 
 The traditional deployment scenario can be divided into different sub-scenarios. These are explained in detail in the following sections, but the following provides a brief summary:
 
--   **New computer.** A bare-metal deployment of a new machine.
+- **New computer.** A bare-metal deployment of a new machine.
 
--   **Computer refresh.** A reinstall of the same machine (with user-state migration and an optional full Windows Imaging (WIM) image backup).
+- **Computer refresh.** A reinstall of the same machine (with user-state migration and an optional full Windows Imaging (WIM) image backup).
 
--   **Computer replace.** A replacement of the old machine with a new machine (with user-state migration and an optional full WIM image backup).
+- **Computer replace.** A replacement of the old machine with a new machine (with user-state migration and an optional full WIM image backup).
 
 ### New computer
 
@@ -224,13 +226,10 @@ Also called a "bare metal" deployment. This scenario occurs when you have a blan
 
 The deployment process for the new machine scenario is as follows:
 
-1.  Start the setup from boot media (CD, USB, ISO, or PXE).
-
-2.  Wipe the hard disk clean and create new volume(s).
-
-3.  Install the operating system image.
-
-4.  Install other applications (as part of the task sequence).
+1. Start the setup from boot media (CD, USB, ISO, or PXE).
+1. Wipe the hard disk clean and create new volume(s).
+1. Install the operating system image.
+1. Install other applications (as part of the task sequence).
 
 After taking these steps, the computer is ready for use.
 
@@ -240,17 +239,12 @@ A refresh is sometimes called wipe-and-load. The process is normally initiated i
 
 The deployment process for the wipe-and-load scenario is as follows:
 
-1.  Start the setup on a running operating system.
-
-2.  Save the user state locally.
-
-3.  Wipe the hard disk clean (except for the folder containing the backup).
-
-4.  Install the operating system image.
-
-5.  Install other applications.
-
-6.  Restore the user state.
+1. Start the setup on a running operating system.
+1. Save the user state locally.
+1. Wipe the hard disk clean (except for the folder containing the backup).
+1. Install the operating system image.
+1. Install other applications.
+1. Restore the user state.
 
 After taking these steps, the machine is ready for use.
 
@@ -260,17 +254,18 @@ A computer replace is similar to the refresh scenario. However, since we are rep
 
 The deployment process for the replace scenario is as follows:
 
-1.  Save the user state (data and settings) on the server through a backup job on the running operating system.
+1. Save the user state (data and settings) on the server through a backup job on the running operating system.
+1. Deploy the new computer as a bare-metal deployment.
 
-2.  Deploy the new computer as a bare-metal deployment.
-
-    **Note**<br>In some situations, you can use the replace scenario even if the target is the same machine. For example, you can use replace if you want to modify the disk layout from the master boot record (MBR) to the GUID partition table (GPT), which will allow you to take advantage of the Unified Extensible Firmware Interface (UEFI) functionality. You can also use replace if the disk needs to be repartitioned since user data needs to be transferred off the disk.
+    > [!NOTE]
+    > In some situations, you can use the replace scenario even if the target is the same machine. For example, you can use replace if you want to modify the disk layout from the master boot record (MBR) to the GUID partition table (GPT), which will allow you to take advantage of the Unified Extensible Firmware Interface (UEFI) functionality. You can also use replace if the disk needs to be repartitioned since user data needs to be transferred off the disk.
 
 ## Related topics
 
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
+- [Scenarios to deploy enterprise operating systems with Configuration Manager
+](https://docs.microsoft.com/en-us/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Windows setup technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619357)
 - [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=619358)
