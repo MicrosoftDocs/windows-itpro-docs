@@ -35,7 +35,7 @@ For the purposes of this guide, we will use one server computer: CM01.
 On **CM01**:
 
 1. Create the **D:\Setup** folder if it does not already exist.
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (ex: AcroRdrDC2000620034_en_US.exe.exe) to **D:\\Setup\\Adobe** on CM01. The filename will differ depending on the version of Acrobat Reader.
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (ex: AcroRdrDC2000620034_en_US.exe) to **D:\\Setup\\Adobe** on CM01. The filename will differ depending on the version of Acrobat Reader.
 2. Extract the .exe file that you downloaded to an .msi. The source folder will differ depending on where you downloaded the file. See the following example:
 
   ```powershell
