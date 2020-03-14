@@ -47,7 +47,7 @@ Driver folder structure on CM01
   ![Add drivers to Windows PE](../images/fig21-add-drivers1.png "Add drivers to Windows PE")<br>
   ![Add drivers to Windows PE](../images/fig21-add-drivers2.png "Add drivers to Windows PE")<br>
   ![Add drivers to Windows PE](../images/fig21-add-drivers3.png "Add drivers to Windows PE")<br>
-  ![Add drivers to Windows PE](../images/fig21-add-drivers3.png "Add drivers to Windows PE")
+  ![Add drivers to Windows PE](../images/fig21-add-drivers4.png "Add drivers to Windows PE")
 
   Add drivers to Windows PE
 
