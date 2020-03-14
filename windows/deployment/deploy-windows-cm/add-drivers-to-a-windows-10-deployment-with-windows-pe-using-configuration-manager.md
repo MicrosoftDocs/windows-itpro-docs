@@ -80,7 +80,7 @@ On **CM01**:
     * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w
 
     >[!NOTE]
-    >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
+    >The package path does not yet exist, so you have to type it in. The wizard will create the new package using the path you specify.
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 
