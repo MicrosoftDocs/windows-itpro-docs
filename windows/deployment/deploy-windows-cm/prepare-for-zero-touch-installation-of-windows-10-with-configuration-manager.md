@@ -188,7 +188,7 @@ New-Item -ItemType Directory -Path "D:\Sources\Software"
 New-Item -ItemType Directory -Path "D:\Sources\Software\Adobe"
 New-Item -ItemType Directory -Path "D:\Sources\Software\Microsoft"
 New-Item -ItemType Directory -Path "D:\Logs"
-New-SmbShare -Name Sources$ -Path D:\Sources -ChangeAccess EVERYONE
+New-SmbShare -Name Sources$ -Path D:\Sources -FullAccess "NT AUTHORITY\INTERACTIVE", "BUILTIN\Administrators"
 New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
 ```
 

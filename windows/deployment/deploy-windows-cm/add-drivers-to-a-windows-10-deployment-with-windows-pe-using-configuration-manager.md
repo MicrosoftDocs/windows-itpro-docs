@@ -36,7 +36,9 @@ This section will show you how to import some network and storage drivers for Wi
 
 Driver folder structure on CM01
 
-1. On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click the **Drivers** node and select **Import Driver**.
+On **CM01**:
+
+1. Using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click the **Drivers** node and select **Import Driver**.
 2. In the Import New Driver Wizard, on the **Specify a location to import driver** page, select the **Import all drivers in the following network path (UNC)** option, browse to the **\\\\CM01\\Sources$\\OSD\\DriverSources\\WinPE x64** folder and click **Next**.
 3. On the **Specify the details for the imported driver** page, click **Categories**, create a category named **WinPE x64**, and then click **Next**.
 4. On the **Select the packages to add the imported driver** page, click **Next**.
@@ -61,18 +63,21 @@ For the purposes of this section, we assume that you have downloaded the Windows
 
 Driver folder structure on CM01
 
-1.  On CM01, using the Configuration Manager Console, right-click the **Drivers** folder and select **Import Driver**.
-2.  In the Import New Driver Wizard, on the **Specify a location to import driver** page, below the Import all drivers in the following network path (UNC) option, browse to the **\\\\CM01\\Sources$\\OSD\\DriverSources\\Windows 10 x64\\HP EliteBook 8560w** folder and click **Next**.
-3.  On the **Specify the details for the imported driver** page, click **Categories**, create a category named Windows 10 x64 - HP EliteBook 8560w, and then click **Next**.
+On **CM01**:
+
+1. Using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click the **Drivers** node and select **Import Driver**.
+2. In the Import New Driver Wizard, on the **Specify a location to import driver** page, select the **Import all drivers in the following network path (UNC)** option, browse to the **\\\\CM01\\Sources$\\OSD\\DriverSources\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder and click **Next**. Wait a minute for driver information to be validated.
+3. On the **Specify the details for the imported driver** page, click **Categories**, create a category named **Windows 10 x64 - HP EliteBook 8560w**, click **OK**, and then click **Next**.
 
     ![Create driver categories](../images/fig22-createcategories.png "Create driver categories")
 
     Create driver categories
 
-4.  On the **Select the packages to add the imported driver** page, click **New Package**, use the following settings for the package, and then click **Next**:
+
+4. On the **Select the packages to add the imported driver** page, click **New Package**, use the following settings for the package, and then click **Next**:
 
     * Name: Windows 10 x64 - HP EliteBook 8560w
-    * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
+    * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w
 
     >[!NOTE]
     >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
@@ -82,9 +87,11 @@ Driver folder structure on CM01
     >[!NOTE]
     >If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
   
-    ![Drivers imported and a new driver package created](../images/mdt-06-fig26.png "Drivers imported and a new driver package created")
+    ![Drivers imported and a new driver package created](../images/cm01-drivers-packages.png "Drivers imported and a new driver package created")
   
     Drivers imported and a new driver package created
+
+Next, see [Create a task sequence with Configuration Manager and MDT](create-a-task-sequence-with-configuration-manager-and-mdt.md).
 
 ## Related topics
 
