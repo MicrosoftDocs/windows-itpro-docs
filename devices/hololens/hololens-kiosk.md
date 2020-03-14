@@ -21,10 +21,13 @@ appliesto:
 
 # Set up HoloLens as a kiosk for specific applications
 
-A convenient feature many choose to use as a solution for focusing on business apps, or using to show an app demo is Kiosk mode. There are two different types of kiosks, and three methods of deploying them.
+Kiosk mode is a convenient feature that you can use to focus the HoloLens device on business apps, or to use the HoloLens device in an app demo. You can use kiosk mode in two configurations (single-app kiosk or multi-app kiosk) and you can choose one of three processes to set up and deploy the kiosk configuration.
 
-- All HoloLens 2 devices are Kiosk-mode capable.
-- In order to use Kiosk Mode with HoloLens (1st gen) you'll need to be updated to at least Windows 10, version 1803 which released April 2018. If you have recovered your HoloLens (1st gen) device with Windows Device Recovery Tool using the default build, or have taken the most recent updates then you are ready. 
+## Kiosk mode requirements
+
+You can configure any HoloLens 2 device to use kiosk mode.
+
+To configure a HoloLens (1st gen) device to use kiosk mode, you must first make sure that the device runs Windows 10, version 1803, or a newer version. If you have used the Windows Device Recovery Tool to recover your HoloLens (1st gen) device to its default build, or if you have installed the most recent updates, then your device is ready.
 
 ## Select a kiosk mode
 
@@ -83,7 +86,7 @@ There are three methods that you can use to configure the device as a kiosk:
 
 ## Set up kiosk mode by using Microsoft Intune or MDM
 
-Process:
+To set up kiosk mode by using Microsoft Intune or another MDM system, follow these steps.
 
 1. [Create a device configuration policy](#create-a-device-configuration-policy).
 1. Select the settings that you want to see in your kiosk.
@@ -134,7 +137,7 @@ Some common in-box apps you may wish to use are:
 
 For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
 
-## Assign the policy to the group to receive the policy
+### Assign the policy to the group to receive the policy
 
 Once you have created and saved your Kiosk mode policy you must assign it to the group(s) that you want it deployed to, or your devices will never receive it.
 Click assignments and add the group(s) that you want the Kiosk mode policy deployed to.
@@ -154,11 +157,11 @@ There is an important distinction between the **User logon type** and the **Assi
 
 - You have devices you contract out to two different vendors. Instead of user groups you have device groups. Each device group needs a different Kiosk. Those devices when joined receive policy for their own respective Kiosk. The logon user group may include users from both sites, and thus each regional area's device would allow kiosks for both sets of users. 
 
-## Set up the device
+### Set up the device
 
 Now it's time to set up the device to both receive the policy and log into the account the policy has enabled for kiosk mode.
 
-### Set up a single-app kiosk
+#### Set up a single-app kiosk
 
 Since Single-app kiosk mode targets a local user or Microsoft account you need to take a few extra steps to [enroll the HoloLens in MDM](hololens-enroll-mdm.md), but sign in will be easy and can be automatic. 
 
@@ -170,7 +173,7 @@ Give your store app a short amount time to download as well as policy to be appl
 
 If you're not seeing your Kiosk mode yet, make sure to [check the assignment status](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
-### Set up a multi-app kiosk
+#### Set up a multi-app kiosk
 
 For multi app Kiosk you'll be using a device that you Azure AD join to your tenant during OOBE.  
 
@@ -192,7 +195,7 @@ For other MDM services, check your provider's documentation for instructions. If
 
 As part of creating your Provisioning package, you'll need to create a [start layout](#start-layout-for-hololens).
 
-Process:
+To set up kiosk mode by using a provisioning package, follow these steps.
 
 1. [Create an XML file that defines the kiosk configuration.](#create-a-kiosk-configuration-xml-file)
 2. [Add the XML file to a provisioning package.](#add-the-kiosk-configuration-xml-file-to-a-provisioning-package)
@@ -256,6 +259,8 @@ You can also [apply a provisioning package to HoloLens after setup](hololens-pro
 
 ## Set up kiosk mode by using the Windows Device Portal
 
+To set up kiosk mode by using the Windows Device Portal, follow these steps.
+
 1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
     > [!IMPORTANT]
@@ -303,7 +308,7 @@ Save the following sample as an XML file. You can use this file when you configu
     <RequiredStartGroups>
       <AppendGroup Name="">
         <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-      </AppendGroup>      
+      </AppendGroup>
     </RequiredStartGroups>
   </RequiredStartGroupsCollection>
  </LayoutModificationTemplate>
@@ -333,10 +338,10 @@ You will [create an XML file](#set-up-kiosk-mode-by-using-a-provisioning-package
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-## Kiosk app recommendations
+## Recommendations for selecting kiosk apps
 
 - You cannot select  the Shell app as a kiosk app.
-- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app. 
+- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app.
 - You can select Cortana as a kiosk app.
 - To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
 - While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours. 
