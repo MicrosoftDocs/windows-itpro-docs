@@ -21,14 +21,11 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 
 **To Install the App-V 5.1 server using a script**
 
--   Use the following tables for more information about installing the App-V 5.1 server using the command line.
+- Use the following tables for more information about installing the App-V 5.1 server using the command line.
 
-    **Note**  
-    The information in the following tables can also be accessed using the command line by typing the following command: **appv\_server\_setup.exe /?**.
+    > [!NOTE]
+    > The information in the following tables can also be accessed using the command line by typing the following command: **appv\_server\_setup.exe /?**.
 
-
-
-~~~
 **Common parameters and Examples**
 
 <table>
@@ -777,20 +774,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 </tr>
 </tbody>
 </table>
-~~~
-
-
 
 ## Related topics
 
-
 [Deploying the App-V 5.1 Server](deploying-the-app-v-51-server.md)
-
-
-
-
-
-
-
-
-
