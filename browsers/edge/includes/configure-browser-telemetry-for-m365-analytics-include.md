@@ -3,7 +3,8 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
@@ -31,7 +32,7 @@ ms.topic: include
 |---------------------------------------------|:---:|:--------:|-----------------------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     |        No data collected or sent        | ![Most restricted value](../images/check-gn.png) |
 |                   Enabled                   |  1  |    1     |       Send intranet history only        |                                                  |
-|                   Enabled                   |  2  |    2     |       Send Internet history only        |                                                  |
+|                   Enabled                   |  3  |    3     | Send both intranet and internet history |                                                  |
 |                   Enabled                   |  3  |    3     | Send both intranet and Internet history |                                                  |
 
 ---
