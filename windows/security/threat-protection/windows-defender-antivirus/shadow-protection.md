@@ -39,6 +39,9 @@ The following images shows an instance of unwanted software that was detected an
 
 ## Turn on shadow protection
 
+> [!IMPORTANT]
+> Make sure the [requirements](#requirements-for-shadow-protection) are met before turning shadow protection on.
+
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
