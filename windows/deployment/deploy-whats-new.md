@@ -169,11 +169,9 @@ For more information, see the following guides:
 
 The following topics provide a change history for Windows 10 ITPro TechNet library content related to deploying and using Windows 10.
 
-[Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
-<BR>[Change history for Access Protection](/windows/access-protection/change-history-for-access-protection)
-<BR>[Change history for Device Security](/windows/device-security/change-history-for-device-security)
-<BR>[Change history for Threat Protection](/windows/threat-protection/change-history-for-threat-protection)
-
+[Change history for Access Protection](/windows/access-protection/change-history-for-access-protection)<br>
+[Change history for Device Security](/windows/device-security/change-history-for-device-security)<br>
+[Change history for Threat Protection](/windows/threat-protection/change-history-for-threat-protection)
 
 ## Related topics
 

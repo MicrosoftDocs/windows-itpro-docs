@@ -22,9 +22,54 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+
+
+
+Deploying Microsoft Defender ATP is a three-phase process:
+
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
+        <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+      <br/>Phase 1: Prepare </a><br>
+    </td>
+     <td align="center"  >
+      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
+        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
+      <br/>Phase 2: Setup </a><br>
+        </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
+        <img src="images/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
+      <br/>Phase 3: Onboard</a><br>
+</td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+  </tr>
+</table>
+
+You are currently in the preparation phase.
+
+
+Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
+
+
 ## Stakeholders and Sign-off
 The following section serves to identify all the stakeholders that are involved
-in this project and need to sign-off, review, or stay informed. Add stakeholders
+in the project and need to sign-off, review, or stay informed.
+
+Add stakeholders
 to the table below as appropriate for your organization.
 
 -   SO = Sign-off on this project
@@ -41,33 +86,6 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the organization.*                             | R      |
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
-## Project Management
-
-### In Scope
-
-The following is in scope for this project:
-
--   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
-    capabilities
-
-    -   Next Generation Protection
-
-    -   Attack Surface Reduction
-
--   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
-    capabilities including automatic investigation and remediation
-
--   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
--   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service.
-
-### Out of scope
-
-The following are out of scope of this project:
-
--   Configuration of third-party solutions that might integrate with Microsoft
-    Defender ATP.
-
--   Penetration testing in production environment.
 
 ## Environment 
 
@@ -140,8 +158,9 @@ structure required for your environment.
 ## Adoption Order
 In many cases, organizations will have existing endpoint security products in
 place. The bare minimum every organization should have is an antivirus solution. But in some cases, an organization might also have implanted an EDR solution already.
+
 Historically, replacing any security solution used to be time intensive and difficult
-to achieve, due to the tight hooks into the application layer and infrastructure
+to achieve due to the tight hooks into the application layer and infrastructure
 dependencies. However, because Microsoft Defender ATP is built into the
 operating system, replacing third-party solutions is now easy to achieve.
 
@@ -158,5 +177,8 @@ how the endpoint security suite should be enabled.
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Not applicable      |
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed. [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Not applicable      |
 
-## Related topic
-- [Production deployment](production-deployment.md)
+## Next step
+|||
+|:-------|:-----|
+|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Setup Microsoft Defender ATP deployment
+

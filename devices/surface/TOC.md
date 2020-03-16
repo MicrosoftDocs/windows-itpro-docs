@@ -1,6 +1,6 @@
 # [Surface](index.yml)
 
-## [Get started](get-started.md)
+## [Surface devices documentation](get-started.yml)
 
 ## Overview
 
