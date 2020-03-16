@@ -59,7 +59,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Centratlized configuration and administration, APIs</a></b></center></td>
+<a href="#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
 <td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
