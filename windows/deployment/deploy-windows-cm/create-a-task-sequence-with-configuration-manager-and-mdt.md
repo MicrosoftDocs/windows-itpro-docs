@@ -27,7 +27,7 @@ In this article, you will learn how to create a Configuration Manager task seque
 For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
- An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). Note: Active Directory [permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#configure-active-directory-permissions) for the **CM_JD** account are required for the task sequence to work properly.
+ An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). Note: Active Directory [permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md#configure-active-directory-permissions) for the **CM_JD** account are required for the task sequence to work properly.
 
 ## Create a task sequence using the MDT Integration Wizard
 
@@ -134,7 +134,6 @@ Next, see [Finalize the operating system configuration for Windows 10 deployment
 
 ## Related topics
 
-[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)<br>
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Add a Windows 10 operating system image using Configuration Manager](../deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>

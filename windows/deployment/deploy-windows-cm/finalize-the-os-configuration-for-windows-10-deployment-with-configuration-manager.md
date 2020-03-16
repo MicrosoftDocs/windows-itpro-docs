@@ -47,33 +47,26 @@ On **CM01**:
 
     Enable MDT monitoring for Configuration Manager
 
-## Create and share the Logs folder
+## Configure the Logs folder
 
-To support additional server-side logging in Configuration Manager, you create and share the D:\\Logs folder on CM01 using Windows PowerShell. Then in the next step, you enable server-side logging by modifying the CustomSettings.ini file used by the Configuration Manager task sequence.
+The D:\Logs folder was [created previously](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager?branch=cm#review-the-sources-folder-structure) and SMB permissions were added. Next, we will add NTFS folder permissions for the Network Access Account with icacls.exe, and enable server-side logging by modifying the CustomSettings.ini file used by the Configuration Manager task sequence.
 
-1.  On CM01, start an elevated Windows PowerShell prompt (run as Administrator).
+On **CM01**:
 
-2.  Type the following commands, pressing **Enter** after each one:
+1.  Type the following at an elevated Windows PowerShell prompt:
 
     ``` 
-    New-Item -Path E:\Logs -ItemType directory
-    New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
     icacls D:\Logs /grant '"CM_NAA":(OI)(CI)(M)'
     ```
 
-## Configure the rules (Windows 10 x64 Settings package)
-
-
-This section will show you how to configure the rules (the Windows 10 x64 Settings package) to support the Contoso environment.
-
-1. On CM01, using File Explorer, navigate to the **D:\\Sources\\OSD\\Settings\\Windows 10 x64 Settings** folder.
-
-2. Using Notepad, edit the CustomSetting.ini file with the following settings:
+2. Using File Explorer, navigate to the **D:\\Sources\\OSD\\Settings\\Windows 10 x64 Settings** folder.
+3. Using Notepad, edit the CustomSetting.ini file with the following settings:
 
    ``` 
    [Settings]
    Priority=Default
    Properties=OSDMigrateConfigFiles,OSDMigrateMode
+
    [Default]
    DoCapture=NO
    ComputerBackupLocation=NONE
@@ -90,10 +83,12 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
 
    The Settings package, holding the rules and the Unattend.xml template used during deployment
 
-3. Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
+3. In the Configuration Manager console, update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**. Click **OK** in the popup dialog box.
 
    >[!NOTE]
-   >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
+   >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager content library with changes.
+
+-------stopped here--------------
 
 ## Distribute content to the CM01 distribution portal
 

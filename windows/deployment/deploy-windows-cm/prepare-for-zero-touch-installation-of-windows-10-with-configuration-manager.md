@@ -174,6 +174,8 @@ To support the packages you create in this article, the following folder structu
 
 You can run the following commands from an elevated Windows PowerShell prompt to create this folder structure:
 
+>We will also create the D:\Logs folder here which will be used later to support server-side logging.
+
 ```powershell
 New-Item -ItemType Directory -Path "D:\Sources"
 New-Item -ItemType Directory -Path "D:\Sources\OSD"
@@ -187,8 +189,8 @@ New-Item -ItemType Directory -Path "D:\Sources\OSD\MDT"
 New-Item -ItemType Directory -Path "D:\Sources\Software"
 New-Item -ItemType Directory -Path "D:\Sources\Software\Adobe"
 New-Item -ItemType Directory -Path "D:\Sources\Software\Microsoft"
-New-Item -ItemType Directory -Path "D:\Logs"
 New-SmbShare -Name Sources$ -Path D:\Sources -FullAccess "NT AUTHORITY\INTERACTIVE", "BUILTIN\Administrators"
+New-Item -ItemType Directory -Path "D:\Logs"
 New-SmbShare -Name Logs$ -Path D:\Logs -ChangeAccess EVERYONE
 ```
 
