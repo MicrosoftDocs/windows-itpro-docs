@@ -292,18 +292,114 @@ You might also need to check the following:
 
 - Check to see that machines are reflected in the **Machines list** in the portal. 
 
+## Confirming onboarding of newly built machines 
+There may be instances when onboarding is deployed on a newly built machine but not completed. 
 
-## Licensing requirements
-Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+The following steps provide guidance for the following scenario:
+- Onboarding package is deployed to newly built machines
+- Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
+- Machine is turned off and shipped to the end user
 
-- Windows 10 Enterprise E5
-- Windows 10 Education E5
-- Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
-
-For more information, see [Windows 10 Licensing](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx#tab=2).
+>[!NOTE]
+>The following steps are only relevant when using Microsoft Endpoint Configuration Manager (current branch)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+1. Create an application in Microsoft Endpoint Configuration Manager current branch. 
+
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-1.png)
+
+2. Select **Manually specify the application information**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-2.png)
+
+3. Specify information about the application, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-3.png)
+
+4.  Specify information about the software center, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-4.png)
+
+5. In **Deployment types** select **Add**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-5.png)
+
+6. Select **Manually specify the deployment type information**, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-6.png)
+
+7. Specify information about the deployment type, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-7.png)
+
+8. In **Content** > **Installation program** specify the command: `net start sense`.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-8.png)
+
+9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**. 
+
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-9.png)
+
+10. Specify the following detection rule details, then select **OK**:
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-10.png)
+
+11. In **Detection method** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-11.png)
+
+12. In **User Experience**, specify the following information, then select **Next**:
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-12.png)
+
+13. In **Requirements**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-13.png)
+
+14. In **Dependencies**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-14.png)
+
+15. In **Summary**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-15.png)
+
+16. In **Completion**, select **Close**.
+    
+     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-16.png)
+
+17. In **Deployment types**, select **Next**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-17.png)
+
+18. In **Summary**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-18.png)
+    
+    The status is then displayed
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-19.png)
+
+19. In **Completion**, select **Close**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-20.png)
+
+20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-21.png)
+
+21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-22.png)
+
+22. In **Content** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-23.png)
+
+23. In **Deployment settings**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-24.png)
+
+24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-25.png)
+
+25. In **User experience**, select **Commit chagnes at deadline or during a maintenance window (requires restarts), then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-26.png)
+
+26. In **Alerts** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-27.png)
+
+27. In **Summary**, select **Next**. 
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-28.png)
+
+    The status is then displayed
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-29.png)
+
+28. In **Completion**, select **Close**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
+
 
 
 ## Related topics
