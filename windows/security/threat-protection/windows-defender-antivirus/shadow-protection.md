@@ -54,7 +54,7 @@ The following images shows an instance of unwanted software that was detected an
 
 |Requirement  |Details  |
 |---------|---------|
-|Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).<br/>See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
+|Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
 |Windows E5 enrollment     |This is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus). |
