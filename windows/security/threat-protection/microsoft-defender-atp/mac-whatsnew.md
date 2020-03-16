@@ -28,6 +28,7 @@ ms.topic: conceptual
 
 ## 100.86.92
 
+- Improvements around compatibility with Time Machine
 - Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation
 - Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate
 - Other performance improvements & bug fixes
