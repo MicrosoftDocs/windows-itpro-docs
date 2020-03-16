@@ -19,9 +19,11 @@ appliesto:
 - HoloLens 2
 ---
 
-# Set up HoloLens as a kiosk for specific applications
+# Set up HoloLens as a kiosk
 
-Kiosk mode is a convenient feature that you can use to focus the HoloLens device on business apps, or to use the HoloLens device in an app demo. You can use kiosk mode in two configurations (single-app kiosk or multi-app kiosk) and you can choose one of three processes to set up and deploy the kiosk configuration.
+Kiosk mode is a convenient feature that you can use to focus the HoloLens device on business apps, or to use the HoloLens device in an app demo. You can use kiosk mode in two configurations (single-app kiosk or multi-app kiosk) and you can use one of three processes to set up and deploy the kiosk configuration.
+
+This article provides information about aspects of configuring kiosks that are specific to HoloLens devices. For general information about types of Windows-based kiosks and how to configure them, see [Configure kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-methods). 
 
 ## Kiosk mode requirements
 
@@ -52,7 +54,11 @@ While camera and video voice commands and UI are disabled by default the button 
 To enable the camera, device picker, or Miracast on the system menu include the AUMIDs below in your Multi-app kiosk.
 
 > [!NOTE]  
-> Use the Application User Model ID (AUMID) to allow apps in your kiosk configuration. The Camera app AUMID is `HoloCamera_cw5n1h2txyewy!HoloCamera`. The device picker app AUMID is `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`.
+> When you configure assigned access to associate users with specific apps, use the following [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app):
+>  
+> - **Camera app AUMID**: `HoloCamera_cw5n1h2txyewy!HoloCamera`
+> - **Device picker app AUMID**: `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`
+> For general information about using AUMIDs, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
 
 The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) enables kiosk configuration.  
 
@@ -70,19 +76,26 @@ Examples scenarios of when to use which kiosk:
 There are three methods that you can use to configure the device as a kiosk:
 
 - You can use [Microsoft Intune or other mobile device management (MDM) service](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm) to configure single-app and multi-app kiosks.
-- You can [use a provisioning package](#set-up-kiosk-mode-by-using-a-provisioning-package) to configure single-app and multi-app kiosks.
-- You can [use the Windows Device Portal](#set-up-kiosk-mode-by-using-the-windows-device-portal) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
-|                              | Device Portal | Provisioning Package | MDM  |
-|------------------------------|---------------|----------------------|------|
-| Single-app kiosk available   | Yes           | Yes                  | Yes  |
-| Multi-app kiosk available    | No            | Yes                  | Yes  |
-| Need device locally to apply | Yes           | Yes                  | No   |
-| Need developer mode          | Yes           | No                   | No   |
-| Need AAD                     | No            | No                   | Yes  |
-| Automatically deploy         | No            | No                   | Yes  |
-| Speed                        | Fastest       | Fast                 | Slow |
-| Recommended for scale        | No            | No                   | Yes  |
+- You can [use a provisioning package](#set-up-kiosk-mode-by-using-a-provisioning-package) to configure single-app and multi-app kiosks.
+
+- You can [use the Windows Device Portal](#set-up-kiosk-mode-by-using-the-windows-device-portal) to configure single-app kiosks. 
+
+   > [!NOTE]  
+   > Because this method requires that developer mode be enabled on the device, we recommend that you use it only for demonstrations.
+
+The following table lists the capabilities and benefits of each of the three deployment methods.
+
+| &nbsp; |Deploy by using Windows Device Portal |Deploy by using a provisioning package |Deploy by using MDM |
+| --------------------------- | ------------- | -------------------- | ---- |
+|Deploy single-app kiosks   | Yes           | Yes                  | Yes  |
+|Deploy multi-app kiosks    | No            | Yes                  | Yes  |
+|Deploy to local devices only | Yes           | Yes                  | No   |
+|Deploy by using developer mode |Required       | Not required            | Not required   |
+|Deploy by using Azure Active Directory (AAD)  | Not required            | Not required                   | Required  |
+|Deploy automatically      | No            | No                   | Yes  |
+|Deployment speed            | Fastest       | Fast                 | Slow |
+|Deploy at scale | Not recommended    | Not recommended        | Recommended |
 
 ## Set up kiosk mode by using Microsoft Intune or MDM
 
