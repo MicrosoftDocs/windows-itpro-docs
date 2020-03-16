@@ -106,7 +106,8 @@ You can also disable the calibration prompt by following these steps:
 ### HoloLens 2 eye-tracking technology
 
 The device uses its eye-tracking technology to improve display quality, and to ensure that all holograms are positioned accurately and comfortable to view in 3D. Because it uses the eyes as landmarks, the device can adjust itself for every user and tune its visuals as the headset shifts slightly throughout use.  All adjustments happen on the fly without a need for manual tuning.
-Note that setting IPD is not applicable for Hololens 2, since eye positions are computed by the system. 
+> [!NOTE]
+> Setting the IPD is not applicable for Hololens 2, since eye positions are computed by the system.
 
 HoloLens applications use eye tracking to track where you are looking in real time. This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the Holographic experience. Developers don’t need to do anything to leverage this capability.
 
