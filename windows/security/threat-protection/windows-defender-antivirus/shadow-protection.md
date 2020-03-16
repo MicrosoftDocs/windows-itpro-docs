@@ -48,7 +48,7 @@ The following images shows an instance of unwanted software that was detected an
 3. Turn shadow protection on.
 
 > [!NOTE]
-> Currently, shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off at this time.
+> Shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off.
 
 ## Requirements for shadow protection
 
