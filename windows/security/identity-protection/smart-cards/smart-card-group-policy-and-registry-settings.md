@@ -80,7 +80,7 @@ The registry keys are in the following locations:
 > Smart card reader registry information is in **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Cryptography\\Calais\\Readers**.<br>
 Smart card registry information is in **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Cryptography\\Calais\\SmartCards**.
 
-The following table lists the default values for these GPO settings. Variations are documented under the policy descriptions in this topic.
+The following table lists the default values for these GPO settings. Variations are documented under the policy descriptions in this article.
 
 | **Server type or GPO**    | **Default value** |
 |----------------------------------------------|-------------------|
