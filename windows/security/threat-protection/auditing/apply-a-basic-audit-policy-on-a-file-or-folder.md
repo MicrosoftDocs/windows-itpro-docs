@@ -62,7 +62,6 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
           - **Write**
     
     
-
 > [!IMPORTANT]  
 > Before you set up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md). To do this, define auditing policy settings for the object access event category. If you don't enable object access auditing, you'll receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
