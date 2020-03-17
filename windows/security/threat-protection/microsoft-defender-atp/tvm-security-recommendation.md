@@ -41,11 +41,11 @@ Each machine in the organization is scored based on three important factors to h
 
 - **Business value** - Your organization's assets, critical processes, and intellectual properties
 
-## Navigate to the security recommendations
+## Navigate to security recommendations
 
 You can access security recommendations from the Microsoft Defender ATP Threat & Vulnerability Management menu, dashboard, software page, and machine page.
 
-### Top security recommendations from the Threat & Vulnerability Management dashboard
+### Top security recommendations in the Threat & Vulnerability Management dashboard
 
 In a given day as a Security Administrator, you can take a look at the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side-by-side with your [configuration score](configuration-score.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
 
@@ -53,9 +53,11 @@ In a given day as a Security Administrator, you can take a look at the [Threat &
 
 The top security recommendations lists the improvement opportunities prioritized based on the important factors mentioned in the previous section - threat, likelihood to be breached, and value. Selecting a recommendation will take you to the security recommendations page with more details about the recommendation.
 
-### Security recommendations from the navigation menu
+### Navigation menu
 
 Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open the list of security recommendations for the threats and vulnerabilities found in your organization.
+
+## Security recommendations overview
 
 You will be able to view the recommendation, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
 
@@ -74,6 +76,9 @@ From the flyout, you can do any of the following:
 - **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
 - **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet due to specific business reasons, compensation controls, or if it is a false positive.
+
+>[!NOTE]
+>When a change is made on a machine, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
 
 ## Report inaccuracy
 
