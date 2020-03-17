@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "security/threat-protection/windows-defender-application-control/signing-policies-with-signtool.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/hololens/hololens-whats-new.md",
 "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
 "redirect_document_id": true
