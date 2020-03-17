@@ -2,7 +2,7 @@
 title: Reporting DDF file
 description: View the OMA DM device description framework (DDF) for the Reporting configuration service provider.
 ms.assetid: 7A5B79DB-9571-4F7C-ABED-D79CD08C1E35
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -287,9 +287,9 @@ The XML below is the current version for the desktop CSP.
 </MgmtTree>
 ```
 
- 
 
- 
+
+
 
 
 

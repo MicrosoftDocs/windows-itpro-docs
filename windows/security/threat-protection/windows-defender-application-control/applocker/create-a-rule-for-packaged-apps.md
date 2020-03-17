@@ -2,7 +2,7 @@
 title: Create a rule for packaged apps (Windows 10)
 description: This topic for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -70,7 +70,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </tr>
     </tbody>
     </table>
-     
+
     The following table describes setting the scope for the packaged app rule.
     <table>
     <colgroup>
@@ -114,7 +114,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </tr>
     </tbody>
     </table>
-     
+
 6.  Click **Next**.
 7.  (Optional) On the **Exceptions** page, specify conditions by which to exclude files from being affected by the rule. This allows you to add exceptions based on the same rule reference and rule scope as you set before. Click **Next**.
 8.  On the **Name** page, either accept the automatically generated rule name or type a new rule name, and then click **Create**.

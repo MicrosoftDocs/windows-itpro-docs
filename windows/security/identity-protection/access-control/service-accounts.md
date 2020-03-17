@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Service Accounts
@@ -81,10 +81,10 @@ A 64-bit architecture is required to run the Windows PowerShell commands that ar
 
 A managed service account is dependent on encryption types supported by Kerberos. When a client computer authenticates to a server by using Kerberos protocol, the domain controller creates a Kerberos service ticket that is protected with encryption that the domain controller and the server support. The domain controller uses the account’s **msDS-SupportedEncryptionTypes** attribute to determine what encryption the server supports, and if there is no attribute, it assumes that the client computer does not support stronger encryption types. The Advanced Encryption Standard (AES) should always be explicitly configured for managed service accounts. If computers that host the managed service account are configured to not support RC4, authentication will always fail.
 
-**Note**  
+**Note**
 Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](https://technet.microsoft.com/library/dd560670(WS.10).aspx).
 
- 
+
 
 Group managed service accounts are not applicable in Windows operating systems prior to Windows Server 2012.
 

@@ -2,7 +2,7 @@
 title: Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
 description: Overview of how to enable offline updates using Microsoft Endpoint Configuration Manager.
 ms.assetid: ED3DAF80-847C-462B-BDB1-486577906772
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -49,7 +49,7 @@ The following table describes the update path to Windows 10 Mobile.
  
 To configure the mobile device management (MDM) service provider and enable mobile devices to download updates from a predefined internal location, an IT administrator or device administrator must perform a series of manual and automated steps:
 
-1.  Prepare a test device that can connect to the Internet to download the released update packages. 
+1.  Prepare a test device that can connect to the Internet to download the released update packages.
 2.  After the updates are downloaded and before pressing the install button, retrieve an XML file on the device that contains all the metadata about each update package.
 3.  Check the status code in the XML file.
 4.  Check for registry dependencies.
@@ -195,7 +195,7 @@ Here are the two files.
 </tbody>
 </table>
 
- 
+
 
 For a walkthrough of these steps, see [Deploy controlled updates](#deploy-controlled-updates). Ensure that the Trigger Scan configuration baseline has NOT been deployed.
 
@@ -297,7 +297,7 @@ function DownloadFiles($inputFile, $downloadCache, $localCacheURL)
     $customContentURIFileCreationError = "Not able to create Custom Content URI File"
 #Read the Input File
     $report = [xml](Get-Content $inputFile)
-    
+
 # this is where the document will be saved
     $customContentURLFile = "$downloadCache\DUCustomContentUris.xml"
     New-Item -Path $customContentURLFile -ItemType File -force -ErrorAction SilentlyContinue -ErrorVariable NewItemError > $null
@@ -313,13 +313,13 @@ function DownloadFiles($inputFile, $downloadCache, $localCacheURL)
     $xmlWriter.Formatting = 'Indented'
     $xmlWriter.Indentation = 1
     $XmlWriter.IndentChar = "`t"
- 
+
 # write the header
     $xmlWriter.WriteStartDocument()
     $xmlWriter.WriteStartElement('CustomContentUrls')
     foreach ($update in $report.UpdateData.coreUpdateMetadata.updateSet.update)
     {
-        if (!$update.destinationFilePath -or !$update.contentUrl) 
+        if (!$update.destinationFilePath -or !$update.contentUrl)
         {
             continue;
         }
@@ -362,7 +362,7 @@ function DownloadFiles($inputFile, $downloadCache, $localCacheURL)
                 {
                     Write-Host "Invalid Content URL: $contentUrl";
                 }
-                Catch 
+                Catch
                 {
                     Write-Host "Exception in Download: $contentUrl";
                 }
@@ -380,7 +380,7 @@ function DownloadFiles($inputFile, $downloadCache, $localCacheURL)
 
 # close the "CustomContentUrls" node
     $xmlWriter.WriteEndElement()
- 
+
 # finalize the document
     $xmlWriter.WriteEndDocument()
     $xmlWriter.Flush()
@@ -407,7 +407,7 @@ if (($inputFile -eq "") -or ($downloadCache -eq "") -or ($localCacheURL -eq ""))
 {
     PrintUsageAndExit
 }
-if (!$localCacheURL.EndsWith("/")) 
+if (!$localCacheURL.EndsWith("/"))
 {
     $localCacheURL = $localCacheURL + "/";
 }
@@ -419,7 +419,7 @@ $downloadCacheClearWarningString = "Download Cache not empty. Do you want to Cle
 
 #Check if Input File Exist
 $inputFileExists = Test-Path $inputFile;
-if(!$inputFileExists) 
+if(!$inputFileExists)
 {
     PrintMessageAndExit($inputFileErrorString)
 }
@@ -525,7 +525,7 @@ Use this procedure for pre-GDR1 devices:
 30. To retrieve the DUReport, open C:\\Program Files\\SMS\_CCM\\SMS\_DM.log.
 31. In the log file, search from the bottom for "./Vendor/MSFT/EnterpriseExt/DeviceUpdate/UpdatesResultXml" RuleExression="Equals zzz," where zzz is the dummy value. Just above this, copy the information for UpdateData and use this information to create the DUControlledUpdates.xml.
 
- 
+
 
 
 

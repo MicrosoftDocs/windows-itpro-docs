@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,33 +36,33 @@ This event occurs when an account that is a member of any defined [Special Group
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4964</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12548</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-11T02:25:16.236443300Z" /> 
- <EventRecordID>238923</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="504" ThreadID="5008" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4964</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12548</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-11T02:25:16.236443300Z" />
+ <EventRecordID>238923</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="504" ThreadID="5008" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0xd972e</Data> 
- <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data> 
- <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-500</Data> 
- <Data Name="TargetUserName">ladmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x139faf</Data> 
- <Data Name="TargetLogonGuid">{B03B6192-09AE-E77F-DD10-2DC430766040}</Data> 
- <Data Name="SidList">%{S-1-5-21-3457937927-2839227994-823803824-512}</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0xd972e</Data>
+ <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data>
+ <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-500</Data>
+ <Data Name="TargetUserName">ladmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x139faf</Data>
+ <Data Name="TargetLogonGuid">{B03B6192-09AE-E77F-DD10-2DC430766040}</Data>
+ <Data Name="SidList">%{S-1-5-21-3457937927-2839227994-823803824-512}</Data>
  </EventData>
  </Event>
 

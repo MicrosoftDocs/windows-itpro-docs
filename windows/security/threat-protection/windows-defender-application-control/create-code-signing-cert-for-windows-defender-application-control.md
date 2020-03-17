@@ -3,7 +3,7 @@ title: Create a code signing cert for Windows Defender Application Control  (Win
 description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -20,17 +20,17 @@ manager: dansimp
 ms.date: 02/28/2018
 ---
 
-# Optional: Create a code signing cert for Windows Defender Application Control  
+# Optional: Create a code signing cert for Windows Defender Application Control
 
 **Applies to:**
 
 -   Windows 10
 -   Windows Server 2016
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md). 
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
 
-If you have an internal CA, complete these steps to create a code signing certificate. 
-Only RSA algorithm is supported for the code signing certificate, and signatures must be PKCS 1.5 padded. 
+If you have an internal CA, complete these steps to create a code signing certificate.
+Only RSA algorithm is supported for the code signing certificate, and signatures must be PKCS 1.5 padded.
 ECDSA is not supported.
 
 1.  Open the Certification Authority Microsoft Management Console (MMC) snap-in, and then select your issuing CA.

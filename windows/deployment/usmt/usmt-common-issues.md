@@ -2,7 +2,7 @@
 title: Common Issues (Windows 10)
 description: Common Issues
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -45,10 +45,10 @@ When you encounter a problem or error message during migration, you can use the 
 
   In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the **/v**<em>:5</em> option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
 
-  **Note**  
+  **Note**
   Running the ScanState and LoadState tools with the **/v**<em>:5</em> option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
 
-     
+
 
 - Use the **/Verify** option in the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
 
@@ -62,10 +62,10 @@ When you encounter a problem or error message during migration, you can use the 
 
 - Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
 
-  **Note**  
+  **Note**
   USMT will fail if it cannot migrate a file or setting unless you specify the **/c** option. When you specify the **/c** option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that did not migrate.
 
-     
+
 
 ## <a href="" id="user"></a>User Account Problems
 
@@ -137,7 +137,7 @@ To remove encryption from files that have already been migrated incorrectly, you
 **Resolution:** You can use the **/mu** option when you run the LoadState tool to specify a new name for the user. For example,
 
 ``` syntax
-loadstate /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore 
+loadstate /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore
 /progress:prog.log /l:load.log /mu:fareast\user1:farwest\user1
 ```
 
@@ -331,9 +331,9 @@ You should also reboot the machine.
 
 [UsmtUtils Syntax](usmt-utilities.md)
 
- 
 
- 
+
+
 
 
 

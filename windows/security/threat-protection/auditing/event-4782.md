@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,28 +38,28 @@ Typically **“Subject\\Security ID”** is the SYSTEM account.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4782</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13829</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-18T21:23:46.435367800Z" /> 
- <EventRecordID>174829</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="512" ThreadID="1232" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4782</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13829</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-18T21:23:46.435367800Z" />
+ <EventRecordID>174829</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="512" ThreadID="1232" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserName">Andrei</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
+ <Data Name="TargetUserName">Andrei</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
  </EventData>
  </Event>
 

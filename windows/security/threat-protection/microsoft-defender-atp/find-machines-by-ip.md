@@ -1,6 +1,6 @@
 ---
 title: Find devices by internal IP API
-description: Find devices seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
+description: Find devices seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp
 keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## API description

@@ -2,7 +2,7 @@
 title: Settings reference Microsoft Store for Business and Education (Windows 10)
 description: The Microsoft Store for Business and Education has a group of settings that admins use to manage the store.
 ms.assetid: 34F7FA2B-B848-454B-AC00-ECA49D87B678
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage

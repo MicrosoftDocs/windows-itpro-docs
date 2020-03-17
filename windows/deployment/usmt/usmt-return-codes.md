@@ -2,7 +2,7 @@
 title: Return Codes (Windows 10)
 description: Return Codes
 ms.assetid: e71bbc6b-d5a6-4e48-ad01-af0012b35f22
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -768,7 +768,7 @@ The following table lists each return code by numeric value, along with the asso
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -777,9 +777,9 @@ The following table lists each return code by numeric value, along with the asso
 
 [Log Files](usmt-log-files.md)
 
- 
 
- 
+
+
 
 
 

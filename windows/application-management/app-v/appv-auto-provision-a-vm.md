@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -72,21 +72,21 @@ If your apps require custom prerequisites, such as Microsoft SQL Server, we reco
 
 - Open PowerShell as an admin and run the following commands on your existing VM:
 
-    - **Set the network category of your connection profile on the VM to _Private_:** 
-    
+    - **Set the network category of your connection profile on the VM to _Private_:**
+
         ```PowerShell
         Get-netconnectionprofile | set-netconnectionprofile -NetworkCategory Private
         ```
-        
+
     - **Enable firewall rules for _Remote Desktop_ and _Windows Remote Management_:**
-    
+
         ```PowerShell
         Enable-NetFirewallRule -DisplayGroup “Remote Desktop”
         Enable-NetFirewallRule -DisplayGroup “Windows Remote Management”
         ```
 
     - **Set the VM to receive remote commands without a confirmation prompt:**
-    
+
         ```PowerShell
         Enable-PSRemoting –Force
         ```
@@ -100,7 +100,7 @@ If your apps require custom prerequisites, such as Microsoft SQL Server, we reco
     ```ps1
     Connect-AppvSequencerVM -VMName "<name_of_vm>"
     ```
-    
+
     Where ```<name_of_vm>``` is the name of the VM as shown in the Hyper-V Manager tool.
 
 This command connects to an existing Hyper-V VM using the provided VM name for auto-sequencing.

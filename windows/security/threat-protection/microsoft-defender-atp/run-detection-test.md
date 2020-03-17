@@ -13,11 +13,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Run a detection test on a newly onboarded Microsoft Defender ATP device 
+# Run a detection test on a newly onboarded Microsoft Defender ATP device
 
 **Applies to:**
 - Supported Windows 10 versions

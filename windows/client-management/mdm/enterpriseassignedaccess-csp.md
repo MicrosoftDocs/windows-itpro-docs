@@ -2,7 +2,7 @@
 title: EnterpriseAssignedAccess CSP
 description: Use the EnterpriseAssignedAccess CSP to configure custom layouts on a device. 
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -596,7 +596,7 @@ The following sample file contains configuration for enabling tile manipulation.
 Entry | Description
 ----------- | ------------
 CSP Runner | Allows CSPs to be executed on the device per user role. You can use this to implement role specific policies, such as changing the color scheme when an admin logs on the device, or to set configurations per role.
- 
+
 
 <a href="" id="lockscreenwallpaper-"></a>**LockscreenWallpaper/**
 The parent node of the lock screen-related parameters that let administrators query and manage the lock screen image on devices. Supported operations are Add, Delete, Get and Replace.
@@ -722,7 +722,7 @@ The accent color to apply as the foreground color for tiles, controls, and other
 </tbody>
 </table>
 
- 
+
 
 Supported operations are Get and Replace.
 
@@ -1190,7 +1190,7 @@ The XML examples in this section show how to perform various tasks by using OMA 
 
 > **Note**  These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
 
- 
+
 
 ### Assigned Access settings
 

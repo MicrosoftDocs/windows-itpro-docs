@@ -36,13 +36,13 @@ Setting "Trust apps with good reputation" to enabled is equivalent to adding [Op
 
 1. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
 
-2. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Endpoint protection** as the **Profile type**.  
+2. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Endpoint protection** as the **Profile type**.
 
    ![Configure profile](images/wdac-intune-create-profile-name.png)
 
 3. Click **Configure** > **Windows Defender Application Control**, choose from the following settings and then click **OK**:
 
-   - **Application control code integrity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.  
+   - **Application control code integrity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.
    - **Trust apps with good reputation**: Select **Enable** to allow reputable apps as defined by the Intelligent Security Graph to run in addition to Windows components and Store apps.
 
    ![Configure built-in WDAC](images/wdac-intune-wdac-settings.png)

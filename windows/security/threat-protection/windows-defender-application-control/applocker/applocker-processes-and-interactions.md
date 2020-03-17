@@ -2,7 +2,7 @@
 title: AppLocker processes and interactions (Windows 10)
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -99,7 +99,7 @@ Group Policy can be used to create, modify, and distribute AppLocker policies in
 
 -   [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md)
 
-    When Group Policy is used to distribute AppLocker policies, rule collections that are not configured will be enforced. Group Policy does not overwrite or replace rules that are already present in a linked Group Policy Object (GPO) and applies the AppLocker rules in addition to existing rules. 
+    When Group Policy is used to distribute AppLocker policies, rule collections that are not configured will be enforced. Group Policy does not overwrite or replace rules that are already present in a linked Group Policy Object (GPO) and applies the AppLocker rules in addition to existing rules.
     AppLocker processes the explicit deny rule configuration before the allow rule configuration, and for rule enforcement, the last write to the GPO is applied.
 
 ## Related topics

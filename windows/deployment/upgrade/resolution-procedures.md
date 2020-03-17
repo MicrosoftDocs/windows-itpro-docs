@@ -1,6 +1,6 @@
 ---
 title: Resolution procedures - Windows IT Pro
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description: Discover general troubleshooting procedures for dealing with 0xC1900101, the generic rollback code thrown when something goes wrong during a Windows 10 upgrade.
@@ -20,23 +20,23 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-> [!NOTE]  
-> This is a 200 level topic (moderate).  
+> [!NOTE]
+> This is a 200 level topic (moderate).
 > See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 This topic provides some common causes and solutions that are associated with specific upgrade error codes. If a Windows 10 upgrade fails, you can write down the error code that is displayed, or find the error code in the Windows [Event Log](windows-error-reporting.md) or in the Windows Setup [log files](log-files.md) (ex: **setuperr.log**) and review the cause and solutions provided here. You should also try running the free [SetupDiag](setupdiag.md) tool provided by Microsoft, which can automatically find the reason for an upgrade failure.
 
 ## 0xC1900101
 
-A frequently observed [result code](upgrade-error-codes.md#result-codes) is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:  
+A frequently observed [result code](upgrade-error-codes.md#result-codes) is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:
 
 - The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp,
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).
 
-To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.  
+To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.
 
 See the following general troubleshooting procedures associated with a result code of 0xC1900101:<br /><br />
 
@@ -50,6 +50,7 @@ See the following general troubleshooting procedures associated with a result co
 | 0xC1900101 - 0x3000D | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br>Update or uninstall the display driver. | Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.<br>This can occur due to a problem with a display driver. |
 | 0xC1900101 - 0x4000D | Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.<br>Review the rollback log and determine the stop code.<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example is not representative of all cases:<br>&nbsp;<br>Info SP     Crash 0x0000007E detected<br>Info SP       Module name           :<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40<br>Info SP     Cannot recover the system.<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.<br>&nbsp;<br>Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>&nbsp;<br>1. Make sure you have enough disk space.<br>2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>3. Try changing video adapters.<br>4. Check with your hardware vendor for any BIOS updates.<br>5. Disable BIOS memory options such as caching or shadowing. | A rollback occurred due to a driver configuration issue.<br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This can occur because of incompatible drivers. |
 | 0xC1900101 - 0x40017 | Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).<br>&nbsp;<br>Ensure that you select the option to "Download and install updates (recommended)."  <br>&nbsp;<br><b>Computers that run Citrix VDA</b>  <br>You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  <br>&nbsp;<br>This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade cannot complete and the system rolls back.  <br>&nbsp;<br>**Resolution**<br>&nbsp;<br>To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).<br>&nbsp;<br>You can work around this problem in two ways:<br>&nbsp;<br>**Workaround 1**<br>&nbsp;<br>1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.<br>2. Run the Windows upgrade again.<br>3. Reinstall Citrix VDA.<br>&nbsp;<br>**Workaround 2**<br>&nbsp;<br>If you cannot uninstall Citrix VDA, follow these steps to work around this problem:  <br>&nbsp;<br>1. In Registry Editor, go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc**<br>2. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.<br>3. Go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}**<br>4. Delete the **CtxMcsWbc** entry.<br>5. Restart the computer, and then try the upgrade again.<br>&nbsp;<br>**Non-Microsoft information disclaimer**  <br>The non-Microsoft products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. | Windows 10 upgrade failed after the second reboot.<br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers. |
+
 
 ## 0x800xxxxx
 
@@ -254,7 +255,7 @@ Review logs for [compatibility information](https://blogs.technet.microsoft.com/
 <td>These errors indicate the computer does not have enough free space available to install the upgrade.
 <td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to <a href="https://support.microsoft.com/help/17421/windows-free-up-drive-space" data-raw-source="[free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space)">free up drive space</a> before proceeding with the upgrade.
 
-> [!NOTE]  
+> [!NOTE]
 > If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
 </td></tr>
 

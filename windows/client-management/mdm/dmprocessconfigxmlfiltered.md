@@ -3,7 +3,7 @@ title: DMProcessConfigXMLFiltered function
 description: Configures phone settings by using OMA Client Provisioning XML.
 Search.Refinement.TopicID: 184
 ms.assetid: 31D79901-6206-454C-AE78-9B85A3B3487F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["DMProcessConfigXMLFiltered function"]
 topic_type:
@@ -46,7 +46,7 @@ Microsoft recommends that this function is not used to configure the following t
 
 > **Note**  The **DMProcessConfigXMLFiltered** function has full functionality in Windows 10 Mobile and Windows Phone 8.1, but it has a read-only functionality in Windows 10 desktop.
 
- 
+
 
 ## Syntax
 
@@ -77,7 +77,7 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 <ul style="list-style-type:none">
 <li>[in] Number of elements passed in <em>rgszAllowedCspNode</em>.</li>
 </ul>
-<br> 
+<br>
 
 *pbstrXmlOut*
 <ul style="list-style-type:none">
@@ -126,7 +126,7 @@ Returns the standard **HRESULT** value **S\_OK** to indicate success. The follow
 </tbody>
 </table>
 
- 
+
 
 ## Remarks
 
@@ -168,7 +168,7 @@ This array of configuration service provider names indicates which .provxml cont
 The following code sample shows how this array would be passed in. Note that *szProvxmlContent* does not show the full XML contents for brevity. In actual usage, the "…" would contain the full XML string shown above.
 
 ``` C++
-WCHAR szProvxmlContent[] = L"<wap-provisioningdoc>...</wap-provisioningdoc>"; 
+WCHAR szProvxmlContent[] = L"<wap-provisioningdoc>...</wap-provisioningdoc>";
 BSTR bstr = NULL;
 
 HRESULT hr = DMProcessConfigXMLFiltered(
@@ -226,7 +226,7 @@ if ( bstr != NULL )
 
 [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)
 
- 
+
 
 
 

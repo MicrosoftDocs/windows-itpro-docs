@@ -2,7 +2,7 @@
 title: Gathering Other Relevant Information (Windows 10)
 description: Gathering Other Relevant Information
 ms.assetid: 87ccca07-4346-496b-876d-cdde57d0ce17
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

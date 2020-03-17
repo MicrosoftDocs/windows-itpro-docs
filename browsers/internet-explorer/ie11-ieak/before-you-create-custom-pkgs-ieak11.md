@@ -7,7 +7,7 @@ ms.author: dansimp
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Before you start using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
@@ -30,9 +30,9 @@ Before you run IEAK 11 and the Customization Wizard, make sure you have met the 
 
 -   Have you created a test lab, where you can run the test version of your browser package to make sure it runs properly?
 
- 
 
- 
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: WindowsAdvancedThreatProtection DDF file
 description: WindowsAdvancedThreatProtection DDF file
 ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -346,9 +346,9 @@ The XML below is the current version for this CSP.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

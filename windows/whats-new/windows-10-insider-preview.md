@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
 ms.date: 04/14/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,9 +21,9 @@ This section contains preliminary documentation for some enterprise features in 
 
 
 
- 
 
- 
+
+
 
 
 

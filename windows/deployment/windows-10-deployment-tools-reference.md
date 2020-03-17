@@ -2,7 +2,7 @@
 title: Windows 10 deployment tools reference
 description: Learn about the tools available to deploy Windows 10.
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay

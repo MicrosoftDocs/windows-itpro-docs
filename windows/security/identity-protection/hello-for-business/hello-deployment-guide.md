@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Deployment Guide
-description: A guide to Windows Hello for Business deployment 
+description: A guide to Windows Hello for Business deployment
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/29/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows Hello for Business Deployment Guide
 
@@ -27,7 +27,7 @@ This deployment guide is to guide you through deploying Windows Hello for Busine
 
 ## Assumptions
 
-This guide assumes that baseline infrastructure exists which meets the requirements for your deployment. For either hybrid or on-premises deployments, it is expected that you have: 
+This guide assumes that baseline infrastructure exists which meets the requirements for your deployment. For either hybrid or on-premises deployments, it is expected that you have:
 * A well-connected, working network
 * Internet access
 * Multifactor Authentication Server to support MFA during Windows Hello for Business provisioning
@@ -36,7 +36,7 @@ This guide assumes that baseline infrastructure exists which meets the requireme
 * Active Directory Certificate Services 2012 or later
 * One or more workstation computers running Windows 10, version 1703
 
-If you are installing a server role for the first time, ensure the appropriate server operating system is installed, updated with the latest patches, and joined to the domain. This document provides guidance to install and configure the specific roles on that server.  
+If you are installing a server role for the first time, ensure the appropriate server operating system is installed, updated with the latest patches, and joined to the domain. This document provides guidance to install and configure the specific roles on that server.
 
 Do not begin your deployment until the hosting servers and infrastructure (not roles) identified in your prerequisite worksheet are configured and properly working.
 
@@ -46,9 +46,9 @@ Windows Hello for Business has three deployment models: Cloud, hybrid, and on-pr
 
 Hybrid deployments are for enterprises that use Azure Active Directory. On-premises deployments are for enterprises who exclusively use on-premises Active Directory. Remember that the environments that use Azure Active Directory must use the hybrid deployment model for all domains in that forest.
 
-The trust model determines how you want users to authenticate to the on-premises Active Directory: 
-* The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication. 
-* The certificate-trust model is for enterprise that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. 
+The trust model determines how you want users to authenticate to the on-premises Active Directory:
+* The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication.
+* The certificate-trust model is for enterprise that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today.
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!NOTE]

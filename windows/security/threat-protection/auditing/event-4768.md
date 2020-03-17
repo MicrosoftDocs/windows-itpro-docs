@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,36 +42,36 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4768</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14339</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-07T18:13:46.074535600Z" /> 
- <EventRecordID>166747</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1496" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4768</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14339</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-07T18:13:46.074535600Z" />
+ <EventRecordID>166747</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1496" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO.LOCAL</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="ServiceName">krbtgt</Data> 
- <Data Name="ServiceSid">S-1-5-21-3457937927-2839227994-823803824-502</Data> 
- <Data Name="TicketOptions">0x40810010</Data> 
- <Data Name="Status">0x0</Data> 
- <Data Name="TicketEncryptionType">0x12</Data> 
- <Data Name="PreAuthType">15</Data> 
- <Data Name="IpAddress">::ffff:10.0.0.12</Data> 
- <Data Name="IpPort">49273</Data> 
- <Data Name="CertIssuerName">contoso-DC01-CA-1</Data> 
- <Data Name="CertSerialNumber">1D0000000D292FBE3C6CDDAFA200020000000D</Data> 
- <Data Name="CertThumbprint">564DFAEE99C71D62ABC553E695BD8DBC46669413</Data> 
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO.LOCAL</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="ServiceName">krbtgt</Data>
+ <Data Name="ServiceSid">S-1-5-21-3457937927-2839227994-823803824-502</Data>
+ <Data Name="TicketOptions">0x40810010</Data>
+ <Data Name="Status">0x0</Data>
+ <Data Name="TicketEncryptionType">0x12</Data>
+ <Data Name="PreAuthType">15</Data>
+ <Data Name="IpAddress">::ffff:10.0.0.12</Data>
+ <Data Name="IpPort">49273</Data>
+ <Data Name="CertIssuerName">contoso-DC01-CA-1</Data>
+ <Data Name="CertSerialNumber">1D0000000D292FBE3C6CDDAFA200020000000D</Data>
+ <Data Name="CertThumbprint">564DFAEE99C71D62ABC553E695BD8DBC46669413</Data>
  </EventData>
  </Event>
 ```
@@ -185,7 +185,7 @@ The most common values:
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 > Table 2. Kerberos ticket flags.
-> 
+>
 > **Note**&nbsp;&nbsp;[KILE](https://msdn.microsoft.com/library/cc233855.aspx) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
 
 -   **Result Code** \[Type = HexInt32\]**:** hexadecimal result code of TGT issue operation. The “Table 3. TGT/TGS issue error codes.” contains the list of the most common error codes for this event.

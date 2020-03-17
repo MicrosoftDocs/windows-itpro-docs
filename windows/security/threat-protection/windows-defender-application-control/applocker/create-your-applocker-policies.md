@@ -2,7 +2,7 @@
 title: Create Your AppLocker policies (Windows 10)
 description: This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 ms.assetid: d339dee2-4da2-4d4a-b46e-f1dfb7cb4bf0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -46,7 +46,7 @@ Each rule applies to one or more apps, and it imposes a specific rule condition 
 
 ## Step 3: Configure the enforcement setting
 
-An AppLocker policy is a set of rule collections that are configured with a rule enforcement setting. The enforcement setting can be **Enforce rules**, **Audit only**, or **Not configured**. If an AppLocker policy has at least one rule, and it is set to **Not configured**, all the rules in that 
+An AppLocker policy is a set of rule collections that are configured with a rule enforcement setting. The enforcement setting can be **Enforce rules**, **Audit only**, or **Not configured**. If an AppLocker policy has at least one rule, and it is set to **Not configured**, all the rules in that
 policy will be enforced. For info about configuring the rule enforcement setting, see [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) and [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md).
 
 ## Step 4: Update the GPO

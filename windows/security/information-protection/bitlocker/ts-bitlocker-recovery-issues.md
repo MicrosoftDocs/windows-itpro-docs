@@ -52,7 +52,7 @@ You can use either of the following methods to manually back up or synchronize a
    ```
 
 > [!NOTE]
-> BitLocker does not automatically manage this backup process.  
+> BitLocker does not automatically manage this backup process.
 
 ## Tablet devices do not support using Manage-bde -forcerecovery to test recovery mode
 
@@ -117,7 +117,7 @@ To verify the PCR values that are in use on a device, open and elevated Command 
 manage-bde.exe -protectors -get <OSDriveLetter>:
 ```
 
-In this command, &lt;*OSDriveLetter*&gt; represents the drive letter of the operating system drive.  
+In this command, &lt;*OSDriveLetter*&gt; represents the drive letter of the operating system drive.
 
 To resolve this issue and repair the device, follow these steps.
 
@@ -134,12 +134,12 @@ To do this, follow these steps:
    1. Your operating system language.
    1. Your keyboard layout.
 1. Select **Troubleshoot** > **Advanced Options** > **Command Prompt**.
-1. In the Command Prompt window, run the following commands:  
+1. In the Command Prompt window, run the following commands:
    ```cmd
-   manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
-   manage-bde -protectors -disable <DriveLetter>:  
+   manage-bde -unlock -recoverypassword <Password> <DriveLetter>:
+   manage-bde -protectors -disable <DriveLetter>:
    ```
-   In these commands, \<*Password*\> is the BitLocker recovery password that you obtained in step 1, and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
+   In these commands, \<*Password*\> is the BitLocker recovery password that you obtained in step 1, and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.
    > [!NOTE]
    > For more information about how to use this command, see [manage-bde: unlock](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-unlock).
 1. Restart the computer.
@@ -152,16 +152,16 @@ To do this, follow these steps:
 
 To recover data from your Surface device if you cannot start Windows, follow steps 1 through 5 of [Step 1](#step-1) to return to the Command Prompt window, and then follow these steps:
 
-1. At the command prompt, run the following command:  
+1. At the command prompt, run the following command:
    ```cmd
-   manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
+   manage-bde -unlock -recoverypassword <Password> <DriveLetter>:
    ```
-   In this command, \<*Password*\> is the BitLocker recovery password that you obtained in step 1 of [Step 1](#step-1), and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
-1. After the drive is unlocked, use the **copy** or **xcopy** command to copy the user data to another drive.  
+   In this command, \<*Password*\> is the BitLocker recovery password that you obtained in step 1 of [Step 1](#step-1), and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.
+1. After the drive is unlocked, use the **copy** or **xcopy** command to copy the user data to another drive.
    > [!NOTE]
    > For more information about the these commands, see the [Windows commands](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands).
-  
-1. To reset your device by using a Surface recovery image, follow the instructions in the "How to reset your Surface using your USB recovery drive" section in [Creating and using a USB recovery drive](https://support.microsoft.com/help/4023512).  
+
+1. To reset your device by using a Surface recovery image, follow the instructions in the "How to reset your Surface using your USB recovery drive" section in [Creating and using a USB recovery drive](https://support.microsoft.com/help/4023512).
 
 #### Step 3: Restore the default PCR values
 
@@ -171,27 +171,27 @@ To enable Secure Boot on a Surface device, follow these steps:
 
 1. Suspend BitLocker. to do this, open an elevated Windows PowerShell window, and run the following cmdlet:
    ```ps
-   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
+   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0
    ```
    In this command, <*DriveLetter*> is the letter that is assigned to your drive.
 1. Restart the device, and then edit the BIOS to set the **Secure Boot** option to **Microsoft Only**.
 1. Restart the device.
-1. Open an elevated PowerShell window, and run the following cmdlet:  
+1. Open an elevated PowerShell window, and run the following cmdlet:
    ```ps
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
 To reset the PCR settings on the TPM, follow these steps:
 
-1. Disable any Group Policy Objects that configure the PCR settings, or remove the device from any groups that enforce such policies.  
+1. Disable any Group Policy Objects that configure the PCR settings, or remove the device from any groups that enforce such policies.
    For more information, see [BitLocker Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings).
 1. Suspend BitLocker. To do this, open an elevated Windows PowerShell window, and run the following cmdlet:
    ```ps
-   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
+   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0
    ```
-   
+
    where <*DriveLetter*> is the letter assigned to your drive.
-1. Run the following cmdlet:  
+1. Run the following cmdlet:
    ```ps
    Resume-BitLocker -MountPoint "<DriveLetter>:"
 
@@ -208,11 +208,11 @@ To suspend BitLocker while you install TPM or UEFI firmware updates:
 
 1. Open an elevated Windows PowerShell window, and run the following cmdlet:
    ```ps
-   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
+   Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0
    ```
    In this cmdlet <*DriveLetter*> is the letter that is assigned to your drive.
 1. Install the Surface device driver and firmware updates.
-1. After you install the firmware updates, restart the computer, open an elevated PowerShell window, and then run the following cmdlet:  
+1. After you install the firmware updates, restart the computer, open an elevated PowerShell window, and then run the following cmdlet:
    ```ps
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
@@ -237,7 +237,7 @@ If your device is already in this state, you can successfully start Windows afte
    Manage-bde -protectors -disable c:
    exit
    ```
-   
+
    These commands unlock the drive and then suspend BitLocker by disabling the TPM protectors on the drive. The final command closes the Command Prompt window.
    > [!NOTE]
    > These commands suspend BitLocker for one restart of the device. The **-rc 1** option works only inside the operating system and does not work in the recovery environment.
@@ -258,7 +258,7 @@ Manage-bde -protectors -disable c: -rc 1
 
 ### Resolution
 
-To resolve this issue, install the appropriate update on the affected device:  
+To resolve this issue, install the appropriate update on the affected device:
 
 - For Windows 10, version 1703: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
 - For Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
@@ -268,12 +268,12 @@ To resolve this issue, install the appropriate update on the affected device:
 You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
 
 > Recovery
-> 
+>
 > Your PC/Device needs to be repaired.
 > A required file couldn't be accessed because your BitLocker key wasn't loaded correctly.
->  
+>
 > Error code 0xc0210000
->  
+>
 > You'll need to use recovery tools. If you don't have any installation media (like a disc or USB device), contact your PC administrator or PC/Device manufacturer.
 
 ### Cause

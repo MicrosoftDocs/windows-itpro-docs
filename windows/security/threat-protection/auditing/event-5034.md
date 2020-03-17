@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,22 +38,22 @@ This event is NOT logged during the operating system shutdown process.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5034</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12292</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-13T23:40:55.482270000Z" /> 
- <EventRecordID>1101856</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="140" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5034</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12292</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-13T23:40:55.482270000Z" />
+ <EventRecordID>1101856</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="140" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
- <EventData /> 
+ <EventData />
  </Event>
 
 ```

@@ -1,10 +1,10 @@
 ---
 title: Set up MDT for BitLocker (Windows 10)
 ms.assetid: 386e6713-5c20-4d2a-a220-a38d94671a38
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
-description: 
+description:
 keywords: disk, encryption, TPM, configure, secure, script
 ms.prod: w10
 ms.mktglfcycl: deploy

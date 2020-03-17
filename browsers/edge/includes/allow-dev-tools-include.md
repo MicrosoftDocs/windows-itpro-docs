@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -45,4 +45,4 @@ ms.topic: include
 - **Value name:**   AllowDeveloperTools
 - **Value type:** REG_DWORD
 
-<hr>    
+<hr>

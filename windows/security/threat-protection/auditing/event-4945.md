@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,25 +40,25 @@ This event generates per rule.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4945</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13571</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-02T23:48:27.535295100Z" /> 
- <EventRecordID>1049946</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="4744" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4945</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13571</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-02T23:48:27.535295100Z" />
+ <EventRecordID>1049946</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="4744" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ProfileUsed">Public</Data> 
- <Data Name="RuleId">NPS-NPSSvc-In-RPC</Data> 
- <Data Name="RuleName">Network Policy Server (RPC)</Data> 
+ <Data Name="ProfileUsed">Public</Data>
+ <Data Name="RuleId">NPS-NPSSvc-In-RPC</Data>
+ <Data Name="RuleName">Network Policy Server (RPC)</Data>
  </EventData>
  </Event>
 

@@ -2,7 +2,7 @@
 title: Shut down the system - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Shut down the system security policy setting.
 ms.assetid: c8e8f890-153a-401e-a957-ba6a130304bf
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -57,13 +57,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators| 
-| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators| 
-| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators| 
-| Member Server Effective Default Settings | Administrators<br/>Backup Operators| 
-| Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators|
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators|
+| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators|
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators|
+| Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

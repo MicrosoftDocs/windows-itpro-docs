@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,15 +19,15 @@ The following diagram shows the CleanPC configuration service provider in tree f
 
 ![CleanPC csp diagram](images/provisioning-csp-cleanpc.png)
 
-<a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
+<a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**
 <p style="margin-left: 20px">The root node for the CleanPC configuration service provider.</p>
 
-<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
+<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**
 <p style="margin-left: 20px">An integer specifying a CleanPC operation without any retention of user data.
 
 <p style="margin-left: 20px">The only supported operation is Execute.
 
-<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
-<p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data. 
+<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**
+<p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data.
 
 <p style="margin-left: 20px">The only supported operation is Execute.

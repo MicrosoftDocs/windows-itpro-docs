@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Allow Microsoft Edge to load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed (aka: AllowStartAndNewTabPagePreload)  -->  
+<!-- ## Allow Microsoft Edge to load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed (aka: AllowStartAndNewTabPagePreload)  -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1802*<br>
 >*Default setting:  Enabled or not configured (Allowed)*
 
@@ -35,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowTabPreloading](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowTabPreloading 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowTabPreloading
 - **Data type:** Integer
 
 #### Registry settings

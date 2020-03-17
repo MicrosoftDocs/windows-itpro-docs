@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Validate Active Directory prerequisites
 
@@ -40,7 +40,7 @@ The command should return the name of the domain controller where you need to ad
 
 ## Updating the Schema
 
-Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
+Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 

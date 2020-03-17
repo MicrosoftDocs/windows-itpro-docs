@@ -2,7 +2,7 @@
 title: AppLocker design guide (Windows 10)
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -41,6 +41,6 @@ To understand if AppLocker is the correct application control solution for your 
 | [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md) | This overview topic describes the process to follow when you are planning to deploy AppLocker rules. |
 | [Plan for AppLocker policy management](plan-for-applocker-policy-management.md) | This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies. |
 
- 
+
 After careful design and detailed planning, the next step is to deploy AppLocker policies. [AppLocker Deployment Guide](applocker-policies-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
- 
+

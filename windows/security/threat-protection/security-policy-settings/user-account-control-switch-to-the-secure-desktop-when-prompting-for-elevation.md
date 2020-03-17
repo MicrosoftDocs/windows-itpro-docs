@@ -2,7 +2,7 @@
 title: User Account Control Switch to the secure desktop when prompting for elevation (Windows 10)
 description: Best practices, security considerations, and more for the policy setting, User Account Control Switch to the secure desktop when prompting for elevation.
 ms.assetid: 77a067db-c70d-4b02-9861-027503311b8b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -44,7 +44,7 @@ The secure desktop’s primary difference from the user desktop is that only tru
 
 ### Best practices
 
--   Enable the **User Account Control: Switch to the secure desktop when prompting for elevation setting**. The secure desktop helps protect against input and output spoofing by presenting the credentials dialog box in a protected section of memory that is accessible only by trusted system 
+-   Enable the **User Account Control: Switch to the secure desktop when prompting for elevation setting**. The secure desktop helps protect against input and output spoofing by presenting the credentials dialog box in a protected section of memory that is accessible only by trusted system
 processes.
 
 ### Location
@@ -57,13 +57,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

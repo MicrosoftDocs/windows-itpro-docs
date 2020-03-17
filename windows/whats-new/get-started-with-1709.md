@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 10/16/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.localizationpriority: high
 ms.topic: article
@@ -20,11 +20,11 @@ ms.topic: article
 
 -   Windows 10
 
-> **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 Welcome to Windows 10, version 1709, also known as the Fall Creators Update. Use the following information to learn about new features, review system requirements, and plan your deployment of the latest version of Windows 10.
 
-## Specification and systems requirements 
+## Specification and systems requirements
 
 Before you install any version of Windows 10, make sure you visit the [Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/windows/windows-10-specifications) page. This page contains the minimum systems requirements and important notes to install Windows 10, as well as feature deprecation information and additional requirements to use certain features.
 

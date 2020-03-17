@@ -2,7 +2,7 @@
 title: Checklist Configuring Rules for the Boundary Zone (Windows 10)
 description: Checklist Configuring Rules for the Boundary Zone
 ms.assetid: 25fe0197-de5a-4b4c-bc44-c6f0620ea94b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,6 +35,6 @@ This checklist assumes that you have already created the GPO for the isolated do
 | - | - |
 | Make a copy of the domain isolation GPO for this version of Windows to serve as a starting point for the GPO for the boundary zone. Unlike the GPO for the main isolated domain zone, this copy is not changed after deployment to require authentication.| [Copy a GPO to Create a New GPO](copy-a-gpo-to-create-a-new-gpo.md) |
 | If you are working on a copy of a GPO, modify the group memberships and WMI filters so that they are correct for the boundary zone and version of Windows for which this GPO is intended.| [Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
-| Link the GPO to the domain level of the Active Directory organizational unit hierarchy.| [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)| 
-| Add your test computers to the membership group for the boundary zone. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Computers to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)| 
-| Verify that the connection security configuration is protecting network traffic with authentication when it can, and that unauthenticated traffic is accepted. | [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)| 
+| Link the GPO to the domain level of the Active Directory organizational unit hierarchy.| [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)|
+| Add your test computers to the membership group for the boundary zone. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Computers to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)|
+| Verify that the connection security configuration is protecting network traffic with authentication when it can, and that unauthenticated traffic is accepted. | [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)|

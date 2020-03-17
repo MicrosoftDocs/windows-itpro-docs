@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Authentication policies  
+## Authentication policies
 
 <dl>
   <dd>
@@ -52,7 +52,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**  
+<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**
 
 <!--SupportedSKUs-->
 <table>
@@ -110,7 +110,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
+<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**
 
 <!--SupportedSKUs-->
 <table>
@@ -168,7 +168,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
+<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**
 
 <!--SupportedSKUs-->
 <table>
@@ -228,7 +228,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
+<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**
 
 <!--SupportedSKUs-->
 <table>
@@ -281,7 +281,7 @@ Here is an example scenario: At Contoso, there are a lot of shared devices and k
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Do not allow. The FIDO device credential provider disabled. 
+-   0 - Do not allow. The FIDO device credential provider disabled.
 -   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
 
 <!--/SupportedValues-->
@@ -290,7 +290,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
+<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**
 
 <!--SupportedSKUs-->
 <table>
@@ -341,7 +341,7 @@ In the next major release of Windows 10, the default for this policy for consume
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow companion device for secondary authentication*
 -   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
 -   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
@@ -360,7 +360,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**  
+<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**
 
 <!--SupportedSKUs-->
 <table>
@@ -432,7 +432,7 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**  
+<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**
 
 <!--SupportedSKUs-->
 <table>
@@ -478,7 +478,7 @@ Value type is integer. Supported values:
 > [!Warning]
 > This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
-"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
+"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML).
 
 > [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
@@ -504,7 +504,7 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**  
+<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**
 
 <!--SupportedSKUs-->
 <table>

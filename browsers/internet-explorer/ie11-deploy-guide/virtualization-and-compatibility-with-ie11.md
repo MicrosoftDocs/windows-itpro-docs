@@ -6,7 +6,7 @@ description: Virtualization and compatibility with Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -29,9 +29,9 @@ The Microsoft-supported options for virtualizing web apps are:
 -   **Client Hyper-V.** Uses the same virtualization technology previously available in Windows Server, but now installed for Windows 8.1. For more information, see [Client Hyper-V](https://go.microsoft.com/fwlink/p/?LinkId=271654).<p>
 For more information about virtualization options, see [Microsoft Desktop Virtualization](https://go.microsoft.com/fwlink/p/?LinkId=271662).
 
- 
 
- 
+
+
 
 
 

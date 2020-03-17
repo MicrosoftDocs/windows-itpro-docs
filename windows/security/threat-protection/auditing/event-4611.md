@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,27 +42,27 @@ You typically see these events during operating system startup or user logon and
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4611</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12289</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-14T03:43:29.604031000Z" /> 
- <EventRecordID>1048175</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="548" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4611</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12289</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-14T03:43:29.604031000Z" />
+ <EventRecordID>1048175</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="548" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="LogonProcessName">Winlogon</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="LogonProcessName">Winlogon</Data>
  </EventData>
  </Event>
 
@@ -110,5 +110,5 @@ For 4611(S): A trusted logon process has been registered with the Local Security
 
 -   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the allow list or not.
 
--   
+-
 

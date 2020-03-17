@@ -6,7 +6,7 @@ description: Turn on local user control and logging for Enterprise Mode.
 author: dansimp
 ms.prod: ie11
 ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -57,9 +57,9 @@ Your **Value data** location can be any of the following types:
 
 For information about how to collect the data provided when your employees turn Enterprise Mode on or off from the **Tools** menu, see [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md).
 
- 
 
- 
+
+
 
 
 

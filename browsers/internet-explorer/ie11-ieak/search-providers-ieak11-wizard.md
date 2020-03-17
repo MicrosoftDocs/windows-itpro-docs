@@ -5,7 +5,7 @@ description: How to use the Search Providers page in the IEAK 11 Customization W
 author: dansimp
 ms.prod: ie11
 ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -47,9 +47,9 @@ The **Search Provider** box appears.
 
 12. Click **Next** to go to the [Important URLs - Home Page and Support](important-urls-home-page-and-support-ieak11-wizard.md) page or **Back** to go to the [Browser User Interface](browser-ui-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

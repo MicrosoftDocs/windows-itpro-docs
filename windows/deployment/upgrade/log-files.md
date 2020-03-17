@@ -1,9 +1,9 @@
 ---
 title: Log files - Windows IT Pro
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
-description: Learn how to interpret the log files generated during the Windows 10 upgrade process. 
+description: Learn how to interpret the log files generated during the Windows 10 upgrade process.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,10 +25,10 @@ ms.topic: article
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 
-Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
+Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code.
 
 >[!NOTE]
->Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
+>Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
@@ -249,7 +249,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 <<<  [Exit status: FAILURE(0xC1900101)]
 </pre>
 
-<br>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+<br>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f.
 
 ## Related topics
 

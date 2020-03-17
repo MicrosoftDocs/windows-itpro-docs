@@ -2,7 +2,7 @@
 title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
 description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.
 ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: ie11
 ms.mktglfcycl: deploy
@@ -41,11 +41,11 @@ The information in this topic only covers HTTPS protocol. We strongly recommend 
 
 2.  If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>**Note**<br>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
 
-     
 
- 
 
- 
+
+
+
 
 
 

@@ -5,7 +5,7 @@ description: Use the \[FavoritesEx\] .INS file setting to specify your Favorites
 author: dansimp
 ms.prod: ie11
 ms.assetid: 55de376a-d442-478e-8978-3b064407b631
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

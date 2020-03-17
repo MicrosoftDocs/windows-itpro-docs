@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event always generates, regardless of the object’s [SACL](https://msdn.mi
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4913</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13570</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-09T23:40:43.118758100Z" /> 
- <EventRecordID>1183666</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4913</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13570</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-09T23:40:43.118758100Z" />
+ <EventRecordID>1183666</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x37901</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="ObjectType">File</Data> 
- <Data Name="ObjectName">C:\\Audit Files\\HBI Data.txt</Data> 
- <Data Name="HandleId">0x3d4</Data> 
- <Data Name="OldSd">S:AI</Data> 
- <Data Name="NewSd">S:ARAI(SP;ID;;;;S-1-17-1442530252-1178042555-1247349694-2318402534)</Data> 
- <Data Name="ProcessId">0x884</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\dllhost.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x37901</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="ObjectType">File</Data>
+ <Data Name="ObjectName">C:\\Audit Files\\HBI Data.txt</Data>
+ <Data Name="HandleId">0x3d4</Data>
+ <Data Name="OldSd">S:AI</Data>
+ <Data Name="NewSd">S:ARAI(SP;ID;;;;S-1-17-1442530252-1178042555-1247349694-2318402534)</Data>
+ <Data Name="ProcessId">0x884</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\dllhost.exe</Data>
  </EventData>
  </Event>
 ```
@@ -157,12 +157,12 @@ This event always generates, regardless of the object’s [SACL](https://msdn.mi
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the Security Descriptor Definition Language (SDDL) value for the new Central Policy ID (for the policy that has been applied to the object). See more information in **Central Policy ID\\Original Security Descriptor** field section for this event.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

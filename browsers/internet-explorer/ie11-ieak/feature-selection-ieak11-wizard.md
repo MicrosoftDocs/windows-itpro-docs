@@ -5,7 +5,7 @@ description: How to use the Feature Selection page in the IEAK 11 Customization 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9cb8324e-d73b-41ba-ade9-3acc796e21d8
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -54,9 +54,9 @@ You can also click **Select All** to add, or **Clear All** to remove, all of the
 
 2.  Click **Next** to go to the [Automatic Version Synchronization](auto-version-sync-ieak11-wizard.md) page or **Back** to go to the [Package Type Selection](pkg-type-selection-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

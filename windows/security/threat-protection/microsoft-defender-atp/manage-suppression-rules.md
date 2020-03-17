@@ -1,6 +1,6 @@
 ---
 title: Manage Microsoft Defender Advanced Threat Protection suppression rules
-description: Manage suppression rules 
+description: Manage suppression rules
 keywords: manage suppression, rules, rule name, scope, action, alerts, turn on, turn off
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -32,7 +32,7 @@ You can view a list of all the suppression rules and manage them in one place. Y
 
 2. Select a rule by clicking on the check-box beside the rule name.
 
-3. Click **Turn rule on**, **Edit rule**, or  **Delete rule**. When making changes to a rule, you can choose to release alerts that it has already suppressed, regardless whether or not these alerts match the new criteria. 
+3. Click **Turn rule on**, **Edit rule**, or  **Delete rule**. When making changes to a rule, you can choose to release alerts that it has already suppressed, regardless whether or not these alerts match the new criteria.
 
 
 ## View details of a suppression rule

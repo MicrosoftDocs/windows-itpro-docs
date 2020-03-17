@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Active Directory Security Groups
@@ -82,7 +82,7 @@ Groups are characterized by a scope that identifies the extent to which the grou
 > [!NOTE]
 > In addition to these three scopes, the default groups in the **Builtin** container have a group scope of Builtin Local. This group scope and group type cannot be changed.
 
- 
+
 
 The following table lists the three group scopes and more information about each scope for a security group.
 
@@ -143,7 +143,7 @@ The following table lists the three group scopes and more information about each
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="special-identity-groups-"></a>Special identity groups
 
@@ -548,7 +548,7 @@ The following tables provide descriptions of the default groups that are located
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-acasstops"></a>Access Control Assistance Operators
 
@@ -610,7 +610,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-accountoperators"></a>Account Operators
 
@@ -623,7 +623,7 @@ The Account Operators group applies to versions of the Windows Server operating 
 > [!NOTE]
 > By default, this built-in group has no members, and it can create and manage users and groups in the domain, including its own membership and that of the Server Operators group. This group is considered a service administrator group because it can modify Server Operators, which in turn can modify domain controller settings. As a best practice, leave the membership of this group empty, and do not use it for any delegated administration. This group cannot be renamed, deleted, or moved.
 
- 
+
 
 This security group has not changed since Windows Server 2008.
 
@@ -678,7 +678,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-admins"></a>Administrators
 
@@ -691,7 +691,7 @@ The Administrators group applies to versions of the Windows Server operating sys
 
 Membership can be modified by members of the following groups: the default service Administrators, Domain Admins in the domain, or Enterprise Admins. This group has the special privilege to take ownership of any object in the directory or any resource on a domain controller. This account is considered a service administrator group because its members have full access to the domain controllers in the domain.
 
- 
+
 
 This security group includes the following changes since Windows Server 2008:
 
@@ -776,7 +776,7 @@ This security group includes the following changes since Windows Server 2008:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-allowedrodcpwdrepl"></a>Allowed RODC Password Replication Group
 
@@ -837,7 +837,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-backupoperators"></a>Backup Operators
 
@@ -902,7 +902,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-certificateservicedcomaccess"></a>Certificate Service DCOM Access
 
@@ -963,7 +963,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-certpublishers"></a>Cert Publishers
 
@@ -1024,7 +1024,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-cloneabledomaincontrollers"></a>Cloneable Domain Controllers
 
@@ -1085,7 +1085,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-cryptographicoperators"></a>Cryptographic Operators
 
@@ -1146,7 +1146,7 @@ This security group was introduced in Windows Vista Service Pack 1, and it h
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-deniedrodcpwdrepl"></a>Denied RODC Password Replication Group
 
@@ -1217,7 +1217,7 @@ This security group includes the following changes since Windows Server 2008:
 </table>
 
 ### <a href="" id="bkmk-device-owners"></a>Device Owners
-This group is not currently used in Windows. 
+This group is not currently used in Windows.
 
 Microsoft does not recommend changing the default configuration where this security group has zero members. Changing the default configuration could hinder future scenarios that rely on this group.
 
@@ -1278,7 +1278,7 @@ The Device Owners group applies to versions of the Windows Server operating syst
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-distributedcomusers"></a>Distributed COM Users
 
@@ -1339,7 +1339,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-dnsupdateproxy"></a>DnsUpdateProxy
 
@@ -1402,7 +1402,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-dnsadmins"></a>DnsAdmins
 
@@ -1463,7 +1463,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-domainadmins"></a>Domain Admins
 
@@ -1528,7 +1528,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-domaincomputers"></a>Domain Computers
 
@@ -1589,7 +1589,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-domaincontrollers"></a>Domain Controllers
 
@@ -1650,7 +1650,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-domainguests"></a>Domain Guests
 
@@ -1711,7 +1711,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-domainusers"></a>Domain Users
 
@@ -1775,7 +1775,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-entadmins"></a>Enterprise Admins
 
@@ -1858,7 +1858,7 @@ The Enterprise Key Admins group was introduced in Windows Server 2016.
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
 
- 
+
 ### <a href="" id="bkmk-entrodc"></a>Enterprise Read-Only Domain Controllers
 
 Members of this group are Read-Only Domain Controllers in the enterprise. Except for account passwords, a Read-only domain controller holds all the Active Directory objects and attributes that a writable domain controller holds. However, changes cannot be made to the database that is stored on the Read-only domain controller. Changes must be made on a writable domain controller and then replicated to the Read-only domain controller.
@@ -1922,7 +1922,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-eventlogreaders"></a>Event Log Readers
 
@@ -1983,7 +1983,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-gpcreatorsowners"></a>Group Policy Creators Owners
 
@@ -2046,7 +2046,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-guests"></a>Guests
 
@@ -2061,7 +2061,7 @@ Computer Configuration\\Administrative Templates\\System\\User Profiles
 
 The Guest account does not require a password. You can set rights and permissions for the Guest account as in any user account. By default, the Guest account is a member of the built-in Guests group and the Domain Guests global group, which allows a user to sign in to a domain. The Guest account is disabled by default, and we recommend that it stay disabled.
 
- 
+
 
 The Guests group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2119,7 +2119,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-hypervadministrators"></a>Hyper-V Administrators
 
@@ -2128,7 +2128,7 @@ Members of the Hyper-V Administrators group have complete and unrestricted acces
 > [!NOTE]
 > Prior to Windows Server 2012, access to features in Hyper-V was controlled in part by membership in the Administrators group.
 
- 
+
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2183,7 +2183,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-iis-iusrs"></a>IIS\_IUSRS
 
@@ -2244,7 +2244,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-inforesttrustbldrs"></a>Incoming Forest Trust Builders
 
@@ -2255,7 +2255,7 @@ To make this determination, the Windows security system computes a trust path be
 > [!NOTE]
 > This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
- 
+
 
 For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](https://technet.microsoft.com/library/f5c70774-25cd-4481-8b7a-3d65c86e69b1).
 
@@ -2264,7 +2264,7 @@ The Incoming Forest Trust Builders group applies to versions of the Windows Serv
 > [!NOTE]
 > This group cannot be renamed, deleted, or moved.
 
- 
+
 
 This security group has not changed since Windows Server 2008.
 
@@ -2362,7 +2362,7 @@ Members of the Network Configuration Operators group can have the following admi
 > [!NOTE]
 > This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
- 
+
 The Network Configuration Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
 > [!NOTE]
@@ -2422,7 +2422,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-perflogusers"></a>Performance Log Users
 
@@ -2443,7 +2443,7 @@ For members of the Performance Log Users group to initiate data logging or modif
 > [!NOTE]
 > This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
- 
+
 The Performance Log Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
 > [!NOTE]
@@ -2503,7 +2503,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-perfmonitorusers"></a>Performance Monitor Users
 
@@ -2522,12 +2522,11 @@ Specifically, members of this security group:
     > [!WARNING]
     > You cannot configure a Data Collector Set to run as a member of the Performance Monitor Users group.
 
-     
 
 > [!NOTE]
 > This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO). This group cannot be renamed, deleted, or moved.
 
- 
+
 
 The Performance Monitor Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2584,7 +2583,6 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
 ### <a href="" id="bkmk-pre-ws2kcompataccess"></a>Pre–Windows 2000 Compatible Access
 
 Members of the Pre–Windows 2000 Compatible Access group have Read access for all users and groups in the domain. This group is provided for backward compatibility for computers running Windows NT 4.0 and earlier. By default, the special identity group, Everyone, is a member of this group. Add users to this group only if they are running Windows NT 4.0 or earlier.
@@ -2649,7 +2647,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-printoperators"></a>Print Operators
 
@@ -2714,7 +2712,7 @@ This security group has not changed since Windows Server 2008. However, in Windo
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-protectedusers"></a>Protected Users
 
@@ -2791,7 +2789,7 @@ The following table specifies the properties of the Protected Users group.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-rasandias"></a>RAS and IAS Servers
 
@@ -2852,7 +2850,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-rdsendpointservers"></a>RDS Endpoint Servers
 
@@ -2913,7 +2911,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-rdsmanagementservers"></a>RDS Management Servers
 
@@ -2972,7 +2970,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-rdsremoteaccessservers"></a>RDS Remote Access Servers
 
@@ -3033,7 +3031,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-remotedesktopusers"></a>Remote Desktop Users
 
@@ -3094,7 +3092,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-rodc"></a>Read-Only Domain Controllers
 
@@ -3167,7 +3165,7 @@ This security group was introduced in Windows Server 2008, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-remotemanagementusers"></a>Remote Management Users
 
@@ -3230,7 +3228,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-replicator"></a>Replicator
 
@@ -3297,7 +3295,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-schemaadmins"></a>Schema Admins
 
@@ -3364,7 +3362,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-serveroperators"></a>Server Operators
 
@@ -3485,7 +3483,7 @@ The Terminal Server License Servers group applies to versions of the Windows Ser
 > [!NOTE]
 > This group cannot be renamed, deleted, or moved.
 
- 
+
 
 This security group only applies to Windows Server 2003 and Windows Server 2008 because Terminal Services was replaced by Remote Desktop Services in Windows Server 2008 R2.
 
@@ -3540,7 +3538,7 @@ This security group only applies to Windows Server 2003 and Windows Server 200
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-users"></a>Users
 
@@ -3609,7 +3607,7 @@ This security group includes the following changes since Windows Server 2008:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-winauthaccess"></a>Windows Authorization Access Group
 
@@ -3620,7 +3618,6 @@ The Windows Authorization Access group applies to versions of the Windows Server
 > [!NOTE]
 > This group cannot be renamed, deleted, or moved.
 
- 
 This security group has not changed since Windows Server 2008.
 
 <table>
@@ -3674,7 +3671,7 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-winrmremotewmiusers-"></a>WinRMRemoteWMIUsers\_
 
@@ -3699,7 +3696,7 @@ In Windows Server 2012, the Access Denied Assistance functionality adds the Aut
 > [!NOTE]
 > The WinRMRemoteWMIUsers\_ group allows running Windows PowerShell commands remotely whereas the [Remote Management Users](#bkmk-remotemanagementusers) group is generally used to allow users to manage servers by using the Server Manager console.
 
- 
+
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 

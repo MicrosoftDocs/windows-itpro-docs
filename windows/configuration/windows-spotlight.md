@@ -2,7 +2,7 @@
 title: Configure Windows Spotlight on the lock screen (Windows 10)
 description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
 ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["lockscreen"]
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.date: 04/30/2018
 -   Windows 10
 
 
-Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 
+Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10.
 
 For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps.
 
@@ -45,7 +45,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 -   **Feature suggestions, fun facts, tips**
 
     The lock screen background will occasionally suggest Windows 10 features that the user hasn't tried yet, such as **Snap assist**.
-    
+
     ![fun facts](images/funfacts.png)
 
 ## How do you turn off Windows Spotlight locally?
@@ -67,7 +67,7 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
 | --- | --- | --- | --- |
 | **Do not suggest third-party content in Windows spotlight** | **Experience/Allow ThirdParty Suggestions In Windows Spotlight** | Enables enterprises to restrict suggestions to Microsoft apps and services | Windows 10 Pro, Enterprise, and Education, version 1607 and later |
 | **Turn off all Windows Spotlight features** | **Experience/Allow Windows Spotlight** | Enables enterprises to completely disable all Windows Spotlight features in a single setting | Windows 10 Enterprise and Education, version 1607 and later |
-| **Configure Spotlight on lock screen** | **Experience/Configure Windows Spotlight On Lock Screen** | Specifically controls the use of the dynamic Windows Spotlight image on the lock screen, and can be enabled or disabled | Windows 10 Enterprise and Education, version 1607 and later | 
+| **Configure Spotlight on lock screen** | **Experience/Configure Windows Spotlight On Lock Screen** | Specifically controls the use of the dynamic Windows Spotlight image on the lock screen, and can be enabled or disabled | Windows 10 Enterprise and Education, version 1607 and later |
 | **Turn off the Windows Spotlight on Action Center** | **Experience/Allow Windows Spotlight On Action Center** |  Turn off Suggestions from Microsoft that show after each clean install, upgrade, or on an on-going basis to introduce users to what is new or changed | Windows 10 Enterprise and Education, version 1703 |
 | **Do not use diagnostic data for tailored experiences** | **Experience/Allow Tailored Experiences With Diagnostic Data** | Prevent Windows from using diagnostic data to provide tailored experiences to the user | Windows 10 Pro, Enterprise, and Education, version 1703 |
 | **Turn off the Windows Welcome Experience** | **Experience/Allow Windows Spotlight Windows Welcome Experience** | Turn off the Windows Spotlight Windows Welcome experience which helps introduce users to Windows, such as launching Microsoft Edge with a web page highlighting new features | Windows 10 Enterprise and Education, version 1703 |
@@ -93,7 +93,7 @@ A custom lock screen image created in 16:9 aspect ratio (1600x900) will scale pr
 
 Lock screen images created at other aspect ratios may scale and center unpredictably on your device when changing aspect ratios.
 
-The recommendation for custom lock screen images that include text (such as a legal statement) is to create the lock screen image in 16:9 resolution with text contained in the 4:3 region, allowing the text to remain visible at any aspect ratio. 
+The recommendation for custom lock screen images that include text (such as a legal statement) is to create the lock screen image in 16:9 resolution with text contained in the 4:3 region, allowing the text to remain visible at any aspect ratio.
 
 ## Related topics
 
@@ -101,7 +101,7 @@ The recommendation for custom lock screen images that include text (such as a le
 [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
 
 
- 
+
 
 
 

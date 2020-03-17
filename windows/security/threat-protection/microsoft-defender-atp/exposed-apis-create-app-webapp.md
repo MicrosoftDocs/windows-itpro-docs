@@ -1,6 +1,6 @@
 ---
 title: Create an app to access Microsoft Defender ATP without a user
-ms.reviewer: 
+ms.reviewer:
 description: Learn how to design a web app to get programmatic access to Microsoft Defender ATP without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -38,7 +38,7 @@ This article explains how to create an Azure AD application, get an access token
 
 1. Log on to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
@@ -89,7 +89,7 @@ This article explains how to create an Azure AD application, get an access token
 
     You (or your customer if you are writing a third-party app) need to select the consent link and approve your app. The consent should be done with a user who has administrative privileges in Active Directory.
 
-    The consent link is formed as follows: 
+    The consent link is formed as follows:
 
     ```
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
@@ -145,7 +145,7 @@ The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveD
     ```
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.windows.net";
     const string wdatpResourceId = "https://api.securitycenter.windows.com";
@@ -197,7 +197,7 @@ Ensure that you got the correct token:
 1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
 1. The expiration time of the token is one hour. You can send more then one request with the same token.
 
-The following is an example of sending a request to get a list of alerts **using C#**: 
+The following is an example of sending a request to get a list of alerts **using C#**:
     ```
     var httpClient = new HttpClient();
 

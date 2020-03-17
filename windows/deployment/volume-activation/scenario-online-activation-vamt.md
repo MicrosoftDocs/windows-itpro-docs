@@ -47,7 +47,7 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 -   Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
-    **Note**  
+    **Note**
     To retrieve product license status, VAMT must have administrative permissions on the remote computers and WMI must be available through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
 ## <a href="" id="bkmk-partthree"></a>Step 3: Connect to a VAMT database
@@ -101,7 +101,7 @@ To collect the status from select computers in the database, you can select comp
 
     The keys that you have added appear in the **Product Keys** list view in the center pane.
 
-    **Important**  
+    **Important**
     If you are activating many products with a MAK, refresh the activation count of the MAK to ensure that the MAK can support the required number of activations. In the product key list in the center pane, select the MAK and then click **Refresh product key data online** in the right-side pane to contact Microsoft and retrieve the number of remaining activations for the MAK. This step requires Internet access. You can only retrieve the remaining activation count for MAKs.
 
 ## <a href="" id="bkmk-parteight"></a>Step 8: Install the product keys
@@ -114,7 +114,7 @@ To collect the status from select computers in the database, you can select comp
 6.  VAMT displays the **Installing product key** dialog box while it attempts to install the product key for the selected products. When the process is finished, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
 
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
-    **Note**  
+    **Note**
 
     Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](https://go.microsoft.com/fwlink/p/?linkid=238382)
 
@@ -126,7 +126,7 @@ To collect the status from select computers in the database, you can select comp
 4.  Enter your alternate user name and password and click **OK**.
 5.  The **Activate** option contacts the Microsoft product-activation server over the Internet and requests activation for the selected products. VAMT displays the **Activating products** dialog box until the requested actions are completed.
 
-    **Note**  
+    **Note**
     Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network.
 
     RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and volume editions of Office 2010 will not enter RFM.

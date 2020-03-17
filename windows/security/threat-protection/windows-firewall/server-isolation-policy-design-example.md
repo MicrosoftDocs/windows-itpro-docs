@@ -2,7 +2,7 @@
 title: Server Isolation Policy Design Example (Windows 10)
 description: Server Isolation Policy Design Example
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -69,7 +69,7 @@ As in the previously described policy design examples, GPOs to implement the dom
 
 >**Note:**  You can design your GPOs in nested groups. For example, you can make the boundary group a member of the isolated domain group, so that it receives the firewall and basic isolated domain settings through that nested membership, with only the changes supplied by the boundary zone GPO. However, devices that are running older versions of Windows can only support a single IPsec policy being active at a time. The policies for each GPO must be complete (and to a great extent redundant with each other), because you cannot layer them as you can in the newer versions of Windows. For simplicity, this guide describes the techniques used to create the independent, non-layered policies. We recommend that you create and periodically run a script that compares the memberships of the groups that must be mutually exclusive and reports any devices that are incorrectly assigned to more than one group.
 
- 
+
 Network access groups (NAGs) are not used to determine which GPOs are applied to a computer. Instead, these groups determine which users and devices can access the services on the isolated server.
 
 -   **CG\_NAG\_SQL\_COMPUTERS**. This network access group contains the computer accounts that are able to access the devices running SQL Server hosting the WGBank data. Members of this group include the WGBank front-end servers, and some client devices from which SQL Server administrators are permitted to work on the servers.

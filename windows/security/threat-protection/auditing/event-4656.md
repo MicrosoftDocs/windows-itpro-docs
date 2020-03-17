@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,39 +40,39 @@ This event shows that access was requested, and the results of the request, but 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4656</EventID> 
- <Version>1</Version> 
- <Level>0</Level> 
- <Task>12800</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-18T22:15:19.346776600Z" /> 
- <EventRecordID>274057</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4656</EventID>
+ <Version>1</Version>
+ <Level>0</Level>
+ <Task>12800</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-18T22:15:19.346776600Z" />
+ <EventRecordID>274057</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x4367b</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="ObjectType">File</Data> 
- <Data Name="ObjectName">C:\\Documents\\HBI Data.txt</Data> 
- <Data Name="HandleId">0x0</Data> 
- <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data> 
- <Data Name="AccessList">%%1538 %%1541 %%4416 %%4417 %%4418 %%4419 %%4420 %%4423 %%4424</Data> 
- <Data Name="AccessReason">%%1538: %%1804 %%1541: %%1809 %%4416: %%1809 %%4417: %%1809 %%4418: %%1802 D:(D;;LC;;;S-1-5-21-3457937927-2839227994-823803824-1104) %%4419: %%1809 %%4420: %%1809 %%4423: %%1811 D:(A;OICI;FA;;;S-1-5-21-3457937927-2839227994-823803824-1104) %%4424: %%1809</Data> 
- <Data Name="AccessMask">0x12019f</Data> 
- <Data Name="PrivilegeList">-</Data> 
- <Data Name="RestrictedSidCount">0</Data> 
- <Data Name="ProcessId">0x1074</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\notepad.exe</Data> 
- <Data Name="ResourceAttributes">S:AI(RA;ID;;;;WD;("Impact\_MS",TI,0x10020,3000))</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x4367b</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="ObjectType">File</Data>
+ <Data Name="ObjectName">C:\\Documents\\HBI Data.txt</Data>
+ <Data Name="HandleId">0x0</Data>
+ <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data>
+ <Data Name="AccessList">%%1538 %%1541 %%4416 %%4417 %%4418 %%4419 %%4420 %%4423 %%4424</Data>
+ <Data Name="AccessReason">%%1538: %%1804 %%1541: %%1809 %%4416: %%1809 %%4417: %%1809 %%4418: %%1802 D:(D;;LC;;;S-1-5-21-3457937927-2839227994-823803824-1104) %%4419: %%1809 %%4420: %%1809 %%4423: %%1811 D:(A;OICI;FA;;;S-1-5-21-3457937927-2839227994-823803824-1104) %%4424: %%1809</Data>
+ <Data Name="AccessMask">0x12019f</Data>
+ <Data Name="PrivilegeList">-</Data>
+ <Data Name="RestrictedSidCount">0</Data>
+ <Data Name="ProcessId">0x1074</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\notepad.exe</Data>
+ <Data Name="ResourceAttributes">S:AI(RA;ID;;;;WD;("Impact\_MS",TI,0x10020,3000))</Data>
  </EventData>
  </Event>
 

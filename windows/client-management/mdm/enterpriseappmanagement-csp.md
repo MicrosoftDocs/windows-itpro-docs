@@ -2,7 +2,7 @@
 title: EnterpriseAppManagement CSP
 description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
 > **Note**   The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
 
- 
+
 
 The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
 
@@ -57,7 +57,7 @@ Supported operations are Get and Add.
 
 > **Note**   Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
 
- 
+
 
 <a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**
 Required. The integer value that indicates the current status of the application enrollment. Valid values are 0 (ENABLED), 1 (INSTALL\_DISABLED), 2 (REVOKED), and 3 (INVALID). Scope is dynamic.
@@ -173,7 +173,7 @@ Required. The integer value that indicates the status of the current download pr
 </tbody>
 </table>
 
- 
+
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
@@ -437,12 +437,12 @@ Install or update the installed app with the product ID “{B316008A-141D-4A79-8
 
 To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application does not exist, the application will be silently installed without any user interaction. If the application cannot be installed, the user will be notified with an Alert dialog.
 
-> **Note**  
+> **Note**
 > 1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
 
 2. The application product ID curly braces need to be escaped where { is %7B and } is %7D.
 
- 
+
 
 ```xml
 <Atomic>
@@ -535,9 +535,9 @@ Uninstall an installed enterprise application with product ID “{7BB316008A-141
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

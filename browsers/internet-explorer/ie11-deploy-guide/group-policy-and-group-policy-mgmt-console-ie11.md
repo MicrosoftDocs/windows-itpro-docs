@@ -6,7 +6,7 @@ description: Overview about Group Policy, the Group Policy Management Console (G
 author: dansimp
 ms.prod: ie11
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -41,9 +41,9 @@ For more information about the GPMC, see [Group Policy Management Console](https
 ## Searching for Group Policy settings
 To search for Group Policy settings in the Group Policy Management Console (GPMC), use the [Group Policy Search tool](https://go.microsoft.com/fwlink/p/?LinkId=279857). To find the Group Policy settings, click **Windows Components**, and then click **Internet Explorer**.
 
- 
 
- 
+
+
 
 
 

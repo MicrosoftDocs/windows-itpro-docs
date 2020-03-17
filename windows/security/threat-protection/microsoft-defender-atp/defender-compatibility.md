@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus compatibility with Microsoft Defender ATP
-description: Learn about how Windows Defender works with Microsoft Defender ATP and how it functions when a third-party antimalware client is used.  
+description: Learn about how Windows Defender works with Microsoft Defender ATP and how it functions when a third-party antimalware client is used.
 keywords: windows defender compatibility, defender, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ---
@@ -33,7 +33,7 @@ ms.date: 04/24/2018
 The Microsoft Defender Advanced Threat Protection agent depends on Microsoft Defender Antivirus for some capabilities such as file scanning.
 
 >[!IMPORTANT]
->Microsoft Defender ATP does not adhere to the Microsoft Defender Antivirus Exclusions settings. 
+>Microsoft Defender ATP does not adhere to the Microsoft Defender Antivirus Exclusions settings.
 
 You must configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 

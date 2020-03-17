@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 09/10/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -16,7 +16,7 @@ manager: dansimp
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic shows the OMA DM device description framework (DDF) for the **WindowsDefenderApplicationGuard** configuration service provider. 
+This topic shows the OMA DM device description framework (DDF) for the **WindowsDefenderApplicationGuard** configuration service provider.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 

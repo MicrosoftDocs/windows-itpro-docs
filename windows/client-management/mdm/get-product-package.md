@@ -2,7 +2,7 @@
 title: Get product package
 description: The Get product package operation retrieves the information about a specific application in the Micosoft Store for Business.
 ms.assetid: 4314C65E-6DDC-405C-A591-D66F799A341F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -37,7 +37,7 @@ The **Get product package** operation retrieves the information about a specific
 </tbody>
 </table>
 
- 
+
 
 ### URI parameters
 
@@ -74,7 +74,7 @@ The following parameters may be specified in the request URI.
 </tr>
 </tbody>
 </table>
-   
+
 
 <table>
 <colgroup>
@@ -127,7 +127,7 @@ The following parameters may be specified in the request URI.
 
 The response body contains [ProductPackageDetails](data-structures-windows-store-for-business.md#productpackagedetails).
 
- 
+
 
 
 

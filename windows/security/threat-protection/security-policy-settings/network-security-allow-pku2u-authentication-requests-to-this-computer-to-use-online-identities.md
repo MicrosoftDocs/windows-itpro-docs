@@ -2,7 +2,7 @@
 title: Network security Allow PKU2U authentication requests to this computer to use online identities (Windows 10)
 description: Best practices for the Network Security Allow PKU2U authentication requests to this computer to use online identities security setting.
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ When devices are configured to accept authentication requests by using online ID
 
 > [!NOTE]
 > Linking online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
- 
+
 This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers in Windows 7 and later.
 
 ### Possible values
@@ -60,13 +60,13 @@ The following table lists the effective default values for this policy. Default 
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers | Disabled| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Disabled|
+| Member server effective default settings | Disabled|
+| Effective GPO default settings on client computers | Disabled|
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of the countermeasure.

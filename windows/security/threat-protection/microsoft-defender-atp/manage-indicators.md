@@ -57,7 +57,6 @@ You can create an indicator for:
 >[!NOTE]
 >There is a limit of 15,000 indicators per tenant.
 
-
 ## Related topics
 
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)

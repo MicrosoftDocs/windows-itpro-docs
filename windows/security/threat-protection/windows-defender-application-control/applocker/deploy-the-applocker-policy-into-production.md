@@ -2,7 +2,7 @@
 title: Deploy the AppLocker policy into production (Windows 10)
 description: This topic for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings.
 ms.assetid: ebbb1907-92dc-499e-8cee-8e637483c9ae
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,7 +40,7 @@ For info about how AppLocker deployment is dependent on design decisions, see [U
 
 ### AppLocker deployment methods
 
-If you have configured a reference device, you can create and update your AppLocker policies on this device, test the policies, and then export the policies to the appropriate GPO for distribution. Another method is to create the policies and set the enforcement setting on **Audit only**, then 
+If you have configured a reference device, you can create and update your AppLocker policies on this device, test the policies, and then export the policies to the appropriate GPO for distribution. Another method is to create the policies and set the enforcement setting on **Audit only**, then
 observe the events that are generated.
 -   [Use a reference device to create and maintain AppLocker policies](use-a-reference-computer-to-create-and-maintain-applocker-policies.md)
 

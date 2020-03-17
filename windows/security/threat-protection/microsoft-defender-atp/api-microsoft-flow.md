@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP Flow connector
-ms.reviewer: 
+ms.reviewer:
 description: Use Microsoft Defender ATP Flow connector to automate security and create a flow that will be triggered any time a new alert occurs on your tenant.
 keywords: flow, supported apis, api, Microsoft flow, query, automation
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 

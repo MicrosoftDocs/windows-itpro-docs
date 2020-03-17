@@ -1,6 +1,6 @@
 ---
 title: Investigate incidents in Microsoft Defender ATP
-description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident 
+description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident
 keywords: investigate, incident, alerts, metadata, risk, detection source, affected devices, patterns, correlation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -23,7 +23,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them.
 
 When you investigate an incident, you'll see:
 - Incident details
@@ -33,15 +33,15 @@ When you investigate an incident, you'll see:
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUV]
 
 
-## Analyze incident details 
-Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph). 
+## Analyze incident details
+Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph).
 
 ![Image of incident details](images/atp-incident-details.png)
 
 ### Alerts
-You can investigate the alerts and see how they were linked together in an incident. 
+You can investigate the alerts and see how they were linked together in an incident.
 Alerts are grouped into incidents based on the following reasons:
-- Automated investigation - The automated investigation triggered the linked alert while investigating the original alert 
+- Automated investigation - The automated investigation triggered the linked alert while investigating the original alert
 - File characteristics - The files associated with the alert have similar characteristics
 - Manual association - A user manually linked the alerts
 - Proximate time - The alerts were triggered on the same device within a certain timeframe
@@ -50,7 +50,7 @@ Alerts are grouped into incidents based on the following reasons:
 
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-reason.png)
 
-You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts.md). 
+You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts.md).
 
 ### Devices
 You can also investigate the devices that are part of, or related to, a given incident. For more information, see [Investigate devices](investigate-machines.md).
@@ -63,12 +63,12 @@ Select **Investigations** to see all the automatic investigations launched by th
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
-Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
-Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
+Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident.
+Each of the analyzed entities will be marked as infected, remediated, or suspicious.
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
 
-## Visualizing associated cybersecurity threats 
+## Visualizing associated cybersecurity threats
 Microsoft Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph

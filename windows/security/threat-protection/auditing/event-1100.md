@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,23 +40,23 @@ This event doesn’t generate during emergency system reset.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
- <EventID>1100</EventID> 
- <Version>0</Version> 
- <Level>4</Level> 
- <Task>103</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x4020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-15T07:02:20.010585400Z" /> 
- <EventRecordID>1048124</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="820" ThreadID="964" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" />
+ <EventID>1100</EventID>
+ <Version>0</Version>
+ <Level>4</Level>
+ <Task>103</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x4020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-15T07:02:20.010585400Z" />
+ <EventRecordID>1048124</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="820" ThreadID="964" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <UserData>
- <ServiceShutdown xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog" /> 
+ <ServiceShutdown xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog" />
  </UserData>
  </Event>
 

@@ -9,13 +9,13 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro 
-ms.topic: article 
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 03/04/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -28,7 +28,7 @@ manager: dansimp
 
 You might already know that:
 
-- **Microsoft Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Microsoft Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Microsoft Defender Antivirus is your next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). 
+- **Microsoft Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Microsoft Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Microsoft Defender Antivirus is your next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
 - **Office 365 includes antiphishing, antispam, and antimalware protection**. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices. This is true for home and business users. And if you're a business user, and your organization is using Office 365 E5, you get even more protection through Office 365 Advanced Threat Protection. [Protect against threats with Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -52,7 +52,7 @@ When you save your files to [OneDrive](https://docs.microsoft.com/onedrive), and
 
 3. **You get the option to recover your files in OneDrive**. With the OneDrive Files Restore feature, you can recover your files in OneDrive to the state they were in before the ransomware attack occurred. See [Ransomware detection and recovering your files](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 
-Think of the time and hassle this can save. 
+Think of the time and hassle this can save.
 
 ## Integration means better protection
 

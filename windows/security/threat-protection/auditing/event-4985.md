@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,31 +36,31 @@ This is an informational event from file system [Transaction Manager](https://ms
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4985</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12800</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-19T00:00:40.099093300Z" /> 
- <EventRecordID>274277</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="5048" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4985</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12800</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-19T00:00:40.099093300Z" />
+ <EventRecordID>274277</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="5048" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="TransactionId">{17EF5E21-5E2C-11E5-810F-00155D987005}</Data> 
- <Data Name="NewState">52</Data> 
- <Data Name="ResourceManager">{5F5ED427-FCCA-11E3-BD73-B54AB417B853}</Data> 
- <Data Name="ProcessId">0x370</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="TransactionId">{17EF5E21-5E2C-11E5-810F-00155D987005}</Data>
+ <Data Name="NewState">52</Data>
+ <Data Name="ResourceManager">{5F5ED427-FCCA-11E3-BD73-B54AB417B853}</Data>
+ <Data Name="ProcessId">0x370</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data>
  </EventData>
 </Event>
 

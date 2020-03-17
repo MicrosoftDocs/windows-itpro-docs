@@ -2,7 +2,7 @@
 title: System objects Strengthen default permissions of internal system objects (e.g. Symbolic Links) (Windows 10)
 description: Best practices and more for the security policy setting, System objects Strengthen default permissions of internal system objects (e.g. Symbolic Links).
 ms.assetid: 3a592097-9cf5-4fd0-a504-7cbfab050bb6
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -48,13 +48,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
 | Stand-Alone Server Default Settings | Enabled |
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

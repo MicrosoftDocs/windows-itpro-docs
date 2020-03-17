@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event only generates if the destination object has a particular entry in it
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5139</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14081</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-28T06:26:07.019116600Z" /> 
- <EventRecordID>409532</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="600" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5139</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14081</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-28T06:26:07.019116600Z" />
+ <EventRecordID>409532</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="600" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="OpCorrelationID">{67A42C05-A70D-4348-AF19-E883CB1FCA9C}</Data> 
- <Data Name="AppCorrelationID">-</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x35867</Data> 
- <Data Name="DSName">contoso.local</Data> 
- <Data Name="DSType">%%14676</Data> 
- <Data Name="OldObjectDN">CN=NewUser,CN=Builtin,DC=contoso,DC=local</Data> 
- <Data Name="NewObjectDN">CN=NewUser,CN=Users,DC=contoso,DC=local</Data> 
- <Data Name="ObjectGUID">{06713960-9CC3-4B5D-A594-35883A04F934}</Data> 
- <Data Name="ObjectClass">user</Data> 
+ <Data Name="OpCorrelationID">{67A42C05-A70D-4348-AF19-E883CB1FCA9C}</Data>
+ <Data Name="AppCorrelationID">-</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x35867</Data>
+ <Data Name="DSName">contoso.local</Data>
+ <Data Name="DSType">%%14676</Data>
+ <Data Name="OldObjectDN">CN=NewUser,CN=Builtin,DC=contoso,DC=local</Data>
+ <Data Name="NewObjectDN">CN=NewUser,CN=Users,DC=contoso,DC=local</Data>
+ <Data Name="ObjectGUID">{06713960-9CC3-4B5D-A594-35883A04F934}</Data>
+ <Data Name="ObjectClass">user</Data>
  </EventData>
  </Event>
 ```
@@ -111,15 +111,15 @@ This event only generates if the destination object has a particular entry in it
 -   **Old DN** \[Type = UnicodeString\]: Old distinguished name of moved object.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **New DN** \[Type = UnicodeString\]: New distinguished name of moved object. The Active Directory container to which the object was moved.

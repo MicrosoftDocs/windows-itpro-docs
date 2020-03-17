@@ -2,7 +2,7 @@
 title: Run the Automatically Generate Rules wizard (Windows 10)
 description: This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 ms.assetid: 8cad1e14-d5b2-437c-8f88-70cffd7b3d8e
-ms.reviewer: 
+ms.reviewer:
 ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,11 +40,11 @@ You can perform this task by using the Group Policy Management Console for an Ap
 7. On the **Rule Preferences** page, choose the conditions that you want the wizard to use while creating rules, and then click **Next**. For more info about rule conditions, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
    >**Note:**  The **Reduce the number of rules created by grouping similar files** check box is selected by default. This helps you organize AppLocker rules and reduce the number of rules that you create by performing the following operations for the rule condition that you select:
-    
+
    - One publisher condition is created for all files that have the same publisher and product name.
    - One path condition is created for the folder that you select. For example, if you select *C:\\Program Files\\ProgramName\\* and the files in that folder are not signed, the wizard creates a rule for *%programfiles%\\ProgramName\\\**.
    - One file hash condition is created that contains all of the file hashes. When rule grouping is disabled, the wizard creates a file hash rule for each file.
-     
+
 8. Review the files that were analyzed and the rules that will be automatically created. To make changes, click **Previous** to return to the page where you can change your selections. After reviewing the rules, click **Create**.
 
 >**Note:**  If you are running the wizard to create your first rules for a GPO, you will be prompted to create the default rules, which allow critical system files to run, after completing the wizard. You may edit the default rules at any time. If your organization has decided to edit the default rules or create custom rules to allow the Windows system files to run, ensure that you delete the default rules after replacing them with your custom rules.

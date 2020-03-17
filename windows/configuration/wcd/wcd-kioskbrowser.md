@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -37,10 +37,10 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 
 > [!IMPORTANT]
 > To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
-> 
+>
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com).
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.

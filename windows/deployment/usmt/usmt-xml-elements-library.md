@@ -2,7 +2,7 @@
 title: XML Elements Library (Windows 10)
 description: XML Elements Library
 ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -218,7 +218,7 @@ The following example is from the MigApp.xml file:
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
    <bytes>00000000</bytes>
-</object> 
+</object>
 ```
 
 ## <a href="" id="bytes"></a>&lt;bytes&gt;
@@ -281,7 +281,7 @@ The following example is from the MigApp.xml file:
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
    <bytes>00000000</bytes>
-</object> 
+</object>
 ```
 
 ## <a href="" id="commandline"></a>&lt;commandLine&gt;
@@ -1632,7 +1632,7 @@ The following code sample shows how the &lt;description&gt; element defines the 
 
 The &lt;destinationCleanup&gt; element deletes objects, such as files and registry keys, from the destination computer before applying the objects from the source computer. This element is evaluated only when the LoadState tool is run on the destination computer. That is, this element is ignored by the ScanState tool.
 
-**Important**  
+**Important**
 Use this option with extreme caution because it will delete objects from the destination computer.
 
 
@@ -2224,10 +2224,10 @@ Example:
                </externalProcess>
          </rules>
    </role>
-<!-- Migrate 
+<!-- Migrate
    all doc files from the system
    all power point files
-   all visio design files 
+   all visio design files
    all my c++ program files -->
    <extensions>
       <extension>DOC</extension>
@@ -2299,18 +2299,18 @@ Syntax:
 For example, if you want to migrate all \*.doc files from the source computer, specifying the following code under the &lt;component&gt; element:
 
 ``` xml
-<extensions> 
-        <extension>doc</extension> 
-<extensions> 
+<extensions>
+        <extension>doc</extension>
+<extensions>
 ```
 
 is the same as specifying the following code below the &lt;rules&gt; element:
 
 ``` xml
-<include> 
-        <objectSet> 
-                <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script> 
-        </objectSet> 
+<include>
+        <objectSet>
+                <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
+        </objectSet>
 </include>
 ```
 
@@ -2426,7 +2426,7 @@ The following example is from the MigUser.xml file:
          <path type="File">%CSIDL_MYVIDEO%</path>
       </paths>
       <role role="Data">
-         <detects>           
+         <detects>
             <detect>
                <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>
             </detect>
@@ -3238,11 +3238,11 @@ The following example is from the MigUser.xml file:
          <path type="File">%CSIDL_MYMUSIC%</path>
       </paths>
    <role role="Data">
-      <detects>           
+      <detects>
       <detect>
          <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYMUSIC%")</condition>
       </detect>
-   </detects>           
+   </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -3468,14 +3468,14 @@ Syntax:
 <li><p>Specify one “Container” &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
 </ol>
 <pre class="syntax" space="preserve"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
-  &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
-  &lt;environment name=&quot;GlobalEnv&quot; /&gt; 
+  &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt;
+  &lt;environment name=&quot;GlobalEnv&quot; /&gt;
   &lt;role role=&quot;Container&quot;&gt;
-    &lt;detection name=&quot;AnyOffice2003Version&quot; /&gt; 
-    &lt;detection name=&quot;FrontPage2003&quot; /&gt; 
-    &lt;!-- 
- Office 2003 Common Settings 
-  --&gt; 
+    &lt;detection name=&quot;AnyOffice2003Version&quot; /&gt;
+    &lt;detection name=&quot;FrontPage2003&quot; /&gt;
+    &lt;!--
+ Office 2003 Common Settings
+  --&gt;
     &lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;</code></pre></td>
 </tr>
 </tbody>
@@ -3492,11 +3492,11 @@ The following example is from the MigUser.xml file. For more examples, see the M
       <path type="File">%CSIDL_STARTMENU%</path>
    </paths>
    <role role="Settings">
-      <detects>           
+      <detects>
          <detect>
             <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_STARTMENU%")</condition>
          </detect>
-      </detects>           
+      </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -3579,11 +3579,11 @@ The following example is from the MigUser.xml file:
          <path type="File">%CSIDL_MYMUSIC%</path>
       </paths>
    <role role="Data">
-      <detects>           
+      <detects>
       <detect>
          <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYMUSIC%")</condition>
       </detect>
-   </detects>           
+   </detects>
    <rules>
       <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
@@ -3681,7 +3681,7 @@ Examples:
 To migrate the Sample.doc file from any drive on the source computer, use &lt;script&gt; as follows. If multiple files exist with the same name, all such files will get migrated.
 
 ``` xml
-<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
+<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
 ```
 
 For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
@@ -4023,7 +4023,7 @@ For example:
 
 ``` xml
 <variable name="QuickTime5or6DataSys">
-  <text>%CSIDL_COMMON_APPDATA%\QuickTime</text> 
+  <text>%CSIDL_COMMON_APPDATA%\QuickTime</text>
 </variable>
 ```
 
@@ -4055,7 +4055,7 @@ The following .xml file excludes all .mp3 files from migration. For additional e
              <unconditionalExclude>
                         <objectSet>
     <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
-                        </objectSet> 
+                        </objectSet>
              </unconditionalExclude>
             </rules>
         </role>

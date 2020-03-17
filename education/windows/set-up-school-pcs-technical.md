@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 07/11/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -23,16 +23,16 @@ What is Set up School PCs?
 
 The **Set up School PCs** app helps you configure new Windows 10 PCs for school use. The
 app, which is available for Windows 10 version 1703 and later, configures and saves
-school-optimized settings, apps, and policies into a single provisioning package. You can then save the package to a USB drive and distribute it to your school PCs. 
+school-optimized settings, apps, and policies into a single provisioning package. You can then save the package to a USB drive and distribute it to your school PCs.
 
 If your school uses Azure Active Directory (Azure AD) or Office 365, the Set up
-School PCs app will create a setup file. This file joins the PC to your Azure Active Directory tenant. The app also helps set up PCs for use with or without Internet connectivity.  
+School PCs app will create a setup file. This file joins the PC to your Azure Active Directory tenant. The app also helps set up PCs for use with or without Internet connectivity.
 
 
 ## Join PC to Azure Active Directory
 If your school uses Azure Active Directory (Azure AD) or Office 365, the Set up
 School PCs app creates a setup file that joins your PC to your Azure Active
-Directory tenant. 
+Directory tenant.
 
 The app also helps set up PCs for use with or without Internet connectivity.
 
@@ -60,18 +60,18 @@ The following table describes the Set up School PCs app features and lists each 
 
 > [!NOTE]
 >   If your school uses Active Directory, use [Windows Configuration
->   Designer](set-up-students-pcs-to-join-domain.md) 
+>   Designer](set-up-students-pcs-to-join-domain.md)
 >   to configure your PCs to join the domain. You can only use the Set up School
 >   PCs app to set up PCs that are connected to Azure AD.
 
 
 
-## Next steps  
-Learn more about setting up devices with the Set up School PCs app.  
+## Next steps
+Learn more about setting up devices with the Set up School PCs app.
 * [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
 * [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [What's in my provisioning package](set-up-school-pcs-provisioning-package.md)
-* [Set up Windows 10 devices for education](set-up-windows-10.md) 
+* [Set up Windows 10 devices for education](set-up-windows-10.md)
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
 

@@ -6,7 +6,7 @@ description: Browser cache changes and roaming profiles
 author: dansimp
 ms.prod: ie11
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -31,9 +31,9 @@ To get the best results while using roaming profiles, we strongly recommend the 
 
 -   Make sure to delete the user’s local roaming profile at sign off for any computer using user profile roaming. You can do this by turning on the **Delete cached copies of roaming profiles** Group Policy Object.
 
- 
 
- 
+
+
 
 
 

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ---
@@ -24,19 +24,19 @@ ms.date: 03/27/2020
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
 
 >[!NOTE]
 >The alerts queue is significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a device that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-There are several options you can choose from to customize the alerts queue view. 
+There are several options you can choose from to customize the alerts queue view.
 
 On the top navigation you can:
 
 - Select grouped view or list view
-- Customize columns to add or remove columns 
+- Customize columns to add or remove columns
 - Select the items to show per page
 - Navigate between pages
 - Apply filters
@@ -75,7 +75,7 @@ So, for example:
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
-The table below lists the current categories and how they generally map to previous categories. 
+The table below lists the current categories and how they generally map to previous categories.
 
 | New category | Previous categories | Detected threat activity or component |
 |----------------------|----------------------|-------------|

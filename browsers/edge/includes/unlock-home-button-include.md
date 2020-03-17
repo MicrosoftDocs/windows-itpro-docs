@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Unlock Home Button -->  
+<!-- ## Unlock Home Button -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Disabled or not configured (Home button is locked)*
 
@@ -44,7 +44,7 @@ ms.topic: include
 
 ### Related policies
 
-- [Configure Home Button](../available-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
+- [Configure Home Button](../available-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
 - [Set Home Button URL](../available-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
 

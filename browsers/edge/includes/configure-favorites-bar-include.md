@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ##Configure Favorites Bar --> 
+<!-- ##Configure Favorites Bar -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Not configured (Hidden but shown on the Start and New Tab pages)*
 
@@ -22,8 +22,8 @@ ms.topic: include
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p><p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. | 
-|Disabled |0 |0 |Hidden on all pages.<ul><li>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  | 
+|Not configured **(default)** |Blank |Blank |Hidden but shown on the Start and New Tab pages.<p><p>Favorites Bar toggle (in Settings) = **Off** and enabled letting users make changes. |
+|Disabled |0 |0 |Hidden on all pages.<ul><li>Favorites Bar toggle (in Settings) = **Off** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  |
 |Enabled |1 |1 |Shown on all pages.<ul><li>Favorites Bar toggle (in Settings) = **On** and disabled preventing users from making changes</li><li>Show bar/Hide bar option (in the context menu) = hidden</li></ul>  |
 
 ---
@@ -38,7 +38,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[ConfigureFavoritesBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureFavoritesBar 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureFavoritesBar
 - **Data type:** Integer
 
 #### Registry settings

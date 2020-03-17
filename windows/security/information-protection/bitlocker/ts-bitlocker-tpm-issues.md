@@ -29,25 +29,25 @@ You have an Azure Active Directory (Azure AD)-joined client computer that cannot
 
 Additionally, the computer logs an entry for Event ID 1026, which resembles the following:
 
-> Log Name: System  
-> Source: Microsoft-Windows-TPM-WMI  
-> Date: \<Date and Time>  
-> Event ID: 1026  
-> Task Category: None  
-> Level: Information  
-> Keywords:  
-> User: SYSTEM  
-> Computer: \<Computer name\>  
-> Description:  
-> The Trusted Platform Module (TPM) hardware on this computer cannot be provisioned for use automatically.  To set up the TPM interactively use the TPM management console (Start-\>tpm.msc) and use the action to make the TPM ready.  
-> Error: The TPM is defending against dictionary attacks and is in a time-out period.  
-> Additional Information: 0x840000  
+> Log Name: System
+> Source: Microsoft-Windows-TPM-WMI
+> Date: \<Date and Time>
+> Event ID: 1026
+> Task Category: None
+> Level: Information
+> Keywords:
+> User: SYSTEM
+> Computer: \<Computer name\>
+> Description:
+> The Trusted Platform Module (TPM) hardware on this computer cannot be provisioned for use automatically.  To set up the TPM interactively use the TPM management console (Start-\>tpm.msc) and use the action to make the TPM ready.
+> Error: The TPM is defending against dictionary attacks and is in a time-out period.
+> Additional Information: 0x840000
 
 ### Cause
 
-This event indicates that the TPM is not ready or has some setting that prevents access to the TPM keys.  
+This event indicates that the TPM is not ready or has some setting that prevents access to the TPM keys.
 
-Additionally, the behavior indicates that the client computer cannot obtain a [Primary Refresh Token (PRT)](https://docs.microsoft.com/azure/active-directory/devices/concept-primary-refresh-token).  
+Additionally, the behavior indicates that the client computer cannot obtain a [Primary Refresh Token (PRT)](https://docs.microsoft.com/azure/active-directory/devices/concept-primary-refresh-token).
 
 ### Resolution
 
@@ -56,21 +56,21 @@ To verify the status of the PRT, use the [dsregcmd /status command](https://docs
 To resolve this issue, follow these steps to troubleshoot the TPM:
 
 1. Open the TPM management console (tpm.msc). To do this, select **Start**, and enter **tpm.msc** in the **Search** box.
-1. If you see a notice to either unlock the TPM or reset the lockout, follow those instructions.  
+1. If you see a notice to either unlock the TPM or reset the lockout, follow those instructions.
 1. If you do not see such a notice, review the BIOS settings of the computer for any setting that you can use to reset or disable the lockout.
 1. Contact the hardware vendor to determine whether there is a known fix for the issue.
 1. If you still cannot resolve the issue, clear and re-initialize the TPM. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
    > [!WARNING]
-   > Clearing the TPM can cause data loss.  
+   > Clearing the TPM can cause data loss.
 
 ## TPM 1.2 Error: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
 You have a Windows 10 version 1703-based computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
 
-> Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.  
-> HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY  
-> The device that is required by this cryptographic provider is not ready for use.  
-> TPM Spec version: TPM v1.2  
+> Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.
+> HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY
+> The device that is required by this cryptographic provider is not ready for use.
+> TPM Spec version: TPM v1.2
 
 On a different device that is running the same version of Windows, you can open the TPM management console.
 
@@ -80,7 +80,7 @@ These symptoms indicate that the TPM has hardware or firmware issues.
 
 ### Resolution
 
-To resolve this issue, switch the TPM operating mode from version 1.2 to version 2.0.  
+To resolve this issue, switch the TPM operating mode from version 1.2 to version 2.0.
 
 If this does not resolve the issue, consider replacing the device motherboard. After you replace the motherboard, switch the TPM operating mode from version 1.2 to version 2.0.
 
@@ -93,7 +93,7 @@ To verify that the join succeeded, use the [dsregcmd /status command](https://do
 - **AzureAdJoined: YES**
 - **DomainName: \<*on-prem Domain name*\>**
 
-If the value of **AzureADJoined** is **No**, the join failed.  
+If the value of **AzureADJoined** is **No**, the join failed.
 
 ### Causes and Resolutions
 

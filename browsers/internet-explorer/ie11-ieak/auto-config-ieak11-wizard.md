@@ -5,7 +5,7 @@ description: How to use the Automatic Configuration page in the IEAK 11 Customiz
 author: dansimp
 ms.prod: ie11
 ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -50,9 +50,9 @@ You can use the Domain Name System (DNS) and the Dynamic Host Configuration Prot
 
 3.  Click **Next** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page or **Back** to go to the [Connection Settings](connection-settings-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

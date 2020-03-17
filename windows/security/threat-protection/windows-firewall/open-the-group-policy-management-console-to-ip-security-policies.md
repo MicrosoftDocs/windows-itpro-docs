@@ -2,7 +2,7 @@
 title: Open the Group Policy Management Console to IP Security Policies (Windows 10)
 description: Open the Group Policy Management Console to IP Security Policies
 ms.assetid: 235f73e4-37b7-40f4-a35e-3e7238bbef43
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

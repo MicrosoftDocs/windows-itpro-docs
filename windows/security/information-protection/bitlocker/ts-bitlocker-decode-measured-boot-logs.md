@@ -17,7 +17,7 @@ ms.date: 10/17/2019
 
 # Decode Measured Boot logs to track PCR changes
 
-Platform Configuration Registers (PCRs) are memory locations in the Trusted Platform Module (TPM). BitLocker and its related technologies depend on specific PCR configurations. Additionally, specific change in PCRs can cause a device or computer to enter BitLocker recovery mode.  
+Platform Configuration Registers (PCRs) are memory locations in the Trusted Platform Module (TPM). BitLocker and its related technologies depend on specific PCR configurations. Additionally, specific change in PCRs can cause a device or computer to enter BitLocker recovery mode.
 
 By tracking changes in the PCRs, and identifying when they changed, you can gain insight into issues that occur or learn why a device or computer entered BitLocker recovery mode. The Measured Boot logs record PCR changes and other information. These logs are located in the C:\\Windows\\Logs\\MeasuredBoot\\ folder.
 
@@ -25,7 +25,7 @@ This article describes tools that you can use to decode these logs: TBSLogGenera
 
 For more information about Measured Boot and PCRs, see the following articles:
 
-- [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
+- [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)
 - [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
 ## Use TBSLogGenerator to decode Measured Boot logs
@@ -54,7 +54,7 @@ To install the tool, follow these steps:
 
 To use TBSLogGenerator, follow these steps:
 
-1. After the installation finishes, open an elevated Command Prompt window and navigate to the following folder:  
+1. After the installation finishes, open an elevated Command Prompt window and navigate to the following folder:
    **C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\NTTEST\\BASETEST\\ngscb**
 
    This folder contains the TBSLogGenerator.exe file.
@@ -100,7 +100,7 @@ To download and install PCPTool, go to the Toolkit page, select **Download**, an
 To decode a log, run the following command:
 ```cmd
 PCPTool.exe decodelog <LogFolderPath>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.xml
-```  
+```
 
 where the variables represent the following values:
 - \<*LogFolderPath*> = the path to the folder that contains the file to be decoded

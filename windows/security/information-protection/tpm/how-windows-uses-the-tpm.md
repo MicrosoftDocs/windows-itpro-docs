@@ -2,7 +2,7 @@
 title: How Windows uses the TPM
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it to enhance security.
 ms.assetid: 0f7e779c-bd25-42a8-b8c1-69dfb54d0c7f
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,7 +28,7 @@ The Windows 10 operating system improves most existing security features in the 
 
 - [TPM Fundamentals](tpm-fundamentals.md)
 
-- [TPM Recommendations](tpm-recommendations.md) 
+- [TPM Recommendations](tpm-recommendations.md)
 
 ## TPM Overview
 

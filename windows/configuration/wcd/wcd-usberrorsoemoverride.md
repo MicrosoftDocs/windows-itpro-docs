@@ -8,14 +8,14 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # UsbErrorsOEMOverride (reference)
 
 
-Allows an OEM to hide the USB option UI in Settings and all USB device errors. 
+Allows an OEM to hide the USB option UI in Settings and all USB device errors.
 
 
 ## Applies to

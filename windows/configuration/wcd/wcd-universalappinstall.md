@@ -8,14 +8,14 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # UniversalAppInstall (reference)
 
 
-Use UniversalAppInstall settings to install Windows apps from the Microsoft Store or a hosted location. 
+Use UniversalAppInstall settings to install Windows apps from the Microsoft Store or a hosted location.
 
 >[!NOTE]
 >You can only use the Windows provisioning settings and provisioning packages for apps where you have the available installation files, namely with sideloaded apps that have an offline license. [Learn more about offline app distribution.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
@@ -51,7 +51,7 @@ For more information on deployment options, see [DeploymentOptions Enum](https:/
 
 ## DeviceContextAppLicense
 
-Use to specify the license file for the provisioned app. 
+Use to specify the license file for the provisioned app.
 
 1. Specify a **LicenseProductId** for the app. You can find the license ID in the root header of the license file. Here is an example, `LicenseID="aaaaaaaa-dddd-8848-f8d0-7d6a93dfcccc"`. Enter it in the LicenseProductId field, and click **Add**.
 
@@ -67,7 +67,7 @@ Use to install an app from the Microsoft Store for Business.
 
 Setting | Description
 --- | ---
-Flags | Description not available at this time. 
+Flags | Description not available at this time.
 ProductID | Enter the product ID. [Learn how to find the product ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
 SkuID | Enter the SKU ID. [Learn how to find the SKU ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
 
@@ -88,7 +88,7 @@ LaunchAppAtLogin | - Do not launch app</br></br>- Launch app  | Select whether t
 
 ## UserContextAppLicense
 
-Use to specify the license file for the user context app. 
+Use to specify the license file for the user context app.
 
 1. Specify a **LicenseProductId** for the app. You can find the license ID in the root header of the license file. Here is an example, `LicenseID="aaaaaaaa-dddd-8848-f8d0-7d6a93dfcccc"`. Enter it in the LicenseProductId field, and click **Add**.
 

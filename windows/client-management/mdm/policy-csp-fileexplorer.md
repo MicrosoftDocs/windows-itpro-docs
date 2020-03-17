@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## FileExplorer policies  
+## FileExplorer policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="fileexplorer-turnoffdataexecutionpreventionforexplorer"></a>**FileExplorer/TurnOffDataExecutionPreventionForExplorer**  
+<a href="" id="fileexplorer-turnoffdataexecutionpreventionforexplorer"></a>**FileExplorer/TurnOffDataExecutionPreventionForExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -82,13 +82,13 @@ Disabling data execution prevention can allow certain legacy plug-in application
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Data Execution Prevention for Explorer*
 -   GP name: *NoDataExecutionPrevention*
 -   GP path: *File Explorer*
@@ -100,7 +100,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="fileexplorer-turnoffheapterminationoncorruption"></a>**FileExplorer/TurnOffHeapTerminationOnCorruption**  
+<a href="" id="fileexplorer-turnoffheapterminationoncorruption"></a>**FileExplorer/TurnOffHeapTerminationOnCorruption**
 
 <!--SupportedSKUs-->
 <table>
@@ -148,13 +148,13 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off heap termination on corruption*
 -   GP name: *NoHeapTerminationOnCorruption*
 -   GP path: *File Explorer*

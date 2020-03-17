@@ -1,7 +1,7 @@
 ---
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender ATP to track and regulate access to websites based on their content categories.
-keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -38,7 +38,7 @@ To summarize the benefits:
 
 ## User experience
 
-The blocking experience for Chrome/Firefox is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. 
+The blocking experience for Chrome/Firefox is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection.
 
 For a more user-friendly in-browser experience, consider using Edge.
 
@@ -48,7 +48,7 @@ Before trying out this feature, make sure you have the following:
 
 - Windows 10 Enterprise E5 license
 - Access to Microsoft Defender Security Center portal
-- Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update. 
+- Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 Note that if SmartScreen is not turned on, Network Protection will take over the blocking. This requires enabling Network Protection [on the device](enable-network-protection.md).
 
 ## Data handling
@@ -79,7 +79,7 @@ To add a new policy:
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
->ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy. 
+>ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
 
 ## Web content filtering cards and details
 

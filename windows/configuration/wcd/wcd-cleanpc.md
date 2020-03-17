@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -24,7 +24,7 @@ Use to remove user-installed and pre-installed applications, with the option to 
 | CleanPCRetainingUserData | X |    |  |  |  |
 | CleanPCWithoutRetainingUserData | X |    |  |  |  |
 
-For each setting, the options are **Enable** and **Not configured**. 
+For each setting, the options are **Enable** and **Not configured**.
 
 ## Related topics
 

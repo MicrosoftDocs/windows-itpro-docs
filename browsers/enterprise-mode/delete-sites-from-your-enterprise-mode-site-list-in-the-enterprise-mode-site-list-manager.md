@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 author: dansimp
 ms.prod: ie11
 ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
@@ -41,9 +41,9 @@ If you delete a site by mistake, you’ll need to manually add it back using the
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

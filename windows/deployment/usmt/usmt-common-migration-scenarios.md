@@ -2,7 +2,7 @@
 title: Common Migration Scenarios (Windows 10)
 description: See how the User State Migration Tool (USMT) 10.0 is used when planning hardware and/or operating system upgrades.
 ms.assetid: 1d8170d5-e775-4963-b7a5-b55e8987c1e4
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -47,11 +47,11 @@ One common scenario when only the operating system, and not the hardware, is bei
 
 The following diagram shows a PC-refresh migration, also known as a computer refresh migration. First, the administrator migrates the user state from a source computer to an intermediate store. After installing the operating system, the administrator migrates the user state back to the source computer.
 
- 
+
 
 ![usmt pc refresh scenario](images/dep-win8-l-usmt-pcrefresh.jpg)
 
- 
+
 
 ### <a href="" id="bkmk-onepcrefresh"></a>Scenario One: PC-refresh offline using Windows PE and a hard-link migration store
 
@@ -98,11 +98,11 @@ A company has decided to update the operating system on all of its computers to 
 
 The following diagram shows a PC-replacement migration. First, the administrator migrates the user state from the source computer to an intermediate store. After installing the operating system on the destination computer, the administrator migrates the user state from the store to the destination computer.
 
- 
+
 
 ![usmt pc replace scenario](images/dep-win8-l-usmt-pcreplace.jpg)
 
- 
+
 
 ### <a href="" id="bkmk-onepcreplace"></a>Scenario One: Offline migration using WinPE and an external migration store
 
@@ -145,9 +145,9 @@ A company is allocating 20 new computers to users in the accounting department.
 
 [Offline Migration Reference](offline-migration-reference.md)
 
- 
 
- 
+
+
 
 
 

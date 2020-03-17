@@ -5,7 +5,7 @@ description: Learn about what you need to do before you deploy your custom brows
 author: dansimp
 ms.prod: ie11
 ms.assetid: 2c66d22a-4a94-47cc-82ab-7274abe1dfd6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

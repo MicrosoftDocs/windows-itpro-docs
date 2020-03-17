@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## InternetExplorer policies  
+## InternetExplorer policies
 
 <dl>
   <dd>
@@ -787,7 +787,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**  
+<a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**
 
 <!--SupportedSKUs-->
 <table>
@@ -840,13 +840,13 @@ If you disable or do not configure this policy setting, the user can configure t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Add a specific list of search providers to the user's list of search providers*
 -   GP name: *AddSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -858,7 +858,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**  
+<a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**
 
 <!--SupportedSKUs-->
 <table>
@@ -911,13 +911,13 @@ If you disable or do not configure this policy setting, ActiveX Filtering is not
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on ActiveX Filtering*
 -   GP name: *TurnOnActiveXFiltering*
 -   GP path: *Windows Components/Internet Explorer*
@@ -929,7 +929,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**  
+<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**
 
 <!--SupportedSKUs-->
 <table>
@@ -988,13 +988,13 @@ If you disable this policy setting, the list is deleted. The 'Deny all add-ons u
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Add-on List*
 -   GP name: *AddonManagement_AddOnList*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -1006,7 +1006,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**  
+<a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**
 
 <!--SupportedSKUs-->
 <table>
@@ -1060,13 +1060,13 @@ If you do not configure this setting, the user has the freedom of turning on Aut
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on the auto-complete feature for user names and passwords on forms*
 -   GP name: *RestrictFormSuggestPW*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1078,7 +1078,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**  
+<a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**
 
 <!--SupportedSKUs-->
 <table>
@@ -1131,13 +1131,13 @@ If you disable or do not configure this policy setting, the user can choose whet
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on certificate address mismatch warning*
 -   GP name: *IZ_PolicyWarnCertMismatch*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1149,7 +1149,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**  
+<a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**
 
 <!--SupportedSKUs-->
 <table>
@@ -1206,13 +1206,13 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow deleting browsing history on exit*
 -   GP name: *DBHDisableDeleteOnExit*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -1224,7 +1224,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**  
+<a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -1279,13 +1279,13 @@ If you do not configure this policy, users will be able to turn on or turn off E
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Enhanced Protected Mode*
 -   GP name: *Advanced_EnableEnhancedProtectedMode*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -1297,7 +1297,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenhancedsuggestionsinaddressbar"></a>**InternetExplorer/AllowEnhancedSuggestionsInAddressBar**  
+<a href="" id="internetexplorer-allowenhancedsuggestionsinaddressbar"></a>**InternetExplorer/AllowEnhancedSuggestionsInAddressBar**
 
 <!--SupportedSKUs-->
 <table>
@@ -1352,13 +1352,13 @@ If you do not configure this policy setting, users can change the Suggestions se
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Microsoft services to provide enhanced suggestions as the user types in the Address bar*
 -   GP name: *AllowServicePoweredQSA*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1381,7 +1381,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**  
+<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**
 
 <!--SupportedSKUs-->
 <table>
@@ -1434,13 +1434,13 @@ If you disable or don't configure this policy setting, the menu option won't app
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Let users turn on and use Enterprise Mode from the Tools menu*
 -   GP name: *EnterpriseModeEnable*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1452,7 +1452,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**  
+<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**
 
 <!--SupportedSKUs-->
 <table>
@@ -1505,13 +1505,13 @@ If you disable or don't configure this policy setting, Internet Explorer opens a
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Use the Enterprise Mode IE website list*
 -   GP name: *EnterpriseModeSiteList*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1523,7 +1523,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**  
+<a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**
 
 <!--SupportedSKUs-->
 <table>
@@ -1577,13 +1577,13 @@ If you disable this policy, system defaults will be used.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow fallback to SSL 3.0 (Internet Explorer)*
 -   GP name: *Advanced_EnableSSL3Fallback*
 -   GP path: *Windows Components/Internet Explorer/Security Features*
@@ -1595,7 +1595,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**  
+<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**
 
 <!--SupportedSKUs-->
 <table>
@@ -1648,13 +1648,13 @@ If you disable or do not configure this policy setting, the user can add and rem
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Use Policy List of Internet Explorer 7 sites*
 -   GP name: *CompatView_UsePolicyList*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -1666,7 +1666,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**  
+<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -1721,13 +1721,13 @@ If you do not configure this policy setting, Internet Explorer uses an Internet 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Internet Explorer Standards Mode for local intranet*
 -   GP name: *CompatView_IntranetSites*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -1739,7 +1739,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**  
+<a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -1798,13 +1798,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Zone Template*
 -   GP name: *IZ_PolicyInternetZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1816,7 +1816,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**  
+<a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -1875,13 +1875,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Intranet Zone Template*
 -   GP name: *IZ_PolicyIntranetZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1893,7 +1893,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**  
+<a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -1952,13 +1952,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Local Machine Zone Template*
 -   GP name: *IZ_PolicyLocalMachineZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1970,7 +1970,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2029,13 +2029,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Locked-Down Internet Zone Template*
 -   GP name: *IZ_PolicyInternetZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2047,7 +2047,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2106,13 +2106,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Locked-Down Intranet Zone Template*
 -   GP name: *IZ_PolicyIntranetZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2124,7 +2124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2183,13 +2183,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Locked-Down Local Machine Zone Template*
 -   GP name: *IZ_PolicyLocalMachineZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2201,7 +2201,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2260,13 +2260,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Locked-Down Restricted Sites Zone Template*
 -   GP name: *IZ_PolicyRestrictedSitesZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2278,7 +2278,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**  
+<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**
 
 <!--SupportedSKUs-->
 <table>
@@ -2331,13 +2331,13 @@ If you disable or do not configure this policy setting, Internet Explorer does n
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Go to an intranet site for a one-word entry in the Address bar*
 -   GP name: *UseIntranetSiteForOneWordEntry*
 -   GP path: *Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing*
@@ -2349,7 +2349,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**  
+<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**
 
 <!--SupportedSKUs-->
 <table>
@@ -2413,13 +2413,13 @@ The list is a set of pairs of strings. Each string is separated by F000. Each pa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Site to Zone Assignment List*
 -   GP name: *IZ_Zonemaps*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2446,7 +2446,7 @@ ADMX Info:
   </SyncBody>
 ```
 
-Value and index pairs in the SyncML example:  
+Value and index pairs in the SyncML example:
 - http://adfs.contoso.org 1
 - https://microsoft.com 2
 
@@ -2456,7 +2456,7 @@ Value and index pairs in the SyncML example:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**  
+<a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**
 
 <!--SupportedSKUs-->
 <table>
@@ -2511,13 +2511,13 @@ If you do not configure this policy, users can choose to run or install files wi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow software to run or install even if the signature is invalid*
 -   GP name: *Advanced_InvalidSignatureBlock*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2529,7 +2529,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**  
+<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -2584,13 +2584,13 @@ If you do not configure this policy setting, the user can turn on and turn off t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Suggested Sites*
 -   GP name: *EnableSuggestedSites*
 -   GP path: *Windows Components/Internet Explorer*
@@ -2602,7 +2602,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2661,13 +2661,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Trusted Sites Zone Template*
 -   GP name: *IZ_PolicyTrustedSitesZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2679,7 +2679,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2738,13 +2738,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Locked-Down Trusted Sites Zone Template*
 -   GP name: *IZ_PolicyTrustedSitesZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2756,7 +2756,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2815,13 +2815,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Restricted Sites Zone Template*
 -   GP name: *IZ_PolicyRestrictedSitesZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2833,7 +2833,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**  
+<a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**
 
 <!--SupportedSKUs-->
 <table>
@@ -2888,13 +2888,13 @@ If you do not configure this policy setting, Internet Explorer will not check se
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Check for server certificate revocation*
 -   GP name: *Advanced_CertificateRevocation*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2906,7 +2906,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**  
+<a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**
 
 <!--SupportedSKUs-->
 <table>
@@ -2961,13 +2961,13 @@ If you do not configure this policy, Internet Explorer will not check the digita
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Check for signatures on downloaded programs*
 -   GP name: *Advanced_DownloadSignatures*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2979,7 +2979,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**  
+<a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -3036,13 +3036,13 @@ If you do not configure this policy setting, Internet Explorer requires consiste
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_5*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Consistent Mime Handling*
@@ -3054,7 +3054,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**  
+<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**
 
 <!--SupportedSKUs-->
 <table>
@@ -3107,13 +3107,13 @@ If you disable or do not configure this setting, IE continues to download update
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off automatic download of the ActiveX VersionList*
 -   GP name: *VersionListAutomaticDownloadDisable*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -3121,7 +3121,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Enabled
 -   1 - Disabled (Default)
 <!--/SupportedValues-->
@@ -3136,7 +3136,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**  
+<a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**
 
 <!--SupportedSKUs-->
 <table>
@@ -3191,13 +3191,13 @@ Note that Adobe Flash can still be disabled through the "Add-on List" and "Deny 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects*
 -   GP name: *DisableFlashInIE*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -3209,7 +3209,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**  
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**
 
 <!--SupportedSKUs-->
 <table>
@@ -3262,13 +3262,13 @@ If you disable or do not configure this policy setting, the user can bypass Wind
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent bypassing SmartScreen Filter warnings*
 -   GP name: *DisableSafetyFilterOverride*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3280,7 +3280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**  
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -3333,13 +3333,13 @@ If you disable or do not configure this policy setting, the user can bypass Wind
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet*
 -   GP name: *DisableSafetyFilterOverrideForAppRepUnknown*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3351,7 +3351,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecompatview"></a>**InternetExplorer/DisableCompatView**  
+<a href="" id="internetexplorer-disablecompatview"></a>**InternetExplorer/DisableCompatView**
 
 <!--SupportedSKUs-->
 <table>
@@ -3404,13 +3404,13 @@ If you disable or do not configure this policy setting, the user can use the Com
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Compatibility View*
 -   GP name: *CompatView_DisableList*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -3418,7 +3418,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Disabled (Default)
 -   1 - Enabled
 <!--/SupportedValues-->
@@ -3433,7 +3433,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**  
+<a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**
 
 <!--SupportedSKUs-->
 <table>
@@ -3486,13 +3486,13 @@ If you disable or do not configure this policy setting, a user can set the numbe
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable "Configuring History"*
 -   GP name: *RestrictHistory*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -3504,7 +3504,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**  
+<a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**
 
 <!--SupportedSKUs-->
 <table>
@@ -3557,13 +3557,13 @@ If you disable or do not configure this policy setting, the crash detection feat
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Crash Detection*
 -   GP name: *AddonManagement_RestrictCrashDetection*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3575,7 +3575,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**  
+<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**
 
 <!--SupportedSKUs-->
 <table>
@@ -3630,13 +3630,13 @@ If you do not configure this policy setting, the user can choose to participate 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent participation in the Customer Experience Improvement Program*
 -   GP name: *SQM_DisableCEIP*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3648,7 +3648,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**  
+<a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**
 
 <!--SupportedSKUs-->
 <table>
@@ -3705,13 +3705,13 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent deleting websites that the user has visited*
 -   GP name: *DBHDisableDeleteHistory*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -3723,7 +3723,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**  
+<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**
 
 <!--SupportedSKUs-->
 <table>
@@ -3776,13 +3776,13 @@ If you disable or do not configure this policy setting, the user can set the Fee
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent downloading of enclosures*
 -   GP name: *Disable_Downloading_of_Enclosures*
 -   GP path: *Windows Components/RSS Feeds*
@@ -3794,7 +3794,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**  
+<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**
 
 <!--SupportedSKUs-->
 <table>
@@ -3849,13 +3849,13 @@ Note: SSL 2.0 is off by default and is no longer supported starting with Windows
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off encryption support*
 -   GP name: *Advanced_SetWinInetProtocols*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -3867,7 +3867,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablefeedsbackgroundsync"></a>**InternetExplorer/DisableFeedsBackgroundSync**  
+<a href="" id="internetexplorer-disablefeedsbackgroundsync"></a>**InternetExplorer/DisableFeedsBackgroundSync**
 
 <!--SupportedSKUs-->
 <table>
@@ -3920,13 +3920,13 @@ If you disable or do not configure this policy setting, the user can synchronize
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off background synchronization for feeds and Web Slices*
 -   GP name: *Disable_Background_Syncing*
 -   GP path: *Windows Components/RSS Feeds*
@@ -3934,7 +3934,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Enabled (Default)
 -   1 - Disabled
 <!--/SupportedValues-->
@@ -3949,7 +3949,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**  
+<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**
 
 <!--SupportedSKUs-->
 <table>
@@ -4006,13 +4006,13 @@ If you disable or do not configure this policy setting, Internet Explorer may ru
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent running First Run wizard*
 -   GP name: *NoFirstRunCustomise*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4024,7 +4024,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**  
+<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**
 
 <!--SupportedSKUs-->
 <table>
@@ -4081,13 +4081,13 @@ If you don't configure this setting, users can turn this behavior on or off, usi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off the flip ahead with page prediction feature*
 -   GP name: *Advanced_DisableFlipAhead*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -4099,7 +4099,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablegeolocation"></a>**InternetExplorer/DisableGeolocation**  
+<a href="" id="internetexplorer-disablegeolocation"></a>**InternetExplorer/DisableGeolocation**
 
 <!--SupportedSKUs-->
 <table>
@@ -4154,13 +4154,13 @@ If you do not configure this policy setting, browser geolocation support can be 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off browser geolocation*
 -   GP name: *GeolocationDisable*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4168,7 +4168,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Disabled (Default)
 -   1 - Enabled
 <!--/SupportedValues-->
@@ -4183,7 +4183,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**  
+<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**
 
 <!--SupportedSKUs-->
 <table>
@@ -4235,13 +4235,13 @@ If you disable or do not configure this policy setting, the Home page box is ena
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable changing home page settings*
 -   GP name: *RestrictHomePage*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4253,7 +4253,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**  
+<a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**
 
 <!--SupportedSKUs-->
 <table>
@@ -4306,13 +4306,13 @@ If you disable or do not configure this policy setting, the user can choose to i
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent ignoring certificate errors*
 -   GP name: *NoCertError*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel*
@@ -4324,7 +4324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**  
+<a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**
 
 <!--SupportedSKUs-->
 <table>
@@ -4381,13 +4381,13 @@ If you do not configure this policy setting, InPrivate Browsing can be turned on
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off InPrivate Browsing*
 -   GP name: *DisableInPrivateBrowsing*
 -   GP path: *Windows Components/Internet Explorer/Privacy*
@@ -4399,7 +4399,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**  
+<a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -4456,13 +4456,13 @@ If you don't configure this policy setting, users can turn this feature on or of
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows*
 -   GP name: *Advanced_EnableEnhancedProtectedMode64Bit*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -4474,7 +4474,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**  
+<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**
 
 <!--SupportedSKUs-->
 <table>
@@ -4527,13 +4527,13 @@ If you disable or do not configure this policy setting, the user can configure p
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent changing proxy settings*
 -   GP name: *RestrictProxy*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4545,7 +4545,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**  
+<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**
 
 <!--SupportedSKUs-->
 <table>
@@ -4598,13 +4598,13 @@ If you disable or do not configure this policy setting, the user can change the 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent changing the default search provider*
 -   GP name: *NoSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4616,7 +4616,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**  
+<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**
 
 <!--SupportedSKUs-->
 <table>
@@ -4671,13 +4671,13 @@ Note: If the “Disable Changing Home Page Settings” policy is enabled, the us
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable changing secondary home page settings*
 -   GP name: *SecondaryHomePages*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4689,7 +4689,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**  
+<a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**
 
 <!--SupportedSKUs-->
 <table>
@@ -4742,13 +4742,13 @@ If you disable or do not configure this policy setting, the feature is turned on
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off the Security Settings Check feature*
 -   GP name: *Disable_Security_Settings_Check*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4760,7 +4760,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**  
+<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**
 
 <!--SupportedSKUs-->
 <table>
@@ -4814,13 +4814,13 @@ This policy is intended to help the administrator maintain version control for I
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable Periodic Check for Internet Explorer software updates*
 -   GP name: *NoUpdateCheck*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4832,7 +4832,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablewebaddressautocomplete"></a>**InternetExplorer/DisableWebAddressAutoComplete**  
+<a href="" id="internetexplorer-disablewebaddressautocomplete"></a>**InternetExplorer/DisableWebAddressAutoComplete**
 
 <!--SupportedSKUs-->
 <table>
@@ -4887,13 +4887,13 @@ If you do not configure this policy setting, users can choose to turn the auto-c
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off the auto-complete feature for web addresses*
 -   GP name: *RestrictWebAddressSuggest*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4901,7 +4901,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   yes - Disabled (Default)
 -   no  - Enabled
 <!--/SupportedValues-->
@@ -4916,7 +4916,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**  
+<a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -4973,13 +4973,13 @@ If you disable or do not configure this policy setting, Internet Explorer notifi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not allow ActiveX controls to run in Protected Mode when Enhanced Protected Mode is enabled*
 -   GP name: *Advanced_DisableEPMCompat*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -4991,7 +4991,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**  
+<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -5049,13 +5049,13 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Security Zones: Do not allow users to add/delete sites*
 -   GP name: *Security_zones_map_edit*
 -   GP path: *Windows Components/Internet Explorer*
@@ -5067,7 +5067,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**  
+<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**
 
 <!--SupportedSKUs-->
 <table>
@@ -5125,13 +5125,13 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Security Zones: Do not allow users to change policies*
 -   GP name: *Security_options_edit*
 -   GP path: *Windows Components/Internet Explorer*
@@ -5143,7 +5143,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**  
+<a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -5198,13 +5198,13 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off blocking of outdated ActiveX controls for Internet Explorer*
 -   GP name: *VerMgmtDisable*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -5216,7 +5216,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**  
+<a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**
 
 <!--SupportedSKUs-->
 <table>
@@ -5275,13 +5275,13 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off blocking of outdated ActiveX controls for Internet Explorer on specific domains*
 -   GP name: *VerMgmtDomainAllowlist*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -5293,7 +5293,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**  
+<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -5348,13 +5348,13 @@ If you do not configure this policy setting, users choose whether to force local
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Intranet Sites: Include all local (intranet) sites not listed in other zones*
 -   GP name: *IZ_IncludeUnspecifiedLocalSites*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -5366,7 +5366,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**  
+<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**
 
 <!--SupportedSKUs-->
 <table>
@@ -5421,13 +5421,13 @@ If you do not configure this policy setting, users choose whether network paths 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Intranet Sites: Include all network paths (UNCs)*
 -   GP name: *IZ_UNCAsIntranet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -5439,7 +5439,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -5494,13 +5494,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5512,7 +5512,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -5567,13 +5567,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5585,7 +5585,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -5638,13 +5638,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5656,7 +5656,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**  
+<a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**
 
 <!--SupportedSKUs-->
 <table>
@@ -5713,13 +5713,13 @@ If you do not configure this policy setting, a script can perform a clipboard op
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow cut, copy or paste operations from the clipboard via script*
 -   GP name: *IZ_PolicyAllowPasteViaScript_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5731,7 +5731,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**  
+<a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -5786,13 +5786,13 @@ If you do not configure this policy setting, users can drag files or copy and pa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow drag and drop or copy and paste files*
 -   GP name: *IZ_PolicyDropOrPasteFiles_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5804,7 +5804,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -5859,13 +5859,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5877,7 +5877,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -5932,13 +5932,13 @@ If you do not configure this policy setting, Web sites from less privileged zone
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5950,7 +5950,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**  
+<a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -6005,13 +6005,13 @@ If you do not configure this policy setting, the user can decide whether to load
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow loading of XAML files*
 -   GP name: *IZ_Policy_XAML_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6023,7 +6023,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -6078,13 +6078,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6096,7 +6096,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
+<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -6149,13 +6149,13 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow only approved domains to use ActiveX controls without prompt*
 -   GP name: *IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6167,7 +6167,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
+<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**
 
 <!--SupportedSKUs-->
 <table>
@@ -6220,13 +6220,13 @@ If you disable this policy setting, the TDC Active X control will run from all s
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow only approved domains to use the TDC ActiveX control*
 -   GP name: *IZ_PolicyAllowTDCControl_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6238,7 +6238,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**  
+<a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -6293,13 +6293,13 @@ If you do not configure this policy setting, the possible harmful actions contai
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow script-initiated windows without size or position constraints*
 -   GP name: *IZ_PolicyWindowsRestrictionsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6311,7 +6311,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
+<a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -6366,13 +6366,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scripting of Internet Explorer WebBrowser controls*
 -   GP name: *IZ_Policy_WebBrowserControl_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6384,7 +6384,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -6439,13 +6439,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6457,7 +6457,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -6514,13 +6514,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6532,7 +6532,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**  
+<a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**
 
 <!--SupportedSKUs-->
 <table>
@@ -6585,13 +6585,13 @@ If you disable or do not configure this policy setting, script is not allowed to
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow updates to status bar via script*
 -   GP name: *IZ_Policy_ScriptStatusBar_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6603,7 +6603,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -6658,13 +6658,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6676,7 +6676,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer**  
+<a href="" id="internetexplorer-internetzoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -6733,13 +6733,13 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow VBScript to run in Internet Explorer*
 -   GP name: *IZ_PolicyAllowVBScript_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6751,7 +6751,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -6806,13 +6806,13 @@ If you don't configure this policy setting, Internet Explorer always checks with
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6824,7 +6824,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**  
+<a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -6879,13 +6879,13 @@ If you do not configure this policy setting, users are queried whether to downlo
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Download signed ActiveX controls*
 -   GP name: *IZ_PolicyDownloadSignedActiveX_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6897,7 +6897,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**  
+<a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -6952,13 +6952,13 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Download unsigned ActiveX controls*
 -   GP name: *IZ_PolicyDownloadUnsignedActiveX_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6970,7 +6970,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**  
+<a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**
 
 <!--SupportedSKUs-->
 <table>
@@ -7023,13 +7023,13 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Cross-Site Scripting Filter*
 -   GP name: *IZ_PolicyTurnOnXSSFilter_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7041,7 +7041,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
+<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -7098,13 +7098,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable dragging of content from different domains across windows*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7116,7 +7116,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
+<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -7173,13 +7173,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable dragging of content from different domains within a window*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7191,7 +7191,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**  
+<a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**
 
 <!--SupportedSKUs-->
 <table>
@@ -7246,13 +7246,13 @@ If you do not configure this policy setting, the MIME Sniffing Safety Feature wi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable MIME Sniffing*
 -   GP name: *IZ_PolicyMimeSniffingURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7264,7 +7264,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**  
+<a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -7319,13 +7319,13 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Protected Mode*
 -   GP name: *IZ_Policy_TurnOnProtectedMode_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7337,7 +7337,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**  
+<a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**
 
 <!--SupportedSKUs-->
 <table>
@@ -7392,13 +7392,13 @@ If you do not configure this policy setting, the user can choose whether path in
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Include local path when user is uploading files to a server*
 -   GP name: *IZ_Policy_LocalPathForUpload_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7410,7 +7410,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -7467,13 +7467,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7485,7 +7485,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
+<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**
 
 <!--SupportedSKUs-->
 <table>
@@ -7526,7 +7526,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**  
+<a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -7587,13 +7587,13 @@ If you do not configure this policy setting, the permission is set to High Safet
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7605,7 +7605,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**  
+<a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**
 
 <!--SupportedSKUs-->
 <table>
@@ -7660,13 +7660,13 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Launching applications and files in an IFRAME*
 -   GP name: *IZ_PolicyLaunchAppsAndFilesInIFRAME_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7678,7 +7678,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**  
+<a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**
 
 <!--SupportedSKUs-->
 <table>
@@ -7741,13 +7741,13 @@ If you do not configure this policy setting, logon is set to Automatic logon onl
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Logon options*
 -   GP name: *IZ_PolicyLogon_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7759,7 +7759,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -7814,13 +7814,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7832,7 +7832,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
+<a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**
 
 <!--SupportedSKUs-->
 <table>
@@ -7887,13 +7887,13 @@ If you do not configure this policy setting, Internet Explorer will execute sign
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components signed with Authenticode*
 -   GP name: *IZ_PolicySignedFrameworkComponentsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7905,7 +7905,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
+<a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -7960,13 +7960,13 @@ If you do not configure this policy setting, the user can configure how the comp
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Show security warning for potentially unsafe files*
 -   GP name: *IZ_Policy_UnsafeFiles_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -7978,7 +7978,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**  
+<a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**
 
 <!--SupportedSKUs-->
 <table>
@@ -8033,13 +8033,13 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Use Pop-up Blocker*
 -   GP name: *IZ_PolicyBlockPopupWindows_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -8051,7 +8051,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -8106,13 +8106,13 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8124,7 +8124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -8179,13 +8179,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8197,7 +8197,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -8250,13 +8250,13 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8268,7 +8268,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -8323,13 +8323,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8341,7 +8341,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -8396,13 +8396,13 @@ If you do not configure this policy setting, Web sites from less privileged zone
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8414,7 +8414,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -8469,13 +8469,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8487,7 +8487,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -8542,13 +8542,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8560,7 +8560,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -8617,13 +8617,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8635,7 +8635,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -8690,13 +8690,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8708,7 +8708,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -8763,13 +8763,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8781,7 +8781,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -8838,13 +8838,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8856,7 +8856,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**  
+<a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -8917,13 +8917,13 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -8935,7 +8935,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -8990,13 +8990,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -9008,7 +9008,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -9063,13 +9063,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9081,7 +9081,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -9136,13 +9136,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9154,7 +9154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -9207,13 +9207,13 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9225,7 +9225,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -9280,13 +9280,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9298,7 +9298,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -9353,13 +9353,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9371,7 +9371,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -9426,13 +9426,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9444,7 +9444,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**  
+<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -9499,13 +9499,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9517,7 +9517,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -9574,13 +9574,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9592,7 +9592,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -9647,13 +9647,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9665,7 +9665,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -9720,13 +9720,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9738,7 +9738,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -9795,13 +9795,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9813,7 +9813,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**  
+<a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -9874,13 +9874,13 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9892,7 +9892,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -9947,13 +9947,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -9965,7 +9965,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -10020,13 +10020,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10038,7 +10038,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -10093,13 +10093,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10111,7 +10111,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -10164,13 +10164,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10182,7 +10182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -10237,13 +10237,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10255,7 +10255,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -10310,13 +10310,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10328,7 +10328,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -10383,13 +10383,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10401,7 +10401,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -10456,13 +10456,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10474,7 +10474,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -10531,13 +10531,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10549,7 +10549,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -10604,13 +10604,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10622,7 +10622,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -10679,13 +10679,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10697,7 +10697,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -10758,13 +10758,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10776,7 +10776,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -10831,13 +10831,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -10849,7 +10849,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetjavapermissions"></a>**InternetExplorer/LockedDownIntranetJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownintranetjavapermissions"></a>**InternetExplorer/LockedDownIntranetJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -10910,13 +10910,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -10928,7 +10928,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -10983,13 +10983,13 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11001,7 +11001,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -11056,13 +11056,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11074,7 +11074,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -11127,13 +11127,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11145,7 +11145,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -11200,13 +11200,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11218,7 +11218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -11273,13 +11273,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11291,7 +11291,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -11346,13 +11346,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11364,7 +11364,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -11419,13 +11419,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11437,7 +11437,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -11494,13 +11494,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11512,7 +11512,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -11567,13 +11567,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11585,7 +11585,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -11642,13 +11642,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11660,7 +11660,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -11715,13 +11715,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -11733,7 +11733,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -11788,13 +11788,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -11806,7 +11806,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -11861,13 +11861,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -11879,7 +11879,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -11932,13 +11932,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -11950,7 +11950,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -12005,13 +12005,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12023,7 +12023,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -12078,13 +12078,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12096,7 +12096,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -12151,13 +12151,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12169,7 +12169,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -12224,13 +12224,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12242,7 +12242,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -12299,13 +12299,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12317,7 +12317,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -12372,13 +12372,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12390,7 +12390,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -12447,13 +12447,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12465,7 +12465,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -12526,13 +12526,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12544,7 +12544,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -12599,13 +12599,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -12617,7 +12617,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -12672,13 +12672,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -12690,7 +12690,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -12745,13 +12745,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -12763,7 +12763,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -12816,13 +12816,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -12834,7 +12834,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -12889,13 +12889,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -12907,7 +12907,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -12962,13 +12962,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -12980,7 +12980,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -13035,13 +13035,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13053,7 +13053,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -13108,13 +13108,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13126,7 +13126,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -13183,13 +13183,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13201,7 +13201,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -13256,13 +13256,13 @@ If you do not configure this policy setting, users cannot preserve information i
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13274,7 +13274,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -13331,13 +13331,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13349,7 +13349,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -13410,13 +13410,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13428,7 +13428,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -13483,13 +13483,13 @@ If you do not configure this policy setting, users cannot open other windows and
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -13501,7 +13501,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -13556,13 +13556,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13574,7 +13574,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -13629,13 +13629,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13647,7 +13647,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -13700,13 +13700,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13718,7 +13718,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -13773,13 +13773,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13791,7 +13791,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -13846,13 +13846,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13864,7 +13864,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -13919,13 +13919,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -13937,7 +13937,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -13992,13 +13992,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14010,7 +14010,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -14067,13 +14067,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14085,7 +14085,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -14140,13 +14140,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14158,7 +14158,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -14215,13 +14215,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14233,7 +14233,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -14294,13 +14294,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14312,7 +14312,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -14367,13 +14367,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -14385,7 +14385,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**  
+<a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -14440,13 +14440,13 @@ If you do not configure this policy setting, the MK Protocol is prevented for Fi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_3*
 -   GP path: *Windows Components/Internet Explorer/Security Features/MK Protocol Security Restriction*
@@ -14458,7 +14458,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**  
+<a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -14513,13 +14513,13 @@ If you do not configure this policy setting, MIME sniffing will never promote a 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_6*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Mime Sniffing Safety Feature*
@@ -14531,7 +14531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-newtabdefaultpage"></a>**InternetExplorer/NewTabDefaultPage**  
+<a href="" id="internetexplorer-newtabdefaultpage"></a>**InternetExplorer/NewTabDefaultPage**
 
 <!--SupportedSKUs-->
 <table>
@@ -14584,13 +14584,13 @@ If you disable or do not configure this policy setting, users can select their p
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify default behavior for a new tab*
 -   GP name: *NewTabAction*
 -   GP path: *Windows Components/Internet Explorer*
@@ -14599,7 +14599,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--SupportedValues-->
 
-Supported values:  
+Supported values:
 -   0 - NewTab_AboutBlank (about:blank)
 -   1 - NewTab_Homepage (Home page)
 -   2 - NewTab_AboutTabs (New tab page)
@@ -14616,7 +14616,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**  
+<a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -14671,13 +14671,13 @@ If you do not configure this policy setting, the Notification bar will be displa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_10*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Notification bar*
@@ -14689,7 +14689,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**  
+<a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**
 
 <!--SupportedSKUs-->
 <table>
@@ -14742,13 +14742,13 @@ If you disable or do not configure this policy setting, the user is prompted to 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent managing SmartScreen Filter*
 -   GP name: *Disable_Managing_Safety_Filter_IE9*
 -   GP path: *Windows Components/Internet Explorer*
@@ -14760,7 +14760,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**  
+<a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -14813,13 +14813,13 @@ If you disable or do not configure this policy setting, ActiveX controls can be 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent per-user installation of ActiveX controls*
 -   GP name: *DisablePerUserActiveXInstall*
 -   GP path: *Windows Components/Internet Explorer*
@@ -14831,7 +14831,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**  
+<a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -14886,13 +14886,13 @@ If you do not configure this policy setting, any zone can be protected from zone
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_9*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Protection From Zone Elevation*
@@ -14904,7 +14904,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**  
+<a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -14959,13 +14959,13 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -14977,7 +14977,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**  
+<a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -15032,13 +15032,13 @@ If you do not configure this policy setting, the user's preference will be used 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_11*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict ActiveX Install*
@@ -15050,7 +15050,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**  
+<a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -15105,13 +15105,13 @@ If you do not configure this policy setting, the user's preference determines wh
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_12*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict File Download*
@@ -15123,7 +15123,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -15178,13 +15178,13 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15196,7 +15196,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**
 
 <!--SupportedSKUs-->
 <table>
@@ -15251,13 +15251,13 @@ If you do not configure this policy setting, script code on pages in the zone is
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow active scripting*
 -   GP name: *IZ_PolicyActiveScripting_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15269,7 +15269,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -15324,13 +15324,13 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15342,7 +15342,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -15395,13 +15395,13 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15413,7 +15413,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**
 
 <!--SupportedSKUs-->
 <table>
@@ -15468,13 +15468,13 @@ If you do not configure this policy setting, binary and script behaviors are not
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow binary and script behaviors*
 -   GP name: *IZ_PolicyBinaryBehaviors_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15486,7 +15486,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**
 
 <!--SupportedSKUs-->
 <table>
@@ -15543,13 +15543,13 @@ If you do not configure this policy setting, a script cannot perform a clipboard
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow cut, copy or paste operations from the clipboard via script*
 -   GP name: *IZ_PolicyAllowPasteViaScript_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15561,7 +15561,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -15616,13 +15616,13 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow drag and drop or copy and paste files*
 -   GP name: *IZ_PolicyDropOrPasteFiles_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15634,7 +15634,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -15689,13 +15689,13 @@ If you do not configure this policy setting, files are prevented from being down
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow file downloads*
 -   GP name: *IZ_PolicyFileDownload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15707,7 +15707,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -15762,13 +15762,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15780,7 +15780,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -15835,13 +15835,13 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15853,7 +15853,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -15908,13 +15908,13 @@ If you do not configure this policy setting, the user can decide whether to load
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow loading of XAML files*
 -   GP name: *IZ_Policy_XAML_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15926,7 +15926,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**
 
 <!--SupportedSKUs-->
 <table>
@@ -15981,13 +15981,13 @@ If you do not configure this policy setting, a user's browser that loads a page 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow META REFRESH*
 -   GP name: *IZ_PolicyAllowMETAREFRESH_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -15999,7 +15999,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -16054,13 +16054,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16072,7 +16072,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -16125,13 +16125,13 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow only approved domains to use ActiveX controls without prompt*
 -   GP name: *IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16143,7 +16143,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**
 
 <!--SupportedSKUs-->
 <table>
@@ -16196,13 +16196,13 @@ If you disable this policy setting, the TDC Active X control will run from all s
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow only approved domains to use the TDC ActiveX control*
 -   GP name: *IZ_PolicyAllowTDCControl_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16214,7 +16214,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -16269,13 +16269,13 @@ If you do not configure this policy setting, the possible harmful actions contai
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow script-initiated windows without size or position constraints*
 -   GP name: *IZ_PolicyWindowsRestrictionsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16287,7 +16287,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -16342,13 +16342,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scripting of Internet Explorer WebBrowser controls*
 -   GP name: *IZ_Policy_WebBrowserControl_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16360,7 +16360,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -16415,13 +16415,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16433,7 +16433,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -16490,13 +16490,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16508,7 +16508,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**
 
 <!--SupportedSKUs-->
 <table>
@@ -16561,13 +16561,13 @@ If you disable or do not configure this policy setting, script is not allowed to
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow updates to status bar via script*
 -   GP name: *IZ_Policy_ScriptStatusBar_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16579,7 +16579,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -16634,13 +16634,13 @@ If you do not configure this policy setting, users cannot preserve information i
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16652,7 +16652,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -16709,13 +16709,13 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow VBScript to run in Internet Explorer*
 -   GP name: *IZ_PolicyAllowVBScript_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16727,7 +16727,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -16782,13 +16782,13 @@ If you don't configure this policy setting, Internet Explorer always checks with
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16800,7 +16800,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -16855,13 +16855,13 @@ If you do not configure this policy setting, signed controls cannot be downloade
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Download signed ActiveX controls*
 -   GP name: *IZ_PolicyDownloadSignedActiveX_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16873,7 +16873,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -16928,13 +16928,13 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Download unsigned ActiveX controls*
 -   GP name: *IZ_PolicyDownloadUnsignedActiveX_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -16946,7 +16946,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**  
+<a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**
 
 <!--SupportedSKUs-->
 <table>
@@ -16999,13 +16999,13 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Cross-Site Scripting Filter*
 -   GP name: *IZ_PolicyTurnOnXSSFilter_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17017,7 +17017,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -17074,13 +17074,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable dragging of content from different domains across windows*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17092,7 +17092,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**
 
 <!--SupportedSKUs-->
 <table>
@@ -17149,13 +17149,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable dragging of content from different domains within a window*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17167,7 +17167,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**  
+<a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**
 
 <!--SupportedSKUs-->
 <table>
@@ -17222,13 +17222,13 @@ If you do not configure this policy setting, the actions that may be harmful can
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable MIME Sniffing*
 -   GP name: *IZ_PolicyMimeSniffingURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17240,7 +17240,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**  
+<a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**
 
 <!--SupportedSKUs-->
 <table>
@@ -17295,13 +17295,13 @@ If you do not configure this policy setting, the user can choose whether path in
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Include local path when user is uploading files to a server*
 -   GP name: *IZ_Policy_LocalPathForUpload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17313,7 +17313,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -17370,13 +17370,13 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17388,7 +17388,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -17449,13 +17449,13 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17467,7 +17467,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**  
+<a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**
 
 <!--SupportedSKUs-->
 <table>
@@ -17522,13 +17522,13 @@ If you do not configure this policy setting, users are prevented from running ap
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Launching applications and files in an IFRAME*
 -   GP name: *IZ_PolicyLaunchAppsAndFilesInIFRAME_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17540,7 +17540,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**  
+<a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**
 
 <!--SupportedSKUs-->
 <table>
@@ -17603,13 +17603,13 @@ If you do not configure this policy setting, logon is set to Prompt for username
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Logon options*
 -   GP name: *IZ_PolicyLogon_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17621,7 +17621,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -17676,13 +17676,13 @@ If you do not configure this policy setting, users cannot open other windows and
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17694,7 +17694,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**  
+<a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**
 
 <!--SupportedSKUs-->
 <table>
@@ -17751,13 +17751,13 @@ If you do not configure this policy setting, controls and plug-ins are prevented
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run ActiveX controls and plugins*
 -   GP name: *IZ_PolicyRunActiveXControls_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17769,7 +17769,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
+<a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**
 
 <!--SupportedSKUs-->
 <table>
@@ -17824,13 +17824,13 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components signed with Authenticode*
 -   GP name: *IZ_PolicySignedFrameworkComponentsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17842,7 +17842,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**  
+<a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**
 
 <!--SupportedSKUs-->
 <table>
@@ -17899,13 +17899,13 @@ If you do not configure this policy setting, script interaction is prevented fro
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Script ActiveX controls marked safe for scripting*
 -   GP name: *IZ_PolicyScriptActiveXMarkedSafe_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17917,7 +17917,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**  
+<a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**
 
 <!--SupportedSKUs-->
 <table>
@@ -17974,13 +17974,13 @@ If you do not configure this policy setting, scripts are prevented from accessin
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Scripting of Java applets*
 -   GP name: *IZ_PolicyScriptingOfJavaApplets_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -17992,7 +17992,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -18047,13 +18047,13 @@ If you do not configure this policy setting, the user can configure how the comp
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Show security warning for potentially unsafe files*
 -   GP name: *IZ_Policy_UnsafeFiles_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -18065,7 +18065,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**  
+<a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -18120,13 +18120,13 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on Protected Mode*
 -   GP name: *IZ_Policy_TurnOnProtectedMode_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -18138,7 +18138,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**  
+<a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**
 
 <!--SupportedSKUs-->
 <table>
@@ -18193,13 +18193,13 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Use Pop-up Blocker*
 -   GP name: *IZ_PolicyBlockPopupWindows_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -18211,7 +18211,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**  
+<a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -18266,13 +18266,13 @@ If you do not configure this policy setting, popup windows and other restriction
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_8*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Scripted Window Security Restrictions*
@@ -18284,7 +18284,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**  
+<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**
 
 <!--SupportedSKUs-->
 <table>
@@ -18337,13 +18337,13 @@ If you disable or do not configure this policy setting, the user can configure h
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Restrict search providers to a specific list*
 -   GP name: *SpecificSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -18355,7 +18355,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**  
+<a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -18411,13 +18411,13 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Security Zones: Use only machine settings*
 -   GP name: *Security_HKLM_only*
 -   GP path: *Windows Components/Internet Explorer*
@@ -18429,7 +18429,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**  
+<a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**
 
 <!--SupportedSKUs-->
 <table>
@@ -18482,13 +18482,13 @@ If you disable or do not configure this policy setting, ActiveX controls, includ
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify use of ActiveX Installer Service for installation of ActiveX controls*
 -   GP name: *OnlyUseAXISForActiveXInstall*
 -   GP path: *Windows Components/Internet Explorer*
@@ -18500,7 +18500,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -18555,13 +18555,13 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18573,7 +18573,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -18628,13 +18628,13 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18646,7 +18646,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -18699,13 +18699,13 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18717,7 +18717,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -18772,13 +18772,13 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18790,7 +18790,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 <table>
@@ -18845,13 +18845,13 @@ If you do not configure this policy setting, a warning is issued to the user tha
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18863,7 +18863,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 <table>
@@ -18918,13 +18918,13 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -18936,7 +18936,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 <table>
@@ -18991,13 +18991,13 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19009,7 +19009,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 <table>
@@ -19066,13 +19066,13 @@ Note: In Internet Explorer 7, this policy setting controls whether Phishing Filt
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19084,7 +19084,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 <table>
@@ -19139,13 +19139,13 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19157,7 +19157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -19212,13 +19212,13 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19230,7 +19230,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 <table>
@@ -19287,13 +19287,13 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19305,7 +19305,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 <table>
@@ -19366,13 +19366,13 @@ If you do not configure this policy setting, the permission is set to Low Safety
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -19384,7 +19384,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 <table>
@@ -19439,13 +19439,13 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*

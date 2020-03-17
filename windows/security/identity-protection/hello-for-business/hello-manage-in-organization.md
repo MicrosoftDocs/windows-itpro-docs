@@ -2,7 +2,7 @@
 title: Manage Windows Hello in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
-ms.reviewer: 
+ms.reviewer:
 keywords: identity, PIN, biometric, Hello
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -371,7 +371,7 @@ Windows Hello for Business is designed to be managed by Group Policy or MDM but 
 
 Policies for Windows Hello for Business are enforced using the following hierarchy: User Group Policy > Computer Group Policy > User MDM > Device MDM > Device Lock policy. All PIN complexity policies are grouped together and enforced from a single policy source.
 
-Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies is enforced on a per policy basis.  
+Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies is enforced on a per policy basis.
 
 >[!NOTE]
 > Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
@@ -406,7 +406,7 @@ Use a hardware security device and RequireSecurityDevice enforcement are also gr
 There are three scenarios for using Windows Hello for Business in Azure AD–only organizations:
 
 - **Organizations that use the version of Azure AD included with Office 365**. For these organizations, no additional work is necessary. When Windows 10 was released to general availability, Microsoft changed the behavior of the Office 365 Azure AD stack. When a user selects the option to join a work or school network, the device is automatically joined to the Office 365 tenant's directory partition, a certificate is issued for the device, and it becomes eligible for Office 365 MDM if the tenant has subscribed to that feature. In addition, the user will be prompted to log on and, if MFA is enabled, to enter an MFA proof that Azure AD sends to his or her phone.
-- **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won't be enabled unless and until the organization's administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
+- **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won't be enabled unless and until the organization's administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered.
 - **Organizations that have subscribed to Azure AD Premium** have access to the full set of Azure AD MDM features. These features include controls to manage Windows Hello for Business. You can set policies to disable or force the use of Windows Hello for Business, require the use of a TPM, and control the length and strength of PINs set on the device.
 
 If you want to use Windows Hello for Business with certificates, you'll need a device registration system. That means that you set up Configuration Manager, Microsoft Intune, or a compatible non-Microsoft MDM system and enable it to enroll devices. This is a prerequisite step to use Windows Hello for Business with certificates, no matter the IDP, because the enrollment system is responsible for provisioning the devices with the necessary certificates.

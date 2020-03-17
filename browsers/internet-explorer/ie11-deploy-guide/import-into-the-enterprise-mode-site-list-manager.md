@@ -6,7 +6,7 @@ description: If you need to replace your entire site list because of errors, or 
 author: dansimp
 ms.prod: ie11
 ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -28,7 +28,7 @@ ms.date: 07/27/2017
 
 If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.
 
-**Important**  
+**Important**
 Importing your file overwrites everything that’s currently in the tool, so make sure it’s what you really mean to do.
 
  **To import your compatibility list**
@@ -43,9 +43,9 @@ Importing your file overwrites everything that’s currently in the tool, so mak
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

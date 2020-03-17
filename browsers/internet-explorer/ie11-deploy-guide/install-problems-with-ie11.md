@@ -5,7 +5,7 @@ description: How to fix potential installation problems with Internet Explorer 1
 author: dansimp
 ms.prod: ie11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -54,9 +54,9 @@ If you get an error during the Windows Update process, see [Fix the problem with
 
 
 
- 
 
- 
+
+
 
 
 

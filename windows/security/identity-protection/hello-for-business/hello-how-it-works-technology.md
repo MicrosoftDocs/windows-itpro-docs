@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 10/08/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Technology and Terms
 
@@ -37,7 +37,7 @@ ms.reviewer:
 - [On-premises Deployment](#on-premises-deployment)
 - [Pass-through Authentication](#pass-through-authentication)
 - [Password Hash Synchronization](#password-hash-sync)
-- [Primary Refresh Token](#primary-refresh-token) 
+- [Primary Refresh Token](#primary-refresh-token)
 - [Storage Root Key](#storage-root-key)
 - [Trust Type](#trust-type)
 - [Trusted Platform Module](#trusted-platform-module)
@@ -75,7 +75,7 @@ Azure AD Join is intended for organizations that desire to be cloud-first or clo
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Azure AD Registered
-The goal of Azure AD registered devices is to provide you with support for the Bring Your Own Device (BYOD) scenario. In this scenario, a user can access your organization's Azure Active Directory controlled resources using a personal device. 
+The goal of Azure AD registered devices is to provide you with support for the Bring Your Own Device (BYOD) scenario. In this scenario, a user can access your organization's Azure Active Directory controlled resources using a personal device.
 ### Related topics
 [Azure AD Joined](#azure-ad-joined), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined), [Join Type](#join-type)
 
@@ -90,7 +90,7 @@ The certificate trust model uses a securely issued certificate based on the user
 ### Related topics
 [Deployment Type](#deployment-type), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined), [Hybrid Deployment](#hybrid-deployment), [Key Trust](#key-trust), [On-premises Deployment](#on-premises-deployment), [Trust Type](#trust-type)
 
-### More information 
+### More information
 - [Windows Hello for Business Planning Guide](hello-planning-guide.md)
 
 [Return to Top](hello-how-it-works-technology.md)
@@ -102,7 +102,7 @@ The Windows Hello for Business Cloud deployment is exclusively for organizations
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Cloud Experience Host
-In Windows 10, Cloud Experience Host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
+In Windows 10, Cloud Experience Host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC.
 
 ### Related topics
 [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
@@ -161,7 +161,7 @@ Primarily for large enterprise organizations with more complex authentication re
 ## Hybrid Azure AD Joined
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 - IT departments to manage work-owned devices from a central location.
-- Users to sign in to their devices with their Active Directory work or school accounts. 
+- Users to sign in to their devices with their Active Directory work or school accounts.
 Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use Microsoft Endpoint Configuration Manager or group policy (GP) to manage them.
 
 If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These are devices that are both, joined to your on-premises Active Directory and your Azure Active Directory.
@@ -177,7 +177,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that is synchronized with Azure Active Directory.  Hybrid deployments support devices that are Azure AD registered, Azure AD joined, and hybrid Azure AD joined.  The Hybrid deployment model supports two trust types for on-premises authentication, key trust and certificate trust.
 
 ### Related topics
-[Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined), 
+[Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined),
 
 ### More information
 - [Windows Hello for Business Planning Guide](hello-planning-guide.md)
@@ -210,13 +210,13 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Managed Environment
-Managed environments are for non-federated environments where Azure Active Directory manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services. 
+Managed environments are for non-federated environments where Azure Active Directory manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services.
 
 ### Related topics
 [Federated Environment](#federated-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Synchronization](#password-hash-sync)
 
 [Return to Top](#technology-and-terms)
-## On-premises Deployment 
+## On-premises Deployment
 The Windows Hello for Business on-premises deployment is for organizations that exclusively have on-premises resources that are accessed using Active Directory identities.  On-premises deployments support domain joined devices.  The on-premises deployment model supports two authentication trust types, key trust and certificate trust.
 
 ### Related topics
@@ -266,7 +266,7 @@ The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Trust type
-The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust.  The hybrid and on-premises deployment models support both trust types.  The trust type does not affect authentication to Azure Active Directory.  Windows Hello for Business authentication to Azure Active Directory always uses the key, not a certificate (excluding smart card authentication in a federated environment). 
+The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust.  The hybrid and on-premises deployment models support both trust types.  The trust type does not affect authentication to Azure Active Directory.  Windows Hello for Business authentication to Azure Active Directory always uses the key, not a certificate (excluding smart card authentication in a federated environment).
 
 ### Related topics
 [Certificate Trust](#certificate-trust), [Hybrid Deployment](#hybrid-deployment), [Key Trust](#key-trust), [On-premises Deployment](#on-premises-deployment)
@@ -287,7 +287,7 @@ A TPM implements controls that meet the specification described by the Trusted C
 
 Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-recommendations).
 
-Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
+Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0.
 
 TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 

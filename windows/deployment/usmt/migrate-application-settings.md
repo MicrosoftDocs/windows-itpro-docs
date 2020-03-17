@@ -2,7 +2,7 @@
 title: Migrate Application Settings (Windows 10)
 description: Migrate Application Settings
 ms.assetid: 28f70a83-0a3e-4a6b-968a-2b78ccd3cc07
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -75,19 +75,19 @@ Next, you should go through the user interface and make a list of all of the ava
 
 3.  Filter the output of the tools so it only displays changes being made by the application.
 
-    **Note**  
+    **Note**
     Most applications store their settings under the user profile. That is, the settings stored in the file system are under the %**UserProfile**% directory, and the settings stored in the registry are under the **HKEY\_CURRENT\_USER** hive. For these applications you can filter the output of the file and registry monitoring tools to show activity only under these locations. This will considerably reduce the amount of output that you will need to examine.
 
-     
+
 
 4.  Start the monitoring tool(s), change a setting, and look for registry and file system writes that occurred when you changed the setting. Make sure the changes you make actually take effect. For example, if you are changing a setting in Microsoft Word by selecting a check box in the **Options** dialog box, the change typically will not take effect until you close the dialog box by clicking **OK**.
 
 5.  When the setting is changed, note the changes to the file system and registry. There may be more than one file or registry values for each setting. You should identify the minimal set of file and registry changes that are required to change this setting. This set of files and registry keys is what you will need to migrate in order to migrate the setting.
 
-    **Note**  
+    **Note**
     Changing an application setting invariably leads to writing to registry keys. If possible, filter the output of the file and registry monitor tool to display only writes to files and registry keys/values.
 
-     
+
 
 ## <a href="" id="bkmk-step3"></a>Step 3: Identify how to apply the gathered settings.
 
@@ -117,15 +117,15 @@ We recommend that you migrate the settings after you install the application, bu
 
 After you have completed steps 1 through 3, you will need to create a custom migration .xml file that migrates the application based on the information that you now have. You can use the MigApp.xml file as a model because it contains examples of many of the concepts discussed in this topic. You can also see [Custom XML Examples](usmt-custom-xml-examples.md) for another sample .xml file.
 
-**Note**  
+**Note**
 We recommend that you create a separate .xml file instead of adding your script to the **MigApp.xml** file. This is because the **MigApp.xml** file is a very large file and it will be difficult to read and edit. In addition, if you reinstall USMT for some reason, the **MigApp.xml** file will be overwritten by the default version of the file and you will lose your customized version.
 
- 
 
-**Important**  
+
+**Important**
 Some applications store information in the user profile that should not be migrated (for example, application installation paths, the computer name, and so on). You should make sure to exclude these files and registry keys from the migration.
 
- 
+
 
 Your script should do the following:
 
@@ -163,9 +163,9 @@ To speed up the time it takes to collect and migrate the data, you can migrate o
 
 [Log Files](usmt-log-files.md)
 
- 
 
- 
+
+
 
 
 

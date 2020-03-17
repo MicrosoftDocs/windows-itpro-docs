@@ -2,7 +2,7 @@
 title: Deny log on as a batch job (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a batch job security policy setting.
 ms.assetid: 0ac36ebd-5e28-4b6a-9b4e-8924c6ecf44b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-This policy setting determines which accounts are prevented from logging on by using a batch-queue tool to schedule and start jobs automatically in the future. The ability to log on by using a batch-queue tool is needed for any account that is used to start scheduled jobs by means of the Task 
+This policy setting determines which accounts are prevented from logging on by using a batch-queue tool to schedule and start jobs automatically in the future. The ability to log on by using a batch-queue tool is needed for any account that is used to start scheduled jobs by means of the Task
 Scheduler.
 
 Constant: SeDenyBatchLogonRight
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined | 
-| Stand-Alone Server Default Settings | Not defined | 
-| Domain Controller Effective Default Settings | Not defined | 
-| Member Server Effective Default Settings | Not defined | 
-| Client Computer Effective Default Settings | Not defined | 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Not defined |
+| Domain Controller Effective Default Settings | Not defined |
+| Member Server Effective Default Settings | Not defined |
+| Client Computer Effective Default Settings | Not defined |
+
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.
@@ -73,7 +73,7 @@ This policy setting might conflict with and negate the **Log on as a batch job**
 
 On a domain-joined device, including the domain controller, this policy can be overwritten by a domain policy, which will prevent you from modifying the local policy setting.
 
-For example, if you are trying to configure Task Scheduler on your domain controller, check the Settings tab of your two domain controller policy and domain policy GPOs in the Group Policy Management Console (GPMC). Verify the targeted account is not present in the **Deny log on as a batch job** 
+For example, if you are trying to configure Task Scheduler on your domain controller, check the Settings tab of your two domain controller policy and domain policy GPOs in the Group Policy Management Console (GPMC). Verify the targeted account is not present in the **Deny log on as a batch job**
 
 User Rights Assignment and also correctly configured in the **Log on as a batch job** setting.
 

@@ -1,6 +1,6 @@
 ---
 title: Advanced troubleshooting for Windows networking
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Learn how to troubleshoot networking
 ms.prod: w10

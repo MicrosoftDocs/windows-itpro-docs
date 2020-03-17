@@ -2,7 +2,7 @@
 title: PassportForWork DDF
 description: View the OMA DM device description framework (DDF) for the PassportForWork configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -659,7 +659,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
                   <Replace />
                 </AccessType>
                 <DefaultValue>False</DefaultValue>
-                <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources. 
+                <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources.
 
 If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 

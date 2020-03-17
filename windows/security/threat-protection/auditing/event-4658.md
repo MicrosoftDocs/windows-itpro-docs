@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,30 +40,30 @@ Typically this event is needed if you need to know how long the handle to the ob
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4658</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12800</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-22T00:15:42.910428100Z" /> 
- <EventRecordID>276724</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="5056" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4658</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12800</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-22T00:15:42.910428100Z" />
+ <EventRecordID>276724</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="5056" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x4367b</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="HandleId">0x18a8</Data> 
- <Data Name="ProcessId">0xef0</Data> 
- <Data Name="ProcessName">C:\\Windows\\explorer.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x4367b</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="HandleId">0x18a8</Data>
+ <Data Name="ProcessId">0xef0</Data>
+ <Data Name="ProcessName">C:\\Windows\\explorer.exe</Data>
  </EventData>
  </Event>
 

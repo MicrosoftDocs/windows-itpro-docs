@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -33,7 +33,7 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## CACertificates
 
 1. In **Available customizations**, select **CACertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. 
+2. In **Available customizations**, select the name that you just created.
 3. In **CertificatePath**, browse to or enter the path to the certificate.
 
 
@@ -42,8 +42,8 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 1. In **Available customizations**, select **ClientCertificates**, enter a friendly name for the certificate, and then click **Add**.
 2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
 
-| Setting | Value | Description | 
-| --- | --- | ---- | 
+| Setting | Value | Description |
+| --- | --- | ---- |
 | **CertificatePassword** | |  |
 | **CertificatePath** |  | Adds the selected certificate to the Personal store on the target device. |
 | ExportCertificate | True or false | Set to **True** to allow certificate export.  |
@@ -52,20 +52,20 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## RootCertificates
 
 1. In **Available customizations**, select **RootCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. 
+2. In **Available customizations**, select the name that you just created.
 3. In **CertificatePath**, browse to or enter the path to the certificate.
 
 ## TrustedPeopleCertificates
 
 1. In **Available customizations**, select **TrustedPeopleCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. 
+2. In **Available customizations**, select the name that you just created.
 3. In **TrustedCertificate**, browse to or enter the path to the certificate.
 
 
 ## TrustedProvisioners
 
 1. In **Available customizations**, select **TrustedPprovisioners**, enter a CertificateHash, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. 
+2. In **Available customizations**, select the name that you just created.
 3. In **TrustedProvisioner**, browse to or enter the path to the certificate.
 
 ## Related topics

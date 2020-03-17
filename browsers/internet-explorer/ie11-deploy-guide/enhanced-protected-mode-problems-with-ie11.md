@@ -6,7 +6,7 @@ description: Enhanced Protected Mode problems with Internet Explorer
 author: dansimp
 ms.prod: ie11
 ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -23,9 +23,9 @@ You can use your company’s Group Policy to turn Enhanced Protected Mode on or 
 
 For more information about Enhanced Protected Mode, see the [Enhanced Protected Mode](https://go.microsoft.com/fwlink/p/?LinkId=267512) post on IEBlog, and both the [Understanding Enhanced Protected Mode](https://go.microsoft.com/fwlink/p/?LinkId=282662) and the [Enhanced Protected Mode and Local Files](https://go.microsoft.com/fwlink/p/?LinkId=282663) blog posts on IEInternals.
 
- 
 
- 
+
+
 
 
 

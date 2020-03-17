@@ -10,7 +10,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -24,17 +24,17 @@ manager: dansimp
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 
-On Windows 10 Mobile, you can use the XML-based layout to modify the Start screen and provide the most robust and complete Start customization experience. 
+On Windows 10 Mobile, you can use the XML-based layout to modify the Start screen and provide the most robust and complete Start customization experience.
 
 On Windows 10 Mobile, the customized Start works by:
 
 - Windows 10 performs checks to determine the correct base default layout. The checks include the mobile edition, whether the device is dual SIM, the column width, and whether Cortana is supported for the country/region.
 - Windows 10 ensures that it does not overwrite the layout that you have set and will sequence the level checks and read the file layout such that any multivariant settings that you have set is not overwritten.
-- Windows 10 reads the LayoutModification.xml file and appends the group to the Start screen. 
+- Windows 10 reads the LayoutModification.xml file and appends the group to the Start screen.
 
 ## Default Start layouts
 
-The following diagrams show the default Windows 10, version 1607 Start layouts for single SIM and dual SIM devices with Cortana support, and single SIM and dual SIM devices with no Cortana support. 
+The following diagrams show the default Windows 10, version 1607 Start layouts for single SIM and dual SIM devices with Cortana support, and single SIM and dual SIM devices with no Cortana support.
 
 ![Start layout for Windows 10 Mobile](../images/mobile-start-layout.png)
 
@@ -64,7 +64,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 | DefaultLayoutOverride</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to specify the customized Start layout for mobile devices. |
 | StartLayoutCollection</br></br>Parent:</br>DefaultLayoutOverride | n/a | Use to contain a collection of Start layouts. |
 | StartLayout</br></br>Parent:</br>StartLayoutCollection | n/a | Use to specify the tile groups that will be appended to the Start screen. |
-| start:Group</br></br>Parent:</br>StartLayout | Name | Use to specify the tiles that need to be appended to the default Start layout. | 
+| start:Group</br></br>Parent:</br>StartLayout | Name | Use to specify the tiles that need to be appended to the default Start layout. |
 | start:Tile</br></br>Parent:</br>start:Group | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any Universal Windows app that has a valid **AppUserModelID** attribute. |
 | start:SecondaryTile</br></br>Parent:</br>start:Group | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. |
 | start:PhoneLegacyTile</br></br>Parent:</br>start:Group | ProductID</br>Size</br>Row</br>Column | Use to add a mobile app that has a valid **ProductID** attribute. |
@@ -72,7 +72,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 | RequiredStartTiles</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to specify the tiles that will be pinned to the bottom of the Start screen even if a restored Start screen does not have the tiles during backup or restore. |
 
 ### start:Group
- 
+
 **start:Group** tags specify a group of tiles that will be appended to Start. You can set the **Name** attribute to specify a name for the Start group.
 
 >[!NOTE]
@@ -87,7 +87,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 
 ### Specify Start tiles
 
-To pin tiles to Start, you must use the right kind of tile depending on what you want to pin. 
+To pin tiles to Start, you must use the right kind of tile depending on what you want to pin.
 
 #### Tile size and coordinates
 
@@ -100,14 +100,14 @@ The following table describes the attributes that you must use to specify the si
 | Size | Determines how large the tile will be. </br>- 1x1 - small tile</br>- 2x2 - medium tile</br>- 4x2 - wide tile</br>- 4x4 - large tile |
 | Row | Specifies the row where the tile will appear. |
 | Column | Specifies the column where the tile will appear. |
- 
+
 For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
 #### start:Tile
 
 You can use the **start:Tile** tag to pin a Universal Windows app to Start.
 
-To specify an app, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app. 
+To specify an app, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
@@ -121,7 +121,7 @@ The following example shows how to pin the Microsoft Edge Universal Windows app:
 
 #### start:SecondaryTile
 
-You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. 
+You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile.
 
 The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
 
@@ -131,7 +131,7 @@ The following example shows how to create a tile of the Web site's URL using the
           TileID="MyWeblinkTile"
           Arguments="http://msn.com"
           DisplayName="MySite"
-          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
+          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
           Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
           ShowNameOnSquare150x150Logo="true"
           ShowNameOnWide310x150Logo="false"
@@ -155,7 +155,7 @@ The following table describes the other attributes that you can use with the **s
 | ShowNameOnWide310x150Logo | Optional | Specifies whether the display name is shown on the 4x2 tile. You can set the value for this attribute to true or false. By default, this is set to false. |
 | BackgroundColor | Optional | Specifies the color of the tile. You can specify the value in ARGB hexadecimal (for example, #FF112233) or specify "transparent". |
 | ForegroundText | Optional | Specifies the color of the foreground text. Set the value to either "light" or "dark". |
- 
+
  Secondary Microsoft Edge tiles have the same size and location behavior as a Universal Windows app.
 
 #### start:PhoneLegacyTile
@@ -165,7 +165,7 @@ You can use the **start:PhoneLegacyTile** tag to add a mobile app that has a val
 The following example shows how to add a mobile app with a valid ProductID using the start:PhoneLegacyTile tag:
 
 ```XML
-<start:PhoneLegacyTile 
+<start:PhoneLegacyTile
           ProductID="{00000000-0000-0000-0000-000000000000}"
           Size="2x2"
           Row="0"
@@ -176,14 +176,14 @@ The following example shows how to add a mobile app with a valid ProductID using
 
 You can use the **start:Folder** tag to add a folder to the mobile device's Start screen.
 
-You must set these attributes to specify the size and location of the folder: **Size**, **Row**, and **Column**. 
+You must set these attributes to specify the size and location of the folder: **Size**, **Row**, and **Column**.
 
 Optionally, you can also specify a folder name by using the **Name** attribute. If you specify a name, set the value to a string.
 
 The position of the tiles inside a folder is relative to the folder. You can add any of the following tile types to the folder:
 
 - Tile - Use to pin a Universal Windows app to Start.
-- SecondaryTile - Use to pin a Web link through a Microsoft Edge secondary tile. 
+- SecondaryTile - Use to pin a Web link through a Microsoft Edge secondary tile.
 - PhoneLegacyTile - Use to pin a mobile app that has a valid ProductID.
 
 The following example shows how to add a medium folder that contains two apps inside it:
@@ -214,21 +214,21 @@ You can use the **RequiredStartTiles** tag to specify the tiles that will be pin
 >[!NOTE]
 >Enabling this Start customization may be disruptive to the user experience.
 
-For Windows 10 Mobile, **RequiredStartTiles** tags can contain the following tags or elements. These are similar to the tiles supported in **start:Group**. 
+For Windows 10 Mobile, **RequiredStartTiles** tags can contain the following tags or elements. These are similar to the tiles supported in **start:Group**.
 
 - Tile - Use to pin a Universal Windows app to Start.
-- SecondaryTile - Use to pin a Web link through a Microsoft Edge secondary tile. 
+- SecondaryTile - Use to pin a Web link through a Microsoft Edge secondary tile.
 - PhoneLegacyTile - Use to pin a mobile app that has a valid ProductID.
 - Folder - Use to pin a folder to the mobile device's Start screen.
 
 Tiles specified within the **RequiredStartTiles** tag have the following behavior:
 
-- The partner-pinned tiles will begin in a new row at the end of the user-restored Start screen. 
+- The partner-pinned tiles will begin in a new row at the end of the user-restored Start screen.
 - If there’s a duplicate tile between what the user has in their Start screen layout and what the OEM has pinned to the Start screen, only the app or tile shown in the user-restored Start screen layout will be shown and the duplicate tile will be omitted from the pinned partner tiles at the bottom of the Start screen.
 
 The lack of duplication only applies to pinned apps. Pinned Web links may be duplicated.
 
-- If partners have prepinned folders to the Start screen, Windows 10 treats these folders in the same way as appended apps on the Start screen. Duplicate folders will be removed. 
+- If partners have prepinned folders to the Start screen, Windows 10 treats these folders in the same way as appended apps on the Start screen. Duplicate folders will be removed.
 - All partner tiles that are appended to the bottom of the user-restored Start screen will be medium-sized. There will be no gaps in the appended partner Start screen layout. Windows 10 will shift tiles accordingly to prevent gaps.
 
 ## Sample LayoutModification.xml
@@ -296,32 +296,32 @@ The following example shows what the overall customization file might look like 
   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
     <Customizations>
       <Targets>
-        <Target Id="Operator XYZ"> 
-          <TargetState> 
-            <Condition Name="MCC" Value="Range:310, 320" /> 
-            <Condition Name="MNC" Value="!Range:400, 550" /> 
-          </TargetState> 
+        <Target Id="Operator XYZ">
+          <TargetState>
+            <Condition Name="MCC" Value="Range:310, 320" />
+            <Condition Name="MNC" Value="!Range:400, 550" />
+          </TargetState>
         </Target>
         <Target Id="Processor ABC">
           <TargetState>
-          <TargetState> 
-            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /> 
-            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" /> 
+          <TargetState>
+            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
+            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" />
           </TargetState>
           </TargetState>
         </Target>
       </Targets>
       <Common>
-        <Settings> 
-          <Policies> 
-            <AllowBrowser>1</AllowBrowser> 
-            <AllowCamera>1</AllowCamera> 
-            <AllowBluetooth>1</AllowBluetooth> 
-          </Policies> 
-          <HotSpot> 
-            <Enabled>1</Enabled> 
-          </HotSpot> 
-        </Settings> 
+        <Settings>
+          <Policies>
+            <AllowBrowser>1</AllowBrowser>
+            <AllowCamera>1</AllowCamera>
+            <AllowBluetooth>1</AllowBluetooth>
+          </Policies>
+          <HotSpot>
+            <Enabled>1</Enabled>
+          </HotSpot>
+        </Settings>
       </Common>
       <Variant>
         <TargetRefs>
@@ -349,8 +349,8 @@ Once you have created your LayoutModification.xml file to customize devices that
 
 1. In the **Available customizations** pane, expand **Runtime settings**, select **Start** and then click the **StartLayout** setting.
 2. In the middle pane, click **Browse** to open File Explorer.
-3. In the File Explorer window, navigate to the location where you saved your LayoutModification.xml file. 
-4. Select the file and then click **Open**. 
+3. In the File Explorer window, navigate to the location where you saved your LayoutModification.xml file.
+4. Select the file and then click **Open**.
 
 This should set the value of **StartLayout**. The setting appears in the **Selected customizations** pane.
 
@@ -383,9 +383,9 @@ This should set the value of **StartLayout**. The setting appears in the **Selec
 - [Changes to Group Policy settings for Windows 10 Start](../changes-to-start-policies-in-windows-10.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](../start-layout-xml-desktop.md)
 
- 
 
- 
+
+
 
 
 

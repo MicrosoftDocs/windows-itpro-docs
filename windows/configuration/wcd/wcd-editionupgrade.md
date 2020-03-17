@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -28,11 +28,11 @@ Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 
 
 ## ChangeProductKey
 
-Enter a product key, which will be used to update the existing product key on the device. 
+Enter a product key, which will be used to update the existing product key on the device.
 
 ## UpgradeEditionWithLicense
 
-Browse to and select a license XML file for the edition upgrade. 
+Browse to and select a license XML file for the edition upgrade.
 
 
 ## UpgradeEditionWithProductKey

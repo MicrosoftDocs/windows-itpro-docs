@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event generates every time a process runs using the non-current access toke
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
- <EventID>4696</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13312</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-25T21:33:42.401Z" /> 
- <EventRecordID>561</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="88" /> 
- <Channel>Security</Channel> 
- <Computer>Win2008.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+ <EventID>4696</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13312</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-25T21:33:42.401Z" />
+ <EventRecordID>561</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="88" />
+ <Channel>Security</Channel>
+ <Computer>Win2008.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">WIN2008$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="TargetUserSid">S-1-5-18</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x1c8c5</Data> 
- <Data Name="TargetProcessId">0xf40</Data> 
- <Data Name="TargetProcessName">C:\\Windows\\System32\\WerFault.exe</Data> 
- <Data Name="ProcessId">0x698</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">WIN2008$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="TargetUserSid">S-1-5-18</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x1c8c5</Data>
+ <Data Name="TargetProcessId">0xf40</Data>
+ <Data Name="TargetProcessName">C:\\Windows\\System32\\WerFault.exe</Data>
+ <Data Name="ProcessId">0x698</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data>
  </EventData>
  </Event>
 

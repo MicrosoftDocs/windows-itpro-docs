@@ -5,7 +5,7 @@ description: How to use the Important URLs - Home Page and Support page in the I
 author: dansimp
 ms.prod: ie11
 ms.assetid: 19e34879-ba9d-41bf-806a-3b9b9b752fc1
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -30,9 +30,9 @@ If you add multiple **Home** pages, each page appears on a separate tab in the b
 4.  Click **Next** to go to the [Accelerators](accelerators-ieak11-wizard.md) page or **Back** to go to the [Search Providers](search-providers-ieak11-wizard.md) page.
 
 
- 
 
- 
+
+
 
 
 

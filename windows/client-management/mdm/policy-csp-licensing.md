@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Licensing policies  
+## Licensing policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**  
+<a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**
 
 <!--SupportedSKUs-->
 <table>
@@ -81,7 +81,7 @@ Added in Windows 10, version 1607. Enables or Disable Windows license reactivat
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Control Device Reactivation for Retail devices*
 -   GP name: *AllowWindowsEntitlementReactivation*
 -   GP path: *Windows Components/Software Protection Platform*
@@ -100,7 +100,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**  
+<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**
 
 <!--SupportedSKUs-->
 <table>
@@ -147,7 +147,7 @@ Added in Windows 10, version 1607. Enabling this setting prevents this computer
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off KMS Client Online AVS Validation*
 -   GP name: *NoAcquireGT*
 -   GP path: *Windows Components/Software Protection Platform*

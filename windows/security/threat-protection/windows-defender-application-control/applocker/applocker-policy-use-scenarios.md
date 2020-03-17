@@ -2,7 +2,7 @@
 title: AppLocker policy use scenarios (Windows 10)
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -45,7 +45,7 @@ AppLocker can help you improve the management of application control and the mai
 
 5.  **Manageability improvement**
 
-    AppLocker policies can be modified and deployed through your existing Group Policy infrastructure and can work in conjunction with policies created by using Software Restriction Policies. As you manage ongoing change in your support of a business group's apps, you can modify policies and use 
+    AppLocker policies can be modified and deployed through your existing Group Policy infrastructure and can work in conjunction with policies created by using Software Restriction Policies. As you manage ongoing change in your support of a business group's apps, you can modify policies and use
     the AppLocker cmdlets to test the policies for the expected results. You can also design application control policies for situations in which users share computers.
 
 ### Use scenarios
@@ -67,5 +67,5 @@ The following are examples of scenarios in which AppLocker can be used:
 
 ## Related topics
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
+
+

@@ -1,6 +1,6 @@
 ---
 title: Advanced Hunting with Python API Guide
-ms.reviewer: 
+ms.reviewer:
 description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using Python.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -76,7 +76,7 @@ where
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
-headers = { 
+headers = {
 	'Content-Type' : 'application/json',
 	'Accept' : 'application/json',
 	'Authorization' : "Bearer " + aadToken

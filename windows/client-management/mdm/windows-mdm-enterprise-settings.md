@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
 - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
 ms.assetid: 92711D65-3022-4789-924B-602BE3187E23
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -43,7 +43,7 @@ Here is a summary of the DM tasks supported for enterprise management:
 -   Certificate management: CertificateStore CSP, RootCACertificate CSP, and ClientCertificateInstall CSP are used to install certificates.
 -   Basic device inventory and asset management: Some basic device information can be retrieved via the DevInfo CSP, DevDetail CSPs and the DeviceStatus CSP. These provide basic device information such as OEM name, device model, hardware version, OS version, processor types, etc. This is for asset management and device targeting. The NodeCache CSP enables the device to only send out delta inventory settings to the server to reduce over-the-air data usage. The NodeCache CSP is only accessible by the enterprise service.
 
- 
+
 
 
 

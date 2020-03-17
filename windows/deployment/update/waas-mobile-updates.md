@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -19,7 +19,7 @@ ms.topic: article
 - Windows 10 Mobile
 - [Windows 10 IoT Mobile](https://www.microsoft.com/WindowsForBusiness/windows-iot)
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release channels, read [Servicing channels](waas-overview.md#servicing-channels) first.
@@ -38,7 +38,7 @@ Devices running Windows 10 Mobile and Windows 10 IoT Mobile receive updates from
 
 
 
-Configuration of Windows 10 Mobile and Windows 10 IoT Mobile devices is limited to the feature set pertaining to quality updates only. That is, Windows Mobile feature updates are categorized the same as quality updates, and can only be deferred by setting the quality update deferral period, for a maximum period of 30 days. You can use mobile device management (MDM) to manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile. Updates cannot be managed for Windows 10 Mobile. 
+Configuration of Windows 10 Mobile and Windows 10 IoT Mobile devices is limited to the feature set pertaining to quality updates only. That is, Windows Mobile feature updates are categorized the same as quality updates, and can only be deferred by setting the quality update deferral period, for a maximum period of 30 days. You can use mobile device management (MDM) to manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile. Updates cannot be managed for Windows 10 Mobile.
 
 
 ## Windows 10, version 1607
@@ -46,7 +46,7 @@ Configuration of Windows 10 Mobile and Windows 10 IoT Mobile devices is limited 
 Only the following Windows Update for Business policies are supported for Windows 10 Mobile and Windows 10 IoT Mobile:
 
 - ../Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel
-- ../Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesInDays  
+- ../Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesInDays
 - ../Vendor/MSFT/Policy/Config/Update/PauseQualityUpdates
 
 
@@ -63,7 +63,7 @@ Only the following Windows Update for Business policies are supported for Window
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
+- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

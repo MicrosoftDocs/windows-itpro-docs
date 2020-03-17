@@ -9,7 +9,7 @@ author: dulcemontemayor
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 02/08/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -17,7 +17,7 @@ manager: dansimp
 
 >Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016, Windows 10
 
-In IKEv2 VPN connections, the default configuration for Diffie Hellman group is Group 2, which is not secure for IKE exchanges. 
+In IKEv2 VPN connections, the default configuration for Diffie Hellman group is Group 2, which is not secure for IKE exchanges.
 To secure the connections, update the configuration of VPN servers and clients by running VPN cmdlets.
 
 ## VPN server
@@ -34,9 +34,9 @@ On an earlier versions of Windows Server, run [Set-VpnServerIPsecConfiguration](
 Set-VpnServerIPsecConfiguration -CustomPolicy
 ```
 
-## VPN client 
+## VPN client
 
-For VPN client, you need to configure each VPN connection. 
+For VPN client, you need to configure each VPN connection.
 For example, run [Set-VpnConnectionIPsecConfiguration (version 4.0)](https://docs.microsoft.com/powershell/module/vpnclient/set-vpnconnectionipsecconfiguration?view=win10-ps) and specify the name of the connection:
 
 

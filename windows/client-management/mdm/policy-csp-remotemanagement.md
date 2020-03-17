@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## RemoteManagement policies  
+## RemoteManagement policies
 
 <dl>
   <dd>
@@ -73,7 +73,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowbasicauthentication-client"></a>**RemoteManagement/AllowBasicAuthentication_Client**  
+<a href="" id="remotemanagement-allowbasicauthentication-client"></a>**RemoteManagement/AllowBasicAuthentication_Client**
 
 <!--SupportedSKUs-->
 <table>
@@ -125,13 +125,13 @@ If you disable or do not configure this policy setting, the WinRM client does no
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Basic authentication*
 -   GP name: *AllowBasic_2*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -143,7 +143,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowbasicauthentication-service"></a>**RemoteManagement/AllowBasicAuthentication_Service**  
+<a href="" id="remotemanagement-allowbasicauthentication-service"></a>**RemoteManagement/AllowBasicAuthentication_Service**
 
 <!--SupportedSKUs-->
 <table>
@@ -195,13 +195,13 @@ If you disable or do not configure this policy setting, the WinRM service does n
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Basic authentication*
 -   GP name: *AllowBasic_1*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -213,7 +213,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowcredsspauthenticationclient"></a>**RemoteManagement/AllowCredSSPAuthenticationClient**  
+<a href="" id="remotemanagement-allowcredsspauthenticationclient"></a>**RemoteManagement/AllowCredSSPAuthenticationClient**
 
 <!--SupportedSKUs-->
 <table>
@@ -265,13 +265,13 @@ If you disable or do not configure this policy setting, the WinRM client does no
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow CredSSP authentication*
 -   GP name: *AllowCredSSP_2*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -283,7 +283,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowcredsspauthenticationservice"></a>**RemoteManagement/AllowCredSSPAuthenticationService**  
+<a href="" id="remotemanagement-allowcredsspauthenticationservice"></a>**RemoteManagement/AllowCredSSPAuthenticationService**
 
 <!--SupportedSKUs-->
 <table>
@@ -335,13 +335,13 @@ If you disable or do not configure this policy setting, the WinRM service does n
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow CredSSP authentication*
 -   GP name: *AllowCredSSP_1*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -353,7 +353,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowremoteservermanagement"></a>**RemoteManagement/AllowRemoteServerManagement**  
+<a href="" id="remotemanagement-allowremoteservermanagement"></a>**RemoteManagement/AllowRemoteServerManagement**
 
 <!--SupportedSKUs-->
 <table>
@@ -418,13 +418,13 @@ Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FE
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow remote server management through WinRM*
 -   GP name: *AllowAutoConfig*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -436,7 +436,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowunencryptedtraffic-client"></a>**RemoteManagement/AllowUnencryptedTraffic_Client**  
+<a href="" id="remotemanagement-allowunencryptedtraffic-client"></a>**RemoteManagement/AllowUnencryptedTraffic_Client**
 
 <!--SupportedSKUs-->
 <table>
@@ -488,13 +488,13 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow unencrypted traffic*
 -   GP name: *AllowUnencrypted_2*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -506,7 +506,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-allowunencryptedtraffic-service"></a>**RemoteManagement/AllowUnencryptedTraffic_Service**  
+<a href="" id="remotemanagement-allowunencryptedtraffic-service"></a>**RemoteManagement/AllowUnencryptedTraffic_Service**
 
 <!--SupportedSKUs-->
 <table>
@@ -558,13 +558,13 @@ If you disable or do not configure this policy setting, the WinRM client sends o
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow unencrypted traffic*
 -   GP name: *AllowUnencrypted_1*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -576,7 +576,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-disallowdigestauthentication"></a>**RemoteManagement/DisallowDigestAuthentication**  
+<a href="" id="remotemanagement-disallowdigestauthentication"></a>**RemoteManagement/DisallowDigestAuthentication**
 
 <!--SupportedSKUs-->
 <table>
@@ -628,13 +628,13 @@ If you disable or do not configure this policy setting, the WinRM client uses Di
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disallow Digest authentication*
 -   GP name: *DisallowDigest*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -646,7 +646,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-disallownegotiateauthenticationclient"></a>**RemoteManagement/DisallowNegotiateAuthenticationClient**  
+<a href="" id="remotemanagement-disallownegotiateauthenticationclient"></a>**RemoteManagement/DisallowNegotiateAuthenticationClient**
 
 <!--SupportedSKUs-->
 <table>
@@ -698,13 +698,13 @@ If you disable or do not configure this policy setting, the WinRM client uses Ne
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disallow Negotiate authentication*
 -   GP name: *DisallowNegotiate_2*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -716,7 +716,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-disallownegotiateauthenticationservice"></a>**RemoteManagement/DisallowNegotiateAuthenticationService**  
+<a href="" id="remotemanagement-disallownegotiateauthenticationservice"></a>**RemoteManagement/DisallowNegotiateAuthenticationService**
 
 <!--SupportedSKUs-->
 <table>
@@ -768,13 +768,13 @@ If you disable or do not configure this policy setting, the WinRM service accept
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disallow Negotiate authentication*
 -   GP name: *DisallowNegotiate_1*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -786,7 +786,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-disallowstoringofrunascredentials"></a>**RemoteManagement/DisallowStoringOfRunAsCredentials**  
+<a href="" id="remotemanagement-disallowstoringofrunascredentials"></a>**RemoteManagement/DisallowStoringOfRunAsCredentials**
 
 <!--SupportedSKUs-->
 <table>
@@ -840,13 +840,13 @@ If you enable and then disable this policy setting,any values that were previous
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disallow WinRM from storing RunAs credentials*
 -   GP name: *DisableRunAs*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -858,7 +858,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-specifychannelbindingtokenhardeninglevel"></a>**RemoteManagement/SpecifyChannelBindingTokenHardeningLevel**  
+<a href="" id="remotemanagement-specifychannelbindingtokenhardeninglevel"></a>**RemoteManagement/SpecifyChannelBindingTokenHardeningLevel**
 
 <!--SupportedSKUs-->
 <table>
@@ -916,13 +916,13 @@ If HardeningLevel is set to None, all requests are accepted (though they are not
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify channel binding token hardening level*
 -   GP name: *CBTHardeningLevel_1*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -934,7 +934,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-trustedhosts"></a>**RemoteManagement/TrustedHosts**  
+<a href="" id="remotemanagement-trustedhosts"></a>**RemoteManagement/TrustedHosts**
 
 <!--SupportedSKUs-->
 <table>
@@ -986,13 +986,13 @@ If you disable or do not configure this policy setting and the WinRM client need
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Trusted Hosts*
 -   GP name: *TrustedHosts*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
@@ -1004,7 +1004,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-turnoncompatibilityhttplistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPListener**  
+<a href="" id="remotemanagement-turnoncompatibilityhttplistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPListener**
 
 <!--SupportedSKUs-->
 <table>
@@ -1060,13 +1060,13 @@ A listener might be automatically created on port 80 to ensure backward compatib
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Compatibility HTTP Listener*
 -   GP name: *HttpCompatibilityListener*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
@@ -1078,7 +1078,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotemanagement-turnoncompatibilityhttpslistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPSListener**  
+<a href="" id="remotemanagement-turnoncompatibilityhttpslistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPSListener**
 
 <!--SupportedSKUs-->
 <table>
@@ -1134,13 +1134,13 @@ A listener might be automatically created on port 443 to ensure backward compati
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Compatibility HTTPS Listener*
 -   GP name: *HttpsCompatibilityListener*
 -   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*

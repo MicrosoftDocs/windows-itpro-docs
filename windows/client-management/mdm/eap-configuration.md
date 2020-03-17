@@ -2,7 +2,7 @@
 title: EAP configuration
 description: Learn how to create an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including details about EAP certificate filtering in Windows 10.
 ms.assetid: DD3F2292-4B4C-4430-A57F-922FED2A8FAE
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -111,7 +111,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     -   C:\\Windows\\schemas\\EAPHost
     -   C:\\Windows\\schemas\\EAPMethods
 
-     
+
 
 ## EAP certificate filtering
 
@@ -145,7 +145,7 @@ The following list describes the prerequisites for a certificate to be used with
     -   Client Authentication. As defined by RFC 5280, this is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
     -   Any Purpose. This is an EKU defined and published by Microsoft, and is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
     -   All Purpose. As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
-    
+
 -   The user or the computer certificate on the client must chain to a trusted root CA.
 -   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
 -   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
@@ -156,7 +156,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 > [!NOTE]
 > For PEAP or TTLS profiles, the EAP TLS XML is embedded within some PEAP-specific or TTLS-specific elements.
 
- 
+
 
 ```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
@@ -168,15 +168,15 @@ The following XML sample explains the properties for the EAP TLS XML, including 
   <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
   <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
   <!--The 3 properties above define the method publishers, this is seen primarily in 3rd party Vendor methods.-->
-  <!-- For Microsoft EAP TLS the value of the above fields will always be 0 --> 
+  <!-- For Microsoft EAP TLS the value of the above fields will always be 0 -->
  </EapMethod>
- <!-- Now that the EAP Method is Defined we will go into the Configuration --> 
+ <!-- Now that the EAP Method is Defined we will go into the Configuration -->
  <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
   <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
    <Type>13</Type>
    <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
     <CredentialsSource>
-     <!-- Credential Source can be either CertificateStore or SmartCard --> 
+     <!-- Credential Source can be either CertificateStore or SmartCard -->
      <CertificateStore>
       <SimpleCertSelection>true</SimpleCertSelection>
       <!--SimpleCertSelection automatically selects a cert if there are mutiple identical (Same UPN, Issuer, etc.) certs.-->
@@ -199,7 +199,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
        <IssuerHash>ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
         <!-- Issuing certs thumbprint goes here-->
        </IssuerHash>
-       <!-- You can add multiple entries and it will find the list of certs that have at least one of these certs in its chain--> 
+       <!-- You can add multiple entries and it will find the list of certs that have at least one of these certs in its chain-->
       </CAHashList>
       <EKUMapping>
        <!-- This section defines Custom EKUs that you may be adding-->
@@ -207,15 +207,15 @@ The following XML sample explains the properties for the EAP TLS XML, including 
        <!-- You can have multiple EKUs defined here and then referenced below as shown -->
        <EKUMap>
         <EKUName>
-         <!--Add a friendly Name for an EKU here for example -->ContostoITEKU</EKUName> 
+         <!--Add a friendly Name for an EKU here for example -->ContostoITEKU</EKUName>
         <EKUOID>
-         <!--Add the OID Value your CA adds to the certificate here, for example -->1.3.6.1.4.1.311.42.1.15</EKUOID> 
+         <!--Add the OID Value your CA adds to the certificate here, for example -->1.3.6.1.4.1.311.42.1.15</EKUOID>
        </EKUMap>
         <!-- All the EKU Names referenced in the example below must first be defined here
        <EKUMap>
         <EKUName>Example1</EKUName>
         <EKUOID>2.23.133.8.3</EKUOID>
-      
+
        </EKUMap>
        <EKUMap>
         <EKUName>Example2</EKUName>
@@ -228,7 +228,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
        <EKUMapInList>
         <!-- This section implies that the certificate should have the following custom EKUs in addition to the Client Authentication EKU -->
         <EKUName>
-         <!--Use the name from the EKUMap Field above-->ContostoITEKU</EKUName> 
+         <!--Use the name from the EKUMap Field above-->ContostoITEKU</EKUName>
        </EKUMapInList>
        <!-- You can have multiple Custom EKUs mapped here, Each additional EKU will be processed with an AND operand -->
        <!-- For example, Client Auth EKU AND ContosoITEKU AND Example1 etc. -->
@@ -237,16 +237,16 @@ The following XML sample explains the properties for the EAP TLS XML, including 
        </EKUMapInList>
       </ClientAuthEKUList>
       <AllPurposeEnabled>true</AllPurposeEnabled>
-      <!-- Implies that a certificate with the EKU field = 0 will be selected --> 
+      <!-- Implies that a certificate with the EKU field = 0 will be selected -->
       <AnyPurposeEKUList Enabled="true"/>
-      <!-- Implies that a certificate with the EKU oid Value of 1.3.6.1.4.1.311.10.12.1 will be selected --> 
+      <!-- Implies that a certificate with the EKU oid Value of 1.3.6.1.4.1.311.10.12.1 will be selected -->
       <!-- Like for Client Auth you can also add Custom EKU properties with AnyPurposeEKUList (but not with AllPurposeEnabled) -->
-      <!-- So here is what the above policy implies. 
+      <!-- So here is what the above policy implies.
       The certificate selected will have
       Issuer Thumbprint = ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
       AND
       ((Client Authentication EKU AND ContosoITEKU) OR (AnyPurposeEKU) OR AllPurpose Certificate)
-      
+
       Any certificate(s) that match these criteria will be utilised for authentication
       -->
      </FilteringInfo>
@@ -260,7 +260,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 > [!NOTE]
 > The EAP TLS XSD is located at %systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd.
 
- 
+
 
 Alternatively, you can use the following procedure to create an EAP configuration XML:
 
@@ -272,7 +272,7 @@ Alternatively, you can use the following procedure to create an EAP configuratio
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-     
+
 
 1.  Select the **Properties** button underneath the drop-down menu.
 1.  On the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
@@ -290,11 +290,11 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) article.
 
- 
 
- 
 
- 
+
+
+
 
 
 

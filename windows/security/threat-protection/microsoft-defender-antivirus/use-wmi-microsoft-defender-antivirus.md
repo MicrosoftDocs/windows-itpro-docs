@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -31,7 +31,7 @@ Microsoft Defender Antivirus has a number of specific WMI classes that can be us
 
 The [MSDN Windows Defender WMIv2 Provider reference library](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) lists the available WMI classes for Microsoft Defender Antivirus, and includes example scripts.
 
-Changes made with WMI will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with WMI. 
+Changes made with WMI will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with WMI.
 
 You can [configure which settings can be overridden locally  with local policy overrides](configure-local-policy-overrides-microsoft-defender-antivirus.md).
 

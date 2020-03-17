@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ---
 

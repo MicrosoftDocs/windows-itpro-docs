@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Messaging policies  
+## Messaging policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**  
+<a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**
 
 <!--SupportedSKUs-->
 <table>
@@ -78,7 +78,7 @@ Added in Windows 10, version 1607. Enables text message back up and restore and
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Message Service Cloud Sync*
 -   GP name: *AllowMessageSync*
 -   GP path: *Windows Components/Messaging*

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,30 +36,30 @@ This event generates if an attempt was made to duplicate a handle to an object.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4690</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12807</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-23T00:17:41.755998800Z" /> 
- <EventRecordID>338632</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="1100" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4690</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12807</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-23T00:17:41.755998800Z" />
+ <EventRecordID>338632</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="1100" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="SourceHandleId">0x438</Data> 
- <Data Name="SourceProcessId">0x674</Data> 
- <Data Name="TargetHandleId">0xd9c</Data> 
- <Data Name="TargetProcessId">0x4</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="SourceHandleId">0x438</Data>
+ <Data Name="SourceProcessId">0x674</Data>
+ <Data Name="TargetHandleId">0xd9c</Data>
+ <Data Name="TargetProcessId">0x4</Data>
  </EventData>
  </Event>
 

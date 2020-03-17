@@ -2,7 +2,7 @@
 title: Gathering Information about Your Active Directory Deployment (Windows 10)
 description: Gathering Information about Your Active Directory Deployment
 ms.assetid: b591b85b-12ac-4329-a47e-bc1b03e66eb0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

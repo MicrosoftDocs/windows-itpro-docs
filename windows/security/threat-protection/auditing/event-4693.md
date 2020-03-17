@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,31 +42,31 @@ Failure event generates when a Master Key restore operation fails for some reaso
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4693</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13314</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-22T06:25:14.589407700Z" /> 
- <EventRecordID>175809</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1340" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4693</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13314</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-22T06:25:14.589407700Z" />
+ <EventRecordID>175809</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1340" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x30d7c</Data> 
- <Data Name="MasterKeyId">0445c766-75f0-4de7-82ad-d9d97aad59f6</Data> 
- <Data Name="RecoveryReason">0x5c005c</Data> 
- <Data Name="RecoveryServer">DC01.contoso.local</Data> 
- <Data Name="RecoveryKeyId" /> 
- <Data Name="FailureId">0x380000</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x30d7c</Data>
+ <Data Name="MasterKeyId">0445c766-75f0-4de7-82ad-d9d97aad59f6</Data>
+ <Data Name="RecoveryReason">0x5c005c</Data>
+ <Data Name="RecoveryServer">DC01.contoso.local</Data>
+ <Data Name="RecoveryKeyId" />
+ <Data Name="FailureId">0x380000</Data>
  </EventData>
  </Event>
 

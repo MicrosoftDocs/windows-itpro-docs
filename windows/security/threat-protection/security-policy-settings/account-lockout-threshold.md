@@ -2,7 +2,7 @@
 title: Account lockout threshold (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Account lockout threshold security policy setting.
 ms.assetid: 4904bb40-a2bd-4fef-a102-260ba8d74e30
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -48,7 +48,7 @@ The threshold that you select is a balance between operational efficiency and se
 As with other account lockout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
 
 Implementation of this policy setting is dependent on your operational environment; threat vectors, deployed operating systems, and deployed apps. For more information, see [Implementation considerations](#bkmk-impleconsiderations) in this topic.
- 
+
 ### Location
 
 **Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Account Lockout Policy**
@@ -65,7 +65,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | 0 invalid sign-in attempts |
 | Member server effective default settings |0 invalid sign-in attempts |
 | Effective GPO default settings on client computers |0 invalid sign-in attempts |
- 
+
 ### Policy management
 
 This section describes features and tools that are available to help you manage this policy setting.
@@ -81,7 +81,7 @@ Implementation of this policy setting is dependent on your operational environme
 -   When negotiating encryption types between clients, servers, and domain controllers, the Kerberos protocol can automatically retry account sign-in attempts that count toward the threshold limits that you set in this policy setting. In environments where different versions of the operating system are deployed, encryption type negotiation increases.
 -   Not all apps that are used in your environment effectively manage how many times a user can attempt to sign-in. For instance, if a connection drops repeatedly when a user is running the app, all subsequent failed sign-in attempts count toward the account lockout threshold.
 
-For more information about Windows security baseline recommendations for account lockout, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/). 
+For more information about Windows security baseline recommendations for account lockout, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
 
 ## Security considerations
 
@@ -93,7 +93,7 @@ Brute force password attacks can use automated methods to try millions of passwo
 However, a DoS attack could be performed on a domain that has an account lockout threshold configured. An attacker could programmatically attempt a series of password attacks against all users in the organization. If the number of attempts is greater than the account lockout threshold, the attacker might be able to lock every account without needing any special privileges or being authenticated in the network.
 
 > **Note:** Offline password attacks are not countered by this policy setting.
- 
+
 ### <a href="" id="bkmk-countermeasure"></a>Countermeasure
 
 Because vulnerabilities can exist when this value is configured and when it is not configured, two distinct countermeasures are defined. Organizations should weigh the choice between the two, based on their identified threats and the risks that they want to mitigate. The two countermeasure options are:
@@ -115,4 +115,4 @@ If you configure this policy setting to a number greater than 0, an attacker can
 
 ## Related topics
 [Account Lockout Policy](account-lockout-policy.md)
- 
+

@@ -2,7 +2,7 @@
 title: Interactive logon Smart card removal behavior (Windows 10)
 description: Best practices, location, values, policy management and security considerations for the security policy setting, Interactive logon Smart card removal behavior.
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -66,13 +66,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | No Action| 
-| DC Effective Default Settings | No Action| 
-| Member Server Effective Default Settings | No Action| 
-| Client Computer Effective Default Settings | No Action| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | No Action|
+| DC Effective Default Settings | No Action|
+| Member Server Effective Default Settings | No Action|
+| Client Computer Effective Default Settings | No Action|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

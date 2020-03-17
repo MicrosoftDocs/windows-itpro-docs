@@ -1,6 +1,6 @@
 ---
 title: Overview of attack surface reduction
-ms.reviewer: 
+ms.reviewer:
 description: Learn about the attack surface reduction capabilities of Microsoft Defender ATP.
 keywords: asr, attack surface reduction, microsoft defender atp, microsoft defender advanced threat protection, microsoft defender, antivirus, av, windows defender
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ---

@@ -2,7 +2,7 @@
 title: UsmtUtils Syntax (Windows 10)
 description: UsmtUtils Syntax
 ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -84,7 +84,7 @@ usmtutils \[/ec | /rd *&lt;storeDir&gt;* | /verify *&lt;filepath&gt;* \[options\
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-verifyoptions"></a>Verify Options
 
@@ -193,7 +193,7 @@ usmtutils /verify\[:*&lt;reportType&gt;*\] *&lt;filePath&gt;* \[/l:*&lt;logfile&
 </tbody>
 </table>
 
- 
+
 
 Some examples of **/verify** commands:
 
@@ -323,7 +323,7 @@ The syntax for **/extract** is:
 </tbody>
 </table>
 
- 
+
 
 Some examples of **/extract** commands:
 
@@ -342,9 +342,9 @@ Some examples of **/extract** commands:
 
 [Return Codes](usmt-return-codes.md)
 
- 
 
- 
+
+
 
 
 

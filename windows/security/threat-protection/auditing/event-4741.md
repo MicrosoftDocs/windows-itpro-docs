@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,50 +38,50 @@ This event generates only on domain controllers.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4741</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13825</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-12T18:41:39.201898100Z" /> 
- <EventRecordID>170254</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1096" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4741</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13825</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-12T18:41:39.201898100Z" />
+ <EventRecordID>170254</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1096" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserName">WIN81$</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6116</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0xc88b2</Data> 
- <Data Name="PrivilegeList">-</Data> 
- <Data Name="SamAccountName">WIN81$</Data> 
- <Data Name="DisplayName">-</Data> 
- <Data Name="UserPrincipalName">-</Data> 
- <Data Name="HomeDirectory">-</Data> 
- <Data Name="HomePath">-</Data> 
- <Data Name="ScriptPath">-</Data> 
- <Data Name="ProfilePath">-</Data> 
- <Data Name="UserWorkstations">-</Data> 
- <Data Name="PasswordLastSet">8/12/2015 11:41:39 AM</Data> 
- <Data Name="AccountExpires">%%1794</Data> 
- <Data Name="PrimaryGroupId">515</Data> 
- <Data Name="AllowedToDelegateTo">-</Data> 
- <Data Name="OldUacValue">0x0</Data> 
- <Data Name="NewUacValue">0x80</Data> 
- <Data Name="UserAccountControl">%%2087</Data> 
- <Data Name="UserParameters">-</Data> 
- <Data Name="SidHistory">-</Data> 
- <Data Name="LogonHours">%%1793</Data> 
- <Data Name="DnsHostName">Win81.contoso.local</Data> 
- <Data Name="ServicePrincipalNames">HOST/Win81.contoso.local RestrictedKrbHost/Win81.contoso.local HOST/WIN81 RestrictedKrbHost/WIN81</Data> 
+ <Data Name="TargetUserName">WIN81$</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6116</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0xc88b2</Data>
+ <Data Name="PrivilegeList">-</Data>
+ <Data Name="SamAccountName">WIN81$</Data>
+ <Data Name="DisplayName">-</Data>
+ <Data Name="UserPrincipalName">-</Data>
+ <Data Name="HomeDirectory">-</Data>
+ <Data Name="HomePath">-</Data>
+ <Data Name="ScriptPath">-</Data>
+ <Data Name="ProfilePath">-</Data>
+ <Data Name="UserWorkstations">-</Data>
+ <Data Name="PasswordLastSet">8/12/2015 11:41:39 AM</Data>
+ <Data Name="AccountExpires">%%1794</Data>
+ <Data Name="PrimaryGroupId">515</Data>
+ <Data Name="AllowedToDelegateTo">-</Data>
+ <Data Name="OldUacValue">0x0</Data>
+ <Data Name="NewUacValue">0x80</Data>
+ <Data Name="UserAccountControl">%%2087</Data>
+ <Data Name="UserParameters">-</Data>
+ <Data Name="SidHistory">-</Data>
+ <Data Name="LogonHours">%%1793</Data>
+ <Data Name="DnsHostName">Win81.contoso.local</Data>
+ <Data Name="ServicePrincipalNames">HOST/Win81.contoso.local RestrictedKrbHost/Win81.contoso.local HOST/WIN81 RestrictedKrbHost/WIN81</Data>
  </EventData>
  </Event>
 ```

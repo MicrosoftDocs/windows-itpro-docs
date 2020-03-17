@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -44,7 +44,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-page.png)
 
 5. From a command prompt, verify that you have the two files.
-    
+
 ## Application installation
 
 To complete this process, you must have admin privileges on the device.
@@ -99,7 +99,7 @@ To complete this process, you must have admin privileges on the device.
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    ![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
-   
+
 
 ## How to Allow Full Disk Access
 

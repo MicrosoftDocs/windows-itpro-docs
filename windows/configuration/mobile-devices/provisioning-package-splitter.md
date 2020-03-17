@@ -1,6 +1,6 @@
 ---
 title: Barcode provisioning and the package splitter tool (Windows 10)
-description: 
+description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -20,7 +20,7 @@ manager: dansimp
 
 - Windows 10 Mobile
 
-Enterprises that do bulk provisioning can use barcode-based device provisioning to provide a provisioning package to the device that's being provisioned. 
+Enterprises that do bulk provisioning can use barcode-based device provisioning to provide a provisioning package to the device that's being provisioned.
 
 The barcode provisioning option enables the administrator to provide a provisioning package during initial device setup (the out-of-box experience or OOBE phase). To use barcodes to provision a device, your devices must have an integrated barcode scanner. You can get the barcode format that the scanner supports from your OEM or device provider, and use your existing tools and processes to convert a provisioning package into barcodes.
 
@@ -34,7 +34,7 @@ When you [install Windows Configuration Designer](../provisioning-packages/provi
 
 Before you can use the tool, you must have a built provisioning package. The package file is the input to the package splitter tool.
 
-- To build a provisioning package using the Windows Configuration Designer UI, see [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md). 
+- To build a provisioning package using the Windows Configuration Designer UI, see [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md).
 - To build a provisioning package using the Windows Configuration Designer CLI, see [Windows Configuration Designer command-line interface](../provisioning-packages/provisioning-command-line.md).
 
 ## To use the package splitter tool (ppkgtobase64.exe)
@@ -52,7 +52,7 @@ Before you can use the tool, you must have a built provisioning package. The pac
    - or -
 
      On an x86 computer, type:
-    
+
      ```
      cd C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86
      ```
@@ -63,7 +63,7 @@ Before you can use the tool, you must have a built provisioning package. The pac
 ### Syntax
 
 ```
-ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]  
+ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]
 ```
 
 ### Switches and arguments
@@ -75,7 +75,7 @@ ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]
 | -s | Yes | Use to specify the size of the block that will be encoded in Base64. |
 | -c | No | Use to delete any files in the output directory if the directory already exists. This parameter is optional. |
 | /? | No | Lists the switches and their descriptions for the command-line tool or for certain commands. |
- 
+
 
 
 
@@ -83,9 +83,9 @@ ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]
 ## Related topics
 
 
- 
 
- 
+
+
 
 
 

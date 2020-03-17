@@ -2,7 +2,7 @@
 title: Profile system performance (Windows 10)
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Profile system performance.
 ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators|
+| Stand-Alone Server Default Settings | Administrators|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -1,7 +1,7 @@
 ---
 title: Live response command examples
 description: Learn to run basic or advanced live response commands for Microsoft Defender Advanced Threat Protection (ATP) and see examples on how it's used
-keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file 
+keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -28,7 +28,7 @@ Learn about common commands used in live response and see examples on how they a
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).
 
 
-## analyze 
+## analyze
 
 ```
 # Analyze the file malware.txt

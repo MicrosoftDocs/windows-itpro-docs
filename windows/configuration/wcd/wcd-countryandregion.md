@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -23,4 +23,4 @@ Use to configure a setting that partners must customize to ship Windows devices 
 | --- | :---: | :---: | :---: | :---: | :---: |
 | CountryCodeForExtendedCapabilityPrompts | X  | X | X |  |  |
 
-You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone). 
+You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone).

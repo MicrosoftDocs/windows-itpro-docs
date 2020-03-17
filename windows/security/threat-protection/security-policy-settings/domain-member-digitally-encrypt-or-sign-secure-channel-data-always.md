@@ -2,7 +2,7 @@
 title: Domain member Digitally encrypt or sign secure channel data (always) (Windows 10)
 description: Best practices, location, values, and security considerations for the policy setting, Domain member Digitally encrypt or sign secure channel data (always).
 ms.assetid: 4480c7cb-adca-4f29-b4b8-06eb68d272bf
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be signed or encrypted. Logon information that is 
+This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be signed or encrypted. Logon information that is
 transmitted over the secure channel is always encrypted regardless of whether the encryption of all other secure channel traffic is negotiated.
 
 The following policy settings determine whether a secure channel can be established with a domain controller that is not capable of signing or encrypting secure channel traffic:
@@ -49,7 +49,7 @@ When a device joins a domain, a machine account is created. After joining the do
 
 - Enabled
 
-  The policy [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure 
+  The policy [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure
   channel traffic.
 
 - Disabled
@@ -67,7 +67,7 @@ When a device joins a domain, a machine account is created. After joining the do
 - Set [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) to **Enabled**.
 
 >**Note:**  You can enable the policy settings [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) and [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) on all devices in the domain that support these policy settings without affecting earlier-version clients and applications.
- 
+
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -78,13 +78,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Enabled | 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings | Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Enabled |
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings | Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -103,7 +103,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-When a device joins a domain, a machine account is created. After it joins the domain, the device uses the password for that account to create a secure channel with the domain controller for its domain every time it restarts. Requests that are sent on the secure channel are authenticated—and 
+When a device joins a domain, a machine account is created. After it joins the domain, the device uses the password for that account to create a secure channel with the domain controller for its domain every time it restarts. Requests that are sent on the secure channel are authenticated—and
 sensitive information such as passwords are encrypted—but the channel is not integrity-checked, and not all information is encrypted. If a device is configured to always encrypt or sign secure channel data but the domain controller cannot sign or encrypt any portion of the secure channel data, the computer and domain controller cannot establish a secure channel. If the device is configured to encrypt or sign secure channel data, when possible, a secure channel can be established, but the level of encryption and signing is negotiated.
 
 ### Countermeasure

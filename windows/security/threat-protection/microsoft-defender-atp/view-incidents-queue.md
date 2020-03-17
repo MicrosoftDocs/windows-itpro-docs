@@ -1,6 +1,6 @@
 ---
 title: View and organize the Incidents queue
-ms.reviewer: 
+ms.reviewer:
 description: See the list of incidents and learn how to apply filters to limit the list and get a more focused view.
 keywords: view, organize, incidents, aggregate, investigations, queue, ttp
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -27,13 +27,13 @@ The **Incidents queue** shows a collection of incidents that were flagged from d
 
 By default, the queue displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
 
-There are several options you can choose from to customize the Incidents queue view. 
+There are several options you can choose from to customize the Incidents queue view.
 
 On the top navigation you can:
-- Customize columns to add or remove columns 
+- Customize columns to add or remove columns
 - Modify the number of items to view per page
 - Select the items to show per page
-- Batch-select the incidents to assign 
+- Batch-select the incidents to assign
 - Navigate between pages
 - Apply filters
 

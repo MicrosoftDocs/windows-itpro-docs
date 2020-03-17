@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,29 +38,29 @@ Failure event occurs when synchronization of a replica of an Active Directory na
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4933</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14082</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-01T20:58:28.854735700Z" /> 
- <EventRecordID>413644</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="2288" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4933</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14082</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-01T20:58:28.854735700Z" />
+ <EventRecordID>413644</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="2288" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="DestinationDRA">CN=NTDS Settings,CN=DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="SourceDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="NamingContext">CN=Schema,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="Options">2147483733</Data> 
- <Data Name="SessionID">40</Data> 
- <Data Name="EndUSN">20869</Data> 
- <Data Name="StatusCode">1722</Data> 
+ <Data Name="DestinationDRA">CN=NTDS Settings,CN=DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="SourceDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="NamingContext">CN=Schema,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="Options">2147483733</Data>
+ <Data Name="SessionID">40</Data>
+ <Data Name="EndUSN">20869</Data>
+ <Data Name="StatusCode">1722</Data>
  </EventData>
  </Event>
 ```
@@ -80,15 +80,15 @@ Failure event occurs when synchronization of a replica of an Active Directory na
 -   **Source DRA** \[Type = UnicodeString\]: source directory replication agent distinguished name.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **Naming Context** \[Type = UnicodeString\]**:** naming context to replicate.

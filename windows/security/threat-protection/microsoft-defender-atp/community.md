@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ---
@@ -26,19 +26,19 @@ ms.date: 04/24/2018
 
 
 
-The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product.
 
 There are several spaces you can explore to learn about specific information:
-- Announcements 
+- Announcements
 - What's new
 - Threat Intelligence
 
 
 There are several ways you can access the Community Center:
-- In the Microsoft Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page. 
+- In the Microsoft Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page.
 - Access the community through the [Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 
-You can instantly view and read conversations that have been posted in the community. 
+You can instantly view and read conversations that have been posted in the community.
 
 To get the full experience within the community such as being able to comment on posts, you'll need to join the community. For more information on how to get started in the Microsoft Tech Community, see [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).

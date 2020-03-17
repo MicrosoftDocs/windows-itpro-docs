@@ -6,7 +6,7 @@ description: New group policy settings for Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -33,7 +33,7 @@ Selecting an alert in either of those places brings up the **Alert management pa
 ![Image of alert management pane and alerts queue](images/atp-alerts-selected.png)
 
 ## Link to another incident
-You can create a new incident from the alert or link to an existing incident. 
+You can create a new incident from the alert or link to an existing incident.
 
 ## Assign alerts
 If an alert is not yet assigned, you can select **Assign to me** to assign the alert to yourself.
@@ -61,14 +61,14 @@ You can use the examples in the following table to help you choose the context f
 | **Suppress alert in my organization** | Alerts with the same alert title on any device will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
 ### Suppress an alert and create a new suppression rule:
-Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert.
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
 2.  Select **Create a suppression rule**.
 
     You can create a suppression condition using these attributes. An AND operator is applied between each condition, so suppression occurs only if all conditions are met.
-    
+
     * File SHA1
     * File name - wildcard supported
     * Folder path - wildcard supported
@@ -77,7 +77,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
     * Command line - wildcard supported
 
 3. Select the **Triggering IOC**.
-    
+
 4. Specify the action and scope on the alert. <br>
    You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and device timeline and will appear as resolved across Microsoft Defender ATP APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the device's associated alerts and from the dashboard and will not be streamed across Microsoft Defender ATP APIs.
 
@@ -105,7 +105,7 @@ Alternatively, the team leader might assign the alert to the **Resolved** queue 
 
 
 ## Alert classification
-You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality, and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification. 
+You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality, and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification.
 
 ## Add comments and view the history of an alert
 You can add comments and view historical events about an alert to see previous changes made to the alert.

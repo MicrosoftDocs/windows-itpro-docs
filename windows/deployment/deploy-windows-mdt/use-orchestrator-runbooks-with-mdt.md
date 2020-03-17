@@ -2,7 +2,7 @@
 title: Use Orchestrator runbooks with MDT (Windows 10)
 description: Learn how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: web services, database
@@ -21,9 +21,9 @@ ms.topic: article
 This topic will show you how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 MDT can integrate with System Center 2012 R2 Orchestrator, which is a component that ties the Microsoft System Center products together, as well as other products from both Microsoft and third-party vendors. The difference between using Orchestrator and "normal" web services, is that with Orchestrator you have a rich drag-and-drop style interface when building the solution, and little or no coding is required.
 
-**Note**  
+**Note**
 If you are licensed to use Orchestrator, we highly recommend that you start using it. To find out more about licensing options for System Center 2012 R2 and Orchestrator, visit the [System Center 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=619553) website.
- 
+
 ## <a href="" id="sec01"></a>Orchestrator terminology
 
 Before diving into the core details, here is a quick course in Orchestrator terminology:
@@ -35,18 +35,18 @@ Before diving into the core details, here is a quick course in Orchestrator term
 -   **Orchestrator web services.** These are the web services you use in the Microsoft Deployment Toolkit to execute runbooks during deployment. The web services listen to TCP port 82 by default.
 -   **Integration packs.** These provide additional workflow activities you can import to integrate with other products or solutions, like the rest of Active Directory, other System Center 2012 R2 products, or Microsoft Exchange Server, to name a few.
 
-**Note**  
+**Note**
 To find and download additional integration packs, see [Integration Packs for System Center 2012 - Orchestrator](https://go.microsoft.com/fwlink/p/?LinkId=619554).
- 
+
 ## <a href="" id="sec02"></a>Create a sample runbook
 
 This section assumes you have Orchestrator 2012 R2 installed on a server named OR01. In this section, you create a sample runbook, which is used to log some of the MDT deployment information into a text file on OR01.
 
 1. On OR01, using File Explorer, create the **E:\\Logfile** folder, and grant Users modify permissions (NTFS).
 2. In the **E:\\Logfile** folder, create the DeployLog.txt file.
-   **Note**  
+   **Note**
    Make sure File Explorer is configured to show known file extensions so the file is not named DeployLog.txt.txt.
-     
+
    ![figure 23](../images/mdt-09-fig23.png)
 
    Figure 23. The DeployLog.txt file.
@@ -140,9 +140,9 @@ Figure 31. The ready-made task sequence.
 ## Run the orchestrator sample task sequence
 
 Since this task sequence just starts a runbook, you can test this on the PC0001 client that you used for the MDT simulation environment.
-**Note**  
+**Note**
 Make sure the account you are using has permissions to run runbooks on the Orchestrator server. For more information about runbook permissions, see [Runbook Permissions](https://go.microsoft.com/fwlink/p/?LinkId=619555).
- 
+
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Using an elevated command prompt (run as Administrator), type the following command:
 

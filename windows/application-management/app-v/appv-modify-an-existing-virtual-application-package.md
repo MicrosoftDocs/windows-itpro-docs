@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -48,7 +48,7 @@ This topic explains how to:
 
 5.  On the **Prepare Computer** page, review the issues that could cause the application update to fail or cause the updated application to contain unnecessary data. Resolve all potential issues before you continue. After making any corrections and resolving all potential issues, click **Refresh** &gt; **Next**.
 
-    **Important**  
+    **Important**
     If you are required to disable virus scanning software, first scan the computer that runs the sequencer to ensure that no unwanted or malicious files are added to the package.
 
 6.  On the **Select Installer** page, click **Browse** and specify the update installation file for the application. If the update does not have an associated installer file, and if you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Maps policies  
+## Maps policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**  
+<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**
 
 <!--SupportedSKUs-->
 <table>
@@ -95,7 +95,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**  
+<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**
 
 <!--SupportedSKUs-->
 <table>
@@ -144,7 +144,7 @@ After the policy is applied, you can verify the settings in the user interface i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Automatic Download and Update of Map Data*
 -   GP name: *TurnOffAutoUpdate*
 -   GP path: *Windows Components/Maps*

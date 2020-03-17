@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 # Security recommendations - threat and vulnerability management
@@ -74,7 +74,7 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 ### Icons
 
-Useful icons also quickly calls your attention to:  
+Useful icons also quickly calls your attention to:
 - ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
 - ![red bug](images/tvm_bug_icon.png) associated public exploits
 - ![light bulb](images/tvm_insight_icon.png) recommendation insights

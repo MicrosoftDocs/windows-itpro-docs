@@ -5,7 +5,7 @@ description: Use the \[ExtRegInf\] .INS file setting to specify your Setup infor
 author: dansimp
 ms.prod: ie11
 ms.assetid: 53148422-d784-44dc-811d-ef814b86a4c6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

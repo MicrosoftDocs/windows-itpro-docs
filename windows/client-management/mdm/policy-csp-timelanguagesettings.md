@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## TimeLanguageSettings policies  
+## TimeLanguageSettings policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**  
+<a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**
 
 <!--SupportedSKUs-->
 <table>

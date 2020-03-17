@@ -36,7 +36,7 @@ The Feedback Hub requires Windows 10 or Windows 10 mobile. If you are having pro
 
 ## Submit feedback
 
-To submit feedback about a failed Windows 10 upgrade, click the following link: [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md) 
+To submit feedback about a failed Windows 10 upgrade, click the following link: [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md)
 
 The Feedback Hub will open.
 

@@ -2,7 +2,7 @@
 title: SMBv1 Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
 description: Best practices, location, values, and security considerations for the policy setting, Microsoft network client Digitally sign communications (if server agrees).
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.date: 01/04/2019
 **Applies to**
 -   Windows 10
 
-This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
+This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows).
 
 The rest of this topic describes the best practices, location, values, and security considerations for the **Microsoft network client: Digitally sign communications (if server agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-always.md).
 
@@ -70,13 +70,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -91,7 +91,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Session hijacking uses tools that allow attackers who have access to the same network as the client or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned Server Message Block (SMB) packets and then modify the traffic and forward it so 
+Session hijacking uses tools that allow attackers who have access to the same network as the client or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned Server Message Block (SMB) packets and then modify the traffic and forward it so
 that the server might perform objectionable actions. Alternatively, the attacker could pose as the server or client device after legitimate authentication and gain unauthorized access to data.
 
 SMB is the resource-sharing protocol that is supported by many Windows operating systems. It is the basis of NetBIOS and many other protocols. SMB signatures authenticate users and the servers that host the data. If either side fails the authentication process, data transmission does not take place.
@@ -109,12 +109,12 @@ In highly secure environments we recommend that you configure all of these setti
 
 > [!NOTE]
 > An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
- 
+
 ### Potential impact
 
 Implementations of the SMB file and print-sharing protocol support mutual authentication. This prevents session hijacking attacks and supports message authentication to prevent man-in-the-middle attacks. SMB signing provides this authentication by placing a digital signature into each SMB, which is then verified by the client and the server.
 
-Implementation of SMB signing may negatively affect performance because each packet must be signed and verified. If these settings are enabled on a server that is performing multiple roles, such as a small business server that is serving as a domain controller, file server, print server, and application server, performance may be substantially slowed. Additionally, if you configure devices to ignore all unsigned SMB communications, older applications and operating systems cannot connect. However, if you completely disable all SMB signing, devices are vulnerable to session-hijacking 
+Implementation of SMB signing may negatively affect performance because each packet must be signed and verified. If these settings are enabled on a server that is performing multiple roles, such as a small business server that is serving as a domain controller, file server, print server, and application server, performance may be substantially slowed. Additionally, if you configure devices to ignore all unsigned SMB communications, older applications and operating systems cannot connect. However, if you completely disable all SMB signing, devices are vulnerable to session-hijacking
 attacks.
 
 ## Related topics

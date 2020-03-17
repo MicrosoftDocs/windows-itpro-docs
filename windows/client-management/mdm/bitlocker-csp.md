@@ -8,7 +8,7 @@ ms.technology: windows
 author: lomayor
 ms.localizationpriority: medium
 ms.date: 04/16/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 # BitLocker CSP
@@ -16,7 +16,7 @@ manager: dansimp
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
-> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
 > You must send all the settings together in a single SyncML to be effective.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
@@ -29,10 +29,10 @@ The following diagram shows the BitLocker configuration service provider in tree
 ![BitLocker csp](images/provisioning-csp-bitlocker.png)
 
 
-<a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
+<a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
-<a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
+<a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**
 <!--Description-->
 Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.
 <!--/Description-->
@@ -56,13 +56,13 @@ Allows the administrator to require storage card encryption on the device. This 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 
 Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
 <!--SupportedValues-->
 - 0 (default) – Storage cards do not need to be encrypted.
-- 1 – Require storage cards to be encrypted.  
+- 1 – Require storage cards to be encrypted.
 <!--/SupportedValues-->
 Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.
 
@@ -90,7 +90,7 @@ If you want to disable this policy use the following SyncML:
 Data type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
+<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**
 <!--Description-->
 Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.
 <!--/Description-->
@@ -114,7 +114,7 @@ Allows the administrator to require encryption to be turned on by using BitLocke
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 Data type is integer. Sample value for this node to enable this policy: 1.
 Supported operations are Add, Get, Replace, and Delete.
@@ -133,7 +133,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 The following list shows the supported values:
 
 -   0 (default) — Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes.
--   1 – Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+-   1 – Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).
 <!--/SupportedValues-->
 If you want to disable this policy, use the following SyncML:
 
@@ -153,7 +153,7 @@ If you want to disable this policy, use the following SyncML:
             </Item>
         </Replace>
     </SyncBody>
-</SyncML>        
+</SyncML>
 ```
 <!--/Policy-->
 <!--Policy-->
@@ -181,7 +181,7 @@ Allows you to set the default encryption method for each of the different drive 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -220,9 +220,9 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
 - 7 = XTS-AES 256
 <!--/SupportedValues-->
 > [!NOTE]
-> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
+> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.
 
-  If you want to disable this policy use the following SyncML: 
+  If you want to disable this policy use the following SyncML:
 
 ```xml
                           <Replace>
@@ -242,7 +242,7 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
+<a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup".
 <!--/Description-->
@@ -266,7 +266,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Require addition
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -346,7 +346,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
+<a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup".
 <!--/Description-->
@@ -388,7 +388,7 @@ ADMX Info:
 This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.
 
 > [!NOTE]
-> In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits. 
+> In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits.
 >
 >In TPM 2.0 if minimum PIN length is set below 6 digits, Windows will attempt to update the TPM lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset. This does not apply to TPM 1.2.
 
@@ -422,7 +422,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
+<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-boot recovery message and URL"
 (PrebootRecoveryInfo_Name).
@@ -512,7 +512,7 @@ Disabling the policy will let the system choose the default behaviors.  If you w
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
+<a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
 <!--/Description-->
@@ -576,16 +576,16 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 <!--SupportedValues-->
-The possible values for 'xx' are:  
+The possible values for 'xx' are:
 - true = Explicitly allow
 - false = Policy not set
 
-The possible values for 'yy' are:  
+The possible values for 'yy' are:
 - 2 = Allowed
 - 1 = Required
 - 0 = Disallowed
 
-The possible values for 'zz' are:  
+The possible values for 'zz' are:
 - 2 = Store recovery passwords only
 - 1 = Store recovery passwords and key packages
 <!--/SupportedValues-->
@@ -609,7 +609,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
+<a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
 <!--/Description-->
@@ -715,7 +715,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
+<a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
 <!--/Description-->
@@ -784,7 +784,7 @@ If you disable or do not configure this setting, all fixed data drives on the co
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
+<a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**
 <!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
 <!--/Description-->
@@ -864,7 +864,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 ```
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
+<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**
 <!--Description-->
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.
 <!--/Description-->
@@ -893,7 +893,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -957,7 +957,7 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
 The expected values for this policy are:
@@ -985,10 +985,10 @@ If you want to disable this policy use the following SyncML:
 
 <!--Policy-->
 
-<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**
 
 <!--Description-->
-This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys.
 
 <!--/Description-->
 
@@ -1012,7 +1012,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 
 Value type is int. Supported operations are Add, Delete, Get, and Replace.
@@ -1021,28 +1021,28 @@ Value type is int. Supported operations are Add, Delete, Get, and Replace.
 
 Supported values are:
 - 0 – Refresh off (default)
-- 1 – Refresh on for Azure AD-joined devices 
-- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
+- 1 – Refresh on for Azure AD-joined devices
+- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices
 
 <!--/SupportedValues-->
 <!--/Policy-->
 
 <!--Policy-->
 
-<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**
 
 <!--Description-->
 
 This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
 <!--/Description-->
 
-The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
+The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.
 
-Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
+Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request.
 
-Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh. 
+Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh.
 
-Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
+Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account.
 
 Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
 - RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
@@ -1067,7 +1067,7 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
@@ -1082,15 +1082,15 @@ Value type is string. Supported operation is Execute. Request ID is expected as 
 >    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
 >    - FDVActiveDirectoryBackup_Name is set to true
 
-<a href="" id="status"></a>**Status**  
+<a href="" id="status"></a>**Status**
 Interior node. Supported operation is Get.
 
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
+<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**
 <!--Description-->
-This node reports compliance state of device encryption on the system. 
+This node reports compliance state of device encryption on the system.
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -1112,13 +1112,13 @@ This node reports compliance state of device encryption on the system.
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
 Value type is int. Supported operation is Get.
 
-Supported values:  
+Supported values:
 - 0 - Indicates that the device is compliant.
 - Any non-zero value - Indicates that the device is not compliant. This value represents a bitmask with each bit and the corresponding error code described in the following table:
 
@@ -1148,13 +1148,13 @@ Supported values:
 
 <!--Policy-->
 
-<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
+<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**
 <!--Description-->
 
-This node reports the status of RotateRecoveryPasswords request. 
+This node reports the status of RotateRecoveryPasswords request.
 <!--/Description-->
 
-Status code can be one of the following:  
+Status code can be one of the following:
 
 - 2 – Not started
 - 1 - Pending
@@ -1180,7 +1180,7 @@ Status code can be one of the following:
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 <!--/SupportedSKUs-->
 
 Value type is int. Supported operation is Get.
@@ -1189,10 +1189,10 @@ Value type is int. Supported operation is Get.
 
 <!--Policy-->
 
-<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**
 
 <!--Description-->
-This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
 <!--/Description-->
 <!--SupportedSKUs-->
@@ -1215,7 +1215,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
-</table> 
+</table>
 
 <!--/SupportedSKUs-->
 
@@ -1256,7 +1256,7 @@ The following example is provided to show proper format and should not be taken 
         </Item>
       </Replace>
 
-      <!-- All of the following policies are only supported on desktop SKU -->    
+      <!-- All of the following policies are only supported on desktop SKU -->
       <Replace>
         <CmdID>$CmdID$</CmdID>
         <Item>

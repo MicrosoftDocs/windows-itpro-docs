@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows 10, version 1803, connection endpoints for non-Enterprise editions
 
@@ -27,12 +27,12 @@ In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.mic
 
 We used the following methodology to derive these network endpoints:
 
-1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
-6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
+6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -130,19 +130,19 @@ We used the following methodology to derive these network endpoints:
 | au.download.windowsupdate.com* | HTTP | Enables connections to Windows Update. |
 | cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
 | client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Microsoft 365 admin center’s shared infrastructure, including Office. |
-| cloudtile.photos.microsoft.com.akadns.net	| HTTPS |	Photos App in MS Store 
+| cloudtile.photos.microsoft.com.akadns.net	| HTTPS |	Photos App in MS Store
 | config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
 | ctldl.windowsupdate.com/* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
 | cy2.licensing.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
 | cy2.settings.data.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. | 
+| displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. |
 | download.windowsupdate.com/*	| HTTPS |	Enables connections to Windows Update. |
 | emdl.ws.microsoft.com/* | HTTP | Used to download apps from the Microsoft Store. |
 | fe2.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.mp.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| flightingservicewus.cloudapp.net	| HTTPS |	Insider Program | 
+| flightingservicewus.cloudapp.net	| HTTPS |	Insider Program |
 | g.live.com/odclientsettings/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
 | g.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | ipv4.login.msa.akadns6.net	| HTTPS |	Used for Microsoft accounts to sign in. |
@@ -152,14 +152,14 @@ We used the following methodology to derive these network endpoints:
 | ocos-office365-s2s.msedge.net/*	| HTTPS |	Used to connect to the Microsoft 365 admin center's shared infrastructure. |
 | ocsp.digicert.com* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
 | oneclient.sfx.ms/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
-| onecollector.cloudapp.aria.akadns.net	| HTTPS |	Office telemetry | 
+| onecollector.cloudapp.aria.akadns.net	| HTTPS |	Office telemetry |
 | settings-win.data.microsoft.com/settings/*	| HTTPS |	Used as a way for apps to dynamically update their configuration. |
-| share.microsoft.com/windows-app-web-link	| HTTPS |	Traffic related to Books app | 
+| share.microsoft.com/windows-app-web-link	| HTTPS |	Traffic related to Books app |
 | sls.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update. |
 | storecatalogrevocation.storequality.microsoft.com/*	| HTTPS |	Used to revoke licenses for malicious apps on the Microsoft Store. |
 | tile-service.weather.microsoft.com/* | HTTP | Used to download updates to the Weather app Live Tile. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com	| HTTPS |	Used for content regulation. |
 | vip5.afdorigin-prod-ch02.afdogw.com	| HTTPS |	Used to serve office 365 experimentation traffic. |
 | watson.telemetry.microsoft.com/Telemetry.Request	| HTTPS |	Used by Windows Error Reporting. |
-| wd-prod-cp-us-west-3-fe.westus.cloudapp.azure.com	| HTTPS |	Azure front end traffic | 
-| www.bing.com/*	| HTTPS |	Used for updates for Cortana, apps, and Live Tiles. | 
+| wd-prod-cp-us-west-3-fe.westus.cloudapp.azure.com	| HTTPS |	Azure front end traffic |
+| www.bing.com/*	| HTTPS |	Used for updates for Cortana, apps, and Live Tiles. |

@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Licensing (Windows Configuration Designer reference)
 
-Use for settings related to Microsoft licensing programs. 
+Use for settings related to Microsoft licensing programs.
 
 ## Applies to
 
@@ -30,4 +30,4 @@ Enable or disable Windows license reactivation.
 
 ## DisallowKMSClientOnlineAVSValidation
 
-Enable this setting to prevent the device from sending data to Microsoft regarding its activation state. 
+Enable this setting to prevent the device from sending data to Microsoft regarding its activation state.

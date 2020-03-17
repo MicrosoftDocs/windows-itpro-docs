@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -17,7 +17,7 @@ ms.author: dansimp
 **Applies to**
 -   Windows 10, version 1607
 
-If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
+If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10.
 
 1. [Upgrade user devices to Windows 10](#upgrade-user-devices-to-windows-10). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
 
@@ -33,11 +33,11 @@ These steps are explained in more detail below.
 
 ## Upgrade user devices to Windows 10
 
-Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10.
 
 ## Verify that App-V applications and settings were migrated correctly
 
-After upgrading a user device to Windows 10, it’s important to verify that App-V applications and settings were migrated correctly during the upgrade. 
+After upgrading a user device to Windows 10, it’s important to verify that App-V applications and settings were migrated correctly during the upgrade.
 
 To verify that the user’s App-V application packages were migrated correctly, type `Get-AppvClientPackage` in Windows PowerShell.
 
@@ -45,13 +45,13 @@ To verify that the user’s App-V settings were migrated correctly, type `Get-Ap
 
 ## Enable the in-box App-V client
 
-With Windows 10, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell. 
+With Windows 10, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell.
 
 **To enable the App-V client with Group Policy**
 
 1. Open the device’s **Group Policy Editor**.
 
-2. Navigate to **Computer Configuration > Administrative Templates > System > App-V**. 
+2. Navigate to **Computer Configuration > Administrative Templates > System > App-V**.
 
 3. Run **Enables App-V Client** and then select **Enabled** on the screen that appears.
 
@@ -73,27 +73,27 @@ Once you’ve enabled the in-box App-V client, you need to configure it to point
 
 **To modify client settings to point to an existing App-V publishing server with Windows PowerShell**
 
-Type the following cmdlet in a Windows PowerShell window: 
+Type the following cmdlet in a Windows PowerShell window:
 
-`Add-AppvPublishingServer -Name AppVServer -URL https:// appvserver:2222` 
+`Add-AppvPublishingServer -Name AppVServer -URL https:// appvserver:2222`
 
-**To modify client settings to point to an existing App-V publishing server with Group Policy** 
+**To modify client settings to point to an existing App-V publishing server with Group Policy**
 
 1. Open the device’s **Local Group Policy Editor**.
 
-2. Navigate to **Computer Configuration > Administrative Templates > System > App-V > Publishing**.  
+2. Navigate to **Computer Configuration > Administrative Templates > System > App-V > Publishing**.
 
 3. Enter your existing App-V publishing server’s details in **Options** and then click or press **Apply**.
 
 ## Verify that the in-box App-V client can receive and launch .appv packages
 
-1. Add and publish a package using the following Windows PowerShell cmdlets: 
+1. Add and publish a package using the following Windows PowerShell cmdlets:
 
-    `Add-AppvClientPackage \\path\to\appv\package.appv | Publish-AppvClientPackage` 
+    `Add-AppvClientPackage \\path\to\appv\package.appv | Publish-AppvClientPackage`
 
-2. Launch the published package. 
+2. Launch the published package.
 
-3. Unpublish an existing package use the following cmdlet: 
+3. Unpublish an existing package use the following cmdlet:
 
     `Unpublish-AppvClientPackage "ContosoApplication"`
 

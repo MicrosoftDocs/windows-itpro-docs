@@ -2,7 +2,7 @@
 title: Audit Removable Storage (Windows 10)
 description: The Advanced Security Audit policy setting, Audit Removable Storage, determines when there is a read or a write to a removable drive.
 ms.assetid: 1746F7B3-8B41-4661-87D8-12F734AFFB26
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -52,7 +52,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 >[!NOTE]
 >
->- The result of the auto-resolve action may influence the Device risk level calculation which is based on the active alerts found on a device.  
+>- The result of the auto-resolve action may influence the Device risk level calculation which is based on the active alerts found on a device.
 >- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 ## Allow or block file
@@ -134,7 +134,7 @@ This feature is only available if you have an active Office 365 E5 or the Threat
 When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 >[!NOTE]
->You'll need to have the appropriate license to enable this feature. 
+>You'll need to have the appropriate license to enable this feature.
 
 To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Microsoft Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 

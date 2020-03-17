@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,29 +36,29 @@ This event generates when an NTFS hard link was successfully created.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4664</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12800</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-21T23:50:26.871375900Z" /> 
- <EventRecordID>276680</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="2624" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4664</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12800</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-21T23:50:26.871375900Z" />
+ <EventRecordID>276680</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="2624" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x43659</Data> 
- <Data Name="FileName">C:\\notepad.exe</Data> 
- <Data Name="LinkName">C:\\Docs\\My.exe</Data> 
- <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x43659</Data>
+ <Data Name="FileName">C:\\notepad.exe</Data>
+ <Data Name="LinkName">C:\\Docs\\My.exe</Data>
+ <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data>
  </EventData>
  </Event>
 

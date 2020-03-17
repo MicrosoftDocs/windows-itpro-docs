@@ -2,7 +2,7 @@
 title: Mobile device management MDM for device updates
 description: Windows 10 provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: mdm,management,administrator
 ms.author: dansimp
@@ -14,7 +14,7 @@ ms.date: 11/15/2017
 ---
 
 
-# Mobile device management (MDM) for device updates 
+# Mobile device management (MDM) for device updates
 
 >[!TIP]
 >If you're not a developer or administrator, you'll find more helpful information in the [Windows Update: Frequently Asked Questions](https://support.microsoft.com/help/12373/windows-update-faq).
@@ -200,7 +200,7 @@ The following diagram shows the Update policies in a tree format.
 
 > [!IMPORTANT]
 > This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
+
 
 <p style="margin-left: 20px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
@@ -703,7 +703,7 @@ The update approval list enables IT to approve individual updates and update cla
 
 > **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
 
- 
+
 
 Supported operations are Get and Add.
 
@@ -885,7 +885,7 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 </tbody>
 </table>
 
- 
+
 
 Here is the list of older policies that are still supported for backward compatibility. You can use these for Windows 10, version 1511 devices.
 
@@ -899,12 +899,12 @@ For Windows Update for Business, here is the list of supported policies on Windo
 -   For Windows 10, version 1511 (Build 10586): Update/RequireDeferUpgrade, Update/DeferUpdatePeriod and Update/PauseDeferrals. To use DeferUpdatePeriod and PauseDeferrals the RequireDeferUpgrade has to be set to 1, which essentially means for a device running 1511, the Windows Update for Business policies can only be set when a device is configured for CBB servicing.
 -   For Windows 10, version 1607 (Build 14393): Update/BranchReadinessLevel, Update/DeferQualityUpdatesPeriodInDays and Update/PauseQualityUpdates. In 1607 we added support where you can configure Windows Update for Business policies when a device is configured for CB/CBB servicing.
 
-> **Note**  
+> **Note**
 For policies supported for Windows Update for Business, when you set policies for both Windows 10, version 1607 and Windows 10, version 1511 running on 1607, then 1607 policies will be configured (1607 trumps 1511).
 
 For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, the you will get the expected behavior for 1511 policies.
 
- 
+
 
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
 
@@ -968,7 +968,7 @@ The following diagram and screenshots show the process flow of the device update
 
 ![mdm device update management screenshot](images/deviceupdatescreenshot3.png)![mdm device update management screenshot](images/deviceupdatescreenshot4.png)![mdm device update management screenshot](images/deviceupdatescreenshot5.png)![mdm device update management screenshot](images/deviceupdatescreenshot6.png)![mdm device update management screenshot](images/deviceupdatescreenshot7.png)![mdm device update management screenshot](images/deviceupdatescreenshot8.png)![mdm device update management screenshot](images/deviceupdatescreenshot9.png)
 
- 
+
 
 
 

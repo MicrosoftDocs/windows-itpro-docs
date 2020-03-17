@@ -2,7 +2,7 @@
 title: Using BitLocker with other programs FAQ (Windows 10)
 description: Learn how to integrate BitLocker with other software on your device.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -80,7 +80,7 @@ Both fixed and removable data drives can be locked by using the Manage-bde comma
 
 > [!NOTE]
 > Ensure all data is saved to the drive before locking it. Once locked, the drive will become inaccessible.
- 
+
 The syntax of this command is:
 
 <code>manage-bde <i>driveletter</i> -lock</code>
@@ -101,5 +101,5 @@ BitLocker is also supported on data volume VHDs, such as those used by clusters,
 
 ## Can I use BitLocker with virtual machines (VMs)?
 
-Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (via **Settings** > **Accounts** > **Access work or school** > **Connect**) to receive policy. You can enable encryption either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or logon script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.  
+Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (via **Settings** > **Accounts** > **Access work or school** > **Connect**) to receive policy. You can enable encryption either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or logon script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.
 

@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -18,12 +18,12 @@ ms.topic: article
 
 - Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 
-## Overview 
+## Overview
 
-You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. See [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) for more information. 
+You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. See [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) for more information.
 
 An IT administrator can set policies for Windows Update for Business by using Group Policy, or they can be set locally (per device). All of the relevant policies are under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
 
@@ -67,10 +67,10 @@ Drivers are automatically enabled because they are beneficial to device systems.
 
 #### I want to receive pre-release versions of the next feature update
 
-1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
+1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates.
 2. Use Group Policy Management Console to go to: C**omputer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Manage preview builds** and set the policy to **Enable preview builds** for any of test devices you want to install pre-release builds.
 3. Use Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and Feature Updates are received**. In the **Options** pane, use the pulldown menu to select one of the preview builds. We recomment **Windows Insider Program Slow** for commercial customers using pre-release builds for validation.
-4. Select **OK**. 
+4. Select **OK**.
 
 #### I want to manage which released feature update my devices receive
 
@@ -130,7 +130,7 @@ For more granular control, you can set the maximum period of active hours the us
 
 It's best to refrain from setting the active hours policy because it's enabled by default when automatic updates are not disabled and provides a better experience when users can set their own active hours. If you do want to set active hours, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Turn off auto-restart for updates during active hours**.
 
-To update outside of the active hours, you don't need to set any additional settings: simply don't disable automatic restarts. For even more granular control, consider using automatic updates to schedule the install time, day, or week. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates** and select **Auto download and schedule the install**. You can customize this setting to accommodate the time that you want the update to be installed for your devices. 
+To update outside of the active hours, you don't need to set any additional settings: simply don't disable automatic restarts. For even more granular control, consider using automatic updates to schedule the install time, day, or week. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates** and select **Auto download and schedule the install**. You can customize this setting to accommodate the time that you want the update to be installed for your devices.
 
 When you set these policies, installation happens automatically at the specified time and the device will restart 15 minutes after installation is complete (unless it's interrupted by the user).
 
@@ -157,7 +157,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
      ![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
 
  - **If the restart is still pending after the deadline passes:**
- 
+
    - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
 
      ![The notification users get for an approaching restart deadline](images/wufb-pastdeadline-restart-warning.png)
@@ -184,7 +184,7 @@ Still more options are available in **Computer Configuration > Administrative Te
 #### I want to manage the update settings a user can access
 
 Every Windows device provides users with a variety of controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
- 
+
 Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to “Pause updates**.
 When you disable this setting, users will see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
@@ -203,7 +203,7 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

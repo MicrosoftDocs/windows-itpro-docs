@@ -1,8 +1,8 @@
 ---
 title: Find the Application User Model ID of an installed app
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
-description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. 
+description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device.
 author: dansimp
 ms.author: dansimp
 ms.topic: article

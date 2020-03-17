@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -35,12 +35,12 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowConfigurationUpdateForBooksLibrary](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary
 - **Data type:** Integer
 
 #### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\BooksLibrary
-- **Value name:** AllowConfigurationUpdateForBooksLibrary 
+- **Value name:** AllowConfigurationUpdateForBooksLibrary
 - **Value type:** REG_DWORD
 
 ### Related topics

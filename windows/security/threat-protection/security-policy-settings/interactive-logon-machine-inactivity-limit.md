@@ -2,7 +2,7 @@
 title: Interactive logon Machine inactivity limit (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Machine inactivity limit security policy setting.
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -53,13 +53,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

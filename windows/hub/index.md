@@ -24,7 +24,7 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-2004"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-2004">
         <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a><br>
     </td>
@@ -64,5 +64,5 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
 These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
-  
+
 - [Read more about Windows as a Service](/windows/deployment/update/waas-overview)

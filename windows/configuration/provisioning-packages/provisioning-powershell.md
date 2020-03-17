@@ -1,6 +1,6 @@
 ---
 title: PowerShell cmdlets for provisioning Windows 10 (Windows 10)
-description: 
+description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -33,12 +33,12 @@ Windows 10, version 1703, ships with Windows Provisioning PowerShell cmdlets. Th
 <tr><td> Install-TrustedProvisioningCertificate </td><td>   Adds a certificate to the Trusted Certificate store </td><td><code>Install-TrustedProvisioningCertificate &lt;path to local certificate file on disk&gt;</code>  </td></tr>
 <tr><td>Get-TrustedProvisioningCertificate</td><td> List all installed trusted provisioning certificates; use this cmdlet to get the certificate thumbprint to use with the <strong>Uninstall-TrustedProvisioningCertificate</strong> cmdlet</td><td><code>Get-TrustedProvisioningCertificate</code></td></tr>
 <tr><td>Uninstall-TrustedProvisioningCertificate </td><td> Remove a previously installed provisioning certificate</td><td><code>Uninstall-TrustedProvisioningCertificate &lt;thumbprint&gt;</code></td></tr>
-</table>	
+</table>
 
 >[!NOTE]
 > You can use Get-Help to get usage help on any command. For example: `Get-Help Add-ProvisioningPackage`
 
-Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes: 
+Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes:
 
 - ProvTrace.&lt;timestamp&gt;.ETL - ETL trace file, unfiltered
 - ProvTrace.&lt;timestamp&gt;.XML - ETL trace file converted into raw trace events, unfiltered
@@ -67,9 +67,9 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 
 
 
- 
 
- 
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: Custom XML Examples (Windows 10)
 description: Custom XML Examples
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -16,10 +16,10 @@ ms.topic: article
 # Custom XML Examples
 
 
-**Note**  
+**Note**
 Because the tables in this topic are wide, you may need to adjust the width of its window.
 
- 
+
 
 ## In This Topic:
 
@@ -133,7 +133,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 </tbody>
 </table>
 
- 
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -141,7 +141,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 <component type="Documents" context="User">
         <displayName>My Video</displayName>
         <role role="Data">
-            <detects>           
+            <detects>
                 <detect>
                     <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>
                 </detect>
@@ -194,7 +194,7 @@ This table describes the behavior in the following example .xml file.
 </tbody>
 </table>
 
- 
+
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
@@ -277,8 +277,8 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
     <rules>
          <include>
             <objectSet>
-         <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>            
-         <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>            
+         <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>
+         <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>
      </objectSet>
           </include>
     </rules>
@@ -290,7 +290,7 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
   <role role="Data">
     <rules>
          <include>
-            <objectSet>                 
+            <objectSet>
 <pattern type="File"> C:\*\Presentations\* [*]</pattern>
 <pattern type="File"> C:\Presentations\* [*]</pattern>
            </objectSet>
@@ -308,9 +308,9 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
 
 [Customize USMT XML Files](usmt-customize-xml-files.md)
 
- 
 
- 
+
+
 
 
 

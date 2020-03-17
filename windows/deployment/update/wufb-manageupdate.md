@@ -10,7 +10,7 @@ ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.date: 06/20/2018
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -19,9 +19,9 @@ ms.topic: article
 
 >Applies to: Windows 10
 
-Windows Update for Business allows users to control when devices should receive a feature or quality update from Windows Update. Depending on the size of your organization you may want to do a wave deployment of updates. The first step in this process is to determine which Branch Readiness Level you want your organization on. For more information on which level is right for your organization review [Overview of Windows as a service](waas-overview.md). 
+Windows Update for Business allows users to control when devices should receive a feature or quality update from Windows Update. Depending on the size of your organization you may want to do a wave deployment of updates. The first step in this process is to determine which Branch Readiness Level you want your organization on. For more information on which level is right for your organization review [Overview of Windows as a service](waas-overview.md).
 
-The following policies let you configure when you want a device to see a feature and or quality update from Windows Update. 
+The following policies let you configure when you want a device to see a feature and or quality update from Windows Update.
 
 ## Policy overview
 
@@ -33,7 +33,7 @@ The following policies let you configure when you want a device to see a feature
 
 ## Suggested configuration for a non-wave deployment
 
-If you don't need a wave deployment and have a small set of devices to manage, we recommend the following configuration:  
+If you don't need a wave deployment and have a small set of devices to manage, we recommend the following configuration:
 
 |Policy| Location|Suggested configuration |
 |-|-|-|
@@ -54,7 +54,7 @@ Depending on your organizational size and requirements you might be able to test
 
 ## Wave deployment for feature updates
 
-If you want to deploy feature updates in waves we suggest using the following configuration. For the deferral days we recommend staging them out in 1-month increments. Manage your risk by placing critical devices later in the wave (deferrals > 30 or 60 days) while placing your low risk devices earlier in the wave (deferrals < 30 days). Using deferrals days is a great method to manage your wave deployment. Using this in combination with our suggested early validation will help you prepare your environment for the latest updates from Windows. 
+If you want to deploy feature updates in waves we suggest using the following configuration. For the deferral days we recommend staging them out in 1-month increments. Manage your risk by placing critical devices later in the wave (deferrals > 30 or 60 days) while placing your low risk devices earlier in the wave (deferrals < 30 days). Using deferrals days is a great method to manage your wave deployment. Using this in combination with our suggested early validation will help you prepare your environment for the latest updates from Windows.
 
 |Policy|Location|Suggested configuration |
 |-|-|-|

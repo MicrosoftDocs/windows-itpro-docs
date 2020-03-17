@@ -7,7 +7,7 @@ ms.prod: ie11
 title: Use the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 author: dansimp
@@ -71,14 +71,14 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 
 - [Workflow-based processes for employees using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
 
-- [How to use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md) 
+- [How to use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md)
 
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
- 
 
- 
+
+
 
 
 

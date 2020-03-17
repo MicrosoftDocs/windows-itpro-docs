@@ -2,7 +2,7 @@
 title: Managing Application-Compatibility Fixes and Custom Fix Databases (Windows 10)
 description: Learn why you should use compatibility fixes, and how to deploy and manage custom-compatibility fix databases.
 ms.assetid: 9c2e9396-908e-4a36-ad67-2e40452ce017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -59,7 +59,7 @@ This section provides information about managing your application-compatibility 
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)

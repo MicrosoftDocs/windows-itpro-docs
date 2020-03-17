@@ -2,7 +2,7 @@
 title: Create an Inbound Port Rule (Windows 10)
 description: Create an Inbound Port Rule
 ms.assetid: a7b6c6ca-32fa-46a9-a5df-a4e43147da9f
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.date: 08/17/2017
 -   Windows 10
 -   Windows Server 2016
 
-To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Defender Firewall 
+To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Defender Firewall
 with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port.
 
 **Administrative credentials**
@@ -67,5 +67,5 @@ This topic describes how to create a standard port rule for a specified protocol
 9. On the **Profile** page, select the network location types to which this rule applies, and then click **Next**.
 
    >**Note:**  If this GPO is targeted at server computers running Windows Server 2008 that never move, consider modifying the rules to apply to all network location type profiles. This prevents an unexpected change in the applied rules if the network location type changes due to the installation of a new network card or the disconnection of an existing network card’s cable. A disconnected network card is automatically assigned to the Public network location type.
-   
+
 10. On the **Name** page, type a name and description for your rule, and then click **Finish**.

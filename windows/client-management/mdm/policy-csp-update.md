@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 02/10/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -20,7 +20,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Update policies  
+## Update policies
 
 <dl>
   <dd>
@@ -194,8 +194,8 @@ manager: dansimp
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
-  <dd> 
-    <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
+  <dd>
+    <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a>
   </dd>
   <dd>
     <a href="#update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
@@ -212,7 +212,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
+<a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
 
 <!--SupportedSKUs-->
 <table>
@@ -266,7 +266,7 @@ The default is 17 (5 PM).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off auto-restart for updates during active hours*
 -   GP name: *ActiveHours*
 -   GP element: *ActiveHoursEndTime*
@@ -279,7 +279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
+<a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**
 
 <!--SupportedSKUs-->
 <table>
@@ -330,7 +330,7 @@ The default value is 18 (hours).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify active hours range for auto-restarts*
 -   GP name: *ActiveHoursMaxRange*
 -   GP element: *ActiveHoursMaxRange*
@@ -343,7 +343,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
+<a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**
 
 <!--SupportedSKUs-->
 <table>
@@ -397,7 +397,7 @@ The default value is 8 (8 AM).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off auto-restart for updates during active hours*
 -   GP name: *ActiveHours*
 -   GP element: *ActiveHoursStartTime*
@@ -410,7 +410,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
+<a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**
 
 <!--SupportedSKUs-->
 <table>
@@ -460,13 +460,13 @@ Supported operations are Get and Replace.
 
 > [!IMPORTANT]
 > This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
+
 
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateMode*
@@ -490,7 +490,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
+<a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**
 
 <!--SupportedSKUs-->
 <table>
@@ -541,7 +541,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow updates to be downloaded automatically over metered connections*
 -   GP name: *AllowAutoWindowsUpdateDownloadOverMeteredNetwork*
 -   GP path: *Windows Components/Windows Update*
@@ -560,7 +560,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
+<a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**
 
 <!--SupportedSKUs-->
 <table>
@@ -607,7 +607,7 @@ Added in Windows 10, version 1607. Allows the IT admin to manage whether to sca
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AllowMUUpdateServiceId*
@@ -627,7 +627,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
+<a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**
 
 <!--SupportedSKUs-->
 <table>
@@ -689,7 +689,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
+<a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**
 
 <!--SupportedSKUs-->
 <table>
@@ -743,7 +743,7 @@ Enabling this policy will disable that functionality, and may cause connection t
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP path: *Windows Components/Windows Update*
@@ -762,7 +762,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
+<a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**
 
 <!--SupportedSKUs-->
 <table>
@@ -809,7 +809,7 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
-Value type is integer. Default is 7 days. 
+Value type is integer. Default is 7 days.
 
 Supported values range: 2-30.
 
@@ -825,7 +825,7 @@ If any of the following two policies are enabled, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadline before auto-restart for update installation*
 -   GP name: *AutoRestartDeadline*
 -   GP element: *AutoRestartDeadline*
@@ -838,7 +838,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-autorestartdeadlineperiodindaysforfeatureupdates"></a>**Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates**  
+<a href="" id="update-autorestartdeadlineperiodindaysforfeatureupdates"></a>**Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -885,7 +885,7 @@ For Feature Updates, this policy specifies the deadline in days before automatic
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
-Value type is integer. Default is 7 days. 
+Value type is integer. Default is 7 days.
 
 Supported values range: 2-30.
 
@@ -901,7 +901,7 @@ If any of the following two policies are enabled, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadline before auto-restart for update installation*
 -   GP name: *AutoRestartDeadline*
 -   GP element: *AutoRestartDeadlineForFeatureUpdates*
@@ -914,7 +914,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
+<a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**
 
 <!--SupportedSKUs-->
 <table>
@@ -963,7 +963,7 @@ The default value is 15 (minutes).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure auto-restart reminder notifications for updates*
 -   GP name: *AutoRestartNotificationConfig*
 -   GP element: *AutoRestartNotificationSchd*
@@ -980,7 +980,7 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
+<a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**
 
 <!--SupportedSKUs-->
 <table>
@@ -1027,7 +1027,7 @@ Added in Windows 10, version 1703. Allows the IT Admin to specify the method by
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure auto-restart required notification for updates*
 -   GP name: *AutoRestartRequiredNotificationDismissal*
 -   GP element: *AutoRestartRequiredNotificationDismissal*
@@ -1047,7 +1047,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-automaticmaintenancewakeup"></a>**Update/AutomaticMaintenanceWakeUp**  
+<a href="" id="update-automaticmaintenancewakeup"></a>**Update/AutomaticMaintenanceWakeUp**
 
 <!--SupportedSKUs-->
 <table>
@@ -1100,7 +1100,7 @@ If you enable this policy setting, Automatic Maintenance attempts to set OS wake
 If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic Maintenance WakeUp Policy*
 -   GP name: *WakeUpPolicy*
 -   GP path: *Windows Components/Maintenance Scheduler*
@@ -1108,7 +1108,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   true - Enable
 -   false - Disable (Default)
 <!--/SupportedValues-->
@@ -1123,7 +1123,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
+<a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**
 
 <!--SupportedSKUs-->
 <table>
@@ -1170,7 +1170,7 @@ Added in Windows 10, version 1607. Allows the IT admin to set which branch a de
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *BranchReadinessLevelId*
@@ -1184,7 +1184,7 @@ The following list shows the supported values:
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
--  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
 -  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16)
 
 <!--/SupportedValues-->
@@ -1193,7 +1193,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-configuredeadlineforfeatureupdates"></a>**Update/ConfigureDeadlineForFeatureUpdates**  
+<a href="" id="update-configuredeadlineforfeatureupdates"></a>**Update/ConfigureDeadlineForFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -1240,7 +1240,7 @@ The following list shows the supported values:
 Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineForFeatureUpdates*
 -   GP element: *ConfigureDeadlineForFeatureUpdates*
@@ -1264,7 +1264,7 @@ Default value is 7.
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-configuredeadlineforqualityupdates"></a>**Update/ConfigureDeadlineForQualityUpdates**  
+<a href="" id="update-configuredeadlineforqualityupdates"></a>**Update/ConfigureDeadlineForQualityUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -1311,7 +1311,7 @@ Default value is 7.
 Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineForQualityUpdates*
 -   GP element: *ConfigureDeadlineForQualityUpdates*
@@ -1335,7 +1335,7 @@ Default value is 7.
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-configuredeadlinegraceperiod"></a>**Update/ConfigureDeadlineGracePeriod**  
+<a href="" id="update-configuredeadlinegraceperiod"></a>**Update/ConfigureDeadlineGracePeriod**
 
 <!--SupportedSKUs-->
 <table>
@@ -1383,7 +1383,7 @@ Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineGracePeriod*
 -   GP element: *ConfigureDeadlineGracePeriod*
@@ -1407,7 +1407,7 @@ Default value is 2.
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-configuredeadlinenoautoreboot"></a>**Update/ConfigureDeadlineNoAutoReboot**  
+<a href="" id="update-configuredeadlinenoautoreboot"></a>**Update/ConfigureDeadlineNoAutoReboot**
 
 <!--SupportedSKUs-->
 <table>
@@ -1456,7 +1456,7 @@ Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 
 When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineNoAutoReboot*
 -   GP element: *ConfigureDeadlineNoAutoReboot*
@@ -1465,7 +1465,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   1 - Enabled
 -   0 (default) - Disabled
 <!--/SupportedValues-->
@@ -1480,7 +1480,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
+<a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**
 
 <!--SupportedSKUs-->
 <table>
@@ -1531,7 +1531,7 @@ Added in Windows 10, version 1803. Enable IT admin to configure feature update u
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
+<a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**
 
 <!--SupportedSKUs-->
 <table>
@@ -1585,7 +1585,7 @@ Supported values are 0-365 days.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *DeferFeatureUpdatesPeriodId*
@@ -1598,7 +1598,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
+<a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**
 
 <!--SupportedSKUs-->
 <table>
@@ -1647,7 +1647,7 @@ Supported values are 0-30.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *DeferQualityUpdatesPeriodId*
@@ -1660,7 +1660,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
+<a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**
 
 <!--SupportedSKUs-->
 <table>
@@ -1800,7 +1800,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *DeferUpgrade*
 -   GP element: *DeferUpdatePeriodId*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -1811,7 +1811,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
+<a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**
 
 <!--SupportedSKUs-->
 <table>
@@ -1870,7 +1870,7 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *DeferUpgrade*
 -   GP element: *DeferUpgradePeriodId*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -1881,7 +1881,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
+<a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**
 
 <!--SupportedSKUs-->
 <table>
@@ -1928,7 +1928,7 @@ Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 2
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Automatic Updates detection frequency*
 -   GP name: *DetectionFrequency_Title*
 -   GP element: *DetectionFrequency_Hour2*
@@ -1941,7 +1941,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**  
+<a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**
 
 <!--SupportedSKUs-->
 <table>
@@ -1994,7 +1994,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not allow update deferral policies to cause scans against Windows Update*
 -   GP name: *DisableDualScan*
 -   GP path: *Windows Components/Windows Update*
@@ -2013,7 +2013,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
+<a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**
 
 <!--SupportedSKUs-->
 <table>
@@ -2078,7 +2078,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartDeadline*
@@ -2091,7 +2091,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestartdeadlineforfeatureupdates"></a>**Update/EngagedRestartDeadlineForFeatureUpdates**  
+<a href="" id="update-engagedrestartdeadlineforfeatureupdates"></a>**Update/EngagedRestartDeadlineForFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -2151,7 +2151,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartDeadlineForFeatureUpdates*
@@ -2164,7 +2164,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
+<a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**
 
 <!--SupportedSKUs-->
 <table>
@@ -2222,7 +2222,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartSnoozeSchedule*
@@ -2235,7 +2235,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestartsnoozescheduleforfeatureupdates"></a>**Update/EngagedRestartSnoozeScheduleForFeatureUpdates**  
+<a href="" id="update-engagedrestartsnoozescheduleforfeatureupdates"></a>**Update/EngagedRestartSnoozeScheduleForFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -2293,7 +2293,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartSnoozeScheduleForFeatureUpdates*
@@ -2306,7 +2306,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
+<a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**
 
 <!--SupportedSKUs-->
 <table>
@@ -2353,7 +2353,7 @@ For Quality Updates, this policy specifies the timing before transitioning from 
 
 Value type is integer. Default value is 7 days.
 
-Supported value range: 2 - 30. 
+Supported value range: 2 - 30.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
@@ -2364,7 +2364,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartTransitionSchedule*
@@ -2377,7 +2377,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-engagedrestarttransitionscheduleforfeatureupdates"></a>**Update/EngagedRestartTransitionScheduleForFeatureUpdates**  
+<a href="" id="update-engagedrestarttransitionscheduleforfeatureupdates"></a>**Update/EngagedRestartTransitionScheduleForFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -2435,7 +2435,7 @@ If any of the following policies are configured, this policy has no effect:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartTransitionScheduleForFeatureUpdates*
@@ -2448,7 +2448,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
+<a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**
 
 <!--SupportedSKUs-->
 <table>
@@ -2498,7 +2498,7 @@ Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not include drivers with Windows Updates*
 -   GP name: *ExcludeWUDriversInQualityUpdate*
 -   GP path: *Windows Components/Windows Update*
@@ -2517,7 +2517,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
+<a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**
 
 <!--SupportedSKUs-->
 <table>
@@ -2567,7 +2567,7 @@ Added in the April service release of Windows 10, version 1607. Allows Windows U
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUFillEmptyContentUrls*
@@ -2587,7 +2587,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
+<a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**
 
 <!--SupportedSKUs-->
 <table>
@@ -2630,7 +2630,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies.
 
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
@@ -2647,7 +2647,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell:
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2658,7 +2658,7 @@ To validate this policy:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
+<a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**
 
 <!--SupportedSKUs-->
 <table>
@@ -2701,7 +2701,7 @@ To validate this policy:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies.
 
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
@@ -2718,7 +2718,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell:
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2729,7 +2729,7 @@ To validate this policy:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**  
+<a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**
 
 <!--SupportedSKUs-->
 <table>
@@ -2776,7 +2776,7 @@ Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview bu
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Manage preview builds*
 -   GP name: *ManagePreviewBuilds*
 -   GP element: *ManagePreviewBuildsId*
@@ -2797,7 +2797,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
+<a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**
 
 <!--SupportedSKUs-->
 <table>
@@ -2853,7 +2853,7 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *DeferUpgrade*
 -   GP element: *PauseDeferralsId*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -2871,7 +2871,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
+<a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -2921,7 +2921,7 @@ Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates fo
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *PauseFeatureUpdatesId*
@@ -2941,7 +2941,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
+<a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -2990,7 +2990,7 @@ Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add,
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *PauseFeatureUpdatesStartId*
@@ -3003,7 +3003,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
+<a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**
 
 <!--SupportedSKUs-->
 <table>
@@ -3050,7 +3050,7 @@ Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *PauseQualityUpdatesId*
@@ -3070,7 +3070,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
+<a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -3119,7 +3119,7 @@ Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add,
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *PauseQualityUpdatesStartId*
@@ -3132,7 +3132,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**  
+<a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**
 
 <!--Description-->
 This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupdateapproval) instead.
@@ -3143,7 +3143,7 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
+<a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**
 
 <!--SupportedSKUs-->
 <table>
@@ -3194,7 +3194,7 @@ Allows the IT admin to set a device to Semi-Annual Channel train.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *DeferUpgrade*
 -   GP element: *DeferUpgradePeriodId*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -3212,7 +3212,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
+<a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**
 
 <!--SupportedSKUs-->
 <table>
@@ -3256,7 +3256,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
+> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
@@ -3276,7 +3276,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
+<a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**
 
 <!--SupportedSKUs-->
 <table>
@@ -3325,7 +3325,7 @@ The default value is 15 (minutes).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure auto-restart warning notifications schedule for updates*
 -   GP name: *RestartWarnRemind*
 -   GP element: *RestartWarn*
@@ -3342,7 +3342,7 @@ Supported values are 15, 30, or 60 (minutes).
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
+<a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**
 
 <!--SupportedSKUs-->
 <table>
@@ -3395,7 +3395,7 @@ The default value is 4 (hours).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure auto-restart warning notifications schedule for updates*
 -   GP name: *RestartWarnRemind*
 -   GP element: *RestartWarnRemind*
@@ -3412,7 +3412,7 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
+<a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**
 
 <!--SupportedSKUs-->
 <table>
@@ -3463,7 +3463,7 @@ Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchDay*
@@ -3489,7 +3489,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
+<a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**
 
 <!--SupportedSKUs-->
 <table>
@@ -3540,7 +3540,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchEveryWeek*
@@ -3553,7 +3553,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
+<a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**
 
 <!--SupportedSKUs-->
 <table>
@@ -3604,7 +3604,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchFirstWeek*
@@ -3617,7 +3617,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
+<a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**
 
 <!--SupportedSKUs-->
 <table>
@@ -3668,7 +3668,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallFourthWeek*
@@ -3681,7 +3681,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
+<a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**
 
 <!--SupportedSKUs-->
 <table>
@@ -3732,7 +3732,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallSecondWeek*
@@ -3745,7 +3745,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
+<a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**
 
 <!--SupportedSKUs-->
 <table>
@@ -3796,7 +3796,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallThirdWeek*
@@ -3809,7 +3809,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
+<a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -3868,7 +3868,7 @@ The default value is 3.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchTime*
@@ -3881,7 +3881,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
+<a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**
 
 <!--SupportedSKUs-->
 <table>
@@ -3928,7 +3928,7 @@ Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off auto-restart notifications for update installations*
 -   GP name: *AutoRestartNotificationDisable*
 -   GP element: *AutoRestartNotificationSchd*
@@ -3948,7 +3948,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setdisablepauseuxaccess"></a>**Update/SetDisablePauseUXAccess**  
+<a href="" id="update-setdisablepauseuxaccess"></a>**Update/SetDisablePauseUXAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -3997,7 +3997,7 @@ Value type is integer. Default is 0. Supported values 0, 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *SetDisablePauseUXAccess*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -4007,7 +4007,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setdisableuxwuaccess"></a>**Update/SetDisableUXWUAccess**  
+<a href="" id="update-setdisableuxwuaccess"></a>**Update/SetDisableUXWUAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -4056,7 +4056,7 @@ Value type is integer. Default is 0. Supported values 0, 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *SetDisableUXWUAccess*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -4066,7 +4066,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
+<a href="" id="update-setedurestart"></a>**Update/SetEDURestart**
 
 <!--SupportedSKUs-->
 <table>
@@ -4115,7 +4115,7 @@ When you set this policy along with Update/ActiveHoursStart, Update/ActiveHoursE
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Update Power Policy for Cart Restarts*
 -   GP name: *SetEDURestart*
 -   GP path: *Windows Components/Windows Update*
@@ -4134,7 +4134,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-targetreleaseversion"></a>**Update/TargetReleaseVersion**  
+<a href="" id="update-targetreleaseversion"></a>**Update/TargetReleaseVersion**
 
 <!--SupportedSKUs-->
 <table>
@@ -4180,7 +4180,7 @@ The following list shows the supported values:
 Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select the target Feature Update version*
 -   GP name: *TargetReleaseVersion*
 -   GP element: *TargetReleaseVersionId*
@@ -4202,7 +4202,7 @@ Value type is a string containing Windows 10 version number. For example, 1809, 
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
+<a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**
 
 <!--SupportedSKUs-->
 <table>
@@ -4247,7 +4247,7 @@ Value type is a string containing Windows 10 version number. For example, 1809, 
 <!--Description-->
 Display options for update notifications. This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-Options: 
+Options:
 
 -  0 (default) – Use the default Windows Update notifications
 -  1 – Turn off all notifications, excluding restart warnings
@@ -4258,7 +4258,7 @@ Options:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Display options for update notifications*
 -   GP name: *UpdateNotificationLevel*
 -   GP path: *Windows Components/Windows Update*
@@ -4279,7 +4279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
+<a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**
 
 <!--SupportedSKUs-->
 <table>
@@ -4331,7 +4331,7 @@ Supported operations are Get and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUURL_Name*
@@ -4371,7 +4371,7 @@ Example
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+<a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**
 
 <!--SupportedSKUs-->
 <table>
@@ -4423,13 +4423,13 @@ To use this setting, you must set two server name values: the server from which 
 Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!NOTE]
-> If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
-> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
+> If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.
+> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUContentHost_Name*

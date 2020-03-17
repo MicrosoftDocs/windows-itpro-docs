@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -46,23 +46,23 @@ More information about Special Groups auditing can be found here:
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4908</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13568</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-01T00:20:40.210246600Z" /> 
- <EventRecordID>1049511</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="532" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4908</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13568</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-01T00:20:40.210246600Z" />
+ <EventRecordID>1049511</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="532" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SidList">%{S-1-5-21-3457937927-2839227994-823803824-512}</Data> 
+ <Data Name="SidList">%{S-1-5-21-3457937927-2839227994-823803824-512}</Data>
  </EventData>
  </Event>
 

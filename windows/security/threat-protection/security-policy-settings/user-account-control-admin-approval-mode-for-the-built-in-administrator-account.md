@@ -2,7 +2,7 @@
 title: User Account Control Admin Approval Mode for the Built-in Administrator account (Windows 10)
 description: Best practices, security considerations, and more for the policy setting, User Account Control Admin Approval Mode for the Built-in Administrator account.
 ms.assetid: d465fc27-1cd2-498b-9cf6-7ad2276e5998
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -30,7 +30,7 @@ When the Admin Approval Mode is enabled, the local administrator account functio
 
 > [!NOTE]
 > If a computer is upgraded from a previous version of the Windows operating system, and the administrator account is the only account on the computer, the built-in administrator account remains enabled, and this setting is also enabled.
- 
+
 ### Possible values
 
 -   Enabled
@@ -48,7 +48,7 @@ When the Admin Approval Mode is enabled, the local administrator account functio
     To enable Admin Approval Mode, you must also configure the local security policy setting: [User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode](https://docs.microsoft.com/windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode) to **Prompt for consent on the secure desktop** and then click OK.
 
 > [!NOTE]
-> After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
+> After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt.
 
 ### Location
 
@@ -61,12 +61,12 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Not defined|
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

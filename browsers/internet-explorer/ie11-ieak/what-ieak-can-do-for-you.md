@@ -7,8 +7,8 @@ author: dansimp
 ms.author: dansimp
 ms.manager: elizapo
 ms.prod: ie11
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: What IEAK can do for you
@@ -18,7 +18,7 @@ ms.date: 05/10/2018
 
 # What IEAK can do for you
 
-Internet Explorer Administration Kit (IEAK) helps corporations, Internet service providers (ISPs), Internet content providers (ICPs), and independent software vendors (ISVs) to deploy and manage web-based solutions. 
+Internet Explorer Administration Kit (IEAK) helps corporations, Internet service providers (ISPs), Internet content providers (ICPs), and independent software vendors (ISVs) to deploy and manage web-based solutions.
 
 IEAK 10 and newer includes the ability to install using one of the following installation modes:
 
@@ -60,7 +60,7 @@ ISVs install IEAK using External mode (for Internet Explorer 10 or newer) or Int
 ## Additional resources
 
 - [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
-- [Download IEAK 11](ieak-information-and-downloads.md) 
+- [Download IEAK 11](ieak-information-and-downloads.md)
 - [IEAK 11 overview](index.md)
 - [IEAK 11 administrators guide](https://docs.microsoft.com/internet-explorer/ie11-ieak/index)
 - [IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)

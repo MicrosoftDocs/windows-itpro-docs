@@ -2,7 +2,7 @@
 title: BitLocker Key Management FAQ (Windows 10)
 description: Browse frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -30,7 +30,7 @@ You can unlock removable data drives by using a password, a smart card, or you c
 
 ## What is the difference between a recovery password, recovery key, PIN, enhanced PIN, and startup key?
 
-For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods). 
+For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods).
 
 ## How can the recovery password and recovery key be stored?
 
@@ -51,8 +51,8 @@ You can use the Manage-bde.exe command-line tool to replace your TPM-only authen
 
 ## When should an additional method of authentication be considered?
 
-New hardware that meets [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack. 
-For older hardware, where a PIN may be needed, it’s recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#bkmk-unlockpol2) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers. 
+New hardware that meets [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack.
+For older hardware, where a PIN may be needed, it’s recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#bkmk-unlockpol2) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers.
 
 ## If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
 
@@ -60,7 +60,7 @@ BitLocker is designed to make the encrypted drive unrecoverable without the requ
 
 > [!IMPORTANT]
 > Store the recovery information in AD DS, along with your Microsoft Account, or another safe location.
- 
+
 ## Can the USB flash drive that is used as the startup key also be used to store the recovery key?
 
 While this is technically possible, it is not a best practice to use one USB flash drive to store both keys. If the USB flash drive that contains your startup key is lost or stolen, you also lose access to your recovery key. In addition, inserting this key would cause your computer to automatically boot from the recovery key even if TPM-measured files have changed, which circumvents the TPM's system integrity check.

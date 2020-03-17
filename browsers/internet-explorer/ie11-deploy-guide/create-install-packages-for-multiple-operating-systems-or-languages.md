@@ -5,7 +5,7 @@ description: Create packages for multiple operating systems or languages
 author: dansimp
 ms.prod: ie11
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -34,11 +34,11 @@ You'll create multiple versions of your custom browser package if:
 **Important**<br>
 Except for the **Title bar** text, **Favorites**, **Links bar**, **Home page**, and **Search bar**, keep all of your wizard settings the same for all of your build computers.
 
-     
 
- 
 
- 
+
+
+
 
 
 

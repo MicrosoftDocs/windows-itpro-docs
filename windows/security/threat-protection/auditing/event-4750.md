@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -46,32 +46,32 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4750</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13827</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-14T16:38:37.902710700Z" /> 
- <EventRecordID>172188</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1108" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4750</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13827</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-14T16:38:37.902710700Z" />
+ <EventRecordID>172188</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1108" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserName">ServiceDeskMain</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6119</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3007b</Data> 
- <Data Name="PrivilegeList">-</Data> 
- <Data Name="SamAccountName">ServiceDeskMain</Data> 
- <Data Name="SidHistory">-</Data> 
+ <Data Name="TargetUserName">ServiceDeskMain</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6119</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3007b</Data>
+ <Data Name="PrivilegeList">-</Data>
+ <Data Name="SamAccountName">ServiceDeskMain</Data>
+ <Data Name="SidHistory">-</Data>
  </EventData>
  </Event>
 ```
@@ -109,7 +109,7 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 -   **Security ID** \[Type = SID\]**:** SID of changed group. Event Viewer automatically tries to resolve SIDs and show the group name. If the SID cannot be resolved, you will see the source data in the event.
 
 > **Note**&nbsp;&nbsp;Sometimes you can see the **Group\\Security ID** field contains an old group name in Event Viewer (as you can see in the event example). That happens because Event Viewer caches names for SIDs that it has already resolved for the current session.
-> 
+>
 > **Note**&nbsp;&nbsp;**Security ID** field has the same value as new group name (**Changed Attributes&gt;SAM Account Name**). That is happens because event is generated after name was changed and SID resolves to the new name. It is always better to use SID instead of group names for queries or filtering of events, because you will know for sure that this the right object you are looking for or want to monitor.
 
 -   **Group Name** \[Type = UnicodeString\]**:** the name of the group that was changed. For example: ServiceDesk
@@ -127,7 +127,7 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 **Changed Attributes:**
 
 > **Note**&nbsp;&nbsp;If attribute was not changed it will have “-“ value.
-> 
+>
 > **Note**&nbsp;&nbsp;You might see a 4750 event without any changes inside, that is, where all **Changed Attributes** appear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4750 event will generate, but all attributes will be “-“.
 
 -   **SAM Account Name** \[Type = UnicodeString\]: This is a new name of changed group used to support clients and servers from previous versions of Windows (pre-Windows 2000 logon name). If the value of **sAMAccountName** attribute of group object was changed, you will see the new value here. For example: ServiceDesk.

@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,7 +21,7 @@ ms.date: 07/01/2019
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
-For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
+For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 - **What’s new in MDM for Windows 10 versions**
   - [What’s new in MDM for Windows 10, version 2004](#whats-new-in-mdm-for-windows-10-version-2004)
@@ -1255,7 +1255,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
 </tr>
 </tbody>
-</table> 
+</table>
 
 
 ## What’s new in MDM for Windows 10, version 1607
@@ -1823,7 +1823,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 > [!NOTE]
 >For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
- 
+
 ```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
@@ -1926,7 +1926,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 > [!NOTE]
 >The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
- 
+
 
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
@@ -1987,7 +1987,7 @@ No. Only one MDM is allowed.
 5.  Set quota to unlimited.
 
     ![aad maximum joined devices](images/faq-max-devices.png)
- 
+
 
 ### **What is dmwappushsvc?**
 

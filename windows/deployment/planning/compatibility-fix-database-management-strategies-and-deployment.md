@@ -1,10 +1,10 @@
 ---
 title: Compatibility Fix Database Management Strategies and Deployment (Windows 10)
 ms.assetid: fdfbf02f-c4c4-4739-a400-782204fd3c6c
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
-description: 
+description:
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
@@ -102,7 +102,7 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 5.  The team that manages the centralized database opens Custom DB1 and uses the Compatibility Administrator to include the new compatibility fixes that were included in Custom DB2.
 
-    > [!NOTE]  
+    > [!NOTE]
     > Custom DB1 contains a unique GUID that makes updating the database easier. For example, if you install a new version of the custom compatibility-fix database that uses the same GUID as the previous version, the computer will automatically uninstall the old version.
 
 
@@ -132,7 +132,7 @@ In order to meet the two requirements above, we recommend that you use one of th
 
 You can store your .sdb file on your network share and then call to a script that resides on your specified computers.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > You must ensure that you call the script at a time when it will receive elevated rights. For example, you should call the script by using computer startup scripts instead of a user logon script. You must also ensure that the installation of the custom compatibility-fix database occurs with Administrator rights.
 
 

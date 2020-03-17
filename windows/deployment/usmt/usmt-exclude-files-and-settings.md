@@ -2,7 +2,7 @@
 title: Exclude Files and Settings (Windows 10)
 description: Exclude Files and Settings
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -33,7 +33,7 @@ We recommend that you create a custom .xml file instead of modifying the default
 ### &lt;include&gt; and &lt;exclude&gt;
 The migration .xml files, MigApp.xml, MigDocs, and MigUser.xml, contain the &lt;component&gt; element, which typically represents a self-contained component or an application such as Microsoft® Office Outlook® and Word. To exclude the files and registry settings that are associated with these components, use the &lt;include&gt; and &lt;exclude&gt; elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
-**Note**  
+**Note**
 If you specify an &lt;exclude&gt; rule, always specify a corresponding &lt;include&gt; rule. Otherwise, if you do not specify an &lt;include&gt; rule, the specific files or settings will not be included. They will already be excluded from the migration. Thus, an unaccompanied &lt;exclude&gt; rule is unnecessary.
 
 -   [Example 1: How to migrate all files from C:\\ except .mp3 files](#example-1-how-to-migrate-all-files-from-c-except-mp3-files)
@@ -89,7 +89,7 @@ The following .xml file migrates all files and subfolders in C:\\Data, except th
              <objectSet>
                    <pattern type="File"> C:\Data\temp\* [*]</pattern>
              </objectSet>
-         </exclude>  
+         </exclude>
             </rules>
         </role>
     </component>
@@ -173,7 +173,7 @@ The following .xml file excludes all .mp3 files from the migration:
              <unconditionalExclude>
                         <objectSet>
     <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
-                        </objectSet> 
+                        </objectSet>
              </unconditionalExclude>
             </rules>
         </role>
@@ -263,16 +263,16 @@ You can create and modify a Config.xml file if you want to exclude components fr
 
 See [Config.xml File](usmt-configxml-file.md) for more information.
 
-**Note**  
+**Note**
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
 ## Related topics
 - [Customize USMT XML Files](usmt-customize-xml-files.md)
 - [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

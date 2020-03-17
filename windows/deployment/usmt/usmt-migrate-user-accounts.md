@@ -2,7 +2,7 @@
 title: Migrate User Accounts (Windows 10)
 description: Migrate User Accounts
 ms.assetid: a3668361-43c8-4fd2-b26e-9a2deaeaeb09
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -47,10 +47,10 @@ Links to detailed explanations of commands are available in the Related Topics s
 
         `loadstate \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml /lac /lae`
 
-        **Note**  
+        **Note**
         You do not have to specify the **/lae** option, which enables the account that was created with the **/lac** option. Instead, you can create a disabled local account by specifying only the **/lac** option, and then a local administrator needs to enable the account on the destination computer.
 
-         
+
 
 ## <a href="" id="bkmk-migratetwo"></a>To migrate two domain accounts (User1 and User2)
 Links to detailed explanations of commands are available in the Related Topics section.
@@ -87,9 +87,9 @@ Links to detailed explanations of commands are available in the Related Topics s
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
 
- 
 
- 
+
+
 
 
 

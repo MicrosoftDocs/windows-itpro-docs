@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -29,7 +29,7 @@ Use to configure settings to personalize a PC.
 
 Deploy a jpg, jpeg or png image to the device to be used as desktop image. If you have a local file and want to embed it into the package being deployed, you configure this setting and [DesktopImageUrl](#desktopimageurl).
 
-When using **DeployDesktopImage** and [DeployLockScreenImageFile](#deploylockscreenimage, the file names need to be different. 
+When using **DeployDesktopImage** and [DeployLockScreenImageFile](#deploylockscreenimage, the file names need to be different.
 
 ## DeployLockScreenImage
 

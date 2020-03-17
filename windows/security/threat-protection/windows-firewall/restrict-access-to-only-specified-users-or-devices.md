@@ -2,7 +2,7 @@
 title: Restrict Access to Only Specified Users or Devices (Windows 10)
 description: Restrict access to devices and users that are members of domain groups authorized to access that device using Windows Defender Firewall with Advanced Security.
 ms.assetid: a6106a07-f9e5-430f-8dbd-06d3bf7406df
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

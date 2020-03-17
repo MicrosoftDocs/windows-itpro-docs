@@ -2,7 +2,7 @@
 title: Troubleshoot the TPM (Windows 10)
 description: This topic for the IT professional describes how to view status for, clear, or troubleshoot the Trusted Platform Module (TPM).
 ms.assetid: 1166efaf-7aa3-4420-9279-435d9c6ac6f8
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -142,7 +142,7 @@ If you want to stop using the services that are provided by the TPM, you can use
    -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
 
    -   If you did not save your TPM owner password or no longer know it, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
-  
+
 ## Use the TPM cmdlets
 
 You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).

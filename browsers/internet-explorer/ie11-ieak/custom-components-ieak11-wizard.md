@@ -5,7 +5,7 @@ description: How to use the Custom Components page in the IEAK 11 Customization 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 38a2b90f-c324-4dc8-ad30-8cd3e3e901d7
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -28,7 +28,7 @@ The **Add a Custom Component** box appears.
 2.  Type in the name of your component and then browse to the location of your file (either .cab or .exe).
 
 3.  Pick when to install the component. This can be before IE, after IE, or after the computer restarts.<p>
-**Important**<br>You should install your component before IE if you need to run a batch file to configure your employee settings. You should install your component after IE if you plan to install software updates. 
+**Important**<br>You should install your component before IE if you need to run a batch file to configure your employee settings. You should install your component after IE if you plan to install software updates.
 
 4.  Check the **Only install if IE is installed successfully** box if your component should only install if IE installs successfully. For example, if you’re installing a security update that requires IE.
 
@@ -51,9 +51,9 @@ The boxes clear and you can add another component. Click **Cancel** to go back t
 
 13. Click **Next** to go to the [Internal Install](internal-install-ieak11-wizard.md) page or **Back** to go to the [Automatic Version Synchronization](auto-version-sync-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

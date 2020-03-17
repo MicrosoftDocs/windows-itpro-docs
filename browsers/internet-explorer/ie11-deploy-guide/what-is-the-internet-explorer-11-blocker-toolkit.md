@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid: fafeaaee-171c-4450-99f7-5cc7f8d7ba91
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 for IT Pros)
@@ -55,7 +55,7 @@ Internet Explorer 11 makes browsing the web faster, easier, safer, and more reli
 ### Automatic delivery process
 Internet Explorer 11 only downloads and installs if it’s available for delivery through Automatic Updates; and Automatic Updates only offer Internet Explorer 11 to users with local administrator accounts. User’s without local administrator accounts won’t be prompted to install the update and will continue using their current version of Internet Explorer.
 
-Internet Explorer 11 replaces Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10. If you decide you don’t want Internet Explorer 11, and you’re running Windows 7 SP1 or Windows Server 2008 R2 with SP1, you can uninstall it from the **View installed updates** section of the **Uninstall an update** page of the Control Panel. 
+Internet Explorer 11 replaces Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10. If you decide you don’t want Internet Explorer 11, and you’re running Windows 7 SP1 or Windows Server 2008 R2 with SP1, you can uninstall it from the **View installed updates** section of the **Uninstall an update** page of the Control Panel.
 
 ### Internet Explorer 11 automatic upgrades
 

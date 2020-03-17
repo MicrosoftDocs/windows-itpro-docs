@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -27,7 +27,7 @@ You can add tags on devices using the following ways:
 - Setting a registry key value
 
 > [!NOTE]
-> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.  
+> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
 To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).
 
@@ -71,7 +71,7 @@ You can also delete tags from this view.
 >- Windows 8.1
 >- Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > The maximum number of characters that can be set in a tag is 200.
 
 Devices with similar tags can be handy when you need to apply contextual action on a specific list of devices.
@@ -84,5 +84,5 @@ Use the following registry key entry to add a tag on a device:
 
 >[!NOTE]
 >The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
-> 
+>
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.

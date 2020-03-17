@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -52,7 +52,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data>*S-1-5-32-544</Data>
    ```
- 
+
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via SID:
    ```xml
    <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
@@ -62,7 +62,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
    ```
- 
+
 - Grant a user right to multiple groups (Authenticated Users, Administrators) via strings:
    ```xml
    <Data>Authenticated Users&#xF000;Administrators</Data>
@@ -72,7 +72,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data></Data>
    ```
-   
+
   If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
 
 > [!NOTE]
@@ -1221,7 +1221,7 @@ Assigning this user right to a user allows programs running on behalf of that us
 > [!CAUTION]
 > Assigning this user right can be a security risk. Assign this user right to trusted users only.
 > [!NOTE]
-> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist.
 1) The access token that is being impersonated is for this user.
 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials.
 3) The requested level is less than Impersonate, such as Anonymous or Identify.

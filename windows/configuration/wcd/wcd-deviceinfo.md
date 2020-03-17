@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/21/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -63,5 +63,5 @@ This setting varies by OEM.
 
 ## PhoneSupportPhoneNumber
 
-Use to specify the OEM or mobile operator's support contact phone number. The country code is not required. This string is displayed in the About screen in Settings. This setting also corresponds to the Genuine Windows Phone Certificates (GWPC) support number. 
+Use to specify the OEM or mobile operator's support contact phone number. The country code is not required. This string is displayed in the About screen in Settings. This setting also corresponds to the Genuine Windows Phone Certificates (GWPC) support number.
 

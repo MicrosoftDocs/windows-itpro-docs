@@ -6,7 +6,7 @@ description: You can save your current Enterprise Mode compatibility site list a
 author: dansimp
 ms.prod: ie11
 ms.assetid: 254a986b-494f-4316-92c1-b089ee8b3e0a
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -39,9 +39,9 @@ The first time a user starts Internet Explorer 11 on a managed device; Internet
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

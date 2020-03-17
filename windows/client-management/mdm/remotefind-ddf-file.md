@@ -2,7 +2,7 @@
 title: RemoteFind DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the RemoteFind configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: 5864CBB8-2030-459E-BCF6-9ACB69206FEA
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -298,9 +298,9 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
 
- 
+
+
 
 
 

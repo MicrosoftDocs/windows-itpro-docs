@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -48,51 +48,51 @@ You might see this event without any changes inside, that is, where all **Change
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4742</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13825</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-14T02:35:01.252397000Z" /> 
- <EventRecordID>171754</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1108" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4742</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13825</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-14T02:35:01.252397000Z" />
+ <EventRecordID>171754</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1108" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ComputerAccountChange">-</Data> 
- <Data Name="TargetUserName">WIN81$</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6116</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x2e80c</Data> 
- <Data Name="PrivilegeList">-</Data> 
- <Data Name="SamAccountName">-</Data> 
- <Data Name="DisplayName">-</Data> 
- <Data Name="UserPrincipalName">-</Data> 
- <Data Name="HomeDirectory">-</Data> 
- <Data Name="HomePath">-</Data> 
- <Data Name="ScriptPath">-</Data> 
- <Data Name="ProfilePath">-</Data> 
- <Data Name="UserWorkstations">-</Data> 
- <Data Name="PasswordLastSet">-</Data> 
- <Data Name="AccountExpires">-</Data> 
- <Data Name="PrimaryGroupId">-</Data> 
- <Data Name="AllowedToDelegateTo">%%1793</Data> 
- <Data Name="OldUacValue">0x80</Data> 
- <Data Name="NewUacValue">0x2080</Data> 
- <Data Name="UserAccountControl">%%2093</Data> 
- <Data Name="UserParameters">-</Data> 
- <Data Name="SidHistory">-</Data> 
- <Data Name="LogonHours">-</Data> 
- <Data Name="DnsHostName">-</Data> 
- <Data Name="ServicePrincipalNames">-</Data> 
+ <Data Name="ComputerAccountChange">-</Data>
+ <Data Name="TargetUserName">WIN81$</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6116</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x2e80c</Data>
+ <Data Name="PrivilegeList">-</Data>
+ <Data Name="SamAccountName">-</Data>
+ <Data Name="DisplayName">-</Data>
+ <Data Name="UserPrincipalName">-</Data>
+ <Data Name="HomeDirectory">-</Data>
+ <Data Name="HomePath">-</Data>
+ <Data Name="ScriptPath">-</Data>
+ <Data Name="ProfilePath">-</Data>
+ <Data Name="UserWorkstations">-</Data>
+ <Data Name="PasswordLastSet">-</Data>
+ <Data Name="AccountExpires">-</Data>
+ <Data Name="PrimaryGroupId">-</Data>
+ <Data Name="AllowedToDelegateTo">%%1793</Data>
+ <Data Name="OldUacValue">0x80</Data>
+ <Data Name="NewUacValue">0x2080</Data>
+ <Data Name="UserAccountControl">%%2093</Data>
+ <Data Name="UserParameters">-</Data>
+ <Data Name="SidHistory">-</Data>
+ <Data Name="LogonHours">-</Data>
+ <Data Name="DnsHostName">-</Data>
+ <Data Name="ServicePrincipalNames">-</Data>
  </EventData>
  </Event>
 ```

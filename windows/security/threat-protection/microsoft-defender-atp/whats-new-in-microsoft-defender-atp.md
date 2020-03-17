@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -29,15 +29,15 @@ For more information preview features, see [Preview features](https://docs.micro
 
 
 > [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
-> 
+> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
+>
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
 > ```
 
 
 ## July 2020
-- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
+- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates.
 
 ## June 2020
 - [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
@@ -52,21 +52,21 @@ For more information preview features, see [Preview features](https://docs.micro
 ## November-December 2019
 
 - [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) <BR> Microsoft Defender ATP for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](endpoint-detection-response-mac-preview.md).
- 
+
 - [Threat & Vulnerability Management application and application version end-of-life information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) <BR>Applications and application versions which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
-- [Threat & Vulnerability Management Advanced Hunting Schemas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase. 
- 
+- [Threat & Vulnerability Management Advanced Hunting Schemas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
+
  - [Threat & Vulnerability Management role-based access controls](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
 
 ## October 2019
 
-- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
+- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence.
 
 
-- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   
- 
-- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. 
+- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.
+
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization.
 
 - [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint.
 
@@ -86,17 +86,17 @@ For more information preview features, see [Preview features](https://docs.micro
 ## June 2019
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-  
+
 - [Device health and compliance report](machine-reports.md)  The device health and compliance report provides high-level information about the devices in your organization.
 
 ## May 2019
 
-- [Threat protection reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization. 
+- [Threat protection reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization.
 
 
-- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
+- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender ATP that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
 
-- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ti-indicator) <BR> APIs for indicators are now generally available. 
+- [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ti-indicator) <BR> APIs for indicators are now generally available.
 
 
 - [Interoperability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
@@ -105,12 +105,12 @@ For more information preview features, see [Preview features](https://docs.micro
 ## April 2019
 - [Microsoft Threat Experts Targeted Attack Notification capability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft Threat Experts' Targeted Attack Notification alerts are tailored to organizations to provide as much information as can be quickly delivered thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
 
-- [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities. 
+- [Microsoft Defender ATP API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro) <BR> Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities.
 
 
 
 ## February 2019
-- [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Microsoft Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
+- [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Microsoft Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats.
 
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows devices so that they can send sensor data to the Microsoft Defender ATP sensor.
 
@@ -120,7 +120,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Controlled folder access is now supported on Windows Server 2019.
 
-- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of advanced hunting through the creation of custom detection rules. 
+- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of advanced hunting through the creation of custom detection rules.
 
 - [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Microsoft Defender ATP to provide improved threat detection for Windows Servers.
 
@@ -133,23 +133,23 @@ For more information preview features, see [Preview features](https://docs.micro
 - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<BR>
 Threat Analytics is a set of interactive reports published by the Microsoft Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- New in Windows 10 version 1809, there are two new attack surface reduction rules: 
+- New in Windows 10 version 1809, there are two new attack surface reduction rules:
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes.
-  
+
 - [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
     - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/microsoft-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
     - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus) for Microsoft Defender Antivirus scans.
 
 
-  
+
 ## March 2018
 - [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
 Query data using advanced hunting in Microsoft Defender ATP.
 
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
-    New attack surface reduction rules: 
+    New attack surface reduction rules:
   - Use advanced protection against ransomware
   - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
   - Block process creations originating from PSExec and WMI commands
@@ -163,8 +163,8 @@ Query data using advanced hunting in Microsoft Defender ATP.
 
 - [Conditional Access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> Enable conditional access to better protect users, devices, and data.
 
-- [Microsoft Defender ATP Community center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
-    The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+- [Microsoft Defender ATP Community center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR>
+    The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product.
 
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 You can now block untrusted processes from writing to disk sectors using Controlled Folder Access.

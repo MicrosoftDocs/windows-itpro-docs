@@ -1,6 +1,6 @@
 ---
 title: Virus Information Alliance
-ms.reviewer: 
+ms.reviewer:
 description: The Microsoft Virus Information Alliance (VIA) is a collaborative antimalware program for organizations fighting cybercrime.
 keywords: security, malware, Microsoft, MMPC, Microsoft Malware Protection Center, partners, sharing, samples, vendor exchange, CSS, alliance, WDSI
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 # Virus Information Alliance

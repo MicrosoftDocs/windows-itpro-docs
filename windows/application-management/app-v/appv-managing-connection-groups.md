@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -20,7 +20,7 @@ ms.author: dansimp
 
 Connection groups enable the applications within a package to interact with each other in the virtual environment, while remaining isolated from the rest of the system. By using connection groups, administrators can manage packages independently and can avoid having to add the same application multiple times to a client computer.
 
-**Note**  
+**Note**
 In some previous versions of App-V, connection groups were referred to as Dynamic Suite Composition.
 
 **In this section:**
@@ -65,7 +65,7 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 </tr></tbody>
 </table>
 
- 
+
 
 
 
@@ -77,9 +77,9 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 
 -   [Operations for App-V](appv-operations.md)
 
- 
 
- 
+
+
 
 
 

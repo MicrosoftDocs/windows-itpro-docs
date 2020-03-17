@@ -1,6 +1,6 @@
 ---
 title: Phishing
-ms.reviewer: 
+ms.reviewer:
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ---
@@ -20,7 +20,7 @@ search.appverid: met150
 
 Phishing attacks attempt to steal sensitive information through emails, websites, text messages, or other forms of electronic communication that often look to be official communication from legitimate companies or individuals.
 
-The information that phishers (as the cybercriminals behind phishing attacks are called) attempt to steal can be user names and passwords, credit card details, bank account information, or other credentials. Attackers can then use stolen information for malicious purposes, such as hacking, identity theft, or stealing money directly from bank accounts and credit cards. Phishers can also sell the information in cybercriminal underground marketplaces.  
+The information that phishers (as the cybercriminals behind phishing attacks are called) attempt to steal can be user names and passwords, credit card details, bank account information, or other credentials. Attackers can then use stolen information for malicious purposes, such as hacking, identity theft, or stealing money directly from bank accounts and credit cards. Phishers can also sell the information in cybercriminal underground marketplaces.
 
 ## How phishing works
 
@@ -66,7 +66,7 @@ The implanted malware serves as the point of entry for a more sophisticated atta
 
 ### Whaling
 
-Whaling is a form of phishing in which the attack is directed at high-level or senior executives within specific companies with the direct goal of gaining access to their credentials and/or bank information. The content of the email may be written as a legal subpoena, customer complaint, or other executive issue. This type of attack can also lead to an APT attack within an organization. When the links or attachment are opened, it can assist the attacker in accessing credentials and other personal information, or launch a malware that will lead to an APT.  
+Whaling is a form of phishing in which the attack is directed at high-level or senior executives within specific companies with the direct goal of gaining access to their credentials and/or bank information. The content of the email may be written as a legal subpoena, customer complaint, or other executive issue. This type of attack can also lead to an APT attack within an organization. When the links or attachment are opened, it can assist the attacker in accessing credentials and other personal information, or launch a malware that will lead to an APT.
 
 ### Business email compromise
 

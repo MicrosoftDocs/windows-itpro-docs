@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -27,7 +27,7 @@ Use UniversalAppUninstall settings to uninstall or remove Windows apps.
 
 ## RemoveProvisionedApp
 
-Universal apps can be *provisioned*, which means that they are available on the device for installation in user context. When a user runs the provisioned app, the app is then installed for that user. 
+Universal apps can be *provisioned*, which means that they are available on the device for installation in user context. When a user runs the provisioned app, the app is then installed for that user.
 
 Use **RemoveProvisionedApp** to remove app packages that are available on the device. Any instances of the app that have already been installed by a user are not uninstalled. To uninstall provisioned apps that have been installed by a user, use the [Uninstall](#uninstall) setting.
 

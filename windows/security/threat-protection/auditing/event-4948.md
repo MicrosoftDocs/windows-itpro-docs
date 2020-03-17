@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,25 +38,25 @@ This event doesn't generate when the rule was deleted via Group Policy.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4948</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13571</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-03T21:19:15.646187500Z" /> 
- <EventRecordID>1050934</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="528" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4948</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13571</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-03T21:19:15.646187500Z" />
+ <EventRecordID>1050934</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="528" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ProfileChanged">All</Data> 
- <Data Name="RuleId">{F2649D59-1355-4E3C-B886-CDD08B683199}</Data> 
- <Data Name="RuleName">Allow All Rule</Data> 
+ <Data Name="ProfileChanged">All</Data>
+ <Data Name="RuleId">{F2649D59-1355-4E3C-B886-CDD08B683199}</Data>
+ <Data Name="RuleName">Allow All Rule</Data>
  </EventData>
  </Event>
 

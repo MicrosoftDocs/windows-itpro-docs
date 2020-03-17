@@ -2,7 +2,7 @@
 title: Security and data protection considerations for Windows To Go (Windows 10)
 description: Ensure that the data, content, and resources you work with in the Windows To Go workspace are protected and secure.
 ms.assetid: 5f27339f-6761-44f4-8c29-9a25cf8e75fe
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: mobile, device, USB, secure, BitLocker
@@ -41,10 +41,10 @@ We recommend that you use BitLocker with your Windows To Go drives to protect th
 
 You can enable BitLocker while using the Windows To Go Creator wizard as part of the drive provisioning process before first use; or it can be enabled afterward by the user from within the Windows To Go workspace.
 
-**Tip**  
+**Tip**
 If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.md#wtg-faq-blfail)
 
- 
+
 
 If you are using a host computer running Windows 7 that has BitLocker enabled, you should suspend BitLocker before changing the BIOS settings to boot from USB and then resume BitLocker protection. If BitLocker is not suspended first, the next time the computer is started it will boot into recovery mode.
 
@@ -77,9 +77,9 @@ Windows to Go is a core capability of Windows when it is deployed on the drive a
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
 
- 
+
+
 
 
 

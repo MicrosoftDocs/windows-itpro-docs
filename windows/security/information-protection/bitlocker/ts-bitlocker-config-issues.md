@@ -91,49 +91,49 @@ This issue occurs regardless of any of the following variations in the environme
 
 In the domain controller Application log, the VSS event source records event ID 8229:
 
-> ID: 8229  
-> Level: Warning  
-> ‎Source: VSS  
-> Message: A VSS writer has rejected an event with error 0x800423f4, The writer experienced a non-transient error. If the backup process is retried, the error is likely to reoccur.  
->  
-> Changes that the writer made to the writer components while handling the event will not be available to the requester.  
->  
-> Check the event log for related events from the application hosting the VSS writer.  
->  
-> Operation:  
+> ID: 8229
+> Level: Warning
+> ‎Source: VSS
+> Message: A VSS writer has rejected an event with error 0x800423f4, The writer experienced a non-transient error. If the backup process is retried, the error is likely to reoccur.
+>
+> Changes that the writer made to the writer components while handling the event will not be available to the requester.
+>
+> Check the event log for related events from the application hosting the VSS writer.
+>
+> Operation:
 > PostSnapshot Event
->  
-> Context:  
+>
+> Context:
 > Execution Context: Writer
-> Writer Class Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}  
-> Writer Name: NTDS  
+> Writer Class Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}
+> Writer Name: NTDS
 > Writer Instance ID: {d170b355-a523-47ba-a5c8-732244f70e75}
 > Command Line: C:\\Windows\\system32\\lsass.exe
->  
-> Process ID: 680  
+>
+> Process ID: 680
 
 In the domain controller Directory Services event log, you see an event that resembles the following:
 
-> Error Microsoft-Windows-ActiveDirectory\_DomainService 1168  
+> Error Microsoft-Windows-ActiveDirectory\_DomainService 1168
 > Internal Processing Internal error: An Active Directory Domain Services error has occurred.
->  
->‎ &nbsp;Additional Data  
-> ‎&nbsp;&nbsp;Error value (decimal):  -1022  
->  
-> Error value (hex): fffffc02  
->  
-> Internal ID: 160207d9  
+>
+>‎ &nbsp;Additional Data
+> ‎&nbsp;&nbsp;Error value (decimal):  -1022
+>
+> Error value (hex): fffffc02
+>
+> Internal ID: 160207d9
 
 > [!NOTE]
 > The internal ID of this event may differ based on your operating system release and path level.
 
-After this issue occurs, if you run the **VSSADMIN list writers** command, you see output that resembles the following for the Active Directory Domain Services (NTDS) VSS Writer:  
+After this issue occurs, if you run the **VSSADMIN list writers** command, you see output that resembles the following for the Active Directory Domain Services (NTDS) VSS Writer:
 
-> Writer name: 'NTDS'  
-> &nbsp;&nbsp;Writer Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}  
-> &nbsp;&nbsp;Writer Instance Id: {08321e53-4032-44dc-9b03-7a1a15ad3eb8}  
-> &nbsp;&nbsp;State: \[11\] Failed  
-> &nbsp;&nbsp;Last error: Non-retryable error  
+> Writer name: 'NTDS'
+> &nbsp;&nbsp;Writer Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}
+> &nbsp;&nbsp;Writer Instance Id: {08321e53-4032-44dc-9b03-7a1a15ad3eb8}
+> &nbsp;&nbsp;State: \[11\] Failed
+> &nbsp;&nbsp;Last error: Non-retryable error
 
 Additionally, you cannot back up the VMs until you restart them.
 

@@ -6,7 +6,7 @@ description: Use the topics in this section to learn about Group Policy and how 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 50383d3f-9ac9-4a30-8852-354b6eb9434a
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -37,13 +37,13 @@ Use the topics in this section to learn about Group Policy and how to use it to 
 |[ActiveX installation using group policy](activex-installation-using-group-policy.md) |Info about using the ActiveX Installer Service (AXIS) and Group Policy to manage your ActiveX control deployment. |
 |[Group Policy and compatibility with Internet Explorer 11](group-policy-compatibility-with-ie11.md) |Our Group Policy recommendations for security, performance, and compatibility with previous versions of IE, regardless of which Zone the website is in. |
 |[Group policy preferences and Internet Explorer 11](group-policy-preferences-and-ie11.md) |Info about Group Policy preferences, as compared to Group Policy settings. |
-|[Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md) |Info about Administrative Templates, including where to store them and the related Group Policy settings. | 
+|[Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md) |Info about Administrative Templates, including where to store them and the related Group Policy settings. |
 |[Enable and disable add\-ons using administrative templates and group policy](enable-and-disable-add-ons-using-administrative-templates-and-group-policy.md) |Guidance about how to use your local Group Policy editor or the CLSID and Administrative Templates to manage your Group Policy objects.
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Protect your organization against web threats
 description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
-keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -31,7 +31,7 @@ Web protection uses network protection to provide web browsing security on Micro
 
 To turn on network protection on your devices:
 - Edit the Microsoft Defender ATP security baseline under **Web & Network Protection** to enable network protection before deploying or redeploying it. [Learn about reviewing and assigning the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-atp-security-baseline)
-- Turn network protection on using Intune device configuration, SCCM, Group Policy, or your MDM solution. [Read more about enabling network protection](enable-network-protection.md)  
+- Turn network protection on using Intune device configuration, SCCM, Group Policy, or your MDM solution. [Read more about enabling network protection](enable-network-protection.md)
 
 >[!Note]
 >If you set network protection to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.

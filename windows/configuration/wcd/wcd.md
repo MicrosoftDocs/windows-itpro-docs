@@ -8,13 +8,13 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
 
-This section describes the settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer. 
+This section describes the settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer.
 
 ## Edition that each group of settings applies to
 

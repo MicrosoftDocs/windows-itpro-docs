@@ -2,7 +2,7 @@
 title: Domain member Disable machine account password changes (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Disable machine account password changes security policy setting.
 ms.assetid: 1f660300-a07a-4243-a09f-140aa1ab8867
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -43,8 +43,8 @@ Verify that the **Domain member: Disable machine account password changes** opti
 3. You may want to consider using this policy setting in specific environments, such as the following:
 
      - Non-persistent Virtual Desktop Infrastructure implementations. In such implementations, each session starts from a read-only base image.
-     - Embedded devices that do not have write access to the OS volume.  
-  
+     - Embedded devices that do not have write access to the OS volume.
+
     In either case, a password change that was made during normal operations would be lost as soon as the session ends. We strongly recommend that you plan password changes for maintenance windows. Add the password changes to the updates and modifications that Windows performs during maintenance windows. To trigger a password update on a specific OS volume, run the following command:
 
      ```
@@ -61,15 +61,15 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-| Server type or GPO | Default value | 
+| Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Disabled | 
-| Default Domain Controller Policy | Disabled| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy | Disabled |
+| Default Domain Controller Policy | Disabled|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-By default, devices running Windows Server that belong to a domain automatically change their passwords for their accounts every certain number of days, typically 30. If you disable this policy setting, devices that run Windows Server retain the same passwords as their machine accounts. Devices 
+By default, devices running Windows Server that belong to a domain automatically change their passwords for their accounts every certain number of days, typically 30. If you disable this policy setting, devices that run Windows Server retain the same passwords as their machine accounts. Devices
 that cannot automatically change their account password are at risk from an attacker who could determine the password for the machine's domain account.
 
 ### Countermeasure

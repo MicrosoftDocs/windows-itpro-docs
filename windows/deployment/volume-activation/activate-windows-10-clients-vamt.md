@@ -2,7 +2,7 @@
 title: Activate clients running Windows 10 (Windows 10)
 description: After you have configured Key Management Service (KMS) or Active Directory-based activation on your network, activating a client running Windows 10 is easy.
 ms.assetid: 39446e49-ad7c-48dc-9f18-f85a11ded643
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
@@ -100,12 +100,12 @@ You can activate computers by using a MAK in two ways:
 -   **MAK independent activation**. Each computer independently connects and is activated with Microsoft over the Internet or by telephone. MAK independent activation is best suited to computers within an organization that do not maintain a connection to the corporate network. MAK independent activation is shown in Figure 16.
 
     ![MAK independent activation](../images/volumeactivationforwindows81-16.jpg)
-    
+
     **Figure 16**. MAK independent activation
 -   **MAK proxy activation**. MAK proxy activation enables a centralized activation request on behalf of multiple computers with one connection to Microsoft. You configure MAK proxy activation by using the VAMT. MAK proxy activation is appropriate for environments in which security concerns restrict direct access to the Internet or the corporate network. It is also suited for development and test labs that lack this connectivity. MAK proxy activation with the VAMT is shown in Figure 17.
 
     ![MAK proxy activation with the VAMT](../images/volumeactivationforwindows81-17.jpg)
-    
+
     **Figure 17**. MAK proxy activation with the VAMT
 
 A MAK is recommended for computers that rarely or never connect to the corporate network and for environments in which the number of computers that require activation does not meet the KMS activation threshold.
@@ -124,5 +124,5 @@ Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Wind
 ## See also
 
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
- 
+
+

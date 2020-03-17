@@ -5,7 +5,7 @@ description: How to install the Internet Explorer 11 update using third-party to
 author: dansimp
 ms.prod: ie11
 ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -41,11 +41,11 @@ You can install Internet Explorer 11 (IE11) using third-party electronic softwa
 |`/norestart`    |Installs without restarting the computer.                  |
 |`/forcerestart` |Installs and restarts after installation.                  |
 
- 
 
- 
 
- 
+
+
+
 
 
 

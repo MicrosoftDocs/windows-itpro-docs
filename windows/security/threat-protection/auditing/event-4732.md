@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,32 +42,32 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4732</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13826</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-19T03:02:38.563110400Z" /> 
- <EventRecordID>174856</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="512" ThreadID="1092" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4732</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13826</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-19T03:02:38.563110400Z" />
+ <EventRecordID>174856</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="512" ThreadID="1092" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="MemberName">CN=eadmin,CN=Users,DC=contoso,DC=local</Data> 
- <Data Name="MemberSid">S-1-5-21-3457937927-2839227994-823803824-500</Data> 
- <Data Name="TargetUserName">AccountOperators</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6605</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3031e</Data> 
- <Data Name="PrivilegeList">-</Data> 
+ <Data Name="MemberName">CN=eadmin,CN=Users,DC=contoso,DC=local</Data>
+ <Data Name="MemberSid">S-1-5-21-3457937927-2839227994-823803824-500</Data>
+ <Data Name="TargetUserName">AccountOperators</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6605</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3031e</Data>
+ <Data Name="PrivilegeList">-</Data>
  </EventData>
  </Event>
 ```
@@ -109,15 +109,15 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 -   **Account Name** \[Type = UnicodeString\]: distinguished name of account that was added to the group. For example: “CN=Auditor,CN=Users,DC=contoso,DC=local”. For local groups this field typically has “**-**“ value, even if new member is a domain account. For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “-”.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 **Group:**

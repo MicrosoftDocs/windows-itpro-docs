@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
@@ -47,7 +47,7 @@ For more information, see [Ensure that Microsoft Defender Antivirus is not disab
 ## Known issues with regional formats
 
 **Date and time formats**<br>
-There are some known issues with the time and date formats. 
+There are some known issues with the time and date formats.
 
 The following date formats are supported:
 - MM/dd/yyyy

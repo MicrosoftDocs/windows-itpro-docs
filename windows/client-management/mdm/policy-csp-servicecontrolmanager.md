@@ -17,7 +17,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policies-->
-## ServiceControlManager policies  
+## ServiceControlManager policies
 
 <dl>
   <dd>
@@ -29,7 +29,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policy-->
-<a href="" id="servicecontrolmanager-svchostprocessmitigation"></a>**ServiceControlManager/SvchostProcessMitigation**  
+<a href="" id="servicecontrolmanager-svchostprocessmitigation"></a>**ServiceControlManager/SvchostProcessMitigation**
 
 <!--SupportedSKUs-->
 <table>
@@ -76,20 +76,20 @@ This policy setting enables process mitigation options on svchost.exe processes.
 
 If you enable this policy setting, built-in system services hosted in svchost.exe processes will have stricter security policies enabled on them.
 
-This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, as well as a policy disallowing dynamically-generated code.  
+This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, as well as a policy disallowing dynamically-generated code.
 
 If you disable or do not configure this policy setting, the stricter security settings will not be applied.
 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable svchost.exe mitigation options*
 -   GP name: *SvchostProcessMitigationEnable*
 -   GP path: *System/Service Control Manager Settings/Security Settings*
@@ -97,7 +97,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 - disabled - Do not add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
 - enabled - Add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
 <!--/SupportedValues-->

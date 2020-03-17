@@ -2,7 +2,7 @@
 title: Customize and export Start layout (Windows 10)
 description: The easiest method for creating a customized Start layout is to set up the Start screen and export the layout.
 ms.assetid: CA8DF327-5DD4-452F-9FE5-F17C514B6236
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["start screen"]
 ms.prod: w10
@@ -35,7 +35,7 @@ When [a partial Start layout](#configure-a-partial-start-layout) is applied, the
 >[!NOTE]
 >Partial Start layout is only supported on Windows 10, version 1511 and later.
 
- 
+
 
 You can deploy the resulting .xml file to devices using one of the following methods:
 
@@ -72,7 +72,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
     -   **Resize tiles**. To resize tiles, right-click the tile and then click **Resize.**
 
     -   **Create your own app groups**. Drag the apps to an empty area. To name a group, click above the group of tiles and then type the name in the **Name group** field that appears above the group.
-    
+
 >[!IMPORTANT]
 >In Windows 10, version 1703, if the Start layout includes tiles for apps that are not installed on the device that the layout is later applied to, the tiles for those apps will be blank. The blank tiles will persist until the next time the user signs in, at which time the blank tiles are removed. Some system events may cause the blank tiles to be removed before the next sign-in.
 >
@@ -92,7 +92,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
     `Export-StartLayout –path <path><file name>.xml`
-    
+
     On a device running Windows 10, version 1809 or higher, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
 
     ```PowerShell
@@ -102,7 +102,7 @@ When you have the Start layout that you want your users to see, use the [Export-
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
-    
+
     Example of a layout file produced by `Export-StartLayout`:
 
     <span codelanguage="XML"></span>
@@ -125,7 +125,7 @@ When you have the Start layout that you want your users to see, use the [Export-
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-            &lt;/start:Group&gt;        
+            &lt;/start:Group&gt;
           &lt;/defaultlayout:StartLayout&gt;
         &lt;/StartLayoutCollection&gt;
       &lt;/DefaultLayoutOverride&gt;
@@ -137,7 +137,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 
 >[!IMPORTANT]
->If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path. 
+>If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path.
 
 
 >[!NOTE]
@@ -147,7 +147,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 >
 >* Executable files and scripts should be listed in \Program Files or wherever the installer of the app places them.
 >
->* Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs. 
+>* Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs.
 >
 >* If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
 >

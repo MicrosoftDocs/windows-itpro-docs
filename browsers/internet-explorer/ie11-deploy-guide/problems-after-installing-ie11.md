@@ -5,7 +5,7 @@ description: Possible solutions to the problems you might encounter after instal
 author: dansimp
 ms.prod: ie11
 ms.assetid: c4b75ad3-9c4a-4dd2-9fed-69f776f542e6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -66,9 +66,9 @@ If you notice that CPU usage is running higher than normal, or that IE is freque
 ## Adaptive streaming and DRM playback don’t work with Windows Server 2012 R2
 IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Microsoft Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
 
- 
 
- 
+
+
 
 
 

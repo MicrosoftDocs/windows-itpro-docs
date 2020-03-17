@@ -7,13 +7,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ---
 
-# What's New in UE-V 
+# What's New in UE-V
 
 **Applies to**
 -   Windows 10, version 1607
@@ -22,15 +22,15 @@ User Experience Virtualization (UE-V) for Windows 10, version 1607, includes the
 
 ## UE-V is now a feature in Windows 10
 
-With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack. 
+With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
 
 The changes in UE-V for Windows 10, version 1607 impact already existing implementations of UE-V in the following ways:
 
 - The UE-V Agent is replaced by the UE-V service. The UE-V service is installed with Windows 10, version 1607 and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the UE-V service, migrates users’ UE-V configurations, and updates the settings storage path.
 
-- The UE-V template generator is available from the Windows 10 ADK. In previous releases of UE-V, the template generator was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new template generator to create new settings location templates, existing settings location templates will continue to work. 
+- The UE-V template generator is available from the Windows 10 ADK. In previous releases of UE-V, the template generator was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new template generator to create new settings location templates, existing settings location templates will continue to work.
 
-- The Company Settings Center was removed and is no longer available on user devices. Users can no longer manage their synchronized settings. 
+- The Company Settings Center was removed and is no longer available on user devices. Users can no longer manage their synchronized settings.
 
 - The inbox templates such as Office 2016 and IE 10 are included as a part of Windows 10 and need to be manually registered with Powershell or Group policy before use.
 
@@ -46,9 +46,9 @@ UE-V for Windows 10 includes a new template generator, available from a new loca
 
 In previous versions of UE-V, users could select which of their customized application settings to synchronize with the Company Settings Center, a user interface that was available on user devices. Additionally, administrators could configure the Company Settings Center to include a link to support resources so that users could easily get support on virtualized settings-related issues.
 
-With the release of Windows 10, version 1607, the Company Settings Center was removed and users can no longer manage their synchronized settings. 
+With the release of Windows 10, version 1607, the Company Settings Center was removed and users can no longer manage their synchronized settings.
 
-Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.  
+Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.
 
 **Note** With the removal of the Company Settings Center, the following group policies are no longer applicable:
 
@@ -131,4 +131,4 @@ UE-V includes Office 2016, Office 2013, and Office 2010 templates. Office 2007 t
 
 - [User Experience Virtualization (UE-V) Release Notes](uev-release-notes-1607.md) for Windows 10, version 1607
 
-- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md) 
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)

@@ -2,7 +2,7 @@
 title: Customize USMT XML Files (Windows 10)
 description: Customize USMT XML Files
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -54,10 +54,10 @@ For more information about excluding data, see the [Exclude Files and Settings](
 
 This section describes the migration .xml files that are included with USMT. Each file contains migration rules that control which components are migrated and where they are migrated to on the destination computer.
 
-**Note**  
+**Note**
 You can use the asterisk (\*) wildcard character in each of these files. However, you cannot use a question mark (?) as a wildcard character.
 
- 
+
 
 -   **The MigApp.xml file.** Specify this file with both the **ScanState** and **LoadState** commands to migrate application settings.
 
@@ -65,10 +65,10 @@ You can use the asterisk (\*) wildcard character in each of these files. However
 
 -   **The MigUser.xml file.** Specify this file with both the **ScanState** and **LoadState** commands to migrate user folders, files, and file types. You can modify the MigUser.xml file. This file does not contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the **ScanState** and the **LoadState** user options.
 
-    **Note**  
+    **Note**
     Do not use the MigUser.xml and MigDocs.xml files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices.md) topics.
 
-     
+
 
 ## <a href="" id="bkmk-customxmlfiles"></a>Custom .xml Files
 
@@ -94,10 +94,10 @@ In addition, note the following functionality with the Config.xml file:
 
 -   In USMT there are several migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. For more information, see the [Config.xml File](usmt-configxml-file.md) topic.
 
-**Note**  
+**Note**
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
- 
+
 
 ### <a href="" id="bkmk-examples"></a>Examples
 
@@ -129,9 +129,9 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
 [USMT Resources](usmt-resources.md)
 
- 
 
- 
+
+
 
 
 

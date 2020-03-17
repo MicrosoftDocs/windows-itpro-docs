@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,31 +38,31 @@ Separate events will be generated for “Registry” and “File system” polic
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4817</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13568</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-10T01:26:33.191368500Z" /> 
- <EventRecordID>1192270</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="3048" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4817</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13568</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-10T01:26:33.191368500Z" />
+ <EventRecordID>1192270</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="3048" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="ObjectServer">LSA</Data> 
- <Data Name="ObjectType">Global SACL</Data> 
- <Data Name="ObjectName">Key</Data> 
- <Data Name="OldSd" /> 
- <Data Name="NewSd">S:(AU;SA;RC;;;S-1-5-21-3457937927-2839227994-823803824-1104)</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="ObjectServer">LSA</Data>
+ <Data Name="ObjectType">Global SACL</Data>
+ <Data Name="ObjectName">Key</Data>
+ <Data Name="OldSd" />
+ <Data Name="NewSd">S:(AU;SA;RC;;;S-1-5-21-3457937927-2839227994-823803824-1104)</Data>
  </EventData>
  </Event>
 ```
@@ -129,12 +129,12 @@ Separate events will be generated for “Registry” and “File system” polic
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the Global Object Access Auditing policy.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

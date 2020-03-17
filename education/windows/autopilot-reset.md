@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 06/27/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# Reset devices with Autopilot Reset 
+# Reset devices with Autopilot Reset
 **Applies to:**
 
--   Windows 10, version 1709 
+-   Windows 10, version 1709
 
 IT admins or technical teachers can use Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
@@ -38,13 +38,13 @@ You can set the policy using one of these methods:
 
     -Check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
-        For example, in Intune, create a new configuration policy and add an OMA-URI. 
+        For example, in Intune, create a new configuration policy and add an OMA-URI.
         - OMA-URI:  ./Vendor/MSFT/Policy/Config/CredentialProviders/DisableAutomaticReDeploymentCredentials
         - Data type:  Integer
         - Value:  0
 
 - Windows Configuration Designer
-    
+
     You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
 
 - Set up School PCs app
@@ -58,13 +58,13 @@ You can set the policy using one of these methods:
   - When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
 
     ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)
-    
+
 ## Trigger Autopilot Reset
-Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
+Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use.
 
 **To trigger Autopilot Reset**
 
-1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**. 
+1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**.
 
     ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
 
@@ -77,14 +77,14 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger Autopilot Reset.
 
 >[!IMPORTANT]
->To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
+>To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection.
 
-    Once Autopilot Reset is triggered, the reset process starts. 
-    
+    Once Autopilot Reset is triggered, the reset process starts.
+
     After reset, the device:
     - Sets the region, language, and keyboard.
     - Connects to Wi-Fi.
-    - If you provided a provisioning package when Autopilot Reset is triggered, the system will apply this new provisioning package. Otherwise, the system will re-apply the original provisioning package on the device. 
+    - If you provided a provisioning package when Autopilot Reset is triggered, the system will apply this new provisioning package. Otherwise, the system will re-apply the original provisioning package on the device.
     - Is returned to a known good managed state, connected to Azure AD and MDM.
 
      ![Notification that provisioning is complete](images/autopilot-reset-provisioningcomplete.png)

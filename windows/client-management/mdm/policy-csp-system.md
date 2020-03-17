@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 06/25/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## System policies  
+## System policies
 
 <dl>
   <dd>
@@ -109,7 +109,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
+<a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**
 
 <!--SupportedSKUs-->
 <table>
@@ -161,7 +161,7 @@ If you enable or do not configure this policy setting, users can download and in
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Toggle user control over Insider builds*
 -   GP name: *AllowBuildPreview*
 -   GP path: *Data Collection and Preview Builds*
@@ -181,7 +181,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowcommercialdatapipeline"></a>**System/AllowCommercialDataPipeline**  
+<a href="" id="system-allowcommercialdatapipeline"></a>**System/AllowCommercialDataPipeline**
 
 <!--SupportedSKUs-->
 <table>
@@ -224,7 +224,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Microsoft is a processor or controller for Windows diagnostic data collected from devices. 
+This policy setting controls whether Microsoft is a processor or controller for Windows diagnostic data collected from devices.
 
 If you enable this policy and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
 
@@ -235,7 +235,7 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow commercial data pipeline*
 -   GP name: *AllowCommercialDataPipeline*
 -   GP element: *AllowCommercialDataPipeline*
@@ -261,7 +261,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**
 
 <!--SupportedSKUs-->
 <table>
@@ -315,7 +315,7 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 
 <!--/Description-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Desktop Analytics Processing*
 -   GP name: *AllowDesktopAnalyticsProcessing*
 -   GP path: *Data Collection and Preview Builds*
@@ -340,7 +340,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
+<a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**
 
 <!--SupportedSKUs-->
 <table>
@@ -387,7 +387,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow device name to be sent in Windows diagnostic data*
 -   GP name: *AllowDeviceNameInDiagnosticData*
 -   GP element: *AllowDeviceNameInDiagnosticData*
@@ -413,7 +413,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
+<a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -473,7 +473,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
+<a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**
 
 <!--SupportedSKUs-->
 <table>
@@ -538,7 +538,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
+<a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**
 
 <!--SupportedSKUs-->
 <table>
@@ -592,7 +592,7 @@ This setting is used by lower-level components for text display and fond handlin
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable Font Providers*
 -   GP name: *EnableFontProviders*
 -   GP path: *Network/Fonts*
@@ -607,7 +607,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--Validation-->
-To verify if System/AllowFontProviders is set to true:  
+To verify if System/AllowFontProviders is set to true:
 
 -  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
 
@@ -617,7 +617,7 @@ To verify if System/AllowFontProviders is set to true:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowlocation"></a>**System/AllowLocation**  
+<a href="" id="system-allowlocation"></a>**System/AllowLocation**
 
 <!--SupportedSKUs-->
 <table>
@@ -673,7 +673,7 @@ For example, an app's original Location setting is Off. The administrator then s
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off location*
 -   GP name: *DisableLocation_2*
 -   GP path: *Windows Components/Location and Sensors*
@@ -692,7 +692,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**  
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**
 
 <!--SupportedSKUs-->
 <table>
@@ -746,7 +746,7 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 <!--/Description-->
 
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 -  0 (default)– Diagnostic data is not processed by Microsoft Managed Desktop.
 -  32 – Diagnostic data is processed by Microsoft Managed Desktop.
@@ -757,7 +757,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
+<a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**
 
 <!--SupportedSKUs-->
 <table>
@@ -808,7 +808,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
+-   0 – SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card.
 -   1 (default) – Allow a storage card.
 
 <!--/SupportedValues-->
@@ -817,7 +817,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
+<a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**
 
 <!--SupportedSKUs-->
 <table>
@@ -861,11 +861,11 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the device to send diagnostic and usage telemetry data, such as Watson. 
+Allows the device to send diagnostic and usage telemetry data, such as Watson.
 
 For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
-The following list shows the supported values for Windows 8.1:  
+The following list shows the supported values for Windows 8.1:
 -   0 - Not allowed.
 -   1 – Allowed, except for Secondary Data Requests.
 -   2 (default) – Allowed.
@@ -893,8 +893,8 @@ The following list shows the supported values for Windows 8.1:
 </tbody>
 </table>-->
 
-In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft. The following list shows the supported values for Windows 10:  
--   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender. 
+In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft. The following list shows the supported values for Windows 10:
+-   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender.
     **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 -   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
 -   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
@@ -938,7 +938,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Telemetry*
 -   GP name: *AllowTelemetry*
 -   GP element: *AllowTelemetry*
@@ -951,7 +951,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowppdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
+<a href="" id="system-allowppdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**
 
 <!--SupportedSKUs-->
 <table>
@@ -1005,7 +1005,7 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 
 <!--/Description-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable Update Compliance Processing*
 -   GP name: *AllowUpdateComplianceProcessing*
 -   GP path: *Data Collection and Preview Builds*
@@ -1013,7 +1013,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 - 0 (default)– Diagnostic data is not processed by Update Compliance.
 - 16 – Diagnostic data is allowed to be processed by Update Compliance.
@@ -1023,7 +1023,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
+<a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**
 
 <!--SupportedSKUs-->
 <table>
@@ -1074,7 +1074,7 @@ Most restricted value is 0.
 > This policy is also applicable to Windows 10 and not exclusive to phone.
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 -   0 – Not allowed.
 -   1 (default) – Allowed to reset to factory default settings.
 <!--/SupportedValues-->
@@ -1083,7 +1083,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**  
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**
 
 <!--SupportedSKUs-->
 <table>
@@ -1132,13 +1132,13 @@ If you enable this policy setting and enroll your devices in your Azure AD tenan
 
 If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
 
->[!Note] 
+>[!Note]
 > This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 <!--/Description-->
 <!--ADMXMapped-->
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 - 0 (default) – Diagnostic data is not processed by Windows Update for Business cloud.
 - 8 – Diagnostic data is allowed to be processed by Windows Update for Business cloud.
 <!--/SupportedValues-->
@@ -1147,7 +1147,7 @@ The following list shows the supported values:
 </hr>
 
 <!--Policy-->
-<a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
+<a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**
 
 <!--SupportedSKUs-->
 <table>
@@ -1205,13 +1205,13 @@ If your malware detection application does not include an Early Launch Antimalwa
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Boot-Start Driver Initialization Policy*
 -   GP name: *POL_DriverLoadPolicy_Name*
 -   GP path: *System/Early Launch Antimalware*
@@ -1223,7 +1223,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-configuremicrosoft365uploadendpoint"></a>**System/ConfigureMicrosoft365UploadEndpoint**  
+<a href="" id="system-configuremicrosoft365uploadendpoint"></a>**System/ConfigureMicrosoft365UploadEndpoint**
 
 <!--SupportedSKUs-->
 <table>
@@ -1267,7 +1267,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 This policy sets the upload endpoint for this device’s diagnostic data as part of the Microsoft 365 Update Readiness program.
-          
+
 If your organization is participating in the program and has been instructed to configure a custom upload endpoint, then use this setting to define that endpoint.
 
 The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
@@ -1275,7 +1275,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 Value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
 -   GP name: *ConfigureMicrosoft365UploadEndpoint*
 -   GP element: *ConfigureMicrosoft365UploadEndpoint*
@@ -1297,7 +1297,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-configuretelemetryoptinchangenotification"></a>**System/ConfigureTelemetryOptInChangeNotification**  
+<a href="" id="system-configuretelemetryoptinchangenotification"></a>**System/ConfigureTelemetryOptInChangeNotification**
 
 <!--SupportedSKUs-->
 <table>
@@ -1340,13 +1340,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether a device shows notifications about telemetry levels to people on first logon or when changes occur in Settings. 
+This policy setting determines whether a device shows notifications about telemetry levels to people on first logon or when changes occur in Settings.
 If you set this policy setting to "Disable telemetry change notifications", telemetry level notifications stop appearing.
 If you set this policy setting to "Enable telemetry change notifications" or don't configure this policy setting, telemetry notifications appear at first logon and when changes occur in Settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure telemetry opt-in change notifications.*
 -   GP name: *ConfigureTelemetryOptInChangeNotification*
 -   GP element: *ConfigureTelemetryOptInChangeNotification*
@@ -1364,7 +1364,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-configuretelemetryoptinsettingsux"></a>**System/ConfigureTelemetryOptInSettingsUx**  
+<a href="" id="system-configuretelemetryoptinsettingsux"></a>**System/ConfigureTelemetryOptInSettingsUx**
 
 <!--SupportedSKUs-->
 <table>
@@ -1418,7 +1418,7 @@ If you set this policy setting to "Enable Telemetry opt-in Settings" or don't co
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure telemetry opt-in setting user interface.*
 -   GP name: *ConfigureTelemetryOptInSettingsUx*
 -   GP element: *ConfigureTelemetryOptInSettingsUx*
@@ -1436,7 +1436,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-disabledevicedelete"></a>**System/DisableDeviceDelete**  
+<a href="" id="system-disabledevicedelete"></a>**System/DisableDeviceDelete**
 
 <!--SupportedSKUs-->
 <table>
@@ -1480,12 +1480,12 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting controls whether the Delete diagnostic data button is enabled in Diagnostic & Feedback Settings page.
-If you enable this policy setting, the Delete diagnostic data button will be disabled in Settings page, preventing the deletion of diagnostic data collected by Microsoft from the device. 
+If you enable this policy setting, the Delete diagnostic data button will be disabled in Settings page, preventing the deletion of diagnostic data collected by Microsoft from the device.
 If you disable or don't configure this policy setting, the Delete diagnostic data button will be enabled in Settings page, which allows people to erase all diagnostic data collected by Microsoft from that device.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
@@ -1507,7 +1507,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-disablediagnosticdataviewer"></a>**System/DisableDiagnosticDataViewer**  
+<a href="" id="system-disablediagnosticdataviewer"></a>**System/DisableDiagnosticDataViewer**
 
 <!--SupportedSKUs-->
 <table>
@@ -1551,12 +1551,12 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 This policy setting controls whether users can enable and launch the Diagnostic Data Viewer from the Diagnostic & Feedback Settings page.
-If you enable this policy setting, the Diagnostic Data Viewer will not be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.  
+If you enable this policy setting, the Diagnostic Data Viewer will not be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.
 If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
@@ -1578,7 +1578,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
+<a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**
 
 <!--SupportedSKUs-->
 <table>
@@ -1625,7 +1625,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
 -   GP name: *DisableEnterpriseAuthProxy*
 -   GP element: *DisableEnterpriseAuthProxy*
@@ -1638,7 +1638,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
+<a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**
 
 <!--SupportedSKUs-->
 <table>
@@ -1687,13 +1687,13 @@ Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features
 * Microsoft Store apps cannot access OneDrive using the WinRT API.
 * OneDrive does not appear in the navigation pane in File Explorer.
 * OneDrive files are not kept in sync with the cloud.
-* Users cannot automatically upload photos and videos from the camera roll folder. 
+* Users cannot automatically upload photos and videos from the camera roll folder.
 
 If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent the usage of OneDrive for file storage*
 -   GP name: *PreventOnedriveFileSync*
 -   GP path: *Windows Components/OneDrive*
@@ -1720,7 +1720,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
+<a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**
 
 <!--SupportedSKUs-->
 <table>
@@ -1778,13 +1778,13 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
@@ -1796,7 +1796,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
+<a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**
 
 <!--SupportedSKUs-->
 <table>
@@ -1843,7 +1843,7 @@ Added in Windows 10, version 1803. When filing feedback in the Feedback Hub, dia
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 - 0 (default) - False. The Feedback Hub will not always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so.
 - 1 - True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted.
@@ -1854,7 +1854,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
+<a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**
 
 <!--SupportedSKUs-->
 <table>
@@ -1897,24 +1897,24 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting, in combination with the System/AllowTelemetry 
- policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
- 
+This policy setting, in combination with the System/AllowTelemetry
+ policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services.
+
 To enable this behavior you must complete two steps:
 <ul>
 <li>Enable this policy setting</li>
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
- 
+
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="https://go.microsoft.com/fwlink/?linkid=847594" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
- 
+
 Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
-   
+
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
 -   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
@@ -1927,7 +1927,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
+<a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**
 
 <!--SupportedSKUs-->
 <table>
@@ -1976,7 +1976,7 @@ If you disable or do not configure this policy setting, Connected User Experienc
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Connected User Experiences and Telemetry*
 -   GP name: *TelemetryProxy*
 -   GP element: *TelemetryProxyName*
@@ -1989,7 +1989,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-turnofffilehistory"></a>**System/TurnOffFileHistory**  
+<a href="" id="system-turnofffilehistory"></a>**System/TurnOffFileHistory**
 
 <!--SupportedSKUs-->
 <table>
@@ -2040,7 +2040,7 @@ If you disable or do not configure this policy setting, File History can be acti
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off File History*
 -   GP name: *DisableFileHistory*
 -   GP path: *Windows Components/File History*

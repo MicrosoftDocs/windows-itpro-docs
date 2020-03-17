@@ -2,7 +2,7 @@
 title: WindowsLicensing CSP
 description: WindowsLicensing CSP
 ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -23,18 +23,18 @@ The following diagram shows the WindowsLicensing configuration service provider 
 
 ![windowslicensing csp diagram](images/provisioning-csp-windowslicensing.png)
 
-<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
+<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**
 This is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
 
-<a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**  
+<a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**
 Enters a product key for an edition upgrade of Windows 10 desktop devices.
 
 > [!NOTE]
 > This upgrade process requires a system restart.
 
- 
+
 
 The date type is a chr.
 
@@ -47,7 +47,7 @@ After the device restarts, the edition upgrade process completes. The user will 
 > [!IMPORTANT]
 > If another policy requires a system reboot that occurs when **changepk.exe** is running, the edition upgrade will fail.
 
- 
+
 
 If a product key is entered in a provisioning package and the user begins installation of the package, a notification is shown to the user that their system will restart to complete the package installation. Upon explicit consent from the user to proceed, the package continues installation and **changepk.exe** runs using the product key. The user will receive a reminder notification 30 seconds before the automatic restart.
 
@@ -58,7 +58,7 @@ This node can also be used to activate or change a product key on a particular e
 > [!IMPORTANT]
 > The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
- 
+
 
 The following are valid edition upgrade paths when using this node through an MDM:
 
@@ -74,14 +74,14 @@ Activation or changing a product key can be carried out on the following edition
 -   Windows 10 Home
 -   Windows 10 Pro
 
-<a href="" id="edition"></a>**Edition**  
+<a href="" id="edition"></a>**Edition**
 Returns a value that maps to the Windows 10 edition running on desktop or mobile devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
 
 The data type is an Int.
 
 The supported operation is Get.
 
-<a href="" id="status"></a>**Status**  
+<a href="" id="status"></a>**Status**
 Returns the status of an edition upgrade on Windows 10 desktop or mobile devices. The status corresponds to one of the following values:
 
 -   0 = Failed
@@ -94,13 +94,13 @@ The data type is an Int.
 
 The supported operation is Get.
 
-<a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**  
+<a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**
 Provides a license for an edition upgrade of Windows 10 mobile devices.
 
 > [!NOTE]
 > This upgrade process does not require a system restart.
 
- 
+
 
 The date type is XML.
 
@@ -109,7 +109,7 @@ The supported operation is Execute.
 > [!IMPORTANT]
 > The XML license file contents must be properly escaped (that is, it should not simply be a copied XML), otherwise the edition upgrade on Windows 10 mobile devices will fail. For more information on proper escaping of the XML license file, see Section 2.4 of the [W3C XML spec](http://www.w3.org/TR/xml/) . The XML license file is acquired from the Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
- 
+
 
 The following are valid edition upgrade paths when using this node through an MDM or provisioning package:
 
@@ -118,7 +118,7 @@ The following are valid edition upgrade paths when using this node through an MD
 > [!Warning]
 > Edition upgrades do not support Volume Licence (VL) keys.
 
-<a href="" id="licensekeytype"></a>**LicenseKeyType**  
+<a href="" id="licensekeytype"></a>**LicenseKeyType**
 Returns the parameter type used by Windows 10 devices for an edition upgrade, activation, or product key change.
 
 -   Windows 10 for desktop devices require a product key.
@@ -128,63 +128,63 @@ The data type is a chr.
 
 The supported operation is Get.
 
-<a href="" id="checkapplicability"></a>**CheckApplicability**  
+<a href="" id="checkapplicability"></a>**CheckApplicability**
 Returns TRUE if the entered product key can be used for an edition upgrade, activation or changing a product key of Windows 10 for desktop devices.
 
 The data type is a chr.
 
 The supported operation is Exec.
 
-<a href="" id="changeproductkey"></a>**ChangeProductKey**  
+<a href="" id="changeproductkey"></a>**ChangeProductKey**
 Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
 
 The data type is a chr.
 
 The supported operation is Execute.
 
-<a href="" id="subscriptions"></a>**Subscriptions**  
+<a href="" id="subscriptions"></a>**Subscriptions**
 Added in Windows 10, version 1607. Node for subscriptions.
 
-<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
+<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**
 Added in Windows 10, version 1607. Node for subscription IDs.
 
-<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**
 Added in Windows 10, version 1607. Returns the status of the subscription.
 
 The data type is an Int.
 
 The supported operation is Get.
 
-<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**
 Added in Windows 10, version 1607. Returns the name of the subscription.
 
 The data type is a chr.
 
 The supported operation is Get.
 
-<a href="" id="smode"></a>**SMode**  
+<a href="" id="smode"></a>**SMode**
 Interior node for managing S mode.
 
-<a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
+<a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**
 Added in Windows 10, version 1809. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
-Supported values:  
+Supported values:
 -  0 - No Restriction: The user is allowed to switch the device out of S mode.
 -  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
-<a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
+<a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**
 Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 
-<a href="" id="smode-status"></a>**SMode/Status**   
+<a href="" id="smode-status"></a>**SMode/Status**
 Added in Windows 10, version 1809. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
 Value type is integer. Supported operation is Get.
 
-Values:  
+Values:
 -  Request fails with error code 404 - no SwitchFromSMode request has been made.
 -  0 - The device successfully switched out of S mode
 -  1 - The device is processing the request to switch out of S mode
@@ -208,7 +208,7 @@ Values:
       <Meta>
         <Format xmlns="syncml:metinf">chr</Format>
       </Meta>
-      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data> 
+      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data>
     </Item>
    </Exec>
    <Final/>
@@ -219,7 +219,7 @@ Values:
 > [!NOTE]
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
- 
+
 
 **Edition**
 
@@ -289,7 +289,7 @@ Values:
       <Meta>
         <Format xmlns="syncml:metinf">chr</Format>
       </Meta>
-      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data> 
+      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data>
     </Item>
    </Exec>
    <Final/>
@@ -300,7 +300,7 @@ Values:
 > [!NOTE]
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
- 
+
 
 **UpgradeEditionWithLicense**
 
@@ -339,7 +339,7 @@ Values:
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -364,7 +364,7 @@ Values:
         <Data></Data>
       </Item>
     </Exec>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -389,7 +389,7 @@ Values:
         <Data>1</Data>
       </Item>
     </Add>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -409,7 +409,7 @@ Values:
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -434,7 +434,7 @@ Values:
         <Data>1</Data>
       </Item>
     </Replace>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -454,7 +454,7 @@ Values:
         </Target>
       </Item>
     </Delete>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -463,9 +463,9 @@ Values:
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

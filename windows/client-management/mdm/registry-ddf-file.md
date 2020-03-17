@@ -2,7 +2,7 @@
 title: Registry DDF file
 description: Registry DDF file
 ms.assetid: 29b5cc07-f349-4567-8a77-387d816a9d15
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -119,9 +119,9 @@ This topic shows the OMA DM device description framework (DDF) for the **Registr
 
 [Registry configuration service provider](registry-csp.md)
 
- 
 
- 
+
+
 
 
 

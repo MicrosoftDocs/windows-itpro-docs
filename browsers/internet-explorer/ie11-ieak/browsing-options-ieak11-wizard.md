@@ -5,7 +5,7 @@ description: How to use the Browsing Options page in the IEAK 11 Customization W
 author: dansimp
 ms.prod: ie11
 ms.assetid: d6bd71ba-5df3-4b8c-8bb5-dcbc50fd974e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -42,9 +42,9 @@ The choices that you make on this page affect only the items shown on the **Favo
 
 3.  Click **Next** to go to the [First Run Wizard and Welcome Page Options](first-run-and-welcome-page-ieak11-wizard.md) page or **Back** to go to the [Favorites, Favorites Bar, and Feeds](favorites-favoritesbar-and-feeds-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

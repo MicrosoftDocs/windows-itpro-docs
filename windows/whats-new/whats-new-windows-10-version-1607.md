@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: 
+ms.reviewer:
 author: greg-lindsay
 manager: laurawi
 ms.author: greglin
@@ -19,7 +19,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
-  
+
 ## Deployment
 
 ### Windows Imaging and Configuration Designer (ICD)
@@ -36,7 +36,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 ### Windows Upgrade Readiness
 
-Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10.
 
 With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
 
@@ -57,7 +57,7 @@ The Upgrade Readiness workflow steps you through the discovery and rationalizati
 ## Windows updates
 
 Windows 10, version 1607, provides administrators with increased control over updates by changing the update deferral increment from weeks to days. Other changes:
- 
+
 - Quality Updates can be deferred up to 30 days and paused for 35 days
 - Feature Updates can be deferred up to 180 days and paused for 60 days
 - Update deferrals can be applied to both Current Branch (CB) and Current Branch for Business (CBB)
@@ -77,7 +77,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
-- Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
+- Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**.
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
@@ -138,17 +138,17 @@ Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 
 
 Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Microsoft Store, and interact with them as if they were installed locally.
 
-With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
+With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users.
 
 [Learn how to deliver virtual applications with App-V.](/windows/application-management/app-v/appv-getting-started)
 
 ### User Experience Virtualization (UE-V) for Windows 10
 
-Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
+Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options.
 
 With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.
 
-With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
+With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices.
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
 

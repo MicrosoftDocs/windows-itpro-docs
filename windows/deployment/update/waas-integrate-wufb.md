@@ -7,7 +7,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -19,7 +19,7 @@ ms.topic: article
 
 - Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager.
 
@@ -47,7 +47,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 <tr><td>Third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
 
-### Configuration example \#2: Excluding drivers from Windows Quality Updates using Windows Update for Business 
+### Configuration example \#2: Excluding drivers from Windows Quality Updates using Windows Update for Business
 
 **Configuration:**
 
@@ -63,7 +63,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 </table>
 
-### Configuration example \#3: Device configured to receive Microsoft updates 
+### Configuration example \#3: Device configured to receive Microsoft updates
 
 **Configuration:**
 
@@ -71,9 +71,9 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 - Device is configured to “receive updates for other Microsoft products” along with updates to Windows (**Update/AllowMUUpdateService** = enabled)
 - Admin has also placed Microsoft Update, third-paprty, and locally-published update content on the WSUS server
 
-In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS were not enabled. 
-- In a non-WSUS case, these updates would be deferred just as any update to Windows would be.  
-- However, with WSUS also configured, these updates are sourced from Microsoft but deferral policies are not applied.  
+In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS were not enabled.
+- In a non-WSUS case, these updates would be deferred just as any update to Windows would be.
+- However, with WSUS also configured, these updates are sourced from Microsoft but deferral policies are not applied.
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
@@ -103,7 +103,7 @@ For more information, see [Integration with Windows Update for Business in Windo
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -17,7 +17,6 @@ ms.topic: article
 ---
 
 # Windows 10 in S mode - What is it?
-
 S mode is an evolution of the S SKU introduced with Windows 10 April 2018 Update. It's a configuration that's available on all Windows Editions when enabled at the time of manufacturing. The edition of Windows can be upgrade at any time as shown below. However, the switch from S mode is a onetime switch and can only be undone by a wipe and reload of the OS.
 
 ![Configuration and features of S mode](images/smodeconfig.png)

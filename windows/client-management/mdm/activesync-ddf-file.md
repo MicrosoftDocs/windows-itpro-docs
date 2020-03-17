@@ -2,7 +2,7 @@
 title: ActiveSync DDF file
 description: ActiveSync DDF file
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -682,9 +682,9 @@ The XML below is the current version for this CSP.
 
 [ActiveSync configuration service provider](activesync-csp.md)
 
- 
 
- 
+
+
 
 
 

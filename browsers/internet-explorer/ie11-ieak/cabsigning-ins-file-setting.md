@@ -5,7 +5,7 @@ description: Use the \[CabSigning\] .INS file setting to customize the digital s
 author: dansimp
 ms.prod: ie11
 ms.assetid: 098707e9-d712-4297-ac68-7d910ca8f43b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

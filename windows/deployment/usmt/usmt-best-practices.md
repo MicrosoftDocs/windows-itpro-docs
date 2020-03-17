@@ -2,7 +2,7 @@
 title: USMT Best Practices (Windows 10)
 description: USMT Best Practices
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -63,10 +63,10 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     Take extreme caution when migrating encrypted files, because the end user does not need to be logged on to capture the user state. By default, USMT fails if an encrypted file is found. For more information about EFS best practices, see this article in the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/p/?linkid=163). For specific instructions about EFS best practices, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
 
-    **Important**  
+    **Important**
     If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
 
-     
+
 
 -   **Encrypt the store**
 
@@ -122,10 +122,10 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     In the **UserAndSystem** context, a rule is processed one time for each user on the system and one time for the system.
 
-    **Note**  
+    **Note**
     The number of times a rule is processed does not affect the number of times a file is migrated. The USMT migration engine ensures that each file migrates only once.
 
-     
+
 
 -   **We recommend that you create a separate .xml file instead of adding your .xml code to one of the existing migration .xml files**
 
@@ -137,10 +137,10 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 -   **You can use the asterisk (\*) wildcard character in any migration XML file that you create**
 
-    **Note**  
+    **Note**
     The question mark is not valid as a wildcard character in USMT .xml files.
 
-     
+
 
 ## Related topics
 
@@ -149,9 +149,9 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
 
- 
+
+
 
 
 

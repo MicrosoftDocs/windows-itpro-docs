@@ -2,7 +2,7 @@
 title: Use Shell Launcher to create a Windows 10 kiosk (Windows 10)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
@@ -23,7 +23,7 @@ ms.topic: article
 Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10, version 1809 and above, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
 
 >[!NOTE]
->Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
+>Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components.
 >
 >Methods of controlling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
@@ -51,7 +51,7 @@ For sample XML configurations for the different app combinations, see [Samples f
 >[!WARNING]
 >- Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.
 >
->- Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell. 
+>- Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell.
 
 -   A domain, Azure Active Directory, or local user account.
 
@@ -92,37 +92,37 @@ You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to confi
 The following XML sample works for **Shell Launcher v1**:
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"> 
-  <Profiles> 
-    <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}"> 
-      <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com" /> 
-    </Profile> 
-  </Profiles> 
+<?xml version="1.0" encoding="utf-8"?>
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
+  <Profiles>
+    <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}">
+      <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com" />
+    </Profile>
+  </Profiles>
   <Configs>
     <!--local account-->
     <Account Name="ShellLauncherUser"/>
     <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}"/>
   </Configs>
 </ShellLauncherConfiguration>
-``` 
+```
 
 For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying the v2 namespace, and use `v2:AppType` to specify the type, as shown in the following example. If `v2:AppType` is not specified, it implies the shell is Win32 app.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
-xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
-  <Profiles> 
-    <DefaultProfile> 
-      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true"> 
-        <DefaultAction Action="RestartShell"/> 
-      </Shell> 
-    </DefaultProfile> 
-  </Profiles> 
-  <Configs/> 
+<?xml version="1.0" encoding="utf-8"?>
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+  <Profiles>
+    <DefaultProfile>
+      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+        <DefaultAction Action="RestartShell"/>
+      </Shell>
+    </DefaultProfile>
+  </Profiles>
+  <Configs/>
 </ShellLauncherConfiguration>
-``` 
+```
 
 >[!TIP]
 >In the XML for Shell Launcher v2, note the **AllAppsFullScreen** attribute. When set to **True**, Shell Launcher will run every app in full screen, or maximized for desktop apps. When this attribute is set to **False** or not set, only the custom shell app runs in full screen; other apps launched by the user will run in windowed mode.
@@ -135,13 +135,13 @@ In your MDM service, you can create a [custom OMA-URI setting](https://docs.micr
 
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
-For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)`. 
+For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)`.
 
 ![Screenshot of custom OMA-URI settings](images/slv2-oma-uri.png)
 
 After you configure the profile containing the custom Shell Launcher setting, select **All Devices** or selected groups of devices to apply the profile to. Don't assign the profile to users or user groups.
 
-## Configure a custom shell using PowerShell 
+## Configure a custom shell using PowerShell
 
 For scripts for Shell Launcher v2, see [Shell Launcher v2 Bridge WMI sample scripts](https://github.com/Microsoft/Windows-iotcore-samples/blob/develop/Samples/ShellLauncherV2/SampleBridgeWmiScripts/README.md).
 
@@ -166,7 +166,7 @@ static class CheckShellLauncherLicense
         if (NativeMethods.SLGetWindowsInformationDWORD("EmbeddedFeature-ShellLauncher-Enabled", out enabled) != S_OK) {
             enabled = 0;
         }
-        
+
         return (enabled != 0);
     }
 
@@ -201,7 +201,7 @@ $NAMESPACE = "root\standardcimv2\embedded"
 try {
     $ShellLauncherClass = [wmiclass]"\\$COMPUTER\${NAMESPACE}:WESL_UserSetting"
     } catch [Exception] {
-    write-host $_.Exception.Message; 
+    write-host $_.Exception.Message;
     write-host "Make sure Shell Launcher feature is enabled"
     exit
     }
@@ -219,7 +219,7 @@ function Get-UsernameSID($AccountName) {
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
     return $NTUserSID.Value
-    
+
 }
 
 # Get the SID for a user account named "Cashier". Rename "Cashier" to an existing account on your system to test this script.
@@ -234,7 +234,7 @@ $shutdown_device = 2
 
 # Examples. You can change these examples to use the program that you want to use as the shell.
 
-# This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed. 
+# This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed.
 
 $ShellLauncherClass.SetDefaultShell("cmd.exe", $restart_device)
 

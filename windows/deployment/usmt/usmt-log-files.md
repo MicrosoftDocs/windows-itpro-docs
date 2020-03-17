@@ -2,7 +2,7 @@
 title: Log Files (Windows 10)
 description: Log Files
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -76,12 +76,12 @@ The following table describes each command-line option related to logs, and it p
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**
 You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
 
- 
+
 
 ## <a href="" id="bkmk-scanloadstatelogs"></a>ScanState and LoadState Logs
 
@@ -222,7 +222,7 @@ The remaining fields are key/value pairs as indicated in the following table.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-listfileslog"></a>List Files Log
 
@@ -484,9 +484,9 @@ Your revised migration XML script excludes the files from migrating, as confirme
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
 
- 
 
- 
+
+
 
 
 

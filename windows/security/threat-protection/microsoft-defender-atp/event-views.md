@@ -1,5 +1,5 @@
 ---
-ms.reviewer: 
+ms.reviewer:
 title: Import custom views to see attack surface reduction events
 description: Use Windows Event Viewer to import individual views for each of the features.
 keywords: event view, exploit guard, audit, review, events

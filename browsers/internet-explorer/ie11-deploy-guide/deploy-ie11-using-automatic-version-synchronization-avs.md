@@ -5,7 +5,7 @@ description: You can deploy Internet Explorer 11 to your users' computers by us
 author: dansimp
 ms.prod: ie11
 ms.assetid: f51224bd-3371-4551-821d-1d62310e3384
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -28,9 +28,9 @@ You must synchronize the setup files at least once on the local computer, for ea
 - [Customize Internet Explorer 11 installation packages](customize-ie11-install-packages.md)
 
 
- 
 
- 
+
+
 
 
 

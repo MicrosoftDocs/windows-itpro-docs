@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,48 +38,48 @@ This event generates on domain controllers, member servers, and workstations.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4720</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13824</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-20T16:22:02.759912000Z" /> 
- <EventRecordID>175408</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="1508" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4720</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13824</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-20T16:22:02.759912000Z" />
+ <EventRecordID>175408</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="1508" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserName">ksmith</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6609</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x30dc2</Data> 
- <Data Name="PrivilegeList">-</Data> 
- <Data Name="SamAccountName">ksmith</Data> 
- <Data Name="DisplayName">Ken Smith</Data> 
- <Data Name="UserPrincipalName">ksmith@contoso.local</Data> 
- <Data Name="HomeDirectory">-</Data> 
- <Data Name="HomePath">-</Data> 
- <Data Name="ScriptPath">-</Data> 
- <Data Name="ProfilePath">-</Data> 
- <Data Name="UserWorkstations">-</Data> 
- <Data Name="PasswordLastSet">%%1794</Data> 
- <Data Name="AccountExpires">%%1794</Data> 
- <Data Name="PrimaryGroupId">513</Data> 
- <Data Name="AllowedToDelegateTo">-</Data> 
- <Data Name="OldUacValue">0x0</Data> 
- <Data Name="NewUacValue">0x15</Data> 
- <Data Name="UserAccountControl">%%2080 %%2082 %%2084</Data> 
- <Data Name="UserParameters">-</Data> 
- <Data Name="SidHistory">-</Data> 
- <Data Name="LogonHours">%%1793</Data> 
+ <Data Name="TargetUserName">ksmith</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetSid">S-1-5-21-3457937927-2839227994-823803824-6609</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x30dc2</Data>
+ <Data Name="PrivilegeList">-</Data>
+ <Data Name="SamAccountName">ksmith</Data>
+ <Data Name="DisplayName">Ken Smith</Data>
+ <Data Name="UserPrincipalName">ksmith@contoso.local</Data>
+ <Data Name="HomeDirectory">-</Data>
+ <Data Name="HomePath">-</Data>
+ <Data Name="ScriptPath">-</Data>
+ <Data Name="ProfilePath">-</Data>
+ <Data Name="UserWorkstations">-</Data>
+ <Data Name="PasswordLastSet">%%1794</Data>
+ <Data Name="AccountExpires">%%1794</Data>
+ <Data Name="PrimaryGroupId">513</Data>
+ <Data Name="AllowedToDelegateTo">-</Data>
+ <Data Name="OldUacValue">0x0</Data>
+ <Data Name="NewUacValue">0x15</Data>
+ <Data Name="UserAccountControl">%%2080 %%2082 %%2084</Data>
+ <Data Name="UserParameters">-</Data>
+ <Data Name="SidHistory">-</Data>
+ <Data Name="LogonHours">%%1793</Data>
  </EventData>
  </Event>
 ```

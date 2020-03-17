@@ -5,7 +5,7 @@ description: How to use the Automatic Version Synchronization page in the IEAK 1
 author: dansimp
 ms.prod: ie11
 ms.assetid: bfc7685f-843b-49c3-8b9b-07e69705840c
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -39,9 +39,9 @@ You might receive a security warning before downloading your Setup file, asking 
 
 2.  Click **Next** to go to the [Custom Components](custom-components-ieak11-wizard.md) page or **Back** to go to the [Feature Selection](feature-selection-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

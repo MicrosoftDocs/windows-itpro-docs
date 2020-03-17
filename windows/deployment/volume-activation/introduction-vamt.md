@@ -2,7 +2,7 @@
 title: Introduction to VAMT (Windows 10)
 description: Introduction to VAMT
 ms.assetid: 0439685e-0bae-4967-b0d4-dd84ca6d7fa7
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -19,7 +19,7 @@ ms.topic: article
 
 The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office®, and select other Microsoft products volume and retail activation process. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in and can be installed on any computer that has one of the following Windows operating systems: Windows® 7, Windows 8, Windows 8.1, Windows 10,Windows Server 2008 R2, or Windows Server 2012.
 
-**Note**  
+**Note**
 VAMT can be installed on, and can manage, physical or virtual instances. VAMT cannot detect whether or not the remote products are virtual. As long as the products can respond to Windows Management Instrumentation (WMI) calls, they will be discovered and activated.
 
 ## In this Topic
@@ -63,5 +63,5 @@ VAMT provides a single, graphical user interface for managing activations, and f
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+
+

@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Access Control Overview
@@ -103,10 +103,10 @@ When you set permissions, you specify the level of access for groups and users. 
 
 When you need to change the permissions on a file, you can run Windows Explorer, right-click the file name, and click **Properties**. On the **Security** tab, you can change permissions on the file. For more information, see [Managing Permissions](https://technet.microsoft.com/library/cc770962.aspx).
 
-**Note**  
+**Note**
 Another kind of permissions, called share permissions, is set on the Sharing tab of a folder's **Properties** page or by using the Shared Folder Wizard. For more information see [Share and NTFS Permissions on a File Server](https://technet.microsoft.com/library/cc754178.aspx).
 
- 
+
 
 ### Ownership of objects
 
@@ -137,9 +137,9 @@ For more information about auditing, see [Security Auditing Overview](/windows/d
 -   For more information about access control and authorization, see [Access Control and Authorization Overview](https://technet.microsoft.com/library/jj134043(v=ws.11).aspx).
 
 
- 
 
- 
+
+
 
 
 

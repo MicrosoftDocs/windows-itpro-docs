@@ -1,6 +1,6 @@
 ---
 title: Configure Windows 10 Mobile devices
-description: 
+description:
 keywords: Windows 10, MDM, WSUS, Windows update
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -11,13 +11,13 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Configure Windows 10 Mobile devices
 
-Windows 10 Mobile enables administrators to define what users can see and do on a device, which you might think of as "configuring" or "customizing" or "device lockdown". Your device configuration can provide a standard Start screen with pre-installed apps, or restrict various settings and features, or even limit the device to run only a single app (kiosk). 
+Windows 10 Mobile enables administrators to define what users can see and do on a device, which you might think of as "configuring" or "customizing" or "device lockdown". Your device configuration can provide a standard Start screen with pre-installed apps, or restrict various settings and features, or even limit the device to run only a single app (kiosk).
 
 ## In this section
 

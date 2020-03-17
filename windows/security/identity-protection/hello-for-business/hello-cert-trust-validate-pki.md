@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Validate and Configure Public Key Infrastructure
 
@@ -40,16 +40,16 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 >Never install a certificate authority on a domain controller in a production environment.
 
 1. Open an elevated Windows PowerShell prompt.
-2. Use the following command to install the Active Directory Certificate Services role.   
+2. Use the following command to install the Active Directory Certificate Services role.
     ```PowerShell
     Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
 
-3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
+3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.
     ```PowerShell
     Install-AdcsCertificationAuthority
-    ```   
-    
+    ```
+
 ## Configure a Production Public Key Infrastructure
 
 If you do have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
@@ -67,17 +67,17 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Templates Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
+5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
 6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
-7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 8. Close the console.
 
 ### Superseding the existing Domain Controller certificate
 
-Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template from domain controllers—the domain controller certificate template.  Later releases provided a new certificate template—the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the KDC Authentication extension.  
+Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template from domain controllers—the domain controller certificate template.  Later releases provided a new certificate template—the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the KDC Authentication extension.
 
-The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).   The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
+The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).   The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template.
 
 Sign-in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 1. Open the **Certificate Authority** management console.
@@ -86,7 +86,7 @@ Sign-in to a certificate authority or management workstations with _Enterprise A
 4. Click the **Superseded Templates** tab. Click **Add**.
 5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
 6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.  Click **Add**.
-7. From the **Add Superseded Template** dialog, select the **Kerberos Authentication** certificate template and click **OK**.  Click **Add**. 
+7. From the **Add Superseded Template** dialog, select the **Kerberos Authentication** certificate template and click **OK**.  Click **Add**.
 8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
 9. Click **OK** and close the **Certificate Templates** console.
 
@@ -94,19 +94,19 @@ The certificate template is configured to supersede all the certificate template
 
 ### Configure an Internal Web Server Certificate template
 
-Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
+Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate.
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1. Open the **Certificate Authority** management console.
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Templates Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
+5. On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
     **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
 6. On the **Request Handling** tab, select **Allow private key to be exported**.
 7. On the **Subject Name** tab, select the **Supply in the request** button if it is not already selected.
 8. On the **Security** tab, Click **Add**. Type **Domain Computers** in the **Enter the object names to select** box.  Click **OK**. Select the **Allow** check box next to the **Enroll** permission.
-9. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+9. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 10. Close the console.
 
 ### Unpublish Superseded Certificate Templates
@@ -171,7 +171,7 @@ You want to confirm your domain controllers enroll the correct certificates and 
 
 Windows Server 2012 and later include Certificate Lifecycle events to determine the lifecycles of certificates for both users and computers.  Using the Event Viewer, navigate to the **CertificateServicesClient-Lifecycle-System** event log under **Application and Services/Microsoft/Windows**.
 
-Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template. 
+Look for an event indicating a new certificate enrollment (autoenrollment).  The details of the event include the certificate template on which the certificate was issued.  The name of the certificate template used to issue the certificate should match the certificate template name included in the event.  The certificate thumbprint and EKUs for the certificate are also included in the event.  The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template.
 
 Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServicesClient-Lifecycle-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
 
@@ -184,7 +184,7 @@ You can use the Certificate Manager console to validate the domain controller ha
 
 You can use **certutil.exe** to view enrolled certificates in the local computer. Certutil shows enrolled and archived certificates for the local computer.  From an elevated command prompt, run `certutil -q -store my` to view locally enrolled certificates.
 
-To view detailed information about each certificate in the store, use `certutil -q -v -store my` to validate automatic certificate enrollment enrolled the proper certificates. 
+To view detailed information about each certificate in the store, use `certutil -q -v -store my` to validate automatic certificate enrollment enrolled the proper certificates.
 
 #### Troubleshooting
 

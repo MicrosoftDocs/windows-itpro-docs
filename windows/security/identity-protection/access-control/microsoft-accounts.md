@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/13/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Microsoft Accounts
@@ -33,7 +33,7 @@ The Microsoft account allows users to sign in to websites that support this serv
 
 When users sign in to websites that are enabled to use a Microsoft account, a time-limited cookie is installed on their computers, which includes a triple DES encrypted ID tag. This encrypted ID tag has been agreed upon between the authentication server and the website. This ID tag is sent to the website, and the website plants another time-limited encrypted HTTP cookie on the user’s computer. When these cookies are valid, users are not required to supply a user name and password. If a user actively signs out of their Microsoft account, these cookies are removed.
 
-**Important**  
+**Important**
 Local Windows account functionality has not been removed, and it is still an option to use in managed environments.
 
 ### How Microsoft accounts are created
@@ -164,7 +164,7 @@ Users can connect a Microsoft account to their domain account and synchronize th
 
 Users can disconnect a Microsoft account from their domain account at any time as follows: In **PC settings**, tap or click **Users**, tap or click **Disconnect**, and then tap or click **Finish**.
 
-**Note**  
+**Note**
 Connecting Microsoft accounts with domain accounts can limit access to some high-privileged tasks in Windows. For example, Task Scheduler will evaluate the connected Microsoft account for access and fail. In these situations, the account owner should disconnect the account.
 
 ### <a href="" id="bkmk-provisionaccounts"></a>Provision Microsoft accounts in the enterprise

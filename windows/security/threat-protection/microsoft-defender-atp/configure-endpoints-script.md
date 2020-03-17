@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -34,7 +34,7 @@ You can also manually onboard individual devices to Microsoft Defender ATP. You 
 > [!NOTE]
 > The script has been optimized to be used on a limited number of devices (1-10 devices). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 devices](configure-endpoints.md).
 
-## Onboard devices 
+## Onboard devices
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
@@ -45,7 +45,7 @@ You can also manually onboard individual devices to Microsoft Defender ATP. You 
 
     d. Click **Download package** and save the .zip file.
 
-  
+
 2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
@@ -69,7 +69,7 @@ For information on how you can manually validate that the device is compliant an
 ## Configure sample collection settings
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
-You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.  
+You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.
 
 The configuration is set through the following registry key entry:
 

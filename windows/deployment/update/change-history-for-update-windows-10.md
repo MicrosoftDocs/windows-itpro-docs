@@ -7,7 +7,7 @@ audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -27,7 +27,7 @@ This topic lists new and updated topics in the [Update Windows 10](index.md) doc
 
 ## RELEASE: Windows 10, version 1709
 
-The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update). 
+The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update).
 
 ## September 2017
 

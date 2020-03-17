@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior. 
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior.
 
 >**Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx).
 
@@ -188,7 +188,7 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
    </tbody>
    </table>
 
-     
+
 
 ## To export UE-V package settings and repair UE-V templates with Windows PowerShell
 
@@ -346,7 +346,7 @@ When you are finished configuring the UE-V service with WMI and Windows PowerShe
     </tbody>
     </table>
 
-   
+
 
 
 

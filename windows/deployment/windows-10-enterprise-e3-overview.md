@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay

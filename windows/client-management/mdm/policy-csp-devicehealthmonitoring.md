@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## DeviceHealthMonitoring policies  
+## DeviceHealthMonitoring policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicehealthmonitoring-allowdevicehealthmonitoring"></a>**DeviceHealthMonitoring/AllowDeviceHealthMonitoring**  
+<a href="" id="devicehealthmonitoring-allowdevicehealthmonitoring"></a>**DeviceHealthMonitoring/AllowDeviceHealthMonitoring**
 
 <!--SupportedSKUs-->
 <table>
@@ -84,7 +84,7 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 - 1 — The DeviceHealthMonitoring connection is enabled.
 - 0 (default) — The DeviceHealthMonitoring connection is disabled.
@@ -101,7 +101,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringscope"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope**  
+<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringscope"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope**
 
 <!--SupportedSKUs-->
 <table>
@@ -144,7 +144,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device.
 This policy modifies which health events are sent to Microsoft on the DeviceHealthMonitoring connection.
 IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft device health monitoring service.
 
@@ -164,7 +164,7 @@ IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination**  
+<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination**
 
 <!--SupportedSKUs-->
 <table>
@@ -207,7 +207,7 @@ IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to
 
 <!--/Scope-->
 <!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device.
 The value of this policy constrains the DeviceHealthMonitoring connection to certain destinations in order to support regional and sovereign cloud scenarios.
 In most cases, an IT Pro does not need to define this policy. Instead, it is expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked. Only configure this policy manually if explicitly instructed to do so by a Microsoft device monitoring service.
 

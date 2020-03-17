@@ -31,7 +31,7 @@ The Group Policy settings in this topic are related to three types of process mi
 
 - **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they have been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
 
-- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization). 
+- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization).
     To find additional ASLR protections in the table below, look for `IMAGES` or `ASLR`.
 
 The following procedure describes how to use Group Policy to override individual **Process Mitigation Options** settings.
@@ -45,10 +45,10 @@ The following procedure describes how to use Group Policy to override individual
 2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you’ll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
 
     **Important**<br>For each app you want to include, you must include:
-    
+
    - **Value name.** The app file name, including the extension. For example, iexplore.exe.
    - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to 0 (where the setting is forced off), 1 (where the setting is forced on), or ? (where the setting retains the previous, existing value).
-    
+
        **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
 
      ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
@@ -68,7 +68,7 @@ Where the bit flags are read from right to left and are defined as:
 |D |8 |`PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)` |Uses the force Address Space Layout Randomization (ASLR) setting to act as though an image base collision happened at load time, forcibly rebasing images that aren’t dynamic base compatible. Images without the base relocation section won’t be loaded if relocations are required. |
 |E |15 |`PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON (0x00010000)` |Turns on the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
 |F |16 |`PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)` |Turns off the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
-    
+
 ## Example
 If you want to turn on the **PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE** and **PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON** settings, turn off the **PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF** setting, and leave everything else as the default values, you’d want to type a value of `???????????????0???????1???????1`.
 

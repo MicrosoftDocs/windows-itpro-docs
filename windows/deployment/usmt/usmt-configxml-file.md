@@ -2,7 +2,7 @@
 title: Config.xml File (Windows 10)
 description: Config.xml File
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -28,10 +28,10 @@ The Config.xml file has a different format than the other migration .xml files, 
 
 For more information about using the Config.xml file with other migration files, such as the MigDocs.xml and MigApps.xml files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
 
-**Note**  
+**Note**
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
- 
+
 
 ## In This Topic
 
@@ -108,10 +108,10 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 </ErrorControl>
 ```
 
-**Important**  
+**Important**
 The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
- 
+
 
 ### <a href="" id="bkmk-fatal"></a>&lt;fatal&gt;
 
@@ -147,7 +147,7 @@ Syntax: `<fatal errorCode="any">`*&lt;pattern&gt;*`</fatal>`
 </tbody>
 </table>
 
- 
+
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
@@ -201,7 +201,7 @@ Syntax: `<nonfatal errorCode="any">`*&lt;pattern&gt;*`</nonFatal>`
 </tbody>
 </table>
 
- 
+
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
 
@@ -240,7 +240,7 @@ Syntax: `<registryError></registryError>`
 </tbody>
 </table>
 
- 
+
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
 
@@ -261,10 +261,10 @@ Syntax: `<HardLinkStoreControl></HardLinkStoreControl>`
 
 The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that cannot be copied, even though is technically possible for the link to be created.
 
-**Important**  
+**Important**
 The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file’s location.
 
- 
+
 
 ``` xml
 <Policy>
@@ -359,7 +359,7 @@ This element describes the source and destination groups for a local group membe
 </tbody>
 </table>
 
- 
+
 
 The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;** and **&lt;exclude&gt;**. Although both can be children at the same time, only one is required.
 
@@ -569,7 +569,7 @@ Refer to the following sample Config.xml file for additional details about items
               </changeGroup>
             </mappings>
           </localGroups>
-          
+
       -->
   </ProfileControl>
 </Configuration>
@@ -580,9 +580,9 @@ Refer to the following sample Config.xml file for additional details about items
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

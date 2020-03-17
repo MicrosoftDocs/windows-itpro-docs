@@ -1,8 +1,8 @@
 ---
 title: Configuration service providers for IT pros (Windows 10)
-description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -21,7 +21,7 @@ ms.date: 07/27/2017
 -   Windows 10
 -   Windows 10 Mobile
 
-This article explains how IT pros and system administrators can take advantage of many settings available through configuration service providers (CSPs) to configure devices running Windows 10 and Windows 10 Mobile in their organizations. CSPs expose device configuration settings in Windows 10. The CSPs are used by mobile device management (MDM) service providers and are documented in the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390). 
+This article explains how IT pros and system administrators can take advantage of many settings available through configuration service providers (CSPs) to configure devices running Windows 10 and Windows 10 Mobile in their organizations. CSPs expose device configuration settings in Windows 10. The CSPs are used by mobile device management (MDM) service providers and are documented in the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390).
 
 > [!NOTE]
 > The information provided here about CSPs and CSP documentation also applies to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
@@ -130,7 +130,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     -   Restricting access to the context menu.
     -   Enabling or disabling tile manipulation.
     -   Creating role-specific configurations.
-    
+
 -   [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244)
 
     The Policy CSP enables the enterprise to configure policies on Windows 10 and Windows 10 Mobile. Some of these policy settings can also be applied using Group Policy, and the CSP documentation lists the equivalent Group Policy settings.

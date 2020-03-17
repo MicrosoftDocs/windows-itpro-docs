@@ -5,7 +5,7 @@ description: You can pin websites to the Windows 8.1 taskbar for quick access u
 author: dansimp
 ms.prod: ie11
 ms.assetid: 24f4dcac-9032-4fe8-bf6d-2d712d61cb0c
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -114,9 +114,9 @@ You can make your intranet websites act more like applications by extending them
 - [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=331148)
 - [Windows ADK Overview](https://go.microsoft.com/fwlink/p/?LinkId=276669)
 
- 
 
- 
+
+
 
 
 

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
@@ -26,13 +26,13 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 
 Click an alert to see the alert details view and the various tiles that provide information about the alert.
 
-From the alert details view, you can manage an alert and see alert data such as severity, category, technique, along with other information that can help you make better decisions on how to approach them. 
+From the alert details view, you can manage an alert and see alert data such as severity, category, technique, along with other information that can help you make better decisions on how to approach them.
 
 The techniques reflected in the card are based on [MITRE enterprise techniques](https://attack.mitre.org/techniques/enterprise/).
 
@@ -74,7 +74,7 @@ Clicking in the circle immediately to the left of the indicator displays its det
 
 ![Image of the alert details pane](images/atp-alert-mgt-pane.png)
 
-The alert details pane helps you take a deeper look at the details about the alert. It displays rich information about the execution details, file details, detections, observed worldwide, observed in organization, and other details taken from the entity's page –  while remaining on the alert page, so you never leave the current context of your investigation.  
+The alert details pane helps you take a deeper look at the details about the alert. It displays rich information about the execution details, file details, detections, observed worldwide, observed in organization, and other details taken from the entity's page –  while remaining on the alert page, so you never leave the current context of your investigation.
 
 
 ## Incident graph

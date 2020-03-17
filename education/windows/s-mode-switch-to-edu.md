@@ -8,7 +8,7 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 12/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 author: dansimp
@@ -19,11 +19,11 @@ The S mode switch motion enables users to switch to Windows 10 Pro Education in 
 
 ## Benefits of Windows 10 Pro in S mode for Education
 
-S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
+S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out.
 
 - **Microsoft-verified security** - It reduces risk of malware and exploitations that harm students and educators, because only Microsoft-verified apps can be installed.
 - **Performance that lasts** - Provides all-day battery life to keep students on task and not tripping over cords. Also, verified apps won’t degrade device performance over time.
-- **Streamlined for Speed** - Offers faster log-in times so teachers spend less time waiting and more time teaching. 
+- **Streamlined for Speed** - Offers faster log-in times so teachers spend less time waiting and more time teaching.
 
 
 |  |Home  |S mode  |Pro/Pro Education  |Enterprise/Education |
@@ -42,8 +42,8 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Credential Guard | | | | X |
 |Device Guard | | | | X |
 
-### Windows 10 in S mode is safe, secure, and fast.  
-However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store. 
+### Windows 10 in S mode is safe, secure, and fast.
+However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 
 ## How to switch
 
@@ -65,10 +65,10 @@ Tenant-wide Windows 10 Pro > Pro Education
 2. **Key acquisition options** - For schools with **active Microsoft Volume Licensing** agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
 
 > [!NOTE]
-> There is currently no "bulk-switch" option for devices running Windows 10, version 1803. 
+> There is currently no "bulk-switch" option for devices running Windows 10, version 1803.
 
 ## Related Topics
 [FAQs](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq)<br>
-[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR>
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) <BR>
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)

@@ -2,7 +2,7 @@
 title: Lock down settings and quick actions in Windows 10 Mobile
 description: This topic lists the settings and quick actions that can be locked down in Windows 10 Mobile.
 ms.assetid: 69E2F202-D32B-4FAC-A83D-C3051DF02185
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["lockdown"]
 ms.prod: w10
@@ -453,7 +453,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tbody>
 </table>
 
- 
+
 
 ## Quick actions lockdown
 
@@ -480,12 +480,12 @@ You can specify the quick actions as follows:
     <System name="SystemSettings_QuickAction_WiFi"/>
     <System name="SystemSettings_System_Display_Internal_Rotation"/>
     <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
-</Settings> 
+</Settings>
 ```
 
 
 
- 
+
 
 ## Related topics
 
@@ -494,9 +494,9 @@ You can specify the quick actions as follows:
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 
- 
 
- 
+
+
 
 
 

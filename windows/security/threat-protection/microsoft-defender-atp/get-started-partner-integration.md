@@ -1,6 +1,6 @@
 ---
 title: Become a Microsoft Defender ATP partner
-ms.reviewer: 
+ms.reviewer:
 description: Learn the steps and requirements so that you can integrate your solution with Microsoft Defender ATP and be a partner
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
 search.product: eADQiWindows 10XVcnh
@@ -14,19 +14,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ---
 
 # Become a Microsoft Defender ATP partner
 
-**Applies to:** 
+**Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 To become a Microsoft Defender ATP solution partner, you'll need to follow and complete the following steps.
 
 ## Step 1: Subscribe to a Microsoft Defender ATP Developer license
-Subscribing to the [Microsoft Defender ATP Developer license](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9) allows you to use a Microsoft Defender ATP tenant with up to 10 devices for developing solutions to integrate with Microsoft Defender ATP. 
+Subscribing to the [Microsoft Defender ATP Developer license](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9) allows you to use a Microsoft Defender ATP tenant with up to 10 devices for developing solutions to integrate with Microsoft Defender ATP.
 
 ## Step 2: Fulfill the solution validation and certification requirements
 The best way for technology partners to certify their integration works, is to have a joint customer approve the suggested integration design and have it tested and demoed to the Microsoft Defender ATP team.
@@ -37,7 +37,7 @@ Once the Microsoft Defender ATP team has reviewed and approves the integration, 
 [Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) is a program specifically for Microsoft security partners to help enrich your security products and improve customer discoverability of your integrations to Microsoft security products.
 
 ## Step 4: Get listed in the Microsoft Defender ATP partner application portal
-Microsoft Defender ATP supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender ATP management portal. 
+Microsoft Defender ATP supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender ATP management portal.
 
 To have your company listed as a partner in the in-product partner page, you will need to provide the following:
 

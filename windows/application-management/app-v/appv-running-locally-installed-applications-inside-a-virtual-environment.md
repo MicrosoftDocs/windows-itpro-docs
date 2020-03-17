@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 03/08/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -92,7 +92,7 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
     </tbody>
     </table>
 
-     
+
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 
@@ -103,10 +103,10 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
     The application in the previous example would produce a registry export file (.reg file) like the following:
 
     ``` syntax
-    Windows Registry Editor Version 5.00 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual] 
-    @="" 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe] 
+    Windows Registry Editor Version 5.00
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual]
+    @=""
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe]
     @="aaaaaaaa-bbbb-cccc-dddd-eeeeeeee_11111111-2222-3333-4444-555555555
     ```
 
@@ -165,9 +165,9 @@ This method lets you launch any command within the context of an App-V package, 
 
 [Technical Reference for App-V](appv-technical-reference.md)
 
- 
 
- 
+
+
 
 
 

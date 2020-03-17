@@ -2,7 +2,7 @@
 title: SharedPC DDF file
 description: SharedPC DDF file
 ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -439,9 +439,9 @@ The XML below is the DDF for Windows 10, version 1703.
 
 [SharedPC configuration service provider](sharedpc-csp.md)
 
- 
 
- 
+
+
 
 
 

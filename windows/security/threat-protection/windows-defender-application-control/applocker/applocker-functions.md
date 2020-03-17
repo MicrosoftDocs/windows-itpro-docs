@@ -2,7 +2,7 @@
 title: AppLocker functions (Windows 10)
 description: This topic for the IT professional lists the functions and security levels for the Software Restriction Policies (SRP) and AppLocker features.
 ms.assetid: bf704198-9e74-4731-8c5a-ee0512df34d2
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -44,16 +44,16 @@ AppLocker and SRP use the security level IDs to stipulate the access requirement
 
 | Security level ID | SRP | AppLocker |
 | - | - | - |
-| SAFER_LEVELID_FULLYTRUSTED | Supported | Supported | 
+| SAFER_LEVELID_FULLYTRUSTED | Supported | Supported |
 | SAFER_LEVELID_NORMALUSER | Supported | Not supported |
 | SAFER_LEVELID_CONSTRAINED | Supported | Not supported |
 | SAFER_LEVELID_UNTRUSTED | Supported | Not supported |
-| SAFER_LEVELID_DISALLOWED | Supported | Supported | 
- 
+| SAFER_LEVELID_DISALLOWED | Supported | Supported |
+
 In addition, URL zone ID is not supported in AppLocker.
 
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
+
+

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,32 +40,32 @@ This event generates when a cryptographic operation (open key, create key, creat
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5061</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12290</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-14T19:42:08.104008000Z" /> 
- <EventRecordID>1048444</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="3496" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5061</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12290</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-14T19:42:08.104008000Z" />
+ <EventRecordID>1048444</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="3496" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x38e2d</Data> 
- <Data Name="ProviderName">Microsoft Software Key Storage Provider</Data> 
- <Data Name="AlgorithmName">ECDH\_P521</Data> 
- <Data Name="KeyName">le-SuperAdmin-795fd6c1-2fae-4bef-a6bc-4f4d464bc083</Data> 
- <Data Name="KeyType">%%2500</Data> 
- <Data Name="Operation">%%2480</Data> 
- <Data Name="ReturnCode">0x0</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x38e2d</Data>
+ <Data Name="ProviderName">Microsoft Software Key Storage Provider</Data>
+ <Data Name="AlgorithmName">ECDH\_P521</Data>
+ <Data Name="KeyName">le-SuperAdmin-795fd6c1-2fae-4bef-a6bc-4f4d464bc083</Data>
+ <Data Name="KeyType">%%2500</Data>
+ <Data Name="Operation">%%2480</Data>
+ <Data Name="ReturnCode">0x0</Data>
  </EventData>
  </Event>
 

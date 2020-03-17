@@ -5,7 +5,7 @@ description: Choose how to install Internet Explorer 11 (IE11)
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9572f5f1-5d67-483e-bd63-ffea95053481
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -30,9 +30,9 @@ Before you install Internet Explorer 11, you should:
 
     -   **As part of a Windows deployment.** Update your Windows images to include IE11, and then add the update to your MDT deployment share or to your Windows image. For instructions about how to create and use Windows images, see [Create and Manage a Windows Image Using DISM](https://go.microsoft.com/fwlink/p/?LinkId=299408). For general information about deploying IE, see [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=331148), [Windows ADK Overview](https://go.microsoft.com/fwlink/p/?LinkId=276669).
 
- 
 
- 
+
+
 
 
 

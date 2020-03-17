@@ -2,7 +2,7 @@
 title: Debug programs (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Debug programs security policy setting.
 ms.assetid: 594d9f2c-8ffc-444b-9522-75615ec87786
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -51,13 +51,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Administrators | 
-| Stand-Alone Server Default Settings | Administrators | 
-| Domain Controller Effective Default Settings | Administrators | 
-| Member Server Effective Default Settings | Administrators | 
-| Client Computer Effective Default Settings | Administrators | 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Administrators |
+| Stand-Alone Server Default Settings | Administrators |
+| Domain Controller Effective Default Settings | Administrators |
+| Member Server Effective Default Settings | Administrators |
+| Client Computer Effective Default Settings | Administrators |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -83,7 +83,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Debug programs** user right can be exploited to capture sensitive device information from system memory or to access and modify kernel or application structures. Some attack tools exploit this user right to extract hashed passwords and other private security information or to insert malware. 
+The **Debug programs** user right can be exploited to capture sensitive device information from system memory or to access and modify kernel or application structures. Some attack tools exploit this user right to extract hashed passwords and other private security information or to insert malware.
 By default, the **Debug programs** user right is assigned only to administrators, which helps mitigate risk from this vulnerability.
 
 ### Countermeasure
@@ -92,7 +92,7 @@ Remove the accounts of all users and groups that do not require the **Debug prog
 
 ### Potential impact
 
-If you revoke this user right, no one can debug programs. However, typical circumstances rarely require this capability on production devices. If an issue arises that requires an application to be debugged on a production server, you can move the server to a different organizational unit (OU) 
+If you revoke this user right, no one can debug programs. However, typical circumstances rarely require this capability on production devices. If an issue arises that requires an application to be debugged on a production server, you can move the server to a different organizational unit (OU)
 temporarily and assign the **Debug programs** user right to a separate Group Policy for that OU.
 
 ## Related topics

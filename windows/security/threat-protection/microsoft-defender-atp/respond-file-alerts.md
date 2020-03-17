@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
- 
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
@@ -151,7 +151,7 @@ You can prevent further propagation of an attack in your organization by banning
 ### Enable the block file feature
 
 To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
-  
+
 ### Allow or block file
 
 When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.

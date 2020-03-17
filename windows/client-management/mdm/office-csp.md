@@ -7,14 +7,14 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 08/15/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Office CSP
 
 
-The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365). 
+The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
 
 This CSP was added in Windows 10, version 1703.
 
@@ -24,41 +24,41 @@ The following diagram shows the Office configuration service provider in tree fo
 
 ![Office CSP diagram](images/provisioning-csp-office.png)
 
-<a href="" id="office"></a>**./Device/Vendor/MSFT/Office/ or ./User/Vendor/MSFT/Office**  
+<a href="" id="office"></a>**./Device/Vendor/MSFT/Office/ or ./User/Vendor/MSFT/Office**
 The root node for the Office configuration service provider.</p>
 
-<a href="" id="installation"></a>**Installation**  
+<a href="" id="installation"></a>**Installation**
 Specifies the options for the Microsoft Office installation.
 
 The supported operations are Add, Delete, and Get.
 
-<a href="" id="id"></a>**Installation/_id_**  
-Specifies a unique identifier that represents the ID of the Microsoft Office product to install. 
+<a href="" id="id"></a>**Installation/_id_**
+Specifies a unique identifier that represents the ID of the Microsoft Office product to install.
 
 The supported operations are Add, Delete, and Get.
 
-<a href="" id="install"></a>**Installation/_id_/Install**  
-Installs Office by using the XML data specified in the configuration.xml file. 
+<a href="" id="install"></a>**Installation/_id_/Install**
+Installs Office by using the XML data specified in the configuration.xml file.
 
 The supported operations are Get and Execute.
 
-<a href="" id="status"></a>**Installation/_id_/Status**  
-The Microsoft Office installation status. 
+<a href="" id="status"></a>**Installation/_id_/Status**
+The Microsoft Office installation status.
 
 The only supported operation is Get.
 
-<a href="" id="finalstatus"></a>**Installation/_id_/FinalStatus**  
+<a href="" id="finalstatus"></a>**Installation/_id_/FinalStatus**
 Added in Windows 10, version 1809. Indicates the status of the Final Office 365 installation.
 
 The only supported operation is Get.
 
-Behavior:  
+Behavior:
 -  When Office CSP is triggered to install, it will first check if the FinalStatus node exists or not. If the node exists, delete it.
--  When Office installation reaches any terminal states (either success or failure), this node is created that contains the following values:  
+-  When Office installation reaches any terminal states (either success or failure), this node is created that contains the following values:
     - When status = 0: 70 (succeeded)
     - When status != 0: 60 (failed)
 
-<a href="" id="currentstatus"></a>**Installation/CurrentStatus**  
+<a href="" id="currentstatus"></a>**Installation/CurrentStatus**
 Returns an XML of current Office 365 installation status on the device.
 
 The only supported operation is Get.
@@ -78,7 +78,7 @@ Sample SyncML to install Microsoft 365 Apps for business Retail from current cha
           </Target>
           <Meta>
             <Format xmlns="syncml:metinf">chr</Format>
-          </Meta> 
+          </Meta>
           <Data>&lt;Configuration&gt;&lt;Add OfficeClientEdition=&quot;32&quot; Channel=&quot;Current&quot;&gt;&lt;Product ID=&quot;O365BusinessRetail&quot;&gt;&lt;Language ID=&quot;en-us&quot; /&gt;&lt;/Product&gt;&lt;/Add&gt;&lt;Display Level=&quot;None&quot; AcceptEULA=&quot;TRUE&quot; /&gt;&lt;/Configuration&gt;</Data>
         </Item>
     </Exec>
@@ -100,7 +100,7 @@ To uninstall the Office 365 from the system:
           </Target>
           <Meta>
             <Format xmlns="syncml:metinf">chr</Format>
-          </Meta> 
+          </Meta>
           <Data>&lt;Configuration&gt;&lt;Remove All=&quot;TRUE&quot;/&gt;&lt;Display Level=&quot;None&quot; AcceptEULA=&quot;TRUE&quot; /&gt;&lt;/Configuration&gt;</Data>
         </Item>
     </Exec>
@@ -156,19 +156,19 @@ To get the current status of Office 365 on the device.
 </tr>
 <tr>
 <td>13</td>
-<td>ERROR_INVALID_DATA 
+<td>ERROR_INVALID_DATA
 <p>Cannot verify signature of the downloaded Office Deployment Tool (ODT)<p></td>
 <td>Failure</td>
 </tr>
 <tr>
 <td>1460</td>
-<td>ERROR_TIMEOUT 
+<td>ERROR_TIMEOUT
 <p>Failed to download ODT</p></td>
 <td>Failure</td>
 </tr>
 <tr>
 <td>1602 </td>
-<td>ERROR_INSTALL_USEREXIT 
+<td>ERROR_INSTALL_USEREXIT
 <p>User cancelled the installation </p></td>
 <td>Failure</td>
 </tr>
@@ -185,19 +185,19 @@ To get the current status of Office 365 on the device.
 </tr>
 <tr>
 <td>17000</td>
-<td>ERROR_PROCESSPOOL_INITIALIZATION 
+<td>ERROR_PROCESSPOOL_INITIALIZATION
 <p>Failed to start C2RClient </p></td>
 <td>Failure</td>
 </tr>
 <tr>
 <td>17001</td>
-<td>ERROR_QUEUE_SCENARIO 
+<td>ERROR_QUEUE_SCENARIO
 <p>Failed to queue installation scenario in C2RClient</p></td>
 <td>Failure</td>
 </tr>
 <tr>
 <td>17002</td>
-<td>ERROR_COMPLETING_SCENARIO 
+<td>ERROR_COMPLETING_SCENARIO
 <p>Failed to complete the process. Possible reasons:</p>
 <ul>
 <li>Installation cancelled by user</li>
@@ -209,7 +209,7 @@ To get the current status of Office 365 on the device.
 </tr>
 <tr>
 <td>17003</td>
-<td>ERROR_ANOTHER_RUNNING_SCENARIO 
+<td>ERROR_ANOTHER_RUNNING_SCENARIO
 <p>Another scenario is running</p></td>
 <td>Failure</td>
 </tr>
@@ -217,7 +217,7 @@ To get the current status of Office 365 on the device.
 <td>17004</td>
 <td>ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP
 <p>Possible reasons:</p>
-<ul> 
+<ul>
 <li>Unknown SKUs</li>
 <li>Content does't exist on CDN
 <ul><li>such as trying to install an unsupported LAP, like zh-sg</li>
@@ -254,7 +254,7 @@ To get the current status of Office 365 on the device.
 </tr>
 <tr>
 <td>0x80004005</td>
-<td>E_FAIL 
+<td>E_FAIL
 <p>ODT cannot be used to install Volume license</p></td>
 <td>Failure</td>
 </tr>

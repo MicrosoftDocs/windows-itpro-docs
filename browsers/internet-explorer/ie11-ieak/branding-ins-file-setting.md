@@ -5,7 +5,7 @@ description: Use the \[Branding\] .INS file setting to set up your custom brandi
 author: dansimp
 ms.prod: ie11
 ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -47,7 +47,7 @@ Info about the custom branding and setup information in your browser package.
 |Window_Title_CN |`<company_name>` |Company name to be appended to the window title. |
 |WizardVersion |`<string>` |Version of the IEAK that created the .ins file. For example, `6.00.0707.2800`. |
 
- 
+
 
 
 

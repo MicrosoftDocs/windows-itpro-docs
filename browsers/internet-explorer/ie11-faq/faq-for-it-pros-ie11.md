@@ -5,7 +5,7 @@ description: Frequently asked questions about Internet Explorer 11 for IT Pros
 author: dansimp
 ms.prod: ie11
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

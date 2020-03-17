@@ -2,7 +2,7 @@
 title: EnterpriseExtFileSystem DDF
 description: EnterpriseExtFileSystem DDF
 ms.assetid: 2D292E4B-15EE-4AEB-8884-6FEE8B92D2D1
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -262,9 +262,9 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 [EnterpriseExtFileSystem configuration service provider](enterpriseextfilessystem-csp.md)
 
- 
 
- 
+
+
 
 
 

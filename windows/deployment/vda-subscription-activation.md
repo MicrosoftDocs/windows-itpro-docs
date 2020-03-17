@@ -1,6 +1,6 @@
 ---
 title: Configure VDA for Windows 10 Subscription Activation
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay

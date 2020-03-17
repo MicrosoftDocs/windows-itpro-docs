@@ -2,7 +2,7 @@
 title: Boundary Zone GPOs (Windows 10)
 description: Boundary Zone GPOs
 ms.assetid: 1ae66088-02c3-47e4-b7e8-74d0b8f8646e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

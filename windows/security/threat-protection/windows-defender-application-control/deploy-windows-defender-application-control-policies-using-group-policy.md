@@ -34,7 +34,7 @@ WDAC policies can easily be deployed and managed with Group Policy. Windows Defe
 
 To deploy and manage a WDAC policy with Group Policy:
 
-1.  On a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC** 
+1.  On a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC**
 
 2.  Create a new GPO: right-click an OU and then click **Create a GPO in this domain, and Link it here**.
 
@@ -43,7 +43,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
     ![Group Policy Management, create a GPO](images/dg-fig24-creategpo.png)
 
-3.  Name the new GPO. You can choose any name. 
+3.  Name the new GPO. You can choose any name.
 
 4.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 

@@ -2,7 +2,7 @@
 title: Audit Authorization Policy Change (Windows 10)
 description: The policy setting, Audit Authorization Policy Change, determines if audit events are generated when specific changes are made to the authorization policy.
 ms.assetid: ca0587a2-a2b3-4300-aa5d-48b4553c3b36
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

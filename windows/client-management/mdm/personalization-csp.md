@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -24,14 +24,14 @@ The following diagram shows the Personalization configuration service provider i
 
 ![personalization csp](images/provisioning-csp-personalization.png)
 
-<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**  
+<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**
 <p style="margin-left: 20px">Defines the root node for the Personalization configuration service provider.</p>
 
-<a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
+<a href="" id="desktopimageurl"></a>**DesktopImageUrl**
 <p style="margin-left: 20px">Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
+<a href="" id="desktopimagestatus"></a>**DesktopImageStatus**
 <p style="margin-left: 20px">Represents the status of the desktop image. Valid values:</p>
 <ul>
 <li>1 - Successfully downloaded or copied.</li>
@@ -47,12 +47,12 @@ The following diagram shows the Personalization configuration service provider i
 > [!Note]
 > This setting is only used to query status. To set the image, use the DesktopImageUrl setting.
 
-<a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
+<a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**
 <p style="margin-left: 20px">Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 
-<a href="" id="lockscreenimagestatus"></a>**LockScreenImageStatus**  
+<a href="" id="lockscreenimagestatus"></a>**LockScreenImageStatus**
 <p style="margin-left: 20px">Represents the status of the lock screen image. Valid values:</p>
 <ul>
 <li>1 - Successfully downloaded or copied.</li>
@@ -104,7 +104,7 @@ The following diagram shows the Personalization configuration service provider i
         <Data>https://www.contoso.com/lockscreenimage.JPG</Data>
       </Item>
     </Replace>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```

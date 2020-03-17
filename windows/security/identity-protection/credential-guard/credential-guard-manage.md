@@ -12,8 +12,8 @@ ms.author: v-tea
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.reviewer: 
-ms.custom: 
+ms.reviewer:
+ms.custom:
 - CI 120967
 - CSSTroubleshooting
 ---
@@ -69,7 +69,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]
 > If you enable Windows Defender Credential Guard by using Group Policy, the steps to enable Windows features through Control Panel or DISM are not required. Group Policy will install Windows features for you.
 
- 
+
 **Add the virtualization-based security features by using Programs and Features**
 
 1.  Open the Programs and Features control panel.
@@ -124,7 +124,7 @@ You can also enable Windows Defender Credential Guard by using the [HVCI and Win
 DG_Readiness_Tool.ps1 -Enable -AutoReboot
 ```
 > [!IMPORTANT]
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work.
 > This is a known issue.
 
 ### Review Windows Defender Credential Guard performance
@@ -147,7 +147,7 @@ You can also check that Windows Defender Credential Guard is running by using th
 DG_Readiness_Tool_v3.6.ps1 -Ready
 ```
 > [!IMPORTANT]
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work.
 > This is a known issue.
 
 > [!NOTE]
@@ -162,19 +162,19 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
         -   The second variable: **0** means that it's configured to run in protect mode. **1** means that it's configured to run in test mode. This variable should always be **0**.
     -   **Event ID 15** Windows Defender Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Windows Defender Credential Guard.
     -   **Event ID 16** Windows Defender Credential Guard (LsaIso.exe) failed to launch: \[error code\]
-    -   **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]  
+    -   **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]
     You can also verify that TPM is being used for key protection by checking Event ID 51 in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
-        -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: **0x0**. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: **0x1**. TPM PCR mask: **0x0**.  
+        -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: **0x0**. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: **0x1**. TPM PCR mask: **0x0**.
   - You can use Windows Powershell to determine whether credential guard is running on a client computer. On the computer in question, open an elevated Powershell window and run the following command:
-  
+
     ```powershell
     (Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).SecurityServicesRunning
     ```
 
-    This command generates the following output:  
+    This command generates the following output:
     - **0**: Windows Defender Credential Guard is disabled (not running)
     - **1**: Windows Defender Credential Guard is enabled (running)
-    > [!NOTE]  
+    > [!NOTE]
     > Checking the task list or Task Manager to see if LSAISO.exe is running is not a recommended method for determining whether Windows Defender Credential Guard is running.
 
 ## Disable Windows Defender Credential Guard
@@ -235,8 +235,8 @@ You can also disable Windows Defender Credential Guard by using the [HVCI and Wi
 ```
 DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
-> [!IMPORTANT]  
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> [!IMPORTANT]
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work.
 > This is a known issue.
 
 #### Disable Windows Defender Credential Guard for a virtual machine

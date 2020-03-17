@@ -13,12 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+# Onboard Windows 10 devices using Group Policy
 
 **Applies to:**
 
@@ -39,13 +39,13 @@ ms.date: 04/24/2018
 
 ## Onboard devices using Group Policy
 1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
- 
+
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
     b. Select Windows 10 as the operating system.
-    
+
     c. In the **Deployment method** field, select **Group policy**.
-    
+
     d. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
@@ -82,7 +82,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
     If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
     configuration package:
-    
+
      a.  Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
 
      b.  Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
@@ -112,7 +112,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
     a. In the navigation pane, select **Settings** > **Offboarding**.
 
     b. Select Windows 10 as the operating system.
-    
+
     c. In the **Deployment method** field, select **Group policy**.
 
     d. Click **Download package** and save the .zip file.

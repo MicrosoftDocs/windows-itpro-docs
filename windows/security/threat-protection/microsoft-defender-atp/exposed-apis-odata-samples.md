@@ -1,6 +1,6 @@
 ---
 title: OData queries with Microsoft Defender ATP
-ms.reviewer: 
+ms.reviewer:
 description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -242,7 +242,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+
 Get top 100 devices with 'HealthStatus' not equals to 'Active'
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100
 ```
 
 **Response:**

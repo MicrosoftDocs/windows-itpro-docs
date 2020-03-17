@@ -2,7 +2,7 @@
 title: CMPolicyEnterprise DDF file
 description: CMPolicyEnterprise DDF file
 ms.assetid: 065EF07A-0CF3-4EE5-B620-3464A75B7EED
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -304,9 +304,9 @@ The XML below is the current version for this CSP.
 
 [CMPolicyEnterprise configuration service provider](cmpolicyenterprise-csp.md)
 
- 
 
- 
+
+
 
 
 

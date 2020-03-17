@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 01/12/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Windows Defender Credential Guard: Requirements
@@ -31,7 +31,7 @@ For Windows Defender Credential Guard to provide protection, the computers you a
 To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Windows Defender Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
-- TPM (preferred - provides binding to hardware) versions 1.2 and 2.0 are supported, either discrete or firmware 
+- TPM (preferred - provides binding to hardware) versions 1.2 and 2.0 are supported, either discrete or firmware
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
 The Virtualization-based security requires:
@@ -86,7 +86,7 @@ The following tables describe baseline protections, plus protections for improve
 
 > [!NOTE]
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers.
-> 
+>
 > If you are an OEM, see [PC OEM requirements for Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
 
 ### Baseline protections

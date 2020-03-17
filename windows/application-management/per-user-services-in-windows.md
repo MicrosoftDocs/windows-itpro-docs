@@ -8,15 +8,15 @@ ms.pagetype: mobile
 ms.author: dansimp
 author: msfttracyp
 ms.date: 09/14/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# Per-user services in Windows 10 and Windows Server 
+# Per-user services in Windows 10 and Windows Server
 
 > Applies to: Windows 10, Windows Server
 
-Per-user services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks. 
+Per-user services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks.
 
 > [!NOTE]
 > Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
@@ -24,9 +24,9 @@ Per-user services are services that are created when a user signs into Windows o
 You can set the template service's **Startup Type** to **Disabled** to create per-user services in a stopped and disabled state.
 
 > [!IMPORTANT]
-> Carefully test any changes to the template service's Startup Type before deploying to a production environment. 
+> Carefully test any changes to the template service's Startup Type before deploying to a production environment.
 
-Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
+Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
@@ -58,7 +58,7 @@ The template service isn't displayed in the Services console (services.msc) so y
 > [!NOTE]
 > Disabling a per-user service simply means that it is created in a stopped and disabled state. When the user signs out, the per-user service is removed.
 
-You can't manage all of the per-user service templates services using normal Group Policy management methods. Because the per-user services aren't displayed in the Services management console, they're also not displayed in the Group Policy Services policy editor UI. 
+You can't manage all of the per-user service templates services using normal Group Policy management methods. Because the per-user services aren't displayed in the Services management console, they're also not displayed in the Group Policy Services policy editor UI.
 
 Additionally, there are four template services that can't be managed with a security template:
 - PimIndexMaintenanceSvc
@@ -76,7 +76,7 @@ In light of these restrictions, you can use the following methods to manage per-
 
 You can manage the CDPUserSvc and OneSyncSvc per-user services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
 
-For example: 
+For example:
 
 ```
 [Unicode]
@@ -94,7 +94,7 @@ If a per-user service can't be disabled using a the security template, you can d
 
 1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
-2. Create a new Group Policy Object (GPO) or use an existing GPO.  
+2. Create a new Group Policy Object (GPO) or use an existing GPO.
 
 3. Right-click the GPO and click **Edit** to launch the Group Policy Object Editor.
 
@@ -102,26 +102,26 @@ If a per-user service can't be disabled using a the security template, you can d
 
 5. Right-click **Registry** > **New** > **Registry Item**.
 
-   ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png) 
-   
+   ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png)
+
 6. Make sure that  HKEY_Local_Machine is selected for Hive and then click ... (the ellipses) next to Key Path.
 
-   ![Choose HKLM](media/gpp-hklm.png)  
-    
+   ![Choose HKLM](media/gpp-hklm.png)
+
 7. Browse to **System\CurrentControlSet\Services\PimIndexMaintenanceSvc**. In the list of values, highlight **Start** and click **Select**.
 
-   ![Select Start](media/gpp-svc-start.png)   
-   
-8. Change **Value data** from **00000003** to **00000004** and click **OK**. Note setting the Value data to **4** = **Disabled**. 
+   ![Select Start](media/gpp-svc-start.png)
 
-   ![Startup Type is Disabled](media/gpp-svc-disabled.png)   
-   
-9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
+8. Change **Value data** from **00000003** to **00000004** and click **OK**. Note setting the Value data to **4** = **Disabled**.
+
+   ![Startup Type is Disabled](media/gpp-svc-disabled.png)
+
+9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.
 
 ### Managing Template Services with reg.exe
 
-If you cannot use Group Policy Preferences to manage the per-user services, you can edit the registry with reg.exe. 
-To disable the Template Services, change the Startup Type for each service to 4 (disabled). 
+If you cannot use Group Policy Preferences to manage the per-user services, you can edit the registry with reg.exe.
+To disable the Template Services, change the Startup Type for each service to 4 (disabled).
 For example:
 
 ```code
@@ -131,19 +131,19 @@ REG.EXE ADD HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc /v Sta
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\UnistoreSvc /v Start /t REG_DWORD /d 4 /f
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\UserDataSvc /v Start /t REG_DWORD /d 4 /f
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t REG_DWORD /d 4 /f
-``` 
+```
 
 > [!CAUTION]
-> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution.
 
-### Managing Template Services with regedit.exe 
+### Managing Template Services with regedit.exe
 
 If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the template services, change the Startup Type for each service to 4 (disabled):
 
-![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png) 
+![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png)
 
 > [!CAUTION]
-> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution.
 
 Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can prevent the per-user service from being created by setting **UserServiceFlags** to 0 under the same service configuration in the registry:
 

@@ -6,7 +6,7 @@ description: Use the Enterprise Mode Site List Manager to create and update your
 author: dansimp
 ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,7 +43,7 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 
 > [!IMPORTANT]
 > Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
- 
+
 ```xml
 <site-list version="205">
 	<!-- File creation header -->
@@ -52,7 +52,7 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 		<version>10240</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!-- Begin Site List --> 
+  	<!-- Begin Site List -->
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>MSEdge</open-in>
@@ -69,10 +69,10 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
-	<site url="relecloud.com"/>  
+	<site url="relecloud.com"/>
 		<compat-mode>Default</compat-mode>
 		<open-in>None</open-in>
-	<site url="relecloud.com/about">  
+	<site url="relecloud.com/about">
 		<compat-mode>IE8Enterprise"</compat-mode>
 		<open-in>None</open-in>
 	</site>
@@ -87,7 +87,7 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 	<site url="fabrikam.com/products">
 		 <compat-mode>IE7</compat-mode>
 		 <open-in>IE11</open-in>
-	</site>	
+	</site>
 </site-list>
 ```
 

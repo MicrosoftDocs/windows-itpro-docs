@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -52,7 +52,7 @@ You can create rules that determine the devices and alert severities to send ema
     - **Include organization name** - Specify the customer name that appears on the email notification.
     - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
     - **Include device information** - Includes the device name in the email alert body.
-    
+
         >[!NOTE]
         > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Microsoft Defender ATP data.
 
@@ -60,7 +60,7 @@ You can create rules that determine the devices and alert severities to send ema
     - **Alert severity** - Choose the alert severity level.
 
 4. Click **Next**.
-	
+
 5. Enter the recipient's email address then click **Add recipient**. You can add multiple email addresses.
 
 6. Check that email recipients are able to receive the email notifications by selecting **Send test email**.

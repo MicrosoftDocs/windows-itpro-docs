@@ -6,7 +6,7 @@ description: Overview about Group Policy, Advanced Group Policy Management (AGPM
 author: dansimp
 ms.prod: ie11
 ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -36,9 +36,9 @@ From AGPM you can:
 **Note**<br>
 For more information about AGPM, and to get the license, see [Advanced Group Policy Management 4.0 Documents](https://www.microsoft.com/download/details.aspx?id=13975).
 
- 
 
- 
+
+
 
 
 

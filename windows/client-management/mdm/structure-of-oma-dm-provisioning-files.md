@@ -2,7 +2,7 @@
 title: Structure of OMA DM provisioning files
 description: Structure of OMA DM provisioning files
 ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -47,7 +47,7 @@ The following table shows the OMA DM versions that are supported.
 </tbody>
 </table>
 
- 
+
 
 ## File format
 
@@ -105,7 +105,7 @@ The following example shows the header component of a DM message. In this case, 
 
 > **Note**   The &lt;LocURI&gt; node value for the &lt;Source&gt; element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-csp.md).
 
- 
+
 
 ```xml
 <SyncHdr>
@@ -189,7 +189,7 @@ The following example illustrates how to use the Replace command to update a dev
 </SyncBody>
 ```
 
- 
+
 
 
 

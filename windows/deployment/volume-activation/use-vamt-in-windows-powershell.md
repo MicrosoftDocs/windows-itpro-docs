@@ -2,7 +2,7 @@
 title: Use VAMT in Windows PowerShell (Windows 10)
 description: Use VAMT in Windows PowerShell
 ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -28,14 +28,14 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
 **To prepare the VAMT PowerShell environment**
 - To open PowerShell with administrative credentials, click **Start** and type “PowerShell” to locate the program. Right-click **Windows PowerShell**, and then click **Run as administrator**. To open PowerShell in Windows 7, click **Start**, click **All Programs**, click **Accessories**, click **Windows PowerShell**, right-click **Windows PowerShell**, and then click **Run as administrator**.
 
-  **Important**  
+  **Important**
   If you are using a computer that has an 64-bit processor, select **Windows PowerShell (x86)**. VAMT PowerShell cmdlets are supported for the x86 architecture only. You must use an x86 version of Windows PowerShell to import the VAMT module, which are available in these directories:
   -   The x86 version of PowerShell is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe
   -   The x86 version of the PowerShell ISE is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell\_ise.exe
 - For all supported operating systems you can use the VAMT PowerShell module included with the Windows ADK. By default, the module is installed with the Windows ADK in the VAMT folder. Change directories to the directory where VAMT is located.
 
   For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, type:
-    
+
   ``` powershell
   cd “C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0”
   ```
@@ -56,7 +56,7 @@ For example, type:
 get-help get-VamtProduct -all
 ```
 
-**Warning**  
+**Warning**
 The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=242278).
 
 **To view VAMT PowerShell Help sections**
@@ -67,7 +67,7 @@ The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view onl
    ```
    For example, type:
    ``` powershell
-   get-help get-VamtProduct 
+   get-help get-VamtProduct
    ```
 2. To see examples using a cmdlet, type:
    ``` powershell

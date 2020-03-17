@@ -26,8 +26,8 @@ ms.date: 05/03/2018
 
 This section outlines the process to create a WDAC policy for fixed-workload devices within an organization. Fixed-workload devices tend to be dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc...
 
-For this example, you must initiate variables to be used during the creation process or use the full file paths in the command. 
-Then create the WDAC policy by scanning the system for installed applications. 
+For this example, you must initiate variables to be used during the creation process or use the full file paths in the command.
+Then create the WDAC policy by scanning the system for installed applications.
 The policy file is converted to binary format when it gets created so that Windows can interpret it.
 
 ## Overview of the process of creating Windows Defender Application Control policies
@@ -36,15 +36,15 @@ A common system imaging practice in today’s IT organization is to establish a 
 
 Optionally, WDAC can align with your software catalog as well as any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
 
-If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md). 
+If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
 
 > [!NOTE]
-> Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy. 
+> Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy.
 
-Each installed software application should be validated as trustworthy before you create a policy. 
-We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
-Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts. 
-You can remove or disable such software on the reference computer. 
+Each installed software application should be validated as trustworthy before you create a policy.
+We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable.
+Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts.
+You can remove or disable such software on the reference computer.
 
 
 
@@ -61,17 +61,17 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
    ```powershell
-   New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt 
+   New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt
    ```
 
    > [!Note]
-   > 
-   > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the allow list will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
+   >
+   > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the allow list will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application.
    > - You can add the **-MultiplePolicyFormat** parameter when creating policies which will be deployed to computers which are running Windows build 1903+. For more information about multiple policies, see [Deploy multiple Windows Defender Application Control policies](deploy-multiple-windows-defender-application-control-policies.md).
    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](select-types-of-rules-to-create.md).
-   > 
+   >
    > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the tool will scan the C-drive by default.
-   > 
+   >
    > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
 3. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:

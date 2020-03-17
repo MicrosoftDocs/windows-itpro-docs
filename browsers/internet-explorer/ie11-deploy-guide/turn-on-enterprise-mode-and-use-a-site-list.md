@@ -2,7 +2,7 @@
 title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
 description: How to turn on Enterprise Mode and specify a site list.
 ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: ie11
@@ -55,7 +55,7 @@ Before you can use a site list with Enterprise Mode, you need to turn the functi
    -   **Local network:** `"SiteList"="\\network\shares\sites.xml"`
 
    -   **Local file:** `"SiteList"="file:///c:\\Users\\<user>\\Documents\\testList.xml"`
-    
+
    All of your managed devices must have access to this location if you want them to be able to access and use Enterprise Mode and your site list. For information about how to create and use an Enterprise Mode site list, see [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
 ## Related topics

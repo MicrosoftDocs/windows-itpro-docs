@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -32,16 +32,16 @@ ms.topic: include
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
-#### MDM settings 
+#### MDM settings
 - **MDM name:** Experience/[AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)
 - **Supported devices:** Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana
 - **Data type:** Integer
 
-#### Registry settings 
+#### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\Windows\Windows Search
 - **Value name:** AllowCortana
-- **Value type:** REG_DWORD 
+- **Value type:** REG_DWORD
 
 <hr>
 

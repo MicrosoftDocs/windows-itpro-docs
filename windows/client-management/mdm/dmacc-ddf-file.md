@@ -2,7 +2,7 @@
 title: DMAcc DDF file
 description: DMAcc DDF file
 ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -866,9 +866,9 @@ The XML below is the current version for this CSP.
 
 [DMAcc configuration service provider](dmacc-csp.md)
 
- 
 
- 
+
+
 
 
 

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## DataProtection policies  
+## DataProtection policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**  
+<a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -94,7 +94,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
+<a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**
 
 <!--SupportedSKUs-->
 <table>
@@ -140,7 +140,7 @@ The following list shows the supported values:
 > [!IMPORTANT]
 > This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
- 
+
 Setting used by Windows 8.1 Selective Wipe.
 
 > [!NOTE]

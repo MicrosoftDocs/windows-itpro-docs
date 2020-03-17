@@ -5,7 +5,7 @@ description: How to use the File Locations page in the IEAK 11 Customization Wiz
 author: dansimp
 ms.prod: ie11
 ms.assetid: bd0620e1-0e07-4560-95ac-11888c2c389e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -46,9 +46,9 @@ Automatic Version Synchronization automatically checks the component download fo
 
 6.  Click **OK** to close the **Advanced Options** box, and then click **Next** to go to the [Platform Selection](platform-selection-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

@@ -6,7 +6,7 @@ description: Use the Enterprise Mode Site List Manager to create and update your
 author: dansimp
 ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
@@ -42,7 +42,7 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 
 **Important**<br>
 Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both https://contoso.com and https://contoso.com.
- 
+
 ``` xml
 <site-list version="205">
 	<!--- File creation header --->
@@ -51,7 +51,7 @@ Make sure that you don't specify a protocol when adding your URLs. Using a URL l
 		<version>10240</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!--- Begin Site List --->
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>MSEdge</open-in>
@@ -68,10 +68,10 @@ Make sure that you don't specify a protocol when adding your URLs. Using a URL l
 		<compat-mode>default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
-	<site url="relecloud.com"/>  
+	<site url="relecloud.com"/>
 		<compat-mode>default</compat-mode>
 		<open-in>none</open-in>
-	<site url="relecloud.com/about">  
+	<site url="relecloud.com/about">
 		<compat-mode>IE8Enterprise"</compat-mode>
 	</site>
 	<site url="contoso.com/travel">
@@ -85,7 +85,7 @@ Make sure that you don't specify a protocol when adding your URLs. Using a URL l
 	<site url="fabrikam.com/products">
 		 <compat-mode>IE7</compat-mode>
 		 <open-in>IE11</open-in>
-	</site>	
+	</site>
 </site-list>
 ```
 

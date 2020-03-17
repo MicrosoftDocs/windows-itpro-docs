@@ -2,7 +2,7 @@
 title: Isolated Domain (Windows 10)
 description: Isolated Domain
 ms.assetid: d6fa8d67-0078-49f6-9bcc-db1f24816c5e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -56,7 +56,7 @@ GPOs for devices running at least Windows Vista and Windows Server 2008 should
 
     -   A connection security rule, from any IP address to any, that requires inbound and requests outbound authentication by using Kerberos V5 authentication.
 
-        >**Important:**  Be sure to begin operations by using request in and request out behavior until you are sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the policy to require in, request out. 
+        >**Important:**  Be sure to begin operations by using request in and request out behavior until you are sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the policy to require in, request out.
 
 -   A registry policy that includes the following values:
 

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -22,7 +22,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Bitlocker policies  
+## Bitlocker policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
+<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**
 
 <!--SupportedSKUs-->
 <table>

@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.push\_notification\_support\_for\_device\_management'
 - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
 ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -82,7 +82,7 @@ To get a PFN and WNS credentials, you must create an Microsoft Store app.
     ![mdm push notification](images/push-notification10.png)
 12. In the **App identity** page, you will see the **Package Family Name (PFN)** of your app.
 
- 
+
 
 
 

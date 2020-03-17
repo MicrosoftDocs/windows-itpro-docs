@@ -2,7 +2,7 @@
 title: WindowsLicensing DDF file
 description: WindowsLicensing DDF file
 ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article

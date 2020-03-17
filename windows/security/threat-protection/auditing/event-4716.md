@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/04/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,32 +38,32 @@ This event is generated only on domain controllers.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4716</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13569</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-01T22:55:54.560735500Z" /> 
- <EventRecordID>1049763</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="4920" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4716</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13569</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-01T22:55:54.560735500Z" />
+ <EventRecordID>1049763</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="4920" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x138eb0</Data> 
- <Data Name="DomainName">-</Data> 
- <Data Name="DomainSid">S-1-5-21-2226861337-2836268956-2433141405</Data> 
- <Data Name="TdoType">2</Data> 
- <Data Name="TdoDirection">3</Data> 
- <Data Name="TdoAttributes">32</Data> 
- <Data Name="SidFilteringEnabled">-</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x138eb0</Data>
+ <Data Name="DomainName">-</Data>
+ <Data Name="DomainSid">S-1-5-21-2226861337-2836268956-2433141405</Data>
+ <Data Name="TdoType">2</Data>
+ <Data Name="TdoDirection">3</Data>
+ <Data Name="TdoAttributes">32</Data>
+ <Data Name="SidFilteringEnabled">-</Data>
  </EventData>
  </Event>
 
@@ -201,7 +201,7 @@ Computer Account That Was Changed:
  Account Name:  CONTOSOPEERTREE$
  Account Domain:  CONTOSO
  Password Last Set: 10/9/2019 12:02:08 PM
- 
+
 Log Name:      Security
 Source:        Microsoft-Windows-Security-Auditing
 Date:          10/1/2019 4:02:43 PM
@@ -213,7 +213,7 @@ User:          N/A
 Computer:      W-REDAD-P01.red.lhgroup.de
 Description:
 Trusted domain information was modified.
- 
+
 Subject:
                     Security ID:       S-1-5-21-1313371058-2156521407-1595812000-1103        //Shows the respective domain Sid
                     Account Name:      U806391a                                              //Users who has modified the attribute.

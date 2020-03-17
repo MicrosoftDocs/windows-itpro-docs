@@ -1,6 +1,6 @@
 ---
 title: Schedule Microsoft Defender Antivirus protection updates
-description: Schedule the day, time, and interval for when protection updates should be downloaded 
+description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -14,7 +14,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -26,9 +26,9 @@ manager: dansimp
 
 Microsoft Defender Antivirus lets you determine when it should look for and download updates.
 
-You can schedule updates for your endpoints by: 
+You can schedule updates for your endpoints by:
 
-- Specifying the day of the week to check for protection updates 
+- Specifying the day of the week to check for protection updates
 - Specifying the interval to check for protection updates
 - Specifying the time to check for protection updates
 

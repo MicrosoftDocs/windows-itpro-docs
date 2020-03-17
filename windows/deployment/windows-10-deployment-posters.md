@@ -1,7 +1,7 @@
 ---
 title: Windows 10 deployment process posters
 description: View and download Windows 10 deployment process flows for Microsoft Endpoint Configuration Manager and Windows Autopilot.
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-The following posters step through various options for deploying Windows 10 with Windows Autopilot or Microsoft Endpoint Configuration Manager.  
+The following posters step through various options for deploying Windows 10 with Windows Autopilot or Microsoft Endpoint Configuration Manager.
 
 ## Deploy Windows 10 with Autopilot
 

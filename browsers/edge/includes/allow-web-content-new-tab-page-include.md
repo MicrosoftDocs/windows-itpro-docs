@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  11/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Allow web content on New Tab page -->  
+<!-- ## Allow web content on New Tab page -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
 >*Default setting:  Enabled (the default New Tab page loads)*
 
@@ -37,7 +37,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowWebContentOnNewTabPage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowWebContentOnNewTabPage 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowWebContentOnNewTabPage
 - **Data type:** Integer
 
 #### Registry settings

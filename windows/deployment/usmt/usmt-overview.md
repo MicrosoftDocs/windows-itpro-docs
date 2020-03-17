@@ -2,7 +2,7 @@
 title: User State Migration Tool (USMT) Overview (Windows 10)
 description: User State Migration Tool (USMT) Overview
 ms.assetid: 3b649431-ad09-4b17-895a-3fec7ac0a81f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -53,7 +53,7 @@ There are some scenarios in which the use of USMT is not recommended. These incl
 - [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
 
 
- 
+
 
 
 

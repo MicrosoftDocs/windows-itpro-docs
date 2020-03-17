@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## ControlPolicyConflict policies  
+## ControlPolicyConflict policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
+<a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**
 
 <!--SupportedSKUs-->
 <table>
@@ -89,16 +89,16 @@ The following list shows the supported values:
 
 The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. This ensures that:
 
--  GP settings that correspond to MDM applied settings are not conflicting 
--  The current Policy Manager policies are refreshed from what MDM has set 
+-  GP settings that correspond to MDM applied settings are not conflicting
+-  The current Policy Manager policies are refreshed from what MDM has set
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 
-The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:  
+The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:
 
--  \<MSFT:ADMXBacked\>   
+-  \<MSFT:ADMXBacked\>
 -  \<MSFT:ADMXMapped\>
--  \<MSFT:GPRegistryMappedName\>    
--  \<MSFT:GPDBMappedName\>  
+-  \<MSFT:GPRegistryMappedName\>
+-  \<MSFT:GPDBMappedName\>
 
 For the list MDM-GP mapping list, see [Policy CSPs supported by Group Policy
 ](policy-csps-supported-by-group-policy.md).

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event only generates if the deleted object has a particular entry in its [S
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5141</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14081</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-28T18:48:06.792762900Z" /> 
- <EventRecordID>411118</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="4092" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5141</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14081</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-28T18:48:06.792762900Z" />
+ <EventRecordID>411118</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="4092" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="OpCorrelationID">{C8A9000C-C618-4EE9-87FF-F852C0564F18}</Data> 
- <Data Name="AppCorrelationID">-</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x32004</Data> 
- <Data Name="DSName">contoso.local</Data> 
- <Data Name="DSType">%%14676</Data> 
- <Data Name="ObjectDN">CN=WIN2003,CN=Users,DC=contoso,DC=local</Data> 
- <Data Name="ObjectGUID">{CA15B875-AFB1-4E5A-86B2-96E61DE09110}</Data> 
- <Data Name="ObjectClass">computer</Data> 
- <Data Name="TreeDelete">%%14679</Data> 
+ <Data Name="OpCorrelationID">{C8A9000C-C618-4EE9-87FF-F852C0564F18}</Data>
+ <Data Name="AppCorrelationID">-</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x32004</Data>
+ <Data Name="DSName">contoso.local</Data>
+ <Data Name="DSType">%%14676</Data>
+ <Data Name="ObjectDN">CN=WIN2003,CN=Users,DC=contoso,DC=local</Data>
+ <Data Name="ObjectGUID">{CA15B875-AFB1-4E5A-86B2-96E61DE09110}</Data>
+ <Data Name="ObjectClass">computer</Data>
+ <Data Name="TreeDelete">%%14679</Data>
  </EventData>
  </Event>
 ```
@@ -111,15 +111,15 @@ This event only generates if the deleted object has a particular entry in its [S
 -   **DN** \[Type = UnicodeString\]: distinguished name of the object that was deleted.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **GUID** \[Type = GUID\]**:** each Active Directory object has globally unique identifier (GUID), which is a 128-bit value that is unique not only in the enterprise but also across the world. GUIDs are assigned to every object created by Active Directory. Each object's GUID is stored in its Object-GUID (**objectGUID**) property.

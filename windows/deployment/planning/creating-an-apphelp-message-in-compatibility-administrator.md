@@ -2,7 +2,7 @@
 title: Create AppHelp Message in Compatibility Administrator (Windows 10)
 description: Create an AppHelp text message with Compatibility Administrator; a message that appears upon starting an app with major issues on the Windows® operating system.
 ms.assetid: 5c6e89f5-1942-4aa4-8439-ccf0ecd02848
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -44,7 +44,7 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 > [!IMPORTANT]
 > Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
- 
+
 
 **To search for an existing application**
 

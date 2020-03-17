@@ -1,6 +1,6 @@
 ---
 title: Create an Application to access Microsoft Defender ATP without a user
-ms.reviewer: 
+ms.reviewer:
 description: Learn how to design a web app to get programmatic access to Microsoft Defender ATP without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -39,7 +39,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 1. Log on to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
@@ -61,13 +61,13 @@ The following steps with guide you how to create an AAD application, get an acce
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](images/add-permission.png)
-   
+
    ### Request API permissions
 
    To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. For instance:
 
    - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-   
+
    - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
 
    In the following example we will use **'Read all alerts'** permission:
@@ -117,7 +117,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 	In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
-- **Done!** You have successfully registered an application! 
+- **Done!** You have successfully registered an application!
 - See examples below for token acquisition and validation.
 
 ## Get an access token examples:
@@ -167,7 +167,7 @@ return $token
     ```
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.windows.net";
     const string wdatpResourceId = "https://api.securitycenter.windows.com";
@@ -220,7 +220,7 @@ Sanity check to make sure you got a correct token:
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
-- Example of sending a request to get a list of alerts **using C#** 
+- Example of sending a request to get a list of alerts **using C#**
     ```
     var httpClient = new HttpClient();
 

@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1909
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903.
 
 ## Servicing
 
@@ -34,7 +34,7 @@ If you are updating from an older version of Windows 10 (version 1809 or earlier
 
 Pre-release Windows 10 feature updates are now available to IT administrators using WSUS. Microsoft Endpoint Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
 
-The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
+The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903.
 
 ### Windows Update for Business (WUfB)
 

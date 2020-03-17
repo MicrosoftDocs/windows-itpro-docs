@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -28,9 +28,9 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 
 ## Quick scan versus full scan
 
-Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.
 
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 

@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # On Premises Certificate Trust Deployment
 
@@ -24,7 +24,7 @@ ms.reviewer:
 -   Certificate trust
 
 
-Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.  
+Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.
 
 Below, you can find all the information you will need to deploy Windows Hello for Business in a Certificate Trust Model in your on-premises environment:
 1. [Validate Active Directory prerequisites](hello-cert-trust-validate-ad-prereq.md)

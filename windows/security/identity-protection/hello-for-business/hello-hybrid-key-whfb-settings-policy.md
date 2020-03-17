@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
 
@@ -31,14 +31,14 @@ Install the Remote Server Administration Tools for Windows 10 on a computer runn
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
-Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.  
+Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.
 
 Hybrid Azure AD joined devices needs one Group Policy settings:
 * Enable Windows Hello for Business
 
 ### Configure Domain Controllers for Automatic Certificate Enrollment
 
-Domain controllers automatically request a certificate from the *Domain Controller* certificate template.  However, the domain controller is unaware of newer certificate templates or superseded configurations on certificate templates.  
+Domain controllers automatically request a certificate from the *Domain Controller* certificate template.  However, the domain controller is unaware of newer certificate templates or superseded configurations on certificate templates.
 
 To continue automatic enrollment and renewal of domain controller certificates that understand newer certificate template and superseded certificate template configurations, create and configure a Group Policy object for automatic certificate enrollment and link the Group Policy object to the Domain Controllers OU.
 
@@ -68,7 +68,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3. In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 >[!IMPORTANT]
->If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra). 
+>If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
 
 ### Windows Hello for Business Group Policy
 
@@ -76,7 +76,7 @@ The Windows Hello for Business Group Policy object delivers the correct Group Po
 
 #### Enable Windows Hello for Business
 
-The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should be attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.  
+The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should be attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.
 
 You can configure the Enable Windows Hello for Business Group Policy setting for computer or users. Deploying this policy setting to computers results in ALL users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment.  Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
 
@@ -112,13 +112,13 @@ The application of the Windows Hello for Business Group Policy object uses secur
 2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO**
 3. In the **Select GPO** dialog box, select **Enable Windows Hello for Business** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
 
-Just to reassure, linking the **Windows Hello for Business** Group Policy object to the domain ensures the Group Policy object is in scope for all domain users. However, not all users will have the policy settings applied to them. Only users who are members of the Windows Hello for Business group receive the policy settings. All others users ignore the Group Policy object. 
+Just to reassure, linking the **Windows Hello for Business** Group Policy object to the domain ensures the Group Policy object is in scope for all domain users. However, not all users will have the policy settings applied to them. Only users who are members of the Windows Hello for Business group receive the policy settings. All others users ignore the Group Policy object.
 
 ## Other Related Group Policy settings
 
 ### Windows Hello for Business
 
-There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings. 
+There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings.
 
 #### Use a hardware security device
 
@@ -130,7 +130,7 @@ Another policy setting becomes available when you enable the **Use a hardware se
 
 #### Use biometrics
 
-Windows Hello for Business provides a great user experience when combined with the use of biometrics.  Rather than providing a PIN to sign-in, a user can use a fingerprint or facial recognition to sign-in to Windows, without sacrificing security.  
+Windows Hello for Business provides a great user experience when combined with the use of biometrics.  Rather than providing a PIN to sign-in, a user can use a fingerprint or facial recognition to sign-in to Windows, without sacrificing security.
 
 The default Windows Hello for Business enables users to enroll and use biometrics. However, some organization may want more time before using biometrics and want to disable their use until they are ready. To not allow users to use biometrics, configure the **Use biometrics** Group Policy setting to disabled and apply it to your computers.  The policy setting disabled all biometrics. Currently, Windows does not provide granular policy setting that enable you to disable specific modalities of biometrics such as allow facial recognition, but disallow fingerprint.
 
@@ -161,8 +161,8 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Create Windows Hello for Business Group Policy object.
 > * Enable the Use Windows Hello for Business policy setting.
 > * Add users or groups to the Windows Hello for Business group
-> 
-> 
+>
+>
 > [!div class="nextstepaction"]
 > [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
 

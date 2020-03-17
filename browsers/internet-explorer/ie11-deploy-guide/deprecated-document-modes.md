@@ -6,7 +6,7 @@ description: Windows Internet Explorer 8 introduced document modes as a way to 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 00cb1f39-2b20-4d37-9436-62dc03a6320b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -54,9 +54,9 @@ The default document mode for Enterprise Mode is Internet Explorer 8. While thi
 ## Related topics
 - [Enterprise Mode for Internet Explorer 11](enterprise-mode-overview-for-ie11.md)
 
- 
 
- 
+
+
 
 
 

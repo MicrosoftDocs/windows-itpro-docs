@@ -2,7 +2,7 @@
 title: Checklist Creating Group Policy Objects (Windows 10)
 description: Checklist Creating Group Policy Objects
 ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -41,7 +41,7 @@ You can also use a membership group for one zone as an exclusion group for anoth
 
 | Task | Reference |
 | - | - |
-| Review important concepts and examples for deploying GPOs in a way that best meets the needs of your organization.| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)<br/>[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)| 
+| Review important concepts and examples for deploying GPOs in a way that best meets the needs of your organization.| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)<br/>[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)|
 | Create the membership group in AD DS that will be used to contain device accounts that must receive the GPO.<br/>If some devices in the membership group are running an operating system that does not support WMI filters, such as Windows 2000, create an exclusion group to contain the device accounts for the devices that cannot be blocked by using a WMI filter.| [Create a Group Account in Active Directory](create-a-group-account-in-active-directory.md)|
 | Create a GPO for each version of Windows that has different implementation requirements.| [Create a Group Policy Object](create-a-group-policy-object.md) |
 | Create security group filters to limit the GPO to only devices that are members of the membership group and to exclude devices that are members of the exclusion group.|[Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md) |

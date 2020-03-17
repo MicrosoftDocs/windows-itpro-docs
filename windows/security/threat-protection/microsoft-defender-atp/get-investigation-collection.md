@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## API description
@@ -32,7 +32,7 @@ Retrieves a collection of [Investigations](investigation.md).
 
 ## Limitations
 1. Maximum page size is 10,000.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
@@ -75,7 +75,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 **Request**
 
-Here is an example of a request to get all investigations: 
+Here is an example of a request to get all investigations:
 
 
 ```

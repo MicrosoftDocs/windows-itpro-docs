@@ -2,7 +2,7 @@
 title: Prerequisites for Microsoft Store for Business and Education (Windows 10)
 description: There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -30,7 +30,7 @@ You'll need this software to work with Microsoft Store for Business or Education
 
 ### Required
 
--   IT Pros that are administering Microsoft Store for Business and Education need a browser compatible with Microsoft Store for Business and Education running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox. Javascript needs to be supported and enabled. 
+-   IT Pros that are administering Microsoft Store for Business and Education need a browser compatible with Microsoft Store for Business and Education running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox. Javascript needs to be supported and enabled.
 -   Employees using apps from Microsoft Store for Business and Education need at least Windows 10, version 1511 running on a PC or mobile device.
 
 Microsoft Azure Active Directory (AD) or Office 365 accounts for your employees:
@@ -62,11 +62,9 @@ If your organization restricts computers on your network from connecting to the 
 - www.msftncsi.com (prior to Windows 10, version 1607)
 - www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com
   starting with Windows 10, version 1607)
- 
+
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
 For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/en-us/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
- 
-
 
 
 

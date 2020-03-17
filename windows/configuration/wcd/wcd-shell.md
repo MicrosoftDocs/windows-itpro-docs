@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Shell (Windows Configuration Designer reference)
 
-Do not use. Use [Start > StartLayout](wcd-start.md#startlayout) 
+Do not use. Use [Start > StartLayout](wcd-start.md#startlayout)
 
 ## Applies to
 

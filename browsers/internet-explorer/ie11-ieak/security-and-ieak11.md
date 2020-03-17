@@ -5,7 +5,7 @@ description: Learn about the security features available in Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

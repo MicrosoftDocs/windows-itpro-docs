@@ -2,7 +2,7 @@
 title: VAMT Step-by-Step Scenarios (Windows 10)
 description: VAMT Step-by-Step Scenarios
 ms.assetid: 455c542c-4860-4b57-a1f0-7e2d28e11a10
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -29,5 +29,5 @@ This section provides step-by-step instructions on implementing the Volume Activ
 
 ## Related topics
 - [Introduction to VAMT](introduction-vamt.md)
- 
- 
+
+

@@ -2,7 +2,7 @@
 title: Install and Configure VAMT (Windows 10)
 description: Install and Configure VAMT
 ms.assetid: 5c7ae9b9-0dbc-4277-bc4f-8b3e4ab0bf50
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -31,5 +31,5 @@ This section describes how to install and configure the Volume Activation Manage
 ## Related topics
 
 - [Introduction to VAMT](introduction-vamt.md)
- 
- 
+
+

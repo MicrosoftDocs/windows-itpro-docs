@@ -2,7 +2,7 @@
 title: Enterprise app management
 description: This topic covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows.
 ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -51,7 +51,7 @@ Inventory is specific to the package full name and lists bundled packs and resou
 
 > **Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
 
- 
+
 Here are the nodes for each package full name:
 
 -   Name
@@ -175,14 +175,14 @@ Here are some examples.
 <Replace>
   <CmdID>2</CmdID>
   <Item>
-    <Target>                        
+    <Target>
       <LocURI>./Vendor/MSFT/Policy/Config/ApplicationManagement/AllowAllTrustedApps</LocURI>
     </Target>
-    <Meta> 
-      <Format>int</Format> 
-      <Type>text/plain</Type> 
-    </Meta> 
-    <Data>1</Data>                        
+    <Meta>
+      <Format>int</Format>
+      <Type>text/plain</Type>
+    </Meta>
+    <Data>1</Data>
   </Item>
 </Replace>
 ```
@@ -213,14 +213,14 @@ Here is an example.
 <Replace>
   <CmdID>2</CmdID>
   <Item>
-    <Target>                  
+    <Target>
       <LocURI>./Vendor/MSFT/Policy/Config/ApplicationManagement/AllowDeveloperUnlock</LocURI>
     </Target>
-    <Meta> 
-      <Format>int</Format> 
-      <Type>text/plain</Type> 
-    </Meta> 
-    <Data>1</Data>                        
+    <Meta>
+      <Format>int</Format>
+      <Type>text/plain</Type>
+    </Meta>
+    <Data>1</Data>
   </Item>
 </Replace>
 ```
@@ -285,7 +285,7 @@ Here is an example of an offline license installation.
 <Exec>
    <CmdID>1</CmdID>
    <Item>
-      <Target>          
+      <Target>
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppLicenses/StoreLicenses/{LicenseID}/AddLicense</LocURI>
       </Target>
       <Meta>
@@ -310,7 +310,7 @@ Here are the requirements for this scenario:
 
 > **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
- 
+
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 Here is an example of a line-of-business app installation.
@@ -324,7 +324,7 @@ Here is an example of a line-of-business app installation.
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}</LocURI>
       </Target>
    </Item>
-</Add> 
+</Add>
 <!-- Install appx -->
 <Exec>
    <CmdID>1</CmdID>
@@ -351,7 +351,7 @@ Here is an example of an app installation with dependencies.
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
       </Target>
    </Item>
-</Add> 
+</Add>
 <!-- Install appx with deployment options and framework dependencies-->
 <Exec>
    <CmdID>1</CmdID>
@@ -385,7 +385,7 @@ Here is an example of an app installation with dependencies and optional package
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
       </Target>
    </Item>
-</Add> 
+</Add>
 <!-- Install appx with deployment options and framework dependencies-->
 <Exec>
    <CmdID>1</CmdID>
@@ -403,9 +403,9 @@ Here is an example of an app installation with dependencies and optional package
                 <Dependency PackageUri=”\\server2\share\HelloMarsFramework.appx” />
             </Dependencies>
             <OptionalPackages>
-                <Package PackageUri=”\\server\share\OptionalPackage1.appx” 
+                <Package PackageUri=”\\server\share\OptionalPackage1.appx”
                          PackageFamilyName="/{PackageFamilyName}" />
-                <Package PackageUri=”\\server2\share\OptionalPackage2.appx” 
+                <Package PackageUri=”\\server2\share\OptionalPackage2.appx”
                          PackageFamilyName="/{PackageFamilyName}" />
             </OptionalPackages>
         </Application>
@@ -431,7 +431,7 @@ To provision app for all users of a device from a hosted location, the managemen
 
 > **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
- 
+
 
 Here is an example of app installation.
 
@@ -447,7 +447,7 @@ Here is an example of app installation.
          <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
       </Target>
    </Item>
-</Add> 
+</Add>
 <!-- Provision appx to device -->
 <Exec>
    <CmdID>1</CmdID>
@@ -484,7 +484,7 @@ Here is an example of app installation with dependencies.
          <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName</LocURI>
       </Target>
    </Item>
-</Add> 
+</Add>
 <!-- Provision appx with framework dependencies-->
 <Exec>
    <CmdID>1</CmdID>
@@ -531,7 +531,7 @@ Here is an example of a query for a specific app installation.
 <Get>
    <CmdID>2</CmdID>
    <Item>
-      <Target>    
+      <Target>
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}?list=StructData</LocURI>
       </Target>
    </Item>
@@ -545,7 +545,7 @@ Here is an example of a query for all app installations.
 <Get>
    <CmdID>2</CmdID>
    <Item>
-      <Target>    
+      <Target>
          <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation?list=StructData</LocURI>
       </Target>
    </Item>
@@ -564,7 +564,7 @@ Here is an example of an alert.
     <Data>1226</Data>
         <Item>
             <Source>
-                <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}/HostedInstall</LocURI> 
+                <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/{PackageFamilyName}/HostedInstall</LocURI>
             </Source>
             <Meta>
                 <Type xmlns="syncml:metinf">Reversed-Domain-Name:com.microsoft.mdm.EnterpriseHostedAppInstall.result</Type>
@@ -626,7 +626,7 @@ You can remove provisioned apps from a device for a specific version or for all 
 
 > **Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
 
- 
+
 Removing provisioned app occurs in the device context.
 
 Here is an example for removing a provisioned app from a device.
@@ -812,11 +812,11 @@ Here is an example.
       <Target>
          <LocURI>./Vendor/MSFT/Policy/Config/ApplicationManagement/RestrictAppToSystemVolume</LocURI>
       </Target>
-   <Meta> 
-      <Format>int</Format> 
-      <Type>text/plain</Type> 
-   </Meta> 
-   <Data>1</Data>                        
+   <Meta>
+      <Format>int</Format>
+      <Type>text/plain</Type>
+   </Meta>
+   <Data>1</Data>
 </Item>
 </Replace>
 ```
@@ -827,7 +827,7 @@ In Windows 10 Mobile IT administrators can set a policy to restrict user applic
 
 > **Note**  The feature is only for Windows 10 Mobile.
 
- 
+
 The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-service-provider.md) enables you to restrict all user application data to stay on the system volume. When the policy is not configured or if it is disabled, and you move a package or when it is installed to a difference volume, then the user application data will moved to the same volume. You can set this policy to 0 (off, default) or 1.
 
 Here is an example.
@@ -846,14 +846,14 @@ Here is an example.
 <Replace>
    <CmdID>2</CmdID>
    <Item>
-      <Target>                  
+      <Target>
          <LocURI>./Vendor/MSFT/Policy/Config/ApplicationManagement/RestrictAppDataToSystemVolume</LocURI>
       </Target>
-   <Meta> 
-      <Format>int</Format> 
-      <Type>text/plain</Type> 
-   </Meta> 
-   <Data>1</Data>                        
+   <Meta>
+      <Format>int</Format>
+      <Type>text/plain</Type>
+   </Meta>
+   <Data>1</Data>
    </Item>
 </Replace>
 ```
@@ -887,19 +887,19 @@ Here is an example.
 <Replace>
    <CmdID>2</CmdID>
    <Item>
-      <Target>                  
+      <Target>
          <LocURI>./Vendor/MSFT/Policy/Config/ApplicationManagement/AllowSharedUserAppData</LocURI>
       </Target>
-   <Meta> 
-      <Format>int</Format> 
-      <Type>text/plain</Type> 
-   </Meta> 
-   <Data>1</Data>                        
+   <Meta>
+      <Format>int</Format>
+      <Type>text/plain</Type>
+   </Meta>
+   <Data>1</Data>
    </Item>
 </Replace>
 ```
 
- 
+
 
 
 

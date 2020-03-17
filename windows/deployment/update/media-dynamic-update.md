@@ -177,7 +177,7 @@ It finishes by cleaning and exporting the image to reduce the image size.
 ```
 # Mount the main operating system, used throughout the script
 Write-Host "$(Get-TS): Mounting main OS"
-Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
+Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null
 
 #
 # update Windows Recovery Environment (WinRE)
@@ -188,14 +188,14 @@ Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MO
 
 # Add servicing stack update
 Write-Host "$(Get-TS): Adding package $SSU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null  
+Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
 
 #
 # Optional: Add the language to recovery environment
 #
 # Install lp.cab cab
 Write-Host "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null  
+Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null
 
 # Install language cabs for each optional package installed
 $WINRE_INSTALLED_OC = Get-WindowsPackage -Path $WINRE_MOUNT
@@ -211,7 +211,7 @@ Foreach ($PACKAGE in $WINRE_INSTALLED_OC) {
             if ($WINPE_OC_LANG_CABS.Contains($OC_CAB)) {
                 $OC_CAB_PATH = Join-Path $WINPE_OC_LANG_PATH $OC_CAB
                 Write-Host "$(Get-TS): Adding package $OC_CAB_PATH"
-                Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null  
+                Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null
             }
         }
     }
@@ -237,7 +237,7 @@ if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
 
 # Add Safe OS
 Write-Host "$(Get-TS): Adding package $SAFE_OS_DU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null   
+Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Host "$(Get-TS): Performing image cleanup on WinRE"
@@ -267,7 +267,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # update WinPE
     Write-Host "$(Get-TS): Mounting WinPE"
-    Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
+    Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null
 
     # Add SSU
     Write-Host "$(Get-TS): Adding package $SSU_PATH"
@@ -275,7 +275,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # Install lp.cab cab
     Write-Host "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
-    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null  
+    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null
 
     # Install language cabs for each optional package installed
     $WINPE_INSTALLED_OC = Get-WindowsPackage -Path $WINPE_MOUNT
@@ -292,7 +292,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
                 if ($WINPE_OC_LANG_CABS.Contains($OC_CAB)) {
                     $OC_CAB_PATH = Join-Path $WINPE_OC_LANG_PATH $OC_CAB
                     Write-Host "$(Get-TS): Adding package $OC_CAB_PATH"
-                    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null  
+                    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null
                 }
             }
         }
@@ -320,11 +320,11 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     if ( (Test-Path -Path $WINPE_MOUNT"\sources\lang.ini") ) {
         Write-Host "$(Get-TS): Updating lang.ini"
         DISM /image:$WINPE_MOUNT /Gen-LangINI /distribution:$WINPE_MOUNT | Out-Null
-    }    
+    }
 
     # Add latest cumulative update
     Write-Host "$(Get-TS): Adding package $LCU_PATH"
-    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null  
+    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null
 
     # Perform image cleanup
     Write-Host "$(Get-TS): Performing image cleanup on WinPE"
@@ -360,7 +360,7 @@ Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH -ErrorAction stop
 
 # Optional: Add language to main OS
 Write-Host "$(Get-TS): Adding package $OS_LP_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $OS_LP_PATH -ErrorAction stop | Out-Null  
+Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $OS_LP_PATH -ErrorAction stop | Out-Null
 
 # Optional: Add a Features on Demand to the image
 Write-Host "$(Get-TS): Adding language FOD: Language.Fonts.Jpan~~~und-JPAN~0.0.1.0"

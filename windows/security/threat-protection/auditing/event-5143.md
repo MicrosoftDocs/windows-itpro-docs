@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,37 +36,37 @@ This event generates every time network share object was modified.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5143</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12808</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-18T02:42:56.743298600Z" /> 
- <EventRecordID>268483</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5143</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12808</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-18T02:42:56.743298600Z" />
+ <EventRecordID>268483</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x38d12</Data> 
- <Data Name="ObjectType">Directory</Data> 
- <Data Name="ShareName">\\\\\*\\Documents</Data> 
- <Data Name="ShareLocalPath">C:\\Documents</Data> 
- <Data Name="OldRemark">N/A</Data> 
- <Data Name="NewRemark">N/A</Data> 
- <Data Name="OldMaxUsers">0xffffffff</Data> 
- <Data Name="NewMaxUsers">0xffffffff</Data> 
- <Data Name="OldShareFlags">0x800</Data> 
- <Data Name="NewShareFlags">0x800</Data> 
- <Data Name="OldSD">O:S-1-5-21-3457937927-2839227994-823803824-1104G:DAD:(A;OICI;FA;;;BA)(A;OICI;FA;;;WD)</Data> 
- <Data Name="NewSD">O:BAG:DAD:(D;;FA;;;S-1-5-21-3457937927-2839227994-823803824-1104)(A;OICI;FA;;;WD)(A;OICI;FA;;;BA)</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x38d12</Data>
+ <Data Name="ObjectType">Directory</Data>
+ <Data Name="ShareName">\\\\\*\\Documents</Data>
+ <Data Name="ShareLocalPath">C:\\Documents</Data>
+ <Data Name="OldRemark">N/A</Data>
+ <Data Name="NewRemark">N/A</Data>
+ <Data Name="OldMaxUsers">0xffffffff</Data>
+ <Data Name="NewMaxUsers">0xffffffff</Data>
+ <Data Name="OldShareFlags">0x800</Data>
+ <Data Name="NewShareFlags">0x800</Data>
+ <Data Name="OldSD">O:S-1-5-21-3457937927-2839227994-823803824-1104G:DAD:(A;OICI;FA;;;BA)(A;OICI;FA;;;WD)</Data>
+ <Data Name="NewSD">O:BAG:DAD:(D;;FA;;;S-1-5-21-3457937927-2839227994-823803824-1104)(A;OICI;FA;;;WD)(A;OICI;FA;;;BA)</Data>
  </EventData>
  </Event>
 ```
@@ -142,12 +142,12 @@ This event generates every time network share object was modified.
 -   **New SD** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for network share security descriptor.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

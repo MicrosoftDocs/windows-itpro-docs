@@ -7,7 +7,7 @@ ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -25,7 +25,7 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 ![Intune VPN policy template](images/vpn-intune-policy.png)
 
 >[!NOTE]
->This guide does not explain server deployment.  
+>This guide does not explain server deployment.
 
 ## In this guide
 

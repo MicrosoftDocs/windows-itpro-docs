@@ -2,7 +2,7 @@
 title: VPN CSP
 description: VPN CSP
 ms.assetid: 05ca946a-1c0b-4e11-8d7e-854e14740707
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ The VPN configuration service provider allows the MDM server to configure the VP
 
 > **Note**   The VPN CSP is deprecated in Windows 10 and it only supported in Windows 10 Mobile for backward compatibility. Use [VPNv2 CSP](vpnv2-csp.md) instead.
 
- 
+
 
 Important considerations:
 
@@ -106,7 +106,7 @@ Value type is chr.
 
 > **Note**  For EAP, use Authentication/EAP instead.
 
- 
+
 
 <a href="" id="authentication-certificate"></a>**Authentication/Certificate**
 Optional node. A collection of nodes that enables simpler authentication experiences for end users when using VPN. This and its subnodes should not be used for IKEv2 profiles.
@@ -120,7 +120,7 @@ Value type is chr. Supported operations are Get, Add, Delete, and Replace.
 
 > **Note**  Do not use this element for IKev2 profiles.
 
- 
+
 
 <a href="" id="authentication-certificate-eku"></a>**Authentication/Certificate/EKU**
 Optional. This Extended Key Usage (EKU) element is used to filter out the installed certificates with private keys stored in the registry or TPM. You can use this in conjunction with ISSUER for a more granular filtering.
@@ -129,7 +129,7 @@ Value type is chr. Supported operations are Get, Add, Delete, and Replace.
 
 > **Note**  Do not use this element for IKev2 profiles.
 
- 
+
 
 <a href="" id="authentication-certificate-cachelifetimeforprotectedcert"></a>**Authentication/Certificate/CacheLifeTimeForProtectedCert**
 Not Implemented. Optional.
@@ -292,9 +292,9 @@ An example is corp.contoso.com.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

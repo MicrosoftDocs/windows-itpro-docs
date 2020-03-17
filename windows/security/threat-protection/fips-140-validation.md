@@ -10,7 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/05/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # FIPS 140-2 Validation
@@ -39,11 +39,11 @@ Administrators must ensure that all cryptographic modules installed are FIPS 140
 
 ### Step 2: Ensure all security policies for all cryptographic modules are followed
 
-Each of the cryptographic modules has a defined security policy that must be met for the module to operate in its FIPS 140-2 approved mode.  The security policy may be found in each module’s published Security Policy Document (SPD).  The SPDs for each module may be found by following the links in the table of validated modules at the end of this topic.  Click on the module version number to view the published SPD for the module. 
- 
+Each of the cryptographic modules has a defined security policy that must be met for the module to operate in its FIPS 140-2 approved mode.  The security policy may be found in each module’s published Security Policy Document (SPD).  The SPDs for each module may be found by following the links in the table of validated modules at the end of this topic.  Click on the module version number to view the published SPD for the module.
+
 ### Step 3: Enable the FIPS security policy
 
-Windows provides the security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing,” which is used by some Microsoft products to determine whether to operate in a FIPS 140-2 approved mode.  When this policy is enabled, the validated cryptographic modules in Windows will also operate in FIPS approved mode.  The policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
+Windows provides the security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing,” which is used by some Microsoft products to determine whether to operate in a FIPS 140-2 approved mode.  When this policy is enabled, the validated cryptographic modules in Windows will also operate in FIPS approved mode.  The policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).
 
 ### Step 4: Ensure only FIPS validated cryptographic algorithms are used
 
@@ -57,7 +57,7 @@ Microsoft begins certification of cryptographic modules after each major feature
 
 ### When does Microsoft undertake a FIPS 140 validation?
 
-The cadence for starting module validation aligns with the feature updates of Windows 10 and Windows Server.  As the software industry evolves, operating systems release more frequently. Microsoft completes validation work on major releases but, in between releases, seeks to minimize the changes to the cryptographic modules.  
+The cadence for starting module validation aligns with the feature updates of Windows 10 and Windows Server.  As the software industry evolves, operating systems release more frequently. Microsoft completes validation work on major releases but, in between releases, seeks to minimize the changes to the cryptographic modules.
 
 ### What is the difference between “FIPS 140 validated” and “FIPS 140 compliant”?
 
@@ -2098,7 +2098,7 @@ Validated Editions: Server, Storage Server
 </tbody>
 </table>
 
- 
+
 
 ### Cryptographic Algorithms
 

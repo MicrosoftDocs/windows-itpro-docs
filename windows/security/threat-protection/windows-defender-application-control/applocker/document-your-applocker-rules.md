@@ -2,7 +2,7 @@
 title: Document your AppLocker rules (Windows 10)
 description: Learn how to document your AppLocker rules and associate rule conditions with files, permissions, rule source, and implementation.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -118,7 +118,7 @@ The following table details sample data for documenting rule type and rule condi
 </tr>
 </tbody>
 </table>
- 
+
 
 ## Next steps
 

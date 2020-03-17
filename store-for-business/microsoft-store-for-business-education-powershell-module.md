@@ -10,7 +10,7 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 10/22/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 

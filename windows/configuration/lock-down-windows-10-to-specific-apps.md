@@ -2,7 +2,7 @@
 title: Set up a multi-app kiosk  (Windows 10)
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -301,7 +301,7 @@ The following example hides the taskbar:
 ```
 
 >[!IMPORTANT]
->The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.  
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.
 
 #### Configs
 
@@ -448,7 +448,7 @@ Note:
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
                                    see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->

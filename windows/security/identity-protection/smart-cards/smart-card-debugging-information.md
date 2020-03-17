@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Smart Card Troubleshooting
@@ -172,9 +172,9 @@ If you used the registry key settings shown in the previous table, look for the 
 
 -   NTLM: %systemroot%\\tracing\\msv1\_0
 
--   Kerberos: %systemroot%\\tracing\\kerberos 
+-   Kerberos: %systemroot%\\tracing\\kerberos
 
--   KDC: %systemroot%\\tracing\\kdcsvc 
+-   KDC: %systemroot%\\tracing\\kdcsvc
 
 To decode event trace files, you can use Tracefmt (tracefmt.exe). Tracefmt is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. Tracefmt can display the messages in the Command Prompt window or save them in a text file. It is located in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [Tracefmt](https://msdn.microsoft.com/library/ff552974.aspx).
 

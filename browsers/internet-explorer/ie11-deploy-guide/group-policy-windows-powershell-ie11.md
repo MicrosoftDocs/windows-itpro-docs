@@ -6,7 +6,7 @@ description: Overview about how Group Policy works with Windows Powershell and I
 author: dansimp
 ms.prod: ie11
 ms.assetid: e3607cde-a498-4e04-9daa-b331412967fc
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -31,9 +31,9 @@ Each cmdlet is a single-function command-line tool that can:
 
 For more info about PowerShell and Group Policy management, see [Use Windows PowerShell to Manage Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=276828).
 
- 
 
- 
+
+
 
 
 

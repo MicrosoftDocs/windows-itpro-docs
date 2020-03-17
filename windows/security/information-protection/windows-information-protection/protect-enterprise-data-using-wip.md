@@ -2,7 +2,7 @@
 title: Protect your enterprise data using Windows Information Protection (WIP) (Windows 10)
 description: Learn how to prevent accidental enterprise data leaks through apps and services, such as email, social media, and the public cloud.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
-ms.reviewer: 
+ms.reviewer:
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -62,7 +62,7 @@ To help address this security insufficiency, companies developed data loss preve
 Unfortunately, data loss prevention systems have their own problems. For example, the more detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss prevention systems is that it provides a jarring experience that interrupts the employees’ natural workflow by stopping some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
 
 ### Using information rights management systems
-To help address the potential data loss prevention system problems, companies developed information rights management (also known as IRM) systems. Information rights management systems embed protection directly into documents, so that when an employee creates a document, he or she determines what kind of protection to apply. For example, an employee can choose to stop the document from being forwarded, printed, shared outside of the organization, and so on. 
+To help address the potential data loss prevention system problems, companies developed information rights management (also known as IRM) systems. Information rights management systems embed protection directly into documents, so that when an employee creates a document, he or she determines what kind of protection to apply. For example, an employee can choose to stop the document from being forwarded, printed, shared outside of the organization, and so on.
 
 After the type of protection is set, the creating app encrypts the document so that only authorized people can open it, and even then, only in compatible apps. After an employee opens the document, the app becomes responsible for enforcing the specified protections. Because protection travels with the document, if an authorized person sends it to an unauthorized person, the unauthorized person won’t be able to read or change it. However, for this to work effectively information rights management systems require you to deploy and set up both a server and client environment. And, because only compatible clients can work with protected documents, an employees’ work might be unexpectedly interrupted if he or she attempts to use a non-compatible app.
 
@@ -93,14 +93,14 @@ WIP is the mobile application management (MAM) mechanism on Windows 10. WIP give
     - **Using protected apps.** Managed apps (apps that you've included on the **Protected apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
     -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your protected apps list, the app is trusted with enterprise data. All apps not on this list are stopped from accessing your enterprise data, depending on your WIP management-mode.
-    
+
         You don’t have to modify line-of-business apps that never touch personal data to list them as protected apps; just include them in the protected apps list.
 
     -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Hiding overrides stops the action immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without stopping anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your protected apps list. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
 
     -   **Data encryption at rest.** WIP helps protect enterprise data on local files and on removable media.
-    
+
         Apps such as Microsoft Word work with WIP to help continue your data protection across local files and removable media. These apps are being referred to as, enterprise aware. For example, if an employee opens WIP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies WIP to the new document.
 
     -   **Helping prevent accidental data disclosure to public spaces.** WIP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, if Dropbox™ isn’t on your protected apps list, employees won’t be able to sync encrypted files to their personal cloud storage. Instead, if the employee stores the content to an app on your protected apps list, like Microsoft OneDrive for Business, the encrypted files can sync freely to the business cloud, while maintaining the encryption locally.

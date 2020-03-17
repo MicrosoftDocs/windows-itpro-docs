@@ -6,7 +6,7 @@ description: Info about Group Policy preferences versus Group Policy settings
 author: dansimp
 ms.prod: ie11
 ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -31,9 +31,9 @@ Group Policy preferences are less strict than Group Policy settings, based on:
 
 For more information about Group Policy preferences, see the [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=279876).
 
- 
 
- 
+
+
 
 
 

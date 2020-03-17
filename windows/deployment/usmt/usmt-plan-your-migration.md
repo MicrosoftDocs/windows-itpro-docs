@@ -2,7 +2,7 @@
 title: Plan Your Migration (Windows 10)
 description: Plan Your Migration
 ms.assetid: c951f7df-850e-47ad-b31b-87f902955e3e
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -55,16 +55,16 @@ One of the most important requirements for migrating settings and data is restor
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

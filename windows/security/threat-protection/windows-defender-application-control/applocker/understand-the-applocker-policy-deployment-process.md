@@ -2,7 +2,7 @@
 title: Understand the AppLocker policy deployment process (Windows 10)
 description: This planning and deployment topic for the IT professional describes the process for using AppLocker when deploying application control policies.
 ms.assetid: 4cfd95c1-fbd3-41fa-8efc-d23c1ea6fb16
-ms.reviewer: 
+ms.reviewer:
 ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -39,5 +39,5 @@ The following topics contain information about designing, planning, deploying, a
 -   For info about the AppLocker policy deployment requirements and process, see [AppLocker deployment guide](applocker-policies-deployment-guide.md).
 -   For info about AppLocker policy maintenance and monitoring, see [Administer AppLocker](administer-applocker.md).
 -   For info about AppLocker policy architecture, components, and processing, see [AppLocker technical reference](applocker-technical-reference.md).
- 
- 
+
+

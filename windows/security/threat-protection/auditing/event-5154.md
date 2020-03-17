@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,30 +36,30 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5154</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12810</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-22T02:04:25.757462900Z" /> 
- <EventRecordID>287929</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="3968" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5154</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12810</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-22T02:04:25.757462900Z" />
+ <EventRecordID>287929</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="3968" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ProcessId">4152</Data> 
- <Data Name="Application">\\device\\harddiskvolume2\\documents\\listener.exe</Data> 
- <Data Name="SourceAddress">0.0.0.0</Data> 
- <Data Name="SourcePort">4444</Data> 
- <Data Name="Protocol">6</Data> 
- <Data Name="FilterRTID">0</Data> 
- <Data Name="LayerName">%%14609</Data> 
- <Data Name="LayerRTID">40</Data> 
+ <Data Name="ProcessId">4152</Data>
+ <Data Name="Application">\\device\\harddiskvolume2\\documents\\listener.exe</Data>
+ <Data Name="SourceAddress">0.0.0.0</Data>
+ <Data Name="SourcePort">4444</Data>
+ <Data Name="Protocol">6</Data>
+ <Data Name="FilterRTID">0</Data>
+ <Data Name="LayerName">%%14609</Data>
+ <Data Name="LayerRTID">40</Data>
  </EventData>
  </Event>
 

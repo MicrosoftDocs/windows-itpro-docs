@@ -2,7 +2,7 @@
 title: Exemption List (Windows 10)
 description: Learn the ins and outs of exemption lists on a secured network using Windows 10.
 ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

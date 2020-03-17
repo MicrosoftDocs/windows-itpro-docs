@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -48,7 +48,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
    > [!NOTE]
     >By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
-    
+
     If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
 ### App-V reporting server frequently asked questions

@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/11/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Trusted Platform Module

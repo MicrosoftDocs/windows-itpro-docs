@@ -2,7 +2,7 @@
 title: Create an Authentication Exemption List Rule (Windows 10)
 description: Create an Authentication Exemption List Rule
 ms.assetid: 8f6493f3-8527-462a-82c0-fd91a6cb5dd8
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,10 +25,10 @@ ms.date: 08/17/2017
 
 In almost any isolated server or isolated domain scenario, there are some devices or devices that cannot communicate by using IPsec. This procedure shows you how to create rules that exempt those devices from the authentication requirements of your isolation policies.
 
-**Important**  
+**Important**
 Adding devices to the exemption list for a zone reduces security because it permits devices in the zone to send network traffic that is unprotected by IPsec to the devices on the list. As discussed in the Windows Defender Firewall with Advanced Security Design Guide, you must add only managed and trusted devices to the exemption list.
 
- 
+
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
@@ -54,7 +54,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
     -   To add the local device’s subnet, click **Predefined set of computers**, select **Local subnet** from the list, and then click **OK**.
 
         >**Note:**  If you select the local subnet from the list rather than typing the subnet address in manually, the device automatically adjusts the active local subnet to match the device’s current IP address.
-        
+
     -   To add a discrete range of addresses that do not correspond to a subnet, click **This IP address range**, type the beginning and ending IP addresses in the **From** and **To** text boxes, and then click **OK**.
 
     -   To exempt all of the remote hosts that the local device uses for a specified network service, click **Predefined set of computers**, select the network service from the list, and then click **OK**.

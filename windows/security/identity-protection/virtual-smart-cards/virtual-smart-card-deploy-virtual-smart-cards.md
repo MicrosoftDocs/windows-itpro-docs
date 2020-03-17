@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Deploy Virtual Smart Cards
@@ -71,7 +71,7 @@ A TPM virtual smart card simulates a physical smart card, and it uses the TPM to
 -   **Isolated cryptography**: TPMs provide the same properties of isolated cryptography that is offered by physical smart cards, and this is utilized by virtual smart cards. Unencrypted copies of private keys are loaded only within the TPM and never into memory that is accessible by the operating system. All cryptographic operations with these private keys occur inside the TPM.
 
 -   **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for a period of time instead of blocking the card. This is also known as lockout.
-    For more information, see [Blocked virtual smart card](#blocked-virtual-smart-card) and [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md). 
+    For more information, see [Blocked virtual smart card](#blocked-virtual-smart-card) and [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
 
 There are several options for creating virtual smart cards, depending on the size of the deployment and budget of the organization. The lowest cost option is using Tpmvscmgr.exe to create cards individually on users’ computers. Alternatively, a virtual smart card management solution can be purchased to more easily accomplish virtual smart card creation on a larger scale and aid in further phases of deployment. Virtual smart cards can be created on computers that are to be provisioned for an employee or on those that are already in an employee’s possession. In either approach, there should be some central control over personalization and provisioning. If a computer is intended for use by multiple employees, multiple virtual smart cards can be created on a computer.
 

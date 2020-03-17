@@ -2,16 +2,16 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Configure kiosk reset after idle timeout-->  
+<!-- ## Configure kiosk reset after idle timeout-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: 5 minutes*
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
@@ -35,7 +35,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 #### MDM settings
 - **MDM name:** Browser/[ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout
 - **Data type:** Integer
 
 #### Registry settings
@@ -47,7 +47,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 
 ### Related policies
 
-[Configure kiosk mode](../available-policies.md#configure-kiosk-mode): [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)] 
+[Configure kiosk mode](../available-policies.md#configure-kiosk-mode): [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]
 
 
 

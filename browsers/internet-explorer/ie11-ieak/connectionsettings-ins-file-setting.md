@@ -5,7 +5,7 @@ description: Use the \[ConnectionSettings\] .INS file setting to specify the net
 author: dansimp
 ms.prod: ie11
 ms.assetid: 41410300-6ddd-43b2-b9e2-0108a2221355
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

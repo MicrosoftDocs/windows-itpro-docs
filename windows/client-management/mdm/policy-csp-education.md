@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Education policies  
+## Education policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="education-allowgraphingcalculator"></a>**Education/AllowGraphingCalculator**  
+<a href="" id="education-allowgraphingcalculator"></a>**Education/AllowGraphingCalculator**
 
 <!--SupportedSKUs-->
 <table>
@@ -85,7 +85,7 @@ manager: dansimp
 Added in Windows 10, version 2004. This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Graphing Calculator*
 -   GP name: *AllowGraphingCalculator*
 -   GP path: *Windows Components/Calculator*
@@ -93,7 +93,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 - 0 - Disabled
 - 1 (default) - Enabled
 <!--/SupportedValues-->
@@ -102,7 +102,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**  
+<a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**
 
 <!--SupportedSKUs-->
 <table>
@@ -145,7 +145,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy allows IT Admins to set the user's default printer. 
+Added in Windows 10, version 1709. This policy allows IT Admins to set the user's default printer.
 
 The policy value is expected to be the name (network host name) of an installed printer.
 
@@ -155,7 +155,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <hr/>
 
 <!--Policy-->
-<a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**  
+<a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**
 
 <!--SupportedSKUs-->
 <table>
@@ -202,7 +202,7 @@ Added in Windows 10, version 1709. Allows IT Admins to prevent user installatio
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent addition of printers*
 -   GP name: *NoAddPrinter*
 -   GP path: *Control Panel/Printers*
@@ -221,7 +221,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="education-printernames"></a>**Education/PrinterNames**  
+<a href="" id="education-printernames"></a>**Education/PrinterNames**
 
 <!--SupportedSKUs-->
 <table>

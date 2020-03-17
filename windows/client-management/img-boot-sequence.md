@@ -2,7 +2,7 @@
 title: Boot sequence flowchart
 description: A full-sized view of the boot sequence flowchart.
 ms.date: 11/16/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 author: dansimp

@@ -5,7 +5,7 @@ description: How to use the Internal Install page in the IEAK 11 Customization W
 author: dansimp
 ms.prod: ie11
 ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -30,9 +30,9 @@ The **Internal Install** page of the Internet Explorer Customization Wizard 11 l
 
 2.  Click **Next** to go to the [User Experience](user-experience-ieak11-wizard.md) page or **Back** to go to the [Custom Components](custom-components-ieak11-wizard.md).
 
- 
 
- 
+
+
 
 
 

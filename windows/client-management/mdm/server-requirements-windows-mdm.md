@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phDeviceMgmt.server\_requirements\_for\_oma\_dm'
 - 'p\_phDeviceMgmt.server\_requirements\_windows\_mdm'
 ms.assetid: 5b90b631-62a6-4949-b53a-01275fd304b2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -33,7 +33,7 @@ The following list shows the general server requirements for using OMA DM to man
 
 -   The server must support HTTPS.
 
- 
+
 
 
 

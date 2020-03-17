@@ -47,4 +47,4 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 9.  Click a credential option. Choose **Alternate credentials** only if you are activating products that require administrator credentials different from the ones you are currently using.
 10. If you are supplying alternate credentials, at the prompt, type the appropriate user name and password and click **OK**.
 VAMT displays the **Volume Activation** dialog box until it completes the requested action. When the process is finished, the updated activation status of each product appears in the product list view in the center pane.
- 
+

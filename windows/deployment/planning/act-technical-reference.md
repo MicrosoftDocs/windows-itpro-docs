@@ -2,7 +2,7 @@
 title: Application Compatibility Toolkit (ACT) Technical Reference (Windows 10)
 description: The Microsoft Application Compatibility Toolkit (ACT) helps you see if the apps and devices in your org are compatible with different versions of Windows.
 ms.assetid: d90d38b2-2718-4481-90eb-4480719627ba
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -19,19 +19,19 @@ ms.topic: article
 
 **Applies to**
 - Windows 10, version 1607
- 
+
 >[!IMPORTANT]
 >We've replaced the majority of functionality included in the Application Compatibility Toolkit (ACT) with [Windows Analytics](../update/windows-analytics-overview.md), a solution in the Microsoft Operations Management Suite. Windows Analytics gives enterprises the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released.
- 
-Microsoft developed Windows Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Windows Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
- 
-With Windows diagnostic data enabled, Windows Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. 
- 
+
+Microsoft developed Windows Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Windows Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10.
+
+With Windows diagnostic data enabled, Windows Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+
 Use Windows Analytics to get:
 - A visual workflow that guides you from pilot to production
 - Detailed computer and application inventory
-- Powerful computer level search and drill-downs 
-- Guidance and insights into application and driver compatibility issues, with suggested fixes 
+- Powerful computer level search and drill-downs
+- Guidance and insights into application and driver compatibility issues, with suggested fixes
 - Data driven application rationalization tools
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
 - Data export to commonly used software deployment tools, including Microsoft Endpoint Configuration Manager

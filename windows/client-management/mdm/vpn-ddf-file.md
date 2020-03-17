@@ -2,7 +2,7 @@
 title: VPN DDF file
 description: VPN DDF file
 ms.assetid: 728FCD9C-0B8E-413B-B54A-CD72C9F2B9EE
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -1388,9 +1388,9 @@ This topic shows the OMA DM device description framework (DDF) for the **VPN** c
 
 [VPN configuration service provider](vpn-csp.md)
 
- 
 
- 
+
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Windows Hello for Business Features
-description: Windows Hello for Business Features 
+description: Windows Hello for Business Features
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
-ms.reviewer: 
+ms.reviewer:
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, PIN Reset, Dynamic Lock, Multifactor Unlock, Forgot PIN, Privileged credentials
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -31,7 +31,7 @@ Azure Active Directory provides a wide set of options for protecting access to c
 
 ## Dynamic lock
 
-Dynamic lock uses a paired Bluetooth device to determine user presence and locks the device if a user is not present. For more information and configuration steps see [Dynamic Lock](hello-feature-dynamic-lock.md). 
+Dynamic lock uses a paired Bluetooth device to determine user presence and locks the device if a user is not present. For more information and configuration steps see [Dynamic Lock](hello-feature-dynamic-lock.md).
 
 ## PIN reset
 

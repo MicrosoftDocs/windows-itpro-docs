@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 10/23/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Configure Hybrid Windows Hello for Business: Directory Synchronization

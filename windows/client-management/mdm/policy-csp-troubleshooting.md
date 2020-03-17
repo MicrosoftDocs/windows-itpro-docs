@@ -17,7 +17,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policies-->
-## Troubleshooting policies  
+## Troubleshooting policies
 
 <dl>
   <dd>
@@ -29,7 +29,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policy-->
-<a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
+<a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**
 
 <!--SupportedSKUs-->
 <table>
@@ -76,7 +76,7 @@ This policy setting allows IT admins to configure how to apply recommended troub
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
 -   GP name: *TroubleshootingAllowRecommendations*
 -   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
@@ -86,7 +86,7 @@ ADMX Info:
 <!--SupportedValues-->
 This is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
 
-Supported values:  
+Supported values:
 -   0 (default) - Turn this feature off.
 -   1 - Turn this feature off but still apply critical troubleshooting.
 -   2 - Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.

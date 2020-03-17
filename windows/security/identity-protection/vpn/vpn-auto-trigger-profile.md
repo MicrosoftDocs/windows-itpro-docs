@@ -8,7 +8,7 @@ ms.pagetype: security, networking
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -19,7 +19,7 @@ ms.author: dansimp
 -   Windows 10
 -   Windows 10 Mobile
 
-In Windows 10, a number of features were added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
+In Windows 10, a number of features were added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules:
 
 - App trigger
 - Name-based trigger
@@ -37,7 +37,7 @@ The app identifier for a desktop app is a file path. The app identifier for a UW
 ## Name-based trigger
 
 You can configure a domain name-based rule so that a specific domain name triggers the VPN connection.
- 
+
 Name-based auto-trigger can be configured using the VPNv2/*ProfileName*/DomainNameInformationList/dniRowId/AutoTrigger setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 There are four types of name-based triggers:
@@ -50,11 +50,11 @@ There are four types of name-based triggers:
 
 ## Always On
 
-Always On is a feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers: 
+Always On is a feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers:
 
-- User sign-in 
-- Network change 
-- Device screen on 
+- User sign-in
+- Network change
+- Device screen on
 
 When the trigger occurs, VPN tries to connect. If an error occurs or any user input is needed, the user is shown a toast notification for additional interaction.
 
@@ -63,7 +63,7 @@ When a device has multiple profiles with Always On triggers, the user can specif
 
 Preserving user Always On preference
 
-Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.
 Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
 Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config
 Value: AutoTriggerDisabledProfilesList
@@ -79,13 +79,13 @@ Trusted network detection can be configured using the VPNv2/*ProfileName*/Truste
 
 ## Configure app-triggered VPN
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration.
 
 The following image shows associating an app to a VPN connection in a VPN Profile configuration policy using Microsoft Intune.
 
 ![Add an app for the VPN connection](images/vpn-app-trigger.png)
 
-After you add an associated app, if you select the **Only these apps can use this VPN connection (per-app VPN)** checkbox, the app becomes available in **Corporate Boundaries**, where you can configure rules for the app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details. 
+After you add an associated app, if you select the **Only these apps can use this VPN connection (per-app VPN)** checkbox, the app becomes available in **Corporate Boundaries**, where you can configure rules for the app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
 
 ![Configure rules for the app](images/vpn-app-rules.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Data collection for troubleshooting 802.1X authentication
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Use the steps in this article to collect data that can be used to troubleshoot 802.1X authentication issues. 
 keywords: troubleshooting, data collection, data, 802.1X authentication, authentication, data
@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: troubleshooting
 ---
- 
+
 # Data collection for troubleshooting 802.1X authentication
 
 Use the following steps to collect data that can be used to troubleshoot 802.1X authentication issues. When you have collected data, see [Advanced troubleshooting 802.1X authentication](advanced-troubleshooting-802-authentication.md).
- 
+
 ## Capture wireless/wired functionality logs
 
 Use the following steps to collect wireless and wired logs on Windows and Windows Server:
@@ -29,35 +29,35 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh ras set tracing * enabled
    netsh trace start scenario=wlan,wlan_wpp,wlan_dbg,wireless_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wireless_cli.etl
    ```
-   
+
    <br>**Wireless Windows 7 and Windows 8:**
    ```
    netsh ras set tracing * enabled
    netsh trace start scenario=wlan,wlan_wpp,wlan_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wireless_cli.etl
    ```
-   
+
    <br>**Wired client, regardless of version**
    ```
    netsh ras set tracing * enabled
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_cli.etl
    ```
- 
+
 3. Run the following command to enable CAPI2 logging and increase the size :
    ```
    wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
    wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
    ```
- 
+
 4. Create C:\MSLOG on the NPS to store captured logs.
- 
+
 5. Launch an elevated command prompt on the NPS server and run the following commands to start a RAS trace log and a Wireless/Wired scenario log:
- 
+
    **Windows Server 2012 R2, Windows Server 2016 wireless network:**
    ```
    netsh ras set tracing * enabled
    netsh trace start scenario=wlan,wlan_wpp,wlan_dbg,wireless_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wireless_nps.etl
    ```
-    
+
    <br>**Windows Server 2008 R2, Windows Server 2012 wireless network**
    ```
    netsh ras set tracing * enabled
@@ -69,14 +69,14 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh ras set tracing * enabled
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_nps.etl
    ```
- 
+
 6. Run the following command to enable CAPI2 logging and increase the size :
    ```
     wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
     wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
    ```
 7. Run the following command from the command prompt on the client machine and start PSR to capture screen images:
- 
+
    > [!NOTE]
    > When the mouse button is clicked, the cursor will blink in red while capturing a screen image.
 
@@ -89,9 +89,9 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    ```
    psr /stop
    ```
- 
+
 10. Run the following commands from the command prompt on the NPS server.
- 
+
     - To stop RAS trace log and wireless scenario log:
 
       ```
@@ -99,34 +99,34 @@ Use the following steps to collect wireless and wired logs on Windows and Window
       netsh ras set tracing * disabled
       ```
     - To disable and copy CAPI2 log:
-    
+
       ```
       wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:false
       wevtutil.exe epl Microsoft-Windows-CAPI2/Operational C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       ```
- 
+
 11. Run the following commands on the client PC.
     - To stop RAS trace log and wireless scenario log:
       ```
       netsh trace stop
       netsh ras set tracing * disabled
       ```
- 
+
     - To disable and copy the CAPI2 log:
       ```
       wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:false
       wevtutil.exe epl Microsoft-Windows-CAPI2/Operational C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       ```
- 
+
 12. Save the following logs on the client and the NPS:
- 
+
     **Client**
       - C:\MSLOG\%computername%_psr.zip
       - C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       - C:\MSLOG\%COMPUTERNAME%_wireless_cli.etl
       - C:\MSLOG\%COMPUTERNAME%_wireless_cli.cab
       - All log files and folders in %Systemroot%\Tracing
- 
+
     **NPS**
       - C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       - C:\MSLOG\%COMPUTERNAME%_wireless_nps.etl (%COMPUTERNAME%_wired_nps.etl for wired scenario)
@@ -141,15 +141,15 @@ Use the following steps to collect wireless and wired logs on Windows and Window
 2. Launch a command prompt as an administrator.
 3. Run the following commands.
    - Environment information and Group Policy application status
-   
-   ```               
+
+   ```
    gpresult /H C:\MSLOG\%COMPUTERNAME%_gpresult.htm
    msinfo32 /report c:\MSLOG\%COMPUTERNAME%_msinfo32.txt
    ipconfig /all > c:\MSLOG\%COMPUTERNAME%_ipconfig.txt
    route print > c:\MSLOG\%COMPUTERNAME%_route_print.txt
-   ``` 
+   ```
    - Event logs
-   
+
    ```
    wevtutil epl Application c:\MSLOG\%COMPUTERNAME%_Application.evtx
    wevtutil epl System c:\MSLOG\%COMPUTERNAME%_System.evtx
@@ -160,15 +160,15 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-CredentialRoaming_Operational.evtx
    wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%_CertPoleEng_Operational.evtx
    ```
-   - For Windows 8 and later, also run these commands for event logs: 
-   
+   - For Windows 8 and later, also run these commands for event logs:
+
    ```
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-System_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-User_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServices-Deployment_Operational.evtx
    ```
    - Certificates Store information:
-   
+
    ```
    certutil -v -silent -store MY > c:\MSLOG\%COMPUTERNAME%_cert-Personal-Registry.txt
    certutil -v -silent -store ROOT > c:\MSLOG\%COMPUTERNAME%_cert-TrustedRootCA-Registry.txt
@@ -203,13 +203,13 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    certutil -v -silent -user -store UserDS > c:\MSLOG\%COMPUTERNAME%_cert-User-UserDS.txt
    ```
    - Wireless LAN client information:
-   
+
    ```
    netsh wlan show all > c:\MSLOG\%COMPUTERNAME%_wlan_show_all.txt
    netsh wlan export profile folder=c:\MSLOG\
    ```
    - Wired LAN Client information
-   
+
    ```
    netsh lan show interfaces > c:\MSLOG\%computername%_lan_interfaces.txt
    netsh lan show profiles > c:\MSLOG\%computername%_lan_profiles.txt
@@ -232,7 +232,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    route print > c:\MSLOG\%COMPUTERNAME%_route_print.txt
    ```
    - Event logs:
-   
+
    ```
    wevtutil epl Application c:\MSLOG\%COMPUTERNAME%_Application.evtx
    wevtutil epl System c:\MSLOG\%COMPUTERNAME%_System.evtx
@@ -242,14 +242,14 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%_CertPoleEng_Operational.evtx
    ```
    - Run the following 3 commands on Windows Server 2012 and later:
-   
+
    ```
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-System_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-User_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServices-Deployment_Operational.evtx
    ```
    - Certificates store information
-   
+
    ```
    certutil -v -silent -store MY > c:\MSLOG\%COMPUTERNAME%_cert-Personal-Registry.txt
    certutil -v -silent -store ROOT > c:\MSLOG\%COMPUTERNAME%_cert-TrustedRootCA-Registry.txt
@@ -284,7 +284,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    certutil -v -silent -user -store UserDS > c:\MSLOG\%COMPUTERNAME%_cert-User-UserDS.txt
    ```
    - NPS configuration information:
-   
+
    ```
    netsh nps show config > C:\MSLOG\%COMPUTERNAME%_nps_show_config.txt
    netsh nps export filename=C:\MSLOG\%COMPUTERNAME%_nps_export.xml exportPSK=YES
@@ -295,7 +295,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    3. Click **Change Log File Properties**.
    4. On the **Log File** tab, note the log file naming convention shown as **Name** and the log file location shown in **Directory** box.
    5. Copy the log file to C:\MSLOG.
- 
+
 4. Save the logs stored in C:\MSLOG.
 
 ## Certification Authority (CA) (OPTIONAL)
@@ -303,7 +303,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
 1. On a CA, launch a command prompt as an administrator. Create C:\MSLOG to store captured logs.
 2. Run the following commands.
    - Environmental information and Group Policies application status
-   
+
    ```
    gpresult /H C:\MSLOG\%COMPUTERNAME%_gpresult.txt
    msinfo32 /report c:\MSLOG\%COMPUTERNAME%_msinfo32.txt
@@ -311,7 +311,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    route print > c:\MSLOG\%COMPUTERNAME%_route_print.txt
    ```
    - Event logs
-   
+
    ```
    wevtutil epl Application c:\MSLOG\%COMPUTERNAME%_Application.evtx
    wevtutil epl System c:\MSLOG\%COMPUTERNAME%_System.evtx
@@ -321,14 +321,14 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%_CertPoleEng_Operational.evtx
    ```
    - Run the following 3 lines on Windows 2012 and up
-   
+
    ```
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-System_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-User/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-User_Operational.evtx
    wevtutil epl Microsoft-Windows-CertificateServices-Deployment/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServices-Deployment_Operational.evtx
    ```
    - Certificates store information
-   
+
    ```
    certutil -v -silent -store MY > c:\MSLOG\%COMPUTERNAME%_cert-Personal-Registry.txt
    certutil -v -silent -store ROOT > c:\MSLOG\%COMPUTERNAME%_cert-TrustedRootCA-Registry.txt
@@ -363,7 +363,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    certutil -v -silent -user -store UserDS > c:\MSLOG\%COMPUTERNAME%_cert-User-UserDS.txt
    ```
    - CA configuration information
-   
+
    ```
    reg save HKLM\System\CurrentControlSet\Services\CertSvc c:\MSLOG\%COMPUTERNAME%_CertSvc.hiv
    reg export HKLM\System\CurrentControlSet\Services\CertSvc c:\MSLOG\%COMPUTERNAME%_CertSvc.txt
@@ -374,7 +374,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
 4. Log on to a domain controller and create C:\MSLOG to store captured logs.
 5. Launch Windows PowerShell as an administrator.
 6. Run the following PowerShell cmdlets. Replace the domain name in ";.. ,DC=test,DC=local"; with appropriate domain name. The example shows commands for ";test.local"; domain.
-   
+
    ```powershell
    Import-Module ActiveDirectory
    Get-ADObject -SearchBase ";CN=Public Key Services,CN=Services,CN=Configuration,DC=test,DC=local"; -Filter * -Properties * | fl * > C:\MSLOG\Get-ADObject_$Env:COMPUTERNAME.txt

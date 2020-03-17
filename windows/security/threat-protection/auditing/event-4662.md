@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,36 +42,36 @@ You will get one 4662 for each operation type which was performed.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4662</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14080</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-28T01:58:36.894922400Z" /> 
- <EventRecordID>407230</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="600" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4662</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14080</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-28T01:58:36.894922400Z" />
+ <EventRecordID>407230</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="600" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x35867</Data> 
- <Data Name="ObjectServer">DS</Data> 
- <Data Name="ObjectType">%{bf967a86-0de6-11d0-a285-00aa003049e2}</Data> 
- <Data Name="ObjectName">%{38b3d2e6-9948-4dc1-ae90-1605d5eab9a2}</Data> 
- <Data Name="OperationType">Object Access</Data> 
- <Data Name="HandleId">0x0</Data> 
- <Data Name="AccessList">%%1537</Data> 
- <Data Name="AccessMask">0x10000</Data> 
- <Data Name="Properties">%%1537 {bf967a86-0de6-11d0-a285-00aa003049e2}</Data> 
- <Data Name="AdditionalInfo">-</Data> 
- <Data Name="AdditionalInfo2" /> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x35867</Data>
+ <Data Name="ObjectServer">DS</Data>
+ <Data Name="ObjectType">%{bf967a86-0de6-11d0-a285-00aa003049e2}</Data>
+ <Data Name="ObjectName">%{38b3d2e6-9948-4dc1-ae90-1605d5eab9a2}</Data>
+ <Data Name="OperationType">Object Access</Data>
+ <Data Name="HandleId">0x0</Data>
+ <Data Name="AccessList">%%1537</Data>
+ <Data Name="AccessMask">0x10000</Data>
+ <Data Name="Properties">%%1537 {bf967a86-0de6-11d0-a285-00aa003049e2}</Data>
+ <Data Name="AdditionalInfo">-</Data>
+ <Data Name="AdditionalInfo2" />
  </EventData>
  </Event>
 ```
@@ -127,15 +127,15 @@ You will get one 4662 for each operation type which was performed.
 -   **Object Name** \[Type = UnicodeString\]: distinguished name of the object that was accessed.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4661](event-4661.md): A handle to an object was requested.” This parameter might not be captured in the event, and in that case appears as “0x0”.

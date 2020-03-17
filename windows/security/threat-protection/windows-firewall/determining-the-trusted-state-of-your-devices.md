@@ -2,7 +2,7 @@
 title: Determining the Trusted State of Your Devices (Windows 10)
 description: Determining the Trusted State of Your Devices
 ms.assetid: 3e77f0d0-43aa-47dd-8518-41ccdab2f2b2
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -133,8 +133,8 @@ The following table is an example of a data sheet that you could use to help cap
 
 | Device name | Hardware reqs met | Software reqs met | Configuration required | Details | Projected cost |
 | - | - | - | - | - | - |
-| CLIENT001 | No| No| Upgrade hardware and software.| Current operating system is Windows XP. Old hardware is not compatible with newer versions of Windows.| $??| 
-| SERVER001 | Yes| No| Join trusted domain and upgrade from Windows Server 2003 to Windows Server 2012.| No antivirus software present.| $??| 
+| CLIENT001 | No| No| Upgrade hardware and software.| Current operating system is Windows XP. Old hardware is not compatible with newer versions of Windows.| $??|
+| SERVER001 | Yes| No| Join trusted domain and upgrade from Windows Server 2003 to Windows Server 2012.| No antivirus software present.| $??|
 
 In the previous table, the device CLIENT001 is currently "known, untrusted" because its hardware must be upgraded. However, it could be considered trustworthy if the required upgrades are possible. However, if many devices require the same upgrades, the overall cost of the solution would be much higher.
 

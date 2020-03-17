@@ -5,7 +5,7 @@ description: How to use the Connection Settings page in IEAK 11 Customization Wi
 author: dansimp
 ms.prod: ie11
 ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -33,7 +33,7 @@ The **Connection Settings** page of the Internet Explorer Administration Kit (IE
    -   **Do not customize Connection Settings.** Pick this option if you don’t want to preset your employee’s connection settings.
 
    -   **Import the current Connection Settings from this machine.** Pick this option to import your connection settings from your computer and use them as the preset for your employee’s connection settings.
- 
+
    **Note**<br>If you want to change any of your settings later, you can click **Modify Settings** to open the **Internet Properties** box, click the **Connection Settings** tab, and make your changes.
 
 2. Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -90,7 +90,7 @@ The primary tool you will use to deploy Windows 10 in your school is MDT, which 
 
 You can use MDT as a stand-alone tool or integrate it with Microsoft Endpoint Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as Configuration Manager) but result in fully automated deployments.
 
-MDT includes the Deployment Workbench—a console from which you can manage the deployment of Windows 10 and your apps. You configure the deployment process in the Deployment Workbench, including the management of operating systems, device drivers, apps and migration of user settings on existing devices. 
+MDT includes the Deployment Workbench—a console from which you can manage the deployment of Windows 10 and your apps. You configure the deployment process in the Deployment Workbench, including the management of operating systems, device drivers, apps and migration of user settings on existing devices.
 
 LTI performs deployment from a *deployment share*—a network-shared folder on the device where you installed MDT. You can perform over-the-network deployments from the deployment share or perform deployments from a local copy of the deployment share on a USB drive or DVD. You will learn more about MDT in the [Prepare the admin device](#prepare-the-admin-device) section.
 
@@ -470,7 +470,7 @@ After you have selected your user and group account bulk import method, you’re
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
 
-**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts. 
+**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts.
 
 For more information about how to import user accounts into AD DS by using:
 
@@ -518,7 +518,7 @@ Microsoft Exchange Online uses an email distribution group as a single email rec
 
 You can create email distribution groups based on job role (such as teachers, administration, or students) or specific interests (such as robotics, drama club, or soccer team). You can create any number of distribution groups, and users can be members of more than one group.
 
-**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
+**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps.
 
 For information about how to create security groups, see [Create and manage Microsoft 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
@@ -543,7 +543,7 @@ Microsoft Store for Business allows you to create your own private portal to man
 
 - Find and acquire Microsoft Store apps.
 - Manage apps, app licenses, and updates.
-- Distribute apps to your users. 
+- Distribute apps to your users.
 
 For more information about Microsoft Store for Business, see [Microsoft Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
 
@@ -561,7 +561,7 @@ To create and configure your Microsoft Store for Business portal, simply use the
 4. On the **Microsoft Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**
 5. In the **Welcome to the Microsoft Store for Business** dialog box, click **OK**.
 
-After you create the Microsoft Store for Business portal, configure it by using the commands in the settings menu listed in Table 7. Depending on your institution, you may (or may not) need to change these settings to further customize your portal. 
+After you create the Microsoft Store for Business portal, configure it by using the commands in the settings menu listed in Table 7. Depending on your institution, you may (or may not) need to change these settings to further customize your portal.
 
 *Table 7. Menu selections to configure Microsoft Store for Business settings*
 
@@ -1027,7 +1027,7 @@ For more information about Intune, see [Documentation for Microsoft Intune](http
 1. Add Intune to your Office 365 subscription by completing the steps in [Get started with a paid subscription to Microsoft Intune](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune).
 2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://technet.microsoft.com/library/dn646962.aspx).
 3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://technet.microsoft.com/library/dn646984.aspx).
-4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com/library/dn646959.aspx). 
+4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com/library/dn646959.aspx).
 
 ### Deploy apps by using Intune
 
@@ -1041,7 +1041,7 @@ In this section, you prepared your institution for device management. You determ
 
 ## Deploy Windows 10 to devices
 
-You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows to Windows 10. 
+You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows to Windows 10.
 
 ### Prepare for deployment
 
@@ -1061,7 +1061,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 
 ### Perform the deployment
 
-Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
+Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated.
 
 **Note**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/library/dn781089.aspx).
 
@@ -1170,7 +1170,7 @@ For more information about completing this task, see <a href="https://windows.mi
 </tr>
 
 <tr>
-<td>Verify that you are using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/> 
+<td>Verify that you are using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/>
 For more information about Windows 10 servicing options for updates and upgrades, see <a href="https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing" data-raw-source="[Windows 10 servicing options for updates and upgrades](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing)">Windows 10 servicing options for updates and upgrades</a>.</td>
 <td></td>
 <td>X</td>
@@ -1275,7 +1275,7 @@ Follow the same steps described in the <a href="#deploy-windows-10-to-devices" d
 
 ### Summary
 
-Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By performing these maintenance tasks you help ensure that your school stays secure and is configured as you specified. 
+Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By performing these maintenance tasks you help ensure that your school stays secure and is configured as you specified.
 
 ## Related resources
 <ul>

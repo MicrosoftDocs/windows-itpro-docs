@@ -1,6 +1,6 @@
 ---
 title: SetupDiag
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
@@ -31,7 +31,7 @@ ms.topic: article
 <I>Current downloadable version of SetupDiag: 1.6.0.42</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
-SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful.
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
@@ -68,7 +68,7 @@ To quickly use SetupDiag on your current computer:
 
 For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
-The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool. 
+The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool.
 
 ## Requirements
 
@@ -95,7 +95,7 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter is not specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
 </ul> |
 
-Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
+Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag.
 - In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
 
 ### Examples:
@@ -155,8 +155,8 @@ When Microsoft Windows encounters a condition that compromises safe system opera
 If crash dumps [are enabled](https://docs.microsoft.com/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup related minidumps.
 
 To debug a setup related bug check, you must:
-- Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode. 
-- Gather the setup memory dump file (setupmem.dmp) from the failing system. 
+- Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode.
+- Gather the setup memory dump file (setupmem.dmp) from the failing system.
     - Setupmem.dmp will be created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
 - Install the [Windows Debugging Tools](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
 
@@ -246,7 +246,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 15. DiskSpaceFailure - 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191
     - This failure indicates the system drive ran out of available disk space at some point after the first reboot into the upgrade.
 16. DeviceInstallHang - 37BB1C3A-4D79-40E8-A556-FDA126D40BC6
-    - This failure rule indicates the system hung or bug checked during the device installation phase of upgrade. 
+    - This failure rule indicates the system hung or bug checked during the device installation phase of upgrade.
 17. DebugSetupMemoryDump - C7C63D8A-C5F6-4255-8031-74597773C3C6
     - This offline only rule indicates a bug check occurred during setup.  If the debugger tools are available on the system, SetupDiag will debug the memory dump and provide details.
 18. DebugSetupCrash - CEEBA202-6F04-4BC3-84B8-7B99AED924B1
@@ -303,23 +303,23 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug-in name, plug-in action and error code.
 44. DISMAddPackageFailed - 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9
     - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
-45. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960 
+45. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
     - Detects all compat blocks from Server compliance plug-ins.  Outputs the block information and remediation.
-46. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71 
+46. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71
     - Triggers on advanced installer failures in a generic sense, outputting the application called, phase, mode, component and error code.
-47. FindMigGatherApplyFailure - A9964E6C-A2A8-45FF-B6B5-25E0BD71428E 
+47. FindMigGatherApplyFailure - A9964E6C-A2A8-45FF-B6B5-25E0BD71428E
     - Shows errors when the migration Engine fails out on a gather or apply operation.  Indicates the Migration Object (file or registry path), the Migration
-48. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78 
+48. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78
     - Indicates the optional component (OC) migration operation failed to enumerate optional components from an OC Package.  Outputs the package name and error code.
-49. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6 
+49. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
     - Indicates the optional component migration operation failed to open an optional component Package.  Outputs the package name and error code.
-50. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317 
+50. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317
     - Indicates corruption in the servicing stack on the down-level system.  Outputs the error code encountered while trying to initialize the servicing component on the existing OS.
-51. DISMproviderFailure - D76EF86F-B3F8-433F-9EBF-B4411F8141F4 
+51. DISMproviderFailure - D76EF86F-B3F8-433F-9EBF-B4411F8141F4
     - Triggers when a DISM provider (plug-in) fails in a critical operation.  Outputs the file (plug-in name), function called + error code, and error message from the provider.
-52. SysPrepLaunchModuleFailure - 7905655C-F295-45F7-8873-81D6F9149BFD 
+52. SysPrepLaunchModuleFailure - 7905655C-F295-45F7-8873-81D6F9149BFD
     - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
-53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980 
+53. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980
     - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
 54. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
     - These are for server upgrades only, will output the compliance block and remediation required.
@@ -345,7 +345,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
      - This is the last Operation and Phase that Setup was in when the failure occurred.
  - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.
      - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won’t be available.
- - Added more info to the Registry output. 
+ - Added more info to the Registry output.
      - Detailed ‘FailureData’ info where available.  Example: “AppName = MyBlockedApplication” or “DiskSpace = 6603” (in MB)
          - “Key = Value” data specific to the failure found.
      - Added ‘UpgradeStartTime’, ‘UpgradeEndTime’ and ‘UpgradeElapsedTime’
@@ -369,7 +369,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
   - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-- This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+- This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
 - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
@@ -543,7 +543,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
     "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
     "DeviceDriverInfo":null,
     "Remediation":[
-        
+
     ],
     "SetupPhaseInfo":null,
     "SetupOperationInfo":null

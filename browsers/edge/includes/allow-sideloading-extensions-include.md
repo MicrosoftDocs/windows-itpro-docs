@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Allow sideloading of Extensions -->  
+<!-- ## Allow sideloading of Extensions -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting: Enabled (Allowed)*
 
@@ -34,12 +34,12 @@ ms.topic: include
 
 #### MDM settings
 - **MDM name:** Browser/[AllowSideloadingExtensions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions)
-- **Supported devices:** Desktop 
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions 
+- **Supported devices:** Desktop
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Extensions
 - **Value name:** AllowSideloadingOfExtensions
 - **Value type:** REG_DWORD
 
@@ -51,6 +51,6 @@ ms.topic: include
 
 ### Related topics
 
-[Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development): Access development features, along with other developer-focused settings to make it possible for you to develop, test, and debug apps. Learn how to configure your environment for development, the difference between Developer Mode and sideloading, and the security risks of Developer mode. 
+[Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development): Access development features, along with other developer-focused settings to make it possible for you to develop, test, and debug apps. Learn how to configure your environment for development, the difference between Developer Mode and sideloading, and the security risks of Developer mode.
 
 <hr>

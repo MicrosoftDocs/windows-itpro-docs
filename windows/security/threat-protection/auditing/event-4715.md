@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,28 +38,28 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4715</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13568</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-30T19:59:39.964601800Z" /> 
- <EventRecordID>1049425</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="4668" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4715</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13568</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-30T19:59:39.964601800Z" />
+ <EventRecordID>1049425</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="4668" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x11ae30</Data> 
- <Data Name="OldSd">D:(A;;DCSWRPDTRC;;;BA)(D;;DCSWRPDTRC;;;SY)S:NO\_ACCESS\_CONTROL</Data> 
- <Data Name="NewSd">D:(A;;DCSWRPDTRC;;;BA)(A;;DCSWRPDTRC;;;SY)S:NO\_ACCESS\_CONTROL</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x11ae30</Data>
+ <Data Name="OldSd">D:(A;;DCSWRPDTRC;;;BA)(D;;DCSWRPDTRC;;;SY)S:NO\_ACCESS\_CONTROL</Data>
+ <Data Name="NewSd">D:(A;;DCSWRPDTRC;;;BA)(A;;DCSWRPDTRC;;;SY)S:NO\_ACCESS\_CONTROL</Data>
  </EventData>
  </Event>
 ```
@@ -101,12 +101,12 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** new Security Descriptor Definition Language (SDDL) value for the audit policy.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

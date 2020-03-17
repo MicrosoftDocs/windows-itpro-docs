@@ -2,7 +2,7 @@
 title: Maintain AppLocker policies (Windows 10)
 description: This topic describes how to maintain rules within AppLocker policies.
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -51,7 +51,7 @@ For every scenario, the steps to maintain an AppLocker policy distributed by Gro
 
 As new apps are deployed or existing apps are removed by your organization or updated by the software publisher, you might need to make revisions to your rules and update the Group Policy Object (GPO) to ensure that your policy is current.
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the AppLocker policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create 
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the AppLocker policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create
 versions of GPOs.
 
 >**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.

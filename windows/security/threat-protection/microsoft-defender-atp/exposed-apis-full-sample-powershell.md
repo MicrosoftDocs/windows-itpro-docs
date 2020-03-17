@@ -1,6 +1,6 @@
 ---
 title: Advanced Hunting with Powershell API Guide
-ms.reviewer: 
+ms.reviewer:
 description: Use these code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,8 +13,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 09/24/2018
 ---
 
@@ -25,8 +25,8 @@ ms.date: 09/24/2018
 
 Full scenario using multiple APIs from Microsoft Defender ATP.
 
-In this section we share PowerShell samples to 
-- Retrieve a token 
+In this section we share PowerShell samples to
+- Retrieve a token
 - Use token to retrieve the latest alerts in Microsoft Defender ATP
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.
 
@@ -72,10 +72,10 @@ $aadToken = $authResponse.access_token
 
 #Get latest alert
 $alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
-$headers = @{ 
+$headers = @{
     'Content-Type' = 'application/json'
     Accept = 'application/json'
-    Authorization = "Bearer $aadToken" 
+    Authorization = "Bearer $aadToken"
 }
 $alertResponse = Invoke-WebRequest -Method Get -Uri $alertUrl -Headers $headers -ErrorAction Stop
 $alerts =  ($alertResponse | ConvertFrom-Json).value

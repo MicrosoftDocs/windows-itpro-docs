@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ---
@@ -30,7 +30,7 @@ ms.date: 04/16/2020
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
-Microsoft Defender ATP supports non-persistent VDI session onboarding. 
+Microsoft Defender ATP supports non-persistent VDI session onboarding.
 
 >[!Note]
 >To onboard non-persistent VDI sessions, VDI devices must be on Windows 10.
@@ -44,14 +44,14 @@ There might be associated challenges when onboarding VDIs. The following are typ
 
 VDI devices can appear in Microsoft Defender ATP portal as either:
 
-- Single entry for each device.  
+- Single entry for each device.
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 - Multiple entries for each device - one for each session.
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 >[!WARNING]
-> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding. 
+> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding.
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -89,13 +89,13 @@ The following steps will guide you through onboarding VDI devices and will highl
 6. Test your solution:
 
     a. Create a pool with one device.
-      
+
     b. Logon to device.
-      
+
     c. Logoff from device.
 
     d. Logon to device with another user.
-      
+
     e. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
     **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
@@ -108,7 +108,7 @@ As a best practice, we recommend using offline servicing tools to patch golden/m
 For example, you can use the below commands to install an update while the image remains offline:
 
 ```
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```

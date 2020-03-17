@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 11/01/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -17,10 +17,10 @@ manager: dansimp
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-admx-backed) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-admx-backed) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
 
 Summary of steps to enable a policy:
-- Find the policy from the list ADMX-backed policies. 
+- Find the policy from the list ADMX-backed policies.
 - Find the Group Policy related information from the MDM policy description.
 - Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
 - Create the data payload for the SyncML.
@@ -35,7 +35,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 > [!NOTE]
 > See [Understanding ADMX-backed policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
 
-1.  Find the policy from the list [ADMX-backed policies](policy-csps-admx-backed.md). You need the following information listed in the policy description.  
+1.  Find the policy from the list [ADMX-backed policies](policy-csps-admx-backed.md). You need the following information listed in the policy description.
     - GP English name
     - GP name
     - GP ADMX file name
@@ -43,25 +43,25 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
 2.  Use the Group Policy Editor to determine whether you need additional information to enable the policy. Run GPEdit.msc
 
-    1. Click **Start**, then in the text box type **gpedit**. 
+    1. Click **Start**, then in the text box type **gpedit**.
 
-    2. Under **Best match**, click **Edit group policy** to launch it.  
-       
+    2. Under **Best match**, click **Edit group policy** to launch it.
+
        ![GPEdit search](images/admx-gpedit-search.png)
 
-    3. In **Local Computer Policy** navigate to the policy you want to configure.  
-    
+    3. In **Local Computer Policy** navigate to the policy you want to configure.
+
        In this example, navigate to **Administrative Templates >  System > App-V**.
 
        ![App-V policies](images/admx-appv.png)
 
-    4. Double-click **Enable App-V Client**.  
+    4. Double-click **Enable App-V Client**.
 
        The **Options** section is empty, which means there are no parameters necessary to enable the policy. If the **Options** section is not empty, follow the procedure in [Enable a policy that requires parameters](#enable-a-policy-that-requires-parameters)
 
        ![Enable App-V client](images/admx-appv-enableapp-vclient.png)
 
-3.  Create the SyncML to enable the policy that does not require any parameter.  
+3.  Create the SyncML to enable the policy that does not require any parameter.
 
     In this example you configure **Enable App-V Client** to **Enabled**.
 
@@ -90,7 +90,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
     ```
 
 
-## Enable a policy that requires parameters  
+## Enable a policy that requires parameters
 
 
    1. Create the SyncML to enable the policy that requires parameters.
@@ -115,13 +115,13 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
 
    5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The text id and enum id represents the data id you need to include in the SyncML data payload. They correspond to the fields you see in GP Editor.
-    
+
       Here is the snippet from appv.admx:
 
       ```xml
       <!--  Publishing Server 2  -->
-      <policy name="Publishing_Server2_Policy" class="Machine" displayName="$(string.PublishingServer2)" 
-          explainText="$(string.Publishing_Server_Help)" presentation="$(presentation.Publishing_Server2)" 
+      <policy name="Publishing_Server2_Policy" class="Machine" displayName="$(string.PublishingServer2)"
+          explainText="$(string.Publishing_Server_Help)" presentation="$(presentation.Publishing_Server2)"
           key="SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2">
       <parentCategory ref="CAT_Publishing" />
       <supportedOn ref="windows:SUPPORTED_Windows7" />
@@ -139,7 +139,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             <decimal value="1"/>
           </value>
         </item>
-      </enum>  
+      </enum>
       <enum id="Global_Refresh_OnLogon_Options" valueName="GlobalLogonRefresh">
         <item displayName="$(string.False)">
           <value>
@@ -151,7 +151,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             <decimal value="1"/>
           </value>
         </item>
-      </enum>      
+      </enum>
       <decimal id="Global_Refresh_Interval_Prompt" valueName="GlobalPeriodicRefreshInterval" minValue="0" maxValue="31"/>
       <enum id="Global_Refresh_Unit_Options" valueName="GlobalPeriodicRefreshIntervalUnit">
         <item displayName="$(string.Hour)">
@@ -164,7 +164,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             <decimal value="1"/>
           </value>
         </item>
-      </enum>        
+      </enum>
       <enum id="User_Publishing_Refresh_Options" valueName="UserEnabled">
         <item displayName="$(string.False)">
           <value>
@@ -188,7 +188,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             <decimal value="1"/>
           </value>
         </item>
-      </enum>      
+      </enum>
       <decimal id="User_Refresh_Interval_Prompt" valueName="UserPeriodicRefreshInterval" minValue="0" maxValue="31"/>
       <enum id="User_Refresh_Unit_Options" valueName="UserPeriodicRefreshIntervalUnit">
         <item displayName="$(string.Hour)">
@@ -201,7 +201,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             <decimal value="1"/>
           </value>
         </item>
-      </enum>        
+      </enum>
       </elements>
       </policy>
       ```
@@ -209,7 +209,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
    6. From the \<elements>  tag, copy all the text id and enum id and create an XML with data id and value fields. The value field contains the configuration settings you would enter in the GP Editor.
 
       Here is the example XML for Publishing_Server2_Policy :
-        
+
       ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>
       <data id="Publishing_Server_URL_Prompt" value="http://someuri"/>
@@ -221,12 +221,12 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
       <data id="User_Refresh_OnLogon_Options" value="0"/>
       <data id="User_Refresh_Interval_Prompt" value="15"/>
       <data id="User_Refresh_Unit_Options" value="1"/>
-      ```    
+      ```
 
-   7. Create the SyncML to enable the policy. Payload contains \<enabled/> and name/value pairs.  
+   7. Create the SyncML to enable the policy. Payload contains \<enabled/> and name/value pairs.
 
       Here is the example for **AppVirtualization/PublishingAllowServer2**:
-        
+
        > [!NOTE]
        > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
 
@@ -245,15 +245,15 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
                    <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
                   </Target>
                   <Data>
-                  <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
-                    id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
-                    id="Global_Publishing_Refresh_Options" value="1"/><data 
-                    id="Global_Refresh_OnLogon_Options" value="0"/><data 
-                    id="Global_Refresh_Interval_Prompt" value="15"/><data 
-                    id="Global_Refresh_Unit_Options" value="0"/><data 
-                    id="User_Publishing_Refresh_Options" value="0"/><data 
-                    id="User_Refresh_OnLogon_Options" value="0"/><data 
-                    id="User_Refresh_Interval_Prompt" value="15"/><data 
+                  <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data
+                    id="Publishing_Server_URL_Prompt" value="URL prompt"/><data
+                    id="Global_Publishing_Refresh_Options" value="1"/><data
+                    id="Global_Refresh_OnLogon_Options" value="0"/><data
+                    id="Global_Refresh_Interval_Prompt" value="15"/><data
+                    id="Global_Refresh_Unit_Options" value="0"/><data
+                    id="User_Publishing_Refresh_Options" value="0"/><data
+                    id="User_Refresh_OnLogon_Options" value="0"/><data
+                    id="User_Refresh_Interval_Prompt" value="15"/><data
                     id="User_Refresh_Unit_Options" value="1"/>]]>
                   </Data>
                 </Item>
@@ -262,7 +262,6 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
             </SyncBody>
           </SyncML>
        ```
-
 
 ## Disable a policy
 

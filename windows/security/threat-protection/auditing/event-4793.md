@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -44,29 +44,29 @@ Note that starting with Microsoft SQL Server 2005, the “SQL Server password po
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4793</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13829</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-18T02:37:46.322424300Z" /> 
- <EventRecordID>172342</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="2964" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4793</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13829</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-18T02:37:46.322424300Z" />
+ <EventRecordID>172342</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="2964" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x36f67</Data> 
- <Data Name="Workstation">DC01</Data> 
- <Data Name="TargetUserName">-</Data> 
- <Data Name="Status">0x0</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x36f67</Data>
+ <Data Name="Workstation">DC01</Data>
+ <Data Name="TargetUserName">-</Data>
+ <Data Name="Status">0x0</Data>
  </EventData>
  </Event>
 

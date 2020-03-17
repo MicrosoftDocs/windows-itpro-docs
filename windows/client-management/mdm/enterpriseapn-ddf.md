@@ -2,7 +2,7 @@
 title: EnterpriseAPN DDF
 description: EnterpriseAPN DDF
 ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -1199,9 +1199,9 @@ The content below are the different versions of the DDF for this CSP.
 
 [EnterpriseAPN configuration service provider](enterpriseapn-csp.md)
 
- 
 
- 
+
+
 
 
 

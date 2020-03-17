@@ -6,8 +6,8 @@ description: Use this section to learn about how to turn on Enterprise Mode.
 author: dansimp
 ms.author: dansimp
 ms.prod: edge
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 manager: dansimp
 title: Enterprise Mode for Microsoft Edge
 ms.sitesec: library

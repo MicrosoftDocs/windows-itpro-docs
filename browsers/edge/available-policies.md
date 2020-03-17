@@ -1,7 +1,7 @@
 ---
 description: You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many.
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
-ms.reviewer: 
+ms.reviewer:
 author: dansimp
 ms.author: dansimp
 audience: itpro
@@ -21,12 +21,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
-You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain. 
+You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain.
 
-Other policy settings in Microsoft Edge include allowing Adobe Flash content to play automatically, provision a favorites list, set default search engine, and more. You configure a Group Policy setting in the Administrative Templates folders, which are registry-based policy settings that Group Policy enforces. Group Policy stores these settings in a specific registry location, which users cannot change. Also, Group Policy-aware Windows features and applications look for these settings in the registry, and if found the policy setting gets used instead of the regular settings. 
+Other policy settings in Microsoft Edge include allowing Adobe Flash content to play automatically, provision a favorites list, set default search engine, and more. You configure a Group Policy setting in the Administrative Templates folders, which are registry-based policy settings that Group Policy enforces. Group Policy stores these settings in a specific registry location, which users cannot change. Also, Group Policy-aware Windows features and applications look for these settings in the registry, and if found the policy setting gets used instead of the regular settings.
 
 **_You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:_**
- 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 
 When you edit a Group Policy setting, you have the following configuration options:
@@ -35,16 +35,16 @@ When you edit a Group Policy setting, you have the following configuration optio
 - **Disabled** - writes the policy setting to the registry with a value that disables it.
 - **Not configured** - leaves the policy setting undefined. Group Policy does not write the policy setting to the registry and has no impact on computers or users.
 
-Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL. 
+Some policy settings have additional options you can configure. For example, if you want to set the default search engine, set the Start page, or configure the Enterprise Mode Site List, you would type the URL.
 
 
 ## Allow a shared books folder
-[!INCLUDE [allow-shared-folder-books-include.md](includes/allow-shared-folder-books-include.md)] 
+[!INCLUDE [allow-shared-folder-books-include.md](includes/allow-shared-folder-books-include.md)]
 
 ## Allow Address bar drop-down list suggestions
 [!INCLUDE [allow-address-bar-suggestions-include.md](includes/allow-address-bar-suggestions-include.md)]
 
-## Allow Adobe Flash 
+## Allow Adobe Flash
 [!INCLUDE [allow-adobe-flash-include.md](includes/allow-adobe-flash-include.md)]
 
 ## Allow clearing browsing data on exit
@@ -159,31 +159,31 @@ Some policy settings have additional options you can configure. For example, if 
 [!INCLUDE [do-not-sync-include.md](includes/do-not-sync-include.md)]
 
 ## Do not sync browser settings
-[!INCLUDE [do-not-sync-browser-settings-include.md](includes/do-not-sync-browser-settings-include.md)] 
+[!INCLUDE [do-not-sync-browser-settings-include.md](includes/do-not-sync-browser-settings-include.md)]
 
 ## Keep favorites in sync between Internet Explorer and Microsoft Edge
-[!INCLUDE [keep-fav-sync-ie-edge-include.md](includes/keep-fav-sync-ie-edge-include.md)] 
+[!INCLUDE [keep-fav-sync-ie-edge-include.md](includes/keep-fav-sync-ie-edge-include.md)]
 
 ## Prevent access to the about:flags page
-[!INCLUDE [prevent-access-about-flag-include.md](includes/prevent-access-about-flag-include.md)] 
+[!INCLUDE [prevent-access-about-flag-include.md](includes/prevent-access-about-flag-include.md)]
 
 ## Prevent bypassing Windows Defender SmartScreen prompts for files
-[!INCLUDE [prevent-bypassing-win-defender-files-include.md](includes/prevent-bypassing-win-defender-files-include.md)] 
+[!INCLUDE [prevent-bypassing-win-defender-files-include.md](includes/prevent-bypassing-win-defender-files-include.md)]
 
 ## Prevent bypassing Windows Defender SmartScreen prompts for sites
-[!INCLUDE [prevent-bypassing-win-defender-sites-include.md](includes/prevent-bypassing-win-defender-sites-include.md)] 
+[!INCLUDE [prevent-bypassing-win-defender-sites-include.md](includes/prevent-bypassing-win-defender-sites-include.md)]
 
 ## Prevent certificate error overrides
 [!INCLUDE [prevent-certificate-error-overrides-include.md](includes/prevent-certificate-error-overrides-include.md)]
 
 ## Prevent changes to Favorites on Microsoft Edge
-[!INCLUDE [prevent-changes-to-favorites-include.md](includes/prevent-changes-to-favorites-include.md)] 
+[!INCLUDE [prevent-changes-to-favorites-include.md](includes/prevent-changes-to-favorites-include.md)]
 
 ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
 [!INCLUDE [prevent-live-tile-pinning-start-include](includes/prevent-live-tile-pinning-start-include.md)]
 
 ## Prevent the First Run webpage from opening on Microsoft Edge
-[!INCLUDE [prevent-first-run-webpage-open-include.md](includes/prevent-first-run-webpage-open-include.md)] 
+[!INCLUDE [prevent-first-run-webpage-open-include.md](includes/prevent-first-run-webpage-open-include.md)]
 
 ## Prevent turning off required extensions
 [!INCLUDE [prevent-turning-off-required-extensions-include.md](includes/prevent-turning-off-required-extensions-include.md)]
@@ -192,16 +192,16 @@ Some policy settings have additional options you can configure. For example, if 
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](includes/prevent-users-to-turn-on-browser-syncing-include.md)]
 
 ## Prevent using Localhost IP address for WebRTC
-[!INCLUDE [prevent-localhost-address-for-webrtc-include.md](includes/prevent-localhost-address-for-webrtc-include.md)] 
+[!INCLUDE [prevent-localhost-address-for-webrtc-include.md](includes/prevent-localhost-address-for-webrtc-include.md)]
 
 ## Provision Favorites
 [!INCLUDE [provision-favorites-include](includes/provision-favorites-include.md)]
 
 ## Send all intranet sites to Internet Explorer 11
-[!INCLUDE [send-all-intranet-sites-ie-include.md](includes/send-all-intranet-sites-ie-include.md)] 
+[!INCLUDE [send-all-intranet-sites-ie-include.md](includes/send-all-intranet-sites-ie-include.md)]
 
 ## Set default search engine
-[!INCLUDE [set-default-search-engine-include.md](includes/set-default-search-engine-include.md)] 
+[!INCLUDE [set-default-search-engine-include.md](includes/set-default-search-engine-include.md)]
 
 ## Set Home Button URL
 [!INCLUDE [set-home-button-url-include](includes/set-home-button-url-include.md)]

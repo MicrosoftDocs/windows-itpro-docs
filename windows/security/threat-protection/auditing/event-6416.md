@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,33 +38,33 @@ This event generates, for example, when a new external device is connected or en
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>6416</EventID> 
- <Version>1</Version> 
- <Level>0</Level> 
- <Task>13316</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-13T18:20:16.818569900Z" /> 
- <EventRecordID>436</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="308" /> 
- <Channel>Security</Channel> 
- <Computer>DESKTOP-NFC0HVN</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>6416</EventID>
+ <Version>1</Version>
+ <Level>0</Level>
+ <Task>13316</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-13T18:20:16.818569900Z" />
+ <EventRecordID>436</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="308" />
+ <Channel>Security</Channel>
+ <Computer>DESKTOP-NFC0HVN</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DESKTOP-NFC0HVN$</Data> 
- <Data Name="SubjectDomainName">WORKGROUP</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="DeviceId">SCSI\\Disk&Ven\_Seagate&Prod\_Expansion\\000000</Data> 
- <Data Name="DeviceDescription">Seagate Expansion SCSI Disk Device</Data> 
- <Data Name="ClassId">{4D36E967-E325-11CE-BFC1-08002BE10318}</Data> 
- <Data Name="ClassName">DiskDrive</Data> 
- <Data Name="VendorIds">SCSI\\DiskSeagate\_Expansion\_\_\_\_\_\_\_0636 SCSI\\DiskSeagate\_Expansion\_\_\_\_\_\_\_ SCSI\\DiskSeagate\_ SCSI\\Seagate\_Expansion\_\_\_\_\_\_\_0 Seagate\_Expansion\_\_\_\_\_\_\_0 GenDisk</Data> 
- <Data Name="CompatibleIds">SCSI\\Disk SCSI\\RAW</Data> 
- <Data Name="LocationInformation">Bus Number 0, Target Id 0, LUN 0</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DESKTOP-NFC0HVN$</Data>
+ <Data Name="SubjectDomainName">WORKGROUP</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="DeviceId">SCSI\\Disk&Ven\_Seagate&Prod\_Expansion\\000000</Data>
+ <Data Name="DeviceDescription">Seagate Expansion SCSI Disk Device</Data>
+ <Data Name="ClassId">{4D36E967-E325-11CE-BFC1-08002BE10318}</Data>
+ <Data Name="ClassName">DiskDrive</Data>
+ <Data Name="VendorIds">SCSI\\DiskSeagate\_Expansion\_\_\_\_\_\_\_0636 SCSI\\DiskSeagate\_Expansion\_\_\_\_\_\_\_ SCSI\\DiskSeagate\_ SCSI\\Seagate\_Expansion\_\_\_\_\_\_\_0 Seagate\_Expansion\_\_\_\_\_\_\_0 GenDisk</Data>
+ <Data Name="CompatibleIds">SCSI\\Disk SCSI\\RAW</Data>
+ <Data Name="LocationInformation">Bus Number 0, Target Id 0, LUN 0</Data>
  </EventData>
 </Event>
 

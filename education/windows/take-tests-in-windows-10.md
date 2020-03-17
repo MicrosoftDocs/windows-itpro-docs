@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/16/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Take tests in Windows 10
 **Applies to:**
 
--   Windows 10   
+-   Windows 10
 
 
 Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10 creates the right environment for taking a test:
@@ -46,11 +46,11 @@ There are several ways to configure devices for assessments, depending on your u
     There are different methods to configure the assessment URL and a dedicated testing account depending on whether you're setting up Take a Test on a single PC or multiple PCs.
 
   - **For a single PC**
-        
+
       You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
 
   - **For multiple PCs**
-    
+
       You can use any of these methods:
     - Mobile device management (MDM) or Microsoft Endpoint Configuration Manager
     - A provisioning package created in Windows Configuration Designer

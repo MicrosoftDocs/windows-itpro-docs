@@ -2,7 +2,7 @@
 title: General guidance and best practices for Windows Information Protection (WIP) (Windows 10)
 description: Find resources about apps that can work with Windows Information Protection (WIP) to protect data. Enlightened apps can tell corporate and personal data apart.
 ms.assetid: aa94e733-53be-49a7-938d-1660deaf52b0
-ms.reviewer: 
+ms.reviewer:
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -29,7 +29,7 @@ This section includes info about the enlightened Microsoft apps, including how t
 ## In this section
 |Topic |Description |
 |------|------------|
-|[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. | 
+|[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. |
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |Learn the difference between enlightened and unenlightened app behaviors. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |Recommended additions for the Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP). |
 |[Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md) |Options for using Outlook on the web with Windows Information Protection (WIP). |

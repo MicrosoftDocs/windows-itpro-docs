@@ -2,7 +2,7 @@
 title: Advanced security audit policies (Windows 10)
 description: Advanced security audit policy settings may appear to overlap with basic policies, but they are recorded and applied differently. Learn more about them here.
 ms.assetid: 6FE8AC10-F48E-4BBF-979B-43A5DFDC5DFC
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -28,7 +28,7 @@ ms.topic: article
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
 In Microsoft Defender ATP, you can create device groups and use them to:
-- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac.md) 
+- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac.md)
 - Configure different auto-remediation settings for different sets of devices
 - Assign specific remediation levels to apply during automated investigations
 - In an investigation, filter the **Devices list** to just specific device groups by using the **Group** filter.

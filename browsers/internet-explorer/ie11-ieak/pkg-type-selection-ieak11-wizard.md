@@ -5,7 +5,7 @@ description: How to use the Package Type Selection page in the IEAK 11 Customiza
 author: dansimp
 ms.prod: ie11
 ms.assetid: dd91f788-d05e-4f45-9fd5-d951abf04f2c
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -22,7 +22,7 @@ The **Package Type Selection** page of the Internet Explorer Customization Wizar
 
 **To use the File Locations page**
 
-1.  Check the **Full Installation Package** box if you’re going to build your package on, or move your package to, a local area network (LAN). This media package includes the Internet Explorer 11 installation files, and is named **IE11-Setup-Full.exe**, in the `<system_drive>\<destination_folder>\FLAT\<os_version>\<language_code>` folder.<p>-OR-<p> 
+1.  Check the **Full Installation Package** box if you’re going to build your package on, or move your package to, a local area network (LAN). This media package includes the Internet Explorer 11 installation files, and is named **IE11-Setup-Full.exe**, in the `<system_drive>\<destination_folder>\FLAT\<os_version>\<language_code>` folder.<p>-OR-<p>
 
 2.  Check the **Configuration-only package** box if you want to update an existing installation of IE11. This media package is named **IE11- Setup-Branding.exe**, in the `<system_drive>\<destination_folder>\BrndOnly\<os_version>\<language_code>` folder.<p>
 You can distribute this file on any media format or server. It customizes the IE11 features without re-installing IE.<p>
@@ -30,9 +30,9 @@ You can distribute this file on any media format or server. It customizes the IE
 
 3.  Click **Next** to go to the [Feature Selection](feature-selection-ieak11-wizard.md) page or **Back** to go to the [Language Selection](language-selection-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

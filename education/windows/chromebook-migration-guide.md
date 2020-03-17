@@ -2,7 +2,7 @@
 title: Chromebook migration guide (Windows 10)
 description: In this guide you will learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: migrate, automate, device, Chromebook migration
 ms.prod: w10
@@ -40,10 +40,10 @@ App migration or replacement is an essential part of your Chromebook migration. 
 
 Before you can do any analysis or make decisions about which apps to migrate or replace, you need to identify which apps are currently in use on the Chromebook devices. You will create a list of apps that are currently in use (also called an app portfolio).
 
-> [!NOTE]  
+> [!NOTE]
 > The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
- 
+
 
 You can divide the apps into the following categories:
 
@@ -83,7 +83,7 @@ Table 1. Google App replacements
 | Chrome                                     | Microsoft Edge                       |
 | Google Drive                               | Microsoft OneDrive for Business      |
 
- 
+
 
 It may be that you will decide to replace Google Apps after you deploy Windows devices. For more information on making this decision, see the [Select cloud services migration strategy](#select-cs-migrationstrat) section of this guide.
 
@@ -173,7 +173,7 @@ Table 2. Settings in the Device Management node in the Google Admin Console
 </tbody>
 </table>
 
- 
+
 
 Table 3 lists the settings in the Security node in the Google Admin Console. Review the settings and determine which settings you will migrate to Windows.
 
@@ -215,7 +215,7 @@ Table 3. Settings in the Security node in the Google Admin Console
 </tbody>
 </table>
 
- 
+
 
 **Identify locally-configured settings to migrate**
 
@@ -248,7 +248,7 @@ Table 4. Locally-configured settings
 | Powerwash              | This action removes all user accounts and resets the Chromebook device back to factory settings. You don’t have to migrate any settings in this section.                                                                                                                                                                                                                                                                                                                                                                     |
 | Reset settings         | This action retains all user accounts, but restores all settings back to their default values. You don’t have to migrate any settings in this section.                                                                                                                                                                                                                                                                                                                                                                       |
 
- 
+
 
 Determine how many users have similar settings and then consider managing those settings centrally. For example, a large number of users may have many of the same Chrome web browser settings. You can centrally manage these settings in Windows after migration.
 
@@ -483,7 +483,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="plan-userdevapp-manage"></a>
 
@@ -603,7 +603,7 @@ Table 6. Device, user, and app management products and technologies
 </tbody>
 </table>
 
- 
+
 
 You can use Configuration Manager and Intune in conjunction with each other to provide features from both products and technologies. In some instances you may need only one of these products or technologies. In other instances, you may need two or more to meet the device, user, and app management needs for your institution.
 
@@ -694,7 +694,7 @@ Table 7. Network infrastructure products and technologies and deployment resourc
 </tbody>
 </table>
 
- 
+
 
 If you use network infrastructure products and technologies from other vendors, refer to the vendor documentation on how to perform the necessary remediation. If you determined that no remediation is necessary, you can skip this section.
 
@@ -737,7 +737,7 @@ Table 8. AD DS, Azure AD and deployment resources
 </tbody>
 </table>
 
- 
+
 
 If you decided not to migrate to AD DS or Azure AD as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -802,7 +802,7 @@ Table 9. Management systems and deployment resources
 </tbody>
 </table>
 
- 
+
 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -852,7 +852,7 @@ Table 10. Management systems and app deployment resources
 </tbody>
 </table>
 
- 
+
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -958,9 +958,9 @@ After you complete these steps, your management system should take over the day-
 
 [Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)
 
- 
 
- 
+
+
 
 
 

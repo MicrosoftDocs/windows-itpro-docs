@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,26 +42,26 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
- <EventID>1108</EventID> 
- <Version>0</Version> 
- <Level>2</Level> 
- <Task>101</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x4020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-12T20:59:47.431979300Z" /> 
- <EventRecordID>5599</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="972" ThreadID="1320" /> 
- <Channel>Security</Channel> 
- <Computer>WIN-GG82ULGC9GO.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" />
+ <EventID>1108</EventID>
+ <Version>0</Version>
+ <Level>2</Level>
+ <Task>101</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x4020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-12T20:59:47.431979300Z" />
+ <EventRecordID>5599</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="972" ThreadID="1320" />
+ <Channel>Security</Channel>
+ <Computer>WIN-GG82ULGC9GO.contoso.local</Computer>
+ <Security />
  </System>
 - <UserData>
 - <EventProcessingFailure xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog">
- <Error Code="15005" /> 
- <EventID>0</EventID> 
- <PublisherID>Microsoft-Windows-Security-Auditing</PublisherID> 
+ <Error Code="15005" />
+ <EventID>0</EventID>
+ <PublisherID>Microsoft-Windows-Security-Auditing</PublisherID>
  </EventProcessingFailure>
  </UserData>
 </Event>

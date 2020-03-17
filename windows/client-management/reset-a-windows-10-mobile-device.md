@@ -2,7 +2,7 @@
 title: Reset a Windows 10 Mobile device (Windows 10)
 description: There are two methods for resetting a Windows 10 Mobile device factory reset and \ 0034;wipe and persist \ 0034; reset.
 ms.assetid: B42A71F4-DFEE-4D6E-A904-7942D1AAB73F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -44,7 +44,7 @@ To perform a factory reset, restoring the device back to its out-of-box state, u
    <Item>
     <Target><LocURI>./Vendor/MSFT/RemoteWipe/DoWipe</LocURI></Target>
    </Item>
-  </Exec> 
+  </Exec>
   <Final/>
  </SyncBody>
 </SyncML>
@@ -57,10 +57,10 @@ To perform a "wipe and persist" reset, preserving the provisioning applied to th
     <SyncBody>
         <Exec>
             <CmdID>3</CmdID>
-            <Item>                
+            <Item>
                  <Target><LocURI>./Vendor/MSFT/RemoteWipe/DoWipePersistProvisionedData</LocURI></Target>
             </Item>
-        </Exec>        
+        </Exec>
         <Final/>
  </SyncBody>
 </SyncML>
@@ -89,9 +89,9 @@ If your phone is unresponsive and you can't reach **Settings**, you may be able 
 
 3.  When the exclamation mark appears, press the following four buttons in this order: **Volume up**, **Volume down**, **Power**, **Volume down**. Your phone should now reset and restart itself. (It might take a while for the reset to finish.)
 
- 
 
- 
+
+
 
 
 

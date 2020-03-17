@@ -2,7 +2,7 @@
 title: Get product details
 description: The Get product details operation retrieves the product information from the Microsoft Store for Business for a specific application.
 ms.assetid: BC432EBA-CE5E-43BD-BD54-942774767286
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -103,14 +103,14 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
+
 ## Response
 
 ### Response body
 
 The response contains [ProductDetails](data-structures-windows-store-for-business.md#productdetails).
 
- 
+
 
 
 

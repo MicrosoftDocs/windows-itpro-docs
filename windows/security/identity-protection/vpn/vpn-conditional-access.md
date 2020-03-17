@@ -8,7 +8,7 @@ ms.pagetype: security, networking
 author: dulcemontemayor
 ms.author: dansimp
 manager: dansimp
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ms.date: 03/21/2019
 ---
@@ -17,10 +17,10 @@ ms.date: 03/21/2019
 
 >Applies to: Windows 10 and Windows 10 Mobile
 
-The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
+The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.
 
 >[!NOTE]
->Conditional Access is an Azure AD Premium feature. 
+>Conditional Access is an Azure AD Premium feature.
 
 Conditional Access Platform components used for Device Compliance include the following cloud-based services:
 
@@ -30,7 +30,7 @@ Conditional Access Platform components used for Device Compliance include the fo
 
 - [Windows Health Attestation Service](https://technet.microsoft.com/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation) (optional)
 
-- Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA). An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA. 
+- Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA). An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA.
 
 - Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules. If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN. Note that certificate authentication methods such as EAP-TLS can be used. When that certificate expires, the client will again check with Azure AD for health validation before a new certificate is issued.
 
@@ -47,7 +47,7 @@ The following client-side components are also required:
 - [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) DeviceCompliance node settings
 - Trusted Platform Module (TPM)
 
-## VPN device compliance 
+## VPN device compliance
 At this time, the Azure AD certificates issued to users do not contain a CRL Distribution Point (CDP) and are not suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the &lt;SSO&gt; section.
 
 Server-side infrastructure requirements to support VPN device compliance include:
@@ -55,7 +55,7 @@ Server-side infrastructure requirements to support VPN device compliance include
 - The VPN server should be configured for certificate authentication
 - The VPN server should trust the tenant-specific Azure AD CA
 - For client access using Kerberos/NTLM, a domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
-   
+
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
 Two client-side configuration service providers are leveraged for VPN device compliance.
@@ -71,7 +71,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Forwards the data to the Health Attestation Service (HAS)
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
-   
+
 >[!NOTE]
 >Currently, it is required that certificates be issued from an on-premises CA, and that SSO be enabled in the user’s VPN profile. This will enable the user to obtain Kerberos tickets in order to access resources on-premises. Kerberos currently does not support the use of Azure AD certificates.
 
@@ -79,7 +79,7 @@ Two client-side configuration service providers are leveraged for VPN device com
 The VPN client side connection flow works as follows:
 
 ![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
- 
+
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
 1.	 The VPN client calls into Windows 10’s Azure AD Token Broker, identifying itself as a VPN client.
@@ -90,7 +90,7 @@ When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Ena
 
 ## Configure conditional access
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration.
 
 ## Learn more about Conditional Access and Azure AD Health
 

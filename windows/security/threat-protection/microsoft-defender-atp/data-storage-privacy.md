@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -30,7 +30,7 @@ This section covers some of the most frequently asked questions regarding privac
 
 ## What data does Microsoft Defender ATP collect?
 
-Microsoft Defender ATP will collect and store information from your configured devices in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
+Microsoft Defender ATP will collect and store information from your configured devices in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes.
 
 Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and device details (such as device identifiers, names, and the operating system version).
 
@@ -44,9 +44,9 @@ This data enables Microsoft Defender ATP to:
 Microsoft does not use your data for advertising.
 
 ## Data protection and encryption
-The Microsoft Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
+The Microsoft Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure.
 
-There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Microsoft Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Microsoft Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview).
 
 In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 
@@ -57,7 +57,7 @@ Microsoft Defender ATP operates in the Microsoft Azure datacenters in the Europe
 
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
-Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. 
+Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
@@ -91,6 +91,6 @@ Microsoft provides customers with detailed information about Microsoft's securit
 
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 
-For more information on the Microsoft Defender ATP certification reports, see [Microsoft Trust Center](https://servicetrust.microsoft.com/). 
+For more information on the Microsoft Defender ATP certification reports, see [Microsoft Trust Center](https://servicetrust.microsoft.com/).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink)

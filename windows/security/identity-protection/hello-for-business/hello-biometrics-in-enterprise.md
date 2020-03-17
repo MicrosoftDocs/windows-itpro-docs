@@ -2,7 +2,7 @@
 title: Windows Hello biometrics in the enterprise (Windows 10)
 description: Windows Hello uses biometrics to authenticate users and guard against potential spoofing, through fingerprint matching and facial recognition.
 ms.assetid: d3f27d94-2226-4547-86c0-65c84d6df8Bc
-ms.reviewer: 
+ms.reviewer:
 keywords: Windows Hello, enterprise biometrics
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -91,9 +91,9 @@ To allow facial recognition, you must have devices with integrated special infra
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 
- 
 
- 
+
+
 
 
 

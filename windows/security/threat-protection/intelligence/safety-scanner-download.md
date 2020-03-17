@@ -1,6 +1,6 @@
 ---
 title: Microsoft Safety Scanner Download
-ms.reviewer: 
+ms.reviewer:
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ---
@@ -19,7 +19,7 @@ search.appverid: met150
 
 Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
 
-- [Download Microsoft Safety Scanner (32-bit)](https://go.microsoft.com/fwlink/?LinkId=212733) 
+- [Download Microsoft Safety Scanner (32-bit)](https://go.microsoft.com/fwlink/?LinkId=212733)
 
 - [Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)
 

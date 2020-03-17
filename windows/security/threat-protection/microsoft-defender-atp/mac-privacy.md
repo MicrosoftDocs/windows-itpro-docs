@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -59,7 +59,7 @@ When this feature is enabled and the sample that is collected is likely to conta
 
 ## Manage privacy controls with policy settings
 
-If you're an IT administrator, you might want to configure these controls at the enterprise level. 
+If you're an IT administrator, you might want to configure these controls at the enterprise level.
 
 The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
@@ -70,7 +70,7 @@ As with any new policy settings, you should carefully test them out in a limited
 This section describes what is considered required diagnostic data and what is considered optional diagnostic data, along with a description of the events and fields that are collected.
 
 ### Data fields that are common for all events
-There is some information about events that is common to all events, regardless of category or data subtype. 
+There is some information about events that is common to all events, regardless of category or data subtype.
 
 The following fields are considered common for all events:
 

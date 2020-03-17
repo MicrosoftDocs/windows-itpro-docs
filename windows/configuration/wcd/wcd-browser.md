@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -57,7 +57,7 @@ To add a new item under the browser's **Favorites** list:
 
 2. In the **Available customizations** pane, select the friendly name that you just created, and in the text field, enter the URL for the item.
 
-For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL. 
+For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL.
 
 
 ## PartnerSearchCode
@@ -69,7 +69,7 @@ Set the value to a character string that corresponds to the OEM's Partner Search
 
 OEMs who are part of the program only have one PartnerSearchCode and this should be used for all Windows 10 for desktop editions images.
 
- 
+
 
 
 ## SearchProviders
@@ -81,7 +81,7 @@ Microsoft Bing is the default search provider for Windows 10 Mobile. The default
 
 ### Default
 
-Use *Default* to specify a name that matches one of the search providers you enter in [SearchProviderList](#searchproviderlist). If you don't specify a default search provider, this will default to Microsoft Bing. 
+Use *Default* to specify a name that matches one of the search providers you enter in [SearchProviderList](#searchproviderlist). If you don't specify a default search provider, this will default to Microsoft Bing.
 
 #### Specific region guidance
 

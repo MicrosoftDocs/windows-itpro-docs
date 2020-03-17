@@ -1,6 +1,6 @@
 ---
 title: Switch to Windows 10 Pro/Enterprise from S mode
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -19,7 +19,7 @@ ms.topic: article
 
 # Switch to Windows 10 Pro or Enterprise from S mode
 
-We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro, Home, or Enterprise (not in S mode). You can switch devices running Windows 10, version 1709 or later. 
+We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro, Home, or Enterprise (not in S mode). You can switch devices running Windows 10, version 1709 or later.
 
 
 A number of other transformations are possible depending on which version and edition of Windows 10 you are starting with. Depending on the details, you might *switch* between S mode and the ordinary version or *convert* between different editions while staying in or out of S mode. The following quick reference table summarizes all of the switches or conversions that are supported by various means:
@@ -59,7 +59,7 @@ Note these differences affecting switching modes in various releases of Windows 
 -  Windows 10, version 1809, you can switch devices running any S mode edition to the equivalent non-S mode edition one at a time by using the Microsoft Store, **Settings**, or you can switch multiple devices in bulk by using Intune. You can also block users from switching devices themselves.
 
 
-1. Sign into the Microsoft Store using your Microsoft account. 
+1. Sign into the Microsoft Store using your Microsoft account.
 2. Search for "S mode".
 3. In the offer, select **Buy**, **Get**, or **Learn more.**
 

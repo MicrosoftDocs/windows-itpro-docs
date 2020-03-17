@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,24 +36,24 @@ This event generates during system startup if Per-user audit policy is defined o
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4902</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13568</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-01T00:05:25.814466500Z" /> 
- <EventRecordID>1049490</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="556" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4902</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13568</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-01T00:05:25.814466500Z" />
+ <EventRecordID>1049490</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="556" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="PuaCount">1</Data> 
- <Data Name="PuaPolicyId">0x703e</Data> 
+ <Data Name="PuaCount">1</Data>
+ <Data Name="PuaPolicyId">0x703e</Data>
  </EventData>
  </Event>
 

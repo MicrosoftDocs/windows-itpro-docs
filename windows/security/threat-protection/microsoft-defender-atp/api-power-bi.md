@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP APIs connection to Power BI
-ms.reviewer: 
+ms.reviewer:
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -21,7 +21,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
 
@@ -42,7 +42,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 - Copy the below and paste it in the editor:
 
 ```
-	let 
+	let
 		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti'",
 
 		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
@@ -102,7 +102,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ## Connect Power BI to OData APIs
 
-- The only difference from the above example is the query inside the editor. 
+- The only difference from the above example is the query inside the editor.
 
 - Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:
 

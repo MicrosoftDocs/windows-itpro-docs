@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -34,7 +34,7 @@ Select the appropriate form from the dropdown menu.
 
 | Device form | Description |
 | --- | --- |
-| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. | 
+| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. |
 | LargeScreen | Microsoft Surface Hub |
 | HMD | (Head-mounted display) A holographic computer that is completely untethered - no wires, phones, or connection to a PC needed. |
 | IndustryHandheld | A device screen less than 7” diagonal designed for industrial solutions. May or may not have a cellular stack.  |
@@ -63,8 +63,8 @@ Select the appropriate form from the dropdown menu.
 | AIO | An All-in-One (AIO) device is an evolution of the traditional desktop with an attached display. |
 | Stick | A device that turns your TV into a Windows computer. Plug the stick into the HDMI slot on the TV and connect a USB or Bluetooth keyboard or mouse. |
 | Puck | A small-size PC that users can use to plug in a monitor and keyboard. |
- 
 
 
 
- 
+
+

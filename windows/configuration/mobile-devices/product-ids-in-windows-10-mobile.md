@@ -2,7 +2,7 @@
 title: Product IDs in Windows 10 Mobile (Windows 10)
 description: You can use the product ID and Application User Model (AUMID) in Lockdown.xml to specify apps that will be available to the user.
 ms.assetid: 31116BED-C16A-495A-BD44-93218A087A1C
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["lockdown"]
 ms.prod: w10
@@ -233,7 +233,7 @@ The following table lists the product ID and AUMID for each app that is included
 </tbody>
 </table>
 
- 
+
 
 
 
@@ -244,9 +244,9 @@ The following table lists the product ID and AUMID for each app that is included
 
 [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
 
- 
 
- 
+
+
 
 
 

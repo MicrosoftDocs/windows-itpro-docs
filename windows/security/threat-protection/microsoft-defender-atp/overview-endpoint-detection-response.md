@@ -1,8 +1,8 @@
 ---
 title: Overview of endpoint detection and response capabilities
-ms.reviewer: 
+ms.reviewer:
 description: Learn about the endpoint detection and response capabilities in Microsoft Defender ATP
-keywords: 
+keywords:
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -14,7 +14,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 

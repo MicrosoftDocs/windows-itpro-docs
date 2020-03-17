@@ -2,7 +2,7 @@
 title: Deny log on as a service (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a service security policy setting.
 ms.assetid: f1114964-df86-4278-9b11-e35c66949794
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined | 
-| Domain Controller Effective Default Settings | Not defined | 
-| Member Server Effective Default Settings | Not defined | 
-| Client Computer Effective Default Settings | Not defined | 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined |
+| Domain Controller Effective Default Settings | Not defined |
+| Member Server Effective Default Settings | Not defined |
+| Client Computer Effective Default Settings | Not defined |
+
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.
@@ -88,7 +88,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Accounts that can log on to a service application could be used to configure and start new unauthorized services, such as a keylogger or other malware. The benefit of the specified countermeasure is somewhat reduced by the fact that only users with administrative rights can install and configure 
+Accounts that can log on to a service application could be used to configure and start new unauthorized services, such as a keylogger or other malware. The benefit of the specified countermeasure is somewhat reduced by the fact that only users with administrative rights can install and configure
 services, and an attacker who has already attained that level of access could configure the service to run by using the System account.
 
 ### Countermeasure

@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.reviewer: 
+ms.reviewer:
 author: greg-lindsay
 manager: laurawi
 ms.author: greglin
@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1803
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709. 
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709.
 
 >If you are not an IT Pro, see the following topics for information about what's new in Windows 10, version 1803 in [hardware](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows), for [developers](https://docs.microsoft.com/windows/uwp/whats-new/windows-10-build-17134), and for [consumers](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update).
 
@@ -30,9 +30,9 @@ The following 3-minute video summarizes some of the new features that are availa
 
 ### Windows Autopilot
 
-[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) provides a modern device lifecycle management service powered by the cloud that delivers a zero touch experience for deploying Windows 10. 
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) provides a modern device lifecycle management service powered by the cloud that delivers a zero touch experience for deploying Windows 10.
 
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
+Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly.
 
 Windows Autopilot is now available with Surface, Lenovo, and Dell. Other OEM partners such as HP, Toshiba, Panasonic, and Fujitsu will support Autopilot in coming months. Check back here later for more information.
 
@@ -41,11 +41,11 @@ Windows Autopilot is now available with Surface, Lenovo, and Dell. Other OEM par
 Windows 10 in S mode is now available on both Windows 10 Home and Pro PCs, and commercial customers will be able to deploy Windows 10 Enterprise in S mode - by starting with Windows 10 Pro in S mode and then activating Windows 10 Enterprise on the computer.
 
 Some additional information about Windows 10 in S mode:
- 
-- Microsoft-verified. All of your applications are verified by Microsoft for security and performance. 
-- Performance that lasts. Start-ups are quick, and S mode is built to keep them that way. 
+
+- Microsoft-verified. All of your applications are verified by Microsoft for security and performance.
+- Performance that lasts. Start-ups are quick, and S mode is built to keep them that way.
 - Choice and flexibility. Save your files to your favorite cloud, like OneDrive or DropBox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps.
-- S mode, on a range of modern devices. Enjoy all the great Windows multi-tasking features, like snapping Windows, task view and virtual desktops on a range of S mode enabled devices. 
+- S mode, on a range of modern devices. Enjoy all the great Windows multi-tasking features, like snapping Windows, task view and virtual desktops on a range of S mode enabled devices.
 
 If you want to switch out of S mode, you will be able to do so at no charge, regardless of edition. Once you switch out of S mode, you cannot switch back.
 
@@ -64,13 +64,13 @@ With this release you can easily deploy and manage kiosk devices with Microsoft 
 - For multi-user Firstline Worker kiosk devices, instead of specifying every user, it’s now possible to assign different assigned access configurations to Azure AD groups or Active Directory groups.
 - To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
-For more information, see: 
+For more information, see:
 - [Making IT simpler with a modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
 - [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
 
 ### Windows 10 Subscription Activation
 
-With this release, Subscription Activation supports Inherited Activation. Inherited Activation allows Windows 10 virtual machines to inherit activation state from their Windows 10 host. 
+With this release, Subscription Activation supports Inherited Activation. Inherited Activation allows Windows 10 virtual machines to inherit activation state from their Windows 10 host.
 
 For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation#inherited-activation).
 
@@ -78,13 +78,13 @@ For more information, see [Windows 10 Subscription Activation](https://docs.micr
 
 The following new DISM commands have been added to manage feature updates:
 
-    DISM /Online /Initiate-OSUninstall 
+    DISM /Online /Initiate-OSUninstall
         – Initiates a OS uninstall to take the computer back to the previous installation of windows.
-    DISM /Online /Remove-OSUninstall 
-        – Removes the OS uninstall capability from the computer. 
-    DISM /Online /Get-OSUninstallWindow 
+    DISM /Online /Remove-OSUninstall
+        – Removes the OS uninstall capability from the computer.
+    DISM /Online /Get-OSUninstallWindow
         – Displays the number of days after upgrade during which uninstall can be performed.
-    DISM /Online /Set-OSUninstallWindow 
+    DISM /Online /Set-OSUninstallWindow
         – Sets the number of days after upgrade during which uninstall can be performed.
 
 For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
@@ -93,7 +93,7 @@ For more information, see [DISM operating system uninstall command-line options]
 
 You can now run your own custom actions or scripts in parallel with Windows Setup. Setup will also migrate your scripts to next feature release, so you only need to add them once.
 
-Prerequisites:  
+Prerequisites:
 - Windows 10, version 1803 or later.
 - Windows 10 Enterprise or Pro
 
@@ -107,11 +107,11 @@ For more information, see [Windows Setup Command-Line Options](https://docs.micr
 
 New command-line switches are also available to control BitLocker:
 
-    Setup.exe /BitLocker AlwaysSuspend 
+    Setup.exe /BitLocker AlwaysSuspend
         – Always suspend bitlocker during upgrade.
-    Setup.exe /BitLocker TryKeepActive 
+    Setup.exe /BitLocker TryKeepActive
         – Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
-    Setup.exe /BitLocker ForceKeepActive 
+    Setup.exe /BitLocker ForceKeepActive
         – Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
@@ -120,7 +120,7 @@ For more information, see [Windows Setup Command-Line Options](https://docs.micr
 
 [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a new command-line tool that can help diagnose why a Windows 10 update failed.
 
-SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.
 
 ### Windows Update for Business (WUfB)
 
@@ -144,7 +144,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 ### Windows Hello for Business
 
-[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section. 
+[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section.
 
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
@@ -152,7 +152,7 @@ The OS uninstall period is a length of time that users are given when they can o
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 - New [public API](https://docs.microsoft.com/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
 - It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
- 
+
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
 ## Accessibility and Privacy
@@ -163,13 +163,13 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 ### Privacy
 
-In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview) app. 
+In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview) app.
 
 ## Security
 
 ### Security Baselines
 
-The new [security baseline for Windows 10 version 1803](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) has been published. 
+The new [security baseline for Windows 10 version 1803](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) has been published.
 
 ### Microsoft Defender Antivirus
 
@@ -230,7 +230,7 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 
 ## See Also
 
-- [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
+- [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.
 - [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
 - [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.
 - [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: asr
 ---

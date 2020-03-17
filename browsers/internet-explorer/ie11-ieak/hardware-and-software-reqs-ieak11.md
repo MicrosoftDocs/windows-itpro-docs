@@ -5,7 +5,7 @@ description: List of supported hardware and software requirements for Internet E
 author: dansimp
 ms.prod: ie11
 ms.assetid: c50b86dc-7184-43d1-8daf-e750eb88dabb
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,9 +43,9 @@ The device you're going to use to build your install packages must be running In
 **Important**<br>
 The device you're going to use to run IEAK 11 must be running the same version of the operating system as the device where you'll build your install packages.
 
- 
 
- 
+
+
 
 
 

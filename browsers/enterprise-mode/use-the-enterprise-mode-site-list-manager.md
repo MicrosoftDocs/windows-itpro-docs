@@ -6,7 +6,7 @@ description: Use the topics in this section to learn about how to use the Enterp
 author: dansimp
 ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
@@ -56,9 +56,9 @@ The following topics give you more information about the things that you can do 
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
 - [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
- 
 
- 
+
+
 
 
 

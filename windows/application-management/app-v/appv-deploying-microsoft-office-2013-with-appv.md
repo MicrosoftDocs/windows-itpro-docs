@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -179,7 +179,7 @@ After you download the Office 2013 applications through the Office Deployment To
        </Configuration>
        ```
        In this example, the following changes were made to create a package with Subscription licensing:
-        
+
      * **SourcePath** is the path, which was changed to point to the Office applications that were downloaded earlier.
      * **Product ID** for Office was changed to `O365ProPlusRetail`.
      * **Product ID** for Visio was changed to `VisioProRetail`.
@@ -197,15 +197,15 @@ After you download the Office 2013 applications through the Office Deployment To
        </Configuration>
        ```
        In this example, the following changes were made to create a package with Volume licensing:
-        
+
      * **SourcePath** is the source's path, which was changed to point to the Office applications that were downloaded earlier.
      * **Product ID** for Office was changed to `ProPlusVolume`.
      * **Product ID** for Visio was changed to `VisioProVolume`.
    * **ExcludeApp** (optional) lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.
    * **PACKAGEGUID** (optional)—By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
-        
+
        An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.
-        
+
       > [!NOTE]
        >Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
 2. Use the **/packager** command to convert the Office applications to an Office 2013 App-V package.
@@ -230,7 +230,7 @@ After you download the Office 2013 applications through the Office Deployment To
 
    * **App-V Packages**, which contains an Office 2013 App-V package and two deployment configuration files.<br>
    * **WorkingDir**
-    
+
     > [!NOTE]
      >To troubleshoot any issues, see the log files in the %temp% directory (default).
 3. Verify that the Office 2013 App-V package works correctly:
@@ -349,7 +349,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
 2. To disable certain shortcuts, delete or comment out the specific shortcuts you don’t want. You must keep the subsystem present and enabled. For example, in the example below, delete the Microsoft Access shortcuts, while keeping the subsystems &lt;shortcut&gt; &lt;/shortcut&gt; intact to disable the Microsoft Access shortcut.
 
     ```XML
-    Shortcuts 
+    Shortcuts
 
     -->
      <Shortcuts Enabled="true">

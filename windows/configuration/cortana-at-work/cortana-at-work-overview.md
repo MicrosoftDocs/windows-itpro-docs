@@ -1,6 +1,6 @@
 ---
 title: Configure Cortana in Windows 10
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
 ms.prod: w10

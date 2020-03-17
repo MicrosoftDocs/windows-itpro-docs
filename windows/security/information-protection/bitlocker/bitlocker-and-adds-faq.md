@@ -1,8 +1,8 @@
 ---
 title: BitLocker and Active Directory Domain Services (AD DS) FAQ (Windows 10)
-description: Learn more about how BitLocker and Active Directory Domain Services (AD DS) can work together to keep devices secure. 
+description: Learn more about how BitLocker and Active Directory Domain Services (AD DS) can work together to keep devices secure.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -29,7 +29,7 @@ Stored information | Description
 -------------------|------------
 Hash of the TPM owner password | Beginning with Windows 10, the password hash is not stored in AD DS by default. The password hash can be stored only if the TPM is owned and the ownership was taken by using components of Windows 8.1 or earlier, such as the BitLocker Setup Wizard or the TPM snap-in.
 BitLocker recovery password | The recovery password allows you to unlock and access the drive in the event of a recovery incident. Domain administrators can view the BitLocker recovery password by using the BitLocker Recovery Password Viewer. For more information about this tool, see [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md).
-BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, Repair-bde. 
+BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, Repair-bde.
 
 ## What if BitLocker is enabled on a computer before the computer has joined the domain?
 
@@ -49,7 +49,7 @@ BackupToAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $
 
 > [!IMPORTANT]
 > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled in Group Policy).
- 
+
 ## Is there an event log entry recorded on the client computer to indicate the success or failure of the Active Directory backup?
 
 Yes, an event log entry that indicates the success or failure of an Active Directory backup is recorded on the client computer. However, even if an event log entry says "Success," the information could have been subsequently removed from AD DS, or BitLocker could have been reconfigured in such a way that the Active Directory information can no longer unlock the drive (such as by removing the recovery password key protector). In addition, it is also possible that the log entry could be spoofed.

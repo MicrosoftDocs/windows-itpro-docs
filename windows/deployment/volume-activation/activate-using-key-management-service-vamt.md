@@ -59,12 +59,12 @@ For more information, see the information for Windows 7 in [Deploy KMS Activati
 ## Key Management Service in Windows Server 2012 R2
 Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
 
-**Note**  
+**Note**
 You cannot install a client KMS key into the KMS in Windows Server.
 
 This scenario is commonly used in larger organizations that do not find the overhead of using a server a burden.
 
-**Note**  
+**Note**
 
 If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](https://go.microsoft.com/fwlink/p/?LinkId=620687).
 

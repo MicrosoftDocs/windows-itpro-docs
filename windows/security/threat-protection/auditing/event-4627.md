@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,34 +40,34 @@ Multiple events are generated if the group membership information cannot fit in 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4627</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12554</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-12T03:51:25.843673000Z" /> 
- <EventRecordID>3081</EventRecordID> 
- <Correlation ActivityID="{913FBE70-1CE6-0000-67BF-3F91E61CD101}" /> 
- <Execution ProcessID="736" ThreadID="808" /> 
- <Channel>Security</Channel> 
- <Computer>WIN-GG82ULGC9GO.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4627</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12554</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-12T03:51:25.843673000Z" />
+ <EventRecordID>3081</EventRecordID>
+ <Correlation ActivityID="{913FBE70-1CE6-0000-67BF-3F91E61CD101}" />
+ <Execution ProcessID="736" ThreadID="808" />
+ <Channel>Security</Channel>
+ <Computer>WIN-GG82ULGC9GO.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-0-0</Data> 
- <Data Name="SubjectUserName">-</Data> 
- <Data Name="SubjectDomainName">-</Data> 
- <Data Name="SubjectLogonId">0x0</Data> 
- <Data Name="TargetUserSid">S-1-5-21-1377283216-344919071-3415362939-1104</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x569860</Data> 
- <Data Name="LogonType">3</Data> 
- <Data Name="EventIdx">1</Data> 
- <Data Name="EventCountTotal">1</Data> 
- <Data Name="GroupMembership">%{S-1-5-21-1377283216-344919071-3415362939-513} %{S-1-1-0} %{S-1-5-32-544} %{S-1-5-32-545} %{S-1-5-32-554} %{S-1-5-2} %{S-1-5-11} %{S-1-5-15} %{S-1-5-21-1377283216-344919071-3415362939-512} %{S-1-5-21-1377283216-344919071-3415362939-572} %{S-1-5-64-10} %{S-1-16-12288}</Data> 
+ <Data Name="SubjectUserSid">S-1-0-0</Data>
+ <Data Name="SubjectUserName">-</Data>
+ <Data Name="SubjectDomainName">-</Data>
+ <Data Name="SubjectLogonId">0x0</Data>
+ <Data Name="TargetUserSid">S-1-5-21-1377283216-344919071-3415362939-1104</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x569860</Data>
+ <Data Name="LogonType">3</Data>
+ <Data Name="EventIdx">1</Data>
+ <Data Name="EventCountTotal">1</Data>
+ <Data Name="GroupMembership">%{S-1-5-21-1377283216-344919071-3415362939-513} %{S-1-1-0} %{S-1-5-32-544} %{S-1-5-32-545} %{S-1-5-32-554} %{S-1-5-2} %{S-1-5-11} %{S-1-5-15} %{S-1-5-21-1377283216-344919071-3415362939-512} %{S-1-5-21-1377283216-344919071-3415362939-572} %{S-1-5-64-10} %{S-1-16-12288}</Data>
  </EventData>
 </Event>
 

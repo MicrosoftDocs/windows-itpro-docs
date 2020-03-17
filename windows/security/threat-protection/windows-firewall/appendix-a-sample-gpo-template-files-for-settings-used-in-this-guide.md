@@ -2,7 +2,7 @@
 title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows 10)
 description: Appendix A Sample GPO Template Files for Settings Used in this Guide
 ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

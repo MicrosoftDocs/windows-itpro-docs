@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## DeviceGuard policies  
+## DeviceGuard policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
+<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**
 
 <!--SupportedSKUs-->
 <table>
@@ -94,7 +94,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *SystemGuardDrop*
@@ -116,7 +116,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
+<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**
 
 <!--SupportedSKUs-->
 <table>
@@ -163,7 +163,7 @@ Added in Windows 10, version 1709. Turns on virtualization based security(VBS) a
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP path: *System/Device Guard*
@@ -182,7 +182,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
+<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**
 
 <!--SupportedSKUs-->
 <table>
@@ -229,7 +229,7 @@ Added in Windows 10, version 1709. This setting lets users turn on Credential Gu
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *CredentialIsolationDrop*
@@ -250,7 +250,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
+<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**
 
 <!--SupportedSKUs-->
 <table>
@@ -297,7 +297,7 @@ Added in Windows 10, version 1709. Specifies the platform security level at the 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *RequirePlatformSecurityFeaturesDrop*

@@ -2,7 +2,7 @@
 title: Understanding and Using Compatibility Fixes (Windows 10)
 description: As the Windows operating system evolves to support new technology and functionality, the implementations of some functions may change.
 ms.assetid: 84bf663d-3e0b-4168-99d6-a26e054821b7
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -42,7 +42,7 @@ Specifically, the process modifies the address of the affected Windows function 
 >[!NOTE]
 >For statically linked DLLs, the code redirection occurs as the application loads. You can also fix dynamically linked DLLs by hooking into the GetProcAddress API.
 
- 
+
 
 ## Design Implications of the Compatibility Fix Infrastructure
 

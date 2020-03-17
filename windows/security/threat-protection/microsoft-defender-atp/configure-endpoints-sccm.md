@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ---
@@ -45,11 +45,11 @@ You can use existing Configuration Manager functionality to create a policy to c
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
-    
+
     b. Select Windows 10 as the operating system.
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
+
     d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
@@ -66,7 +66,7 @@ You can use existing Configuration Manager functionality to create a policy to c
 >
 > Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
-> 
+>
 > This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
 > This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 For more information, see [Configure Detection Methods in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
@@ -117,7 +117,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
     b. Select Windows 10 as the operating system.
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
+
     d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.

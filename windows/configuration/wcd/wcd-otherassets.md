@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -25,6 +25,6 @@ Use to configure settings for Map data.
 
 Use **MapData** to specify the source directory location of the map region you want to include.
 
-For example, if C:\Path\Maps\Europe contains the downloaded map data that you want to preload, set the value to that directory. 
+For example, if C:\Path\Maps\Europe contains the downloaded map data that you want to preload, set the value to that directory.
 
 To add additional maps, add a new MapData setting and set the source to the directory location of the map region you want to include.

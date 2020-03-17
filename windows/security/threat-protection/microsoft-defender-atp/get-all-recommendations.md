@@ -1,7 +1,7 @@
 ---
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
-keywords: apis, graph api, supported apis, get, security recommendations, mdatp tvm api, threat and vulnerability management, threat and vulnerability management api 
+keywords: apis, graph api, supported apis, get, security recommendations, mdatp tvm api, threat and vulnerability management, threat and vulnerability management api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 

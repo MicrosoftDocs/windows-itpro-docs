@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -37,7 +37,7 @@ The following topics may also be useful in these situations:
 
 ## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
-You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
+You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection.
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
@@ -73,7 +73,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 ## Prevent Security intelligence updates when running on battery power
 
-You can configure Microsoft Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
+You can configure Microsoft Defender Antivirus to only download protection updates when the PC is connected to a wired power source.
 
 ### Use Group Policy to prevent security intelligence updates on battery power
 
@@ -85,7 +85,7 @@ You can configure Microsoft Defender Antivirus to only download protection updat
 
 5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following setting:
 
-    1. Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**. 
+    1. Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**.
     2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
 
 

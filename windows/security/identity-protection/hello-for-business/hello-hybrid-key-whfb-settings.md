@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Configure Hybrid Windows Hello for Business key trust settings
 
@@ -23,13 +23,13 @@ ms.reviewer:
 -   Hybrid deployment
 -   Key trust
 
- 
-You are ready to configure your hybrid key trust environment for Windows Hello for Business.
-  
-> [!IMPORTANT]
-> Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
 
-The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
+You are ready to configure your hybrid key trust environment for Windows Hello for Business.
+
+> [!IMPORTANT]
+> Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.
+
+The configuration for Windows Hello for Business is grouped in four categories.  These categories are:
 * [Active Directory](hello-hybrid-key-whfb-settings-ad.md)
 * [Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
 * [Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)

@@ -2,7 +2,7 @@
 title: Get localized product details
 description: The Get localized product details operation retrieves the localization information of a product from the Micosoft Store for Business.
 ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -108,13 +108,13 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
+
 
 ## Response
 
 The response contains [LocalizedProductDetail](data-structures-windows-store-for-business.md#localizedproductdetail).
 
- 
+
 
 
 

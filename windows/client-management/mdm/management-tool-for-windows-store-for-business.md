@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
 - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
 ms.assetid: 0E39AE85-1703-4B24-9A7F-831C6455068F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -53,7 +53,7 @@ The Store for Business provides services that enable a management tool to synchr
 </tbody>
 </table>
 
- 
+
 
 ### Offline-licensed application distribution
 
@@ -81,7 +81,7 @@ For code samples, see [Microsoft Azure Active Directory Samples and Documentatio
 
 ## Configure your Azure AD application
 
-See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) for the steps to configure your Azure AD app. 
+See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) for the steps to configure your Azure AD app.
 
 ## Azure AD Authentication for MTS
 
@@ -122,7 +122,7 @@ The diagram below shows the call patterns for acquiring a new or updated applica
 -   [Bulk assign and reclaim seats for users](bulk-assign-and-reclaim-seats-from-user.md)
 -   [Get seats assigned to a user](get-seats-assigned-to-a-user.md)
 
- 
+
 
 
 

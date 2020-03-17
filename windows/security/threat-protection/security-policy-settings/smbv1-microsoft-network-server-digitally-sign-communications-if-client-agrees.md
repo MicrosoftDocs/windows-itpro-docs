@@ -2,7 +2,7 @@
 title: SMBv1 Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
 description: Best practices, security considerations and more for the security policy setting, Microsoft network server Digitally sign communications (if client agrees).
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -22,13 +22,13 @@ ms.date: 01/04/2019
 **Applies to**
 -   Windows 10
 
-This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
+This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows).
 
 The rest of this topic describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (if client agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-always.md).
 
 ## Reference
 
-The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. 
+The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets.
 This policy setting determines whether SMB packet signing must be negotiated before further communication with the Server service is permitted.
 
 Implementation of digital signatures in high-security networks helps to prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data loss or problems with data access or security.

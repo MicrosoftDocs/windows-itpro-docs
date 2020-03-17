@@ -43,7 +43,7 @@
 ### [Understanding Application Control events](event-id-explanations.md)
 ### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
 
-## [AppLocker](applocker\applocker-overview.md) 
+## [AppLocker](applocker\applocker-overview.md)
 ### [Administer AppLocker](applocker\administer-applocker.md)
 #### [Maintain AppLocker policies](applocker\maintain-applocker-policies.md)
 #### [Edit an AppLocker policy](applocker\edit-an-applocker-policy.md)

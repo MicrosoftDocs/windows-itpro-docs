@@ -2,13 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
-description: 
+description:
 author: dansimp
 ms.author: dansimp
 ms.manager: dansimp
 ms.prod: ie11
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Internet Explorer 11 delivery through automatic updates

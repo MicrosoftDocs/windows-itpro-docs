@@ -2,7 +2,7 @@
 title: Microsoft network client Digitally sign communications (always) (Windows 10)
 description: Best practices and security considerations for the  Microsoft network client Digitally sign communications (always) security policy setting.
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -63,12 +63,12 @@ The following table lists the default values for this policy. Default values are
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Disabled| 
-| Default Domain Controller Policy | Disabled| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
+| Default Domain Policy| Disabled|
+| Default Domain Controller Policy | Disabled|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
 
 ## Policy management
 

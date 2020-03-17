@@ -13,7 +13,7 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.date: 04/30/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: asr
 
@@ -29,7 +29,7 @@ Network protection helps reduce the attack surface of your devices from Internet
 
 Network protection expands the scope of [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection is supported beginning with Windows 10, version 1709. 
+Network protection is supported beginning with Windows 10, version 1709.
 
 For more details about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 

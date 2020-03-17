@@ -2,7 +2,7 @@
 title: Identify File Types, Files, and Folders (Windows 10)
 description: Identify File Types, Files, and Folders
 ms.assetid: 93bb2a33-c126-4f7a-a961-6c89686d54e0
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -42,9 +42,9 @@ For more information about how to change the file types, files, and folders that
 
 [Determine What to Migrate](usmt-determine-what-to-migrate.md)
 
- 
 
- 
+
+
 
 
 

@@ -6,7 +6,7 @@ description: Instructions about how to remove sites from a local Enterprise Mode
 author: dansimp
 ms.prod: ie11
 ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -49,11 +49,11 @@ The checkmark disappears from next to Enterprise Mode and the site is removed fr
 
 **Note**<br>This removes all of the sites from a local Enterprise Mode site list.
 
-     
 
- 
 
- 
+
+
+
 
 
 

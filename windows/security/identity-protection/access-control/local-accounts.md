@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 02/28/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Local Accounts
@@ -23,7 +23,7 @@ ms.reviewer:
 -   Windows Server 2019
 -   Windows Server 2016
 
-This reference topic for IT professionals describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. 
+This reference topic for IT professionals describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server.
 
 ## <a href="" id="about-local-user-accounts-"></a>About local user accounts
 
@@ -57,7 +57,7 @@ For information about security principals, see [Security Principals](security-pr
 
 ## <a href="" id="sec-default-accounts"></a>Default local user accounts
 
-The default local user accounts are built-in accounts that are created automatically when you install Windows. 
+The default local user accounts are built-in accounts that are created automatically when you install Windows.
 
 After Windows is installed, the default local user accounts cannot be removed or deleted. In addition, default local user accounts do not provide access to network resources.
 
@@ -73,7 +73,7 @@ The Administrator account has full control of the files, directories, services, 
 
 The default Administrator account cannot be deleted or locked out, but it can be renamed or disabled.
 
-In Windows 10 and Windows Server 2016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
+In Windows 10 and Windows Server 2016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.
 
 **Account group membership**
 
@@ -93,15 +93,15 @@ In comparison, on the Windows client operating system, a user with a local user 
 
 In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
 
-**Note**  
+**Note**
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
 
- 
 
-**Important**  
+
+**Important**
 Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled.
 
- 
+
 
 ### <a href="" id="sec-guest"></a>Guest account
 
@@ -188,32 +188,32 @@ For details about the HelpAssistant account attributes, see the following table.
 
 ### DefaultAccount
 
-The DefaultAccount, also known as the Default System Managed Account (DSMA), is a built-in account introduced in Windows 10 version 1607 and Windows Server 2016. 
-The DSMA is a well-known user account type. 
-It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
-The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
+The DefaultAccount, also known as the Default System Managed Account (DSMA), is a built-in account introduced in Windows 10 version 1607 and Windows Server 2016.
+The DSMA is a well-known user account type.
+It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic.
+The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop.
 
-The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-\<ComputerIdentifier>-503 
+The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-\<ComputerIdentifier>-503
 
-The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
+The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581.
 
 The DSMA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
 
 #### How Windows uses the DefaultAccount
-From a permission perspective, the DefaultAccount is a standard user account. 
-The DefaultAccount is needed to run multi-user-manifested-apps (MUMA apps). 
-MUMA apps run all the time and react to users signing in and signing out of the devices. 
-Unlike Windows Desktop where apps run in context of the user and get terminated when the user signs off, MUMA apps run by using the DSMA. 
+From a permission perspective, the DefaultAccount is a standard user account.
+The DefaultAccount is needed to run multi-user-manifested-apps (MUMA apps).
+MUMA apps run all the time and react to users signing in and signing out of the devices.
+Unlike Windows Desktop where apps run in context of the user and get terminated when the user signs off, MUMA apps run by using the DSMA.
 
-MUMA apps are functional in shared session SKUs such as Xbox. For example, Xbox shell is a MUMA app. 
-Today, Xbox automatically signs in as Guest account and all apps run in this context. 
-All the apps are multi-user-aware and respond to events fired by user manager. 
+MUMA apps are functional in shared session SKUs such as Xbox. For example, Xbox shell is a MUMA app.
+Today, Xbox automatically signs in as Guest account and all apps run in this context.
+All the apps are multi-user-aware and respond to events fired by user manager.
 The apps run as the Guest account.
 
-Similarly, Phone auto logs in as a “DefApps” account which is akin to the standard user account in Windows but with a few extra privileges. Brokers, some services and apps run as this account. 
+Similarly, Phone auto logs in as a “DefApps” account which is akin to the standard user account in Windows but with a few extra privileges. Brokers, some services and apps run as this account.
 
-In the converged user model, the multi-user-aware apps and multi-user-aware brokers will need to run in a context different from that of the users. 
-For this purpose, the system creates DSMA. 
+In the converged user model, the multi-user-aware apps and multi-user-aware brokers will need to run in a context different from that of the users.
+For this purpose, the system creates DSMA.
 
 #### How the DefaultAccount gets created on domain controllers
 
@@ -227,14 +227,14 @@ Microsoft does not recommend changing the default configuration, where the accou
 ## <a href="" id="sec-localsystem"></a>Default local system accounts
 
 ### SYSTEM
-The SYSTEM account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The SYSTEM account was designed for that purpose, and Windows manages the SYSTEM account’s user rights. It is an internal account that does not show up in User Manager, and it cannot be added to any groups. 
+The SYSTEM account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The SYSTEM account was designed for that purpose, and Windows manages the SYSTEM account’s user rights. It is an internal account that does not show up in User Manager, and it cannot be added to any groups.
 
 On the other hand, the SYSTEM account does appear on an NTFS file system volume in File Manager in the **Permissions** portion of the **Security** menu. By default, the SYSTEM account is granted Full Control permissions to all files on an NTFS volume. Here the SYSTEM account has the same functional rights and permissions as the Administrator account.
 
-**Note**  
+**Note**
 To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
 
-### NETWORK SERVICE 
+### NETWORK SERVICE
 The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](https://docs.microsoft.com/windows/desktop/services/networkservice-account).
 
 ### LOCAL SERVICE
@@ -249,7 +249,7 @@ You can use Local Users and Groups to assign rights and permissions on the local
 
 You cannot use Local Users and Groups on a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
 
-**Note**  
+**Note**
 You use Active Directory Users and Computers to manage users and groups in Active Directory.
 
 You can also manage local users by using NET.EXE USER and manage local groups by using NET.EXE LOCALGROUP, or by using a variety of PowerShell cmdlets and other scripting technologies.
@@ -270,10 +270,10 @@ The other approaches that can be used to restrict and protect user accounts with
 
 Each of these approaches is described in the following sections.
 
-**Note**  
+**Note**
 These approaches do not apply if all administrative local accounts are disabled.
 
- 
+
 
 ### <a href="" id="sec-enforce-account-restrictions"></a>Enforce local account restrictions for remote access
 
@@ -356,8 +356,8 @@ The following table shows the Group Policy and registry settings that are used t
 
 
 >[!NOTE]
->You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
- 
+>You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates.
+
 
 **To enforce local account restrictions for remote access**
 
@@ -429,10 +429,10 @@ The following table shows the Group Policy and registry settings that are used t
 
 Denying local accounts the ability to perform network logons can help prevent a local account password hash from being reused in a malicious attack. This procedure helps to prevent lateral movement by ensuring that the credentials for local accounts that are stolen from a compromised operating system cannot be used to compromise additional computers that use the same credentials.
 
-**Note**  
+**Note**
 In order to perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
 
- 
+
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
@@ -483,7 +483,7 @@ The following table shows the Group Policy settings that are used to deny networ
 </tbody>
 </table>
 
- 
+
 
 **To deny network logon to all local administrator accounts**
 
@@ -507,7 +507,7 @@ The following table shows the Group Policy settings that are used to deny networ
 
     2.  Double-click **Deny access to this computer from the network**.
 
-    3.  Click **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**. 
+    3.  Click **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**.
 
 7.  Configure the user rights to deny Remote Desktop (Remote Interactive) logons for administrative local accounts as follows:
 
@@ -515,7 +515,7 @@ The following table shows the Group Policy settings that are used to deny networ
 
     2.  Double-click **Deny log on through Remote Desktop Services**.
 
-    3.  Click **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**. 
+    3.  Click **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**.
 
 8.  Link the GPO to the first **Workstations** OU as follows:
 
@@ -531,7 +531,7 @@ The following table shows the Group Policy settings that are used to deny networ
 
 11. Create links to all other OUs that contain servers.
 
-    **Note**  
+    **Note**
     You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
 
 

@@ -56,9 +56,9 @@ A system crash (also known as a “bug check” or a "Stop error") occurs when t
 
 \* 1 MB of header data and device drivers can total 256 MB of secondary crash dump data.
 
-The **Automatic memory dump** setting is enabled by default. This is a setting instead of a kind of crash dump. This setting automatically selects the best page file size, depending on the frequency of system crashes. 
+The **Automatic memory dump** setting is enabled by default. This is a setting instead of a kind of crash dump. This setting automatically selects the best page file size, depending on the frequency of system crashes.
 
-The Automatic memory dump feature initially selects a small paging file size. It would accommodate the kernel memory most of the time. If the system crashes again within four weeks, the Automatic memory dump feature sets the page file size as either the RAM size or 32 GB, whichever is smaller. 
+The Automatic memory dump feature initially selects a small paging file size. It would accommodate the kernel memory most of the time. If the system crashes again within four weeks, the Automatic memory dump feature sets the page file size as either the RAM size or 32 GB, whichever is smaller.
 
 Kernel memory crash dumps require enough page file space or dedicated dump file space to accommodate the kernel mode side of virtual memory usage. If the system crashes again within four weeks of the previous crash, a Complete memory dump is selected at restart. This requires a page file or dedicated dump file of at least the size of physical memory (RAM) plus 1 MB for header information plus 256 MB for potential driver data to support all the potential data that is dumped from memory. Again, the system-managed page file will be increased to back this kind of crash dump. If the system is configured to have a page file or a dedicated dump file of a specific size, make sure that the size is sufficient to back the crash dump setting that is listed in the table earlier in this section together with and the peak system commit charge.
 

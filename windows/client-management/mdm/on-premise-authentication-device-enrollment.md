@@ -2,7 +2,7 @@
 title: On-premises authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using on-premises authentication policy.
 ms.assetid: 626AC8B4-7575-4C41-8D59-185D607E3A47
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -312,11 +312,11 @@ The RST may also specify a number of AdditionalContext items, such as DeviceType
 The following example shows the enrollment web service request for OnPremise authentication.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
+    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+       xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
        xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" 
+       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
        xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
        <s:Header>
           <a:Action s:mustUnderstand="1">
@@ -345,8 +345,8 @@ The following example shows the enrollment web service request for OnPremise aut
              </wst:TokenType>
              <wst:RequestType>
                 http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue</wst:RequestType>
-             <wsse:BinarySecurityToken 
-                ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10" 
+             <wsse:BinarySecurityToken
+                ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10"
                 EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
                 DER format PKCS#10 certificate request in Base64 encoding Insterted Here
              </wsse:BinarySecurityToken>
@@ -384,7 +384,7 @@ The following example shows the enrollment web service request for OnPremise aut
                 <ac:ContextItem Name="DeviceID">
                    <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value>
                 </ac:ContextItem>
-                
+
                 <ac:ContextItem Name="TargetedUserLoggedIn">
                    <ac:Value>True</ac:Value>
                 </ac:ContextItem>
@@ -397,8 +397,8 @@ The following example shows the enrollment web service request for OnPremise aut
 The following example shows the enrollment web service response.
 
 ```xml
-    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+       xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
        <s:Header>
           <a:Action s:mustUnderstand="1" >
@@ -414,14 +414,14 @@ The following example shows the enrollment web service response.
           </o:Security>
        </s:Header>
        <s:Body>
-          <RequestSecurityTokenResponseCollection 
+          <RequestSecurityTokenResponseCollection
              xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
              <RequestSecurityTokenResponse>
                 <TokenType>
         http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
                 </TokenType>
                  <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
-                   <BinarySecurityToken 
+                   <BinarySecurityToken
                       ValueType=
     "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                       EncodingType=
@@ -453,13 +453,13 @@ The following example shows the encoded provisioning XML.
       </characteristic>
    </characteristic>
    <characteristic type="CertificateStore">
-      <characteristic type="My" >      
+      <characteristic type="My" >
          <characteristic type="User">
             <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
-            <characteristic type="PrivateKeyContainer"/> 
-            <!-- This tag must be present for XML syntax correctness. -->            
+            <characteristic type="PrivateKeyContainer"/>
+            <!-- This tag must be present for XML syntax correctness. -->
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
@@ -514,7 +514,7 @@ The following example shows the encoded provisioning XML.
 </characteristic>
       </characteristic>
    </characteristic>
-   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment 
+   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```

@@ -2,7 +2,7 @@
 title: Create Inbound Rules to Support RPC (Windows 10)
 description: Create Inbound Rules to Support RPC
 ms.assetid: 0b001c2c-12c1-4a30-bb99-0c034d7e6150
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -67,7 +67,7 @@ In this topic:
 
 12. On the **Action** page, select **Allow the connection**, and then click **Next**.
 
-13. On the **Profile** page, select the network location types to which this rule applies, and then click **Next**.   
+13. On the **Profile** page, select the network location types to which this rule applies, and then click **Next**.
 
 14. On the **Name** page, type a name and description for your rule, and then click **Finish**.
 

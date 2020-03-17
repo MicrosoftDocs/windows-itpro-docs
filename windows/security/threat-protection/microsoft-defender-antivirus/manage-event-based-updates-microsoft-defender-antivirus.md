@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -85,7 +85,7 @@ You can use Group Policy to force Microsoft Defender Antivirus to check and down
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
 
-5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**. 
+5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**.
 
 6. Click **OK**.
 
@@ -146,7 +146,7 @@ If you have enabled cloud-delivered protection, Microsoft Defender AV will send 
 5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
 
 6. **Allow notifications to disable definitions-based reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
-    
+
 > [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 

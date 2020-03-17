@@ -2,7 +2,7 @@
 title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode (Windows 10)
 description: Best practices and more for the security policy setting, User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode.
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,7 +35,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
     Assumes that the administrator will permit an operation that requires elevation, and additional consent or credentials are not required.
 
     **Note**  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
-     
+
 -   **Prompt for credentials on the secure desktop**
 
     When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
@@ -59,7 +59,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
 \*If you have enabled the built-in Administrator account and have configured Admin Approval Mode, you must also configure the option **Prompt for consent on the secure desktop**. You can also configure this option from User Account Control, by typing **UAC** in the search box. From the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
 
 > [!NOTE]
-> After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
+> After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt.
 
 ### Best practices
 
@@ -76,13 +76,13 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
+| Default Domain Policy | Not defined|
 | Default Domain Controller Policy | Not defined |
-| Stand-Alone Server Default Settings | Prompt for consent for non-Windows binaries| 
-| DC Effective Default Settings | Prompt for consent for non-Windows binaries| 
-| Member Server Effective Default Settings | Prompt for consent for non-Windows binaries| 
-| Client Computer Effective Default Settings | Prompt for consent for non-Windows binaries| 
- 
+| Stand-Alone Server Default Settings | Prompt for consent for non-Windows binaries|
+| DC Effective Default Settings | Prompt for consent for non-Windows binaries|
+| Member Server Effective Default Settings | Prompt for consent for non-Windows binaries|
+| Client Computer Effective Default Settings | Prompt for consent for non-Windows binaries|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -2,7 +2,7 @@
 title: Assigned Access configuration kiosk XML reference (Windows 10)
 description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -30,7 +30,7 @@ ms.topic: article
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration 
+<AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     >
@@ -63,7 +63,7 @@ ms.topic: article
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
                                    see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
@@ -196,7 +196,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
                                    see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
@@ -257,7 +257,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ## [Preview] Global Profile Sample XML
 Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lock down mode, or used as mitigation when a profile cannot be determined for an user.
 
-This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in 
+This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -286,7 +286,7 @@ This sample demonstrates that only a global profile is used, no active user conf
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
                                    see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
@@ -338,7 +338,7 @@ Below sample shows dedicated profile and global profile mixed usage, aauser woul
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
                                    see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
@@ -709,7 +709,7 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-    
+
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
         <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
@@ -881,7 +881,7 @@ Schema for Windows 10 Insider Preview (19H2, 20H1 builds)
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-  
+
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />

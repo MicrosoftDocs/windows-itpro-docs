@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceInstallation
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Policy CSP - DeviceInstallation
 ms.author: dansimp
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 <hr/>
 
 <!--Policies-->
-## DeviceInstallation policies  
+## DeviceInstallation policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ ms.localizationpriority: medium
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceIDs**  
+<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceIDs**
 
 <!--SupportedSKUs-->
 <table>
@@ -94,7 +94,7 @@ ms.localizationpriority: medium
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install. 
+This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install.
 
 > [!TIP]
 > Use this policy setting only when the "Prevent installation of devices not described by other policy settings" policy setting is enabled. Other policy settings that prevent device installation take precedence over this one.
@@ -109,13 +109,13 @@ Peripherals can be specified by their [hardware identity](https://docs.microsoft
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -126,7 +126,7 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. 
+To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 
 ```xml
@@ -165,7 +165,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs**  
+<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs**
 
 <!--SupportedSKUs-->
 <table>
@@ -219,13 +219,13 @@ Peripherals can be specified by their [device instance ID](https://docs.microsof
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -236,7 +236,7 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-To enable this policy, use the following SyncML. 
+To enable this policy, use the following SyncML.
 
 ``` xml
 <SyncML>
@@ -272,7 +272,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses**  
+<a href="" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses**
 
 <!--SupportedSKUs-->
 <table>
@@ -315,7 +315,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is allowed to install. 
+This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is allowed to install.
 
 > [!TIP]
 > Use this policy setting only when the "Prevent installation of devices not described by other policy settings" policy setting is enabled. Other policy settings that prevent device installation take precedence over this one.
@@ -332,13 +332,13 @@ Peripherals can be specified by their [hardware identity](https://docs.microsoft
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -355,7 +355,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 - CD ROMs, ClassGUID = {4d36e965-e325-11ce-bfc1-08002be10318}
 - Modems, ClassGUID = {4d36e96d-e325-11ce-bfc1-08002be10318}
 
-Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. 
+Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 
 ```xml
@@ -395,7 +395,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventdevicemetadatafromnetwork"></a>**DeviceInstallation/PreventDeviceMetadataFromNetwork**  
+<a href="" id="deviceinstallation-preventdevicemetadatafromnetwork"></a>**DeviceInstallation/PreventDeviceMetadataFromNetwork**
 
 <!--SupportedSKUs-->
 <table>
@@ -447,13 +447,13 @@ If you disable or do not configure this policy setting, the setting in the Devic
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent device metadata retrieval from the Internet*
 -   GP name: *DeviceMetadata_PreventDeviceMetadataFromNetwork*
 -   GP path: *System/Device Installation*
@@ -474,7 +474,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings"></a>**DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings**  
+<a href="" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings"></a>**DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -526,13 +526,13 @@ If you disable or do not configure this policy setting, Windows is allowed to in
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent installation of devices not described by other policy settings*
 -   GP name: *DeviceInstall_Unspecified_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -543,7 +543,7 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting.
 
 
 ```xml
@@ -574,7 +574,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation by using a custom profile in Intune. 
+You can also block installation by using a custom profile in Intune.
 
 ![Custom profile](images/custom-profile-prevent-other-devices.png)
 <!--/Example-->
@@ -586,7 +586,7 @@ You can also block installation by using a custom profile in Intune.
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**  
+<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**
 
 <!--SupportedSKUs-->
 <table>
@@ -640,13 +640,13 @@ Peripherals can be specified by their [hardware identity](https://docs.microsoft
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -658,7 +658,7 @@ ADMX Info:
 <!--/SupportedValues-->
 <!--Example-->
 <hr/>
-To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true.
 
 
 ```xml
@@ -689,7 +689,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune.
 
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
@@ -703,7 +703,7 @@ For example, this custom profile blocks installation and usage of USB devices wi
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs**  
+<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs**
 
 <!--SupportedSKUs-->
 <table>
@@ -757,13 +757,13 @@ Peripherals can be specified by their [device instance ID](https://docs.microsof
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -794,7 +794,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
     </SyncBody>
 </SyncML>
 ```
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:  
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ``` txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -803,7 +803,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune.
 
 For example, this custom profile prevents installation of devices with matching device instance IDs.
 
@@ -811,11 +811,11 @@ For example, this custom profile prevents installation of devices with matching 
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
 1. Locate the device instance ID.
-2. Replace `&` in the device instance IDs with `&amp;`.  
-For example:  
-Replace  
-```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```  
-with  
+2. Replace `&` in the device instance IDs with `&amp;`.
+For example:
+Replace
+```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```
+with
 ```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
     > [!Note]
     > Do not use spaces in the value.
@@ -830,7 +830,7 @@ with
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**  
+<a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**
 
 <!--SupportedSKUs-->
 <table>
@@ -884,13 +884,13 @@ Peripherals can be specified by their [hardware identity](https://docs.microsoft
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
@@ -907,7 +907,7 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 - CD ROMs, ClassGUID = {4d36e965-e325-11ce-bfc1-08002be10318}
 - Modems, ClassGUID = {4d36e96d-e325-11ce-bfc1-08002be10318}
 
-Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
+Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true.
 
 
 ```xml

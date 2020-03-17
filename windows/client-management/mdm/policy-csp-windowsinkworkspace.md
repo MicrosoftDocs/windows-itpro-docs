@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## WindowsInkWorkspace policies  
+## WindowsInkWorkspace policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
+<a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**
 
 <!--SupportedSKUs-->
 <table>
@@ -81,7 +81,7 @@ Added in Windows 10, version 1607. Show recommended app suggestions in the ink 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow suggested apps in Windows Ink Workspace*
 -   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
 -   GP path: *Windows Components/Windows Ink Workspace*
@@ -100,7 +100,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
+<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**
 
 <!--SupportedSKUs-->
 <table>
@@ -147,7 +147,7 @@ Added in Windows 10, version 1607. Specifies whether to allow the user to acces
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Windows Ink Workspace*
 -   GP name: *AllowWindowsInkWorkspace*
 -   GP element: *AllowWindowsInkWorkspaceDropdown*

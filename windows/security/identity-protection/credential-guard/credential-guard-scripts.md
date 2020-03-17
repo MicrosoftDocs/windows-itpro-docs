@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Windows Defender Credential Guard: Scripts for Certificate Authority Issuance Policies
@@ -60,7 +60,7 @@ displayName = displayName : {0}
 Name = Name : {0}
 dn = distinguishedName : {0}
         InfoName = Linked Group Name: {0}
-        InfoDN = Linked Group DN: {0}   
+        InfoDN = Linked Group DN: {0}
 NonLinkedIPs = The following Issuance Policies are NOT linked to groups:
 '@
 }
@@ -86,7 +86,7 @@ $getIP_strings.help8
     ""
     $getIP_strings.help10
 ""
-""    
+""
 $getIP_strings.help11
     "     " + '$' + "myIPs = .\get-IssuancePolicy.ps1 -LinkedToGroup:All"
     "     " + '$' + "myLinkedIPs = .\get-IssuancePolicy.ps1 -LinkedToGroup:yes"
@@ -137,7 +137,7 @@ write-host $errormsg -ForegroundColor Red
 if (($LinkedToGroup -eq "yes") -or ($LinkedToGroup -eq "all")) {
     $LDAPFilter = "(&(objectClass=msPKI-Enterprise-Oid)(msDS-OIDToGroupLink=*)(flags=2))"
     $LinkedOIDs = get-adobject -searchBase $configNCDN -LDAPFilter $LDAPFilter -properties *
-    write-host ""    
+    write-host ""
     write-host "*****************************************************"
     write-host $getIP_strings.LinkedIPs
     write-host "*****************************************************"
@@ -182,11 +182,11 @@ write-host "There are no issuance policies that are mapped to a group"
         return $LinkedOIDs
         break
     }
-}    
-if (($LinkedToGroup -eq "no") -or ($LinkedToGroup -eq "all")) {  
+}
+if (($LinkedToGroup -eq "no") -or ($LinkedToGroup -eq "all")) {
     $LDAPFilter = "(&(objectClass=msPKI-Enterprise-Oid)(!(msDS-OIDToGroupLink=*))(flags=2))"
     $NonLinkedOIDs = get-adobject -searchBase $configNCDN -LDAPFilter $LDAPFilter -properties *
-    write-host ""    
+    write-host ""
     write-host "*********************************************************"
     write-host $getIP_strings.NonLinkedIPs
     write-host "*********************************************************"
@@ -211,7 +211,7 @@ write-host "There are no issuance policies which are not mapped to groups"
 ```
 > [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
- 
+
 ## <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
@@ -250,7 +250,7 @@ confirmOUcreation = Warning: The Organizational Unit that you specified does not
 OUCreationSuccess = Organizational Unit "{0}" successfully created.
 OUcreationError = Error: Organizational Unit "{0}" could not be created.
 OUFoundSuccess = Organizational Unit "{0}" was successfully found.
-multipleGroups = Error: More than one group with name "{0}" was found in Organizational Unit "{1}".  
+multipleGroups = Error: More than one group with name "{0}" was found in Organizational Unit "{1}".
 confirmGroupCreation = Warning: The group that you specified does not exist. Do you want to create it?
 groupCreationSuccess = Univeral Security group "{0}" successfully created.
 groupCreationError = Error: Univeral Security group "{0}" could not be created.
@@ -310,12 +310,12 @@ break
 $searchBase = [String]$root.configurationnamingcontext
 $OID = get-adobject -searchBase $searchBase -Filter { ((displayname -eq $IssuancePolicyName) -or (name -eq $IssuancePolicyName)) -and (objectClass -eq "msPKI-Enterprise-Oid")} -properties *
 if ($OID -eq $null) {
-$tmp = $ErrorMsg.NoIP -f $IssuancePolicyName, $searchBase  
+$tmp = $ErrorMsg.NoIP -f $IssuancePolicyName, $searchBase
 write-host $tmp -ForeGroundColor Red
 break;
 }
 elseif ($OID.GetType().IsArray) {
-$tmp = $ErrorMsg.MultipleIPs -f $IssuancePolicyName, $searchBase  
+$tmp = $ErrorMsg.MultipleIPs -f $IssuancePolicyName, $searchBase
 write-host $tmp -ForeGroundColor Red
 break;
 }

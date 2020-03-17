@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -18,7 +18,7 @@ ms.author: dansimp
 **Applies to**
 -   Windows 10, version 1607
 
-To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
+To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first.
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
@@ -55,7 +55,7 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </tbody>
 </table>
 
- 
+
 
 ### Example conversion statement
 
@@ -80,7 +80,7 @@ To understand the new process, review the following example `ConvertFrom-AppvLeg
 **And you run this command:**
 
 ``` syntax
-ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\ 
+ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 -DestinationPath \\NewPkgStore\ContosoApp\
 -OSDsToIncludeInPackage X.osd,Y.osd
 ```
@@ -161,7 +161,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 </tbody>
 </table>
 
- 
+
 
 ## Converting packages created using a prior version of App-V
 
@@ -169,10 +169,10 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses Windows PowerShell to convert packages and can help automate the process if you have many packages that require conversion. App-V packages created with App-V 5.x don't need to be converted.
 
 
-**Important**  
+**Important**
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
 
- 
+
 
 **What to know before you convert existing packages**
 
@@ -203,11 +203,11 @@ After you convert an existing package you should test the package prior to deplo
 </tbody>
 </table>
 
- 
+
 
 When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
-**Note**  
+**Note**
 It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.

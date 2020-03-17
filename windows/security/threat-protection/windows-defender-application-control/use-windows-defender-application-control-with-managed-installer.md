@@ -1,6 +1,6 @@
 ---
 title: Authorize apps deployed with a WDAC managed installer (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
+description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -32,7 +32,7 @@ A managed installer helps an IT admin balance security and manageability require
 
 ## How does a managed installer work?
 
-A managed installer uses a new rule collection in AppLocker to specify one or more executables that are trusted by the organization as an authorized source for application deployment. 
+A managed installer uses a new rule collection in AppLocker to specify one or more executables that are trusted by the organization as an authorized source for application deployment.
 Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority. The Managed Installer rule collection is currently supported for AppLocker rules in Group Policy and in Configuration Manager, but not in the AppLocker CSP for OMA-URI policies.
 
 Once the IT administrator adds the Allow: Managed Installer option to a WDAC policy, the WDAC component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy.
@@ -43,7 +43,7 @@ Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExampleP
 
 ## Configuring a managed installer with AppLocker and Windows Defender Application Control
 
-Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled. 
+Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled.
 There are three primary steps to keep in mind:
 
 - Specify managed installers by using the Managed Installer rule collection in AppLocker policy.
@@ -81,7 +81,7 @@ As mentioned above, the AppLocker CSP for OMA-URI policies does not currently su
 
 ## Enable service enforcement in AppLocker policy
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services. 
+Since many installation processes rely on services, it is typically necessary to enable tracking of services.
 Correct tracking of services requires the presence of at least one rule in the rule collection — a simple audit only rule will suffice.
 For example:
 
@@ -125,28 +125,37 @@ This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com
 An example of the managed installer option being set in policy is shown below.
 
 ```xml
-<Rules>  
-    <Rule>  
-      <Option>Enabled:Unsigned System Integrity Policy</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:Advanced Boot Options Menu</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:UMCI</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:Inherit Default Policy</Option>  
+<Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
     </Rule>
-    <Rule>  
-      <Option>Enabled:Managed Installer </Option>  
-    </Rule>  
-  </Rules>  
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Inherit Default Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Inherit Default Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Managed Installer </Option>
+    </Rule>
+  </Rules>
 ```
 
 ## Set the AppLocker filter driver to autostart
 
-To enable the managed installer, you need to set the AppLocker filter driver to autostart and start it. 
+To enable the managed installer, you need to set the AppLocker filter driver to autostart and start it.
 Run the following command as an Administrator:
 
 ```console
@@ -183,7 +192,7 @@ In some cases, it may be possible to also designate an application binary that p
 Proper review for functionality and security should be performed for the application before using this method.
 
 - The managed installer heuristic does not authorize drivers.
-The WDAC policy must have rules that allow the necessary drivers to run.  
+The WDAC policy must have rules that allow the necessary drivers to run.
 
 - In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies.
 Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted.

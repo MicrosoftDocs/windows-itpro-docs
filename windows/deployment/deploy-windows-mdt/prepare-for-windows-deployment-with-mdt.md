@@ -2,7 +2,7 @@
 title: Prepare for deployment with MDT (Windows 10)
 description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, system requirements
@@ -30,7 +30,7 @@ The procedures in this guide use the following names and infrastructure.
 ### Network and servers
 
 For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
-- All servers are running Windows Server 2019. 
+- All servers are running Windows Server 2019.
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
@@ -103,7 +103,7 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
 On **MDT01**:
 
 1. Open an elevated Windows PowerShell prompt and enter the following command:
- 
+
   ```powershell
   Install-WindowsFeature -Name WDS -IncludeManagementTools
   WDSUTIL /Verbose /Progress /Initialize-Server /Server:MDT01 /RemInst:"D:\RemoteInstall"
@@ -133,8 +133,8 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
 
 On **MDT01**:
 
-1. Visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117) and click **Download MDT**. 
-2. Save the **MicrosoftDeploymentToolkit_x64.msi** file to the D:\\Downloads\\MDT folder on MDT01. 
+1. Visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117) and click **Download MDT**.
+2. Save the **MicrosoftDeploymentToolkit_x64.msi** file to the D:\\Downloads\\MDT folder on MDT01.
     - **Note**: As of the publishing date for this guide, the current version of MDT is 8456 (6.3.8456.1000), but a later version will also work.
 3. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
 
@@ -237,7 +237,7 @@ See the following example:
 
 ## Use CMTrace to read log files (optional)
 
-The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.  
+The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.
 You can use Notepad (example below):
 
 ![figure 8](../images/mdt-05-fig09.png)

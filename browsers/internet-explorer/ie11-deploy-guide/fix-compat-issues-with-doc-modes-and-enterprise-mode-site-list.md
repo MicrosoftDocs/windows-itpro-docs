@@ -6,7 +6,7 @@ description: The Internet Explorer 11 Enterprise Mode site list lets you specif
 author: dansimp
 ms.prod: ie11
 ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -102,9 +102,9 @@ To help you move forward, you can now use the Enterprise Mode site list to speci
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## LocalPoliciesSecurityOptions policies  
+## LocalPoliciesSecurityOptions policies
 
 <dl>
   <dd>
@@ -180,10 +180,10 @@ manager: dansimp
 <hr/>
 
 > [!NOTE]
-> To find data formats (and other policy-related details), see [Policy DDF file](https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file). 
+> To find data formats (and other policy-related details), see [Policy DDF file](https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file).
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
+<a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**
 
 <!--SupportedSKUs-->
 <table>
@@ -238,7 +238,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Accounts: Block Microsoft accounts*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -255,7 +255,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**  
+<a href="" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**
 
 <!--SupportedSKUs-->
 <table>
@@ -316,13 +316,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Accounts: Limit local account use of blank passwords to console logon only*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
 - 1 -  enabled - local accounts that are not password protected will only be able to log on at the computer's keyboard
 
@@ -332,7 +332,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-accounts-renameadministratoraccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount**  
+<a href="" id="localpoliciessecurityoptions-accounts-renameadministratoraccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount**
 
 <!--SupportedSKUs-->
 <table>
@@ -385,7 +385,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Accounts: Rename administrator account*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -395,7 +395,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-accounts-renameguestaccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount**  
+<a href="" id="localpoliciessecurityoptions-accounts-renameguestaccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount**
 
 <!--SupportedSKUs-->
 <table>
@@ -448,7 +448,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Accounts: Rename guest account*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -458,7 +458,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-devices-allowundockwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon**  
+<a href="" id="localpoliciessecurityoptions-devices-allowundockwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon**
 
 <!--SupportedSKUs-->
 <table>
@@ -501,7 +501,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Devices: Allow undock without having to log on. 
+Devices: Allow undock without having to log on.
 
 This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer.
 Default: Enabled.
@@ -512,7 +512,7 @@ Disabling this policy may tempt users to try and physically remove the laptop fr
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Devices: Allow undock without having to log on*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -522,7 +522,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-devices-allowedtoformatandejectremovablemedia"></a>**LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia**  
+<a href="" id="localpoliciessecurityoptions-devices-allowedtoformatandejectremovablemedia"></a>**LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia**
 
 <!--SupportedSKUs-->
 <table>
@@ -576,7 +576,7 @@ Default: This policy is not defined and only Administrators have this ability.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Devices: Allowed to format and eject removable media*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -586,7 +586,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-devices-preventusersfrominstallingprinterdriverswhenconnectingtosharedprinters"></a>**LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters**  
+<a href="" id="localpoliciessecurityoptions-devices-preventusersfrominstallingprinterdriverswhenconnectingtosharedprinters"></a>**LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters**
 
 <!--SupportedSKUs-->
 <table>
@@ -642,7 +642,7 @@ This setting does not affect the ability to add a local printer. This setting do
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Devices: Prevent users from installing printer drivers*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -652,7 +652,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly"></a>**LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly**  
+<a href="" id="localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly"></a>**LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly**
 
 <!--SupportedSKUs-->
 <table>
@@ -705,7 +705,7 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Devices: Restrict CD-ROM access to locally logged-on user only*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -715,7 +715,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways**  
+<a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways**
 
 <!--SupportedSKUs-->
 <table>
@@ -783,7 +783,7 @@ Logon information transmitted over the secure channel is always encrypted regard
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Domain member: Digitally encrypt or sign secure channel data (always)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -802,7 +802,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible**  
+<a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible**
 
 <!--SupportedSKUs-->
 <table>
@@ -867,7 +867,7 @@ Note: Domain controllers are also domain members and establish secure channels w
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Domain member: Digitally encrypt secure channel data (when possible)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -886,7 +886,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges"></a>**LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges**  
+<a href="" id="localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges"></a>**LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges**
 
 <!--SupportedSKUs-->
 <table>
@@ -946,7 +946,7 @@ This setting should not be used in an attempt to support dual-boot scenarios tha
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Domain member: Disable machine account password changes*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -965,7 +965,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked**
 
 <!--SupportedSKUs-->
 <table>
@@ -1008,14 +1008,14 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Interactive Logon:Display user information when the session is locked  
+Interactive Logon:Display user information when the session is locked
 
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Display user information when the session is locked*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1032,7 +1032,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn**
 
 <!--SupportedSKUs-->
 <table>
@@ -1088,13 +1088,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Don't display last signed-in*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled (username will be shown)
 - 1 - enabled (username will not be shown)
 
@@ -1104,7 +1104,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn**
 
 <!--SupportedSKUs-->
 <table>
@@ -1161,13 +1161,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Don't display username at sign-in*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled (username will be shown)
 - 1 - enabled (username will not be shown)
 
@@ -1177,7 +1177,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotRequireCTRLALTDEL**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotRequireCTRLALTDEL**
 
 <!--SupportedSKUs-->
 <table>
@@ -1235,13 +1235,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Do not require CTRL+ALT+DEL*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled
 - 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
@@ -1251,7 +1251,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-machineinactivitylimit"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-machineinactivitylimit"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit**
 
 <!--SupportedSKUs-->
 <table>
@@ -1304,14 +1304,14 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Machine inactivity limit*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
-- 0 - disabled 
+Valid values:
+- 0 - disabled
 - 1 - enabled (session will lock after amount of inactive time exceeds the inactivity limit)
 
 <!--/SupportedValues-->
@@ -1320,7 +1320,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn**
 
 <!--SupportedSKUs-->
 <table>
@@ -1375,7 +1375,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Message text for users attempting to log on*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1385,7 +1385,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn**
 
 <!--SupportedSKUs-->
 <table>
@@ -1438,7 +1438,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Message title for users attempting to log on*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1448,7 +1448,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior**
 
 <!--SupportedSKUs-->
 <table>
@@ -1500,7 +1500,7 @@ The options are:
  No Action
  Lock Workstation
  Force Logoff
- Disconnect if a Remote Desktop Services session 
+ Disconnect if a Remote Desktop Services session
 
 If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
 
@@ -1516,7 +1516,7 @@ On Windows Vista and above: For this setting to work, the Smart Card Removal Pol
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Interactive logon: Smart card removal behavior*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1526,7 +1526,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees**  
+<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees**
 
 <!--SupportedSKUs-->
 <table>
@@ -1592,7 +1592,7 @@ For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Microsoft network client: Digitally sign communications (if server agrees)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1602,7 +1602,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers**  
+<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers**
 
 <!--SupportedSKUs-->
 <table>
@@ -1655,7 +1655,7 @@ Default: Disabled.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Microsoft network client: Send unencrypted password to third-party SMB servers*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1665,7 +1665,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession**  
+<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession**
 
 <!--SupportedSKUs-->
 <table>
@@ -1724,7 +1724,7 @@ Default:This policy is not defined, which means that the system treats it as 15 
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Microsoft network server: Amount of idle time required before suspending session*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1743,7 +1743,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways**  
+<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways**
 
 <!--SupportedSKUs-->
 <table>
@@ -1821,7 +1821,7 @@ For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Microsoft network server: Digitally sign communications (always)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1831,7 +1831,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsifclientagrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees**  
+<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsifclientagrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees**
 
 <!--SupportedSKUs-->
 <table>
@@ -1901,7 +1901,7 @@ For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Microsoft network server: Digitally sign communications (if client agrees)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1911,7 +1911,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccounts"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts**  
+<a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccounts"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts**
 
 <!--SupportedSKUs-->
 <table>
@@ -1974,7 +1974,7 @@ This policy has no impact on domain controllers.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -1984,7 +1984,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares**  
+<a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares**
 
 <!--SupportedSKUs-->
 <table>
@@ -2037,7 +2037,7 @@ Default: Disabled.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts and shares*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2047,7 +2047,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares**  
+<a href="" id="localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares**
 
 <!--SupportedSKUs-->
 <table>
@@ -2100,7 +2100,7 @@ Default: Enabled.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network access: Restrict anonymous access to Named Pipes and Shares*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2110,7 +2110,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM**  
+<a href="" id="localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM**
 
 <!--SupportedSKUs-->
 <table>
@@ -2163,7 +2163,7 @@ This policy is supported on at least Windows Server 2016.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network access: Restrict clients allowed to make remote calls to SAM*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2173,7 +2173,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM**
 
 <!--SupportedSKUs-->
 <table>
@@ -2224,13 +2224,13 @@ When a service connects with the device identity, signing and encryption are sup
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Allow Local System to use computer identity for NTLM*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - Disabled
 - 1 - Enabled (Allow Local System to use computer identity for NTLM.)
 
@@ -2240,7 +2240,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**
 
 <!--SupportedSKUs-->
 <table>
@@ -2292,13 +2292,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Allow PKU2U authentication requests to this computer to use online identities.*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled
 - 1 - enabled (allow PKU2U authentication requests to this computer to use online identities.)
 
@@ -2308,7 +2308,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-donotstorelanmanagerhashvalueonnextpasswordchange"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-donotstorelanmanagerhashvalueonnextpasswordchange"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange**
 
 <!--SupportedSKUs-->
 <table>
@@ -2366,7 +2366,7 @@ This setting can affect the ability of computers running Windows 2000 Server, Wi
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Do not store LAN Manager hash value on next password change*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2376,7 +2376,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel**
 
 <!--SupportedSKUs-->
 <table>
@@ -2449,7 +2449,7 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: LAN Manager authentication level*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2459,7 +2459,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**
 
 <!--SupportedSKUs-->
 <table>
@@ -2517,7 +2517,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) clients*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2527,7 +2527,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers**
 
 <!--SupportedSKUs-->
 <table>
@@ -2585,7 +2585,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) servers*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2595,7 +2595,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication**
 
 <!--SupportedSKUs-->
 <table>
@@ -2650,7 +2650,7 @@ The naming format for servers on this exception list is the fully qualified doma
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2669,7 +2669,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic**
 
 <!--SupportedSKUs-->
 <table>
@@ -2728,7 +2728,7 @@ Note: Audit events are recorded on this computer in the "Operational" Log locate
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Restrict NTLM: Audit Incoming NTLM Traffic*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2747,7 +2747,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic**
 
 <!--SupportedSKUs-->
 <table>
@@ -2806,7 +2806,7 @@ Note: Block events are recorded on this computer in the "Operational" Log locate
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Restrict NTLM: Incoming NTLM traffic*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2825,7 +2825,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers**
 
 <!--SupportedSKUs-->
 <table>
@@ -2884,7 +2884,7 @@ Note: Audit and block events are recorded on this computer in the "Operational" 
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -2903,7 +2903,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
+<a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**
 
 <!--SupportedSKUs-->
 <table>
@@ -2947,7 +2947,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled
 - 1 - enabled (allow automatic administrative logon)
 
@@ -2957,7 +2957,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn**
 
 <!--SupportedSKUs-->
 <table>
@@ -3015,13 +3015,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Shutdown: Allow system to be shut down without having to log on*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled
 - 1 - enabled (allow system to be shut down without having to log on)
 
@@ -3031,7 +3031,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile"></a>**LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile**  
+<a href="" id="localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile"></a>**LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile**
 
 <!--SupportedSKUs-->
 <table>
@@ -3086,7 +3086,7 @@ Default: Disabled.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Shutdown: Clear virtual memory pagefile*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3096,7 +3096,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems"></a>**LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems**  
+<a href="" id="localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems"></a>**LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems**
 
 <!--SupportedSKUs-->
 <table>
@@ -3153,7 +3153,7 @@ Default: Enabled.
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation**
 
 <!--SupportedSKUs-->
 <table>
@@ -3202,7 +3202,7 @@ This policy setting controls whether User Interface Accessibility (UIAccess or U
 
 Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
-Disabled: (Default)  
+Disabled: (Default)
 
 The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 
@@ -3210,13 +3210,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 - 0 - disabled
 - 1 - enabled (allow UIAccess applications to prompt for elevation without using the secure desktop)
 
@@ -3226,7 +3226,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators**
 
 <!--SupportedSKUs-->
 <table>
@@ -3291,7 +3291,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3301,7 +3301,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers**
 
 <!--SupportedSKUs-->
 <table>
@@ -3351,7 +3351,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Behavior of the elevation prompt for standard users*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3369,7 +3369,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-detectapplicationinstallationsandpromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-detectapplicationinstallationsandpromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation**
 
 <!--SupportedSKUs-->
 <table>
@@ -3424,7 +3424,7 @@ Disabled: Application installation packages are not detected and prompted for el
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Detect application installations and prompt for elevation*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3434,7 +3434,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated**
 
 <!--SupportedSKUs-->
 <table>
@@ -3489,7 +3489,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Only elevate executables that are signed and validated*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3499,7 +3499,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations**
 
 <!--SupportedSKUs-->
 <table>
@@ -3552,7 +3552,7 @@ This policy setting controls whether applications that request to run with a Use
 
 Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
 
-The options are:  
+The options are:
 - 0 - Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
 - 1 - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
 
@@ -3560,7 +3560,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Only elevate UIAccess applications that are installed in secure locations*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3570,7 +3570,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -3619,14 +3619,14 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 - 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
-- 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+- 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
 
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Run all administrators in Admin Approval Mode*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3636,7 +3636,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation**
 
 <!--SupportedSKUs-->
 <table>
@@ -3691,7 +3691,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Switch to the secure desktop when prompting for elevation*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3701,7 +3701,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -3756,7 +3756,7 @@ The options are:
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Admin Approval Mode for the Built-in Administrator account*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -3766,7 +3766,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations**
 
 <!--SupportedSKUs-->
 <table>
@@ -3817,7 +3817,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *User Account Control: Virtualize file and registry write failures to per-user locations*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
@@ -48,7 +48,7 @@ For both cases you should contact Microsoft support at [General Microsoft Defend
 
 ## Your subscription has expired
 
-If while accessing Microsoft Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender ATP subscription, like any other online service subscription, has an expiration date. 
+If while accessing Microsoft Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender ATP subscription, like any other online service subscription, has an expiration date.
 
 You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the device offboarding package, should you choose to not renew the license.
 
@@ -75,17 +75,17 @@ You'll need to allow the `securitycenter.windows.com` and all sub-domains under 
 ## Portal communication issues
 If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are allowed and open for communication.
 
-- `*.blob.core.windows.net 
+- `*.blob.core.windows.net
 crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com` 
+- `https://*.securitycenter.windows.com`
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
-- `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` 
-- `https://static2.sharepointonline.com` 
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `https://securitycenter.windows.com`
+- `https://static2.sharepointonline.com`
 
 
 

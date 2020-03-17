@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -24,24 +24,24 @@ Use to configure settings for cellular data.
 
 ## Applies to
 
- Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core 
- --- | :---: | :---: | :---: | :---: | :---: 
+ Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core
+ --- | :---: | :---: | :---: | :---: | :---:
  PerDevice: [CellConfigurations](#cellconfigurations) |  | X |  |  |  |
- PerDevice: [CellData](#celldata)  | X | X | X  |  |   
- PerDevice: [CellUX](#cellux)  | X | X | X |  | 
- PerDevice: [CGDual](#cgdual)  |  | X |  |  | 
- PerDevice: [eSim](#esim) | X | X | X  |  | 
- PerDevice: [External](#external)  |  | X |  |  | 
- PerDevice: [General](#general)  |  | X |  |  | 
- PerDevice: [RCS](#rcs)  |  | X |  |  | 
- PerDevice: [SMS](#sms)  | X | X | X  |  |  
- PerDevice: [UIX](#uix)  |  | X |  |  | 
+ PerDevice: [CellData](#celldata)  | X | X | X  |  |
+ PerDevice: [CellUX](#cellux)  | X | X | X |  |
+ PerDevice: [CGDual](#cgdual)  |  | X |  |  |
+ PerDevice: [eSim](#esim) | X | X | X  |  |
+ PerDevice: [External](#external)  |  | X |  |  |
+ PerDevice: [General](#general)  |  | X |  |  |
+ PerDevice: [RCS](#rcs)  |  | X |  |  |
+ PerDevice: [SMS](#sms)  | X | X | X  |  |
+ PerDevice: [UIX](#uix)  |  | X |  |  |
  PerDevice: [UTK](#utk)  |  | X |  |  |
  PerlMSI: [CellData](#celldata2) |  | X |  |  |
  PerIMSI: [CellUX](#cellux2) |  | X |  |  |
  PerIMSI: [General](#general2) |  | X |  |  |
  PerIMSI: [RCS](#rcs2) |  | X |  |  |
- PerIMSI: [SMS](#sms2) | X | X | X  |  | 
+ PerIMSI: [SMS](#sms2) | X | X | X  |  |
  PerIMSI: [UTK](#utk2) |  | X |  |  |
  PerIMSI: [VoLTE](#volte) |  | X |  |  |
 
@@ -52,7 +52,7 @@ Use to configure settings for cellular data.
 
 
 
-1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group. 
+1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group.
 2. Select the **PropertyGroups** you just created in the **Available customizations** pane and then enter a **PropertyName**.
 3. Select the **PropertyName** you just created in the **Available customizations** pane, and then select one of the following data types for the property:
     - Binary
@@ -129,7 +129,7 @@ SuppressDePersoUI | Select **Yes** to hide the perso unlock UI.
 
 ### CGDual
 
-Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone is not camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode. 
+Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone is not camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode.
 
 Select from the following:
 
@@ -178,8 +178,8 @@ atomicRoamingTableSettings3GPP | If you enable 3GPP roaming, configure the follo
 atomicRoamingTableSettings3GPP2 | If you enable 3GPP2 roaming, configure the following settings:</br></br>- **Home** maps the SerialNumber key to the Home value. The wildcard, $(SerialNumber), is a 3-digit decimal serial number (000 through 999) represented as a string. The wildcard is used as a regvalue under the "Home" subkey. Multiple reg values in this form may be configured or customized by the OEM, all placed under the same subkey (Home). The data in the regvalue is a DWORD representing the Roaming Indicator. </br>- **Roaming** maps the SerialNumber key to the Roaming value. The wildcard, $(SerialNumber), is a 3-digit decimal serial number (000 through 999) represented as a string. The wildcard is used as a regvalue under the "Roaming" subkey. Multiple reg values in this form may be configured or customized by the OEM, all placed under the same subkey (Roaming). The data in the regvalue is a DWORD representing the Roaming Indicator.
 AvoidStayingInManualSelection | You can enable permanent automatic mode for mobile networks that require the cellular settings to revert to automatic network selection after the user has manually selected another network when roaming or out of range of the home network.
 CardAllowList | Define the list of SIM cards allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards allowed in the first slot, set the value for CardAllowList to a comma-separated MCC:MNC list. You can also use wild cards, represented by an asterisk, to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`.
-CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk, to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`. 
-CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone. 
+CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk, to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`.
+CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone.
 DefaultSlotAffinity | Set the data connection preference for:</br></br>- **SlotAffinityForInternetData_Automatic**: data connection preference is automatically set</br>- **SlotAffinityForInternetData_Slot0**: sets the data connection preference to Slot 0. The data connection cannot be edited by the user.</br>- **SlotAffinityForInternetData_Slot1**: Sets the data connection preference to Slot 1. The data connection cannot be edited by the user.
 DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
 DisableSystemTypeSupport | Enter the system types to be removed.
@@ -192,7 +192,7 @@ LTEEnabled | Select **Yes** to enable LTE, and **No** to disable LTE.
 LTEForced | Select **Yes** to force LTE.
 ManualNetworkSelectionTimeout | Set the default network selection timeout value, in a range of 1-600 seconds. By default, the OS allows the phone to attempt registration on the manually selected network for 60 seconds (or 1 minute) before it switches back to automatic mode. This value is the amount of time that the OS will wait for the modem to register on the manually selected network. If the time lapses and the modem was not able to register on the network that was manually selected by the user, the OS will either switch back to the automatic network selection mode if Permanent automatic mode is enabled, and the user has manually selected a network or the modem was turned on, or display a dialog that notifies the user that the phone was unable to connect to the manually selected network after the phone was turned on or after airplane mode was turned off.
 NetworkSuffix | To meet branding requirements for some mobile operators, you can add a suffix to the network name that is displayed on the phone. For example, you can change from ABC to ABC 3G when under 3G coverage. This feature can be applied for any radio access technology (RAT). For TD-SCDMA RAT, a 3G suffix is always appended by default, but partners can also customize this the same way as with any other RAT. In the setting name, set SYSTEMTYPE to the network type that you want to append the network name to and click **Add**:</br></br>- system type 4: 2G (GSM)</br>- system type 8: 3G (UMTS)</br>- system type 16: LTE</br>- system type 32: 3G (TS-SCDMA)</br></br>Select the system type that you added, and enter the network name and suffix that you want displayed.
-NitzFiltering | For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the phone to ignore the time received from an LTE network. Time received from a CDMA network is not affected. Set the value of NitzFiltering to `0x10`. 
+NitzFiltering | For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the phone to ignore the time received from an LTE network. Time received from a CDMA network is not affected. Set the value of NitzFiltering to `0x10`.
 OperatorListForExcludedSystemTypes | Enter a comma-separated list of MCC and MNC (MCC:MNC) for which system types should be restricted. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. Set the value of the OperatorListForExcludedSystemTypes setting a comma separated list of MCC:MNC pairs for which the system types should be restricted. For example, the value can be set to 310:026,310:030 to restrict operators with an MCC:MNC of 310:026 and 310:030.
 OperatorPreferredForFasterRadio | Set Issuer Identification Number (IIN) or partial ICCID of preferred operator for the faster radio. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can map a partial ICCID or an Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To map a partial ICCID or an IIN to the faster radio regardless of which SIM card is chosen for data connectivity, set the value of OperatorPreferredForFasterRadio to match the IIN or the ICCID, up to 7 digits, of the preferred operator.
 PreferredDataProviderList | OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator. For mobile operators that require it, OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator so that it can be set as the default data line for phones that have a dual SIM. When the PO SIM is inserted into the phone, the OS picks the PO SIM as the data line and shows a notification to the user that the SIM has been selected for Internet data. If two PO SIMs are inserted, the OS will choose the first PO SIM that was detected as the default data line and the mobile operator action required dialogue (ARD) is shown. If two non-PO SIMs are inserted, the user is prompted to choose the SIM to use as the default data line. Note  OEMs should not set this customization unless required by the mobile operator. To enumerate the MCC/MNC value pairs to use for data connections, set the value for **PreferredDataProviderList**. The value must be a comma-separated list of preferred MCC:MNC values. For example, the value can be 301:026,310:030 and so on.
@@ -248,7 +248,7 @@ SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate s
 
 Setting | Description
 --- | ---
-UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000. 
+UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000.
 UIGetInputDuration | Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.
 
 
@@ -256,7 +256,7 @@ UIGetInputDuration | Specifies the default time, in milliseconds, that the GET I
 
 ## PerlMSI
 
-Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings. 
+Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings.
 
 <span id="celldata2" />
 ### CellData
@@ -279,10 +279,10 @@ Critical > SwitchSMSOverIMS | Switch SMS over IMS on or off when VoLTE is toggle
 Critical > SwitchVideoOverIMS | Use to switch video over IMS when VoLTE is switched.
 Critical > SwitchVoiceOverIMS | Switch voice over IMS when VoLTE is toggled.
 Critical > SwitchXCAP | Use to switch the XML Configuration Access Protocol (XCAP) when VoLTE is enabled.
-Critical > VoLTERoamingOffDescription | Use to customize the description string that appears under IMS roaming control when IMS roaming is turned off. The string must not be longer than 127 characters. 
-Critical > VoLTERoamingOnDescription | Use to customize the description string that appears under IMS roaming control when IMS roaming is turned on. The string must not be longer than 127 characters. 
+Critical > VoLTERoamingOffDescription | Use to customize the description string that appears under IMS roaming control when IMS roaming is turned off. The string must not be longer than 127 characters.
+Critical > VoLTERoamingOnDescription | Use to customize the description string that appears under IMS roaming control when IMS roaming is turned on. The string must not be longer than 127 characters.
 Critical > VoLTERoamingSettingDisableDuringCall | Use to specify whether to grey out VoLTE roaming settings during an active VoLTE call.
-Critical > VoLTERoamingTitle | Use to customize the description string for the IMS roaming control. The string must not be longer than 127 characters. 
+Critical > VoLTERoamingTitle | Use to customize the description string for the IMS roaming control. The string must not be longer than 127 characters.
 Critical > VoLTESectionTitle | Use to customize the section title for the IMS settings. he string must not be longer than 127 characters.
 Critical > VoLTESettingDisableDuringCall | Use to specify whether to grey out VoLTE-related settings during an active VoLTE call.
 Critical > VoLTEToggleDescription | Use to customize the VoLTE toggle description. To customize the VoLTE toggle description, set VoLTEToggleDescription to the name of the resource-only .dll file, specifying the string offset. For example: @DisplayStrings.dll,-101.
@@ -395,13 +395,13 @@ See descriptions in Windows Configuration Designer.
 
 Setting | Description
 --- | ---
-UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000. 
+UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000.
 UIGetInputDuration | Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.
 
 
 ### VoLTE
 
-Setting | Description 
+Setting | Description
 --- | ---
 IMSOMADMServices | Allows configuration of OMA DM Services Mask. The value is mapped directly to RIL_IMS_NW_ENABLED_FLAGS on the modem side. To configure the OMA DM services mask, set the IMSOMADMServices setting to one of the following values:</br></br>- None, Flag: 0, Bitmask: 00000</br>- OMA DM, Flag: 1, Bitmask: 00001</br>- Voice, Flag: 2, Bitmask: 00010</br>- Video, Flag: 4, Bitmask: 00100</br>- EAB presence, Flag: 8, Bitmask: 01000</br>- Enable all services, Flag: 15, Bitmask: 10000
 IMSServices | Identifies which IMS services are enabled (if any). The value is any combination of flags 1 (IMS), 2 (SMS over IMS), 4 (Voice over IMS) and 8 (Video Over IMS). Set the value for the IMSServices setting to any combination of the following flags or bitmasks:</br></br>- IMS, Flag: 1, Bitmask: 0001</br>- SMS over IMS, Flag: 2, Bitmask: 0010</br>- Voice over IMS, Flag: 4, Bitmask: 0100</br>Video over IMS, Flag: 8, Bitmask: 1000
@@ -425,7 +425,7 @@ Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operat
 The following table shows the scenarios supported by this customization:
 
 >[!NOTE]
->In the Default SIM name column: 
+>In the Default SIM name column:
 >
 >- The " " in MultivariantProvisionedSPN" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
 >- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.

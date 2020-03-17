@@ -2,7 +2,7 @@
 title: Update DDF file
 description: Update DDF file
 ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -663,9 +663,9 @@ The XML below is for Windows 10, version 1803.
 
 [Update CSP](update-csp.md)
 
- 
 
- 
+
+
 
 
 

@@ -5,7 +5,7 @@ description: Info about how to use Internet Settings (.ins) files and the IEAK 1
 author: dansimp
 ms.prod: ie11
 ms.assetid: a24a7cdb-681e-4f34-a53c-6d8383c5f977
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

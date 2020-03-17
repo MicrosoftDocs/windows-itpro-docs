@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # ProvisioningCommands (Windows Configuration Designer reference)
 
-Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package. 
+Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package.
 
 ## Applies to
 

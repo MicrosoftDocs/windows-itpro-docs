@@ -2,7 +2,7 @@
 title: Back up the TPM recovery information to AD DS (Windows 10)
 description: This topic for the IT professional describes backup of Trusted Platform Module (TPM) information.
 ms.assetid: 62bcec80-96a1-464e-8b3f-d177a7565ac5
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,4 +31,4 @@ With Windows 10, versions 1511 and 1507, you can back up a computer’s Trusted 
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
-- [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md) 
+- [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)

@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Frequently Asked Questions
-description: Windows Hello for Business FAQ 
+description: Windows Hello for Business FAQ
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows Hello for Business Frequently Asked Questions
 
@@ -25,7 +25,7 @@ ms.reviewer:
 Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
 
 ## What about convenience PIN?
-Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
+Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business.
 
 ## Can I use Windows Hello for Business key trust and RDP?
 RDP currently does not support key based authentication and does not support self signed certificates. RDP with Windows Hello for Business is currently only supported with certificate based deployments.
@@ -89,12 +89,12 @@ Organizations that have the on-premises deployment of Windows Hello for Business
 
 ## Which is better or more secure: Key trust or Certificate trust?
 The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The difference between the two trust types are:
-- Required domain controllers 
+- Required domain controllers
 - Issuing end entity certificates
 
 The **key trust** model authenticates to Active Directory using a raw key.  Windows Server 2016 domain controllers enables this authentication.  Key trust authenticate does not require an enterprise issued certificate, therefore you do not need to issue certificates to your end users (domain controller certificates are still needed).
 
-The **certificate trust** model authenticates to Active Directory using a certificate.  Because this authentication uses a certificate, domain controllers running previous versions of Windows Server can authenticate the user. Therefore, you need to issue certificates to your end users, but you do not need Windows Server 2016 domain controllers.  The certificate used in certificate trust uses the TPM protected private key to request a certificate from your enterprise's issuing certificate authority. 
+The **certificate trust** model authenticates to Active Directory using a certificate.  Because this authentication uses a certificate, domain controllers running previous versions of Windows Server can authenticate the user. Therefore, you need to issue certificates to your end users, but you do not need Windows Server 2016 domain controllers.  The certificate used in certificate trust uses the TPM protected private key to request a certificate from your enterprise's issuing certificate authority.
 
 ## Do I need Windows Server 2016 domain controllers?
 There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment.
@@ -138,9 +138,9 @@ This algorithm does not apply to alphanumeric PINs.
 
 ## How does PIN caching work with Windows Hello for Business?
 
-Windows Hello for Business provides a PIN caching user experience using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  
+Windows Hello for Business provides a PIN caching user experience using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.
 
-Beginning with Windows 10, version 1709, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching.  Each process requesting a private key operation will prompt the user for the PIN on first use.  Subsequent private key operations will not prompt the user for the PIN.  
+Beginning with Windows 10, version 1709, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching.  Each process requesting a private key operation will prompt the user for the PIN on first use.  Subsequent private key operations will not prompt the user for the PIN.
 
 The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket.  The process does not receive the PIN, but rather the ticket that grants them private key operations.  Windows 10 does not provide any Group Policy settings to adjust this caching.
 
@@ -164,7 +164,7 @@ Windows Hello for Business can work with any third-party federation servers that
 | Protocol | Description |
 | :---: | :--- |
 | [[MS-KPP]: Key Provisioning Protocol](https://msdn.microsoft.com/library/mt739755.aspx) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
-| [[MS-OAPX]: OAuth 2.0 Protocol Extensions](https://msdn.microsoft.com/library/dn392779.aspx)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |  
+| [[MS-OAPX]: OAuth 2.0 Protocol Extensions](https://msdn.microsoft.com/library/dn392779.aspx)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |
 | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](https://msdn.microsoft.com/library/mt590278.aspx) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (The OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
 | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](https://msdn.microsoft.com/library/mt766592.aspx) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the end user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enable the discovery of the issuer of access tokens and give additional information about provider capabilities. |
 

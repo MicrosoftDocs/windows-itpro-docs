@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -22,9 +22,9 @@ Before you deploy User Experience Virtualization (UE-V), review this topic for i
 
 ## Plan your UE-V deployment
 
-With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line of business applications. 
+With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line of business applications.
 
-Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you’ll need to first deploy the features required to use UE-V.  
+Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you’ll need to first deploy the features required to use UE-V.
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
@@ -38,7 +38,7 @@ If you want to use UE-V to synchronize user-defined settings for custom applicat
 
 - [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#install-the-uev-template-generator) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
 
-- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md) with the UE-V template generator 
+- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md) with the UE-V template generator
 
 - [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md) to store your custom settings location templates
 
@@ -50,7 +50,7 @@ The workflow diagram below illustrates a typical UE-V deployment and the decisio
 <img src="media/image1.png" width="446" height="362" />
 -->
 
-### Planning a UE-V deployment 
+### Planning a UE-V deployment
 
 Review the following topics to determine which UE-V components you’ll be deploying.
 
@@ -86,7 +86,7 @@ For downloadable UE-V templates, see:
 
 - [Microsoft Authored Office 2016 UE-V Templates](https://gallery.technet.microsoft.com/Authored-Office-2016-32-0dc05cd8)
 
-- [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367) (for Office 2013 and Office 2010) 
+- [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367) (for Office 2013 and Office 2010)
 
 ### Desktop applications synchronized by default in UE-V
 
@@ -133,7 +133,7 @@ For Windows applications, the application developer specifies which user setting
 
 To display a list of Windows applications that can synchronize settings with their package family name, enabled status, and enabled source, open a Windows PowerShell window, type Get-UevAppxPackage, and press ENTER.
 
->**Note** 
+>**Note**
 Starting in Windows 10, version 1607, you can configure UE-V to not synchronize Windows applications settings if the device is configured to use Enterprise State Roaming.
 
 ### UE-V-support for roaming printers
@@ -197,7 +197,7 @@ You should also consider these things when you are preparing to deploy UE-V:
 
 -   [Computer clock synchronization](#synchronize-computer-clocks-for-ue-v-settings-synchronization)
 
-### Managing credentials synchronization in UE-V 
+### Managing credentials synchronization in UE-V
 
 Many enterprise applications, including Microsoft Outlook, Lync, and Skype for Business prompt users for their domain credentials when they log in. Users have the option of saving their credentials to disk to prevent having to enter them every time they open these applications. Enabling roaming credentials synchronization lets users save their credentials on one computer and avoid re-entering them on every computer they use in their environment. Users can synchronize some domain credentials with UE-V.
 
@@ -310,7 +310,7 @@ The UE-V settings storage location and settings template catalog support storing
 -   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
     - [Information about roaming profiles from the Directory Services team](https://blogs.technet.microsoft.com/askds/tag/roaming-profiles/)
-    
+
     - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009)
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.

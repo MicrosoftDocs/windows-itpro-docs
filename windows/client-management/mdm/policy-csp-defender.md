@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 01/08/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Defender policies  
+## Defender policies
 
 <dl>
   <dd>
@@ -151,7 +151,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
+<a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**
 
 <!--SupportedSKUs-->
 <table>
@@ -202,7 +202,7 @@ Allows or disallows scanning of archives.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Scan archive files*
 -   GP name: *Scan_DisableArchiveScanning*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
@@ -221,7 +221,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
+<a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**
 
 <!--SupportedSKUs-->
 <table>
@@ -267,12 +267,12 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on behavior monitoring*
 -   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
@@ -291,7 +291,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
+<a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**
 
 <!--SupportedSKUs-->
 <table>
@@ -342,7 +342,7 @@ To best protect your PC, Windows Defender will send information to Microsoft abo
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Join Microsoft MAPS*
 -   GP name: *SpynetReporting*
 -   GP element: *SpynetReporting*
@@ -362,7 +362,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
+<a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**
 
 <!--SupportedSKUs-->
 <table>
@@ -413,7 +413,7 @@ Allows or disallows scanning of email.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on e-mail scanning*
 -   GP name: *Scan_DisableEmailScanning*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
@@ -432,7 +432,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
+<a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**
 
 <!--SupportedSKUs-->
 <table>
@@ -483,7 +483,7 @@ Allows or disallows a full scan of mapped network drives.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Run full scan on mapped network drives*
 -   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
@@ -502,7 +502,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
+<a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**
 
 <!--SupportedSKUs-->
 <table>
@@ -553,7 +553,7 @@ Allows or disallows a full scan of removable drives. During a quick scan, remova
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Scan removable drives*
 -   GP name: *Scan_DisableRemovableDriveScanning*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
@@ -572,7 +572,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
+<a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**
 
 <!--SupportedSKUs-->
 <table>
@@ -618,12 +618,12 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Scan all downloaded files and attachments*
 -   GP name: *RealtimeProtection_DisableIOAVProtection*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
@@ -642,7 +642,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
+<a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**
 
 <!--SupportedSKUs-->
 <table>
@@ -704,7 +704,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
+<a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**
 
 <!--SupportedSKUs-->
 <table>
@@ -755,7 +755,7 @@ Allows or disallows Windows Defender On Access Protection functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Monitor file and program activity on your computer*
 -   GP name: *RealtimeProtection_DisableOnAccessProtection*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
@@ -774,7 +774,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
+<a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**
 
 <!--SupportedSKUs-->
 <table>
@@ -825,7 +825,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off real-time protection*
 -   GP name: *DisableRealtimeMonitoring*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
@@ -844,7 +844,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
+<a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -890,12 +890,12 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Allows or disallows a scanning of network files.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Scan network files*
 -   GP name: *Scan_DisableScanningNetworkFiles*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
@@ -914,7 +914,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
+<a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**
 
 <!--SupportedSKUs-->
 <table>
@@ -976,7 +976,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
+<a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -1027,7 +1027,7 @@ Allows or disallows user access to the Windows Defender UI. If disallowed, all W
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable headless UI mode*
 -   GP name: *UX_Configuration_UILockdown*
 -   GP path: *Windows Components/Microsoft Defender Antivirus/Client Interface*
@@ -1046,7 +1046,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
+<a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**
 
 <!--SupportedSKUs-->
 <table>
@@ -1099,7 +1099,7 @@ Value type is string.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Exclude files and paths from Attack Surface Reduction Rules*
 -   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
 -   GP element: *ExploitGuard_ASR_ASROnlyExclusions*
@@ -1112,7 +1112,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
+<a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**
 
 <!--SupportedSKUs-->
 <table>
@@ -1167,7 +1167,7 @@ Value type is string.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Attack Surface Reduction rules*
 -   GP name: *ExploitGuard_ASR_Rules*
 -   GP element: *ExploitGuard_ASR_Rules*
@@ -1180,7 +1180,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
+<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**
 
 <!--SupportedSKUs-->
 <table>
@@ -1226,7 +1226,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Represents the average CPU load factor for the Windows Defender scan (in percent).
 
 
@@ -1234,7 +1234,7 @@ The default value is 50.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the maximum percentage of CPU utilization during a scan*
 -   GP name: *Scan_AvgCPULoadFactor*
 -   GP element: *Scan_AvgCPULoadFactor*
@@ -1251,7 +1251,7 @@ Valid values: 0–100
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-checkforsignaturesbeforerunningscan"></a>**Defender/CheckForSignaturesBeforeRunningScan**  
+<a href="" id="defender-checkforsignaturesbeforerunningscan"></a>**Defender/CheckForSignaturesBeforeRunningScan**
 
 <!--SupportedSKUs-->
 <table>
@@ -1294,7 +1294,7 @@ Valid values: 0–100
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
+This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan.
 
 This setting applies to scheduled scans as well as the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
 
@@ -1304,14 +1304,14 @@ If you disable this setting or do not configure this setting, the scan will star
 
 Supported values:
 
-- 0 (default) - Disabled 
+- 0 (default) - Disabled
 - 1 - Enabled
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunningScan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Check for the latest virus and spyware definitions before running a scheduled scan*
 -   GP name: *CheckForSignaturesBeforeRunningScan*
 -   GP element: *CheckForSignaturesBeforeRunningScan*
@@ -1333,7 +1333,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
+<a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**
 
 <!--SupportedSKUs-->
 <table>
@@ -1382,16 +1382,16 @@ ADMX Info:
 
 Added in Windows 10, version 1709. This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
 
-If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency.
 
 For more information about specific values that are supported, see the Microsoft Defender Antivirus documentation site.
-      
+
 > [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Select cloud protection level*
 -   GP name: *MpEngine_MpCloudBlockLevel*
 -   GP element: *MpCloudBlockLevel*
@@ -1403,7 +1403,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0x0 - Default windows defender blocking level
-- 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
+- 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
 - 0x4 - High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
 - 0x6 - Zero tolerance blocking level – block all unknown executables
 
@@ -1413,7 +1413,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
+<a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**
 
 <!--SupportedSKUs-->
 <table>
@@ -1461,16 +1461,16 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1709. This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
 
-The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. 
+The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds.
 
-For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
+For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
 
 > [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure extended cloud check*
 -   GP name: *MpEngine_MpBafsExtendedTimeout*
 -   GP element: *MpBafsExtendedTimeout*
@@ -1483,7 +1483,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
+<a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**
 
 <!--SupportedSKUs-->
 <table>
@@ -1533,7 +1533,7 @@ Added in Windows 10, version 1709. This policy setting allows user-specified app
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure allowed applications*
 -   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
 -   GP element: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
@@ -1546,7 +1546,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
+<a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**
 
 <!--SupportedSKUs-->
 <table>
@@ -1596,7 +1596,7 @@ Added in Windows 10, version 1709. This policy settings allows adding user-speci
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure protected folders*
 -   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
 -   GP element: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
@@ -1609,7 +1609,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
+<a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**
 
 <!--SupportedSKUs-->
 <table>
@@ -1655,7 +1655,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Time period (in days) that quarantine items will be stored on the system.
 
 
@@ -1663,7 +1663,7 @@ The default value is 0, which keeps items in quarantine, and does not automatica
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure removal of items from Quarantine folder*
 -   GP name: *Quarantine_PurgeItemsAfterDelay*
 -   GP element: *Quarantine_PurgeItemsAfterDelay*
@@ -1680,7 +1680,7 @@ Valid values: 0–90
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-disablecatchupfullscan"></a>**Defender/DisableCatchupFullScan**  
+<a href="" id="defender-disablecatchupfullscan"></a>**Defender/DisableCatchupFullScan**
 
 <!--SupportedSKUs-->
 <table>
@@ -1723,22 +1723,22 @@ Valid values: 0–90
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run.
 
 If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
 
 Supported values:
 
 - 1 - Disabled (default)
-- 0 - Enabled 
+- 0 - Enabled
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on catch-up full scan*
 -   GP name: *Scan_DisableCatchupFullScan*
 -   GP element: *Scan_DisableCatchupFullScan*
@@ -1760,7 +1760,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-disablecatchupquickscan"></a>**Defender/DisableCatchupQuickScan**  
+<a href="" id="defender-disablecatchupquickscan"></a>**Defender/DisableCatchupQuickScan**
 
 <!--SupportedSKUs-->
 <table>
@@ -1803,7 +1803,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
 If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
@@ -1812,13 +1812,13 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 Supported values:
 
 - 1 - Disabled (default)
-- 0 - Enabled 
+- 0 - Enabled
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn on catch-up quick scan*
 -   GP name: *Scan_DisableCatchupQuickScan*
 -   GP element: *Scan_DisableCatchupQuickScan*
@@ -1840,7 +1840,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
+<a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**
 
 <!--SupportedSKUs-->
 <table>
@@ -1890,7 +1890,7 @@ Added in Windows 10, version 1709. This policy enables setting the state (On/Off
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Controlled folder access*
 -   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
 -   GP element: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
@@ -1911,7 +1911,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-enablelowcpupriority"></a>**Defender/EnableLowCPUPriority**  
+<a href="" id="defender-enablelowcpupriority"></a>**Defender/EnableLowCPUPriority**
 
 <!--SupportedSKUs-->
 <table>
@@ -1963,11 +1963,11 @@ If you disable or do not configure this setting, not changes will be made to CPU
 Supported values:
 
 - 0 - Disabled (default)
-- 1 - Enabled 
+- 1 - Enabled
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure low CPU priority for scheduled scans*
 -   GP name: *Scan_LowCpuPriority*
 -   GP element: *Scan_LowCpuPriority*
@@ -1989,7 +1989,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
+<a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**
 
 <!--SupportedSKUs-->
 <table>
@@ -2045,7 +2045,7 @@ If you do not configure this policy, network blocking will be disabled by defaul
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent users and apps from accessing dangerous websites*
 -   GP name: *ExploitGuard_EnableNetworkProtection*
 -   GP element: *ExploitGuard_EnableNetworkProtection*
@@ -2066,7 +2066,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
+<a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**
 
 <!--SupportedSKUs-->
 <table>
@@ -2112,12 +2112,12 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Path Exclusions*
 -   GP name: *Exclusions_Paths*
 -   GP element: *Exclusions_PathsList*
@@ -2130,7 +2130,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
+<a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**
 
 <!--SupportedSKUs-->
 <table>
@@ -2181,7 +2181,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Extension Exclusions*
 -   GP name: *Exclusions_Extensions*
 -   GP element: *Exclusions_ExtensionsList*
@@ -2194,7 +2194,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
+<a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**
 
 <!--SupportedSKUs-->
 <table>
@@ -2246,12 +2246,12 @@ Allows an administrator to specify a list of files opened by processes to ignore
 > [!IMPORTANT]
 > The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
- 
+
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Process Exclusions*
 -   GP name: *Exclusions_Processes*
 -   GP element: *Exclusions_ProcessesList*
@@ -2264,7 +2264,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
+<a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**
 
 <!--SupportedSKUs-->
 <table>
@@ -2327,7 +2327,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
+<a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**
 
 <!--SupportedSKUs-->
 <table>
@@ -2381,7 +2381,7 @@ Controls which sets of files should be monitored.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure monitoring for incoming and outgoing file and program activity*
 -   GP name: *RealtimeProtection_RealtimeScanDirection*
 -   GP element: *RealtimeProtection_RealtimeScanDirection*
@@ -2402,7 +2402,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
+<a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**
 
 <!--SupportedSKUs-->
 <table>
@@ -2453,7 +2453,7 @@ Selects whether to perform a quick scan or full scan.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the scan type to use for a scheduled scan*
 -   GP name: *Scan_ScanParameters*
 -   GP element: *Scan_ScanParameters*
@@ -2473,7 +2473,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
+<a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -2519,13 +2519,13 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Selects the time of day that the Windows Defender quick scan should run.
 
 > [!NOTE]
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
- 
+
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
@@ -2533,7 +2533,7 @@ The default value is 120
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the time for a daily quick scan*
 -   GP name: *Scan_ScheduleQuickScantime*
 -   GP element: *Scan_ScheduleQuickScantime*
@@ -2550,7 +2550,7 @@ Valid values: 0–1380
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
+<a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**
 
 <!--SupportedSKUs-->
 <table>
@@ -2604,7 +2604,7 @@ Selects the day that the Windows Defender scan should run.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the day of the week to run a scheduled scan*
 -   GP name: *Scan_ScheduleDay*
 -   GP element: *Scan_ScheduleDay*
@@ -2613,16 +2613,16 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 - 0 (default) – Every day
-- 1 – Sunday 
-- 2 – Monday 
-- 3 – Tuesday  
+- 1 – Sunday
+- 2 – Monday
+- 3 – Tuesday
 - 4 – Wednesday
-- 5 – Thursday  
-- 6 – Friday  
-- 7 – Saturday  
+- 5 – Thursday
+- 6 – Friday
+- 7 – Saturday
 - 8 – No scheduled scan
 
 <!--/SupportedValues-->
@@ -2631,7 +2631,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
+<a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -2691,7 +2691,7 @@ The default value is 120.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the time of day to run a scheduled scan*
 -   GP name: *Scan_ScheduleTime*
 -   GP element: *Scan_ScheduleTime*
@@ -2708,7 +2708,7 @@ Valid values: 0–1380.
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-signatureupdatefallbackorder"></a>**Defender/SignatureUpdateFallbackOrder**  
+<a href="" id="defender-signatureupdatefallbackorder"></a>**Defender/SignatureUpdateFallbackOrder**
 
 <!--SupportedSKUs-->
 <table>
@@ -2751,16 +2751,16 @@ Valid values: 0–1380.
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to define the order in which different definition update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources in order. 
+This policy setting allows you to define the order in which different definition update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources in order.
 
-Possible values are: 
+Possible values are:
 
 - InternalDefinitionUpdateServer
 - MicrosoftUpdateServer
 - MMPC
 - FileShares
 
-For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
+For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC
 
 If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
 
@@ -2770,7 +2770,7 @@ OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Define the order of sources for downloading definition updates*
 -   GP name: *SignatureUpdate_FallbackOrder*
 -   GP element: *SignatureUpdate_FallbackOrder*
@@ -2792,7 +2792,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-signatureupdatefilesharessources"></a>**Defender/SignatureUpdateFileSharesSources**  
+<a href="" id="defender-signatureupdatefilesharessources"></a>**Defender/SignatureUpdateFileSharesSources**
 
 <!--SupportedSKUs-->
 <table>
@@ -2835,9 +2835,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. 
+This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources.
 
-For example: \\unc1\Signatures | \\unc2\Signatures  
+For example: \\unc1\Signatures | \\unc2\Signatures
 
 The list is empty by default.
 
@@ -2849,7 +2849,7 @@ OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSour
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Define file shares for downloading definition updates*
 -   GP name: *SignatureUpdate_DefinitionUpdateFileSharesSources*
 -   GP element: *SignatureUpdate_DefinitionUpdateFileSharesSources*
@@ -2871,7 +2871,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
+<a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**
 
 <!--SupportedSKUs-->
 <table>
@@ -2917,7 +2917,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
 
@@ -2929,7 +2929,7 @@ OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify the interval to check for definition updates*
 -   GP name: *SignatureUpdate_SignatureUpdateInterval*
 -   GP element: *SignatureUpdate_SignatureUpdateInterval*
@@ -2946,7 +2946,7 @@ Valid values: 0–24.
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
+<a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**
 
 <!--SupportedSKUs-->
 <table>
@@ -2992,12 +2992,12 @@ Valid values: 0–24.
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Send file samples when further analysis is required*
 -   GP name: *SubmitSamplesConsent*
 -   GP element: *SubmitSamplesConsent*
@@ -3019,7 +3019,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
+<a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**
 
 <!--SupportedSKUs-->
 <table>
@@ -3064,7 +3064,7 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
- 
+
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
@@ -3088,7 +3088,7 @@ The following list shows the supported values for possible actions:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify threat alert levels at which default action should not be taken when detected*
 -   GP name: *Threats_ThreatSeverityDefaultAction*
 -   GP element: *Threats_ThreatSeverityDefaultActionList*

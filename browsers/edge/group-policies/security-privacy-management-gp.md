@@ -6,21 +6,21 @@ manager: dansimp
 ms.author: dansimp
 author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ms.topic: reference
 ---
 
-# Security and privacy 
+# Security and privacy
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
-Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. Because Microsoft Edge is designed like a Universal Windows app, changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the different content processes all live within app container sandboxes. 
+Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. Because Microsoft Edge is designed like a Universal Windows app, changing the browser to an app, it fundamentally changes the process model so that both the outer manager process and the different content processes all live within app container sandboxes.
 
-Microsoft Edge runs in 64-bit not just by default, but anytime it’s running on a 64-bit operating system. Because Microsoft Edge doesn’t support legacy ActiveX controls or 3rd-party binary extensions, there’s no longer a reason to run 32-bit processes on a 64-bit system. 
+Microsoft Edge runs in 64-bit not just by default, but anytime it’s running on a 64-bit operating system. Because Microsoft Edge doesn’t support legacy ActiveX controls or 3rd-party binary extensions, there’s no longer a reason to run 32-bit processes on a 64-bit system.
 
-The value of running 64-bit all the time is that it strengthens Windows Address Space Layout Randomization (ASLR), randomizing the memory layout of the browser processes, making it much harder for attackers to hit precise memory locations. In turn, 64-bit processes make ASLR much more effective by making the address space exponentially larger and, therefore, more difficult for attackers to find sensitive memory components. 
+The value of running 64-bit all the time is that it strengthens Windows Address Space Layout Randomization (ASLR), randomizing the memory layout of the browser processes, making it much harder for attackers to hit precise memory locations. In turn, 64-bit processes make ASLR much more effective by making the address space exponentially larger and, therefore, more difficult for attackers to find sensitive memory components.
 
 For more details on the security features in Microsoft Edge, see [Help protect against web-based security threats](#help-protect-against-web-based-security-threats) below.
 
@@ -37,13 +37,13 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 ## Configure Windows Defender SmartScreen
 [!INCLUDE [configure-windows-defender-smartscreen-include](../includes/configure-windows-defender-smartscreen-include.md)]
 
-## Prevent bypassing Windows Defender SmartScreen prompts for files 
+## Prevent bypassing Windows Defender SmartScreen prompts for files
 [!INCLUDE [prevent-bypassing-win-defender-files-include](../includes/prevent-bypassing-win-defender-files-include.md)]
 
-## Prevent bypassing Windows Defender SmartScreen prompts for sites 
+## Prevent bypassing Windows Defender SmartScreen prompts for sites
 [!INCLUDE [prevent-bypassing-win-defender-sites-include](../includes/prevent-bypassing-win-defender-sites-include.md)]
 
-## Prevent certificate error overrides 
+## Prevent certificate error overrides
 [!INCLUDE [prevent-certificate-error-overrides-include](../includes/prevent-certificate-error-overrides-include.md)]
 
 ## Prevent using Localhost IP address for WebRTC

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -23,7 +23,7 @@ Use to specify enterprise-specific mobile device management configuration settin
 | --- | :---: | :---: | :---: | :---: | :---: |
 | UpdateManagementServiceAddress | X  | X | X |  | X |
 
-For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. 
+For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions.
 
 ## Related topics
 

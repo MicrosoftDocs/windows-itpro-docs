@@ -2,7 +2,7 @@
 title: Perform an in-place upgrade to Windows 10 with MDT (Windows 10)
 description: The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
 ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: upgrade, update, task sequence, deploy
@@ -21,17 +21,17 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. 
+The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
 
 >[!TIP]
->In-place upgrade is the preferred method to use when migrating from Windows 10 to a later release of Windows 10, and is also a preferred method for upgrading from Windows 7 or 8.1 if you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple. 
+>In-place upgrade is the preferred method to use when migrating from Windows 10 to a later release of Windows 10, and is also a preferred method for upgrading from Windows 7 or 8.1 if you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple.
 
 In-place upgrade differs from [computer refresh](refresh-a-windows-7-computer-with-windows-10.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 10 image to the production deployment share specifically to perform an in-place upgrade.
 
-Three computers are used in this topic: DC01, MDT01, and PC0002. 
+Three computers are used in this topic: DC01, MDT01, and PC0002.
 
 - DC01 is a domain controller for the contoso.com domain
-- MDT01 is a domain member server 
+- MDT01 is a domain member server
 - PC0002 is a domain member computer running Windows 7 SP1, targeted for the Windows 10 upgrade
 
  ![computers](../images/mdt-upgrade.png)
@@ -91,7 +91,7 @@ To initiate the in-place upgrade, perform the following steps on PC0002 (the dev
 On **PC0002**:
 
 1. Start the MDT deployment wizard by running the following command: **\\\\MDT01\\MDTProduction$\\Scripts\\LiteTouch.vbs**
-2. Select the **Windows 10 Enterprise x64 RTM Upgrade** task sequence, and then click **Next**. 
+2. Select the **Windows 10 Enterprise x64 RTM Upgrade** task sequence, and then click **Next**.
 3. Select one or more applications to install (will appear if you use custom image): Install - Adobe Reader
 4. On the **Ready** tab, click **Begin** to start the task sequence.
    When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.

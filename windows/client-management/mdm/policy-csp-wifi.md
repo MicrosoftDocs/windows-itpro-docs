@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Wifi policies  
+## Wifi policies
 
 <dl>
   <dd>
@@ -49,7 +49,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
+<a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**
 
 <hr/>
 
@@ -62,7 +62,7 @@ This policy has been deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
+<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**
 
 <!--SupportedSKUs-->
 <table>
@@ -111,7 +111,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
 -   GP name: *WiFiSense*
 -   GP path: *Network/WLAN Service/WLAN Settings*
@@ -130,7 +130,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
+<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**
 
 <!--SupportedSKUs-->
 <table>
@@ -179,7 +179,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
 -   GP name: *NC_ShowSharedAccessUI*
 -   GP path: *Network/Network Connections*
@@ -198,7 +198,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
+<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**
 
 <!--SupportedSKUs-->
 <table>
@@ -261,7 +261,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
+<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**
 
 <!--SupportedSKUs-->
 <table>
@@ -321,7 +321,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
+<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**
 
 <!--SupportedSKUs-->
 <table>
@@ -379,7 +379,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
+<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**
 
 <!--SupportedSKUs-->
 <table>

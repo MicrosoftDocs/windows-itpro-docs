@@ -2,7 +2,7 @@
 title: Why a PIN is better than a password (Windows 10)
 description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password .
 ms.assetid: A6FC0520-01E6-4E90-B53D-6C4C4E780212
-ms.reviewer: 
+ms.reviewer:
 keywords: pin, security, password, hello
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -44,7 +44,7 @@ When the PIN is created, it establishes a trusted relationship with the identity
 
 >[!NOTE]
 >For details on how Hello uses asymetric key pairs for authentication, see [Windows Hello for Business](hello-overview.md#benefits-of-windows-hello).
- 
+
 ## PIN is backed by hardware
 
 The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. All Windows 10 Mobile phones and many modern laptops have TPM.
@@ -67,14 +67,14 @@ You can provide additional protection for laptops that don't have TPM by enablin
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
     **Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Require additional authentication at startup**
-    
+
 2.  In the policy option, select **Allow BitLocker without a compatible TPM**, and then click **OK.**
 3.  Go to Control Panel > **System and Security > BitLocker Drive Encryption** and select the operating system drive to protect.
 **Set account lockout threshold**
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
     **Computer Configuration > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Account lockout threshold**
-    
+
 2.  Set the number of invalid logon attempts to allow, and then click OK.
 
 ## Why do you need a PIN to use biometrics?

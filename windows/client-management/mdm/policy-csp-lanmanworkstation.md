@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## LanmanWorkstation policies  
+## LanmanWorkstation policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**  
+<a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**
 
 <!--SupportedSKUs-->
 <table>
@@ -84,7 +84,7 @@ Insecure guest logons are used by file servers to allow unauthenticated access t
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enable insecure guest logons*
 -   GP name: *Pol_EnableInsecureGuestLogons*
 -   GP path: *Network/Lanman Workstation*

@@ -2,7 +2,7 @@
 title: RemoteRing CSP
 description: RemoteRing CSP
 ms.assetid: 70015243-c07f-46cb-a0f9-4b4ad13a5609
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,7 +21,7 @@ The following diagram shows the RemoteRing configuration service provider in tre
 
 ![provisioning\-csp\-remotering](images/provisioning-csp-remotering.png)
 
-<a href="" id="ring"></a>**Ring**  
+<a href="" id="ring"></a>**Ring**
 Required. The node accepts requests to ring the device.
 
 The supported operation is Exec.
@@ -42,9 +42,9 @@ The following sample shows how to initiate a remote ring on the device.
 </Exec>
 ```
 
- 
 
- 
+
+
 
 
 

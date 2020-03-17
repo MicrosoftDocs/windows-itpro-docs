@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - BITS
-description: Use StartTime, EndTime and Transfer rate together to define the BITS bandwidth-throttling schedule and transfer rate. 
+description: Use StartTime, EndTime and Transfer rate together to define the BITS bandwidth-throttling schedule and transfer rate.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -8,16 +8,16 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Policy CSP - BITS
 
-The following bandwidth policies are used together to define the bandwidth-throttling schedule and transfer rate. 
+The following bandwidth policies are used together to define the bandwidth-throttling schedule and transfer rate.
 
-- BITS/BandwidthThrottlingEndTime  
-- BITS/BandwidthThrottlingStartTime  
+- BITS/BandwidthThrottlingEndTime
+- BITS/BandwidthThrottlingStartTime
 - BITS/BandwidthThrottlingTransferRate
 
 If BITS/BandwidthThrottlingStartTime or BITS/BandwidthThrottlingEndTime are NOT defined, but BITS/BandwidthThrottlingTransferRate IS defined, then default values will be used for StartTime and EndTime (8 AM and 5 PM respectively). The time policies are based on the 24-hour clock.
@@ -25,7 +25,7 @@ If BITS/BandwidthThrottlingStartTime or BITS/BandwidthThrottlingEndTime are NOT 
 <hr/>
 
 <!--Policies-->
-## BITS policies  
+## BITS policies
 
 <dl>
   <dd>
@@ -52,7 +52,7 @@ If BITS/BandwidthThrottlingStartTime or BITS/BandwidthThrottlingEndTime are NOT 
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-bandwidththrottlingendtime"></a>**BITS/BandwidthThrottlingEndTime**  
+<a href="" id="bits-bandwidththrottlingendtime"></a>**BITS/BandwidthThrottlingEndTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -113,7 +113,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_BandwidthLimitSchedTo*
@@ -135,7 +135,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-bandwidththrottlingstarttime"></a>**BITS/BandwidthThrottlingStartTime**  
+<a href="" id="bits-bandwidththrottlingstarttime"></a>**BITS/BandwidthThrottlingStartTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -196,7 +196,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_BandwidthLimitSchedFrom*
@@ -218,7 +218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-bandwidththrottlingtransferrate"></a>**BITS/BandwidthThrottlingTransferRate**  
+<a href="" id="bits-bandwidththrottlingtransferrate"></a>**BITS/BandwidthThrottlingTransferRate**
 
 <!--SupportedSKUs-->
 <table>
@@ -279,7 +279,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_MaxTransferRateText*
@@ -301,7 +301,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-costednetworkbehaviorbackgroundpriority"></a>**BITS/CostedNetworkBehaviorBackgroundPriority**  
+<a href="" id="bits-costednetworkbehaviorbackgroundpriority"></a>**BITS/CostedNetworkBehaviorBackgroundPriority**
 
 <!--SupportedSKUs-->
 <table>
@@ -357,7 +357,7 @@ For example, you can specify that background jobs are by default to transfer onl
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set default download behavior for BITS jobs on costed networks*
 -   GP name: *BITS_SetTransferPolicyOnCostedNetwork*
 -   GP element: *BITS_TransferPolicyNormalPriorityValue*
@@ -379,7 +379,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-costednetworkbehaviorforegroundpriority"></a>**BITS/CostedNetworkBehaviorForegroundPriority**  
+<a href="" id="bits-costednetworkbehaviorforegroundpriority"></a>**BITS/CostedNetworkBehaviorForegroundPriority**
 
 <!--SupportedSKUs-->
 <table>
@@ -435,7 +435,7 @@ For example, you can specify that foreground jobs are by default to transfer onl
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set default download behavior for BITS jobs on costed networks*
 -   GP name: *BITS_SetTransferPolicyOnCostedNetwork*
 -   GP element: *BITS_TransferPolicyForegroundPriorityValue*
@@ -457,7 +457,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bits-jobinactivitytimeout"></a>**BITS/JobInactivityTimeout**  
+<a href="" id="bits-jobinactivitytimeout"></a>**BITS/JobInactivityTimeout**
 
 <!--SupportedSKUs-->
 <table>
@@ -509,14 +509,14 @@ Value type is integer. Default is 90 days.
 
 Supported values range: 0 - 999
 
-Consider increasing the timeout value if computers tend to stay offline for a long period of time and still have pending jobs. 
+Consider increasing the timeout value if computers tend to stay offline for a long period of time and still have pending jobs.
 Consider decreasing this value if you are concerned about orphaned jobs occupying disk space.
 
 If you disable or do not configure this policy setting, the default value of 90 (days) will be used for the inactive job timeout.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Timeout for inactive BITS jobs*
 -   GP name: *BITS_Job_Timeout*
 -   GP element: *BITS_Job_Timeout_Time*

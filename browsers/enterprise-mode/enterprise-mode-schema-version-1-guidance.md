@@ -6,7 +6,7 @@ description: Use the Enterprise Mode Site List Manager to create and update your
 author: dansimp
 ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
@@ -23,7 +23,7 @@ ms.date: 07/27/2017
 - Windows 8.1
 - Windows 7
 
-Use the Enterprise Mode Site List Manager (schema v.1) to create and update your Enterprise Mode site list for devices running the v.1 version of the schema, or the Enterprise Mode Site List Manager (schema v.2) to create and update your Enterprise Mode site list for devices running the v.2 version of the schema. We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md). 
+Use the Enterprise Mode Site List Manager (schema v.1) to create and update your Enterprise Mode site list for devices running the v.1 version of the schema, or the Enterprise Mode Site List Manager (schema v.2) to create and update your Enterprise Mode site list for devices running the v.2 version of the schema. We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
 If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
@@ -188,7 +188,7 @@ Where https://fabrikam.com doesn't use IE8 Enterprise Mode, but https://fabrikam
 </table>
 
 ### Using Enterprise Mode and document mode together
-If you want to use both Enterprise Mode and document mode together, you need to be aware that  &lt;emie&gt; entries override &lt;docMode&gt; entries for the same domain. 
+If you want to use both Enterprise Mode and document mode together, you need to be aware that  &lt;emie&gt; entries override &lt;docMode&gt; entries for the same domain.
 
 For example, say you want all of the sites in the contoso.com domain to open using IE8 Enterprise Mode, except test.contoso.com, which needs to open in document mode 11. Because Enterprise Mode takes precedence over document mode, if you want test.contoso.com to open using document mode, you'll need to explicitly add it as an exclusion to the &lt;emie&gt; parent node.
 

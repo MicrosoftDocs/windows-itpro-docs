@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ksarens 
+ms.reviewer: ksarens
 manager: dansimp
 ---
 
@@ -37,7 +37,7 @@ MpCmdRun.exe [command] [-options]
 Here's an example:
 ```
 MpCmdRun.exe -Scan -ScanType 2
-``` 
+```
 
 | Command  | Description   |
 |:----|:----|

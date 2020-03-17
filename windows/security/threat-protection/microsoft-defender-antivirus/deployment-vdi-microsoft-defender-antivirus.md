@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 01/31/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -51,13 +51,13 @@ You can also download the whitepaper [Microsoft Defender Antivirus on Virtual De
 In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), Group Policy, or PowerShell.
 
 > [!TIP]
-> If you don't already have Intune, [try it for free](https://docs.microsoft.com/intune/fundamentals/free-trial-sign-up)! 
+> If you don't already have Intune, [try it for free](https://docs.microsoft.com/intune/fundamentals/free-trial-sign-up)!
 
 Open the Intune Management Portal either by searching for Intune on [https://portal.azure.com](https://portal.azure.com) or going to [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com) and logging in.
 
 #### To create a group with only the devices or users you specify
 
-1. Go to **Groups** > **New group**. 
+1. Go to **Groups** > **New group**.
 
 2. Specify the following values:
    - Group type: **Security**
@@ -65,13 +65,13 @@ Open the Intune Management Portal either by searching for Intune on [https://por
    - Group description: *Optional*
    - Membership type: **Assigned**
 
-3. Add the devices or users you want to be a part of this test and then click **Create** to save the group. 
+3. Add the devices or users you want to be a part of this test and then click **Create** to save the group.
 
 It’s a good idea to create a couple of groups, one with VMs running the latest Insider Preview build and with the shared security intelligence update feature enabled, and another with VMs that are running Windows 10 1809 or earlier versions. This will help when you create dashboards to test the performance changes.
 
 #### To create a group that will include any machine in your tenant that is a VM, even when they are newly created
 
-1. Go to **Groups** > **New group**. 
+1. Go to **Groups** > **New group**.
 
 2. Specify the following values:
    - Group type: **Security**
@@ -79,11 +79,11 @@ It’s a good idea to create a couple of groups, one with VMs running the latest
    - Group description: *Optional*
    - Membership type: **Dynamic Device**
 
-3. Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**. 
+3. Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**.
 
 4. Click **Add query** and then **Create** to save the group.
 
-5. Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one. 
+5. Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one.
 
 #### Create a new device configuration profile
 
@@ -98,11 +98,11 @@ In this example, we create a new device configuration profile by clicking **Crea
    - Data type: **String**
    - `\\<sharedlocation\>\wdav-update\` (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
 
-3. Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. 
+3. Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade.
 
 4. Click **Create** to save the new profile. The profile details page now appears.
 
-5. Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
+5. Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**.
 
 6. Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
 
@@ -120,7 +120,7 @@ The profile will now be deployed to the impacted devices. This may take some tim
 
 5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
-6. Enter `\\<sharedlocation\>\wdav-update` (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). 
+6. Enter `\\<sharedlocation\>\wdav-update` (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be).
 
 7. Click **OK**.
 
@@ -129,7 +129,7 @@ The profile will now be deployed to the impacted devices. This may take some tim
 #### Use PowerShell to enable the shared security intelligence feature
 
 Use the following cmdlet to enable the feature. You’ll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
-    
+
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
 ```
@@ -151,11 +151,11 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd $vdmpath & c: & mpam-fe.exe /x" 
+cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
-You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update. 
-We suggest starting with once a day – but you should experiment with increasing or decreasing the frequency to understand the impact. 
+You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
+We suggest starting with once a day – but you should experiment with increasing or decreasing the frequency to understand the impact.
 
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn’t advised because it will increase the network overhead on your management machine for no benefit.
 
@@ -165,12 +165,12 @@ Security intelligence packages are typically published once every three to four 
 
 2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Click **New…** Select **Daily** and click **OK**.
 
-3. Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Click **OK**. 
+3. Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Click **OK**.
 
-4. You can choose to configure additional settings if you wish. 
+4. You can choose to configure additional settings if you wish.
 
 5. Click **OK** to save the scheduled task.
- 
+
 
 You can initiate the update manually by right-clicking on the task and clicking **Run**.
 
@@ -205,7 +205,7 @@ Quick scans are the preferred approach as they are designed to look in all place
 
 1. Expand the tree to **Windows components > Windows Defender > Scan**.
 
-2. Double-click **Specify the scan type to use for a scheduled scan** and set the option to **Enabled** and **Quick scan**. 
+2. Double-click **Specify the scan type to use for a scheduled scan** and set the option to **Enabled** and **Quick scan**.
 
 3. Click **OK**.
 
@@ -213,11 +213,11 @@ Quick scans are the preferred approach as they are designed to look in all place
 
 Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Microsoft Defender Antivirus user interface.
 
-1. Expand the tree to **Windows components > Windows Defender > Client Interface**. 
+1. Expand the tree to **Windows components > Windows Defender > Client Interface**.
 
-2. Double-click **Suppress all notifications** and set the option to **Enabled**. 
+2. Double-click **Suppress all notifications** and set the option to **Enabled**.
 
-3. Click **OK**. 
+3. Click **OK**.
 
 This prevents notifications from Microsoft Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
 
@@ -228,30 +228,30 @@ This setting will prevent a scan from occurring after receiving an update. You c
 > [!IMPORTANT]
 > Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-1. Expand the tree to **Windows components > Windows Defender > Signature Updates**. 
+1. Expand the tree to **Windows components > Windows Defender > Signature Updates**.
 
-2. Double-click **Turn on scan after signature update** and set the option to **Disabled**. 
+2. Double-click **Turn on scan after signature update** and set the option to **Disabled**.
 
-3. Click **OK**. 
+3. Click **OK**.
 
 This prevents a scan from running immediately after an update.
 
-### Scan VMs that have been offline 
+### Scan VMs that have been offline
 
-1. Expand the tree to **Windows components > Windows Defender > Scan**. 
+1. Expand the tree to **Windows components > Windows Defender > Scan**.
 
-2. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. 
+2. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
 
-3. Click **OK**. 
+3. Click **OK**.
 
 This forces a scan if the VM has missed two or more consecutive scheduled scans.
 
 
 ### Enable headless UI mode
 
-1. Double-click **Enable headless UI mode** and set the option to **Enabled**. 
+1. Double-click **Enable headless UI mode** and set the option to **Enabled**.
 
-2. Click **OK**. 
+2. Click **OK**.
 
 This hides the entire Microsoft Defender AV user interface from users.
 

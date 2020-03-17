@@ -2,7 +2,7 @@
 title: Windows 10 deployment scenarios and tools
 description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -46,7 +46,7 @@ Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS
 In Windows 10, you can use Windows PowerShell for many of the functions performed by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
 ``` syntax
-Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
+Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All
 -Source D:\Sources\SxS -LimitAccess
 ```
 
@@ -60,10 +60,10 @@ For more information on DISM, see [DISM technical reference](https://go.microsof
 
 USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and System Center 2012 R2 Configuration Manager use USMT as part of the operating system deployment process.
 
-**Note**  
+**Note**
 Occasionally, we find that customers are wary of USMT because they believe it requires significant configuration, but, as you will learn below, using USMT is not difficult. If you use MDT and Lite Touch to deploy your machines, the USMT feature is automatically configured and extended so that it is easy to use. With MDT, you do nothing at all and USMT just works.
 
- 
+
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
@@ -88,7 +88,7 @@ By default USMT migrates many settings, most of which are related to the user pr
 -   Folders from each profile, including those from user profiles as well as shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
 -   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
 
-    **Note**  
+    **Note**
     The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
 
 -   Operating system component settings
@@ -187,10 +187,10 @@ MDT is a free deployment solution from Microsoft. It provides end-to-end guidanc
 
 MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to System Center 2012 R2 Configuration Manager.
 
-**Note**  
+**Note**
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
- 
+
 
 ![figure 11](images/mdt-11-fig13.png)
 

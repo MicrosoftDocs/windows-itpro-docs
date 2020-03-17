@@ -13,7 +13,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -42,7 +42,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 4. Select the folder where you'd like to save the query.
     - **Shared queries** — shared to all users in the your organization
     - **My queries** — accessible only to you
-    
+
 5. Select **Save**.
 
 ## Delete or rename a query
@@ -55,8 +55,8 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Create a direct link to a query
 To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.
 
-## Access queries in the GitHub repository  
-Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 
+## Access queries in the GitHub repository
+Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
 
 >[!TIP]
 >Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](threat-analytics.md) reports in Microsoft Defender Security Center.

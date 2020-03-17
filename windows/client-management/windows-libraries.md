@@ -1,6 +1,6 @@
 ---
 ms.assetid: e68cd672-9dea-4ff8-b725-a915f33d8fd2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 title: Windows Libraries
 ms.prod: windows-server-threshold

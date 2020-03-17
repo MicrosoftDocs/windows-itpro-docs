@@ -8,13 +8,13 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # NetworkQoSPolicy (Windows Configuration Designer reference)
 
-Use to create network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. 
+Use to create network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions.
 
 ## Applies to
 
@@ -23,7 +23,7 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 | All settings |   |  | X |  |  |
 
 1. In **Available customizations**, select **NetworkQ0SPolicy**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. 
+2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure.
 
 | Setting | Description |
 | --- | --- |

@@ -5,7 +5,7 @@ description: How to use Setup Information (.inf) files to create installation pa
 author: dansimp
 ms.prod: ie11
 ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -38,9 +38,9 @@ IEAK 11 uses Setup information (.inf) files to provide uninstallation instructi
 
 -   You can't use **CopyFiles** to copy a file to another place on your hard drive, it can only copy files from the source disk to the destination directory. For information, see [INF CopyFiles Directive](https://go.microsoft.com/fwlink/p/?LinkId=298510).
 
- 
 
- 
+
+
 
 
 

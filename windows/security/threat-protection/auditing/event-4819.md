@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,32 +38,32 @@ For example, it generates when a new [Central Access Policy](https://technet.mic
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4819</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13573</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-10T01:00:34.352877700Z" /> 
- <EventRecordID>1187659</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="3500" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4819</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13573</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-10T01:00:34.352877700Z" />
+ <EventRecordID>1187659</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="3500" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DC01$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="ObjectServer">LSA</Data> 
- <Data Name="ObjectType">Central Access Policies</Data> 
- <Data Name="AddedCAPs">Main POlicy</Data> 
- <Data Name="DeletedCAPs" /> 
- <Data Name="ModifiedCAPs" /> 
- <Data Name="AsIsCAPs" /> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DC01$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="ObjectServer">LSA</Data>
+ <Data Name="ObjectType">Central Access Policies</Data>
+ <Data Name="AddedCAPs">Main POlicy</Data>
+ <Data Name="DeletedCAPs" />
+ <Data Name="ModifiedCAPs" />
+ <Data Name="AsIsCAPs" />
  </EventData>
 </Event>
 
@@ -136,5 +136,5 @@ For 4819(S): Central Access Policies on the machine have been changed.
 
 -   This event can help you to track modifications, additions and deletions of Central Access Policies if it is required by your security monitoring policy.
 
--   
+-
 

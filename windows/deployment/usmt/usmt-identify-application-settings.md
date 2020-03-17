@@ -53,9 +53,9 @@ See [Migrate Application Settings](migrate-application-settings.md) and follow t
 
 [Determine What to Migrate](usmt-determine-what-to-migrate.md)
 
- 
 
- 
+
+
 
 
 

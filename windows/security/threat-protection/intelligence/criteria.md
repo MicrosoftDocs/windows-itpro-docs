@@ -1,6 +1,6 @@
 ---
 title: How Microsoft identifies malware and potentially unwanted applications
-ms.reviewer: 
+ms.reviewer:
 description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it is malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
 ms.prod: w10
@@ -11,14 +11,14 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
 
-Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you are protected against known threats and warned about software that is unknown to us.  
+Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you are protected against known threats and warned about software that is unknown to us.
 
 You can assist Microsoft by [submitting unknown or suspicious software for analysis](https://www.microsoft.com/wdsi/filesubmission/). This will help ensure that unknown or suspicious software is scanned by our system to start establishing reputation. [Learn more about submitting files for analysis](submission-guide.md)
 
@@ -27,7 +27,7 @@ The next sections provide an overview of the classifications we use for applicat
 >[!NOTE]
 > New forms of malware and potentially unwanted applications are being developed and distributed rapidly. The following list may not be comprehensive, and Microsoft reserves the right to adjust, expand, and update these without prior notice or announcement.
 
-## Unknown – Unrecognized software  
+## Unknown – Unrecognized software
 
 No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program.
 

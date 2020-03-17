@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -117,7 +117,7 @@ Some of the functionality includes:
 - Export detailed device timeline events
   - Export the device timeline for the current date or a specified date range up to seven days.
 
-More details about certain events are provided in the **Additional information** section. These details vary depending on the type of event, for example: 
+More details about certain events are provided in the **Additional information** section. These details vary depending on the type of event, for example:
 
 - Contained by Application Guard - the web browser event was restricted by an isolated container
 - Active threat detected - the threat detection occurred while the threat was running

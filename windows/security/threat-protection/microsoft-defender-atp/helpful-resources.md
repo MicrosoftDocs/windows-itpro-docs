@@ -13,8 +13,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ---
 
 # Helpful Microsoft Defender Advanced Threat Protection resources

@@ -2,7 +2,7 @@
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
 ms.assetid: 421CC07D-6000-48D9-B6A3-C638AAF83984
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -24,7 +24,7 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
 
 > [!Note]
-> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a convenience PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again. 
+> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a convenience PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
 
 > [!Note]
 > The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
@@ -59,8 +59,8 @@ Here's an example:
 
 > [!Tip]
 > In this example the double \\\ is required because it's in JSON and JSON escapes \ into \\\\. If an MDM server uses JSON parser\composer, they should ask customers to type only one \\, which will be \\\ in the JSON. If user types \\\\, it'll become \\\\\\\ in JSON, which will cause erroneous results. For the same reason, domain\account used in Configuration xml does not need \\\ but only one \\, because xml does not (need to) escape \\.
-> 
-> This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string. 
+>
+> This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string.
 
 When configuring the kiosk mode app, the account name will be used to find the target user. The account name includes domain name and user name.
 
@@ -317,7 +317,7 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-    
+
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
         <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
@@ -489,7 +489,7 @@ Schema for Windows 10 prerelease
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-  
+
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />
@@ -966,7 +966,7 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
-Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD. 
+Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1287,12 +1287,12 @@ ShellLauncher V2 Add
         <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
 xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Profiles>
-                <DefaultProfile> 
-                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
-                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"--> 
-                        <DefaultAction Action="RestartShell"/> 
-                    </Shell> 
-                </DefaultProfile> 
+                <DefaultProfile>
+                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true">
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </DefaultProfile>
                 <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
                     <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
                         <ReturnCodeActions>

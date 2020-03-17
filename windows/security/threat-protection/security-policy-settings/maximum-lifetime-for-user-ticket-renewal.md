@@ -2,7 +2,7 @@
 title: Maximum lifetime for user ticket renewal (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for user ticket renewal security policy setting.
 ms.assetid: f88cd819-3dd1-4e38-b560-13fe6881b609
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -49,13 +49,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| 7 days| 
-| Default Domain Controller Policy| Not defined| 
-| Stand-Alone Server Default Settings | Not applicable| 
-| Domain Controller Effective Default Settings | 7 days| 
-| Member Server Effective Default Settings | Not applicable| 
-| Client Computer Effective Default Settings | Not applicable| 
- 
+| Default Domain Policy| 7 days|
+| Default Domain Controller Policy| Not defined|
+| Stand-Alone Server Default Settings | Not applicable|
+| Domain Controller Effective Default Settings | 7 days|
+| Member Server Effective Default Settings | Not applicable|
+| Client Computer Effective Default Settings | Not applicable|
+
 ### Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -91,7 +91,7 @@ Configure the **Maximum lifetime for user ticket renewal** setting to 7 days.
 
 ### Potential impact
 
-Seven (7) days is the default configuration. Changing the default configuration is a tradeoff between user convenience and security. A shorter time period requires users to authenticate with a DC more often, but remote users who authenticate with a DC infrequently can be locked out of services until they reauthenticate. 
+Seven (7) days is the default configuration. Changing the default configuration is a tradeoff between user convenience and security. A shorter time period requires users to authenticate with a DC more often, but remote users who authenticate with a DC infrequently can be locked out of services until they reauthenticate.
 
 ## Related topics
 

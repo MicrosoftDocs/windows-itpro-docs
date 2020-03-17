@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -78,14 +78,14 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
         - Execute a script on the remote device from the files library
 
 For more information on the available commands, see [Investigate devices using Live response](live-response.md).
-  
+
 ## Edit roles
 
 1. Select the role you'd like to edit.
 
 2. Click **Edit**.
 
-3. Modify the details or the groups that are assigned to the role. 
+3. Modify the details or the groups that are assigned to the role.
 
 4. Click **Save and close**.
 

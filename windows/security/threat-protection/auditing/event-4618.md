@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -59,30 +59,30 @@ Account must have **SeAuditPrivilege** (Generate security audits) to be able to 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4618</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12290</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-11T21:42:33.264246700Z" /> 
- <EventRecordID>1198759</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="528" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4618</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12290</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-11T21:42:33.264246700Z" />
+ <EventRecordID>1198759</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="528" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="EventId">4624</Data> 
- <Data Name="ComputerName">DC01.contoso.local</Data> 
- <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetUserDomain">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x1</Data> 
- <Data Name="EventCount">10</Data> 
- <Data Name="Duration">“Hour"</Data> 
+ <Data Name="EventId">4624</Data>
+ <Data Name="ComputerName">DC01.contoso.local</Data>
+ <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetUserDomain">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x1</Data>
+ <Data Name="EventCount">10</Data>
+ <Data Name="Duration">“Hour"</Data>
  </EventData>
 </Event>
 

@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs
@@ -36,7 +36,7 @@ Collect the WIP audit logs from your employee’s devices by following the guida
 
 >[!Note]
 >The **Data** element in the response includes the requested audit logs in an XML-encoded format.
-    
+
 ### User element and attributes
 This table includes all available attributes for the **User** element.
 
@@ -46,7 +46,7 @@ This table includes all available attributes for the **User** element.
 |EnterpriseID |String |The enterprise ID corresponding to this audit report. |
 
 ### Log element and attributes
-This table includes all available attributes/elements for the **Log** element. The response can contain zero (0) or more **Log** elements. 
+This table includes all available attributes/elements for the **Log** element. The response can contain zero (0) or more **Log** elements.
 
 |Attribute/Element |Value type |Description |
 |----------|-----------|------------|

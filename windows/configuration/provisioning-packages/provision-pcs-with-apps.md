@@ -1,6 +1,6 @@
 ---
 title: Provision PCs with apps  (Windows 10)
-description: Add apps to a Windows 10 provisioning package. 
+description: Add apps to a Windows 10 provisioning package.
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# Provision PCs with apps 
+# Provision PCs with apps
 
 
 **Applies to**
@@ -31,11 +31,11 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 ## Settings for UWP apps
 
-- **License Path**: Specify the license file if it is an app from the Microsoft Store. This is optional if you have a certificate for the app. 
+- **License Path**: Specify the license file if it is an app from the Microsoft Store. This is optional if you have a certificate for the app.
 
-- **Package family name**: Specify the package family name if you don’t specify a license. This field will be auto-populated after you specify a license. 
+- **Package family name**: Specify the package family name if you don’t specify a license. This field will be auto-populated after you specify a license.
 
-- **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app 
+- **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app
 
 ## Settings for Windows desktop applications
 
@@ -44,23 +44,23 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 > [!NOTE]
 > You can find more information about command-line options for Msiexec.exe [here](https://docs.microsoft.com/windows/win32/msi/command-line-options).
 
-- **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
+- **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE
 
-- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install 
+- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install
 
-- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
+- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app
 
 - **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
 ### Exe or other installer
 
-- **Command line arguments**: Append the command line arguments with a silent flag (required). Optionally, append additional flags 
+- **Command line arguments**: Append the command line arguments with a silent flag (required). Optionally, append additional flags
 
-- **Return Codes**: Specify the return codes for success and success with restart (0 and 3010 by default respectively) Any return code that is not listed will be interpreted as failure. The text boxes are space delimited. 
+- **Return Codes**: Specify the return codes for success and success with restart (0 and 3010 by default respectively) Any return code that is not listed will be interpreted as failure. The text boxes are space delimited.
 
-- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install 
+- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install
 
-- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
+- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app
 
 - **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
@@ -70,7 +70,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 ## Add a Windows desktop application using advanced editor in Windows Configuration Designer
 
 
-1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **PrimaryContext** > **Command**. 
+1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **PrimaryContext** > **Command**.
 
 2. Enter a name for the first app, and then click **Add**.
 
@@ -82,9 +82,9 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 ## Add a universal app to your package
 
-Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](/microsoft-store/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
+Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](/microsoft-store/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer.
 
-1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
+1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**.
 
 2. For **DeviceContextApp**, specify the **PackageFamilyName** for the app. In Microsoft Store for Business, the package family name is listed in the **Package details** section of the download page.
 
@@ -92,19 +92,19 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
-4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. 
+4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page.
 
     ![required frameworks for offline app package](../images/uwp-dependencies.png)
 
-5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
+5. For **DeviceContextAppLicense**, enter the **LicenseProductID**.
 
-    - In Microsoft Store for Business, generate the unencoded license for the app on the app's download page. 
+    - In Microsoft Store for Business, generate the unencoded license for the app on the app's download page.
 
         ![generate license for offline app](../images/uwp-license.png)
-        
+
     - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
-    
-6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
+
+6. In the **Available customizations** pane, click the **LicenseProductId** that you just added.
 
 7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *\<file name>*.**ms-windows-store-license**, and select the license file.
 
@@ -117,20 +117,20 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 ## Add a certificate to your package
 
-1. In the **Available customizations** pane, go to **Runtime settings** > **Certificates** > **ClientCertificates**. 
+1. In the **Available customizations** pane, go to **Runtime settings** > **Certificates** > **ClientCertificates**.
 
-2. Enter a **CertificateName** and then click **Add**. 
+2. Enter a **CertificateName** and then click **Add**.
 
-2. Enter the **CertificatePassword**. 
+2. Enter the **CertificatePassword**.
 
-3. For **CertificatePath**, browse and select the certificate to be used. 
+3. For **CertificatePath**, browse and select the certificate to be used.
 
 4. Set **ExportCertificate** to **False**.
 
-5. For **KeyLocation**, select **Software only**. 
+5. For **KeyLocation**, select **Software only**.
 
 
-## Add other settings to your package 
+## Add other settings to your package
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
@@ -156,8 +156,8 @@ For details about the settings you can customize in provisioning packages, see [
 
    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-       **Important**  
-       We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
+       **Important**
+       We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
 
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
    Optionally, you can click **Browse** to change the default output location.
@@ -171,7 +171,7 @@ For details about the settings you can customize in provisioning packages, see [
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    
+
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
 11. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
@@ -197,7 +197,7 @@ For details about the settings you can customize in provisioning packages, see [
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
- 
+
 
 ## Related topics
 

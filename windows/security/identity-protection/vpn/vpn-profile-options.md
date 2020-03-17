@@ -2,7 +2,7 @@
 title: VPN profile options (Windows 10)
 description: Windows 10 adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 ms.assetid: E3F99DF9-863D-4E28-BAED-5C1B1B913523
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,16 +20,16 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows 10 Mobile
 
-Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
+Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
 
 The following table lists the VPN settings and whether the setting can be configured in Intune and Configuration Manager, or can only be configured using **ProfileXML**.
 
-| Profile setting | Can be configured in Intune and Configuration Manager | 
-| --- | --- | 
-| Connection type | yes | 
+| Profile setting | Can be configured in Intune and Configuration Manager |
+| --- | --- |
+| Connection type | yes |
 | Routing: split-tunnel routes | yes, except exclusion routes |
 | Routing: forced-tunnel | yes |
 | Authentication (EAP) | yes, if connection type is built-in |
@@ -51,20 +51,20 @@ The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN prof
 
 ## Sample Native VPN profile
 
-The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
+The following is a sample Native VPN profile. This blob would fall under the ProfileXML node.
 
 ```
-<VPNProfile>  
-  <ProfileName>TestVpnProfile</ProfileName>  
-  <NativeProfile>  
-    <Servers>testServer.VPN.com</Servers>  
-    <NativeProtocolType>IKEv2</NativeProtocolType> 
-    
-    <!--Sample EAP profile (PEAP)--> 
-    <Authentication>  
-      <UserMethod>Eap</UserMethod>  
-      <MachineMethod>Eap</MachineMethod>  
-      <Eap>  
+<VPNProfile>
+  <ProfileName>TestVpnProfile</ProfileName>
+  <NativeProfile>
+    <Servers>testServer.VPN.com</Servers>
+    <NativeProtocolType>IKEv2</NativeProtocolType>
+
+    <!--Sample EAP profile (PEAP)-->
+    <Authentication>
+      <UserMethod>Eap</UserMethod>
+      <MachineMethod>Eap</MachineMethod>
+      <Eap>
        <Configuration>
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
@@ -130,95 +130,95 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
             </Config>
           </EapHostConfig>
         </Configuration>
-      </Eap>  
-    </Authentication>  
-    
+      </Eap>
+    </Authentication>
+
     <!--Sample routing policy: in this case, this is a split tunnel configuration with two routes configured-->
-    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>  
-    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>  
-  </NativeProfile>  
-    <Route>  
-    <Address>192.168.0.0</Address>  
-    <PrefixSize>24</PrefixSize>  
-  </Route>  
-  <Route>  
-    <Address>10.10.0.0</Address>  
-    <PrefixSize>16</PrefixSize>  
-  </Route>  
-  
+    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>
+    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>
+  </NativeProfile>
+    <Route>
+    <Address>192.168.0.0</Address>
+    <PrefixSize>24</PrefixSize>
+  </Route>
+  <Route>
+    <Address>10.10.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+
   <!--VPN will be triggered for the two apps specified here-->
-  <AppTrigger>  
-    <App>  
-      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
-    </App>  
-  </AppTrigger>  
-  <AppTrigger>  
-    <App>  
-      <Id>C:\windows\system32\ping.exe</Id>  
-    </App>  
-  </AppTrigger>  
-  
+  <AppTrigger>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+  </AppTrigger>
+  <AppTrigger>
+    <App>
+      <Id>C:\windows\system32\ping.exe</Id>
+    </App>
+  </AppTrigger>
+
   <!--Example of per-app VPN. This configures traffic filtering rules for two apps. Internet Explorer is configured for force tunnel, meaning that all traffic allowed through this app must go over VPN. Microsoft Edge is configured as split tunnel, so whether data goes over VPN or the physical interface is dictated by the routing configuration.-->
-  <TrafficFilter>  
-    <App>  
-      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>  
-    </App>  
-    <Protocol>6</Protocol>  
-    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>  
-    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>  
-    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>  
-    <RoutingPolicyType>ForceTunnel</RoutingPolicyType>  
-  </TrafficFilter>  
-  <TrafficFilter>  
-    <App>  
-      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
-    </App>  
-    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>  
-  </TrafficFilter>  
-  
+  <TrafficFilter>
+    <App>
+      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+    </App>
+    <Protocol>6</Protocol>
+    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>
+    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>
+    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
+    <RoutingPolicyType>ForceTunnel</RoutingPolicyType>
+  </TrafficFilter>
+  <TrafficFilter>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
+  </TrafficFilter>
+
   <!--Name resolution configuration. The AutoTrigger node configures name-based triggering. In this profile, the domain "hrsite.corporate.contoso.com" triggers VPN.-->
-  <DomainNameInformation>  
-    <DomainName>hrsite.corporate.contoso.com</DomainName>  
-    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>  
-    <WebProxyServers>5.5.5.5</WebProxyServers>  
-    <AutoTrigger>true</AutoTrigger>  
-  </DomainNameInformation>  
-  <DomainNameInformation>  
-    <DomainName>.corp.contoso.com</DomainName>  
-    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>  
-    <WebProxyServers>100.100.100.100</WebProxyServers>  
-  </DomainNameInformation>  
-  
+  <DomainNameInformation>
+    <DomainName>hrsite.corporate.contoso.com</DomainName>
+    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>
+    <WebProxyServers>5.5.5.5</WebProxyServers>
+    <AutoTrigger>true</AutoTrigger>
+  </DomainNameInformation>
+  <DomainNameInformation>
+    <DomainName>.corp.contoso.com</DomainName>
+    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>
+    <WebProxyServers>100.100.100.100</WebProxyServers>
+  </DomainNameInformation>
+
   <!--EDPMode is turned on for the enterprise ID "corp.contoso.com". When a user accesses an app with that ID, VPN will be triggered.-->
-  <EdpModeId>corp.contoso.com</EdpModeId>  
-  <RememberCredentials>true</RememberCredentials>  
-  
+  <EdpModeId>corp.contoso.com</EdpModeId>
+  <RememberCredentials>true</RememberCredentials>
+
   <!--Always On is turned off, and triggering VPN for the apps and domain name specified earlier in the profile will not occur if the user is connected to the trusted network "contoso.com".-->
-  <AlwaysOn>false</AlwaysOn>  
-  <DnsSuffix>corp.contoso.com</DnsSuffix>  
-  <TrustedNetworkDetection>contoso.com</TrustedNetworkDetection>  
-  <Proxy>  
-    <Manual>  
-      <Server>HelloServer</Server>  
-    </Manual>  
-    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>  
-  </Proxy>  
-  
+  <AlwaysOn>false</AlwaysOn>
+  <DnsSuffix>corp.contoso.com</DnsSuffix>
+  <TrustedNetworkDetection>contoso.com</TrustedNetworkDetection>
+  <Proxy>
+    <Manual>
+      <Server>HelloServer</Server>
+    </Manual>
+    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
+  </Proxy>
+
   <!--Device compliance is enabled and an alternate certificate is specified for domain resource authentication.-->
-  <DeviceCompliance>  
-        <Enabled>true</Enabled>  
-        <Sso>  
-            <Enabled>true</Enabled>  
-            <Eku>This is my Eku</Eku>  
-            <IssuerHash>This is my issuer hash</IssuerHash>  
-        </Sso>  
-    </DeviceCompliance>  
-</VPNProfile> 
+  <DeviceCompliance>
+        <Enabled>true</Enabled>
+        <Sso>
+            <Enabled>true</Enabled>
+            <Eku>This is my Eku</Eku>
+            <IssuerHash>This is my issuer hash</IssuerHash>
+        </Sso>
+    </DeviceCompliance>
+</VPNProfile>
 ```
 
 ## Sample plug-in VPN profile
 
-The following is a sample plug-in VPN profile. This blob would fall under the ProfileXML node. 
+The following is a sample plug-in VPN profile. This blob would fall under the ProfileXML node.
 
 ```
 <VPNProfile>
@@ -291,7 +291,7 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 		</Manual>
 		<AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
 	</Proxy>
-</VPNProfile>  
+</VPNProfile>
 
 ```
 

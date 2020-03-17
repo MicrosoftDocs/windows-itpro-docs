@@ -6,7 +6,7 @@ description: How to turn Enterprise Mode off temporarily while testing websites 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)
@@ -72,9 +72,9 @@ Enterprise Mode is no longer a user option on the **Tools** menu in IE11. Howeve
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
 - [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

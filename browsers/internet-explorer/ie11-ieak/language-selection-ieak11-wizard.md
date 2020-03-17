@@ -5,7 +5,7 @@ description: How to use the Language Selection page in the IEAK 11 Customization
 author: dansimp
 ms.prod: ie11
 ms.assetid: f9d4ab57-9b1d-4cbc-9398-63f4938df1f6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -28,9 +28,9 @@ You can support as many languages as you want, but each localized version must b
 
 2.  Click **Next** to go to the [Package Type Selection](pkg-type-selection-ieak11-wizard.md) page or **Back** to go to the [Platform Selection](platform-selection-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

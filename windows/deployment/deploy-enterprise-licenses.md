@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 ms.author: greglin
@@ -26,7 +26,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >* Automatic, non-KMS activation requires Windows 10, version 1803 or later, on a device with a firmware-embedded activation key.
 
 >[!IMPORTANT]
->An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.<br> 
+>An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.<br>
 >Also ensure that the Group Policy setting: Computer Configuration > Administrative Templates > Windows Components > Windows Update > "Do not connect to any Windows Update Internet locations" is set to "Disabled".
 
 ## Firmware-embedded activation key
@@ -167,7 +167,7 @@ Now the device is Azure AD joined to the company’s subscription.
 
 <span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
-<br><strong>Figure 7a - Windows 10 Pro activation in Settings</strong> 
+<br><strong>Figure 7a - Windows 10 Pro activation in Settings</strong>
 
 Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only).
 
@@ -187,7 +187,7 @@ You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &g
 <span id="win-10-activated-subscription-active"/>
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
-**Figure 9 - Windows 10 Enterprise subscription in Settings** 
+**Figure 9 - Windows 10 Enterprise subscription in Settings**
 
 
 If there are any problems with the Windows 10 Enterprise E3 or E5 license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.

@@ -6,7 +6,7 @@ description: Group Policy suggestions for compatibility with Internet Explorer 1
 author: dansimp
 ms.prod: ie11
 ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -29,11 +29,11 @@ Internet Explorer 11 has many Group Policy entries that can be configured for k
 |Control which security zone settings are applied to specific websites. |`Administrative Templates\ Windows Components\Internet Explorer\Internet Control Panel\Security Page` |Double-click **Site to Zone Assignment List**, click **Enabled**, and then enter your list of websites and their applicable security zones.  |
 |Turn off Data Execution Prevention (DEP).  |`Administrative Templates\ Windows Components\Internet Explorer\Security Features` |Double-click **Turn off Data Execution Prevention**, and then click **Enabled**.  |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -5,7 +5,7 @@ description: Use Internet Explorer to collect data on computers running Windows 
 author: dansimp
 ms.prod: ie11
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Collect data using Enterprise Site Discovery
@@ -127,7 +127,7 @@ The data is stored locally, in an industry-standard WMI class, .MOF file or in a
 ## WMI Site Discovery suggestions
 We recommend that you collect your data for at most a month at a time, to capture a user’s typical workflow. We don’t recommend collecting data longer than that because the data is stored in a WMI provider and can fill up your computer’s hard drive. You may also want to collect data only for pilot users or a representative sample of people, instead of turning this feature on for everyone in your company.
 
-On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<p>250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB 
+On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<p>250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB
 
 >**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
@@ -170,15 +170,15 @@ You can determine which zones or domains are used for data collection, using Pow
 - **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
 
 **To set up data collection using a domain allow list**
- 
+
 - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
- 
+
     >**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
 **To set up data collection using a zone allow list**
- 
+
 - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
- 
+
     >**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 
 ## Use Group Policy to finish setting up Enterprise Site Discovery
@@ -247,7 +247,7 @@ You can use both the WMI and XML settings individually or together:
         <td>XML file path</td>
     </tr>
 </table>
- 
+
 **To turn on both WMI and XML recording**
 <table>
     <tr>
@@ -322,7 +322,7 @@ You can collect your hardware inventory using the using the Systems Management S
 
 2.  Add this text to the end of the file:
 
-    ``` 
+    ```
     [SMS_Report     (TRUE),
      SMS_Group_Name ("IESystemInfo"),
      SMS_Class_ID   ("MICROSOFT|IESystemInfo|1.0"),
@@ -476,7 +476,7 @@ You can completely remove the data stored on your employee’s computers.
 ## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
- 
+
 
 
 

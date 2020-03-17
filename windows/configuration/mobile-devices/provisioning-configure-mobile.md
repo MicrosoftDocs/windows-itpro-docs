@@ -11,13 +11,13 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# Use Windows Configuration Designer to configure Windows 10 Mobile devices 
+# Use Windows Configuration Designer to configure Windows 10 Mobile devices
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using provisioning packages, you can easily specify desired configuration, settings, and information required to enroll the devices into management, and then apply that configuration to target devices in a matter of minutes. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using provisioning packages, you can easily specify desired configuration, settings, and information required to enroll the devices into management, and then apply that configuration to target devices in a matter of minutes.
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. Using Windows Configuration Designer, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
@@ -30,10 +30,10 @@ The **Provision Windows mobile devices** wizard lets you configure common settin
 ### Start a new project
 
 1. Open Windows Configuration Designer:
-   - From either the Start screen or Start menu search, type 'Windows Configuration Designer' and click the Windows Configuration Designer shortcut, 
-    
+   - From either the Start screen or Start menu search, type 'Windows Configuration Designer' and click the Windows Configuration Designer shortcut,
+
      or
-    
+
    - If you installed Windows Configuration Designer from the ADK, navigate to `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (on an x64 computer) or `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (on an x86 computer), and then double-click **ICD.exe**.
 
 2. On the **Start** page, choose **Provision Windows mobile devices**.
@@ -56,7 +56,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 You can apply a provisioning package to a device running Windows 10 Mobile by using:
 
-- removable media 
+- removable media
 - copying the provisioning package to the device
 - [NFC tags](provisioning-nfc.md)
 - [barcodes](provisioning-package-splitter.md)
@@ -64,7 +64,7 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 ### Using removable media
 
 1. Insert an SD card containing the provisioning package into the device.
-2. Navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+2. Navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install.
 
     ![add a package option](../images/packages-mobile.png)
 
@@ -73,7 +73,7 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 4. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
     ![Is this package from a source you trust](../images/package-trust.png)
-    
+
 ### Copying the provisioning package to the device
 
 1. Connect the device to your PC through USB.

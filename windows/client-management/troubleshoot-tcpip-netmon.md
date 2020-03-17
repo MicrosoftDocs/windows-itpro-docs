@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 12/06/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -38,23 +38,23 @@ When the driver gets hooked to the network interface card (NIC) during installat
 
 4. Select **Stop**, and go to **File > Save as** to save the results. By default, the file will be saved as a ".cap" file.
 
-The saved file has captured all the traffic that is flowing to and from the selected network adapters on the local computer. However, your interest is only to look into the traffic/packets that are related to the specific connectivity problem you are facing. So you will need to filter the network capture to see only the related traffic. 
- 
+The saved file has captured all the traffic that is flowing to and from the selected network adapters on the local computer. However, your interest is only to look into the traffic/packets that are related to the specific connectivity problem you are facing. So you will need to filter the network capture to see only the related traffic.
+
 **Commonly used filters**
- 
+
 - Ipv4.address=="client ip" and ipv4.address=="server ip"
 - Tcp.port==
 - Udp.port==
-- Icmp 
-- Arp 
+- Icmp
+- Arp
 - Property.tcpretranmits
 - Property.tcprequestfastretransmits
 - Tcp.flags.syn==1
- 
+
 >[!TIP]
->If you want to filter the capture for a specific field and do not know the syntax for that filter, just right-click that field and select **Add *the selected value* to Display Filter**. 
- 
-Network traces which are collected using the **netsh** commands built in to Windows are of the extension "ETL". However, these ETL files can be opened using Network Monitor for further analysis. 
+>If you want to filter the capture for a specific field and do not know the syntax for that filter, just right-click that field and select **Add *the selected value* to Display Filter**.
+
+Network traces which are collected using the **netsh** commands built in to Windows are of the extension "ETL". However, these ETL files can be opened using Network Monitor for further analysis.
 
 ## More information
 

@@ -5,7 +5,7 @@ description: How to use the Additional Settings page in IEAK 11 Customization Wi
 author: dansimp
 ms.prod: ie11
 ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -32,9 +32,9 @@ You’ll only see this page if you are running the **Internal** version of the I
 
 3.  Click **Next** to go to the [Wizard Complete-Next Steps](wizard-complete-ieak11-wizard.md) page or **Back** to go to the [Programs](programs-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

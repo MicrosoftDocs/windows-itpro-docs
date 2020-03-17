@@ -5,11 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
-ms.localizationpriority: medium 
+ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -33,7 +33,7 @@ See [Branding for phone calls](https://docs.microsoft.com/windows-hardware/custo
 
 ## CallIDMatchOverrides
 
-Enter a GEOID, select **Add**, and then enter the number of digits for matching caller ID. 
+Enter a GEOID, select **Add**, and then enter the number of digits for matching caller ID.
 
 For a list of GEOID codes and default number of digits for each country/region, see [Overriding the OS default minimu number of digits for caller ID matching](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/caller-id-matching#a-href-idoverriding-os-default-min-number-digitsaoverriding-the-os-default-minimum-number-of-digits-for-caller-id-matching).
 
@@ -44,9 +44,9 @@ See [Cause codes](https://docs.microsoft.com/windows-hardware/customize/mobile/m
 
 ## CDMAHeuristics
 
-CDMA Heuristics (on by default) makes CDMA calling more user-friendly by exposing an interface that supports multiple calls with call waiting, swapping, and three-way calling. 
+CDMA Heuristics (on by default) makes CDMA calling more user-friendly by exposing an interface that supports multiple calls with call waiting, swapping, and three-way calling.
 
-For **CDMAPriorityCallPrefix**, enter a custom call prefix that would allow the user to override an ongoing call with a remote party mostly used in emergency services and law enforcement.  
+For **CDMAPriorityCallPrefix**, enter a custom call prefix that would allow the user to override an ongoing call with a remote party mostly used in emergency services and law enforcement.
 
 Set **DisableCdmaHeuristics** to **True** to disable the built-in heuristics.
 
@@ -57,7 +57,7 @@ See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/
 
 ## PerSimSettings
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the following settings. 
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the following settings.
 
 ### Critical
 
@@ -108,7 +108,7 @@ See [Dial string overrides when roaming](https://docs.microsoft.com/windows-hard
 
 Setting | Description
 --- | ---
-AdjustCDMACallTime | Change the calculation of CDMA call duration to exclude the time before the call connects. 
+AdjustCDMACallTime | Change the calculation of CDMA call duration to exclude the time before the call connects.
 AssistedDialSetting | Turn off the international assist feature that helps users with the country codes needed for dialing international phone numbers.
 CallIDMatch | Sets the number of digits that the OS will try to match against contacts for Caller ID. For any country/region that doesn't exist in the default mapping table, mobile operators can use this legacy CallIDMatch setting to specify the minimum number of digits to use for matching caller ID.
 CallRecordingOff | Indicates if call recording is turned off. Users will not see the call recording functionality when this is set to **True**.
@@ -133,7 +133,7 @@ VideoCallingDescription | Enter text to describe the video calling feature.
 VideoCallingLabel | Enter text to describe the video calling toggle.
 VideoCapabilityDescription | Enter text to describe the video capability feature.
 VideoCapabilityLabel | Enter text to describe the video capability toggle.
-VideoTransitionTimeout | Enter the time in milliseconds to check how long the video transition state will remain until the remote party responds. The minimum value is 10000 and the maximum value is 30000. 
+VideoTransitionTimeout | Enter the time in milliseconds to check how long the video transition state will remain until the remote party responds. The minimum value is 10000 and the maximum value is 30000.
 VoLTEAudioQualityString | Partners can add a string to the call progress screen to indicate if the active call is a high quality voice over LTE (VoLTE). Set the value of VoLTEAudioQualityString to the string that you want to display in the call progress screen to indicate that the call is a VoLTE call. This string is combined with the PLMN so if the string is "VoLTE", the resulting string is "PLMN_String VoLTE". For example, the string displayed in the call progress screen can be "Litware VoLTE" if the PLMN_String is "Litware". The value you specify for VoLTEAudioQualityString must exceed 10 characters.
 
 
@@ -162,7 +162,7 @@ Configure these settings to customize visual voicemail in the Windows 10 Mobile 
 
 
 Codes | Description | DWORD Value
---- | --- | --- 
+--- | --- | ---
 04 | CHANGEPIN | 000000F4
 042 | CHANGEPIN2 | 00000F42
 05 | UNBLOCKPIN | 000000F5
@@ -216,4 +216,4 @@ Codes | Description | DWORD Value
 592 | MSP2 | 00000592
 593 | MSP3 | 00000593
 594 | MSP4 | 00000594
- 
+

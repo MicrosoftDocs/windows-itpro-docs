@@ -2,7 +2,7 @@
 title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -40,13 +40,13 @@ Here's an approximate scaling guide for WEF events:
 | 0 - 5,000           | SQL or SEM                 |
 | 5,000 - 50,000      | SEM                        |
 | 50,000+             | Hadoop/HDInsight/Data Lake |
- 
+
 Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
 
 For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
 >**Note:**  These are only minimum values need to meet what the WEF subscription selects.
- 
+
 From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts’ direction. All devices should have access to the Baseline subscription.
 
 This means you would create two base subscriptions:
@@ -122,7 +122,7 @@ This table outlines the built-in delivery options:
 | Normal | This option ensures reliable delivery of events and does not attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
- 
+
 For more info about delivery options, see [Configure Advanced Subscription Settings](https://technet.microsoft.com/library/cc749167.aspx).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
@@ -226,7 +226,7 @@ The annotated event query can be found in the following. For more info, see [App
 
   - Enables detection of unauthorized share creation.
     >**Note:**  All shares are re-created when the device starts.
-         
+
 - Logon sessions
 
   -   Logon success for interactive (local and Remote Interactive/Remote Desktop)
@@ -371,7 +371,7 @@ If your organizational audit policy enables additional auditing to meet its need
 | System             | Security State Change           | Success and Failure |
 | System             | Security System Extension       | Success and Failure |
 | System             | System Integrity                | Success and Failure |
- 
+
 ## <a href="" id="bkmk-appendixb"></a>Appendix B - Recommended minimum registry system ACL policy
 
 The Run and RunOnce keys are useful for intruders and malware persistence. It allows code to be run (or run only once then removed, respectively) when a user logs into the system.

@@ -1,7 +1,7 @@
 ---
 title: Get recommendation by software
 description: Retrieves a security recommendation related to a specific software.
-keywords: apis, graph api, supported apis, get, security recommendation, security recommendation for software, threat and vulnerability management, threat and vulnerability management api 
+keywords: apis, graph api, supported apis, get, security recommendation, security recommendation for software, threat and vulnerability management, threat and vulnerability management api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns 200 OK with the software associated with the 
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chrome/software 
+GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chrome/software
 ```
 
 **Response**

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,27 +36,27 @@ This event generates every time Windows Security audit log was cleared.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
- <EventID>1102</EventID> 
- <Version>0</Version> 
- <Level>4</Level> 
- <Task>104</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x4020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-16T00:39:58.656871200Z" /> 
- <EventRecordID>1087729</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="820" ThreadID="2644" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" />
+ <EventID>1102</EventID>
+ <Version>0</Version>
+ <Level>4</Level>
+ <Task>104</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x4020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-16T00:39:58.656871200Z" />
+ <EventRecordID>1087729</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="820" ThreadID="2644" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <UserData>
 - <LogFileCleared xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog">
- <SubjectUserSid>S-1-5-21-3457937927-2839227994-823803824-1104</SubjectUserSid> 
- <SubjectUserName>dadmin</SubjectUserName> 
- <SubjectDomainName>CONTOSO</SubjectDomainName> 
- <SubjectLogonId>0x55cd1d</SubjectLogonId> 
+ <SubjectUserSid>S-1-5-21-3457937927-2839227994-823803824-1104</SubjectUserSid>
+ <SubjectUserName>dadmin</SubjectUserName>
+ <SubjectDomainName>CONTOSO</SubjectDomainName>
+ <SubjectLogonId>0x55cd1d</SubjectLogonId>
  </LogFileCleared>
  </UserData>
  </Event>

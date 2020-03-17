@@ -1,6 +1,6 @@
 ---
 title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 description: Answers to frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
@@ -32,7 +32,7 @@ For more information on how Internet Explorer and Microsoft Edge work together t
 [Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11) helps you run many legacy web applications with better backward compatibility. You can configure both Microsoft Edge and Internet Explorer to use the same Enterprise Mode Site List, switching seamlessly between browsers to support both modern and legacy web apps.
 
 ## How do I customize Microsoft Edge and related settings for my organization?
-You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/group-policies/) for a list of policies currently available for Microsoft Edge and configuration information. Note that the preview release of Chromium-based Microsoft Edge might not include management policies or other enterprise functionality; our focus during the preview is modern browser fundamentals.  
+You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/group-policies/) for a list of policies currently available for Microsoft Edge and configuration information. Note that the preview release of Chromium-based Microsoft Edge might not include management policies or other enterprise functionality; our focus during the preview is modern browser fundamentals.
 
 ## Is Adobe Flash supported in Microsoft Edge?
 Adobe Flash is currently supported as a built-in feature of Microsoft Edge on PCs running Windows 10. In July 2017, Adobe announced that Flash support will end after 2020. With this change to Adobe support, we’ve started to phase Flash out of  Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting group policy](https://docs.microsoft.com/microsoft-edge/deploy/available-policies#configure-the-adobe-flash-click-to-run-setting) - this lets you control which websites can run Adobe Flash content.
@@ -46,7 +46,7 @@ No. Microsoft Edge doesn’t support ActiveX controls and BHOs like Silverlight 
 In Windows 10, we’re delivering Windows as a service, updated on a cadence driven by quality and the availability of new features. Microsoft Edge security updates are released every two to four weeks, while bigger feature updates are included in the Windows 10 releases on a semi-annual cadence.
 
 ## How can I provide feedback on Microsoft Edge?
-Microsoft Edge is an evergreen browser - we’ll continue to evolve both the web platform and the user interface with regular updates. To send feedback on user experience, or on broken or malicious sites, use the **Send Feedback** option under the ellipses icon (**...**) in the Microsoft Edge toolbar. 
+Microsoft Edge is an evergreen browser - we’ll continue to evolve both the web platform and the user interface with regular updates. To send feedback on user experience, or on broken or malicious sites, use the **Send Feedback** option under the ellipses icon (**...**) in the Microsoft Edge toolbar.
 
 ## Will Internet Explorer 11 continue to receive updates?
 We’re committed to keeping Internet Explorer a supported, reliable, and safe browser. Internet Explorer is still a component of Windows and follows the support lifecycle of the OS on which it’s installed. For details, see [Lifecycle FAQ - Internet Explorer](https://support.microsoft.com/help/17454/). While we continue to support and update Internet Explorer, the latest features and platform updates will only be available in Microsoft Edge.

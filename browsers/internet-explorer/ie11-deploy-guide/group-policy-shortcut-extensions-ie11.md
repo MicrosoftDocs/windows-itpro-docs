@@ -6,7 +6,7 @@ description: Instructions about how to create and configure shortcut preference 
 author: dansimp
 ms.prod: ie11
 ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -42,9 +42,9 @@ You can create and configure shortcuts for any domain-based Group Policy Object 
 
 For more information about shortcut extensions, including step-by-step guidance, see [Shortcuts Extension](https://go.microsoft.com/fwlink/p/?LinkId=214525) and [Configure a Shortcut Item](https://go.microsoft.com/fwlink/p/?LinkId=301837).
 
- 
 
- 
+
+
 
 
 

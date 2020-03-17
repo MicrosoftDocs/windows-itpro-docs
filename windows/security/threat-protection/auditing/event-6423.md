@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,33 +38,33 @@ Device installation restriction group policies are located here: **\\Computer Co
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>6423</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13316</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-14T22:49:34.647975900Z" /> 
- <EventRecordID>488</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="828" ThreadID="1924" /> 
- <Channel>Security</Channel> 
- <Computer>DESKTOP-NFC0HVN</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>6423</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13316</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-14T22:49:34.647975900Z" />
+ <EventRecordID>488</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="828" ThreadID="1924" />
+ <Channel>Security</Channel>
+ <Computer>DESKTOP-NFC0HVN</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">DESKTOP-NFC0HVN$</Data> 
- <Data Name="SubjectDomainName">WORKGROUP</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="DeviceId">USB\\VID\_04F3&PID\_012D\\7&1E3A8971&0&2</Data> 
- <Data Name="DeviceDescription">Touchscreen</Data> 
- <Data Name="ClassId">{00000000-0000-0000-0000-000000000000}</Data> 
- <Data Name="ClassName" /> 
- <Data Name="HardwareIds">USB\\VID\_04F3&PID\_012D&REV\_0013 USB\\VID\_04F3&PID\_012D</Data> 
- <Data Name="CompatibleIds">USB\\Class\_03&SubClass\_00&Prot\_00 USB\\Class\_03&SubClass\_00 USB\\Class\_03</Data> 
- <Data Name="LocationInformation">Port\_\#0002.Hub\_\#0004</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">DESKTOP-NFC0HVN$</Data>
+ <Data Name="SubjectDomainName">WORKGROUP</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="DeviceId">USB\\VID\_04F3&PID\_012D\\7&1E3A8971&0&2</Data>
+ <Data Name="DeviceDescription">Touchscreen</Data>
+ <Data Name="ClassId">{00000000-0000-0000-0000-000000000000}</Data>
+ <Data Name="ClassName" />
+ <Data Name="HardwareIds">USB\\VID\_04F3&PID\_012D&REV\_0013 USB\\VID\_04F3&PID\_012D</Data>
+ <Data Name="CompatibleIds">USB\\Class\_03&SubClass\_00&Prot\_00 USB\\Class\_03&SubClass\_00 USB\\Class\_03</Data>
+ <Data Name="LocationInformation">Port\_\#0002.Hub\_\#0004</Data>
  </EventData>
 </Event>
 

@@ -1,6 +1,6 @@
 ---
 title: Onboard devices without Internet access to Microsoft Defender ATP
-ms.reviewer: 
+ms.reviewer:
 description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
@@ -14,18 +14,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard devices without Internet access to Microsoft Defender ATP 
+# Onboard devices without Internet access to Microsoft Defender ATP
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 To onboard devices without Internet access, you'll need to take the following general steps:
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The steps below are applicable only to devices running previous versions of Windows such as:
 Windows Server 2016 and earlier or Windows 8.1 and earlier.
 

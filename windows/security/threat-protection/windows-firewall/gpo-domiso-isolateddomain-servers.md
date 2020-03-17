@@ -2,7 +2,7 @@
 title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows 10)
 description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.assetid: 33aed8f3-fdc3-4f96-985c-e9d2720015d3
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

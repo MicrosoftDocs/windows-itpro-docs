@@ -8,7 +8,7 @@ ms.technology: windows
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 keywords: insider, trial, enterprise, lab, corporation, test
 ---
@@ -19,7 +19,7 @@ keywords: insider, trial, enterprise, lab, corporation, test
 
 Windows Insider Lab for Enterprise is intended for Windows Insiders who want to try new experimental and pre-release enterprise privacy and security features. To get the complete experience of these enterprise features, Olympia Corp, a virtual corporation has been set up to reflect the IT infrastructure of real world business. Selected customers are invited to join Olympia Corp and try these features.
 
-As an Olympia user, you will have an opportunity to: 
+As an Olympia user, you will have an opportunity to:
 
 -   Use various enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
 -   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
@@ -96,7 +96,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     ![Settings -> Accounts](images/1-1.png)
 
 2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
-	
+
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
     ![Update your password](images/2-3.png)

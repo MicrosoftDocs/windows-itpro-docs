@@ -13,7 +13,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -45,7 +45,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
     "Shellcode",
     "http",
     "https")
-| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine,
 FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
@@ -56,7 +56,7 @@ This is how it will look like in advanced hunting.
 
 
 ### Describe the query and specify the tables to search
-A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization. 
+A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization.
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -97,16 +97,16 @@ Afterwards, the query looks for strings in command lines that are typically used
     "https")
 ```
 
-### Customize result columns and length 
+### Customize result columns and length
 Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine,
 FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results. 
+Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results.
 
 ![Image of the Expand control in the advanced hunting query editor](images/advanced-hunting-expand.png)
 

@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
 - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
 ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,7 +21,7 @@ Windows Management Infrastructure (WMI) providers (and the classes they support)
 
 > **Note**  Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
- 
+
 
 The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here is an example query.
 
@@ -207,7 +207,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 </tbody>
 </table>
 
- 
+
 
 ### Parental control WMI classes
 
@@ -224,7 +224,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 | [**wpcusersettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
 | [**wpcwebsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
 
- 
+
 
 ### Win32 WMI classes
 
@@ -243,7 +243,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_DiskDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394132)      | ![cross mark](images/checkmark.png)
 [**Win32\_DiskPartition**](https://msdn.microsoft.com/library/windows/hardware/aa394135)  |
 [**Win32\_DisplayConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394137) | ![cross mark](images/checkmark.png)
-[**Win32\_DMAChannel**](https://msdn.microsoft.com/library/windows/hardware/aa394139)     | 
+[**Win32\_DMAChannel**](https://msdn.microsoft.com/library/windows/hardware/aa394139)     |
 [**Win32\_DriverVXD**](https://msdn.microsoft.com/library/windows/hardware/aa394141)      |
 [**Win32\_EncryptableVolume**](https://msdn.microsoft.com/library/windows/hardware/aa376483) |
 [**Win32\_Environment**](https://msdn.microsoft.com/library/windows/hardware/aa394143)    |
@@ -267,10 +267,10 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245) |
 [**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247) |
 [**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251) |
-[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/library/windows/hardware/aa394346)                                   |  
+[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/library/windows/hardware/aa394346)                                   |
 [**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)   | ![cross mark](images/checkmark.png)
-[**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |  
-[**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |  
+[**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |
+[**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |
 [**Win32\_PointingDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394356)   |
 [**Win32\_PortableBattery**](https://msdn.microsoft.com/library/windows/hardware/aa394357)  |
 [**Win32\_PortResource**](https://msdn.microsoft.com/library/windows/hardware/aa394359)     |
@@ -298,7 +298,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
 [**Win32\_VideoController**](https://docs.microsoft.com/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
- 
+
 
 ## Related topics
 

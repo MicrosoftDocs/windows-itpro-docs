@@ -1,6 +1,6 @@
 ---
 title: Information for developers
-ms.reviewer: 
+ms.reviewer:
 description: This page provides answers to common questions we receive from software developers and other useful resources
 keywords: software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 

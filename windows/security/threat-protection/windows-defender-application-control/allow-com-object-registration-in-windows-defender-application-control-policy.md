@@ -38,7 +38,7 @@ Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC)
 
 - Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592) (https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
 - Windows 10, 1803 June 18, 2019—KB4503288 (OS Build 17134.858) (https://support.microsoft.com/help/4503288/windows-10-update-kb4503288)
-- Windows 10, 1709 June 18, 2019—KB4503281 (OS Build 16299.1237) (https://support.microsoft.com/help/4503281/windows-10-update-kb4503281) 
+- Windows 10, 1709 June 18, 2019—KB4503281 (OS Build 16299.1237) (https://support.microsoft.com/help/4503281/windows-10-update-kb4503281)
 - Windows 10, 1703 June 18, 2019—KB4503289 (OS Build 15063.1897) (https://support.microsoft.com/help/4503289/windows-10-update-kb4503289
 - Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053) (https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
 

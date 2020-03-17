@@ -7,11 +7,11 @@ ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.date: 04/17/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# Accounts CSP 
+# Accounts CSP
 
 
 This topic shows the OMA DM device description framework (DDF) for the **Accounts** configuration service provider.
@@ -43,7 +43,7 @@ The XML below is for Windows 10, version 1803.
           </Scope>
           <DFType>
             <DDFName></DDFName>
-            <MIME>com.microsoft/1.0/MDM/Accounts</MIME> 
+            <MIME>com.microsoft/1.0/MDM/Accounts</MIME>
           </DFType>
         </DFProperties>
         <Node>

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Printers policies  
+## Printers policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
+<a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**
 
 <!--SupportedSKUs-->
 <table>
@@ -102,13 +102,13 @@ If you disable this policy setting:
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions_Win7*
 -   GP path: *Printers*
@@ -132,7 +132,7 @@ Data type: String Value: <enabled/>
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**  
+<a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**
 
 <!--SupportedSKUs-->
 <table>
@@ -197,13 +197,13 @@ If you disable this policy setting:
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions*
 -   GP path: *Control Panel/Printers*
@@ -215,7 +215,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**  
+<a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**
 
 <!--SupportedSKUs-->
 <table>
@@ -269,13 +269,13 @@ Note: This settings takes priority over the setting "Automatically publish new p
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow printers to be published*
 -   GP name: *PublishPrinters*
 -   GP path: *Printers*

@@ -1,5 +1,5 @@
 ---
-title: Turn on network protection 
+title: Turn on network protection
 description: Enable Network protection with Group Policy, PowerShell, or MDM CSPs
 keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.reviewer: 
+ms.reviewer:
 audience: ITPro
 manager: dansimp
 ---
@@ -72,7 +72,7 @@ Use `Disabled` instead of `AuditMode` or `Enabled` to turn the feature off.
 1. Click **Device configuration** > **Profiles** > **Create profile**.
 1. Name the profile, choose **Windows 10 and later** and **Endpoint protection**.
    ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png)
-1. Click **Configure** > **Windows Defender Exploit Guard** > **Network filtering** > **Enable**.  
+1. Click **Configure** > **Windows Defender Exploit Guard** > **Network filtering** > **Enable**.
    ![Enable network protection in Intune](../images/enable-np-intune.png)
 1. Click **OK** to save each open blade and click **Create**.
 1. Click the profile **Assignments**, assign to **All Users & All Devices**, and click **Save**.

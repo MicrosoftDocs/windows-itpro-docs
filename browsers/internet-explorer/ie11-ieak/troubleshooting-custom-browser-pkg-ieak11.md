@@ -6,7 +6,7 @@ author: dansimp
 ms.author: dansimp
 ms.prod: ie11
 ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Troubleshoot custom package and IEAK 11 problems (Internet Explorer Administration Kit 11 for IT Pros)
@@ -72,14 +72,14 @@ If you cannot uninstall IE using **Uninstall or change a program** in the Contro
 
 2.  Try to manually uninstall IE. Go to the backup folder, `<system_drive>:\Windows\$ie11$`, and run the uninstall file, `Spunist.exe`.
 
- 
+
 ## The Internet Explorer Customization Wizard 11 does not work with user names that user double-byte character sets
 The customization wizard does not work with user names that use double-byte character sets, such as Chinese or Japanese. To fix this, set the **TEMP** and **TMP** environmental variables to a path that does not use these characters (for example, C:\temp).
 
 1. Open **System Properties**, click the **Advanced** tab, and then click **Environmental Variables**.
 2. Click Edit, and then modify the **TEMP** and **TMP** environmental variables to a non-user profile directory.
 
- 
+
 ## Unicode characters are not supported in IEAK 11 path names
 While Unicode characters, such as Emoji, are supported for organization names and other branding items, you must not use Unicode characters in any paths associated with running the Internet Explorer Customization Wizard 11. This includes paths to your IEAK 11 installation and to the storage location for your custom packages after they're built.
 
@@ -109,7 +109,7 @@ When using IEAK 11 in other languages, the settings on the Additional Settings p
 
 To work around this issue, run the customization wizard following these steps:
 1. On the **Language Selection** page, select the language that matches the language of your installed IEAK 11.
-2. Click **Next**, and then click **Synchronize** on the Automatic Version Synchronization page. 
+2. Click **Next**, and then click **Synchronize** on the Automatic Version Synchronization page.
 3. After synchronization is complete, cancel the wizard.
 4. Repeat these steps for each platform on the Platform Selection page.
 

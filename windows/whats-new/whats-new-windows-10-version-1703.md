@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
-ms.reviewer: 
+ms.reviewer:
 author: greg-lindsay
 manager: laurawi
 ms.author: greglin

@@ -2,7 +2,7 @@
 title: Planning the GPOs (Windows 10)
 description: Planning the GPOs
 ms.assetid: 11949ca3-a11c-4a16-b297-0862432eb5b4
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

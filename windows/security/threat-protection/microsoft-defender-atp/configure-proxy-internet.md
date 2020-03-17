@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -108,7 +108,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS.
 
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
@@ -128,10 +128,10 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP 
 The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
 |Agent Resource|Ports |Direction |Bypass HTTPS inspection|
-|------|---------|--------|--------|   
-|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
-|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
-|*.blob.core.windows.net |Port 443 |Outbound|Yes |  
+|------|---------|--------|--------|
+|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |
+|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |
+|*.blob.core.windows.net |Port 443 |Outbound|Yes |
 
 ## Microsoft Defender ATP service backend IP range
 

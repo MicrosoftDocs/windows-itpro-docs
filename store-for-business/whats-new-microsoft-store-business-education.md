@@ -9,13 +9,13 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 10/31/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # What's new in Microsoft Store for Business and Education
 
-Microsoft Store for Business and Education regularly releases new and improved features.  
+Microsoft Store for Business and Education regularly releases new and improved features.
 
 ## Latest updates for Store for Business and Education
 
@@ -41,7 +41,7 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 - Performance improvements
 
 [August 2018](release-history-microsoft-store-business-education.md#august-2018)
-- App requests 
+- App requests
 
 [July 2018](release-history-microsoft-store-business-education.md#july-2018)
 - Bug fixes and performance improvements
@@ -79,7 +79,7 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 - Bug fixes and performance improvements
 
 [October 2017](release-history-microsoft-store-business-education.md#october-2017)
-- Bug fixes and performance improvements 
+- Bug fixes and performance improvements
 
 [September 2017](release-history-microsoft-store-business-education.md#september-2017)
 - Manage Windows device deployment with Windows Autopilot Deployment

@@ -8,7 +8,7 @@ ms.prod: ie11
 title: Use the Settings page to finish setting up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -52,7 +52,7 @@ After you set up your email credentials, you'll be able to add or edit your Grou
 3. Click the **Add group** tab, and then add the following info:
 
     - **New group name.** Type name of your new group.
-    
+
     - **Group head email.** Type the email address for the primary contact for the group.
 
     - **Group head name.** This box automatically fills, based on the email address.
@@ -67,7 +67,7 @@ After you set up your email credentials, you'll be able to add or edit your Grou
 
 2. In the **Required approvers** area, choose which roles are required to approve a change request for the group. You can choose one or many roles.
 
-    - **App Manager.** All employees in the selected group must get change request approval by someone assigned this role. 
+    - **App Manager.** All employees in the selected group must get change request approval by someone assigned this role.
 
         You can change the name of this role by clicking the pencil icon and providing a new name in the **Edit role name** box.
 
@@ -94,4 +94,4 @@ This optional area lets you specify a period when your employees must stop addin
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
 
-- [Use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md) 
+- [Use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md)

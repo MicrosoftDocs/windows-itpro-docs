@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -28,7 +28,7 @@ Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for ma
 - **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *block* mode
 - **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
 
-Each alert provides the following information: 
+Each alert provides the following information:
 - Device that attempted to access the blocked website
 - Application or program used to send the web request
 - Malicious URL or URL in the custom indicator list

@@ -2,7 +2,7 @@
 title: Distribute apps using your private store (Windows 10)
 description: The private store is a feature in Microsoft Store for Business and Microsoft Store for Education that organizations receive during the signup process.
 ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -34,7 +34,7 @@ You can make an app available in your private store when you acquire the app, or
 
     <!--- ![Image showing Distribute options for app in the Microsoft Store for Business.](images/wsfb-distribute.png) -->
 
-Microsoft Store adds the app to **Products and services**. Click **Manage**, **Apps & software** for app distribution options. 
+Microsoft Store adds the app to **Products and services**. Click **Manage**, **Apps & software** for app distribution options.
 
 **To make an app in Apps & software available in your private store**
 
@@ -49,7 +49,7 @@ Microsoft Store adds the app to **Products and services**. Click **Manage**, **A
     <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
 
 >[!Note]
- > If you are working with a new Line-of-Business (LOB) app, you have to wait for the app to be available in **Products & services** before adding it to your private store. For more information, see [Working with line-of-business apps](working-with-line-of-business-apps.md). 
+ > If you are working with a new Line-of-Business (LOB) app, you have to wait for the app to be available in **Products & services** before adding it to your private store. For more information, see [Working with line-of-business apps](working-with-line-of-business-apps.md).
 
 ## Private store availability
 You can use security groups to scope which users can install an app from your private store. For more information, see [Private store availability](app-inventory-management-microsoft-store-for-business.md#private-store-availability).

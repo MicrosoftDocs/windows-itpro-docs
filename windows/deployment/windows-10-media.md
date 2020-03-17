@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.date: 10/20/2017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -64,7 +64,7 @@ This Semi-Annual Channel release of Windows 10 continues the Windows as a servic
 
 ### Language packs
 
-- **Windows 10 versions 1507 and 1511**: you can select **Windows 10 Enterprise Language Pack**, click **Download** and then select **English** and **64-bit** to see these downloads. 
+- **Windows 10 versions 1507 and 1511**: you can select **Windows 10 Enterprise Language Pack**, click **Download** and then select **English** and **64-bit** to see these downloads.
 - **Windows 10 1607 and later**: you must select **Multilanguage** from the drop-down list of languages.
 
 See the following example for Windows 10, version 1709:
@@ -87,9 +87,9 @@ Features on demand is a method for adding features to your Windows 10 image that
 <br>[Download and burn an ISO file on the volume licensing site (VLSC)](https://support.microsoft.com/help/2472143/download-and-burn-an-iso-file-on-the-volume-licensing-site-vlsc)
 
 
- 
 
- 
+
+
 
 
 

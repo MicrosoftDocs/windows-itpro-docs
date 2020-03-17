@@ -33,11 +33,11 @@ The creation of a catalog file simplifies the steps to run unsigned applications
 To create a catalog file, you use a tool called **Package Inspector**. You must also have a WDAC policy deployed in audit mode on the computer on which you run Package Inspector, so that Package Inspector can include any temporary installation files that are added and then removed from the computer during the installation process.
 
 > [!NOTE]
-> When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, *\*-Contoso.cat* is used as the example naming convention. 
+> When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, *\*-Contoso.cat* is used as the example naming convention.
 
 1.  Be sure that a WDAC policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
 
-    Package Inspector does not always detect temporary installation files that are added and then removed from the computer during the installation process. To ensure that these binaries are also included in your catalog file, deploy a WDAC policy in audit mode. 
+    Package Inspector does not always detect temporary installation files that are added and then removed from the computer during the installation process. To ensure that these binaries are also included in your catalog file, deploy a WDAC policy in audit mode.
 
     > [!NOTE]
     > This process should **not** be performed on a system with an enforced Windows Defender Application Control policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application unless the policy already allows it.
@@ -48,7 +48,7 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
     > [!NOTE]
     > Package inspector can monitor installations on any local drive. Specify the appropriate drive on the local computer.
-    
+
 3.  Copy the installation media to the local drive (typically drive C).
 
     By copying the installation media to the local drive, you ensure that Package Inspector detects and catalogs the actual installer. If you skip this step, the future WDAC policy may allow the application to run but not to be installed.
@@ -56,21 +56,21 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 4.  Install the application. Install it to the same drive that the application installer is located on (the drive you are scanning). Also, while Package Inspector is running, do not run any installations or updates that you don't want to capture in the catalog.
 
     > [!IMPORTANT]
-    > Every binary that is run while Package Inspector is running will be captured in the catalog. Ensure that only trusted applications are run during this time. 
+    > Every binary that is run while Package Inspector is running will be captured in the catalog. Ensure that only trusted applications are run during this time.
 
 5.  Start the application.
 
 6.  Ensure that product updates are installed, and downloadable content associated with the application is downloaded.
 
-7.  Close and reopen the application. 
+7.  Close and reopen the application.
 
     This step is necessary to ensure that the scan has captured all binaries.
-    
+
 8.  As appropriate, with Package Inspector still running, repeat the process for another application that you want in the catalog. Copy the installation media to the local drive, install the application, ensure it is updated, and then close and reopen the application.
 
-9. When you have confirmed that the previous steps are complete, use the following commands to generate the catalog and definition files on your computer's desktop. The filenames used in these example commands are **LOBApp-Contoso.cat** (catalog file) and **LOBApp.cdf** (definition file)—substitute different filenames as appropriate. 
+9. When you have confirmed that the previous steps are complete, use the following commands to generate the catalog and definition files on your computer's desktop. The filenames used in these example commands are **LOBApp-Contoso.cat** (catalog file) and **LOBApp.cdf** (definition file)—substitute different filenames as appropriate.
 
-    For the last command, which stops Package Inspector, be sure to type the drive letter of the drive you have been scanning, for example, C:.  
+    For the last command, which stops Package Inspector, be sure to type the drive letter of the drive you have been scanning, for example, C:.
 
     `$ExamplePath=$env:userprofile+"\Desktop"`
 
@@ -83,9 +83,9 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 >[!NOTE]
 >Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries' hash values.
 
-When finished, the files will be saved to your desktop. You can double-click the \*.cat file to see its contents, and you can view the \*.cdf file with a text editor. 
+When finished, the files will be saved to your desktop. You can double-click the \*.cat file to see its contents, and you can view the \*.cdf file with a text editor.
 
-To trust the contents of the catalog file within a WDAC policy, the catalog must first be signed. Then, the signing certificate can be added to the WDAC policy, and the catalog file can be distributed to the individual client computers. 
+To trust the contents of the catalog file within a WDAC policy, the catalog must first be signed. Then, the signing certificate can be added to the WDAC policy, and the catalog file can be distributed to the individual client computers.
 
 ### Resolving package failures
 
@@ -121,10 +121,10 @@ To sign the existing catalog file, copy each of the following commands into an e
 1. Initialize the variables that will be used. Replace the *$ExamplePath* and *$CatFileName* variables as needed:
 
    `$ExamplePath=$env:userprofile+"\Desktop"`
-    
+
    `$CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"`
 
-2. Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user's personal store. 
+2. Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user's personal store.
 
 3. Sign the catalog file with Signtool.exe:
 
@@ -132,9 +132,9 @@ To sign the existing catalog file, copy each of the following commands into an e
 
    >[!NOTE]
    >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
-   > 
+   >
    >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](https://docs.microsoft.com/dotnet/framework/tools/signtool-exe).
-    
+
 4. Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
    ![Digital Signature list in file Properties](images/dg-fig12-verifysigning.png)
@@ -162,7 +162,7 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
     `Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User`
 
-If you used step 2 to create a new WDAC policy, and want information about merging policies together, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).  
+If you used step 2 to create a new WDAC policy, and want information about merging policies together, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
 
 ## Deploy catalog files with Group Policy
 

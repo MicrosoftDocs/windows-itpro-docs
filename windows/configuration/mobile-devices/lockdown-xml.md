@@ -2,7 +2,7 @@
 title: Configure Windows 10 Mobile using Lockdown XML (Windows 10)
 description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
 ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -24,7 +24,7 @@ ms.date: 07/27/2017
 
 Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
 
-This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. 
+This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file.
 
 In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp). This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices. You can also use the [Lockdown Designer app](mobile-lockdown-designer.md) to configure and export your lockdown XML file.
 
@@ -78,7 +78,7 @@ In the following example, Action Center and the toast policy are enabled, and th
 <ActionCenter enabled="true" aboveLockToastEnabled="1" actionCenterNotificationEnabled="0"/>
 ```
 
-The following example is a complete lockdown XML file that disables Action Center, notifications, and toasts. 
+The following example is a complete lockdown XML file that disables Action Center, notifications, and toasts.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,7 +94,7 @@ The following example is a complete lockdown XML file that disables Action Cente
 
 ![XML for Apps](../images/AppsXML.png)
 
-The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. 
+The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running.
 
 You provide the App User Model ID (AUMID) and product ID for each app in your file. The product ID identifies an app package, and an app package can contain multiple apps, so you also provide the ADUMID to differentiate the app. Optionally, you can set an app to run automatically. [Get product ID and AUMID for apps in Windows 10 Mobile.](product-ids-in-windows-10-mobile.md)
 
@@ -205,7 +205,7 @@ When an app is contained in a folder, its **PinToStart** configuration (tile siz
 
 ![XML for buttons](../images/ButtonsXML.jpg)
 
-In the Buttons setting, you use ButtonLockdownList to disable hardware buttons and ButtonRemapList to change button events to open an app that you specify. 
+In the Buttons setting, you use ButtonLockdownList to disable hardware buttons and ButtonRemapList to change button events to open an app that you specify.
 
 ### ButtonLockdownList
 
@@ -214,7 +214,7 @@ When a user taps a button that is in the lockdown list, nothing will happen. The
 Button | Press | PressAndHold | All
 ---|:---:|:---:|:--:|-
 Start | ![no](../images/crossmark.png) | ![yes](../images/checkmark.png) | ![no](../images/crossmark.png)
-Back | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) 
+Back | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
 Search | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
 Camera | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
 Custom 1, 2, and 3 | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
@@ -252,7 +252,7 @@ ButtonRemapList lets you change the app that a button will run. You can remap th
 > [!WARNING]
 >  Button remapping can enable a user to open an application that is not in the allow list for that user role. Use button lock down to prevent application access for a user role.
 
-To remap a button, you specify the button, the event, and the product ID for the app that you want the event to open. 
+To remap a button, you specify the button, the event, and the product ID for the app that you want the event to open.
 In the following example, when a user presses the Search button, the phone dialer will open instead of the Search app.
 
 ```xml
@@ -274,7 +274,7 @@ In the following example, when a user presses the Search button, the phone diale
 
 You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkID=717460) or [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx).
 
-CSPRunner is helpful when you are configuring a device to support multiple roles. It lets you apply different policies according to the role that is signed on. For example, Wi-Fi could be enabled for a supervisor role and disabled for a stocking clerk role. 
+CSPRunner is helpful when you are configuring a device to support multiple roles. It lets you apply different policies according to the role that is signed on. For example, Wi-Fi could be enabled for a supervisor role and disabled for a stocking clerk role.
 
 In CSPRunner, you specify the CSP and settings using SyncML, a standardized markup language for device management. A SyncML section can include multiple settings, or you can use multiple SyncML sections -- it's up to you how you want to organize settings in this section.
 
@@ -310,7 +310,7 @@ SyncML entry | Description
 **Add** or **Replace** | Use **Add** to apply a setting or policy that is not already configured. Use **Replace** to change an existing setting or policy.
 **CmdID** | SyncBody can contain multiple commands. Each command in a lockdown XML file must have a different **CmdID** value.
 **Item** | **Item** is a wrapper for a single setting. You can include multiple items for the command if they all use the same **Add** or **Replace** operation.
-**Target > LocURI** | **LocURI** is the path to the CSP. 
+**Target > LocURI** | **LocURI** is the path to the CSP.
 **Meta > Format** | The data format required by the CSP.
 **Data** | The value for the setting.
 
@@ -343,16 +343,16 @@ In earlier versions of Windows 10, you used the page name to define allowed sett
 In the following example for Windows 10, version 1703, all system setting pages that have a settings URI are enabled.
 
 ```xml
-<Settings> 
-  <System name="ms-settings:screenrotation" /> 
-  <System name="ms-settings:notifications" /> 
+<Settings>
+  <System name="ms-settings:screenrotation" />
+  <System name="ms-settings:notifications" />
   <System name="ms-settings:phone" />
   <System name="ms-settings:messaging" />
-  <System name="ms-settings:batterysaver" /> 
-  <System name="ms-settings:batterysaver-usagedetails" /> 
-  <System name="ms-settings:about" /> 
-  <System name="ms-settings:deviceencryption" /> 
-  <System name="ms-settings:maps" /> 
+  <System name="ms-settings:batterysaver" />
+  <System name="ms-settings:batterysaver-usagedetails" />
+  <System name="ms-settings:about" />
+  <System name="ms-settings:deviceencryption" />
+  <System name="ms-settings:maps" />
  </Settings>
 ```
 
@@ -365,10 +365,10 @@ For a list of the settings and quick actions that you can allow or block, see [S
 
  ![XML for tiles](../images/TilesXML.png)
 
- By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile. 
+ By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile.
 
  > [!IMPORTANT]
- > If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile. 
+ > If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile.
 
  ```xml
  <Tiles>
@@ -378,12 +378,12 @@ For a list of the settings and quick actions that you can allow or block, see [S
 
  ## Start screen size
 
- Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions. Valid values: 
+ Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions. Valid values:
 
 - Small sets the width to 4 columns on devices with short axis (less than 400epx) or 6 columns on devices with short axis (greater than or equal to 400epx).
 - Large sets the width to 6 columns on devices with short axis (less than 400epx) or 8 columns on devices with short axis (greater than or equal to 400epx).
 
-  If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. 
+  If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4.
 
   [Learn about effective pixel width (epx) for different device size classes.](https://go.microsoft.com/fwlink/p/?LinkId=733340)
 
@@ -402,7 +402,7 @@ In the XML file, you define each role with a GUID and name, as shown in the foll
 
 You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
 
-You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
+You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM.
 
 ```xml
 <?xml version "1.0" encoding "utf-8"?>

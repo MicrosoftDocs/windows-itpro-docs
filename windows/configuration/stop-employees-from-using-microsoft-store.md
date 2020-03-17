@@ -2,7 +2,7 @@
 title: Configure access to Microsoft Store (Windows 10)
 description: Learn how to configure access to Microsoft Store for client computers and mobile devices in your organization.
 ms.assetid: 7AA60D3D-2A69-45E7-AAB0-B8AFC29C2E97
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -67,7 +67,7 @@ For more information on AppLocker, see [What is AppLocker?](/windows/device-secu
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
 
 
-Applies to: Windows 10 Enterprise, Windows 10 Education 
+Applies to: Windows 10 Enterprise, Windows 10 Education
 
 > [!Note]
 > Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](https://support.microsoft.com/kb/3135657).
@@ -85,7 +85,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.  
+> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.
 
 ## <a href="" id="block-store-mdm"></a>Block Microsoft Store using management tool
 
@@ -102,10 +102,10 @@ When your MDM tool supports Microsoft Store for Business, the MDM can use these 
 
 For more information, see [Configure an MDM provider](/microsoft-store/configure-mdm-provider-windows-store-for-business).
 
-## Show private store only using Group Policy 
+## Show private store only using Group Policy
 Applies to Windows 10 Enterprise, version 1607, Windows 10 Education
 
-If you're using Microsoft Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Microsoft Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store. 
+If you're using Microsoft Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Microsoft Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store.
 
 **To show private store only in Microsoft Store app**
 
@@ -126,7 +126,7 @@ If you're using Microsoft Store for Business and you want employees to only see 
 [Manage access to private store](/microsoft-store/manage-access-to-private-store)
 
 
- 
+
 
 
 

@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.prod: ie11
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
@@ -50,7 +50,7 @@ It also works with these operating system and IE combinations:
 |Windows Server 2008 R2 SP1              |All supported versions of IE    |
 |Windows Server 2008 SP2                 |Windows Internet Explorer 9 only |
 |Windows Vista SP2                       |Windows Internet Explorer 9 only |
-     
+
 For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](blocked-out-of-date-activex-controls.md).
 
 
@@ -161,7 +161,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 -   **File version.** The file version of the binary that implements the ActiveX control.
 
 -   **Allowed/Blocked** Whether IE blocked the ActiveX control.
- 
+
 -   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](https://go.microsoft.com/fwlink/p/?LinkId=403865).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
 
 -   **Reason.** The ActiveX control can be blocked or allowed for any of these reasons:
@@ -197,7 +197,7 @@ Before running the PowerShell script, you must copy both the .ps1 and .mof file 
 2. On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
    ```
    powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
-   ``` 
+   ```
    For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
 3. **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).

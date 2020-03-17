@@ -9,16 +9,16 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Set up student PCs to join domain
 **Applies to:**
 
--   Windows 10  
+-   Windows 10
 
-If your school uses Active Directory, use the Windows Configuration Designer tool to create a provisioning package that will configure a PC for student use that is joined to the Active Directory domain. 
+If your school uses Active Directory, use the Windows Configuration Designer tool to create a provisioning package that will configure a PC for student use that is joined to the Active Directory domain.
 
 ## Install Windows Configuration Designer
 Follow the instructions in [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
@@ -28,7 +28,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
 1. In the **Account Management** step:
 
-    > [!WARNING] 
+    > [!WARNING]
     > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
     >   - Use a least-privileged domain account to join the device to the domain.
     >   - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
@@ -57,8 +57,8 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
 5. To configure other settings to make Windows education ready, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) and follow the guidance on what settings you can set using Windows Configuration Designer.
 
-6. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
-   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+6. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package).
+   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>).
    - Copy the provisioning package to a USB drive.
 
      > [!IMPORTANT]
@@ -70,5 +70,5 @@ Follow the steps in [Apply a provisioning package](https://technet.microsoft.com
 
 
 
-    
+
 

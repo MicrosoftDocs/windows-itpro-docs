@@ -2,7 +2,7 @@
 title: Audit Computer Account Management (Windows 10)
 description: The policy setting, Audit Computer Account Management, determines if audit events are generated when a computer account is created, changed, or deleted.
 ms.assetid: 6c406693-57bf-4411-bb6c-ff83ce548991
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

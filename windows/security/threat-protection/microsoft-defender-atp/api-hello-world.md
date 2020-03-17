@@ -1,6 +1,6 @@
 ---
 title: Hello World for Microsoft Defender Advanced Threat Protection API
-ms.reviewer: 
+ms.reviewer:
 description: Create a practice 'Hello world'-style API call to the Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) API.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,15 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Microsoft Defender ATP API - Hello World 
+# Microsoft Defender ATP API - Hello World
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## Get Alerts using a simple PowerShell script
@@ -38,7 +38,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
@@ -126,7 +126,7 @@ Look for the "roles" section. Find the Alert.Read.All role.
 ### Lets get the Alerts!
 
 -   The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
--   Save this script in the same folder you saved the previous script **Get-Token.ps1**. 
+-   Save this script in the same folder you saved the previous script **Get-Token.ps1**.
 -   The script creates two files (json and csv) with the data in the same folder as the scripts.
 
 ```
@@ -135,34 +135,34 @@ Look for the "roles" section. Find the Alert.Read.All role.
 $token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
 
 # Get Alert from the last 48 hours. Make sure you have alerts in that time frame.
-$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")       
+$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
 # The URL contains the type of query and the time filter we create above
 # Read more about other query options and filters at   Https://TBD- add the documentation link
 $url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
 # Set the WebRequest headers
-$headers = @{ 
+$headers = @{
     'Content-Type' = 'application/json'
     Accept = 'application/json'
-    Authorization = "Bearer $token" 
+    Authorization = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the webrequest and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the alerts from the results. 
+# Extract the alerts from the results.
 $alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
 
 # Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json and as csv
-$outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"
 $outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
 
 Out-File -FilePath $outputJsonPath -InputObject $alerts
-($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
+($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation
 ```
 
 You’re all done! You have just successfully:

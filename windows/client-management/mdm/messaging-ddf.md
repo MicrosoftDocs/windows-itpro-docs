@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 12/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 

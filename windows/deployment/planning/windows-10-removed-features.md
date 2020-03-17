@@ -16,7 +16,7 @@ ms.topic: article
 
 > Applies to: Windows 10
 
-Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10. **The list below is subject to change and might not include every affected feature or functionality.** 
+Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10. **The list below is subject to change and might not include every affected feature or functionality.**
 
 For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md).
 

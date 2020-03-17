@@ -2,7 +2,7 @@
 title: Configure the Rules to Require Encryption (Windows 10)
 description: Configure the Rules to Require Encryption
 ms.assetid: 07b7760f-3225-4b4b-b418-51787b0972a0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -49,7 +49,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 10. If you need to add an algorithm combination, click **Add**, and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md).
 
-    **Note**  
+    **Note**
     Not all of the algorithms available in Windows 8 or Windows Server 2012 and later can be selected in the Windows Defender Firewall with Advanced Security user interface. To select them, you can use Windows PowerShell.
 
     Quick mode settings can also be configured on a per-rule basis, but not by using the Windows Defender Firewall user interface. Instead, you can create or modify the rules by using Windows PowerShell.

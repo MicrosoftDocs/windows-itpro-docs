@@ -13,7 +13,7 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, Microsoft Defender ATP uses automated investigation and remediation capabilities to significantly reduce the volume of alerts that must be investigated individually. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, Microsoft Defender ATP uses automated investigation and remediation capabilities to significantly reduce the volume of alerts that must be investigated individually.
 
 The automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when the investigation was initiated.
 
@@ -53,7 +53,7 @@ During and after an automated investigation, you can view details about the inve
 |**Pending actions** |If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. |
 
 > [!IMPORTANT]
-> Go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions. 
+> Go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions.
 
 ## How an automated investigation expands its scope
 
@@ -78,7 +78,7 @@ You can configure the following levels of automation:
 > [!TIP]
 > For more information on how to configure these automation levels, see [Create and manage device groups](machine-groups.md).
 
-The default device group is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
+The default device group is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed.
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 

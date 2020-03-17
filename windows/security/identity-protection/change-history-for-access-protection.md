@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/11/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Change history for access protection
@@ -27,7 +27,7 @@ This topic lists new and updated topics in the [Access protection](index.md) doc
 ## June 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New | 
+|[How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New |
 
 
 ## March 2017

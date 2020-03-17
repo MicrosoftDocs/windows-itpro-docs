@@ -2,7 +2,7 @@
 title: Advanced security auditing FAQ (Windows 10)
 description: This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
 ms.assetid: 80f8f187-0916-43c2-a7e8-ea712b115a06
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -71,7 +71,7 @@ Editing and applying the advanced audit policy settings in Local Security Policy
 > **Important**  Whether you apply advanced audit policies by using Group Policy or by using logon scripts, do not use both the basic audit policy settings under **Local Policies\\Audit Policy** and the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both advanced and basic audit policy settings can cause unexpected results in audit reporting.
 
 If you use Advanced Audit Policy Configuration settings or use logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
- 
+
 ## <a href="" id="bkmk-4"></a>How are audit settings merged by Group Policy?
 
 By default, policy options that are set in GPOs and linked to higher levels of Active Directory sites, domains, and OUs are inherited by all OUs at lower levels. However, an inherited policy can be overridden by a GPO that is linked at a lower level.
@@ -190,5 +190,5 @@ To learn more about security audit policies, see the following resources:
 -   [Security Monitoring and Attack Detection Planning Guide](https://social.technet.microsoft.com/wiki/contents/articles/325.advanced-security-auditing-in-windows-7-and-windows-server-2008-r2.aspx)
 -   [Security Audit Events for Windows 7 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=157780)
 -   [Security Audit Events for Windows Server 2008 and Windows Vista](https://go.microsoft.com/fwlink/p/?LinkId=121868)
- 
- 
+
+

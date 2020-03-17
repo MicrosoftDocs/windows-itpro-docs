@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -46,7 +46,7 @@ This action utilizes the OMA DM generic alert 1226 function to send a user an MD
 
 > **Note**  The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=267526).
 
- 
+
 The vendor uses the Type attribute to specify what type of generic alert it is. For device initiated MDM unenrollment, the alert type is **com.microsoft:mdm.unenrollment.userrequest**.
 
 After the user elects to unenroll, any active MDM OMA DM sessions are terminated. After that, the DM client starts a DM session, including a user unenroll generic alert in the first package that it sends to the server.
@@ -151,7 +151,7 @@ The server requests an enterprise management disconnection request by issuing an
 
 When the disconnection is completed, the user is notified that the device has been disconnected from enterprise management.
 
- 
+
 
 
 

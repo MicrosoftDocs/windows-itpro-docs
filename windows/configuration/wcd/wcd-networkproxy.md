@@ -8,13 +8,13 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # NetworkProxy (Windows Configuration Designer reference)
 
-Use for settings related to NetworkProxy. 
+Use for settings related to NetworkProxy.
 
 ## Applies to
 
@@ -25,7 +25,7 @@ Use for settings related to NetworkProxy.
 
 ## AutoDetect
 
-Automatically detect network proxy settings. 
+Automatically detect network proxy settings.
 
 |  Value | Description |
 | --- | --- |
@@ -45,7 +45,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 
 ## SetupScriptUrl
 
-Address to the PAC script you want to use. 
+Address to the PAC script you want to use.
 
 
 ## Related topics

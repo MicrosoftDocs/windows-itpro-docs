@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,25 +38,25 @@ This event generates, for example, if the maximum size of Security Event Log fil
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
- <EventID>1105</EventID> 
- <Version>0</Version> 
- <Level>4</Level> 
- <Task>105</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x4020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-16T00:50:12.715302700Z" /> 
- <EventRecordID>1128551</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="820" ThreadID="3660" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" />
+ <EventID>1105</EventID>
+ <Version>0</Version>
+ <Level>4</Level>
+ <Task>105</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x4020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-16T00:50:12.715302700Z" />
+ <EventRecordID>1128551</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="820" ThreadID="3660" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <UserData>
 - <AutoBackup xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog">
- <Channel>Security</Channel> 
- <BackupPath>C:\\Windows\\System32\\Winevt\\Logs\\Archive-Security-2015-10-16-00-50-12-621.evtx</BackupPath> 
+ <Channel>Security</Channel>
+ <BackupPath>C:\\Windows\\System32\\Winevt\\Logs\\Archive-Security-2015-10-16-00-50-12-621.evtx</BackupPath>
  </AutoBackup>
  </UserData>
  </Event>

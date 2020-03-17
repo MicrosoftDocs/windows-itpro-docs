@@ -1,6 +1,6 @@
 ---
 title: Industry collaboration programs
-ms.reviewer: 
+ms.reviewer:
 description: Microsoft industry-wide antimalware collaboration programs - Virus Information Alliance (VIA), Microsoft Virus Initiative (MVI), and Coordinated Malware Eradication (CME)
 keywords: security, malware, antivirus industry, antimalware Industry, collaboration programs, alliances, Virus Information Alliance, Microsoft Virus Initiative, Coordinated Malware Eradication, WDSI, MMPC, Microsoft Malware Protection Center, partnerships
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 # Industry collaboration programs

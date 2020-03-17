@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -28,14 +28,14 @@ ms.topic: include
 
 #### ADMX info
 - **GP English name:** Allow Extensions
-- **GP name:** AllowExtensions 
+- **GP name:** AllowExtensions
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
 - **MDM name:** Browser/[AllowExtensions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowextensions)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowExtensions 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowExtensions
 - **Data type:** Integer
 
 #### Registry settings

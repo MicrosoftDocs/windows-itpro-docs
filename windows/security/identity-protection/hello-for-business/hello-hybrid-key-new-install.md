@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows Hello for Business Key Trust New Installation
 
@@ -34,14 +34,14 @@ Windows Hello for Business involves configuring distributed technologies that ma
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md) section to prepare your Windows Hello for Business deployment by configuring directory synchronization.
 
-The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  
+The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.
 
 ## Active Directory
 This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 or later domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 > [!NOTE]
 >There was an issue with key trust authentication on Windows Server 2019. If you are planning to use Windows Server 2019 domain controllers refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) to fix this issue.
- 
+
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
 
 ### Section Review
@@ -50,7 +50,7 @@ Lab environments and isolated proof of concepts may want to limit the number of 
 > * An adequate number of Windows Server 2016 domain controllers
 > * Minimum Windows Server 2008 R2 domain and forest functional level
 > * Functional networking, name resolution, and Active Directory replication
- 
+
 ## Public Key Infrastructure
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.
@@ -67,16 +67,16 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 >Never install a certificate authority on a domain controller in a production environment.
 
 1. Open an elevated Windows PowerShell prompt.
-2. Use the following command to install the Active Directory Certificate Services role.   
+2. Use the following command to install the Active Directory Certificate Services role.
     ```PowerShell
     add-windowsfeature adcs-cert-authority -IncludeManagementTools
     ```
 
-3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
+3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.
     ```PowerShell
     Install-AdcsCertificationAuthority
-    ```   
-    
+    ```
+
 ## Configure a Production Public Key Infrastructure
 
 If you do not have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
@@ -94,9 +94,9 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > *  Functioning public key infrastructure.
 > *  Root certificate authority certificate (Azure AD Joined devices).
 > *  Highly available certificate revocation list (Azure AD Joined devices).
-  
+
 ## Azure Active Directory
-You've prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
+You've prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities.
 
 The next step of the deployment is to follow the [Creating an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) process to provision an Azure tenant for your organization.
 
@@ -106,7 +106,7 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 > * Review the different ways to establish an Azure Active Directory tenant.
 > * Create an Azure Active Directory Tenant.
 > * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
-   
+
 ## Multifactor Authentication Services
 Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA or a third-party MFA adapter
 
@@ -119,8 +119,8 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 > * Azure Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
-> 
-> If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
+>
+> If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section.
 
 
 #### Configure Azure MFA Settings

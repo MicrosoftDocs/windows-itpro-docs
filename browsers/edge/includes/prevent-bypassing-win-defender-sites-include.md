@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -26,7 +26,7 @@ ms.topic: include
 
 ### ADMX info and settings
 #### ADMX info
-- **GP English name:** Prevent bypassing Windows Defender SmartScreen prompts for sites 
+- **GP English name:** Prevent bypassing Windows Defender SmartScreen prompts for sites
 - **GP name:** PreventSmartscreenPromptOverride
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
@@ -34,11 +34,11 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[PreventSmartscreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter 
+- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter
 - **Value name:** PreventOverride
 - **Value type:** REG_DWORD
 

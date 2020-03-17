@@ -1,6 +1,6 @@
 ---
 title: 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network. (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 description: Describes security event 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network.
@@ -39,24 +39,24 @@ If you don’t have any firewall rules (Allow or Deny) in Windows Firewall for s
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5031</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12810</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-22T03:46:36.634473000Z" /> 
- <EventRecordID>304373</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="2976" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5031</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12810</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-22T03:46:36.634473000Z" />
+ <EventRecordID>304373</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="2976" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="Profiles">Domain</Data> 
- <Data Name="Application">C:\\documents\\listener.exe</Data> 
+ <Data Name="Profiles">Domain</Data>
+ <Data Name="Application">C:\\documents\\listener.exe</Data>
  </EventData>
  </Event>
 

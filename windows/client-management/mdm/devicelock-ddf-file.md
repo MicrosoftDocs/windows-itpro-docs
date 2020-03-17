@@ -2,7 +2,7 @@
 title: DeviceLock DDF file
 description: DeviceLock DDF file
 ms.assetid: 46a691b9-6350-4987-bfc7-f8b1eece3ad9
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -502,9 +502,9 @@ This topic shows the OMA DM device description framework (DDF) for the **DeviceL
 
 [DeviceLock configuration service provider](devicelock-csp.md)
 
- 
 
- 
+
+
 
 
 

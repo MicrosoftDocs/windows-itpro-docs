@@ -2,7 +2,7 @@
 title: NodeCache DDF file
 description: NodeCache DDF file
 ms.assetid: d7605098-12aa-4423-89ae-59624fa31236
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -486,9 +486,9 @@ The XML below is the current version for this CSP.
 
 [NodeCache configuration service provider](nodecache-csp.md)
 
- 
 
- 
+
+
 
 
 

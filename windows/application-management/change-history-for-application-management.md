@@ -1,7 +1,7 @@
 ---
 title: Change history for Application management in Windows 10 (Windows 10)
 description: View new release information and updated topics in the documentation for application management in Windows 10.
-keywords: 
+keywords:
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +11,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/24/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 

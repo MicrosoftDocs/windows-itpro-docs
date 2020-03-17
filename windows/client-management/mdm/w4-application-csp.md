@@ -2,7 +2,7 @@
 title: w4 APPLICATION CSP
 description: w4 APPLICATION CSP
 ms.assetid: ef42b82a-1f04-49e4-8a48-bd4e439fc43a
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,7 +21,7 @@ The default security roles are defined in the root characteristic, and map to ea
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
 
- 
+
 
 The following diagram shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
@@ -41,7 +41,7 @@ This parameter takes a string value. The possible values to configure the NAME p
 
 > **Note**  MDM servers should resend APPLICATION/NAME to DMAcc after an upgrade because this value is displayed in the UI but not saved in Windows Phone 8.1 and cannot be migrated to Windows 10.
 
- 
+
 
 If no value is specified, the registry location will default to &lt;unnamed&gt;.
 
@@ -81,9 +81,9 @@ For more information about the parameters used by the w4 APPLICATION configurati
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

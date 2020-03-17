@@ -2,7 +2,7 @@
 title: SUA User's Guide (Windows 10)
 description: Standard User Analyzer (SUA) can test your apps and monitor API calls to detect compatibility issues related to Windows' User Account Control (UAC) feature.
 ms.assetid: ea525c25-b557-4ed4-b042-3e4d0e543e10
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -60,9 +60,9 @@ You can use SUA in either of the following ways:
 </tr>
 </tbody>
 </table>
- 
 
- 
+
+
 
 
 

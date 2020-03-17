@@ -8,7 +8,7 @@ ms.pagetype: security, networking
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---

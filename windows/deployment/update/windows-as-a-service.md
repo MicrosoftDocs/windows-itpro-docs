@@ -1,14 +1,14 @@
 ---
-title: Windows as a service  
-ms.prod: w10 
+title: Windows as a service
+ms.prod: w10
 ms.topic: landing-page
 ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
+description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization.
 ms.audience: itpro
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
@@ -28,7 +28,7 @@ Find the latest and greatest news on Windows 10 deployment and servicing.
 Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="https://aka.ms/WindowsReleaseHealth">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
 
 The latest news:
-<ul compact style="list-style: none"> 
+<ul compact style="list-style: none">
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807">How to get Extended Security Updates for eligible Windows devices </a> - October 17, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/End-of-service-reminders-for-Windows-10-versions-1703-and-1803/ba-p/903715">End of service reminders for Windows 10, versions 1703 and 1803  </a> - October 9, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860">Using machine learning to improve the Windows 10 update experience  </a> - September 26, 2019</li>

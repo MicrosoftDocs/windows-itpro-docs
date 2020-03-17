@@ -2,7 +2,7 @@
 title: RemoteRing DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the RemoteRing configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: 6815267F-212B-4370-8B72-A457E8000F7B
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -94,9 +94,9 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
 
- 
+
+
 
 
 

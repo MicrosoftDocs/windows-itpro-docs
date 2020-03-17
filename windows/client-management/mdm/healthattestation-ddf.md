@@ -2,7 +2,7 @@
 title: HealthAttestation DDF
 description: HealthAttestation DDF
 ms.assetid: D20AC78D-D2D4-434B-B9FD-294BCD9D1DDE
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -217,9 +217,9 @@ The XML below is the current version for this CSP.
 
 [HealthAttestation configuration service provider](healthattestation-csp.md)
 
- 
 
- 
+
+
 
 
 

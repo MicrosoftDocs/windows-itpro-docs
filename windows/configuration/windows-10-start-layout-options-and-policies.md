@@ -2,7 +2,7 @@
 title: Manage Windows 10 Start and taskbar layout  (Windows 10)
 description: Organizations might want to deploy a customized Start and taskbar layout to devices.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["start screen", "start menu"]
 ms.prod: w10

@@ -1,5 +1,5 @@
 ---
-title: Windows 10 application management    
+title: Windows 10 application management
 description: Windows 10 application management
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -28,4 +28,4 @@ Learn about managing applications in Windows 10 and Windows 10 Mobile clients.
 [Disabling System Services in Windows Server](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server) | Security guidelines for disabling services in Windows Server 2016 with Desktop Experience
 |[Understand apps in Windows 10](apps-in-windows-10.md)| Overview of the different apps included by default in Windows 10 Enterprise|
 | [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md) | How to upgrade apps on Windows 10 Mobile  |
-[Change history for Application management](change-history-for-application-management.md) | This topic lists new and updated topics in the Application management documentation for Windows 10 and Windows 10 Mobile. 
+[Change history for Application management](change-history-for-application-management.md) | This topic lists new and updated topics in the Application management documentation for Windows 10 and Windows 10 Mobile.

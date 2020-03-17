@@ -1,6 +1,6 @@
 ---
 title: Overview of custom detections in Microsoft Defender ATP
-ms.reviewer: 
+ms.reviewer:
 description: Understand how you can use advanced hunting to create custom detections and generate alerts
 keywords: custom detections, alerts, detection rules, advanced hunting, hunt, query, response actions, interval, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 

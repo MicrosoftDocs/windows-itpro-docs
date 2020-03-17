@@ -52,7 +52,7 @@ The device that you are trying to secure may not have a TPM chip, or the device 
 
 To resolve this issue, verify the following:
 
-- The TPM is enabled in the device BIOS.  
+- The TPM is enabled in the device BIOS.
 - The TPM status in the TPM management console resembles the following:
    - Ready (TPM 2.0)
    - Initialized (TPM 1.2)
@@ -80,7 +80,7 @@ Remove the bootable media, and restart the device. After the device restarts, ve
 The event information resembles the following:
 
 > Failed to enable Silent Encryption. WinRe is not configured.
->  
+>
 > Error: This PC cannot support device encryption because WinRE is not properly configured.
 
 ### Cause
@@ -104,7 +104,7 @@ The procedures described in this section depend on the default disk partitions t
 To verify the configuration of the disk partitions, open an elevated Command Prompt window, and run the following commands:
 
 ```
-diskpart 
+diskpart
 list volume
 ```
 ![Output of the list volume command in the Diskpart app](./images/4509195-en-1.png)
@@ -149,7 +149,7 @@ In the output, locate the **Windows Boot Loader** section that includes the line
 The event information resembles the following:
 
 > Failed to enable Silent Encryption.
->  
+>
 > Error: BitLocker Drive Encryption cannot be enabled on the operating system drive. Contact the computer manufacturer for BIOS upgrade instructions.
 
 ### Cause
@@ -161,7 +161,7 @@ The device must have Unified Extensible Firmware Interface (UEFI) BIOS. Silent B
 To verify the BIOS mode, use the System Information app. To do this, follow these steps:
 
 1. Select **Start**, and enter **msinfo32** in the **Search** box.
-1. Verify that the **BIOS Mode** setting is **UEFI** and not **Legacy**.  
+1. Verify that the **BIOS Mode** setting is **UEFI** and not **Legacy**.
    ![System Information app, showing the BIOS Mode setting](./images/4509198-en-1.png)
 1. If the **BIOS Mode** setting is **Legacy**, you have to switch the BIOS into **UEFI** or **EFI** mode. The steps for doing this are specific to the device.
    > [!NOTE]
@@ -202,9 +202,9 @@ If **PCR Validation Profile** doesn't include **7** (for example, the values inc
 To verify the Secure Boot state, use the System Information app. To do this, follow these steps:
 
 1. Select **Start**, and enter **msinfo32** in the **Search** box.
-1. Verify that the **Secure Boot State** setting is **On**, as follows:  
+1. Verify that the **Secure Boot State** setting is **On**, as follows:
    ![System Information app, showing a supported Secure Boot State](./images/4509201-en-1.png)
-1. If the **Secure Boot State** setting is **Unsupported**, you cannot use Silent BitLocker Encryption on this device.  
+1. If the **Secure Boot State** setting is **Unsupported**, you cannot use Silent BitLocker Encryption on this device.
    ![System Information app, showing a supported Secure Boot State](./images/4509202-en-1.png)
 
 > [!NOTE]
@@ -212,11 +212,11 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
 > ```ps
 > PS C:\> Confirm-SecureBootUEFI
 > ```
-> If the computer supports Secure Boot and Secure Boot is enabled, this cmdlet returns "True."  
->  
-> If the computer supports Secure Boot and Secure Boot is disabled, this cmdlet returns "False."  
->  
-> If the computer does not support Secure Boot or is a BIOS (non-UEFI) computer, this cmdlet returns "Cmdlet not supported on this platform."  
+> If the computer supports Secure Boot and Secure Boot is enabled, this cmdlet returns "True."
+>
+> If the computer supports Secure Boot and Secure Boot is disabled, this cmdlet returns "False."
+>
+> If the computer does not support Secure Boot or is a BIOS (non-UEFI) computer, this cmdlet returns "Cmdlet not supported on this platform."
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
@@ -225,22 +225,22 @@ In this case, you are deploying Intune policy to encrypt a Windows 10, version 1
 The policy deployment fails and generates the following events (visible in Event Viewer in the **Applications and Services Logs\\Microsoft\\Windows\\BitLocker API** folder):
 
 > Event ID:846
-> 
+>
 > Event:
 > Failed to backup BitLocker Drive Encryption recovery information for volume C: to your Azure AD.
-> 
+>
 > TraceId: {cbac2b6f-1434-4faa-a9c3-597b17c1dfa3}
 > Error: Unknown HResult Error code: 0x80072f9a
 
 > Event ID:778
-> 
+>
 > Event: The BitLocker volume C: was reverted to an unprotected state.
 
 > Event ID: 851
-> 
+>
 > Event:
 > Failed to enable Silent Encryption.
-> 
+>
 > Error: Unknown HResult Error code: 0x80072f9a.
 
 These events refer to Error code 0x80072f9a.
@@ -293,21 +293,21 @@ If your device is HSTI-compliant but does not support Modern Standby, you have t
 
 The OMA-URI references for these settings are as follows:
 
-- OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**  
-   Value Type: **Integer**  
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**
+   Value Type: **Integer**
    Value: **1**  (1 = Require, 0 = Not Configured)
 
-- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption**  
-   Value Type: **Integer**  
-   Value: **0** (0 = Blocked, 1 = Allowed)  
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption**
+   Value Type: **Integer**
+   Value: **0** (0 = Blocked, 1 = Allowed)
 
 > [!NOTE]
 > Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
 
 > [!NOTE]
-> If the **Warning for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
+> If the **Warning for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.
 
-If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
+If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.
 
 The Intune 1901 release provides settings that you can use to configure automatic device encryption for Autopilot devices for standard users. Each device must meet the following requirements:
 
@@ -319,9 +319,9 @@ The Intune 1901 release provides settings that you can use to configure automati
 
 The OMA-URI references for these settings are as follows:
 
-- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption**  
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption**
    Value Type: **Integer**
-   Value: **1**  
+   Value: **1**
 
 > [!NOTE]
 > This node works together with the **RequireDeviceEncryption** and **AllowWarningForOtherDiskEncryption** nodes. For this reason, when you set **RequireDeviceEncryption** to **1**, **AllowStandardUserEncryption** to **1**, and **AllowWarningForOtherDiskEncryption** to **0**. Intune can enforce silent BitLocker encryption for Autopilot devices that have standard user profiles.
@@ -341,6 +341,6 @@ You can also determine whether the BitLocker recovery password has been uploaded
 On the device, check the Registry Editor to verify the policy settings on the device. Verify the entries under the following subkeys:
 
 - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
-- **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device**  
+- **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device**
 
 ![Registry subkeys that relate to Intune policy](./images/4509206-en-1.png)

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -31,7 +31,7 @@ To learn more about previous versions of App-V, see [MDOP information experience
 
 To start using App-V to deliver virtual applications to users, you’ll need to download, enable, and install server- and client-side components. The following table describes the App-V for Windows 10 components, what they do, and where to find them.
 
-<!--App-V Remote Desktop Services (RDS) client once had its own row in the table below, and could have its own row again. As of 7/29/2016, it's in the same row as App-V client --> 
+<!--App-V Remote Desktop Services (RDS) client once had its own row in the table below, and could have its own row again. As of 7/29/2016, it's in the same row as App-V client -->
 
 | Component  | What it does     | Where to find it     |
 |------------|--|------|

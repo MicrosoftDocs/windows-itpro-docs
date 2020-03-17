@@ -5,7 +5,7 @@ description: How to use IEAK 11 while planning, customizing, and building the cu
 author: dansimp
 ms.prod: ie11
 ms.assetid: af93742f-f955-44ab-bfa2-7bf0c99045d3
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -20,7 +20,7 @@ Internet Explorer Administration Kit 11 (IEAK 11) helps you set up, deploy, and 
 
 **Note**<br>IEAK 11 works in network environments, with or without Microsoft Active Directory.
 
- 
+
 
 ## Plan, Customize, and Build with the IEAK 11
 Consider these activities while planning, customizing, and building the custom installation package.
@@ -59,9 +59,9 @@ After installing IE11 and the IEAK 11, you should:
 
 -   **Create a custom browser package.** Create your custom installation package, using IE Customization Wizard 11. For more information about using the wizard, see [Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](../ie11-ieak/ieak11-wizard-custom-options.md).
 
- 
 
- 
+
+
 
 
 

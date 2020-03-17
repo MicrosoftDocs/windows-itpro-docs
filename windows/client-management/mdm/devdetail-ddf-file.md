@@ -2,7 +2,7 @@
 title: DevDetail DDF file
 description: DevDetail DDF file
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article

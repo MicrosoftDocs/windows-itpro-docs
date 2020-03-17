@@ -1,6 +1,6 @@
 ---
 title: Install Windows Configuration Designer (Windows 10)
-description: Learn how to install and run Windows Configuration Designer. 
+description: Learn how to install and run Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/16/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -48,13 +48,13 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 >[!NOTE]
 >If you install Windows Configuration Designer from both the ADK and Microsoft Store, the Store app will not open.
 >
->The Windows Configuration Designer App from Microsoft Store currently supports only English. For a localized version of the Windows Configuration Designer, install it from the Windows ADK. 
+>The Windows Configuration Designer App from Microsoft Store currently supports only English. For a localized version of the Windows Configuration Designer, install it from the Windows ADK.
 
 1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and select **Get Windows ADK** for the version of Windows 10 that you want to create provisioning packages for (version 1511, 1607, or 1703).
 
     >[!NOTE]
     >The rest of this procedure uses Windows ADK for Windows 10, version 1703 as an example.
-    
+
 2. Save **adksetup.exe** and then run it.
 
 3. On the **Specify Location** page, select an installation path and then click **Next**.
@@ -70,7 +70,7 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 
 ## Current Windows Configuration Designer limitations
 
-- Windows Configuration Designer will not work properly if the Group Policy setting **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** is enabled. We recommend that you run Windows Configuration Designer on a different device, rather than change the security setting. 
+- Windows Configuration Designer will not work properly if the Group Policy setting **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** is enabled. We recommend that you run Windows Configuration Designer on a different device, rather than change the security setting.
 
 - You can only run one instance of Windows Configuration Designer on your computer at a time.
 
@@ -80,12 +80,12 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 
 - While you can open multiple projects at the same time within Windows Configuration Designer, you can only build one project at a time.
 
-- In order to enable the simplified authoring jscripts to work on a server SKU running Windows Configuration Designer, you need to explicitly enable **Allow websites to prompt for information using scripted windows**. Do this by opening Internet Explorer and then navigating to **Settings** > **Internet Options** > **Security**  -> **Custom level** > **Allow websites to prompt for information using scripted windows**, and then choose **Enable**. 
+- In order to enable the simplified authoring jscripts to work on a server SKU running Windows Configuration Designer, you need to explicitly enable **Allow websites to prompt for information using scripted windows**. Do this by opening Internet Explorer and then navigating to **Settings** > **Internet Options** > **Security**  -> **Custom level** > **Allow websites to prompt for information using scripted windows**, and then choose **Enable**.
 
-- If you copy a Windows Configuration Designer project from one PC to another PC, make sure that all the associated files for the deployment assets, such as apps and drivers, are copied along with the project to the same path as it was on the original PC. 
+- If you copy a Windows Configuration Designer project from one PC to another PC, make sure that all the associated files for the deployment assets, such as apps and drivers, are copied along with the project to the same path as it was on the original PC.
 
     For example, when you add a driver to a provisioned package, you must copy the .INF file to a local directory on the PC that is running Windows Configuration Designer. If you don't do this, and attempt to use a copied version of this project on a different PC, Windows Configuration Designer might attempt to resolve the path to the files that point to the original PC.
- 
+
 - **Recommended**: Before starting, copy all source files to the PC running Windows Configuration Designer, rather than using external sources like network shares or removable drives. This reduces the risk of interrupting the build process from a temporary network issue or from disconnecting the USB device.
 
 **Next step**: [How to create a provisioning package](provisioning-create-package.md)
@@ -110,9 +110,9 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
 
- 
 
- 
+
+
 
 
 

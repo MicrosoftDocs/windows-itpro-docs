@@ -13,7 +13,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -52,7 +52,7 @@ Before you can ensure your devices are configured properly, enroll them to Intun
 >[!NOTE]
 >To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/intune/licenses-assign).
 
->[!TIP] 
+>[!TIP]
 >To optimize device management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## Obtain required permissions
@@ -68,13 +68,13 @@ If you have been assigned other roles, ensure you have the necessary permissions
 ![Required permissions on intune](images/secconmgmt_intune_permissions.png)<br>
 *Device configuration permissions on Intune*
 
->[!TIP] 
+>[!TIP]
 >To learn more about assigning permissions on Intune, [read about creating custom roles](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role).
 
 ## In this section
 Topic | Description
 :---|:---
-[Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)| Track onboarding status of Intune-managed devices and onboard more devices through Intune. 
+[Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)| Track onboarding status of Intune-managed devices and onboard more devices through Intune.
 [Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md) | Track baseline compliance and noncompliance. Deploy the security baseline to more Intune-managed devices.
 [Optimize ASR rule deployment and detections](configure-machines-asr.md) | Review rule deployment and tweak detections using impact analysis tools in Microsoft 365 security center.
 

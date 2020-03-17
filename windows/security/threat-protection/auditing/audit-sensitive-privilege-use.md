@@ -2,7 +2,7 @@
 title: Audit Sensitive Privilege Use (Windows 10)
 description: The policy setting, Audit Sensitive Privilege Use, determines if the operating system generates audit events when sensitive privileges (user rights) are used.
 ms.assetid: 915abf50-42d2-45f6-9fd1-e7bd201b193d
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
@@ -71,7 +71,7 @@ If you configure this policy setting, an audit event is generated when sensitive
 
 -   [4985](event-4985.md)(S): The state of a transaction has changed.
 
->[!NOTE] 
+>[!NOTE]
 > The event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory also generates in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
 
 

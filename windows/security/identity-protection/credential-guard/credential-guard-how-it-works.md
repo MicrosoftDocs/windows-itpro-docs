@@ -13,14 +13,14 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # How Windows Defender Credential Guard works
 
-**Applies to**  
-- Windows 10  
-- Windows Server 2016  
+**Applies to**
+- Windows 10
+- Windows Server 2016
 
 
 Kerberos, NTLM, and Credential manager isolate secrets by using virtualization-based security. Previous versions of Windows stored secrets in the Local Security Authority (LSA). Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Windows Defender Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
@@ -33,7 +33,7 @@ When Windows Defender Credential Guard is enabled, Kerberos does not allow uncon
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
-![Windows Defender Credential Guard overview](images/credguard.png)  
+![Windows Defender Credential Guard overview](images/credguard.png)
 
 ## See also
 

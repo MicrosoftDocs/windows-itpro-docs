@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 07/22/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -24,10 +24,10 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
-> By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
+> By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default.
 
 
-In addition to always-on real-time protection and [on-demand](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled scans. 
+In addition to always-on real-time protection and [on-demand](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled scans.
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
@@ -51,15 +51,15 @@ Also see the [Manage when protection updates should be downloaded and applied](m
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
-Quick scans look at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+Quick scans look at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md) - which reviews files when they are opened and closed, and whenever a user navigates to a folder - a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md) - which reviews files when they are opened and closed, and whenever a user navigates to a folder - a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.
 
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
 A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-microsoft-defender-antivirus.md).
 
-A custom scan allows you to specify the files and folders to scan, such as a USB drive. 
+A custom scan allows you to specify the files and folders to scan, such as a USB drive.
 
 >[!NOTE]
 >By default, quick scans run on mounted removable devices, such as USB drives.
@@ -234,5 +234,5 @@ Signature updates | Turn on scan after Security intelligence update | A scan wil
 - [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
+- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

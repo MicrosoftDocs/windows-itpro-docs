@@ -6,7 +6,7 @@ description: Use the Group Policy setting, Set a default associations configurat
 author: dansimp
 ms.prod: ie11
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -31,9 +31,9 @@ If this setting is turned on and your employee's device is domain-joined, this f
 
 Your employees can change this setting by changing the Internet Explorer default value from the **Set Default Programs** area of the Control Panel.
 
- 
 
- 
+
+
 
 
 

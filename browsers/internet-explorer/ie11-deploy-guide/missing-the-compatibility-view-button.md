@@ -5,7 +5,7 @@ description: Internet Explorer 11 uses the latest standards mode, which simplif
 author: dansimp
 ms.prod: ie11
 ms.assetid: 501c96c9-9f03-4913-9f4b-f67bd9edbb61
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -46,9 +46,9 @@ Compatibility View is turned on for this single website, for this specific compu
 
 3.  Decide if you want your intranet sites displayed using Compatibility View, decide whether to use Microsoft compatibility lists, and then click **Close**.
 
- 
 
- 
+
+
 
 
 

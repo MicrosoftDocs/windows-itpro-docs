@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -54,7 +54,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**.
 
-5. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**. 
+5. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**.
 
 See [Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) for more options on preventing users form modifying protection on their PCs.
 
@@ -72,7 +72,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
 
-5. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**. 
+5. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**.
 
 ## Related articles
 

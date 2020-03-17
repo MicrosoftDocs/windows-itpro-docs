@@ -6,7 +6,7 @@ description: After you create your Enterprise Mode site list in the Enterprise M
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9ee7c13d-6fca-4446-bc22-d23a0213a95d
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Export your Enterprise Mode site list from the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
@@ -27,7 +27,7 @@ ms.date: 07/27/2017
 
 After you create your Enterprise Mode site list in the Enterprise Mode Site List Manager, you can export the contents to an Enterprise Mode (.EMIE) file. This file includes all of your URLs, including your compatibility mode selections and should be stored somewhere safe. If your list gets deleted by mistake you can easily import this file and return everything back to when this file was last saved.
 
-**Important**<br> 
+**Important**<br>
 This file is not intended for distribution to your managed devices. Instead, it is only for transferring data and comments from one manager to another. For example, if one administrator leaves and passes the existing data to another administrator. Internet Explorer doesn’t read this file.
 
  **To export your compatibility list**
@@ -41,9 +41,9 @@ This file is not intended for distribution to your managed devices. Instead, it 
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

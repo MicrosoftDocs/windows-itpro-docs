@@ -39,7 +39,7 @@ To help you decide which settings to migrate, you should consider any previous m
 
 You should migrate any settings that users need to get their jobs done, those that make the work environment comfortable, and those that will reduce help-desk calls after the migration. Although it is easy to dismiss migrating user preferences, you should consider that users can spend a significant amount of time restoring items such as wallpaper, screen savers, and other customizable user-interface features. Most users do not remember how these settings were applied. Although these items are not critical to migration success, migrating these items increases user productivity and overall satisfaction of the migration process.
 
-**Note**  
+**Note**
 For more information about how to change the operating-system settings that are migrated, see [User State Migration Tool (USMT) How-to topics](usmt-how-to.md).
 
 For information about the operating-system settings that USMT migrates, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)

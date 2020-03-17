@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -30,8 +30,8 @@ This topic describes how to configure exclusion lists for the following:
 
 Exclusion | Example
 ---|---
-Any file on the machine that is opened by any process with a specific file name | Specifying "test.exe" would exclude files opened by: <ul><li>c:\sample\test.exe</li><li>d:\internal\files\test.exe</li></ul>  
-Any file on the machine that is opened by any process under a specific folder | Specifying "c:\test\sample\\*" would exclude files opened by:<ul><li>c:\test\sample\test.exe</li><li>c:\test\sample\test2.exe</li><li>c:\test\sample\utility.exe</li></ul> 
+Any file on the machine that is opened by any process with a specific file name | Specifying "test.exe" would exclude files opened by: <ul><li>c:\sample\test.exe</li><li>d:\internal\files\test.exe</li></ul>
+Any file on the machine that is opened by any process under a specific folder | Specifying "c:\test\sample\\*" would exclude files opened by:<ul><li>c:\test\sample\test.exe</li><li>c:\test\sample\test2.exe</li><li>c:\test\sample\utility.exe</li></ul>
 Any file on the machine that is opened by a specific process in a specific folder | Specifying "c:\test\process.exe" would exclude files only opened by c:\test\process.exe
 
 When you add a process to the process exclusion list, Microsoft Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).

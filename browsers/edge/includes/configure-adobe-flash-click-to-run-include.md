@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -35,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlashClickToRun 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlashClickToRun
 - **Data type:** Integer
 
 #### Registry settings

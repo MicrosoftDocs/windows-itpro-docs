@@ -2,7 +2,7 @@
 title: Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design (Windows 10)
 description: Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design
 ms.assetid: 7e68c59e-ba40-49c4-8e47-5de5d6b5eb22
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -31,10 +31,10 @@ Use the following table to determine which Windows Firewall with Advanced Securi
 
 | Deployment Goals | Basic Firewall Policy Design | Domain Isolation Policy Design | Server Isolation Policy Design | Certificate-based Isolation Policy Design |
 | - |- | - | - | - |
-| [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)| Yes| Yes| Yes| Yes| 
-| [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md) | -| Yes| Yes| Yes| 
-| [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md)| -| -| Yes| Yes| 
-| [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)| -| Optional| Optional| Optional| 
+| [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)| Yes| Yes| Yes| Yes|
+| [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md) | -| Yes| Yes| Yes|
+| [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md)| -| -| Yes| Yes|
+| [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)| -| Optional| Optional| Optional|
 
 To examine details for a specific design, click the design title at the top of the column in the preceding table.
 

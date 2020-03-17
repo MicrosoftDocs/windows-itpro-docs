@@ -4,9 +4,9 @@ MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
-description: 
+description:
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -81,7 +81,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## BulkSeatOperationResultSet
 
@@ -109,7 +109,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## FailedSeatRequest
 
@@ -141,7 +141,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## FrameworkPackageDetails
 
@@ -213,7 +213,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## InventoryDistributionPolicy
 
@@ -241,7 +241,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## InventoryEntryDetails
 
@@ -298,7 +298,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## InventoryResultSet
 
@@ -330,7 +330,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## InventoryStatus
 
@@ -358,7 +358,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## LicenseType
 
@@ -386,7 +386,7 @@ Specifies the properties of the alternate identifier.
 </tbody>
 </table>
 
- 
+
 
 ## LocalizedProductDetail
 
@@ -435,7 +435,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## OfflineLicense
 
@@ -482,7 +482,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## PackageContentInfo
 
@@ -510,7 +510,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## PackageLocation
 
@@ -537,7 +537,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## ProductArchitectures
 
@@ -567,7 +567,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## ProductDetails
 
@@ -629,7 +629,7 @@ Specifies the properties of the localized product.
 </tbody>
 </table>
 
- 
+
 
 ## ProductImage
 
@@ -693,7 +693,7 @@ Specifies the properties of the product image.
 </tbody>
 </table>
 
- 
+
 
 ## ProductKey
 
@@ -727,7 +727,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+
 
 ## ProductPackageDetails
 
@@ -804,7 +804,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+
 
 ## ProductPackageFormat
 
@@ -831,7 +831,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+
 
 ## ProductPackageSet
 
@@ -863,7 +863,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+
 
 ## ProductPlatform
 
@@ -895,7 +895,7 @@ Specifies the properties of the product key.
 </tbody>
 </table>
 
- 
+
 
 ## PublisherDetails
 
@@ -929,7 +929,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## SeatAction
 
@@ -953,7 +953,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## SeatDetails
 
@@ -995,7 +995,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## SeatDetailsResultSet
 
@@ -1023,7 +1023,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## SeatState
 
@@ -1047,7 +1047,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## SupportedProductPlatform
 
@@ -1083,7 +1083,7 @@ Specifies the properties of the publisher details.
 </tbody>
 </table>
 
- 
+
 
 ## VersionInfo
 

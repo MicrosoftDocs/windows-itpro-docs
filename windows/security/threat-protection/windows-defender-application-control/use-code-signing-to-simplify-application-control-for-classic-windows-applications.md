@@ -3,7 +3,7 @@ title: Use code signing to simplify application control for classic Windows appl
 description: With embedded signing, your WDAC policies typically do not have to be updated when an app is updated. To set this up, you can choose from a variety of methods.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -29,7 +29,7 @@ ms.date: 05/03/2018
 
 This topic covers guidelines for using code signing control classic Windows apps.
 
-## Reviewing your applications: application signing and catalog files 
+## Reviewing your applications: application signing and catalog files
 
 Typically, WDAC policies are configured to use the application's signing certificate as part or all of what identifies the application as trusted. This means that applications must either use embedded signing—where the signature is part of the binary—or catalog signing, where you generate a "catalog file" from the applications, sign it, and through the signed catalog file, configure the WDAC policy to recognize the applications as signed.
 
@@ -47,7 +47,7 @@ To use catalog signing, you can choose from the following options:
 
 - Use the Windows Defender signing portal available in the Microsoft Store for Business and Education. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. 
 
-- Create your own catalog files, which are described in the next section. 
+- Create your own catalog files, which are described in the next section.
 
 ### Catalog files
 
@@ -68,4 +68,4 @@ When you generate a WDAC policy, you are generating a binary-encoded XML documen
 
 We recommend that you keep the original XML file for use when you need to merge the WDAC policy with another policy or update its rule options. For deployment purposes, the file is converted to a binary format, which can be done using a simple Windows PowerShell command.
 
-When the WDAC policy is deployed, it restricts the software that can run on a device. The XML document can be signed, helping to add additional protection against administrative users changing or removing the policy. 
+When the WDAC policy is deployed, it restricts the software that can run on a device. The XML document can be signed, helping to add additional protection against administrative users changing or removing the policy.

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,34 +40,34 @@ Token privileges provide the ability to take certain system-level actions that y
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4703</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13570</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-12T20:49:46.365958700Z" /> 
- <EventRecordID>5245</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="3632" /> 
- <Channel>Security</Channel> 
- <Computer>WIN-GG82ULGC9GO.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4703</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13570</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-12T20:49:46.365958700Z" />
+ <EventRecordID>5245</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="3632" />
+ <Channel>Security</Channel>
+ <Computer>WIN-GG82ULGC9GO.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">WIN-GG82ULGC9GO$</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="TargetUserSid">S-1-5-18</Data> 
- <Data Name="TargetUserName">WIN-GG82ULGC9GO$</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x3e7</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data> 
- <Data Name="ProcessId">0x270</Data> 
- <Data Name="EnabledPrivilegeList">SeAssignPrimaryTokenPrivilege SeIncreaseQuotaPrivilege SeSecurityPrivilege SeTakeOwnershipPrivilege SeLoadDriverPrivilege SeSystemtimePrivilege SeBackupPrivilege SeRestorePrivilege SeShutdownPrivilege SeSystemEnvironmentPrivilege SeUndockPrivilege SeManageVolumePrivilege</Data> 
- <Data Name="DisabledPrivilegeList">-</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">WIN-GG82ULGC9GO$</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="TargetUserSid">S-1-5-18</Data>
+ <Data Name="TargetUserName">WIN-GG82ULGC9GO$</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x3e7</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data>
+ <Data Name="ProcessId">0x270</Data>
+ <Data Name="EnabledPrivilegeList">SeAssignPrimaryTokenPrivilege SeIncreaseQuotaPrivilege SeSecurityPrivilege SeTakeOwnershipPrivilege SeLoadDriverPrivilege SeSystemtimePrivilege SeBackupPrivilege SeRestorePrivilege SeShutdownPrivilege SeSystemEnvironmentPrivilege SeUndockPrivilege SeManageVolumePrivilege</Data>
+ <Data Name="DisabledPrivilegeList">-</Data>
  </EventData>
 </Event>
 

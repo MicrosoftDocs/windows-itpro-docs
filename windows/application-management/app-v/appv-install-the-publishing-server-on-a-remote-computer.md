@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -40,11 +40,11 @@ Use the following procedure to install the publishing server on a separate compu
 
     ```xml
     <Publishing Protocol="1.0">
-    
+
         <Packages>
 
         <Package PackageId="28115343-06e2-44dc-a327-3a0b9b868bda" VersionId="5d03c08f-51dc-4026-8cf9-15ebe3d65a72" PackageUrl="\\server\share\file.appv" />
-        
+
         </Packages>
 
         <NoGroup>
@@ -56,7 +56,7 @@ Use the following procedure to install the publishing server on a separate compu
     </Publishing>
     ```
 
- 
+
 
 
 

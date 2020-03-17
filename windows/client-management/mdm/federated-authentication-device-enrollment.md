@@ -2,7 +2,7 @@
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
 ms.assetid: 049ECA6E-1AF5-4CB2-8F1C-A5F22D722DAA
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -22,9 +22,9 @@ For details about the Microsoft mobile device enrollment protocol for Windows 1
 
 ## In this topic
 
-[Discovery service](#discovery-service)  
-[Enrollment policy web service](#enrollment-policy-web-service)  
-[Enrollment web service](#enrollment-web-service)  
+[Discovery service](#discovery-service)
+[Enrollment policy web service](#enrollment-policy-web-service)
+[Enrollment web service](#enrollment-web-service)
 
 For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
@@ -164,7 +164,7 @@ After authentication is complete, the auth server should return an HTML form doc
 > To make an application compatible with strict Content Security Policy, it is usually necessary to make some changes to HTML templates and client-side code, add the policy header, and test that everything works properly once the policy is deployed.
 
 ```html
-HTTP/1.1 200 OK 
+HTTP/1.1 200 OK
 Content-Type: text/html; charset=UTF-8
 Vary: Accept-Encoding
 Content-Length: 556
@@ -266,7 +266,7 @@ The following is an enrollment policy request example with a received security t
           https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
         </a:To>
         <wsse:Security s:mustUnderstand="1">
-          <wsse:BinarySecurityToken  ValueType= 
+          <wsse:BinarySecurityToken  ValueType=
     "http: //schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
           EncodingType=
           "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
@@ -410,11 +410,11 @@ The following example shows the enrollment web service request for federated aut
           https://enrolltest.contoso.com:443/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
         </a:To>
         <wsse:Security s:mustUnderstand="1">
-          <wsse:BinarySecurityToken  wsse:ValueType= 
+          <wsse:BinarySecurityToken  wsse:ValueType=
     "http:"//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken
           wsse:EncodingType=
           http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
-          
+
     >
           B64EncodedSampleBinarySecurityToken
           </wsse:BinarySecurityToken>
@@ -497,8 +497,8 @@ Here is a sample RSTR message and a sample of OMA client provisioning XML within
 The following example shows the enrollment web service response.
 
 ```xml
-    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+       xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
        <s:Header>
           <a:Action s:mustUnderstand="1" >
@@ -514,14 +514,14 @@ The following example shows the enrollment web service response.
           </o:Security>
        </s:Header>
        <s:Body>
-          <RequestSecurityTokenResponseCollection 
+          <RequestSecurityTokenResponseCollection
              xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
              <RequestSecurityTokenResponse>
                 <TokenType>
         http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
                 </TokenType>
                  <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
-                   <BinarySecurityToken 
+                   <BinarySecurityToken
                       ValueType=
     "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                       EncodingType=
@@ -553,13 +553,13 @@ The following code shows sample provisioning XML (presented in the preceding pac
       </characteristic>
    </characteristic>
    <characteristic type="CertificateStore">
-      <characteristic type="My" >      
+      <characteristic type="My" >
          <characteristic type="User">
             <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
-            <characteristic type="PrivateKeyContainer"/> 
-            <!-- This tag must be present for XML syntax correctness. -->            
+            <characteristic type="PrivateKeyContainer"/>
+            <!-- This tag must be present for XML syntax correctness. -->
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
@@ -600,7 +600,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
       <characteristic type="Provider">
 <!-- ProviderID in DMClient CSP must match to PROVIDER-ID in w7 APPLICATION characteristics -->
     <characteristic type="TestMDMServer">
-          <parm name="UPN" value="UserPrincipalName@contoso.com" datatype="string" /> 
+          <parm name="UPN" value="UserPrincipalName@contoso.com" datatype="string" />
              <characteristic type="Poll">
                 <parm name="NumberOfFirstRetries" value="8" datatype="integer" />
                 <parm name="IntervalForFirstSetOfRetries" value="15" datatype="integer" />
@@ -615,7 +615,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
 </characteristic>
       </characteristic>
    </characteristic>
-   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment 
+   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment
         protocol. -->
 </wap-provisioningdoc>
 ```

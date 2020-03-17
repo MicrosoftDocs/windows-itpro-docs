@@ -2,7 +2,7 @@
 title: Audit Policy (Windows 10)
 description: Provides information about basic audit policies that are available in Windows and links to information about each setting.
 ms.assetid: 2e8ea400-e555-43e5-89d6-0898cb89da90
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -41,5 +41,5 @@ The basic audit policy settings under **Security Settings\\Local Policies\\Audit
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
 - [Security auditing](../auditing/security-auditing-overview.md)
- 
- 
+
+

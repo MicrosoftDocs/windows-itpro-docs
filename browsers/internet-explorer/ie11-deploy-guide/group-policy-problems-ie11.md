@@ -6,7 +6,7 @@ description: Links to troubleshooting topics and log files that can help address
 author: dansimp
 ms.prod: ie11
 ms.assetid: 0da0d9a9-200c-46c4-96be-630e82de017b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -22,9 +22,9 @@ If you're having problems with Group Policy and Internet Explorer 11, or if you
 ## Group Policy Object-related Log Files
 You can use the Event Viewer to review Group Policy-related messages in the **Windows Logs**, **System** file. All of the Group Policy-related events are shown with a source of **GroupPolicy**
 
- 
 
- 
+
+
 
 
 

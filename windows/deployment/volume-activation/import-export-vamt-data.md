@@ -2,7 +2,7 @@
 title: Import and Export VAMT Data (Windows 10)
 description: Import and Export VAMT Data
 ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -17,12 +17,12 @@ ms.topic: article
 
 # Import and Export VAMT Data
 
-You can use the Volume Activation Management Tool (VAMT) to import product-activation data from a Computer Information List (.cilx or .cil) file into SQL Server, and to export product-activation data into a .cilx file. A .cilx file is an XML file that stores computer and product-activation data. 
+You can use the Volume Activation Management Tool (VAMT) to import product-activation data from a Computer Information List (.cilx or .cil) file into SQL Server, and to export product-activation data into a .cilx file. A .cilx file is an XML file that stores computer and product-activation data.
 You can import data or export data during the following scenarios:
 -   Import and merge data from previous versions of VAMT.
 -   Export data to use to perform proxy activations.
 
-**Warning**  
+**Warning**
 Editing a .cilx file using an application other than VAMT can corrupt the .cilx file and is not supported.
 
 ## Import VAMT Data

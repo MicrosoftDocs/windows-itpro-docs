@@ -1,8 +1,8 @@
 ---
 title: Track and respond to emerging threats with Microsoft Defender ATP threat analytics
-ms.reviewer: 
+ms.reviewer:
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
+keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -14,15 +14,15 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Track and respond to emerging threats with threat analytics 
+# Track and respond to emerging threats with threat analytics
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to quickly assess their security posture, covering the impact of emerging threats and their organizational resilience.  
+Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to quickly assess their security posture, covering the impact of emerging threats and their organizational resilience.
 
 Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and identify actions that can contain them.
 
@@ -45,7 +45,7 @@ Select a threat from any of the overviews or from the table to view the report f
 
 ## View a threat analytics report
 
-Each threat report generally provides an overview of the threat and an analysis of the techniques and tools used by the threat. It also provides mitigation recommendations and detection information. It includes several cards that show dynamic data about how your organization is impacted by the threat and how prepared it is to stop the threat. 
+Each threat report generally provides an overview of the threat and an analysis of the techniques and tools used by the threat. It also provides mitigation recommendations and detection information. It includes several cards that show dynamic data about how your organization is impacted by the threat and how prepared it is to stop the threat.
 
 ![Image of a threat analytics report](images/ta.png)
 
@@ -61,7 +61,7 @@ Each report also includes cards that provide an overview of how resilient your o
 - **Mitigation details** — lists specific actionable recommendations that can help you increase your organizational resilience. This card lists tracked mitigations, including recommended settings and vulnerability patches, along with the number of devices that don't have the mitigations in place.
 
 ### Additional report details and limitations
-When using the reports, keep the following in mind: 
+When using the reports, keep the following in mind:
 
 - Data is scoped based on your RBAC permissions. You will only see the status of devices that you have been granted access to on the RBAC.
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not reflected in the charts.

@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- Configure collection of browsing data for Microsoft 365 Analytics -->  
+<!-- Configure collection of browsing data for Microsoft 365 Analytics -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (No data collected or sent)*
 
@@ -18,11 +18,11 @@ ms.topic: include
 
 > [!IMPORTANT]
 > For this policy to work, enable the **Allow Telemetry** group policy with the _Enhanced_ option and enable the **Configure the Commercial ID** group policy by providing the Commercial ID.
-> 
+>
 > You can find these policies in the following location of the Group Policy Editor:
-> 
+>
 > **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\**
-> <ul><li>Allow Telemetry = Enabled and set to <em>Enhanced</em></li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = <em>Enabled</em></li></ul> 
+> <ul><li>Allow Telemetry = Enabled and set to <em>Enhanced</em></li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics = <em>Enabled</em></li></ul>
 
 
 ### Supported values
@@ -59,7 +59,7 @@ ms.topic: include
 - **Value type:** REG_DWORD
 
 ### Related policies
-- Allow Telemetry: Allows Microsoft to run diagnostics on the device and troubleshoot. The default setting for Allow Telemetry is set to _Enhanced_  (2 for MDM). 
+- Allow Telemetry: Allows Microsoft to run diagnostics on the device and troubleshoot. The default setting for Allow Telemetry is set to _Enhanced_  (2 for MDM).
 
 - Configure the Commercial ID: Define the Commercial ID used to associate the device's telemetry data as belonging to a given organization.
 

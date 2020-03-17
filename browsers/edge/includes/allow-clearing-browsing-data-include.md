@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -32,7 +32,7 @@ ms.topic: include
 - **GP English name:**  Allow clearing browsing data on exit
 - **GP name:**  AllowClearingBrowsingDataOnExit
 - **GP path:**  Windows Components/Microsoft Edge
-- **GP ADMX file name:**  MicrosoftEdge.admx 
+- **GP ADMX file name:**  MicrosoftEdge.admx
 
 #### MDM settings
 - **MDM name:** Browser/[ClearBrowsingDataOnExit](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-clearbrowsingdataonexit)
@@ -43,6 +43,6 @@ ms.topic: include
 #### Registry
 - **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
 - **Value name:** ClearBrowsingHistoryOnExit
-- **Value type:** REG_DWORD 
+- **Value type:** REG_DWORD
 
 <hr>

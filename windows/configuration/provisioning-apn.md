@@ -2,7 +2,7 @@
 title: Configure cellular settings for tablets and PCs (Windows 10)
 description: Enterprises can provision cellular settings for tablets and PC with built-in cellular modems or plug-in USB modem dongles.
 ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,7 +40,7 @@ For users who work in different locations, you can configure one APN to connect 
 
     >[!NOTE]
     >You can get the APN from your mobile operator.
-    
+
 ## How to configure cellular settings in a provisioning package
 
 1. In Windows Configuration Designer, [start a new project](provisioning-packages/provisioning-create-package.md) using the **Advanced provisioning** option.
@@ -54,11 +54,11 @@ For users who work in different locations, you can configure one APN to connect 
 5. Enter a name for the connection, and then click **Add**.
 
     ![Example of APN connection name](images/apn-add.png)
-    
+
 6. The connection appears in the **Available customizations** pane. Select it to view the settings that you can configure for the connection.
 
     ![settings for new connection](images/apn-add-details.png)
-    
+
 7. The following table describes the settings available for the connection.
 
     | Setting | Description |
@@ -74,7 +74,7 @@ For users who work in different locations, you can configure one APN to connect 
     | Password | If you select PAP, CHAP, or MSCHAPv2 authentication, enter a password that corresponds to the user name. |
     | Roaming | Select the behavior that you want when the device is roaming. The options are:</br></br>-Disallowed</br>-Allowed (default)</br>-DomesticRoaming</br>-Use OnlyForDomesticRoaming</br>-UseOnlyForNonDomesticRoaming</br>-UseOnlyForRoaming   |
     | UserName | If you select PAP, CHAP, or MSCHAPv2 authentication, enter a user name.  |
-    
+
 8. After you configure the connection settings, [build the provisioning package](provisioning-packages/provisioning-create-package.md#build-package).
 
 9. [Apply the package to devices.](provisioning-packages/provisioning-apply-package.md)

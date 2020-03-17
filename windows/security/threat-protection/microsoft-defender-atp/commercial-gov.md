@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for US Government GCC High customers 
+title: Microsoft Defender ATP for US Government GCC High customers
 description: Learn about the requirements and the available Microsoft Defender ATP capabilities for US Government CCC High customers
 keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -30,10 +30,10 @@ This offering is currently available to US Office 365 GCC High customers and is 
 ## Endpoint versions
 The following OS versions are supported:
 
-- Windows 10, version 1903 
+- Windows 10, version 1903
 - Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 - Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
-- Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
+- Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147))
 - Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 
 >[!NOTE]
@@ -67,8 +67,8 @@ Not currently available.
 
 ## Automated investigation and remediation
 The following capabilities are not currently available:
-- Response to Office 365 alerts 
-- Live response 
+- Response to Office 365 alerts
+- Live response
 
 
 
@@ -102,7 +102,7 @@ You'll need to ensure that traffic from the following are allowed:
 Service location | DNS record
 :---|:---
 Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
-Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
+Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net```
 
 
 

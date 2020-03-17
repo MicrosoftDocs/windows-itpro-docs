@@ -1,6 +1,6 @@
 ---
 title: Plan for WDAC policy management (Windows 10)
-description: How to plan for Windows Defender Application Control (WDAC) policy management. 
+description: How to plan for Windows Defender Application Control (WDAC) policy management.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -39,7 +39,7 @@ Most WDAC policies will evolve over time and proceed through a set of identifiab
 4. Repeat steps 2-3 until the remaining block events meet expectations.
 5. Generate the enforced mode version of the policy. In enforced mode, files that are not allowed by the policy are prevented from executing and corresponding block events are generated.
 6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
-7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
+7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.
 
 ### Keep WDAC policies in a source control or document management solution
 

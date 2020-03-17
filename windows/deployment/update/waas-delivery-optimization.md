@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization for Windows 10 updates
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
@@ -21,9 +21,9 @@ ms.topic: article
 
 - Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Configuration Manager (when installation of Express Updates is enabled).  
+Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Configuration Manager (when installation of Express Updates is enabled).
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
@@ -31,7 +31,7 @@ For information about setting up Delivery Optimization, including tips for the b
 
 
 >[!NOTE]
->WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+>WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead.
 
 ## New in Windows 10, version 2004
 
@@ -47,18 +47,18 @@ For information about setting up Delivery Optimization, including tips for the b
     - `Enable-DeliveryOptimizationVerboseLogs`
     - `Disable-DeliveryOptimizationVerboseLogs`
     - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
-    
+
 - New policy settings:
     - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
     - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
     - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs); replaces DOPercentageMaxDownloadBandwidth
     - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
-    
+
 - Removed policy settings (if you set these policies in Windows 10, 2004, they will have no effect):
     - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
     - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
     - DOMaxUploadBandwidth
-    
+
 - Support for new types of downloads:
     - Office installations and updates
     - Xbox game pass games
@@ -105,7 +105,7 @@ For more information, see "Download mode" in [Delivery optimization reference](w
 
 See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for a number of common scenarios.
 
-You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization. 
+You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
 
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
@@ -139,18 +139,18 @@ Delivery Optimization also communicates with its cloud service by using HTTP/HTT
 
 **What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
 
-**What hostnames should I allow through my firewall to support Delivery Optimization?**: 
+**What hostnames should I allow through my firewall to support Delivery Optimization?**:
 
 For communication between clients and the Delivery Optimization cloud service: **\*.do.dsp.mp.microsoft.com**.
 
-For Delivery Optimization metadata: 
+For Delivery Optimization metadata:
 
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
 
 For the payloads (optional):
 
-- *.download.windowsupdate.com 
+- *.download.windowsupdate.com
 - *.windowsupdate.com
 
 **Does Delivery Optimization use multicast?**: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
@@ -191,7 +191,7 @@ This section summarizes common problems and some solutions to try.
 If you don’t see any bytes coming from peers the cause might be one of the following issues:
 
 - Clients aren’t able to reach the Delivery Optimization cloud services.
-- The cloud service doesn’t see other peers on the network. 
+- The cloud service doesn’t see other peers on the network.
 - Clients aren’t able to connect to peers that are offered back from the cloud service.
 
 
@@ -240,7 +240,7 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

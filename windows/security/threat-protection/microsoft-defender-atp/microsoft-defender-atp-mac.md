@@ -34,7 +34,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender ATP to be an "Insider" device. See [Enable Microsoft Defender ATP Insider Device](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender ATP to be an "Insider" device. See [Enable Microsoft Defender ATP Insider Device](endpoint-detection-response-mac-preview.md).
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -75,7 +75,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS.
 
 
 

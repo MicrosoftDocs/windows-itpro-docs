@@ -7,7 +7,7 @@ ms.technology: windows
 author: dansimp
 ms.author: dansimp
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.localizationpriority: medium
 ---
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 <!--Policies-->
-## Browser policies  
+## Browser policies
 
 <dl>
   <dd>
@@ -192,7 +192,7 @@ ms.localizationpriority: medium
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
+<a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**
 
 <!--SupportedSKUs-->
 <table>
@@ -236,14 +236,14 @@ ms.localizationpriority: medium
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*
 
 [!INCLUDE [allow-address-bar-drop-down-shortdesc](../../../browsers/edge/shortdesc/allow-address-bar-drop-down-shortdesc.md)]
 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Address bar drop-down list suggestions*
 -   GP name: *AllowAddressBarDropdown*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -253,7 +253,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 – Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings. 
+-   0 – Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings.
 -   1 (default) – Allowed. Show the Address bar drop-down list and make it available.
 
 Most restricted value: 0
@@ -263,7 +263,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
+<a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**
 
 <!--SupportedSKUs-->
 <table>
@@ -312,7 +312,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Autofill*
 -   GP name: *AllowAutofill*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -326,7 +326,7 @@ Supported values:
 -   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value: 0 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--Validation-->
 To verify AllowAutofill is set to 0 (not allowed):
@@ -342,7 +342,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowconfigurationupdateforbookslibrary"></a>**Browser/AllowConfigurationUpdateForBooksLibrary**  
+<a href="" id="browser-allowconfigurationupdateforbookslibrary"></a>**Browser/AllowConfigurationUpdateForBooksLibrary**
 
 <!--SupportedSKUs-->
 <table>
@@ -392,7 +392,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow configuration updates for the Books Library*
 -   GP name: *AllowConfigurationUpdateForBooksLibrary*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -411,7 +411,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
+<a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**
 
 <!--SupportedSKUs-->
 <table>
@@ -459,7 +459,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure cookies*
 -   GP name: *Cookies*
 -   GP element: *CookiesListBox*
@@ -490,7 +490,7 @@ To verify AllowCookies is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
+<a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**
 
 <!--SupportedSKUs-->
 <table>
@@ -541,7 +541,7 @@ To verify AllowCookies is set to 0 (not allowed):
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Developer Tools*
 -   GP name: *AllowDeveloperTools*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -561,7 +561,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
+<a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**
 
 <!--SupportedSKUs-->
 <table>
@@ -609,7 +609,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Do Not Track*
 -   GP name: *AllowDoNotTrack*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -639,7 +639,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
+<a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**
 
 <!--SupportedSKUs-->
 <table>
@@ -683,13 +683,13 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1607* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1607*
 
 [!INCLUDE [allow-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-extensions-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Extensions*
 -   GP name: *AllowExtensions*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -708,7 +708,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
+<a href="" id="browser-allowflash"></a>**Browser/AllowFlash**
 
 <!--SupportedSKUs-->
 <table>
@@ -758,7 +758,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Adobe Flash*
 -   GP name: *AllowFlash*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -777,7 +777,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
+<a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**
 
 <!--SupportedSKUs-->
 <table>
@@ -821,14 +821,14 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 
 [!INCLUDE [configure-adobe-flash-click-to-run-setting-shortdesc](../../../browsers/edge/shortdesc/configure-adobe-flash-click-to-run-setting-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure the Adobe Flash Click-to-Run setting*
 -   GP name: *AllowFlashClickToRun*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -849,7 +849,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowfullscreenmode"></a>**Browser/AllowFullScreenMode**  
+<a href="" id="browser-allowfullscreenmode"></a>**Browser/AllowFullScreenMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -899,7 +899,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow FullScreen Mode*
 -   GP name: *AllowFullScreenMode*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -926,7 +926,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
+<a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**
 
 <!--SupportedSKUs-->
 <table>
@@ -974,7 +974,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow InPrivate browsing*
 -   GP name: *AllowInPrivate*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -995,7 +995,7 @@ Most restricted value:  0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
+<a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**
 
 <!--SupportedSKUs-->
 <table>
@@ -1039,7 +1039,7 @@ Most restricted value:  0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 
 [!INCLUDE [allow-microsoft-compatibility-list-shortdesc](../../../browsers/edge/shortdesc/allow-microsoft-compatibility-list-shortdesc.md)]
@@ -1047,7 +1047,7 @@ Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Microsoft Compatibility List*
 -   GP name: *AllowCVList*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1068,7 +1068,7 @@ Most restricted value:  0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
+<a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**
 
 <!--SupportedSKUs-->
 <table>
@@ -1117,7 +1117,7 @@ Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Password Manager*
 -   GP name: *AllowPasswordManager*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1146,7 +1146,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
+<a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**
 
 <!--SupportedSKUs-->
 <table>
@@ -1195,7 +1195,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Pop-up Blocker*
 -   GP name: *AllowPopups*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1224,7 +1224,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowprelaunch"></a>**Browser/AllowPrelaunch**  
+<a href="" id="browser-allowprelaunch"></a>**Browser/AllowPrelaunch**
 
 <!--SupportedSKUs-->
 <table>
@@ -1275,7 +1275,7 @@ To verify AllowPopups is set to 0 (not allowed):
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
 -   GP name: *AllowPrelaunch*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1302,7 +1302,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowprinting"></a>**Browser/AllowPrinting**  
+<a href="" id="browser-allowprinting"></a>**Browser/AllowPrinting**
 
 <!--SupportedSKUs-->
 <table>
@@ -1352,7 +1352,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow printing*
 -   GP name: *AllowPrinting*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1379,7 +1379,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowsavinghistory"></a>**Browser/AllowSavingHistory**  
+<a href="" id="browser-allowsavinghistory"></a>**Browser/AllowSavingHistory**
 
 <!--SupportedSKUs-->
 <table>
@@ -1429,7 +1429,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Saving History*
 -   GP name: *AllowSavingHistory*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1456,7 +1456,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
+<a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**
 
 <!--SupportedSKUs-->
 <table>
@@ -1501,7 +1501,7 @@ Most restricted value: 0
 <!--/Scope-->
 <!--Description-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../../../browsers/edge/shortdesc/allow-search-engine-customization-shortdesc.md)]
@@ -1510,7 +1510,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow search engine customization*
 -   GP name: *AllowSearchEngineCustomization*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1531,7 +1531,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
+<a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**
 
 <!--SupportedSKUs-->
 <table>
@@ -1579,7 +1579,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure search suggestions in Address bar*
 -   GP name: *AllowSearchSuggestionsinAddressBar*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1601,7 +1601,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowsideloadingofextensions"></a>**Browser/AllowSideloadingOfExtensions**  
+<a href="" id="browser-allowsideloadingofextensions"></a>**Browser/AllowSideloadingOfExtensions**
 
 <!--SupportedSKUs-->
 <table>
@@ -1651,7 +1651,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow sideloading of Extensions*
 -   GP name: *AllowSideloadingOfExtensions*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1678,7 +1678,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
+<a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**
 
 <!--SupportedSKUs-->
 <table>
@@ -1726,7 +1726,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Windows Defender SmartScreen*
 -   GP name: *AllowSmartScreen*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1755,7 +1755,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowtabpreloading"></a>**Browser/AllowTabPreloading**  
+<a href="" id="browser-allowtabpreloading"></a>**Browser/AllowTabPreloading**
 
 <!--SupportedSKUs-->
 <table>
@@ -1805,7 +1805,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Microsoft Edge to start and load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed*
 -   GP name: *AllowTabPreloading*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1831,7 +1831,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-allowwebcontentonnewtabpage"></a>**Browser/AllowWebContentOnNewTabPage**  
+<a href="" id="browser-allowwebcontentonnewtabpage"></a>**Browser/AllowWebContentOnNewTabPage**
 
 <!--SupportedSKUs-->
 <table>
@@ -1881,7 +1881,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow web content on New Tab page*
 -   GP name: *AllowWebContentOnNewTabPage*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1907,7 +1907,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
+<a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**
 
 <!--SupportedSKUs-->
 <table>
@@ -1958,7 +1958,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Always show the Books Library in Microsoft Edge*
 -   GP name: *AlwaysEnableBooksLibrary*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -1979,7 +1979,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
+<a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**
 
 <!--SupportedSKUs-->
 <table>
@@ -2023,13 +2023,13 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../../../browsers/edge/shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow clearing browsing data on exit*
 -   GP name: *AllowClearingBrowsingDataOnExit*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2046,11 +2046,11 @@ Most restricted value: 1
 
 <!--/SupportedValues-->
 <!--Validation-->
-To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
+To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1):
 
 1. Open Microsoft Edge and browse to websites.
 2. Close the Microsoft Edge window.
-3. Open Microsoft Edge and start typing the same URL in address bar. 
+3. Open Microsoft Edge and start typing the same URL in address bar.
 4. Verify that it does not auto-complete from history.
 
 <!--/Validation-->
@@ -2059,7 +2059,7 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
+<a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**
 
 <!--SupportedSKUs-->
 <table>
@@ -2103,17 +2103,17 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 [!INCLUDE [configure-additional-search-engines-shortdesc](../../../browsers/edge/shortdesc/configure-additional-search-engines-shortdesc.md)]
 
 > [!IMPORTANT]
-> Due to Protected Settings (aka.ms/browserpolicy), this setting applies only on domain-joined machines or when the device is MDM-enrolled. 
+> Due to Protected Settings (aka.ms/browserpolicy), this setting applies only on domain-joined machines or when the device is MDM-enrolled.
 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure additional search engines*
 -   GP name: *ConfigureAdditionalSearchEngines*
 -   GP element: *ConfigureAdditionalSearchEngines_Prompt*
@@ -2134,7 +2134,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configurefavoritesbar"></a>**Browser/ConfigureFavoritesBar**  
+<a href="" id="browser-configurefavoritesbar"></a>**Browser/ConfigureFavoritesBar**
 
 <!--SupportedSKUs-->
 <table>
@@ -2184,7 +2184,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Favorites Bar*
 -   GP name: *ConfigureFavoritesBar*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2211,7 +2211,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configurehomebutton"></a>**Browser/ConfigureHomeButton**  
+<a href="" id="browser-configurehomebutton"></a>**Browser/ConfigureHomeButton**
 
 <!--SupportedSKUs-->
 <table>
@@ -2260,7 +2260,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Home Button*
 -   GP name: *ConfigureHomeButton*
 -   GP element: *ConfigureHomeButtonDropdown*
@@ -2292,7 +2292,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configurekioskmode"></a>**Browser/ConfigureKioskMode**  
+<a href="" id="browser-configurekioskmode"></a>**Browser/ConfigureKioskMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -2345,7 +2345,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure kiosk mode*
 -   GP name: *ConfigureKioskMode*
 -   GP element: *ConfigureKioskMode_TextBox*
@@ -2356,11 +2356,11 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-**0 (Default or not configured)**: 
+**0 (Default or not configured)**:
 - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
 - If it’s one of many apps, Microsoft Edge runs as normal.
 
-**1**: 
+**1**:
 - If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. _**For single-app public browsing:**_ If you do not configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.
 - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
 
@@ -2376,7 +2376,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configurekioskresetafteridletimeout"></a>**Browser/ConfigureKioskResetAfterIdleTimeout**  
+<a href="" id="browser-configurekioskresetafteridletimeout"></a>**Browser/ConfigureKioskResetAfterIdleTimeout**
 
 <!--SupportedSKUs-->
 <table>
@@ -2428,7 +2428,7 @@ You must set ConfigureKioskMode to enabled (1 - InPrivate public browsing) and c
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure kiosk reset after idle timeout*
 -   GP name: *ConfigureKioskResetAfterIdleTimeout*
 -   GP element: *ConfigureKioskResetAfterIdleTimeout_TextBox*
@@ -2455,7 +2455,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configureopenmicrosoftedgewith"></a>**Browser/ConfigureOpenMicrosoftEdgeWith**  
+<a href="" id="browser-configureopenmicrosoftedgewith"></a>**Browser/ConfigureOpenMicrosoftEdgeWith**
 
 <!--SupportedSKUs-->
 <table>
@@ -2511,7 +2511,7 @@ When you enable this policy and select an option, and also enter the URLs of the
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Open Microsoft Edge With*
 -   GP name: *ConfigureOpenEdgeWith*
 -   GP element: *ConfigureOpenEdgeWithListBox*
@@ -2544,7 +2544,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-configuretelemetryformicrosoft365analytics"></a>**Browser/ConfigureTelemetryForMicrosoft365Analytics**  
+<a href="" id="browser-configuretelemetryformicrosoft365analytics"></a>**Browser/ConfigureTelemetryForMicrosoft365Analytics**
 
 <!--SupportedSKUs-->
 <table>
@@ -2593,7 +2593,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure collection of browsing data for Microsoft 365 Analytics*
 -   GP name: *ConfigureTelemetryForMicrosoft365Analytics*
 -   GP element: *ZonesListBox*
@@ -2622,7 +2622,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
+<a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**
 
 <!--SupportedSKUs-->
 <table>
@@ -2666,19 +2666,19 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10*  
+>*Supported versions: Microsoft Edge on Windows 10*
 
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../../../browsers/edge/shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
-  
+
 > [!NOTE]
-> This policy has no effect when the Browser/HomePages policy is not configured. 
- 
+> This policy has no effect when the Browser/HomePages policy is not configured.
+
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/legal/windows/agreements/microsoft-browser-extension-policy).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable lockdown of Start pages*
 -   GP name: *DisableLockdownOfStartPages*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2698,7 +2698,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
+<a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**
 
 <!--SupportedSKUs-->
 <table>
@@ -2747,7 +2747,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow extended telemetry for the Books tab*
 -   GP name: *EnableExtendedBooksTelemetry*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2767,7 +2767,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
+<a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**
 
 <!--SupportedSKUs-->
 <table>
@@ -2817,11 +2817,11 @@ Most restricted value: 0
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
- 
+
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure the Enterprise Mode Site List*
 -   GP name: *EnterpriseModeSiteList*
 -   GP element: *EnterSiteListPrompt*
@@ -2842,7 +2842,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
+<a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**
 
 <!--SupportedSKUs-->
 <table>
@@ -2895,7 +2895,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-homepages"></a>**Browser/HomePages**  
+<a href="" id="browser-homepages"></a>**Browser/HomePages**
 
 <!--SupportedSKUs-->
 <table>
@@ -2949,10 +2949,10 @@ Supported values:
 Starting with this version, the HomePages policy enforces that users cannot change the Start pages settings.
 
 **Version 1703**<br>
-If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL. 
+If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.
 
 **Version 1809**<br>
-When you enable the Configure Open Microsoft Edge With policy and select an option, and you enter the URLs of the pages your want to load as the Start pages in this policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the HomePages policy. 
+When you enable the Configure Open Microsoft Edge With policy and select an option, and you enter the URLs of the pages your want to load as the Start pages in this policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the HomePages policy.
 
 
 > [!NOTE]
@@ -2960,7 +2960,7 @@ When you enable the Configure Open Microsoft Edge With policy and select an opti
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Start pages*
 -   GP name: *HomePages*
 -   GP element: *HomePagesPrompt*
@@ -2980,7 +2980,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**  
+<a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**
 
 <!--SupportedSKUs-->
 <table>
@@ -3024,14 +3024,14 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1709* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709*
 
 [!INCLUDE [prevent-changes-to-favorites-shortdesc](../../../browsers/edge/shortdesc/prevent-changes-to-favorites-shortdesc.md)]
 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent changes to Favorites on Microsoft Edge*
 -   GP name: *LockdownFavorites*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3051,7 +3051,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
+<a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**
 
 <!--SupportedSKUs-->
 <table>
@@ -3100,7 +3100,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent access to the about:flags page in Microsoft Edge*
 -   GP name: *PreventAccessToAboutFlagsInMicrosoftEdge*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3120,7 +3120,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventcerterroroverrides"></a>**Browser/PreventCertErrorOverrides**  
+<a href="" id="browser-preventcerterroroverrides"></a>**Browser/PreventCertErrorOverrides**
 
 <!--SupportedSKUs-->
 <table>
@@ -3169,7 +3169,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent certificate error overrides*
 -   GP name: *PreventCertErrorOverrides*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3195,7 +3195,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
+<a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**
 
 <!--SupportedSKUs-->
 <table>
@@ -3239,13 +3239,13 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*
 
 [!INCLUDE [prevent-first-run-webpage-from-opening-shortdesc](../../../browsers/edge/shortdesc/prevent-first-run-webpage-from-opening-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent the First Run webpage from opening on Microsoft Edge*
 -   GP name: *PreventFirstRunPage*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3255,7 +3255,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – Allowed. Load the First Run webpage. 
+-   0 (default) – Allowed. Load the First Run webpage.
 -   1 – Prevented/not allowed.
 
 Most restricted value: 1
@@ -3265,7 +3265,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
+<a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**
 
 <!--SupportedSKUs-->
 <table>
@@ -3309,13 +3309,13 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../../../browsers/edge/shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start*
 -   GP name: *PreventLiveTileDataCollection*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3335,7 +3335,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
+<a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**
 
 <!--SupportedSKUs-->
 <table>
@@ -3383,7 +3383,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for sites*
 -   GP name: *PreventSmartScreenPromptOverride*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3403,7 +3403,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
+<a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**
 
 <!--SupportedSKUs-->
 <table>
@@ -3452,7 +3452,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for files*
 -   GP name: *PreventSmartScreenPromptOverrideForFiles*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3472,7 +3472,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventturningoffrequiredextensions"></a>**Browser/PreventTurningOffRequiredExtensions**  
+<a href="" id="browser-preventturningoffrequiredextensions"></a>**Browser/PreventTurningOffRequiredExtensions**
 
 <!--SupportedSKUs-->
 <table>
@@ -3520,7 +3520,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent turning off required extensions*
 -   GP name: *PreventTurningOffRequiredExtensions*
 -   GP element: *PreventTurningOffRequiredExtensions_Prompt*
@@ -3529,7 +3529,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values: 
+Supported values:
 
 - Blank (default) - Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.
 
@@ -3547,7 +3547,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
+<a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**
 
 <!--SupportedSKUs-->
 <table>
@@ -3598,7 +3598,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent using Localhost IP address for WebRTC*
 -   GP name: *HideLocalHostIPAddress*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3618,7 +3618,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**  
+<a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**
 
 <!--SupportedSKUs-->
 <table>
@@ -3662,10 +3662,10 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709 or later*
 
 [!INCLUDE [provision-favorites-shortdesc](../../../browsers/edge/shortdesc/provision-favorites-shortdesc.md)]
- 
+
 
 Define a default list of favorites in Microsoft Edge. In this case, the Save a Favorite, Import settings, and context menu options (such as Create a new folder) are turned off.
 
@@ -3683,7 +3683,7 @@ To define a default list of favorites:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Provision Favorites*
 -   GP name: *ConfiguredFavorites*
 -   GP element: *ConfiguredFavoritesPrompt*
@@ -3696,7 +3696,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
+<a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -3749,7 +3749,7 @@ ADMX Info:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Send all intranet sites to Internet Explorer 11*
 -   GP name: *SendIntranetTraffictoInternetExplorer*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3770,7 +3770,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
+<a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**
 
 <!--SupportedSKUs-->
 <table>
@@ -3814,7 +3814,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703*  
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*
 
 [!INCLUDE [set-default-search-engine-shortdesc](../../../browsers/edge/shortdesc/set-default-search-engine-shortdesc.md)]
 
@@ -3826,7 +3826,7 @@ Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set default search engine*
 -   GP name: *SetDefaultSearchEngine*
 -   GP element: *SetDefaultSearchEngine_Prompt*
@@ -3848,7 +3848,7 @@ Most restricted value: 1
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-sethomebuttonurl"></a>**Browser/SetHomeButtonURL**  
+<a href="" id="browser-sethomebuttonurl"></a>**Browser/SetHomeButtonURL**
 
 <!--SupportedSKUs-->
 <table>
@@ -3897,7 +3897,7 @@ Most restricted value: 1
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set Home Button URL*
 -   GP name: *SetHomeButtonURL*
 -   GP element: *SetHomeButtonURLPrompt*
@@ -3923,7 +3923,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-setnewtabpageurl"></a>**Browser/SetNewTabPageURL**  
+<a href="" id="browser-setnewtabpageurl"></a>**Browser/SetNewTabPageURL**
 
 <!--SupportedSKUs-->
 <table>
@@ -3972,7 +3972,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set New Tab page URL*
 -   GP name: *SetNewTabPageURL*
 -   GP element: *SetNewTabPageURLPrompt*
@@ -3997,7 +3997,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
+<a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -4049,7 +4049,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Show message when opening sites in Internet Explorer*
 -   GP name: *ShowMessageWhenOpeningSitesInInternetExplorer*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -4070,7 +4070,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
+<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**
 
 <!--SupportedSKUs-->
 <table>
@@ -4114,17 +4114,17 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
->*Supported versions: Microsoft Edge on Windows 10, version 1703 or later* 
- 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*
+
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../../../browsers/edge/shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Keep favorites in sync between Internet Explorer and Microsoft Edge*
 -   GP name: *SyncFavoritesBetweenIEAndMicrosoftEdge*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -4153,7 +4153,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-unlockhomebutton"></a>**Browser/UnlockHomeButton**  
+<a href="" id="browser-unlockhomebutton"></a>**Browser/UnlockHomeButton**
 
 <!--SupportedSKUs-->
 <table>
@@ -4203,7 +4203,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Unlock Home Button*
 -   GP name: *UnlockHomeButton*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -4228,7 +4228,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
+<a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**
 
 <!--SupportedSKUs-->
 <table>
@@ -4277,7 +4277,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow a shared Books folder*
 -   GP name: *UseSharedFolderForBooks*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -4287,7 +4287,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 - Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
+-   0 - Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user.
 -   1 - Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
 Most restricted value: 0

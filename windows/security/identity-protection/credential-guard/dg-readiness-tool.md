@@ -12,7 +12,7 @@ ms.author: stsyfuhs
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool

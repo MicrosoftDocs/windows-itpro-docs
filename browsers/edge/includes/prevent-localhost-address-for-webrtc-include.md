@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -25,21 +25,21 @@ ms.topic: include
 ---
 
 ### ADMX info and settings
-#### ADMX info 
-- **GP English name:** Prevent using Localhost IP address for WebRTC 
-- **GP name:** HideLocalHostIPAddress 
+#### ADMX info
+- **GP English name:** Prevent using Localhost IP address for WebRTC
+- **GP name:** HideLocalHostIPAddress
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
-#### MDM settings 
+#### MDM settings
 - **MDM name:** Browser/[PreventUsingLocalHostIPAddressForWebRTC](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventusinglocalhostipaddressforwebrtc)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC
 - **Data type:** Integer
 
-#### Registry settings 
+#### Registry settings
 - **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
-- **Value name:** HideLocalHostIPAddress 
+- **Value name:** HideLocalHostIPAddress
 - **Value type:** REG_DWORD
 
 <hr>

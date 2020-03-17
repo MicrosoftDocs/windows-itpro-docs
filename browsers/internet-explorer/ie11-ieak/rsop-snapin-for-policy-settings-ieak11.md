@@ -5,7 +5,7 @@ description: Learn how to use the Resultant Set of Policy (RSoP) snap-in to view
 author: dansimp
 ms.prod: ie11
 ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -37,9 +37,9 @@ You’ll only need to go through the resulting RSoP Wizard first time you run th
 
 3.  Under **Computer Configuration**, click **Administrative Templates**, click **Windows Components**, click **IE**, and then click the feature you want to review the policy settings for.
 
- 
 
- 
+
+
 
 
 

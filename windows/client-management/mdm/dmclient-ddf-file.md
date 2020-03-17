@@ -2,7 +2,7 @@
 title: DMClient DDF file
 description: DMClient DDF file
 ms.assetid: A21B33AF-DB76-4059-8170-FADF2CB898A0
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article

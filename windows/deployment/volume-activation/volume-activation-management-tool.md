@@ -2,7 +2,7 @@
 title: Volume Activation Management Tool (VAMT) Technical Reference (Windows 10)
 description: The Volume Activation Management Tool (VAMT) enables network administrators to automate and centrally manage volume activation and retail activation.
 ms.assetid: 1df0f795-f41c-473b-850c-e98af1ad2f2a
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -23,8 +23,8 @@ VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the W
 -   Windows Server 2008 R2 or above
 
 
-**Important**  
-VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 (or later), Microsoft Office 2010 (or above). 
+**Important**
+VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 (or later), Microsoft Office 2010 (or above).
 
 VAMT is only available in an EN-US (x86) package.
 
@@ -41,4 +41,4 @@ VAMT is only available in an EN-US (x86) package.
 |[Manage VAMT Data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
 |[VAMT Step-by-Step Scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
 |[VAMT Known Issues](vamt-known-issues.md) |Lists known issues in VAMT. |
- 
+

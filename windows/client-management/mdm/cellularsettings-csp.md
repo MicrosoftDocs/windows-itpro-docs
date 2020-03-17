@@ -2,7 +2,7 @@
 title: CellularSettings CSP
 description: CellularSettings CSP
 ms.assetid: ce8b6f16-37ca-4aaf-98b0-306d12e326df
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -23,7 +23,7 @@ The following image shows the CellularSettings CSP in tree format as used by Ope
 
 ![provisioning\-csp\-cellularsettings](images/provisioning-csp-cellularsettings.png)
 
-<a href="" id="dataroam"></a>**DataRoam**  
+<a href="" id="dataroam"></a>**DataRoam**
 <p style="margin-left: 20px"> Optional. Integer. Specifies the default roaming value. Valid values are:</p>
 
 <table style="margin-left: 20px"><table>
@@ -53,16 +53,16 @@ The following image shows the CellularSettings CSP in tree format as used by Ope
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

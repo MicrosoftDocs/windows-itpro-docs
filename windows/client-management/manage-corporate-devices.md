@@ -2,7 +2,7 @@
 title: Manage corporate devices (Windows 10)
 description: You can use the same management tools to manage all device types running Windows 10 desktops, laptops, tablets, and phones.
 ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: ["MDM", "device management"]
@@ -30,7 +30,7 @@ You can use the same management tools to manage all device types running Windows
 
 | Topic | Description |
 | --- | --- |
-| [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md) | Strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment | 
+| [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md) | Strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment |
 | [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) | How to use Remote Desktop Connection to connect to an Azure AD-joined PC |
 | [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](/windows/configuration/manage-tips-and-suggestions) | Options to manage user experiences to provide a consistent and predictable experience for employees |
 | [New policies for Windows 10](new-policies-for-windows-10.md) | New Group Policy settings added in Windows 10 |
@@ -65,7 +65,7 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 
 
- 
+
 
 
 

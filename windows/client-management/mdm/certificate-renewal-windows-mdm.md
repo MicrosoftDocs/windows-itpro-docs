@@ -1,11 +1,11 @@
 ---
 title: Certificate Renewal
 description: Find all the resources needed to provide continuous access to client certificates.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
 ms.assetid: F910C50C-FF67-40B0-AAB0-CA7CE02A9619
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -50,7 +50,7 @@ During the automatic certificate renew process, the device will deny HTTP redire
 The following example shows the details of an automatic renewal request.
 
 ``` xml
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
    xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u=
    "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
    <s:Header>
@@ -71,7 +71,7 @@ The following example shows the details of an automatic renewal request.
          <o:UsernameToken u:Id="uuid-2a734df6-b227-4e60-82a8-ed53c574b718-5">
             <o:Username>user@contoso.com</o:Username>
             <o:Password o:Type=
-               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">                
+               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
             </o:Password>
          </o:UsernameToken>
       </o:Security>
@@ -82,9 +82,9 @@ The following example shows the details of an automatic renewal request.
     http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
          </TokenType>
          <RequestType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Renew</RequestType>
-         <BinarySecurityToken 
-            ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7" 
-            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary" 
+         <BinarySecurityToken
+            ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7"
+            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
             xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
             BinarySecurityTokenInsertedHere
          </BinarySecurityToken>

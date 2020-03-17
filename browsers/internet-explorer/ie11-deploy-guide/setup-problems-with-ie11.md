@@ -6,7 +6,7 @@ description: Reviewing log files to learn more about potential setup problems wi
 author: dansimp
 ms.prod: ie11
 ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -57,11 +57,11 @@ These log files continuously record the entire process from the moment the IE se
 |41001 |USER_ERROR_UNKNOWN |
 |50005 |USER_SUCCESS_USER_CANCELLED |
 
- 
 
- 
 
- 
+
+
+
 
 
 

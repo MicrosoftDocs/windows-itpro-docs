@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -21,20 +21,20 @@ ms.topic: conceptual
 
 > [!IMPORTANT]
 > In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
-> 
+>
 > The update is applicable to devices running macOS version 10.15.4 or later.
-> 
+>
 > To ensure that the Microsoft Defender ATP for Mac update is delivered and applied seamlessly from an end-user experience perspective, a new remote configuration must be deployed to all eligible macOS devices before Microsoft publishes the new agent version. If the configuration is not deployed prior to the Microsoft Defender ATP for Mac agent update, end-users will be presented with a series of system dialogs asking to grant the agent all necessary permissions associated with the new system extensions.
-> 
-> Timing: 
+>
+> Timing:
 > - Organizations that previously opted into Microsoft Defender ATP preview features in Microsoft Defender Security Center, must be ready for Microsoft Defender ATP for Mac agent update **by August 10, 2020**.
 > - Organizations that do not participate in public previews for Microsoft Defender ATP features, must be ready **by September 07, 2020**.
-> 
+>
 > Action is needed by IT administrator. Review the steps below and assess the impact on your organization:
-> 
+>
 > 1. Deploy the specified remote configuration to eligible macOS devices before Microsoft publishes the new agent version. <br/>
 > Even though Microsoft Defender ATP for Mac new implementation based on system extensions is only applicable to devices running macOS version 10.15.4 or later, deploying configuration proactively across the entire macOS fleet will ensure that even down-level devices are prepared for the day when Apple releases macOS 11 Big Sur and will ensure that Microsoft Defender ATP for Mac continues protecting all macOS devices regardless OS version they were running prior to the Big Sur upgrade.
-> 
+>
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
 
@@ -79,7 +79,7 @@ ms.topic: conceptual
 ## 100.86.91
 
 > [!CAUTION]
-> To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current – 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12]. MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13]. 
+> To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current – 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12]. MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].
 >
 > If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.
 

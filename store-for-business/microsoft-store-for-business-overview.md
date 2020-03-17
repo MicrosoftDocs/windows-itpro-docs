@@ -2,7 +2,7 @@
 title: Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.pagetype: store, mobile
@@ -22,7 +22,7 @@ ms.date: 10/17/2017
 -   Windows 10
 -   Windows 10 Mobile
 
-Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. 
+Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
 
 ## Features
 Organizations or schools of any size can benefit from using Microsoft Store for Business or Microsoft Store for Education:
@@ -34,7 +34,7 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
     - **Microsoft Store for Education** – Apps acquired from Microsoft Store for Education
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
-- **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
+- **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices.
 - **Flexible distribution options** - Flexible options for distributing content and apps to your employee devices:
     - Distribute through Microsoft Store services. You can assign apps to individual employees, or make apps available to all employees in your private store.
     - Use a management tool from Microsoft, or a 3rd-party tool for advanced distribution and management functions, or for managing images.
@@ -42,8 +42,8 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
 - **Line-of-business apps** - Privately add and distribute your internal line-of-business apps using any of the distribution options.
 - **App license management**: Admins can reclaim and reuse app licenses. Online and offline licenses allow you to customize how you decide to deploy apps.
 - **Up-to-date apps** - Microsoft Store manages the update process for apps with online licenses. Apps are automatically updated so you are always current with the most recent software updates and product features. Store for Business apps also uninstall cleanly, without leaving behind extra files, for times when you need to switch apps for specific employees.
-- **Office app launcher** Office apps while working with Microsoft Store for Business. 
-- **Find a partner** – Search and find a Microsoft Partner who can assist you with Microsoft solutions for your business. 
+- **Office app launcher** Office apps while working with Microsoft Store for Business.
+- **Find a partner** – Search and find a Microsoft Partner who can assist you with Microsoft solutions for your business.
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
+- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education.
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -99,7 +99,7 @@ Also, if your organization plans to use a management tool, you’ll need to conf
 
 ## Get apps and content
 
-Once signed in to the Microsoft Store, you can browse and search for all products in the Store for Business and Education catalog. Some apps are free,and some apps charge a price. We're continuing to add more paid apps to the Store for Business and Education. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card, and some items can be paid for with an invoice. We'll be adding more payment options over time. 
+Once signed in to the Microsoft Store, you can browse and search for all products in the Store for Business and Education catalog. Some apps are free,and some apps charge a price. We're continuing to add more paid apps to the Store for Business and Education. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card, and some items can be paid for with an invoice. We'll be adding more payment options over time.
 
 **App types** - These app types are supported in the Store for Business and Education:
 
@@ -123,7 +123,7 @@ App distribution is handled through two channels, either through the Microsoft S
 **Distribute with Store for Business and Education**:
 - Email link – After purchasing an app, Admins can send employees a link in an email message. Employees can click the link to install the app.
 - Curate private store for all employees – A private store can include content you’ve purchased from Microsoft Store for Business, and your line-of-business apps that you’ve submitted to Microsoft Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
-- To use the options above users must be signed in with an Azure AD account on a Windows 10 device. Licenses are assigned as individuals install apps. 
+- To use the options above users must be signed in with an Azure AD account on a Windows 10 device. Licenses are assigned as individuals install apps.
 
 **Using a management tool** – For larger organizations that want a greater level of control over how apps are distributed and managed, a management tools provides other distribution options:
 - Scoped content distribution – Ability to scope content distribution to specific groups of employees.
@@ -208,7 +208,7 @@ Store for Business and Education is currently available in these markets.
         </ul>
      </td>
      <td>
-        <ul> 
+        <ul>
             <li>Egypt</li>
             <li>El Salvador</li>
             <li>Estonia</li>
@@ -291,7 +291,7 @@ Store for Business and Education is currently available in these markets.
             <li>Reunion</li>
             <li>Romania</li>
             <li>Rwanda</li>
-            <li>Saint Kitts and Nevis</li> 
+            <li>Saint Kitts and Nevis</li>
         </ul>
     </td>
     <td>
@@ -339,10 +339,10 @@ Store for Business and Education is currently available in these markets.
 
 ### Support for free apps
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
-- Russia 
+- Russia
 
 ### Support for free apps and Minecraft: Education Edition
-Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:  
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:
 - Albania
 - Aremenia
 - Azerbaijan
@@ -358,13 +358,13 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Republic of Moldova
 - Taiwan
 - Tajikistan
-- Ukraine 
+- Ukraine
 
 ### Support to only manage products
-Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purchase apps directly from Microsoft Store for Business and Education. 
+Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purchase apps directly from Microsoft Store for Business and Education.
 - Puerto Rico
 
-This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
+This table summarize what customers can purchase, depending on which Microsoft Store they are using.
 
 | Store | Free apps | Minecraft: Education Edition |
 | ----- | --------- | ---------------------------- |
@@ -374,19 +374,19 @@ This table summarize what customers can purchase, depending on which Microsoft S
 > [!NOTE]
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 > - Admins can acquire free apps from **Microsoft Store for Education**.
-> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-> - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
+> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices).
+> - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**.
 
 ## Privacy notice
 
 Store for Business and Education services get names and email addresses of people in your organization from Azure Active Directory. This information is needed for these admin functions:
 - Granting and managing permissions
-- Managing app licenses 
+- Managing app licenses
 - Distributing apps to people (names appear in a list that admins can select from)
 
 Store for Business and Education does not save names, or email addresses.
 
-Your use of Store for Business and Education is also governed by the [Microsoft Store for Business and Education Services Agreement](https://businessstore.microsoft.com/servicesagreement). 
+Your use of Store for Business and Education is also governed by the [Microsoft Store for Business and Education Services Agreement](https://businessstore.microsoft.com/servicesagreement).
 
 Information sent to Store for Business and Education is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement/).
 

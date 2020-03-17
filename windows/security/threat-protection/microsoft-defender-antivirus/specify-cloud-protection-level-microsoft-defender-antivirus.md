@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ---
@@ -43,7 +43,7 @@ You can specify the level of cloud-protection offered by Microsoft Defender Anti
 8. Click **OK** to exit the **Microsoft Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
-  
+
 
 ## Use Configuration Manager to specify the level of cloud-delivered protection
 
@@ -55,7 +55,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**. 
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
 4.  Click **Administrative templates**.
 
@@ -66,13 +66,13 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
     - **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
     - **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.
-    
+
     > [!WARNING]
     > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 
 7. Click **OK**.
 
-  
+
 ## Related articles
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

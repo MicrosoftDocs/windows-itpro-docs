@@ -2,7 +2,7 @@
 title: Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings (Windows 10)
 description: Learn more about the security policy setting, Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings.
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -50,12 +50,12 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not defined |
-| Default Domain Controller Policy | Not defined | 
+| Default Domain Controller Policy | Not defined |
 | Stand-Alone Server Default Settings | Enabled |
 | DC Effective Default Settings | Enabled |
-| Member Server Effective Default Settings | Enabled | 
-| Client Computer Effective Default Settings | Enabled | 
- 
+| Member Server Effective Default Settings | Enabled |
+| Client Computer Effective Default Settings | Enabled |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -92,12 +92,12 @@ Enable audit policy subcategories as needed to track specific events.
 
 ### Potential impacts
 
-If you attempt to modify an audit setting by using Group Policy after enabling this setting through the command-line tools, the Group Policy audit setting is ignored in favor of the custom policy setting. To modify audit settings by using Group Policy, you must first disable the 
+If you attempt to modify an audit setting by using Group Policy after enabling this setting through the command-line tools, the Group Policy audit setting is ignored in favor of the custom policy setting. To modify audit settings by using Group Policy, you must first disable the
 **SCENoApplyLegacyAuditPolicy** key.
 > **Important:**  Be very cautious about audit settings that can generate a large volume of traffic. For example, if you enable success or failure auditing for all of the Privilege Use subcategories, the high volume of audit events that are generated can make it difficult to find other types of entries in the security event log. Such a configuration could also have a significant impact on system performance.
- 
+
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+
+

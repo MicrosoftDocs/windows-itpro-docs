@@ -2,7 +2,7 @@
 title: Plan for volume activation (Windows 10)
 description: Product activation is the process of validating software with the manufacturer after it has been installed on a specific computer.
 ms.assetid: f84b005b-c362-4a70-a84e-4287c0d2e4ca
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
@@ -61,7 +61,7 @@ Volume licensing offers customized programs that are tailored to the size and pu
 The licenses that are provided through volume licensing programs such as Open License, Select License, and Enterprise Agreements cover upgrades to Windows client operating systems only. An existing retail or OEM operating system license is needed for each computer running Windows 10, Windows 8.1 Pro, Windows 8 Pro, Windows 7 Professional or Ultimate, or Windows XP Professional before the upgrade rights obtained through volume licensing can be exercised.
 Volume licensing is also available through certain subscription or membership programs, such as the Microsoft Partner Network and MSDN. These volume licenses may contain specific restrictions or other changes to the general terms applicable to volume licensing.
 
-**Note**  
+**Note**
 Some editions of the operating system, such as Windows 10 Enterprise, and some editions of application software are available only through volume licensing agreements or subscriptions.
 
 ## Activation models
@@ -78,7 +78,7 @@ Telephone activation is primarily used in situations where a computer is isolate
 -   KMS
 -   Active Directory-based activation
 
-**Note**  
+**Note**
 Token-based activation is available for specific situations when approved customers rely on a public key infrastructure in an isolated and high-security environment. For more information, contact your Microsoft Account Team or your service representative.
 Token-based Activation option is available for Windows 10 Enterprise LTSB editions (Version 1507 and 1607).
 
@@ -228,5 +228,5 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
- 
+
+

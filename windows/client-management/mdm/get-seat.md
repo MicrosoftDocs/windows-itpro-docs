@@ -2,7 +2,7 @@
 title: Get seat
 description: The Get seat operation retrieves the information about an active seat for a specified user in the Microsoft Store for Business.
 ms.assetid: 715BAEB2-79FD-4945-A57F-482F9E7D07C6
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -74,7 +74,7 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
+
 ## Response
 
 ### Response body
@@ -126,9 +126,9 @@ The response body contains [SeatDetails](data-structures-windows-store-for-busin
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

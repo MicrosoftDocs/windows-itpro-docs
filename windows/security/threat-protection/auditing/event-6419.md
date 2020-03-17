@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,33 +38,33 @@ This event doesn’t mean that device was disabled.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>6419</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13316</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-14T22:23:26.789591400Z" /> 
- <EventRecordID>483</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="2192" ThreadID="1392" /> 
- <Channel>Security</Channel> 
- <Computer>DESKTOP-NFC0HVN</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>6419</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13316</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-14T22:23:26.789591400Z" />
+ <EventRecordID>483</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="2192" ThreadID="1392" />
+ <Channel>Security</Channel>
+ <Computer>DESKTOP-NFC0HVN</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-2695983153-1310895815-1903476278-1001</Data> 
- <Data Name="SubjectUserName">ladmin</Data> 
- <Data Name="SubjectDomainName">DESKTOP-NFC0HVN</Data> 
- <Data Name="SubjectLogonId">0x3fcc7</Data> 
- <Data Name="DeviceId">USB\\VID\_138A&PID\_0017\\FFBC12C950A0</Data> 
- <Data Name="DeviceDescription">Synaptics FP Sensors (WBF) (PID=0017)</Data> 
- <Data Name="ClassId">{53D29EF7-377C-4D14-864B-EB3A85769359}</Data> 
- <Data Name="ClassName">Biometric</Data> 
- <Data Name="HardwareIds">USB\\VID\_138A&PID\_0017&REV\_0078 USB\\VID\_138A&PID\_0017</Data> 
- <Data Name="CompatibleIds">USB\\Class\_FF&SubClass\_00&Prot\_00 USB\\Class\_FF&SubClass\_00 USB\\Class\_FF</Data> 
- <Data Name="LocationInformation">Port\_\#0002.Hub\_\#0004</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-2695983153-1310895815-1903476278-1001</Data>
+ <Data Name="SubjectUserName">ladmin</Data>
+ <Data Name="SubjectDomainName">DESKTOP-NFC0HVN</Data>
+ <Data Name="SubjectLogonId">0x3fcc7</Data>
+ <Data Name="DeviceId">USB\\VID\_138A&PID\_0017\\FFBC12C950A0</Data>
+ <Data Name="DeviceDescription">Synaptics FP Sensors (WBF) (PID=0017)</Data>
+ <Data Name="ClassId">{53D29EF7-377C-4D14-864B-EB3A85769359}</Data>
+ <Data Name="ClassName">Biometric</Data>
+ <Data Name="HardwareIds">USB\\VID\_138A&PID\_0017&REV\_0078 USB\\VID\_138A&PID\_0017</Data>
+ <Data Name="CompatibleIds">USB\\Class\_FF&SubClass\_00&Prot\_00 USB\\Class\_FF&SubClass\_00 USB\\Class\_FF</Data>
+ <Data Name="LocationInformation">Port\_\#0002.Hub\_\#0004</Data>
  </EventData>
 </Event>
 

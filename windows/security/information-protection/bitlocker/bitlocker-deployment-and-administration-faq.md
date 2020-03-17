@@ -2,7 +2,7 @@
 title: BitLocker deployment and administration FAQ (Windows 10)
 description: Browse frequently asked questions about BitLocker deployment and administration, such as, "Can BitLocker deployment be automated in an enterprise environment?"
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -69,14 +69,14 @@ The following types of system changes can cause an integrity check failure and p
 
 ## What causes BitLocker to start into recovery mode when attempting to start the operating system drive?
 
-Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. 
-For example: 
+Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode.
+For example:
 
 - Changing the BIOS boot order to boot another drive in advance of the hard drive.
 - Adding or removing hardware, such as inserting a new card in the computer, including some PCMIA wireless cards.
 - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
 
-In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
+In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password.
 The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
 
 ## What can prevent BitLocker from binding to PCR 7?

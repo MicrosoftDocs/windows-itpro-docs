@@ -10,7 +10,7 @@ ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.date: 06/20/2018
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---

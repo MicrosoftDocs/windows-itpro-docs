@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -50,11 +50,11 @@ Set the regular sync interval for phones that are set to use Network Time Protoc
 
 ## NTPRetryInterval
 
-Set the retry interval if the regular sync fails. Select a value between `1` and `24` hours, inclusive. 
+Set the retry interval if the regular sync fails. Select a value between `1` and `24` hours, inclusive.
 
 ## NTPServer
 
-Change the default NTP server for phones that are set to use NTP. To enumerate the NTP source server(s) used by the NTP client, set the value for NTPServer to a list of server names, delimited by semi-colons. 
+Change the default NTP server for phones that are set to use NTP. To enumerate the NTP source server(s) used by the NTP client, set the value for NTPServer to a list of server names, delimited by semi-colons.
 
 **Example**:
 

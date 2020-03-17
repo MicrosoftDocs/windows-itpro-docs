@@ -5,7 +5,7 @@ MS-HAID:
 - 'p\_phdevicemgmt.get\_seatblock'
 - 'p\_phDeviceMgmt.get\_inventory'
 ms.assetid: C5485722-FC49-4358-A097-74169B204E74
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -41,7 +41,7 @@ The **Get Inventory** operation retrieves information from the Microsoft Store f
 </table>
 
 
- 
+
 
 ### URI parameters
 
@@ -165,7 +165,7 @@ Here are some examples.
 
 The response contains [InventoryResultSet](data-structures-windows-store-for-business.md#inventoryresultset).
 
- 
+
 
 
 

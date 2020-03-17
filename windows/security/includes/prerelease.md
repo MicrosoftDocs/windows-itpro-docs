@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP Pre-release Disclaimer
 description: Disclaimer for pre-release version of Microsoft Defender ATP.
 ms.date: 08/28/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: macapara
 author: mjcaparas

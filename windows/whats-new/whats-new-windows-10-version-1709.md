@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.reviewer: 
+ms.reviewer:
 author: greg-lindsay
 manager: laurawi
 ms.author: greglin
@@ -39,7 +39,7 @@ You can also apply an Autopilot deployment profile to your devices using Microso
 
 Windows 10 Subscription Activation lets you deploy Windows 10 Enterprise in your organization with no keys and no reboots using a list of subscribed users. When a subscribed user signs in on their Windows 10 Pro device, features that are Enterprise-only are automatically enabled. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation).
 
-### Autopilot Reset	
+### Autopilot Reset
 
 IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
 
@@ -85,7 +85,7 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 **Windows security baselines** have been updated for Windows 10. A [security baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/windows/device-security/security-compliance-toolkit-10).
 
-### Windows Defender ATP 
+### Windows Defender ATP
 
 Windows Defender ATP has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Windows Defender Advanced Threat Protection Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
 

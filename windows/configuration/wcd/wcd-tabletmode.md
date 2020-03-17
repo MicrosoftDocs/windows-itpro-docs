@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -25,7 +25,7 @@ Use TabletMode to configure settings related to tablet mode.
 
 ## ConvertibleSlateModePromptPreference
 
-Set the default for hardware-based prompts. 
+Set the default for hardware-based prompts.
 
 ## SignInMode
 

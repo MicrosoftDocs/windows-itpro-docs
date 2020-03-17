@@ -1,20 +1,20 @@
 ---
 title: Configuring UE-V with Microsoft Endpoint Configuration Manager
-description: Configuring UE-V with Microsoft Endpoint Configuration Manager 
+description: Configuring UE-V with Microsoft Endpoint Configuration Manager
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ---
 
 
-# Configuring UE-V with Microsoft Endpoint Configuration Manager 
+# Configuring UE-V with Microsoft Endpoint Configuration Manager
 
 **Applies to**
 -   Windows 10, version 1607
@@ -80,7 +80,7 @@ The UE-V Configuration Pack includes tools to:
     </tbody>
     </table>
 
-     
+
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -101,25 +101,25 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
 -   ConfigurationFile &lt;full path to agent configuration XML file&gt;
 
-**Note**  
+**Note**
 It might be necessary to change the PowerShell execution policy to allow these scripts to run in your environment. Perform these steps in the Configuration Manager console:
 
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
- 
+
 
 <a href="" id="create"></a>**Create the first UE-V policy configuration item**
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
     ``` syntax
-    C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml 
+    C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml
     ```
 
     The default configuration file contains five sections:
 
-    <a href="" id="computer-policy"></a>**Computer Policy**  
+    <a href="" id="computer-policy"></a>**Computer Policy**
     All UE-V machine level settings. The DesiredState attribute can be
 
     -   **Set** to have the value assigned in the registry
@@ -130,7 +130,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
 
-    <a href="" id="currentcomputeruserpolicy"></a>**CurrentComputerUserPolicy**  
+    <a href="" id="currentcomputeruserpolicy"></a>**CurrentComputerUserPolicy**
     All UE-V user level settings. These entries override the machine settings for a user. The DesiredState attribute can be
 
     -   **Set** to have the value assigned in the registry
@@ -141,10 +141,10 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
 
-    <a href="" id="services"></a>**Services**  
+    <a href="" id="services"></a>**Services**
     Entries in this section control service operation. The default configuration file contains a single entry for the UevAgentService. The DesiredState attribute can be set to **Running** or **Stopped**.
 
-    <a href="" id="windows8appscomputerpolicy"></a>**Windows8AppsComputerPolicy**  
+    <a href="" id="windows8appscomputerpolicy"></a>**Windows8AppsComputerPolicy**
     All machine level Windows app synchronization settings. Each PackageFamilyName listed in this section can be assigned a DesiredState of
 
     -   **Enabled** to have settings roam
@@ -155,7 +155,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     Additional lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
 
-    <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy**  
+    <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy**
     Identical to the Windows8AppsComputerPolicy with settings that override machine settings for an individual user.
 
 2.  Edit the configuration file by changing the desired state and value fields.
@@ -240,9 +240,9 @@ You can download the [System Center 2012 Configuration Pack for Microsoft User E
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
 
- 
 
- 
+
+
 
 
 

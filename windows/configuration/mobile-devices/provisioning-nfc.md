@@ -1,6 +1,6 @@
 ---
 title: NFC-based device provisioning (Windows 10)
-description: 
+description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -21,7 +21,7 @@ manager: dansimp
 -   Windows 10 Mobile
 
 
-Near field communication (NFC) enables Windows 10 Mobile Enterprise and Windows 10 Mobile devices to communicate with an NFC tag or another NFC-enabled transmitting device. Enterprises that do bulk provisioning can use NFC-based device provisioning to provide a provisioning package to the device that's being provisioned. NFC provisioning is simple and convenient and it can easily store an entire provisioning package. 
+Near field communication (NFC) enables Windows 10 Mobile Enterprise and Windows 10 Mobile devices to communicate with an NFC tag or another NFC-enabled transmitting device. Enterprises that do bulk provisioning can use NFC-based device provisioning to provide a provisioning package to the device that's being provisioned. NFC provisioning is simple and convenient and it can easily store an entire provisioning package.
 
 The NFC provisioning option enables the administrator to provide a provisioning package during initial device setup (the out-of-box experience or OOBE phase). Administrators can use the NFC provisioning option to transfer provisioning information to persistent storage by tapping an unprovisioned mobile device to an NFC tag or NFC-enabled device. To use NFC for pre-provisioning a device, you must either prepare your own NFC tags by storing your provisioning package to a tag as described in this section, or build the infrastructure needed to transmit a provisioning package between an NFC-enabled device and a mobile device during OOBE.
 
@@ -29,7 +29,7 @@ The NFC provisioning option enables the administrator to provide a provisioning 
 
 All Windows 10 Mobile Enterprise and Windows 10 Mobile images have the NFC provisioning capability incorporated into the operating system. On devices that support NFC and are running Windows 10 Mobile Enterprise or Windows 10 Mobile, NFC-based device provisioning provides an additional mechanism to provision the device during OOBE.
 
-On all Windows devices, device provisioning during OOBE can be triggered by 5 fast taps on the Windows hardware key, which shows the **Provision this device** screen. In the **Provision this device** screen, select **NFC** for NFC-based provisioning. 
+On all Windows devices, device provisioning during OOBE can be triggered by 5 fast taps on the Windows hardware key, which shows the **Provision this device** screen. In the **Provision this device** screen, select **NFC** for NFC-based provisioning.
 
 ![Example of Provision this device screen](../images/nfc.png)
 
@@ -55,7 +55,7 @@ The protocol used for NFC-based device provisioning is similar to the one used f
 
 ### NFC tag components
 
-NFC tags are suitable for very light applications where minimal provisioning is required. The size of NFC tags that contain provisioning packages is typically 4 KB to 10 KB. 
+NFC tags are suitable for very light applications where minimal provisioning is required. The size of NFC tags that contain provisioning packages is typically 4 KB to 10 KB.
 
 To write to an NFC tag, you will need to use an NFC Writer tool, or you can use the [ProximityDevice class API](https://msdn.microsoft.com/library/windows/apps/windows.networking.proximity.proximitydevice.aspx) to write your own custom tool to transfer your provisioning package file to your NFC tag. The tool must publish a binary message (write) a Chunk data type to your NFC tag.
 
@@ -65,7 +65,7 @@ The following table describes the information that is required when writing to a
 | --- | --- |
 | **Type** | Windows.ProvPlugins.Chunk<br></br>The receiving device uses this information to understand information in the Data field. |
 | **Data** | Tag data with small header in raw binary format that contains a chunk of the provisioning package to be transferred. |
- 
+
 
 
 ### NFC provisioning helper
@@ -73,11 +73,11 @@ The following table describes the information that is required when writing to a
 The NFC provisioning helper device must split the provisioning package raw content into multiple parts and publish these in order. Each part should follow the following format:
 
 <table><tr><td><strong>Version</strong></br>(1 byte)</td><td><strong>Leading</strong><br>(1 byte)</td><td><strong>Order</strong></br>(1 byte)</td><td><strong>Total</strong></br>(1 byte)</td><td><strong>Chunk payload</strong></br>(N bytes)</td></tr></table>
- 
+
 For each part:
 - <strong>Version</strong> should always be 0x00.
 - <strong>Leading byte</strong> should always be 0xFF.
-- <strong>Order</strong> represents which message chunk (out of the whole message) the part belongs to. The Order begins with zero (0). 
+- <strong>Order</strong> represents which message chunk (out of the whole message) the part belongs to. The Order begins with zero (0).
 - <strong>Total</strong> represents the total number of chunks to be transferred for the whole message.
 - <strong>Chunk payload</strong> represents each of the split parts.
 
@@ -129,7 +129,7 @@ To provision from an NFC-enabled source device, use [ProximityDevice class API](
 
 For detailed information and code samples on how to implement an NFC-enabled device tag, see **ConvertToNfcMessageAsync** in [this GitHub NfcProvisioner Universal Windows app example](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/NfcProvisioner/cs/Scenario1.xaml.cs). The sample app shows you how to host the provisioning package on a master device so that you can transfer it to the receiving device.
 
- 
+
 
 
 
@@ -140,9 +140,9 @@ For detailed information and code samples on how to implement an NFC-enabled dev
 - [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 
 - [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
- 
 
- 
+
+
 
 
 

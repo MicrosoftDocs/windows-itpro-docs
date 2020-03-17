@@ -1,6 +1,6 @@
 ---
-title: List software version distribution 
-description: Retrieves a list of your organization's software version distribution 
+title: List software version distribution
+description: Retrieves a list of your organization's software version distribution
 keywords: apis, graph api, supported apis, get, software version distribution, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -12,11 +12,11 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# List software version distribution 
+# List software version distribution
 
 **Applies to:**
 
@@ -24,7 +24,7 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a list of your organization's software version distribution. 
+Retrieves a list of your organization's software version distribution.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
@@ -49,7 +49,7 @@ GET /api/Software/{Id}/distributions
 Empty
 
 ## Response
-If successful, this method returns 200 OK with a list of software distributions data in the body. 
+If successful, this method returns 200 OK with a list of software distributions data in the body.
 
 
 ## Example

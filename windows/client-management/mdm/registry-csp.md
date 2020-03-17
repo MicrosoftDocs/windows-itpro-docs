@@ -2,7 +2,7 @@
 title: Registry CSP
 description: Registry CSP
 ms.assetid: 2307e3fd-7b61-4f00-94e1-a639571f2c9d
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -20,7 +20,7 @@ The Registry configuration service provider is used to update registry settings.
 >  **Note**   The Registry CSP is only supported in Windows 10 Mobile for OEM configuration. Do not use this CSP for enterprise remote management.
 For Windows 10 Mobile only, this configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
- 
+
 
 For the Registry CSP, you cannot use the Replace command unless the node already exists.
 
@@ -74,7 +74,7 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+
 
 Use these elements to build standard OMA Client Provisioning configuration XML. For information about specific elements, see MSPROV DTD elements.
 
@@ -140,7 +140,7 @@ The following table shows the data types this configuration service provider sup
 </tbody>
 </table>
 
- 
+
 
 It is not possible to access registry keys nested under the current path by using the Registry configuration service provider. Instead, the values of the subkey must be accessed separately by using a new characteristic.
 
@@ -149,9 +149,9 @@ It is not possible to access registry keys nested under the current path by usin
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

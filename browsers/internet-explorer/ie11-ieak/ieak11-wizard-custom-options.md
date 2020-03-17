@@ -5,7 +5,7 @@ description: Review the options available to help you customize your browser ins
 author: dansimp
 ms.prod: ie11
 ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

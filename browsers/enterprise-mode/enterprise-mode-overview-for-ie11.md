@@ -6,7 +6,7 @@ description: Use the topics in this section to learn how to set up and use Enter
 author: dansimp
 ms.prod: ie11
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
@@ -44,11 +44,11 @@ Use the topics in this section to learn how to set up and use Enterprise Mode an
 |[Remove sites from a local Enterprise Mode site list](remove-sites-from-a-local-enterprise-mode-site-list.md) |Guidance about how to remove websites from a device's local Enterprise Mode site list. |
 |[Remove sites from a local compatibility view list](remove-sites-from-a-local-compatibililty-view-list.md) |Guidance about how to remove websites from a device's local compatibility view list. |
 |[Turn off Enterprise Mode](turn-off-enterprise-mode.md)                     |Guidance about how to stop using your site list and how to turn off local control, using Group Policy or the registry. |
- 
 
- 
 
- 
+
+
+
 
 
 

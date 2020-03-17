@@ -9,7 +9,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.date: 08/18/2017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 audience: itpro

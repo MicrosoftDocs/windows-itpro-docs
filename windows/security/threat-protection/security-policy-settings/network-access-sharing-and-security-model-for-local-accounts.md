@@ -2,7 +2,7 @@
 title: Network access Sharing and security model for local accounts (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Network access Sharing and security model for local accounts.
 ms.assetid: 0b3d703c-ea27-488f-8f59-b345af75b994
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -30,7 +30,7 @@ This policy setting determines how network logons that use local accounts are au
 
 >**Note:**  This policy setting does not affect network logons that use domain accounts. Nor does this policy setting affect interactive logons that are performed remotely through services such as Telnet or Remote Desktop Services.
 When the device is not joined to a domain, this policy setting also tailors the **Sharing** and **Security** tabs in Windows Explorer to correspond to the sharing and security model that is being used.
- 
+
 When the value of this policy setting is **Guest only - local users authenticate as Guest**, any user who can access your device over the network does so with Guest user rights. This means that they will probably be unable to write to shared folders. Although this does increase security, it makes it impossible for authorized users to access shared resources on those systems. When the value is **Classic - local users authenticate as themselves**, local accounts must be password-protected; otherwise, anyone can use those user accounts to access shared system resources.
 
 ### Possible values
@@ -54,13 +54,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Classic (local users authenticate as themselves)| 
-| DC Effective Default Settings | Classic (local users authenticate as themselves)| 
-| Member Server Effective Default Settings | Classic (local users authenticate as themselves)| 
-| Client Computer Effective Default Settings | Classic (local users authenticate as themselves)| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Classic (local users authenticate as themselves)|
+| DC Effective Default Settings | Classic (local users authenticate as themselves)|
+| Member Server Effective Default Settings | Classic (local users authenticate as themselves)|
+| Client Computer Effective Default Settings | Classic (local users authenticate as themselves)|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

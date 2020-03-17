@@ -12,32 +12,32 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
 # View details and results of automated investigations
 
-During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP) is configured for your organization, some remediation actions are taken automatically. 
+During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP) is configured for your organization, some remediation actions are taken automatically.
 
 If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). You can also use the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to view details about an investigation.
 
 >[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the device or device group will be able to view the entire investigation. 
+>If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the device or device group will be able to view the entire investigation.
 
 ## The Action center
 
 ![Action center page](images/action-center.png)
 
 The action center consists of two main tabs: **Pending actions** and **History**.
-- **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected). 
+- **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected).
 - **History**  Acts as an audit log for all of the following items: <br/>
    - Remediation actions that were taken as a result of an automated investigation
-   - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
+   - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone)
    - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
-   - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone) 
+   - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone)
 
-Use the **Customize columns** menu to select columns that you'd like to show or hide. 
+Use the **Customize columns** menu to select columns that you'd like to show or hide.
 
 You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
@@ -47,9 +47,9 @@ You can also download the entire list in CSV format using the **Export** feature
 
 On the **Investigations** page, you'll find a list of all automated investigations. Select an item in the list to view additional information about that automated investigation.
 
-By default, the automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
+By default, the automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range.
 
-Use the **Customize columns** menu to select columns that you'd like to show or hide. 
+Use the **Customize columns** menu to select columns that you'd like to show or hide.
 
 From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
@@ -92,7 +92,7 @@ An automated investigation can have one of the following status values:
 
 You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the device that was investigated, and other information.
 
-In this view, you'll see the name of the investigation, when it started and ended. 
+In this view, you'll see the name of the investigation, when it started and ended.
 
 ### Investigation graph
 
@@ -102,21 +102,21 @@ A progress ring shows two status indicators:
 - Orange ring - shows the pending portion of the investigation
 - Green ring - shows the running time portion of the investigation
 
-![Image of start, end, and pending time for an automated investigation](images/atp-auto-investigation-pending.png) 
+![Image of start, end, and pending time for an automated investigation](images/atp-auto-investigation-pending.png)
 
-In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
+In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds.
 
-The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
+The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval.
 
 From this view, you can also view and add comments and tags about the investigation.
 
 ### Alerts
 
-The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the device associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned. 
+The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the device associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned.
 
-Additional alerts seen on a device can be added to an automated investigation as long as the investigation is ongoing. 
+Additional alerts seen on a device can be added to an automated investigation as long as the investigation is ongoing.
 
-Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related device, logged-on users, and comments and history. 
+Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related device, logged-on users, and comments and history.
 
 Clicking on an alert title brings you the alert page.
 
@@ -132,7 +132,7 @@ Clicking on a device name brings you the device page.
 
 ### Evidence
 
-The **Evidence** tab shows details related to threats associated with this investigation. 
+The **Evidence** tab shows details related to threats associated with this investigation.
 
 ### Entities
 
@@ -146,11 +146,11 @@ As with other sections, you can customize columns, select the number of items to
 
 Available filters include action type, action, status, device name, and description.
 
-You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
+You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data.
 
 ### Pending actions
 
-If there are pending actions on an automated investigation, you'll see a pop-up similar to the following image. 
+If there are pending actions on an automated investigation, you'll see a pop-up similar to the following image.
 
 ![Image of pending actions](images/pending-actions.png)
 
@@ -161,4 +161,4 @@ When you click on the pending actions link, you'll be taken to the Action center
 - [View and approve remediation actions](manage-auto-investigation.md)
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
- 
+

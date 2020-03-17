@@ -2,7 +2,7 @@
 title: Gathering the Information You Need (Windows 10)
 description: Gathering the Information You Need
 ms.assetid: 545fef02-5725-4b1e-b67a-a32d94c27d15
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

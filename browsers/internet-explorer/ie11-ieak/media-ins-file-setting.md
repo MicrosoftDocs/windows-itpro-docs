@@ -5,7 +5,7 @@ description: Use the \[Media\] .INS file setting to specify the types of media o
 author: dansimp
 ms.prod: ie11
 ms.assetid: c57bae60-d520-49a9-a77d-da43f7ebe5b8
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

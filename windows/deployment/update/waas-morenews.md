@@ -7,7 +7,7 @@ audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.localizationpriority: high
 ms.topic: article

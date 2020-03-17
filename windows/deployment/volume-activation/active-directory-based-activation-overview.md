@@ -2,7 +2,7 @@
 title: Active Directory-Based Activation Overview (Windows 10)
 description: Enable your enterprise to activate its computers through a connection to their domain using Active Directory-Based Activation (ADBA).
 ms.assetid: c1dac3bd-6a86-4c45-83dd-421e63a398c0
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -23,11 +23,11 @@ Active Directory-Based Activation (ADBA) enables enterprises to activate compute
 
 You might use ADBA if you only want to activate domain joined devices.
 
-If you have a server hosting the KMS service, it can be necessary to reactivate licenses if the server is replaced with a new host. This is not necessary When ADBA is used. 
+If you have a server hosting the KMS service, it can be necessary to reactivate licenses if the server is replaced with a new host. This is not necessary When ADBA is used.
 
 ADBA can also make load balancing easier when multiple KMS servers are present since the client can connect to any domain controller. This is simpler than using the DNS service to load balance by configuring priority and weight values.
 
-Some VDI solutions also require that new clients activate during creation before they are added to the pool. In this scenario, ADBA can eliminate potential VDI issues that might arise due to a KMS outage. 
+Some VDI solutions also require that new clients activate during creation before they are added to the pool. In this scenario, ADBA can eliminate potential VDI issues that might arise due to a KMS outage.
 
 
 ## ADBA methods
@@ -40,5 +40,5 @@ VAMT enables IT Professionals to manage and activate the ADBA object. Activation
 
 - [How to Activate an Active Directory Forest Online](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-vamt)
 - [How to Proxy Activate an Active Directory Forest](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-by-proxy-vamt)
- 
- 
+
+

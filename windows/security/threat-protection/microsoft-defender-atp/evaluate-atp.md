@@ -1,8 +1,8 @@
 ---
 title: Evaluate Microsoft Defender Advanced Threat Protection
-ms.reviewer: 
+ms.reviewer:
 description: Evaluate the different security capabilities in Microsoft Defender ATP.
-keywords: attack surface reduction, evaluate, next, generation, protection 
+keywords: attack surface reduction, evaluate, next, generation, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -14,11 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Evaluate Microsoft Defender ATP 
+# Evaluate Microsoft Defender ATP
 
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 

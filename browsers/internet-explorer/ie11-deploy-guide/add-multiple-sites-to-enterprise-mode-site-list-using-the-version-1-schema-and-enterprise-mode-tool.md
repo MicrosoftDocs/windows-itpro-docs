@@ -6,7 +6,7 @@ description: You can add multiple sites to your Enterprise Mode site list by cre
 author: dansimp
 ms.prod: ie11
 ms.assetid: 20aF07c4-051a-451f-9c46-5a052d9Ae27c
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -105,9 +105,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 ## Related topics
 - [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
- 
 
- 
+
+
 
 
 

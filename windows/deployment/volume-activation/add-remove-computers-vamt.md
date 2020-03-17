@@ -50,7 +50,7 @@ Before adding computers, ensure that the Windows Management Instrumentation (WMI
 5.  In the right-side **Actions** pane, click **Update license status** and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials different from the ones you used to log into the computer. If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and click **OK**.
 6.  VAMT displays the **Collecting product information** dialog box while it collects the licensing status of all supported products on the selected computers. When the process is finished, the updated licensing status of each product will appear in the product list view in the center pane.
 
-    **Note**  
+    **Note**
     If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## To remove computers from a VAMT database

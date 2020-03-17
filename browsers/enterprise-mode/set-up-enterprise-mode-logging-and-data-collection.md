@@ -6,7 +6,7 @@ description: Set up and turn on Enterprise Mode logging and data collection in y
 author: dansimp
 ms.prod: ie11
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
@@ -60,7 +60,7 @@ Using only these fields keeps the log file simple, giving you the date, client I
 
 7.  Put your EmIE.asp file into the root of the web server, using this command:
 
-   ``` 
+   ```
     <% @ LANGUAGE=javascript %>
     <%
     Response.AppendToLog(" ;" + Request.Form("URL") + " ;" + Request.Form("EnterpriseMode"));
@@ -104,7 +104,7 @@ The required packages are automatically downloaded and included in the solution.
 2.  In the **Publish Web** wizard, pick the publishing target and options that work for your organization.
 
    **Important**<br>
-   Make sure you have a database associated with your publishing target. Otherwise, your reports won’t be collected and you’ll have problems deploying the website. 
+   Make sure you have a database associated with your publishing target. Otherwise, your reports won’t be collected and you’ll have problems deploying the website.
 
     ![Visual Studio, Publish Web wizard](images/ie-emie-publishweb.png)
 
@@ -152,9 +152,9 @@ You may need to do some additional package cleanup to remove older package versi
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
- 
 
- 
+
+
 
 
 

@@ -5,7 +5,7 @@ description: Reference about the command-line options for the IExpress Wizard.
 author: dansimp
 ms.prod: ie11
 ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.date: 07/27/2017
 **Applies to:**
 - Windows Server 2008 R2 with SP1
 
-Use command-line options with the IExpress Wizard (IExpress.exe) to control your Internet Explorer custom browser package extraction process. 
+Use command-line options with the IExpress Wizard (IExpress.exe) to control your Internet Explorer custom browser package extraction process.
 
 These command-line options work with IExpress:<br>
 `Ie11setup <IExpress options> /c:"ie11wzd <Internet Explorer options>"`

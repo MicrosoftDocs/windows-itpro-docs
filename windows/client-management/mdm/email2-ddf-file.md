@@ -2,7 +2,7 @@
 title: EMAIL2 DDF file
 description: EMAIL2 DDF file
 ms.assetid: 7e266db0-2fd9-4412-b428-4550f41a1738
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -816,7 +816,7 @@ The XML below is the current version for this CSP.
                   <Replace />
                   <Delete />
                 </AccessType>
-                <Description>Specify whether incoming server requires SSL connection. 
+                <Description>Specify whether incoming server requires SSL connection.
 1- Require SSL connection
 0- Doesn't require SSL connection (default)</Description>
                 <DFFormat>
@@ -842,7 +842,7 @@ The XML below is the current version for this CSP.
                   <Replace />
                   <Delete />
                 </AccessType>
-                <Description>Specify whether outgoing server requires SSL connection. 
+                <Description>Specify whether outgoing server requires SSL connection.
 1- Require SSL connection
 0- Doesn't require SSL connection (default)</Description>
                 <DFFormat>
@@ -870,9 +870,9 @@ The XML below is the current version for this CSP.
 
 [EMAIL2 configuration service provider](email2-csp.md)
 
- 
 
- 
+
+
 
 
 

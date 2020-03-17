@@ -138,7 +138,7 @@ You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsof
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
 
-- [Local script](configure-endpoints-script.md) 
+- [Local script](configure-endpoints-script.md)
 - [Group Policy](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md#onboard-windows-10-devices-using-microsoft-endpoint-configuration-manager-current-branch)
 - [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-windows-10-devices-using-earlier-versions-of-system-center-configuration-manager)
@@ -175,7 +175,7 @@ Support for Windows Server, provide deeper insight into activities happening on 
    ```sc.exe query Windefend```
 
     If the result is 'The specified service does not exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
-    
+
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
 
 ## Integration with Azure Security Center

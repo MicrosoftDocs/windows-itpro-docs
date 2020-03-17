@@ -1,7 +1,7 @@
 ---
-title: Supported Microsoft Defender Advanced Threat Protection APIs  
-ms.reviewer: 
-description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to. 
+title: Supported Microsoft Defender Advanced Threat Protection APIs
+ms.reviewer:
+description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to.
 keywords: apis, supported apis, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -21,24 +21,24 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## End Point URI and Versioning
 
 ### End Point URI:
 
 > The service base URI is: https://api.securitycenter.windows.com
-> 
+>
 > The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
 
 ### Versioning:
 
 > The API supports versioning.
-> 
+>
 > The current version is **V1.0**.
-> 
+>
 > To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
-> 
+>
 > If you don't specify any version (e.g. https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
 
 

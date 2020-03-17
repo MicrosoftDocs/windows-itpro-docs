@@ -7,11 +7,11 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 06/27/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
-# WiredNetwork CSP 
+# WiredNetwork CSP
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -20,17 +20,17 @@ The WiredNetwork configuration service provider (CSP) is used by the enterprise 
 
 The following diagram shows the WiredNetwork configuration service provider in tree format.
 
-![WiredNetwork CSP diagram](images/provisioning-csp-wirednetwork.png) 
+![WiredNetwork CSP diagram](images/provisioning-csp-wirednetwork.png)
 
-<a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**  
+<a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**
 Root node.
 
-<a href="" id="lanxml"></a>**LanXML**  
+<a href="" id="lanxml"></a>**LanXML**
 Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.
 
 Supported operations are Add, Get, Replace, and Delete. Value type is string.
 
-<a href="" id="enableblockperiod"></a>**EnableBlockPeriod**  
+<a href="" id="enableblockperiod"></a>**EnableBlockPeriod**
  Optional. Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
 
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.

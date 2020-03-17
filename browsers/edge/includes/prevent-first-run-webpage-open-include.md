@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -34,7 +34,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[PreventFirstRunPage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventfirstrunpage)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage
 - **Data type:** Integer
 
 #### Registry

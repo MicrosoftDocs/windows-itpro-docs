@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -65,7 +65,7 @@ Specify whether to enable real-time protection, which scans files as they are ac
 
 #### Enable / disable passive mode
 
-Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications: 
+Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications:
 - Real-time protection is turned off
 - On-demand scanning is turned on
 - Automatic threat remediation is turned off
@@ -128,7 +128,7 @@ Specify content excluded from being scanned by full file path.
 
 ##### Path type (file / directory)
 
-Indicate if the *path* property refers to a file or directory. 
+Indicate if the *path* property refers to a file or directory.
 
 |||
 |:---|:---|
@@ -322,7 +322,7 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 #### Device tags
 
-Specify a tag name and its value. 
+Specify a tag name and its value.
 
 - The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
@@ -355,7 +355,7 @@ Specifies the value of tag
 | **Data type** | String |
 | **Possible values** | any string |
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > - Only one value per tag type can be set.
 > - Type of tags are unique, and should not be repeated in the same configuration profile.
 

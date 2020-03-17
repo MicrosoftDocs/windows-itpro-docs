@@ -2,7 +2,7 @@
 title: WiFi CSP
 description: The WiFi configuration service provider provides the functionality to add or delete Wi-Fi networks on a Windows device. 
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -231,9 +231,9 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

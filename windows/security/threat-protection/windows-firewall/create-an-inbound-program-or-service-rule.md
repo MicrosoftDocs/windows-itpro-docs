@@ -2,7 +2,7 @@
 title: Create an Inbound Program or Service Rule (Windows 10)
 description: Create an Inbound Program or Service Rule
 ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -55,7 +55,7 @@ To create an inbound firewall rule for a program or service
 
     -   If the executable file is a container for a single service or contains multiple services but the rule only applies to one of them, click **Customize**, select **Apply to this service**, and then select the service from the list. If the service does not appear in the list, click **Apply to service with this service short name**, and then type the short name for the service in the text box. Click **OK**, and then click **Next**.
 
-    **Important**  
+    **Important**
     To use the **Apply to this service** or **Apply to service with this service short name** options, the service must be configured with a security identifier (SID) with a type of **RESTRICTED** or **UNRESTRICTED**. To check the SID type of a service, run the following command:
 
     **sc** **qsidtype** *&lt;ServiceName&gt;*

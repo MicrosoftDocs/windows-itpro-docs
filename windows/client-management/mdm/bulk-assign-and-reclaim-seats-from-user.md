@@ -2,7 +2,7 @@
 title: Bulk assign and reclaim seats from users
 description: The Bulk assign and reclaim seats from users operation returns reclaimed or assigned seats in the Microsoft Store for Business.
 ms.assetid: 99E2F37D-1FF3-4511-8969-19571656780A
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -37,7 +37,7 @@ The **Bulk assign and reclaim seats from users** operation returns reclaimed or 
 </tbody>
 </table>
 
- 
+
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -79,7 +79,7 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
+
 ## Response
 
 ### Response body
@@ -112,9 +112,9 @@ The response body contains [BulkSeatOperationResultSet](data-structures-windows-
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/13/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: troubleshooting
@@ -37,4 +37,4 @@ In Windows 10, version 1607, the following Group Policy settings apply only to W
 
 
 
- 
+

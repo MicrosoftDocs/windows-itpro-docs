@@ -2,7 +2,7 @@
 title: Migration Store Types Overview (Windows 10)
 description: Migration Store Types Overview
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -58,10 +58,10 @@ If you have enough space and you are migrating the user state back to the same c
 
 If there is not enough local disk space, or if you are moving the user state to another computer, then you must store the data remotely. For example, you can store it in on a shared folder, on removable media such as a UFD drive, or you can store it directly on the destination computer. For example, create and share C:\\store on the destination computer. Then run the ScanState command on the source computer and save the files and settings to \\\\*DestinationComputerName*\\store. Then, run the **LoadState** command on the destination computer and specify **C:\\Store** as the store location. By doing this, you do not need to save the files to a server.
 
-**Important**  
+**Important**
 If possible, have users store their data within their %UserProfile%\\My Documents and %UserProfile%\\Application Data folders. This will reduce the chance of USMT missing critical user data that is located in a directory that USMT is not configured to check.
 
- 
+
 
 ### <a href="" id="bkmk-localonly"></a>The /localonly Command-Line Option
 
@@ -72,9 +72,9 @@ You should use this option to exclude the data from removable drives and network
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
 
- 
+
+
 
 
 

@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 11/08/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Set up Take a Test on a single PC
 **Applies to:**
 
--   Windows 10  
+-   Windows 10
 
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 
@@ -36,16 +36,16 @@ To configure the assessment URL and a dedicated testing account on a single PC, 
 
    **Figure 2** - Choose the test-taking account
 
-   ![Choose the test-taking account](images/tat_settingsapp_setuptesttakingaccount_1703.png) 
+   ![Choose the test-taking account](images/tat_settingsapp_setuptesttakingaccount_1703.png)
 
-    > [!NOTE]  
+    > [!NOTE]
     > If you don't have an account on the device, you can create a new account. To do this, go to **Settings > Accounts > Other people > Add someone else to this PC > I don’t have this person’s sign-in information > Add a user without a Microsoft account**.
 
-5. In the **Set up an account for taking tests**, enter the assessment URL in the field under **Enter the test's web address**. 
+5. In the **Set up an account for taking tests**, enter the assessment URL in the field under **Enter the test's web address**.
 6. Select the options you want to enable during the test.
-   - To enable printing, select **Require printing**. 
+   - To enable printing, select **Require printing**.
 
-      > [!NOTE]  
+      > [!NOTE]
       > Make sure a printer is preconfigured on the Take a Test account if you're enabling this option.
 
    - To enable teachers to monitor screens, select **Allow screen monitoring**.
@@ -59,7 +59,7 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 
 **To provide a link to the test**
 
-1. Create the link to the test. 
+1. Create the link to the test.
 
    There are different ways you can do this:
    - Create a link using a web UI
@@ -70,19 +70,19 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 
    - Create a link using schema activation
 
-     You can accomplish the same thing as the first option (using a web UI), by manually embedding a URL with a specific prefix. You can select parameters depending on what you want to enable. 
+     You can accomplish the same thing as the first option (using a web UI), by manually embedding a URL with a specific prefix. You can select parameters depending on what you want to enable.
 
      For more info, see [Create a link using schema activation](#create-a-link-using-schema-activation).
 
 2. Distribute the link.
 
-   Once the links are created, you can distribute them through the web, email, OneNote, or any other method of your choosing. 
+   Once the links are created, you can distribute them through the web, email, OneNote, or any other method of your choosing.
 
    You can also create shortcuts to distribute the link. For more info, see [Create a shortcut for the test link](#create-a-shortcut-for-the-test-link).
 
 3. To take the test, have the students click on the link and provide user consent.
 
-   > [!NOTE] 
+   > [!NOTE]
    > If you enabled printing, the printer must be preconfigured for the account before the student takes the test.
 
 
@@ -102,13 +102,13 @@ One of the ways you can present content in a locked down manner is by embedding 
    - `&enableTextSuggestions` - Enables text suggestions
    - `&requirePrinting` - Enables printing
    - `&enableScreenCapture` - Enables screen capture
-   - `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability. 
+   - `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability.
 
    If you exclude these parameters, the default behavior is disabled.
 
    For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. The test web application may lock down the device once you have closed the apps.
 
-    > [!NOTE] 
+    > [!NOTE]
     > The Windows 10, version 1607 legacy configuration, `ms-edu-secureassessment:<URL>!enforcelockdown` is still supported, but not in combination with the new parameters.
 
 3. To enable permissive mode, do not include `enforceLockdown` in the schema parameters.

@@ -2,7 +2,7 @@
 title: GPO\_DOMISO\_IsolatedDomain\_Clients (Windows 10)
 description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.assetid: 73cd9e25-f2f1-4ef6-b0d1-d36209518cd9
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -48,9 +48,9 @@ This GPO provides the following settings:
 
 | Integrity | Encryption |
 | - | - |
-| Secure Hash Algorithm (SHA-1) | Advanced Encryption Standard (AES-128) | 
+| Secure Hash Algorithm (SHA-1) | Advanced Encryption Standard (AES-128) |
 | SHA-1 | 3DES |
-    
+
 -   The following quick mode security data integrity algorithms combinations in the order shown in the following table.
 
 | Protocol | Integrity | Key Lifetime (minutes/KB) |
@@ -61,8 +61,8 @@ This GPO provides the following settings:
 
 | Protocol | Integrity | Encryption | Key Lifetime (minutes/KB) |
 | - | - | - | - |
-| ESP | SHA-1 | AES-128 | 60/100,000| 
-| ESP | SHA-1 | 3DES | 60/100,000| 
+| ESP | SHA-1 | AES-128 | 60/100,000|
+| ESP | SHA-1 | 3DES | 60/100,000|
 
 >**Note:**  Do not use the MD5 and DES algorithms in your GPOs. They are included only for compatibility with previous versions of Windows.
 

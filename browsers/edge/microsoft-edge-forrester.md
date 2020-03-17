@@ -1,6 +1,6 @@
 ---
 title: Forrester Total Economic Impact - Microsoft Edge
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 description: Review the results of the Microsoft Edge study carried out by Forrester Research
@@ -15,7 +15,7 @@ ms.localizationpriority: high
 Forrester Research measures the return on investment (ROI) of Microsoft Edge in its latest TEI report and survey. Browse and download these free resources to learn about the impact Microsoft Edge can have in your organization, including significant cost savings in reduced browser help desk tickets and improved browser security, to increased speed, performance, and user productivity.
 
 ## Forrester report video summary
-View a brief overview of the Forrester TEI case study that Microsoft commissioned to examine the value your organization can achieve by utilizing Microsoft Edge: 
+View a brief overview of the Forrester TEI case study that Microsoft commissioned to examine the value your organization can achieve by utilizing Microsoft Edge:
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE26zQm>]
 

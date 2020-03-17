@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,38 +38,38 @@ This event is always logged regardless of the "Audit Other Policy Change Events"
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4826</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13573</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-13T00:59:57.553201100Z" /> 
- <EventRecordID>751</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="164" /> 
- <Channel>Security</Channel> 
- <Computer>WIN10-1</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4826</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13573</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-13T00:59:57.553201100Z" />
+ <EventRecordID>751</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="164" />
+ <Channel>Security</Channel>
+ <Computer>WIN10-1</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">-</Data> 
- <Data Name="SubjectDomainName">-</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="LoadOptions">-</Data> 
- <Data Name="AdvancedOptions">%%1843</Data> 
- <Data Name="ConfigAccessPolicy">%%1846</Data> 
- <Data Name="RemoteEventLogging">%%1843</Data> 
- <Data Name="KernelDebug">%%1843</Data> 
- <Data Name="VsmLaunchType">%%1848</Data> 
- <Data Name="TestSigning">%%1843</Data> 
- <Data Name="FlightSigning">%%1843</Data> 
- <Data Name="DisableIntegrityChecks">%%1843</Data> 
- <Data Name="HypervisorLoadOptions">-</Data> 
- <Data Name="HypervisorLaunchType">%%1848</Data> 
- <Data Name="HypervisorDebug">%%1843</Data> 
+ <Data Name="SubjectUserSid">S-1-5-18</Data>
+ <Data Name="SubjectUserName">-</Data>
+ <Data Name="SubjectDomainName">-</Data>
+ <Data Name="SubjectLogonId">0x3e7</Data>
+ <Data Name="LoadOptions">-</Data>
+ <Data Name="AdvancedOptions">%%1843</Data>
+ <Data Name="ConfigAccessPolicy">%%1846</Data>
+ <Data Name="RemoteEventLogging">%%1843</Data>
+ <Data Name="KernelDebug">%%1843</Data>
+ <Data Name="VsmLaunchType">%%1848</Data>
+ <Data Name="TestSigning">%%1843</Data>
+ <Data Name="FlightSigning">%%1843</Data>
+ <Data Name="DisableIntegrityChecks">%%1843</Data>
+ <Data Name="HypervisorLoadOptions">-</Data>
+ <Data Name="HypervisorLaunchType">%%1848</Data>
+ <Data Name="HypervisorDebug">%%1843</Data>
  </EventData>
 </Event>
 

@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 
@@ -35,11 +35,11 @@ The Windows Hello for Business Authentication certificate template is configured
 
 ### Configure the Registration Authority
 
-Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
+Sign-in the AD FS server with *Domain Admin* equivalent credentials.
 
 1. Open a **Windows PowerShell** prompt.
 2. Enter the following command:
-  
+
     ```PowerShell
     Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
     ```
@@ -64,7 +64,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 6. Click **OK** to return to **Active Directory Users and Computers**.
 7. Restart the AD FS server.
 
-> [!NOTE] 
+> [!NOTE]
 >For AD FS 2019, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
 >
 > 1. Launch AD FS management console. Browse to "Services > Scope Descriptions".
@@ -82,8 +82,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure the registration authority.
 > * Update group memberships for the AD FS service account.
-> 
-> 
+>
+>
 > [!div class="step-by-step"]
 > [< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 > [Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)

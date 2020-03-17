@@ -5,7 +5,7 @@ description: Use the \[HideCustom\] .INS file setting to decide whether to hide 
 author: dansimp
 ms.prod: ie11
 ms.assetid: e673f7b1-c3aa-4072-92b0-20c6dc3d9277
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -20,12 +20,12 @@ Info about whether to hide the globally unique identifier (GUID) for each of you
 
 |Name                  |Value                                                                |Description                                    |
 |------|-------------------------------------------------------------------------------------|-----------------------------------------------|
-|GUID  |<ul><li>**0.** Component isn't hidden.</li><li>**1.** Component is hidden.</li></ul> |Determines whether this is a hidden component. | 
- 
+|GUID  |<ul><li>**0.** Component isn't hidden.</li><li>**1.** Component is hidden.</li></ul> |Determines whether this is a hidden component. |
 
- 
 
- 
+
+
+
 
 
 

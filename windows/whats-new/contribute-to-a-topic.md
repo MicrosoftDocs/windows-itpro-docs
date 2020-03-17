@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.date: 10/13/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 author: dansimp
@@ -14,7 +14,7 @@ ms.topic: tutorial
 ---
 
 # Editing existing Windows IT professional documentation
-You can make suggestions and update existing, public content with just a GitHub account and a simple click of a link. You can use GitHub pull requests to edit the technical articles in the Windows IT libraries and then ask us to "pull" your changes into the published articles. 
+You can make suggestions and update existing, public content with just a GitHub account and a simple click of a link. You can use GitHub pull requests to edit the technical articles in the Windows IT libraries and then ask us to "pull" your changes into the published articles.
 
 >[!NOTE]
 >At this time, you can only edit the English (en-us) content.
@@ -23,7 +23,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 - [Windows 10](https://docs.microsoft.com/windows/windows-10)
 - [Windows Server](/windows-server/)
-- [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)    
+- [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)
 - [Surface](https://docs.microsoft.com/surface)
 - [Surface Hub](https://docs.microsoft.com/surface-hub)
 - [HoloLens](https://docs.microsoft.com/hololens)
@@ -41,7 +41,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
     ![GitHub Web, showing the Edit link](images/contribute-link.png)
 
 2. Sign into (or sign up for) a GitHub account.
-    
+
     You must have a GitHub account to get to the page that lets you edit a topic.
 
 3. Click the **Pencil** icon (in the red box) to edit the content.
@@ -50,8 +50,8 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 4. Using Markdown language, make your changes to the topic. For info about how to edit content using Markdown, see:
    - **If you're linked to the Microsoft organization in GitHub:** [Windows authoring guide](https://aka.ms/WindowsAuthoring)
-    
-   - **If you're external to Microsoft:** [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
+
+   - **If you're external to Microsoft:** [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 5. Make your suggested change, and then click **Preview Changes** to make sure it looks correct.
 
@@ -81,4 +81,4 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
     If you've previously contributed to topics in the Microsoft repositories, congratulations! You've already completed this step.
 
-Next, the pull request is sent to one of our writers to review your edits for technical and editorial accuracy. If we have any suggestions or questions, we'll add them to the pull request where we can discuss them with you. If we accept your edits, you'll see your changes the next time the article is published. 
+Next, the pull request is sent to one of our writers to review your edits for technical and editorial accuracy. If we have any suggestions or questions, we'll add them to the pull request where we can discuss them with you. If we accept your edits, you'll see your changes the next time the article is published.

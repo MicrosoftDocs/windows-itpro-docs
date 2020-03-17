@@ -1,8 +1,8 @@
 ---
 title: EnterpriseModernAppManagement DDF
 description: EnterpriseModernAppManagement DDF
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article

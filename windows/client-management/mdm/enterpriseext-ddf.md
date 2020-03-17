@@ -2,7 +2,7 @@
 title: EnterpriseExt DDF
 description: EnterpriseExt DDF
 ms.assetid: 71BF81D4-FBEC-4B03-BF99-F7A5EDD4F91B
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -310,9 +310,9 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 
 
- 
 
- 
+
+
 
 
 

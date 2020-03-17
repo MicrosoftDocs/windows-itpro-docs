@@ -13,7 +13,7 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.date: 03/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -61,7 +61,7 @@ You can enable network protection in audit mode and then visit a website that we
 1. Perform the connection activity that is causing an issue (for example, attempt to visit the site, or connect to the IP address you do or don't want to block).
 
 1. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would have blocked the connection if it had been set to **Enabled**.
-   
+
    If network protection is not blocking a connection that you are expecting it should block, enable the feature.
 
    ```PowerShell

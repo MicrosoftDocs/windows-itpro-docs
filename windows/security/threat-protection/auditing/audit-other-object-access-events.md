@@ -2,7 +2,7 @@
 title: Audit Other Object Access Events (Windows 10)
 description: The policy setting, Audit Other Object Access Events, determines if audit events are generated for the management of Task Scheduler jobs or COM+ objects.
 ms.assetid: b9774595-595d-4199-b0c5-8dbc12b6c8b2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

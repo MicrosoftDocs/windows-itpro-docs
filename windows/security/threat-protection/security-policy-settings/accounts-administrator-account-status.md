@@ -2,7 +2,7 @@
 title: Accounts Administrator account status (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Accounts Administrator account status security policy setting.
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -66,7 +66,7 @@ The following table lists the actual and effective default values for this polic
 | Member Server Effective Default Settings | Enabled |
 | Client Computer Effective Default Settings | Disabled |
 
- 
+
 ## Policy management
 
 Disabling the administrator account can become a maintenance issue under certain circumstances. Reasons that an organization might consider disabling the built-in administrator account include:
@@ -88,7 +88,7 @@ If the administrator account is disabled, you can still access the computer by u
 
 You can use the following methods to access a disabled Administrator account:
 -   When there is only one local administrator account that is disabled, start the device in safe mode (locally or over a network), and sign in by using the credentials for the administrator account on that computer.
--   When there are local administrator accounts in addition to the built-in account, start the computer in safe mode (locally or over a network), and sign in by using the credentials for the administrator account on that device. An alternate method is to sign in to Windows by using another local 
+-   When there are local administrator accounts in addition to the built-in account, start the computer in safe mode (locally or over a network), and sign in by using the credentials for the administrator account on that device. An alternate method is to sign in to Windows by using another local
 Administrator account that was created.
 -   When multiple domain-joined servers have a disabled local Administrator account that can be accessed in safe mode, you can remotely run psexec by using the following command: **net user administrator /active: no**.
 

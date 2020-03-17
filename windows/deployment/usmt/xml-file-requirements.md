@@ -2,7 +2,7 @@
 title: XML File Requirements (Windows 10)
 description: XML File Requirements
 ms.assetid: 4b567b50-c50a-4a4f-8684-151fe3f8275f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -40,9 +40,9 @@ When creating custom .xml files, note the following requirements:
 
 For examples of custom .xml files, see [Custom XML Examples](usmt-custom-xml-examples.md).
 
- 
 
- 
+
+
 
 
 

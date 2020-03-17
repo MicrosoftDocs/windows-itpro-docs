@@ -12,7 +12,7 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -49,7 +49,7 @@ GET /api/Software/{Id}
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the specified software data in the body. 
+If successful, this method returns 200 OK with the specified software data in the body.
 
 
 ## Example

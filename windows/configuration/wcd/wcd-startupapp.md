@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -23,4 +23,4 @@ Use StartupApp settings to configure the default app that will run on start for 
 | --- | :---: | :---: | :---: | :---: | :---: |
 | Default |  |  |  |  |  X |
 
-Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app. 
+Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app.

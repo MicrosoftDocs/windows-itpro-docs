@@ -2,7 +2,7 @@
 title: Fine-tune Windows Information Policy (WIP) with WIP Learning
 description: How to access the WIP Learning report to monitor and apply Windows Information Protection in your company.
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b4872ca2
-ms.reviewer: 
+ms.reviewer:
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP Learning
 ms.prod: w10
 ms.mktglfcycl:
@@ -32,19 +32,19 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](https://portal.azure.com/). 
+1. Open the [Azure portal](https://portal.azure.com/).
 
 1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
 
 1. Click **Intune** > **Client apps** > **App protection status** > **Reports**.
 
-   ![Image showing the UI path to the WIP report](images/access-wip-learning-report.png) 
+   ![Image showing the UI path to the WIP report](images/access-wip-learning-report.png)
 
-1. Select either **App learning report for Windows Information Protection** or **Website learning report for Windows Information Protection**. 
+1. Select either **App learning report for Windows Information Protection** or **Website learning report for Windows Information Protection**.
 
-   ![Image showing the UI with for app and website learning reports](images/wip-learning-select-report.png) 
+   ![Image showing the UI with for app and website learning reports](images/wip-learning-select-report.png)
 
-Once you have the apps and websites showing up in the WIP Learning logging reports, you can decide whether to add them to your app protection policies. 
+Once you have the apps and websites showing up in the WIP Learning logging reports, you can decide whether to add them to your app protection policies.
 
 ## Use the WIP section of Device Health
 
@@ -66,14 +66,14 @@ The information needed for the following steps can be found using Device Health,
     For example, if the app is Google Chrome, the WipAppId is:
 
     `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US\GOOGLE CHROME\CHROME.EXE\74.0.3729.108`
-    
+
     In the steps below, you separate the WipAppId by back slashes into the **PUBLISHER**, **PRODUCT NAME**, and **FILE** fields.
 
 2. In Intune, click **App protection policies** and then choose the app policy you want to add an application to.
 
 3. Click **Protected apps**, and then click **Add Apps**.
 
-4. In the **Recommended apps** drop down menu, choose either **Store apps** or **Desktop apps**, depending on the app you've chosen (for example, an executable (EXE) is a desktop app). 
+4. In the **Recommended apps** drop down menu, choose either **Store apps** or **Desktop apps**, depending on the app you've chosen (for example, an executable (EXE) is a desktop app).
 
     ![View of drop down menu for Store or desktop apps](images/wip-learning-choose-store-or-desktop-app.png)
 

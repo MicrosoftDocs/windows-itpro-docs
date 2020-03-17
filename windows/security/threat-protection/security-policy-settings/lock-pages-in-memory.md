@@ -2,7 +2,7 @@
 title: Lock pages in memory (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Lock pages in memory security policy setting.
 ms.assetid: cc724979-aec0-496d-be4e-7009aef660a3
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -33,7 +33,7 @@ Normally, an application running on Windows can negotiate for more physical memo
 Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This could lead to performance degradation.
 
 >**Note:**  By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
- 
+
 Constant: SeLockMemoryPrivilege
 
 ### Possible values
@@ -55,13 +55,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Not defined| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Not defined|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

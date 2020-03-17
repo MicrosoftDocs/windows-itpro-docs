@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # RcsPresence (Windows Configuration Designer reference)
 
-Use these settings to configure RcsPresence. 
+Use these settings to configure RcsPresence.
 
 ## Applies to
 
@@ -26,7 +26,7 @@ Use these settings to configure RcsPresence.
 Setting | Description
 --- | ---
 BypassvideoCapabilities | Do not use.
-MaxWaitForCapabilitiesRequestInSeconds | Maximum number of seconds to wait for a Capabilities Request to complete. 
+MaxWaitForCapabilitiesRequestInSeconds | Maximum number of seconds to wait for a Capabilities Request to complete.
 MinAvailabilityCacheInSeconds |  Number of seconds to cache result of Capabilities Request per each number, to avoid excessive network requests.
 
 

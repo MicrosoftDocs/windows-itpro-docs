@@ -5,7 +5,7 @@ description: Customization guidelines for your Internet Explorer toolbar button 
 author: dansimp
 ms.prod: ie11
 ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -20,9 +20,9 @@ Use these customization guidelines to change the browser toolbar button and the 
 
 **Important**<br>Check your license agreement to make sure this customization is available.
 
-|Graphic                |Type and description                                                  | 
+|Graphic                |Type and description                                                  |
 |-----------------------|----------------------------------------------------------------------|
-|Browser toolbar button |2 icon (.ico) files with color images for active and inactive states. | 
+|Browser toolbar button |2 icon (.ico) files with color images for active and inactive states. |
 |Favorites List icons   |1 icon (.ico) file for each new URL. |
 
 Your icons must use the .ico file extension, no other image file extension works.

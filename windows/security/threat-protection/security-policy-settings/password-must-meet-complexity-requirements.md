@@ -2,7 +2,7 @@
 title: Password must meet complexity requirements (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Password must meet complexity requirements security policy setting.
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ The **Passwords must meet complexity requirements** policy setting determines wh
     -   Uppercase letters of European languages (A through Z, with diacritic marks, Greek and Cyrillic characters)
     -   Lowercase letters of European languages (a through z, sharp-s, with diacritic marks, Greek and Cyrillic characters)
     -   Base 10 digits (0 through 9)
-    -   Non-alphanumeric characters (special characters): 
+    -   Non-alphanumeric characters (special characters):
         (~!@#$%^&*_-+=`|\\(){}\[\]:;"'<>,.?/)
         Currency symbols such as the Euro or British Pound are not counted as special characters for this policy setting.
     -   Any Unicode character that is categorized as an alphabetic character but is not uppercase or lowercase. This includes Unicode characters from Asian languages.
@@ -77,13 +77,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Enabled| 
-| Default domain controller policy| Enabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings | Enabled| 
-| Member server effective default settings | Enabled| 
-| Effective GPO default settings on client computers | Disabled| 
- 
+| Default domain policy| Enabled|
+| Default domain controller policy| Enabled|
+| Stand-alone server default settings | Disabled|
+| Domain controller effective default settings | Enabled|
+| Member server effective default settings | Enabled|
+| Effective GPO default settings on client computers | Disabled|
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

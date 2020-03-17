@@ -3,7 +3,7 @@ title: Use the Device Guard Signing Portal in the Microsoft Store for Business  
 description: You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -28,7 +28,7 @@ ms.date: 02/19/2019
 -   Windows Server 2019
 -   Windows Server 2016
 
-You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed. 
+You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 
 ## Sign your code integrity policy
 Before you get started, be sure to review these best practices:
@@ -40,7 +40,7 @@ Before you get started, be sure to review these best practices:
 
 **To sign a code integrity policy**
 
-1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2.  Click **Manage**, click **Store settings**, and then click **Device Guard**.
 3.  Click **Upload** to upload your code integrity policy.
 4.  After the files are uploaded, click **Sign** to sign the code integrity policy.

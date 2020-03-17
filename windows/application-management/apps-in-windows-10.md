@@ -1,6 +1,6 @@
 ---
 title: Windows 10 - Apps
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
 ms.prod: w10

@@ -2,7 +2,7 @@
 title: Recognized Environment Variables (Windows 10)
 description: Recognized Environment Variables
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -270,7 +270,7 @@ You can use these variables within sections in the .xml files with `context=User
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="bkmk-2"></a>Variables that are recognized only in the user context
 
@@ -454,16 +454,16 @@ You can use these variables in the .xml files within sections with `context=User
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

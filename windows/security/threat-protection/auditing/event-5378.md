@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,30 +38,30 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.a
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5378</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12551</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-11T03:23:48.502346900Z" /> 
- <EventRecordID>1198733</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="4308" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5378</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12551</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-11T03:23:48.502346900Z" />
+ <EventRecordID>1198733</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="4308" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x2b1e04</Data> 
- <Data Name="Package">CREDSSP</Data> 
- <Data Name="UserUPN">dadmin@contoso</Data> 
- <Data Name="TargetServer">WSMAN/dc01.contoso.local</Data> 
- <Data Name="CredType">%%8098</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x2b1e04</Data>
+ <Data Name="Package">CREDSSP</Data>
+ <Data Name="UserUPN">dadmin@contoso</Data>
+ <Data Name="TargetServer">WSMAN/dc01.contoso.local</Data>
+ <Data Name="CredType">%%8098</Data>
  </EventData>
 </Event>
 

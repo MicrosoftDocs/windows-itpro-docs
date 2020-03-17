@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/11/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -33,7 +33,7 @@ The tables list:
 
 > [!TIP]
 > You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
-> 
+>
 > - Cloud-delivered protection
 > - Fast learning (including Block at first sight)
 > - Potentially unwanted application blocking
@@ -45,7 +45,7 @@ Microsoft Defender Antivirus records event IDs in the Windows event log.
 
 You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Microsoft Defender Antivirus client event IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
 
-The table in this section lists the main Microsoft Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
+The table in this section lists the main Microsoft Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error.
 
 ## To view a Microsoft Defender Antivirus event
 
@@ -55,7 +55,7 @@ The table in this section lists the main Microsoft Defender Antivirus event IDs 
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-<table> 
+<table>
 <tr>
 <th colspan="2" >Event ID: 1000</th>
 </tr>
@@ -288,7 +288,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>An antimalware scan failed. 
+<b>An antimalware scan failed.
 </b>
 </td>
 </tr>
@@ -1026,7 +1026,7 @@ The above context applies to the following client and server versions:
 </tr>
 <tr>
 <td>
-Client Operating System 
+Client Operating System
 </td>
 <td>
 Windows Vista (Service Pack 1, or Service Pack 2), Windows 7 and later
@@ -1049,7 +1049,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Se
 User action:
 </td>
 <td >
-No action is necessary. Microsoft Defender Antivirus removed or quarantined a threat. 
+No action is necessary. Microsoft Defender Antivirus removed or quarantined a threat.
 </td>
 </tr>
 <tr>
@@ -1485,7 +1485,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>The security intelligence update failed. 
+<b>The security intelligence update failed.
 </b>
 </td>
 </tr>
@@ -2088,7 +2088,7 @@ User action:
 </td>
 <td >
 Check your Internet connectivity settings.
-The Microsoft Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue. 
+The Microsoft Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue.
 </td>
 </tr>
 <tr>
@@ -2282,8 +2282,8 @@ User action:
 </td>
 <td >
 You should restart the system then run a full scan because it&#39;s possible the system was not protected for some time.
-The Microsoft Defender Antivirus client&#39;s real-time protection feature encountered an error because one of the services failed to start. 
-If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
+The Microsoft Defender Antivirus client&#39;s real-time protection feature encountered an error because one of the services failed to start.
+If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure.
 </td>
 </tr>
 <tr>
@@ -2329,7 +2329,7 @@ Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is
 User action:
 </td>
 <td >
-The real-time protection feature has restarted. If this event happens again, contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>. 
+The real-time protection feature has restarted. If this event happens again, contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </td>
 </tr>
 <tr>
@@ -2384,7 +2384,7 @@ Message:
 Description:
 </td>
 <td >
-Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was disabled. 
+Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was disabled.
 </td>
 </tr>
 <tr>
@@ -2601,7 +2601,7 @@ Message:
 Description:
 </td>
 <td >
-Microsoft Defender Antivirus scanning for viruses has been enabled. 
+Microsoft Defender Antivirus scanning for viruses has been enabled.
 </td>
 </tr>
 <tr>
@@ -2629,7 +2629,7 @@ Message:
 Description:
 </td>
 <td >
-Microsoft Defender Antivirus scanning for viruses is disabled. 
+Microsoft Defender Antivirus scanning for viruses is disabled.
 </td>
 </tr>
 <tr>
@@ -2713,7 +2713,7 @@ This section provides the following information about Microsoft Defender Antivir
 Use the information in these tables to help troubleshoot Microsoft Defender Antivirus error codes.
 
 
-<table> 
+<table>
 <tr>
 <th colspan="2">Error code: 0x80508007</th>
 </tr>
@@ -2728,7 +2728,7 @@ Use the information in these tables to help troubleshoot Microsoft Defender Anti
 Possible reason
 </td>
 <td>
-This error indicates that you might have run out of memory. 
+This error indicates that you might have run out of memory.
 </td>
 </tr>
 <tr>
@@ -2737,7 +2737,7 @@ This error indicates that you might have run out of memory.
 <ol>
 <li>Check the available memory on your device.</li>
 <li>Close any unused applications that are running to free up memory on your device.</li>
-<li>Restart the device and run the scan again. 
+<li>Restart the device and run the scan again.
 </li>
 </ol>
 </td>
@@ -2769,139 +2769,139 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 <tr>
 <th colspan="2">Error code: 0x80508020</th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_BAD_CONFIGURATION 
+<td><b>ERR_MP_BAD_CONFIGURATION
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input 
-data that does not allow the engine to function properly. 
+This error indicates that there might be an engine configuration error; commonly, this is related to input
+data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x805080211 
+<th colspan="2">Error code: 0x805080211
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_QUARANTINE_FAILED 
+<td><b>ERR_MP_QUARANTINE_FAILED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that Microsoft Defender Antivirus failed to quarantine a threat. 
+This error indicates that Microsoft Defender Antivirus failed to quarantine a threat.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508022 
+<th colspan="2">Error code: 0x80508022
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_REBOOT_REQUIRED 
+<td><b>ERR_MP_REBOOT_REQUIRED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that a reboot is required to complete threat removal. 
+This error indicates that a reboot is required to complete threat removal.
 </td>
 </tr>
 <tr>
 <th colspan="2">
-0x80508023 
+0x80508023
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_THREAT_NOT_FOUND 
+<td><b>ERR_MP_THREAT_NOT_FOUND
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that the threat might no longer be present on the media, or malware might be stopping you from scanning your device. 
+This error indicates that the threat might no longer be present on the media, or malware might be stopping you from scanning your device.
 </tr><tr><td>Resolution
 </td>
 <td>
-Run the <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a> then update your security software and try again. 
+Run the <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a> then update your security software and try again.
 </td>
 </tr>
 <tr>
 <th colspan="2">Error code: 0x80508024 </th></tr>
 <tr>
 <td>Message</td>
-<td><b>ERR_MP_FULL_SCAN_REQUIRED 
+<td><b>ERR_MP_FULL_SCAN_REQUIRED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that a full system scan might be required. 
+This error indicates that a full system scan might be required.
 </td></tr>
 <tr>
 <td>Resolution</td><td>
-Run a full system scan. 
+Run a full system scan.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508025 
+<th colspan="2">Error code: 0x80508025
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_MANUAL_STEPS_REQUIRED 
+<td><b>ERR_MP_MANUAL_STEPS_REQUIRED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that manual steps are required to complete threat removal. 
+This error indicates that manual steps are required to complete threat removal.
 </td></tr><tr><td>Resolution</td><td>
 Follow the manual remediation steps outlined in the <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">Microsoft Malware Protection Encyclopedia</a>. You can find a threat-specific link in the event history.<br/></td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508026 
+<th colspan="2">Error code: 0x80508026
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_REMOVE_NOT_SUPPORTED 
+<td><b>ERR_MP_REMOVE_NOT_SUPPORTED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that removal inside the container type might not be not supported. 
+This error indicates that removal inside the container type might not be not supported.
 </td></tr><tr><td>Resolution</td><td>
-Microsoft Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
+Microsoft Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508027 
+<th colspan="2">Error code: 0x80508027
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED 
+<td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that removal of low and medium threats might be disabled. 
+This error indicates that removal of low and medium threats might be disabled.
 </td></tr><tr><td>Resolution</td><td>
-Check the detected threats and resolve them as required. 
+Check the detected threats and resolve them as required.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508029 
+<th colspan="2">Error code: 0x80508029
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERROR_MP_RESCAN_REQUIRED 
+<td><b>ERROR_MP_RESCAN_REQUIRED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates a rescan of the threat is required. 
+This error indicates a rescan of the threat is required.
 </td></tr><tr><td>Resolution</td><td>
-Run a full system scan. 
+Run a full system scan.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508030 
+<th colspan="2">Error code: 0x80508030
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERROR_MP_CALLISTO_REQUIRED 
+<td><b>ERROR_MP_CALLISTO_REQUIRED
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that an offline scan is required. 
+This error indicates that an offline scan is required.
 </td></tr><tr><td>Resolution</td><td>
 Run offline Microsoft Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Microsoft Defender Antivirus article</a>.
 </td>
 </tr>
 <tr>
-<th colspan="2">Error code: 0x80508031 
+<th colspan="2">Error code: 0x80508031
 </th>
 </tr><tr><td>Message</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform. 
+This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
 </td></tr><tr><td>Resolution</td><td>
 You can only use Microsoft Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
@@ -2913,7 +2913,7 @@ The following error codes are used during internal testing of Microsoft Defender
 If you see these errors, you can try to [update definitions](manage-updates-baselines-microsoft-defender-antivirus.md) and force a rescan directly on the endpoint.
 
 
-<table> 
+<table>
 <tr>
 <th colspan="3">Internal error codes</th>
 </tr>
@@ -2927,7 +2927,7 @@ If you see these errors, you can try to [update definitions](manage-updates-base
 0x80501004
 </td>
 <td>
-<b>ERROR_MP_NO_INTERNET_CONN 
+<b>ERROR_MP_NO_INTERNET_CONN
 </b>
 </td>
 <td>
@@ -3221,19 +3221,19 @@ This is an internal error. The cause is not clearly defined.
 <b>ERR_MP_REMOVE_FAILED</b>
 </td>
 <td>
-This is an internal error. It might be triggered when malware removal is not successful. 
+This is an internal error. It might be triggered when malware removal is not successful.
 </td>
 </tr>
 <tr>
 <td>
-0x80508018 
+0x80508018
 </td>
 <td>
-<b>ERR_MP_SCAN_ABORTED 
+<b>ERR_MP_SCAN_ABORTED
 </b>
 </td>
 <td>
-This is an internal error. It might have triggered when a scan fails to complete. 
+This is an internal error. It might have triggered when a scan fails to complete.
 </td>
 </tr>
 </table>

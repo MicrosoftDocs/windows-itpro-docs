@@ -2,7 +2,7 @@
 title: Planning GPO Deployment (Windows 10)
 description: Planning GPO Deployment
 ms.assetid: b38adfb1-1371-4227-a887-e6d118809de1
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -82,7 +82,7 @@ Woodgrove Bank links all its GPOs to the domain level container in the Active Di
     `select * from Win32_OperatingSystem where Version like "6.%" and ProductType <> "2"`
 
     >**Note:**  This excludes domain controllers (which report a ProductType value of 2). Do not include domain controllers in the isolated domain if there are devices running versions of Windows earlier than Windows Vista and Windows Server 2008.
-    
+
 -   **Security filter**. This GPO grants Read and Apply Group Policy permissions only to devices that are members of the group CG\_DOMISO\_IsolatedDomain. The GPO also explicitly denies Read and Apply Group Policy permissions to members of the CG\_DOMISO\_NO\_IPSEC.
 
 ### GPO\_DOMISO\_IsolatedDomain\_Clients

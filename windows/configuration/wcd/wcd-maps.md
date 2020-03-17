@@ -8,13 +8,13 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Maps (Windows Configuration Designer reference)
 
-Use for settings related to Maps. 
+Use for settings related to Maps.
 
 ## Applies to
 

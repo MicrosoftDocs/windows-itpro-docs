@@ -2,7 +2,7 @@
 title: Windows Hello and password changes (Windows 10)
 description: When you change your password on a device, you may need to sign in with a password on other devices to reset Hello.
 ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,7 +32,7 @@ Suppose instead that you sign in on **Device B** and change your password for yo
 
 >[!NOTE]
 >This example also applies to an Active Directory account when [Windows Hello for Business is not implemented](hello-manage-in-organization.md).
- 
+
 ## How to update Hello after you change your password on another device
 
 1.  When you try to sign in using your PIN or biometric, you will see the following message: **Your password was changed on a different device. You must sign in to this device once with your new password, and then you can sign in with your PIN.**

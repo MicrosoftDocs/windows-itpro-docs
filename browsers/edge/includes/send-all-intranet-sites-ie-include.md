@@ -18,7 +18,6 @@ ms.topic: include
 > [!TIP]
 > Microsoft Edge does not support ActiveX controls, Browser Helper Objects, VBScript, or other legacy technology. If you have websites or web apps that still use this technology and needs IE11 to run, you can add them to the Enterprise Mode site list, using Enterprise Mode Site List Manager.
 
-
 ### Supported values
 
 |                Group Policy                 | MDM | Registry |                                                                                                                                                                                                                                                                                                                                           Description                                                                                                                                                                                                                                                                                                                                            |                 Most restricted                  |

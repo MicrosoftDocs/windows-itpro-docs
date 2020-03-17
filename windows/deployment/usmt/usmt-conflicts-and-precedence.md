@@ -2,7 +2,7 @@
 title: Conflicts and Precedence (Windows 10)
 description: Conflicts and Precedence
 ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -108,7 +108,7 @@ Specifying `migrate="no"` in the Config.xml file is the same as deleting the cor
    <objectSet>
       <pattern type="File">%CSIDL_PERSONAL%\* [*.doc] </pattern>
    </objectSet>
-</include> 
+</include>
 ```
 
 ### <a href="" id="bkmk4"></a>How does USMT process each component in an .xml file with multiple components?
@@ -146,7 +146,7 @@ In the following example, mp3 files will not be excluded from the migration. Thi
      <objectSet>
           <pattern type="File"> C:\* [*.mp3]</pattern>
      </objectSet>
-</exclude>  
+</exclude>
 ```
 
 ### <a href="" id="precexamples"></a>&lt;include&gt; and &lt;exclude&gt; rules precedence examples
@@ -225,7 +225,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+
 
 <table>
 <colgroup>
@@ -282,7 +282,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="regex"></a>Including and excluding registry objects
 
@@ -327,7 +327,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+
 
 <table>
 <colgroup>
@@ -360,7 +360,7 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 </tbody>
 </table>
 
- 
+
 
 ## File collisions
 
@@ -392,11 +392,11 @@ The destination computer contains the following files:
 You have a custom .xml file that contains the following code:
 
 ``` xml
-<include> 
-   <objectSet> 
-      <pattern type="File">c:\data\* [*]</pattern> 
-   </objectSet> 
-</include> 
+<include>
+   <objectSet>
+      <pattern type="File">c:\data\* [*]</pattern>
+   </objectSet>
+</include>
 ```
 
 For this example, the following table describes the resulting behavior if you add the code in the first column to your custom .xml file.
@@ -414,28 +414,28 @@ For this example, the following table describes the resulting behavior if you ad
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data* [<em>]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt;
+   &lt;objectSet&gt;
+      &lt;pattern type=&quot;File&quot;&gt;c:\data* [<em>]&lt;/pattern&gt;
+   &lt;/objectSet&gt;
 &lt;/merge&gt;</code></pre></td>
 <td align="left"><p>During ScanState, all the files will be added to the store.</p>
 <p>During LoadState, only C:\Data\SampleA.txt will be restored.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data* [</em>]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt;
+   &lt;objectSet&gt;
+      &lt;pattern type=&quot;File&quot;&gt;c:\data* [</em>]&lt;/pattern&gt;
+   &lt;/objectSet&gt;
 &lt;/merge&gt; </code></pre></td>
 <td align="left"><p>During ScanState, all the files will be added to the store.</p>
 <p>During LoadState, all the files will be restored, overwriting the existing files on the destination computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt;
+   &lt;objectSet&gt;
+      &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt;
+   &lt;/objectSet&gt;
 &lt;/merge&gt; </code></pre></td>
 <td align="left"><p>During ScanState, all the files will be added to the store.</p>
 <p>During LoadState, the following will occur:</p>
@@ -448,16 +448,16 @@ For this example, the following table describes the resulting behavior if you ad
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

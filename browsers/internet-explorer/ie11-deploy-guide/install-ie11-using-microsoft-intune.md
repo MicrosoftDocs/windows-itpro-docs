@@ -5,7 +5,7 @@ description: How to add and deploy the Internet Explorer 11 update using Microso
 author: dansimp
 ms.prod: ie11
 ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Install Internet Explorer 11 (IE11) using Microsoft Intune (Internet Explorer 11 for IT Pros)
@@ -24,7 +24,7 @@ You can add and then deploy the IE11 package to any computer that's managed by M
 
 1.  From the Microsoft Intune administrator console, start the Microsoft Intune Software Publisher.
 
-2.  Add your IE11 package as either an external link or as a Windows installer package (.exe or .msi). 
+2.  Add your IE11 package as either an external link or as a Windows installer package (.exe or .msi).
 
 For more info about how to decide which one to use, and how to use it, see [Deploy and configure apps](https://go.microsoft.com/fwlink/p/?LinkId=301806).
 
@@ -34,7 +34,7 @@ For more info about how to decide which one to use, and how to use it, see [Depl
 
 2.  Deploy the package to any of your employee computers that are managed by Microsoft Intune.
 
-3.  After the package is on your employee's computers, the installation process runs, based on what you set up in your wizard. 
+3.  After the package is on your employee's computers, the installation process runs, based on what you set up in your wizard.
 
 For more info about this, see [Deploy and configure apps](https://go.microsoft.com/fwlink/p/?LinkId=301806).
 
@@ -42,13 +42,13 @@ For more info about this, see [Deploy and configure apps](https://go.microsoft.c
 
 1.  Install the package on your company's Microsoft Intune site, marking it as **Available** for the appropriate groups.
 
-2.  Any employee in the assigned group can now install the package. 
+2.  Any employee in the assigned group can now install the package.
 
 For more info about this, see [Update apps using Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=301808)
 
- 
 
- 
+
+
 
 
 

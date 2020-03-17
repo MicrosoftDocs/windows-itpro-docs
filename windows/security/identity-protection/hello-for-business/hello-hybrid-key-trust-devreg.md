@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Configure Device Registration for Hybrid key trust Windows Hello for Business
 
@@ -23,8 +23,8 @@ ms.reviewer:
 -  Hybrid deployment
 -  Key trust
 
- 
-You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
+
+You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.
 
 > [!NOTE]
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
@@ -35,7 +35,7 @@ You are ready to configure device registration for your hybrid environment. Hybr
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
 
 ## Configure Azure for Device Registration
-Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
+Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD.
 
 To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-setup/).
 

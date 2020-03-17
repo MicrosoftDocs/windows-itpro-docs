@@ -2,7 +2,7 @@
 title: Scenario 2 Proxy Activation (Windows 10)
 description: Scenario 2 Proxy Activation
 ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -30,7 +30,7 @@ In this scenario, the Volume Activation Management Tool (VAMT) is used to activa
 
 -   Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
-    **Note**  
+    **Note**
     To retrieve the license status on the selected computers, VAMT must have administrative permissions on the remote computers and WMI must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
 ## Step 3: Connect to a VAMT Database
@@ -75,7 +75,7 @@ To collect the status from select computers in the database, you can select comp
 - In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and then click **OK**.
 - VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-  **Note**  
+  **Note**
   If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## Step 7: Add Product Keys
@@ -98,10 +98,10 @@ To collect the status from select computers in the database, you can select comp
 
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-    **Note**  
+    **Note**
     Product key installation will fail if VAMT finds mismatched key types or editions. VAMT displays the failure status and continues the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](https://go.microsoft.com/fwlink/p/?linkid=238382)
 
-    **Note**  
+    **Note**
     Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network. RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
 
 ## Step 9: Export VAMT Data to a .cilx File
@@ -119,7 +119,7 @@ In this step, you export VAMT from the workgroup’s host computer and save it i
 6.  Click **Save**. VAMT displays a progress message while the data is being exported. Click **OK** when a message appears and confirms that the export has completed successfully.
 7.  If you exported the list to a file on the host computer’s hard drive, copy the file to removable media, such as a disk drive, CD/DVD, or USB storage device.
 
-    **Important**  
+    **Important**
     Choosing the **Export proxy activation data only** option excludes Personally Identifiable Information (PII) from being saved in the .cilx file. Therefore, the .cilx file must be re-imported into the SQL Server database on the isolated lab workgroup’s VAMT host computer, so that the CIDs that are requested from Microsoft (discussed in Step 10) can be correctly assigned to the computers in the isolated lab group.
 
 ## Step 10: Acquire Confirmation IDs from Microsoft on the Internet-Connected Host Computer
@@ -157,15 +157,15 @@ If you have captured new images of the computers in the isolated lab, but the un
     VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-    **Note**  
-    Installing a MAK and overwriting the GVLK on the client products must be done with care. If the Windows activation initial grace period has expired, Windows will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are accessible on the network. 
-    
+    **Note**
+    Installing a MAK and overwriting the GVLK on the client products must be done with care. If the Windows activation initial grace period has expired, Windows will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are accessible on the network.
+
     RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
 
-    **Note**  
+    **Note**
     Reapplying the same CID conserves the remaining activations on the MAK.
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+
+

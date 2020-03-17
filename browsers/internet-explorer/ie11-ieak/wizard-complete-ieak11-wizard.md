@@ -5,7 +5,7 @@ description: How to use the Wizard Complete - Next Steps page in the IEAK 11 Cus
 author: dansimp
 ms.prod: ie11
 ms.assetid: aaaac88a-2022-4d0b-893c-b2404b45cabc
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -22,9 +22,9 @@ In most cases, your next steps will be to prepare your files for installation fr
 
 After that, the steps you’ll use to distribute your customized browser will vary, depending on your version of IEAK (Internal or External) and the media you’re using to distribute the package. For more information, see the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md).
 
- 
 
- 
+
+
 
 
 

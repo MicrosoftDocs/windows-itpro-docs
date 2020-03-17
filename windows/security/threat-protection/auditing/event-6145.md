@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,24 +38,24 @@ This event generates, for example, if the [SID](https://msdn.microsoft.com/libra
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>6145</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13573</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-07T22:43:54.183603800Z" /> 
- <EventRecordID>1052680</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="3476" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>6145</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13573</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-07T22:43:54.183603800Z" />
+ <EventRecordID>1052680</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="3476" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ErrorCode">1332</Data> 
- <Data Name="GPOList">{6AC1786C-016F-11D2-945F-00C04fB984F9} Default Domain Controllers Policy {31B2F340-016D-11D2-945F-00C04FB984F9} Default Domain Policy</Data> 
+ <Data Name="ErrorCode">1332</Data>
+ <Data Name="GPOList">{6AC1786C-016F-11D2-945F-00C04fB984F9} Default Domain Controllers Policy {31B2F340-016D-11D2-945F-00C04FB984F9} Default Domain Policy</Data>
  </EventData>
  </Event>
 

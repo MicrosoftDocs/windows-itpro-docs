@@ -14,7 +14,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/9/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 
 
@@ -65,7 +65,7 @@ The following fields are available:
 - **TargetAppVer:** Application version
 - **TerminateCount:** Number of times a process terminated
 - **WriteCountAtExit_Sum:** Total number of IO writes for a process when it exited
-- **WriteSizeInKBAtExit_Sum:** Total size of IO writes for a process when it exited          
+- **WriteSizeInKBAtExit_Sum:** Total size of IO writes for a process when it exited
 
 ## Microsoft.Office.TelemetryEngine.IsPreLaunch
 Applicable for Office UWP applications. This event is fired when an office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a particular session is launch session or not.
@@ -305,14 +305,14 @@ Sends details about any error codes detected during a failed sign-in.
 The following fields are available:
 
 - **ntsStatus:** The NTSTATUS error code status returned from an attempted sign-in
-- **ntsSubstatus:** The NTSTATUS error code sub-status returned from an attempted sign-in 
+- **ntsSubstatus:** The NTSTATUS error code sub-status returned from an attempted sign-in
 
 ## Microsoft.Windows.Security.Biometrics.Service.BioServiceActivityCapture
 Indicates that a biometric capture was compared to known templates
 
 The following fields are available:
 
-- **captureDetail:** Result of biometric capture, either matched to an enrollment or an error 
+- **captureDetail:** Result of biometric capture, either matched to an enrollment or an error
 - **captureSuccessful:** Indicates whether a biometric capture was successfully matched or not
 - **hardwareId:** ID of the sensor that collected the biometric capture
 - **isSecureSensor:** Flag indicating whether a biometric sensor was in enhanced security mode
@@ -345,7 +345,7 @@ This event describes system tasks which are part of the user logon sequence and 
 
 The following fields are available:
 
-- **isStartWaitTask:** Flag indicating whether the task starts a background task 
+- **isStartWaitTask:** Flag indicating whether the task starts a background task
 - **isWaitMethod:** Flag indicating the task is waiting on a background task
 - **logonTask:** Indicates which logon step is currently occurring
 - **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.
@@ -367,7 +367,7 @@ The following fields are available:
 Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Desktop Analytics) to understand and improve application reliability on managed devices.
 
 The following fields are available:
-   
+
 - **AggregationDurationMS:** Actual duration of aggregation period (in milliseconds)
 - **AggregationFlags:** Flags denoting aggregation settings
 - **AggregationPeriodMS:** Intended duration of aggregation period (in milliseconds)

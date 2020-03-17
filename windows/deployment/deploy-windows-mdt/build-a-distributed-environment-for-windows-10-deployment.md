@@ -2,7 +2,7 @@
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
 description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: replication, replicate, deploy, configure, remote
@@ -23,7 +23,7 @@ ms.topic: article
 
 Perform the steps in this article to build a distributed environment for Windows 10 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
 
-Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we will deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
+Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we will deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation.
 
 For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more details on the infrastructure setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
@@ -39,7 +39,7 @@ Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be do
 
 > [!NOTE]
 > Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
- 
+
 ### Linked deployment shares in MDT
 
 LDS is a built-in feature in MDT for replicating content. However, LDS works best with strong connections such as LAN connections with low latency. For most WAN links, DFS-R is the better option.
@@ -102,12 +102,12 @@ On **MDT02**:
   mkdir d:\MDTProduction
   New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
   ```
-  
+
 2. You should see the following output:
 
   ```output
   C:\> New-SmbShare -Name "MDTProduction$" -Path "D:\MDTProduction"
-  
+
   Name           ScopeName Path             Description
   ----           --------- ----             -----------
   MDTProduction$ *         D:\MDTProduction
@@ -119,7 +119,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
 On **MDT01**:
 
-1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the client's default gateway in New York and Stockholm, respectively (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (i.e. server) to use. 
+1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the client's default gateway in New York and Stockholm, respectively (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (i.e. server) to use.
 
    ```ini
    [Settings]
@@ -143,7 +143,7 @@ On **MDT01**:
    ```
    >[!NOTE]
    >The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
-     
+
 2. Save the Bootstrap.ini file.
 3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**. Use the default settings for the Update Deployment Share Wizard. This process will take a few minutes.
 4. After the update is complete, use the Windows Deployment Services console on MDT01. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
@@ -188,7 +188,7 @@ On **MDT01**:
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
         In this scenario the size of the deployment share is known, but you might need to change the values for your environment. A good rule of thumb is to get the size of the 16 largest files and make sure they fit in the staging area. Below is a Windows PowerShell example that calculates the size of the 16 largest files in the D:\\MDTProduction deployment share:
-        
+
         ``` powershell
         (Get-ChildItem D:\MDTProduction -Recurse | Sort-Object Length -Descending | Select-Object -First 16 | Measure-Object -Property Length -Sum).Sum /1GB
         ```
@@ -237,7 +237,7 @@ Like you did in the previous topic for MDT01, you need to add the MDT Production
 
 ## Deploy a Windows 10 client to the remote site
 
-Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following optional procedure. 
+Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following optional procedure.
 
 >For demonstration purposes, the following procedure uses a virtual machine (PC0006) hosted by the Hyper-V server HV01. To use the remote site server (MDT02) the VM must be assigned a default gateway that matches the one you entered in the Boostrap.ini file.
 
@@ -250,7 +250,7 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     6. Install an operating system from a network-based installation server
 2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from the WDS server.
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
-    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
+    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image
     2.  Computer Name: PC0006
     3.  Applications: Select the Install - Adobe Reader
 4.  Setup will now start and perform the following:

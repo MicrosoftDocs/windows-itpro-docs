@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -35,7 +35,7 @@ Use WindowsTeamSettings settings to configure Surface Hub.
 
 ## DeviceAccount
 
-A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. 
+A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device.
 
 | Setting | Value | Description |
 | --- | --- | --- |
@@ -71,7 +71,7 @@ Maintenance hours are the period of time during which automatic maintenance task
 
 ## OMSAgent
 
-Configures the Operations Management Suite workspace. 
+Configures the Operations Management Suite workspace.
 
 | Setting | Value | Description |
 | --- | --- | --- |

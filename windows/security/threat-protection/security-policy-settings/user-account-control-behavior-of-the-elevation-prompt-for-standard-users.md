@@ -2,7 +2,7 @@
 title: Behavior of the elevation prompt for standard users (Windows 10)
 description: Learn about best practices, security considerations, and more for the policy setting, User Account Control Behavior of the elevation prompt for standard users.
 ms.assetid: 1eae7def-8f6c-43b6-9474-23911fdc01ba
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -57,13 +57,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Prompt for credentials on the secure desktop| 
-| DC Effective Default Settings | Prompt for credentials on the secure desktop| 
-| Member Server Effective Default Settings | Prompt for credentials on the secure desktop| 
-| Client Computer Effective Default Settings | Prompt for credentials on the secure desktop| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Prompt for credentials on the secure desktop|
+| DC Effective Default Settings | Prompt for credentials on the secure desktop|
+| Member Server Effective Default Settings | Prompt for credentials on the secure desktop|
+| Client Computer Effective Default Settings | Prompt for credentials on the secure desktop|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

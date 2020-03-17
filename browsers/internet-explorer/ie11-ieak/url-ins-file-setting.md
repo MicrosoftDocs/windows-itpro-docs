@@ -5,7 +5,7 @@ description: Use the \[URL\] .INS file setting to decide whether to use an auto-
 author: dansimp
 ms.prod: ie11
 ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

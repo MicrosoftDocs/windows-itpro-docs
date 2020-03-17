@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## API description
@@ -62,14 +62,14 @@ Content-Type | String | application/json. **Required**.
 
 ## Request body
 In the request body, supply the values for the relevant fields that should be updated.
-<br>Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
+<br>Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 <br>For best performance you shouldn't include existing values that haven't change.
 
 Property | Type | Description
 :---|:---|:---
 status | String | Specifies the current status of the alert. The property values are: 'New', 'InProgress' and 'Resolved'.
 assignedTo | String | Owner of the alert
-classification | String | Specifies the specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+classification | String | Specifies the specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.
 determination | String | Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comment to be added to the alert.
 

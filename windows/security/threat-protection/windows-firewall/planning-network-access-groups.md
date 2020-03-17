@@ -2,7 +2,7 @@
 title: Planning Network Access Groups (Windows 10)
 description: Planning Network Access Groups
 ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ For the Woodgrove Bank scenario, access to the devices running SQL Server that s
 | NAG Name | NAG Member Users, Computers, or Groups | Description |
 | - | - | - |
 | CG_NAG_*ServerRole*_Users| Svr1AdminA<br/>Svr1AdminB<br/>Group_AppUsers<br/>AppSvcAccount| This group is for all users who are authorized to make inbound IPsec connections to the isolated servers in this zone.|
-| CG_NAG_*ServerRole*_Computers| Desktop1<br/>Desktop2<br/>AdminDT1<br/>AppAdminDT1| This group contains all devices that are authorized to make inbound IPsec connections to the isolated servers in this zone.| 
+| CG_NAG_*ServerRole*_Computers| Desktop1<br/>Desktop2<br/>AdminDT1<br/>AppAdminDT1| This group contains all devices that are authorized to make inbound IPsec connections to the isolated servers in this zone.|
 
 >**Note:**  Membership in a NAG does not control the level of IPsec traffic protection. The IKE negotiation is only aware of whether the device or user passed or failed the Kerberos V5 authentication process. The connection security rules in the applied GPO control the security methods that are used for protecting traffic and are independent of the identity being authenticated by Kerberos V5.
 

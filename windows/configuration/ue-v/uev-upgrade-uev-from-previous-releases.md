@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -20,7 +20,7 @@ ms.topic: article
 
 If you’re already using UE-V 2.x and you’re planning to upgrade user devices to Windows 10, version 1607 or later releases, you need to make only a few adjustments to your existing environment. These steps are explained in more detail below.
 
-1. Upgrade user devices to Windows 10, version 1607 or later release. 
+1. Upgrade user devices to Windows 10, version 1607 or later release.
 
 2. Verify that UE-V settings were migrated correctly.
 
@@ -35,9 +35,9 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 ## Upgrade user devices to Windows 10, version 1607
 
-Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](https://technet.microsoft.com/itpro/windows/deploy/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](https://technet.microsoft.com/itpro/windows/deploy/index) for information about upgrading user devices to Windows 10.
 
-## Verify that UE-V settings were migrated correctly 
+## Verify that UE-V settings were migrated correctly
 
 After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows PowerShell or the device’s registry.
 
@@ -50,7 +50,7 @@ After upgrading a user device to Windows 10, version 1607, it’s important to v
 3. Type **Get-UEVTemplate** and press ENTER to check that your templates are still registered.
 
     > [!NOTE]
-    > You’ll need to register the NotePad template again after you upgrade the device to Windows 10. 
+    > You’ll need to register the NotePad template again after you upgrade the device to Windows 10.
 
 **To verify UE-V settings using the device’s registry**
 
@@ -66,9 +66,9 @@ Template Settings Storage Path will not automatically migrate. Run Set-UEVConfig
 
 ## Enable the UE-V service on user devices
 
-The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location. 
+The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location.
 
-With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell. 
+With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
 
 > [!IMPORTANT]
 > The UE-V Agent used in prior releases of UE-V is replaced with the UE service. The UE-V service included with Windows 10, version 1607 and later releases, does not include the agent user interface and is configurable through cmdlets or registry settings only.
@@ -77,7 +77,7 @@ With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agen
 
 1. Open the device’s **Group Policy Editor**.
 
-2. Navigate to **Computer Configuration > Administrative Templates > Windows Components > Microsoft User Experience Virtualization**. 
+2. Navigate to **Computer Configuration > Administrative Templates > Windows Components > Microsoft User Experience Virtualization**.
 
 3. Run **Enable UEV**
 
@@ -93,17 +93,17 @@ With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agen
 
 ## Install the UE-V template generator
 
-The UE-V template generator is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. 
+The UE-V template generator is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 
 **To install the UE-V template generator**
 
-1. Go to [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) to access the ADK. 
+1. Go to [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) to access the ADK.
 
 2. Select the **Get Windows ADK for Windows 10** button on this page to start the ADK installer. On the screen pictured below, select **Microsoft User Experience Virtualization (UE-V) Template Generator** and then select **Install**.
 
     ![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
- 
-3. To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**. 
+
+3. To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**.
 
 
 

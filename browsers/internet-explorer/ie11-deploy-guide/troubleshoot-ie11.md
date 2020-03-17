@@ -5,7 +5,7 @@ description: Use the topics in this section to learn how to troubleshoot several
 author: dansimp
 ms.prod: ie11
 ms.assetid: 0361c1a6-3faa-42b2-a588-92439eebeeab
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,11 +43,11 @@ Use the topics in this section to learn how to troubleshoot several of the more 
 |[Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md) |Guidance about how to turn on single-word intranet searches in the address bar. |
 |[Browser cache changes and roaming profiles](browser-cache-changes-and-roaming-profiles.md) |Guidance about changes we’ve made to the browser cache to improve the performance, flexibility, reliability, and scalability and how to get the best results while using a roaming profile. |
 
- 
 
- 
 
- 
+
+
+
 
 
 

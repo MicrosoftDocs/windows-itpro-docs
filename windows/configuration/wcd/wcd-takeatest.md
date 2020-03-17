@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -43,7 +43,7 @@ When set to True, students can print in the Take A Test app.
 
 Enter the account to use when taking a test.
 
-To specify a domain account, enter **domain\user**. To specify an AAD account, enter <strong>username@tenant.com</strong>. To specify a local account, enter the username. 
+To specify a domain account, enter **domain\user**. To specify an AAD account, enter <strong>username@tenant.com</strong>. To specify a local account, enter the username.
 
 
 ## Related topics

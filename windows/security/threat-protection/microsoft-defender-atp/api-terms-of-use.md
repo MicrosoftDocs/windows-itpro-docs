@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -24,7 +24,7 @@ Microsoft Defender ATP APIs are governed by [Microsoft API License and Terms of 
 
 ### Throttling limits
 
-Name | Calls | Renewal period 
+Name | Calls | Renewal period
 :---|:---|:---
 API calls per connection | 100 | 60 seconds
 

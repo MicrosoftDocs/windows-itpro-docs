@@ -1,6 +1,6 @@
 ---
 title: Advanced Hunting with Powershell API Basics
-ms.reviewer: 
+ms.reviewer:
 description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using PowerShell.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -73,10 +73,10 @@ Run the following query:
 $query = 'RegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
-$headers = @{ 
+$headers = @{
     'Content-Type' = 'application/json'
     Accept = 'application/json'
-    Authorization = "Bearer $aadToken" 
+    Authorization = "Bearer $aadToken"
 }
 $body = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $webResponse = Invoke-WebRequest -Method Post -Uri $url -Headers $headers -Body $body -ErrorAction Stop

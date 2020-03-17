@@ -2,7 +2,7 @@
 title: Boundary Zone (Windows 10)
 description: Boundary Zone
 ms.assetid: ed98b680-fd24-44bd-a7dd-26c522e45a20
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

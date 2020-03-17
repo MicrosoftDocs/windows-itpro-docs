@@ -2,7 +2,7 @@
 title: Control the health of Windows 10-based devices (Windows 10)
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 ms.assetid: 45DB1C41-C35D-43C9-A274-3AD5F31FE873
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: security, BYOD, malware, device health attestation, mobile
@@ -129,7 +129,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
 
     Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-    Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
+    Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0.
 
     TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 
@@ -229,14 +229,14 @@ The schema below is a high-level view of Windows 10 with virtualization-based se
 
 ### Credential Guard
 
-In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This helps ensure that protected data is not stolen and reused on 
+In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This helps ensure that protected data is not stolen and reused on
 remote machines, which mitigates many PtH-style attacks.
 
 Credential Guard helps protect credentials by encrypting them with either a per-boot or persistent key:
 
 -   **The per-boot key** is used for any in-memory credentials that do not require persistence. An example of such a credential would be a ticket-granting ticket (TGT) session key. This key is negotiated with a Key Distribution Center (KDC) every time authentication occurs and is protected with a per-boot key.
 -   **The persistent key**, or some derivative, is used to help protect items that are stored and reloaded after a reboot. Such protection is intended for long-term storage, and must be protected with a consistent key.
-Credential Guard is activated by a registry key and then enabled by using an UEFI variable. This is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that 
+Credential Guard is activated by a registry key and then enabled by using an UEFI variable. This is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that
 credential isolation is enabled, it then spawns LsaIso.exe as an isolated process, which ensures that it runs within isolated user mode. The startup of LsaIso.exe is performed before initialization of a security support provider, which ensures that the secure mode support routines are ready before any authentication begins.
 
 ### Device Guard
@@ -272,7 +272,7 @@ For more information on how to deploy Device Guard in an enterprise, see the [De
 
 As previously described, Device Guard is a powerful way to lock down systems. Device Guard is not intended to be used broadly and it may not always be applicable, but there are some high-interest scenarios.
 
-Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have very well-defined software that are expected to run and don’t change too frequently. 
+Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have very well-defined software that are expected to run and don’t change too frequently.
 It could also help protect Information Workers (IWs) beyond just SAWs, as long as what they need to run is known and the set of applications is not going to change on a daily basis.
 
 SAWs are computers that are built to help significantly reduce the risk of compromise from malware, phishing attacks, bogus websites, and PtH attacks, among other security risks. Although SAWs can’t be considered a “silver bullet” security solution to these attacks, these types of clients are helpful as part of a layered, defense-in-depth approach to security.
@@ -289,14 +289,14 @@ Before you can benefit from the protection included in Device Guard, Code Integr
 
 Signed Device Guard policy offers stronger protection against a malicious local administrator trying to defeat Device Guard.
 
-When the policy is signed, the GUID of the policy is stored in a UEFI pre-OS secure variable which offers tampering protection. The only way to update the Device Guard policy subsequently is to provide a new version of the policy signed by the same signer or from a signer specified as part of the 
+When the policy is signed, the GUID of the policy is stored in a UEFI pre-OS secure variable which offers tampering protection. The only way to update the Device Guard policy subsequently is to provide a new version of the policy signed by the same signer or from a signer specified as part of the
 Device Guard policy into the UpdateSigner section.
 
 ### The importance of signing applications
 
 On computers with Device Guard, Microsoft proposes to move from a world where unsigned apps can be run without restriction to a world where only signed and trusted code is allowed to run on Windows 10.
 
-With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps will be available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal 
+With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps will be available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal
 Windows apps and Classic Windows apps. All apps downloaded from the Microsoft Store are signed.
 
 In organizations today, the vast majority of LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for a variety of reasons, like the lack of code signing expertise. Even if code signing is a best practice, a lot of internal applications are not signed.
@@ -497,7 +497,7 @@ Because the endorsement certificate is unique for each device and does not chang
 
 The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
 
-Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft is hosting a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft 
+Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft is hosting a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft
 Cloud CA service has established these facts, it will issue an AIK certificate to the Windows 10-based device.
 
 Many existing devices that will upgrade to Windows 10 will not have a TPM, or the TPM will not contain an endorsement certificate. **To accommodate those devices, Windows 10 allows the issuance of AIK certificates without the presence of an endorsement certificate.** Such AIK certificates are not issued by Microsoft Cloud CA. Note that this is not as trustworthy as an endorsement certificate that is burned into the device during manufacturing, but it will provide compatibility for advanced scenarios like Windows Hello for Business without TPM.
@@ -528,7 +528,7 @@ During the provisioning process, the device may need to be restarted.
 
 Note that the **Get-TpmEndorsementKeyInfo PowerShell** cmdlet can be used with administrative privilege to get information about the endorsement key and certificates of the TPM.
 
-If the TPM ownership is not known but the EK exists, the client library will provision the TPM and will store the resulting **ownerAuth** value into the registry if the policy allows it will store the SRK public portion at the following location: 
+If the TPM ownership is not known but the EK exists, the client library will provision the TPM and will store the resulting **ownerAuth** value into the registry if the policy allows it will store the SRK public portion at the following location:
 **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\Admin\\SRKPub**
 
 As part of the provisioning process, Windows 10 will create an AIK with the TPM. When this operation is performed, the resulting AIK public portion is stored in the registry at the following location: **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\WindowsAIKPub**
@@ -654,7 +654,7 @@ Interaction between a Windows 10-based device, the Health Attestation Service, a
 
 Setting the requirements for device compliance is the first step to ensure that registered devices that do not meet health and compliance requirements are detected, tracked, and have actions enforced by the MDM solution.
 
-Devices that attempt to connect to resources must have their health evaluated so that unhealthy and noncompliant devices can be detected and reported. To be fully efficient, an end-to-end security solution must impose a consequence for unhealthy devices like refusing access to high-value assets. 
+Devices that attempt to connect to resources must have their health evaluated so that unhealthy and noncompliant devices can be detected and reported. To be fully efficient, an end-to-end security solution must impose a consequence for unhealthy devices like refusing access to high-value assets.
 That is the purpose of conditional access control, which is detailed in the next section.
 
 ## Control the security of a Windows 10-based device before access is granted
@@ -669,7 +669,7 @@ The figure below shows how the Health Attestation Service is expected to work wi
 
 ![figure 10](images/hva-fig9-intune.png)
 
-An MDM solution can then leverage health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device’s ability to prove that it’s malware free, its antimalware system is functional and up to date, the 
+An MDM solution can then leverage health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device’s ability to prove that it’s malware free, its antimalware system is functional and up to date, the
 firewall is running, and the devices patch state is compliant.
 
 Finally, resources can be protected by denying access to endpoints that are unable to prove they’re healthy. This feature is much needed for BYOD devices that need to access organizational resources.
@@ -704,7 +704,7 @@ If the device is not registered, the user will get a message with instructions o
 
 ### <a href="" id="office-365-conditional-access-control-"></a>Office 365 conditional access control
 
-Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company’s device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include additional 
+Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company’s device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include additional
 target groups.
 
 When a user requests access to an Office 365 service from a supported device platform, Azure AD authenticates the user and device from which the user launches the request; and grants access to the service only when the user conforms to the policy set for the service. Users that do not have their device enrolled are given remediation instructions on how to enroll and become compliant to access corporate Office 365 services.

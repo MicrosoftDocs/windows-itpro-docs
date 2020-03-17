@@ -2,7 +2,7 @@
 title: SecurityPolicy CSP
 description: SecurityPolicy CSP
 ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ The SecurityPolicy configuration service provider is used to configure security 
 
 >  **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_SECURITY\_POLICIES capabilities to be accessed from a network configuration application.
 
- 
+
 
 For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
 
@@ -27,7 +27,7 @@ The following diagram shows the SecurityPolicy configuration service provider ma
 
 ![securitypolicy csp (dm,cp)](images/provisioning-csp-securitypolicy-dmandcp.png)
 
-<a href="" id="policyid"></a>***PolicyID***  
+<a href="" id="policyid"></a>***PolicyID***
 Defines the security policy identifier as a decimal value.
 
 The following security policies are supported.
@@ -147,7 +147,7 @@ The following security policies are supported.
 </tbody>
 </table>
 
- 
+
 
 ## Remarks
 
@@ -192,7 +192,7 @@ The following security roles are supported.
 </tbody>
 </table>
 
- 
+
 
 ## OMA Client Provisioning examples
 
@@ -233,7 +233,7 @@ Setting a security policy:
             <Item>
                 <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">int</Format> 
+                    <Format xmlns="syncml:metinf">int</Format>
                 </Meta>
                 <Data>0</Data>
             </Item>
@@ -254,7 +254,7 @@ Querying a security policy:
         <Get>
             <CmdID>1</CmdID>
             <Item>
-            <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target> 
+            <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target>
             </Item>
         </Get>
         <Final/>
@@ -290,16 +290,16 @@ The following table shows the Microsoft custom elements that this Configuration 
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

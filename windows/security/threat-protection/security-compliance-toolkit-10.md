@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/21/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -68,16 +68,16 @@ The Policy Analyzer is a utility for analyzing and comparing sets of Group Polic
 - Compare GPOs against current local policy and local registry settings
 - Export results to a Microsoft Excel spreadsheet
 
-Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
+Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set.
 
 More information on the Policy Analyzer tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-tool-policy-analyzer/ba-p/701049) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
-LGPO.exe is a command-line utility that is designed to help automate management of Local Group Policy. 
-Using local policy gives administrators a simple way to verify the effects of Group Policy settings, and is also useful for managing non-domain-joined systems. 
-LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files, security templates, Advanced Auditing backup files, as well as from formatted “LGPO text” files. 
-It can export local policy to a GPO backup. 
+LGPO.exe is a command-line utility that is designed to help automate management of Local Group Policy.
+Using local policy gives administrators a simple way to verify the effects of Group Policy settings, and is also useful for managing non-domain-joined systems.
+LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files, security templates, Advanced Auditing backup files, as well as from formatted “LGPO text” files.
+It can export local policy to a GPO backup.
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
 Documentation for the LGPO tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/lgpo-exe-local-group-policy-object-utility-v1-0/ba-p/701045) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).

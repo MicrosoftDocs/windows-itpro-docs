@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ---
@@ -34,8 +34,8 @@ Microsoft Defender ATP supports two ways to manage permissions:
 
 > [!NOTE]
 > If you have already assigned basic permissions, you may switch to RBAC anytime. Consider the following before making the switch:
-> 
-> - Users with full access (users that are assigned the Global Administrator or Security Administrator directory role in Azure AD), are automatically assigned the default Microsoft Defender ATP administrator role, which also has full access. Additional Azure AD user groups can be assigned to the Microsoft Defender ATP administrator role after switching to RBAC.  Only users assigned to the Microsoft Defender ATP administrator role can manage permissions using RBAC. 
+>
+> - Users with full access (users that are assigned the Global Administrator or Security Administrator directory role in Azure AD), are automatically assigned the default Microsoft Defender ATP administrator role, which also has full access. Additional Azure AD user groups can be assigned to the Microsoft Defender ATP administrator role after switching to RBAC.  Only users assigned to the Microsoft Defender ATP administrator role can manage permissions using RBAC.
 > - Users that have read-only access (Security Readers) will lose access to the portal until they are assigned a role. Note that only Azure AD user groups can be assigned a role under RBAC.
 > - After switching to RBAC, you will not be able to switch back to using basic permissions management.
 

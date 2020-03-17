@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -17,7 +17,7 @@ ms.author: dansimp
 
 **Applies to**
 -   Windows 7 SP1
--   Windows 10 
+-   Windows 10
 -   Server 2012 R2
 -   Server 2016
 
@@ -33,7 +33,7 @@ You should read and understand the following information before reading this doc
 
 -   [App-V Sequencing Guide](https://www.microsoft.com/download/details.aspx?id=27760)
 
-**Note**  
+**Note**
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk <strong>*</strong> review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
 
 Finally, this document will provide you with the information to configure the computer running App-V client and the environment for optimal performance. Optimize your virtual application packages for performance using the sequencer, and to understand how to use User Experience Virtualization (UE-V) or other user environment management technologies to provide the optimal user experience with App-V in both Remote Desktop Services (RDS) and non-persistent virtual desktop infrastructure (VDI).
@@ -89,7 +89,7 @@ Deployment Environment
 </tbody>
 </table>
 
- 
+
 
 Expected Configuration
 
@@ -110,7 +110,7 @@ Expected Configuration
 </tbody>
 </table>
 
- 
+
 
 IT Administration
 
@@ -127,7 +127,7 @@ IT Administration
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-us"></a>Usage Scenarios
 
@@ -154,7 +154,7 @@ As you review the two scenarios, keep in mind that these approach the extremes. 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-pe"></a>Preparing your Environment
 
@@ -210,7 +210,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+
 
 **Configurations** - For critical App-V Client configurations and for a little more context and how-to, review the following information:
 
@@ -262,7 +262,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+
 
 ### Configure UE-V solution for App-V Approach
 
@@ -276,7 +276,7 @@ For more information, see:
 
 In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
 
-**Note**  
+**Note**
 Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
 
 UE-V will only support removing the .lnk file type from the exclusion list in the RDS and VDI scenarios, where every user’s device will have the same set of applications installed to the same location and every .lnk file is valid for all the users’ devices. For example, UE-V would not currently support the following two scenarios, because the net result will be that the shortcut will be valid on one but not all devices.
@@ -285,10 +285,10 @@ UE-V will only support removing the .lnk file type from the exclusion list in th
 
 -   If a user has an application installed on one device but not another with .lnk files enabled.
 
-**Important**  
+**Important**
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+
 
 Using the Microsoft Registry Editor (regedit.exe), navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **UEV** \\ **Agent** \\ **Configuration** \\ **ExcludedFileTypes** and remove **.lnk** from the excluded file types.
 
@@ -306,12 +306,12 @@ To enable an optimized login experience, for example the App-V approach for the 
 
 -   Attaching and detaching a user profile disk (UPD) or similar technology that contains the user integrations.
 
-    **Note**  
+    **Note**
     App-V is supported when using UPD only when the entire profile is stored on the user profile disk.
 
     App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver does not handle UPD selected folders.
 
-     
+
 
 -   Capturing changes to the locations, which constitute the user integrations, prior to session logoff.
 
@@ -404,7 +404,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+
 
 <table>
 <colgroup>
@@ -429,7 +429,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-plc"></a>Impact to Package Life Cycle
 
@@ -516,7 +516,7 @@ Several App-V features facilitate new scenarios or enable new customer deploymen
 </tbody>
 </table>
 
- 
+
 
 ### Removing FB1
 
@@ -552,10 +552,10 @@ Removing FB1 does not require the original application installer. After completi
 
     "C:\\UpgradedPackages"
 
-    **Note**  
+    **Note**
     This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.
 
-     
+
 
 <table>
 <colgroup>
@@ -582,7 +582,7 @@ Removing FB1 does not require the original application installer. After completi
 </tbody>
 </table>
 
- 
+
 
 ### Creating a new virtual application package on the sequencer
 
@@ -619,7 +619,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 </tbody>
 </table>
 
- 
+
 
 ### Disabling a Dynamic Configuration by using Windows PowerShell
 
@@ -669,7 +669,7 @@ For documentation on How to Apply a Dynamic Configuration, see:
 </tbody>
 </table>
 
- 
+
 
 ### Determining what virtual fonts exist in the package
 

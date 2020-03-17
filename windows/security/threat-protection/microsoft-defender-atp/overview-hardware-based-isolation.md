@@ -1,6 +1,6 @@
 ---
 title: Hardware-based isolation (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 description: Learn about how hardware-based isolation in Windows 10 helps to combat malware.
 search.appverid: met150
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
@@ -21,7 +21,7 @@ ms.date: 09/07/2018
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Microsoft Defender ATP. 
+Hardware-based isolation helps protect system integrity in Windows 10 and is integrated with Microsoft Defender ATP.
 
 | Feature | Description |
 |------------|-------------|

@@ -5,7 +5,7 @@ description: How to use the Security and Privacy Settings page in the IEAK 11 Cu
 author: dansimp
 ms.prod: ie11
 ms.assetid: cb7cd1df-6a79-42f6-b3a1-8ae467053f82
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -34,9 +34,9 @@ The **Security and Privacy Settings** page of the Internet Explorer Customizatio
 
 3.  Click **Next** to go to the [Add a Root Certificate](add-root-certificate-ieak11-wizard.md) page or **Back** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

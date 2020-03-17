@@ -2,7 +2,7 @@
 title: Working with line-of-business apps (Windows 10)
 description: Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your organization – they might be internal business apps, or apps specific to your school, business, or industry.
 ms.assetid: 95EB7085-335A-447B-84BA-39C26AEB5AC7
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -30,7 +30,7 @@ One advantage of making apps available through Microsoft Store for Business is t
 
 ## <a href="" id="adding-lob-apps"></a>Adding LOB apps to your private store
 
-Admins and ISVs each own different parts of the process for getting LOB apps created, submitted, and deployed to your employees or students. Admins use Microsoft Store for Business  or Microsoft Store for Education portal; ISVs or devs use the Windows Dev center on MSDN. 
+Admins and ISVs each own different parts of the process for getting LOB apps created, submitted, and deployed to your employees or students. Admins use Microsoft Store for Business  or Microsoft Store for Education portal; ISVs or devs use the Windows Dev center on MSDN.
 
 Here’s what’s involved:
 -   Microsoft Store for Business admin invites a developer or ISV to become an LOB publisher for your company.
@@ -53,10 +53,10 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
 2. Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
 3. On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
- 
+
    >[!Note]
    > This needs to be the email address listed in contact info for the developer account.
-  
+
 ## <a href="" id="submit-lob-app"></a>Submit apps (LOB publisher)
 
 The developer receives an email invite to become an LOB publisher for your company. Once they accept the invite, they can log in to the Windows Dev Center to create an app submission for your company. The info here assumes that devs or ISVs have an active developer account.
@@ -84,7 +84,7 @@ After an app is published and available in the Store, ISVs publish an updated ve
 5.  Click **Save** to save your changes and start the app submission process.
 
 For more information, see [Organizational licensing options]( https://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](https://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
- 
+
  >[!Note]
  > In order to get the LOB app, the organization must be located in a [supported market](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
 

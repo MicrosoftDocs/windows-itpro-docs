@@ -1,6 +1,6 @@
 ---
 title: Configure a PXE server to load Windows PE (Windows 10)
-description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network. 
+description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
 keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: greg-lindsay
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 audience: itpro
 author: greg-lindsay
@@ -55,7 +55,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
 
     The script creates the destination directory structure and copies all the necessary files for that architecture. In the previous example, the following directories are created:
-    
+
     ```
     C:\winpe_amd64
     C:\winpe_amd64\fwfiles
@@ -67,7 +67,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     Dism /mount-image /imagefile:c:\winpe_amd64\media\sources\boot.wim /index:1 /mountdir:C:\winpe_amd64\mount
     ```
-    Verify that "The operation completed successfully" is displayed. Note: To view currently mounted images, type **dism /get-MountedWiminfo**. 
+    Verify that "The operation completed successfully" is displayed. Note: To view currently mounted images, type **dism /get-MountedWiminfo**.
 
 5. Map a network share to the root TFTP directory on the PXE/TFTP server and create a \Boot folder. Consult your TFTP server documentation to determine the root TFTP server directory, then enable sharing for this directory, and verify it can be accessed on the network. In the following example, the PXE server name is PXE-1 and the TFTP root directory is shared using a network path of **\\\PXE-1\TFTPRoot**:
 
@@ -114,16 +114,16 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     The last command will return a GUID, for example:
     ```
-    The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created. 
+    The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created.
     ```
     Copy this GUID for use in the next set of commands. In each command shown, replace "GUID1" with your GUID.
 
 3.  Create a new boot application entry for the Windows PE image:
 
     ```
-    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
-    bcdedit /store c:\BCD /set {GUID1} path \windows\system32\winload.exe 
-    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
+    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
+    bcdedit /store c:\BCD /set {GUID1} path \windows\system32\winload.exe
+    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
     bcdedit /store c:\BCD /set {GUID1} systemroot \windows
     bcdedit /store c:\BCD /set {GUID1} detecthal Yes
     bcdedit /store c:\BCD /set {GUID1} winpe Yes
@@ -132,7 +132,7 @@ All four of the roles specified above can be hosted on the same computer or each
 
     ```
     bcdedit /store c:\BCD /create {bootmgr} /d "boot manager"
-    bcdedit /store c:\BCD /set {bootmgr} timeout 30 
+    bcdedit /store c:\BCD /set {bootmgr} timeout 30
     bcdedit /store c:\BCD -displayorder {GUID1} -addlast
     ```
 5.  Copy the BCD file to your TFTP server:
@@ -171,7 +171,7 @@ ramdisksdipath          \Boot\boot.sdi
 ```
 
 >[!TIP]
->If you start the PXE boot process, but receive the error that "The boot configuration data for your PC is missing or contains errors" then verify that \\boot directory is installed under the correct TFTP server root directory.  In the example used here the name of this directory is TFTPRoot, but your TFTP server might be different. 
+>If you start the PXE boot process, but receive the error that "The boot configuration data for your PC is missing or contains errors" then verify that \\boot directory is installed under the correct TFTP server root directory.  In the example used here the name of this directory is TFTPRoot, but your TFTP server might be different.
 
 ## PXE boot process summary
 
@@ -187,7 +187,7 @@ The following summarizes the PXE client boot process.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
 8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. Using these tools together with a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
-See Also 
+See Also
 ---------
 
 #### Concepts

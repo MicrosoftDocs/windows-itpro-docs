@@ -2,7 +2,7 @@
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +19,7 @@ Below is a list of some of the new and updated features included in  the initial
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
- 
+
 
 ## Deployment
 
@@ -284,7 +284,7 @@ Enterprises have the following identity and management choices.
 
 **Note:** With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
- 
+
 ### Device lockdown
 
 
@@ -356,9 +356,9 @@ We also recommend that you upgrade to IE11 if you're running any earlier version
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 
 
- 
 
- 
+
+
 
 
 

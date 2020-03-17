@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -32,14 +32,14 @@ ms.topic: include
 
 #### ADMX info
 - **GP English name:** Allow a shared Books folder
-- **GP name:** UseSharedFolderForBooks 
+- **GP name:** UseSharedFolderForBooks
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
 - **MDM name:** Browser/[UseSharedFolderForBooks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks
 - **Data type:** Integer
 
 #### Registry settings
@@ -47,7 +47,7 @@ ms.topic: include
 - **Value name:** UseSharedFolderForBooks
 - **Value type:** REG_DWORD
 
-### Related policies 
+### Related policies
 
 **Allow a Windows app to share application data between users:** [!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
 

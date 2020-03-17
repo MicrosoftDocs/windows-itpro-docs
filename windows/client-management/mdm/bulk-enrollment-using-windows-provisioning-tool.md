@@ -1,11 +1,11 @@
 ---
 title: Bulk enrollment
 description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.bulk\_enrollment'
   - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
 ms.assetid: DEB98FF3-CC5C-47A1-9277-9EF939716C87
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -162,7 +162,7 @@ Here are links to step-by-step provisioning topics in Technet.
 -   [Provision PCs with apps and certificates for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-with-apps-and-certificates)
 -   [Provision PCs with common settings for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment)
 
- 
+
 
 
 

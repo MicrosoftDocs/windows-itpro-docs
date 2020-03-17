@@ -8,7 +8,7 @@ ms.prod: ie11
 title: Add employees to the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -48,15 +48,15 @@ The available roles are:
 3. Fill out the fields for each employee, including:
 
    - **Email.** Add the employee's email address.
-   
+
    - **Name.** This box autofills based on the email address.
-   
+
    - **Role.** Pick a single role for the employee, based on the list above.
-   
+
    - **Group name.** Pick the name of the employee's group. The group association also assigns a group of Approvers.
-   
+
    - **Comments.** Add optional comments about the employee.
-   
+
    - **Active.** Click the check box to make the employee active in the system. If you want to keep the employee in the system, but you want to prevent access, clear this check box.
 
 4. Click **Save**.

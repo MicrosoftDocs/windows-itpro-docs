@@ -1,5 +1,5 @@
 ---
-title: Create an onboarding or offboarding notification rule 
+title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
+Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified.
 
 ## Before you begin
 You'll need to have access to:
@@ -33,7 +33,7 @@ You'll need to have access to:
 
 1. In [flow.microsoft.com](https://flow.microsoft.com/).
 
-2. Navigate to **My flows > New > Scheduled - from blank**. 
+2. Navigate to **My flows > New > Scheduled - from blank**.
 
     ![Image of flow](images/new-flow.png)
 
@@ -45,7 +45,7 @@ You'll need to have access to:
 
     ![Image of the notification flow](images/build-flow.png)
 
-4. Select the + button to add a new action. The new action will be an HTTP request to the Microsoft Defender ATP security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
+4. Select the + button to add a new action. The new action will be an HTTP request to the Microsoft Defender ATP security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines").
 
     ![Image of recurrence and add action](images/recurrence-add.png)
 
@@ -64,7 +64,7 @@ You'll need to have access to:
     ![Image of the HTTP conditions](images/http-conditions.png)
 
 
-6. Add a new step by selecting **Add new action** then search for **Data Operations** and select 
+6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
 
     ![Image of data operations](images/data-operations.png)
@@ -169,9 +169,9 @@ You'll need to have access to:
 
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    ![Image of apply to each condition](images/apply-to-each-value.png)  
-    ![Image of condition](images/conditions-2.png) 
-    ![Image of condition](images/condition3.png)  
+    ![Image of apply to each condition](images/apply-to-each-value.png)
+    ![Image of condition](images/conditions-2.png)
+    ![Image of condition](images/condition3.png)
     ![Image of send email](images/send-email.png)
 
 ## Alert notification
@@ -184,16 +184,16 @@ The following image is an example of an email notification.
 
 - You can filter here using lastSeen only:
     - Every 60 min:
-      - Take all devices last seen in the past 7 days. 
+      - Take all devices last seen in the past 7 days.
 
-- For each device: 
+- For each device:
     - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility.
     - If first seen is on the past hour -> Alert for onboarding.
 
 In this solution you will not have duplicate alerts:
 There are tenants that have numerous devices. Getting all those devices might be very expensive and might require paging.
 
-You can split it to two queries: 
+You can split it to two queries:
 1.	For offboarding take only this interval using the OData $filter and only notify if the conditions are met.
-2.	Take all devices last seen in the past hour and check first seen property for them (if the first seen property is on the past hour, the last seen must be there too). 
+2.	Take all devices last seen in the past hour and check first seen property for them (if the first seen property is on the past hour, the last seen must be there too).
 

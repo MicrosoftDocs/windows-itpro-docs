@@ -2,7 +2,7 @@
 title: Plan for AppLocker policy management (Windows 10)
 description: This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -66,7 +66,7 @@ For steps to display a custom URL for the message, see [Display a custom URL mes
 
 **AppLocker event management**
 
-Each time that a process requests permission to run, AppLocker creates an event in the AppLocker event log. The event details which file tried to run, the attributes of that file, the user that initiated the request, and the rule GUID that was used to make the AppLocker execution decision. The 
+Each time that a process requests permission to run, AppLocker creates an event in the AppLocker event log. The event details which file tried to run, the attributes of that file, the user that initiated the request, and the rule GUID that was used to make the AppLocker execution decision. The
 AppLocker event log is located in the following path: **Applications and Services Logs\\Microsoft\\Windows\\AppLocker**. The AppLocker log includes three logs:
 
 1.  **EXE and DLL**. Contains events for all files affected by the executable and DLL rule collections (.exe, .com, .dll, and .ocx).
@@ -82,7 +82,7 @@ As new apps are deployed or existing apps are updated by the software publisher,
 You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more info about Advanced Group Policy Management, see [Advanced Group Policy Management Overview](https://go.microsoft.com/fwlink/p/?LinkId=145013) (https://go.microsoft.com/fwlink/p/?LinkId=145013).
 
 >**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
- 
+
 **New version of a supported app**
 
 When a new version of an app is deployed in the organization, you need to determine whether to continue to support the previous version of that app. To add the new version, you might only need to create a new rule for each file that is associated with the app. If you are using publisher conditions and the version is not specified, then the existing rule or rules might be sufficient to allow the updated file to run. You must ensure, however, that the updated app has not altered the file names or added files to support new functionality. If so, then you must modify the existing rules or create new rules. To continue to reuse a publisher-based rule without a specific file version, you must also ensure that the file's digital signature is still identical to the previous version—the publisher, product name, and file name (if configured in your rule) must all match for the rule to be correctly applied.
@@ -233,7 +233,7 @@ The following table contains the added sample data that was collected when deter
 </tr>
 </tbody>
 </table>
- 
+
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
 
 **Event processing policy**
@@ -276,7 +276,7 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
- 
+
 <strong>Policy maintenance policy</strong>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.

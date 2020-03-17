@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -31,7 +31,7 @@ Use to configure device management settings.
 1. In **Available customizations**, select **Accounts**, enter a friendly name for the account, and then click **Add**.
 2. In **Available customizations**, select the account that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | **Address** | Enter the OMA DM server address  |
 | **AddressType** | Choose between **IPv4** and **URI** for the type of OMA DM server address. The default value of **URI** specifies that the OMA DM account address is a URI address. A value of **IPv4** specifies that the OMA DM account address is an IP address. |
@@ -61,9 +61,9 @@ Use to configure device management settings.
 
 1. In **Available customizations**, select **PGList**, enter a LogicalProxyName, and then click **Add**.
 2. In **Available customizations**, select the LogicalProxyName that you just created, and then select **PhysicalProxies**.
-3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**. 
+3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | Address | Enter the address of the physical proxy |
 | AddressType | Select between **E164**, **IPV4**, and **IPV^** for the format and protocol of the PXADDR element for a physical proxy |

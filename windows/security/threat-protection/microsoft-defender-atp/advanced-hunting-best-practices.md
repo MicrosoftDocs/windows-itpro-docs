@@ -13,7 +13,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -25,7 +25,7 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Optimize query performance
-Apply these recommendations to get results faster and avoid timeouts while running complex queries. 
+Apply these recommendations to get results faster and avoid timeouts while running complex queries.
 - When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
 - Use time filters first. Ideally, limit your queries to seven days.
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
@@ -75,13 +75,13 @@ DeviceProcessEvents
 
 // Better query - filters on filename, does case-insensitive matches
 DeviceProcessEvents
-| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc"
 
 // Best query also ignores quotes
 DeviceProcessEvents
 | where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc"
 ```
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)

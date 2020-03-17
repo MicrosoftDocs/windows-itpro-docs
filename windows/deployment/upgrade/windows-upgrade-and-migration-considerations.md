@@ -2,7 +2,7 @@
 title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Windows Upgrade and Migration Considerations
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -58,7 +58,7 @@ Changing the ACLs may affect the performance of Windows Setup if the default Wi
 
 ``` syntax
 Key: HKLM\System\Setup
-Type: REG_DWORD 
+Type: REG_DWORD
 Value: "DDACLSys_Disabled" = 1
 ```
 
@@ -70,9 +70,9 @@ This feature is disabled if this registry key value exists and is configured to�
 [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 
 
- 
 
- 
+
+
 
 
 

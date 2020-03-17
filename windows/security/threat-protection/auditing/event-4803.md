@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,27 +36,27 @@ This event is generated when screen saver was dismissed.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4803</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12551</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-11T00:19:09.576094500Z" /> 
- <EventRecordID>237663</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="504" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4803</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12551</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-11T00:19:09.576094500Z" />
+ <EventRecordID>237663</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="504" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x759a9</Data> 
- <Data Name="SessionId">3</Data> 
+ <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x759a9</Data>
+ <Data Name="SessionId">3</Data>
  </EventData>
  </Event>
 

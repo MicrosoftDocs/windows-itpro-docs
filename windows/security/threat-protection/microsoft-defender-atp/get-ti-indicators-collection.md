@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## API description
@@ -31,7 +31,7 @@ Retrieves a collection of all active [Indicators](ti-indicator.md).
 
 
 ## Limitations
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
@@ -133,7 +133,7 @@ Content-type: application/json
 
 **Request**
 
-Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
+Here is an example of a request that gets all Indicators with 'AlertAndBlock' action
 
 ```
 GET https://api.securitycenter.windows.com/api/indicators?$filter=action+eq+'AlertAndBlock'

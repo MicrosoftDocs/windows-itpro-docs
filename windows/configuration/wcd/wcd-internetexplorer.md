@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -56,17 +56,17 @@ The following header names are reserved and must not be overwritten:
 - USER-AGENT
 - X-WAP-PROFILE
 
-1. In **Available customizations**, select **CustomHTTPHeaders**, enter a name, and then click **Add**. 
-2. In **Available customizations**, select the name that you just created. 
+1. In **Available customizations**, select **CustomHTTPHeaders**, enter a name, and then click **Add**.
+2. In **Available customizations**, select the name that you just created.
 3. Enter the custom header.
 
 ## CustomUserAgentString
 
 The user agent string indicates which browser you are using, its version number, and details about your system, such as operating system and version. A web server can use this information to provide content that is tailored for your specific browser and phone.
 
-The user agent string for the browser cannot be modified. By default, the string has the following format: 
+The user agent string for the browser cannot be modified. By default, the string has the following format:
 
-`Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; <Manufacturer>; <Device>) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10166` 
+`Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; <Manufacturer>; <Device>) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10166`
 
 - `<Manufacturer>` is automatically replaced with the OEM name. This is the same as the PhoneManufacturer setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.
 - `<Device>` is replaced with the device name or phone name. This is the same as the PhoneModelName setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.

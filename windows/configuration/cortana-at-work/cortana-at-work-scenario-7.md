@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 10/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 
 This optional scenario helps you to protect your organization’s data on a device, based on an inspection by Cortana.
 
-## Use Cortana and WIP to protect your organization’s data 
+## Use Cortana and WIP to protect your organization’s data
 
 1. Create and deploy an WIP policy to your organization. For info about how to do this, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
 

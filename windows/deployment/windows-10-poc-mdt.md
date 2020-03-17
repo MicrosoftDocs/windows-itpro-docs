@@ -8,7 +8,7 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -24,7 +24,7 @@ ms.topic: article
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
+**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide:
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 
 Please complete all steps in the prerequisite guide before starting this guide. This guide requires about 5 hours to complete, but can require less time or more time depending on the speed of the Hyper-V host. After completing the current guide, also see the companion guide:
@@ -63,10 +63,10 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 ## About MDT
 
-MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch Installation (ZTI), and User-Driven Installation (UDI) deployment methods. 
+MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch Installation (ZTI), and User-Driven Installation (UDI) deployment methods.
 - LTI is the deployment method used in the current guide, requiring only MDT and performed with a minimum amount of user interaction.
 - ZTI is fully automated, requiring no user interaction and is performed using MDT and Microsoft Endpoint Configuration Manager. After completing the steps in the current guide, see [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md) to use the ZTI deployment method in the PoC environment.
-- UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and Microsoft Endpoint Configuration Manager. 
+- UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and Microsoft Endpoint Configuration Manager.
 
 ## Install MDT
 
@@ -121,7 +121,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 9. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
 
-10. Use the following settings for the Import Operating System Wizard: 
+10. Use the following settings for the Import Operating System Wizard:
     - OS Type: **Full set of source files**<BR>
     - Source: **D:\\** <BR>
     - Destination: **W10Ent_x64**<BR>
@@ -157,7 +157,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 16. Under **Select the roles and features that should be installed**, select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** and then click **Apply**.
 
 17. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
-    
+
     >Note: Since we are not installing applications in this test lab, there is no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you are also installing applications.
 
 18. Click **OK** to complete editing the task sequence.
@@ -235,8 +235,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     vmconnect localhost REFW10X64-001
 	</pre>
     </div>
-    
-    The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
+
+    The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file.
 
 27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
 
@@ -275,7 +275,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 6. On the Image page, browse to the **C:\MDTBuildLab\Captures\REFW10X64-001.wim** file created in the previous procedure, click **Open**, and then click **Next**.
 
-7. On the Setup page, select **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path**. 
+7. On the Setup page, select **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path**.
 
 8. Under **Setup source directory**, browse to **C:\MDTBuildLab\Operating Systems\W10Ent_x64** click **OK** and then click **Next**.
 
@@ -300,8 +300,8 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     - Full Name: Contoso
     - Organization: Contoso
     - Internet Explorer home page: http://www.contoso.com
-    - Admin Password: pass@word1 
-    
+    - Admin Password: pass@word1
+
 ### Configure the MDT production deployment share
 
 1. On SRV1, open an elevated Windows PowerShell prompt and type the following commands:
@@ -309,7 +309,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\Bootstrap.ini" C:\MDTProd\Control\Bootstrap.ini -Force
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\CustomSettings.ini" C:\MDTProd\Control\CustomSettings.ini -Force
-    ``` 
+    ```
 2. In the Deployment Workbench console on SRV1, right-click the **MDT Production** deployment share and then click **Properties**.
 
 3. Click the **Rules** tab and replace the rules with the following text (don't click OK yet):
@@ -317,7 +317,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
     [Settings]
     Priority=Default
-    
+
     [Default]
     _SMSTSORGNAME=Contoso
     OSInstall=YES
@@ -351,11 +351,11 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     EventService=http://SRV1:9800
     ```
     **Note**: The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
-    
+
     >In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
     If desired, edit the follow line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (ue) all users except for CONTOSO users specified by the user include option (ui):
-    
+
     ```
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     ```
@@ -364,7 +364,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     ```
     ScanStateArgs=/all
-    ```   
+    ```
 
     For more information, see [ScanState Syntax](https://technet.microsoft.com/library/cc749015.aspx).
 
@@ -373,7 +373,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
     [Settings]
     Priority=Default
-    
+
     [Default]
     DeployRoot=\\SRV1\MDTProd$
     UserDomain=CONTOSO
@@ -381,7 +381,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```
-5. Click **OK** when finished. 
+5. Click **OK** when finished.
 
 ### Update the deployment share
 
@@ -418,10 +418,10 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 ### Deploy the client image
 
-1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. 
+1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway.
 
     >**Note**: Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, type **Get-NetIPAddress | ft interfacealias, ipaddress**
-    
+
     Assuming the external interface is named "Ethernet 2", to disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
     ```
@@ -457,7 +457,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
 8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator.
-    
+
     ![finish](images/deploy-finish.png)
 
 
@@ -465,10 +465,10 @@ This completes the demonstration of how to deploy a reference image to the netwo
 
 ## Refresh a computer with Windows 10
 
-This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
+This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md).
 
 1. If the PC1 VM is not already running, then start and connect to it:
-    
+
     ```
     Start-VM PC1
     vmconnect localhost PC1
@@ -521,7 +521,7 @@ This section will demonstrate how to export user data from an existing client co
     Start-VM PC1
     vmconnect localhost PC1
     ```
-    
+
 11. Sign in to PC1 using the contoso\administrator account.
 
 ## Replace a computer with Windows 10
@@ -574,7 +574,7 @@ At a high level, the computer replace process consists of:<BR>
     - **Task Sequence**: Backup Only Task Sequence
     - **User Data**: Specify a location: **\\\\SRV1\MigData$\PC1**
     - **Computer Backup**: Do not back up the existing computer.
-5. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
+5. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.
 6. On PC1, verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
 7. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
 
@@ -587,7 +587,7 @@ At a high level, the computer replace process consists of:<BR>
     ----                -------------     ------ ----
     -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
     ```
-   ### Deploy PC3 
+   ### Deploy PC3
 
 8. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
 
@@ -649,7 +649,7 @@ Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-
 [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741)<BR>
 [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 
- 
+
 
 
 

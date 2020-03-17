@@ -2,7 +2,7 @@
 title: Add a Windows 10 operating system image using Configuration Manager (Windows 10)
 description: Operating system images are typically the production image used for deployment throughout the organization.
 ms.assetid: 77f769cc-1a47-4f36-8082-201cd77b8d3b
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: image, deploy, distribute
@@ -27,7 +27,7 @@ Operating system images are typically the production image used for deployment t
 
 For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-- CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
+- CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.
 
 An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
@@ -56,7 +56,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 
     The distributed Windows 10 Enterprise x64 RTM package.
 
-Next, see [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md). 
+Next, see [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md).
 
 ## Related topics
 

@@ -2,7 +2,7 @@
 title: App inventory management for Microsoft Store for Business and Microsoft Store for Education (Windows 10)
 description: You can manage all apps that you've acquired on your Apps & Software page.
 ms.assetid: 44211937-801B-4B85-8810-9CA055CDB1B2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -21,7 +21,7 @@ ms.date: 10/23/2018
 -   Windows 10
 -   Windows 10 Mobile
 
-You can manage all apps that you've acquired on your **Apps & software** page. This page shows all of the content you've acquired, including apps that from Microsoft Store, and line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role. 
+You can manage all apps that you've acquired on your **Apps & software** page. This page shows all of the content you've acquired, including apps that from Microsoft Store, and line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role.
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
@@ -71,7 +71,7 @@ Each app in the Store for Business has an online, or an offline license. For mor
 The actions in the table are how you distribute apps, and manage app licenses. We'll cover those in the next sections. Working with offline-licensed apps has different steps. For more information on distributing offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
 
 ## Assign apps
-For online-licensed apps, you can assign apps directly to people in your organization.  
+For online-licensed apps, you can assign apps directly to people in your organization.
 
 **To assign an app to an employee**
 
@@ -128,11 +128,11 @@ On the details page for each app, you can directly assign an app to a user, or f
 - Everyone - The app is available to anyone in your organization
 - Specific groups - The app is available to all users in assigned security groups
 
-**To assign security groups to an app** 
+**To assign security groups to an app**
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2. Click **Manage**, and then choose **Products & services**.
 3. Find an app, choose the ellipses, and then choose **View license details**.
-4. Click **Private store availability**, select **Specific groups**, and then click **Assign groups**. 
+4. Click **Private store availability**, select **Specific groups**, and then click **Assign groups**.
 5. Enter a name or email address for the security group you want to use, and then click **Add groups**.
 
 ## Manage app licenses

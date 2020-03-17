@@ -2,7 +2,7 @@
 title: Block untrusted fonts in an enterprise (Windows 10)
 description: To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature.
 ms.assetid: a3354c8e-4208-4be6-bc19-56a572c361b4
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: font blocking, untrusted font blocking, block fonts, untrusted fonts
 ms.prod: w10
@@ -58,7 +58,7 @@ Use Group Policy or the registry to turn this feature on, off, or to use audit m
 
 2. Click **Enabled** to turn the feature on, and then click one of the following **Migitation Options**:
 
-    - **Block untrusted fonts and log events.** Turns the feature on, blocking untrusted fonts and logging installation attempts to the event log. 
+    - **Block untrusted fonts and log events.** Turns the feature on, blocking untrusted fonts and logging installation attempts to the event log.
 
     - **Do not block untrusted fonts.** Turns the feature on, but doesn't block untrusted fonts nor does it log installation attempts to the event log.
 
@@ -73,7 +73,7 @@ To turn this feature on, off, or to use audit mode:
 
 2. If the **MitigationOptions** key isn't there, right-click and add a new **QWORD (64-bit) Value**, renaming it to **MitigationOptions**.
 
-3. Right click on the **MitigationOptions** key, and then click **Modify**. 
+3. Right click on the **MitigationOptions** key, and then click **Modify**.
 
     The **Edit QWORD (64-bit) Value** box opens.
 
@@ -86,7 +86,7 @@ To turn this feature on, off, or to use audit mode:
    - **To audit with this feature.** Type **3000000000000**.
 
      >[!Important]
-     >Your existing **MitigationOptions** values should be saved during your update. For example, if the current value is *1000*, your updated value should be *1000000001000*. 
+     >Your existing **MitigationOptions** values should be saved during your update. For example, if the current value is *1000*, your updated value should be *1000000001000*.
 
 5. Restart your computer.
 
@@ -104,7 +104,7 @@ After you turn this feature on, or start using Audit mode, you can look at your 
     FontType: Memory<br>
     FontPath:<br>
     Blocked: true
-    
+
     >[!NOTE]
     >Because the **FontType** is *Memory*, there’s no associated **FontPath**.
 
@@ -113,7 +113,7 @@ After you turn this feature on, or start using Audit mode, you can look at your 
     FontType: File<br>
     FontPath: `\??\C:\PROGRAM FILES (X86)\COMMON FILES\MICROSOFT SHARED\EQUATION\MTEXTRA.TTF`<br>
     Blocked: true
-    
+
     >[!NOTE]
     >Because the **FontType** is *File*, there’s also an associated **FontPath**.
 
@@ -122,7 +122,7 @@ After you turn this feature on, or start using Audit mode, you can look at your 
     FontType: Memory<br>
     FontPath:<br>
     Blocked: false
-    
+
     >[!NOTE]
     >In Audit mode, the problem is recorded, but the font isn’t blocked.
 
@@ -141,11 +141,11 @@ After you figure out the problematic fonts, you can try to fix your apps in 2 wa
 
 2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using the steps in the [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature) section of this topic.
 
- 
+
 ## Related content
 
 - [Dropping the “Untrusted Font Blocking” setting](https://blogs.technet.microsoft.com/secguide/2017/06/15/dropping-the-untrusted-font-blocking-setting/)
- 
+
 
 
 

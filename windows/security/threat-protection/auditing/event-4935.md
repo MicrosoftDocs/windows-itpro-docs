@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,24 +36,24 @@ This event generates when Active Directory replication failure begins.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4935</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14083</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-27T18:54:48.758149800Z" /> 
- <EventRecordID>1552</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="504" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>Win2012r2.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4935</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14083</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-27T18:54:48.758149800Z" />
+ <EventRecordID>1552</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="504" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>Win2012r2.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ReplicationEvent">1</Data> 
- <Data Name="AuditStatusCode">8419</Data> 
+ <Data Name="ReplicationEvent">1</Data>
+ <Data Name="AuditStatusCode">8419</Data>
  </EventData>
  </Event>
 

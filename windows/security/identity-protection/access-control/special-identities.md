@@ -13,7 +13,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Special Identities
@@ -91,7 +91,7 @@ The special identity groups are described in the following tables:
 Any user who accesses the system through an anonymous logon has the Anonymous Logon identity. This identity allows anonymous access to resources, such as a web page that is published on corporate servers. The Anonymous Logon group is not a member of the Everyone group by default.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-7 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -103,7 +103,7 @@ Any user who accesses the system through an anonymous logon has the Anonymous Lo
 Any user who accesses the system through a sign-in process has the Authenticated Users identity. This identity allows access to shared resources within the domain, such as files in a shared folder that should be accessible to all the workers in the organization. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-11 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=System,cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -115,7 +115,7 @@ Any user who accesses the system through a sign-in process has the Authenticated
 Any user or process that accesses the system as a batch job (or through the batch queue) has the Batch identity. This identity allows batch jobs to run scheduled tasks, such as a nightly cleanup job that deletes temporary files. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-3 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -129,7 +129,7 @@ The person who created the file or the directory is a member of this special ide
 A placeholder security identifier (SID) is created in an inheritable access control entry (ACE). When the ACE is inherited, the system replaces this SID with the SID for the primary group of the object’s current owner. The primary group is used only by the Portable Operating System Interface for UNIX (POSIX) subsystem.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-3-1 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -141,7 +141,7 @@ A placeholder security identifier (SID) is created in an inheritable access cont
 The person who created the file or the directory is a member of this special identity group. Windows Server operating systems use this identity to automatically grant access permissions to the creator of a file or directory. A placeholder SID is created in an inheritable ACE. When the ACE is inherited, the system replaces this SID with the SID for the object’s current owner.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-3-0 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -153,21 +153,21 @@ The person who created the file or the directory is a member of this special ide
 Any user who accesses the system through a dial-up connection has the Dial-Up identity. This identity distinguishes dial-up users from other types of authenticated users.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-1 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
-|Default User Rights| none| 
+|Default User Rights| none|
 
 ## Digest Authentication
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-64-21 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
-|Default User Rights| none| 
+|Default User Rights| none|
 
 ## Enterprise Domain Controllers
 
@@ -175,7 +175,7 @@ Any user who accesses the system through a dial-up connection has the Dial-Up id
 This group includes all domain controllers in an Active Directory forest. Domain controllers with enterprise-wide roles and responsibilities have the Enterprise Domain Controllers identity. This identity allows them to perform certain tasks in the enterprise by using transitive trusts. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-9 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -191,7 +191,7 @@ On computers running Windows 2000 and earlier, the Everyone group included the 
 Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-1-0 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -203,7 +203,7 @@ Membership is controlled by the operating system.
 Any user who is logged on to the local system has the Interactive identity. This identity allows only local users to access a resource. Whenever a user accesses a given resource on the computer to which they are currently logged on, the user is automatically added to the Interactive group. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-4 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -215,7 +215,7 @@ Any user who is logged on to the local system has the Interactive identity. This
 The Local Service account is similar to an Authenticated User account. The Local Service account has the same level of access to resources and objects as members of the Users group. This limited access helps safeguard your system if individual services or processes are compromised. Services that run as the Local Service account access network resources as a null session with anonymous credentials. The name of the account is NT AUTHORITY\\LocalService. This account does not have a password.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-19 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -228,7 +228,7 @@ This is a service account that is used by the operating system. The LocalSystem 
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-18 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -239,7 +239,7 @@ This is a service account that is used by the operating system. The LocalSystem 
 This group implicitly includes all users who are logged on through a network connection. Any user who accesses the system through a network has the Network identity. This identity allows only remote users to access a resource. Whenever a user accesses a given resource over the network, the user is automatically added to the Network group. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-2 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -251,7 +251,7 @@ This group implicitly includes all users who are logged on through a network con
 The Network Service account is similar to an Authenticated User account. The Network Service account has the same level of access to resources and objects as members of the Users group. This limited access helps safeguard your system if individual services or processes are compromised. Services that run as the Network Service account access network resources by using the credentials of the computer account. The name of the account is NT AUTHORITY\\NetworkService. This account does not have a password.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-20 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -261,7 +261,7 @@ The Network Service account is similar to an Authenticated User account. The Net
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-64-10 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -273,7 +273,7 @@ The Network Service account is similar to an Authenticated User account. The Net
 This group implicitly includes all users who are logged on to the system through a dial-up connection. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-1000 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -285,7 +285,7 @@ This group implicitly includes all users who are logged on to the system through
 This identify is a placeholder in an ACE on a user, group, or computer object in Active Directory. When you grant permissions to Principal Self, you grant them to the security principal that is represented by the object. During an access check, the operating system replaces the SID for Principal Self with the SID for the security principal that is represented by the object.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-10 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -297,7 +297,7 @@ This identify is a placeholder in an ACE on a user, group, or computer object in
 This identity represents all users who are currently logged on to a computer by using a Remote Desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-14|
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -309,7 +309,7 @@ This identity represents all users who are currently logged on to a computer by 
 Users and computers with restricted capabilities have the Restricted identity. This identity group is used by a process that is running in a restricted security context, such as running an application with the RunAs service. When code runs at the Restricted security level, the Restricted SID is added to the user’s access token.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-12 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -319,7 +319,7 @@ Users and computers with restricted capabilities have the Restricted identity. T
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-64-14 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -332,7 +332,7 @@ Any service that accesses the system has the Service identity. This identity gro
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-6 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -344,7 +344,7 @@ Any service that accesses the system has the Service identity. This identity gro
 Any user accessing the system through Terminal Services has the Terminal Server User identity. This identity allows users to access Terminal Server applications and to perform other necessary tasks with Terminal Server services. Membership is controlled by the operating system.
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-13 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
@@ -354,16 +354,16 @@ Any user accessing the system through Terminal Services has the Terminal Server 
 
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | S-1-5-15 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
-|Default User Rights| None | 
+|Default User Rights| None |
 
 ## Window Manager\\Window Manager Group
 
 | **Attribute** | **Value** |
-|  :--: | :--: | 
+|  :--: | :--: |
 | Well-Known SID/RID | |
 |Object Class| |
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|

@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -22,10 +22,10 @@ Use UnifiedWriteFilter to configure settings for the Unified Write Filter (UWF) 
 
 UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
-The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume. 
+The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume.
 
 >[!NOTE]
->UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume. 
+>UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
 
 [Learn more about the Unified Write Filter feature.](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
 
@@ -42,7 +42,7 @@ Set to **True** to enable UWF.
 
 ## OverlayFlags
 
-OverlayFlags specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file. 
+OverlayFlags specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file.
 
 - Value `0` (default value when [OverlayType](#overlaytype) is not **Disk**): writes are redirected to the overlay file
 - Value `1`(default value when [OverlayType](#overlaytype) is  **Disk**): writes to unused space on the volume are allowed to pass through without being redirected to the overlay file.
@@ -56,7 +56,7 @@ Enter the maximum overlay size, in megabytes (MB), for the UWF overlay. The mini
 
 ## OverlayType
 
-OverlayType specifies where the overlay is stored. Select between **RAM** (default) and **Disk** (pre-allocated file on the system volume). 
+OverlayType specifies where the overlay is stored. Select between **RAM** (default) and **Disk** (pre-allocated file on the system volume).
 
 ## RegistryExclusions
 
@@ -72,7 +72,7 @@ Set to **True** to reset UWF settings to the original state that was captured at
 
 ## Volumes
 
-Enter a drive letter for a volume to be protected by UWF. 
+Enter a drive letter for a volume to be protected by UWF.
 
 >[!NOTE]
 >In the current OS release, Windows Configuration Designer contains a validation bug. To work around this issue, you must include a ":" after the drive letter when specifying the value for the setting. For example, if you are specifying the C drive, you must set DriveLetter to "C:" instead of just "C".

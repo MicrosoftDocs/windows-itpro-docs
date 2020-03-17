@@ -2,7 +2,7 @@
 title: AllJoynManagement CSP
 description: The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus.
 ms.assetid: 468E0EE5-EED3-48FF-91C0-89F9D159AA8C
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 06/26/2017
 
 The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus. The devices must support the Microsoft AllJoyn configuration interface (com.microsoft.alljoynmanagement.config). You can also push configuration files to the same devices. To populate the various nodes when setting new configuration, we recommend that you do a query first, to get the actual values for all the nodes in all the attached devices. You can then use the information from the query to set the node values when pushing the new configuration.
 
-> **Note**  
+> **Note**
 The AllJoynManagement configuration service provider (CSP) is only supported in Windows 10 IoT Core (IoT Core).
 
 This CSP was added in Windows 10, version 1511.
 
- 
+
 
 For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set on the directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
 
@@ -139,9 +139,9 @@ Get the firewall PrivateProfile
 </SyncML>
 ```
 
- 
 
- 
+
+
 
 
 

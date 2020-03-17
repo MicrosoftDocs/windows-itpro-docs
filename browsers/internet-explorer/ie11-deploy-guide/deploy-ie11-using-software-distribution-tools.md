@@ -5,7 +5,7 @@ description: Deploy Internet Explorer 11 using software distribution tools
 author: dansimp
 ms.prod: ie11
 ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -26,9 +26,9 @@ If you already manage software distribution and updates on your network through 
 
 -   **Microsoft Deployment Toolkit (MDT).** Add the IE11 update to your deployment share, using MDT to update your previously-deployed Windows image. For more information about using this tool, see [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkID=331148).
 
- 
 
- 
+
+
 
 
 

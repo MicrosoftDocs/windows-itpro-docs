@@ -2,7 +2,7 @@
 title: Create permanent shared objects (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create permanent shared objects security policy setting.
 ms.assetid: 6a58438d-65ca-4c4a-a584-450eed976649
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -51,13 +51,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not Defined| 
-| Default Domain Controller Policy | Not Defined | 
-| Stand-Alone Server Default Settings | Not Defined| 
-| Domain Controller Effective Default Settings | **LocalSystem**| 
-| Member Server Effective Default Settings | **LocalSystem**| 
-| Client Computer Effective Default Settings | **LocalSystem**| 
- 
+| Default Domain Policy | Not Defined|
+| Default Domain Controller Policy | Not Defined |
+| Stand-Alone Server Default Settings | Not Defined|
+| Domain Controller Effective Default Settings | **LocalSystem**|
+| Member Server Effective Default Settings | **LocalSystem**|
+| Client Computer Effective Default Settings | **LocalSystem**|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

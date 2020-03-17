@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Show message when opening sites in Internet Explorer --> 
+<!-- ## Show message when opening sites in Internet Explorer -->
 
 >*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br>
 >*Default setting:  Disabled or not configured (No additional message)*
@@ -29,8 +29,8 @@ ms.topic: include
 ---
 
 ### ADMX info and settings
-#### ADMX info 
-- **GP English name:** Show message when opening sites in Internet Explorer 
+#### ADMX info
+- **GP English name:** Show message when opening sites in Internet Explorer
 - **GP name:** ShowMessageWhenOpeningSitesInInternetExplorer
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
@@ -48,7 +48,7 @@ ms.topic: include
 
 ### Related policies
 
-- [Configure the Enterprise Mode Site List](../available-policies.md#configure-the-enterprise-mode-site-list): [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../shortdesc/configure-enterprise-mode-site-list-shortdesc.md)] 
+- [Configure the Enterprise Mode Site List](../available-policies.md#configure-the-enterprise-mode-site-list): [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../shortdesc/configure-enterprise-mode-site-list-shortdesc.md)]
 
 - [Send all intranet sites to Internet Explorer 11](../available-policies.md#send-all-intranet-sites-to-internet-explorer-11): [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../shortdesc/send-all-intranet-sites-to-ie-shortdesc.md)]
 

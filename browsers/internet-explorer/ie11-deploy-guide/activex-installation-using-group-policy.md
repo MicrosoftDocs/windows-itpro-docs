@@ -6,7 +6,7 @@ description: How to use Group Policy to install ActiveX controls.
 author: dansimp
 ms.prod: ie11
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -42,9 +42,9 @@ You use the ActiveX Installer Service (AXIS) and Group Policy to manage your Act
 
 For more information about the ActiveX Installer Service, see [Administering the ActiveX Installer Service in Windows 7](https://go.microsoft.com/fwlink/p/?LinkId=214503).
 
- 
 
- 
+
+
 
 
 

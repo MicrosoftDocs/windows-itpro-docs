@@ -2,7 +2,7 @@
 title: Diagnose MDM failures in Windows 10
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server.
 ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,10 +19,10 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
 1. On your managed device go to **Settings** > **Accounts** > **Access work or school**.
-1. Click your work or school account, then click **Info.**  
+1. Click your work or school account, then click **Info.**
    ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
 
-1. At the bottom of the **Settings** page, click **Create report**.  
+1. At the bottom of the **Settings** page, click **Create report**.
    ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
@@ -182,7 +182,7 @@ The following table contains a list of common providers and their corresponding 
 | e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
 | e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
 
- 
+
 
 ## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
 
@@ -335,7 +335,7 @@ Here's an example of how to collect current MDM device state data using the [Dia
 </SyncML>
 ```
 
- 
+
 
 
 

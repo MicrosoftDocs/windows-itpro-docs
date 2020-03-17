@@ -2,7 +2,7 @@
 title: Manage Product Keys (Windows 10)
 description: Manage Product Keys
 ms.assetid: 4c6c4216-b4b7-437c-904e-4cb257f913cd
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -25,6 +25,6 @@ This section describes how to add and remove a product key from the Volume Activ
 |[Add and Remove a Product Key](add-remove-product-key-vamt.md) |Describes how to add a product key to the VAMT database. |
 |[Install a Product Key](install-product-key-vamt.md) |Describes how to install a product key for specific product. |
 |[Install a KMS Client Key](install-kms-client-key-vamt.md) |Describes how to install a GVLK (KMS client) key. |
- 
- 
- 
+
+
+

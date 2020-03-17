@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -63,7 +63,7 @@ The **Monitor Application Settings** task is used to synchronize settings for Wi
 </tbody>
 </table>
 
- 
+
 
 ### Sync Controller Application
 
@@ -88,7 +88,7 @@ The **Sync Controller Application** task is used to start the Sync Controller to
 </tbody>
 </table>
 
- 
+
 
 For example, the following command configures the agent to synchronize settings every 15 minutes instead of the default 30 minutes.
 
@@ -119,7 +119,7 @@ The **Synchronize Settings at Logoff** task is used to start an application at l
 </tbody>
 </table>
 
- 
+
 
 ### Template Auto Update
 
@@ -144,7 +144,7 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 </tbody>
 </table>
 
- 
+
 
 **Example:** The following command configures the UE-V service to check the settings template catalog store every hour.
 
@@ -211,7 +211,7 @@ The following chart provides additional information about scheduled tasks for UE
 </tbody>
 </table>
 
- 
+
 
 **Legend**
 

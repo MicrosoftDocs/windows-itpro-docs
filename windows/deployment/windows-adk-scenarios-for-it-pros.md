@@ -2,7 +2,7 @@
 title: Windows ADK for Windows 10 scenarios for IT Pros (Windows 10)
 description: The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
 ms.assetid: FC4EB39B-29BA-4920-87C2-A00D711AE48B
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -89,9 +89,9 @@ There are also a few tools included in the Windows ADK that are specific to IT P
 -   [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation/volume-activation-management-tool.md)
 -   [User State Migration Tool (USMT) Technical Reference](usmt/usmt-technical-reference.md)
 
- 
 
- 
+
+
 
 
 

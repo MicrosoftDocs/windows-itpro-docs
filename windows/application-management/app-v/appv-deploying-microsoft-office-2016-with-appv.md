@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -110,7 +110,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
         </Add>
       </Configuration>
       ```
-    
+
      > [!NOTE]
       >The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To uncomment these lines, remove the ```<! - -``` from the beginning of the line, and the ```-- >``` from the end of the line.
 
@@ -181,15 +181,15 @@ After you download the Office 2016 applications through the Office Deployment To
        </Configuration>
        ```
        This example made the following changes to create this Subscription Licensing package:
-        
+
      * **SourcePath** was changed to point to the Office applications that were downloaded earlier.
      * **Product ID** for Office was changed to `O365ProPlusRetail`.
      * **Product ID** for Visio was changed to `VisioProRetail`.
    * **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package created by the Office Deployment Tool. For example, you can exclude Access.
    * **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use **PACKAGEGUID** to specify a different package ID for each package, which allows you to publish multiple App-V packages created by the Office Deployment Tool, and then manage your published packages with the App-V Server.
-        
+
        An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.
-        
+
       > [!NOTE]
        >Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
 2. Use the /packager command to convert the Office applications to an Office 2016 App-V package.
@@ -211,7 +211,7 @@ After you download the Office 2016 applications through the Office Deployment To
     |```\\server\share\Office2016AppV```|This specifies the location of the newly created Office App-V package.|
 
     After you run the **/packager** command, the following folders appear up in the directory where you specified the package should be saved:
-    
+
    * **App-V Packages**—contains an Office 2016 App-V package and two deployment configuration files.
    * **WorkingDir**
 
@@ -328,7 +328,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
 
     ``` XML
     Shortcuts
-    
+
     -->
      <Shortcuts Enabled="true">
       <Extensions>

@@ -2,7 +2,7 @@
 title: Applying Filters to Data in the SUA Tool (Windows 10)
 description: Learn how to apply filters to results from the Standard User Analyzer (SUA) tool while testing your application.
 ms.assetid: 48c39919-3501-405d-bcf5-d2784cbb011f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -89,11 +89,11 @@ On the user interface for the Standard User Analyzer (SUA) tool, you can apply f
     </tbody>
     </table>
 
-     
 
- 
 
- 
+
+
+
 
 
 

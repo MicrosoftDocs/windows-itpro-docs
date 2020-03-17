@@ -7,13 +7,13 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 12/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # EnterpriseAppVManagement DDF file
 
-This topic shows the OMA DM device description framework (DDF) for the **EnterpriseAppVManagement** configuration service provider.  
+This topic shows the OMA DM device description framework (DDF) for the **EnterpriseAppVManagement** configuration service provider.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 

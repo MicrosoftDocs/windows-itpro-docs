@@ -2,7 +2,7 @@
 title: TPM Group Policy settings (Windows 10)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -119,13 +119,13 @@ If you do not configure this policy setting, a default value of 9 is used. A val
 
 ## Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
 
-Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
+Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below.
 
 > [!IMPORTANT]
-> Setting this policy will take effect only if:  
+> Setting this policy will take effect only if:
 > -   The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
-> -   The system has a TPM 2.0. 
-> 
+> -   The system has a TPM 2.0.
+>
 > [!NOTE]
 > Enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only ways for the disabled setting of this policy to take effect on a system where it was once enabled are to either:
 > -  Disable it from group policy
@@ -135,7 +135,7 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 
 You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
 
-**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
+**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security**
 
 ### Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
@@ -145,6 +145,6 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 ## Related topics
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) 
+- [Trusted Platform Module](trusted-platform-module-top-node.md)
 - [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)

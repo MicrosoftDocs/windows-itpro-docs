@@ -1,6 +1,6 @@
 ---
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Learn how to enable or block Windows Mixed Reality apps.
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]

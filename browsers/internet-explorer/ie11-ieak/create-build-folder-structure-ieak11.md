@@ -5,7 +5,7 @@ description: How to create your folder structure on the computer that you’ll u
 author: dansimp
 ms.prod: ie11
 ms.assetid: e0d05a4c-099f-4f79-a069-4aa1c28a1080
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

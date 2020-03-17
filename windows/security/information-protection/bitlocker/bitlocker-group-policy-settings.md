@@ -2,7 +2,7 @@
 title: BitLocker Group Policy settings (Windows 10)
 description: This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 ms.assetid: 4904e336-29fe-4cef-bb6c-3950541864af
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -1167,7 +1167,7 @@ This policy controls how BitLocker reacts to systems that are equipped with encr
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When not configured</strong></p></td>
-<td align="left"><p>BitLocker software-based encryption is used irrespective of hardware-based encryption ability. 
+<td align="left"><p>BitLocker software-based encryption is used irrespective of hardware-based encryption ability.
 </p></td>
 </tr>
 </tbody>
@@ -1553,7 +1553,7 @@ Saving the recovery password to a USB drive stores the 48-digit recovery passwor
 
 > **Important:**  If TPM initialization is performed during the BitLocker setup, TPM owner information is saved or printed with the BitLocker recovery information.
 > The 48-digit recovery password is not available in FIPS-compliance mode.
-> 
+>
 > **Important:**  To prevent data loss, you must have a way to recover BitLocker encryption keys. If you do not allow both recovery options, you must enable the backup of BitLocker recovery information to AD DS. Otherwise, a policy error occurs.
 
 ### <a href="" id="bkmk-rec3"></a>Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)
@@ -1832,7 +1832,7 @@ Once you enable the setting you have three options:
 -   If you select the **Use custom recovery URL** option, type the custom message URL in the **Custom recovery URL option** text box. The URL that you type in the **Custom recovery URL option** text box replaces the default URL in the default recovery message, which will be displayed on the pre-boot recovery screen.
 
 > **Important:**  Not all characters and languages are supported in the pre-boot environment. We strongly recommended that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
-> 
+>
 > **Important:**  Because you can alter the BCDEdit commands manually before you have set Group Policy settings, you cannot return the policy setting to the default setting by selecting the **Not Configured** option after you have configured this policy setting. To return to the default pre-boot recovery screen leave the policy setting enabled and select the **Use default message** options from the **Choose an option for the pre-boot recovery message** drop-down list box.
 
 ### <a href="" id="bkmk-secboot"></a>Allow Secure Boot for integrity validation

@@ -25,7 +25,7 @@ Applies to:
 
 ## Overview
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
 
 At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
@@ -88,12 +88,12 @@ The following table provides an overview of the privacy settings discussed earli
 | [Speech](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-speech) | Group Policy:<br />**Computer Configuration** > **Control Panel** > **Regional and Language Options** > **Allow users to enable online speech recognition services**<br /><br />MDM: [Privacy/AllowInputPersonalization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off | Off |
 | [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later) | Off |
 | [Find my device](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#find-my-device) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**<br /><br />MDM: [Experience/AllFindMyDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice) | Off | Off |
-| [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md##manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | Desktop editions:<br />Required diagnostic data (Windows 10, version 1903 and later)<br /><br />Server editions:<br />Required diagnostic data | Security and block endpoints | 
-| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later) | Off | 
-| Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off | 
-| Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off | 
-| Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off | 
-| [Cortana](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#2-cortana-and-search) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Search** > **Allow Cortana**<br /><br />MDM: [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) | Off | Off | 
+| [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md##manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | Desktop editions:<br />Required diagnostic data (Windows 10, version 1903 and later)<br /><br />Server editions:<br />Required diagnostic data | Security and block endpoints |
+| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later) | Off |
+| Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off |
+| Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off |
+| Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off |
+| [Cortana](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#2-cortana-and-search) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Search** > **Allow Cortana**<br /><br />MDM: [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) | Off | Off |
 
 ### 2.3 Guidance for configuration options
 
@@ -107,8 +107,8 @@ If you want the ability to fully control and apply restrictions on data being se
 
 Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
 
-You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows 10: 
-- https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-Autopilot 
+You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows 10:
+- https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-Autopilot
 - https://docs.microsoft.com/windows/deployment/windows-Autopilot/deployment-process
 
 #### _2.3.2 Managing connections from Windows components to Microsoft services_
@@ -204,7 +204,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 * [Microsoft Trust Center: Privacy at Microsoft](https://www.microsoft.com/trust-center/privacy)
 * [Windows IT Pro Docs](https://docs.microsoft.com/windows/#pivot=it-pro)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
-* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) 
+* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
 * [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md)
 * [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/)

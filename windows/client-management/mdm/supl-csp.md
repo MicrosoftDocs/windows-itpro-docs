@@ -2,7 +2,7 @@
 title: SUPL CSP
 description: SUPL CSP
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -55,7 +55,7 @@ The SUPL configuration service provider is used to configure the location client
 </tbody>
 </table>
 
- 
+
 
 The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted, a new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
 
@@ -63,39 +63,39 @@ The following diagram shows the SUPL configuration service provider management o
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
- 
+
 
 ![SUPL csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
 
 
 
-<a href="" id="supl1"></a>**SUPL1**  
+<a href="" id="supl1"></a>**SUPL1**
 Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node. Only one SUPL account is supported at a given time.
 
-<a href="" id="appid"></a>**AppID**  
+<a href="" id="appid"></a>**AppID**
 Required. The AppID for SUPL is automatically set to `"ap0004"`. This is a read-only value.
 
-<a href="" id="addr"></a>**Addr**  
+<a href="" id="addr"></a>**Addr**
 Optional. Specifies the address of the Home SUPL Location Platform (H-SLP) server for non-proxy mode. The value is a server address specified as a fully qualified domain name, and the port specified as an integer, with the format *server*: *port*.
 
 If this value is not specified, the device infers the H-SLP address from the IMSI as defined in the SUPL standard. To use automatic generation of the H-SLP address based on the IMSI, the MNC length must be set correctly on the UICC. Generally, this value is 2 or 3.
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="version"></a>**Version**  
+<a href="" id="version"></a>**Version**
 Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.
 
-<a href="" id="fullversion"></a>**FullVersion**  
+<a href="" id="fullversion"></a>**FullVersion**
 Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.
 
-<a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
+<a href="" id="mccmncpairs"></a>**MCCMNCPairs**
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.
 
 This value is a string with the format "(X1,Y1)(X2,Y2)…(Xn,Yn)", in which `X` is a MCC and `Y` is an MNC.
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="highaccpositioningmethod"></a>**HighAccPositioningMethod**  
+<a href="" id="highaccpositioningmethod"></a>**HighAccPositioningMethod**
 Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The value can be one of the following integers:
 
 <table>
@@ -137,17 +137,17 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 </tbody>
 </table>
 
- 
+
 
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
 > **Important**   The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
- 
+
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
+<a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**
 Optional. Boolean. Specifies whether the location toggle on the **location** screen in **Settings** is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1.
 
 This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
@@ -189,7 +189,7 @@ This value manages the settings for both SUPL and v2 UPL. If a device is configu
 </tbody>
 </table>
 
- 
+
 
 When the location toggle is set to Off and this value is set to 1, the following application requests will fail:
 
@@ -207,78 +207,78 @@ When the location toggle is set to Off and this value is set to 0, the location 
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**  
+<a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**
 Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
 
 This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
 
-<a href="" id="serveraccessinterval"></a>**ServerAccessInterval**  
+<a href="" id="serveraccessinterval"></a>**ServerAccessInterval**
 Optional. Integer. Defines the minimum interval of time in seconds between mobile originated requests sent to the server to prevent overloading the mobile operator's network. The default value is 60.
 
-<a href="" id="rootcertificate"></a>**RootCertificate**  
+<a href="" id="rootcertificate"></a>**RootCertificate**
 Required. Specifies the root certificate for the H-SLP server. Windows does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.
 
-<a href="" id="rootcertificate-name"></a>**RootCertificate/Name**  
+<a href="" id="rootcertificate-name"></a>**RootCertificate/Name**
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate-data"></a>**RootCertificate/Data**  
+<a href="" id="rootcertificate-data"></a>**RootCertificate/Data**
 The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="rootcertificate"></a>**RootCertificate2**  
+<a href="" id="rootcertificate"></a>**RootCertificate2**
 Specifies the root certificate for the H-SLP server.
 
-<a href="" id="rootcertificate2-name"></a>**RootCertificate2/Name**  
+<a href="" id="rootcertificate2-name"></a>**RootCertificate2/Name**
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate2-data"></a>**RootCertificate2/Data**  
+<a href="" id="rootcertificate2-data"></a>**RootCertificate2/Data**
 The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="rootcertificate"></a>**RootCertificate3**  
+<a href="" id="rootcertificate"></a>**RootCertificate3**
 Specifies the root certificate for the H-SLP server.
 
-<a href="" id="rootcertificate3-name"></a>**RootCertificate3/Name**  
+<a href="" id="rootcertificate3-name"></a>**RootCertificate3/Name**
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate3-data"></a>**RootCertificate3/Data**  
+<a href="" id="rootcertificate3-data"></a>**RootCertificate3/Data**
 The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="rootcertificate"></a>**RootCertificate4**  
+<a href="" id="rootcertificate"></a>**RootCertificate4**
 Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
 
-<a href="" id="rootcertificate-name"></a>**RootCertificate4/Name**  
+<a href="" id="rootcertificate-name"></a>**RootCertificate4/Name**
 Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate-data"></a>**RootCertificate4/Data**  
+<a href="" id="rootcertificate-data"></a>**RootCertificate4/Data**
 Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="rootcertificate"></a>**RootCertificate5**  
+<a href="" id="rootcertificate"></a>**RootCertificate5**
 Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
 
-<a href="" id="rootcertificate2-name"></a>**RootCertificate5/Name**  
+<a href="" id="rootcertificate2-name"></a>**RootCertificate5/Name**
 Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate2-data"></a>**RootCertificate5/Data**  
+<a href="" id="rootcertificate2-data"></a>**RootCertificate5/Data**
 Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="rootcertificate"></a>**RootCertificate6**  
+<a href="" id="rootcertificate"></a>**RootCertificate6**
 Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
 
-<a href="" id="rootcertificate3-name"></a>**RootCertificate6/Name**  
+<a href="" id="rootcertificate3-name"></a>**RootCertificate6/Name**
 Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
-<a href="" id="rootcertificate3-data"></a>**RootCertificate6/Data**  
+<a href="" id="rootcertificate3-data"></a>**RootCertificate6/Data**
 Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
 
-<a href="" id="v2upl1"></a>**V2UPL1**  
+<a href="" id="v2upl1"></a>**V2UPL1**
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.
 
-<a href="" id="mpc"></a>**MPC**  
+<a href="" id="mpc"></a>**MPC**
 Optional. The address of the mobile positioning center (MPC), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter is mandatory and the PDE parameter must be empty.
 
-<a href="" id="pde"></a>**PDE**  
+<a href="" id="pde"></a>**PDE**
 Optional. The address of the Position Determination Entity (PDE), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter must be empty.
 
-<a href="" id="positioningmethod-mr"></a>**PositioningMethod\_MR**  
+<a href="" id="positioningmethod-mr"></a>**PositioningMethod\_MR**
 Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The value can be one of the following integers:
 
 <table>
@@ -316,17 +316,17 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 </tbody>
 </table>
 
- 
+
 
 The default is 0. The default method provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
 >  **Important**   The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
- 
+
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
+<a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**
 Optional. Boolean. Specifies whether the location toggle on the **location** screen in **Settings** is also used to manage network-initiated requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. For CDMA devices, this value must be set to 1. The default value is 1.
 
 This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
@@ -368,7 +368,7 @@ This value manages the settings for both SUPL and v2 UPL. If a device is configu
 </tbody>
 </table>
 
- 
+
 
 When the location toggle is set to Off and this value is set to 1, the following application requests will fail:
 
@@ -386,15 +386,15 @@ When the location toggle is set to Off and this value is set to 0, the location 
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
-<a href="" id="applicationtypeindicator-mr"></a>**ApplicationTypeIndicator\_MR**  
+<a href="" id="applicationtypeindicator-mr"></a>**ApplicationTypeIndicator\_MR**
 Required. This value must always be set to `00000011`.
 
-<a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**  
+<a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**
 Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
 
 This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
 
-<a href="" id="serveraccessinterval"></a>**ServerAccessInterval**  
+<a href="" id="serveraccessinterval"></a>**ServerAccessInterval**
 Optional. Integer. Defines the minimum interval of time in seconds between mobile originated requests sent to the server to prevent overloading the mobile operator's network. The default value is 60.
 
 ## Unsupported Nodes
@@ -581,7 +581,7 @@ The following table shows the Microsoft custom elements that this configuration 
 </tbody>
 </table>
 
- 
+
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

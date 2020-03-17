@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,23 +42,23 @@ Each time a system starts, it loads the notification package DLLs from **HKEY\_L
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4614</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12289</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-14T03:36:43.073484900Z" /> 
- <EventRecordID>1048140</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="520" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4614</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12289</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-14T03:36:43.073484900Z" />
+ <EventRecordID>1048140</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="520" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="NotificationPackageName">WDIGEST</Data> 
+ <Data Name="NotificationPackageName">WDIGEST</Data>
  </EventData>
  </Event>
 

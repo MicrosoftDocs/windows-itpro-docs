@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Using Outlook on the web with Windows Information Protection (WIP)
@@ -34,7 +34,7 @@ Because Outlook on the web can be used both personally and as part of your organ
 |Add outlook.office.com and outlook.office365.com to the Cloud resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
 
 >[!NOTE]
->These limitations don’t apply to Outlook 2016, the Mail for Windows 10 app, or the Calendar for Windows 10 app. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 
+>These limitations don’t apply to Outlook 2016, the Mail for Windows 10 app, or the Calendar for Windows 10 app. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings.
 
 
 

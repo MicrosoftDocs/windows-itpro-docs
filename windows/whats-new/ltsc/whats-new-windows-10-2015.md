@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10 Enterprise 2015 LTSC
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2015 LTSC (also known as Windows 10 Enterprise 2015 LTSB).
@@ -245,10 +245,10 @@ Enterprises have the following identity and management choices.
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
+ > **Note**
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
- 
+
 ### Device lockdown
 
 
@@ -270,7 +270,7 @@ A standard Start layout can be useful on devices that are common to multiple use
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
-## Updates 
+## Updates
 
 Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 

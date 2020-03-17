@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
 author: eavena
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.localizationpriority: medium
 ms.topic: conceptual
@@ -71,7 +71,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
 5. Select **You're ready to go...** which will take you to the Microsoft 365 admin center.
 
-   > [!NOTE]  
+   > [!NOTE]
    > In the Microsoft 365 admin center, icons that are greyed out are still installing.
 
    **Figure 2** - Microsoft 365 admin center
@@ -83,7 +83,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 7. In the admin center, click **Next** to see the highlights and welcome info for the admin center. When you're done, click **Go to setup** to complete the Office 365 setup.
 
    This may take up to a half hour to complete.
-  
+
    **Figure 3** - Admin center
 
    ![Microsoft 365 admin center](images/office365_admin_portal.png)
@@ -95,7 +95,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
       **Figure 4** - Option to add or buy a domain
 
       ![Add or buy a domain in admin center](images/office365_buy_domain.png)
-    
+
 
    2. In the **Home > Domains** page, you will see the Microsoft-provided domain, such as *fabrikamdesign.onmicrosoft.com*.
 
@@ -172,7 +172,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-microsoft-store-for-business-for-app-distribution).
 
 ### 1.4 Add Azure AD to your domain
-Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
+Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune.
 
 **To add Azure AD to your domain**
 
@@ -257,7 +257,7 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
 **To enable automatic MDM enrollment**
 
-1. In to the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, click on your company's Azure Active Directory to go back to the main window. Select **Applications** from the list of directory menu options. 
+1. In to the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, click on your company's Azure Active Directory to go back to the main window. Select **Applications** from the list of directory menu options.
 
    The list of applications for your company will appear. **Microsoft Intune** will be one of the applications on the list.
 
@@ -275,14 +275,14 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 4. In the Microsoft Intune configuration page:
    - In the **Properties** section, you should see a list of URLs for MDM discovery, MDM terms of use, and MDM compliance.
 
-     > [!NOTE]  
+     > [!NOTE]
      > The URLs are automatically configured for your Azure AD tenant so you don't need to change them.
 
    - In the **Manage devices for these users** section, you can specify which users' devices should be managed by Intune.
      - **All** will enable all users' Windows 10 devices to be managed by Intune.
      - **Groups** let you select whether only users that belong to a specific group will have their devices managed by Intune.
 
-     > [!NOTE]  
+     > [!NOTE]
      > In this step, choose the group that contains all the users in your organization as members. This is the **All** group.
 
 5. After you've chosen how to manage devices for users, select **Save** to enable automatic MDM enrollment with Intune.
@@ -395,7 +395,7 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
    ![First screen in Windows device setup](images/win10_hithere.png)
 
-   > [!NOTE]  
+   > [!NOTE]
    > During setup, if you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
 
 2. In the **Who owns this PC?** screen, select **My work or school owns it** and click **Next**.
@@ -431,10 +431,10 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
    **Figure 34** - Check the PC name on your device
 
    ![Check the PC name on your device](images/win10_settings_pcname.png)
-  
+
 2. Log in to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>.
 3. Select **Groups** and then go to **Devices**.
-4. In the **All Devices** page, look at the list of devices and select the entry that matches the name of your PC. 
+4. In the **All Devices** page, look at the list of devices and select the entry that matches the name of your PC.
    - Check that the device name appears in the list. Select the device and it will also show the current logged-in user in the **General Information** section.
    - Check the **Management Channel** column and confirm that it says **Managed by Microsoft Intune**.
    - Check the **AAD Registered** column and confirm that it says **Yes**.
@@ -490,8 +490,8 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
 7. Click **Save Policy**. A confirmation window will pop up.
 8. On the **Deploy Policy** confirmation window, select **Yes** to deploy the policy now.
-9. On the **Management Deployment** window, select the user group(s) or device group(s) that you want to apply the policy to (for example, **All Users**), and then click **Add**. 
-10. Click **OK** to close the window. 
+9. On the **Management Deployment** window, select the user group(s) or device group(s) that you want to apply the policy to (for example, **All Users**), and then click **Add**.
+10. Click **OK** to close the window.
 
     **Figure 39** - The new policy should appear in the **Policies** list.
 
@@ -511,13 +511,13 @@ In some cases, if an app is missing from the device, you need to reconfigure the
    > [!NOTE]
    > This policy is a tenant-wide Intune setting. It disables Windows Hello and required PINs during setup for all enrolled devices in a tenant.
 
-To test whether these policies get successfully deployed to your tenant, go through [4. Add more devices and users](#4-add-more-devices-and-users) and setup another Windows device and login as one of the users. 
+To test whether these policies get successfully deployed to your tenant, go through [4. Add more devices and users](#4-add-more-devices-and-users) and setup another Windows device and login as one of the users.
 
 ## 4. Add more devices and users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more devices or users and you want the same policies to apply to these new devices and users. In this section, we'll show you how to do this.
 
 ### 4.1 Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [2. Set up devices](#2-set-up-devices). 
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [2. Set up devices](#2-set-up-devices).
 
 For other devices, such as those personally-owned by employees who need to connect to the corporate network to access corporate resources (BYOD), you can follow the steps in this section to get these devices connected.
 

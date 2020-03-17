@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -78,12 +78,12 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <a name="tvm"></a>
 
 **[Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)**<br>
-This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
 <a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. This set of capabilities also includes [network protection](network-protection.md) and [web protection](web-protection-overview.md), which regulate access to malicious IP addresses, domains, and URLs. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. This set of capabilities also includes [network protection](network-protection.md) and [web protection](web-protection-overview.md), which regulate access to malicious IP addresses, domains, and URLs.
 
 <a name="ngp"></a>
 
@@ -98,7 +98,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](automated-investigations.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 
 <a name="ss"></a>
 
@@ -128,7 +128,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - Office 365 ATP
 - Azure ATP
 - Azure Security Center
-- Skype for Business 
+- Skype for Business
 - Microsoft Cloud App Security
 
 **[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>

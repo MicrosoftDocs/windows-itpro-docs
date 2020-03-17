@@ -1,9 +1,9 @@
 ---
 title: Understand Windows Defender Application Control policy design decisions  (Windows 10)
-description: Understand Windows Defender Application Control policy design decisions. 
+description: Understand Windows Defender Application Control policy design decisions.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -20,7 +20,7 @@ manager: dansimp
 ms.date: 02/08/2018
 ---
 
-# Understand Windows Defender Application Control policy design decisions 
+# Understand Windows Defender Application Control policy design decisions
 
 **Applies to:**
 
@@ -72,8 +72,8 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
 | Possible answers | Design considerations |
 | - | - |
 | All apps used in your organization must be signed. | Organizations that enforce [codesigning](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. WDAC rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
-| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows 10 tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed App Catalogs. | 
- 
+| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows 10 tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed App Catalogs. |
+
 ### Are there specific groups in your organization that need customized application control policies?
 
 Most business teams or departments have specific security requirements that pertain to data access and the applications used to access that data. You should consider the scope of the project for each group and the group’s priorities before you deploy application control policies for the entire organization. There is overhead in managing policies which may lead you to choose between broad, organization-wide policies and multiple team-specific policies.

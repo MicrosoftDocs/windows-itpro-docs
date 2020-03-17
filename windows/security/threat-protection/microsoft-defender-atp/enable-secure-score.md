@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -29,7 +29,7 @@ ms.topic: article
 Set the baselines for calculating the score of security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
 
   >[!NOTE]
-  >Changes might take up to a few hours to reflect on the dashboard. 
+  >Changes might take up to a few hours to reflect on the dashboard.
 
 1. In the navigation pane, select **Settings** > **Secure Score**.
 

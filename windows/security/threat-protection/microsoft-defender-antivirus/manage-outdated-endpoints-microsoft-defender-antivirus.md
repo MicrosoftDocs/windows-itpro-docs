@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -129,9 +129,9 @@ This feature can be enabled for both full and quick scans.
 
 5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Scan** and configure the following settings:
 
-    1.  If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. 
+    1.  If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
     2. If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. Click **OK**.
-    3. Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**. 
+    3. Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**.
     4. Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic). Click **OK**.
 
 > [!NOTE]
@@ -166,7 +166,7 @@ See the following for more information and allowed parameters:
 
 1.  On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2.  Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**. 
+2.  Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**.
 
 3. Click **OK**.
 

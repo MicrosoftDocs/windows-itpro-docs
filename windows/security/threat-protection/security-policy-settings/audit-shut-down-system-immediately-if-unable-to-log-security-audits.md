@@ -2,7 +2,7 @@
 title: Audit Shut down system immediately if unable to log security audits (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Audit Shut down system immediately if unable to log security audits.
 ms.assetid: 2cd23cd9-0e44-4d0b-a1f1-39fc29303826
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,7 +40,7 @@ With **Audit: Shut down system immediately if unable to log security audits** se
 </tr>
 </tbody>
 </table>
- 
+
 To recover, you must log on, archive the log (optional), clear the log, and reset this option as desired.
 
 If the computer is unable to record events to the security log, critical evidence or important troubleshooting information might not be available for review after a security incident.
@@ -65,13 +65,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined 
-| Default Domain Controller Policy | Not defined 
-| Stand-Alone Server Default Settings | Disabled 
-| DC Effective Default Settings | Disabled 
-| Member Server Effective Default Settings | Disabled 
-| Client Computer Effective Default Settings | Disabled 
- 
+| Default Domain Policy | Not defined
+| Default Domain Controller Policy | Not defined
+| Stand-Alone Server Default Settings | Disabled
+| DC Effective Default Settings | Disabled
+| Member Server Effective Default Settings | Disabled
+| Client Computer Effective Default Settings | Disabled
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -104,5 +104,5 @@ If you enable this policy setting, the administrative burden can be significant,
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+
+

@@ -2,7 +2,7 @@
 title: Checklist Configuring Rules for the Encryption Zone (Windows 10)
 description: Checklist Configuring Rules for the Encryption Zone
 ms.assetid: 87b1787b-0c70-47a4-ae52-700bff505ea4
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -33,9 +33,9 @@ This checklist assumes that you have already created the GPO for the isolated do
 
 | Task | Reference |
 | - | - |
-| Make a copy of the domain isolation GPOs to serve as a starting point for the GPOs for the encryption zone.| [Copy a GPO to Create a New GPO](copy-a-gpo-to-create-a-new-gpo.md)| 
+| Make a copy of the domain isolation GPOs to serve as a starting point for the GPOs for the encryption zone.| [Copy a GPO to Create a New GPO](copy-a-gpo-to-create-a-new-gpo.md)|
 | Modify the group memberships and WMI filters so that they are correct for the encryption zone and the version of Windows for which this GPO is intended. | [Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
-| Add the encryption requirements for the zone. | [Configure the Rules to Require Encryption](configure-the-rules-to-require-encryption.md)| 
-| Link the GPO to the domain level of the Active Directory organizational unit hierarchy. | [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)| 
-| Add your test computers to the membership group for the encryption zone. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Computers to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)| 
-| Verify that the connection security rules are protecting network traffic.| [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)| 
+| Add the encryption requirements for the zone. | [Configure the Rules to Require Encryption](configure-the-rules-to-require-encryption.md)|
+| Link the GPO to the domain level of the Active Directory organizational unit hierarchy. | [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)|
+| Add your test computers to the membership group for the encryption zone. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Computers to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)|
+| Verify that the connection security rules are protecting network traffic.| [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)|

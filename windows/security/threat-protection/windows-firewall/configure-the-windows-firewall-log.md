@@ -2,7 +2,7 @@
 title: Configure the Windows Defender Firewall Log (Windows 10)
 description: Configure the Windows Defender Firewall Log
 ms.assetid: f037113d-506b-44d3-b9c0-0b79d03e7d18
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -56,4 +56,4 @@ To complete these procedures, you must be a member of the Domain Administrators 
     6.  Click **OK** twice.
 
 ### Troubleshooting Slow Log Ingestion
-If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increased resource usage for log rotation. 
+If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increased resource usage for log rotation.

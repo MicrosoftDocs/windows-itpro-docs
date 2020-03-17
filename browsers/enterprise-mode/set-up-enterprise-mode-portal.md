@@ -8,7 +8,7 @@ ms.prod: ie11
 title: Set up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -35,7 +35,7 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
 2. Install the Node.js® package manager, [npm](https://www.npmjs.com/).
 
-    > [!NOTE]   
+    > [!NOTE]
     > You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
 
 3. Open File Explorer and then open the **EMIEWebPortal/** folder.
@@ -55,11 +55,11 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 **To create a new Application Pool**
 1. In IIS Manager, expand your local computer in the **Connections** pane, right-click **Application Pools**, then click **Add Application Pool**.
-   
+
    The **Add Application Pool** box appears.
 
 2. In the **Add Application Pool** box, enter the following info:
-    
+
     - **Name.** Type the name of your new application pool. For example, _EMIEWebAppPool_.
 
     - **.NET CLR version.** Pick the version of .NET CLR used by your application pool from the drop-down box. It must be version 4.0 or higher.
@@ -84,7 +84,7 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 **To create the website**
 1. In IIS Manager, expand your local computer in the **Connections** pane, right-click **Sites**, then click **Add Website**.
-   
+
    The **Add Website** box appears.
 
 2. In the **Add Website** box, type the name of your website into the **Site name** box. For example, _EMIEWebApp_, and then click **Select**.
@@ -103,14 +103,14 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
    The **<<i>website_name</i>> Home** pane appears.
 
-9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**. 
+9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**.
 
     > [!NOTE]
     > You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
 
 10. Return to the **<<i>website_name</i>> Home** pane, and double-click the **Connection Strings** icon.
 
-11. Open the **LOBMergedEntities Connection String** to edit: 
+11. Open the **LOBMergedEntities Connection String** to edit:
 
     - **Data source.** Type the name of your local computer.
 
@@ -146,13 +146,13 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 1. Start SQL Server Management Studio and connect to your database.
 
 2. Expand the database instance and then open the server-level **Security** folder.
-    
+
     > [!IMPORTANT]
     > Make sure you open the **Security** folder at the server level and not for the database.
 
 3. Right-click **Logins**, and then click **New Login**.
 
-   The **Login-New** dialog box appears.  
+   The **Login-New** dialog box appears.
 
 4. Type the following into the **Login name** box, based on your server instance type:
 
@@ -163,7 +163,7 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
         > [!IMPORTANT]
         > Don't click **Search** in the **Login name** box. Login name searches will resolve to a ServerName\AppPool Name account and SQL Server Management Studio won't be able to resolve the account's virtual Security ID (SID).
 
-5. Click **User Mapping** from the **Select a page** pane, click the checkbox for your database (for example, _EMIEDatabase_) from the **Users mapped to this login** pane, and then click **db_owner** from the list of available roles in the **Database role membership** pane. 
+5. Click **User Mapping** from the **Select a page** pane, click the checkbox for your database (for example, _EMIEDatabase_) from the **Users mapped to this login** pane, and then click **db_owner** from the list of available roles in the **Database role membership** pane.
 
 6. Click **OK**.
 
@@ -215,14 +215,14 @@ Register the EMIEScheduler tool and service for production site list changes.
 **To register the scheduler service**
 
 1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the **App_Data**, **bin**, and **Logs** folders to a separate folder. For example, C:\EMIEService\.
- 
+
     > [!IMPORTANT]
     > If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
 
 2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example, _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
 
 3. Run the command, `InstallUtil "<path_to_service>"`. For example, _InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe"._
- 
+
    You'll be asked for your user name and password for the service.
 
 4. Open the **Run** command, type `Services.msc`, and then start the EMIEScheduler service.
@@ -232,4 +232,4 @@ Register the EMIEScheduler tool and service for production site list changes.
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
 
-- [Use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md) 
+- [Use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md)

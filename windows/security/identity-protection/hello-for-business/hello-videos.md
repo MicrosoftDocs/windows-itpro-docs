@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Videos
-description: Windows Hello for Business Videos 
+description: Windows Hello for Business Videos
 keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows Hello for Business Videos
 
@@ -56,7 +56,7 @@ Watch Matthew Palko and Ravi Vennapusa explain how Windows Hello for Business au
 The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
 > [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]
- 
+
 </br>
 
 > [!VIDEO https://www.youtube.com/embed/etXJsZb8Fso]

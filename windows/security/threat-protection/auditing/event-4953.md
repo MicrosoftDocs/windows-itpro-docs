@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,26 +38,26 @@ It can happen if Windows Firewall rule registry entry was corrupted.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4953</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13571</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8010000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-07T22:03:40.261507200Z" /> 
- <EventRecordID>1052340</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="5088" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4953</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13571</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8010000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-07T22:03:40.261507200Z" />
+ <EventRecordID>1052340</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="5088" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="Profile">All</Data> 
- <Data Name="ReasonForRejection">An error occurred.</Data> 
- <Data Name="RuleId">{08CBB349-D158-46BE-81E1-2ABC59BDD523}</Data> 
- <Data Name="RuleName">-</Data> 
+ <Data Name="Profile">All</Data>
+ <Data Name="ReasonForRejection">An error occurred.</Data>
+ <Data Name="RuleId">{08CBB349-D158-46BE-81E1-2ABC59BDD523}</Data>
+ <Data Name="RuleName">-</Data>
  </EventData>
  </Event>
 

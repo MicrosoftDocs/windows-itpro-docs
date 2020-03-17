@@ -6,7 +6,7 @@ description: Use this section to learn about how to turn on and use IE7 Enterpri
 author: dansimp
 ms.prod: ie11
 ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -53,9 +53,9 @@ For instructions and more info about how to fix your compatibility issues using 
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

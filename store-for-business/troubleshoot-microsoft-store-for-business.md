@@ -2,7 +2,7 @@
 title: Troubleshoot Microsoft Store for Business (Windows 10)
 description: Troubleshooting topics for Microsoft Store for Business.
 ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -58,8 +58,8 @@ If you encounter any problems when integrating Microsoft Store for Business with
 ## Still having trouble?
 
 If you are still having trouble using Microsoft Store or installing an app, Admins can sign in and look for topics on our **Support** page.
-   
-**To view Support page** 
+
+**To view Support page**
 
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com)
-2.Choose **Manage**> **Support**. 
+2.Choose **Manage**> **Support**.

@@ -1,7 +1,7 @@
 ---
 title: Common Microsoft Defender ATP API errors
 description: List of common Microsoft Defender ATP API errors with descriptions.
-keywords: apis, mdatp api, errors, troubleshooting 
+keywords: apis, mdatp api, errors, troubleshooting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -23,7 +23,7 @@ ms.topic: article
 * Note that the message is a free text that can be changed.
 * At the bottom of the page you can find response examples.
 
-Error code |HTTP status code |Message 
+Error code |HTTP status code |Message
 :---|:---|:---
 BadRequest | BadRequest (400) | General Bad Request error message.
 ODataError | BadRequest (400) | Invalid OData URI query (the specific error is specified).

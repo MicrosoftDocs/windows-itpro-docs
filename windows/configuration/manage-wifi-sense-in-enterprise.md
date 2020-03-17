@@ -2,7 +2,7 @@
 title: Manage Wi-Fi Sense in your company (Windows 10)
 description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places.
 ms.assetid: 1845e00d-c4ee-4a8f-a5e5-d00f2735a271
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: ["WiFi Sense", "automatically connect to wi-fi", "wi-fi hotspot connection"]
@@ -95,9 +95,9 @@ If you select the **Share network with my contacts** check box the first time yo
 - [Wi-Fi Sense and Privacy](https://go.microsoft.com/fwlink/p/?LinkId=620911)
 - [How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959)
 
- 
 
- 
+
+
 
 
 

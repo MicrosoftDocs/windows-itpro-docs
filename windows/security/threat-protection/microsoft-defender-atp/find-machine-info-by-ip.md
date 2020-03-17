@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -70,7 +70,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
-The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp. 
+The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp.
 
 ```
 HTTP/1.1 200 OK

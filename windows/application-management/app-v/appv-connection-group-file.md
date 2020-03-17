@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -125,16 +125,16 @@ App-V supports the following application connection configurations.
 - **An. exe file and an .exe file**. This is for cases where you have an application that relies on another application, but you want to keep the packages separate for operational efficiencies, licensing restrictions, or rollout timelines.
 
     For example, if you are deploying Microsoft Lync 2010, you can use three packages:
-  
+
     - Microsoft Office 2010
     - Microsoft Communicator 2007
     - Microsoft Lync 2010
-  
+
   You can manage the deployment with the following connection groups:
 
     - Microsoft Office 2010 and Microsoft Communicator 2007
     - Microsoft Office 2010 and Microsoft Lync 2010
-  
+
   After deployment, you can either create a single new Microsoft Office 2010 + Microsoft Lync 2010 package or keep and maintain them as separate packages and deploy them with a connection group.
 
 

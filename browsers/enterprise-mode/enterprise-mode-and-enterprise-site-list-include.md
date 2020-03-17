@@ -15,7 +15,7 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 		<version>10586</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!--- Begin Site List --->
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>IE11</open-in>
@@ -28,12 +28,12 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 		<compat-mode>IE7Enterprise</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
-	<site url="relecloud.com"/>  
-	<!-- default for self-closing XML tag is 
+	<site url="relecloud.com"/>
+	<!-- default for self-closing XML tag is
 		<compat-mode>default</compat-mode>
 		<open-in>none</open-in>
 	-->
-	<site url="relecloud.com/products">  
+	<site url="relecloud.com/products">
 		<compat-mode>IE8Enterprise"</compat-mode>
 		<open-in>IE11</open-in>
 	</site>

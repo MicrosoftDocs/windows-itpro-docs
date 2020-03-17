@@ -2,7 +2,7 @@
 title: Install a KMS Client Key (Windows 10)
 description: Install a KMS Client Key
 ms.assetid: d234468e-7917-4cf5-b0a8-4968454f7759
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -20,7 +20,7 @@ ms.topic: article
 
 You can use the Volume Activation Management Tool (VAMT) to install Generic Volume License Key (GVLK), or KMS client, product keys. For example, if you are converting a MAK-activated product to KMS activation.
 
-**Note**  
+**Note**
 By default, volume license editions of Windows Vista, Windows® 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft® Office 2010 use KMS for activation. GVLKs are already installed in volume license editions of these products.
 
 **To install a KMS Client key**
@@ -36,7 +36,7 @@ By default, volume license editions of Windows Vista, Windows® 7, Windows 8,
 8.  Select the **Automatically select an AD or KMS client key** option and then click **Install Key**.
 
     VAMT displays the **Installing product key** dialog box while it attempts to install the product key for the selected products. When the process is finished, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
-    
+
     The same status is shown under the **Status of Last Action** column in the product list view in the center pane.
 
 ## Related topics

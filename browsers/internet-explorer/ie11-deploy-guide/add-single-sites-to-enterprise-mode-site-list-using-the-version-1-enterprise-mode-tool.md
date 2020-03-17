@@ -6,7 +6,7 @@ description: Enterprise Mode is a compatibility mode that runs on Internet Explo
 author: dansimp
 ms.prod: ie11
 ms.assetid: 042e44e8-568d-4717-8fd3-69dd198bbf26
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -59,9 +59,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
- 
 
- 
+
+
 
 
 

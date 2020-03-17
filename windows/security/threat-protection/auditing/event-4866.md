@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,35 +38,35 @@ This event is generated only on domain controllers.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4865</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13569</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-02T03:11:33.397715700Z" /> 
- <EventRecordID>1049810</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="4808" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4865</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13569</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-02T03:11:33.397715700Z" />
+ <EventRecordID>1049810</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="4808" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ForestRoot">Fabrikam.local</Data> 
- <Data Name="ForestRootSid">S-1-5-21-2703072690-1374247579-2643703677</Data> 
- <Data Name="OperationId">0x648620</Data> 
- <Data Name="EntryType">2</Data> 
- <Data Name="Flags">0</Data> 
- <Data Name="TopLevelName">-</Data> 
- <Data Name="DnsName">Fabrikam.local</Data> 
- <Data Name="NetbiosName">FABRIKAM</Data> 
- <Data Name="DomainSid">S-1-5-21-2703072690-1374247579-2643703677</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x138eb0</Data> 
+ <Data Name="ForestRoot">Fabrikam.local</Data>
+ <Data Name="ForestRootSid">S-1-5-21-2703072690-1374247579-2643703677</Data>
+ <Data Name="OperationId">0x648620</Data>
+ <Data Name="EntryType">2</Data>
+ <Data Name="Flags">0</Data>
+ <Data Name="TopLevelName">-</Data>
+ <Data Name="DnsName">Fabrikam.local</Data>
+ <Data Name="NetbiosName">FABRIKAM</Data>
+ <Data Name="DomainSid">S-1-5-21-2703072690-1374247579-2643703677</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x138eb0</Data>
  </EventData>
  </Event>
 

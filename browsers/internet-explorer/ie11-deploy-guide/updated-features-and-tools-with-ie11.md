@@ -6,7 +6,7 @@ description: High-level info about some of the new and updated features for Inte
 author: dansimp
 ms.prod: ie11
 ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,9 +43,9 @@ Internet Explorer 11 includes several new features and tools. This topic includ
 
 -   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](https://go.microsoft.com/fwlink/p/?LinkId=263709).
 
- 
 
- 
+
+
 
 
 

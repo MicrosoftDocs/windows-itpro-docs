@@ -6,7 +6,7 @@ description: You can use Internet Explorer 11 and the Enterprise Mode Site List
 author: dansimp
 ms.prod: ie11
 ms.assetid: 76aa9a85-6190-4c3a-bc25-0f914de228ea
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -46,9 +46,9 @@ You can save the file locally or to a network share. However, you must make sure
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

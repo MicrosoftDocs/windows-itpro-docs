@@ -2,7 +2,7 @@
 title: GPO\_DOMISO\_Firewall (Windows 10)
 description: GPO\_DOMISO\_Firewall
 ms.assetid: 318467d2-5698-4c5d-8000-7f56f5314c42
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.date: 08/17/2017
 -   Windows 10
 -   Windows Server 2016
 
-This GPO is authored by using the Windows Defender Firewall 
+This GPO is authored by using the Windows Defender Firewall
 with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to devices that are running at least Windows 7 or Windows Server 2008.
 
 ## Firewall settings

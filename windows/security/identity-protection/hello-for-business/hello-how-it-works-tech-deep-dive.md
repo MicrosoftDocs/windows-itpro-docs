@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business works - Technical Deep Dive
 description: Deeply explore how Windows Hello for Business works, and how it can help your users authenticate to services.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, works 
+keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, works
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Technical Deep Dive
 
@@ -28,7 +28,7 @@ Windows Hello for Business authentication works through collection of components
 
 ## Registration
 
-Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start.  Registration is where the device **registers** its identity with the identity provider.  For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS). 
+Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start.  Registration is where the device **registers** its identity with the identity provider.  For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
 
 [How Device Registration Works](hello-how-it-works-device-registration.md)
 

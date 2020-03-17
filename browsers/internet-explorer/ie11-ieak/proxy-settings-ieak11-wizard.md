@@ -5,7 +5,7 @@ description: How to use the Proxy Settings page in the IEAK 11 Customization Wiz
 author: dansimp
 ms.prod: ie11
 ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -46,9 +46,9 @@ When filling out your exceptions, keep in mind:
 
 7.  Click **Next** to go to the [Security and Privacy Settings](security-and-privacy-settings-ieak11-wizard.md) page or **Back** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

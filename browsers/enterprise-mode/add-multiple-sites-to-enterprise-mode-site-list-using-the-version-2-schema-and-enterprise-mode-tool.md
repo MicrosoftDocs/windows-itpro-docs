@@ -6,7 +6,7 @@ description: Add multiple sites to your Enterprise Mode site list using a file a
 author: dansimp
 ms.prod: ie11
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) (Internet Explorer 11 for IT Pros)
@@ -52,7 +52,7 @@ You can create and use a custom XML file with the Enterprise Mode Site List Mana
 
 Each XML file must include:
 
--   **site-list version number**. This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser. 
+-   **site-list version number**. This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser.
 
 -   **&lt;compat-mode&gt; tag.** This tag specifies what compatibility setting are used for specific sites or domains.
 
@@ -70,7 +70,7 @@ The following is an example of what your XML file should look like when you’re
         <version>10240</version>
         <date-created>20150728.135021</date-created>
     </created-by>
-    <!--- Begin Site List ---> 
+    <!--- Begin Site List --->
     <site url="www.cpandl.com">
         <compat-mode>IE8Enterprise</compat-mode>
         <open-in>MSEdge</open-in>
@@ -114,9 +114,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
- 
 
- 
+
+
 
 
 

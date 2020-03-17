@@ -1,7 +1,7 @@
 ---
 title: Change history for Client management (Windows 10)
 description: View changes to documentation for client management in Windows 10.
-keywords: 
+keywords:
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 1/21/2020
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: article
 ---
@@ -56,7 +56,7 @@ New or changed topic | Description
 The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update).
 
 
-## July 2017 
+## July 2017
 
 | New or changed topic | Description |
 | --- | --- |

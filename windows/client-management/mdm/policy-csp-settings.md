@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Settings policies  
+## Settings policies
 
 <dl>
   <dd>
@@ -67,7 +67,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
+<a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**
 
 <!--SupportedSKUs-->
 <table>
@@ -132,7 +132,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
+<a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**
 
 <!--SupportedSKUs-->
 <table>
@@ -190,7 +190,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
+<a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**
 
 <!--SupportedSKUs-->
 <table>
@@ -248,7 +248,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
+<a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**
 
 <!--SupportedSKUs-->
 <table>
@@ -310,7 +310,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**  
+<a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**
 
 <!--SupportedSKUs-->
 <table>
@@ -359,7 +359,7 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Online Tips*
 -   GP name: *AllowOnlineTips*
 -   GP element: *CheckBox_AllowOnlineTips*
@@ -372,7 +372,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
+<a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**
 
 <!--SupportedSKUs-->
 <table>
@@ -434,7 +434,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
+<a href="" id="settings-allowregion"></a>**Settings/AllowRegion**
 
 <!--SupportedSKUs-->
 <table>
@@ -496,7 +496,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
+<a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**
 
 <!--SupportedSKUs-->
 <table>
@@ -558,7 +558,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
+<a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**
 
 <!--SupportedSKUs-->
 <table>
@@ -616,7 +616,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
+<a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**
 
 <!--SupportedSKUs-->
 <table>
@@ -678,7 +678,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
+<a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**
 
 <!--SupportedSKUs-->
 <table>
@@ -736,7 +736,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
+<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**
 
 <!--SupportedSKUs-->
 <table>
@@ -783,7 +783,7 @@ Added in Windows 10, version 1703.  Allows IT Admins to configure the default se
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Show additional calendar*
 -   GP name: *ConfigureTaskbarCalendar*
 -   GP path: *Start Menu and Taskbar*
@@ -804,7 +804,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
+<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**
 
 <!--SupportedSKUs-->
 <table>
@@ -876,7 +876,7 @@ hide:network-wifi
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Settings Page Visibility*
 -   GP name: *SettingsPageVisibility*
 -   GP element: *SettingsPageVisibilityBox*

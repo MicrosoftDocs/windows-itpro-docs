@@ -5,7 +5,7 @@ description: How to use the Browser User Interface page in the IEAK 11 Customiza
 author: dansimp
 ms.prod: ie11
 ms.assetid: c4a18dcd-2e9c-4b5b-bcc5-9b9361a79f0d
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -47,9 +47,9 @@ The text shows up in the title bar as **IE provided by** &lt;*your_custom_text*&
 
 10. Click **Next** to go to the [Search Providers](search-providers-ieak11-wizard.md) page or **Back** to go to the [User Experience](user-experience-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,28 +40,28 @@ It is not possible to understand what exactly was modified from this event.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4930</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14083</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-27T18:56:51.474057400Z" /> 
- <EventRecordID>1564</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="504" ThreadID="1280" /> 
- <Channel>Security</Channel> 
- <Computer>Win2012r2.corp.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4930</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14083</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-27T18:56:51.474057400Z" />
+ <EventRecordID>1564</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="504" ThreadID="1280" />
+ <Channel>Security</Channel>
+ <Computer>Win2012r2.corp.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="DestinationDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="SourceDRA">-</Data> 
- <Data Name="SourceAddr">edf0bef9-1f73-4df3-8991-f6ec2d4ef3ae</Data> 
- <Data Name="NamingContext">CN=Schema,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="Options">0</Data> 
- <Data Name="StatusCode">0</Data> 
+ <Data Name="DestinationDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="SourceDRA">-</Data>
+ <Data Name="SourceAddr">edf0bef9-1f73-4df3-8991-f6ec2d4ef3ae</Data>
+ <Data Name="NamingContext">CN=Schema,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="Options">0</Data>
+ <Data Name="StatusCode">0</Data>
  </EventData>
  </Event>
 ```
@@ -81,15 +81,15 @@ It is not possible to understand what exactly was modified from this event.
 -   **Source DRA** \[Type = UnicodeString\]: source directory replication agent distinguished name. Typically equals “**-**“ for this event.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **Source Address** \[Type = UnicodeString\]: DNS record of computer from which the modification request was received.

@@ -8,7 +8,7 @@ ms.pagetype: mobile
 ms.author: dansimp
 author: msfttracyp
 ms.date: 07/21/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: article
 ---
@@ -23,7 +23,7 @@ There are two steps to deploy an app upgrade:
 1. [Define the supersedence](#define-app-supersedence) - this lets Configuration Manager know that the old version should be replaced by the new version.
 2. [Deploy the upgrade](#deploy-the-app-upgrade) to your users.
 
-The following steps walk you through the upgrade deployment process - we have an upgraded version of the Walking Scorer app (moving from version 12.23.2.0 to 12.23.3.0). Because we previously used Configuration Manager to deploy the existing version, we'll use it now to upgrade the app. 
+The following steps walk you through the upgrade deployment process - we have an upgraded version of the Walking Scorer app (moving from version 12.23.2.0 to 12.23.3.0). Because we previously used Configuration Manager to deploy the existing version, we'll use it now to upgrade the app.
 
 Before you can deploy the upgrade, make sure you import the new version of the app and distribute it to your manage.microsoft.com distribution point.
 

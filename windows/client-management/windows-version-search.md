@@ -8,14 +8,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: troubleshooting
 ---
 
 # What version of Windows am I running?
 
-To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them. 
+To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them.
 
 ## System Properties
 Click **Start** > **Settings** > **System** > click **About** from the bottom of the left-hand menu
@@ -25,7 +25,7 @@ You'll now see **Edition**, **Version**, and **OS Build** information. Something
 ![screenshot of the system properties window for a device running Windows 10](images/systemcollage.png)
 
 ## Using Keyword Search
-You can simply type the following in the search bar and press **ENTER** to see version details for your device. 
+You can simply type the following in the search bar and press **ENTER** to see version details for your device.
 
 **“winver”**
 

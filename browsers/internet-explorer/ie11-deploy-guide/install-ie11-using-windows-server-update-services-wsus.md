@@ -5,7 +5,7 @@ description: How to install the Internet Explorer 11 update using Windows Server
 author: dansimp
 ms.prod: ie11
 ms.assetid: 6cbd6797-c670-4236-8423-e0919478f2ce
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -45,9 +45,9 @@ Windows Server Update Services (WSUS) lets you download a single copy of the Mic
 
 10. Click each computer group you want to set up for the WSUS server, picking the right approval level, and then click **OK**.
 
- 
 
- 
+
+
 
 
 

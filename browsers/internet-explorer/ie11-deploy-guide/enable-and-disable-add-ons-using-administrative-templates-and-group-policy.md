@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.prod: ie11
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Enable and disable add-ons using administrative templates and group policy (Internet Explorer 11 for IT Pros)
@@ -69,16 +69,16 @@ Every add-on has a Class ID (CLSID) that you use to enable and disable specific 
 
     1.  Open IE, click **Tools**, and then click **Manage Add-ons**.
 
-    2.  Double-click the add-on you want to change. 
+    2.  Double-click the add-on you want to change.
 
-    3.  In the More Information dialog, click **Copy** and then click **Close**. 
-    
-    4. Open Notepad and paste the information for the add-on. 
-    
+    3.  In the More Information dialog, click **Copy** and then click **Close**.
+
+    4. Open Notepad and paste the information for the add-on.
+
     5. On the Manage Add-ons windows, click **Close**.
-    
+
     6. On the Internet Options dialog, click **Close** and then close IE.
-    
+
 2.  From the copied information, select and copy just the **Class ID** value.
 
     > [!NOTE]
@@ -107,5 +107,5 @@ Open the Local Group Policy Editor and go to: User Configuration\Administrative 
 8.  Double-click **Automatically activate/enable newly installed add-ons** and select **Enabled**.<br><br>Enabling turns off the message prompting you to Enable or Don't enable the add-on.
 
 7.  Click **OK** twice to close the Group Policy editor.
- 
+
 <!-- do they need to run the gpudate /force command? -->

@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -36,11 +36,11 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowCookies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowcookies)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main
 - **Value name:** Cookies
 - **Value type:** REG_DWORD
 

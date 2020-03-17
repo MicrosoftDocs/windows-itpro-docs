@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/09/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Dual Enrollment
@@ -64,7 +64,7 @@ where **DC=domain,DC=com** is the LDAP path of your Active Directory domain and 
 4. Click **Connection** and select **Bind...**  Click **OK** to bind as the currently signed-in user.
 5. Click **Browser** and select **Modify**.  Leave the **DN** text box blank.  Next to **Attribute**, type **RunProtectAdminGroupsTask**. Next to **Values**, type **1**.  Click **Enter** to add this to the **Entry List**.
 6. Click **Run** to start the task.
-7. Close LDP.  
+7. Close LDP.
 
 ### Configuring Dual Enrollment using Group Policy
 

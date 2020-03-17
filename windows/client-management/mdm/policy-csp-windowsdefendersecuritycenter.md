@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## WindowsDefenderSecurityCenter policies  
+## WindowsDefenderSecurityCenter policies
 
 <dl>
   <dd>
@@ -93,7 +93,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**  
+<a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**
 
 <!--SupportedSKUs-->
 <table>
@@ -142,7 +142,7 @@ Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify contact company name*
 -   GP name: *EnterpriseCustomization_CompanyName*
 -   GP element: *Presentation_EnterpriseCustomization_CompanyName*
@@ -155,7 +155,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**  
+<a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -202,7 +202,7 @@ Added in Windows 10, next major release. Use this policy setting to specify if t
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Account protection area*
 -   GP name: *AccountProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Account protection*
@@ -221,7 +221,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**  
+<a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -270,7 +270,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the App and browser protection area*
 -   GP name: *AppBrowserProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
@@ -289,7 +289,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**  
+<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**
 
 <!--SupportedSKUs-->
 <table>
@@ -350,7 +350,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable the Clear TPM button*
 -   GP name: *DeviceSecurity_DisableClearTpmButton*
 -   GP path: *Windows Components/Windows Security/Device security*
@@ -371,7 +371,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
+<a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -418,7 +418,7 @@ Added in Windows 10, next major release. Use this policy setting if you want to 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Device security area*
 -   GP name: *DeviceSecurity_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -437,7 +437,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**  
+<a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**
 
 <!--SupportedSKUs-->
 <table>
@@ -489,7 +489,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide non-critical notifications*
 -   GP name: *Notifications_DisableEnhancedNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
@@ -508,7 +508,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**  
+<a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -557,7 +557,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Family options area*
 -   GP name: *FamilyOptions_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Family options*
@@ -576,7 +576,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**  
+<a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -625,7 +625,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Device performance and health area*
 -   GP name: *DevicePerformanceHealth_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device performance and health*
@@ -644,7 +644,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**  
+<a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -693,7 +693,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Firewall and network protection area*
 -   GP name: *FirewallNetworkProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Firewall and network protection*
@@ -712,7 +712,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**  
+<a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**
 
 <!--SupportedSKUs-->
 <table>
@@ -761,7 +761,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide all notifications*
 -   GP name: *Notifications_DisableNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
@@ -780,7 +780,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**  
+<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**
 
 <!--SupportedSKUs-->
 <table>
@@ -829,7 +829,7 @@ Enabled:
 Users will not be shown a recommendation to update their TPM Firmware.
 
 Disabled:
-Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.        
+Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
 
 Not configured:
 Same as Disabled.
@@ -841,7 +841,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the TPM Firmware Update recommendation.*
 -   GP name: *DeviceSecurity_DisableTpmFirmwareUpdateWarning*
 -   GP path: *Windows Components/Windows Security/Device security*
@@ -862,7 +862,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
+<a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -911,7 +911,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Virus and threat protection area*
 -   GP name: *VirusThreatProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
@@ -930,7 +930,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**  
+<a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**
 
 <!--SupportedSKUs-->
 <table>
@@ -979,7 +979,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent users from modifying settings*
 -   GP name: *AppBrowserProtection_DisallowExploitProtectionOverride*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
@@ -998,7 +998,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**  
+<a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**
 
 <!--SupportedSKUs-->
 <table>
@@ -1047,7 +1047,7 @@ Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify contact email address or Email ID*
 -   GP name: *EnterpriseCustomization_Email*
 -   GP element: *Presentation_EnterpriseCustomization_Email*
@@ -1060,7 +1060,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**  
+<a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**
 
 <!--SupportedSKUs-->
 <table>
@@ -1109,7 +1109,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure customized notifications*
 -   GP name: *EnterpriseCustomization_EnableCustomizedToasts*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -1128,7 +1128,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**  
+<a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**
 
 <!--SupportedSKUs-->
 <table>
@@ -1177,7 +1177,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure customized contact information*
 -   GP name: *EnterpriseCustomization_EnableInAppCustomization*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -1196,7 +1196,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**  
+<a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**
 
 <!--SupportedSKUs-->
 <table>
@@ -1243,7 +1243,7 @@ Added in Windows 10, version 1803. Use this policy setting to hide the Ransomwar
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Ransomware data recovery area*
 -   GP name: *VirusThreatProtection_HideRansomwareRecovery*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
@@ -1262,7 +1262,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**  
+<a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**
 
 <!--SupportedSKUs-->
 <table>
@@ -1309,7 +1309,7 @@ Added in Windows 10, version 1803. Use this policy to hide the Secure boot area 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Secure boot area*
 -   GP name: *DeviceSecurity_HideSecureBoot*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -1328,7 +1328,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**  
+<a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**
 
 <!--SupportedSKUs-->
 <table>
@@ -1375,7 +1375,7 @@ Added in Windows 10, version 1803. Use this policy to hide the Security processo
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide the Security processor (TPM) troubleshooter page*
 -   GP name: *DeviceSecurity_HideTPMTroubleshooting*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -1394,7 +1394,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**  
+<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**
 
 <!--SupportedSKUs-->
 <table>
@@ -1457,7 +1457,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide Windows Security Systray*
 -   GP name: *Systray_HideSystray*
 -   GP path: *Windows Components/Windows Security/Systray*
@@ -1478,7 +1478,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
+<a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**
 
 <!--SupportedSKUs-->
 <table>
@@ -1527,7 +1527,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify contact phone number or Skype ID*
 -   GP name: *EnterpriseCustomization_Phone*
 -   GP element: *Presentation_EnterpriseCustomization_Phone*
@@ -1540,7 +1540,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**  
+<a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**
 
 <!--SupportedSKUs-->
 <table>
@@ -1589,7 +1589,7 @@ Value type is Value type is string. Supported operations are Add, Get, Replace, 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Specify contact website*
 -   GP name: *EnterpriseCustomization_URL*
 -   GP element: *Presentation_EnterpriseCustomization_URL*

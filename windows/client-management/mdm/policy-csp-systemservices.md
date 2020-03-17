@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## SystemServices policies  
+## SystemServices policies
 
 <dl>
   <dd>
@@ -46,7 +46,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
+<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -93,7 +93,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *HomeGroup Listener*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -103,7 +103,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
+<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -150,7 +150,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *HomeGroup Provider*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -160,7 +160,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
+<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -207,7 +207,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Xbox Accessory Management Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -217,7 +217,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
+<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -264,7 +264,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Xbox Live Auth Manager*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -274,7 +274,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
+<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -321,7 +321,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Xbox Live Game Save*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -331,7 +331,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
+<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**
 
 <!--SupportedSKUs-->
 <table>
@@ -378,7 +378,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Xbox Live Networking Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 

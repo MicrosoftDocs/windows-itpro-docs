@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Windows Defender Credential Guard protection limits
@@ -33,7 +33,7 @@ Some ways to store credentials are not protected by Windows Defender Credential 
 -   Third-party security packages
 -   Digest and CredSSP credentials
     -   When Windows Defender Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
--   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.- 
+-   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.-
 -  Kerberos service tickets are not protected by Credential Guard, but the Kerberos Ticket Granting Ticket (TGT) is.
 -  When Windows Defender Credential Guard is deployed on a VM, Windows Defender Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
 -  Windows logon cached password verifiers (commonly called "cached credentials")

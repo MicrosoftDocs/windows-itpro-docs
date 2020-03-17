@@ -2,7 +2,7 @@
 title: DevInfo DDF file
 description: DevInfo DDF file
 ms.assetid: beb07cc6-4133-4c0f-aa05-64db2b4a004f
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -168,9 +168,9 @@ The XML below is the current version for this CSP.
 
 [DevInfo configuration service provider](devinfo-csp.md)
 
- 
 
- 
+
+
 
 
 

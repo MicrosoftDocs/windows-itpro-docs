@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ---
@@ -36,7 +36,7 @@ GET /testwdatppreview/cvekbmap
 
 ## Request headers
 
-Header | Value 
+Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 Content type | application/json

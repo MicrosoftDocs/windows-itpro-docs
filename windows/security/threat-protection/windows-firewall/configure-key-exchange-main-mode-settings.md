@@ -2,7 +2,7 @@
 title: Configure Key Exchange (Main Mode) Settings (Windows 10)
 description: Configure Key Exchange (Main Mode) Settings
 ms.assetid: 5c593b6b-2cd9-43de-9b4e-95943fe82f52
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -41,12 +41,12 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 5.  Select the security methods to be used to help protect the main mode negotiations between the two devices. If the security methods displayed in the list are not what you want, then do the following:
 
-    **Important**  
+    **Important**
     In Windows Vista, Windows Server 2008, or later, you can specify only one key exchange algorithm. This means that if you want to communicate by using IPsec with another device running Windows 8 or Windows Server 2012, then you must select the same key exchange algorithm on both devices.
 
     Also, if you create a connection security rule that specifies an option that requires AuthIP instead of IKE, then only the one combination of the top integrity and encryption security method are used in the negotiation. Make sure that all of your devices that are running at least Windows Vista and Windows Server 2008 have the same methods at the top of the list and the same key exchange algorithm selected.
 
-    **Note**  
+    **Note**
     When AuthIP is used, no Diffie-Hellman key exchange protocol is used. Instead, when Kerberos V5 authentication is requested, the Kerberos V5 service ticket secret is used in place of a Diffie-Hellman value. When either certificate authentication or NTLM authentication is requested, a transport level security (TLS) session is established, and its secret is used in place of the Diffie-Hellman value. This happens no matter which Diffie-Hellman key exchange protocol you select.
 
     1.  Remove any of the security methods that you do not want by selecting the method and then clicking **Remove**.
@@ -59,7 +59,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 6.  From the list on the right, select the key exchange algorithm that you want to use.
 
-    >**Caution:**  We recommend that you do not use Diffie-Hellman Group 1. It is included for backward compatibility only. 
+    >**Caution:**  We recommend that you do not use Diffie-Hellman Group 1. It is included for backward compatibility only.
 
 7.  In **Key lifetime (in minutes)**, type the number of minutes. When the specified number of minutes has elapsed, any IPsec operation between the two devices requires a new key.
 

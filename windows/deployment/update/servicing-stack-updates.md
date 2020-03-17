@@ -8,7 +8,7 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -25,7 +25,7 @@ ms.topic: article
 Servicing stack updates provide fixes to the servicing stack, the component that installs Windows updates. Additionally, it contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month.
 
 ## Why should servicing stack updates be installed and kept up to date?
-  
+
 Servicing stack updates improve the reliability of the update process to mitigate potential issues while installing the latest quality updates and feature updates. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes.
 
 ## When are they released?
@@ -51,7 +51,7 @@ Typically, the improvements are reliability and performance improvements that do
 ## Installation notes
 
 * Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
-* Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
+* Installing servicing stack update does not require restarting the device, so installation should not be disruptive.
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
 * Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
 * Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.

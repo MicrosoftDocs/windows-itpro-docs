@@ -226,59 +226,59 @@ Supported operations are Add, Delete, and Get.
 Add **Channel**
 ``` xml
  <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Add>​
-      <CmdID>2</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">node</Format>​
-          <Type></Type>​
-        </Meta>​
-      </Item>​
-    </Add>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">node</Format>
+          <Type></Type>
+        </Meta>
+      </Item>
+    </Add>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 Delete **Channel**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Delete>​
-      <CmdID>3</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Delete>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Delete>
+      <CmdID>3</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 Get **Channel**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Get>​
-      <CmdID>4</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Get>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Get>
+      <CmdID>4</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 <a href="" id="policy-channels-channelname-maximumfilesize"></a>**Policy/Channels/_ChannelName_/MaximumFileSize**
@@ -295,85 +295,85 @@ The data type is integer.
 Add **MaximumFileSize**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Add>​
-      <CmdID>6</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">int</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>3</Data>​
-      </Item>​
-    </Add>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Add>
+      <CmdID>6</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>3</Data>
+      </Item>
+    </Add>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Delete **MaximumFileSize**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Delete>​
-      <CmdID>7</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Delete>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Delete>
+      <CmdID>7</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 Get **MaximumFileSize**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Get>​
-      <CmdID>5</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Get>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Get>
+      <CmdID>5</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Replace **MaximumFileSize**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Replace>​
-      <CmdID>8</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">int</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>5</Data>​
-      </Item>​
-    </Replace>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Replace>
+      <CmdID>8</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/MaximumFileSize
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>5</Data>
+      </Item>
+    </Replace>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
@@ -391,24 +391,24 @@ https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-c
 Add **SDDL**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Add>​
-      <CmdID>10</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">chr</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>YourSDDL</Data>​
-      </Item>​
-    </Add>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Add>
+      <CmdID>10</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>YourSDDL</Data>
+      </Item>
+    </Add>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
@@ -416,62 +416,62 @@ Delete **SDDL**
 ``` xml
 
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Delete>​
-      <CmdID>11</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Delete>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Delete>
+      <CmdID>11</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Get **SDDL**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Get>​
-      <CmdID>9</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Get>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Get>
+      <CmdID>9</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Replace **SDDL**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Replace>​
-      <CmdID>12</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">chr</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>YourNewSDDL</Data>​
-      </Item>​
-    </Replace>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Replace>
+      <CmdID>12</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/SDDL
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>YourNewSDDL</Data>
+      </Item>
+    </Replace>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
@@ -493,86 +493,86 @@ If you disable or do not configure this policy setting, the locally configured v
 Add **ActionWhenFull**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Add>​
-      <CmdID>14</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">chr</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>Archive</Data>​
-      </Item>​
-    </Add>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Add>
+      <CmdID>14</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>Archive</Data>
+      </Item>
+    </Add>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Delete **ActionWhenFull**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Delete>​
-      <CmdID>15</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Delete>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Delete>
+      <CmdID>15</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Get **ActionWhenFull**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Get>​
-      <CmdID>13</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Get>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Get>
+      <CmdID>13</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Replace **ActionWhenFull**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Replace>​
-      <CmdID>16</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">chr</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>Truncate</Data>​
-      </Item>​
-    </Replace>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Replace>
+      <CmdID>16</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/ActionWhenFull
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>Truncate</Data>
+      </Item>
+    </Replace>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
@@ -592,86 +592,86 @@ If you disable or do not configure this policy setting, the locally configured v
 Get **Enabled**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Get>​
-      <CmdID>17</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Get>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Get>
+      <CmdID>17</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Add **Enabled**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Add>​
-      <CmdID>18</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">bool</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>TRUE</Data>​
-      </Item>​
-    </Add>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Add>
+      <CmdID>18</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">bool</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>TRUE</Data>
+      </Item>
+    </Add>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Delete **Enabled**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Delete>​
-      <CmdID>19</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled​
-          </LocURI>​
-        </Target>​
-      </Item>​
-    </Delete>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Delete>
+      <CmdID>19</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled
+          </LocURI>
+        </Target>
+      </Item>
+    </Delete>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
 Replace **Enabled**
 ``` xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>​
-    <Replace>​
-      <CmdID>20</CmdID>​
-      <Item>​
-        <Target>​
-          <LocURI>​
-            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled​
-          </LocURI>​
-        </Target>​
-        <Meta>​
-          <Format xmlns="syncml:metinf">bool</Format>​
-          <Type>text/plain</Type>​
-        </Meta>​
-        <Data>FALSE</Data>​
-      </Item>​
-    </Replace>​
-    <Final/> ​
-  </SyncBody>​
+  <SyncBody>
+    <Replace>
+      <CmdID>20</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Vendor/MSFT/DiagnosticLog/Policy/Channels/ChannelName/Enabled
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">bool</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>FALSE</Data>
+      </Item>
+    </Replace>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 

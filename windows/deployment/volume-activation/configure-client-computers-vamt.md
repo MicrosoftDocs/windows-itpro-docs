@@ -2,7 +2,7 @@
 title: Configure Client Computers (Windows 10)
 description: Configure Client Computers
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 author: greg-lindsay
 ms.author: greglin
@@ -56,9 +56,9 @@ Enable the VAMT to access client computers across multiple subnets using the **W
    - Windows Management Instrumentation (WMI-In)
 
 4. In the **Windows Firewall with Advanced Security** dialog box, select **Inbound Rules** from the left-hand panel.
-  
+
 5. Right-click the desired rule and select **Properties** to open the **Properties** dialog box.
-  
+
    - On the **General** tab, select the **Allow the connection** checkbox.
    - On the **Scope** tab, change the Remote IP Address setting from "Local Subnet" (default) to allow the specific access you need.
    - On the **Advanced** tab, verify selection of all profiles that are applicable to the network (Domain or Private/Public).

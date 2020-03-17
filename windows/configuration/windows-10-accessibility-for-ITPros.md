@@ -9,18 +9,18 @@ ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 01/12/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: reference
 ---
 
-# Accessibility information for IT Professionals 
-Microsoft is dedicated to making its products and services accessible and usable for everyone. Windows 10 includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows. 
+# Accessibility information for IT Professionals
+Microsoft is dedicated to making its products and services accessible and usable for everyone. Windows 10 includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows.
 This topic helps IT administrators learn about built-in accessibility features, and includes a few recommendations for how to support people in your organization who use these features.
 
 ## General recommendations
-- **Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10. 
-- **Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings. 
+- **Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10.
+- **Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings.
 - **Encourage choice** – Allow people in your organization to customize their computers based on their needs. That might mean installing an add-on for their browser, or a non-Microsoft assistive technology.
 
 ## Vision
@@ -58,7 +58,7 @@ This topic helps IT administrators learn about built-in accessibility features, 
 | [Have Cortana assist](https://support.microsoft.com/help/17214/windows-10-what-is) | Cortana can handle a variety of tasks for you, including setting reminders, opening apps, finding facts, and sending emails and texts.|
 | [Dictate text and commands](https://support.microsoft.com/help/17208/windows-10-use-speech-recognition) | Windows includes speech recognition that lets you tell it what to do.|
 | Use the On-Screen Keyboard (OSK) | Instead of relying on a physical keyboard, you can use the [On-Screen Keyboard](https://support.microsoft.com/help/10762/windows-use-on-screen-keyboard) to type and enter data and select keys with a mouse or othet pointing device. Additionally, the OSK offers [word prediction and completion](https://support.microsoft.com/help/10762/windows-use-on-screen-keyboard).|
-| [Live Tiles](https://support.microsoft.com/help/17176/windows-10-organize-your-apps)| Because Live Tiles display constantly updated information for many apps, you don't have to bother actually opening them. You can arrange, resize, and move tiles as needed.| 
+| [Live Tiles](https://support.microsoft.com/help/17176/windows-10-organize-your-apps)| Because Live Tiles display constantly updated information for many apps, you don't have to bother actually opening them. You can arrange, resize, and move tiles as needed.|
 | [Keyboard assistance features](https://support.microsoft.com/help/27936)| You can personalize your keyboard to ignore repeated keys and do other helpful things if you have limited control of your hands.|
 | [Mouse Keys](https://support.microsoft.com/help/27936)|If a mouse is difficult to use, you can control the pointer by using your numeric keypad.|
 
@@ -86,6 +86,6 @@ This topic helps IT administrators learn about built-in accessibility features, 
 [Windows accessibility](https://www.microsoft.com/Accessibility/windows)
 
 [Designing accessible software]( https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
- 
+
 [Inclusive Design](https://www.microsoft.com/design/inclusive)
 

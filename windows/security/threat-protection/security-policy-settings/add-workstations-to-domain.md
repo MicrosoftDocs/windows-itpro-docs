@@ -2,7 +2,7 @@
 title: Add workstations to domain (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Add workstations to domain security policy setting.
 ms.assetid: b0c21af4-c928-4344-b1f1-58ef162ad0b3
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -86,7 +86,7 @@ This policy has the following security considerations:
 
 ### Vulnerability
 
-The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization does not want its users to have administrative 
+The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization does not want its users to have administrative
 privileges on their devices, users could install Windows on their computers and then add the computers to the domain. The user would know the password for the local administrator account, could log on with that account, and then add a personal domain account to the local Administrators group.
 
 ### Countermeasure
@@ -99,5 +99,5 @@ For organizations that have never allowed users to set up their own computers an
 
 ## Related topics
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

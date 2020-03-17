@@ -2,7 +2,7 @@
 title: DiagnosticLog DDF
 description: DiagnosticLog DDF
 ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -2177,9 +2177,9 @@ The content below are the latest versions of the DDF files:
 
 [DiagnosticLog configuration service provider](diagnosticlog-csp.md)
 
- 
 
- 
+
+
 
 
 

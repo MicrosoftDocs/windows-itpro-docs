@@ -45,9 +45,9 @@ Additionally, we recommend that when you plan your deployment you should also pl
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)<br>
 
- 
 
- 
+
+
 
 
 

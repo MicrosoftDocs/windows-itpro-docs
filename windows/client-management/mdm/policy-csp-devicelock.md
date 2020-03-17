@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## DeviceLock policies  
+## DeviceLock policies
 
 <dl>
   <dd>
@@ -70,7 +70,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
+<a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**
 
 <!--SupportedSKUs-->
 <table>
@@ -134,7 +134,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
+<a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**
 
 <!--SupportedSKUs-->
 <table>
@@ -199,7 +199,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
+<a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**
 
 <!--SupportedSKUs-->
 <table>
@@ -270,7 +270,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
+<a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**
 
 <!--SupportedSKUs-->
 <table>
@@ -319,7 +319,7 @@ Specifies whether device lock is enabled.
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
- 
+
 
 
 > [!IMPORTANT]
@@ -350,7 +350,7 @@ Specifies whether device lock is enabled.
 >   - AllowSimpleDevicePassword
 >   - MinDevicePasswordLength
 >   - AlphanumericDevicePasswordRequired
->   - MinDevicePasswordComplexCharacters 
+>   - MinDevicePasswordComplexCharacters
 >   - DevicePasswordExpiration
 >   - DevicePasswordHistory
 >   - MaxDevicePasswordFailedAttempts
@@ -369,7 +369,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
+<a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**
 
 <!--SupportedSKUs-->
 <table>
@@ -436,7 +436,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
+<a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**
 
 <!--SupportedSKUs-->
 <table>
@@ -503,7 +503,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
+<a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**
 
 <!--SupportedSKUs-->
 <table>
@@ -560,7 +560,7 @@ Value type is a string, which is the full image filepath and filename.
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
+<a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**
 
 <!--SupportedSKUs-->
 <table>
@@ -634,7 +634,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
+<a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**
 
 <!--SupportedSKUs-->
 <table>
@@ -702,7 +702,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
+<a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**
 
 <!--SupportedSKUs-->
 <table>
@@ -756,7 +756,7 @@ PIN enforces the following behavior for desktop and mobile devices:
 
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
--   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
+-   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts.
 -   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
 
 The default value is 1. The following list shows the supported values and actual enforced values:
@@ -824,7 +824,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
+<a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**
 
 <!--SupportedSKUs-->
 <table>
@@ -917,7 +917,7 @@ The following example shows how to set the minimum password length to 4 characte
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**  
+<a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**
 
 <!--SupportedSKUs-->
 <table>
@@ -968,7 +968,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP English name: *Minimum password age*
 -   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
 
@@ -978,7 +978,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-preventenablinglockscreencamera"></a>**DeviceLock/PreventEnablingLockScreenCamera**  
+<a href="" id="devicelock-preventenablinglockscreencamera"></a>**DeviceLock/PreventEnablingLockScreenCamera**
 
 <!--SupportedSKUs-->
 <table>
@@ -1030,13 +1030,13 @@ If you enable this setting, users will no longer be able to enable or disable lo
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent enabling lock screen camera*
 -   GP name: *CPL_Personalization_NoLockScreenCamera*
 -   GP path: *Control Panel/Personalization*
@@ -1048,7 +1048,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**  
+<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**
 
 <!--SupportedSKUs-->
 <table>
@@ -1100,13 +1100,13 @@ If you enable this setting, users will no longer be able to modify slide show se
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*

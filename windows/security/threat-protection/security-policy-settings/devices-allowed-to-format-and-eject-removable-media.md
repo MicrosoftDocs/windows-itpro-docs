@@ -2,7 +2,7 @@
 title: Devices Allowed to format and eject removable media (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Allowed to format and eject removable media security policy setting.
 ms.assetid: d1b42425-7244-4ab1-9d46-d68de823459c
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -51,13 +51,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Administrators| 
-| DC Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Administrators|
+| DC Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -72,7 +72,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Users could move data on removable disks to a different computer where they have administrative privileges. The user could then take ownership of any file, grant themselves full control, and view or modify any file. The fact that most removable storage devices eject media when a mechanical button 
+Users could move data on removable disks to a different computer where they have administrative privileges. The user could then take ownership of any file, grant themselves full control, and view or modify any file. The fact that most removable storage devices eject media when a mechanical button
 is pressed diminishes the advantage of this policy setting.
 
 ### Countermeasure

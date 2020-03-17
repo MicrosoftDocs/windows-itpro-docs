@@ -1,6 +1,6 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
-description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date. 
+description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date.
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: deploy, upgrade, update, configure
 ms.prod: w10
@@ -32,4 +32,4 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 - [Upgrade to Windows 10 with MDT](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Configuration Manager](../upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 - [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
- 
+

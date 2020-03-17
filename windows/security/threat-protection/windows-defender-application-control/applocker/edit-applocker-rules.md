@@ -2,7 +2,7 @@
 title: Edit AppLocker rules (Windows 10)
 description: This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 ms.assetid: 80016cda-b915-46a0-83c6-5e6b0b958e32
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -62,4 +62,4 @@ You can perform this task by using the Group Policy Management Console for an Ap
     -   Click the **Path** tab to configure the path on the computer in which the rule should be enforced.
     -   Click the **Exceptions** tab to create exceptions for specific files in a folder.
     -   When you finish updating the rule, click **OK**.
-    
+

@@ -2,7 +2,7 @@
 title: Configure S/MIME for Windows 10 and Windows 10 Mobile (Windows 10)
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, aka a certificate, can read them.
 ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
-ms.reviewer: 
+ms.reviewer:
 keywords: encrypt, digital signature
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -66,7 +66,7 @@ On the device, perform the following steps: (add select certificate)
 6.  (Optional) Select **Always sign with S/MIME**, **Always encrypt with S/MIME**, or both, to automatically digitally sign or encrypt all outgoing messages.
 
     >**Note:**  The option to sign or encrypt can be changed for individual messages, unless EAS policies prevent it.
-     
+
 7.  Tap the back arrow.
 
 ## Encrypt or sign individual messages
@@ -89,5 +89,5 @@ When you receive a signed email, the app provide feature to install correspondin
 3.  Tap **Install.**
 
     ![message security information](images/installcert.png)
- 
- 
+
+

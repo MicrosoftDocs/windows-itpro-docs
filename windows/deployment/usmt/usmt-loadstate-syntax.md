@@ -2,7 +2,7 @@
 title: LoadState Syntax (Windows 10)
 description: LoadState Syntax
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -690,7 +690,7 @@ The following table indicates which command-line options are not compatible with
 
 
 
-**Note**  
+**Note**
 You must specify either the **/key** or **/keyfile** option with the **/encrypt** option.
 
 

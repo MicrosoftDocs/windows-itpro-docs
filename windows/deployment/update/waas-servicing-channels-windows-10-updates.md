@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -20,14 +20,14 @@ ms.topic: article
 - Windows 10
 
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release channels, read [Servicing Channels](waas-overview.md#servicing-channels) first.
 >
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
+The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition.
 
 | Windows 10 edition | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- |
@@ -63,14 +63,14 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 - In Windows 10, version 1607 and later releases:
 
     Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to the Semi-Annual Channel
-    
+
 **To assign devices to to the Semi-Annual Channel by using MDM**
 
 
 - In Windows 10, version 1607 and later releases:
 
     ../Vendor/MSFT/Policy/Config/Update/**BranchReadinessLevel**
-    
+
 **To assign Windows 10 Mobile Enterprise devices to the Semi-Annual Channel by using MDM**
 
 
@@ -183,7 +183,7 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 ## Related topics
 
 - [Update Windows 10 in the enterprise](index.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

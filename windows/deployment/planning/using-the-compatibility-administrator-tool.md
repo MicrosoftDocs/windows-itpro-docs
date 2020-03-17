@@ -2,7 +2,7 @@
 title: Using the Compatibility Administrator Tool (Windows 10)
 description: This section provides information about using the Compatibility Administrator tool.
 ms.assetid: 57271e47-b9b9-4018-a0b5-7115a533166d
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -83,11 +83,11 @@ This section provides information about using the Compatibility Administrator to
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -6,7 +6,7 @@ description: Auto proxy configuration settings for Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: 5120aaf9-8ead-438a-8472-3cdd924b7d9e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,9 +43,9 @@ You have two options to restrict your users' ability to override the automatic c
 
 -   **Not Using Active Directory.** Choose the **Prevent changing proxy settings** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. For more information about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514).
 
- 
 
- 
+
+
 
 
 

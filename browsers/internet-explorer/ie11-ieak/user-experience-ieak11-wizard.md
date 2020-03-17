@@ -5,7 +5,7 @@ description: How to use the User Experience page in the IEAK 11 Customization Wi
 author: dansimp
 ms.prod: ie11
 ms.assetid: d3378058-e4f0-4a11-a888-b550af994bfa
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -30,9 +30,9 @@ The **User Experience** page of the Internet Explorer Customization Wizard 11 le
 
    - **Completely silent installation**. Lets you make all of the decisions for your employees and hides all of the progress and error messages. Because this mode is completely silent, if the installation fails, your employees won’t know and they won’t be able to run the installation package again.
      <p>Both the hands-free and completely silent installation options will:
-    
+
      - Answer prompts so Setup can continue.
-    
+
      - Accept the license agreement.
 
      - Determine that Internet Explorer 11 is installed and not just downloaded.
@@ -51,9 +51,9 @@ The **User Experience** page of the Internet Explorer Customization Wizard 11 le
 
 3. Click **Next** to go to the [Browser User Interface](browser-ui-ieak11-wizard.md) page or **Back** to go to the [Internal Install](internal-install-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

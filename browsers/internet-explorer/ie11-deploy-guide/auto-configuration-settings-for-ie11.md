@@ -6,7 +6,7 @@ description: Auto configuration settings for Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -67,9 +67,9 @@ You have two options to restrict your users' ability to override the automatic c
 
 -   **Not Using Active Directory.** Choose the **Disable changing Automatic Configuration settings** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object.
 
- 
 
- 
+
+
 
 
 

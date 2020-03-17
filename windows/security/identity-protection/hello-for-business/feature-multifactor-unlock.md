@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 03/20/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Multifactor Unlock
 
@@ -29,14 +29,14 @@ ms.reviewer:
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
+Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices.
 
 Which organizations can take advantage of Multi-factor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
 * Want to prevent Information Workers from sharing credentials.
 * Want their organizations to comply with regulatory two-factor authentication policy.
 * Want to retain the familiar Windows sign-in user experience and not settle for a custom solution.
- 
+
 You enable multi-factor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
 
 ## The Basics: How it works
@@ -45,18 +45,18 @@ First unlock factor credential provider and Second unlock credential provider ar
 
 The policy setting has three components:
 * First unlock factor credential provider
-* Second unlock factor credential provider 
+* Second unlock factor credential provider
 * Signal rules for device unlock
 
 ## Configuring Unlock Factors
 
-The **First unlock factor credential providers** and **Second unlock factor credential providers** portion of the policy setting each contain a comma separated list of credential providers. 
+The **First unlock factor credential providers** and **Second unlock factor credential providers** portion of the policy setting each contain a comma separated list of credential providers.
 
-Supported credential providers include: 
+Supported credential providers include:
 
 |Credential Provider| GUID|
 |:------------------|:----|
-|PIN | \{D6886603-9D2F-4EB2-B667-1971041FA96B}|  
+|PIN | \{D6886603-9D2F-4EB2-B667-1971041FA96B}|
 |Fingerprint | \{BEC09223-B018-416D-A0AC-523971B639F5}|
 |Facial Recognition | \{8AF662BF-65A0-4D0A-A540-A338A999D36F}|
 |Trusted Signal<br>(Phone proximity, Network location) | \{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}|
@@ -73,9 +73,9 @@ The default credential providers for the **Second unlock factor credential provi
 * Trusted Signal
 * PIN
 
-Configure a comma separated list of credential provider GUIDs you want to use as first and second unlock factors. While a credential provider can appear in both lists, remember that a credential supported by that provider can only satisfy one of the unlock factors. Listed credential providers do not need to be in any specific order. 
+Configure a comma separated list of credential provider GUIDs you want to use as first and second unlock factors. While a credential provider can appear in both lists, remember that a credential supported by that provider can only satisfy one of the unlock factors. Listed credential providers do not need to be in any specific order.
 
-For example, if you include the PIN and fingerprint credential providers in both first and second factor lists, a user can use their fingerprint or PIN as the first unlock factor.  However, whichever factor they used to satisfy the first unlock factor cannot be used to satisfy the second unlock factor.  Each factor can therefore be used exactly once. The Trusted Signal provider can *only* be specified as part of the Second unlock factor credential provider list.  
+For example, if you include the PIN and fingerprint credential providers in both first and second factor lists, a user can use their fingerprint or PIN as the first unlock factor.  However, whichever factor they used to satisfy the first unlock factor cannot be used to satisfy the second unlock factor.  Each factor can therefore be used exactly once. The Trusted Signal provider can *only* be specified as part of the Second unlock factor credential provider list.
 
 
 ## Configure Signal Rules for the Trusted Signal Credential Provider
@@ -95,7 +95,7 @@ Each rule element has a **signal** element.  All signal elements have a **type**
 
 |Attribute|Value|
 |---------|-----|
-| type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
+| type| "bluetooth" or "ipConfig" (Windows 10, version 1709)|
 | type| "wifi" (Windows 10, version 1803)
 
 #### Bluetooth
@@ -131,7 +131,7 @@ The **classofDevice** attribute defaults to Phone and uses the values from the f
 |Health|2304|
 |Uncategorized|7936|
 
-The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows 10 to lock the device once the signal strength weakens by more than measurement of 10.  
+The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows 10 to lock the device once the signal strength weakens by more than measurement of 10.
 
 RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
 
@@ -170,14 +170,14 @@ The IPv4 DNS server represented in Internet standard dotted-decimal notation. A 
 
 ##### IPv6Prefix
 The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string.  A **signal** element may only contain one **ipv6Prefix** element.<br>
-**Example** 
+**Example**
 ```
 <ipv6Prefix>21DA:D3::/48</ipv6Prefix>
 ```
 
 ##### IPv6Gateway
 The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6Gateway** element.<br>
-**Example** 
+**Example**
 ```
 <ipv6Gateway>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6Gateway>
 ```
@@ -236,7 +236,7 @@ Contains the type of security the client uses when connecting to the wireless ne
 
 **Example**
 ```
-<security>WPA2-Enterprise</security> 
+<security>WPA2-Enterprise</security>
 ```
 #### TrustedRootCA
 Contains the thumbprint of the trusted root certificate of the wireless network. This may be any valid trusted root certificate. The value is represented as hexadecimal string where each byte in the string is separated by a single space.  This element is optional.<br>
@@ -250,7 +250,7 @@ Contains numeric value ranging from 0 to 100 to represent the wireless network's
 ```
 <sig_quality>80</sig_quality>
 ```
- 
+
 ### Sample Trusted Signal Configurations
 
 These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
@@ -258,13 +258,13 @@ These examples are wrapped for readability.  Once properly formatted, the entire
 #### Example 1
 This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer, and DnsSuffix elements.
 ```
-<rule schemaVersion="1.0"> 
-    <signal type="ipConfig"> 
+<rule schemaVersion="1.0">
+    <signal type="ipConfig">
         <ipv4Prefix>10.10.10.0/24</ipv4Prefix>
         <ipv4DnsServer>10.10.0.1</ipv4DnsServer>
         <ipv4DnsServer>10.10.0.2</ipv4DnsServer>
-        <dnsSuffix>corp.contoso.com</dnsSuffix> 
-	</signal> 
+        <dnsSuffix>corp.contoso.com</dnsSuffix>
+	</signal>
 </rule>
 ```
 
@@ -275,10 +275,10 @@ This example configures an IpConfig signal type using a dnsSuffix element and a 
 >Separate each rule element using a comma.
 
 ```
-<rule schemaVersion="1.0"> 
-	<signal type="ipConfig"> 
-	    <dnsSuffix>corp.contoso.com</dnsSuffix> 
-	</signal> 
+<rule schemaVersion="1.0">
+	<signal type="ipConfig">
+	    <dnsSuffix>corp.contoso.com</dnsSuffix>
+	</signal>
 </rule>,
 <rule schemaVersion="1.0">
 	<signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
@@ -291,23 +291,23 @@ This example configures the same as example 2 using compounding And elements.  T
 <and>
   <signal type="ipConfig">
    <dnsSuffix>corp.microsoft.com</dnsSuffix>
-  </signal> 
+  </signal>
   <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </and>
 </rule>
 ```
-#### Example 4 
+#### Example 4
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 ```
-<rule schemaVersion="1.0"> 
-  <signal type="wifi"> 
-    <ssid>contoso</ssid> 
-    <bssid>12-ab-34-ff-e5-46</bssid> 
-    <security>WPA2-Enterprise</security> 
-    <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA> 
-    <sig_quality>80</sig_quality> 
-  </signal> 
-</rule> 
+<rule schemaVersion="1.0">
+  <signal type="wifi">
+    <ssid>contoso</ssid>
+    <bssid>12-ab-34-ff-e5-46</bssid>
+    <security>WPA2-Enterprise</security>
+    <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA>
+    <sig_quality>80</sig_quality>
+  </signal>
+</rule>
 ```
 
 ## Deploying Multifactor Unlock

@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Defender Antivirus exclusions on Windows Server 2016 or 2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Windows Servers 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Microsoft Defender Antivirus
@@ -56,7 +56,7 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
 
-4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
+4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**.
 
 ### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019
 

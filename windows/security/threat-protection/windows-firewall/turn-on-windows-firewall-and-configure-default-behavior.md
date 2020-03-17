@@ -2,7 +2,7 @@
 title: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior (Windows 10)
 description: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior
 ms.assetid: 3c3fe832-ea81-4227-98d7-857a3129db74
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -47,9 +47,9 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     4.  Change **Outbound connections** to **Allow (default)**.
 
- 
 
- 
+
+
 
 
 

@@ -6,7 +6,7 @@ description: Search to see if a specific site already appears in your global Ent
 author: dansimp
 ms.prod: ie11
 ms.assetid: e399aeaf-6c3b-4cad-93c9-813df6ad47f9
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Search your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
@@ -36,9 +36,9 @@ The search query searches all of the text. For example, entering *“micro”* w
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

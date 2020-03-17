@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune
@@ -24,7 +24,7 @@ ms.reviewer:
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to associate and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
- 
+
 ## Associate your WIP policy to your VPN policy by using Microsoft Intune
 Follow these steps to associate your WIP policy with your organization's existing VPN policy.
 
@@ -45,13 +45,13 @@ Follow these steps to associate your WIP policy with your organization's existin
 5. In the **Add Row** blade, type:
 
     - **Name.** Type a name for your setting, such as *EDPModeID*.
-    
+
     - **Description.** Type an optional description for your setting.
-    
+
     - **OMA-URI.** Type _./Vendor/MSFT/VPNv2/&lt;VPNProfileName&gt;/EDPModeId_ into the box.
 
     - **Data type.** Select **String** from the dropdown box
-    
+
     - **Value.** Type your fully-qualified domain that should be used by the OMA-URI setting. For example, _corp.contoso.com_.
 
         ![Microsoft Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)

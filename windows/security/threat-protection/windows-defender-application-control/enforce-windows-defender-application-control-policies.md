@@ -45,9 +45,9 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the WDAC policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
 
     To ensure that these options are enabled in a policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) as shown in the following commands. You can run these commands even if you're not sure whether options 9 and 10 are already enabled—if so, the commands have no effect.
-    
+
     `Set-RuleOption -FilePath $InitialCIPolicy -Option 9`
-    
+
     `Set-RuleOption -FilePath $InitialCIPolicy -Option 10`
 
 3. Copy the initial file to maintain an original copy:

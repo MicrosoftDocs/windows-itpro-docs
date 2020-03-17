@@ -1,6 +1,6 @@
 ---
 title: Configure a test lab to deploy Windows 10
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -34,7 +34,7 @@ Approximately 3 hours are required to configure the PoC environment. You will ne
 Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to your environment.
 
 > Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but the preferred method is to copy and paste these commands.
-> 
+>
 > A Windows PowerShell window can be used to run all commands in this guide. However, when commands are specified for a command prompt, you must either type CMD at the Windows PowerShell prompt to enter the command prompt, or preface the command with "cmd /c", or if desired you can escape special characters in the command using the back-tick character (`). In most cases, the simplest thing is to type cmd and enter a command prompt, type the necessary commands, then type "exit" to return to Windows PowerShell.
 
 Hyper-V is installed, configured and used extensively in this guide. If you are not familiar with Hyper-V, review the [terminology](#appendix-b-terminology-used-in-this-guide) used in this guide before starting.
@@ -711,7 +711,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     </pre>
 
    > The default gateway at 192.168.0.2 will be configured later in this guide.
-   > 
+   >
    > Note: A list of available tasks for an app will be populated the first time you run it on the taskbar. Because these tasks aren't available until the App has been run, you will not see the **Run as Administrator** task until you have left-clicked Windows PowerShell for the first time. In this newly created VM, you will need to left-click Windows PowerShell one time, and then you can right-click and choose Run as Administrator to open an elevated Windows PowerShell prompt.
 
 6. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
@@ -1099,9 +1099,9 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
- 
 
- 
+
+
 
 
 

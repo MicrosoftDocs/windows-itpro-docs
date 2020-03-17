@@ -1,5 +1,5 @@
 ---
-title: DeviceFileEvents table in the advanced hunting schema 
+title: DeviceFileEvents table in the advanced hunting schema
 description: Learn about file-related events in the DeviceFileEvents table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, devicefileevents, files, path, hash, sha1, sha256, md5, FileCreationEvents
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 

@@ -2,7 +2,7 @@
 title: Audit Group Membership (Windows 10)
 description: The advanced security audit policy setting, Audit Group Membership, enables you to audit group memberships when they are enumerated on the client PC.
 ms.assetid: 1CD7B014-FBD9-44B9-9274-CC5715DE58B9
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

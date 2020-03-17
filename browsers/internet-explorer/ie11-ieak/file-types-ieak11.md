@@ -5,7 +5,7 @@ description: Review the file types that are created and used by tools in the Int
 author: dansimp
 ms.prod: ie11
 ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

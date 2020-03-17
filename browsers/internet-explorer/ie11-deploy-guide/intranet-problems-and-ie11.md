@@ -5,7 +5,7 @@ description: How to fix intranet search problems with Internet Explorer 11
 author: dansimp
 ms.prod: ie11
 ms.assetid: 3ee71d93-d9d2-48e1-899e-07932c73faa6
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -35,9 +35,9 @@ To explicitly go to an intranet site, regardless of the environment, users can t
 
 If you'd like your entire organization to have single word entries default to an intranet site, you can turn on the **Go to an intranet site for a single word entry in the Address bar** Group Policy. With this policy turned on, a search for `contoso` automatically resolves to `https://contoso`.
 
- 
 
- 
+
+
 
 
 

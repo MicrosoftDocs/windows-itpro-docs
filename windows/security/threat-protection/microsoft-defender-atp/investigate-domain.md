@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)
 
 Investigate a domain to see if devices and servers in your enterprise network have been communicating with a known malicious domain.
 
@@ -35,7 +35,7 @@ You can investigate a domain by using the search feature or by clicking on a dom
 You can see information from the following sections in the URL view:
 
 - URL details, Contacts, Nameservers
-- Alerts related to this URL 
+- Alerts related to this URL
 - URL in organization
 - Most recent observed devices with URL
 
@@ -61,7 +61,7 @@ The Alerts tab can be adjusted to show more or less information, by selecting **
 
 ## Observed in organization
 
-The **Observed in organization** tab provides a chronological view on the events and associated alerts that were observed on the URL. This tab includes a timeline and a customizable table listing event details, such as the time, device, and a brief description of what happened. 
+The **Observed in organization** tab provides a chronological view on the events and associated alerts that were observed on the URL. This tab includes a timeline and a customizable table listing event details, such as the time, device, and a brief description of what happened.
 
 You can view events from different periods of time by entering the dates into the text fields above the table headers. You can also customize the time range by selecting different areas of the timeline.
 

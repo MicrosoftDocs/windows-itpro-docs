@@ -2,7 +2,7 @@
 title: Assign applications using roles in MDT (Windows 10)
 description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
 ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: settings, database, deploy
@@ -49,14 +49,14 @@ When the database is populated, you can use the MDT simulation environment to si
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Modify the C:\\MDT\\CustomSettings.ini file to look like the following:
 
-    ``` 
+    ```
     [Settings]
     Priority=CSettings, CRoles, RApplications, Default
     [Default]
     _SMSTSORGNAME=Contoso
     OSInstall=Y
     UserDataLocation=AUTO
-    TimeZoneName=Pacific Standard Time 
+    TimeZoneName=Pacific Standard Time
     AdminPassword=P@ssw0rd
     JoinDomain=contoso.com
     DomainAdmin=CONTOSO\MDT_JD
@@ -133,5 +133,5 @@ Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe 
 <BR>[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
 <BR>[Use web services in MDT](use-web-services-in-mdt.md)
 <BR>[Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
- 
- 
+
+

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -38,7 +38,7 @@ Use the following procedure to install the reporting server on a standalone comp
     * For the **Port binding**, specify a unique, five-digit port number for App-V to use, such as **55555**. Make sure that the specified port isn't being used by another website.
 8. Select **Install**.
 
- 
+
 
 
 

@@ -5,7 +5,7 @@ description: We’re sorry. We’ve removed all of the functionality included on
 author: dansimp
 ms.prod: ie11
 ms.assetid: 1edaa7db-cf6b-4f94-b65f-0feff3d4081a
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

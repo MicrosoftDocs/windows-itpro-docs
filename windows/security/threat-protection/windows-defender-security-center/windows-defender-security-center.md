@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -51,7 +51,7 @@ You can find more information about each section, including options for configur
 - [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall.
 - [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations.
 - [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
-- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.  
+- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.
 - [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online.
 
 > [!NOTE]
@@ -77,15 +77,15 @@ You can find more information about each section, including options for configur
 ## How the Windows Security app works with Windows security features
 
 > [!IMPORTANT]
-> Microsoft Defender AV and the Windows Security app use similarly named services for specific purposes.  
+> Microsoft Defender AV and the Windows Security app use similarly named services for specific purposes.
 >
-> The Windows Security app uses the Windows Security Service (*SecurityHealthService* or *Windows Security Health Servce*), which in turn utilizes the Security Center service ([*wscsvc*](https://technet.microsoft.com/library/bb457154.aspx#EDAA)) to ensure the app provides the most up-to-date information about the protection status on the endpoint, including protection offered by third-party antivirus products, Windows Defender Firewall, third-party firewalls, and other security protection.  
+> The Windows Security app uses the Windows Security Service (*SecurityHealthService* or *Windows Security Health Servce*), which in turn utilizes the Security Center service ([*wscsvc*](https://technet.microsoft.com/library/bb457154.aspx#EDAA)) to ensure the app provides the most up-to-date information about the protection status on the endpoint, including protection offered by third-party antivirus products, Windows Defender Firewall, third-party firewalls, and other security protection.
 >
->These services do not affect the state of Microsoft Defender AV. Disabling or modifying these services will not disable Microsoft Defender AV, and will lead to a lowered protection state on the endpoint, even if you are using a third-party antivirus product.  
+>These services do not affect the state of Microsoft Defender AV. Disabling or modifying these services will not disable Microsoft Defender AV, and will lead to a lowered protection state on the endpoint, even if you are using a third-party antivirus product.
 >
 >Microsoft Defender AV will be [disabled automatically when a third-party antivirus product is installed and kept up to date](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 >
-> Disabling the Windows Security Center service will not disable Microsoft Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security).  
+> Disabling the Windows Security Center service will not disable Microsoft Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 > [!WARNING]
 > If you disable the Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.

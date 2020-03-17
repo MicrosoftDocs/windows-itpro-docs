@@ -2,7 +2,7 @@
 title: Storage DDF file
 description: See how storage configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: 247062A3-4DFB-4B14-A3D1-68D02C27703C
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -77,9 +77,9 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
 
- 
+
+
 
 
 

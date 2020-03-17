@@ -2,7 +2,7 @@
 title: AppLocker architecture and components (Windows 10)
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
 ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -44,5 +44,5 @@ Before a script file is run, the script host (for example. for .ps1 files the sc
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
+
+

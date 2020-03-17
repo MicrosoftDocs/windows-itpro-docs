@@ -8,13 +8,13 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Multivariant (Windows Configuration Designer reference)
 
-Use to select a default profile for mobile devices that have multivariant configurations. 
+Use to select a default profile for mobile devices that have multivariant configurations.
 
 ## Applies to
 

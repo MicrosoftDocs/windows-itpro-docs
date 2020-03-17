@@ -13,16 +13,16 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+ms.reviewer:
 ---
 
-# Windows Defender Credential Guard: Known issues 
+# Windows Defender Credential Guard: Known issues
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
- 
-Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
+
+Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
@@ -43,14 +43,14 @@ The following known issues have been fixed by servicing releases made available 
 
     This issue can potentially lead to unexpected account lockouts. The issue was fixed in servicing updates for each of the following operating systems:
 
-    - Windows 10 Version 1607 and Windows Server 2016: 
-    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/help/4015217) 
+    - Windows 10 Version 1607 and Windows Server 2016:
+    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/help/4015217)
     - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/help/4015219)
     - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/help/4015221)
 
 ## Known issues involving third-party applications
 
-The following issue affects the Java GSS API. See the following Oracle bug database article: 
+The following issue affects the Java GSS API. See the following Oracle bug database article:
 
 - [JDK-8161921: Windows 10 Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
@@ -60,11 +60,11 @@ The following issue affects Cisco AnyConnect Secure Mobility Client:
 
 - [Blue screen on Windows 10 computers running Hypervisor-Protected Code Integrity and Windows Defender Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
 
-*Registration required to access this article. 
+*Registration required to access this article.
 
 The following issue affects McAfee Application and Change Control (MACC):
 - [KB88869 Windows 10 machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Windows Defender Credential Guard is enabled](https://kc.mcafee.com/corporate/index?page=content&id=KB88869) <sup>[1]</sup>
-   
+
 
 The following issue affects AppSense Environment Manager.
   For further information, see the following Knowledge Base article:
@@ -76,9 +76,9 @@ The following issue affects Citrix applications:
 <sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10 or Windows Server 2016 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
 
 - [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4032786)
-    
+
 For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
-    
+
 
   \** Registration is required to access this article.
 
@@ -105,6 +105,6 @@ Windows Defender Credential Guard is not supported by either these products, pro
 - For Windows Defender Credential Guard on Windows 10 with Symantec Endpoint Protection
   [Windows 10 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
 
-  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows 10 or specific versions of Windows 10. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
+  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows 10 or specific versions of Windows 10. Specific computer system models may be incompatible with Windows Defender Credential Guard.
 
   Microsoft encourages third-party vendors to contribute to this page by providing relevant product support information and by adding links to their own product support statements.

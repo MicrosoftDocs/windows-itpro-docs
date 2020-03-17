@@ -1,7 +1,7 @@
 ---
 title: Azure AD Join Single Sign-on Deployment
 description: Learn how to provide single sign-on to your on-premises resources for Azure Active Directory joined devices, using Windows Hello for Business.
-keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
+keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Azure AD Join Single Sign-on Deployment
 
@@ -24,10 +24,10 @@ ms.reviewer:
 -   Hybrid deployment
 
 Windows Hello for Business combined with Azure Active Directory joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential.  Some resources may remain on-premises as enterprises transition resources to the cloud and Azure AD joined devices may need to access these resources.  With additional configurations to your current hybrid deployment, you can provide single sign-on to your on-premises resources for Azure Active Directory joined devices using Windows Hello for Business, using a key or a certificate.
- 
+
 ## Key vs. Certificate
 
-Enterprises can use either a key or a certificate to provide single-sign on for on-premises resources.  Both types of authentication provide the same security; one is not more secure than the other.  
+Enterprises can use either a key or a certificate to provide single-sign on for on-premises resources.  Both types of authentication provide the same security; one is not more secure than the other.
 
 When using a key, the on-premises environment needs an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 

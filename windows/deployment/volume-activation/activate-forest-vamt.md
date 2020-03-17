@@ -2,7 +2,7 @@
 title: Activate an Active Directory Forest Online (Windows 10)
 description: Activate an Active Directory Forest Online
 ms.assetid: 9b5bc193-799b-4aa5-9d3e-0e495f7195d3
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -19,7 +19,7 @@ ms.topic: article
 
 You can use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate an Active Directory (AD) forest over the Internet. ADBA enables certain products to inherit activation from the domain.
 
-**Important**  
+**Important**
 ADBA is only applicable to Generic Volume License Keys (GVLKs) and KMS Host keys (CSVLKs). To use ADBA, one or more KMS Host keys (CSVLKs) must be installed on the AD forest, and client keys (GVLKs) must be installed on the client products.
 
 ## Requirements
@@ -37,7 +37,7 @@ Before performing online activation, ensure that the network and the VAMT instal
 4.  In the **Install Product Key** dialog box, select the KMS Host key (CSVLK) that you want to apply to the AD forest.
 5.  If required, enter a new Active Directory-Based Activation Object name
 
-    **Important**  
+    **Important**
     If you want to rename the ADBA object, you must do it now. After you click **Install Key**, the name cannot be changed.
 
 6.  Click **Install Key**.

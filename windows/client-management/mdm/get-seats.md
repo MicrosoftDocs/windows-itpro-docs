@@ -2,7 +2,7 @@
 title: Get seats
 description: The Get seats operation retrieves the information about active seats in the Micorsoft Store for Business.
 ms.assetid: 32945788-47AC-4259-B616-F359D48F4F2F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -37,7 +37,7 @@ The **Get seats** operation retrieves the information about active seats in the 
 </tbody>
 </table>
 
- 
+
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -79,7 +79,7 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
+
 ## Response
 
 ### Response body
@@ -125,9 +125,9 @@ The response body contains [SeatDetailsResultSet](data-structures-windows-store-
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

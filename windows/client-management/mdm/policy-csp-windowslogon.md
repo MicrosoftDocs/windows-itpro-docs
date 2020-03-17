@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## WindowsLogon policies  
+## WindowsLogon policies
 
 <dl>
   <dd>
@@ -49,7 +49,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**  
+<a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**
 
 <!--SupportedSKUs-->
 <table>
@@ -94,11 +94,11 @@ manager: dansimp
 <!--Description-->
 This policy setting controls whether a device automatically signs in and locks the last interactive user after the system restarts or after a shutdown and cold boot.
 
-This occurs only if the last interactive user did not sign out before the restart or shutdown.​
+This occurs only if the last interactive user did not sign out before the restart or shutdown.
 
-If the device is joined to Active Directory or Azure Active Directory, this policy applies only to Windows Update restarts. Otherwise, this policy applies to both Windows Update restarts and user-initiated restarts and shutdowns.​
+If the device is joined to Active Directory or Azure Active Directory, this policy applies only to Windows Update restarts. Otherwise, this policy applies to both Windows Update restarts and user-initiated restarts and shutdowns.
 
-If you do not configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
+If you do not configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.
 
 After enabling this policy, you can configure its settings through the [ConfigAutomaticRestartSignOn](#windowslogon-configautomaticrestartsignon) policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
 
@@ -107,13 +107,13 @@ If you disable this policy setting, the device does not configure automatic sign
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Sign-in and lock last interactive user automatically after a restart*
 -   GP name: *AutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
@@ -134,7 +134,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**  
+<a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**
 
 <!--SupportedSKUs-->
 <table>
@@ -181,7 +181,7 @@ This policy setting controls the configuration under which an automatic restart,
 
 If you enable this policy setting, you can choose one of the following two options:
 
-- Enabled if BitLocker is on and not suspended: Specifies that automatic sign on and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
+- Enabled if BitLocker is on and not suspended: Specifies that automatic sign on and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 BitLocker is suspended during updates if:
     - The device does not have TPM 2.0 and PCR7
     - The device does not use a TPM-only protector
@@ -192,13 +192,13 @@ If you disable or do not configure this setting, automatic sign on defaults to t
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot*
 -   GP name: *ConfigAutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
@@ -219,7 +219,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**  
+<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**
 
 <!--SupportedSKUs-->
 <table>
@@ -271,13 +271,13 @@ If you disable or do not configure this policy setting, users can choose which a
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
 -   GP path: *System/Logon*
@@ -289,7 +289,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**  
+<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**
 
 <!--SupportedSKUs-->
 <table>
@@ -366,13 +366,13 @@ Here is an example to enable this policy:
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
 -   GP path: *System/Logon*
@@ -384,7 +384,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**  
+<a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**
 
 <!--SupportedSKUs-->
 <table>
@@ -440,7 +440,7 @@ If you do not configure this policy setting, the user who completes the initial 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Show first sign-in animation*
 -   GP name: *EnableFirstLogonAnimation*
 -   GP path: *System/Logon*
@@ -448,7 +448,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - disabled
 -   1 - enabled
 <!--/SupportedValues-->
@@ -463,7 +463,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**  
+<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**
 
 <!--SupportedSKUs-->
 <table>
@@ -506,7 +506,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows local users to be enumerated on domain-joined computers.  
+This policy setting allows local users to be enumerated on domain-joined computers.
 
 If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
 
@@ -515,13 +515,13 @@ If you disable or do not configure this policy setting, the Logon UI will not en
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enumerate local users on domain-joined computers*
 -   GP name: *EnumerateLocalUsers*
 -   GP path: *System/Logon*
@@ -533,7 +533,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
+<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**
 
 <!--SupportedSKUs-->
 <table>
@@ -580,7 +580,7 @@ Added in Windows 10, version 1703. This policy setting allows you to hide the Sw
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Hide entry points for Fast User Switching*
 -   GP name: *HideFastUserSwitching*
 -   GP path: *System/Logon*

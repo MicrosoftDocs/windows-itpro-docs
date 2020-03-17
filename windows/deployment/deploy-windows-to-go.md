@@ -2,7 +2,7 @@
 title: Deploy Windows To Go in your organization (Windows 10)
 description: This topic helps you to deploy Windows To Go in your organization.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -88,13 +88,13 @@ r
 
 ~~~
     >[!IMPORTANT]
-    >The BitLocker recovery password will be saved in the documents library of the computer used to create the workspace automatically. If your organization is using Active Directory Domain Services (AD DS) to store recovery passwords it will also be saved in AD DS under the computer account of the computer used to create the workspace. This password will be used only if you need to recover access to the drive because the BitLocker password specified in the previous step is not available, such as if a password is lost or forgotten. For more information about BitLocker and AD DS, see [Active Directory Domain Services considerations](https://go.microsoft.com/fwlink/p/?LinkId=619157).    
+    >The BitLocker recovery password will be saved in the documents library of the computer used to create the workspace automatically. If your organization is using Active Directory Domain Services (AD DS) to store recovery passwords it will also be saved in AD DS under the computer account of the computer used to create the workspace. This password will be used only if you need to recover access to the drive because the BitLocker password specified in the previous step is not available, such as if a password is lost or forgotten. For more information about BitLocker and AD DS, see [Active Directory Domain Services considerations](https://go.microsoft.com/fwlink/p/?LinkId=619157).
 ~~~
 
 8. Verify that the USB drive inserted is the one you want to provision for Windows To Go and then click **Create** to start the Windows To Go workspace creation process.
 
     >[!WARNING]
-    >The USB drive identified will be reformatted as part of the Windows To Go provisioning process and any data on the drive will be erased.  
+    >The USB drive identified will be reformatted as part of the Windows To Go provisioning process and any data on the drive will be erased.
 
 9. Wait for the creation process to complete, which can take 20 to 30 minutes. A completion page will be displayed that tells you when your Windows To Go workspace is ready to use. From the completion page you can configure the Windows To Go startup options to configure the current computer as a Windows To Go host computer.
 
@@ -147,7 +147,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
     >[!TIP]
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-    ``` 
+    ```
     #The WIM file must contain a sysprep generalized image.
     dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
     ```
@@ -156,14 +156,14 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 
 ~~~
-``` 
+```
 W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 ```
 ~~~
 
 5. Apply SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
 
-    ``` 
+    ```
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
       <settings pass="offlineServicing">
@@ -195,13 +195,13 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 
 6. Place the **san\_policy.xml** file created in the previous step into the root directory of the Windows partition on the Windows To Go drive (W: from the previous examples) and run the following command:
 
-    ``` 
+    ```
     Dism.exe /Image:W:\ /Apply-Unattend:W:\san_policy.xml
     ```
 
 7. Create an answer file (unattend.xml) that disables the use of Windows Recovery Environment with Windows To Go. You can use the following code sample to create a new answer file or you can paste it into an existing answer file:
 
-    ``` 
+    ```
     <?xml version="1.0" encoding="utf-8"?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
         <settings pass="oobeSystem">
@@ -301,7 +301,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 1. Start the host computer and sign in using a user account with privileges to add workstations to the domain and then run the following command from an elevated command prompt replacing the example placeholder parameters (denoted by &lt;&gt;) with the ones applicable for your environment:
 
-    ``` 
+    ```
     djoin /provision /domain <exampledomain.com> /machine <examplewindowstogo_workspace_name> /certtemplate <WorkstationAuthentication_template> /policynames <DirectAccess Client Policy: {GUID}> /savefile <C:\example\path\domainmetadatafile> /reuse
     ```
 
@@ -314,7 +314,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 4. From the Windows PowerShell command prompt run:
 
-    ``` 
+    ```
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -355,7 +355,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 >[!TIP]
 >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-``` 
+```
 #The WIM file must contain a sysprep generalized image.
 dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
 ```
@@ -363,13 +363,13 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
 
 6. After those commands have completed, run the following command:
 
-   ``` 
+   ```
    djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows
    ```
 
 7. Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
 
-   ``` 
+   ```
    <?xml version="1.0" encoding="utf-8"?>
    <unattend xmlns="urn:schemas-microsoft-com:unattend">
        <settings pass="oobeSystem">
@@ -446,7 +446,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 -   If BitLocker protection is enabled during provisioning, the BitLocker recovery keys will be stored under the computer account of the computer used for provisioning the drives. If backing up recovery keys to AD DS is not used, the recovery keys will need to be printed or saved to a file for each drive. The IT administrator must track which keys were assigned to which Windows To Go drive.
 
--   **Warning**  
+-   **Warning**
     If BitLocker is enabled after distribution, the recovery key will be backed up to AD DS under the computer account of the workspace. If backing up recovery keys to AD DS is not used, they can be printed or saved to a file by the user. If the IT administrator wants a central record of recovery keys, a process by which the user provides the key to the IT department must be put in place.
 
 #### To enable BitLocker during provisioning
@@ -462,7 +462,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     >[!NOTE]
     >If you used the [manual method for creating a workspace](https://go.microsoft.com/fwlink/p/?LinkId=619174) you should have already provisioned the Windows To Go drive. If so, you can continue on to the next step.
 
-   ``` 
+   ```
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -501,20 +501,20 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    >[!TIP]
    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-   ``` 
+   ```
    #The WIM file must contain a sysprep generalized image.
    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
    ```
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
 
-   ``` 
+   ```
    $BitlockerRecoveryProtector = Add-BitLockerKeyProtector W: -RecoveryPasswordProtector
    ```
 
 6. Next, use the following cmdlets to save the recovery key to a file:
 
-   ``` 
+   ```
    #The BitLocker Recovery key is essential if for some reason you forget the BitLocker password
    #This recovery key can also be backed up into Active Directory using manage-bde.exe or the
    #PowerShell cmdlet Backup-BitLockerKeyProtector.
@@ -524,7 +524,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 7. Then, use the following cmdlets to add the password as a secure string. If you omit the password the cmdlet will prompt you for the password before continuing the operation:
 
-   ``` 
+   ```
    # Create a variable to store the password
    $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force
    Enable-BitLocker W: -PasswordProtector $spwd
@@ -538,7 +538,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    >[!WARNING]
    >If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
 
-   If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
+   If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker).
 
 9. Safely remove the Windows To Go drive.
 
@@ -588,7 +588,7 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 3. Configure the PowerShell execution policy. By default PowerShell’s execution policy is set to Restricted; that means that scripts won’t run until you have explicitly given them permission to. To configure PowerShell’s execution policy to allow the script to run, use the following command from an elevated PowerShell prompt:
 
-    ``` 
+    ```
     Set-ExecutionPolicy RemoteSigned
     ```
 
@@ -596,14 +596,14 @@ The sample script creates an unattend file that streamlines the deployment proce
 
    > [!TIP]
    > To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally type the following cmdlet, replacing &lt;cmdlet-name&gt; with the name of the cmdlet you want to see the help for:
-   > 
+   >
    > `Get-Help <cmdlet-name> -Online`
-   > 
+   >
    > This command causes Windows PowerShell to open the online version of the help topic in your default Internet browser.
 
 #### Windows To Go multiple drive provisioning sample script
 
-``` 
+```
 <#
 .SYNOPSIS
 Windows To Go multiple drive provisioning sample script.
@@ -978,7 +978,7 @@ Before provisioning your Windows To Go drive you need to consider if your worksp
 
 In the PowerShell provisioning script, after the image has been applied, you can add the following commands that will correctly set the keyboard settings. The following example uses the Japanese keyboard layout:
 
-``` 
+```
             reg load HKLM\WTG-Keyboard ${OSDriveLetter}:\Windows\System32\config\SYSTEM > info.log
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v LayerDriver /d JPN:kbd106dll /t REG_SZ /f
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardIdentifier /d PCAT_106KEY /t REG_SZ /f

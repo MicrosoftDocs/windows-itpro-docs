@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## EnterpriseCloudPrint policies  
+## EnterpriseCloudPrint policies
 
 <dl>
   <dd>
@@ -46,7 +46,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
+<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**
 
 <!--SupportedSKUs-->
 <table>
@@ -101,7 +101,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
+<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**
 
 <!--SupportedSKUs-->
 <table>
@@ -156,7 +156,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
+<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**
 
 <!--SupportedSKUs-->
 <table>
@@ -201,7 +201,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <!--Description-->
 Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
-The datatype is a string. 
+The datatype is a string.
 
 The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
 
@@ -211,7 +211,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
+<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**
 
 <!--SupportedSKUs-->
 <table>
@@ -266,7 +266,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
+<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**
 
 <!--SupportedSKUs-->
 <table>
@@ -311,7 +311,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!--Description-->
 Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
 
-The datatype is an integer. 
+The datatype is an integer.
 
 For Windows Mobile, the default value is 20.
 
@@ -321,7 +321,7 @@ For Windows Mobile, the default value is 20.
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
+<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**
 
 <!--SupportedSKUs-->
 <table>

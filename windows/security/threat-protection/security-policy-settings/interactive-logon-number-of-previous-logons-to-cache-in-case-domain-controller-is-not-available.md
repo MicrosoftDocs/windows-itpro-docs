@@ -2,7 +2,7 @@
 title: Interactive logon Number of previous logons to cache (in case domain controller is not available) (Windows 10)
 description: Best practices and more for the security policy setting, Interactive logon Number of previous logons to cache (in case domain controller is not available).
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ The system cannot log you on now because the domain *DOMAIN NAME* is not availab
 
 The value of this policy setting indicates the number of users whose logon information the server caches locally. If the value is 10, the server caches logon information for 10 users. When an eleventh user logs on to the device, the server overwrites the oldest cached logon session.
 
-Users who access the server console will have their logon credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by 
+Users who access the server console will have their logon credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by
 encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
 
 ### Possible values
@@ -48,7 +48,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) do not recommend configuring this setting. 
+The [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) do not recommend configuring this setting.
 
 ### Location
 
@@ -60,13 +60,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | 10 logons| 
-| DC Effective Default Settings | No effect| 
-| Member Server Effective Default Settings | 10 logons| 
-| Client Computer Effective Default Settings| 10 logons| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | 10 logons|
+| DC Effective Default Settings | No effect|
+| Member Server Effective Default Settings | 10 logons|
+| Client Computer Effective Default Settings| 10 logons|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -101,7 +101,7 @@ Configure the **Interactive logon: Number of previous logons to cache (in case d
 
 ### Potential impact
 
-Users cannot log on to any devices if there is no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's logon information is still in the cache, even if a 
+Users cannot log on to any devices if there is no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's logon information is still in the cache, even if a
 member of the IT department has recently logged on to the device to perform system maintenance. This method allows users to log on to their computers when they are not connected to the organization's network.
 
 ## Related topics

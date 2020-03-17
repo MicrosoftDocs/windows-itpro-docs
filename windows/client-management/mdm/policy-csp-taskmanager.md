@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## TaskManager policies  
+## TaskManager policies
 
 <dl>
   <dd>
@@ -30,7 +30,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="taskmanager-allowendtask"></a>**TaskManager/AllowEndTask**  
+<a href="" id="taskmanager-allowendtask"></a>**TaskManager/AllowEndTask**
 
 <!--SupportedSKUs-->
 <table>
@@ -75,7 +75,7 @@ manager: dansimp
 <!--Description-->
 This setting determines whether non-administrators can use Task Manager to end tasks.
 
-Value type is integer. Supported values:  
+Value type is integer. Supported values:
 -  0 - Disabled. EndTask functionality is blocked in TaskManager.
 -  1 - Enabled (default).  Users can perform EndTask in TaskManager.
 
@@ -87,8 +87,8 @@ Value type is integer. Supported values:
 
 <!--/Example-->
 <!--Validation-->
-**Validation procedure:**  
-When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager 
+**Validation procedure:**
+When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager
 When the policy is set to 0 - users CANNOT execute 'End task' on processes in TaskManager
 
 <!--/Validation-->

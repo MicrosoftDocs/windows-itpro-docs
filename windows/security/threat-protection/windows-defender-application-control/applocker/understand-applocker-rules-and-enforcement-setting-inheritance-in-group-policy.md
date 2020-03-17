@@ -2,7 +2,7 @@
 title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows 10)
 description: This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 ms.assetid: c1c5a3d3-540a-4698-83b5-0dab5d27d871
-ms.reviewer: 
+ms.reviewer:
 ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ Group Policy merges AppLocker policy in two ways:
     1.  **Explicit deny.** An administrator created a rule to deny a file.
     2.  **Explicit allow.** An administrator created a rule to allow a file.
     3.  **Implicit deny.** This is also called the default deny because all files that are not affected by an allow rule are automatically blocked.
-     
+
 -   **Enforcement settings.** The last write to the policy is applied. For example, if a higher-level GPO has the enforcement setting configured to **Enforce rules** and the closest GPO has the setting configured to **Audit only**, **Audit only** is enforced. If enforcement is not configured on the closest GPO, the setting from the closest linked GPO will be enforced.
 Because a computer's effective policy includes rules from each linked GPO, duplicate rules or conflicting rules could be enforced on a user's computer. Therefore, you should carefully plan your deployment to ensure that only rules that are necessary are present in a GPO.
 

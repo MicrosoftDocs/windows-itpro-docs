@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -61,12 +61,12 @@ To set the time zone:
 3. Select **Timezone UTC** or your local time zone, for example -7:00.
 
 ### Regional settings
-To apply different date formats for Microsoft Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
+To apply different date formats for Microsoft Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser.
 
 
 **Internet Explorer (IE) and Microsoft Edge**
 
-IE and Microsoft Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
+IE and Microsoft Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel.
 
 
 #### Known issues with regional formats

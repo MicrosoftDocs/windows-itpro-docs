@@ -6,7 +6,7 @@ description: How to install the Internet Explorer 11 update using System Center 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9ede9722-29b3-4cb7-956d-ffa91e7bedbd
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -31,9 +31,9 @@ You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Con
 
 You can also use System Center Essentials 2010 to deploy IE11 installation packages. For info, see [System Center Essentials 2010](https://go.microsoft.com/fwlink/p/?linkid=395200) and the [System Center Essentials 2010 Operations Guide](https://go.microsoft.com/fwlink/p/?LinkId=214266).
 
- 
 
- 
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Scenarios - threat and vulnerability management
 description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
-keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls 
+keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -42,10 +42,10 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
 DeviceName=any(DeviceName) by DeviceId
-| join kind =inner(DeviceAlertEvents) on DeviceId  
+| join kind =inner(DeviceAlertEvents) on DeviceId
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities),
 DeviceName=any(DeviceName) by DeviceId, AlertId
-| project DeviceName, NumOfVulnerabilities, AlertId  
+| project DeviceName, NumOfVulnerabilities, AlertId
 | order by NumOfVulnerabilities desc
 
 ```

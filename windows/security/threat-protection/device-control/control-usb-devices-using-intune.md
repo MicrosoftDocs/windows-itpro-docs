@@ -25,10 +25,10 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 2. Configure to allow or block only certain removable devices and prevent threats.
     1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor IDs, product IDs, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
-    2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-           - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
-           - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
-           - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
+    2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:
+           - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.
+           - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.
+           - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.
 3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
 
 4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
@@ -98,12 +98,12 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id).
 
 For example:
 
 1. Remove class USBDevice from the **Allow installation of devices using drivers that match these device setup**.
-2. Add the vendor ID or product ID to allow in the **Allow installation of device that match any of these device IDs**. 
+2. Add the vendor ID or product ID to allow in the **Allow installation of device that match any of these device IDs**.
 
 
 #### Prevent installation and usage of USB drives and other peripherals
@@ -116,9 +116,9 @@ If you want to prevent the installation of a device class or certain devices, yo
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
 
-The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of vendor or product IDs for devices that Windows is prevented from installing. 
+The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of vendor or product IDs for devices that Windows is prevented from installing.
 
-To prevent installation of devices that match any of these device IDs: 
+To prevent installation of devices that match any of these device IDs:
 
 1. [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id) for devices that you want Windows to prevent from installing.
 ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
@@ -139,15 +139,15 @@ For information on vendor and product ID formats, see [Standard USB Identifiers]
 
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
-The following is an example for looking up a device vendor ID or product ID using PowerShell: 
+The following is an example for looking up a device vendor ID or product ID using PowerShell:
 ``` PowerShell
 Get-WMIObject -Class Win32_DiskDrive |
-Select-Object -Property * 
+Select-Object -Property *
 ```
 
-The **Prevent installation of devices using drivers that match these device setup classes** policy allows you to specify device setup classes that Windows is prevented from installing. 
+The **Prevent installation of devices using drivers that match these device setup classes** policy allows you to specify device setup classes that Windows is prevented from installing.
 
-To prevent installation of particular classes of devices: 
+To prevent installation of particular classes of devices:
 
 1. Find the GUID of the device setup class from [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
@@ -169,9 +169,9 @@ To prevent installation of particular classes of devices:
 
    ![Create profile](images/create-profile.png)
 
-4. Click **Configure** > **General**.  
+4. Click **Configure** > **General**.
 
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only.
 
    ![General settings](images/general-settings.png)
 
@@ -190,7 +190,7 @@ Allowing installation of specific devices requires also enabling [DeviceInstalla
 
 Microsoft Defender ATP blocks installation and usage of prohibited peripherals by using either of these options:
 
-- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
+- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.
 - [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
 ### Allow installation and usage of specifically approved peripherals with matching device instance IDs
@@ -218,7 +218,7 @@ The Microsoft Defender ATP baseline settings represent the recommended configura
 ![Baselines](images/baselines.png)
 
 ## Prevent threats from removable storage
-  
+
 Removable storage devices can introduce additional security risk to your organization. Microsoft Defender ATP can help identify and block malicious files on removable storage devices.
 
 Microsoft Defender ATP can also prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
@@ -226,7 +226,7 @@ Microsoft Defender ATP can also prevent USB peripherals from being used on devic
 Note that if you block USB devices or any other device classes using the device installation policies, connected devices, such as phones, can still charge.
 
 >[!NOTE]
->Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization. 
+>Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization.
 
 The following table describes the ways Microsoft Defender ATP can help prevent threats from removable storage.
 
@@ -251,7 +251,7 @@ Protecting authorized removable storage with Microsoft Defender Antivirus requir
 >[!NOTE]
 >We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Microsoft Defender Antivirus** > **Real-time monitoring**.
 
-<!-- Need to build out point in the preceding note. 
+<!-- Need to build out point in the preceding note.
 -->
 
 ### Block untrusted and unsigned processes on USB peripherals
@@ -327,7 +327,7 @@ For information on device control related advance hunting events and examples on
 ## Respond to threats
 
 You can create custom alerts and automatic response actions with the [Microsoft Defender ATP Custom Detection Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/) and [Flow](https://flow.microsoft.com/) with the [Microsoft Defender ATP connector](https://docs.microsoft.com/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](https://docs.microsoft.com/connectors/) to learn more about connectors.
- 
+
 For example, using either approach, you can automatically have the Microsoft Defender Antivirus run when a USB device is mounted onto a machine.
 
 ## Related topics
@@ -337,5 +337,5 @@ For example, using either approach, you can automatically have the Microsoft Def
 - [Policy/DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](https://aka.ms/scanusb)
 - [Device Control PowerBI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
-- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
+- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)

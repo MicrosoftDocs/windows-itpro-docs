@@ -6,7 +6,7 @@ description: Group Policy, the Local Group Policy Editor, and Internet Explorer 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -27,11 +27,11 @@ Here's a list of the policy settings you can use, based on the configuration typ
 |Administrative templates:<ul><li>Control Panel</li><li>Network</li><li>Printers</li><li>Server</li><li>System</li><li>Windows components</li><li>All settings</li><br></ul> |Administrative templates:<ul><li>Control Panel</li><li>Desktop</li><li>Network</li><li>Shared folders</li><li>Start menu and taskbar</li><li>System</li><li>Windows components</li><li>All settings</li></ul> |
 
 
- 
 
- 
 
- 
+
+
+
 
 
 

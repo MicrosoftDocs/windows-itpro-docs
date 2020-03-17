@@ -9,8 +9,8 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 
-ms.reviewer: 
+ms.date:
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -26,7 +26,7 @@ We want all students to have the chance to use the apps they need for success in
 
 In Windows 10, version 1703 (Creators Update), it is straightforward to configure Windows to be education ready.
 
-| Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S | 
+| Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S |
 | --- | --- | --- | --- | --- | --- |
 | **Diagnostic Data** | **AllowTelemetry** | Sets Diagnostic Data to [Basic](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
@@ -39,7 +39,7 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 ## Recommended configuration
 It is easy to be education ready when using Microsoft products. We recommend the following configuration:
 
-1. Use an Office 365 Education tenant. 
+1. Use an Office 365 Education tenant.
 
     With Office 365, you also have Azure Active Directory (Azure AD). To learn more about Office 365 Education features and pricing, see [Office 365 Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
@@ -77,7 +77,7 @@ You can set all the education compliance areas through both provisioning and man
 - [Intune for Education](https://docs.microsoft.com/intune-education/available-settings)
 
 ## AllowCortana
-**AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana). 
+**AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana).
 
 > [!NOTE]
 > See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings.
@@ -89,7 +89,7 @@ Use one of these methods to set this policy.
 - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy.
   - If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
-      For example, in Intune, create a new configuration policy and add an OMA-URI. 
+      For example, in Intune, create a new configuration policy and add an OMA-URI.
     - OMA-URI:  ./Vendor/MSFT/Policy/Config/Experience/AllowCortana
     - Data type:  Integer
     - Value:  0
@@ -103,7 +103,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
-- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) 
+- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package)
     - Under **Runtime settings**, click the **Policies** settings group, set **Experience > Cortana** to **No**.
 
         ![Set AllowCortana to No in Windows Configuration Designer](images/allowcortana_wcd.png)
@@ -111,7 +111,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
 ## SetEduPolicies
 **SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It is a policy node in the [SharedPC configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/sharedpc-csp).
 
-Use one of these methods to set this policy. 
+Use one of these methods to set this policy.
 
 ### MDM
 - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
@@ -126,7 +126,7 @@ Use one of these methods to set this policy.
       ![Create an OMA URI for SetEduPolices](images/setedupolicies_omauri.png)
 
 ### Group Policy
-**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/library/windows/desktop/mt779129(v=vs.85).aspx). 
+**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/library/windows/desktop/mt779129(v=vs.85).aspx).
 
 For example:
 
@@ -144,13 +144,13 @@ For example:
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
-- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package) 
+- [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package)
     - Under **Runtime settings**, click the **SharedPC** settings group, set **PolicyCustomization > SetEduPolicies** to **True**.
 
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)
 
 ## Ad-free search with Bing
-Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
+Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States.
 
 ### Configurations
 
@@ -169,7 +169,6 @@ To suppress ads only when the student signs into Bing with their Office 365 acco
 
 1. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 2. Have students sign into Bing with their Office 365 account.
-
 
 ## Related topics
 [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)

@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -40,7 +40,7 @@ The ArcSight field column contains the default mapping between the Microsoft Def
 Field numbers match the numbers in the images below.
 
 > [!div class="mx-tableFixed"]
-> 
+>
 > | Portal   label   | SIEM field name           | ArcSight field      | Example value                                                                      | Description                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV detected 'Mikatz' high-severity malware | Value available for every Detection.                                                                                                                                               |
@@ -72,7 +72,7 @@ Field numbers match the numbers in the images below.
 > | Internal   field | LastProcessedTimeUtc      | No mapping          | 2017-05-07T01:56:58.9936648Z                                                       | Time when event arrived at the   backend. This field can be used when setting the request parameter for the range of time that detections are retrieved.                         |
 > |                  | Not part of the schema    | deviceVendor        |                                                                                    | Static value in the ArcSight   mapping - 'Microsoft'.                                                                                                                          |
 > |                  | Not part of the schema    | deviceProduct       |                                                                                    | Static value in the ArcSight   mapping - 'Microsoft Defender ATP'.                                                                                                               |
-> |                  | Not part of the schema    | deviceVersion       |                                                                                    | Static value in the ArcSight   mapping - '2.0', used to identify the mapping versions.                                                                                         
+> |                  | Not part of the schema    | deviceVersion       |                                                                                    | Static value in the ArcSight   mapping - '2.0', used to identify the mapping versions.
 
 
 ![Image of alert with numbers](images/atp-alert-page.png)

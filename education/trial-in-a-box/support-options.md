@@ -12,7 +12,7 @@ ROBOTS: noindex,nofollow
 author: dansimp
 ms.author: dansimp
 ms.date: 03/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -21,7 +21,7 @@ Need help or have a question about using Microsoft Education? Start here.
 
 ## 1. Update your apps
 
-Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations.
 
 For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
 
@@ -33,7 +33,7 @@ For more information about checking for updates, and how to optionally turn on a
 
 1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">admin center</a> and sign in with your Office 365 admin credentials.
 2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
-3. Select **Personal info** and then edit **Contact details** to update  your phone, primary email address, and alternate email address. 
+3. Select **Personal info** and then edit **Contact details** to update  your phone, primary email address, and alternate email address.
 
    > [!NOTE]
    > For the alternate email address, make sure you use a different address from your Office 365 email address.

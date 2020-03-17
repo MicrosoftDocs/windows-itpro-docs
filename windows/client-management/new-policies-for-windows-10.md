@@ -2,7 +2,7 @@
 title: New policies for Windows 10 (Windows 10)
 description: Windows 10 includes the following new policies for management.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: ["MDM", "Group Policy"]
@@ -519,7 +519,7 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
 
- 
+
 
 
 

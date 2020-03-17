@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -19,7 +19,7 @@ ms.topic: include
 
 - [Enterprise Mode Site List Manager (schema v.2)](https://www.microsoft.com/download/details.aspx?id=49974)
 
-- [Use the Enterprise Mode Site List Manager](../enterprise-mode/use-the-enterprise-mode-site-list-manager.md) 
+- [Use the Enterprise Mode Site List Manager](../enterprise-mode/use-the-enterprise-mode-site-list-manager.md)
 
 - [Collect data using Enterprise Site Discovery](../enterprise-mode/collect-data-using-enterprise-site-discovery.md)
 

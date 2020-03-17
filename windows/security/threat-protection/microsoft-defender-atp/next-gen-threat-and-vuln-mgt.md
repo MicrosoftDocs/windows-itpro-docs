@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -35,7 +35,7 @@ Watch this video for a quick overview of threat and vulnerability management.
 
 ## Next-generation capabilities
 
-Threat and vulnerability management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
+Threat and vulnerability management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.
 
 It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Microsoft Endpoint Configuration Manager.
 

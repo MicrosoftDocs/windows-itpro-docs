@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -27,7 +27,7 @@ Use this setting to configure single use (kiosk) devices.
 
 ## AssignedAccessSettings
 
-Enter the account and the application you want to use for Assigned access, using [the AUMID](https://msdn.microsoft.com/windows/hardware/commercialize/customize/enterprise/find-the-application-user-model-id-of-an-installed-app). When that user account signs in on the device, only the specified app will run. 
+Enter the account and the application you want to use for Assigned access, using [the AUMID](https://msdn.microsoft.com/windows/hardware/commercialize/customize/enterprise/find-the-application-user-model-id-of-an-installed-app). When that user account signs in on the device, only the specified app will run.
 
 **Example**:
 

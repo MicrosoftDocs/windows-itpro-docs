@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,25 +40,25 @@ In the background, this event generates when the [\\HKLM\\Software\\Policies\\Mi
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
- <EventID>4714</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13573</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-08T05:27:40.740602500Z" /> 
- <EventRecordID>1080883</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="4856" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+ <EventID>4714</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13573</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-08T05:27:40.740602500Z" />
+ <EventRecordID>1080883</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="4856" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <ProcessingErrorData>
- <ErrorCode>13</ErrorCode> 
- <DataItemName>SubjectUserSid</DataItemName> 
- <EventPayload /> 
+ <ErrorCode>13</ErrorCode>
+ <DataItemName>SubjectUserSid</DataItemName>
+ <EventPayload />
  </ProcessingErrorData>
  </Event>
 

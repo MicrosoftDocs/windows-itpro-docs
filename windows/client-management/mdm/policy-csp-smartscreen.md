@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## SmartScreen policies  
+## SmartScreen policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
+<a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**
 
 <!--SupportedSKUs-->
 <table>
@@ -87,7 +87,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ar
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure App Install Control*
 -   GP name: *ConfigureAppInstallControl*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
@@ -106,7 +106,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
+<a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**
 
 <!--SupportedSKUs-->
 <table>
@@ -153,7 +153,7 @@ Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen fo
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
@@ -172,7 +172,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
+<a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**
 
 <!--SupportedSKUs-->
 <table>
@@ -219,7 +219,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ca
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP element: *ShellConfigureSmartScreen_Dropdown*

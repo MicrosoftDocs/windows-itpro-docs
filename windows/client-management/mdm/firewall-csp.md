@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 01/26/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -15,12 +15,12 @@ manager: dansimp
 
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
- 
+
 Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/library/mt620101.aspx).
 
-The following diagram shows the Firewall configuration service provider in tree format. 
+The following diagram shows the Firewall configuration service provider in tree format.
 
 ![firewall csp](images/provisioning-csp-firewall.png)
 

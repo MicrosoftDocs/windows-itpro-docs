@@ -1,6 +1,6 @@
 ---
 title: Deploy updates for Microsoft Defender ATP for Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy updates for Microsoft Defender ATP for Linux in enterprise environments.
 keywords: microsoft, defender, atp, linux, updates, deploy
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 

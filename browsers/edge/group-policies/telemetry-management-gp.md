@@ -6,12 +6,12 @@ manager: dansimp
 ms.author: dansimp
 author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ms.topic: reference
 ---
 
-# Telemetry and data collection 
+# Telemetry and data collection
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).

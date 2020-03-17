@@ -6,12 +6,12 @@ ms.author: v-tea
 ms.date: 2/3/2020
 ms.prod: w10
 ms.topic: article
-ms.custom: 
+ms.custom:
 - CI 113175
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
-keywords: 
+keywords:
 manager: kaushika
 ---
 
@@ -27,7 +27,7 @@ On such a computer, when you update the in-box Broadcom network adapter driver t
 
 ## Cause
 
-The operating system media for Windows Server 2019, version 1809, contains version 17.2 of the Broadcom NIC driver. When you upgrade this driver to a later version, the process of uninstalling the version 17.2 driver generates an error. This is a known issue.  
+The operating system media for Windows Server 2019, version 1809, contains version 17.2 of the Broadcom NIC driver. When you upgrade this driver to a later version, the process of uninstalling the version 17.2 driver generates an error. This is a known issue.
 
 This issue was resolved in Windows Server 2019 version 1903. The operating system media use a later version of the Broadcom network adapter driver.
 
@@ -35,7 +35,7 @@ This issue was resolved in Windows Server 2019 version 1903. The operating syste
 
 To update the Broadcom network adapter driver on an affected computer, follow these steps:
 
-> [!NOTE]  
+> [!NOTE]
 > This procedure describes how to use Device Manager to disable and re-enable the Broadcom network adapter. Alternatively, you can use the computer BIOS to disable and re-enable the adapter. For specific instructions, see your OEM BIOS configuration guide.
 
 1. Download the driver update to the affected computer.

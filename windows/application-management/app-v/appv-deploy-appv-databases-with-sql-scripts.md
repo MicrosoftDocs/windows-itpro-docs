@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -78,7 +78,7 @@ Steps to install "AppVManagement" schema in SQL SERVER.
 
  2. Ensure the target SQL Server instance and SQL Server Agent service are running.
 
- 3. If you are not running the scripts directly on the server, ensure the 
+ 3. If you are not running the scripts directly on the server, ensure the
     necessary SQL Server client software is installed and available from
     the specified location.  Specifically, the "osql" command must be supported for these scripts to run.
 
@@ -88,24 +88,24 @@ Steps to install "AppVManagement" schema in SQL SERVER.
     defaults are likely sufficient, it is suggested that the following
     settings be reviewed:
 
-    DATABASE - ensure name is satisfactory - default is "AppVManagement".   
+    DATABASE - ensure name is satisfactory - default is "AppVManagement".
 
  2. Review the Permissions.sql file and provide all the necessary account information
     for setting up read and write access on the database. Note: Default settings in the file will not work.
 
 ## INSTALLATION:
 
- 1. Run the database.sql against the "master" database.  Your user 
+ 1. Run the database.sql against the "master" database.  Your user
     credential must have the ability to create databases.
     This script will create the database.
 
- 2. Run the following scripts against the "AppVManagement" database using the 
+ 2. Run the following scripts against the "AppVManagement" database using the
     same account as above in order.
 
     CreateTables.sql
     CreateStoredProcs.sql
     UpdateTables.sql
-    Permissions.sql 
+    Permissions.sql
 
 ```
 
@@ -140,7 +140,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
  2. Ensure the target SQL Server instance and SQL Server Agent service are running.
 
- 3. If you are not running the scripts directly on the server, ensure the 
+ 3. If you are not running the scripts directly on the server, ensure the
     necessary SQL Server client software is installed and executable from
     the location you have chosen.  Specifically, the "osql" command must be supported for these scripts to run.
 
@@ -157,20 +157,20 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     in the file will not work.
 
  3. Review the ScheduleReportingJob.sql file and make sure that the stored proc schedule
-    time is acceptable. The default stored proc schedule time is at 12.01 AM (line 84). 
+    time is acceptable. The default stored proc schedule time is at 12.01 AM (line 84).
     If this time is not suitable, you can change this to a more suitable time. The time is in the format HHMMSS.
 
 ## INSTALLATION:
 
- 1. Run the database.sql against the "master" database.  Your user 
+ 1. Run the database.sql against the "master" database.  Your user
     credential must have the ability to create databases.
     This script will create the database.
 
  2. If upgrading the database, run UpgradeDatabase.sql This will upgrade database schema.
 
- 2. Run the following scripts against the "AppVReporting" database using the 
+ 2. Run the following scripts against the "AppVReporting" database using the
     same account as above in order.
-    
+
     CreateTables.sql
     CreateReportingStoredProcs.sql
     CreateStoredProcs.sql

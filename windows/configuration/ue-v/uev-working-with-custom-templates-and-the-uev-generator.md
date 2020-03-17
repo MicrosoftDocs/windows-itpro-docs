@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -30,7 +30,7 @@ Use the UE-V template generator to monitor, discover, and capture the locations 
 
 ## Standard and non-standard settings locations
 
-The UE-V template generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator discovers settings only in locations that are accessible to a standard user. Settings that are stored in other locations are excluded. 
+The UE-V template generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator discovers settings only in locations that are accessible to a standard user. Settings that are stored in other locations are excluded.
 
 Discovered settings are grouped into two categories: **Standard** and **Non-standard**. Standard settings are recommended for synchronization, and UE-V can readily capture and apply them. Non-standard settings can potentially synchronize settings but, because of the rules that UE-V uses, these settings might not consistently or dependably synchronize settings. These settings might depend on temporary files, result in unreliable synchronization, or might not be useful. These settings locations are presented in the UE-V template generator. You can choose to include or exclude them on a case-by-case basis.
 
@@ -100,7 +100,7 @@ Use the UE-V template generator to edit settings location templates. When the re
 
     > [!NOTE]
     > A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
-     
+
 2.  Open the settings location template file with an XML editor.
 
 3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](uev-application-template-schema-reference.md). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
@@ -156,9 +156,9 @@ Before you deploy any settings location template that you have downloaded from t
 
 [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
- 
 
- 
+
+
 
 
 

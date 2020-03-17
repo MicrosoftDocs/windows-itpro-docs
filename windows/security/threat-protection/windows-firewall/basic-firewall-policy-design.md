@@ -2,7 +2,7 @@
 title: Basic Firewall Policy Design (Windows 10)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -49,13 +49,13 @@ By default, in new installations, Windows Defender Firewall with Advanced Securi
 
 If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
-Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This is the recommended approach for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
+Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This is the recommended approach for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft.
 
 An organization typically uses this design as a first step toward a more comprehensive Windows Defender Firewall design that adds server isolation and domain isolation.
 
 After implementing this design, you will have centralized management of the firewall rules applied to all devices that are running Windows in your organization.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > If you also intend to deploy the [Domain Isolation Policy Design](domain-isolation-policy-design.md), or the [Server Isolation Policy Design](server-isolation-policy-design.md), we recommend that you do the design work for all three designs together, and then deploy in layers that correspond with each design.
 
 The basic firewall design can be applied to devices that are part of an Active Directory forest. Active Directory is required to provide the centralized management and deployment of Group Policy objects that contain the firewall settings and rules.

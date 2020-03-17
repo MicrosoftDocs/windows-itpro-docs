@@ -5,7 +5,7 @@ description: Use the \[BrowserToolbars\] .INS file setting to customize your Int
 author: dansimp
 ms.prod: ie11
 ms.assetid: 83af0558-9df3-4c2e-9350-44f7788efa6d
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -28,11 +28,11 @@ Info about how to customize the Internet Explorer toolbar.
 |Show0 |<ul><li>**0.** Don’t show the button by default.</li><li>**1.** Show the button by default.</li></ul> |Determines whether to show the new button on the toolbar by default. |
 |ToolTipText0 |`<tooltip_text>` |Tooltip text for the custom toolbar button. |
 
- 
 
- 
 
- 
+
+
+
 
 
 

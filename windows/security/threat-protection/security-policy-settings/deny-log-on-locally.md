@@ -2,7 +2,7 @@
 title: Deny log on locally (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on locally security policy setting.
 ms.assetid: 00150e88-ec9c-43e1-a70d-33bfe10434db
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -50,13 +50,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Not defined| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Not defined|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

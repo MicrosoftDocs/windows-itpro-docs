@@ -1,6 +1,6 @@
 ---
 title: Set preferences for Microsoft Defender ATP for Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to configure Microsoft Defender ATP for Linux in enterprises.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -119,7 +119,7 @@ Used to exclude content from the scan by full file path.
 
 **Path type (file / directory)**
 
-Indicates if the *path* property refers to a file or directory. 
+Indicates if the *path* property refers to a file or directory.
 
 |||
 |:---|:---|

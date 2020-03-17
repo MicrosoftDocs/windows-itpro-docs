@@ -1,5 +1,5 @@
 ---
-title: Verify data storage location and update data retention settings 
+title: Verify data storage location and update data retention settings
 description: Verify data storage location and update data retention settings for Microsoft Defender Advanced Threat Protection
 keywords: data, storage, settings, retention, update
 search.product: eADQiWindows 10XVcnh
@@ -13,10 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
-# Verify data storage location and update data retention settings for Microsoft Defender ATP 
+# Verify data storage location and update data retention settings for Microsoft Defender ATP
 
 **Applies to:**
 
@@ -26,12 +26,12 @@ ms.topic: conceptual
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
-During the onboarding process, a wizard takes you through the data storage and retention settings of Microsoft Defender ATP. 
+During the onboarding process, a wizard takes you through the data storage and retention settings of Microsoft Defender ATP.
 
 After completing the onboarding, you can verify your selection in the data retention settings page.
 
 ## Verify data storage location
-During the [Set up phase](production-deployment.md), you would have selected the location to store your data. 
+During the [Set up phase](production-deployment.md), you would have selected the location to store your data.
 
 You can verify the data location by navigating to **Settings** > **Data retention**.
 

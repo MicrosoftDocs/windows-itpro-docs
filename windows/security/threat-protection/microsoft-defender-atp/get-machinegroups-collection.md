@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ---
@@ -36,7 +36,7 @@ GET /testwdatppreview/machinegroups
 
 ## Request headers
 
-Header | Value 
+Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 Content type | application/json
@@ -61,7 +61,7 @@ Content-type: application/json
 **Response**
 
 Here is an example of the response.
-Field id contains device group **id** and equal to field **rbacGroupId** in devices info. 
+Field id contains device group **id** and equal to field **rbacGroupId** in devices info.
 Field **ungrouped** is true only for one group for all devices that have not been assigned to any group. This group as usual has name "UnassignedGroup".
 
 ```

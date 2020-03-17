@@ -2,7 +2,7 @@
 title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, image, feature, install, tools
@@ -99,7 +99,7 @@ Example of a MDT rule. In this example, the new computer name is being calculate
 
 ## Boot images
 
-Boot images are the Windows Preinstallation Environment (Windows PE) images that are used to start the deployment. They can be started from a CD or DVD, an ISO file, a USB device, or over the network using a Pre-Boot Execution Environment (PXE) server. The boot images connect to the deployment 
+Boot images are the Windows Preinstallation Environment (Windows PE) images that are used to start the deployment. They can be started from a CD or DVD, an ISO file, a USB device, or over the network using a Pre-Boot Execution Environment (PXE) server. The boot images connect to the deployment
 share on the server and start the deployment.
 
 ## Operating systems
@@ -135,7 +135,7 @@ MDT comes with nine default task sequence templates. You can also create your ow
 - **Sysprep and Capture task sequence.** Used to run the System Preparation (Sysprep) tool and capture an image of a reference computer.
 
     **Note**: It is preferable to use a complete build and capture instead of the Sysprep and Capture task sequence. A complete build and capture can be automated, whereas Sysprep and Capture cannot.
-     
+
 - **Standard Client task sequence.** The most frequently used task sequence. Used for creating reference images and for deploying clients in production.
 - **Standard Client Replace task sequence.** Used to run User State Migration Tool (USMT) backup and the optional full Windows Imaging (WIM) backup action. Can also be used to do a secure wipe of a machine that is going to be decommissioned.
 - **Custom task sequence.** As the name implies, a custom task sequence with only one default action (one Install Application action).
@@ -159,7 +159,7 @@ Selection profiles, which are available in the Advanced Configuration node, prov
 
 MDT uses many log files during operating system deployments. By default the logs are client side, but by configuring the deployment settings, you can have MDT store them on the server, as well.
 
-**Note**  
+**Note**
 The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
 
 ## Monitoring

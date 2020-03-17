@@ -2,7 +2,7 @@
 title: Use web services in MDT (Windows 10)
 description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
 ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, web apps
@@ -93,7 +93,7 @@ Figure 20. The result from the MDT Sample web service.
 After verifying the web service using Internet Explorer, you are ready to do the same test in the MDT simulation environment.
 
 1. On PC0001, edit the CustomSettings.ini file in the **C:\\MDT** folder to look like the following:
-   ``` 
+   ```
    [Settings]
    Priority=Default, GetComputerName
    [Default]
@@ -109,7 +109,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
 
 2. Save the CustomSettings.ini file.
 3. Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
-   ``` 
+   ```
    Set-Location C:\MDT
    .\Gather.ps1
    ```
@@ -134,4 +134,4 @@ Figure 22. The OSDCOMPUTERNAME value obtained from the web service.
 [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
 
 [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
- 
+

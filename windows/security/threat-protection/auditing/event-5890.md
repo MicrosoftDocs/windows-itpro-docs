@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,29 +38,29 @@ For some reason this event belongs to [Audit System Integrity](event-5890.md) su
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5890</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12290</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-23T19:45:04.239886800Z" /> 
- <EventRecordID>344980</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="2856" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5890</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12290</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-23T19:45:04.239886800Z" />
+ <EventRecordID>344980</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="2856" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectUserDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">222443</Data> 
- <Data Name="ObjectCollectionName">Roles</Data> 
- <Data Name="ObjectIdentifyingProperties">ApplId = {1D34B2DC-0E43-4040-BA7B-2F1C181FD86A} Name = CreatorOwner</Data> 
- <Data Name="ObjectProperties">Description =</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectUserDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">222443</Data>
+ <Data Name="ObjectCollectionName">Roles</Data>
+ <Data Name="ObjectIdentifyingProperties">ApplId = {1D34B2DC-0E43-4040-BA7B-2F1C181FD86A} Name = CreatorOwner</Data>
+ <Data Name="ObjectProperties">Description =</Data>
  </EventData>
  </Event>
 

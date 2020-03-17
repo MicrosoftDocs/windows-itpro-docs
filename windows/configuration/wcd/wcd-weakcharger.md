@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -28,7 +28,7 @@ Use WeakCharger settings to configure the charger notification UI.
 
 ## HideWeakChargerNotifyOptionUI
 
-This setting determines whether the user sees the dialog that's displayed when the user connects the device to an incompatible charging source. By default, the OS shows the weak charger notification option UI. 
+This setting determines whether the user sees the dialog that's displayed when the user connects the device to an incompatible charging source. By default, the OS shows the weak charger notification option UI.
 
 Select between **Show Weak Charger Notifications UI** and **Hide Weak Charger Notifications UI**.
 
@@ -38,7 +38,7 @@ This setting displays a warning when the user connects the device to an incompat
 
 An incompatible charging source is one that does not behave like one of the following port types as defined by the USB Battery Charging Specification, Revision 1.2, available on the USB.org website:
 - Charging downstream port
-- Standard downstream port 
+- Standard downstream port
 - Dedicated charging port
 
 Select between **Disable Weak Charger Notifications UI** and **Enable Weak Charger Notifications UI**.

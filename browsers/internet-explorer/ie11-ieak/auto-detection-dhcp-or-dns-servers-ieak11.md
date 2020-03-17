@@ -5,7 +5,7 @@ description: How to set up automatic detection for DHCP or DNS servers using IEA
 author: dansimp
 ms.prod: ie11
 ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -29,7 +29,7 @@ Automatic detection works even if the browser wasn't originally set up or instal
 
 - **Using DHCP servers:** For local area network (LAN)-based users. This server type lets you specify your global and subnet TCP/IP parameters centrally, defining your users' parameters by using reserved addresses. By doing it this way, a computer can move between subnets, automatically reconfiguring for TCP/IP when it starts.
   <p><strong>Note</strong><br>
-  Your DHCP servers must support the DHCPINFORM message, to obtain the DHCP options.    
+  Your DHCP servers must support the DHCPINFORM message, to obtain the DHCP options.
 
 - **Using DNS servers:** For users on dial-up connections. This server type uses a set of protocols and services on a TCP/IP network, which lets users search for other computers by using hierarchical, user-friendly names (hosts), instead of numeric IP addresses. To use this, you have to set up either the host record or the CNAME alias record in the DNS database file.
   <p><strong>Note</strong><br>
@@ -54,7 +54,7 @@ Automatic detection works even if the browser wasn't originally set up or instal
    `mailserver1 IN A 192.55.200.51`
    <p><strong>-OR-</strong><p>
    Create a canonical name (CNAME) alias record, named <strong>WPAD</strong>. This record lets you use more than one name to point to a single host, letting you host both an FTP server and a web server on the same computer. It also includes the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>
-   <strong>Note</strong><br>For more info about creating a <strong>WPAD</strong> entry, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=294651" data-raw-source="[Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651)">Creating a WPAD entry in DNS</a>. 
+   <strong>Note</strong><br>For more info about creating a <strong>WPAD</strong> entry, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=294651" data-raw-source="[Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651)">Creating a WPAD entry in DNS</a>.
 
 2. After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.
 

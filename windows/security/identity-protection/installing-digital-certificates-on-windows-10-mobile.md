@@ -2,7 +2,7 @@
 title: Install digital certificates on Windows 10 Mobile (Windows 10)
 description: Digital certificates bind the identity of a user or computer to a pair of keys that can be used to encrypt and sign digital information.
 ms.assetid: FF7B1BE9-41F4-44B0-A442-249B650CEE25
-ms.reviewer: 
+ms.reviewer:
 keywords: S/MIME, PFX, SCEP
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -48,7 +48,7 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
 
 >[!WARNING]
 >Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=718216).
- 
+
 **Process of installing certificates using MDM**
 
 1.  The MDM server generates the initial cert enroll request including challenge password, SCEP server URL, and other enrollment related parameters.
@@ -65,12 +65,12 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
     >- A certificate is successfully received from the server
     >- The server returns an error
     >- The number of retries reaches the preconfigured limit
-     
+
 8.  The cert is installed in the device. Browser, Wi-Fi, VPN, email, and other first party applications have access to this certificate.
 
     >[!NOTE]
     >If MDM requested private key stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Windows Hello for Business Key Storage Provider (KSP), it is guarded by the Hello PIN.
-     
+
 ## Related topics
 
 [Configure S/MIME](configure-s-mime.md)

@@ -6,7 +6,7 @@ description: Enterprise Mode is a compatibility mode that runs on Internet Explo
 author: dansimp
 ms.prod: ie11
 ms.assetid: 513e8f3b-fedf-4d57-8d81-1ea4fdf1ac0b
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -53,7 +53,7 @@ You can add individual sites to your compatibility list by using the Enterprise 
    -   **Default Mode**. Loads the site using the default compatibility mode for the page.
 
    The path within a domain can require a different compatibility mode from the domain itself. For example, the domain might look fine in the default IE11 browser, but the path might have problems and require the use of Enterprise Mode. If you added the domain previously, your original compatibility choice is still selected. However, if the domain is new, **IE8 Enterprise Mode** is automatically selected.
-   
+
    Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual. For more specific info about using document modes, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 
 5. In conjunction with the compatibility mode, you'll need to use the **Open in** box to pick which browser opens the site.
@@ -79,9 +79,9 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
- 
 
- 
+
+
 
 
 

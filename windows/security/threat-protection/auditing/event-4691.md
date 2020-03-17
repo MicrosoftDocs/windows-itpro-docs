@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,31 +38,31 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/w
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4691</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12804</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-23T01:03:49.834912100Z" /> 
- <EventRecordID>344382</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="4" ThreadID="2928" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4691</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12804</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-23T01:03:49.834912100Z" />
+ <EventRecordID>344382</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="4" ThreadID="2928" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x36509</Data> 
- <Data Name="ObjectType">ALPC Port</Data> 
- <Data Name="ObjectName">\\Sessions\\2\\Windows\\DwmApiPort</Data> 
- <Data Name="AccessList">%%4464</Data> 
- <Data Name="AccessMask">0x1</Data> 
- <Data Name="ProcessId">0xe60</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x36509</Data>
+ <Data Name="ObjectType">ALPC Port</Data>
+ <Data Name="ObjectName">\\Sessions\\2\\Windows\\DwmApiPort</Data>
+ <Data Name="AccessList">%%4464</Data>
+ <Data Name="AccessMask">0x1</Data>
+ <Data Name="ProcessId">0xe60</Data>
  </EventData>
  </Event>
 

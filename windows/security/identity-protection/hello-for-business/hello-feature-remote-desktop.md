@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/09/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Remote Desktop

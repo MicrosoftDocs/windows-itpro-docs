@@ -9,7 +9,7 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
@@ -88,7 +88,7 @@ There can be cases where new files are added to the system during servicing. The
 
 ![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.)](images/PSF4.png)
 
-### Hydration and installation 
+### Hydration and installation
 
 Once the usual applicability checks are performed on the update package and are determined to be applicable, the Windows component servicing infrastructure will hydrate the full files during pre-installation and then proceed with the usual installation process.
 

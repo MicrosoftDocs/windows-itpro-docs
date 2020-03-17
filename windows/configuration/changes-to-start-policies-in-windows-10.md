@@ -2,7 +2,7 @@
 title: Changes to Group Policy settings for Windows 10 Start menu (Windows 10)
 description: Windows 10 has a brand new Start experience.
 ms.assetid: 612FB68A-3832-451F-AA97-E73791FEAA9F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["group policy", "start menu", "start screen"]
 ms.prod: w10
@@ -98,7 +98,7 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 <td align="left">Start Layout</td>
 <td align="left"><p>This applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in <strong>User Configuration</strong> or <strong>Computer Configuration</strong>.</p>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -108,7 +108,7 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="deprecated-group-policy-settings-for-start-"></a>Deprecated Group Policy settings for Start
 
@@ -144,7 +144,7 @@ The Start policy settings listed below do not work on Windows 10. Most of them 
 | Remove user folder link from Start Menu                                          | Windows 8       |
 | Remove Videos link from Start Menu                                               | Windows 8       |
 
- 
+
 
 ## Related topics
 

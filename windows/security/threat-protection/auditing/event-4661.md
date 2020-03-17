@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,38 +40,38 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4661</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14080</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-30T00:11:56.547696700Z" /> 
- <EventRecordID>1048009</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="520" ThreadID="528" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4661</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14080</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-30T00:11:56.547696700Z" />
+ <EventRecordID>1048009</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="520" ThreadID="528" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x4280e</Data> 
- <Data Name="ObjectServer">Security Account Manager</Data> 
- <Data Name="ObjectType">SAM\_DOMAIN</Data> 
- <Data Name="ObjectName">DC=contoso,DC=local</Data> 
- <Data Name="HandleId">0xdd64d36870</Data> 
- <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data> 
- <Data Name="AccessList">%%5400</Data> 
- <Data Name="AccessMask">0x2d</Data> 
- <Data Name="PrivilegeList">Ā</Data> 
- <Data Name="Properties">-</Data> 
- <Data Name="RestrictedSidCount">2949165</Data> 
- <Data Name="ProcessId">0x9000a000d002d</Data> 
- <Data Name="ProcessName">{bf967a90-0de6-11d0-a285-00aa003049e2} %%5400 {ccc2dc7d-a6ad-4a7a-8846-c04e3cc53501}</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x4280e</Data>
+ <Data Name="ObjectServer">Security Account Manager</Data>
+ <Data Name="ObjectType">SAM\_DOMAIN</Data>
+ <Data Name="ObjectName">DC=contoso,DC=local</Data>
+ <Data Name="HandleId">0xdd64d36870</Data>
+ <Data Name="TransactionId">{00000000-0000-0000-0000-000000000000}</Data>
+ <Data Name="AccessList">%%5400</Data>
+ <Data Name="AccessMask">0x2d</Data>
+ <Data Name="PrivilegeList">Ā</Data>
+ <Data Name="Properties">-</Data>
+ <Data Name="RestrictedSidCount">2949165</Data>
+ <Data Name="ProcessId">0x9000a000d002d</Data>
+ <Data Name="ProcessName">{bf967a90-0de6-11d0-a285-00aa003049e2} %%5400 {ccc2dc7d-a6ad-4a7a-8846-c04e3cc53501}</Data>
  </EventData>
  </Event>
 ```
@@ -135,15 +135,15 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
     -   SAM\_SERVER - distinguished name of the accessed object.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4662](event-4662.md): An operation was performed on an object.” This parameter might not be captured in the event, and in that case appears as “0x0”.

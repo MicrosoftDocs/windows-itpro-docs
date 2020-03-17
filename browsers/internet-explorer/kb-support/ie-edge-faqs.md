@@ -47,14 +47,14 @@ To see where Internet Explorer stores its cookies, follow these steps:
 
 The following are the folder locations where the cookies are stored:
 
-**In Windows 10**  
+**In Windows 10**
 C:\Users\username\AppData\Local\Microsoft\Windows\INetCache
 
-**In Windows 8 and Windows 8.1**  
+**In Windows 8 and Windows 8.1**
 C:\Users\username\AppData\Local\Microsoft\Windows\INetCookies
 
-**In Windows 7**  
-C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies  
+**In Windows 7**
+C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies
 C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies\Low
 
 ### What is the per-domain cookie limit?
@@ -69,7 +69,7 @@ For more information, see [Internet Explorer Cookie Internals (FAQ)](https://blo
 
 #### Additional information about cookie limits
 
-**What does the Cookie RFC allow?**  
+**What does the Cookie RFC allow?**
 RFC 2109 defines how cookies should be implemented, and it defines minimum values that browsers support. According to the RFC, browsers would ideally have no limits on the size and number of cookies that a browser can handle. To meet the specifications, the user agent should support the following:
 
 - At least 300 cookies total
@@ -99,7 +99,7 @@ function FindProxyForURL(url, host)
 
 For more information about how to write a PAC file and about the different functions in a PAC file, see [the FindProxyForURL website](https://findproxyforurl.com/).
 
-**Third-party information disclaimer**  
+**Third-party information disclaimer**
 The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products.
 
 ### How to improve performance by using PAC scripts
@@ -184,7 +184,7 @@ For more information about how to configure TLS/SSL for Internet Explorer, see [
 
 Site to Zone usually refers to one of the following:
 
-**Site to Zone Assignment List**  
+**Site to Zone Assignment List**
 This is a Group Policy policy setting that can be used to add sites to the various security zones.
 
 The Site to Zone Assignment List policy setting associates sites to zones by using the following values for the Internet security zones:
@@ -196,19 +196,19 @@ The Site to Zone Assignment List policy setting associates sites to zones by usi
 
 If you set this policy setting to **Enabled**, you can enter a list of sites and their related zone numbers. By associating a site to a zone, you can make sure that the security settings for the specified zone are applied to the site.
 
-**Site to Zone Mapping**  
+**Site to Zone Mapping**
 Site to Zone Mapping is stored as the name of the key. The protocol is a registry value that has a number that assigns it to the corresponding zone. Internet Explorer will read from the following registry subkeys for the sites that are deployed through the Site to Zone assignment list:
 
 - HKEY\_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap
 - HKEY\_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMapKey
 
-**Site to Zone Assignment List policy**  
+**Site to Zone Assignment List policy**
 This policy setting is available for both Computer Configuration and User Configuration:
 
 - Computer Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 - User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 
-**References**  
+**References**
 [How to configure Internet Explorer security zone sites using group polices](https://blogs.msdn.microsoft.com/askie/2012/06/05/how-to-configure-internet-explorer-security-zone-sites-using-group-polices/)
 
 ### What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?

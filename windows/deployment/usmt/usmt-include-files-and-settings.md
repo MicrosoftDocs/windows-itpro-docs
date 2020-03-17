@@ -2,7 +2,7 @@
 title: Include Files and Settings (Windows 10)
 description: Specify the migration .xml files you want, then use the User State Migration Tool (USMT) 10.0  to migrate the settings and components specified.
 ms.assetid: 9009c6a5-0612-4478-8742-abe5eb6cbac8
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -41,12 +41,12 @@ The following .xml file migrates a single registry key.
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
      <component type="Application" context="System">
-          <displayName>Component to migrate only registry value string</displayName> 
+          <displayName>Component to migrate only registry value string</displayName>
           <role role="Settings">
           <rules>
                <include>
                     <objectSet>
-                         <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern> 
+                         <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
                     </objectSet>
                </include>
           </rules>
@@ -112,8 +112,8 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
     <rules>
          <include>
             <objectSet>
-         <script>MigXmlHelper.GenerateDrivePatterns ("\EngineeringDrafts\* [*] ", "Fixed")</script>            
-         <script>MigXmlHelper.GenerateDrivePatterns ("*\EngineeringDrafts\* [*] ", "Fixed")</script>            
+         <script>MigXmlHelper.GenerateDrivePatterns ("\EngineeringDrafts\* [*] ", "Fixed")</script>
+         <script>MigXmlHelper.GenerateDrivePatterns ("*\EngineeringDrafts\* [*] ", "Fixed")</script>
        </objectSet>
           </include>
     </rules>
@@ -131,7 +131,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
   <role role="Data">
     <rules>
          <include>
-            <objectSet>                 
+            <objectSet>
 <pattern type="File"> C:\*\EngineeringDrafts\* [*]</pattern>
 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
        </objectSet>
@@ -167,7 +167,7 @@ The following .xml file migrates .mp3 files located in the specified drives on t
     </rules>
   </role>
 </component>
-</migration> 
+</migration>
 ```
 
 ## <a href="" id="bkmk-migspecificfile"></a>Migrate a Specific File
@@ -217,9 +217,9 @@ The following examples show how to migrate a file from a specific folder, and ho
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

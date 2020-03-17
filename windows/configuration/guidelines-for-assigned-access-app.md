@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -28,9 +28,9 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 ## General guidelines
 
-- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx#install_your_apps). 
+- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx#install_your_apps).
 
-- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
+- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch.
 
 - Apps that are generated using the [Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
 
@@ -39,15 +39,15 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 ## Guidelines for Windows apps that launch other apps
 
-Some Windows apps can launch other apps. Assigned access prevents Windows apps from launching other apps. 
+Some Windows apps can launch other apps. Assigned access prevents Windows apps from launching other apps.
 
-Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality.  
+Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality.
 
 ## Guidelines for web browsers
 
 In Windows 10, version 1809, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
-In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
+In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website.
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
@@ -78,15 +78,15 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 
 > [!IMPORTANT]
 > To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
-> 
+>
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com).
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
-> 
-> 
+>
+>
 > [!TIP]
 > To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](https://docs.microsoft.com/intune/custom-settings-windows-10) with the following information:
 > - OMA-URI: ./Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
@@ -123,7 +123,7 @@ Blocked URL rule |  Block URL exception rule | Result
 `contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
-The following table gives examples for blocked URLs. 
+The following table gives examples for blocked URLs.
 
 
 |          Entry           |                                    Result                                     |
@@ -144,7 +144,7 @@ The following table gives examples for blocked URLs.
 
 
 You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
-- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
+- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/)
 - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
 - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
 
@@ -156,15 +156,15 @@ Avoid selecting Windows apps that may expose the information you don’t want to
 
 ## App configuration
 
-Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 
+Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access.
 
-Check the guidelines published by your selected app and set up accordingly. 
+Check the guidelines published by your selected app and set up accordingly.
 
 ## Develop your kiosk app
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
+Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app.
 
-Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
+Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx).
 
 ## Test your assigned access experience
 

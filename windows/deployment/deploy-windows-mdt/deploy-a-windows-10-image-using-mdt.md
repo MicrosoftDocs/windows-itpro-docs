@@ -2,7 +2,7 @@
 title: Deploy a Windows 10 image using MDT (Windows 10)
 description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deployment, automate, tools, configure
@@ -21,15 +21,15 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
-For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 and PC0005. 
+For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 and PC0005.
 
-- DC01 is a domain controller 
-- MDT01 is a domain member server 
-- HV01 is a Hyper-V server 
+- DC01 is a domain controller
+- MDT01 is a domain member server
+- HV01 is a Hyper-V server
 - PC0005 is a blank device to which we will deploy Windows 10
 
 MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
@@ -49,7 +49,7 @@ On **DC01**:
 2. Create the MDT_JD service account by running the following command from an elevated Windows PowerShell prompt:
 
    ```powershell
-   New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
+   New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true
    ```
 
 3. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
@@ -124,7 +124,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 
 >[!NOTE]
 >The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
- 
+
 
 ![imported OS](../images/fig2-importedos.png)
 
@@ -163,7 +163,7 @@ For boot images, you need to have storage and network drivers; for the operating
 
 >[!NOTE]
 >You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
- 
+
 ### Create the driver source structure in the file system
 
 The key to successful management of drivers for MDT, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
@@ -187,7 +187,7 @@ On **MDT01**:
 
 >[!NOTE]
 >Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
- 
+
 ### Create the logical driver structure in MDT
 
 When you import drivers to the MDT driver repository, MDT creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
@@ -213,7 +213,7 @@ Get-WmiObject -Class:Win32_ComputerSystem
 ```
 Or, you can use this command in a normal command prompt:
 
-``` 
+```
 wmic csproduct get name
 ```
 
@@ -253,7 +253,7 @@ On **MDT01**:
 
 1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
 2.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
-    a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates. 
+    a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates.
 3.  Using File Explorer, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
 4.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
 5.  In the Deployment Workbench, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, and select **Import Drivers**, and use the following Driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
@@ -343,7 +343,7 @@ On **MDT01**:
 
            >[!NOTE]
            >The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
-             
+
    3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.
    4.  State Restore. Enable the **Windows Update (Post-Application Installation)** action.
 3. Click **OK**.
@@ -363,7 +363,7 @@ On **MDT01**:
 1. Right-click the **MDT Production** deployment share and select **Properties**.
 2. Select the **Rules** tab and replace the existing rules with the following information (modify the domain name, WSUS server, and administrative credentials to match your environment):
 
-  ``` 
+  ```
   [Settings]
   Priority=Default
 
@@ -371,7 +371,7 @@ On **MDT01**:
   _SMSTSORGNAME=Contoso
   OSInstall=YES
   UserDataLocation=AUTO
-  TimeZoneName=Pacific Standard Time 
+  TimeZoneName=Pacific Standard Time
   AdminPassword=pass@word1
   JoinDomain=contoso.com
   DomainAdmin=CONTOSO\MDT_JD
@@ -402,7 +402,7 @@ On **MDT01**:
 
 3. Click **Edit Bootstrap.ini** and modify using the following information:
 
-``` 
+```
 [Settings]
 Priority=Default
 
@@ -419,11 +419,11 @@ SkipBDDWelcome=YES
    - In the **Lite Touch Boot Image Settings** area:
      1.  Image description: MDT Production x86
      2.  ISO file name: MDT Production x86.iso
-        
+
      > [!NOTE]
-     > 
+     >
      >Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
-         
+
 6. On the **Drivers and Patches** sub tab, select the **WinPE x86** selection profile and select the **Include all drivers from the selection profile** option.
 7. On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
 8. On the **General** sub tab, configure the following settings:
@@ -436,7 +436,7 @@ SkipBDDWelcome=YES
 
 >[!NOTE]
 >It will take a while for the Deployment Workbench to create the monitoring database and web service.
- 
+
 
 ![figure 8](../images/mdt-07-fig08.png)
 
@@ -452,7 +452,7 @@ The rules for the MDT Production deployment share are somewhat different from th
 ### The Bootstrap.ini file
 
 This is the MDT Production Bootstrap.ini:
-``` 
+```
 [Settings]
 Priority=Default
 
@@ -467,7 +467,7 @@ SkipBDDWelcome=YES
 ### The CustomSettings.ini file
 
 This is the CustomSettings.ini file with the new join domain information:
-``` 
+```
 [Settings]
 Priority=Default
 
@@ -475,7 +475,7 @@ Priority=Default
 _SMSTSORGNAME=Contoso
 OSInstall=Y
 UserDataLocation=AUTO
-TimeZoneName=Pacific Standard Time 
+TimeZoneName=Pacific Standard Time
 AdminPassword=pass@word1
 JoinDomain=contoso.com
 DomainAdmin=CONTOSO\MDT_JD
@@ -637,7 +637,7 @@ Multicast deployment allows for image deployment with reduced network load durin
 
 ### Requirements
 
-Multicast requires that Windows Deployment Services (WDS) is running on Windows Server 2008 or later. In addition to the core MDT setup for multicast, the network needs to be configured to support multicast. In general, this means involving the organization networking team to make sure that 
+Multicast requires that Windows Deployment Services (WDS) is running on Windows Server 2008 or later. In addition to the core MDT setup for multicast, the network needs to be configured to support multicast. In general, this means involving the organization networking team to make sure that
 Internet Group Management Protocol (IGMP) snooping is turned on and that the network is designed for multicast traffic. The multicast solution uses IGMPv3.
 
 ### Set up MDT for multicast
@@ -688,7 +688,7 @@ In these steps, you generate offline media from the MDT Production deployment sh
 
      >[!NOTE]
      >When creating offline media, you need to create the target folder first. It is crucial that you do not create a subfolder inside the deployment share folder because it will break the offline media.
-     
+
 2.  In the Deployment Workbench, under the **MDT Production / Advanced Configuration** node, right-click the **Media** node, and select **New Media**.
 3.  Use the following settings for the New Media Wizard:
     -   General Settings
@@ -727,7 +727,7 @@ On **MDT01**:
 
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
 
->[!TIP] 
+>[!TIP]
 >In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. This means you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
 
 Follow these steps to create a bootable USB stick from the offline media content:

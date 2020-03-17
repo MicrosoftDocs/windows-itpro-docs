@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -44,35 +44,35 @@ This event generates on the computer to which the logon was performed (target co
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4626</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12553</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-10T00:12:02.243396300Z" /> 
- <EventRecordID>232648</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="1092" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4626</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12553</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-10T00:12:02.243396300Z" />
+ <EventRecordID>232648</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="1092" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-0-0</Data> 
- <Data Name="SubjectUserName">-</Data> 
- <Data Name="SubjectDomainName">-</Data> 
- <Data Name="SubjectLogonId">0x0</Data> 
- <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x136f7b</Data> 
- <Data Name="LogonType">3</Data> 
- <Data Name="EventIdx">1</Data> 
- <Data Name="EventCountTotal">1</Data> 
- <Data Name="UserClaims">ad://ext/cn:88d2b96fdb2b4c49 <%%1818> : "dadmin" ad://ext/Department:88d16a8edaa8c66b <%%1818> : "IT"</Data> 
- <Data Name="DeviceClaims">-</Data> 
+ <Data Name="SubjectUserSid">S-1-0-0</Data>
+ <Data Name="SubjectUserName">-</Data>
+ <Data Name="SubjectDomainName">-</Data>
+ <Data Name="SubjectLogonId">0x0</Data>
+ <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x136f7b</Data>
+ <Data Name="LogonType">3</Data>
+ <Data Name="EventIdx">1</Data>
+ <Data Name="EventCountTotal">1</Data>
+ <Data Name="UserClaims">ad://ext/cn:88d2b96fdb2b4c49 <%%1818> : "dadmin" ad://ext/Department:88d16a8edaa8c66b <%%1818> : "IT"</Data>
+ <Data Name="DeviceClaims">-</Data>
  </EventData>
  </Event>
 ```

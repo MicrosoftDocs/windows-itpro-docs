@@ -2,7 +2,7 @@
 title: EMAIL2 CSP
 description: EMAIL2 CSP
 ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -20,7 +20,7 @@ The EMAIL2 configuration service provider (CSP) is used to configure Simple Mail
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_MAIL capabilities to be accessed from a network configuration application.
 On the desktop, only per user configuration is supported.
 
- 
+
 
 The following diagram shows the EMAIL2 configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
 
@@ -33,12 +33,12 @@ Configuration data is not encrypted when sent over the air (OTA). Be aware that 
 > [!IMPORTANT]
 > All Add and Replace commands need to be wrapped in an Atomic section.
 
-<a href="" id="email2"></a>**EMAIL2**  
+<a href="" id="email2"></a>**EMAIL2**
 The configuration service provider root node.
 
 Supported operation is Get.
 
-<a href="" id="guid"></a>***GUID***  
+<a href="" id="guid"></a>***GUID***
 Defines a specific email account. A globally unique identifier (GUID) must be generated for each email account on the device. Provisioning with an account that has the same GUID as an existing one does not create the new account and Add command will fail in this case.
 
 Supported operations are Get, Add, and Delete.
@@ -49,14 +49,14 @@ The braces {} around the GUID are required in the EMAIL2 configuration service p
 
 -   For OMA DM, the braces must be sent using ASCII values of 0x7B and 0x7D respectively. For example, `<Target><LocURI>./Vendor/MSFT/EMAIL2/0x7BC556E16F-56C4-4edb-9C64-D9469EE1FBE0x7D</LocURI></Target>`
 
-<a href="" id="accounticon"></a>**ACCOUNTICON**  
+<a href="" id="accounticon"></a>**ACCOUNTICON**
 Optional. Returns the location of the icon associated with the account.
 
 Supported operations are Get, Add, Replace and Delete.
 
 The account icon can be used as a tile in the **Start** list or an icon in the applications list under **Settings, email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.genericmail.png. The suggested icon for Exchange Accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.office.outlook.png. Custom icons can be added if desired.
 
-<a href="" id="accounttype"></a>**ACCOUNTTYPE**  
+<a href="" id="accounttype"></a>**ACCOUNTTYPE**
 Required. Specifies the type of account.
 
 Supported operations are Get, Add, Replace and Delete.
@@ -67,12 +67,12 @@ Valid values are:
 
 -   VVM: visual voice mail
 
-<a href="" id="authname"></a>**AUTHNAME**  
+<a href="" id="authname"></a>**AUTHNAME**
 Required. Character string that specifies the name used to authorize the user to a specific email account (also known as the user's logon name).
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="authrequired"></a>**AUTHREQUIRED**  
+<a href="" id="authrequired"></a>**AUTHREQUIRED**
 Optional. Character string that specifies whether the outgoing server requires authentication.
 
 Supported operations are Get, Add, Replace and Delete.
@@ -84,19 +84,19 @@ Valid values are one of the following:
 
 > **Note**  If this value is not specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
 
- 
 
-<a href="" id="authsecret"></a>**AUTHSECRET**  
+
+<a href="" id="authsecret"></a>**AUTHSECRET**
 Optional. Character string that specifies the user's password. The same password is used for SMTP authentication.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="domain"></a>**DOMAIN**  
+<a href="" id="domain"></a>**DOMAIN**
 Optional. Character string that specifies the incoming server credentials domain. Limited to 255 characters.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="dwnday"></a>**DWNDAY**  
+<a href="" id="dwnday"></a>**DWNDAY**
 Optional. Character string that specifies how many days' worth of email should be downloaded from the server.
 
 Supported operations are Get, Add, Replace and Delete.
@@ -111,14 +111,14 @@ Valid values are one of the following:
 
 -   30: Specifies that 30 days’ worth of email should be downloaded.
 
-<a href="" id="inserver"></a>**INSERVER**  
+<a href="" id="inserver"></a>**INSERVER**
 Required. Character string that specifies the name of the incoming server name and port number. This is limited to 62 characters. If the standard port number is used, then you don't have to specify the port number. The value format is:
 
 -   server name:port number
 
 Supported operations are Get, Add and Replace.
 
-<a href="" id="linger"></a>**LINGER**  
+<a href="" id="linger"></a>**LINGER**
 Optional. Character string that specifies the length of time between email send/receive updates in minutes.
 
 Supported operations are Get, Add, Replace and Delete.
@@ -135,7 +135,7 @@ Valid values are:
 
 -   120 - Wait for 120 minutes between updates.
 
-<a href="" id="keepmax"></a>**KEEPMAX**  
+<a href="" id="keepmax"></a>**KEEPMAX**
 Optional. Specifies the maximum size for a message attachment. Attachments beyond this size will not be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts.
 
 The limit is specified in KB
@@ -146,49 +146,49 @@ A value of 0 meaning that no limit will be enforced.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="name"></a>**NAME**  
+<a href="" id="name"></a>**NAME**
 Optional. Character string that specifies the name of the sender displayed on a sent email. It should be set to the user’s name. Limited to 255 characters.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="outserver"></a>**OUTSERVER**  
+<a href="" id="outserver"></a>**OUTSERVER**
 Required. Character string that specifies the name of the messaging service's outgoing email server. Limited to 62 characters. The value format is:
 
 -   server name:port number
 
 Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="replyaddr"></a>**REPLYADDR**  
+<a href="" id="replyaddr"></a>**REPLYADDR**
 Required. Character string that specifies the reply email address of the user (usually the same as the user email address). Sending email will fail without it. Limited to 255 characters.
 
 Supported operations are Get, Add, Delete and Replace.
 
-<a href="" id="servicename"></a>**SERVICENAME**  
+<a href="" id="servicename"></a>**SERVICENAME**
 Required. Character string that specifies the name of the email service to create or edit (32 characters maximum).
 
 Supported operations are Get, Add, Replace, and Delete.
 
 > **Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
- 
 
-<a href="" id="servicetype"></a>**SERVICETYPE**  
+
+<a href="" id="servicetype"></a>**SERVICETYPE**
 Required. Character string that specifies the type of email service to create or edit (for example, "IMAP4" or "POP3").
 
 Supported operations are Get, Add, Replace, and Delete.
 
 > **Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
- 
 
-<a href="" id="retrieve"></a>**RETRIEVE**  
+
+<a href="" id="retrieve"></a>**RETRIEVE**
 Optional. Specifies the maximum size in bytes for messages retrieved from the incoming email server. Messages beyond this size are retrieved, but truncated.
 
 Valid values are 512, 1024, 2048, 5120, 20480, and 51200.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="serverdeleteaction"></a>**SERVERDELETEACTION**  
+<a href="" id="serverdeleteaction"></a>**SERVERDELETEACTION**
 Optional. Character string that specifies how message is deleted on server. Valid values:
 
 -   1 - delete message on the server
@@ -198,12 +198,12 @@ Any other value results in default action, which depends on the transport.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="cellularonly"></a>**CELLULARONLY**  
+<a href="" id="cellularonly"></a>**CELLULARONLY**
 Optional. If this flag is set, the account only uses the cellular network and not Wi-Fi.
 
 Value type is string. Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="syncingcontenttypes"></a>**SYNCINGCONTENTTYPES**  
+<a href="" id="syncingcontenttypes"></a>**SYNCINGCONTENTTYPES**
 Required. Specifies a bitmask for which content types are supported for syncing (eg: Mail, Contacts, Calendar).
 
 -   No data (0x0)
@@ -222,64 +222,64 @@ Required. Specifies a bitmask for which content types are supported for syncing 
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="contactsserver"></a>**CONTACTSSERVER**  
+<a href="" id="contactsserver"></a>**CONTACTSSERVER**
 Optional. Server for contact sync if it is different from the email server.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="calendarserver"></a>**CALENDARSERVER**  
+<a href="" id="calendarserver"></a>**CALENDARSERVER**
 Optional. Server for calendar sync if it is different from the email server.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="contactsserverrequiressl"></a>**CONTACTSSERVERREQUIRESSL**  
+<a href="" id="contactsserverrequiressl"></a>**CONTACTSSERVERREQUIRESSL**
 Optional. Indicates if the connection to the contact server requires SSL.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="calendarserverrequiressl"></a>**CALENDARSERVERREQUIRESSL**  
+<a href="" id="calendarserverrequiressl"></a>**CALENDARSERVERREQUIRESSL**
 Optional. Indicates if the connection to the calendar server requires SSL.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="contactssyncschedule"></a>**CONTACTSSYNCSCHEDULE**  
+<a href="" id="contactssyncschedule"></a>**CONTACTSSYNCSCHEDULE**
 Optional. Sets the schedule for syncing contact items.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="calendarsyncschedule"></a>**CALENDARSYNCSCHEDULE**  
+<a href="" id="calendarsyncschedule"></a>**CALENDARSYNCSCHEDULE**
 Optional. Sets the schedule for syncing calendar items.
 
 Supported operations are Get, Add, Replace, and Delete.
 
-<a href="" id="smtpaltauthname"></a>**SMTPALTAUTHNAME**  
+<a href="" id="smtpaltauthname"></a>**SMTPALTAUTHNAME**
 Optional. Character string that specifies the display name associated with the user's alternative SMTP email account.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="smtpaltdomain"></a>**SMTPALTDOMAIN**  
+<a href="" id="smtpaltdomain"></a>**SMTPALTDOMAIN**
 Optional. Character string that specifies the domain name for the user's alternative SMTP account.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="smtpaltenabled"></a>**SMTPALTENABLED**  
+<a href="" id="smtpaltenabled"></a>**SMTPALTENABLED**
 Optional. Character string that specifies if the user's alternate SMTP account is enabled.
 
 Supported operations are Get, Add, Replace and Delete.
 
 A value of "FALSE" specifies that the user's alternate SMTP email account is disabled. A value of "TRUE" specifies that the user's alternate SMTP email account is enabled.
 
-<a href="" id="smtpaltpassword"></a>**SMTPALTPASSWORD**  
+<a href="" id="smtpaltpassword"></a>**SMTPALTPASSWORD**
 Optional. Character string that specifies the password for the user's alternate SMTP account.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="tagprops"></a>**TAGPROPS**  
+<a href="" id="tagprops"></a>**TAGPROPS**
 Optional. Defines a group of properties with non-standard element names.
 
 Supported operations are Get, Add, Replace and Delete.
 
-<a href="" id="tagprops-8128000b"></a>**TAGPROPS/8128000B**  
+<a href="" id="tagprops-8128000b"></a>**TAGPROPS/8128000B**
 Optional. Character string that specifies if the incoming email server requires SSL.
 
 Supported operations are Get, Add, Replace and Delete.
@@ -289,7 +289,7 @@ Value is one of the following:
 -   0 - SSL is not required.
 -   1 - SSL is required.
 
-<a href="" id="tagprops-812c000b"></a>**TAGPROPS/812C000B**  
+<a href="" id="tagprops-812c000b"></a>**TAGPROPS/812C000B**
 Optional. Character string that specifies if the outgoing email server requires SSL.
 
 Supported operations are Get and Replace.
@@ -331,9 +331,9 @@ Windows 10 Mobile supports Transport Layer Security (TLS), but this cannot be e
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

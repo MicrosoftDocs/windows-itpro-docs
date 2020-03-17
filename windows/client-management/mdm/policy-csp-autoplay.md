@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Autoplay policies  
+## Autoplay policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**  
+<a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**
 
 <!--SupportedSKUs-->
 <table>
@@ -90,13 +90,13 @@ If you disable or do not configure this policy setting, AutoPlay is enabled for 
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disallow Autoplay for non-volume devices*
 -   GP name: *NoAutoplayfornonVolume*
 -   GP path: *Windows Components/AutoPlay Policies*
@@ -108,7 +108,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-setdefaultautorunbehavior"></a>**Autoplay/SetDefaultAutoRunBehavior**  
+<a href="" id="autoplay-setdefaultautorunbehavior"></a>**Autoplay/SetDefaultAutoRunBehavior**
 
 <!--SupportedSKUs-->
 <table>
@@ -170,13 +170,13 @@ If you disable or not configure this policy setting, Windows Vista or later will
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Set the default behavior for AutoRun*
 -   GP name: *NoAutorun*
 -   GP path: *Windows Components/AutoPlay Policies*
@@ -188,7 +188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-turnoffautoplay"></a>**Autoplay/TurnOffAutoPlay**  
+<a href="" id="autoplay-turnoffautoplay"></a>**Autoplay/TurnOffAutoPlay**
 
 <!--SupportedSKUs-->
 <table>
@@ -251,13 +251,13 @@ Note: This policy setting appears in both the Computer Configuration and User Co
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off Autoplay*
 -   GP name: *Autorun*
 -   GP path: *Windows Components/AutoPlay Policies*

@@ -2,7 +2,7 @@
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
 description: User State Migration Tool (USMT) Troubleshooting
 ms.assetid: 770f45bb-2284-463f-a29c-69c04f437533
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -51,7 +51,7 @@ The following table describes topics that address common User State Migration To
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -64,9 +64,9 @@ The following table describes topics that address common User State Migration To
 
 [User State Migration Toolkit (USMT) Reference](usmt-reference.md)
 
- 
 
- 
+
+
 
 
 

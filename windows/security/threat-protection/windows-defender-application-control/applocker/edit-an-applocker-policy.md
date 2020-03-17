@@ -2,7 +2,7 @@
 title: Edit an AppLocker policy (Windows 10)
 description: This topic for IT professionals describes the steps required to modify an AppLocker policy.
 ms.assetid: dbc72d1f-3fe0-46c2-aeeb-96621fce7637
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -42,7 +42,7 @@ The steps to edit an AppLocker policy distributed by Group Policy include the fo
 
 ### Step 1: Use Group Policy management software to export the AppLocker policy from the GPO
 
-AppLocker provides a feature to export and import AppLocker policies as an XML file. This allows you to modify an AppLocker policy outside your production environment. Because updating an AppLocker policy in a deployed GPO could have unintended consequences, you should first export the AppLocker 
+AppLocker provides a feature to export and import AppLocker policies as an XML file. This allows you to modify an AppLocker policy outside your production environment. Because updating an AppLocker policy in a deployed GPO could have unintended consequences, you should first export the AppLocker
 policy to an XML file. For the procedure to do this, see [Export an AppLocker policy from a GPO](export-an-applocker-policy-from-a-gpo.md).
 
 ### Step 2: Import the AppLocker policy into the AppLocker reference PC or the PC you use for policy maintenance
@@ -50,7 +50,7 @@ policy to an XML file. For the procedure to do this, see [Export an AppLocker po
 After exporting the AppLocker policy to an XML file, you should import the XML file onto a reference PC so that you can edit the policy. For the procedure to import an AppLocker policy, see [Import an AppLocker policy from another computer](import-an-applocker-policy-from-another-computer.md).
 
 >**Caution:**  Importing a policy onto another PC will overwrite the existing policy on that PC.
- 
+
 ### Step 3: Use AppLocker to modify and test the rule
 
 AppLocker provides ways to modify, delete, or add rules to a policy by modifying the rules within the collection.
@@ -72,9 +72,9 @@ AppLocker provides ways to modify, delete, or add rules to a policy by modifying
 For procedures to export the updated policy from the reference computer back into the GPO, see [Export an AppLocker policy to an XML file](export-an-applocker-policy-to-an-xml-file.md) and [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
 >**Caution:**  You should never edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed run, making changes to a live policy can create unexpected behavior. For info about testing policies, see [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md).
- 
+
 >**Note:**  If you are performing these steps by using Microsoft Advanced Group Policy Management (AGPM), check out the GPO before exporting the policy.
- 
+
 ## <a href="" id="bkmk-editapplolnotingpo"></a>Editing an AppLocker policy by using the Local Security Policy snap-in
 
 The steps to edit an AppLocker policy distributed by using the Local Security Policy snap-in (secpol.msc) include the following tasks.
@@ -86,7 +86,7 @@ On the PC where you maintain policies, open the AppLocker snap-in from the Local
 After exporting the AppLocker policy to an XML file, you should import the XML file onto a reference PC so that you can edit the policy. For the procedure to import an AppLocker policy, see [Import an AppLocker policy from another computer](import-an-applocker-policy-from-another-computer.md).
 
 >**Caution:**  Importing a policy onto another PC will overwrite the existing policy on that PC.
- 
+
 ### Step 2: Identify and modify the rule to change, delete, or add
 
 AppLocker provides ways to modify, delete, or add rules to a policy by modifying the rules within the collection.

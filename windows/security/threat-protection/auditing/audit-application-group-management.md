@@ -2,7 +2,7 @@
 title: Audit Application Group Management (Windows 10)
 description: The policy setting, Audit Application Group Management, determines if audit events are generated when application group management tasks are performed.
 ms.assetid: 1bcaa41e-5027-4a86-96b7-f04eaf1c0606
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

@@ -1,8 +1,8 @@
 ---
-title: API Explorer in Microsoft Defender ATP  
-ms.reviewer: 
+title: API Explorer in Microsoft Defender ATP
+ms.reviewer:
 description: Use the API Explorer to construct and do API queries, test, and send requests for any available API
-keywords: api, explorer, send, request, get, post, 
+keywords: api, explorer, send, request, get, post,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -14,7 +14,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-The Microsoft Defender ATP API Explorer is a tool that helps you explore various Microsoft Defender ATP APIs interactively. 
+The Microsoft Defender ATP API Explorer is a tool that helps you explore various Microsoft Defender ATP APIs interactively.
 
 The API Explorer makes it easy to construct and do API queries, test, and send requests for any available Microsoft Defender ATP API endpoint. Use the API Explorer to take actions or find data that might not yet be available through the user interface.
 
@@ -45,13 +45,13 @@ From the left navigation menu, select **Partners & APIs** > **API Explorer**.
 ## Supported APIs
 
 API Explorer supports all the APIs offered by Microsoft Defender ATP.
-  
-The list of supported APIs is available in the [APIs documentation](apis-intro.md). 
+
+The list of supported APIs is available in the [APIs documentation](apis-intro.md).
 
 ## Get started with the API Explorer
 
-1. In the left pane, there is a list of sample requests that you can use. 
-2. Follow the links and click **Run query**. 
+1. In the left pane, there is a list of sample requests that you can use.
+2. Follow the links and click **Run query**.
 
 Some of the samples may require specifying a parameter in the URL, for example, {machine- ID}.
 
@@ -62,4 +62,4 @@ Credentials to access an API aren't needed. The API Explorer uses the Microsoft 
 
 The logged-in user authentication credential is used to verify that the API Explorer is authorized to access data on your behalf.
 
-Specific API requests are limited based on your RBAC privileges. For example, a request to "Submit indicator" is limited to the security admin role. 
+Specific API requests are limited based on your RBAC privileges. For example, a request to "Submit indicator" is limited to the security admin role.

@@ -6,7 +6,7 @@ description: Info about the features included in Enterprise Mode with Internet E
 author: dansimp
 ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -29,14 +29,14 @@ ms.date: 10/25/2018
 Internet Explorer and Microsoft Edge can work together to support your legacy web apps, while still defaulting to the higher bar for security and modern experiences enabled by Microsoft Edge. Working with multiple browsers can be difficult, particularly if you have a substantial number of internal sites. To help manage this dual-browser experience, we are introducing a new web tool specifically targeted towards larger organizations: the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
 ## Available dual-browser experiences
-If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using IE11 automatically. 
+If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using IE11 automatically.
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
 > [!TIP]
 > If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
-For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
+For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List.
 
 
 ## What is Enterprise Mode?
@@ -55,7 +55,7 @@ Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microso
 - **Centralized control.** You can specify the websites or web apps to interpret using Enterprise Mode, through an XML file on a website or stored locally. Domains and paths within those domains can be treated differently, allowing granular control. Use Group Policy to let users turn Enterprise Mode on or off from the Tools menu and to decide whether the Enterprise browser profile appears on the Emulation tab of the F12 developer tools.
 
     > [!Important]
-    > All centrally-made decisions override any locally-made choices. 
+    > All centrally-made decisions override any locally-made choices.
 
 - **Integrated browsing.** When Enterprise Mode is set up, users can browse the web normally, letting the browser change modes automatically to accommodate Enterprise Mode sites.
 
@@ -77,7 +77,7 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 		<version>10586</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!-- Begin Site List --> 
+  	<!-- Begin Site List -->
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>IE11</open-in>
@@ -90,12 +90,12 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 		<compat-mode>IE7Enterprise</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
-	<site url="relecloud.com"/>  
-	<!-- default for self-closing XML tag is 
+	<site url="relecloud.com"/>
+	<!-- default for self-closing XML tag is
 		<compat-mode>Default</compat-mode>
 		<open-in>None</open-in>
 	-->
-	<site url="relecloud.com/products">  
+	<site url="relecloud.com/products">
 		<compat-mode>IE8Enterprise"</compat-mode>
 		<open-in>IE11</open-in>
 	</site>

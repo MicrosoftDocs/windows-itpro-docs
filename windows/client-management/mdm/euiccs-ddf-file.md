@@ -2,7 +2,7 @@
 title: eUICCs DDF file
 description: eUICCs DDF file
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article

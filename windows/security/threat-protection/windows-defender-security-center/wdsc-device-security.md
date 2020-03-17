@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -35,7 +35,7 @@ This can only be done in Group Policy.
 >[!IMPORTANT]
 >### Requirements
 >
->You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+>You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -45,11 +45,11 @@ This can only be done in Group Policy.
 
 4.  Open the **Hide the Device security area** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
->  
+>
 >![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
 
 ## Disable the Clear TPM button
@@ -58,7 +58,7 @@ If you don't want users to be able to click the **Clear TPM** button in the Wind
 >[!IMPORTANT]
 >### Requirements
 >
->You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+>You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1.  On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -68,7 +68,7 @@ If you don't want users to be able to click the **Clear TPM** button in the Wind
 
 4.  Open the **Disable the Clear TPM button** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
 
 ## Hide the TPM Firmware Update recommendation
 If you don't want users to see the recommendation to update TPM firmware, you can disable it.
@@ -81,7 +81,7 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 4.  Open the **Hide the TPM Firmware Update recommendation** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
 
 ## Disable Memory integrity switch
 If you don't want users to be able to change the Hypervisor Control Integrity (HVCI), or memory integrity, setting on their computers, you can disable the **Memory integrity** switch.
@@ -94,4 +94,4 @@ If you don't want users to be able to change the Hypervisor Control Integrity (H
 
 4.  Open the **Disable Memory integrity switch** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).

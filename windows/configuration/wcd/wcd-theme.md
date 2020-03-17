@@ -8,7 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -29,7 +29,7 @@ In the dropdown menu for DefaultAccentColor, select from the list of colors. The
 
 ## DefaultBackgroundColor
 
-Select between **Light** and **Dark** for theme. 
+Select between **Light** and **Dark** for theme.
 
 
 ## Related topics

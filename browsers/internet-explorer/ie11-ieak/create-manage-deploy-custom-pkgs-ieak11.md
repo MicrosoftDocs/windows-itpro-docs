@@ -5,7 +5,7 @@ description: Review this list of tasks and references before you create and depl
 author: dansimp
 ms.prod: ie11
 ms.assetid: fe71c603-bf07-41e1-a477-ade5b28c9fb3
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

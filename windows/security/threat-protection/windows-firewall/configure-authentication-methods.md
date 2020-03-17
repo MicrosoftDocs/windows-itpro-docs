@@ -2,7 +2,7 @@
 title: Configure Authentication Methods (Windows 10)
 description: Configure Authentication Methods
 ms.assetid: 5fcdc523-617f-4233-9213-15fe19f4cd02
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

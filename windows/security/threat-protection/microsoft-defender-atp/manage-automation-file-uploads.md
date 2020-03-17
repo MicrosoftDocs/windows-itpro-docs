@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -30,19 +30,19 @@ ms.topic: article
 
 Enable the content analysis capability so that certain files and email attachments can automatically be uploaded to the cloud for additional inspection in Automated investigation.
 
-Identify the files and email attachments by specifying the file extension names and email attachment extension names. 
+Identify the files and email attachments by specifying the file extension names and email attachment extension names.
 
-For example, if you add *exe* and *bat* as file or attachment extension names, then all files or attachments with those extensions will automatically be sent to the cloud for additional inspection during Automated investigation. 
+For example, if you add *exe* and *bat* as file or attachment extension names, then all files or attachments with those extensions will automatically be sent to the cloud for additional inspection during Automated investigation.
 
 ## Add file extension names and attachment extension names.
 
-1. In the navigation pane, select **Settings** > **Automation file uploads**. 
+1. In the navigation pane, select **Settings** > **Automation file uploads**.
 
 2. Toggle the content analysis setting between **On** and **Off**.
 
 3. Configure the following extension names and separate extension names with a comma:
    - **File extension names** -  Suspicious files except email attachments will be submitted for additional inspection
-  
+
 
 ## Related topics
 - [Manage automation folder exclusions](manage-automation-folder-exclusions.md)

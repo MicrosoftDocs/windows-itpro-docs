@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -42,7 +42,7 @@ There are steps you'll need to take in Microsoft Defender Security Center, the I
 
 It's important to note the required roles to access these portals and implement Conditional access:
 - **Microsoft Defender Security Center** - You'll need to sign into the portal with a global administrator role to turn on the integration.
-- **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions. 
+- **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions.
 - **Azure AD portal** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 
 
@@ -53,7 +53,7 @@ Take the following steps to enable Conditional Access:
 - Step 1: Turn on the Microsoft Intune connection from Microsoft Defender Security Center
 - Step 2: Turn on the Microsoft Defender ATP integration in Intune
 - Step 3: Create the compliance policy in Intune
-- Step 4: Assign the policy 
+- Step 4: Assign the policy
 - Step 5: Create an Azure AD Conditional Access policy
 
 

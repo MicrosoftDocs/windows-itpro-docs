@@ -2,7 +2,7 @@
 title: Policy CSP
 description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -25,7 +25,7 @@ The Policy configuration service provider has the following sub-categories:
 <a href="" id="policy-scope"></a>
 
 > [!Important]
-> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user. 
+> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user.
 >
 > The allowed scope of a specific policy is represented below its table of supported Windows editions.  To configure a policy under a specific scope (user vs. device), please use the following paths:
 >
@@ -47,22 +47,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 ![policy csp diagram](images/provisioning-csp-policy.png)
 
 
-<a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
+<a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**
 <p style="margin-left: 20px">The root node for the Policy configuration service provider.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config"></a>**Policy/Config**  
+<a href="" id="policy-config"></a>**Policy/Config**
 <p style="margin-left: 20px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
@@ -76,27 +76,27 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   Supported operations are Add, Get, Delete, and Replace.
 -   Value type is string.
 
-<a href="" id="policy-result"></a>**Policy/Result**  
+<a href="" id="policy-result"></a>**Policy/Result**
 <p style="margin-left: 20px">Groups the evaluated policies from all providers that can be configured.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>
 <p style="margin-left: 20px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. The root node for grouping different configuration operations.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
+<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
 
 > [!NOTE]
@@ -106,27 +106,27 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
@@ -157,7 +157,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-accounts.md#accounts-allowmicrosoftaccountsigninassistant" id="accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  
+
 </dl>
 
 ### ActiveXControls policies
@@ -197,8 +197,8 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-allowshareduserappdata" id="applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a>
   </dd>
-  <dd> 
-    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a> 
+  <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a>
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
@@ -337,7 +337,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Audit policies  
+### Audit policies
 
 <dl>
   <dd>
@@ -2723,7 +2723,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesscalendar" id="privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
@@ -3771,8 +3771,8 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
-  <dd> 
-    <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a> 
+  <dd>
+    <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a>
   </dd>
   <dd>
   <dd>
@@ -4065,8 +4065,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 > Not all Policy CSPs supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
 ## Policy CSPs supported by HoloLens devices
-- [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
-- [Policy CSPs supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)
+- [Policy CSPs supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
 - [Policy CSPs supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
 
 ## Policy CSPs supported by Windows 10 IoT

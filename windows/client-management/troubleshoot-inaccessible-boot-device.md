@@ -9,7 +9,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 12/11/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -25,13 +25,13 @@ Any one of the following factors may cause the stop error:
 
 *	File system corruption
 
-*	Changes to the storage controller mode or settings in the BIOS 
+*	Changes to the storage controller mode or settings in the BIOS
 
 *	Using a different storage controller than the one that was used when Windows was installed
 
 *	Moving the hard disk to a different computer that has a different controller
 
-*	A faulty motherboard or storage controller, or faulty hardware 
+*	A faulty motherboard or storage controller, or faulty hardware
 
 *	In unusual cases: the failure of the TrustedInstaller service to commit newly installed updates because of Component Based Store corruptions
 
@@ -61,7 +61,7 @@ A list of the physical disks that are attached to the computer should be display
   --------  -------------  -------  -------  ---  ---
 
   Disk 0    Online         **size*  GB      0 B        *
-``` 
+```
 
 If the computer uses a Unified Extensible Firmware Interface (UEFI) startup interface, there will be an asterisk (<em>) in the **GPT</em>*  column.
 
@@ -95,9 +95,9 @@ Check whether the Boot Configuration Database (BCD) has all the correct entries.
 To verify the BCD entries:
 
 1. Examine the **Windows Boot Manager**  section that has the **{bootmgr}** identifier. Make sure that the **device**  and **path**  entries point to the correct device and boot loader file.
- 
+
    An example output if the computer is UEFI-based:
-    
+
    ```
    device                  partition=\Device\HarddiskVolume2
    path                    \EFI\Microsoft\Boot\bootmgfw.efi
@@ -111,7 +111,7 @@ To verify the BCD entries:
    >This output may not contain a path.
 
 2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device**, **path**, **osdevice**, and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
- 
+
    > [!NOTE]
    > If the computer is UEFI-based, the filepath value specified in the **path** parameter of **{bootmgr}** and **{default}** will contain an **.efi** extension.
 
@@ -135,7 +135,7 @@ If the files are missing, and you want to rebuild the boot files, follow these s
 
 ```
 D:\> Mkdir  BootBackup
-R:\> Copy *.* D:\BootBackup 
+R:\> Copy *.* D:\BootBackup
 ```
 
 2. If you are using Windows 10, or if you are troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot**  command to re-create the boot files, as follows:
@@ -186,7 +186,7 @@ After you run this command, you will see the **Install pending** and **Uninstall
 4. Select **HKEY_LOCAL_MACHINE**, and then go to **File**  > **Load Hive**.
 
 5. Navigate to **OSdriveLetter:\Windows\System32\config**, select the file that is named **COMPONENT** (with no extension), and then select **Open**. When you are prompted, enter the name **OfflineComponentHive** for the new hive
-    
+
     ![Load Hive](images/loadhive.png)
 
 6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
@@ -205,24 +205,24 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 ### Verifying boot critical drivers and services
 
-#### Check services	
+#### Check services
 
 1.	 Follow steps 1-10 in the "Troubleshooting if this issue occurs after an Windows Update installation" section. (Step 11 does not apply to this procedure.)
 
 2. Expand **Services**.
 
-3. Make sure that the following registry keys exist under **Services**: 
+3. Make sure that the following registry keys exist under **Services**:
 
     * ACPI
 
     * DISK
-    
+
     *	VOLMGR
-    
+
     *	PARTMGR
-    
+
     *	VOLSNAP
-    
+
     *	VOLUME
 
 If these keys exist, check each one to make sure that it has a value that is named **Start** and that it is set to **0**. If not, set the value to **0**.
@@ -248,22 +248,22 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
 
    The following are some of the different registry entries in which you may find these filter drivers. These entries are located under **ControlSet**  and are designated as **Default** :
 
-\Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318} 
+\Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318}
 
-\Control\Class\\{4D36E967-E325-11CE-BFC1-08002BE10318} 
+\Control\Class\\{4D36E967-E325-11CE-BFC1-08002BE10318}
 
-\Control\Class\\{4D36E97B-E325-11CE-BFC1-08002BE10318} 
+\Control\Class\\{4D36E97B-E325-11CE-BFC1-08002BE10318}
 
 \Control\Class\\{71A27CDD-812A-11D0-BEC7-08002BE2092F}
 
-![Registry](images/controlset.png) 
+![Registry](images/controlset.png)
 
 If an **UpperFilters**  or **LowerFilters**  entry is non-standard (for example, it is not a Windows default filter driver, such as PartMgr), remove the entry by double-clicking it in the right pane, and then deleting only that value.
 
 >[!NOTE]
 >There could be multiple entries.
 
-The reason that these entries may affect us is because there may be an entry in the **Services** branch that has a START type set to 0 or 1 (indicating that it is loaded at the Boot or Automatic part of the boot process). Also, either the file that is referred to is missing or corrupted, or it may be named differently than what is listed in the entry. 
+The reason that these entries may affect us is because there may be an entry in the **Services** branch that has a START type set to 0 or 1 (indicating that it is loaded at the Boot or Automatic part of the boot process). Also, either the file that is referred to is missing or corrupted, or it may be named differently than what is listed in the entry.
 
 >[!NOTE]
 >If there actually is a service that is set to **0** or **1** that corresponds to an **UpperFilters** or **LowerFilters** entry, setting the service to disabled in the **Services** registry (as discussed in steps 2 and 3 of the Check services section) without removing the **Filter Driver** entry causes the computer to crash and generate a 0x7b Stop error.

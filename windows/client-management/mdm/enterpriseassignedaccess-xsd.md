@@ -2,7 +2,7 @@
 title: EnterpriseAssignedAccess XSD
 description: This XSD can be used to validate that the lockdown XML in the \<Data\> block of the AssignedAccessXML node.
 ms.assetid: BB3B633E-E361-4B95-9D4A-CE6E08D67ADA
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ This XSD can be used to validate that the lockdown XML in the \<Data\> block of 
 
 ```xml
 <?xml version="1.0" encoding="utf-16LE" ?>
-<!-- 
+<!--
      In-memory format is Little Endian and
      hence the encoding of this file has to be little endian
      to be in the native format. Make sure that this file's
@@ -259,9 +259,9 @@ This XSD can be used to validate that the lockdown XML in the \<Data\> block of 
 </xs:schema>
 ```
 
- 
 
- 
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: Devices Prevent users from installing printer drivers (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Prevent users from installing printer drivers security policy setting.
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,13 +52,13 @@ The following table lists the actual and effective default values for this polic
 
 Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings | Enabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings | Enabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -73,7 +73,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-It may be appropriate in some organizations to allow users to install printer drivers on their own workstations. However, you should allow only administrators, not users, to do so on servers because printer driver installation on a server may unintentionally cause the computer to become less 
+It may be appropriate in some organizations to allow users to install printer drivers on their own workstations. However, you should allow only administrators, not users, to do so on servers because printer driver installation on a server may unintentionally cause the computer to become less
 stable. A malicious user could install inappropriate printer drivers in a deliberate attempt to damage the computer, or a user might accidentally install malicious software that masquerades as a printer driver.
 
 ### Countermeasure

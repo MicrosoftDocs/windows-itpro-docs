@@ -13,7 +13,7 @@ author: maximvelichko
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
- 
+
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
@@ -53,14 +53,14 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 
 ### Package
 
-Configure deployment of a [required application package](mac-install-with-jamf.md#package), 
+Configure deployment of a [required application package](mac-install-with-jamf.md#package),
 with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
 ### License settings
 
-Set up [a system configuration profile](mac-install-with-jamf.md#configuration-profile). 
+Set up [a system configuration profile](mac-install-with-jamf.md#configuration-profile).
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender ATP for Mac is not part of macOS.
 
 Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).

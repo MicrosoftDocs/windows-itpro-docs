@@ -5,7 +5,7 @@ description: Choose how to deploy Internet Explorer 11 (IE11)
 author: dansimp
 ms.prod: ie11
 ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

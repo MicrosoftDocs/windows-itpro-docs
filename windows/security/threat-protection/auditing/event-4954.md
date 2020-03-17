@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,22 +38,22 @@ This event generates every time local Group Policy is refreshed, even if no Wind
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4954</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13571</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-02T23:13:14.527924800Z" /> 
- <EventRecordID>1049893</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="2284" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4954</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13571</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-02T23:13:14.527924800Z" />
+ <EventRecordID>1049893</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="2284" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
- <EventData /> 
+ <EventData />
  </Event>
 
 ```

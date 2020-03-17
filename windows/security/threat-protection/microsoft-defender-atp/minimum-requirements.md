@@ -186,7 +186,7 @@ The Microsoft Defender ATP agent depends on the ability of Microsoft Defender An
 
 Configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. 
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode.
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 

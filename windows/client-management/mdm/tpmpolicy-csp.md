@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 11/01/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -22,10 +22,10 @@ The following diagram shows the TPMPolicy configuration service provider in tree
 
 ![tpmpolicy csp](images/provisioning-csp-tpmpolicy.png)
 
-<a href="" id="--device-vendor-msft-tpmpolicy"></a>**./Device/Vendor/MSFT/TPMPolicy**  
+<a href="" id="--device-vendor-msft-tpmpolicy"></a>**./Device/Vendor/MSFT/TPMPolicy**
 <p style="margin-left: 20px">Defines the root node.</p>
 
-<a href="" id="isactivezeroexhaust"></a>**IsActiveZeroExhaust**  
+<a href="" id="isactivezeroexhaust"></a>**IsActiveZeroExhaust**
 <p style="margin-left: 20px">Boolean value that indicates whether network traffic from the device to public IP addresses are not allowed unless directly intended by the user (zero exhaust). Default value is false. Some examples when zero exhaust is configured:</p>
 
 <ul>

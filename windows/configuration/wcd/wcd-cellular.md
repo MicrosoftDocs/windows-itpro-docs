@@ -1,6 +1,6 @@
 ---
 title: Cellular (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10

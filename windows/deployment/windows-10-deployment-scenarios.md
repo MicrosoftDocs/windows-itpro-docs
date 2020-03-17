@@ -2,7 +2,7 @@
 title: Windows 10 deployment scenarios (Windows 10)
 description: Understand the different ways Windows 10 operating system can be deployed in your organization. Explore several Windows 10 deployment scenarios.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
@@ -23,10 +23,10 @@ ms.topic: article
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
 
-The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
+The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories.
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
   - Note: Once you have deployed Windows 10 in your organization, it is important to stay up to date by [creating a deployment plan](update/create-deployment-plan.md) for Windows 10 feature updates.
-- Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
+- Dynamic deployment methods enable you to configure applications and settings for specific use cases.
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
 <table border="0">
@@ -38,101 +38,101 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
     <td align="center">
 
 [Windows Autopilot](#windows-autopilot)</td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
       Customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot">Overview of Windows Autopilot</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
 [In-place upgrade](#in-place-upgrade)
 
  </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
       Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+    <td align="center" style="width:16%; border:1;" rowspan="3">
       Dynamic
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
 [Subscription Activation](#windows-10-subscription-activation)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      Switch from Windows 10 Pro to Enterprise when a subscribed user signs in. 
+    <td align="center" style="width:16%; border:1;">
+      Switch from Windows 10 Pro to Enterprise when a subscribed user signs in.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 <a href="https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation">Windows 10 Subscription Activation</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
  [AAD / MDM](#dynamic-provisioning)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
       The device is automatically joined to AAD and configured by MDM.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 <a href="https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm">Azure Active Directory integration with MDM</a>
     </td>
    </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
    [Provisioning packages](#dynamic-provisioning)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
       Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 <a href="https://docs.microsoft.com/windows/configuration/configure-devices-without-mdm">Configure devices without MDM</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+    <td align="center" style="width:16%; border:1;" rowspan="3">
       Traditional
     </td>
     <td align="center" style="width:16%; border:1;">
 
    [Bare metal](#new-computer)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      Deploy a new device, or wipe an existing device and deploy with a fresh image. 
+    <td align="center" style="width:16%; border:1;">
+      Deploy a new device, or wipe an existing device and deploy with a fresh image.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
  <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager">Deploy Windows 10 using PXE and Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
    [Refresh](#computer-refresh)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. 
+    <td align="center" style="width:16%; border:1;">
+      Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
  <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
 
   [Replace](#computer-replace)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
       Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center" style="width:16%; border:1;">
  <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
@@ -143,7 +143,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 
 >[!IMPORTANT]
 >The Windows Autopilot and Subscription Activation scenarios require that the beginning OS be Windows 10 version 1703, or later.<br>
->Except for clean install scenarios such as traditional bare metal and Windows Autopilot, all the methods described can optionally migrate apps and settings to the new OS. 
+>Except for clean install scenarios such as traditional bare metal and Windows Autopilot, all the methods described can optionally migrate apps and settings to the new OS.
 
 ## Modern deployment methods
 
@@ -204,7 +204,7 @@ These scenarios can be used to enable “choose your own device” (CYOD) progra
 
 While the initial Windows 10 release includes a variety of provisioning settings and deployment mechanisms, these will continue to be enhanced and extended based on feedback from organizations. As with all Windows features, organizations can submit suggestions for additional features through the Windows Feedback app or through their Microsoft Support contacts.
 
-## Traditional deployment: 
+## Traditional deployment:
 
 New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [Microsoft Endpoint Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 

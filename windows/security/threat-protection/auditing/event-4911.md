@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ Resource attributes for file or folder can be changed, for example, using Window
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4911</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13570</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-09T23:43:04.009319300Z" /> 
- <EventRecordID>1183714</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4911</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13570</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-09T23:43:04.009319300Z" />
+ <EventRecordID>1183714</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x37925</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="ObjectType">File</Data> 
- <Data Name="ObjectName">C:\\Audit Files\\HBI Data.txt</Data> 
- <Data Name="HandleId">0x49c</Data> 
- <Data Name="OldSd">S:AI</Data> 
- <Data Name="NewSd">S:ARAI(RA;ID;;;;WD;("Impact\_MS",TI,0x10020,3000))</Data> 
- <Data Name="ProcessId">0x67c</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x37925</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="ObjectType">File</Data>
+ <Data Name="ObjectName">C:\\Audit Files\\HBI Data.txt</Data>
+ <Data Name="HandleId">0x49c</Data>
+ <Data Name="OldSd">S:AI</Data>
+ <Data Name="NewSd">S:ARAI(RA;ID;;;;WD;("Impact\_MS",TI,0x10020,3000))</Data>
+ <Data Name="ProcessId">0x67c</Data>
+ <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data>
  </EventData>
 </Event>
 ```
@@ -153,12 +153,12 @@ Resource attributes for file or folder can be changed, for example, using Window
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the Security Descriptor Definition Language (SDDL) value for the new resource attributes. See more information in **Resource Attributes\\Original Security Descriptor** field section for this event.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

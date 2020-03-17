@@ -5,7 +5,7 @@ description: Use Setup information (.inf) files to uninstall custom components f
 author: dansimp
 ms.prod: ie11
 ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

@@ -2,7 +2,7 @@
 title: Network security Minimum session security for NTLM SSP based (including secure RPC) servers (Windows 10)
 description: Best practices and security considerations for the policy setting, Network security Minimum session security for NTLM SSP based (including secure RPC) servers.
 ms.assetid: c6a60c1b-bc8d-4d02-9481-f847a411b4fc
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -50,13 +50,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy| Not defined| 
-| Stand-Alone Server Default Settings | Require 128-bit encryption| 
-| DC Effective Default Settings | Require 128-bit encryption| 
-| Member Server Effective Default Settings | Require 128-bit encryption| 
-| Client Computer Effective Default Settings | Require 128-bit encryption| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy| Not defined|
+| Stand-Alone Server Default Settings | Require 128-bit encryption|
+| DC Effective Default Settings | Require 128-bit encryption|
+| Member Server Effective Default Settings | Require 128-bit encryption|
+| Client Computer Effective Default Settings | Require 128-bit encryption|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

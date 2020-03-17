@@ -2,7 +2,7 @@
 title: Administer AppLocker (Windows 10)
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ AppLocker helps administrators control how users can access and use files, such 
 - Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, the existing policy is overwritten.
 - Simplify creating and managing AppLocker rules by using AppLocker PowerShell cmdlets.
   > **Note**  For more info about enhanced capabilities of AppLocker to control Windows apps, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
- 
+
 ## In this section
 
 | Topic | Description |

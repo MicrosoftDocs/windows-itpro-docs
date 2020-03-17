@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -24,7 +24,7 @@ ms.topic: article
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 >[!Note]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
@@ -50,7 +50,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Microsoft Defender ATP API to pull detections in JSON format.
 
 >[!NOTE]
->Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
+>Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering.
 
 ## Before you begin
 - Before calling the Microsoft Defender ATP endpoint to pull detections, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
@@ -97,7 +97,7 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ### Request syntax
 Method | Request URI
 :---|:---|
-GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **For UK**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
+GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **For UK**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### Request header
 Header | Type | Description|
@@ -138,7 +138,7 @@ The return value is an array of alert objects in JSON format.
 
 Here is an example return value:
 
-```json 
+```json
 {"AlertTime":"2017-01-23T07:32:54.1861171Z",
 "ComputerDnsName":"desktop-bvccckk",
 "AlertTitle":"Suspicious PowerShell commandline",

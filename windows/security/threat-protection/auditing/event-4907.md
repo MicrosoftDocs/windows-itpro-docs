@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event doesn't generate for Active Directory objects.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4907</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13568</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-01T18:18:19.458828800Z" /> 
- <EventRecordID>1049732</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="500" ThreadID="508" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4907</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13568</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-01T18:18:19.458828800Z" />
+ <EventRecordID>1049732</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="500" ThreadID="508" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x138eb0</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="ObjectType">Key</Data> 
- <Data Name="ObjectName">\\REGISTRY\\MACHINE\\SYSTEM\\ControlSet001\\Services\\EventLog\\Internet Explorer</Data> 
- <Data Name="HandleId">0x2f8</Data> 
- <Data Name="OldSd">S:AI</Data> 
- <Data Name="NewSd">S:ARAI(AU;CISA;KA;;;S-1-5-21-3457937927-2839227994-823803824-1104)</Data> 
- <Data Name="ProcessId">0x120c</Data> 
- <Data Name="ProcessName">C:\\Windows\\regedit.exe</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x138eb0</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="ObjectType">Key</Data>
+ <Data Name="ObjectName">\\REGISTRY\\MACHINE\\SYSTEM\\ControlSet001\\Services\\EventLog\\Internet Explorer</Data>
+ <Data Name="HandleId">0x2f8</Data>
+ <Data Name="OldSd">S:AI</Data>
+ <Data Name="NewSd">S:ARAI(AU;CISA;KA;;;S-1-5-21-3457937927-2839227994-823803824-1104)</Data>
+ <Data Name="ProcessId">0x120c</Data>
+ <Data Name="ProcessName">C:\\Windows\\regedit.exe</Data>
  </EventData>
  </Event>
 ```
@@ -160,12 +160,12 @@ This event doesn't generate for Active Directory objects.
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the object.
 
 > **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
-> 
+>
 > Example:
-> 
+>
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
-> 
-> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
+>
+> - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc.
 > See the list of possible values in the table below:
 
 | Value | Description                          | Value | Description                     |

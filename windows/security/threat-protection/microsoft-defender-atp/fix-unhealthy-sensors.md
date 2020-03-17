@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/23/2017
 ---
@@ -46,7 +46,7 @@ If the device was offboarded it will still appear in devices list. After 7 days,
 
 
 **Device is not sending signals**
-If the device is not sending any signals for more than 7 days to any of the Microsoft Defender ATP channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
+If the device is not sending any signals for more than 7 days to any of the Microsoft Defender ATP channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive.
 
 
 Do you expect a device to be in ‘Active’ status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).

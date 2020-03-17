@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
@@ -38,7 +38,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 ### How it works
 
  Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
-- Configuring settings in Registry Editor on your Windows machine 
+- Configuring settings in Registry Editor on your Windows machine
 - Changing settings through PowerShell cmdlets
 - Editing or removing security settings through group policies
 
@@ -60,9 +60,9 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 > [!NOTE]
 > Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
-> 
+>
 > To help ensure that tamper protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
-> 
+>
 > Once you’ve made this update, tamper protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
 
 If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to do this.

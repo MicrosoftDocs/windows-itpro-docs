@@ -2,7 +2,7 @@
 title: Configure Data Protection (Quick Mode) Settings (Windows 10)
 description: Configure Data Protection (Quick Mode) Settings
 ms.assetid: fdcb1b36-e267-4be7-b842-5df9a067c9e0
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,7 +1,7 @@
 ---
 title: Monitor activation (Windows 10)
 ms.assetid: 264a3e86-c880-4be4-8828-bf4c839dfa26
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description:

@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -35,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowDoNotTrack](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowdonottrack)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack
 - **Data type:** Integer
 
 #### Registry settings

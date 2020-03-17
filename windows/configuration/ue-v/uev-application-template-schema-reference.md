@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -153,7 +153,7 @@ The Process data type is a container used to describe processes to be monitored 
 </tbody>
 </table>
 
- 
+
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -202,7 +202,7 @@ Settings is a container for all the settings that apply to a particular template
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="name21"></a>Name Element
 
@@ -212,12 +212,12 @@ Settings is a container for all the settings that apply to a particular template
 
 Name specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. In general, avoid referencing version information, as this can be objected from the ProductVersion element. For example, specify `<Name>My Application</Name>` rather than `<Name>My Application 1.1</Name>`.
 
-**Note**  
+**Note**
 UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
 
- 
+
 
 ### <a href="" id="id21"></a>ID Element
 
@@ -253,7 +253,7 @@ Version identifies the version of the settings location template for administrat
   <Version>4</Version>
 ```
 
-**Important**  
+**Important**
 This value is queried to determine if a new version of a template should be applied to an existing template in these instances:
 
 -   When the scheduled Template Auto Update task executes
@@ -262,7 +262,7 @@ This value is queried to determine if a new version of a template should be appl
 
 -   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
- 
+
 
 ### <a href="" id="author21"></a>Author Element
 
@@ -325,10 +325,10 @@ A value of **True** indicates that the string contains illegal characters. Here 
 
 -   Program&lt;1&gt;.exe
 
-**Note**  
+**Note**
 The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
+
 
 In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplication.exe</Filename>` should be specified instead of `<Filename>MyApplication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
 
@@ -342,10 +342,10 @@ Architecture refers to the processor architecture for which the target executabl
 
 If this element is absent, the settings location template ignores the process’ architecture and applies to both 32 and 64-bit processes if the file name and other attributes apply.
 
-**Note**  
+**Note**
 UE-V does not support ARM processors in this version.
 
- 
+
 
 ### ProductName
 
@@ -539,7 +539,7 @@ Application is a container for settings that apply to a particular application. 
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="common21"></a>Common Element
 
@@ -598,7 +598,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="settingslocationtemplate21"></a>SettingsLocationTemplate Element
 
@@ -637,7 +637,7 @@ This element defines the settings for a single application or a suite of applica
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="appendix21"></a>Appendix: SettingsLocationTemplate.xsd
 

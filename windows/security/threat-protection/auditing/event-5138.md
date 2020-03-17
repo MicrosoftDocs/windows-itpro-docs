@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,34 +38,34 @@ This event only generates if the container to which the Active Directory object 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5138</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14081</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-02T04:34:20.611082300Z" /> 
- <EventRecordID>229336</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="544" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5138</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14081</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-02T04:34:20.611082300Z" />
+ <EventRecordID>229336</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="544" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="OpCorrelationID">{3E2B5ECF-4C35-4C3F-8D82-B8D6F477D846}</Data> 
- <Data Name="AppCorrelationID">-</Data> 
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="SubjectUserName">dadmin</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x3be49</Data> 
- <Data Name="DSName">contoso.local</Data> 
- <Data Name="DSType">%%14676</Data> 
- <Data Name="OldObjectDN">CN=Andrei\\0ADEL:53511188-bc98-4995-9d78-2d40143c9711,CN=Deleted Objects,DC=contoso,DC=local</Data> 
- <Data Name="NewObjectDN">CN=Andrei,CN=Users,DC=contoso,DC=local</Data> 
- <Data Name="ObjectGUID">{53511188-BC98-4995-9D78-2D40143C9711}</Data> 
- <Data Name="ObjectClass">user</Data> 
+ <Data Name="OpCorrelationID">{3E2B5ECF-4C35-4C3F-8D82-B8D6F477D846}</Data>
+ <Data Name="AppCorrelationID">-</Data>
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="SubjectUserName">dadmin</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x3be49</Data>
+ <Data Name="DSName">contoso.local</Data>
+ <Data Name="DSType">%%14676</Data>
+ <Data Name="OldObjectDN">CN=Andrei\\0ADEL:53511188-bc98-4995-9d78-2d40143c9711,CN=Deleted Objects,DC=contoso,DC=local</Data>
+ <Data Name="NewObjectDN">CN=Andrei,CN=Users,DC=contoso,DC=local</Data>
+ <Data Name="ObjectGUID">{53511188-BC98-4995-9D78-2D40143C9711}</Data>
+ <Data Name="ObjectClass">user</Data>
  </EventData>
  </Event>
 ```
@@ -111,15 +111,15 @@ This event only generates if the container to which the Active Directory object 
 -   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx) folder, in case if it was restored from it.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **New DN** \[Type = UnicodeString\]: New distinguished name of undeleted object. The Active Directory container to which the object was restored.

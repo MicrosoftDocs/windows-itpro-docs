@@ -2,7 +2,7 @@
 title: Domain member Digitally encrypt secure channel data (when possible) (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Domain member Digitally encrypt secure channel data (when possible).
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be encrypted. Logon information that is transmitted over 
+This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be encrypted. Logon information that is transmitted over
 the secure channel is always encrypted regardless of whether the encryption of all other secure channel traffic is negotiated.
 
 In addition to this policy setting, the following policy settings determine whether a secure channel can be established with a domain controller that is not capable of signing or encrypting secure channel traffic:
@@ -53,7 +53,7 @@ When a device joins a domain, a machine account is created. After joining the do
     The domain member will not attempt to negotiate secure channel encryption.
 
     >**Note:**  If the security policy setting [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) is enabled, this setting will be overwritten.
-     
+
 -   Not defined
 
 ### Best practices
@@ -73,12 +73,12 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not defined|
-| Default Domain Controller Policy | Enabled| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Controller Policy | Enabled|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

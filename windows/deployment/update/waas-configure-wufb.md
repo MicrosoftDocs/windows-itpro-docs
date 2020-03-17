@@ -1,6 +1,6 @@
 ---
 title: Configure Windows Update for Business (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
@@ -22,10 +22,10 @@ ms.topic: article
 - Windows Server 2016
 - Windows Server 2019
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 
-You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).  
+You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 > [!IMPORTANT]
 > Beginning with Windows 10, version 1903, organizations can use Windows Update for Business policies, regardless of the diagnostic data level chosen. If the diagnostic data level is set to **0 (Security)**, Windows Update for Business policies will still be honored. For instructions, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
@@ -34,17 +34,17 @@ Some Windows Update for Business policies are not applicable or behave different
 
 ## Start by grouping devices
 
-By grouping devices with similar deferral periods, administrators are able to cluster devices into deployment or validation groups which can be as a quality control measure as updates are deployed in Windows 10.  With deferral windows and the ability to pause updates, administrators can effectively control and measure update deployments, updating a small pool of devices first to verify quality, prior to a broader roll-out to their organization. For more information, see [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md).  
+By grouping devices with similar deferral periods, administrators are able to cluster devices into deployment or validation groups which can be as a quality control measure as updates are deployed in Windows 10.  With deferral windows and the ability to pause updates, administrators can effectively control and measure update deployments, updating a small pool of devices first to verify quality, prior to a broader roll-out to their organization. For more information, see [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md).
 
 >[!TIP]
->In addition to setting up multiple rings for your update deployments, also incorporate devices enrolled in the Windows Insider Program as part of your deployment strategy. This will provide you the chance to not only evaluate new features before they are broadly available to the public, but it also increases the lead time to provide feedback and influence Microsoft’s design on functional aspects of the product. For more information on Windows Insider program, see [https://insider.windows.com/](https://insider.windows.com/). 
+>In addition to setting up multiple rings for your update deployments, also incorporate devices enrolled in the Windows Insider Program as part of your deployment strategy. This will provide you the chance to not only evaluate new features before they are broadly available to the public, but it also increases the lead time to provide feedback and influence Microsoft’s design on functional aspects of the product. For more information on Windows Insider program, see [https://insider.windows.com/](https://insider.windows.com/).
 
 <span id="configure-devices-for-current-branch-or-current-branch-for-business"/>
 
 
 ## Configure devices for the appropriate service channel
 
-With Windows Update for Business, you can set a device to be on either Windows Insider Preview or the Semi-Annual Channel servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-channels). 
+With Windows Update for Business, you can set a device to be on either Windows Insider Preview or the Semi-Annual Channel servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-channels).
 
 **Release branch policies**
 
@@ -65,7 +65,7 @@ Starting with Windows 10, version 1703, users can configure the branch readiness
 
 ## Configure when devices receive feature updates
 
-After you configure the servicing branch (Windows Insider Preview or Semi-Annual Channel), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update. You can defer receiving these Feature Updates for a period of up to 365 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
+After you configure the servicing branch (Windows Insider Preview or Semi-Annual Channel), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update. You can defer receiving these Feature Updates for a period of up to 365 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.
 
 For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriodinDays=30` will not install a feature update that is first publicly available on Windows Update in September until 30 days later, in October.
 
@@ -87,7 +87,7 @@ For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriod
 
 You can also pause a device from receiving Feature Updates by a period of up to 35 days from when the value is set. After 35 days has passed, the pause setting will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, you can then pause Feature Updates for the device again.
 
-Starting with Windows 10, version 1703, when you configure a pause by using policy, you must set a start date for the pause to begin. The pause period is calculated by adding 35 days to this start date. 
+Starting with Windows 10, version 1703, when you configure a pause by using policy, you must set a start date for the pause to begin. The pause period is calculated by adding 35 days to this start date.
 
 In cases where the pause policy is first applied after the configured start date has passed, you can extend the pause period up to a total of 35 days by configuring a later start date.
 
@@ -104,7 +104,7 @@ In cases where the pause policy is first applied after the configured start date
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseFeatureUpdates** | **1607:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdates</br> **1703 and later:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdatesStartTime |
 | MDM for Windows 10, version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
-You can check the date that Feature Updates were paused by checking the registry key **PausedFeatureDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
+You can check the date that Feature Updates were paused by checking the registry key **PausedFeatureDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 The local group policy editor (GPEdit.msc) will not reflect whether the Feature Update pause period has expired. Although the device will resume Feature Updates after 35 days automatically, the pause checkbox will remain selected in the policy editor. To check whether a device has automatically resumed taking Feature Updates, check the status registry key **PausedFeatureStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings** for the following values:
 
@@ -125,7 +125,7 @@ Starting with Windows 10, version 1703, using Settings to control the pause beha
 
 ## Configure when devices receive Quality Updates
 
-Quality updates are typically published on the first Tuesday of every month, although they can be released at any time. You can define if, and for how long, you would like to defer receiving Quality updates following their availability. You can defer receiving these quality updates for a period of up to 30 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.  
+Quality updates are typically published on the first Tuesday of every month, although they can be released at any time. You can define if, and for how long, you would like to defer receiving Quality updates following their availability. You can defer receiving these quality updates for a period of up to 30 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.
 
 You can set your system to receive updates for other Microsoft products—known as Microsoft updates (such as Microsoft Office, Visual Studio)—along with Windows updates by setting the **AllowMUUpdateService** policy. When you do this, these Microsoft updates will follow the same deferral and pause rules as all other quality updates.
 
@@ -148,7 +148,7 @@ You can set your system to receive updates for other Microsoft products—known 
 
 You can also pause a system from receiving quality updates for a period of up to 35 days from when the value is set. After 35 days have passed, the pause setting will automatically expire and the device will scan Windows Update for applicable quality updates. Following this scan, you can then pause quality updates for the device again.
 
-Starting with Windows 10, version 1703, when you configure a pause by using policy, you must set a start date for the pause to begin. The pause period is calculated by adding 35 days to this start date. 
+Starting with Windows 10, version 1703, when you configure a pause by using policy, you must set a start date for the pause to begin. The pause period is calculated by adding 35 days to this start date.
 
 In cases where the pause policy is first applied after the configured start date has passed, you can extend the pause period up to a total of 35 days by configuring a later start date.
 
@@ -164,7 +164,7 @@ In cases where the pause policy is first applied after the configured start date
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseQualityUpdates** | **1607:** \Microsoft\PolicyManager\default\Update\PauseQualityUpdates</br>**1703:** \Microsoft\PolicyManager\default\Update\PauseQualityUpdatesStartTime |
 | MDM for Windows 10, version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
-You can check the date that quality Updates were paused by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
+You can check the date that quality Updates were paused by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 The local group policy editor (GPEdit.msc) will not reflect whether the quality Update pause period has expired. Although the device will resume quality Updates after 35 days automatically, the pause checkbox will remain selected in the policy editor. To check whether a device has automatically resumed taking quality Updates, check the status registry key **PausedQualityStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings** for the following values:
 
@@ -221,7 +221,7 @@ The following are quick-reference tables of the supported policy values for Wind
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
 | BranchReadinessLevel	| REG_DWORD | 2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
-| DeferQualityUpdates | REG_DWORD | 1: defer quality updates</br>Other value or absent: don’t defer quality updates | 
+| DeferQualityUpdates | REG_DWORD | 1: defer quality updates</br>Other value or absent: don’t defer quality updates |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
 | PauseQualityUpdatesStartTime | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 |DeferFeatureUpdates | REG_DWORD | 1: defer feature updates</br>Other value or absent: don’t defer feature updates |
@@ -267,7 +267,7 @@ When a device running a newer version sees an update available on Windows Update
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)

@@ -5,7 +5,7 @@ description: Learn about how to use a proxy auto-configuration (.pac) file to sp
 author: dansimp
 ms.prod: ie11
 ms.assetid: 6c94708d-71bd-44bd-a445-7e6763b374ae
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.date: 07/27/2017
 These are various ways you can use a proxy auto-configuration (.pac) file to specify an automatic proxy URL. We've included some examples here to help guide you, but you'll need to change the proxy names, port numbers, and IP addresses to match your organization's info.
 
 Included examples:
-- [Example 1: Connect directly if the host is local](#example-1-connect-directly-if-the-host-is-local) 
+- [Example 1: Connect directly if the host is local](#example-1-connect-directly-if-the-host-is-local)
 - [Example 2: Connect directly if the host is inside the firewall](#example-2-connect-directly-if-the-host-is-inside-the-firewall)
 - [Example 3: Connect directly if the host name is resolvable](#example-3-connect-directly-if-the-host-name-is-resolvable)
 - [Example 4: Connect directly if the host is in specified subnet](#example-4-connect-directly-if-the-host-is-in-specified-subnet)
@@ -145,7 +145,7 @@ In this example, the proxy server is selected by explicitly getting the IP addre
 ``` javascript
 function FindProxyForURL(url, host)
  {
- if (myIpAddress() == "999.99.999.99") { 
+ if (myIpAddress() == "999.99.999.99") {
  return "PROXY proxy:80";
  }
  else {
@@ -173,9 +173,9 @@ In this example, the function decides whether to connect to a proxy server, base
 ``` javascript
 function FindProxyForURL(url, host)
  {
- if(weekdayRange("WED", "SAT", "GMT")) 
+ if(weekdayRange("WED", "SAT", "GMT"))
  return "PROXY proxy:80";
- else 
+ else
  return "DIRECT";
  }
 ```

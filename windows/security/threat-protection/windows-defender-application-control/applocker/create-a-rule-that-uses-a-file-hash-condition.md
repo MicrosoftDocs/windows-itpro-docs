@@ -2,7 +2,7 @@
 title: Create a rule that uses a file hash condition (Windows 10)
 description: This topic for IT professionals shows how to create an AppLocker rule with a file hash condition.
 ms.assetid: eb3b3524-1b3b-4979-ba5a-0a0b1280c5c7
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ File hash rules use a system-computed cryptographic hash of the identified file.
 
 For info about the file hash condition, see [Understanding the File Hash Rule Condition in AppLocker](understanding-the-file-hash-rule-condition-in-applocker.md).
 
-You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer 
+You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer
 AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 
 **To create a new rule with a file hash condition**
@@ -42,6 +42,6 @@ AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins
 6.  **Browse Files** to locate the targeted application file.
 
     >**Note:**  You can also click **Browse Folders** which calculates the hash for all the appropriate files relative to the rule collection. To remove hashes individually, click the **Remove** button.
-     
+
 7.  Click **Next**.
 8.  On the **Name** page, either accept the automatically generated rule name or type a new rule name, and then click **Create**.

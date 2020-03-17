@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP for Linux resources
-ms.reviewer: 
+ms.reviewer:
 description: Describes resources for Microsoft Defender ATP for Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 

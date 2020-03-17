@@ -2,7 +2,7 @@
 title: Prepare people to use Windows Hello (Windows 10)
 description: When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization.
 ms.assetid: 5270B416-CE31-4DD9-862D-6C22A2AE508B
-ms.reviewer: 
+ms.reviewer:
 keywords: identity, PIN, biometric, Hello
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -47,7 +47,7 @@ After Hello is set up, people use their PIN to unlock the device, and that will 
 
 ## On personal devices
 
-People who want to access work resources on their personal devices can add a work or school account in **Settings** &gt; **Accounts** &gt; **Work or school**, and then sign in with work credentials. The person selects the method for receiving the verification code, such as text message or email. The verification code is sent and the person then enters the verification code. After verification, the person enters and confirms new PIN. The person can access any token-based resource using this device without being asked for credentials. 
+People who want to access work resources on their personal devices can add a work or school account in **Settings** &gt; **Accounts** &gt; **Work or school**, and then sign in with work credentials. The person selects the method for receiving the verification code, such as text message or email. The verification code is sent and the person then enters the verification code. After verification, the person enters and confirms new PIN. The person can access any token-based resource using this device without being asked for credentials.
 
 People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select the work account, and then select **Unjoin** to remove the account from their device.
 

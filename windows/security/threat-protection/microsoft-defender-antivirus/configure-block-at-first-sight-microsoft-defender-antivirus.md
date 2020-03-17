@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ---
@@ -22,7 +22,7 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are also enabled. In most cases, these prerequisite settings are also enabled by default, so the feature is running without any intervention. 
+Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are also enabled. In most cases, these prerequisite settings are also enabled by default, so the feature is running without any intervention.
 
 You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
@@ -34,7 +34,7 @@ You can [specify how long the file should be prevented from running](configure-c
 When Microsoft Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or clean.
 
 Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
-![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)
 
 In Windows 10, version 1803, block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
@@ -96,7 +96,7 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 
 ### Confirm block at first sight is enabled with Group Policy
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**. 
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -121,7 +121,7 @@ If you had to change any of the settings, you should re-deploy the Group Policy 
 
 1. Start Registry Editor.
 
-2. Go to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Spynet**, and make sure that 
+2. Go to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Spynet**, and make sure that
 
     1. **SpynetReporting** key is set to **1**
 

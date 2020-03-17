@@ -2,7 +2,7 @@
 title: Deny access to this computer from the network (Windows 10)
 description: Best practices, location, values, policy management, and security considerations for the Deny access to this computer from the network security policy setting.
 ms.assetid: 935e9f89-951b-4163-b186-fc325682bb0b
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Guest | 
-| Stand-Alone Server Default Settings | Guest | 
-| Domain Controller Effective Default Settings | Guest | 
-| Member Server Effective Default Settings | Guest | 
-| Client Computer Effective Default Settings | Guest | 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Guest |
+| Stand-Alone Server Default Settings | Guest |
+| Domain Controller Effective Default Settings | Guest |
+| Member Server Effective Default Settings | Guest |
+| Client Computer Effective Default Settings | Guest |
+
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.

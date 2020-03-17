@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Start policies  
+## Start policies
 
 <dl>
   <dd>
@@ -117,7 +117,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
+<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**
 
 <!--SupportedSKUs-->
 <table>
@@ -176,7 +176,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
+<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**
 
 <!--SupportedSKUs-->
 <table>
@@ -235,7 +235,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
+<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**
 
 <!--SupportedSKUs-->
 <table>
@@ -294,7 +294,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
+<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**
 
 <!--SupportedSKUs-->
 <table>
@@ -353,7 +353,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
+<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**
 
 <!--SupportedSKUs-->
 <table>
@@ -412,7 +412,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
+<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**
 
 <!--SupportedSKUs-->
 <table>
@@ -471,7 +471,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
+<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**
 
 <!--SupportedSKUs-->
 <table>
@@ -530,7 +530,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
+<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**
 
 <!--SupportedSKUs-->
 <table>
@@ -589,7 +589,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
+<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -648,7 +648,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
+<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**
 
 <!--SupportedSKUs-->
 <table>
@@ -707,7 +707,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**  
+<a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**
 
 <!--SupportedSKUs-->
 <table>
@@ -755,7 +755,7 @@ Enabling this policy prevents context menus from being invoked in the Start Menu
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Disable context menus in the Start Menu*
 -   GP name: *DisableContextMenusInStart*
 -   GP path: *Start Menu and Taskbar*
@@ -780,7 +780,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
+<a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**
 
 <!--SupportedSKUs-->
 <table>
@@ -846,7 +846,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideapplist"></a>**Start/HideAppList**  
+<a href="" id="start-hideapplist"></a>**Start/HideAppList**
 
 <!--SupportedSKUs-->
 <table>
@@ -895,7 +895,7 @@ The following list shows the supported values:
 Allows IT Admins to configure Start by collapsing or removing the all apps list.
 
 > [!Note]
-> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 
 To validate on Desktop, do the following:
@@ -920,7 +920,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
+<a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**
 
 <!--SupportedSKUs-->
 <table>
@@ -985,7 +985,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
+<a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**
 
 <!--SupportedSKUs-->
 <table>
@@ -1058,7 +1058,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
+<a href="" id="start-hidehibernate"></a>**Start/HideHibernate**
 
 <!--SupportedSKUs-->
 <table>
@@ -1127,7 +1127,7 @@ To validate on Laptop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidelock"></a>**Start/HideLock**  
+<a href="" id="start-hidelock"></a>**Start/HideLock**
 
 <!--SupportedSKUs-->
 <table>
@@ -1192,7 +1192,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
+<a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**
 
 <!--SupportedSKUs-->
 <table>
@@ -1241,7 +1241,7 @@ Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Remove the People Bar from the taskbar*
 -   GP name: *HidePeopleBar*
 -   GP path: *Start Menu and Taskbar*
@@ -1260,7 +1260,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
+<a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**
 
 <!--SupportedSKUs-->
 <table>
@@ -1328,7 +1328,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
+<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**
 
 <!--SupportedSKUs-->
 <table>
@@ -1403,7 +1403,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
+<a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**
 
 <!--SupportedSKUs-->
 <table>
@@ -1453,7 +1453,7 @@ Added in Windows 10, version 1703. Allows IT Admins to configure Start by hidin
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Remove "Recently added" list from Start Menu*
 -   GP name: *HideRecentlyAddedApps*
 -   GP path: *Start Menu and Taskbar*
@@ -1483,7 +1483,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderestart"></a>**Start/HideRestart**  
+<a href="" id="start-hiderestart"></a>**Start/HideRestart**
 
 <!--SupportedSKUs-->
 <table>
@@ -1548,7 +1548,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
+<a href="" id="start-hideshutdown"></a>**Start/HideShutDown**
 
 <!--SupportedSKUs-->
 <table>
@@ -1613,7 +1613,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
+<a href="" id="start-hidesignout"></a>**Start/HideSignOut**
 
 <!--SupportedSKUs-->
 <table>
@@ -1678,7 +1678,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidesleep"></a>**Start/HideSleep**  
+<a href="" id="start-hidesleep"></a>**Start/HideSleep**
 
 <!--SupportedSKUs-->
 <table>
@@ -1743,7 +1743,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
+<a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**
 
 <!--SupportedSKUs-->
 <table>
@@ -1808,7 +1808,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
+<a href="" id="start-hideusertile"></a>**Start/HideUserTile**
 
 <!--SupportedSKUs-->
 <table>
@@ -1877,7 +1877,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
+<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**
 
 <!--SupportedSKUs-->
 <table>
@@ -1953,7 +1953,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
+<a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**
 
 <!--SupportedSKUs-->
 <table>
@@ -2021,7 +2021,7 @@ To validate on Desktop, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-startlayout"></a>**Start/StartLayout**  
+<a href="" id="start-startlayout"></a>**Start/StartLayout**
 
 <!--SupportedSKUs-->
 <table>
@@ -2066,7 +2066,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)  
+> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)
 
 Here is additional SKU support information:
 
@@ -2082,7 +2082,7 @@ For further details on how to customize the Start layout, please see [Customize 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Start Layout*
 -   GP name: *LockedStartLayout*
 -   GP path: *Start Menu and Taskbar*

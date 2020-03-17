@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # BitLocker Upgrading FAQ
@@ -23,7 +23,7 @@ ms.reviewer:
 
 ## Can I upgrade to Windows 10 with BitLocker enabled?
 
-Yes. 
+Yes.
 
 ## What is the difference between suspending and decrypting BitLocker?
 
@@ -33,8 +33,8 @@ Yes.
 
 ## Do I have to decrypt my BitLocker-protected drive to download and install system updates and upgrades?
 
-No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start). 
-Users need to suspend BitLocker for Non-Microsoft software updates, such as:   
+No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start).
+Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 
 - Computer manufacturer firmware updates
 - TPM firmware updates
@@ -42,4 +42,4 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 
 > [!NOTE]
 > If you have suspended BitLocker, you can resume BitLocker protection after you have installed the upgrade or update. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, your computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
- 
+

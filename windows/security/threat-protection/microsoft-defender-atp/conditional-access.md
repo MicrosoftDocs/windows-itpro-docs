@@ -13,11 +13,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Enable Conditional Access to better protect users, devices, and data 
+# Enable Conditional Access to better protect users, devices, and data
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -32,16 +32,16 @@ Conditional Access is a capability that helps you better protect your users and 
 
 With Conditional Access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
 
-You can define security conditions under which devices and applications can run and access information from your network by enforcing policies to stop applications from running until a device returns to a compliant state. 
+You can define security conditions under which devices and applications can run and access information from your network by enforcing policies to stop applications from running until a device returns to a compliant state.
 
-The implementation of Conditional Access in Microsoft Defender ATP is based on Microsoft Intune (Intune) device compliance policies and Azure Active Directory (Azure AD) conditional access policies. 
+The implementation of Conditional Access in Microsoft Defender ATP is based on Microsoft Intune (Intune) device compliance policies and Azure Active Directory (Azure AD) conditional access policies.
 
-The compliance policy is used with Conditional Access to allow only devices that fulfill one or more device compliance policy rules to access applications. 
+The compliance policy is used with Conditional Access to allow only devices that fulfill one or more device compliance policy rules to access applications.
 
 ## Understand the Conditional Access flow
-Conditional Access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated. 
+Conditional Access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated.
 
-The flow begins with devices being seen to have a low, medium, or high risk. These risk determinations are then sent to Intune. 
+The flow begins with devices being seen to have a low, medium, or high risk. These risk determinations are then sent to Intune.
 
 Depending on how you configure policies in Intune, Conditional Access can be set up so that when certain conditions are met, the policy is applied.
 
@@ -49,14 +49,14 @@ For example, you can configure Intune to apply Conditional Access on devices tha
 
 In Intune, a device compliance policy is used in conjunction with Azure AD Conditional Access to block access to applications. In parallel, an automated investigation and remediation process is launched.
 
- A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
+ A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated.
 
-To resolve the risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
+To resolve the risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it.
 
 There are three ways to address a risk:
 1. Use Manual or automated remediation.
 2. Resolve active alerts on the device. This will remove the risk from the device.
-3. You can remove the device from the active policies and consequently, Conditional Access will not be applied on the device. 
+3. You can remove the device from the active policies and consequently, Conditional Access will not be applied on the device.
 
 Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure Conditional Access](configure-conditional-access.md).
 
@@ -70,7 +70,7 @@ The following example sequence of events explains Conditional Access in action:
 4. The manual or automated investigation and remediation is completed and the threat is removed. Microsoft Defender ATP sees that there is no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
 5. Users can now access applications.
 
- 
+
 ## Related topic
 - [Configure Conditional Access in Microsoft Defender ATP](configure-conditional-access.md)
 

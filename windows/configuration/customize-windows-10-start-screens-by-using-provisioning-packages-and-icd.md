@@ -2,7 +2,7 @@
 title: Customize Windows 10 Start and tasbkar with provisioning packages (Windows 10)
 description: In Windows 10, you can use a provisioning package to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: ["Start layout", "start menu"]
 ms.prod: w10
@@ -36,7 +36,7 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 17
 
 Three features enable Start and taskbar layout control:
 
--   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
+-   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
 
     > [!NOTE]
     > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
@@ -49,12 +49,12 @@ Three features enable Start and taskbar layout control:
 
 ## <a href="" id="escape"></a>Prepare the Start layout XML file
 
-The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
+The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
 
 1. Copy the contents of layout.xml into an online tool that escapes characters.
 
-3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project.  
+3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project.
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
@@ -83,7 +83,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. Save your project and close Windows Configuration Designer.
 
-7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
+7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
 
 7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 

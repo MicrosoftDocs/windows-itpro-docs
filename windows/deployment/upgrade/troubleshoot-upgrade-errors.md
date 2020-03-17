@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 description: Understanding the Windows 10 upgrade process can help you troubleshoot errors when something goes wrong. Find out more with this guide.
@@ -24,13 +24,13 @@ ms.topic: article
 >This is a 300 level topic (moderately advanced).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
-If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
+If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process.
 
 Briefly, the upgrade process consists of four phases that are controlled by [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-technical-reference): **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
 
 These phases are explained in greater detail [below](#the-windows-10-upgrade-process). First, let's summarize the actions performed during each phase because this affects the type of errors that can be encountered.
 
-1. **Downlevel phase**: Because this phase runs on the source OS, upgrade errors are not typically seen. If you do encounter an error, ensure the source OS is stable. Also ensure the Windows setup source and the destination drive are accessible. 
+1. **Downlevel phase**: Because this phase runs on the source OS, upgrade errors are not typically seen. If you do encounter an error, ensure the source OS is stable. Also ensure the Windows setup source and the destination drive are accessible.
 
 2. **SafeOS phase**: Errors most commonly occur during this phase due to hardware issues, firmware issues, or non-microsoft disk encryption software.
 
@@ -48,36 +48,36 @@ These phases are explained in greater detail [below](#the-windows-10-upgrade-pro
 3. **First boot phase**: Boot failures in this phase are relatively rare, and almost exclusively caused by device drivers.  Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
 
 4. **Second boot phase**: In this phase, the system is running under the target OS with new drivers. Boot failures are most commonly due to anti-virus software or filter drivers. Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, temporarily uninstall anti-virus software, then retry the upgrade.
- 
+
 If the general troubleshooting techniques described above or the [quick fixes](quick-fixes.md) detailed below do not resolve your issue, you can attempt to analyze [log files](log-files.md) and interpret [upgrade error codes](upgrade-error-codes.md). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md) so that Microsoft can diagnose your issue.
 
 ## The Windows 10 upgrade process
 
-The **Windows Setup** application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. 
+The **Windows Setup** application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings.
 
 When performing an operating system upgrade, Windows Setup uses phases described below. A reboot occurs between each of the phases. After the first reboot, the user interface will remain the same until the upgrade is completed. Percent progress is displayed and will advance as you move through each phase, reaching 100% at the end of the second boot phase.
 
 1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Windows files are copied and installation components are gathered.
 
-    ![downlevel phase](../images/downlevel.png)  
+    ![downlevel phase](../images/downlevel.png)
 
 2. **Safe OS phase**: A recovery partition is configured, Windows files are expanded, and updates are installed. An OS rollback is prepared if needed. Example error codes: 0x2000C, 0x20017.
 
-    ![safeOS phase](../images/safeos.png) 
+    ![safeOS phase](../images/safeos.png)
 
 3. **First boot phase**: Initial settings are applied. Example error codes: 0x30018, 0x3000D.
 
-    ![first boot phase](../images/firstboot.png) 
+    ![first boot phase](../images/firstboot.png)
 
-4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**. Example error codes: 0x4000D, 0x40017. 
+4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**. Example error codes: 0x4000D, 0x40017.
 
     At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
 
-    ![second boot phase](../images/secondboot.png) 
+    ![second boot phase](../images/secondboot.png)
 
-    ![second boot phase](../images/secondboot2.png) 
+    ![second boot phase](../images/secondboot2.png)
 
-    ![second boot phase](../images/secondboot3.png) 
+    ![second boot phase](../images/secondboot3.png)
 
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 

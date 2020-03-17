@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -42,26 +42,26 @@ It may be positively correlated with a “[4624](event-4624.md): An account was 
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4647</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12545</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-09T03:08:39.126890800Z" /> 
- <EventRecordID>230200</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="3864" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4647</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12545</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-09T03:08:39.126890800Z" />
+ <EventRecordID>230200</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="3864" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data> 
- <Data Name="TargetUserName">dadmin</Data> 
- <Data Name="TargetDomainName">CONTOSO</Data> 
- <Data Name="TargetLogonId">0x29b379</Data> 
+ <Data Name="TargetUserSid">S-1-5-21-3457937927-2839227994-823803824-1104</Data>
+ <Data Name="TargetUserName">dadmin</Data>
+ <Data Name="TargetDomainName">CONTOSO</Data>
+ <Data Name="TargetLogonId">0x29b379</Data>
  </EventData>
  </Event>
 

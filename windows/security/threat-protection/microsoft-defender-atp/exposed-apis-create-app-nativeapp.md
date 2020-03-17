@@ -1,6 +1,6 @@
 ---
-title: Use Microsoft Defender Advanced Threat Protection APIs  
-ms.reviewer: 
+title: Use Microsoft Defender Advanced Threat Protection APIs
+ms.reviewer:
 description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender ATP without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -49,7 +49,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
@@ -155,7 +155,7 @@ Sanity check to make sure you got a correct token:
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
-- Example of sending a request to get a list of alerts **using C#** 
+- Example of sending a request to get a list of alerts **using C#**
 
     ```csharp
     var httpClient = new HttpClient();

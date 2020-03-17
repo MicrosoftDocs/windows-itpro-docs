@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## Before you begin:
 
@@ -46,11 +46,11 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 ## The schema of the events in the Storage account:
 
-- A blob container will be created for each event type: 
+- A blob container will be created for each event type:
 
 ![Image of event hub resource Id](images/storage-account-event-schema.png)
 
-- The schema of each row in a blob is the following JSON: 
+- The schema of each row in a blob is the following JSON:
 
 ```
 {
@@ -58,7 +58,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
         "tenantId": "<Your tenant ID>"
         "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
         "properties": { <WDATP Advanced Hunting event as Json> }
-}               
+}
 ```
 
 - Each blob contains multiple rows.
@@ -71,16 +71,16 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 In order to get the data types for our events properties do the following:
 
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
-2. Run the following query to get the data types mapping for each event: 
+2. Run the following query to get the data types mapping for each event:
 
 ```
 {EventType}
 | getschema
-| project ColumnName, ColumnType 
+| project ColumnName, ColumnType
 
 ```
 
-- Here is an example for Device Info event: 
+- Here is an example for Device Info event:
 
 ![Image of event hub resource ID](images/machine-info-datatype-example.png)
 

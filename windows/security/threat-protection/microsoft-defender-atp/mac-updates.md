@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -47,7 +47,7 @@ This section describes the most common preferences that can be used to configure
 
 ### Set the channel name
 
-The channel determines the type and frequency of updates that are offered through MAU. Devices in `InsiderFast` (corresponding to the Insider Fast channel) can try out new features before devices in `External` (corresponding to the Insider Slow channel) and `Production`. 
+The channel determines the type and frequency of updates that are offered through MAU. Devices in `InsiderFast` (corresponding to the Insider Fast channel) can try out new features before devices in `External` (corresponding to the Insider Slow channel) and `Production`.
 
 The `Production` channel contains the most stable version of the product.
 

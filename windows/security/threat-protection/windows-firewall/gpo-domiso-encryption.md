@@ -2,7 +2,7 @@
 title: GPO\_DOMISO\_Encryption\_WS2008 (Windows 10)
 description: GPO\_DOMISO\_Encryption\_WS2008
 ms.assetid: 84375480-af6a-4c79-aafe-0a37115a7446
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -52,9 +52,9 @@ Make sure that the GPO that contains firewall rules for the isolated domain does
 
 **Next:** [Server Isolation GPOs](server-isolation-gpos.md)
 
- 
 
- 
+
+
 
 
 

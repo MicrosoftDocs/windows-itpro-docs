@@ -13,10 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-- m365solution-endpointprotect 
-ms.topic: article 
+- m365solution-endpointprotect
+ms.topic: article
 ---
 
 # Prepare Microsoft Defender ATP deployment
@@ -33,7 +33,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
+      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment">
         <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
       <br/>Phase 1: Prepare </a><br>
     </td>
@@ -50,14 +50,14 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
   <tr>
     <td style="width:25%; border:0;">
-   
+
     </td>
     <td valign="top" style="width:25%; border:0;">
-    
+
 </td>
     <td valign="top" style="width:25%; border:0;">
 
-</td>    
+</td>
   </tr>
 </table>
 
@@ -89,7 +89,7 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
 
-## Environment 
+## Environment
 
 
 This section is used to ensure your environment is deeply understood by the

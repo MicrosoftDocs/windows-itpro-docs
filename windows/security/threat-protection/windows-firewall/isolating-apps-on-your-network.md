@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ---
 
@@ -66,7 +66,7 @@ To isolate Microsoft Store apps on your network, you need to use Group Policy to
 
     >**Note:**  You can install the RSAT on your device running Windows 10 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
-     
+
 ## Step 1: Define your network
 
 The **Home\\Work Networking** capability enables access to intranet resources. Administrators can use Group Policy settings to define the scope of the intranet. This ensures that Microsoft Store apps can access intranet resources appropriately.
@@ -126,21 +126,21 @@ The following table provides a complete list of the possible app capabilities.
 | Capability | Name | Description |
 | - | - | - |
 | **Internet (Client)** | internetClient | Your outgoing Internet connection.|
-| **Internet (Client &amp; Server)** | internetClientServer| Your Internet connection, including incoming unsolicited connections from the Internet The app can send information to or from your device through a firewall. You do not need to declare **internetClient** if this capability is declared. 
-| **Home\Work Networking** |privateNetworkClientServer| A home or work network. The app can send information to or from your  device and other devices on the same network.| 
-| **Document Library Access**| documentsLibrary| Your Documents library, including the capability to add, change, or delete files. The package can only access file types that are declared in the manifest.| 
-| **Picture Library Access**| picturesLibrary| Your Pictures library, including the capability to add, change, or delete files.| 
-| **Video Library Access**| videosLibrary| Your Videos library, including the capability to add, change, or delete files.| 
-| **Music Library Access**| musicLibrary|Your Music library, including the capability to add, change, or delete files.| 
-| **Default Windows Credentials**| defaultWindowsCredentials| Your Windows credentials for access to a corporate intranet. This application can impersonate you on the network.| 
-| **Removable Storage** | removableStorage| A removable storage device, such as an external hard disk, USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. This package can only access file types that are declared in the manifest.| 
-| **Shared User Certificates**| sharedUserCertificates| Software and hardware certificates or a smart card, which the app uses to identify you. This capability can be used by an employer, a bank, or government services to identify you.| 
-| **Location**| location| Provides access to the user's current location.| 
-| **Microphone** | microphone| Provides access to the microphone's audio feed.| 
-| **Near-field Proximity** | proximity| Required for near-field communication (NFC) between devices in close proximity. NFC can be used to send files or connect with an app on a proximate device.| 
-| **Text Messaging** | sms| Provides access to text messaging functionality.| 
-| **Webcam** | webcam| Provides access to the webcam's video feed.| 
-| **Other devices (represented by GUIDs)** | &lt;GUID&gt;| Includes specialized devices and Windows Portable Devices.| 
+| **Internet (Client &amp; Server)** | internetClientServer| Your Internet connection, including incoming unsolicited connections from the Internet The app can send information to or from your device through a firewall. You do not need to declare **internetClient** if this capability is declared.
+| **Home\Work Networking** |privateNetworkClientServer| A home or work network. The app can send information to or from your  device and other devices on the same network.|
+| **Document Library Access**| documentsLibrary| Your Documents library, including the capability to add, change, or delete files. The package can only access file types that are declared in the manifest.|
+| **Picture Library Access**| picturesLibrary| Your Pictures library, including the capability to add, change, or delete files.|
+| **Video Library Access**| videosLibrary| Your Videos library, including the capability to add, change, or delete files.|
+| **Music Library Access**| musicLibrary|Your Music library, including the capability to add, change, or delete files.|
+| **Default Windows Credentials**| defaultWindowsCredentials| Your Windows credentials for access to a corporate intranet. This application can impersonate you on the network.|
+| **Removable Storage** | removableStorage| A removable storage device, such as an external hard disk, USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. This package can only access file types that are declared in the manifest.|
+| **Shared User Certificates**| sharedUserCertificates| Software and hardware certificates or a smart card, which the app uses to identify you. This capability can be used by an employer, a bank, or government services to identify you.|
+| **Location**| location| Provides access to the user's current location.|
+| **Microphone** | microphone| Provides access to the microphone's audio feed.|
+| **Near-field Proximity** | proximity| Required for near-field communication (NFC) between devices in close proximity. NFC can be used to send files or connect with an app on a proximate device.|
+| **Text Messaging** | sms| Provides access to text messaging functionality.|
+| **Webcam** | webcam| Provides access to the webcam's video feed.|
+| **Other devices (represented by GUIDs)** | &lt;GUID&gt;| Includes specialized devices and Windows Portable Devices.|
 
 You can create a Windows Defender Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Microsoft Store app.
 

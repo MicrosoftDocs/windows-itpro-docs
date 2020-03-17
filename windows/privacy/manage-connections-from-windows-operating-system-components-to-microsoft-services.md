@@ -1,8 +1,8 @@
---- 
+---
 title: Manage connections from Windows 10 operating system components to Microsoft services
 description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-ms.reviewer: 
+ms.reviewer:
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ ms.date: 7/7/2020
 
 # Manage connections from Windows 10 operating system components to Microsoft services
 
-**Applies to** 
+**Applies to**
 
 - Windows 10 Enterprise, version 1607 and newer
 - Windows Server 2016
@@ -34,12 +34,12 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - The Allowed Traffic endpoints are listed here: [Allowed Traffic](#bkmk-allowedtraffic)
 >     -   CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 > - For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: Windows Update, Automatic Root Certificates Update, and Windows Defender. Accordingly, we do not recommend disabling any of these features.
-> - It is recommended that you restart a device after making configuration changes to it. 
+> - It is recommended that you restart a device after making configuration changes to it.
 > - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
-> [!Warning] 
+> [!Warning]
 > - If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
-> - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode. 
+> - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode.
 > - During update or upgrade of Windows, egress traffic may occur.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
@@ -55,8 +55,8 @@ The following sections list the components that make network connections to Micr
 The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
 
 
-| Setting | UI | Group Policy | Registry | 
-| - | :-: | :-: | :-: | 
+| Setting | UI | Group Policy | Registry |
+| - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -73,41 +73,41 @@ The following table lists management options for each setting, beginning with Wi
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | 
-| [18. Settings > Privacy](#bkmk-settingssection) | | | | 
+| [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | |
+| [18. Settings > Privacy](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)| 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.6 Speech](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)|
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.6 Speech](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.17 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.17 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.22 Activity History](#bkmk-act-history) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.23 Voice Activation](#bkmk-voice-act) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
-| [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [23. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [23. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
@@ -115,8 +115,8 @@ The following table lists management options for each setting, beginning with Wi
 
 See the following table for a summary of the management settings for Windows Server 2016 with Desktop Experience.
 
-| Setting | UI | Group Policy | Registry | 
-| - | :-: | :-: | :-: | 
+| Setting | UI | Group Policy | Registry |
+| - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -140,8 +140,8 @@ See the following table for a summary of the management settings for Windows Ser
 
 See the following table for a summary of the management settings for Windows Server 2016 Server Core.
 
-| Setting | Group Policy | Registry | 
-| - | :-: | :-: | 
+| Setting | Group Policy | Registry |
+| - | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -156,7 +156,7 @@ See the following table for a summary of the management settings for Windows Ser
 See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
 
 | Setting | Registry |
-| - | :-: |  
+| - | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | ![Check mark](images/checkmark.png) |
@@ -166,7 +166,7 @@ See the following table for a summary of the management settings for Windows Ser
 
 See the following table for a summary of the management settings for Windows Server 2019.
 
-| Setting | UI | Group Policy | Registry | 
+| Setting | UI | Group Policy | Registry |
 | - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -188,33 +188,33 @@ See the following table for a summary of the management settings for Windows Ser
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)| 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.6 Speech](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)|
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.6 Speech](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.17 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | 
-| &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[18.21 Inking & Typing](#bkmk-priv-ink) | ![Check mark](images/checkmark.png) | |  ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.22 Activity History](#bkmk-act-history) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.23 Voice Activation](#bkmk-voice-act) | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) |
-| [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [19. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [20. Storage Health](#bkmk-storage-health) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png)  |
 | [21. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [23. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |
 | [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -415,7 +415,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
->When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/en-us/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+>When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/en-us/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -523,7 +523,7 @@ To turn off Live Tiles:
 
   -or-
 
-- Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)** 
+- Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)**
 
 In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
 
@@ -648,7 +648,7 @@ To turn off OneDrive in your organization:
 
     -or-
 
-- Create a REG_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OneDrive** with a **value of 1 (one)** 
+- Create a REG_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OneDrive** with a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-preinstalledapps"></a>17. Preinstalled apps
@@ -933,7 +933,7 @@ To turn off **Location for this device**:
 - Click the **Change** button in the UI.
 
   -or-
-  
+
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
 
   -or-
@@ -943,7 +943,7 @@ To turn off **Location for this device**:
 To turn off **Allow apps to access your location**:
 
 - Turn off the feature in the UI.
-  
+
    -or-
 
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
@@ -952,7 +952,7 @@ To turn off **Allow apps to access your location**:
 
 - Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
- 
+
 To turn off **Location history**:
 
 - Erase the history using the **Clear** button in the UI.
@@ -1035,15 +1035,15 @@ To turn off **Let apps access my notifications**:
 
 ### <a href="" id="bkmk-priv-speech"></a>18.6 Speech
 
-In the **Speech** area, you can configure the functionality as such: 
+In the **Speech** area, you can configure the functionality as such:
 
 To turn off dictation of your voice, speaking to Cortana and other apps, and to prevent sending your voice input to Microsoft Speech services:
 
-- Toggle the Settings -> Privacy -> Speech -> **Online speech recognition** switch to **Off** 
+- Toggle the Settings -> Privacy -> Speech -> **Online speech recognition** switch to **Off**
 
   -or-
 
-- **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Control Panel > Regional and Language Options > Allow users to enable online speech recognition services** 
+- **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Control Panel > Regional and Language Options > Allow users to enable online speech recognition services**
 
   -or-
 
@@ -1052,11 +1052,11 @@ To turn off dictation of your voice, speaking to Cortana and other apps, and to 
 
 If you're running at Windows 10, version 1703 up to and including Windows 10, version 1803, you can turn off updates to the speech recognition and speech synthesis models:
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data** 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatic update of Speech Data**
 
   -or-
 
-- Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)** 
+- Create a REG_DWORD registry setting named **AllowSpeechModelUpdate** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Speech** with a **value of 0 (zero)**
 
 
 
@@ -1180,10 +1180,10 @@ To turn off **Choose apps that can read or send messages**:
 
 - Turn off the feature in the UI for each app.
 
-**To turn off Message Sync** 
+**To turn off Message Sync**
 
 -   Create a REG_DWORD registry setting named **AllowMessageSync** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Messaging** and set the **value to 0 (zero)**.
-   
+
     -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Messaging**
@@ -1238,7 +1238,7 @@ In the **Other Devices** area, you can choose whether devices that aren't paired
 
 To turn off **Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone**:
 
-- Turn off the feature in the UI by going to Settings > Privacy > Other devices >  "Communicate with unpaired devices.    Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**. 
+- Turn off the feature in the UI by going to Settings > Privacy > Other devices >  "Communicate with unpaired devices.    Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**.
 
   -or-
 
@@ -1314,7 +1314,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
 > [!NOTE]
 > If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
-  
+
 
 To turn off tailored experiences with relevant tips and recommendations by using your diagnostics data:
 
@@ -1414,50 +1414,50 @@ To turn this off:
 
 ### <a href="" id="bkmk-priv-ink"></a>18.21 Inking & Typing
 
-In the **Inking & Typing** area you can configure the functionality as such: 
+In the **Inking & Typing** area you can configure the functionality as such:
 
 To turn off Inking & Typing data collection:
 
-- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off** 
+- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off**
 
   -OR-
-  
+
   **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Text Input > Improve inking and typing recognition**
-  
+
   -and-
-  
+
   **Disable** the Group Policy: **User Configuration > Administrative Templates  > Control Panel > Regional and Language Options > Handwriting personalization > Turn off automatic learning**
-  
+
   -OR-
 
 - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
   -and-
- 
+
 - Set **RestrictImplicitInkCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History
-In the **Activity History** area, you can choose turn Off tracking of your Activity History.  
+In the **Activity History** area, you can choose turn Off tracking of your Activity History.
 
 To turn this Off in the UI:
 
-- Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes 
+- Turn **Off** the feature in the UI by going to Settings -> Privacy -> Activity History and **un-checking** the **Store my activity history on this device** AND **unchecking** the **Send my activity History to Microsoft** checkboxes
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Enables Activity Feed** 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Enables Activity Feed**
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Allow publishing of User Activities** 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** named **Allow publishing of User Activities**
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** > named **Allow upload of User Activities** 
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **OS Policies** > named **Allow upload of User Activities**
 
 -OR-
- 
+
 - Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
 
      -and-
@@ -1467,14 +1467,14 @@ To turn this Off in the UI:
      -and-
 
 - Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
-    
+
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
-In the **Voice activation** area, you can choose turn Off apps ability to listen for a Voice keyword.  
+In the **Voice activation** area, you can choose turn Off apps ability to listen for a Voice keyword.
 
 To turn this Off in the UI:
 
-- Turn **Off** the feature in the UI by going to **Settings -> Privacy -> Voice activation** and toggle **Off** the **Allow apps to use voice activation** AND also toggle **Off** the **Allow apps to use voice activation when this device is locked** 
+- Turn **Off** the feature in the UI by going to **Settings -> Privacy -> Voice activation** and toggle **Off** the **Allow apps to use voice activation** AND also toggle **Off** the **Allow apps to use voice activation when this device is locked**
 
 -OR-
 
@@ -1486,7 +1486,7 @@ To turn this Off in the UI:
 
 
 -OR-
- 
+
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoice** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**
 
      -and-
@@ -1542,7 +1542,7 @@ You can control if your settings are synchronized:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Sync your settings** &gt; **Do not sync**. Leave the "Allow users to turn syncing on" checkbox **unchecked**. 
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Sync your settings** &gt; **Do not sync**. Leave the "Allow users to turn syncing on" checkbox **unchecked**.
 
   -or-
 
@@ -1578,7 +1578,7 @@ Wi-Fi Sense automatically connects devices to known hotspots and to the wireless
 
 To turn off **Connect to suggested open hotspots** and **Connect to networks shared by my contacts**:
 
-- Turn off the feature in the UI in Settings  > Network & Internet  > Wi-Fi 
+- Turn off the feature in the UI in Settings  > Network & Internet  > Wi-Fi
 
   -or-
 
@@ -1593,12 +1593,12 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 ### <a href="" id="bkmk-defender"></a>24. Windows Defender
 
-You can disconnect from the Microsoft Antimalware Protection Service. 
+You can disconnect from the Microsoft Antimalware Protection Service.
 
 >[!IMPORTANT]
 >**Required Steps BEFORE setting the Windows Defender Group Policy or RegKey on Windows 10 version 1903**
 >1. Ensure Windows and Windows Defender are fully up to date.
->2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**. 
+>2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**.
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
@@ -1638,7 +1638,7 @@ You can stop downloading **Definition Updates**:
 
   -and-
 
-- **Remove** the **DefinitionUpdateFileSharesSources** reg value if it exists under **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Signature Updates** 
+- **Remove** the **DefinitionUpdateFileSharesSources** reg value if it exists under **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Signature Updates**
 
 
 You can turn off **Malicious Software Reporting Tool (MSRT) diagnostic data**:
@@ -1646,7 +1646,7 @@ You can turn off **Malicious Software Reporting Tool (MSRT) diagnostic data**:
 - Set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to **1**.
 
 > [!NOTE]
-> There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data. 
+> There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data.
 
 
 You can turn off **Enhanced Notifications** as follows:
@@ -1655,7 +1655,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Reporting**.  
+- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Reporting**.
 
   -or-
 
@@ -1666,7 +1666,7 @@ You can turn off **Enhanced Notifications** as follows:
 
 To disable Windows Defender Smartscreen:
 
-In Group Policy, configure: 
+In Group Policy, configure:
 
 - **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure Windows Defender SmartScreen** to be **Disabled**
 
@@ -1695,7 +1695,7 @@ In Group Policy, configure:
 
 Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or Group Policy.
 
-If you're running Windows 10, version 1607 or later, you need to: 
+If you're running Windows 10, version 1607 or later, you need to:
 
 - **Enable** the following Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
@@ -1732,27 +1732,27 @@ If you're running Windows 10, version 1607 or later, you need to:
 
 - Apply the Group Policies:
 
-  - **Enable** the **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image and logon image** Group Policy. 
+  - **Enable** the **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image and logon image** Group Policy.
      - Add **C:\\windows\\web\\screen\\lockscreen.jpg** as the location in the **Path to local lock screen image** box.
 
      - Check the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
        > [!NOTE]
-       > This will only take effect if the policy is applied before the first logon. 
-       > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, 
-       > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** 
+       > This will only take effect if the policy is applied before the first logon.
+       > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device,
+       > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization**
        >
-       > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** 
-       > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in 
+       > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization**
+       > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in
        > **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **1 (one)**.
        >
-       > The Group Policy for the **LockScreenOverlaysDisabled** regkey is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**. 
+       > The Group Policy for the **LockScreenOverlaysDisabled** regkey is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**.
 
 
   \-AND-
 
 
-  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips** to **Enabled** 
+  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips** to **Enabled**
 
     -or-
 
@@ -1767,8 +1767,8 @@ If you're running Windows 10, version 1607 or later, you need to:
     -or-
 
   - Create a new REG_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY_LOCAL_MACHINE\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
-   
- 
+
+
 This policy setting controls whether the lock screen appears for users.  The Do not display the lock screen Group Policy should be set to Enable to prevent the lock screen from being displayed. The Group Computer Configuration\Administrative templates\Control Panel\Personalization!Do not display the lock screen.
 
 If you enable this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
@@ -1843,7 +1843,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 -or-
 
-- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**. 
+- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**.
 
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
@@ -1860,15 +1860,15 @@ You can turn off Windows Update by setting the following registry entries:
 
   -and-
 
-- Add a REG_SZ value named **WUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**. 
+- Add a REG_SZ value named **WUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
 
   -and-
 
-- Add a REG_SZ value named **WUStatusServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**. 
+- Add a REG_SZ value named **WUStatusServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
 
   -and-
 
-- Add a REG_SZ value named **UpdateServiceUrlAlternate** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**. 
+- Add a REG_SZ value named **UpdateServiceUrlAlternate** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
 
   -and-
 
@@ -1876,7 +1876,7 @@ You can turn off Windows Update by setting the following registry entries:
 
 -OR-
 
-- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations** to **Enabled** 
+- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations** to **Enabled**
 
   -and-
 
@@ -1884,11 +1884,11 @@ You can turn off Windows Update by setting the following registry entries:
 
   -and-
 
-- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "** 
+- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
 
   -and-
 
-- Set the Group Policy **User Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.  
+- Set the Group Policy **User Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
 
 
 You can turn off automatic updates by doing the following. This is not recommended.
@@ -1900,12 +1900,12 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
 
-  
+
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
-|Allowed traffic endpoints| 
-| --- | 
+|Allowed traffic endpoints|
+| --- |
 |activation-v2.sls.microsoft.com/*|
 |crl.microsoft.com/pki/crl/*|
 |ocsp.digicert.com/*|

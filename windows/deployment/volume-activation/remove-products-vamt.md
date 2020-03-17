@@ -2,7 +2,7 @@
 title: Remove Products (Windows 10)
 description: Remove Products
 ms.assetid: 4d44379e-dda1-4a8f-8ebf-395b6c0dad8e
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -32,5 +32,5 @@ To remove one or more products from the Volume Activation Management Tool (VAMT)
 
 ## Related topics
 - [Add and Manage Products](add-manage-products-vamt.md)
- 
- 
+
+

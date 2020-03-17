@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -46,7 +46,7 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
     ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
-    
+
 ## Comparison of settings and functions of the old app and the new app
 
 All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app.
@@ -123,9 +123,9 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection settings**.
 
-4. Under the **Exclusions** setting, click **Add or remove exclusions**. 
+4. Under the **Exclusions** setting, click **Add or remove exclusions**.
 
-5. Click the plus icon to choose the type and set the options for each exclusion. 
+5. Click the plus icon to choose the type and set the options for each exclusion.
 <a id="detection-history"></a>
 
 The following table summarizes exclusion types and what happens:
@@ -138,17 +138,17 @@ The following table summarizes exclusion types and what happens:
 |**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.         |
 
 To learn more, see:
-- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
+- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
 - [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus)
 
 ### Review threat detection history in the Windows Defender Security Center app
 
   1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
-  
+
   2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
   3. Click **Threat history**
-  
+
   4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
 
 <a id="ransomware"></a>

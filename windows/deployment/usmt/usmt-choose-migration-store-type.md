@@ -2,7 +2,7 @@
 title: Choose a Migration Store Type (Windows 10)
 description: Choose a Migration Store Type
 ms.assetid: 4e163e90-9c57-490b-b849-2ed52ab6765f
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -47,7 +47,7 @@ One of the main considerations for planning your migration is to determine which
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -56,9 +56,9 @@ One of the main considerations for planning your migration is to determine which
 
 [User State Migration Tool (USMT) How-to topics](usmt-how-to.md)
 
- 
 
- 
+
+
 
 
 

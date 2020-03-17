@@ -2,7 +2,7 @@
 title: How User Account Control works (Windows 10)
 description: User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
 ms.assetid: 9f921779-0fd3-4206-b0e4-05a19883ee59
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: operate
 ms.sitesec: library
@@ -269,7 +269,7 @@ To better understand each component, review the table below:
 </td>
 </tr>
 </table>
- 
+
 The slider will never turn UAC completely off. If you set it to <strong>Never notify</strong>, it will:
 
 -   Keep the UAC service running.
@@ -277,9 +277,9 @@ The slider will never turn UAC completely off. If you set it to <strong>Never no
 -   Automatically deny all elevation requests for standard users.
 
 > **Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
-> 
+>
 > **Warning:**  Universal Windows apps will not work when UAC is disabled.
- 
+
 ### Virtualization
 
 Because system administrators in enterprise environments attempt to secure systems, many line-of-business (LOB) applications are designed to use only a standard user access token. As a result, you do not need to replace the majority of apps when UAC is turned on.
@@ -320,5 +320,5 @@ Before a 32-bit process is created, the following attributes are checked to dete
 -   There are targeted sequences of bytes within the executable file.
 
 > **Note:**  The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
-> 
+>
 > **Note:**  The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).

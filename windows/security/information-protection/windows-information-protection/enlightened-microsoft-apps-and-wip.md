@@ -2,7 +2,7 @@
 title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) (Windows 10)
 description: Learn the difference between enlightened and unenlightened apps. Find out which enlightened apps are provided by Microsoft. Learn how to allow-list them.
 ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
-ms.reviewer: 
+ms.reviewer:
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -38,7 +38,7 @@ Apps can be enlightened or unenlightened:
 
     -   Windows **Save As** experiences only allow you to save your files as enterprise.
 
-- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode. 
+- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode.
 
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:

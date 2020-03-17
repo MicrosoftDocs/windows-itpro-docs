@@ -2,7 +2,7 @@
 title: What does USMT migrate (Windows 10)
 description: What does USMT migrate
 ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -81,17 +81,17 @@ This section describes the user data that USMT migrates by default, using the Mi
 
     **.accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.**
 
-    **Note**  
+    **Note**
     The asterisk (\*) stands for zero or more characters.
 
-     
+
 
 -   **Access control lists.** USMT migrates ACLs for specified files and folders from computers running both Windows® XP and Windows Vista. For example, if you migrate a file named File1.txt that is read-only for User1 and read/write for User2, these settings will still apply on the destination computer after the migration.
 
-**Important**  
+**Important**
 To migrate ACLs, you must specify the directory to migrate in the MigUser.xml file. Using file patterns like \*.doc will not migrate a directory. The source ACL information is migrated only when you explicitly specify the directory. For example, `<pattern type="File">c:\test docs</pattern>`.
 
- 
+
 
 ## <a href="" id="bkmk-4"></a>Operating-system components
 
@@ -150,30 +150,30 @@ The following components are migrated by default using the manifest files:
 
 \* These settings are not available for an offline migration. For more information, see [Offline Migration Reference](offline-migration-reference.md).
 
-**Important**  
+**Important**
 This list may not be complete. There may be additional components that are migrated.
 
- 
 
-**Note**  
+
+**Note**
 Some settings, such as fonts, are not applied by the LoadState tool until after the destination computer has been restarted. For this reason, restart the destination computer after you run the LoadState tool.
 
- 
+
 
 ## <a href="" id="bkmk-2"></a>Supported applications
 
 
 Although it is not required for all applications, it is good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that the migrated settings are not overwritten by the application installers.
 
-**Note**  
+**Note**
 The versions of installed applications must match on the source and destination computers. USMT does not support migrating the settings of an earlier version of an application to a later version, except for Microsoft Office.
 
- 
 
-**Note**  
+
+**Note**
 USMT migrates only the settings that have been used or modified by the user. If there is an application setting on the source computer that was not touched by the user, the setting may not migrate.
 
- 
+
 
 When you specify the MigApp.xml file, USMT migrates the settings for the following applications:
 
@@ -368,7 +368,7 @@ When you specify the MigApp.xml file, USMT migrates the settings for the followi
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="no"></a>What USMT does not migrate
 
@@ -420,9 +420,9 @@ Starting in Windows 10, version 1607 the USMT does not migrate the Start menu la
 
 [Plan your migration](usmt-plan-your-migration.md)
 
- 
 
- 
+
+
 
 
 

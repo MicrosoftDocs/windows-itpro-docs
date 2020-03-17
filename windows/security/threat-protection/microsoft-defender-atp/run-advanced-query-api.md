@@ -1,6 +1,6 @@
 ---
 title: Advanced Hunting API
-ms.reviewer: 
+ms.reviewer:
 description: Use the Advanced hunting API to run advanced queries on Microsoft Defender Advanced Threat Protection
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -21,7 +21,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Limitations
 1. You can only run a query on data from the last 30 days.
@@ -49,7 +49,7 @@ POST https://api.securitycenter.windows.com/api/advancedqueries/run
 
 ## Request headers
 
-Header | Value 
+Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
@@ -78,7 +78,7 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/api/advancedqueries/run
 Content-type: application/json
 {
-	"Query":"DeviceProcessEvents  
+	"Query":"DeviceProcessEvents
     | where InitiatingProcessFileName =~ 'powershell.exe'
     | where ProcessCommandLine contains 'appdata'
     | project Timestamp, FileName, InitiatingProcessFileName, DeviceId

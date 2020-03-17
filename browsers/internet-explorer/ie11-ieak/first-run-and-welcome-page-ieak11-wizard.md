@@ -5,7 +5,7 @@ description: How to use the First Run Wizard and Welcome Page Options page in th
 author: dansimp
 ms.prod: ie11
 ms.assetid: 85f856a6-b707-48a9-ba99-3a6e898276a9
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -35,9 +35,9 @@ Clearing this box lets you use the IE11 **Welcome** page or your custom **Welcom
 
 3.  Click **Next** to go to the [Compatibility View](compat-view-ieak11-wizard.md) page or **Back** to go to the [Browsing Options](browsing-options-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: AssignedAccess DDF
 description: AssignedAccess DDF
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -200,9 +200,9 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 
 [AssignedAccess configuration service provider](assignedaccess-csp.md)
 
- 
 
- 
+
+
 
 
 

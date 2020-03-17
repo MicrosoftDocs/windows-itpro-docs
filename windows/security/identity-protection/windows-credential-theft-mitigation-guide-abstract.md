@@ -2,7 +2,7 @@
 title: Windows 10 Credential Theft Mitigation Guide Abstract (Windows 10)
 description: Provides a summary of the Windows 10 credential theft mitigation guide.
 ms.assetid: 821ddc1a-f401-4732-82a7-40d1fff5a78a
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

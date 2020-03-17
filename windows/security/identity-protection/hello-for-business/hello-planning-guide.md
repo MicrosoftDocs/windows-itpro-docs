@@ -1,6 +1,6 @@
 ---
 title: Planning a Windows Hello for Business Deployment
-description: A guide to planning a Windows Hello for Business deployment 
+description: A guide to planning a Windows Hello for Business deployment
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: conceptual
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Planning a Windows Hello for Business Deployment
 
@@ -59,7 +59,7 @@ There are three deployment models from which you can choose: cloud only, hybrid,
 The cloud only deployment model is for organizations who only have cloud identities and do not access on-premises resources.  These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint, OneDrive, and others.  Also, because these users do not use on-premises resources, they do not need certificates for things like VPN because everything they need is hosted in Azure.
 
 ##### Hybrid
-The hybrid deployment model is for organizations that: 
+The hybrid deployment model is for organizations that:
 * Are federated with Azure Active Directory
 * Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
 * Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
@@ -106,7 +106,7 @@ The built-in Windows Hello for Business provisioning experience creates a hardwa
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multi-factor authentication for their users should use cloud-based Azure Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.
 
 Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 > [!NOTE]
@@ -129,7 +129,7 @@ Windows Hello for Business provides organizations with a rich set of granular po
 
 #### Group Policy
 
-Group Policy is the easiest and most popular way to manage Windows Hello for Business on domain joined devices.  Simply create a Group Policy object with the settings you desire. Link the Group Policy object high in your Active Directory and use security group filtering to target specific sets of computers or users.  Or, link the GPO directly to the organizational units.  
+Group Policy is the easiest and most popular way to manage Windows Hello for Business on domain joined devices.  Simply create a Group Policy object with the settings you desire. Link the Group Policy object high in your Active Directory and use security group filtering to target specific sets of computers or users.  Or, link the GPO directly to the organizational units.
 
 #### Modern management
 
@@ -170,7 +170,7 @@ If your organization is federated with Azure or uses any online service, such as
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
 > [!NOTE]
-> If you're unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
+> If you're unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.
 > ```Get-AdObject "CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
 > * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
 > * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
@@ -183,9 +183,9 @@ Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2
 
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
 
-One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end entity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).  
+One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end entity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).
 
-Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  In a federated environment, you need to activate the Device Writeback option in Azure AD Connect. 
+Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  In a federated environment, you need to activate the Device Writeback option in Azure AD Connect.
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -239,11 +239,11 @@ Alternatively, you can use AD FS with an on-premises Azure MFA server adapter. R
 
 The last option is for you to use AD FS with a third-party adapter as the second factor of authentication.  If you choose to use AD FS with a third-party MFA adapter, write **AD FS with third party** in box **1f** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, then you have two second factor authentication options.  You must use Windows Server 2016 AD FS with your choice of the on-premises Azure MFA server or with a third-party MFA adapter. 
+If box **1a** on your planning worksheet reads **on-premises**, then you have two second factor authentication options.  You must use Windows Server 2016 AD FS with your choice of the on-premises Azure MFA server or with a third-party MFA adapter.
 
 If you choose to use AD FS with the Azure MFA server adapter, write **AD FS with Azure MFA server adapter** in box **1f** on your planning worksheet. If you choose to use AD FS with a third-party MFA adapter, write **AD FS with third party** in box **1f** on your planning worksheet.
 
-### Management 
+### Management
 
 Windows Hello for Business provides organizations with many policy settings and granular control on how these settings may be applied to both computers and users.  The type of policy management you can use depends on your selected deployment and trust models.
 
@@ -254,9 +254,9 @@ If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in 
 
 If box **1a** on your planning worksheet reads **on-prem**, write **GP** in box **2a** on your planning worksheet. Write **N/A** in box **2b** on your worksheet.
 
-Managing hybrid deployments includes two categories of devices to consider for your Windows Hello for Business deployment—domain joined and non-domain joined.  All devices are registered, however, not all devices are domain joined.  You have the option of using Group Policy for domain joined devices and modern management for non-domain joined devices. Or, you can use modern management for both domain and non-domain joined devices.  
+Managing hybrid deployments includes two categories of devices to consider for your Windows Hello for Business deployment—domain joined and non-domain joined.  All devices are registered, however, not all devices are domain joined.  You have the option of using Group Policy for domain joined devices and modern management for non-domain joined devices. Or, you can use modern management for both domain and non-domain joined devices.
 
-If you use Group Policy to manage your domain joined devices, write **GP** in box **2a** on your planning worksheet. Write **modern management** in box **2b** if you decide to manage non-domain joined devices; otherwise, write **N/A**.  
+If you use Group Policy to manage your domain joined devices, write **GP** in box **2a** on your planning worksheet. Write **modern management** in box **2b** if you decide to manage non-domain joined devices; otherwise, write **N/A**.
 
 If you use modern management for both domain and non-domain joined devices, write **modern management** in box **2a** and **2b** on your planning worksheet.
 
@@ -268,21 +268,21 @@ If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in 
 > [!NOTE]
 > Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
-Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 
-* Box **2a** on your planning worksheet read **modern management**. 
+Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true.
+* Box **2a** on your planning worksheet read **modern management**.
     * Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 * Box **1a** on your planning worksheet reads **hybrid**, box **1b** reads **key trust**, and box **2a** reads **GP**.
     <em>Optionally, you may write **1511 or later</em>* in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 
 Write **1703 or later** in box **3a** on your planning worksheet if any of the following are true.
-* Box **1a** on your planning worksheet reads **on-premises**.  
+* Box **1a** on your planning worksheet reads **on-premises**.
   Write **N/A** in box **3b** on your planning worksheet.
 * Box **1a** on your planning worksheet reads **hybrid**, box **1b** reads **certificate trust**, and box **2a** reads **GP**.
     * Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 
 ### Active Directory
 
-The Active Directory portion of the planning guide should be complete.  Most of the conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type. 
+The Active Directory portion of the planning guide should be complete.  Most of the conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type.
 
 Review the trust type portion of this section if box **4d** on your planning worksheet remains empty.
 
@@ -294,14 +294,14 @@ If box **1a** on your planning worksheet reads **cloud only**, ignore the public
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet. Key trust doesn't require any change in public key infrastructure, skip this part and go to **Cloud** section.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
+The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
 
 If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 
 | Certificate Template Name | Issued To |
 | --- | --- |
-| Exchange Enrollment Agent | AD FS RA | 
-| Web Server | AD FS RA | 
+| Exchange Enrollment Agent | AD FS RA |
+| Web Server | AD FS RA |
 | Exchange Enrollment Agent | NDES |
 | Web Server | NDES |
 | CEP Encryption | NDES |
@@ -310,8 +310,8 @@ If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FS RA** in b
 
 | Certificate Template Name | Issued To |
 | --- | --- |
-| Exchange Enrollment Agent | AD FS RA | 
-| Web Server | AD FS RA | 
+| Exchange Enrollment Agent | AD FS RA |
+| Web Server | AD FS RA |
 
 If box **2a** or **2b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
 

@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -35,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[DisableLockdownOfStartPages](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-disablelockdownofstartpages)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/DisableLockdownOfStartPages 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/DisableLockdownOfStartPages
 - **Data type:** Integer
 
 #### Registry settings
@@ -48,7 +48,7 @@ ms.topic: include
 
 
 ### Related Policies
-- [Configure Start pages](../available-policies.md#configure-start-pages): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]  
+- [Configure Start pages](../available-policies.md#configure-start-pages): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
 
 - [Configure Open Microsoft Edge With](../available-policies.md#configure-open-microsoft-edge-with): [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 

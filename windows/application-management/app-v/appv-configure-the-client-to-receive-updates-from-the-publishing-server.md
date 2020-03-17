@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -34,7 +34,7 @@ This article will tell you how to configure the App-V client to receive updates 
     ```
 
     This command will configure the specified publishing server. You should see output similar to the following:
-    
+
     ```PowerShell
     Id                        : 1
     SetByGroupPolicy          : False

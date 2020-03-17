@@ -8,7 +8,7 @@ centralized control, you can create one global list of websites that render usin
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Microsoft Edge\\Configure the Enterprise Mode     Site List** setting.<p>Turning this setting on also requires you to create and store a site list.
 
-<!-- 
+<!--
     ![Local Group Policy Editor for using a site list](../edge/images/config-enterprise-site-list.png)
 -->
 
@@ -32,7 +32,7 @@ All of your managed devices must have access to this location if you want them t
 
     -   **Local file:**   `"SiteList"="file:///c:\\Users\\<user>\\Documents\\testList.xml"`
 
-    >   **Example:**  
+    >   **Example:**
     >>  _Web URL_ https://localhost:8080/EnterpriseMode.xml
     >>
     >>   _Network Share_ \\NetworkShare.xml (Place this inside the group policy folder on Sysvol)

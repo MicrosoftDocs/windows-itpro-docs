@@ -2,7 +2,7 @@
 title: Interactive logon Require smart card - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Require smart card security policy setting.
 ms.assetid: c6a8c040-cbc7-472d-8bc5-579ddf3cbd6c
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -53,13 +53,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -90,7 +90,7 @@ For users with access to computers that contain sensitive data, issue smart card
 
 ### Potential impact
 
-All users of a device with this setting enabled must use smart cards to log on locally. This means that the organization must have a reliable public key infrastructure (PKI) as well as smart cards and smart card readers for these users. These requirements are significant challenges because 
+All users of a device with this setting enabled must use smart cards to log on locally. This means that the organization must have a reliable public key infrastructure (PKI) as well as smart cards and smart card readers for these users. These requirements are significant challenges because
 expertise and resources are required to plan for and deploy these technologies. Active Directory Certificate Services (AD CS) can be used to implement and manage certificates. You can use automatic user and device enrollment and renewal on the client.
 
 ## Related topics

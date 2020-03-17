@@ -2,7 +2,7 @@
 title: Gathering Info about Your Network Infrastructure (Windows 10)
 description: Learn how to gather info about your network infrastructure so that you can effectively plan for Windows Defender Firewall with Advanced Security deployment.
 ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -69,7 +69,7 @@ Other examples of incompatibility include:
 -   Network monitoring tools might be unable to parse ESP packets that are not encrypted (ESP-Null).
 
     >**Note:**  Microsoft Message Analyzer can help in troubleshooting of unencrypted IPsec packets. The latest version of Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
-     
+
 ## Network address translation (NAT)
 
 IPsec NAT traversal (NAT-T) enables IPsec peers that are behind NATs to detect the presence of NATs, negotiate IPsec security associations (SAs), and send ESP-protected data even though the addresses in the IPsec-protected IPv4 packets change. IPsec NAT-T does not support the use of AH across NAT devices.

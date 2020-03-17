@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -38,28 +38,28 @@ Failure event generates if an error occurs (**Status Code** != 0).
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4928</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>14083</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-08-27T19:15:30.067319300Z" /> 
- <EventRecordID>227065</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="1236" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4928</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>14083</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-08-27T19:15:30.067319300Z" />
+ <EventRecordID>227065</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="1236" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="DestinationDRA">CN=NTDS Settings,CN=DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="SourceDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data> 
- <Data Name="SourceAddr">ddec0cff-6ceb-4a59-b13f-1724c38a0970.\_msdcs.contoso.local</Data> 
- <Data Name="NamingContext">DC=ForestDnsZones,DC=contoso,DC=local</Data> 
- <Data Name="Options">368</Data> 
- <Data Name="StatusCode">0</Data> 
+ <Data Name="DestinationDRA">CN=NTDS Settings,CN=DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="SourceDRA">CN=NTDS Settings,CN=WIN2012R2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=contoso,DC=local</Data>
+ <Data Name="SourceAddr">ddec0cff-6ceb-4a59-b13f-1724c38a0970.\_msdcs.contoso.local</Data>
+ <Data Name="NamingContext">DC=ForestDnsZones,DC=contoso,DC=local</Data>
+ <Data Name="Options">368</Data>
+ <Data Name="StatusCode">0</Data>
  </EventData>
  </Event>
 ```
@@ -79,15 +79,15 @@ Failure event generates if an error occurs (**Status Code** != 0).
 -   **Source DRA** \[Type = UnicodeString\]: source directory replication agent distinguished name.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-> 
+>
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-> 
+>
 > • DC - domainComponent
-> 
+>
 > • CN - commonName
-> 
+>
 > • OU - organizationalUnitName
-> 
+>
 > • O - organizationName
 
 -   **Source Address** \[Type = UnicodeString\]: DNS record of the server from which information or an update was received.

@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/09/2019
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # PIN reset
@@ -85,10 +85,10 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 1. In the **Add Row** blade, type **PIN Reset Settings** in the **Name** field. In the **OMA-URI** field, type **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery** where <b>*tenant ID*</b> is your Azure Active Directory tenant ID from step 2.
 1. Select **Boolean** from the **Data type** list and select **True** from the **Value** list.
 1. Click **OK** to save the row configuration. Click **OK** to close the <strong>Custom OMA-URI Settings blade.  Click **Create</strong> to save the profile.
- 
+
 #### Assign the PIN Reset Device configuration profile using Microsoft Intune
 
-1. Sign in to the [Azure Portal](https://portal.azure.com) using a Global administrator account. 
+1. Sign in to the [Azure Portal](https://portal.azure.com) using a Global administrator account.
 2. Navigate to the Microsoft Intune blade. Choose **Device configuration** > **Profiles**. From the list of device configuration profiles, choose the profile that contains the PIN reset configuration.
 3. In the device configuration profile, select **Assignments**.
 4. Use the **Include** and/or **Exclude** tabs to target the device configuration profile to select groups.

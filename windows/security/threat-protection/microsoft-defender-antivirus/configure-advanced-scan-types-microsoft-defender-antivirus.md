@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 
 ---
@@ -58,7 +58,7 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
  Specify the maximum CPU load (as a percentage) during a scan. Note: This is not a hard limit but rather a guidance for the scanning engine to not exceed this maximum on average. | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
  Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies no limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
  Configure low CPU priority for scheduled scans | Scan > Configure low CPU priority for scheduled scans | Disabled | Not available
- 
+
 >[!NOTE]
 >If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives.
 

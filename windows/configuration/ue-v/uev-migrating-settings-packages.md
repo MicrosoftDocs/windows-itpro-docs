@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -39,10 +39,10 @@ Simply copying the files and folders does not preserve the security settings and
     C:\start robocopy "\\servername\E$\MySettings" "\\servername\E$\MySettings" /b /sec /secfix /e /LOG:D:\Robocopylogs\MySettings.txt
     ```
 
-    **Note**  
+    **Note**
     To monitor the copy progress, open MySettings.txt with a log viewer such as Trace32.
 
-     
+
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 

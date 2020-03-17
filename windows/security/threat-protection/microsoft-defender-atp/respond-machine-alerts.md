@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 Quickly respond to detected attacks by isolating devices or collecting an investigation package. After taking action on devices, you can check activity details on the Action center.
 
@@ -48,7 +48,7 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 >[!IMPORTANT]
-> - These response actions are only available for devices on Windows 10, version  1703 or later. 
+> - These response actions are only available for devices on Windows 10, version  1703 or later.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 
 ## Manage tags
@@ -88,7 +88,7 @@ Alternate way:
     ![Image of action center button](images/action-center-package-collection.png)
 
 3. In the Action center fly-out, select **Package collection package available** to download the zip file.
-  
+
     ![Image of download package button](images/collect-package.png)
 
 The package contains the following folders:

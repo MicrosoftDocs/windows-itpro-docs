@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 03/30/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -59,7 +59,7 @@ The default value is **17**, which disables all Welcome screen UI elements and t
 | 8 | Disables the Ease of access button |
 | 16 | Disables the Switch user button |
 | 32 | Disables the blocked shutdown resolver (BSDR) screen so that restarting or shutting down the system causes the OS to immediately force close any applications that are blocking system shut down. No UI is displayed and users are not given a chance to cancel the shutdown process. This can result in a loss of data if any open applications have unsaved data. |
- 
+
 ## CrashDumpEnabled values
 
 Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly.
@@ -76,10 +76,10 @@ Set CrashDumpEnabled to one of the following values:
 | 4 | Records the smallest amount of useful information. This value produces the same results as entering a value of 3. |
 | 7 | Records only the kernel memory. This value produces the same results as entering a value of 2. This is the default value. |
 | Any other value | Disables crash dump and does not record anything. |
- 
+
 ## KeyboardFilter settings
 
-You can use KeyboardFilter to suppress undesirable key presses or key combinations. KeyboardFilter works with physical keyboards, the Windows on-screen keyboard, and the touch keyboard. 
+You can use KeyboardFilter to suppress undesirable key presses or key combinations. KeyboardFilter works with physical keyboards, the Windows on-screen keyboard, and the touch keyboard.
 
 When you **enable** KeyboardFilter, a number of other settings become available for configuration.
 

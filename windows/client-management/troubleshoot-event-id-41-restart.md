@@ -6,7 +6,7 @@ ms.author: v-tea
 ms.date: 12/27/2019
 ms.prod: w10
 ms.topic: article
-ms.custom: 
+ms.custom:
 - CI 111437
 - CSSTroubleshooting
 audience: ITPro
@@ -25,19 +25,19 @@ The preferred way to shut down Windows is to select **Start**, and then select a
 
 If your computer shuts down unexpectedly, Windows logs Event ID 41 the next time that the computer starts. The event text resembles the following:
 
-> Event ID: 41  
+> Event ID: 41
 > Description: The system has rebooted without cleanly shutting down first.
 
 This event indicates that some unexpected activity prevented Windows from shutting down correctly. Such a shutdown might be caused by an interruption in the power supply or by a Stop error. If feasible, Windows records any error codes as it shuts down. During the [kernel phase](advanced-troubleshooting-boot-problems.md#kernel-phase) of the next Windows startup, Windows checks for these codes and includes any existing codes in the event data of Event ID 41.
 
-> EventData  
-> BugcheckCode 159  
-> BugcheckParameter1 0x3  
-> BugcheckParameter2 0xfffffa80029c5060  
-> BugcheckParameter3 0xfffff8000403d518  
-> BugcheckParameter4 0xfffffa800208c010  
-> SleepInProgress false  
-> PowerButtonTimestamp 0Converts to 0x9f (0x3, 0xfffffa80029c5060, 0xfffff8000403d518, 0xfffffa800208c010)  
+> EventData
+> BugcheckCode 159
+> BugcheckParameter1 0x3
+> BugcheckParameter2 0xfffffa80029c5060
+> BugcheckParameter3 0xfffff8000403d518
+> BugcheckParameter4 0xfffffa800208c010
+> SleepInProgress false
+> PowerButtonTimestamp 0Converts to 0x9f (0x3, 0xfffffa80029c5060, 0xfffff8000403d518, 0xfffffa800208c010)
 
 ## How to use Event ID 41 when you troubleshoot an unexpected shutdown or restart
 
@@ -51,24 +51,24 @@ By itself, Event ID 41 might not contain sufficient information to explicitly de
 
 When a computer shuts down or restarts because of a Stop error, Windows includes the Stop error data in Event ID 41 as part of the additional event data. This information includes the Stop error code (also called a bug check code), as shown in the following example:
 
-> EventData  
-> BugcheckCode 159  
-> BugcheckParameter1 0x3  
-> BugcheckParameter2 0xfffffa80029c5060  
-> BugcheckParameter3 0xfffff8000403d518  
-> BugcheckParameter4 0xfffffa800208c010  
+> EventData
+> BugcheckCode 159
+> BugcheckParameter1 0x3
+> BugcheckParameter2 0xfffffa80029c5060
+> BugcheckParameter3 0xfffff8000403d518
+> BugcheckParameter4 0xfffffa800208c010
 
-> [!NOTE]  
+> [!NOTE]
 > Event ID 41 includes the bug check code in decimal format. Most documentation that describes bug check codes refers to the codes as hexadecimal values instead of decimal values. To convert decimal to hexadecimal, follow these steps:
->  
+>
 > 1. Select **Start**, type **calc** in the **Search** box, and then select **Calculator**.
 > 1. In the **Calculator** window, select **View** > **Programmer**.
 > 1. On the left side of calculator, verify that **Dec** is highlighted.
 > 1. Use the keyboard to enter the decimal value of the bug check code.
-> 1. On the left side of the calculator, select **Hex**.  
+> 1. On the left side of the calculator, select **Hex**.
 > The value that the calculator displays is now the hexadecimal code.
->  
-> When you convert a bug check code to hexadecimal format, verify that the “0x” designation is followed by eight digits (that is, the part of the code after the “x” includes enough zeros to fill out eight digits). For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A. In the case of the example event data in this article, "159" converts to 0x0000009f.  
+>
+> When you convert a bug check code to hexadecimal format, verify that the “0x” designation is followed by eight digits (that is, the part of the code after the “x” includes enough zeros to fill out eight digits). For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A. In the case of the example event data in this article, "159" converts to 0x0000009f.
 
 After you identify the hexadecimal value, use the following references to continue troubleshooting:
 
@@ -86,8 +86,8 @@ For help when troubleshooting an unresponsive computer, see [Windows Help](https
 
 This scenario includes the following circumstances:
 
-- You shut off power to an unresponsive computer, and then you restart the computer.  
-   To verify that a computer is unresponsive, press the CAPS LOCK key on the keyboard. If the CAPS LOCK light on the keyboard does not change when you press the CAPS LOCK key, the computer might be completely unresponsive (also known as a *hard hang*).  
+- You shut off power to an unresponsive computer, and then you restart the computer.
+   To verify that a computer is unresponsive, press the CAPS LOCK key on the keyboard. If the CAPS LOCK light on the keyboard does not change when you press the CAPS LOCK key, the computer might be completely unresponsive (also known as a *hard hang*).
 - The computer restarts, but it does not generate Event ID 41.
 - The computer restarts and generates Event ID 41, but the **BugcheckCode** and **PowerButtonTimestamp** values are zero.
 
@@ -113,9 +113,9 @@ Typically, the symptoms described in this scenario indicate a hardware problem. 
 
 If you perform these checks and still cannot isolate the problem, set the system to its default configuration and verify whether the issue still occurs.
 
-> [!NOTE]  
+> [!NOTE]
 > If you see a Stop error message that includes a bug check code, but Event ID 41 does not include that code, change the restart behavior for the computer. To do this, follow these steps:
->  
+>
 > 1. Right-click **My Computer**, then select **Properties** > **Advanced system settings** > **Advanced**.
 > 1. In the **Startup and Recovery** section, select **Settings**.
 > 1. Clear the **Automatically restart** check box.

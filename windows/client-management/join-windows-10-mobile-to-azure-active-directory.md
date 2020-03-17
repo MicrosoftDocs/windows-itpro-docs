@@ -2,7 +2,7 @@
 title: Join Windows 10 Mobile to Azure Active Directory (Windows 10)
 description: Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE).
 ms.assetid: 955DD9EC-3519-4752-827E-79CEB1EC8D6B
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.prod: w10
@@ -129,7 +129,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
     **Note**  To learn more about the PIN requirement, see [Why a PIN is better than a password](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password).
 
-     
+
 
 **To verify Azure AD join**
 
@@ -200,9 +200,9 @@ To see the Notebooks that your Azure AD account has access to, tap **More Notebo
 
 ![company tab on store](images/aadjwsfb.jpg)
 
- 
 
- 
+
+
 
 
 

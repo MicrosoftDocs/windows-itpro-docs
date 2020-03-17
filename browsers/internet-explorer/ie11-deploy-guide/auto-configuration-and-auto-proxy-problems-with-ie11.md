@@ -6,7 +6,7 @@ description: Auto configuration and auto proxy problems with Internet Explorer 1
 author: dansimp
 ms.prod: ie11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -55,9 +55,9 @@ If you experience issues while setting up your proxy server, you can try these t
 
 9. In the **Automatic configuration** area, check that you've chosen the **Use automatic configuration script** box, and that it has the correct location to your automatic configuration script or for your automatic proxy URL.
 
- 
 
- 
+
+
 
 
 

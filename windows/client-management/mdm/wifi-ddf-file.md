@@ -2,7 +2,7 @@
 title: WiFi DDF file
 description: WiFi DDF file
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -209,9 +209,9 @@ The XML below is for Windows 10, version 1809.
 
 [WiFi configuration service provider](wifi-csp.md)
 
- 
 
- 
+
+
 
 
 

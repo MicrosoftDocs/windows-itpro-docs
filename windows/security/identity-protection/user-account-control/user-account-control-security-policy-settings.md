@@ -2,7 +2,7 @@
 title: User Account Control security policy settings (Windows 10)
 description: You can use security policies to configure how User Account Control works in your organization.
 ms.assetid: 3D75A9AC-69BB-4EF2-ACB3-1769791E1B98
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +45,7 @@ This policy setting controls the behavior of the elevation prompt for administra
 -   **Elevate without prompting** Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
 
     >**Note:**  Use this option only in the most constrained environments.
-     
+
 -   **Prompt for credentials on the secure desktop** When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 -   **Prompt for consent on the secure desktop** When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 -   **Prompt for credentials** When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
@@ -79,7 +79,7 @@ This policy setting enforces public key infrastructure (PKI) signature checks fo
 This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - …\\Program Files\\, including subfolders - …\\Windows\\system32\\ - …\\Program Files (x86)\\, including subfolders for 64-bit versions of Windows
 
 >**Note:**  Windows enforces a digital signature check on any interactive app that requests to run with a UIAccess integrity level regardless of the state of this security setting.
- 
+
 -   **Enabled** (Default) If an app resides in a secure location in the file system, it runs only with UIAccess integrity.
 -   **Disabled** An app runs with UIAccess integrity even if it does not reside in a secure location in the file system.
 

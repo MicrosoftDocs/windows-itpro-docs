@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -61,7 +61,7 @@ Use the following procedure to install the database server and management server
    ```SQL
     appv\_server\_setup.exe /LAYOUT /LAYOUTDIR=”InstallationExtractionLocation”
    ```
-  
+
 3. After the extraction has been completed, to access the App-V database scripts and instructions readme file:
 
    * The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.

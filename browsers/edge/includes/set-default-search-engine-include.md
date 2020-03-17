@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -29,16 +29,16 @@ ms.topic: include
 
 ### ADMX info and settings
 #### ADMX info
-- **GP English name:** Set default search engine 
+- **GP English name:** Set default search engine
 - **GP name:** SetDefaultSearchEngine
-- **GP element:** SetDefaultSearchEngine_Prompt 
+- **GP element:** SetDefaultSearchEngine_Prompt
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
 - **MDM name:** [SetDefaultSearchEngine](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-setdefaultsearchengine)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine
 - **Data type:** Integer
 
 #### Registry settings

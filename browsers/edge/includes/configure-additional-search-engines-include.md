@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -35,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[ConfigureAdditionalSearchEngines](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configureadditionalsearchengines)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureAdditionalSearchEngines 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureAdditionalSearchEngines
 - **Data type:** Integer
 
 #### Registry settings
@@ -54,6 +54,6 @@ ms.topic: include
 
 - [!INCLUDE [microsoft-browser-extension-policy-shortdesc](../shortdesc/microsoft-browser-extension-policy-shortdesc.md)]
 
-- [Search provider discovery](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery): Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites. 
+- [Search provider discovery](https://docs.microsoft.com/microsoft-edge/dev-guide/browser/search-provider-discovery): Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites.
 
 <hr>

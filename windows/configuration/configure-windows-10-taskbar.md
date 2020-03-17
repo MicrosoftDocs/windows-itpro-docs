@@ -1,6 +1,6 @@
 ---
 title: Configure Windows 10 taskbar (Windows 10)
-description: Admins can pin apps to users' taskbars. 
+description: Admins can pin apps to users' taskbars.
 keywords: ["taskbar layout","pin apps"]
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/18/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 # Configure Windows 10 taskbar
@@ -20,7 +20,7 @@ Starting in Windows 10, version 1607, administrators can pin additional apps to 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
-You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
+You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application).
 
 If you specify an app to be pinned that is not provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
 
@@ -44,7 +44,7 @@ The following example shows how apps will be pinned: Windows default apps to the
 2. Edit and save the XML file. You can use [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
    * Use `<taskbar:UWA>` and [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
-   * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
+   * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications.
 3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 >[!IMPORTANT]
@@ -54,14 +54,14 @@ The following example shows how apps will be pinned: Windows default apps to the
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
-In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
+In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path.
 
 The easiest way to find this data for an application is to:
 1.  Pin the application to the Start menu on a reference or testing PC.
-2.  Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
-3.  Open the generated XML file. 
+2.  Open Windows PowerShell and run the `Export-StartLayout` cmdlet.
+3.  Open the generated XML file.
 4.  Look for an entry corresponding to the app you pinned.
-5.  Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`. 
+5.  Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`.
 
 
 ### Sample taskbar configuration XML file
@@ -102,7 +102,7 @@ The easiest way to find this data for an application is to:
           <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
           <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
           <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-        </start:Group>        
+        </start:Group>
       </defaultlayout:StartLayout>
     </StartLayoutCollection>
   </DefaultLayoutOverride>
@@ -206,7 +206,7 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
 
 ## Configure taskbar by country or region
 
-The following example shows you how to configure taskbars by country or region. When the layout is applied to a computer, if there is no `<TaskbarPinList>` node with a region tag for the current region, the first `<TaskbarPinList>` node that has no specified region will be applied. When you specify one or more countries or regions in a `<TaskbarPinList>` node, the specified apps are pinned on computers configured for any of the specified countries or regions. 
+The following example shows you how to configure taskbars by country or region. When the layout is applied to a computer, if there is no `<TaskbarPinList>` node with a region tag for the current region, the first `<TaskbarPinList>` node that has no specified region will be applied. When you specify one or more countries or regions in a `<TaskbarPinList>` node, the specified apps are pinned on computers configured for any of the specified countries or regions.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

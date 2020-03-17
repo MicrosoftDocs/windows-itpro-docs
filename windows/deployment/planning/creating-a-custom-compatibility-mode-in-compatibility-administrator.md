@@ -2,7 +2,7 @@
 title: Create a Custom Compatibility Mode (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
 ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -55,7 +55,7 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 
 If you are unable to find a preloaded compatibility mode for your application, you can create a new one for use by your custom database.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
 
 
@@ -68,7 +68,7 @@ If you are unable to find a preloaded compatibility mode for your application, y
 
 3.  Select each of the available compatibility fixes to include in your custom-compatibility mode and then click **&gt;**.
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > If you are unsure which compatibility fixes to add, you can click **Copy Mode**. The **Select Compatibility Mode** dialog box appears and enables you to select from the preloaded compatibility modes. After you select a compatibility mode and click **OK**, any compatibility fixes that are included in the preloaded compatibility mode will be automatically added to your custom-compatibility mode.
     > If you have any compatibility fixes that require additional parameters, you can select the fix, and then click **Parameters**. The **Options for &lt;Compatibility\_Fix\_Name&gt;** dialog box appears, enabling you to update the parameter fields.
 

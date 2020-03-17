@@ -2,7 +2,7 @@
 title: Use the Volume Activation Management Tool (Windows 10)
 description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to track and monitor several types of product keys.
 ms.assetid: b11f0aee-7b60-44d1-be40-c960fc6c4c47
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
@@ -33,7 +33,7 @@ ms.topic: article
 
 The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
 
-By using the VAMT, you can automate and centrally manage the volume, retail, and MAK activation process for Windows, Office, and select other Microsoft products. The VAMT can manage volume activation by using MAKs or KMS. It is a standard Microsoft Management Console snap-in, and it can be 
+By using the VAMT, you can automate and centrally manage the volume, retail, and MAK activation process for Windows, Office, and select other Microsoft products. The VAMT can manage volume activation by using MAKs or KMS. It is a standard Microsoft Management Console snap-in, and it can be
 installed on any computer running Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
 The VAMT is distributed as part of the Windows Assessment and Deployment Kit (Windows ADK), which is a free download available from Microsoft Download Center. For more information, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740).
@@ -76,5 +76,5 @@ For more information, see:
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
- 
+
+

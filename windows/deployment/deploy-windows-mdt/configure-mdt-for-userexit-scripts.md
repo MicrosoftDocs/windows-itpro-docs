@@ -2,7 +2,7 @@
 title: Configure MDT for UserExit scripts (Windows 10)
 description: In this topic, you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address.
 ms.assetid: 29a421d1-12d2-414e-86dc-25b62f5238a7
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: rules, script
@@ -24,7 +24,7 @@ In this topic, you will learn how to configure the MDT rules engine to use a Use
 
 You can call a UserExit by referencing the script in your rules. Then you can configure a property to be set to the result of a function of the VBScript. In this example, we have a VBScript named Setname.vbs (provided in the book sample files, in the UserExit folder).
 
-``` 
+```
 [Settings]
 Priority=Default
 [Default]
@@ -39,10 +39,10 @@ The UserExit=Setname.vbs calls the script and then assigns the computer name to 
 
 The Setname.vbs script takes the MAC Address passed from the rules. The script then does some string manipulation to add a prefix (PC) and remove the semicolons from the MAC Address.
 
-``` 
-Function UserExit(sType, sWhen, sDetail, bSkip) 
-  UserExit = Success 
-End Function 
+```
+Function UserExit(sType, sWhen, sDetail, bSkip)
+  UserExit = Success
+End Function
 Function SetName(sMac)
   Dim re
   Set re = new RegExp
@@ -54,9 +54,9 @@ End Function
 ```
 The first three lines of the script make up a header that all UserExit scripts have. The interesting part is the lines between Function and End Function. Those lines add a prefix (PC), remove the colons from the MAC Address, and return the value to the rules by setting the SetName value.
 
-**Note**  
+**Note**
 The purpose of this sample is not to recommend that you use the MAC Address as a base for computer naming, but to show you how to take a variable from MDT, pass it to an external script, make some changes to it, and then return the new value to the deployment process.
- 
+
 ## Related topics
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)

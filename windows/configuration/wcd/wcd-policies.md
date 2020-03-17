@@ -1,6 +1,6 @@
 ---
 title: Policies (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: This section describes the Policies settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Policies (Windows Configuration Designer reference)
 
-This section describes the **Policies** settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer. Each setting below links to its supported values, as documented in the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider).  
+This section describes the **Policies** settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer. Each setting below links to its supported values, as documented in the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider).
 
 ## AboveLock
 
@@ -332,8 +332,8 @@ These settings apply to the **Kiosk Browser** app available in Microsoft Store. 
 To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
 
 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-3. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com). 
+2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
+3. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com).
 4. Save the XML file.
 5. Open the project again in Windows Configuration Designer.
 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.

@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## NetworkIsolation policies  
+## NetworkIsolation policies
 
 <dl>
   <dd>
@@ -52,7 +52,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterprisecloudresources"></a>**NetworkIsolation/EnterpriseCloudResources**  
+<a href="" id="networkisolation-enterprisecloudresources"></a>**NetworkIsolation/EnterpriseCloudResources**
 
 <!--SupportedSKUs-->
 <table>
@@ -99,7 +99,7 @@ Contains a list of Enterprise resource domains hosted in the cloud that need to 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Enterprise resource domains hosted in the cloud*
 -   GP name: *WF_NetIsolation_EnterpriseCloudResources*
 -   GP element: *WF_NetIsolation_EnterpriseCloudResourcesBox*
@@ -112,7 +112,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterpriseiprange"></a>**NetworkIsolation/EnterpriseIPRange**  
+<a href="" id="networkisolation-enterpriseiprange"></a>**NetworkIsolation/EnterpriseIPRange**
 
 <!--SupportedSKUs-->
 <table>
@@ -159,7 +159,7 @@ Sets the enterprise IP ranges that define the computers in the enterprise networ
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Private network ranges for  apps*
 -   GP name: *WF_NetIsolation_PrivateSubnet*
 -   GP element: *WF_NetIsolation_PrivateSubnetBox*
@@ -176,7 +176,7 @@ For example:
 2001:4898:dc05::-2001:4898:dc05:ffff:ffff:ffff:ffff:ffff,
 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,
 fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
-       
+
 ```
 
 <!--/Example-->
@@ -185,7 +185,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterpriseiprangesareauthoritative"></a>**NetworkIsolation/EnterpriseIPRangesAreAuthoritative**  
+<a href="" id="networkisolation-enterpriseiprangesareauthoritative"></a>**NetworkIsolation/EnterpriseIPRangesAreAuthoritative**
 
 <!--SupportedSKUs-->
 <table>
@@ -232,7 +232,7 @@ Integer value that tells the client to accept the configured list and not to use
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Subnet definitions are authoritative*
 -   GP name: *WF_NetIsolation_Authoritative_Subnet*
 -   GP path: *Network/Network Isolation*
@@ -244,7 +244,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterpriseinternalproxyservers"></a>**NetworkIsolation/EnterpriseInternalProxyServers**  
+<a href="" id="networkisolation-enterpriseinternalproxyservers"></a>**NetworkIsolation/EnterpriseInternalProxyServers**
 
 <!--SupportedSKUs-->
 <table>
@@ -291,7 +291,7 @@ This is the comma-separated list of internal proxy servers. For example "157.54.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Intranet proxy servers for  apps*
 -   GP name: *WF_NetIsolation_Intranet_Proxies*
 -   GP element: *WF_NetIsolation_Intranet_ProxiesBox*
@@ -304,7 +304,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterprisenetworkdomainnames"></a>**NetworkIsolation/EnterpriseNetworkDomainNames**  
+<a href="" id="networkisolation-enterprisenetworkdomainnames"></a>**NetworkIsolation/EnterpriseNetworkDomainNames**
 
 <!--SupportedSKUs-->
 <table>
@@ -351,7 +351,7 @@ This is the list of domains that comprise the boundaries of the enterprise. Data
 
 > [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
- 
+
 
 Here are the steps to create canonical domain names:
 
@@ -365,7 +365,7 @@ Here are the steps to create canonical domain names:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterpriseproxyservers"></a>**NetworkIsolation/EnterpriseProxyServers**  
+<a href="" id="networkisolation-enterpriseproxyservers"></a>**NetworkIsolation/EnterpriseProxyServers**
 
 <!--SupportedSKUs-->
 <table>
@@ -412,7 +412,7 @@ This is a comma-separated list of proxy servers. Any server on this list is cons
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Internet proxy servers for apps*
 -   GP name: *WF_NetIsolation_Domain_Proxies*
 -   GP element: *WF_NetIsolation_Domain_ProxiesBox*
@@ -425,7 +425,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-enterpriseproxyserversareauthoritative"></a>**NetworkIsolation/EnterpriseProxyServersAreAuthoritative**  
+<a href="" id="networkisolation-enterpriseproxyserversareauthoritative"></a>**NetworkIsolation/EnterpriseProxyServersAreAuthoritative**
 
 <!--SupportedSKUs-->
 <table>
@@ -472,7 +472,7 @@ Integer value that tells the client to accept the configured list of proxies and
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Proxy definitions are authoritative*
 -   GP name: *WF_NetIsolation_Authoritative_Proxies*
 -   GP path: *Network/Network Isolation*
@@ -484,7 +484,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="networkisolation-neutralresources"></a>**NetworkIsolation/NeutralResources**  
+<a href="" id="networkisolation-neutralresources"></a>**NetworkIsolation/NeutralResources**
 
 <!--SupportedSKUs-->
 <table>
@@ -531,7 +531,7 @@ List of domain names that can used for work or personal resource.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Domains categorized as both work and personal*
 -   GP name: *WF_NetIsolation_NeutralResources*
 -   GP element: *WF_NetIsolation_NeutralResourcesBox*

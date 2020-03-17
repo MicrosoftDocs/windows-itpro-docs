@@ -21,8 +21,8 @@ You can use the Volume Activation Management Tool (VAMT) to perform activation f
 
 In a typical proxy-activation scenario, the VAMT host computer distributes a MAK to one or more client computers and collects the installation ID (IID) from each computer. The VAMT host computer sends the IIDs to Microsoft on behalf of the client computers and obtains the corresponding Confirmation IDs (CIDs). The VAMT host computer then installs the CIDs on the client computer to complete the activation. Using this activation method, only the VAMT host computer needs Internet access.
 
-**Note**  
-For workgroups that are completely isolated from any larger network, you can still perform MAK, KMS Host key (CSVLK), or retail proxy activation. This requires installing a second instance of VAMT on a computer within the isolated group and using removable media to transfer activation data between that computer and another VAMT host computer that has Internet access. For more information about this scenario, see [Scenario 2: Proxy Activation](scenario-proxy-activation-vamt.md). Similarly, you can proxy activate a KMS Host key (CSVLK) located in an isolated network. You can also proxy activate a KMS Host key (CSVLK) in the core network if you do not want the KMS host computer to connect to Microsoft over the Internet. 
+**Note**
+For workgroups that are completely isolated from any larger network, you can still perform MAK, KMS Host key (CSVLK), or retail proxy activation. This requires installing a second instance of VAMT on a computer within the isolated group and using removable media to transfer activation data between that computer and another VAMT host computer that has Internet access. For more information about this scenario, see [Scenario 2: Proxy Activation](scenario-proxy-activation-vamt.md). Similarly, you can proxy activate a KMS Host key (CSVLK) located in an isolated network. You can also proxy activate a KMS Host key (CSVLK) in the core network if you do not want the KMS host computer to connect to Microsoft over the Internet.
 
 ## Requirements
 
@@ -52,7 +52,7 @@ The product keys that are installed on the client products must have a sufficien
 9.  Click **OK**.
 10. VAMT displays the **Activating products** dialog box until it completes the requested action. If you selected the **Alternate Credentials** option, you will be prompted to enter the credentials.
 
-    **Note**  
+    **Note**
     You can use proxy activation to select products that have different key types and activate the products at the same time.
 
 

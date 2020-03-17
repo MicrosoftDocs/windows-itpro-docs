@@ -2,7 +2,7 @@
 title: Optimize AppLocker performance (Windows 10)
 description: This topic for IT professionals describes how to optimize AppLocker policy enforcement.
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -33,7 +33,7 @@ For more info, see the [Optimizing Group Policy Performance](https://go.microsof
 
 ### AppLocker rule limitations
 
-The more rules per GPO, the longer AppLocker requires for evaluation. There is no set limitation on the number of rules per GPO, but the number of rules that can fit into a 100 MB GPO varies based on the complexity of the rule, such as the number of file hashes included in a single file hash 
+The more rules per GPO, the longer AppLocker requires for evaluation. There is no set limitation on the number of rules per GPO, but the number of rules that can fit into a 100 MB GPO varies based on the complexity of the rule, such as the number of file hashes included in a single file hash
 condition.
 
 ### Using the DLL rule collection

@@ -84,7 +84,7 @@ You can use the ScanState tool to calculate the disk space requirements for a pa
 
 The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the My Documents folder to the destination computer. You can specify this in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md).
 
-**Note**  
+**Note**
 To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the **/p** option, without specifying *&lt;path to a file&gt;* is still available in USMT.
 
 
@@ -112,7 +112,7 @@ Determine how much space you will need to store the migrated data. You should ba
 
 The amount of space that is required in the store will vary, depending on the local storage strategies your organization uses. For example, one key element that determines the size of migration data sets is e-mail storage. If e-mail is stored centrally, data sets will be smaller. If e-mail is stored locally, such as offline-storage files, data sets will be larger. Mobile users will typically have larger data sets than workstation users. You should perform tests and inventory the network to determine the average data set size in your organization.
 
-**Note**  
+**Note**
 You can create a space-estimate file (Usmtsize.txt), by using the legacy **/p** command-line option to estimate the size of the store.
 
 

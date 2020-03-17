@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/18/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Update Billing account settings
-A billing account contains defining information about your organization. 
+A billing account contains defining information about your organization.
 
 >[!NOTE]
 >Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more information, see [aka.ms/aboutM365preview](https://aka.ms/aboutM365preview).
@@ -39,7 +39,7 @@ We need an email address in case we need to contact you about your Microsoft Sto
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com)
 2. Select **Manage**, and then select  **Billing accounts**.
 3. On **Overview**, select **Edit billing account information**.
-4. Make your updates, and then select **Save**. 
+4. Make your updates, and then select **Save**.
 
 ### Organization tax information
 Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
@@ -123,7 +123,7 @@ Each billing account includes access to the purchasing agreements your organizat
 - Open agreements
 - Microsoft customer agreement
 
-If you there is an updated version of the Microsoft customer agreement for you to sign, you'll be prompted to on **Agreements**, or during a purchase. 
+If you there is an updated version of the Microsoft customer agreement for you to sign, you'll be prompted to on **Agreements**, or during a purchase.
 <!--- ## Offline licensing
 
 Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](https://docs.microsoft.com/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).

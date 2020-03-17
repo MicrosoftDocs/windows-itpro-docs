@@ -5,7 +5,7 @@ description: Use the \[Security Imports\] .INS file setting to decide whether to
 author: dansimp
 ms.prod: ie11
 ms.assetid: 19791c44-aaa7-4f37-9faa-85cbdf29f68e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

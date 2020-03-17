@@ -1,6 +1,6 @@
 ---
 title: Unwanted software
-ms.reviewer: 
+ms.reviewer:
 description: Learn about how unwanted software changes your default settings without your consent and what you can do to protect yourself.
 keywords: security, malware, protection, unwanted, software, alter, infect, unwanted software, software bundlers, browser modifiers, privacy, security, computing experience, prevent infection, solution, WDSI, MMPC, Microsoft Malware Protection Center, virus research threats, research malware, pc protection, computer infection, virus infection, descriptions, remediation, latest threats
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ---
@@ -49,7 +49,7 @@ Download [Microsoft Security Essentials](https://www.microsoft.com/download/deta
 
 For more general tips, see [prevent malware infection](prevent-malware-infection.md).
 
-### What should I do if my device is infected? 
+### What should I do if my device is infected?
 
 If you suspect that you have unwanted software, you can [submit files for analysis](https://www.microsoft.com/wdsi/filesubmission).
 

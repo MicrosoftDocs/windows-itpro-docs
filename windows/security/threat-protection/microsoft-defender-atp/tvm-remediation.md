@@ -1,6 +1,6 @@
 ---
 title: Remediation activities and exceptions - threat and vulnerability management
-description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management. 
+description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management.
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,7 +13,7 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 # Remediation activities and exceptions - threat and vulnerability management
@@ -58,7 +58,7 @@ Once you are in the Remediation page, select the remediation activity that you w
 
 When you [file for an exception](tvm-security-recommendation.md#file-for-exception) from the [Security recommendations page](tvm-security-recommendation.md), you create an exception  for that security recommendation. You can file exceptions to exclude certain recommendation from showing up in reports and affecting your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md).
 
-The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab. You can filter your view based on exception justification, type, and status.  
+The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab. You can filter your view based on exception justification, type, and status.
 
 ![Example of the exception page and filter options.](images/tvm-exception-filters.png)
 
@@ -71,7 +71,7 @@ You can take the following actions on an exception:
 
 The following statuses will be a part of an exception:
 
-- **Canceled** - The exception has been canceled and is no longer in effect  
+- **Canceled** - The exception has been canceled and is no longer in effect
 - **Expired** - The exception that you've filed is no longer in effect
 - **In effect** - The exception that you've filed is in progress
 

@@ -6,7 +6,7 @@ manager: dansimp
 ms.author: dansimp
 author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -15,15 +15,15 @@ ms.topic: reference
 ---
 
 
-# New Tab page  
+# New Tab page
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
-Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads. 
+Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads.
 
 > [!NOTE]
-> New tab pages do not load while running InPrivate mode. 
+> New tab pages do not load while running InPrivate mode.
 
 ## Relevant group policies
 
@@ -38,13 +38,13 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 ![Load the default New Tab page](../images/load-default-new-tab-page-sm.png)
 
-![Load a blank page instead of the default New Tab page](../images/load-blank-page-not-new-tab-page-sm.png) 
+![Load a blank page instead of the default New Tab page](../images/load-blank-page-not-new-tab-page-sm.png)
 
 ![Let users choose what loads](../images/users-choose-new-tab-page-sm.png)
 
 
-## Set New Tab page URL 
+## Set New Tab page URL
 [!INCLUDE [set-new-tab-url-include](../includes/set-new-tab-url-include.md)]
 
-## Allow web content on New Tab page 
+## Allow web content on New Tab page
 [!INCLUDE [allow-web-content-new-tab-page-include](../includes/allow-web-content-new-tab-page-include.md)]

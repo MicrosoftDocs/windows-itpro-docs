@@ -1,7 +1,7 @@
 ---
 description: If you're having problems with Microsoft Edge, this topic tells how to use the Enterprise Mode site list to automatically open sites using IE11.
 ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 author: dansimp
@@ -31,9 +31,9 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 [!INCLUDE [interoperability-goals-enterprise-guidance](../includes/interoperability-goals-enterprise-guidance.md)]
 
 ## Enterprise guidance
-Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that rely on ActiveX controls, continue using Internet Explorer 11 for the web apps to work correctly. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Also, if you use an earlier version of Internet Explorer, upgrade to IE11. 
+Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that rely on ActiveX controls, continue using Internet Explorer 11 for the web apps to work correctly. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Also, if you use an earlier version of Internet Explorer, upgrade to IE11.
 
-Windows 7, Windows 8, and Windows 10 support IE11 so that you can continue using legacy apps even as you migrate to Windows 10 and Microsoft Edge.  
+Windows 7, Windows 8, and Windows 10 support IE11 so that you can continue using legacy apps even as you migrate to Windows 10 and Microsoft Edge.
 
 If you're having trouble deciding whether Microsoft Edge is right for your organization, then take a look at the infographic about the potential impact of using Microsoft Edge in an organization.
 

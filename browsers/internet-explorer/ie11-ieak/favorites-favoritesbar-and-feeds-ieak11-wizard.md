@@ -5,7 +5,7 @@ description: How to use the Favorites, Favorites Bar, and Feeds page in IEAK 11 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 84afa831-5642-4b8f-b7df-212a53ec8fc7
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -100,9 +100,9 @@ The **Details** box appears.
 
 7.  Continue with the next procedures in this topic to add additional **Favorites** or **Favorites Bar** links, or you can click **Next** to go to the [Browsing Options](browsing-options-ieak11-wizard.md) page or **Back** to go to the [Accelerators](accelerators-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

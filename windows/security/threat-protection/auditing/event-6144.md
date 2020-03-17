@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -40,24 +40,24 @@ This event generates every time Group Policy is applied to the computer.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>6144</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>13573</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-10-07T22:59:32.280498500Z" /> 
- <EventRecordID>1055041</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="524" ThreadID="712" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>6144</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>13573</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-10-07T22:59:32.280498500Z" />
+ <EventRecordID>1055041</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="524" ThreadID="712" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="ErrorCode">0</Data> 
- <Data Name="GPOList">{8AB9311A-E5FB-4A5A-8FB7-027D1B877D6D} DC Main Policy</Data> 
+ <Data Name="ErrorCode">0</Data>
+ <Data Name="GPOList">{8AB9311A-E5FB-4A5A-8FB7-027D1B877D6D} DC Main Policy</Data>
  </EventData>
  </Event>
 

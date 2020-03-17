@@ -2,7 +2,7 @@
 title: Firewall GPOs (Windows 10)
 description: Firewall GPOs
 ms.assetid: 720645fb-a01f-491e-8d05-c9c6d5e28033
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy

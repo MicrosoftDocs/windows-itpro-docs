@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -19,7 +19,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
+Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607.
 
 
 The following policy settings can be configured for UE-V.
@@ -120,12 +120,12 @@ The following policy settings can be configured for UE-V.
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**
 In addition, Group Policy settings are available for many desktop applications and Windows apps. You can use these settings to enable or disable settings synchronization for specific applications.
 
- 
+
 
 **Windows App Group Policy settings**
 
@@ -166,7 +166,7 @@ In addition, Group Policy settings are available for many desktop applications a
 </tbody>
 </table>
 
- 
+
 
 For more information about synchronizing Windows apps, see [Windows App List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 

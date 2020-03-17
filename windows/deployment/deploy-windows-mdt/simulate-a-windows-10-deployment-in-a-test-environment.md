@@ -2,7 +2,7 @@
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
 description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
 ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, script
@@ -59,9 +59,9 @@ On **PC0001**:
     When prompted, press **R** to run the gather script.
 
 11. Review the ZTIGather.log in the **C:\\MININT\\SMSOSD\\OSDLOGS** folder using CMTrace.
-    **Note**  
+    **Note**
     Warnings or errors with regard to the Wizard.hta are expected. If the log file looks okay, you are ready to try a real deployment.
- 
+
    ![ztigather](../images/mdt-09-fig07.png)
 
    The ZTIGather.log file from PC0001.

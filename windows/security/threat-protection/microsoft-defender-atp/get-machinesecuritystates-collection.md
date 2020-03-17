@@ -13,8 +13,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.collection: M365-security-compliance
+ms.topic: article
 ---
 
 # Get Machines security states collection API
@@ -35,7 +35,7 @@ GET /testwdatppreview/machinesecuritystates
 
 ## Request headers
 
-Header | Value 
+Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 Content type | application/json
@@ -60,7 +60,7 @@ Content-type: application/json
 **Response**
 
 Here is an example of the response.
-Field *id* contains device id and equal to the field *id** in devices info. 
+Field *id* contains device id and equal to the field *id** in devices info.
 
 ```
 HTTP/1.1 200 OK

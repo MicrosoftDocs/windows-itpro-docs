@@ -75,7 +75,6 @@ Windows 10 also introduces two additional scenarios that organizations should c
 </tbody>
 </table>
 
- 
 ## Migration from previous Windows versions
 
 For existing PCs running Windows 7 or Windows 8.1, in-place upgrade is the recommended method for Windows 10 deployment and should be used whenever possible. Although wipe-and-load (OS refresh) deployments are still fully supported (and necessary in some scenarios, as mentioned previously), in-place upgrade is simpler and faster, and enables a faster Windows 10 deployment overall.
@@ -122,9 +121,9 @@ The upgrade process is also optimized to reduce the overall time and network ban
 [Windows 10 compatibility](windows-10-compatibility.md)<br>
 [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 
- 
 
- 
+
+
 
 
 

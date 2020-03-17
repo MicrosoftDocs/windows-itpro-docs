@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -118,19 +118,19 @@ manager: dansimp
 <p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish).  Allowing package scripts assists in package deployments (add and publish of App-V apps).</p>
 
 ```xml
-<Replace> 
-	<CmdID>$CmdID$</CmdID> 
-	<Item> 
-		<Meta> 
-			<Format>chr</Format> 
-			<Type>text/plain</Type> 
-		</Meta> 
-		<Target> 
-			<LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageScripts</LocURI> 
-		</Target> 
-		<Data><enabled/></Data> 
-	</Item> 
-</Replace> 
+<Replace>
+	<CmdID>$CmdID$</CmdID>
+	<Item>
+		<Meta>
+			<Format>chr</Format>
+			<Type>text/plain</Type>
+		</Meta>
+		<Target>
+			<LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageScripts</LocURI>
+		</Target>
+		<Data><enabled/></Data>
+	</Item>
+</Replace>
 ```
 
 <p>Complete list of App-V policies can be found here:</p>
@@ -170,11 +170,11 @@ manager: dansimp
 				</Packages>
 				<NoGroup>
 					<Package PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
-				</NoGroup> 
+				</NoGroup>
 			</Publishing>
 		</Data>
 	</Item>
-</Exec> 
+</Exec>
 ```
 
 <p>*PackageUrl can be a UNC or HTTP/HTTPS endpoint.</p>
@@ -207,7 +207,7 @@ manager: dansimp
 										<Target>[{ProgramFilesX86}]\Skype\Phone\Skype.exe</Target>
 										<Icon>[{Windows}]\Installer\{FC965A47-4839-40CA-B61818F486F042C6}\SkypeIcon.exe.0.ico</Icon>
 										<Arguments/>
-										<WorkingDirectory>[{ProgramFilesX86}]\Skype\</WorkingDirectory> 
+										<WorkingDirectory>[{ProgramFilesX86}]\Skype\</WorkingDirectory>
 										<AppUserModelId>Skype.Desktop.Application</AppUserModelId>
 										<Description>Launch Skype</Description>
 										<ShowCommand>1</ShowCommand>
@@ -310,8 +310,8 @@ manager: dansimp
 			</Publishing>
 		</Data>
 	</Item>
-</Exec> 
-```	
+</Exec>
+```
 
 #### SyncML for publishing mixed-mode connection group containing global and user-published packages
 
@@ -374,7 +374,7 @@ manager: dansimp
 		</Meta>
 		<Data>
 			<Publishing Protocol="2.0">
-				<Packages> 
+				<Packages>
 					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
 					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"></Package>
 				</Packages>
@@ -390,7 +390,7 @@ manager: dansimp
 			</Publishing>
 		</Data>
 	</Item>
-</Exec> 
+</Exec>
 ```
 
 #### Unpublish example SyncML for all global packages
@@ -452,5 +452,5 @@ manager: dansimp
 			<LocURI>./User/Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement?list=StructData</LocURI>
 		</Target>
 	</Item>
-</Get> 
+</Get>
 ```

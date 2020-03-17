@@ -2,7 +2,7 @@
 title: Microsoft network server Digitally sign communications (always) (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Digitally sign communications (always).
 ms.assetid: 2007b622-7bc2-44e8-9cf1-d34b62117ea8
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ Describes the best practices, location, values, policy management and security c
 
 ## Reference
 
-The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. 
+The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets.
 
 Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings can cause data access failure.
 
@@ -45,7 +45,7 @@ There is a negotiation done between the SMB client and the SMB server to decide 
 <sup>1</sup> Default for domain controller SMB traffic</br>
 <sup>2</sup> Default for all other SMB traffic
 
-Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact). 
+Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact).
 
 ### Possible values
 
@@ -67,11 +67,11 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Disabled|
-| Default Domain Controller Policy | Enabled| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
+| Default Domain Controller Policy | Enabled|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Disabled|
+| Client Computer Effective Default Settings | Disabled|
 
 ## Policy management
 

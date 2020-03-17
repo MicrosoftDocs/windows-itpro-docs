@@ -2,7 +2,7 @@
 title: Audit IPsec Extended Mode (Windows 10)
 description: The setting, Audit IPsec Extended Mode, determines if audit events are generated for the results of IKE protocol and AuthIP during Extended Mode negotiations.
 ms.assetid: 2b4fee9e-482a-4181-88a8-6a79d8fc8049
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security

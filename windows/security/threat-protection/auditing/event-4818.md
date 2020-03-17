@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -36,34 +36,34 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4818</EventID> 
- <Version>0</Version> 
- <Level>0</Level> 
- <Task>12813</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-09-30T16:37:29.473472100Z" /> 
- <EventRecordID>1049324</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="516" ThreadID="524" /> 
- <Channel>Security</Channel> 
- <Computer>DC01.contoso.local</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>4818</EventID>
+ <Version>0</Version>
+ <Level>0</Level>
+ <Task>12813</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-09-30T16:37:29.473472100Z" />
+ <EventRecordID>1049324</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="516" ThreadID="524" />
+ <Channel>Security</Channel>
+ <Computer>DC01.contoso.local</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-2104</Data> 
- <Data Name="SubjectUserName">Auditor</Data> 
- <Data Name="SubjectDomainName">CONTOSO</Data> 
- <Data Name="SubjectLogonId">0x1e5f21</Data> 
- <Data Name="ObjectServer">Security</Data> 
- <Data Name="ObjectType">File</Data> 
- <Data Name="ObjectName">C:\\Finance Documents\\desktop.ini</Data> 
- <Data Name="HandleId">0xc64</Data> 
- <Data Name="ProcessId">0x4</Data> 
- <Data Name="ProcessName" /> 
- <Data Name="AccessReason">%%1538: %%1801 D:(A;ID;0x1200a9;;;BU) %%1541: %%1801 D:(A;ID;0x1200a9;;;BU) %%4416: %%1801 D:(A;ID;0x1200a9;;;BU) %%4419: %%1801 D:(A;ID;0x1200a9;;;BU) %%4423: %%1801 D:(A;ID;0x1200a9;;;BU)</Data> 
- <Data Name="StagingReason">%%1538: %%1814Finance Documents Rule %%1541: %%1814Finance Documents Rule %%4416: %%1814Finance Documents Rule %%4419: %%1814Finance Documents Rule %%4423: %%1814Finance Documents Rule</Data> 
+ <Data Name="SubjectUserSid">S-1-5-21-3457937927-2839227994-823803824-2104</Data>
+ <Data Name="SubjectUserName">Auditor</Data>
+ <Data Name="SubjectDomainName">CONTOSO</Data>
+ <Data Name="SubjectLogonId">0x1e5f21</Data>
+ <Data Name="ObjectServer">Security</Data>
+ <Data Name="ObjectType">File</Data>
+ <Data Name="ObjectName">C:\\Finance Documents\\desktop.ini</Data>
+ <Data Name="HandleId">0xc64</Data>
+ <Data Name="ProcessId">0x4</Data>
+ <Data Name="ProcessName" />
+ <Data Name="AccessReason">%%1538: %%1801 D:(A;ID;0x1200a9;;;BU) %%1541: %%1801 D:(A;ID;0x1200a9;;;BU) %%4416: %%1801 D:(A;ID;0x1200a9;;;BU) %%4419: %%1801 D:(A;ID;0x1200a9;;;BU) %%4423: %%1801 D:(A;ID;0x1200a9;;;BU)</Data>
+ <Data Name="StagingReason">%%1538: %%1814Finance Documents Rule %%1541: %%1814Finance Documents Rule %%4416: %%1814Finance Documents Rule %%4419: %%1814Finance Documents Rule %%4423: %%1814Finance Documents Rule</Data>
  </EventData>
  </Event>
 

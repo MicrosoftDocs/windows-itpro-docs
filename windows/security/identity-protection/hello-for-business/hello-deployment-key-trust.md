@@ -14,17 +14,17 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # On Premises Key Trust Deployment
 
 **Applies to**
 -   Windows 10, version 1703 or later
 -   On-premises deployment
--   Key trust 
+-   Key trust
 
 
-Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.  
+Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.
 
 Below, you can find all the information you need to deploy Windows Hello for Business in a key trust model in your on-premises environment:
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)

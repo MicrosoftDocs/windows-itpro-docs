@@ -6,7 +6,7 @@ description: When you add multiple sites to your Enterprise Mode site list entri
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -41,9 +41,9 @@ Another possibility is that redirection happens multiple times, with an intermed
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
- 
 
- 
+
+
 
 
 

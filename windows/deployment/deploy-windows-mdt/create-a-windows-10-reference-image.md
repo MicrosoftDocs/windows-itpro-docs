@@ -2,7 +2,7 @@
 title: Create a Windows 10 reference image (Windows 10)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, deployment, configure, customize, install, installation
@@ -30,7 +30,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and HV
    - DC01 is a domain controller for the contoso.com domain.
    - MDT01 is a contoso.com domain member server.
    - HV01 is a Hyper-V server that will be used to build the reference image.
- 
+
    ![devices](../images/mdt-08-fig01.png)
 
    Computers used in this topic.
@@ -94,7 +94,7 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
 
 >[!NOTE]
 >Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
- 
+
 ### Add Windows 10 Enterprise x64 (full source)
 
 On **MDT01**:
@@ -128,14 +128,14 @@ First, create an MDT folder to store the Microsoft applications that will be ins
 3. Under **Folder name**, type **Microsoft**.
 4. Click **Next** twice, and then click **Finish**.
 
-The steps in this section use a strict naming standard for your MDT applications. 
-- Use the "<b>Install - </b>" prefix for typical application installations that run a setup installer of some kind, 
-- Use the "<b>Configure - </b>" prefix when an application configures a setting in the operating system. 
+The steps in this section use a strict naming standard for your MDT applications.
+- Use the "<b>Install - </b>" prefix for typical application installations that run a setup installer of some kind,
+- Use the "<b>Configure - </b>" prefix when an application configures a setting in the operating system.
 - You also add an "<b> - x86</b>", "<b> - x64</b>", or "<b>- x86-x64</b>" suffix to indicate the application's architecture (some applications have installers for both architectures).
- 
-Using a script naming standard is always recommended when using MDT as it helps maintain order and consistency. 
 
-By storing configuration items as MDT applications, it is easy to move these objects between various solutions, or between test and production environments. 
+Using a script naming standard is always recommended when using MDT as it helps maintain order and consistency.
+
+By storing configuration items as MDT applications, it is easy to move these objects between various solutions, or between test and production environments.
 
 In example sections, you will add the following applications:
 
@@ -150,21 +150,21 @@ Download links:
 - [Microsoft Visual C++ Redistributable 2019 - x86](https://aka.ms/vs/16/release/VC_redist.x86.exe)
 - [Microsoft Visual C++ Redistributable 2019 - x64](https://aka.ms/vs/16/release/VC_redist.x64.exe)
 
-Download all three items in this list to the D:\\Downloads folder on MDT01. 
+Download all three items in this list to the D:\\Downloads folder on MDT01.
 
 **Note**: For the purposes of this lab, we will leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
 
 >[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
- 
+
 ### Create configuration file: Microsoft Office 365 Professional Plus x64
 
 1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
 2. Using a text editor (such as Notepad), create an XML file in the D:\\Downloads\\Office365 directory with the installation settings for Microsoft 365 Apps for enterprise that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
     For example, you can use the following configuration.xml file, which provides these configuration settings:
-      - Install the 64-bit version of Microsoft 365 Apps for enterprise in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
-      - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
+      - Install the 64-bit version of Microsoft 365 Apps for enterprise in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition.
+      - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet.
       - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
 
      ```xml
@@ -183,8 +183,8 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 
  >[!TIP]
  >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.
- 
- Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
+
+ Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information.
 
 3. Ensure the configuration.xml file is in the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
 
@@ -240,7 +240,7 @@ On **MDT01**:
     VERBOSE: Copying application source files from D:\Downloads\Office365 to D:\MDTBuildLab\Applications\Install -
     Office365 ProPlus - x64
     VERBOSE: Creating new item named Install - Office365 ProPlus - x64 at DS001:\Applications\Microsoft.
-    
+
     Name
     ----
     Install - Office365 ProPlus - x64
@@ -272,7 +272,7 @@ On **MDT01**:
     VERBOSE: Beginning application import
     VERBOSE: Copying application source files from D:\Downloads to D:\MDTBuildLab\Applications\Install - MSVC 2019 - x86
     VERBOSE: Creating new item named Install - MSVC 2019 - x86 at DS001:\Applications\Microsoft.
-    
+
     Name
     ----
     Install - MSVC 2019 - x86
@@ -332,7 +332,7 @@ On **MDT01**:
 1. In the **Task Sequences / Windows 10** folder, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence, and select **Properties**.
 2. On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
     1. **State Restore > Windows Update (Pre-Application Installation)** action: Enable this action by clicking the **Options** tab and clearing the **Disable this step** check box.
-         
+
     2. **State Restore > Windows Update (Post-Application Installation)** action: Also enable this action.
     3. **State Restore**: After the **Tattoo** action, add a new **Group** action (click **Add** then click **New Group**) with the following setting:
         -   Name: **Custom Tasks (Pre-Windows Update)**
@@ -342,10 +342,10 @@ On **MDT01**:
         1. Name: Install - Microsoft NET Framework 3.5.1
         2. Select the operating system for which roles are to be installed: Windows 10
         3. Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
-        
+
         >[!IMPORTANT]
         >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
-         
+
         ![task sequence](../images/fig8-cust-tasks.png)
 
         The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
@@ -356,7 +356,7 @@ On **MDT01**:
     7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Microsoft 365 Apps for enterprise as well.
 3. Click **OK**.
 
- ![apps](../images/mdt-apps.png) 
+ ![apps](../images/mdt-apps.png)
 
 
 ### Optional configuration: Add a suspend action
@@ -380,7 +380,7 @@ When using MDT, you don't need to edit the Unattend.xml file very often because 
 
 >[!NOTE]
 >You also can use the Unattend.xml to enable components in Windows 10, like the Telnet Client or Hyper-V client. Normally we prefer to do this via the **Install Roles and Features** action, or using Deployment Image Servicing and Management (DISM) command-line tools, because then we can add that as an application, being dynamic, having conditions, and so forth. Also, if you are adding packages via Unattend.xml, it is version specific, so Unattend.xml must match the exact version of the operating system you are servicing.
- 
+
 Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
 
 On **MDT01**:
@@ -392,7 +392,7 @@ On **MDT01**:
  >The current version of MDT (8456) has a known issue generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. As a temporary workaround:
  >- Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update imagecat.exe and imgmgr.exe to version 10.0.18362.144.
  >- Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
- >- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
+ >- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim).
  >- After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
 
 3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
@@ -412,7 +412,7 @@ Understanding rules is critical to successfully using MDT. Rules are configured 
 
 ### MDT deployment share rules overview
 
-In MDT, there are always two rule files: the **CustomSettings.ini** file and the **Bootstrap.ini** file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. 
+In MDT, there are always two rule files: the **CustomSettings.ini** file and the **Bootstrap.ini** file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK.
 
 To configure the rules for the MDT Build Lab deployment share:
 
@@ -421,17 +421,17 @@ On **MDT01**:
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab** deployment share and select **Properties**.
 2.  Select the **Rules** tab and replace the existing content with the following information (edit the settings as needed to match your deployment). For example, If you do not have a WSUS server in your environment, delete the **WSUSServer** line from the configuration:
 
-    ``` 
+    ```
     [Settings]
     Priority=Default
-    
+
     [Default]
     _SMSTSORGNAME=Contoso
     UserDataLocation=NONE
     DoCapture=YES
     OSInstall=Y
     AdminPassword=pass@word1
-    TimeZoneName=Pacific Standard Time 
+    TimeZoneName=Pacific Standard Time
     JoinWorkgroup=WORKGROUP
     HideShell=YES
     FinishAction=SHUTDOWN
@@ -458,25 +458,25 @@ On **MDT01**:
     ![figure 11](../images/mdt-rules.png)
 
     The server-side rules for the MDT Build Lab deployment share.
- 
+
 3.  Click **Edit Bootstrap.ini** and modify using the following information:
 
-    ``` 
+    ```
     [Settings]
     Priority=Default
-    
+
     [Default]
     DeployRoot=\\MDT01\MDTBuildLab$
     UserDomain=CONTOSO
     UserID=MDT_BA
     UserPassword=pass@word1
-    
+
     SkipBDDWelcome=YES
     ```
 
     >[!NOTE]
     >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation. Obviously if you are not using the same password (pass@word3) that is provided in this lab, you must enter your own custom password on the Rules tab and in Bootstrap.ini.
-     
+
 4. On the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
 5. In the **Lite Touch Boot Image Settings** area, configure the following settings:
    1.  Image description: MDT Build Lab x86
@@ -489,7 +489,7 @@ On **MDT01**:
 
 >[!NOTE]
 >In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
- 
+
 ### Update the deployment share
 
 After the deployment share has been configured, it needs to be updated. This is the process when the Windows PE boot images are created.
@@ -499,7 +499,7 @@ After the deployment share has been configured, it needs to be updated. This is 
 
 >[!NOTE]
 >The update process will take 5 to 10 minutes.
- 
+
 ### The rules explained
 
 Now that the MDT Build Lab deployment share (the share used to create the reference images) has been configured, it is time to explain the various settings used in the Bootstrap.ini and CustomSettings.ini files.
@@ -510,12 +510,12 @@ The CustomSettings.ini file is normally stored on the server, in the Deployment 
 
 >[!NOTE]
 >The settings, or properties, that are used in the rules (CustomSettings.ini and Bootstrap.ini) are listed in the MDT documentation, in the Microsoft Deployment Toolkit Reference / Properties / Property Definition section.
- 
+
 ### The Bootstrap.ini file
 
 The Bootstrap.ini file is available via the deployment share's Properties dialog box, or via the D:\\MDTBuildLab\\Control folder on MDT01.
 
-``` 
+```
 [Settings]
 Priority=Default
 [Default]
@@ -533,17 +533,17 @@ So, what are these settings?
 
     >[!WARNING]
     >Caution is advised. These values are stored in clear text on the boot image. Use them only for the MDT Build Lab deployment share and not for the MDT Production deployment share that you learn to create in the next topic.
-     
+
 -   **SkipBDDWelcome.** Even if it is nice to be welcomed every time we start a deployment, we prefer to skip the initial welcome page of the Windows Deployment Wizard.
 
 >[!NOTE]
 >All properties beginning with "Skip" control only whether to display that pane in the Windows Deployment Wizard. Most of the panes also require you to actually set one or more values.
- 
+
 ### The CustomSettings.ini file
 
 The CustomSettings.ini file, whose content you see on the Rules tab of the deployment share Properties dialog box, contains most of the properties used in the configuration.
 
-``` 
+```
 [Settings]
 Priority=Default
 [Default]
@@ -552,7 +552,7 @@ UserDataLocation=NONE
 DoCapture=YES
 OSInstall=Y
 AdminPassword=pass@word1
-TimeZoneName=Pacific Standard Time 
+TimeZoneName=Pacific Standard Time
 JoinWorkgroup=WORKGROUP
 HideShell=YES
 FinishAction=SHUTDOWN
@@ -584,7 +584,7 @@ SkipFinalSummary=YES
 - **TimeZoneName.** Establishes the time zone to use. Don't confuse this value with TimeZone, which is only for legacy operating systems (Windows 7 and Windows Server 2003).
 
     **Note**: The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
-     
+
 - **JoinWorkgroup.** Configures Windows to join a workgroup.
 - **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
 - **FinishAction.** Instructs MDT what to do when the task sequence is complete.
@@ -610,7 +610,7 @@ SkipFinalSummary=YES
 
 As previously described, this section requires a Hyper-V host. See [Hyper-V requirements](prepare-for-windows-deployment-with-mdt.md#hyper-v-requirements) for more information.
 
-Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
+Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process.
 
 The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then run the reference image task sequence image to create and capture the Windows 10 reference image.
 
@@ -619,7 +619,7 @@ The steps below outline the process used to boot a virtual machine using an ISO 
     **Note**: Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
 
 On **HV01**:
-     
+
 2. Create a new virtual machine with the following settings:
    1. Name: REFW10X64-001
    2. Store the virtual machine in a different location: C:\VM
@@ -631,7 +631,7 @@ On **HV01**:
 1. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
 
     **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
-     
+
 4. Start the REFW10X64-001 virtual machine and connect to it.
 
     **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share. In the current scenario this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.

@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Windows 10, version 1809, connection endpoints for non-Enterprise editions
 
@@ -27,12 +27,12 @@ In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1
 
 We used the following methodology to derive these network endpoints:
 
-1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
-6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
+6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -139,7 +139,7 @@ We used the following methodology to derive these network endpoints:
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
 | cy2.licensing.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
 | cy2.settings.data.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
-| displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. | 
+| displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. |
 | download.windowsupdate.com/*	| HTTPS |	Enables connections to Windows Update. |
 | emdl.ws.microsoft.com/* | HTTP | Used to download apps from the Microsoft Store. |
 | fe2.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |

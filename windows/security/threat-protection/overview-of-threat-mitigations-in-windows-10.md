@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -126,7 +126,7 @@ Data Execution Prevention (DEP) does exactly that, by substantially reducing the
 
 5. Click **OK**.
 
-You can now see which processes have DEP enabled. 
+You can now see which processes have DEP enabled.
 
 <!-- This might be a good place to mention the cmdlet that lets you see the same kind of output. -->
 
@@ -298,7 +298,7 @@ Some of the protections available in Windows 10 are provided through functions t
 | Extension point disable to block the use of certain third-party extension points | [UpdateProcThreadAttribute function](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_EXTENSION\_POINT\_DISABLE\_ALWAYS\_ON\] |
 | Heap terminate on corruption to protect the system against a corrupted heap      | [UpdateProcThreadAttribute function](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HEAP\_TERMINATE\_ALWAYS\_ON\]  |
 
-## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit 
+## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit
 
 You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/kb/2458544), which has since 2009 offered a variety of exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with additional improvements. However, some EMET mitigations carry high performance cost, or appear to be relatively ineffective against modern threats, and therefore have not been brought into Windows 10.
 
@@ -369,7 +369,7 @@ One of EMET's strengths is that it allows you to import and export configuration
 Install-Module -Name ProcessMitigations
 ```
 
-The Get-ProcessMitigation cmdlet gets the current mitigation settings from the registry or from a running process, or it can save all settings to an XML file. 
+The Get-ProcessMitigation cmdlet gets the current mitigation settings from the registry or from a running process, or it can save all settings to an XML file.
 
 To get the current settings on all running instances of notepad.exe:
 
@@ -424,7 +424,7 @@ ConvertTo-ProcessMitigationPolicy -EMETFilePath <String> -OutputFilePath <String
 Examples:
 
 - **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate a result file of Windows 10 mitigation settings. For example:
-    
+
     ```powershell
     ConvertTo-ProcessMitigationPolicy -EMETFilePath policy.xml -OutputFilePath result.xml
     ```

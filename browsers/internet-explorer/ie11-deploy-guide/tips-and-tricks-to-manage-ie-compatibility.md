@@ -6,8 +6,8 @@ description: Find out how to achieve better backward compatibility for your lega
 author: dansimp
 ms.author: dansimp
 ms.prod: ie11
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 audience: itpro
 manager: dansimp
 title: Tips and tricks to manage Internet Explorer compatibility
@@ -27,16 +27,16 @@ Jump to:
 
 ![Internet Explorer Enterprise Modes and document modes](images/img-enterprise-mode-site-list-xml.jpg)
 
-Sites in the \<docMode\> section can be rendered in any document mode, as shown in blue above. Some sites designed for older versions of Internet Explorer may require better backward compatibility, and these can leverage the \<emie\> section of the Enterprise Mode Site List. IE8 Enterprise Mode provides higher-fidelity emulation for Internet Explorer 8 by using, among other improvements, the original Internet Explorer 8 user agent string. IE7 Enterprise Mode further improves emulation by adding Compatibility View.  
-  
+Sites in the \<docMode\> section can be rendered in any document mode, as shown in blue above. Some sites designed for older versions of Internet Explorer may require better backward compatibility, and these can leverage the \<emie\> section of the Enterprise Mode Site List. IE8 Enterprise Mode provides higher-fidelity emulation for Internet Explorer 8 by using, among other improvements, the original Internet Explorer 8 user agent string. IE7 Enterprise Mode further improves emulation by adding Compatibility View.
+
 Compatibility View, first introduced with Internet Explorer 8, is basically a switch. If a webpage has no DOCTYPE, that page will be rendered in Internet Explorer 5 mode. If there is a DOCTYPE, the page will be rendered in Internet Explorer 7 mode. You can effectively get Compatibility View by specifying Internet Explorer 7 in the \<docMode\> section, as this falls back to Internet Explorer 5 automatically if there's no DOCTYPE, or you can use IE7 Enterprise Mode for even better emulation.
 
 ## Tips for IT professionals
 
 ### Inventory your sites
 
-Upgrading to a new browser can be a time-consuming and potentially costly venture. To help reduce these costs, you can download the [Enterprise Site Discovery Toolkit](https://www.microsoft.com/download/details.aspx?id=44570), which can help you prioritize which sites you should be testing based on their usage in your enterprise. For example, if the data shows that no one is visiting a particular legacy web app, you may not need to test or fix it. The toolkit is supported on Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11. The toolkit also gives you information about which document mode a page runs in your current browser so you can better understand how to fix that site if it breaks in a newer version of the browser.  
-  
+Upgrading to a new browser can be a time-consuming and potentially costly venture. To help reduce these costs, you can download the [Enterprise Site Discovery Toolkit](https://www.microsoft.com/download/details.aspx?id=44570), which can help you prioritize which sites you should be testing based on their usage in your enterprise. For example, if the data shows that no one is visiting a particular legacy web app, you may not need to test or fix it. The toolkit is supported on Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11. The toolkit also gives you information about which document mode a page runs in your current browser so you can better understand how to fix that site if it breaks in a newer version of the browser.
+
 Once you know which sites to test and fix, the following remediation methods may help fix your compatibility issues in Internet Explorer 11 and Windows 10.
 
 ### If you're on Internet Explorer 8 and upgrading to Internet Explorer 11:
@@ -79,12 +79,12 @@ If your website worked in an older version of Internet Explorer, but no longer w
 
 To see if the site works in the Internet Explorer 5, Internet Explorer 7, Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, or Internet Explorer 11 document modes:
 
--   Open the site in Internet Explorer 11, load the F12 tools by pressing the **F12** key or by selecting **F12 Developer Tools** from the **Tools** menu, and select the **Emulation** tab.  
+-   Open the site in Internet Explorer 11, load the F12 tools by pressing the **F12** key or by selecting **F12 Developer Tools** from the **Tools** menu, and select the **Emulation** tab.
 
     ![F12 Developer Tools Emulation tab](images/img-f12-developer-tools-emulation.jpg)
 
 -   Run the site in each document mode until you find the mode in which the site works.
- 
+
     > [!NOTE]
     > You will need to make sure the User agent string dropdown matches the same browser version as the Document mode dropdown. For example, if you were testing to see if the site works in Internet Explorer 10, you should update the Document mode dropdown to 10 and the User agent string dropdown to Internet Explorer 10.
 

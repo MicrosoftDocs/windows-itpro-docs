@@ -1,9 +1,9 @@
 ---
 title: Change history for Configure Windows 10 (Windows 10)
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 description: View changes to documentation for configuring Windows 10.
-keywords: 
+keywords:
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -72,7 +72,7 @@ New or changed topic | Description
 
 ## July 2018
 
-New or changed topic | Description 
+New or changed topic | Description
 --- | ---
 [Configure kiosks and child topics](kiosk-methods.md) | Reorganized the information for configuring kiosks into new topics, and moved [Set up shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md).
 
@@ -147,7 +147,7 @@ New or changed topic | Description
 [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Clarified that the TopMFUApps elements in layoutmodification.xml are not supported in Windows 10, version 1709.
 | [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/privacy/diagnostic-data-viewer-overviewd) | New topic |
 [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
-[Manage Windows 10 connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.  
+[Manage Windows 10 connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.
 [Configure Windows Spotlight on the lock screen](windows-spotlight.md) | Added section for resolution of custom lock screen images.
 [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Added section for automatic sign-in after restart on unmanaged devices.
 
@@ -173,7 +173,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 - [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709)
 - [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-    
+
 
 ## September 2017
 

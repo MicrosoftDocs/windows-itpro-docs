@@ -2,7 +2,7 @@
 title: Provisioning packages (Windows 10)
 description: With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -22,13 +22,13 @@ ms.date: 07/27/2017
 - Windows 10
 - Windows 10 Mobile
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers.
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
 
-The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
+The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
 
 
@@ -39,10 +39,10 @@ The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://develop
 - Windows Configuration Designer can still be installed from the Windows ADK. You can also install it from the Microsoft Store.
 - Windows Configuration Designer adds more wizards to make it easier to create provisioning packages for specific scenarios. See [What you can configure](#configuration-designer-wizards) for wizard descriptions.
 - The  Provision desktop devices wizard (previously called Simple provisioning) now enables joining Azure Active Directory (Azure AD) domains and also allows you to remove non-Microsoft software from Windows desktop devices during provisioning.
-- When provisioning packages are applied to a device, a status screen indicates successful or failed provisioning. 
+- When provisioning packages are applied to a device, a status screen indicates successful or failed provisioning.
 - Windows 10 includes PowerShell cmdlets that simplify scripted provisioning. Using these cmdlets, you can add provisioning packages, remove provisioning packages and generate log files to investigate provisioning errors.
 - The Provision school devices wizard is removed from Windows Configuration Designer. Instead, use the [Setup School PCs app](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) from the Microsoft Store.
-<!-- Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md).--> 
+<!-- Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md).-->
 
 
 ## Benefits of provisioning packages
@@ -93,7 +93,7 @@ The following table describes settings that you can configure using the wizards 
 
 
 >[!NOTE]
->After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
+>After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package.
 
 ### Configuration Designer advanced editor
 
@@ -122,31 +122,31 @@ For details about the settings you can customize in provisioning packages, see [
 > [!NOTE]
 > This section is retained for customers using Windows 10, version 1607, on the Current Branch for Business. Some of this information is not applicable in Windows 10, version 1703.
 
-Windows ICD for Windows 10, version 1607, simplified common provisioning scenarios. 
+Windows ICD for Windows 10, version 1607, simplified common provisioning scenarios.
 
 ![Configuration Designer options](../images/icd.png)
 
 Windows ICD in Windows 10, version 1607, supported the following scenarios for IT administrators:
 
-* **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
+* **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner.
 
 [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
 
-* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
+* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices.
 
-* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
+* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include:
 
-    * Microsoft Intune (certificate-based enrollment) 
-    * AirWatch (password-string based enrollment) 
-    * Mobile Iron (password-string based enrollment) 
-    * Other MDMs (cert-based enrollment) 
+    * Microsoft Intune (certificate-based enrollment)
+    * AirWatch (password-string based enrollment)
+    * Mobile Iron (password-string based enrollment)
+    * Other MDMs (cert-based enrollment)
 
 > [!NOTE]
 > Windows ICD in Windows 10, version 1607, also provided a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Learn more
 
-For more information about provisioning, watch the following videos: 
+For more information about provisioning, watch the following videos:
 
 - [Provisioning Windows 10 devices with new tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 

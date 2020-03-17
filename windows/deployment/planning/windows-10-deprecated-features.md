@@ -21,8 +21,8 @@ The features described below are no longer being actively developed, and might b
 
 **The following list is subject to change and might not include every affected feature or functionality.**
 
-> [!NOTE] 
-> If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
+> [!NOTE]
+> If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app).
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |

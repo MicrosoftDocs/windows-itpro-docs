@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -27,12 +27,12 @@ ms.topic: article
 
 Microsoft Defender ATP supports network connection monitoring from different levels of the network stack. A challenging case is when the network uses a forward proxy as a gateway to the Internet.
 
-The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value. 
+The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value.
 
 Microsoft Defender ATP supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
 
 ## Use network protection to monitor network connection behind a firewall
-Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a device timeline, turn network protection on (at the minimum in audit mode). 
+Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a device timeline, turn network protection on (at the minimum in audit mode).
 
 Network protection can be controlled using the following modes:
 
@@ -59,26 +59,26 @@ Event's information:
 
 
 
-## Hunt for connection events using advanced hunting 
+## Hunt for connection events using advanced hunting
 All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.
 
 Using this simple query will show you all the relevant events:
 
 ```
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" 
+| where ActionType == "ConnectionSuccess"
 | take 10
 ```
 
 ![Image of advanced hunting query](images/atp-proxy-investigation-ah.png)
 
-You can also filter out  events that are related to connection to the proxy itself. 
+You can also filter out  events that are related to connection to the proxy itself.
 
 Use the following query to filter out the connections to the proxy:
 
 ```
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
+| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"
 | take 10
 ```
 

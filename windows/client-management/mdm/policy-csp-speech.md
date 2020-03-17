@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Speech policies  
+## Speech policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
+<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**
 
 <!--SupportedSKUs-->
 <table>
@@ -78,7 +78,7 @@ Added in Windows 10, version 1607. Specifies whether the device will receive up
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow Automatic Update of Speech Data*
 -   GP name: *AllowSpeechModelUpdate*
 -   GP path: *Windows Components/Speech*

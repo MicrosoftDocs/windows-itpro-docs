@@ -2,14 +2,14 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-<!-- ## Prevent certificate error overrides --> 
+<!-- ## Prevent certificate error overrides -->
 
 >*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
@@ -33,7 +33,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[PreventCertErrorOverrides](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventCertErrorOverrides 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventCertErrorOverrides
 - **Data type:** Integer
 
 #### Registry settings

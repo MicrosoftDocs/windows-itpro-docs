@@ -2,7 +2,7 @@
 title: Frequently Asked Questions (Windows 10)
 description: Frequently Asked Questions
 ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -128,9 +128,9 @@ For more information, see [Conflicts and Precedence](usmt-conflicts-and-preceden
 
 [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md)
 
- 
 
- 
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: AppLocker (Windows 10)
 description: This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies.
 ms.assetid: 94b57864-2112-43b6-96fb-2863c985dc9a
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -92,7 +92,7 @@ AppLocker is included with enterprise-level editions of Windows. You can author 
 
 > [!NOTE]
 > The GPMC is available in client computers running Windows only by installing the Remote Server Administration Tools. On computer running Windows Server, you must install the Group Policy Management feature.
- 
+
 ### Using AppLocker on Server Core
 
 AppLocker on Server Core installations is not supported.
@@ -124,16 +124,16 @@ For reference in your security planning, the following table identifies the base
 | Setting | Default value |
 | - | - |
 | Accounts created | None |
-| Authentication method | Not applicable | 
+| Authentication method | Not applicable |
 | Management interfaces | AppLocker can be managed by using a Microsoft Management Console snap-in, Group Policy Management, and Windows PowerShell |
-| Ports opened | None | 
+| Ports opened | None |
 | Minimum privileges required | Administrator on the local computer; Domain Admin, or any set of rights that allow you to create, edit and distribute Group Policy Objects. |
-| Protocols used | Not applicable | 
+| Protocols used | Not applicable |
 | Scheduled Tasks | Appidpolicyconverter.exe is put in a scheduled task to be run on demand. |
-| Security Policies | None required. AppLocker creates security policies. | 
+| Security Policies | None required. AppLocker creates security policies. |
 | System Services required |Application Identity service (appidsvc) runs under LocalServiceAndNoImpersonation. |
-| Storage of credentials | None | 
- 
+| Storage of credentials | None |
+
 ## In this section
 
 | Topic | Description |

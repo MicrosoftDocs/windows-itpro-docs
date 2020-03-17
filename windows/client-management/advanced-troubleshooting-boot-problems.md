@@ -7,7 +7,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.date: 11/16/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: troubleshooting
 ---
@@ -160,7 +160,7 @@ If you receive BCD-related errors, follow these steps:
     ```dos
     Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 1
-    D:\Windows  
+    D:\Windows
     Add installation to boot list? Yes/No/All:
     ```
 
@@ -227,7 +227,7 @@ If the system gets stuck during the kernel phase, you experience multiple sympto
 -   A Stop error appears after the splash screen (Windows Logo screen).
 
 -   Specific error code is displayed.
-    For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.  
+    For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.
     - [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
     - [Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"](troubleshoot-event-id-41-restart.md)
 
@@ -295,10 +295,10 @@ To troubleshoot this Stop error, follow these steps to filter the drivers:
 
 3.  Load the system hive, and name it as "test."
 
-4.  Under the following registry subkey, check for lower filter and upper filter items for Non-Microsoft Drivers:  
-      
-    **HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class**  
-    
+4.  Under the following registry subkey, check for lower filter and upper filter items for Non-Microsoft Drivers:
+
+    **HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class**
+
 5.  For each third-party driver that you locate, click the upper or lower filter, and then delete the value data.
 
 6.  Search through the whole registry for similar items. Process as an appropriate, and then unload the registry hive.
@@ -346,10 +346,10 @@ If the computer does not start, follow these steps:
 
 8.  Load the system hive, name it as "test".
 
-9.  Navigate to the following subkey:  
-      
-    **HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\TrustedInstaller**  
-    
+9.  Navigate to the following subkey:
+
+    **HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\TrustedInstaller**
+
 10. Change the **Start** value from **1** to **4**
 
 11. Unload the hive.
@@ -358,7 +358,7 @@ If the computer does not start, follow these steps:
 
 If the Stop error occurs late in the startup process, or if the Stop error is still being generated, you can capture a memory dump. A good memory dump can help determine the root cause of the Stop error. For details, see the following articles:
 
-- [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump) 
+- [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump)
 
 For more information about page file problems in Windows 10 or Windows Server 2016, see the following:
 - [Introduction to page files](https://docs.microsoft.com/windows/client-management/introduction-page-file)

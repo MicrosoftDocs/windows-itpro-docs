@@ -19,7 +19,7 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** Configure the Enterprise Mode Site List 
+- **GP English name:** Configure the Enterprise Mode Site List
 - **GP name:** EnterpriseModeSiteList
 - **GP element:** EnterSiteListPrompt
 - **GP path:** Windows Components/Microsoft Edge
@@ -28,7 +28,7 @@
 #### MDM settings
 -  **MDM name:** Browser/[EnterpriseModeSiteList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-enterprisemodesitelist)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList
 - **Data type:** String
 
 #### Registry settings

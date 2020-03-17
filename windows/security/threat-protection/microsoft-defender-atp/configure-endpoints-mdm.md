@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/06/2018
 ---
@@ -32,7 +32,7 @@ You can use mobile device management (MDM) solutions to configure devices. Micro
 For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Before you begin
-If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
+If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully.
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
@@ -64,15 +64,15 @@ For security reasons, the package used to Offboard devices will expire 30 days a
    b. Select Windows 10 as the operating system.
 
    c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
-    
+
    d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
-      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
-      Date type: String      
+      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
+      Date type: String
       Value: [Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file]
 
 For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).

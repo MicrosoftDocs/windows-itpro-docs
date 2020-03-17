@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Games policies  
+## Games policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
+<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**
 
 <!--SupportedSKUs-->
 <table>

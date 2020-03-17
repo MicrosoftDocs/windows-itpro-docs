@@ -5,7 +5,7 @@ description: Info about where features went in the IEAK11, where the Favorites, 
 author: dansimp
 ms.prod: ie11
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

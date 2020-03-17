@@ -2,7 +2,7 @@
 title: Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise (Windows 10)
 description: A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings.
 ms.assetid: 35EC82D8-D9E8-45C3-84E9-B0C8C167BFF7
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 keywords: kiosk, lockdown, assigned access
 ms.prod: w10
@@ -36,7 +36,7 @@ Enterprise Assigned Access allows you to put your Windows 10 Mobile or Windows�
 >[!NOTE]
 >The app can be a Universal Windows app, Universal Windows Phone 8 app, or a legacy Silverlight app.
 
- 
+
 
 ### Set up Enterprise Assigned Access in MDM
 
@@ -55,7 +55,7 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
 
     >[!NOTE]
     >Do not escape the xml in *AssignedAccess*.xml file as Windows Configuration Designer will do that when building the package. Providing escaped xml in Windows ICD will cause building the package fail.
-    
+
 #### Create the provisioning package
 
 1. [Install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md)
@@ -105,7 +105,7 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-17. Select the **output location** link to go to the location of the package. 
+17. Select the **output location** link to go to the location of the package.
 
 #### Distribute the provisioning package
 
@@ -143,7 +143,7 @@ You can distribute that .ppkg to mobile devices using any of the following metho
 
     4.  Restart the device and verify that the runtime settings that were configured in the provisioning package were applied to the device.
 
--   USB tether 
+-   USB tether
 
     **To apply a provisioning package using USB tether**
 
@@ -157,7 +157,7 @@ You can distribute that .ppkg to mobile devices using any of the following metho
 
     5.  Restart the device and verify that the runtime settings that were configured in the provisioning package were applied to the device.
 
-       
+
 
 ## Apps Corner
 
@@ -186,7 +186,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
     >[!TIP]
     >Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
-  
+
 2.  Give the device to someone else, so they can use the device and only the one app you chose.
 
 3.  When they're done and you get the device back, press and hold Power ![power](../images/powericon.png), and then swipe right to exit Apps Corner.
@@ -200,7 +200,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 
- 
+
 
 
 

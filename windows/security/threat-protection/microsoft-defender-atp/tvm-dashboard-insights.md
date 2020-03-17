@@ -1,7 +1,7 @@
 ---
 title: Threat and vulnerability management dashboard insights
 description: The threat and vulnerability management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
-keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
+keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -28,8 +28,8 @@ Threat and vulnerability management is a component of Microsoft Defender ATP, an
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Invaluable device vulnerability context during incident investigations
-- Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager  
-  
+- Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager
+
 You can use the threat and vulnerability management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 
 - View exposure and Microsoft Secure Score for Devices side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices

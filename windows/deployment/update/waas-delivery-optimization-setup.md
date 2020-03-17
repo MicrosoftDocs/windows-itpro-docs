@@ -1,6 +1,6 @@
 ---
 title: Set up Delivery Optimization
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
@@ -77,9 +77,9 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 If you have a mobile workforce with a great many mobile devices, set Delivery Optimization to allow uploads on battery power, while limiting the use to prevent battery drain. A setting for **DOMinBatteryPercentageAllowedToUpload** of 60% is a good starting point, though you might want to adjust it later.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60. 
+To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60.
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60. 
+To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60.
 
 ### Plentiful free space and large numbers of devices
 
@@ -129,22 +129,21 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
 
- 
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
-- Number of files downloaded 
-- Number of files uploaded 
-- Total bytes downloaded 
-- Total bytes uploaded 
-- Average transfer size (download); that is, the number bytes downloaded divided by the number of files 
+- Number of files downloaded
+- Number of files uploaded
+- Total bytes downloaded
+- Total bytes uploaded
+- Average transfer size (download); that is, the number bytes downloaded divided by the number of files
 - Average transfer size (upload); the number of bytes uploaded divided by the number of files
 - Peer efficiency; same as PercentPeerCaching
 
 Using the `-Verbose` option returns additional information:
 
-- Bytes from peers (per type) 
+- Bytes from peers (per type)
 - Bytes from CDN (the number of bytes received over HTTP)
-- Average number of peer connections per download 
+- Average number of peer connections per download
 
 **Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
@@ -205,7 +204,7 @@ Using the `-ListConnections` option returns these detauls about peers:
 `Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
 
 If `Path` is not specified, this cmdlet reads all logs from the dosvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops dosvc before reading logs.
- 
+
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
 
 [//]: # (section on what to look for in logs, list of peers, connection failures)

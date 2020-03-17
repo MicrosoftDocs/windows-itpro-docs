@@ -1,22 +1,22 @@
 ---
 title: Microsoft Edge - Address bar group policies
 description: Microsoft Edge, by default, shows a list of search suggestions in the address bar. You can minimize network connections from Microsoft Edge to Microsoft services, hiding the functionality of the Address bar drop-down list.
-services: 
-keywords: 
+services:
+keywords:
 ms.localizationpriority: medium
 audience: itpro
 manager: dansimp
 author: dansimp
 ms.author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Address bar 
+# Address bar
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).

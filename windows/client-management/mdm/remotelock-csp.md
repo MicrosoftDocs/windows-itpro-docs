@@ -2,7 +2,7 @@
 title: RemoteLock CSP
 description: Learn how RemoteLock CSP supports the ability to lock a device that has a PIN set on the device or reset the PIN on a device that may or may not have a PIN set.
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -20,7 +20,7 @@ The RemoteLock CSP supports the ability to lock a device that has a PIN set on t
 > [!Note]
 > The RemoteLock CSP is only supported in Windows 10 Mobile.
 
- 
+
 The following diagram shows the RemoteLock configuration service provider in a tree format.
 
 ![provisioning\-csp\-remotelock](images/provisioning-csp-remotelock.png)
@@ -63,7 +63,7 @@ Required. The setting accepts requests to lock the device screen. The device scr
 </tbody>
 </table>
 
- 
+
 
 <a href="" id="lockandresetpin"></a>**LockAndResetPIN**
 This setting can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recovered. The supported operation is Exec.
@@ -158,9 +158,9 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

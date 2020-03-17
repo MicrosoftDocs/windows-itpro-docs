@@ -2,7 +2,7 @@
 title: BitLocker Use BitLocker Recovery Password Viewer (Windows 10)
 description: This topic for the IT professional describes how to use the BitLocker Recovery Password Viewer.
 ms.assetid: 04c93ac5-5dac-415e-b636-de81435753a2
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -61,5 +61,5 @@ By completing the procedures in this scenario, you have viewed and copied the re
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 - [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
- 
- 
+
+

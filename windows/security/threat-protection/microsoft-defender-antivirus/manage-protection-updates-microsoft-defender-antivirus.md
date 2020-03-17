@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ---
@@ -25,14 +25,14 @@ ms.custom: nextgen
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
 
-Keeping your antivirus protection up to date is critical. There are two components to managing protection updates for Microsoft Defender Antivirus: 
-- *Where* the updates are downloaded from; and 
-- *When* updates are downloaded and applied. 
+Keeping your antivirus protection up to date is critical. There are two components to managing protection updates for Microsoft Defender Antivirus:
+- *Where* the updates are downloaded from; and
+- *When* updates are downloaded and applied.
 
 This article describes how to specify from where updates should be downloaded (this is also known as the fallback order). See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
+> Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 
 <a id="fallback-order"></a>
@@ -42,12 +42,12 @@ This article describes how to specify from where updates should be downloaded (t
 Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used immediately.
 
 When updates are published, some logic is applied to minimize the size of the update. In most cases, only the differences between the latest update and the update that is currently installed (this is referred to as the delta) on the device is downloaded and applied. However, the size of the delta depends on two main factors:
-- The age of the last update on the device; and 
-- The source used to download and apply updates. 
+- The age of the last update on the device; and
+- The source used to download and apply updates.
 
-The older the updates on an endpoint, the larger the download will be. However, you must also consider download frequency as well. A more frequent update schedule can result in more network usage, whereas a less-frequent schedule can result in larger file sizes per download. 
+The older the updates on an endpoint, the larger the download will be. However, you must also consider download frequency as well. A more frequent update schedule can result in more network usage, whereas a less-frequent schedule can result in larger file sizes per download.
 
-There are five locations where you can specify where an endpoint should obtain updates: 
+There are five locations where you can specify where an endpoint should obtain updates:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
 - [Windows Server Update Service](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
@@ -55,7 +55,7 @@ There are five locations where you can specify where an endpoint should obtain u
 - [Network file share](#unc-share)
 - [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
 
-To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads. 
+To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads.
 
 > [!IMPORTANT]
 > If you have set [Microsoft Security intelligence page](https://www.microsoft.com/security/portal/definitions/adl.aspx) updates as a fallback source after Windows Server Update Service or Microsoft Update, updates are only downloaded from security intelligence updates when the current update is considered out-of-date. (By default, this is seven consecutive days of not being able to apply updates from the Windows Server Update Service or Microsoft Update services).
@@ -144,9 +144,9 @@ See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.
 
 ## What if we're using a third-party vendor?
 
-This article describes how to configure and manage updates for Microsoft Defender Antivirus. However, third-party vendors can be used to perform these tasks. 
+This article describes how to configure and manage updates for Microsoft Defender Antivirus. However, third-party vendors can be used to perform these tasks.
 
-For example, suppose that Contoso has hired Fabrikam to manage their security solution, which includes Microsoft Defender Antivirus. Fabrikam typically uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) to deploy patches and updates. 
+For example, suppose that Contoso has hired Fabrikam to manage their security solution, which includes Microsoft Defender Antivirus. Fabrikam typically uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) to deploy patches and updates.
 
 > [!NOTE]
 > Microsoft does not test third-party solutions for managing Microsoft Defender Antivirus.
@@ -185,9 +185,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
        ```DOS
        Powershell (Run as admin)
-    
+
        C:\Tool\PS-Scripts\
-    
+
        “.\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $true -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
        ```
 
@@ -195,9 +195,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
        ```DOS
        Powershell (Run as admin)
-    
+
        C:\Tool\PS-Scripts\
-    
+
        “.\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $false -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
        ```
 
@@ -205,9 +205,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
        ```DOS
        Powershell (Run as admin)
-    
+
        C:\Tool\PS-Scripts\
-    
+
        “.\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $true -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
        ```
 
@@ -215,9 +215,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
        ```DOS
        Powershell (Run as admin)
-    
+
        C:\Tool\PS-Scripts\
-    
+
        “.\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
        ```
 
@@ -232,16 +232,16 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
     ```DOS
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64″
-    
+
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64″
-    
+
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x86 -isDelta $False -destDir C:\Temp\TempSigs\x86″
-    
+
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x86 -isDelta $True -destDir C:\Temp\TempSigs\x86″
     ```
     > [!NOTE]
     > Issues could also be due to execution policy.
-    
+
 10. Create a share pointing to C:\Temp\TempSigs (e.g. \\server\updates).
     > [!NOTE]
     > At a minimum, authenticated users must have “Read” access.

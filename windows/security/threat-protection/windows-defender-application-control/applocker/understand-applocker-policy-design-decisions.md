@@ -2,7 +2,7 @@
 title: Understand AppLocker policy design decisions (Windows 10)
 description: Review some common considerations while you are planning to use AppLocker to deploy application control policies within a Windows environment.
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
-ms.reviewer: 
+ms.reviewer:
 ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -83,11 +83,11 @@ Most organizations have evolved app control policies and methods over time. With
 
 | Possible answers | Design considerations |
 | - | - |
-| Security polices (locally set or through Group Policy) | Using AppLocker requires increased effort in planning to create correct policies, but this results in a simpler distribution method.| 
-| Non-Microsoft app control software | Using AppLocker requires a complete app control policy evaluation and implementation.| 
-| Managed usage by group or OU | Using AppLocker requires a complete app control policy evaluation and implementation.| 
-| Authorization Manager or other role-based access technologies | Using AppLocker requires a complete app control policy evaluation and implementation.| 
-| Other | Using AppLocker requires a complete app control policy evaluation and implementation.| 
+| Security polices (locally set or through Group Policy) | Using AppLocker requires increased effort in planning to create correct policies, but this results in a simpler distribution method.|
+| Non-Microsoft app control software | Using AppLocker requires a complete app control policy evaluation and implementation.|
+| Managed usage by group or OU | Using AppLocker requires a complete app control policy evaluation and implementation.|
+| Authorization Manager or other role-based access technologies | Using AppLocker requires a complete app control policy evaluation and implementation.|
+| Other | Using AppLocker requires a complete app control policy evaluation and implementation.|
 
 ### Which Windows desktop and server operating systems are running in your organization?
 
@@ -184,7 +184,7 @@ Implementing a successful application control policy is based on your knowledge 
 
 | Possible answers | Design considerations |
 | - | - |
-| Ad hoc | You need to gather requirements from each group. Some groups might want unrestricted access or installation, while other groups might want strict controls.| 
+| Ad hoc | You need to gather requirements from each group. Some groups might want unrestricted access or installation, while other groups might want strict controls.|
 |  Strict written policy or guidelines to follow | You need to develop AppLocker rules that reflect those policies, and then test and maintain the rules. |
 | No process in place | You need to determine if you have the resources to develop an application control policy, and for which groups. |
 
@@ -215,12 +215,12 @@ AppLocker is very effective for organizations that have application restriction 
 | Possible answers | Design considerations |
 | - | - |
 | Users run without administrative rights. | Apps are installed by using an installation deployment technology.|
-| AppLocker can help reduce the total cost of ownership for business groups that typically use a finite set of apps, such as human resources and finance departments. At the same time, these departments access highly sensitive information, much of which contains confidential and proprietary information. By using AppLocker to create rules for specific apps that are allowed to run, you can help limit unauthorized applications from accessing this information.<br/>**Note: **AppLocker can also be effective in helping create standardized desktops in organizations where users run as administrators. However, it is important to note that users with administrative credentials can add new rules to the local AppLocker policy.| Users must be able to install applications as needed. 
+| AppLocker can help reduce the total cost of ownership for business groups that typically use a finite set of apps, such as human resources and finance departments. At the same time, these departments access highly sensitive information, much of which contains confidential and proprietary information. By using AppLocker to create rules for specific apps that are allowed to run, you can help limit unauthorized applications from accessing this information.<br/>**Note: **AppLocker can also be effective in helping create standardized desktops in organizations where users run as administrators. However, it is important to note that users with administrative credentials can add new rules to the local AppLocker policy.| Users must be able to install applications as needed.
 | Users currently have administrator access, and it would be difficult to change this.|Enforcing AppLocker rules is not suited for business groups that must be able to install apps as needed and without approval from the IT department. If one or more OUs in your organization has this requirement, you can choose not to enforce application rules in those OUs by using AppLocker or to implement the **Audit only** enforcement setting through AppLocker.|
 
 ### Is the structure in Active Directory Domain Services based on the organization's hierarchy?
 
-Designing application control policies based on an organizational structure that is already built into Active Directory Domain Services (AD DS) is easier than converting the existing structure to an organizational structure. 
+Designing application control policies based on an organizational structure that is already built into Active Directory Domain Services (AD DS) is easier than converting the existing structure to an organizational structure.
 Because the effectiveness of application control policies is dependent on the ability to update policies, consider what organizational work needs to be accomplished before deployment begins.
 
 | Possible answers | Design considerations |

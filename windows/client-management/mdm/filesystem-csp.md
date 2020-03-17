@@ -2,7 +2,7 @@
 title: FileSystem CSP
 description: FileSystem CSP
 ms.assetid: 9117ee16-ca7a-4efa-9270-c9ac8547e541
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -18,18 +18,18 @@ ms.date: 06/26/2017
 The FileSystem configuration service provider is used to query, add, modify, and delete files, file directories, and file attributes on the mobile device. It can retrieve information about or manage files in ROM, files in persistent store and files on any removable storage card that is present in the device. It works for files that are hidden from the user as well as those that are visible to the user.
 
 > **Note**  FileSystem CSP is only supported in Windows 10 Mobile.
-> 
-> 
-> 
+>
+>
+>
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
- 
+
 
 The following diagram shows the FileSystem configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
 
 ![filesystem csp (dm)](images/provisioning-csp-filesystem-dm.png)
 
-<a href="" id="filesystem"></a>**FileSystem**  
+<a href="" id="filesystem"></a>**FileSystem**
 Required. Defines the root of the file system management object. It functions as the root directory for file system queries.
 
 Recursive queries or deletes are not supported for this element. Add commands will add a new file or directory under the root path.
@@ -48,7 +48,7 @@ The following properties are supported for the root node:
 
 -   `msft:SystemAttributes`: A custom property that contains file directory attributes. This value is an integer bit mask that corresponds to the FILE\_ATTRIBUTE values and flags defined in the header file winnt.h. This supports the Get command and the Replace command.
 
-<a href="" id="file-directory"></a>***file directory***  
+<a href="" id="file-directory"></a>***file directory***
 Optional. Returns the name of a directory in the device file system. Any *file directory* element can contain directories and files as child elements.
 
 The Get command returns the name of the file directory. The Get command with `?List=Struct` will recursively return all child element names (including sub-directory names). The Get command with `?list=StructData` query is not supported and returns a 406 error code.
@@ -73,7 +73,7 @@ The following properties are supported for file directories:
 
 -   `msft:SystemAttributes`: A custom property that contains file directory attributes. This value is an integer bit mask that corresponds to the FILE\_ATTRIBUTE values and flags defined in the header file winnt.h. This supports the Get command and the Replace command.
 
-<a href="" id="file-name"></a>***file name***  
+<a href="" id="file-name"></a>***file name***
 Optional. Return a file in binary format. If the file is too large for the configuration service to return, it returns error code 413 (Request entity too large) instead.
 
 The Delete command deletes the file.
@@ -103,9 +103,9 @@ The following properties are supported for files:
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

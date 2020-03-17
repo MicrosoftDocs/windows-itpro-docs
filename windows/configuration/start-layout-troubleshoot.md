@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.topic: troubleshooting
 ---
@@ -23,7 +23,7 @@ Start failures can be organized into these categories:
 - **Other issues** - Customization, domain policies, deployment issues.
 
 ## Basic troubleshooting
-	
+
 When troubleshooting basic Start issues (and for the most part, all other Windows apps), there are a few things to check if they are not working as expected. When experiencing issues where the Start Menu or sub-component are not working, there are some quick tests to narrow down where the issue may reside.
 
 ### Check the OS and update version
@@ -71,7 +71,7 @@ If it is installed but not running, test booting into safe mode or use MSCONFIG 
     - "Invalid value for registry"
     - "Element not found"
     - "Package could not be registered"
-    
+
 If these events are found, Start is not activated correctly. Each event will have more detail in the description and should be investigated further. Event messages can vary.
 
 ### Other things to consider
@@ -97,17 +97,17 @@ To narrow this down further, it's good to note:
     - copyprofile
     - Sysprep
     - Other
-    
+
 - Domain-joined
   - Group policy settings that restrict access or permissions to folders or registry keys can cause issues with Start performance.
   - Some Group Policies intended for Windows 7 or older have been known to cause issues with Start
-  - Untested Start Menu customizations can cause unexpected behavior by typically not complete Start failures. 
-  
-- Is this a virtualized environment? 
+  - Untested Start Menu customizations can cause unexpected behavior by typically not complete Start failures.
+
+- Is this a virtualized environment?
   - VMware
   - Citrix
   - Other
-  
+
 ## Check Event logs that record Start Issues:
 
 - System Event log
@@ -128,7 +128,7 @@ To narrow this down further, it's good to note:
   - Check WER reports
     - C:\ProgramData\Microsoft\Windows\WER\ReportArchive\
     - C:\ProgramData\Micrt\Windowsosof\WER\ReportQueue\
-    
+
 If there is a component of Start that is consistently crashing, capture a dump which can be reviewed by Microsoft Support.
 
 ## Common errors and mitigation
@@ -208,11 +208,11 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 XML files can and should be tested locally on a Hyper-V or other virtual machine before deployment or application by Group Policy
 
-### Symptom: Start menu no longer works after a PC is refreshed using F12 during start up 
+### Symptom: Start menu no longer works after a PC is refreshed using F12 during start up
 
 **Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings. When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
 
-**Cause**: This is a known issue and has been resolved in a cumulative update released August 30th 2018. 
+**Cause**: This is a known issue and has been resolved in a cumulative update released August 30th 2018.
 
 **Resolution**: Install corrective updates; a fix is included in the [September 11, 2018-KB4457142 release](https://support.microsoft.com/help/4457142).
 
@@ -254,31 +254,31 @@ Specifically, behaviors include
 **Description**:
 
 Before the upgrade:
- 
+
   ![Example of Start screen with customizations applied](images/start-ts-5.jpg)
 
 After the upgrade the user pinned tiles are missing:
 
   ![Example of Start screen with previously pinned tiles missing](images/start-ts-6.png)
- 
+
 Additionally, users may see blank tiles if logon was attempted without network connectivity.
 
   ![Example of blank tiles](images/start-ts-7.png)
- 
+
 
 **Resolution**: This is fixed in [October 2017 update](https://support.microsoft.com/en-us/help/4041676).
 
 ### Symptom: Tiles are missing after upgrade from Windows 10, version 1607 to version 1709 for users with Roaming User Profiles (RUP) enabled and managed Start Menu layout with partial lockdown
 
-**Resolution** The April 2018 LCU must be applied to Windows 10, version 1709 before a user logs on. 
+**Resolution** The April 2018 LCU must be applied to Windows 10, version 1709 before a user logs on.
 
 ### Symptom: Start Menu and/or Taskbar layout customizations are not applied if CopyProfile option is used in an answer file during Sysprep
 
 **Resolution**: CopyProfile is no longer supported when attempting to customize Start Menu or taskbar with a layoutmodification.xml.
 
-### Symptom: Start Menu issues with Tile Data Layer corruption 
+### Symptom: Start Menu issues with Tile Data Layer corruption
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)). 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)).
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
@@ -311,7 +311,7 @@ If you have already encountered this issue, use one of the following two options
 
 **Option 1** Remove sysfer.dll from system32 folder and copy it back. Windows will set privilege automatically.
 
-**Option 2** 
+**Option 2**
 
 1. Locate the directory C:\Windows\system32.
 

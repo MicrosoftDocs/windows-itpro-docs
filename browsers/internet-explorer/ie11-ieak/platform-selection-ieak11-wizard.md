@@ -5,7 +5,7 @@ description: How to use the Platform Selection page in the IEAK 11 Customization
 author: dansimp
 ms.prod: ie11
 ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 title: Use the Platform Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
@@ -25,9 +25,9 @@ You must create individual packages for each supported operating system.<p>
 
 2.  Click **Next** to go to the [Language Selection](language-selection-ieak11-wizard.md) page or **Back** to go to the [File Locations](file-locations-ieak11-wizard.md) page.
 
- 
 
- 
+
+
 
 
 

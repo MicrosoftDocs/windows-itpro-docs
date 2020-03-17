@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization reference
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 description: Reference of all Delivery Optimization settings and descriptions of same
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
@@ -27,7 +27,7 @@ There are a great many details you can set in Delivery Optimization to customize
 
 ## Delivery Optimization options
 
-You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization. 
+You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
 
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
@@ -110,7 +110,7 @@ Download mode dictates which download sources clients are allowed to use when do
 | Download mode option | Functionality when set |
 | --- | --- |
 | HTTP Only (0) | This setting disables peer-to-peer caching but still allows Delivery Optimization to download content over HTTP from the download's original source. This mode uses additional metadata provided by the Delivery Optimization cloud services for a peerless reliable and efficient download experience. |
-| LAN (1 – Default) | This default operating mode for Delivery Optimization enables peer sharing on the same network. The Delivery Optimization cloud service finds other clients that connect to the Internet using the same public IP as the target client. These clients then attempts to connect to other peers on the same network by using their private subnet IP.| 
+| LAN (1 – Default) | This default operating mode for Delivery Optimization enables peer sharing on the same network. The Delivery Optimization cloud service finds other clients that connect to the Internet using the same public IP as the target client. These clients then attempts to connect to other peers on the same network by using their private subnet IP.|
 | Group (2) | When group mode is set, the group is automatically selected based on the device’s Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use GroupID option to create your own custom group independently of domains and AD DS sites. Starting with Windows 10, version 1803, you can use the GroupIDSource parameter to take advantage of other method to create groups dynamically. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
@@ -139,10 +139,10 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.
 
 
-### Minimum RAM (inclusive) allowed to use Peer Caching  
+### Minimum RAM (inclusive) allowed to use Peer Caching
 
 This setting specifies the minimum RAM size in GB required to use Peer Caching. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4 GB, and the default value is 4 GB.
 
@@ -197,8 +197,8 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Select a method to restrict peer selection
-Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option.  
-Currently the only available option is **1 = Subnet mask** This option (Subnet mask) applies to both Download Modes LAN (1) and Group (2).  
+Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option.
+Currently the only available option is **1 = Subnet mask** This option (Subnet mask) applies to both Download Modes LAN (1) and Group (2).
 
 ### Delay background download from http (in secs)
 Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
@@ -236,7 +236,7 @@ The device can download from peers while on battery regardless of this policy.
 >[!IMPORTANT]
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
-### Cache Server Hostname 
+### Cache Server Hostname
 
 Set this policy to to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma separated, for example: myhost.somerandomhost.com,myhost2.somrandomhost.com,10.10.1.7.
 
@@ -257,12 +257,12 @@ Set this policy to designate one or more Delivery Optimization in Network Cache 
 ### Maximum Foreground Download Bandwidth (in KB/s)
 
 Specifies the maximum foreground download bandwidth in kilobytes/second that the device can use across all concurrent download activities using Delivery Optimization.
- 
+
 The default value of 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 
 ### Maximum Background Download Bandwidth (in KB/s)
 
 Specifies the maximum background download bandwidth in kilobytes/second that the device can use across all concurrent download activities using Delivery Optimization.
- 
+
 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.

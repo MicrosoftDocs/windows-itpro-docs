@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 # Configure Windows Hello for Business: Active Directory
 
@@ -24,7 +24,7 @@ ms.reviewer:
 -   Certificate trust
 
 
-The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
+The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.
 
 ### Creating Security Groups
 
@@ -64,7 +64,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 > [!div class="checklist"]
 > * Create the KeyCredential Admins Security group (optional)
 > * Create the Windows Hello for Business Users group
-> 
+>
 > [!div class="step-by-step"]
 > [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
 > [Configure Azure AD Connect >](hello-hybrid-cert-whfb-settings-dir-sync.md)

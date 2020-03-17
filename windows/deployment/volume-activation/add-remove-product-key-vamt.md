@@ -2,7 +2,7 @@
 title: Add and Remove a Product Key (Windows 10)
 description: Add and Remove a Product Key
 ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 ms.prod: w10
@@ -28,7 +28,7 @@ Before you can use a Multiple Activation Key (MAK), retail, or KMS Host key (CSV
     -   To add product keys manually, click **Enter product key(s) separated by line breaks**, enter one or more product keys separated by line breaks, and click **Add Key(s)**.
     -   To import a Comma Separated Values (CSV) file containing a list of product keys, click **Select a product key file to import**, browse to the file location, click **Open** to import the file, and then click **Add Key(s)**.
 
-    **Note**  
+    **Note**
     If you are activating a large number of products with a MAK, you should refresh the activation count of the MAK, to ensure that the MAK can support the required number of activations. In the product key list in the center pane, select the MAK and click **Refresh product key data online** in the right-side pane to contact Microsoft and retrieve the number of remaining activations for the MAK. This step requires Internet access. You can only retrieve the remaining activation count for MAKs.
 
 ## Remove a Product Key

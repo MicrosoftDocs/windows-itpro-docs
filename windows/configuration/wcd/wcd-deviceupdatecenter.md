@@ -13,7 +13,7 @@ ms.topic: article
 
 # DeviceUpdateCenter (Windows Configuration Designer reference)
 
-Do not use **DeviceUpdateCenter** settings at this time. 
+Do not use **DeviceUpdateCenter** settings at this time.
 
 ## Applies to
 

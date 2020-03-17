@@ -1,6 +1,6 @@
 ---
 title: Use the Lockdown Designer app to create a Lockdown XML file (Windows 10)
-description: 
+description:
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,7 +10,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -18,7 +18,7 @@ manager: dansimp
 
 ![Lockdown Designer in the Store](../images/ldstore.png)
 
-Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available. This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. 
+Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available. This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile.
 
 When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. You can deploy the lockdown XML file by [adding it to a provisioning package](lockdown-xml.md#add-lockdown-xml-to-a-provisioning-package) or [by using mobile device management (MDM)](lockdown-xml.md#push-lockdown-xml-using-mdm).
 
@@ -28,7 +28,7 @@ The Lockdown Designer app helps you configure and create a lockdown XML file tha
 
 ## Overview
 
-Lockdown Designer can be installed on a PC running Windows 10, version 1607 or later. After you install the app, you connect a mobile device running Windows 10 Mobile, version 1703, to the PC. 
+Lockdown Designer can be installed on a PC running Windows 10, version 1607 or later. After you install the app, you connect a mobile device running Windows 10 Mobile, version 1703, to the PC.
 
 >[!NOTE]
 >Lockdown Designer will not make any changes to the connected device, but we recommend that you use a test device.
@@ -46,22 +46,22 @@ Perform these steps on the device running Windows 10 Mobile that you will use to
 
 1. Install all apps on the device that you want to include in the configuration, including line-of-business apps.
 
-2. On the mobile device, go to **Settings** > **Update & security** > **For developers**, enable **Developer mode**. 
+2. On the mobile device, go to **Settings** > **Update & security** > **For developers**, enable **Developer mode**.
 
 3. Read the disclaimer, then click **Yes** to accept the change.
 
-4. Enable **Device discovery**, and then turn on **Device Portal**. 
+4. Enable **Device discovery**, and then turn on **Device Portal**.
 
 >[!IMPORTANT]
 >Check **Settings > Personalization > Start > Show more tiles** on the test mobile device. If **Show more tiles** is **On**, you must select **Large** on the [**Start screen** page](#start) in Lockdown Designer. If you want to apply a **Small** layout, set **Show more tiles** on the test mobile device to **Off**.
 >
->![turn off show more tiles for small start screen size](../images/show-more-tiles.png) 
+>![turn off show more tiles for small start screen size](../images/show-more-tiles.png)
 
 ## Prepare the PC
 
-[Install Lockdown Designer](https://www.microsoft.com/store/r/9nblggh40753) on the PC. 
+[Install Lockdown Designer](https://www.microsoft.com/store/r/9nblggh40753) on the PC.
 
-If the PC and the test mobile device are on the same Wi-Fi network, you can connect the devices using Wi-Fi. 
+If the PC and the test mobile device are on the same Wi-Fi network, you can connect the devices using Wi-Fi.
 
 If you want to connect the PC and the test mobile device using a USB cable, perform the following steps on the PC:
 
@@ -87,11 +87,11 @@ If you want to connect the PC and the test mobile device using a USB cable, perf
 
 2. On the **Project setting** > **General settings** page, in **Remote device IP address**, enter the IP address for the test mobile device, using `https://`.
 
-3. Click **Pair**. 
+3. Click **Pair**.
 
     ![Pair](../images/ld-pair.png)
 
-    **Connect to remote device** appears. 
+    **Connect to remote device** appears.
 
 4. On the mobile device, under **Device discovery**, tap **Pair**. A case-sensitive code is displayed.
 
@@ -101,7 +101,7 @@ If you want to connect the PC and the test mobile device using a USB cable, perf
 
     ![Sync](../images/ld-sync.png)
 
-7. Click the **Save** icon and enter a name for your project. 
+7. Click the **Save** icon and enter a name for your project.
 
 **Using a USB cable**
 
@@ -111,11 +111,11 @@ If you want to connect the PC and the test mobile device using a USB cable, perf
 
 2. Connect a Windows 10 Mobile device to the PC by USB and unlock the device.
 
-3. On the **Project setting** > **General settings** page, click **Pair**. 
+3. On the **Project setting** > **General settings** page, click **Pair**.
 
     ![Pair](../images/ld-pair.png)
 
-    **Connect to remote device** appears. 
+    **Connect to remote device** appears.
 
 4. On the mobile device, under **Device discovery**, tap **Pair**. A case-sensitive code is displayed.
 
@@ -125,7 +125,7 @@ If you want to connect the PC and the test mobile device using a USB cable, perf
 
     ![Sync](../images/ld-sync.png)
 
-7. Click the **Save** icon and enter a name for your project. 
+7. Click the **Save** icon and enter a name for your project.
 
 
 ## Configure your lockdown XML settings
@@ -145,7 +145,7 @@ The apps and settings available in the pages of Lockdown Designer should now be 
 
 ## Validate and export
 
-On the **Validate and export** page, click **Validate** to make sure your lockdown XML is valid. 
+On the **Validate and export** page, click **Validate** to make sure your lockdown XML is valid.
 
 >[!WARNING]
 >Lockdown Designer cannot validate SyncML that you imported to CSPRunner.
@@ -157,7 +157,7 @@ Click **Export** to generate the XML file for your project. You can select the l
 You can create additional roles for the device and have unique configurations for each role. For example, you could have one configuration for a **Manager** role and a different configuration for a **Salesperson** role.
 
 >[!NOTE]
->Using multiple roles on a device requires a login application that displays the list of roles and allows users to sign in to Azure Active Directory. [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) 
+>Using multiple roles on a device requires a login application that displays the list of roles and allows users to sign in to Azure Active Directory. [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin)
 
 **For each role:**
 

@@ -2,7 +2,7 @@
 title: Configure an MDM provider (Windows 10)
 description: For companies or organizations using mobile device management (MDM) tools, those tools can synchronize with Microsoft Store for Business inventory to manage apps with offline licenses.
 ms.assetid: B3A45C8C-A96C-4254-9659-A9B364784673
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -29,7 +29,7 @@ Your management tool needs to be installed and configured with Azure AD, in the 
 
 1. Sign in to the Azure Portal as an Administrator.
 2. Click **Azure Active Directory**, and then choose your directory.
-4. Click **Mobility (MDM and MAM)**.  
+4. Click **Mobility (MDM and MAM)**.
 3. Click **+Add Applications**, find the application, and add it to your directory.
 
 After your management tool is added to your Azure AD directory, you can configure it to work with Microsoft Store. You can configure multiple management tools - just repeat the following procedure.

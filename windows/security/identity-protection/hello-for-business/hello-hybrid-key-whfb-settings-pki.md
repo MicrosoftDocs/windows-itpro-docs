@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+ms.reviewer:
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
@@ -27,11 +27,11 @@ ms.reviewer:
 
 Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
-All deployments use enterprise issued certificates for domain controllers as a root of trust. 
+All deployments use enterprise issued certificates for domain controllers as a root of trust.
 
 ## Certificate Templates
 
-This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority. 
+This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority.
 
 ### Domain Controller certificate template
 
@@ -49,10 +49,10 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
+5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
     **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
-7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 8. Close the console.
 
 >[!NOTE]
@@ -60,11 +60,11 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 
 #### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
-Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
+Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.
 
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).
 
-The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
+The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template.
 
 Sign-in a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 
@@ -74,7 +74,7 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 4. Click the **Superseded Templates** tab. Click **Add**.
 5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
 6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
-7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
+7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**.
 8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
 9. Click **OK** and close the **Certificate Templates** console.
 
@@ -118,8 +118,8 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Configure superseded domain controller certificate templates
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-> 
-> 
+>
+>
 > [!div class="step-by-step"]
 > [< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
 > [Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)

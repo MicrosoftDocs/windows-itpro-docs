@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/05/2019
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ---
 
@@ -127,7 +127,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>By design, files in the Windows directory (%windir% or C:/Windows) cannot be encrypted because they need to be accessed by any user. If a file in the Windows directory gets encrypted by one user, other users can&#39;t access it.<br/>        </td>
-        <td>Any attempt to encrypt a file in the Windows directory will return a file access denied error. But if you copy or drag and drop an encrypted file to the Windows directory, it will retain encryption to honor the intent of the owner. 
+        <td>Any attempt to encrypt a file in the Windows directory will return a file access denied error. But if you copy or drag and drop an encrypted file to the Windows directory, it will retain encryption to honor the intent of the owner.
         </td>
         <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
         </td>
@@ -140,12 +140,12 @@ This table provides info about the most common problems you might encounter whil
 2. Move the notebook folder via File Explorer out of the OneDrive for Business folder to another location, such as the Desktop.
 3. Copy the notebook folder and Paste it back into the OneDrive for Business folder.
 
-Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut.  Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client by using the “Open in app” button.</td>    
+Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut.  Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client by using the “Open in app” button.</td>
     </tr>
     <tr>
         <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and are therefore not protected.
         </td>
-        <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected. 
+        <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected.
         </td>
         <td>It is recommended to use Microsoft Office Outlook in Online mode, or to use encryption to protect OST and PST files manually.
         </td>
@@ -153,10 +153,10 @@ Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook,
 </table>
 
 > [!NOTE]
-> When corporate data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity. One caveat to keep in mind is that the Preview Pane in File Explorer will not work for encrypted files. 
+> When corporate data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity. One caveat to keep in mind is that the Preview Pane in File Explorer will not work for encrypted files.
 
 
 
 
 > [!NOTE]
-> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

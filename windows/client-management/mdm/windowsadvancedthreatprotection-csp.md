@@ -2,7 +2,7 @@
 title: WindowsAdvancedThreatProtection CSP
 description: WindowsAdvancedThreatProtection CSP
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -23,34 +23,34 @@ The following diagram shows the WDATP configuration service provider in tree for
 
 The following list describes the characteristics and parameters.
 
-<a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**  
+<a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**
 <p style="margin-left: 20px">The root node for the Windows Defender Advanced Threat Protection configuration service provider.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="onboarding"></a>**Onboarding**  
+<a href="" id="onboarding"></a>**Onboarding**
 <p style="margin-left: 20px">Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
 
 <p style="margin-left: 20px">The data type is a string.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="healthstate"></a>**HealthState**  
+<a href="" id="healthstate"></a>**HealthState**
 <p style="margin-left: 20px">Node that represents the Windows Defender Advanced Threat Protection health state.
 
-<a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**  
+<a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**
 <p style="margin-left: 20px">Contains the timestamp of the last successful connection.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**  
+<a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**
 <p style="margin-left: 20px">Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
 
 <p style="margin-left: 20px">The default value is false.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**  
+<a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**
 <p style="margin-left: 20px">Represents the onboarding state.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -60,15 +60,15 @@ The following list describes the characteristics and parameters.
 -   0 (default) – Not onboarded.
 -   1 – Onboarded
 
-<a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  
+<a href="" id="healthstate-orgid"></a>**HealthState/OrgId**
 <p style="margin-left: 20px">String that represents the OrgID.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="configuration"></a>**Configuration**  
+<a href="" id="configuration"></a>**Configuration**
 <p style="margin-left: 20px">Represents Windows Defender Advanced Threat Protection configuration.
 
-<a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
+<a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**
 <p style="margin-left: 20px">Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -78,8 +78,8 @@ The following list describes the characteristics and parameters.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency. 
+<a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -88,27 +88,27 @@ The following list describes the characteristics and parameters.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="offboarding"></a>**Offboarding**  
+<a href="" id="offboarding"></a>**Offboarding**
 <p style="margin-left: 20px">Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
 
 <p style="margin-left: 20px">The data type is a string.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="devicetagging"></a>**DeviceTagging**  
+<a href="" id="devicetagging"></a>**DeviceTagging**
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
 
 <p style="margin-left: 20px">Supported operations is Get.
 
-<a href="" id="group"></a>**DeviceTagging/Group**  
+<a href="" id="group"></a>**DeviceTagging/Group**
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Device group identifiers.
 
 <p style="margin-left: 20px">The data type is a string.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="criticality"></a>**DeviceTagging/Criticality**  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Asset criticality value. Supported values:  
+<a href="" id="criticality"></a>**DeviceTagging/Criticality**
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Asset criticality value. Supported values:
 
 - 0 - Normal
 - 1 - Critical
@@ -223,7 +223,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -233,9 +233,9 @@ The following list describes the characteristics and parameters.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

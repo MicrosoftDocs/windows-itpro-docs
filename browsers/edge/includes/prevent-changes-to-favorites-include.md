@@ -2,7 +2,7 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.prod: edge
@@ -26,7 +26,7 @@ ms.topic: include
 
 ### ADMX info and settings
 #### ADMX info
-- **GP English name:** Prevent changes to Favorites on Microsoft Edge 
+- **GP English name:** Prevent changes to Favorites on Microsoft Edge
 - **GP name:** LockdownFavorites
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
@@ -34,7 +34,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[LockdownFavorites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/LockdownFavorites 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/LockdownFavorites
 - **Data type:** Integer
 
 #### Registry settings

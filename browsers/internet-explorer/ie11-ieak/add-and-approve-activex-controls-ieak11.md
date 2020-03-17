@@ -5,7 +5,7 @@ description: How to use IEAK 11 to add and approve ActiveX controls for your org
 author: dansimp
 ms.prod: ie11
 ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -43,9 +43,9 @@ You can get a higher degree of management over ActiveX controls by listing each 
 
 After you decide which controls you want to allow, you can specify them as approved by zone, using the process described in the first scenario.
 
- 
 
- 
+
+
 
 
 

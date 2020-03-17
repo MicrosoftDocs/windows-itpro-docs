@@ -2,7 +2,7 @@
 title: Prepare a device for kiosk configuration (Windows 10)
 description: Some tips for device settings on kiosks.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
@@ -33,7 +33,7 @@ ms.topic: article
 
 ## Configuration recommendations
 
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk: 
+For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
 Recommendation | How to
 --- | ---
@@ -64,7 +64,7 @@ In addition to the settings in the table, you may want to set up **automatic log
 > If you are using a Windows 10 and later device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
 
 > [!TIP]
-> If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML. 
+> If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML.
 
 
 **How to edit the registry to have an account sign in automatically**
@@ -73,8 +73,8 @@ In addition to the settings in the table, you may want to set up **automatic log
 
    > [!NOTE]
    > If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
-  
- 
+
+
 2. Go to
 
    **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\Windows NT\CurrentVersion\Winlogon**
@@ -253,12 +253,12 @@ The following table describes some features that have interoperability issues we
 
 Customers sometimes use virtual machines (VMs) to test configurations before deploying those configurations to physical devices. If you use a VM to test your single-app kiosk configuration, you need to know how to connect to the VM properly.
 
-A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
+A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V.
 
 When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
 
 ![VM windows, View menu, Extended session is not selected](images/vm-kiosk.png)
 
-To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog. 
+To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog.
 
 ![Do not select the connect button, use "close X" in the top corner](images/vm-kiosk-connect.png)

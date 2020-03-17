@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## LockDown policies  
+## LockDown policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
+<a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**
 
 <!--SupportedSKUs-->
 <table>
@@ -80,7 +80,7 @@ The easiest way to verify the policy is to restart the explorer process or to re
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Allow edge swipe*
 -   GP name: *AllowEdgeSwipe*
 -   GP path: *Windows Components/Edge UI*

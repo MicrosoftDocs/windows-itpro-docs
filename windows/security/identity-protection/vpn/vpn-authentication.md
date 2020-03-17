@@ -8,7 +8,7 @@ ms.pagetype: security, networking
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ---
@@ -21,7 +21,7 @@ ms.author: dansimp
 
 In addition to older and less-secure password-based authentication methods (which should be avoided), the built-in VPN solution uses Extensible Authentication Protocol (EAP) to provide secure authentication using both user name and password, and certificate-based methods. You can only configure EAP-based authentication if you select a built-in VPN type (IKEv2, L2TP, PPTP or Automatic).
 
-Windows supports a number of EAP authentication methods. 
+Windows supports a number of EAP authentication methods.
 
 <table>
 <thead><tr><th>Method</th><th>Details</th></thead>
@@ -44,7 +44,7 @@ For a UWP VPN plug-in, the app vendor controls the authentication method to be u
 
 ## Configure authentication
 
-See [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) for EAP XML configuration. 
+See [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) for EAP XML configuration.
 
 >[!NOTE]
 >To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) to create a smart card certificate. [Learn more about Windows Hello for Business.](https://technet.microsoft.com/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport)

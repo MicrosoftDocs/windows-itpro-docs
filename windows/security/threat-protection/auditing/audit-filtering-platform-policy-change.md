@@ -2,7 +2,7 @@
 title: Audit Filtering Platform Policy Change (Windows 10)
 description: The policy setting, Audit Filtering Platform Policy Change, determines if audit events are generated for certain IPsec and Windows Filtering Platform actions.
 ms.assetid: 0eaf1c56-672b-4ea9-825a-22dc03eb4041
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
@@ -36,7 +36,7 @@ Windows Filtering Platform (WFP) enables independent software vendors (ISVs) to 
 
 - 4710(S): IPsec Services was disabled.
 
-- 4711(S): May contain any one of the following: 
+- 4711(S): May contain any one of the following:
 
 - 4712(F): IPsec Services encountered a potentially serious failure.
 

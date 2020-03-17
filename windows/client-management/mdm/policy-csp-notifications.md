@@ -8,7 +8,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -19,7 +19,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Notifications policies  
+## Notifications policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**  
+<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**
 
 <!--SupportedSKUs-->
 <table>
@@ -95,7 +95,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -107,7 +107,7 @@ This setting supports a range of values between 0 and 1.
 
 <!--/SupportedValues-->
 <!--Validation-->
-Validation:  
+Validation:
 1. Enable policy
 2. Reboot machine
 3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
@@ -118,7 +118,7 @@ Validation:
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**  
+<a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**
 
 <!--SupportedSKUs-->
 <table>
@@ -169,7 +169,7 @@ No reboot or service restart is required for this policy to take effect.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off notification mirroring*
 -   GP name: *NoNotificationMirroring*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -188,7 +188,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**  
+<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**
 
 <!--SupportedSKUs-->
 <table>
@@ -241,7 +241,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP English name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -253,7 +253,7 @@ This setting supports a range of values between 0 and 1.
 
 <!--/SupportedValues-->
 <!--Validation-->
-Validation:  
+Validation:
 1. Enable policy
 2. Reboot machine
 3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile)

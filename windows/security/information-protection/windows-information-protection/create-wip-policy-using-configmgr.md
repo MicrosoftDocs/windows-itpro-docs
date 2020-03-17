@@ -2,7 +2,7 @@
 title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
-ms.reviewer: 
+ms.reviewer:
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager, MEMCM, Microsoft Endpoint Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -103,7 +103,7 @@ If you don't know the publisher or product name, you can find them for both desk
 1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
 
    > [!NOTE]
-   > 
+   >
    > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
 
 2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
@@ -454,7 +454,7 @@ There are no default locations included with WIP, you must add each of your netw
 
    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/wip-configmgr-dra.png)
 
-   After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
+   After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.
 
    For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 

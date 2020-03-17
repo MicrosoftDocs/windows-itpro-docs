@@ -1,6 +1,6 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender ATP
-ms.reviewer: 
+ms.reviewer:
 description: Learn how to create and manage custom detection rules based on advanced hunting queries
 keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -36,7 +36,7 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 #### Required columns in the query results
 To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each device. 
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each device.
 
 The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
@@ -57,8 +57,8 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title** — title displayed with alerts triggered by the rule
 - **Severity** — potential risk of the component or activity identified by the rule. [Read about alert severities](alerts-queue.md#severity)
 - **Category** — type of threat component or activity, if any. [Read about alert categories](alerts-queue.md#understanding-alert-categories)
-- **Description** — more information about the component or activity identified by the rule 
-- **Recommended actions** — additional actions that responders might take in response to an alert 
+- **Description** — more information about the component or activity identified by the rule
+- **Recommended actions** — additional actions that responders might take in response to an alert
 
 For more information about how alert details are displayed, [read about the alert queue](alerts-queue.md).
 

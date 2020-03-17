@@ -2,7 +2,7 @@
 title: Assign seat
 description: The Assign seat operation assigns seat for a specified user in the Microsoft Store for Business.
 ms.assetid: B42BF490-35C9-405C-B5D6-0D9F0E377552
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -37,7 +37,7 @@ The **Assign seat** operation assigns seat for a specified user in the Microsoft
 </tbody>
 </table>
 
- 
+
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -127,9 +127,9 @@ The response body contains [SeatDetails](data-structures-windows-store-for-busin
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

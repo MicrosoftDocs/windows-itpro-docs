@@ -2,7 +2,7 @@
 title: Configuration service provider reference
 description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
 ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -2741,7 +2741,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
 
- 
+
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
 -   [Accounts CSP](accounts-csp.md)<sup>9</sup> **Note:** Support in Surface Hub is limited to **Domain\ComputerName**.

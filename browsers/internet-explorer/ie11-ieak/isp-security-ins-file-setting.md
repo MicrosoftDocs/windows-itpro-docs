@@ -5,7 +5,7 @@ description: Use the \[ISP_Security\] .INS file setting to add the root certific
 author: dansimp
 ms.prod: ie11
 ms.assetid: 4eca2de5-7071-45a2-9c99-75115be00d06
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp

@@ -2,7 +2,7 @@
 title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
 description: Learn how to replace a Windows 7 device with a Windows 10 device. Although the process is similar to performing a refresh, you'll need to backup data externally
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.author: greglin
 keywords: deploy, deployment, replace
@@ -21,12 +21,12 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
+A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings.
 
-For the purposes of this topic, we will use four computers: DC01, MDT01, PC0002, and PC0007. 
+For the purposes of this topic, we will use four computers: DC01, MDT01, PC0002, and PC0007.
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is domain member server that hosts your deployment share.
-- PC0002 is an old computer running Windows 7 SP1 that will be replaced by PC0007. 
+- PC0002 is an old computer running Windows 7 SP1 that will be replaced by PC0007.
 - PC0007 is a new computer will have the Windows 10 OS installed prior to data from PC0002 being migrated. Both PC0002 and PC0007 are members of the contoso.com domain.
 
 For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
@@ -94,10 +94,10 @@ On **PC0002**:
     1.  Select a task sequence to execute on this computer: Backup Only Task Sequence
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
-        
+
         >[!NOTE]
         >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
-         
+
     2.  Specify where to save a complete computer backup: Do not back up the existing computer
 
     The task sequence will now run USMT (Scanstate.exe) to capture user data and settings of the computer.
