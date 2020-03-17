@@ -62,7 +62,9 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 
     Monitoring the deployment with MDT.
 
-7. See the examples below of the various stages of deployment.  When the deployment is finished you will have a domain-joined Windows 10 computer with the Adobe Reader application installed.
+7. When the deployment is finished you will have a domain-joined Windows 10 computer with the Adobe Reader application installed as well as the applications that were included in the reference image, such as Office 365 Pro Plus.
+
+Examples are provided below of various stages of deployment:
 
 ![pc0001a](../images/pc0001a.png)<br>
 ![pc0001b](../images/pc0001b.png)<br>
@@ -77,6 +79,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 ![pc0001k](../images/pc0001k.png)<br>
 ![pc0001l](../images/pc0001l.png)<br>
 ![pc0001m](../images/pc0001m.png)<br>
+![pc0001n](../images/pc0001n.png)<br>
 
 Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
