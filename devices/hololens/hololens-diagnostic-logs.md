@@ -31,7 +31,7 @@ While device telemetry usually provides an initial understanding of a customer r
 
 ***Q***: Clarify "customer" vs "user"
 
-## How to retrieve diagnostic log information
+## How to retrieve diagnostic information
 
 There are four ways that diagnostic information can be collected from HoloLens:
 
