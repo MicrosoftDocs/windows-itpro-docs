@@ -295,10 +295,11 @@ You might also need to check the following:
 ## Confirming onboarding of newly built machines 
 There may be instances when onboarding is deployed on a newly built machine but not completed. 
 
-The following steps provide guidance for the following scenario:
+The steps below provide guidance for the following scenario:
 - Onboarding package is deployed to newly built machines
 - Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
 - Machine is turned off and shipped to the end user
+- In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 >[!NOTE]
 >The following steps are only relevant when using Microsoft Endpoint Configuration Manager (current branch)
