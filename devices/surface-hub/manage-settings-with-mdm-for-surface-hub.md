@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Surface Hub and other Windows 10 devices allow IT administrators to manage settings and policies using a mobile device management (MDM) provider. A built-in management component communicates with the management server, so there is no need to install additional clients on the device. For more information, see [Windows 10 mobile device management](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
 
-Surface Hub has been validated with Microsoft’s first-party MDM providers:
+Surface Hub has been validated with Microsoft's first-party MDM providers:
 - Microsoft Intune standalone
 - On-premises MDM with Microsoft Endpoint Configuration Manager
 
@@ -201,7 +201,7 @@ The following tables include info on Windows 10 settings that have been validate
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
-You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in Microsoft Endpoint Configuration Manager.
+You need to use a setting's OMA URI to create a custom policy in Intune, or a custom setting in Microsoft Endpoint Configuration Manager.
 
 **To generate the OMA URI for any setting in the CSP documentation**
 1. In the CSP documentation, identify the root node of the CSP. Generally, this looks like `./Vendor/MSFT/<name of CSP>` <br>
@@ -238,26 +238,26 @@ Configuration Manager supports managing modern devices that do not require the C
 3. On the **General** page of the Create Configuration Item Wizard, specify a name and optional description for the configuration item.
 4. Under **Settings for devices managed without the Configuration Manager client**, select **Windows 8.1 and Windows 10**, and then click **Next**.
 
-    ![example of UI](images/sccm-create.png)
+    ![example of UI](images/configmgr-create.png)
 5. On the **Supported Platforms** page, expand **Windows 10** and select **All Windows 10 Team and higher**. Unselect the other Windows platforms, and then click **Next**.
 
-    ![select platform](images/sccm-platform.png)
+    ![select platform](images/configmgr-platform.png)
 7. On the **Device Settings** page, under **Device settings groups**, select **Windows 10 Team**.
 
 
 8. On the **Windows 10 Team** page, configure the settings you require.
 
-    ![Windows 10 Team](images/sccm-team.png)
+    ![Windows 10 Team](images/configmgr-team.png)
 9. You'll need to create custom settings to manage settings that are not available in the Windows 10 Team page. On the **Device Settings** page, select the check box **Configure additional settings that are not in the default setting groups**.
 
-    ![additional settings](images/sccm-additional.png)
+    ![additional settings](images/configmgr-additional.png)
 10. On the **Additional Settings** page, click **Add**.
 11. In the **Browse Settings** dialog, click **Create Setting**.
 12. In the **Create Setting** dialog, under the **General** tab, specify a name and optional description for the custom setting.
 13. Under **Setting type**, select **OMA URI**.
 14. Complete the form to create a new setting, and then click **OK**.
 
-    ![OMA URI setting](images/sccm-oma-uri.png)
+    ![OMA URI setting](images/configmgr-oma-uri.png)
 15. On the **Browse Settings** dialog, under **Available settings**, select the new setting you created, and then click **Select**.
 16. On the **Create Rule** dialog, complete the form to specify a rule for the setting, and then click **OK**.
 17. Repeat steps 9 to 15 for each custom setting you want to add to the configuration item.
