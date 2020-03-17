@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 03/12/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -75,9 +75,6 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 This security setting allows an administrator to define the members of a security-sensitive (restricted) group. When a Restricted Groups Policy is enforced, any current member of a restricted group that is not on the Members list is removed. Any user on the Members list who is not currently a member of the restricted group is added. You can use Restricted Groups policy to control group membership. Using the policy, you can specify what members are part of a group. Any members that are not specified in the policy are removed during configuration or refresh. For example, you can create a Restricted Groups policy to only allow specified users (for example, Alice and John) to be members of the Administrators group. When policy is refreshed, only Alice and John will remain as members of the Administrators group.  
-
-> [!NOTE]
-> DeviceEnroller.exe will not elevate the user if a pre-configured local admin group already exists on the device. This is a security measure in the executable where it checks for other non-disabled Administrators' membership(s). If at least one already exists, the tool will exit without elevating.
 
 > [!CAUTION]
 > If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
