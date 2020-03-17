@@ -24,66 +24,51 @@ appliesto:
 
 Fallback diagnostic logs collect diagnostic data and store it on the HoloLens device. You can access that information from a desktop computer by using the Media Transfer Protocol (MTP). This diagnostic feature has been developed in collaboration with the Mobile Device Management (MDM) team.
 
-While device telemetry usually provides an initial understanding of a customer report, some issues require a broader and deeper understanding of the device state. When you investigate such issues, diagnostic logs that reside on the device are more useful than the basic device telemetry. 
+While device telemetry usually provides an initial understanding of a customer report, some issues require a broader and deeper understanding of the device state. When you investigate such issues, diagnostic logs that reside on the device are more useful than the basic device telemetry.
 
 > [!IMPORTANT]  
 > Device diagnostic logs contain PII information, such as information about what processes or applications that the user launched during typical operations. When multiple users share a HoloLens device, for example, when users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts, the diagnostic logs may contain PII information that pertains to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
 
 ***Q***: Clarify "customer" vs "user"
 
-## How to retrieve diagnostic information
+## Comparing fallback diagnostic logs to other sources of diagnostic information
 
 There are four ways that diagnostic information can be collected from HoloLens:
 
-- [Feedback hub](hololens-feedback.md).
-- Diagnostic Logs CSP.
-- Troubleshoot in Settings app.
-- Fallback Diagnostics.
+- [Feedback hub app](hololens-feedback.md). (user-driven)
+- Diagnostic Logs CSP (IT Admin/enterprise-driven)
+- Troubleshoot in Settings app. (user-driven)
+- Fallback Diagnostics. (user-driven)
 
 ### Feedback hub
 
-[Feedback hub](hololens-feedback.md)  
-
-#### What is needed to use this entry point?
-
-- Device is connected to network.
-- Feedback hub app is accessible to customer.
-- Diagnostic logs can be collected and uploaded to Microsoft cloud.
+A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnostic information to Microsoft support. For details and complete instructions, see [Give us feedback](hololens-feedback.md).  
 
 > [!NOTE]  
-> **Commercial customers:** For issues related to MDM, provisioning, or any other device management aspect, etc., please file a bug under **Enterprise Management** > **Device category**
+> **Commercial customers:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
 
-#### When and how to trigger?
+#### Prerequisites
 
-**When**
+- The device is connected to a network.
+- The Feedback Hub app is available on the user's desktop computer, and the user can upload files to the Microsoft cloud.
 
-- Customer wants to share diagnostic logs for reporting an issue.
+Explicit. The user agrees to the terms-of-use of Feedback Hub.
 
-**How**
+#### Data storage and use
 
-- Launch feedback hub application and submit a report using the app.
+By agreeing to the terms-of-use of Feedback Hub, the user explicitly consents to the storage and usage of the data (as defined by that agreement).
 
-#### User consent
+The Feedback Hub provides two places for the user to store diagnostic information:
 
-Explicit because user has agreed to terms of use of Feedback hub and is launching feedback hub to collect / share diagnostic information.
+- **The Microsoft cloud**. Data that the user uploads by using the Feedback Hub app is stored for a number of days that is consistent with Next Generation Privacy (NGP) requirements. Microsoft employees can use an NGP-compliant viewer to access this information during this period.
+   > [!NOTE]  
+   > These requirements apply to data in all Feedback Hub categories.
 
-#### Where is the data kept?
-
-Diagnostic information is uploaded to Microsoft cloud where it is retained for certain amount of days adhering with Next Generation Privacy (NGP).  
-
-It is also kept on HoloLens, if the person filing the bug via feedback hub has checked following check-box, i.e. "save a local copy of diagnostics and attachments created when giving feedback".
-
-To delete locally retained diagnostic information, go to Feedback Hub, settings and click on the link "View diagnostics logs", so folder opens. User must be "device owner" or "admin" on the system.
-
-#### Who can access the data?
-
-Microsoft employees access diagnostic information using a NGP complaint viewer.
-
-This is applicable to all Feedback Hub categories.
+- **The HoloLens device**. While filing a report in Feedback Hub, the user can select **Save a local copy of diagnostics and attachments created when giving feedback**. If the user selects this option, the Feedback Hub stores a copy of the diagnostic information on the HoloLens device. This information remains accessible to the user (or anyone that uses that account to sign in to HoloLens). To delete this information, a user must have **Device owner** or **Admin** permissions on the device. A user who has the appropriate permissions can sign in to Feedback Hub, select **Settings** > **View diagnostics logs**, and delete the information.
 
 ### Diagnostic Logs CSP
 
-#### What is needed to use this entry point?
+#### Prerequisites
 
 - Device is connected to network.
 - Device is enrolled into MDM environment that supports Diagnostic Logs CSP.
@@ -112,7 +97,7 @@ IT admin and users in tenant roles that are granted access to logs.
 
 ### Troubleshoot in Settings app
 
-#### What is needed to use this entry point?
+#### Prerequisites
 
 Settings app is accessible to the customer.
 
@@ -144,7 +129,7 @@ Only Customer who has access to the device unless the customer shares the inform
 
 ### Fallback Diagnostics
 
-#### What is needed to use this entry point?
+#### Prerequisites
 
 > [!IMPORTANT]  
 > - Fallback Diagnostics on HoloLens 2 is only enabled when user is either going through OOBE and selecting Send Full Diagnostics Data or System\AllowTelemetry policy value is set to Full.
