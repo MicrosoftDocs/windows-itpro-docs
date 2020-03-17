@@ -113,7 +113,6 @@
 ##### [Create a task sequence with Configuration Manager and MDT](deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt.md)
 ##### [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
 ##### [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
-##### [Monitor the Windows 10 deployment with Configuration Manager](deploy-windows-cm/monitor-windows-10-deployment-with-configuration-manager.md)
 ##### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 ##### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 ##### [Perform an in-place upgrade to Windows 10 using Configuration Manager](deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
