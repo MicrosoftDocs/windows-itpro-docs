@@ -38,4 +38,5 @@ WDAC events are generated under two locations:
 
 | Topic | Description |
 | - | - |
+| [Understanding Application Control events](event-id-explanations.md) | This topic explains the meaning of different WDAC events. |
 | [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender ATP. |
