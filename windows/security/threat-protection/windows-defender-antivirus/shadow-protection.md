@@ -39,6 +39,9 @@ The following images shows an instance of unwanted software that was detected an
 
 ## Turn on shadow protection
 
+> [!IMPORTANT]
+> Make sure the [requirements](#requirements-for-shadow-protection) are met before turning shadow protection on.
+
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
@@ -48,18 +51,18 @@ The following images shows an instance of unwanted software that was detected an
 3. Turn shadow protection on.
 
 > [!NOTE]
-> Currently, shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off at this time.
+> Shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off.
 
 ## Requirements for shadow protection
 
 |Requirement  |Details  |
 |---------|---------|
-|Permissions |One of the following roles should be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal): <br/>- Security Administrator or Global Administrator <br/>- Security Reader <br/>See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
+|Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
 |Windows E5 enrollment     |This is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus). |
-|Windows Defender Antivirus antimalware client |To make sure your client is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
-|Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the `Get-MpComputerStatus` cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
+|Windows Defender Antivirus antimalware client |To make sure your client is up to date, using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
+|Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
 > To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) 
