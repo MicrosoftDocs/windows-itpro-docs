@@ -237,7 +237,7 @@ On **CM01**:
 
 1.  Using the Configuration Manager Console, in the Administration workspace, expand **Site Configuration** and select **Sites**.
 2.  Right-click **PS1 - Primary Site 1**, point to **Configure Site Components**, and then select **Software Distribution**.
-3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the **CONTOSO\\CM\_NAA** user account (select New Account) as the Network Access account. Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
+3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the *New Account* **CONTOSO\\CM\_NAA** as the Network Access account (password: pass@word1). Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
 
 ![figure 12](../images/mdt-06-fig12.png)
 
