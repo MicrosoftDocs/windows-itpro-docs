@@ -41,16 +41,28 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 >[!NOTE]
 >No WDS console configuration required for PXE to work. Everything is done with the Configuration Manager console.
 
+## Procedures
+
 1. Start the PC0001 computer. At the Pre-Boot Execution Environment (PXE) boot menu, press **Enter** to allow it to PXE boot.
 2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass@word1** and click **Next**.
 3. On the **Select a task sequence to run** page, select **Windows 10 Enterprise x64 RTM** and click **Next**.
 4. On the **Edit Task Sequence Variables** page, double-click the **OSDComputerName** variable, and in the **Value** field, type **PC0001** and click **OK**. Then click **Next**.
 5. The operating system deployment will take several minutes to complete. 
-6. You can monitor the deployment on CM01 using the MDT Deployment Workbench. See the following example:
+6. You can monitor the deployment on CM01 using the MDT Deployment Workbench. When you see the PC0001 entry, double-click **PC0001**, and then click **DaRT Remote Control** and review the **Remote Control** option. The task sequence will run and do the following:
+
+    * Install the Windows 10 operating system.
+    * Install the Configuration Manager client and the client hotfix.
+    * Join the machine to the domain.
+    * Install the application added to the task sequence.
+    
+    >[!NOTE]
+    >You also can use the built-in reports to get information about ongoing deployments. For example, a task sequence report gives you a quick overview of the task sequence progress.
 
     ![MDT monitoring](../images/pc0001-monitor.png)
 
-7. See the examples below of the various stages of deployment.  When the deployment is finished you will have a domain-joined Windows 10 computer.
+    Monitoring the deployment with MDT.
+
+7. See the examples below of the various stages of deployment.  When the deployment is finished you will have a domain-joined Windows 10 computer with the Adobe Reader application installed.
 
 ![pc0001a](../images/pc0001a.png)<br>
 ![pc0001b](../images/pc0001b.png)<br>
@@ -65,6 +77,8 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 ![pc0001k](../images/pc0001k.png)<br>
 ![pc0001l](../images/pc0001l.png)<br>
 ![pc0001m](../images/pc0001m.png)<br>
+
+Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
 ## Related topics
 
