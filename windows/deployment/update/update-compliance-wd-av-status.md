@@ -18,7 +18,7 @@ ms.topic: article
 
 
 > [!IMPORTANT]
-> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/), which allows finer control over security features and updates.
+> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
 
 ![The Windows Defender AV Status report](images/UC_workspace_WDAV_status.png)
 
