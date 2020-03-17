@@ -2,7 +2,8 @@
 author: eavena
 ms.author: eravena
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---

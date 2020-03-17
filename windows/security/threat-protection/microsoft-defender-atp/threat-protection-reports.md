@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -29,7 +29,7 @@ The dashboard is structured into two sections:
 
 ![Image of the threat protection report](images/threat-protection-reports.png)
 
-Section | Description 
+Section | Description
 :---|:---
 1 | Alerts trends
 2 | Alert summary
@@ -49,11 +49,11 @@ By default, the alert trends display alert information from the 30-day period en
 ## Alert summary
 While the alert trends shows trending alert information, the alert summary shows alert information scoped to the current day.
 
- The alert summary allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
+ The alert summary allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections.
 
 >[!NOTE]
 >The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is November 5, 2019, the data on the summary section will reflect numbers starting from May 5, 2019 to November 5, 2019.<br>
-> The filter applied on the trends section is not applied on the summary section. 
+> The filter applied on the trends section is not applied on the summary section.
 
 ## Alert attributes
 The report is made up of cards that display the following alert attributes:
@@ -64,12 +64,12 @@ The report is made up of cards that display the following alert attributes:
 
 - **Severity**: shows the severity level of alerts, indicating the collective potential impact of threats to your organization and the level of response needed to address them.
 
-- **Status**: shows the resolution status of alerts, indicating the efficiency of your manual alert responses and of automated remediation (if enabled). 
+- **Status**: shows the resolution status of alerts, indicating the efficiency of your manual alert responses and of automated remediation (if enabled).
 
 - **Classification & determination**: shows how you have classified alerts upon resolution, whether you have classified them as actual threats (true alerts) or as incorrect detections (false alerts). These cards also show the determination of resolved alerts, providing additional insight like the types of actual threats found or the legitimate activities that were incorrectly detected.
 
 
- 
+
 
 ## Filter data
 
@@ -82,7 +82,7 @@ For example, to show data about high-severity alerts only:
 
 1. Under **Filters > Severity**, select **High**
 2. Ensure that all other options under **Severity** are deselected.
-3. Select **Apply**. 
+3. Select **Apply**.
 
 ## Related topic
 - [Device health and compliance report](machine-reports.md)

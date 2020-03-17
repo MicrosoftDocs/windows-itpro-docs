@@ -1,6 +1,6 @@
 ---
 title: Set up Microsoft Defender ATP deployment
-description: 
+description:
 keywords:
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,10 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - M365-security-compliance
-- m365solution-endpointprotect 
-ms.topic: article 
+- m365solution-endpointprotect
+ms.topic: article
 ---
 
 # Set up Microsoft Defender ATP deployment
@@ -31,7 +31,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
+      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment">
         <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
       <br/>Phase 1: Prepare </a><br>
     </td>
@@ -105,7 +105,7 @@ When accessing [Microsoft Defender Security Center](https://securitycenter.windo
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation.
 
     **Data retention** - The default is 6 months.
 
@@ -170,12 +170,12 @@ under:
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
-3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
     ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
-   
+
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
     ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
 7. Select **Enabled**.
@@ -230,14 +230,14 @@ is configured on these devices.
 URLs that include v20 in them are only needed if you have Windows 10, version
 1803 or later devices. For example, ```us-v20.events.data.microsoft.com``` is only
 needed if the device is on Windows 10, version 1803 or later.
- 
+
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS.
 
 
 ###  Microsoft Defender ATP service backend IP range

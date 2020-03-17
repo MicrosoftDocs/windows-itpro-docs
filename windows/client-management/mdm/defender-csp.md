@@ -2,7 +2,7 @@
 title: Defender CSP
 description: See how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -21,31 +21,31 @@ The following image shows the Windows Defender configuration service provider in
 
 ![defender csp diagram](images/provisioning-csp-defender.png)
 
-<a href="" id="detections"></a>**Detections**  
+<a href="" id="detections"></a>**Detections**
 An interior node to group all threats detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>  
+<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>
 The ID of a threat that has been detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-name"></a>**Detections/*ThreatId*/Name**  
+<a href="" id="detections-threatid-name"></a>**Detections/*ThreatId*/Name**
 The name of the specific threat.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-url"></a>**Detections/*ThreatId*/URL**  
+<a href="" id="detections-threatid-url"></a>**Detections/*ThreatId*/URL**
 URL link for additional threat information.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**  
+<a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**
 Threat severity ID.
 
 The data type is a integer.
@@ -60,7 +60,7 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**  
+<a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**
 Threat category ID.
 
 The data type is a integer.
@@ -122,7 +122,7 @@ The following table describes the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
+<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**
 Information about the current status of the threat.
 
 The data type is a integer.
@@ -143,45 +143,45 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**  
+<a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**
 Information about the execution status of the threat.
 
 The data type is a integer.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-initialdetectiontime"></a>**Detections/*ThreatId*/InitialDetectionTime**  
+<a href="" id="detections-threatid-initialdetectiontime"></a>**Detections/*ThreatId*/InitialDetectionTime**
 The first time this particular threat was detected.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-lastthreatstatuschangetime"></a>**Detections/*ThreatId*/LastThreatStatusChangeTime**  
+<a href="" id="detections-threatid-lastthreatstatuschangetime"></a>**Detections/*ThreatId*/LastThreatStatusChangeTime**
 The last time this particular threat was changed.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**  
+<a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**
 Number of times this threat has been detected on a particular client.
 
 The data type is a integer.
 
 Supported operation is Get.
 
-<a href="" id="health"></a>**Health**  
+<a href="" id="health"></a>**Health**
 An interior node to group information about Windows Defender health status.
 
 Supported operation is Get.
 
-<a href="" id="health-productstatus"></a>**Health/ProductStatus**  
+<a href="" id="health-productstatus"></a>**Health/ProductStatus**
 Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list.
 
 Data type is integer. Supported operation is Get.
 
-Supported product status values:  
+Supported product status values:
 -  No status                                                        = 0
 -  Service not running                                              = 1 << 0
 -  Service started without any malware protection engine            = 1 << 1
@@ -227,7 +227,7 @@ Example:
 </SyncML>
 ```
 
-<a href="" id="health-computerstate"></a>**Health/ComputerState**  
+<a href="" id="health-computerstate"></a>**Health/ComputerState**
 Provide the current state of the device.
 
 The data type is a integer.
@@ -243,28 +243,28 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**  
+<a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**
 Indicates whether the Windows Defender service is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**  
+<a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**
 Indicates whether real-time protection is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-nisenabled"></a>**Health/NisEnabled**  
+<a href="" id="health-nisenabled"></a>**Health/NisEnabled**
 Indicates whether network protection is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
+<a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
 A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default).
@@ -273,7 +273,7 @@ The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
+<a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**
 Indicates whether a Windows Defender full scan is overdue for the device.
 
 A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default).
@@ -282,96 +282,96 @@ The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**  
+<a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**
 Indicates whether the Windows Defender signature is outdated.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-rebootrequired"></a>**Health/RebootRequired**  
+<a href="" id="health-rebootrequired"></a>**Health/RebootRequired**
 Indicates whether a device reboot is needed.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**  
+<a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**
 Indicates whether a Windows Defender full scan is required.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-engineversion"></a>**Health/EngineVersion**  
+<a href="" id="health-engineversion"></a>**Health/EngineVersion**
 Version number of the current Windows Defender engine on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-signatureversion"></a>**Health/SignatureVersion**  
+<a href="" id="health-signatureversion"></a>**Health/SignatureVersion**
 Version number of the current Windows Defender signatures on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-defenderversion"></a>**Health/DefenderVersion**  
+<a href="" id="health-defenderversion"></a>**Health/DefenderVersion**
 Version number of Windows Defender on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscantime"></a>**Health/QuickScanTime**  
+<a href="" id="health-quickscantime"></a>**Health/QuickScanTime**
 Time of the last Windows Defender quick scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscantime"></a>**Health/FullScanTime**  
+<a href="" id="health-fullscantime"></a>**Health/FullScanTime**
 Time of the last Windows Defender full scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscansigversion"></a>**Health/QuickScanSigVersion**  
+<a href="" id="health-quickscansigversion"></a>**Health/QuickScanSigVersion**
 Signature version used for the last quick scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscansigversion"></a>**Health/FullScanSigVersion**  
+<a href="" id="health-fullscansigversion"></a>**Health/FullScanSigVersion**
 Signature version used for the last full scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**  
+<a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**
 Indicates whether the Windows Defender tamper protection feature is enabled.​
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-isvirtualmachine"></a>**Health/IsVirtualMachine**  
+<a href="" id="health-isvirtualmachine"></a>**Health/IsVirtualMachine**
 Indicates whether the device is a virtual machine.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="configuration"></a>**Configuration**  
+<a href="" id="configuration"></a>**Configuration**
 An interior node to group Windows Defender configuration information.
 
 Supported operation is Get.
 
-<a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
+<a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**
 Tamper protection helps protect important security features from unwanted changes and interference.  This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
 
 Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
@@ -380,14 +380,14 @@ The data type is a Signed blob.
 
 Supported operations are Add, Delete, Get, Replace.
 
-Intune tamper protection setting UX supports three states:  
+Intune tamper protection setting UX supports three states:
 - Not configured (default): Does not have any impact on the default state of the device.
 - Enabled: Enables the tamper protection feature.
 - Disabled: Turns off the tamper protection feature.
 
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
-<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
+<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**
 Enables or disables file hash computation feature.
 When this feature is enabled Windows defender will compute hashes for files it scans.
 
@@ -395,11 +395,11 @@ The data type is a integer.
 
 Supported operations are Add, Delete, Get, Replace.
 
-Valid values are:  
+Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
-<a href="" id="scan"></a>**Scan**  
+<a href="" id="scan"></a>**Scan**
 Node that can be used to start a Windows Defender scan on a device.
 
 Valid values are:
@@ -408,12 +408,12 @@ Valid values are:
 
 Supported operations are Get and Execute.
 
-<a href="" id="updatesignature"></a>**UpdateSignature**  
+<a href="" id="updatesignature"></a>**UpdateSignature**
 Node that can be used to perform signature updates for Windows Defender.
 
 Supported operations are Get and Execute.
 
-<a href="" id="offlinescan"></a>**OfflineScan**  
+<a href="" id="offlinescan"></a>**OfflineScan**
 Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 
 Supported operations are Get and Execute.

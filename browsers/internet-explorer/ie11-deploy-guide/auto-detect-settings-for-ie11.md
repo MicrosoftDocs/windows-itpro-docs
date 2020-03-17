@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Auto detect settings Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -6,7 +6,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Use the URL .INS file to use an auto-configured proxy server (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

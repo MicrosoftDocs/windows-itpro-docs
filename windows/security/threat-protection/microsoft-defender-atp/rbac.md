@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -26,7 +26,7 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
 
-Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
+Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bJ2a]
 
@@ -42,7 +42,7 @@ Microsoft Defender ATP RBAC is designed to support your tier- or role-based mode
 
 - **Control who can take specific action**
   - Create custom roles and control what Microsoft Defender ATP capabilities they can access with granularity.
- 
+
 - **Control who can see information on specific device group or groups**
   - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
 
@@ -54,20 +54,20 @@ Before using RBAC, it's important that you understand the roles that can grant p
 
 
 > [!WARNING]
-> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal.
 
-When you first log in to Microsoft Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to Microsoft Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD.
 
 Someone with a Microsoft Defender ATP Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
 
 > [!WARNING]
 > Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Microsoft Defender Security Center, therefore, having the right groups ready in Azure AD is important.
 >
-> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
+> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.**
 >
->Users with admin permissions are automatically assigned the default built-in Microsoft Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Microsoft Defender ATP global administrator role. 
+>Users with admin permissions are automatically assigned the default built-in Microsoft Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Microsoft Defender ATP global administrator role.
 >
-> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
+> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal.
 
 
 

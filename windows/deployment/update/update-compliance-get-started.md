@@ -1,8 +1,8 @@
 ---
 title: Get started with Update Compliance
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
-description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
+description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -74,7 +74,7 @@ Once you've added Update Compliance to a workspace in your Azure subscription, y
 The recommended way to configure devices to send data to Update Compliance is using the [Update Compliance Configuration Script](update-compliance-configuration-script.md). The script configures required policies via Group Policy. The script comes with two versions:
 
 - Pilot is more verbose and is intended to be use on an initial set of devices and for troubleshooting.
-- Deployment is intended to be deployed across the entire device population you want to monitor with Update Compliance.  
+- Deployment is intended to be deployed across the entire device population you want to monitor with Update Compliance.
 
 To download the script and learn what you need to configure and how to troubleshoot errors, see [Configuring Devices using the Update Compliance Configuration Script](update-compliance-configuration-script.md).
 

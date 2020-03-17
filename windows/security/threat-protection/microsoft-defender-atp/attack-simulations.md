@@ -13,12 +13,12 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ---
 
-# Experience Microsoft Defender ATP through simulated attacks 
+# Experience Microsoft Defender ATP through simulated attacks
 
 **Applies to:**
 
@@ -34,7 +34,7 @@ You might want to experience Microsoft Defender ATP before you onboard more than
 
 ## Before you begin
 
-To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md). 
+To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).
 
 Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
 
@@ -45,7 +45,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
 
    - **Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and device learning detection of malicious memory activity.
-    
+
    - **Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
@@ -56,8 +56,8 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
-> 
-> 
+>
+>
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 
