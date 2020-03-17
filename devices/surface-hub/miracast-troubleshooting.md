@@ -81,4 +81,4 @@ If there are multiple Wi-Fi networks or access points in the environment, some c
 
 ## Contact Support
 
-If you have questions or need help, you can [create a support request](https://support.microsoft.com/en-us/supportforbusiness/productselection).
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).

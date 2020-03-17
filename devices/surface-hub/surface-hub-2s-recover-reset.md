@@ -72,4 +72,4 @@ At the end of a session, Surface Hub 2S may occasionally encounter an error duri
 
 ## Contact Support
 
-If you have questions or need help, you can [create a support request](https://support.microsoft.com/en-us/supportforbusiness/productselection).
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).

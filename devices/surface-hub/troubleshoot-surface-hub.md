@@ -604,7 +604,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 
 ## Contact Support
 
-If you have questions or need help, you can [create a support request](https://support.microsoft.com/en-us/supportforbusiness/productselection).
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).
 
 
  
