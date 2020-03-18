@@ -24,7 +24,7 @@ ms.collection:
 
 ## What is shadow protection?
 
-When enabled, shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach protection. This is the case even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. Shadow protection is useful if your organization has not fully transitioned to Windows Defender Antivirus and if you are presently using a third-party antivirus solution. Shadow protection works behind the scenes by remediating malicious entities identified in post-breach protection that the existing third-party antivirus solution missed. 
+When enabled, shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach protection. This is the case even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. Shadow protection is useful if your organization has not fully transitioned to Windows Defender Antivirus and you are presently using a third-party antivirus solution. Shadow protection works behind the scenes by remediating malicious entities identified in post-breach protection that the existing third-party antivirus solution missed. 
 
 > [!NOTE]
 > Shadow protection is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection).
