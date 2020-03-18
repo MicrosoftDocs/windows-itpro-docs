@@ -22,64 +22,75 @@ appliesto:
 
 # Collect and use fallback diagnostic information from HoloLens devices
 
-Fallback diagnostic logs collect diagnostic data and store it on the HoloLens device. You can access that information from a desktop computer by using the Media Transfer Protocol (MTP). This diagnostic feature has been developed in collaboration with the Mobile Device Management (MDM) team.
-
 While device telemetry usually provides an initial understanding of a customer report, some issues require a broader and deeper understanding of the device state. When you investigate such issues, diagnostic logs that reside on the device are more useful than the basic device telemetry.
 
-> [!IMPORTANT]  
-> Device diagnostic logs contain PII information, such as information about what processes or applications that the user launched during typical operations. When multiple users share a HoloLens device, for example, when users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts, the diagnostic logs may contain PII information that pertains to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
-
-### Fallback diagnostics
-
-The fallback diagnostics process provides a way for the user to gather diagnostic information when no other methods are available. Such scenarios include the following:
+The fallback diagnostics process provides a way for you to gather diagnostic information when no other methods are available. Such scenarios include the following:
 
 - The network or network-based resources (such as Feedback Hub, MDM, and so forth) are not available.
 - The device is "stuck" or locked in a state where normal troubleshooting capabilities (such as the Settings app) are not available. Such scenarios include the Out-of-Box-Experience (OOBE), kiosk mode, or a locked or "hung" user interface.
 
-On the device, press the Power and Volume Down buttons at the same time and then release them. Wait for few seconds for the data collection to complete.
+> [!IMPORTANT]  
+> - On HoloLens 2 devices, you can use fallback diagnostics only under the following conditions:
+>   - During the Out-of-the-Box-Experience (OOBE) and when you select **Send Full Diagnostics Data**.
+>   - When the environment's Group Policy enforces the **System\AllowTelemetry** policy value of **Full**.
+> - On HoloLens (1st gen) devices, you can use fallback diagnostics on HoloLens version 17763.316 or a later version. This version is the version that the Windows Device Recovery Tool restores when it resets the device.  
 
-#### Prerequisites
+> [!IMPORTANT]  
+> Device diagnostic logs contain PII information, such as information about what processes or applications that the user launched during typical operations. When multiple users share a HoloLens device, for example, when users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts, the diagnostic logs may contain PII information that pertains to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
+
+## How to use fallback diagnostics
+
+Before you start the fallback diagnostics process, make sure of the following:
 
 - The device is connected to a computer by using a USB cable.
 - The device is powered on.
 - The Power and Volume buttons on the device are functioning correctly.
 
+To collect fallback diagnostic information, follow these steps:
 
-> [!IMPORTANT]  
-> - Fallback Diagnostics on HoloLens 2 is only enabled when user is either going through OOBE and selecting Send Full Diagnostics Data or System\AllowTelemetry policy value is set to Full.
-> - Available with on HoloLens (1st gen) builds on or after 17763.316. This is the same default build used by the Windows Device Recovery Tool.  
+1. On the device, press the Power and Volume Down buttons at the same time and then release them.
+1. Wait for few seconds while the device collects the data.
 
-#### Data storage and use
+## Data locations
 
-Because the user starts the data collection, the user implicitly consents to the storage of the diagnostic information. Only the user, or anyone that the user shares the data with, can access the data.
+The device stores the data locally, and you can access that information from the connected desktop computer at the following location:
 
-#### Where is the data kept?
+> This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents
 
-Assuming HoloLens is connected to your PC and you want to access the file using Windows Explorer, certain zip files (containing diagnostic logs) will exist at This PC\<HoloLens device name>\Internal Storage\Documents.
+For more information about the files that the fallback diagnostics process collects, see [What diagnostics files does the fallback diagnostics process collect?](#what-diagnostics-files-does-the-fallback-diagnostics-process-collect).
 
-This file is retained locally on device unless Customer explicitly deletes it from the folder where file is accessible.
+ |Data access and use |Data retention 
 
-#### Who can access the data?
+## Data access, use, and retention
 
-Only Customer who has access to the device unless the customer shares the information with someone else.
+Because you store the data yourself, only you have access to the data. If you choose to share the data with another user, you implicitly grant permission for that user to access or store the data.
+
+The data remains until you delete it.
 
 ## Frequently asked questions about fallback diagnostics on HoloLens
 
-### Does the device have to be enrolled with a MDM server?
+### Does the device have to be enrolled with an MDM server?
 
 No.
 
-### How can I use Fallback Diagnostics on HoloLens?
+### How can I use fallback diagnostics on HoloLens?
 
-If a user presses and releases Power + Volume down buttons on HoloLens, data will be collected (it takes few seconds) and zip file(s) will be created (See below).  
+Before you start the fallback diagnostics process, make sure of the following:
 
-Assuming HoloLens is connected to your PC and you want to access the files using Windows Explorer, the zip file(s) will exist at `This PC\<HoloLens device name>\Internal Storage\Documents`.
+- The device is connected to a computer by using a USB cable.
+- The device is powered on.
+- The Power and Volume buttons on the device are functioning correctly.
 
-### How would I know that log collection has completed?
+To collect fallback diagnostic information, follow these steps:
 
-Starting with HoloLens 2 there will be a file created named HololensDiagnostics.temp when log collection begins and it will be removed when it completes. There is no UX, so this is the minimum signal provided to indicate something is in progress.
+1. On the device, press the Power and Volume Down buttons at the same time and then release them.
+1. Wait for few seconds while the device collects the data.
 
-### What diagnostics files are collected as part of Fallback Diagnostics?
+### How would I know that data collection has completed?
+
+The fallback diagnostics process does not have a user interface. On HoloLens 2, the process creates a file that is named HololensDiagnostics.temp when it begins collecting data. When the process finishes, it removes the file.
+
+### What diagnostics files does the fallback diagnostics process collect?
 
 The fallback diagnostics process collects one or more .zip files, depending on the version of HoloLens. The following table lists each of the possible .zip files, and the applicable versions of HoloLens.
 
@@ -172,14 +183,15 @@ TPMDiagnostics.zip
 - CertUtil_tpminfo_Output.txt
 - TPM\*.etl
 
-## How do fallback diagnostic logs compare to other sources of diagnostic information?
+### How does the fallback diagnostic process compare to other sources of diagnostic information?
 
-There are four ways in which users or administrators can collect diagnostic information from HoloLens:
+In addition to fallback diagnostics, HoloLens users and administrators have three other methods to choose from to collect diagnostic information from HoloLens:
 
-- Feedback hub app. (user-driven)
-- Diagnostic Logs CSP (IT Admin/enterprise-driven)
-- Troubleshoot in Settings app. (user-driven)
-- Fallback Diagnostics. (user-driven)
+- Feedback Hub app
+- DiagnosticLog CSP
+- Settings app
+
+The following table compares each of these methods to fallback diagnostics. The table includes links to more detailed information that follows the table.
 
 |Method |Prerequisites |Data locations |Data access and use |Data retention |
 | --- | --- | --- | --- | --- |
@@ -188,19 +200,19 @@ There are four ways in which users or administrators can collect diagnostic info
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Administrator configures retention policy. |
 |[Settings app](#troubleshoot-by-using-the-settings-app) |Settings app |HoloLens device<br /><br />Connected computer (optional) |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data remains until the user deletes it. |
 
-### Feedback Hub
+#### Feedback Hub
 
 A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnostic information to Microsoft support. For details and complete instructions, see [Give us feedback](hololens-feedback.md).  
 
 > [!NOTE]  
 > **Commercial or enterprise customers:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
 
-#### Prerequisites
+**Prerequisites**
 
 - The device is connected to a network.
 - The Feedback Hub app is available on the user's desktop computer, and the user can upload files to the Microsoft cloud.
 
-#### Data storage and use
+**Data locations, access, and retention**
 
 By agreeing to the terms-of-use of Feedback Hub, the user explicitly consents to the storage and usage of the data (as defined by that agreement).
 
@@ -216,12 +228,12 @@ The Feedback Hub provides two places for the user to store diagnostic informatio
 
 In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
-#### Prerequisites
+**Prerequisites**
 
 - The device is connected to a network.
 - The device is enrolled in an MDM environment that supports the DiagnosticLog CSP.
 
-#### Data storage and use
+**Data locations, access, and retention**
 
 Because the device is part of the managed environment, the user implicitly consents to administrative access to diagnostic information.
 
@@ -231,7 +243,7 @@ The IT administrator uses the DiagnosticLog CSP to configure the data storage, r
 - The retention period for the diagnostic information.
 - Permissions that control access to the diagnostic information.
 
-### Troubleshoot by using the Settings app
+#### Troubleshoot by using the Settings app
 
 A HoloLens user can use the Settings app on the device to troubleshoot problems and collect diagnostic information. To do this, follow these steps:
 
@@ -240,11 +252,11 @@ A HoloLens user can use the Settings app on the device to troubleshoot problems 
 1. Reproduce the issue.
 1. After you reproduce the issue, return to Settings and select **Stop**.
 
-#### Prerequisites
+**Prerequisites**
 
 - The Settings app is installed on the device and is available to the user.
 
-#### Data storage and use
+**Data locations, access, and retention**
 
 Because the user starts the data collection, the user implicitly consents to the storage of the diagnostic information. Only the user, or anyone that the user shares the data with, can access the data.
 
