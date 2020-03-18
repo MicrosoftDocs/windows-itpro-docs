@@ -25,7 +25,7 @@ This article describes the network connections that Windows 10 components make t
 
 Note: The 1903 settings in the Windows Restricted Traffic Limited Functionality Baseline package are applicable to 1909 Windows Enterprise devices. 
 
-Note: If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied to in order re-restrict the device. Also, egress traffic may occur during the period leading up to the re-applications of the Restricted Traffic Limited Funcationality Baseline settings.  
+Note: If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied to in order re-restrict the device. Also, egress traffic may occur during the period leading up to the re-applications of the Restricted Traffic Limited Functionality Baseline settings.  
 
 >[!IMPORTANT]
 >- The Allowed Traffic endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic)
