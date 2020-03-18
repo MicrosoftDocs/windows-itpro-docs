@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 01/04/2020
+ms.date: 03/17/2020
 ms.reviewer:
 ---
 
@@ -1321,9 +1321,9 @@ The following fields are available:
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise Microsoft Endpoint Configuration Manager environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise System Center Configuration Manager (SCCM) environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The Microsoft Endpoint Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier.
+- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier.
 
 
 ### Census.Firmware
@@ -2477,44 +2477,6 @@ The following fields are available:
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
-### Microsoft.Windows.Inventory.Core.InventoryDevicePnpAdd
-
-This event represents the basic metadata about a plug and play (PNP) device and its associated driver.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **Class**  The device setup class of the driver loaded for the device.
-- **ClassGuid**  The device class unique identifier of the driver package loaded on the device.
-- **COMPID**  The list of “Compatible IDs” for this device. See [COMPID](#compid).
-- **ContainerId**  The system-supplied unique identifier that specifies which group(s) the device(s) installed on the parent (main) device belong to.
-- **Description**  The description of the device.
-- **DeviceState**  Identifies the current state of the parent (main) device.
-- **DriverId**  The unique identifier for the installed driver.
-- **DriverName**  The name of the driver image file.
-- **DriverPackageStrongName**  The immediate parent directory name in the Directory field of InventoryDriverPackage.
-- **DriverVerDate**  The date of the driver loaded for the device
-- **DriverVerVersion**  The version of the driver loaded for the device
-- **Enumerator**  Identifies the bus that enumerated the device.
-- **HWID**  A list of hardware IDs for the device. See [HWID](#hwid).
-- **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
-- **InventoryVersion**  The version number of the inventory process generating the events.
-- **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
-- **LowerFilters**  The identifiers of the Lower filters installed for the device.
-- **Manufacturer**  The manufacturer of the device.
-- **MatchingID**  The Hardware ID or Compatible ID that Windows uses to install a device instance.
-- **Model**  Identifies the model of the device.
-- **ParentId**  The Device Instance ID of the parent of the device.
-- **ProblemCode**  The error code currently returned by the device, if applicable.
-- **Provider**  Identifies the device provider.
-- **Service**  The name of the device service.
-- **STACKID**  The list of hardware IDs for the stack. See [STACKID](#stackid).
-- **UpperClassFilters**  The identifiers of the Upper Class filters installed for the device.
-- **UpperFilters**  The identifiers of the Upper filters installed for the device.
-
-
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpRemove
 
 This event indicates that the InventoryDevicePnpRemove object is no longer present.
@@ -3077,6 +3039,56 @@ The following fields are available:
 - **resetSettingsResult**  The return code of the action to correct the known issue.
 
 
+## Quality Update Assistant events
+
+### Microsoft.Windows.QualityUpdateAssistant.Applicability
+
+This event sends basic info on whether the device should be updated to the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Applicability check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.DeviceReadinessCheck
+
+This event sends basic info on whether the device is ready to download the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Device readiness check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Download
+
+This event sends basic info when download of the latest cumulative update begins.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Download of latest cumulative update payload.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Install
+
+This event sends basic info on the result of the installation of the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Install of latest cumulative update payload.
+
+
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
@@ -3129,7 +3141,7 @@ The following fields are available:
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by Microsoft Endpoint Configuration Manager.
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
@@ -4528,7 +4540,7 @@ The following fields are available:
 - **DeviceIsMdmManaged**  This device is MDM managed.
 - **IsNetworkAvailable**  If the device network is not available.
 - **IsNetworkMetered**  If network is metered.
-- **IsSccmManaged**  This device is managed by Microsoft Endpoint Configuration Manager.
+- **IsSccmManaged**  This device is SCCM managed.
 - **NewlyInstalledOs**  OS is newly installed quiet period.
 - **PausedByPolicy**  Updates are paused by policy.
 - **RecoveredFromRS3**  Previously recovered from RS3.
@@ -5139,7 +5151,7 @@ The following fields are available:
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.

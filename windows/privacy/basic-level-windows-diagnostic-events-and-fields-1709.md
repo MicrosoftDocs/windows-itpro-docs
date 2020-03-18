@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 01/04/2020
+ms.date: 03/18/2020
 ms.reviewer:
 ---
 
@@ -2502,7 +2502,7 @@ The following fields are available:
 - **Enumerator**  Identifies the bus that enumerated the device.
 - **HWID**  A list of hardware IDs for the device.
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
+- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -3225,6 +3225,56 @@ The following fields are available:
 - **resetSettingsResult**  The return code of the action to correct the known issue.
 
 
+## Quality Update Assistant events
+
+### Microsoft.Windows.QualityUpdateAssistant.Applicability
+
+This event sends basic info on whether the device should be updated to the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Applicability check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.DeviceReadinessCheck
+
+This event sends basic info on whether the device is ready to download the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Device readiness check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Download
+
+This event sends basic info when download of the latest cumulative update begins.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Download of latest cumulative update payload.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Install
+
+This event sends basic info on the result of the installation of the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Install of latest cumulative update payload.
+
+
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
@@ -3276,7 +3326,7 @@ The following fields are available:
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by Microsoft Endpoint Configuration Manager.
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
