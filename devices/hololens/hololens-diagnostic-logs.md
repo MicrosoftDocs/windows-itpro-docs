@@ -109,27 +109,28 @@ The diagnostic information remains in these locations until the user deletes it.
 
 ### Fallback diagnostics
 
+The fallback diagnostics process provides a way for the user to gather diagnostic information when no other methods are available. Such scenarios include the following:
+
+- The network or network-based resources (such as Feedback Hub, MDM, and so forth) are not available.
+- The device is "stuck" or locked in a state where normal troubleshooting capabilities (such as the Settings app) are not available. Such scenarios include the Out-of-Box-Experience (OOBE), kiosk mode, or a locked or "hung" user interface.
+
+On the device, press the Power and Volume Down buttons at the same time and then release them. Wait for few seconds for the data collection to complete.
+
 #### Prerequisites
+
+- The device is connected to a computer by using a USB cable.
+- The device is powered on.
+- The Power and Volume buttons on the device are functioning correctly.
+
 
 > [!IMPORTANT]  
 > - Fallback Diagnostics on HoloLens 2 is only enabled when user is either going through OOBE and selecting Send Full Diagnostics Data or System\AllowTelemetry policy value is set to Full.
 > - Available with on HoloLens (1st gen) builds on or after 17763.316. This is the same default build used by the Windows Device Recovery Tool.  
 
-- HoloLens is connected to a PC via USB cable and powered on.
-- Power and Volume buttons are functionally working together on HoloLens.
+#### Data storage and use
 
-#### When and how to trigger?
+Because the user starts the data collection, the user implicitly consents to the storage of the diagnostic information. Only the user, or anyone that the user shares the data with, can access the data.
 
-**When**
-
-There are certain legitimate scenarios where user does not have access to either feedback hub, network, MDM server, UTC or stuck at UX, e.g. kiosk mode, OOBE, lock screen, autopilot, black screen, etc. This mechanism acts a "fallback" when there is no other solution to get diagnostic logs.
-
-**How**
-
-- Press and release POWER + VOLUME DOWN button on HoloLens and wait for few seconds for data collection to complete.
-
-#### User consent
-Implicit because user is triggering specific button combination to collect diagnostic information.
 
 #### Where is the data kept?
 
