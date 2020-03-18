@@ -27,6 +27,9 @@ ms.date: 04/24/2018
 
 The **Alerts queue** shows a list of alerts that were flagged from machines in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view, with the most recent alerts showing at the top of the list, helping you see the most recent alerts first.
 
+>[!NOTE]
+>The alerts queue is significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a machine that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
+
 There are several options you can choose from to customize the alerts queue view. 
 
 On the top navigation you can:
