@@ -23,7 +23,7 @@ ms.date: 04/24/2019
 
 - Windows 10
 
-This topic for IT professional explains how to plan your BitLocker deployment.
+This topic for IT professionals explains how to plan your BitLocker deployment.
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following topics will help you collect information that you can use to frame your decision-making process about deploying and managing BitLocker systems.
 
