@@ -70,6 +70,29 @@ Microsoft Defender ATP's Threat & Vulnerability Management allows security admin
 - Alternate mitigations. Threat & Vulnerability Management provides insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
 - Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
 
+## Before you begin
+
+Ensure that your machines:
+
+- Are onboarded to Microsoft Defender Advanced Threat Protection
+- Run with Windows 10 1709 (Fall Creators Update) or later
+
+>[!NOTE]
+>Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
+
+- Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
+
+> Release | Security update KB number and link
+> :---|:---
+> RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+> RS4 customers| [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+
+- Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
+- Have at least one security recommendation that can be viewed in the machine page
+- Are tagged or marked as co-managed
+
 ## Related topics
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
