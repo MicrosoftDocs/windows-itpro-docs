@@ -53,7 +53,6 @@ On the device, press the Power and Volume Down buttons at the same time and then
 
 Because the user starts the data collection, the user implicitly consents to the storage of the diagnostic information. Only the user, or anyone that the user shares the data with, can access the data.
 
-
 #### Where is the data kept?
 
 Assuming HoloLens is connected to your PC and you want to access the file using Windows Explorer, certain zip files (containing diagnostic logs) will exist at This PC\<HoloLens device name>\Internal Storage\Documents.
@@ -184,7 +183,10 @@ There are four ways in which users or administrators can collect diagnostic info
 
 |Method |Prerequisites |Data locations |Data access and use |Data retention |
 | --- | --- | --- | --- | --- |
+|Fallback diagnostics |Device configuration:<ul><li>Powered on and connected to computer</li><li>Power and Volume buttons functioning</li></ul> |HoloLens device<br /><br />Connected computer |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data remains until the user deletes it. |
 |[Feedback Hub](#feedback-hub) |Network and internet connection<br /><br />Feedback Hub app<br /><br />Permission to upload files to the Microsoft cloud |Microsoft cloud<br /><br />HoloLens device (optional) |User requests assistance, agrees to the terms of use, and uploads the data<br /><br />Microsoft employees view the data, as consistent with the terms of use |Data in the cloud is retained for the period defined by Next Generation Privacy (NGP), after which it is deleted automatically<br /><br />Data on the device can be deleted at any time by a user who has **Device owner** or **Admin** permissions. |
+|[DiagnosticLog CSP](#diagnosticlog-csp) |Network connection<br /><br />MDM environment that supports the DiagnosticLog CSP |Administrator configures storage locations |In the managed environment, the user implicitly consents to administrator access to the data.<br /><br />Administrator configures access roles and permissions. | Administrator configures retention policy. |
+|[Settings app](#troubleshoot-by-using-the-settings-app) |Settings app |HoloLens device<br /><br />Connected computer (optional) |The user stores the data, and only the user accesses the data (unless the user specifically shares the data with another user). |The data remains until the user deletes it. |
 
 ### Feedback Hub
 
@@ -254,5 +256,3 @@ The diagnostic information is stored on the device. If the device is connected t
 > In this file path and name, \<*HoloLens device name*> represents the name of the HoloLens device. \<*ddmmyyhhmmss*> represents the date and time that the file was created.
 
 The diagnostic information remains in these locations until the user deletes it.
-
-
