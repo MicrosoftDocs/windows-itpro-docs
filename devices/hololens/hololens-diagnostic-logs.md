@@ -29,30 +29,26 @@ While device telemetry usually provides an initial understanding of a customer r
 > [!IMPORTANT]  
 > Device diagnostic logs contain PII information, such as information about what processes or applications that the user launched during typical operations. When multiple users share a HoloLens device, for example, when users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts, the diagnostic logs may contain PII information that pertains to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
 
-***Q***: Clarify "customer" vs "user"
-
 ## Comparing fallback diagnostic logs to other sources of diagnostic information
 
-There are four ways that diagnostic information can be collected from HoloLens:
+There are four ways in which users or administrators can collect diagnostic information from HoloLens:
 
-- [Feedback hub app](hololens-feedback.md). (user-driven)
+- Feedback hub app. (user-driven)
 - Diagnostic Logs CSP (IT Admin/enterprise-driven)
 - Troubleshoot in Settings app. (user-driven)
 - Fallback Diagnostics. (user-driven)
 
-### Feedback hub
+### Feedback Hub
 
 A HoloLens user can use the Microsoft Feedback Hub desktop app to send diagnostic information to Microsoft support. For details and complete instructions, see [Give us feedback](hololens-feedback.md).  
 
 > [!NOTE]  
-> **Commercial customers:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
+> **Commercial or enterprise customers:** If you use the Feedback Hub app to report a problem that relates to MDM, provisioning, or any other device management aspect, change the app category to **Enterprise Management** > **Device category**.
 
 #### Prerequisites
 
 - The device is connected to a network.
 - The Feedback Hub app is available on the user's desktop computer, and the user can upload files to the Microsoft cloud.
-
-Explicit. The user agrees to the terms-of-use of Feedback Hub.
 
 #### Data storage and use
 
@@ -66,68 +62,52 @@ The Feedback Hub provides two places for the user to store diagnostic informatio
 
 - **The HoloLens device**. While filing a report in Feedback Hub, the user can select **Save a local copy of diagnostics and attachments created when giving feedback**. If the user selects this option, the Feedback Hub stores a copy of the diagnostic information on the HoloLens device. This information remains accessible to the user (or anyone that uses that account to sign in to HoloLens). To delete this information, a user must have **Device owner** or **Admin** permissions on the device. A user who has the appropriate permissions can sign in to Feedback Hub, select **Settings** > **View diagnostics logs**, and delete the information.
 
-### Diagnostic Logs CSP
+### DiagnosticLog CSP
+
+In a Mobile Device Management (MDM) environment, the IT administrator can use the the [DiagnosticLog configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) to configure diagnostic settings on enrolled HoloLens devices. The IT administrator can configure these settings to collect logs from enrolled devices.
 
 #### Prerequisites
 
-- Device is connected to network.
-- Device is enrolled into MDM environment that supports Diagnostic Logs CSP.
+- The device is connected to a network.
+- The device is enrolled in an MDM environment that supports the DiagnosticLog CSP.
 
-#### When and how to trigger?
+#### Data storage and use
 
-**When**
+Because the device is part of the managed environment, the user implicitly consents to administrative access to diagnostic information.
 
-- IT admin wants to remotely collect logs for investigating an issue.
+The IT administrator uses the DiagnosticLog CSP to configure the data storage, retention, and access policies, including the policies that govern the following:
 
-**How**
+- The cloud infrastructure that stores the diagnostic information.
+- The retention period for the diagnostic information.
+- Permissions that control access to the diagnostic information.
 
-- IT admin invokes Diagnostic Logs CSP remotely from MDM administrative portal.
+### Troubleshoot by using the Settings app
 
-#### User consent
+A HoloLens user can use the Settings app on the device to troubleshoot problems and collect diagnostic information. To do this, follow these steps:
 
-Implicit because IT admin has access to device to collect / share diagnostic information.
-
-#### Where is the data kept?
-
-Data is uploaded to cloud infrastructure specified by IT admin of the environment in which HoloLens is being used. It is retained based on the policies specified by IT Admin.
-
-#### Who can access the data?
-
-IT admin and users in tenant roles that are granted access to logs.
-
-### Troubleshoot in Settings app
+1. Open the Settings app and select **Update & Security** > **Troubleshoot** page.
+1. Select the appropriate area, and then select **Start**.
+1. Reproduce the issue.
+1. After you reproduce the issue, return to Settings and select **Stop**.
 
 #### Prerequisites
 
-Settings app is accessible to the customer.
+- The Settings app is installed on the device and is available to the user.
 
-#### When and how to trigger?
+#### Data storage and use
 
-**When**
+Because the user starts the data collection, the user implicitly consents to the storage of the diagnostic information. Only the user, or anyone that the user shares the data with, can access the data.
 
-- Customer can reproduce an issue and detailed diagnostic logs are required for investigation
+The diagnostic information is stored on the device. If the device is connected to the user's computer, the information also resides on the computer, in the following file:
 
-**How**
+> This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents\\Trace\<*ddmmyyhhmmss*>.etl
 
-1. Go to Settings App and navigate to **Update & Security** > **Troubleshoot** page.
-1. Select appropriate area, click on Start button so it can begin collecting logs.
-1. Reproduce the issue, when done, come back to Settings app and click on Stop button.
+> [!NOTE]  
+> In this file path and name, \<*HoloLens device name*> represents the name of the HoloLens device. \<*ddmmyyhhmmss*> represents the date and time that the file was created.
 
-#### User consent
+The diagnostic information remains in these locations until the user deletes it.
 
-Implicit because user is triggering diagnostic log collection.
-
-#### Where is the data kept?
-
-Assuming HoloLens is connected to your PC and you want to access the file using Windows Explorer, a file named Trace\<ddmmyyhhmmss>.etl will exist at `This PC\<HoloLens device name>\Internal Storage\Documents`.
-
-This file is retained locally on device unless Customer explicitly deletes it from the folder where file is accessible.
-
-#### Who can access the data?
-
-Only Customer who has access to the device unless the customer shares the information with someone else.
-
-### Fallback Diagnostics
+### Fallback diagnostics
 
 #### Prerequisites
 
@@ -163,7 +143,7 @@ Only Customer who has access to the device unless the customer shares the inform
 
 ## Frequently asked questions about fallback diagnostics on HoloLens
 
-### Does it require device to be enrolled with a MDM server?
+### Does the device have to be enrolled with a MDM server?
 
 No.
 
@@ -183,13 +163,13 @@ The fallback diagnostics process collects one or more .zip files, depending on t
 
 |File |Description |HoloLens (1st gen) |HoloLens 2 10.0.18362+ |HoloLens 2 10.0.19041+ |
 | --- | --- | --- | --- | --- |
-|HololensDiagnostics.zip |Contains&nbsp;ETL&nbsp;files&nbsp;for tracing sessions running on Hololens and diagnostic information specific to Hololens. |Yes |Yes | |
-|DeviceEnrollmentDiagnostics.zip |Contains MDM, device enrollment, CSPs / policies related information. |No |Yes |Yes |
-|AutoPilotDiagnostics.zip |Contains autopilot related and licensing related information.|No |No |Yes |
-|TPMDiagnostics.zip | |No |No |Yes |
+|HololensDiagnostics.zip |Contains&nbsp;ETL&nbsp;files&nbsp;for tracing sessions running on Hololens and diagnostic information specific to Hololens. |✔️ |✔️ |✔️ |
+|DeviceEnrollmentDiagnostics.zip |Contains MDM, device enrollment, CSPs / policies related information. | |✔️ |✔️ |
+|AutoPilotDiagnostics.zip |Contains autopilot related and licensing related information.| | |✔️ |
+|TPMDiagnostics.zip | | | |✔️ |
 
 > [!NOTE]  
-> Starting 5/2/2019 EventLog* ETL files are only collected when signed in user is "device owner". Since these ETLs may contain PII data, they are only accessible to device owners. This matches the behavior on desktop where administrators have access to event logs whiles other users do not.
+> Starting May 2, 2019, the fallback diagnostics process collects EventLog* .etl files only when the signed-in user is the Device owner. This is because these files may contain PII data. Such data is accessible to only device owners. This behavior matches the behavior of Windows desktop computers, where administrators have access to event log file but other users do not.
 
 #### Sample diagnostic content for HoloLens (1st gen)
 
