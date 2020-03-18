@@ -26,6 +26,9 @@ ms.topic: article
 <table>
 <th>Issue<th>More information
 
+<tr><td>Windows Autopilot user-driven Hybrid Azure AD deployments do not grant users Administrator rights even when specified in the Windows Autopilot profile.</td>
+<td>This will occur when there is another user on the device that already has Administrator rights.  For example, a PowerShell script or policy could create an additional local account that is a member of the Administrators group.  To ensure this works properly, do not create an additional account until after the Windows Autopilot process has completed.</tr>
+
 <tr><td>Windows Autopilot device provisioning can fail with TPM attestation errors or ESP timeouts on devices where the real-time clock is off by a significant amount of time (e.g. several minutes or more).</td>
 <td>To fix this issue: <ol><li>Boot the device to the start of the out-of-box experience (OOBE).
 <li>Establish a network connection (wired or wireless).
