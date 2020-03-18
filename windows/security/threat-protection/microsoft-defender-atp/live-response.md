@@ -27,6 +27,8 @@ Live response is a capability that gives you instantaneous access to a machine u
 
 Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUW]
+
 With live response, analysts will have the ability to:
 - Run basic and advanced commands to do investigative work 
 - Download files such as malware samples and outcomes of PowerShell scripts

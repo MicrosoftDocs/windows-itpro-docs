@@ -29,6 +29,9 @@ ms.topic: article
 
 Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
+
+
 ## In this section
 
 Topic | Description

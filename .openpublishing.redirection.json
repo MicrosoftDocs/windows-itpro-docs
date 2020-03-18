@@ -15582,6 +15582,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/licensing.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/release-information/status-windows-10-1703.yml",
 "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
 "redirect_document_id": true
