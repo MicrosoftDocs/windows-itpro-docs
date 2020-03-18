@@ -69,3 +69,7 @@ At the end of a session, Surface Hub 2S may occasionally encounter an error duri
 
 > [!NOTE]
 > To enter recovery mode, unplug the power cord and plug it in again three times.
+
+## Contact Support
+
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).
