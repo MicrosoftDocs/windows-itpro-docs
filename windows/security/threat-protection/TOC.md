@@ -31,7 +31,7 @@
 ### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 ### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 ### [Configuration score](microsoft-defender-atp/configuration-score.md)
-### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 ### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 ### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
