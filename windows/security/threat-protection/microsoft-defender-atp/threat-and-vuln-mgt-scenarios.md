@@ -50,51 +50,6 @@ Ensure that your machines:
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
-## Reduce your threat and vulnerability exposure
-
-Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
-
-The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
-
-- Weaknesses, such as vulnerabilities discovered on the device
-- External and internal threats such as public exploit code and security alerts
-- Likelihood of the device to get breached given its current security posture
-- Value of the device to the organization given its role and content
-
-The exposure score is broken down into the following levels:
-
-- 0–29: low exposure score
-- 30–69: medium exposure score
-- 70–100: high exposure score
-
-You can remediate the issues based on prioritized security recommendations to reduce the exposure score. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
-
-To lower down your threat and vulnerability exposure:
-
-1. Review the **Top security recommendations** from your **Threat & Vulnerability Management dashboard**, and select the first item on the list. The **Security recommendation** page opens.  
-
-   There are two types of recommendations:
-
-   - *Security update* which refers to recommendations that require a package installation
-   - *Configuration change* which refers to recommendations that require a registry or GPO modification
-
-   Always prioritize recommendations that are associated with ongoing threats:
-
-   - ![Threat insight](images/tvm_bug_icon.png) Threat insight icon
-   - ![Possible active alert](images/tvm_alert_icon.png) Active alert icon
-  
-   >![Top security recommendations](images/tvm_security_recommendations.png)
-
-2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. When you select a recommendation from the list, a fly-out panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
-
-3. Click **Installed machines** and select the affected machine from the list to open the flyout panel with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
-
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![Details in machine page](images/tvm_machine_page_details.png)
-
-5. Allow a few hours for the changes to propagate in the system.
-
-6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate is removed from the security recommendation list, and the exposure score decreases.
-
 ## Improve your security configuration
 
 >[!NOTE]
@@ -103,8 +58,6 @@ To lower down your threat and vulnerability exposure:
 You can improve your security configuration when you remediate issues from the security recommendations list. As you do so, your configuration score improves, which means your organization becomes more resilient against cybersecurity threats and vulnerabilities.
 
 1. From the Configuration score widget, select **Security controls**. The **Security recommendations** page opens and shows the list of issues related to security controls.
-
-   >![Configuration score widget](images/tvm_config_score.png)
 
 2. Select the first item on the list. The flyout panel will open with a description of the security controls issue, a short description of the potential risk, insights, configuration ID, exposed machines, and business impact. Click **Remediation options**.
 
