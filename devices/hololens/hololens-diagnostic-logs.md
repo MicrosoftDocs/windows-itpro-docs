@@ -184,7 +184,7 @@ There are four ways in which users or administrators can collect diagnostic info
 
 |Method |Prerequisites |Data locations |Data access and use |Data retention |
 | --- | --- | --- | --- | --- |
-|[Feedback Hub](#feedback-hub) |<ul><li>Network and internet connection</li><li>Feedback Hub app</li><li>Permission to upload files to the Microsoft cloud</li><ul> |<ul><li>Microsoft cloud</li><li>HoloLens device (optional)</li></ul> |<ul><li>User requests assistance, agrees to the terms of use, and uploads the data</li><li>Microsoft employees view the data, as consistent with the terms of use</li></ul> |<ul><li>Data in the cloud is retained for the period defined by  Next Generation Privacy (NGP), after which it is deleted automatically</li><li>Data on the device can be deleted at any time by a user who has **Device owner** or **Admin** permissions. |
+|[Feedback Hub](#feedback-hub) |Network and internet connection<br /><br />Feedback Hub app<br /><br />Permission to upload files to the Microsoft cloud |Microsoft cloud<br /><br />HoloLens device (optional) |User requests assistance, agrees to the terms of use, and uploads the data<br /><br />Microsoft employees view the data, as consistent with the terms of use |Data in the cloud is retained for the period defined by Next Generation Privacy (NGP), after which it is deleted automatically<br /><br />Data on the device can be deleted at any time by a user who has **Device owner** or **Admin** permissions. |
 
 ### Feedback Hub
 
