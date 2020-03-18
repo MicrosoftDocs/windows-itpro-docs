@@ -22,7 +22,7 @@ appliesto:
 
 # Collect and use fallback diagnostic information from HoloLens devices
 
-While device telemetry usually provides an initial understanding of a customer report, some issues require a broader and deeper understanding of the device state. When you investigate such issues, diagnostic logs that reside on the device are more useful than the basic device telemetry.
+While device telemetry usually provides an initial understanding of a problem report, some issues require a broader and deeper understanding of the device state. When you investigate such issues, diagnostic logs that reside on the device are more useful than the basic device telemetry.
 
 The fallback diagnostics process provides a way for you to gather diagnostic information when no other methods are available. Such scenarios include the following:
 
@@ -59,8 +59,6 @@ The device stores the data locally, and you can access that information from the
 
 For more information about the files that the fallback diagnostics process collects, see [What diagnostics files does the fallback diagnostics process collect?](#what-diagnostics-files-does-the-fallback-diagnostics-process-collect).
 
- |Data access and use |Data retention 
-
 ## Data access, use, and retention
 
 Because you store the data yourself, only you have access to the data. If you choose to share the data with another user, you implicitly grant permission for that user to access or store the data.
@@ -96,17 +94,17 @@ The fallback diagnostics process collects one or more .zip files, depending on t
 
 |File |Contents |HoloLens (1st gen) |HoloLens 2 10.0.18362+ |HoloLens 2 10.0.19041+ |
 | --- | --- | --- | --- | --- |
-|HololensDiagnostics.zip |Files&nbsp;for tracing sessions that ran on the device.<br /><br />Diagnostic information that's specific to Hololens. |✔️ |✔️ |✔️ |
+|HololensDiagnostics.zip |Files&nbsp;for&nbsp;tracing sessions that ran on the device.<br /><br />Diagnostic information that's specific to Hololens. |✔️ |✔️ |✔️ |
 |DeviceEnrollmentDiagnostics.zip |Information that's related to MDM, device enrollment, CSPs, and policies. | |✔️ |✔️ |
 |AutoPilotDiagnostics.zip |Information that's related to autopilot and licensing.| | |✔️ |
 |TPMDiagnostics.zip |Information that's related to the trusted platform module (TPM) on the device | | |✔️ |
 
 > [!NOTE]  
-> Starting May 2, 2019, the fallback diagnostics process collects EventLog* .etl files only when the signed-in user is the Device owner. This is because these files may contain PII data. Such data is accessible to only device owners. This behavior matches the behavior of Windows desktop computers, where administrators have access to event log file but other users do not.
+> Starting May 2, 2019, the fallback diagnostics process collects EventLog*.etl files only when the signed-in user is the Device owner. This is because these files may contain PII data. Such data is accessible to only device owners. This behavior matches the behavior of Windows desktop computers, where administrators have access to event log file but other users do not.
 
 #### Sample diagnostic content for HoloLens (1st gen)
 
-HololensDiagnostics.zip
+HololensDiagnostics.zip contains files such as the following:
 
 - AuthLogon.etl
 - EventLog-HupRe.etl.001
@@ -118,7 +116,7 @@ HololensDiagnostics.zip
 
 #### Sample diagnostic content for HoloLens 2 10.0.18362+
 
-HololensDiagnostics.zip
+HololensDiagnostics.zip contains files such as the following:
 
 - EventLog-Application.etl.001*
 - EventLog-System.etl.001*
@@ -133,7 +131,7 @@ HololensDiagnostics.zip
 - RadioMgr.etl
 - WiFiDriverIHVSession.etl
 
-DeviceEnrollmentDiagnostics.zip
+DeviceEnrollmentDiagnostics.zip contains files such as the following:
 
 - MDMDiagHtmlReport.html
 - MdmDiagLogMetadata.json
@@ -143,7 +141,7 @@ DeviceEnrollmentDiagnostics.zip
 
 #### Sample diagnostic content for HoloLens 2 10.0.19041+
 
-HololensDiagnostics.zip
+HololensDiagnostics.zip contains files such as the following:
 
 - EventLog-Application.etl.001*
 - EventLog-System.etl.001*
@@ -158,9 +156,9 @@ HololensDiagnostics.zip
 - RadioMgr.etl
 - WiFiDriverIHVSession.etl
 - DisplayDiagnosticData.json
-- HUP Dumps
+- HUP dumps
 
-DeviceEnrollmentDiagnostics.zip
+DeviceEnrollmentDiagnostics.zip contains files such as the following:
 
 - MDMDiagHtmlReport.html
 - MdmDiagLogMetadata.json
@@ -168,7 +166,7 @@ DeviceEnrollmentDiagnostics.zip
 - MdmDiagReport_RegistryDump.reg
 - MdmLogCollectorFootPrint.txt
 
-AutoPilotDiagnostics.zip
+AutoPilotDiagnostics.zip contains files such as the following:
 
 - DeviceHash_HoloLens-U5603.csv
 - LicensingDiag.cab
@@ -177,7 +175,7 @@ AutoPilotDiagnostics.zip
 - DiagnosticLogCSP_Collector_DeviceEnrollment_\*.etl
 - DiagnosticLogCSP_Collector_Autopilot_*.etl
 
-TPMDiagnostics.zip
+TPMDiagnostics.zip contains files such as the following:
 
 - CertReq_enrollaik_Output.txt
 - CertUtil_tpminfo_Output.txt
