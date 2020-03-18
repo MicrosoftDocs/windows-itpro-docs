@@ -73,39 +73,39 @@ below to onboard systems with Configuration Manager.
 
 1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-device-collections.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-device-collections.png)
 
 2. Right Click **Device Collection** and select **Create Device Collection**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-device-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-device-collection.png)
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-limiting-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-limiting-collection.png)
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-query-rule.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-query-rule.png)
 
 5.  Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-direct-membership.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-direct-membership.png)
 
 6. Select **Criteria** and then choose the star icon.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-criteria.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-criteria.png)
 
 7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-simple-value.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-simple-value.png)
 
 8. Select **Next** and **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-membership-rules.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-membership-rules.png)
 
 9. Select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-confirm.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-confirm.png)
 
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
@@ -123,7 +123,7 @@ Manager and deploy that policy to Windows 10 devices.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 
-3.	Select **Download package**.
+3.    Select **Download package**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
@@ -132,11 +132,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-policy.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-policy.png)
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-policy-name.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-policy-name.png)
 
 8. Click **Browse**.
 
