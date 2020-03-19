@@ -24,8 +24,8 @@ manager: dansimp
 
 ## Overview
 
-Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using Microsoft Defender ATP.
-- When endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, Windows Defender Antivirus automatically goes into disabled mode. 
+Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
+- When endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, Windows Defender Antivirus automatically goes into disabled mode. 
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Windows Defender Antivirus automatically goes into passive mode. (Real time protection and and threats are not remediated by Windows Defender Antivirus.) 
 - If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [shadow protection (currently in private preview)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/shadow-protection), then Windows Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
 
