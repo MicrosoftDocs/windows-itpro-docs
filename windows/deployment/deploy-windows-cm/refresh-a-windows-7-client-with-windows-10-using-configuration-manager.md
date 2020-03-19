@@ -21,9 +21,9 @@ ms.topic: article
 
 - Windows 10
 
-This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft Endpoint Configuration Manager and Microsoft Deployment Toolkit (MDT). When refreshing a computer to a later version, it appears as an upgrade to the end user, but technically it is not an in-place upgrade. A computer refresh involves storing user data and settings from the old installation and then restoring this data at the end of the installation. Also see the MDT refesh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
+This topic will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh is not the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refesh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
 
-A computer refresh with Microsoft Endpoint Configuration Manager works the same as it does with MDT Lite Touch installation. Configuration Manager also uses the User State Migration Tool (USMT) from the Windows Assessment and Deployment Kit (Windows ADK) 10 in the background. A computer refresh with Configuration Manager involves the following steps:
+A computer refresh with Configuration Manager works the same as it does with MDT Lite Touch installation. Configuration Manager also uses the User State Migration Tool (USMT) from the Windows Assessment and Deployment Kit (Windows ADK) 10 in the background. A computer refresh with Configuration Manager has the following steps:
 
 1.  Data and settings are backed up locally in a backup folder.
 2.  The partition is wiped, except for the backup folder.
@@ -31,11 +31,13 @@ A computer refresh with Microsoft Endpoint Configuration Manager works the same 
 4.  Other applications are installed.
 5.  Data and settings are restored.
 
-For the purposes of this guide, we will use a minimum of two server computers (DC01 and CM01) and one client computer (PC0001).
-- DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server. Note: DHCP services are required for the client (PC0003) to connect to the Windows Deployment Service (WDS).
+## Infrastructure
+
+An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). 
+
+For the purposes of this article, we will use one server computer (CM01) and one client computer (PC0003).
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-  - CM01 is also running WDS which will be required to start PC0001 via PXE. **Note**: Ensure that only CM01 is running WDS.
-- PC0003 is a client computer that is blank, or has an operating system that will be erased and replaced with Windows 10. The device must be configured to boot from the network.
+- PC0003 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be refreshed to Windows 10.
 
 >[!NOTE]
 >If desired, PC0003 can be a VM hosted on the server HV01, which is a Hyper-V host computer that we used previously to build a Windows 10 reference image. However, if PC0003 is a VM then you must ensure it has sufficient resources available to run the Configuration Manager OSD task sequence. 2GB of RAM or more is recommended.  
@@ -44,9 +46,8 @@ All servers are running Windows Server 2019. However, an earlier, supported vers
 
 All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
-An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
-
-In this topic, we assume that you have a Windows 7 SP1 client named PC0003 with the Configuration Manager client installed.
+>[!IMPORTANT]
+>This article assumes that you have [configured Active Directory permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#configure-active-directory-permissions) in the specified OU for the **CM_JD** account and the client's Active Directory computer account is in the Contoso > Computers > Workstations OU. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed.
 
 ## Create a device collection and add the PC0003 computer
 
