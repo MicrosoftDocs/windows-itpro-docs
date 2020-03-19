@@ -80,6 +80,52 @@ From the flyout, you can do any of the following:
 >[!NOTE]
 >When a change is made on a machine, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
 
+## Request remediation
+
+The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. Security Administrators like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+
+### Enable Microsoft Intune connection
+
+To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+### Remediation request steps
+
+1. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
+
+2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within Threat & Vulnerability Management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to machines.
+
+3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
+
+>[!NOTE]
+>If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.
+
+## File for exception
+
+With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to a remediation request.
+
+There are many reasons why organizations create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides as much protection than the recommendation would, a false positive, among other reasons.
+
+Exceptions can be created for both *Security update* and *Configuration change* recommendations.
+
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
+
+1. Select a security recommendation you would like create an exception for, and then **Exception options**.
+![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
+
+2. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+
+> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+
+3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
+
+4. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past).
+![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png)
+
 ## Report inaccuracy
 
 You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated security recommendation information.
@@ -95,6 +141,8 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 ![Screenshot of Report inaccuracy flyout pane](images/report-inaccuracy-flyout500.png)
 
 4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
+
+
 
 ## Related topics
 
