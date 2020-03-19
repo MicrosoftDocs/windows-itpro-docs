@@ -137,9 +137,9 @@ Here's an example:
 </groupmembership>
 ```
 where:
-- `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
-- `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. (**Note:** This doesn't query Azure AD). For best results, use SID for `<member name>`. As groups can be renamed and account name lookups are limited to AD/local machine, hence SID is the best and most deterministic way to configure.
-The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+- `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
+- `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. (**Note:** This doesn't query Azure AD). For best results, use SID for `<member name>`. As groups can be renamed and account name lookups are limited to AD/local machine, hence SID is the best and most deterministic way to configure.
+The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
 - `Group1` and `Group2` are group locals on the device being configured.
 
 <!--/Example-->
