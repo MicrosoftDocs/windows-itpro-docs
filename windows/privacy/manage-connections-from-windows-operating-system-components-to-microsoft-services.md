@@ -31,7 +31,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 
 Note: Regarding the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), the 1903 settings (folder) are applicable to 1909 Windows Enterprise devices. There were no additional settings required for the 1909 release. 
 
-Note: If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the "Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order re-restrict the device. Also, egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings. 
+Note: If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the "Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings. 
 
 >[!IMPORTANT]
 > - The Allowed Traffic endpoints are listed here: [Allowed Traffic](#bkmk-allowedtraffic)
