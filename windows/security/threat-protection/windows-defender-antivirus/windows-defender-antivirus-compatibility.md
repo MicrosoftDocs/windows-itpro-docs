@@ -75,7 +75,7 @@ The following table summarizes the functionality and features that are available
 - In Active mode, Windows Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Windows Defender Antivirus app on the machine itself).
 - In Passive mode, Windows Defender Antivirus is not used as the antivirus app, and threats are not remediated by Windows Defender Antivirus. Files are scanned and reports are provided for threat detections which are shared with the Microsoft Defender ATP service.
 - When [shadow protection (currently in private preview)](shadow-protection.md) is turned on, Windows Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
-- Windows Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated.
+- In Automatic disabled mode, Windows Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated.
 
 ## Keep the following points in mind
 
