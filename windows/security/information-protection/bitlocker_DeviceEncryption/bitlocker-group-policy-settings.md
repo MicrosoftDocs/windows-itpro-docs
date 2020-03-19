@@ -388,8 +388,6 @@ If the minimum PIN length is reduced from the default of six characters, then th
 
 This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI ports until a user signs in to Windows.
 
-<!-- Table is created differently compared to the other tables -->
-
 |   |   |
 | - | - |
 | **Policy description** | This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys. |
