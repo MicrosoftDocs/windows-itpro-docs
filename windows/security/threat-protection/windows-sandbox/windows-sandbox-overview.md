@@ -1,5 +1,5 @@
 ---
-title: Windows Sandbox overview
+title: Windows Sandbox 
 description: 
 ms.prod: w10
 audience: ITPro
@@ -13,7 +13,7 @@ ms.date:
 ms.reviewer: 
 ---
 
-# Windows Sandbox overview
+# Windows Sandbox 
 
 Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software that's installed inside the Windows Sandbox environment remains "sandboxed" and can't affect the host machine.
 
