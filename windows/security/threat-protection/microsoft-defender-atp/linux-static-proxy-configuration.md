@@ -62,7 +62,7 @@ Note that installation and uninstallation will not necessarily fail if a proxy i
   
 After installation, the `HTTPS_PROXY` environment variable must be defined in the Microsoft Defender ATP service file. To do this, open `/lib/systemd/system/mdatp.service` in a text editor while running as the root user. You can then propagate the variable to the service in one of two ways:
 
-- Uncomment the line `#Environment=HTTPS_PROXY="http://address:port”` and specify your static proxy address.
+- Uncomment the line `#Environment="HTTPS_PROXY=http://address:port”` and specify your static proxy address.
 
 - Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
   
