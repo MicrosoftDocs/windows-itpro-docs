@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux with Ansible
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender ATP for Linux using Ansible.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -36,14 +36,14 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 - Ansible needs to be installed on at least on one computer (we will call it the master).
-- Passwordless SSH must be configured for the root user between the master and all clients.
+- SSH must be configured for an administrator account between the master and all clients, and it is recommended be configured with public key authentication.
 - The following software must be installed on all clients:
-  - Python-apt
-  - Curl
-  - Unzip
+  - curl
+  - python-apt
+  - unzip
 
-- All host must be listed in the following format in the `/etc/ansible/hosts` file:
-    
+- All hosts must be listed in the following format in the `/etc/ansible/hosts` file:
+
     ```bash
     [servers]
     host1 ansible_ssh_host=10.171.134.39
@@ -67,7 +67,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
-  
+
     ```bash
     $ ls -l
     total 8
@@ -79,12 +79,11 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. Create the following files under the `/etc/ansible/roles` directory.
+Create subtask or role files that contribute to an actual task. First create the `copy_onboarding_pkg.yml` file under the `/etc/ansible/roles` directory:
 
 - Copy the onboarding package to all client machines:
 
     ```bash
-    $ cat /etc/ansible/roles/copy_onboarding_pkg.yml
     - name: Copy the zip file
         copy:
             src:  /root/WindowsDefenderATPOnboardingPackage.zip
@@ -92,29 +91,33 @@ Create subtask or role files that contribute to an actual task. Create the follo
             owner: root
             group: root
             mode: '0644'
+
+    - name: Add Microsoft apt signing key
+      apt_key:
+        url: https://packages.microsoft.com/keys/microsoft.asc
+        state: present
+      when: ansible_os_family == "Debian"
     ```
 
-- Create a `setup.sh` script that operates on the onboarding file:
+- Create the `setup.sh` script that operates on the onboarding file, in this example located in the `/root` directory:
 
     ```bash
-    $ cat /root/setup.sh
-
     #!/bin/bash
-
+    # We assume WindowsDefenderATPOnboardingPackage.zip is stored in /root
+    cd /root || exit 1
     # Unzip the archive and create the onboarding file
     mkdir -p /etc/opt/microsoft/mdatp/
     unzip WindowsDefenderATPOnboardingPackage.zip
     cp mdatp_onboard.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
-
-    # get the GPG key
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
     ```
 
-- Create the onboarding file:
+- Create the onboarding task, `onboarding_setup.yml`, under the `/etc/ansible/roles` directory:
 
     ```bash
-    $ cat setup_blob.yml
+    - name: Register mdatp_onboard.json
+      stat: path=/etc/opt/microsoft/mdatp/mdatp_onboard.json
+      register: mdatp_onboard
+
     - name: Copy the setup script file
         copy:
             src: /root/setup.sh
@@ -124,46 +127,41 @@ Create subtask or role files that contribute to an actual task. Create the follo
             mode: '0744'
 
     - name: Run a script to create the onboarding file
-        script: /root/setup.sh
+      script: /root/setup.sh
+      when: not mdatp_onboard.stat.exists
     ```
 
 - Add the Microsoft Defender ATP repository and key.
 
-    Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository.
+    Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
-    The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+    The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-    In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+    In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
-
-    - For apt-based distributions use the following YAML file:
+    > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
         ```bash
-        $ cat add_apt_repo.yml
-        - name: Add Microsoft repository for MDATP
+        - name: Add Microsoft apt repository for MDATP
             apt_repository:
                 repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
                 update_cache: yes
                 state: present
                 filename: microsoft-[channel].list
+            when: ansible_os_family == "Debian"
 
         - name: Add Microsoft APT key
-                apt_key:
-                    keyserver: https://packages.microsoft.com/
-                    id: BC528686B50D79E339D3721CEB3E94ADBE1229C
-        ```
+            apt_key:
+                keyserver: https://packages.microsoft.com/
+                id: BC528686B50D79E339D3721CEB3E94ADBE1229C
+            when: ansible_os_family == "Debian"
 
-    - For yum-based distributions use the following YAML file:
-
-        ```bash
-        $ cat add_yum_repo.yml
-        - name: Add  Microsoft repository for MDATP
+        - name: Add  Microsoft yum repository for MDATP
             yum_repository:
                 name: packages-microsoft-com-prod-[channel]
                 description: Microsoft Defender ATP
@@ -171,6 +169,7 @@ Create subtask or role files that contribute to an actual task. Create the follo
                 baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
                 gpgcheck: yes
                 enabled: Yes
+            when: ansible_os_family == "RedHat"
         ```
 
 - Create the actual install/uninstall YAML files under `/etc/ansible/playbooks`.
@@ -232,6 +231,9 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
     ```bash
     $ ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
+
+> [!IMPORTANT]
+> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
 
 - Validation/configuration:
 

@@ -19,12 +19,13 @@ ms.topic: conceptual
 # Configuration score
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!NOTE]
 > Secure score is now part of Threat & Vulnerability Management as Configuration score.
 
-Your Configuration score is visible in the Threat & Vulnerability Management dashboard of the Microsoft Defender Security Center. It reflects the collective security configuration state of your machines across the following categories:
+Your Configuration score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects the collective security configuration state of your machines across the following categories:
 
 - Application
 - Operating system
@@ -48,14 +49,29 @@ The data in the configuration score card is the product of meticulous and ongoin
 
 From the widget, you'd be able to see which security aspect requires attention. You can click the configuration score categories and it will take you to the **Security recommendations** page to see more details and understand the context of the issue. From there, you can act on them based on security benchmarks.
 
-## Improve your configuration score
+## Improve your security configuration
 
-The goal is to remediate the issues in the security recommendations list to improve your configuration score. You can filter the view based on:
+You can improve your security configuration when you remediate issues from the security recommendations list. As you do so, your configuration score improves, which means your organization becomes more resilient against cybersecurity threats and vulnerabilities.
 
-- **Related component** — **Accounts**, **Application**, **Network**, **OS**, or **Security controls** 
-- **Remediation type** — **Configuration change** or **Software update**
+1. From the Configuration score card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md), select **Security controls**. The [**Security recommendations**](tvm-security-recommendation.md) page opens to shows the list of recommendations related to security controls.
 
-See how you can [improve your security configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-and-vuln-mgt-scenarios#improve-your-security-configuration), for details.
+2. Select an item on the list. The flyout panel will open with details related to the recommendation. Select **Remediation options**.
+
+   ![Security controls related security recommendations](images/tvm_security_controls.png)
+
+3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to the email that you can send to your IT Administrator for follow-up.
+
+   >![Request remediation](images/tvm_request_remediation.png).
+
+   You will see a confirmation message that the remediation task has been created.
+   >![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
+
+4. Save your CSV file.
+   ![Save csv file](images/tvm_save_csv_file.png)
+
+5. Send a follow-up email to your IT Administrator and allow the time that you have allotted for the remediation to propagate in the system.
+
+6. Review the machine **Configuration score** card again on the dashboard. The number of security controls recommendations will decrease. When you select **Security controls** to go back to the **Security recommendations** page, the item that you have addressed will not be listed there anymore, and your configuration score should increase.
 
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, download the following mandatory security updates and deploy them in your network:

@@ -6,7 +6,6 @@ description: Delivery Optimization is a new peer-to-peer distribution method in 
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -183,7 +182,7 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 
 ### Monitor with Update Compliance
 
-The Update Compliance solution of Windows Analytics provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
+Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ![DO status](images/UC_workspace_DO_status.png)
 

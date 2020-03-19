@@ -207,7 +207,7 @@ You can pair other Bluetooth HID and GATT devices together with your HoloLens. H
 
 Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Individial apps may support additional clicker gestures.
 
-If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens-connect-devices.md#pair-the-clicker).
+If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens. If the battery is low, the indicator light blinks amber. To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there. For more information, see [Pair the clicker](hololens-connect-devices.md#hololens-1st-gen-pair-the-clicker).
 
 If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds. Then pair the clicker with your HoloLens again.
 

@@ -37,26 +37,26 @@ Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defende
 
 ## Configure the Linux software repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-### RHEL and variants (CentOS and Oracle EL)
+### RHEL and variants (CentOS and Oracle Linux)
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -94,7 +94,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
@@ -132,7 +132,7 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
@@ -153,7 +153,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
 - Install the https driver if it's not already present:
@@ -170,7 +170,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle EL):
+- RHEL and variants (CentOS and Oracle Linux):
 
     ```bash
     sudo yum install mdatp
@@ -240,6 +240,9 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp --health healthy
     1
     ```
+
+    > [!IMPORTANT]
+    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
 
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
