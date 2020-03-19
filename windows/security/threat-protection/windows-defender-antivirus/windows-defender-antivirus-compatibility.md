@@ -67,10 +67,10 @@ The following table summarizes the functionality and features that are available
 
 |State |[Real-time protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) | [Limited periodic scanning availability](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/limited-periodic-scanning-windows-defender-antivirus) | [File scanning and detection information](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus) | [Threat remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-remediation-windows-defender-antivirus) | [Security intelligence updates](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus) |
 |--|--|--|--|--|--|
-|Active mode <br/><br/>  |![yes](images/svg/check-yes.svg) |![no](images/svg/check-no.svg) |![yes](images/svg/check-yes.svg) |![yes](images/svg/check-yes.svg) |![yes](images/svg/check-yes.svg) |
-|Passive mode  |![no](images/svg/check-no.svg) |![no](images/svg/check-no.svg) |![yes](images/svg/check-yes.svg) |![no](images/svg/check-no.svg) |![yes](images/svg/check-yes.svg) |
-|[Shadow protection enabled](shadow-protection.md)  |![no](images/svg/check-no.svg) |![no](images/svg/check-no.svg) |![yes](images/svg/check-yes.svg) |![yes](images/svg/check-yes.svg) |![yes](images/svg/check-yes.svg) |
-|Automatic disabled mode  |![no](images/svg/check-no.svg) |![yes](images/svg/check-yes.svg) |![no](images/svg/check-no.svg) |![no](images/svg/check-no.svg) |![no](images/svg/check-no.svg) |
+|Active mode <br/><br/>  |Yes |No |Yes |Yes |Yes |
+|Passive mode  |No |No |Yes |No |Yes |
+|[Shadow protection enabled](shadow-protection.md)  |No |No |Yes |Yes |Yes |
+|Automatic disabled mode  |No |Yes |No |No |No |
 
 - In Active mode, Windows Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Windows Defender Antivirus app on the machine itself).
 - In Passive mode, Windows Defender Antivirus is not used as the antivirus app, and threats are not remediated by Windows Defender Antivirus. Files are scanned and reports are provided for threat detections which are shared with the Microsoft Defender ATP service.
