@@ -23,6 +23,10 @@ ms.date: 9/10/2019
 
 This article describes the network connections that Windows 10 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](https://docs.microsoft.com/intune/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
+Note: The 1903 settings in the Windows Restricted Traffic Limited Functionality Baseline package are applicable to 1909 Windows Enterprise devices. 
+
+Note: If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied to in order re-restrict the device. Also, egress traffic may occur during the period leading up to the re-applications of the Restricted Traffic Limited Functionality Baseline settings.  
+
 >[!IMPORTANT]
 >- The Allowed Traffic endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic)
 >   - CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
