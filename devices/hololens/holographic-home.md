@@ -1,5 +1,5 @@
 ---
-title: Start menu and mixed reality home
+title: Use the Start menu and mixed reality home
 description: Navigate the mixed reality home in Windows Holographic.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
@@ -15,7 +15,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Start menu and mixed reality home
+# Use the Start menu and mixed reality home
 
 Just like the Windows PC experience starts with the desktop, Windows Holographic starts with mixed reality home.  Using the Start menu you can open and place app windows, immersive app launchers, and 3D content in mixed reality home, and their placement in your physical space will be remembered.
 
