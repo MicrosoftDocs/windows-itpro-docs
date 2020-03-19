@@ -47,24 +47,38 @@ All servers are running Windows Server 2019. However, an earlier, supported vers
 All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
 >[!IMPORTANT]
->This article assumes that you have [configured Active Directory permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#configure-active-directory-permissions) in the specified OU for the **CM_JD** account and the client's Active Directory computer account is in the Contoso > Computers > Workstations OU. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed.
+>This article assumes that you have [configured Active Directory permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md#configure-active-directory-permissions) in the specified OU for the **CM_JD** account, and the client's Active Directory computer account is in the **Contoso > Computers > Workstations** OU. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed.
+
+## Verify the Configuration Manager client settings
+
+To verify that PC003 is correctly assigned to the PS1 site:
+
+On **PC0003**:
+
+1. Open the Configuration Manager control panel (control ).
+2. On the Site tab, click Find Site.
+3. Verify that Configuration Manager has successfullyl found a site to manage this client is displayed. See the following example.
+
+![pc0003a](../images/pc0003a.png)
 
 ## Create a device collection and add the PC0003 computer
 
 On **CM01**:
 
-1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
+1.  Using the Configuration Manager console, in the Asset and Compliance workspace, expand **Overview**, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
 
-    * General
+  * General
     * Name: Install Windows 10 Enterprise x64
     * Limited Collection: All Systems
-    * Membership rules:
-    * Direct rule
-    * Resource Class: System Resource
-    * Attribute Name: Name
-    * Value: PC0003
-    * Select **Resources**
-    * Select **PC0003**
+  * Membership rules
+    * Add Rule: Direct rule
+      * Resource Class: System Resource
+      * Attribute Name: Name
+      * Value: PC0003
+    * Select Resources
+      * Select **PC0003**
+
+  Use the default settings to complete the remaining wizard pages and click **Close**.
 
 2.  Review the Install Windows 10 Enterprise x64 collection. Do not continue until you see the PC0003 machine in the collection.
 
@@ -73,7 +87,9 @@ On **CM01**:
 
 ## Create a new deployment
 
-Using the Configuration Manager console, in the Software Library workspace, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then select **Deploy**. Use the following settings:
+On **CM01**:
+
+Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then click **Deploy**. Use the following settings:
 
 - General
     - Collection: Install Windows 10 Enterprise x64
@@ -97,17 +113,31 @@ Using the Configuration Manager console, in the Software Library workspace, sele
 
 Now you can start the computer refresh on PC0003.
 
-1.  Using the Configuration Manager console, in the Asset and Compliance workspace, in the Install Windows 10 Enterprise x64 collection, right-click **PC0003** and select **Client Notification / Download Computer Policy**. Click **OK**.
+On **CM01**:
 
-    >[!NOTE]
-    >The Client Notification feature is new in Configuration Manager.
+1. Using the Configuration Manager console, in the Assets and Compliance workspace, click the **Install Windows 10 Enterprise x64** collection, right-click **PC0003**, point to **Client Notification**, click **Download Computer Policy**, and then click **OK** in the popup dialog box that appears.
 
-2.  On PC0003, using the Software Center (begin using the Start screen, or click the **New software is available** balloon in the system tray), select the **Windows 10 Enterprise x64 RTM** deployment and click **INSTALL**.
-3.  In the **Software Center** warning dialog box, click **INSTALL OPERATING SYSTEM**.
+On **PC0003**:
+
+1.  Open the Software Center (click Start and type **Software Center**, or click the **New software is available** balloon in the system tray), select **Operating Systems** and click the **Windows 10 Enterprise x64 RTM** deployment, then click **Install**.
+2.  In the **Software Center** warning dialog box, click **Install Operating System**. 
+3. The client computer will run the Configuration Manager task sequence, boot into Windows PE, and install the new OS and applications. See the following examples:
+
+![pc0003b](../images/pc0003b.png)<br>
+![pc0003c](../images/pc0003c.png)<br>
+![pc0003d](../images/pc0003d.png)<br>
+![pc0003e](../images/pc0003e.png)<br>
+![pc0003f](../images/pc0003f.png)<br>
+![pc0003g](../images/pc0003g.png)<br>
+![pc0003h](../images/pc0003h.png)<br>
+![pc0003i](../images/pc0003i.png)<br>
+![pc0003j](../images/pc0003j.png)<br>
+![pc0003k](../images/pc0003k.png)
+
+Next, see [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
 ## Related topics
 
-[Integrate Configuration Manager with MDT](../deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)<br>
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
