@@ -207,11 +207,10 @@ After the task sequence completes, the computer will be fully upgraded to Window
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)
 
-[Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)
+[Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)
 
  
 
  
-
 
 
