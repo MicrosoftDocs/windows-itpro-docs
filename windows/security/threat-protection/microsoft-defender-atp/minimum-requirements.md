@@ -28,7 +28,7 @@ There are some minimum requirements for onboarding machines to the service. Lear
 
 
 >[!TIP]
->- Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Learn about the latest enhancements in Microsoft Defender ATP:[Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 >- Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
@@ -37,8 +37,10 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
+For detailed licensing information, see the [Product terms page](https://www.microsoft.com/en-us/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product. 
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -72,7 +74,7 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Server 2016, version 1803
+  - Windows Server, version 1803 or later
   - Windows Server 2019
 
 Machines on your network must be running one of these editions.

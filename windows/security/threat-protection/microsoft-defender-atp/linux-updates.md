@@ -28,7 +28,7 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender ATP for Linux manually, execute one of the following commands:
 
-## RHEL and variants (CentOS and Oracle EL)
+## RHEL and variants (CentOS and Oracle Linux)
 
 ```bash
 sudo yum update mdatp
