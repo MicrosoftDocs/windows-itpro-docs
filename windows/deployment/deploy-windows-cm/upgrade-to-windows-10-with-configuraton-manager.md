@@ -127,6 +127,7 @@ On **PC0004**:
 5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications.
 
 ![pc0004-a](../images/pc0004-a.png)<br>
+![pc0004-b](../images/pc0004-b.png)<br>
 ![pc0004-b](../images/pc0004-b.png)
 
 In-place upgrade with Configuration Manager
@@ -135,12 +136,3 @@ In-place upgrade with Configuration Manager
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
 [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
-
- 
-
- 
-
-
-
-
-
