@@ -72,7 +72,7 @@ On **CM01**:
 
 The backup-only task sequence (named Replace Task Sequence).
 
-## Associate the new machine with the old computer
+## Associate the new device with the old computer
 
 This section walks you through the process of associating a new, blank device (PC0006), with an existing computer (PC0004), for the purpose of replacing PC0004 with PC0006. PC0006 can be either a physical or virtual machine.
 
@@ -149,7 +149,7 @@ This section assumes that you have a computer named PC0004 with the Configuratio
 
 On **PC0004**:
 
-1.  If it is not alreayd started, start the PC0004 computer and open the Configuration Manager control panel (control smscfgrc).
+1.  If it is not already started, start the PC0004 computer and open the Configuration Manager control panel (control smscfgrc).
 2.  On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, click **Run Now**, and then click **OK** in the popup dialog box that appears.
 
     >[!NOTE]
