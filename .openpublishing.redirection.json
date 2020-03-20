@@ -7952,11 +7952,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deploy/monitor-windows-10-deployment-with-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/deploy/offline-migration-reference.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/usmt/offline-migration-reference",
 "redirect_document_id": true
