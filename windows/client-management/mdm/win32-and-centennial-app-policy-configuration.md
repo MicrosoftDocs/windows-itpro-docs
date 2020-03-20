@@ -221,7 +221,8 @@ The following example shows an ADMX file in SyncML format:
         <Target>
           <LocURI>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/ContosoCompanyApp/Policy/AppAdmxFile01</LocURI>
         </Target>
-        <Data><policyDefinitions revision="1.0" schemaVersion="1.0">
+        <Data>
+        <![CDATA[<policyDefinitions revision="1.0" schemaVersion="1.0">
           <categories>
           <category name="ParentCategoryArea"/>
           <category name="Category1">
@@ -350,7 +351,8 @@ The following example shows an ADMX file in SyncML format:
           </elements>
           </policy>
           </policies>
-          </policyDefinitions></Data>
+          </policyDefinitions>]]>
+        </Data>
       </Item>
     </Add>
     <Final/>
@@ -360,7 +362,7 @@ The following example shows an ADMX file in SyncML format:
 
 **Response Syncml**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data><![CDATA[200]]></Data></Status>
 ```
 
 ### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy 
@@ -439,7 +441,7 @@ The following examples describe how to set an ADMX-ingested app policy.
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/ContosoCompanyApp~ Policy~ParentCategoryArea~Category1/L_PolicyConfigurationMode</LocURI>
         </Target>
-        <Data><enabled/><data id="L_ServerAddressInternal_VALUE" value="TextValue1"/><data id="L_ServerAddressExternal_VALUE" value="TextValue2"/></Data>
+        <Data><![CDATA[<enabled/><data id="L_ServerAddressInternal_VALUE" value="TextValue1"/><data id="L_ServerAddressExternal_VALUE" value="TextValue2"/>]]></Data>
       </Item>
     </Replace>
     <Final/>
@@ -449,7 +451,7 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data><![CDATA[200]]></Data></Status>
 ```
 
 ### <a href="" id="disabling-an-app-policy"></a>Disabling an app policy
@@ -473,7 +475,7 @@ The following examples describe how to set an ADMX-ingested app policy.
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/ContosoCompanyApp~ Policy~ParentCategoryArea~Category1/L_PolicyConfigurationMode</LocURI>
         </Target>
-        <Data><disabled/></Data>
+        <Data><![CDATA[<disabled/>]]></Data>
       </Item>
     </Replace>
     <Final/>
@@ -483,7 +485,7 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data><![CDATA[200]]></Data></Status>
 ```
 
 ### <a href="" id="setting-an-app-policy-to-not-configured"></a>Setting an app policy to not configured
@@ -511,5 +513,5 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data>200</Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data><![CDATA[200]]></Data></Status>
 ```
