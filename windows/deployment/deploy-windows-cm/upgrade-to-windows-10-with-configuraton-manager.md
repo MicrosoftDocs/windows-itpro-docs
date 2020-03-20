@@ -26,194 +26,113 @@ The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Wi
 >[!IMPORTANT]
 >Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must removed from a device before performing an in-place upgrade to Windows 10.
 
-## Proof-of-concept environment
+## Infrastructure
 
-For the purposes of this topic, we will use three computers: DC01, CM01, and PC0001. DC01 is a domain controller and CM01 is a domain member server. PC0001 is a computer running Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Prepare for deployment with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md).
+An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). 
 
-![computers](../images/dc01-cm01-pc0001.png)
+For the purposes of this article, we will use one server computer (CM01) and one client computers (PC0004).
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
+- PC0004 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be upgraded to Windows 10.
 
-The computers used in this topic.
+All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-## Upgrade to Windows 10 with Configuration Manager
+All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
+## Add an OS upgrade package
 
-System Center 2012 R2 Configuration Manager SP 1 adds support to manage and deploy Windows 10. Although it does not include built-in support to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 to Windows 10, you can build a custom task sequence to perform the necessary tasks.
+Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](https://docs.microsoft.com/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
 
-## Create the task sequence
+On **CM01**:
 
+1. Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Operating System Upgrade Packages**, and click **Add Operating System Upgrade Package**.
+2. On the **Data Source** page, under **Path**, click **Browse** and enter the UNC path to your media source. In this example, we have extracted the Windows 10 installation media to **\\\\cm01\\Sources$\\OSD\\UpgradePackages\\Windows 10**.
+3. If you have multiple image indexes in the installation media, select **Extract a specific image index from install.wim...** and choose the image index you want from the dropdown menu. In this example, we have chosen **Windows 10 Enterprise**.
+4. Next to **Architecture**, select **x64**, choose a language from the dropdown menu next to **Language**, and then click **Next**.
+5. Next to **Name**, enter **Windows 10 x64 RTM** and then complete the wizard by clicking **Next** and **Close**.
+6.  Distribute the OS upgrade package to the CM01 distribution point by right-clicking the **Windows 10 x64 RTM** OS upgrade package and then clicking **Distribute Content**.
+7.  In the Distribute Content Wizard, add the CM01 distribution point, click **Next** and click **Close**.
+8.  View the content status for the Windows 10 x64 RTM upgrade package. Do not continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
-To help with this process, the Configuration Manager team has published [a blog](https://go.microsoft.com/fwlink/p/?LinkId=620179) that provides a sample task sequence, as well as the [original blog that includes the instructions for setting up the task sequence](https://go.microsoft.com/fwlink/p/?LinkId=620180). To summarize, here are the tasks you need to perform:
+## Create an in-place upgrade task sequence
 
-1.  Download the [Windows10Upgrade1506.zip](https://go.microsoft.com/fwlink/p/?LinkId=620182) file that contains the sample task sequence and related scripts. Extract the contents onto a network share.
-2.  Copy the Windows 10 Enterprise RTM x64 media into the extracted but empty **Windows vNext Upgrade Media** folder.
-3.  Using the Configuration Manager Console, right-click the **Task Sequences** node, and then choose **Import Task Sequence**. Select the **Windows-vNextUpgradeExport.zip** file that you extracted in Step 1.
-4.  Distribute the two created packages (one contains the Windows 10 Enterprise x64 media, the other contains the related scripts) to the Configuration Manager distribution point.
+On **CM01**:
 
-For full details and an explanation of the task sequence steps, review the full details of the two blogs that are referenced above.
+1. Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create Task Sequence**.
+2. On the **Create a new task sequence** page, select **Upgrade an operating system from an upgrade package** and click **Next**.
+3. Use the following settings to complete the wizard:
+
+   * Task sequence name: Upgrade Task Sequence
+   * Description: In-place upgrade
+   * Upgrade package: Windows 10 x64 RTM
+   * Include software updates: Do not install any software updates
+   * Install applications: OSD \ Adobe Acrobat Reader DC
+
+4. Complete the wizard, and click **Close**.
+5. Review the Upgrade Task Sequence.
+
+![The upgrade task sequence](../images/cm-upgrade-ts.png)
+
+The Configuration Manager upgrade task sequence
 
 ## Create a device collection
 
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0004 computer running Windows 7 SP1, with the Configuration Manager client installed.
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the Configuration Manager client installed.
+On **CM01**:
 
-1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
-    -   General
+1.  Using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
+    - General
+        - Name: Windows 10 x64 in-place upgrade
+        - Limited Collection: All Systems
+    - Membership rules:
+        - Direct rule
+            - Resource Class: System Resource
+            - Attribute Name: Name
+            - Value: PC0004
+        - Select Resources
+          - Select PC0004
 
-        -   Name: Windows 10 Enterprise x64 Upgrade
-
-        -   Limited Collection: All Systems
-
-    -   Membership rules:
-
-        -   Direct rule
-
-            -   Resource Class: System Resource
-
-            -   Attribute Name: Name
-
-            -   Value: PC0001
-
-        -   Select Resources
-
-        -   Select PC0001
-
-2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0001 machine in the collection.
+2.  Review the Windows 10 x64 in-place upgrade collection. Do not continue until you see PC0004 in the collection.
 
 ## Deploy the Windows 10 upgrade
 
-
 In this section, you create a deployment for the Windows 10 Enterprise x64 Update application.
 
-1.  On CM01, using the Configuration Manager console, in the Software Library workspace, right-click the **Windows vNext Upgrade** task sequence, and then select **Deploy**.
-2.  On the **General** page, select the **Windows 10 Enterprise x64 Upgrade** collection, and then click **Next**.
+On **CM01**:
+
+1.  Using the Configuration Manager console, in the Software Library workspace, right-click the **Upgrade Task Sequence** task sequence, and then click **Deploy**.
+2.  On the **General** page, browse and select the **Windows 10 x64 in-place upgrade** collection, and then click **Next**.
 3.  On the **Content** page, click **Next**.
-4.  On the **Deployment Settings** page, select the following settings, and then click **Next**:
-    -   Action: Install
-
-    -   Purpose: Available
-
+4.  On the **Deployment Settings** page, click **Next**:
 5.  On the **Scheduling** page, accept the default settings, and then click **Next**.
 6.  On the **User Experience** page, accept the default settings, and then click **Next**.
 7.  On the **Alerts** page, accept the default settings, and then click **Next**.
+7.  On the **Distribution Points** page, accept the default settings, and then click **Next**.
 8.  On the **Summary** page, click **Next**, and then click **Close**.
 
 ## Start the Windows 10 upgrade
 
+Next, run the in-place upgrade task sequence on PC0004.
 
-In this section, you start the Windows 10 Upgrade task sequence on PC0001 (currently running Windows 7 SP1).
+On **PC0004**:
 
-1.  On PC0001, start the **Software Center**.
-2.  Select the **Windows vNext Upgrade** task sequence, and then click **Install**.
+1.  Open the Configuration Manager control panel (control smscfgrc).
+2.  On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, click **Run Now**, and then click **OK** in the popup dialog box that appears.
 
-When the task sequence begins, it will automatically initiate the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
+    >[!NOTE]
+    >You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
-![figure 2](../images/upgradecfg-fig2-upgrading.png)
+3.  Open the Software Center, select the **Upgrade Task Sequence** deployment and then click **Install**.
+4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
+5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications.
 
-Figure 2. Upgrade from Windows 7 to Windows 10 Enterprise x64 with a task sequence.
+![pc0004-a](../images/pc0004-a.png)<br>
+![pc0004-b](../images/pc0004-b.png)<br>
+![pc0004-b](../images/pc0004-b.png)
 
-After the task sequence finishes, the computer will be fully upgraded to Windows 10.
-
-## Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager
-
-
-With Configuration Manager, new built-in functionality makes it easier to upgrade to Windows 10.
-
-**Note**  
-For more details about Configuration Manager, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
-
- 
-
-### Create the OS upgrade package
-
-First, you need to create an operating system upgrade package that contains the full Windows 10 Enterprise x64 installation media.
-
-1.  On CM01, using the Configuration Manager console, in the Software Library workspace, right-click the **Operating System Upgrade Packages** node, then select **Add Operating System Upgrade Package**.
-2.  On the **Data Source** page, specify the UNC path to the Windows 10 Enterprise x64 media, and then click **Next**.
-3.  On the **General** page, specify Windows 10 Enterprise x64 Upgrade, and then click **Next**.
-4.  On the **Summary** page, click **Next**, and then click **Close**.
-5.  Right-click the created **Windows 10 Enterprise x64 Update** package, and then select **Distribute Content**. Choose the CM01 distribution point.
-
-### Create the task sequence
-
-To create an upgrade task sequence, perform the following steps:
-
-1.  On CM01, using the Configuration Manager console, in the Software Library workspace, right-click the **Task Sequences** node, and then select **Create Task Sequence**.
-2.  On the **Create a new task sequence** page, select **Upgrade an operating system from upgrade package**, and then click **Next**.
-3.  On the **Task Sequence Information** page, specify **Windows 10 Enterprise x64 Upgrade**, and then click **Next**.
-4.  On the **Upgrade the Windows operating system** page, select the **Windows 10 Enterprise x64 Upgrade operating system upgrade** package, and then click **Next**.
-5.  Click **Next** through the remaining wizard pages, and then click **Close**.
-
-![figure 3](../images/upgradecfg-fig3-upgrade.png)
-
-Figure 3. The Configuration Manager upgrade task sequence.
-
-### Create a device collection
-
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of Configuration Manager client installed.
-
-1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
-    -   General
-
-        -   Name: Windows 10 Enterprise x64 Upgrade
-
-        -   Limited Collection: All Systems
-
-    -   Membership rules:
-
-        -   Direct rule
-
-            -   Resource Class: System Resource
-
-            -   Attribute Name: Name
-
-            -   Value: PC0001
-
-        -   Select Resources
-
-        -   Select PC0001
-
-2.  Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the PC0001 machine in the collection.
-
-### Deploy the Windows 10 upgrade
-
-In this section, you create a deployment for the Windows 10 Enterprise x64 Update application.
-
-1.  On CM01, using the Configuration Manager console, in the Software Library workspace, right-click the **Windows vNext Upgrade** task sequence, and then select **Deploy**.
-2.  On the **General** page, select the **Windows 10 Enterprise x64 Upgrade** collection, and then click **Next**.
-3.  On the **Content** page, click **Next**.
-4.  On the **Deployment Settings** page, select the following settings and click **Next**:
-    -   Action: Install
-
-    -   Purpose: Available
-
-5.  On the **Scheduling** page, accept the default settings, and then click **Next**.
-6.  On the **User Experience** page, accept the default settings, and then click **Next**.
-7.  On the **Alerts** page, accept the default settings, and then click **Next**.
-8.  On the **Summary** page, click **Next**, and then click **Close**.
-
-### Start the Windows 10 upgrade
-
-In this section, you start the Windows 10 Upgrade task sequence on PC0001 (currently running Windows 7 SP1).
-
-1.  On PC0001, start the **Software Center**.
-2.  Select the **Windows 10 Enterprise x64 Upgrade** task sequence, and then click **Install.**
-
-When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
-
-After the task sequence completes, the computer will be fully upgraded to Windows 10.
+In-place upgrade with Configuration Manager
 
 ## Related topics
 
-
-[Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)
-
+[Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
 [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
-
- 
-
- 
-
-
-
-
-
