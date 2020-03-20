@@ -124,11 +124,15 @@ On **PC0004**:
 
 3.  Open the Software Center, select the **Upgrade Task Sequence** deployment and then click **Install**.
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
-5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications.
+5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications. See the following examples:
 
 ![pc0004-a](../images/pc0004-a.png)<br>
 ![pc0004-b](../images/pc0004-b.png)<br>
-![pc0004-b](../images/pc0004-b.png)
+![pc0004-c](../images/pc0004-c.png)<br>
+![pc0004-d](../images/pc0004-d.png)<br>
+![pc0004-e](../images/pc0004-e.png)<br>
+![pc0004-f](../images/pc0004-f.png)<br>
+![pc0004-g](../images/pc0004-g.png)
 
 In-place upgrade with Configuration Manager
 
