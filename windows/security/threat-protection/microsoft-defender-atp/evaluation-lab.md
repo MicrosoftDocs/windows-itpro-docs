@@ -31,7 +31,9 @@ You'll have full access to the powerful capabilities of the platform such as aut
 
 You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
 
-You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
+You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities without having to leave the portal.
+
+ Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs - all conveniently available at no extra cost to you. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
     
 
 ## Before you begin
@@ -71,7 +73,7 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
     >[!IMPORTANT]
     >You'll first need to accept and provide consent to the terms and information sharing statements. 
 
-4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them on the machines you add.  
+4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the machines you add.  
     
     ![Image of summary page](images/lab-setup-summary.png)
 
@@ -190,7 +192,11 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
     ![Image of threat simulator selection](images/select-simulator.png)
 
-3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
+3. Choose a simulation or look through the simulation gallery to browse through the available simulations. 
+
+    You can get to the simulation gallery from:
+    - The main evaluation dashboard in the **Simulations overview** tile or
+    - By navigating from the navigation pane **Evaluation and tutorials** > **Simulation & tutorials**, then select **Simulations catalog**.
 
 4. Select the devices where you'd like to run the simulation on.
 
@@ -219,6 +225,10 @@ You can conveniently run any available simulation right from the catalog.
 
 
 ![Image of simulations catalog](images/simulations-catalog.png)
+
+Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
+
+![Image of simulation description details](images/simulation-details.png)
 
 
 ## Evaluation report
