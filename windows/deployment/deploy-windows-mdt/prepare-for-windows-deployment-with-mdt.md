@@ -121,7 +121,7 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
   cmd /c "C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=C:\WSUS
   ```
 
->To use the WSUS that you have installed on MDT01, you must also [configure Group Policy](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus#configure-automatic-updates-and-update-service-location) on DC01.
+>To use the WSUS that you have installed on MDT01, you must also [configure Group Policy](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus#configure-automatic-updates-and-update-service-location) on DC01 and perform the neccessary post-installation configuration of WSUS on MDT01.
 
 ## Install MDT
 
