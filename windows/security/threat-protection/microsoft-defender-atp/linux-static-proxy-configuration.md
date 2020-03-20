@@ -33,7 +33,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
 - The ```HTTPS_PROXY``` variable is defined in ```/etc/environment``` with the following line:
 
     ```bash
-    HTTPS_PROXY=”http://proxy.server:port/”
+    HTTPS_PROXY="http://proxy.server:port/"
     ```
 
 - The `HTTPS_PROXY` variable is defined in the package manager global configuration. For example, in Ubuntu 18.04, you can add the following line to `/etc/apt/apt.conf.d/proxy.conf`:
@@ -48,7 +48,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
 - The `HTTPS_PROXY` variable is prepended to the installation or uninstallation commands. For example, with the APT package manager, prepend the variable as follows when installing Microsoft Defender ATP: 
 
     ```bash  
-    $ HTTPS_PROXY=”http://proxy.server:port/" apt install mdatp
+    $ HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
     ```
 
     > [!NOTE]
@@ -67,7 +67,7 @@ After installation, the `HTTPS_PROXY` environment variable must be defined in th
 - Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
   
     ```bash
-    HTTPS_PROXY=”http://proxy.server:port/”
+    HTTPS_PROXY="http://proxy.server:port/"
     ```
 
 After modifying the `mdatp.service` file, save and close it. Restart the service so the changes can be applied. In Ubuntu, this involves two commands:  
