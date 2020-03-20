@@ -17,225 +17,198 @@ ms.topic: article
 
 # Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
 
-
 **Applies to**
 
--   Windows 10 versions 1507, 1511
+- Windows 10
+
+In this topic, you will learn how to replace a Windows 7 SP1 computer using Microsoft Endpoint Configuration Manager. This process is similar to refreshing a computer, but since you are replacing the device, you have to run the backup job separately from the deployment of Windows 10.
+
+In this topic, you will create a backup-only task sequence that you run on PC0004 (the device you are replacing), deploy the PC0006 computer running Windows 10, and then restore this backup of PC0004 onto PC006. This is similar to the MDT replace process: [Replace a Windows 7 computer with a Windows 10 computer](../deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md).
+
+## Infrastructure
+
+An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). 
+
+For the purposes of this article, we will use one server computer (CM01) and two client computers (PC0004, PC0006).
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
+  - Important: CM01 must include the **[State migration point](https://docs.microsoft.com/configmgr/osd/get-started/manage-user-state#BKMK_StateMigrationPoint)** role for the replace task sequence used in this article to work. 
+- PC0004 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be replaced.
+- PC0006 is a domain member client computer running Windows 10, with the Configuration Manager client installed, that will replace PC0004.
+
+>[!NOTE]
+>PC0004 and PC006 can be VMs hosted on the server HV01, which is a Hyper-V host computer that we used previously to build a Windows 10 reference image. However, the VMs must have sufficient resources available to run the Configuration Manager OSD task sequence. 2GB of RAM or more is recommended.  
+
+All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
+
+All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+>This article assumes that you have [configured Active Directory permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md#configure-active-directory-permissions) in the specified OU for the **CM_JD** account, and the client's Active Directory computer account is in the **Contoso > Computers > Workstations** OU. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed.
 
-In this topic, you will learn how to replace a Windows 7 SP1 computer using Microsoft Endpoint Configuration Manager. This process is similar to refreshing a computer, but since you are replacing the machine, you have to run the backup job separately from the deployment of Windows 10.
+## Create a replace task sequence
 
-For the purposes of this topic, we will use three machines: DC01, CM01, and PC0004. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. PC0004 is a machine with Windows 7 SP1 that will be replaced with a new machine running Windows 10. DC01, CM01, and PC0004 are all members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+On **CM01**:
 
-In this topic, you will create a backup-only task sequence that you run on PC0004, the machine you are replacing. For more information, see [Replace a Windows 7 computer with a Windows 10 computer](../deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md).
-
-## <a href="" id="sec01"></a>Create a replace task sequence
-
-
-1. On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
-
+1. Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
 2. On the **Choose Template** page, select the **Client Replace Task Sequence** template and click **Next**.
-
 3. On the **General** page, assign the following settings and click **Next**:
 
    * Task sequence name: Replace Task Sequence
-
    * Task sequence comments: USMT backup only
 
 4. On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
-
 5. On the **MDT Package** page, browse and select the **OSD / MDT** package. Then click **Next**.
-
-6. On the **USMT Package** page, browse and select the O**SD / Microsoft Corporation User State Migration Tool for Windows 8 10.0.10240.16384** package. Then click **Next**.
-
+6. On the **USMT Package** page, browse and select the **OSD / Microsoft Corporation User State Migration Tool for Windows** package. Then click **Next**.
 7. On the **Settings Package** page, browse and select the **OSD / Windows 10 x64 Settings** package. Then click **Next**.
-
 8. On the **Summary** page, review the details and then click **Next**.
-
 9. On the **Confirmation** page, click **Finish**.
 
 10. Review the Replace Task Sequence. 
+
     >[!NOTE]
-    >This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the Client Replace Task Sequence template when creating the task sequence.
+    >This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the **Client Replace Task Sequence** template when creating the task sequence.
 
 ![The back-up only task sequence](../images/mdt-06-fig42.png "The back-up only task sequence")
 
-Figure 34. The backup-only task sequence (named Replace Task Sequence).
+The backup-only task sequence (named Replace Task Sequence).
 
-## <a href="" id="sec02"></a>Associate the new machine with the old computer
+## Associate the new machine with the old computer
 
+This section walks you through the process of associating a new, blank device (PC0006), with an existing computer (PC0004), for the purpose of replacing PC0004 with PC0006. PC0006 can be either a physical or virtual machine.
 
-This section walks you through the process of associating a blank machine, PC0006, with an old machine, PC0004, for the purpose of replacing PC0004 with PC0006. PC0006 can be either a physical or virtual machine.
+On **HV01** (if PC0006 is a VM) or in the PC0006 BIOS:
 
-1.  Make a note of the PC0006 machine's MAC Address. (If PC0006 is a virtual machine, you can see the MAC Address in the virtual machine settings.) In our example, the PC0006 MAC Address is 00:15:5D:0A:6A:96.
+1.  Make a note of the MAC address for PC0006. (If PC0006 is a virtual machine, you can see the MAC Address in the virtual machine settings.) In our example, the PC0006 MAC Address is 00:15:5D:0A:6A:96. Do not attempt to PXE boot PC0006 yet.
 
-2.  Using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Devices**, and then select **Import Computer Information**.
+On **CM01**:
 
+2.  Using the Configuration Manager console, in the Assets and Compliance workspace, right-click **Devices**, and then click **Import Computer Information**.
 3.  On the **Select Source** page, select **Import single computer** and click **Next**.
-
 4.  On the **Single Computer** page, use the following settings and then click **Next**:
 
     * Computer Name: PC0006
-
-    * MAC Address: &lt;the mac address from step 1&gt;
-
+    * MAC Address: &lt;the mac address that you wrote down&gt;
     * Source Computer: PC0004
 
     ![Create the computer association](../images/mdt-06-fig43.png "Create the computer association")
 
-    Figure 35. Creating the computer association between PC0004 and PC0006.
+    Creating the computer association between PC0004 and PC0006.
 
 5.  On the **User Accounts** page, select **Capture and restore all user accounts** and click **Next**.
-
 6.  On the **Data Preview** page, click **Next**.
-
-7.  On the **Choose Target Collection** page, select the **Install Windows 10 Enterprise x64** collection and click **Next**.
-
+7.  On the **Choose additional collections** page, click **Add** and then select the **Install Windows 10 Enterprise x64** collection. Now, select the checkbox next to the Install Windows 10 Enterprise x64 collection you just added, and then click **Next**.
 8.  On the **Summary** page, click **Next**, and then click **Close**.
+9.  Select the **User State Migration** node and review the computer association in the right hand pane.
+10. Right-click the **PC0004/PC0006** association and click **View Recovery Information**. Note that a recovery key has been assigned already, but a user state store location has not.
+11. Review the **Install Windows 10 Enterprise x64** collection. Do not continue until you see the **PC0006** computer in the collection. You might have to update membership and refresh the collection again.
 
-9.  Select the **User State Migration** node and review the computer association in the right pane.
+## Create a device collection and add the PC0004 computer
 
-10. Right-click the **PC0004/PC0006** association and select **View Recovery Information**. Note that a recovery key has been assigned already, but a user state store location has not.
+On **CM01**:
 
-11. Review the Install Windows 10 Enterprise x64 collection. Do not continue until you see the PC0006 machine in the collection. You might have to update and refresh the collection again.
-
-## <a href="" id="sec03"></a>Create a device collection and add the PC0004 computer
-
-
-1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings.
+1.  Using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
 
     * General
-
-    * Name: USMT Backup (Replace)
-
-    * Limited Collection: All Systems
-
+      * Name: USMT Backup (Replace)
+      * Limited Collection: All Systems
     * Membership rules:
+      * Add Rule: Direct rule
+        * Resource Class: System Resource
+        * Attribute Name: Name
+        * Value: PC0004
+        * Select Resources:
+          * Select **PC0004**
 
-    * Direct rule
+    Use default settings for the remaining wizard pages, then click **Close**.
 
-    * Resource Class: System Resource
+2.  Review the **USMT Backup (Replace)** collection. Do not continue until you see the **PC0004** computer in the collection.
 
-    * Attribute Name: Name
+## Create a new deployment
 
-    * Value: PC0004
+On **CM01**:
 
-    * Select **Resources**
-
-    * Select **PC0004**
-
-2.  Review the USMT Backup (Replace) collection. Do not continue until you see the PC0004 machine in the collection.
-
-## <a href="" id="sec04"></a>Create a new deployment
-
-
-Using the Configuration Manager console, in the Software Library workspace, select **Task Sequences**, right-click **Replace Task Sequence**, and then select **Deploy**. Use the following settings:
+Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Replace Task Sequence**, and then select **Deploy**. Use the following settings:
 
 -   General
-
     -   Collection: USMT Backup (Replace)
-
 -   Deployment Settings
-
     -   Purpose: Available
-
     -   Make available to the following: Only Configuration Manager Clients
-
 -   Scheduling
-
     -   &lt;default&gt;
-
 -   User Experience
-
     -   &lt;default&gt;
-
 -   Alerts
-
     -   &lt;default&gt;
-
 -   Distribution Points
-
     -   &lt;default&gt;
 
-## <a href="" id="sec05"></a>Verify the backup
+## Verify the backup
 
+This section assumes that you have a computer named PC0004 with the Configuration Manager client installed.
 
-This section assumes that you have a machine named PC0004 with the Configuration Manager 2012 client installed.
+On **PC0004**:
 
-1.  Start the PC0004 machine, and using the Control Panel, start the Configuration Manager applet.
-
-2.  In the **Actions** tab, select the **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, and click **OK**.
+1.  If it is not alreayd started, start the PC0004 computer and open the Configuration Manager control panel (control smscfgrc).
+2.  On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, click **Run Now**, and then click **OK** in the popup dialog box that appears.
 
     >[!NOTE]
     >You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
-3.  Using the Software Center, select the **Replace Task Sequence** deployment and click **INSTALL**.
+3.  Open the Software Center, select the **Replace Task Sequence** deployment and then click **Install**.
+4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
+5.  Allow the Replace Task Sequence to complete. The PC0004 computer will gather user data, boot into Windows PE and gather more data, then boot back to the full OS. The entire process should only take a few minutes.
 
-4.  In the **Software Center** dialog box, click **INSTALL OPERATING SYSTEM**.
+![pc0004b](../images/pc0004b.png)
 
-5.  Allow the Replace Task Sequence to complete. It should only take about five minutes.
+Capturing the user state
 
-6.  On CM01, in the **D:\\MigData** folder, verify that a folder was created containing the USMT backup.
+On **CM01**:
 
-7.  Using the Configuration Manager console, in the Asset and Compliance workspace, select the **User State Migration** node, right-click the **PC0004/PC0006** association, and select **View Recovery Information**. Note that the object now also has a user state store location.
+6.  Open the state migration point storage folder (ex: D:\Migdata) and verify that a sub-folder was created containing the USMT backup.
+7.  Using the Configuration Manager console, in the Assets and Compliance workspace, select the **User State Migration** node, right-click the **PC0004/PC0006** association, and select **View Recovery Information**. Note that the object now also has a user state store location.
 
     >[!NOTE]
     >It may take a few minutes for the user state store location to be populated.
 
- 
+## Deploy the new computer
 
-## <a href="" id="sec06"></a>Deploy the new computer
+On **PC0006**:
 
+1. Start the PC0006 virtual machine (or physical computer), press **F12** to Pre-Boot Execution Environment (PXE) boot when prompted. Allow it to boot Windows Preinstallation Environment (Windows PE), and then complete the deployment wizard using the following settings:
 
-1.  Start the PC0006 virtual machine, press **F12** to Pre-Boot Execution Environment (PXE) boot when prompted. Allow it to boot Windows Preinstallation Environment (Windows PE), and then complete the deployment wizard using the following settings:
-
-    * Password: P@ssw0rd
-
-    * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 Custom Image
+    * Password: pass@word1
+    * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM
 
 2.  The setup now starts and does the following:
 
     * Installs the Windows 10 operating system
-
     * Installs the Configuration Manager client
-
     * Joins it to the domain
-
     * Installs the applications
-
     * Restores the PC0004 backup
 
-When the process is complete, you will have a new Windows 10 machine in your domain with user data and settings restored.
+When the process is complete, you will have a new Windows 10 computer in your domain with user data and settings restored. See the following examples:
+
+![pc0006a](../images/pc0006a.png)<br>
+![pc0006b](../images/pc0006b.png)<br>
+![pc0006c](../images/pc0006c.png)<br>
+![pc0006d](../images/pc0006d.png)<br>
+![pc0006e](../images/pc0006e.png)<br>
+![pc0006f](../images/pc0006f.png)<br>
+![pc0006g](../images/pc0006g.png)<br>
+![pc0006h](../images/pc0006h.png)<br>
+![pc0006i](../images/pc0006i.png)
+
+Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuraton-manager.md).
 
 ## Related topics
 
-
-[Integrate Configuration Manager with MDT](../deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
-
-[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
-
-[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
-
-[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
-
-[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
-
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
-
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)
-
-[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)
-
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-
- 
-
- 
-
-
-
-
-
+[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
+[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
+[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
+[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
+[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

@@ -55,8 +55,8 @@ To verify that PC003 is correctly assigned to the PS1 site:
 
 On **PC0003**:
 
-1. Open the Configuration Manager control panel (control ).
-2. On the Site tab, click Find Site.
+1. Open the Configuration Manager control panel (control smscfgrc).
+2. On the **Site** tab, click **Configure Settings**, then click **Find Site**.
 3. Verify that Configuration Manager has successfullyl found a site to manage this client is displayed. See the following example.
 
 ![pc0003a](../images/pc0003a.png)

@@ -127,7 +127,7 @@ On **CM01**:
 
 1.  Using the Configuration Manager Console, in the Software Library workspace, expand **Application Management**, and then select **Packages**.
 2.  Right-click **Packages**, point to **Folder**, click **Create Folder** and create the OSD folder. This will create the Root \ OSD folder structure.
-3.  Select the **MDT** and **Windows 10 x64 Settings** packages, right-click and select **Move**.
+3.  Select the **MDT**, **User State Migration Tool for Windows**, and **Windows 10 x64 Settings** packages, right-click and select **Move**.
 4.  In the **Move Selected Items** dialog box, select the **OSD** folder, and click **OK**.
 
 Next, see [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md).
