@@ -119,7 +119,7 @@ After the task sequence finishes, the computer will be fully upgraded to Windows
 With Configuration Manager, new built-in functionality makes it easier to upgrade to Windows 10.
 
 > [!NOTE]
-> For more details about Configuration Manager, see the [Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog). An [evaluation version is currently available](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
+> For more details about Configuration Manager, see the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog). An [evaluation version](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) is currently available for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
  
 
@@ -212,7 +212,6 @@ After the task sequence completes, the computer will be fully upgraded to Window
  
 
  
-
 
 
 
