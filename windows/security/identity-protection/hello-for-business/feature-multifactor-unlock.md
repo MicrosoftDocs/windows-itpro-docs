@@ -60,6 +60,7 @@ Supported credential providers include:
 |Fingerprint | \{BEC09223-B018-416D-A0AC-523971B639F5}|
 |Facial Recognition | \{8AF662BF-65A0-4D0A-A540-A338A999D36F}|
 |Trusted Signal<br>(Phone proximity, Network location) | \{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}|
+|FIDO2 security keys | \{F8A1793B-7873-4046-B2A7-1F318747F427}|
 
 >[!NOTE]
 >Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
@@ -72,6 +73,7 @@ The default credential providers for the **First unlock factor credential provid
 The default credential providers for the **Second unlock factor credential provider** include:
 * Trusted Signal
 * PIN
+* FIDO2 security key
 
 Configure a comma separated list of credential provider GUIDs you want to use as first and second unlock factors. While a credential provider can appear in both lists, remember that a credential supported by that provider can only satisfy one of the unlock factors. Listed credential providers do not need to be in any specific order. 
 
