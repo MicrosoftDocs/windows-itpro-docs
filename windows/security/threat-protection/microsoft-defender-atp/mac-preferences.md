@@ -493,7 +493,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 
 The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
 
-### Property list for JAMF Configuration Profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
