@@ -364,7 +364,7 @@ Specifies the value of tag
 
 To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
-The following configuration profile (or, in case of JAMF, a property list that could be uploaded into custom settings Configuration Profile) will:
+The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
