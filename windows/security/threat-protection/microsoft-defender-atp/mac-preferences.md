@@ -372,7 +372,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
-### Property list for JAMF Configuration Profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
