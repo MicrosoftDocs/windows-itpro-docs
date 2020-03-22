@@ -62,8 +62,8 @@ Supported credential providers include:
 |Trusted Signal<br>(Phone proximity, Network location) | \{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}|
 |FIDO2 security keys | \{F8A1793B-7873-4046-B2A7-1F318747F427}|
 
->[!NOTE]
->Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
+> [!NOTE]
+> Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
 
 The default credential providers for the **First unlock factor credential provider** include:
 * PIN
