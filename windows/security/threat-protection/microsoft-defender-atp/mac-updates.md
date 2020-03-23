@@ -67,7 +67,6 @@ The `Production` channel contains the most stable version of the product.
 > $ defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
-
 ### Set update check frequency
 
 Change how often MAU searches for updates.
