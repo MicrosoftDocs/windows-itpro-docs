@@ -26,7 +26,7 @@ ms.topic: article
 To onboard machines without Internet access, you'll need to take the following general steps:
 
 [!IMPORTANT] The steps below are applicable only to machines running previous versions of Windows such as:
-Windows Server 2016 and earlier or Windows 8.1 and earlier.
+Windows Server 2016 and earlier or Windows 8.1 and earlier.</br>
 Note: An OMS gateway server can still be used as proxy for disconnected Windows 10 machines when configured via 'TelemetryProxyServer' registry or GPO.</br>
 For more information, refer to the articles below:
 https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel
