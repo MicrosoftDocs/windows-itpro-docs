@@ -459,7 +459,7 @@
 ####### [Get machine related alerts](microsoft-defender-atp/get-machine-related-alerts.md)
 ####### [Get installed software](microsoft-defender-atp/get-installed-software.md)
 ####### [Get discovered vulnerabilities](microsoft-defender-atp/get-discovered-vulnerabilities.md)
-####### [Get security recommendation](microsoft-defender-atp/get-security-recommendations.md)
+####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 
