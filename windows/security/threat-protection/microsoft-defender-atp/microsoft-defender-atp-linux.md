@@ -87,7 +87,6 @@ In general you need to take the following steps:
 - Minimum kernel version 2.6.38
 - The `fanotify` kernel option must be enabled
 - Disk space: 650 MB
-
 - The solution currently provides real-time protection for the following file system types:
 
   - btrfs
