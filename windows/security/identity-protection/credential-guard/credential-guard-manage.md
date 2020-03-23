@@ -112,7 +112,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 ### Enable Windows Defender Credential Guard by using the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
-You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](dg_readiness_tool.md).
+You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
 ```
 DG_Readiness_Tool.ps1 -Enable -AutoReboot
