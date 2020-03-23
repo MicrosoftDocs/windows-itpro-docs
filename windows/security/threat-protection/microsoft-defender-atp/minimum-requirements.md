@@ -192,5 +192,4 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 
 ## Related topic
-- [Validate licensing and complete setup](licensing.md)
 - [Onboard machines](onboard-configure.md)
