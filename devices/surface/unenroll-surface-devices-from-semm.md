@@ -9,7 +9,6 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 01/06/2017
 ms.reviewer: 
 manager: dansimp
 ms.localizationpriority: medium

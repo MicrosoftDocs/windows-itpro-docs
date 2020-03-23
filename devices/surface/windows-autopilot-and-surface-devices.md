@@ -13,7 +13,6 @@ ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 02/14/2020
 ---
 
 # Windows Autopilot and Surface devices
