@@ -33,9 +33,9 @@ Windows Server 2016 and earlier or Windows 8.1 and earlier.
 > An OMS gateway server can still be used as proxy for disconnected Windows 10 machines when configured via 'TelemetryProxyServer' registry or GPO.
 
 For more information, see the following articles:
-- [Onboard previous versions of Windows] (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel)
-- [Onboard servers to the Microsoft Defender ATP service] (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
-- [Configure machine proxy and Internet connectivity settings] (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel)
+- [Onboard servers to the Microsoft Defender ATP service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
 ## On-premise machines
 
