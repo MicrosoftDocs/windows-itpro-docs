@@ -145,7 +145,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
   <MsgRef>1</MsgRef>
   <CmdRef>2</CmdRef>
   <Cmd>Replace</Cmd>
-  <Data><![CDATA[200]]></Data>
+  <Data>200</Data>
 </Status>
 ```
 
@@ -186,7 +186,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
   <MsgRef>1</MsgRef>
   <CmdRef>2</CmdRef>
   <Cmd>Replace</Cmd>
-  <Data><![CDATA[200]]></Data>
+  <Data>200</Data>
 </Status>
 ```
 
@@ -223,7 +223,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
   <MsgRef>1</MsgRef>
   <CmdRef>1</CmdRef>
   <Cmd>Delete</Cmd>
-  <Data><![CDATA[200]]></Data>
+  <Data>200</Data>
 </Status>
 ```
 

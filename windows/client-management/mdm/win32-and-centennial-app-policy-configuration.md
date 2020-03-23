@@ -362,7 +362,7 @@ The following example shows an ADMX file in SyncML format:
 
 **Response Syncml**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data><![CDATA[200]]></Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
 ```
 
 ### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy 
@@ -451,7 +451,7 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data><![CDATA[200]]></Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
 ### <a href="" id="disabling-an-app-policy"></a>Disabling an app policy
@@ -485,7 +485,7 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data><![CDATA[200]]></Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
 ### <a href="" id="setting-an-app-policy-to-not-configured"></a>Setting an app policy to not configured
@@ -513,5 +513,5 @@ The following examples describe how to set an ADMX-ingested app policy.
 
 **Response SyncML**
 ```XML
-<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data><![CDATA[200]]></Data></Status>
+<Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data>200</Data></Status>
 ```
