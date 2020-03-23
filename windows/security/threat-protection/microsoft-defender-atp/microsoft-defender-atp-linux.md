@@ -88,6 +88,17 @@ In general you need to take the following steps:
 - The `fanotify` kernel option must be enabled
 - Disk space: 650 MB
 
+- The solution currently provides real-time protection for the following file system types:
+
+  - btrfs
+  - ext2
+  - ext3
+  - ext4
+  - tmpfs
+  - xfs
+
+  More file system types will be added in the future.
+
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 ### Network connections
