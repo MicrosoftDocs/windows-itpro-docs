@@ -20,7 +20,7 @@ manager: dansimp
 -   Windows 10  
 
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
+Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
 
 Follow the guidance in this topic to set up Take a Test on multiple PCs.
 
@@ -130,7 +130,7 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 1. [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
 2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
-   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtine settings**.
+   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
    2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
    3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
 
