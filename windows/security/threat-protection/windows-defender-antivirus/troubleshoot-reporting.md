@@ -22,6 +22,9 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+> [!IMPORTANT]
+> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
+
 You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
 
 When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of devices or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you might encounter problems or issues.
