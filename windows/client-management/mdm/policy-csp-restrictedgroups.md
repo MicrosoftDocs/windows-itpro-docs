@@ -76,7 +76,7 @@ manager: dansimp
 <!--Description-->
 This security setting allows an administrator to define the members that are part of a security-sensitive (restricted) group. When a Restricted Groups policy is enforced, any current member of a restricted group that is not on the Members list is removed, except for the built-in administrator in the built-in Administrators group. Any user on the Members list who is not currently a member of the restricted group is added. An empty Members list means that the restricted group has no members. The membership configuration is based on SIDS, therefore renaming these built-in groups does not affect retention of this special membership.
 
-For example, you can create a Restricted Groups policy to allow only specified users, Alice and John, to be members of the Administrators group. When this policy is refreshed, only Alice and John will remain as members of the Administrators group.  
+For example, you can create a Restricted Groups policy to allow only specified users, Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group and all other members will be removed.  
 
 > [!CAUTION]
 > Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:
