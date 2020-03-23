@@ -211,7 +211,7 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 
      For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
 
-     To get started, go here: [Create a link using a web UI](http://aka.ms/create-a-take-a-test-link ).
+     To get started, go here: [Create a link using a web UI](http://aka.ms/create-a-take-a-test-link).
 
    - Create a link using schema activation
 
@@ -255,7 +255,7 @@ One of the ways you can present content in a locked down manner is by embedding 
    See [Permissive mode](take-a-test-app-technical.md#permissive-mode) and [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
 
 ### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](http://aka.ms/create-a-take-a-test-link ) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](http://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
 
 1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
 2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.
