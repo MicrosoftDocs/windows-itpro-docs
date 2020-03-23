@@ -6,10 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 12/02/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.localizationpriority: medium
