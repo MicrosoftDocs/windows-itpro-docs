@@ -7,10 +7,9 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 12/30/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro

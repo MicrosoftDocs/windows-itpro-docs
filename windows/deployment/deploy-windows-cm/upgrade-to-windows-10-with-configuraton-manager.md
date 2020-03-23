@@ -24,7 +24,7 @@ ms.topic: article
 The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Configuration Manager task sequence to completely automate the process.
 
 >[!IMPORTANT]
->Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must removed from a device before performing an in-place upgrade to Windows 10.
+>Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must be removed from a device before performing an in-place upgrade to Windows 10.
 
 ## Infrastructure
 
@@ -124,11 +124,15 @@ On **PC0004**:
 
 3.  Open the Software Center, select the **Upgrade Task Sequence** deployment and then click **Install**.
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
-5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications.
+5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications. See the following examples:
 
 ![pc0004-a](../images/pc0004-a.png)<br>
 ![pc0004-b](../images/pc0004-b.png)<br>
-![pc0004-b](../images/pc0004-b.png)
+![pc0004-c](../images/pc0004-c.png)<br>
+![pc0004-d](../images/pc0004-d.png)<br>
+![pc0004-e](../images/pc0004-e.png)<br>
+![pc0004-f](../images/pc0004-f.png)<br>
+![pc0004-g](../images/pc0004-g.png)
 
 In-place upgrade with Configuration Manager
 
