@@ -52,9 +52,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## Find and remediate software or software versions which have reached end-of-support (EOS)
 
-End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced. When you use software or software versions which have reached end-of-support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
+End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced, and will not receive security updates. When you use software or software versions which have reached end-of-support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
 
-It is crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem.
+It is crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end of support, and update versions that have reached end of support. It is best to create and implement a plan **before** the end of support dates.
 
 To find software or software versions which have reached end-of-support:
 
