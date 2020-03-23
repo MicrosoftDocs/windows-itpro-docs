@@ -9,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
