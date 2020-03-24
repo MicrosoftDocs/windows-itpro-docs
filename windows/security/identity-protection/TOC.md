@@ -24,6 +24,7 @@
 ### [How Credential Guard works](credential-guard/credential-guard-how-it-works.md)
 ### [Credential Guard Requirements](credential-guard/credential-guard-requirements.md)
 ### [Manage Credential Guard](credential-guard/credential-guard-manage.md)
+### [Hardware readiness tool](credential-guard/dg-readiness-tool.md)
 ### [Credential Guard protection limits](credential-guard/credential-guard-protection-limits.md)
 ### [Considerations when using Credential Guard](credential-guard/credential-guard-considerations.md)
 ### [Credential Guard: Additional mitigations](credential-guard/additional-mitigations.md)
