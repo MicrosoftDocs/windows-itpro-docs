@@ -80,8 +80,7 @@ This security setting allows an administrator to define the members that are par
 For example, you can create a Restricted Groups policy to allow only specified users, Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group and all other members will be removed.  
 
 > [!CAUTION]
-> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:
->
+> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
 > | Error Code in Hex | Error Code in Dec| Symbolic Name | Error Description | Header |
 > |----------|----------|----------|----------|----------|
 > |0x55b|1371|ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|winerror.h|
