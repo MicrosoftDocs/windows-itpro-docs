@@ -1,14 +1,14 @@
 ---
-title: Get missing KBs
-description: Retrieves a list of software inventory
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, mdatp tvm api
+title: Get missing KBs by software ID
+description: Retrieves missing KBs by software ID
+keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get missing KBs
+# Get missing KBs by software ID
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Retrieves missing KBs by software Id
+Retrieves missing KBs by software ID
 
 ## Permissions
 
