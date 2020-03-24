@@ -123,8 +123,8 @@ Enabling this rule will not provide additional protection if you have [LSA prote
 
 ## Related topics
 
-- [Attack surface reduction overview](attack-surface-reduction.md)
-- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-- [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
-- [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
+* [Attack surface reduction overview](attack-surface-reduction.md)
+* [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+* [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+* [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+* [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
