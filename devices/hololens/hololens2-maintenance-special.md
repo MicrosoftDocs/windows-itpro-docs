@@ -13,8 +13,10 @@ audience: ITPro
 ms.localizationpriority: medium
 keywords: hololens, disinfect, sanitize, virus
 manager: jarrettr
-
+appliesto:
+- HoloLens 2
 ---
+
 # Special instructions for disinfecting your HoloLens 2 device
 
 ## Cleaning and disinfecting instructions
