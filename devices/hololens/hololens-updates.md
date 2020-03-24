@@ -124,7 +124,9 @@ You can use the following update policies to configure devices to get updates fr
 
 #### Creating and assigning an update ring
 
-1. Sign-in to the Intune profile and navigate to your Intune profiles.
+For a more detailed version of this example, see [Create and assign update rings](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings).
+
+1. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to your Intune profiles.
 1. Select **Software Updates** > **Windows 10 update rings** > **Create**.
 1. Under **Basics**, specify a name, a description (optional) and then select **Next**.
 1. Under **Update ring settings**, for **Servicing channel**, select **Semi-Annual Channel**, and then change **Feature update deferral period** to **120**. When finished, select **Next**.
