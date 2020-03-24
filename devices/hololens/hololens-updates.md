@@ -120,8 +120,37 @@ You can use the following update policies to configure devices to get updates fr
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
+### Examples - using Intune to manage updates
 
+#### Creating and assigning an update ring
 
+1. Sign-in to the Intune profile and navigate to your Intune profiles.
+1. Select **Software Updates** > **Windows 10 update rings** > **Create**.
+1. Under **Basics**, specify a name, a description (optional) and then select **Next**.
+1. Under **Update ring settings**, for **Servicing channel**, select **Semi-Annual Channel**, and then change **Feature update deferral period** to **120**. When finished, select **Next**.
+1. Under **Assignments**, select **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignments. When finished, select **Next**.
+1. Under **Review + create**, review the settings. When you're ready to save the update ring configuration, select **Create**.
+
+The list of update rings now includes the new Windows 10 update ring.
+
+#### Pausing an update ring
+
+If you discover a problem while deploying a feature or quality update, you can pause the update for 35 days (starting from a specified date). This pause prevents other devices from installing the update until you mitigate the issue. If you pause a feature update, quality updates are still offered to devices to ensure they stay secure. After the specified time period has passed, the pause automatically expires. At that point, the update process resumes.
+
+To pause an update ring in Intune, follow these steps:
+
+1. On the overview page for the update ring, select **Pause**.
+1. Select the type of update (**Feature** or **Quality**) to pause, and then select **OK**.
+
+When an update type is paused, the Overview pane for that ring displays how many days remain before that update type resumes.
+
+While the update ring is paused, you can select either of the following options:
+
+- To extend the pause period for an update type for 35 days, select **Extend**.
+- To restore updates for that ring to active operation, select **Resume**. You can pause the update ring again if needed.
+
+> [!NOTE]  
+> The **Uninstall** operation for update rings is not supported for HoloLens 2 devices.
 
 ## Manually check for updates
 
