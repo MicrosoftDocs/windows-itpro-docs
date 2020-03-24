@@ -35,7 +35,7 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
 - **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
-    - A second MDT server (**MDT02**) configured identially to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
+    - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
 - **HV01** is a Hyper-V host computer that is used to build a Windows 10 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
 
@@ -121,7 +121,7 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
   cmd /c "C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=C:\WSUS
   ```
 
->To use the WSUS that you have installed on MDT01, you must also [configure Group Policy](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus#configure-automatic-updates-and-update-service-location) on DC01.
+>To use the WSUS that you have installed on MDT01, you must also [configure Group Policy](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus#configure-automatic-updates-and-update-service-location) on DC01 and perform the neccessary post-installation configuration of WSUS on MDT01.
 
 ## Install MDT
 

@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux manually
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -37,29 +37,29 @@ Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defende
 
 ## Configure the Linux software repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insider-fast* or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insider-fast* can try out new features before devices in *prod*.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use the *insider-fast* channel.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-### RHEL and variants (CentOS and Oracle EL)
+### RHEL and variants (CentOS and Oracle Linux)
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
     > [!NOTE]
-    > In case of Oracle EL and CentOS 8, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
+    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo 
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -67,12 +67,18 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
     ```
-    
+
     ```bash
     sudo rpm --import microsoft.asc
     ```
 
-- Download and make usable all the metadata for the currently enabled yum repositories: 
+- Install `yum-utils` if it is not already installed:
+
+    ```bash
+    sudo yum install yum-utils
+    ```
+
+- Download and make usable all the metadata for the currently enabled yum repositories:
 
     ```bash
     yum makecache
@@ -85,10 +91,10 @@ In order to preview new features and provide early feedback, it is recommended t
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo 
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insider-fast* channel:  
+    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
@@ -99,7 +105,7 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
     ```
-    
+
     ```bash
     rpm --import microsoft.asc
     ```
@@ -112,6 +118,12 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install curl
     ```
 
+- Install `libplist-utils` if it is not already installed:
+
+    ```bash
+    sudo apt-get install libplist-utils
+    ```
+
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
@@ -120,10 +132,10 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insider-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list 
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
     ```
 
 - Install the repository configuration:
@@ -141,12 +153,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    ```
-    
-    ```bash
-    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
-
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
 - Install the https driver if it's not already present:
@@ -163,7 +170,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle EL):
+- RHEL and variants (CentOS and Oracle Linux):
 
     ```bash
     sudo yum install mdatp
@@ -193,7 +200,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
-  
+
     ```bash
     ls -l
     total 8
@@ -234,6 +241,9 @@ Download the onboarding package from Microsoft Defender Security Center:
     1
     ```
 
+    > [!IMPORTANT]
+    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
+
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
@@ -246,7 +256,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     - Open a Terminal window. Copy and execute the following command:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:

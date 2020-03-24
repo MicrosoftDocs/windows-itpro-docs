@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.date: 10/31/2019
 ms.reviewer: hachidan

@@ -37,7 +37,10 @@ New installations are considerably more involved than existing implementations b
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  
 
 ## Active Directory
-This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 or later domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+
+> [!NOTE]
+>There was an issue with key trust authentication on Windows Server 2019. If you are planning to use Windows Server 2019 domain controllers refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) to fix this issue.
  
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
 
@@ -93,7 +96,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > *  Highly available certificate revocation list (Azure AD Joined devices).
   
 ## Azure Active Directory
-You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
+You've prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
 
 The next step of the deployment is to follow the [Creating an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) process to provision an Azure tenant for your organization.
 

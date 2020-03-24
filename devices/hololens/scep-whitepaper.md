@@ -11,20 +11,23 @@ ms.sitesec: library
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
 ---
 
-# SCEP Whitepaper
+# SCEP whitepaper
 
 ## High Level
 
 ### How the SCEP Challenge PW is secured
 
-We work around the weakness of the SCEP protocol by generating custom challenges in Intune itself. The challenge string we create is signed/encrypted, and contains the information we’ve configured in Intune for certificate issuance into the challenge blob. This means the blob used as the challenge string contains the expected CSR information like the Subject Name, Subject Alternative Name, and other attributes.
+We work around the weakness of the SCEP protocol by generating custom challenges in Intune itself. The challenge string we create is signed/encrypted, and contains the information we've configured in Intune for certificate issuance into the challenge blob. This means the blob used as the challenge string contains the expected CSR information like the Subject Name, Subject Alternative Name, and other attributes.
 
-We then pass that to the device and then the device generates it’s CSR and passes it, and the blob to the SCEP URL it received in the MDM profile. On NDES servers running the Intune SCEP module we perform a custom challenge validation that validates the signature on the blob, decrypts the challenge blob itself, compare it to the CSR received, and then determine if we should issue the cert.  If any portion of this check fails then the certificate request is rejected.
+We then pass that to the device and then the device generates it's CSR and passes it, and the blob to the SCEP URL it received in the MDM profile. On NDES servers running the Intune SCEP module we perform a custom challenge validation that validates the signature on the blob, decrypts the challenge blob itself, compare it to the CSR received, and then determine if we should issue the cert.  If any portion of this check fails then the certificate request is rejected.
 
 ## Behind the scenes
 
@@ -72,6 +75,6 @@ We then pass that to the device and then the device generates it’s CSR and pas
 
     1. 1st time configuration of the connector: Authentication to AAD during the initial connector setup.
 
-    1. Connector checks in with Intune, and will process and any cert revocation transactions (i.e, if the Intune tenant admin issues a remote wipe – full or partial,  also If a user unenrolls their device from Intune), reporting on issued certs, renewing the connectors’ SC_Online_Issuing  certificate from Intune.  Also note: the NDES Intune connector has shared PKCS cert functionality (if you decide to issue PKCS/PFX based certs) so the connector checks to Intune for PKCS cert requests even though there won’t be any requests to process.  We are splitting that functionality out, so this connector just handles SCEP, but no ETA yet.
+    1. Connector checks in with Intune, and will process and any cert revocation transactions (i.e, if the Intune tenant admin issues a remote wipe – full or partial,  also If a user unenrolls their device from Intune), reporting on issued certs, renewing the connectors' SC_Online_Issuing  certificate from Intune.  Also note: the NDES Intune connector has shared PKCS cert functionality (if you decide to issue PKCS/PFX based certs) so the connector checks to Intune for PKCS cert requests even though there won't be any requests to process.  We are splitting that functionality out, so this connector just handles SCEP, but no ETA yet.
 
 1. [Here](https://docs.microsoft.com/intune/intune-endpoints#microsoft-intune-certificate-connector) is a reference for Intune NDES connector network communications.

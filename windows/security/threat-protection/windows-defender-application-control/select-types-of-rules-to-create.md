@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ---
 
 # Understand WDAC policy rules and file rules
@@ -65,10 +65,10 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
-| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.|
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
 
 ## Windows Defender Application Control file rule levels
 
@@ -126,3 +126,19 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
+
+## Windows Defender Application Control filename rules
+
+File name rule levels provide administrators to specify the file attributes off which to base a file name rule. File name rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Specification of the file name level occurs when creating new policy rules. In addition, to combine file name levels found in multiple policies, you can merge multiple policies. 
+
+Use Table 3 to select the appropriate file name level for your available administrative resources and Windows Defender Application Control deployment scenario.
+
+**Table 3. Windows Defender Application Control policy - filename levels**
+
+| Rule level | Description |
+|----------- | ----------- |
+| **File Description** |  Specifies the file description provided by the developer of the binary. |
+| **Internal Name** |  Specifies the internal name of the binary. |
+| **Original File Name** | Specifies the original file name, or the name with which the file was first created, of the binary. |
+| **Package Family Name** |  Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
+| **Product Name** |  Specifies the name of the product with which the binary ships. |
