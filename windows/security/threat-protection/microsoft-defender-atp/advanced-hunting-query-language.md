@@ -137,6 +137,7 @@ For detailed information about the query language, see [Kusto query language doc
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 

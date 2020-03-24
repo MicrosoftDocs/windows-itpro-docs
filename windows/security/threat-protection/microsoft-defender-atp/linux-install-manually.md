@@ -256,7 +256,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     - Open a Terminal window. Copy and execute the following command:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:

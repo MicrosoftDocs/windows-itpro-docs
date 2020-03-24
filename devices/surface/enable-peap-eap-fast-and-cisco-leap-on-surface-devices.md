@@ -10,10 +10,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 07/27/2017
 ---
 
 # Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices

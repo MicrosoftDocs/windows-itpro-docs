@@ -362,9 +362,9 @@ Specifies the value of tag
 
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
+To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
-The following configuration profile will:
+The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
@@ -372,7 +372,7 @@ The following configuration profile will:
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
-### JAMF profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -491,9 +491,9 @@ The following configuration profile will:
 
 ## Full configuration profile example
 
-The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
+The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
 
-### JAMF profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -734,16 +734,16 @@ The following configuration profile contains entries for all settings described 
         </array>
 ```
 
-## Configuration profile validation
+## Property list validation
 
-The configuration profile must be a valid *.plist* file. This can be checked by executing:
+The property list must be a valid *.plist* file. This can be checked by executing:
 
 ```bash
 $ plutil -lint com.microsoft.wdav.plist
 com.microsoft.wdav.plist: OK
 ```
 
-If the configuration profile is well-formed, the above command outputs `OK` and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
+If the file is well-formed, the above command outputs `OK` and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
 
 ## Configuration profile deployment
 
