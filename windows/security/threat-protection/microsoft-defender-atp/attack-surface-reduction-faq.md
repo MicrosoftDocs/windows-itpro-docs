@@ -25,7 +25,7 @@ ms.custom: asr
 
 **Is attack surface reduction (ASR) part of Windows?**
 
-ASR was originally a feature of the suite of exploit guard features introduced as a major update to Windows Defender Antivirus, in Windows 10 version 1709. Windows Defender Antivirus is the native antimalware component of Windows. However, please note that the full ASR featureset is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Windows Defender Antivirus exclusions.
+ASR was originally a feature of the suite of exploit guard features introduced as a major update to Windows Defender Antivirus, in Windows 10 version 1709. Windows Defender Antivirus is the native antimalware component of Windows. However, please note that the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Windows Defender Antivirus exclusions.
 
 **Do I need to have an enterprise license to run ASR rules?**
 
@@ -35,36 +35,37 @@ The full set of ASR rules and features are only supported if you have an enterpr
 
 Yes. ASR is supported for Windows Enterprise E3 and above. See [Use attack surface reduction rules in Windows 10 Enterprise E3](attack-surface-reduction-rules-in-windows-10-enterprise-e3.md) for more details.
 
-**Which rules are supported with an E3 license?**
+**Which features are supported with an E5 license?**
 
-Windows Enterprise E3 supports the ASR rules. These include:
-
-- [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
-- [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
-- [Block Office applications from creating executable content](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
-- [Block Office applications from injecting code into other processes](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
-- [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md##block-javascript-or-vbscript-from-launching-downloaded-executable-content)
-- [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
-- [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
-- [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)<!-- Note: Because the following link contains characters the validator is not expecting, it throws a warning that the bookmark does not exist. This is a false positive; the link correctly targets the heading, Block credential stealing from the Windows local security authority subsystem (lsass.exe), when selected -->
-- [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem-(lsass.exe))
-- [Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
-- [Block untrusted and unsigned processes that run from USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
-
-**Which rules and features are supported with an E5 license?**
-
-All of the rules supported with E3 are also supported in E5. E5 also added some new rules, including:
-
-- [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
-- [Block Office communication applications from creating child processes](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
-- [Block Adobe Reader from creating child processes](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
-- [Block persistence through WMI event subscription](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+All of the rules supported with E3 are also supported with E5.
 
 E5 also added greater integration with Microsoft Defender ATP. With E5, you can [use Microsoft Defender ATP to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
+**What are the the currently supported ASR rules??**
+
+ASR currently supports all of the rules below:
+
+* [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
+* [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
+* [Block Office applications from creating executable content](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
+* [Block Office applications from injecting code into other processes](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
+* [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md##block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+* [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
+* [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
+* [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)<!-- Note: Because the following link contains characters the validator is not expecting, it throws a warning that the bookmark does not exist. This is a false positive; the link correctly targets the heading, Block credential stealing from the Windows local security authority subsystem (lsass.exe), when selected -->
+* [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem-(lsass.exe))
+* [Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+* [Block untrusted and unsigned processes that run from USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+* [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+* [Block Office communication applications from creating child processes](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
+* [Block Adobe Reader from creating child processes](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
+* [Block persistence through WMI event subscription](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+
 **What are some good recommendations for getting started with ASR?**
 
-It is generally best to first test how ASR rules will impact your organization before enabling them, by running them in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked, and exclude them from ASR. Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly-broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
+It is generally best to first test how ASR rules will impact your organization before enabling them, by running them in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
+
+Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly-broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
 
 **How long should I test an ASR rule in audit mode before enabling it?**
 
@@ -84,6 +85,10 @@ Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-redu
 
 It depends on the rule. Most ASR rules cover the behavior of Microsoft Office products and services, such as Word, Excel, PowerPoint, and OneNote, or Outlook. Certain ASR rules, such as *Block execution of potentially obfuscated scripts*, are more general in scope.
 
+**Does ASR support third-party security solutions?**
+
+ASR uses Microsoft Defender Antivirus to block applications. It is not possible to configure ASR to use another security solution for blocking at this time.
+
 **I have an E5 license and enabled some ASR rules in conjunction with Microsoft Defender ATP. Is it possible for an ASR event to not show up at all in Microsoft Defender ATP's event timeline?**
 
 Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Microsoft Defender ATP portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Security Center taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Microsoft Defender ATP.
@@ -94,17 +99,17 @@ Try opening the indexing options directly from Windows 10.
 
 1. Select the **Search** icon on the Windows taskbar.
 
-1. Enter **Indexing options** into the search box. <!-- Where are the ASR rules specifically listed, though? -->
+1. Enter **Indexing options** into the search box.
 
-**Are these criteria used by the rule, *Block executable files from running unless they meet a prevalence, age, or trusted list criterion* configurable by an admin?**
+**Are the criteria used by the rule, *Block executable files from running unless they meet a prevalence, age, or trusted list criterion*, configurable by an admin?**
 
-No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up-to-date with data gathered from around the world. Local admins do not have access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent this rule from being triggered.
+No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up-to-date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
 
 **I enabled the ASR rule, *Block executable files from running unless they meet a prevalence, age, or trusted list criterion*. After some time, I updated a piece of software, and the rule is now blocking it, even though it didn't before. Did something go wrong?**
 
-This rule relies upon each application having a known reputation, as measured by prevalence, age, or being otherwise included on a list of trusted or excluded apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
+This rule relies upon each application having a known reputation, as measured by prevalence, age, or inclusion on a list of trusted apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
 
-Usually, cloud protection can figure out that a new version of an application is similar enough to previous versions that it does not need to be re-assessed at length. However, it might take some time to build reputation after switching versions of an application, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with very new versions of applications, you may opt instead to run this rule in audit mode.
+Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be re-assessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with very new versions of applications, you may opt instead to run this rule in audit mode.
 
 **I recently enabled the ASR rule, *Block credential stealing from the Windows local security authority subsystem (lsass.exe)*, and I am getting a large number of notifications. What is going on?**
 
