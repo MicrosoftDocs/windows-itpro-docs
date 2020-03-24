@@ -20,11 +20,12 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Methods
+
 Method |Return Type |Description
 :---|:---|:---
 [List software](get-software.md) | Software collection | List the organizational software inventory.
@@ -32,16 +33,17 @@ Method |Return Type |Description
 [List software version distribution](get-software-ver-distribution.md)| Distribution collection | List software version distribution by software ID.
 [List machines by software](get-machines-by-software.md)| MachineRef collection | Retrieve a list of machines that are associated with the software ID.
 [List vulnerabilities by software](get-vuln-by-software.md) | [Vulnerability](vulnerability.md) collection | Retrieve a list of vulnerabilities associated with the software ID.
+[Get missing KBs](get-missing-kbs-software.md) | KB collection | Get a list of missing KBs associated with the software ID
 
 ## Properties
-Property |	Type	|	Description
+
+Property |   Type   |   Description
 :---|:---|:---
 id | String | Software ID
-Name | String | Software name 
-Vendor | String | Software vendor name 
-Weaknesses | Long | Number of discovered vulnerabilities 
+Name | String | Software name
+Vendor | String | Software vendor name
+Weaknesses | Long | Number of discovered vulnerabilities
 publicExploit | Boolean | Public exploit exists for some of the vulnerabilities
 activeAlert | Boolean | Active alert is associated with this software
 exposedMachines | Long | Number of exposed machines
-impactScore | Double | Exposure score impact of this software 
-
+impactScore | Double | Exposure score impact of this software
