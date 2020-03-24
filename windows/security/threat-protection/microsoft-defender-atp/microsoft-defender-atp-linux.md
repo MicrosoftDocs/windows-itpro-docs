@@ -53,6 +53,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 ### Known issues
 
 - Logged on users do not appear in the ATP portal.
+- Running the product on CentOS / RHEL / Oracle Linux 7.0 or 7.1 with kernel versions lower than 3.19.8 can result in hanging of the operating system.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
     ```bash
