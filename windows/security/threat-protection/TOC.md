@@ -105,6 +105,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
 #### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+#### [Work with query results](microsoft-defender-atp/advanced-hunting-query-results.md)
 #### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
@@ -384,6 +385,7 @@
 
 #### [Attack surface reduction]()
 ##### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
+##### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
 ##### [Hardware-based isolation]()
 ###### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
 ###### [Application isolation]()
