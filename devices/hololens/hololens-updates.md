@@ -44,7 +44,7 @@ For a detailed discussion of how to use Intune to configure Windows Update for B
 
 ### Configure update policies for HoloLens 2 or HoloLens (1st gen)
 
-This section describes the policies that you can use to manage updates for either HoloLens 2 or HoloLens (1st gen). For information about additional functionality that is available for HoloLens 2, see [Plan and configure update rollouts for HoloLens 2](#plan-and-configure-update-rollouts-for-holoLens-2).
+This section describes the policies that you can use to manage updates for either HoloLens 2 or HoloLens (1st gen). For information about additional functionality that is available for HoloLens 2, see [Plan and configure update rollouts for HoloLens 2](#plan-and-configure-update-rollouts-for-hololens-2).
 
 The [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) defines the policies that configure Windows Update for Business.
 
