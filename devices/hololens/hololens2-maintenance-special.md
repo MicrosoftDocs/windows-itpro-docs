@@ -1,5 +1,5 @@
 ---
-title: Special instructions for disinfecting your HoloLens 2 device
+title: Special instructions for disinfecting your HoloLens 2 device for COVID19
 description: This article describes how to disinfect a HoloLens 2 device, and provides answers to frequently asked questions about device cleaning.
 author: Teresa-Motiv
 ms.author: v-tea
@@ -11,13 +11,16 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
-keywords: hololens, disinfect, sanitize, virus
+keywords: hololens, disinfect, sanitize, virus, COVID19
 manager: jarrettr
 appliesto:
 - HoloLens 2
 ---
 
-# Special instructions for disinfecting your HoloLens 2 device
+# Special instructions for disinfecting your HoloLens 2 device (COVID19)
+
+> [!CAUTION]  
+> The information in this article is intended to help you safeguard users during the current COVID19 situation. Over the long term, these cleaning procedures might damage your HoloLens device. Use this information with caution.
 
 ## Cleaning and disinfecting instructions
 
