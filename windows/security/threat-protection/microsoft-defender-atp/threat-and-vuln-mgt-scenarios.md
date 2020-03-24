@@ -69,6 +69,16 @@ To find software or software versions which have reached end-of-support:
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
+## Use APIs
+
+Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
+
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
+
 ## Related topics
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
@@ -83,8 +93,3 @@ After you have identified which software and software versions are vulnerable du
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Recommendation APIs](vulnerability.md)
-- [Machine APIs](machine.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)

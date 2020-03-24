@@ -61,9 +61,15 @@ Go to the Threat & Vulnerability Management navigation menu and select **Securit
 
 You will be able to view the recommendation, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
 
-The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what's on the left,  which means an increase or decrease at the end of even a single machine will change the graph's color.
+The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what's on the left, which means an increase or decrease at the end of even a single machine will change the graph's color.
 
 ![Screenshot of security recommendations page](images/tvmsecrec-updated.png)
+
+### Icons
+
+Useful icons also quickly calls your attention to <ul><li> ![Possible active alert](images/tvm_alert_icon.png) possible active alerts</li><li>![Threat insight](images/tvm_bug_icon.png) associated public exploits</li><li>![Recommendation insight](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+
+### Investigate
 
 Select the security recommendation that you want to investigate or process.
 
