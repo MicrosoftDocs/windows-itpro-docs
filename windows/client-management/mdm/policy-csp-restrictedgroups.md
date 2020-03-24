@@ -83,7 +83,7 @@ For example, you can create a Restricted Groups policy to allow only specified u
 > Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
 >
 > | Error Code  | Symbolic Name | Error Description | Header |
-> |----------|----------|----------|----------|----------|
+> |----------|----------|----------|----------|
 > |0x55b (Hex)<br>1371 (Dec)|ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|winerror.h|
 
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of 0 members when applying the policy implies clearing the access group and should be used with caution.
