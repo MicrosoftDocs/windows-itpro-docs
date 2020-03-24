@@ -27,7 +27,7 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
 
 ## Software requirements
 
-- A [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel is required. Windows 10 Enterprise 2019 long-term servicing channel (LTSC) is also supported.
+- A [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 Semi-Annual Channel is required. Windows 10 Enterprise 2019 long-term servicing channel (LTSC) is also supported.
 - The following editions are supported:
   - Windows 10 Pro
   - Windows 10 Pro Education
