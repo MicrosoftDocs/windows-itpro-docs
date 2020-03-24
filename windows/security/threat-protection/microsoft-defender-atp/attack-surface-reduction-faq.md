@@ -53,7 +53,7 @@ ASR currently supports all of the rules below:
 * [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
 * [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
 * [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)<!-- Note: Because the following link contains characters the validator is not expecting, it throws a warning that the bookmark does not exist. This is a false positive; the link correctly targets the heading, Block credential stealing from the Windows local security authority subsystem (lsass.exe), when selected -->
-* [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem-(lsass.exe))
+* [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)

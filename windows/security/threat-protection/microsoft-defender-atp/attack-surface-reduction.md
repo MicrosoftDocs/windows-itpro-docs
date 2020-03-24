@@ -100,7 +100,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Supported
 [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported
 [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported
-<!-- Note: Because the following link contains characters the validator is not expecting, it throws a warning that the bookmark does not exist. This is a false positive; the link correctly targets the heading, Block credential stealing from the Windows local security authority subsystem (lsass.exe), when selected -->[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem-(lsass.exe)) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
+[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
 [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Not supported
 [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported
 [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported
@@ -252,7 +252,7 @@ Configuration Manager name: Use advanced protection against ransomware
 
 GUID: c1db55ab-c21a-4637-bb3f-a12568109d35
 
-### Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+### Block credential stealing from the Windows local security authority subsystem
 
 This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
 
