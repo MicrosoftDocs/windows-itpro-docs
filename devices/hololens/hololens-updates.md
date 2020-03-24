@@ -44,13 +44,9 @@ For a detailed discussion of how to use Intune to configure Windows Update for B
 
 ### Plan the update strategy
 
-Deferral policies work by ensuring that only updates of a certain age are offered to a device.
+Windows Updates for Business supports deferral policies. A deferral policy specifies the number of days between the date that an update becomes available and the date that the update is offered to a device. By associating subsets of your devices (referred to as *update rings*) with deferral policies, you can coordinate an update rollout strategy for your organization.
 
-Much like any other MDM policy dictated by group assignments, an update ring with a deferral configures the behavior of a specified subset of your device fleet.
-
-Multiple update rings can then be used to coordinate an update rollout strategy for your organization.
-
-Let's assume an organization with 1000 devices that are updated over 5 waves. Following the steps above, we could create 5 rings:
+For example, consider an organization that has 1,000 devices and has to update them in five ways. The organization can create five update rings, as shown in the following table:
 
 |Group |Number of devices |Deferral (days) |
 | ---| :---: | :---: |
@@ -75,45 +71,50 @@ The [Policy configuration service provider (CSP)](https://docs.microsoft.com/win
 
 #### Configure automatic checks for updates
 
-You can use the [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) policy to manage automatic update behavior, such as scanning, downloading, and installing updates.
+You can use the Update/AllowAutoUpdate policy to manage automatic update behavior, such as scanning, downloading, and installing updates.
 
 The supported values for this policy are the following:
 
-- **0** - Notify the user when there are updates that apply to the device and are ready for download.
-- **1** - Automatically install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed when the device is not in use and is not running on battery power. If unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced.
-- **2** - [Recommended, Default] Automatically install and restart. Updates are downloaded automatically on non-metered networks and installed when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices.
-- **3** - Automatically install and restart at a specified time. Specify the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
-- **4** - Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This option also sets the Settings page to read-only.
+- **0** - Notify the user when there is an update that is ready to download that applies to the device.
+- **1** - Automatically install the update and then notify the user to schedule a device restart.  
+- **2** - Automatically install the update, and then restart the device. *This is the recommended value*, and is the default value for this policy.  
+
+- **3** - Automatically install the update, and restart at a specified time. Specify the installation day and time. If no day and time are specified, the default is daily at 3 AM. 
+
+- **4** - Automatically install the update, and then restart the device. This option also sets the Settings page to read-only.
 
 - **5** - Turn off automatic updates.
+
+For more details about the available settings for this policy, see [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
 
 > [!NOTE]  
 > In Microsoft Intune, you can use **Automatic Update Behavior** to change this policy. For more information, see [Manage software updates in Microsoft Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
 
-#### Defer an update
+#### Configure an update deferral
 
-You can use deferrals to stage
+A deferral policy specifies the number of days between the date that an update becomes available and the date that the update is offered to a device.
 
-Deferrals are useful in allowing time to validate deployments as they are pushed to devices by staging their rollout across rings. An IT administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. They work by allowing you to specify the number of days after an update is released before it is offered to a device.
-
-Feature and quality updates can be configured independently and applied via the following policies:
+You can configure different deferrals for feature updates and quality updates. The following table lists the specific policies to use for each type, as well as the maximum deferral for each.
 
 |Category |Policy |Maximum deferral |
 | --- | --- | --- |
 |Feature updates |DeferFeatureUpdatesPeriodInDays |365 days |
 |Quality updates |DeferQualityUpdatesPeriodInDays |30 days |
 
+#### Configure an update schedule
 
 To configure how and when updates are applied, use the following policies:
 
-- [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)
-- [Update/ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+- [Update/ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday).  
+   - Values: **0** – **7** (0 = every day, 1 = Sunday, 7 = Saturday)
+   - Default value: **0** (every day)
+- [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime).
+   - Values: 0 – 23 (0 = 12AM, 23 = 11PM)
+   - Default value: 3pm
 
+#### For devices that run Windows 10, version 1607 only
 
-**For devices that run Windows 10, version 1607 only**
-
-You can use the following update policies to configure devices and get updates from the Windows Server Update Service (WSUS), instead of Windows Update:
+You can use the following update policies to configure devices to get updates from the Windows Server Update Service (WSUS), instead of Windows Update:
 
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
