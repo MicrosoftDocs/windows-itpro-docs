@@ -352,7 +352,7 @@ The `list` element simply corresponds to a hive of REG_SZ registry strings and c
 > [!NOTE]
 > It is expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: `&#xF000;`).
 
-Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server manages the name/value pairs. See below for a simple writeup of Group Policy List.
+Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It is expected that the MDM server manages the name/value pairs. See below for a simple write up of Group Policy List.
 
 **ADMX file: inetres.admx**
 
