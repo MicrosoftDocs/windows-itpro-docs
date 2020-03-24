@@ -95,36 +95,6 @@ InformationProtectionLogs_CL
 - Enable Azure Information Protection integration in Microsoft Defender Security Center:
     - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
 
-## Data protection
-
-### Endpoint data loss prevention
-
-For data to be protected, they must first be identified through labels.
-
-Sensitivity labels are created in Office 365 Security & Compliance Center. Microsoft Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
-
-When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Microsoft Defender ATP is the Endpoint data loss prevention.
-
-For the endpoint data loss prevention, you'll need to turn on the Endpoint Data loss prevention and select Enable Windows end point protection (DLP for devices).
-
-![Image of Office 365 Security and Compliance sensitivity label](images/office-scc-label.png)
-
-Once, the policy is set and published, Microsoft Defender ATP automatically enables WIP for labeled files. When a labeled file is created or modified on a Windows device, Microsoft Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy.
-
-This functionality expands the coverage of WIP to protect files based on their label, regardless of their origin.
-
-For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
-
-## Auto labeling
-
-Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
-
-Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
-
-> [!NOTE]
-> Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.
-
-For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
 
 ## Related topics
 
