@@ -1,7 +1,7 @@
 ---
 title: Work with advanced hunting query results in Microsoft Defender ATP
 description: Make the most of the query results returned by advanced hunting in Microsoft Defender ATP
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -86,13 +86,13 @@ DeviceAlertEvents
 | summarize Count = count() by MachineGroup
 | top 10 by Count
 ```
-Use the pie chart view to effectively show distribution across the top domains:
+Use the pie chart view to effectively show distribution across the top groups:
 
 ![Image of advanced hunting query results displayed as a pie chart](images/advanced-hunting-pie-chart.jpg)
 *Pie chart showing distribution of alerts across machine groups*
 
 #### Malware detections over time
-Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts detections of an EICAR test file at 30 minute intervals to show spikes in activity related to that file:
+Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts detections of an EICAR test file at 30 minute intervals to show spikes in detections of that file:
 
 ```kusto
 DeviceEvents
