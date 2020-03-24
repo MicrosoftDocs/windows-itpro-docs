@@ -81,6 +81,7 @@ For example, you can create a Restricted Groups policy to allow only specified u
 
 > [!CAUTION]
 > Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
+>
 > | Error Code  | Symbolic Name | Error Description | Header |
 > |----------|----------|----------|----------|----------|
 > |0x55b (Hex)<br>1371 (Dec)|ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|winerror.h|
