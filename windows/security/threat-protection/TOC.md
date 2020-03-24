@@ -199,6 +199,7 @@
 
 ##### [Exploit protection]()
 ###### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+###### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 ###### [Import/export configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
 ##### [Network protection](microsoft-defender-atp/enable-network-protection.md)
