@@ -280,7 +280,8 @@ You can manually approve updates and set deadlines for installation within the W
 
 To simplify the manual approval process, start by creating a software update view that contains only Windows 10 updates.
 
-> [!NOTE] If you approve more than one feature update for a computer, an error can result with the client.  Only approve one feature update per computer.  
+> [!NOTE]
+> If you approve more than one feature update for a computer, an error can result with the client.  Only approve one feature update per computer.  
 
 **To approve and deploy feature updates manually**
 
