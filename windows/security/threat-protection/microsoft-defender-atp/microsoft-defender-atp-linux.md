@@ -38,10 +38,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
 
-
-
-
-
 ## How to install Microsoft Defender ATP for Linux
 
 ### Prerequisites
@@ -53,6 +49,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 ### Known issues
 
 - Logged on users do not appear in the ATP portal.
+- Running the product on CentOS / RHEL / Oracle Linux 7.0 or 7.1 with kernel versions lower than 3.10.0-327 can result in hanging the operating system. We recommend that you upgrade to version 7.2 or newer.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
     ```bash
@@ -77,12 +74,12 @@ In general you need to take the following steps:
 
 - Supported Linux server distributions and versions: 
 
-  - Red Hat Enterprise Linux 7 or higher
-  - CentOS 7 or higher
+  - Red Hat Enterprise Linux 7.2 or higher
+  - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
-  - Oracle Linux 7
+  - Oracle Linux 7.2 or higher
 
 - Minimum kernel version 2.6.38
 - The `fanotify` kernel option must be enabled
