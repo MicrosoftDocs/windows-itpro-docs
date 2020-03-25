@@ -11,7 +11,7 @@ ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
 ms.author: v-medgar
-manager: sanashar
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 9/17/2019
