@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/08/2017
 ---
 
 # Password must meet complexity requirements
@@ -60,7 +59,7 @@ Additional settings that can be included in a custom Passfilt.dll are the use of
 ### Best practices
 
 > [!NOTE]
-> For the latest best practices, please check [this article](https://www.microsoft.com/en-us/research/publication/password-guidance/).
+> For the latest best practices, see [Password Guidance](https://www.microsoft.com/research/publication/password-guidance).
 
 Set **Passwords must meet complexity requirements** to Enabled. This policy setting, combined with a minimum password length of 8, ensures that there are at least 218,340,105,584,896 different possibilities for a single password. This makes a brute force attack difficult, but still not impossible.
 
