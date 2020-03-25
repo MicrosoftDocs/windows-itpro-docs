@@ -126,7 +126,8 @@ You can roll back and remove a file from quarantine if you’ve determined that 
    ```
 
 > [!NOTE]
-> Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
+> In some scenarios the ThreatName may appear as: EUS:Win32/CustomEnterpriseBlock!cl. <br>
+> Microsoft Defender ATP will restore all custom blocked files that were quarantined on this machine in the last 30 days.
 
 ## Add indicator to block or allow a file
 
