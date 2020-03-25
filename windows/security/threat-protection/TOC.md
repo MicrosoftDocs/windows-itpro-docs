@@ -401,10 +401,10 @@
  
 ##### [Web protection]()
 ###### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
-######  [Web threat protection]()
+###### [Web threat protection]()
 ####### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
 ####### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
-#######[Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+####### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
 ###### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
  
 ##### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
@@ -414,16 +414,12 @@
 #### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 ##### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
-##### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
-
 
 
 #### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
+##### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
 
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
-
-
-
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
