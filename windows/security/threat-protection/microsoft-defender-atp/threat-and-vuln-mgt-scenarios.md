@@ -67,6 +67,22 @@ To find software or software versions which have reached end-of-support:
 
     ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
 
+### List of versions and dates
+
+To view a list of version that have reached end of support, or end or support soon, and those dates, follow the below steps:
+
+1. For software that has versions which have reached end of support, or will reach end of support soon, a message will appear in the flyout once the security recommendation is selected.
+
+    ![Screenshot of version distribution link](images/eos-upcoming-eos.png) <br><br>
+
+2. Select the **version distribution** link to go to the software drill down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
+
+    ![Screenshot of version distribution link](images/software-drilldown-eos.png) <br><br>
+
+3. Select one of the versions in the table to open. For example, version 3.5.2150.0. A flyout will appear with the end of support date.
+
+![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
+
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
 ## Use APIs
