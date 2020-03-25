@@ -19,15 +19,15 @@ appliesto:
 
 # Frequently asked questions about cleaning HoloLens 2 devices
 
-> [!IMPORTANT]
-> For specific information about disinfecting HoloLens 2 devices, see [Special instructions for disinfecting your HoloLens 2 device](hololens2-maintenance-special.md).
-
 ## What are the general cleaning instructions for HoloLens 2 devices?
 
 **To clean the device**
 
 1. Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.
 1. Lightly moisten the cloth by using medical 70% isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.
+
+   ![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
+
 1. Let the device dry completely.
 
 **To clean the brow pad**
@@ -47,7 +47,7 @@ Yes. You can use a solution of 70% isopropyl alcohol and water to clean the hard
 
 Yes. The brow pad is magnetically attached to the device. To detach it, pull it gently away from the headband. To replace it, snap it back into place.
 
-![To remove the brow pad, pull it gently away from the headband](./images/hololens-brow-pad.png)
+![Remove or replace the brow pad](images/hololens2-remove-browpad.png)
 
 ## How can I clean the brow pad?
 
@@ -60,14 +60,10 @@ UV germicidal irradiation has not been tested on HoloLens 2.
 > [!CAUTION]  
 > High levels of UV exposure can degrade the display quality and damage the visor coating. Over-exposure to UV has the following effects, in order of the duration and intensity of exposure:
 >  
-> 1. Discoloration on brow-pad, may be on enclosures…
-> 1. AR coating defects on visor and sensor windows
-> 1. Visor and window base materials defects
-> 1. SRG performance degradations
-
-## How can I sanitize the device?
-
-Please follow the cleaning instructions as specified in [Special instructions for disinfecting your HoloLens 2 device](hololens2-maintenance-special.md). The brow pad, which comes in contact with the skin, is designed to be replaceable.
+> 1. The brow pad and device closures become discolored.
+> 1. Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.
+> 1. Defects appear in the base materials of the visor and on the sensor windows.
+> 1. SRG performance degrades.
 
 ## Is the rear pad replaceable?
 
