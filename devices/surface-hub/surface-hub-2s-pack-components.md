@@ -36,7 +36,7 @@ Use the following steps to pack your Surface Hub 2S 50" for shipment.
 | **7.** | Replace the cover and slide the Compute Cartridge back into the unit.                                            | ![Replace the cover and slide the Compute Cartridge back into the unit.](images/surface-hub-2s-repack-9.png)|
 | **8.**  | Re-fasten the locking screw and slide the cover into place.                                                      | ![Re-fasten the locking screw and slide the cover into place.](images/surface-hub-2s-repack-10.png)|
 | **9.**  | Remove any base or mounting hardware. Using two people, place the unit in the base of the shipping container.    | ![Remove any base or mounting hardware. Using two people, place the unit in the base of the shipping container.](images/surface-hub-2s-repack-11.png)|
-| **10.** | Replace the cover of the shipping container, and insert the four clips.                                          | ![Replace the cover of the shipping container, and insert the four clips.](images/surface-hub-2s-repack-12.png|
+| **10.** | Replace the cover of the shipping container, and insert the four clips.                                          | ![Replace the cover of the shipping container, and insert the four clips.](images/surface-hub-2s-repack-12.png)|
 | **11.** | Close the four clips.                                                                                            | ![Close the four clips.](images/surface-hub-2s-repack-13.png)|
 
 

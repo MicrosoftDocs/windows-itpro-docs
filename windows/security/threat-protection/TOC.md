@@ -199,6 +199,7 @@
 
 ##### [Exploit protection]()
 ###### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+###### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 ###### [Import/export configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
 ##### [Network protection](microsoft-defender-atp/enable-network-protection.md)
@@ -464,6 +465,7 @@
 ####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
+####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](microsoft-defender-atp/machineaction.md)
@@ -525,6 +527,7 @@
 ####### [List software version distribution](microsoft-defender-atp/get-software-ver-distribution.md)
 ####### [List machines by software](microsoft-defender-atp/get-machines-by-software.md)
 ####### [List vulnerabilities by software](microsoft-defender-atp/get-vuln-by-software.md)
+####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-software.md)
 
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
