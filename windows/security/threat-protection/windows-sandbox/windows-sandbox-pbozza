@@ -15,9 +15,9 @@ ms.reviewer:
 
 # Windows Sandbox 
 
-Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and can't affect the host machine.
+Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
 
-A sandbox is temporary. When it's closed, all the software and files and the state are permanently deleted. You get a brand-new instance of the sandbox every time you open the application.
+A sandbox is temporary. When it's closed, all the software and files and the state are deleted. You get a brand-new instance of the sandbox every time you open the application.
 
 Software and applications installed on the host aren't directly available in the sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
