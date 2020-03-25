@@ -72,8 +72,10 @@ The following event types reflect time-stamped events that impact the score:
 
 The following icons show up next to events:
 
-- ![bug icon](images/tvm_bug_icon.png) New public exploit. A vulnerability became exploitable.
-- [page with caution symbol] New vulnerability was published.
+- ![bug icon](images/tvm_bug_icon.png) New public exploit
+- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
+- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
+- ![bug icon](images/bug-caution-icon2.png) Exploit verified
 
 ## Related topics
 
@@ -86,8 +88,6 @@ The following icons show up next to events:
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
-- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
-- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
-- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Score APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
