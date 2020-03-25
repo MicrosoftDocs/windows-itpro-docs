@@ -7957,11 +7957,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deploy/monitor-windows-10-deployment-with-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/deploy/offline-migration-reference.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/usmt/offline-migration-reference",
 "redirect_document_id": true
@@ -15759,6 +15754,106 @@
 {
 "source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/deploy-windows-10-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/integrate-configuration-manager-with-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/get-started-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/integrate-configuration-manager-with-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager#procedures",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/get-started-with-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
 "redirect_document_id": false
 }
 ]

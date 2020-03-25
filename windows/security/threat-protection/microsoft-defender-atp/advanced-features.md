@@ -118,7 +118,7 @@ To receive contextual machine integration in Azure ATP, you'll also need to enab
 
 1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
-2. Click **Create a workspace** or use your primary workspace.
+2. Click **Create your instance**.
 
 3. Toggle the Integration setting to **On** and click **Save**.
 
