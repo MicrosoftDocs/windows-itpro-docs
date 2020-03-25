@@ -31,7 +31,7 @@ Windows Holographic for Business can use [Windows Update for Business](https://d
 Windows Update for Business connects HoloLens devices directly to the Windows Update service. By using Windows Update for Business, you can control multiple aspects of the update process&mdash;that is, which devices get which updates at what time. For example, you can roll out updates to a subset of devices for testing, then roll out updates to the remaining devices at a later date. Or, you can define different update schedules for different types of updates.
 
 > [!NOTE]  
-> For HoloLens devices, you can automatically manage feature updates (released twice a year) and quality updates (released monthly or as required, including critical security updates). For more information about update types, see [Types of updates managed by Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
+> For HoloLens devices, you can automatically manage feature updates (released twice a year) and quality updates (released monthly or as required, including critical security updates). For more information about update types, see [Types of updates managed by Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business).
 
 You can configure Windows Update for Business settings for HoloLens by using policies in a Mobile Device Management (MDM) solution such as Microsoft Intune.
 
@@ -49,9 +49,7 @@ This section describes the policies that you can use to manage updates for eithe
 The [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) defines the policies that configure Windows Update for Business.
 
 > [!NOTE]  
-> For details about specific policies that are supported by specific editions of HoloLens, see the following articles:
-> - [Policies supported by HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-hololens-devices)
-> - [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business)
+> For details about specific policies that are supported by specific editions of HoloLens, see [Policies supported by HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-hololens-devices).
 
 #### Configure automatic checks for updates
 
@@ -105,8 +103,8 @@ For example, consider an organization that has 1,000 devices and has to update t
 
 |Group |Number of devices |Deferral (days) |
 | ---| :---: | :---: |
-|Grp 1 (IT Staff) |5 |0 |
-|Grp 2 (Early Adopters) |50 |60 |
+|Grp 1 (IT staff) |5 |0 |
+|Grp 2 (early adopters) |50 |60 |
 |Grp 3 (main 1) |250 |120 |
 |Grp 4 (main 2) |300 |150 |
 |Grp 5 (main 3) |395 |180 |
