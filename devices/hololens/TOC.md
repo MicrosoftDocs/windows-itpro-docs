@@ -6,7 +6,6 @@
 ## [Set up your HoloLens 2](hololens2-start.md)
 ## [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
 ## [Frequently asked questions about cleaning HoloLens 2 devices](hololens2-maintenance.md)
-## [[COVID19] Special instructions for disinfecting your HoloLens 2 device](hololens2-maintenance-special.md)
 ## [Supported languages for HoloLens 2](hololens2-language-support.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
