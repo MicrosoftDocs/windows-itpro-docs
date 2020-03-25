@@ -1,7 +1,7 @@
 ---
-title: Exposure score
-description: The Microsoft Defender ATP exposure score reflects how vulnerable your organization is to cybersecurity threats.
-keywords: exposure score, mdatp exposure score, mdatp tvm exposure score, organization exposure score, tvm organization exposure score, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
+title: Event insights
+description: Event insights is a "risk news feed" which will help you interpret how risk is introduced into the organization and which mitigations happened to reduce it.
+keywords: event insights, mdatp event insights, mdatp tvm event insights, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Event Insights
+# Event insights
 
 **Applies to:**
 
@@ -36,7 +36,20 @@ You can reduce you exposure score by addressing what needs to be remediated base
 
 ## Navigation
 
-You can access Event insights through the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) or in the navigation menu of the Microsoft Defender Security Center.
+You can access Event insights mainly through two ways:
+
+- In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center.
+- Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+
+In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then no insights will be shown.
+
+![Event insights page](images/event-insights-exposure-score-events.png)
+
+Selecting **Show all events from this day** will lead you to the Event insights page with a pre-populated custom date range for that day.
+
+![Event insights page](images/event-insights-custom-range.png)
+
+## Event insights page
 
 On the Event insights page, you can view the date, event, related component, number of impacted machines, and type. You can also filter by type, or percent impacted machines.
 
