@@ -10,8 +10,8 @@ ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
 ms.author: v-medgar
-manager: sanashar
-ms.date: 9/10/2019
+manager: robsize
+ms.date: 3/25/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
