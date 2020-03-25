@@ -23,7 +23,7 @@ Rather than requiring a separate copy of Windows to boot the sandbox, Dynamic Ba
 
 Most OS files are immutable and can be freely shared with Windows Sandbox. A small subset of operating system files are mutable and cannot be shared, so the sandbox base image contains pristine copies of them. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of the mutable files. By using this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an additional copy of Windows.
  
-Before Windows Sandbox is installed, the dynamic base image package is stored as a compressed 30MB package. Once it's installed, the dynamic base image occupies about 500 MB of disk space.
+Before Windows Sandbox is installed, the dynamic base image package is stored as a compressed 30-MB package. Once it's installed, the dynamic base image occupies about 500 MB of disk space.
 
 ![A chart compares scale of dynamic image of files and links with the host file system.](images/1-dynamic-host.png)
 
