@@ -101,7 +101,7 @@ To do this, follow these steps:
 
 9. Test this method on the server by using the NMI switch to generate a dump file. You will see a STOP 0x00000080 hardware malfunction.
 
-If you want to run NMI in Microsoft Azure using serial console, see [Use Serial Console for SysRq and NMI calls](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/serial-console-nmi-sysrq).
+If you want to run NMI in Microsoft Azure using Serial Console, see [Use Serial Console for SysRq and NMI calls](https://docs.microsoft.com/azure/virtual-machines/linux/serial-console-nmi-sysrq).
 
 ### Use the keyboard
 
@@ -110,4 +110,3 @@ If you want to run NMI in Microsoft Azure using serial console, see [Use Serial 
 ### Use Debugger
 
 [Forcing a System Crash from the Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-debugger)
-
