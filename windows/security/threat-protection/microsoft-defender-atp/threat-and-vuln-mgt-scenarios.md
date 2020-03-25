@@ -52,9 +52,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## Find and remediate software or software versions which have reached end-of-support (EOS)
 
-End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced. When you use software or software versions which have reached end-of-support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
+End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced, and will not receive security updates. When you use software or software versions which have reached end-of-support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
 
-It is crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem.
+It is crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end of support, and update versions that have reached end of support. It is best to create and implement a plan **before** the end of support dates.
 
 To find software or software versions which have reached end-of-support:
 
@@ -68,6 +68,16 @@ To find software or software versions which have reached end-of-support:
     ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
+
+## Use APIs
+
+Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
+
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
 
 ## Related topics
 
@@ -83,8 +93,3 @@ After you have identified which software and software versions are vulnerable du
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Recommendation APIs](vulnerability.md)
-- [Machine APIs](machine.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)

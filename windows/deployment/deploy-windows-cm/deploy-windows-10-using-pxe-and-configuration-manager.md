@@ -79,7 +79,7 @@ Examples are provided below of various stages of deployment:
 ![pc0001k](../images/pc0001k.png)<br>
 ![pc0001l](../images/pc0001l.png)<br>
 ![pc0001m](../images/pc0001m.png)<br>
-![pc0001n](../images/pc0001n.png)<br>
+![pc0001n](../images/pc0001n.png)
 
 Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
