@@ -19,6 +19,9 @@ appliesto:
 
 # Frequently asked questions about cleaning HoloLens 2 devices
 
+> [!IMPORTANT]  
+> Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  
+
 ## What are the general cleaning instructions for HoloLens 2 devices?
 
 **To clean the device**
@@ -39,7 +42,7 @@ appliesto:
 
 No. Lens cleaners can be abrasive to the coatings on the visor. To clean the visor, follow these steps:  
 
-1. Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.; MUST DO at visor/bathtub, and windows
+1. Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.
 1. Lightly moisten a cloth by using medical 70% isopropyl alcohol, and then gently wipe the visor.
 1. Let the visor dry completely.
 
