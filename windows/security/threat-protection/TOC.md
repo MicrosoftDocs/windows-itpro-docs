@@ -23,7 +23,8 @@
 
 
 ## [Security administration]()
-### [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+### [Threat & Vulnerability Management]()
+#### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 #### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
@@ -33,6 +34,49 @@
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 #### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
 #### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+
+### [Attack surface reduction]()
+#### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
+#### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
+#### [Hardware-based isolation]()
+##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
+##### [Application isolation]()
+###### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
+###### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
+ 
+##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
+ 
+#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+#### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+#### [Network protection](microsoft-defender-atp/network-protection.md)
+ 
+#### [Web protection]()
+##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
+##### [Web threat protection]()
+###### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
+###### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
+###### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+##### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
+ 
+#### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+#### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
+#### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
+
+
+### [Next-generation protection]()
+#### [Next-generation protection overview](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+#### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
+#### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -381,36 +425,8 @@
 ### [Capabilities]()
 
 
-#### [Attack surface reduction]()
-##### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
-##### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
-##### [Hardware-based isolation]()
-###### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
-###### [Application isolation]()
-####### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
-####### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
- 
-###### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
- 
-##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-##### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
-##### [Network protection](microsoft-defender-atp/network-protection.md)
- 
-##### [Web protection]()
-###### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
-###### [Web threat protection]()
-####### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
-####### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
-####### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
-###### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
- 
-##### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
-##### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
-##### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
-#### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
-##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
-##### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
+
 
 
 #### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
