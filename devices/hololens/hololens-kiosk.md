@@ -33,18 +33,21 @@ To configure a HoloLens (1st gen) device to use kiosk mode, you must first make 
 
 ## Select a kiosk mode
 
-When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
+When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user in the startup tiles user experience. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](hololens2-basic-usage.md#start-gesture) (including [bloom](hololens1-basic-usage.md) on HoloLens (1st gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings.
 
+> [!NOTE]
+> Kiosk mode on Hololens is to ensure specified apps are shown in startup tiles user experience. If those apps launch other apps, they are not stopped. In order to block any other app / process from launching please use [Windows Defender Application Control (WDAC) CSP.](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp)
+
 > [!WARNING]  
-> The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
+> The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy). A factory reset is needed to clear all the policies enforced via assigned access.
 >  
 > Be aware that voice commands are enabled for kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app.  
 
 The following table lists the device capabilities in the different kiosk modes.
 
-| &nbsp; |Start gesture/pins panel |Quick Actions menu |Camera and video |Miracast |Supported user types | Auto sign-in | Can distinguish different users to use Kiosk mode or full access |
+| &nbsp; |Start gesture/pins panel |Quick Actions menu |Camera and video |Miracast |Supported user types | Accounts may sign-in automatically | Can distinguish different users to use Kiosk mode or full access |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |Single-app kiosk |No |No |No* |No |MSA or local |Yes |No |
 |Multi-app kiosk |Yes |Yes* |Yes* |Yes* |AAD |No |Yes |
@@ -52,6 +55,7 @@ The following table lists the device capabilities in the different kiosk modes.
 While camera and video voice commands and UI are disabled by default the button commands can still be used.  
 
 To enable the camera, device picker, or Miracast on the system menu include the AUMIDs below in your Multi-app kiosk.
+Also while enabling the camera allows on to take pictures or video, you may also wish to include a method of interacting or retreving your pictures, such as Photos, Mail, or OneDrive.
 
 > [!NOTE]  
 > When you configure assigned access to associate users with specific apps, use the following [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app):
@@ -147,6 +151,7 @@ Some common in-box apps you may wish to use are:
 | Camera        | HoloCamera_cw5n1h2txyewy!HoloCamera                                  |
 | Device picker | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                        |
 | Feedback Hub  | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                       |
+| Settings      | HolographicSystemSettings_cw5n1h2txyewy!App                          |
 
 For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
 
@@ -164,9 +169,9 @@ There is an important distinction between the **User logon type** and the **Assi
 
 **Examples:**
 
-- You have a single group that you use for both logon type and assignments. Users A B and C are in both groups. No matter which user the device is first set up for they will join the tenant in this group and the kiosk policy will deploy. Also each user is in the logon group so users A B and C will all experience the Kiosk.
+- You have a single group that you use for both logon type and assignments. Users A B and C are in both groups. No matter which user the device is first set up for they will join the tenant in this group and the kiosk policy will deploy. Also each user is in the group used for logon type so users A B and C will all experience the Kiosk.
 
-- You have an assignment group with users A, B and C in it. The logon group is different with users B and C. Even if user A sets up the device and joins the tenant with the device the Kiosk policy will still deploy. Users B and C will still be logged in to the Kiosk, but user A can still log in if troubleshooting, changing of settings or any other need for full access to windows is needed.
+- You have an assignment group with users A, B and C in it. The group used for logon type is different with users B and C. Even if user A sets up the device and joins the tenant with the device the Kiosk policy will still deploy. Users B and C will still be logged in to the Kiosk, but user A can still log in if troubleshooting, changing of settings or any other need for full access to windows is needed.
 
 - You have devices you contract out to two different vendors. Instead of user groups you have device groups. Each device group needs a different Kiosk. Those devices when joined receive policy for their own respective Kiosk. The logon user group may include users from both sites, and thus each regional area's device would allow kiosks for both sets of users. 
 
@@ -354,7 +359,7 @@ You will [create an XML file](#set-up-kiosk-mode-by-using-a-provisioning-package
 ## Recommendations for selecting kiosk apps
 
 - You cannot select  the Shell app as a kiosk app.
-- We recommend that you do **not** select the Settings app, Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app.
+- We recommend that you do **not** select the Microsoft Edge, Microsoft Store, and the File Explorer app as a kiosk app.
 - You can select Cortana as a kiosk app.
 - To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
 - While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours. 
