@@ -36,13 +36,13 @@ If you no longer want to receive Insider builds of Windows Holographic, you can 
 
 To verify that your HoloLens is running a production build:
 
-- Go to **Settings > System > About**, and find the build number.
-- [See the release notes for production build numbers.](hololens-release-notes.md)
+1. Go to **Settings > System > About**, and find the build number.
+1. [See the release notes for production build numbers.](hololens-release-notes.md)
 
 To opt out of Insider builds:
 
-- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
-- Follow the instructions to opt out your device.
+1. On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+1. Follow the instructions to opt out your device.
 
 ## Provide feedback and report issues
 
