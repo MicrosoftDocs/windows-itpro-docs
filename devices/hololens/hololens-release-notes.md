@@ -26,6 +26,12 @@ appliesto:
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+### March Update - build 18362.1056
+
+- Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
+- Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
+- Developers productivity improvement by enabling customers to paste large amount of text through device portal.
+
 ### February Update - build 18362.1053
 
 - Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled.

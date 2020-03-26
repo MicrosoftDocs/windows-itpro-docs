@@ -8,20 +8,20 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 10/31/2019
 ---
 # Weaknesses
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -36,37 +36,41 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 
+## Navigate to your organization's weaknesses page
 
-## Navigate through your organization's weaknesses page
 You can access the list of vulnerabilities in a few places in the portal:
 - Global search
 - Weaknesses option in the navigation menu
 - Top vulnerable software widget in the dashboard
 - Discovered vulnerabilities page in the machine page
 
-*Vulnerabilities in global search*
-1. Click the global search drop-down menu.
-2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then click the search icon. The **Weaknesses** page opens with the CVE information that you are looking for. 
+### Vulnerabilities in global search
+
+1. Go to the global search drop-down menu.
+2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
 ![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
+3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates.
 
-    > [!NOTE]
-    > To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search. 
+To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
 
-*Weaknesses page in the menu* 
+### Weaknesses page in the menu
+
 1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, dates when it was published and updated, related software, exploit kits available, vulnerability type, link to useful reference, and number of exposed machines which users can also export.    
+2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, dates when it was published and updated, related software, exploit kits available, vulnerability type, link to useful reference, and number of exposed machines which users can also export.
+
 ![Screenshot of the CVE details in the flyout pane in the Weaknesses page](images/tvm-weaknesses-page.png)
 
-*Top vulnerable software widget in the dashboard* 
-1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time. 
+### Top vulnerable software widget in the dashboard
+
+1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
 ![tvm-top-vulnerable-software](images/tvm-top-vulnerable-software.png)
 2. Click the software that you want to investigate and it takes you to the software page. You will see the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
 3. Select the **Discovered vulnerabilities** tab. 
 4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
-*Discovered vulnerabilities in the machine page*
-1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens. 
+### Discovered vulnerabilities in the machine page
+
+1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens.
 <br>![Screenshot of Machines list page](images/tvm_machineslist.png)</br>
 2. In the **Machines list** page, select the machine that you want to investigate. 
 <br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
@@ -78,6 +82,7 @@ You can access the list of vulnerabilities in a few places in the portal:
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.
 
 ## How it works
+
 When new vulnerabilities are released, you would want to know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
 
 If the **Exposed Machines** column shows 0, that means you are not at risk. 
