@@ -36,10 +36,10 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - It is recommended that you restart a device after making configuration changes to it. 
 > - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
->[!Note]
+[!Note]
 >Regarding the Windows Restricted Traffic Limited Functionality Baseline, the 1903 settings (folder) are applicable to 1909 Windows >Enterprise devices. There were no additional settings required for the 1909 release.
 
->[!Warning] 
+[!Warning] 
 >If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the >"Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order >re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline >settings.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
