@@ -379,9 +379,7 @@
 
 ## Reference
 ### [Capabilities]()
-#### [Threat & Vulnerability Management]()
-##### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
+
 
 #### [Attack surface reduction]()
 ##### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
