@@ -12,7 +12,6 @@ ms.author: stsyfuhs
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 09/18/2019
 ms.reviewer: 
 ---
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
@@ -152,8 +151,8 @@ function CheckExemption($_ModName)
 
 }
 
-function CheckFailedDriver($_ModName, $CIStats)
-{
+function CheckFailedDriver($_ModName, $CIStats)''
+{''
     Log "Module: " $_ModName.Trim()
     if(CheckExemption($_ModName.Trim()) - eq 1)
     {

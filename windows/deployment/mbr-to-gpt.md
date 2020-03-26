@@ -427,6 +427,9 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 
    For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
    
+   > [!NOTE]
+   > You can access the ReAgent files if you have installed the User State Migration Tool (USMT) as a feature while installing Windows Assessment and Deployment Kit.
+   
    **Command 1:**
    ```cmd
    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgent*.*" "C:\WinPE_Mount\Windows\System32"

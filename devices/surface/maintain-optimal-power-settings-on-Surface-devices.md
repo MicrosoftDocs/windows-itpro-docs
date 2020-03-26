@@ -4,8 +4,8 @@ description: This topic provides best practice recommendations for maintaining o
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
