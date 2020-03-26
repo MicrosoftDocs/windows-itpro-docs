@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/09/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -40,7 +39,7 @@ This article describes how to specify from where updates should be downloaded (t
 
 ## Fallback order
 
-Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used.
+Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used immediately.
 
 When updates are published, some logic is applied to minimize the size of the update. In most cases, only the differences between the latest update and the update that is currently installed (this is referred to as the delta) on the device is downloaded and applied. However, the size of the delta depends on two main factors:
 - The age of the last update on the device; and 

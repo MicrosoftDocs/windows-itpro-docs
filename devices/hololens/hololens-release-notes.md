@@ -31,7 +31,6 @@ appliesto:
 - Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
 - Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
 - Developers productivity improvement by enabling customers to paste large amount of text through device portal.
-- Enables an app to query the depth camera pose and compute the location of each depth pixel in the world.
 
 ### February Update - build 18362.1053
 
