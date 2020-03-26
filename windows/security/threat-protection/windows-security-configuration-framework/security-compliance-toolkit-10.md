@@ -47,7 +47,7 @@ The Security Compliance Toolkit consists of:
     -   Office 2016 
     
 -   Microsoft Edge security baseline
-    -   Edge Browser v80
+    -   Edge Browser Version 80
 
 -   Tools
     -   Policy Analyzer tool
