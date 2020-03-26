@@ -79,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. First create the `copy_onboarding_pkg.yml` file under the `/etc/ansible/roles` directory:
+Create subtask or role files that contribute to an actual task. First create the `download_copy_blob.yml` file under the `/etc/ansible/roles` directory:
 
 - Copy the onboarding package to all client machines:
 
@@ -158,7 +158,7 @@ Create subtask or role files that contribute to an actual task. First create the
         - name: Add Microsoft APT key
             apt_key:
                 keyserver: https://packages.microsoft.com/
-                id: BC528686B50D79E339D3721CEB3E94ADBE1229C
+                id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
             when: ansible_os_family == "Debian"
 
         - name: Add  Microsoft yum repository for MDATP
