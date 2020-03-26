@@ -23,7 +23,7 @@ appliesto:
 
 Kiosk mode is a convenient feature that you can use to focus the HoloLens device on business apps, or to use the HoloLens device in an app demo. You can use kiosk mode in two configurations (single-app kiosk or multi-app kiosk) and you can use one of three processes to set up and deploy the kiosk configuration.
 
-This article provides information about aspects of configuring kiosks that are specific to HoloLens devices. For general information about types of Windows-based kiosks and how to configure them, see [Configure kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-methods). 
+This article provides information about aspects of configuring kiosks that are specific to HoloLens devices. For general information about types of Windows-based kiosks and how to configure them, see [Configure kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-methods). 
 
 ## Kiosk mode requirements
 
