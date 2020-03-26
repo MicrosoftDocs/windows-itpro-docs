@@ -37,7 +37,18 @@ appliesto:
 
 ## Can I use any lens cleaner for cleaning the HoloLens visor?
 
-No. Lens cleaners can be abrasive to the coatings on the visor. Moisten a cloth by using a mix of 70% isopropyl alcohol and water, and then gently wipe the surface of the visor.
+No. Lens cleaners can be abrasive to the coatings on the visor. To clean the visor, follow these steps:  
+
+1. Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.; MUST DO at visor/bathtub, and windows
+1. Lightly moisten a cloth by using medical 70% isopropyl alcohol, and then gently wipe the visor.
+1. Let the visor dry completely.
+
+## Can I use disinfecting wipes to clean the device?
+
+Yes, if the wipes do not contain bleach. You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+
+> [!CAUTION]  
+> Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces. It is acceptable to use bleach wipes in critical situations, when nothing else is available. However, bleach may damage the HoloLens visor or other surfaces.
 
 ## Can I use alcohol to clean the device?
 
@@ -68,4 +79,3 @@ UV germicidal irradiation has not been tested on HoloLens 2.
 ## Is the rear pad replaceable?
 
 No.
-
