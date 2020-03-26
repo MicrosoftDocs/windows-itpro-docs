@@ -151,8 +151,8 @@ function CheckExemption($_ModName)
 
 }
 
-function CheckFailedDriver($_ModName, $CIStats)''
-{''
+function CheckFailedDriver($_ModName, $CIStats)
+{
     Log "Module: " $_ModName.Trim()
     if(CheckExemption($_ModName.Trim()) - eq 1)
     {
