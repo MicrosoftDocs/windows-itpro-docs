@@ -48,10 +48,10 @@ You can apply the following filters to limit the list of alerts and get a more f
 
 Alert severity | Description
 :---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines. Some examples of these are credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
-Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization who is allowed to do so.
-Informational </br>(Grey) | Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.
+High </br>(Red) | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines. Some examples of these are credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
+Medium </br>(Orange) | Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat. This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
+Low </br>(Yellow) | Alerts on threats associated with prevalent malware, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by users in your organization.
+Informational </br>(Grey) | Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
 #### Understanding alert severity
 It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
