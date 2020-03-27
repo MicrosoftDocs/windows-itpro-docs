@@ -2254,6 +2254,14 @@ The following fields are available:
 - **time**  Represents the event date time in Coordinated Universal Time (UTC) when the event was generated on the client. This should be in ISO 8601 format.
 - **ver**  Represents the major and minor version of the extension.
 
+### Common Data Extensions.ms365a
+
+Describes the Microsoft 365-related fields.
+
+The following fields are available:
+
+- **enrolledTenantId**  The enrolled tenant ID.
+- **msp**  A bitmask that lists the active programs.
 
 ### Common Data Extensions.mscv
 
