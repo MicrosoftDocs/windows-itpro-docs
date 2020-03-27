@@ -60,7 +60,7 @@ Supported values:
 
 **Mapped folders**: An array of folders, each representing a location on the host machine that will be shared into the sandbox at the specified path. At this time, relative paths are not supported. If no path is specified, the folder will be mapped to the container user's desktop.
 
-```
+```xml
 <MappedFolders>
   <MappedFolder> 
     <HostFolder>absolute path to the host folder</HostFolder> 
@@ -85,7 +85,7 @@ Supported values:
 
 **Logon command**: Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
 
-```
+```xml
 <LogonCommand>
   <Command>command to be invoked</Command>
 </LogonCommand>
@@ -160,7 +160,7 @@ The following config file can be used to easily test downloaded files inside the
 
 *Downloads.wsb*
 
-```
+```xml
 <Configuration>
   <VGpu>Disable</VGpu>
   <Networking>Disable</Networking>
@@ -176,6 +176,7 @@ The following config file can be used to easily test downloaded files inside the
   </LogonCommand>
 </Configuration>
 ```
+
 ***Example 2***
 
 The following config file installs Visual Studio Code in the sandbox, which requires a slightly more complicated LogonCommand setup.
@@ -186,7 +187,7 @@ With the Visual Studio Code installer script already mapped into the sandbox, th
 
 *VSCodeInstall.cmd*
 
-```
+```console
 REM Download Visual Studio Code
 curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
 
@@ -196,7 +197,7 @@ C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 
 *VSCode.wsb*
 
-```
+```xml
 <Configuration>
   <MappedFolders>
     <MappedFolder>
