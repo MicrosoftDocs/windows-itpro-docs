@@ -43,34 +43,27 @@ You can access the list of vulnerabilities in a few places in the portal:
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 
-## How it works
+## Navigate to the Weaknesses page
 
-When new vulnerabilities are released, you can find out how many of your assets are exposed in the **Weaknesses** page.
+When new vulnerabilities are released, you can find out how many of your assets are exposed in the **Weaknesses** page of the Threat & Vulnerability Management navigation menu. If the **Exposed Machines** column shows 0, that means you are not at risk. If exposed machines exist, the next step is to remediate the vulnerabilities in those machines to reduce the risk to your assets and organization.
 
-If the **Exposed Machines** column shows 0, that means you are not at risk. 
+![tvm-breach-insights](images/tvm-weaknesses-overview.png)
 
-If exposed machines exist, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
+### Breach and threat insights
 
-You can also see the related alert and threat insights in the **Threat** column.
-
-The breach insights icon is highlighted if there is a vulnerability found in your organization. Prioritize an investigation because it  means there might be a breach in your organization.  
-
-![tvm-breach-insights](images/tvm-breach-insights.png)
-
-The threat insights icons are highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has zero-day exploitation news, disclosures, or related security advisories.  
-
-![tvm-threat-insights](images/tvm-threat-insights.png)
+You can view the related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and breach insight ![possible active alert](images/tvm_alert_icon.png) icon.  
 
+The breach insights icon is highlighted if there is a vulnerability found in your organization.
+![tvm-breach-insights](images/tvm-breach-insights.png)
 
-## Navigate to the weaknesses page
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit or connected to specific advanced persistent campaigns or activity groups. Threat Analytics report links are provided that you can read with zero-day exploitation news, disclosures, or related security advisories.  
 
-1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, dates when it was published and updated, related software, exploit kits available, vulnerability type, link to useful reference, and number of exposed machines (which can be exported).
+![tvm-threat-insights](images/tvm-threat-insights.png)
 
-![Screenshot of the CVE details in the flyout pane in the Weaknesses page](images/tvm-weaknesses-page.png)
+
 
 ## Vulnerabilities in global search
 
