@@ -106,9 +106,6 @@
 #### [Next-generation protection overview](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Evaluate next-generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
-
-
-
 #### [Configure next-generation protection]()
 ##### [Configure Windows Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
    
@@ -243,11 +240,11 @@
 
 ## [Security operations]()
 
-### [Security operations dashboard](microsoft-defender-atp/security-operations-dashboard.md)
+
 
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
-
+#### [Security operations dashboard](microsoft-defender-atp/security-operations-dashboard.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](microsoft-defender-atp/view-incidents-queue.md)
 ##### [Manage incidents](microsoft-defender-atp/manage-incidents.md)
@@ -300,22 +297,6 @@
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
 ##### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
