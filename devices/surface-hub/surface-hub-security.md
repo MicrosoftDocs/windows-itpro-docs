@@ -4,7 +4,7 @@ description: "This page explains the Defense in Depth design of Surface Hub and 
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: john-kaiser
+author: coveminer
 ms.author: v-jokai
 manager: laurawi
 audience: Admin
