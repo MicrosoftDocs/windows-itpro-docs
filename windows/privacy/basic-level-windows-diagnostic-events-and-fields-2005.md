@@ -13,11 +13,11 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 03/23/2020
+ms.date: 03/27/2020
 ---
 
 
-# Windows 10, version Vibranium required Windows diagnostic events and fields
+# Windows 10, version 2005 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -1163,19 +1163,6 @@ The following fields are available:
 - **MigrationOEMPhases**  The number of OEM-authored migrators scheduled to be ran by DMF for this upgrade
 - **MigrationStartTime**  The timestamp representing the beginning of the DMF migration
 - **WuClientId**  The GUID of the Windows Update client invoking DMF
-
-
-### Microsoft.Windows.Update.Orchestrator.RefreshSettings
-
-This event sends basic data about the version of upgrade settings applied to the system to help keep Windows up to date.
-
-The following fields are available:
-
-- **endpoint**  No content is currently available.
-- **scenario**  No content is currently available.
-- **settings**  No content is currently available.
-- **wilActivity**  No content is currently available. See [wilActivity](#wilactivity).
-- **WOSCUniqueId**  No content is currently available.
 
 
 ## XBOX events
