@@ -1,6 +1,6 @@
 ---
 title: Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
-description: A list of all available setttings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
+description: A list of all available settings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
 keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -176,7 +176,7 @@ To better help you protect your organization, we recommend turning on and using 
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files</td>
-<td><strong>Enable.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+<td><strong>Enable.</strong> Stops employees from ignoring warning messages and continuing to download potentially malicious files.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen</td>
@@ -199,7 +199,7 @@ To better help you protect your organization, we recommend turning on and using 
 </tr>
 <tr>
 <td>Browser/PreventSmartScreenPromptOverrideForFiles</td>
-<td><strong>1.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+<td><strong>1.</strong> Stops employees from ignoring warning messages and continuing to download potentially malicious files.</td>
 </tr>
 <tr>
 <td>SmartScreen/EnableSmartScreenInShell</td>
