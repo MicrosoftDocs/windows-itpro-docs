@@ -81,6 +81,9 @@ The following are examples of scenarios in which AppLocker can be used:
 -   Some computers in your organization are shared by people who have different software usage needs, and you need to protect specific apps.
 -   In addition to other measures, you need to control the access to sensitive data through app usage.
 
+> [!NOTE]
+> AppLocker is a defense-in-depth security feature and **not** a [security boundary](https://www.microsoft.com/msrc/windows-security-servicing-criteria). [Windows Defender Application Control](https://www.microsoft.com/msrc/windows-security-servicing-criteria) should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.
+
 AppLocker can help you protect the digital assets within your organization, reduce the threat of malicious software being introduced into your environment, and improve the management of application control and the maintenance of application control policies.
 
 ## Installing AppLocker
