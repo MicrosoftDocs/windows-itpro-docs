@@ -114,8 +114,6 @@ Secured using a certificate to protect the configuration from unauthorized tampe
 
 Surface Hub 2S enables admins to reinstall the device to factory settings using a recovery image in as little as 20 minutes. Typically, you would only need to do this if your Surface Hub is no longer functioning. Recovery is also useful if you have lost the Bitlocker key or no longer have admin credentials to the Settings app.
 
-![Surface Hub recovery and reset](images/hub-sec-3.png)
-
 ### Harden device account with password rotation
 
 Surface Hub uses a device account, also known as a "room account" to authenticate with Exchange, Microsoft Teams, and other services. When you enable password rotation, Hub 2S automatically generates a new password every 7 days, consisting of 15-32 characters with a combination of uppercase and lowercase letters, numbers, and special characters. Because no one knows the password, the device account password rotation effectively mitigates associated risk from human error and potential social engineering security attacks.
