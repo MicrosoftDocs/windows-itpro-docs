@@ -28,7 +28,7 @@ appliesto:
 
 ### Coming Soon
 
-**Dark Mode for supported apps** 
+**Dark mode for supported apps** 
 
 Many Windows apps support both dark and light modes, and soon HoloLens 2 customers can choose the default mode for apps that support both color schemes! Based on overwhelmingly positive customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
 Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
