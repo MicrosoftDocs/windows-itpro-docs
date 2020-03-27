@@ -12,7 +12,6 @@ ms.author: stsyfuhs
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 09/18/2019
 ms.reviewer: 
 ---
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
@@ -960,7 +959,7 @@ function PrintToolVersion
     LogAndConsole ""
     LogAndConsole "###########################################################################"
     LogAndConsole ""
-    LogAndConsole "Readiness Tool Version 3.7 Release. `nTool to check if your device is capable to run Device Guard and Credential Guard."
+    LogAndConsole "Readiness Tool Version 3.7.1 Release. `nTool to check if your device is capable to run Device Guard and Credential Guard."
     LogAndConsole ""
     LogAndConsole "###########################################################################"
     LogAndConsole ""
