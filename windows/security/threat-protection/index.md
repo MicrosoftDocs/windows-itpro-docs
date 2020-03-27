@@ -31,7 +31,7 @@ ms.topic: conceptual
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>Centratlized configuration and administration, APIs</a></b></center></td>
+<a href="#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
 <td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
@@ -42,9 +42,9 @@ ms.topic: conceptual
 <a name="tvm"></a>
 
 **[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
-This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
-- [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
@@ -97,7 +97,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
@@ -116,7 +116,7 @@ Microsoft Defender ATP includes a configuration score to help you dynamically as
 <a name="mte"></a>
 
 **[Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)**<br>
-Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately. 
+Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately.
 
 - [Targeted attack notification](microsoft-defender-atp/microsoft-threat-experts.md)
 - [Experts-on-demand](microsoft-defender-atp/microsoft-threat-experts.md)
@@ -139,7 +139,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - Office 365 ATP
 - Azure ATP
 - Azure Security Center
-- Skype for Business 
+- Skype for Business
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>

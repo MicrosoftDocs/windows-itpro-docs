@@ -31,7 +31,7 @@
 ### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 ### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 ### [Configuration score](microsoft-defender-atp/configuration-score.md)
-### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 ### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 ### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
@@ -105,6 +105,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
 #### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+#### [Work with query results](microsoft-defender-atp/advanced-hunting-query-results.md)
 #### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
@@ -198,6 +199,7 @@
 
 ##### [Exploit protection]()
 ###### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+###### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 ###### [Import/export configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
 ##### [Network protection](microsoft-defender-atp/enable-network-protection.md)
@@ -384,6 +386,7 @@
 
 #### [Attack surface reduction]()
 ##### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
+##### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
 ##### [Hardware-based isolation]()
 ###### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
 ###### [Application isolation]()
@@ -398,10 +401,10 @@
  
 ##### [Web protection]()
 ###### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
-######  [Web threat protection]()
+###### [Web threat protection]()
 ####### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
 ####### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
-#######[Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+####### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
 ###### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
  
 ##### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
@@ -411,16 +414,12 @@
 #### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 ##### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 ##### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
-##### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
-
 
 
 #### [Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)
+##### [Shadow protection](windows-defender-antivirus/shadow-protection.md)
 
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
-
-
-
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
@@ -459,9 +458,10 @@
 ####### [Get machine related alerts](microsoft-defender-atp/get-machine-related-alerts.md)
 ####### [Get installed software](microsoft-defender-atp/get-installed-software.md)
 ####### [Get discovered vulnerabilities](microsoft-defender-atp/get-discovered-vulnerabilities.md)
-####### [Get security recommendation](microsoft-defender-atp/get-security-recommendations.md)
+####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
+####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](microsoft-defender-atp/machineaction.md)
@@ -523,6 +523,7 @@
 ####### [List software version distribution](microsoft-defender-atp/get-software-ver-distribution.md)
 ####### [List machines by software](microsoft-defender-atp/get-machines-by-software.md)
 ####### [List vulnerabilities by software](microsoft-defender-atp/get-vuln-by-software.md)
+####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-software.md)
 
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
@@ -695,6 +696,9 @@
 #### [Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
 #### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
+### [Windows Sandbox](windows-sandbox/windows-sandbox-overview.md)
+#### [Windows Sandbox architecture](windows-sandbox/windows-sandbox-architecture.md)
+#### [Windows Sandbox configuration](windows-sandbox/windows-sandbox-configure-using-wsb-file.md)
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 

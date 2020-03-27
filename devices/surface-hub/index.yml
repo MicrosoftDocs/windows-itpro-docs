@@ -41,9 +41,9 @@ highlightedContent:
       itemType: learn
       url: surface-hub-2s-site-readiness-guide.md
     # Card
-    - title: Install and mount Surface Hub 2S
-      itemType: how-to-guide
-      url: surface-hub-2s-install-mount.md
+    - title: Hub security overview 
+      itemType: learn
+      url: surface-hub-security.md
     # Card
     - title: Customize Surface Hub 2S installation
       itemType: how-to-guide

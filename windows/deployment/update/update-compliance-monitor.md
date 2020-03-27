@@ -20,9 +20,8 @@ ms.topic: article
 > [!IMPORTANT]
 > While [Windows Analytics was retired on January 31, 2020](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), support for Update Compliance has continued through the Azure Portal; however, please note the following updates:
 >
-> * On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/), which allows finer control over security features and updates.
+> * On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to review malware definition status and manage and monitor malware attacks with Microsoft Endpoint Manager's [Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune). Configuration Manager customers can monitor Endpoint Protection with [Endpoint Protection in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
 > * The Perspectives feature of Update Compliance will also be removed on March 31, 2020 in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
-
 
 ## Introduction
 
