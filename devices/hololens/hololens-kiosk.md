@@ -25,6 +25,9 @@ Kiosk mode is a convenient feature that you can use to focus the HoloLens device
 
 This article provides information about aspects of configuring kiosks that are specific to HoloLens devices. For general information about types of Windows-based kiosks and how to configure them, see [Configure kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-methods). 
 
+> [!IMPORTANT]
+> Kiosk mode on Hololens is to ensure specified apps are shown in startup tiles user experience. While Kiosk modes are very useful in setting up a desired and limited user interface, it should not be considered a security limitation but instead a tool for a focused user interface for your apps. If those apps launch other apps, they are not stopped. In order to block any other app / process from launching please use [Windows Defender Application Control (WDAC) CSP.](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 
+
 ## Kiosk mode requirements
 
 You can configure any HoloLens 2 device to use kiosk mode.
@@ -36,9 +39,6 @@ To configure a HoloLens (1st gen) device to use kiosk mode, you must first make 
 When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user in the startup tiles user experience. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](hololens2-basic-usage.md#start-gesture) (including [bloom](hololens1-basic-usage.md) on HoloLens (1st gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings.
-
-> [!NOTE]
-> Kiosk mode on Hololens is to ensure specified apps are shown in startup tiles user experience. If those apps launch other apps, they are not stopped. In order to block any other app / process from launching please use [Windows Defender Application Control (WDAC) CSP.](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp)
 
 > [!WARNING]  
 > The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -142,16 +142,27 @@ It's important that the group or groups you choose includes users you want to us
 Now you choose which Apps to include in your kiosk. You may choose to add just one or add many. 
 
 To choose an app you've uploaded as a **Line of business app** choose the **Add store app** option. You many also choose to add an app via it's **Application user model ID** by selecting **Add by AUMID**. 
-Some common in-box apps you may wish to use are:
+In-box apps you may wish to use are:
 
-| App Name      | AUMID                                                                |
-|---------------|----------------------------------------------------------------------|
-| Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist |
-| Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides           |
-| Camera        | HoloCamera_cw5n1h2txyewy!HoloCamera                                  |
-| Device picker | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                        |
-| Feedback Hub  | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                       |
-| Settings      | HolographicSystemSettings_cw5n1h2txyewy!App                          |
+| App Name                   | AUMID                                                                            |
+|----------------------------|----------------------------------------------------------------------------------|
+| 3D Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer            |
+| Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar |
+| Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe!App                                        |
+| Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides                       |
+| Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist             |
+| Feedback Hub               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                                   |
+| File Explorer              | microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail     |
+| Mail                       | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App                           |
+| Microsoft Edge             | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge                              |
+| Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe!App                                         |
+| Movies & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo                            |
+| OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe!App                                    |
+| Photos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe!App                                       |
+| Settings                   | HolographicSystemSettings_cw5n1h2txyewy!App                                      |
+| Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe!HoloLensTips                                |
+| Camera                     | HoloCamera_cw5n1h2txyewy!HoloCamera                                              |
+| Device Picker              | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                                    |
 
 For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
 
