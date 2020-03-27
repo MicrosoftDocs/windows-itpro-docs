@@ -365,6 +365,17 @@ The following fields are available:
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
+## Component-based Servicing events
+
+### Microsoft.Windows.CbsLite.CbsLiteResetBegin
+
+This event is fired from Update OS when re-install of the OS begins.
+
+The following fields are available:
+
+- **cbsLiteSessionID**  An ID to associate other Cbs events related to this reset session.
+- **resetFlags**  A flag containing the detail of which reset scenarios was executed.
+- **wipeDuration**  The time taken to purge the system volume and format data volume.
 
 ## DISM events
 
@@ -524,11 +535,34 @@ The following fields are available:
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
 - **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
 
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
 
 This event indicates Windows Mixed Reality Portal app resuming. This event is also used to count WMR device.
-
 
 
 ## Inventory events
@@ -984,19 +1018,6 @@ The following fields are available:
 - **ActualServiceChecksum**  The checksum in the MUI file.
 - **ExpectedServiceChecksum**  The checksum in the neutral binary.
 - **ResourceFileName**  DLL path and name which has a failing service checksum.
-
-
-## Other events
-
-### Microsoft.Windows.CbsLite.CbsLiteResetBegin
-
-This event is fired from Update OS when re-install of the OS begins.
-
-The following fields are available:
-
-- **cbsLiteSessionID**  An ID to associate other Cbs events related to this reset session.
-- **resetFlags**  A flag containing the detail of which reset scenarios was executed.
-- **wipeDuration**  The time taken to purge the system volume and format data volume.
 
 
 ### NetworkTelemetry.AccessPointData
