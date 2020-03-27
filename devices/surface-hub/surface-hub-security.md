@@ -4,12 +4,12 @@ description: "This page explains the Defense in Depth design of Surface Hub and 
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: john-kaiser
+ms.author: v-jokai
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/26/2020
+ms.date: 03/27/2020
 ms.localizationpriority: High
 ---
 # Surface Hub security overview
@@ -46,7 +46,7 @@ Once the operating system is verified as originating from Microsoft and Surface 
 
 Surface Hub uses a code signing feature known as User Mode Code Integrity (UMCI) in Windows Application Control (formerly known as Device Guard). Policy settings are configured to only allow apps that meet one of these requirements:
 
-- Universal Windows Platform (Microsoft Store) apps that are [officially certified](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process?redirectedfrom=MSDN).
+- Universal Windows Platform (Microsoft Store) apps that are [officially certified](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process).
 - Apps signed with the unique Microsoft Production Root Certification Authority (CA), which can only be signed by Microsoft employees with authorized access to those certificates.
 - Apps signed with the unique Surface Hub Production Root C.
 
@@ -78,9 +78,9 @@ User interface defenses also simplify the UI, further preventing the execution o
 
 Although Surface Hub and Surface Hub 2S both run the same operating system software, some features unique to Surface Hub 2S provide additional management and security capabilities enabling IT admins to perform the following tasks:
 
-- [Manage UEFI settings with SEMM](#)
-- [Recover Hub with bootable USB](#)
-- [Harden device account with password rotation](#)
+- Manage UEFI settings with SEMM
+- Recover Hub with bootable USB
+- Harden device account with password rotation
 
 ### Manage UEFI settings with SEMM
 
