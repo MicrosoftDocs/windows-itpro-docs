@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 03/27/2020
 ---
 
 # View and organize the Microsoft Defender Advanced Threat Protection Alerts queue
