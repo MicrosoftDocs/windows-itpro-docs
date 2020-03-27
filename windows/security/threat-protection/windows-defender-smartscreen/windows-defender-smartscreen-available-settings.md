@@ -1,6 +1,6 @@
 ---
 title: Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
-description: A list of all available setttings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
+description: A list of all available settings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
 keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -40,7 +40,7 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td>Windows 10, version 1703</td>
-<td>This setting helps protect PCs by allowing users to install apps only from the Microsoft Store. Windows Defender SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Microsoft Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Microsoft Store.</td>
+<td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.<p>This setting does not protect against malicious content from USB devices, network shares or other non-internet sources.<p><strong>Important:</strong> Using a trustworthy browser helps ensure that these protections work as expected.</td>
 </tr>
 <tr>
 <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
@@ -176,7 +176,7 @@ To better help you protect your organization, we recommend turning on and using 
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files</td>
-<td><strong>Enable.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+<td><strong>Enable.</strong> Stops employees from ignoring warning messages and continuing to download potentially malicious files.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen</td>
@@ -199,7 +199,7 @@ To better help you protect your organization, we recommend turning on and using 
 </tr>
 <tr>
 <td>Browser/PreventSmartScreenPromptOverrideForFiles</td>
-<td><strong>1.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+<td><strong>1.</strong> Stops employees from ignoring warning messages and continuing to download potentially malicious files.</td>
 </tr>
 <tr>
 <td>SmartScreen/EnableSmartScreenInShell</td>

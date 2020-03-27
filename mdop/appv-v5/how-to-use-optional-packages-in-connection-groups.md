@@ -119,7 +119,7 @@ Before using optional packages, see [Requirements for using optional packages in
 <p><strong>Example connection group XML document with optional packages:</strong></p>
 <pre class="syntax" space="preserve"><code>&lt;?xml version=&quot;1.0&quot; ?&gt;
 &lt;AppConnectionGroup
-   xmlns=&quot;<a href="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;
+   xmlns=&quot;<a href="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;
    AppConnectionGroupId=&quot;8105CCD5-244B-4BA1-8888-E321E688D2CB&quot;
    VersionId=&quot;84CE3797-F1CB-4475-A223-757918929EB4&quot;
    DisplayName=&quot;Contoso Software Connection Group&quot; &gt;
