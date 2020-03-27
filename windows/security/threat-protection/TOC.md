@@ -334,6 +334,8 @@
 ##### [Configure]()
 ###### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ###### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+##### [Troubleshoot]()
+###### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Resources](microsoft-defender-atp/linux-resources.md)
 
 

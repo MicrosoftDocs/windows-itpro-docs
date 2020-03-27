@@ -24,18 +24,22 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-## Installation failed
+## Verify if installation succeeded
 
-An error in installation may or may not result in a meaningful error message by the package manager. One can obtain the installation logs using:
+An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, one can obtain and check the installation logs using:
 ```bash
 $ sudo journalctl | grep 'microsoft-mdatp'  > installation.log
 $ grep 'postinstall end' installation.log
 
 microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
 ```
-An output from the previous command with correct date and time indicates success.
+An output from the previous command with correct date and time of installation indicates success.
 
-Check if the daemon is running:
+Also check the [Client configuration](linux-install-manually.md#client-configuration) to verify the health of the product and detect eicar.
+
+## Installation failed
+
+Check if wdavdaemon is running
 ```bash
 $ systemctl status mdatp
 
@@ -85,7 +89,7 @@ and then re-run step 2.
 
 1. Check the filesystem type using:
 ```bash
-$ mount
+$ findmnt -T <path_of_eicar_file>
 ```
 Currently supported filesystems for on-access activity are ext2, ext3, ext4, temps, btrfs and xfs. Any files outside these filesystems will not be scanned.
 
