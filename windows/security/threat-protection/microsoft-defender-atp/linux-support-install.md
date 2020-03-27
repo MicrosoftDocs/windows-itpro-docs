@@ -37,63 +37,69 @@ An output from the previous command with correct date and time indicates success
 
 Check if the daemon is running:
 ```bash
-$ ps aux | grep wdavdaemon
+$ systemctl status mdatp
 
-root      1966  0.2  0.8 1068244 82492 ?       Ssl  10:37   0:24 /opt/microsoft/mdatp/sbin/wdavdaemon
-mdatp     1967  0.0  3.7 1133040 373652 ?      Sl   10:37   0:02 /opt/microsoft/mdatp/sbin/wdavdaemon
-root      1968  0.0  0.2 421316 27048 ?        Sl   10:37   0:00 /opt/microsoft/mdatp/sbin/wdavdaemon
+● mdatp.service - Microsoft Defender ATP
+   Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2020-03-26 10:37:30 IST; 23h ago
+ Main PID: 1966 (wdavdaemon)
+    Tasks: 105 (limit: 4915)
+   CGroup: /system.slice/mdatp.service
+           ├─1966 /opt/microsoft/mdatp/sbin/wdavdaemon
+           ├─1967 /opt/microsoft/mdatp/sbin/wdavdaemon
+           └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
 ```
 
 ## Steps to troubleshoot if wdavdaemon is not running
 
-- Check if “mdatp” user exists:
+1. Check if “mdatp” user exists:
 ```bash
 $ id “mdatp”
 ```
 If there’s no output, run
 ```bash
-$ useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
+$ sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
 ```
 
-- Try enabling and restarting the service using:
+2. Try enabling and restarting the service using:
 ```bash
-$ systemctl enable mdatp
-$ systemctl restart mdatp
+$ sudo systemctl enable mdatp
+$ sudo systemctl restart mdatp
 ```
 
-- If mdatp.service is not found upon running the previous command, run
+3. If mdatp.service is not found upon running the previous command, run
 ```bash
-$ cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
+$ sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
 
 where <systemd_path> is
-lib/systemd/system for Ubuntu and Debian distributions
+/lib/systemd/system for Ubuntu and Debian distributions
 /usr/lib/systemd/system for Rhel, CentOS, Oracle and SLES
 ```
 and then re-run step 2.
 
-- If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Please re-enable immediately though for security reasons after trying this.
+4. If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Please re-enable immediately though for security reasons after trying this.
 
-- Ensure that the filesystem containing wdavdaemon should not be mounted with “noexec”
+5. Ensure that the filesystem containing wdavdaemon is not mounted with “noexec”
 
 ## If wdavdaemon is running but eicar detection doesn't work
 
-- Check the filesystem type using:
+1. Check the filesystem type using:
 ```bash
 $ mount
 ```
 Currently supported filesystems for on-access activity are ext2, ext3, ext4, temps, btrfs and xfs. Any files outside these filesystems will not be scanned.
 
-- Collect diagnostic logs:
+2. Collect diagnostic logs:
 ```bash
 $ mdatp --diagnostic --create
 ```
 
 ## Command line tool “mdatp” is not working
 
-- If running the command line tool `mdatp` gives an error `command not found`, run the following:
+1. If running the command line tool `mdatp` gives an error `command not found`, run the following:
 ```bash
-$  ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
+$  sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
 ```
 and try again.
 
-- If step 1 doesn't work, please collect the diagnostic logs as indicated in the previous section.
+2. If step 1 doesn't work, please collect the diagnostic logs as indicated in the previous section.
