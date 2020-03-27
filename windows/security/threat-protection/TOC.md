@@ -38,7 +38,6 @@
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
-#### [Attack surface reduction and nex-generation evaluation overview](microsoft-defender-atp/evaluate-atp.md)
 #### [Attack surface reduction evaluation](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
@@ -47,14 +46,11 @@
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
 ##### [Enable attack surface reduction rules](microsoft-defender-atp/enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction](microsoft-defender-atp/customize-attack-surface-reduction.md)
+##### [Customize attack surface reduction rules](microsoft-defender-atp/customize-attack-surface-reduction.md)
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
 ##### [Hardware-based isolation evaluation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
-
-
 
 ##### [Application isolation]()
 ###### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
@@ -62,7 +58,9 @@
 ###### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
+###### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
+
+##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
@@ -75,12 +73,14 @@
 
 
 
-#### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+#### [Exploit protection]()
+##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
 
 
-#### [Network protection](microsoft-defender-atp/network-protection.md)
-##### [Network Protection evaluation](microsoft-defender-atp/evaluate-network-protection.md)
+#### [Network protection]()
+##### [Protect your network](microsoft-defender-atp/network-protection.md)
+##### [Network protection evaluation](microsoft-defender-atp/evaluate-network-protection.md)
 
  
 #### [Web protection]()
@@ -91,13 +91,15 @@
 ###### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
 ##### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
  
-#### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+#### [Controlled folder access]()
+##### [Protect folders](microsoft-defender-atp/controlled-folders.md)
 ##### [Controlled folder access evaluation](microsoft-defender-atp/evaluate-controlled-folder-access.md)
 
 
 
-#### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
+#### [Network firewall]
+##### [Network firewall overview](windows-firewall/windows-firewall-with-advanced-security.md)
+##### [Network firewall evaluation](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
 
 ### [Next-generation protection]()
@@ -618,15 +620,6 @@
 
 ### [Information protection in Windows overview]()
 #### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
-
-
-
-
-
-
-
-
-
 
 ### [Access the Microsoft Defender ATP Community Center](microsoft-defender-atp/community.md)
 
