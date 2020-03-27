@@ -2243,7 +2243,7 @@ The following fields are available:
 - **ext_app**  Describes the properties of the running application. This extension could be populated by either a client app or a web app. See [Common Data Extensions.app](#common-data-extensionsapp).
 - **ext_container**  Describes the properties of the container for events logged within a container. See [Common Data Extensions.container](#common-data-extensionscontainer).
 - **ext_device**  Describes the device-related fields. See [Common Data Extensions.device](#common-data-extensionsdevice).
-- **ext_m365a**  Describes the Microsoft 365-related fields. See [Common Data Extensions.mscv](#common-data-extensionsm365a).
+- **ext_m365a**  Describes the Microsoft 365-related fields. See [Common Data Extensions.m365a](#common-data-extensionsm365a).
 - **ext_mscv**  Describes the correlation vector-related fields. See [Common Data Extensions.mscv](#common-data-extensionsmscv).
 - **ext_os**  Describes the operating system properties that would be populated by the client. See [Common Data Extensions.os](#common-data-extensionsos).
 - **ext_sdk**  Describes the fields related to a platform library required for a specific SDK. See [Common Data Extensions.sdk](#common-data-extensionssdk).
@@ -2255,7 +2255,7 @@ The following fields are available:
 - **time**  Represents the event date time in Coordinated Universal Time (UTC) when the event was generated on the client. This should be in ISO 8601 format.
 - **ver**  Represents the major and minor version of the extension.
 
-### Common Data Extensions.ms365a
+### Common Data Extensions.m365a
 
 Describes the Microsoft 365-related fields.
 
