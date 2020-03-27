@@ -2562,6 +2562,21 @@ The following fields are available:
 - **xid**  A list of base10-encoded XBOX User IDs.
 
 
+## Common data fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
+
 ## Compatibility events
 
 ### Microsoft.Windows.Compatibility.Apphelp.SdbFix
@@ -4204,7 +4219,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4295,7 +4310,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent.
 
-This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4768,7 +4783,7 @@ The following fields are available:
 
 These events represent the basic metadata about the OS indicators installed on the system which are used for keeping the device up to date.
 
-This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4793,6 +4808,16 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 
 ## Kernel events
+
+### IO
+
+This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
+
+The following fields are available:
+
+- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
+- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
+
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
@@ -4987,24 +5012,24 @@ The following fields are available:
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
 
-The Ping event sends a detailed inventory of software and hardware information about the EdgeUpdate user's version, app usage, update usage, and hardware capabilities. This event contains Device Connectivity and Configuration, Product and Service Performance, Product and Service Usage, and Software Setup and Inventory data. One roll-up event is sent each time any installation, update, or uninstallation process, including an error, occurs in the EdgeUpdate service. Each Ping event can contain an arbitrary number of apps which have been modified, and each of these apps in turn can fire multiple event types. This event is used to measure the reliability, performance, and usage of the EdgeUpdate service.
+This event sends hardware and software inventory information about the Microsoft Edge Update service, Microsoft Edge applications, and the current system environment, including app configuration, update configuration, and hardware capabilities. It's  used to measure the reliability and performance of the EdgeUpdate service and if Microsoft Edge applications are up to date.
 
 The following fields are available:
 
-- **appAp**  Any additional parameters for the specified application. Default: ''.
-- **appAppId**  The GUID that identifies the product. Compatible clients must transmit this attribute. Please see the wiki for additional information. Default: undefined.
-- **appBrandCode**  The brand code under which the product was installed, if any. A brand code is a short (4-character) string used to identify installations that took place as a result of partner deals or website promotions. Default: ''.
-- **appChannel**  An integer indicating the channel of the installation (i.e. Canary or Dev).
-- **appClientId**  A generalized form of the brand code that can accept a wider range of values and is used for similar purposes. Default: ''.
-- **appCohort**  A machine-readable string identifying the release cohort (channel) that the app belongs to. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
-- **appCohortHint**  A machine-readable enum indicating that the client has a desire to switch to a different release cohort. The exact legal values are app-specific and should be shared between the server and app implementations. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
-- **appCohortName**  A stable non-localized human-readable enum indicating which (if any) set of messages the app should display to the user. For example, an app with a cohort Name of 'beta' might display beta-specific branding to the user. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
+- **appAp**  Microsoft Edge Update parameters, including channel, architecture, platform, and additional parameters identifying the release of Microsoft Edge to update and how to install it. Example: 'beta-arch_x64-full'. Default: ''.
+- **appAppId**  The GUID that identifies the product channels such as Edge Canary, Dev, Beta, Stable, and Edge Update.
+- **appBrandCode**  The 4-digit brand code under which the the product was installed, if any. Possible values: 'GGLS' (default), 'GCEU' (enterprise install), and '' (unknown).
+- **appChannel**  An integer indicating the channel of the installation (e.g. Canary or Dev).
+- **appClientId** A generalized form of the brand code that can accept a wider range of values and is used for similar purposes. Default: ''.
+- **appCohort**  A machine-readable string identifying the release channel that the app belongs to. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
+- **appCohortHint**  A machine-readable enum indicating that the client has a desire to switch to a different release cohort. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
+- **appCohortName**  A stable non-localized human-readable enum indicating which (if any) set of messages the app should display to the user. For example, an app with a cohort name of 'beta' might display beta-specific branding to the user. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appConsentState**  Bit flags describing the diagnostic data disclosure and response flow where 1 indicates the affirmative and 0 indicates the negative or unspecified data. Bit 1 indicates consent was given, bit 2 indicates data originated from the download page, bit 18 indicates choice for sending data about how the browser is used, and bit 19 indicates choice for sending data about websites visited.
-- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value is not known. Please see the wiki for additional information. Default: '-2'.
-- **appExperiments**  A key/value list of experiment identifiers. Experiment labels are used to track membership in different experimental groups, and may be set at install or update time. The experiments string is formatted as a semicolon-delimited concatenation of experiment label strings. An experiment label string is an experiment Name, followed by the '=' character, followed by an experimental label value. For example: 'crdiff=got_bsdiff;optimized=O3'. The client should not transmit the expiration date of any experiments it has, even if the server previously specified a specific expiration date. Default: ''.
+- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. Default: '-2' (Unknown).
+- **appExperiments**  A semicolon-delimited key/value list of experiment identifiers and treatment groups. This field is unused and always empty in Edge Update. Default: ''.
 - **appInstallTimeDiffSec**  The difference between the current time and the install date in seconds. '0' if unknown. Default: '-1'.
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
-- **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appNextVersion**  The version of the app that the update attempted to reach, regardless of the success or failure of the update operation. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDownloadMetricsDownloadedBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
 - **appPingEventDownloadMetricsDownloader**  A string identifying the download algorithm and/or stack. Example values include: 'bits', 'direct', 'winhttp', 'p2p'. Sent in events that have an event type of '14' only. Default: ''.
@@ -5012,24 +5037,24 @@ The following fields are available:
 - **appPingEventDownloadMetricsError**  The error code (if any) of the operation, encoded as a signed base-10 integer. Default: '0'.
 - **appPingEventDownloadMetricsServerIpHint**  For events representing a download, the CDN Host IP address that corresponds to the update file server. The CDN host is controlled by Microsoft servers and always maps to IP addresses hosting *.delivery.mp.microsoft.com or msedgesetup.azureedge.net. Default: ''.
 - **appPingEventDownloadMetricsTotalBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
-- **appPingEventDownloadMetricsUrl**  For events representing a download, the CDN URL provided by the update server for the client to download the update, the URL is controlled by Microsoft servers and always maps back to either *.delivery.mp.microsoft.com or msedgesetup.azureedge.net. Default: ''.
+- **appPingEventDownloadMetricsUrl** For events representing a download, the CDN URL provided by the update server for the client to download the update, the URL is controlled by Microsoft servers and always maps back to either *.delivery.mp.microsoft.com or msedgesetup.azureedge.net. Default: ''.
 - **appPingEventDownloadTimeMs**  For events representing a download, the time elapsed between the start of the download and the end of the download, in milliseconds. For events representing an entire update flow, the sum of all such download times over the course of the update flow. Sent in events that have an event type of '1', '2', '3', and '14' only. Default: '0'.
 - **appPingEventErrorCode**  The error code (if any) of the operation, encoded as a signed, base-10 integer. Default: '0'.
-- **appPingEventEventResult**  An enum indicating the result of the event. Please see the wiki for additional information. Default: '0'.
-- **appPingEventEventType**  An enum indicating the type of the event. Compatible clients MUST transmit this attribute. Please see the wiki for additional information.
+- **appPingEventEventResult**  An enumeration indicating the result of the event. Common values are '0' (Error) and '1' (Success). Default: '0' (Error).
+- **appPingEventEventType**  An enumeration indicating the type of the event and the event stage. Default: '0' (Unknown).
 - **appPingEventExtraCode1**  Additional numeric information about the operation's result, encoded as a signed, base-10 integer. Default: '0'.
 - **appPingEventInstallTimeMs**  For events representing an install, the time elapsed between the start of the install and the end of the install, in milliseconds. For events representing an entire update flow, the sum of all such durations. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appPingEventNumBytesDownloaded**  The number of bytes downloaded for the specified application. Default: '0'.
-- **appPingEventSequenceId**  An id that uniquely identifies particular events within one requestId. Since a request can contain multiple ping events, this field is necessary to uniquely identify each possible event.
-- **appPingEventSourceUrlIndex**  For events representing a download, the position of the download URL in the list of URLs supplied by the server in a "urls" tag.
-- **appPingEventUpdateCheckTimeMs**  For events representing an entire update flow, the time elapsed between the start of the update check and the end of the update check, in milliseconds. Sent in events that have an event type of '2' and '3' only. Default: '0'.
+- **appPingEventSequenceId**  An ID that uniquely identifies particular events within one requestId. Since a request can contain multiple ping events, this field is necessary to uniquely identify each possible event.
+- **appPingEventSourceUrlIndex**  For events representing a download, the position of the download URL in the list of URLs supplied by the server in a <urls> tag.
+- **appPingEventUpdateCheckTimeMs**	For events representing an entire update flow, the time elapsed between the start of the update check and the end of the update check, in milliseconds. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appUpdateCheckIsUpdateDisabled**  The state of whether app updates are restricted by group policy. True if updates have been restricted by group policy or false if they have not.
-- **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The server should not return an update instruction to a version number that does not match the prefix or complete version number. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it is not a lexical prefix (for example, '1.2.3' must match '1.2.3.4' but must not match '1.2.34'). Default: ''.
-- **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request should be sent over SSL or another secure protocol. Default: ''.
-- **appVersion**  The version of the product install. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it is not a lexical prefix (for example, '1.2.3' MUST match '1.2.3.4' but MUST NOT match '1.2.34'). Default: ''.
+- **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request is sent over SSL or another secure protocol. This field is unused by Edge Update and always empty. Default: ''.
+- **appVersion**  The version of the product install. Default: '0.0.0.0'.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **eventType**  A string indicating the type of the event. Please see the wiki for additional information.
-- **hwHasAvx**  '1' if the client's hardware supports the AVX instruction set. '0' if the client's hardware does not support the AVX instruction set. '-1' if unknown. Default: '-1'.
+- **eventType**  A string representation of appPingEventEventType indicating the type of the event.
+- **hwHasAvx**  '1' if the client's hardware supports the SSE instruction set. '0' if the client's hardware does not support the SSE instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse**  '1' if the client's hardware supports the SSE instruction set. '0' if the client's hardware does not support the SSE instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse2**  '1' if the client's hardware supports the SSE2 instruction set. '0' if the client's hardware does not support the SSE2 instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse3**  '1' if the client's hardware supports the SSE3 instruction set. '0' if the client's hardware does not support the SSE3 instruction set. '-1' if unknown. Default: '-1'.
@@ -5039,48 +5064,22 @@ The following fields are available:
 - **hwPhysmemory**  The physical memory available to the client, truncated down to the nearest gibibyte. '-1' if unknown. This value is intended to reflect the maximum theoretical storage capacity of the client, not including any hard drive or paging to a hard drive or peripheral. Default: '-1'.
 - **isMsftDomainJoined**  '1' if the client is a member of a Microsoft domain. '0' otherwise. Default: '0'.
 - **osArch**  The architecture of the operating system (e.g. 'x86', 'x64', 'arm'). '' if unknown. Default: ''.
-- **osPlatform**  The operating system family that the within which the Omaha client is running (e.g. 'win', 'mac', 'linux', 'ios', 'android'). '' if unknown. The operating system Name should be transmitted in lowercase with minimal formatting. Default: ''.
+- **osPlatform**  The operating system family that the within which the Omaha client is running (e.g. 'win', 'mac', 'linux', 'ios', 'android'). '' if unknown. The operating system name should be transmitted in lowercase with minimal formatting. Default: ''.
 - **osServicePack**  The secondary version of the operating system. '' if unknown. Default: ''.
 - **osVersion**  The primary version of the operating system. '' if unknown. Default: ''.
 - **requestCheckPeriodSec**  The update interval in seconds. The value is read from the registry. Default: '-1'.
 - **requestDlpref**  A comma-separated list of values specifying the preferred download URL behavior. The first value is the highest priority, further values reflect secondary, tertiary, et cetera priorities. Legal values are '' (in which case the entire list must be empty, indicating unknown or no-preference) or 'cacheable' (the server should prioritize sending URLs that are easily cacheable). Default: ''.
-- **requestDomainJoined**  '1' if the machine is part of a managed enterprise domain. Otherwise '0'.
+- **requestDomainJoined**  '1' if the device is part of a managed enterprise domain. Otherwise '0'.
 - **requestInstallSource**  A string specifying the cause of the update flow. For example: 'ondemand', or 'scheduledtask'. Default: ''.
 - **requestIsMachine**  '1' if the client is known to be installed with system-level or administrator privileges. '0' otherwise. Default: '0'.
 - **requestOmahaShellVersion**  The version of the Omaha installation folder. Default: ''.
 - **requestOmahaVersion**  The version of the Omaha updater itself (the entity sending this request). Default: '0.0.0.0'.
-- **requestProtocolVersion**  The version of the Omaha protocol. Compatible clients MUST provide a value of '3.0'. Compatible clients must always transmit this attribute. Default: undefined.
-- **requestRequestId**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha request. Each request attempt should have (with high probability) a unique request id. Default: ''.
+- **requestProtocolVersion**  The version of the Omaha protocol. Compatible clients MUST provide a value of '3.0'. Compatible clients MUST always transmit this attribute. Default: undefined.
+- **requestRequestId**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha request. Default: ''.
 - **requestSessionCorrelationVectorBase**  A client generated random MS Correlation Vector base code used to correlate the update session with update and CDN servers. Default: ''.
-- **requestSessionId**  A randomly-generated (uniformly distributed) GUID. Each single update flow (e.g. update check, update application, event ping sequence) should have (with high probability) a single unique session ID. Default: ''.
+- **requestSessionId**  A randomly-generated (uniformly distributed) GUID. Each single update flow (e.g. update check, update application, event ping sequence) should have (with high probability) a single unique sessionid. Default: ''.
 - **requestTestSource**  Either '', 'dev', 'qa', 'prober', 'auto', or 'ossdev'. Any value except '' indicates that the request is a test and should not be counted toward normal metrics. Default: ''.
-- **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
-
-
-### Aria.f4a7d46e472049dfba756e11bdbbc08f.Microsoft.WebBrowser.SystemInfo.Config
-
-This config event sends basic device connectivity and configuration information from Microsoft Edge about the current data collection consent, app version, and installation state to keep Microsoft Edge up to date and secure.
-
-The following fields are available:
-
-- **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
-- **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
-- **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
-- **Channel**  An integer indicating the channel of the installation (Canary or Dev).
-- **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
-- **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
-- **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
-- **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
-- **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
-- **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
-- **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
-- **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
-- **pop_sample**  A value indicating how the device's data is being sampled.
-- **reconsentConfigs**  A comma separated list of all reconsent configurations the current installation has received. Each configuration follows a well-defined format: 2DigitMonth-2DigitYear-3LetterKeyword.
-- **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
-- **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
-
+- **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt should have (with high probability) a unique request id. Default: ''.
 
 ### Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
 
@@ -5405,7 +5404,22 @@ This event provides a Windows Internal Library context used for Product and Serv
 
 The following fields are available:
 
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
 - **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
 - **threadId**  The ID of the thread on which the activity is executing.
 
 
@@ -7341,6 +7355,18 @@ The following fields are available:
 - **IsValidDumpFile**  True if the dump file is valid for the debugger, false otherwise
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
+### Value
+
+This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
+
+The following fields are available:
+
+- **Algorithm**  The algorithm used to preserve privacy.
+- **DPRange**  The upper bound of the range being measured.
+- **DPValue**  The randomized response returned by the client.
+- **Epsilon**  The level of privacy to be applied.
+- **HistType**  The histogram type if the algorithm is a histogram algorithm.
+- **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
 
 ## Windows Error Reporting MTT events
 

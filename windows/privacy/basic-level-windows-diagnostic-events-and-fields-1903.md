@@ -3428,7 +3428,7 @@ The following fields are available:
 
 This event sends basic metadata about an application on the system to help keep Windows up to date.
 
-This event includes fields from [Ms.Device.DeviceInven|oryChange](#msdevicedeviceinven|orychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -3530,7 +3530,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDevicePnpAdd events will be sent.
 
-This event includes fields from [Ms.Device.DmviceInventoryChange](#msdevicedmviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -3541,7 +3541,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryApplicationAdd events will be sent.
 
-This event includes fields from [Ms.Device,DeviceInventoryChange](#msdevice,deviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4475,7 +4475,7 @@ The following fields are available:
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
 
-The Ping event sends a detailed inventory of software and hardware information about the EdgeUpdate user's version, app usage, update usage, and hardware capabilities. This event contains Device Connectivity and Configuration, Product and Service Performance, Product and Service Usage, and Software Setup and Inventory data. One roll-up event is sent each time any installation, update, or uninstallation process, including an error, occurs in the EdgeUpdate service. Each Ping event can contain an arbitrary number of apps which have been modified, and each of these apps in turn can fire multiple event types. This event is used to measure the reliability, performance, and usage of the EdgeUpdate service.
+This event sends hardware and software inventory information about the Microsoft Edge Update service, Microsoft Edge applications, and the current system environment, including app configuration, update configuration, and hardware capabilities. It's  used to measure the reliability and performance of the EdgeUpdate service and if Microsoft Edge applications are up to date.
 
 The following fields are available:
 
@@ -4642,8 +4642,30 @@ The following fields are available:
 - **requestSessionCorrelationVectorBase**  A client generated random MS Correlation Vector base code used to correlate the update session with update and CDN servers. Default: ''.
 - **requestSessionId**  A randomly-generated (uniformly distributed) GUID. Each single update flow (e.g. update check, update application, event ping sequence) SHOULD have (with high probability) a single unique session ID. Default: ''.
 - **requestTestSource**  Either '', 'dev', 'qa', 'prober', 'auto', or 'ossdev'. Any value except '' indicates that the request is a test and should not be counted toward normal metrics. Default: ''.
-- **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
+- **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt should have (with high probability) a unique request id. Default: ''.
 
+
+### Aria.f4a7d46e472049dfba756e11bdbbc08f.Microsoft.WebBrowser.SystemInfo.Config
+
+This config event sends basic device connectivity and configuration information from Microsoft Edge about the current data collection consent, app version, and installation state to keep Microsoft Edge up to date and secure.
+
+The following fields are available:
+
+- **app_version**  The internal Microsoft Edge build version string.
+- **appConsentState**  Bit flags that describe the consent for data collection on the device, or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **Channel**  An integer indicating the channel of the installation (Canary or Dev).
+- **client_id**  A non-durable unique identifier with which all other diagnostic client data is associated. This value is reset whenever UMA data collection is disabled, or when the application is uninstalled.
+- **ConnectionType**  The first reported type of network connection currently connected. Possible values: Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth
+- **container_client_id**  The client ID of the container if the device is in Windows Defender Application Guard mode.
+- **container_session_id**  The session ID of the container if the device is in Windows Defender Application Guard mode.
+- **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. There is not value in this field is the device is at the Basic diagnostic data level.
+- **EventInfo.Level**  The minimum Windows diagnostic data level required for the event. Possible values: 1 -- Basic, 2 -- Enhanced, 3 -- Full
+- **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
+- **installSource**  An enumeration representing the source of this installation. Possible values: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
+- **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
+- **PayloadLogType**  The log type for the event correlating with. Possible values: 0 -- Unknown, 1 -- Stability, 2 -- On-going, 3 -- Independent, 4 -- UKM, or 5 -- Instance level
+- **session_id** An ordered identifier that is guaranteed to be greater than the previous session identifier each time the user launches the application, reset on subsequent launch after client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 
 ## Migration events
 
