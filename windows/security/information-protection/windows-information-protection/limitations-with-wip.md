@@ -135,7 +135,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and therefore are not protected.
         </td>
-        <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in local PST file, the data is unprotected. 
+        <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected. 
         </td>
         <td>It is recommended to use Microsoft Office Outlook in Online mode, or use encryption to protect OST and PST files manually.
         </td>
