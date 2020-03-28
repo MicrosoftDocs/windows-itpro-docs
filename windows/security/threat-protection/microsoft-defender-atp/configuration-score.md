@@ -86,17 +86,14 @@ You can improve your security configuration when you remediate issues from the s
 
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
-- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
-- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
-- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
