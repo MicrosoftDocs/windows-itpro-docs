@@ -35,7 +35,7 @@ microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +00
 ```
 An output from the previous command with correct date and time of installation indicates success.
 
-Also check the [Client configuration](linux-install-manually.md#client-configuration) to verify the health of the product and detect eicar.
+Also check the [Client configuration](linux-install-manually.md#client-configuration) to verify the health of the product and detect the EICAR text file.
 
 ## Installation failed
 
@@ -54,7 +54,7 @@ $ systemctl status mdatp
            └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
 ```
 
-## Steps to troubleshoot if wdavdaemon is not running
+## Steps to troubleshoot if mdatp service isn't running
 
 1. Check if “mdatp” user exists:
 ```bash
@@ -71,7 +71,7 @@ $ sudo systemctl enable mdatp
 $ sudo systemctl restart mdatp
 ```
 
-3. If mdatp.service is not found upon running the previous command, run
+3. If mdatp.service isn't found upon running the previous command, run
 ```bash
 $ sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
 
@@ -81,29 +81,29 @@ where <systemd_path> is
 ```
 and then re-run step 2.
 
-4. If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Please re-enable immediately though for security reasons after trying this.
+4. If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Re-enable immediately though for security reasons after trying it.
 
-5. Ensure that the filesystem containing wdavdaemon is not mounted with “noexec”
+5. Ensure that the file system containing wdavdaemon isn't mounted with “noexec”
 
-## If wdavdaemon is running but eicar detection doesn't work
+## If mdatp service is running, but EICAR text file detection doesn't work
 
-1. Check the filesystem type using:
+1. Check the file system type using:
 ```bash
-$ findmnt -T <path_of_eicar_file>
+$ findmnt -T <path_of_EICAR_file>
 ```
-Currently supported filesystems for on-access activity are ext2, ext3, ext4, temps, btrfs and xfs. Any files outside these filesystems will not be scanned.
+Currently supported file systems for on-access activity are listed [here](microsoft-defender-atp-linux.md#System-requirements). Any files outside these file systems won't be scanned.
 
 2. Collect diagnostic logs:
 ```bash
-$ mdatp --diagnostic --create
+$ sudo mdatp --diagnostic --create
 ```
 
-## Command line tool “mdatp” is not working
+## Command-line tool “mdatp” isn't working
 
-1. If running the command line tool `mdatp` gives an error `command not found`, run the following:
+1. If running the command-line tool `mdatp` gives an error `command not found`, run the following:
 ```bash
 $  sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
 ```
 and try again.
 
-2. If step 1 doesn't work, please collect the diagnostic logs as indicated in the previous section.
+2. If step 1 doesn't work, collect the diagnostic logs as indicated in the previous section.
