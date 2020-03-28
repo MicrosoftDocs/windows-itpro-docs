@@ -145,6 +145,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md).
 
+## How to troubleshoot installation failures in Microsoft Defender ATP for Linux
+
+If you experience any failures during installation or issues with basic working of the product post installation, refer to [Troubleshooting installation failures in Microsoft Defender ATP for Linux](linux-support-install.md).
+
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see the [Resources](linux-resources.md) page.

@@ -39,7 +39,7 @@ Also check the [Client configuration](linux-install-manually.md#client-configura
 
 ## Installation failed
 
-Check if wdavdaemon is running
+Check if the mdatp service is running
 ```bash
 $ systemctl status mdatp
 
@@ -79,7 +79,7 @@ where <systemd_path> is
 /lib/systemd/system for Ubuntu and Debian distributions
 /usr/lib/systemd/system for Rhel, CentOS, Oracle and SLES
 ```
-and then re-run step 2.
+and then rerun step 2.
 
 4. If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Re-enable immediately though for security reasons after trying it.
 
@@ -100,7 +100,7 @@ $ sudo mdatp --diagnostic --create
 
 ## Command-line tool “mdatp” isn't working
 
-1. If running the command-line tool `mdatp` gives an error `command not found`, run the following:
+1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
 ```bash
 $  sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
 ```
