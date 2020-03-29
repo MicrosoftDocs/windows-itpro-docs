@@ -91,7 +91,7 @@ and then rerun step 2.
 ```bash
 $ findmnt -T <path_of_EICAR_file>
 ```
-Currently supported file systems for on-access activity are listed [here](microsoft-defender-atp-linux.md#System-requirements). Any files outside these file systems won't be scanned.
+Currently supported file systems for on-access activity are listed [here](microsoft-defender-atp-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
 2. Collect diagnostic logs:
 ```bash
