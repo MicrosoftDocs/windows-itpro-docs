@@ -3,8 +3,7 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-audience: itpro
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
