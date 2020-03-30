@@ -122,7 +122,7 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP 
 
 ### Log analytics agent requirements
 
-The information below list the proxy and firewall configuration information required to communicate with log analytics.
+The information below list the proxy and firewall configuration information required to communicate with log analytics agent (previously known as Microsoft Monitoring Agent) for the downlevel versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
 |Agent Resource|Ports |Direction |Bypass HTTPS inspection|
 |------|---------|--------|--------|   
