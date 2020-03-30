@@ -68,7 +68,7 @@ Review the following details to verify minimum system requirements:
 
     > [!NOTE]
     > Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
-    > Don't install .NET framework 4.0.x, since it will negate the above installation.
+    > Don't install .NET Framework 4.0.x, since it will negate the above installation.
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
