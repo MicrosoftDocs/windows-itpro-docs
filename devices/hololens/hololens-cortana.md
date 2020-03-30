@@ -48,6 +48,18 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 |Hide and show hand ray | "Hide hand ray" / "Show hand ray" |
 |See available speech commands | "What can I say?" |
 
+Starting with version 19041.x of HoloLens 2, you can also use these commands:
+| Say this | To do this |
+| - | - |
+| "Restart device" | Bring up a dialogue to confirm you want to restart the device. You can say "yes" to restart. |
+| "Shutdown device" | Bring up a dialogue to confirm you want to turn off the device. You can say "yes" to confirm. |
+| "Brightness up/down" | Increase or decrease the display brightness by 10%. |
+| "Volume up/down" | Increase or decrease the volume by 10%. |
+| "What's my IP address" | Bring up a dialogue displaying your device's current IP address on the local network. |
+| "Take a picture" | Capture a mixed reality photo of what you are currently seeing. |
+| "Take a video" | Start recording a mixed reality video. | 
+| "Stop recording" | Stops the current mixed reality video recording if one is in progress. |
+
 ### Hologram commands
 
 To use these commands, gaze at a 3D object, hologram, or app window.
@@ -87,31 +99,36 @@ Sometimes it's helpful to spell out things like email addresses. For instance, t
 
 ## Do more with Cortana
 
-Cortana can help you do all kinds of things on your HoloLens, from searching the web to shutting down your device. She can give you suggestions, ideas, reminders, alerts, and more. To get her attention, select Cortana  on **Start** or say "Hey Cortana" anytime.
+Cortana can help you do all kinds of things on your HoloLens, but depending on which version of Windows Holographic you're using, the capablities may be different. You can learn more about the updated capabilites of the latest version of Cortana [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
-Here are some things you can try saying (remember to say "Hey Cortana" first).
+Here are some things you can try saying (remember to say "Hey Cortana" first). 
 
 **Hey, Cortana**...
 
 - What can I say?
+- Launch <*app name*>.
+- What time is it?
+- Show me the latest NBA scores.
+- Tell me a joke.
+
+If you're using *version 18362.x or earlier*, you can also use these commands:
+
+**Hey, Cortana**...
+
 - Increase the volume.
 - Decrease the brightness.
 - Shut down.
 - Restart.
 - Go to sleep.
 - Mute.
-- Launch <*app name*>.
 - Move <*app name*> here (gaze at the spot that you want the app to move to).
 - Go to Start.
 - Take a picture.
 - Start recording. (Starts recording a video.)
 - Stop recording. (Stops recording a video.)
-- What time is it?
-- Show me the latest NBA scores.
 - How much battery do I have left?
-- Tell me a joke.
 
 Some Cortana features that you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens, and the Cortana experience may vary from one region to another.
 
