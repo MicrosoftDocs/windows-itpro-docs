@@ -90,21 +90,6 @@ Supported operation is Get.
 
 The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
 
-<a href="" id="ext-microsoft-localtime"></a>**Ext/Microsoft/LocalTime**  
-Required. Returns the client local time in ISO 8601 format.
-
-Supported operation is Get.
-
-<a href="" id="ext-microsoft-osplatform"></a>**Ext/Microsoft/OSPlatform**  
-Required. Returns the OS platform of the device. For Windows 10 for desktop editions, it returns the ProductName as defined in HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductName.
-
-Supported operation is Get.
-
-<a href="" id="ext-microsoft-processortype"></a>**Ext/Microsoft/ProcessorType**  
-Required. Returns the processor type of the device as documented in SYSTEM_INFO.
-
-Supported operation is Get.
-
 <a href="" id="ext-microsoft-radioswv"></a>**Ext/Microsoft/RadioSwV**  
 Required. Returns the radio stack software version number.
 
@@ -125,6 +110,21 @@ Required. Returns the processor architecture of the device as &quot;arm&quot; or
 
 Supported operation is Get.
 
+<a href="" id="ext-microsoft-processortype"></a>**Ext/Microsoft/ProcessorType**  
+Required. Returns the processor type of the device as documented in SYSTEM_INFO.
+
+Supported operation is Get.
+
+<a href="" id="ext-microsoft-osplatform"></a>**Ext/Microsoft/OSPlatform**  
+Required. Returns the OS platform of the device. For Windows 10 for desktop editions, it returns the ProductName as defined in HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductName.
+
+Supported operation is Get.
+
+<a href="" id="ext-microsoft-localtime"></a>**Ext/Microsoft/LocalTime**  
+Required. Returns the client local time in ISO 8601 format.
+
+Supported operation is Get.
+
 <a href="" id="ext-microsoft-devicename"></a>**Ext/Microsoft/DeviceName**  
 Required. Contains the user-specified device name.
 
@@ -133,6 +133,20 @@ Support for Replace operation for Windows 10 Mobile was added in Windows 10, 
 Value type is string.
 
 Supported operations are Get and Replace.
+
+<a href="" id="ext-microsoft-dnscomputername "></a>**Ext/Microsoft/DNSComputerName**  
+Added in the next major release of Windows 10. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
+
+The following are the available naming macros:  
+| Macro | Description | Example | Generated Name |
+| -------| -------| -------| -------|
+| %RAND:<# of digits> | Generates the specified number of random digits. | Test%RAND:6% | Test123456|
+| %SERIAL% | Generates the serial number derived from the device. If the serial number causes the new name to exceed the 63 character limit, the serial number will be truncated from the beginning of the sequence.| Test-Device-%SERIAL% | Test-Device-456|
+
+Value type is string. Supported operations are Get and Replace.
+
+> [!Note]  
+> On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer&quot;s` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts** > **ComputerAccount**.
 
 <a href="" id="ext-microsoft-totalstorage"></a>**Ext/Microsoft/TotalStorage**  
 Added in Windows 10, version 1511. Integer that specifies the total available storage in MB from first internal drive on the device (may be less than total physical storage).
@@ -151,20 +165,6 @@ Supported operation is Get.
 Added in Windows 10, version 1809. SMBIOS Serial Number of the device.
 
 Value type is string. Supported operation is Get.
-
-<a href="" id="ext-microsoft-dnscomputername "></a>**Ext/Microsoft/DNSComputerName**  
-Added in Windows 10, version 1903. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
-
-The following are the available naming macros:
-| Macro | Description | Example | Generated Name |
-| -------| -------| -------| -------|
-| %RAND:<# of digits> | Generates the specified number of random digits. | Test%RAND:6% | Test123456|
-| %SERIAL% | Generates the serial number derived from the device. If the serial number causes the new name to exceed the 63 character limit, the serial number will be truncated from the beginning of the sequence.| Test-Device-%SERIAL% | Test-Device-456|
-
-Value type is string. Supported operations are Get and Replace.
-
-> [!Note]  
-> On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer&quot;s` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts** > **ComputerAccount**.
 
 <a href="" id="ext-wlanmacaddress"></a>**Ext/WLANMACAddress**  
 The MAC address of the active WLAN connection, as a 12-digit hexadecimal number.
