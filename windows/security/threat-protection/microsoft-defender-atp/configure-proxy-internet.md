@@ -120,6 +120,16 @@ United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.bl
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
+### Log analytics agent requirements
+
+The information below list the proxy and firewall configuration information required to communicate with log analytics.
+
+|Agent Resource|Ports |Direction |Bypass HTTPS inspection|
+|------|---------|--------|--------|   
+|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.blob.core.windows.net |Port 443 |Outbound|Yes |  
+
 ## Microsoft Defender ATP service backend IP range
 
 If your network devices don't support the URLs added to an "allow" list in the prior section, you can use the following information.
