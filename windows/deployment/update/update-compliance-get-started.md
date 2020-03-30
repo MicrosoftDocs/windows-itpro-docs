@@ -27,7 +27,7 @@ Steps are provided in sections that follow the recommended setup process:
 
 ## Update Compliance prerequisites
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
-1. Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc. 
+1. Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 Enterprise edition, as well as [Windows 10 Enterprise multi-session](https://docs.microsoft.com/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc. 
 2. Update Compliance provides detailed deployment data for devices on the Semi-Annual Channel and the Long-term Servicing Channel. Update Compliance will show Windows Insider Preview devices, but currently will not provide detailed deployment information for them.
 3. Update Compliance requires at least the Basic level of diagnostic data and a Commercial ID to be enabled on the device. 
 4. For Windows 10 1803+, device names will not appear in Update Compliance unless you opt in. The steps to accomplish this is outlined in the [Enroll devices in Update Compliance](#enroll-devices-in-update-compliance) section.
