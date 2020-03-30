@@ -64,7 +64,7 @@ There are several ways to configure devices for assessments depending on your us
 
 2. **Create and distribute the assessment URL through the web, email, OneNote, or any other method** 
 
-    This allows teachers and test administrators an easier way to deploy assessments quickly and simply. We recommend this method for lower stakes assessments. You can also create shortcuts to distribute the link
+    This allows teachers and test administrators an easier way to deploy assessments quickly and simply. We recommend this method for lower stakes assessments. You can also create shortcuts to distribute the link.
 
     You can enable this using a schema activation.
 
