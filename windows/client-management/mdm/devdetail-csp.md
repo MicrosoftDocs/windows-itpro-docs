@@ -138,6 +138,7 @@ Supported operations are Get and Replace.
 Added in the next major release of Windows 10. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
 
 The following are the available naming macros:  
+
 | Macro | Description | Example | Generated Name |
 | -------| -------| -------| -------|
 | %RAND:<# of digits> | Generates the specified number of random digits. | Test%RAND:6% | Test123456|
