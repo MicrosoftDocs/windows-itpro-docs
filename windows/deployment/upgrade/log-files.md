@@ -1,5 +1,5 @@
 ---
-title: Log files - Windows IT Pro
+title: Log files and resolving upgrade errors
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin

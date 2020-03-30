@@ -4,16 +4,18 @@ ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: 
+description: Learn about the three possible scenarios for volume activation of Windows 10 or Windows Server 2012 R2 by using a Key Management Service (KMS) host.
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article
+ms.custom: seo-marvel-mar2020
 ---
 
 # Activate using Key Management Service
@@ -42,7 +44,7 @@ Check out [Windows 10 Volume Activation Tips](https://blogs.technet.microsoft.co
 
 Installing a KMS host key on a computer running Windows 10 allows you to activate other computers running Windows 10 against this KMS host and earlier versions of the client operating system, such as Windows 8.1 or Windows 7.
 Clients locate the KMS server by using resource records in DNS, so some configuration of DNS may be required. This scenario can be beneficial if your organization uses volume activation for clients and MAK-based activation for a smaller number of servers.
-To enable KMS functionality, a KMS key is installed on a KMS host; then, the host is activated over the Internet or by phone using Microsoft’s activation services.
+To enable KMS functionality, a KMS key is installed on a KMS host; then, the host is activated over the Internet or by phone using Microsoft's activation services.
 
 **Configure KMS in Windows 10**
 
@@ -74,33 +76,33 @@ If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, 
 3. Add the Volume Activation Services role, as shown in Figure 4.
 
    ![Adding the Volume Activation Services role in Server Manager](../images/volumeactivationforwindows81-04.jpg)
-	
+    
    **Figure 4**. Adding the Volume Activation Services role in Server Manager\
-	
+    
 4. When the role installation is complete, click the link to launch the Volume Activation Tools (Figure 5).
 
    ![Launching the Volume Activation Tools](../images/volumeactivationforwindows81-05.jpg)
-	
+    
    **Figure 5**. Launching the Volume Activation Tools
 
    5. Select the **Key Management Service (KMS)** option, and specify the computer that will act as the KMS host (Figure 6).
       This can be the same computer on which you installed the role or another computer. For example, it can be a client computer running Windows 10.
     
    ![Configuring the computer as a KMS host](../images/volumeactivationforwindows81-06.jpg)
-	
+    
    **Figure 6**. Configuring the computer as a KMS host
-	
+    
 5. Install your KMS host key by typing it in the text box, and then click **Commit** (Figure 7).
 
    ![Installing your KMS host key](../images/volumeactivationforwindows81-07.jpg)
-	
+    
    **Figure 7**. Installing your KMS host key
-	
+    
 6. If asked to confirm replacement of an existing key, click **Yes**.
 7. After the product key is installed, you must activate it. Click **Next** (Figure 8).
 
    ![Activating the software](../images/volumeactivationforwindows81-08.jpg)
-	
+    
    **Figure 8**. Activating the software
 
    The KMS key can be activated online or by phone. See Figure 9.
