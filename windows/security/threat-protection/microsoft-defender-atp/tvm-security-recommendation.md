@@ -106,6 +106,8 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 
 4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
 
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
 >[!NOTE]
 >If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.
 

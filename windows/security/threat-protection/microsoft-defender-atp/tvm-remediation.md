@@ -32,46 +32,20 @@ Lower your organization's exposure from vulnerabilities and increase your securi
 
 ## How remediation requests work
 
-When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
-
-View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
+When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the Threat & Vulnerability Management [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
 
 ## Navigate to the remediation page
 
-You can access the remediation page in a few places in the portal:
-
-- Security recommendations flyout panel
-- Navigation menu
-- Top remediation activities in the dashboard
-
-### Security recommendation flyout page
-
-You'll see remediation options when you select one of the security recommendations in the [Security recommendations page](tvm-security-recommendation.md).
-
-1. From the flyout panel, you'll see the security recommendation details including next steps. Select **Remediation options**.
-2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**.
-3. Select a remediation due date.
-4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance.
-
->[!NOTE]
->If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune.
-
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+You can access the remediation page though the navigation menu, and top remediation activities in the dashboard.
 
 ### Navigation menu
 
-1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization.
-      
-      To see software which has reached end-of-support, select **Software uninstall** from the **Remediation type** filter. For specific software versions which have reached end-of-support, select **Software update** from the **Remediation type** filter. Select **In progress** then **Apply**.
-![Screenshot of the remediation page filters for software update and uninstall](images/remediation_swupdatefilter.png)
-
-2. Select the remediation activity that you want to view.
+Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. Select the remediation activity that you want to view.
 ![Screenshot of the remediation page flyout for a software which reached end-of-support](images/remediation_flyouteolsw.png)
 
 ### Top remediation activities in the dashboard
 
-1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top remediation activities** card. The list is sorted and prioritized based on what is listed in the **Top security recommendations**.
-2. Select the remediation activity that you want to view.
+View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
 
 ## Exception options
