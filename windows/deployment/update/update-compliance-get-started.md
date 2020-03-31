@@ -124,5 +124,5 @@ Allow Device Name in Telemetry is under the same node as Commercial ID and Allow
 #### Allow Device Name in Telemetry with MDM
 Allow Device Name in Telemetry is under the [Policy Configuration Service Provider](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) as [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry). 
 
->[!NOTE]
+> [!NOTE]
 >After enrolling your devices (by deploying your CommercialID and Windows Diagnostic Data settings), it might take 48-72 hours for the first data to appear in the solution. Until then, Update Compliance will indicate it is still assessing devices. 
