@@ -21,7 +21,16 @@ ms.topic: article
 
 -   Windows 10
 
-In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) machine named PC0001.
+In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) machine named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
+
+This topic assumes that you have completed the following prerequisite procedures:
+- [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+- [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
+- [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
+- [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
+- [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
+- [Create a task sequence with Configuration Manager and MDT](create-a-task-sequence-with-configuration-manager-and-mdt.md)
+- [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
 
 For the purposes of this guide, we will use a minimum of two server computers (DC01 and CM01) and one client computer (PC0001).
 - DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server. Note: DHCP services are required for the client (PC0001) to connect to the Windows Deployment Service (WDS).
@@ -36,10 +45,8 @@ All servers are running Windows Server 2019. However, an earlier, supported vers
 
 All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
-An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
-
 >[!NOTE]
->No WDS console configuration required for PXE to work. Everything is done with the Configuration Manager console.
+>No WDS console configuration is required for PXE to work. Everything is done with the Configuration Manager console.
 
 ## Procedures
 
