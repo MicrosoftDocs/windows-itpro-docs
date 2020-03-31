@@ -251,7 +251,6 @@
 ##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
 ##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
 ##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
-##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
 #### [Update Windows 10 media with Dynamic Update](update/media-dynamic-update.md)

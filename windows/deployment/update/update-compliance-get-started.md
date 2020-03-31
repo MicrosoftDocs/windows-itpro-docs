@@ -40,11 +40,11 @@ Update Compliance is offered as a solution which is linked to a new or existing 
 > [!NOTE]
 > Update Compliance is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Update Compliance, but no Azure charges are expected to accrue to the subscription as a result of using Update Compliance. 
 
-2. In the Azure portal select **+ Create a resource**, and search for “Update Compliance". You should see it in the results below. 
+2. In the Azure portal select **+ Create a resource**, and search for "Update Compliance". You should see it in the results below. 
 
 ![Update Compliance marketplace search results](images/UC_00_marketplace_search.png)
 
-3. Select **Update Compliance** and a blade will appear summarizing the solution’s offerings. At the bottom, select **Create** to begin adding the solution to Azure.
+3. Select **Update Compliance** and a blade will appear summarizing the solution's offerings. At the bottom, select **Create** to begin adding the solution to Azure.
 
 ![Update Compliance solution creation](images/UC_01_marketplace_create.png)
 
