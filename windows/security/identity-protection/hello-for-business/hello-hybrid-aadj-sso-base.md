@@ -329,7 +329,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 15. Sign-out of the Azure portal.
 
 > [!IMPORTANT]
-> For more details about the actual experience after everything is configured, please visit [this article](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
+> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
 
 ## Section Review
 > [!div class="checklist"]
