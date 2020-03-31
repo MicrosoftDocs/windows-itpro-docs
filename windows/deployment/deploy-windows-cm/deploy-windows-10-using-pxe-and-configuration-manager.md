@@ -21,7 +21,7 @@ ms.topic: article
 
 -   Windows 10
 
-In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) machine named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
+In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
 
 This topic assumes that you have completed the following prerequisite procedures:
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -59,7 +59,7 @@ All server and client computers referenced in this guide are on the same subnet.
 
     * Install the Windows 10 operating system.
     * Install the Configuration Manager client and the client hotfix.
-    * Join the machine to the domain.
+    * Join the computer to the domain.
     * Install the application added to the task sequence.
     
     >[!NOTE]
