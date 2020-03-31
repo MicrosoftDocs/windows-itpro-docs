@@ -149,7 +149,7 @@ System apps are integral to the operating system. Here are the typical system ap
 
 
 > [!NOTE]
-> - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
+> The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
 
 ## Installed Windows apps
 
