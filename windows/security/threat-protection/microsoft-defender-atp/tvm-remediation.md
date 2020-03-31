@@ -26,7 +26,7 @@ ms.topic: conceptual
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
-After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), you can start creating security tasks through the integration with Microsoft Intune where remediation tickets are created.
+After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), start creating security tasks through the integration with Microsoft Intune where remediation tickets are created.
 
 Lower your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
@@ -34,9 +34,9 @@ Lower your organization's exposure from vulnerabilities and increase your securi
 
 When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
 
-The dashboard will show the status of your top remediation activities. Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
+View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
-## Accessing the remediation page
+## Navigate to the remediation page
 
 You can access the remediation page in a few places in the portal:
 
@@ -131,18 +131,14 @@ The exception impact shows on both the Security recommendations page column and 
 
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
-- [Security recommendation](tvm-security-recommendation.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Recommendation APIs](vulnerability.md)
-- [Machine APIs](machine.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
