@@ -80,7 +80,6 @@ To find your Commercial ID within Azure:
 ![Update Compliance Settings page](images/UC_commercialID.png)
 
 > [!IMPORTANT]
->
 >Regenerate your Commercial ID only if your original ID can no longer be used or if you want to completely reset your workspace. Regenerating your Commercial ID cannot be undone and will result in you losing data for all devices that have the current Commercial ID until the new Commercial ID is deployed to devices.
 
 #### Deploying Commercial ID using Group Policy
