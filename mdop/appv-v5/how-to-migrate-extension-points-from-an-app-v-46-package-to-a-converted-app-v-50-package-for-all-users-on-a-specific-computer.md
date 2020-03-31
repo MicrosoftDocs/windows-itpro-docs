@@ -36,7 +36,7 @@ The following procedure does not require an App-V 5.0 management server.
 
    &lt;DeploymentConfiguration
 
-   xmlns="<http://schemas.microsoft.com/appv/2010/deploymentconfiguration>" PackageId=&lt;Package ID&gt; DisplayName=&lt;Display Name&gt;
+   xmlns="<https://schemas.microsoft.com/appv/2010/deploymentconfiguration>" PackageId=&lt;Package ID&gt; DisplayName=&lt;Display Name&gt;
 
    &lt;MachineConfiguration/&gt;
 

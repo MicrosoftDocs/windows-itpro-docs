@@ -28,6 +28,10 @@ highlightedContent:
     - title: What is Surface Hub 2S?
       itemType: overview
       url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099
+     # Card
+    - title: Surface Hub security overview 
+      itemType: learn
+      url: surface-hub-security.md
     # Card
     - title: What's new in Surface Hub 2S?
       itemType: whats-new
@@ -40,10 +44,6 @@ highlightedContent:
     - title: Surface Hub 2S Site Readiness Guide
       itemType: learn
       url: surface-hub-2s-site-readiness-guide.md
-    # Card
-    - title: Hub security overview 
-      itemType: learn
-      url: surface-hub-security.md
     # Card
     - title: Customize Surface Hub 2S installation
       itemType: how-to-guide
