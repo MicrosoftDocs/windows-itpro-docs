@@ -52,7 +52,7 @@ Process | A specific process (specified either by the full path or file name) an
 
 For more information on how to configure exclusions from Puppet, Ansible, or another management console, see [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md).
 
-### From the command-line
+### From the command line
 
 Run the following command to see the available switches for managing exclusions:
 
@@ -94,7 +94,7 @@ Examples:
 
 You can validate that your exclusion lists are working by using `curl` to download a test file.
 
-In the following Bash snippet, replace *test.txt* with a file that conforms to your exclusion rules. For example, if you have excluded the *.testing extension*, replace *test.txt* with *test.testing*. If you are testing a path, ensure that you run the command within that path.
+In the following Bash snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
 $ curl -o test.txt https://www.eicar.org/download/eicar.com.txt

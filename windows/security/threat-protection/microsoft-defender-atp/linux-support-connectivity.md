@@ -42,7 +42,7 @@ To test that a connection is not blocked in an environment without a proxy or wi
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-The output from this command should be similar to the following:
+The output from this command should be similar to:
 
 ```
 OK https://x.cp.wd.microsoft.com/api/report
@@ -64,7 +64,7 @@ $ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.mi
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
 
-To use a static proxy, the `mdatp.service` file must be modified. Ensure the leading leading `#` is removed to un-comment the following line from `/lib/systemd/system/mdatp.service`:
+To use a static proxy, the `mdatp.service` file must be modified. Ensure the leading `#` is removed to uncomment the following line from `/lib/systemd/system/mdatp.service`:
 
 ```bash
 #Environment="HTTPS_PROXY=http://address:port"
@@ -72,19 +72,19 @@ To use a static proxy, the `mdatp.service` file must be modified. Ensure the lea
 
 Also ensure that the correct static proxy address is filled in to replace `address:port`.
 
-If this file is correct, try running the following command in the terminal to re-load Microsoft Defender ATP for Linux and propagate the setting:
+If this file is correct, try running the following command in the terminal to reload Microsoft Defender ATP for Linux and propagate the setting:
 
 ```bash
 $ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 
-Upon success, attempt another connectivity test from the command-line:
+Upon success, attempt another connectivity test from the command line:
 
 ```bash
 $ mdatp --connectivity-test
 ```
 
-If the problem persists, reach out to customer support.
+If the problem persists, contact customer support.
 
 ## Resources
 

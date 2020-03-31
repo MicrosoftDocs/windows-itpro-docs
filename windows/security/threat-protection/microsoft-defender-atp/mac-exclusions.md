@@ -64,7 +64,7 @@ Select the type of exclusion that you wish to add and follow the prompts.
 
 You can validate that your exclusion lists are working by using `curl` to download a test file.
 
-In the following Bash snippet, replace *test.txt* with a file that conforms to your exclusion rules. For example, if you have excluded the *.testing extension*, replace *test.txt* with *test.testing*. If you are testing a path, ensure that you run the command within that path.
+In the following Bash snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
 $ curl -o test.txt https://www.eicar.org/download/eicar.com.txt
