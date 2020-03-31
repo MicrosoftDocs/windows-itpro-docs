@@ -30,11 +30,7 @@ After your organization's cybersecurity weaknesses are identified and mapped to 
 
 Lower your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
-## How remediation requests work
-
-When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the Threat & Vulnerability Management [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
-
-## Navigate to the remediation page
+## Navigate to the Remediation page
 
 You can access the remediation page though the navigation menu, and top remediation activities in the dashboard.
 
@@ -47,14 +43,15 @@ Go to the Threat & Vulnerability Management navigation menu and select **Remedia
 
 View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
+## Remediation activities
 
-## Exception options
+When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
+
+## Exceptions
 
 You can file exceptions to exclude certain recommendation from showing up in reports and affecting your [configuration score](configuration-score.md).
 
-When you select a [security recommendation](tvm-security-recommendation.md), it opens a flyout screen with details and options for your next steps. Select **Exception options** to fill out the justification and context.
-
-![Screenshot of exception flyout screen](images/tvm-exception-flyout.png)
+[File for an exception](tvm-security-recommendation.md#file-for-exception) from the [Security recommendations page](tvm-security-recommendation.md).
 
 ### Exception justification
 
