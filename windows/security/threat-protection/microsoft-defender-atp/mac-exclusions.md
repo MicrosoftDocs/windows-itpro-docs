@@ -72,7 +72,7 @@ $ curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 
 If Microsoft Defender ATP for Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
 
-If you do not have internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
+If you do not have Internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
 ```bash
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
