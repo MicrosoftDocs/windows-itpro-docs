@@ -87,7 +87,7 @@ The following table describes the parameters in the XML file that define the con
 <td align="left"><p>Schema name</p></td>
 <td align="left"><p>Name of the schema.</p>
 <p><strong>Applicable starting in App-V 5.0 SP3</strong>: If you want to use the new “optional packages” and “use any version” features that are described in this table, you must specify the following schema in the XML file:</p>
-<p><code>xmlns=&quot;<a href="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;</code></p></td>
+<p><code>xmlns=&quot;<a href="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot" data-raw-source="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&amp;quot">https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot</a>;</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AppConnectionGroupId</p></td>
@@ -160,8 +160,8 @@ The following example connection group XML file shows examples of the fields in 
 ```XML
 <?xml version="1.0" encoding="UTF-16">
 <appv:AppConnectionGroup 
-  xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
-  xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"  
+  xmlns="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+  xmlns:appv="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"  
   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"
   Priority="0"  
@@ -188,8 +188,8 @@ The following example connection group XML file applies to App-V 5.0 through App
 ```XML
 <?xml version="1.0" encoding="UTF-16">
 <appv:AppConnectionGroup
-  xmlns="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
-  xmlns:appv="http://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+  xmlns="https://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
+  xmlns:appv="https://schemas.microsoft.com/appv/2010/virtualapplicationconnectiongroup"
   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"
   Priority="0"

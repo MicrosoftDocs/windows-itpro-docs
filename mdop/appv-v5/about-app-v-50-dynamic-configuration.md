@@ -102,7 +102,7 @@ The structure of the App-V 5.0 Dynamic Configuration file is explained in the fo
 
 **Header** - the header of a dynamic user configuration file is as follows:
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<https://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
 The **PackageId** is the same value as exists in the Manifest file.
 
@@ -110,7 +110,7 @@ The **PackageId** is the same value as exists in the Manifest file.
 
 1. **Applications** - All app-extensions that are contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
 
-   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
+   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<https://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
    &lt;Applications&gt;
 
@@ -128,7 +128,7 @@ The **PackageId** is the same value as exists in the Manifest file.
 
 2. **Subsystems** - AppExtensions and other subsystems are arranged as subnodes under the &lt;Subsystems&gt;:
 
-   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
+   &lt;UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<https://schemas.microsoft.com/appv/2010/userconfiguration"&gt>;
 
    &lt;Subsystems&gt;
 
@@ -572,7 +572,7 @@ The **PackageId** is the same value as exists in the Manifest file.
 
 **Header** - The header of a Deployment Configuration file is as follows:
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<https://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
 
 The **PackageId** is the same value as exists in the manifest file.
 
@@ -582,7 +582,7 @@ The **PackageId** is the same value as exists in the manifest file.
 
 -   Machine Configuration section–contains information that can be configured only for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
-&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<http://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
+&lt;DeploymentConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="<https://schemas.microsoft.com/appv/2010/deploymentconfiguration"&gt>;
 
 &lt;UserConfiguration&gt;
 
