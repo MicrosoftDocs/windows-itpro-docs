@@ -117,25 +117,7 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Microsoft Defender ATP. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
-## Validating cloud connectivity
-
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
-
-If you prefer the command line, you can also check the connection by running the following command in Terminal:
-
-```bash
-$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
-```
-
-The output from this command should be similar to the following:
-
-> `OK https://x.cp.wd.microsoft.com/api/report`  
-> `OK https://cdn.x.cp.wd.microsoft.com/ping`
-
-Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
-```bash
-$ mdatp --connectivity-test
-```
+For troubleshooting steps, see the [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md) page.
 
 ## How to update Microsoft Defender ATP for Linux
 
