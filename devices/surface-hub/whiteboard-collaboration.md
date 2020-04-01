@@ -48,7 +48,7 @@ On the other device, such as a Surface Hub, when you are signed in, the shared b
 - You can also change the background color and design from solid to grid or dots. Pick the background, then choose the color from the wheel around it.
 - You can export a copy of the Whiteboard collaboration for yourself through the Share charm and leave the board for others to continue working.
 
-Fore more information, see [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d).
+For more information, see [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d).
 
 > [!NOTE]
 >  If you are using Whiteboard and cannot sign in, you can collaborate by joining a Teams or Skype for Business meeting, and then sharing your screen. After you're done, tap **Settings** > **Export to email** or save a copy of the board. If you choose to export to SVG, it exports vector graphics and provides higher resolution than PNG and can be opened in a web browser.
