@@ -11,7 +11,7 @@
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
-## [Deployment strategy](microsoft-defender-atp/deployment-strategy.md)
+## [Plan deployment](microsoft-defender-atp/deployment-strategy.md)
 
 
 ## [Deployment guide]()
