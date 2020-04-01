@@ -34,9 +34,9 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ![Set up and user flow for the Take a Test app](images/take_a_test_flow_dark.png)
 
-There are several ways to configure devices for assessments depending on your use case:
+There are several ways to configure devices for assessments, depending on your use case:
 
-- For higher stakes testing such as mid-term exams, you can setup a device with a dedicated testing account and URL. 
+- For higher stakes testing such as mid-term exams, you can set up a device with a dedicated testing account and URL. 
 - For lower stakes assessments such as a quick quiz in a class, you can quickly create and distribute the assessment URL through any method of your choosing.
 
 1. **Configure an assessment URL and a dedicated testing account**
