@@ -116,6 +116,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/update/update-compliance-perspectives.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-using",
+"redirect_document_id": true
+},
+{
 "source_path": "browsers/edge/hardware-and-software-requirements.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge",
 "redirect_document_id": true

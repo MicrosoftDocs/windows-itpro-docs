@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Configuring Microsoft Defender ATP for static proxy discovery
+# Configure Microsoft Defender ATP for Linux for static proxy discovery
 
 **Applies to:**
 
