@@ -43,32 +43,32 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 2. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Microsoft Defender ATP for Linux. This feature is enabled by default on the `Dogfood` and `InsisderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
  
-```bash
-$ mdatp config real_time_protection_statistics_enabled on
-```
+    ```bash
+    $ mdatp config real_time_protection_statistics_enabled on
+    ```
 
-This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
+    This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
-```bash
-$ mdatp health
-```
- 
-Verify that the `real_time_protection_enabled` entry is `true`. Otherwise, run the following command to enable it:
+    ```bash
+    $ mdatp health
+    ```
 
-```bash
-$ mdatp --config realTimeProtectionEnabled true
-```
+    Verify that the `real_time_protection_enabled` entry is `true`. Otherwise, run the following command to enable it:
 
-To collect current statistics, run:
- 
-```bash 
-$ mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
-```
- 
-The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
- 
-[!NOTE]
-> The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
+    ```bash
+    $ mdatp --config realTimeProtectionEnabled true
+    ```
+
+    To collect current statistics, run:
+
+    ```bash
+    $ mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
+    ```
+
+    The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+
+    >[!NOTE]
+    > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
 3. Use the `top` command-line tool and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
