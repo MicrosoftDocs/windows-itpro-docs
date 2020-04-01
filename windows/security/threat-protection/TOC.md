@@ -332,8 +332,12 @@
 ###### [Ansible based deployment](microsoft-defender-atp/linux-install-with-ansible.md)
 ##### [Update](microsoft-defender-atp/linux-updates.md)
 ##### [Configure]()
+###### [Configure and validate exclusions](microsoft-defender-atp/linux-exclusions.md)
 ###### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ###### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+##### [Troubleshoot]()
+###### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
+###### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 ##### [Resources](microsoft-defender-atp/linux-resources.md)
 
 
