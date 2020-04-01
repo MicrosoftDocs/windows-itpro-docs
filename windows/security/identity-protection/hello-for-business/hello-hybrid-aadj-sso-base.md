@@ -155,7 +155,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 9. In the **Advanced Sharing** dialog box, click **OK**.
 
 > [!Tip]
-> Make sure that users can access **\\Server FQDN\sharename**.
+> Make sure that users can access **\\\Server FQDN\sharename**.
 
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
