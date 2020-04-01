@@ -184,11 +184,11 @@ Before the systems can be onboarded into the workspace, the deployment scripts n
 Edit the InstallMMA.cmd with a text editor, such as notepad and update the
 following lines and save the file:
 
-   ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
+    ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
 
 Edit the ConfiguerOMSAgent.vbs with a text editor, such as notepad, and update the following lines and save the file:
 
-   ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
+    ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
 
 Microsoft Monitoring Agent (MMA) is currently (as of January 2019) supported on the following Windows Operating
 Systems:
@@ -265,7 +265,7 @@ MMA for enrollment into the workspace.
 
 13.  Click **Next**.
 
-   ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
 
 14. Verify the configuration, then click **Next**.
 
