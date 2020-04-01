@@ -81,9 +81,22 @@ where <systemd_path> is
 ```
 and then rerun step 2.
 
-4. If the above steps don’t work, try disabling SELinux, and then starting the service using step 2. Re-enable immediately though for security reasons after trying it.
+4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. This can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Please check the man page of selinux for more details.
+Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
-5. Ensure that the file system containing wdavdaemon isn't mounted with “noexec”
+5. Ensure that the daemon has executable permission.
+```bash
+$ ls -l /opt/microsoft/mdatp/sbin/wdavdaemon
+
+-rwxr-xr-x 2 root root 15502160 Mar  3 04:47 /opt/microsoft/mdatp/sbin/wdavdaemon
+```
+If the daemon doesn't have executable permissions, please make it executable using:
+```bash
+$ sudo chmod 0755 /opt/microsoft/mdatp/sbin/wdavdaemon
+```
+and retry running step 2.
+
+6. Ensure that the file system containing wdavdaemon isn't mounted with “noexec”.
 
 ## If mdatp service is running, but EICAR text file detection doesn't work
 
@@ -93,11 +106,6 @@ $ findmnt -T <path_of_EICAR_file>
 ```
 Currently supported file systems for on-access activity are listed [here](microsoft-defender-atp-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
-2. Collect diagnostic logs:
-```bash
-$ sudo mdatp --diagnostic --create
-```
-
 ## Command-line tool “mdatp” isn't working
 
 1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
@@ -106,4 +114,8 @@ $  sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
 ```
 and try again.
 
-2. If step 1 doesn't work, collect the diagnostic logs as indicated in the previous section.
+If none of the above works, collect the diagnostic logs:
+```bash
+$ sudo mdatp --diagnostic --create
+```
+Path to a zip file that contains the logs will be displayed as an output. Please reach out to our customer support with these logs.
