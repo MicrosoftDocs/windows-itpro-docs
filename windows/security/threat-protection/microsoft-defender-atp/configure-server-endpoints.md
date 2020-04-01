@@ -153,11 +153,13 @@ Support for Windows Server, version 1803 and Windows 2019 provides deeper insigh
 
     b. Run the following PowerShell command to verify that the passive mode was configured:
 
-       ```Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}```
+       ```PowerShell
+       Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+       ```
 
     c. Confirm  that a recent event containing the passive mode event is found:
        
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
