@@ -151,7 +151,7 @@ The following table lists the SQL Server versions that are supported for the App
 </tbody>
 </table>
 
- 
+For more information on user configuration files with SQL server 2016 or later, see the support article.
 
 ### Publishing server operating system requirements
 
