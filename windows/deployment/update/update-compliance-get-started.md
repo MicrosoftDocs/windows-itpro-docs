@@ -27,7 +27,7 @@ Steps are provided in sections that follow the recommended setup process:
 
 ## Update Compliance prerequisites
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
-1. Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc. 
+1. Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 Enterprise edition, as well as [Windows 10 Enterprise multi-session](https://docs.microsoft.com/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc. 
 2. Update Compliance provides detailed deployment data for devices on the Semi-Annual Channel and the Long-term Servicing Channel. Update Compliance will show Windows Insider Preview devices, but currently will not provide detailed deployment information for them.
 3. Update Compliance requires at least the Basic level of diagnostic data and a Commercial ID to be enabled on the device. 
 4. For Windows 10 1803+, device names will not appear in Update Compliance unless you opt in. The steps to accomplish this is outlined in the [Enroll devices in Update Compliance](#enroll-devices-in-update-compliance) section.
@@ -40,11 +40,11 @@ Update Compliance is offered as a solution which is linked to a new or existing 
 > [!NOTE]
 > Update Compliance is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Update Compliance, but no Azure charges are expected to accrue to the subscription as a result of using Update Compliance. 
 
-2. In the Azure portal select **+ Create a resource**, and search for “Update Compliance". You should see it in the results below. 
+2. In the Azure portal select **+ Create a resource**, and search for "Update Compliance". You should see it in the results below. 
 
 ![Update Compliance marketplace search results](images/UC_00_marketplace_search.png)
 
-3. Select **Update Compliance** and a blade will appear summarizing the solution’s offerings. At the bottom, select **Create** to begin adding the solution to Azure.
+3. Select **Update Compliance** and a blade will appear summarizing the solution's offerings. At the bottom, select **Create** to begin adding the solution to Azure.
 
 ![Update Compliance solution creation](images/UC_01_marketplace_create.png)
 
@@ -79,9 +79,8 @@ To find your Commercial ID within Azure:
 
 ![Update Compliance Settings page](images/UC_commercialID.png)
 
->**Important**
->
->Regenerate your Commercial ID only if your Original ID key can no longer be used or if you want to completely reset your workspace. Regenerating your Commercial ID cannot be undone and will result in you losing data for all devices that have the current Commercial ID until the new Commercial ID is deployed to devices.
+> [!IMPORTANT]
+>Regenerate your Commercial ID only if your original ID can no longer be used or if you want to completely reset your workspace. Regenerating your Commercial ID cannot be undone and will result in you losing data for all devices that have the current Commercial ID until the new Commercial ID is deployed to devices.
 
 #### Deploying Commercial ID using Group Policy
 Commercial ID can be deployed using Group Policy. The Group Policy for Commercial ID is under **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Configure the Commercial ID**. 
@@ -124,5 +123,5 @@ Allow Device Name in Telemetry is under the same node as Commercial ID and Allow
 #### Allow Device Name in Telemetry with MDM
 Allow Device Name in Telemetry is under the [Policy Configuration Service Provider](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) as [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry). 
 
->[!NOTE]
->After enrolling your devices (by deploying your CommercialID and Windows Diagnostic Data settings), it might take 48-72 hours for the first data to appear in the solution. Until then, Update Compliance will indicate it is still assessing devices. 
+> [!NOTE]
+> After enrolling your devices (by deploying your CommercialID and Windows Diagnostic Data settings), it might take 48-72 hours for the first data to appear in the solution. Until then, Update Compliance will indicate it is still assessing devices. 
