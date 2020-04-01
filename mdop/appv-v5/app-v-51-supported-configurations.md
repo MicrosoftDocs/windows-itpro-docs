@@ -151,7 +151,7 @@ The following table lists the SQL Server versions that are supported for the App
 </tbody>
 </table>
 
-For more information on user configuration files with SQL server 2016 or later, see the support article.
+For more information on user configuration files with SQL server 2016 or later, see the [support article](https://support.microsoft.com/help/4548751/app-v-server-publishing-might-fail-when-you-apply-user-configuration-f).
 
 ### Publishing server operating system requirements
 
