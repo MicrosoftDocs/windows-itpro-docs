@@ -1,5 +1,5 @@
 ---
-title: Onboard to the Micrsoft Defender ATP service
+title: Onboard to the Microsoft Defender ATP service
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard to the Micrsoft Defender ATP service
+# Onboard to the Microsoft Defender ATP service
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
