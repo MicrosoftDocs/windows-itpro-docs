@@ -28,6 +28,7 @@ ms.topic: conceptual
 
 ## 100.90.27
 
+- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender ATP for Mac that is different from the system-wide update channel
 - New product icon
 - Other user experience improvements
 - Bug fixes
