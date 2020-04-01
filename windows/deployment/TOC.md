@@ -251,6 +251,7 @@
 ##### [Security Update Status report](update/update-compliance-security-update-status.md)
 ##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
 ##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
+##### [Data Handling and Privacy in Update Compliance](update/update-compliance-privacy.md)
 ##### [Update Compliance Schema Reference](update/update-compliance-schema.md)
 ###### [WaaSUpdateStatus](update/update-compliance-schema-waasupdatestatus.md)
 ###### [WaaSInsiderStatus](update/update-compliance-schema-waasinsiderstatus.md)
