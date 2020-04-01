@@ -78,12 +78,12 @@ The configuration profile contains a custom settings payload that includes:
 - Microsoft Defender ATP for Mac onboarding information
 - Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
 
-To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
+To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Application & Custom Settings**>**Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
-  > You must set the Preference Domain as "com.microsoft.wdav.atp"
+  > You have to set the **Preference Domain** to **com.microsoft.wdav.atp**. There have been a few changes to the Jamf Pro UI in v10.18 and later versions, and for the Custom Payloads. For more information about the changes, see [Configuration Profile Payload Settings Specific to Jamf Pro](https://www.jamf.com/jamf-nation/articles/217/configuration-profile-payload-settings-specific-to-jamf-pro).
 
-![Configuration profile screenshot](../windows-defender-antivirus/images/MDATP-16-PreferenceDomain.png)
+![Configuration profile screenshot](./images/msdefender-mac-config-profile.png)
 
 ### Approved Kernel Extension
 
