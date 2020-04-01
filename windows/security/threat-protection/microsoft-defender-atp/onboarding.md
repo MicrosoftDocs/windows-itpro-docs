@@ -257,13 +257,13 @@ MMA for enrollment into the workspace.
 
 9.  Set Run to **Hidden**.
 
-10.  Set **Program can run** to **Whether or not a user is logged on**.
+10. Set **Program can run** to **Whether or not a user is logged on**.
 
-11.  Click **Next**.
+11. Click **Next**.
 
-12.  Set the **Maximum allowed run time** to 720.
+12. Set the **Maximum allowed run time** to 720.
 
-13.  Click **Next**.
+13. Click **Next**.
 
     ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
 
@@ -275,12 +275,12 @@ MMA for enrollment into the workspace.
 
 16. Click **Close**.
 
-17.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
+17. In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
     Onboarding Package just created and select **Deploy**.
 
 18. On the right panel select the appropriate collection.
 
-19.  Click **OK**.
+19. Click **OK**.
 
 ## Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
@@ -318,7 +318,7 @@ needs on how Antivirus is configured.
 
     ![Image of next generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Right-click on the newly created antimalware policy and select **Deploy** .
+3. Right-click on the newly created antimalware policy and select **Deploy**.
 
     ![Image of next generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
