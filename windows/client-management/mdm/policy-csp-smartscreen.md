@@ -83,7 +83,7 @@ manager: dansimp
 Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
 > [!Note]
-> This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.
+> This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.<p>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.
 
 <!--/Description-->
 <!--ADMXMapped-->
