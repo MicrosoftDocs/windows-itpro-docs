@@ -24,6 +24,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 This topic describes how to deploy Microsoft Defender ATP for Mac through Intune. A successful deployment requires the completion of all of the following steps:
+
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Client device setup](#client-device-setup)
 - [Create System Configuration profiles](#create-system-configuration-profiles)
@@ -340,8 +341,21 @@ Solution: Follow the steps above to create a device profile using WindowsDefende
 
 ## Logging installation issues
 
-For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues) .
+For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues).
 
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+
+## Quick summary
+
+The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender ATP for Macs, via Intune
+
+| Step(s) | How? | Sample names | References | BundleIdentifier |
+|-|-|-|-|-|
+| 1. Onboard the 'onboarding package' (WindowsDefenderATPOnboarding.plist) | Using the new Microsoft Edge browser, browse to https://securitycenter.microsoft.com  <p> Settings (gear icon) -> under "Machine Management" -> Onboarding -> macOS -> Mobile Device Management / Microsoft Intune </p> <p> Click on "Download onboarding package" (WindowsDefenderATPOnboardingPackage.zip) </p> <p> Rename WindowsDefenderATPOnboardingPackage.zip to </p> <p> WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso.zip </p> <p> Extract WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso.zip to e.g. </p> <p>*C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\intune\WindowsDefenderATPOnboarding.xml* </p> | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | Download installation and onboarding [packages](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune#download-installation-and-onboarding-packages) | com.microsoft.wdav.atp |
+| 2. Approve Kernel Extension for Microsoft Defender ATP | You have to download it from securitycenter.microsoft.com <p> <p> Settings (gear icon) -> under "Machine Management" -> Onboarding -> macOS -> Mobile Device Management / Microsoft Intune </p> <p> Click on "Download onboarding package" (WindowsDefenderATPOnboardingPackage.zip) </p> <p> Rename WindowsDefenderATPOnboardingPackage.zip to </p> <p> WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso.zip </p> <p> Extract WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso.zip </p> <p> to e.g. *C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\intune\kext.xml* </p> | MDATP_KExt.xml | Download installation and onboarding [packages](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune#download-installation-and-onboarding-packages) | <GUID> |
+| 3. Grant full disk access to Microsoft Defender ATP | <Placeholder> | MDATP_tcc_Catalina_or_newer.xml | See Step 8 under [Create system configuration profiles](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune#create-system-configuration-profiles) on this page | com.microsoft.wdav.tcc |
+| 4. Configure Microsoft AutoUpdate (MAU) | <Placeholder> | MDATP_Microsoft_AutoUpdate.xml | Intune – Set [preferences](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-updates#intune) for Microsoft AutoUpdate | com.microsoft.autoupdate2 |
+| 5. Microsoft Defender ATP configuration settings<br/> <ul><li>enableRealTimeProtection</li> <li>passiveMode (Note:  Disabled by default, if you are planning to run a 3rd party AV for macOS, set it to "true" w/o the quotes.)</li> <li>excludedPath</li> <li>excludedFileExtension</li> <li>excludedFileName</li> <li>exclusionsMergePolicy</li> <li>allowedThreats</li> <li>disallowedThreatActions</li> <li>potentially_unwanted_application</li> <li>archive_bomb</li> <li>cloudService</li> <li>automaticSampleSubmission</li> <li>tags</li> <li>hideStatusMenuIcon</li> | MDATP_WDAV_and_exclusion_settings_Preferences.xml | Intune profile – [Full configuration profile](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1) | com.microsoft.wdav |
+| 6. Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications | <Placeholder> | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | See Step 9 under [Create system configuration profiles](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune#create-system-configuration-profiles) on this page | com.microsoft.autoupdate2 or com.microsoft.wdavtray |
