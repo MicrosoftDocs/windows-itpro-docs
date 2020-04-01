@@ -69,9 +69,9 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-   - On the screen you will see all the provisioned licenses and their current **Status**.
+    On the screen you will see all the provisioned licenses and their current **Status**.
 
-   ![Image of billing licenses](images/atp-billing-subscriptions.png)
+    ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
 
 ## Cloud Service Provider validation
@@ -160,11 +160,8 @@ services if a computer is not permitted to connect to the Internet. The static
 proxy is configurable through Group Policy (GP). The group policy can be found
 under:
 
--   Administrative Templates \> Windows Components \> Data Collection and
-    Preview Builds \> Configure Authenticated Proxy usage for the Connected User
-    Experience and Telemetry Service
-
-    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
+ - Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
+     - Set it to **Enabled** and select **Disable Authenticated Proxy usage**
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
