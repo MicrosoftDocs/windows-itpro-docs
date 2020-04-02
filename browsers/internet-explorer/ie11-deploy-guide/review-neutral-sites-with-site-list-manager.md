@@ -1,4 +1,3 @@
-
 ---
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
@@ -15,6 +14,9 @@ title: Review neutral sites for Internet Explorer mode using the Enterprise Mode
 ms.sitesec: library
 ms.date: 04/02/2017
 ---
+
+
+
 
 # Review neutral sites for Internet Explorer mode using the Enterprise Mode Site List Manager
 
