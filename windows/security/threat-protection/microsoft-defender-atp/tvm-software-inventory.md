@@ -29,38 +29,38 @@ Microsoft Defender ATP Threat & Vulnerability management's discovery capability 
 
 ## How it works
 
-In the field of discovery, we are leveraging the same set of signals in Microsoft Defender ATP's endpoint detection and response that's responsible for detection, for vulnerability assessment.
+In the field of discovery, we are leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender ATP endpoint detection and response capabilities](overview-endpoint-detection-response.md).
 
 Since it is real-time, in a matter of minutes, you will see vulnerability information as they get discovered. The engine automatically grabs information from multiple security feeds. In fact, you'll will see if a particular software is connected to a live threat campaign. It also provides a link to a Threat Analytics report soon as it's available.
 
 ## Navigate to the Software inventory page
 
-You can access the Software inventory page by selecting **Software inventory** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+You can access the Software inventory page by selecting **Software inventory** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).
 
 ## Software inventory overview
 
 The **Software inventory** page opens with a list of software installed in your network, vendor name, weaknesses found, threats associated with them, exposed machines, impact to exposure score, and tags. You can also filter the software inventory list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
 ![Screenshot of software inventory page](images/software_inventory_filter.png)
 
-Select the software that you want to investigate and a flyout panel opens up with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page** or flag any technical inconsistencies by selecting **Report inaccuracy**.
+Select the software that you want to investigate and a flyout panel opens up with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
 
 ![Screenshot of software inventory flyout](images/tvm-software-inventory-flyout500.png)
 
 ## Software pages
 
-Select **Open software page** from the software flyout panel to view all the details of a specific software.
+Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Open software page** (see image in the previous section). A full page will appear with all the details of a specific software and the following information:
 
-The side panel 
+- Side panel with vendor information, prevalence of the software in the organization (including number of machines it is installed on, and exposed machines that are not patched), whether and exploit is available, and impact to your exposure score
+- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed machines
+- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the machines that the software is installed on, and the specific versions of the software with the number of machines that have each version installed and number of vulnerabilities.
 
-to see how many weaknesses are discovered in the software, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
-
-![Screenshot of software inventory flyout](images/tvm-software-page-example.png)
+![Screenshot of software page example](images/tvm-software-page-example.png)
 
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate version, incomplete, or already remediated software inventory information in the machine page.
+You can report a false positive when you see any vague, inaccurate version, incomplete, or already remediated software inventory information.
 
-1. Select **Report inaccuracy** from the software flyout panel
+1. Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Report inaccuracy**
 
 2. Select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 
