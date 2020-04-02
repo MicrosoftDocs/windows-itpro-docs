@@ -125,18 +125,15 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
 ## Related topics
+
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
-- [Security recommendation](tvm-security-recommendation.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
-- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
-- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
-- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
-- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

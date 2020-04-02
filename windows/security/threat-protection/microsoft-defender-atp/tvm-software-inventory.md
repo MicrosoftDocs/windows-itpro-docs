@@ -60,18 +60,14 @@ You can report a false positive when you see any vague, inaccurate version, inco
 
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
-- [Security recommendation](tvm-security-recommendation.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Recommendation APIs](vulnerability.md)
-- [Machine APIs](machine.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
