@@ -1,6 +1,6 @@
 ---
 title: VPN and conditional access (Windows 10)
-description: The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.
+description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

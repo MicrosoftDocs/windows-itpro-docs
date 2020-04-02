@@ -2,7 +2,7 @@
 title: Change history for Configure Windows 10 (Windows 10)
 ms.reviewer: 
 manager: dansimp
-description: This topic lists changes to documentation for configuring Windows 10.
+description: View changes to documentation for configuring Windows 10.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -119,7 +119,7 @@ The following topics were moved into the [Privacy](/windows/privacy/index) libra
 
 New or changed topic | Description
 --- | ---
-[Configure Windows diagnostic data in your organizationspro](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization) | Updated endpoints.
+[Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization) | Updated endpoints.
 [Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018

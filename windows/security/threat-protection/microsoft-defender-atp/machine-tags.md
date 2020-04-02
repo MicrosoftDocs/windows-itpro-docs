@@ -26,6 +26,9 @@ You can add tags on machines using the following ways:
 - Using the portal
 - Setting a registry key value
 
+>[!NOTE]
+>There may be some latency between the time a tag is added to a machine and its availability in the machines list and machine page.  
+
 To add machine tags using API, see [Add or remove machine tags API](add-or-remove-machine-tags.md).
 
 ## Add and manage machine tags using the portal
@@ -73,8 +76,9 @@ Machines with similar tags can be handy when you need to apply contextual action
 Use the following registry key entry to add a tag on a machine:
 
 - Registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
-- Registry key name: `Group`
-- Registry key value (REG_SZ): `Name of the tag you want to set`
+- Registry key value (REG_SZ): `Group`
+- Registry key data: `Name of the tag you want to set`
 
 >[!NOTE]
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
+

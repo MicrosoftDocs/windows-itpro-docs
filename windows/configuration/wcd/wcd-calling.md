@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
 ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
@@ -57,7 +57,7 @@ See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/
 
 ## PerSimSettings
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the folowing settings. 
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the following settings. 
 
 ### Critical
 

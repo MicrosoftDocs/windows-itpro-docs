@@ -1,5 +1,5 @@
 ---
-title: Stream Microsoft Defender Advanced Threat Protection events. 
+title: Stream Microsoft Defender Advanced Threat Protection events to Azure Event Hubs 
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub.
 keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
@@ -63,6 +63,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 - Each event hub message in Azure Event Hubs contains list of records.
 - Each record contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
 - For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the machine. Here every event will be decorated with this column as well. See [Machine Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
 
@@ -78,7 +79,7 @@ To get the data types for event properties do the following:
 
 ```
 
-- Here is an example for Machine Info event: 
+- Here is an example for Device Info event: 
 
 ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 

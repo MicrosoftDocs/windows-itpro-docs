@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection portal overview
-description: Use Microsoft Defender Security Center to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
+description: Microsoft Defender Security Center can monitor your enterprise network and assist in responding to potential advanced persistent threats (APT) or data breaches.
 keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -122,5 +122,5 @@ Icon | Description
 ## Related topics
 - [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
 - [View the Security operations dashboard](security-operations-dashboard.md)
-- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
+- [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)

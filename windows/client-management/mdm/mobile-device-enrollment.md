@@ -34,7 +34,7 @@ The enrollment process includes the following steps:
 ## Enrollment protocol
 
 
-There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 The enrollment process involves the following steps:
 

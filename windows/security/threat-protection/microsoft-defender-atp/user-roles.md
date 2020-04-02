@@ -23,7 +23,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Create roles and assign the role to an Azure Active Directory group
 The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
@@ -43,6 +43,11 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
       
         - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
          - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
+            - Security operations - Take response actions
+              - Approve or dismiss pending remediation actions
+              - Manage allowed/blocked lists for automation
+              - Manage allowed/blocked create Indicators
+
          >[!NOTE]
          >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
         
@@ -65,7 +70,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
         For more information on the available commands, see [Investigate machines using Live response](live-response.md).
   
-4. Click **Next** to assign the role to an Azure AD group.
+4. Click **Next** to assign the role to an Azure AD Security group.
 
 5. Use the filter to select the Azure AD group that you'd like to add to this role.
 
@@ -74,7 +79,8 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 7. Apply the configuration settings.
 
 
-After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
+> [!IMPORTANT]
+> After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
 
 
 ## Edit roles

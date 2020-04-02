@@ -36,7 +36,7 @@ Monitoring network connection behind a forward proxy is possible due to addition
 
 Network protection can be controlled using the following modes:
 
-- **Block** <br> Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
+- **Block** <br> Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Microsoft Defender Security Center.
 - **Audit** <br> Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.
 
 
@@ -44,7 +44,7 @@ If you turn network protection off, users or apps will not be blocked from conne
 
 If you do not configure it, network blocking will be turned off by default.
 
-For more information, see [Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection).
+For more information, see [Enable network protection](enable-network-protection.md).
 
 ## Investigation impact
 When network protection is turned on, you'll see that on a machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
@@ -60,12 +60,12 @@ Event's information:
 
 
 ## Hunt for connection events using advanced hunting 
-All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the `ConnecionSuccess` action type.
+All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.
 
 Using this simple query will show you all the relevant events:
 
 ```
-NetworkCommunicationEvents
+DeviceNetworkEvents
 | where ActionType == "ConnectionSuccess" 
 | take 10
 ```
@@ -77,7 +77,7 @@ You can also filter out  events that are related to connection to the proxy itse
 Use the following query to filter out the connections to the proxy:
 
 ```
-NetworkCommunicationEvents
+DeviceNetworkEvents
 | where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
 | take 10
 ```
@@ -86,4 +86,3 @@ NetworkCommunicationEvents
 
 ## Related topics
 - [Applying network protection with GP - policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
-- [Protect your network](https://docs.microsoft.comwindows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)

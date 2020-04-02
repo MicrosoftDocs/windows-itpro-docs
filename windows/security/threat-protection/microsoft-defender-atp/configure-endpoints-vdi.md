@@ -31,17 +31,19 @@ ms.date: 04/24/2018
 
 Microsoft Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
+- Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft Defender ATP prior to the actual provisioning.
+- The machine name is typically reused for new sessions.
 
-- Instant early onboarding of a short living session
-    - A session should be onboarded to Microsoft Defender ATP prior to the actual provisioning.
+VDI machines can appear in Microsoft Defender ATP portal as either:
 
-- Machine name persistence
-    - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
+- Single entry for each machine.  
+Note that in this case, the *same* machine name must be configured when the session is created, for example using an unattended answer file.
+- Multiple entries for each machine - one for each session.
 
-You can onboard VDI machines using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
+The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
 
 >[!WARNING]
-> For environments where there are low resource configurations, the VDI boot proceedure might slow the Microsoft Defender ATP sensor onboarding. 
+> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding. 
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -66,6 +68,9 @@ You can onboard VDI machines using a single entry or multiple entries for each m
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
+
+    >[!NOTE]
+    >Domain Group Policy may also be used for onboarding non-persistent VDI machines.
 
 5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
   **For single entry for each machine**:<br>
@@ -92,7 +97,7 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

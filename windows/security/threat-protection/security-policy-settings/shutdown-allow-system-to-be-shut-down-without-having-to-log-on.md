@@ -1,6 +1,6 @@
 ---
 title: Shutdown Allow system to be shut down without having to log on (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Shutdown Allow system to be shut down without having to log on security policy setting.
+description: Best practices, security considerations and more for the security policy setting, Shutdown Allow system to be shut down without having to log on.
 ms.assetid: f3964767-5377-4416-8eb3-e14d553a7315
 ms.reviewer: 
 ms.author: dansimp

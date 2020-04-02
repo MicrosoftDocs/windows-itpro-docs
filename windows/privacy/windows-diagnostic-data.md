@@ -12,13 +12,14 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/15/2019
+ms.date: 12/04/2019
 ms.reviewer: 
 ---
 
 # Windows 10, version 1709 and newer diagnostic data for the Full level
 
 Applies to:
+- Windows 10, version 1909
 - Windows 10, version 1903
 - Windows 10, version 1809
 - Windows 10, version 1803
@@ -248,7 +249,7 @@ This type of data includes details about the health of the device, operating sys
 [Pseudonymized](#pseudo) Product and Service Performance data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
 
 - Data about the reliability of content that appears in the [Windows Spotlight](https://docs.microsoft.com/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
-- Timing data about how quickly Cortana responds to voice commands is used to improve Cortana listening peformance.
+- Timing data about how quickly Cortana responds to voice commands is used to improve Cortana listening performance.
 - Timing data about how quickly the facial recognition feature starts up and finishes is used to improve facial recognition performance.
 - Data about when an Application Window fails to appear is used to investigate issues with Application Window reliability and performance.
 

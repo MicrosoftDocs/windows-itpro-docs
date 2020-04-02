@@ -1,6 +1,6 @@
 ---
 title: Domain member Require strong (Windows 2000 or later) session key (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain member Require strong (Windows 2000 or later) session key security policy setting.
+description: Best practices, location, values, and security considerations for the security policy setting, Domain member Require strong (Windows 2000 or later) session key.
 ms.assetid: 5ab8993c-5086-4f09-bc88-1b27454526bd
 ms.reviewer: 
 ms.author: dansimp

@@ -1,6 +1,6 @@
 ---
 title: AccountManagement CSP
-description: Used to configure settings in the Account Manager service
+description: Learn about the AccountManagement CSP, which is used to configure settings in the Account Manager service.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

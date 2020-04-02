@@ -1,6 +1,6 @@
 ---
-title: Merge Windows Defender Application Control (WDAC) policies (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+title: Merge Windows Defender Application Control policies (Windows 10)
+description: Because each computer running Windows 10 can have only one WDAC policy, you will occasionally need to merge two or more policies. Learn how with this guide.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -27,7 +27,7 @@ ms.date: 05/03/2018
 Because each computer running Windows 10 can have only one WDAC policy, you will occasionally need to merge two or more policies. For example, after a WDAC policy is created and audited, you might want to merge audit events from another WDAC policy.
 
 > [!NOTE]
-> Because only one SiPolicy.p7b file can be active on a system, the last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then amanaged installer using System Center Configuration Manager (SCCM) targeted the same device, the SCCM policy would overwrite the SiPolicy.p7b file.
+> Because only one SiPolicy.p7b file can be active on a system, the last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then a managed installer using Microsoft Endpoint Configuration Manager targeted the same device, the Configuration Manager policy would overwrite the SiPolicy.p7b file.
 
 To merge two WDAC policies, complete the following steps in an elevated Windows PowerShell session:
 

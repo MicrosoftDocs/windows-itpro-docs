@@ -1,6 +1,6 @@
 ---
 title: Windows 10 personal data services configuration
-description: An overview of Windows 10 services configuration settings that are used for personal data privacy protection relevant for regulations, such as the General Data Protection Regulation (GDPR)
+description: Learn more about Windows 10 configuration settings that are useful for complying with regulations such as the GDPR and protecting users' personal data.
 keywords: privacy, GDPR, windows, IT
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ ms.reviewer:
 # Windows 10 personal data services configuration
 
 Applies to:
-- Windows 10, version 1803
+- Windows 10, version 1803 and newer
 
 Microsoft assembled a list of Windows 10 services configuration settings that are useful for personal data privacy protection and related regulations, such as the General Data Protection Regulation (GDPR). There is one section with settings for service data that is managed at Microsoft and a section for local data that is managed by an IT organization.
 

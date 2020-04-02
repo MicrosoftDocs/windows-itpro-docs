@@ -114,8 +114,8 @@ This table provides info about the most common problems you might encounter whil
                 <li>SavedGames</li>
             </ul>
         </td>
-        <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using System Center Configuration Manager.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
+        <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using Microsoft Endpoint Configuration Manager.</td>
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.  You can configure this parameter, as described <a href="https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders" data-raw-source="[here](https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders)">here</a>.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
         </td>
     </tr>
     <tr>
@@ -134,6 +134,11 @@ This table provides info about the most common problems you might encounter whil
     </tr>
 </table>
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+> [!NOTE]
+> When corporate data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity. One caveat to keep in mind is that the Preview Pane in File Explorer will not work for encrypted files. 
 
+> [!NOTE]
+> Chromium-based versions of Microsoft Edge (versions since 79) don't fully support WIP yet. The functionality could be partially enabled by going to the local page **edge://flags/#edge-dataprotection** and setting the **Windows Information Protection** flag to **enabled**.
+
+> [!NOTE]
+> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       

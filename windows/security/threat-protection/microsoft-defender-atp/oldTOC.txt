@@ -95,9 +95,6 @@
 #### [Manage actions related to automated investigation and remediation](auto-investigation-action-center.md)
 
 
-### [Secure score](overview-secure-score.md)
-
-
 ### [Threat analytics](threat-analytics.md)
 
 
@@ -298,8 +295,6 @@
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-### [Configure Secure score dashboard security controls](secure-score-dashboard.md)
-
 
 ### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
@@ -336,14 +331,16 @@
 ##### [Understand Microsoft Defender ATP APIs](use-apis.md)
 ##### [Microsoft Defender ATP API license and terms](api-terms-of-use.md)
 
-##### [Get started with Microsoft Defender ATP APIs]()
+##### [Get started]()
 ###### [Introduction](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
+###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
 ##### [APIs]()
 ###### [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+###### [Common REST API error codes](common-errors.md)
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
 ###### [Alert]()
@@ -380,7 +377,12 @@
 ####### [Run antivirus scan](run-av-scan.md)
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
-####### [Initiate investigation (preview)](initiate-autoir-investigation.md)
+
+###### [Automated Investigation]()
+####### [Investigation methods and properties](microsoft-defender-atp/investigation.md)
+####### [List Investigation](microsoft-defender-atp/get-investigation-collection.md)
+####### [Get Investigation](microsoft-defender-atp/get-investigation-object.md)
+####### [Start Investigation](microsoft-defender-atp/initiate-autoir-investigation.md)
 
 ###### [Indicators]()
 ####### [Methods and properties](ti-indicator.md)
@@ -474,7 +476,6 @@
 ##### [Update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
 ##### [Enable and create Power BI reports using Windows Security app data](powerbi-reports.md)
-##### [Enable Secure score security controls](enable-secure-score.md)
 ##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()

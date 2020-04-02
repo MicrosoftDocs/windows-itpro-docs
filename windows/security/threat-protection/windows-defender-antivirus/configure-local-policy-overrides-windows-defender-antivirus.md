@@ -9,9 +9,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 09/03/2018
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
+ms.date: 02/13/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -46,7 +47,7 @@ To configure these settings:
 
 5. Deploy the Group Policy Object as usual.
 
-Location | Setting | Configuration topic
+Location | Setting | Article
 ---|---|---|---
 MAPS | Configure local setting override for reporting to Microsoft MAPS | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 Quarantine | Configure local setting override for the removal of items from Quarantine folder | [Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
@@ -66,13 +67,13 @@ Scan | Configure local setting override for the scan type to use for a scheduled
 
 ## Configure how locally and globally defined threat remediation and exclusions lists are merged
 
-You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md) and [specified remediation lists](configure-remediation-windows-defender-antivirus.md).
+You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md), [specified remediation lists](configure-remediation-windows-defender-antivirus.md), and [attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 
 By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally-defined list takes precedence.
 
 You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
 
-**Use Group Policy to disable local list merging:**
+### Use Group Policy to disable local list merging
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -83,7 +84,7 @@ You can disable this setting to ensure that only globally-defined lists (such as
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Click **OK**.
 
 > [!NOTE]
-> If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Enable controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
+> If you disable local list merging, it will override controlled folder access settings. It also overrides any protected folders or allowed apps set by the local administrator. For more information about controlled folder access settings, see [Allow a blocked app in Windows Security](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
 ## Related topics
 

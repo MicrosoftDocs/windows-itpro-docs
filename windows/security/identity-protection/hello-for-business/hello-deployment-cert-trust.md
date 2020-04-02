@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Deployment Guide - On Premises Certificate Trust Deployment
-description: A guide to an On Premises, Certificate trust Windows Hello for Business deployment 
+description: A guide to on premises, certificate trust Windows Hello for Business deployment.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

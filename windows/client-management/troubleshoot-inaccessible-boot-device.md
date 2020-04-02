@@ -1,5 +1,5 @@
 ---
-title: Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device
+title: Advanced advice for Stop error 7B, Inaccessible_Boot_Device
 description: Learn how to troubleshoot Stop error 7B or Inaccessible_Boot_Device
 ms.prod: w10
 ms.mktglfcycl:

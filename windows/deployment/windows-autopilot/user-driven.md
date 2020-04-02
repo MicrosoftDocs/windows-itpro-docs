@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot User-Driven Mode
-description: Windows Autopilot deployment
+description: Windows Autopilot user-driven mode allows devices to be deployed to a ready-to-use state without requiring help from IT personnel.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
@@ -28,7 +28,7 @@ Windows Autopilot user-driven mode is designed to enable new Windows 10 devices 
 
 After completing those simple steps, the remainder of the process is completely automated, with the device being joined to the organization, enrolled in Intune (or another MDM service), and fully configured as defined by the organization.  Any additional prompts during the Out-of-Box Experience (OOBE) can be suppressed; see [Configuring Autopilot Profiles](profiles.md) for options that are available.
 
-Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
+Today, Windows Autopilot user-driven mode supports Azure Active Directory and Hybrid Azure Active Directory joined devices.  See [What is a device identity](https://docs.microsoft.com/azure/active-directory/devices/overview) for more information about these two join options.
 
 ## Available user-driven modes
 

@@ -22,8 +22,8 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink) 
+> [!TIP]
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink) 
 
 Learn about the supported response related API calls you can run and details such as the required request headers, and expected response from the calls.
 
@@ -46,6 +46,3 @@ Get MachineActions collection | Run this to get MachineAction collection.
 Get FileActions collection | Run this to get FileActions collection.
 Get FileMachineAction object | Run this to get FileMachineAction object.
 Get FileMachineActions collection | Run this to get FileMachineAction collection.
-
-
-

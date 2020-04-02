@@ -1,6 +1,6 @@
 ---
 title: Deploy catalog files to support Windows Defender Application Control (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -17,7 +17,7 @@ manager: dansimp
 ms.date: 02/28/2018
 ---
 
-# Deploy catalog files to support Windows Defender Application Control   
+# Deploy catalog files to support Windows Defender Application Control
 
 **Applies to:**
 
@@ -80,7 +80,8 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
     `PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName`
 
-> **Note**&nbsp;&nbsp;Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
+>[!NOTE]
+>Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
 
 When finished, the files will be saved to your desktop. You can double-click the \*.cat file to see its contents, and you can view the \*.cdf file with a text editor. 
 
@@ -129,9 +130,10 @@ To sign the existing catalog file, copy each of the following commands into an e
 
    `<path to signtool.exe> sign /n "ContosoDGSigningCert" /fd sha256 /v $CatFileName`
 
-   > **Note**&nbsp;&nbsp;The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
+   >[!NOTE]
+   >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
    > 
-   > **Note**&nbsp;&nbsp;For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](https://docs.microsoft.com/dotnet/framework/tools/signtool-exe).
+   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](https://docs.microsoft.com/dotnet/framework/tools/signtool-exe).
     
 4. Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
@@ -141,7 +143,7 @@ To sign the existing catalog file, copy each of the following commands into an e
 
 5. Copy the catalog file to C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}.
 
-   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as System Center Configuration Manager. Doing this also simplifies the management of catalog versions.
+   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as Microsoft Endpoint Configuration Manager. Doing this also simplifies the management of catalog versions.
 
 ## Add a catalog signing certificate to a Windows Defender Application Control policy
 
@@ -215,11 +217,12 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy.
 
-## Deploy catalog files with System Center Configuration Manager
+## Deploy catalog files with Microsoft Endpoint Configuration Manager
 
-As an alternative to Group Policy, you can use System Center Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, System Center Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
+As an alternative to Group Policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files as well as provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
 
-> **Note**&nbsp;&nbsp;The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
+>[!NOTE]
+>The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
 
 1.  Open the Configuration Manager console, and select the Software Library workspace.
 
@@ -289,11 +292,12 @@ After you create the deployment package, deploy it to a collection so that the c
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy,.
 
-## Inventory catalog files with System Center Configuration Manager
+## Inventory catalog files with Microsoft Endpoint Configuration Manager
 
-When catalog files have been deployed to the computers within your environment, whether by using Group Policy or System Center Configuration Manager, you can inventory them with the software inventory feature of System Center Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
+When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
 
-> **Note**&nbsp;&nbsp;A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
+>[!NOTE]
+>A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
 
 1.  Open the Configuration Manager console, and select the Administration workspace.
 
@@ -315,7 +319,8 @@ When catalog files have been deployed to the computers within your environment, 
 
 6.  In the **Name** box, type a name such as **\*Contoso.cat**, and then click **Set**.
 
-    > **Note**&nbsp;&nbsp;When typing the name, follow your naming convention for catalog files.
+    >[!NOTE]
+    >When typing the name, follow your naming convention for catalog files.
 
 7.  In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 10.
 
@@ -327,7 +332,7 @@ When catalog files have been deployed to the computers within your environment, 
 
 9.  Now that you have created the client settings policy, right-click the new policy, click **Deploy**, and then choose the collection on which you would like to inventory the catalog files.
 
-At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in System Center Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
+At the time of the next software inventory cycle, when the targeted clients receive the new client settings policy, you will be able to view the inventoried files in the built-in Configuration Manager reports or Resource Explorer. To view the inventoried files on a client within Resource Explorer, complete the following steps:
 
 1.  Open the Configuration Manager console, and select the Assets and Compliance workspace.
 
@@ -337,7 +342,8 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 4.  In Resource Explorer, navigate to Software\\File Details to view the inventoried catalog files.
 
-> **Note**&nbsp;&nbsp;If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
+>[!NOTE]
+>If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
 
 ## Related topics
 

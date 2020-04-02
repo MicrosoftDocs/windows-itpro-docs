@@ -14,9 +14,13 @@ ms.localizationpriority: medium
 
 # Policy CSP - Browser
 
-
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 <hr/>
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 <!--Policies-->
 ## Browser policies  
@@ -1748,7 +1752,7 @@ Most restricted value: 1
 To verify AllowSmartScreen is set to 0 (not allowed):
 
 1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
-2.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is disabled.
+2.  Verify that the setting **Help protect me from malicious sites and download with Windows Defender SmartScreen** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->

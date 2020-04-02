@@ -1,5 +1,5 @@
 ---
-title: Next-generation protection in Windows 10 and Windows Server 2016
+title: Next-generation protection in Windows 10, Windows Server 2016, and Windows Server 2019
 description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10 and Windows Server 2016
 keywords: windows defender antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
@@ -11,57 +11,49 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/14/2019
+ms.date: 02/25/2020
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
-# Next-generation protection in Windows 10 and Windows Server 2016
+# Next-generation protection in Windows 10, Windows Server 2016, and Windows Server 2019
 
 **Applies to:**
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Next-generation protection includes services that use machine learning together with the cloud to protect devices in your enterprise organization. Next-generation protection services include:
+## Windows Defender Antivirus: Your next-generation protection
 
-- [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), also known as "real-time protection", for advanced file and process behavior monitoring
-- [Cloud-based delivery](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats
-- [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) powered by machine-learning, big-data analysis, and in-depth threat resistance research
+Windows Defender Antivirus is the next-generation protection component of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). Next-generation protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Next-generation protection services include the following:
 
->[!TIP]
->Visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how the following features work:
->- [Cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
->- Fast learning (including [block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md))
->- [Potentially unwanted application blocking](detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+- [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-windows-defender-antivirus.md). This includes always-on scanning using file and process behavior monitoring and other heuristics (also known as "real-time protection"). It also includes detecting and blocking apps that are deemed unsafe, but may not be detected as malware.
+- [Cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md). This includes near-instant detection and blocking of new and emerging threats.
+- [Dedicated protection and product updates](manage-updates-baselines-windows-defender-antivirus.md). This includes updates related to keeping Windows Defender Antivirus up to date.
 
-> [!NOTE]
-> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
+## Try a demo!
+
+Visit the [Microsoft Defender ATP demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
+- Cloud-delivered protection
+- Block at first sight (BAFS) protection
+- Potentially unwanted applications (PUA) protection
 
 ## Minimum system requirements
 
-Windows Defender Antivirus is your main vehicle for next-generation protection, and it has the same hardware requirements as Windows 10. For more information, see:
+Windows Defender Antivirus has the same hardware requirements as of Windows 10. For more information, see:
 
 - [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Hardware component guidelines](https://docs.microsoft.com/windows-hardware/design/component-guidelines/components)
 
-## Configuring Next-generation services
+## Configure next-generation protection services
 
-You can use the following to configure and manage next-generation services in Windows 10 while running Windows Defender Antivirus:
+For information on how to configure next-generation protection services, see [Configure Windows Defender Antivirus features](configure-windows-defender-antivirus-features.md).
 
-- System Center Configuration Manager (as System Center Endpoint Protection, or SCEP)
-- Microsoft Intune
-- PowerShell
-- Windows Management Instrumentation (WMI)
-- Group Policy
+> [!Note]  
+> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md).
 
-Configuration and management is largely the same in Windows Server 2016, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md).
+## Related articles
 
-## Related topics
-
-- [Full version history for Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 - [Windows Defender Antivirus management and configuration](configuration-management-reference-windows-defender-antivirus.md)
+
 - [Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md)
-- [Enable cloud protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [Configure real-time protection](configure-real-time-protection-windows-defender-antivirus.md)
-- [Configure cloud block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [Create and deploy cloud-protected antimalware policies](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service.md)

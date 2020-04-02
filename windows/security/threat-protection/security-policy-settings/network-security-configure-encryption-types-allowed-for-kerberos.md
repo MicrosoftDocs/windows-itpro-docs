@@ -1,6 +1,6 @@
 ---
 title: Network security Configure encryption types allowed for Kerberos
-description: Describes the best practices, location, values and security considerations for the Network security Configure encryption types allowed for Kerberos Win7 only security policy setting.
+description: Best practices, location, values and security considerations for the policy setting, Network security Configure encryption types allowed for Kerberos Win7 only.
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.reviewer: 
 ms.author: dansimp
@@ -20,7 +20,7 @@ ms.date: 04/19/2017
 # Network security: Configure encryption types allowed for Kerberos
 
 **Applies to**
--   Windows 10
+-   Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2
 
 Describes the best practices, location, values and security considerations for the **Network security: Configure encryption types allowed for Kerberos** security policy setting.
 
@@ -35,11 +35,11 @@ The following table lists and explains the allowed encryption types.
  
 | Encryption type | Description and version support |
 | - | - |
-| DES_CBC_CRC | Data Encryption Standard with Cipher Block Chaining using the Cyclic Redundancy Check function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10 and Windows Server 2008 R2 operating systems do not support DES by default. |
-| DES_CBC_MD5| Data Encryption Standard with Cipher Block Chaining using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10 and Windows Server 2008 R2 operating systems do not support DES by default. |
-| RC4_HMAC_MD5| Rivest Cipher 4 with Hashed Message Authentication Code using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, Windows 10 and Windows Server 2008 R2.|
-| AES128_HMAC_SHA1| Advanced Encryption Standard in 128 bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10 and Windows Server 2008 R2. |
-| AES256_HMAC_SHA1| Advanced Encryption Standard in 256 bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10 and Windows Server 2008 R2. |
+| DES_CBC_CRC | Data Encryption Standard with Cipher Block Chaining using the Cyclic Redundancy Check function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10, Windows Server 2008 R2 and later operating systems do not support DES by default. |
+| DES_CBC_MD5| Data Encryption Standard with Cipher Block Chaining using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10, Windows Server 2008 R2 and later operating systems do not support DES by default. |
+| RC4_HMAC_MD5| Rivest Cipher 4 with Hashed Message Authentication Code using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012 and Windows Server 2012 R2.|
+| AES128_HMAC_SHA1| Advanced Encryption Standard in 128 bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012 and Windows Server 2012 R2. |
+| AES256_HMAC_SHA1| Advanced Encryption Standard in 256 bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012 and Windows Server 2012 R2. |
 | Future encryption types| Reserved by Microsoft for additional encryption types that might be implemented.|
 
 ### Possible values

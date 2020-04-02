@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ---
@@ -20,6 +21,9 @@ manager: dansimp
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+> [!IMPORTANT]
+> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
 
 You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
 
@@ -34,7 +38,7 @@ For common error codes and event IDs related to the Windows Defender Antivirus s
 
 There are three steps to troubleshooting these problems:
 
-1. Confirm that you have met all pre-requisites
+1. Confirm that you have met all prerequisites
 2. Check your connectivity to the Windows Defender cloud-based service
 3. Submit support logs
 
@@ -42,9 +46,9 @@ There are three steps to troubleshooting these problems:
 >It typically takes 3 days for devices to start appearing in Update Compliance.
 
 
-## Confirm pre-requisites
+## Confirm prerequisites
 
-In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender Antivirus:
+In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Windows Defender Antivirus:
 
 >[!div class="checklist"]
 >- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
@@ -55,7 +59,7 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 
 “You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender ATP portal (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
 
-If the above pre-requisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
+If the above prerequisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
 
 > [!div class="nextstepaction"]
 > [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance.md)

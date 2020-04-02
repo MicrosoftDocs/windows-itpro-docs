@@ -46,6 +46,11 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
      >
      >`net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
      >
+     > This command only works for AADJ device users already added to any of the local groups (administrators).
+     > Otherwise this command throws the below error. For example: </br>
+     > for cloud only user: "There is no such global user or group : *name*" </br>
+     > for synced user: "There is no such global user or group : *name*" </br>
+     >
      >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
      >
      >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
@@ -60,11 +65,11 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
  
 ## Supported configurations
  
-In organizations that have integrated Active Directory and Azure AD, you can connect from a domain-joined PC to an Azure AD-joined PC using:
+In organizations that have integrated Active Directory and Azure AD, you can connect from a Hybrid-joined PC to an Azure AD-joined PC using:
 
 - Password
 - Smartcards
-- Windows Hello for Business, if the domain is managed by System Center Configuration Manager
+- Windows Hello for Business, if the domain is managed by Microsoft Endpoint Configuration Manager
 
 In organizations that have integrated Active Directory and Azure AD, you can connect from an Azure AD-joined PC to an AD-joined PC when the Azure AD-joined PC is on the corporate network using:
 

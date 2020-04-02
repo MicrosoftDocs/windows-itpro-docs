@@ -43,7 +43,8 @@
           "depot_name": "MSDN.win-whats-new",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "What's new in Windows"
     },
     "fileMetadata": {},
     "template": [],

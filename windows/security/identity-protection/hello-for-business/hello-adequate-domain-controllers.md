@@ -1,6 +1,6 @@
 ---
-title: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
-description: Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
+title: Having enough Domain Controllers for Windows Hello for Business deployments
+description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.reviewer:
 - Key trust
 
 > [!NOTE]
->There was an issue with key trust on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
+>There was an issue with key trust authentication on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
 
 ## How many is adequate
 

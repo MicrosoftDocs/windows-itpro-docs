@@ -30,7 +30,7 @@ Use the following advanced features to get better protected from potentially mal
 
 ## Automated investigation
 
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations.md).
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigation](automated-investigations.md).
 
 ## Live response
 
@@ -44,7 +44,7 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 ## Auto-resolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809 the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
 >[!TIP]
 >For tenants created prior that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
@@ -108,13 +108,17 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature.
 
+## Microsoft Secure Score
+
+Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning this feature on gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+
 ### Enable the Microsoft Defender ATP integration from the Azure ATP portal
 
 To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
 
 1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
-2. Click **Create a workspace** or use your primary workspace.
+2. Click **Create your instance**.
 
 3. Toggle the Integration setting to **On** and click **Save**.
 
@@ -185,4 +189,3 @@ You'll have access to upcoming features which you can provide feedback on to hel
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Enable Secure Score security controls](enable-secure-score.md)

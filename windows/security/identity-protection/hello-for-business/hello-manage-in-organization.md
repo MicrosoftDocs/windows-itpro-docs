@@ -36,7 +36,9 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 
 The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
-
+> [!NOTE]
+> Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
+ 
 <table>
 <tr>
 <th colspan="2">Policy</th>
@@ -320,4 +322,3 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
-

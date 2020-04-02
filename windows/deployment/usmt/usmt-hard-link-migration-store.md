@@ -113,6 +113,9 @@ For example, a company has decided to deploy Windows 10 on all of their compute
 
 3.  An administrator runs the LoadState command-line tool on each computer. The LoadState tool restores user state back on each computer.
 
+> [!NOTE]
+> During the update of a domain-joined computer, the profiles of users whose SID cannot be resolved will not be migrated. When using a hard-link migration store, it could cause a data loss.
+     
 ## <a href="" id="bkmk-hardlinkstoredetails"></a>Hard-Link Migration Store Details
 
 
@@ -229,7 +232,6 @@ The following XML sample specifies that files locked by an application under the
  
 
  
-
 
 
 

@@ -25,6 +25,44 @@ Please refer to the “[Surface Hub Important Information](https://support.micro
 ## Windows 10 Team Creators Update 1703
 
 <details>
+<summary>February 28, 2020—update for Surface Hub 2S</summary>
+
+This update is specific to the Surface Hub 2S and provides the driver and firmware updates outlined below:
+
+* Surface Integration driver - 13.46.139.0 
+  * Improves display brightness scenarios.
+* Intel(R) Management Engine Interface driver - 1914.12.0.1256
+  * Improves system stability.
+* Surface SMC Firmware update - 1.161.139.0
+  * Improves pen battery performance.
+* Surface UEFI update - 694.2938.768.0
+  * Improves system stability.
+</details>
+
+<details>
+<summary>February 11, 2020—update for Team edition based on KB4537765* (OS Build 15063.2284)</summary>
+
+This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
+
+* Resolves an issue where the Hub 2S cannot be heard well by other participants during Skype for Business calls.
+* Improves reliability for some Arabic, Hebrew, and other RTL language usage scenarios on Surface Hub.
+
+Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
+*[KB4537765](https://support.microsoft.com/help/4537765)
+</details>
+
+<details>
+<summary>January 14, 2020—update for Team edition based on KB4534296* (OS Build 15063.2254)</summary>
+
+This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
+
+* Addresses an issue with log collection for Microsoft Surface Hub 2S.
+
+Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
+*[KB4534296](https://support.microsoft.com/help/4534296)
+</details>
+
+<details>
 <summary>September 24, 2019—update for Team edition based on KB4516059*  (OS Build 15063.2078)</summary>
 
 This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
@@ -57,7 +95,6 @@ Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface
 
 This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
 
-* Addresses an issue with log collection for Microsoft Surface Hub 2S.
 * Addresses an issue preventing a user from signing in to a Microsoft Surface Hub device with an Azure Active Directory account. This issue occurs because a previous session did not end successfully.
 * Adds support for TLS 1.2 connections to identity providers and Exchange in device account setup scenarios.
 * Fixes to improve reliability of Hardware Diagnostic App on Hub 2S. 
@@ -442,7 +479,7 @@ This update brings the Windows 10 Team Anniversary Update to Surface Hub and inc
 * General
   * Enabled Audio Device Selection (for Surface Hubs attached using external audio devices)
   * Enabled support for HDCP on DisplayPort output connector
-  * System UI changes to settings for usability optimization (refer to [User and Admin Guides](http://www.microsoft.com/surface/support/surface-hub) for additional details)
+  * System UI changes to settings for usability optimization (refer to [User and Admin Guides](https://www.microsoft.com/surface/support/surface-hub) for additional details)
   * Bug fixes and performance optimizations to speed up the Azure Active Directory sign-in flow
   * Significantly improved time needed to reset and restore Surface Hub
   * Windows Defender UI has been added within settings
@@ -520,9 +557,8 @@ This update to the Surface Hub includes quality improvements and security fixes.
 
 ## Related topics
 
-* [Windows 10 feature road map](http://go.microsoft.com/fwlink/p/?LinkId=785967)
-* [Windows 10 release information](http://go.microsoft.com/fwlink/p/?LinkId=724328)
-* [Windows 10 November update: FAQ](http://windows.microsoft.com/windows-10/windows-update-faq)
-* [Microsoft Surface update history](http://go.microsoft.com/fwlink/p/?LinkId=724327)
-* [Microsoft Lumia update history](http://go.microsoft.com/fwlink/p/?LinkId=785968)
-* [Get Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=616447)
+* [Windows 10 release information](https://go.microsoft.com/fwlink/p/?LinkId=724328)
+* [Windows 10 November update: FAQ](https://windows.microsoft.com/windows-10/windows-update-faq)
+* [Microsoft Surface update history](https://go.microsoft.com/fwlink/p/?LinkId=724327)
+* [Microsoft Lumia update history](https://go.microsoft.com/fwlink/p/?LinkId=785968)
+* [Get Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=616447)

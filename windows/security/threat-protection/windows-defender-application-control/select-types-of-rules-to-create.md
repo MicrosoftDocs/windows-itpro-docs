@@ -1,6 +1,6 @@
 ---
-title: Select the types of rules to create  (Windows 10)
-description: Select the types of rules to create. 
+title: Understand WDAC policy rules and file rules (Windows 10)
+description: Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by using policies that specify whether a driver or application is trusted and can be run. A policy includes *policy rules* that control options.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/20/2018
+ms.date: 03/04/2020
 ---
 
 # Understand WDAC policy rules and file rules
@@ -28,7 +28,7 @@ Windows Defender Application Control (WDAC) provides control over a computer run
 
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
@@ -54,7 +54,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **2 Required:WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
 | **3 Enabled:Audit Mode (Default)** | Enables the execution of binaries outside of the WDAC policy but logs each occurrence in the CodeIntegrity event log, which can be used to update the existing policy before enforcement. To begin enforcing a WDAC policy, delete this option. |
 | **4 Disabled:Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This would be used in the scenario in which organizations only want to run released binaries, not flighted builds. |
-| **5 Enabled:Inherit Default Policy** | This option is not currently supported. |
+| **5 Enabled:Inherit Default Policy** | This option is reserved for future use. |
 | **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **7 Allowed:Debug Policy Augmented** | This option is not currently supported. |
 | **8 Required:EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All future Windows 10 and later drivers will meet this requirement. |
@@ -62,13 +62,13 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
 | **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
-| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as System Center Configuration Manager, that has been defined as a managed installer. |
+| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
-| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection of enforcing user-writeability and only allowing admin-writeable locations. |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.|
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
 
 ## Windows Defender Application Control file rule levels
 
@@ -83,11 +83,6 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 | **Hash** | Specifies individual hash values for each discovered binary. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies individual binary file names. Although the hash values for an application are modified when updated, the file names are typically not. This offers less specific security than the hash level but does not typically require a policy update when any binary is modified. |
 | **FilePath** | Beginning with Windows 10 version 1903, this specifies rules that allow execution of binaries contained under specific file path locations. Additional information about FilePath level rules can be found below. |
-> [!NOTE]
-> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md) 
-
-| Rule level | Description |
-|----------- | ----------- |
 | **SignedVersion** | This combines the publisher rule with a version number. This option allows anything from the specified publisher, with a version at or above the specified version number, to run. |
 | **Publisher** | This is a combination of the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. This rule level allows organizations to trust a certificate from a major CA (such as Symantec), but only if the leaf certificate is from a specific company (such as Intel, for device drivers). |
 | **FilePublisher** | This is a combination of the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
@@ -100,6 +95,9 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 > [!NOTE]
 > When you create WDAC policies with [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
+
+> [!NOTE]
+> WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
 
 ## Example of file rule levels in use
 
@@ -122,9 +120,25 @@ There is a defined list of SIDs which WDAC recognizes as admins. If a filepath a
 WDAC's list of well-known admin SIDs are: <br>
 S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. 
 
-When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards and include them in your [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) scan using the -Rules switch. 
+When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards using the [-FilePathRules](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule#parameters) switch. 
 
-Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.
+Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\\*` would include `C:\foo\\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path are not supported (ex. `C:\\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`). <br/> The use of macros is also supported and useful in scenarios where the system drive is different from the `C:\` drive. Supported macros: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
+
+## Windows Defender Application Control filename rules
+
+File name rule levels provide administrators to specify the file attributes off which to base a file name rule. File name rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Specification of the file name level occurs when creating new policy rules. In addition, to combine file name levels found in multiple policies, you can merge multiple policies. 
+
+Use Table 3 to select the appropriate file name level for your available administrative resources and Windows Defender Application Control deployment scenario.
+
+**Table 3. Windows Defender Application Control policy - filename levels**
+
+| Rule level | Description |
+|----------- | ----------- |
+| **File Description** |  Specifies the file description provided by the developer of the binary. |
+| **Internal Name** |  Specifies the internal name of the binary. |
+| **Original File Name** | Specifies the original file name, or the name with which the file was first created, of the binary. |
+| **Package Family Name** |  Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
+| **Product Name** |  Specifies the name of the product with which the binary ships. |

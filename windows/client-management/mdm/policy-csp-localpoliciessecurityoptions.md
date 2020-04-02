@@ -173,6 +173,9 @@ manager: dansimp
 
 <hr/>
 
+> [!NOTE]
+> To find data formats (and other policy-related details), see [Policy DDF file](https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file). 
+
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
 
@@ -3698,4 +3701,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-

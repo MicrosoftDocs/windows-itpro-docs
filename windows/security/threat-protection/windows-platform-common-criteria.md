@@ -23,6 +23,8 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The Security Target describes security functionality and assurance measures used to evaluate Windows.
 
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/c/6/9/c6903621-901e-4603-b9cb-fbfe5d6aa691/Windows%2010%201903%20GP%20OS%20Security%20Target.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/3/f/e/3fe6938d-2c2d-4ef1-85d5-1d42dc68ea89/Windows%2010%20version%201809%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/0/7/6/0764E933-DD0B-45A7-9144-1DD9F454DCEF/Windows%2010%201803%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/B/6/A/B6A5EC2C-6351-4FB9-8FF1-643D4BD5BE6E/Windows%2010%201709%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/8/b/e8b8c42a-a0b6-4ba1-9bdc-e704e8289697/windows%2010%20version%201703%20gp%20os%20security%20target%20-%20public%20\(january%2016,%202018\)\(final\)\(clean\).pdf)
@@ -33,23 +35,23 @@ The Security Target describes security functionality and assurance measures used
 - [Microsoft Windows 10 IPsec VPN Client](https://download.microsoft.com/download/3/7/2/372beb03-b1ed-4bb6-9b9b-b8f43afc570d/st_vid10746-st.pdf)
 - [Microsoft Windows 10 November 2015 Update with Surface Book](https://download.microsoft.com/download/a/c/2/ac2a6ed8-4d2f-4f48-a9bf-f059d6c9af38/windows%2010%20mdf3%20security%20target%20-%20public%20\(june%2022%202016\)\(final\).docx)
 - [Microsoft Windows 10 Mobile with Lumia 950, 950 XL, 550, 635, and Windows 10 with Surface Pro 4](https://www.niap-ccevs.org/st/st_vid10677-st.pdf)
-- [Windows 10 and Windows Server 2012 R2](http://www.commoncriteriaportal.org/files/epfiles/st_windows10.pdf)
+- [Windows 10 and Windows Server 2012 R2](https://www.commoncriteriaportal.org/files/epfiles/st_windows10.pdf)
 - [Windows 10](https://www.niap-ccevs.org/st/st_vid10677-st.pdf)
 - [Windows 8.1 with Surface 3 and Windows Phone 8.1 with Lumia 635 and Lumia 830](https://www.niap-ccevs.org/st/st_vid10635-st.pdf)
 - [Microsoft Surface Pro 3 and Windows 8.1](https://www.niap-ccevs.org/st/st_vid10632-st.pdf)
 - [Windows 8.1 and Windows Phone 8.1](https://www.niap-ccevs.org/st/st_vid10592-st.pdf)
 - [Windows 8 and Windows Server 2012](https://www.niap-ccevs.org/st/st_vid10520-st.pdf)
 - [Windows 8 and Windows RT](https://www.niap-ccevs.org/st/st_vid10620-st.pdf)
-- [Windows 8 and Windows Server 2012 BitLocker](http://www.commoncriteriaportal.org/files/epfiles/st_vid10540-st.pdf)
-- [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](http://www.commoncriteriaportal.org/files/epfiles/st_vid10529-st.pdf)
-- [Windows 7 and Windows Server 2008 R2](http://www.commoncriteriaportal.org/files/epfiles/st_vid10390-st.pdf)
+- [Windows 8 and Windows Server 2012 BitLocker](https://www.commoncriteriaportal.org/files/epfiles/st_vid10540-st.pdf)
+- [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](https://www.commoncriteriaportal.org/files/epfiles/st_vid10529-st.pdf)
+- [Windows 7 and Windows Server 2008 R2](https://www.commoncriteriaportal.org/files/epfiles/st_vid10390-st.pdf)
 - [Microsoft Windows Server 2008 R2 Hyper-V Role](https://www.microsoft.com/download/en/details.aspx?id=29305)
-- [Windows Vista and Windows Server 2008 at EAL4+](http://www.commoncriteriaportal.org/files/epfiles/st_vid10291-st.pdf)
-- [Microsoft Windows Server 2008 Hyper-V Role](http://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
-- [Windows Vista and Windows Server 2008 at EAL1](http://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_st_v1.0.pdf)
-- [Windows Server 2003 SP2 including R2, x64, and IA64; Windows XP Professional SP2 and x64 SP2; and Windows XP Embedded SP2](http://www.commoncriteriaportal.org/files/epfiles/st_vid10184-st.pdf)
-- [Windows Server 2003 Certificate Server](http://www.commoncriteriaportal.org/files/epfiles/st_vid9507-st.pdf)
-- [Windows Rights Management Services (RMS) 1.0 SP2](http://www.commoncriteriaportal.org/files/epfiles/st_vid10224-st.pdf)
+- [Windows Vista and Windows Server 2008 at EAL4+](https://www.commoncriteriaportal.org/files/epfiles/st_vid10291-st.pdf)
+- [Microsoft Windows Server 2008 Hyper-V Role](https://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
+- [Windows Vista and Windows Server 2008 at EAL1](https://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_st_v1.0.pdf)
+- [Windows Server 2003 SP2 including R2, x64, and IA64; Windows XP Professional SP2 and x64 SP2; and Windows XP Embedded SP2](https://www.commoncriteriaportal.org/files/epfiles/st_vid10184-st.pdf)
+- [Windows Server 2003 Certificate Server](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-st.pdf)
+- [Windows Rights Management Services (RMS) 1.0 SP2](https://www.commoncriteriaportal.org/files/epfiles/st_vid10224-st.pdf)
 
 ## Common Criteria Deployment and Administration
 
@@ -59,7 +61,8 @@ These documents describe how to configure Windows to replicate the configuration
 
 **Windows 10, Windows 10 Mobile, Windows Server 2016, Windows Server 2012 R2**
 
-
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/0/b/b/0bb1c6b7-499a-458e-a5f8-e9cf972dfa8d/Windows%2010%201903%20GP%20OS%20Administrative%20Guide.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/f/f/1/ff186e32-35cf-47db-98b0-91ff11763d74/Windows%2010%20version%201809%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/C/1/6C13FBFF-9CB0-455F-A1C8-3E3CB0ACBD7B/Windows%2010%201803%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/5/D/2/5D26F473-0FCE-4AC4-9065-6AEC0FE5B693/Windows%2010%201709%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/9/7/e97f0c7f-e741-4657-8f79-2c0a7ca928e3/windows%2010%20cu%20gp%20os%20operational%20guidance%20\(jan%208%202017%20-%20public\).pdf)
@@ -88,48 +91,48 @@ These documents describe how to configure Windows to replicate the configuration
 **Windows 7 and Windows Server 2008 R2**
 
 - [Windows 7 and Windows Server 2008 R2 Supplemental CC Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=ee05b6d0-9939-4765-9217-63083bb94a00)
-- [Windows Server 2008 R2 Hyper-V Common Criteria Configuration Guide](http://www.microsoft.com/download/en/details.aspx?id=29308)
+- [Windows Server 2008 R2 Hyper-V Common Criteria Configuration Guide](https://www.microsoft.com/download/en/details.aspx?id=29308)
 
 **Windows Vista and Windows Server 2008**
 
-- [Windows Vista and Windows Server 2008 Supplemental CC Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567)
-- [Windows Server 2008 Hyper-V Role Common Criteria Administrator Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
+- [Windows Vista and Windows Server 2008 Supplemental CC Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567)
+- [Windows Server 2008 Hyper-V Role Common Criteria Administrator Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
 
 **Windows Server 2003 SP2 including R2, x64, and Itanium**
 
-- [Windows Server 2003 SP2 R2 Common Criteria Administrator Guide 3.0](http://www.microsoft.com/downloads/details.aspx?familyid=39598841-e693-4891-9234-cfd1550f3949)
-- [Windows Server 2003 SP2 R2 Common Criteria Configuration Guide 3.0](http://www.microsoft.com/downloads/details.aspx?familyid=4f7b6a93-0307-480f-a5af-a20268cbd7cc)
+- [Windows Server 2003 SP2 R2 Common Criteria Administrator Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=39598841-e693-4891-9234-cfd1550f3949)
+- [Windows Server 2003 SP2 R2 Common Criteria Configuration Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=4f7b6a93-0307-480f-a5af-a20268cbd7cc)
 
 **Windows Server 2003 SP1(x86), x64, and IA64**
 
-- [Windows Server 2003 with x64 Hardware Administrator's Guide](http://www.microsoft.com/downloads/details.aspx?familyid=8a26829f-c177-4b79-913a-4135fb7b96ef)
-- [Windows Server 2003 with x64 Hardware Configuration Guide](http://www.microsoft.com/downloads/details.aspx?familyid=3f9ecd0a-74dd-4d23-a4e5-d7b63fed70e8)
+- [Windows Server 2003 with x64 Hardware Administrator's Guide](https://www.microsoft.com/downloads/details.aspx?familyid=8a26829f-c177-4b79-913a-4135fb7b96ef)
+- [Windows Server 2003 with x64 Hardware Configuration Guide](https://www.microsoft.com/downloads/details.aspx?familyid=3f9ecd0a-74dd-4d23-a4e5-d7b63fed70e8)
 
 **Windows Server 2003 SP1**
 
-- [Windows Server 2003 Administrator's Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=75736009-59e9-4a71-879e-cf581817b8cc)
-- [Windows Server 2003 Configuration Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=a0ad1856-beb7-4285-b47c-381e8a210c38)
+- [Windows Server 2003 Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=75736009-59e9-4a71-879e-cf581817b8cc)
+- [Windows Server 2003 Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=a0ad1856-beb7-4285-b47c-381e8a210c38)
 
 **Windows XP Professional SP2 (x86) and x64 Edition**
 
-- [Windows XP Common Criteria Administrator Guide 3.0](http://www.microsoft.com/downloads/details.aspx?familyid=9a7f0b16-72ce-4675-aec8-58785c4e37ee)
-- [Windows XP Common Criteria Configuration Guide 3.0](http://www.microsoft.com/downloads/details.aspx?familyid=165da57d-f066-4ddf-9462-cbecfcd68694)
-- [Windows XP Common Criteria User Guide 3.0](http://www.microsoft.com/downloads/details.aspx?familyid=7c1a4761-9b9e-429c-84eb-cd7b034c5779)
-- [Windows XP Professional with x64 Hardware Administrator's Guide](http://www.microsoft.com/downloads/details.aspx?familyid=346f041e-d641-4af7-bdea-c5a3246d0431)
-- [Windows XP Professional with x64 Hardware Configuration Guide](http://www.microsoft.com/downloads/details.aspx?familyid=a7075319-cc3d-4420-a00b-8c9a7068ad54)
-- [Windows XP Professional with x64 Hardware User’s Guide](http://www.microsoft.com/downloads/details.aspx?familyid=26c49cf5-6159-4197-97ce-bf1fdfc54569)
+- [Windows XP Common Criteria Administrator Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=9a7f0b16-72ce-4675-aec8-58785c4e37ee)
+- [Windows XP Common Criteria Configuration Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=165da57d-f066-4ddf-9462-cbecfcd68694)
+- [Windows XP Common Criteria User Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=7c1a4761-9b9e-429c-84eb-cd7b034c5779)
+- [Windows XP Professional with x64 Hardware Administrator's Guide](https://www.microsoft.com/downloads/details.aspx?familyid=346f041e-d641-4af7-bdea-c5a3246d0431)
+- [Windows XP Professional with x64 Hardware Configuration Guide](https://www.microsoft.com/downloads/details.aspx?familyid=a7075319-cc3d-4420-a00b-8c9a7068ad54)
+- [Windows XP Professional with x64 Hardware User’s Guide](https://www.microsoft.com/downloads/details.aspx?familyid=26c49cf5-6159-4197-97ce-bf1fdfc54569)
 
 **Windows XP Professional SP2, and XP Embedded SP2**
 
-- [Windows XP Professional Administrator's Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=9bcac470-a0b3-4d34-a561-fa8308c0ff60)
-- [Windows XP Professional Configuration Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=9f04915e-571a-422d-8ffa-5797051e81de)
-- [Windows XP Professional User's Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=d39d0028-7093-495c-80da-2b5b29a54bd8)
+- [Windows XP Professional Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=9bcac470-a0b3-4d34-a561-fa8308c0ff60)
+- [Windows XP Professional Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=9f04915e-571a-422d-8ffa-5797051e81de)
+- [Windows XP Professional User's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=d39d0028-7093-495c-80da-2b5b29a54bd8)
 
 **Windows Server 2003 Certificate Server**
 
-- [Windows Server 2003 Certificate Server Administrator's Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=445093d8-45e2-4cf6-884c-8802c1e6cb2d)
-- [Windows Server 2003 Certificate Server Configuration Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=46abc8b5-11be-4e3d-85c2-63226c3688d2)
-- [Windows Server 2003 Certificate Server User's Guide](http://www.microsoft.com/downloads/en/details.aspx?familyid=74f66d84-2654-48d0-b9b5-b383d383425e)
+- [Windows Server 2003 Certificate Server Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=445093d8-45e2-4cf6-884c-8802c1e6cb2d)
+- [Windows Server 2003 Certificate Server Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=46abc8b5-11be-4e3d-85c2-63226c3688d2)
+- [Windows Server 2003 Certificate Server User's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=74f66d84-2654-48d0-b9b5-b383d383425e)
 
 ## Common Criteria Evaluation Technical Reports and Certification / Validation Reports
 
@@ -137,6 +140,8 @@ These documents describe how to configure Windows to replicate the configuration
 
 An Evaluation Technical Report (ETR) is a report submitted to the Common Criteria certification authority for how Windows complies with the claims made in the Security Target. A Certification / Validation Report provides the results of the evaluation by the validation team.
 
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/2/1/9/219909ad-2f2a-44cc-8fcb-126f28c74d36/Windows%2010%201903%20GP%20OS%20Certification%20Report.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/9/4/0/940ac551-7757-486d-9da1-7aa0300ebac0/Windows%2010%20version%201809%20GP%20OS%20Certification%20Report%20-%202018-61-INF-2795.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/2/C/2/2C20D013-0610-4047-B2FA-516819DFAE0A/Windows%2010%201709%20GP%20OS%20Certification%20Report.pdf) 
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
@@ -154,22 +159,22 @@ An Evaluation Technical Report (ETR) is a report submitted to the Common Criteri
 - [Windows 8.1 and Windows Phone 8.1](https://www.niap-ccevs.org/st/st_vid10592-vr.pdf)
 - [Windows 8 and Windows Server 2012](https://www.niap-ccevs.org/st/st_vid10520-vr.pdf)
 - [Windows 8 and Windows RT](https://www.niap-ccevs.org/st/st_vid10620-vr.pdf)
-- [Windows 8 and Windows Server 2012 BitLocker](http://www.commoncriteriaportal.org/files/epfiles/st_vid10540-vr.pdf)
-- [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](http://www.commoncriteriaportal.org/files/epfiles/st_vid10529-vr.pdf)
-- [Windows 7 and Windows Server 2008 R2 Validation Report](http://www.commoncriteriaportal.org/files/epfiles/st_vid10390-vr.pdf)
-- [Windows Vista and Windows Server 2008 Validation Report at EAL4+](http://www.commoncriteriaportal.org/files/epfiles/st_vid10291-vr.pdf)
-- [Windows Server 2008 Hyper-V Role Certification Report](http://www.commoncriteriaportal.org/files/epfiles/0570a_pdf.pdf)
-- [Windows Vista and Windows Server 2008 Certification Report at EAL1](http://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_cr_v1.0.pdf)
-- [Windows XP / Windows Server 2003 with x64 Hardware ETR](http://www.microsoft.com/downloads/details.aspx?familyid=6e8d98f9-25b9-4c85-9bd9-24d91ea3c9ef)
-- [Windows XP / Windows Server 2003 with x64 Hardware ETR, Part II](http://www.microsoft.com/downloads/details.aspx?familyid=0c35e7d8-9c56-4686-b902-d5ffb9915658)
-- [Windows Server 2003 SP2 including R2, Standard, Enterprise, Datacenter, x64, and Itanium Editions Validation Report](http://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP Professional SP2 and x64 SP2 Validation Report](http://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP Embedded SP2 Validation Report](http://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP and Windows Server 2003 ETR](http://www.microsoft.com/downloads/details.aspx?familyid=63cf2a1e-f578-4bb5-9245-d411f0f64265)
-- [Windows XP and Windows Server 2003 Validation Report](http://www.commoncriteriaportal.org/files/epfiles/st_vid9506-vr.pdf)
-- [Windows Server 2003 Certificate Server ETR](http://www.microsoft.com/downloads/details.aspx?familyid=a594e77f-dcbb-4787-9d68-e4689e60a314)
-- [Windows Server 2003 Certificate Server Validation Report](http://www.commoncriteriaportal.org/files/epfiles/st_vid9507-vr.pdf)
-- [Microsoft Windows Rights Management Services (RMS) 1.0 SP2 Validation Report](http://www.commoncriteriaportal.org/files/epfiles/st_vid10224-vr.pdf)
+- [Windows 8 and Windows Server 2012 BitLocker](https://www.commoncriteriaportal.org/files/epfiles/st_vid10540-vr.pdf)
+- [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](https://www.commoncriteriaportal.org/files/epfiles/st_vid10529-vr.pdf)
+- [Windows 7 and Windows Server 2008 R2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10390-vr.pdf)
+- [Windows Vista and Windows Server 2008 Validation Report at EAL4+](https://www.commoncriteriaportal.org/files/epfiles/st_vid10291-vr.pdf)
+- [Windows Server 2008 Hyper-V Role Certification Report](https://www.commoncriteriaportal.org/files/epfiles/0570a_pdf.pdf)
+- [Windows Vista and Windows Server 2008 Certification Report at EAL1](https://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_cr_v1.0.pdf)
+- [Windows XP / Windows Server 2003 with x64 Hardware ETR](https://www.microsoft.com/downloads/details.aspx?familyid=6e8d98f9-25b9-4c85-9bd9-24d91ea3c9ef)
+- [Windows XP / Windows Server 2003 with x64 Hardware ETR, Part II](https://www.microsoft.com/downloads/details.aspx?familyid=0c35e7d8-9c56-4686-b902-d5ffb9915658)
+- [Windows Server 2003 SP2 including R2, Standard, Enterprise, Datacenter, x64, and Itanium Editions Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
+- [Windows XP Professional SP2 and x64 SP2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
+- [Windows XP Embedded SP2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
+- [Windows XP and Windows Server 2003 ETR](https://www.microsoft.com/downloads/details.aspx?familyid=63cf2a1e-f578-4bb5-9245-d411f0f64265)
+- [Windows XP and Windows Server 2003 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid9506-vr.pdf)
+- [Windows Server 2003 Certificate Server ETR](https://www.microsoft.com/downloads/details.aspx?familyid=a594e77f-dcbb-4787-9d68-e4689e60a314)
+- [Windows Server 2003 Certificate Server Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-vr.pdf)
+- [Microsoft Windows Rights Management Services (RMS) 1.0 SP2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid10224-vr.pdf)
 
 ## Other Common Criteria Related Documents
 

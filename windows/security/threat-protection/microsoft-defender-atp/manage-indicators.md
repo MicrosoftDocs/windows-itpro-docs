@@ -78,7 +78,6 @@ It's important to understand the following prerequisites prior to creating indic
 >[!IMPORTANT]
 >- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
 >- Trusted signed files will be treated differently. Microsoft Defender ATP is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
->- The PE file needs to be in the machine timeline for you to be able to take this action. 
 
  
 >[!NOTE]
@@ -106,9 +105,8 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 Files automatically blocked by an indicator won't show up in the files's Action center, but the alerts will still be visible in the Alerts queue.
 
-
-## Create indicators for IPs and URLs/domains
-Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs through SmartScreen for Microsoft browsers and Network Protection for non-Microsoft browsers and calls made outside the browser.
+## Create indicators for IPs and URLs/domains (preview)
+Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs, through Windows Defender SmartScreen for Microsoft browsers, and through Network Protection for non-Microsoft browsers or calls made outside of a browser.
 
 The threat intelligence data set for this has been managed by Microsoft.
 
@@ -124,6 +122,12 @@ It's important to understand the following prerequisites prior to creating indic
 
 >[!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
+> For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement: <br>
+> NOTE:
+>- IP is supported for all three protocols
+>- Encrypted URLs (full path) can only be blocked on first party browsers
+>- Encrypted URLS (FQDN only) can be blocked outside of first party browsers
+>- Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
 >There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 

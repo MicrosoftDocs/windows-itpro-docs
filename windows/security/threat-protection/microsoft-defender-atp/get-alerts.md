@@ -1,6 +1,6 @@
 ---
 title: List alerts API
-description: Retrieves top recent alerts.
+description: Retrieve a collection of recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -22,13 +22,19 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
+## API description
 Retrieves a collection of Alerts.
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>The OData's ```$filter``` query is supported on: ```alertCreationTime```, ```incidentId```, ```InvestigationId```, ```status```, ```severity``` and ```category``` properties.
+<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
-Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-The OData's Filter query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
+## Limitations
+1. You can get alerts last updated in the past 30 days.
+2. Maximum page size is 10,000.
+3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
-See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -49,10 +55,6 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 ```
 GET /api/alerts
 ```
-
-## Optional query parameters
-Method supports $top, $select, $filter, $expand and $skip query parameters.
-<br>$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
 
 ## Request headers
 
@@ -78,7 +80,7 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/alerts
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 **Response**
@@ -120,11 +122,9 @@ Here is an example of the response.
 					"createdBy": "secop@contoso.com",
 					"createdTime": "2019-11-05T14:08:37.8404534Z"
 				}
-			],
-			"alertFiles": [],
-			"alertDomains": [],
-			"alertIps": []
+			]
 		}
+		...
 	]
 }
 ```

@@ -18,10 +18,18 @@ ms.topic: article
 ---
 
 # Collect investigation package API
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+## API description
 Collect investigation package from a machine.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -65,7 +73,7 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
@@ -73,26 +81,4 @@ Content-type: application/json
 {
   "Comment": "Collect forensics due to alert 1234"
 }
-```
-
-**Response**
-
-Here is an example of the response.
-
-```
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "c9042f9b-8483-4526-87b5-35e4c2532223",
-    "type": "CollectInvestigationPackage",
-    "requestor": "Analyst@contoso.com",
-    "requestorComment": " Collect forensics due to alert 1234",
-    "status": "InProgress",
-    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-    "creationDateTimeUtc": "2018-12-04T12:09:24.1785079Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:09:24.1785079Z",
-	"relatedFileInfo": null
-}
-
 ```

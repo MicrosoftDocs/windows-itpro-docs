@@ -43,6 +43,15 @@ Try adjusting the position of your device visor so the holographic frame matches
 - **If you need to look up to see holograms**. First, shift the back of the headband a bit higher on your head. Then use one hand to hold the headband in place and the other to gently rotate the visor so you have a good view of the holographic frame.
 - **If you need to look down to see holograms**. First, shift the back of the headband a bit lower on your head. Then place your thumbs under the device arms and your index fingers on top of the headband, and gently squeeze with your thumbs to rotate the visor so you have a good view of the holographic frame.
 
+## Hologram image color or brightness does not look right
+
+For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
+
+- **Increase brightness of the display.** Holograms look best when the display is at its brightest level.
+- **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
+- **Shift visor down.** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
+- **Run eye calibration.** The display uses your IPD and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse.
+
 ## The device slides down when I'm using it, or I need to make the headband too tight to keep it secure
 
 The overhead strap can help keep your HoloLens secure on your head, particularly if you're moving around a lot. The strap may also let you loosen the headband a bit. [Learn how to use it](hololens2-setup.md#adjust-fit).

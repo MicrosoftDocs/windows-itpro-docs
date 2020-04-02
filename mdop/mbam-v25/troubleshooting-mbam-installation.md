@@ -1,13 +1,14 @@
 ---
 title: Troubleshooting MBAM 2.5 installation problems
 description: Introducing how to troubleshoot MBAM 2.5 installation problems.
-author: delhan
+author: Deland-Han
 ms.reviewer: dcscontentpm
 manager: dansimp
 ms.author: delhan
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/16/2019
+manager: dcscontentpm
 --- 
 
 # Troubleshooting MBAM 2.5 installation problems
@@ -334,7 +335,7 @@ The MBAM agent will be unable to post any updates to the database if connectivit
     User:          SYSTEM
     Computer:      TESTLABS.CONTOSO.COM
     Description:
-    An error occured while applying MBAM policies.
+    An error occurred while applying MBAM policies.
     Volume ID:\\?\Volume{871c5858-2467-4d0b-8c83-d68af8ce10e5}\ 
     Error code:
     0x803D0010 
@@ -351,7 +352,7 @@ The MBAM agent will be unable to post any updates to the database if connectivit
     User:          SYSTEM
     Computer:      TESTLABS.CONTOSO.COM
     Description:
-    An error occured while applying MBAM policies.
+    An error occurred while applying MBAM policies.
     Volume ID:\\?\Volume{871c5858-2467-4d0b-8c83-d68af8ce10e5}\ 
     Error code:
     0x803D0006 
@@ -386,7 +387,7 @@ Basic checks:
 
 * If the communication between client and server is secure, make sure that you are using a valid SSL certificate.
 
-* Verify network connectivity between the web server and the database server to which the data is sent for insertion. You can check database connectivity from the web server to the database server by using ODBC Data Source Administrator. Detailed SQL Server connection troubleshooting information is available in [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+* Verify network connectivity between the web server and the database server to which the data is sent for insertion. You can check database connectivity from the web server to the database server by using ODBC Data Source Administrator. Detailed SQL Server connection troubleshooting information is available in [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 #### Troubleshooting the connectivity issue
 
@@ -419,7 +420,7 @@ The MBAM services may be unable to connect to the database server because of a n
     Computer:      MBAM2-Admin.contoso.com
     Description:
     Event code: 100001
-    Event message: SQL error occured
+    Event message: SQL error occurred
     Event time: 7/11/2013 6:16:34 PM
     Event time (UTC): 7/11/2013 12:46:34 PM
     Event ID: 6615fb8eb9d54e778b933d5bb7ca91ed
@@ -528,11 +529,11 @@ The web service may not connect to the database server because of a permissions 
 
 * These groups do not have the required permissions on the database.
 
-You will notice permissions-related errors in the Application logs on the MBAM administration and monitoring server if any of the previous conditions are true. In that case, you should manually add the NT Authority\Network Service account and MBAM administration server’s computer account and grant them a server-wide public role on the SQL database server that is using SQL Server Management Studio (http://msdn.microsoft.com/en-us/library/aa337562.aspx).
+You will notice permissions-related errors in the Application logs on the MBAM administration and monitoring server if any of the previous conditions are true. In that case, you should manually add the NT Authority\Network Service account and MBAM administration server’s computer account and grant them a server-wide public role on the SQL database server that is using SQL Server Management Studio (https://msdn.microsoft.com/library/aa337562.aspx).
 
 #### Review the web service logs
 
-If no events are logged in the Application logs on the MBAM administration server, it’s time to review the web service logs (.svclog) of the MBAM web service that is hosted on the MBAM administration and monitoring server. You will have to use the Service Trace Viewer Tool (SvcTraceViewer.exe) http://msdn.microsoft.com/en-us/library/ms732023.aspx to view the log file.
+If no events are logged in the Application logs on the MBAM administration server, it’s time to review the web service logs (.svclog) of the MBAM web service that is hosted on the MBAM administration and monitoring server. You will have to use the Service Trace Viewer Tool (SvcTraceViewer.exe) https://msdn.microsoft.com/library/ms732023.aspx to view the log file.
 
 You should primarily investigate the service trace logs of RecoveryandHardwareService and ComplianceStatusService. By default, web service logs are located in the C:\inetpub\Microsoft BitLocker Management Solution\Logs folder. There, each service writes its .svclog file under its own folder.
 
@@ -551,7 +552,7 @@ Review the activity in the service trace log for any error or warning entries. B
     <Channel />
     <Computer>XXXXXXXXXXX</Computer>
     </System>
-    <ApplicationData>AddUpdateVolume: While executing sql transaction for add volume to store exception occured Key Recovery Data Store processing error: Violation of UNIQUE KEY constraint 'UniqueRecoveryKeyId'. Cannot insert duplicate key in object 'RecoveryAndHardwareCore.Keys'. The duplicate key value is (8637036e-b379-4798-bd9e-5a0b36296de3).
+    <ApplicationData>AddUpdateVolume: While executing sql transaction for add volume to store exception occurred Key Recovery Data Store processing error: Violation of UNIQUE KEY constraint 'UniqueRecoveryKeyId'. Cannot insert duplicate key in object 'RecoveryAndHardwareCore.Keys'. The duplicate key value is (8637036e-b379-4798-bd9e-5a0b36296de3).
     </ApplicationData>
     </E2ETraceEvent>
 

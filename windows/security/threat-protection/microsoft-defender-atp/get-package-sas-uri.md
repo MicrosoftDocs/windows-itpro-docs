@@ -18,11 +18,14 @@ ms.topic: article
 
 # Get package SAS URI API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Get a URI that allows downloading of an [investigation package](collect-investigation-package.md).
+
+## API description
+Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -71,7 +74,7 @@ GET https://api.securitycenter.windows.com/api/machineactions/7327b54fd718525cbc
 
 Here is an example of the response.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ```

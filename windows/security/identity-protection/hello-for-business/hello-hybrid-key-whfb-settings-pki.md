@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
+title: Configure Hybrid key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI, Windows Hello, key trust, key-trust
 ms.prod: w10
@@ -54,6 +54,9 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8. Close the console.
+
+>[!NOTE]
+>Don't confuse the **Request hash** algorithm with the hash argorithm of the certificate.
 
 #### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 

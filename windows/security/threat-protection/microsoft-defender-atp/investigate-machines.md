@@ -54,7 +54,7 @@ The machine details section provides information such as the domain, OS, and hea
 Response actions run along the top of a specific machine page and include:
 
 - Manage tags
-- Initiate Automated Investigation
+- Initiate automated investigation
 - Initiate Live Response Session
 - Collect investigation package
 - Run antivirus scan
@@ -138,11 +138,18 @@ More details about certain events are provided in the **Additional information**
 - Active threat detected - the threat detection occurred while the threat was running
 - Remediation unsuccessful - an attempt to remediate the detected threat was invoked but failed
 - Remediation successful - the detected threat was stopped and cleaned
-- Warning bypassed by user - the SmartScreen warning was dismissed and overridden by a user
+- Warning bypassed by user - the Windows Defender SmartScreen warning was dismissed and overridden by a user
 - Suspicious script detected - a potentially malicious script was found running
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 
 You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
+
+#### Event details
+Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
+
+To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query will return the selected event and the list of other events that occurred around the same time on the same endpoint.
+
+![Image of the event details panel](images/event-details.png)
 
 ### Security recommendations
 

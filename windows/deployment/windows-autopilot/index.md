@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot deployment
-description: Windows Autopilot deployment
+description: Discover resources for Windows Autopilot deployment with this guide.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi

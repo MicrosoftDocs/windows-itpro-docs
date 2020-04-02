@@ -47,7 +47,8 @@
           "depot_name": "MSDN.win-development",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Windows Deployment" 
     },
     "fileMetadata": {},
     "template": [],

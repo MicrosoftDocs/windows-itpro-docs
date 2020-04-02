@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Defender Advanced Threat Protection APIs  
 ms.reviewer: 
-description: Use the exposed data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph.
+description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender ATP without a user.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

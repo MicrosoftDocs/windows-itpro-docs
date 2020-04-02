@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
  
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
@@ -78,6 +78,10 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
     - **Search box** - select **File** from the drop–down menu and enter the file name
 
+
+    >[!NOTE]
+    >The stop and quarantine file action is limited to a maximum of 1000 machines. To stop a file on a larger number of machines, see [Add indicator to block or allow file](#add-indicator-to-block-or-allow-a-file).
+
 2. Go to the top bar and select **Stop and Quarantine File**.
 
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
@@ -122,7 +126,9 @@ You can roll back and remove a file from quarantine if you’ve determined that 
    ```
 
 > [!NOTE]
-> Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
+> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+> 
+> Microsoft Defender ATP will restore all custom blocked files that were quarantined on this machine in the last 30 days.
 
 ## Add indicator to block or allow a file
 
@@ -204,6 +210,8 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
 
 **Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection, or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 

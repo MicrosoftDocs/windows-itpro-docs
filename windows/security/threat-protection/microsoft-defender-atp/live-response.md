@@ -27,6 +27,8 @@ Live response is a capability that gives you instantaneous access to a machine u
 
 Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUW]
+
 With live response, analysts will have the ability to:
 - Run basic and advanced commands to do investigative work 
 - Download files such as malware samples and outcomes of PowerShell scripts
@@ -54,6 +56,9 @@ You'll need to enable the live response capability in the [Advanced features set
     
 - **Ensure that you have the appropriate permissions**<br>
 	Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+
+    > [!IMPORTANT]
+    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
 
     Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permission are controlled by RBAC custom role. 
 
@@ -116,11 +121,11 @@ The following commands are available for user roles that's been granted the abil
 Command | Description 
 :---|:---
 analyze | Analyses the entity with various incrimination engines to reach a verdict.
-getfile | Gets a file from the machine. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjuction with `getfile` to automatically run the prerequisite command. 
+getfile | Gets a file from the machine. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. 
 run | Runs a PowerShell script from the library on the machine.
 library | Lists files that were uploaded to the live response library.
 putfile | Puts a file from the library to the machine. Files are saved in a working folder and are deleted when the machine restarts by default.
-remediate | Remediates an entity on the machine. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjuction with `remediate` to automatically run the prerequisite command. 
+remediate | Remediates an entity on the machine. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command. 
 undo | Restores an entity that was remediated. 
 
 
@@ -242,7 +247,6 @@ Each command is tracked with full details such as:
 
 ## Related topic
 - [Live response command examples](live-response-command-examples.md)
-
 
 
 

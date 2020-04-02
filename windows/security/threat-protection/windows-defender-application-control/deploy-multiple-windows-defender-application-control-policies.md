@@ -1,5 +1,5 @@
 ---
-title: Deploy multiple Windows Defender Application Control Policies  (Windows 10)
+title: Use multiple Windows Defender Application Control Policies  (Windows 10)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -17,7 +17,7 @@ manager: dansimp
 ms.date: 05/17/2019
 ---
 
-# Deploy multiple Windows Defender Application Control Policies 
+# Use multiple Windows Defender Application Control Policies
 
 **Applies to:**
 

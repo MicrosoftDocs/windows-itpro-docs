@@ -19,13 +19,9 @@ ms.reviewer:
 # Windows and the GDPR: Information for IT Administrators and Decision Makers
 
 Applies to:
-- Windows 10, version 1809
-- Windows 10, version 1803
-- Windows 10, version 1709
-- Windows 10, version 1703
+- Windows 10, version 1703 and newer
 - Windows 10 Team Edition, version 1703 for Surface Hub
-- Windows Server 2019
-- Windows Server 2016
+- Windows Server 2016 and newer
 - Desktop Analytics
 
 This topic provides IT Decision Makers with a basic understanding of the relationship between users in an organization and Microsoft in the context of the GDPR (General Data Protection Regulation). You will also learn what role an IT organization plays for that relationship.

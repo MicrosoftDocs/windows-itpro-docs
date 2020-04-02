@@ -1,6 +1,6 @@
 ---
 title: Mitigate threats by using Windows 10 security features (Windows 10)
-description: This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
+description: An overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -84,7 +84,7 @@ As an IT professional, you can ask application developers and software vendors t
 
 Windows Defender SmartScreen notifies users if they click on reported phishing and malware websites, and helps protect them against unsafe downloads or make informed decisions about downloads.
 
-For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
+For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows Windows Defender SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, Windows Defender SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, Windows Defender SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
 For more information, see [Windows Defender SmartScreen overview](windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 

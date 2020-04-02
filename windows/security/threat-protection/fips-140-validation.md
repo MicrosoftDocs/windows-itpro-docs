@@ -39,7 +39,7 @@ Each of the cryptographic modules has a defined security policy that must be met
  
 ### Step 3: Enable the FIPS security policy
 
-Windows provides the security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing,” which is used by some Microsoft products to determine whether to operate in a FIPS 140-2 approved mode.  When this policy is enabled, the validated cryptographic modules in Windows will also operate in FIPS approved mode.  The policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
+Windows provides the security policy setting, “System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing,” which is used by some Microsoft products to determine whether to operate in a FIPS 140-2 approved mode.  When this policy is enabled, the validated cryptographic modules in Windows will also operate in FIPS approved mode.  The policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
 
 ### Step 4: Ensure only FIPS validated cryptographic algorithms are used
 
@@ -57,7 +57,7 @@ The cadence for starting module validation aligns with the feature updates of Wi
 
 ### What is the difference between “FIPS 140 validated” and “FIPS 140 compliant”?
 
-“FIPS 140 validated” means that the cryptographic module, or a product that embeds the module, has been validated (“certified”) by the CMVP as meeting as meeting the FIPS 140-2 requirements. “FIPS 140 compliant” is an industry term for IT products that rely on FIPS 140 validated products for cryptographic functionality.
+“FIPS 140 validated” means that the cryptographic module, or a product that embeds the module, has been validated (“certified”) by the CMVP as meeting the FIPS 140-2 requirements. “FIPS 140 compliant” is an industry term for IT products that rely on FIPS 140 validated products for cryptographic functionality.
 
 ### I need to know if a Windows service or application is FIPS 140-2 validated.
 

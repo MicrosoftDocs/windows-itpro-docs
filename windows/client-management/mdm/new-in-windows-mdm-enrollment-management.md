@@ -1,6 +1,6 @@
 ---
 title: What's new in MDM enrollment and management
-description: This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
+description: Discover what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
@@ -21,7 +21,7 @@ ms.date: 07/01/2019
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
-For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347). 
+For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
   - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
@@ -58,6 +58,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [February 2020](#february-2020)
+    - [January 2020](#january-2020)
+    - [November 2019](#november-2019)
     - [October 2019](#october-2019)
     - [September 2019](#september-2019)
     - [August 2019](#august-2019)
@@ -1933,6 +1936,24 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### February 2020
+|New or updated topic | Description|
+|--- | ---|
+|[CertificateStore CSP](certificatestore-csp.md)<br>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)|Added details about SubjectName value.|
+
+### January 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Defender](policy-csp-defender.md)|Added descriptions for supported actions for Defender/ThreatSeverityDefaultAction.|
+
+
+### November 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - DeliveryOptimization](policy-csp-deliveryoptimization.md)|Added option 5 in the supported values list for DeliveryOptimization/DOGroupIdSource.|
+|[DiagnosticLog CSP](diagnosticlog-csp.md)|Added substantial updates to this CSP doc.|
 
 ### October 2019
 

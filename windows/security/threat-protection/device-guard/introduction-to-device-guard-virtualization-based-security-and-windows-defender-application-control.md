@@ -1,15 +1,16 @@
 ---
-title: Windows Defender Application Control and virtualization-based protection of code integrity (Windows 10)
-description: Hardware and software system integrity hardening capabilites that can be deployed separately or in combination.
+title: WDAC and virtualization-based code integrity (Windows 10)
+description: Hardware and software system integrity-hardening capabilites that can be deployed separately or in combination with Windows Defender Application Control (WDAC).
 keywords: virtualization, security, malware, device guard
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 07/01/2019
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.custom: asr
 ---
 
 # Windows Defender Application Control and virtualization-based protection of code integrity
@@ -38,7 +39,7 @@ Configurable code integrity carries no specific hardware or software requirement
 Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we are discussing and documenting configurable code integrity as a independent technology within our security stack and giving it a name of its own: [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control). 
 We hope this change will help us better communicate options for adopting application control within an organization.
 
-## Related topics
+## Related articles
 
 [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control)
 

@@ -1,6 +1,6 @@
 ---
 title: Minimum requirements for Microsoft Defender ATP
-description: Understand the licensing requirements and requirements for onboarding machines to the sercvie
+description: Understand the licensing requirements and requirements for onboarding machines to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,16 +28,19 @@ There are some minimum requirements for onboarding machines to the service. Lear
 
 
 >[!TIP]
->- Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Learn about the latest enhancements in Microsoft Defender ATP:[Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 >- Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
 - Windows 10 Enterprise E5
-- Windows 10 Education E5
+- Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 (M365 A5)
 
+For detailed licensing information, see the [Product terms page](https://www.microsoft.com/en-us/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product. 
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -71,7 +74,7 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Server 2016, version 1803
+  - Windows Server, version 1803 or later
   - Windows Server 2019
 
 Machines on your network must be running one of these editions.
@@ -121,9 +124,9 @@ By default, this service is enabled, but it&#39;s good practice to check to ensu
    sc qc diagtrack
    ```
 
-If the service is enabled, then the result should look like the following screenshot:
+    If the service is enabled, then the result should look like the following screenshot:
 
-![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
 
@@ -173,13 +176,16 @@ When Windows Defender Antivirus is not the active antimalware in your organizati
 
 If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
+> [!NOTE]
+> Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender Antivirus settings will be ignored when Tamper Protection is on.
+
 
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
 ## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 

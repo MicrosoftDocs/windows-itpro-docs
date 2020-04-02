@@ -3,7 +3,7 @@ title: Log files - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+description: Learn how to interpret the log files generated during the Windows 10 upgrade process. 
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,14 +27,15 @@ ms.topic: article
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
-Note: Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
+>[!NOTE]
+>Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
 <br>
 
 <table>
-<tr><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Log file</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>When to use</td>
 <tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
 <td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
 <tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>
@@ -51,7 +52,7 @@ setupapi.dev.log<br>
 Event logs (*.evtx)</td>
 <td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
 <td>
-Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<br>
+Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>
 Setupapi: Device install issues - 0x30018<br>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 </table>
@@ -79,7 +80,7 @@ See the following example:
 
 ## Analyze log files
 
->The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
+The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
 
 <br>To analyze Windows Setup log files:
 
@@ -110,7 +111,7 @@ See the following example:
 
 For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
+Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
 <br><B>setuperr.log</B> content:
 

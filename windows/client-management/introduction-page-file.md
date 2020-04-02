@@ -8,7 +8,7 @@ author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
 ms.reviewer: greglin
-manager: willchen
+manager: dcscontentpm
 ---
 
 # Introduction to page files

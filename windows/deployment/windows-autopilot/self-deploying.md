@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot Self-Deploying mode
-description: Windows Autopilot deployment
+description: Self-deploying mode allows a device to be deployed with little to no user interaction. This mode mode is designed to deploy Windows 10 as a kiosk, digital signage device, or a shared device.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi

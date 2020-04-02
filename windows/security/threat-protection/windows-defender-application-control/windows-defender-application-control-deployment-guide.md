@@ -1,6 +1,6 @@
 ---
 title: Planning and getting started on the Windows Defender Application Control deployment process (Windows 10)
-description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Control, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
+description: Learn how to gather information, create a plan, and begin to test initial code integrity policies for a Windows Defender Application Control deployment. 
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -46,7 +46,7 @@ This topic provides a roadmap for planning and getting started on the Windows De
     
      Legitimate applications from trusted vendors provide valid functionality. However, an attacker could also potentially use that same functionality to run malicious executable code that could bypass WDAC.
 
-     For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your WDAC policies. Other applications where older versions of the application had vulnerabilities also represent a risk. Therefore, you may want to deny or block such applications from your WDAC policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
+     For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your WDAC policies. Other applications, where older versions of the application had vulnerabilities, also represent a risk. Therefore, you may want to deny or block such applications from your WDAC policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
 
      Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Windows Defender Application Control. Depending on the context, you may want to block these applications. To view this list of applications and for use case examples, such as disabling msbuild.exe, see [Microsoft recommended block rules](microsoft-recommended-block-rules.md).
 

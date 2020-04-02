@@ -17,13 +17,15 @@ ms.topic: article
 
 # Monitor Windows Updates with Update Compliance
 
->[!IMPORTANT]
->The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
-
+> [!IMPORTANT]
+> While [Windows Analytics was retired on January 31, 2020](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), support for Update Compliance has continued through the Azure Portal; however, please note the following updates:
+>
+> * On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to review malware definition status and manage and monitor malware attacks with Microsoft Endpoint Manager's [Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune). Configuration Manager customers can monitor Endpoint Protection with [Endpoint Protection in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
+> * The Perspectives feature of Update Compliance will also be removed on March 31, 2020 in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
 
 ## Introduction
 
-Update Compliance is a [Windows Analytics solution](windows-analytics-overview.md) that enables organizations to:
+Update Compliance enables organizations to:
 
 * Monitor security, quality, and feature updates for Windows 10 Professional, Education, and Enterprise editions.
 * View a report of device and update issues related to compliance that need attention.
@@ -48,8 +50,8 @@ The Update Compliance architecture and data flow follows this process:
 4. Diagnostic data is available in the Update Compliance solution.
 
 
->[!NOTE]
->This process assumes that Windows diagnostic data is enabled and data sharing is enabled as outlined in the enrollment section of [Get started with Update Compliance](update-compliance-get-started.md).
+> [!NOTE]
+> This process assumes that Windows diagnostic data is enabled and data sharing is enabled as outlined in the enrollment section of [Get started with Update Compliance](update-compliance-get-started.md).
 
 
 

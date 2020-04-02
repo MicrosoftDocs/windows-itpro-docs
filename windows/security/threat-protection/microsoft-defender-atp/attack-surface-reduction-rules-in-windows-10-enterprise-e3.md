@@ -9,11 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
+author: denisebmsft
+ms.author: deniseb
 ms.date: 10/15/2018
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
 ---
 
 # Use attack surface reduction rules in Windows 10 Enterprise E3
@@ -42,7 +43,7 @@ The limited subset of rules that can be used in Windows 10 Enterprise E3 include
 - Block process creations originating from PSExec and WMI commands
 - Block untrusted and unsigned processes that run from USB
 
-For more information about these rules, see [Reduce attack surfaces with attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard).
+For more information about these rules, see [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md).
 
  ## Related topics
 

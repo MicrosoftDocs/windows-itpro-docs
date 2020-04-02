@@ -127,15 +127,23 @@ h. Select  **Manage > Assignments**. In the  **Include**  tab, select  *
 
 ## Enable the Insider program manually on a single machine
 
-In the command prompt, run:
+In terminal, run:
 
 ```bash
     mdatp --edr --early-preview true
  ```
 
+For versions earlier than 100.78.0, run:
+
+```bash
+    mdatp --edr --earlyPreview true
+```
+
 ## Troubleshooting
 
 ### Verify you are running the correct version
+
+To get the latest version of the Microsoft Defender ATP for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
 To verify you are running the correct version, run ‘mdatp --health’ on the machine.
 

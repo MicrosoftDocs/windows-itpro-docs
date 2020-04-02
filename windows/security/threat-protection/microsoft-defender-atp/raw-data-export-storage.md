@@ -1,5 +1,5 @@
 ---
-title: Stream Microsoft Defender Advanced Threat Protection events. 
+title: Stream Microsoft Defender Advanced Threat Protection events to your Storage account
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Storage account.
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
@@ -64,6 +64,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 - Each blob contains multiple rows.
 - Each row contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 - For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the machine. Here every event will be decorated with this column as well. See [Machine Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
 
