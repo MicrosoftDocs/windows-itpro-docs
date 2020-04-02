@@ -25,7 +25,7 @@ ms.topic: article
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server, 2019
+- Windows Server, 2019 and later
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -38,7 +38,7 @@ The service supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server 2019
+- Windows Server 2019 and later
 
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
