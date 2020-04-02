@@ -48,7 +48,7 @@ Access the Security recommendations page a few different ways:
 - Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
 - Top security recommendations in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 
-View related security recommendations in the following pages:
+View related security recommendations in the following places:
 
 - Software page
 - Machine page

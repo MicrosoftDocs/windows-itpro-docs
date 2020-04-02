@@ -29,13 +29,6 @@ Threat & Vulnerability Management leverages the same signals in Microsoft Defend
 
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights.
 
-You can access the list of vulnerabilities in a few places in the portal:
-
-- Global search
-- Weaknesses option in the navigation menu
-- Top vulnerable software widget in the dashboard
-- Discovered vulnerabilities page in the machine page
-
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
 >- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
@@ -45,7 +38,23 @@ You can access the list of vulnerabilities in a few places in the portal:
 
 ## Navigate to the Weaknesses page
 
-When new vulnerabilities are released, you can find out how many of your assets are exposed in the **Weaknesses** page of the Threat & Vulnerability Management navigation menu. If the **Exposed Machines** column shows 0, that means you are not at risk. If exposed machines exist, the next step is to remediate the vulnerabilities in those machines to reduce the risk to your assets and organization.
+Access the Weaknesses page a few different ways:
+
+- Selecting **Weaknesses** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Global search
+
+### Vulnerabilities in global search
+
+1. Go to the global search drop-down menu.
+2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
+![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
+3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates.
+
+To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
+
+## Weaknesses overview
+
+If the **Exposed Machines** column shows 0, that means you are not at risk. If exposed machines exist, the next step is to remediate the vulnerabilities in those machines to reduce the risk to your assets and organization.
 
 ![tvm-breach-insights](images/tvm-weaknesses-overview.png)
 
@@ -63,66 +72,44 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 ![tvm-threat-insights](images/tvm-threat-insights.png)
 
+## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
-
-## Vulnerabilities in global search
-
-1. Go to the global search drop-down menu.
-2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
-![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates.
-
-To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
-
-## Top vulnerable software in the dashboard
+### Top vulnerable software in the dashboard
 
 1. Go to the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
 ![top vulnerable software card](images/tvm-top-vulnerable-software500.png)
 2. Select the software that you want to investigate to go a drill down page.
 3. Select the **Discovered vulnerabilities** tab.
-4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+4. Select the vulnerability that you want to investigate. A flyout panel will appear with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
 ![Windows server drill down overview](images/windows-server-drilldown.png)
 
-## Discover vulnerabilities in the machine page
+### Discover vulnerabilities in the machine page
 
-1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens.
-2. In the **Machines list** page, select the machine name that you want to investigate. 
+View related weaknesses information in the machine page.
+
+1. Go to the Microsoft Defender Security Center navigation menu bar, then select the machine icon. The **Machines list** page opens.
+2. In the **Machines list** page, select the machine name that you want to investigate.
 <br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
-3. The machine page will open with details and response options for the machine you want to investigate. 
+3. The machine page will open with details and response options for the machine you want to investigate.
 4. Select **Discovered vulnerabilities**.
 <br>![Screenshot of the machine page with details and response options](images/tvm-discovered-vulnerabilities.png)</br>
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
-### CVE Detection logic
+#### CVE Detection logic
 
 Similar to the software evidence, we now show the detection logic we applied on a machine in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the machine page) that shows the detection logic and source.
 
 ![Screenshot of the machine page with details and response options](images/cve-detection-logic.png)
 
-
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate, missing, or already remediated vulnerability information in the machine page.
+You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated security recommendation information.
 
-1. Select the **Discovered vulnerabilities** tab.
-
-2. Click **:** beside the vulnerability that you want to report about, and then select **Report inaccuracy**.
-![Screenshot of Report inaccuracy control from the machine page in the Discovered vulnerabilities tab](images/tvm_report_inaccuracy_vuln.png)
-<br>A flyout pane opens.</br>
-![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_vulnflyout.png)
-
-3. From the flyout pane, select the inaccuracy category from the **Discovered vulnerability inaccuracy reason** drop-down menu.
-<br>![Screenshot of discovered vulnerability inaccuracy reason drop-down menu](images/tvm_report_inaccuracy_vulnoptions.png)</br>
-
-4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
-
-5. Include your machine name for investigation context.
-
-    > [!NOTE]
-    > You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context.
-
-6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
+1. Open the CVE on the Weaknesses page.
+2. Select **Report inaccuracy**.
+3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
+4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 
 ## Related topics
 
