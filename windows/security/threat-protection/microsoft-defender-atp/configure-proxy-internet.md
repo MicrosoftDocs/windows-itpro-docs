@@ -38,8 +38,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   - Transparent proxy
   - Web Proxy Auto-discovery Protocol (WPAD)
 
-> [!NOTE]
-> If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+    > [!NOTE]
+    > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 - Manual static proxy configuration:
   - Registry based configuration
@@ -119,6 +119,16 @@ United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.bl
 > If you are using Windows Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Windows Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+
+### Log analytics agent requirements
+
+The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
+
+|Agent Resource|Ports |Direction |Bypass HTTPS inspection|
+|------|---------|--------|--------|   
+|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.blob.core.windows.net |Port 443 |Outbound|Yes |  
 
 ## Microsoft Defender ATP service backend IP range
 

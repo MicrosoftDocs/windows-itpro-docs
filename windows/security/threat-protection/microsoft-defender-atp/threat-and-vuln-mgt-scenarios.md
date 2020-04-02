@@ -27,6 +27,16 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## APIs
+
+Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
+
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
+
 ## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit
 
 1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
@@ -84,16 +94,6 @@ To view a list of version that have reached end of support, or end or support so
 ![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
-
-## Use APIs
-
-Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
-
-- [Machine APIs](machine.md)
-- [Recommendation APIs](vulnerability.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
 
 ## Related topics
 

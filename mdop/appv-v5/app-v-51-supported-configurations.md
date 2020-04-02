@@ -117,6 +117,12 @@ The following table lists the SQL Server versions that are supported for the App
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2019</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
@@ -145,7 +151,7 @@ The following table lists the SQL Server versions that are supported for the App
 </tbody>
 </table>
 
- 
+For more information on user configuration files with SQL server 2016 or later, see the [support article](https://support.microsoft.com/help/4548751/app-v-server-publishing-might-fail-when-you-apply-user-configuration-f).
 
 ### Publishing server operating system requirements
 
