@@ -58,5 +58,6 @@ The Update Compliance architecture and data flow follows this process:
  
 ## Related topics
 
-[Get started with Update Compliance](update-compliance-get-started.md)<BR>
-[Use Update Compliance to monitor Windows Updates](update-compliance-using.md)
+* [Get started with Update Compliance](update-compliance-get-started.md)
+* [Use Update Compliance to monitor Windows Updates](update-compliance-using.md)
+* [Update Compliance Schema Reference](update-compliance-schema.md)
