@@ -103,7 +103,7 @@ Cortana can help you do all kinds of things on your HoloLens, but depending on w
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
-Here are some things you can try saying (remember to say "Hey Cortana" first). 
+Here are some things you can try saying (remember to say "Hey Cortana" first).
 
 **Hey, Cortana**...
 
