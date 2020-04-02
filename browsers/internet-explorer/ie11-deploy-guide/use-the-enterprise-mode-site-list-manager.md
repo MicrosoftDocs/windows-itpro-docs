@@ -26,7 +26,7 @@ ms.date: 12/04/2017
 -   Windows Server 2012 R2
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
-Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 8 or Windows Internet Explorer 7, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
+Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that's designed to emulate either Windows Internet Explorer 8 or Windows Internet Explorer 7, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
 
 You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
@@ -55,6 +55,7 @@ The following topics give you more information about the things that you can do 
 |[Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](import-into-the-enterprise-mode-site-list-manager.md) |How to import your site list to replace a corrupted or out-of-date list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager](delete-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete a website from your site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager](remove-all-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete all of the websites in a site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
+| [Review neutral sites for Internet Explorer mode using the Enterprise Mode Site List Manager](review-neutral-sites-with-site-list-manager.md)|How to flag sites listed as neutral, to ensure that they are intentional and not a result of schema conversion.<p> This topic applies to the latest version of the Enterprise Mode Site List Manager.
 
 ## Related topics
 
