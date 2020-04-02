@@ -233,7 +233,7 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 1. Disk validation is performed.
 2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
 3. UEFI boot files are installed to the ESP.
-4. GPT metatdata and layout information is applied.
+4. GPT metadata and layout information is applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
