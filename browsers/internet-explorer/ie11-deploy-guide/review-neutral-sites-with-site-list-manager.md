@@ -33,11 +33,13 @@ While converting your site from v.1 schema to v.2 schema using the latest versio
 
 The Enterprise Mode Site List Manager provides the ability to flag sites that are listed as neutral sites, but may have been added in error. This check is automatically performed When you are converting from v.1 to v.2 through the tool. This check might flag sites even if there was no prior schema conversion. 
 
+## Flag neutral sites
 
 To identify neutral sites to review:
 1.	In the Enterprise Mode Site List Manager (schema v.2), click **File > Flag neutral sites**
 2.	If selecting this option has no effect, there are no sites that needs to be reviewed. Otherwise, you will see a message **"Engine neutral sites flagged for review"**. When a site is flagged, you can assess if the site needs to be removed entirely, or if it needs the open-in attribute changed from None to MSEdge.
 3.	If you believe that a flagged site is correctly configured, you can edit the site entry and click on **"Clear Flag"**. Once you select that option for a site, it will not be flagged again.
+
 
 
 
