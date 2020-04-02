@@ -46,21 +46,23 @@ A multi-app kiosk displays the start menu when the user signs in to the device. 
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-| &nbsp; |Start menu/pins panel |Quick Actions menu |Camera and video |Miracast |Cortana |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|Single-app kiosk |No |No |No<sup>1</sup> |No |No<sup>1, </sup><sup>2</sup> |
-|Multi-app kiosk |Yes |Yes<sup>1</sup> |Yes<sup>1</sup> |Yes<sup>1</sup> |Yes<sup>1</sup> |
-><sup>1</sup> For more information about how to configure these features, see [Select kiosk apps](#select-kiosk-apps).  
-><sup>2</sup> Even if Cortana is disabled, the built-in voice commands are available.
+| &nbsp; |Start menu/pins panel |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Single-app kiosk |Disabled |Disabled   |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
+|Multi-app kiosk  |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
-The following table lists the user capabilities in the different kiosk modes.
+> <sup>1</sup> Voice commands that relate to disabled features do not function.
+> <sup>2</sup> For more information about how to configure these features, see [Select kiosk apps](#select-kiosk-apps).  
+> <sup>3</sup> Even if Cortana is disabled, the built-in voice commands are enabled.
+
+The following table lists the user support features of the different kiosk modes.
 
 | &nbsp; |Supported user types | Automatic sign-in | Multiple access levels |
 | --- | --- | --- | --- |
 |Single-app kiosk |Managed Service Account (MSA) in Azure Active Directory (AAD) or local account |Yes |No |
 |Multi-app kiosk |AAD account |No |Yes |
 
-For a better idea of how to use these capabilities, see the following table:
+For examples of how to use these capabilities, see the following table.
 
 |Use a single-app kiosk for: |Use a multi-app kiosk for: |
 | --- | --- |
@@ -71,67 +73,56 @@ For a better idea of how to use these capabilities, see the following table:
 
 For general information about selecting kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
 
-If you use an MDM system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications. If you use the Windows Device Portal to configure kiosk mode, you select the app to run during the setup process.
+If you use the Windows Device Portal to configure a single-app kiosk, you select the app during the setup process.
 
-
-
-While camera and video voice commands and UI are disabled by default the button
-
-
-
-For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
-[Windows Holographic for Business device settings to run as a kiosk in Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic)
-
-[Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings)
-
-
-To enable the camera, device picker, or Miracast on the system menu include the AUMIDs below in your Multi-app kiosk.
-Also while enabling the camera allows on to take pictures or video, you may also wish to include a method of interacting or retrieving your pictures, such as Photos, Mail, or OneDrive.
-
-> [!NOTE]  
-> When you configure assigned access to associate users with specific apps, use the following [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app):
->  
-> - **Camera app AUMID**: `HoloCamera_cw5n1h2txyewy!HoloCamera`
-> - **Device picker app AUMID**: `HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow`
-> For general information about using AUMIDs, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
-
+If you use an MDM system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications.
 
 > [!WARNING]  
-> The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy). A factory reset is needed to clear all the policies enforced via assigned access.
+> The assigned access feature that enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide. These policies impact other users on the device.  
 >  
-> Be aware that voice commands are enabled for kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app.
+> Deleting the multi-app configuration removes the user lockdown profiles that the assigned access feature put in place. However, it does not revert all of the policy changes. 
+To revert these policies, you have to reset the device to the factory settings.
 
-- You cannot select the Shell app as a kiosk app.
+[the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy). 
 
-- You can select Cortana as a kiosk app.
-- To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
-- While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours.
+
 
 > [!CAUTION]
-> We recommend that you do **not** select the Microsoft Edge, Microsoft Store, or the File Explorer app as a kiosk app.
+> You cannot select the Shell app as a kiosk app. In addition, we recommend that you do **not** select the Microsoft Edge, Microsoft Store, or the File Explorer app as kiosk apps.  
 
+[Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app):
 In-box apps you may wish to use are:
 
 | App Name                   | AUMID                                                                            |
 |----------------------------|----------------------------------------------------------------------------------|
 | 3D Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer            |
 | Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar |
-| Camera                     | HoloCamera_cw5n1h2txyewy!HoloCamera                                              |
-| Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe!App                                        |
+| Camera<sup>1, 2</sup>         | HoloCamera_cw5n1h2txyewy!HoloCamera                                              |
+| Cortana<sup>2</sup>        | Microsoft.549981C3F5F10_8wekyb3d8bbwe!App                                        |
 | Device Picker              | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                                    |
 | Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides                       |
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist             |
 | Feedback Hub               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                                   |
 | Mail                       | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App                           |
+| Miracast<sup>3</sup>       |                                   |
 | Movies & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo                            |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe!App                                    |
 | Photos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe!App                                       |
 | Settings                   | HolographicSystemSettings_cw5n1h2txyewy!App                                      |
 | Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe!HoloLensTips                                |
 
+> <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
+> <sup>2</sup> When you enable the Camera app, be aware of the following:
+> - The Quick Actions menu includes the Photo and Video buttons.
+> - You should also enable an app that can interact with or retrieve pictures (such as Photos, Mail, or OneDrive).  
+>  
+> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled.
+> <sup>4</sup> To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
 
 
-### [MDM] 3. Assign the policy to the group to receive the policy
+While camera and video voice commands and UI are disabled by default the button
+
+[MDM] 3. Assign the policy to the group to receive the policy
 
 Once you have created and saved your Kiosk mode policy you must assign it to the group(s) that you want it deployed to, or your devices will never receive it.
 
@@ -182,6 +173,10 @@ There is an important distinction between the **User logon type** and the **Assi
 
 ### Select a deployment method
 
+
+While Kiosk mode adds several restrictions, we suggest also considering additional policies such as turning off USB connectivity, or checking your flight ring settings to set when automatic updates occur as to not happen during business hours.
+
+
 What are you deploying:
 
 - Single-app kiosk
@@ -211,6 +206,12 @@ The following table lists the capabilities and benefits of each of the three dep
 |Deploy automatically      | No            | No                   | Yes  |
 |Deployment speed            | Fastest       | Fast                 | Slow |
 |Deploy at scale | Not recommended    | Not recommended        | Recommended |
+
+
+For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
+[Windows Holographic for Business device settings to run as a kiosk in Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic)
+
+[Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings)
 
 ### Create a kiosk configuration XML file
 
