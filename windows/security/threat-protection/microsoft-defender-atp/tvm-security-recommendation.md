@@ -31,7 +31,7 @@ Cybersecurity weaknesses identified in your organization are mapped to actionabl
 
 Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and Microsoft Endpoint Configuration Manager. When the threat landscape changes, the recommendation also changes as it continuously collects information from your environment.
 
-## Criteria
+## How it works
 
 Each machine in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
 
@@ -41,9 +41,17 @@ Each machine in the organization is scored based on three important factors to h
 
 - **Business value** - Your organization's assets, critical processes, and intellectual properties
 
-## Navigate to security recommendations
+## Navigate to the Security recommendations page
 
-You can access security recommendations from the Microsoft Defender ATP Threat & Vulnerability Management navigation menu, dashboard, software page, and machine page.
+Access the Security recommendations page a few different ways:
+
+- Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Top security recommendations in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+
+View related security recommendations in the following pages:
+
+- Software page
+- Machine page
 
 ### Navigation menu
 

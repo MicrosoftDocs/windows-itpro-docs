@@ -32,7 +32,10 @@ Lower your organization's exposure from vulnerabilities and increase your securi
 
 ## Navigate to the Remediation page
 
-You can access the remediation page though the navigation menu, and top remediation activities in the dashboard.
+You can access the Remediation page though the following ways:
+
+- Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Top remediation activities card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 
 ### Navigation menu
 
@@ -42,6 +45,8 @@ Go to the Threat & Vulnerability Management navigation menu and select **Remedia
 ### Top remediation activities in the dashboard
 
 View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
+
+![Screenshot of the remediation page flyout for a software which reached end-of-support](images/tvm-remediation-activities-card.png)
 
 ## Remediation activities
 

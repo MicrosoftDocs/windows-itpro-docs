@@ -27,36 +27,46 @@ ms.topic: conceptual
 
 Microsoft Defender ATP Threat & Vulnerability management's discovery capability shows in the **Software inventory** page. The software inventory includes the name of the product or vendor, the latest version it is in, and the number of weaknesses and vulnerabilities detected with it.
 
-## Navigate through your software inventory
-
-1. Select **Software inventory** from the Threat & Vulnerability management navigation menu. The **Software inventory** page opens with a list of software installed in your network, vendor name, weaknesses found, threats associated with them, exposed machines, impact to exposure score, tags. You can also filter the software inventory list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
-![Screenshot of software inventory page](images/software_inventory_filter.png) 
-
-2. In the **Software inventory** page, select the software that you want to investigate and a flyout panel opens up with the same details mentioned above but in a more compact view. You can either dive deeper into the investigation and select **Open software page** or flag any technical inconsistencies by selecting **Report inaccuracy**.
-
-3. Select **Open software page** to dive deeper into your software inventory to see how many weaknesses are discovered in the software, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
-
 ## How it works
 
 In the field of discovery, we are leveraging the same set of signals in Microsoft Defender ATP's endpoint detection and response that's responsible for detection, for vulnerability assessment.
 
 Since it is real-time, in a matter of minutes, you will see vulnerability information as they get discovered. The engine automatically grabs information from multiple security feeds. In fact, you'll will see if a particular software is connected to a live threat campaign. It also provides a link to a Threat Analytics report soon as it's available.
 
+## Navigate to the Software inventory page
+
+You can access the Software inventory page by selecting **Software inventory** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+
+## Software inventory overview
+
+The **Software inventory** page opens with a list of software installed in your network, vendor name, weaknesses found, threats associated with them, exposed machines, impact to exposure score, and tags. You can also filter the software inventory list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
+![Screenshot of software inventory page](images/software_inventory_filter.png)
+
+Select the software that you want to investigate and a flyout panel opens up with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page** or flag any technical inconsistencies by selecting **Report inaccuracy**.
+
+![Screenshot of software inventory flyout](images/tvm-software-inventory-flyout500.png)
+
+## Software pages
+
+Select **Open software page** from the software flyout panel to view all the details of a specific software.
+
+The side panel 
+
+to see how many weaknesses are discovered in the software, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
+
+![Screenshot of software inventory flyout](images/tvm-software-page-example.png)
+
 ## Report inaccuracy
 
 You can report a false positive when you see any vague, inaccurate version, incomplete, or already remediated software inventory information in the machine page.
 
-1. Select one of the software rows. A flyout will appear.
+1. Select **Report inaccuracy** from the software flyout panel
 
-2. Select "Report inaccuracy" in the flyout
+2. Select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 
-![Screenshot of Report inaccuracy control](images/software-inventory-report-inaccuracy500.png)
-
-3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
+3. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 
 ![Screenshot of Report inaccuracy flyout pane](images/report-inaccuracy-flyout500.png)
-
-4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 
 ## Related topics
 
