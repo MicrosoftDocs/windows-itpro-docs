@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo, cinglis-msft
-ms.author: jaimeo, cinglis-msft
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -20,8 +20,8 @@ ms.topic: article
 This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 
 1. Ensure you can [meet the requirements](#update-compliance-prerequisites) to use Update Compliance.
-2. [Add Update Compliance](#update-compliance-get-started-configure-azure.md) to your Azure subscription.
-3. [Configure devices](#update-compliance-get-started-configure-devices.md) to send data to Update Compliance.
+2. [Add Update Compliance](#add-update-compliance-to-your-azure-subscription) to your Azure subscription.
+3. [Configure devices](#enroll-devices-in-update-compliance) to send data to Update Compliance.
 
 After adding the solution to Azure and configuring devices, there will be a waiting period of up to 72 hours before you can begin to see devices in the solution. Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
 
@@ -33,7 +33,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 2. **Compatible Windows 10 Servicing Channels**: Update Compliance supports Windows 10 devices on the Semi-Annual Channel (SAC) and the Long-term Servicing Channel (LTSC). Update Compliance *counts* Windows Insider Preview (WIP) devices, but does not currently provide detailed deployment insights for them.
 3. **Diagnostic data requirements**: Update Compliance requires devices be configured to send diagnostic data at *Required* level (previously *Basic*). To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy).
 4. **Data transmission requirements**: Devices must be able to contact specific endpoints required to authenticate and send diagnostic data. These are enumerated in detail at [Configuring Devices for Update Compliance manually](update-compliance-configuration-manual.md).
-5. **Showing Device Names in Update Compliance**: For Windows 10 1803+, device names will not appear in Update Compliance unless you individually opt-in devices via policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-get-started-configured-devices.md).
+5. **Showing Device Names in Update Compliance**: For Windows 10 1803+, device names will not appear in Update Compliance unless you individually opt-in devices via policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
 
 ## Add Update Compliance to your Azure subscription
 

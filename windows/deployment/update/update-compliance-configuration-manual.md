@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo, cinglis-msft
-ms.author: jaimeo, cinglis-msft
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -23,7 +23,7 @@ The requirements are separated into different categories:
 
 1. Ensuring the [**required policies**](#required-policies) for Update Compliance are correctly configured.
 2. Devices in every network topography needs to send data to the [**required endpoints**](#required-endpoints) for Update Compliance, for example both devices in main and satellite offices, which may have different network configurations.
-3. Ensure [**Required Windows services**](#required-windows-services) are running or are scheduled to run. It is recommended all Microsoft and Windows services are not disabled in order to ensure Update Compliance can function.
+3. Ensure [**Required Windows services**](#required-services) are running or are scheduled to run. It is recommended all Microsoft and Windows services are set to their out-of-box defaults to ensure proper functionality.
 
 ## Required policies
 
