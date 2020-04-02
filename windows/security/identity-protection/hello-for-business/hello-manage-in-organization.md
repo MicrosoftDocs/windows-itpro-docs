@@ -15,7 +15,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/18/2017
+ms.date: 4/2/2020
 ---
 
 # Manage Windows Hello for Business in your organization
@@ -34,21 +34,23 @@ You can create a Group Policy or mobile device management (MDM) policy that will
  
 ## Group Policy settings for Windows Hello for Business
 
-The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
+The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
 > [!NOTE]
 > Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
- 
+
 <table>
 <tr>
 <th colspan="2">Policy</th>
+<th>Scope</th>
 <th>Options</th>
 </tr>
 <tr>
 <td>Use Windows Hello for Business</td>
 <td></td>
+<td>Computer or user</td>
 <td>
-<p><b>Not configured</b>: Users can provision Windows Hello for Business, which encrypts their domain password.</p>
+<p><b>Not configured</b>: Device does not provision Windows Hello for Business for any user.</p>
 <p><b>Enabled</b>: Device provisions Windows Hello for Business using keys or certificates for all users.</p>
 <p><b>Disabled</b>: Device does not provision Windows Hello for Business for any user.</p>
 </td>
@@ -56,15 +58,37 @@ The following table lists the Group Policy settings that you can configure for W
 <tr>
 <td>Use a hardware security device</td>
 <td></td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-<p><b>Enabled</b>: Windows Hello for Business will only be provisioned using TPM.</p>
+<p><b>Enabled</b>: Windows Hello for Business will only be provisioned using TPM. This feature will provision Windows Hello for Business using TPM 1.2 unless the option to exclude them is explicitly set.</p>
 <p><b>Disabled</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
+</td>
+</tr>
+<tr>
+<td>Use certificate for on-premises authentication</td>
+<td></td>
+<td>Computer or user</td>
+<td>
+<p><b>Not configured</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.</p>
+<p><b>Enabled</b>: Windows Hello for Business enrolls a sign-in certificate using ADFS that is used for on-premises authentication.</p>
+<p><b>Disabled</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.</p>
+</td>
+</tr>
+<td>Use PIN recovery</td>
+<td></td>
+<td>Computer</td>
+<td>
+<p>Added in Windows 10, version 1703</p>
+<p><b>Not configured</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
+<p><b>Enabled</b>: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
+<p><b>Disabled</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
 </td>
 </tr>
 <tr>
 <td>Use biometrics</td>
 <td></td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Biometrics can be used as a gesture in place of a PIN.</p>
 <p><b>Enabled</b>: Biometrics can be used as a gesture in place of a PIN.</p>
@@ -74,6 +98,7 @@ The following table lists the Group Policy settings that you can configure for W
 <tr>
 <td rowspan="8">PIN Complexity</td>
 <td>Require digits</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Users must include a digit in their PIN.</p>
 <p><b>Enabled</b>: Users must include a digit in their PIN.</p>
@@ -82,6 +107,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Require lowercase letters</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Users cannot use lowercase letters in their PIN.</p>
 <p><b>Enabled</b>: Users must include at least one lowercase letter in their PIN.</p>
@@ -90,6 +116,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Maximum PIN length</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: PIN length must be less than or equal to 127.</p>
 <p><b>Enabled</b>: PIN length must be less than or equal to the number you specify.</p>
@@ -98,6 +125,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Minimum PIN length</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: PIN length must be greater  than or equal to 4.</p>
 <p><b>Enabled</b>: PIN length must be greater than or equal to the number you specify.</p>
@@ -106,6 +134,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Expiration</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: PIN does not expire.</p>
 <p><b>Enabled</b>: PIN can be set to expire after any number of days between 1 and 730, or PIN can be set to never expire by setting policy to 0.</p>
@@ -114,6 +143,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>History</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Previous PINs are not stored.</p>
 <p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can&#39;t be reused.</p>
@@ -124,6 +154,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Require special characters</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Users cannot include a special character in their PIN.</p>
 <p><b>Enabled</b>: Users must include at least one special character in their PIN.</p>
@@ -132,6 +163,7 @@ The following table lists the Group Policy settings that you can configure for W
 </tr>
 <tr>
 <td>Require uppercase letters</td>
+<td>Computer</td>
 <td>
 <p><b>Not configured</b>: Users cannot include an uppercase letter in their PIN.</p>
 <p><b>Enabled</b>: Users must include at least one uppercase letter in their PIN.</p>
@@ -139,9 +171,9 @@ The following table lists the Group Policy settings that you can configure for W
 </td>
 </tr>
 <tr>
-<td>&gt;Phone Sign-in</td>
-<td>
-<p>Use Phone Sign-in</p>
+<td>Phone Sign-in</td>
+<td>Use Phone Sign-in</td>
+<<td>Computer</td>
 </td>
 <td>
 <p>Not currently supported.</p>
@@ -154,7 +186,7 @@ The following table lists the Group Policy settings that you can configure for W
 The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkId=692070).
 
 >[!IMPORTANT]
->Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP. 
+>Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
 
 <table>
 <tr>
@@ -166,7 +198,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <tr>
 <td>UsePassportForWork</td>
 <td></td>
-<td>Device</td>
+<td>Device or user</td>
 <td>True</td>
 <td>
 <p>True: Windows Hello for Business will be provisioned for all users on the device.</p>
@@ -178,11 +210,33 @@ The following table lists the MDM policy settings that you can configure for Win
 <tr>
 <td>RequireSecurityDevice</td>
 <td></td>
-<td>Device</td>
+<td>Device or user</td>
 <td>False</td>
 <td>
 <p>True: Windows Hello for Business will only be provisioned using TPM.</p>
 <p>False: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
+</td>
+</tr>
+<tr>
+<td>Exclude Security Device</td>
+<td>TPM12</td>
+<td>Device</td>
+<td>False</td>
+<td>
+<p>Added in Windows 10, version 1703</p>
+<p>True: TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.</p>
+<p>False: TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.</p>
+</td>
+</tr>
+<tr>
+<td>EnablePinRecovery</td>
+<td></td>
+<td>Device or user</td>
+<td>False</td>
+<td>
+<p>Added in Windows 10, version 1703</p>
+<p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
+<p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
 </td>
 </tr>
 <tr>
@@ -252,7 +306,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>0</td>
 <td>
-<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user’s PIN will never expire. 
+<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user's PIN will never expire. 
 </p>
 </td>
 </tr>
@@ -261,7 +315,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>0</td>
 <td>
-<p>Integer value that specifies the number of past PINs that can be associated to a user account that can’t be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. 
+<p>Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. 
 </p>
 </td>
 </tr>
@@ -297,20 +351,50 @@ The following table lists the MDM policy settings that you can configure for Win
 </table>
 
 >[!NOTE]
-> If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
+> InWindows 10, version 1709 and later, if policy is not configured to explicitly require letters or special characters, users can optionally set an alphanumeric PIN. Prior to version 1709 the user is required to set a numeric PIN.
  
+## Policy conflicts from multiple policy sources
+
+Windows Hello for Business is designed to be managed by Group Policy or MDM but not a combination of both. If policies are set from both sources it can result in a mixed result of what is actually enforced for a user or device.
+
+Policies for Windows Hello for Business are enforced using the following hierarchy: User Group Policy > Computer Group Policy > User MDM > Device MDM > Device Lock policy. All PIN complexity policies are grouped together and enforced from a single policy source.
+
+Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies is enforced on a per policy basis.  
+
+><b>Examples</b>
+>
+>The following are configured using computer Group Policy:
+>
+>- Use Windows Hello for Business - Enabled
+>- User certificate for on-premises authentication - Enabled
+>- Require digits - Enabled
+>- Minimum PIN length - 6
+>
+>The following are configured using device MDM Policy:
+>
+>- UsePassportForWork - Disabled
+>- UseCertificateForOnPremAuth - Disabled
+>- MinimumPINLength - 8
+>- Digits - 1
+>- LowercaseLetters - 1
+>- SpecialCharacters - 1
+>
+>Enforced policy set:
+>
+>- Use Windows Hello for Business - Enabled
+>- Use certificate for on-premises authentication - Enabled
+>- Require digits - Enabled
+>- Minimum PIN length - 6
 
 ## How to use Windows Hello for Business with Azure Active Directory
 
-There are three scenarios for using Windows Hello for Business in Azure AD–only organizations: 
+There are three scenarios for using Windows Hello for Business in Azure AD–only organizations:
 
-- **Organizations that use the version of Azure AD included with Office 365**. For these organizations, no additional work is necessary. When Windows 10 was released to general availability, Microsoft changed the behavior of the Office 365 Azure AD stack. When a user selects the option to join a work or school network, the device is automatically joined to the Office 365 tenant’s directory partition, a certificate is issued for the device, and it becomes eligible for Office 365 MDM if the tenant has subscribed to that feature. In addition, the user will be prompted to log on and, if MFA is enabled, to enter an MFA proof that Azure AD sends to his or her phone. 
-- **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won’t be enabled unless and until the organization’s administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
+- **Organizations that use the version of Azure AD included with Office 365**. For these organizations, no additional work is necessary. When Windows 10 was released to general availability, Microsoft changed the behavior of the Office 365 Azure AD stack. When a user selects the option to join a work or school network, the device is automatically joined to the Office 365 tenant's directory partition, a certificate is issued for the device, and it becomes eligible for Office 365 MDM if the tenant has subscribed to that feature. In addition, the user will be prompted to log on and, if MFA is enabled, to enter an MFA proof that Azure AD sends to his or her phone.
+- **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won't be enabled unless and until the organization's administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
 - **Organizations that have subscribed to Azure AD Premium** have access to the full set of Azure AD MDM features. These features include controls to manage Windows Hello for Business. You can set policies to disable or force the use of Windows Hello for Business, require the use of a TPM, and control the length and strength of PINs set on the device.
 
-If you want to use Windows Hello for Business with certificates, you’ll need a device registration system. That means that you set up Configuration Manager, Microsoft Intune, or a compatible non-Microsoft MDM system and enable it to enroll devices. This is a prerequisite step to use Windows Hello for Business with certificates, no matter the IDP, because the enrollment system is responsible for provisioning the devices with the necessary certificates. 
-
-
+If you want to use Windows Hello for Business with certificates, you'll need a device registration system. That means that you set up Configuration Manager, Microsoft Intune, or a compatible non-Microsoft MDM system and enable it to enroll devices. This is a prerequisite step to use Windows Hello for Business with certificates, no matter the IDP, because the enrollment system is responsible for provisioning the devices with the necessary certificates.
 
 ## Related topics
 
