@@ -204,7 +204,7 @@
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 ##### [Deploy]()
 ###### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
@@ -225,6 +225,8 @@
 ##### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
+
+
 ### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
@@ -233,15 +235,18 @@
 
 #### [Update](microsoft-defender-atp/linux-updates.md)
 
+
 #### [Configure]()
 ##### [Configure and validate exclusions](microsoft-defender-atp/linux-exclusions.md)
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
-#### [Troubleshoot]()
+
+#### [Troubleshoot]()
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
 #### [Resources](microsoft-defender-atp/linux-resources.md)
+
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
