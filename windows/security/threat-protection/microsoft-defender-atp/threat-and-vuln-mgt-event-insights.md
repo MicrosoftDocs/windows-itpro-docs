@@ -40,8 +40,12 @@ You can reduce you exposure score by addressing what needs to be remediated base
 You can access Event insights mainly through three ways:
 
 - In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center.
-- Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - Top events card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
+- Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+
+### Top events card
+
+### Exposure score graph
 
 In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then no insights will be shown.
 
@@ -53,7 +57,7 @@ Selecting **Show all events from this day** will lead you to the Event insights 
 
 ## Event insights page
 
-On the Event insights page, you can view the date, event, related component, number of impacted machines, and type. You can also filter by type, or percent impacted machines.
+On the Event insights page, you can view the date, event, related component, number of impacted machines, and type. You can also filter by type, or percent of impacted machines.
 
 ![Event insights page](images/event-insights-page.png)
 
