@@ -132,6 +132,14 @@ This table provides info about the most common problems you might encounter whil
         <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
         </td>
     </tr>
+    <tr>
+        <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and are therefore not protected.
+        </td>
+        <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected. 
+        </td>
+        <td>It is recommended to use Microsoft Office Outlook in Online mode, or to use encryption to protect OST and PST files manually.
+        </td>
+    </tr>
 </table>
 
 > [!NOTE]
