@@ -1,9 +1,8 @@
 ---
 title: Windows as a service  
-ms.prod: windows-10
-layout: LandingPage  
+ms.prod: w10 
 ms.topic: landing-page
-ms.manager: elizapo
+ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
@@ -74,7 +73,6 @@ Learn more about Windows as a service and its value to your organization.
 
 <a href="waas-quick-start.md">Quick guide to Windows as a service</a>
 
-<a href="windows-analytics-overview.md">Windows Analytics overview</a>
 
 <a href="../deploy-whats-new.md">What's new in Windows 10 deployment</a>
 
@@ -118,7 +116,6 @@ Secure your organization's deployment investment.
 
 Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service.
 
-[BRK2417: What’s new in Windows Analytics: An Intro to Desktop Analytics](https://myignite.techcommunity.microsoft.com/sessions/64324#ignite-html-anchor)
 
 [BRK3018: Deploying Windows 10 in the enterprise using traditional and modern techniques](https://myignite.techcommunity.microsoft.com/sessions/64509#ignite-html-anchor)
 

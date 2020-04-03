@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 06/26/2017
+ms.date: 02/28/2020
 ---
 
 # CertificateStore CSP
@@ -144,7 +144,13 @@ Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) f
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectname"></a>**My/SCEP/*UniqueID*/Install/SubjectName**  
-Required. Specifies the subject name. Value type is chr.
+Required. Specifies the subject name. 
+
+The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
+
+For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+
+Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 

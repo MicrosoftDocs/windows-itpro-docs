@@ -1,6 +1,6 @@
 ---
 title: Microsoft Surface Dock Firmware Update
-description: This article explains how to use Microsoft Surface Dock Firmware Update, newly redesigned to update Surface Dock firmware while running in the background on your Surface device.
+description: This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device.
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -32,17 +32,19 @@ This section is optional and provides an overview of how to monitor installation
 To monitor the update:
 
 1. Open Event Viewer, browse to **Windows Logs > Application**, and then under **Actions** in the right-hand pane click **Filter Current Log**, enter **SurfaceDockFwUpdate** next to **Event sources**, and then click **OK**.
+
 2. Type the following command at an elevated command prompt:
 
-  ```cmd
-  Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
-  ```
+    ```cmd
+    Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
+    ```
 3. Install the update as described in the [next section](#install-the-surface-dock-firmware-update) of this article.
+
 4. Event 2007 with the following text indicates a successful update: **Firmware update finished. hr=0 DriverTelementry EventCode = 2007**. 
-  - If the update is not successful, then event ID 2007 will be displayed as an **Error** event rather than **Information**. Additionally, the version reported in the Windows Registry will not be current.
+    - If the update is not successful, then event ID 2007 will be displayed as an **Error** event rather than **Information**. Additionally, the version reported in the Windows Registry will not be current.
 5. When the update is complete, updated DWORD values will be displayed in the Windows Registry, corresponding to the current version of the tool. See the [Versions reference](#versions-reference) section in this article for details. For example:
-  - Component10CurrentFwVersion 0x04ac3970 (78395760)
-  - Component20CurrentFwVersion 0x04915a70 (76634736)
+    - Component10CurrentFwVersion 0x04ac3970 (78395760)
+    - Component20CurrentFwVersion 0x04915a70 (76634736)
 
 >[!TIP]
 >If you see "The description for Event ID xxxx from source SurfaceDockFwUpdate cannot be found" in event text, this is expected and can be ignored.
@@ -52,8 +54,8 @@ To monitor the update:
 This section describes how to install the firmware update.
 
 1. Download and install [Microsoft Surface Dock Firmware Update](https://www.microsoft.com/download/details.aspx?id=46703).
-  - The update requires a Surface device running Windows 10, version 1803 or later.
-  - Installing the MSI file might prompt you to restart Surface. However, restarting is not required to perform the update.
+    - The update requires a Surface device running Windows 10, version 1803 or later.
+    - Installing the MSI file might prompt you to restart Surface. However, restarting is not required to perform the update.
 
 2. Disconnect your Surface device from the Surface Dock (using the power adapter), wait ~5 seconds, and then reconnect. The Surface Dock Firmware Update will update the dock silently in background. The process can take a few minutes to complete and will continue even if interrupted. 
 
@@ -68,10 +70,10 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
   msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
   ```
 
-> [!NOTE]
-> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]". For example: Msiexec.exe /i \<path to msi file\> /l*v %windir%\logs\ SurfaceDockFWI.log"
+  > [!NOTE]
+  > A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]". For example: Msiexec.exe /i \<path to msi file\> /l*v %windir%\logs\ SurfaceDockFWI.log"
 
-For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
+  For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
 > [!IMPORTANT]
 > If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.
@@ -96,11 +98,11 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 1. Open Regedit and navigate to the following registry path:
 
-- **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
 
 2. Look for the registry keys: **Component10CurrentFwVersion and Component20CurrentFwVersion**, which refer to the firmware that is currently on the device.
 
- ![Surface Dock Firmware Update installation process](images/regeditDock.png)
+   ![Surface Dock Firmware Update installation process](images/regeditDock.png)
 
 3. Verify the new registry key values match the updated registry key values listed in the Versions reference at the end of this document. If the values match, the firmware was updated successfully.
 
