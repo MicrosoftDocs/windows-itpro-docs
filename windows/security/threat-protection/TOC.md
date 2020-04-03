@@ -205,26 +205,28 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
-#### [What's New](microsoft-defender-atp/mac-whatsnew.md)
-##### [Deploy]()
-###### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
-###### [JAMF-based deployment](microsoft-defender-atp/mac-install-with-jamf.md)
-###### [Deployment with a different Mobile Device Management (MDM) system](microsoft-defender-atp/mac-install-with-other-mdm.md)
-###### [Manual deployment](microsoft-defender-atp/mac-install-manually.md)
-##### [Update](microsoft-defender-atp/mac-updates.md)
-##### [Configure]()
-###### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
-###### [Set preferences](microsoft-defender-atp/mac-preferences.md)
-###### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
-##### [Troubleshoot]()
-###### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
-###### [Troubleshoot performance issues](microsoft-defender-atp/mac-support-perf.md)
-###### [Troubleshoot kernel extension issues](microsoft-defender-atp/mac-support-kext.md)
-###### [Troubleshoot license issues](microsoft-defender-atp/mac-support-license.md)
-##### [Privacy](microsoft-defender-atp/mac-privacy.md)
-##### [Resources](microsoft-defender-atp/mac-resources.md)
+#### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
+#### [Deploy]()
+##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
+##### [JAMF-based deployment](microsoft-defender-atp/mac-install-with-jamf.md)
+##### [Deployment with a different Mobile Device Management (MDM) system](microsoft-defender-atp/mac-install-with-other-mdm.md)
+##### [Manual deployment](microsoft-defender-atp/mac-install-manually.md)
+#### [Update](microsoft-defender-atp/mac-updates.md)
 
+#### [Configure]()
+##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
+##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
+##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
+
+#### [Troubleshoot]()
+##### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
+##### [Troubleshoot performance issues](microsoft-defender-atp/mac-support-perf.md)
+##### [Troubleshoot kernel extension issues](microsoft-defender-atp/mac-support-kext.md)
+##### [Troubleshoot license issues](microsoft-defender-atp/mac-support-license.md)
+
+#### [Privacy](microsoft-defender-atp/mac-privacy.md)
+#### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
