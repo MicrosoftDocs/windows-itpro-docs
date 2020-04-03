@@ -30,6 +30,11 @@ This article provides information about aspects of configuring kiosks that are s
 
 You can use kiosk mode in one of two configurations (single-app kiosk or multi-app kiosk), and you can use select one of three processes to set up and deploy the kiosk configuration.
 
+> [!WARNING]  
+> The assigned access feature that enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, [certain policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy) are enforced system-wide. These policies impact other users on the device.  
+>  
+> Deleting the multi-app configuration removes the user lockdown profiles that the assigned access feature put in place. However, it does not revert all of the policy changes. To revert these policies, you have to reset the device to the factory settings.
+
 ## Plan the kiosk deployment
 
 ### Kiosk mode requirements
@@ -69,42 +74,29 @@ For examples of how to use these capabilities, see the following table.
 |A device that runs only a guide for new hires. |A device that runs both guides and Remote Assist for a range of employees. |
 |A device that runs only a custom app. |A device that functions as a kiosk for the majority of users (running only a custom app), but functions as a normal device for a specific group of users. |
 
-### Select kiosk apps
+### Plan kiosk apps
 
 For general information about selecting kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
 
 If you use the Windows Device Portal to configure a single-app kiosk, you select the app during the setup process.
 
-If you use an MDM system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications.
-
-> [!WARNING]  
-> The assigned access feature that enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide. These policies impact other users on the device.  
->  
-> Deleting the multi-app configuration removes the user lockdown profiles that the assigned access feature put in place. However, it does not revert all of the policy changes. 
-To revert these policies, you have to reset the device to the factory settings.
-
-[the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy). 
-
-
+If you use an MDM system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications that you can use in a multi-app kiosk.
 
 > [!CAUTION]
 > You cannot select the Shell app as a kiosk app. In addition, we recommend that you do **not** select the Microsoft Edge, Microsoft Store, or the File Explorer app as kiosk apps.  
-
-[Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app):
-In-box apps you may wish to use are:
 
 | App Name                   | AUMID                                                                            |
 |----------------------------|----------------------------------------------------------------------------------|
 | 3D Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer            |
 | Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar |
 | Camera<sup>1, 2</sup>         | HoloCamera_cw5n1h2txyewy!HoloCamera                                              |
-| Cortana<sup>2</sup>        | Microsoft.549981C3F5F10_8wekyb3d8bbwe!App                                        |
+| Cortana<sup>3</sup>        | Microsoft.549981C3F5F10_8wekyb3d8bbwe!App                                        |
 | Device Picker              | HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow                                    |
 | Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides                       |
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist             |
 | Feedback Hub               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App                                   |
 | Mail                       | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App                           |
-| Miracast<sup>3</sup>       |                                   |
+| Miracast<sup>4</sup>       |                                   |
 | Movies & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo                            |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe!App                                    |
 | Photos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe!App                                       |
@@ -116,32 +108,8 @@ In-box apps you may wish to use are:
 > - The Quick Actions menu includes the Photo and Video buttons.
 > - You should also enable an app that can interact with or retrieve pictures (such as Photos, Mail, or OneDrive).  
 >  
-> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled.
+> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
 > <sup>4</sup> To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
-
-
-While camera and video voice commands and UI are disabled by default the button
-
-[MDM] 3. Assign the policy to the group to receive the policy
-
-Once you have created and saved your Kiosk mode policy you must assign it to the group(s) that you want it deployed to, or your devices will never receive it.
-
-Click assignments and add the group(s) that you want the Kiosk mode policy deployed to.
-
-> [!IMPORTANT]  
-> If two more or more different kiosk polices target a device they will conflict and the device will receive neither. Other policies such as device restrictions do not conflict with Kiosk mode or additional device restrictions.
-
-For more information on group type, and group assignments please visit [here](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-There is an important distinction between the **User logon type** and the **Assignments**. Assignments is how the deployment of the Kiosk to a device is determined. Once a Kiosk policy is on the device, it uses the User logon type to determine which users should be using the Kiosk.
-
-**Examples:**
-
-- You have a single group that you use for both logon type and assignments. Users A B and C are in both groups. No matter which user the device is first set up for they will join the tenant in this group and the kiosk policy will deploy. Also each user is in the group used for logon type so users A B and C will all experience the Kiosk.
-
-- You have an assignment group with users A, B and C in it. The group used for logon type is different with users B and C. Even if user A sets up the device and joins the tenant with the device the Kiosk policy will still deploy. Users B and C will still be logged in to the Kiosk, but user A can still log in if troubleshooting, changing of settings or any other need for full access to windows is needed.
-
-- You have devices you contract out to two different vendors. Instead of user groups you have device groups. Each device group needs a different Kiosk. Those devices when joined receive policy for their own respective Kiosk. The logon user group may include users from both sites, and thus each regional area's device would allow kiosks for both sets of users.
 
 ### Plan access control
 
