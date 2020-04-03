@@ -245,6 +245,7 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 
 #### [Troubleshoot]()
+##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
