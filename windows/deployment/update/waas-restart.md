@@ -1,15 +1,16 @@
 ---
 title: Manage device restarts after updates (Windows 10)
-description: tbd
+description: In this article, you'll learn how to schedule update installation and set policies for restart and configure active hours for when restarts should not occur.
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Manage device restarts after updates
