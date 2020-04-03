@@ -49,6 +49,7 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 |See available speech commands | "What can I say?" |
 
 Starting with version 19041.x of HoloLens 2, you can also use these commands:
+
 | Say this | To do this |
 | - | - |
 | "Restart device" | Bring up a dialogue to confirm you want to restart the device. You can say "yes" to restart. |
