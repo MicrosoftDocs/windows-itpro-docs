@@ -244,11 +244,11 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 
 #### [Troubleshoot]()
-##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
-##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
+##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
+##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
+
 
 #### [Resources](microsoft-defender-atp/linux-resources.md)
-
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
