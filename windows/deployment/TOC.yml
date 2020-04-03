@@ -7,6 +7,10 @@
           href: file1.md
         - name: What's new in Windows 10 deployment
           href: file1.md
+        - name: Windows 10 upgrade paths
+          href: file1.md
+        - name: Windows 10 edition upgrade
+          href: file1.md
         - name: Deployment tools and methods
           href: file1.md
         - name: Deployment process posters
@@ -32,8 +36,6 @@
               href: file1.md 
             - name: Windows 10 infrastructure requirements
               href: file1.md   
-            - name: Windows 10 volume license media
-              href: file1.md
             - name: Plan for volume activation
               href: file1.md 
             - name: Features removed or planned for replacement
@@ -111,8 +113,20 @@
         - name: Deploy Windows 10
           items:
             - name: Deploy Windows 10 with Autopilot
+              items:
+                - name: Windows Autopilot overview
             - name: Deploy Windows 10 with Configuration Manager
+              items:
+                - name: Deploy to a new device
+                - name: Refresh a device
+                - name: Replace a device
+                - name: In-place upgrade
             - name: Deploy Windows 10 with MDT
+              items:
+                - name: Deploy to a new device
+                - name: Refresh a device
+                - name: Replace a device
+                - name: In-place upgrade
         - name: Deploy Windows 10 updates
           items:
             - name: Deploy updates with Configuration Manager
@@ -122,9 +136,7 @@
 
     - name: Reference
       items:
-        - name: Windows 10 upgrade paths
-          href: file1.md
-        - name: Windows 10 edition upgrade
+        - name: Windows 10 volume license media
           href: file1.md
         - name: Deploy Windows 10 with Microsoft 365
           href: file1.md
