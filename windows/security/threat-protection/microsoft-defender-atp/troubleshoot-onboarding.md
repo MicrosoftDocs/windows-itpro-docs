@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
@@ -68,7 +68,7 @@ If the script fails and the event is an error, you can check the event ID in the
 Event ID | Error Type | Resolution steps
 :---|:---|:---
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
-10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
+10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.<br>Verify that the script has been run as an administrator.
 15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the machine is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
 15 | Failed to start SENSE service | If the message of the error is: System error 577  or error 1058 has occurred. You need to enable the Windows Defender Antivirus ELAM driver, see [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
@@ -79,7 +79,7 @@ Event ID | Error Type | Resolution steps
 ### Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
+If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment.
 
 Use the following tables to understand the possible causes of issues while onboarding:
 
@@ -87,7 +87,7 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.  
+If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.
 
 **Microsoft Intune error codes and OMA-URIs**:
 
@@ -140,7 +140,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
    > [!NOTE]
-	> SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
+   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
 
 3. Select **Operational** to load the log.
 
@@ -282,15 +282,15 @@ You might also need to check the following:
 
 - Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
-- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
+- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
     ![Image of Services](images/atp-services.png)
 
-- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running. 
+- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
     ![Image of Microsoft Monitoring Agent Properties](images/atp-mma-properties.png)
 
-- Check to see that machines are reflected in the **Machines list** in the portal. 
+- Check to see that machines are reflected in the **Machines list** in the portal.
 
 
 ## Licensing requirements
