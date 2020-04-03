@@ -228,7 +228,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
-#### [What's New](microsoft-defender-atp/mac-whatsnew.md)
+#### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
 ##### [Puppet based deployment](microsoft-defender-atp/linux-install-with-puppet.md)
