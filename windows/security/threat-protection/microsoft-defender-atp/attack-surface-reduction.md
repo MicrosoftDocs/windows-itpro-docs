@@ -273,9 +273,6 @@ GUID: 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 
 This rule blocks processes created through [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) and [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
 
-> [!IMPORTANT]
-> File and folder exclusions do not apply to this attack surface reduction rule.
-
 > [!WARNING]
 > Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
 
