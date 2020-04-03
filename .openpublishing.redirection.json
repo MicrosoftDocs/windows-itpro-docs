@@ -6232,6 +6232,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/update/update-compliance-wdav-status.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/update-compliance-using.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-using",
 "redirect_document_id": true

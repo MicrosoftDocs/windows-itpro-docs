@@ -49,7 +49,7 @@ Next, follow the guidance on the [How to configure hybrid Azure Active Directory
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
-3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. Configure Azure Device Registration (*You are here*)
 6. [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)
