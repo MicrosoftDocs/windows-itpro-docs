@@ -1,15 +1,16 @@
 ---
 title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
-description: tbd
+description: In this article, you will learn how to assign devices to servicing channels for updates in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Assign devices to servicing channels for Windows 10 updates
