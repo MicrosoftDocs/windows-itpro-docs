@@ -23,25 +23,28 @@ Update Compliance is fully committed to privacy, centering on these tenets:
 - **Security:** Your data is protected with strong security and encryption.
 - **Trust:** Update Compliance supports the Online Services Terms.
 
-
 ## Data flow for Update Compliance
+
 The data flow sequence is as follows:
 
 1. Diagnostic data is sent from devices to the Microsoft Diagnostic Data Management service, which is hosted in the US.
 2. An IT Administrator creates an Azure Log Analytics workspace. They then choose the location this workspace will store data and receives a Commercial ID for that workspace. The Commercial ID is added to each device in an organization by way of Group Policy, MDM or registry key.
-3. Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management Service, identifying devices by Commercial ID. 
+3. Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management Service, identifying devices by Commercial ID.
 4. These snapshots are copied to transient storage, used solely for Update Compliance where they are partitioned by Commercial ID.
-5. The snapshots are then copied to the appropriate Azure Log Analytics workspace, where the Update Compliance experience pulls the information from to populate visuals. 
+5. The snapshots are then copied to the appropriate Azure Log Analytics workspace, where the Update Compliance experience pulls the information from to populate visuals.
 
 ## FAQ
 
 ### Can Update Compliance be used without a direct client connection to the Microsoft Data Management Service?
+
 No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
 
 ### Can I choose the data center location?
+
 Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
 
 ## Related topics
+
 See related topics for additional background information on privacy and treatment of diagnostic data:
 
 - [Windows 10 and the GDPR for IT Decision Makers](https://docs.microsoft.com/windows/privacy/gdpr-it-guidance)
