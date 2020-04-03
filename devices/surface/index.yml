@@ -29,7 +29,7 @@ additionalContent:
           url: https://docs.microsoft.com/en-us/surface/get-started
         # Card
         - title: Surface Hub documentation
-          summary: Learn how to deploy and manage Surface Hub 2S, the all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Learn how to plan, deploy, manage, and support your Surface Hub devices.
+          summary: Learn how to deploy and manage Surface Hub 2S, the all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. 
           url: https://docs.microsoft.com/surface-hub/index
          # Card
         - title: Surface Hub adoption guidance
