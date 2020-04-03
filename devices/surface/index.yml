@@ -24,17 +24,13 @@ additionalContent:
     - title: For IT Professionals # < 60 chars (optional)
       items:
         # Card
-        - title: Surface devices
+        - title: Surface devices documentation
           summary: Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
           url: https://docs.microsoft.com/en-us/surface/get-started
         # Card
-        - title: Surface Hub
+        - title: Surface Hub documentation
           summary: Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Learn how to plan, deploy, manage, and support your Surface Hub devices.
           url: https://docs.microsoft.com/surface-hub/index
-        # Card
-        - title: Surface for Business
-          summary: Explore how Surface devices are transforming the modern workplace with people-centric design and flexible form factors, helping you get the most out of AI, big data, the cloud, and other foundational technologies.
-          url: https://www.microsoft.com/surface/business
     - title: Other resources # < 60 chars (optional)
       items:
         # Card
