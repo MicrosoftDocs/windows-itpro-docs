@@ -53,7 +53,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>WIP is designed for use by a single user per device.</td>
-        <td>A secondary user on a device might experience app compat issues when unenlightened apps start to automatically encrypt for all users. Additionally, only the initial, enrolled user’s content can be revoked during the unenrollment process.</td>
+        <td>A secondary user on a device might experience app compatibility issues when unenlightened apps start to automatically encrypt for all users. Additionally, only the initial, enrolled user’s content can be revoked during the unenrollment process.</td>
         <td>We recommend only having one user per managed device.</td>
     </tr>
     <tr>
@@ -121,12 +121,12 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Only enlightened apps can be managed without device enrollment
         </td>
-        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. This is by design to prevent personal files from being unintenionally encrypted by unenlighted apps. Unenlighted apps that need to access work using MAM need to be re-compiled as LOB apps or managed by using MDM with device enrollment.</td>
+        <td>If a user enrolls a device for Mobile Application Management (MAM) without device enrollment, only enlightened apps will be managed. This is by design to prevent personal files from being unintentionally encrypted by unenlighted apps. Unenlighted apps that need to access work using MAM need to be re-compiled as LOB apps or managed by using MDM with device enrollment.</td>
         <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
     <tr>
-        <td>By design, files in the Windows directory (%windir% or C:/Windows) cannot be encrypted because they need to be accessed by any user. If a file in the Windows directory gets encypted by one user, other users can&#39;t access it.<br/>        </td>
+        <td>By design, files in the Windows directory (%windir% or C:/Windows) cannot be encrypted because they need to be accessed by any user. If a file in the Windows directory gets encrypted by one user, other users can&#39;t access it.<br/>        </td>
         <td>Any attempt to encrypt a file in the Windows directory will return a file access denied error. But if you copy or drag and drop an encrypted file to the Windows directory, it will retain encryption to honor the intent of the owner. 
         </td>
         <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
