@@ -26,12 +26,36 @@ appliesto:
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+### Coming Soon
+
+**Dark mode for supported apps** 
+
+Many Windows apps support both dark and light modes, and soon HoloLens 2 customers can choose the default mode for apps that support both color schemes! Based on overwhelmingly positive customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
+Navigate to **Settings > System > Colors** to find **"Choose your default app mode."**
+
+Here are some of the in-box apps that support dark mode:
+- Settings
+- Microsoft Store
+- Mail
+- Calendar
+- File Explorer
+- Feedback Hub
+- OneDrive
+- Photos
+- 3D Viewer
+- Movies & TV
+
+**Improvements and fixes also in the update:** 
+- Ensure shell overlays are included in mixed reality captures.
+- Unreal developers are now able to use the 3D View page in Device Portal to test and debug their applications.
+- Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
+- Fixed WinRT IStreamSocketListener API Class Not Registered error on 32-bit ARM app.
+
 ### March Update - build 18362.1056
 
 - Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
 - Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
 - Developers productivity improvement by enabling customers to paste large amount of text through device portal.
-- Enables an app to query the depth camera pose and compute the location of each depth pixel in the world.
 
 ### February Update - build 18362.1053
 
