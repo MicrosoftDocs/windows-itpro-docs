@@ -39,6 +39,7 @@ System Model and System SKU are variables that are stored in the System Manageme
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
 | Surface Pro 6 Consumer                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
 | Surface Pro 6 Commercial                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
+| Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
 | Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
 | Surface Laptop 2 Commercial                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
