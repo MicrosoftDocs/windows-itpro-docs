@@ -1,4 +1,4 @@
-- name: Windows 10 deployment resources and documentation
+- name: Deploy and update Windows 10
   href: index.yml
   items: 
     - name: Get started
@@ -22,6 +22,47 @@
             - name: Deploy Windows 10 in a test lab using MDT
               href: file1.md
             - name: Deploy Windows 10 in a test lab using Configuration Manager
+              href: file1.md
+
+    - name: Prepare
+      items: 
+        - name: Prepare for Windows 10 deployment
+          items:
+            - name: Windows 10 compatibility
+              href: file1.md 
+            - name: Windows 10 infrastructure requirements
+              href: file1.md   
+            - name: Windows 10 volume license media
+              href: file1.md
+            - name: Plan for volume activation
+              href: file1.md 
+            - name: Features removed or planned for replacement
+              items:
+                - name: Windows 10 features lifecycle
+                  href: file1.md
+                - name: Features we're no longer developing
+                  href: file1.md
+                - name: Features we removed
+                  href: file1.md         
+        - name: Prepare your update strategy
+          items:
+            - name: Plan cloud management
+              items: 
+                - name: Designate rings, channels, and policies
+                  href: file1.md
+                - name: Chooose a delivery optimization strategy
+                  href: file1.md
+                - name: Choose a monitoring approach
+                  href: file1.md 
+                - name: Assess apps (new)
+                  items:
+                    - name: With Desktop Analytics
+                      href: file1.md
+                    - name: By other means (new)
+                      href: file1.md
+                - name: Other prep activities (new)
+                  href: file1.md
+            - name: Plan image-based management 
               href: file1.md
 
     - name: Plan
@@ -65,179 +106,19 @@
             - name: Plan image-based management 
               href: file1.md
 
-    - name: Deploy Windows 10
+    - name: Deploy
       items: 
-        - name: Deploy with Windows Autopilot
+        - name: Deploy Windows 10
           items:
-            - name: Windows Autopilot deployment
-              href: file1.md
-            - name: What's new in Windows Autopilot
-              href: file1.md
-            - name: Understand Windows Autopilot
-              items:
-                - name: Overview
-                  href: file1.md
-                - name: Requirements
-                  href: file1.md  
-                - name: Scenarios and capabilities
-                  href: file1.md
-                - name: Get started
-                  href: file1.md              
-            - name: Deployment scenarios
-              items:
-                - name: Deployment processes
-                  href: file1.md
-                - name: User-driven mode
-                  href: file1.md  
-                - name: Self-deploying mode
-                  href: file1.md
-                - name: Windows Autopilot Reset
-                  href: file1.md
-                - name: White glove
-                  href: file1.md
-                - name: Support for existing devices
-                  href: file1.md
-            - name: Administer Windows Autopilot
-              items:
-                - name: Register devices
-                  href: file1.md
-                - name: Configure device profiles
-                  href: file1.md  
-                - name: Enrollment Status Page
-                  href: file1.md
-                - name: BitLocker encryption
-                  href: file1.md
-                - name: DFCI management
-                  href: file1.md
-                - name: Windows Autopilot update
-                  href: file1.md
-                - name: Troubleshooting
-                  href: file1.md
-                - name: Known issues
-                  href: file1.md
-            - name: Support
-              items:
-                - name: FAQ
-                  href: file1.md
-                - name: Contacts
-                  href: file1.md
-                - name: Registration authorization
-                  href: file1.md
-                - name: Device guidelines
-                  href: file1.md
-                - name: Motherboard replacement
-                  href: file1.md
-        - name: Deploy with Configuration Manager
+            - name: Deploy Windows 10 with Autopilot
+            - name: Deploy Windows 10 with Configuration Manager
+            - name: Deploy Windows 10 with MDT
+        - name: Deploy Windows 10 updates
           items:
-            - name: Integrate Configuration Manager with MDT       
-              href: file1.md
-            - name: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-              href: file1.md
-            - name: Create a custom Windows PE boot image with Configuration Manager
-              href: file1.md
-            - name: Add a Windows 10 operating system image using Configuration Manager
-              href: file1.md
-            - name: Create an application to deploy with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
-              href: file1.md
-            - name: Create a task sequence with Configuration Manager and MDT
-              href: file1.md
-            - name: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager
-              href: file1.md
-            - name: Deploy Windows 10 using PXE and Configuration Manager
-              href: file1.md
-            - name: Monitor the Windows 10 deployment with Configuration Manager
-              href: file1.md
-            - name: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
-              href: file1.md
-            - name: Perform an in-place upgrade to Windows 10 using Configuration Manager
-              href: file1.md
-        - name: Deploy with the Microsoft Deployment Toolkit
-          items:
-            - name: Get started with MDT       
-              href: file1.md
-            - name: Deploy Windows 10 with MDT       
-              items:
-                - name: Prepare for deployment with MDT
-                  href: file1.md
-                - name: Create a Windows 10 reference image
-                  href: file1.md
-                - name: Deploy a Windows 10 reference image using MDT
-                  href: file1.md
-                - name: Build a distributed environment for Windows 10 deployment
-                  href: file1.md
-                - name: Refresh a Windows 7 computer with Windows 10
-                  href: file1.md
-                - name: Replace a Windows 7 computer with Windows 10
-                  href: file1.md
-                - name: Perform an in-place upgrade to Windows 10 with MDT
-                  href: file1.md
-            - name: Customize MDT       
-              items:
-                - name: Configure MDT settings
-                  href: file1.md
-                - name: Set up MDT for BitLocker
-                  href: file1.md
-                - name: Configure MDT deployment share rules
-                  href: file1.md
-                - name: Configure MDT UserExit scripts
-                  href: file1.md
-                - name: Simulate a Windows 10 deployment in a test environment
-                  href: file1.md
-                - name: Use the MDT database to state Windows 10 deployment information
-                  href: file1.md
-                - name: Assign applications using roles in MDT
-                  href: file1.md
-                - name: Use web services in MDT
-                  href: file1.md
-                - name: Use Orchestrator runbooks with MDT
-                  href: file1.md
-
-    - name: Manage Windows 10 updates
-      items: 
-        - name: Manage updates from the cloud
-          items: 
-            - name: Manage updates with Configuration Manager
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-            - name: Manage updates with Intune
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-            - name: Manage with Group Policy 
-              items:
-                - name: Set up rings, channels, optimization, polices
-                  href: file1.md
-                - name: Perform a pilot deployment (new)
-                  href: file1.md
-                - name: Perform a broad deployment
-                  href: file1.md
-        - name: Manage updates locally
-          items: 
-            - name: Manage updates with WSUS
-              href: file1.md
-            - name: Manage updates using images
-              href: file1.md
-        - name: Monitor updates
-          items: 
-            - name: Monitor updates with Update Compliance
-              href: file1.md
-            - name: Monitor updates with Desktop Analytics
-              href: file1.md
-            - name: Monitor Delivery Optimization
-              href: file1.md                 
+            - name: Deploy updates with Configuration Manager
+            - name: Deploy updates with Intune
+            - name: Deploy updates with WSUS
+            - name: Deploy updates with Group Policy
 
     - name: Reference
       items:
