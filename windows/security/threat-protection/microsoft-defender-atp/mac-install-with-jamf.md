@@ -37,6 +37,19 @@ Before you get started, please see [the main Microsoft Defender ATP for Mac page
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
+## Quick guide
+
+The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender ATP for Macs, via Intune. More detailed steps are available below.
+
+| Step | Sample file names | BundleIdentifier |
+|-|-|-|
+| 1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
+| 2. [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
+| 3. [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdavtray |
+| 4. [Configure Microsoft AutoUpdate (MAU)](../mac-updates.md#jamf ) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
+| 5. [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
+| 6. [Approve Kernel Extension for Microsoft Defender ATP](#approved-kernel-extension) | Note: If there was one, MDATP_KExt.plist | N/A |
+
 ## Download installation and onboarding packages
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
@@ -44,16 +57,16 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 1. In Microsoft Defender Security Center, go to **Settings > Machine management > Onboarding**.
 2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android**.
 3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
-    
-    >[!NOTE]
-    >Jamf falls under **Mobile Device Management**. 
-        
+
+    > [!NOTE]
+    > Jamf falls under **Mobile Device Management**.
+
 4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
     ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/jamf-onboarding.png)
 
-5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
+6. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash
     $ ls -l
@@ -81,7 +94,7 @@ The configuration profile contains a custom settings payload that includes:
 
 To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
 
-  >[!IMPORTANT]
+  > [!IMPORTANT]
   > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
 ![Configuration profile screenshot](../windows-defender-antivirus/images/MDATP-16-PreferenceDomain.png)
@@ -98,7 +111,7 @@ To approve the kernel extension:
 ### Privacy Preferences Policy Control
 
 > [!CAUTION]
-> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+> MacOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
 >
 > If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
 
@@ -231,6 +244,7 @@ $ mdatp --health healthy
 The above command prints "1" if the product is onboarded and functioning as expected.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
+
 - 0 if the device is not yet onboarded
 - 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
 
