@@ -230,6 +230,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+#### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
 ##### [Puppet based deployment](microsoft-defender-atp/linux-install-with-puppet.md)
@@ -244,6 +245,7 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 
 #### [Troubleshoot]()
+##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
