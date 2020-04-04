@@ -246,6 +246,8 @@
 ### Monitor Windows Updates
 #### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
+##### [Update Compliance Configuration Script](update/update-compliance-configuration-script.md)
+##### [Manually Configuring Devices for Update Compliance](update/update-compliance-configuration-manual.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
 ##### [Need Attention! report](update/update-compliance-need-attention.md)
 ##### [Security Update Status report](update/update-compliance-security-update-status.md)

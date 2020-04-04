@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/28/2019
 ms.reviewer: 
-manager: dcscontentpm
+manager: willchen
 ---
 
 # Generate a kernel or complete crash dump 
