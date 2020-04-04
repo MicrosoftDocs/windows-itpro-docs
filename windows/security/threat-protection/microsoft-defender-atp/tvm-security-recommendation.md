@@ -134,7 +134,15 @@ When an exception is created for a recommendation, the recommendation is no long
 
 2. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
-> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+    The following list details the justifications behind the exception options:
+
+    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
+    - **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow
+    - **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
+    - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+    - **Other** - False positive
+
+![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
 
 3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 
@@ -151,8 +159,6 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 ![Screenshot of Report inaccuracy control](images/report-inaccuracy500.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
-
-![Screenshot of Report inaccuracy flyout pane](images/report-inaccuracy-flyout500.png)
 
 4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 

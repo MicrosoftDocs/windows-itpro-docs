@@ -60,13 +60,10 @@ Once you are in the Software inventory page and have opened the flyout panel by 
 
 You can report a false positive when you see any vague, inaccurate version, incomplete, or already remediated software inventory information.
 
-1. Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Report inaccuracy**
-
-2. Select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
-
-3. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
-
-![Screenshot of Report inaccuracy flyout pane](images/report-inaccuracy-flyout500.png)
+1. Open the software flyout on the Software inventory page.
+2. Select **Report inaccuracy**.
+3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
+4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 
 ## Related topics
 
