@@ -35,7 +35,7 @@ The goal of event insights is to tell the story of your [exposure score](tvm-exp
 
 You can reduce you exposure score by addressing what needs to be remediated based on the prioritized security recommendations. See [Security recommendations](tvm-security-recommendation.md) for details.
 
-## Navigation
+## Navigate to the Event insights page
 
 You can access Event insights mainly through three ways:
 
@@ -43,29 +43,46 @@ You can access Event insights mainly through three ways:
 - Top events card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
 - Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 
+### Navigation menu
+
+Go to the Threat & Vulnerability Management navigation menu and select **Event insights** to view impactful events.
+
 ### Top events card
+
+In the Threat & Vulnerability Management dashboard, the Top events card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event insights page.
+
+![Event insights page](images/tvm-top-events-card.png)
 
 ### Exposure score graph
 
 In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then no insights will be shown.
 
-![Event insights page](images/event-insights-exposure-score-events.png)
+![Event insights page](images/tvm-event-insights-exposure-score400.png)
 
 Selecting **Show all events from this day** will lead you to the Event insights page with a pre-populated custom date range for that day.
 
-![Event insights page](images/event-insights-custom-range.png)
+![Event insights page](images/tvm-event-insights-custom.png)
 
-## Event insights page
+Select **Custom range** to change the date range to another custom one, or a pre-set time range.
 
-On the Event insights page, you can view the date, event, related component, number of impacted machines, and type. You can also filter by type, or percent of impacted machines.
+![Event insights date range options](images/tvm-custom-event-insights-range.png)
+
+## Event insights overview
+
+On the Event insights page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns (like adding exposure score trend) and filter by type or percent of impacted machines.
+
+The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
 ![Event insights page](images/event-insights-page.png)
 
-Once you select an event insight, a flyout will appear listing the details and related CVEs. You can show more CVEs or view the related recommendation.
+### Icons and event types
 
-![Event insights page](images/event-insights-flyout500.png)
+The following icons show up next to events:
 
-## Event types
+- ![bug icon](images/tvm_bug_icon.png) New public exploit
+- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
+- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
+- ![bug icon](images/bug-caution-icon2.png) Exploit verified
 
 The following event types reflect time-stamped events that impact the score:
 
@@ -74,14 +91,11 @@ The following event types reflect time-stamped events that impact the score:
 - New public exploit
 - New vulnerability
 
-## Icons
+### Drill down to a specific event
 
-The following icons show up next to events:
+Once you select an event insight, a flyout will appear listing the details and current CVEs that affect your machines. Each CVE can be associated with multiple products. You can show more CVEs or view the related recommendation.
 
-- ![bug icon](images/tvm_bug_icon.png) New public exploit
-- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
-- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
-- ![bug icon](images/bug-caution-icon2.png) Exploit verified
+![Event insights page](images/event-insights-flyout500.png)
 
 ## Related topics
 
