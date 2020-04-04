@@ -34,12 +34,12 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 - [Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
 - [Windows 10, version 1903 ADK](https://go.microsoft.com/fwlink/?linkid=2086042)
-- [SQL Server 2017 Express](https://www.microsoft.com/sql-server/sql-server-editions-express)
-- alternatively any full SQL instance e.g. SQL Server 2014 or newer incl. CU / SP
+- any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommneded
+- alternatively any full SQL instance that is supported
 
-### Install SQL Server 2017 Express / alternatively use any Full SQL instance e.g. SQL Server 2014 or newer
+### Install SQL Server Express / alternatively use any full SQL instance
 
-1. Download and open the [SQL Server 2017 Express](https://www.microsoft.com/sql-server/sql-server-editions-express) package.
+1. Download and open the [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) package.
 2. Select **Basic**.
 3. Accept the license terms.
 4. Enter an install location or use the default path, and then select **Install**.
@@ -56,7 +56,7 @@ Reminder: There won't be new ADK release for 1909.
 5. On the **Select the features you want to install** page, select **Volume Activation Management Tool (VAMT)**, and then select **Install**. (You can select additional features to install as well.)
 6. On the completion page, select **Close**.
 
-### Configure VAMT to connect to SQL Server 2017 Express or full SQL Server
+### Configure VAMT to connect to SQL Server Express or full SQL Server
 
 1. Open **Volume Active Management Tool 3.1** from the Start menu.
 2. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
