@@ -136,7 +136,7 @@ For more information about how to register a sample application with Azure AD, s
 
 An on-premises MDM application is inherently different that a cloud MDM. It is a single-tenant application that is present uniquely within the tenant of the customer. Therefore, customers must add the application directly within their own tenant. Additionally, each instance of an on-premises MDM application must be registered separately and has a separate key for authentication with Azure AD.
 
-The customer experience for adding an on-premises MDM to their tenant is similar to that as the cloud-based MDM. There is an entry in the Azure AD app gallery to add an on-premises MDN to the tenant and administrators can configure the required URLs for enrollment and Terms of Use.
+To add an on-premises MDM application to the tenant there is an entry under the Azure AD service, specifically under Mobility (MDM and MAM) -> Add application. Administrators can configure the required URLs for enrollment and Terms of Use.
 
 Your on-premises MDM product must expose a configuration experience where administrators can provide the client ID, app ID, and the key configured in their directory for that MDM application. You can use this client ID and key to request tokens from Azure AD when reporting device compliance.
 
