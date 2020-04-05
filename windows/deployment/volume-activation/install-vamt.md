@@ -44,6 +44,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 3. Accept the license terms.
 4. Enter an install location or use the default path, and then select **Install**.
 5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**. 
+
     ![In this example, the instance name is SQLEXPRESS01](images/sql-instance.png)
 
 ### Install VAMT using the ADK
