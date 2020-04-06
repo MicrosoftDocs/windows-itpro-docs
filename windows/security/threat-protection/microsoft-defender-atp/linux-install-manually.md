@@ -208,12 +208,12 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: WindowsDefenderATPOnboarding.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 ## Client configuration
 
-1. Copy WindowsDefenderATPOnboarding.py to the target machine.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target machine.
 
     Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
 
@@ -221,10 +221,10 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp --health orgId
     ```
 
-2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
-    python WindowsDefenderATPOnboarding.py
+    python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
