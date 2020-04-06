@@ -1,5 +1,5 @@
 ---
-title: Onboard to the Micrsoft Defender ATP service
+title: Onboard to the Microsoft Defender ATP service
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard to the Micrsoft Defender ATP service
+# Onboard to the Microsoft Defender ATP service
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -34,7 +34,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
      <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
         <img src="images/setup.png" alt="Setup the Microsoft Defender ATP service" title="Setup" />
-      <br/>Phase 2: Setup </a><br>
+      <br/>Phase 2: Set up </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
@@ -184,11 +184,11 @@ Before the systems can be onboarded into the workspace, the deployment scripts n
 Edit the InstallMMA.cmd with a text editor, such as notepad and update the
 following lines and save the file:
 
-   ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
+    ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
 
 Edit the ConfiguerOMSAgent.vbs with a text editor, such as notepad, and update the following lines and save the file:
 
-   ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
+    ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
 
 Microsoft Monitoring Agent (MMA) is currently (as of January 2019) supported on the following Windows Operating
 Systems:
@@ -257,15 +257,15 @@ MMA for enrollment into the workspace.
 
 9.  Set Run to **Hidden**.
 
-10.  Set **Program can run** to **Whether or not a user is logged on**.
+10. Set **Program can run** to **Whether or not a user is logged on**.
 
-11.  Click **Next**.
+11. Click **Next**.
 
-12.  Set the **Maximum allowed run time** to 720.
+12. Set the **Maximum allowed run time** to 720.
 
-13.  Click **Next**.
+13. Click **Next**.
 
-   ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
 
 14. Verify the configuration, then click **Next**.
 
@@ -275,12 +275,12 @@ MMA for enrollment into the workspace.
 
 16. Click **Close**.
 
-17.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
+17. In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
     Onboarding Package just created and select **Deploy**.
 
 18. On the right panel select the appropriate collection.
 
-19.  Click **OK**.
+19. Click **OK**.
 
 ## Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
@@ -318,7 +318,7 @@ needs on how Antivirus is configured.
 
     ![Image of next generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Right-click on the newly created antimalware policy and select **Deploy** .
+3. Right-click on the newly created antimalware policy and select **Deploy**.
 
     ![Image of next generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
 

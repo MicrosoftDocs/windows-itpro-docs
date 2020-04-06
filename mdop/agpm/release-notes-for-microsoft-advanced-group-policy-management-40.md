@@ -45,9 +45,9 @@ For more information about AGPM, see the following:
 
 -   [Advanced Group Policy Management TechNet Library](https://go.microsoft.com/fwlink/?LinkID=146846) (https://go.microsoft.com/fwlink/?LinkID=146846)
 
--   [Microsoft Desktop Optimization Pack TechCenter](https://go.microsoft.com/fwlink/?LinkId=159870) (http://www.microsoft.com/technet/mdop)
+-   [Microsoft Desktop Optimization Pack TechCenter](https://go.microsoft.com/fwlink/?LinkId=159870) (https://www.microsoft.com/technet/mdop)
 
--   [Group Policy TechCenter](https://go.microsoft.com/fwlink/?LinkId=145531) (http://www.microsoft.com/gp)
+-   [Group Policy TechCenter](https://go.microsoft.com/fwlink/?LinkId=145531) (https://www.microsoft.com/gp)
 
 ## Providing feedback
 

@@ -10,11 +10,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.audience: itpro
-ms.date: 03/10/2020
 ---
 
 # Manage and deploy Surface driver and firmware updates

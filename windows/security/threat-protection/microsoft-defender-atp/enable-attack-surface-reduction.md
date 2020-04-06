@@ -1,6 +1,6 @@
 ---
 title: Enable ASR rules individually to protect your organization
-description: Enable ASR rules to protect your devices from attacks the use macros, scripts, and common injection techniques
+description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,7 +19,7 @@ manager: dansimp
 
 # Enable attack surface reduction rules
 
-[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions and apps that malware often uses to infect computers. You can set attack surface reduction rules for computers running Windows 10 or Windows Server 2019.
+[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions that malware often abuse to compromise devices and networks. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
 
 Each ASR rule contains three settings:
 
@@ -54,7 +54,7 @@ You can exclude files and folders from being evaluated by most attack surface re
 > * Block process creations originating from PSExec and WMI commands
 > * Block JavaScript or VBScript from launching downloaded executable content
 
-You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
+You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
@@ -62,7 +62,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## Intune
 
-1. In Intune, select **Device configuration** > **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
+1. Select **Device configuration** > **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
 
@@ -186,4 +186,5 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 * [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
 * [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)
 * [Enable cloud-delivered protection](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)

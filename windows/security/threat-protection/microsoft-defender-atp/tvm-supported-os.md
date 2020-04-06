@@ -22,7 +22,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -33,11 +33,11 @@ Operating system | Security assessment support
 Windows 7 | Operating System (OS) vulnerabilities
 Windows 8.1 | Not supported
 Windows 10 1607-1703 | Operating System (OS) vulnerabilities
-Windows 10 1709+ |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-Windows Server 2008R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2012R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
-Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities
+Windows 10 1709+ |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment 
+Windows Server 2008R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2012R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
+Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 MacOS | Not supported (planned)
 Linux | Not supported (planned)
 
@@ -45,7 +45,8 @@ Some of the above prerequisites might be different from the [Minimum requirement
 
 ## Related topics
 
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -53,4 +54,5 @@ Some of the above prerequisites might be different from the [Minimum requirement
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

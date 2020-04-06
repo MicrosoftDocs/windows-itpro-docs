@@ -24,10 +24,12 @@ ms.collection:
 
 ## What is shadow protection?
 
-Shadow protection (currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection)) extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. If your organization has decided to use an antivirus solution other than Windows Defender Antivirus, you are still protected through shadow protection.
+When enabled, shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach protection. This is the case even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. Shadow protection is useful if your organization has not fully transitioned to Windows Defender Antivirus and you are presently using a third-party antivirus solution. Shadow protection works behind the scenes by remediating malicious entities identified in post-breach protection that the existing third-party antivirus solution missed. 
 
-> [!TIP]
-> To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline). And see [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus).
+> [!NOTE]
+> Shadow protection is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection).
+
+To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline). And see [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus).
 
 ## What happens when something is detected?
 
