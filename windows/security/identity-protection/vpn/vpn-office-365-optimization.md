@@ -15,9 +15,9 @@ ms.author: jajo
 
 # Optimizing Office 365 traffic for remote workers with the native Windows 10 VPN client
 
-As the COVID-19 pandemic has unfolded, the Office 365 Network team have seen a large influx of questions from customers around how best to optimize their Office 365 connectivity as they work diligently to plan for a large amount of their userbase suddenly working from home. As a result, they wrote the following documentation on how to quickly optimize network traffic for Office 365: [Optimize Office 365 connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+This article describes how to configure the recommendations in the article [Optimize Office 365 connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel) for the **native Windows 10 VPN client**. This guidance enables VPN administrators to optimize Office 365 usage while still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling.
 
-Customers have consequently asked how to configure these recommendations for the **native Windows 10 VPN client** such that they can optimise Office 365 usage whilst still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling. This can be achieved for the native/built-in Windows 10 VPN client using a _Force Tunnelling with Exclusions_ approach. This allows you to define IP-based exclusions **even when using force tunnelling** in order to "split" certain traffic to use the physical interface whilst still forcing all other traffic via the VPN interface. Traffic addressed to specifically defined destinations (like those listed in the Office 365 optimise categories) will therefore follow a much more direct and efficient path, without the need to traverse or "hairpin" via the VPN tunnel and back out of the corporate network. For cloud-services like Office 365, this makes a huge difference to performance and usability for remote users.
+This can be achieved for the native/built-in Windows 10 VPN client using a _Force Tunnelling with Exclusions_ approach. This allows you to define IP-based exclusions **even when using force tunnelling** in order to "split" certain traffic to use the physical interface while still forcing all other traffic via the VPN interface. Traffic addressed to specifically defined destinations (like those listed in the Office 365 optimize categories) will therefore follow a much more direct and efficient path, without the need to traverse or "hairpin" via the VPN tunnel and back out of the corporate network. For cloud-services like Office 365, this makes a huge difference in performance and usability for remote users.
 
 >[!NOTE]
 >The term _force tunnelling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 VPN, the term _split tunnelling_ is defined differently as described in the article [VPN routing decisions](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing#split-tunnel-configuration).
@@ -66,13 +66,14 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 </VPNProfile>
 ```
 
-Note: The above IP addresses and prefixes are used purely as examples only and should not be used.
+>[!NOTE]
+>The IP addresses and prefix size values in this example are used purely as examples only and should not be used.
 
 ## Solution Deployment
 
-For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimise categories described in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) to ensure that they are excluded from VPN force tunnelling.
+For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) to ensure that they are excluded from VPN force tunnelling.
 
-This can be achieved manually by adding the IP addresses defined within the optimise category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the addresses ranges are always used.
+This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the addresses ranges are always used.
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -85,7 +86,7 @@ This can be achieved manually by adding the IP addresses defined within the opti
 
 <#
 .SYNOPSIS
-    Applies or updates recommended Office 365 optimise IP address exclusions to an existing force tunnel Windows 10 VPN profile
+    Applies or updates recommended Office 365 optimize IP address exclusions to an existing force tunnel Windows 10 VPN profile
 .DESCRIPTION
     Connects to the Office 365 worldwide commercial service instance endpoints to obtain the latest published IP address ranges
     Compares the optimized IP addresses with those contained in the supplied VPN Profile (PowerShell or XML file)
@@ -110,7 +111,7 @@ VPNprofilefile - The full path and name of the VPN profile PowerShell script or 
 
 EXAMPLES
 
-To check a VPN profile Powershell script file:
+To check a VPN profile PowerShell script file:
 
 Update-VPN-Profile-Office365-Exclusion-Routes.ps1 -VPNprofilefile [FULLPATH AND NAME OF POWERSHELL SCRIPT FILE]
 
@@ -123,7 +124,7 @@ Update-VPN-Profile-Office365-Exclusion-Routes.ps1 -VPNprofilefile [FULLPATH AND 
 # Check if filename has been provided #
 if ($VPNprofilefile -eq "")
 {
-   Write-Host "`nWARNING: You must specify either a Powershell script or XML filename!" -ForegroundColor Red
+   Write-Host "`nWARNING: You must specify either a PowerShell script or XML filename!" -ForegroundColor Red
 
     $usage
     exit
@@ -164,13 +165,13 @@ if ( $VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
     {
         if (-Not $(Select-String -Path $VPNprofilefile -Pattern "<VPNPROFILE>") )
         {
-            Write-Host "`nWARNING: Powershell script file does not contain a valid VPN profile XML section or is incorrectly formatted!" -ForegroundColor Red
+            Write-Host "`nWARNING: PowerShell script file does not contain a valid VPN profile XML section or is incorrectly formatted!" -ForegroundColor Red
             $usage
             exit
         }
     }else
     {
-        Write-Host "`nWARNING: Powershell script file does not exist or cannot be found!"-ForegroundColor Red
+        Write-Host "`nWARNING: PowerShell script file does not exist or cannot be found!"-ForegroundColor Red
         $usage
         exit
     }
@@ -229,14 +230,14 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
     # Clear Variables to allow re-run testing #
 
     $ARRVPN=$null              # Array to hold VPN addresses from VPN profile PowerShell file #
-    $In_Opt_Only=$null         # Variable to hold IP addresses that only appear in the optimise list #
-    $In_VPN_Only=$null         # Variable to hold IP addresses that only appear in the VPN profile Powershell file #
+    $In_Opt_Only=$null         # Variable to hold IP addresses that only appear in the optimize list #
+    $In_VPN_Only=$null         # Variable to hold IP addresses that only appear in the VPN profile PowerShell file #
 
     # Extract the Profile XML from the ps1 file #
 
     $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
-    # Create xml format variable to compare with the optimise list #
+    # Create xml format variable to compare with the optimize list #
 
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
     [xml]$VPNprofilexml="<VPNPROFILE>"+$xmlbody+"</VPNPROFILE>"
@@ -248,7 +249,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
         [array]$ARRVPN=$ARRVPN+$VPNIP
         }
 
-    # In optimise address list only #
+    # In optimize address list only #
     $In_Opt_Only= $optimizeIpsv4 | Where {$ARRVPN -NotContains $_}
 
     # In VPN list only #
@@ -283,7 +284,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
              $NewFileName=(Get-Item $VPNprofilefile).Basename + "-NEW.ps1"
              $OutFile=$(Split-Path $VPNprofilefile -Parent)+"\"+$NewFileName
              $InpFile | Set-Content $OutFile
-             Write-Host "Exclusion routes have been added to VPN profile and output to a separate Powershell script file; the original file has not been modified`n" -ForegroundColor Green
+             Write-Host "Exclusion routes have been added to VPN profile and output to a separate PowerShell script file; the original file has not been modified`n" -ForegroundColor Green
     }else
     {
         Write-Host "Exclusion route IP addresses are correct and up to date in the VPN profile`n" -ForegroundColor Green
@@ -323,7 +324,7 @@ if ( $In_VPN_Only.Count -gt 0 )
                         $NewFileName=(Get-Item $VPNprofilefile).Basename + "-NEW.xml"
                         $OutFile=$(Split-Path $VPNprofilefile -Parent)+"\"+$NewFileName
                         $Inpfile | Set-content $OutFile
-                        Write-Host "`nAddress"$IPInfo[0]"exclusion route has been removed from the VPN profile and output to a separate Powershell script file; the original file has not been modified`n" -ForegroundColor Green
+                        Write-Host "`nAddress"$IPInfo[0]"exclusion route has been removed from the VPN profile and output to a separate PowerShell script file; the original file has not been modified`n" -ForegroundColor Green
 
                 }else
                 {
@@ -340,13 +341,13 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
 
     # Clear variables to allow re-run testing #
     $ARRVPN=$null              # Array to hold VPN addresses from the XML file #
-    $In_Opt_Only=$null         # Variable to hold IP Addresses that only appear in optimise list #
+    $In_Opt_Only=$null         # Variable to hold IP Addresses that only appear in optimize list #
     $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #  
 
     # Extract the Profile XML from the XML file #
     $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
-    # Create xml format variable to compare with optimise list #
+    # Create xml format variable to compare with optimize list #
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
     [xml]$VPNRulesxml="$xmlbody"
 
@@ -357,7 +358,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
             [array]$ARRVPN=$ARRVPN+$VPNIP
         }
 
-    # In optimise address list only #
+    # In optimize address list only #
     $In_Opt_Only= $optimizeIpsv4 | Where {$ARRVPN -NotContains $_}
 
     # In VPN list only #
