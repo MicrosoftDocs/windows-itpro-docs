@@ -39,7 +39,14 @@ With live response, analysts will have the ability to:
 ## Before you begin
 Before you can initiate a session on a machine, make sure you fulfill the following requirements:
 
-- Machines must be Windows 10, version 18323 (also known as Windows 10 19H1) or later. 
+- **Verify that you're running a supported version of Windows 10** <br/>
+Machines must be Windows 10, version 18323 (also known as Windows 10 19H1) or later. 
+
+- **Make sure to install appropriate security updates**<br/>
+   - 1809 (RS5): [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+   - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+   - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
 
 - **Enable live response from the settings page**<br>
 You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
@@ -55,7 +62,7 @@ You'll need to enable the live response capability in the [Advanced features set
   Running unsigned scripts is generally not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
 - **Ensure that you have the appropriate permissions**<br>
-	Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+    Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
     > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
