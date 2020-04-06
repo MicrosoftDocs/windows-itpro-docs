@@ -27,6 +27,16 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## APIs
+
+Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
+
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
+
 ## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit
 
 1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
@@ -67,17 +77,23 @@ To find software or software versions which have reached end-of-support:
 
     ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
 
+### List of versions and dates
+
+To view a list of version that have reached end of support, or end or support soon, and those dates, follow the below steps:
+
+1. For software that has versions which have reached end of support, or will reach end of support soon, a message will appear in the flyout once the security recommendation is selected.
+
+    ![Screenshot of version distribution link](images/eos-upcoming-eos.png) <br><br>
+
+2. Select the **version distribution** link to go to the software drill down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
+
+    ![Screenshot of version distribution link](images/software-drilldown-eos.png) <br><br>
+
+3. Select one of the versions in the table to open. For example, version 3.5.2150.0. A flyout will appear with the end of support date.
+
+![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
+
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
-
-## Use APIs
-
-Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
-
-- [Machine APIs](machine.md)
-- [Recommendation APIs](vulnerability.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
 
 ## Related topics
 

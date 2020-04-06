@@ -11,10 +11,10 @@ ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
 ms.author: v-medgar
-manager: sanashar
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 9/17/2019
+ms.date: 3/25/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -35,6 +35,12 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: Windows Update, Automatic Root Certificates Update, and Windows Defender. Accordingly, we do not recommend disabling any of these features.
 > - It is recommended that you restart a device after making configuration changes to it. 
 > - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
+
+>[!Note]
+>Regarding the Windows Restricted Traffic Limited Functionality Baseline, the 1903 settings (folder) are applicable to 1909 Windows >Enterprise devices. There were no additional settings required for the 1909 release.
+
+>[!Warning] 
+>If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the >"Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order >re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline >settings.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 

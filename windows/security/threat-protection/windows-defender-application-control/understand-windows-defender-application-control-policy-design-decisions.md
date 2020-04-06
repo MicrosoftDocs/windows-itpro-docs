@@ -35,7 +35,7 @@ You should consider using WDAC as part of your organization's application contro
 
 -   You have deployed or plan to deploy the supported versions of Windows in your organization.
 -   You need improved control over the access to your organization's applications and the data your users access.
--   Your organization has a well-defined process for application management and deployed.
+-   Your organization has a well-defined process for application management and deployment.
 -   You have resources to test policies against the organization's requirements.
 -   You have resources to involve Help Desk or to build a self-help process for end-user application access issues.
 -   The group's requirements for productivity, manageability, and security can be controlled by restrictive policies.

@@ -25,7 +25,7 @@ ms.topic: article
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server, 2019
+- Windows Server, 2019 and later
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -38,7 +38,7 @@ The service supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server 2019
+- Windows Server 2019 and later
 
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
@@ -113,7 +113,7 @@ The following steps are required to enable this integration:
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script). 
 
-3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#configure-proxy-settings).
+3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](configure-proxy-internet.md).
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
@@ -153,11 +153,13 @@ Support for Windows Server, version 1803 and Windows 2019 provides deeper insigh
 
     b. Run the following PowerShell command to verify that the passive mode was configured:
 
-       ```Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}```
+      ```PowerShell
+      Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+      ```
 
     c. Confirm  that a recent event containing the passive mode event is found:
        
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+      ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
@@ -172,8 +174,8 @@ Microsoft Defender ATP integrates with Azure Security Center to provide a compre
 The following capabilities are included in this integration:
 - Automated onboarding - Microsoft Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to Azure Security Center. For more information on Azure Security Center onboarding, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
-> [!NOTE]
-> Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
+    > [!NOTE]
+    > Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Microsoft Defender ATP - Azure Security Center seamlessly connects to the Microsoft Defender ATP tenant, providing a single view across clients and servers.  In addition, Microsoft Defender ATP alerts will be available in the Azure Security Center console.
 - Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach

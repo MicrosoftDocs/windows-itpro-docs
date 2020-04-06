@@ -45,7 +45,8 @@ Some of the above prerequisites might be different from the [Minimum requirement
 
 ## Related topics
 
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -53,4 +54,5 @@ Some of the above prerequisites might be different from the [Minimum requirement
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

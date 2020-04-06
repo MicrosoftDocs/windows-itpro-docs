@@ -1,5 +1,5 @@
 ---
-title: Setup Microsoft Defender ATP deployment
+title: Set up Microsoft Defender ATP deployment
 description: 
 keywords:
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Setup Microsoft Defender ATP deployment
+# Set up Microsoft Defender ATP deployment
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -36,7 +36,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
         <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup" />
-      <br/>Phase 2: Setup </a><br>
+      <br/>Phase 2: Set up </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
@@ -48,7 +48,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
 </table>
 
-You are currently in the setup phase.
+You are currently in the set up phase.
 
 In this deployment scenario, you'll be guided through the steps on:
 - Licensing validation
@@ -69,9 +69,9 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-   - On the screen you will see all the provisioned licenses and their current **Status**.
+    On the screen you will see all the provisioned licenses and their current **Status**.
 
-   ![Image of billing licenses](images/atp-billing-subscriptions.png)
+    ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
 
 ## Cloud Service Provider validation
@@ -88,7 +88,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -103,7 +103,7 @@ When accessing [Microsoft Defender Security Center](https://securitycenter.windo
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this setup and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
 
     **Data retention** - The default is 6 months.
 
@@ -160,11 +160,8 @@ services if a computer is not permitted to connect to the Internet. The static
 proxy is configurable through Group Policy (GP). The group policy can be found
 under:
 
--   Administrative Templates \> Windows Components \> Data Collection and
-    Preview Builds \> Configure Authenticated Proxy usage for the Connected User
-    Experience and Telemetry Service
-
-    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
+ - Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
+     - Set it to **Enabled** and select **Disable Authenticated Proxy usage**
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
