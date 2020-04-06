@@ -298,7 +298,7 @@ There may be instances when onboarding is deployed on a newly built machine but 
 The steps below provide guidance for the following scenario:
 - Onboarding package is deployed to newly built machines
 - Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
-- Machine is turned off and shipped to the end user
+- Machine is turned off or restarted before the end user performs a first logon
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 >[!NOTE]
