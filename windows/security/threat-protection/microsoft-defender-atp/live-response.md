@@ -94,17 +94,13 @@ The dashboard also gives you access to:
 3. Use the built-in commands to do investigative work. For more information see, [Live response commands](#live-response-commands).
 4. After completing your investigation, select **Disconnect session**, then select **Confirm**.
 
-## Download a file in the background
-
-
-
 ## Live response commands
 
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 ### Basic commands
 
-The following commands are available for user roles that's been granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 Command | Description 
 :---|:---|:---
@@ -124,9 +120,8 @@ scheduledtasks| Shows all scheduled tasks on the machine.
 services | Shows all services on the machine. 
 trace | Sets the terminal's logging mode to debug.
 
-
 ### Advanced commands
-The following commands are available for user roles that's been granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 Command | Description 
 :---|:---
@@ -151,6 +146,14 @@ For scenarios when you'd like get a file from a machine you're investigating, yo
 
 >[!NOTE]
 >There is a file size limit of 750mb.
+
+### Download a file in the background
+
+To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
+
+#### To download a file in the background
+
+1. 
 
 ### Put a file in the library
 Live response has a library where you can put files into. The library stores files (such as scripts) that can be run in a live response session at the tenant level.
