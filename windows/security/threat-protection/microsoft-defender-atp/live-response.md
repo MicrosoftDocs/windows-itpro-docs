@@ -85,14 +85,17 @@ The dashboard also gives you access to:
 ## Initiate a live response session on a machine 
 
 1. Log in to Microsoft Defender Security Center.
+
 2. Navigate to the machines list page and select a machine to investigate. The machine page opens.
 
     >[!NOTE]
     >Machines must be on Windows 10, version 18323 (also known as Windows 10 19H1) or later. 
 
-2. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the machine.
-3. Use the built-in commands to do investigative work. For more information see, [Live response commands](#live-response-commands).
-4. After completing your investigation, select **Disconnect session**, then select **Confirm**.
+3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the machine.
+
+4. Use the built-in commands to do investigative work. For more information see, [Live response commands](#live-response-commands).
+
+5. After completing your investigation, select **Disconnect session**, then select **Confirm**.
 
 ## Live response commands
 
@@ -109,7 +112,9 @@ cls | Clears the console screen.
 connect | Initiates a live response session to the machine. 
 connections | Shows all the active connections.
 dir | Shows a list of files and subdirectories in a directory
+`download <file_path> &` | Downloads a file in the background
 drivers |  Shows all drivers installed on the machine.
+`fg <command ID>` | Returns a file download to the foreground
 fileinfo | Get information about a file.
 findfile | Locates files by a given name on the machine.
 help | Provides help information for live response commands.
@@ -151,11 +156,21 @@ For scenarios when you'd like get a file from a machine you're investigating, yo
 
 To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
 
-#### To download a file in the background
+- To download a file in the background, in the live response command console, type `download <file_path> &`
+- If you are waiting for a file to be downloaded, you can move it to the background by using Ctrl + Z.
+- To bring a file download to the foreground, in the live response command console, type `fg <command_id>`  
 
-1. 
+Here are some examples:
+
+
+|Command  |What it does  |
+|---------|---------|
+|`"C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
+|`fg 1234`     |Returns a download with command ID *1234* to the foreground         |
+
 
 ### Put a file in the library
+
 Live response has a library where you can put files into. The library stores files (such as scripts) that can be run in a live response session at the tenant level.
 
 Live response allows PowerShell scripts to run, however you must first put the files into the library before you can run them. 
@@ -165,11 +180,17 @@ You can have a collection of PowerShell scripts that can run on machines that yo
 #### To upload a file in the library
 
 1. Click **Upload file to library**. 
+
 2. Click **Browse** and select the file.
+
 3. Provide a brief description.
+
 4. Specify if you'd like to overwrite a file with the same name.
+
 5. If you'd like to be know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
+
 6. Click **Confirm**. 
+
 7. (Optional) To verify that the file was uploaded to the library, run the `library` command.
 
 
@@ -179,9 +200,8 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 >[!WARNING]
 >Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled. 
 
-
-
 ### Automatically run prerequisite commands
+
 Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the `download` command without `fileinfo` will return an error.
 
 You can use the auto flag to automatically run prerequisite commands, for example:
@@ -190,8 +210,8 @@ You can use the auto flag to automatically run prerequisite commands, for exampl
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
-
 ## Run a PowerShell script 
+
 Before you can run a PowerShell script, you must first upload it to the library. 
 
 After uploading the script to the library, use the `run` command to run the script.
@@ -201,9 +221,8 @@ If you plan to use an unsigned script in the session, you'll need to enable the 
 >[!WARNING]
 >Allowing the use of unsigned scripts may increase your exposure to threats.
 
-
-
 ## Apply command parameters
+
 - View the console help to learn about command parameters. To learn about an individual command, run:
  
     `help <command name>`
@@ -220,9 +239,8 @@ If you plan to use an unsigned script in the session, you'll need to enable the 
 
     `<command name> -type file -id <file path> - auto` or `remediate file <file path> - auto`.
 
-
-
 ## Supported output types
+
 Live response supports table and JSON format output types. For each command, there's a default output behavior. You can modify the output in your preferred output format using the following commands:
 
 - `-output json`
@@ -231,8 +249,8 @@ Live response supports table and JSON format output types. For each command, the
 >[!NOTE]
 >Fewer fields are shown in table format due to the limited space. To see more details in the output, you can use the JSON output command so that more details are shown.
 
-
 ## Supported output pipes
+
 Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: [command] > [filename].txt.  
 
 Example:
@@ -241,9 +259,8 @@ Example:
 processes > output.txt
 ```
 
-
-
 ## View the command log
+
 Select the **Command log** tab to see the commands used on the machine during a session. 
 Each command is tracked with full details such as:
 - ID
@@ -251,10 +268,8 @@ Each command is tracked with full details such as:
 - Duration
 - Status and input or output side bar
 
-
-
-
 ## Limitations
+
 - Live response sessions are limited to 10 live response sessions at a time
 - Large scale command execution is not supported
 - A user can only initiate one session at a time
