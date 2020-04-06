@@ -1,6 +1,6 @@
 ---
 title: Investigate entities on machines using live response in Microsoft Defender ATP
-description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real-time.
+description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,21 +23,22 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Live response is a capability that gives you instantaneous access to a machine using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time. 
+Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats –- in real time. 
 
-Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
+Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-With live response, analysts will have the ability to:
-- Run basic and advanced commands to do investigative work 
+With live response, analysts can do all of the following tasks:
+- Run basic and advanced commands to do investigative work on a device
 - Download files such as malware samples and outcomes of PowerShell scripts
-- Upload a PowerShell script or executable to the library and run it on the machine from a tenant level
+- Download files in the background (new!)
+- Upload a PowerShell script or executable to the library and run it on a device from a tenant level
 - Take or undo remediation actions
 
-
 ## Before you begin
-Before you can initiate a session on a machine, make sure you fulfill the following requirements:
+
+Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
 - **Verify that you're running a supported version of Windows 10** <br/>
 Machines must be running one of the following versions of Windows 10:
