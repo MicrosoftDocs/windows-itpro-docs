@@ -1502,6 +1502,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-config.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview",
 "redirect_document_id": true

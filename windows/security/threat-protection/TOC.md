@@ -443,7 +443,7 @@
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
-#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
+
 
 
 ## Reference
