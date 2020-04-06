@@ -47,7 +47,6 @@ Machines must be Windows 10, version 18323 (also known as Windows 10 19H1) or la
    - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
    - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-
 - **Enable live response from the settings page**<br>
 You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
@@ -95,12 +94,16 @@ The dashboard also gives you access to:
 3. Use the built-in commands to do investigative work. For more information see, [Live response commands](#live-response-commands).
 4. After completing your investigation, select **Disconnect session**, then select **Confirm**.
 
+## Download a file in the background
+
 
 
 ## Live response commands
+
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 ### Basic commands
+
 The following commands are available for user roles that's been granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
 Command | Description 
@@ -137,11 +140,13 @@ undo | Restores an entity that was remediated.
 
 
 ## Use live response commands
+
 The commands that you can use in the console follow similar principles as [Windows Commands](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the machine, and take remediation actions on an entity.
 
 ### Get a file from the machine
+
 For scenarios when you'd like get a file from a machine you're investigating, you can use the `getfile` command. This allows you to save the file from the machine for further investigation.
 
 >[!NOTE]
@@ -154,7 +159,8 @@ Live response allows PowerShell scripts to run, however you must first put the f
 
 You can have a collection of PowerShell scripts that can run on machines that you initiate live response sessions with. 
 
-**To upload a file in the library:** 
+#### To upload a file in the library
+
 1. Click **Upload file to library**. 
 2. Click **Browse** and select the file.
 3. Provide a brief description.
@@ -252,7 +258,7 @@ Each command is tracked with full details such as:
 - A machine can only be in one session at a time
 - There is a file size limit of 750mb when downloading files from a machine
 
-## Related topic
+## Related article
 - [Live response command examples](live-response-command-examples.md)
 
 
