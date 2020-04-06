@@ -142,8 +142,6 @@ When an exception is created for a recommendation, the recommendation is no long
     - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
     - **Other** - False positive
 
-![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
-
 3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 
 4. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab to view all your exceptions (current and past).
