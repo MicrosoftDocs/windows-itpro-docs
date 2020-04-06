@@ -109,25 +109,25 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
-Command | Description 
-:---|:---|:---
-`cd` | Changes the current directory. 
-`cls` | Clears the console screen. 
-`connect` | Initiates a live response session to the device. 
-`connections` | Shows all the active connections.
-`dir` | Shows a list of files and subdirectories in a directory
-`download <file_path> &` | Downloads a file in the background
-drivers |  Shows all drivers installed on the device.
-`fg <command ID>` | Returns a file download to the foreground
-`fileinfo` | Get information about a file.
-`findfile` | Locates files by a given name on the device.
-`help` | Provides help information for live response commands.
-`persistence` | Shows all known persistence methods on the device.
-`processes` | Shows all processes running on the device.
-`registry` | Shows registry values.
-`scheduledtasks` | Shows all scheduled tasks on the device. 
-`services` | Shows all services on the device. 
-`trace` | Sets the terminal's logging mode to debug.
+| Command | Description |
+|---|---|--- |
+|`cd` | Changes the current directory. | 
+|`cls` | Clears the console screen.  |
+|`connect` | Initiates a live response session to the device. |
+|`connections` | Shows all the active connections. |
+|`dir` | Shows a list of files and subdirectories in a directory. |
+|`download <file_path> &` | Downloads a file in the background. |
+drivers |  Shows all drivers installed on the device. |
+|`fg <command ID>` | Returns a file download to the foreground. |
+|`fileinfo` | Get information about a file. |
+|`findfile` | Locates files by a given name on the device. |
+|`help` | Provides help information for live response commands. |
+|`persistence` | Shows all known persistence methods on the device. |
+|`processes` | Shows all processes running on the device. |
+|`registry` | Shows registry values. |
+|`scheduledtasks` | Shows all scheduled tasks on the device. |
+|`services` | Shows all services on the device. |
+|`trace` | Sets the terminal's logging mode to debug. |
 
 ### Advanced commands
 The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
