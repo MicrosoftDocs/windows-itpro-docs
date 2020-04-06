@@ -217,15 +217,13 @@ The data type is also stated in the CSP documentation. The most common data type
 - bool (Boolean)
 
 
-<span id="example-intune">
 ## Example: Manage Surface Hub settings with Microsoft Intune
 
 You can use Microsoft Intune to manage Surface Hub settings. For custom settings, follow the instructions in [How to configure custom device settings in Microsoft Intune](https://docs.microsoft.com/intune/custom-settings-configure). For **Platform**, select **Windows 10 and later**, and in **Profile type**, select **Device restrictions (Windows 10 Team)**.
 
 
 
-<span id="example-sccm">
-## Example: Manage Surface Hub settings with  Microsoft Endpoint Configuration Manager
+## Example: Manage Surface Hub settings with Microsoft Endpoint Configuration Manager
 Configuration Manager supports managing modern devices that do not require the Configuration Manager client to manage them, including Surface Hub. If you already use Configuration Manager to manage other devices in your organization, you can continue to use the Configuration Manager console as your single location for managing Surface Hubs.
 
 > [!NOTE]
