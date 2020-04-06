@@ -25,11 +25,11 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
 
-- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Create JAMF policies](#create-jamf-policies)
-- [Client device setup](#client-device-setup)
-- [Deployment](#deployment)
-- [Check onboarding status](#check-onboarding-status)
+1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+1. [Create JAMF policies](#create-jamf-policies)
+1. [Client device setup](#client-device-setup)
+1. [Deployment](#deployment)
+1. [Check onboarding status](#check-onboarding-status)
 
 ## Prerequisites and system requirements
 
@@ -37,18 +37,18 @@ Before you get started, please see [the main Microsoft Defender ATP for Mac page
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
-## Quick guide
+## Overview
 
-The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender ATP for Macs, via Intune. More detailed steps are available below.
+The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender ATP for Macs, via JAMF. More detailed steps are available below.
 
 | Step | Sample file names | BundleIdentifier |
 |-|-|-|
-| 1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| 2. [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
-| 3. [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdavtray |
-| 4. [Configure Microsoft AutoUpdate (MAU)](../mac-updates.md#jamf ) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
-| 5. [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
-| 6. [Approve Kernel Extension for Microsoft Defender ATP](#approved-kernel-extension) | Note: If there was one, MDATP_KExt.plist | N/A |
+| [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
+| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
+| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdavtray |
+| [Configure Microsoft AutoUpdate (MAU)](../mac-updates.md#jamf ) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
+| [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
+| [Approve Kernel Extension for Microsoft Defender ATP](#approved-kernel-extension) | Note: If there was one, MDATP_KExt.plist | N/A |
 
 ## Download installation and onboarding packages
 
