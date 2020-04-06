@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Investigate entities on machines using live response
+# Investigate entities on devices using live response
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -65,18 +65,18 @@ You'll need to enable the live response capability in the [Advanced features set
     >[!WARNING]
     >Allowing the use of unsigned scripts may increase your exposure to threats.
  
-  Running unsigned scripts is generally not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
+  Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
 - **Ensure that you have the appropriate permissions**<br>
-    Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+    Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
     > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
 
-    Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permission are controlled by RBAC custom role. 
+    Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role. 
 
 ## Live response dashboard overview
-When you initiate a live response session on a machine, a dashboard opens. The dashboard provides information about the session such as: 
+When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following: 
 
 - Who created the session
 - When the session started
@@ -93,68 +93,65 @@ The dashboard also gives you access to:
 
 1. Log in to Microsoft Defender Security Center.
 
-2. Navigate to the machines list page and select a machine to investigate. The machine page opens.
+2. Navigate to the devices list page and select a machine to investigate. The machines page opens.
 
-    >[!NOTE]
-    >Machines must be on Windows 10, version 18323 (also known as Windows 10 19H1) or later. 
+3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 
-3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the machine.
-
-4. Use the built-in commands to do investigative work. For more information see, [Live response commands](#live-response-commands).
+4. Use the built-in commands to do investigative work. For more information, see [Live response commands](#live-response-commands).
 
 5. After completing your investigation, select **Disconnect session**, then select **Confirm**.
 
 ## Live response commands
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
 ### Basic commands
 
-The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
 Command | Description 
 :---|:---|:---
-cd | Changes the current directory. 
-cls | Clears the console screen. 
-connect | Initiates a live response session to the machine. 
-connections | Shows all the active connections.
-dir | Shows a list of files and subdirectories in a directory
+`cd` | Changes the current directory. 
+`cls` | Clears the console screen. 
+`connect` | Initiates a live response session to the device. 
+`connections` | Shows all the active connections.
+`dir` | Shows a list of files and subdirectories in a directory
 `download <file_path> &` | Downloads a file in the background
-drivers |  Shows all drivers installed on the machine.
+drivers |  Shows all drivers installed on the device.
 `fg <command ID>` | Returns a file download to the foreground
-fileinfo | Get information about a file.
-findfile | Locates files by a given name on the machine.
-help | Provides help information for live response commands.
-persistence | Shows all known persistence methods on the machine.
-processes | Shows all processes running on the machine.
-registry | Shows registry values.
-scheduledtasks| Shows all scheduled tasks on the machine. 
-services | Shows all services on the machine. 
-trace | Sets the terminal's logging mode to debug.
+`fileinfo` | Get information about a file.
+`findfile` | Locates files by a given name on the device.
+`help` | Provides help information for live response commands.
+`persistence` | Shows all known persistence methods on the device.
+`processes` | Shows all processes running on the device.
+`registry` | Shows registry values.
+`scheduledtasks` | Shows all scheduled tasks on the device. 
+`services` | Shows all services on the device. 
+`trace` | Sets the terminal's logging mode to debug.
 
 ### Advanced commands
 The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
 
-Command | Description 
-:---|:---
-analyze | Analyses the entity with various incrimination engines to reach a verdict.
-getfile | Gets a file from the machine. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. 
-run | Runs a PowerShell script from the library on the machine.
-library | Lists files that were uploaded to the live response library.
-putfile | Puts a file from the library to the machine. Files are saved in a working folder and are deleted when the machine restarts by default.
-remediate | Remediates an entity on the machine. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command. 
-undo | Restores an entity that was remediated. 
+| Command | Description |
+|---|---|
+| `analyze` | Analyses the entity with various incrimination engines to reach a verdict. |
+| `getfile` | Gets a file from the device. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. |
+| `run` | Runs a PowerShell script from the library on the device. |
+| `library` | Lists files that were uploaded to the live response library. |
+| `putfile` | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
+| `remediate` | Remediates an entity on the device. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command. 
+|`undo` | Restores an entity that was remediated. |
 
 
 ## Use live response commands
 
 The commands that you can use in the console follow similar principles as [Windows Commands](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
-The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the machine, and take remediation actions on an entity.
+The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
 
 ### Get a file from the machine
 
-For scenarios when you'd like get a file from a machine you're investigating, you can use the `getfile` command. This allows you to save the file from the machine for further investigation.
+For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 
 >[!NOTE]
 >There is a file size limit of 750mb.
@@ -182,7 +179,7 @@ Live response has a library where you can put files into. The library stores fil
 
 Live response allows PowerShell scripts to run, however you must first put the files into the library before you can run them. 
 
-You can have a collection of PowerShell scripts that can run on machines that you initiate live response sessions with. 
+You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with. 
 
 #### To upload a file in the library
 
@@ -268,7 +265,7 @@ processes > output.txt
 
 ## View the command log
 
-Select the **Command log** tab to see the commands used on the machine during a session. 
+Select the **Command log** tab to see the commands used on the device during a session. 
 Each command is tracked with full details such as:
 - ID
 - Command line
@@ -280,8 +277,8 @@ Each command is tracked with full details such as:
 - Live response sessions are limited to 10 live response sessions at a time
 - Large scale command execution is not supported
 - A user can only initiate one session at a time
-- A machine can only be in one session at a time
-- There is a file size limit of 750mb when downloading files from a machine
+- A device can only be in one session at a time
+- There is a file size limit of 750mb when downloading files from a device
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
