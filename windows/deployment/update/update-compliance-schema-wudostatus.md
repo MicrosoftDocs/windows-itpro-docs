@@ -21,7 +21,7 @@ ms.topic: article
 
 WUDOStatus records provide information, for a single device, on their bandwidth utilization for a specific content type in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq), and other information to create more detailed reports and splice on certain common characteristics.
 
-These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference). **@JAIME**
+These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
 
 |Field |Type |Example |Description |
 |-|-|-|-|

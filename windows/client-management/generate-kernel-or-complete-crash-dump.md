@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/28/2019
 ms.reviewer: 
-manager: dcscontentpm
+manager: willchen
 ---
 
 # Generate a kernel or complete crash dump 
@@ -61,7 +61,7 @@ If you can log on while the problem is occurring, you can use the Microsoft Sysi
 2. Select **Start**, and then select **Command Prompt**.
 3. At the command line, run the following command:
 
-   ```cmd
+   ```console
    notMyfault.exe /crash
    ```
 
@@ -80,6 +80,7 @@ To do this, follow these steps:
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.
 
 1. In Registry Editor, locate the following registry subkey:
+
    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl**
 
 2. Right-click **CrashControl**, point to **New**, and then click **DWORD Value**.

@@ -19,7 +19,7 @@ ms.topic: article
 WaaSUpdateStatus records contain device-centric data and acts as the device record for Update Compliance. Each record provided in daily snapshots map to a single device in a single tenant. This table has data such as the current device's installed version of Windows, whether it is on the latest available updates, and whether the device needs attention.
 
 |Field |Type |Example |Description |
-|--|-|-|-|
+|--|-|----|------------------------|
 |**Computer** |[string](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#allow-device-name-in-telemetry-with-group-policy). |
 |**ComputerID** |[string](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**DownloadMode** |[string](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/string) |`Simple (99)` |The device's Delivery Optimization DownloadMode. To learn about possible values, see [Delivery Optimization Reference - Download mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode) |
