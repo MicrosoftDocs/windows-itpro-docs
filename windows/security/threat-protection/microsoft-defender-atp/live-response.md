@@ -41,14 +41,15 @@ With live response, analysts can do all of the following tasks:
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
 - **Verify that you're running a supported version of Windows 10** <br/>
-Machines must be running one of the following versions of Windows 10:
-   - [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-   - [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-   - [1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-   - [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
+Devices must be running one of the following versions of Windows 10:
    - [1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
+   - [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
+   - [1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
+   - [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+   - [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 
 - **Make sure to install appropriate security updates**<br/>
+   - 1903: [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
    - 1809 (RS5): [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
    - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
    - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
