@@ -386,7 +386,7 @@ The steps below provide guidance for the following scenario:
 24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-25.png)
 
-25. In **User experience**, select **Commit chagnes at deadline or during a maintenance window (requires restarts), then select **Next**.
+25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-26.png)
 
 26. In **Alerts** select **Next**.
