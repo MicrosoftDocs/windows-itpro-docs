@@ -34,8 +34,8 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 - [Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
 - [Windows 10, version 1903 ADK](https://go.microsoft.com/fwlink/?linkid=2086042)
-- any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommneded
-- alternatively any supported **full** SQL instance
+- Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommended
+- Alternatively, any supported **full** SQL instance
 
 ### Install SQL Server Express / alternatively use any full SQL instance
 
