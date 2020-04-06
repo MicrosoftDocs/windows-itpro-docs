@@ -70,6 +70,8 @@ In general you need to take the following steps:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 
+If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender ATP for Linux](linux-support-install.md).
+
 ### System requirements
 
 - Supported Linux server distributions and versions: 
