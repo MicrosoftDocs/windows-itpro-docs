@@ -102,7 +102,8 @@ See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/
 
 ## Enable access to Microsoft Defender ATP service URLs in the proxy server
 
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are not blocked by default. Do not disable security monitoring or inspection of these URLs, but allow them as you would other internet traffic. They permit communication with Microsoft Defender ATP service in port 80 and 443:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed below to the allowed domains list.
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 machines running version 1803 or earlier.<br>

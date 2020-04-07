@@ -245,6 +245,7 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 
 #### [Troubleshoot]()
+##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
@@ -442,7 +443,7 @@
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
-#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
+
 
 
 ## Reference
