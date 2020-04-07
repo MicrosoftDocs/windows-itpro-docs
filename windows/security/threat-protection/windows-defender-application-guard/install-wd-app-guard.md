@@ -83,9 +83,11 @@ Application Guard functionality is turned off by default. However, you can quick
 ### To install by using Intune
 
 > [!IMPORTANT]
-> Make sure your organization's devices are [enrolled in Intune](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
+> Make sure your organization's devices meet [requirements](reqs-wd-app-guard.md) and are [enrolled in Intune](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
-![Profile in Intune](images\MDAG-EndpointMgr-newprofile.jpg)
+:::image type="complex" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Endpoint protection profile":::
+
+:::image-end:::
 
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 
