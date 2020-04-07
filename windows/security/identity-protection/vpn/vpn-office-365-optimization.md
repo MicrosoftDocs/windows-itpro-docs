@@ -73,9 +73,9 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 
 For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) to ensure that they are excluded from VPN force tunnelling.
 
-This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the addresses ranges are always used.
+This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the correct IP address ranges are always used.
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the documentation in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial script.
+An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below.
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
