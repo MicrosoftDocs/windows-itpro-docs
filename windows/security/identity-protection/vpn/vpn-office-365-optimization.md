@@ -19,8 +19,8 @@ This article describes how to configure the recommendations in the article [Opti
 
 This can be achieved for the native/built-in Windows 10 VPN client using a _Force Tunnelling with Exclusions_ approach. This allows you to define IP-based exclusions **even when using force tunnelling** in order to "split" certain traffic to use the physical interface while still forcing all other traffic via the VPN interface. Traffic addressed to specifically defined destinations (like those listed in the Office 365 optimize categories) will therefore follow a much more direct and efficient path, without the need to traverse or "hairpin" via the VPN tunnel and back out of the corporate network. For cloud-services like Office 365, this makes a huge difference in performance and usability for remote users.
 
->[!NOTE]
->The term _force tunnelling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 VPN, the term _split tunnelling_ is defined differently as described in the article [VPN routing decisions](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing#split-tunnel-configuration).
+> [!NOTE]
+> The term _force tunnelling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 VPN, the term _split tunnelling_ is defined differently as described in the article [VPN routing decisions](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing#split-tunnel-configuration).
 
 ## Solution Overview
 
