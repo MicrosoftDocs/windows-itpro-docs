@@ -66,8 +66,8 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 </VPNProfile>
 ```
 
->[!NOTE]
->The IP addresses and prefix size values in this example are used purely as examples only and should not be used.
+> [!NOTE]
+> The IP addresses and prefix size values in this example are used purely as examples only and should not be used.
 
 ## Solution Deployment
 
