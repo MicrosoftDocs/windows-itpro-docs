@@ -87,7 +87,17 @@ Application Guard functionality is turned off by default. However, you can quick
 
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 
-2. Choose **Devices** > **Configuration profiles** > **+ Create profile**.
+2. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
 
-3. 
+   a. In the **Platform** list, select **Windows 10 and later**. 
+   
+   b. In the **Profile** list, select **Endpoint protection**. 
+   
+   c. Choose **Create**.
+
+4. Specify the following settings for the profile:
+
+   - **Name** and **Description**
+
+   - In the **Select a category to configure settings** section, choose **Microsoft Defender Application Guard**.
 
