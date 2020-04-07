@@ -85,6 +85,8 @@ Application Guard functionality is turned off by default. However, you can quick
 > [!IMPORTANT]
 > Make sure your organization's devices are [enrolled in Intune](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
+![Profile in Intune](images\MDAG-EndpointMgr-newprofile.jpg)
+
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 
 2. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
@@ -101,3 +103,20 @@ Application Guard functionality is turned off by default. However, you can quick
 
    - In the **Select a category to configure settings** section, choose **Microsoft Defender Application Guard**.
 
+   - In the **Application Guard** list, choose **Enabled for Edge**.
+
+   - Choose your preferences for **Clipboard behavior**, **External content**, and the remaining settings.
+
+5. Choose **OK**, and then choose **OK** again.
+
+6. Review your settings, and then choose **Create**.
+
+7. Choose **Assignments**, and then do the following:
+
+   a. On the **Include** tab, in the **Assign to** list, choose an option.
+
+   b. If you have any devices or users you want to exclude from this endpoint protection profile, specify those on the **Exclude** tab.
+
+   c. Click **Save**.
+
+After the profile is created, any devices to which the policy should apply will have Windows Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.
