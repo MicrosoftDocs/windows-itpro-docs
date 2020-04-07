@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: kelleyvice-msft
 ms.localizationpriority: medium
-ms.date: 04/06/2020
+ms.date: 04/07/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: jajo
@@ -26,15 +26,15 @@ This can be achieved for the native/built-in Windows 10 VPN client using a _Forc
 
 The solution is based upon the use of a VPN Configuration Service Provider Reference profile ([VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)) and the embedded [ProfileXML](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-profile-xsd). These are used to configure the VPN profile on the device. Various provisioning approaches can be used to create and deploy the VPN profile as discussed in the article [Step 6. Configure Windows 10 client Always On VPN connections](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files).
 
-Typically, these VPN profiles are distributed using a Mobile Device Manager solution like Intune, as described in [VPN profile options](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
+Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
 
-To enable the use of force tunnelling in Windows 10 VPN, the <RoutingPolicyType> setting is typically configured with a value of _ForceTunnel_ in your existing Profile XML (or script) by way of the following entry, under the <NativeProfile></NativeProfile> section:
+To enable the use of force tunnelling in Windows 10 VPN, the `<RoutingPolicyType>` setting is typically configured with a value of _ForceTunnel_ in your existing Profile XML (or script) by way of the following entry, under the `<NativeProfile></NativeProfile>` section:
 
 ```xml
 <RoutingPolicyType>ForceTunnel</RoutingPolicyType>
 ```
 
-In order to define specific force tunnel exclusions, you then need to add the following lines to your existing Profile XML (or script) for each required exclusion, and place them outside of the <NativeProfile></NativeProfile> section as follows:
+In order to define specific force tunnel exclusions, you then need to add the following lines to your existing Profile XML (or script) for each required exclusion, and place them outside of the `<NativeProfile></NativeProfile>` section as follows:
 
 ```xml
 <Route>
@@ -44,7 +44,7 @@ In order to define specific force tunnel exclusions, you then need to add the fo
 </Route>
 ```
 
-Entries defined by the **[IP Addresses or Subnet]** and **[IP Prefix]** references will consequently be added to the routing table as _more specific route entries_ that will use the Internet-connected interface as the default gateway, as opposed to using the VPN interface. You will need to define a unique and separate <Route></Route> section for each required exclusion.
+Entries defined by the `[IP Addresses or Subnet]` and `[IP Prefix]` references will consequently be added to the routing table as _more specific route entries_ that will use the Internet-connected interface as the default gateway, as opposed to using the VPN interface. You will need to define a unique and separate `<Route></Route>` section for each required exclusion.
 
 An example of a correctly formatted Profile XML configuration for force tunnel with exclusions is shown below:
 
@@ -73,9 +73,9 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 
 For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) to ensure that they are excluded from VPN force tunnelling.
 
-This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the addresses ranges are always used.
+This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the correct IP address ranges are always used.
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the documentation in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial script.
+An example of a PowerShell script that can be used to update a force tunnel VPN connection with Office 365 exclusions is provided below.
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -437,7 +437,7 @@ This solution is supported with the following versions of Windows:
 - Windows 10 Enterprise 2016 LTSC: Exclusion routes are not supported
 - Windows 10 Enterprise 2015 LTSC: Exclusion routes are not supported
 
-Microsoft strongly recommends that the latest Windows 10 cumulative update always be applied.
+Microsoft strongly recommends that the latest available Windows 10 cumulative update always be applied.
 
 ## Other Considerations
 
@@ -445,7 +445,7 @@ You should also be able to adapt this approach to include necessary exclusions f
 
 ## Examples
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below:
+An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial PowerShell script:
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -664,8 +664,11 @@ Write-Host "$Message"
 
 ```
 
-An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file:
+An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
+
+>[!NOTE]
+>This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.
 
 ```xml
-_<VPNProfile><RememberCredentials>true</RememberCredentials><DnsSuffix>corp.contoso.com</DnsSuffix><AlwaysOn>true</AlwaysOn><TrustedNetworkDetection>corp.contoso.com</TrustedNetworkDetection><NativeProfile><Servers>edge1.contoso.com</Servers><RoutingPolicyType>ForceTunnel</RoutingPolicyType><NativeProtocolType>IKEv2</NativeProtocolType><Authentication><MachineMethod>Certificate</MachineMethod></Authentication></NativeProfile><Route><Address>13.107.6.152</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.18.10</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.128.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>23.103.160.0</Address><PrefixSize>20</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.96.0.0</Address><PrefixSize>13</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.104.0.0</Address><PrefixSize>15</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.96.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>131.253.33.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>132.245.0.0</Address><PrefixSize>16</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.32.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>191.234.140.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>204.79.197.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.136.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.108.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.104.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>104.146.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.40.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.60.1</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.64.0</Address><PrefixSize>18</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.112.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.120.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Proxy><AutoConfigUrl>http://webproxy.corp.contsoso.com/proxy.pac</AutoConfigUrl></Proxy></VPNProfile>_
+<VPNProfile><RememberCredentials>true</RememberCredentials><DnsSuffix>corp.contoso.com</DnsSuffix><AlwaysOn>true</AlwaysOn><TrustedNetworkDetection>corp.contoso.com</TrustedNetworkDetection><NativeProfile><Servers>edge1.contoso.com</Servers><RoutingPolicyType>ForceTunnel</RoutingPolicyType><NativeProtocolType>IKEv2</NativeProtocolType><Authentication><MachineMethod>Certificate</MachineMethod></Authentication></NativeProfile><Route><Address>13.107.6.152</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.18.10</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.128.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>23.103.160.0</Address><PrefixSize>20</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.96.0.0</Address><PrefixSize>13</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.104.0.0</Address><PrefixSize>15</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.96.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>131.253.33.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>132.245.0.0</Address><PrefixSize>16</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.32.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>191.234.140.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>204.79.197.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.136.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.108.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.104.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>104.146.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.40.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.60.1</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.64.0</Address><PrefixSize>18</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.112.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.120.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Proxy><AutoConfigUrl>http://webproxy.corp.contsoso.com/proxy.pac</AutoConfigUrl></Proxy></VPNProfile>
 ```
