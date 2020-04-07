@@ -437,7 +437,7 @@ This solution is supported with the following versions of Windows:
 - Windows 10 Enterprise 2016 LTSC: Exclusion routes are not supported
 - Windows 10 Enterprise 2015 LTSC: Exclusion routes are not supported
 
-Microsoft strongly recommends that the latest Windows 10 cumulative update always be applied.
+Microsoft strongly recommends that the latest available Windows 10 cumulative update always be applied.
 
 ## Other Considerations
 
@@ -445,7 +445,7 @@ You should also be able to adapt this approach to include necessary exclusions f
 
 ## Examples
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below:
+An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the inittial PowerShell script:
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
