@@ -1,7 +1,7 @@
 ---
-title: Configure HP ArcSight to pull Microsoft Defender ATP detections
-description: Configure HP ArcSight to receive and pull detections from Microsoft Defender Security Center
-keywords: configure hp arcsight, security information and events management tools, arcsight
+title: Configure Micro Focus ArcSight to pull Microsoft Defender ATP detections
+description: Configure Micro Focus ArcSight to receive and pull detections from Microsoft Defender Security Center
+keywords: configure Micro Focus ArcSight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure HP ArcSight to pull Microsoft Defender ATP detections
+# Configure Micro Focus ArcSight to pull Microsoft Defender ATP detections
 
 **Applies to:**
 
@@ -28,14 +28,14 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
-You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Microsoft Defender ATP detections.
+You'll need to install and configure some files and tools to use Micro Focus ArcSight so that it can pull Microsoft Defender ATP detections.
 
 >[!Note]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
 >- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
 
 ## Before you begin
-Configuring the HP ArcSight Connector tool requires several configuration files for it to pull and parse detections from your Azure Active Directory (AAD) application.
+Configuring the Micro Focus ArcSight Connector tool requires several configuration files for it to pull and parse detections from your Azure Active Directory (AAD) application.
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
@@ -50,7 +50,7 @@ This section guides you in getting the necessary information to set and use the 
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    You would have saved a .zip file which contains these two files when you chose HP ArcSight as the SIEM type you use in your organization.
+    You would have saved a .zip file which contains these two files when you chose Micro Focus ArcSight as the SIEM type you use in your organization.
 
 - Make sure you generate the following tokens and have them ready:
   - Access token
@@ -58,7 +58,7 @@ This section guides you in getting the necessary information to set and use the 
 
   You can generate these tokens from the **SIEM integration** setup section of the portal.
 
-## Install and configure HP ArcSight FlexConnector
+## Install and configure Micro Focus ArcSight FlexConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
 1. Install the latest 32-bit Windows FlexConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightFlexConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
@@ -117,7 +117,7 @@ The following steps assume that you have completed all the required steps in [Be
     </table><br/>7. A browser window is opened by the connector. Login with your application credentials. After you log in, you&#39;ll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
    If the <code>redirect_uri</code> is a https URL, you&#39;ll be redirected to a URL on the local host. You&#39;ll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You&#39;ll need to trust this certificate if the redirect_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
-7. Continue with the connector setup by returning to the HP ArcSight Connector Setup window.
+7. Continue with the connector setup by returning to the Micro Focus ArcSight Connector Setup window.
 
 8. Select the **ArcSight Manager (encrypted)** as the destination and click **Next**.
 
@@ -137,7 +137,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 16. Finish the installation by selecting **Exit** and **Next**.
 
-## Install and configure the HP ArcSight console
+## Install and configure the Micro Focus ArcSight console
 1. Follow the installation wizard through the following tasks:
    - Introduction
    - License Agreement
@@ -158,18 +158,18 @@ The following steps assume that you have completed all the required steps in [Be
 
 7. Click **Done** to quit the installer.
 
-8. Login to the HP ArcSight console.
+8. Login to the Micro Focus ArcSight console.
 
 9. Navigate to **Active channel set** > **New Condition** > **Device** > **Device Product**.
 
 10. Set **Device Product = Microsoft Defender ATP**. When you've verified that events are flowing to the tool, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
-You can now run queries in the HP ArcSight console.
+You can now run queries in the Micro Focus ArcSight console.
 
 Microsoft Defender ATP detections will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
 
 
-## Troubleshooting HP ArcSight connection
+## Troubleshooting Micro Focus ArcSight connection
 **Problem:** Failed to refresh the token. You can find the log located in C:\\*folder_location*\current\logs where *folder_location* represents the location where you installed the tool. Open _agent.log_ and look for `ERROR/FATAL/WARN`.
 
 **Symptom:** You get the following error message:
