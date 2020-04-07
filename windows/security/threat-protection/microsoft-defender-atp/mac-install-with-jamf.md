@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ms.date: 04/03/2020
 ---
 
 # JAMF-based deployment for Microsoft Defender ATP for Mac
@@ -73,17 +74,17 @@ You need to create a configuration profile and a policy to start deploying Micro
 
 ### Configuration Profile
 
-The configuration profile contains a custom settings payload that includes:
+The configuration profile contains a custom settings payload that includes the following:
 
 - Microsoft Defender ATP for Mac onboarding information
-- Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
+- Approved Kernel Extensions payload to enable running the Microsoft kernel driver
 
-To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
+To set the onboarding information, add a property list file that is named **jamf/WindowsDefenderATPOnboarding.plist** as a custom setting. To do this, select **Computers** > **Configuration Profiles** > **New**, and then select **Application & Custom Settings** > **Configure**. From there, you can upload the property list.
 
   >[!IMPORTANT]
-  > You must set the Preference Domain as "com.microsoft.wdav.atp"
+  > You have to set the **Preference Domain** to **com.microsoft.wdav.atp**. There are some changes to the Custom Payloads and also to the Jamf Pro user interface in version 10.18 and later versions. For more information about the changes, see [Configuration Profile Payload Settings Specific to Jamf Pro](https://www.jamf.com/jamf-nation/articles/217/configuration-profile-payload-settings-specific-to-jamf-pro).
 
-![Configuration profile screenshot](../windows-defender-antivirus/images/MDATP-16-PreferenceDomain.png)
+![Configuration profile screenshot](./images/msdefender-mac-config-profile.png)
 
 ### Approved Kernel Extension
 

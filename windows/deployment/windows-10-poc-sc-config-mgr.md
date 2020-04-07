@@ -326,7 +326,7 @@ WDSUTIL /Set-Server /AnswerClients:None
 
      See the following example:
 
-     <img src="images/sccm-pxe.png" alt="Config Mgr PXE"/>
+     <img src="images/configmgr-pxe.png" alt="Config Mgr PXE"/>
 
 5. Click **OK**.
 6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
@@ -900,7 +900,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 14. Click the **Site** tab, click **Configure Settings**, and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
 
-    ![site](images/sccm-site.png)
+    ![site](images/configmgr-site.png)
 
     If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the site code is not located is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode** this must be deleted or updated.
 
@@ -908,7 +908,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 16. Click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
 
-    ![client](images/sccm-client.png)
+    ![client](images/configmgr-client.png)
 
     >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above. To refresh the client, click it and then press **F5** or right-click the client and click **Refresh**.
 
@@ -970,7 +970,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 11. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
 
-    ![collection](images/sccm-collection.png)
+    ![collection](images/configmgr-collection.png)
 
 ### Create a device collection for PC1
 
@@ -1018,7 +1018,7 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 4. In the Software Center , click **Available Software** and then select the **Replace Task Sequence** checkbox. See the following example:
 
-    ![software](images/sccm-software-cntr.png)
+    ![software](images/configmgr-software-cntr.png)
 
     >If you do not see any available software, try running step #2 again to start the Machine Policy Retrieval & Evaluation Cycle. You should see an alert that new software is available.
 
@@ -1056,17 +1056,17 @@ In the Configuration Manager console, in the Software Library workspace under Op
 3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
 4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
 
-    ![installOS](images/sccm-install-os.png)
+    ![installOS](images/configmgr-install-os.png)
 
     The computer will restart several times during the installation process. Installation includes downloading updates, reinstalling the Configuration Manager Client Agent, and restoring the user state. You can view status of the installation in the Configuration Manager console by accessing the Monitoring workspace, clicking **Deployments**, and then double-clicking the deployment associated with the **Install Windows 10 Enterprise x64** collection. Under **Asset Details**, right-click the device and then click **More Details**. Click the **Status** tab to see a list of tasks that have been performed.  See the following example:
 
-    ![asset](images/sccm-asset.png)   
+    ![asset](images/configmgr-asset.png)   
     
     You can also monitor progress of the installation by using the MDT deployment workbench and viewing the **Monitoring** node under **Deployment Shares\MDT Production**. 
     
     When installation has completed, sign in using the contoso\administrator account or the contoso\user1 account and verify that applications and settings have been successfully backed up and restored to your new Windows 10 Enterprise operating system.
 
-    ![post-refresh](images/sccm-post-refresh.png) 
+    ![post-refresh](images/configmgr-post-refresh.png) 
 
 
 

@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 03/27/2020
 ---
 
 # View and organize the Microsoft Defender Advanced Threat Protection Alerts queue
@@ -26,6 +26,9 @@ ms.date: 04/24/2018
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 The **Alerts queue** shows a list of alerts that were flagged from machines in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view, with the most recent alerts showing at the top of the list, helping you see the most recent alerts first.
+
+>[!NOTE]
+>The alerts queue is significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a machine that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
 There are several options you can choose from to customize the alerts queue view. 
 
@@ -45,10 +48,10 @@ You can apply the following filters to limit the list of alerts and get a more f
 
 Alert severity | Description
 :---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines.
-Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
-Informational </br>(Grey) | Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.
+High </br>(Red) | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines. Some examples of these are credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
+Medium </br>(Orange) | Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
+Low </br>(Yellow) | Alerts on threats associated with prevalent malware, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
+Informational </br>(Grey) | Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
 #### Understanding alert severity
 It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.

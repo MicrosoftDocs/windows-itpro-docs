@@ -79,7 +79,8 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 7. Apply the configuration settings.
 
 
-After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
+> [!IMPORTANT]
+> After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
 
 
 ## Edit roles

@@ -8,12 +8,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 02/14/2020
 ---
 
 # Windows Autopilot and Surface devices

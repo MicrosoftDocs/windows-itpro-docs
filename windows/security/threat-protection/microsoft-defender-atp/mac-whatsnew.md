@@ -26,6 +26,20 @@ ms.topic: conceptual
 > 
 > If you have previously whitelisted the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to whitelist the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to whitelist the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
+## 100.90.27
+
+- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender ATP for Mac that is different from the system-wide update channel
+- New product icon
+- Other user experience improvements
+- Bug fixes
+
+## 100.86.92
+
+- Improvements around compatibility with Time Machine
+- Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation
+- Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate
+- Other performance improvements & bug fixes
+
 ## 100.86.91
 
 > [!CAUTION]
