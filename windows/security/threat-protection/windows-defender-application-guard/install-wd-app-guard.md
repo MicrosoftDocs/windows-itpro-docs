@@ -122,3 +122,4 @@ Application Guard functionality is turned off by default. However, you can quick
    c. Click **Save**.
 
 After the profile is created, any devices to which the policy should apply will have Windows Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.
+
