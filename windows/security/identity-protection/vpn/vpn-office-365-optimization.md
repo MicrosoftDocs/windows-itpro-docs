@@ -26,7 +26,7 @@ This can be achieved for the native/built-in Windows 10 VPN client using a _Forc
 
 The solution is based upon the use of a VPN Configuration Service Provider Reference profile ([VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)) and the embedded [ProfileXML](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-profile-xsd). These are used to configure the VPN profile on the device. Various provisioning approaches can be used to create and deploy the VPN profile as discussed in the article [Step 6. Configure Windows 10 client Always On VPN connections](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files).
 
-Typically, these VPN profiles are distributed using a Mobile Device Manager solution like Intune, as described in [VPN profile options](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
+Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
 
 To enable the use of force tunnelling in Windows 10 VPN, the `<RoutingPolicyType>` setting is typically configured with a value of _ForceTunnel_ in your existing Profile XML (or script) by way of the following entry, under the `<NativeProfile></NativeProfile>` section:
 
@@ -664,7 +664,7 @@ Write-Host "$Message"
 
 ```
 
-An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file. 
+An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
 
 >[!NOTE]
 >This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.
