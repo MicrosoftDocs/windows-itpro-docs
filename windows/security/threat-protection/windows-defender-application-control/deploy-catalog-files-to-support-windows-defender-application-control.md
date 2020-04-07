@@ -81,7 +81,7 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
     `PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName`
 
 >[!NOTE]
->Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
+>Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries' hash values.
 
 When finished, the files will be saved to your desktop. You can double-click the \*.cat file to see its contents, and you can view the \*.cdf file with a text editor. 
 
@@ -95,16 +95,16 @@ Packages can fail for the following reasons:
     - To diagnose whether USN journal size is the issue, after running through Package Inspector, click Start > install app > PackageInspector stop
         - Get the value of the reg key at HKEY\_CURRENT\_USER/PackageInspectorRegistryKey/c: (this was the most recent USN when you ran PackageInspector start)
         - `fsutil usn readjournal C: startusn=RegKeyValue > inspectedusn.txt`
-        - ReadJournal command should throw an error if the older USNs don’t exist anymore due to overflow
+        - ReadJournal command should throw an error if the older USNs don't exist anymore due to overflow
     - For USN Journal, log size can be expanded using: `fsutil usn createjournal` command with a new size and alloc delta. `Fsutil usn queryjournal` will give the current size and allocation delta, so using a multiple of that may help
     - To diagnose whether Eventlog size is the issue, look at the Microsoft/Windows/CodeIntegrity/Operational log under Applications and Services logs in Event Viewer and ensure that there are entries present from when you began Package Inspector (You can use write time as a justification; if you started the install 2 hours ago and there are only entries from 30 minutes prior, the log is definitely too small)
     - To increase Eventlog size, in Event Viewer you can right click the operational log, click properties, and then set new values (some multiple of what it was previously)
 - Package files that change hash each time the package is installed
     - Package Inspector is completely incompatible if files in the package (temporary or otherwise) change hash each time the package is installed. You can diagnose this by looking at the hash field in the 3077 block events when the package is failing in enforcement.  If each time you attempt to run the package you get a new block event with a different hash, the package will not work with Package Inspector
-- Files with an invalid signature blob or otherwise “unhashable” files
+- Files with an invalid signature blob or otherwise "unhashable" files
     - This issue arises when a file that has been signed is modified post signing in a way that invalidates the PE header and renders the file unable to be hashed by the Authenticode Spec.
-    - WDAC uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can’t be allowed by hash due to authenticode hashing algorithm rejecting it)
-    - Recent versions of InstallShield packages that use custom actions can hit this. If the DLL input to the custom action was signed before being put through InstallShield, InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this “unhashable” state and renders the file unable to be allowed by Device Guard (regardless of if you try to allow directly by policy or resign with Package Inspector)
+    - WDAC uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can't be allowed by hash due to authenticode hashing algorithm rejecting it)
+    - Recent versions of InstallShield packages that use custom actions can hit this. If the DLL input to the custom action was signed before being put through InstallShield, InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this "unhashable" state and renders the file unable to be allowed by Windows Defender (regardless of if you try to allow directly by policy or resign with Package Inspector)
 
 ## Catalog signing with SignTool.exe
 
@@ -124,7 +124,7 @@ To sign the existing catalog file, copy each of the following commands into an e
     
    `$CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"`
 
-2. Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user’s personal store. 
+2. Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user's personal store. 
 
 3. Sign the catalog file with Signtool.exe:
 

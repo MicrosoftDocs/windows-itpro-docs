@@ -70,6 +70,8 @@ In general you need to take the following steps:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 
+If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender ATP for Linux](linux-support-install.md).
+
 ### System requirements
 
 - Supported Linux server distributions and versions: 
@@ -103,10 +105,10 @@ The following table lists the services and their associated URLs that your netwo
 
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
+| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
+| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
+| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server) 
@@ -117,25 +119,7 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Microsoft Defender ATP. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
-## Validating cloud connectivity
-
-To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
-
-If you prefer the command line, you can also check the connection by running the following command in Terminal:
-
-```bash
-$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
-```
-
-The output from this command should be similar to the following:
-
-> `OK https://x.cp.wd.microsoft.com/api/report`  
-> `OK https://cdn.x.cp.wd.microsoft.com/ping`
-
-Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
-```bash
-$ mdatp --connectivity-test
-```
+For troubleshooting steps, see the [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md) page.
 
 ## How to update Microsoft Defender ATP for Linux
 

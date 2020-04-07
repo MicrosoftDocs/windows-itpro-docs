@@ -22,6 +22,7 @@ ms.topic: article
 - Windows 10
 
 In Microsoft Microsoft Endpoint Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This topic shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
+- The boot image that is created is based on the version of ADK that is installed.
 
 For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
@@ -30,7 +31,9 @@ For the purposes of this guide, we will use one server computer: CM01.
 
 ## Add DaRT 10 files and prepare to brand the boot image
 
-The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. We assume you have downloaded [Microsoft Desktop Optimization Pack (MDOP) 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015) and copied the x64 version of MSDaRT100.msi to the **C:\\Setup\\DaRT 10** folder on CM01. We also assume you have created a custom background image and saved it in **C:\\Setup\\Branding** on CM01. In this section, we use a custom background image named <a href="../images/ContosoBackground.png">ContosoBackground.bmp</a>.
+The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. These steps are optional. If you do not wish to add DaRT, skip the steps below to copy DaRT tools and later skip adding the DaRT component to the boot image.
+
+We assume you have downloaded [Microsoft Desktop Optimization Pack (MDOP) 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015) and copied the x64 version of MSDaRT100.msi to the **C:\\Setup\\DaRT 10** folder on CM01. We also assume you have created a custom background image and saved it in **C:\\Setup\\Branding** on CM01. In this section, we use a custom background image named <a href="../images/ContosoBackground.png">ContosoBackground.bmp</a>.
 
 On **CM01**:
 
@@ -60,6 +63,8 @@ On **CM01**:
     ![Add the DaRT component to the Configuration Manager boot image](../images/mdt-06-fig16.png "Add the DaRT component to the Configuration Manager boot image")
 
     Add the DaRT component to the Configuration Manager boot image.
+
+    >Note: Another common component to add here is Windows PowerShell to enable PowerShell support within Windows PE.
 
 6.  On the **Customization** page, select the **Use a custom background bitmap file** check box, and in the **UNC path:** text box, browse to **\\\\CM01\\Sources$\\OSD\\Branding\\ContosoBackground.bmp** and then click **Next** twice. Wait a few minutes while the boot image is generated, and then click **Finish**.
 7.  Distribute the boot image to the CM01 distribution point by selecting the **Boot images** node, right-clicking the **Zero Touch WinPE x64** boot image, and selecting **Distribute Content**.

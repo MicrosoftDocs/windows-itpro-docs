@@ -27,11 +27,11 @@ ms.topic: conceptual
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendation helps shorten the time to mitigate or remediate vulnerabilities and drive compliance.
+Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
 Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and Microsoft Endpoint Configuration Manager. When the threat landscape changes, the recommendation also changes as it continuously collects information from your environment.
 
-## Criteria
+## How it works
 
 Each machine in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
 
@@ -41,9 +41,21 @@ Each machine in the organization is scored based on three important factors to h
 
 - **Business value** - Your organization's assets, critical processes, and intellectual properties
 
-## Navigate to security recommendations
+## Navigate to the Security recommendations page
 
-You can access security recommendations from the Microsoft Defender ATP Threat & Vulnerability Management menu, dashboard, software page, and machine page.
+Access the Security recommendations page a few different ways:
+
+- Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Top security recommendations in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+
+View related security recommendations in the following places:
+
+- Software page
+- Machine page
+
+### Navigation menu
+
+Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open the list of security recommendations for the threats and vulnerabilities found in your organization.
 
 ### Top security recommendations in the Threat & Vulnerability Management dashboard
 
@@ -53,21 +65,17 @@ In a given day as a Security Administrator, you can take a look at the [Threat &
 
 The top security recommendations lists the improvement opportunities prioritized based on the important factors mentioned in the previous section - threat, likelihood to be breached, and value. Selecting a recommendation will take you to the security recommendations page with more details about the recommendation.
 
-### Navigation menu
-
-Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open the list of security recommendations for the threats and vulnerabilities found in your organization.
-
 ## Security recommendations overview
 
-You will be able to view the recommendation, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
+View recommendations, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
 
-The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what's on the left, which means an increase or decrease at the end of even a single machine will change the graph's color.
+The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the number of exposed machines, the color of the graph will change into green.
 
 ![Screenshot of security recommendations page](images/tvmsecrec-updated.png)
 
 ### Icons
 
-Useful icons also quickly calls your attention to <ul><li> ![Possible active alert](images/tvm_alert_icon.png) possible active alerts</li><li>![Threat insight](images/tvm_bug_icon.png) associated public exploits</li><li>![Recommendation insight](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+Useful icons also quickly calls your attention to: <ul><li> ![Possible active alert](images/tvm_alert_icon.png) possible active alerts</li><li>![Threat insight](images/tvm_bug_icon.png) associated public exploits</li><li>![Recommendation insight](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
 
 ### Investigate
 
@@ -77,22 +85,22 @@ Select the security recommendation that you want to investigate or process.
 
 From the flyout, you can do any of the following:
 
-- **Open software page** - Drill down and open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, software or software version end-of-life, and charts so you can see the exposure trend over time.
+- **Open software page** - Open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, software or software version end-of-support, and charts of the exposure trend over time.
 
 - **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
-- **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet due to specific business reasons, compensation controls, or if it is a false positive.
+- **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet.
 
 >[!NOTE]
 >When a change is made on a machine, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
 
 ## Request remediation
 
-The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT Administrators through the remediation request workflow. Security Administrators like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+The Threat & Vulnerability Management capability in Microsoft Defender ATP bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
 
 ### Enable Microsoft Intune connection
 
-To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
 
 See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
@@ -106,16 +114,18 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 
 4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
 
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
 >[!NOTE]
 >If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.
 
 ## File for exception
 
-With Threat & Vulnerability Management, you can create exceptions for recommendations, as an alternative to a remediation request.
+As an alternative to a remediation request, you can create exceptions for recommendations.
 
 There are many reasons why organizations create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides as much protection than the recommendation would, a false positive, among other reasons.
 
-Exceptions can be created for both *Security update* and *Configuration change* recommendations.
+Exceptions can be created for both Security update and Configuration change recommendations.
 
 When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
 
@@ -124,13 +134,17 @@ When an exception is created for a recommendation, the recommendation is no long
 
 2. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
-> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+    The following list details the justifications behind the exception options:
+
+    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
+    - **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow
+    - **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
+    - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+    - **Other** - False positive
 
 3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
-![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
 
-4. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past).
-![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png)
+4. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab to view all your exceptions (current and past).
 
 ## Report inaccuracy
 
@@ -144,26 +158,19 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 
-![Screenshot of Report inaccuracy flyout pane](images/report-inaccuracy-flyout500.png)
-
 4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
-
 
 
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md) 
+- [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Recommendation APIs](vulnerability.md)
-- [Machine APIs](machine.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
