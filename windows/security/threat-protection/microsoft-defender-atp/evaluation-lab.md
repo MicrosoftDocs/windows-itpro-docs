@@ -29,7 +29,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
 
-You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
+You can add Windows 10 or Windows Server 2019 machines that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities without having to leave the portal.
 
@@ -39,7 +39,11 @@ You can also install threat simulators. Microsoft Defender ATP has partnered wit
 ## Before you begin
 You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender ATP to access the evaluation lab.
 
+To create the lab, create machines, reset password, and create simulations you must have **Manage security settings** permissions. For more information, see [Create and manage roles](user-roles.md).
+
+
 Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
+
 
 ## Get started with the lab
 You can access the lab from the menu. In the navigation menu, select **Evaluation and tutorials > Evaluation lab**.
@@ -52,10 +56,9 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 >- When you've used up the provisioned machines, no new machines are provided. A deleted machine does not refresh the available test machine count.
 >- Given the limited resources, it’s advisable to use the machines carefully.
 
-
+Already have a lab? Make sure to enable the new threat simulators and have active machines.
 
 ## Setup the evaluation lab
-
 
 1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**, then select **Setup lab**.
 
@@ -86,6 +89,9 @@ After the lab setup process is complete, you can add machines and run simulation
 When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. You can add Windows 10 or Windows Server 2019 machines.
 
 The machine will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
+
+   >[!TIP]
+   > Need more machines in your lab? Submit a support ticket to have your request reviewed by the Microsoft Defender ATP team. 
 
 If you chose to add a threat simulator during the lab setup, all machines will have the threat simulator agent installed in the machines that you add.
 
