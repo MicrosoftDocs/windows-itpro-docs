@@ -75,7 +75,7 @@ For Office 365, it is therefore necessary to add exclusions for all IP addresses
 
 This can be achieved manually by adding the IP addresses defined within the **optimize** category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the correct IP address ranges are always used.
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below.
+An example of a PowerShell script that can be used to update a force tunnel VPN connection with Office 365 exclusions is provided below.
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
