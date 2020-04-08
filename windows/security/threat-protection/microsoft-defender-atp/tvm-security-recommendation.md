@@ -59,7 +59,7 @@ Go to the Threat & Vulnerability Management navigation menu and select **Securit
 
 ### Top security recommendations in the Threat & Vulnerability Management dashboard
 
-In a given day as a Security Administrator, you can take a look at the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side-by-side with your [configuration score](configuration-score.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
+In a given day as a Security Administrator, you can take a look at the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side-by-side with your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's device security to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
 
 ![Screenshot of security recommendations page](images/top-security-recommendations350.png)
 
@@ -67,7 +67,7 @@ The top security recommendations lists the improvement opportunities prioritized
 
 ## Security recommendations overview
 
-View recommendations, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
+View recommendations, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure score and Microsoft Secure Score for Devices, and associated tags.
 
 The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the number of exposed machines, the color of the graph will change into green.
 
@@ -125,8 +125,6 @@ As an alternative to a remediation request, you can create exceptions for recomm
 
 There are many reasons why organizations create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides as much protection than the recommendation would, a false positive, among other reasons.
 
-Exceptions can be created for both Security update and Configuration change recommendations.
-
 When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
 
 1. Select a security recommendation you would like create an exception for, and then **Exception options**.
@@ -167,7 +165,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
