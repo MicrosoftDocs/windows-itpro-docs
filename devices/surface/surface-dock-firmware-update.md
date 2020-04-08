@@ -12,7 +12,7 @@ ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro
 ---
-# Microsoft Surface Dock Firmware Update: Technical information for IT administrators.
+# Microsoft Surface Dock Firmware Update: Technical information for IT administrators
 
 > [!IMPORTANT]
 > This article contains technical instructions for IT administrators. If you are a home user, please see [How to update your Surface Dock Firmware](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) on the Microsoft Support site. The instructions at the support site are the same as the general installation steps below, but this article has additional information for monitoring, verifying, and deploying the update to multiple devices on a network.
