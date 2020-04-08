@@ -5,6 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
+audience: ITPro
+ms.topic: article
 author: kelleyvice-msft
 ms.localizationpriority: medium
 ms.date: 04/07/2020
