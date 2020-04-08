@@ -36,7 +36,7 @@ This section describes how to manually install the firmware update.
 
 ## Monitor the Surface Dock Firmware Update
 
-This section is optional and provides an overview of how to monitor installation of the firmware update. When you are ready to install the update, see [Install the Surface Dock Firmware Update](#install-the-surface-dock-firmware-update) below. For more detailed information about monitoring the update process, see the following sections in this article: 
+This section is optional and provides an overview of how to monitor installation of the firmware update. See the following sections in this article: 
   - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
   - [Event logging](#event-logging)
   - [Troubleshooting tips](#troubleshooting-tips)
