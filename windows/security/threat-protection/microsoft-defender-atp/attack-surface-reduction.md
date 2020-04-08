@@ -101,7 +101,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported
 [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported
 [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
-[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Not supported
+[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Supported
 [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported
 [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported
 [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | Supported
@@ -272,9 +272,6 @@ GUID: 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 ### Block process creations originating from PSExec and WMI commands
 
 This rule blocks processes created through [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) and [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
-
-> [!IMPORTANT]
-> File and folder exclusions do not apply to this attack surface reduction rule.
 
 > [!WARNING]
 > Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.

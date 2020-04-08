@@ -18,7 +18,7 @@ ms.topic: article
 
 Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10. **The list below is subject to change and might not include every affected feature or functionality.** 
 
-For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
+For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md).
 
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
@@ -50,8 +50,9 @@ The following features and functionalities have been removed from the installed 
 |Reading List | Functionality to be integrated into Microsoft Edge. | 1709 |
 |Screen saver functionality in Themes   | This functionality is disabled in Themes, and classified as **Removed** in this table. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lock screen features and policies are preferred. | 1709 |
 |Syskey.exe | Removing this nonsecure security feature. We recommend that users use BitLocker instead. For more information, see [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window). | 1709 |
-|TCP Offload Engine | Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193).| 1709 |
+|TCP Offload Engine | Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193)| 1709 |
 |Tile Data Layer |To be replaced by the Tile Store.| 1709 |
+|Resilient File System (ReFS) (added: August 17, 2017)| Creation ability will be available in the following editions only: Windows 10 Enterprise and Windows 10 Pro for Workstations.  Creation ability will be removed from all other editions. All other editions will have Read and Write ability. | 1709 |
 |Apps Corner| This Windows 10 mobile application is removed in the version 1703 release. | 1703 |
 |By default, Flash autorun in Edge is turned off. | Use the Click-to-Run (C2R) option instead. (This setting can be changed by the user.) | 1703 |
 |Interactive Service Detection Service| See [Interactive Services](https://docs.microsoft.com/windows/win32/services/interactive-services?redirectedfrom=MSDN) for guidance on how to keep software up to date. | 1703 |

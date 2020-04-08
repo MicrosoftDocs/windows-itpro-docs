@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
@@ -68,7 +68,7 @@ If the script fails and the event is an error, you can check the event ID in the
 Event ID | Error Type | Resolution steps
 :---|:---|:---
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
-10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
+10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.<br>Verify that the script has been run as an administrator.
 15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the machine is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
 15 | Failed to start SENSE service | If the message of the error is: System error 577  or error 1058 has occurred. You need to enable the Windows Defender Antivirus ELAM driver, see [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
@@ -79,7 +79,7 @@ Event ID | Error Type | Resolution steps
 ### Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
+If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment.
 
 Use the following tables to understand the possible causes of issues while onboarding:
 
@@ -87,7 +87,7 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.  
+If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.
 
 **Microsoft Intune error codes and OMA-URIs**:
 
@@ -140,7 +140,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
    > [!NOTE]
-	> SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
+   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
 
 3. Select **Operational** to load the log.
 
@@ -282,28 +282,125 @@ You might also need to check the following:
 
 - Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
-- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
+- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
     ![Image of Services](images/atp-services.png)
 
-- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running. 
+- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
     ![Image of Microsoft Monitoring Agent Properties](images/atp-mma-properties.png)
 
-- Check to see that machines are reflected in the **Machines list** in the portal. 
+- Check to see that machines are reflected in the **Machines list** in the portal.
+
+## Confirming onboarding of newly built machines 
+There may be instances when onboarding is deployed on a newly built machine but not completed. 
+
+The steps below provide guidance for the following scenario:
+- Onboarding package is deployed to newly built machines
+- Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
+- Machine is turned off or restarted before the end user performs a first logon
+- In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
+
+>[!NOTE]
+>The following steps are only relevant when using Microsoft Endpoint Configuration Manager (current branch)
 
 
-## Licensing requirements
-Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+1. Create an application in Microsoft Endpoint Configuration Manager current branch. 
 
-- Windows 10 Enterprise E5
-- Windows 10 Education E5
-- Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-1.png)
 
-For more information, see [Windows 10 Licensing](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx#tab=2).
+2. Select **Manually specify the application information**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-2.png)
 
+3. Specify information about the application, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-3.png)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+4.  Specify information about the software center, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-4.png)
+
+5. In **Deployment types** select **Add**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-5.png)
+
+6. Select **Manually specify the deployment type information**, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-6.png)
+
+7. Specify information about the deployment type, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-7.png)
+
+8. In **Content** > **Installation program** specify the command: `net start sense`.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-8.png)
+
+9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**. 
+
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-9.png)
+
+10. Specify the following detection rule details, then select **OK**:
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-10.png)
+
+11. In **Detection method** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-11.png)
+
+12. In **User Experience**, specify the following information, then select **Next**:
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-12.png)
+
+13. In **Requirements**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-13.png)
+
+14. In **Dependencies**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-14.png)
+
+15. In **Summary**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-15.png)
+
+16. In **Completion**, select **Close**.
+    
+     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-16.png)
+
+17. In **Deployment types**, select **Next**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-17.png)
+
+18. In **Summary**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-18.png)
+    
+    The status is then displayed
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-19.png)
+
+19. In **Completion**, select **Close**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-20.png)
+
+20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
+    
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-21.png)
+
+21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-22.png)
+
+22. In **Content** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-23.png)
+
+23. In **Deployment settings**, select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-24.png)
+
+24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-25.png)
+
+25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-26.png)
+
+26. In **Alerts** select **Next**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-27.png)
+
+27. In **Summary**, select **Next**. 
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-28.png)
+
+    The status is then displayed
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-29.png)
+
+28. In **Completion**, select **Close**.
+    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
+
 
 
 ## Related topics
