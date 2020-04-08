@@ -108,7 +108,7 @@ Application Guard provides the following default behavior for your employees:
 You have the option to change each of these settings to work with your enterprise from within Group Policy.
 
 **Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
+- Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Professional edition, version 1803
 
 #### Copy and paste options
@@ -171,7 +171,7 @@ You have the option to change each of these settings to work with your enterpris
     >If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.<br><br>If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.<br><br>**To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
     
 **Applies to:**
-- Windows 10 Enterpise edition, version 1803
+- Windows 10 Enterprise edition, version 1803
 - Windows 10 Professional edition, version 1803
 
 #### Download options
@@ -201,7 +201,7 @@ You have the option to change each of these settings to work with your enterpris
 4. Assess the visual experience and battery performance. 
 
 **Applies to:**
-- Windows 10 Enterpise edition, version 1809
+- Windows 10 Enterprise edition, version 1809
 - Windows 10 Professional edition, version 1809
 
 #### File trust options
