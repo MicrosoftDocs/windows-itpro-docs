@@ -14,16 +14,16 @@ ms.audience: itpro
 ---
 # Microsoft Surface Dock Firmware Update: Technical information for IT administrators.
 
-This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device.
+This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device. This tool supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT. The earlier tool was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version number) and is no longer available for download and should not be used.
 
-> [!NOTE]
-> This article contains technical instructions for IT administrators. If you are a home user, please see [How to update your Surface Dock Firmware](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) on the Microsoft Support site. <br>Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT. It was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version number). The earlier tool is no longer available for download and should not be used.
+> [!IMPORTANT]
+> This article contains technical instructions for IT administrators. If you are a home user, please see [How to update your Surface Dock Firmware](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) on the Microsoft Support site. The instructions at the support site are the same as the general installation steps below, but this article has additional information for monitoring, verifying, and deploying the update to multiple devices on a network.
 
 ## Install the Surface Dock Firmware Update
 
-This section describes how to install the firmware update.
+This section describes how to manually install the firmware update.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Microsoft periodically releases new versions of Surface Dock Firmware Update. The MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version.
 
 1. Download and install [Microsoft Surface Dock Firmware Update](https://www.microsoft.com/download/details.aspx?id=46703).
