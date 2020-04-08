@@ -36,11 +36,7 @@ This section describes how to manually install the firmware update.
 
 ## Monitor the Surface Dock Firmware Update
 
-This section is optional and provides an overview of how to monitor installation of the firmware update. See the following sections in this article: 
-  - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
-  - [Event logging](#event-logging)
-  - [Troubleshooting tips](#troubleshooting-tips)
-  - [Versions reference](#versions-reference)
+This section is optional and provides an overview of how to monitor installation of the firmware update. 
 
 To monitor the update:
 
@@ -60,6 +56,12 @@ To monitor the update:
 
 >[!TIP]
 >If you see "The description for Event ID xxxx from source SurfaceDockFwUpdate cannot be found" in event text, this is expected and can be ignored.
+
+Also see the following sections in this article: 
+  - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
+  - [Event logging](#event-logging)
+  - [Troubleshooting tips](#troubleshooting-tips)
+  - [Versions reference](#versions-reference)
 
 ## Network deployment
 
