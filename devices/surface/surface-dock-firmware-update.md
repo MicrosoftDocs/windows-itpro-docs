@@ -1,5 +1,5 @@
 ---
-title: Microsoft Surface Dock Firmware Update: Technical information for IT administrators
+title: Microsoft Surface Dock Firmware Update - Technical information for IT administrators
 description: This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device.
 ms.localizationpriority: medium
 ms.prod: w10
