@@ -39,8 +39,13 @@ You can also install threat simulators. Microsoft Defender ATP has partnered wit
 ## Before you begin
 You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender ATP to access the evaluation lab.
 
-To create the lab, create machines, reset password, and create simulations you must have **Manage security settings** permissions. For more information, see [Create and manage roles](user-roles.md).
-
+You must have **Manage security settings** permissions to:
+- Create the lab
+- Create machines
+- Reset password
+- Create simulations 
+ 
+For more information, see [Create and manage roles](user-roles.md).
 
 Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
