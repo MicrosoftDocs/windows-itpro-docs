@@ -258,7 +258,6 @@
 ##### [View and organize the Incidents queue](microsoft-defender-atp/view-incidents-queue.md)
 ##### [Manage incidents](microsoft-defender-atp/manage-incidents.md)
 ##### [Investigate incidents](microsoft-defender-atp/investigate-incidents.md)
-#### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
  
 #### [Alerts queue]()
@@ -324,6 +323,7 @@
 ##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
 
+#### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 
 
