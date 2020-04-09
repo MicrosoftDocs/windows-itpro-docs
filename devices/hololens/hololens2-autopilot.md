@@ -40,7 +40,7 @@ When a user starts the the Autopilot self-deploying process, the process complet
 ### 1. Enroll in the Windows Autopilot for HoloLens 2 program
 
 In order to participate in the program, you have to use a tenant that is flighted for HoloLens. To do this, go to  [Windows Autopilot for HoloLens Private Preview request](https://aka.ms/APHoloLensTAP) or use the following QR code to submit a request.  
-![Autopilot QR code](hololens-ap-qrcode.png)  
+![Autopilot QR code](./images/hololens-ap-qrcode.png)  
 
 In this request, provide the following information:
 
@@ -202,7 +202,7 @@ At the end of OOBE, you can sign in to the device by using your user name and pa
 
 ## Known Issues
 
-- The list of supported languages for Autopilot deployment profiles includes languages that HoloLens does not support. Select a language that [HoloLens supports](hololens2-languages.md).
+- The list of supported languages for Autopilot deployment profiles includes languages that HoloLens does not support. Select a language that [HoloLens supports](hololens2-language-support.md).
 - During deployment, you may observe styling issues in your company branding page. A fix for this issue is in progress.
 
 ## Feedback
