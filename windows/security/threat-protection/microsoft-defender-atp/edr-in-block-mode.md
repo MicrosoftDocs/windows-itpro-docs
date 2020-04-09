@@ -27,7 +27,7 @@ ms.collection:
 When enabled, endpoint detection and response (EDR) in block mode blocks malicious artifacts or behaviors observed through post-breach protection. EDR extends behavioral-based blocking and containment capabilities in Microsoft Defender ATP. EDR in block mode works behind the scenes to remediate malicious entities identified in post-breach.
 
 > [!NOTE]
-> EDR in block mode is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection). To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
+> EDR in block mode is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-edr-in-block-mode). To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 ## What happens when something is detected?
 
@@ -35,7 +35,9 @@ When EDR in block mode is turned on, and a malicious artifact is detected, the d
 
 The following images shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by EDR in block mode":::
+:::image type="content" source="images/edr-in-block-mode.jpg" alt-text="Malware detected by EDR in block mode":::
+
+
 
 ## Enable EDR in block mode
 
@@ -46,7 +48,7 @@ The following images shows an instance of unwanted software that was detected an
 
 2. Choose **Settings** > **Advanced features**.
 
-    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn EDR in block mode on":::
+    :::image type="content" source="images/turn-edr-in-block-mode-on.jpg" alt-text="Turn EDR in block mode on":::
 
 3. Turn on EDR in block mode.
 
