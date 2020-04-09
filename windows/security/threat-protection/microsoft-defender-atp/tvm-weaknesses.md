@@ -51,7 +51,7 @@ Go to the Threat & Vulnerability Management navigation menu and select **Weaknes
 
 1. Go to the global search drop-down menu.
 2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
-![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
+![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
 3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates.
 
 To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
@@ -67,26 +67,26 @@ If the **Exposed Machines** column shows 0, that means you are not at risk. If e
 You can view the related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
- > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and breach insight ![possible active alert](images/tvm_alert_icon.png) icon.  
+ > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
 
 The breach insights icon is highlighted if there is a vulnerability found in your organization.
-![tvm-breach-insights](images/tvm-breach-insights.png)
+![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
 
 The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit or connected to specific advanced persistent campaigns or activity groups. Threat Analytics report links are provided that you can read with zero-day exploitation news, disclosures, or related security advisories.  
 
-![tvm-threat-insights](images/tvm-threat-insights.png)
+![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
 ### Top vulnerable software in the dashboard
 
 1. Go to the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
-![top vulnerable software card](images/tvm-top-vulnerable-software500.png)
+![Top vulnerable software card with four columns: software, weaknesses, threats, exposed machines.](images/tvm-top-vulnerable-software500.png)
 2. Select the software that you want to investigate to go a drill down page.
 3. Select the **Discovered vulnerabilities** tab.
 4. Select the vulnerability that you want to investigate. A flyout panel will appear with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
-![Windows server drill down overview](images/windows-server-drilldown.png)
+![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
 
 ### Discover vulnerabilities in the machine page
 
@@ -104,7 +104,7 @@ View related weaknesses information in the machine page.
 
 Similar to the software evidence, we now show the detection logic we applied on a machine in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the machine page) that shows the detection logic and source.
 
-![Screenshot of the machine page with details and response options](images/cve-detection-logic.png)
+![Detection Logic example which lists the software detected on the device and the KBs.](images/cve-detection-logic.png)
 
 ## Report inaccuracy
 
