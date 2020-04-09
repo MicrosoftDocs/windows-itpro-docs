@@ -119,6 +119,11 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Microsoft Defender ATP. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
+> [!WARNING]
+> PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
+>
+> Intercepting proxies are also not supported for security reasons. Configure your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your proxy certificate to the global store will not allow for interception.
+
 For troubleshooting steps, see the [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md) page.
 
 ## How to update Microsoft Defender ATP for Linux
