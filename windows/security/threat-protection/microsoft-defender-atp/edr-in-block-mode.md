@@ -1,7 +1,7 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-keywords: Microsoft Defender ATP, EDR blocking, passive mode blocking
+keywords: Microsoft Defender ATP, EDR in block mode, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -31,22 +31,22 @@ When enabled, endpoint detection and response (EDR) in block mode blocks malicio
 
 ## What happens when something is detected?
 
-When EDR blocking is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
+When EDR in block mode is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
 
-The following images shows an instance of unwanted software that was detected and blocked through EDR blocking:
+The following images shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by EDR blocking":::
+:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by EDR in block mode":::
 
 ## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning EDR blocking on.
+> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning EDR in block mode on.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
 
-    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn EDR blocking on":::
+    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn EDR in block mode on":::
 
 3. Turn on EDR in block mode.
 
