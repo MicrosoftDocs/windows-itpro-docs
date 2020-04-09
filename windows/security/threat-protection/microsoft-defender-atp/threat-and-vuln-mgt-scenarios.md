@@ -29,8 +29,9 @@ ms.topic: article
 
 ## APIs
 
-Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
+Threat and Vulnerability Management supports multiple APIs. Microsoft Defender Advanced Threat Protection (ATP) Threat & Vulnerability Management APIs are soon to be generally available. See the following topics for related APIs:
 
+- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - [Machine APIs](machine.md)
 - [Recommendation APIs](vulnerability.md)
 - [Score APIs](score.md)
