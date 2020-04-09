@@ -71,7 +71,7 @@ Review the [Requirements](https://docs.microsoft.com/windows/deployment/windows-
 
 Make sure that the HoloLens devices meet the following requirements:
 
-- The devices are not already members of AAD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps.
+- The devices are not already members of AAD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all of the device-related information is cleaned up, check the **Devices** pages in both AAD and Intune.
 - Make sure that each device can connect to the internet during the provisioning process. Typically, you would use a USB Ethernet cable for this connection.
 - Each device can connect to a computer by using a USB-C cable, and that computer has the following available:
   - Advanced Recovery Companion (ARC)
@@ -90,15 +90,19 @@ To verify that your tenant is flighted for the Autopilot program after you submi
 
 ### 4. Register devices in Windows Autopilot
 
-To register a Hololens device in the Windows Autopilot program, you have to obtain the hardware hash of the device (also known as the hardware ID). The device records its hardware hash in a CSV file. You can find the hardware hash during OOBE, or when you are signed in to the device as the device owner.
+To register a Hololens device in the Windows Autopilot program, you have to obtain the hardware hash of the device (also known as the hardware ID). The device can record its hardware hash in a CSV file during the OOBE process, or later when a device owner starts the diagnostic log collection process (described in the following procedure). The device owner is typically the first user to sign in to the device.
 
 **Retrieve a device hardware hash**:
 
-1. Start the HoloLens 2 device, and then press the **Power** button and the **Volume down** button at the same time. The device collects diagnostic logs and records the hardware hash.
+1. Start the HoloLens 2 device, and make sure that you sign in by using an account that is the device owner. 
+1. On the device, press the Power and Volume Down buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of ZIP files.
 1. Use a USB-C cable to connect the device to a computer.
-1. On the computer, open File Explorer, and then select  **Internal Storage** > **Documents**. Extract the contents of the AutopilotDiagnostics.zip file.
+1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and look for the AutopilotDiagnostics.zip file.
+
    > [!NOTE]  
-   > The ZIP file may not immediately be available. If the file is not ready yet you may see a HololensDiagnostics.temp file in the Documents folder.  
+   > The ZIP file may not immediately be available. If the file is not ready yet you may see a HololensDiagnostics.temp file in the Documents folder. To update the list of files, refresh the window.
+
+1. Extract the contents of the AutopilotDiagnostics.zip file.
 1. In the extracted files, locate the CSV file that has a file name prefix of "DeviceHash." Copy that file to a drive on the computer where you can access it later.
    > [!IMPORTANT]  
    > The data in the CSV file should use the following header and line format:
