@@ -54,7 +54,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
 >
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your proxy certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your proxy certificate to the global store will not allow for interception.
 
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
