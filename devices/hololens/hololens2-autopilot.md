@@ -146,7 +146,10 @@ To register a Hololens device in the Windows Autopilot program, you have to obta
    - **Language (Region)**. Select the language for OOBE. We recommend that you select a language from the list of [supported languages for HoloLens 2](hololens2-language-support.md).
    - **Automatically configure keyboard**. To make sure that the keyboard matches the selected language, select **Yes**.
    - **Apply device name template**. To automatically set the device name during OOBE, select **Yes** and then in **Enter a name**, enter the template phrase and placeholders (for example, a prefix and `%RAND:4%`&mdash;a placeholder for a four-digit random number).
-  ![Configure OOBE settings](./images/hololens-ap-profile-oobe.png)
+     > [!NOTE]  
+     > If you use a device name template, the OOBE process restarts the device one extra time after it applies the device name and before it joins the device to AAD. This restart allows the new name to take effect.  
+
+   ![Configure OOBE settings](./images/hololens-ap-profile-oobe.png)
 1. After you configure the settings, select **Next**.
 1. On the **Scope tags** page, optionally add the scope tags that you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](https://docs.microsoft.com/mem/intune//fundamentals/scope-tags.md). When finished, select **Next**.
 1. On the **Assignments** page, for for **Assign to**, select **Selected groups**.
@@ -183,8 +186,11 @@ The Enrollment Status Page (ESP) displays the status of the complete device conf
 ### 9. Verify the profile status of the HoloLens devices
 
 1. In Microsoft Endpoint Manager Admin Center, select **Devices** > **Windows** > **Windows enrollment** > **Devices**.
-1. Verify that the HoloLens devices are listed, an that their profile status is **Assigned**.
-  ![](./images/hololens-ap-devices-assignments.png)
+1. Verify that the HoloLens devices are listed, and that their profile status is **Assigned**.
+   > [!NOTE]  
+   > It may take a few minutes for the profile to be assigned to the device.
+
+   ![](./images/hololens-ap-devices-assignments.png)
 
 ## Windows Autopilot for HoloLens 2 User Experience
 
@@ -207,13 +213,16 @@ At the end of OOBE, you can sign in to the device by using your user name and pa
 ## Known Issues
 
 - The list of supported languages for Autopilot deployment profiles includes languages that HoloLens does not support. Select a language that [HoloLens supports](hololens2-language-support.md).
-- During deployment, you may observe styling issues in your company branding page. A fix for this issue is in progress.
 
 ## Feedback
 
 To provide feedback or report issues, use one of the following methods:
 
-- Use the Feedback Hub app. You can find this app on a HoloLens-connected computer.
+- Use the Feedback Hub app. You can find this app on a HoloLens-connected computer. In Feedback Hub, select the **Enterprise Management** > **Device** category.  
+
+  When you provide feedback or report an issue, provide a detailed description. When applicable, include screenshots and logs.
 - Send an email to hlappreview@microsoft.com. For the email subject, enter **\<*Tenant*> Autopilot for HoloLens 2 evaluation feedback** (where \<*Tenant*> is the name of your Intune tenant).
 
-When you provide feedback or report an issue, provide a detailed description. When applicable, include screenshots and logs.
+  Provide a detailed description in your email. However, unless support personnel specifically request it, do not include data such as screenshots or logs. Such data may include private or personally identifiable information (PII).
+
+
