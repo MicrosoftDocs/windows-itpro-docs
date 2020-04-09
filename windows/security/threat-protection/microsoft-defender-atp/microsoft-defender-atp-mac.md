@@ -88,7 +88,7 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 > [!WARNING]
 > Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
 >
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your proxy certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
