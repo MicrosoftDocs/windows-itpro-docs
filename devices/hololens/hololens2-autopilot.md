@@ -31,7 +31,7 @@ When a user starts the the Autopilot self-deploying process, the process complet
    > [!NOTE]  
    > Autopilot for HoloLens does not support Active Directory join or Hybrid Azure AD join.
 1. Leverage AAD to enroll the device in Microsoft Intune (or another MDM service).
-1. Download the device-targeted policies, certificates, networking profiles, and applications.
+1. Download the device-targeted policies, certificates, and networking profiles.
 1. Provision the device.
 1. Present the user with the sign-in screen.
 
