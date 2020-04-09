@@ -36,7 +36,7 @@ These fields are briefly described in this article, to learn more about Delivery
 |**BytesFromGroupPeers** |[long](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/long) |`523132` |Total number of bytes downloaded from Group Peers. |
 |**BytesFromIntPeers** |[long](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/long) |`328350` |Total number of bytes downloaded from Internet Peers. |
 |**BytesFromPeers** |[long](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/long) |`43145` |Total number of bytes downloaded from peers. |
-|**ContentDownloadMode** |[int](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)**@JAIME** configuration for this content. |
+|**ContentDownloadMode** |[int](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode) configuration for this content. |
 |**ContentType** |[int](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/int) |`Quality Updates` |The type of content being downloaded. |
 |**DOStatusDescription** |[string](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/string) | |A short description of DO's status, if any. |
 |**DownloadMode** |[string](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/string) |`HTTP+LAN (1)` |Device's Delivery Optimization [Download Mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode) configuration for this device. |
