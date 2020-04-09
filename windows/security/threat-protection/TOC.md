@@ -315,7 +315,7 @@
 ##### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 
-##### [EDR in block mode](microsoft-defender-atp/edr-blocking.md)
+##### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 #### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
