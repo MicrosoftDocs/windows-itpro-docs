@@ -71,7 +71,7 @@ The batch file offers the following options:
 
 **Contents of the batch file**
 
-```console
+```dos
 @echo off
 # This sample script is not supported under any Microsoft standard support program or service. 
 # The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims 
