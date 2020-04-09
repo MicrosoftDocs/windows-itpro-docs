@@ -1,7 +1,7 @@
 ---
-title: Shadow protection in next-generation protection
-description: Learn about shadow protection in next-generation protection
-keywords: Windows Defender Antivirus, shadow protection, passive mode
+title: Endpoint detection and response in block mode
+description: Learn about endpoint detection and response in block mode
+keywords: Microsoft Defender ATP, EDR blocking, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -16,46 +16,44 @@ ms.custom: next-gen
 ms.collection: 
 ---
 
-# Shadow protection in next-generation protection
+# EDR in block mode
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-## What is shadow protection?
+## What is EDR in block mode?
 
-When enabled, shadow protection extends behavioral-based blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach protection. This is the case even if [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) is not your active antivirus protection. Shadow protection is useful if your organization has not fully transitioned to Windows Defender Antivirus and you are presently using a third-party antivirus solution. Shadow protection works behind the scenes by remediating malicious entities identified in post-breach protection that the existing third-party antivirus solution missed. 
+When enabled, endpoint detection and response (EDR) in block mode blocks malicious artifacts or behaviors observed through post-breach protection. EDR extends behavioral-based blocking and containment capabilities in Microsoft Defender ATP. EDR in block mode works behind the scenes to remediate malicious entities identified in post-breach.
 
 > [!NOTE]
-> Shadow protection is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection).
-
-To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline). And see [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus).
+> EDR in block mode is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-shadow-protection). To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 ## What happens when something is detected?
 
-When shadow protection is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
+When EDR blocking is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
 
-The following images shows an instance of unwanted software that was detected and blocked through shadow protection:
+The following images shows an instance of unwanted software that was detected and blocked through EDR blocking:
 
-:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by shadow protection":::
+:::image type="content" source="images/shadow-protection-detection.jpg" alt-text="Malware detected by EDR blocking":::
 
-## Turn on shadow protection
+## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-shadow-protection) are met before turning shadow protection on.
+> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning EDR blocking on.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
 
-    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn shadow protection on":::
+    :::image type="content" source="images/turn-shadow-protection-on.jpg" alt-text="Turn EDR blocking on":::
 
-3. Turn shadow protection on.
+3. Turn on EDR in block mode.
 
 > [!NOTE]
-> Shadow protection can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to turn shadow protection on or off.
+> EDR in block mode can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
 
-## Requirements for shadow protection
+## Requirements for EDR in block mode
 
 |Requirement  |Details  |
 |---------|---------|
@@ -67,14 +65,14 @@ The following images shows an instance of unwanted software that was detected an
 |Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
-> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) 
+> To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features. 
 
 
 ## Frequently asked questions 
 
-### Will shadow protection have any impact on a user's antivirus protection? 
+### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-No. Shadow protection does not affect third-party antivirus protection running on users' machines. Shadow protection kicks in if the primary antivirus solution misses something, or if there is post-breach detection. Shadow protection works just like Windows Defender Antivirus in passive mode with the additional steps of blocking and remediating malicious items detected. 
+No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR om block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like Windows Defender Antivirus in passive mode, with the additional steps of blocking and remediating malicious items that are detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
@@ -84,7 +82,7 @@ The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-
 
 Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on the optics received, along with behavioral and machine learning models.
 
-### Can I participate in the private preview of shadow protection?
+### Can I participate in the private preview of EDR in block mode?
 
 If you would like to participate in our private preview program, please send email to `shwjha@microsoft.com`. 
 
