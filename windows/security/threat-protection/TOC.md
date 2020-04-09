@@ -13,15 +13,11 @@
 
 ## [Plan deployment](microsoft-defender-atp/deployment-strategy.md)
 
-
 ## [Deployment guide]()
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
-
-
-
 
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
@@ -41,7 +37,6 @@
 #### [Attack surface reduction evaluation](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
-
 
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
@@ -256,8 +251,6 @@
 
 ## [Security operations]()
 
-
-
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
 #### [Security operations dashboard](microsoft-defender-atp/security-operations-dashboard.md)
@@ -265,6 +258,8 @@
 ##### [View and organize the Incidents queue](microsoft-defender-atp/view-incidents-queue.md)
 ##### [Manage incidents](microsoft-defender-atp/manage-incidents.md)
 ##### [Investigate incidents](microsoft-defender-atp/investigate-incidents.md)
+#### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
+
  
 #### [Alerts queue]()
 ##### [View and organize the Alerts queue](microsoft-defender-atp/alerts-queue.md)
@@ -315,7 +310,6 @@
 ##### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 
-##### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 #### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
