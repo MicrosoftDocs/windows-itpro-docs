@@ -81,10 +81,10 @@ Review the [Requirements](https://docs.microsoft.com/windows/deployment/windows-
 > [!NOTE]  
 > You do not have to review the Step by Step and Validation sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
 
-Make sure that the HoloLens devices meet the following requirements:
+Before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:
 
 - The devices are not already members of AAD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all of the device-related information is cleaned up, check the **Devices** pages in both AAD and Intune.
-- Make sure that each device can connect to the internet during the provisioning process. Typically, you would use a USB Ethernet cable for this connection.
+- Each device can connect to the internet. You can use a wired or wireless connection.
 - Each device can connect to a computer by using a USB-C cable, and that computer has the following available:
   - Advanced Recovery Companion (ARC)
   - The latest Windows update Windows 10, version 19041.1002.200107-0909 or a later version).
@@ -218,8 +218,10 @@ Your HoloLens users can follow these steps to provision HoloLens devices.
 1. Use the USB-C cable to connect the HoloLens device to a computer that has Advanced Recovery Companion (ARC) installed and has the appropriate Windows update downloaded.
 1. Use ARC to flash the appropriate version of Windows on to the device.
 1. Connect the device to the network, and then restart the device.  
-   
-   The device should automatically start the Out-of-the-Box-Experience (OOBE). Do not interact with OOBE, instead sit back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The OOBE screens should resemble the following:
+   > [!IMPORTANT]  
+   > You must connect the device to the network before the Out-of-the-Box-Experience (OOBE) starts. The device determines whether it is provisioning as an Autopilot device while on the first OOBE screen. If the device cannot connect to the network, or if you choose not to provision the device as an Autopilot device, you cannot change to Autopilot provisioning at a later time. Instead, you would have to start this procedure over in order to provision the device as an Autopilot device.
+
+   The device should automatically start OOBE. Do not interact with OOBE, instead sit back and relax! Let HoloLens 2 detect network connectivity and allow it complete OOBE automatically. The device may restart during OOBE. The OOBE screens should resemble the following:
    
    ![OOBE step 1](./images/hololens-ap-uex-1.png)
    ![OOBE step 2](./images/hololens-ap-uex-2.png)
