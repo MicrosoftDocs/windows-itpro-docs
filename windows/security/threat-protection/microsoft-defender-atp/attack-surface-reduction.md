@@ -95,21 +95,21 @@ The following sections describe each of the 15 attack surface reduction rules. T
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
 |-----|----|---|---|
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | 3B576869-A4EC-4529-8536-B80A7769E899 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | D3E037E1-3EB8-44C8-A917-57927947596D | Not supported | Windows 10, version [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) or greater |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) | e6db77e5-3df2-4cf1-b95a-636979351e5b | Not supported | Windows 10, version [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) or greater |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | `3B576869-A4EC-4529-8536-B80A7769E899` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Not supported | Windows 10, version [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) or greater |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | `01443614-cd74-433a-b99e-2ecdc07bfc25` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | `c1db55ab-c21a-4637-bb3f-a12568109d35` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | `d1e49aac-8f56-4280-b9ba-993a6d77406c` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | `26190899-1602-49e8-8b27-eb1d0a1ce869` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Supported | Windows 10, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) | `e6db77e5-3df2-4cf1-b95a-636979351e5b` | Not supported | Windows 10, version [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) or greater |
 
 ### Block executable content from email client and webmail
 
@@ -122,13 +122,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Microsoft Endpoint Configuration Manager CB 1710
+- Microsoft Endpoint [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
 
 Microsoft Endpoint Configuration Manager name: Block executable content from email client and webmail
 
-GUID: BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
+GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### Block all Office applications from creating child processes
 
@@ -140,13 +140,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1710
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Office apps launching child processes
 
 Configuration Manager name: Block Office application from creating child processes
 
-GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### Block Office applications from creating executable content
 
@@ -158,13 +158,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- System Center Configuration Manager (SCCM) CB 1710 (SCCM is now Microsoft Endpoint Configuration Manager)
+- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM is now Microsoft Endpoint Configuration Manager)
 
 Intune name: Office apps/macros creating executable content
 
 SCCM name: Block Office applications from creating executable content
 
-GUID: 3B576869-A4EC-4529-8536-B80A7769E899
+GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### Block Office applications from injecting code into other processes
 
@@ -180,13 +180,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1710
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Office apps injecting code into other processes (no exceptions)
 
 Configuration Manager name: Block Office applications from injecting code into other processes
 
-GUID: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
+GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -201,13 +201,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1710
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
 
 Configuration Manager name: Block JavaScript or VBScript from launching downloaded executable content
 
-GUID: D3E037E1-3EB8-44C8-A917-57927947596D
+GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### Block execution of potentially obfuscated scripts
 
@@ -219,13 +219,13 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1710
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Obfuscated js/vbs/ps/macro code
 
 Configuration Manager name: Block execution of potentially obfuscated scripts.
 
-GUID: 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
+GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 ### Block Win32 API calls from Office macros
 
@@ -237,19 +237,19 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1710
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Win32 imports from Office macro code
 
 Configuration Manager name: Block Win32 API calls from Office macros
 
-GUID: 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
+GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
 This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
 
-* Executable files (such as .exe, .dll, or .scr)
+- Executable files (such as .exe, .dll, or .scr)
 
 Launching untrusted or unknown executable files can be risky, as it may not not be initially clear if the files are malicious.
 
@@ -262,16 +262,16 @@ Launching untrusted or unknown executable files can be risky, as it may not not 
 >You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
 This rule was introduced in: 
-- Windows 10 1803
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1802
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
 
 Configuration Manager name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
 
-GUID: 01443614-cd74-433a-b99e-2ecdc07bfc25
+GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 ### Use advanced protection against ransomware
 
@@ -281,16 +281,16 @@ This rule provides an extra layer of protection against ransomware. It scans exe
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
 This rule was introduced in: 
-- Windows 10 1803
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1802
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Advanced ransomware protection
 
 Configuration Manager name: Use advanced protection against ransomware
 
-GUID: c1db55ab-c21a-4637-bb3f-a12568109d35
+GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 ### Block credential stealing from the Windows local security authority subsystem
 
@@ -302,16 +302,16 @@ LSASS authenticates users who log in to a Windows computer. Microsoft Defender C
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 This rule was introduced in:
-- Windows 10 1803
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1802
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Flag credential stealing from the Windows local security authority subsystem
 
 Configuration Manager name: Block credential stealing from the Windows local security authority subsystem
 
-GUID: 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
+GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### Block process creations originating from PSExec and WMI commands
 
@@ -321,7 +321,7 @@ This rule blocks processes created through [PsExec](https://docs.microsoft.com/s
 > Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
 
 This rule was introduced in: 
-- Windows 10 1803
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
@@ -329,7 +329,7 @@ Intune name: Process creation from PSExec and WMI commands
 
 Configuration Manager name: Not applicable
 
-GUID: d1e49aac-8f56-4280-b9ba-993a6d77406c
+GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### Block untrusted and unsigned processes that run from USB
 
@@ -339,16 +339,16 @@ With this rule, admins can prevent unsigned or untrusted executable files from r
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
-- Windows 10 1803
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- Configuration Manager CB 1802
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: Untrusted and unsigned processes that run from USB
 
 Configuration Manager name: Block untrusted and unsigned processes that run from USB
 
-GUID: b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
+GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 ### Block Office communication application from creating child processes
 
@@ -360,7 +360,7 @@ This protects against social engineering attacks and prevents exploit code from 
 > This rule applies to Outlook and Outlook.com only.
 
 This rule was introduced in: 
-- Windows 10 1809
+- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
@@ -368,7 +368,7 @@ Intune name: Process creation from Office communication products (beta)
 
 Configuration Manager name: Not yet available
 
-GUID: 26190899-1602-49e8-8b27-eb1d0a1ce869
+GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### Block Adobe Reader from creating child processes
 
@@ -377,7 +377,7 @@ This rule prevents attacks by blocking Adobe Reader from creating additional pro
 Through social engineering or exploits, malware can download and launch additional payloads and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
 
 This rule was introduced in: 
-- Windows 10 1809
+- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
@@ -385,7 +385,7 @@ Intune name: Process creation from Adobe Reader (beta)
 
 Configuration Manager name: Not yet available
 
-GUID: 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
+GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 ### Block persistence through WMI event subscription
 
@@ -394,14 +394,14 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
 This rule was introduced in: 
-- Windows 10 1903
+- [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - Windows Server 1903
 
 Intune name: Block persistence through WMI event subscription
 
 Configuration Manager name: Not yet available
 
-GUID: e6db77e5-3df2-4cf1-b95a-636979351e5b
+GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ## Related topics
 
