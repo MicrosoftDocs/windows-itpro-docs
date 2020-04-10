@@ -106,15 +106,5 @@ landingContent:
           - text: Article6c
             url: file1.md
 
-  # Table
-  - title: Recent ammouncements
-  - items:
-    - type: markdown
-      text: "
-        <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
-      
-        <tr><td>Message 1</td><td>Date 1</td></tr>
-        </table>
-      "
 
             
