@@ -118,7 +118,11 @@ This rule blocks the following file types from launching from email opened withi
 - Executable files (such as .exe, .dll, or .scr)
 - Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Microsoft Endpoint Configuration Manager CB 1710
+This rule was introduced in: 
+- Windows 10, version 1709
+- Windows Server, version 1809
+- Windows Server 2019
+- Microsoft Endpoint Configuration Manager CB 1710
 
 Intune name: Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
 
@@ -132,7 +136,11 @@ This rule blocks Office apps from creating child processes. This includes Word, 
 
 Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run additional payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in: 
+- Windows 10, version 1709
+- Windows Server, version 1809
+- Windows Server 2019
+- Configuration Manager CB 1710
 
 Intune name: Office apps launching child processes
 
@@ -146,7 +154,11 @@ This rule prevents Office apps, including Word, Excel, and PowerPoint, from crea
 
  Malware that abuse Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
+This rule was introduced in: 
+- Windows 10, version 1709
+- Windows Server, version 1809
+- Windows Server 2019
+- System Center Configuration Manager (SCCM) CB 1710 (SCCM is now Microsoft Endpoint Configuration Manager)
 
 Intune name: Office apps/macros creating executable content
 
@@ -164,7 +176,7 @@ There are no known legitimate business purposes for using code injection.
 
 This rule applies to Word, Excel, and PowerPoint.
 
-This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in: Windows 10, version 1709, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Office apps injecting code into other processes (no exceptions)
 
@@ -181,7 +193,7 @@ Although not common, line-of-business applications sometimes use scripts to down
 > [!IMPORTANT]
 > File and folder exclusions don't apply to this attack surface reduction rule.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in:  Windows 10, version 1709, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
 
@@ -195,7 +207,7 @@ This rule detects suspicious properties within an obfuscated script.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in:  Windows 10, version 1709, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Obfuscated js/vbs/ps/macro code
 
@@ -209,7 +221,7 @@ This rule prevents VBA macros from calling Win32 APIs.
 
 Office VBA provides the ability to make Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
 
-This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1710
+This rule was introduced in:  Windows 10, version 1709, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1710
 
 Intune name: Win32 imports from Office macro code
 
@@ -233,7 +245,7 @@ Launching untrusted or unknown executable files can be risky, as it may not not 
 >
 >You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
 
@@ -248,7 +260,7 @@ This rule provides an extra layer of protection against ransomware. It scans exe
 > [!NOTE]
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Advanced ransomware protection
 
@@ -265,7 +277,7 @@ LSASS authenticates users who log in to a Windows computer. Microsoft Defender C
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Flag credential stealing from the Windows local security authority subsystem
 
@@ -280,7 +292,7 @@ This rule blocks processes created through [PsExec](https://docs.microsoft.com/s
 > [!WARNING]
 > Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019
+This rule was introduced in: Windows 10 1803, Windows Server, version 1809, Windows Server 2019
 
 Intune name: Process creation from PSExec and WMI commands
 
@@ -295,7 +307,7 @@ With this rule, admins can prevent unsigned or untrusted executable files from r
 * Executable files (such as .exe, .dll, or .scr)
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
-This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, Configuration Manager CB 1802
+This rule was introduced in: Windows 10 1803, Windows Server, version 1809, Windows Server 2019, Configuration Manager CB 1802
 
 Intune name: Untrusted and unsigned processes that run from USB
 
@@ -312,7 +324,7 @@ This protects against social engineering attacks and prevents exploit code from 
 > [!NOTE]
 > This rule applies to Outlook and Outlook.com only.
 
-This rule was introduced in: Windows 10 1809, Windows Server 1809, Windows Server 2019
+This rule was introduced in: Windows 10 1809, Windows Server, version 1809, Windows Server 2019
 
 Intune name: Process creation from Office communication products (beta)
 
@@ -326,7 +338,7 @@ This rule prevents attacks by blocking Adobe Reader from creating additional pro
 
 Through social engineering or exploits, malware can download and launch additional payloads and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
 
-This rule was introduced in: Windows 10 1809, Windows Server 1809, Windows Server 2019
+This rule was introduced in: Windows 10 1809, Windows Server, version 1809, Windows Server 2019
 
 Intune name: Process creation from Adobe Reader (beta)
 
