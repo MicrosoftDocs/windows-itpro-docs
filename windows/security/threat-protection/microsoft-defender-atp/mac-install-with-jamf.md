@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/10/2020
 ---
 
 # JAMF-based deployment for Microsoft Defender ATP for Mac
@@ -113,7 +113,7 @@ To approve the kernel extension:
 ### Privacy Preferences Policy Control
 
 > [!CAUTION]
-> MacOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
 >
 > If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
 
