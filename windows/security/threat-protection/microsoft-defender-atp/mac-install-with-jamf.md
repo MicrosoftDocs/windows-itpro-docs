@@ -45,9 +45,9 @@ The following table summarizes the steps you would need to take to deploy and ma
 | Step | Sample file names | BundleIdentifier |
 |-|-|-|
 | [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
+| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
 | [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdavtray |
-| [Configure Microsoft AutoUpdate (MAU)](../mac-updates.md#jamf ) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
+| [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#jamf) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
 | [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
 | [Approve Kernel Extension for Microsoft Defender ATP](#approved-kernel-extension) | Note: If there was one, MDATP_KExt.plist | N/A |
 
