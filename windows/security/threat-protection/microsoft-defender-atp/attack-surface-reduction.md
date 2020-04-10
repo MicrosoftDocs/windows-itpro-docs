@@ -152,7 +152,7 @@ GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
 
- Malware that abuse Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
+ Malware that abuses Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -251,7 +251,7 @@ This rule blocks the following file types from launching unless they meet preval
 
 - Executable files (such as .exe, .dll, or .scr)
 
-Launching untrusted or unknown executable files can be risky, as it may not not be initially clear if the files are malicious.
+Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
 
 > [!IMPORTANT]
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
