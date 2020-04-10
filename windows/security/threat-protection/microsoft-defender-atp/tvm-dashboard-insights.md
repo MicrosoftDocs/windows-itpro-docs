@@ -1,5 +1,5 @@
 ---
-title: Threat & Vulnerability Management dashboard overview
+title: Threat & Vulnerability Management dashboard insights
 description: The Threat & Vulnerability Management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
 keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
 search.appverid: met150
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
-# Threat & Vulnerability Management dashboard overview
+# Threat & Vulnerability Management dashboard insights
 
 **Applies to:**
 
