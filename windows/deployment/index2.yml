@@ -13,13 +13,7 @@ metadata:
   ms.date: 4/9/2020
 
 additionalContent:
-  footer:
-      - items:
-        - type: markdown
-          text: "
-            <table><tr><td>Item</td><td>Date</td></tr>
-            <tr><td>1</td><td>4-9-2020</td></tr></table>
-            " 
+ 
   sections:
     - items:
         # Card
@@ -38,4 +32,7 @@ additionalContent:
         - title: Item 4
           summary: Summary 4
           url: https://www.microsoft.com
-
+  footer: "
+            <table><tr><td>Item</td><td>Date</td></tr>
+            <tr><td>1</td><td>4-9-2020</td></tr></table>
+            " 
