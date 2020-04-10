@@ -54,7 +54,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **2 Required:WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
 | **3 Enabled:Audit Mode (Default)** | Enables the execution of binaries outside of the WDAC policy but logs each occurrence in the CodeIntegrity event log, which can be used to update the existing policy before enforcement. To begin enforcing a WDAC policy, delete this option. |
 | **4 Disabled:Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This would be used in the scenario in which organizations only want to run released binaries, not flighted builds. |
-| **5 Enabled:Inherit Default Policy** | This option is reserved for future use. |
+| **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. |
 | **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **7 Allowed:Debug Policy Augmented** | This option is not currently supported. |
 | **8 Required:EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All future Windows 10 and later drivers will meet this requirement. |
