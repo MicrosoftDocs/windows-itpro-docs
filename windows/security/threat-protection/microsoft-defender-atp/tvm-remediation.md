@@ -91,7 +91,7 @@ The exception impact shows on both the Security recommendations page column and 
 
 Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard to open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
 
-![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard](images/tvm-exception-dashboard.png)
+![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard.](images/tvm-exception-dashboard.png)
 
 ## Related topics
 

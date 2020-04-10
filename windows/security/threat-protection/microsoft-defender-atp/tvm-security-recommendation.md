@@ -75,7 +75,7 @@ The color of the **Exposed machines** graph changes as the trend changes. If the
 
 ### Icons
 
-Useful icons also quickly calls your attention to: <ul><li> ![Arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+Useful icons also quickly calls your attention to: <ul><li> ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
 
 ### Investigate
 
