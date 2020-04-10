@@ -51,20 +51,20 @@ You can remediate the issues based on prioritized [security recommendations](tvm
 
 To lower your threat and vulnerability exposure, follow these steps.
 
-1. Review the **Top security recommendations** from your [**Threat & Vulnerability Management dashboard**](tvm-dashboard-insights.md) , and select the first item on the list. The **Security recommendation** page opens.  
+1. Review the **Top security recommendations** from your [**Threat & Vulnerability Management dashboard**](tvm-dashboard-insights.md) and select an item on the list.  
 
-   Always prioritize recommendations that are associated with ongoing threats:
+   ![Example of Top security recommendations card, with four security recommendations.](images/top-security-recommendations350.png)
 
-   - ![Threat insight](images/tvm_bug_icon.png) Threat insight icon
-   - ![Possible active alert](images/tvm_alert_icon.png) Active alert icon
+      Always prioritize recommendations that are associated with ongoing threats:
 
-   ![Screenshot of security recommendations page](images/top-security-recommendations350.png)
+   - ![Red bug](images/tvm_bug_icon.png) Threat insight icon
+   - ![Arrow hitting a target](images/tvm_alert_icon.png) Active alert icon
 
-2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. When you select a recommendation from the list, a fly-out panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
+2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
 
-3. Select **Installed machines** and then the affected machine from the list. A flyout panel will open with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
+3. Select **Installed machines** and then the affected machine from the list. A flyout panel will open with the relevant machine details, exposure and risk levels, alert and incident activities. ![Example of the software page for Git, and a flyout open for a selected machine.](images/tvm_software_page_details.png)
 
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![Details in machine page](images/tvm_machine_page_details.png)
+4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details. ![Example of a machine page.](images/tvm_machine_page_details.png)
 
 5. Allow a few hours for the changes to propagate in the system.
 
