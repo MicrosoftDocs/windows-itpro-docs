@@ -38,8 +38,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   - Transparent proxy
   - Web Proxy Auto-discovery Protocol (WPAD)
 
-> [!NOTE]
-> If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+    > [!NOTE]
+    > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 - Manual static proxy configuration:
   - Registry based configuration
@@ -102,7 +102,8 @@ See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/
 
 ## Enable access to Microsoft Defender ATP service URLs in the proxy server
 
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are not blocked by default. Do not disable security monitoring or inspection of these URLs, but allow them as you would other internet traffic. They permit communication with Microsoft Defender ATP service in port 80 and 443:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed below to the allowed domains list.
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 machines running version 1803 or earlier.<br>
@@ -119,6 +120,16 @@ United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.bl
 > If you are using Windows Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Windows Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+
+### Log analytics agent requirements
+
+The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
+
+|Agent Resource|Ports |Direction |Bypass HTTPS inspection|
+|------|---------|--------|--------|   
+|*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
+|*.blob.core.windows.net |Port 443 |Outbound|Yes |  
 
 ## Microsoft Defender ATP service backend IP range
 
