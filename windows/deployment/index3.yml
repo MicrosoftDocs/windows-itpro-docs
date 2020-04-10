@@ -18,6 +18,19 @@ metadata:
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
+sections:
+
+- items:
+- title: Recent announcements
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
+      
+      <tr><td>Message 1</td><td>Date 1</td></tr>
+      </table>"
+
+
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
@@ -93,11 +106,5 @@ landingContent:
           - text: Article6c
             url: file1.md
 
-summary: "
-        <table border ='0'><tr><td width='80%'>Message</td><td width='20%'>Date</td></tr>
-      
-        <tr><td>Message 1</td><td>Date 1</td></tr>
-        </table>
-      "
 
             
