@@ -45,14 +45,14 @@ Go to the Threat & Vulnerability Management navigation menu and select **Remedia
 
 View **Top remediation activities** in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
-![Screenshot of the remediation page flyout for a software which reached end-of-support](images/tvm-remediation-activities-card.png)
+![Example of Top remediation activities card with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
 
 ## Remediation activities
 
 When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
-![Screenshot of the remediation page flyout for a software which reached end-of-support](images/remediation_flyouteolsw.png)
+![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and machine remediation progress.](images/remediation_flyouteolsw.png)
 
 ## Exceptions
 
@@ -60,7 +60,7 @@ When you [file for an exception](tvm-security-recommendation.md#file-for-excepti
 
 The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab. You can filter your view based on exception justification, type, and status.  
 
-![Screenshot of exception tab and filters](images/tvm-exception-filters.png)
+![Example of the exception page and filter options.](images/tvm-exception-filters.png)
 
 ### Exception actions and statuses
 
@@ -85,13 +85,13 @@ Creating an exception can potentially affect the Exposure Score (for both types 
 
 The exception impact shows on both the Security recommendations page column and in the flyout pane.
 
-![Screenshot of where to find the exception impact](images/tvm-exception-impact.png)
+![Screenshot identifying the impact sections which list score impacts in the full page security recommendations table, and the flyout.](images/tvm-exception-impact.png)
 
 ### View exceptions in other places
 
 Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard to open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
 
-![Screenshot of Show exceptions link in the  Top security recommendations card in the dashboard](images/tvm-exception-dashboard.png)
+![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard](images/tvm-exception-dashboard.png)
 
 ## Related topics
 
