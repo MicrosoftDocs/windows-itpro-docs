@@ -23,7 +23,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -61,7 +61,7 @@ Go to the Threat & Vulnerability Management navigation menu and select **Securit
 
 In a given day as a Security Administrator, you can take a look at the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side-by-side with your [configuration score](configuration-score.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
 
-![Screenshot of security recommendations page](images/top-security-recommendations350.png)
+![Example of Top security recommendations card, with four security recommendations.](images/top-security-recommendations350.png)
 
 The top security recommendations lists the improvement opportunities prioritized based on the important factors mentioned in the previous section - threat, likelihood to be breached, and value. Selecting a recommendation will take you to the security recommendations page with more details about the recommendation.
 
@@ -71,11 +71,11 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the number of exposed machines, the color of the graph will change into green.
 
-![Screenshot of security recommendations page](images/tvmsecrec-updated.png)
+![Example of the landing page for software inventory.](images/tvmsecrec-updated.png)
 
 ### Icons
 
-Useful icons also quickly calls your attention to: <ul><li> ![Possible active alert](images/tvm_alert_icon.png) possible active alerts</li><li>![Threat insight](images/tvm_bug_icon.png) associated public exploits</li><li>![Recommendation insight](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+Useful icons also quickly calls your attention to: <ul><li> ![Arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
 
 ### Investigate
 
