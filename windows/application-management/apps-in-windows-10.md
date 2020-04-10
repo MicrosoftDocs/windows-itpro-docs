@@ -34,7 +34,7 @@ Some of the apps show up in multiple tables - that's because their status change
 
 ## Provisioned Windows apps
 
-Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 and 1809.
+Here are the provisioned Windows apps in Windows 10 versions 1709, 1803, 1809, 1903, and 1909.
 
 > [!TIP]
 > You can list all provisioned Windows apps with this PowerShell command:
