@@ -172,7 +172,7 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script:
+Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script (Execution in production will require the "-WhatIf" flag to be removed from the Powershell script):
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
