@@ -34,12 +34,12 @@ You can use [Microsoft Defender Security Center](https://securitycenter.windows.
 
 ## Microsoft Defender Security Center
 
-When you open the portal, you'll see the main areas of the application:
+When you open the portal, you'll see:
 
- ![Microsoft Defender Advanced Threat Protection portal](images/mdatp-dashboard.png)
+- (1) Navigation pane (select the horizontal lines at the top of the navigation pane to show or hide it)
+- (2) Search, Community center, Localization, Help and support, Feedback
 
-- (1) Navigation pane
-- (2) Community center, Localization, Help and support, Feedback
+ ![Microsoft Defender Advanced Threat Protection portal](images/mdatp-portal-overview.png)
 
 > [!NOTE]
 > Malware related detections will only appear if your machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
@@ -62,7 +62,7 @@ Area | Description
 **Service health** | Provides information on the current status of the Microsoft Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
 **Configuration management** | Displays on-boarded machines, your organizations' security baseline, predictive analysis, web protection coverage, and allows you to perform attack surface management on your machines.
 **Settings** | Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as permissions, APIs, rules, machine management, IT service management, and network assessments.
-**(2) Community center, Localization,  Help and support, Feedback** | **Community center** - Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Localization** - Set time zones. </br></br>  **Help and support** - Access the Microsoft Defender ATP guide, Microsoft and Microsoft Premier support, license information, simulations & tutorials, Microsoft Defender ATP evaluation lab, consult a threat expert.</br></br> **Feedback** - Provide comments about what you like or what we can do better.
+**(2) Search, Community center, Localization,  Help and support, Feedback** | **Search** - search by machine, file, user, URL, IP, vulnerability, software, and recommendation. </br></br> **Community center** - Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Localization** - Set time zones. </br></br>  **Help and support** - Access the Microsoft Defender ATP guide, Microsoft and Microsoft Premier support, license information, simulations & tutorials, Microsoft Defender ATP evaluation lab, consult a threat expert.</br></br> **Feedback** - Provide comments about what you like or what we can do better.
 
 > [!NOTE]
 > For devices with high resolution DPI scaling issues, please see [Windows scaling issues for high-DPI devices](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) for possible solutions.
@@ -104,7 +104,7 @@ Icon | Description
 ![Memory allocation icon](images/atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images/atp-process-injection.png)| Process injection
 ![Powershell command run icon](images/atp-powershell-command-run-icon.png)| Powershell command run
-![Community center icon](images/atp-community-center.png) | Community center 
+![Community center icon](images/atp-community-center.png) | Community center
 ![Notifications icon](images/atp-notifications.png) | Notifications
 ![No threats found](images/no-threats-found.png) | Automated investigation - no threats found
 ![Failed icon](images/failed.png) | Automated investigation - failed
@@ -112,14 +112,15 @@ Icon | Description
 ![Terminated by system](images/terminated-by-system.png) | Automated investigation - terminated by system
 ![Pending icon](images/pending.png) | Automated investigation - pending
 ![Running icon](images/running.png) | Automated investigation - running
-![Remediated icon](images/remediated.png) | Automated investigation - remediated 
+![Remediated icon](images/remediated.png) | Automated investigation - remediated
 ![Partially investigated icon](images/partially_remediated.png) | Automated investigation - partially remediated
 ![Threat insights icon](images/tvm_bug_icon.png) | Threat & Vulnerability Management - threat insights
-![Possible active alert icon](images/tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert 
+![Possible active alert icon](images/tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert
 ![Recommendation insights icon](images/tvm_insight_icon.png) | Threat & Vulnerability Management - recommendation insights
 
 ## Related topics
-- [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
+
+- [Overview of Microsoft Defender Security Center](use.md)
 - [View the Security operations dashboard](security-operations-dashboard.md)
 - [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
