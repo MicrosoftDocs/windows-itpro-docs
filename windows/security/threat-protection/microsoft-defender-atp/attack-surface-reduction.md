@@ -45,10 +45,10 @@ For more information about configuring attack surface reduction rules, see [Enab
 ## Attack surface reduction features across Windows versions
 
 You can set attack surface reduction rules for computers running the following versions of Windows:
-- Windows 10 version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- Windows 10, version [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) or later
-- Windows Server version [1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) (Semi-Annual Channel) or later
-- [[Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) or later
+- [Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) (Semi-Annual Channel) or later
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 To use the entire feature-set of attack surface reduction rules, you need a [Windows 10 Enterprise license](https://www.microsoft.com/licensing/product-licensing/windows10). With a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
