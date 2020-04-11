@@ -30,7 +30,7 @@
 #### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
+#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
 #### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 #### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
