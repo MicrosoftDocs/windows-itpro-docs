@@ -1,6 +1,6 @@
 ---
 title: Configure the Basic group policy for Windows Update for Business
-description: In this article, you will learn how to configure the Basic group policy for Windows Update for Business.
+description: In this article, you will learn how to configure the basic group policy for Windows Update for Business.
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
