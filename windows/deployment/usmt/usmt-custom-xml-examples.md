@@ -1,6 +1,7 @@
 ---
 title: Custom XML Examples (Windows 10)
-description: Custom XML Examples
+description: In this article, you will find out templates for custom XML files that can help you modify migration.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
 ms.reviewer: 
 manager: laurawi

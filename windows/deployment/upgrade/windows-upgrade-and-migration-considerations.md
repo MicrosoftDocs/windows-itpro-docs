@@ -1,6 +1,7 @@
 ---
 title: Windows Upgrade and Migration Considerations (Windows 10)
-description: Windows Upgrade and Migration Considerations
+description: This article will guide you about things to consider before you make a Windows Upgrade or Migration.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 

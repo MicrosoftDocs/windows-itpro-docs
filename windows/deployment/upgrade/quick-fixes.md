@@ -3,8 +3,9 @@ title: Quick fixes - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
+description: This article helps you learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

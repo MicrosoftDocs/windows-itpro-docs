@@ -1,6 +1,7 @@
 ---
 title: Identify Users (Windows 10)
-description: Identify Users
+description: In this article, you will learn about what to consider when you identify users that are to migrated.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
 ms.reviewer: 
 manager: laurawi

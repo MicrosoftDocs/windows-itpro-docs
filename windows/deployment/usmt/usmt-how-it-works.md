@@ -1,6 +1,7 @@
 ---
 title: How USMT Works (Windows 10)
-description: How USMT Works
+description: In this article, you will learn about how the User State Migration Tool (USMT) Works and the tools it uses to migrate settings and data.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 5c8bd669-9e1e-473d-81e6-652f40b24171
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
