@@ -1,6 +1,7 @@
 ---
 title: LoadState Syntax (Windows 10)
-description: LoadState Syntax
+description: In this article, you will learn about the syntax of the LoadState command and the options it provides.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
 ms.reviewer: 
 manager: laurawi
@@ -17,7 +18,7 @@ ms.topic: article
 # LoadState Syntax
 
 
-This topic discusses the **LoadState** command syntax and options.
+This topic discusses the **LoadState** command syntax and options available with it.
 
 ## In This Topic
 

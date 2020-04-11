@@ -3,8 +3,9 @@ title: SetupDiag
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: How to use the SetupDiag tool to diagnose Windows Setup errors
+description: In this article, you will learn about how to use the SetupDiag tool to diagnose Windows Setup errors.
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,6 +1,7 @@
 ---
 title: Recognized Environment Variables (Windows 10)
-description: Recognized Environment Variables
+description: Learn about the recognized environment variables that can be used during migration to identify folders that are different across computers.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

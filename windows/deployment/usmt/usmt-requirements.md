@@ -1,6 +1,7 @@
 ---
 title: USMT Requirements (Windows 10)
-description: USMT Requirements
+description: In this article, you will learn about the requirements for the User State Migration Toolkit (USMT) 10.0.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 2b0cf3a3-9032-433f-9622-1f9df59d6806
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 05/03/2017
 ms.topic: article
 ---

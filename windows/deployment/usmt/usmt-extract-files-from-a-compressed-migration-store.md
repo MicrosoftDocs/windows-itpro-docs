@@ -1,6 +1,7 @@
 ---
 title: Extract Files from a Compressed USMT Migration Store (Windows 10)
-description: Extract Files from a Compressed USMT Migration Store
+description: In this article, you will learn how to extract files from a Compressed User State Migration Tool (USMT) migration store.
+ms.custom: seo-marvel-apr2020
 ms.assetid: ad9fbd6e-f89e-4444-8538-9b11566b1f33
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

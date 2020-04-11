@@ -1,6 +1,7 @@
 ---
 title: Exclude Files and Settings (Windows 10)
-description: Exclude Files and Settings
+description: In this article, you will learn how to exclude files and settings from migrating when using the User State Migration Tool (USMT) 10.0.
+ms.custom: seo-marvel-apr2020
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

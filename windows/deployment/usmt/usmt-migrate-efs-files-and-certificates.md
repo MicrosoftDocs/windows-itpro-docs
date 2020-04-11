@@ -1,6 +1,7 @@
 ---
 title: Migrate EFS Files and Certificates (Windows 10)
-description: Migrate EFS Files and Certificates
+description: In this article, you will learn how to migrate Encrypting File System (EFS) files and certificates using USMT.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 7f19a753-ec45-4433-b297-cc30f16fdee1
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

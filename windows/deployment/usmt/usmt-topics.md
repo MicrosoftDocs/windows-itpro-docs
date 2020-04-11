@@ -1,6 +1,7 @@
 ---
 title: User State Migration Tool (USMT) Overview Topics (Windows 10)
-description: User State Migration Tool (USMT) Overview Topics
+description: This article contains a list of topics that will help you get started with migration using the User State Migration Tool (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 23170271-130b-416f-a7a7-c2f6adc32eee
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

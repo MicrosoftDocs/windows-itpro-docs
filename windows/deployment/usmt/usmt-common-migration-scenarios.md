@@ -1,6 +1,7 @@
 ---
 title: Common Migration Scenarios (Windows 10)
-description: Common Migration Scenarios
+description: Learn about the common migration scenarios when you perform hardware and/or operating system upgrades using the User State Migration Tool (USMT) 10.0.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 1d8170d5-e775-4963-b7a5-b55e8987c1e4
 ms.reviewer: 
 manager: laurawi
