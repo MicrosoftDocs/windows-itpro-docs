@@ -57,7 +57,7 @@ Area | Description
 **Advanced hunting** | Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
 **Reports** | View graphs detailing threat protection, machine health and compliance, web protection, and vulnerability.
 **Partners & APIs** | View supported partner connections, which enhance the detection, investigation, and threat intelligence capabilities of the platform. You can also view connected applications, the API explorer, API usage overview, and data export settings.
-**Threat & Vulnerability management** | View your configuration score, exposure score, exposed machines, vulnerable software, and take action on top security recommendations.
+**Threat & Vulnerability management** | View your Microsoft Secure Score for Devices, exposure score, exposed machines, vulnerable software, and take action on top security recommendations.
 **Evaluation and tutorials** | Manage test machines, attack simulations, and reports. Learn and experience the Microsoft Defender ATP capabilities through a guided walk-through in a trial environment.
 **Service health** | Provides information on the current status of the Microsoft Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
 **Configuration management** | Displays on-boarded machines, your organizations' security baseline, predictive analysis, web protection coverage, and allows you to perform attack surface management on your machines.

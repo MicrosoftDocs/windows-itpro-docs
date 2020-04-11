@@ -1165,12 +1165,6 @@
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction",
 "redirect_document_id": true
 },
-
-{
-"source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
-"redirect_document_id": false
-},
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access",
@@ -1747,6 +1741,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-secure-score.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
 "redirect_document_id": true
@@ -1754,6 +1753,11 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/configuration-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
 "redirect_document_id": false
 },
 {

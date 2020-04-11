@@ -27,7 +27,7 @@ This section guides you through the steps you need to take to configure Threat &
 
 ### Before you begin
 > [!IMPORTANT]
-> Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
+> Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices' threat and vulnerability exposure data.</br>
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft Endpoint Configuration Manager.   
 
@@ -39,7 +39,16 @@ Ensure that you have the right RBAC permissions to configure your Threat & Vulne
 >- End-user alternative: For more information on joining an Azure AD domain, see [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
 
 ## Related topics
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Configuration score](configuration-score.md)
+
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Supported operating systems and platforms](tvm-supported-os.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Exposure score](tvm-exposure-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
+- [Security recommendations](tvm-security-recommendation.md)
+- [Remediation and exception](tvm-remediation.md)
+- [Software inventory](tvm-software-inventory.md)
+- [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

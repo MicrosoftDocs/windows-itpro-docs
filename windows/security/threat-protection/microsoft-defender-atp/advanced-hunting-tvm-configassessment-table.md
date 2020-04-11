@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ConfigurationId` | string | Unique identifier for a specific configuration |
 | `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
 | `ConfigurationSubcategory` | string |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
-| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
+| `ConfigurationImpact` | string | Rated impact of the configuration to the overall Microsoft Secure Score for Devices (1-10) |
 | `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
 
 

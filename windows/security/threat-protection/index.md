@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Microsoft Defender ATP helps protect against threats.
-keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, configuration score, advanced hunting, cyber threat hunting, web threat protection
+keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, Microsoft Secure Score for Devices, advanced hunting, cyber threat hunting, web threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -48,7 +48,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 - [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-- [Configuration score](microsoft-defender-atp/configuration-score.md)
+- [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 - [Remediation](microsoft-defender-atp/tvm-remediation.md)
 - [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
@@ -105,12 +105,11 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 <a name="ss"></a>
 
-**[Configuration Score](microsoft-defender-atp/configuration-score.md)**<br>
->[!NOTE]
-> Secure score is now part of [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) as [Configuration score](microsoft-defender-atp/configuration-score.md).
+**[Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)**<br>
 
-Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
-- [Configuration score](microsoft-defender-atp/configuration-score.md)
+Microsoft Defender ATP includes a Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+
+- [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
 - [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 <a name="mte"></a>

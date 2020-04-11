@@ -35,7 +35,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | Unique identifier for a specific configuration |
-| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
+| `ConfigurationImpact` | string | Rated impact of the configuration to the overall Microsoft Secure Score for Devices (1-10) |
 | `ConfigurationName` | string | Display name of the configuration |
 | `ConfigurationDescription` | string | Description of the configuration |
 | `RiskDescription` | string | Description of the associated risk |
