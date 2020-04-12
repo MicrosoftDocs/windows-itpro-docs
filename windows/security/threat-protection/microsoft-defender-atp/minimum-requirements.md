@@ -13,7 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -24,12 +24,12 @@ ms.topic: conceptual
 
 There are some minimum requirements for onboarding machines to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
->[!TIP]
->- Learn about the latest enhancements in Microsoft Defender ATP:[Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
->- Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> [!TIP]
+> - Learn about the latest enhancements in Microsoft Defender ATP:[Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
@@ -40,7 +40,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
-For detailed licensing information, see the [Product terms page](https://www.microsoft.com/en-us/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product. 
+For detailed licensing information, see the [Product terms page](https://www.microsoft.com/en-us/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -53,13 +53,14 @@ For more information about licensing requirements for Microsoft Defender ATP pla
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
 - Microsoft Edge
 - Internet Explorer version 11
-- Google Chrome  
+- Google Chrome
 
->[!NOTE]
->While other browsers might work, the mentioned browsers are the ones supported.
+> [!NOTE]
+> While other browsers might work, the mentioned browsers are the ones supported.
 
 
 ## Hardware and software requirements
+
 ### Supported Windows versions
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
@@ -82,24 +83,26 @@ Machines on your network must be running one of these editions.
 The hardware requirements for Microsoft Defender ATP on machines is the same as those for the supported editions.
 
 > [!NOTE]
-> Machines that are running mobile versions of Windows are not supported.
+> Machines running mobile versions of Windows are not supported.
 
 
 ### Other supported operating systems
--  macOSX
--  Linux
--  Android
+- macOSX
+- Linux (currently, MD-ATP is only available in Public Preview Edition for Linux)
+- Android
 
->[!NOTE]
->You'll need to know the exact Linux distros, Android, and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
+> [!NOTE]
+> You'll need to know the exact Linux distros, Android, and macOS versions that are compatible with Microsoft Defender ATP for the integration to work.
+>
+> Also note that MD-ATP is currently only available in Public Preview Edition for Linux.
 
 
 ### Network and data storage and configuration requirements
 When you run the onboarding wizard for the first time, you must choose where your Microsoft Defender Advanced Threat Protection-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.
 
 > [!NOTE]
-> -   You cannot change your data storage location after the first-time setup.
-> -   Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
+> - You cannot change your data storage location after the first-time setup.
+> - Review the [Microsoft Defender ATP data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
 
 ### Diagnostic data settings
@@ -131,12 +134,11 @@ By default, this service is enabled, but it&#39;s good practice to check to ensu
 If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
 
 
-
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-	  a. Go to **Start** and type **cmd**.
+      a. Go to **Start** and type **cmd**.
 
     b. Right-click **Command prompt** and select **Run as administrator**.
 
@@ -153,7 +155,6 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     ```
 
 
-
 #### Internet connectivity
 Internet connectivity on machines is required either directly or through proxy.
 
@@ -164,11 +165,8 @@ For more information on additional proxy configuration settings see, [Configure 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 
-
-
-
 ## Windows Defender Antivirus configuration requirement
-The Microsoft Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
+The Microsoft Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them.
 
 You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
@@ -188,9 +186,6 @@ If you're running Windows Defender Antivirus as the primary antimalware product 
 If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 
-
-
-
-## Related topic
+## Related topics
 - [Validate licensing and complete setup](licensing.md)
 - [Onboard machines](onboard-configure.md)
