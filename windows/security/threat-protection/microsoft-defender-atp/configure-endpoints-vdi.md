@@ -108,7 +108,9 @@ https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image
 https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image<br>
 
 - If offline servicing is not an a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:<br>
-1. After booting the master image for online servicing or patching, run the offboarding script to turn off the defender ATP sensor.<br>
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the defender ATP sensor.<br>
+Refer to the article below for guidance on offboarding script:<br>
+https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script#offboard-machines-using-a-local-script<br>
 2. Ensure the sensor is off by running 'sc query sense'.<br>
 3. Service the image as needed.<br>
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumelated since boot:<br>
