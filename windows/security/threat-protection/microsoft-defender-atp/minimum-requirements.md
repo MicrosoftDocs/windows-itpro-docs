@@ -88,7 +88,7 @@ The hardware requirements for Microsoft Defender ATP on machines is the same as 
 
 ### Other supported operating systems
 - macOSX
-- Linux (currently, MD-ATP is only available in Public Preview Edition for Linux)
+- Linux (currently, Microsoft Defender ATP is only available in the Public Preview Edition for Linux)
 - Android
 
 > [!NOTE]
