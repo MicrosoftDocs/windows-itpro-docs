@@ -120,7 +120,7 @@ For more information on DISM commands and offline servicing, please refer to the
 ```
 PsExec.exe -s cmd.exe
 cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-del ``*.*`` /f /s /q
+del *.* /f /s /q
 exit
 ```
 
