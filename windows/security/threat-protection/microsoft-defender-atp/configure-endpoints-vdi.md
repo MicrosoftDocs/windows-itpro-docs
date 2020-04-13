@@ -108,16 +108,22 @@ For more information on DISM commands and offline servicing, please refer to the
 - [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 - If offline servicing is not a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the defender ATP sensor.<br>
-Refer to the article below for guidance on using an offboarding script:<br>
-https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script#offboard-machines-using-a-local-script
+
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](onfigure-endpoints-script.md#offboard-machines-using-a-local-script).
+
 2. Ensure the sensor is off by running 'sc query sense'.
+
 3. Service the image as needed.
-4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:<br>
-*PsExec.exe -s cmd.exe*<br>
-*cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"*<br>
-*del ``*.*`` /f /s /q*<br>
-*exit*
+
+4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
+
+```
+PsExec.exe -s cmd.exe
+cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+del ``*.*`` /f /s /q
+exit
+```
+
 5. Re-seal the golden/master image as you normally would.
 
 ## Related topics
