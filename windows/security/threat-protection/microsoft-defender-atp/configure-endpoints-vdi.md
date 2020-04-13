@@ -107,18 +107,18 @@ For more information on DISM commands and offline servicing, please refer to the
 - [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-- If offline servicing is not an a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:<br>
+- If offline servicing is not a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the defender ATP sensor.<br>
-Refer to the article below for guidance on offboarding script:<br>
-https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script#offboard-machines-using-a-local-script<br>
-2. Ensure the sensor is off by running 'sc query sense'.<br>
-3. Service the image as needed.<br>
+Refer to the article below for guidance on using an offboarding script:<br>
+https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script#offboard-machines-using-a-local-script
+2. Ensure the sensor is off by running 'sc query sense'.
+3. Service the image as needed.
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:<br>
 *PsExec.exe -s cmd.exe*<br>
 *cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"*<br>
 *del ``*.*`` /f /s /q*<br>
-*exit*<br>
-5. Re-seal the golden/master image as you normally would.<br>
+*exit*
+5. Re-seal the golden/master image as you normally would.
 
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
@@ -126,4 +126,3 @@ https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-de
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
-
