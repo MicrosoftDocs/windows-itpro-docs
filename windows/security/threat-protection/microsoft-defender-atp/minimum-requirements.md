@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 There are some minimum requirements for onboarding machines to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
 
 > [!TIP]
