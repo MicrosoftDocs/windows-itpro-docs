@@ -97,10 +97,13 @@ The following steps will guide you through onboarding VDI machines and will high
 
 # Updating non-persistent virtual desktop infrastructure (VDI) images
 - As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
-For example, you can use the below commands to install an update while the image remains offline:<br>
-*DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"*<br>
-*DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"*<br>
-*DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit*<br>
+For example, you can use the below commands to install an update while the image remains offline:
+
+```
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
+DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
+DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
+```
 
 For more information on DISM commands and offline servicing, please refer to the articles below:
 - [Modify a Windows image using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
