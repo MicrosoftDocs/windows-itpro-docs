@@ -113,7 +113,7 @@ Refer to the article below for guidance on offboarding script:<br>
 https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script#offboard-machines-using-a-local-script<br>
 2. Ensure the sensor is off by running 'sc query sense'.<br>
 3. Service the image as needed.<br>
-4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumelated since boot:<br>
+4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:<br>
 *PsExec.exe -s cmd.exe*<br>
 *cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"*<br>
 *del ``*.*`` /f /s /q*<br>
