@@ -75,7 +75,7 @@ You may also be interested in this msdn channel 9 video:
 
 -   [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
--   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
+- [Configuration Management for Nano Server](https://docs.microsoft.com/archive/blogs/grouppolicy/configuration-management-on-servers/)
 -   [Microsoft Security Guidance Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 -   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
 -   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
