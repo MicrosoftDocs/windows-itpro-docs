@@ -6,6 +6,7 @@
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
+### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
 ### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 
