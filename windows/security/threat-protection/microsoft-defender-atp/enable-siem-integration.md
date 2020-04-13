@@ -67,7 +67,7 @@ Enable security information and event management (SIEM) integration so you can p
    > [!NOTE]
    > You'll need to generate a new Refresh token every 90 days. 
 
-6. Follow the instructions for [creating an Azure AD app registration for MDATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
+6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
 
 You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft Defender Security Center.
 
