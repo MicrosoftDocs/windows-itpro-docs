@@ -76,6 +76,9 @@ See the [attack surface reduction](attack-surface-reduction.md) topic for detail
 
 4. Double-click the **Exclude files and paths from Attack surface reduction Rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+
 ### Use PowerShell to exclude files and folders
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
