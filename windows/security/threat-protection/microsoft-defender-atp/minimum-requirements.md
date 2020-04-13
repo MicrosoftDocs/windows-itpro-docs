@@ -94,7 +94,7 @@ The hardware requirements for Microsoft Defender ATP on machines is the same as 
 > [!NOTE]
 > You'll need to know the exact Linux distros, Android, and macOS versions that are compatible with Microsoft Defender ATP for the integration to work.
 >
-> Also note that MD-ATP is currently only available in Public Preview Edition for Linux.
+> Also note that Microsoft Defender ATP is currently only available in the Public Preview Edition for Linux.
 
 
 ### Network and data storage and configuration requirements
