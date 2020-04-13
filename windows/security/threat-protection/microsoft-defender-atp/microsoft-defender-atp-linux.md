@@ -127,7 +127,7 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 >
 > SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
-For troubleshooting steps, see the [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md) page.
+For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md).
 
 ## How to update Microsoft Defender ATP for Linux
 
@@ -139,4 +139,4 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](linux-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
