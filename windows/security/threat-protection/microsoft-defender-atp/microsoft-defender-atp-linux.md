@@ -85,6 +85,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Minimum kernel version 2.6.38
 - The `fanotify` kernel option must be enabled
+  > [!WARNING]
+  > Running Microsoft Defender ATP for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+
 - Disk space: 650 MB
 - The solution currently provides real-time protection for the following file system types:
 
