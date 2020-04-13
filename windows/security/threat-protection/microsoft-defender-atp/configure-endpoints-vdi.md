@@ -95,6 +95,29 @@ The following steps will guide you through onboarding VDI machines and will high
 
 8. Use the search function by entering the machine name and select **Machine** as search type.
 
+# Updating non-persistent virtual desktop infrastructure (VDI) images
+- As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
+For example, you can use the below commands to install an update while the image remains offline:<br>
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"<br>
+DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"<br>
+DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit<br>
+
+For more information on DISM commands and offline servicing, please refer to the articles below:<br>
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism<br>
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14<br>
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image<br>
+
+- If offline servicing is not an a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:<br>
+1. After booting the master image for online servicing or patching, run the offboarding script to turn off the defender ATP sensor.<br>
+2. Ensure the sensor is off by running 'sc query sense'.<br>
+3. Service the image as needed.<br>
+4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumelated since boot:<br>
+*PsExec.exe -s cmd.exe*<br>
+*cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"*<br>
+*del ``*.*`` /f /s /q*<br>
+*exit*<br>
+5. Re-seal the golden/master image as you normally would.<br>
+
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
