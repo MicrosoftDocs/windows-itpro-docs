@@ -52,9 +52,7 @@ When you open the portal, you'll see the main areas of the capability:
 - (2) Threat & Vulnerability Management navigation pane
 - (3) Threat & Vulnerability Management dashboard
 
- ![Microsoft Defender Advanced Threat Protection portal](images/tvm_dashboard.png)
-
- ![Threat & Vulnerability Management menu](images/tvm-menu.png)
+ ![Microsoft Defender Advanced Threat Protection portal](images/tvm-new-dashboard.png)
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following tables for a description of each section.
 
