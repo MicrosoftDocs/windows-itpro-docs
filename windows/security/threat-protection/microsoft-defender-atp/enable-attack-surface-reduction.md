@@ -137,7 +137,7 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 ## PowerShell
 
 > [!WARNING]
->If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
 
