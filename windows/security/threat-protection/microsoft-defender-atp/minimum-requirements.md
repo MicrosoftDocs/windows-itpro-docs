@@ -40,7 +40,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
-For detailed licensing information, see the [Product terms page](https://www.microsoft.com/en-us/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
+For detailed licensing information, see the [Product terms page](https://www.microsoft.com/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
