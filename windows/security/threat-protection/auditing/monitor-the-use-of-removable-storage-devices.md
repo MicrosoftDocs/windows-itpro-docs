@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date:
 ---
 
 # Monitor the use of removable storage devices
@@ -28,7 +28,9 @@ If you configure this policy setting, an audit event is generated each time a us
 
 Use the following procedures to monitor the use of removable storage devices and to verify that the devices are being monitored.
 
->**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
+Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
+
+> [!NOTE] When a policy to audit removable storage is pushed to a computer, a new [Security Descriptor](https://docs.microsoft.com/en-us/windows/win32/secauthz/audit-generation) needs to be applied to all removable storage devices with the audit settings. The [security descriptor for a device](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/controlling-device-access) can be set up either when the device is installed, or by setting up the [device properties in the registry](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/setting-device-object-registry-properties-after-installation), which is done by calling a [device installation function](https://docs.microsoft.com/en-us/previous-versions/ff541299). This may require the device to restart to apply the new security descriptor.
  
 **To configure settings to monitor removable storage devices**
 
