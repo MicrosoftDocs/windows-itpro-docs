@@ -129,7 +129,10 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
      ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](../images/asr-rules-gp.png)
 
-5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item. Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
+
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
 
 ## PowerShell
 
