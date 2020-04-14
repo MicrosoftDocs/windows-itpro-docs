@@ -86,7 +86,9 @@ The following event types reflect time-stamped events that impact the score:
 
 Once you select an event insight, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
 
-![Event insights page](images/event-insights-flyout500.png)
+The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means machines are more vulnerable to exploitation.
+
+![Event insights page](images/tvm-event-insights-flyout-500.png)
 
 ## Related topics
 
