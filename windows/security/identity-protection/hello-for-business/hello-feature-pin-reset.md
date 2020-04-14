@@ -50,7 +50,7 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 4. After you have logged in, choose **Accept** to give consent for the PIN reset client to access your account.
 
 > [!NOTE]
-> After you Accept the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN Reset applications are listed for your tenant.
+> After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
 
 ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
 5. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
