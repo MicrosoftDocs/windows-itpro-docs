@@ -1,5 +1,5 @@
 ---
-title: Upgrade Windows Phone 8.1 to Windows 10 Mobile in an MDM environment (Windows 10)
+title: Upgrade Windows Phone 8.1 to Windows 10 Mobile in an MDM environment
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
@@ -10,8 +10,10 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdm
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)
@@ -53,7 +55,7 @@ The registry CSP is used to push the GUID value to the following registry key fo
 
 ```
 [HKLM\Software\Microsoft\Provisioning\OMADM] 
-"EnterpriseUpgrade"="d369c9b6-2379-466d-9162-afc53361e3c2”
+"EnterpriseUpgrade"="d369c9b6-2379-466d-9162-afc53361e3c2"
 ```
 
 
@@ -69,7 +71,7 @@ SyncML xmlns="SYNCML:SYNCML1.1">
           <LocURI>./Vendor/MSFT/Registry/HKLM/SOFTWARE/Microsoft/Provisioning/OMADM/EnterpriseUpgrade</LocURI>
         </Target>
         <Meta>
-          <Format xmlns=”syncml:metinf”>chr</Format>
+          <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>d369c9b6-2379-466d-9162-afc53361e3c2</Data>
       </Item>

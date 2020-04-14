@@ -1,5 +1,5 @@
 ---
-title: Step by step - Deploy Windows 10 using Microsoft Endpoint Configuration Manager
+title: Steps to deploy Windows 10 with Microsoft Endpoint Configuration Manager
 description: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ author: greg-lindsay
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
@@ -108,11 +109,11 @@ Topics and procedures in this guide are summarized in the following table. An es
 5. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```
-    New-NetFirewallRule -DisplayName “SQL Server” -Direction Inbound –Protocol TCP –LocalPort 1433 -Action allow
-    New-NetFirewallRule -DisplayName “SQL Admin Connection” -Direction Inbound –Protocol TCP –LocalPort 1434 -Action allow
-    New-NetFirewallRule -DisplayName “SQL Database Management” -Direction Inbound –Protocol UDP –LocalPort 1434 -Action allow
-    New-NetFirewallRule -DisplayName “SQL Service Broker” -Direction Inbound –Protocol TCP –LocalPort 4022 -Action allow
-    New-NetFirewallRule -DisplayName “SQL Debugger/RPC” -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Server" -Direction Inbound –Protocol TCP –LocalPort 1433 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Admin Connection" -Direction Inbound –Protocol TCP –LocalPort 1434 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Database Management" -Direction Inbound –Protocol UDP –LocalPort 1434 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Service Broker" -Direction Inbound –Protocol TCP –LocalPort 4022 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Debugger/RPC" -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
     ```
 
 7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.   
@@ -123,7 +124,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
-    Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
+    Set-ItemProperty -Path $AdminKey -Name "IsInstalled" -Value 0
     Stop-Process -Name Explorer
     ```
 
@@ -207,7 +208,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 19. If desired, re-enable IE Enhanced Security Configuration at this time on SRV1:
 
     ```
-    Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
+    Set-ItemProperty -Path $AdminKey -Name "IsInstalled" -Value 1
     Stop-Process -Name Explorer
     ```
 
@@ -387,7 +388,7 @@ WDSUTIL /Set-Server /AnswerClients:None
     In the trace tool, click **Tools** on the menu and choose **Find**. Search for "**STATMSG: ID=2301**". For example:
 
     ```
-    STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=924 TID=1424 GMTDATE=Tue Oct 09 22:36:30.986 2018 ISTR0="Zero Touch WinPE x64" ISTR1="PS10000A" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS10000A"	SMS_DISTRIBUTION_MANAGER	10/9/2018 3:36:30 PM	1424 (0x0590)
+    STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=924 TID=1424 GMTDATE=Tue Oct 09 22:36:30.986 2018 ISTR0="Zero Touch WinPE x64" ISTR1="PS10000A" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS10000A"    SMS_DISTRIBUTION_MANAGER    10/9/2018 3:36:30 PM    1424 (0x0590)
     ```
 
 11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects** in the bottom right-hand corner of the console, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Double-click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
