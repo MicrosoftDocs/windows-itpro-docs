@@ -73,7 +73,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a Global administrator account.
-2. You need your tenant ID to complete the following task.  You can discovery your tenant ID viewing the **Properties** of your Azure Active Directory from the Azure Portal. It will be listed under Directory ID. You can also use the following command in a command Window on any Azure AD joined or hybrid Azure AD joined computer.</br>
+2. You need your tenant ID to complete the following task.  You can discover your tenant ID by viewing the **Properties** of your Azure Active Directory from the Azure Portal. It will be listed under Directory ID. You can also use the following command in a Command window on any Azure AD-joined or hybrid Azure AD-joined computer.</br>
 
     ```
     dsregcmd /status | findstr -snip "tenantid"
