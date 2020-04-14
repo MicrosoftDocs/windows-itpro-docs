@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: scottmca
-manager: dansimp
+manager: laurawi
 ---
 
 # Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)

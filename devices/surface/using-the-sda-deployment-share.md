@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Using the Microsoft Surface Deployment Accelerator deployment share

@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit
