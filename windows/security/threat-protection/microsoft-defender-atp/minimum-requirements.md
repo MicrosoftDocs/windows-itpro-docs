@@ -160,7 +160,7 @@ Internet connectivity on machines is required either directly or through proxy.
 
 The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Microsoft Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
-For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md) .
+For more information on additional proxy configuration settings, see [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
