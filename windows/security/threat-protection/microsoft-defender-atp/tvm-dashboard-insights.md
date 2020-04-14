@@ -46,13 +46,7 @@ Watch this video for a quick overview of what is in the Threat & Vulnerability M
 
 ## Threat & Vulnerability Management in Microsoft Defender Security Center
 
-When you open the portal, you'll see the main areas of the capability:
-
-- (1) Menu to open the navigation pane
-- (2) Threat & Vulnerability Management navigation pane
-- (3) Threat & Vulnerability Management dashboard
-
- ![Microsoft Defender Advanced Threat Protection portal](images/tvm-new-dashboard.png)
+ ![Microsoft Defender Advanced Threat Protection portal](images/tvm-dashboard-devices.png)
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following tables for a description of each section.
 
