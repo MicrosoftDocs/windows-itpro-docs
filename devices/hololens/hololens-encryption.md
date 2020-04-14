@@ -10,7 +10,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ---

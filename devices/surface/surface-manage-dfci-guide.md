@@ -10,7 +10,7 @@ ms.author: v-jokai
 ms.topic: article
 ms.date: 11/13/2019
 ms.reviewer: jesko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Intune management of Surface UEFI settings

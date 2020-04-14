@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.author: v-jokai
 ms.topic: article
 ms.reviewer: tokatz
-manager: dansimp
+manager: laurawi
 ---
 # Optimize Wi-Fi connectivity for Surface devices
 
