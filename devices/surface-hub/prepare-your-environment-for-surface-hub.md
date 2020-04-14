@@ -3,7 +3,7 @@ title: Prepare your environment for Microsoft Surface Hub
 description: This section contains an overview of the steps required to prepare your environment so that you can use all of the features of Microsoft Surface Hub.
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: prepare environment, features of Surface Hub, create and test device account, check network availability
 ms.prod: surface-hub
 ms.sitesec: library

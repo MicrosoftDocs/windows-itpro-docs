@@ -16,7 +16,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.date: 03/10/2020
 ms.reviewer: Teresa-Motiv
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

@@ -1,7 +1,7 @@
 ---
 title: Windows Autopilot and Surface devices
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Find out about Windows Autopilot deployment options for Surface devices.
 keywords: autopilot, windows 10, surface, deployment
 ms.prod: w10
