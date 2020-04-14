@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux with Puppet
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender ATP for Linux using Puppet.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -48,7 +48,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
-  
+
     ```bash
     $ ls -l
     total 8
@@ -60,7 +60,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create a Puppet manifest
 
-You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* module available from puppetlabs, and assumes that the apt module has been installed on your Puppet server.
+You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
 
 Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This is typically located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created above to the *install_mdatp/files* folder. Create an *init.pp* file that contains the deployment instructions:
 
@@ -84,46 +84,74 @@ The choice of the channel determines the type and frequency of updates that are 
 
 In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
+> [!WARNING]
+> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
 Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
 > [!NOTE]
-> In case of Oracle Linux, replace *[distro]* with “rhel”.
+> In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
-class install_mdatp {
+# Puppet manifest to install Microsoft Defender ATP.
+# @param channel The release channel based on your environment, insider-fast or prod.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param version The Linux distribution release number, e.g. 7.4.
 
-    if ($osfamily == 'Debian') {
-        apt::source { 'microsoftpackages' :
-            location => 'https://packages.microsoft.com/[distro]/[version]/prod', # change the version and distro based on your OS 
-            release  => '[channel]',
-            repos    => 'main',
-            key      => {
-                'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
-                'server' => 'https://packages.microsoft.com/keys/microsoft.asc',
-            },
+class install_mdatp (
+$channel = 'insiders-fast',
+$distro = undef,
+$version = undef
+){
+    case $::osfamily {
+        'Debian' : {
+            apt::source { 'microsoftpackages' :
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
+                release  => $channel,
+                repos    => 'main',
+                key      => {
+                    'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
+                    'server' => 'keyserver.ubuntu.com',
+                },
+            }
         }
-    }
-    else {
-        yumrepo { 'microsoftpackages' :
-            baseurl  => 'https://packages.microsoft.com/[distro]/[version]/[channel]', # change the version and distro based on your OS 
-            enabled  => 1,
-            gpgcheck => 1,
-            gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
+        'RedHat' : {
+            yumrepo { 'microsoftpackages' :
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+                descr    => "packages-microsoft-com-prod-${channel}",
+                enabled  => 1,
+                gpgcheck => 1,
+                gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
+            }
         }
+        default : { fail("${::osfamily} is currently not supported.") }
     }
 
-    package { 'mdatp':
-        ensure => 'installed',
-    }
+    case $::osfamily {
+        /(Debian|RedHat)/: {
+            file { ['/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
+                ensure => directory,
+                owner  => root,
+                group  => root,
+                mode   => '0755'
+            }
 
-    file { ['/etc', '/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
-        ensure => directory,
-    }
-    file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
-        mode => "0644",
-        source => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
+            file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
+                source  => 'puppet:///modules/mdatp/mdatp_onboard.json',
+                owner   => root,
+                group   => root,
+                mode    => '0600',
+                require => File['/etc/opt/microsoft/mdatp']
+            }
+
+            package { 'mdatp':
+                ensure  => 'installed',
+                require => File['/etc/opt/microsoft/mdatp/mdatp_onboard.json']
+            }
+        }
+        default : { fail("${::osfamily} is currently not supported.") }
     }
 }
 ```
@@ -162,7 +190,7 @@ orgId                                   : "[your organization identifier]"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-$ mdatp --health healthy
+mdatp --health healthy
 ```
 
 The above command prints `1` if the product is onboarded and functioning as expected.

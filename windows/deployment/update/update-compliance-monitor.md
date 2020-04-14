@@ -18,10 +18,9 @@ ms.topic: article
 # Monitor Windows Updates with Update Compliance
 
 > [!IMPORTANT]
-> While [Windows Analytics was retired on January 31, 2020](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), support for Update Compliance has continued through the Azure Portal; however, please note the following updates:
->
-> * On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance was retired. You can continue to review malware definition status and manage and monitor malware attacks with Microsoft Endpoint Manager's [Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune). Configuration Manager customers can monitor Endpoint Protection with [Endpoint Protection in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
-> * The Perspectives feature of Update Compliance was retired on March 31, 2020 in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
+> While [Windows Analytics was retired on January 31, 2020](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), support for Update Compliance has continued through the Azure Portal. A few retirements are planned, noted below, but are placed on hold until the current situation stabilizes. 
+> * As of March 31, 2020, The Windows Defender Antivirus reporting feature of Update Compliance is no longer supported and will soon be retired. You can continue to review malware definition status and manage and monitor malware attacks with Microsoft Endpoint Manager's [Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune). Configuration Manager customers can monitor Endpoint Protection with [Endpoint Protection in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
+> * As of March 31, 2020, The Perspectives feature of Update Compliance is no longer supported and will soon be retired in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
 
 ## Introduction
 
@@ -33,7 +32,7 @@ Update Compliance enables organizations to:
 
 Update Compliance is offered through the Azure portal, and is included as part of Windows 10 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
 
-Update Compliance uses Windows 10 and Windows Defender Antivirus diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, Windows Defender Antivirus data, and Delivery Optimization usage data, and then sends this data to a secure cloud to be stored for analysis and usage in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal).
+Update Compliance uses Windows 10 diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, and Delivery Optimization usage data, and then sends this data to a customer-owned [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) workspace to power the experience.
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 

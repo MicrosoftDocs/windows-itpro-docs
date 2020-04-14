@@ -11,7 +11,7 @@ author: coveminer
 ms.author: v-jokai
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Manage Surface UEFI settings

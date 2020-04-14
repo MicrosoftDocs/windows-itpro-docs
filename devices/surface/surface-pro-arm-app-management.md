@@ -9,7 +9,7 @@ author: coveminer
 ms.author: v-jokai
 ms.topic: article
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Deploying, managing, and servicing Surface Pro X

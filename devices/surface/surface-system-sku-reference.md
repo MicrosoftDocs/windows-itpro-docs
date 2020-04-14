@@ -11,7 +11,7 @@ ms.author: v-jokai
 ms.topic: article
 ms.date: 03/09/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ---

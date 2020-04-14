@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.date: 1/6/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens 2
 ---

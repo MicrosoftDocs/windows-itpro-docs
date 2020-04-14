@@ -79,10 +79,16 @@ The following table lists the services and their associated URLs that your netwo
 | United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
+- Proxy auto-config (PAC)
 - Web Proxy Auto-discovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+
+> [!WARNING]
+> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
+>
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
