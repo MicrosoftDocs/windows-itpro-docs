@@ -820,6 +820,7 @@ The following list shows the supported values:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * User
 > * Device
 
 <hr/>
@@ -886,6 +887,7 @@ The following list shows the supported values:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * User
 > * Device
 
 <hr/>
@@ -1443,6 +1445,7 @@ To validate on Desktop, do the following:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * User
 > * Device
 
 <hr/>
