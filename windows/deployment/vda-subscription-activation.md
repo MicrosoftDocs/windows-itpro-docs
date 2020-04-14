@@ -4,8 +4,9 @@ ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
-description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
+description: In this article, you will learn how to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA.
 keywords: upgrade, update, task sequence, deploy
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
