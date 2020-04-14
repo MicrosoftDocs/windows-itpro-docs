@@ -1,6 +1,6 @@
 ---
 title: MBR2GPT
-description: How to use the MBR2GPT tool to convert MBR partitions to GPT
+description: How to use the MBR2GPT tool to convert Master Boot Record (MBR) partitions to the GUID Partition Table (GPT).
 keywords: deploy, troubleshoot, windows, 10, upgrade, partition, mbr, gpt
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,6 +15,7 @@ ms.audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # MBR2GPT.EXE

@@ -2,7 +2,7 @@
 title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
+description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delivery Optimization for Windows 10 updates
@@ -87,7 +88,7 @@ For complete list of every possible Delivery Optimization setting, see [Delivery
 
 
 ## How Microsoft uses Delivery Optimization
-At Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
+At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
@@ -131,11 +132,11 @@ This section summarizes common problems and some solutions to try.
 
 ### If you don't see any bytes from peers
 
-If you don’t see any bytes coming from peers the cause might be one of the following issues:
+If you don't see any bytes coming from peers the cause might be one of the following issues:
 
-- Clients aren’t able to reach the Delivery Optimization cloud services.
-- The cloud service doesn’t see other peers on the network. 
-- Clients aren’t able to connect to peers that are offered back from the cloud service.
+- Clients aren't able to reach the Delivery Optimization cloud services.
+- The cloud service doesn't see other peers on the network. 
+- Clients aren't able to connect to peers that are offered back from the cloud service.
 
 
 ### Clients aren't able to reach the Delivery Optimization cloud services.
@@ -155,7 +156,7 @@ If you suspect this is the problem, try these steps:
 1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
 2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
-4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
+4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for "what is my IP". You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren't reporting the same public IP address.
 
 
 ### Clients aren't able to connect to peers offered by the cloud service
