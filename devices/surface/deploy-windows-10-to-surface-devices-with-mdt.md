@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit

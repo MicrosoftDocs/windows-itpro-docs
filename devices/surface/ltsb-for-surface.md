@@ -9,7 +9,7 @@ author: coveminer
 ms.author: v-jokai
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ---

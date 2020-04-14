@@ -3,7 +3,7 @@ title: HoloLens release notes
 description: Learn about updates in each new HoloLens release.
 author: scooley
 ms.author: scooley
-manager: dansimp
+manager: laurawi
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
