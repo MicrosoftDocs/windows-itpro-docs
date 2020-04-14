@@ -24,6 +24,10 @@ ms.topic: conceptual
 
 Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your machines are less vulnerable from exploitation.
 
+- Quickly understand and identify high-level takeaways about the state of security in your organization.
+- Detect and respond to areas that require investigation or action to improve the current state.
+- Communicate with peers and management about the impact of security efforts.
+
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
 ![Exposure score card](images/tvm_exp_score.png)

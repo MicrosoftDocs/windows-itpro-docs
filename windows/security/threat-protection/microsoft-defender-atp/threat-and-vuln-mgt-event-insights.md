@@ -22,18 +22,9 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Event insights is a "risk news feed" which will help you interpret how risk, through new vulnerabilities or exploits, is introduced into the organization.
+Event insights is a risk news feed which helps you interpret how risk, through new vulnerabilities or exploits, is introduced into the organization. You can view events which may impact your organization's risk. For example, you can find new vulnerabilities that were introduced, vulnerabilities that became exploitable, exploit that was addd to an exploit kit, and more.
 
-With events insight, you can check which impactful events occurred in your organization. For example, new vulnerabilities that were introduced, vulnerabilities that became exploitable, the number of impacted machines, and more.
-
-The goal of event insights is to tell the story of your [exposure score](tvm-exposure-score.md).
-
-- Quickly understand and identify high-level takeaways about the state of security in your organization.
-- Detect and respond to areas that require investigation or action to improve the current state.
-- Determine the cause of large changes to your exposure score
-- Communicate with peers and management about the impact of security efforts.
-
-You can reduce you exposure score by addressing what needs to be remediated based on the prioritized security recommendations. See [Security recommendations](tvm-security-recommendation.md) for details.
+Event insights also tells the story of your [exposure score](tvm-exposure-score.md) so you can determine the cause of large changes. Reduce you exposure score by addressing what needs to be remediated based on the prioritized [security recommendations](tvm-security-recommendation.md).
 
 ## Navigate to the Event insights page
 
@@ -69,7 +60,7 @@ Select **Custom range** to change the date range to another custom one, or a pre
 
 ## Event insights overview
 
-On the Event insights page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns (like adding exposure score trend) and filter by type or percent of impacted machines.
+On the Event insights page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns and filter by type or percent of impacted machines.
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
@@ -93,7 +84,7 @@ The following event types reflect time-stamped events that impact the score:
 
 ### Drill down to a specific event
 
-Once you select an event insight, a flyout will appear listing the details and current CVEs that affect your machines. Each CVE can be associated with multiple products. You can show more CVEs or view the related recommendation.
+Once you select an event insight, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
 
 ![Event insights page](images/event-insights-flyout500.png)
 
