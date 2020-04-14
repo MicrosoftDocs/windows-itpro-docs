@@ -23,7 +23,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -61,7 +61,7 @@ Go to the Threat & Vulnerability Management navigation menu and select **Securit
 
 In a given day as a Security Administrator, you can take a look at the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) to see your [exposure score](tvm-exposure-score.md) side-by-side with your [configuration score](configuration-score.md). The goal is to **lower** your organization's exposure from vulnerabilities, and **increase** your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal.
 
-![Screenshot of security recommendations page](images/top-security-recommendations350.png)
+![Example of Top security recommendations card, with four security recommendations.](images/top-security-recommendations350.png)
 
 The top security recommendations lists the improvement opportunities prioritized based on the important factors mentioned in the previous section - threat, likelihood to be breached, and value. Selecting a recommendation will take you to the security recommendations page with more details about the recommendation.
 
@@ -71,17 +71,17 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the number of exposed machines, the color of the graph will change into green.
 
-![Screenshot of security recommendations page](images/tvmsecrec-updated.png)
+![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
 
-Useful icons also quickly calls your attention to: <ul><li> ![Possible active alert](images/tvm_alert_icon.png) possible active alerts</li><li>![Threat insight](images/tvm_bug_icon.png) associated public exploits</li><li>![Recommendation insight](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+Useful icons also quickly calls your attention to: <ul><li> ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
 
 ### Investigate
 
 Select the security recommendation that you want to investigate or process.
 
-![Screenshot of the security recommendation page flyout for a software which reached its end-of-life](images/secrec-flyouteolsw.png)
+![Example of a security recommendation flyout page.](images/secrec-flyouteolsw.png)
 
 From the flyout, you can do any of the following:
 
@@ -130,7 +130,7 @@ Exceptions can be created for both Security update and Configuration change reco
 When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
 
 1. Select a security recommendation you would like create an exception for, and then **Exception options**.
-![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
+![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-option.png)
 
 2. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
@@ -154,12 +154,11 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 2. Select the three dots beside the security recommendation that you want to report,  then select **Report inaccuracy**.
 
-![Screenshot of Report inaccuracy control](images/report-inaccuracy500.png)
+![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 
 4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
-
 
 ## Related topics
 

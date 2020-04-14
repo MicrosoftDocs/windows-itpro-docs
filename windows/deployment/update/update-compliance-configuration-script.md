@@ -19,7 +19,7 @@ ms.topic: article
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures device policies via Group Policy, ensures that required services are running, and more.
 
-You can [**download the script here**](https://github.com/cinglis-msft/UpdateComplianceConfigurationScript). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
+You can [**download the script here**](https://www.microsoft.com/en-us/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
 ## How the script is organized
 
@@ -41,7 +41,7 @@ When using the script in the context of troubleshooting, use `Pilot`. Enter `Run
 2. Configure `commercialIDValue` to your CommercialID. To get your CommercialID, see [Getting your CommercialID](update-compliance-get-started.md#get-your-commercialid).
 3. Run the script. The script must be run in System context.
 4. Examine the Logs output for any issues. If there were issues:
-   - Compare Logs output with the required settings covered in [Manually Configuring Devices for Update Compliance] (update-compliance-configuration-manual.md).
+   - Compare Logs output with the required settings covered in [Manually Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
    - Examine the script errors and refer to the [script error reference](#script-error-reference) on how to interpret the codes.
    - Make the necessary corrections and run the script again.
 5. When you no longer have issues, proceed to using the script for more broad deployment with the `Deployment` folder.

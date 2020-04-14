@@ -66,6 +66,9 @@
 ## [Status of the HoloLens services](hololens-status.md)
 ## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)
 
+# Resources
+## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
+
 # [HoloLens release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
