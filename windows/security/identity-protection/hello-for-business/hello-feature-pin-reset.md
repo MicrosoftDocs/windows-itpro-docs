@@ -90,7 +90,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) using a Global administrator account. 
 2. Navigate to the Microsoft Intune blade. Choose **Device configuration** > **Profiles**. From the list of device configuration profiles, choose the profile that contains the PIN reset configuration.
-3. In the device configuration profile, click **Assignments**.
+3. In the device configuration profile, select **Assignments**.
 4. Use the **Include** and/or **Exclude** tabs to target the device configuration profile to select groups.
 
 ## On-premises Deployments
