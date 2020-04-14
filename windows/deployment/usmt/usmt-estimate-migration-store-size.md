@@ -1,6 +1,7 @@
 ---
 title: Estimate Migration Store Size (Windows 10)
-description: Estimate Migration Store Size
+description: In this article, you will learn how to estimate size of the migration store using the ScanState tool.
+ms.custom: seo-marvel-apr2020
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

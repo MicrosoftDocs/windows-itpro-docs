@@ -1,6 +1,7 @@
 ---
 title: USMT Best Practices (Windows 10)
-description: USMT Best Practices
+description: This article discusses general and security-related best practices when using User State Migration Tool (USMT) 10.0.
+ms.custom: seo-marvel-apr2020
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
 ms.reviewer: 
 manager: laurawi

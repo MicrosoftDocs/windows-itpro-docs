@@ -1,6 +1,7 @@
 ---
 title: General Conventions (Windows 10)
-description: General Conventions
+description: In this article, you will learn about the General guidelines for XML files in USMT and XML helper functions. 
+ms.custom: seo-marvel-apr2020
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

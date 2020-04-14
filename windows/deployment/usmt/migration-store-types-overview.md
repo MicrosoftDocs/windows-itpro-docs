@@ -1,6 +1,7 @@
 ---
 title: Migration Store Types Overview (Windows 10)
-description: Migration Store Types Overview
+description: In this article, you'll learn about the Migration Store Types available in the User State Migration Tool (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

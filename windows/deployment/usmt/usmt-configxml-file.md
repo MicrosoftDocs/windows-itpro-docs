@@ -1,6 +1,7 @@
 ---
 title: Config.xml File (Windows 10)
-description: Config.xml File
+description: Learn about the Config.xml, that can be used to customize the store-creation or profile-migration behavior.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.reviewer: 
 manager: laurawi

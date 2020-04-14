@@ -1,6 +1,7 @@
 ---
 title: Test Your Migration (Windows 10)
-description: Test Your Migration
+description: This article will help you learn, how to test your migration plan before you deploy it to your entire organization.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 754af276-8386-4eac-8079-3d1e45964a0d
 ms.reviewer: 
 manager: laurawi

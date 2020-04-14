@@ -1,6 +1,7 @@
 ---
 title: Setting up Automatic Update in Windows Update for Business (Windows 10)
-description: Learn how to configure Automatic Update group policies in Windows Update for Business.
+description: In this article, you'll learn how to configure Automatic Update group policies in Windows Update for Business (Windows 10).
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
