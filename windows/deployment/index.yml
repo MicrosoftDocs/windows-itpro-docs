@@ -5,7 +5,7 @@ title: Deploy and update Windows 10
 metadata:
   document_id: 
   title: Deploy and update Windows 10
-  description: Deploying and updating Windows 10 for IT professionals.
+  description: This landing page provides information about deploying and updating Windows 10 for IT professionals.
   keywords: deploy, update, Windows, service, Microsoft365, e5, e3
   ms.localizationpriority: high
   author: greg-lindsay
@@ -13,6 +13,7 @@ metadata:
   manager: laurawi
   ms.topic: article
   ms.devlang: na
+  ms.custom: seo-marvel-apr2020
 
 sections:
 - items:

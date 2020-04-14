@@ -2,7 +2,7 @@
 title: Update Compliance - Windows Defender AV Status report
 ms.reviewer: 
 manager: laurawi
-description: an overview of the Windows Defender AV Status report
+description: This article is an overview of the Windows Defender AV Status report, which shows data about signature and threat status.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -12,6 +12,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Defender AV Status

@@ -2,7 +2,7 @@
 title: Demonstrate Autopilot deployment
 ms.reviewer:
 manager: laurawi
-description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
+description: In this article, find step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,9 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.custom: autopilot
+ms.custom: 
+ - autopilot
+ - seo-marvel-apr2020
 ---
 
 
@@ -225,7 +227,7 @@ Ensure the VM booted from the installation ISO, click **Next** then click **Inst
    ![Windows setup](images/winsetup5.png)
    ![Windows setup](images/winsetup6.png)
 
-After the VM restarts, during OOBE, it’s fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
+After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
 
    ![Windows setup](images/winsetup7.png)
 
@@ -244,7 +246,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 ## Capture the hardware ID
 
 > [!NOTE]
-> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you’re not going to use the OA3 Tool to capture the full 4K HH for various reasons (you’d have to install the OA3 tool, your device couldn’t have a volume license version of Windows, it’s a more complicated process than using a PS script, etc.).  Instead, you’ll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
+> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you're not going to use the OA3 Tool to capture the full 4K HH for various reasons (you'd have to install the OA3 tool, your device couldn't have a volume license version of Windows, it's a more complicated process than using a PS script, etc.).  Instead, you'll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
 
 Follow these steps to run the PS script:
 
@@ -303,7 +305,7 @@ Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory 
 
 ![Serial number and hardware hash](images/hwid.png)
 
-You will need to upload this data into Intune to register your device for Autopilot, so it needs to be transferred to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
+You will need to upload this data into Intune to register your device for Autopilot, so it needs to be transferred to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you're using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
 
 If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
 
@@ -331,7 +333,7 @@ For this lab, you need an AAD Premium subscription.  You can tell if you have a 
 
 ![MDM and Intune](images/mdm-intune2.png)
 
-If the configuration blade shown above does not appear, it’s likely that you don’t have a **Premium** subscription.  Auto-enrollment is a feature only available in AAD Premium.
+If the configuration blade shown above does not appear, it's likely that you don't have a **Premium** subscription.  Auto-enrollment is a feature only available in AAD Premium.
 
 To convert your Intune trial account to a free Premium trial account, navigate to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
 
@@ -376,7 +378,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
     > [!NOTE]
     > If menu items like **Windows enrollment** are not active for you, then look to the far-right blade in the UI.  You might need to provide Intune configuration privileges in a challenge window that appeared.
 
-2. Under **Add Windows Autopilot devices** in the far right pane, browse to the **AutopilotHWID.csv** file you previously copied to your local computer.  The file should contain the serial number and 4K HH of your VM (or device).  It’s okay if other fields (Windows Product ID) are left blank.
+2. Under **Add Windows Autopilot devices** in the far right pane, browse to the **AutopilotHWID.csv** file you previously copied to your local computer.  The file should contain the serial number and 4K HH of your VM (or device).  It's okay if other fields (Windows Product ID) are left blank.
 
     ![HWID CSV](images/hwid-csv.png)
 
@@ -473,7 +475,7 @@ To create a Group, open the Azure Portal and select **Azure Active Directory** >
 
 ![All groups](images/all-groups.png)
 
-Select New group from the Groups blade to open the new groups UI.  Select the “Security” group type, name the group, and select the “Assigned” membership type:
+Select New group from the Groups blade to open the new groups UI.  Select the "Security" group type, name the group, and select the "Assigned" membership type:
 
 Before clicking **Create**, expand the **Members** panel, click your device's serial number (it will then appear under **Selected members**) and then click **Select** to add that device to this group.
 
@@ -497,7 +499,7 @@ Click **Select** and then click **Save**.
 
 ![Include group](images/include-group2.png)
 
-It’s also possible to assign specific users to a profile, but we will not cover this scenario in the lab. For more detailed information, see [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot).
+It's also possible to assign specific users to a profile, but we will not cover this scenario in the lab. For more detailed information, see [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot).
 
 ### Create a Windows Autopilot deployment profile using MSfB
 
@@ -544,14 +546,14 @@ Confirm the profile was successfully assigned to the intended device by checking
 
 ## See Windows Autopilot in action
 
-If you shut down your VM after the last reset, it’s time to start it back up again, so it can progress through the Autopilot OOBE experience but do not attempt to start your device again until the **PROFILE STATUS** for your device in Intune has changed from **Not assigned** to **Assigning** and finally **Assigned**:
+If you shut down your VM after the last reset, it's time to start it back up again, so it can progress through the Autopilot OOBE experience but do not attempt to start your device again until the **PROFILE STATUS** for your device in Intune has changed from **Not assigned** to **Assigning** and finally **Assigned**:
 
 ![Device status](images/device-status.png)
 
 Also, make sure to wait at least 30 minutes from the time you've [configured company branding](#configure-company-branding), otherwise these changes might not show up.
 
 > [!TIP]
-> If you reset your device previously after collecting the 4K HH info, and then let it restart back to the first OOBE screen, then you might need to restart the device again to ensure the device is recognized as an Autopilot device and displays the Autopilot OOBE experience you’re expecting.  If you do not see the Autopilot OOBE experience, then reset the device again (Settings > Update & Security > Recovery and click on Get started.  Under Reset this PC, select Remove everything and Just remove my files. Click on Reset).
+> If you reset your device previously after collecting the 4K HH info, and then let it restart back to the first OOBE screen, then you might need to restart the device again to ensure the device is recognized as an Autopilot device and displays the Autopilot OOBE experience you're expecting.  If you do not see the Autopilot OOBE experience, then reset the device again (Settings > Update & Security > Recovery and click on Get started.  Under Reset this PC, select Remove everything and Just remove my files. Click on Reset).
 
 - Ensure your device has an internet connection.
 - Turn on the device
@@ -610,7 +612,7 @@ If you also (optionally) want to remove your device from AAD, navigate to **Azur
 
 ## Appendix A: Verify support for Hyper-V
 
-Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](https://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information.
+Starting with Windows 8, the host computer's microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](https://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information.
 
 To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, scroll down, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
@@ -654,13 +656,13 @@ EPT             *       Supports Intel extended page tables (SLAT)
 
 #### Prepare the app for Intune
 
-Before we can pull an application into Intune to make it part of our AP profile, we need to “package” the application for delivery using the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool).  After downloading the tool, gather the following three bits of information to use the tool:
+Before we can pull an application into Intune to make it part of our AP profile, we need to "package" the application for delivery using the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool).  After downloading the tool, gather the following three bits of information to use the tool:
 
 1. The source folder for your application
 2. The name of the setup executable file
 3. The output folder for the new file
 
-For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
+For the purposes of this lab, we'll use the Notepad++ tool as our Win32 app.
 
 Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then copy the file to a known location, such as C:\Notepad++msi.
 
@@ -700,7 +702,7 @@ Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
 
 ![Add app](images/app06.png)
 
-Simply using an install command like “notepad++.exe /S” will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn’t actually have an .msi version of their program, but we got an .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
+Simply using an install command like "notepad++.exe /S" will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn't actually have an .msi version of their program, but we got an .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
 
 Click **OK** to save your input and activate the **Requirements** blade.
 
