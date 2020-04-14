@@ -37,7 +37,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 2.  Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
 3.  In the **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
 4.  In the **Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
-5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) for more details.
+5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) for more details.
 
     ![Windows Defender Credential Guard Group Policy setting](images/credguard-gp-2.png)
 
@@ -223,7 +223,6 @@ From the host, you can disable Windows Defender Credential Guard for a virtual m
 ``` PowerShell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
-
 
 
 
