@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/6/2020
+ms.date: 4/14/2020
 ms.reviewer: 
 manager: laurawi
 appliesto:
@@ -64,7 +64,7 @@ Here's a quick summary of what's new:
 - Support for FIDO2 Security Keys to enable secure and easy authentication for shared devices
 - Seamlessly apply a provisioning package from a USB drive to your HoloLens
 - Use a provisioning packages to enroll your HoloLens to your Mobile Device Management system
-- Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use. To participate in the program, you have to use a tenant that is flighted for HoloLens. To do this, go to [Windows Autopilot for HoloLens Private Preview request](https://aka.ms/APHoloLensTAP).
+- Use Windows Autopilot to set up and pre-configure new devices, quickly getting them ready for productive use. To participate in the program, you have to use a tenant that is flighted for HoloLens. To sign up for this program, see [Windows Autopilot for HoloLens Private Preview request](https://aka.ms/APHoloLensTAP).
 - Dark Mode - HoloLens customers can now choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
 - Support for additional system voice commands
 - An updated Cortana app with a focus on productivity
@@ -131,7 +131,7 @@ When a user starts the Autopilot self-deploying process, the process completes t
 4. Provision the device.
 5. Present the sign-in screen to the user.
 
-For full information on Autopilot please visit: [Windows Autopilot for HoloLens 2 evaluation guide](https://docs.microsoft.com/hololens/hololens2-autopilot)
+For full information about Autopilot, see [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md).
 
 ### FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
