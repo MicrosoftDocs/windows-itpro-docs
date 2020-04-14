@@ -68,6 +68,7 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
 - Windows 8.1 Pro
 - Windows 10, version 1607 or later
   - Windows 10 Enterprise
+  - [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
   - Windows 10 Education
   - Windows 10 Pro
   - Windows 10 Pro Education
@@ -89,7 +90,6 @@ The hardware requirements for Microsoft Defender ATP on machines is the same as 
 ### Other supported operating systems
 - macOSX
 - Linux (currently, Microsoft Defender ATP is only available in the Public Preview Edition for Linux)
-- Android
 
 > [!NOTE]
 > You'll need to know the exact Linux distros, Android, and macOS versions that are compatible with Microsoft Defender ATP for the integration to work.
@@ -175,7 +175,7 @@ When Windows Defender Antivirus is not the active antimalware in your organizati
 If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
 > [!NOTE]
-> Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender Antivirus settings will be ignored when Tamper Protection is on.
+> Your regular group policy doesn't apply to Tamper Protection, and changes to Windows Defender Antivirus settings will be ignored when Tamper Protection is on.
 
 
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
