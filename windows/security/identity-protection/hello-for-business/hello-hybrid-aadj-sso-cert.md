@@ -665,7 +665,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
 19. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 20. Click **Next**.
-21. Click **Next** two more times to skip **Scope tags** and **Assignments** steps of the wizard and click **Create**.
+21. Click **Next** two more times to skip the **Scope tags** and **Assignments** steps of the wizard and click **Create**.
 
 ### Assign Group to the WHFB Certificate Enrollment Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.
