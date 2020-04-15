@@ -21,24 +21,24 @@ ms.date: 02/21/2018
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This topic describes the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control (WDAC) policies.
 
 ## Policy XML lifecycle management
 
-Before you begin deploying WDAC, consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
+The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
 <!-- We should insert a diagram to show this visually -->
 Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
-1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML.
-2. Deploy the audit mode policy to intended computers.
-3. Monitor audit block events from the intended computers and add/edit/delete rules as needed to address unexpected/unwanted blocks.
+1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files are not prevented from executing.
+2. Deploy the audit mode policy to intended devices.
+3. Monitor audit block events from the intended devices and add/edit/delete rules as needed to address unexpected/unwanted blocks.
 4. Repeat steps 2-3 until the remaining block events meet expectations.
-5. Generate the enforced mode version of the policy.
-6. Deploy the enforced mode policy to intended computers. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
+5. Generate the enforced mode version of the policy. In enforced mode, files that are not allowed by the policy are prevented from executing and corresponding block events are generated.
+6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
 ### Keep WDAC policies in a source control or document management solution
@@ -57,7 +57,7 @@ In addition, we recommend using the [Set-CIPolicyVersion](https://docs.microsoft
 
 ### Policy rule updates
 
-As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [managed installer](use-windows-defender-application-control-with-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you are less likely to need policy updates.
+As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [Managed Installer](use-windows-defender-application-control-with-managed-installer.md) functionality and consistently deploy all apps and their updates through your Managed Installer, then you are less likely to need policy updates.
 
 ## WDAC event management
 
@@ -71,31 +71,31 @@ Additionally, WDAC events are collected by [Microsoft Defender Advanced Threat P
 
 Considerations include:
 
--   What type of end-user support is provided for blocked applications?
--   How are new rules added to the policy?
--   How are existing rules updated?
--   Are events forwarded for review?
+- What type of end-user support is provided for blocked applications?
+- How are new rules added to the policy?
+- How are existing rules updated?
+- Are events forwarded for review?
 
 ### Help desk support
 
 If your organization has an established help desk support department in place, consider the following when deploying WDAC policies:
 
--   What documentation does your support department require for new policy deployments?
--   What are the critical processes in each business group both in work flow and timing that will be affected by application control policies and how could they affect your support department's workload?
--   Who are the contacts in the support department?
--   How will the support department resolve application control issues between the end user and those who maintain the WDAC rules?
+- What documentation does your support department require for new policy deployments?
+- What are the critical processes in each business group both in work flow and timing that will be affected by application control policies and how could they affect your support department's workload?
+- Who are the contacts in the support department?
+- How will the support department resolve application control issues between the end user and those who maintain the WDAC rules?
 
 ### End-user support
 
 Because WDAC is preventing unapproved apps from running, it is important that your organization carefully plan how to provide end-user support. Considerations include:
 
--   Do you want to use an intranet site as a first line of support for users who have tried to run a blocked app?
--   How do you want to support exceptions to the policy? Will you allow users to run a script to temporarily allow access to a blocked app?
+- Do you want to use an intranet site as a first line of support for users who have tried to run a blocked app?
+- How do you want to support exceptions to the policy? Will you allow users to run a script to temporarily allow access to a blocked app?
 
 ## Document your plan
 
 After deciding how your organization will manage your WDAC policy, record your findings.
 
--   **End-user support policy.** Document the process that you will use for handling calls from users who have attempted to run a blocked app, and ensure that support personnel have clear escalation steps so that the administrator can update the WDAC policy, if necessary.
--   **Event processing.** Document whether events will be collected in a central location called a store, how that store will be archived, and whether the events will be processed for analysis.
--   **Policy management.** Detail what policies are planned, how they will be managed, and how rules will be maintained over time.
+- **End-user support policy.** Document the process that you will use for handling calls from users who have attempted to run a blocked app, and ensure that support personnel have clear escalation steps so that the administrator can update the WDAC policy, if necessary.
+- **Event processing.** Document whether events will be collected in a central location called a store, how that store will be archived, and whether the events will be processed for analysis.
+- **Policy management.** Detail what policies are planned, how they will be managed, and how rules will be maintained over time.
