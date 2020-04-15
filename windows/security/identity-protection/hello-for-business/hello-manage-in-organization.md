@@ -351,8 +351,8 @@ The following table lists the MDM policy settings that you can configure for Win
 </table>
 
 >[!NOTE]
-> InWindows 10, version 1709 and later, if policy is not configured to explicitly require letters or special characters, users can optionally set an alphanumeric PIN. Prior to version 1709 the user is required to set a numeric PIN.
- 
+> In Windows 10, version 1709 and later, if policy is not configured to explicitly require letters or special characters, users can optionally set an alphanumeric PIN. Prior to version 1709 the user is required to set a numeric PIN.
+
 ## Policy conflicts from multiple policy sources
 
 Windows Hello for Business is designed to be managed by Group Policy or MDM but not a combination of both. If policies are set from both sources it can result in a mixed result of what is actually enforced for a user or device.
@@ -360,6 +360,9 @@ Windows Hello for Business is designed to be managed by Group Policy or MDM but 
 Policies for Windows Hello for Business are enforced using the following hierarchy: User Group Policy > Computer Group Policy > User MDM > Device MDM > Device Lock policy. All PIN complexity policies are grouped together and enforced from a single policy source.
 
 Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies is enforced on a per policy basis.  
+
+>[!Note]
+> Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
 
 ><b>Examples</b>
 >
