@@ -33,16 +33,15 @@ When enabled, endpoint detection and response (EDR) in block mode blocks malicio
 
 When EDR in block mode is turned on, and a malicious artifact is detected, the detection results in blocking and remediation actions. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
 
-The following images shows an instance of unwanted software that was detected and blocked through EDR in block mode:
+The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
 :::image type="content" source="images/edr-in-block-mode.jpg" alt-text="Malware detected by EDR in block mode":::
-
 
 
 ## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning EDR in block mode on.
+> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
@@ -74,11 +73,11 @@ The following images shows an instance of unwanted software that was detected an
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR om block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like Windows Defender Antivirus in passive mode, with the additional steps of blocking and remediating malicious items that are detected. 
+No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like Windows Defender Antivirus in passive mode, with the additional steps of blocking and remediating malicious items that are detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
-The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack works in integration, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
+The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack works in integration. To get best protection value, you should keep Windows Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
