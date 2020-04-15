@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/17/2019
+ms.date: 04/15/2020
 ---
 
 # Use multiple Windows Defender Application Control Policies
