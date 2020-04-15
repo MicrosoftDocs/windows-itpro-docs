@@ -32,7 +32,7 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
    &lt;UserConfiguration PackageId=&lt;Package ID&gt; DisplayName=&lt;Name of the Package&gt;
 
-   xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
+   xmlns="<https://schemas.microsoft.com/appv/2010/userconfiguration"&gt>; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
 
    PackageName=&lt;Package ID&gt;
 

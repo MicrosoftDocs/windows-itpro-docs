@@ -1,4 +1,4 @@
-# [Microsoft Surface Hub](index.md)
+# [Microsoft Surface Hub](index.yml)
 
 # Surface Hub 2S
 

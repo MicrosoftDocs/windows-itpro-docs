@@ -79,7 +79,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. First create the `copy_onboarding_pkg.yml` file under the `/etc/ansible/roles` directory:
+Create subtask or role files that contribute to an actual task. First create the `download_copy_blob.yml` file under the `/etc/ansible/roles` directory:
 
 - Copy the onboarding package to all client machines:
 
@@ -139,6 +139,9 @@ Create subtask or role files that contribute to an actual task. First create the
 
     In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
+    > [!WARNING]
+    > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
@@ -158,7 +161,7 @@ Create subtask or role files that contribute to an actual task. First create the
         - name: Add Microsoft APT key
             apt_key:
                 keyserver: https://packages.microsoft.com/
-                id: BC528686B50D79E339D3721CEB3E94ADBE1229C
+                id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
             when: ansible_os_family == "Debian"
 
         - name: Add  Microsoft yum repository for MDATP

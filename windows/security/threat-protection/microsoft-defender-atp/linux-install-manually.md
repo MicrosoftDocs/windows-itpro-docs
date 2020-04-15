@@ -43,6 +43,9 @@ The choice of the channel determines the type and frequency of updates that are 
 
 In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
+> [!WARNING]
+> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
 ### RHEL and variants (CentOS and Oracle Linux)
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
@@ -201,15 +204,19 @@ Download the onboarding package from Microsoft Defender Security Center:
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
 
-    ```bash
-    ls -l
-    total 8
-    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+```bash
+ls -l
+```
 
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: WindowsDefenderATPOnboarding.py
-    ```
+`total 8`
+`-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
+
+```bash
+unzip WindowsDefenderATPOnboardingPackage.zip
+```
+
+`Archive:  WindowsDefenderATPOnboardingPackage.zip`
+`inflating: WindowsDefenderATPOnboarding.py`
 
 ## Client configuration
 
@@ -231,14 +238,12 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     ```bash
     mdatp --health orgId
-    [your organization identifier]
     ```
 
 4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
     mdatp --health healthy
-    1
     ```
 
     > [!IMPORTANT]
@@ -248,22 +253,21 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-        ```bash
-        mdatp --health realTimeProtectionEnabled
-        1
-        ```
+    ```bash
+    mdatp --health realTimeProtectionEnabled
+    ```
 
     - Open a Terminal window. Copy and execute the following command:
 
-        ``` bash
-        curl -o ~/Downloads/eicar.com.txt http://www.eicar.org/download/eicar.com.txt
-        ```
+    ``` bash
+    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+    ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
-        ```bash
-        mdatp --threat --list --pretty
-        ```
+    ```bash
+    mdatp --threat --list --pretty
+    ```
 
 ## Log installation issues
 

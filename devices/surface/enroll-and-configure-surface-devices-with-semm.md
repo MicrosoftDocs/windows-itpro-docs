@@ -6,14 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Enroll and configure Surface devices with SEMM

@@ -5,6 +5,7 @@
 ## [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
 ## [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
+## [Frequently asked questions about cleaning HoloLens 2 devices](hololens2-maintenance.md)
 ## [Supported languages for HoloLens 2](hololens2-language-support.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
@@ -58,12 +59,15 @@
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover HoloLens](hololens-recovery.md)
 ## [Troubleshoot HoloLens issues](hololens-troubleshooting.md)
+## [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 ## [Known issues for HoloLens](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
 ## [Status of the HoloLens services](hololens-status.md)
 ## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)
-## [SCEP whitepaper](scep-whitepaper.md)
+
+# Resources
+## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
 
 # [HoloLens release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
