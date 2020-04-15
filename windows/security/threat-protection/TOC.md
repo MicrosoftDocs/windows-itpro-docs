@@ -35,7 +35,7 @@
 #### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 #### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-### [Event insights](microsoft-defender-atp/threat-and-vuln-mgt-event-insights.md)
+#### [Event insights](microsoft-defender-atp/threat-and-vuln-mgt-event-insights.md)
 #### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 ### [Attack surface reduction]()
