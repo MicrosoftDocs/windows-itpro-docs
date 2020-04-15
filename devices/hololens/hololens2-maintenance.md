@@ -72,7 +72,7 @@ To clean the brow pad, wipe it by using a cloth that's moistened by using water 
 UV-C germicidal irradiation has not been tested on HoloLens 2.
 
 > [!CAUTION]  
-> High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A or UV-B radiation has the following effects, in order of the duration and intensity of exposure:
+> High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:
 >  
 > 1. The brow pad and device closures become discolored.
 > 1. Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.
