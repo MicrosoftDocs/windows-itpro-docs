@@ -66,7 +66,7 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 
 ![Event insights page](images/event-insights-page.png)
 
-### Icons and event types
+### Icons 
 
 The following icons show up next to events:
 
@@ -75,12 +75,18 @@ The following icons show up next to events:
 - ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
 - ![bug icon](images/bug-caution-icon2.png) Exploit verified
 
-The following event types reflect time-stamped events that impact the score:
+### Columns
 
-- Exploit added to an exploit kit
-- Exploit was verified
-- New public exploit
-- New vulnerability
+- **Date**: month, day, year
+- **Event**: impactful event, including component, type, and number of impacted machines
+- **Related component**: software
+- **Impacted machines**: when the event occurred. You can also filter by percent.
+- **Types**: reflect time-stamped events that impact the score. They can be filtered.
+    - Exploit added to an exploit kit
+    - Exploit was verified
+    - New public exploit
+    - New vulnerability
+- **Score trend**: exposure score trend
 
 ### Drill down to a specific event
 
