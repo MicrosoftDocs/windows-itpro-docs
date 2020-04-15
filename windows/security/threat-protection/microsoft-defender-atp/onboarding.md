@@ -1,5 +1,5 @@
 ---
-title: Onboard to the Micrsoft Defender ATP service
+title: Onboard to the Microsoft Defender ATP service
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard to the Micrsoft Defender ATP service
+# Onboard to the Microsoft Defender ATP service
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -34,7 +34,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
      <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
         <img src="images/setup.png" alt="Setup the Microsoft Defender ATP service" title="Setup" />
-      <br/>Phase 2: Setup </a><br>
+      <br/>Phase 2: Set up </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
@@ -73,39 +73,39 @@ below to onboard systems with Configuration Manager.
 
 1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-device-collections.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-device-collections.png)
 
 2. Right Click **Device Collection** and select **Create Device Collection**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-device-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-device-collection.png)
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-limiting-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-limiting-collection.png)
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-query-rule.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-query-rule.png)
 
 5.  Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-direct-membership.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-direct-membership.png)
 
 6. Select **Criteria** and then choose the star icon.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-criteria.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-criteria.png)
 
 7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-simple-value.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-simple-value.png)
 
 8. Select **Next** and **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-membership-rules.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-membership-rules.png)
 
 9. Select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-confirm.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-confirm.png)
 
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
@@ -123,7 +123,7 @@ Manager and deploy that policy to Windows 10 devices.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 
-3.	Select **Download package**.
+3. Select **Download package**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
@@ -132,11 +132,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-policy.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-policy.png)
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-policy-name.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-policy-name.png)
 
 8. Click **Browse**.
 
@@ -257,15 +257,15 @@ MMA for enrollment into the workspace.
 
 9.  Set Run to **Hidden**.
 
-10.  Set **Program can run** to **Whether or not a user is logged on**.
+10. Set **Program can run** to **Whether or not a user is logged on**.
 
-11.  Click **Next**.
+11. Click **Next**.
 
-12.  Set the **Maximum allowed run time** to 720.
+12. Set the **Maximum allowed run time** to 720.
 
-13.  Click **Next**.
+13. Click **Next**.
 
-   ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
+    ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
 
 14. Verify the configuration, then click **Next**.
 
@@ -275,12 +275,12 @@ MMA for enrollment into the workspace.
 
 16. Click **Close**.
 
-17.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
+17. In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
     Onboarding Package just created and select **Deploy**.
 
 18. On the right panel select the appropriate collection.
 
-19.  Click **OK**.
+19. Click **OK**.
 
 ## Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
@@ -318,7 +318,7 @@ needs on how Antivirus is configured.
 
     ![Image of next generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Right-click on the newly created antimalware policy and select **Deploy** .
+3. Right-click on the newly created antimalware policy and select **Deploy**.
 
     ![Image of next generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
 

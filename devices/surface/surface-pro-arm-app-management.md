@@ -5,12 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: high
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 1/22/2020
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Deploying, managing, and servicing Surface Pro X

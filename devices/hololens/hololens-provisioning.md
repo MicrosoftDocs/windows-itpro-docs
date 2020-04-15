@@ -16,7 +16,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.date: 03/10/2020
 ms.reviewer: Teresa-Motiv
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -61,10 +61,9 @@ Provisioning packages can include management instructions and policies, custom n
 
 ## Steps for creating provisioning packages
 
-### 1. Install Windows Configuration Designer on your PC. 
-You can do this in either of the following ways:
-- **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22)
-- **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
+1. **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). This includes HoloLens 2 capabilities.
+2. **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configuration Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box. This option does not include HoloLens 2 capabilities.
+
 
 ### 2. Create the provisioning package
 

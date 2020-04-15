@@ -6,14 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 01/15/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit

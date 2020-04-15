@@ -7,12 +7,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices, surface
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 02/26/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Manage Surface UEFI settings

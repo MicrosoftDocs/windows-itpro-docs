@@ -55,4 +55,5 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Learn the query language](advanced-hunting-query-language.md)

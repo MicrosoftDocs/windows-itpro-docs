@@ -5,11 +5,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.date: 10/31/2019
+author: coveminer
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro

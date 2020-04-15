@@ -44,7 +44,7 @@ The Security Compliance Toolkit consists of:
     -   Office 365 ProPlus (Sept 2019)
 
 -   Microsoft Edge security baseline
-    -   Version 79
+    -   Version 80
 
 -   Tools
     -   Policy Analyzer tool

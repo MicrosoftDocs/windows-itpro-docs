@@ -51,11 +51,14 @@ The following table lists the SQL Server versions that the App-V Management data
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
+|Microsoft SQL Server 2019||32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
 |Microsoft SQL Server 2012|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
+
+For more information on user configuration files with SQL server 2016 or later, see the [support article](https://support.microsoft.com/help/4548751/app-v-server-publishing-might-fail-when-you-apply-user-configuration-f).
 
 ### Publishing server operating system requirements
 

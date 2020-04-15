@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.date: 1/6/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens 2
 ---
@@ -36,13 +36,13 @@ If you no longer want to receive Insider builds of Windows Holographic, you can 
 
 To verify that your HoloLens is running a production build:
 
-- Go to **Settings > System > About**, and find the build number.
-- [See the release notes for production build numbers.](hololens-release-notes.md)
+1. Go to **Settings > System > About**, and find the build number.
+1. [See the release notes for production build numbers.](hololens-release-notes.md)
 
 To opt out of Insider builds:
 
-- On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
-- Follow the instructions to opt out your device.
+1. On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
+1. Follow the instructions to opt out your device.
 
 ## Provide feedback and report issues
 
@@ -65,8 +65,9 @@ Here's a quick summary of what's new:
 - Seamlessly apply a provisioning package from a USB drive to your HoloLens
 - Use a provisioning packages to enroll your HoloLens to your Mobile Device Management system
 - Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use.  Send a note to hlappreview@microsoft.com to join the preview.
-- Dark Mode - many Windows apps support both dark and light modes, and now HoloLens customers can choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time. Navigate to Settings > System > Colors to find "Choose your default app mode."
+- Dark Mode - HoloLens customers can now choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
 - Support for additional system voice commands
+- An updated Cortana app with a focus on productivity
 - Hand Tracking improvements to reduce the tendency to close the index finger when pointing. This should make button pressing and 2D slate usage feel more accurate
 - Performance and stability improvements across the product
 - More information in settings on HoloLens about the policy pushed to the device
@@ -95,8 +96,29 @@ You can now can access these commands with your voice:
 - "Volume up"
 - "Volume down"
 - "What is my IP address?"
+- "Take a picture"
+- "Take a video" / "Stop recording"
 
 If you're running your system with a different language, please try the appropriate commands in that language.
+
+### Cortana updates
+The updated app integrates with Microsoft 365, currently in English (United States) only, to help you get more done across your devices. On HoloLens 2, Cortana will no longer support certain device-specific commands like adjusting the volume or restarting the device, which are now supported with the new system voice commands above. Learn more about the new Cortana app and its direction on our blog [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+
+There's currently an issue we're investigating that requires you to launch the app once after booting the device in order to use the "Hey Cortana" keyword activation, and if you updated from a 18362 build, you may see an app tile for the previous version of the Cortana app in Start that no longer works. 
+
+### Dark mode
+Many Windows apps support both dark and light modes, and now HoloLens customers can choose the default mode for apps that support both. Once updated, the default app mode will be "dark," but can be changed easily. Navigate to **Settings > System > Colors to find "Choose your default app mode."**
+Here are some of the in-box apps that support Dark mode!
+- Settings
+- Microsoft Store
+- Mail
+- Calendar
+- File Explorer
+- Feedback Hub
+- OneDrive
+- Photos
+- 3D Viewer
+- Movies & TV
 
 ### FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.

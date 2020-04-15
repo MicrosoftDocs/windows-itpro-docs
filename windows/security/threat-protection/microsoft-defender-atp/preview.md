@@ -24,14 +24,15 @@ ms.topic: conceptual
 
 The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
-> [!TIP] 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+> [!TIP]
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
 For more information on new capabilities that are generally available, see [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md).
 
 ## Turn on preview features
+
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
@@ -41,12 +42,11 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
+
 The following features are included in the preview release:
 - [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
 
-- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information.
- 
- - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR>Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019.
+ - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019. See [Secure Configuration Assessment (SCA) for Windows Server now in public preview](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/secure-configuration-assessment-sca-for-windows-server-now-in/ba-p/1243885) and [Reducing risk with new Threat & Vulnerability Management capabilities](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/reducing-risk-with-new-threat-amp-vulnerability-management/ba-p/978145) blogs for more information.
 
 - [Threat & Vulnerability Management granular exploit details](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) <BR> You can now see a comprehensive set of details on the vulnerabilities found in your machine to give you informed decision on your next steps. The threat insights icon now shows more granular details, such as if the exploit is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has associated zero-day exploitation news, disclosures, or related security advisories.
  

@@ -33,7 +33,8 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user previously opted out of the calibration process
 - The calibration process did not succeed the last time the user used the device
 - The user has deleted their calibration profiles
-- The visor is raised and the lowered and any of the above circumstances apply (this may be disabled in **Settings > System > Calibration**.)
+- The device is taken off and put back on and any of the above circumstances apply 
+
 
 ![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
 
@@ -85,6 +86,8 @@ If calibration is unsuccessful try:
 
 If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
 
+Note that setting IPD is not applicable for Hololens 2, since eye positions are computed by the system. 
+
 ### Calibration data and security
 
 Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
@@ -104,6 +107,8 @@ You can also disable the calibration prompt by following these steps:
 ### HoloLens 2 eye-tracking technology
 
 The device uses its eye-tracking technology to improve display quality, and to ensure that all holograms are positioned accurately and comfortable to view in 3D. Because it uses the eyes as landmarks, the device can adjust itself for every user and tune its visuals as the headset shifts slightly throughout use.  All adjustments happen on the fly without a need for manual tuning.
+> [!NOTE]
+> Setting the IPD is not applicable for Hololens 2, since eye positions are computed by the system.
 
 HoloLens applications use eye tracking to track where you are looking in real time. This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the Holographic experience. Developers don’t need to do anything to leverage this capability.
 
