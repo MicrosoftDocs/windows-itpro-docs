@@ -58,7 +58,7 @@ Windows Defender SmartScreen provide an early warning system against websites th
 
 ## Submit files to Windows Defender SmartScreen for review
 
-If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/en-us/wdsi/filesubmission/) to Microsoft for review. For more info, see [Submit files for analysis](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/submission-guide). 
+If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more info, see [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide). 
 
 When submitting Microsoft Defender Smartscreen products, make sure to select **Microsoft Defender SmartScreen** from the menu.
 
