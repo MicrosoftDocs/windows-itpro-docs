@@ -44,5 +44,6 @@ Once these business factors are in place, you are ready to begin planning your W
 | [Plan for WDAC policy management](plan-windows-defender-application-control-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
 | [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
 | [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using WDAC. |
- 
+| [Policy creation for common WDAC usage scenarios](types-of-devices.md) | This set of topics outlines common use case scenarios and helps you begin to develop a plan for deploying WDAC in your organization. |
+
 After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
