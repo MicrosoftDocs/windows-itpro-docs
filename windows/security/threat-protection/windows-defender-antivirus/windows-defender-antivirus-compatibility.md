@@ -27,7 +27,7 @@ manager: dansimp
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - When endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, Windows Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Windows Defender Antivirus automatically goes into passive mode. (Real time protection and threats are not remediated by Windows Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [shadow protection (currently in private preview)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/shadow-protection), then Windows Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode (currently in private preview)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/shadow-protection), then Windows Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
 
 ## Antivirus and Microsoft Defender ATP
 
@@ -69,12 +69,12 @@ The following table summarizes the functionality and features that are available
 |--|--|--|--|--|--|
 |Active mode <br/><br/>  |Yes |No |Yes |Yes |Yes |
 |Passive mode  |No |No |Yes |No |Yes |
-|[Shadow protection enabled](shadow-protection.md)  |No |No |Yes |Yes |Yes |
+|[EDR in block mode enabled](shadow-protection.md)  |No |No |Yes |Yes |Yes |
 |Automatic disabled mode  |No |Yes |No |No |No |
 
 - In Active mode, Windows Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Windows Defender Antivirus app on the machine itself).
 - In Passive mode, Windows Defender Antivirus is not used as the antivirus app, and threats are not remediated by Windows Defender Antivirus. Files are scanned and reports are provided for threat detections which are shared with the Microsoft Defender ATP service.
-- When [shadow protection (currently in private preview)](shadow-protection.md) is turned on, Windows Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
+- When [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md) (currently in private preview) is turned on, Windows Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
 - In Automatic disabled mode, Windows Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated.
 
 ## Keep the following points in mind
@@ -95,4 +95,4 @@ If you uninstall the other product, and choose to use Windows Defender Antivirus
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md)
-- [Shadow protection in next-generation protection](shadow-protection.md)
+- [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)
