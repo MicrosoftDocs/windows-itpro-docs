@@ -651,7 +651,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 9. Select **User** as a certificate type.
 10. Configure **Certificate validity period** to match your organization.
    > [!IMPORTANT]
-    > Remember that you need to configure your certificate authority to allow Microsoft Intune to configure certificate validity.
+   > Remember that you need to configure your certificate authority to allow Microsoft Intune to configure certificate validity.
 
 11. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
 12. Select **Custom** from the **Subject name format** list.
