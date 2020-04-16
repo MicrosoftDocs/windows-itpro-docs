@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 04/16/2020
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) machines
@@ -81,15 +81,15 @@ The following steps will guide you through onboarding VDI machines and will high
 
 6. Test your solution:
 
-      a. Create a pool with one machine.
+    a. Create a pool with one machine.
       
-      b. Logon to machine.
+    b. Logon to machine.
       
-      c. Logoff from machine.
+    c. Logoff from machine.
 
-      d. Logon to machine with another user.
+    d. Logon to machine with another user.
       
-      e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
+    e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
     **For multiple entries for each machine**: Check multiple entries in Microsoft Defender Security Center.
 
 7. Click **Machines list** on the Navigation pane.
@@ -111,22 +111,26 @@ For more information on DISM commands and offline servicing, please refer to the
 - [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-- If offline servicing is not a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:
+If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
 
-2. Ensure the sensor is off by running 'sc query sense'.
+2. Ensure the sensor is stopped by running the command below in a CMD window:
+
+    ```
+    sc query sense
+    ```
 
 3. Service the image as needed.
 
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
 
-```
-PsExec.exe -s cmd.exe
-cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-del *.* /f /s /q
-exit
-```
+    ```
+    PsExec.exe -s cmd.exe
+    cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+    del *.* /f /s /q
+    exit
+    ```
 
 5. Re-seal the golden/master image as you normally would.
 
