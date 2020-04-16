@@ -1331,4 +1331,26 @@ The following example is provided to show proper format and should not be taken 
     </SyncBody>
 </SyncML>
 ```
+
+### Bitmask error codes
+The following table provides the mapping of strings to status node bits:
+| Bit | UI Text |
+|-----|---------|
+|0|The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
+|1|The encryption method of the OS volume doesn't match the BitLocker policy.|
+|2|The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+|3|The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
+|4|The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
+|5|The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
+|6|The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
+|7|The OS volume is unprotected.|
+|8|Recovery key backup failed.|
+|9|A fixed drive is unprotected.|
+|10|The encryption method of the fixed drive doesn't match the BitLocker policy.|
+|11|To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
+|12|Windows Recovery Environment (WinRE) isn't configured.|
+|13|A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
+|14|The TPM isn't ready for BitLocker.|
+|15|The network isn't available, which is required for recovery key backup. |
+|16-31|For future use.|
 <!--/Policy-->
