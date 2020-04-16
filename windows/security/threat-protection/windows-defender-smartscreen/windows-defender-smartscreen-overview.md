@@ -83,9 +83,9 @@ wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 
 EventID | Description
 -|-
-1000 | Application Microsoft Defender SmartScreen Event
-1001 | Uri Microsoft Defender SmartScreen Event
-1002 | User Decision Microsoft Defender SmartScreen Event
+1000 | Application Windows Defender SmartScreen Event
+1001 | Uri Windows Defender SmartScreen Event
+1002 | User Decision Windows Defender SmartScreen Event
 
 ## Related topics
 - [Threat protection](../index.md)
