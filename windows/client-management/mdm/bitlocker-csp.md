@@ -1055,7 +1055,7 @@ Interior node. Supported operation is Get.
 <!--Policy-->
 <a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
 <!--Description-->
-This node reports compliance state of device encryption on the system. See 
+This node reports compliance state of device encryption on the system. 
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -1087,8 +1087,8 @@ Supported values:
 
 Value type is int. Supported operation is Get.
 
-The following table provides the mapping of the bits in the **Status/DeviceEncryptionStatus** node to the error code string:
-| Bit | Error Code String |
+The following table provides the mapping of the bits in the **Status/DeviceEncryptionStatus** node to the  error codes:  
+| Bit | Error Code |
 |-----|---------|
 |0|The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
 |1|The encryption method of the OS volume doesn't match the BitLocker policy.|
