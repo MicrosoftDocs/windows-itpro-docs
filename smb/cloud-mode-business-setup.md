@@ -68,14 +68,14 @@ If this is the first time you're setting this up, and you'd like to see how it's
    This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> (the admin portal).
 
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
-5. Select **You're ready to go...** which will take you to the Office 365 portal.
+5. Select **You're ready to go...** which will take you to the Microsoft 365 admin center.
 
    > [!NOTE]  
-   > In the Office 365 portal, icons that are greyed out are still installing.
+   > In the Microsoft 365 admin center, icons that are greyed out are still installing.
 
-   **Figure 2** - Office 365 portal
+   **Figure 2** - Microsoft 365 admin center
 
-   ![Office 365 portal](images/office365_portal.png)
+   ![Microsoft 365 admin center](images/office365_portal.png)
 
 
 6. Select the **Admin** tile to go to the admin center.
@@ -560,7 +560,7 @@ For other devices, such as those personally-owned by employees who need to conne
 9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [2.3 Verify the device is Azure AD joined](#23-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
 ### 4.2 Add a new user
-You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
+You can add new users to your tenant simply by adding them to the Microsoft 365 groups. Adding new users to Microsoft 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
 See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and verify that the same users were added to the Intune groups as well.
 

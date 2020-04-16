@@ -506,7 +506,7 @@ Assign SharePoint Online resource permissions to Office 365 security groups, not
 
 **Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 
-For information about creating security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
+For information about creating security groups, see [Create and manage Microsoft 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
 You can add and remove users from security groups at any time.
 
@@ -520,7 +520,7 @@ You can create email distribution groups based on job role (such as teachers, ad
 
 **Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
 
-For information about how to create security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
+For information about how to create security groups, see [Create and manage Microsoft 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
 ### Summary
 
