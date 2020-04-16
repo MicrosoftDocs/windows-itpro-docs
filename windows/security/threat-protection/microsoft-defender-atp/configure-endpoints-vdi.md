@@ -96,8 +96,8 @@ The following steps will guide you through onboarding VDI machines and will high
 
 8. Use the search function by entering the machine name and select **Machine** as search type.
 
-# Updating non-persistent virtual desktop infrastructure (VDI) images
-- As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
+## Updating non-persistent virtual desktop infrastructure (VDI) images
+As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
 For example, you can use the below commands to install an update while the image remains offline:
 
 ```
@@ -113,7 +113,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 - If offline servicing is not a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](onfigure-endpoints-script.md#offboard-machines-using-a-local-script).
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
 
 2. Ensure the sensor is off by running 'sc query sense'.
 
