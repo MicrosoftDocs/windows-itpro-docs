@@ -13,9 +13,6 @@ manager: dansimp
 ---
 # BitLocker CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
@@ -25,7 +22,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
 the setting configured by the admin.
 
-For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if TPM protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
+For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
 The following diagram shows the BitLocker configuration service provider in tree format.
 
@@ -284,7 +281,7 @@ ADMX Info:
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
-This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.
+This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a TPM. This setting is applied when you turn on BitLocker.
 
 > [!NOTE]
 > Only one of the additional authentication options can be required at startup, otherwise an error occurs.
@@ -1058,7 +1055,7 @@ Interior node. Supported operation is Get.
 <!--Policy-->
 <a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
 <!--Description-->
-This node reports compliance state of device encryption on the system.
+This node reports compliance state of device encryption on the system. See 
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -1088,8 +1085,30 @@ Supported values:
 - 0 - Indicates that the device is compliant.
 - Any other value represents a non-compliant device.
 
-<!--/SupportedValues-->
 Value type is int. Supported operation is Get.
+
+The following table provides the mapping of the bits in the **Status/DeviceEncryptionStatus** node to the error code string:
+| Bit | Error Code String |
+|-----|---------|
+|0|The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
+|1|The encryption method of the OS volume doesn't match the BitLocker policy.|
+|2|The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+|3|The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
+|4|The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
+|5|The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
+|6|The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
+|7|The OS volume is unprotected.|
+|8|Recovery key backup failed.|
+|9|A fixed drive is unprotected.|
+|10|The encryption method of the fixed drive doesn't match the BitLocker policy.|
+|11|To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
+|12|Windows Recovery Environment (WinRE) isn't configured.|
+|13|A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
+|14|The TPM isn't ready for BitLocker.|
+|15|The network isn't available, which is required for recovery key backup. |
+|16-31|For future use.|
+
+<!--/SupportedValues-->
 
 <!--/Policy-->
 
@@ -1332,25 +1351,4 @@ The following example is provided to show proper format and should not be taken 
 </SyncML>
 ```
 
-### Bitmask error codes
-The following table provides the mapping of strings to status node bits:
-| Bit | UI Text |
-|-----|---------|
-|0|The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
-|1|The encryption method of the OS volume doesn't match the BitLocker policy.|
-|2|The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
-|3|The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
-|4|The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
-|5|The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
-|6|The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
-|7|The OS volume is unprotected.|
-|8|Recovery key backup failed.|
-|9|A fixed drive is unprotected.|
-|10|The encryption method of the fixed drive doesn't match the BitLocker policy.|
-|11|To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
-|12|Windows Recovery Environment (WinRE) isn't configured.|
-|13|A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
-|14|The TPM isn't ready for BitLocker.|
-|15|The network isn't available, which is required for recovery key backup. |
-|16-31|For future use.|
 <!--/Policy-->
