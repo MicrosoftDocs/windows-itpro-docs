@@ -24,18 +24,18 @@ ms.collection:
 
 ## What is EDR in block mode?
 
-When enabled, endpoint detection and response (EDR) in block mode blocks malicious artifacts or behaviors observed through post-breach protection. EDR extends behavioral-based blocking and containment capabilities in Microsoft Defender ATP. EDR in block mode works behind the scenes to remediate malicious entities identified in post-breach.
+When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is enabled, Microsoft Defender ATP leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious entities that are detected post-breach. 
 
 > [!NOTE]
 > EDR in block mode is currently in [limited private preview](#can-i-participate-in-the-private-preview-of-edr-in-block-mode). To get the best protection, [deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#review-completed-actions).
+When EDR in block mode is turned on, and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#check-activity-details-in-action-center).
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode.jpg" alt-text="Malware detected by EDR in block mode":::
+:::image type="content" source="images/edr-in-block-mode.jpg" alt-text="EDR in block mode detected something":::
 
 
 ## Enable EDR in block mode
