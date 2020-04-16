@@ -111,7 +111,7 @@ For more information on DISM commands and offline servicing, please refer to the
 - [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-If offline servicing is not a viable option for your non-persistent VDI environment, then the following steps should be taken to ensure consistency and sensor health:
+If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
 
