@@ -57,7 +57,7 @@ In addition, we recommend using the [Set-CIPolicyVersion](https://docs.microsoft
 
 ### Policy rule updates
 
-As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [Managed Installer](use-windows-defender-application-control-with-managed-installer.md) functionality and consistently deploy all apps and their updates through your Managed Installer, then you are less likely to need policy updates.
+As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [managed installer](use-windows-defender-application-control-with-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you are less likely to need policy updates.
 
 ## WDAC event management
 
