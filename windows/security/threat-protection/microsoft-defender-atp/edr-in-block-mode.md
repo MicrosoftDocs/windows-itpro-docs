@@ -12,7 +12,9 @@ audience: ITPro
 ms.topic: article 
 ms.prod: w10 
 ms.localizationpriority: medium
-ms.custom: next-gen
+ms.custom: 
+- next-gen
+- edr
 ms.collection: 
 ---
 
@@ -47,8 +49,6 @@ The following image shows an instance of unwanted software that was detected and
 
 2. Choose **Settings** > **Advanced features**.
 
-    :::image type="content" source="images/turn-edr-in-block-mode-on.jpg" alt-text="Turn EDR in block mode on":::
-
 3. Turn on **EDR in block mode**.
 
 > [!NOTE]
@@ -73,7 +73,7 @@ The following image shows an instance of unwanted software that was detected and
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like Windows Defender Antivirus in passive mode, with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
+No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Windows Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
