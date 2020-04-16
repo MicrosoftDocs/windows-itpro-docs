@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 04/16/2020
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) machines
@@ -115,7 +115,7 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
 
-2. Ensure the sensor is 'STOPPED' by running the command below in CMD window:
+2. Ensure the sensor is stopped by running the command below in CMD window:
 ```
 sc query sense
 ```
