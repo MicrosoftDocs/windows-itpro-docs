@@ -56,7 +56,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Create work documents in enterprise-allowed apps.</td>
         <td><strong>For desktop:</strong><br><br>
             <ul>
-                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<br><br><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<br><br>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either <a href="create-wip-policy-using-intune-azure.md" data-raw-source="[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)">Create a Windows Information Protection (WIP) policy using Microsoft Intune</a> or <a href="create-wip-policy-using-sccm.md" data-raw-source="[Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-sccm.md)">Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager</a>, based on your deployment system.</li>
+                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<br><br><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<br><br>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either <a href="create-wip-policy-using-intune-azure.md" data-raw-source="[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)">Create a Windows Information Protection (WIP) policy using Microsoft Intune</a> or <a href="create-wip-policy-using-configmgr.md" data-raw-source="[Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md)">Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager</a>, based on your deployment system.</li>
             </ul>
             <strong>For mobile:</strong><br><br>
             <ol>
@@ -113,7 +113,7 @@ You can try any of the processes included in these scenarios, but you should foc
             <ol>
                 <li>Start Windows Journal and Internet Explorer 11, creating, editing, and saving files in both apps.<br>Make sure that all of the files you worked with are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li>
                 <li>Open File Explorer and make sure your modified files are appearing with a <strong>Lock</strong> icon.</li>
-                <li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<br><br><strong>Note</strong><br>Most Windows-signed components like File Explorer (when running in the user’s context), should have access to enterprise data.<br><br>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don&#39;t have access by default, but can be added to your allowed apps list.</li>
+                <li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<br><br><strong>Note</strong><br>Most Windows-signed components like File Explorer (when running in the user's context), should have access to enterprise data.<br><br>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don&#39;t have access by default, but can be added to your allowed apps list.</li>
             </ol>
         </td>
     </tr>
@@ -172,17 +172,7 @@ You can try any of the processes included in these scenarios, but you should foc
             </ul>
         </td>
     </tr>
-    <tr>
-        <td>Stop Google Drive from syncing WIP protected files and folders.</td>
-        <td>
-            <ul>
-                <li>In silent configuration, add Google Drive to Protected Apps and set it to Deny. This way, Google Drive will not sync WIP protected files and folders.</li>
-                <li>Google Drive details</li>
-                Publisher=O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US
-                File=GOOGLEDRIVESYNC.EXE
-            </ul>
-        </td>
-    </tr>
+    
 </table>
 
 >[!NOTE]

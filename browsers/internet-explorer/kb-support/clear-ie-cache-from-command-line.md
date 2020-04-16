@@ -9,7 +9,7 @@ ms.reviewer: ramakoni, DEV_Triage
 ms.prod: internet-explorer
 ms.technology:
 ms.topic: kb-support
-ms.custom: CI=111020
+ms.custom: CI=111026
 ms.localizationpriority: Normal
 # localization_priority: medium
 # ms.translationtype: MT
@@ -71,10 +71,18 @@ The batch file offers the following options:
 
 **Contents of the batch file**
 
-```console
+```dos
 @echo off
-::  AxelR Test Batch
-::  tested on Windows 8 + IE10, Windows7 + IE9
+# This sample script is not supported under any Microsoft standard support program or service. 
+# The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims 
+# all implied warranties including, without limitation, any implied warranties of merchantability 
+# or of fitness for a particular purpose. The entire risk arising out of the use or performance of 
+# the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, 
+# or anyone else involved in the creation, production, or delivery of the scripts be liable for any 
+# damages whatsoever (including, without limitation, damages for loss of business profits, business 
+# interruption, loss of business information, or other pecuniary loss) arising out of the use of or 
+# inability to use the sample scripts or documentation, even if Microsoft has been advised of the 
+# possibility of such damages
 
 :home
 cls
@@ -83,54 +91,32 @@ echo Delete IE History
 echo Please select the task you wish to run.
 echo Pick one:
 echo.
-echo  1. Delete Non-trusted web History(low level hidden clean up)
-echo  2. Delete History
-echo  3. Delete Cookies
-echo  4. Delete Temporary Internet Files
-echo  5. Delete Form Data
-echo  6. Delete Stored Passwords
-echo  7. Delete All
-echo  8. Delete All "Also delete files and settings stored by add-ons"
-echo  9. Delete IE10 and 9 Temporary Internet Files
-echo  10. Reset IE Settings
-echo  77. EXIT
+echo  1. Delete History
+echo  2. Delete Cookies
+echo  3. Delete Temporary Internet Files
+echo  4. Delete Form Data
+echo  5. Delete Stored Passwords
+echo  6. Delete All
+echo  7. Delete All "Also delete files and settings stored by add-ons"
+echo  8. Delete IE10 and 9 Temporary Internet Files
+echo  9. Reset IE Settings
+echo  00. EXIT
 :choice
 Echo Hit a number [1-10] and press enter.
 set /P CH=[1-10]
 
-if "%CH%"=="1" set x=del /s /q C:\Users\%username%\AppData\Local\Microsoft\Windows\History\low\* /ah
-if "%CH%"=="2" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 1
-if "%CH%"=="3" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2
-if "%CH%"=="4" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
-if "%CH%"=="5" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 16
-if "%CH%"=="6" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 32
-if "%CH%"=="7" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255
-if "%CH%"=="8" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 4351
-if "%CH%"=="9" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 9
-if "%CH%"=="10" set x=rundll32.exe inetcpl.cpl ResetIEtoDefaults
-if "%CH%"=="77" goto quit
+if "%CH%"=="1" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 1
+if "%CH%"=="2" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2
+if "%CH%"=="3" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
+if "%CH%"=="4" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 16
+if "%CH%"=="5" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 32
+if "%CH%"=="6" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255
+if "%CH%"=="7" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 4351
+if "%CH%"=="8" set x=RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 9
+if "%CH%"=="9" set x=rundll32.exe inetcpl.cpl ResetIEtoDefaults
+if "%CH%"=="00" goto quit
 
 %x%
-
-goto Home
-
-::Temporary Internet Files > Delete files - To delete copies of web pages, images, and media
-::that  are saved for faster viewing.
-::Cookies > Delete cookies - To delete cookies, which are files that are stored on your computer by
-::websites to save preferences such as login information.
-::History > Delete history - To delete the history of the websites you have visited.
-::Form data > Delete forms - To delete all the saved information that you have typed into
-::forms.
-::Passwords > Delete passwords - To delete all the passwords that are automatically filled in
-::when you log on to a website that you've previously visited.
-::Delete all - To delete all of these listed items in one operation.
-
-::enter below in search/run to see Low  history dir if exists
-::C:\Users\%username%\AppData\Local\Microsoft\Windows\History\low
-
-::Delete all low (untrusted history) very hidden
-::this will clean any unlocked  files under the dir and not delete the dir structure
-::del /s /q low\* /ah ::del /s /q C:\Users\%username%\AppData\Local\Microsoft\Windows\History\low\* /ah
 
 goto Home
 :quit

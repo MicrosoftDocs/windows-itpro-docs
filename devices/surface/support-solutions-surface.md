@@ -3,14 +3,14 @@ title: Top support solutions for Surface devices
 description: Find top solutions for common issues using Surface devices in the enterprise.
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: Troubleshoot common problems, setup issues
 ms.prod: w10
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium

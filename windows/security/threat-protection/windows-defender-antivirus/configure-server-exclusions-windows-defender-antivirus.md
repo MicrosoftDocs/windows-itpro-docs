@@ -1,8 +1,8 @@
 ---
-title: Configure Windows Defender Antivirus exclusions on Windows Server 2016
+title: Configure Windows Defender Antivirus exclusions on Windows Server 2016 or 2019
 ms.reviewer: 
 manager: dansimp
-description: Windows Server 2016 includes automatic exclusions, based on server role. You can also add custom exclusions.
+description: Windows Servers 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Windows Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -22,48 +22,47 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus on Windows Server 2016 computers automatically enrolls you in certain exclusions, as defined by your specified server role. See [the end of this topic](#list-of-automatic-exclusions) for a list of these exclusions.
+Windows Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
-These exclusions will not appear in the standard exclusion lists shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+> [!NOTE]
+> Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
 
-You can still add or remove custom exclusions (in addition to the server role-defined automatic exclusions) as described in these exclusion-related topics:
-
+In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to these articles:
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
 
-Custom exclusions take precedence over automatic exclusions.
+## A few points to keep in mind
 
-> [!TIP]
-> Custom and duplicate exclusions do not conflict with automatic exclusions.
+- Custom exclusions take precedence over automatic exclusions.
 
-Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
+- Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
+
+- Custom and duplicate exclusions do not conflict with automatic exclusions.
+
+- Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
-In Windows Server 2016, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, you need to opt out of the automatic exclusions delivered in Security intelligence updates.
+In Windows Server 2016 and 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles. 
 
 > [!WARNING]
-> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 roles.
+> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles.
 
-> [!NOTE]
-> This setting is only supported on Windows Server 2016. While this setting exists in Windows 10, it doesn't have an effect on exclusions.
-
-> [!TIP]
-> Since the predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path *different than the original one*, you would have to manually add the exclusions using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
+Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
-### Use Group Policy to disable the auto-exclusions list on Windows Server 2016
+### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and 2019
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx). Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
+3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Exclusions**.
 
-4. Double-click **Turn off Auto Exclusions** and set the option to **Enabled**. Click **OK**. 
+4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
-**Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016:**
+### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019
 
 Use the following cmdlets:
 
@@ -71,11 +70,13 @@ Use the following cmdlets:
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+[Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md).
 
-### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016
+[Use PowerShell with Windows Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and 2019
+
+Use the **Set** method of the [MSFT_MpPreference](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
 DisableAutoExclusions
@@ -85,212 +86,221 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 ## List of automatic exclusions
+
 The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.
 
 ### Default exclusions for all roles
-This section lists the default exclusions for all Windows Server 2016 roles.
 
-- Windows "temp.edb" files:
+This section lists the default exclusions for all Windows Server 2016 and 2019 roles.
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\tmp.edb
+#### Windows "temp.edb" files
 
-  - *%ProgramData%*\Microsoft\Search\Data\Applications\Windows\\*\\\*.log
+- *%windir%*\SoftwareDistribution\Datastore\\*\tmp.edb
 
-- Windows Update files or Automatic Update files:
+- *%ProgramData%*\Microsoft\Search\Data\Applications\Windows\\*\\\*.log
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\Datastore.edb
+#### Windows Update files or Automatic Update files
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\edb.chk
+- *%windir%*\SoftwareDistribution\Datastore\\*\Datastore.edb
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\edb\*.log
+- *%windir%*\SoftwareDistribution\Datastore\\*\edb.chk
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\Edb\*.jrs
+- *%windir%*\SoftwareDistribution\Datastore\\*\edb\*.log
 
-  - *%windir%*\SoftwareDistribution\Datastore\\*\Res\*.log
+- *%windir%*\SoftwareDistribution\Datastore\\*\Edb\*.jrs
 
-- Windows Security files:
+- *%windir%*\SoftwareDistribution\Datastore\\*\Res\*.log
 
-  - *%windir%*\Security\database\\*.chk
+#### Windows Security files
 
-  - *%windir%*\Security\database\\*.edb
+- *%windir%*\Security\database\\*.chk
 
-  - *%windir%*\Security\database\\*.jrs
+- *%windir%*\Security\database\\*.edb
 
-  - *%windir%*\Security\database\\*.log
+- *%windir%*\Security\database\\*.jrs
 
-  - *%windir%*\Security\database\\*.sdb
+- *%windir%*\Security\database\\*.log
 
-- Group Policy files:
+- *%windir%*\Security\database\\*.sdb
 
-  - *%allusersprofile%*\NTUser.pol
+#### Group Policy files
 
-  - *%SystemRoot%*\System32\GroupPolicy\Machine\registry.pol
+- *%allusersprofile%*\NTUser.pol
 
-  - *%SystemRoot%*\System32\GroupPolicy\User\registry.pol
+- *%SystemRoot%*\System32\GroupPolicy\Machine\registry.pol
 
-- WINS files:
+- *%SystemRoot%*\System32\GroupPolicy\User\registry.pol
 
-  - *%systemroot%*\System32\Wins\\*\\\*.chk
+#### WINS files
 
-  - *%systemroot%*\System32\Wins\\*\\\*.log
+- *%systemroot%*\System32\Wins\\*\\\*.chk
 
-  - *%systemroot%*\System32\Wins\\*\\\*.mdb
+- *%systemroot%*\System32\Wins\\*\\\*.log
 
-  - *%systemroot%*\System32\LogFiles\
+- *%systemroot%*\System32\Wins\\*\\\*.mdb
 
-  - *%systemroot%*\SysWow64\LogFiles\
+- *%systemroot%*\System32\LogFiles\
 
-- File Replication Service (FRS) exclusions:
+- *%systemroot%*\SysWow64\LogFiles\
 
-  - Files in the File Replication Service (FRS) working folder. The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
+#### File Replication Service (FRS) exclusions
 
-    - *%windir%*\Ntfrs\jet\sys\\*\edb.chk
+- Files in the File Replication Service (FRS) working folder. The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
 
-    - *%windir%*\Ntfrs\jet\\*\Ntfrs.jdb
+  - *%windir%*\Ntfrs\jet\sys\\*\edb.chk
 
-    - *%windir%*\Ntfrs\jet\log\\*\\\*.log
+  - *%windir%*\Ntfrs\jet\\*\Ntfrs.jdb
 
-    - FRS Database log files. The FRS Database log file folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\Ntfrs\Parameters\DB Log File Directory`
+  - *%windir%*\Ntfrs\jet\log\\*\\\*.log
 
-    -*%windir%*\Ntfrs\\*\Edb\*.log
+- FRS Database log files. The FRS Database log file folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\Ntfrs\Parameters\DB Log File Directory`
 
-    - The FRS staging folder. The staging folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
+  - *%windir%*\Ntfrs\\*\Edb\*.log
 
-      - *%systemroot%*\Sysvol\\*\Nntfrs_cmp\*\
+- The FRS staging folder. The staging folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
 
-    - The FRS preinstall folder. This folder is specified by the folder `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
+  - *%systemroot%*\Sysvol\\*\Nntfrs_cmp\*\
 
-      - *%systemroot%*\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\\*\Ntfrs\*\
+- The FRS preinstall folder. This folder is specified by the folder `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
 
-    - The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+  - *%systemroot%*\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\\*\Ntfrs\*\
 
-      > [!NOTE]
-      > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus#opt-out-of-automatic-exclusions). 
+- The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
-      - *%systemdrive%*\System Volume Information\DFSR\\$db_normal$
+  > [!NOTE]
+  > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus#opt-out-of-automatic-exclusions). 
 
-      - *%systemdrive%*\System Volume Information\DFSR\FileIDTable_*
+  - *%systemdrive%*\System Volume Information\DFSR\\$db_normal$
 
-      - *%systemdrive%*\System Volume Information\DFSR\SimilarityTable_*
+  - *%systemdrive%*\System Volume Information\DFSR\FileIDTable_*
 
-      - *%systemdrive%*\System Volume Information\DFSR\\*.XML
+  - *%systemdrive%*\System Volume Information\DFSR\SimilarityTable_*
 
-      - *%systemdrive%*\System Volume Information\DFSR\\$db_dirty$
+  - *%systemdrive%*\System Volume Information\DFSR\\*.XML
 
-      - *%systemdrive%*\System Volume Information\DFSR\\$db_clean$
+  - *%systemdrive%*\System Volume Information\DFSR\\$db_dirty$
 
-      - *%systemdrive%*\System Volume Information\DFSR\\$db_lostl$
+  - *%systemdrive%*\System Volume Information\DFSR\\$db_clean$
 
-      - *%systemdrive%*\System Volume Information\DFSR\Dfsr.db
+  - *%systemdrive%*\System Volume Information\DFSR\\$db_lostl$
 
-      - *%systemdrive%*\System Volume Information\DFSR\\*.frx
+  - *%systemdrive%*\System Volume Information\DFSR\Dfsr.db
 
-      - *%systemdrive%*\System Volume Information\DFSR\\*.log
+  - *%systemdrive%*\System Volume Information\DFSR\\*.frx
 
-      - *%systemdrive%*\System Volume Information\DFSR\Fsr*.jrs
+  - *%systemdrive%*\System Volume Information\DFSR\\*.log
 
-      - *%systemdrive%*\System Volume Information\DFSR\Tmp.edb
+  - *%systemdrive%*\System Volume Information\DFSR\Fsr*.jrs
 
-- Process exclusions
+  - *%systemdrive%*\System Volume Information\DFSR\Tmp.edb
 
-  - *%systemroot%*\System32\dfsr.exe
+#### Process exclusions
 
-  - *%systemroot%*\System32\dfsrs.exe
+- *%systemroot%*\System32\dfsr.exe
 
-- Hyper-V exclusions:
+- *%systemroot%*\System32\dfsrs.exe
 
-  - This section lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role
+#### Hyper-V exclusions
 
-    - File type exclusions:
+This section lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role
 
-      - *.vhd
+- File type exclusions:
 
-      - *.vhdx
+  - *.vhd
 
-      - *.avhd
+  - *.vhdx
 
-      - *.avhdx
+  - *.avhd
 
-      - *.vsv
+  - *.avhdx
 
-      - *.iso
+  - *.vsv
 
-      - *.rct
+  - *.iso
 
-      - *.vmcx
+  - *.rct
 
-      - *.vmrs
+  - *.vmcx
 
-    - Folder exclusions:
+  - *.vmrs
 
-      - *%ProgramData%*\Microsoft\Windows\Hyper-V
+- Folder exclusions:
 
-      - *%ProgramFiles%*\Hyper-V
+  - *%ProgramData%*\Microsoft\Windows\Hyper-V
 
-      - *%SystemDrive%*\ProgramData\Microsoft\Windows\Hyper-V\Snapshots
+  - *%ProgramFiles%*\Hyper-V
 
-      - *%Public%*\Documents\Hyper-V\Virtual Hard Disks
+  - *%SystemDrive%*\ProgramData\Microsoft\Windows\Hyper-V\Snapshots
 
-    - Process exclusions:
+  - *%Public%*\Documents\Hyper-V\Virtual Hard Disks
 
-      - *%systemroot%*\System32\Vmms.exe
+- Process exclusions:
 
-      -   *%systemroot%*\System32\Vmwp.exe
+  - *%systemroot%*\System32\Vmms.exe
 
-- SYSVOL files:
+  -   *%systemroot%*\System32\Vmwp.exe
 
-  - *%systemroot%*\Sysvol\Domain\\*.adm
+#### SYSVOL files
 
-  - *%systemroot%*\Sysvol\Domain\\*.admx
+- *%systemroot%*\Sysvol\Domain\\*.adm
 
-  - *%systemroot%*\Sysvol\Domain\\*.adml
+- *%systemroot%*\Sysvol\Domain\\*.admx
 
-  - *%systemroot%*\Sysvol\Domain\Registry.pol
+- *%systemroot%*\Sysvol\Domain\\*.adml
 
-  - *%systemroot%*\Sysvol\Domain\\*.aas
+- *%systemroot%*\Sysvol\Domain\Registry.pol
 
-  - *%systemroot%*\Sysvol\Domain\\*.inf
+- *%systemroot%*\Sysvol\Domain\\*.aas
 
-  - *%systemroot%*\Sysvol\Domain\\*.Scripts.ini
+- *%systemroot%*\Sysvol\Domain\\*.inf
 
-  - *%systemroot%*\Sysvol\Domain\\*.ins
+- *%systemroot%*\Sysvol\Domain\\*.Scripts.ini
 
-  - *%systemroot%*\Sysvol\Domain\Oscfilter.ini
+- *%systemroot%*\Sysvol\Domain\\*.ins
+
+- *%systemroot%*\Sysvol\Domain\Oscfilter.ini
 
 ### Active Directory exclusions
+
 This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services.
 
-- NTDS database files. The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
+#### NTDS database files
 
-  - %windir%\Ntds\ntds.dit
+The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
 
-  - %windir%\Ntds\ntds.pat
+- %windir%\Ntds\ntds.dit
 
-- The AD DS transaction log files. The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
+- %windir%\Ntds\ntds.pat
 
-  - %windir%\Ntds\EDB*.log
+#### The AD DS transaction log files
 
-  - %windir%\Ntds\Res*.log
+The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
 
-  - %windir%\Ntds\Edb*.jrs
+- %windir%\Ntds\EDB*.log
 
-  - %windir%\Ntds\Ntds*.pat
+- %windir%\Ntds\Res*.log
 
-  - %windir%\Ntds\EDB*.log
+- %windir%\Ntds\Edb*.jrs
 
-  - %windir%\Ntds\TEMP.edb
+- %windir%\Ntds\Ntds*.pat
 
-- The NTDS working folder. This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
+- %windir%\Ntds\EDB*.log
 
-  - %windir%\Ntds\Temp.edb
+- %windir%\Ntds\TEMP.edb
 
-  - %windir%\Ntds\Edb.chk
+#### The NTDS working folder
 
-- Process exclusions for AD DS and AD DS-related support files:
+This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
 
-  - %systemroot%\System32\ntfrs.exe
+- %windir%\Ntds\Temp.edb
 
-  - %systemroot%\System32\lsass.exe
+- %windir%\Ntds\Edb.chk
+
+#### Process exclusions for AD DS and AD DS-related support files
+
+- %systemroot%\System32\ntfrs.exe
+
+- %systemroot%\System32\lsass.exe
 
 ### DHCP Server exclusions
 
@@ -310,19 +320,19 @@ This section lists the exclusions that are delivered automatically when you inst
 
 This section lists the file and folder exclusions and the process exclusions that are delivered automatically when you install the DNS Server role.
 
-- File and folder exclusions for the DNS Server role:
+#### File and folder exclusions for the DNS Server role
 
-  - *%systemroot%*\System32\Dns\\*\\\*.log
+- *%systemroot%*\System32\Dns\\*\\\*.log
 
-  - *%systemroot%*\System32\Dns\\*\\\*.dns
+- *%systemroot%*\System32\Dns\\*\\\*.dns
 
-  - *%systemroot%*\System32\Dns\\*\\\*.scc
+- *%systemroot%*\System32\Dns\\*\\\*.scc
 
-  - *%systemroot%*\System32\Dns\\*\BOOT
+- *%systemroot%*\System32\Dns\\*\BOOT
 
-- Process exclusions for the DNS Server role:
+#### Process exclusions for the DNS Server role
 
-  - *%systemroot%*\System32\dns.exe
+- *%systemroot%*\System32\dns.exe
 
 ### File and Storage Services exclusions
 
@@ -338,43 +348,45 @@ This section lists the file and folder exclusions that are delivered automatical
 
 This section lists the file type exclusions, folder exclusions, and the process exclusions that are delivered automatically when you install the Print Server role.
 
-- File type exclusions:
+#### File type exclusions
 
-  - *.shd
+- *.shd
 
-  - *.spl
+- *.spl
 
-- Folder exclusions. This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
+#### Folder exclusions
 
-  - *%system32%*\spool\printers\\*
+This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
 
-- Process exclusions:
+- *%system32%*\spool\printers\\*
 
-  - spoolsv.exe
+#### Process exclusions
+
+- spoolsv.exe
 
 ### Web Server exclusions
 
 This section lists the folder exclusions and the process exclusions that are delivered automatically when you install the Web Server role.
 
-- Folder exclusions:
+#### Folder exclusions
 
-  - *%SystemRoot%*\IIS Temporary Compressed Files
+- *%SystemRoot%*\IIS Temporary Compressed Files
 
-  - *%SystemDrive%*\inetpub\temp\IIS Temporary Compressed Files
+- *%SystemDrive%*\inetpub\temp\IIS Temporary Compressed Files
 
-  - *%SystemDrive%*\inetpub\temp\ASP Compiled Templates
+- *%SystemDrive%*\inetpub\temp\ASP Compiled Templates
 
-  - *%systemDrive%*\inetpub\logs
+- *%systemDrive%*\inetpub\logs
 
-  - *%systemDrive%*\inetpub\wwwroot
+- *%systemDrive%*\inetpub\wwwroot
 
-- Process exclusions:
+#### Process exclusions
 
-  - *%SystemRoot%*\system32\inetsrv\w3wp.exe
+- *%SystemRoot%*\system32\inetsrv\w3wp.exe
 
-  - *%SystemRoot%*\SysWOW64\inetsrv\w3wp.exe
+- *%SystemRoot%*\SysWOW64\inetsrv\w3wp.exe
 
-  - *%SystemDrive%*\PHP5433\php-cgi.exe
+- *%SystemDrive%*\PHP5433\php-cgi.exe
 
 ### Windows Server Update Services exclusions
 
@@ -391,7 +403,11 @@ This section lists the folder exclusions that are delivered automatically when y
 ## Related articles
 
 - [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
+
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+
 - [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

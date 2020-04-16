@@ -19,8 +19,8 @@ ms.topic: article
 
 The **Needs attention!** section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 
 
->[!NOTE]
->The summary tile counts the number of devices that have issues, while the blades within the section break down the issues encountered. A single device can have more than one issue, so these numbers might not add up.
+> [!NOTE]
+> The summary tile counts the number of devices that have issues, while the blades within the section break down the issues encountered. A single device can have more than one issue, so these numbers might not add up.
 
 The different issues are broken down by Device Issues and Update Issues:
 
@@ -39,8 +39,8 @@ The different issues are broken down by Device Issues and Update Issues:
 
 Selecting any of the issues will take you to a [Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) view with all devices that have the given issue.
 
->[!NOTE]
->This blade also has a link to the [Setup Diagnostic Tool](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag), a standalone tool you can use to obtain details about why a Windows 10 feature update was unsuccessful. 
+> [!NOTE]
+> This blade also has a link to the [Setup Diagnostic Tool](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag), a standalone tool you can use to obtain details about why a Windows 10 feature update was unsuccessful. 
 
 ## List of Queries
 

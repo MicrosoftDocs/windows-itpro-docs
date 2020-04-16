@@ -53,7 +53,7 @@ For System Center Configuration Manager, Windows 10 support is offered with var
 > Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require Microsoft Endpoint Configuration Manager current branch for supported management. 
  
 
-For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
+For more details about Microsoft Endpoint Configuration Manager support for Windows 10, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
 ## Management tools
 
