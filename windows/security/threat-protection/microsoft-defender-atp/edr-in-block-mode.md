@@ -87,7 +87,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 ### Can I participate in the preview of EDR in block mode?
 
-If you would like to participate in our private preview program, send email to `shwjha@microsoft.com`. 
+If you would like to participate in this preview program, send email to `shwjha@microsoft.com`. 
 
 ## See also
 
