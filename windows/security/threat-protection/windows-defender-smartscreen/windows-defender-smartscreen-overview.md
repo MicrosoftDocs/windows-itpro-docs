@@ -56,6 +56,14 @@ Windows Defender SmartScreen provide an early warning system against websites th
 > [!IMPORTANT]
 > SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
+## Submit files to Windows Defender SmartScreen for review
+
+If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more info, see [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide). 
+
+When submitting Microsoft Defender Smartscreen products, make sure to select **Microsoft Defender SmartScreen** from the product menu.
+
+![Windows Security, Windows Defender SmartScreen controls](images/Microsoft-defender-smartscreen-submission.png)
+
 ## Viewing Windows Defender SmartScreen anti-phishing events
 
 When Windows Defender SmartScreen warns or blocks a user from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/scriptcenter/dd565657(v=msdn.10).aspx).
