@@ -81,15 +81,15 @@ The following steps will guide you through onboarding VDI machines and will high
 
 6. Test your solution:
 
-      a. Create a pool with one machine.
+    a. Create a pool with one machine.
       
-      b. Logon to machine.
+    b. Logon to machine.
       
-      c. Logoff from machine.
+    c. Logoff from machine.
 
-      d. Logon to machine with another user.
+    d. Logon to machine with another user.
       
-      e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
+    e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
     **For multiple entries for each machine**: Check multiple entries in Microsoft Defender Security Center.
 
 7. Click **Machines list** on the Navigation pane.
@@ -116,20 +116,21 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
-```
-sc query sense
-```
+
+    ```
+    sc query sense
+    ```
 
 3. Service the image as needed.
 
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
 
-```
-PsExec.exe -s cmd.exe
-cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-del *.* /f /s /q
-exit
-```
+    ```
+    PsExec.exe -s cmd.exe
+    cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+    del *.* /f /s /q
+    exit
+    ```
 
 5. Re-seal the golden/master image as you normally would.
 
