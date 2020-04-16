@@ -1088,6 +1088,7 @@ Supported values:
 Value type is int. Supported operation is Get.
 
 The following table provides the mapping of the bits in the **Status/DeviceEncryptionStatus** node to the  error codes:  
+
 | Bit | Error Code |
 |-----|---------|
 |0|The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
