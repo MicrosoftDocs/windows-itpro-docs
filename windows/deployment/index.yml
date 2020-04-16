@@ -45,7 +45,7 @@ sections:
     text: "
       <br>
       <table border='0'>
-      <tr><td>[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) </td><td>Check out the new Modern Deskop Deployment Center and discover content to help you with your Windows 10 and Office 365 ProPlus deployments.</td>
+      <tr><td>[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) </td><td>Check out the new Modern Deskop Deployment Center and discover content to help you with your Windows 10 and Microsoft 365 Apps for enterprise deployments.</td>
       <tr><td>[What's new in Windows 10 deployment](deploy-whats-new.md) </td><td>See this topic for a summary of new features and some recent changes related to deploying Windows 10 in your organization. </td>
       <tr><td>[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) </td><td>To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. </td>
       <tr><td>[Windows Autopilot](windows-autopilot/windows-autopilot.md) </td><td>Windows Autopilot enables an IT department to pre-configure new devices and repurpose existing devices with a simple process that requires little to no infrastructure.</td>

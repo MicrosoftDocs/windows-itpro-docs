@@ -21,12 +21,12 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
--   Office 365 Business Premium, Azure AD Premium, Intune, Microsoft Store for Business, Windows 10
+-   Microsoft 365 Business Standard, Azure AD Premium, Intune, Microsoft Store for Business, Windows 10
 
 Are you ready to move your business to the cloud or wondering what it takes to make this happen with Microsoft cloud services and tools?
 
-In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Office 365 Business Premium, Microsoft Azure AD, Intune, Microsoft Store for Business, and Windows 10. We'll show you the basics on how to:
-- Acquire an Office 365 business domain
+In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft 365 Business Standard, Microsoft Azure AD, Intune, Microsoft Store for Business, and Windows 10. We'll show you the basics on how to:
+- Acquire an Microsoft 365 for business domain
 - Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
 - Set up Microsoft Store for Business and manage app deployment and sync with Intune
 - Add users and groups in Azure AD and Intune
@@ -52,11 +52,11 @@ See <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-busi
 - Create Office 365 accounts and how to add your domain.
 - Install Office
 
-To set up your Office 365 business tenant, see <a href="https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029" target="_blank">Get Started with Office 365 for business</a>.
+To set up your Microsoft 365 for business tenant, see <a href="https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029" target="_blank">Get Started with Microsoft 365 for business</a>.
 
 If this is the first time you're setting this up, and you'd like to see how it's done, you can follow these steps to get started:
 
-1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
+1. Go to the <a href="https://products.office.com/en-us/business/office-365-affiliate-program-buy-business-premium" target="_blank">Office 365</a> page in the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Microsoft 365 Business Standard Trial or select **Buy now** to sign up for Microsoft 365 Business Standard. In this walkthrough, we'll select **Try now**.
 
    **Figure 1** - Try or buy Office 365
 
