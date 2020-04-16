@@ -29,7 +29,8 @@ ms.topic: article
 
 ## APIs
 
-Threat and Vulnerability Management supports multiple APIs. Microsoft Defender Advanced Threat Protection (ATP) Threat & Vulnerability Management APIs are soon to be generally available. See the following topics for related APIs:
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+See the following topics for related APIs:
 
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - [Machine APIs](machine.md)
