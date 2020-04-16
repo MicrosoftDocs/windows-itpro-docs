@@ -87,7 +87,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 If you would like to participate in this preview program, send email to `shwjha@microsoft.com`. 
 
-## See also
+## Related article
 
-- [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
+[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
 
