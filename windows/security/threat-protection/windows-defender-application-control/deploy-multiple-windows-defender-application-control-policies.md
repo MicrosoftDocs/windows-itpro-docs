@@ -21,8 +21,8 @@ ms.date: 04/15/2020
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows Server 2016
 
 The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios:
 
@@ -35,7 +35,7 @@ The restriction of only having a single code integrity policy active on a system
     - Users can deploy one or more supplemental policies to expand a base policy
     - A supplemental policy expands a single base policy, and multiple supplemental policies can expand the same base policy
     - For supplemental policies, applications that are allowed by either the base policy or its supplemental policy/policies are allowed to run
-    
+
 > [!NOTE]
 > Pre-1903 systems do not support the use of Multiple Policy Format WDAC policies.
 
@@ -69,6 +69,7 @@ Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-
 ### Supplemental policy creation
 
 In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format as shown above. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands. You can use either SupplementsBasePolicyID or BasePolicyToSupplementPath to specify the base policy.
+
 - "SupplementsBasePolicyID": GUID of base policy that the supplemental policy applies to
 - "BasePolicyToSupplementPath": path to base policy file that the supplemental policy applies to
 

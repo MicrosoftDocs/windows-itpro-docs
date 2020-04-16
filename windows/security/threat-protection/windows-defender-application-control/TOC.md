@@ -1,6 +1,6 @@
 # [Application Control for Windows](windows-defender-application-control.md)
 ## [WDAC and AppLocker Overview](plan-windows-defender-application-control-management.md)
-## [WDAC and AppLocker Feature Availability](understand-windows-defender-application-control-policy-design-decisions.md)
+### [WDAC and AppLocker Feature Availability](understand-windows-defender-application-control-policy-design-decisions.md)
 
 
 ## [WDAC design guide](windows-defender-application-control-design-guide.md)
