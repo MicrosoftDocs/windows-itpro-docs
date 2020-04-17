@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
-ms.author: v-medgar
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
@@ -39,8 +39,8 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 >[!Note]
 >Regarding the Windows Restricted Traffic Limited Functionality Baseline, the 1903 settings (folder) are applicable to 1909 Windows >Enterprise devices. There were no additional settings required for the 1909 release.
 
->[!Warning] 
->If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the >"Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order >re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline >settings.
+> [!Warning] 
+> If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
@@ -1898,4 +1898,3 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).
-
