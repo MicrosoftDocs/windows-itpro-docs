@@ -96,7 +96,7 @@ In this view, you'll see the name of the investigation, when it started and ende
 
 ### Investigation graph
 
-The investigation graph provides a graphical representation of an automated investigation. All investigation related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
+The investigation graph provides a graphical representation of an automated investigation. All investigation-related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
 
 A progress ring shows two status indicators:
 - Orange ring - shows the pending portion of the investigation
@@ -112,7 +112,7 @@ From this view, you can also view and add comments and tags about the investigat
 
 ### Alerts
 
-The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
+The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned. 
 
 Additional alerts seen on a machine can be added to an automated investigation as long as the investigation is ongoing. 
 
