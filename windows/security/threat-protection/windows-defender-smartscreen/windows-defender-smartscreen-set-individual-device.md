@@ -24,7 +24,7 @@ ms.author: macapara
 Microsoft Defender SmartScreen helps to protect users if they try to visit sites previously reported as phishing or malware websites, or if a user tries to download potentially malicious files.
 
 ## How users can use Windows Security to set up Microsoft Defender SmartScreen
-Starting with Windows 10, version 1703, users can use Windows Security to set up Microsoft Defender SmartScreen for an individual device; unless and administrator has used Group Policy or Microsoft Intune to prevent it.
+Starting with Windows 10, version 1703, users can use Windows Security to set up Microsoft Defender SmartScreen for an individual device; unless an administrator has used Group Policy or Microsoft Intune to prevent it.
 
 >[!NOTE]
 >If any of the following settings are managed through Group Policy or mobile device management (MDM) settings, it appears as unavailable to the employee.
