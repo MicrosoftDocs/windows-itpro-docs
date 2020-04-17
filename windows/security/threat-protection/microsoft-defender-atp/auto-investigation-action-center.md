@@ -18,7 +18,7 @@ ms.topic: article
 
 # View details and results of automated investigations
 
-Pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) are listed in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)).
+During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is configured for your organization, some actions are taken automatically. If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). You can also use the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to view details about an investigation.
 
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the machine or machine group will be able to view the entire investigation. 
@@ -27,12 +27,13 @@ Pending and completed [remediation actions](manage-auto-investigation.md#remedia
 
 ![Action center page](images/action-center.png)
 
-The action center consists of two main tabs, as described in the following table.
-
-|Tab  |Description  |
-|---------|---------|
-|Pending actions     |Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. <br/><br/>**NOTE**: The Pending tab appears only if there are pending actions to be approved (or rejected).        |
-|History     |Acts as an audit log for all of the following: <br/>- All actions taken by automated investigation and remediation in Microsoft Defender ATP <br/>Actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) <br/>- All commands ran and remediation actions that were applied in Live Response sessions (some actions can be undone) <br/>- Remediation actions that were applied by Windows Defender Antivirus (some actions can be undone) |
+The action center consists of two main tabs: **Pending actions** and **History**.
+- **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected). 
+- **History**  Acts as an audit log for all of the following: <br/>
+   - Remediation actions that were taken as a result of an automated investigation
+   - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
+   - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
+   - Remediation actions that were applied by Windows Defender Antivirus (some actions can be undone) 
 
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 
@@ -70,17 +71,18 @@ An automated investigation can be have one of the following status values:
 
 |Status  |Description  |
 |---------|---------|
-| No threats found | No malicious entities found during the investigation. |
-| Failed  | A problem has interrupted the investigation, preventing it from completing.       |
-| Partially remediated  | A problem prevented the remediation of some malicious entities.  |
-| Pending action  | Remediation actions require review and approval.   |
+| Running    | The investigation process has started and is underway. Malicious artifacts that are found are remediated.    |
+| Partially investigated      | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) for specific details. |
+| No threats found | The investigation has finished and no threats were identified. <br/>If you suspect something was missed (such as a false negative), you can use [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). |
+| Pending action  | The investigation has found a threat, and an action to remediate that threat is awaiting approval. The Pending Action state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to see if other items are still pending completion.  |
+| Remediated   | The investigation finished and all actions were approved (fully remediated). |
+| Partially remediated  | The investigation resulted in remediation actions, and some were approved and completed. Other actions are still pending. |
+| Terminated by system  | The investigation stopped. An investigation can stop for several reasons:<br/>- The investigation's pending actions expired. Pending actions can time out after awaiting approval for an extended period of time. <br/>- There are too many actions in the list.<br/>Visit the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) to view and approve any pending actions.     |
+| Failed  | At least one investigation analyzer ran into a problem where it could not complete properly. <br/><br/>If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) for detailed results.      |
+| Queued    | An investigation is being held in a queue. When other investigations complete, queued investigations begin.  |
 | Waiting for machine | Investigation paused. The investigation will resume as soon as the machine is available. |
-| Queued    |   Investigation has been queued and will resume as soon as other remediation activities are completed.      |
-| Running    | Investigation ongoing. Malicious entities found will be remediated.    |
-| Remediated   | Malicious entities found were successfully remediated.       |
-| Terminated by system  | Investigation was stopped by the system.                 |
 | Terminated by user    | A user stopped the investigation before it could complete.  |
-| Partially investigated      | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
+
 
 ## View details about an automated investigation
 

@@ -24,17 +24,17 @@ ms.topic: conceptual
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *Clean*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
 
 When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defender Advanced Threat Protection takes one of the following remediation actions automatically:
-- Quarantine file
-- Remove registry key
-- Kill process
-- Stop service
-- Remove registry key
-- Disable driver
-- Remove scheduled task
+- Quarantine a file
+- Remove a registry key
+- Kill a process
+- Stop a service
+- Remove a registry key
+- Disable a driver
+- Remove a scheduled task
 
 Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible. This helps your automated investigations complete in a timely manner. 
 
-No actions are taken when evidence is determined to be *Clean*. 
+No actions are taken when evidence is determined to be *No threats found*. 
 
 In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and viewable in the Microsoft Defender Security Center](#review-completed-actions).
 
@@ -61,6 +61,12 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 4. Select an item to view more details about that remediation action.
  
+## Next steps
+
+- [View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center)
+
+- [Get an overview of live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
+
 ## Related articles
 
 - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
