@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
-ms.author: v-medgar
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
