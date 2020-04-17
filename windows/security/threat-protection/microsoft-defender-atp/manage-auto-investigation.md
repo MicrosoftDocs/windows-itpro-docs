@@ -32,15 +32,15 @@ When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defe
 - Disable a driver
 - Remove a scheduled task
 
-Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible. This helps your automated investigations complete in a timely manner. 
+Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible so that you automated investigations complete in a timely manner. 
 
-No actions are taken when evidence is determined to be *No threats found*. 
+No actions are taken when a verdict of *No threats found* is reached for a piece of evidence. 
 
 In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and viewable in the Microsoft Defender Security Center](#review-completed-actions).
 
 ## Review pending actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. This takes you to your Security dashboard.
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the Security dashboard.
 
 2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
 
@@ -53,7 +53,7 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 ## Review completed actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. This takes you to your Security dashboard.
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the Security dashboard.
 
 2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
 
