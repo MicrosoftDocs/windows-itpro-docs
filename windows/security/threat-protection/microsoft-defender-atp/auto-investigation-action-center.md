@@ -69,7 +69,7 @@ On the **Investigations** page, you can view details and use filters to focus on
 
 ## Automated investigation status
 
-An automated investigation can be have one of the following status values:
+An automated investigation can have one of the following status values:
 
 |Status  |Description  |
 |---------|---------|
