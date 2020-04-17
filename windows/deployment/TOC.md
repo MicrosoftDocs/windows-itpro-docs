@@ -268,7 +268,9 @@
 #### [Conclusion](update/feature-update-conclusion.md)
 ### [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](update/waas-mobile-updates.md)
 ### Use Windows Update for Business
-#### [Deploy updates using Windows Update for Business](update/waas-manage-updates-wufb.md)
+#### [What is Windows Update for Business?](update/waas-manage-updates-wufb.md)
+##### [Manage when updates are offered](update/waas-wufb-when.md)
+##### [Manage the end-user experience](update/waas-wufb-end-user.md)
 #### [Configure Windows Update for Business](update/waas-configure-wufb.md)
 #### [Enforcing compliance deadlines for updates](update/wufb-compliancedeadlines.md)
 #### [Integrate Windows Update for Business with management solutions](update/waas-integrate-wufb.md)

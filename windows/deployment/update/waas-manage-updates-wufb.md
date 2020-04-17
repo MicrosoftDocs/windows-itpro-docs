@@ -1,5 +1,5 @@
 ---
-title: Deploy updates using Windows Update for Business (Windows 10)
+title: Windows Update for Business (Windows 10)
 ms.reviewer: 
 manager: laurawi
 description: Windows Update for Business lets you manage when devices received updates from Windows Update.
@@ -11,24 +11,48 @@ ms.author: jaimeo
 ms.topic: article
 ---
 
-# Deploy updates using Windows Update for Business
+# What is Windows Update for Business?
 
 
 **Applies to**
 
 - Windows 10
-- Windows Server 2016
-- Windows Server 2019
 
-Windows Update for Business is a free service that is available for Windows Pro, Enterprise, Pro for Workstation, and Education editions. 
+
+Windows Update for Business is a free service that is available for all premium versions {what does this mean? Windows 10, version 1903 is a *version*; Windows Pro is an *edition*} including Windows 10 Pro, Enterprise, Pro for Workstation, and Education editions. 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 
 
-Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
+Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
   
-Specifically, Windows Update for Business allows for control over update offering and experience to allow for reliability and performance testing on a subset of systems before rolling out updates across the organization as well as a positive update experience for those within your organization.
+Specifically, Windows Update for Business allows for control over update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization as well as a positive update experience for those in your organization.
+
+## What can I do with Windows Update for Business
+
+Windows Update for Business enables commercial customers {not sure this is well defined... Do you mean *enterprise* customers?} to manage which Windows Updates are received when as well as the experience a device has when it receives them. 
+
+### Manage deployment of Windows Updates 
+By using Windows Update for Business, you can control which types of Windows Updates are offered to devices in your ecosystem, when updates are applied, and deployment to devices in your organization in waves.
+
+### Manage which updates are offered 
+Windows Update for Business enables an IT administrator to receive and manage a variety of different types of Windows Updates. 
+
+## Types of updates managed by Windows Update for Business
+
+Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
+
+- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released semi-annually in the fall and in the spring.
+- **Quality updates:** These are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as quality updates. These non-Windows Updates are known as "Microsoft updates" and you can set devices to receive such updates (or not) along with their Windows updates.
+- **Driver updates:** These are non-Microsoft drivers that are applicable to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
+- **Microsoft product updates**: These are updates for other Microsoft products, such as Office. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
+
+
+
+
+
+{ORIGINAL CONTENT BELOW THIS LINE; PRESERVING FOR REFERENCE------------------------------------------------------------------------------}
 
 >[!NOTE]
 > To use Windows Update for Business, you must allow devices to access the Windows Update service.
