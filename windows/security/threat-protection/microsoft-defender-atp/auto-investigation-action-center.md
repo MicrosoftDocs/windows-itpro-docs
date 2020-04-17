@@ -61,11 +61,11 @@ On the **Investigations** page, you can view details and use filters to focus on
 |---------|---------|
 |**Status**     |(See [Automated investigation status](#automated-investigation-status))         |
 |**Triggering alert** | The alert that initiated the automated investigation |
-|**Detection source** |The source of the alert that initiated the automated investigation. |
-|**Entities** | Entities can include device or machines, and machine groups. You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine, or to see specific machine groups that you might have created. |
-|**Threat** |The category of threat detected during the automated investigation. |
-|**Tags** |Filter using manually added tags that capture the context of an automated investigation.|
-|**Comments** |Select between filtering the list between automated investigations that have comments and those that don't.|
+|**Detection source** |The source of the alert that initiated the automated investigation |
+|**Entities** | Entities can include device or machines, and machine groups. You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine, or to see specific machine groups that were created. |
+|**Threat** |The category of threat detected during the automated investigation |
+|**Tags** |Filter using manually added tags that capture the context of an automated investigation|
+|**Comments** |Select between filtering the list between automated investigations that have comments and those that don't|
 
 ## Automated investigation status
 
