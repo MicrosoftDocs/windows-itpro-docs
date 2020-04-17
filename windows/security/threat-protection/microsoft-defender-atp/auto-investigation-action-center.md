@@ -128,7 +128,7 @@ Machines that show the same threat can be added to an ongoing investigation and 
 
 Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
 
-Clicking on an machine name brings you the machine page.
+Clicking on a machine name brings you the machine page.
 
 ### Evidence
 
@@ -150,7 +150,7 @@ You can also click on an action to bring up the details pane where you'll see in
 
 ### Pending actions
 
-If there are pending actions on an automated investigation, you'll see a pop up similar to the following image. 
+If there are pending actions on an automated investigation, you'll see a pop-up similar to the following image. 
 
 ![Image of pending actions](images/pending-actions.png)
 
