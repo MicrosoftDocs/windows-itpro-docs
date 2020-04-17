@@ -29,7 +29,7 @@ During and after an automated investigation, certain remediation actions can be 
 
 The action center consists of two main tabs: **Pending actions** and **History**.
 - **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected). 
-- **History**  Acts as an audit log for all of the following: <br/>
+- **History**  Acts as an audit log for all of the following items: <br/>
    - Remediation actions that were taken as a result of an automated investigation
    - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
    - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
@@ -60,7 +60,7 @@ On the **Investigations** page, you can view details and use filters to focus on
 |**Status**     |(See [Automated investigation status](#automated-investigation-status))         |
 |**Triggering alert** | The alert that initiated the automated investigation |
 |**Detection source** |The source of the alert that initiated the automated investigation. |
-|**Entities** | These can include device or machines, and machine groups. You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine, or to see specific machine groups that you might have created. |
+|**Entities** | Entities can include device or machines, and machine groups. You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine, or to see specific machine groups that you might have created. |
 |**Threat** |The category of threat detected during the automated investigation. |
 |**Tags** |Filter using manually added tags that capture the context of an automated investigation.|
 |**Comments** |Select between filtering the list between automated investigations that have comments and those that don't.|
