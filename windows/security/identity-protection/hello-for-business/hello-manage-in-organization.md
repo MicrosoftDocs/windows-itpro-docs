@@ -83,6 +83,10 @@ The following table lists the Group Policy settings that you can configure for W
 <p><b>Not configured</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
 <p><b>Enabled</b>: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
 <p><b>Disabled</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
+<p>
+
+For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).
+</p>
 </td>
 </tr>
 <tr>
@@ -218,7 +222,7 @@ The following table lists the MDM policy settings that you can configure for Win
 </td>
 </tr>
 <tr>
-<td>Exclude Security Device</td>
+<td>ExcludeSecurityDevice</td>
 <td>TPM12</td>
 <td>Device</td>
 <td>False</td>
@@ -237,6 +241,10 @@ The following table lists the MDM policy settings that you can configure for Win
 <p>Added in Windows 10, version 1703</p>
 <p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
 <p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
+<p>
+
+For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).
+</p>
 </td>
 </tr>
 <tr>
@@ -272,9 +280,9 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>1 </td>
 <td>
-<p>0: Numbers are allowed. </p>
-<p>1: At least one number is required.</p>
-<p>2: Numbers are not allowed. </p>
+<p>0: Digits are allowed. </p>
+<p>1: At least one digit is required.</p>
+<p>2: Digits are not allowed. </p>
 </td>
 </tr>
 <tr>
