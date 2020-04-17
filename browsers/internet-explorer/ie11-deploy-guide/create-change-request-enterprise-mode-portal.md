@@ -72,4 +72,4 @@ Employees assigned to the Requester role can create a change request. A change r
 
 ## Next steps
 
-After the change request is created, the Requester must make sure the suggested changes work in the pre-production environment. For these steps, see the [Verify your changes using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md) topic.
+After the change request is created, the Requester must make sure the suggested changes work in the pre-production environment. For these steps, see [Verify your changes using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md).
