@@ -1,6 +1,7 @@
 ---
 title: Windows 10 deployment tools
-description: Learn about the tools available to deploy Windows 10.
+description: This article contains a list of topics that can help you learn about the tools available to deploy Windows 10.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
 manager: laurawi

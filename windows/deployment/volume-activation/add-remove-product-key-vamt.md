@@ -1,6 +1,7 @@
 ---
 title: Add and Remove a Product Key (Windows 10)
-description: Add and Remove a Product Key
+description: In this article, you will learn about how to manage a product key in the Volume Activation Management Tool (VAMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
