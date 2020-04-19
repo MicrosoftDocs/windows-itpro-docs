@@ -1,6 +1,6 @@
 ---
 title: Windows Update - Additional resources
-description: Additional resources for Windows Update
+description: In this article, you can find additional resources for Windows Update, such as WSUS troubleshooting.
 ms.prod: w10
 ms.mktglfcycl:
 
@@ -13,6 +13,7 @@ ms.date: 09/18/2018
 ms.reviewer:
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Update - additional resources

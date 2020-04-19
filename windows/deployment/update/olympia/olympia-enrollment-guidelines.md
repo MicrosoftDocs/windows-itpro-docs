@@ -1,6 +1,6 @@
 ---
 title: Olympia Corp enrollment guidelines
-description: Olympia Corp enrollment guidelines
+description: Learn about the enrollment guidelines for Olympia Corp, a virtual corporation created as part of the Windows Insider Lab for Enterprise.
 ms.author: jaimeo
 ms.topic: article
 ms.prod: w10
@@ -11,6 +11,7 @@ author: jaimeo
 ms.reviewer: 
 manager: laurawi
 keywords: insider, trial, enterprise, lab, corporation, test
+ms.custom: seo-marvel-apr2020
 ---
 
 # Olympia Corp
@@ -96,7 +97,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     ![Settings -> Accounts](images/1-1.png)
 
 2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
-	
+    
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
     ![Update your password](images/2-3.png)
