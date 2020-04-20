@@ -79,6 +79,9 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 
 ### Windows 10 Enterprise requirements
 
+> [!NOTE]
+> The following requirements do not apply to general Windows 10 activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
+
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following: 
 
 - Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
