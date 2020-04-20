@@ -163,6 +163,16 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
+1. In the navigation pane, select **Settings** > **Indicators**.
+
+2. Select the tab of the entity type you'd like to import indicators for.
+
+3. Select **Import** > **Choose file**. 
+
+4. Select **Import**. Do this for all the files you'd like to import. 
+
+5. Select **Done**.
+
 The following table shows the supported parameters.
 
 Parameter |	Type	|	Description
@@ -176,7 +186,6 @@ expirationTime | DateTimeOffset | The expiration time of the indicator in the fo
 severity | Enum | The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions | String | TI indicator alert recommended actions. **Optional**
 rbacGroupNames | String | Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
-
 
 
 
