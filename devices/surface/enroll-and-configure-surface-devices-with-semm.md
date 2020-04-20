@@ -57,7 +57,8 @@ To create a Surface UEFI configuration package, follow these steps:
 6. Click **Password Protection** to add a password to Surface UEFI. This password will be required whenever you boot to UEFI. If this password is not entered, only the **PC information**, **About**, **Enterprise management**, and **Exit** pages will be displayed. This step is optional.
 7. When you are prompted, enter and confirm your chosen password for Surface UEFI, and then click **OK**. If you want to clear an existing Surface UEFI password, leave the password field blank.
 8. If you do not want the Surface UEFI package to apply to a particular device, on the **Choose which Surface type you want to target** page, click the slider beneath the corresponding Surface Book or Surface Pro 4 image so that it is in the **Off** position. (As shown in Figure 3.)
-   > [!NOTE] You must select a device as none are selected by default.
+   > [!NOTE] 
+   > You must select a device as none are selected by default.
 
    ![Choose devices for package compatibility](images/surface-semm-enroll-fig3.jpg "Choose devices for package compatibility")
 
