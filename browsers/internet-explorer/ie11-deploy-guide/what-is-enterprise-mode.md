@@ -20,11 +20,11 @@ ms.date: 10/25/2018
 
 **Applies to:**
 
--   Windows 10
--   Windows 8.1
--   Windows 7
--   Windows Server 2012 R2
--   Windows Server 2008 R2 with Service Pack 1 (SP1)
+- Windows 10
+- Windows 8.1
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2008 R2 with Service Pack 1 (SP1)
 
 Internet Explorer and Microsoft Edge can work together to support your legacy web apps, while still defaulting to the higher bar for security and modern experiences enabled by Microsoft Edge. Working with multiple browsers can be difficult, particularly if you have a substantial number of internal sites. To help manage this dual-browser experience, we are introducing a new web tool specifically targeted towards larger organizations: the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
@@ -33,7 +33,7 @@ If you have specific websites and apps that you know have compatibility problems
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
->[!TIP]
+> [!TIP]
 > If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
 For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
@@ -54,8 +54,8 @@ Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microso
 
 - **Centralized control.** You can specify the websites or web apps to interpret using Enterprise Mode, through an XML file on a website or stored locally. Domains and paths within those domains can be treated differently, allowing granular control. Use Group Policy to let users turn Enterprise Mode on or off from the Tools menu and to decide whether the Enterprise browser profile appears on the Emulation tab of the F12 developer tools.
 
-    >[!Important]
-    >All centrally-made decisions override any locally-made choices. 
+    > [!Important]
+    > All centrally-made decisions override any locally-made choices. 
 
 - **Integrated browsing.** When Enterprise Mode is set up, users can browse the web normally, letting the browser change modes automatically to accommodate Enterprise Mode sites.
 
@@ -121,11 +121,11 @@ There are 2 versions of this tool, both supported on Windows 7, Windows 8.1, and
 
 - [Enterprise Mode Site List Manager (schema v.1)](https://www.microsoft.com/download/details.aspx?id=42501). This is an older version of the schema that you must use if you want to create and update your Enterprise Mode Site List for devices running the v.1 version of the schema.
 
-	We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
+    We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
 - [Enterprise Mode Site List Manager (schema v.2)](https://www.microsoft.com/download/details.aspx?id=49974). The updated version of the schema, including new functionality. You can use this version of the schema to create and update your Enterprise Mode Site List for devices running the v.2 version of the schema.
 
-	If you open a v.1 version of your Enterprise Mode Site List using this version, it will update the schema to v.2, automatically. For more info, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
+    If you open a v.1 version of your Enterprise Mode Site List using this version, it will update the schema to v.2, automatically. For more info, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 If your list is too large to add individual sites, or if you have more than one person managing the site list, we recommend using the Enterprise Site List Portal.
 
