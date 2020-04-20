@@ -57,6 +57,7 @@ To create a Surface UEFI configuration package, follow these steps:
 6. Click **Password Protection** to add a password to Surface UEFI. This password will be required whenever you boot to UEFI. If this password is not entered, only the **PC information**, **About**, **Enterprise management**, and **Exit** pages will be displayed. This step is optional.
 7. When you are prompted, enter and confirm your chosen password for Surface UEFI, and then click **OK**. If you want to clear an existing Surface UEFI password, leave the password field blank.
 8. If you do not want the Surface UEFI package to apply to a particular device, on the **Choose which Surface type you want to target** page, click the slider beneath the corresponding Surface Book or Surface Pro 4 image so that it is in the **Off** position. (As shown in Figure 3.)
+   > [!NOTE] You must select a device as none are selected by default.
 
    ![Choose devices for package compatibility](images/surface-semm-enroll-fig3.png "Choose devices for package compatibility")
 
@@ -65,7 +66,7 @@ To create a Surface UEFI configuration package, follow these steps:
 9. Click **Next**.
 10. If you want to deactivate a component on managed Surface devices, on the **Choose which components you want to activate or deactivate** page, click the slider next to any device or group of devices you want to deactivate so that the slider is in the **Off** position. (Shown in Figure 4.) The default configuration for each device is **On**. Click the **Reset** button if you want to return all sliders to the default position.
 
-    ![Disable or enable Surface components](images/surface-ent-mgmt-fig3-enabledisable.png "Disable or enable Surface components")
+    ![Disable or enable Surface components](images/surface-ent-mgmt-fig3-enabledisable.jpg "Disable or enable Surface components")
 
     *Figure 4. Disable or enable individual Surface components*
 
