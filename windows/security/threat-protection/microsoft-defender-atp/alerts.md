@@ -23,6 +23,7 @@ ms.topic: article
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Methods
+
 Method |Return Type |Description
 :---|:---|:---
 [Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
@@ -37,7 +38,8 @@ Method |Return Type |Description
 
 
 ## Properties
-Property |	Type	|	Description
+
+Property |    Type    |    Description
 :---|:---|:---
 id | String | Alert ID.
 title | String | Alert title.
@@ -61,7 +63,6 @@ threatFamilyName | String | Threat family.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 comments | List of Alert comments | Alert Comment is an object that contains: comment string, createdBy string and createTime date time.
 
-
 ### Response example for getting single alert:
 
 ```
@@ -73,7 +74,7 @@ GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-2929
     "id": "da637084217856368682_-292920499",
     "incidentId": 66860,
     "investigationId": 4416234,
-	"investigationState": "Running",
+    "investigationState": "Running",
     "assignedTo": "secop@contoso.com",
     "severity": "Low",
     "status": "New",
