@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +41,6 @@ If you have a Surface Hub or other Windows 10 device that has been updated to Wi
     - As a Miracast source, the Windows PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 - The DNS Hostname (device name) of the Surface Hub or device needs to be resolvable via your DNS servers. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's hostname. 
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection. 
-- On Windows 10 PCs, the **Projecting to this PC** feature must be enabled within System Settings, and the device must have a Wi-Fi interface enabled in order to respond to discovery requests. 
 
 
 It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.

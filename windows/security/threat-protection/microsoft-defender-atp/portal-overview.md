@@ -22,25 +22,24 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
+Enterprise security teams can use Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
 
 You can use [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
+
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
-- Change Microsoft Defender ATP settings, including time zone and review licensing information.
+- Change Microsoft Defender ATP settings, including time zone and review licensing information
 
 ## Microsoft Defender Security Center
-When you open the portal, you’ll see the main areas of the application:
 
- ![Microsoft Defender Advanced Threat Protection portal](images/dashboard.png)
+When you open the portal, you'll see:
 
-- (1) Navigation pane
-- (2) Main portal
-- (3) Search, Community center, Time settings, Help and support, Feedback
+- (1) Navigation pane (select the horizontal lines at the top of the navigation pane to show or hide it)
+- (2) Search, Community center, Localization, Help and support, Feedback
+
+ ![Microsoft Defender Advanced Threat Protection portal](images/mdatp-portal-overview.png)
 
 > [!NOTE]
 > Malware related detections will only appear if your machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
@@ -49,27 +48,27 @@ You can navigate through the portal using the menu options available in all sect
 
 Area | Description
 :---|:---
-**(1) Navigation pane** | Use the navigation pane to move between **Dashboards**, **Incidents**, **Machines list**, **Alerts queue**, **Automated investigations**, **Advanced hunting**, **Reports**, **Interoperability**, **Threat & vulnerability management**, **Evaluation and tutorials**, **Service health**, **Configuration management**, and **Settings**.
-**Dashboards** | Access the Security operations, the Secure Score, or Threat analytics dashboard.
+**(1) Navigation pane** | Use the navigation pane to move between **Dashboards**, **Incidents**, **Machines list**, **Alerts queue**, **Automated investigations**, **Advanced hunting**, **Reports**, **Partners & APIs**, **Threat & Vulnerability Management**, **Evaluation and tutorials**, **Service health**, **Configuration management**, and **Settings**. Select the horizontal lines at the top of the navigation pane to show or hide it.
+**Dashboards** | Access the active automated investigations, active alerts, automated investigations statistics, machines at risk, users at risk, machines with sensor issues, service health, detection sources, and daily machines reporting dashboards.
 **Incidents** | View alerts that have been aggregated as incidents.
-**Machines list** | Displays the list of machines that are onboarded to Microsoft Defender ATP, some information about them, and the corresponding number of alerts.
+**Machines list** | Displays the list of machines that are onboarded to Microsoft Defender ATP, some information about them, and their exposure and risk levels.
 **Alerts queue** | View alerts generated from machines in your organizations.
-**Automated investigations** | Displays a list of automated investigations that's been conducted in the network, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
+**Automated investigations** | Displays automated investigations that have been conducted in the network, triggering alert, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
 **Advanced hunting** | Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
-**Reports** | View graphs detailing alert trends over time, and alert summary charts categorizing threats by severity, status, and attack approach
-**Interoperability** | Lists supported partner applications that can work together with Microsoft Defender, as well as applications that are already connected to Microsoft Defender.
+**Reports** | View graphs detailing threat protection, machine health and compliance, web protection, and vulnerability.
+**Partners & APIs** | View supported partner connections, which enhance the detection, investigation, and threat intelligence capabilities of the platform. You can also view connected applications, the API explorer, API usage overview, and data export settings.
 **Threat & Vulnerability management** | View your configuration score, exposure score, exposed machines, vulnerable software, and take action on top security recommendations.
-**Evaluation and tutorials** | Manage test machines, attack simulations, and reports. Learn and experience the Microsoft Defender ATP capabilities through a guided walkthrough in a trial environment.
-**Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
-**Configuration management** | Displays on-boarded machines, your organizations' security baseline, predictive analysis, and allows you to perform attack surface management on your machines.
-**Settings** | Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Secure Score dashboard.
-**(2) Main portal** | Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
-**(3) Community center, Localization,  Help and support, Feedback** | **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Microsoft Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
+**Evaluation and tutorials** | Manage test machines, attack simulations, and reports. Learn and experience the Microsoft Defender ATP capabilities through a guided walk-through in a trial environment.
+**Service health** | Provides information on the current status of the Microsoft Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
+**Configuration management** | Displays on-boarded machines, your organizations' security baseline, predictive analysis, web protection coverage, and allows you to perform attack surface management on your machines.
+**Settings** | Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as permissions, APIs, rules, machine management, IT service management, and network assessments.
+**(2) Search, Community center, Localization,  Help and support, Feedback** | **Search** - search by machine, file, user, URL, IP, vulnerability, software, and recommendation. </br></br> **Community center** - Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Localization** - Set time zones. </br></br>  **Help and support** - Access the Microsoft Defender ATP guide, Microsoft and Microsoft Premier support, license information, simulations & tutorials, Microsoft Defender ATP evaluation lab, consult a threat expert.</br></br> **Feedback** - Provide comments about what you like or what we can do better.
 
 > [!NOTE]
 > For devices with high resolution DPI scaling issues, please see [Windows scaling issues for high-DPI devices](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) for possible solutions.
 
 ## Microsoft Defender ATP icons
+
 The following table provides information on the icons used all throughout the portal:
 
 Icon | Description
@@ -105,22 +104,23 @@ Icon | Description
 ![Memory allocation icon](images/atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images/atp-process-injection.png)| Process injection
 ![Powershell command run icon](images/atp-powershell-command-run-icon.png)| Powershell command run
-![Community center icon](images/atp-community-center.png) | Community center 
+![Community center icon](images/atp-community-center.png) | Community center
 ![Notifications icon](images/atp-notifications.png) | Notifications
 ![No threats found](images/no-threats-found.png) | Automated investigation - no threats found
 ![Failed icon](images/failed.png) | Automated investigation - failed
 ![Partially remediated icon](images/partially-investigated.png) | Automated investigation - partially investigated
-![Termindated by system](images/terminated-by-system.png) | Automated investigation - terminated by system
+![Terminated by system](images/terminated-by-system.png) | Automated investigation - terminated by system
 ![Pending icon](images/pending.png) | Automated investigation - pending
 ![Running icon](images/running.png) | Automated investigation - running
-![Remediated icon](images/remediated.png) | Automated investigation - remediated 
+![Remediated icon](images/remediated.png) | Automated investigation - remediated
 ![Partially investigated icon](images/partially_remediated.png) | Automated investigation - partially remediated
 ![Threat insights icon](images/tvm_bug_icon.png) | Threat & Vulnerability Management - threat insights
-![Possible active alert icon](images/tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert 
+![Possible active alert icon](images/tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert
 ![Recommendation insights icon](images/tvm_insight_icon.png) | Threat & Vulnerability Management - recommendation insights
 
 ## Related topics
-- [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
+
+- [Overview of Microsoft Defender Security Center](use.md)
 - [View the Security operations dashboard](security-operations-dashboard.md)
 - [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
