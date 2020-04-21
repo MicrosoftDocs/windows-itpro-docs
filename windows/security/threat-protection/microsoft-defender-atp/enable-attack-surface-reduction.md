@@ -131,10 +131,13 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+
 ## PowerShell
 
->[!WARNING]
->If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> [!WARNING]
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
 

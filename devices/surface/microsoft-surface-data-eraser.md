@@ -3,7 +3,7 @@ title: Microsoft Surface Data Eraser (Surface)
 description: Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
 ms.reviewer: hachidan
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 keywords: tool, USB, data, erase
 ms.prod: w10

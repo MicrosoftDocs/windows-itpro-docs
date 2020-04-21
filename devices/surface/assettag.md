@@ -9,7 +9,7 @@ author: coveminer
 ms.author: v-jokai
 ms.topic: article
 ms.reviewer: hachidan
-manager: dansimp
+manager: laurawi
 ---
 
 # Surface Asset Tag Tool

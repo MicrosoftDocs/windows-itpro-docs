@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: DulceMontemayor
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,6 +18,9 @@ ms.topic: conceptual
 
 # Threat Protection
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
+
+>[!TIP]
+> Enable your users to access cloud services and on-premises applications with ease and enable modern management capabilities for all devices. For more information, see [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
 
 <center><h2>Microsoft Defender ATP</center></h2>
 <table>
@@ -77,7 +80,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 - [Behavior monitoring](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 - [Cloud-based protection](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
 - [Machine learning](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-- [URL Protection](/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md)
+- [URL Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
 - [Automated sandbox service](windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
 
 <a name="edr"></a>

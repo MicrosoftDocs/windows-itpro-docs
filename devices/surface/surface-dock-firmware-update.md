@@ -9,7 +9,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.reviewer: scottmca
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Microsoft Surface Dock Firmware Update: Technical information for IT administrators
