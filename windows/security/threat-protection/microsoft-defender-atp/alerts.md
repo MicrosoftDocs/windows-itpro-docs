@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Methods
 Method |Return Type |Description
@@ -45,15 +45,15 @@ description | String | Alert description.
 alertCreationTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was created.
 lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
 firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
-lastUpdateTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
+lastUpdateTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was last updated.
 resolvedTime | Nullable DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-incidentId | Nullable Long | The [Incident](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert. 
-investigationId | Nullable Long | The [Investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) ID related to the Alert. 
+incidentId | Nullable Long | The [Incident](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert.
+investigationId | Nullable Long | The [Investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) ID related to the Alert.
 investigationState | Nullable Enum | The current state of the [Investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 assignedTo | String | Owner of the alert.
 severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
 status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
-classification | Nullable Enum | Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
+classification | Nullable Enum | Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'.
 determination | Nullable Enum | Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
 category| String | Category of the alert.
 detectionSource | String | Detection source.
