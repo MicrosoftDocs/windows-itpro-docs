@@ -3,10 +3,9 @@
   items: 
     - name: Get started
       items: 
-        - name: Learn about Windows 10 (new)
+        - name: Learn about Windows 10
           href: file1.md
-        - name: What's new in Windows 10 deployment
-          href: file1.md
+
         - name: Windows 10 upgrade paths
           href: file1.md
         - name: Windows 10 edition upgrade
@@ -14,6 +13,8 @@
         - name: Deployment tools and methods
           href: file1.md
         - name: Deployment process posters
+          href: file1.md
+        - name: What's new in Windows 10 deployment
           href: file1.md
         - name: Windows as a service
           items: 
