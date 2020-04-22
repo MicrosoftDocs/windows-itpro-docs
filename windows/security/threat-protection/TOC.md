@@ -702,7 +702,7 @@
 
 ### [Microsoft Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
 #### [Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-#### [Set up and use Microsft Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+#### [Set up and use Microsoft Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
 ### [Windows Sandbox](windows-sandbox/windows-sandbox-overview.md)
 #### [Windows Sandbox architecture](windows-sandbox/windows-sandbox-architecture.md)
