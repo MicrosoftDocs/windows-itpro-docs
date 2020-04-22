@@ -27,3 +27,9 @@ ms.collection:
 ## Overview of behavioral blocking and containment
 
 As you know, not all cyberattacks involve a simple piece of malware that's found and removed. Some attacks, such as fileless attacks, are much more difficult to identify, let alone contain. Microsoft Defender ATP includes behavioral blocking and containment capabilities that can help identify and stop threats 
+
+Behavioral blocking and containment capabilities offer protection in all of the following scenarios:
+- Client behavioral blocking. Enabled by default, threats that are detected through machine learning are blocked and remediated automatically
+- Feedback-loop blocking (also referred to as Rapid Protection). Enabled by default, detections that are assumed to be false negatives are observed through behavioral intelligence.
+- On-client, policy driven attack surface reduction rules. When enabled, predefined common attack behaviors are prevented from executing, according to your ASR policies (e.g. no child processes from Office applications). Alerts on attempts to execute these behaviors surface in the Microsoft Defender ATP portal (https://securitycenter.windows.com) as informational alerts.
+- Endpoint detection and response (EDR) in block mode. When enabled, 
