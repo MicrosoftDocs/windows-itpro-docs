@@ -107,7 +107,7 @@ To register a HoloLens device in the Windows Autopilot program, you have to obta
 
 **Retrieve a device hardware hash**
 
-1. Start the HoloLens 2 device, and make sure that you sign in by using an account that is the device owner.
+1. Start the HoloLens 2 device.
 1. On the device, press the Power and Volume Down buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
 1. Use a USB-C cable to connect the device to a computer.
 1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  
