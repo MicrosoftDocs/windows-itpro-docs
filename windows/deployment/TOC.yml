@@ -1,10 +1,10 @@
 - name: Deploy and update Windows 10
   href: index.yml
   items: 
-    - name: What's new in Windows 10 deployment
-      href: file1.md
     - name: Get started
       items: 
+        - name: What's new in Windows 10 deployment
+          href: file1.md
         - name: Learn about Windows 10
           href: file1.md
         - name: What is Windows as a service?
