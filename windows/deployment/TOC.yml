@@ -100,6 +100,29 @@
             - name: Deploy updates with WSUS
             - name: Deploy updates with Group Policy
 
+    - name: Troubleshoot
+      items: 
+        - name: Resolve upgrade errors
+          items:
+            - name: Resolve Windows 10 upgrade errors
+              href: file1.md
+            - name: Quick fixes
+              href: file1.md
+            - name: SetupDiag
+              href: file1.md
+            - name: Troubleshooting upgrade errors
+              href: file1.md
+            - name: Windows error reporting
+              href: file1.md
+            - name: Upgrade error codes
+              href: file1.md
+            - name: Log files
+              href: file1.md
+            - name: Resolution procedures
+              href: file1.md
+            - name: Submit Windows 10 upgrade errors
+              href: file1.md
+
     - name: Reference
       items:
         - name: Windows 10 volume license media
@@ -128,28 +151,6 @@
               href: file1.md
             - name: Deploy Windows 10 Enterprise licenses
               href: file1.md
-        - name: Resolve upgrade errors
-          items:
-            - name: Resolve Windows 10 upgrade errors
-              href: file1.md
-            - name: Quick fixes
-              href: file1.md
-            - name: SetupDiag
-              href: file1.md
-            - name: Troubleshooting upgrade errors
-              href: file1.md
-            - name: Windows error reporting
-              href: file1.md
-            - name: Upgrade error codes
-              href: file1.md
-            - name: Log files
-              href: file1.md
-            - name: Resolution procedures
-              href: file1.md
-            - name: Submit Windows 10 upgrade errors
-              href: file1.md
-
-
         - name: Windows 10 deployment tools
           items:
             - name: Windows 10 deployment scenarios and tools
