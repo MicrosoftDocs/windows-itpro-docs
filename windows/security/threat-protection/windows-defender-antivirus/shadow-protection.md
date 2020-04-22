@@ -67,7 +67,7 @@ The following images shows an instance of unwanted software that was detected an
 |Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
-> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) 
+> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection).
 
 
 ## Frequently asked questions 
