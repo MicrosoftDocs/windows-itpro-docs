@@ -78,7 +78,7 @@ No. Shadow protection does not affect third-party antivirus protection running o
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
-Because Windows Defender Antivirus detects and remediates malicious items, it’s important to keep it up to date to leverage the latest machine learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities work in an integrated manner, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
+Because Windows Defender Antivirus detects and remediates malicious items, it’s important to keep it up to date to leverage the latest machine learning models, behavioral detections, and heuristics for best results. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities work in an integrated manner, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
