@@ -31,7 +31,7 @@ During the onboarding process, a wizard takes you through the data storage and r
 After completing the onboarding, you can verify your selection in the data retention settings page.
 
 ## Verify data storage location
-During the [Set up phase](production-deployment.md) you would have selected the location to store your data. 
+During the [Set up phase](production-deployment.md), you would have selected the location to store your data. 
 
 You can verify the data location by navigating to **Settings** > **Data retention**.
 
