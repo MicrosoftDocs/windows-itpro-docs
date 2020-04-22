@@ -65,7 +65,7 @@ The only supported operation is Get.
 
 ## Examples
 
-Sample SyncML to install Office 365 Business Retail from current channel.
+Sample SyncML to install Microsoft 365 Apps for business Retail from current channel.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">

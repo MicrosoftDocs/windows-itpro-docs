@@ -201,7 +201,7 @@ IT pros can use various methods, including Group Policy and Mobile Device Manage
 Use the steps in this article to set and/or adjust the diagnostic data settings for Windows and Windows Server in your organization.
 
 > [!IMPORTANT]
-> These diagnostic data levels only apply to Windows and Windows Server components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](/deployoffice/privacy/overview-privacy-controls).
+> These diagnostic data levels only apply to Windows and Windows Server components and apps that use the Connected User Experiences and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these diagnostic data levels. You should work with your app vendors to understand their diagnostic data policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
 
 The lowest diagnostic data setting level supported through management policies is **Security**. The lowest diagnostic data setting supported through the Settings UI is **Basic**. The default diagnostic data setting for Windows Server is **Enhanced**.
 

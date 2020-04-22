@@ -4,7 +4,7 @@ description: This is the list of known issues that may affect HoloLens developer
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
-ms.date: 8/30/2019
+ms.date: 4/20/2020
 ms.topic: article
 ms.custom: 
 - CI 111456
@@ -13,14 +13,60 @@ HoloLens and holograms: Frequently asked questions
 manager: jarrettr
 ms.prod: hololens
 appliesto:
-- HoloLens 1
+- HoloLens (1st Gen)
+- HoloLens 2
 ---
 
 # Known issues for HoloLens
 
-This is the current list of known issues for HoloLens that affect developers. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
+This is the current list of known issues for HoloLens devices. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
-## Unable to connect and deploy to HoloLens through Visual Studio
+>[!NOTE]
+> - If you discover an issue that is not blocking you please report it on your HoloLens device via [Feedback Hub](hololens-feedback.md).
+> - If the issue you are facing is blocking you, in addtion to filing feedback, please  [file a support request](https://aka.ms/hlsupport).
+
+- [Known issues for all HoloLens generations](#known-issues-for-all-hololens-generations)
+- [Known issues for HoloLens 2 devices](#known-issues-for-hololens-2-devices)
+- [Known issues for HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
+- [Known issues for HoloLens emulator](#known-issues-for-hololens-emulator)
+
+## Known issues for all HoloLens generations
+
+### Unity
+
+- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
+- Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
+
+### Windows Device Portal
+
+- The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
+- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the same page works correctly.
+- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
+
+## Known issues for HoloLens 2 devices
+
+### Blue screen is shown after unenrolling from Insider preview builds on a device reflashed with a Insider build
+
+This is an issue affecting that affects users who are were on an Insider preview build, reflashed their HoloLens 2 with a new insider preview build, and then unenrolled from the Insider program. 
+
+This does not affect:
+- Users who are not enrolled in Windows Insider 
+- Insiders:
+    - If a device has been enrolled since Insider builds were version 18362.x
+    - If they flashed a Insider signed 19041.x build AND stay enrolled in the Insider program 
+
+Work-around: 
+- Avoid the issue 
+    - Flash a non-insider build. One of the regular monthly updates. 
+    - Stay on Insider Preview
+- Reflash the device
+    1. Put the [HoloLens 2 into flashing mode](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manually by fully powering down while not connect. Then while holding Volume up, tap the Power button.
+    1. Connect to the PC and open Advanced Recovery Companion. 
+    1. Flash the HoloLens 2 to the default build.   
+
+## Known issues for HoloLens (1st Gen)
+
+### Unable to connect and deploy to HoloLens through Visual Studio
 
 > [!NOTE]
 > Last Update: 8/8 @ 5:11PM - Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
@@ -29,7 +75,7 @@ Visual Studio has released VS 2019 Version 16.2 which includes a fix to this iss
 
 Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on \<ip\> due to error 80004005.
 
-### Workaround
+#### Workaround
 
 Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
 
@@ -79,7 +125,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 
 We will provide further updates as they become available.
 
-## Issues launching the Microsoft Store and apps on HoloLens
+### Issues launching the Microsoft Store and apps on HoloLens
 
 > [!NOTE]
 > Last Update: 4/2 @ 10 AM - Issue resolved. 
@@ -126,38 +172,27 @@ If your device is still unable to load apps, you can sideload a version of the .
 
 We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
-## Device Update
+### Device Update
 
 - 30 seconds after a new update, the shell may disappear one time. Please perform the **bloom** gesture to resume your session.
 
-## Visual Studio
+### Visual Studio
 
 - See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Visual Studio that is recommended for HoloLens development.
 - When deploying an app from Visual Studio to your HoloLens, you may see the error: **The requested operation cannot be performed on a file with a user-mapped section open. (Exception from HRESULT: 0x800704C8)**. If this happens, try again and your deployment will generally succeed.
 
-## Emulator
-
-- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
-- You cannot use the PC webcam in the Emulator.
-- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
-
-## Unity
-
-- See [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) for the most up-to-date version of Unity recommended for HoloLens development.
-- Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
-
-## Windows Device Portal
-
-- The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
-- On the Virtual Input page, the Gesture and Scroll controls under the Virtual Gestures section are not functional. Using them will have no effect. The virtual keyboard on the same page works correctly.
-- After enabling Developer Mode in Settings, it may take a few seconds before the switch to turn on the Device Portal is enabled.
-
-## API
+### API
 
 - If the application sets the [focus point](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) behind the user or the normal to camera.forward, holograms will not appear in Mixed Reality Capture photos or videos. Until this bug is fixed in Windows, if applications actively set the [focus point](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) they should ensure the plane normal is set opposite camera-forward (for example, normal = -camera.forward).
 
-## Xbox Wireless Controller
+### Xbox Wireless Controller
 
 - Xbox Wireless Controller S must be updated before it can be used with HoloLens. Ensure you are [up to date](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) before attempting to pair your controller with a HoloLens.
 - If you reboot your HoloLens while the Xbox Wireless Controller is connected, the controller will not automatically reconnect to HoloLens. The Guide button light will flash slowly until the controller powers off after 3 minutes. To reconnect your controller immediately, power off the controller by holding the Guide button until the light turns off. When you power your controller on again, it will reconnect to HoloLens.
 - If your HoloLens enters standby while the Xbox Wireless Controller is connected, any input on the controller will wake the HoloLens. You can prevent this by powering off your controller when you are done using it.
+
+## Known issues for HoloLens emulator
+
+- Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
+- You cannot use the PC webcam in the Emulator.
+- The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.

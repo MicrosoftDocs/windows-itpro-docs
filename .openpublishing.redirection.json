@@ -15798,7 +15798,7 @@
 },
 {
 "source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/get-started-with-configuration-manager",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
 "redirect_document_id": false
 },
 {
