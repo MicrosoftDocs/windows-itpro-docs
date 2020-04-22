@@ -3,11 +3,11 @@
   items: 
     - name: Get started
       items: 
-        - name: What's new in Windows 10 deployment
+        - name: <b>What's new in Windows 10 deployment</b>
           href: file1.md
-        - name: Learn about Windows 10
+        - name: *Learn about <i>Windows 10</i>
           href: file1.md
-        - name: What is Windows as a service?
+        - name: <font color="F0F0F0">What is Windows as a service?</font>
           href: file1.md
         - name: Windows update fundamentals
           href: file1.md
