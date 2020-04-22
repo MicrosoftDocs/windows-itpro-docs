@@ -81,7 +81,7 @@ Because Windows Defender Antivirus detects and remediates malicious items, it's 
 
 ### Why do we need cloud protection on? 
 
-Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of capabilities, along with behavioral and machine learning models.
+Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of optics, along with behavioral and machine learning models.
 
 ### Can I participate in the preview of EDR in block mode?
 
