@@ -17,7 +17,7 @@
           href: file1.md
         - name: Windows 10 deployment scenarios
           href: file1.md
-        - name: Deployment test labs
+        - name: Proof of concept
           items: 
             - name: Demonstrate Autopilot deployment on a VM
               href: file1.md
