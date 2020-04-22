@@ -7832,11 +7832,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit",
 "redirect_document_id": true
@@ -15778,7 +15773,7 @@
 },
 {
 "source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/deploy-windows-10-with-configuration-manager",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
 "redirect_document_id": false
 },
 {
