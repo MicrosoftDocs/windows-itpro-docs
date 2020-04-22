@@ -3,11 +3,11 @@
   items: 
     - name: Get started
       items: 
-        - name: <b>What's new in Windows 10 deployment</b>
+        - name: What's new in Windows 10 deployment
           href: file1.md
-        - name: *Learn about <i>Windows 10</i>
+        - name: Learn about Windows 10
           href: file1.md
-        - name: <font color="F0F0F0">What is Windows as a service?</font>
+        - name: What is Windows as a service?
           href: file1.md
         - name: Windows update fundamentals
           href: file1.md
@@ -99,10 +99,7 @@
             - name: Deploy updates with Intune
             - name: Deploy updates with WSUS
             - name: Deploy updates with Group Policy
-
-    - name: Troubleshoot
-      items: 
-        - name: Resolve upgrade errors
+        - name: Troubleshoot
           items:
             - name: Resolve Windows 10 upgrade errors
               href: file1.md
