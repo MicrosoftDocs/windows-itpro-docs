@@ -51,6 +51,11 @@ There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012
 - **Option 1**: Onboard through Microsoft Defender Security Center
 - **Option 2**: Onboard through Azure Security Center
 
+> [!NOTE]
+> Microsoft defender ATP standalone server license is required, per node, in order to onboard the server through Microsoft Defender Security Center (Option 1), or
+an Azure Security Center Standard license is required, per node, in order to onboard a server through Azure Security Center (Option 2),  see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
+
+
 ### Option 1: Onboard servers through Microsoft Defender Security Center
 You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
@@ -124,8 +129,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
-> [!NOTE]
-> An Azure Security Center Standard license is required, per node, to enroll Microsoft Defender ATP on a supported Windows Server platform, see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services)
+
 
 ## Windows Server, version 1803 and Windows Server 2019
 To onboard Windows Server, version 1803 or Windows Server 2019, refer to the supported methods and versions below.
