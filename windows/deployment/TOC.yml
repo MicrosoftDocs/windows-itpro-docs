@@ -5,110 +5,69 @@
       items: 
         - name: Learn about Windows 10
           href: file1.md
-        - name: Windows 10 deployment scenarios
+        - name: What is Windows as a service?
           href: file1.md
         - name: Windows update fundamentals
-          href: file1.md
-        - name: What is Windows as a service?
           href: file1.md
         - name: Types of Windows updates
           href: file1.md
         - name: Servicing Windows 10 operating systems
           href: file1.md
-        - name: Deployment test lab
+        - name: Windows 10 deployment scenarios
+          href: file1.md
+        - name: Deployment test labs
           items: 
             - name: Demonstrate Autopilot deployment on a VM
               href: file1.md
-            - name: Deploy Windows 10 in a test lab
-              href: file1.md
-            - name: Deploy Windows 10 in a test lab using MDT
-              href: file1.md
-            - name: Deploy Windows 10 in a test lab using Configuration Manager
-              href: file1.md         
+            - name: Deploy Windows 10 with MDT and Configuration Manager
+              items:
+                - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
+                  href: file1.md
+                - name: Deploy Windows 10 in a test lab using MDT
+                  href: file1.md
+                - name: Deploy Windows 10 in a test lab using Configuration Manager
+                  href: file1.md         
 
     - name: Plan
       items: 
-        - name: Plan your Windows 10 deployment
+        - name: Plan for Windows 10 deployment
+          href: file1.md 
+        - name: Windows 10 deployment considerations
+          href: file1.md           
+        - name: Create a deployment plan
+          href: file1.md 
+        - name: Evaluate infrastructure and tools
+          href: file1.md 
+        - name: Determine application readiness
+          href: file1.md 
+        - name: Define your servicing strategy
+          href: file1.md  
+        - name: Plan for volume activation
+          href: file1.md 
+        - name: Features removed or planned for replacement
           items:
-            - name: Windows 10 upgrade paths
+            - name: Windows 10 features lifecycle
               href: file1.md
-            - name: Windows 10 edition upgrade
+            - name: Features we're no longer developing
               href: file1.md
-            - name: Windows 10 compatibility
-              href: file1.md 
-            - name: Windows 10 deployment considerations
-              href: file1.md   
-            - name: Windows 10 volume license media
-              href: file1.md
-            - name: Plan for volume activation
-              href: file1.md 
-            - name: Features removed or planned for replacement
-              items:
-                - name: Windows 10 features lifecycle
-                  href: file1.md
-                - name: Features we're no longer developing
-                  href: file1.md
-                - name: Features we removed
-                  href: file1.md         
-        - name: Plan your update strategy
-          items:
-            - name: Plan cloud management
-              items: 
-                - name: Designate rings, channels, and policies
-                  href: file1.md
-                - name: Chooose a delivery optimization strategy
-                  href: file1.md
-                - name: Choose a monitoring approach
-                  href: file1.md 
-                - name: Assess apps (new)
-                  items:
-                    - name: With Desktop Analytics
-                      href: file1.md
-                    - name: By other means (new)
-                      href: file1.md
-                - name: Other prep activities (new)
-                  href: file1.md
-            - name: Plan image-based management 
-              href: file1.md
+            - name: Features we removed
+              href: file1.md          
 
     - name: Prepare
       items: 
-        - name: Prepare for Windows 10 deployment
+        - name: Prepare to deploy Windows 10
+          href: file1.md 
+        - name: Evaluate and update infrastructure
+          href: file1.md 
+        - name: Evaluate and update deployment processes
+          href: file1.md 
+        - name: Prepare deployment tools
           items:
-
-            - name: Windows 10 compatibility
-              href: file1.md 
-            - name: Windows 10 infrastructure requirements
-              href: file1.md   
-            - name: Plan for volume activation
-              href: file1.md 
-            - name: Features removed or planned for replacement
-              items:
-                - name: Windows 10 features lifecycle
-                  href: file1.md
-                - name: Features we're no longer developing
-                  href: file1.md
-                - name: Features we removed
-                  href: file1.md         
-        - name: Prepare your update strategy
-          items:
-            - name: Plan cloud management
-              items: 
-                - name: Designate rings, channels, and policies
-                  href: file1.md
-                - name: Chooose a delivery optimization strategy
-                  href: file1.md
-                - name: Choose a monitoring approach
-                  href: file1.md 
-                - name: Assess apps (new)
-                  items:
-                    - name: With Desktop Analytics
-                      href: file1.md
-                    - name: By other means (new)
-                      href: file1.md
-                - name: Other prep activities (new)
-                  href: file1.md
-            - name: Plan image-based management 
+            - name: Register devices for deployment with Windows Autopilot
+              href: file1.md
+            - name: Prepare for deployment with MDT
+              href: file1.md
+            - name: Prepare for deployment with Configuration Manager
               href: file1.md
 
 
