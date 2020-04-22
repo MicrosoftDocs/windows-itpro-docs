@@ -64,6 +64,7 @@ Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows
 
 > [!NOTE]  
 > You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
+
 > [!IMPORTANT]  
 > For information about how to register devices and configure profiles, see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot) and [6. Create a deployment profile](#6-create-a-deployment-profile) in this article. These sections provide steps that are specific to HoloLens.
 
