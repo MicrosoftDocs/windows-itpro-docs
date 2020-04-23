@@ -105,7 +105,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
-## Create indicators for IPs and URLs/domains (preview)
+## Create indicators for IPs and URLs/domains 
 Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs, through Windows Defender SmartScreen for Microsoft browsers, and through Network Protection for non-Microsoft browsers or calls made outside of a browser.
 
 The threat intelligence data set for this has been managed by Microsoft.
@@ -147,7 +147,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 5. Review the details in the Summary tab, then click **Save**.
 
-## Create indicators for certificates 
+## Create indicators for certificates (preview)
 
 You can create indicators for certificates. Some common use cases include:
 
