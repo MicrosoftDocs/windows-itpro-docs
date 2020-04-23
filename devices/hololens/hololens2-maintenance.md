@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 cleaning FAQ
 description: 
-author: Teresa-Motiv; v-miegge
+author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
 ms.prod: hololens
