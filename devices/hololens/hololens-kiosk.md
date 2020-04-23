@@ -25,7 +25,7 @@ You can configure a HoloLens device to function as a fixed-purpose device, also 
 
 This article provides information about aspects of configuring kiosks that are specific to HoloLens devices. For general information about types of Windows-based kiosks and how to configure them, see [Configure kiosks and digital signs on Windows desktop editions](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Kiosk mode determines which apps are available when a user signs in to the device. However, kiosk mode is not a security limitation. It does not stop an "allowed" app from launching an app that is not allowed. In order to block apps or processes from launching, use [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) to create appropriate policies.  
 
 You can use kiosk mode in one of two configurations (single-app kiosk or multi-app kiosk), and you can use select one of three processes to set up and deploy the kiosk configuration.
@@ -43,6 +43,9 @@ You can configure any HoloLens 2 device to use kiosk mode.
 
 To configure a HoloLens (1st gen) device to use kiosk mode, you must first make sure that the device runs Windows 10, version 1803, or a newer version. If you have used the Windows Device Recovery Tool to recover your HoloLens (1st gen) device to its default build, or if you have installed the most recent updates, then your device is ready.
 
+> [!IMPORTANT]  
+> To help protect devices that run in kiosk mode, consider adding device management policies that turn off features such as USB connectivity. Additionally, check your update ring settings to make sure that automatic updates do not occur during business hours.
+
 ### Decide between a single-app kiosk or a multi-app kiosk
 
 A single-app kiosk starts the specified app when the user signs in to the device. The Start menu is disabled, as is Cortana. A HoloLens 2 device does not respond to the [Start](hololens2-basic-usage.md#start-gesture) gesture. A HoloLens (1st gen) device does not respond to the [bloom](hololens1-basic-usage.md) gesture. Because only one app can run, the user cannot place other apps.
@@ -56,7 +59,7 @@ The following table lists the feature capabilities in the different kiosk modes.
 |Single-app kiosk |Disabled |Disabled   |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
 |Multi-app kiosk  |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
-> <sup>1</sup> Voice commands that relate to disabled features do not function.
+> <sup>1</sup> Voice commands that relate to disabled features do not function.  
 > <sup>2</sup> For more information about how to configure these features, see [Select kiosk apps](#select-kiosk-apps).  
 > <sup>3</sup> Even if Cortana is disabled, the built-in voice commands are enabled.
 
@@ -78,7 +81,7 @@ For examples of how to use these capabilities, see the following table.
 
 For general information about selecting kiosk apps, see [Guidelines for choosing an app for assigned access (kiosk mode)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
 
-If you use the Windows Device Portal to configure a single-app kiosk, you select the app during the setup process.
+If you use the Windows Device Portal to configure a single-app kiosk, you select the app during the setup process.  
 
 If you use an MDM system or a provisioning package to configure kiosk mode, you use the [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to specify applications. The CSP uses [Application User Model IDs (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to identify applications. The following table lists the AUMIDs of some in-box applications that you can use in a multi-app kiosk.
 
