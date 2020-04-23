@@ -13,7 +13,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

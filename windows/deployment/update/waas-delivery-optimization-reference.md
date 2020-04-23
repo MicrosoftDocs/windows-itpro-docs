@@ -135,7 +135,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-4, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  

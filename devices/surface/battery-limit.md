@@ -7,7 +7,7 @@ ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
