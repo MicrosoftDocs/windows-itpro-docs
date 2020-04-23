@@ -114,7 +114,7 @@ By creating indicators for IPs and URLs or domains, you can now allow or block I
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
-- URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Protect your network](network-protection.md).
+- URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
@@ -147,6 +147,45 @@ It's important to understand the following prerequisites prior to creating indic
 
 5. Review the details in the Summary tab, then click **Save**.
 
+## Create indicators for certificates 
+
+You can create indicators for certificates. Some common use cases include:
+
+- Deploying blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) but allow behaviors from signed applications using certificate whitelisting.
+- Blocking the use of a specific signed application across your organization. Using the certificate 'block' indicator, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
+
+### Before you begin
+
+It's important to understand the following requirements prior to creating indicators for certifications:
+
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- Supported on machines on Windows 10, version 1703 or later.
+- The Antimalware client version must be  or later.
+- The Engine version must be x or later.
+- This feature currently supports entering … or … 
+
+>[!IMPORTANT]
+> - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it’s trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
+>- The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality – only leaf certificates are supported.
+>- Microsoft signed certificates cannot be blocked.
+
+#### Create an indicator for certificates from the settings page:
+
+>[!IMPORTANT]
+> It can take up to 3 hours to create and remove a certificate IoC.
+
+1. In the navigation pane, select **Settings** > **Indicators**.  
+
+2. Select the **Certificate** tab.
+
+3. Select **Add indicator**.
+
+4. Specify the following details:
+   - Indicator - Specify the entity details and define the expiration of the indicator.
+   - Action - Specify the action to be taken and provide a description.
+   - Scope - Define the scope of the machine group.
+
+5. Review the details in the Summary tab, then click **Save**.
 
 
 ## Manage indicators
