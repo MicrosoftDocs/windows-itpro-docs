@@ -1,6 +1,7 @@
 ---
 title: Perform Local Reactivation (Windows 10)
-description: Perform Local Reactivation
+description: In this article, you will learn how to perform local reactivation using the Volume Activation Management Tool (VAMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

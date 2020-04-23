@@ -2,8 +2,9 @@
 title: Adding devices
 ms.reviewer: 
 manager: laurawi
-description: How to add devices to Windows Autopilot
+description: In this article, you will learn about how to register a device to the Windows Autopilot deployment service before deploying it using the Windows Autopilot.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium

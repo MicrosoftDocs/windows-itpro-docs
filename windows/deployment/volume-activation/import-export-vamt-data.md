@@ -1,6 +1,7 @@
 ---
 title: Import and Export VAMT Data (Windows 10)
-description: Import and Export VAMT Data
+description: In this article, you'll learn how to import and export data using the Volume Activation Management Tool (VAMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

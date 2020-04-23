@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot deployment
-description: Discover resources for Windows Autopilot deployment with this guide.
+description: In this article, discover resources for the zero-touch, self-service Windows deployment platform Windows Autopilot.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
@@ -14,6 +14,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 

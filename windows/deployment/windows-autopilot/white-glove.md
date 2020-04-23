@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot for white glove deployment
-description: Windows Autopilot for white glove deployment
+description: Learn how to use Windows Autopilot for a white glove deployment that enables partners or IT staff to pre-provision a Windows 10 PC.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, pre-provisioning
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ ms.audience: itpro
 author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Autopilot for white glove deployment
@@ -24,7 +25,7 @@ Windows Autopilot enables organizations to easily provision new devices - levera
 
  ![OEM](images/wg01.png)
 
-Windows Autopilot can also provide a <I>white glove</I> service that enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready. From the end user’s perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
+Windows Autopilot can also provide a <I>white glove</I> service that enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready. From the end user's perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
 
 With **Windows Autopilot for white glove deployment**, the provisioning process is split. The time-consuming portions are performed by IT, partners, or OEMs. The end user simply completes a few necessary settings and polices and then they can begin using their device.
 
@@ -42,7 +43,7 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
 
 >[!IMPORTANT]
->Because the OEM or vendor performs the white glove process, this <u>doesn’t require access to an end-user's on-prem domain infrastructure</u>. This is unlike a typical hybrid Azure AD-joined scenario because rebooting the device is postponed. The device is resealed prior to the time when connectivity to a domain controller is expected, and the domain network is contacted when the device is unboxed on-prem by the end-user.
+>Because the OEM or vendor performs the white glove process, this <u>doesn't require access to an end-user's on-prem domain infrastructure</u>. This is unlike a typical hybrid Azure AD-joined scenario because rebooting the device is postponed. The device is resealed prior to the time when connectivity to a domain controller is expected, and the domain network is contacted when the device is unboxed on-prem by the end-user.
 
 ## Preparation
 
@@ -110,8 +111,8 @@ If the pre-provisioning process completed successfully and the device was reseal
 - Power on the device.
 - Select the appropriate language, locale, and keyboard layout.
 - Connect to a network (if using Wi-Fi).  If using Hybrid Azure AD Join, there must be connectivity to a domain controller; if using Azure AD Join, internet connectivity is required.
-- On the branded sign-on screen, enter the user’s Azure Active Directory credentials.
-- If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user’s Active Directory credentials.
+- On the branded sign-on screen, enter the user's Azure Active Directory credentials.
+- If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user's Active Directory credentials.
 - Additional policies and apps will be delivered to the device, as tracked by the Enrollment Status Page (ESP).  Once complete, the user will be able to access the desktop.
 
 ## Related topics

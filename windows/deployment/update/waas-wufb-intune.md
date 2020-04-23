@@ -1,6 +1,6 @@
 ---
 title: Walkthrough use Intune to configure Windows Update for Business (Windows 10)
-description: Configure Windows Update for Business settings using Microsoft Intune.
+description: In this article, learn how to configure Windows Update for Business settings using Microsoft Intune.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -12,6 +12,7 @@ ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Walkthrough: use Microsoft Intune to configure Windows Update for Business
@@ -29,7 +30,7 @@ ms.topic: article
 >
 >In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
-You can use Intune to configure Windows Update for Business even if you don’t have on-premises infrastructure when you use Intune in conjunction with Azure AD. Before configuring Windows Update for Business, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
+You can use Intune to configure Windows Update for Business even if you don't have on-premises infrastructure when you use Intune in conjunction with Azure AD. Before configuring Windows Update for Business, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 
 Windows Update for Business in Windows 10 version 1511 allows you to delay quality updates up to 4 weeks and feature updates up to an additional 8 months after Microsoft releases builds to the Current Branch for Business (CBB) servicing branch. In Windows 10 version 1607 and later, you can delay quality updates for up to 30 days and feature updates up to an additional 180 days after the release of either a Current Branch (CB) or CBB build.
 
@@ -42,7 +43,7 @@ To use Intune to manage quality and feature updates in your environment, you mus
 
 In this example, you use two security groups to manage your updates: **Ring 4 Broad business users** and **Ring 5 Broad business users #2** from  Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md). 
 
-- The **Ring 4 Broad business users** group contains PCs of IT members who test the updates as soon as they’re released for Windows clients in the Current Branch for Business (CBB) servicing branch. This phase typically occurs after testing on Current Branch (CB) devices.
+- The **Ring 4 Broad business users** group contains PCs of IT members who test the updates as soon as they're released for Windows clients in the Current Branch for Business (CBB) servicing branch. This phase typically occurs after testing on Current Branch (CB) devices.
 - The **Ring 5 Broad business users #2** group consists of the first line-of-business (LOB) users, who consume quality updates after 1 week and feature updates 1 month after the CBB release.
 
 >[!NOTE]
@@ -71,7 +72,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
 
     ![Settings for this policy](images/waas-wufb-intune-step7a.png)
     
-8. For this deployment ring, you’re required to enable only CBB, so click **Save Policy**.
+8. For this deployment ring, you're required to enable only CBB, so click **Save Policy**.
 
 9. In the **Deploy Policy: Windows Update for Business – CBB1** dialog box, click **Yes**.
 
@@ -175,7 +176,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
     
 10. In the **Manage Deployment: Windows Update for Business – CB2** dialog box, select the **Ring 2 Pilot Business Users** group, click **Add**, and then click **OK**.
 
-You have now configured the **Ring 2 Pilot Business Users** deployment ring to enable CB feature update deferment for 14 days. Now, you must configure **Ring 4 Broad business users** to receive CBB features updates as soon as they’re available.
+You have now configured the **Ring 2 Pilot Business Users** deployment ring to enable CB feature update deferment for 14 days. Now, you must configure **Ring 4 Broad business users** to receive CBB features updates as soon as they're available.
 
 ### Configure Ring 4 Broad business users policy
 
@@ -216,7 +217,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
     
 14. In the **Manage Deployment: Windows Update for Business – CBB1** dialog box, select the **Ring 4 Broad business users** group, click **Add**, and then click **OK**.
 
-You have now configured the **Ring 4 Broad business users** deployment ring to receive CBB feature updates as soon as they’re available. Finally, configure **Ring 5 Broad business users #2** to accommodate a 7-day delay for quality updates and a 14-day delay for feature updates. 
+You have now configured the **Ring 4 Broad business users** deployment ring to receive CBB feature updates as soon as they're available. Finally, configure **Ring 5 Broad business users #2** to accommodate a 7-day delay for quality updates and a 14-day delay for feature updates. 
 
 
 ### Configure Ring 5 Broad business users \#2 policy

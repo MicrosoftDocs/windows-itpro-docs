@@ -1,6 +1,7 @@
 ---
 title: Manage Activations (Windows 10)
-description: Manage Activations
+description: This article contains a list of topics that can help you with activating a client computer, by using a variety of activation methods.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 53bad9ed-9430-4f64-a8de-80613870862c
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

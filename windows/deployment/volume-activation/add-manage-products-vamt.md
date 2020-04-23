@@ -1,6 +1,7 @@
 ---
 title: Add and Manage Products (Windows 10)
-description: Add and Manage Products
+description: This article contains a list of topics to help you learn how to manage client computers and products in the Volume Activation Management Tool (VAMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: a48fbc23-917d-40f7-985c-e49702c05e51
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

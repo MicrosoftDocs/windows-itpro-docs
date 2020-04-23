@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Windows Autopilot
-description: Learn how to handle issues as they arise during the Windows Autopilot deployment process.
+description: In this article, learn how to handle issues as they arise during the Windows Autopilot deployment process.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
@@ -14,6 +14,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 
@@ -92,18 +93,18 @@ To see details related to the Autopilot profile settings and OOBE flow, Windows 
 
 | Event ID | Type | Description |
 |----------|------|-------------| 
-| 100 | Warning | “AutoPilot policy [name] not found.”  This is typically a temporary problem, while the device is waiting for an Autopilot profile to be downloaded. |
-| 101 | Info | “AutoPilotGetPolicyDwordByName succeeded: policy name = [setting name]; policy value [value].”  This shows Autopilot retrieving and processing numeric OOBE settings. |
-| 103 | Info | “AutoPilotGetPolicyStringByName succeeded: policy name = [name]; value = [value].”  This shows Autopilot retrieving and processing OOBE setting strings such as the Azure AD tenant name. |
-| 109 | Info | “AutoPilotGetOobeSettingsOverride succeeded:  OOBE setting [setting name]; state = [state].”  This shows Autopilot retrieving and processing state-related OOBE settings. |
-| 111 | Info | “AutoPilotRetrieveSettings succeeded.”  This means that the settings stored in the Autopilot profile that control the OOBE behavior have been retrieved successfully. |
-| 153 | Info | “AutoPilotManager reported the state changed from [original state] to [new state].”  Typically this should say “ProfileState_Unknown” to “ProfileState_Available” to show that a profile was available for the device and downloaded, so the device is ready to be deployed using Autopilot. |
-| 160 | Info | “AutoPilotRetrieveSettings beginning acquisition.”  This shows that Autopilot is getting ready to download the needed Autopilot profile settings. |
-| 161 | Info | “AutoPilotManager retrieve settings succeeded.”  The Autopilot profile was successfully downloaded. |
-| 163 | Info | “AutoPilotManager determined download is not required and the device is already provisioned.  Clean or reset the device to change this.”  This message indicates that an Autopilot profile is resident on the device; it typically would only be removed by the **Sysprep /Generalize** process. |
-| 164 | Info | “AutoPilotManager determined Internet is available to attempt policy download.” |
-| 171 | Error | “AutoPilotManager failed to set TPM identity confirmed.  HRESULT=[error code].”  This indicates an issue performing TPM attestation, needed to complete the self-deploying mode process. | 
-| 172 | Error | “AutoPilotManager failed to set AutoPilot profile as available.  HRESULT=[error code].”  This is typically related to event ID 171. |
+| 100 | Warning | "AutoPilot policy [name] not found."  This is typically a temporary problem, while the device is waiting for an Autopilot profile to be downloaded. |
+| 101 | Info | "AutoPilotGetPolicyDwordByName succeeded: policy name = [setting name]; policy value [value]."  This shows Autopilot retrieving and processing numeric OOBE settings. |
+| 103 | Info | "AutoPilotGetPolicyStringByName succeeded: policy name = [name]; value = [value]."  This shows Autopilot retrieving and processing OOBE setting strings such as the Azure AD tenant name. |
+| 109 | Info | "AutoPilotGetOobeSettingsOverride succeeded:  OOBE setting [setting name]; state = [state]."  This shows Autopilot retrieving and processing state-related OOBE settings. |
+| 111 | Info | "AutoPilotRetrieveSettings succeeded."  This means that the settings stored in the Autopilot profile that control the OOBE behavior have been retrieved successfully. |
+| 153 | Info | "AutoPilotManager reported the state changed from [original state] to [new state]."  Typically this should say "ProfileState_Unknown" to "ProfileState_Available" to show that a profile was available for the device and downloaded, so the device is ready to be deployed using Autopilot. |
+| 160 | Info | "AutoPilotRetrieveSettings beginning acquisition."  This shows that Autopilot is getting ready to download the needed Autopilot profile settings. |
+| 161 | Info | "AutoPilotManager retrieve settings succeeded."  The Autopilot profile was successfully downloaded. |
+| 163 | Info | "AutoPilotManager determined download is not required and the device is already provisioned.  Clean or reset the device to change this."  This message indicates that an Autopilot profile is resident on the device; it typically would only be removed by the **Sysprep /Generalize** process. |
+| 164 | Info | "AutoPilotManager determined Internet is available to attempt policy download." |
+| 171 | Error | "AutoPilotManager failed to set TPM identity confirmed.  HRESULT=[error code]."  This indicates an issue performing TPM attestation, needed to complete the self-deploying mode process. | 
+| 172 | Error | "AutoPilotManager failed to set AutoPilot profile as available.  HRESULT=[error code]."  This is typically related to event ID 171. |
 
 In addition to the event log entries, the registry and ETW trace options described below also work with Windows 10 version 1803 and above.
 
@@ -114,8 +115,8 @@ On Windows 10 version 1709 and above, information about the Autopilot profile se
 | Value | Description |
 |-------|-------------|
 | AadTenantId | The GUID of the Azure AD tenant the user signed into.  This should match the tenant that the device was registered with; if it does not match the user will receive an error. |
-| CloudAssignedTenantDomain | The Azure AD tenant the device has been registered with, e.g. “contosomn.onmicrosoft.com.”  If the device is not registered with Autopilot, this value will be blank. |
-| CloudAssignedTenantId | The GUID of the Azure AD tenant the device has been registered with (the GUID corresponds to the tenant domain from the CloudAssignedTenantDomain registry value).  If the device isn’t registered with Autopilot, this value will be blank.|
+| CloudAssignedTenantDomain | The Azure AD tenant the device has been registered with, e.g. "contosomn.onmicrosoft.com."  If the device is not registered with Autopilot, this value will be blank. |
+| CloudAssignedTenantId | The GUID of the Azure AD tenant the device has been registered with (the GUID corresponds to the tenant domain from the CloudAssignedTenantDomain registry value).  If the device isn't registered with Autopilot, this value will be blank.|
 | IsAutoPilotDisabled | If set to 1, this indicates that the device is not registered with Autopilot.  This could also indicate that the Autopilot profile could not be downloaded due to network connectivity or firewall issues, or network timeouts. |
 | TenantMatched | This will be set to 1 if the tenant ID of the user matches the tenant ID that the device was registered with.  If this is 0, the user would be shown an error and forced to start over. |
 | CloudAssignedOobeConfig | This is a bitmap that shows which Autopilot settings were configured.  Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16 |

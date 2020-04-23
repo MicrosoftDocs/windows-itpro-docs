@@ -1,6 +1,7 @@
 ---
 title: Activate an Active Directory Forest Online (Windows 10)
-description: Activate an Active Directory Forest Online
+description: Learn how to use the active directory-based activation function of the volume activation management tool to activate an active directory (AD) forest online.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 9b5bc193-799b-4aa5-9d3e-0e495f7195d3
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

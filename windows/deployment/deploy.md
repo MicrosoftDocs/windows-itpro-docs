@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 (Windows 10)
-description: Deploying Windows 10 for IT professionals.
+description: This article contains information for IT professionals on how to deploy Windows 10 or upgrade from a previous version of Windows.
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10
