@@ -192,39 +192,42 @@ To set up kiosk mode by using Microsoft Intune or another MDM system, follow the
 
 Your next settings after this will be different depending on if you pick Single app kiosk or Multi app kiosk.
 
-For full details creating a device profile for Kiosk mode check out [Kiosk settings](https://docs.microsoft.com/intune/configuration/kiosk-settings).
+For full details about creating a kiosk configuration profile, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### Select the settings for your kiosk
+### <a id="mdmconfigsingle"></a>[MDM] 2. Configure the settings for a single-app kiosk
 
+This section summarizes the settings that a single-app kiosk requires. For more detailed information, see the following locations:
 
-For more information on settings for both modes of Kiosk visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic).
-[Windows Holographic for Business device settings to run as a kiosk in Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic)
+- For information about how to configure a kiosk configuration profile in Intune, see [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- For more information about the available settings for single-app kiosks in Intune, see [Single full-screen app kiosks](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-a-kiosk-configuration-xml-file).
 
-[Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings)
+Configure the following settings in the kiosk configuration profile:
 
-#### <a id="mdmconfigsingle"></a>[MDM] 2. Configure the settings for a single-app kiosk
+- **Local user account**. You'll need to enter either the name of your local user, or your Microsoft Account you intend to be logged onto the device.
+- **User logon type**.** Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account that is associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
+- **Application type**. Select **Store app**, and then select an app from the list.
 
-Select **Single-app kiosk**, then select **Local user account**. You'll need to enter either the name of your local user, or your Microsoft Account you intend to be logged onto the device.
-Finally you'll select the one app you want to be used in your kiosk. Ideally this should be a store app.
-For full details visit [here](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks).
+### <a id="mdmconfigmulti"></a>[MDM] 2. Configure the settings for a multi-app kiosk
 
-#### <a id="mdmconfigmulti"></a>[MDM] 2. Configure the settings for a multi-app kiosk
+This section summarizes the settings that a multi-app kiosk requires. For more detailed information, see the following locations:
 
-Additional information:
-
-- You can optionally use a custom Start layout. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
-- For HoloLens devices that are managed by Microsoft Intune, directions can be found [here](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-
+- For information about how to configure a kiosk configuration profile in Intune, see [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- For more information about the available settings for multi-app kiosks in Intune, see [Multi-app kiosks](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
 - For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-a-kiosk-configuration-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
+- You can optionally use a custom Start layout with Intune or other MDM services. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
 
-**Target Windows 10 in S mode devices**: Choose **No**. S mode isn't supported on Windows Holographic for Business.
-For **User logon type**: Add one or more user accounts that can use the apps you add. Your options that work with Windows Holographic are: **Azure AD user or group** or **HoloLens visitor**.
+Configure the following settings in the kiosk configuration profile:
 
-It's important that the group or groups you choose includes users you want to use the Kiosk, if a user signs in with an account not included in this list  they will not have a Kiosk experience.
+- **Target Windows 10 in S mode devices**. Select **No**. S mode isn't supported on Windows Holographic for Business.
+- **User logon type**. Select **Azure AD user or group** or **HoloLens visitor**, and then add one or more user groups or accounts.  
+  
+  Only users that belong to the groups or accounts that you specify in **User logon type** can use the kiosk experience.
 
-Now you choose which Apps to include in your kiosk. You may choose to add just one or add many.
+- Apps. You may choose to add just one or add many apps. You can use the following options to add apps:
 
-To choose an app you've uploaded as a **Line of business app** choose the **Add store app** option. You many also choose to add an app via it's **Application user model ID** by selecting **Add by AUMID**.
+  - To add an uploaded line of business app, select **Add store app**.
+  - To add an app by specifying its AUMID, select **Add by AUMID**.
 
 ### <a id="mdmassign"></a>[MDM] 3. Assign the kiosk configuration profile to the device group
 
