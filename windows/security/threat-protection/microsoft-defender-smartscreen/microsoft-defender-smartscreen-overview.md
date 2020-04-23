@@ -88,5 +88,6 @@ EventID | Description
 1002 | User Decision Windows Defender SmartScreen Event
 
 ## Related topics
+- [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
 - [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
