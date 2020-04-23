@@ -129,9 +129,9 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 
 ## Windows Defender Application Control filename rules
 
-File name rule levels provide administrators to specify the file attributes off which to base a file name rule. File name rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Specification of the file name level occurs when creating new policy rules. In addition, to combine file name levels found in multiple policies, you can merge multiple policies. 
+File name rule levels provide administrators to specify the file attributes off which to base a file name rule. File name rules provide the same security guarantees that explicit signer rules do, as they are based on non-mutable file attributes. Specification of the file name level occurs when creating new policy rules. In addition, to combine file name levels found in multiple policies, you can merge multiple policies. 
 
-Use Table 3 to select the appropriate file name level for your available administrative resources and Windows Defender Application Control deployment scenario.
+Use Table 3 to select the appropriate file name level for your available administrative resources and Windows Defender Application Control deployment scenario. For instance, an LOB or production application and its binaries (eg. DLLs) may all share the same product name. This allows users to easily create targeted policies based on the Product Name filename rule level.  
 
 **Table 3. Windows Defender Application Control policy - filename levels**
 
