@@ -40,23 +40,23 @@ Go to the Threat & Vulnerability Management navigation menu and select **Event t
 
 ### Top events card
 
-In the Threat & Vulnerability Management dashboard, the Top events card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event timeline page.
+In the Threat & Vulnerability Management dashboard, the "Top events" card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event timeline page.
 
 ![Event timeline page](images/tvm-top-events-card.png)
 
 ### Exposure score graph
 
-In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then no insights will be shown.
+In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then none will be shown.
 
-![Event timeline page](images/tvm-event-insights-exposure-score400.png)
+![Event timeline page](images/tvm-event-timeline-exposure-score400.png)
 
 Selecting **Show all events from this day** will lead you to the Event timeline page with a pre-populated custom date range for that day.
 
-![Event timeline page](images/tvm-event-insights-custom.png)
+![Event timeline page](images/tvm-event-timeline-drilldown.png)
 
 Select **Custom range** to change the date range to another custom one, or a pre-set time range.
 
-![Event timeline date range options](images/tvm-custom-event-insights-range.png)
+![Event timeline date range options](images/tvm-event-timeline-dates.png)
 
 ## Event timeline overview
 
@@ -64,7 +64,7 @@ On the Event timeline page, you can view the date, event, related software compo
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
-![Event timeline page](images/event-insights-page.png)
+![Event timeline page](images/tvm-event-timeline-overview.png)
 
 ### Icons 
 
@@ -90,11 +90,11 @@ The following icons show up next to events:
 
 ### Drill down to a specific event
 
-Once you select an event insight, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
+Once you select an event, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
 
 The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means machines are more vulnerable to exploitation.
 
-![Event timeline page](images/tvm-event-insights-flyout-500.png)
+![Event timeline page](images/tvm-event-timeline-flyout500.png)
 
 ## Related topics
 
