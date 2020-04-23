@@ -1,6 +1,6 @@
 ---
-title: Shadow protection in next-generation protection
-description: Learn about shadow protection in next-generation protection
+title: Shadow protection
+description: Learn about shadow protection
 keywords: Windows Defender Antivirus, shadow protection, passive mode
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.custom: next-gen
 ms.collection: 
 ---
 
-# Shadow protection in next-generation protection
+# Shadow protection
 
 **Applies to:**
 
@@ -67,7 +67,7 @@ The following images shows an instance of unwanted software that was detected an
 |Windows Defender Antivirus engine |To make sure your engine is up to date, using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
-> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) 
+> To get the best protection value, make sure Windows Defender Antivirus is configured to receive regular updates and other essential features, such as behavioral monitoring, IOfficeAV, tamper protection, and more. See [Protect security settings with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection).
 
 
 ## Frequently asked questions 
@@ -78,7 +78,7 @@ No. Shadow protection does not affect third-party antivirus protection running o
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
-The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack works in integration, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
+Because Windows Defender Antivirus detects and remediates malicious items, it’s important to keep it up to date to leverage the latest machine learning models, behavioral detections, and heuristics for best results. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities work in an integrated manner, and to get best protection value, you should keep Windows Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
