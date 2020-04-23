@@ -114,9 +114,13 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 > <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
 > <sup>4</sup> To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
 
-### Plan access control
+### Plan user and device groups
 
-It's important that the group or groups you choose includes users you want to use the Kiosk, if a user signs in with an account not included in this list  they will not have a Kiosk experience.
+In an MDM environment, you use user groups and device groups to manage device configurations and user access. For a full discussion of the roles of user groups and device groups in Intune, see [Assign user and device profiles in Microsoft Intune: User groups vs. device groups](https://docs.microsoft.com/intune/configuration/device-profile-assign).
+
+In short, you configure assignments to deploy the kiosk configuration to devices and you configure user groups (sometimes called user logon types) to determine which users can use the kiosk devices. If a user signs in by using an account that is not included in the appropriate group, that user does not have a Kiosk experience.
+
+
 
 One device can easily be set up to have one kiosk set up for it. If you opt for multi-app kiosk then not you don't need to require all users to use the Kiosk.  
 
@@ -129,9 +133,7 @@ Click assignments and add the group(s) that you want the Kiosk mode policy deplo
 > [!IMPORTANT]  
 > If two more or more different kiosk polices target a device they will conflict and the device will receive neither. Other policies such as device restrictions do not conflict with Kiosk mode or additional device restrictions.
 
-For more information on group type, and group assignments please visit [here](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
-There is an important distinction between the **User logon type** and the **Assignments**. Assignments is how the deployment of the Kiosk to a device is determined. Once a Kiosk policy is on the device, it uses the User logon type to determine which users should be using the Kiosk.
 
 **Examples:**
 
