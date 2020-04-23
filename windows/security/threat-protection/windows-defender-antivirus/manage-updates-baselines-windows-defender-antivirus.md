@@ -48,24 +48,56 @@ You can manage the distribution of updates through Windows Server Update Service
 
 Only the main version is listed in the following table as reference information:
 
-Month	| Platform/Client	| Engine
----|---|---
-Mar-2020 | 4.18.2003.x| 1.1.16900.x
-Feb-2020	|	- | 1.1.16800.x
-Jan-2020 |	4.18.2001.x	| 1.1.16700.x
-Dec-2019 | - | - |
-Nov-2019	| 4.18.1911.x	| 1.1.16600.x
-Oct-2019	| 4.18.1910.x	| 1.1.16500.x
-Sep-2019	| 4.18.1909.x	| 1.1.16400.x
-Aug-2019	| 4.18.1908.x	| 1.1.16300.x
-Jul-2019	| 4.18.1907.x	| 1.1.16200.x
-Jun-2019	| 4.18.1906.x	| 1.1.16100.x
-May-2019	| 4.18.1905.x	| 1.1.16000.x
-Apr-2019	| 4.18.1904.x	| 1.1.15900.x
-Mar-2019	| 4.18.1903.x	| 1.1.15800.x
-Feb-2019	| 4.18.1902.x	| 1.1.15700.x
-Jan-2019	| 4.18.1901.x	| 1.1.15600.x
-Dec-18	| 4.18.1812.X	| 1.1.15500.x
+<details>
+<summary> March-2020 (4.18.2003.8/1.1.16900.2)</summary>
+  
+
+    
+  Released: **March 26, 2020**  
+  Platform/Client: **4.18.2003.8**  
+  Engine: **1.1.16900.2**
+    
+  ### What´s new
+  * fix1 
+  * fix2
+  * fix3
+  
+  ### Known Issues
+  * New file path  
+  Because of a change in the file path location in the update, many downloads are blocked when AppLocker is enabled.
+To work around this issue, open Group Policy, and then change the setting to Allow for the following path:
+
+
+%OSDrive%\ProgramData\Microsoft\Windows Defender\Platform\*
+
+
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+</details>
+
+<details>
+  <summary> Jan-2020 (4.18.2001.10/1.1.16700.2)</summary>
+  
+  
+  Released: **March 26, 2020**  
+  Platform/Client: **4.18.2001.10**  
+  Engine: **1.1.16700.2**
+  
+  ### What´s new
+  * fix1 
+  * fix2
+  * fix3
+  
+  ### Known Issues
+  * New file path  
+  Because of a change in the file path location in the update, many downloads are blocked when AppLocker is enabled.
+To work around this issue, open Group Policy, and then change the setting to Allow for the following path:
+
+%OSDrive%\ProgramData\Microsoft\Windows Defender\Platform\*
+
+</details>
+
 
 
 ## In this section
