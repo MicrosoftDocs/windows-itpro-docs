@@ -1,7 +1,7 @@
 ---
-title: Event insights
-description: Event insights is a "risk news feed" which will help you interpret how risk is introduced into the organization and which mitigations happened to reduce it.
-keywords: event insights, mdatp event insights, mdatp tvm event insights, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
+title: Event timeline
+description: Event timeline is a "risk news feed" which will help you interpret how risk is introduced into the organization and which mitigations happened to reduce it.
+keywords: event timeline, mdatp event timeline, mdatp tvm event timeline, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Event insights
+# Event timeline
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Event insights is a risk news feed which helps you interpret how risk, through new vulnerabilities or exploits, is introduced into the organization. You can view events which may impact your organization's risk. For example, you can find new vulnerabilities that were introduced, vulnerabilities that became exploitable, exploit that was addd to an exploit kit, and more.
+Event timeline is a risk news feed which helps you interpret how risk, through new vulnerabilities or exploits, is introduced into the organization. You can view events which may impact your organization's risk. For example, you can find new vulnerabilities that were introduced, vulnerabilities that became exploitable, exploit that was addd to an exploit kit, and more.
 
-Event insights also tells the story of your [exposure score](tvm-exposure-score.md) so you can determine the cause of large changes. Reduce you exposure score by addressing what needs to be remediated based on the prioritized [security recommendations](tvm-security-recommendation.md).
+Event timeline also tells the story of your [exposure score](tvm-exposure-score.md) so you can determine the cause of large changes. Reduce you exposure score by addressing what needs to be remediated based on the prioritized [security recommendations](tvm-security-recommendation.md).
 
-## Navigate to the Event insights page
+## Navigate to the Event timeline page
 
-You can access Event insights mainly through three ways:
+You can access Event timeline mainly through three ways:
 
 - In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center.
 - Top events card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
@@ -36,35 +36,35 @@ You can access Event insights mainly through three ways:
 
 ### Navigation menu
 
-Go to the Threat & Vulnerability Management navigation menu and select **Event insights** to view impactful events.
+Go to the Threat & Vulnerability Management navigation menu and select **Event timeline** to view impactful events.
 
 ### Top events card
 
-In the Threat & Vulnerability Management dashboard, the Top events card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event insights page.
+In the Threat & Vulnerability Management dashboard, the Top events card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event timeline page.
 
-![Event insights page](images/tvm-top-events-card.png)
+![Event timeline page](images/tvm-top-events-card.png)
 
 ### Exposure score graph
 
 In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then no insights will be shown.
 
-![Event insights page](images/tvm-event-insights-exposure-score400.png)
+![Event timeline page](images/tvm-event-insights-exposure-score400.png)
 
-Selecting **Show all events from this day** will lead you to the Event insights page with a pre-populated custom date range for that day.
+Selecting **Show all events from this day** will lead you to the Event timeline page with a pre-populated custom date range for that day.
 
-![Event insights page](images/tvm-event-insights-custom.png)
+![Event timeline page](images/tvm-event-insights-custom.png)
 
 Select **Custom range** to change the date range to another custom one, or a pre-set time range.
 
-![Event insights date range options](images/tvm-custom-event-insights-range.png)
+![Event timeline date range options](images/tvm-custom-event-insights-range.png)
 
-## Event insights overview
+## Event timeline overview
 
-On the Event insights page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns and filter by type or percent of impacted machines.
+On the Event timeline page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns and filter by type or percent of impacted machines.
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
-![Event insights page](images/event-insights-page.png)
+![Event timeline page](images/event-insights-page.png)
 
 ### Icons 
 
@@ -94,7 +94,7 @@ Once you select an event insight, a flyout will appear listing the details and c
 
 The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means machines are more vulnerable to exploitation.
 
-![Event insights page](images/tvm-event-insights-flyout-500.png)
+![Event timeline page](images/tvm-event-insights-flyout-500.png)
 
 ## Related topics
 
