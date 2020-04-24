@@ -66,7 +66,7 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 
 ![Event timeline page](images/tvm-event-timeline-overview.png)
 
-### Icons 
+### Icons
 
 The following icons show up next to events:
 
@@ -80,7 +80,8 @@ The following icons show up next to events:
 - **Date**: month, day, year
 - **Event**: impactful event, including component, type, and number of impacted machines
 - **Related component**: software
-- **Impacted machines**: when the event occurred. You can also filter by percent.
+- **Originally impacted machines**: the number, and percentage, of impacted machines when this event originally occurred. You can also filter by the percent of originally impacted machines, out of your total number of machines.
+- **Currently impacted machines**: the current number, and percentage, of machines that this event currently impacts. You can find this field by selecting **Customize columns**.
 - **Types**: reflect time-stamped events that impact the score. They can be filtered.
     - Exploit added to an exploit kit
     - Exploit was verified
