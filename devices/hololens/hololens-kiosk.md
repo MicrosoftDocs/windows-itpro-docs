@@ -262,37 +262,38 @@ If you're not seeing your Kiosk mode yet, make sure to [check the assignment sta
 
 #### <a id="mdmmultideploy"></a>[MDM] 4. Deploy a multi-app kiosk
 
+
+When you use an MDM system, you can enroll the device in MDM during OOBE. If appropriate, provide the information that's required for enrollment to the users for the OOBE process.
 For multi app Kiosk you'll be using a device that you Azure AD join to your tenant during OOBE.  
 
 If you're targeting a user group. you'll want to sign in to an account that is a member of a group that's also a group that the Kiosk is assigned to.
 
 Once you've completed OOBE, if you have apps you need to manually install via sideloading or the Microsoft store please do so. If your apps are going to install automatically, such as being a [required app](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) for the same group that the Kiosk mode is assigned to, then it will become a part of your kiosk even if you enter the kiosk before it finishes downloading.
 
-To enable Kiosk mode simply **sign out** of your account and **sign in** to a profile that is a member of a group targeted by the Logon user account setting. (This may be the same user.)
+To enable Kiosk mode, simply sign out of your account and sign in to a profile that is a member of a group targeted by the **User logon type** setting. (This may be the same user.)
 
 If you're not seeing your Kiosk mode yet, make sure to [check the assignment status](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
 ## Use a provisioning package to set up a single-app or muti-app kiosk
 
-As part of creating your Provisioning package, you'll need to create a [start layout](#start-layout-for-hololens).
+As part of creating your Provisioning package, you'll need to create a [Start layout](#start-layout-for-hololens).
 
 To set up kiosk mode by using a provisioning package, follow these steps.
 
-1. [Create an XML file that defines the kiosk configuration.](#create-a-kiosk-configuration-xml-file)
+1. [Create an XML file that defines the kiosk configuration.](#ppkioskconfig)
 2. [Add the XML file to a provisioning package.](#add-the-kiosk-configuration-xml-file-to-a-provisioning-package)
 3. [Apply the provisioning package to HoloLens.](#apply-the-provisioning-package-to-hololens)
 
-
-### Create a kiosk configuration XML file
+### <a id="ppkioskconfig"></a>[PP] 1. Create a kiosk configuration XML file
 
 Follow [the instructions for creating a kiosk configuration XML file for desktop](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-using-a-provisioning-package), with the following exceptions:
 
 - Do not include Classic Windows applications (Win32). HoloLens does not support these applications.
 - Use the [placeholder Start XML](#start-layout-for-hololens) for HoloLens.
 
-#### Add guest access to the kiosk configuration (optional)
+#### <a id="ppkioskguest"></a>Add guest access to the kiosk configuration (optional)
 
-In the [Configs section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
+In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
 
 Use the following snippet in your kiosk configuration XML to enable the **Guest** account:
 
@@ -305,7 +306,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 </Configs>  
 ```
 
-## Start layout for HoloLens
+#### Start layout for HoloLens
 
 If you use a [provisioning package](#set-up-kiosk-mode-by-using-a-provisioning-package) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Windows Holographic for Business, so you'll need to use a placeholder Start layout.
 
@@ -339,7 +340,7 @@ You will [create an XML file](#set-up-kiosk-mode-by-using-a-provisioning-package
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-### Start layout file for MDM (Intune and others)
+#### Start layout file for MDM (Intune and others)
 
 Save the following sample as an XML file. You can use this file when you configure the multi-app kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
@@ -365,66 +366,65 @@ Save the following sample as an XML file. You can use this file when you configu
 ### [PP] 2. Add the kiosk configuration XML file to a provisioning package
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
-2. Choose **Advanced provisioning**.
-3. Name your project, and click **Next**.
-4. Choose **Windows 10 Holographic** and click **Next**.
-5. Select **Finish**. The workspace for your package opens.
-6. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**.
-7. In the center pane, click **Browse** to locate and select the kiosk configuration XML file that you created.
+1. Select **Advanced provisioning**.
+1. Name your project, and then select **Next**.
+1. Select **Windows 10 Holographic**, and then select **Next**.
+1. Select **Finish**. The workspace for your package opens.
+1. Select **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
+1. In the center pane, select **Browse** to locate and select the kiosk configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](./images/multiappassignedaccesssettings.png)
 
-8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.  
-9. (**Optional**: If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
-10. On the **File** menu, select **Save.**
-11. On the **Export** menu, select **Provisioning package**.
-12. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
-13. On the **Provisioning package security** page, do not select **Enable package encryption** or provisioning will fail on HoloLens. You can choose to enable package signing.
-
-      - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
-
-14. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Configuration Designer uses the project folder as the output location. Optionally, you can click **Browse** to change the default output location.
-
-15. Click **Next**.
-
-16. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+1. **Optional**. (If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. By using this account, you can view the provisioning status and logs.  
+1. **Optional**. (If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. For **UserGroup**, select **Standard Users**.
+1. Select **File** > **Save**.
+1. Select **Export** > **Provisioning package**, and then set **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages that are applied to this device from other sources.
+1. Select **Next**.
+1. On the **Provisioning package security** page, select a security option.
+   > [!IMPORTANT]  
+   > If you select **Enable package signing**, you also have to select a valid certificate to use for signing the package. To do this, select **Browse** and select the certificate that you want to use to sign the package.
+   
+   > [!CAUTION]  
+   > Do not select **Enable package encryption**. On HoloLens devices, this setting causes provisioning to fail.
+1. Select **Next**.
+1. Specify the output location where you want the provisioning package to go when it's built. By default, Windows Configuration Designer uses the project folder as the output location. If you want to change the output location, select **Browse**. When finished, select **Next**.
+1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The build page displays the project information, and the progress bar indicates the build status.
 
 ### [PP] 3. Apply the provisioning package to HoloLens
 
-You can initially [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+The "Configure HoloLens by using a provisioning package" article provides detailed instructions for applying the provisioning package under the following circumstances:
 
-You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+- You can initially [apply a provisioning package to HoloLens during setup](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+- You can also [apply a provisioning package to HoloLens after setup](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
 
 ## Use the Windows Device Portal to set up a single-app kiosk
 
 To set up kiosk mode by using the Windows Device Portal, follow these steps.
 
-1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
+> [!IMPORTANT]
+> Kiosk mode is only available if the device has [Windows Holographic for Business](hololens1-upgrade-enterprise.md) installed.
 
-    > [!IMPORTANT]
-    > When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+1. [Set up the HoloLens device to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
+
+    > [!CAUTION]
+    > When you set up HoloLens to use the Device Portal, you have to enable **Developer Mode** on the device. **Developer Mode** on a device that has Windows Holographic for Business enables you to side-load apps. However, this setting creates a risk that a user can install apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** by using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider). [Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-2. On a PC, connect to the HoloLens using [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) or [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb).
+1. On a computer, connect to the HoloLens by using [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) or [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb).
 
-3. [Create a user name and password](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password) if this is the first time you connect to the Windows Device Portal, or enter the user name and password that you previously set up.
+1. Do one of the following:
+   - If you are connecting to the Windows Device Portal for the first time, [create a user name and password](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - Enter the user name and password that you previously set up.
 
     > [!TIP]
     > If you see a certificate error in the browser, follow [these troubleshooting steps](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate).
 
-4. In the Windows Device Portal, click **Kiosk Mode**.
+1. In the Windows Device Portal, select **Kiosk Mode**.
+
+1. Select **Enable Kiosk Mode**, select an app to run when the device starts, and then select **Save**.
 
     ![Kiosk Mode](images/kiosk.png)
-
-    > [!NOTE]
-    > The kiosk mode option will be available if the device has [Windows Holographic for Business](hololens1-upgrade-enterprise.md).
-
-5. Select **Enable Kiosk Mode**, select an app to run when the device starts, and then select **Save**.
-
-6. Reboot the HoloLens. If you still have your Device Portal page open you can use the **Power** option in the top right and click **Restart.**
-
-
-
+1. Restart HoloLens. If you still have your Device Portal page open, you can select select **Restart** at the top of the page.
 
 ## More information
 
