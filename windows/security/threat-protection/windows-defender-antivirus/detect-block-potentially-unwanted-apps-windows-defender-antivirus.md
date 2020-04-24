@@ -62,7 +62,7 @@ Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
 [configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
 
-Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains-preview) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
+Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
 
 ### Windows Defender Antivirus
 
