@@ -41,7 +41,7 @@ Potentially unwanted applications can increase the risk of your network being in
 
 ### Microsoft Edge
 
-The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Windows Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
+The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
 
 #### Enable PUA protection in Chromium-based Microsoft Edge
 
