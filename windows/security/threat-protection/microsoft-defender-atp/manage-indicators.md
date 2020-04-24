@@ -69,6 +69,7 @@ There are two ways you can create indicators for files:
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for files:
+
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be 4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later.
@@ -151,10 +152,8 @@ It's important to understand the following prerequisites prior to creating indic
 
 You can create indicators for certificates. Some common use cases include:
 
-- Scenarios when you need to deploy blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) but need to allow behaviors from signed applications by using the adding the certificate in the allow list.
+- Scenarios when you need to deploy blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md) but need to allow behaviors from signed applications by adding the certificate in the allow list.
 - Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
-- 
-
 
 
 ### Before you begin
@@ -162,8 +161,8 @@ You can create indicators for certificates. Some common use cases include:
 It's important to understand the following requirements prior to creating indicators for certifications:
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
-- Supported on machines on Windows 10, version 1703 or later.
 - The Antimalware client version must be  4.18.1901.x or later.
+- Supported on machines on Windows 10, version 1703 or later.
 - The virus and threat protection definitions must be up-to-date.
 
 >[!IMPORTANT]
