@@ -116,43 +116,89 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 
 ### Plan user and device groups
 
-In an MDM environment, you use user groups and device groups to manage device configurations and user access. For a full discussion of the roles of user groups and device groups in Intune, see [Assign user and device profiles in Microsoft Intune: User groups vs. device groups](https://docs.microsoft.com/intune/configuration/device-profile-assign).
+In an MDM environment, you use groups to manage device configurations and user access. 
 
-The kiosk configuration profile includes the **User logon type** setting. **User logon type** identifies the user (or group that contains the users) who can use the app (or apps) that you add. If a user signs in by using an account that is not included in the configuration profile, that user cannot use apps on the kiosk.  Similarly, if a device does not belong to a group that has an assigned kiosk configuration, that device does not provide a kiosk experience for any user. 
+The kiosk configuration profile includes the **User logon type** setting. **User logon type** identifies the user (or group that contains the users) who can use the app (or apps) that you add. If a user signs in by using an account that is not included in the configuration profile, that user cannot use apps on the kiosk.  
 
 > [!NOTE]  
 > The **User logon type** of a single-app kiosk specifies a single user account. This is the user context under which the kiosk runs. The **User logon type** of a multi-app kiosk can specify one or more user accounts or groups that can use the kiosk.
 
-In addition, you assign the configuration profile to a group. This group can be the same as that specified by **User logon type**, or a different group. These settings provide flexibility in how you manage user access and device behavior:
+Before you can deploy the kiosk configuration to a device, you have to *assign* the kiosk configuration profile to a group that contains the device or a user that can sign on to the device. This setting produces behavior such as the following.
 
-- To associate the kiosk configuration with the users who sign on to devices, assign the kiosk configuration profile to the group that contains the users.
-- To associate the kiosk configuration with specific devices, assign the kiosk configuration profile to a group that contains the devices (such groups can include dynamically-generated groups that automatically enroll devices that meet certain criteria).
+- If the device is a member of the assigned group, the kiosk configuration deploys to the device the first time that any user signs in on the device.  
+- If the device is not a member of the assigned group, but a user who is a member of that group signs in, the kiosk configuration deploys to the device at that time.
 
+For a full discussion of the effects of assigning configuration profiles in Intune, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
+**Example 1**
 
+You use a single group (Group 1) for both devices and users. One device and users A, B, and C are members of this group. You configure the kiosk configuration profile as follows:  
 
+- **User logon type**: Group 1
+- **Assigned group**: Group 1
+
+No matter which user signs on to the device first (and goes through the Out-of-Box Experience, or OOBE), the kiosk configuration deploys to the device. Users A, B, and C can all sign in to the device and get the kiosk experience.
+
+**Example 2**
+
+You use two groups that have the following members:
+
+- Group 1:  
+  - User A
+  - User B
+- Group 2:
+  - User A
+  - User B
+  - User C
+  - Device 1
+
+You configure the kiosk configuration profile as follows:
+
+- **User logon type**: Group 1
+- **Assigned group**: Group 2
+
+No matter which user signs on to the device first, the kiosk configuration deploys to the device. However, the user experiences differ as follows:  
+
+- Users A and B can sign in to the device, and they get the kiosk experience.
+- User C can sign in to the device, but does not get the kiosk experience. User C can use the device as a typical non-kiosk device.
+
+**Example 3**
+
+You contract devices out to two different vendors who need different kiosk experiences. Both vendors have users, and you want all of the users to have access to kiosks from both their own vendor and the other vendor. You configure groups as follows:
+
+- Device Group 1:
+  - Device 1 (Vendor 1)
+  - Device 2 (Vendor 1)
+
+- Device Group 2:
+  - Device 3 (Vendor 2)
+  - Device 4 (Vendor 2)
+
+- User Group:
+  - User A (Vendor 1)
+  - User B (Vendor 2)
+
+You create two kiosk configuration profiles that have the following settings:
+
+- Kiosk Profile 1:
+   - **User logon type**: User Group
+   - **Assigned group**: Device Group 1
+
+- Kiosk Profile 2:
+   - **User logon type**: User Group
+   - **Assigned group**: Device Group 2
+
+These configurations produce the following results:
+
+- When any user signs on to Device 1 or Device 2, Intune deploys Kiosk Profile 1 to that device.
+- When any user signs on to Device 3 or Device 4, Intune deploys Kiosk Profile 2 to that device.
+- User A and user B can sign in to any of the four devices. If they sign in to Device 1 or Device 2, they see Vendor 1's kiosk experience. If they sign in to Device 3 or Device 4, they see Vendor 2's kiosk experience.
 
 #### Profile conflicts
 
 If two or more kiosk configuration profiles target the same device, they conflict. In the case of Intune-managed devices, Intune does not apply any of the conflicting profiles.
 
 Other types of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
-
-
-
-
-#### Examples of how to use groups
-
-- You use a single group for both devices and users. One device and users A, B, and C are members of this group. No matter which user signs on to the device first (and goes through the Out-of-Box Experience, or OOBE), the kiosk configuration deploys to the device. Users A, B, and C can all sign in to the device and get the kiosk experience.
-
-- You use multiple groups. Users A, B, and C are members of Group 1. The HoloLens device is also a member of Group 1. Users B and C are also members of Group 2 (user A is not a member). No matter which user signs on to the device first, the kiosk configuration deploys to the device. However, after that the user experiences differ as follows:  
-
-  - Users B and C can sign in to the device, and they get the kiosk experience.
-  - User A can sign in to the device, but does not get the kiosk experience. User A can use the device as a typical non-kiosk device.
-
-- You contract devices out to two different vendors who need different kiosk experiences. Each vendor's devices belong to a unique device group. You create a different kiosk configuration profile for each vendor, and assign each vendor's profile to its device group.  
-   
-  You use a single user group that includes users from both vendors, and you assign that group to both profiles. As a result, any user can sign in to any device and get a kiosk experience. The specific kiosk experience the user gets depends on the vendor that is associated with the device.
 
 ### Select a deployment method
 
