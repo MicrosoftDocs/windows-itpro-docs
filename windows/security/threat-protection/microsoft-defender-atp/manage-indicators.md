@@ -151,8 +151,11 @@ It's important to understand the following prerequisites prior to creating indic
 
 You can create indicators for certificates. Some common use cases include:
 
-- Deploying blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) but allow behaviors from signed applications using certificate whitelisting.
-- Blocking the use of a specific signed application across your organization. Using the certificate 'block' indicator, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
+- Scenarios when you need to deploy blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) but need to allow behaviors from signed applications by using the adding the certificate in the allow list.
+- Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
+- 
+
+
 
 ### Before you begin
 
@@ -160,9 +163,8 @@ It's important to understand the following requirements prior to creating indica
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - Supported on machines on Windows 10, version 1703 or later.
-- The Antimalware client version must be  or later.
-- The Engine version must be x or later.
-- This feature currently supports entering … or … 
+- The Antimalware client version must be  4.18.1901.x or later.
+- The virus and threat protection definitions must be up-to-date.
 
 >[!IMPORTANT]
 > - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it’s trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
