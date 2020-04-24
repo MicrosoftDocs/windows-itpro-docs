@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.date: 4/24/2020
 ---
 
-# Review alerts in Advanced Threat Protection
+# Review alerts in Microsoft Defender Advanced Threat Protection
 
 **Applies to:**
 
