@@ -82,7 +82,7 @@ Microsoft Defender SmartScreen can be configured to warn users from going to a p
 ## Related topics
 - [Threat protection](../index.md)
 
-- [Microsoft Defender SmartScreen overview](windows-defender-smartscreen-overview.md)
+- [Microsoft Defender SmartScreen overview](microsoft-defender-smartscreen-overview.md)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
