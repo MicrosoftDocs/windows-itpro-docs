@@ -20,7 +20,7 @@ ms.topic: article
 
 The following table describes topics that address common User State Migration Tool (USMT) 10.0 issues and questions. These topics describe tools that you can use to troubleshoot issues that arise during your migration.
 
-## In This Section
+## In this section
 
 
 <table>

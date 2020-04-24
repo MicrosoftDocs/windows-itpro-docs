@@ -18,7 +18,7 @@ ms.topic: article
 # User State Migration Tool (USMT) How-to topics
 The following table lists topics that describe how to use User State Migration Tool (USMT) 10.0 to perform specific tasks.
 
-## In This Section
+## In this section
 
 |Topic |Description|
 |------|-----------|

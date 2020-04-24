@@ -19,7 +19,7 @@ ms.topic: article
 # Manage Product Keys
 
 This section describes how to add and remove a product key from the Volume Activation Management Tool (VAMT). After you add a product key to VAMT, you can install that product key on a product or products you select in the VAMT database.
-## In this Section
+## In this section
 
 |Topic |Description |
 |------|------------|

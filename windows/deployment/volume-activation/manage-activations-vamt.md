@@ -20,7 +20,7 @@ ms.topic: article
 
 This section describes how to activate a client computer, by using a variety of activation methods.
 
-## In this Section
+## In this section
 
 |Topic |Description |
 |------|------------|

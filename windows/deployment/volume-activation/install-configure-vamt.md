@@ -21,7 +21,7 @@ ms.topic: article
 
 This section describes how to install and configure the Volume Activation Management Tool (VAMT).
 
-## In this Section
+## In this section
 
 |Topic |Description |
 |------|------------|

@@ -28,7 +28,7 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 ![VAMT firewall configuration for multiple subnets](images/dep-win8-l-vamt-makindependentactivationscenario.jpg)
 
-## In This Topic
+## In this topic
 -   [Install and start VAMT on a networked host computer](#bkmk-partone)
 -   [Configure the Windows Management Instrumentation firewall exception on target computers](#bkmk-parttwo)
 -   [Connect to VAMT database](#bkmk-partthree)

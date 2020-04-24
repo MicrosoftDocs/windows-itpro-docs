@@ -23,7 +23,7 @@ When you migrate files and settings during a typical PC-refresh migration, the u
 
 -   All of the files being migrated.
 
--   The user’s settings.
+-   The user's settings.
 
 -   A catalog file that contains metadata for all files in the migration store.
 
@@ -37,7 +37,7 @@ When you use the **/verify** option, you can specify what type of information to
 
 -   **Failure only**: Displays only the files that are corrupted.
 
-## In This Topic
+## In this topic
 
 
 The following sections demonstrate how to run the **UsmtUtils** command with the **/verify** option, and how to specify the information to display in the UsmtUtils log file.

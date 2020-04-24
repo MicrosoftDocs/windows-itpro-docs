@@ -20,7 +20,7 @@ ms.topic: article
 
 This topic describes the XML helper functions.
 
-## In This Topic
+## In this topic
 
 
 [General XML Guidelines](#bkmk-general)

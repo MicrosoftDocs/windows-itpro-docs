@@ -25,8 +25,6 @@ ms.custom: seo-marvel-apr2020
 > * The Perspectives feature of Update Compliance will also be removed on March 31, 2020 in favor of a better experience. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
 
 
-## Introduction
-
 Update Compliance enables organizations to:
 
 * Monitor security, quality, and feature updates for Windows 10 Professional, Education, and Enterprise editions.

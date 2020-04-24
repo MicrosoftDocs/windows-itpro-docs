@@ -22,8 +22,6 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10 Mobile
 
-## Summary
-
 This article describes how system administrators can upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM). 
 
 >[!IMPORTANT]

@@ -20,7 +20,7 @@ ms.topic: article
 
 This section contains topics that you can use to work with and to customize the migration XML files.
 
-## In This Section
+## In this section
 
 
 <table>

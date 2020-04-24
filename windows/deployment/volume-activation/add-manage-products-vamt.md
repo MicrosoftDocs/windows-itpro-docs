@@ -20,7 +20,7 @@ ms.topic: article
 
 This section describes how to add client computers into the Volume Activation Management Tool (VAMT). After the computers are added, you can manage the products that are installed on your network.
 
-## In this Section
+## In this section
 
 |Topic |Description |
 |------|------------|
