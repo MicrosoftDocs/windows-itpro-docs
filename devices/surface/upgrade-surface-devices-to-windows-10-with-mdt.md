@@ -40,5 +40,5 @@ ms.date: 04/24/2020
 
 In addition to the traditional deployment method of reimaging devices, administrators who want to upgrade Surface devices that are running Windows 8.1 or Windows 10 have the option of deploying upgrades. By performing an upgrade deployment, Windows 10 can be applied to devices without removing users, apps, or configuration. The users of the deployed devices can simply continue using the devices with the same apps and settings that they used prior to the upgrade. 
 
-For the latest information about upgrading surface devices using MDT, refer to [Perform an in-place upgrade to Windows 10 with MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)
+For the latest information about upgrading surface devices using MDT, refer to [Perform an in-place upgrade to Windows 10 with MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
 
