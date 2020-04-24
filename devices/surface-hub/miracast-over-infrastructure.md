@@ -55,5 +55,5 @@ It is important to note that Miracast over Infrastructure is not a replacement f
 The **InBoxApps/WirelessProjection/PinRequired** setting in the [SurfaceHub configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) is not required for Miracast over Infrastructure. This is because Miracast over Infrastructure only works when both devices are connected to the same enterprise network. This removes the security restriction that was previously missing from Miracast. We recommend that you continue using this setting (if you used it previously) as Miracast will fall back to regular Miracast if the infrastructure connection does not work. 
 
 ## FAQ
-**Why do I still need Wi-Fi to use Miracast over infrastructure?**
+**Why do I still need Wi-Fi to use Miracast over infrastructure?**<br>
 Discovery requests to identify Miracast receivers can only occur through the Wi-Fi adapter. Once the receivers have been identified, Windows 10 can then attempt the connection to the network.
