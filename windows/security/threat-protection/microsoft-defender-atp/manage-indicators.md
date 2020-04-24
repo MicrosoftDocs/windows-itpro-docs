@@ -158,7 +158,7 @@ You can create indicators for certificates. Some common use cases include:
 
 ### Before you begin
 
-It's important to understand the following requirements prior to creating indicators for certifications:
+It's important to understand the following requirements prior to creating indicators for certificates:
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
