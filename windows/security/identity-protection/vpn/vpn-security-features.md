@@ -67,7 +67,7 @@ There can be many sets of rules which are linked by OR. Within each set, there c
 For example, an admin could define rules that specify:
 
 - The Contoso HR App must be allowed to go through the VPN and only access port 4545.
-- The Contoso finance apps is allowed to go over the VPN and only access the Remote IP ranges of 10.10.0.40 - 10.10.0.201 on port 5889.
+- The Contoso finance apps are allowed to go over the VPN and only access the Remote IP ranges of 10.10.0.40 - 10.10.0.201 on port 5889.
 - All other apps on the device should be able to access only ports 80 or 443.
 
 ## Configure traffic filters
