@@ -97,6 +97,12 @@ The arrow below "score trend" helps you determine whether this event potentially
 
 ![Event timeline page](images/tvm-event-timeline-flyout500.png)
 
+From there, select **Go to related security recommendation** to go to the [security recommendations page](tvm-security-recommendation.md) and the recommendation that will address the new software vulnerability. After reading the description and vulnerability details in the security recommendation, you can [submit a remediation request](tvm-security-recommendation.md#request-remediation), and track the request in the [remediation page](tvm-remediation.md).  
+
+## View Event timelines in software pages
+
+tvm-software-inventory#software-pages
+
 ## Related topics
 
 - [Supported operating systems and platforms](tvm-supported-os.md)

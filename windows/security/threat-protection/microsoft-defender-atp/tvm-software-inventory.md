@@ -50,6 +50,12 @@ Select the software that you want to investigate and a flyout panel opens up wit
 
 ## Software pages
 
+You can view software pages a few different ways:
+
+- Software inventory page > Select a software name > Select **Open software page** in the flyout
+- [Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout
+- 
+
 Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Open software page** (see image in the previous section). A full page will appear with all the details of a specific software and the following information:
 
 - Side panel with vendor information, prevalence of the software in the organization (including number of machines it is installed on, and exposed machines that are not patched), whether and exploit is available, and impact to your exposure score
