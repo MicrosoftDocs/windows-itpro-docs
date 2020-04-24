@@ -1,5 +1,5 @@
 ---
-title: Set up HoloLens as a kiosk for specific applications
+title: Set up HoloLens as a kiosk
 description: Use a kiosk configuration to lock down the apps on HoloLens. 
 ms.prod: hololens
 ms.sitesec: library
@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 03/12/2020
+ms.date: 04/27/2020
 ms.custom: 
 - CI 115262
 - CI 111456
@@ -208,7 +208,7 @@ Other types of profiles and policies, such as device restrictions that are not r
 
 You can select one of three methods to deploy kiosk configurations:
 
-- [Microsoft Intune or other mobile device management (MDM) service](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm)
+- [Microsoft Intune or other mobile device management (MDM) service](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Provisioning package](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
@@ -230,7 +230,7 @@ The following table lists the capabilities and benefits of each of the three dep
 |Deployment speed            | Fastest       | Fast                 | Slow |
 |Deploy at scale | Not recommended    | Not recommended        | Recommended |
 
-## Set up kiosk mode by using Microsoft Intune or MDM
+## Use Microsoft Intune or other MDM to set up a single-app or multi-app kiosk
 
 To set up kiosk mode by using Microsoft Intune or another MDM system, follow these steps.
 
@@ -262,6 +262,7 @@ For more information about enrolling the devices, see [Enroll HoloLens in MDM](h
 1. To start configuring the kiosk, select **Add**.
 
 Your next steps differ depending on the type of kiosk that you want. For further information, select one of the following:  
+
 - [Single-app kiosk](#mdmconfigsingle)
 - [Multi-app kiosk](#mdmconfigmulti)
 
@@ -361,7 +362,7 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 In the [**Configs** section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
 
-To enable the **Guest** account, add the following snippet to your kiosk configuration XML :
+To enable the **Guest** account, add the following snippet to your kiosk configuration XML:
 
 ```xml
 <Configs>
@@ -380,7 +381,7 @@ If you use a [provisioning package](##use-a-provisioning-package-to-set-up-a-sin
 > Because a single-app kiosk launches the kiosk app when a user signs in, it does not use a Start menu and does not need a Start layout.
 
 > [!NOTE]  
-> If you use [MDM](#set-up-kiosk-mode-by-using-microsoft-intune-or-mdm) to set up a multi-app kiosk, you can optionally use a Start layout. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
+> If you use [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) to set up a multi-app kiosk, you can optionally use a Start layout. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
 
 For the Start layout, add the following **StartLayout** section to the kiosk provisioning XML file:
 
