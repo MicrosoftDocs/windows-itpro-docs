@@ -116,15 +116,21 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 
 ### Plan user and device groups
 
-In an MDM environment, you use user groups and device groups to manage device configurations and user access. For a full discussion of the roles of user groups and device groups in Intune, see [Assign user and device profiles in Microsoft Intune: User groups vs. device groups](https://docs.microsoft.com/intune/configuration/device-profile-assign). Because these groups are security groups (for example, Azure Active Directory, or Azure AD, security groups) you can use a single group for devices and users. Separate groups are typically easier to manage.
+In an MDM environment, you use user groups and device groups to manage device configurations and user access. For a full discussion of the roles of user groups and device groups in Intune, see [Assign user and device profiles in Microsoft Intune: User groups vs. device groups](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
-In short, you assign a user group to a kiosk configuration profile, and you assign the profile to a device group. If a user signs in by using an account that is not included in the appropriate group, that user does not have a kiosk experience. Similarly, if a device does not belong to a device group that has an assigned kiosk configuration, that device does not provide a kiosk experience for any user.
+The kiosk configuration profile includes the **User logon type** setting. **User logon type** identifies the user (or group that contains the users) who can use the app (or apps) that you add. If a user signs in by using an account that is not included in the configuration profile, that user cannot use apps on the kiosk.  Similarly, if a device does not belong to a group that has an assigned kiosk configuration, that device does not provide a kiosk experience for any user. 
 
-#### User-dependent experiences
+> [!NOTE]  
+> The **User logon type** of a single-app kiosk specifies a single user account. This is the user context under which the kiosk runs. The **User logon type** of a multi-app kiosk can specify one or more user accounts or groups that can use the kiosk.
 
-When you configure a HoloLens device as a single-app kiosk, all of the users who sign on to that device see the kiosk experience. Users who do not belong to an appropriately configured user group cannot use the device.
+In addition, you assign the configuration profile to a group. This group can be the same as that specified by **User logon type**, or a different group. These settings provide flexibility in how you manage user access and device behavior:
 
-When you configure a HoloLens device as a multi-app kiosk, the device can provide a kiosk experience to one group of users and a non-kiosk experience to another group of users. In other words, it can function as a kiosk or as a normal HoloLens device, depending on who signs in.
+- To associate the kiosk configuration with the users who sign on to devices, assign the kiosk configuration profile to the group that contains the users.
+- To associate the kiosk configuration with specific devices, assign the kiosk configuration profile to a group that contains the devices (such groups can include dynamically-generated groups that automatically enroll devices that meet certain criteria).
+
+
+
+
 
 #### Profile conflicts
 
@@ -132,14 +138,17 @@ If two or more kiosk configuration profiles target the same device, they conflic
 
 Other types of profiles and policies, such as device restrictions that are not related to the kiosk configuration profile, do not conflict with the kiosk configuration profile.
 
+
+
+
 #### Examples of how to use groups
 
 - You use a single group for both devices and users. One device and users A, B, and C are members of this group. No matter which user signs on to the device first (and goes through the Out-of-Box Experience, or OOBE), the kiosk configuration deploys to the device. Users A, B, and C can all sign in to the device and get the kiosk experience.
 
-- You use a device group and a user group. Users A, B, and C are members of the device group. Users B and C are also members of the user group (user A is not a member). No matter which user signs on to the device first, the kiosk configuration deploys to the device. However, after that the user experiences differ as follows:  
+- You use multiple groups. Users A, B, and C are members of Group 1. The HoloLens device is also a member of Group 1. Users B and C are also members of Group 2 (user A is not a member). No matter which user signs on to the device first, the kiosk configuration deploys to the device. However, after that the user experiences differ as follows:  
 
   - Users B and C can sign in to the device, and they get the kiosk experience.
-  - User A can sign in to the device, but does not get the kiosk experience. If the device is a multi-app kiosk, user A can use the device as a typical non-kiosk device.
+  - User A can sign in to the device, but does not get the kiosk experience. User A can use the device as a typical non-kiosk device.
 
 - You contract devices out to two different vendors who need different kiosk experiences. Each vendor's devices belong to a unique device group. You create a different kiosk configuration profile for each vendor, and assign each vendor's profile to its device group.  
    
@@ -180,6 +189,7 @@ To set up kiosk mode by using Microsoft Intune or another MDM system, follow the
    - [Configure the settings for a single-app kiosk](#mdmconfigsingle).
    - [Configure the settings for a multi-app kiosk](#mdmconfigmulti).
 1. [Assign the kiosk configuration profile to the device group](#mdmassign).
+1. [Prepare to enroll the devices](#mdmenroll)
 1. Deploy the devices.
    - [Deploy a single-app kiosk](#mdmsingledeploy).
    - [Deploy a multi-app kiosk](#mdmmultideploy).
@@ -204,8 +214,7 @@ This section summarizes the settings that a single-app kiosk requires. For more 
 
 Configure the following settings in the kiosk configuration profile:
 
-- **Local user account**. You'll need to enter either the name of your local user, or your Microsoft Account you intend to be logged onto the device.
-- **User logon type**.** Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account that is associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
+- **User logon type** Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account that is associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
 - **Application type**. Select **Store app**, and then select an app from the list.
 
 ### <a id="mdmconfigmulti"></a>[MDM] 2. Configure the settings for a multi-app kiosk
@@ -231,15 +240,15 @@ Configure the following settings in the kiosk configuration profile:
 
 ### <a id="mdmassign"></a>[MDM] 3. Assign the kiosk configuration profile to the device group
 
-Once you have created and saved your Kiosk mode policy you must assign it to the group(s) that you want it deployed to, or your devices will never receive it.
+Use the **Assignments** page of the kiosk configuration profile to assign the profile to one or more device groups.
 
-Click assignments and add the group(s) that you want the Kiosk mode policy deployed to.
+### <a id="mdmenroll"></a>[MDM] 4. Prepare to enroll the devices
 
-### Deploy the devices
+You can configure your MDM system to enroll HoloLens devices automatically when the user first signs in, or have users enroll devices manually. For more information about enrolling the devices, see [Enroll HoloLens in MDM](hololens-enroll-mdm.md) and [Intune enrollment methods for Windows devices](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods).
 
-Now it's time to set up the device to both receive the policy and log into the account the policy has enabled for kiosk mode.
+### <a id="mdmsingledeploy"></a>[MDM] 4. Deploy a single-app kiosk
 
-#### <a id="mdmsingledeploy"></a>[MDM] 4. Deploy a single-app kiosk
+When you use an MDM system, you can enroll the device in MDM during OOBE. If appropriate, provide the information that's required for enrollment to the users for the OOBE process.
 
 Since Single-app kiosk mode targets a local user or Microsoft account you need to take a few extra steps to [enroll the HoloLens in MDM](hololens-enroll-mdm.md), but sign in will be easy and can be automatic.
 
