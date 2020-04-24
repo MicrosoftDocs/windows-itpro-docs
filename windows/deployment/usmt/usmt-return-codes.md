@@ -22,7 +22,7 @@ This topic describes User State Migration Tool (USMT) 10.0 return codes and err
 
 Understanding the requirements for running USMT can help minimize errors in your USMT migrations. For more information, see [USMT Requirements](usmt-requirements.md).
 
-## In This Topic
+## In this topic
 
 
 [USMT Return Codes](#bkmk-returncodes)
@@ -53,7 +53,7 @@ As a best practice, we recommend that you set verbosity level to 5, **/v**<em>:5
 ## <a href="" id="bkmk-errormessages"></a>USMT Error Messages
 
 
-Error messages provide more detailed information about the migration problem than the associated return code. For example, the **ScanState**, **LoadState**, or **USMTUtils** tool might return a code of "11” (for “USMT\_INVALID\_PARAMETERS") and a related error message that reads "/key and /keyfile both specified". The error message is displayed at the command prompt and is identified in the **ScanState**, **LoadState**, or **USMTUtils** log files to help you determine why the return code was received.
+Error messages provide more detailed information about the migration problem than the associated return code. For example, the **ScanState**, **LoadState**, or **USMTUtils** tool might return a code of "11" (for "USMT\_INVALID\_PARAMETERS") and a related error message that reads "/key and /keyfile both specified". The error message is displayed at the command prompt and is identified in the **ScanState**, **LoadState**, or **USMTUtils** log files to help you determine why the return code was received.
 
 You can obtain more information about any listed Windows application programming interface (API) system error codes by typing **net helpmsg** on the command line and, then typing the error code number. For more information about System Error Codes, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=147060).
 

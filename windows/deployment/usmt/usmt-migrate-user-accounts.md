@@ -20,7 +20,7 @@ ms.topic: article
 
 By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the User options. You cannot specify users in the migration XML files or by using the Config.xml file.
 
-## In this Topic
+## In this topic
 
 
 -   [To migrate all user accounts and user settings](#bkmk-migrateall)

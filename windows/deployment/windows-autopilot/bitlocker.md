@@ -14,6 +14,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 
@@ -49,6 +50,6 @@ Note: It is also recommended to set Windows Encryption -> Windows Settings -> En
 
 Windows 10, version 1809 or later.
 
-## See also
+## Related topics
 
 [Bitlocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)

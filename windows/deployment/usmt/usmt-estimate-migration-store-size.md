@@ -20,7 +20,7 @@ ms.topic: article
 
 The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. You can estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure. You can also calculate the disk space requirements using the ScanState tool.
 
-## In This Topic
+## In this topic
 
 
 -   [Hard Disk Space Requirements](#bkmk-spacereqs). Describes the disk space requirements for the migration store and other considerations on the source and destination computers.

@@ -20,7 +20,7 @@ ms.topic: article
 
 This section describes how to save, import, export, and merge a Computer Information List (CILX) file using the Volume Activation Management Tool (VAMT).
 
-## In this Section
+## In this section
 |Topic |Description |
 |------|------------|
 |[Import and Export VAMT Data](import-export-vamt-data.md) |Describes how to import and export VAMT data. |

@@ -18,7 +18,7 @@ ms.topic: article
 # User State Migration Toolkit (USMT) Reference
 
 
-## In This Section
+## In this section
 
 
 <table>

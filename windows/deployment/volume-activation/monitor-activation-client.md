@@ -14,7 +14,7 @@ audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
-ms.custom: seo-marvel-mar2020
+ms.custom: seo-marvel-apr2020
 ---
 
 # Monitor activation
@@ -41,6 +41,6 @@ You can monitor the success of the activation process for a computer running Win
 - See [Troubleshooting activation error codes](https://docs.microsoft.com/windows-server/get-started/activation-error-codes) for information about troubleshooting procedures for Multiple Activation Key (MAK) or the Key Management Service (KMS).
 - The VAMT provides a single site from which to manage and monitor volume activations. This is explained in the next section.
 
-## See also
+## Related topics
 
 [Volume Activation for Windows 10](volume-activation-windows-10.md)

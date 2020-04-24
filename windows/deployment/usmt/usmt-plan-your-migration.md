@@ -24,7 +24,7 @@ In migration planning, both organizations and individuals must first identify wh
 
 One of the most important requirements for migrating settings and data is restoring only the information that the destination computer requires. Although the data that you capture on the source computer may be more comprehensive than the restoration data for backup purposes, restoring data or settings for applications that you will not install on the destination system is redundant. This can also introduce instability in a newly deployed computer.
 
-## In This Section
+## In this section
 
 
 <table>

@@ -18,7 +18,7 @@ ms.topic: article
 # Customize USMT XML Files
 
 
-## In This Topic
+## In this topic
 
 
 [Overview](#bkmk-overview)
