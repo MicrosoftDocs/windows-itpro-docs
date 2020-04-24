@@ -8,7 +8,7 @@ ms.pagetype: security, networking
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-ms.reviewer:
+ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ---
@@ -34,12 +34,12 @@ A VPN profile configured with LockDown secures the device to only allow network 
 > [!NOTE]
 > For built-in VPN, LockDown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
 
-Deploy this feature with caution as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
+Deploy this feature with caution, as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
 
 
 ## Windows Information Protection (WIP) integration with VPN
 
-Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
+Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
 
 The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
@@ -59,8 +59,8 @@ Additionally, when connecting with WIP, the admin does not have to specify AppTr
 
 Traffic Filters give enterprises the ability to decide what traffic is allowed into the corporate network based on policy. Network admins can use Traffic Filters to effectively add interface specific firewall rules on the VPN Interface. There are two types of Traffic Filter rules:
 
-- App-based rules. With app-based rules, a list of applications can be marked such that only traffic originating from these apps is allowed to go over the VPN interface.
-- Traffic-based rules. Traffic-based rules are 5-tuple policies (ports, addresses, protocol) that can be specified such that only traffic matching these rules is allowed to go over the VPN interface.
+- App-based rules. With app-based rules, a list of applications can be marked to allow only traffic originating from these apps to go over the VPN interface.
+- Traffic-based rules. Traffic-based rules are 5-tuple policies (ports, addresses, protocol) that can be specified to allow only traffic matching these rules to go over the VPN interface.
 
 There can be many sets of rules which are linked by OR. Within each set, there can be app-based rules and traffic-based rules; all the properties within the set will be linked by AND. In addition, these rules can be applied at a per-app level or a per-device level.
 
@@ -74,7 +74,7 @@ For example, an admin could define rules that specify:
 
 See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) for XML configuration.
 
-The following image shows the interface to configure traffic rules in a VPN Profile configuration policy using Microsoft Intune.
+The following image shows the interface to configure traffic rules in a VPN Profile configuration policy, using Microsoft Intune.
 
 ![Add a traffic rule](images/vpn-traffic-rules.png)
 
