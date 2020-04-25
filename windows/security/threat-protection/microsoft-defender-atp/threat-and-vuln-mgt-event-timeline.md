@@ -60,20 +60,17 @@ Select **Custom range** to change the date range to another custom one, or a pre
 
 ## Event timeline overview
 
-On the Event timeline page, you can view the date, event, related software component, number of impacted machines for when the event occurred, and type. You can also customize columns and filter by type or percent of impacted machines.
+On the Event timeline page, you can view the all the necesssary info related to an event. 
+
+Features:
+
+- Customize columns
+- Filter by event type or percent of impacted machines
+- View 30, 50, or 100 items per page
 
 The two large numbers at the top of the page show the number of new vulnerabilities and exploitable vulnerabilities, not events. Some events can have multiple vulnerabilities, and some vulnerabilities can have multiple events.
 
-![Event timeline page](images/tvm-event-timeline-overview.png)
-
-### Icons
-
-The following icons show up next to events:
-
-- ![bug icon](images/tvm_bug_icon.png) New public exploit
-- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
-- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
-- ![bug icon](images/bug-caution-icon2.png) Exploit verified
+![Event timeline page](images/tvm-event-timeline-overview-mixed-type.png)
 
 ### Columns
 
@@ -89,6 +86,15 @@ The following icons show up next to events:
     - New vulnerability
 - **Score trend**: exposure score trend
 
+### Icons
+
+The following icons show up next to events:
+
+- ![bug icon](images/tvm_bug_icon.png) New public exploit
+- ![report warning icon](images/report-warning-icon.png) New vulnerability was published
+- ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
+- ![bug icon](images/bug-caution-icon2.png) Exploit verified
+
 ### Drill down to a specific event
 
 Once you select an event, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
@@ -101,7 +107,11 @@ From there, select **Go to related security recommendation** to go to the [secur
 
 ## View Event timelines in software pages
 
-tvm-software-inventory#software-pages
+To open a software page, select an event > select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout. [Learn more about software pages](tvm-software-inventory.md#software-pages)
+
+A full page will appear with all the details of a specific software, including an event timeline tab. From there you can view all the events related to that software, along with security recommendations, discovered vulnerabilities, installed machines, and version distribution.
+
+![Event timeline page](images/tvm-event-timeline-software-pages.png)
 
 ## Related topics
 
