@@ -101,7 +101,7 @@ Once you select an event, a flyout will appear listing the details and current C
 
 The arrow below "score trend" helps you determine whether this event potentially raised or lowered your organizational exposure score. Higher exposure score means machines are more vulnerable to exploitation.
 
-![Event timeline page](images/tvm-event-timeline-flyout500.png)
+![Event timeline flyout](images/tvm-event-timeline-flyout500.png)
 
 From there, select **Go to related security recommendation** to go to the [security recommendations page](tvm-security-recommendation.md) and the recommendation that will address the new software vulnerability. After reading the description and vulnerability details in the security recommendation, you can [submit a remediation request](tvm-security-recommendation.md#request-remediation), and track the request in the [remediation page](tvm-remediation.md).  
 
@@ -111,7 +111,7 @@ To open a software page, select an event > select the hyperlinked software name 
 
 A full page will appear with all the details of a specific software, including an event timeline tab. From there you can view all the events related to that software, along with security recommendations, discovered vulnerabilities, installed machines, and version distribution.
 
-![Event timeline page](images/tvm-event-timeline-software-pages.png)
+![Software page with an Event timeline tab](images/tvm-event-timeline-software-pages.png)
 
 ## Related topics
 
