@@ -2,7 +2,7 @@
 title: ProfileXML XSD
 description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
 ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -14,11 +14,9 @@ ms.date: 02/05/2018
 
 # ProfileXML XSD
 
-
 Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
 
 ## XSD for the VPN profile
-
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -51,15 +49,15 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
           </xs:complexType>
         </xs:element>
 
-                <xs:element name="APNBinding" minOccurs="0" maxOccurs="1">
+        <xs:element name="APNBinding" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ProviderId" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="AccessPointName" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                      <xs:element name="UserName" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                      <xs:element name="Password" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                      <xs:element name="IsCompressionEnabled" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
-                      <xs:element name="AuthenticationType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="UserName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Password" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="IsCompressionEnabled" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="AuthenticationType" type="xs:string" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -89,7 +87,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AppTrigger" minOccurs="0" maxOccurs="1">
+        <xs:element name="AppTrigger" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="App" minOccurs="1" maxOccurs="1">
@@ -115,7 +113,13 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
         <xs:element name="TrafficFilter" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="App" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="App" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Id" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
               <xs:element name="Claims" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="Protocol" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="LocalPortRanges" type="xs:string" minOccurs="0" maxOccurs="1"/>
@@ -148,23 +152,25 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               </xs:element>
               <xs:element name="Authentication" minOccurs="1" maxOccurs="1">
                 <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="UserMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  <xs:choice>
+                    <xs:sequence>
+                      <xs:element name="UserMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+                      <xs:element name="Eap" minOccurs="1" maxOccurs="1">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="Configuration" minOccurs="1" maxOccurs="1">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element xmlns:q1="http://www.microsoft.com/provisioning/EapHostConfig" ref="q1:EapHostConfig" />
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
                     <xs:element name="MachineMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
-                    <xs:element name="Eap" minOccurs="1" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Configuration" minOccurs="1" maxOccurs="1">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element xmlns:q1="http://www.microsoft.com/provisioning/EapHostConfig" ref="q1:EapHostConfig" />
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
+                  </xs:choice>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -175,6 +181,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             <xs:sequence>
               <xs:element name="Address" type="xs:string" minOccurs="1" maxOccurs="1"/>
               <xs:element name="PrefixSize" type="xs:unsignedByte" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="ExclusionRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -186,17 +193,79 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 
 ## Native profile example
 
+```xml
+<VPNProfile>
+  <EdpModeId>corp.contoso.com</EdpModeId>
+  <RememberCredentials>true</RememberCredentials>
+  <AlwaysOn>false</AlwaysOn>
+  <DnsSuffix>corp.contoso.com</DnsSuffix>
+  <TrustedNetworkDetection>contoso.com</TrustedNetworkDetection>
 
-```
-<VPNProfile>  
-  <NativeProfile>  
-    <Servers>testServer.VPN.com</Servers>  
-    <NativeProtocolType>IKEv2</NativeProtocolType>  
-    <Authentication>  
-      <UserMethod>Eap</UserMethod>  
-      <MachineMethod>Eap</MachineMethod>  
-      <Eap>  
-       <Configuration>
+  <Proxy>
+    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
+    <Manual>
+      <Server>HelloServer</Server>
+    </Manual>
+  </Proxy>
+
+  <DeviceCompliance>
+    <Enabled>true</Enabled>
+    <Sso>
+      <Enabled>true</Enabled>
+      <Eku>This is my Eku</Eku>
+      <IssuerHash>This is my issuer hash</IssuerHash>
+    </Sso>
+  </DeviceCompliance>
+
+  <AppTrigger>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+  </AppTrigger>
+  <AppTrigger>
+    <App>
+      <Id>C:\windows\system32\ping.exe</Id>
+    </App>
+  </AppTrigger>
+
+  <DomainNameInformation>
+    <DomainName>hrsite.corporate.contoso.com</DomainName>
+    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>
+    <WebProxyServers>5.5.5.5</WebProxyServers>
+    <AutoTrigger>true</AutoTrigger>
+  </DomainNameInformation>
+  <DomainNameInformation>
+    <DomainName>.corp.contoso.com</DomainName>
+    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>
+    <WebProxyServers>100.100.100.100</WebProxyServers>
+  </DomainNameInformation>
+
+  <TrafficFilter>
+    <App>
+      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+    </App>
+    <Protocol>6</Protocol>
+    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>
+    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>
+    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
+    <RoutingPolicyType>ForceTunnel</RoutingPolicyType>
+  </TrafficFilter>
+  <TrafficFilter>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
+  </TrafficFilter>
+
+  <NativeProfile>
+    <Servers>testServer.VPN.com</Servers>
+    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>
+    <NativeProtocolType>IKEv2</NativeProtocolType>
+    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>
+    <Authentication>
+      <UserMethod>Eap</UserMethod>
+      <Eap>
+        <Configuration>
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
               <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type>
@@ -261,178 +330,110 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             </Config>
           </EapHostConfig>
         </Configuration>
-      </Eap>  
-    </Authentication>  
-    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>  
-    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>  
-  </NativeProfile>  
-  
-  <Route>  
-    <Address>192.168.0.0</Address>  
-    <PrefixSize>24</PrefixSize>  
-  </Route>  
-  <Route>  
-    <Address>10.10.0.0</Address>  
-    <PrefixSize>16</PrefixSize>  
-  </Route>  
-  
-  <AppTrigger>  
-    <App>  
-      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
-    </App>  
-  </AppTrigger>  
-  <AppTrigger>  
-    <App>  
-      <Id>C:\windows\system32\ping.exe</Id>  
-    </App>  
-  </AppTrigger>  
-  
-  
-  <TrafficFilter>  
-    <App>  
-      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>  
-    </App>  
-    <Protocol>6</Protocol>  
-    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>  
-    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>  
-    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>  
-    <RoutingPolicyType>ForceTunnel</RoutingPolicyType>  
-  </TrafficFilter>  
-  <TrafficFilter>  
-    <App>  
-      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
-    </App>  
-    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>  
-  </TrafficFilter>  
-  
-  
-  <DomainNameInformation>  
-    <DomainName>hrsite.corporate.contoso.com</DomainName>  
-    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>  
-    <WebProxyServers>5.5.5.5</WebProxyServers>  
-    <AutoTrigger>true</AutoTrigger>  
-  </DomainNameInformation>  
-  <DomainNameInformation>  
-    <DomainName>.corp.contoso.com</DomainName>  
-    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>  
-    <WebProxyServers>100.100.100.100</WebProxyServers>  
-  </DomainNameInformation>  
-  
-  <EdpModeId>corp.contoso.com</EdpModeId>  
-  <RememberCredentials>true</RememberCredentials>  
-  <AlwaysOn>false</AlwaysOn>  
-  <DnsSuffix>corp.contoso.com</DnsSuffix>  
-  <TrustedNetworkDetection>contoso.com</TrustedNetworkDetection>  
-  <Proxy>  
-    <Manual>  
-      <Server>HelloServer</Server>  
-    </Manual>  
-    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>  
-  </Proxy>  
-  
-  <DeviceCompliance>  
-        <Enabled>true</Enabled>  
-        <Sso>  
-            <Enabled>true</Enabled>  
-            <Eku>This is my Eku</Eku>  
-            <IssuerHash>This is my issuer hash</IssuerHash>  
-        </Sso>  
-    </DeviceCompliance>  
-</VPNProfile>  
+      </Eap>
+    </Authentication>
+  </NativeProfile>
+
+  <Route>
+    <Address>192.168.0.0</Address>
+    <PrefixSize>24</PrefixSize>
+  </Route>
+  <Route>
+    <Address>10.10.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+</VPNProfile>
 ```
 
 ## Plug-in profile example
 
-
 ```xml
 <VPNProfile>
-    <PluginProfile>
-        <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
-        <PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
-        <CustomConfiguration><pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema></CustomConfiguration>
-    </PluginProfile>
-    <Route>
-        <Address>192.168.0.0</Address>
-        <PrefixSize>24</PrefixSize>
-    </Route>
-    <Route>
-        <Address>10.10.0.0</Address>
-        <PrefixSize>16</PrefixSize>
-    </Route>
-    <AppTrigger>
-        <App>
-            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-        </App>
-    </AppTrigger>
-    <AppTrigger>
-        <App>
-            <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
-        </App>
-    </AppTrigger>
-    <TrafficFilter>
-        <App>
-            <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
-        </App>
-        <Protocol>6</Protocol>
-        <LocalPortRanges>10,20-50,100-200</LocalPortRanges>
-        <RemotePortRanges>20-50,100-200,300</RemotePortRanges>
-        <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
-        <!--<RoutingPolicyType>ForceTunnel</RoutingPolicyType>-->
-    </TrafficFilter>
-    <TrafficFilter>
-        <App>
-            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-        </App>
-        <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
-    </TrafficFilter>
-    <TrafficFilter>
-        <App>
-            <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
-        </App>
-        <Claims>O:SYG:SYD:(A;;CC;;;AU)</Claims>
-        <!--<RoutingPolicyType>SplitTunnel</RoutingPolicyType>-->
-    </TrafficFilter>
-    <DomainNameInformation>
-        <DomainName>corp.contoso.com</DomainName>
-        <DnsServers>1.2.3.4,5.6.7.8</DnsServers>
-        <WebProxyServers>5.5.5.5</WebProxyServers>
-        <AutoTrigger>false</AutoTrigger>
-    </DomainNameInformation>
-    <DomainNameInformation>
-        <DomainName>corp.contoso.com</DomainName>
-        <DnsServers>10.10.10.10,20.20.20.20</DnsServers>
-        <WebProxyServers>100.100.100.100</WebProxyServers>
-    </DomainNameInformation>
-    <!--<EdpModeId>corp.contoso.com</EdpModeId>-->
-    <RememberCredentials>true</RememberCredentials>
-    <AlwaysOn>false</AlwaysOn>
-    <DeviceTunnel>false</DeviceTunnel>
-    <RegisterDNS>false</RegisterDNS>
-    <DnsSuffix>corp.contoso.com</DnsSuffix>
-    <TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
-    <Proxy>
-        <Manual>
-            <Server>HelloServer</Server>
-        </Manual>
-        <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
-    </Proxy>
-    <APNBinding>
-                <ProviderId></ProviderId>
-                <AccessPointName></AccessPointName>
-                <UserName></UserName>
-                <Password></Password>
-                <IsCompressionEnabled></IsCompressionEnabled>
-                <AuthenticationType></AuthenticationType>
-    </APNBinding>
-</VPNProfile>  
+  <!--<EdpModeId>corp.contoso.com</EdpModeId>-->
+  <RememberCredentials>true</RememberCredentials>
+  <AlwaysOn>false</AlwaysOn>
+  <DnsSuffix>corp.contoso.com</DnsSuffix>
+  <TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
+  <DeviceTunnel>false</DeviceTunnel>
+  <RegisterDNS>false</RegisterDNS>
+
+  <Proxy>
+    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
+    <Manual>
+      <Server>HelloServer</Server>
+    </Manual>
+
+  </Proxy>
+
+  <APNBinding>
+    <ProviderId></ProviderId>
+    <AccessPointName></AccessPointName>
+    <UserName></UserName>
+    <Password></Password>
+    <IsCompressionEnabled>true</IsCompressionEnabled>
+    <AuthenticationType></AuthenticationType>
+  </APNBinding>
+
+  <PluginProfile>
+    <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
+    <CustomConfiguration><pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema></CustomConfiguration>
+    <PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
+  </PluginProfile>
+
+  <AppTrigger>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+  </AppTrigger>
+  <AppTrigger>
+    <App>
+      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+    </App>
+  </AppTrigger>
+
+  <DomainNameInformation>
+    <DomainName>corp.contoso.com</DomainName>
+    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>
+    <WebProxyServers>5.5.5.5</WebProxyServers>
+    <AutoTrigger>false</AutoTrigger>
+  </DomainNameInformation>
+  <DomainNameInformation>
+    <DomainName>corp.contoso.com</DomainName>
+    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>
+    <WebProxyServers>100.100.100.100</WebProxyServers>
+  </DomainNameInformation>
+
+  <TrafficFilter>
+    <App>
+      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+    </App>
+    <Protocol>6</Protocol>
+    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>
+    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>
+    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
+    <!--<RoutingPolicyType>ForceTunnel</RoutingPolicyType>-->
+  </TrafficFilter>
+  <TrafficFilter>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
+  </TrafficFilter>
+  <TrafficFilter>
+    <App>
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+    </App>
+    <Claims>O:SYG:SYD:(A;;CC;;;AU)</Claims>
+    <!--<RoutingPolicyType>SplitTunnel</RoutingPolicyType>-->
+  </TrafficFilter>
+
+  <Route>
+    <Address>192.168.0.0</Address>
+    <PrefixSize>24</PrefixSize>
+  </Route>
+  <Route>
+    <Address>10.10.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+</VPNProfile>
 ```
-
- 
-
- 
-
-
-
-
-
-
