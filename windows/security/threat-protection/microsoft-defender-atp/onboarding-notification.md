@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
+Create a notification rule so that when a local onboarding or offboarding script is used, you'll be notified. 
 
 ## Before you begin
 You'll need to have access to:
