@@ -164,6 +164,7 @@ It's important to understand the following requirements prior to creating indica
 - The Antimalware client version must be  4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later.
 - The virus and threat protection definitions must be up-to-date.
+- This feature currently supports entering .CER or .PEM file extensions.
 
 >[!IMPORTANT]
 > - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it’s trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
