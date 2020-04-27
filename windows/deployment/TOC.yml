@@ -13,11 +13,11 @@
           href: file1.md
         - name: Types of Windows updates
           href: file1.md
-        - name: Servicing the Windows 10 operating systems
+        - name: Servicing the Windows 10 operating system
           href: file1.md
         - name: Windows 10 deployment scenarios
           href: file1.md
-        - name: Proof of concept
+        - name: Deployment proof of concept
           items: 
             - name: Demonstrate Autopilot deployment on a VM
               href: file1.md
