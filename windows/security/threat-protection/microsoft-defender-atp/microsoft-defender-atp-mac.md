@@ -74,9 +74,9 @@ The following table lists the services and their associated URLs that your netwo
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
 | Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
+| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net <br/> winatp-gw-weu.microsoft.com <br/> winatp-gw-neu.microsoft.com |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net <br/> winatp-gw-ukw.microsoft.com <br/> winatp-gw-uks.microsoft.com |
+| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net <br/> winatp-gw-cus.microsoft.com <br/> winatp-gw-eus.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Proxy auto-config (PAC)
