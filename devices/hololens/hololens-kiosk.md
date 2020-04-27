@@ -92,26 +92,14 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 | --- | --- |
 |3D Viewer |Microsoft.Microsoft3DViewer\_8wekyb3d8bbwe\!Microsoft.Microsoft3DViewer |
 |Calendar |microsoft.windowscommunicationsapps\_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
-
-|App Name |AUMID |
-| --- | --- |
 |Camera<sup>1, 2</sup> |HoloCamera\_cw5n1h2txyewy\!HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10\_8wekyb3d8bbwe\!App |
-
-|App Name |AUMID |
-| --- | --- |
 |Device Picker |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
 |Dynamics 365 Guides |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\!MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\!Microsoft.RemoteAssist |
 |Feedback Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
 |Mail |c5e2524a-ea46-4f67-841f-6a9465d9d515\_cw5n1h2txyewy\!App |
-
-|App Name |AUMID |
-| --- | --- |
 |Miracast<sup>4</sup> |&nbsp; |
-
-|App Name |AUMID |
-| --- | --- |
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
@@ -120,10 +108,10 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
 > <sup>2</sup> When you enable the Camera app, be aware of the following:
-> - The Quick Actions menu includes the Photo and Video buttons.
+> - The Quick Actions menu includes the Photo and Video buttons.  
 > - You should also enable an app that can interact with or retrieve pictures (such as Photos, Mail, or OneDrive).  
 >  
-> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.
+> <sup>3</sup> Even if you do not enable Cortana as a kiosk app, built-in voice commands are enabled. However, commands that are related to disabled features have no effect.  
 > <sup>4</sup> To enable Miracast as a kiosk app, enable the Camera app and the Device Picker app.
 
 ### Plan user and device groups
