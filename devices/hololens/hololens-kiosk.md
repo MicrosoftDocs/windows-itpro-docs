@@ -244,13 +244,13 @@ To set up kiosk mode by using Microsoft Intune or another MDM system, follow the
    - [Deploy a single-app kiosk](#mdmsingledeploy).
    - [Deploy a multi-app kiosk](#mdmmultideploy).
 
-### <a id="mdmenroll"></a>[MDM] 1. Prepare to enroll the devices
+### <a id="mdmenroll"></a>MDM, step 1 &ndash; Prepare to enroll the devices
 
 You can configure your MDM system to enroll HoloLens devices automatically when the user first signs in, or have users enroll devices manually. The devices also have to be joined to your Azure AD domain, and assigned to the appropriate groups.
 
 For more information about enrolling the devices, see [Enroll HoloLens in MDM](hololens-enroll-mdm.md) and [Intune enrollment methods for Windows devices](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods).
 
-### [MDM] 2. Create a kiosk configuration profile
+### MDM, step 2 &ndash; Create a kiosk configuration profile
 
 1. Open the [Azure](https://portal.azure.com/) portal and sign in to your Intune administrator account.
 1. Select **Microsoft Intune** > **Device configuration - Profiles** > **Create profile**.
@@ -268,7 +268,7 @@ Your next steps differ depending on the type of kiosk that you want. For further
 
 For more information about creating a kiosk configuration profile, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### <a id="mdmconfigsingle"></a>[MDM] 3. Configure the settings for a single-app kiosk
+### <a id="mdmconfigsingle"></a>MDM, step 3 (single-app) &ndash;  Configure the settings for a single-app kiosk
 
 This section summarizes the settings that a single-app kiosk requires. For more detailed information, see the following articles:
 
@@ -283,13 +283,13 @@ This section summarizes the settings that a single-app kiosk requires. For more 
 
 Your next step is to [assign](#mdmassign) the profile to a group.
 
-### <a id="mdmconfigmulti"></a>[MDM] 3. Configure the settings for a multi-app kiosk
+### <a id="mdmconfigmulti"></a>MDM, step 3 (multi-app) &ndash; Configure the settings for a multi-app kiosk
 
 This section summarizes the settings that a multi-app kiosk requires. For more detailed information, see the following articles:
 
 - For information about how to configure a kiosk configuration profile in Intune, see [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
 - For more information about the available settings for multi-app kiosks in Intune, see [Multi-app kiosks](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#ppkioskconfig), and make sure to include the [Start layout](#Start layout for HoloLens) in the XML file.  
+- For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#ppkioskconfig). If you use an XML file, make sure to include the [Start layout](#start-layout-for-hololens).  
 - You can optionally use a custom Start layout with Intune or other MDM services. For more information, see [Start layout file for MDM (Intune and others)](#start-layout-file-for-mdm-intune-and-others).
 
 1. Select **Target Windows 10 in S mode devices** > **No**.  
@@ -305,11 +305,11 @@ This section summarizes the settings that a multi-app kiosk requires. For more d
 
 Your next step is to [assign](#mdmassign) the profile to a group.
 
-### <a id="mdmassign"></a>[MDM] 4. Assign the kiosk configuration profile to a group
+### <a id="mdmassign"></a>MDM, step 4 &ndash; Assign the kiosk configuration profile to a group
 
 Use the **Assignments** page of the kiosk configuration profile to set where you want the kiosk configuration to deploy. In the simplest case, you assign the kiosk configuration profile to a group that will contain the HoloLens device when the device enrolls in MDM.
 
-### <a id="mdmsingledeploy"></a>[MDM] 5. Deploy a single-app kiosk
+### <a id="mdmsingledeploy"></a>MDM, step 5 (single-app) &ndash; Deploy a single-app kiosk
 
 When you use an MDM system, you can enroll the device in MDM during OOBE. After OOBE finishes, device sign-in is easy.
 
@@ -323,7 +323,7 @@ The next time you sign in to the device, the kiosk app should automatically laun
 
 If you're not seeing your Kiosk mode yet, [check the assignment status](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
-### <a id="mdmmultideploy"></a>[MDM] 4. Deploy a multi-app kiosk
+### <a id="mdmmultideploy"></a>MDM, step 5 (multi-app) &ndash; Deploy a multi-app kiosk
 
 When you use an MDM system, you can join the device to your Azure AD tenant and enroll the device in MDM during OOBE. If appropriate, provide the information that's required for enrollment to the users for the OOBE process.
 
@@ -350,7 +350,7 @@ To set up kiosk mode by using a provisioning package, follow these steps.
 2. [Add the XML file to a provisioning package.](#ppconfigadd)
 3. [Apply the provisioning package to HoloLens.](#ppapply)
 
-### <a id="ppkioskconfig"></a>[PP] 1. Create a kiosk configuration XML file
+### <a id="ppkioskconfig"></a>Prov. package, step 1 &ndash; Create a kiosk configuration XML file
 
 Follow [the instructions for creating a kiosk configuration XML file for desktop](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-using-a-provisioning-package), except for the following:
 
@@ -428,7 +428,7 @@ Save the following sample as an XML file. You can use this file when you configu
  </LayoutModificationTemplate>
 ```
 
-### <a id="ppconfigadd"></a>[PP] 2. Add the kiosk configuration XML file to a provisioning package
+### <a id="ppconfigadd"></a>Prov. package, step 2 &ndash; Add the kiosk configuration XML file to a provisioning package
 
 1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
 1. Select **Advanced provisioning**, enter a name for your project, and then select **Next**.
@@ -456,7 +456,7 @@ Save the following sample as an XML file. You can use this file when you configu
 1. Specify the output location where you want the provisioning package to go when it's built. By default, Windows Configuration Designer uses the project folder as the output location. If you want to change the output location, select **Browse**. When finished, select **Next**.
 1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The build page displays the project information, and the progress bar indicates the build status.
 
-### <a id="ppapply"></a>[PP] 3. Apply the provisioning package to HoloLens
+### <a id="ppapply"></a>Prov. package, step 3 &ndash; Apply the provisioning package to HoloLens
 
 The "Configure HoloLens by using a provisioning package" article provides detailed instructions for applying the provisioning package under the following circumstances:
 
