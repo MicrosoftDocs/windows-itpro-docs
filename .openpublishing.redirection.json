@@ -15852,7 +15852,8 @@
 },
 {
 "source_path": "windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",    "redirect_document_id": false
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",    
+"redirect_document_id": false
 }
 ]
 }
