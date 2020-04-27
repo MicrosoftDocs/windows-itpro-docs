@@ -82,7 +82,7 @@ If you're still having problems, press the power button for 4 seconds, until all
 
 If your HoloLens is still experiencing issues after restarting, try resetting it to factory state.  Resetting your HoloLens keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.
 
-If you reset your device, all your personal data, apps, and settings will be erased. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).
+If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).
 
 1. Launch the Settings app, and then select **Update** > **Reset**.
 1. Select the **Reset device** option and read the confirmation message.
@@ -100,7 +100,7 @@ All of the data HoloLens needs to reset is packaged in a Full Flash Update (ffu)
 
 ### HoloLens 2
 
-The Advanced Recovery Companion is a new app in Microsoft Store restore the operating system image to your HoloLens 2 device.
+The Advanced Recovery Companion is a new app in Microsoft Store restore the operating system image to your HoloLens 2 device. Advanced Recovery Companion erases all your personal data, apps, and settings, and resets TPM.
 
 1. On your computer, get [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from Microsoft Store.
 2. Connect HoloLens 2 to your computer.
