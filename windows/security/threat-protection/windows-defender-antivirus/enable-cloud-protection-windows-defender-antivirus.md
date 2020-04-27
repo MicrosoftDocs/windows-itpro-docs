@@ -37,14 +37,14 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 >[!NOTE]
 >In Windows 10, there is no difference between the **Basic** and **Advanced** options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
 
-**Use Intune to enable cloud-delivered protection**
+## Use Intune to enable cloud-delivered protection
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services > Intune**.
 3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
 5. On the **Cloud-delivered protection** switch, select **Enable**.
-6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**. 
+6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**.
 7. In the **Submit samples consent** dropdown, select one of the following:
 
     - **Send safe samples automatically**
@@ -60,11 +60,11 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
-**Use Configuration Manager to enable cloud-delivered protection:**
+## Use Configuration Manager to enable cloud-delivered protection
 
 See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
-**Use Group Policy to enable cloud-delivered protection:**
+## Use Group Policy to enable cloud-delivered protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -89,7 +89,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 7. Click **OK**.
 
-**Use PowerShell cmdlets to enable cloud-delivered protection:**
+## Use PowerShell cmdlets to enable cloud-delivered protection
 
 Use the following cmdlets to enable cloud-delivered protection:
 
@@ -108,14 +108,15 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn439474(v=vs.85).aspx) class for the following properties:
 
 ```WMI
-MAPSReporting 
+MAPSReporting
 SubmitSamplesConsent
 ```
 
 See the following for more information and allowed parameters:
+
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
-**Enable cloud-delivered protection on individual clients with the Windows Security app**
+**Enable cloud-delivered protection on individual clients with the Windows Security app
 
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
