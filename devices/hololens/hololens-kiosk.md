@@ -30,9 +30,7 @@ This article provides information about aspects of configuring kiosks that are s
 
 You can use kiosk mode in one of two configurations (single-app kiosk or multi-app kiosk), and you can use select one of three processes to set up and deploy the kiosk configuration.
 
-> [!WARNING]  
-> The assigned access feature that enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, [certain policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#mdm-policy) are enforced system-wide. These policies impact other users on the device.  
->  
+> [!IMPORTANT]  
 > Deleting the multi-app configuration removes the user lockdown profiles that the assigned access feature put in place. However, it does not revert all of the policy changes. To revert these policies, you have to reset the device to the factory settings.
 
 ## Plan the kiosk deployment
