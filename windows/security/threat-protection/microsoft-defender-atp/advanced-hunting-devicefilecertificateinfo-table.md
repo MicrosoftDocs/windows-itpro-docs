@@ -1,7 +1,7 @@
 ---
-title: DeviceFileCertificateInfoBeta table in the advanced hunting schema
-description: Learn about file signing information in the DeviceFileCertificateInfoBeta table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, digital signature, certificate, file signing, DeviceFileCertificateInfoBeta
+title: DeviceFileCertificateInfo table in the advanced hunting schema
+description: Learn about file signing information in the DeviceFileCertificateInfo table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, digital signature, certificate, file signing, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 01/14/2020
 ---
 
-# DeviceFileCertificateInfoBeta
+# DeviceFileCertificateInfo
 
 **Applies to:**
 
@@ -26,9 +26,7 @@ ms.date: 01/14/2020
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
-The `DeviceFileCertificateInfoBeta` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file signing certificates. This table uses data obtained from certificate verification activities regularly performed on files on endpoints.
+The `DeviceFileCertificateInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file signing certificates. This table uses data obtained from certificate verification activities regularly performed on files on endpoints.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 

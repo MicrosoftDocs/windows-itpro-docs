@@ -10,7 +10,7 @@ ms.author: v-jokai
 ms.topic: article
 ms.date: 10/03/2019
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Surface Pro X app compatibility

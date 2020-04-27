@@ -50,7 +50,8 @@ Only the main version is listed in the following table as reference information:
 
 Month	| Platform/Client	| Engine
 ---|---|---
-Mar-2020 | 4.18.2003.x| 1.1.16900.x
+Apr-2020 | 4.18.2004.x | 1.1.17000.x
+Mar-2020 | 4.18.2003.x | 1.1.16900.x
 Feb-2020	|	- | 1.1.16800.x
 Jan-2020 |	4.18.2001.x	| 1.1.16700.x
 Dec-2019 | - | - |

@@ -59,6 +59,9 @@ You'll need to enable the live response capability in the [Advanced features set
 
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
+    
+- **Ensure that the machine has an Automation Remediation level assigned to it**<br>
+You'll need to enable, at least, the minimum Remdiation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
 - **Enable live response unsigned script execution** (optional) <br>
 
