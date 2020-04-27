@@ -18,7 +18,7 @@ ms.topic: article
 
 After you have properly deployed the Microsoft Application Virtualization (App-V) sequencer, you can use it to monitor and record the installation and setup process for an application to be run as a virtualized application.
 
-For more information about configuring the App-V sequencer, sequencing best practices, and an example of creating and updating a virtual application, see the [Microsoft Application Virtualization 5.0 Sequencing Guide](<https://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V_5.0_Sequencing_Guide.docx>).
+For more information about configuring the App-V sequencer, sequencing best practices, and an example of creating and updating a virtual application, see the [Microsoft Application Virtualization 5.0 Sequencing Guide](https://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx).
 
 >[!NOTE]
 >The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.

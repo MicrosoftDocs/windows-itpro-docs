@@ -82,7 +82,7 @@
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
 ##### [Network protection evaluation](microsoft-defender-atp/evaluate-network-protection.md)
-
+##### [Enable network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
@@ -356,7 +356,7 @@
 ##### [DeviceInfo](microsoft-defender-atp/advanced-hunting-deviceinfo-table.md)
 ##### [DeviceNetworkInfo](microsoft-defender-atp/advanced-hunting-devicenetworkinfo-table.md)
 ##### [DeviceEvents](microsoft-defender-atp/advanced-hunting-deviceevents-table.md)
-##### [DeviceFileCertificateInfoBeta](microsoft-defender-atp/advanced-hunting-devicefilecertificateinfobeta-table.md)
+##### [DeviceFileCertificateInfo](microsoft-defender-atp/advanced-hunting-devicefilecertificateinfo-table.md)
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
