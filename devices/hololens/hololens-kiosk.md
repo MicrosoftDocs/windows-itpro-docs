@@ -91,21 +91,21 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 <a id="aumids"></a>
 |App Name |AUMID |
 | --- | --- |
-|3D Viewer |Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer |
-|Calendar |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar |
-|Camera<sup>1, 2</sup> |HoloCamera_cw5n1h2txyewy!HoloCamera |
-|Cortana<sup>3</sup> |Microsoft.549981C3F5F10_8wekyb3d8bbwe!App |
-|Device Picker |HoloDevicesFlow_cw5n1h2txyewy!HoloDevicesFlow |
-|Dynamics 365 Guides |Microsoft.Dynamics365.Guides_8wekyb3d8bbwe!MicrosoftGuides |
-|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe!Microsoft.RemoteAssist |
-|Feedback Hub |Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App |
-|Mail |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
+|3D Viewer |Microsoft.Microsoft3DViewer_8wekyb3d8bbwe\!Microsoft.Microsoft3DViewer |
+|Calendar |microsoft.windowscommunicationsapps_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
+|Camera<sup>1, 2</sup> |HoloCamera_cw5n1h2txyewy\!HoloCamera |
+|Cortana<sup>3</sup> |Microsoft.549981C3F5F10_8wekyb3d8bbwe\!App |
+|Device Picker |HoloDevicesFlow_cw5n1h2txyewy\!HoloDevicesFlow |
+|Dynamics 365 Guides |Microsoft.Dynamics365.Guides_8wekyb3d8bbwe\!MicrosoftGuides |
+|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe\!Microsoft.RemoteAssist |
+|Feedback Hub |Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe\!App |
+|Mail |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy\!App |
 |Miracast<sup>4</sup> |&nbsp; |
-|Movies & TV |Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo |
-|OneDrive |microsoft.microsoftskydrive_8wekyb3d8bbwe!App |
-|Photos |Microsoft.Windows.Photos_8wekyb3d8bbwe!App |
-|Settings |HolographicSystemSettings_cw5n1h2txyewy!App |
-|Tips |Microsoft.HoloLensTips_8wekyb3d8bbwe!HoloLensTips |
+|Movies & TV |Microsoft.ZuneVideo_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
+|OneDrive |microsoft.microsoftskydrive_8wekyb3d8bbwe\!App |
+|Photos |Microsoft.Windows.Photos_8wekyb3d8bbwe\!App |
+|Settings |HolographicSystemSettings_cw5n1h2txyewy\!App |
+|Tips |Microsoft.HoloLensTips_8wekyb3d8bbwe\!HoloLensTips |
 
 > <sup>1</sup> To enable photo or video capture, you have to enable the Camera app as a kiosk app.  
 > <sup>2</sup> When you enable the Camera app, be aware of the following:
