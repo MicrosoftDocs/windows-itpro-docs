@@ -125,7 +125,7 @@ If an IT environment prevents the use of the Windows Store app or limits access 
 
 This deployment path can be enabled with the following steps:
 1.	Go to the [Store For Business website](https://businessstore.microsoft.com) and sign-in with an Azure AD identity.
-1.	Go to **Manage – Settings**, and turn on **Show offline apps** under **Shopping experience** as described at https://businessstore.microsoft.com/en-us/manage/settings/shop 
+1.	Go to **Manage – Settings**, and turn on **Show offline apps** under **Shopping experience** as described at https://businessstore.microsoft.com/manage/settings/shop 
 1.	Go to **shop for my group** and search for the [Advanced Recovery Companion](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) app.
 1.	Change the **License Type** box to offline and click **Manage**.
 1.	Under Download the package for offline use click the second blue **“Download”** button . Ensure the file extension is .appxbundle.
@@ -140,8 +140,8 @@ C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\AR
 ```
 
 Other resources:
-- https://docs.microsoft.com/en-us/microsoft-store/distribute-offline-apps 
-- https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options
+- https://docs.microsoft.com/microsoft-store/distribute-offline-apps 
+- https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options
 
 
 ### HoloLens (1st gen)
