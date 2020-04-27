@@ -233,7 +233,7 @@ The following table lists the capabilities and benefits of each of the three dep
 To set up kiosk mode by using Microsoft Intune or another MDM system, follow these steps.
 
 1. [Prepare to enroll the devices](#mdmenroll).
-1. [Create a kiosk configuration profile](#mdm-2-create-a-kiosk-configuration-profile).
+1. [Create a kiosk configuration profile](#mdmprofile).
 1. Configure the kiosk.
    - [Configure the settings for a single-app kiosk](#mdmconfigsingle).
    - [Configure the settings for a multi-app kiosk](#mdmconfigmulti).
@@ -248,7 +248,7 @@ You can configure your MDM system to enroll HoloLens devices automatically when 
 
 For more information about enrolling the devices, see [Enroll HoloLens in MDM](hololens-enroll-mdm.md) and [Intune enrollment methods for Windows devices](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods).
 
-### MDM, step 2 &ndash; Create a kiosk configuration profile
+### <a id="mdmprofile"></a>MDM, step 2 &ndash; Create a kiosk configuration profile
 
 1. Open the [Azure](https://portal.azure.com/) portal and sign in to your Intune administrator account.
 1. Select **Microsoft Intune** > **Device configuration - Profiles** > **Create profile**.
