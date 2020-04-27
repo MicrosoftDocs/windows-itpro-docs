@@ -776,11 +776,11 @@ function CheckOSArchitecture
 {
     $OSArch = $(gwmi win32_operatingsystem).OSArchitecture.ToLower()
     Log $OSArch
-    if($OSArch -match ("64\-?\s?bits?"))
+    if($OSArch -match ("^64\-?\s?bit"))
     {
         LogAndConsoleSuccess "64 bit architecture"
     }
-    elseif($OSArch -match ("32\-?\s?bits?"))
+    elseif($OSArch -match ("^32\-?\s?bit"))
     {
         LogAndConsoleError "32 bit architecture"
         $DGVerifyCrit.AppendLine("32 Bit OS, OS Architecture failure.") | Out-Null
