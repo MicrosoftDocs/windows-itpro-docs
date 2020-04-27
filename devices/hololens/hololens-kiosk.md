@@ -97,7 +97,7 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 |Device Picker |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
 |Dynamics 365 Guides |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\!MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\!Microsoft.RemoteAssist |
-|Feedback Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
+|Feedback&nbsp;Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
 |Mail |c5e2524a-ea46-4f67-841f-6a9465d9d515\_cw5n1h2txyewy\!App |
 |Miracast<sup>4</sup> |&nbsp; |
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
