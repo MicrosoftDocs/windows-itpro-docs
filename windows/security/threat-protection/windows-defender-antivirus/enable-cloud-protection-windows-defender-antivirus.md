@@ -95,15 +95,20 @@ Use the following cmdlets to enable cloud-delivered protection:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
-Set-MpPreference -SubmitSamplesConsent AlwaysPrompt
+Set-MpPreference -SubmitSamplesConsent SendSafeSamples
 ```
 
 >[!NOTE]
->You can also set -SubmitSamplesConsent to `None`. Setting it to `Never` will lower the protection state of the device, and setting it to 2 means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
+> You can also set **-SubmitSamplesConsent** to SendAllSamples`, `NeverSend`, or `AlwaysPrompt`.
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+>[!WARNING]
+> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection state of the device.
+>
+> In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature won't work.
 
-**Use Windows Management Instruction (WMI) to enable cloud-delivered protection:**
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](../../../client-management/mdm//policy-csp-defender.md) also has more information specifically on [-SubmitSampleConsent](../../../client-management/mdm//policy-csp-defender.md#defender-submitsamplesconsent).
+
+## Use Windows Management Instruction (WMI) to enable cloud-delivered protection
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn439474(v=vs.85).aspx) class for the following properties:
 
