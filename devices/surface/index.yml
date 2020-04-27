@@ -45,6 +45,8 @@ additionalContent:
           links:
             - text: Surface training on Microsoft Learn
               url: https://docs.microsoft.com/learn/browse/?term=Surface
+            - text: Surface Hub 2S adoption guidance
+              url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
             - text: Microsoft Mechanics Surface videos
               url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
             
