@@ -87,18 +87,31 @@ If you use an MDM system or a provisioning package to configure kiosk mode, you 
 > You cannot select the Shell app as a kiosk app. In addition, we recommend that you do **not** select the Microsoft Edge, Microsoft Store, or the File Explorer app as kiosk apps.  
 
 <a id="aumids"></a>
+
 |App Name |AUMID |
 | --- | --- |
 |3D Viewer |Microsoft.Microsoft3DViewer\_8wekyb3d8bbwe\!Microsoft.Microsoft3DViewer |
 |Calendar |microsoft.windowscommunicationsapps\_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
+
+|App Name |AUMID |
+| --- | --- |
 |Camera<sup>1, 2</sup> |HoloCamera\_cw5n1h2txyewy\!HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10\_8wekyb3d8bbwe\!App |
+
+|App Name |AUMID |
+| --- | --- |
 |Device Picker |HoloDevicesFlow\_cw5n1h2txyewy\!HoloDevicesFlow |
 |Dynamics 365 Guides |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\!MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\!Microsoft.RemoteAssist |
 |Feedback Hub |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\!App |
 |Mail |c5e2524a-ea46-4f67-841f-6a9465d9d515\_cw5n1h2txyewy\!App |
+
+|App Name |AUMID |
+| --- | --- |
 |Miracast<sup>4</sup> |&nbsp; |
+
+|App Name |AUMID |
+| --- | --- |
 |Movies & TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\!Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\!App |
 |Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\!App |
