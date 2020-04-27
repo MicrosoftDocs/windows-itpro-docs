@@ -1073,7 +1073,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 
@@ -1413,10 +1413,14 @@ To turn this off:
 
 In the **Inking & Typing** area you can configure the functionality as such: 
 
-To turn off Inking & Typing data collection (note: there is no Group Policy for this setting):
+To turn off Inking & Typing data collection:
 
-- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Inking and typing** and turn **Improve inking & typing** to **Off** 
+- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off** 
 
+  -or-
+  
+  **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Text Input > Improve inking and typing recognition**
+  
   -or-
 
 - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
@@ -1467,11 +1471,11 @@ To turn this Off in the UI:
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** and set the **Select a setting** box to **Force Deny**
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** box to **Force Deny**
 
 
 -OR-

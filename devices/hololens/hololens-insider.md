@@ -88,7 +88,7 @@ Provisioning packages let you set HoloLens configuration through a config file r
 1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package.
 
 ### System voice commands
-You can now can access these commands with your voice:
+You can now access these commands with your voice:
 - "Restart device"
 - "Shutdown device"
 - "Brightness up"

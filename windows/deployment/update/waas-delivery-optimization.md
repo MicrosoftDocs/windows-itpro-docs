@@ -54,7 +54,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Defender definition updates | 1511 |
 | Office Click-to-Run updates | 1709 |
 | Win32 apps for Intune | 1709 |
-| SCCM Express Updates | 1709 + Configuration Manager version 1711 |
+| Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
 
 <!-- ### Network requirements
 
