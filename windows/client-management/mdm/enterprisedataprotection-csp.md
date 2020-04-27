@@ -49,7 +49,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 -   2 – Allow override mode (encrypt, prompt and allow overrides, and audit).
 -   3 – Hides overrides (encrypt, prompt but hide overrides, and audit).
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-enterpriseprotecteddomainnames"></a>**Settings/EnterpriseProtectedDomainNames**  
 <p style="margin-left: 20px">A list of domains used by the enterprise for its user identities separated by pipes (&quot;|&quot;).The first domain in the list must be the primary enterprise ID, that is, the one representing the managing authority for WIP. User identities from one of these domains is considered an enterprise managed account and data associated with it should be protected. For example, the domains for all email accounts owned by the enterprise would be expected to appear in this list. Attempts to change this value will fail when the WIP cleanup is running.
@@ -67,7 +67,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 2.  Call [IdnToAscii](https://msdn.microsoft.com/library/windows/desktop/dd318149.aspx) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
 3.  Call [IdnToUnicode](https://msdn.microsoft.com/library/windows/desktop/dd318151.aspx) with no flags set (dwFlags = 0).
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is string.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is string.
 
 <a href="" id="settings-allowuserdecryption"></a>**Settings/AllowUserDecryption**  
 <p style="margin-left: 20px">Allows the user to decrypt files. If this is set to 0 (Not Allowed), then the user will not be able to remove protection from enterprise content through the operating system or the application user experiences.
@@ -82,7 +82,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-requireprotectionunderlockconfig"></a>**Settings/RequireProtectionUnderLockConfig**  
 <p style="margin-left: 20px">Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured. A PIN must be configured on the device before you can apply this policy.
@@ -101,7 +101,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 
  
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-datarecoverycertificate"></a>**Settings/DataRecoveryCertificate**  
 <p style="margin-left: 20px">Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through mobile device management (MDM) instead of Group Policy.
@@ -236,7 +236,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 
 <p style="margin-left: 20px">For EFSCertificate KeyTag, it is expected to be a DER ENCODED binary certificate.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is base-64 encoded certificate.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is base-64 encoded certificate.
 
 <a href="" id="settings-revokeonunenroll"></a>**Settings/RevokeOnUnenroll**  
 <p style="margin-left: 20px">This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don&#39;t revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment. If the keys are not revoked, there will be no revoked file cleanup subsequently. Prior to sending the unenroll command, when you want a device to do a selective wipe when it is unenrolled, then you should explicitly set this policy to 1.
@@ -246,7 +246,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 -   0 – Don't revoke keys.
 -   1 (default) – Revoke keys.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don&#39;t revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
@@ -254,12 +254,12 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 - 0 - Don't revoke keys
 - 1 (default) - Revoke keys
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-rmstemplateidforedp"></a>**Settings/RMSTemplateIDForEDP**  
 <p style="margin-left: 20px">TemplateID GUID to use for Rights Management Service (RMS) encryption. The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is string (GUID).
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is string (GUID).
 
 <a href="" id="settings-allowazurermsforedp"></a>**Settings/AllowAzureRMSForEDP**  
 <p style="margin-left: 20px">Specifies whether to allow Azure RMS encryption for WIP.
@@ -267,7 +267,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 -   0 (default) – Don't use RMS.
 -   1 – Use RMS.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-smbautoencryptedfileextensions"></a>**Settings/SMBAutoEncryptedFileExtensions**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an Server Message Block (SMB) share within the corporate boundary as defined in the Policy CSP nodes for <a href="policy-configuration-service-provider.md#networkisolation-enterpriseiprange" data-raw-source="[NetworkIsolation/EnterpriseIPRange](policy-configuration-service-provider.md#networkisolation-enterpriseiprange)">NetworkIsolation/EnterpriseIPRange</a> and <a href="policy-configuration-service-provider.md#networkisolation-enterprisenetworkdomainnames" data-raw-source="[NetworkIsolation/EnterpriseNetworkDomainNames](policy-configuration-service-provider.md#networkisolation-enterprisenetworkdomainnames)">NetworkIsolation/EnterpriseNetworkDomainNames</a>. Use semicolon (;) delimiter in the list.
@@ -282,7 +282,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 -   0 (default) - No WIP overlays on icons or tiles.
 -   1 - Show WIP overlays on protected files and apps that can only create enterprise content.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
+<p style="margin-left: 20px">Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="status"></a>**Status**  
 <p style="margin-left: 20px">A read-only bit mask that indicates the current state of WIP on the Device. The MDM service can use this value to determine the current overall state of WIP. WIP is only on (bit 0 = 1) if WIP mandatory policies and WIP AppLocker settings are configured.
