@@ -127,12 +127,18 @@ There are many reasons why organizations create exceptions for a recommendation.
 
 Exceptions can be created for both Security update and Configuration change recommendations.
 
-When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes from **Active** to **Exception** (global and all machine groups) or **Partially active** (specific machine groups selected).
 
 1. Select a security recommendation you would like create an exception for, and then **Exception options**.
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-option.png)
 
-2. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+2. Select your exception scope. There are two types of exceptions:
+    - **Global exception**: Global admins will be able to create a global exception. It affects all current and future machine groups in your organization. It can only be cancelled by someone with admin privileges.
+    - **Exception by machine groups**: Apply the exception to all machine groups, or choose specific machine groups. Machine groups that already have an exception will not be displayed. If you have filtered by machine group, just your filtered machine groups will appear as options.
+
+    If a recommendation is under global exception, then new exceptions for machine groups will be suspended until the global exception has expired.
+
+3. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
     The following list details the justifications behind the exception options:
 
