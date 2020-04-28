@@ -52,10 +52,10 @@ A multi-app kiosk displays the start menu when the user signs in to the device. 
 
 The following table lists the feature capabilities in the different kiosk modes.
 
-| &nbsp; |Start menu/pins panel |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
+| &nbsp; |Start menu |Quick Actions menu |Camera and video |Miracast |Cortana |Built-in voice commands |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |Single-app kiosk |Disabled |Disabled   |Disabled |Disabled   |Disabled |Enabled<sup>1</sup> |
-|Multi-app kiosk  |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
+|Multi-app kiosk |Enabled |Enabled<sup>2</sup> |Available<sup>2</sup> |Available<sup>2</sup> |Available<sup>2, 3</sup>  |Enabled<sup>1</sup> |
 
 > <sup>1</sup> Voice commands that relate to disabled features do not function.  
 > <sup>2</sup> For more information about how to configure these features, see [Select kiosk apps](#plan-kiosk-apps).  
