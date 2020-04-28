@@ -27,7 +27,9 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 1. Security intelligence updates
 2. Product updates
 
-
+> [!IMPORTANT]
+> Keeping Windows Defender Antivirus up to date is crucial to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
+> This also applies to devices where Windows Defender Antivirus is running in [passive mode](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility).
 
 ## Security intelligence updates
 
@@ -39,9 +41,10 @@ Engine updates are included with the Security intelligence updates and are relea
 
 ## Product updates
 
-Windows Defender Antivirus requires [monthly updates](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
+Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through Windows Server Update Service (WSUS), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 ## Released platform and engine versions
 
@@ -138,13 +141,14 @@ No known issues
 </details>
 
 <details>
-  <summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
+<summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
   
-  Security intelligence update version: **1.309.32.0**  
-  Released: **January 30, 2020**  
-  Platform/Client: **4.18.2001.10**  
-  Engine: **1.1.16700.2**  
-  Support phase: **Technical upgrade Support (Only)**
+
+Security intelligence update version: **1.309.32.0**  
+Released: **January 30, 2020**  
+Platform/Client: **4.18.2001.10**  
+Engine: **1.1.16700.2**  
+Support phase: **Technical upgrade Support (Only)**
      
 ### What's new
 
