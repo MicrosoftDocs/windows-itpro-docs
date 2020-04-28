@@ -312,7 +312,7 @@ During OOBE, follow these steps:
 1. Enroll the device.
 1. Wait for any apps that are part of the kiosk configuration profile to download and install, and for policies to be applied.  
 1. After OOBE finishes, you can install additional apps from the Microsoft store or by sideloading. [Required apps](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) for the group that the device belongs to install automatically.
-1. Restart the device.
+1. When finished, restart the device.
 
 The next time you sign in to the device by using an account that belongs to the **User logon type**, the kiosk app should automatically launch.
 
