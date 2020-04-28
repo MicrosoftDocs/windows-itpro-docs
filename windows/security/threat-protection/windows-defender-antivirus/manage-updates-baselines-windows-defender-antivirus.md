@@ -43,13 +43,13 @@ Engine updates are included with the Security intelligence updates and are relea
 
 Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
-For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 ## Released platform and engine versions
 
 ### Monthly platform and engine releases
-For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/en-us/help/4052623/update-for-windows-defender-antimalware-platform)
+For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
 
 <details>
 <summary> April-2020 (Platform: 4.18.2004.5 | Engine: 1.1.17000.2)</summary>
@@ -226,7 +226,7 @@ The below table provides the Windows Defender Antivirus platform and engine vers
 |1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
 
-Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)
+Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 
 ## In this section
