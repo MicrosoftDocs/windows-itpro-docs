@@ -157,7 +157,10 @@ The advanced commands offer a more robust set of actions that allow you to take 
 For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 
 >[!NOTE]
->There is a file size limit of 750mb.
+>The following file size limits apply:
+>- `getfile` limit: 3 GB
+>- `fileinfo` limit: 10 GB
+>- `library` limit: 250 MB
 
 ### Download a file in the background
 
