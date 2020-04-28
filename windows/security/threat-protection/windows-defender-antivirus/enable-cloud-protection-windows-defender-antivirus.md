@@ -22,8 +22,8 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->[!NOTE]
->The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+> [!NOTE]
+> The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 ![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
@@ -34,8 +34,8 @@ See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protectio
 
 There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-delivered protection service. See [Configure and validate network connections](configure-network-connections-windows-defender-antivirus.md) for more details.
 
->[!NOTE]
->In Windows 10, there is no difference between the **Basic** and **Advanced** options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
+> [!NOTE]
+> In Windows 10, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
 
 ## Use Intune to enable cloud-delivered protection
 
@@ -51,10 +51,10 @@ There are specific network-connectivity requirements to ensure your endpoints ca
     - **Send all samples automatically**
 
         >[!NOTE]
-        >**Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
+        > The **Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
         > [!WARNING]
-        > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
+        > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
@@ -70,22 +70,22 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Administrative templates**.
+3. Select **Administrative templates**.
 
 4. Expand the tree to **Windows components > Windows Defender Antivirus > MAPS**
 
-5. Double-click **Join Microsoft MAPS** and ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**. Click **OK**.
+5. Double-click **Join Microsoft MAPS**. Ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
 
-6. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either of the following:
+6. Double-click **Send file samples when further analysis is required**. Ensure that the option is set to **Enabled** and that the other options are either of the following:
 
     1. **Send safe samples** (1)
     2. **Send all samples** (3)
 
         >[!NOTE]
-        >**Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
+        > The **Send safe samples** (1) option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
         > [!WARNING]
-        > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
+        > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 7. Click **OK**.
 
@@ -95,18 +95,16 @@ Use the following cmdlets to enable cloud-delivered protection:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
-Set-MpPreference -SubmitSamplesConsent SendSafeSamples
+Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](../../../client-management/mdm//policy-csp-defender.md) also has more information specifically on [-SubmitSampleConsent](../../../client-management/mdm//policy-csp-defender.md#defender-submitsamplesconsent).
+
 >[!NOTE]
-> You can also set **-SubmitSamplesConsent** to SendAllSamples`, `NeverSend`, or `AlwaysPrompt`.
+> You can also set **-SubmitSamplesConsent** to `SendSafeSamples` (the default setting), `NeverSend`, or `AlwaysPrompt`. The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
 >[!WARNING]
-> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection state of the device.
->
-> In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature won't work.
-
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](../../../client-management/mdm//policy-csp-defender.md) also has more information specifically on [-SubmitSampleConsent](../../../client-management/mdm//policy-csp-defender.md#defender-submitsamplesconsent).
+> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 ## Use Windows Management Instruction (WMI) to enable cloud-delivered protection
 
