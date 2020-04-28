@@ -5,12 +5,9 @@
 ### <span style="color:red">test</span>
 
 ## Plan
-<h3 font color="blue">A blue heading</h3>
 
 ## Prepare
 
 ## Deploy
 
 ## Reference
-
-<h2 class="blue" id="blue-h">Test</h2>
