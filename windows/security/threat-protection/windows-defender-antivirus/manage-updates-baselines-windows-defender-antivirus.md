@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/04/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -223,6 +222,7 @@ The below table provides the Windows Defender Antivirus platform and engine vers
 |1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only)
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only)
 Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)
+
 
 ## In this section
 
