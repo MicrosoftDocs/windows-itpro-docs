@@ -49,7 +49,7 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 
 - **Improved heuristics and diagnostic data.** Microsoft Defender SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
 
-- **Management through Group Policy and Microsoft Intune.** Microsoft Defender SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
+- **Management through Group Policy and Microsoft Intune.** Microsoft Defender SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md).
 
 - **Blocking URLs associated with potentially unwanted applications.** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
 
@@ -88,5 +88,6 @@ EventID | Description
 1002 | User Decision Windows Defender SmartScreen Event
 
 ## Related topics
+- [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
 - [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)

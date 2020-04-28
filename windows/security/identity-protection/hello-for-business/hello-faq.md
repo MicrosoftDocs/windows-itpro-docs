@@ -45,7 +45,7 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use a convenience PIN with Azure AD?
-It is currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
+It is currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises Domain Joined users and local account users.
 
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
@@ -64,11 +64,11 @@ The user experience for Windows Hello for Business occurs after user sign-in, af
 [Windows Hello for Business user enrollment experience](hello-videos.md#windows-hello-for-business-user-enrollment-experience)
 
 ## What happens when my user forgets their PIN?
-If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with the Fall Creators Update, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
+If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with Windows 10 1709, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
 
 [Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
 
-For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+For on-premises deployments, devices must be well-connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
 
 ## What URLs do I need to allow for a hybrid deployment?
 Communicating with Azure Active Directory uses the following URLs:
@@ -88,11 +88,12 @@ Windows Hello for Business has two types of PIN reset: non-destructive and destr
 Organizations that have the on-premises deployment of Windows Hello for Business, or those not using Windows 10 Enterprise can use destructive PIN reset.  with destructive PIN reset, users that have forgotten their PIN can authenticate using their password, perform a second factor of authentication to re-provision their Windows Hello for Business credential. Re-provisioning deletes the old credential and requests a new credential and certificate.  On-premises deployments need network connectivity to their domain controllers, Active Directory Federation Services, and their issuing certificate authority to perform a destructive PIN reset. Also, for hybrid deployments, destructive PIN reset is only supported with the certificate trust model and the latest updates to Active Directory Federation Services.
 
 ## Which is better or more secure: Key trust or Certificate trust?
-The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware backed, two-factor credential. The difference between the two trust types are:
+The trust models of your deployment determine how you authenticate to Active Directory (on-premises). Both key trust and certificate trust use the same hardware-backed, two-factor credential. The difference between the two trust types are:
 - Required domain controllers 
 - Issuing end entity certificates
 
 The **key trust** model authenticates to Active Directory using a raw key.  Windows Server 2016 domain controllers enables this authentication.  Key trust authenticate does not require an enterprise issued certificate, therefore you do not need to issue certificates to your end users (domain controller certificates are still needed).
+
 The **certificate trust** model authenticates to Active Directory using a certificate.  Because this authentication uses a certificate, domain controllers running previous versions of Windows Server can authenticate the user. Therefore, you need to issue certificates to your end users, but you do not need Windows Server 2016 domain controllers.  The certificate used in certificate trust uses the TPM protected private key to request a certificate from your enterprise's issuing certificate authority. 
 
 ## Do I need Windows Server 2016 domain controllers?
@@ -102,7 +103,7 @@ There are many deployment options from which to choose. Some of those options re
 Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that are sync based on scenarios.  The base scenarios that include Windows Hello for Business are [Windows 10](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
 
 ## Is Windows Hello for Business multifactor authentication?
-Windows Hello for Business is two-factor authentication based the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
+Windows Hello for Business is two-factor authentication based on the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
 ## What are the biometric requirements for Windows Hello for Business?
 Read [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
