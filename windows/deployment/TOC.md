@@ -5,7 +5,7 @@
 ### <span style="color:red">test</span>
 
 ## Plan
-<h3> <font color="blue">A blue heading</font></h3>
+<h3 font color="blue">A blue heading</h3>
 
 ## Prepare
 
