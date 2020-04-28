@@ -72,7 +72,7 @@ For examples of how to use these capabilities, see the following table.
 
 |Use a single-app kiosk for: |Use a multi-app kiosk for: |
 | --- | --- |
-|A device that runs only a guide for new hires. |A device that runs both guides and Remote Assist for a range of employees. |
+|A device that runs only a Dynamics 365 Guide for new hires. |A device that runs both Guides and Remote Assistance for a range of employees. |
 |A device that runs only a custom app. |A device that functions as a kiosk for the majority of users (running only a custom app), but functions as a normal device for a specific group of users. |
 
 ### Plan kiosk apps
@@ -143,29 +143,6 @@ You use a single group (Group 1) for both devices and users. One device and user
 No matter which user signs on to the device first (and goes through the Out-of-Box Experience, or OOBE), the kiosk configuration deploys to the device. Users A, B, and C can all sign in to the device and get the kiosk experience.
 
 **Example 2**
-
-You use two groups that have the following members:
-
-- Group 1:  
-  - User A
-  - User B
-- Group 2:
-  - User A
-  - User B
-  - User C
-  - Device 1
-
-You configure the kiosk configuration profile as follows:
-
-- **User logon type**: Group 1
-- **Assigned group**: Group 2
-
-No matter which user signs on to the device first, the kiosk configuration deploys to the device. However, the user experiences differ as follows:  
-
-- Users A and B can sign in to the device, and they get the kiosk experience.
-- User C can sign in to the device, but does not get the kiosk experience. User C can use the device as a typical non-kiosk device.
-
-**Example 3**
 
 You contract devices out to two different vendors who need different kiosk experiences. Both vendors have users, and you want all of the users to have access to kiosks from both their own vendor and the other vendor. You configure groups as follows:
 
