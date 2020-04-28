@@ -23,24 +23,24 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats –- in real time. 
+Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats — in real time. 
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
 With live response, analysts can do all of the following tasks:
-- Run basic and advanced commands to do investigative work on a device
-- Download files such as malware samples and outcomes of PowerShell scripts
-- Download files in the background (new!)
-- Upload a PowerShell script or executable to the library and run it on a device from a tenant level
-- Take or undo remediation actions
+- Run basic and advanced commands to do investigative work on a device.
+- Download files such as malware samples and outcomes of PowerShell scripts.
+- Download files in the background (new!).
+- Upload a PowerShell script or executable to the library and run it on a device from a tenant level.
+- Take or undo remediation actions.
 
 ## Before you begin
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows 10** <br/>
+- **Verify that you're running a supported version of Windows 10**. <br/>
 Devices must be running one of the following versions of Windows 10:
    - [1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
    - [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
@@ -48,29 +48,29 @@ Devices must be running one of the following versions of Windows 10:
    - [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
    - [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 
-- **Make sure to install appropriate security updates**<br/>
+- **Make sure to install appropriate security updates**.<br/>
    - 1903: [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
    - 1809 (RS5): [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
    - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
    - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-- **Enable live response from the settings page**<br>
+- **Enable live response from the settings page**.<br>
 You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
     
-- **Ensure that the machine has an Automation Remediation level assigned to it**<br>
-You'll need to enable, at least, the minimum Remdiation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+- **Ensure that the machine has an Automation Remediation level assigned to it**.<br>
+You'll need to enable, at least, the minimum Remediation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
-- **Enable live response unsigned script execution** (optional) <br>
+- **Enable live response unsigned script execution** (optional). <br>
 
     >[!WARNING]
     >Allowing the use of unsigned scripts may increase your exposure to threats.
  
   Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
-- **Ensure that you have the appropriate permissions**<br>
+- **Ensure that you have the appropriate permissions**.<br>
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
@@ -133,7 +133,7 @@ drivers |  Shows all drivers installed on the device. |
 |`trace` | Sets the terminal's logging mode to debug. |
 
 ### Advanced commands
-The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see [Create and manage roles](user-roles.md). 
 
 | Command | Description |
 |---|---|
@@ -166,9 +166,9 @@ For scenarios when you'd like get a file from a device you're investigating, you
 
 To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
 
-- To download a file in the background, in the live response command console, type `download <file_path> &`
+- To download a file in the background, in the live response command console, type `download <file_path> &`.
 - If you are waiting for a file to be downloaded, you can move it to the background by using Ctrl + Z.
-- To bring a file download to the foreground, in the live response command console, type `fg <command_id>`  
+- To bring a file download to the foreground, in the live response command console, type `fg <command_id>`.
 
 Here are some examples:
 
@@ -176,7 +176,7 @@ Here are some examples:
 |Command  |What it does  |
 |---------|---------|
 |`"C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
-|`fg 1234`     |Returns a download with command ID *1234* to the foreground         |
+|`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
 
 
 ### Put a file in the library
@@ -280,11 +280,11 @@ Each command is tracked with full details such as:
 
 ## Limitations
 
-- Live response sessions are limited to 10 live response sessions at a time
-- Large scale command execution is not supported
-- A user can only initiate one session at a time
-- A device can only be in one session at a time
-- There is a file size limit of 750mb when downloading files from a device
+- Live response sessions are limited to 10 live response sessions at a time.
+- Large scale command execution is not supported.
+- A user can only initiate one session at a time.
+- A device can only be in one session at a time.
+- There is a file size limit of 750mb when downloading files from a device.
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
