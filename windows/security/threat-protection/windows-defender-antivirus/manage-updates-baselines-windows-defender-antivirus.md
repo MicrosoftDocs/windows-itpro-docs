@@ -1,6 +1,6 @@
 ---
-title: Manage Microsoft Defender Antivirus updates and apply baselines
-description: Manage how Microsoft Defender Antivirus receives protection and product updates.
+title: Manage Windows Defender Antivirus updates and apply baselines
+description: Manage how Windows Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Manage Microsoft Defender Antivirus updates and apply baselines
+# Manage Windows Defender Antivirus updates and apply baselines
 
 **Applies to:**
 
@@ -32,7 +32,7 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads Security intelligence updates to provide protection. 
+Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads Security intelligence updates to provide protection. 
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the Security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
@@ -213,15 +213,16 @@ During the technical support (only) phase, commercially reasonable support incid
 ### Platform version included with Windows 10 releases
 The below table provides the Windows Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
 
-|Windows 10 release  |Platform version  |Engine version |Support phase | 
+|Windows 10 release  |Platform version  |Engine version |Support phase |
 |-|-|-|-|
-|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only)
-|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only)
-|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only)
-|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade Support (Only)
-|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade Support (Only)
-|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only)
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only)
+|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
+|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
+|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
+|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade Support (Only) |
+|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade Support (Only) |
+|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
+|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
+
 Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)
 
 ## In this section
