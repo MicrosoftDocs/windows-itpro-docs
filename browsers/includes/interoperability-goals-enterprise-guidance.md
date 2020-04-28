@@ -26,8 +26,8 @@ You must continue using IE11 if web apps use any of the following:
 
 If you have uninstalled IE11, you can download it from the Microsoft Store or the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. 
 
->[!TIP]
->If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=620714).  
+> [!TIP]
+> If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=620714).  
 
 
 |Technology  |Why it existed  |Why we don't need it anymore  |
@@ -38,4 +38,3 @@ If you have uninstalled IE11, you can download it from the Microsoft Store or th
 
 
 ---
-

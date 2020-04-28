@@ -44,9 +44,9 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 
 The following features are included in the preview release:
-- [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
+- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
 
-- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information.
+- [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
 
  - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019. See [Secure Configuration Assessment (SCA) for Windows Server now in public preview](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/secure-configuration-assessment-sca-for-windows-server-now-in/ba-p/1243885) and [Reducing risk with new Threat & Vulnerability Management capabilities](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/reducing-risk-with-new-threat-amp-vulnerability-management/ba-p/978145) blogs for more information.
 

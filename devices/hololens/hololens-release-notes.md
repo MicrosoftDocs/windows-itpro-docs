@@ -3,7 +3,7 @@ title: HoloLens release notes
 description: Learn about updates in each new HoloLens release.
 author: scooley
 ms.author: scooley
-manager: dansimp
+manager: laurawi
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
@@ -26,7 +26,7 @@ appliesto:
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
-### Coming Soon
+### April Update - build 18362.1059
 
 **Dark mode for supported apps** 
 

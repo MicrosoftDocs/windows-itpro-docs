@@ -11,9 +11,9 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/6/2020
+ms.date: 4/14/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens 2
 ---
@@ -64,7 +64,7 @@ Here's a quick summary of what's new:
 - Support for FIDO2 Security Keys to enable secure and easy authentication for shared devices
 - Seamlessly apply a provisioning package from a USB drive to your HoloLens
 - Use a provisioning packages to enroll your HoloLens to your Mobile Device Management system
-- Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use.  Send a note to hlappreview@microsoft.com to join the preview.
+- Use Windows Autopilot to set up and pre-configure new devices, quickly getting them ready for productive use. To participate in the program you'll need to meet a few requirements. While the program is in preview mode you'll need to be using Microsoft Intune. You'll need to use a tenant that is flighted for HoloLens. Lastly you'll need to have installed an insider preview buildon your HoloLens 2. To praticipate in the preview of this new program send a note to hlappreview@microsoft.com to join the preview.
 - Dark Mode - HoloLens customers can now choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
 - Support for additional system voice commands
 - An updated Cortana app with a focus on productivity
@@ -88,7 +88,7 @@ Provisioning packages let you set HoloLens configuration through a config file r
 1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package.
 
 ### System voice commands
-You can now can access these commands with your voice:
+You can now access these commands with your voice:
 - "Restart device"
 - "Shutdown device"
 - "Brightness up"
@@ -119,6 +119,19 @@ Here are some of the in-box apps that support Dark mode!
 - Photos
 - 3D Viewer
 - Movies & TV
+
+### Windows Autopilot for HoloLens 2
+
+This Autopilot program supports Autopilot self-deploying mode to provision HoloLens 2 devices as shared devices under your tenant. Self-deploying mode leverages the device's preinstalled OEM image and drivers during the provisioning process. A user can provision the device without putting the device on and going through the Out-of-the-box Experience (OOBE).
+
+When a user starts the Autopilot self-deploying process, the process completes the following steps:
+1. Join the device to Azure Active Directory (Azure AD). 
+2. Use Azure AD to enroll the device in Microsoft Intune (or another MDM service).
+3. Download the device-targeted policies, certificates, and networking profiles.
+4. Provision the device.
+5. Present the sign-in screen to the user.
+
+For full information about Autopilot, see [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md).
 
 ### FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.
