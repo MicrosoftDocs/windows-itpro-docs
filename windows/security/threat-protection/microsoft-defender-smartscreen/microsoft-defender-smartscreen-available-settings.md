@@ -214,7 +214,7 @@ To better help you protect your organization, we recommend turning on and using 
 ## Related topics
 - [Threat protection](../index.md)
 
-- [Microsoft Defender SmartScreen overview](windows-defender-smartscreen-overview.md)
+- [Microsoft Defender SmartScreen overview](microsoft-defender-smartscreen-overview.md)
 
 - [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies)
 
