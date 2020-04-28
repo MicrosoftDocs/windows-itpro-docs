@@ -14,6 +14,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 
@@ -59,7 +60,7 @@ The key value is a DWORD with  **0** = disabled and **1** = enabled.
 | 1 | Cortana voiceover is enabled |
 | No value | Device will fall back to default behavior of the edition |
 
-To change this key value, use WCD tool to create as PPKG as documented [here](https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#nforce).
+To change this key value, use WCD tool to create as PPKG as documented in [OOBE (Windows Configuration Designer reference)](https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#nforce).
 
 ### Bitlocker encryption
 

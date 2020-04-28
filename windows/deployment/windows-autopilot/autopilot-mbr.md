@@ -70,7 +70,7 @@ To deregister an Autopilot device from Intune, an IT Admin would:
 
 The deregistration process will take about 15 minutes.  You can accelerate the process by clicking the "Sync" button, then "Refresh" the display until the device is no longer present.
 
-More details on deregistering devices from Intune can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group).
+More details on deregistering devices from Intune can be found at [Enroll Windows devices in Intune by using the Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group).
 
 ### Deregister from MPC
 
