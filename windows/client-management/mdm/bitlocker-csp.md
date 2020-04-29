@@ -1085,7 +1085,7 @@ Value type is int. Supported operation is Get.
 
 Supported values:  
 - 0 - Indicates that the device is compliant.
-- Any non-zero value - Represents a bitmask indicating that the device is not compliant. The following tables provides the mapping of each bit with the error code:
+- Any non-zero value - Indicates that the device is not compliant. This value represents a bitmask with each bit and the corresponding error code described in the following table:
 
 | Bit | Error Code |
 |-----|------------|
