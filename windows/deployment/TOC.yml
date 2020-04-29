@@ -15,9 +15,9 @@
               href: file1.md
             - name: Windows update fundamentals
               href: file1.md
-            - name: Types of Windows updates
+            - name: Types of Windows updates (consolidate)
               href: file1.md
-            - name: Servicing the Windows 10 operating system (retitled)
+            - name: Servicing the Windows 10 operating system (retitled, consolidate?)
               href: file1.md
 
         - name: Deployment proof of concept
@@ -34,13 +34,13 @@
                   href: file1.md         
 
     - name: Plan
-      items: 
-        - name: Create a deployment plan (new)
-          href: file1.md 
+      items:
         - name: Windows 10 deployment considerations (rewrite)
-          href: file1.md           
+          href: file1.md  
+        - name: Create a deployment plan (new)
+          href: file1.md
         - name: Evaluate infrastructure and tools (new)
-          href: file1.md 
+          href: file1.md
         - name: Determine application readiness (new)
           href: file1.md 
         - name: Define your servicing strategy (new)
@@ -67,6 +67,8 @@
         - name: Evaluate and update deployment processes (new)
           href: file1.md 
         - name: Test and remediate your applications (new)
+          href: file1.md
+        - name: Set up Delivery Optimization for Windows 10 updates
           href: file1.md
         - name: Configure BranchCache for Windows 10 updates
           href: file1.md
@@ -125,18 +127,18 @@
               href: file1.md
             - name: Deploy updates with Group Policy
               href: file1.md
-            - name: Manage device restarts after updates
-              href: file1.md
-            - name: Manage additional Windows Update settings
-              href: file1.md 
-            - name: Determine the source of Windows Updates
-              href: file1.md
             - name: Update Windows 10 media with Dynamic Update
               href: file1.md
-            - name: Deploy feature updates during maintenance windows
-              href: file1.md  
-            - name: Deploy feature updates for user-initiated installations
-              href: file1.md        
+            - name: Manage Windows 10 updates
+              items:              
+                - name: Manage device restarts after updates
+                  href: file1.md
+                - name: Manage additional Windows Update settings
+                  href: file1.md 
+                - name: Deploy feature updates during maintenance windows
+                  href: file1.md  
+                - name: Deploy feature updates for user-initiated installations
+                  href: file1.md        
         - name: Use Windows Update for Business
           items:
             - name: Configure Windows Update for Business
@@ -184,6 +186,8 @@
             - name: Troubleshoot Windows Update
               items:
                 - name: How to troubleshoot Windows Update
+                  href: file1.md
+                - name: Determine the source of Windows Updates (find this topic)
                   href: file1.md
                 - name: Common Windows Update errors
                   href: file1.md
