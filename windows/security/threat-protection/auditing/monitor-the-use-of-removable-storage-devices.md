@@ -49,7 +49,8 @@ After you configure the settings to monitor removable storage devices, use the f
 
 1.  Sign in to the computer that hosts the resources that you want to monitor. Press the Windows key + R, and then type **cmd** to open a Command Prompt window.
 
-    >**Note:**  If the User Account Control dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+    > [!NOTE]
+    > If the User Account Control dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
      
 2.  Type **gpupdate /force**, and press ENTER.
 3.  Connect a removable storage device to the targeted computer and attempt to copy a file that is protected with the Removable Storage Audit policy.
@@ -59,7 +60,8 @@ After you configure the settings to monitor removable storage devices, use the f
 
     Key information to look for includes the name and account domain of the user who attempted to access the file, the object that the user is attempting to access, resource attributes of the resource, and the type of access that was attempted.
 
-    >**Note:**  We do not recommend that you enable this category on a file server that hosts file shares on a removable storage device. When Removable Storage Auditing is configured, any attempt to access the removable storage device will generate an audit event.
+    > [!NOTE]
+    > We do not recommend that you enable this category on a file server that hosts file shares on a removable storage device. When Removable Storage Auditing is configured, any attempt to access the removable storage device will generate an audit event.
      
 ### Related resource
 
