@@ -324,11 +324,9 @@
 ##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
 
+### [Behavioral blocking and containment]()
+#### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
-
-
-
-
 
 ### [Automated investigation and response]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
