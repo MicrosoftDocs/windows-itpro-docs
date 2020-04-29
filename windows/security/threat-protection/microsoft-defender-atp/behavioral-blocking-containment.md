@@ -36,10 +36,10 @@ Behavioral blocking and containment capabilities include the following:
 
 - **On-client, policy-driven [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)**. Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft Defender Security Center (https://securitycenter.windows.com) as informational alerts. (This capability is not enabled by default; you turn it on on the Microsoft Defender Security Center.)
 
-- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)**. When enabled, blocks malicious artifacts or behaviors that are observed through post-breach protection, even if Windows Defender Antivirus is not the primary antivirus solution.
+- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)**. Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (This capability is not enabled by default; you turn it on on the Microsoft Defender Security Center.)
 
-## Related articles
+## Next steps
 
-- [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+- [Configure your attack surface reduction rules](attack-surface-reduction.md)
 
-- [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)
+- [Enable EDR in block mode](edr-in-block-mode.md)
