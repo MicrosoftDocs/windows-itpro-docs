@@ -12,6 +12,7 @@ ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Updates using forward and reverse differentials
@@ -36,8 +37,6 @@ The following general terms apply throughout this document:
 - *Base version*: A major software release with significant changes, such as Windows 10, version 1809 (Windows 10 Build 17763.1)
 - *Revision*: Minor releases in between the major version releases, such as KB4464330 (Windows 10 Build 17763.55)
 - *Baseless Patch Storage Files (Baseless PSF)*: Patch storage files that contain full binaries or files
-
-## Introduction
 
 In this paper, we introduce a new technique that can produce compact software
 updates optimized for any origin/destination revision pair. It does this by

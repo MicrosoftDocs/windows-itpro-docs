@@ -15,7 +15,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
-ms.custom: seo-marvel-mar2020
+ms.custom: seo-marvel-apr2020
 ---
 
 # Appendix: Information sent to Microsoft during activation
@@ -66,7 +66,7 @@ Standard computer information is also sent, but your computer's IP address is on
 Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft does not use the information to contact individual consumers.
 For additional details, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
 
-## See also
+## Related topics
 
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
  
