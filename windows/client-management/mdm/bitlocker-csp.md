@@ -1081,13 +1081,11 @@ This node reports compliance state of device encryption on the system.
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
-Supported values:  
-- 0 - Indicates that the device is compliant.
-- Any non-zero value - Indicates that the device is not compliant. This value represents a bitmask with each bit explained by values in the table below.
-
 Value type is int. Supported operation is Get.
 
-The following table provides the mapping of the bits in the **Status/DeviceEncryptionStatus** node to the  error codes:  
+Supported values:  
+- 0 - Indicates that the device is compliant.
+- Any non-zero value - Represents a bitmask indicating that the device is not compliant. The following tables provides the mapping of each bit with the error code:
 
 | Bit | Error Code |
 |-----|------------|
