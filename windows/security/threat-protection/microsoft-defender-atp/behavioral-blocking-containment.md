@@ -24,9 +24,11 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-## Overview of behavioral blocking and containment
+## Behavioral blocking and containment overview
 
 Not all cyberattacks involve a simple piece of malware that's found and removed. Some attacks, such as fileless attacks, are much more difficult to identify, let alone contain. Microsoft Defender ATP includes behavioral blocking and containment capabilities that can help identify and stop threats with machine learning, pre- and post-breach. In almost real-time, when a suspicious behavior or artifact is detected and determined to be malicious, the threat is blocked. Pre-execution models learn about that threat, and prevent it from running on other endpoints. 
+
+## Behavioral blocking and containment capabilities
 
 Behavioral blocking and containment capabilities include the following:
 
