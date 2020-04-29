@@ -29,7 +29,7 @@ ms.collection:
 When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is enabled, Microsoft Defender ATP leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post-breach. 
 
 > [!NOTE]
-> EDR in block mode is currently in **[preview](#can-i-participate-in-the-preview-of-edr-in-block-mode)**. To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
+> EDR in block mode is currently in **[limited private preview](#can-i-participate-in-the-preview-of-edr-in-block-mode)**. To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
 
 ## What happens when something is detected?
 
@@ -87,7 +87,9 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 If you would like to participate in this preview program, send email to `shwjha@microsoft.com`. 
 
-## Related article
+## Related articles
+
+[Behavioral blocking and containment](behavioral-blocking-containment.md)
 
 [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
 
