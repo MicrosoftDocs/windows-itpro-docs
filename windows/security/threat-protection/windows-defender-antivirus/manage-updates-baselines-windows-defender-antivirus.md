@@ -28,8 +28,8 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 2. Product updates
 
 > [!IMPORTANT]
-> Keeping Windows Defender Antivirus up to date is crucial to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
-> This also applies to devices where Windows Defender Antivirus is running in [passive mode](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility).
+> Keeping Windows Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
+> This also applies to devices where Windows Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility).
 
 ## Security intelligence updates
 
@@ -43,70 +43,64 @@ Engine updates are included with the Security intelligence updates and are relea
 
 Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
-For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 ## Released platform and engine versions
 
 ### Monthly platform and engine releases
-For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/en-us/help/4052623/update-for-windows-defender-antimalware-platform)
+For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) 
+
+All our updates contain:
+* performance improvements
+* serviceability improvements
+* Integration improvements (Cloud, MTP)  
+<br/>
 
 <details>
 <summary> April-2020 (Platform: 4.18.2004.5 | Engine: 1.1.17000.2)</summary>
 
-Security intelligence update version: **TBD**  
-Released: **April 30, 2020**  
-Platform: **4.18.2004.5**  
-Engine: **1.1.17000.2**  
-Support phase: **Security and Critical Updates**
+&ensp;Security intelligence update version: **TBD**  
+&ensp;Released: **April 30, 2020**  
+&ensp;Platform: **4.18.2004.5**  
+&ensp;Engine: **1.1.17000.2**  
+&ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
+* WDfilter improvements
+* Add more actionable event data to ASR detection events
+* Fixed version information in diagnostic data and WMI
+* Fixed incorrect platform version in UI after platform update
+* Dynamic URL intel for Fileless threat protection
+* UEFI scan capability
+* Extend logging for updates
 
-:::row:::
-    :::column:::
-        **Platform**
-        * fix1
-        * fix2
-
-    :::column-end:::
-    :::column:::
-        **Engine**
-        * fix1
-        * fix2
-    :::column-end:::
-:::row-end:::
-   
 ### Known Issues
 No known issues  
+<br/>
 </details>
 
 <details>
 <summary> March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</summary>
 
-Security intelligence update version: **1.313.8.0**  
-Released: **March 24, 2020**  
-Platform: **4.18.2003.8**  
-Engine: **1.1.16900.4**  
-Support phase: **Technical upgrade Support (Only)**
+&ensp;Security intelligence update version: **1.313.8.0**  
+&ensp;Released: **March 24, 2020**  
+&ensp;Platform: **4.18.2003.8**  
+&ensp;Engine: **1.1.16900.4**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 
-:::row:::
-    :::column:::
-        **Platform**
-        * fix1
-        * fix2
-
-    :::column-end:::
-    :::column:::
-        **Engine**
-        * fix1
-        * fix2
-    :::column-end:::
-:::row-end:::
+* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus)
+* Improve diagnostic capability
+* reduce Security intelligence timeout (5min)
+* Extend AMSI engine internal log capability
+* Improve notification for process blocking
    
 ### Known Issues
-No known issues
+[**Fixed**] Windows Defender Antivirus is skipping files when running a scan.
+
+<br/>
 </details>
 
 <details>
@@ -122,22 +116,10 @@ No known issues
      
 ### What's new
 
-:::row:::
-    :::column:::
-        **Platform**
-        * fix1
-        * fix2
-
-    :::column-end:::
-    :::column:::
-        **Engine**
-        * fix1
-        * fix2
-    :::column-end:::
-:::row-end:::
-   
+  
 ### Known Issues
 No known issues
+<br/>
 </details>
 
 <details>
@@ -152,22 +134,18 @@ Support phase: **Technical upgrade Support (Only)**
      
 ### What's new
 
-:::row:::
-    :::column:::
-        **Platform**
-        * fix1
-        * fix2
-
-    :::column-end:::
-    :::column:::
-        **Engine**
-        * fix1
-        * fix2
-    :::column-end:::
-:::row-end:::
+* Fixed BSOD on WS2016 with Exchange
+* Support platform updates when TMP is redirected to network path
+* Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+* extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)
+* Fix 4.18.1911.10 hang
    
 ### Known Issues
-No known issues
+[**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
+<br/>
+> [!IMPORTANT]
+> This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
+<br/>
 </details>
 
 <details>
@@ -181,22 +159,14 @@ Support phase: **No support**
      
 ### What's new
 
-:::row:::
-    :::column:::
-        **Platform**
-        * fix1
-        * fix2
-
-    :::column-end:::
-    :::column:::
-        **Engine**
-        * fix1
-        * fix2
-    :::column-end:::
-:::row-end:::
+* Fixed MpCmdRun tracing level
+* Fixed WDFilter version info
+* Improve notifications (PUA)
+* add MRT logs to support files
    
 ### Known Issues
 No known issues
+<br/>
 </details>
 
 ## Windows Defender Antivirus platform support
@@ -226,7 +196,7 @@ The below table provides the Windows Defender Antivirus platform and engine vers
 |1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
 
-Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)
+Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 
 ## In this section
