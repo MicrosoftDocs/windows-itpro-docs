@@ -284,7 +284,6 @@ Each command is tracked with full details such as:
 - Large scale command execution is not supported.
 - A user can only initiate one session at a time.
 - A device can only be in one session at a time.
-- There is a file size limit of 750mb when downloading files from a device.
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
