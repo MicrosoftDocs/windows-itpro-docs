@@ -56,7 +56,7 @@ Make sure that [this list](hololens-offline.md) of endpoints are allowed on your
 ### Remote Assist Specific Network Requirements
 
 1. The recommended bandwidth for optimal performance of Remote Assist is 1.5Mbps. Detailed network requirements and additional information can be found [here](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
-**(Please note, if you don’t network have network speeds of at least 1.5Mbps, Remote Assist will still work. However, quality may suffer).**
+**(Please note, if you don't network have network speeds of at least 1.5Mbps, Remote Assist will still work. However, quality may suffer).**
 1. Make sure that these ports and URLs are allowed on your network firewall. This will enable Microsoft Teams to function. The latest list can be found [here](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 ### Guides Specific Network Requirements
@@ -73,18 +73,18 @@ Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md) for a
 
 1. If you plan on using Auto Enrollment, you will have to [Configure Azure AD enrollment.](https://docs.microsoft.com/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
-1. Ensure that your company’s users are in Azure Active Directory (Azure AD).
+1. Ensure that your company's users are in Azure Active Directory (Azure AD).
 Instructions for adding users can be found [here](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 1. We suggest that users who need similar licenses are added to the same group.
     1. [Create a Group](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [Add users to groups](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
-1. Ensure that your company’s users (or group of users) are assigned the necessary licenses.
+1. Ensure that your company's users (or group of users) are assigned the necessary licenses.
 Directions for assigning licenses can be found [here](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).
 
 1. Only do this step if users are expected to enroll their HoloLens/Mobile device into you (There are three options)
-These steps ensure that your company’s users (or a group of users) can add devices.
+These steps ensure that your company's users (or a group of users) can add devices.
     1. **Option 1:** Give all users permission to join devices to Azure AD.
 **Sign in to the Azure portal as an administrator** > **Azure Active Directory** > **Devices** > **Device Settings** >
 **Set Users may join devices to Azure AD to *All***
@@ -163,7 +163,7 @@ Directions for upgrading to the commercial suite can be found [here](https://doc
 
 1. Check your app settings
     1. Log into your Microsoft Store Business account
-    1. **Manage > Products and Services > Apps and Software > Select the app you want to sync > Private Store Availability > Select “Everyone” or “Specific Groups”**
+    1. **Manage > Products and Services > Apps and Software > Select the app you want to sync > Private Store Availability > Select "Everyone" or "Specific Groups"**
         >[!NOTE]
         >If you don't see the app you want, you will have to "get" the app by searching the store for your app. **Click the "Search" bar in the upper right-hand corner > type in the name of the app > click on the app > select "Get"**.
     1. If you do not see your apps in **Intune > Client Apps > Apps** , you may have to [sync your apps](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) again.
@@ -171,11 +171,11 @@ Directions for upgrading to the commercial suite can be found [here](https://doc
 1. [Create a device profile for Kiosk mode](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> You can configure different users to have different Kiosk Mode experiences by using “Azure AD” as the “User logon type”. However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
+> You can configure different users to have different Kiosk Mode experiences by using "Azure AD" as the "User logon type". However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
 
 ![Image that shows Configuration of Kiosk Mode in Intune](images/aad-kioskmode.png)
 
-For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, additional directions can be found [here](hololens-kiosk.md#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803)
+For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, additional directions can be found [here](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 ## Certificates and Authentication
 
