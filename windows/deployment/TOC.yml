@@ -5,18 +5,21 @@
       items: 
         - name: What's new in Windows 10 deployment
           href: file1.md
-        - name: Learn about Windows 10
+        - name: Windows 10 deployment scenarios (update)
           href: file1.md
-        - name: What is Windows as a service?
+        - name: Deployment process posters
           href: file1.md
-        - name: Windows update fundamentals
-          href: file1.md
-        - name: Types of Windows updates
-          href: file1.md
-        - name: Servicing the Windows 10 operating system
-          href: file1.md
-        - name: Windows 10 deployment scenarios
-          href: file1.md
+        - name: Learn about Windows 10 (new)
+          items:
+            - name: What is Windows as a service? (retitled, consolidated)
+              href: file1.md
+            - name: Windows update fundamentals
+              href: file1.md
+            - name: Types of Windows updates
+              href: file1.md
+            - name: Servicing the Windows 10 operating system (retitled)
+              href: file1.md
+
         - name: Deployment proof of concept
           items: 
             - name: Demonstrate Autopilot deployment on a VM
@@ -32,17 +35,17 @@
 
     - name: Plan
       items: 
-        - name: Plan for Windows 10 deployment
+        - name: Create a deployment plan (new)
           href: file1.md 
-        - name: Windows 10 deployment considerations
+        - name: Windows 10 deployment considerations (rewrite)
           href: file1.md           
-        - name: Create a deployment plan
+        - name: Evaluate infrastructure and tools (new)
           href: file1.md 
-        - name: Evaluate infrastructure and tools
+        - name: Determine application readiness (new)
           href: file1.md 
-        - name: Determine application readiness
-          href: file1.md 
-        - name: Define your servicing strategy
+        - name: Define your servicing strategy (new)
+          href: file1.md
+        - name: Best practices for feature updates on mission-critical devices
           href: file1.md  
         - name: Plan for volume activation
           href: file1.md 
@@ -57,13 +60,17 @@
 
     - name: Prepare
       items: 
-        - name: Prepare to deploy Windows 10
+        - name: Prepare to deploy Windows 10 (new)
           href: file1.md 
-        - name: Evaluate and update infrastructure
+        - name: Evaluate and update infrastructure (new)
           href: file1.md 
-        - name: Evaluate and update deployment processes
+        - name: Evaluate and update deployment processes (new)
           href: file1.md 
-        - name: Prepare deployment tools
+        - name: Test and remediate your applications (new)
+          href: file1.md
+        - name: Configure BranchCache for Windows 10 updates
+          href: file1.md
+        - name: Prepare your deployment tools (new)
           items:
             - name: Register devices for deployment with Windows Autopilot
               href: file1.md
@@ -71,60 +78,125 @@
               href: file1.md
             - name: Prepare for deployment with Configuration Manager
               href: file1.md
+        - name: Build a successful servicing strategy
+          items:
+            - name: Build deployment rings for Windows 10 updates
+              href: file1.md
+            - name: Prepare updates using Windows Update for Business
+              href: file1.md
+            - name: Prepare updates using WSUS (retitle)
+              href: file1.md
 
     - name: Deploy
       items: 
         - name: Deploy Windows 10
           items:
-            - name: Deployment process posters
-              href: file1.md
             - name: Deploy Windows 10 with Autopilot
-              items:
-                - name: Windows Autopilot overview
+              href: file1.md
             - name: Deploy Windows 10 with Configuration Manager
               items:
                 - name: Deploy to a new device
+                  href: file1.md
                 - name: Refresh a device
+                  href: file1.md
                 - name: Replace a device
+                  href: file1.md
                 - name: In-place upgrade
+                  href: file1.md
             - name: Deploy Windows 10 with MDT
               items:
                 - name: Deploy to a new device
+                  href: file1.md
                 - name: Refresh a device
+                  href: file1.md
                 - name: Replace a device
+                  href: file1.md
                 - name: In-place upgrade
+                  href: file1.md
         - name: Deploy Windows 10 updates
           items:
+            - name: Assign devices to servicing channels (retitle)
+              href: file1.md
             - name: Deploy updates with Configuration Manager
+              href: file1.md
             - name: Deploy updates with Intune
+              href: file1.md
             - name: Deploy updates with WSUS
+              href: file1.md
             - name: Deploy updates with Group Policy
-        - name: Troubleshoot
+              href: file1.md
+            - name: Manage device restarts after updates
+              href: file1.md
+            - name: Manage additional Windows Update settings
+              href: file1.md 
+            - name: Determine the source of Windows Updates
+              href: file1.md
+            - name: Update Windows 10 media with Dynamic Update
+              href: file1.md
+            - name: Deploy feature updates during maintenance windows
+              href: file1.md  
+            - name: Deploy feature updates for user-initiated installations
+              href: file1.md        
+        - name: Use Windows Update for Business
           items:
-            - name: Resolve Windows 10 upgrade errors
+            - name: Configure Windows Update for Business
               href: file1.md
-            - name: Quick fixes
+            - name: Enforcing compliance deadlines for updates
               href: file1.md
-            - name: SetupDiag
+            - name: Integrate Windows Update for Business with management solutions
               href: file1.md
-            - name: Troubleshooting upgrade errors
+            - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: file1.md
-            - name: Windows error reporting
+            - name: 'Walkthrough: use Intune to configure Windows Update for Business'
               href: file1.md
-            - name: Upgrade error codes
+        - name: Monitor Windows 10 updates
+          items:
+            - name: Monitor Delivery Optimization
               href: file1.md
-            - name: Log files
-              href: file1.md
-            - name: Resolution procedures
-              href: file1.md
-            - name: Submit Windows 10 upgrade errors
-              href: file1.md
+            - name: Monitor Windows Updates with Update Compliance
+              items:
+              - name: Get started with Update Compliance
+                href: file1.md
+              - name: Use Update Compliance
+                href: file1.md
+        - name: Troubleshooting
+          items:
+            - name: Resolve upgrade errors
+              items:
+                - name: Resolve Windows 10 upgrade errors
+                  href: file1.md
+                - name: Quick fixes
+                  href: file1.md
+                - name: SetupDiag
+                  href: file1.md
+                - name: Troubleshooting upgrade errors
+                  href: file1.md
+                - name: Windows error reporting
+                  href: file1.md
+                - name: Upgrade error codes
+                  href: file1.md
+                - name: Log files
+                  href: file1.md
+                - name: Resolution procedures
+                  href: file1.md
+                - name: Submit Windows 10 upgrade errors
+                  href: file1.md
+            - name: Troubleshoot Windows Update
+              items:
+                - name: How to troubleshoot Windows Update
+                  href: file1.md
+                - name: Common Windows Update errors
+                  href: file1.md
+                - name: Windows Update error code reference
+                  href: file1.md
 
     - name: Reference
       items:
-        - name: Windows 10 volume license media
+        - name: How does Windows Update work?
           href: file1.md
-        - name: Deploy Windows 10 with Microsoft 365
+        - name: Understanding the Unified Update Platform
+          href: file1.md
+        - name: Servicing stack updates
           href: file1.md
         - name: How Windows Update works (new)
           href: file1.md
@@ -132,12 +204,8 @@
           href: file1.md
         - name: Delivery Optimization reference
           href: file1.md
-        - name: Windows 10 in S mode
-          items:
-            - name:  Windows 10 in S mode overview
-              href: file1.md
-            - name: Switch to Windows 10 Pro/Enterprise from S mode
-              href: file1.md
+        - name: Windows 10 in S mode (consolidate)
+          href: file1.md
         - name: Subscription Activation
           items:
             - name: Windows 10 Subscription Activation
@@ -150,11 +218,14 @@
               href: file1.md
         - name: Windows 10 deployment tools
           items:
-            - name: Windows 10 deployment scenarios and tools
+            - name: Windows 10 deployment scenarios and tools (retitle)
               items:
                 - name: Convert MBR partition to GPT
+                  href: file1.md
                 - name: Configure a PXE server to load Windows PE
+                  href: file1.md
                 - name: Windows ADK for Windows 10 scenarios for IT Pros
+                  href: file1.md
                 - name: Windows To Go
                   items:
                     - name: Deploy Windows To Go in your organization
