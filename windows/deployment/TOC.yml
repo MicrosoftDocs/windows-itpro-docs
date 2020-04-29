@@ -115,6 +115,16 @@
                   href: file1.md
                 - name: In-place upgrade
                   href: file1.md
+            - name: Subscription Activation
+              items:
+                - name: Windows 10 Subscription Activation
+                  href: file1.md
+                - name: Windows 10 Enterprise E3 in CSP
+                  href: file1.md
+                - name: Configure VDA for Subscription Activation
+                  href: file1.md
+                - name: Deploy Windows 10 Enterprise licenses
+                  href: file1.md
         - name: Deploy Windows 10 updates
           items:
             - name: Assign devices to servicing channels (retitle)
@@ -210,16 +220,6 @@
           href: file1.md
         - name: Windows 10 in S mode (consolidate)
           href: file1.md
-        - name: Subscription Activation
-          items:
-            - name: Windows 10 Subscription Activation
-              href: file1.md
-            - name: Windows 10 Enterprise E3 in CSP
-              href: file1.md
-            - name: Configure VDA for Subscription Activation
-              href: file1.md
-            - name: Deploy Windows 10 Enterprise licenses
-              href: file1.md
         - name: Windows 10 deployment tools
           items:
             - name: Windows 10 deployment scenarios and tools (retitle)
