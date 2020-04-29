@@ -167,10 +167,40 @@
               href: file1.md
             - name: Monitor Windows Updates with Update Compliance
               items:
-              - name: Get started with Update Compliance
-                href: file1.md
-              - name: Use Update Compliance
-                href: file1.md
+              - name: Get started
+                items: 
+                  - name: Get started with Update Compliance (consolidate)
+                    href: file1.md
+                  - name: Update Compliance configuration script
+                    href: file1.md
+                  - name: Manually configuring devices for Update Compliance
+                    href: file1.md
+              - name: Update Compliance monitoring
+                items: 
+                  - name: Use Update Compliance
+                    href: file1.md
+                  - name: Need attention report
+                    href: file1.md
+                  - name: Security update status report
+                    href: file1.md
+                  - name: Feature update status report
+                    href: file1.md
+                  - name: Delivery Optimization in Update Compliance
+                    href: file1.md
+                  - name: Data handling and privacy in Update Compliance
+                    href: file1.md
+                  - name: Update Compliance schema reference
+                    items:
+                      - name: WaaSUpdateStatus
+                        href: file1.md
+                      - name: WaaSInsiderStatus
+                        href: file1.md
+                      - name: WaaSDepoymentStatus
+                        href: file1.md
+                      - name: WUDOStatus
+                        href: file1.md
+                      - name: WUDOAggregatedStatus
+                        href: file1.md
         - name: Troubleshooting
           items:
             - name: Resolve upgrade errors
