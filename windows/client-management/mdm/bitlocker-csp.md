@@ -330,18 +330,18 @@ The possible values for 'yy' are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
@@ -405,18 +405,18 @@ Sample value for this node to enable this policy is:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -492,18 +492,18 @@ The possible values for 'xx' are:
 Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:
 
 ```xml
-                        <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+<Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 > [!NOTE]
@@ -592,18 +592,18 @@ The possible values for 'zz' are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -698,18 +698,18 @@ The possible values for 'zz' are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -767,18 +767,18 @@ Sample value for this node to enable this policy is:
 If you disable or do not configure this setting, all fixed data drives on the computer will be mounted with read and write access. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -849,18 +849,18 @@ The possible values for 'xx' are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 <!--/Policy-->
 <!--Policy-->
