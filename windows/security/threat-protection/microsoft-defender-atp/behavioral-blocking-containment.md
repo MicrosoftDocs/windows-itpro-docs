@@ -38,6 +38,8 @@ Behavioral blocking and containment capabilities include the following:
 
 - **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)**. Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (This capability is not enabled by default; you turn it on on the Microsoft Defender Security Center.)
 
+As Microsoft continues to improve threat protection features and capabilities, you can expect more to come in the area of behavioral blocking and containment. Visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what's rolling out now and what's in development.
+
 ## Next steps
 
 - [Configure your attack surface reduction rules](attack-surface-reduction.md)
