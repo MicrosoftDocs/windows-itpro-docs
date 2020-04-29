@@ -1083,7 +1083,7 @@ This node reports compliance state of device encryption on the system.
 <!--SupportedValues-->
 Supported values:  
 - 0 - Indicates that the device is compliant.
-- Any other value represents a non-compliant device.
+- Any non-zero value - Indicates that the device is not compliant. This value represents a bitmask with each bit explained by values in the table below.
 
 Value type is int. Supported operation is Get.
 
@@ -1092,7 +1092,7 @@ The following table provides the mapping of the bits in the **Status/DeviceEncry
 | Bit | Error Code |
 |-----|------------|
 | 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
-|  1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
+| 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
 | 2 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
