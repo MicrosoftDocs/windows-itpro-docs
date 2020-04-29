@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/28/2020
+ms.date: 04/29/2020
 ---
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
@@ -52,7 +52,7 @@ Setting "Trust apps with good reputation" to enabled is equivalent to adding [Op
 ### For 1903+ systems
 The steps to use Intune's Custom OMA-URI functionality to leverage the [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) and deploy a custom WDAC policy to 1903+ systems are:
 
-1. Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>`
+1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>`
 2. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 3. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
 4. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Custom** as the **Profile type**.
@@ -79,3 +79,6 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocke
 
 > [!NOTE]
 > Policies deployed through Intune via the AppLocker CSP cannot be deleted through the Intune console. In order to disable WDAC policy enforcement, either deploy an audit-mode policy and/or use a script to delete the existing policy.
+
+> [!NOTE]
+> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
