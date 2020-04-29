@@ -14,7 +14,6 @@
 ## [Windows libraries](windows-libraries.md)
 ## [Troubleshoot Windows 10 clients](windows-10-support-solutions.md)
 ### [Advanced troubleshooting for Windows networking](troubleshoot-networking.md)
-#### [Adjusting PPTP keepalive frequency](adjust-pptp-keepalive-frequency.md)
 #### [Advanced troubleshooting Wireless network connectivity](advanced-troubleshooting-wireless-network-connectivity.md)
 #### [Advanced troubleshooting 802.1X authentication](advanced-troubleshooting-802-authentication.md)
 ##### [Data collection for troubleshooting 802.1X authentication](data-collection-for-802-authentication.md)
