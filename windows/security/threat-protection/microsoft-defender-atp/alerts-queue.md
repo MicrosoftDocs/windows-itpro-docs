@@ -21,11 +21,12 @@ ms.date: 03/27/2020
 # View and organize the Microsoft Defender Advanced Threat Protection Alerts queue
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
-The **Alerts queue** shows a list of alerts that were flagged from machines in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view, with the most recent alerts showing at the top of the list, helping you see the most recent alerts first.
+The **Alerts queue** shows a list of alerts that were flagged from machines in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
 
 >[!NOTE]
 >The alerts queue is significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a machine that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
@@ -33,6 +34,7 @@ The **Alerts queue** shows a list of alerts that were flagged from machines in y
 There are several options you can choose from to customize the alerts queue view. 
 
 On the top navigation you can:
+
 - Select grouped view or list view
 - Customize columns to add or remove columns 
 - Select the items to show per page
@@ -42,32 +44,36 @@ On the top navigation you can:
 ![Image of alerts queue](images/alerts-queue-list.png)
 
 ## Sort, filter, and group the alerts queue
+
 You can apply the following filters to limit the list of alerts and get a more focused view the alerts.
 
 ### Severity
 
 Alert severity | Description
 :---|:---
-High </br>(Red) | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines. Some examples of these are credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
+High </br>(Red) | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of  the severity of damage they can inflict on machines. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
 Medium </br>(Orange) | Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
-Low </br>(Yellow) | Alerts on threats associated with prevalent malware, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
+Low </br>(Yellow) | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
 Informational </br>(Grey) | Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
 #### Understanding alert severity
-It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
+
+Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
 
 The Windows Defender AV threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual machine, if infected.
 
 The Microsoft Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the machine but more importantly the potential risk to the organization.
 
 So, for example:
-- The severity of a Microsoft Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
+
+- The severity of a Microsoft Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage.
 - An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
 - An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
-- Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
+- Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 
 #### Understanding alert categories
-We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will retain the previous category names.
+
+We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
 The table below lists the current categories and how they generally map to previous categories. 
 
@@ -92,39 +98,43 @@ The table below lists the current categories and how they generally map to previ
 
 
 ### Status
+
 You can choose to limit the list of alerts based on their status.
 
 ### Investigation state
+
 Corresponds to the automated investigation state.
 
 ### Category
+
 You can choose to filter the queue to display specific types of malicious activity.
 
 ### Assigned to
+
 You can choose between showing alerts that are assigned to you or automation.
 
 ### Detection source
-Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts managed hunting service.
+
+Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
 
 ### OS platform
+
 Limit the alerts queue view by selecting the OS platform that you're interested in investigating.
 
 ### Machine group
-If you have specific machine groups that you're interested in checking the alerts on, you can select the groups to limit the alerts queue view to display just those machine groups.
+
+If you have specific machine groups that you're interested in checking, you can select the groups to limit the alerts queue view. 
 
 ### Associated threat
+
 Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics.md).
 
-
-
-
-
-
 ## Related topics
+
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
