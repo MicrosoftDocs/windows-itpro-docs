@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/04/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,48 +24,181 @@ manager: dansimp
 
 There are two types of updates related to keeping Windows Defender Antivirus up to date:
 
-1. Protection updates
+1. Security intelligence updates
 2. Product updates
 
-You can also apply [Windows security baselines](https://technet.microsoft.com/itpro/windows/keep-secure/windows-security-baselines) to quickly bring your endpoints up to a uniform level of protection.
+> [!IMPORTANT]
+> Keeping Windows Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
+> This also applies to devices where Windows Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility).
 
-## Protection updates
+## Security intelligence updates
 
-Windows Defender Antivirus uses both [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloaded protection updates to provide protection. These protection updates are also known as Security intelligence updates.
+Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads Security intelligence updates to provide protection. 
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the Security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
 Engine updates are included with the Security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
-Windows Defender Antivirus requires [monthly updates](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
+Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through Windows Server Update Service (WSUS), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
-## Released platform and engine versions
+> [!NOTE]
+> We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
 
-Only the main version is listed in the following table as reference information:
+## Monthly platform and engine versions
 
-Month	| Platform/Client	| Engine
----|---|---
-Apr-2020 | 4.18.2004.x | 1.1.17000.x
-Mar-2020 | 4.18.2003.x | 1.1.16900.x
-Feb-2020	|	- | 1.1.16800.x
-Jan-2020 |	4.18.2001.x	| 1.1.16700.x
-Dec-2019 | - | - |
-Nov-2019	| 4.18.1911.x	| 1.1.16600.x
-Oct-2019	| 4.18.1910.x	| 1.1.16500.x
-Sep-2019	| 4.18.1909.x	| 1.1.16400.x
-Aug-2019	| 4.18.1908.x	| 1.1.16300.x
-Jul-2019	| 4.18.1907.x	| 1.1.16200.x
-Jun-2019	| 4.18.1906.x	| 1.1.16100.x
-May-2019	| 4.18.1905.x	| 1.1.16000.x
-Apr-2019	| 4.18.1904.x	| 1.1.15900.x
-Mar-2019	| 4.18.1903.x	| 1.1.15800.x
-Feb-2019	| 4.18.1902.x	| 1.1.15700.x
-Jan-2019	| 4.18.1901.x	| 1.1.15600.x
-Dec-18	| 4.18.1812.X	| 1.1.15500.x
+For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) 
+
+All our updates contain:
+* performance improvements
+* serviceability improvements
+* Integration improvements (Cloud, MTP)  
+<br/>
+
+<details>
+<summary> April-2020 (Platform: 4.18.2004.5 | Engine: 1.1.17000.2)</summary>
+
+&ensp;Security intelligence update version: **TBD**  
+&ensp;Released: **April 30, 2020**  
+&ensp;Platform: **4.18.2004.5**  
+&ensp;Engine: **1.1.17000.2**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* WDfilter improvements
+* Add more actionable event data to ASR detection events
+* Fixed version information in diagnostic data and WMI
+* Fixed incorrect platform version in UI after platform update
+* Dynamic URL intel for Fileless threat protection
+* UEFI scan capability
+* Extend logging for updates
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</summary>
+
+&ensp;Security intelligence update version: **1.313.8.0**  
+&ensp;Released: **March 24, 2020**  
+&ensp;Platform: **4.18.2003.8**  
+&ensp;Engine: **1.1.16900.4**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
+    
+### What's new
+
+* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus)
+* Improve diagnostic capability
+* reduce Security intelligence timeout (5min)
+* Extend AMSI engine internal log capability
+* Improve notification for process blocking
+   
+### Known Issues
+[**Fixed**] Windows Defender Antivirus is skipping files when running a scan.
+
+<br/>
+</details>
+
+<details>
+
+<summary> February-2020 (Platform: - | Engine: 1.1.16800.2)</summary>
+  
+
+  Security intelligence update version: **1.311.4.0**   
+  Released: **February 25, 2020**  
+  Platform/Client: **-**  
+  Engine: **1.1.16800.2**  
+  Support phase: **N/A**
+     
+### What's new
+
+  
+### Known Issues
+No known issues
+<br/>
+</details>
+
+<details>
+<summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
+  
+
+Security intelligence update version: **1.309.32.0**  
+Released: **January 30, 2020**  
+Platform/Client: **4.18.2001.10**  
+Engine: **1.1.16700.2**  
+Support phase: **Technical upgrade Support (Only)**
+     
+### What's new
+
+* Fixed BSOD on WS2016 with Exchange
+* Support platform updates when TMP is redirected to network path
+* Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+* extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)
+* Fix 4.18.1911.10 hang
+   
+### Known Issues
+[**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
+<br/>
+> [!IMPORTANT]
+> This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
+<br/>
+</details>
+
+<details>
+<summary> November-2019 (Platform: 4.18.1911.2 | Engine: 1.1.16600.7)</summary>
+
+Security intelligence update version: **1.307.13.0**  
+Released: **December 7, 2019**  
+Platform: **4.18.1911.2**  
+Engine: **1.1.17000.7**  
+Support phase: **No support**  
+     
+### What's new
+
+* Fixed MpCmdRun tracing level
+* Fixed WDFilter version info
+* Improve notifications (PUA)
+* add MRT logs to support files
+   
+### Known Issues
+No known issues
+<br/>
+</details>
+
+## Windows Defender Antivirus platform support
+As stated above, platform and engine updates are provided on a monthly cadence.
+Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version.
+
+
+* **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
+ 
+
+* **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
+
+*Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
+
+During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update(*).
+
+### Platform version included with Windows 10 releases
+The below table provides the Windows Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
+
+|Windows 10 release  |Platform version  |Engine version |Support phase |
+|-|-|-|-|
+|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
+|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
+|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
+|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade Support (Only) |
+|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade Support (Only) |
+|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
+|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
+
+Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 
 ## In this section
