@@ -81,7 +81,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 - [Cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-protection-features-windows-defender-antivirus)
 - [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus)
 - [URL Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
-- [Automated sandbox service](https://docs.microsoft.com/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
+- [Automated sandbox service](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
 
 <a name="edr"></a>
 
