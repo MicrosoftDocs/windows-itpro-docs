@@ -93,7 +93,7 @@ No known issues
     
 ### What's new
 
-* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus)
+* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus)
 * Improve diagnostic capability
 * reduce Security intelligence timeout (5min)
 * Extend AMSI engine internal log capability
