@@ -248,7 +248,7 @@ unzip WindowsDefenderATPOnboardingPackage.zip
 
     > [!IMPORTANT]
     > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.<br>
-    > Please note that you may also need to configure a proxy after completing the initial installation: <br> https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
 
