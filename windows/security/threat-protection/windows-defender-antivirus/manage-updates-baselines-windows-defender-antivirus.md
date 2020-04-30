@@ -24,8 +24,8 @@ manager: dansimp
 
 There are two types of updates related to keeping Windows Defender Antivirus up to date:
 
-1. Security intelligence updates
-2. Product updates
+ - Security intelligence updates
+ - Product updates
 
 > [!IMPORTANT]
 > Keeping Windows Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
@@ -33,30 +33,30 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 
 ## Security intelligence updates
 
-Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads Security intelligence updates to provide protection. 
+Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the Security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
-Engine updates are included with the Security intelligence updates and are released on a monthly cadence.
+Engine updates are included with the security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
 Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
 You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
-For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+For more information, see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
 > We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
 
 ## Monthly platform and engine versions
 
-For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) 
+For information how to update or how to install the platform update, please see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 All our updates contain:
 * performance improvements
 * serviceability improvements
-* Integration improvements (Cloud, MTP)  
+* integration improvements (Cloud, MTP)  
 <br/>
 
 <details>
@@ -173,7 +173,7 @@ No known issues
 
 ## Windows Defender Antivirus platform support
 As stated above, platform and engine updates are provided on a monthly cadence.
-Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version.
+Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version:
 
 
 * **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
@@ -181,9 +181,9 @@ Customers must stay current with the latest platform update to be fully supporte
 
 * **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
 
-*Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
+\* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
-During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update(*).
+During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
 ### Platform version included with Windows 10 releases
 The below table provides the Windows Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
@@ -198,7 +198,7 @@ The below table provides the Windows Defender Antivirus platform and engine vers
 |1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
 
-Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
+Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 
 ## In this section
