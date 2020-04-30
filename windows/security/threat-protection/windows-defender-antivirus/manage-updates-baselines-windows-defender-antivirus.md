@@ -33,11 +33,11 @@ There are two types of updates related to keeping Windows Defender Antivirus up 
 
 ## Security intelligence updates
 
-Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads Security intelligence updates to provide protection. 
+Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the Security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
-Engine updates are included with the Security intelligence updates and are released on a monthly cadence.
+Engine updates are included with the security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
@@ -56,7 +56,7 @@ For information how to update or how to install the platform update, please see:
 All our updates contain:
 * performance improvements
 * serviceability improvements
-* Integration improvements (Cloud, MTP)  
+* integration improvements (Cloud, MTP)  
 <br/>
 
 <details>
