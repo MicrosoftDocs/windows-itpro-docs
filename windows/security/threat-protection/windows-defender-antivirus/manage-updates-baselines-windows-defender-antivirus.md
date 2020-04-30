@@ -47,7 +47,7 @@ You can manage the distribution of updates through [Windows Server Update Servic
 For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 > [!NOTE]
-> We release these monthly updates in phases (aka rings). This result in multiple packages showing up in your WSUS server.
+> We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
 
 ## Monthly platform and engine versions
 
