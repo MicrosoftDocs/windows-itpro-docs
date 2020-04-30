@@ -46,9 +46,11 @@ Windows Defender Antivirus requires [monthly updates (KB4052623)](https://suppor
 You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
 For more information see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
-## Released platform and engine versions
+> [!NOTE]
+> We release these monthly updates in phases (aka rings). This result in multiple packages showing up in your WSUS server.
 
-### Monthly platform and engine releases
+## Monthly platform and engine versions
+
 For information how to update or how to install the platform update, please see: [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) 
 
 All our updates contain:
