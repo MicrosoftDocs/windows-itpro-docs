@@ -60,11 +60,11 @@ All our updates contain:
 <br/>
 
 <details>
-<summary> April-2020 (Platform: 4.18.2004.5 | Engine: 1.1.17000.2)</summary>
+<summary> April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</summary>
 
 &ensp;Security intelligence update version: **TBD**  
 &ensp;Released: **April 30, 2020**  
-&ensp;Platform: **4.18.2004.5**  
+&ensp;Platform: **4.18.2004.6**  
 &ensp;Engine: **1.1.17000.2**  
 &ensp;Support phase: **Security and Critical Updates**
     
