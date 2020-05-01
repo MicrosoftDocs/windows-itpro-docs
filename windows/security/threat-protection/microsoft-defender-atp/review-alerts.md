@@ -1,6 +1,6 @@
 ---
 title: Review alerts in Microsoft Defender Advanced Threat Protection
-description: Review alert information, including a visualized attack story and details for each step of the chain.
+description: Review alert information, including a visualized alert story and details for each step of the chain.
 keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
 ms.prod: microsoft-365-enterprise
 ms.pagetype: security
@@ -26,7 +26,7 @@ ms.date: 5/1/2020
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The new alert details page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed attack story.
+The new alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
 
 Quickly triage, investigate and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
 
@@ -37,7 +37,7 @@ Clicking on an alert's name in Microsoft Defender ATP will land you on its alert
 1. **The alert title** shows the alert's name and is there to remind you which alert started your current investigation regardless of what you have selected on the page.
 2. **Affected assets** lists cards of devices and users affected by this alert that are clickable for further information and actions.
 3. **The alert story** displays all entities related to the alert, interconnected by a tree view in chronological order. The alert in the title will be the one in focus when you first land on your selected alert's page. Entities in the alert story are expandable and clickable, to provide additional information and expedite response by allowing you to take actions right in the context of the alert page.
-4. **The details pane** will show the details of the alert in the title at first, with details and actions related to this alert. If you click on any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
+4. **The details pane** will show the details of the selected alert at first, with details and actions related to this alert. If you click on any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
 
 ![An alert page when you first land on it](images/alert-landing-view.png)
 
@@ -59,7 +59,7 @@ Entities are clickable and every entity that isn't an alert is expandable using 
 Expand entities to view details at-a-glance about them. Clicking on an entity will switch the context of the details pane to this entity, and will allow you to review further information, as well as manage that entity. Clicking on *...* to the right of the entity card will reveal all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
 
 > [!NOTE]
-> The attack story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
+> The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
 ![An example of an alert story with an alert in focus and some expanded cards](images/alert-story-tree.png)
 
@@ -80,7 +80,7 @@ Aside for device and user, detailed in the [affected assets part](#review-affect
 
 Once you're done investigating, go back to the alert you started with, mark the alert's status as **Resolved** and classify it as either **False alert** or **True alert**. If you classify it as a true alert, you can also select a determination.
 
-![A snippet of the details pane with a resolved alert and the determination drop-down expanded](images/alert-details-resolved.png)
+![A snippet of the details pane with a resolved alert and the determination drop-down expanded](images/alert-details-resolved-true.png)
 
 ## Related topics
 
