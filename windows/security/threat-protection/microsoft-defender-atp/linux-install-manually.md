@@ -204,19 +204,19 @@ Download the onboarding package from Microsoft Defender Security Center:
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
 
-```bash
-ls -l
-```
+    ```bash
+    ls -l
+    ```
 
-`total 8`
-`-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
+    `total 8`
+    `-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
 
-```bash
-unzip WindowsDefenderATPOnboardingPackage.zip
-```
+    ```bash
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
 
-`Archive:  WindowsDefenderATPOnboardingPackage.zip`
-`inflating: WindowsDefenderATPOnboarding.py`
+    `Archive:  WindowsDefenderATPOnboardingPackage.zip`
+    `inflating: WindowsDefenderATPOnboarding.py`
 
 ## Client configuration
 
@@ -254,21 +254,21 @@ unzip WindowsDefenderATPOnboardingPackage.zip
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-    ```bash
-    mdatp --health realTimeProtectionEnabled
-    ```
+        ```bash
+        mdatp --health realTimeProtectionEnabled
+        ```
 
     - Open a Terminal window. Copy and execute the following command:
 
-    ``` bash
-    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-    ```
+        ``` bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
-    ```bash
-    mdatp --threat --list --pretty
-    ```
+        ```bash
+        mdatp --threat --list --pretty
+        ```
 
 ## Log installation issues
 
