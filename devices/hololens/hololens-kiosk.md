@@ -470,5 +470,5 @@ To set up kiosk mode by using the Windows Device Portal, follow these steps.
 
 ## More information
 
-Watch how to configure a kiosk in a provisioning package.
+Watch how to configure a kiosk by using a provisioning package.  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
