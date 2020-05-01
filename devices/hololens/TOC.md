@@ -64,7 +64,7 @@
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
 ## [Status of the HoloLens services](hololens-status.md)
-## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)
+## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # Resources
 ## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
