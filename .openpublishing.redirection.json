@@ -762,17 +762,17 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
-"redirect_url": "hhttps://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+"redirect_url": "hhttps://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
 "redirect_document_id": true
 },
 {
@@ -1000,6 +1000,11 @@
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference",
 "redirect_document_id": false
 },
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefilecertificateinfobeta-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefilecertificateinfo-table",
+"redirect_document_id": true
+    },
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-alertevents-table.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table",
@@ -13093,18 +13098,18 @@
 },
 {
 "source_path": "windows/keep-secure/windows-defender-smartscreen-available-settings.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/windows-defender-smartscreen-overview.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/windows-defender-smartscreen-set-individual-device.md",
-"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
@@ -15853,7 +15858,23 @@
 },
 {
 "source_path": "windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",    "redirect_document_id": false
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",    
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
+"redirect_document_id": false
 }
 ]
 }
