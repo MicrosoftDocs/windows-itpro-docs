@@ -30,34 +30,57 @@ The new alert details page in Microsoft Defender Advanced Threat Protection (Mic
 
 Quickly triage, investigate and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
 
-## Alert overview
+## Getting started with an alert
 
-Once you select an alert in the alerts page, you will be taken to the alert overview. This overview includes 3 sections:
+Clicking on an alert's name in Microsoft Defender ATP will land you on its alert page. On the alert page, all the information will be shown in context of the selected alert. Each alert page consists of 4 sections:
 
-1. [Title and involved assets](#title-and-involved-assets)
-2. [Alert story](#alert-story)
-3. [Details](#details)
+1. **The alert title** shows the alert's name and is there to remind you which alert started your current investigation regardless of what you have selected on the page.
+2. **Affected assets** lists cards of devices and users affected by this alert that are clickable for further information and actions.
+3. **The alert story** displays all entities related to the alert, interconnected by a tree view in chronological order. The alert in the title will be the one in focus when you first land on your selected alert's page. Entities in the alert story are expandable and clickable, to provide additional information and expedite response by allowing you to take actions right in the context of the alert page.
+4. **The details pane** will show the details of the alert in the title at first, with details and actions related to this alert. If you click on any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
 
-### Title and involved assets
+![An alert page when you first land on it](images/alert-landing-view.png)
 
-In addition to the name of the alert, as displayed in the title, this section provides additional context with impacted assets, such as devices and users that were found to be involved with this alert. You can click the asset cards to see additional information about them in the details section.
+## Review affected assets
 
-### Alert story
+Clicking on a device or a user card in the affected assets sections will switch to the details of the device or user in the details pane.
 
-The attack story details why the alert was triggered, as well as related events that happened before and after in chronological order.
+- **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation or go to the machine page to investigate from the device's point of view.
+- **For users** the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can click *Open user page* to continue the investigation from that user's point of view.
 
-Every entity is expandable and clickable, with alert entities being expanded by default. The expanded part of these entities provides details at-a-glance about the entity. Clicking on an entity will switch the context in the details section to this entity, and will allow you to review further information, as well as manage that entity.
+![A snippet of the details pane when a device is selected](images/alert-device-details.png)
+
+## Investigate using the alert story
+
+The alert story details why the alert was triggered, related events that happened before and after in chronological order, as well as other related entities.
+
+Entities are clickable and every entity that isn't an alert is expandable using the expand icon on the right side of that entity's card. The entity in focus will be indicated by a blue stripe to the left side of that entity's card, with the alert in the title being in focus at first.
+
+Expand entities to view details at-a-glance about them. Clicking on an entity will switch the context of the details pane to this entity, and will allow you to review further information, as well as manage that entity. Clicking on *...* to the right of the entity card will reveal all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
 
 > [!NOTE]
 > The attack story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-### Details
+![An example of an alert story with an alert in focus and some expanded cards](images/alert-story-tree.png)
 
-The details section adjusts dynamically to the selected entity type.
+## Take action from the details pane
 
-By default, the details section will display details for the selected alert. As you work through the attack story, selecting different types of entities, the details section will change to display information relevant to the selected entity type. Selecting involved assets will have the details section display information on the selected user or device.
+Once you've selected an entity of interest, the details pane will change to display information about the selected entity type, historic information when its available, and offer controls to **take action** on this entity directly from the alert page.
 
-Aside for basic details about each entity, the details section displays historic information, when available, and offers controls to *take action* on this entity directly from the alert page.
+Aside for device and user, detailed in the [affected assets part](#review-affected-assets), the following entity types are available:
+
+- Alert
+- Command
+- File
+- Network connection
+- Process
+- Registry
+- Script
+- URL
+
+Once you're done investigating, go back to the alert you started with, mark the alert's status as **Resolved** and classify it as either **False alert** or **True alert**. If you classify it as a true alert, you can also select a determination.
+
+![A snippet of the details pane with a resolved alert and the determination drop-down expanded](images/alert-details-resolved.png)
 
 ## Related topics
 
