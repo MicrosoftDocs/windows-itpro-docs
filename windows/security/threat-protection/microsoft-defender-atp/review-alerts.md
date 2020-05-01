@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 4/24/2020
+ms.date: 5/1/2020
 ---
 
 # Review alerts in Microsoft Defender Advanced Threat Protection
