@@ -150,33 +150,12 @@ For example:
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)
 
 ## Ad-free search with Bing
-Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at https://www.bing.com/classroom/about-us.
+Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
 
 > [!NOTE]  
-> If you enable the guest account in shared PC mode, students using the guest account will not have an ad-free experience searching with Bing in Microsoft Edge unless the PC is connected to your school network and your school network has been configured as described in [IP registration for entire school network using Microsoft Edge](#ip-registration-for-entire-school-network-using-microsoft-edge).
+> Since 2017, Microsoft’s Bing in the Classroom solution has been integrated with Microsoft office 365 Education and requires users to be signed in into Microsoft Edge using their student Azure Active Directory Identity for an ad free experience. For more information on all the possible Bing configuration methods, see [https://aka.ms/e4ahor](https://aka.ms/e4ahor).
 
 ### Configurations
-
-#### IP registration for entire school network using Microsoft Edge
-Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bingintheclassroom@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
-
-**District information**
-- **District or School Name:**
-- **Outbound IP Addresses (IP Range + CIDR):**
-- **Address:**
-- **City:**
-- **State Abbreviation:**
-- **Zip Code:**
-
-**Registrant information**
-- **First Name:**
-- **Last Name:**
-- **Job Title:**
-- **Email Address:**
-- **Opt-In for Email Announcements?:**
-- **Phone Number:**
-
-This will suppress ads when searching with Bing on Microsoft Edge when the PC is connected to the school network. 
 
 #### Azure AD and Office 365 Education tenant
 To suppress ads when searching with Bing on Microsoft Edge on any network, follow these steps:
@@ -185,6 +164,8 @@ To suppress ads when searching with Bing on Microsoft Edge on any network, follo
 2. Domain join the Windows 10 PCs to your Azure AD tenant (this is the same as your Office 365 tenant).
 3. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 4. Have students sign in with their Azure AD identity, which is the same as your Office 365 identity, to use the PC.
+> [!NOTE]
+> If you are verifying your Office 365 domain to prove education status (step 1 above), you may need to wait up to 7 days for the ad-free experience to take effect. Microsoft recommends not to roll out the browser to your students until that time.
 
 #### Office 365 sign-in to Bing
 To suppress ads only when the student signs into Bing with their Office 365 account in Microsoft Edge, follow these steps:
