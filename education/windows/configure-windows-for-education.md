@@ -153,7 +153,7 @@ For example:
 Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
 
 > [!NOTE]  
-> Since 2017, Microsoft’s Bing in the Classroom solution has been integrated with Microsoft office 365 Education and requires users to be signed in into Microsoft Edge using their student Azure Active Directory Identity for an ad free experience. For more information on all the possible Bing configuration methods, see [https://aka.ms/e4ahor](https://aka.ms/e4ahor).
+> Since 2017, Microsoft’s Bing in the Classroom solution has been integrated with Microsoft Office 365 Education and requires users to be signed in into Microsoft Edge using their student Azure Active Directory Identity for an ad free experience. For more information on all the possible Bing configuration methods, see [https://aka.ms/e4ahor](https://aka.ms/e4ahor).
 
 ### Configurations
 
