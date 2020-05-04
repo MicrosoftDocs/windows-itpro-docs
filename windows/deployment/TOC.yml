@@ -137,7 +137,7 @@
               href: file1.md
             - name: Update Windows 10 media with Dynamic Update
               href: file1.md
-            - name: Manage Windows 10 updates
+            - name: Manage the Windows 10 update experience
               items:              
                 - name: Manage device restarts after updates
                   href: file1.md
