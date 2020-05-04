@@ -70,7 +70,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
->[!NOTE]
+> [!NOTE]
 >- Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
 >- You will need to have the “Manage security settings” permission in the Security Center portal to be able to submit a “Consult a threat expert” inquiry.
 
@@ -131,4 +131,3 @@ It is crucial to respond in a timely manner to keep the investigation moving.
 
 ## Related topic
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-
