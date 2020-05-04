@@ -72,7 +72,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 > [!NOTE]
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
->- You will need to have the “Manage security settings” permission in the Security Center portal to be able to submit a “Consult a threat expert” inquiry.
+> - You will need to have the "Manage security settings" permission in the Security Center portal to be able to submit a "Consult a threat expert" inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an investigation request. 
 
