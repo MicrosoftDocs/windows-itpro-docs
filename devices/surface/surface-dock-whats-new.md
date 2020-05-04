@@ -86,12 +86,11 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 |Servicing support|MSI|Windows Update or MSI|
 ||||
 
-<sup>1</sup> Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Holiday 2019 products and forward. Software license required for some features. Sold separately. For more details on SEMM support, visit https://docs.microsoft.com/surface/surface-enterprise-management-mode.
+1. *Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Holiday 2019 products and forward. Software license required for some features. Sold separately.*
 
-<sup>2</sup> Pending release via Windows Update.
+2. *Pending release via Windows Update.*
 
-<sup>3</sup> Software license required for some features. Sold separately. For more details on SEMM support, visit [Microsoft Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
-
+3. *Software license required for some features. Sold separately.*
 
 ## Streamlined device management
 
