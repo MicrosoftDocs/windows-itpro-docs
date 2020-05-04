@@ -56,7 +56,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 
 <p style="margin-left: 20px">Changing the primary enterprise ID is not supported and may cause unexpected behavior on the client.
 
-> [!Note]  
+> [!Note]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
 
  
@@ -96,7 +96,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 
 <p style="margin-left: 20px">The CSP checks the current edition and hardware support (TPM), and returns an error message if the device does not have the required hardware.
 
-> [!Note]  
+> [!Note]
 > This setting is only supported in Windows 10 Mobile.
 
  
@@ -106,7 +106,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 <a href="" id="settings-datarecoverycertificate"></a>**Settings/DataRecoveryCertificate**  
 <p style="margin-left: 20px">Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through mobile device management (MDM) instead of Group Policy.
 
-> [!Note]  
+> [!Note]
 > If this policy and the corresponding Group Policy setting are both configured, the Group Policy setting is enforced.
 
 <p style="margin-left: 20px">DRA information from MDM policy must be a serialized binary blob identical to what we expect from GP.
