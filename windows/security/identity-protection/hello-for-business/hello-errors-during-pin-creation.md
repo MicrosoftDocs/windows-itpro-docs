@@ -98,6 +98,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F0  | ​There is no key registered for the user. |
 | 0x801C03F1  | ​There is no UPN in the token. |
 | ​0x801C044C  | There is no core window for the current thread. |
+| 0x801c004D  | Unable to enroll a device to use a PIN for login. |
 
 
 ## Related topics
