@@ -498,21 +498,21 @@
                   href: file1.md
                 - name: Using the Sdbinst.exe Command-Line Tool
                   href: file1.md
-                - name: Volume Activation [client]
+                - name: Volume Activation 
                   href: file1.md
-                - name: Plan for volume activation [client]
+                - name: Plan for volume activation 
                   href: file1.md
-                - name: Activate using Key Management Service [client]
+                - name: Activate using Key Management Service 
                   href: file1.md
-                - name: Activate using Active Directory-based activation [client]
+                - name: Activate using Active Directory-based activation 
                   href: file1.md
                 - name: Activate clients running Windows 10
                   href: file1.md
-                - name: Monitor activation [client]
+                - name: Monitor activation 
                   href: file1.md
-                - name: Use the Volume Activation Management Tool [client]
+                - name: Use the Volume Activation Management Tool 
                   href: file1.md
-                - name: "Appendix: Information sent to Microsoft during activation [client]"
+                - name: "Appendix: Information sent to Microsoft during activation "
                   href: file1.md
 
         - name: Install fonts in Windows 10
