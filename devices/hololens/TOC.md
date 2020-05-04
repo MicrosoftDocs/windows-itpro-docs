@@ -37,7 +37,7 @@
 # User management and access management
 ## [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk for specific applications](hololens-kiosk.md)
+## [Set up HoloLens as a kiosk](hololens-kiosk.md)
 
 # Holographic applications
 ## [Use 3D Viewer on HoloLens](holographic-3d-viewer-beta.md)
