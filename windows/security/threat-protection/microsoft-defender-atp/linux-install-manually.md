@@ -231,7 +231,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
-    python WindowsDefenderATPOnboarding.py
+    sudo python WindowsDefenderATPOnboarding.py
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
