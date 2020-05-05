@@ -11,7 +11,7 @@ ms.topic: article
 ms.date: 5/06/2020
 ms.reviewer: brecords
 manager: laurawi
-ms.audience: itpro
+audience: itpro
 ---
 # What’s new in Surface Dock 2
 
@@ -35,23 +35,23 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
  	
 - Dual 4K@60hz. Supports up to two displays on the following devices:
 
-   - Surface Book 3
-   - Surface Go 2
-   - Surface Pro 7
-   - Surface Pro X
-   - Surface Laptop 3
+  - Surface Book 3
+  - Surface Go 2
+  - Surface Pro 7
+  - Surface Pro X
+  - Surface Laptop 3
 
 - Dual 4K@ 4K@30Hz. Supports up to two displays on the following devices:
 
-   - Surface Pro 6
-   - Surface Pro (5th Gen)
-   - Surface Laptop 2
-   - Surface Laptop (1st Gen)
-   - Surface Go
-   - Surface Book 2.
+  - Surface Pro 6
+  - Surface Pro (5th Gen)
+  - Surface Laptop 2
+  - Surface Laptop (1st Gen)
+  - Surface Go
+  - Surface Book 2.
 
 ### Ethernet
-	
+
 - 1 gigabit Ethernet port. 
 
 ### External Power supply

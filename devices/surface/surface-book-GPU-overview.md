@@ -132,7 +132,7 @@ In some instances, Windows 10 may assign a graphically demanding app to be iGPU;
 
 2. Select **Add** to create a new entry on the list for your selected program, select Options to open Graphics Specifications, and then select your desired option.
 
-![Select power saving or high performance GPU options](images/graphics-settings2.png)
+![Select power saving or high performance GPU options](./images/graphics-settings2.png)
 
 3. To verify which GPU are used for each app, open **Task Manager,** select **Performance,** and view the **GPU Engine** column.
 
@@ -155,5 +155,11 @@ In some instances, Windows 10 may assign a graphically demanding app to be iGPU;
 > [!NOTE]
 > 2TB SSD available in U.S. only: Surface Book 3 15” with NVIDIA GTX 1660Ti
 
+## Summary
+
+Built for performance, Surface Book 3 includes different GPU configurations optimized to meet specific workload and use requirements. An integrated Intel Iris graphics GPU functions as the sole GPU on the entry-level core i5 device and as a secondary GPU on all other models. GeForce GTX 1650 features a major upgrade of the core streaming multiprocessor to run complex graphics more efficiently. The faster GeForce GTX 1660 Ti provides Surface Book 3 with additional performance improvements making it better for consumers, gamers, live streamers, and creative professionals. Quadro RTX 3000 unlocks several key features for professional users:  ray tracing rendering and AI acceleration, and advanced graphics and compute performance.
+
+
 ## Learn more
-- Surface Book 3 Quadro RTX 3000 overview
+
+- [Surface Book 3 Quadro RTX 3000 technical overview](surface-book-quadro.md)
