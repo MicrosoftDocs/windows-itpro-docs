@@ -9,7 +9,7 @@ author: coveminer
 ms.author: v-jokai
 ms.topic: article
 ms.date: 5/06/2020
-ms.reviewer: brecords
+ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
 ---
