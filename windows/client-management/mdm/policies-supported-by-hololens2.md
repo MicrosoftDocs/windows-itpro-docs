@@ -59,18 +59,18 @@ ms.date: 07/18/2019
 -   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
 -   [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
 -   [Privacy/LetAppsAccessCamera](policy-csp-privacy.md#privacy-letappsaccesscamera)
--   [Privacy/LetAppsAccessCamera_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-forceallowtheseapps)
--   [Privacy/LetAppsAccessCamera_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-forcedenytheseapps)
--   [Privacy/LetAppsAccessCamera_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-userincontroloftheseapps)
--   [Privacy/LetAppsAccessGazeInput](policy-csp-privacy.md#privacy-letappsaccessgazeinput)
--   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-forceallowtheseapps)
--   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-forcedenytheseapps)
--   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessCamera_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-forceallowtheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessCamera_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-forcedenytheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessCamera_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccesscamera-userincontroloftheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessGazeInput](policy-csp-privacy.md#privacy-letappsaccessgazeinput) <sup>7</sup>
+-   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-forceallowtheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-forcedenytheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessgazeinput-userincontroloftheseapps) <sup>7</sup>
 -   [Privacy/LetAppsAccessLocation](policy-csp-privacy.md#privacy-letappsaccesslocation)
 -   [Privacy/LetAppsAccessMicrophone](policy-csp-privacy.md#privacy-letappsaccessmicrophone)
--   [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forceallowtheseapps)
--   [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps)
--   [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forceallowtheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps) <sup>7</sup>
+-   [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps) <sup>7</sup>
 -   [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
 -   [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
 -   [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
@@ -92,7 +92,18 @@ ms.date: 07/18/2019
 -   [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
 -   [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
 -   [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
--   [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
+-   [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>7</sup>
+
+
+Footnotes:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
+-   7 - Added in the next major release of Windows 10.
 
 ## Related topics
 [Policy CSP](policy-configuration-service-provider.md)
