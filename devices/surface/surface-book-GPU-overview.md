@@ -163,3 +163,4 @@ Built for performance, Surface Book 3 includes different GPU configurations opti
 ## Learn more
 
 - [Surface Book 3 Quadro RTX 3000 technical overview](surface-book-quadro.md)
+- [Surface for Business](https://www.microsoft.com/surface/business)

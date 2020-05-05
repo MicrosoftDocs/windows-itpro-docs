@@ -15,11 +15,27 @@ audience: itpro
 ---
 # What’s new in Surface Dock 2
 
-Surface Dock 2, the next generation Surface dock, lets users connect external monitors and multiple peripherals to obtain a fully modernized desktop experience from a Surface device. Built to maximize efficiency at the office, in a flexible workspace, or at home, Surface Dock 2 features seven ports, including two front-facing USB-C ports, with 15 watts of fast charging power for phone and accessories. Surface Dock 2 is designed to simplify IT management, enabling admins to automate firmware updates using Windows Update or centralize updates with internal software distribution tools. An extended set of management tools will be released via Windows update and become available to IT admins upon commercial distribution. 
+Surface Dock 2, the next generation Surface dock, lets users connect external monitors and multiple peripherals to obtain a fully modernized desktop experience from a Surface device. Built to maximize efficiency at the office, in a flexible workspace, or at home, Surface Dock 2 features seven ports, including two front-facing USB-C ports, with 15 watts of fast charging power for phone and accessories. Surface Dock 2 is designed to simplify IT management, enabling admins to automate firmware updates using Windows Update or centralize updates with internal software distribution tools. An extended set of management tools will be released via Windows update upon commercial distribution.
 
 ## General system requirements
 
-- Windows 10 version 1809. There is no support for Windows 7, Windows 8, or non-Surface host devices. 
+- Windows 10 version 1809. There is no support for Windows 7, Windows 8, or non-Surface host devices. Surface Dock 2 works with the following Surface devices:
+
+- Surface Pro (5th Gen)
+- Surface Pro (5th Gen) with LTE Advanced
+- Surface Laptop (1st Gen)
+- Surface Pro 6
+- Surface Book 2
+- Surface Laptop 2
+- Surface Go
+- Surface Go with LTE Advanced
+- Surface Studio 2 
+- Surface Pro 7
+- Surface Laptop 3
+- Surface Book 3
+- Surface Go 2
+- Surface Go 2 with LTE Advanced
+
 
 ## Surface Dock 2 Components
 
@@ -37,6 +53,7 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 
   - Surface Book 3
   - Surface Go 2
+  - Surface Go 2 with LTE Advanced
   - Surface Pro 7
   - Surface Pro X
   - Surface Laptop 3
@@ -45,6 +62,7 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 
   - Surface Pro 6
   - Surface Pro (5th Gen)
+  - Surface Pro (5th Gen) with LTE Advanced
   - Surface Laptop 2
   - Surface Laptop (1st Gen)
   - Surface Go
@@ -59,9 +77,9 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 - 199 watts supporting 100V-240V.
 
 
-## Surface Dock 2 tech specs 
+## Comparing Surface Dock 2 
 
-### Table 1. What’s new in Surface Dock 2
+### Table 1. Surface Dock 2 tech specs comparison
 
 |Component|Surface Dock|Surface Dock 2|
 |---|---|---|
@@ -86,7 +104,7 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 |Servicing support|MSI|Windows Update or MSI|
 ||||
 
-1. *Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Holiday 2019 products and forward. Software license required for some features. Sold separately.*
+1. *Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Surface Pro 7, Surface Laptop 3, Surface Pro X, Surface Book 3, and Surface Go 2.  Software license required for some features. Sold separately.*
 
 2. *Pending release via Windows Update.*
 
@@ -102,4 +120,5 @@ Following the public announcement of Surface Dock 2, Surface will release stream
 
 ## Next steps
 
+- [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 - [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)

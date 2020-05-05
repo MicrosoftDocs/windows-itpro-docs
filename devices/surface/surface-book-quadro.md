@@ -132,6 +132,5 @@ Surface Book 3 with Quadro RTX 3000 delivers the best graphics performance on an
 ## Learn more
 
 - [Surface Book 3 GPU technical overview](surface-book-GPU-overview.md)
+- [Surface for Business](https://www.microsoft.com/surface/business)
 - [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/)
-
- 
