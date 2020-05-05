@@ -21,20 +21,20 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 
 - Windows 10 version 1809. There is no support for Windows 7, Windows 8, or non-Surface host devices. Surface Dock 2 works with the following Surface devices:
 
-- Surface Pro (5th Gen)
-- Surface Pro (5th Gen) with LTE Advanced
-- Surface Laptop (1st Gen)
-- Surface Pro 6
-- Surface Book 2
-- Surface Laptop 2
-- Surface Go
-- Surface Go with LTE Advanced
-- Surface Studio 2 
-- Surface Pro 7
-- Surface Laptop 3
-- Surface Book 3
-- Surface Go 2
-- Surface Go 2 with LTE Advanced
+  - Surface Pro (5th Gen)
+  - Surface Pro (5th Gen) with LTE Advanced
+  - Surface Laptop (1st Gen)
+  - Surface Pro 6
+  - Surface Book 2
+  - Surface Laptop 2
+  - Surface Go
+  - Surface Go with LTE Advanced
+  - Surface Studio 2 
+  - Surface Pro 7
+  - Surface Laptop 3
+  - Surface Book 3
+  - Surface Go 2
+  - Surface Go 2 with LTE Advanced
 
 
 ## Surface Dock 2 Components
