@@ -1,6 +1,6 @@
 ---
 title: Use attack surface reduction rules in Windows 10 Enterprise E3
-description: ASR rules can help prevent exploits from using apps and scripts to infect machines with malware
+description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -23,11 +23,7 @@ ms.custom: asr
 - Windows 10 Enterprise E5
 - Windows 10 Enterprise E3
 
-Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. This feature area includes the rules, monitoring, reporting, and analytics necessary for deployment that are included in [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), and require the Windows 10 Enterprise E5 license. 
-
-Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
-
-To get the best protection, Windows Enterprise E5 enrollment is recommended. However, a limited subset of basic attack surface reduction rules can be used with Windows 10 Enterprise E3 (without the benefits of reporting, monitoring, and analytics). The following table lists attack surface reduction rules available in Windows E3 and Windows E5.
+Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction includes the rules, monitoring, reporting, and analytics necessary for deployment, and this is included in [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md). These capabilities require the Windows 10 Enterprise E5 license. However, a limited subset of basic attack surface reduction rules can be used with Windows 10 Enterprise E3 (without the benefits of reporting, monitoring, and analytics). The table below lists attack surface reduction rules available in Windows E3 and Windows E5.
 
 |Rule |Windows E3 |Windows E5 |
 |--|--|--|
@@ -47,6 +43,7 @@ To get the best protection, Windows Enterprise E5 enrollment is recommended. How
 |[Block Adobe Reader from creating child processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes) | |Yes |
 |[Block persistence through WMI event subscription](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-persistence-through-wmi-event-subscription) | |Yes |
 
+Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
 
  ## Related articles
 - [Attack surface reduction rules](attack-surface-reduction.md)
