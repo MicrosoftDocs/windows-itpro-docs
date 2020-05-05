@@ -1,5 +1,5 @@
 ---
-title: Enable ASR rules individually to protect your organization
+title: Enable attack surface reduction rules individually to protect your organization
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
