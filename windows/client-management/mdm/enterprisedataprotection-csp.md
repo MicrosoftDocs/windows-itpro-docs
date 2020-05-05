@@ -24,7 +24,7 @@ The EnterpriseDataProtection configuration service provider (CSP) is used to con
 
 While WIP has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPNv2 CSP](vpnv2-csp.md).
 
-To learn more about WIP, see the following TechNet articles:
+To learn more about WIP, see the following articles:
 
 -   [Create a Windows Information Protection (WIP) policy](https://technet.microsoft.com/itpro/windows/keep-secure/overview-create-wip-policy)
 -   [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
