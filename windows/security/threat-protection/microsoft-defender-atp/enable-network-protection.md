@@ -17,14 +17,29 @@ audience: ITPro
 manager: dansimp
 ---
 
-# Enable network protection
+# Turning on network protection
 
 **Applies to:**
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
-You can [audit network protection](evaluate-network-protection.md) in a test environment to see which apps would be blocked before you enable it.  
+You can [audit network protection](evaluate-network-protection.md) in a test environment to see which apps would be blocked before you enable it.
+
+## Check if network protection is enabled
+
+You can see if network protection has been enabled on a local device by using Registry editor.
+
+1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
+1. Choose **HKEY_LOCAL_MACHINE** from the side menu
+1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** **Windows Defender** > **Policy Manager**
+1. Select **EnableNetworkProtection** to see the current state of network protection on the device
+
+    * 0, or **Off**
+    * 1, or **On**
+    * 2, or **Audit** mode
+
+## Enable network protection
 
 You can enable network protection by using any of these methods:
 
@@ -34,7 +49,7 @@ You can enable network protection by using any of these methods:
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
-## Intune
+### Intune
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and open Intune.
 1. Click **Device configuration** > **Profiles** > **Create profile**.
@@ -45,11 +60,11 @@ You can enable network protection by using any of these methods:
 1. Click **OK** to save each open blade and click **Create**.
 1. Click the profile **Assignments**, assign to **All Users & All Devices**, and click **Save**.
 
-## MDM
+### MDM
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-## SCCM
+### SCCM
 
 1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
@@ -58,13 +73,13 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://d
 1. Review the settings and click **Next** to create the policy.
 1. After the policy is created, click **Close**.
 
-## Group Policy
+### Group Policy
 
 You can use the following procedure to enable network protection on domain-joined computers or on a standalone computer.
 
 1. On a standalone computer, click **Start**, type and then click **Edit group policy**.
 
-    -Or-
+    *-Or-*
 
     On a domain-joined Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -89,7 +104,7 @@ You can confirm network protection is enabled on a local computer by using Regis
    * 1=On
    * 2=Audit
 
-## PowerShell
+### PowerShell
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
 2. Enter the following cmdlet:
