@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens
-description: Landing page Microsoft HoloLens.
+description: Landing page for Microsoft HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
@@ -10,8 +10,11 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/14/2019
 audience: ITPro
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 - HoloLens 2
 
 ---
@@ -45,12 +48,13 @@ appliesto:
 | Topic | Description |
 | --- | --- |
 | [What's new in HoloLens](hololens-whats-new.md) | Discover new features in the latest updates via HoloLens release notes. |
-| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale.  |
+| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale. |
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
-| [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
+| [HoloLens user management](hololens-multiple-users.md) | Multiple users can share a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
-| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
-| [Get support](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.  |
+| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary. |
+| [Contact Support](https://support.microsoft.com/supportforbusiness/productselection) | Create a new support request for the business support team. | 
+| [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in the enterprise. |
 
 ## Related resources
 

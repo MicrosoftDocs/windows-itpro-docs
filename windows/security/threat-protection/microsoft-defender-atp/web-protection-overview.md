@@ -1,50 +1,51 @@
 ---
-title: Overview of web protection in Microsoft Defender ATP
+title: Web protection
 description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
-keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 08/30/2019
 ---
 
-# Protect your organization against web threats
+# Web protection
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web protection in Microsoft Defender ATP uses [network protection](network-protection.md) to secure your machines against web threats. By integrating with Microsoft Edge and popular third-party browsers like Chrome and Firefox, web protection stops web threats without a web proxy and can protect machines while they are away or on premises. Web protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
+Web protection in Microsoft Defender ATP is a capability made up of [Web threat protection](web-threat-protection.md) and [Web content filtering](web-content-filtering.md). Web protection lets you secure your machines against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender Security Center by going to **Reports > Web protection**.
 
->[!Note]
->It can take up to an hour for machines to receive new customer indicators.
+![Image of all web protection cards](images/web-protection.png)
 
-With web protection, you also get:
+## Web threat protection
+
+The cards that make up web threat protection are **Web threat detections over time** and **Web threat summary**.
+
+Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the machines that access these URLs
 - A full set of security features that track general access trends to malicious and unwanted websites
 
-## Prerequisites
-Web protection uses network protection to provide web browsing security on Microsoft Edge and third-party web browsers.
+## Web content filtering
 
-To turn on network protection on your machines:
-- Edit the Microsoft Defender ATP security baseline under **Web & Network Protection** to enable network protection before deploying or redeploying it. [Learn about reviewing and assigning the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-atp-security-baseline)
-- Turn network protection on using Intune device configuration, SCCM, Group Policy, or your MDM solution. [Read more about enabling network protection](enable-network-protection.md)  
+The cards that comprise web content filtering are **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
 
->[!Note]
->If you set network protection to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.
-
+Web content filtering includes:
+- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
+- You can conveniently deploy varied policies to various sets of users using the machine groups defined in the [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- You can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## In this section
+
 Topic | Description
 :---|:---
-[Monitor web security](web-protection-monitoring.md) | Monitor attempts to access malicious and unwanted websites. 
-[Respond to web threats](web-protection-response.md) | Investigate and manage alerts related to malicious and unwanted websites. Understand how end users are notified whenever a web threat is blocked.
+[Web threat protection](web-threat-protection.md) | Stop access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked.
+[Web content filtering](web-content-filtering.md) | Track and regulate access to websites based on their content categories.

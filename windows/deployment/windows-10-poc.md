@@ -25,7 +25,7 @@ ms.topic: article
 This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
-- [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
+- [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
 
 The PoC deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that are not familiar with these tools, and those that are interested in setting up a proof of concept environment. The instructions in this guide should not be used in a production setting, and are not meant to replace the instructions found in production deployment guidance.
 
@@ -111,13 +111,13 @@ Hardware requirements are displayed below:
         <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>RAM</strong></font></td>
+        <td BGCOLOR="#a0e4fa"><strong>RAM</strong></td>
         <td>8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.
-        <BR>16 GB RAM to test Windows 10 deployment with System Center Configuration Manager.</td>
+        <BR>16 GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Disk</strong></font></td>
+        <td BGCOLOR="#a0e4fa"><strong>Disk</strong></td>
         <td>200 GB available hard disk space, any format.</td>
         <td>Any size, MBR formatted.</td>
     </tr>
@@ -779,9 +779,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     **Configure service and user accounts**
 
-    Windows 10 deployment with MDT and System Center Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
+    Windows 10 deployment with MDT and Microsoft Endpoint Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
 
-    >To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+    >To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
     On DC1, open an elevated Windows PowerShell prompt and type the following commands:
 

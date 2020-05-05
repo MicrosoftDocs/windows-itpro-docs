@@ -3,7 +3,7 @@ title: PowerShell for Surface Hub (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: PowerShell, set up Surface Hub, manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
@@ -617,7 +617,7 @@ try {
 catch
 {
     PrintError "Some dependencies are missing"
-    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
     PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
@@ -1104,7 +1104,7 @@ if ($fSfbIsOnline)
     }
     catch
     {
-        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from http://www.microsoft.com/download/details.aspx?id=39366"
+        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from https://www.microsoft.com/download/details.aspx?id=39366"
     }
 }
 else
@@ -1518,7 +1518,7 @@ if ($online)
     catch
     {
         PrintError "Some dependencies are missing"
-        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
         PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }

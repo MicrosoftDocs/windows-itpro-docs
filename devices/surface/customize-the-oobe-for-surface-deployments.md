@@ -3,18 +3,17 @@ title: Customize the OOBE for Surface deployments (Surface)
 description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: deploy, customize, automate, network, Pen, pair, boot
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.audience: itpro
-ms.date: 10/21/2019
 ---
 
 # Customize the OOBE for Surface deployments
@@ -34,7 +33,7 @@ In some scenarios, you may want to provide complete automation to ensure that at
 This article provides a summary of the scenarios where a deployment might require additional steps. It also provides the required information to ensure that the desired experience is achieved on any newly deployed Surface device. This article is intended for administrators who are familiar with the deployment process, as well as concepts such as answer files and [reference images](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image).
 
 >[!NOTE]
->Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
+>Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117) or Microsoft Endpoint Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
 >- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 >- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
 

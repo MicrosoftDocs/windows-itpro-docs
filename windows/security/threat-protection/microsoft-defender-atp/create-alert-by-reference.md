@@ -24,8 +24,9 @@ ms.topic: article
 
 
 ## API description
-Creates new [Alert](alerts.md).
-<br>Microsoft Defender ATP Event is a required parameter for the alert creation.
+Creates new [Alert](alerts.md) on top of **Event**.
+<br>**Microsoft Defender ATP Event** is required for the alert creation.
+<br>You will need to supply 3 parameters from the Event in the request: **Event Time**, **Machine ID** and **Report ID**. See example below.
 <br>You can use an event found in Advanced Hunting API or Portal.
 <br>If there existing an open alert on the same Machine with the same Title, the new created alert will be merged with it.
 <br>An automatic investigation starts automatically on alerts created via the API.
@@ -68,13 +69,13 @@ In the request body, supply the following values (all are required):
 
 Property | Type | Description
 :---|:---|:---
+eventTime | DateTime(UTC) | The precise time of the event as string, as obtained from advanced hunting. e.g. ```2018-08-03T16:45:21.7115183Z``` **Required**.
+reportId | String | The reportId of the event, as obtained from advanced hunting. **Required**.
 machineId | String | Id of the machine on which the event was identified. **Required**.
 severity | String | Severity of the alert. The property values are: 'Low', 'Medium' and 'High'. **Required**.
 title | String | Title for the alert. **Required**.
 description | String | Description of the alert. **Required**.
 recommendedAction| String | Action that is recommended to be taken by security officer when analyzing the alert. **Required**.
-eventTime | DateTime(UTC) | The time of the event, as obtained from the advanced query. **Required**.
-reportId | String | The reportId, as obtained from the advanced query. **Required**.
 category| String | Category of the alert. The property values are: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## Response
@@ -91,16 +92,16 @@ Here is an example of the request.
 
 ```
 POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
-Content-Length: application/json
-
+```
+```json
 {
-  "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-  "severity": "Low",
-  "title": "test alert",
-  "description": "test alert",
-  "recommendedAction": "test alert",
-  "eventTime": "2018-08-03T16:45:21.7115183Z",
-  "reportId": "20776",
-  "category": "None"
+	"machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+	"severity": "Low",
+	"title": "example",
+	"description": "example alert",
+	"recommendedAction": "nothing",
+	"eventTime": "2018-08-03T16:45:21.7115183Z",
+	"reportId": "20776",
+	"category": "Exploit"
 }
 ```

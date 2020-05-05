@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2019
 ---
 
 # Learn the advanced hunting query language
@@ -23,8 +22,7 @@ ms.date: 10/08/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-reference.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
@@ -33,64 +31,87 @@ Advanced hunting is based on the [Kusto query language](https://docs.microsoft.c
 In Microsoft Defender Security Center, go to **Advanced hunting** to run your first query. Use the following example:
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents  
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 This is how it will look like in advanced hunting.
 
-![Image of Microsoft Defender ATP advanced hunting query](images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP advanced hunting query](images/advanced-hunting-query-example-2.png)
 
-### Describe the query and specify the table to search
-The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
+
+### Describe the query and specify the tables to search
+A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization. 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `DeviceProcessEvents` and add piped elements as needed.
+The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by creating a union of two tables,  `DeviceProcessEvents` and `DeviceNetworkEvents`, and add piped elements as needed.
 
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
 ### Set the time range
-The first piped element is a time filter scoped within the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
+The first piped element is a time filter scoped to the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
-### Search for specific executable files
-The time range is immediately followed by a search for files representing the PowerShell application.
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+### Check specific processes
+The time range is immediately followed by a search for process file names representing the PowerShell application.
+
 ```
-### Search for specific command lines
-Afterwards, the query looks for command lines that are typically used with PowerShell to download files.
-
-```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
-### Select result columns and length 
-Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.
+
+### Search for specific command strings
+Afterwards, the query looks for strings in command lines that are typically used to download files using PowerShell.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
+```
+
+### Customize result columns and length 
+Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
+
+```kusto
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.
+Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results. 
+
+![Image of the Expand control in the advanced hunting query editor](images/advanced-hunting-expand.png)
+
+>[!TIP]
+>You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
 ## Learn common query operators for advanced hunting
 
@@ -138,8 +159,8 @@ For detailed information about the query language, see [Kusto query language doc
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 
-> [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)

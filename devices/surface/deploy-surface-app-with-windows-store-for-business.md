@@ -6,14 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, store
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Deploy Surface app with Microsoft Store for Business and Education
@@ -101,7 +100,7 @@ After you add an app to the Microsoft Store for Business account in Offline mode
 
     *Figure 4. Download the AppxBundle package for an app*
 5. Click **Download**. The AppxBundle package will be downloaded. Make sure you note the path of the downloaded file because you’ll need that later in this article.
-6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like System Center Configuration Manager or when you use Windows Configuration Designer to create a provisioning package. Select the Unencoded license option when you use Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
+6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like Microsoft Endpoint Configuration Manager or when you use Windows Configuration Designer to create a provisioning package. Select the Unencoded license option when you use Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
 7. Click **Generate** to generate and download the license for the app. Make sure you note the path of the license file because you’ll need that later in this article.
 
 >[!NOTE]

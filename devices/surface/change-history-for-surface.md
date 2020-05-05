@@ -1,22 +1,27 @@
 ---
 title: Change history for Surface documentation (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: This topic lists new and updated topics in the Surface documentation library.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## January 2020
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)| Updated with the latest information and links to related articles.|
+
 
 ## October 2019
 
@@ -37,7 +42,7 @@ This topic lists new and updated topics in the Surface documentation library.
 | **New or changed topic** | **Description** |
 | ------------------------ | --------------- |
 | [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)             | New document highlights key wireless connectivity considerations for Surface devices in mobile scenarios. |
-| [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)              | Updated to reflect minor changes in the file naming convention for Surface MSI files. |
+| [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)            | Updated to reflect minor changes in the file naming convention for Surface MSI files. |
 
 
 ## July 2019
@@ -76,14 +81,14 @@ New or changed topic | Description
 --- | ---
 [Surface Brightness Control](microsoft-surface-brightness-control.md) | New
 [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md) | New
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Studio 2  |
+|[Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md) | Added Surface Studio 2  |
 
 
 ## November 2018
 
 New or changed topic | Description
 --- | ---
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Pro 6  |
+|[Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md) | Added Surface Pro 6  |
 [Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md) | New
 [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md) | New
 [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md) | New
@@ -93,7 +98,7 @@ New or changed topic | Description
 New or changed topic | Description
 --- | ---
 [Battery Limit setting](battery-limit.md) | New
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface GO  |
+|[Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md) | Added Surface GO  |
 
 ## May 2018
 
@@ -121,7 +126,7 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
+|[Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
 
 ## October 2017
 
@@ -160,14 +165,14 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)  | Added driver info for Surface Studio; updated info for Surface Book and Surface Pro 4 (Windows 10 .zip cumulative update), Surface Pro 3 (Windows8.1-KB2969817-x64.msu), and Surface 3 (UEFI Asset Tag management tool)|
+|[Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md) | Added driver info for Surface Studio; updated info for Surface Book and Surface Pro 4 (Windows 10 .zip cumulative update), Surface Pro 3 (Windows8.1-KB2969817-x64.msu), and Surface 3 (UEFI Asset Tag management tool)|
 
 ## November 2016
 
 |New or changed topic | Description |
 | --- | --- |
 |[Surface Enterprise Management Mode](surface-enterprise-management-mode.md) | Added procedure for viewing certificate thumbprint. |
-|[Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md) | New |
+|[Use Microsoft Endpoint Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md) | New |
 
 
 
@@ -175,7 +180,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | --- |
-| [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | New |
+| [Considerations for Surface and Microsoft Endpoint Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | New |
 | [Long-term servicing branch for Surface devices](ltsb-for-surface.md) | New |
 
 

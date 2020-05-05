@@ -3,15 +3,15 @@ title: Step by step Surface Deployment Accelerator (Surface)
 description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices.
 ms.assetid: A944FB9C-4D81-4868-AFF6-B9D1F5CF1032
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 keywords: deploy, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.date: 10/31/2019
 ---
@@ -328,7 +328,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
 >[!NOTE]
->Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
+>Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and Microsoft Endpoint Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
 
 In addition to the information required by the **1 – Deploy Microsoft Surface** task sequence, you will also be prompted to capture an image when you run this task sequence on your reference virtual machine. The **Location** and **File name** fields are automatically populated with the proper information for your deployment share. All that you need to do is select the **Capture an image of this reference computer** option when you are prompted on the **Capture Image** page of the Windows Deployment Wizard.
 

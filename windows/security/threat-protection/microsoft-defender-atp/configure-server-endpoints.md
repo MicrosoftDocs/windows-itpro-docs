@@ -25,44 +25,37 @@ ms.topic: article
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server, 2019
+- Windows Server, 2019 and later
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 
-Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
+Microsoft Defender ATP extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
 - Windows Server 2008 R2 SP1 
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server 2019
+- Windows Server 2019 and later
 
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
-> [!NOTE]
-> An Azure Security Center Standard license is required, per node, to enroll Microsoft Defender ATP on a supported Windows Server platform, see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services)
 
-## Windows Server 2008 R2 SP1,  Windows Server 2012 R2 and Windows Server 2016
+## Windows Server 2008 R2 SP1,  Windows Server 2012 R2, and Windows Server 2016
 
 There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP:
 
-- **Option 1**: Onboard through Azure Security Center
-- **Option 2**: Onboard through Microsoft Defender Security Center
+- **Option 1**: Onboard through Microsoft Defender Security Center
+- **Option 2**: Onboard through Azure Security Center
 
-### Option 1: Onboard servers through Azure Security Center
-1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+> [!NOTE]
+> Microsoft defender ATP standalone server license is required, per node, in order to onboard the server through Microsoft Defender Security Center (Option 1), or an Azure Security Center Standard license is required, per node, in order to onboard a server through Azure Security Center (Option 2),  see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
 
-2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
 
-3. Click **Onboard Servers in Azure Security Center**. 
-
-4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
-
-### Option 2: Onboard servers through Microsoft Defender Security Center
+### Option 1: Onboard servers through Microsoft Defender Security Center
 You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
 - For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
@@ -77,17 +70,15 @@ You'll need to take the following steps if you choose to onboard servers through
 > This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
 - Turn on server monitoring from Microsoft Defender Security Center.
-- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 
 > [!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ### Configure and update System Center Endpoint Protection clients
-> [!IMPORTANT]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2012 R2.
 
-Microsoft Defender ATP integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
+Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
 
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
@@ -100,7 +91,7 @@ The following steps are required to enable this integration:
 
 2. Select Windows Server 2012 R2 and 2016 as the operating system.
  
-3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
+3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment setup. When the setup completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
 <span id="server-mma"/>
 
@@ -113,7 +104,7 @@ The following steps are required to enable this integration:
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script). 
 
-3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#configure-proxy-settings).
+3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](configure-proxy-internet.md).
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
@@ -125,25 +116,38 @@ Once completed, you should see onboarded servers in the portal within an hour.
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Microsoft Defender ATP service URLs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 
+
+### Option 2: Onboard servers through Azure Security Center
+1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+
+2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
+
+3. Click **Onboard Servers in Azure Security Center**. 
+
+4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
+
+
+
 ## Windows Server, version 1803 and Windows Server 2019
-To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
+To onboard Windows Server, version 1803 or Windows Server 2019, refer to the supported methods and versions below.
 
 > [!NOTE]
-> The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+> The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 Supported tools include:
 - Local script
 - Group Policy 
+- Microsoft Endpoint Configuration Manager
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
 For more information, see  [Onboard Windows 10 machines](configure-endpoints.md).
 
-Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+Support for Windows Server, provide deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
 
-2. If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
+2. If you're running a third-party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings. Verify that it was configured correctly:
 
     a. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -152,27 +156,29 @@ Support for Windows Server, version 1803 and Windows 2019 provides deeper insigh
 
     b. Run the following PowerShell command to verify that the passive mode was configured:
 
-       ```Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}```
+      ```PowerShell
+      Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+      ```
 
     c. Confirm  that a recent event containing the passive mode event is found:
        
-    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+      ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
    ```sc query Windefend```
 
-    If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 
 ## Integration with Azure Security Center
-Microsoft Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Microsoft Defender ATP to provide improved threat detection for Windows Servers.
+Microsoft Defender ATP can integrate with Azure Security Center to provide a comprehensive server protection solution. With this integration, Azure Security Center can leverage the power of Microsoft Defender ATP to provide improved threat detection for Windows Servers.
 
 The following capabilities are included in this integration:
 - Automated onboarding - Microsoft Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to Azure Security Center. For more information on Azure Security Center onboarding, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
-> [!NOTE]
-> Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
+    > [!NOTE]
+    > Automated onboarding is only applicable for Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Microsoft Defender ATP - Azure Security Center seamlessly connects to the Microsoft Defender ATP tenant, providing a single view across clients and servers.  In addition, Microsoft Defender ATP alerts will be available in the Azure Security Center console.
 - Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach

@@ -279,7 +279,7 @@ SAWs are computers that are built to help significantly reduce the risk of compr
 
 To protect high-value assets, SAWs are used to make secure connections to those assets.
 
-Similarly, on corporate fully-managed workstations, where applications are installed by using a distribution tool like System Center Configuration Manager, Intune, or any third-party device management, then Device Guard is very applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
+Similarly, on corporate fully-managed workstations, where applications are installed by using a distribution tool like Microsoft Endpoint Configuration Manager, Intune, or any third-party device management, then Device Guard is very applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
 
 It could be challenging to use Device Guard on corporate, lightly-managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it’s quite difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log will contain a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
 

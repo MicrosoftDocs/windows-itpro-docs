@@ -20,7 +20,7 @@ manager: dansimp
 -   Windows 10  
 
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
+Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
 
 Follow the guidance in this topic to set up Take a Test on multiple PCs.
 
@@ -28,7 +28,7 @@ Follow the guidance in this topic to set up Take a Test on multiple PCs.
 To configure a dedicated test account on multiple PCs, select any of the following methods:
 - [Provisioning package created through the Set up School PCs app](#set-up-a-test-account-in-the-set-up-school-pcs-app)
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
-- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
+- [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
 - [Group Policy to deploy a scheduled task that runs a Powershell script](https://docs.microsoft.com/education/windows/take-a-test-multiple-pcs#create-a-scheduled-task-in-group-policy) 
 
@@ -130,7 +130,7 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 1. [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
 2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
-   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtine settings**.
+   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
    2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
    3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
 
@@ -211,7 +211,7 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 
      For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
 
-     To get started, go here: [Create a link using a web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link).
+     To get started, go here: [Create a link using a web UI](https://aka.ms/create-a-take-a-test-link).
 
    - Create a link using schema activation
 
@@ -255,7 +255,7 @@ One of the ways you can present content in a locked down manner is by embedding 
    See [Permissive mode](take-a-test-app-technical.md#permissive-mode) and [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
 
 ### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
 
 1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
 2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.

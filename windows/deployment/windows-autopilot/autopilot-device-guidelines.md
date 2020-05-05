@@ -36,7 +36,8 @@ The following additional best practices ensure that devices can easily be provis
 
 ## Software best practice guidelines for Windows Autopilot
 
-- The Windows Autopilot device should be preinstalled with only a Windows 10 base image plus drivers and Office 365 Pro Plus Retail (C2R).
+- The Windows Autopilot device should be preinstalled with only a Windows 10 base image plus drivers.
+- You can preinstall your licensed version of Office, such as [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 - Unless explicitly requested by the customer, no other preinstalled software should be included.
   - Per OEM Policy, Windows 10 features, including built-in apps, should not be disabled or removed.
 

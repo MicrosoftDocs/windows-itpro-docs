@@ -116,7 +116,3 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
  
-
- 
-
-

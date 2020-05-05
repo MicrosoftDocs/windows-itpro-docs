@@ -31,7 +31,7 @@ For Windows Defender Credential Guard to provide protection, the computers you a
 To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Windows Defender Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
-- TPM 1.2 or 2.0, either discrete or firmware (preferred - provides binding to hardware)
+- TPM 1.2 or 2.0 (preferred - provides binding to hardware), either discrete or firmware 
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
 The Virtualization-based security requires:
@@ -48,9 +48,9 @@ Credential Guard can protect secrets in a Hyper-V virtual machine, just as it wo
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and be running at least Windows Server 2016 or Windows 10.
 
-For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/)
+For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/).
 
-For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements)
+For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements).
 
 ## Application requirements
 
@@ -78,9 +78,6 @@ Applications may cause performance issues when they attempt to hook the isolated
 
 Services or protocols that rely on Kerberos, such as file shares, remote desktop, or BranchCache, continue to work and are not affected by Windows Defender Credential Guard.
 
-See this video: [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-
-
 ## Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard.
@@ -88,8 +85,9 @@ Computers that meet additional qualifications can provide additional protections
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]
-> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
-> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
+> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers.
+> 
+> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
 
 ### Baseline protections
 

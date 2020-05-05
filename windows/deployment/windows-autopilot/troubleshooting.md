@@ -42,6 +42,46 @@ For troubleshooting, key activities to perform are:
 - Azure AD join issues.  Was the device able to join Azure Active Directory?
 - MDM enrollment issues.  Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
 
+## Troubleshooting Autopilot Device Import
+
+### Clicking Import after selecting CSV does nothing, '400' error appears in network trace with error body **"Cannot convert the literal '[DEVICEHASH]' to the expected type 'Edm.Binary'"**
+
+This error points to the device hash being incorrectly formatted. This could be caused by anything that corrupts the collected hash, but one possibility is that the hash itself, even if completely valid, fails to be decoded.
+
+The device hash is Base64. At the device level, it's encoded as unpadded Base64, but Autopilot expects padded Base64. In most cases, it seems the payload lines up to not require padding, so the process works, but sometimes it doesn't line up cleanly and padding is necessary. This is when you get the error above. Powershell's Base64 decoder also expects padded Base64, so we can use that to validate that the hash is properly padded.
+
+The "A" characters at the end of the hash are effectively empty data - Each character in Base64 is 6 bits, A in Base64 is 6 bits equal to 0. Deleting or adding "A"s at the end doesn't change the actual payload data.
+
+To fix this, we'll need to modify the hash, then test the new value, until powershell succeeds in decoding the hash. The result is mostly illegible, this is fine - we're just looking for it to not throw the error "Invalid length for a Base-64 char array or string". 
+
+To test the base64, you can use the following:
+```powershell
+[System.Text.Encoding]::ascii.getstring( [System.Convert]::FromBase64String("DEVICE HASH"))
+```
+
+So, as an example (this is not a device hash, but it's misaligned unpadded Base64 so it's good for testing):
+```powershell
+[System.Text.Encoding]::ascii.getstring( [System.Convert]::FromBase64String("Q29udG9zbwAAA"))
+```
+
+Now for the padding rules. The padding character is "=". The padding character can only be at the end of the hash, and there can only be a maximum of 2 padding characters. Here's the basic logic.
+
+- Does decoding the hash fail?
+  - Yes: Are the last two characters "="?
+     - Yes: Replace both "=" with a single "A" character, then try again
+     - No: Add another "=" character at the end, then try again
+  - No: That hash is valid
+
+Looping the logic above on the previous example hash, we get the following permutations:
+- Q29udG9zbwAAA
+- Q29udG9zbwAAA=
+- Q29udG9zbwAAA==
+- Q29udG9zbwAAAA
+- Q29udG9zbwAAAA=
+- **Q29udG9zbwAAAA==** (This one has valid padding)
+
+Replace the collected hash with this new padded hash then try to import again.
+
 ## Troubleshooting Autopilot OOBE issues
 
 If the expected Autopilot behavior does not occur during the out-of-box experience (OOBE), it is useful to see whether the device received an Autopilot profile and what settings that profile contained.  Depending on the Windows 10 release, there are different mechanisms available to do that.
@@ -80,13 +120,15 @@ On Windows 10 version 1709 and above, information about the Autopilot profile se
 | TenantMatched | This will be set to 1 if the tenant ID of the user matches the tenant ID that the device was registered with.  If this is 0, the user would be shown an error and forced to start over. |
 | CloudAssignedOobeConfig | This is a bitmap that shows which Autopilot settings were configured.  Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16 |
 
-### Windows 10 version 1703 and above
+### Windows 10 semi-annual channel supported versions
 
-On Windows 10 version 1703 and above, ETW tracing can be used to capture detailed information from Autopilot and related components.  The resulting ETW trace files can then be viewed using the Windows Performance Analyzer or similar tools.  See [the advanced troubleshooting blog](https://blogs.technet.microsoft.com/mniehaus/2017/12/13/troubleshooting-windows-autopilot-level-300400/) for more information.
+On devices running a [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel, ETW tracing can be used to capture detailed information from Autopilot and related components.  The resulting ETW trace files can then be viewed using the Windows Performance Analyzer or similar tools.  See [the advanced troubleshooting blog](https://blogs.technet.microsoft.com/mniehaus/2017/12/13/troubleshooting-windows-autopilot-level-300400/) for more information.
 
 ## Troubleshooting Azure AD Join issues
 
 The most common issue joining a device to Azure AD is related to Azure AD permissions.  Ensure [the correct configuration is in place](windows-autopilot-requirements.md) to allow users to join devices to Azure AD.  Errors can also happen if the user has exceeded the number of devices that they are allowed to join, as configured in Azure AD.
+
+An Azure AD device is created upon import - it's important that this object not be deleted. It acts as Autopilot's anchor in AAD for group membership and targeting (including the profile) and can lead to join errors if it's deleted. Once this object has been deleted, to fix the issue, deleting and reimporting this autopilot hash will be necessary so it can recreate the associated object.
 
 Error code 801C0003 will typically be reported on an error page titled "Something went wrong".  This error means that the Azure AD join failed.
 
@@ -106,7 +148,7 @@ When a profile is downloaded depends on the version of Windows 10 that is runnin
 
 | Windows 10 version | Profile download behavior |
 | --- | --- |
-| 1703 and 1709 | The profile is downloaded after the OOBE network connection page. This page is not displayed when using a wired connection. In this case, the profile is downloaded just prior to the EULA screen. |
+| 1709 | The profile is downloaded after the OOBE network connection page. This page is not displayed when using a wired connection. In this case, the profile is downloaded just prior to the EULA screen. |
 | 1803 | The profile is downloaded as soon as possible.  If wired, it is downloaded at the start of OOBE. If wireless, it is downloaded after the network connection page. |
 | 1809 | The profile is downloaded as soon as possible (same as 1803), and again after each reboot. |
 

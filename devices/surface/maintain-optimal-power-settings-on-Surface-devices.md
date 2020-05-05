@@ -4,11 +4,11 @@ description: This topic provides best practice recommendations for maintaining o
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 10/28/2019
@@ -28,12 +28,12 @@ low power idle state (S0ix).
 
 To ensure Surface devices across your organization fully benefit from Surface power optimization features:
 
--  Install the latest  drivers and firmware from Windows Update or the Surface Driver and Firmware MSI. This creates the balanced power plan (aka power profile) by default and configures optimal power settings.  For more information, refer to [Deploying the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+-  Install the latest  drivers and firmware from Windows Update or the Surface Driver and Firmware MSI. This creates the balanced power plan (aka power profile) by default and configures optimal power settings.  For more information, refer to [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).
 - Avoid creating custom power profiles or adjusting advanced power settings not visible in the default UI  (**System** > **Power & sleep**).
 - If you must manage the power profile of devices across your network (such as in highly managed organizations), use the powercfg command tool to export the power plan from the factory image of the Surface device and then import it into the provisioning package for your Surface devices. 
 
->[!NOTE]
->You can only export a power plan across the same type of Surface device.  For example, you cannot export a power plan from Surface Laptop and import it on Surface Pro.  For more information, refer to [Configure power settings](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
+    >[!NOTE]
+    >You can only export a power plan across the same type of Surface device.  For example, you cannot export a power plan from Surface Laptop and import it on Surface Pro.  For more information, refer to [Configure power settings](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
 
 - Exclude Surface devices from any existing power management policy settings. 
 
@@ -166,7 +166,7 @@ To learn more, see:
 | Check app usage | Your apps | Close apps.|
 | Check your power cord for any damage.| Your power cord | Replace power cord if worn or damaged.|
 
-# Learn more 
+## Learn more 
 
 - [Modern
     standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
@@ -178,4 +178,4 @@ To learn more, see:
 
 - [Battery
     saver](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
-- [Deploying the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+- [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)

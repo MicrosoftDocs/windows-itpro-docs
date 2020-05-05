@@ -1,65 +1,160 @@
 ---
-title: Manage Surface driver and firmware updates (Surface)
-description: This article describes the available options to manage firmware and driver updates for Surface devices.
+title: Manage and deploy Surface driver and firmware updates 
+description: This article describes the available options to manage and deploy firmware and driver updates for Surface devices.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: Surface, Surface Pro 3, firmware, update, device, manage, deploy, driver, USB
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.audience: itpro
-ms.date: 10/21/2019
 ---
 
-# Manage Surface driver and firmware updates
-
-This article describes the available options that you can use to manage firmware and driver updates for Surface devices including Surface Pro 3 and later. 
-
-To see a list of the available downloads for Surface devices and links to download the drivers and firmware for your device, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
-
-On Surface devices, the firmware is exposed to the operating system as a driver and is visible in Device Manager. This design allows a Surface device firmware to be automatically updated along with all drivers through Windows Update. This mechanism provides a seamless, automatic experience for receiving the latest firmware and driver updates. Although automatic updating is easy for end users, updating firmware and drivers automatically may not always be appropriate for organizations and businesses. In cases where you strictly manage updates or when you deploy a new operating system to a Surface device, automatic updates from Windows Update may not be appropriate.
-
-## <a href="" id="methods-for-------firmware-deployment"></a>Methods for deploying firmware
-
-Windows Update automatically provides firmware for computers that receive updates directly from Microsoft. However, in environments where  Windows Server Update Services (WSUS) manages updates, Windows Update cannot update the firmware. For managed environments, there are a number of options you can use to deploy firmware updates.
-
-### Windows Update
-
-The simplest solution to ensure that firmware on Surface devices in your organization is kept up to date is to allow Surface devices to receive updates directly from Microsoft. You can implement this solution easily by excluding Surface devices from Group Policy that directs computers to receive updates from WSUS.
-
-Although this solution ensures that firmware will be updated as new releases are made available to Windows Update, it does present potential drawbacks. Each Surface device that receives updates from Windows Update downloads each update independently from Microsoft instead of accessing a central location. These operations increase demand on Internet connectivity and bandwidth. Additionally, such updates are not subjected to testing or review by administrators.
-
-For details about Group Policy for client configuration of WSUS or Windows Update, see [Step 4: Configure Group Policy Settings for Automatic Updates](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/4-configure-group-policy-settings-for-automatic-updates).
-
-### Windows Installer Package
-
-Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
-
-For instructions on how to deploy updates by using Endpoint Configuration Manager (formerly System Center Configuration Manager), refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+# Manage and deploy Surface driver and firmware updates
+ 
+How you manage Surface driver and firmware updates varies depending on your environment and organizational requirements. On Surface devices, firmware is exposed to the operating system as a driver and is visible in Device Manager, enabling device firmware and drivers to be automatically updated using Windows Update or Windows Update for Business. Although this simplified approach may be feasible for startups and small or medium-sized businesses, larger organizations typically need IT admins to distribute updates internally. This may involve comprehensive planning, application compatibility testing, piloting and validating updates, before final approval and distribution across the network.
 
 > [!NOTE]
-> You can deploy applications separately from an operating system deployment through MDT by using a Post OS Installation task sequence.
+> This article is intended for technical support agents and IT professionals and applies to Surface devices only. If you're looking for help to install Surface updates or firmware on a home device, see [Update Surface firmware and Windows 10](https://support.microsoft.com/help/4023505).
+ 
+While enterprise-grade software distribution solutions continue to evolve, the business rationale for centrally managing  updates remains the same: Maintain the security of Surface devices and keep them updated with the latest operating system and feature improvements. This is essential for sustaining a stable production environment and ensuring users aren't blocked from being productive. This article provides an overview of recommended tools and processes for larger organizations to accomplish these goals.
 
-### Microsoft System Center Configuration Manager
+## Central update management in commercial environments
 
-Starting in Microsoft System Center Configuration Manager version 1710, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. The process resembles that for deploying regular updates. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
+Microsoft has streamlined tools for managing devices – including driver and firmware updates -- into a single unified experience called [Microsoft Endpoint Manager admin center](https://devicemanagement.microsoft.com/) accessed from devicemanagement.microsoft.com.
 
-## Considerations when deploying updates and operating systems together
+### Manage updates with Configuration Manager and Intune
 
-The process of deploying firmware updates during an operating system deployment is straightforward. You can import the firmware and driver pack into either System Center Configuration Manager or MDT, and use them to deploy a fully updated environment to a target Surface device, complete with firmware. For a complete step-by-step guide to using MDT to deploy Windows to a Surface device, see [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](deploy-windows-10-to-surface-devices-with-mdt.md).
+Microsoft Endpoint Configuration Manager allows you to synchronize and deploy Surface firmware and driver updates with the Configuration Manager client. Integration with Microsoft Intune lets you see all your managed, co-managed, and partner-managed devices in one place. This is the recommended solution for large organizations to manage Surface updates.
+ 
+For detailed steps, see the following resources:
 
-> [!IMPORTANT]
-> Select the correct MSI file for each specific device and its operating system. For more information, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)
+- [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications).
+- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
+
+
+### Manage updates with Microsoft Deployment Toolkit
+
+Included in Endpoint Configuration Manager, the Microsoft Deployment Toolkit (MDT) contains optional deployment tools that you may wish to use depending on your environment. These include the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (Windows SIM), Deployment Image Servicing and Management (DISM), and User State Migration Tool (USMT). You can download the latest version of MDT from the [Microsoft Deployment Toolkit download page](https://www.microsoft.com/download/details.aspx?id=54259).
+ 
+For detailed steps, see the following resources:
+
+- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)
+
+Surface driver and firmware updates are packaged as Windows Installer (*.msi) files. To deploy these Windows Installer packages, you can use Endpoint Configuration Manager or MDT. For information about selecting the correct .msi file for a device and operating system, refer to the guidance below about downloading .msi files.
+
+For instructions on how to deploy updates by using Endpoint Configuration Manager refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+
 
 **WindowsPE and Surface firmware and drivers**
 
-System Center Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE only supports a limited set of basic drivers such as those for network adapters and storage controllers. Drivers for Windows components that are not part of WindowsPE might produce errors. As a best practice, you can prevent such errors by configuring the deployment process to use only the required drivers during the WindowsPE phase.
+Endpoint Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE only supports a limited set of basic drivers such as those for network adapters and storage controllers. Drivers for Windows components that are not part of WindowsPE might produce errors. As a best practice, you can prevent such errors by configuring the deployment process to use only the required drivers during the WindowsPE phase.
+
+### Endpoint Configuration Manager
+
+Starting in Endpoint Configuration Manager, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
 
 ## Supported devices
-Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. Information about MSI files for the newest Surface devices such as Surface Pro 7, Surface Pro X, and Surface Laptop 3 will be available from this page upon release. 
+
+Downloadable .msi files are available for Surface devices from Surface Pro 2 and later. Information about .msi files for the newest Surface devices such as Surface Pro 7, Surface Pro X, and Surface Laptop 3 will be available from this page upon release. 
+
+
+## Managing firmware with DFCI
+
+With Device Firmware Configuration Interface (DFCI) profiles built into Intune (now available in [public preview](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future. For more information, see:
+ 
+- [Intune management of Surface UEFI settings](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
+- [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
+
+## Best practices for update deployment processes
+
+To maintain a stable environment, it's strongly recommended to maintain parity with the most recent version of Windows 10.  For best practice recommendations, see [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
+
+## Downloadable Surface update packages
+
+Specific versions of Windows 10 have separate .msi files, each containing all required cumulative driver and firmware updates for Surface devices. Update packages may include some or all of the following components:
+
+- Wi-Fi and LTE
+- Video
+- Solid state drive
+- System aggregator module (SAM)
+- Battery
+- Keyboard controller
+- Embedded controller (EC)
+- Management engine (ME)
+- Unified extensible firmware interface (UEFI)
+
+
+### Downloading .msi files
+
+1. Browse to [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) on the Microsoft Download Center.
+2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the minimum supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 18362 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi.** For a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3.msi**.
+
+    ![Figure 1. Downloading Surface updates](images/fig1-downloads-msi.png)
+
+    *Figure 1. Downloading Surface updates*
+ 
+ 
+### Surface .msi naming convention
+
+Since August 2019, .msi files have used the following naming convention:
+
+- *Product*_*Windows release*_*Windows build number*_*Version number*_*Revision of version number (typically zero)*.
+
+**Example**
+
+- SurfacePro6_Win10_18362_19.073.44195_0.msi
+
+This file name provides the following information:
+
+- **Product:** SurfacePro6
+- **Windows release:** Win10
+- **Build:** 18362
+- **Version:** 19.073.44195 – This shows the date and time that the file was created, as follows:
+    - **Year:** 19 (2019)
+    - **Month and week:** 073 (third week of July)
+    - **Minute of the month:** 44195
+- **Revision of version:** 0 (first release of this version)
+
+### Legacy Surface .msi naming convention
+Legacy .msi files (files built before August 2019) followed the same overall naming formula but used a different method to derive the version number.
+ ****
+**Example**
+
+- SurfacePro6_Win10_16299_1900307_0.msi
+
+This file name provides the following information:
+
+- **Product:** SurfacePro6
+- **Windows release:** Win10
+- **Build:** 16299
+- **Version:** 1900307 – This shows the date that the file was created and its position in the release sequence, as follows:
+    - **Year:** 19 (2019)
+    - **Number of release:** 003 (third release of the year)
+    - **Product version number:** 07 (Surface Pro 6 is officially the seventh version of Surface Pro)
+- **Revision of version:** 0 (first release of this version)
+
+
+
+## Learn more
+
+- [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)
+- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)
+- [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications).
+- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
+- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)  
+- [Intune management of Surface UEFI settings](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
+- [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
+- [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)
+

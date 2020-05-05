@@ -23,8 +23,7 @@ ms.topic: article
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and machine configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
-The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
- focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
+The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
 When you get started with the lab, you'll be guided through a simple set-up process where you can specify the type of configuration that best suits your needs.
 
@@ -127,8 +126,8 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
->[!NOTE]
->The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
+> [!NOTE]
+> The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
 
 1. Connect to your machine and run an attack simulation by selecting **Connect**. 
 
@@ -179,4 +178,3 @@ Your feedback helps us get better in protecting your environment from advanced a
 Let us know what you think, by selecting **Provide feedback**.
 
 ![Image of provide feedback](images/send-us-feedback-eval-lab.png)
-

@@ -3,18 +3,17 @@ title: Microsoft Surface Data Eraser (Surface)
 description: Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
 ms.reviewer: hachidan
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 keywords: tool, USB, data, erase
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.audience: itpro
-ms.date: 11/13/2019
 ---
 
 # Microsoft Surface Data Eraser
@@ -83,30 +82,35 @@ After the creation tool is installed, follow these steps to create a Microsoft S
 
 1. Start Microsoft Surface Data Eraser from the Start menu or Start screen.
 
-2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process.
+2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process. 
 
 3. Click **Start** to acknowledge that you have a USB stick of at least 4 GB connected, as shown in Figure 1.
 
    ![Start the Microsoft Surface Data Eraser tool](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
 
    *Figure 1. Start the Microsoft Surface Data Eraser tool*
+4.  Choose **x64** for most Surface devices or  **ARM64** for Surface Pro X from the **Architecture Selection** page, as shown in Figure 2. Select **Continue**.
 
-4. Select the USB drive of your choice from the **USB Thumb Drive Selection** page as shown in Figure 2, and then click **Start** to begin the USB creation process. The drive you select will be formatted and any existing data on this drive will be lost.
+    ![Architecture selection](images/dataeraser-arch.png "Architecture Selection")<br>
+       *Figure 2. Select device architecture*
+    
+
+4. Select the USB drive of your choice from the **USB Thumb Drive Selection** page as shown in Figure 3, and then click **Start** to begin the USB creation process. The drive you select will be formatted and any existing data on this drive will be lost.
 
    >[!NOTE]
    >If the Start button is disabled, check that your removable drive has a total capacity of at least 4 GB.
   
    ![USB thumb drive selection](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
-   *Figure 2. USB thumb drive selection*
+   *Figure 3. USB thumb drive selection*
 
 5. After the creation process is finished, the USB drive has been formatted and all binaries are copied to the USB drive. Click **Success**.
 
-6. When the **Congratulations** screen is displayed, you can eject and remove the thumb drive. This thumb drive is now ready to be inserted into a Surface device, booted from, and wipe any data on the device. Click **Complete** to finish the USB creation process, as shown in Figure 3.
+6. When the **Congratulations** screen is displayed, you can eject and remove the thumb drive. This thumb drive is now ready to be inserted into a Surface device, booted from, and wipe any data on the device. Click **Complete** to finish the USB creation process, as shown in Figure 4.
 
    ![Surface Data Eraser USB creation process](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
 
-   *Figure 3. Complete the Microsoft Surface Data Eraser USB creation process*
+   *Figure 4. Complete the Microsoft Surface Data Eraser USB creation process*
 
 7. Click **X** to close Microsoft Surface Data Eraser.
 
@@ -130,11 +134,11 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
    >[!NOTE]
    >If your device does not boot to USB using these steps, you may need to turn on the **Enable Alternate Boot Sequence** option in Surface UEFI. You can read more about Surface UEFI boot configuration in [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
-3. When the Surface device boots, a **SoftwareLicenseTerms** text file is displayed, as shown in Figure 4.
+3. When the Surface device boots, a **SoftwareLicenseTerms** text file is displayed, as shown in Figure 5.
 
    ![Booting the Microsoft Surface Data Eraser USB stick](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
-   *Figure 4. Booting the Microsoft Surface Data Eraser USB stick*
+   *Figure 5. Booting the Microsoft Surface Data Eraser USB stick*
 
 4. Read the software license terms, and then close the Notepad file.
 
@@ -147,14 +151,14 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
    ![Partition to be erased is displayed](images/sda-fig5-erase.png "Partition to be erased is displayed")
   
-   *Figure 5. Partition to be erased is displayed in Microsoft Surface Data Eraser*
+   *Figure 6. Partition to be erased is displayed in Microsoft Surface Data Eraser*
 
 7. If you pressed **Y** in step 6, due to the destructive nature of the data erasure process, an additional dialog box is displayed to confirm your choice.
 
 8. Click the **Yes** button to continue erasing data on the Surface device.
 
->[!NOTE]
->When you run Surface Data Eraser on the Surface Data Eraser USB drive, a log file is generated in the **SurfaceDataEraserLogs** folder.
+   >[!NOTE]
+   >When you run Surface Data Eraser on the Surface Data Eraser USB drive, a log file is generated in the **SurfaceDataEraserLogs** folder.
 
 ## Changes and updates
 
@@ -222,8 +226,8 @@ This version of Microsoft Surface Data Eraser adds support for the following:
 
 - Surface Pro 1TB
 
->[!NOTE]
->Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+   >[!NOTE]
+   >Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
 
 
 ### Version 3.2.36.0

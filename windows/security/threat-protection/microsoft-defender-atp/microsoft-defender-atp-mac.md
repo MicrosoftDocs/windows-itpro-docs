@@ -63,7 +63,7 @@ The three most recent major releases of macOS are supported.
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
-Beta versions of macOS are not supported. macOS Sierra (10.12) support will end on January 1, 2020.
+Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -73,16 +73,22 @@ The following table lists the services and their associated URLs that your netwo
 
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
+| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
+| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net <br/> winatp-gw-weu.microsoft.com <br/> winatp-gw-neu.microsoft.com |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net <br/> winatp-gw-ukw.microsoft.com <br/> winatp-gw-uks.microsoft.com |
+| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net <br/> winatp-gw-cus.microsoft.com <br/> winatp-gw-eus.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
+- Proxy auto-config (PAC)
 - Web Proxy Auto-discovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+
+> [!WARNING]
+> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
+>
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
@@ -113,6 +119,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 ## How to configure Microsoft Defender ATP for Mac
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
+
+## macOS kernel and system extensions
+
+In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender Advanced Threat Protection for Mac](mac-whatsnew.md) for relevant details.
 
 ## Resources
 

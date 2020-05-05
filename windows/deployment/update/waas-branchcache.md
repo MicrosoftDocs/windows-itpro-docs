@@ -20,7 +20,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-BranchCache is a bandwidth-optimization feature that has been available since the Windows Server 2008 R2 and Windows 7 operating systems. Each client has a cache and acts as an alternate source for content that devices on its own network request. Windows Server Update Services (WSUS) and System Center Configuration Manager can use BranchCache to optimize network bandwidth during update deployment, and it’s easy to configure for either of them. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode. 
+BranchCache is a bandwidth-optimization feature that has been available since the Windows Server 2008 R2 and Windows 7 operating systems. Each client has a cache and acts as an alternate source for content that devices on its own network request. Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager can use BranchCache to optimize network bandwidth during update deployment, and it’s easy to configure for either of them. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode. 
 
 - Distributed Cache mode operates like the [Delivery Optimization](waas-delivery-optimization.md) feature in Windows 10: each client contains a cached version of the BranchCache-enabled files it requests and acts as a distributed cache for other clients requesting that same file. 
 
@@ -39,7 +39,7 @@ In Windows 10, version 1607, the Windows Update Agent uses Delivery Optimization
 
 ## Configure servers for BranchCache
 
-You can use WSUS and Configuration Manager with BranchCache in Distributed Cache mode. BranchCache in Distributed Cache mode is easy to configure for both WSUS and System Center Configuration Manager. 
+You can use WSUS and Configuration Manager with BranchCache in Distributed Cache mode. BranchCache in Distributed Cache mode is easy to configure for both WSUS and Microsoft Endpoint Configuration Manager. 
 
 For a step-by-step guide to configuring BranchCache on Windows Server devices, see the [BranchCache Deployment Guide (Windows Server 2012)](https://technet.microsoft.com/library/jj572990) or [BranchCache Deployment Guide (Windows Server 2016)](https://technet.microsoft.com/windows-server-docs/networking/branchcache/deploy/branchcache-deployment-guide).
 

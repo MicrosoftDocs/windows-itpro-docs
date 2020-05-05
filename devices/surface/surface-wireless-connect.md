@@ -4,14 +4,13 @@ description: This topic describes recommended Wi-Fi settings to ensure Surface d
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: coveminer
 ms.audience: itpro
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: v-jokai
 ms.topic: article
-ms.date: 10/31/2019
 ms.reviewer: tokatz
-manager: dansimp
+manager: laurawi
 ---
 # Optimize Wi-Fi connectivity for Surface devices
 

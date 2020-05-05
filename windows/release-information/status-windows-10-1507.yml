@@ -29,11 +29,11 @@ sections:
     columns: 3
     items:
     
-    - href: https://aka.ms/how-to-get-1909
-      html: Get the update >
+    - href: https://aka.ms/Windows7ESU
+      html: Stay protected with Extended Security Updates >
       image: 
-        src: http://docs.microsoft.com/media/common/i_download-install.svg
-      title: Windows 10, version 1909 now available
+        src: https://docs.microsoft.com/media/common/i_subscription.svg
+      title: Still have devices running Windows 7 in your enterprise?
     - href: https://aka.ms/1909mechanics
       html: Explore the improvements >
       image: 
@@ -60,6 +60,7 @@ sections:
   - type: markdown
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='392msg'></div><b>You might encounter issues with KB4502496</b><br>You might encounter issues trying to install or after installing KB4502496<br><br><a href = '#392msgdesc'>See details ></a></td><td>N/A <br>February 11, 2020<br><a href ='https://support.microsoft.com/help/4502496' target='_blank'>KB4502496</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>February 15, 2020 <br>01:22 AM PT</td></tr>
       <tr><td><div id='364msg'></div><b>TLS connections might fail or timeout</b><br>Transport Layer Security (TLS) connections might fail or timeout when connecting or attempting a resumption.<br><br><a href = '#364msgdesc'>See details ></a></td><td>OS Build 10240.18368<br><br>October 08, 2019<br><a href ='https://support.microsoft.com/help/4520011' target='_blank'>KB4520011</a></td><td>Mitigated External<br></td><td>November 05, 2019 <br>03:36 PM PT</td></tr>
       <tr><td><div id='196msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Operations performed on files or folders on a CSV may fail with the error: STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5).<br><br><a href = '#196msgdesc'>See details ></a></td><td>OS Build 10240.18094<br><br>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480962' target='_blank'>KB4480962</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
       </table>
@@ -72,6 +73,15 @@ sections:
         <div>
         </div> 
       "
+- title: February 2020
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='392msgdesc'></div><b>You might encounter issues with KB4502496</b><div>You might encounter issues trying to install or after installing <a href='https://support.microsoft.com/help/4502496' target='_blank'>KB4502496</a>.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1909; Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10 Enterprise LTSC 2016; Windows 10, version 1607; Windows 10 Enterprise LTSC 2015; Windows 8.1</li><li>Server: Windows Server, version 1909; Windows Server, version 1903; Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709 ; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Workaround: </strong>To help a sub-set of affected devices, the standalone security update (<a href='https://support.microsoft.com/help/4502496' target='_blank'>KB4502496</a>) has been removed and will not re-offered from Windows Update, Windows Server Update Services (WSUS) or Microsoft Update Catalog.&nbsp;<strong>Note</strong> This does not affect any other update, including Latest Cumulative Updates (LCUs), Monthly Rollups or Security Only updates.</div><div><br></div><div>If this update is installed and you are experiencing issues, you can uninstall this update.</div><ol><li>Select the start button or Windows Desktop Search and type <strong>update history </strong>and select <strong>View your Update history</strong>.</li><li>On the <strong>Settings/View update history</strong> dialog window, Select <strong>Uninstall Updates</strong>.</li><li>On the <strong>Installed Updates</strong> dialog window, find and select <a href='https://support.microsoft.com/help/4502496' target='_blank'>KB4502496</a> and select the <strong>Uninstall</strong> button.</li><li>Restart your device.</li></ol><div>&nbsp;</div><div><strong>Next steps: </strong>We are working on an improved version of this update in coordination with our partners and will release it in a future update.</div><br><a href ='#392msg'>Back to top</a></td><td>N/A <br>February 11, 2020<br><a href ='https://support.microsoft.com/help/4502496' target='_blank'>KB4502496</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>February 15, 2020 <br>01:22 AM PT<br><br>Opened:<br>February 15, 2020 <br>12:02 AM PT</td></tr>
+      </table>
+      "
+
 - title: November 2019
 - items:
   - type: markdown

@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2019
+ms.date: 01/14/2020
 ---
 
 # Understand the advanced hunting schema
@@ -37,7 +37,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 | Table name | Description |
 |------------|-------------|
-| **[AlertEvents](advanced-hunting-alertevents-table.md)** | Alerts on Microsoft Defender Security Center |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Alerts on Microsoft Defender Security Center |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Machine information, including OS information |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
@@ -47,6 +47,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Sign-ins and other authentication events |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL loading events |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
+| **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | Certificate information of signed files obtained from certificate verification events on endpoints |
 | **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventory of software on devices as well as any known vulnerabilities in these software products |
 | **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Threat & Vulnerability Management assessment events, indicating the status of various security configurations on devices |
@@ -54,4 +55,5 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Learn the query language](advanced-hunting-query-language.md)

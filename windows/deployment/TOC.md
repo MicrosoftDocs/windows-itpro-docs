@@ -35,7 +35,7 @@
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-#### [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ### [Plan for Windows 10 deployment](planning/index.md)
 #### [Windows 10 Enterprise FAQ for IT Pros](planning/windows-10-enterprise-faq-itpro.md)
@@ -79,19 +79,20 @@
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 
 
-### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-#### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
-##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
-##### [MDT Lite Touch components](deploy-windows-mdt/mdt-lite-touch-components.md)
-##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+### Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)
+#### [Get started with MDT](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
 
-#### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
-#### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
-#### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
-#### [Refresh a Windows 7 computer with Windows 10](deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md)
-#### [Replace a Windows 7 computer with a Windows 10 computer](deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md)
-#### [Perform an in-place upgrade to Windows 10 with MDT](upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-#### [Configure MDT settings](deploy-windows-mdt/configure-mdt-settings.md)
+#### Deploy Windows 10 with MDT
+##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+##### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
+##### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
+##### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
+##### [Refresh a Windows 7 computer with Windows 10](deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md)
+##### [Replace a Windows 7 computer with a Windows 10 computer](deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md)
+##### [Perform an in-place upgrade to Windows 10 with MDT](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
+
+#### Customize MDT
+##### [Configure MDT settings](deploy-windows-mdt/configure-mdt-settings.md)
 ##### [Set up MDT for BitLocker](deploy-windows-mdt/set-up-mdt-for-bitlocker.md)
 ##### [Configure MDT deployment share rules](deploy-windows-mdt/configure-mdt-deployment-share-rules.md)
 ##### [Configure MDT for UserExit scripts](deploy-windows-mdt/configure-mdt-for-userexit-scripts.md)
@@ -101,20 +102,21 @@
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
-### [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
-#### [Integrate Configuration Manager with MDT](deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
-#### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
-#### [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
-#### [Add a Windows 10 operating system image using Configuration Manager](deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md)
-#### [Create an application to deploy with Windows 10 using Configuration Manager](deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
-#### [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
-#### [Create a task sequence with Configuration Manager and MDT](deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)
-#### [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](deploy-windows-sccm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
-#### [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md)
-#### [Monitor the Windows 10 deployment with Configuration Manager](deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager.md)
-#### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-#### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
-#### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
+### Deploy Windows 10 with Microsoft Endpoint Configuration Manager
+#### Prepare for Windows 10 deployment with Configuration Manager
+##### [Prepare for Zero Touch Installation with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+##### [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
+##### [Add a Windows 10 operating system image using Configuration Manager](deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager.md)
+##### [Create an application to deploy with Windows 10 using Configuration Manager](deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
+##### [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
+##### [Create a task sequence with Configuration Manager and MDT](deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt.md)
+##### [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md)
+
+#### Deploy Windows 10 with Configuration Manager
+##### [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
+##### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
+##### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
+##### [Perform an in-place upgrade to Windows 10 using Configuration Manager](deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
 
 ### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
@@ -244,15 +246,23 @@
 ### Monitor Windows Updates
 #### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
+##### [Update Compliance Configuration Script](update/update-compliance-configuration-script.md)
+##### [Manually Configuring Devices for Update Compliance](update/update-compliance-configuration-manual.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
 ##### [Need Attention! report](update/update-compliance-need-attention.md)
 ##### [Security Update Status report](update/update-compliance-security-update-status.md)
 ##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
-##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
 ##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
-##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
+##### [Data Handling and Privacy in Update Compliance](update/update-compliance-privacy.md)
+##### [Update Compliance Schema Reference](update/update-compliance-schema.md)
+###### [WaaSUpdateStatus](update/update-compliance-schema-waasupdatestatus.md)
+###### [WaaSInsiderStatus](update/update-compliance-schema-waasinsiderstatus.md)
+###### [WaaSDeploymentStatus](update/update-compliance-schema-waasdeploymentstatus.md)
+###### [WUDOStatus](update/update-compliance-schema-wudostatus.md)
+###### [WUDOAggregatedStatus](update/update-compliance-schema-wudoaggregatedstatus.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
+#### [Update Windows 10 media with Dynamic Update](update/media-dynamic-update.md)
 #### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
 #### [Deploy feature updates for user-initiated installations](update/feature-update-user-install.md)
 #### [Conclusion](update/feature-update-conclusion.md)
@@ -267,33 +277,7 @@
 ### Use Windows Server Update Services
 #### [Deploy Windows 10 updates using Windows Server Update Services](update/waas-manage-updates-wsus.md)
 #### [Enable FoD and language pack updates in Windows Update](update/fod-and-lang-packs.md)
-### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
+### [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-## Windows Analytics
-### [Windows Analytics overview](update/windows-analytics-overview.md)
-### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
-### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
-### Upgrade Readiness
-#### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
-#### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
-#### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
-#### Get started
-##### [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)
-##### [Upgrade Readiness deployment script](upgrade/upgrade-readiness-deployment-script.md)
-#### Use Upgrade Readiness
-##### [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)
-##### [Upgrade overview](upgrade/upgrade-readiness-upgrade-overview.md)
-##### [Step 1: Identify apps](upgrade/upgrade-readiness-identify-apps.md)
-##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
-##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
-##### [Step 4: Monitor deployment](upgrade/upgrade-readiness-monitor-deployment.md)
-##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
-##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
-### Device Health
-#### [Device Health overview](update/device-health-monitor.md)
-#### [Get started with Device Health](update/device-health-get-started.md)
-#### [Using Device Health](update/device-health-using.md)
-### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
-### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)

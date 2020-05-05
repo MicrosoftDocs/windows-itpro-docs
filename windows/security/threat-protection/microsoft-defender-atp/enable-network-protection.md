@@ -43,11 +43,28 @@ You can see if network protection has been enabled on a local device by using Re
 
 You can enable network protection by using any of these methods:
 
+* [PowerShell](#powershell)
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
-* [PowerShell](#powershell)
+
+### PowerShell
+
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
+2. Enter the following cmdlet:
+
+    ```PowerShell
+    Set-MpPreference -EnableNetworkProtection Enabled
+    ```
+
+You can enable the feature in audit mode using the following cmdlet:
+
+```PowerShell
+Set-MpPreference -EnableNetworkProtection AuditMode
+```
+
+Use `Disabled` instead of `AuditMode` or `Enabled` to turn the feature off.
 
 ### Intune
 
@@ -64,9 +81,9 @@ You can enable network protection by using any of these methods:
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-### SCCM
+## Microsoft Endpoint Configuration Manager
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
 1. Enter a name and a description, click **Network protection**, and click **Next**.
 1. Choose whether to block or audit access to suspicious domains and click **Next**.
@@ -103,23 +120,6 @@ You can confirm network protection is enabled on a local computer by using Regis
    * 0=Off
    * 1=On
    * 2=Audit
-
-### PowerShell
-
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
-2. Enter the following cmdlet:
-
-    ```PowerShell
-    Set-MpPreference -EnableNetworkProtection Enabled
-    ```
-
-You can enable the feature in audit mode using the following cmdlet:
-
-```PowerShell
-Set-MpPreference -EnableNetworkProtection AuditMode
-```
-
-Use `Disabled` instead of `AuditMode` or `Enabled` to turn the feature off.
 
 ## Related topics
 

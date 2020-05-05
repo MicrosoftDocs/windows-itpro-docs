@@ -38,7 +38,7 @@ Set the baselines for calculating the score of security controls on the Secure S
 3. Click **Save preferences**.
 
 ## Related topics
-- [View the Secure Score dashboard](secure-score-dashboard.md)
+- [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Update data retention settings for Microsoft Defender ATP](data-retention-settings.md)
 - [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)

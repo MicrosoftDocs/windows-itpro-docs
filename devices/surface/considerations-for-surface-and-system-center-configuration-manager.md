@@ -6,35 +6,32 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 11/25/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
-# Considerations for Surface and System Center Configuration Manager
+# Considerations for Surface and Microsoft Endpoint Configuration Manager
 
-Fundamentally, management and deployment of Surface devices with System Center Configuration Manager is the same as the management and deployment of any other PC. Like any other PC, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client; to publish apps, settings, and policies, you use the same process as you would use for any other device.
+Fundamentally, management and deployment of Surface devices with Microsoft Endpoint Configuration Manager is the same as the management and deployment of any other PC. Like any other PC, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client; to publish apps, settings, and policies, you use the same process as you would use for any other device.
 
-You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for System Center Configuration Manager](https://docs.microsoft.com/sccm/index).
+You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/index).
 
 Although the deployment and management of Surface devices is fundamentally the same as any other PC, there are some scenarios that may require additional considerations or steps. This article provides descriptions and guidance for these scenarios. The solutions documented in this article may apply to other devices and manufacturers as well.
 
 > [!NOTE]
-> For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.
+> For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.
 
 ## Updating Surface device drivers and firmware
 
-
-For devices that recieve updates through Windows Update, drivers for Surface components (and even firmware updates) are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or System Center Configuration Manager, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
-
+For devices that recieve updates through Windows Update, drivers for Surface components (and even firmware updates) are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or Configuration Manager, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
 
 > [!NOTE]
-> Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2. For more information, see [Can't import drivers into System Center Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
+> Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2. For more information, see [Can't import drivers into Microsoft Endpoint Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
 
 ## Surface Ethernet adapters and Configuration Manager deployment
 
@@ -42,9 +39,9 @@ The default mechanism that Configuration Manager uses to identify devices during
 
 To ensure that Surface devices using the same Ethernet adapter are identified as unique devices during deployment, you can instruct Configuration Manager to identify devices using another method. This other method could be the MAC address of the wireless network adapter or the System Universal Unique Identifier (System UUID). You can specify that Configuration Manager use other identification methods with the following options:
 
-* Add an exclusion for the MAC addresses of Surface Ethernet adapters, which forces Configuration Manager to overlook the MAC address in preference of the System UUID, as documented in the [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
+* Add an exclusion for the MAC addresses of Surface Ethernet adapters, which forces Configuration Manager to overlook the MAC address in preference of the System UUID, as documented in the [Reusing the same NIC for multiple PXE initiated deployments in SMicrosoft Endpoint Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
 
-* Prestage devices by System UUID as documented in the [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
+* Prestage devices by System UUID as documented in the [Reusing the same NIC for multiple PXE initiated deployments in Microsoft Endpoint Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
 
 * Use a script to identify a newly deployed Surface device by the MAC address of its wireless adapter, as documented in the [How to Use The Same External Ethernet Adapter For Multiple SCCM OSD](https://blogs.technet.microsoft.com/askpfeplat/2014/07/27/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm-osd/) blog post.
 
@@ -60,7 +57,7 @@ With the release of Microsoft Store for Business, Surface app is no longer avail
 
 If your organization uses prestaged media to pre-load deployment resources on to machines prior to deployment with Configuration Manager, the nature of Surface devices as UEFI devices may require you to take additional steps. Specifically, a native UEFI environment requires that you create multiple partitions on the boot disk of the system. If you are following along with the [documentation for prestaged media](https://technet.microsoft.com/library/79465d90-4831-4872-96c2-2062d80f5583?f=255&MSPPError=-2147217396#BKMK_CreatePrestagedMedia), the instructions provide for only single partition boot disks and therefore will fail when applied to Surface devices.
 
-Instructions for applying prestaged media to UEFI devices, such as Surface devices, can be found in the [How to apply Task Sequence Prestaged Media on multi-partitioned disks for BIOS or UEFI PCs in System Center Configuration Manager](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2014/04/02/how-to-apply-task-sequence-prestaged-media-on-multi-partitioned-disks-for-bios-or-uefi-pcs-in-system-center-configuration-manager/) blog post.
+Instructions for applying prestaged media to UEFI devices, such as Surface devices, can be found in the [How to apply Task Sequence Prestaged Media on multi-partitioned disks for BIOS or UEFI PCs in Microsoft Endpoint Configuration Manager](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2014/04/02/how-to-apply-task-sequence-prestaged-media-on-multi-partitioned-disks-for-bios-or-uefi-pcs-in-system-center-configuration-manager/) blog post.
 
 ## Licensing conflicts with OEM Activation 3.0
 
