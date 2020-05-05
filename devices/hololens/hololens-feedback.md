@@ -41,23 +41,23 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
 
 1. Enter a title for your feedback, and then add details in the **Explain in more detail** section. The more details you provide, such as how to reproduce this issue and the impact it has, the more actionable your feedback is. When finished, select **Next**.
 
-1. Select a topic from **Select a category**, and then select a subcategory from **Select a subcategory**.
+1. Select a topic from **Select a category**, and then select a subcategory from **Select a subcategory**. The following table describes the categories that are available.
 
    > [!NOTE]  
    > **Commercial customers**: To report a bug that is related to MDM, provisioning, or any other device management aspect, select the **Enterprise Management** category, and the **Device** subcategory.
 
    |Category |Description |
    | --- | --- |
-|Eye tracking |Issues with eye tracking, Iris login or eye calibration. |
-|Hologram accuracy, stability, and reliability |Issues with Holograms remaining in space as expected. |
-|Launching, placing, adjusting, and exiting apps |Any issue with entering or exiting apps, either 2D or 3D. |
-|Miracast |Miracast issues. |
-|Spaces and persistence |Issues with recognizing spaces and retention of Hologram placement. |
-|Start menu and all apps list |Issues within the Start menu and the all apps list menus. |
-|Surface mapping |Issues with surface mapping. |
-|Taking pictures and videos |Issues with Mixed Reality Captures. |
-|Video Hologram Playback |Issues with video holograms playing correctly. |
-|All other issues |All other issues. |
+   |Eye tracking |Feedback about eye tracking, iris sign-in, or calibration. |
+   |Hologram accuracy, stability, and reliability |Feedback about how holograms appear in space. |
+   |Launching, placing, adjusting, and exiting apps |Feedback about starting or stopping 2D or 3D apps. |
+   |Miracast |Feedback about Miracast. |
+   |Spaces and persistence |Feedback about how HoloLens recognizes spaces and retains holograms in space. |
+   |Start menu and all apps list |Feedback about the **Start** menu and the all apps list. |
+   |Surface mapping |Feedback about surface mapping. |
+   |Taking pictures and videos |Feedback about mixed reality captures. |
+   |Video hologram playback |Feedback about video hologram playback. |
+   |All other issues |All other issues. |
 
 1. You’ll be prompted to find similar feedback at this time, if your issue seems to be identical to other feedback, please select it. Otherwise choose New feedback and select Next.
 
