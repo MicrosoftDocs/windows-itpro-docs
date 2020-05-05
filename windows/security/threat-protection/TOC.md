@@ -691,7 +691,7 @@
 
 ### [Microsoft Defender SmartScreen](microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
 #### [Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings.md)
-#### [Set up and use Microsft Defender SmartScreen on individual devices](microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device.md)
+#### [Set up and use Microsoft Defender SmartScreen on individual devices](microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device.md)
 
 
 ### [Windows Sandbox](windows-sandbox/windows-sandbox-overview.md)
