@@ -558,16 +558,16 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 1. Determine the number of faculty members and students who will use the classroom. Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
 
-2. Determine the faculty members and students who need to install Microsoft Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.
+2. Determine the faculty members and students who need to install Microsoft Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Microsoft 365 Apps for enterprise plans). Table 8 lists the advantages and disadvantages of standard and Microsoft 365 Apps for enterprise plans.
 
     |Plan  |Advantages  |Disadvantages |
     |----- |----------- |------------- |
-    |Office 365 Education |<ul><li>Less expensive than Office 365 ProPlus</li><li>Can be run from any device</li><li>No installation necessary</li></ul> | <ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Office 365 ProPlus</li></ul> |
-    |Office 365 ProPlus |<ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports the full set of Office features</li><li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul> |<ul><li>Requires installation</li><li>More expensive than Office 365 Education</li></ul>|
+    |Office 365 Education |<ul><li>Less expensive than Microsoft 365 Apps for enterprise</li><li>Can be run from any device</li><li>No installation necessary</li></ul> | <ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Microsoft 365 Apps for enterprise</li></ul> |
+    |Microsoft 365 Apps for enterprise |<ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports the full set of Office features</li><li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul> |<ul><li>Requires installation</li><li>More expensive than Office 365 Education</li></ul>|
 
-    *Table 8. Comparison of standard and Office 365 ProPlus plans*
+    *Table 8. Comparison of standard and Microsoft 365 Apps for enterprise plans*
 
-    The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
+    The best user experience is to run Microsoft 365 Apps for enterprise or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 
 3. Determine whether students or faculty need Azure Rights Management.
 
@@ -1259,7 +1259,7 @@ Your MDT deployment share and Microsoft Endpoint Configuration Manager are now r
 
 ## Capture the reference image
 
-The reference device is a device that you use as the template for all the other devices in your district. On this device, you install any Windows desktop apps the classroom needs. For example, install the Windows desktop apps for Office 365 ProPlus if you selected that student license plan.
+The reference device is a device that you use as the template for all the other devices in your district. On this device, you install any Windows desktop apps the classroom needs. For example, install the Windows desktop apps for Microsoft 365 Apps for enterprise if you selected that student license plan.
 
 After you deploy Windows 10 and the desktop apps to the reference device, you capture an image of the device (the reference image). You import the reference image to an MDT deployment share or into Configuration Manager. Finally, you create a task sequence to deploy the reference image to faculty and student devices.
 

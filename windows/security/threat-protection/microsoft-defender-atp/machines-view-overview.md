@@ -71,12 +71,13 @@ Filter by the following machine health states:
 
   For more information on how to address issues on misconfigured machines see, [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
-### Security state
+### Antivirus status
 
-Filter by machines that are well configured or require attention based on the security controls that are enabled in your organization. Applies to active Windows 10 machines only.
+Filter machines by antivirus status. Applies to active Windows 10 machines only.
 
-- **Well configured** - Machines have the security controls well configured.
-- **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
+- **Disabled** - Virus & threat protection is turned off.
+- **Not reporting** - Virus & threat protection is not reporting.
+- **Not updated** - Virus & threat protection is not up to date.
 
 For more information, see [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
 
