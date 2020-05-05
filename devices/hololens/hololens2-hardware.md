@@ -123,7 +123,6 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 - Windows Holographic Operating System
 - Microsoft Edge
 - Dynamics 365 Remote Assist
-- Dynamics 365 Layout
 - Dynamics 365 Guides
 - 3D Viewer
 - OneDrive for Business

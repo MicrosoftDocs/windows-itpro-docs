@@ -42,7 +42,7 @@ MpCmdRun.exe -scan -2
 | Command  | Description   |
 |:----|:----|
 | `-?` **or** `-h`   | Displays all available options for this tool |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan. |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan.  CpuThrottling will honor the configured CPU throttling from policy |
 | `-Trace [-Grouping #] [-Level #]` | Starts diagnostic tracing |
 | `-GetFiles` | Collects support information |
 | `-GetFilesDiagTrack`  | Same as `-GetFiles`, but outputs to temporary DiagTrack folder |
