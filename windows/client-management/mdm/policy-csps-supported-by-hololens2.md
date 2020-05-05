@@ -1,6 +1,6 @@
 ---
-title: Policies supported by HoloLens 2
-description: Policies supported by HoloLens 2
+title: Policy CSPs supported by HoloLens 2
+description: Policy CSPs supported by HoloLens 2
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,8 +17,8 @@ ms.date: 07/18/2019
 > [!div class="op_single_selector"]
 >
 > - [HoloLens 2](policy-csps-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite](policies-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition](policies-supported-by-hololens-1st-gen-development-edition.md)
+> - [HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
+> - [HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
 >
 
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
@@ -85,4 +85,5 @@ ms.date: 07/18/2019
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 
 ## Related topics
+
 [Policy CSP](policy-configuration-service-provider.md)
