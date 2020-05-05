@@ -77,7 +77,7 @@ The color of the **Exposed machines** graph changes as the trend changes. If the
 
 Useful icons also quickly calls your attention to: <ul><li> ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
 
-### Investigate
+### Explore security recommendation options
 
 Select the security recommendation that you want to investigate or process.
 
@@ -93,6 +93,14 @@ From the flyout, you can do any of the following:
 
 >[!NOTE]
 >When a change is made on a machine, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
+
+### Investigate changes in machine exposure or impact
+
+If there is a large jump in the number of exposed machines, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+
+1. Select the recommendation and **Open software page**
+2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
+3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request
 
 ## Request remediation
 

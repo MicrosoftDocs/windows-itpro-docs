@@ -30,7 +30,7 @@ Event timeline also tells the story of your [exposure score](tvm-exposure-score.
 
 You can access Event timeline mainly through three ways:
 
-- In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center.
+- In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center
 - Top events card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
 - Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 
