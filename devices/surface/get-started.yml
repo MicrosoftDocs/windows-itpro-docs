@@ -48,15 +48,15 @@ landingContent:
       - linkListType: get-started
         links:
          - text: Surface Book 3 GPU technical overview
-            url: surface-book-gpu-overview.md
-          - text: Surface Book 3 Quadro RTX 3000 technical overview
-            url: surface-book-quadro.md
+           url: surface-book-gpu-overview.md
+         - text: Surface Book 3 Quadro RTX 3000 technical overview
+           url: surface-book-quadro.md
          - text: What’s new in Surface Dock 2
-            url: surface-dock-whats-new.md
-          - text: Surface and Endpoint Configuration Manager considerations
-            url: considerations-for-surface-and-system-center-configuration-manager.md
-          - text: Wake On LAN for Surface devices
-            url: wake-on-lan-for-surface-devices.md
+           url: surface-dock-whats-new.md
+         - text: Surface and Endpoint Configuration Manager considerations
+           url: considerations-for-surface-and-system-center-configuration-manager.md
+         - text: Wake On LAN for Surface devices
+           url: wake-on-lan-for-surface-devices.md
 
   # Card
   - title: Deploy Surface devices
