@@ -25,9 +25,9 @@ ms.custom: asr
 
 Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. This feature area includes the rules, monitoring, reporting, and analytics necessary for deployment that are included in [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), and require the Windows 10 Enterprise E5 license. 
 
-A limited subset of basic attack surface reduction rules can technically be used with Windows 10 Enterprise E3. They can be used without the benefits of reporting, monitoring, and analytics, which provide the ease of deployment and management capabilities necessary for enterprises. 
-
 Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
+
+To get the best protection, Windows Enterprise E5 enrollment is recommended. However, a limited subset of basic attack surface reduction rules can be used with Windows 10 Enterprise E3 (without the benefits of reporting, monitoring, and analytics). The following table lists attack surface reduction rules available in Windows E3 and Windows E5.
 
 |Rule |Windows E3 |Windows E5 |
 |--|--|--|
