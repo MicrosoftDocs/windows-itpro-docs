@@ -132,7 +132,7 @@ In some instances, Windows 10 may assign a graphically demanding app to be iGPU;
 
 2. Select **Add** to create a new entry on the list for your selected program, select Options to open Graphics Specifications, and then select your desired option.
 
-![Select power saving or high performance GPU options](./images/graphics-settings2.png)
+   ![Select power saving or high performance GPU options](./images/graphics-settings2.png)
 
 3. To verify which GPU are used for each app, open **Task Manager,** select **Performance,** and view the **GPU Engine** column.
 
