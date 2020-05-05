@@ -26,7 +26,7 @@ landingContent:
         links:
           - text: Surface Go 2
             url: https://www.microsoft.com/surface/business/surface-go-2
-         -  text: Surface Book 3 for Business
+          - text: Surface Book 3 for Business
             url: https://www.microsoft.com/surface/business/surface-book-3
           - text: Surface Pro 7 for Business
             url: https://www.microsoft.com/surface/business/surface-pro-7
