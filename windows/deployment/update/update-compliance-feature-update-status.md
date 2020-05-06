@@ -2,7 +2,7 @@
 title: Update Compliance - Feature Update Status report
 ms.reviewer: 
 manager: laurawi
-description: an overview of the Feature Update Status report
+description: This article contains an overview of the Feature Update Status report, which provides information about the status of feature updates across all devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -12,6 +12,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Feature Update Status

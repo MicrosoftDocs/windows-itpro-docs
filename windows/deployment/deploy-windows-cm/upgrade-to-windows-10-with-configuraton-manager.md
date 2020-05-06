@@ -1,6 +1,6 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
-description: In-place upgrades make upgrading Windows 7, Windows 8, and Windows 8.1 to Windows 10 easy -- you can even automate the whole process with a Microsoft Endpoint Configuration Manager task sequence.
+description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Configuration Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
 manager: laurawi
@@ -12,6 +12,7 @@ ms.mktglfcycl: deploy
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Perform an in-place upgrade to Windows 10 using Configuration Manager

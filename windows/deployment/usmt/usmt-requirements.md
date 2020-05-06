@@ -1,6 +1,7 @@
 ---
 title: USMT Requirements (Windows 10)
-description: USMT Requirements
+description: In this article, you will learn about the requirements for the User State Migration Toolkit (USMT) 10.0.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 2b0cf3a3-9032-433f-9622-1f9df59d6806
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 05/03/2017
 ms.topic: article
 ---
@@ -16,7 +18,7 @@ ms.topic: article
 # USMT Requirements
 
 
-## In This Topic
+## In this topic
 
 
 -   [Supported Operating Systems](#bkmk-1)
@@ -87,10 +89,10 @@ The following table lists the operating systems supported in USMT.
 **Note**  
 You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
 
-USMT does not support any of the Windows Server® operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
+USMT does not support any of the Windows Server&reg; operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
 
 USMT for Windows 10 should not be used for migrating from Windows 7 to Windows 8.1. It is meant to migrate to Windows 10.
-For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](https://go.microsoft.com/fwlink/p/?LinkId=246564). 
+For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User's Guide](https://go.microsoft.com/fwlink/p/?LinkId=246564). 
 
 ## Windows PE
 

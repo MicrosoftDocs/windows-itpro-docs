@@ -1,6 +1,7 @@
 ---
 title: Update Product Status (Windows 10)
-description: Update Product Status
+description: "In this article, you will learn how to use Volume Activation Management Tool (VAMT) to update product status for products installed on computers."
+ms.custom: seo-marvel-apr2020
 ms.assetid: 39d4abd4-801a-4e8f-9b8c-425a24a96764
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

@@ -1,6 +1,7 @@
 ---
 title: Reroute Files and Settings (Windows 10)
-description: Reroute Files and Settings
+description: In this article, you will find examples on how to create custom .xml files to reroute files and settings.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 905e6a24-922c-4549-9732-60fa11862a6c
 ms.reviewer: 
 manager: laurawi

@@ -1,6 +1,8 @@
 ---
 title: Verify the Condition of a Compressed Migration Store (Windows 10)
-description: Verify the Condition of a Compressed Migration Store
+description: In this article you will learn how to verify the Condition of a Compressed Migration Store by displaying information in the UsmtUtils log file.
+
+ms.custom: seo-marvel-apr2020
 ms.assetid: 4a3fda96-5f7d-494a-955f-6b865ec9fcae
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +10,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -20,7 +23,7 @@ When you migrate files and settings during a typical PC-refresh migration, the u
 
 -   All of the files being migrated.
 
--   The user’s settings.
+-   The user's settings.
 
 -   A catalog file that contains metadata for all files in the migration store.
 
@@ -34,7 +37,7 @@ When you use the **/verify** option, you can specify what type of information to
 
 -   **Failure only**: Displays only the files that are corrupted.
 
-## In This Topic
+## In this topic
 
 
 The following sections demonstrate how to run the **UsmtUtils** command with the **/verify** option, and how to specify the information to display in the UsmtUtils log file.

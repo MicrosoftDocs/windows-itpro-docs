@@ -1,6 +1,7 @@
 ---
 title: ScanState Syntax (Windows 10)
-description: ScanState Syntax
+description: In this article, you will learn about the ScanState command Syntax in the User State Migration Tool (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 004c755f-33db-49e4-8a3b-37beec1480ea
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -18,7 +20,7 @@ ms.topic: article
 
 The ScanState command is used with the User State Migration Tool (USMT) 10.0 to scan the source computer, collect the files and settings, and create a store.
 
-## In This Topic
+## In this topic
 
 
 [Before You Begin](#bkmk-beforeyoubegin)
@@ -570,7 +572,7 @@ You can use the /**uel**, /**ue** and /**ui** options together to migrate only t
 
 The /**ui** option has precedence over the /**ue** and /**uel** options. If a user is specified to be included using the /**ui** option, and also specified to be excluded using either the /**ue** or /**uel** options, the user will be included in the migration. For example, if you specify `/ui:contoso\* /ue:contoso\user1`, then User1 will be migrated, because the /**ui** option takes precedence over the /**ue** option.
 
-The /**uel** option takes precedence over the /**ue** option. If a user has logged on within the specified time period set by the /**uel** option, that user’s profile will be migrated even if they are excluded by using the /**ue** option. For example, if you specify `/ue:fixed\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
+The /**uel** option takes precedence over the /**ue** option. If a user has logged on within the specified time period set by the /**uel** option, that user's profile will be migrated even if they are excluded by using the /**ue** option. For example, if you specify `/ue:fixed\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
 
 <table>
 <colgroup>

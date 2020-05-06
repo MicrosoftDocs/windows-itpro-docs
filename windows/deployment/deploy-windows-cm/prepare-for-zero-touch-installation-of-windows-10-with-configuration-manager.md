@@ -1,5 +1,5 @@
 ---
-title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager (Windows 10)
+title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
 description: Learn how to prepare a Zero Touch Installation of Windows 10 with Configuration Manager, by integrating Configuration Manager with Microsoft Deployment Toolkit.
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
 ms.reviewer: 
@@ -13,6 +13,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager

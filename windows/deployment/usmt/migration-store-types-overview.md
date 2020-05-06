@@ -1,6 +1,7 @@
 ---
 title: Migration Store Types Overview (Windows 10)
-description: Migration Store Types Overview
+description: In this article, you'll learn about the Migration Store Types available in the User State Migration Tool (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -18,7 +20,7 @@ ms.topic: article
 
 When planning your migration, you should determine which migration store type best meets your needs. As part of these considerations, determine how much space is required to run the User State Migration Tool (USMT) 10.0 components on your source and destination computers. You should also determine the space needed to create and host the migration store, whether you are using a local share, network share, or storage device.
 
-## In This Topic
+## In This topic
 
 
 [Migration Store Types](#bkmk-types)
@@ -42,7 +44,7 @@ The compressed migration store is a single image file that contains all files be
 
 ### Hard-Link
 
-A hard-link migration store functions as a map that defines how a collection of bits on the hard disk are “wired” into the file system. You use the new USMT hard-link migration store in the PC Refresh scenario only. This is because the hard-link migration store is maintained on the local computer while the old operating system is removed and the new operating system is installed. Using a hard-link migration store saves network bandwidth and minimizes the server use needed to accomplish the migration.
+A hard-link migration store functions as a map that defines how a collection of bits on the hard disk are "wired" into the file system. You use the new USMT hard-link migration store in the PC Refresh scenario only. This is because the hard-link migration store is maintained on the local computer while the old operating system is removed and the new operating system is installed. Using a hard-link migration store saves network bandwidth and minimizes the server use needed to accomplish the migration.
 
 You use a command-line option,**/hardlink** , to create a hard-link migration store, which functions the same as an uncompressed migration store. Files are not duplicated on the local computer when user state is captured, nor are they duplicated when user state is restored. For more information, see [Hard-Link Migration Store](usmt-hard-link-migration-store.md).
 

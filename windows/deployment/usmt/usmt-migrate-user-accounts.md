@@ -1,6 +1,7 @@
 ---
 title: Migrate User Accounts (Windows 10)
-description: Migrate User Accounts
+description: In this article, you will learn how to use the user options in the command line to customize user account migration.
+ms.custom: seo-marvel-apr2020
 ms.assetid: a3668361-43c8-4fd2-b26e-9a2deaeaeb09
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -18,7 +20,7 @@ ms.topic: article
 
 By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the User options. You cannot specify users in the migration XML files or by using the Config.xml file.
 
-## In this Topic
+## In this topic
 
 
 -   [To migrate all user accounts and user settings](#bkmk-migrateall)

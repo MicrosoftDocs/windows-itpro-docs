@@ -1,6 +1,6 @@
 ---
 title: Windows Update troubleshooting 
-description: Learn how to troubleshoot Windows Update
+description: In this article, learn how to troubleshoot issues with  Windows Update, such as why a device is frozen at scan.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -12,6 +12,7 @@ author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Update troubleshooting

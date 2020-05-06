@@ -1,6 +1,7 @@
 ---
 title: LoadState Syntax (Windows 10)
-description: LoadState Syntax
+description: In this article, you will learn about the syntax of the LoadState command and the options it provides.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
 ms.reviewer: 
 manager: laurawi
@@ -17,9 +18,9 @@ ms.topic: article
 # LoadState Syntax
 
 
-This topic discusses the **LoadState** command syntax and options.
+This topic discusses the **LoadState** command syntax and options available with it.
 
-## In This Topic
+## In this topic
 
 
 [Before You Begin](#before)
@@ -462,7 +463,7 @@ You can use the **/uel**, **/ue** and **/ui** options together to migrate only t
 
 **The /ui option has precedence over the /ue and /uel options.** If a user is specified to be included using the **/ui** option, and also specified to be excluded using either the **/ue** or **/uel** options, the user will be included in the migration. For example, if you specify `/ui:contoso\* /ue:contoso\user1`, then User1 will be migrated, because the **/ui** option takes precedence over the **/ue** option.
 
-**The /uel option takes precedence over the /ue option.** If a user has logged on within the specified time period set by the **/uel** option, that user’s profile will be migrated even if they are excluded by using the **/ue** option. For example, if you specify `/ue:contoso\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
+**The /uel option takes precedence over the /ue option.** If a user has logged on within the specified time period set by the **/uel** option, that user's profile will be migrated even if they are excluded by using the **/ue** option. For example, if you specify `/ue:contoso\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
 
 <table>
 <colgroup>

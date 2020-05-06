@@ -1,6 +1,7 @@
 ---
 title: Include Files and Settings (Windows 10)
-description: Include Files and Settings
+description: In this article, you'll learn how to define a custom .xml file to migrate files and settings according to your needs.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 9009c6a5-0612-4478-8742-abe5eb6cbac8
 ms.reviewer: 
 manager: laurawi

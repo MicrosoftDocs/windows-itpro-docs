@@ -1,6 +1,7 @@
 ---
 title: Plan Your Migration (Windows 10)
-description: Plan Your Migration
+description: In this article, you'll learn about how to plan your migration before using the User State Migration Tool (USMT) 10.0 to perform migration.
+ms.custom: seo-marvel-apr2020
 ms.assetid: c951f7df-850e-47ad-b31b-87f902955e3e
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -22,7 +24,7 @@ In migration planning, both organizations and individuals must first identify wh
 
 One of the most important requirements for migrating settings and data is restoring only the information that the destination computer requires. Although the data that you capture on the source computer may be more comprehensive than the restoration data for backup purposes, restoring data or settings for applications that you will not install on the destination system is redundant. This can also introduce instability in a newly deployed computer.
 
-## In This Section
+## In this section
 
 
 <table>

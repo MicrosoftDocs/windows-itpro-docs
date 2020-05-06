@@ -1,6 +1,7 @@
 ---
 title: Identify Users (Windows 10)
-description: Identify Users
+description: In this article, you will learn about what to consider when you identify users that are to migrated.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
 ms.reviewer: 
 manager: laurawi
@@ -18,7 +19,7 @@ ms.localizationpriority: medium
 
 It is important to carefully consider how you plan to migrate users. By default, all users are migrated by User State Migration Tool (USMT) 5.0. You must specify which users to include by using the command line. You cannot specify users in the .xml files. For instructions on how to migrate users, see [Migrate User Accounts](usmt-migrate-user-accounts.md).
 
-## In This Topic
+## In this topic
 
 - [Migrating Local Accounts](#bkmk-8)
 - [Migrating Domain Accounts](#bkmk-9)

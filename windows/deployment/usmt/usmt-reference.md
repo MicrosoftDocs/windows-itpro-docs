@@ -1,6 +1,7 @@
 ---
 title: User State Migration Toolkit (USMT) Reference (Windows 10)
-description: User State Migration Toolkit (USMT) Reference
+description: In this article, you will find references to the resources for the User State Migration Toolkit (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: 2135dbcf-de49-4cea-b2fb-97dd016e1a1a
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -16,7 +18,7 @@ ms.topic: article
 # User State Migration Toolkit (USMT) Reference
 
 
-## In This Section
+## In this section
 
 
 <table>

@@ -1,6 +1,7 @@
 ---
 title: USMT Resources (Windows 10)
-description: USMT Resources
+description: In this article, you will find resources for the User State Migration Tool (USMT).
+ms.custom: seo-marvel-apr2020
 ms.assetid: a0b266c7-4bcb-49f1-b63c-48c6ace86b43
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +9,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

@@ -1,6 +1,7 @@
 ---
 title: Config.xml File (Windows 10)
-description: Config.xml File
+description: Learn about the Config.xml, that can be used to customize the store-creation or profile-migration behavior.
+ms.custom: seo-marvel-apr2020
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.reviewer: 
 manager: laurawi
@@ -33,7 +34,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
  
 
-## In This Topic
+## In this topic
 
 
 In USMT there are new migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the Config.xml file only.
