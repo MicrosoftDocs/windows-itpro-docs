@@ -14,7 +14,6 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/07/2020
 ms.reviewer: 
 manager: dansimp
 ---
