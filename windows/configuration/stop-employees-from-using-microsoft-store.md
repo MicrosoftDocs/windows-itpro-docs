@@ -78,7 +78,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 
 1.  Type gpedit in the search bar to find and start Group Policy Editor.
 
-2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates** , click **Windows Components**, and then click **Store**.
+2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates**, click **Windows Components**, and then click **Store**.
 
 3.  In the Setting pane, click **Turn off the Store application**, and then click **Edit policy setting**.
 
