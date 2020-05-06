@@ -14,7 +14,6 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/07/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -39,7 +38,7 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |4|Details about blocked malware |More details and actions for blocked malware are available with Windows Defender Antivirus and Microsoft Defender ATP. [Understand malware & other threats](../intelligence/understanding-malware.md).|
 |5|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. [Protect your network](../microsoft-defender-atp/network-protection.md).|
 |6|File blocking |Your organization's security team can block specific files. [Stop and quarantine files in your network](../microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network).|
-|7|Attack Surface Reduction |Your organization's security team can reduce your attack surface, offering attackers fewer ways to perform attacks. ASR also utilises cloud protection for a number of rules. [Reduce attack surfaces with attack surface reduction rules](../microsoft-defender-atp/attack-surface-reduction).|
+|7|Attack Surface Reduction |Your organization's security team can reduce your vulnerabilities (attack surfaces), offering attackers fewer ways to perform attacks. Attack surface reduction uses cloud protection for a number of rules. [Reduce attack surfaces with attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction).|
 |8|Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus solutions.) |
 |9|Geographic data |Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001). |
 |10|File recovery via OneDrive |If you are using Windows Defender Antivirus together with [Office 365](https://docs.microsoft.com/Office365/Enterprise), and your device is attacked by ransomware, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
