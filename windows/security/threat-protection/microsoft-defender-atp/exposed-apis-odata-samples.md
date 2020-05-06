@@ -35,7 +35,7 @@ Not all properties are filterable.
 
 ### Example 1
 
-- Get all the machines with the tag 'ExampleTag'
+Get all the machines with the tag 'ExampleTag'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
@@ -76,7 +76,7 @@ Content-type: application/json
 
 ### Example 2
 
-- Get all the alerts that created after 2018-10-20 00:00:00
+Get all the alerts that created after 2018-10-20 00:00:00
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=alertCreationTime+gt+2018-11-22T00:00:00Z
@@ -126,7 +126,7 @@ Content-type: application/json
 
 ### Example 3
 
-- Get all the machines with 'High' 'RiskScore'
+Get all the machines with 'High' 'RiskScore'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+eq+'High'
@@ -167,7 +167,7 @@ Content-type: application/json
 
 ### Example 4
 
-- Get top 100 machines with 'HealthStatus' not equals to 'Active'
+Get top 100 machines with 'HealthStatus' not equals to 'Active'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
@@ -208,7 +208,7 @@ Content-type: application/json
 
 ### Example 5
 
-- Get all the machines that last seen after 2018-10-20
+Get all the machines that last seen after 2018-10-20
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
@@ -249,7 +249,7 @@ Content-type: application/json
 
 ### Example 6
 
-- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
+Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
@@ -283,7 +283,7 @@ Content-type: application/json
 
 ### Example 7
 
-- Get the count of open alerts for a specific machine:
+Get the count of open alerts for a specific machine:
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
