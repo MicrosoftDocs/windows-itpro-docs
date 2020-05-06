@@ -67,11 +67,11 @@ For each device that will be deployed using user-driven deployment, these additi
 
 ## User-driven mode for hybrid Azure Active Directory join
 
-Windows Autopilot requires that devices be Azure Active Directory joined. If you have an on-premises Active Directory environment and want to also join devices to your on-premises domain, you can accomplish this by configuring Autopilot devices to be [hybrid Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).  
+Windows Autopilot requires that devices be Azure Active Directory joined. If you have an on-premises Active Directory environment and want to also join devices to your on-premises domain, you can accomplish this by configuring Autopilot devices to be [hybrid-joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).  
 
 ### Requirements
 
-To perform a user-driven hybrid AAD joined deployment using Windows Autopilot:
+To perform a user-driven hybrid Azure AD joined deployment using Windows Autopilot:
 
 - A Windows Autopilot profile for user-driven mode must be created and 
   - **Hybrid Azure AD joined** must be specified as the selected option under **Join to Azure AD as** in the Autopilot profile.
@@ -83,7 +83,7 @@ To perform a user-driven hybrid AAD joined deployment using Windows Autopilot:
   - Note: The Intune Connector will perform an on-prem AD join, therefore users do not need on-prem AD-join permission, assuming the Connector is [configured to perform this action](https://docs.microsoft.com/intune/windows-autopilot-hybrid#increase-the-computer-account-limit-in-the-organizational-unit) on the user's behalf. 
 - If using Proxy, WPAD Proxy settings option must be enabled and configured.
 
-**AAD device join**: The hybrid AAD join process uses the system context to perform device AAD join, therefore it is not affected by user based AAD join permission settings. In addition, all users are enabled to join devices to AAD by default.
+**Azure AD device join**: The hybrid Azure AD join process uses the system context to perform device Azure AD join, therefore it is not affected by user based Azure AD join permission settings. In addition, all users are enabled to join devices to Azure AD by default.
 
 ### Step by step instructions
 
