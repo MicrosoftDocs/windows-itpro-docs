@@ -30,12 +30,7 @@ additionalContent:
         # Card
         - title: Surface Hub documentation
           summary: Learn how to deploy and manage Surface Hub 2S, the all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device. 
-          url: https://docs.microsoft.com/surface-hub/index
-         # Card
-        - title: Surface Hub adoption guidance
-          summary: Get best practices for technical readiness and adoption across your lines of business. 
-          url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
-        
+          url: https://docs.microsoft.com/surface-hub/index     
     - title: Other resources # < 60 chars (optional)
       items:
         # Card
@@ -50,6 +45,8 @@ additionalContent:
           links:
             - text: Surface training on Microsoft Learn
               url: https://docs.microsoft.com/learn/browse/?term=Surface
+            - text: Surface Hub 2S adoption guidance
+              url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
             - text: Microsoft Mechanics Surface videos
               url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
             

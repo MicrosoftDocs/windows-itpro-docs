@@ -6,6 +6,7 @@
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
+### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
 ### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 
@@ -13,21 +14,17 @@
 
 ## [Plan deployment](microsoft-defender-atp/deployment-strategy.md)
 
-
 ## [Deployment guide]()
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
-
-
-
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
 #### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 #### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-#### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+#### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 #### [Configuration score](microsoft-defender-atp/configuration-score.md)
 #### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
@@ -41,7 +38,7 @@
 #### [Attack surface reduction evaluation](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
-
+#### [Attack surface reduction rules in Windows 10 Enterprise E3](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-rules-in-windows-10-enterprise-e3)
 
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
@@ -81,7 +78,7 @@
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
 ##### [Network protection evaluation](microsoft-defender-atp/evaluate-network-protection.md)
-
+##### [Enable network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
@@ -256,8 +253,6 @@
 
 ## [Security operations]()
 
-
-
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
 #### [Security operations dashboard](microsoft-defender-atp/security-operations-dashboard.md)
@@ -265,6 +260,7 @@
 ##### [View and organize the Incidents queue](microsoft-defender-atp/view-incidents-queue.md)
 ##### [Manage incidents](microsoft-defender-atp/manage-incidents.md)
 ##### [Investigate incidents](microsoft-defender-atp/investigate-incidents.md)
+
  
 #### [Alerts queue]()
 ##### [View and organize the Alerts queue](microsoft-defender-atp/alerts-queue.md)
@@ -316,10 +312,6 @@
 
 
 
-
-
-##### [Shadow protection?](windows-defender-antivirus/shadow-protection.md)
-
 #### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 #### [Reporting]()
@@ -333,10 +325,9 @@
 ##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
 
-
-
-
-
+### [Behavioral blocking and containment]()
+#### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
+#### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 ### [Automated investigation and response]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
@@ -355,7 +346,7 @@
 ##### [DeviceInfo](microsoft-defender-atp/advanced-hunting-deviceinfo-table.md)
 ##### [DeviceNetworkInfo](microsoft-defender-atp/advanced-hunting-devicenetworkinfo-table.md)
 ##### [DeviceEvents](microsoft-defender-atp/advanced-hunting-deviceevents-table.md)
-##### [DeviceFileCertificateInfoBeta](microsoft-defender-atp/advanced-hunting-devicefilecertificateinfobeta-table.md)
+##### [DeviceFileCertificateInfo](microsoft-defender-atp/advanced-hunting-devicefilecertificateinfo-table.md)
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
@@ -412,7 +403,7 @@
 ### [Configure portal settings]()
 #### [Set up preferences](microsoft-defender-atp/preferences-setup.md)
 #### [General]()
-##### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
+##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
 ##### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
 ##### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
@@ -423,7 +414,7 @@
 ##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ###### [Create and manage roles](microsoft-defender-atp/user-roles.md)
 ###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
-####### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
+###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
 #### [APIs]()
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
@@ -443,7 +434,7 @@
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
-#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
+
 
 
 ## Reference
@@ -583,7 +574,7 @@
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 ##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
-##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
@@ -699,9 +690,10 @@
 #### [Family options](windows-defender-security-center/wdsc-family-options.md)
 
 
-### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
-#### [Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-#### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+### [Microsoft Defender SmartScreen](microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+#### [Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings.md)
+#### [Set up and use Microsoft Defender SmartScreen on individual devices](microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device.md)
+
 
 ### [Windows Sandbox](windows-sandbox/windows-sandbox-overview.md)
 #### [Windows Sandbox architecture](windows-sandbox/windows-sandbox-architecture.md)

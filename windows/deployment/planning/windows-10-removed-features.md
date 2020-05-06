@@ -59,4 +59,4 @@ The following features and functionalities have been removed from the installed 
 |Microsoft Paint | This application will not be available for languages that are not on the [full localization list](https://www.microsoft.com/windows/windows-10-specifications#Windows-10-localization). | 1703 |
 |NPN support in TLS | This feature is superseded by Application-Layer Protocol Negotiation (ALPN). | 1703 |
 |Windows Information Protection "AllowUserDecryption" policy | Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported. | 1703 |
-|WSUS for Windows Mobile  | Updates are being transitioned to the new Unified Update Platform (UUP). | 1703 |
+|WSUS for Windows Mobile  | Updates are being transitioned to the new Unified Update Platform (UUP) | 1703 |

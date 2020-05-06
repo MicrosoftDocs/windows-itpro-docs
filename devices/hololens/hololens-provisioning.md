@@ -16,7 +16,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.date: 03/10/2020
 ms.reviewer: Teresa-Motiv
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
@@ -33,7 +33,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificates to the device
 - Enable Developer Mode
-- Configure Kiosk mode (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803).
+- Configure Kiosk mode (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
 
 ## Provisioning package HoloLens wizard
 
@@ -49,7 +49,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Enroll the device in Azure Active Directory, or create a local account
 - Add certificates
 - Enable Developer Mode
-- Configure kiosk mode (for detailed instructions,see [Set up kiosk mode using a provisioning package](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803)
+- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).
 
 > [!WARNING]
 > You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
@@ -64,6 +64,8 @@ Provisioning packages can include management instructions and policies, custom n
 1. **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). This includes HoloLens 2 capabilities.
 2. **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configuration Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box. This option does not include HoloLens 2 capabilities.
 
+> [!NOTE]
+> If you know you will be using an offline PC that needs access to Windows Configuration Designer please follow the offline app install [here](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) for Advanced Recovery Companion but making Windows Confiugration Desinger your selection instead. 
 
 ### 2. Create the provisioning package
 

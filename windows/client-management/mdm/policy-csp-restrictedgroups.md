@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 03/24/2020
+ms.date: 04/07/2020
 
 ms.reviewer: 
 manager: dansimp
@@ -149,6 +149,8 @@ where:
 The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
 - In this example, `Group1` and `Group2` are local groups on the device being configured.
 
+> [!Note]
+> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a local group as a member to another local group by using the member portion, as shown in the above example.
 <!--/Example-->
 <!--Validation-->
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
-ms.author: v-medgar
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
@@ -39,8 +39,8 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 >[!Note]
 >Regarding the Windows Restricted Traffic Limited Functionality Baseline, the 1903 settings (folder) are applicable to 1909 Windows >Enterprise devices. There were no additional settings required for the 1909 release.
 
->[!Warning] 
->If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Keep my files" option (or the >"Remove Everything" option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order >re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline >settings.
+> [!Warning] 
+> If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
@@ -1073,7 +1073,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 
@@ -1413,10 +1413,14 @@ To turn this off:
 
 In the **Inking & Typing** area you can configure the functionality as such: 
 
-To turn off Inking & Typing data collection (note: there is no Group Policy for this setting):
+To turn off Inking & Typing data collection:
 
-- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Inking and typing** and turn **Improve inking & typing** to **Off** 
+- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off** 
 
+  -or-
+  
+  **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Text Input > Improve inking and typing recognition**
+  
   -or-
 
 - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
@@ -1467,11 +1471,11 @@ To turn this Off in the UI:
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** and set the **Select a setting** box to **Force Deny**
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** box to **Force Deny**
 
 
 -OR-
@@ -1898,4 +1902,3 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).
-

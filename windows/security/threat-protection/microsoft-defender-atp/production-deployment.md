@@ -57,7 +57,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defnder ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
 
 ## Check license state
 
