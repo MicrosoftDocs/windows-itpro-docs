@@ -111,7 +111,7 @@ list volume
 
 If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Endpoint Configuration Manager).
 
-![Windows image configuration in Microsoft Endpoint Configuration Manager](./images/sccm-imageconfig.jpg)
+![Windows image configuration in Microsoft Endpoint Configuration Manager](./images/configmgr-imageconfig.jpg)
 
 #### Step 2: Verify the status of WinRE
 
@@ -171,7 +171,7 @@ To verify the BIOS mode, use the System Information app. To do this, follow thes
 
 You receive an error message that resembles the following:
 
-> **Error:** BitLocker cannot use Secure Boot for integrity because the UEFI variable ‘SecureBoot’ could not be read. A required privilege is not held by the client.
+> **Error:** BitLocker cannot use Secure Boot for integrity because the UEFI variable 'SecureBoot' could not be read. A required privilege is not held by the client.
 
 ### Cause
 

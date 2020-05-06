@@ -11,15 +11,18 @@ ms.sitesec: library
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 manager: bradke
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
 ---
 
-# Frequently Asked Security Questions
+# Frequently asked questions about HoloLens security
 
-## HoloLens 1st Gen Security Questions
+## HoloLens (1st gen) Security Questions
 
 1. **What type of wireless is used?**
     1. 802.11ac and Bluetooth 4.1 LE
@@ -67,11 +70,9 @@ appliesto:
     1. This is something that can be managed on the infrastructure level by either an MDM or an on-prem server. The device can be flagged as not compliant if it does not meet a specified Update version.
 1. **Does Microsoft include any back doors or access to services that allows Microsoft to connect to the device for screen sharing or remote support at will?**
     1. No
-1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it’s only on that device, unique to that device, and can’t be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
-    1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that’s sent to the client.
-    1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn’t be verified on a different device, rendering the certs/key unusable on different devices.
-1. **SCEP is vulnerable. How does Microsoft mitigate the known vulnerabilities of SCEP?**
-    1. This [SCEP Whitepaper](scep-whitepaper.md) addresses how Microsoft mitigates SCEP vulnerabilities.
+1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it's only on that device, unique to that device, and can't be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
+    1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that's sent to the client.
+    1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn't be verified on a different device, rendering the certs/key unusable on different devices.
 
 ## HoloLens 2nd Gen Security Questions
 
@@ -87,7 +88,7 @@ appliesto:
 1. **Can the device blacklist or white list specific frequencies?**
     1. This is not controllable by the user/device
 1. **What is the power level for both transmit and receive? Is it adjustable? What is the range of operation?**
-    1. Wireless power levels depend on the channel of operation. Devices are calibrated to perform at the highest power levels allowed based on the region’s regulatory rules.
+    1. Wireless power levels depend on the channel of operation. Devices are calibrated to perform at the highest power levels allowed based on the region's regulatory rules.
 1. **What is the duty cycle/lifetime for normal operation?**
     1. *Currently unavailable.*
 1. **What is transmit and receive behavior when a tool is not in range?**
@@ -119,8 +120,6 @@ appliesto:
     1. This is something that can be managed on the infrastructure level by either an MDM or an on-prem server. The device can be flagged as not compliant if it does not meet a specified Update version.
 1. **Does Microsoft include any back doors or access to services that allows Microsoft to connect to the device for screen sharing or remote support at will?**
     1. No
-1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it’s only on that device, unique to that device, and can’t be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
-    1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that’s sent to the client.
-    1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn’t be verified on a different device, rendering the certs/key unusable on different devices.
-1. **SCEP is vulnerable. How does Microsoft mitigate the known vulnerabilities of SCEP?**
-    1. This [SCEP Whitepaper](scep-whitepaper.md) addresses how Microsoft mitigates SCEP vulnerabilities.
+1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it's only on that device, unique to that device, and can't be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
+    1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that's sent to the client.
+    1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn't be verified on a different device, rendering the certs/key unusable on different devices.

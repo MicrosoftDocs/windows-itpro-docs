@@ -1,9 +1,12 @@
 # [Surface](index.yml)
 
-## [Get started](get-started.md)
+## [Surface devices documentation](get-started.yml)
 
 ## Overview
 
+### [What's new in Surface Dock 2](surface-dock-whats-new.md)
+### [Surface Book 3 GPU technical overview](surface-book-GPU-overview.md)
+### [Surface Book 3 Quadro RTX 3000 technical overview](surface-book-quadro.md)
 ### [Surface Pro 7 for Business](https://www.microsoft.com/surface/business/surface-pro-7)
 ### [Surface Pro X for Business](https://www.microsoft.com/surface/business/surface-pro-x)
 ### [Surface Laptop 3 for Business](https://www.microsoft.com/surface/business/surface-laptop-3)

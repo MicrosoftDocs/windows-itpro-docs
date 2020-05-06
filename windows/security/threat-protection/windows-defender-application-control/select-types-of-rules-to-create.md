@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/20/2018
+ms.date: 03/04/2020
 ---
 
 # Understand WDAC policy rules and file rules
@@ -28,7 +28,7 @@ Windows Defender Application Control (WDAC) provides control over a computer run
 
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
@@ -65,10 +65,10 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
-| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.|
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. NOTE: This option is only supported on Windows 10, version 1903, and above. |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
 
 ## Windows Defender Application Control file rule levels
 
@@ -120,9 +120,25 @@ There is a defined list of SIDs which WDAC recognizes as admins. If a filepath a
 WDAC's list of well-known admin SIDs are: <br>
 S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. 
 
-When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards and include them in your [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) scan using the -Rules switch. 
+When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards using the [-FilePathRules](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule#parameters) switch. 
 
-Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.
+Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\\*` would include `C:\foo\\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path are not supported (ex. `C:\\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`). <br/> The use of macros is also supported and useful in scenarios where the system drive is different from the `C:\` drive. Supported macros: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
+
+## Windows Defender Application Control filename rules
+
+File name rule levels provide administrators to specify the file attributes off which to base a file name rule. File name rules provide the same security guarantees that explicit signer rules do, as they are based on non-mutable file attributes. Specification of the file name level occurs when creating new policy rules. In addition, to combine file name levels found in multiple policies, you can merge multiple policies. 
+
+Use Table 3 to select the appropriate file name level for your available administrative resources and Windows Defender Application Control deployment scenario. For instance, an LOB or production application and its binaries (eg. DLLs) may all share the same product name. This allows users to easily create targeted policies based on the Product Name filename rule level.  
+
+**Table 3. Windows Defender Application Control policy - filename levels**
+
+| Rule level | Description |
+|----------- | ----------- |
+| **File Description** |  Specifies the file description provided by the developer of the binary. |
+| **Internal Name** |  Specifies the internal name of the binary. |
+| **Original File Name** | Specifies the original file name, or the name with which the file was first created, of the binary. |
+| **Package Family Name** |  Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
+| **Product Name** |  Specifies the name of the product with which the binary ships. |

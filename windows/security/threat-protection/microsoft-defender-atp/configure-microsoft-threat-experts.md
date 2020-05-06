@@ -35,13 +35,16 @@ If you're already a Microsoft Defender ATP customer, you can apply through the M
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts**.
 
-2. Click **Apply**. 
+2. Click **Apply**.
+
 ![Image of Microsoft Threat Experts settings](images/mte-collaboratewithmte.png)
 
-3. Enter your name and email address so that Microsoft can get back to you on your application. 
+3. Enter your name and email address so that Microsoft can get back to you on your application.
+
 ![Image of Microsoft Threat Experts application](images/mte-apply.png)
 
-4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved.   
+4. Read the [privacy statement](https://privacy.microsoft.com/en-us/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
+
 ![Image of Microsoft Threat Experts application confirmation](images/mte-applicationconfirmation.png)
 
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
@@ -67,22 +70,25 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
->[!NOTE]
->Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
+> [!NOTE]
+> - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
+> - You will need to have the "Manage security settings" permission in the Security Center portal to be able to submit a "Consult a threat expert" inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an investigation request. 
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
->![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
->A flyout screen opens. The following screen shows when you are on a trial subscription. 
->![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+    A flyout screen opens. The following screen shows when you are on a trial subscription.
 
-> The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription. 
->![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+    ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
 
->The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
+    The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
+
+    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+
+    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
 3.  In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
   
@@ -125,4 +131,3 @@ It is crucial to respond in a timely manner to keep the investigation moving.
 
 ## Related topic
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-

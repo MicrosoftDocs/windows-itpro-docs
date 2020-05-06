@@ -28,10 +28,8 @@ ms.date: 05/03/2018
 -   Windows Server 2016
 
 
-Signed WDAC policies give organizations the highest level of malware protection available in Windows 10. 
-In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. 
-These policies are designed to prevent administrative tampering and kernel mode exploit access. 
-With this in mind, it is much more difficult to remove signed WDAC policies. 
+Signed WDAC policies give organizations the highest level of malware protection available in Windows 10. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
+
 Before you sign and deploy a signed WDAC policy, we recommend that you [audit the policy](audit-windows-defender-application-control-policies.md) to discover any blocked applications that should be allowed to run. 
 
 Signing WDAC policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. 

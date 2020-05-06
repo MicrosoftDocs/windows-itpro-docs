@@ -93,7 +93,7 @@ Enter email addresses for your students, and each student will get an email with
    ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
    
    You can assign the app to students with work or school accounts. </br>
-   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Office 365 portal where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
+   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Microsoft 365 admin center where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
 
 
 **To finish Minecraft install (for students)**

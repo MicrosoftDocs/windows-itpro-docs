@@ -9,7 +9,6 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.date: 01/30/2020
 ms.reviewer: scottmca
 ms.localizationpriority: medium
 ms.audience: itpro

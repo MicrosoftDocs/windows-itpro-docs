@@ -3,7 +3,7 @@ title: Reset or recover a Surface Hub
 description: Describes the reset and recovery processes for the Surface Hub, and provides instructions.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: reset Surface Hub, recover
 ms.prod: surface-hub
 ms.sitesec: library
@@ -90,7 +90,7 @@ On rare occasions, a Surface Hub may encounter an error while cleaning up user a
 
 1. Use the power switch to turn the Surface Hub back on. The device starts and displays the Surface Hub Logo screen. When you see spinning dots under the Surface Hub Logo, use the power switch to turn the Surface Hub off again.  
 
-1. Repeat step 3 three times, or until the Surface Hub displays the “Preparing Automatic Repair” message. After it displays this message, the Surface Hub displays the Windows RE screen.
+1. Repeat step 3 three times, or until the Surface Hub displays the "Preparing Automatic Repair" message. After it displays this message, the Surface Hub displays the Windows RE screen.
 
 1. Select **Advanced Options**.
 
@@ -115,6 +115,12 @@ On rare occasions, a Surface Hub may encounter an error while cleaning up user a
    ![downloading 97&](images/recover-progress.png)
 
    When the download finishes, the recovery process restores the Surface Hub according to the options that you selected.
+   
+
+## Contact Support
+
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).
+
 
 ## Related topics
 

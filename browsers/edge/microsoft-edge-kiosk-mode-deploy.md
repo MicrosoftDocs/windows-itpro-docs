@@ -1,8 +1,8 @@
 ---
 title: Deploy Microsoft Edge Legacy kiosk mode
 description: Microsoft Edge Legacy kiosk mode works with assigned access to allow IT admins to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge Legacy kiosk mode, you must configure Microsoft Edge Legacy as an application in assigned access.
-ms.assetid: 
-ms.reviewer: 
+ms.assetid:
+ms.reviewer:
 audience: itpro
 manager: dansimp
 author: dansimp
@@ -16,28 +16,28 @@ ms.date: 01/17/2020
 
 # Deploy Microsoft Edge Legacy kiosk mode
 
->Applies to: Microsoft Edge Legacy (version 45 and earlier) on Windows 10, version 1809 or later 
->Professional, Enterprise, and Education
+> Applies to: Microsoft Edge Legacy (version 45 and earlier) on Windows 10, version 1809 or later
+> Professional, Enterprise, and Education
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge Legacy (version 45 and earlier.) To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/). For information about kiosk mode in the new version of Microsoft Edge, see [Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-kiosk-mode).
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge Legacy as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge Legacy in kiosk mode.
 
-In this topic, you'll learn: 
+In this topic, you'll learn:
 
 - How to configure the behavior of Microsoft Edge Legacy when it's running in kiosk mode with assigned access.
-- What's required to run Microsoft Edge Legacy kiosk mode on your kiosk devices.  
-- You'll also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or an other MDM service. 
+- What's required to run Microsoft Edge Legacy kiosk mode on your kiosk devices.
+- You'll also learn how to set up your kiosk device using either Windows Setting or Microsoft Intune or an other MDM service.
 
-At the end of this topic, you can find a list of [supported policies](#supported-policies-for-kiosk-mode) for kiosk mode and a [feature comparison](#feature-comparison-of-kiosk-mode-and-kiosk-browser-app) of the kiosk mode policy and kiosk browser app.  You also find instructions on how to provide us feedback or get support. 
+At the end of this topic, you can find a list of [supported policies](#supported-policies-for-kiosk-mode) for kiosk mode and a [feature comparison](#feature-comparison-of-kiosk-mode-and-kiosk-browser-app) of the kiosk mode policy and kiosk browser app.  You also find instructions on how to provide us feedback or get support.
 
 
 ## Kiosk mode configuration types
 
->**Policy** = Configure kiosk mode (ConfigureKioskMode)
+> **Policy** = Configure kiosk mode (ConfigureKioskMode)
 
-Microsoft Edge Legacy kiosk mode supports four configurations types that depend on how Microsoft Edge Legacy is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what is best suited for your kiosk device or scenario.  
+Microsoft Edge Legacy kiosk mode supports four configurations types that depend on how Microsoft Edge Legacy is set up with assigned access, either as a single-app or multi-app kiosk. These configuration types help you determine what is best suited for your kiosk device or scenario.
 
 - Learn about [creating a kiosk experience](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image)
 
@@ -50,9 +50,9 @@ Microsoft Edge Legacy kiosk mode supports four configurations types that depend 
 
 ### Important things to note before getting started
 
-- There are [required steps to follow](#setup- required-for-microsoft-edge-legacy-kiosk-mode) in order to use the following Microsoft Edge Legacy kiosk mode types either alongside the new version of Microsoft Edge or prevent the new version of Microsoft Edge from being installed on your kiosk device. 
+- There are [required steps to follow](#setup- required-for-microsoft-edge-legacy-kiosk-mode) in order to use the following Microsoft Edge Legacy kiosk mode types either alongside the new version of Microsoft Edge or prevent the new version of Microsoft Edge from being installed on your kiosk device.
 
--  The public browsing kiosk types run Microsoft Edge Legacy InPrivate mode to protect user data with a browsing experience designed for public kiosks. 
+-  The public browsing kiosk types run Microsoft Edge Legacy InPrivate mode to protect user data with a browsing experience designed for public kiosks.
 
 -  Microsoft Edge Legacy kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue, and if no user activity Microsoft Edge Legacy resets the session to the default URL. By default, the idle timer is 5 minutes, but you can choose a value of your own.
 
@@ -67,7 +67,7 @@ Microsoft Edge Legacy kiosk mode supports four configurations types that depend 
    - [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3).
 
 
-### Supported configuration types 
+### Supported configuration types
 
 [!INCLUDE [configure-kiosk-mode-supported-values-include](includes/configure-kiosk-mode-supported-values-include.md)]
 
@@ -75,9 +75,9 @@ Microsoft Edge Legacy kiosk mode supports four configurations types that depend 
 
 Now that you're familiar with the different kiosk mode configurations and have the one you want to use in mind, you can use one of the following methods to set up Microsoft Edge Legacy kiosk mode:
 
--   **Windows Settings.** Use only to set up a couple of single-app devices because you perform these steps physically on each device.  For a multi-app kiosk device, use Microsoft Intune or other MDM service. 
+-   **Windows Settings.** Use only to set up a couple of single-app devices because you perform these steps physically on each device.  For a multi-app kiosk device, use Microsoft Intune or other MDM service.
 
--   **Microsoft Intune or other MDM service.** Use to set up several single-app or multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge Legacy kiosk mode experience using any of the [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).  
+-   **Microsoft Intune or other MDM service.** Use to set up several single-app or multi-app kiosk devices. Microsoft Intune and other MDM service providers offer more options for customizing the Microsoft Edge Legacy kiosk mode experience using any of the [Supported policies for kiosk mode](#supported-policies-for-kiosk-mode).
 
 
 ### Prerequisites
@@ -89,14 +89,14 @@ Now that you're familiar with the different kiosk mode configurations and have t
 - URL to load when the kiosk launches. The URL that you provide sets the Home button, Start page, and New Tab page.
 
 - _**For Microsoft Intune or other MDM service**_, you must have the AppUserModelID (AUMID) to set up Microsoft Edge Legacy:
- 
+
   ```
   Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
   ```
 
 ### Setup required for Microsoft Edge Legacy kiosk mode
 
-When the new version of Microsoft Edge Stable channel is installed, Microsoft Edge Legacy is hidden and all attempts to launch Microsoft Edge Legacy are redirected to the new version of Microsoft Edge. 
+When the new version of Microsoft Edge Stable channel is installed, Microsoft Edge Legacy is hidden and all attempts to launch Microsoft Edge Legacy are redirected to the new version of Microsoft Edge.
 
 To continue using Microsoft Edge Legacy kiosk mode on your kiosk devices take one of the following actions:
 
@@ -104,11 +104,11 @@ To continue using Microsoft Edge Legacy kiosk mode on your kiosk devices take on
 - To prevent Microsoft Edge Stable channel from being installed on your kiosk devices deploy the Microsoft Edge [Allow installation default](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#installdefault) policy for Stable channel or consider using the [Blocker toolkit](https://docs.microsoft.com/DeployEdge/microsoft-edge-blocker-toolkit) to disable automatic delivery of Microsoft Edge.
 
 > [!NOTE]
-> For more information about accessing Microsoft Edge Legacy after installing Microsoft Edge, see [How to access the old version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-access-old-edge).  
+> For more information about accessing Microsoft Edge Legacy after installing Microsoft Edge, see [How to access the old version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-access-old-edge).
 
 ### Use Windows Settings
 
-Windows Settings is the simplest and the only way to set up one or a couple of single-app devices.  
+Windows Settings is the simplest and the only way to set up one or a couple of single-app devices.
 
 1.  On the kiosk device, open Windows Settings, and in the search field type **kiosk** and then select **Set up a kiosk (assigned access)**.
 
@@ -120,9 +120,9 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 5.  Select how Microsoft Edge Legacy displays when running in kiosk mode:
 
-    -   **As a digital sign or interactive display** - Displays a specific site in full-screen mode, running Microsoft Edge Legacy InPrivate protecting user data.   
+    -   **As a digital sign or interactive display** - Displays a specific site in full-screen mode, running Microsoft Edge Legacy InPrivate protecting user data.
 
-    -   **As a public browser** - Runs a limited multi-tab version of Microsoft Edge Legacy, protecting user data.   
+    -   **As a public browser** - Runs a limited multi-tab version of Microsoft Edge Legacy, protecting user data.
 
 6.  Select **Next**.
 
@@ -136,23 +136,23 @@ Windows Settings is the simplest and the only way to set up one or a couple of s
 
 11. Restart the kiosk device and sign in with the local kiosk account to validate the configuration.
 
-**_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device using Windows Settings. 
+**_Congratulations!_** <p>You’ve just finished setting up a single-app kiosk device using Windows Settings.
 
-**_What's next?_** 
+**_What's next?_**
 
 - User your new kiosk device. <p>
    OR<p>
 - Make changes to your kiosk device. In Windows Settings, on the **Set up a kiosk** page, make your changes to **Choose a kiosk mode** and **Set up Microsoft Edge Legacy**.
 
----  
+---
 
 
 ### Use Microsoft Intune or other MDM service
 
 With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge Legacy kiosk mode in assigned access and how it behaves on a kiosk device. To learn about a few app fundamentals and requirements before adding them to Intune, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
 
->[!IMPORTANT]
->If you are using a local account as a kiosk account in Microsoft Intune, make sure to sign into this account and then sign out before configuring the kiosk device.
+> [!IMPORTANT]
+> If you are using a local account as a kiosk account in Microsoft Intune, make sure to sign into this account and then sign out before configuring the kiosk device.
 
 1. In Microsoft Intune or other MDM service, configure [AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to prevent users from accessing the file system, running executables, or other apps.
 
@@ -166,7 +166,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
    | **[ConfigureHomeButton](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New Tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
    | **[SetHomeButtonURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl)**<p>![](images/icon-thin-line-computer.png)   | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com   |
    | **[SetNewTabPageURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New Tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com    |
-    
+
 
 **_Congratulations!_** <p>You’ve just finished setting up a kiosk or digital signage with policies for Microsoft Edge Legacy kiosk mode using Microsoft Intune or other MDM service.
 
@@ -177,7 +177,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 ## Supported policies for kiosk mode
 
-Use any of the Microsoft Edge Legacy policies listed below to enhance the kiosk experience depending on the Microsoft Edge Legacy kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser). 
+Use any of the Microsoft Edge Legacy policies listed below to enhance the kiosk experience depending on the Microsoft Edge Legacy kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser).
 
 Make sure to check with your provider for instructions.
 
@@ -251,18 +251,18 @@ Make sure to check with your provider for instructions.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Not supported](images/148766.png) = Not applicable or not supported <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Supported](images/148767.png) = Supported
 
----  
+---
 
 ## Feature comparison of kiosk mode and kiosk browser app
 
 In the following table, we show you the features available in both Microsoft Edge Legacy kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
 
-|                        **Feature**                        |                                                                  **Microsoft Edge Legacy kiosk mode**                                                                  |                                                             **Microsoft Kiosk browser app**                                                             |
+|                        **Feature**                        |                                                                  **Microsoft Edge Legacy kiosk mode**                                                           |                                                             **Microsoft Kiosk browser app**                                                             |
 |-----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                       Print support                       |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
 |                     Multi-tab support                     |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
-|                  Allow/Block URL support                  | ![Not Supported](images/148766.png)                                                             ![Supported](images/148767.png)                                                             |
+|                  Allow/Block URL support                  |                                                             ![Not Supported](images/148766.png)                                                                 |                                                             ![Supported](images/148767.png)                                                             |
 |                   Configure Home Button                   |                                                                 ![Supported](images/148767.png)                                                                 |                                                             ![Supported](images/148767.png)                                                             |
 |                   Set Start page(s) URL                   |                                                                 ![Supported](images/148767.png)                                                                 |                                              ![Supported](images/148767.png) <p>*Same as Home button URL*                                               |
 |                   Set New Tab page URL                    |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
@@ -280,6 +280,6 @@ To prevent access to unwanted websites on your kiosk device, use Windows Defende
 
 ## Provide feedback or get support
 
-To provide feedback on Microsoft Edge Legacy kiosk mode in Feedback Hub, select **Microsoft Edge** as the  **Category**, and **All other issues** as the subcategory. 
+To provide feedback on Microsoft Edge Legacy kiosk mode in Feedback Hub, select **Microsoft Edge** as the  **Category**, and **All other issues** as the subcategory.
 
 **_For multi-app kiosk only._** If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the subcategory.

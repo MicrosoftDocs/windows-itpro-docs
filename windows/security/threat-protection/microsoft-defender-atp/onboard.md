@@ -31,7 +31,6 @@ Topic | Description
 :---|:---
 [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 [Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md) | Configure next generation protection to catch all types of emerging threats.
-[Configure Secure score dashboard security controls](secure-score-dashboard.md) | Configure the security controls in Secure score to increase the security posture of your organization.
 [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
 [Configure Microsoft Threat Protection integration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure other solutions that integrate with Microsoft Defender ATP.
 [Management and API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 

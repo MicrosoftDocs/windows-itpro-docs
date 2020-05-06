@@ -204,8 +204,11 @@ See the following examples.
    - <u>Enable the account and specify the local administrator password</u>: Optional.
    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
 
+     > [!IMPORTANT]
+     > The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which uses the System Preparation Tool (sysprep). This action will fail if the target machine is joined to a domain.
+     
      >[!IMPORTANT]
-     >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (syeprep). This action will fail if the target machine is joined to a domain.
+     > The System Preparation Tool (sysprep) will run with the /Generalize parameter which, on Windows 10 versions 1903 and 1909, will delete the Autopilot profile file and the machine will boot into OOBE phase instead of Autopilot phase. To fix this issue, please see [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues).
 
 5. Click **Next** and then click **Next** again to accept the default settings on the Install Configuration Manager page.
 6. On the State Migration page, enter the following details:
@@ -247,6 +250,9 @@ See the following examples.
     ![Autopilot task sequence](images/ap-ts-1.png)
 
 25. Click **OK** to close the Task Sequence Editor.
+
+> [!NOTE]
+> On Windows 10 1903 and 1909, the **AutopilotConfigurationFile.json** is deleted by the **Prepare Windows for Capture** step. See [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues) for more information and a workaround.
 
 ### Deploy Content to Distribution Points
 

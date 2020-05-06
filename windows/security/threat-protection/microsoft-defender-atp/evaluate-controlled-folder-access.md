@@ -58,6 +58,9 @@ Event ID | Description
  1124 | Audited controlled folder access event
  1123 | Blocked controlled folder access event
 
+> [!TIP]
+> You can configure a [Windows Event Forwarding subscription](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) to collect the logs centrally. 
+
 ## Customize protected folders and apps
 
 During your evaluation, you may wish to add to the list of protected folders, or allow certain apps to modify files.

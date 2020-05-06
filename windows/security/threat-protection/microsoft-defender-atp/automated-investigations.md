@@ -85,3 +85,9 @@ When a pending action is approved, the entity is then remediated and this new st
 ## Next step
 
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
+
+## Related articles
+
+- [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+
+- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
