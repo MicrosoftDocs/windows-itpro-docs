@@ -14,7 +14,7 @@ manager: laurawi
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
-# How to make Features on Demand and language packs available when you're using WSUS/SCCM
+# How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager
 
 > Applies to: Windows 10
 
@@ -26,6 +26,6 @@ In Windows 10 version 1709 and 1803, changing the **Specify settings for optiona
 
 In Windows 10 version 1809 and beyond, changing the **Specify settings for optional component installation and component repair** policy also influences how language packs are acquired, however language packs can only be acquired directly from Windows Update. It's currently not possible to acquire them from a network share. Specifying a network location works for FOD packages or corruption repair, depending on the content at that location.
 
-For all OS versions, changing the **Specify settings for optional component installation and component repair** policy does not affect how OS updates are distributed. They continue to come from WSUS or SCCM or other sources as you have scheduled them, even while optional content is sourced from Windows Update or a network location.
+For all OS versions, changing the **Specify settings for optional component installation and component repair** policy does not affect how OS updates are distributed. They continue to come from WSUS, Configuration Manager, or other sources as you have scheduled them, even while optional content is sourced from Windows Update or a network location.
 
 Learn about other client management options, including using Group Policy and administrative templates, in [Manage clients in Windows 10](https://docs.microsoft.com/windows/client-management/).

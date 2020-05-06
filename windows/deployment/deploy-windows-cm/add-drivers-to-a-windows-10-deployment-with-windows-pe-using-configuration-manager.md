@@ -31,7 +31,12 @@ For the purposes of this guide, we will use one server computer: CM01.
 
 ## Add drivers for Windows PE
 
-This section will show you how to import some network and storage drivers for Windows PE. This section assumes you have downloaded some drivers to the **D:\\Sources\\OSD\\DriverSources\\WinPE x64** folder on CM01.
+This section will show you how to import some network and storage drivers for Windows PE. 
+
+>[!NOTE]
+>Windows PE usually has a fairly comprehensive set of drivers out of the box, assuming that you are using a recent version of the Windows ADK. This is different than the full Windows OS which will often require drivers. You shouldn't add drivers to Windows PE unless you have an issue or are missing functionality, and in these cases you should only add the driver that you need.  An example of a common driver that is added is the Intel I217 driver. Adding too many drivers can cause conflicts and lead to driver bloat in the Config Mgr database. This section shows you how to add drivers, but typically you can just skip this procedure.
+
+This section assumes you have downloaded some drivers to the **D:\\Sources\\OSD\\DriverSources\\WinPE x64** folder on CM01.
 
 ![Drivers](../images/cm01-drivers.png)
 

@@ -29,7 +29,7 @@ Windows Defender Antivirus is the next-generation protection component of [Micro
 
 Although you can use a non-Microsoft antivirus solution with Microsoft Defender ATP, there are advantages to using Windows Defender Antivirus together with Microsoft Defender ATP. Not only is Windows Defender Antivirus an excellent next-generation antivirus solution, but combined with other Microsoft Defender ATP capabilities, such as [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) and [automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations), you get better protection that's coordinated across products and services. 
 
-## 10 reasons to use Windows Defender Antivirus together with Microsoft Defender ATP
+## 11 reasons to use Windows Defender Antivirus together with Microsoft Defender ATP
 
 | |Advantage  |Why it matters |
 |--|--|--|
@@ -39,10 +39,11 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |4|Details about blocked malware |More details and actions for blocked malware are available with Windows Defender Antivirus and Microsoft Defender ATP. [Understand malware & other threats](../intelligence/understanding-malware.md).|
 |5|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. [Protect your network](../microsoft-defender-atp/network-protection.md).|
 |6|File blocking |Your organization's security team can block specific files. [Stop and quarantine files in your network](../microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network).|
-|7|Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus solutions.) |
-|8|Geographic data |Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001). |
-|9|File recovery via OneDrive |If you are using Windows Defender Antivirus together with [Office 365](https://docs.microsoft.com/Office365/Enterprise), and your device is attacked by ransomware, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
-|10|Technical support |By using Microsoft Defender ATP together with Windows Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](../microsoft-defender-atp/troubleshoot-mdatp.md) and [review event logs and error codes with Windows Defender Antivirus](troubleshoot-windows-defender-antivirus.md). |
+|7|Attack Surface Reduction |Your organization's security team can reduce your attack surface, offering attackers fewer ways to perform attacks. ASR also utilises cloud protection for a number of rules. [Reduce attack surfaces with attack surface reduction rules](../microsoft-defender-atp/attack-surface-reduction).|
+|8|Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus solutions.) |
+|9|Geographic data |Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001). |
+|10|File recovery via OneDrive |If you are using Windows Defender Antivirus together with [Office 365](https://docs.microsoft.com/Office365/Enterprise), and your device is attacked by ransomware, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|11|Technical support |By using Microsoft Defender ATP together with Windows Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](../microsoft-defender-atp/troubleshoot-mdatp.md) and [review event logs and error codes with Windows Defender Antivirus](troubleshoot-windows-defender-antivirus.md). |
 
 
 ## Learn more

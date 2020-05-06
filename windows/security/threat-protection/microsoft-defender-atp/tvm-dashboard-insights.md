@@ -1,5 +1,5 @@
 ---
-title: Threat & Vulnerability Management dashboard overview
+title: Threat & Vulnerability Management dashboard insights
 description: The Threat & Vulnerability Management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
 keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
 search.appverid: met150
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
-# Threat & Vulnerability Management dashboard overview
+# Threat & Vulnerability Management dashboard insights
 
 **Applies to:**
 
@@ -85,8 +85,8 @@ See [Microsoft Defender ATP icons](portal-overview.md#microsoft-defender-atp-ico
 
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -94,4 +94,5 @@ See [Microsoft Defender ATP icons](portal-overview.md#microsoft-defender-atp-ico
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

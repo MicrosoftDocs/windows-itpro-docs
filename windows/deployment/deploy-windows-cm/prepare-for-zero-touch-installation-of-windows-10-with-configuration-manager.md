@@ -36,7 +36,8 @@ In this topic, you will use [components](#components-of-configuration-manager-op
 - The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
 - A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
 - The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
-- The CMTrace tool (part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717)) is installed on the distribution point.
+- The [CMTrace tool](https://docs.microsoft.com/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
+  - Note: CMTrace is automatically installed with the current branch of Configuration Manager at **Program Files\Microsoft Configuration Manager\tools\cmtrace.exe**. In previous releases of ConfigMgr it was necessary to install the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012) separately to get the CMTrace tool, but this is no longer needed.  Configuraton Manager version 1910 installs version 5.0.8913.1000 of the CMTrace tool.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
 - DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server.
@@ -373,7 +374,6 @@ MDT Zero Touch simply extends Configuration Manager with many useful built-in op
 ### Why use MDT Lite Touch to create reference images
 
 You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:
--   In a deployment project, it is typically much faster to create a reference image using MDT Lite Touch than Configuration Manager.
 -   You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center Virtual Machine Manager (VMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
 -   Configuration Manager performs deployment in the LocalSystem context. This means that you cannot configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
 -   The Configuration Manager task sequence does not suppress user interface interaction.

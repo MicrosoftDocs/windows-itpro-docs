@@ -47,7 +47,7 @@ We used the following methodology to derive these network endpoints:
 | *.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ | HTTP | Enables connections to Windows Update. |
 | arc.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | arc.msn.com/v3/Delivery/Placement	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| client-office365-tas.msedge.net*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
+| client-office365-tas.msedge.net*	| HTTPS |	Used to connect to the Microsoft 365 admin center’s shared infrastructure, including Office. |
 | config.edge.skype.com/config/*	| HTTPS |	Used to retrieve Skype configuration values. |
 | ctldl.windowsupdate.com/msdownload/update* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
@@ -67,7 +67,7 @@ We used the following methodology to derive these network endpoints:
 | location-inference-westus.cloudapp.net	| HTTPS |	Used for location data. |
 | maps.windows.com/windows-app-web-link	| HTTPS |	Link to Maps application. |
 | modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
-| ocos-office365-s2s.msedge.net*	| HTTPS | Used to connect to the Office 365 portal's shared infrastructure. |
+| ocos-office365-s2s.msedge.net*	| HTTPS | Used to connect to the Microsoft 365 admin center's shared infrastructure. |
 | ocsp.digicert.com* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
 | oneclient.sfx.ms*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
 | onecollector.cloudapp.aria.akadns.net	| HTTPS |	Office Telemetry |
@@ -129,7 +129,7 @@ We used the following methodology to derive these network endpoints:
 | *geo-prod.do.dsp.mp.microsoft.com	| HTTPS |	Enables connections to Windows Update. |
 | au.download.windowsupdate.com* | HTTP | Enables connections to Windows Update. |
 | cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
+| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Microsoft 365 admin center’s shared infrastructure, including Office. |
 | cloudtile.photos.microsoft.com.akadns.net	| HTTPS |	Photos App in MS Store 
 | config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
 | ctldl.windowsupdate.com/* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
@@ -149,7 +149,7 @@ We used the following methodology to derive these network endpoints:
 | licensing.mp.microsoft.com/*	| HTTPS |	Used for online activation and some app licensing. |
 | maps.windows.com/windows-app-web-link	| HTTPS |	Link to Maps application |
 | modern.watson.data.microsoft.com.akadns.net	| HTTPS |	Used by Windows Error Reporting. |
-| ocos-office365-s2s.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal's shared infrastructure. |
+| ocos-office365-s2s.msedge.net/*	| HTTPS |	Used to connect to the Microsoft 365 admin center's shared infrastructure. |
 | ocsp.digicert.com* |	HTTP | CRL and OCSP checks to the issuing certificate authorities. |
 | oneclient.sfx.ms/*	| HTTPS |	Used by OneDrive for Business to download and verify app updates. |
 | onecollector.cloudapp.aria.akadns.net	| HTTPS |	Office telemetry | 

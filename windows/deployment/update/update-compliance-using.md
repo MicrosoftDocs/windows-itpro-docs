@@ -22,9 +22,8 @@ In this section you'll learn how to use Update Compliance to monitor your device
 
 
 Update Compliance: 
-- Provides detailed deployment data for Windows 10 security, quality, and feature updates.
-- Reports when devices have issues related to updates that need attention.
-- Shows Windows Defender AV status information for devices that use it and meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
+- Provides detailed deployment monitoring for Windows 10 Feature and Quality updates.
+- Reports when devices need attention due to issues related to update deployment.
 - Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](waas-delivery-optimization.md).
 - Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 

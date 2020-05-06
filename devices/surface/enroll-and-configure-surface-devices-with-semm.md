@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Enroll and configure Surface devices with SEMM
@@ -24,7 +24,7 @@ For a more high-level overview of SEMM, see [Microsoft Surface Enterprise Manage
 A streamlined method of managing firmware from the cloud on Surface Pro 7,Surface Pro X and Surface Laptop 3 is now available via public preview. For more information,refer to [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md).
 
 > [!NOTE]
-> SEMM is not supported on Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
+> SEMM is supported on Surface Pro X via the UEFI Manager only. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
 
 #### Download and install Microsoft Surface UEFI Configurator
 The tool used to create SEMM packages is Microsoft Surface UEFI Configurator. You can download Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center.
@@ -107,11 +107,11 @@ To enroll a Surface device in SEMM with a Surface UEFI configuration package, fo
 3. Click **Finish** to complete the Surface UEFI configuration package installation and restart the Surface device when you are prompted to do so.
 4. Surface UEFI will load the configuration file and determine that SEMM is not enabled on the device. Surface UEFI will then begin the SEMM enrollment process, as follows:
    * Surface UEFI will verify that the SEMM configuration file contains a SEMM certificate.
-   * Surface UEFI will prompt you to enter to enter the last two characters of the certificate thumbprint to confirm enrollment of the Surface device in SEMM, as shown in Figure 8.
+   * Surface UEFI will prompt you to enter the last two characters of the certificate thumbprint to confirm enrollment of the Surface device in SEMM, as shown in Figure 8.
 
-   ![SEMM enrollment requires last two characters of certificate thumbprint](images/surface-semm-enroll-fig8.png "SEMM enrollment requires last two characters of certificate thumbprint")
-  
-   *Figure 8. Enrollment in SEMM requires the last two characters of the certificate thumbprint*
+      ![SEMM enrollment requires last two characters of certificate thumbprint](images/surface-semm-enroll-fig8.png "SEMM enrollment requires last two characters of certificate thumbprint")
+
+      *Figure 8. Enrollment in SEMM requires the last two characters of the certificate thumbprint*
 
    * Surface UEFI will store the SEMM certificate in firmware and apply the configuration settings that are specified in the Surface UEFI configuration file.
    
