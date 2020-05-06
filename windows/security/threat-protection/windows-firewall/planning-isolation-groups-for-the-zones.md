@@ -25,7 +25,8 @@ ms.date: 04/19/2017
 
 Isolation groups in Active Directory are how you implement the various domain and server isolation zones. A device is assigned to a zone by adding its device account to the group which represents that zone.
 
->**Caution:**  Do not add devices to your groups yet. If a device is in a group when the GPO is activated then that GPO is applied to the device. If the GPO is one that requires authentication, and the other devices have not yet received their GPOs, the device that uses the new GPO might not be able to communicate with the others.
+> [!CAUTION]
+> Do not add devices to your groups yet. If a device is in a group when the GPO is activated then that GPO is applied to the device. If the GPO is one that requires authentication, and the other devices have not yet received their GPOs, the device that uses the new GPO might not be able to communicate with the others.
 
 Universal groups are the best option to use for GPO assignment because they apply to the whole forest and reduce the number of groups that must be managed. However, if universal groups are unavailable, you can use domain global groups instead.
 
