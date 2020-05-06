@@ -154,6 +154,19 @@ The member SID can be a user account or a group in AD, Azure AD, or on the local
 <!--/Example-->
 <!--Validation-->
 
+## Policy timeline
+
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For the latest release of Windows 10, you can use name or SID for both the elements as described in this topic. 
+
+The following table provides the timeline of this policy setting and describes its behavior in different Windows 10 versions:
+
+| Windows 10 version | Policy behavior |
+| ------------------ | --------------- |
+|Windows 10, version 1803 | Added the RestrictedGroups policy setting in Windows 10, version 1803. <br> XML accepts group and member only by name. <br> Supports configuring the administrators group using the group name. <br> Expects member name to be in the account name format. |
+| Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or an SID. <br> This is useful when you want to ensure a certain local group always has a well known SID as member. |
+| The latest release of Windows 10 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate. | 
+
+
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
