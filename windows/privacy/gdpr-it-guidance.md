@@ -183,7 +183,7 @@ The basic functionality of Desktop Analytics works at the “Basic” diagnostic
 Those organizations who wish to share the smallest set of events for Desktop Analytics and have set the Windows diagnostic level to “Enhanced” can use the [“Limit Enhanced diagnostic data to the minimum required by Desktop Analytics”](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#limit-enhanced-diagnostic-data-to-the-minimum-required-by-desktop-analytics) setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Desktop Analytics.
 
 > [!NOTE]
-> Additional information can be found at [Desktop Analytics and privacy](/configmgr/desktop-analytics/privacy).
+> Additional information can be found at [Desktop Analytics data privacy](https://docs.microsoft.com/configmgr/desktop-analytics/privacy).
 
 ## Controlling Windows 10 data collection and notification about it
 
