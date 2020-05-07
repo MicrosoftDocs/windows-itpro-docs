@@ -97,7 +97,7 @@ Specific versions of Windows 10 have separate .msi files, each containing all re
 ### Downloading .msi files
 
 1. Browse to [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) on the Microsoft Download Center.
-2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the minimum supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 18362 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi.** For a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3.msi**.
+2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the _minimum_ supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3.msi**. To update a Surface Book 2 with build 18363 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi**. Even though the build is not an exact match, it is the closest .msi file that meets the minimum supported level for build 18363.
 
     ![Figure 1. Downloading Surface updates](images/fig1-downloads-msi.png)
 
