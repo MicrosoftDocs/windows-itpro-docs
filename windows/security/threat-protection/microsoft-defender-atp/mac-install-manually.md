@@ -53,7 +53,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
     $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: WindowsDefenderATPOnboarding.py
+    inflating: MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
 ## Application installation
@@ -87,7 +87,7 @@ The installation proceeds.
 
 ## Client configuration
 
-1. Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the machine where you deploy Microsoft Defender ATP for Mac.
 
     The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
 
@@ -98,7 +98,7 @@ The installation proceeds.
 2. Run the Python script to install the configuration file:
 
     ```bash
-    $ /usr/bin/python WindowsDefenderATPOnboarding.py
+    $ /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
