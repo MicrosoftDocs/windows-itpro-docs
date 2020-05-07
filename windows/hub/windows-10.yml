@@ -24,7 +24,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Get started with Windows 10. Evaluate free for 90 days, and set up virtual labs to test a proof of concept.<br> 
+      Get started with Windows 10. Evaluate free for 90 days and set up virtual labs to test a proof of concept.<br> 
       <table><tr><td><img src='images/explore1.png' width='192' height='192'><br>**Download a free 90-day evaluation**<br>Try the latest features. Test your apps, hardware, and deployment strategies.<br><a href='https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise'>Start evaluation</a></td><td><img src='images/explore2.png' width='192' height='192'><br>**Get started with virtual labs**<br>Try setup, deployment, and management scenarios in a virtual environment, with no additional software or setup required.<br><a href='https://www.microsoft.com/en-us/itpro/windows-10/virtual-labs'>See Windows 10 labs</a></td><td><img src='images/explore3.png' width='192' height='192'><br>**Conduct a proof of concept**<br>Download a lab environment with MDT, Configuration Manager, Windows 10, and more.<br><a href='https://go.microsoft.com/fwlink/p/?linkid=861441'>Get deployment kit</a></td></tr>
       </table>
       "
@@ -72,6 +72,7 @@ sections:
 - items:
   - type: markdown
     text: "
+      Stay connected with Windows 10 experts, your colleagues, business trends, and IT pro events.<br>
       <table><tr><td><img src='images/insider.png' width='192' height='192'><br>**Sign up for the Windows IT Pro Insider**<br>Find out about new resources and get expert tips and tricks on deployment, management, security, and more.<br><a href='https://aka.ms/windows-it-pro-insider'>Learn more</a></td><td><img src='images/twitter.png' width='192' height='192'><br>**Follow us on Twitter**<br>Keep up with the latest desktop and device trends, Windows news, and events for IT pros.<br><a href='https://twitter.com/MSWindowsITPro'>Visit Twitter</a></td><td><img src='images/wip4biz.png' width='192' height='192'><br>**Join the Windows Insider Program for Business**<br>Get early access to new builds and provide feedback on the latest features and functionalities.<br><a href='https://insider.windows.com/ForBusiness'>Get started</a></td></tr>
       </table>
       "
