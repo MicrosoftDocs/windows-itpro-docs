@@ -38,7 +38,15 @@ Behavioral blocking and containment capabilities leverage multiple components an
 
 Next-generation protection, EDR, and other Microsoft Defender ATP components and features work together in behavioral blocking and containment capabilities, as illustrated in the following image: 
 
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment":::
 
+These capabilities working together empowers your security operations team to view, investigate, and respond to threats more efficiently and effectively. More threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and your security operations team is notified, enabling them to investigate and take appropriate actions quickly. 
+
+The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
+
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="Example of an alert through behavioral blocking and containment":::
+
+The alert includes recommended actions to help your security operations team proceed to investigate and mitigate the threat.
 
 ## Behavioral blocking and containment capabilities
 
@@ -54,8 +62,29 @@ Behavioral blocking and containment capabilities include the following:
 
 As Microsoft continues to improve threat protection features and capabilities, you can expect more to come in the area of behavioral blocking and containment. Visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what's rolling out now and what's in development.
 
+## An example of behavioral blocking and containment in action
+
+As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Microsoft Defender ATP detected a privilege escalation activity on a device in an organization. An alert called “Possible privilege escalation using NTLM relay” was triggered.
+
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="NTLM alert for Juicy Potato malware":::
+
+The threat turned out to be malware; it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device. 
+
+Minutes after the alert was triggered, the file was analyzed, based on its behavior, and was confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
+
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked":::
+
+A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing additional attackers or other malware from deploying on the device. 
+
+With behavioral blocking and containment capabilities, your security operations team gets notified about compromise attempts, and Microsoft Defender ATP automatically contains the incident while your security operations team performs a thorough investigation to understand and remediate the root cause. 
+
+
 ## Next steps
+
+- [Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 
 - [Configure your attack surface reduction rules](attack-surface-reduction.md)
 
 - [Enable EDR in block mode](edr-in-block-mode.md)
+
+- [Get an overview of Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
