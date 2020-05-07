@@ -24,9 +24,21 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-## Behavioral blocking and containment overview
+## Overview of behavioral blocking and containment
 
-Not all cyberattacks involve a simple piece of malware that's found and removed. Some attacks, such as fileless attacks, are much more difficult to identify, let alone contain. Microsoft Defender ATP includes behavioral blocking and containment capabilities that can help identify and stop threats with machine learning, pre- and post-breach. In almost real time, when a suspicious behavior or artifact is detected and determined to be malicious, the threat is blocked. Pre-execution models learn about that threat, and prevent it from running on other endpoints. 
+Not all cyberattacks involve a simple piece of [malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware) that's found and removed. Some attacks, such as and “living off the land” binaries, are much more difficult to identify, let alone contain. Fortunately, [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) includes behavioral blocking and containment capabilities that can help identify and stop threats, based on their behaviors and process trees. 
+
+Behavioral blocking and containment capabilities leverage multiple components and features of Microsoft Defender ATP to stop attacks immediately and prevent attacks from progressing.
+
+- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) (which includes Windows Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
+
+- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
+
+- In addition to the network, endpoint, and kernel behavior signals received through EDR, [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) has a wide range of optics across identities, email, data, and apps. As a component of [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), Microsoft Defender ATP processes and correlates these signals, raises detection alerts, and connects related alerts in incidents. 
+
+Next-generation protection, EDR, and other Microsoft Defender ATP components and features work together in behavioral blocking and containment capabilities, as illustrated in the following image: 
+
+
 
 ## Behavioral blocking and containment capabilities
 
