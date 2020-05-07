@@ -41,7 +41,7 @@ Clicking on an alert's name in Microsoft Defender ATP will land you on its alert
 
 ![An alert page when you first land on it](images/alert-landing-view.png)
 
-Note the detection status for your alert. Blocked, prevented or remediated would mean actions were already taken by Microsoft Defender ATP.
+Note the detection status for your alert. Blocked, prevented or remediated means actions were already taken by Microsoft Defender ATP.
 Start by reviewing the *automated investigation details* in your alert's [details pane](#take-action-from-the-details-pane), to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
 ![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
