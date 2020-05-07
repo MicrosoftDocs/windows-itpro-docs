@@ -1,4 +1,4 @@
-# [Microsoft Surface Hub](index.md)
+# [Microsoft Surface Hub](index.yml)
 
 # Surface Hub 2S
 
@@ -42,8 +42,10 @@
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)
 ### [Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md)
+### [Update pen firmware on Surface Hub 2S](surface-hub-2s-pen-firmware.md)
 
 ## Secure
+### [Surface Hub security overview](surface-hub-security.md)
 ### [Secure and manage Surface Hub 2S with SEMM and UEFI](surface-hub-2s-secure-with-uefi-semm.md)
 ### [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 
@@ -57,8 +59,8 @@
 ## Overview
 ### [What's new in Windows 10, version 1703 for Surface Hub?](surfacehub-whats-new-1703.md)
 ### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
-### [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md)
-### [Technical information for 84” Microsoft Surface Hub](surface-hub-technical-84.md)
+### [Technical information for 55" Microsoft Surface Hub](surface-hub-technical-55.md)
+### [Technical information for 84" Microsoft Surface Hub](surface-hub-technical-84.md)
 ### [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## Plan

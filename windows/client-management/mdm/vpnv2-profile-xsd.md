@@ -175,6 +175,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             <xs:sequence>
               <xs:element name="Address" type="xs:string" minOccurs="1" maxOccurs="1"/>
               <xs:element name="PrefixSize" type="xs:unsignedByte" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="ExclusionRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -194,7 +195,6 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
     <NativeProtocolType>IKEv2</NativeProtocolType>  
     <Authentication>  
       <UserMethod>Eap</UserMethod>  
-      <MachineMethod>Eap</MachineMethod>  
       <Eap>  
        <Configuration>
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">

@@ -1,7 +1,7 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender ATP
 ms.reviewer: 
-description: Learn how to create and manage custom detections rules based on advanced hunting queries
+description: Learn how to create and manage custom detection rules based on advanced hunting queries
 keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: article
 ---
 
 
-# Create and manage custom detections rules
+# Create and manage custom detection rules
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -34,7 +34,7 @@ Custom detection rules built from [Advanced hunting](advanced-hunting-overview.m
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
 #### Required columns in the query results
-To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don’t use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
+To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
 There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each machine. 
 
@@ -63,14 +63,14 @@ With the query in the query editor, select **Create detection rule** and specify
 For more information about how alert details are displayed, [read about the alert queue](alerts-queue.md).
 
 #### Rule frequency
-When saved, custom detections rules immediately run. They then run again at fixed intervals based on the frequency you choose. Rules that run less frequently will have longer lookback durations:
+When saved, a new or edited custom detection rule immediately runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals and lookback durations based on the frequency you choose:
 
-- **Every 24 hours** — checks data from the past 30 days
-- **Every 12 hours** — checks data from the past 24 hours
-- **Every 3 hours** — checks data from the past 6 hours
-- **Every hour** — checks data from the past 2 hours
+- **Every 24 hours** — runs every 24 hours, checking data from the past 30 days
+- **Every 12 hours** — runs every 12 hours, checking data from the past 24 hours
+- **Every 3 hours** — runs every 3 hours, checking data from the past 6 hours
+- **Every hour** — runs hourly, checking data from the past 2 hours
 
-Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
 ### 3. Specify actions on files or machines.
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
@@ -88,7 +88,7 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
 ### 4. Click **Create** to save and turn on the rule.
-When saved, the custom detection rule immediately runs. It runs again every 24 hours to check for matches, generate alerts, and take response actions.
+After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 ## Manage existing custom detection rules
 In **Settings** > **Custom detections**, you can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.

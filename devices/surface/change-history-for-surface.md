@@ -1,17 +1,16 @@
 ---
 title: Change history for Surface documentation (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: This topic lists new and updated topics in the Surface documentation library.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
 ---
 
 # Change history for Surface documentation

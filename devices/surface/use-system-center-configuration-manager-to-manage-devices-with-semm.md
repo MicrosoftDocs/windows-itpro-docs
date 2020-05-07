@@ -6,12 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 11/22/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ---
@@ -75,10 +74,9 @@ To create a new application and deploy it to a collection that contains your Sur
 
    * **Import Information** – The Create Application Wizard will parse the .msi file and read the **Application Name** and **Product Code**. SurfaceUEFIManagerSetup.msi should be listed as the only file under the line **Content Files**, as shown in Figure 1. Select **Next** to proceed.
 
-   
-   ![Information from Surface UEFI Manager setup is automatically parsed](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
-   
-   *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
+      ![Information from Surface UEFI Manager setup is automatically parsed](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
+
+      *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
 
    * **General Information** – You can modify the name of the application and information about the publisher and version, or add comments on this page. The installation command for Microsoft Surface UEFI Manager is displayed in the Installation Program field. The default installation behavior of Install for system will allow Microsoft Surface UEFI Manager to install the required assemblies for SEMM even if a user is not logged on to the Surface device. Select **Next** to proceed.
    * **Summary** – The information that was parsed in the **Import Information** step and your selections from the **General Information** step is displayed on this page. Select **Next** to confirm your selections and create the application.
@@ -107,7 +105,7 @@ The sample scripts include examples of how to set Surface UEFI settings and how 
 
 The first region of the script that you need to modify is the portion that specifies and loads the SEMM certificate, and also indicates SurfaceUEFIManager version, and the names for the SEMM configuration package and SEMM reset package. The certificate name and SurfaceUEFIManager version are specified on lines 56 through 73 in the ConfigureSEMM.ps1 script.
 
-  ```
+  ```powershell
   56	$WorkingDirPath = split-path -parent $MyInvocation.MyCommand.Definition
   57	$packageRoot = "$WorkingDirPath\Config"
   58	$certName = "FabrikamSEMMSample.pfx"
@@ -137,7 +135,7 @@ On line 73, replace the value of the **$password** variable, from **1234** to th
 > [!Note]
 > The last two characters of the certificate thumbprint are required to enroll a device in SEMM. This script will display these digits to the user, which allows the user or technician to record these digits before the system reboots to enroll the device in SEMM. The script uses the following code, found on lines 150-155, to accomplish this.
 
-```
+```powershell
 150	# Device owners will need the last two characters of the thumbprint to accept SEMM ownership.
 151	# For convenience we get the thumbprint here and present to the user.
 152	$pw = ConvertTo-SecureString $password -AsPlainText -Force
@@ -163,7 +161,7 @@ Administrators with access to the certificate file (.pfx) can read the thumbprin
 
 The first region of the script where you will specify the configuration for Surface UEFI is the **Configure Permissions** region. This region begins at line 210 in the sample script with the comment **# Configure Permissions** and continues to line 247. The following code fragment first sets permissions to all Surface UEFI settings so that they may be modified by SEMM only, then adds explicit permissions to allow the local user to modify the Surface UEFI password, TPM, and front and rear cameras.
 
-```
+```powershell
 210	# Configure Permissions
 211	foreach ($uefiV2 IN $surfaceDevices.Values) {
 212 if ($uefiV2.SurfaceUefiFamily -eq $Device.Model) {
@@ -215,7 +213,7 @@ You can find information about the available settings names and IDs for Surface 
 
 The second region of the script where you will specify the configuration for Surface UEFI is the **Configure Settings** region of the ConfigureSEMM.ps1 script, which configures whether each setting is enabled or disabled. The sample script includes instructions to set all settings to their default values. The script then provides explicit instructions to disable IPv6 for PXE Boot and to leave the Surface UEFI Administrator password unchanged. You can find this region beginning with the **# Configure Settings** comment at line 291 through line 335 in the sample script. The region appears as follows.
 
-```
+```powershell
 291	# Configure Settings
 292	foreach ($uefiV2 IN $surfaceDevices.Values) {
 293 if ($uefiV2.SurfaceUefiFamily -eq $Device.Model) {
@@ -277,7 +275,7 @@ To identify enrolled systems for Configuration Manager, the ConfigureSEMM.ps1 sc
 
 The following code fragment, found on lines 380-477, is used to write these registry keys.
 
-```
+```powershell
 380	# For Endpoint Configuration Manager or other management solutions that wish to know what version is applied, tattoo the LSV and current DateTime (in UTC) to the registry:
 381	$UTCDate = (Get-Date).ToUniversalTime().ToString()
 382	$certIssuer = $certPrint.Issuer
@@ -384,56 +382,11 @@ To configure Surface UEFI settings or permissions for Surface UEFI settings, you
 
 The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.
 
-The following tables show the available settings for Surface Pro 4 and later including Surface Pro 7, Surface Book, Surface Laptop 3, and Surface Go. 
+The best way to view the most current Setting names and IDs for devices is to use the ConfigureSEMM.ps1 script or the ConfigureSEMM - <device name>.ps1 from the SEMM_Powershell.zip in [Surface Tools for IT Downloads](https://www.microsoft.com/download/details.aspx?id=46703).
 
-*Table 1. Surface UEFI settings for Surface Pro 4*
+Setting names and IDs for all devices can be seen in the ConfigureSEMM.ps1 script.
 
-| Setting ID | Setting Name |	Description |	Default Setting |
-| --- | --- | --- | --- |
-|501|	Password | UEFI System Password	|   |
-|200|	Secure Boot Keys | Secure Boot signing keys to enable for EFI applications |	MsPlus3rdParty |
-|300|	Trusted Platform Module (TPM)	| TPM device enabled or disabled |	Enabled |
-|301|	Docking USB Port | Docking USB Port enabled or disabled |	Enabled |
-|302|	Front Camera | Front Camera enabled or disabled |	Enabled |
-|303|	Bluetooth | Bluetooth radio enabled or disabled	 | Enabled | 
-|304|	Rear Camera | Rear Camera enabled or disabled	| Enabled |
-|305|	IR Camera | InfraRed Camera enabled or disabled	 | Enabled |
-|308|	Wi-Fi and Bluetooth | Wi-Fi and Bluetooth enabled or disabled	 | Enabled |
-|310|	Type Cover | Surface Type Cover connector | Enabled |
-|320|	On-board Audio | On-board audio enabled or disabled	| Enabled |
-|330|	Micro SD Card | Micro SD Card enabled or disabled	| Enabled |
-|370|	USB Port 1 | Side USB Port (1) | UsbPortEnabled |
-|400|	IPv6 for PXE Boot | Enable IPv6 PXE boot before IPv4 PXE boot	|Disabled |
-|401|	Alternate Boot | Alternate Boot allows users to override the boot order by holding the volume down button when powering up the device	| Enabled |
-|402|	Boot Order Lock | Boot Order variable lock enabled or disabled	| Disabled |
-|403|	USB Boot | Enable booting from USB devices	| Enabled |
-|500|	TPM clear EFI protocol | Enable EFI protocol for invoking TPM clear	| Disabled |
-|600|	Security | UEFI Security Page Display enabled or disabled	| Enabled |
-|601|	Devices | UEFI Devices Page Display enabled or disabled	| Enabled |
-|602|	Boot | UEFI Boot Manager Page Display enabled or disabled	| Enabled |
-
-*Table 2. Surface UEFI settings for Surface Book*
-
-| Setting ID | Setting Name	| Description	| Default Setting |
-| --- | --- | --- | --- |
-| 501	| Password	| UEFI System Password |   |	
-| 200	| Secure Boot Keys | Secure Boot signing keys to enable for EFI applications	| MsPlus3rdParty |
-| 300	| Trusted Platform Module (TPM) | TPM device enabled or disabled | Enabled |
-| 301	| Docking USB Port | Docking USB Port enabled or disabled | Enabled |
-| 302	| Front Camera | Front Camera enabled or disabled | Enabled |
-| 303	| Bluetooth | Bluetooth radio enabled or disabled | Enabled |
-| 304	| Rear Camera | Rear Camera enabled or disabled | Enabled |
-| 305	| IR Camera | InfraRed Camera enabled or disabled | Enabled |
-| 308	| Wi-Fi and Bluetooth | Wi-Fi and Bluetooth enabled or disabled | Enabled |
-| 320	| On-board Audio | On-board audio enabled or disabled | Enabled |
-| 400	| IPv6 for PXE Boot	Enable | IPv6 PXE boot before IPv4 PXE boot | Disabled |
-| 401	| Alternate Boot | Alternate Boot allows users to override the boot order by holding the volume down button when powering up the device | Enabled |
-| 402	| Boot Order Lock | Boot Order variable lock enabled or disabled | Disabled |
-| 403	| USB Boot | Enable booting from USB devices | Enabled |
-| 500	| TPM clear EFI protocol | Enable EFI protocol for invoking TPM clear | Disabled |
-| 600	| Security | UEFI Security Page Display enabled or disabled | Enabled |
-| 601	| Devices | UEFI Devices Page Display enabled or disabled | Enabled |
-| 602	| Boot | UEFI Boot Manager Page Display enabled or disabled | Enabled |
+Setting names and IDs for specific devices can be seen in the ConfigureSEMM - <device name>.ps1 scripts. For example, setting names and IDs for Surface Pro X can be found in the ConfigureSEMM – ProX.ps1 script.
 
 ## Deploy SEMM Configuration Manager scripts
 
@@ -480,10 +433,10 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
        - Select **Registry** from the **Setting Type** drop-down menu.
        - Select **HKEY_LOCAL_MACHINE** from the **Hive** drop-down menu.
        - Enter **SOFTWARE\Microsoft\Surface\SEMM** in the **Key** field.
-       - Enter **Enabled_Version1000** in the **Value** field.
+       - Enter **CertName** in the **Value** field.
        - Select **String** from the **Data Type** drop-down menu.
        - Select the **This registry setting must satisfy the following rule to indicate the presence of this application** button.
-       - Enter **1** in the **Value** field.
+       - Enter the name of the certificate you entered in line 58 of the script in the **Value** field.
        - Select **OK** to close the **Detection Rule** window.
 
      ![Use a registry key to identify devices enrolled in SEMM](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")

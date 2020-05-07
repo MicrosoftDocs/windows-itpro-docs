@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/08/2017
 ---
 
 # Password must meet complexity requirements
@@ -58,6 +57,9 @@ Additional settings that can be included in a custom Passfilt.dll are the use of
 -   Not defined
 
 ### Best practices
+
+> [!TIP]
+> For the latest best practices, see [Password Guidance](https://www.microsoft.com/research/publication/password-guidance).
 
 Set **Passwords must meet complexity requirements** to Enabled. This policy setting, combined with a minimum password length of 8, ensures that there are at least 218,340,105,584,896 different possibilities for a single password. This makes a brute force attack difficult, but still not impossible.
 
@@ -104,6 +106,6 @@ If your organization has more stringent security requirements, you can create a 
 
 The use of ALT key character combinations can greatly enhance the complexity of a password. However, such stringent password requirements can result in additional Help Desk requests. Alternatively, your organization could consider a requirement for all administrator passwords to use ALT characters in the 0128–0159 range. (ALT characters outside of this range can represent standard alphanumeric characters that would not add additional complexity to the password.)
 
-## Related topics
+## Related articles
 
 - [Password Policy](password-policy.md)

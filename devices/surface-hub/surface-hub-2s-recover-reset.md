@@ -23,8 +23,10 @@ To begin, sign in to Surface Hub 2S with admin credentials, open the **Settings*
 
 1. To reset the device, select **Get Started**.
 2. When the **Ready to reset this device** window appears, select **Reset**. 
+  
   >[!NOTE]
   >Surface Hub 2S reinstalls the operating system from the recovery partition. This may take up to one hour to complete.
+  
 3. To reconfigure the device, run the first-time Setup program.
 4. If you manage the device using Microsoft Intune or another mobile device management solution, retire and delete the previous record, and then re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).
 
@@ -67,3 +69,7 @@ At the end of a session, Surface Hub 2S may occasionally encounter an error duri
 
 > [!NOTE]
 > To enter recovery mode, unplug the power cord and plug it in again three times.
+
+## Contact Support
+
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).

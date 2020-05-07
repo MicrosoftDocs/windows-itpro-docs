@@ -37,7 +37,10 @@ New installations are considerably more involved than existing implementations b
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  
 
 ## Active Directory
-This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+This document expects you have Active Directory deployed with an _adequate_ number of Windows Server 2016 or later domain controllers for each site.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+
+> [!NOTE]
+>There was an issue with key trust authentication on Windows Server 2019. If you are planning to use Windows Server 2019 domain controllers refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) to fix this issue.
  
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
 
@@ -93,7 +96,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > *  Highly available certificate revocation list (Azure AD Joined devices).
   
 ## Azure Active Directory
-You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
+You've prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
 
 The next step of the deployment is to follow the [Creating an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) process to provision an Azure tenant for your organization.
 
@@ -119,11 +122,9 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 > 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
-#### Azure MFA Provider 
-If your organization uses Azure MFA on a per-consumption model (no licenses), then review the [Create a Multifactor Authentication Provider](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider) section to create an Azure MFA Authentication provider and associate it with your Azure tenant. 
 
 #### Configure Azure MFA Settings
-Once you have created your Azure MFA authentication provider and associated it with an Azure tenant, you need to configure the multi-factor authentication settings.  Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
+Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
 #### Azure MFA User States
 After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.

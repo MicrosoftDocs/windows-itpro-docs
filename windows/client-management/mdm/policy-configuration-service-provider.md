@@ -15,6 +15,8 @@ ms.date: 07/18/2019
 
 # Policy CSP
 
+> [!WARNING] 
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -197,6 +199,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-allowshareduserappdata" id="applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a>
+  </dd>
+  <dd> 
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a> 
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
@@ -611,6 +616,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-bluetooth.md#bluetooth-servicesallowedlist" id="bluetooth-servicesallowedlist">Bluetooth/ServicesAllowedList</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize"id=bluetooth-setminimumencryptionkeysize>Bluetooth/SetMinimumEncryptionKeySize</a>
   </dd>
 </dl>
 
@@ -3326,6 +3334,23 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-storage.md#storage-allowdiskhealthmodelupdates" id="storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
   <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesenseglobal"id="storage-allowstoragesenseglobal">Storage/AllowStorageSenseGlobal</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup"id="storage-allowstoragesensetemporaryfilescleanup">Storage/AllowStorageSenseTemporaryFilesCleanup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold"id="storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold"id="storage-configstoragesensedownloadscleanupthreshold">Storage/ConfigStorageSenseDownloadsCleanupThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenseglobalcadence"id="storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-configstoragesenserecyclebincleanupthreshold"id="storage-configstoragesenserecyclebincleanupthreshold">Storage/ConfigStorageSenseRecycleBinCleanupThreshold</a>
+  <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
   <dd>
@@ -4004,24 +4029,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## Policies supported by Group Policy and ADMX-backed policies
-- [Policies supported by Group Policy](policies-supported-by-group-policy.md)
-- [ADMX-backed policies](policies-admx-backed.md)
+## Policy CSPs supported by Group Policy and ADMX-backed policy CSPs
+- [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
+- [ADMX-backed policy CSPs](policy-csps-admx-backed.md)
 
-## Policies supported by HoloLens devices
-- [Policies supported by HoloLens 2](policies-supported-by-hololens2.md)  
-- [Policies supported by HoloLens (1st gen) Commercial Suite](policies-supported-by-hololens-1st-gen-commercial-suite.md)  
-- [Policies supported by HoloLens (1st gen) Development Edition](policies-supported-by-hololens-1st-gen-development-edition.md)
+## Policy CSPs supported by HoloLens devices
+- [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
+- [Policy CSPs supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policy CSPs supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
 
-## Policies supported by Windows 10 IoT
-- [Policies supported by Windows 10 IoT Enterprise](policies-supported-by-iot-enterprise.md)
-- [Policies supported by Windows 10 IoT Core](policies-supported-by-iot-core.md)
+## Policy CSPs supported by Windows 10 IoT
+- [Policy CSPs supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
+- [Policy CSPs supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
 
-## Policies supported by Microsoft Surface Hub
-- [Policies supported by Microsoft Surface Hub](policies-supported-by-surface-hub.md)
+## Policy CSPs supported by Microsoft Surface Hub
+- [Policy CSPs supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
 
-## Policies that can be set using Exchange Active Sync (EAS)
-- [Policies that can be set using Exchange Active Sync (EAS)](policies-that-can-be-set-using-eas.md)
+## Policy CSPs that can be set using Exchange Active Sync (EAS)
+- [Policy CSPs that can be set using Exchange Active Sync (EAS)](policy-csps-that-can-be-set-using-eas.md)
 
 ## Related topics
 

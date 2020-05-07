@@ -8,7 +8,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/15/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -28,9 +27,9 @@ We've come up with a list of scenarios that you can use to test hardware-based i
 
 You can see how an employee would use standalone mode with Application Guard.
 
-**To test Application Guard in Standalone mode**
+### To test Application Guard in Standalone mode
 
-1.	[Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard).
+1.    [Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard).
 
 2. Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
 
@@ -84,11 +83,11 @@ Before you can use Application Guard in enterprise mode, you must install Window
 
 6. Start Microsoft Edge and type <em>www.microsoft.com</em>.
     
-    After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you’ve marked as trusted and shows the site directly on the host PC instead of in Application Guard.
+    After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you've marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
     ![Trusted website running on Microsoft Edge](images/appguard-turned-on-with-trusted-site.png)
 
-7. In the same Microsoft Edge browser, type any URL that isn’t part of your trusted or neutral site lists.
+7. In the same Microsoft Edge browser, type any URL that isn't part of your trusted or neutral site lists.
  
    After you submit the URL, Application Guard determines the URL is untrusted and redirects the request to the hardware-isolated environment.
 
@@ -109,7 +108,7 @@ Application Guard provides the following default behavior for your employees:
 You have the option to change each of these settings to work with your enterprise from within Group Policy.
 
 **Applies to:**
-- Windows 10 Enterpise edition, version 1709 or higher
+- Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Professional edition, version 1803
 
 #### Copy and paste options
@@ -169,10 +168,10 @@ You have the option to change each of these settings to work with your enterpris
     The previously added site should still appear in your **Favorites** list.
 
     >[!NOTE]
-    >If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren’t shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.<br><br>If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.<br><br>**To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
+    >If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.<br><br>If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.<br><br>**To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
     
 **Applies to:**
-- Windows 10 Enterpise edition, version 1803
+- Windows 10 Enterprise edition, version 1803
 - Windows 10 Professional edition, version 1803
 
 #### Download options
@@ -202,7 +201,7 @@ You have the option to change each of these settings to work with your enterpris
 4. Assess the visual experience and battery performance. 
 
 **Applies to:**
-- Windows 10 Enterpise edition, version 1809
+- Windows 10 Enterprise edition, version 1809
 - Windows 10 Professional edition, version 1809
 
 #### File trust options

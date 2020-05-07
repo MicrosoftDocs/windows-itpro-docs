@@ -52,5 +52,14 @@ If while trying to take an action during a live response session, you encounter 
 4. Navigate to your TEMP folder.
 5. Run the action you wanted to take on the copied file.
 
+## Slow live response sessions or delays during initial connections
+Live response leverages Microsoft Defender ATP sensor registration with WNS service in Windows. 
+If you are having connectivity issues with live response, please confirm the following:
+1. `notify.windows.com` is not blocked in your environment. For more information see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+2. WpnService (Windows Push Notifications System Service) is not disabled.
 
+Please refer to the articles below to fully understand the WpnService service behavior and requirements:
+- [Windows Push Notification Services (WNS) overview](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Microsoft Push Notifications Service (MPNS) Public IP ranges](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

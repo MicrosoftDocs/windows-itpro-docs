@@ -30,7 +30,7 @@ With **Windows Autopilot for white glove deployment**, the provisioning process 
 
  ![OEM](images/wg02.png)
 
-Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting both the user-driven mode for Azure Active Directory Join, and user-driven mode for Hybrid Azure Active directory join scenarios.
+Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting both the user-driven mode for Azure Active Directory Join, and user-driven mode for Hybrid Azure Active Directory join scenarios.
 
 ## Prerequisites
 
@@ -59,10 +59,10 @@ To enable white glove deployment, an additional Autopilot profile setting must b
 
  ![allow white glove](images/allow-white-glove-oobe.png)
 
-The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed.  
+The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed. Please make sure not to target both win32 and LOB apps to the same device. 
 
->[!NOTE]
->Other user-targeted policies will not apply until the user signs into the device.  To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
+> [!NOTE]
+> The white glove technician phase will install all device-targeted apps as well as any user-targeted, device-context apps that are targeted to the assigned user. If there is no assigned user, then it will only install the device-targeted apps. Other user-targeted policies will not apply until the user signs into the device. To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
 
 ## Scenarios
 

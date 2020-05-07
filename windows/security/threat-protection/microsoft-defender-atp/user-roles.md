@@ -70,7 +70,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
         For more information on the available commands, see [Investigate machines using Live response](live-response.md).
   
-4. Click **Next** to assign the role to an Azure AD group.
+4. Click **Next** to assign the role to an Azure AD Security group.
 
 5. Use the filter to select the Azure AD group that you'd like to add to this role.
 
@@ -79,7 +79,8 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 7. Apply the configuration settings.
 
 
-After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
+> [!IMPORTANT]
+> After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
 
 
 ## Edit roles

@@ -73,7 +73,7 @@ Here is an example of the response.
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",
             "computerDnsName": "niw_pc",
             "osPlatform": "Windows10",
-            "rbacGroupId": 2154
+            "rbacGroupName": "GroupTwo"
         }
 		...
     ]

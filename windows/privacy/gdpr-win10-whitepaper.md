@@ -296,7 +296,7 @@ Windows Information Protection helps people separate their work and personal dat
 For example, employees can’t send protected work files from a personal email account instead of their work account. They also can’t accidently post personal or sensitive data from a corporate site into a tweet. Windows Information Protection also helps ensure that they aren’t saving personal or sensitive data in a public cloud storage location. 
 
 #### Capabilities to classify, assign permissions and share data
-Windows Information Protection is designed to coexist with advanced data loss prevention (DLP) capabilities found in Office 365 ProPlus, Azure Information Protection, and Azure Rights Management. Advanced DLP prevents printing, for example, or protects work data that is emailed outside your company. 
+Windows Information Protection is designed to coexist with advanced data loss prevention (DLP) capabilities found in Microsoft 365 Apps for enterprise, Azure Information Protection, and Azure Rights Management. Advanced DLP prevents printing, for example, or protects work data that is emailed outside your company. 
 
 To continuously protect your data, regardless of where it is stored, with whom it is shared, or if the device is running iOS, Android or Windows, the classification and protection needs to be built into the file itself, so this protection can travel with the data wherever it goes. Microsoft Azure Information Protection (AIP) is designed to provide this persistent data protection both on-premises and in the cloud.
 

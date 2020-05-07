@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 09/18/2017
+ms.date: 05/05/2020
 ---
 
 # Reclaim seat from user

@@ -126,7 +126,9 @@ You can roll back and remove a file from quarantine if you’ve determined that 
    ```
 
 > [!NOTE]
-> Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
+> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+> 
+> Microsoft Defender ATP will restore all custom blocked files that were quarantined on this machine in the last 30 days.
 
 ## Add indicator to block or allow a file
 
@@ -208,6 +210,8 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
 
 **Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection, or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 

@@ -10,7 +10,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ---
@@ -51,22 +51,22 @@ Provisioning packages are files created by the Windows Configuration Designer to
 1. Find the XML license file that was provided when you purchased the Commercial Suite.
 
 1. Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
-    >[!NOTE]
-    >You can configure [additional settings in the provisioning package](hololens-provisioning.md).
+    > [!NOTE]
+    > You can configure [additional settings in the provisioning package](hololens-provisioning.md).
 
 1. On the **File** menu, click **Save**. 
 
 1. Read the warning explaining that project files may contain sensitive information and click **OK**.
 
-    >[!IMPORTANT]
-    >When you build a provisioning package, you may include sensitive information in the project files and provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when no longer needed.
+    > [!IMPORTANT]
+    > When you build a provisioning package, you may include sensitive information in the project files and provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when no longer needed.
 
 1. On the **Export** menu, click **Provisioning package**.
 1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next**.
 1. Set a value for **Package Version**.
 
-    >[!TIP]
-    >You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]
+    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 1. On the **Select security details for the provisioning package**, click **Next**.
 1. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
@@ -87,8 +87,8 @@ Provisioning packages are files created by the Windows Configuration Designer to
 1. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.
 1. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with device setup.
 
->[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
+> [!NOTE]
+> If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
 
 ## Verify device encryption
 

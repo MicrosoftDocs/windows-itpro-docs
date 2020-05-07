@@ -49,9 +49,13 @@ The following steps demonstrate required settings using the Intune service:
     ![Intune license verification](images/auto-enrollment-intune-license-verification.png)
 
 2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal). 
-Also verify that the **MAM user scope** is set to **None**. Otherwise, it will have precedence over the MDM scope that will lead to issues. 
 
     ![Auto-enrollment activation verification](images/auto-enrollment-activation-verification.png)
+
+> [!IMPORTANT]
+> For BYOD devices, the MAM user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device will use Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
+
+> For corporate devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 
 3. Verify that the device OS version is Windows 10, version 1709 or later.
 4. Auto-enrollment into Intune via Group Policy is valid only for devices which are hybrid Azure AD joined. This means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is  hybrid Azure AD joined, run  `dsregcmd /status` from the command line.
@@ -62,7 +66,7 @@ Also verify that the **MAM user scope** is set to **None**. Otherwise, it will h
 
     Additionally, verify that the SSO State section displays **AzureAdPrt** as **YES**.
 
-    ![Auto-enrollment azure AD prt verification](images/auto-enrollment-azureadprt-verification.png)
+    ![Auto-enrollment Azure AD prt verification](images/auto-enrollment-azureadprt-verification.png)
 
     This information can also be found on the Azure AD device list.
 
@@ -116,9 +120,6 @@ Requirements:
 > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have the Windows 10, version 1903 feature update installed. 
 The default behavior for older releases is to revert to **User Credential**.
 
-> [!NOTE]
-> Device credential group policy setting is not supported for enrolling into Microsoft Intune. 
-
 When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
 To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
@@ -170,7 +171,7 @@ Requirements:
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576) or
 >   1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)
->   2. Install the package on the Primary Domain Controller (PDC).
+>   2. Install the package on the Domain Controller.
 >   3. Navigate, depending on the version to the folder:
 >   1803 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**, or  
 >   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**, or
@@ -178,14 +179,13 @@ Requirements:
 >   4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 >   5. Copy PolicyDefinitions folder to **C:\Windows\SYSVOL\domain\Policies**. 
 >   (If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
->   6. Restart the Primary Domain Controller for the policy to be available.
+>   6. Restart the Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
 1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 2. Create a Security Group for the PCs.
 3. Link the GPO.
 4. Filter using Security Groups.
-5. Enforce a GPO link.
 
 ## Troubleshoot auto-enrollment of devices
 
@@ -245,6 +245,7 @@ To collect Event Viewer logs:
 
 ### Useful Links
 
+- [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)
 - [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)
 - [Windows 10 Administrative Templates for Windows 10 October 2018 Update 1809](https://www.microsoft.com/download/details.aspx?id=57576)
 - [Windows 10 Administrative Templates for Windows 10 April 2018 Update 1803](https://www.microsoft.com/download/details.aspx?id=56880)

@@ -233,7 +233,7 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 1. Disk validation is performed.
 2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
 3. UEFI boot files are installed to the ESP.
-4. GPT metatdata and layout information is applied.
+4. GPT metadata and layout information is applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
@@ -426,6 +426,9 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
 
    For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
+   
+   > [!NOTE]
+   > You can access the ReAgent files if you have installed the User State Migration Tool (USMT) as a feature while installing Windows Assessment and Deployment Kit.
    
    **Command 1:**
    ```cmd
