@@ -170,9 +170,6 @@ To suppress ads only when the student signs into Bing with their Office 365 acco
 1. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 2. Have students sign into Bing with their Office 365 account.
 
-### More information
-> [!NOTE]  
-> Since 2017, Microsoft’s Bing in the Classroom solution (now a legacy solution) has been integrated with Microsoft Office 365 Education and requires users to be signed in into Microsoft Edge using their student Azure Active Directory Identity for an ad free experience.
 
 ## Related topics
 [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
