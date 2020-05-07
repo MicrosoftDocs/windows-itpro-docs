@@ -26,7 +26,7 @@ ms.collection:
 
 ## Overview of behavioral blocking and containment
 
-Not all cyberattacks involve a simple piece of [malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware) that's found and removed. Some attacks, such as and “living off the land” binaries, are much more difficult to identify, let alone contain. Fortunately, [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) includes behavioral blocking and containment capabilities that can help identify and stop threats, based on their behaviors and process trees. 
+Not all cyberattacks involve a simple piece of [malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware) that's found and removed. Some attacks, such as and “living off the land” binaries, are much more difficult to identify, let alone contain. Fortunately, [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) includes behavioral blocking and containment capabilities. These capabilities can help identify and stop threats, based on their behaviors and process trees. 
 
 Behavioral blocking and containment capabilities leverage multiple components and features of Microsoft Defender ATP to stop attacks immediately and prevent attacks from progressing.
 
@@ -67,7 +67,7 @@ As described in the recent blog post, [Behavioral blocking and containment: Tran
 
 The threat turned out to be malware; it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device. 
 
-Minutes after the alert was triggered, the file was analyzed, based on its behavior, and was confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
+Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked":::
 
