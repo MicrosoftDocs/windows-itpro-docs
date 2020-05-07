@@ -82,7 +82,7 @@ It's important to understand the following prerequisites prior to creating indic
 
  
 >[!NOTE]
->There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
+>There may be up to 2 hours of latency (usually less) between the time the action is taken and the actual file being blocked.
 
 ### Create an indicator for files from the settings page
 
@@ -131,7 +131,7 @@ It's important to understand the following prerequisites prior to creating indic
 >- Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
->There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
+>There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
 
 ### Create an indicator for IPs, URLs, or domains from the settings page
 
