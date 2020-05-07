@@ -1417,11 +1417,15 @@ To turn off Inking & Typing data collection:
 
 - In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off** 
 
-  -or-
+  -OR-
   
   **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Text Input > Improve inking and typing recognition**
   
-  -or-
+  -and-
+  
+  **Disable** the Group Policy: **User Configuration > Administrative Templates  > Control Panel > Regional and Language Options > Handwriting personalization > Turn off automatic learning**
+  
+  -OR-
 
 - Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
