@@ -1,20 +1,23 @@
-# [Windows Defender Application Control](windows-defender-application-control.md)
+# [Application Control for Windows](windows-defender-application-control.md)
+## [WDAC and AppLocker Overview](plan-windows-defender-application-control-management.md)
+### [WDAC and AppLocker Feature Availability](understand-windows-defender-application-control-policy-design-decisions.md)
 
-## [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md)
+
+## [WDAC design guide](windows-defender-application-control-design-guide.md)
 ### [Plan for WDAC policy lifecycle management](plan-windows-defender-application-control-management.md)
-### Design and create your WDAC policy
+### Design your initial WDAC policy
 #### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
 #### [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md)
-##### [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md)
-##### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
-#### [Example WDAC base policies](example-wdac-base-policies.md)
+#### [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md)
+#### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
-#### [Common WDAC deployment scenarios](types-of-devices.md)
+#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
+### Create your initial WDAC policy
+#### [Example WDAC base policies](example-wdac-base-policies.md)
+#### [Policy creation for common WDAC usage scenarios](types-of-devices.md)
 ##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
 ##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
-##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
-
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
@@ -28,7 +31,7 @@
 ### [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md)
 ### [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
-#### [Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
+#### [Optional: Use the WDAC Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)
 #### [Deploy catalog files to support WDAC](deploy-catalog-files-to-support-windows-defender-application-control.md)
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
