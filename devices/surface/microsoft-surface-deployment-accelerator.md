@@ -34,10 +34,10 @@ The resulting image closely matches the configuration of Bare Metal Recovery (BM
 2. Select **Clone or Download** and review the Readme file.
 3. Edit the script with the appropriate variables for your environment, as documented in the Readme, and review before running it in your test environment. 
 
- ![Running Surface Deployment Accelerator tool](images/surface-deployment-accelerator.png)
+   ![Running Surface Deployment Accelerator tool](images/surface-deployment-accelerator.png)
 
 ## Related links
 
--[Open source image deployment tool released on GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
+ - [Open source image deployment tool released on GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
 
--[Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+ - [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
