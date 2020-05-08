@@ -60,7 +60,7 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [Applicat
 5. Add a row, then give your policy a name and use the following settings:
     - **OMA-URI**: ./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy
     - **Data type**: Base64
-    - **Certificate file**: upload your binary format policy file
+    - **Certificate file**: upload your binary format policy file. You do not need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
 
     ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
 
