@@ -1,6 +1,6 @@
 ---
 title: Windows 10 features lifecycle
-description: In this article, learn about the lifecycle of Windows 10 features, such as what's new and what's been removed.
+description: In this article, learn about the lifecycle of Windows 10 features, such as what's no longer being developed and what's been removed.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
