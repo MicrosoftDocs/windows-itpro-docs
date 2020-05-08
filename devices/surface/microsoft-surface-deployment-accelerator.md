@@ -28,7 +28,7 @@ The open source, script-driven SDA tool leverages the Windows Assessment and Dep
 
 The resulting image closely matches the configuration of Bare Metal Recovery (BMR) images, without any pre-installed applications such as Microsoft Office or the Surface UWP application.
 
-## To run SDA
+**To run SDA:**
 
 1. Go to [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) on GitHub. 
 2. Select **Clone or Download** and review the Readme file.
@@ -38,6 +38,6 @@ The resulting image closely matches the configuration of Bare Metal Recovery (BM
 
 ## Related links
 
-[Open source image deployment tool released on GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
+-[Open source image deployment tool released on GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
 
-[Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+-[Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
