@@ -58,7 +58,7 @@ The alert includes recommended actions to help your security operations team pro
 
 - **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (EDR in block mode, currently in [limited private preview](edr-in-block-mode.md#can-i-participate-in-the-preview-of-edr-in-block-mode), is not enabled by default; you turn it on in the Microsoft Defender Security Center.) 
 
-- There's more to come! As Microsoft continues to improve threat protection features and capabilities, you can expect more to come in the area of behavioral blocking and containment. Visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what's rolling out now and what's in development.
+There's more to come! As Microsoft continues to improve threat protection features and capabilities, you can expect more to come in the area of behavioral blocking and containment. Visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what's rolling out now and what's in development.
 
 ## An example of behavioral blocking and containment in action
 
