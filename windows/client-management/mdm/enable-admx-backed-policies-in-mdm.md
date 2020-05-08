@@ -227,41 +227,41 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       Here is the example for **AppVirtualization/PublishingAllowServer2**:
         
-   > [!NOTE]
-   > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
-    
-   ```xml
-   <?xml version="1.0" encoding="utf-8"?>
-      <SyncML xmlns="SYNCML:SYNCML1.2">
-        <SyncBody>
-          <Replace>
-            <CmdID>2</CmdID>
-            <Item>
-              <Meta>
-                <Format>chr</Format>
-                <Type>text/plain</Type>
-              </Meta>
-              <Target>
-               <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
-              </Target>
-              <Data>
-              <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
-                id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
-                id="Global_Publishing_Refresh_Options" value="1"/><data 
-                id="Global_Refresh_OnLogon_Options" value="0"/><data 
-                id="Global_Refresh_Interval_Prompt" value="15"/><data 
-                id="Global_Refresh_Unit_Options" value="0"/><data 
-                id="User_Publishing_Refresh_Options" value="0"/><data 
-                id="User_Refresh_OnLogon_Options" value="0"/><data 
-                id="User_Refresh_Interval_Prompt" value="15"/><data 
-                id="User_Refresh_Unit_Options" value="1"/>]]>
-              </Data>
-            </Item>
-          </Replace>
-          <Final/>
-        </SyncBody>
-      </SyncML>
-   ```
+       > [!NOTE]
+       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+
+       ```xml
+       <?xml version="1.0" encoding="utf-8"?>
+          <SyncML xmlns="SYNCML:SYNCML1.2">
+            <SyncBody>
+              <Replace>
+                <CmdID>2</CmdID>
+                <Item>
+                  <Meta>
+                    <Format>chr</Format>
+                    <Type>text/plain</Type>
+                  </Meta>
+                  <Target>
+                   <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
+                  </Target>
+                  <Data>
+                  <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
+                    id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
+                    id="Global_Publishing_Refresh_Options" value="1"/><data 
+                    id="Global_Refresh_OnLogon_Options" value="0"/><data 
+                    id="Global_Refresh_Interval_Prompt" value="15"/><data 
+                    id="Global_Refresh_Unit_Options" value="0"/><data 
+                    id="User_Publishing_Refresh_Options" value="0"/><data 
+                    id="User_Refresh_OnLogon_Options" value="0"/><data 
+                    id="User_Refresh_Interval_Prompt" value="15"/><data 
+                    id="User_Refresh_Unit_Options" value="1"/>]]>
+                  </Data>
+                </Item>
+              </Replace>
+              <Final/>
+            </SyncBody>
+          </SyncML>
+       ```
 
 
 ## Disable a policy
