@@ -658,7 +658,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policies-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policies-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
+<td style="vertical-align:top"><a href="policy-csps-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
