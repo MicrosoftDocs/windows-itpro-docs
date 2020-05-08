@@ -1,6 +1,6 @@
 ---
 title: Checklist Configuring Basic Firewall Settings (Windows 10)
-description: Checklist Configuring Basic Firewall Settings
+description: Configure Windows Firewall to set inbound and outbound behavior, display notifications, record log files and more of the necessary function for Firewall. 
 ms.assetid: 0d10cdae-da3d-4a33-b8a4-6b6656b6d1f9
 ms.reviewer: 
 ms.author: dansimp
