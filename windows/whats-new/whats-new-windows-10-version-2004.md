@@ -18,7 +18,34 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1909
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
+
+> [!NOTE]
+> The version number for this release (2004) is an even number so as not to confuse it with major releases of Windows that happened in the year 2003.
+
+## FIDO2 security key support in Azure Active Directory
+
+FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to hybrid environments, enabling even more customers to take an important step in their journey towards passwordless environments
+
+[Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894)
+
+## Windows Hello for Business
+
+For WHFB, we have Hybrid AD/AAD support and Phone number sign-in (MSA)
+
+## Specialized displays
+
+With this update, devices running Windows 10 Enterprise or Windows 10 Pro for Workstations with multiple displays can be configured to prevent Windows from using a display, making it available for a specialized purpose.
+
+Examples include:
+- Fixed-function arcade & gaming such as cockpit, driving, flight, and military simulators
+- Medical imaging devices with custom panels, such as grayscale X-ray displays
+- Video walls like those displayed in Microsoft Store
+- Dedicated video monitoring
+- Monitor panel testing and validation
+- Independent Hardware Vendor (IHV) driver testing and validation
+ 
+To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
 
 ## Servicing
 
@@ -60,67 +87,71 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 
 ### Windows Sandbox
 
-[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In Windows 10, version 1909 you have even more control over the level of isolation.
+[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature was released with Windows 10, version 1903. Windows 10, version 2004 includes bugfixes and enables even more control over configuration.
+
+[Windows Sandbox configuration](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file) includes:
+- MappedFolders now supports a destination folder. Previously no destination could be specified, it was always mapped to the Sandbox desktop.
+- AudioInput/VideoInput settings now enable you to share their host microphone or webcam with the Sandbox.
+- ProtectedClient is a new security setting that runs the connection to the Sandbox with extra security settings enabled. This is disabled by default due to issues with copy & paste.
+- PrinterRedirection: You can now enable and disable host printer sharing with the Sandbox.
+- ClipboardRedirection: You can now enable and disable host clipboard sharing with the Sandbox.
+- MemoryInMB adds the ability to specify the maximum memory usage of the Sandbox.
+
+Windows Media Player is also added back to the Sandbox image in this release.
+
 
 ## Windows Virtual Desktop
 
-[Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) (WVD) is now generally available globally!
-
-Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
+Check out [Windows Virtual Desktop documentation](https://aka.ms/wvdgetstarted) for the latest and greatest information, as well as the [WVD Virtual Event from March](https://aka.ms/wvdvirtualevent).
 
 ## Deployment
 
-#### Microsoft Endpoint Manager
+### Windows Autopilot
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now are [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
+VPN support for user-driven Hybrid Azure AD Join scenarios
 
-### Windows 10 Pro and Enterprise in S mode
+### Windows Update for Business
 
- You can now deploy and run traditional Win32 (desktop) apps without leaving the security of S mode by configuring the Windows 10 in S mode policy to support Win32 apps, and deploy them with Mobile Device Management (MDM) software such as Microsoft Intune. For more information, see [Allow Line-of-Business Win32 Apps on Intune-Managed S Mode Devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s).
+Windows Update for Business Enhancements  
+•	Intune console updates: target version is now available allowing you to specify which Windows 10 OS Version you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy (GP) and Configuration Service Provider (CSP) policy 
+•	Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. But we know this can interfere with validations, to better enable IT Administrators to validate on the latest release, we have created a new policy to enable admins to opt devices out of the built-in safeguard holds. 
+•	Documentation Updates: we have improved our Windows Update for Business documentation to better communicate how to utilize Windows Update for Business to manage Windows Updates to keep devices secure and end users productive.  
+
+
+### Delivery Optimization
+
+The following [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) policies are removed in this release:
+
+- Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth)
+  - Reason: Replaced with separate policies for foreground and background
+- Max Upload Bandwidth (DOMaxUploadBandwidth)
+  - Reason: impacts uploads to internet peers only, which isn't used in Enterprises. 
+- Absolute max throttle (DOMaxDownloadBandwidth)
+  - Reason: separated to foreground and background
+
+### Microsoft Endpoint Manager
+
+See [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 
 ### SetupDiag
 
-[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.6.0.42 is available.
+In Windows 10, version 2004, SetupDiag is now automatically installed.
 
-SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.        .
+[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues.
+
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there is an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-A new [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) will **not be released** for Windows 10, version 1909. You can use the Windows ADK for Windows 10, version 1903 to deploy Windows 10, version 1909.
+A new [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) will be for Windows 10, version 2004. You can use this version of the Windows ADK to deploy Windows 10, version 2004.
+
+### Microsoft Deployment Toolkit (MDT)
+
+MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.
 
 ## Desktop Analytics
 
-[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is now generally available globally! Desktop Analytics is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
-
-## Microsoft Connected Cache
-
-Together with Delivery Optimization, [Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Introducing-Microsoft-Connected-Cache-Microsoft-s-cloud-managed/ba-p/963898) installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need.
-
-## Accessibility
-
-This release adds the ability for Narrator and other assistive technologies to read and learn where the FN key is located on keyboards and what state it is in (locked versus unlocked).
-
-## Processor requirements and enhancements
-
-### Requirements
-
-[Windows Processor Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements) have been updated for this version of Windows.
-
-### Favored CPU Core Optimization
-
-This version of Windows 10 will include optimizations to how instructions are processed by the CPU in order to increase the performance and reliability of the operating system and its applications.
-
-When a CPU is manufactured, not all of the cores are created equal. Some of the cores may have slightly different voltage and power characteristics that could allow them to get a "boost" in performance. These cores are called "favored cores" as they can offer better performance than the other cores on the die.
-
-With Intel Turbo Boost Max Technology 3.0, an operating system will use information stored in the CPU to identify which cores are the fastest and then push more of the CPU intensive tasks to those cores. According to Intel, this technology "delivers more than 15% better single-threaded performance".
-
-### Debugging
-
-Additional debugging capabilities for newer Intel processors have been added in this release. This is only relevant for hardware manufacturers.
-
-### Efficiency
-
-General battery life and power efficiency improvements for PCs with certain processors have been added in this release.
+[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. For information about what's new, see [What's new in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/whats-new).
 
 ## See Also
 
