@@ -1874,7 +1874,8 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     ![vpn selfhost properties window](images/certfiltering1.png)
 
-    > **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
+    > [!NOTE]
+    > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
 3.  Click the **Properties** button underneath the drop down menu.
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
