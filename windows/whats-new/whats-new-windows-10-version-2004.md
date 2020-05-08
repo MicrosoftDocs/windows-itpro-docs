@@ -23,6 +23,22 @@ This article lists new and updated features and content that are of interest to 
 > [!NOTE]
 > The version number for this release (2004) is an even number so as not to confuse it with major releases of Windows that happened in the year 2003.
 
+## Cortana
+
+Cortana: Microsoft says Cortana is evolving into a "personal productivity assistant" that can help you use Microsoft 365 apps. Cortana will be undocked from the taskbar, so you can move or resize it like any other app. An improved email feature lets you use Cortana to create emails (for example, you can say, "Send an email to Mary letting her know I'm running late" or "Show me emails from Jeff"). An improved calendar lets you do the same to create and ask about meetings. And Windows lets you use the assistant to open apps and adjust settings like brightness. 
+
+## Virtual Desktops
+
+Virtual desktops: Rename your virtual desktops, instead of getting stuck with the system-issued names like Desktop 1. 
+
+## Bluetooth
+
+Bluetooth pairing: Pairing Bluetooth devices with your machine will occur through notifications, so you won't need to go to the Settings app to finish pairing. 
+
+## 2-in-1 PCs
+
+New tablet experience for two-in-one convertible PCs: When you detach your two-in-one's keyboard, you'll still keep the familiar look of your desktop without interruption, while still optimizing the screen for touch. 
+
 ## FIDO2 security key support in Azure Active Directory
 
 FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to hybrid environments, enabling even more customers to take an important step in their journey towards passwordless environments
@@ -113,9 +129,9 @@ VPN support for user-driven Hybrid Azure AD Join scenarios
 ### Windows Update for Business
 
 Windows Update for Business Enhancements  
-•	Intune console updates: target version is now available allowing you to specify which Windows 10 OS Version you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy (GP) and Configuration Service Provider (CSP) policy 
-•	Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. But we know this can interfere with validations, to better enable IT Administrators to validate on the latest release, we have created a new policy to enable admins to opt devices out of the built-in safeguard holds. 
-•	Documentation Updates: we have improved our Windows Update for Business documentation to better communicate how to utilize Windows Update for Business to manage Windows Updates to keep devices secure and end users productive.  
+- Intune console updates: target version is now available allowing you to specify which Windows 10 OS Version you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy (GP) and Configuration Service Provider (CSP) policy 
+- Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. But we know this can interfere with validations, to better enable IT Administrators to validate on the latest release, we have created a new policy to enable admins to opt devices out of the built-in safeguard holds. 
+- Documentation Updates: we have improved our Windows Update for Business documentation to better communicate how to utilize Windows Update for Business to manage Windows Updates to keep devices secure and end users productive.  
 
 
 ### Delivery Optimization
