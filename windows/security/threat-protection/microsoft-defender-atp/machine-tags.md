@@ -71,7 +71,7 @@ You can also delete tags from this view.
 >- Windows 8.1
 >- Windows 7 SP1
 
-> Please note that the maximum number of allowed characters is hard-coded to 32.
+> Please note that the maximum number of allowed characters is hard-coded to 30.
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
