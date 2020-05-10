@@ -71,6 +71,8 @@ You can also delete tags from this view.
 >- Windows 8.1
 >- Windows 7 SP1
 
+> Please note that the maximum number of allowed characters is hard-coded to 32.
+
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
 Use the following registry key entry to add a tag on a machine:
@@ -81,4 +83,5 @@ Use the following registry key entry to add a tag on a machine:
 
 >[!NOTE]
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
+
 
