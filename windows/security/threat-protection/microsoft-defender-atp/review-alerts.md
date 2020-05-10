@@ -28,7 +28,7 @@ ms.date: 5/1/2020
 
 The new alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
 
-Quickly triage, investigate and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
+Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
 
 ## Getting started with an alert
 
@@ -41,7 +41,7 @@ Clicking on an alert's name in Microsoft Defender ATP will land you on its alert
 
 ![An alert page when you first land on it](images/alert-landing-view.png)
 
-Note the detection status for your alert. Blocked, prevented or remediated means actions were already taken by Microsoft Defender ATP.
+Note the detection status for your alert. Blocked, prevented, or remediated means actions were already taken by Microsoft Defender ATP.
 Start by reviewing the *automated investigation details* in your alert's [details pane](#take-action-from-the-details-pane), to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
 ![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
@@ -52,10 +52,10 @@ Other information available in the details pane when the alert opens includes MI
 
 Clicking on a device or a user card in the affected assets sections will switch to the details of the device or user in the details pane.
 
-- **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation or go to the machine page to investigate from the device's point of view.
+- **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the machine page to investigate from the device's point of view.
 - **For users** the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can click *Open user page* to continue the investigation from that user's point of view.
 
-![A snippet of the details pane when a device is selected](images/alert-device-details.png)
+   ![A snippet of the details pane when a device is selected](images/alert-device-details.png)
 
 ## Investigate using the alert story
 
@@ -77,14 +77,15 @@ Once you've selected an entity of interest, the details pane will change to disp
 Once you're done investigating, go back to the alert you started with, mark the alert's status as **Resolved** and classify it as either **False alert** or **True alert**. Classifying alerts helps tune this capability to provide more true alerts and less false alerts.
 
 If you classify it as a true alert, you can also select a determination, as shown in the image below.
+
 ![A snippet of the details pane with a resolved alert and the determination drop-down expanded](images/alert-details-resolved-true.png)
 
-If you are experiencing a false alert with a line-of-business application, create a supression rule to avoid this type of alert in the future
+If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
 ![actions and classification in the details pane with the suppression rule highlighted](images/alert-false-suppression-rule.png)
 
->[!TIP]
->If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
+> [!TIP]
+> If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
 
 ## Transitioning to the new alert page
 
