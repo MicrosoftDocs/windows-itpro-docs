@@ -20,7 +20,7 @@ ms.topic: article
 **Applies to**
 - Windows 10 Ent, Edu
 
-Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10, version 1809 and above, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in version 1809, you need to install the [KB4551853](https://support.microsoft.com/en-us/help/4551853) update. 
+Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10, version 1809 and above, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
