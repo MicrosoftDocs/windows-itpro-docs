@@ -119,6 +119,7 @@ In addition to the .exe file, SDT installs a JSON file and an admin.dll file (mo
 *Figure 2. Files installed by SDT*
 
 <span id="create-custom-sdt" />
+
 ## Preparing the SDT package for distribution
 
 Creating a custom package allows you to target the tool to specific known issues.
