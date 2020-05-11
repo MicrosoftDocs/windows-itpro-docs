@@ -32,7 +32,7 @@ The following methodology was used to derive the network endpoints:
 3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5. The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
-6. All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here.
+6. All traffic was captured in our lab using an IPV4 network. Therefore, no IPV6 traffic is reported here.
 7. These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.
 8. These tests were conducted for one week, but if you capture traffic for longer you may have different results.
 
@@ -272,4 +272,3 @@ The following methodology was used to derive the network endpoints:
 | www.microsoft.com/pkiops/certs/* | HTTP | CRL and OCSP checks to the issuing certificate authorities
 | www.msftconnecttest.com | HTTP | Network Connection
 | www.office.com | HTTPS | Microsoft Office
-
