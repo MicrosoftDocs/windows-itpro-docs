@@ -63,7 +63,7 @@ You'll need to take the following steps if you choose to onboard servers through
     
 - In addition, for Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
     - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
-    - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518 (https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+    - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 - For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
