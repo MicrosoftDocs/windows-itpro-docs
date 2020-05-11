@@ -40,7 +40,6 @@
 ## [Set up HoloLens as a kiosk](hololens-kiosk.md)
 
 # Holographic applications
-## [Use 3D Viewer on HoloLens](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
@@ -67,6 +66,7 @@
 ## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # Resources
+## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
 
 # [HoloLens release notes](hololens-release-notes.md)
