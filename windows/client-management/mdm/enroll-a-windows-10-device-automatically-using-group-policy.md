@@ -54,7 +54,6 @@ The following steps demonstrate required settings using the Intune service:
 
 > [!IMPORTANT]
 > For BYOD devices, the MAM user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device will use Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
-
 > For corporate devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 
 3. Verify that the device OS version is Windows 10, version 1709 or later.
@@ -117,7 +116,7 @@ Requirements:
 5. Click **Enable**, then click **OK**.
 
 > [!NOTE]
-> In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have the Windows 10, version 1903 feature update installed. 
+> In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. 
 The default behavior for older releases is to revert to **User Credential**.
 
 When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
@@ -166,7 +165,7 @@ Requirements:
 - Ensure that PCs belong to same computer group.
 
 > [!IMPORTANT]
-> If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
+> If you do not see the policy, it may be because you don’t have the ADMX for Windows 10, version 1803, version 1809, or version 1903 installed. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576) or
