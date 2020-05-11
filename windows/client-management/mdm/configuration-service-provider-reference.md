@@ -2731,7 +2731,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [NetworkProxy CSP](networkproxy-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>7</sup>|
+| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>8</sup>|
 | [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
@@ -2807,4 +2807,5 @@ The following list shows the CSPs supported in HoloLens devices:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
-- 7 - Added in the next major release of Windows 10.
+- 7 - Added in Windows 10, version 1909.
+- 8 - Added in the next major release of Windows 10.

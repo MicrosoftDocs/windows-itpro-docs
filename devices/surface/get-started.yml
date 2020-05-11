@@ -24,18 +24,19 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Surface Go 2 for Business 
+            url: https://www.microsoft.com/surface/business/surface-go-2
+          - text: Surface Book 3 for Business
+            url: https://www.microsoft.com/surface/business/surface-book-3
           - text: Surface Pro 7 for Business
             url: https://www.microsoft.com/surface/business/surface-pro-7
           - text: Surface Pro X for Business
             url: https://www.microsoft.com/surface/business/surface-pro-x
           - text: Surface Laptop 3 for Business
             url: https://www.microsoft.com/surface/business/surface-laptop-3
-          - text: Surface Book 2 for Business
-            url: https://www.microsoft.com/surface/business/surface-book-2
           - text: Surface Studio 2 for Business
             url: https://www.microsoft.com/surface/business/surface-studio-2
-          - text: Surface Go
-            url: https://www.microsoft.com/surface/business/surface-go
+          
       - linkListType: video
         links:
           - text: Microsoft Mechanics Surface videos
@@ -46,10 +47,16 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Surface and Endpoint Configuration Manager considerations
-            url: considerations-for-surface-and-system-center-configuration-manager.md
-          - text: Wake On LAN for Surface devices
-            url: wake-on-lan-for-surface-devices.md
+         - text: Surface Book 3 GPU technical overview
+           url: surface-book-gpu-overview.md
+         - text: Surface Book 3 Quadro RTX 3000 technical overview
+           url: surface-book-quadro.md
+         - text: What’s new in Surface Dock 2
+           url: surface-dock-whats-new.md
+         - text: Surface and Endpoint Configuration Manager considerations
+           url: considerations-for-surface-and-system-center-configuration-manager.md
+         - text: Wake On LAN for Surface devices
+           url: wake-on-lan-for-surface-devices.md
 
   # Card
   - title: Deploy Surface devices
