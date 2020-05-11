@@ -80,7 +80,7 @@ If you do not have an existing configuration, you can create one following the s
 2. Navigate to the Microsoft Endpoint Manager admin center. Click **Devices > Profiles > Configuration profiles > Create profile**.
 3. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Identity protection** from the **Profile type** list.
 4. Click **Enable** on the "Configure Windows Hello for Business" option. 
-5. Click **Enable** on the "Enable PIN recovery" option
+5. Click **Enable** on the "Enable PIN recovery" option.
 6. Click **OK**
 7. Click **Create**
 8. Assign the policy to your user group.
