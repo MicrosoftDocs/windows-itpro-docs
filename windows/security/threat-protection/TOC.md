@@ -38,7 +38,6 @@
 #### [Attack surface reduction evaluation](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
-#### [Attack surface reduction rules in Windows 10 Enterprise E3](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-rules-in-windows-10-enterprise-e3)
 
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
