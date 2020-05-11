@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: mikeedgar
-ms.author: v-medgar
+ms.author: sanashar
 manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
@@ -118,9 +118,9 @@ The following methodology was used to derive the network endpoints:
 | wdcp.microsoft.\* | TLSv1.2, HTTPS | Used for Windows Defender when Cloud-based Protection is enabled
 | wd-prod-cp-us-west-1-fe.westus.cloudapp.azure.com | HTTPS | Windows Defender
 | wusofficehome.msocdn.com | HTTPS | Microsoft Office
-| www.bing.com* | HTTP | Used for updates for Cortana, apps, and Live Tiles
-| www.msftconnecttest.com | HTTP | Network Connection (NCSI)
-| www.office.com | HTTPS | Microsoft Office
+| `www.bing.com`* | HTTP | Used for updates for Cortana, apps, and Live Tiles
+| `www.msftconnecttest.com` | HTTP | Network Connection (NCSI)
+| `www.office.com` | HTTPS | Microsoft Office
 
 
 ## Windows 10 Pro
@@ -192,10 +192,10 @@ The following methodology was used to derive the network endpoints:
 | watson.telemetry.microsoft.com | HTTPS | Telemetry
 | wdcp.microsoft.com | HTTPS | Windows Defender
 | wusofficehome.msocdn.com | HTTPS | Microsoft Office
-| www.bing.com | HTTPS | Cortana and Search
-| www.microsoft.com | HTTP | Diagnostic
-| www.msftconnecttest.com | HTTP | Network connection
-| www.office.com | HTTPS | Microsoft Office
+| `www.bing.com` | HTTPS | Cortana and Search
+| `www.microsoft.com` | HTTP | Diagnostic
+| `www.msftconnecttest.com` | HTTP | Network connection
+| `www.office.com` | HTTPS | Microsoft Office
 
 
 
@@ -267,8 +267,8 @@ The following methodology was used to derive the network endpoints:
 | wdcp.microsoft.com | HTTPS | Windows Defender
 | wd-prod-cp-us-east-1-fe.eastus.cloudapp.azure.com | HTTPS | Azure
 | wusofficehome.msocdn.com | HTTPS | Microsoft Office
-| www.bing.com | HTTPS | Cortana and Search
-| www.microsoft.com | HTTP | Diagnostic Data
-| www.microsoft.com/pkiops/certs/* | HTTP | CRL and OCSP checks to the issuing certificate authorities
-| www.msftconnecttest.com | HTTP | Network Connection
-| www.office.com | HTTPS | Microsoft Office
+| `www.bing.com` | HTTPS | Cortana and Search
+| `www.microsoft.com` | HTTP | Diagnostic Data
+| `www.microsoft.com/pkiops/certs/`* | HTTP | CRL and OCSP checks to the issuing certificate authorities
+| `www.msftconnecttest.com` | HTTP | Network Connection
+| `www.office.com` | HTTPS | Microsoft Office
