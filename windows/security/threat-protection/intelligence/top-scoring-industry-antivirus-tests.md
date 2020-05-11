@@ -33,25 +33,19 @@ Windows Defender Antivirus is the [next generation protection](https://www.youtu
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- January - February 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**Latest**</sup>
+- January — February 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**Latest**</sup>
 
     Windows Defender Antivirus achieved an overall Protection score of 5.5/6.0, with 21,008 malware samples used.
 
-- November - December 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
+- November — December 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
-- September - October 2019 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
+- September — October 2019 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
 
 - July — August 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - May — June 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 - March — April 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2019/microsoft-windows-defender-antivirus-4.18-191517/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- January — February 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2019/microsoft-windows-defender-antivirus-4.18-190611/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
-
-- November — December 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2018/microsoft-windows-defender-antivirus-4.18-185074/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWusR9)
-
-- September — October 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2018/microsoft-windows-defender-antivirus-4.18-184174/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWqOqD)
 
 ### AV-Comparatives: Protection rating of 99.6% in the latest test
 
@@ -65,25 +59,21 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 - Business Security Test 2019 (March — June): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-- Business Security Test 2018 (August — November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2018-august-november/)
-
-- Business Security Test 2018 (March — June): [Real-World Protection Rate 98.7%](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/)
-
 ### SE Labs: AAA award in the latest test
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-- Enterprise Endpoint Protection October — December 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup> 
+- Enterprise Endpoint Protection January — March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>
 
-    Microsoft's next-gen protection was named one of the leading products, stopping all targeted attacks and all but two public threats.
+    Microsoft's next-gen protection was named one of the leading products, stopping all targeted attacks and all but one public threat.
+
+- Enterprise Endpoint Protection October — December 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
 
 - Enterprise Endpoint Protection July — September 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - Enterprise Endpoint Protection April — June 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/apr-jun-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 - Enterprise Endpoint Protection January — March 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- Enterprise Endpoint Protection October — December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
 
 ## Endpoint detection & response
 
@@ -97,7 +87,11 @@ Microsoft Defender ATP [endpoint detection and response](https://docs.microsoft.
 
 MITRE tested the ability of products to detect techniques commonly used by the targeted attack group APT3 (also known as Boron or UPS). To isolate detection capabilities, all protection and prevention features were turned off. Microsoft is happy to be one of the first EDR vendors to sign up for the MITRE evaluation based on the ATT&CK framework. The framework is widely regarded today as the most comprehensive catalog of attacker techniques and tactics.
 
-- ATT&CK-based evaluation: [Leading optics and detection capabilities](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
+- ATT&CK-based evaluation of Microsoft Threat Protection — May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+
+    Microsoft Threat Protection provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities, dramatically reducing manual work for the security operations center vs. vendor solutions that relied on specific configuration changes. It also the fewest gaps in visibility, diminishing attacker ability to operate undetected.
+
+- ATT&CK-based evaluation of Microsoft Defender ATP — December 2018: [Leading optics and detection capabilities](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
     Microsoft Defender ATP delivered comprehensive coverage of attacker techniques across the entire attack chain. Highlights included the breadth of telemetry, the strength of threat intelligence, and the advanced, automatic detection through machine learning, heuristics, and behavior monitoring.
 
