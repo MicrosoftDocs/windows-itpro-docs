@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
@@ -34,6 +34,8 @@ In general, to onboard devices to the service:
 - Depending on the device, follow the configuration steps provided in the onboarding section of the Microsoft Defender ATP portal
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
 
 ## In this section
 Topic | Description

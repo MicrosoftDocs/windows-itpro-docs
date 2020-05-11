@@ -1,6 +1,6 @@
 ---
 title: How Windows Hello for Business works
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,15 +18,22 @@ ms.reviewer:
 # How Windows Hello for Business works
 
 **Applies to**
+
 -   Windows 10
 
-Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords.  Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you.  For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices.  Windows Hello for Business also works for domain joined devices. 
+Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords.  Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you.  For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices.  Windows Hello for Business also works for domain joined devices.
 
 Watch this quick video where Pieter Wigleven gives a simple explanation of how Windows Hello for Business works and some of its supporting features.
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
 
 ## Technical Deep Dive
+
 Windows Hello for Business is a distributed system that uses several components to accomplish device registration, provisioning, and authentication. Use this section to gain a better understanding of each of the components and how they support Windows Hello for Business.
+
+Watch Matthew Palko and Ravi Vennapusa explain how Windows Hello for Business provisioning and authentication work.
+
+> [!VIDEO https://www.youtube.com/embed/RImGsIjSJ1s]
+> [!VIDEO https://www.youtube.com/embed/WPmzoP_vMek]
 
 - [Technology and Terminology](hello-how-it-works-technology.md)
 - [Device Registration](hello-how-it-works-device-registration.md)

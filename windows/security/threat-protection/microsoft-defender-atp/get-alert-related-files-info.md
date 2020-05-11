@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get alert related files information API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
+## API description
 Retrieves all files related to a specific alert.
+
+
+## Limitations
+1. You can query on alerts last updated in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -61,7 +69,7 @@ If successful and alert and files exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/files
@@ -79,23 +87,25 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files",
     "value": [
         {
-            "sha1": "654f19c41d9662cf86be21bf0af5a88c38c56a9d",
-            "sha256": "2f905feec2798cee6f63da2c26758d86bfeaab954c01e20ac7085bf55fedde87",
-            "md5": "82849dc81d94056224445ea73dc6153a",
-            "globalPrevalence": 33,
-            "globalFirstObserved": "2018-07-17T18:17:27.5909748Z",
-            "globalLastObserved": "2018-08-06T16:07:12.9414137Z",
-            "windowsDefenderAVThreatName": null,
-            "size": 801112,
-            "fileType": "PortableExecutable",
+            "sha1": "f2a00fd2f2de1be0214b8529f1e9f67096c1aa70",
+            "sha256": "dcd71ef5fff4362a9f64cf3f96f14f2b11d6f428f3badbedcb9ff3361e7079aa",
+            "md5": "8d5b7cc9a832e21d22503057e1fec8e9",
+            "globalPrevalence": 29,
+            "globalFirstObserved": "2019-03-23T23:54:06.0135204Z",
+            "globalLastObserved": "2019-04-23T00:43:20.0489831Z",
+            "size": 113984,
+            "fileType": null,
             "isPeFile": true,
-            "filePublisher": null,
-            "fileProductName": null,
-            "signer": "Microsoft Windows",
-            "issuer": "Microsoft Development PCA 2014",
-            "signerHash": "9e284231a4d1c53fc8d4492b09f65116bf97447f",
-            "isValidCertificate": true
+            "filePublisher": "Microsoft Corporation",
+            "fileProductName": "Microsoft® Windows® Operating System",
+            "signer": "Microsoft Corporation",
+            "issuer": "Microsoft Code Signing PCA",
+            "signerHash": "9dc17888b5cfad98b3cb35c1994e96227f061675",
+            "isValidCertificate": true,
+            "determinationType": "Unknown",
+            "determinationValue": null
         }
+		...
     ]
 }
 ```

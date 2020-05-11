@@ -1,6 +1,6 @@
 ---
 title: Conditional Access
-description: Conditional Access
+description: Learn more about conditional access in Azure Active Directory.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,5 +1,5 @@
 ---
-title: Gathering Information about Your Current Network Infrastructure (Windows 10)
+title: Gathering Info about Your Network Infrastructure (Windows 10)
 description: Gathering Information about Your Current Network Infrastructure
 ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Help prevent ransomware and threats from encrypting and changing files
+title: Prevent ransomware and threats from encrypting and changing files
 description: Files in default folders can be protected from being changed by malicious apps. This can help prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 search.product: eADQiWindows 10XVcnh
@@ -10,27 +10,28 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: denisebmsft
+ms.author: deniseb
 audience: ITPro
 ms.date: 08/05/2019
 ms.reviewer: v-maave
 manager: dansimp
+ms.custom: asr
 ---
 
 # Protect important folders with controlled folder access
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. It protects your data by checking against a list of known, trusted apps. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients. It can be turned on via the Windows Security App, or from the System Center Configuration Manager (SCCM) and Intune, for managed devices. Controlled folder access works best with [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. It protects your data by checking against a list of known, trusted apps. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients. It can be turned on via the Windows Security App, or from the Microsoft Endpoint Configuration Manager and Intune, for managed devices. Controlled folder access works best with [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
 Controlled folder access works by only allowing apps to access protected folders if the app is included on a list of trusted software. If an app isn't on the list, Controlled folder access will block it from making changes to files inside protected folders.
 
 Apps are added to the trusted list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization, and that have never displayed any malicious behavior, are deemed trustworthy and automatically added to the list.
 
-Apps can also be manually added to the trusted list via SCCM and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
+Apps can also be manually added to the trusted list via Configuration Manager and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
 
 Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) that can attempt to encrypt your files and hold them hostage.
 
@@ -50,12 +51,12 @@ Controlled folder access requires enabling [Windows Defender Antivirus real-time
 
 Microsoft Defender ATP provides detailed reporting into events and blocks as part of its [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
-You can query Microsoft Defender ATP data by using [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to see how controlled folder access settings would affect your environment if they were enabled.
+You can query Microsoft Defender ATP data by using [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to see how controlled folder access settings would affect your environment if they were enabled.
 
 Here is an example query
 
 ```PowerShell
-MiscEvents
+DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
@@ -65,15 +66,15 @@ You can review the Windows event log to see events that are created when control
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the machine.
 
-1. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
+2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
 
-1. On the left panel, under **Actions**, click **Import custom view...**.
+3. On the left panel, under **Actions**, click **Import custom view...**.
 
-1. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
+4. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
 
-1. Click **OK**.
+5. Click **OK**.
 
-1. This will create a custom view that filters to only show the following events related to controlled folder access:
+This will create a custom view that filters to only show the following events related to controlled folder access:
 
 Event ID | Description
 -|-

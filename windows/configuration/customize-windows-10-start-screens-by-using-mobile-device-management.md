@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start and taskbar with mobile device management (MDM) (Windows 10)
+title: Alter Windows 10 Start and taskbar via mobile device management
 description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and tasbkar layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
 ms.reviewer: 

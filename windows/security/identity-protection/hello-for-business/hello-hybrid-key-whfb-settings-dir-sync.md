@@ -1,6 +1,6 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
-description: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
+title: Hybrid Windows Hello for Business - Directory Synchronization
+description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect, Windows Hello, AD Connect, key trust, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -47,9 +47,9 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure group membership for Azure AD Connect
 
->[!div class="step-by-step"]
-[< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
-[Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)  
+> [!div class="step-by-step"]
+> [< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)  
 
 <hr>
 

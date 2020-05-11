@@ -9,6 +9,8 @@ manager: dansimp
 ms.author: dansimp
 ---
 
+# Full-sized flowchart detailing how document modes are chosen in IE11
+
 Return to: [Deprecated document modes and Internet Explorer 11](deprecated-document-modes.md)<br>
 
 <p style="overflow: auto;">

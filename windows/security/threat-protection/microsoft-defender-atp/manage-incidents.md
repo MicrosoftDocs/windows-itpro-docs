@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 010/08/2018
+ms.date: 10/08/2018
 ---
 
 # Manage Microsoft Defender ATP incidents

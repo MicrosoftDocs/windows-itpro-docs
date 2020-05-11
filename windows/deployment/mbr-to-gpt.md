@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 02/13/2018
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -73,7 +75,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
-|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
+|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
 |/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it cannot be reused. In this case, a new ESP is created by shrinking the OS partition.|
 
 ## Examples
@@ -231,7 +233,7 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 1. Disk validation is performed.
 2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
 3. UEFI boot files are installed to the ESP.
-4. GPT metatdata and layout information is applied.
+4. GPT metadata and layout information is applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
@@ -409,7 +411,7 @@ When you start a Windows 10, version 1903-based computer in the Windows Preinsta
 
 **Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there is no output from the tool.
 
-**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a System Center Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
 
 #### Cause
 
@@ -424,6 +426,9 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
 
    For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
+   
+   > [!NOTE]
+   > You can access the ReAgent files if you have installed the User State Migration Tool (USMT) as a feature while installing Windows Assessment and Deployment Kit.
    
    **Command 1:**
    ```cmd

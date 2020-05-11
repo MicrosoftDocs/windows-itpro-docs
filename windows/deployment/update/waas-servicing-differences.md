@@ -6,12 +6,11 @@ description: Learn the differences between servicing Windows 10 and servicing ol
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -40,7 +39,7 @@ Windows 10 provided an opportunity to end the era of infinite fragmentation. Wit
 
 This helps simplify servicing. Devices with the original Release to Market (RTM) version of a feature release installed could get up to date by installing the most recent LCU. 
 
-Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security and Internet Explorer 11 (IE11) fixes. The security classification, by definition, requires a reboot of the device to complete installation of the update.
+Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security, and Internet Explorer 11 (IE11) fixes. A reboot of the device might be required to complete installation of the update.
 
 
 ![High level cumulative update model](images/servicing-cadence.png)
@@ -88,7 +87,7 @@ Moving to the cumulative model for legacy OS versions continues to improve predi
 Lastly, the cumulative update model directly impacts the public Preview releases offered in the 3rd and/or 4th weeks of the month. Update Tuesday, also referred to as the "B" week release occurs on the second Tuesday of the month. It is always a required security update across all operating systems. In addition to this monthly release, Windows also releases non-security update "previews" targeting the 3rd (C) and the 4th (D) weeks of the month. These preview releases include that month’s B-release plus a set of non-security updates for testing and validation as a cumulative package. We recommend IT Administrators uses the C/D previews to test the update in their environments. Any issues identified with the updates in the C/D releases are identified and then fixed or removed, prior to being rolled up in to the next month’s B release package together with new security updates. Security-only Packages are not part of the C/D preview program.
 
 > [!NOTE]
-> Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS). For customers using the WSUS channel, and products such as System Center Configuration Manager that rely on it, will not see preview updates for older versions of Windows 10.
+> Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS). For customers using the WSUS channel, and products such as Microsoft Endpoint Configuration Manager that rely on it, will not see preview updates for older versions of Windows 10.
 
 > [!NOTE]
 > Preview updates for Windows 10 are not named differently than their LCU counterparts and do not contain the word 'Preview'. They can be identified by their release date (C or D week) and their classification as non-security updates.

@@ -16,13 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get alert related IP information API
+# Get alert related IPs information API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
+## API description
 Retrieves all IPs related to a specific alert.
+
+
+## Limitations
+1. You can query on alerts last updated in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -62,7 +70,7 @@ If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/ips
@@ -85,6 +93,7 @@ Content-type: application/json
 				{
 					"id": "23.203.232.228	
 				}
+				...
 	]
 }
  

@@ -1,6 +1,6 @@
 ---
 title: EnrollmentStatusTracking CSP
-description: EnrollmentStatusTracking CSP
+description: Learn how to perform a hybrid certificate trust deployment of Windows Hello for Business, for systems with no previous installations.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -10,7 +10,6 @@ ms.date: 05/21/2019
 ---
 
 # EnrollmentStatusTracking CSP
-
 
 During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user. For more information on ESP, see [Windows Autopilot Enrollment Status page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status).
 

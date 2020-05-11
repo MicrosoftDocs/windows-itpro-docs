@@ -1,6 +1,6 @@
 ---
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
-description: The Azure portal for Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, supporting mobile device management (MDM), to let you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
+description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network. 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -30,7 +30,7 @@ You can create an app protection policy in Intune either with device enrollment 
 
 - MAM has additional **Access** settings for Windows Hello for Business.
 - MAM can [selectively wipe company data](https://docs.microsoft.com/intune/apps-selective-wipe) from a user's personal device.
-- MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+- MAM requires an [Azure Active Directory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
 - An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM.
 - MAM supports only one user per device.  
 - MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md).
@@ -40,7 +40,7 @@ You can create an app protection policy in Intune either with device enrollment 
 
 ## Prerequisites
 
-Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Direcory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery relies on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
+Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Directory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery relies on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
 
 ## Configure the MDM or MAM provider
 
@@ -160,7 +160,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
     <tr>
         <td>All fields marked as “*”</td>
-        <td>All files signed by any publisher. (Not recommended)</td>
+        <td>All files signed by any publisher. (Not recommended and may not work)</td>
     </tr>
     <tr>
         <td>Publisher only</td>
@@ -298,6 +298,8 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
 ## Create an Executable rule for unsigned apps
+
+The executable rule helps to create an AppLocker rule to sign any unsigned apps. It enables adding the file path or the app publisher contained in the file's digital signature needed for the WIP policy to be applied. 
 
 1. Open the Local Security Policy snap-in (SecPol.msc).
     

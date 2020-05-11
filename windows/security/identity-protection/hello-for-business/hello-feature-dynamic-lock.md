@@ -1,6 +1,6 @@
 ---
-title: Conditional Access
-description: Conditional Access
+title: Dynamic lock
+description: Learn how to set Dynamic lock on Windows 10 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,7 +23,9 @@ ms.reviewer:
 
 * Windows 10, version 1703
 
-Dynamic lock enables you to configure Windows 10 devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value.  You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
+Dynamic lock enables you to configure Windows 10 devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
+
+You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
 
 The Group Policy Editor, when the policy is enabled, creates a default signal rule policy with the following value:
 

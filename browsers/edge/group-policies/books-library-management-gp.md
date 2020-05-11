@@ -18,6 +18,9 @@ ms.sitesec: library
 
 # Books Library 
 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+
 Microsoft Edge decreases the amount of storage used by book files by downloading them to a shared folder in Windows. You can configure Microsoft Edge to update the configuration data for the library automatically or gather diagnostic data, such as usage data. 
 
 

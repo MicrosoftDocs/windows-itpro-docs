@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -32,9 +33,9 @@ When the user returns to work and logs on to their PC, Windows Defender Antiviru
 
 If Windows Defender Antivirus did not download protection updates for a specified period, you can set it up to automatically check and download the latest update at the next log on. This is useful if you have [globally disabled automatic update downloads on startup](manage-event-based-updates-windows-defender-antivirus.md).
 
-**Use Configuration Manager to configure catch-up protection updates:**
+### Use Configuration Manager to configure catch-up protection updates
 
-1.  On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1.  On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
 2.  Go to the **Security intelligence updates** section and configure the following settings:
 
@@ -45,7 +46,7 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-**Use Group Policy to enable and configure the catch-up update feature:**
+### Use Group Policy to enable and configure the catch-up update feature
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -59,7 +60,7 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 6. Click **OK**.
 
-**Use PowerShell cmdlets to configure catch-up protection updates:**
+### Use PowerShell cmdlets to configure catch-up protection updates
 
 Use the following cmdlets:
 
@@ -69,7 +70,7 @@ Set-MpPreference -SignatureUpdateCatchupInterval
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to configure catch-up protection updates:**
+### Use Windows Management Instruction (WMI) to configure catch-up protection updates
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -81,13 +82,11 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
-
-
 ## Set the number of days before protection is reported as out-of-date
 
 You can also specify the number of days after which Windows Defender Antivirus protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender Antivirus to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)), such as when using MMPC as a secondary source after setting WSUS or Microsoft Update as the first source.
 
-**Use Group Policy to specify the number of days before protection is considered out-of-date:**
+### Use Group Policy to specify the number of days before protection is considered out-of-date
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -106,8 +105,6 @@ You can also specify the number of days after which Windows Defender Antivirus p
     4. Click **OK**.
 
 
-
-
 ## Set up catch-up scans for endpoints that have not been scanned for a while
 
 You can set the number of consecutive scheduled scans that can be missed before Windows Defender Antivirus will force a scan.
@@ -120,7 +117,7 @@ The process for enabling this feature is:
 
 This feature can be enabled for both full and quick scans.
 
-**Use Group Policy to enable and configure the catch-up scan feature:**
+### Use Group Policy to enable and configure the catch-up scan feature
 
 1.  Ensure you have set up at least one scheduled scan.
 
@@ -140,7 +137,7 @@ This feature can be enabled for both full and quick scans.
 > [!NOTE]
 > The Group Policy setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
 
-**Use PowerShell cmdlets to configure catch-up scans:**
+### Use PowerShell cmdlets to configure catch-up scans
 
 Use the following cmdlets:
 
@@ -152,7 +149,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to configure catch-up scans:**
+### Use Windows Management Instruction (WMI) to configure catch-up scans
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -165,9 +162,9 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
-**Use Configuration Manager to configure catch-up scans:**
+### Use Configuration Manager to configure catch-up scans
 
-1.  On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1.  On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
 2.  Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**. 
 
@@ -175,8 +172,7 @@ See the following for more information and allowed parameters:
 
 4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-
-## Related topics
+## Related articles
 
 - [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)

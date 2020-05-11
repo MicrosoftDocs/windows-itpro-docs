@@ -1,6 +1,6 @@
 ---
 title: Get alert information by ID API
-description: Retrieves an alert by its ID.
+description: Retrieve a Microsoft Defender ATP alert by its ID.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get alert information by ID API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Retrieves an alert by its ID.
+
+## API description
+Retrieves specific [Alert](alerts.md) by its ID.
+
+
+## Limitations
+1. You can get alerts last updated in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -56,46 +64,3 @@ Empty
 
 ## Response
 If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified id was not found - 404 Not Found.
-
-
-## Example
-
-**Request**
-
-Here is an example of the request.
-
-[!include[Improve request performance](improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/api/alerts/441688558380765161_2136280442
-```
-
-**Response**
-
-Here is an example of the response.
-
-
-```
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
-    "id": "441688558380765161_2136280442",
-	"incidentId": 8633,
-	"assignedTo": "secop@contoso.com",
-	"severity": "Low",
-	"status": "InProgress",
-	"classification": "TruePositive",
-	"determination": "Malware",
-	"investigationState": "Running",
-	"category": "MalwareDownload",
-	"detectionSource": "WindowsDefenderAv",
-	"threatFamilyName": "Mikatz",
-	"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-	"description": "Some description",
-	"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
-	"firstEventTime": "2018-11-25T16:17:50.0948658Z",
-	"lastEventTime": "2018-11-25T16:18:01.809871Z",
-	"resolvedTime": null,
-	"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
-}
-
-```

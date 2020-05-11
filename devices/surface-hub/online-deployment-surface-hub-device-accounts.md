@@ -3,7 +3,7 @@ title: Online deployment with Office 365 (Surface Hub)
 description: This topic has instructions for adding a device account for your Microsoft Surface Hub when you have a pure, online deployment.
 ms.assetid: D325CA68-A03F-43DF-8520-EACF7C3EDEC1
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: device account for Surface Hub, online deployment
 ms.prod: surface-hub
 ms.sitesec: library
@@ -90,7 +90,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
    Set-AzureADUser -ObjectId "HUB01@contoso.com" -PasswordPolicies "DisablePasswordExpiration"
    ```
 
-7. Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#sfb-online).
+7. Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#skype-for-business-online).
    
    Next, you can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
 
@@ -124,13 +124,13 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
    - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, <em>alice@contoso.com</em>):
 
        ```PowerShell
-       (Get-CsTenant).TenantPoolExtension
+       Get-CsOnlineUser -Identity 'alice@contoso.com' | fl registrarpool
        ```
        OR by setting a variable
         
        ```PowerShell
-       $strRegistrarPool = (Get-CsTenant).TenantPoolExtension
-       $strRegistrarPool = $strRegistrarPool[0].Substring($strRegistrarPool[0].IndexOf(':') + 1)
+	$strRegistrarPool = Get-CsOnlineUser -Identity 'alice@contoso.com' | fl registrarpool | out-string
+	$strRegistrarPool = $strRegistrarPool.Substring($strRegistrarPool.IndexOf(':') + 2)
        ```
         
    - Enable the Surface Hub account with the following cmdlet:

@@ -80,4 +80,3 @@ To easily direct other people (such as co-workers, Microsoft staff, [forum](http
 1. Enter your feedback.
 1. If you are reporting a reproducible issue, you can select **Reproduce**. Without closing Feedback Hub, reproduce the issue. After you finish, come back to Feedback Hub and select **I’m done**. The app adds a mixed reality capture of your repro and relevant diagnostic logs to your feedback.
 1. Select **Post feedback**, and you’re done.
-

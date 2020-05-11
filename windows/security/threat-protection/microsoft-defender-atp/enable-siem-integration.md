@@ -47,7 +47,7 @@ Enable security information and event management (SIEM) integration so you can p
 
     > [!WARNING]
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
-     For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
+     
 
     ![Image of SIEM integration from Settings menu](images/siem_details.png)
 
@@ -66,6 +66,8 @@ Enable security information and event management (SIEM) integration so you can p
   
    > [!NOTE]
    > You'll need to generate a new Refresh token every 90 days. 
+
+6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
 
 You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft Defender Security Center.
 

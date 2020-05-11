@@ -1,13 +1,14 @@
 ---
 title: Deploying MBAM 2.5 in a stand-alone configuration
 description: Introducing how to deploy MBAM 2.5 in a stand-alone configuration.
-author: delhan
+author: Deland-Han
 ms.reviewer: dcscontentpm
 manager: dansimp
 ms.author: delhan
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/16/2019
+manager: dcscontentpm
 --- 
 
 # Deploying MBAM 2.5 in a standalone configuration
@@ -110,7 +111,7 @@ Choose a server that meets the hardware configuration as explained in the [MBAM 
     .NET Framework Environment<br />
     Configuration APIs
 
-For the self-service portal to work, you should also [download and install ASP.NET MVC 4.0](http://go.microsoft.com/fwlink/?linkid=392271).
+For the self-service portal to work, you should also [download and install ASP.NET MVC 4.0](https://go.microsoft.com/fwlink/?linkid=392271).
 
 The next step is to create the required MBAM users and groups in Active Directory.
 

@@ -112,7 +112,7 @@ The following table provides some examples of settings that you can configure us
 |          Start menu customization          |                                           Start menu layout, application pinning                                            |
 |                   Other                    |                     Home and lock screen wallpaper, computer name, domain join, DNS settings, and so on                     |
 
-\* Using a provisioning package for auto-enrollment to System Center Configuration Manager or Configuration Manager/Intune hybrid is not supported. Use the Configuration Manager console to enroll devices.
+\* Using a provisioning package for auto-enrollment to Microsoft Endpoint Configuration Manager is not supported. Use the Configuration Manager console to enroll devices.
 
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
@@ -136,7 +136,7 @@ Windows ICD in Windows 10, version 1607, supported the following scenarios for I
 
 * **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
 
-    * System Center Configuration Manager and Microsoft Intune hybrid (certificate-based enrollment) 
+    * Microsoft Intune (certificate-based enrollment) 
     * AirWatch (password-string based enrollment) 
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 

@@ -77,7 +77,6 @@ Not currently available.
 
 ## Integrations
 Integrations with the following Microsoft products are not currently available:
-- Azure Security Center
 - Azure Advanced Threat Protection
 - Azure Information Protection
 - Office 365 Advanced Threat Protection
@@ -93,8 +92,8 @@ You'll need to ensure that traffic from the following are allowed:
 
 Service location | DNS record
 :---|:---
-Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```
-Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net```
+Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 machines running version 1803 or earlier.
+Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
 
 
 

@@ -573,6 +573,11 @@ Here are the minimum steps for WEF to operate:
     <Select Path="Microsoft-Windows-Windows Defender/Operational">*[System[( (EventID &gt;= 1006 and EventID &lt;= 1009) )]]</Select>
     <Select Path="Microsoft-Windows-Windows Defender/Operational">*[System[( (EventID &gt;= 1116 and EventID &lt;= 1119) )]]</Select>
   </Query>
+  <Query Id="42" Path="Security">
+    <!-- An account Failed to Log on events -->
+    <Select Path="Security">*[System[(EventID=4625)]] and (*[EventData[Data[@Name="LogonType"]!="2"]]) </Select>
+  </Query>
+
 </QueryList>
 ```
 
@@ -654,5 +659,6 @@ You can get more info with the following links:
 -   [Event Queries and Event XML](https://msdn.microsoft.com/library/bb399427.aspx)
 -   [Event Query Schema](https://msdn.microsoft.com/library/aa385760.aspx)
 -   [Windows Event Collector](https://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
+-   [4625(F): An account failed to log on](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4625)
 
 

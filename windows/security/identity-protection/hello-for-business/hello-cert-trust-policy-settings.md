@@ -1,6 +1,6 @@
 ---
-title: Configure Windows Hello for Business Policy settings (Windows Hello for Business)
-description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
+title: Configure Windows Hello for Business Policy settings - certificate trust
+description: Configure Windows Hello for Business Policy settings for Windows Hello for Business. Certificate-based deployments need three group policy settings.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,6 +1,6 @@
 ---
-title: Use Windows Configuration Designer to configure Windows 10 Mobile devices (Windows 10)
-description: 
+title: Configure Windows 10 Mobile devices with Configuration Designer
+description: Use Windows Configuration Designer to configure Windows 10 Mobile devices
 keywords: phone, handheld, lockdown, customize
 ms.prod: w10
 ms.mktglfcycl: manage

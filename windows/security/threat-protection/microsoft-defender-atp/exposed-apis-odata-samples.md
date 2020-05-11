@@ -1,7 +1,7 @@
 ---
 title: OData queries with Microsoft Defender ATP
 ms.reviewer: 
-description: OData queries with Microsoft Defender ATP
+description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -35,7 +35,7 @@ Not all properties are filterable.
 
 ### Example 1
 
-- Get all the machines with the tag 'ExampleTag'
+Get all the machines with the tag 'ExampleTag'
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
@@ -51,35 +51,35 @@ Content-type: application/json
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-            "computerDnsName": "mymachine1.contoso.com",
-            "firstSeen": "2018-08-02T14:55:03.7791856Z",
-            "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "172.17.230.209",
-            "lastExternalIpAddress": "167.220.196.71",
-            "agentVersion": "10.5830.18209.1001",
-            "osBuild": 18209,
-            "healthStatus": "Active",
-            "rbacGroupId": 140,
-            "rbacGroupName": "The-A-Team",
-            "riskScore": "High",
-            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+			"osPlatform": "Windows10",
+			"version": "1709",
+			"osProcessor": "x64",
+			"lastIpAddress": "172.17.230.209",
+			"lastExternalIpAddress": "167.220.196.71",
+			"osBuild": 18209,
+			"healthStatus": "Active",
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+			"riskScore": "Low",
+			"exposureLevel": "Medium",
+			"isAadJoined": true,
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 2
 
-- Get all the alerts that created after 2018-10-20 00:00:00
+Get all the alerts that created after 2018-10-20 00:00:00
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=alertCreationTime gt 2018-11-22T00:00:00Z
+HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=alertCreationTime+gt+2018-11-22T00:00:00Z
 ```
 
 **Response:**
@@ -91,38 +91,45 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "value": [
         {
-            "id": "121688558380765161_2136280442",
-            "incidentId": 7696,
-            "assignedTo": "secop@contoso.com",
-            "severity": "High",
-            "status": "New",
-            "classification": "TruePositive",
-            "determination": "Malware",
-            "investigationState": "Running",
-            "category": "MalwareDownload",
-            "detectionSource": "WindowsDefenderAv",
-            "threatFamilyName": "Mikatz",
-            "title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-            "description": "Some description",
-            "alertCreationTime": "2018-11-26T16:19:21.8409809Z",
-            "firstEventTime": "2018-11-26T16:17:50.0948658Z",
-            "lastEventTime": "2018-11-26T16:18:01.809871Z",
-            "resolvedTime": null,
-            "machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
+            "id": "da637084217856368682_-292920499",
+			"incidentId": 66860,
+			"investigationId": 4416234,
+			"investigationState": "Running",
+			"assignedTo": "secop@contoso.com",
+			"severity": "Low",
+			"status": "New",
+			"classification": "TruePositive",
+			"determination": null,
+			"detectionSource": "WindowsDefenderAtp",
+			"category": "CommandAndControl",
+			"threatFamilyName": null,
+			"title": "Network connection to a risky host",
+			"description": "A network connection was made to a risky host which has exhibited malicious activity.",
+			"alertCreationTime": "2019-11-03T23:49:45.3823185Z",
+			"firstEventTime": "2019-11-03T23:47:16.2288822Z",
+			"lastEventTime": "2019-11-03T23:47:51.2966758Z",
+			"lastUpdateTime": "2019-11-03T23:55:52.6Z",
+			"resolvedTime": null,
+			"machineId": "986e5df8b73dacd43c8917d17e523e76b13c75cd",
+			"comments": [
+				{
+					"comment": "test comment for docs",
+					"createdBy": "secop@contoso.com",
+					"createdTime": "2019-11-05T14:08:37.8404534Z"
+				}
+		  ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 3
 
-- Get all the machines with 'High' 'RiskScore'
+Get all the machines with 'High' 'RiskScore'
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore eq 'High'
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
 **Response:**
@@ -135,35 +142,35 @@ Content-type: application/json
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-            "computerDnsName": "mymachine1.contoso.com",
-            "firstSeen": "2018-08-02T14:55:03.7791856Z",
-            "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "172.17.230.209",
-            "lastExternalIpAddress": "167.220.196.71",
-            "agentVersion": "10.5830.18209.1001",
-            "osBuild": 18209,
-            "healthStatus": "Active",
-            "rbacGroupId": 140,
-            "rbacGroupName": "The-A-Team",
-            "riskScore": "High",
-            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+			"osPlatform": "Windows10",
+			"version": "1709",
+			"osProcessor": "x64",
+			"lastIpAddress": "172.17.230.209",
+			"lastExternalIpAddress": "167.220.196.71",
+			"osBuild": 18209,
+			"healthStatus": "Active",
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+			"riskScore": "High",
+			"exposureLevel": "Medium",
+			"isAadJoined": true,
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 4
 
-- Get top 100 machines with 'HealthStatus' not equals to 'Active'
+Get top 100 machines with 'HealthStatus' not equals to 'Active'
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus ne 'Active'&$top=100
+HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
 **Response:**
@@ -176,32 +183,32 @@ Content-type: application/json
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-            "computerDnsName": "mymachine1.contoso.com",
-            "firstSeen": "2018-08-02T14:55:03.7791856Z",
-            "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "172.17.230.209",
-            "lastExternalIpAddress": "167.220.196.71",
-            "agentVersion": "10.5830.18209.1001",
-            "osBuild": 18209,
-            "healthStatus": "Active",
-            "rbacGroupId": 140,
-            "rbacGroupName": "The-A-Team",
-            "riskScore": "High",
-            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+			"osPlatform": "Windows10",
+			"version": "1709",
+			"osProcessor": "x64",
+			"lastIpAddress": "172.17.230.209",
+			"lastExternalIpAddress": "167.220.196.71",
+			"osBuild": 18209,
+			"healthStatus": "ImpairedCommunication",
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+			"riskScore": "Low",
+			"exposureLevel": "Medium",
+			"isAadJoined": true,
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 5
 
-- Get all the machines that last seen after 2018-10-20
+Get all the machines that last seen after 2018-10-20
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
@@ -217,35 +224,35 @@ Content-type: application/json
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-            "computerDnsName": "mymachine1.contoso.com",
-            "firstSeen": "2018-08-02T14:55:03.7791856Z",
-            "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "172.17.230.209",
-            "lastExternalIpAddress": "167.220.196.71",
-            "agentVersion": "10.5830.18209.1001",
-            "osBuild": 18209,
-            "healthStatus": "Active",
-            "rbacGroupId": 140,
-            "rbacGroupName": "The-A-Team",
-            "riskScore": "High",
-            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-            "machineTags": [ "test tag 1", "test tag 2", "ExampleTag" ]
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"lastSeen": "2018-08-02T14:55:03.7791856Z",
+			"osPlatform": "Windows10",
+			"version": "1709",
+			"osProcessor": "x64",
+			"lastIpAddress": "172.17.230.209",
+			"lastExternalIpAddress": "167.220.196.71",
+			"osBuild": 18209,
+			"healthStatus": "ImpairedCommunication",
+			"rbacGroupId": 140,
+			"rbacGroupName": "The-A-Team",
+			"riskScore": "Low",
+			"exposureLevel": "Medium",
+			"isAadJoined": true,
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 6
 
-- Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
+Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@WcdTestPrd.onmicrosoft.com' and type eq 'RunAntiVirusScan'
+HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
 **Response:**
@@ -257,26 +264,26 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
     "value": [
         {
-            "id": "5c3e3322-d993-1234-1111-dfb136ebc8c5",
+            "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
             "type": "RunAntiVirusScan",
-            "requestor": "Analyst@examples.onmicrosoft.com",
-            "requestorComment": "1533",
+			"scope": "Full",
+            "requestor": "Analyst@contoso.com",
+            "requestorComment": "Check machine for viruses due to alert 3212",
             "status": "Succeeded",
-            "machineId": "123321c10e44a82877af76b1d0161a17843f688a",
-            "creationDateTimeUtc": "2018-11-12T13:33:24.5755657Z",
-            "lastUpdateDateTimeUtc": "2018-11-12T13:34:32.0319826Z",
-            "relatedFileInfo": null
+            "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+            "computerDnsName": "desktop-39g9tgl",
+            "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
+            "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
+			"relatedFileInfo": null
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
 
 ### Example 7
 
-- Get the count of open alerts for a specific machine:
+Get the count of open alerts for a specific machine:
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

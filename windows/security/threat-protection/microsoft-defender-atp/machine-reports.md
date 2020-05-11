@@ -34,18 +34,25 @@ Section | Description
 2 | Machine summary (current day)
  
  
- 
+## Machine trends 
 By default, the machine trends displays machine information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
  
 - 30 days
 - 3 months
 - 6 months
 - Custom
- 
-While the machines trends shows trending machine information, the machine summary shows machine information scoped to the current day.
+
+>[!NOTE]
+>These filters are only applied on the machine trends section. It doesn't affect the machine summary section.
+
+## Machine summary 
+While the machines trends shows trending machine information, the machine summary shows machine information scoped to the current day. 
+
+>[!NOTE]
+>The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is March 27, 2019, the data on the summary section will reflect numbers starting from September 28, 2018 to March 27, 2019.<br>
+> The filter applied on the trends section is not applied on the summary section. 
  
 The machine trends section allows you to drill down to the machines list with the corresponding filter applied to it. For example, clicking on the Inactive bar in the Sensor health state card will bring you the machines list with results showing only machines whose sensor status is inactive. 
- 
  
  
  

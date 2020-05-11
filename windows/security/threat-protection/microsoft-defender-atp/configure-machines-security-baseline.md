@@ -97,7 +97,7 @@ Machine configuration management monitors baseline compliance only of Windows 10
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-# Related topics
+## Related topics
 - [Ensure your machines are configured properly](configure-machines.md)
 - [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
 - [Optimize ASR rule deployment and detections](configure-machines-asr.md)

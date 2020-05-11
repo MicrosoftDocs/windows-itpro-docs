@@ -5,12 +5,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.date: 10/02/2018
+author: coveminer
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.author: v-jokai
 ms.topic: article
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Deploy Surface devices
@@ -39,19 +40,7 @@ Learn about about deploying ARM- and Intel-based Surface devices.
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| See how Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices. |
 [Battery Limit setting](battery-limit.md) | Learn how to use Battery Limit, a UEFI setting that changes how the Surface device battery is charged and may prolong its longevity.
 
-
-
- 
-
 ## Related topics
 
-[Surface for IT pros blog](http://blogs.technet.com/b/surface/)
-
- 
-
- 
-
-
-
-
+[Surface IT Pro Blog](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

@@ -3,7 +3,7 @@ title: Manage additional Windows Update settings (Windows 10)
 description: Additional settings to control the behavior of Windows Update (WU) in Windows 10
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -112,7 +112,7 @@ Use **Computer Configuration\Administrative Templates\Windows Components\Windows
 
 ### Enable client-side targeting
 
-Specifies the target group name or names that should be used to receive updates from an intranet Microsoft update service. This allows admins to configure device groups that will receive different updates from sources like WSUS or SCCM.
+Specifies the target group name or names that should be used to receive updates from an intranet Microsoft update service. This allows admins to configure device groups that will receive different updates from sources like WSUS or Configuration Manager.
 
 This Group Policy setting can be found under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Enable client-side targeting**.
 If the setting is set to **Enabled**, the specified target group information is sent to the intranet Microsoft update service which uses it to determine which updates should be deployed to this computer.

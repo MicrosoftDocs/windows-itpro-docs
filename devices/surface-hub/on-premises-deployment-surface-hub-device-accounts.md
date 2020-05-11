@@ -3,7 +3,7 @@ title: On-premises deployment single forest (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: single forest deployment, on prem deployment, device account, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
@@ -49,6 +49,8 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
    ```PowerShell
    New-Mailbox -UserPrincipalName HUB01@contoso.com -Alias HUB01 -Name "Hub-01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
+> [!IMPORTANT] 
+> ActiveSync Virtual Directory Basic Authentication is required to be enabled as the Surface Hub is unable to authenticate using other authentication methods.
 
 3. After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy, or use a compatible existing policy.
 

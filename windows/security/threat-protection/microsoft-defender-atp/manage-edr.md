@@ -29,4 +29,4 @@ Topic | Description
 [Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Microsoft Defender Security Center.
 [Machines list](machines-view-overview.md) | Learn how you can view and manage the machines list, manage machine groups, and investigate machine related alerts. 
 [Take response actions](response-actions.md)| Take response actions on machines and files to quickly respond to detected attacks and contain threats.
-[Query data using advanced hunting](advanced-hunting.md)| Proactively hunt for possible threats across your organization using a powerful search and query tool.
+[Query data using advanced hunting](advanced-hunting-query-language.md)| Proactively hunt for possible threats across your organization using a powerful search and query tool.

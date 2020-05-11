@@ -4,22 +4,21 @@ description: How to run Surface Diagnostic Toolkit in a command console
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 11/15/2018
 ms.reviewer: hachidan
-manager: dansimp
-ms.localizationpriority: normal
+manager: laurawi
+ms.localizationpriority: medium
 ms.audience: itpro
 ---
 
 # Run Surface Diagnostic Toolkit for Business using commands
 
-Running the Surface Diagnostic Toolkit (SDT) at a command prompt requires downloading the STD app console. After it's installed, you can run SDT at a command prompt via the Windows command console (cmd.exe) or using Windows PowerShell, including PowerShell Integrated Scripting Environment (ISE), which provides support for autocompletion of commands, copy/paste, and other features. 
+Running the Surface Diagnostic Toolkit (SDT) at a command prompt requires downloading the STD app console. After it's installed, you can run SDT at a command prompt via the Windows command console (cmd.exe) or using Windows PowerShell, including PowerShell Integrated Scripting Environment (ISE), which provides support for autocompletion of commands, copy/paste, and other features.  For a list of supported Surface devices in SDT, refer to [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md).
 
 >[!NOTE]
->To run SDT using commands, you must be signed in to the Administrator account or signed in to an account that is a member of the Administrator group on your Surface device. 
+>To run SDT using commands, you must be signed in to the Administrator account or signed in to an account that is a member of the Administrator group on your Surface device.
 
 ## Running SDT app console
 
@@ -43,7 +42,7 @@ Command | Notes
 
 
 >[!NOTE]
->To run the SDT app console remotely on target devices, you can use a configuration management tool such as System Center Configuration Manager. Alternatively, you can create a .zip file containing the console app and appropriate console commands and deploy per your organization’s software distribution processes. 
+>To run the SDT app console remotely on target devices, you can use a configuration management tool such as Microsoft Endpoint Configuration Manager. Alternatively, you can create a .zip file containing the console app and appropriate console commands and deploy per your organization’s software distribution processes. 
 
 ## Running Best Practice Analyzer 
 

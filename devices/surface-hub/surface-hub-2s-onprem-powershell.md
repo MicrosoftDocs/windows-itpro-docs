@@ -4,8 +4,8 @@ description: "Learn how to configure Surface Hub 2S on-premises accounts with Po
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,6 @@ ms.localizationpriority: Medium
 
 > [!IMPORTANT]
 > You'll need the Fully Qualified Domain Name (FQDN) for the Client Access service of the on-premises Exchange server for some of these cmdlets.
-
-```PowerShell
-$ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"
-$ExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$ExchServer/PowerShell/ -Authentication Kerberos -Credential (Get-Credential)
-Import-PSSession $ExchSession
-```
 
 ```PowerShell
 $ExchServer = Read-Host "Please Enter the FQDN of your Exchange Server"

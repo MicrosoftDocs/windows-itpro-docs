@@ -13,6 +13,9 @@ ms.topic: reference
 
 # Prelaunch Microsoft Edge and preload tabs in the background 
 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+
 Microsoft Edge pre-launches as a background process during Windows startup when the system is idle waiting to be launched by the user.  Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge. You can also configure Microsoft Edge to prevent Microsoft Edge from pre-launching.  
 
 Additionally, Microsoft Edge preloads the Start and New Tab pages during Windows sign in, which minimizes the amount of time required to start Microsoft Edge and load a new tab.  You can also configure Microsoft Edge to prevent preloading of tabs. 

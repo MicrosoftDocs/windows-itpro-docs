@@ -1,30 +1,27 @@
 ---
 title: Monitoring web browsing security in Microsoft Defender ATP
 description: Use web protection in Microsoft Defender ATP to monitor web browsing security
-keywords: web protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 08/30/2019
 ---
 
 # Monitor web browsing security
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-[!include[Prerelease information](prerelease.md)]
-
-Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains the following cards that provide web threat detection statistics:
+Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains cards that provide web threat detection statistics.
 
 - **Web threat protection detections over time** — this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)
  
@@ -44,7 +41,7 @@ Web protection categorizes malicious and unwanted websites as:
 - **Custom indicator** — websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking
 
 ## View the domain list
-Clicking on a specific web threat category in the **Web threat protection summary** card opens the **Domains** page, which shows a list of the domains prefiltered under that threat category. The page provides the following information for each domain:
+Select a specific web threat category in the **Web threat protection summary** card to open the **Domains** page and display the list of the domains under that threat category. The page provides the following information for each domain:
 
 - **Access count** — number of requests for URLs in the domain
 - **Blocks** — number of times requests were blocked
@@ -52,8 +49,10 @@ Clicking on a specific web threat category in the **Web threat protection summar
 - **Threat category** — type of web threat
 - **Machines** — number of machines with access attempts
 
-Selecting a domain opens a panel that shows the list of URLs in that domain that have been accessed. The panel also lists machines that have attempted to access URLs in the domain.
+Select a domain to view the list of machines that have attempted to access URLs in that domain as well as the list of URLs.
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)
+- [Web content filtering](web-content-filtering.md)
+- [Web threat protection](web-threat-protection.md)
 - [Respond to web threats](web-protection-response.md)

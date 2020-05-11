@@ -18,13 +18,19 @@ ms.topic: article
 
 # Find machines by internal IP API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp.
 
-The given timestamp must be in the past 30 days.
+## API description
+Find [Machines](machine.md) seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp.
+
+
+## Limitations
+1. The given timestamp must be in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -38,8 +44,9 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only machines,that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -57,7 +64,7 @@ Empty
 
 ## Response
 If successful and machines were found - 200 OK with list of the machines in the response body.
-If no machine found  - 404 Not Found.
+If no machine found - 404 Not Found.
 If the timestamp is not in the past 30 days - 400 Bad Request.
 
 ## Example
@@ -66,40 +73,8 @@ If the timestamp is not in the past 30 days - 400 Bad Request.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2018-09-22T08:44:05Z)
-```
-
-**Response**
-
-Here is an example of the response.
-
-```
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
-    "value": [
-        {
-            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-			"computerDnsName": "mymachine1.contoso.com",
-			"firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-09-22T08:55:03.7791856Z",
-			"osPlatform": "Windows10",
-			"osVersion": "10.0.0.0",
-			"lastIpAddress": "10.248.240.38",
-			"lastExternalIpAddress": "167.220.196.71",
-			"agentVersion": "10.5830.18209.1001",
-			"osBuild": 18209,
-			"healthStatus": "Active",
-			"rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
-			"riskScore": "Low",
-			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2" ]
-        }
-    ]
-}
+GET https://api.securitycenter.windows.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2019-09-22T08:44:05Z)
 ```

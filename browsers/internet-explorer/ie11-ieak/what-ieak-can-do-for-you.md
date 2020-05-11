@@ -32,8 +32,8 @@ IEAK 10 and newer includes the ability to install using one of the following ins
 - Internal
 - External
 
->[!NOTE]
->IEAK 11 works in network environments, with or without Microsoft Active Directory service.
+> [!NOTE]
+> IEAK 11 works in network environments, with or without Microsoft Active Directory service.
 
 
 ### Corporations

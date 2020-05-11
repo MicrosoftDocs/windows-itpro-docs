@@ -18,13 +18,20 @@ ms.topic: article
 
 # Run antivirus scan API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
+## API description
 Initiate Windows Defender Antivirus scan on a machine.
 
-[!include[Machine actions note](machineactionsnote.md)]
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+
+[!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -85,26 +92,3 @@ Content-type: application/json
 }
 ```
 
-**Response**
-
-Here is an example of the response.
-
-[!include[Improve request performance](improve-request-performance.md)]
-
-```
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
-    "type": "RunAntiVirusScan",
-    "requestor": "Analyst@contoso.com",
-    "requestorComment": "Check machine for viruses due to alert 3212",
-    "status": "InProgress",
-    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:18:27.1293487Z",
-	"relatedFileInfo": null
-}
-
-```

@@ -58,7 +58,7 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
     - Enter a user name and password, and toggle **Auto sign-in** to **Yes**.
     - Under **Configure the kiosk mode app**, enter the user name for the account that you're creating.
     - For **App type**, select **Universal Windows App**.
-    - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe`.
+    - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe!App`.
 11. In the bottom left corner of Windows Configuration Designer, select **Switch to advanced editor**. 
 12. Go to **Runtime settings** > **Policies** > **KioskBrowser**. Let's assume that the URL for your digital signage content is contoso.com/menu.
     - In **BlockedUrlExceptions**, enter `https://www.contoso.com/menu`.

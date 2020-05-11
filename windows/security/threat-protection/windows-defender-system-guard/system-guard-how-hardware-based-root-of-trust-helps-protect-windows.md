@@ -1,18 +1,19 @@
 ---
-title: Windows Defender System Guard How a hardware-based root of trust helps protect Windows 10 (Windows 10)
+title: How Windows Defender System Guard protect Windows 10 from firmware exploits
 description: Windows Defender System Guard in Windows 10 uses a hardware-based root of trust to securely protect systems against firmware exploits.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: deniseb
+author: denisebmsft
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
 ms.date: 03/01/2019
+ms.custom: asr
 ---
 
 
@@ -82,5 +83,5 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 ![Boot time integrity](images/windows-defender-system-guard-boot-time-integrity.png)
 
-After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or System Center Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Endpoint Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 

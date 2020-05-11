@@ -21,6 +21,7 @@ Learn more about identity and access management technologies in Windows 10 and 
 
 | Section | Description |
 |-|-|
+| [Technical support policy for lost or forgotten passwords](password-support-policy.md)| Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so. |
 | [Access control](access-control/access-control.md) | Describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing. |
 | [Configure S/MIME for Windows 10 and Windows 10 Mobile](configure-s-mime.md) | In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with. |
 | [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md) | Digital certificates bind the identity of a user or computer to a pair of keys that can be used to encrypt and sign digital information. Certificates are issued by a certification authority (CA) that vouches for the identity of the certificate holder, and they enable secure client communications with websites and services. |

@@ -1,6 +1,6 @@
 ---
+title: Windows 10 & Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows 10.
-title: Windows 10 & Privacy Compliance - A Guide for IT and Compliance Professionals
 keywords: privacy, GDPR, compliance
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -19,11 +19,9 @@ ms.date: 05/21/2019
 # Windows 10 & Privacy Compliance:<br />A Guide for IT and Compliance Professionals
 
 Applies to:
-- Windows 10, version 1903
-- Windows 10, version 1809
+- Windows 10, version 1809 and newer
 - Windows 10 Team Edition, version 1703 for Surface Hub
-- Windows Server 2019
-- Windows Server 2016
+- Windows Server 2016 and newer
 - Windows Analytics
 
 For more information about the GDPR, see:
@@ -142,7 +140,7 @@ Windows 10, version 1803 and later, allows users to change their diagnostic data
 
 #### 2.3.7 Diagnostic data: Managing device-based data delete
 
-Windows 10, version 1809 and later, allows a user to delete diagnostic data collected from their device by going into **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button. An IT administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet script.
+Windows 10, version 1803 and later, allows a user to delete diagnostic data collected from their device by going into **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button. An IT administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet script.
 
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 

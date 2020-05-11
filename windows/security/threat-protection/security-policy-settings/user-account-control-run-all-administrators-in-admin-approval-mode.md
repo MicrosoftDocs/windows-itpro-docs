@@ -1,6 +1,6 @@
 ---
-title: User Account Control Run all administrators in Admin Approval Mode (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Run all administrators in Admin Approval Mode security policy setting.
+title: UAC Run all administrators in Admin Approval Mode (Windows 10)
+description: Learn about best practices, security considerations and more for the security policy setting, User Account Control Run all administrators in Admin Approval Mode.
 ms.assetid: b838c561-7bfc-41ef-a7a5-55857259c7bf
 ms.reviewer: 
 ms.author: dansimp
@@ -22,7 +22,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.
+This article describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.
 
 ## Reference
 
@@ -38,11 +38,12 @@ This policy setting determines the behavior of all User Account Control (UAC) po
 
     Admin Approval Mode and all related UAC policies are disabled.
 
-    >**Note:**  If this security setting is configured to **Disabled**, the Security Center notifies the user that the overall security of the operating system has been reduced.
+    > [!NOTE]
+    > If this security setting is configured to **Disabled**, the Security Center notifies the user that the overall security of the operating system has been reduced.
      
 ### Best practices
 
--   Enable this policy to allow all other UAC features and policies to function.
+-   Turn on this policy to allow all other UAC features and policies to function.
 
 ### Location
 
@@ -67,11 +68,11 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-A restart of the computer is required before this policy will be effective when changes to this policy are saved locally or distributed through Group Policy.
+The computer must be restarted before this policy is effective when changes to this policy are saved locally or distributed through Group Policy.
 
 ### Group Policy
 
-All auditing capabilities are integrated in Group Policy. You can configure, deploy, and manage these settings in the Group Policy Management Console (GPMC) or Local Security Policy snap-in for a domain, site, or organizational unit (OU).
+All auditing capabilities are integrated in Group Policy. You can configure, deploy, and manage these settings in the Group Policy Management Console or Local Security Policy snap-in for a domain, site, or organizational unit.
 
 ## Security considerations
 
@@ -79,11 +80,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-This is the setting that turns UAC on or off. If this setting is disabled, UAC is not used, and any security benefits and risk mitigations that are dependent on UAC are not present on the computer.
+This setting turns on or turns off UAC. If this setting isn't turned on, UAC isn't used, and any security benefits and risk mitigations that are dependent on UAC aren't present on the computer.
 
 ### Countermeasure
 
-Enable the **User Account Control: Run all users, including administrators, as standard users** setting.
+Turn on the **User Account Control: Run all users, including administrators, as standard users** setting.
 
 ### Potential impact
 

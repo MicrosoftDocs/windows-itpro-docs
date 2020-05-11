@@ -10,8 +10,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -33,9 +34,9 @@ You can schedule updates for your endpoints by:
 
 You can also randomize the times when each endpoint checks and downloads protection updates. See the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic for more information.
 
-**Use Configuration Manager to schedule protection updates:**
+## Use Configuration Manager to schedule protection updates
 
-1.  On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1.  On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
 2.  Go to the **Security intelligence updates** section.
 
@@ -47,7 +48,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 5.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-**Use Group Policy to schedule protection updates:**
+## Use Group Policy to schedule protection updates
 
 > [!IMPORTANT]
 > By default, Windows Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
@@ -65,8 +66,7 @@ You can also randomize the times when each endpoint checks and downloads protect
     3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 
-
-**Use PowerShell cmdlets to schedule protection updates:**
+## Use PowerShell cmdlets to schedule protection updates
 
 Use the following cmdlets:
 
@@ -78,7 +78,7 @@ Set-MpPreference -SignatureUpdateInterval
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to schedule protection updates:**
+## Use Windows Management Instruction (WMI) to schedule protection updates
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -92,7 +92,7 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
-## Related topics
+## Related articles
 
 - [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)

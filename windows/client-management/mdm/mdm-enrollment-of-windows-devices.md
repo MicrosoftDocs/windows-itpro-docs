@@ -279,7 +279,7 @@ There are a few instances where your device may not be able to connect to work, 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Your device is already connected to your organization’s cloud.                                                                                                                             | Your device is already connected to either Azure AD, a work or school account, or an AD domain.     |
 | We could not find your identity in your organization’s cloud.                                                                                                                              | The username you entered was not found on your Azure AD tenant.                                     |
-| Your device is already being managed by an organization.                                                                                                                                   | Your device is either already managed by MDM or System Center Configuration Manager.                |
+| Your device is already being managed by an organization.                                                                                                                                   | Your device is either already managed by MDM or Microsoft Endpoint Configuration Manager.                |
 | You don’t have the right privileges to perform this operation. Please talk to your admin.                                                                                                  | You cannot enroll your device into MDM as a standard user. You must be on an administrator account. |
 | We couldn’t auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
@@ -359,7 +359,7 @@ The **Info** button can be found on work or school connections involving MDM. Th
 
 Clicking the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You’ll be able to view your organization’s support information (if configured) on this page. You’ll also be able to start a sync session which will force your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screehshot.
+Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screenshot.
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 

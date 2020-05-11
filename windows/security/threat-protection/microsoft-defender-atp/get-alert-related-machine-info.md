@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get alert related machine information API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Retrieves machine that is related to a specific alert.
+
+## API description
+Retrieves [Machine](machine.md) related to a specific alert.
+
+
+## Limitations
+1. You can query on alerts last updated in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -63,7 +71,7 @@ If successful and alert and machine exist - 200 OK. If alert not found or machin
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ```
@@ -85,15 +93,16 @@ Content-type: application/json
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
 	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
-    "osVersion": "10.0.0.0",
+    "version": "1709",
+	"osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",
     "lastExternalIpAddress": "167.220.196.71",
-    "agentVersion": "10.5830.18209.1001",
     "osBuild": 18209,
     "healthStatus": "Active",
     "rbacGroupId": 140,
 	"rbacGroupName": "The-A-Team",
     "riskScore": "Low",
+	"exposureLevel": "Medium",
 	"isAadJoined": true,
     "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 	"machineTags": [ "test tag 1", "test tag 2" ]

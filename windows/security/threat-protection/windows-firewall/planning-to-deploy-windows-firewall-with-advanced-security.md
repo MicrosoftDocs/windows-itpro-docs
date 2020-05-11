@@ -1,5 +1,5 @@
 ---
-title: Planning to Deploy Windows Defender Firewall with Advanced Security (Windows 10)
+title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows 10)
 description: Planning to Deploy Windows Defender Firewall with Advanced Security
 ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.reviewer: 

@@ -1,0 +1,120 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Education Documentation for IT admins
+summary: Microsoft 365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
+
+metadata:
+  title: Microsoft 365 Education Documentation for IT admins
+  description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
+  ms.service: help
+  ms.topic: hub-page
+  author: LaurenMoynihan
+  ms.author: v-lamoyn
+  ms.date: 10/24/2019
+
+productDirectory:
+  summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments.
+  items:
+    # Card    
+    - title: Phase 1 - Cloud deployment
+      imageSrc: ./images/EDU-Deploy.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/create-your-office-365-tenant
+          text: 1. Create your Office 365 tenant
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/secure-and-configure-your-network
+          text: 2. Secure and configure your network
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/aad-connect-and-adfs
+          text: 3. Sync your active directory
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/school-data-sync
+          text: 4. Sync you SIS using School Data Sync
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/license-users
+          text: 5. License users
+    # Card
+    - title: Phase 2 - Device management
+      imageSrc: ./images/EDU-Device-Mgmt.svg
+      links:
+        - url: https://docs.microsoft.com/en-us/education/windows/
+          text: 1. Get started with Windows 10 for Education
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/set-up-windows-10-education-devices
+          text: 2. Set up Windows 10 devices
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/intune-for-education
+          text: 3. Get started with Intune for Education
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/use-intune-for-education
+          text: 4. Use Intune to manage groups, apps, and settings
+        - url: https://docs.microsoft.com/en-us/intune/enrollment/enrollment-autopilot
+          text: 5. Enroll devices using Windows Autopilot
+    # Card    
+    - title: Phase 3 - Apps management
+      imageSrc: ./images/EDU-Apps-Mgmt.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/configure-admin-settings
+          text: 1. Configure admin settings
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/set-up-teams-for-education
+          text: 2. Set up Teams for Education
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-office-365
+          text: 3. Set up Office 365
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/microsoft-store-for-education     
+          text: 4. Install apps from Microsoft Store for Education
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/minecraft-for-education
+          text: 5. Install Minecraft - Education Edition
+    # Card    
+    - title: Complete your deployment
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/EDU-Tasks.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-exchange-online
+          text: Deploy Exchange Online
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-sharepoint-online-and-onedrive
+          text: Deploy SharePoint Online and OneDrive
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-exchange-server-hybrid
+          text: Deploy Exchange Server hybrid
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-sharepoint-server-hybrid
+          text: Deploy SharePoint Server Hybrid
+    # Card
+    - title: Security & compliance
+      imageSrc: ./images/EDU-Lockbox.svg
+      links:
+        - url: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2
+          text: AAD feature deployment guide
+        - url: https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423
+          text: Azure information protection deployment acceleration guide
+        - url: https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security
+          text: Microsoft Cloud app security
+        - url: https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy
+          text: Office 365 data loss prevention
+        - url: https://docs.microsoft.com/microsoft-365/compliance/
+          text: Office 365 advanced compliance
+        - url: https://social.technet.microsoft.com/wiki/contents/articles/35748.office-365-what-is-customer-lockbox-and-how-to-enable-it.aspx
+          text: Deploying Lockbox
+    # Card    
+    - title: Analytics & insights
+      imageSrc: ./images/EDU-Education.svg
+      links:
+        - url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
+          text: Power BI for IT admins
+        - url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
+          text: Dynamics 365
+    # Card    
+    - title: Find deployment help
+      imageSrc: ./images/EDU-FindHelp.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/find-deployment-help
+          text: IT admin help
+        - url: https://social.technet.microsoft.com/forums/en-us/home
+          text: TechNet
+    # Card    
+    - title: Check out our education journey
+      imageSrc: ./images/EDU-ITJourney.svg
+      links:
+        - url: https://edujourney.microsoft.com/k-12/
+          text: K-12
+        - url: https://edujourney.microsoft.com/hed/
+          text: Higher education
+    # Card    
+    - title: Additional support resources
+      imageSrc: ./images/EDU-Teachers.svg
+      links:
+        - url: https://support.office.com/en-us/education
+          text: Education help center
+        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
+          text: Teacher training packs

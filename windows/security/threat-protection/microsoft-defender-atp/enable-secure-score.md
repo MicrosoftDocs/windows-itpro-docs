@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Enable Secure Score security controls
@@ -27,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
-Set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
+Set the baselines for calculating the score of security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
 
   >[!NOTE]
   >Changes might take up to a few hours to reflect on the dashboard. 
@@ -39,7 +38,7 @@ Set the baselines for calculating the score of Windows Defender security control
 3. Click **Save preferences**.
 
 ## Related topics
-- [View the Secure Score dashboard](secure-score-dashboard.md)
+- [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Update data retention settings for Microsoft Defender ATP](data-retention-settings.md)
 - [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
