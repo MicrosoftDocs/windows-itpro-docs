@@ -35,7 +35,7 @@ This feature is forward-looking and currently requires new Intel Comet Lake (CML
 
 ### Widows Defender Application Guard
 
-[Windows Defender Application Guard](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
+[Windows Defender Application Guard](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
 
 [Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
 
