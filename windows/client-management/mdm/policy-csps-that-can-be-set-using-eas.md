@@ -1,6 +1,6 @@
 ---
-title: Policies that can be set using Exchange Active Sync (EAS)
-description: Policies that can be set using Exchange Active Sync (EAS)
+title: Policy CSPs that can be set using Exchange Active Sync (EAS)
+description: Policy CSPs that can be set using Exchange Active Sync (EAS)
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 07/18/2019
 ---
 
-# Policies that can be set using Exchange Active Sync (EAS)
+# Policy CSPs that can be set using Exchange Active Sync (EAS)
 
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)  
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)  
@@ -36,4 +36,5 @@ ms.date: 07/18/2019
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
 
 ## Related topics
+
 [Policy CSP](policy-configuration-service-provider.md)
