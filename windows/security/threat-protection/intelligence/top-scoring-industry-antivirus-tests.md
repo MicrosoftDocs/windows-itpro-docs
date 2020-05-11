@@ -18,7 +18,26 @@ search.appverid: met150
 
 # Top scoring in industry tests
 
-Microsoft Defender Advanced Threat Protection ([Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
+[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
+
+## Microsoft Threat Protection
+
+[Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
+Microsoft Threat Protection suite protects:
+
+- Endpoints with [Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) - Microsoft Defender ATP is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
+- Email and collaboration with [Office 365 ATP](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection) - Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
+- Identities with [Azure ATP](https://azure.microsoft.com/features/azure-advanced-threat-protection/) and [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) - Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+- Applications with [Microsoft Cloud App Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security) - Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+
+### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
+
+Core to MITRE’s testing approach is emulating real-world attacks to understand whether solutions are able to adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE’s simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded defenders’ visibility beyond the endpoint with Microsoft Threat Protection (MTP). 
+
+- ATT&CK-based evaluation of Microsoft Threat Protection — May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+
+    Microsoft Threat Protection provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities, dramatically reducing manual work for the security operations center vs. vendor solutions that relied on specific configuration changes. It also the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
 ## Next generation protection
 
@@ -79,17 +98,9 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 Microsoft Defender ATP [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
-![String of images showing EDR capabilities](./images/MITRE-Microsoft-Defender-ATP.png)
-
-**Read our analysis: [MITRE evaluation highlights industry-leading EDR capabilities in Windows Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)**
-
 ### MITRE: Industry-leading optics and detection capabilities
 
 MITRE tested the ability of products to detect techniques commonly used by the targeted attack group APT3 (also known as Boron or UPS). To isolate detection capabilities, all protection and prevention features were turned off. Microsoft is happy to be one of the first EDR vendors to sign up for the MITRE evaluation based on the ATT&CK framework. The framework is widely regarded today as the most comprehensive catalog of attacker techniques and tactics.
-
-- ATT&CK-based evaluation of Microsoft Threat Protection — May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
-
-    Microsoft Threat Protection provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities, dramatically reducing manual work for the security operations center vs. vendor solutions that relied on specific configuration changes. It also the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
 - ATT&CK-based evaluation of Microsoft Defender ATP — December 2018: [Leading optics and detection capabilities](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
@@ -101,6 +112,6 @@ Independent security industry tests aim to evaluate the best antivirus and secur
 
 The capabilities within Microsoft Defender ATP provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) that are not factored into industry antivirus tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Microsoft Defender ATP creates a partial picture of how Microsoft's security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Microsoft Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively Microsoft's security suite protects customers in the real world.
 
-With independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack.
-
 [Learn more about Microsoft Defender ATP](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) and evaluate it in your own network by signing up for a [90-day trial of Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](../microsoft-defender-atp/preview-settings.md).
+
+[Learn more about Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable).
