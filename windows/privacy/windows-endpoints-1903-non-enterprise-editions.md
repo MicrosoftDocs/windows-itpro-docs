@@ -146,7 +146,7 @@ The following methodology was used to derive the network endpoints:
 | candycrush.king.com | HTTPS | Candy Crush application
 | cdn.onenote.net | HTTP | Microsoft OneNote
 | cds.p9u4n2q3.hwcdn.net | HTTP | Highwinds Content Delivery Network traffic for Windows updates
-| client.wns.windows.com | HTTPS | Winddows Notification System
+| client.wns.windows.com | HTTPS | Windows Notification System
 | co4.telecommand.telemetry.microsoft.com.akadns.net | HTTPS | Windows Error Reporting
 | config.edge.skype.com | HTTPS | Microsoft Skype
 | cs11.wpc.v0cdn.net | HTTP | Windows Telemetry
