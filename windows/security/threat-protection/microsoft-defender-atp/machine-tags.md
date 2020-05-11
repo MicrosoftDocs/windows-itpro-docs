@@ -83,6 +83,7 @@ Use the following registry key entry to add a tag on a machine:
 - Registry key data: `Name of the tag you want to set`
 
 >[!NOTE]
->The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
+>The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.<br>
+> If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.
 
 
