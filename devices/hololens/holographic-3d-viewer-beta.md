@@ -1,5 +1,5 @@
 ---
-title: Using 3D Viewer on HoloLens
+title: Using 3D Viewer on HoloLens (1st gen)
 description: Describes the types of files and features that 3D Viewer on HoloLens (1st gen) supports, and how to use and troubleshoot the app.
 ms.prod: hololens
 ms.sitesec: library
@@ -15,12 +15,12 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Using 3D Viewer on HoloLens
+# Using 3D Viewer on HoloLens (1st gen)
 
 3D Viewer lets you view 3D models on HoloLens (1st gen). You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
 
 >[!NOTE]
->This article applies to the immersive Unity **3D Viewer** app, which supports .fbx files and is only available on HoloLens (1st gen). The pre-installed **3D Viewer** app on HoloLens 2 supports opening custom .glb 3D models in the mixed reality home (see [Asset requirements overview](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) for more details. 
+>This article applies to the immersive Unity **3D Viewer** app, which supports .fbx files and is only available on HoloLens (1st gen). The pre-installed **3D Viewer** app on HoloLens 2 supports opening custom .glb 3D models in the mixed reality home (see [Asset requirements overview](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) for more details.
 
 If you're having trouble opening a 3D model in 3D Viewer, or certain features of your 3D model are unsupported, see [Supported content specifications](#supported-content-specifications).
 
