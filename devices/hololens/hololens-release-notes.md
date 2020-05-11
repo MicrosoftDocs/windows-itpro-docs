@@ -133,7 +133,7 @@ Many Windows apps now support both dark and light modes, and HoloLens 2 customer
 - 3D Viewer 
 - Movies & TV 
 
-![Dark mode windows tiled](hololens-darkmode-tiled-picture.jpg)
+![Dark mode windows tiled](devices/hololens/images/hololens-darkmode-tiled-picture.jpg)
 
 #### System voice commands
 
