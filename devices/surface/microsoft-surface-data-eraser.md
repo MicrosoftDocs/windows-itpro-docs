@@ -11,7 +11,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 05/11/2019
