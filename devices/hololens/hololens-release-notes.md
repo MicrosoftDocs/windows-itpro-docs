@@ -29,21 +29,22 @@ appliesto:
 ### Windows Holographic May 2020 Update 
 Build - 19041.1103
 
-**Release Summary**
-- Pre-configure and seamlessly set up new devices for production, with Windows AutoPilot 
-- Dark App Mode for apps that support both dark and light modes, improving the viewing experience 
-- Support for FIDO2 Security Keys to enable fast and secure authentication for shared devices 
-- Seamlessly apply a provisioning package from a USB drive to your HoloLens 
-- Enroll HoloLens with your Mobile Device Management system using a provisioning package  
-- Support for additional system voice commands to control HoloLens, hands-free 
-- Hand Tracking improvements make buttons and 2D slate interactions more accurate 
-- Check policies and apps that have been pushed to HoloLens in the Settings app 
-- Expanded USB Ethernet enables support for 5G/LTE dongles 
-- … And performance and reliability improvements across the product 
+|             Feature                              |          Description                                                                                              |
+|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+|       Windows Autopilot                          |          Pre-configure and seamlessly set up   new devices for production, with Windows AutoPilot                 |
+|       FIDO 2 support                             |          Support for FIDO2 Security Keys to   enable fast and secure authentication for shared devices            |
+|       Improved provisioning                      |          Seamlessly apply a provisioning   package from a USB drive to your HoloLens                              |
+|       Application install status                 |          Check install status for apps have   been pushed to HoloLens 2 via MDM, in the Settings app              |
+|       Configuration Service Providers   (CSPs)   |          Added new Configuration Service   Providers (CSPs) enhancing admin control capabilities.                 |
+|       USB 5G/LTE tethering                       |          Expanded USB Ethernet capability   enables support for 5G/LTE dongles                                    |
+|       Dark App Mode                              |          Dark App Mode for apps that support   both dark and light modes, improving the viewing experience        |
+|       Voice Commands                             |          Support for additional system voice   commands to control HoloLens, hands-free                           |
+|       Hand Tracking improvements                 |          Hand Tracking improvements make   buttons and 2D slate interactions more accurate                        |
+|       Performance and reliability                |          Various system performance and   reliability improvements across the platform                            |
 
-#### Autopilot 
+#### Support for Windows Autopilot 
 
-Autopilot lets the device sales channel pre-enroll HoloLens into your Intune tenant.  When devices arrive, they’re ready to self-deploy as shared devices under your tenant. To take advantage of self-deployment, devices will need to connect to a network during the first screen in setup using either a USB-C to ethernet dongle or USB-C to LTE dongle. 
+Windows Autopilot for HoloLens 2 lets the device sales channel pre-enroll HoloLens into your Intune tenant.  When devices arrive, they’re ready to self-deploy as shared devices under your tenant. To take advantage of self-deployment, devices will need to connect to a network during the first screen in setup using either a USB-C to ethernet dongle or USB-C to LTE dongle. 
 
 When a user starts the Autopilot self-deploying process, the process completes the following steps: 
 
@@ -53,11 +54,11 @@ When a user starts the Autopilot self-deploying process, the process completes t
 1. Provision the device. 
 1. Present the sign-in screen to the user. 
 
-**Contact your TSP to begin using AutoPilot now - devices will ship with AutoPilot enabled around June.**
+Learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://docs.microsoft.com/hololens/hololens2-autopilot).
 
-You can also test AutoPilot or learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://docs.microsoft.com/hololens/hololens2-autopilot).
+**Contact your Account Manager to join the AutoPilot preview now. Autopilot-ready devices will begin shipping around June.**
 
-#### FIDO 2
+#### FIDO2 Security Key support 
 
 Many of you share a HoloLens device with lots of people in a work or school environment. Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long usernames and passwords. 
 
@@ -78,14 +79,12 @@ Provisioning packages let you set HoloLens configuration through a config file r
 
 #### MDM Policies 
 
-More information in settings on HoloLens about the policy pushed to the device. 
-Improved diagnostics for line of business app installation. 
+MDM app deployment and management for Line of Business (LOB) apps is critical for our customers. Admins and users need to be able to view app install status, for auditing and diagnosis purposes. In this release we are adding more details in **Settings > Accounts > Access work or school > Click on your account > Info.**
 
-Additional CSPs and Policies 
+#### Additional CSPs and Policies 
 
-A [configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) is an interface to read, set, modify, or delete configuration settings on a device. In this release, we are adding support for more policies, increasing the control administrators have over deployed HoloLens devices. For the list of CSPs supported by HoloLens, visit this [link](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). 
+A [configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) is an interface to read, set, modify, or delete configuration settings on a device. In this release, we are adding support for more policies, increasing the control administrators have over deployed HoloLens devices. For the list of CSPs supported by HoloLens, visit this [link](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). New in this release:
 
-New this release:  
 **Policy CSP** 
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows devices. In this release, we are adding new policies for HoloLens, listed below. You can learn more about supported policies [here](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2).  
@@ -150,6 +149,7 @@ The updated app integrates with Microsoft 365, currently in English (United Stat
 #### Quality improvements & fixes 
 
 Improvements and Fixes also in the update:  
+- The update introduces an active display calibration system. This improves the stability and alignment of holograms, which helps them stay in place when moving your head side-to-side. 
 - Fixed a bug where Wi-Fi streaming to HoloLens gets disrupted periodically. If an application indicates that it needs low latency streaming this fix is can be accomplished by calling [this function](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode). 
 - Fixed an issue where the device could hang during streaming in research mode. 
 - Fixed bug where in some cases the right user would not be displayed on sign-in screen when resuming session. 
@@ -158,12 +158,10 @@ Improvements and Fixes also in the update:
 - Fixed an issue where eye tracking subsystem would fail to initialize and/or perform calibration under certain conditions. 
 - Fixed an issue where eye calibration would be prompted for an already calibrated user. 
 - Fixed an issue where a driver would crash during eye calibration. 
-- Fixed bug that caused a crash after 60 second timeout. 
-- Fixed bug that caused a crash what's new app. 
+- Fixed an issue where repeated power button presses can cause a 60 second system time-out and shell crash. 
 - Improved stability for depth buffers. 
 - Added ‘Share’ button in Feedback Hub so users can more easily share feedback. 
 - Fixed a bug where RoboRaid did not install correctly. 
-- **Active Display Calibration.** The update introduces an active calibration system. You may occasionally see patterns flash quickly in the bottom corners of the display, which the system uses to maintain image quality. This improves the stability and alignment of holograms, which helps them stay in place when moving your head side-to-side. 
 
 ### April Update - build 18362.1059
 
