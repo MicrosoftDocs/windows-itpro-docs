@@ -14,7 +14,7 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/11/2019
+ms.date: 05/11/2020
 ---
 
 # Microsoft Surface Data Eraser

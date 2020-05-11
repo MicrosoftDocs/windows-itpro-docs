@@ -13,7 +13,7 @@ ms.reviewer: scottmca
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 05/11/2019
+ms.date: 05/11/2020
 ---
 
 # Microsoft Surface Enterprise Management Mode
