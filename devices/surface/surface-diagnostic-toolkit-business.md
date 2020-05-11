@@ -41,6 +41,9 @@ Command line |	Directly troubleshoot Surface devices remotely without user inter
 
 SDT for Business is supported on Surface 3 and later devices, including:
 
+- Surface Book 3
+- Surface Go 2
+- Surface Pro X
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro 6

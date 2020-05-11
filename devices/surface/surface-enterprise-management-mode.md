@@ -231,7 +231,7 @@ create a reset package using PowerShell to reset SEMM.
 The latest version of SEMM to be released May 11, 2020 includes: 
 -Support for Surface Go 2
 -Support for Surface Book 3
--Miscellaneous updates
+-Bug fixes
 
 ### Version 2.59.
 * Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
