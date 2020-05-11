@@ -13,7 +13,8 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.audience: itpro
+audience: itpro
+ms.date: 05/11/2019
 ---
 
 # Microsoft Surface Data Eraser
@@ -28,6 +29,8 @@ Find out how the Microsoft Surface Data Eraser tool can help you securely wipe d
 
 Compatible Surface devices include:
 
+* Surface Book 3
+* Surface Go 2
 * Surface Pro 7
 * Surface Pro X
 * Surface Laptop 3
@@ -163,6 +166,12 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 ## Changes and updates
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
+
+### 3.30.139
+This version of Surface Data Eraser to be released May 11, 2020 adds support for: 
+- Surface Book 3
+- Surface Go 2
+- New SSD in Surface Go
 
 ### 3.28.137
 *Release Date: 11 Nov 2019*

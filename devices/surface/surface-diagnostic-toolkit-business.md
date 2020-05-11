@@ -8,10 +8,10 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 10/31/2019
+ms.date: 05/11/2019
 ms.reviewer: hachidan
 manager: laurawi
-ms.audience: itpro
+audience: itpro
 ---
 
 # Deploy Surface Diagnostic Toolkit for Business
@@ -170,6 +170,18 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 - [Use Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
 
 ## Changes and updates
+
+### Version 2.94.139.0
+
+This version of Surface Diagnostic Toolkit for Business to be released May 11, 2020 adds support for the following:
+
+- Ability to skip Windows Update to perform hardware check.
+- Ability to receive notifications for about the latest version update
+- Surface Go 2
+- Surface Book 3
+- Show progress indicator
+
+
 ### Version 2.43.139.0
 *Release date: October 21, 2019*<br>
 This version of Surface Diagnostic Toolkit for Business adds support for the following:
