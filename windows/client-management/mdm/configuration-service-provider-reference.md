@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/13/2019
+ms.date: 05/11/2020
 ---
 
 # Configuration service provider reference
