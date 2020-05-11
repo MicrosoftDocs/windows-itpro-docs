@@ -66,7 +66,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 
 ### Configure Windows devices to use PIN reset using Microsoft Intune
 
-To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/intune/custom-settings-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
+To configure PIN reset on Windows devices you manage, use a Windows Hello for Business configuration in Intune to enable the feature. 
 
 #### Use an existing WHFB Device configuration profile using Microsoft Intune
 
