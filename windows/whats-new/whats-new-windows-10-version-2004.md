@@ -16,12 +16,40 @@ ms.topic: article
 # What's new in Windows 10, version 2004 IT Pro content
 
 **Applies to**
--   Windows 10, version 1909
+-   Windows 10, version 2004
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
 
 > [!NOTE]
-> The version number for this release (2004) is an even number so as not to confuse it with major releases of Windows that happened in the year 2003.
+> The version number for this release (2004) is an even number to avoid confusion with major releases of Windows that happened in the year 2003.
+
+## Security
+
+### Windows Defender System Guard
+
+In this release,  [Windows Defender System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
+
+With this improvement, the OS can detect a higher level of SMM compliance, ennabling a device to be even more hardened against SMM exploits and vulnerabilities.
+
+This feature is forward-looking and currently requires new Intel Comet Lake (CML) hardware available soon.
+
+### Widows Defender Application Guard
+
+[Windows Defender Application Guard](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
+
+[Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
+
+### FIDO2 security key support in Azure Active Directory
+
+FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to hybrid environments, enabling even more customers to take an important step in their journey towards passwordless environments
+
+[Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894)
+
+
+
+### Microsoft BitLocker
+
+
 
 ## Cortana
 
@@ -38,12 +66,6 @@ Bluetooth pairing: Pairing Bluetooth devices with your machine will occur throug
 ## 2-in-1 PCs
 
 New tablet experience for two-in-one convertible PCs: When you detach your two-in-one's keyboard, you'll still keep the familiar look of your desktop without interruption, while still optimizing the screen for touch. 
-
-## FIDO2 security key support in Azure Active Directory
-
-FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to hybrid environments, enabling even more customers to take an important step in their journey towards passwordless environments
-
-[Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894)
 
 ## Windows Hello for Business
 
@@ -76,22 +98,6 @@ To prevent Windows from using a display, choose Settings > Display and click Adv
 ### Windows Update for Business (WUfB)
 
 
-
-## Security
-
-### Windows Defender Credential Guard
-
-
-
-### Microsoft BitLocker
-
-
-
-### Key-rolling and Key-rotation
-
-
-
-### Transport Layer Security (TLS)
 
 
 
@@ -159,7 +165,7 @@ During the upgrade process, Windows Setup will extract all its sources files to 
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-A new [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) will be for Windows 10, version 2004. You can use this version of the Windows ADK to deploy Windows 10, version 2004.
+A new [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) will be available for Windows 10, version 2004. You can use this version of the Windows ADK to deploy Windows 10, version 2004 and earlier versions of Windows.
 
 ### Microsoft Deployment Toolkit (MDT)
 
