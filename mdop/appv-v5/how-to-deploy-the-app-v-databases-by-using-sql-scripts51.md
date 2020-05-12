@@ -29,14 +29,14 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 1. Copy the **appv\_server\_setup.exe** from the App-V release media to a temporary location.
 1. From a command prompt, run **appv\_server\_setup.exe** and specify a temporary location for extracting the database scripts.
 
-    Example: appv\_server\_setup.exe /layout c:\\&lt;temporary location path&gt;
+    Example: appv\_server\_setup.exe /layout c:\\&lt;_temporary location path_&gt;
 
 1. Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate Readme.txt file for instructions:
 
-| Database | Location of Readme.txt file to use |
-|--|--|
-| Management database | ManagementDatabase subfolder |
-| Reporting database | ReportingDatabase subfolder |
+    | Database | Location of Readme.txt file to use |
+    |--|--|
+    | Management database | ManagementDatabase subfolder |
+    | Reporting database | ReportingDatabase subfolder |
 
 > [!CAUTION]
 > The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
