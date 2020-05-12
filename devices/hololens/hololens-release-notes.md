@@ -23,10 +23,7 @@ appliesto:
 
 ## HoloLens 2
 
-> [!Note]
-> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
-
-### Windows Holographic, version 2004 May Update 
+### Windows Holographic, version 2004 May 2020 Update 
 Build - 19041.1103
 
 |             Feature                              |          Description                                                                                              |
@@ -36,11 +33,14 @@ Build - 19041.1103
 |       Improved provisioning                      |          Seamlessly apply a provisioning   package from a USB drive to your HoloLens                              |
 |       Application install status                 |          Check install status for apps have   been pushed to HoloLens 2 via MDM, in the Settings app              |
 |       Configuration Service Providers   (CSPs)   |          Added new Configuration Service   Providers (CSPs) enhancing admin control capabilities.                 |
-|       USB 5G/LTE tethering                       |          Expanded USB Ethernet capability   enables support for 5G/LTE dongles                                    |
+|       USB 5G/LTE support                       |          Expanded USB Ethernet capability   enables support for 5G/LTE dongles                                    |
 |       Dark App Mode                              |          Dark App Mode for apps that support   both dark and light modes, improving the viewing experience        |
 |       Voice Commands                             |          Support for additional system voice   commands to control HoloLens, hands-free                           |
 |       Hand Tracking improvements                 |          Hand Tracking improvements make   buttons and 2D slate interactions more accurate                        |
-|       Performance and reliability                |          Various system performance and   reliability improvements across the platform                            |
+|       Quality improvements and fixes                 |          Various system performance and   reliability improvements across the platform                            |
+
+> [!Note]
+> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 #### Support for Windows Autopilot 
 
@@ -56,7 +56,7 @@ When a user starts the Autopilot self-deploying process, the process completes t
 
 Learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://docs.microsoft.com/hololens/hololens2-autopilot).
 
-**Contact your Account Manager to join the AutoPilot preview now. Autopilot-ready devices will begin shipping around June.**
+**Contact your Account Manager to join the AutoPilot preview now. Autopilot-ready devices will begin shipping soon.**
 
 #### FIDO2 Security Key support 
 
@@ -77,7 +77,7 @@ Provisioning packages let you set HoloLens configuration through a config file r
 1. Build your configuration profile and, when you're done, copy all files created to a USB-C storage device. 
 1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package. 
 
-#### MDM Policies 
+#### Line of Business application install status 
 
 MDM app deployment and management for Line of Business (LOB) apps is critical for our customers. Admins and users need to be able to view app install status, for auditing and diagnosis purposes. In this release we are adding more details in **Settings > Accounts > Access work or school > Click on your account > Info.**
 
@@ -108,7 +108,7 @@ The NetworkQoSPolicy configuration service provider creates network Quality of S
 
 Support has been added to enable certain mobile broadband devices, such as 5G/LTE phones and WiFi hotpots when tethered to the HoloLens 2 via USB. These devices will be displayed in network settings as another ethernet connection. Mobile broadband devices that require an external driver are not supported. This enables high bandwidth connections in scenarios where WiFi is not available, and WiFi tethering isn’t performant enough. You can learn more about supported USB devices [here](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
-Hand Tracking Improvements
+#### Hand Tracking Improvements
 
 Hand tracking has received several improvements in this release. 
 
@@ -143,10 +143,10 @@ You can now quickly access and use commands with your voice while using any app 
 
 The updated app integrates with Microsoft 365, currently in English (United States) only, to help you get more done across your devices. On HoloLens 2, Cortana will no longer support certain device-specific commands like adjusting the volume or restarting the device, which are now supported with the new system voice commands mentioned above. Learn more about the new Cortana app and its direction on our blog [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
-> ![NOTE]
-> Note: There's currently an issue we're investigating that requires you to launch the app after booting the device in order to use the "Hey Cortana" keyword activation, and if you updated from a 18362 build, you may see an app tile for the previous version of the Cortana app in Start that no longer works. 
+> [!NOTE]
+> There's currently an issue we're investigating that requires you to launch the app after booting the device in order to use the "Hey Cortana" keyword activation, and if you updated from a 18362 build, you may see an app tile for the previous version of the Cortana app in Start that no longer works. 
 
-#### Quality improvements & fixes 
+#### Quality improvements and fixes 
 
 Improvements and Fixes also in the update:  
 - The update introduces an active display calibration system. This improves the stability and alignment of holograms, which helps them stay in place when moving your head side-to-side. 
