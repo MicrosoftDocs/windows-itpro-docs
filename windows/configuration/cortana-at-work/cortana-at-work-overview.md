@@ -1,5 +1,5 @@
 ---
-title: Cortana integration in your business or enterprise (Windows 10)
+title: Configure Cortana in Windows 10
 ms.reviewer: 
 manager: dansimp
 description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
