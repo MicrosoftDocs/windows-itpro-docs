@@ -163,11 +163,13 @@ Improvements and Fixes also in the update:
 - Added ‘Share’ button in Feedback Hub so users can more easily share feedback. 
 - Fixed a bug where RoboRaid did not install correctly. 
 
-### Windows Holographic, version 1903 - May Update - build 18362.1061
+### Windows Holographic, version 1903 - May 2020 Update 
+- Build 18362.1061
 
-This monthly quality update does not contain any changes of note because the team has been focused on providing you with the highest quality Feature Update, with the Windows Holographic, version 2004 May Update being generally avalible for all we wanted to bring you the best possible experience with that feature update. Please take this opportunity to move to the latest feature update to get a ton of exciting new changes.
+This monthly quality update does not contain any changes of note because the team has been focused on providing you with the highest quality Feature Update now available in the Windows Holographic, version 2004 May Update detailed above. Please take this opportunity to move to the latest feature update to get a ton of exciting new changes.
 
-### Windows Holographic, version 1903 - April Update - build 18362.1059
+### Windows Holographic, version 1903 - April 2020 Update
+- Build 18362.1059
 
 **Dark mode for supported apps** 
 
@@ -192,31 +194,46 @@ Here are some of the in-box apps that support dark mode:
 - Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
 - Fixed WinRT IStreamSocketListener API Class Not Registered error on 32-bit ARM app.
 
-### Windows Holographic, version 1903 - March Update - build 18362.1056
+### Windows Holographic, version 1903 - March 2020 Update 
+- Build 18362.1056
+
+Improvements and fixes in the update:
 
 - Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod AutoPlanar algorithm is used.
 - Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
 - Developers productivity improvement by enabling customers to paste large amount of text through device portal.
 
-### Windows Holographic, version 1903 - February Update - build 18362.1053
+### Windows Holographic, version 1903 - February 2020 Update 
+- Build 18362.1053
+
+Improvements and fixes in the update:
 
 - Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled.
 - Fixed a random HUP crash cased by hand tracking, in which user will notice an UI freeze then back to shell after several seconds.
 - We made an improvement in hand tracking so that while poking using index finger, the upper part of that finger will be less likely to curl unexpectedly.
 - Improved reliability of head tracking, spatial mapping, and other runtimes.
 
-### Windows Holographic, version 1903 - January Update - build 18362.1043
+### Windows Holographic, version 1903 - January 2020 Update 
+- Build 18362.1043
+
+Improvement in the update:
 
 - Stability improvements for exclusive apps when working with the HoloLens 2 emulator.
 
-### Windows Holographic, version 1903 - December Update - build 18362.1042
+### Windows Holographic, version 1903 - December 2019 Update 
+- Build 18362.1042
+
+Improvements and fixes in the update:
 
 - Introduces LSR (Last Stage Reproduction) fixes. Improves visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This will be more noticeable if apps do not set the depth of holograms correctly, after this update.
 - Fixes stability of exclusive apps and navigation between exclusive apps.
 - Resolves an issue where Mixed Reality Capture couldn't record video after device is left in standby state for multiple days.
 - Improves hologram stability.
 
-### Windows Holographic, version 1903 - November Update - build 18362.1039
+### Windows Holographic, version 1903 - November 2019 Update 
+- Build 18362.1039
+
+Improvements and fixes in the update:
 
 - Fixes for **"Select"** voice commands during initial set-up for en-CA and en-AU.
 - Improvements in visual quality of objects placed far away in latest Unity and MRTK versions.
