@@ -432,6 +432,14 @@ This policy setting determines the level that Microsoft can experiment with the 
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable pre-release features or settings*
+-   GP name: *EnableExperimentation*
+-   GP path: *Windows Components/Data Collection and Preview Builds*
+-   GP ADMX file name: *datacollection.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
