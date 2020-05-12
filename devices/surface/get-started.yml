@@ -42,6 +42,7 @@ landingContent:
            url: surface-book-quadro.md
          - text: What’s new in Surface Dock 2
            url: surface-dock-whats-new.md    
+ 
   # Card
   - title: Deploy Surface devices
     linkLists:
@@ -54,18 +55,18 @@ landingContent:
           - text: Deploying, managing, and servicing Surface Pro X
             url: surface-pro-arm-app-management.md
   
-  # Card
+    # Card
   - title: Manage Surface devices
     linkLists:
       - linkListType: how-to-guide
         links:
-		  - text: Manage and deploy Surface driver and firmware updates
+          - text: Manage and deploy Surface driver and firmware updates
             url: manage-surface-driver-and-firmware-updates.md
           - text: Best practice power settings for Surface devices
             url: maintain-optimal-power-settings-on-Surface-devices.md
           - text: Optimize Wi-Fi connectivity for Surface devices
             url: surface-wireless-connect.md
-  
+
   # Card
   - title: Explore security topics
     linkLists:
@@ -90,27 +91,24 @@ landingContent:
           - text: Battery Limit setting
             url: battery-limit.md         
 
-# Card
+ # Card
   - title: Browse Support topics
     linkLists:
       - linkListType: learn
         links:
           - text: Top support solutions
             url: support-solutions-surface.md
-		  - text: Protecting your data during Surface repair or service
-            url: https://support.microsoft.com/en-us/help/4023508/surface-faq-protecting-your-data-service	
+          - text: Protecting your data during Surface repair or service
+            url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
           - text: Troubleshoot Surface Dock and docking stations
             url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
-
+            
 # Card
   - title: Participate in Surface Community 
     linkLists:
       - linkListType: learn
         links:
-           links:
           - text: Surface IT Pro blog
             url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
           - text: Surface Devices Tech Community
             url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-		  - text: Microsoft Mechanics Surface videos
-            url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
