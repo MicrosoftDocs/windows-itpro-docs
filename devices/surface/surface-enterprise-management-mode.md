@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.localizationpriority: medium
-ms.audience: itpro
+audience: itpro
+ms.date: 05/11/2020
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -226,6 +227,11 @@ serial-number independent. If the certificate is still valid, you can
 create a reset package using PowerShell to reset SEMM.
 
 ## Version History
+
+The latest version of SEMM to be released May 11, 2020 includes: 
+- Support for Surface Go 2
+- Support for Surface Book 3
+- Bug fixes
 
 ### Version 2.59.
 * Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
