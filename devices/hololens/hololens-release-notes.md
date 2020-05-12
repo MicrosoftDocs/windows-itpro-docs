@@ -20,7 +20,7 @@ appliesto:
 
 # HoloLens 2 release notes
 
-## Windows Holographic, version 2004 May 2020 Update 
+## Windows Holographic, version 2004  
 Build - 19041.1103
 
 |             Feature                              |          Description                                                                                              |
