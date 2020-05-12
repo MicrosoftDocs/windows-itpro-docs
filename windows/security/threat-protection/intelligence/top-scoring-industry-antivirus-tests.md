@@ -24,12 +24,7 @@ search.appverid: met150
 
 [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-Microsoft Threat Protection suite protects:
-
-- Endpoints with [Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) - Microsoft Defender ATP is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
-- Email and collaboration with [Office 365 ATP](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection) - Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
-- Identities with [Azure ATP](https://azure.microsoft.com/features/azure-advanced-threat-protection/) and [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) - Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-- Applications with [Microsoft Cloud App Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security) - Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+Microsoft Threat Protection combines into a single solution the capabilities of [Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Office 365 ATP](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Azure ATP](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Cloud App Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
