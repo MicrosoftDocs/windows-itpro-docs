@@ -96,7 +96,7 @@ The following list shows all the available devices you can manage in SEMM:
 |Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
 | Security                           | Displays the Surface UEFI **Security** page. If you do not configure this setting, the Security page is displayed.                                                                                                                 |
 | Devices                            | Displays the Surface UEFI **Devices** page. If you do not configure this setting,  the Devices page is displayed.                                                                                                                     |
-| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                                                            |
+| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the Boot page is displayed.                                                                                                                                                            |
 | DateTime                           | Displays the Surface UEFI **DateTime** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                |
 
 
