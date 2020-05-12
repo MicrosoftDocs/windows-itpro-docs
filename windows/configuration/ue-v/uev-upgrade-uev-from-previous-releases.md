@@ -39,7 +39,7 @@ Performing an in-place upgrade on user devices automatically installs the UE-V s
 
 ## Verify that UE-V settings were migrated correctly 
 
-After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows Powershell or the device’s registry.
+After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows PowerShell or the device’s registry.
 
 **To verify UE-V settings using Windows PowerShell**
 
