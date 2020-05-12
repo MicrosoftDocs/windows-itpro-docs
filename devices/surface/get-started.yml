@@ -68,7 +68,7 @@ landingContent:
             url: surface-wireless-connect.md
 
   # Card
-  - title: Explore security topics
+  - title: Explore security guidance
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -92,7 +92,7 @@ landingContent:
             url: battery-limit.md         
 
  # Card
-  - title: Browse Support topics
+  - title: Browse support solutions
     linkLists:
       - linkListType: learn
         links:
@@ -110,5 +110,7 @@ landingContent:
         links:
           - text: Surface IT Pro blog
             url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+          - text: Surface Devices Tech Community
+            url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
           - text: Surface Devices Tech Community
             url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
