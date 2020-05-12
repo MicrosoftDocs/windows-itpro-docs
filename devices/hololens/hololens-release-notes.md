@@ -1,5 +1,5 @@
 ---
-title: HoloLens release notes
+title: HoloLens 2 release notes
 description: Learn about updates in each new HoloLens release.
 author: scooley
 ms.author: scooley
@@ -14,16 +14,13 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
-- HoloLens 1
 - HoloLens 2
 
 ---
 
-# HoloLens release notes
+# HoloLens 2 release notes
 
-## HoloLens 2
-
-### Windows Holographic, version 2004 May 2020 Update 
+## Windows Holographic, version 2004 May 2020 Update 
 Build - 19041.1103
 
 |             Feature                              |          Description                                                                                              |
@@ -42,7 +39,7 @@ Build - 19041.1103
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
-#### Support for Windows Autopilot 
+### Support for Windows Autopilot 
 
 Windows Autopilot for HoloLens 2 lets the device sales channel pre-enroll HoloLens into your Intune tenant.  When devices arrive, they’re ready to self-deploy as shared devices under your tenant. To take advantage of self-deployment, devices will need to connect to a network during the first screen in setup using either a USB-C to ethernet dongle or USB-C to LTE dongle. 
 
@@ -58,7 +55,7 @@ Learn more from the [Windows Autopilot for HoloLens 2 evaluation guide](https://
 
 **Contact your Account Manager to join the AutoPilot preview now. Autopilot-ready devices will begin shipping soon.**
 
-#### FIDO2 Security Key support 
+### FIDO2 Security Key support 
 
 Many of you share a HoloLens device with lots of people in a work or school environment. Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long usernames and passwords. 
 
@@ -68,7 +65,7 @@ FIDO2 security keys are an unphishable standards-based passwordless authenticati
 
 Read the [passwordless security docs](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to get started. 
 
-#### Improved MDM enrollment via provisioning package 
+### Improved MDM enrollment via provisioning package 
 
 Provisioning packages let you set HoloLens configuration through a config file rather than going through the HoloLens out of box experience. Previously, provisioning packages had to be copied onto HoloLens' internal memory, now they can be on a USB drive so they're easier to re-use on multiple HoloLens and so more people can provision HoloLens in parallel.  In addition, provisioning packages support a new field to enroll in device management so there is no manual set up post-provisioning. 
 
@@ -77,11 +74,11 @@ Provisioning packages let you set HoloLens configuration through a config file r
 1. Build your configuration profile and, when you're done, copy all files created to a USB-C storage device. 
 1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package. 
 
-#### Line of Business application install status 
+### Line of Business application install status 
 
 MDM app deployment and management for Line of Business (LOB) apps is critical for our customers. Admins and users need to be able to view app install status, for auditing and diagnosis purposes. In this release we are adding more details in **Settings > Accounts > Access work or school > Click on your account > Info.**
 
-#### Additional CSPs and Policies 
+### Additional CSPs and Policies 
 
 A [configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) is an interface to read, set, modify, or delete configuration settings on a device. In this release, we are adding support for more policies, increasing the control administrators have over deployed HoloLens devices. For the list of CSPs supported by HoloLens, visit this [link](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). New in this release:
 
@@ -104,11 +101,11 @@ The Policy configuration service provider enables the enterprise to configure po
 **NetworkQoSPolicy CSP** 
 The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. You can learn more about this policy [here](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). 
 
-##### Expanded USB Ethernet support for 5G/LTE tethered devices
+### Expanded USB Ethernet support for 5G/LTE tethered devices
 
 Support has been added to enable certain mobile broadband devices, such as 5G/LTE phones and WiFi hotpots when tethered to the HoloLens 2 via USB. These devices will be displayed in network settings as another ethernet connection. Mobile broadband devices that require an external driver are not supported. This enables high bandwidth connections in scenarios where WiFi is not available, and WiFi tethering isn’t performant enough. You can learn more about supported USB devices [here](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
-#### Hand Tracking Improvements
+### Hand Tracking Improvements
 
 Hand tracking has received several improvements in this release. 
 
@@ -118,7 +115,7 @@ Hand tracking has received several improvements in this release.
 - **Reduced hand stealing:** We’ve improved handling of cases where there are more than 2 hands in view of the sensors.  If multiple people are working close together, there is now a much lower chance that the tracked hand will jump from the user to the hand of someone else in the scene. 
 - **System reliability:** Fixed an issue that would cause hand tracking to stop working for a period if the device is under high load. 
 
-#### Dark mode
+### Dark mode
 
 Many Windows apps now support both dark and light modes, and HoloLens 2 customers can choose the default mode for apps that support both. Once updated, the default app mode will be "dark," but can be changed easily. Navigate to Settings > System > Colors to find "Choose your default app mode." Here are some of the in-box apps that support Dark mode: 
 
@@ -135,18 +132,18 @@ Many Windows apps now support both dark and light modes, and HoloLens 2 customer
 
 ![Dark mode windows tiled](images/hololens-darkmode-tiled-picture.jpg)
 
-#### System voice commands
+### System voice commands
 
 You can now quickly access and use commands with your voice while using any app on the device. If you're running your system with a different language, please try the appropriate commands in that language. For more details on the commands and how to use them, see our documentation [here](https://docs.microsoft.com/hololens/hololens-cortana).  
 
-#### Cortana updates 
+### Cortana updates 
 
 The updated app integrates with Microsoft 365, currently in English (United States) only, to help you get more done across your devices. On HoloLens 2, Cortana will no longer support certain device-specific commands like adjusting the volume or restarting the device, which are now supported with the new system voice commands mentioned above. Learn more about the new Cortana app and its direction on our blog [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
 > [!NOTE]
 > There's currently an issue we're investigating that requires you to launch the app after booting the device in order to use the "Hey Cortana" keyword activation, and if you updated from a 18362 build, you may see an app tile for the previous version of the Cortana app in Start that no longer works. 
 
-#### Quality improvements and fixes 
+### Quality improvements and fixes 
 
 Improvements and Fixes also in the update:  
 - The update introduces an active display calibration system. This improves the stability and alignment of holograms, which helps them stay in place when moving your head side-to-side. 
@@ -163,12 +160,12 @@ Improvements and Fixes also in the update:
 - Added ‘Share’ button in Feedback Hub so users can more easily share feedback. 
 - Fixed a bug where RoboRaid did not install correctly. 
 
-### Windows Holographic, version 1903 - May 2020 Update 
+## Windows Holographic, version 1903 - May 2020 Update 
 - Build 18362.1061
 
 This monthly quality update does not contain any changes of note because the team has been focused on providing you with the highest quality Feature Update now available in the Windows Holographic, version 2004 May Update detailed above. Please take this opportunity to move to the latest feature update to get a ton of exciting new changes.
 
-### Windows Holographic, version 1903 - April 2020 Update
+## Windows Holographic, version 1903 - April 2020 Update
 - Build 18362.1059
 
 **Dark mode for supported apps** 
@@ -194,7 +191,7 @@ Here are some of the in-box apps that support dark mode:
 - Improve hologram stability in mixed reality capture when the HolographicDepthReprojectionMethod DepthReprojection algorithm is used.
 - Fixed WinRT IStreamSocketListener API Class Not Registered error on 32-bit ARM app.
 
-### Windows Holographic, version 1903 - March 2020 Update 
+## Windows Holographic, version 1903 - March 2020 Update 
 - Build 18362.1056
 
 Improvements and fixes in the update:
@@ -203,7 +200,7 @@ Improvements and fixes in the update:
 - Ensures the coordinate system attached to a depth MF sample is consistent with public documentation.
 - Developers productivity improvement by enabling customers to paste large amount of text through device portal.
 
-### Windows Holographic, version 1903 - February 2020 Update 
+## Windows Holographic, version 1903 - February 2020 Update 
 - Build 18362.1053
 
 Improvements and fixes in the update:
@@ -213,14 +210,14 @@ Improvements and fixes in the update:
 - We made an improvement in hand tracking so that while poking using index finger, the upper part of that finger will be less likely to curl unexpectedly.
 - Improved reliability of head tracking, spatial mapping, and other runtimes.
 
-### Windows Holographic, version 1903 - January 2020 Update 
+## Windows Holographic, version 1903 - January 2020 Update 
 - Build 18362.1043
 
 Improvement in the update:
 
 - Stability improvements for exclusive apps when working with the HoloLens 2 emulator.
 
-### Windows Holographic, version 1903 - December 2019 Update 
+## Windows Holographic, version 1903 - December 2019 Update 
 - Build 18362.1042
 
 Improvements and fixes in the update:
@@ -230,7 +227,7 @@ Improvements and fixes in the update:
 - Resolves an issue where Mixed Reality Capture couldn't record video after device is left in standby state for multiple days.
 - Improves hologram stability.
 
-### Windows Holographic, version 1903 - November 2019 Update 
+## Windows Holographic, version 1903 - November 2019 Update 
 - Build 18362.1039
 
 Improvements and fixes in the update:
@@ -240,69 +237,4 @@ Improvements and fixes in the update:
 - Fixes addressing issues with holographic applications being stuck in a paused state on launch until the pins panel is brought up and dismissed again.
 - OpenXR runtime conformance fixes and improvements for HoloLens 2 and the emulator.
 
-## HoloLens (1st gen)
 
-### Windows 10 Holographic, version 1809
-
-> **Applies to:** Hololens (1st gen)
-
-| Feature | Details |
-|---|---|
-| **Quick actions menu** | When you're in an app, the Bloom gesture will now open a Quick actions menu to give you quick access to commonly used system features without having to leave the app. <br> See [Set up HoloLens in kiosk mode](hololens-kiosk.md) for information about the Quick actions menu in kiosk mode.<br><br>![sample of the Quick actions menu](images/minimenu.png) |
-| **Stop video capture from the Start or quick actions menu** | If you start video capture from the Start menu or quick actions menu, you'll be able to stop recording from the same place. (Don't forget, you can always do this with voice commands too.) |
-| **Project to a Miracast-enabled device** | Project your HoloLens content to a nearby Surface device or TV/Monitor if using Microsoft Display adapter.  On **Start**, select **Connect**, and then select the device you want to project to. **Note:** You can deploy HoloLens to use Miracast projection without enabling developer mode. |
-| **New notifications** | View and respond to notification toasts on HoloLens, just like you do on a PC. Gaze to respond to or dismiss them (or if you're in an immersive experience, use the bloom gesture). |
-| **HoloLens overlays**<br>(file picker, keyboard, dialogs, etc.) | You'll now see overlays such as the keyboard, dialogs, file picker, etc. when using immersive apps. |
-| **Visual feedback overlay UI for volume change** | When you use the volume up/down buttons on your HoloLens you'll see a visual display of the volume level. |
-| **New UI for device boot** | A loading indicator was added during the boot process to provide visual feedback that the system is loading. Reboot your device to see the new loading indicator—it's between the "Hello" message and the Windows boot logo. |
-| **Nearby sharing** | Addition of the Windows Nearby Sharing experience, allowing you to share a capture with a nearby Windows device. When you capture a photo or video on HoloLens (or use the share button from an app such as Microsoft Edge), select a nearby Windows device to share with. |
-| **Share from Microsoft Edge** | Share button is now available on Microsoft Edge windows on HoloLens. In Microsoft Edge, select **Share**. Use the HoloLens share picker to share web content. |
-
-#### For international customers
-
-| Feature | Details |
-| --- | --- |
-| Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.<br>[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md) |
-| Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. |
-
-#### For administrators
-
-| Feature |  Details  |
-|---|----|
-| [Enable post-setup provisioning](hololens-provisioning.md) | You can now apply a runtime provisioning package at any time using **Settings**. |
-| Assigned access with Azure AD groups | You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration. |
-| PIN sign-in on profile switch from sign-in screen | PIN sign-in is now available for **Other User**. |
-| Sign in with Web Credential Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in. |
-| Read device hardware info through MDM so devices can be tracked by serial number | IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions. |
-| Set HoloLens device name through MDM (rename) | IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions. |
-
-### Windows 10, version 1803 for Microsoft HoloLens
-
-> **Applies to:** Hololens (1st gen)
-
-Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. This update introduces the following changes:
-
-- Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md).
-
-- You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
-
-    ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
-
-- When you create a local account in a provisioning package, the password no longer expires every 42 days.
-
-- You can [configure HoloLens as a single-app or multi-app kiosk](hololens-kiosk.md). Multi-app kiosk mode lets you set up a HoloLens to only run the apps that you specify, and prevents users from making changes.
-
-- Media Transfer Protocol (MTP) is enabled so that you can connect the HoloLens device to a PC by USB and transfer files between HoloLens and the PC. You can also use the File Explorer app to move and delete files from within HoloLens.
-
-- Previously, after you signed in to the device with an Azure Active Directory (Azure AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically.
-
-- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business.
-
-- You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Azure AD accounts.
-
-- When setup or  sign-in fails, choose the new **Collect info** option to get diagnostic logs for troubleshooting.
-
-- Individual users can sync their corporate email without enrolling their device in mobile device management (MDM). You can use the device with a Microsoft Account, download and install the Mail app, and add an email account directly.
-
-- You can check the MDM sync status for a device in **Settings** > **Accounts** > **Access Work or School** > **Info**. In the **Device sync status** section, you can start a sync, see areas managed by MDM, and create and export an advanced diagnostics report.
