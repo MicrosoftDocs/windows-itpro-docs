@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 ---
 
-# Cortana integration in your business or enterprise
+# Configure Cortana in Windows 10
 **Applies to:**
 
 -   Windows 10, version 1703
