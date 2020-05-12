@@ -21,6 +21,7 @@
 ## Manage Windows 10 connection endpoints
 ### [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 ### [Manage connections from Windows operating system components to Microsoft services using MDM](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md)
+### [Connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
