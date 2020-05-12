@@ -117,13 +117,27 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
 
-### Confirm block at first sight is enabled with the Windows Security app
+### Confirm block at first sight is enabled with Registry editor
 
-You can confirm that block at first sight is enabled in your Windows security settings.
+1. Start Registry Editor.
 
-Block at first sight is automatically enabled as long as **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
+2. Go to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Spynet**, and make sure that 
+
+    1. **SpynetReporting** key is set to **1**
+
+    2. **SubmitSamplesConsent** key is set to either **1** (Send safe samples) or **3** (Send all samples)
+
+3. Go to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Real-Time Protection**, and make sure that
+
+    1. **DisableIOAVProtection** key is set to **0**
+
+    2. **DisableRealtimeMonitoring** key is set to **0**
 
 ### Confirm Block at First Sight is enabled on individual clients
+
+You can confirm that block at first sight is enabled on individual clients using Windows security settings.
+
+Block at first sight is automatically enabled as long as **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
 1. Open the Windows Security app.
 
