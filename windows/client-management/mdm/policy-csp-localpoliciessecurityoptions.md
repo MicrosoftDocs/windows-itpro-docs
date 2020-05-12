@@ -2432,12 +2432,12 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+Network security: Minimum session security for NTLM SSP based (including secure RPC) clients.
 
 This security setting allows a client device to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
 
-Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
-Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+- Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
+- Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
 
 Default:
 
