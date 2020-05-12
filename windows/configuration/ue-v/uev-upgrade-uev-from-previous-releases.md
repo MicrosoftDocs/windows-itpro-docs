@@ -1,6 +1,6 @@
 ---
 title: Upgrade to UE-V for Windows 10
-description: Explains how to upgrade to the latest version of UE-V.
+description: Use these few adjustments to upgrade from User Experience Virtualization (UE-V) 2.x to the latest version of UE-V.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
