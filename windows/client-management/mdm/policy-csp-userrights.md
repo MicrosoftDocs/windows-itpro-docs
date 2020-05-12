@@ -1285,12 +1285,16 @@ GP Info:
 <!--Description-->
 This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Use caution when assigning this user right. Users with this user right can explore disks and extend files in to memory that contains other data. When the extended files are opened, the user might be able to read and modify the acquired data.
 
+
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
 -   GP English name: *Perform volume maintenance tasks*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
-
+> [!Warning]  
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
+>  
+> On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 <!--/DbMapped-->
 <!--/Policy-->
 
