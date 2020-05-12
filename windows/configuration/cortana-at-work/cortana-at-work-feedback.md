@@ -24,4 +24,4 @@ To provide feedback about the application in general, go to the **Settings** men
 
 ![Cortana at work, showing how to provide feedback to Microsoft](../images/cortana-feedback.png)
 
-In order for enterprise users to provide feedback, admins must unblock the Feedback Hub in the [Azure portal](https://portal.azure.com/). Go to the **Enterprise applications section** and enable _Users can allow apps to access their data_.
+In order for enterprise users to provide feedback, admins must unblock the Feedback Hub in the [Azure portal](https://portal.azure.com/). Go to the **Enterprise applications section** and enable **Users can allow apps to access their data**.
