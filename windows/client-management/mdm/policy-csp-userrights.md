@@ -1290,7 +1290,6 @@ GP Info:
 <!--Description-->
 This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Use caution when assigning this user right. Users with this user right can explore disks and extend files in to memory that contains other data. When the extended files are opened, the user might be able to read and modify the acquired data.
 
-
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
