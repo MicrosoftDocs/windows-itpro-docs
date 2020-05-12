@@ -18,6 +18,9 @@ manager: dansimp
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703
 
+>[!NOTE]
+>This content applies to Cortana in versions 1909 and earlier, but will not be available in future releases.
+
 Working with a developer, you can create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps. These voice-enabled actions can reduce the time necessary to access your apps and to complete simple actions.
 
 >[!NOTE]

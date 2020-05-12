@@ -12,6 +12,7 @@
 ### [Test scenario 6 - Change your language and perform a quick search with Cortana](cortana-at-work/cortana-at-work-scenario-6.md)
 ## [Send feedback about Cortana at work back to Microsoft](cortana-at-work/cortana-at-work-feedback.md)
 ## [Set up and test Cortana in Windows 10, versions 1909 and earlier, with Office 365 in your organization](cortana-at-work/cortana-at-work-o365.md)
+## [Set up and test custom voice commands in Cortana for your organization](cortana-at-work/cortana-at-work-voice-commands.md)
 ## [Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization](cortana-at-work/cortana-at-work-policy-settings.md)
 ## [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
 ## [Configure kiosks and digital signs on Windows desktop editions](kiosk-methods.md)

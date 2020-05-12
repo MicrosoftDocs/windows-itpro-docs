@@ -60,15 +60,3 @@ Old Table
 |User Configuration\Administrative Templates\Windows Components\File Explorer\Turn off display of recent search entries in the File Explorer search box|None|Specifies whether the search box can suggest recent queries and prevent entries from being stored in the registry for future reference.|
 |Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results|None|Specifies whether search can perform queries on the web and if the web results are displayed in search.<p>**In Windows 10 Pro edition**<br>This setting can’t be managed.<p>**In Windows 10 Enterprise edition**<br>Cortana won't work if this setting is turned off (disabled).|
 |Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana|Experience/AllowCortana|Specifies whether employees can use Cortana.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). However, employees can still perform local searches even with Cortana turned off.|
-
-
-
-
-
-
-
-
-
-
-
-
