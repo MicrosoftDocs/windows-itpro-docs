@@ -23,6 +23,7 @@ manager: dansimp
 
 Cortana will respond with the information from Bing.
 
-**Note** : This scenario requires Bing Answers to be enabled. For more information, see Set up and configure the Bing Answers feature.
+>[!NOTE]
+>This scenario requires Bing Answers to be enabled. For more information, see Set up and configure the Bing Answers feature.
 
 **Set up and configure the Bing Answers feature** needs a link to the appropriate section in main page 2.

@@ -27,8 +27,9 @@ manager: dansimp
 
 When you say &quot;Cortana&quot;, Cortana will open in listening mode to acknowledge the wake word.
 
-[Insert screenshot 4]
+Insert screenshot 4
 
 Once you finish saying your query, Cortana will open with the result.
 
-**Note** : If you've disabled the wake word using MDM or Group Policy, you will need to manually activate the microphone by selecting Cortana, then the mic button.
+>[!NOTE]
+>If you've disabled the wake word using MDM or Group Policy, you will need to manually activate the microphone by selecting Cortana, then the mic button.
