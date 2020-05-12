@@ -60,16 +60,6 @@ Using Surface Hub 2S, you can reinstall the device by using a recovery image. By
 
 When the first-time setup screen appears,remove the USB drive.
 
-## Recover a locked Surface Hub
-
-At the end of a session, Surface Hub 2S may occasionally encounter an error during the cleanup of user and app data at the end of a session. If this occurs, the device automatically reboots and resumes the data cleanup. However, if this operation repeatedly fails, the device automatically locks to protect user data.
-
-**To unlock a Surface Hub 2S:** <br>
-- Reset or recover the device from the Windows Recovery Environment. For more information, see [What is Windows RE?](https://technet.microsoft.com/library/cc765966.aspx)
-
-> [!NOTE]
-> To enter recovery mode, unplug the power cord and plug it in again three times.
-
 ## Contact Support
 
 If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).
