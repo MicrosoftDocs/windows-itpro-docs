@@ -19,7 +19,7 @@ You can install the Microsoft Application Virtualization (App-V) 5.1 server feat
 
 For information about deploying the App-V Server, see [About App-V 5.1](about-app-v-51.md#bkmk-migrate-to-51).
 
-> [!IMORTANT]
+> [!IMPORTANT]
 > Before you install and configure the App-V 5.1 servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
 
 ## <a href="" id="---------app-v-5-1-server-overview"></a> App-V 5.1 Server overview
