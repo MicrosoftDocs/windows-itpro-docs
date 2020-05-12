@@ -49,7 +49,7 @@ You must tell your employees to turn on Cortana before they’ll be able to use 
 
 2. Click on **Connected Services**, click **Office 365**, and then click **Connect**.
 
-    ![Cotana at work, showing how to turn on the connected services for Office 365](../images/cortana-connect-o365.png)
+    ![Cortana at work, showing how to turn on the connected services for Office 365](../images/cortana-connect-o365.png)
 
     The employee can also disconnect by clicking **Disconnect** from the **Office 365** screen.
 
