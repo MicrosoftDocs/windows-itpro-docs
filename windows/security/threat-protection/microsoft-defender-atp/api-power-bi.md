@@ -25,7 +25,7 @@ ms.topic: article
 
 In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
 
-The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs (e.g. Machine Actions, Alerts, etc..)
+The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
 ## Connect Power BI to Advanced Hunting API
 
