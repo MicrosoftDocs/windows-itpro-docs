@@ -2443,7 +2443,7 @@ Default:
 
 Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
 
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 
 <!--/Description-->
 <!--RegistryMapped-->
