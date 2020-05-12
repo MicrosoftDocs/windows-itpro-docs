@@ -98,7 +98,7 @@ Use the UE-V template generator to edit settings location templates. When the re
 
 1.  Create a local copy of the settings location template .xml file. UE-V settings location templates are .xml files that identify the locations where application store settings values.
 
-    > [!NOTE]  
+    > [!NOTE]
     > A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
      
 2.  Open the settings location template file with an XML editor.
