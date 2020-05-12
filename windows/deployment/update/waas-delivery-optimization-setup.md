@@ -139,7 +139,9 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
-Starting in Window 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
+Starting in Windows 10, version 2004, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+
+Starting in Windows 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
@@ -165,6 +167,30 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 
 
 #### Work with Delivery Optimization logs
+
+**Starting in Windows 10, version 2004:**
+
+`Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
+
+With no options, this cmdlet returns these data:
+
+- total number of files
+- number of foreground files
+- minimum file size for it to be cached
+- number of eligible files
+- number of files with peers
+- number of peering files [how different from the above?]
+- overall efficiency
+- efficiency in the peered files
+
+Using the `-ListConnections` option returns these detauls about peers:
+
+- destination IP address
+- peer type
+- status code
+- bytes sent
+- bytes received
+- file ID
 
 **Starting in Windows 10, version 1803:**
 
