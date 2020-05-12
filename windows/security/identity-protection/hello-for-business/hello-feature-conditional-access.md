@@ -1,6 +1,6 @@
 ---
 title: Conditional Access
-description: Learn more about conditional access in Azure Active Directory.
+description: Ensure that only approved users can access your devices, applications, and services from anywhere by enabling single sign-on with Azure Active Directory.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10
 ms.mktglfcycl: deploy
