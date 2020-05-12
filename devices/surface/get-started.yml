@@ -30,6 +30,7 @@ landingContent:
             url: https://www.microsoft.com/surface/business/surface-book-3
           - text: Explore all Surface family products
             url: https://www.microsoft.com/surface/business
+  
   # Card (optional)
   - title: Get started
     linkLists:
@@ -52,17 +53,19 @@ landingContent:
             url: windows-autopilot-and-surface-devices.md
           - text: Deploying, managing, and servicing Surface Pro X
             url: surface-pro-arm-app-management.md
+  
   # Card
   - title: Manage Surface devices
     linkLists:
       - linkListType: how-to-guide
         links:
-			    - text: Manage and deploy Surface driver and firmware updates
+		  - text: Manage and deploy Surface driver and firmware updates
             url: manage-surface-driver-and-firmware-updates.md
           - text: Best practice power settings for Surface devices
             url: maintain-optimal-power-settings-on-Surface-devices.md
           - text: Optimize Wi-Fi connectivity for Surface devices
             url: surface-wireless-connect.md
+  
   # Card
   - title: Explore security topics
     linkLists:
@@ -74,7 +77,8 @@ landingContent:
             url: surface-enterprise-management-mode.md
           - text: Surface Data Eraser tool
             url: microsoft-surface-data-eraser.md
-  # Card
+ 
+ # Card
   - title: Discover Surface tools
     linkLists:
       - linkListType: how-to-guide
@@ -85,6 +89,7 @@ landingContent:
             url: surface-enterprise-management-mode.md
           - text: Battery Limit setting
             url: battery-limit.md         
+
 # Card
   - title: Browse Support topics
     linkLists:
@@ -92,10 +97,11 @@ landingContent:
         links:
           - text: Top support solutions
             url: support-solutions-surface.md
-		      - text: Protecting your data during Surface repair or service
+		  - text: Protecting your data during Surface repair or service
             url: https://support.microsoft.com/en-us/help/4023508/surface-faq-protecting-your-data-service	
           - text: Troubleshoot Surface Dock and docking stations
             url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+
 # Card
   - title: Participate in Surface Community 
     linkLists:
@@ -106,5 +112,5 @@ landingContent:
             url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
           - text: Surface Devices Tech Community
             url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-		      - text: Microsoft Mechanics Surface videos
+		  - text: Microsoft Mechanics Surface videos
             url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
