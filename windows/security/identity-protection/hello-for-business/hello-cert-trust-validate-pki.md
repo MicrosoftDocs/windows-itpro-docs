@@ -150,7 +150,7 @@ Domain controllers automatically request a certificate from the domain controlle
 7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
 8. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 9. Select **Enabled** from the **Configuration Model** list.
-10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+10. Select the **Renew expired certificates, update pending certificates, and remove revoked certificates** check box.
 11. Select the **Update certificates that use certificate templates** check box.
 12. Click **OK**. Close the **Group Policy Management Editor**.
 
