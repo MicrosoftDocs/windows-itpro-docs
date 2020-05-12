@@ -25,7 +25,7 @@ INSERT SCREENSHOT 1
 
 ## Where is Cortana available for use in my organization?
 
-Your employees can use Cortana in the languages listed [here](https://support.microsoft.com/en-us/help/4026948/cortanas-regions-and-languages). However, most productivity skills are currently only enabled for English (United States), for users with mailboxes in the United States.
+Your employees can use Cortana in the languages listed [here](https://support.microsoft.com/help/4026948/cortanas-regions-and-languages). However, most productivity skills are currently only enabled for English (United States), for users with mailboxes in the United States.
 
 The Cortana app in Windows 10, version 2004 requires the latest Microsoft Store update to support languages other than English (United States).
 
@@ -50,7 +50,7 @@ For example, if you turn **Speech** off, your employees won&#39;t be able to use
 
 ## Signing in using Azure AD
 
-Your organization must have an Azure AD tenant and your employees&#39; devices must all be Azure AD-joined for the best Cortana experience. (Users may also sign into Cortana with a Microsoft account, but will not be able to use their enterprise email or calendar.) For info about what an Azure AD tenant is, how to get your devices joined, and other Azure AD maintenance info, see [Azure Active Directory documentation.](https://docs.microsoft.com/en-us/azure/active-directory/)
+Your organization must have an Azure AD tenant and your employees&#39; devices must all be Azure AD-joined for the best Cortana experience. (Users may also sign into Cortana with a Microsoft account, but will not be able to use their enterprise email or calendar.) For info about what an Azure AD tenant is, how to get your devices joined, and other Azure AD maintenance info, see [Azure Active Directory documentation.](https://docs.microsoft.com/azure/active-directory/)
 
 ## How is my data processed by Cortana?
 
@@ -58,7 +58,7 @@ Cortana's approach to integration with Microsoft 365 has changed in with Windows
 
 ### **Cortana in Windows 10, version 2004 and later**
 
-Cortana in Windows 10, version 2004 and later, meets the same enterprise-level privacy, security, and compliance promises for Cortana enterprise services, as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). For more information, see [Cortana in Microsoft 365](https://docs.microsoft.com/en-us/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
+Cortana in Windows 10, version 2004 and later, meets the same enterprise-level privacy, security, and compliance promises for Cortana enterprise services, as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). For more information, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
 
 #### How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
