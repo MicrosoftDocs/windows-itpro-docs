@@ -13,10 +13,7 @@ manager: dansimp
 ---
 
 # Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
-**Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 ## What can you do with in Windows 10, versions 1909 and earlier?
 Your employees can use Cortana to help manage their day and be more productive by getting quick answers to common questions, setting reminders, adding tasks to their To-Do lists, and find out where their next meeting is.

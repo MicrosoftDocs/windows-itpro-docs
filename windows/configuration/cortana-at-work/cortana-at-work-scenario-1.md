@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 1 – Sign into Azure AD, enable the wake word, and try a voice query
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 1. Select the **Cortana** icon in the task bar and sign in using your Azure AD account.
 
 2. Select the &quot;…&quot; menu and select **Talking to Cortana**.

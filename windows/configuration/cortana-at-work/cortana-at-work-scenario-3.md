@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 3 - Set a reminder
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 This scenario helps you set up, review, and edit a reminder. For example, you can remind yourself to send someone a link to a document after a meeting.
 
 1. Select the **Cortana** icon in the taskbar and type _Remind me to send a link to the deck at 3:05pm_ and press **Enter**.

@@ -13,10 +13,6 @@ manager: dansimp
 ---
 
 # Send feedback about Cortana back to Microsoft
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 To provide feedback on an individual request or response, select the item in the conversation history and then select **Give feedback**. This opens the Feedback Hub application where you can provide more information to help diagnose reported issues.
 

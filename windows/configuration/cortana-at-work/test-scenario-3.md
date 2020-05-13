@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 3 - Set a reminder for a specific location using Cortana at work
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 >[!Important]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 

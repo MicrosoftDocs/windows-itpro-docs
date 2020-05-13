@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 6 – Change your language and perform a quick search with Cortana
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 Cortana can help employees in regions outside the US search for quick answers like currency conversions, time zone conversions, or weather in their location or another.
 
 1. Select the  **Cortana**  icon in the taskbar.

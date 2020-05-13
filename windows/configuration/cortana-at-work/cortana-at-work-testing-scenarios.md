@@ -13,10 +13,6 @@ manager: dansimp
 ---
 
 # Testing scenarios using Cortana in your business or organization
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 We've come up with a list of suggested testing scenarios that you can use to test Cortana in your organization. After you complete all the scenarios, you should be able to:
 

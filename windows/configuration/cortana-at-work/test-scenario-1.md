@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 1 – Sign in with your work or school account and use Cortana to manage the notebook
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 This scenario turns on Azure AD and lets your employee use Cortana to manage an entry in the notebook.
 
 ## Sign in with your work or school account
@@ -45,5 +42,5 @@ This process helps you to manage the content Cortana shows in your Notebook.
 
 3. Add **Redmond, Washington**.
 
->[!IMPORTANT]
->The data created as part of these scenarios will be uploaded to Microsoft's Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
+> [!IMPORTANT]
+> The data created as part of these scenarios will be uploaded to Microsoft's Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

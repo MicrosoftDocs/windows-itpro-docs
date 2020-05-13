@@ -13,10 +13,6 @@ manager: dansimp
 ---
 
 # Set up and test custom voice commands in Cortana for your organization
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 >[!NOTE]
 >This content applies to Cortana in versions 1909 and earlier, but will not be available in future releases.

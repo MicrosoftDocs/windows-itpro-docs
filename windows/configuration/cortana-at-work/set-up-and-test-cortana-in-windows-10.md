@@ -12,10 +12,6 @@ ms.author: dansimp
 ---
 
 # Set up and test Cortana in Windows 10, version 2004 and later
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 ## Before you begin
 

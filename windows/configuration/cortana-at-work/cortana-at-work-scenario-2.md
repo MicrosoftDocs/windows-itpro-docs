@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 2 – Perform a Bing search with Cortana
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 1. Select the  **Cortana**  icon in the taskbar.
 
 2. Type **What time is it in Hyderabad?**.

@@ -12,10 +12,6 @@ ms.author: dansimp
 ---
 
 # Configure Cortana in Windows 10
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 ## Who is Cortana?
 
@@ -59,35 +55,17 @@ Cortana in Windows 10, version 2004 and later, meets the same enterprise-level p
 
 The table below describes the data handling for Cortana enterprise services.
 
-| **Name** | **Description** |
-| --- | --- |
-| **Storage**
 
- | Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. Speech audio is not retained.
+|**Name**  |**Description**  |
+|---------|---------|
+|**Storage**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. Speech audio is not retained.         |
+|**Stays in Geo**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.         |
+|**Retention**     |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. Speech audio is not retained.         |
+|**Processing and confidentiality**     |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.         |
+|**Usage**     |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud consistent with the Online Services Terms. 
+Your data is not used to target advertising.   |
 
- |
-| **Stays in Geo**
-
- | Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.
-
- |
-| **Retention**
-
- | Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made.
-Speech audio is not retained.
-
- |
-| **Processing and Confidentiality**
-
- | Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.
-
- |
-| **Usage**
-
- | Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud consistent with the Online Services Terms.
-Your data is not used to target advertising. |
-
-#### How does the wake word (&quot;Cortana&quot;) work? If I enable it, is Cortana always listening?
+#### How does the wake word (Cortana)work? If I enable it, is Cortana always listening?
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 

@@ -14,9 +14,6 @@ manager: dansimp
 
 # Test scenario 5 - Test scenario 5 – Find out about a person
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
-
 Cortana can help you quickly look up information about someone or the org chart.
 
 1. Select the  **Cortana**  icon in the taskbar.
