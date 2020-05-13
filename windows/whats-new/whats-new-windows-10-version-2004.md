@@ -29,7 +29,7 @@ This article lists new and updated features and content that are of interest to 
 
 In this release,  [Windows Defender System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
 
-With this improvement, the OS can detect a higher level of SMM compliance, ennabling a device to be even more hardened against SMM exploits and vulnerabilities.
+With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities.
 
 This feature is forward-looking and currently requires new Intel Comet Lake (CML) hardware available soon.
 
