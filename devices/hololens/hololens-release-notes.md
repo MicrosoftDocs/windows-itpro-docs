@@ -23,6 +23,8 @@ appliesto:
 ## Windows Holographic, version 2004  
 Build - 19041.1103
 
+We are excited to announce our May 2020 major software update for HoloLens 2, **Windows Holographic, version 2004**. This release includes a host of exciting new capabilities, such as support for Windows Autopilot, app dark mode, USB Ethernet support for 5G/LTE hotspots, and much more. To update to the latest release, open the **Settings app**, go to **Update & Security**, then select the **Check for Updates** button. 
+
 |             Feature                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          Pre-configure and seamlessly set up   new devices for production, with Windows AutoPilot                 |
