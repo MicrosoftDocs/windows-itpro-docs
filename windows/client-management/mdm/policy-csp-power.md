@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Power
-description: Policy CSP - Power
+description: Learn the ins and outs of various Policy CSP - Power settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
