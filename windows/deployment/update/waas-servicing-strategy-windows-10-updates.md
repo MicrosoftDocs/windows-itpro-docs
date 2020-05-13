@@ -35,10 +35,10 @@ Windows 10 spreads the traditional deployment effort of a Windows upgrade, which
 - **Choose a servicing tool.** Decide which product you’ll use to manage the Windows updates in your environment. If you’re currently using Windows Server Update Services (WSUS) or Microsoft Endpoint Configuration Manager to manage your Windows updates, you can continue using those products to manage Windows 10 updates. Alternatively, you can use Windows Update for Business. In addition to which product you’ll use, consider how you’ll deliver the updates. With Windows 10, multiple peer-to-peer options are available to make update distribution faster. For a comparison of tools, see [Servicing tools](waas-overview.md#servicing-tools).
 - **Prioritize applications.** First, create an application portfolio. This list should include everything installed in your organization and any webpages your organization hosts. Next, prioritize this list to identify those that are the most business critical. Because the expectation is that application compatibility with Windows 10 will be high, only the most business critical applications should be tested before the pilot phase; everything else can be tested afterwards. For more information about identifying compatibility issues withe applications, see [Manage Windows upgrades with Upgrade Analytics](../upgrade/manage-windows-upgrades-with-upgrade-readiness.md). 
 
->[!NOTE]
->This strategy is applicable to approaching an environment in which Windows 10 already exists. For information about how to deploy or upgrade to Windows 10 where another version of Windows exists, see [Plan for Windows 10 deployment](../planning/index.md).
+> [!NOTE]
+> This strategy is applicable to approaching an environment in which Windows 10 already exists. For information about how to deploy or upgrade to Windows 10 where another version of Windows exists, see [Plan for Windows 10 deployment](../planning/index.md).
 >
->>Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
+> Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 
 Each time Microsoft releases a Windows 10 feature update, the IT department should use the following high-level process to help ensure that the broad deployment is successful:
 
