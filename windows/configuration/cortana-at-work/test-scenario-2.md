@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Test scenario 2 – Perform a Bing search with Cortana
+# Test scenario 2 – Perform a quick search with Cortana at work
 
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703

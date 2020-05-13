@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Test scenario 4 - Use Cortana to find free time on your calendar
+# Test scenario 4 - Use Cortana at work to find your upcoming meetings
 
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703

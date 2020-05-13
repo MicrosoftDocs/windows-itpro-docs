@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Test scenario 5 - Test scenario 5 – Find out about a person
+# Test scenario 5 - Use Cortana to send email to a co-worker
 
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703
