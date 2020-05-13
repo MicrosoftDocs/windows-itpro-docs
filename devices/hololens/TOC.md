@@ -16,6 +16,7 @@
 ## [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # Deploy HoloLens and mixed-reality apps in commercial environments
 ## [Commercial features](hololens-commercial-features.md)
@@ -69,7 +70,7 @@
 ## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
 ## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
 
-# [HoloLens release notes](hololens-release-notes.md)
+# [HoloLens 2 release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
