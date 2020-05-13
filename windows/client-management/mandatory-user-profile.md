@@ -38,7 +38,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
-| Windows 10, versions 1607, 1703, 1709, 1803, 1809 and 1903 |  Windows Server 2016 and Windows Server 2019 | v6 |
+| Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
 For more information, see [Deploy Roaming User Profiles, Appendix B](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
