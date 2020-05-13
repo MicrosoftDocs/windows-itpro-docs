@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="#system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a>
+  </dd>
+  <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -44,13 +47,22 @@ manager: dansimp
     <a href="#system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="#system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
+    <a href="#system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+  <dd>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -238,6 +250,81 @@ The following list shows the supported values:
 
 -   0 (default) - Do not use the Windows Commercial Data Pipeline
 -   1 - Use the Windows Commercial Data Pipeline
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting allows IT admins to enable diagnostic data from this device to be processed by Desktop Analytics.
+
+If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Desktop Analytics.
+
+<!--/Description-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow Desktop Analytics Monitoring*
+-   GP name: *AllowDesktopAnalyticsMonitoring*
+-   GP path: *Windows Components/Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) – Diagnostic data is not processed by Desktop Analytics.
+
+- 2 – Diagnostic data is allowed to be processed by Desktop Analytics.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -600,6 +687,65 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting allows diagnostic data from this device to be processed by Microsoft Managed Desktop.
+
+If this policy is disabled or not configured, diagnostic data from this device will not be processed by Microsoft Managed Desktop.
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+-  0 (default)– Diagnostic data is not processed by Microsoft Managed Desktop.
+-  32 – Diagnostic data is processed by Microsoft Managed Desktop.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
@@ -802,6 +948,73 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowppdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This setting allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.
+
+If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
+
+<!--/Description-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Enable Update Compliance monitoring*
+-   GP name: *AllowUpdateComplianceMonitoring*
+-   GP path: *Windows Components/Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+- 0 (default)– Diagnostic data is not processed by Update Compliance.
+- 16 – Diagnostic data is allowed to be processed by Update Compliance.
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
 <!--SupportedSKUs-->
@@ -860,6 +1073,64 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting allows IT admins to enable diagnostic data from this device to be processed by Windows Update for Business cloud.
+
+If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Windows Update for Business cloud.
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:  
+- 0 (default) – Diagnostic data is not processed by Windows Update for Business cloud.
+- 8 – Diagnostic data is allowed to be processed by Windows Update for Business cloud.
+<!--/SupportedValues-->
+<!--/Policy-->
+
+</hr>
 
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
