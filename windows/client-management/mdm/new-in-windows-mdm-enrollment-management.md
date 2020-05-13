@@ -429,6 +429,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>TextInput/TouchKeyboardSplitModeAvailability</li>
 <li>TextInput/TouchKeyboardWideModeAvailability</li>
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>Update/TargetReleaseVersion</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li>
