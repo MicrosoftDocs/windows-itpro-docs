@@ -52,6 +52,9 @@ You can save a new or existing query so that it is only accessible to you or sha
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
+## Create a direct link to a query
+To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.
+
 ## Access queries in the GitHub repository  
 Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 
 

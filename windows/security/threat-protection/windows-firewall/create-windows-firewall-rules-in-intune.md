@@ -74,8 +74,8 @@ Comma separated list of local addresses covered by the rule. Valid tokens includ
 - \* indicates any local address. If present, this must be the only token included. 
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask default is  255.255.255.255. 
 - A valid IPv6 address. 
-- An IPv4 address range in the format of "start address - end address" with no spaces included. 
-- An IPv6 address range in the format of "start address - end address" with no spaces included. Default is Any address. 
+- An IPv4 address range in the format of "start address-end address" with no spaces included. 
+- An IPv6 address range in the format of "start address-end address" with no spaces included. Default is Any address. 
 
 [Learn more](https://aka.ms/intunefirewalllocaladdressrule)
 
@@ -93,8 +93,8 @@ List of comma separated tokens specifying the remote addresses covered by the ru
 - LocalSubnet indicates any local address on the local subnet. 
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255. 
 - A valid IPv6 address. 
-- An IPv4 address range in the format of "start address - end address" with no spaces included. 
-- An IPv6 address range in the format of "start address - end address" with no spaces included. 
+- An IPv4 address range in the format of "start address-end address" with no spaces included. 
+- An IPv6 address range in the format of "start address-end address" with no spaces included. 
 
 Default is Any address. 
 

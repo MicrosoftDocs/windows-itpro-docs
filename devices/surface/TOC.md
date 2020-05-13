@@ -4,6 +4,9 @@
 
 ## Overview
 
+### [What's new in Surface Dock 2](surface-dock-whats-new.md)
+### [Surface Book 3 GPU technical overview](surface-book-GPU-overview.md)
+### [Surface Book 3 Quadro RTX 3000 technical overview](surface-book-quadro.md)
 ### [Surface Pro 7 for Business](https://www.microsoft.com/surface/business/surface-pro-7)
 ### [Surface Pro X for Business](https://www.microsoft.com/surface/business/surface-pro-x)
 ### [Surface Laptop 3 for Business](https://www.microsoft.com/surface/business/surface-laptop-3)
@@ -30,7 +33,6 @@
 ### [Surface Pro X app compatibility](surface-pro-arm-app-performance.md)
 ### [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
-### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
 ### [Enable the Surface Laptop keyboard during MDT deployment](enable-surface-keyboard-for-windows-pe-deployment.md)
 ### [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)

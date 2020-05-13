@@ -112,6 +112,9 @@ manager: dansimp
     <a href="#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel">LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</a>
   </dd>
   <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</a>
+  </dd>
+  <dd>
     <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
   </dd>
   <dd>
@@ -2378,6 +2381,74 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
 <!--RegistryMapped-->
 GP Info:  
 -   GP English name: *Network security: LAN Manager authentication level*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Minimum session security for NTLM SSP based (including secure RPC) clients.
+
+This security setting allows a client device to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+
+- Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
+- Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+
+Default:
+
+Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) clients*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
