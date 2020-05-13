@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - BITS
-description: Policy CSP - BITS
+description: Use StartTime, EndTime and Transfer rate together to define the BITS bandwidth-throttling schedule and transfer rate. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
