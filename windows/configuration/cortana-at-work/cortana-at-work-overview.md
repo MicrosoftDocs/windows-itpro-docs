@@ -96,7 +96,7 @@ Your data is not used to target advertising. |
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 
-First, the user must enable the wake word from within Cortana settings. Once it has been enabled, a component of Windows called the [Windows Multiple Voice Assistant platform](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/voice-activation-mva#voice-activation) will start listening for the wake word. No audio is processed by speech recognition unless two local wake word detectors and a server-side one agree with high confidence that the wake word was heard.
+First, the user must enable the wake word from within Cortana settings. Once it has been enabled, a component of Windows called the [Windows Multiple Voice Assistant platform](https://docs.microsoft.com/windows-hardware/drivers/audio/voice-activation-mva#voice-activation) will start listening for the wake word. No audio is processed by speech recognition unless two local wake word detectors and a server-side one agree with high confidence that the wake word was heard.
 
 The first decision is made by the Windows Multiple Voice Assistant platformleveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
 
