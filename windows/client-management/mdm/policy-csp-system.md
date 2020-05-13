@@ -1122,7 +1122,14 @@ Available in Windows 10, version 1809 through 1909. This policy setting allows I
 
 If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Windows Update for Business cloud.
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not enforce safeguards for Feature Updates*
+-   GP name: *DisableWUfBSafeguards*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
 
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:  
 - 0 (default) – Diagnostic data is not processed by Windows Update for Business cloud.
@@ -2046,6 +2053,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
 
 <!--/Policies-->
 
