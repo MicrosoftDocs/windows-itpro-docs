@@ -4,7 +4,11 @@ description: Create actionable feedback for HoloLens and Windows Mixed Reality d
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 09/13/2019
+ms.date: 05/14/2020
+ms.custom: 
+- CI 116157
+- CSSTroubleshooting
+audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
@@ -59,24 +63,20 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
    |Video hologram playback |Feedback about video hologram playback. |
    |All other issues |All other issues. |
 
+1. If prompted, search for similar feedback. If your issue seems to be identical to other feedback, select that feedback. Otherwise, select **New feedback** and then select **Next**.
 
-   
+1. If prompted, select the best description of the problem.
 
-1. You’ll be prompted to find similar feedback at this time, if your issue seems to be identical to other feedback, please select it. Otherwise choose New feedback and select Next.
+1. Attach any relevant data to your feedback, or reproduce the problem. You can select any of the following options:
 
-1. 8.	You’ll be prompted to add more details. Please make a selection on which is the best description of the problem. 
+   - **Attach a screenshot**. Select this option to attach a screenshot that you captured previously.
+   - **Attach a file**. Select this option to attach a data file. If you have files that are relevant to your problem or help to reproduce your problem, attach them.
+   - **Recreate my problem**. Select this option if you can reproduce your problem. After you select **Recreate my problem**, follow these steps:  
 
-9.	Next you’ll be asked to attach any relevant data or reproduce the issue. Here’s a 
+     1. Select **Include data about** and make sure that the most relevant types of data are listed. In most cases, the default selections are based on the category and subcategory that you selected for your feedback.  
+     1. Select **Start Recording**.
 
-•	Attach a screenshot: If you previously took a photo of the issue you can attach it with this option.
-•	Attach a file: This can be used to attach other types of files relevant to your issue, if you have files that are useful for reproducing the issue please include them.
-•	Recreate my problem: If you can continue to reproduce your issue again this is the best option. Once you select recreate my problem then make sure the “Include data about” drop down has what is most relevant. In most cases it will automatically select a category based on your category selected in step 2. 
-Select Start Recording. You can now reproduce your issue. Don’t worry if this means entering an immersive app, when you return to the mixed reality home you’ll still be able to Stop recording. 
+     1. Reproduce your problem. Don’t worry if this means entering an immersive app&mdash;you can return to the feedback page when you're done.
+     1. Select **Stop recording**. After recording stops, you can see the data that is attached to your feedback for the engineering team.
 
-When you have finished you’ll be able to see the attached data that will be uploaded to the engineering team.
-
-10.	Select Submit, and you’re done. Make sure that you have an active internet connection so we can receive your feedback.
-
-
-1. If you are reporting a reproducible issue, you can select **Reproduce**. Without closing Feedback Hub, reproduce the issue. After you finish, come back to Feedback Hub and select **I'm done**. The app adds a mixed reality capture of your repro and relevant diagnostic logs to your feedback.
-1. Select **Post feedback**, and you're done.
+1. Make sure that you have an active internet connection so we can receive your feedback. Select **Submit**, and you’re done.
