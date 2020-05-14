@@ -54,20 +54,23 @@ Read the following blog posts for detailed protection stories involving cloud-pr
 
 Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
-Organizations running Windows 10 E5, version 1803 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn cloud-delivered protection on, we can deliver a fix for a malware issue via the cloud within minutes instead of waiting for the next update.
+Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn cloud-delivered protection on, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update.
 
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 The following table describes the differences in cloud-delivered protection between recent versions of Windows and Configuration Manager.
 
-Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center 2012 Configuration Manager | Microsoft Endpoint Configuration Manager (Current Branch) | Microsoft Intune
----|---|---|---|---|---|---
-Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
-Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version
-Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | Configurable
- 
-You can also [configure Windows Defender AV to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
+|OS or Service  |Cloud-protection service label  |Reporting level (MAPS membership level)  |Cloud block timeout period  |
+|---------|---------|---------|---------|
+|Windows 8.1 (Group Policy)     |Microsoft Advanced Protection Service   |Basic, Advanced   |No         |
+|Windows 10, version 1607 (Group Policy)  |Microsoft Advanced Protection Service      |Advanced         |No         |
+|Windows 10, version 1703 or greater (Group Policy)	     |Cloud-based Protection      |Advanced         |Configurable         |
+|System Center 2012 Configuration Manager  |         |N/A         |Dependent on Windows version         |Not configurable
+|Microsoft Endpoint Configuration Manager (Current Branch)	     |Cloud protection service         |Dependent on Windows version          |Configurable         |
+|Microsoft Intune     |Microsoft Advanced Protection Service         |Dependent on Windows version         |Configurable         |
+
+You can also [configure Windows Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
 
 
 ## In this section
