@@ -89,15 +89,15 @@ Application Guard functionality is turned off by default. However, you can quick
 
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 
-2. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
+1. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
 
-   a. In the **Platform** list, select **Windows 10 and later**. 
+   1. In the **Platform** list, select **Windows 10 and later**. 
    
-   b. In the **Profile** list, select **Endpoint protection**. 
+   1. In the **Profile** list, select **Endpoint protection**. 
    
-   c. Choose **Create**.
+   1. Choose **Create**.
 
-4. Specify the following settings for the profile:
+1. Specify the following settings for the profile:
 
    - **Name** and **Description**
 
@@ -107,17 +107,17 @@ Application Guard functionality is turned off by default. However, you can quick
 
    - Choose your preferences for **Clipboard behavior**, **External content**, and the remaining settings.
 
-5. Choose **OK**, and then choose **OK** again.
+1. Choose **OK**, and then choose **OK** again.
 
-6. Review your settings, and then choose **Create**.
+1. Review your settings, and then choose **Create**.
 
-7. Choose **Assignments**, and then do the following:
+1. Choose **Assignments**, and then do the following:
 
-   a. On the **Include** tab, in the **Assign to** list, choose an option.
+   1. On the **Include** tab, in the **Assign to** list, choose an option.
 
-   b. If you have any devices or users you want to exclude from this endpoint protection profile, specify those on the **Exclude** tab.
+   1. If you have any devices or users you want to exclude from this endpoint protection profile, specify those on the **Exclude** tab.
 
-   c. Click **Save**.
+   1. Click **Save**.
 
 After the profile is created, any devices to which the policy should apply will have Windows Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.
 
