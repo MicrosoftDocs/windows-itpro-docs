@@ -59,6 +59,9 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
    |Video hologram playback |Feedback about video hologram playback. |
    |All other issues |All other issues. |
 
+
+   
+
 1. You’ll be prompted to find similar feedback at this time, if your issue seems to be identical to other feedback, please select it. Otherwise choose New feedback and select Next.
 
 1. 8.	You’ll be prompted to add more details. Please make a selection on which is the best description of the problem. 
