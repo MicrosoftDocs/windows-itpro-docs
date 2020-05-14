@@ -61,24 +61,26 @@ Organizations running Windows 10 E5 can also take advantage of emergency dynamic
 
 The following table describes the differences in cloud-delivered protection between recent versions of Windows and Configuration Manager.
 
-|OS or Service  |Cloud-protection service label  |Reporting level (MAPS membership level)  |Cloud block timeout period  |
+|OS version or service application |Cloud-protection service label  |Reporting level (MAPS membership level)  |Cloud block timeout period  |
 |---------|---------|---------|---------|
 |Windows 8.1 (Group Policy)     |Microsoft Advanced Protection Service   |Basic, Advanced   |No         |
 |Windows 10, version 1607 (Group Policy)  |Microsoft Advanced Protection Service      |Advanced         |No         |
 |Windows 10, version 1703 or greater (Group Policy)	     |Cloud-based Protection      |Advanced         |Configurable         |
-|System Center 2012 Configuration Manager  |         |N/A         |Dependent on Windows version         |Not configurable
+|System Center 2012 Configuration Manager  |      N/A         |Dependent on Windows version         |Not configurable |
 |Microsoft Endpoint Configuration Manager (Current Branch)	     |Cloud protection service         |Dependent on Windows version          |Configurable         |
 |Microsoft Intune     |Microsoft Advanced Protection Service         |Dependent on Windows version         |Configurable         |
 
 You can also [configure Windows Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
 
 
-## In this section
+## Tasks
 
- Topic | Description 
----|---
-[Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | You can enable cloud-delivered protection with Microsoft Endpoint Configuration Manager, Group Policy, Microsoft Intune, and PowerShell cmdlets.
-[Specify the cloud-delivered protection level](specify-cloud-protection-level-windows-defender-antivirus.md) | You can specify the level of protection offered by the cloud with Group Policy and Microsoft Endpoint Configuration Manager. The protection level will affect the amount of information shared with the cloud and how aggressively new files are blocked.
-[Configure and validate network connections for Windows Defender Antivirus](configure-network-connections-windows-defender-antivirus.md) | There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This topic lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
-[Configure the block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) | The Block at First Sight feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it with Microsoft Endpoint Configuration Manager and Group Policy.
-[Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with Microsoft Endpoint Configuration Manager and Group Policy.
+- [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md). You can enable cloud-delivered protection with Microsoft Endpoint Configuration Manager, Group Policy, Microsoft Intune, and PowerShell cmdlets.
+
+- [Specify the cloud-delivered protection level](specify-cloud-protection-level-windows-defender-antivirus.md). You can specify the level of protection offered by the cloud with Group Policy and Microsoft Endpoint Configuration Manager. The protection level will affect the amount of information shared with the cloud and how aggressively new files are blocked.
+
+- [Configure and validate network connections for Windows Defender Antivirus](configure-network-connections-windows-defender-antivirus.md). There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This topic lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
+
+- [Configure the block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md). The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it with Microsoft Endpoint Configuration Manager and Group Policy.
+
+- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md). Windows Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with Microsoft Endpoint Configuration Manager and Group Policy.
