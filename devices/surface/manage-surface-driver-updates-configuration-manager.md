@@ -12,7 +12,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
-ms.author: v-venum
+ms.author: daclark
 ms.topic: article
 ms.audience: itpro
 ---
