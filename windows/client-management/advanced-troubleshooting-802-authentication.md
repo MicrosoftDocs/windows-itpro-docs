@@ -2,7 +2,7 @@
 title: Advanced Troubleshooting 802.1X Authentication
 ms.reviewer: 
 manager: dansimp
-description: Learn how 802.1X Authentication works
+description: Troubleshoot authentication flow by learning how 802.1X Authentication works for wired and wireless clients.
 keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl: 
