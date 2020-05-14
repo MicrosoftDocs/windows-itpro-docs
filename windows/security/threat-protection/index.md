@@ -45,7 +45,7 @@ ms.topic: conceptual
 <a name="tvm"></a>
 
 
-<center> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]</center>
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
 **[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
