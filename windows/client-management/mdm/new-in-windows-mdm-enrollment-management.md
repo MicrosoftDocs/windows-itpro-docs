@@ -2564,6 +2564,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
