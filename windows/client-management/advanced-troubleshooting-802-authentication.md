@@ -73,7 +73,7 @@ The following article explains how to analyze CAPI2 event logs:
 
 When troubleshooting complex 802.1X authentication issues, it is important to understand the 802.1X authentication process. The following figure is an example of wireless connection process with 802.1X authentication:
 
-![authenticatior flow chart](images/authenticator_flow_chart.png)
+![authenticator flow chart](images/authenticator_flow_chart.png)
  
 If you [collect a network packet capture](troubleshoot-tcpip-netmon.md) on both the client and the server (NPS) side, you can see a flow like the one below. Type **EAPOL** in the Display Filter in for a client side capture, and **EAP** for an NPS side capture. See the following examples:
 
