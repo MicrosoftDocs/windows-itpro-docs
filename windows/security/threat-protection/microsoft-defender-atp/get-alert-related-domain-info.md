@@ -1,6 +1,6 @@
 ---
 title: Get alert related domains information 
-description: Retrieves all domains related to a specific alert.
+description: Retrieve all domains related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get alert information, alert information, related domain
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

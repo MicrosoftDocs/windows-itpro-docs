@@ -83,7 +83,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
 
-- Minimum kernel version 2.6.38
+- Minimum kernel version 3.10.0-327
 - The `fanotify` kernel option must be enabled
   > [!CAUTION]
   > Running Microsoft Defender ATP for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.

@@ -26,8 +26,8 @@ You can add tags on machines using the following ways:
 - Using the portal
 - Setting a registry key value
 
->[!NOTE]
->There may be some latency between the time a tag is added to a machine and its availability in the machines list and machine page.  
+> [!NOTE]
+> There may be some latency between the time a tag is added to a machine and its availability in the machines list and machine page.  
 
 To add machine tags using API, see [Add or remove machine tags API](add-or-remove-machine-tags.md).
 
@@ -71,6 +71,9 @@ You can also delete tags from this view.
 >- Windows 8.1
 >- Windows 7 SP1
 
+> [!NOTE] 
+> The maximum number of characters that can be set in a tag from the registry is 30.
+
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
 Use the following registry key entry to add a tag on a machine:
@@ -81,4 +84,5 @@ Use the following registry key entry to add a tag on a machine:
 
 >[!NOTE]
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
-
+> 
+> If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.

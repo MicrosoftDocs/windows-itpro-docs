@@ -62,11 +62,8 @@
  
 
 #### [Device control]()
+##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-
-##### [Device Guard]()
-###### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-
 
 
 #### [Exploit protection]()
