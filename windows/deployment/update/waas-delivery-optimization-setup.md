@@ -35,6 +35,9 @@ Delivery Optimization offers a great many settings to fine-tune its behavior (se
 >[!NOTE]
 >These scenarios (and the recommended settings for each) are not mutually exclusive. It's possible that your deployment might involve more than one of these scenarios, in which case you can employ the related settings in any combination as needed. In all cases, however, "download mode" is the most important one to set.
 
+> [!NOTE]
+> Microsoft Intune includes a profile to make it easier to set Delivery Optimization policies. For details, see [Delivery Optimization settings for Intune](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings).
+
 Quick-reference table:
 
 | Use case | Policy | Recommended value | Reason |
@@ -65,6 +68,9 @@ The default download mode setting is **1**; this means all devices breaking out 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DODownloadMode** to **2**.
+
+> [!NOTE]
+> For more about using Delivery Optimization with Configuration Manager boundary groups, see [Delivery Optmization](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization).
 
 
 ### Large number of mobile devices

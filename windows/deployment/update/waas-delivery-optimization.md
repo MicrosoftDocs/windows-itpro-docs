@@ -124,6 +124,30 @@ For the payloads (optional):
 
 **How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?**: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more details see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
 
+**How does Delivery Optimization handle VPNs?**
+Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
+
+If the connection is identified as a VPN, Delivery Optimization will not use any peer-to-peer activity. However, you can allow peer-to-peer activity over a VPN by using the {WE SHOULD NAME OR POINT TO THIS POLICY} policy.
+
+If you have defined a boundary group in Configuration Manager and have for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN.
+
+With split tunnelling, it's best to exclude the boundary group for the VPN devices to exclude it from using peer-to-peer. (In this case, those devices won't get the policy and will default to using LAN.) If you're using split tunnelling, you should allow direct access for these endpoints:
+
+Delivery Optimization service endpoint:
+- `https://*.prod.do.dsp.mp.microsoft.com`
+
+Delivery Optimization metadata:
+- `http://emdl.ws.microsoft.com`
+- `http://*.dl.delivery.mp.microsoft.com`
+
+Windows Update and Microsoft Store backend services and Windows Update and Microsoft Store payloads
+
+- `http://*.windowsupdate.com`
+- `https://*.delivery.mp.microsoft.com`
+- `https://*.update.microsoft.com`
+- `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
+
+For more information about this if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
 
 ## Troubleshooting
 
