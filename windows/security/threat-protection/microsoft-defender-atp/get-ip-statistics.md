@@ -1,6 +1,6 @@
 ---
 title: Get IP statistics API
-description: Retrieves the prevalence for the given IP.
+description: Get the latest stats for your IP using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

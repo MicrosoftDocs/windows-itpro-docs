@@ -1,6 +1,6 @@
 ---
 title: OMA DM protocol support
-description: OMA DM protocol support
+description: See how the OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload.
 ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
 ms.reviewer: 
 manager: dansimp

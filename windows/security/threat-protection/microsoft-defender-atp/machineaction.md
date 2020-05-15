@@ -1,6 +1,6 @@
 ---
 title: machineAction resource type
-description: Retrieves top recent machineActions.
+description: Quickly respond to detected attacks by isolating machines or collecting an investigation package.
 keywords: apis, supported apis, get, machineaction, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
