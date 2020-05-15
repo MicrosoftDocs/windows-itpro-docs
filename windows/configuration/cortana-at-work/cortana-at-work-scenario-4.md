@@ -24,4 +24,4 @@ This process helps you find out if a time slot is free on your calendar.
 
 Cortana will respond with your availability for that time, as well as nearby meetings.
 
-![Screenshot: Cortana showing free time on a calendar](../media/screenshot8)
+:::image type="content" source="../../media/screenshot8.png" alt-text="Screenshot: Cortana showing free time on a calendar":::

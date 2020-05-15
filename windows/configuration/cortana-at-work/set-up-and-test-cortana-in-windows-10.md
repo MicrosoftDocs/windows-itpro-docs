@@ -35,7 +35,7 @@ Sign in to the [Office Configuration Admin tool](https://config.office.com/).
 
 Follow the steps [here](https://docs.microsoft.com/en-us/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below:
 
-![Screenshot: Bing policy example](../media/screenshot3)
+:::image type="content" source="../../media/screenshot3.png" alt-text="Screenshot: Bing policy example":::
 
 ## How does Microsoft handle customer data for Bing Answers?
 
