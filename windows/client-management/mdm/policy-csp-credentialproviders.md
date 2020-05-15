@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialProviders
-description: Policy CSP - CredentialProviders
+description: Learn the policy CSP for credential provider  set up, sign in, PIN requests and so on. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

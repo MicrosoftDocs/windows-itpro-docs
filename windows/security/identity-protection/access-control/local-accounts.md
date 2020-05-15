@@ -1,6 +1,6 @@
 ---
 title: Local Accounts (Windows 10)
-description: Local Accounts
+description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

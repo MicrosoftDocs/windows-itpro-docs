@@ -64,6 +64,8 @@ Provisioning packages can include management instructions and policies, custom n
 1. **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). This includes HoloLens 2 capabilities.
 2. **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configuration Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box. This option does not include HoloLens 2 capabilities.
 
+> [!NOTE]
+> If you know you will be using an offline PC that needs access to Windows Configuration Designer please follow the offline app install [here](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) for Advanced Recovery Companion but making Windows Confiugration Desinger your selection instead. 
 
 ### 2. Create the provisioning package
 
