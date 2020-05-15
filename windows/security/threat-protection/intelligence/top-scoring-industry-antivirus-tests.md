@@ -22,9 +22,9 @@ search.appverid: met150
 
 ## Microsoft Threat Protection
 
-[Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-Microsoft Threat Protection combines into a single solution the capabilities of [Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Office 365 ATP](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Azure ATP](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Cloud App Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security).
+Microsoft Threat Protection combines into a single solution the capabilities of [Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Office 365 ATP](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Azure ATP](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
@@ -109,4 +109,4 @@ The capabilities within Microsoft Defender ATP provide [additional layers of pro
 
 [Learn more about Microsoft Defender ATP](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) and evaluate it in your own network by signing up for a [90-day trial of Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](../microsoft-defender-atp/preview-settings.md).
 
-[Learn more about Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable).
+[Learn more about Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
