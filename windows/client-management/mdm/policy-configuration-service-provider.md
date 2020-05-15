@@ -2451,6 +2451,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 
+### Location policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-location.md#location-enablelocation" id="location-enablelocation">Location/EnableLocation</a>
+  </dd>
+</dl>
 
 ### LockDown policies
 
