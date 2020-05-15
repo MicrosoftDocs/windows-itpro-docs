@@ -1,6 +1,6 @@
 ---
 title: Personalization CSP
-description: Personalization CSP
+description: Use the Personalization CSP to lock screen and desktop background images, prevent users from changing the image, and use the settings in a provisioning package.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

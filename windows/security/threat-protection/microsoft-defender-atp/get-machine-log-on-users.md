@@ -1,6 +1,6 @@
 ---
 title: Get machine log on users API
-description: Retrieves a collection of logged on users.
+description: Retrieve a collection of logged on users on a specific machine using Microsoft Defender ATP APIs.
 keywords: apis, graph api, supported apis, get, machine, log on, users
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -73,7 +73,7 @@ Here is an example of the request.
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
+GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
 **Response**
