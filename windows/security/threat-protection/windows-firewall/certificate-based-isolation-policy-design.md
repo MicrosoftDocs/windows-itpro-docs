@@ -1,6 +1,6 @@
 ---
 title: Certificate-based Isolation Policy Design (Windows 10)
-description: Certificate-based Isolation Policy Design
+description: Explore the methodology behind Certificate-based Isolation Policy Design and how it defers from Domain Isolation and Server Isolation Policy Design.
 ms.assetid: 63e01a60-9daa-4701-9472-096c85e0f862
 ms.reviewer: 
 ms.author: dansimp
