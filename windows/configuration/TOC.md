@@ -11,7 +11,7 @@
 ### [Test scenario 5 - Find out about a person](cortana-at-work/cortana-at-work-scenario-5.md)
 ### [Test scenario 6 - Change your language and perform a quick search with Cortana](cortana-at-work/cortana-at-work-scenario-6.md)
 ## [Send feedback about Cortana back to Microsoft](cortana-at-work/cortana-at-work-feedback.md)
-## [Set up and test Cortana in Windows 10, versions 1909 and earlier, with Office 365 in your organization](cortana-at-work/cortana-at-work-o365.md)
+## [Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization](cortana-at-work/cortana-at-work-o365.md)
 ## [Testing scenarios using Cortana in your business or organization](cortana-at-work/cortana-at-work-testing-scenarios.md)
 ### [Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query](cortana-at-work/test-scenario-1)
 ### [Test scenario 2 - Perform a quick search with Cortana at work](cortana-at-work/test-scenario-2)

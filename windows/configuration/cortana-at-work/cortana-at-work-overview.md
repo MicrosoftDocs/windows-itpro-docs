@@ -44,7 +44,7 @@ Your organization must have an Azure AD tenant and your employees&#39; devices m
 
 ## How is my data processed by Cortana?
 
-Cortana's approach to integration with Microsoft 365 has changed in with Windows 10, version 2004 and later.
+Cortana's approach to integration with Microsoft 365 has changed with Windows 10, version 2004 and later.
 
 ### Cortana in Windows 10, version 2004 and later
 
