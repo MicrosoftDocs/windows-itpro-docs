@@ -2222,7 +2222,7 @@ When a service connects with the device identity, signing and encryption are sup
 <!--/Description-->
 <!--RegistryMapped-->
 GP Info:  
--   GP English name: *Network security: Allow Local System to use computer identity for NTLM.*
+-   GP English name: *Network security: Allow Local System to use computer identity for NTLM*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
