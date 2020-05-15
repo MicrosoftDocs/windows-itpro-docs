@@ -42,6 +42,7 @@ If the script completes successfully, see [Troubleshoot onboarding issues on the
 
 ### Troubleshoot onboarding issues when deploying with Microsoft Endpoint Configuration Manager
 When onboarding machines using the following versions of Configuration Manager:
+- Microsoft Endpoint Configuration Manager 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
 
@@ -302,10 +303,10 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 >[!NOTE]
->The following steps are only relevant when using Microsoft Endpoint Configuration Manager (current branch)
+>The following steps are only relevant when using Microsoft Endpoint Configuration Manager 
 
 
-1. Create an application in Microsoft Endpoint Configuration Manager current branch. 
+1. Create an application in Microsoft Endpoint Configuration Manager. 
 
     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-1.png)
 

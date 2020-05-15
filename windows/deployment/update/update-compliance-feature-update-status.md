@@ -2,7 +2,7 @@
 title: Update Compliance - Feature Update Status report
 ms.reviewer: 
 manager: laurawi
-description: an overview of the Feature Update Status report
+description: Find the latest status of feature updates with an overview of the Feature Update Status report.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy

@@ -119,7 +119,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 
 
-2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager **.
+2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 

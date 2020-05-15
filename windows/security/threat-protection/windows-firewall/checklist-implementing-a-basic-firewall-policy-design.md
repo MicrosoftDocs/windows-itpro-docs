@@ -1,6 +1,6 @@
 ---
 title: Checklist Implementing a Basic Firewall Policy Design (Windows 10)
-description: Checklist Implementing a Basic Firewall Policy Design
+description: Follow this parent checklist for implementing a basic firewall policy design to ensure successful implementation. 
 ms.assetid: 6caf0c1e-ac72-4f9d-a986-978b77fbbaa3
 ms.reviewer: 
 ms.author: dansimp
