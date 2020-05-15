@@ -229,7 +229,7 @@ Windows 10 has several important improvements to the security of the heap:
 
 ### Kernel pool protections
 
-The operating system kernel in Windows sets aside two pools of memory, one that remains in physical memory (“nonpaged pool”) and one that can be paged in and out of physical memory (“paged pool”). There are many types of attacks that have been attempted against these pools, such as process quota pointer encoding; lookaside, delay free, and pool page cookies; and PoolIndex bounds checks. Windows 10 has multiple “pool hardening” protections, such as integrity checks, that help protect the kernel pool against such attacks.
+The operating system kernel in Windows sets aside two pools of memory, one that remains in physical memory (“nonpaged pool”) and one that can be paged in and out of physical memory (“paged pool”). There are many mitigations that have been added over time, such as process quota pointer encoding; lookaside, delay free, and pool page cookies; and PoolIndex bounds checks. Windows 10 adds multiple “pool hardening” protections, such as integrity checks, that help protect the kernel pool against more advanced attacks.
 
 In addition to pool hardening, Windows 10 includes other kernel hardening features:
 
