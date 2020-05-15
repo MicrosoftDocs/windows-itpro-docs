@@ -20,6 +20,8 @@ manager: dansimp
 
 Cortana will respond with the information from Bing.
 
+![Screenshot: Cortana showing current time in Hyderbad](../media/screenshot5)
+
 >[!NOTE]
 >This scenario requires Bing Answers to be enabled. For more information, see Set up and configure the Bing Answers feature.
 

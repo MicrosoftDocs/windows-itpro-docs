@@ -18,10 +18,8 @@ Cortana can help you quickly look up information about someone or the org chart.
 
 1. Select the  **Cortana**  icon in the taskbar.
 
-2. Type or select the mic and say, **Who is name of person in your organization?**
+2. Type or select the mic and say, **Who is name of person in your organization's?**
 
-3. Type or select the mic and say, **Who is name of person in your organization's?**
-
-insert screenshot 9
+![Screenshot: Cortana showing name of person in your organization](../media/screenshot9)
 
 Cortana will respond with information about the person. You can select the person to open information about them in Microsoft Search.

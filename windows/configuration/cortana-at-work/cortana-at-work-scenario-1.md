@@ -24,7 +24,7 @@ manager: dansimp
 
 When you say &quot;Cortana&quot;, Cortana will open in listening mode to acknowledge the wake word.
 
-Insert screenshot 4
+![Screenshot: Cortana listening mode](../media/screenshot4)
 
 Once you finish saying your query, Cortana will open with the result.
 

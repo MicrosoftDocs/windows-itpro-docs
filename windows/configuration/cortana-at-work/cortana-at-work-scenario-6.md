@@ -22,4 +22,4 @@ Cortana can help employees in regions outside the US search for quick answers li
 
 3. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**.
 
-insert screenshot 10
+![Screenshot: Cortana showing a change your language and showing search results in Spanish](../media/screenshot10)

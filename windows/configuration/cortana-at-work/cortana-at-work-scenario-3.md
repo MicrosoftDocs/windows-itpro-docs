@@ -20,6 +20,6 @@ This scenario helps you set up, review, and edit a reminder. For example, you ca
 
 Cortana will create a reminder in Microsoft To Do and will remind you at the appropriate time.
 
-Insert screenshot 6
+![Screenshot: Cortana set a reminder](../media/screenshot6)
 
-Insert screenshot 7
+![Screenshot: Cortana showing reminder on page](../media/screenshot7)
