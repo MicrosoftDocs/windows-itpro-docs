@@ -18,6 +18,7 @@ ms.author: dansimp
 Cortana is a personal productivity assistant in Microsoft 365, helping your users achieve more with less effort and focus on what matters. The Cortana app in Windows 10 helps users quickly get information across Microsoft 365, using typed or spoken queries to connect with people, check calendars, set reminders, add tasks, and more.
 
 INSERT SCREENSHOT 1
+![Alt image text](media/project-name/your-image-filename.png)
 
 ## Where is Cortana available for use in my organization?
 
@@ -31,7 +32,6 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 
 >[!NOTE]
 >A microphone is not required to use Cortana.
-
 
 |**Software**  |**Minimum version**  |
 |---------|---------|
@@ -73,6 +73,7 @@ First, the user must enable the wake word from within Cortana settings. Once it 
 The first decision is made by the Windows Multiple Voice Assistant platform leveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
 
 [INSERT SCREENSHOT 2]
+![Alt image text](media/project-name/your-image-filename.png)
 
 At that point, the Cortana app will receive the audio, run a second, more accurate wake word detector, and optionally send it to a Microsoft cloud service where a third wake word detector will confirm. If the service does not confirm that the activation was valid, the audio will be discarded and deleted from any further processing or server logs. On the user&#39;s PC, the Cortana app will be silently dismissed, and no query will be shown in conversation history because the query was discarded.
 
