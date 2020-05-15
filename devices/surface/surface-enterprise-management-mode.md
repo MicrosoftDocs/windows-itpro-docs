@@ -228,7 +228,7 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-The latest version of SEMM to be released May 11, 2020 includes: 
+The latest version of SEMM released May 11, 2020 includes: 
 - Support for Surface Go 2
 - Support for Surface Book 3
 - Bug fixes
