@@ -19,9 +19,6 @@ manager: dansimp
 
 Working with a developer, you can create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps. These voice-enabled actions can reduce the time necessary to access your apps and to complete simple actions.
 
->[!NOTE]
->For more info about how your developer can extend your current apps to work directly with Cortana, see [The Cortana Skills Kit](https://docs.microsoft.com/cortana/getstarted).
-
 ## High-level process
 Cortana uses a Voice Command Definition (VCD) file, aimed at an installed app, to define the actions that are to happen during certain vocal commands. A VCD file can be very simple to very complex, supporting anything from a single sound to a collection of more flexible, natural language sounds, all with the same intent.
 

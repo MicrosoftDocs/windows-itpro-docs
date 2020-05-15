@@ -35,7 +35,7 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 
 |**Software**  |**Minimum version**  |
 |---------|---------|
-|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 103 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see **How is my data processed by Cortana** below. <br> **Mobile**: Windows 10 Mobile, version 1703 (legacy version of Cortana) |
+|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 103 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see **How is my data processed by Cortana** below. |
 |Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn’t required.        |
 |Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word (“Cortana”) for hands-free activation or voice commands to easily ask for help.  |
 
@@ -47,9 +47,9 @@ Your organization must have an Azure AD tenant and your employees&#39; devices m
 
 Cortana's approach to integration with Microsoft 365 has changed in with Windows 10, version 2004 and later.
 
-### **Cortana in Windows 10, version 2004 and later**
+### Cortana in Windows 10, version 2004 and later
 
-Cortana in Windows 10, version 2004 and later, meets the same enterprise-level privacy, security, and compliance promises for Cortana enterprise services, as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). For more information, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
+Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). For more information, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
 
 #### How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
@@ -62,16 +62,15 @@ The table below describes the data handling for Cortana enterprise services.
 |**Stays in Geo**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.         |
 |**Retention**     |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. Speech audio is not retained.         |
 |**Processing and confidentiality**     |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.         |
-|**Usage**     |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud consistent with the Online Services Terms. 
-Your data is not used to target advertising.   |
+|**Usage**     |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud consistent with the Online Services Terms. Your data is not used to target advertising.  |
 
-#### How does the wake word (Cortana)work? If I enable it, is Cortana always listening?
+#### How does the wake word (Cortana) work? If I enable it, is Cortana always listening?
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 
 First, the user must enable the wake word from within Cortana settings. Once it has been enabled, a component of Windows called the [Windows Multiple Voice Assistant platform](https://docs.microsoft.com/windows-hardware/drivers/audio/voice-activation-mva#voice-activation) will start listening for the wake word. No audio is processed by speech recognition unless two local wake word detectors and a server-side one agree with high confidence that the wake word was heard.
 
-The first decision is made by the Windows Multiple Voice Assistant platformleveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
+The first decision is made by the Windows Multiple Voice Assistant platform leveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
 
 [INSERT SCREENSHOT 2]
 
@@ -79,12 +78,12 @@ At that point, the Cortana app will receive the audio, run a second, more accura
 
 If all three wake word detectors agree, the Cortana canvas will show what speech has been recognized.
 
-### **Cortana in Windows 10, versions 1909 and earlier**
+### Cortana in Windows 10, versions 1909 and earlier
 
 Cortana in Windows 10, versions 1909 and earlier, isn&#39;t a service covered by the Office 365 Trust Center. [Learn more about how Cortana in Windows 10, version 1909 and earlier, treats your data](https://go.microsoft.com/fwlink/p/?LinkId=536419).
 
 Cortana is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement).
 
-## **See also**
+## See also
 
 - [What is Cortana?](https://go.microsoft.com/fwlink/p/?LinkId=746818)
