@@ -35,17 +35,19 @@ Feedback Hub is an excellent way to alert the engineering team to bugs and to ma
 
 1. Use the **Start** gesture to open the **Start** menu, and then select **Feedback Hub**. The app opens in your environment.
 
-   ![Feedback app on HoloLens Start menu](./images/hololens-start-feedback.png)
+   ![Feedback app on HoloLens Start menu](./images/hololens2-feedbackhub-tile.png)
+   > [!NOTE]  
+   > If you don't see **Feedback Hub**, select **All Apps** to see the complete list of apps on the device.
 
 1. To see if someone else has given similar feedback, enter a few keywords about the topic in the **Feedback** search box.
 1. If you find similar feedback, select it, add any additional information that you have in the **Write a comment** box, then select **Upvote**.
 1. If you don't find any similar feedback, select **Add new feedback**.
 
-   ![Add new Feedback](./images/hololens-feedback-1.png)
+   ![Add new feedback](./images/hololens-feedback-1.png)
 
 1. Enter a title for your feedback, and then add details in the **Explain in more detail** section. The more details you provide, such as how to reproduce this issue and the impact it has, the more actionable your feedback is. When finished, select **Next**.
 
-1. Select a topic from **Select a category**, and then select a subcategory from **Select a subcategory**. The following table describes the categories that are available.
+1. Select a topic from **Select a category**, and then select a subcategory from **Select a subcategory**. The following table describes the categories that are available in the Windows Holographic category.
 
    > [!NOTE]  
    > **Commercial customers**: To report a bug that is related to MDM, provisioning, or any other device management aspect, select the **Enterprise Management** category, and the **Device** subcategory.
