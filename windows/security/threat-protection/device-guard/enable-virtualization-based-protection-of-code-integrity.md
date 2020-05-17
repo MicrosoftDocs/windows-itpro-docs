@@ -31,7 +31,7 @@ If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 ## HVCI Features
 
 * HVCI protects modification of the Control Flow Guard (CFG) bitmap.
-* HVCI also ensure your other Trustlets, like Credential Guard, have a valid certificate.
+* HVCI also ensures that your other Trustlets, like Credential Guard, have got a valid certificate.
 * Modern device drivers must also have an EV (Extended Validation) certificate and should support HVCI.
 
 ## How to turn on HVCI in Windows 10
