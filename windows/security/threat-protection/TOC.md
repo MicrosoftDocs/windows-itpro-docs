@@ -197,7 +197,8 @@
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender Advanced Threat Protection for Mac]()
+#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
@@ -222,7 +223,8 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+### [Microsoft Defender Advanced Threat Protection for Linux]()
+#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)

@@ -78,7 +78,7 @@ Windows Virtual Desktop is a comprehensive desktop and app virtualization servic
 
 #### Microsoft Endpoint Manager
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now are [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
 
 ### Windows 10 Pro and Enterprise in S mode
 

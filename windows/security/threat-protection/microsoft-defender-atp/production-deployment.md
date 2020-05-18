@@ -198,9 +198,9 @@ Use netsh to configure a system-wide static proxy.
 
 1. Open an elevated command-line:
 
-    a. Go to **Start** and type **cmd**.
+    1. Go to **Start** and type **cmd**.
 
-    b. Right-click **Command prompt** and select **Run as administrator**.
+    1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**:
 
@@ -228,7 +228,7 @@ needed if the machine is on Windows 10, version 1803 or later.
 
  Service location | Microsoft.com DNS record
 -|-
-Common URLs for all locations | ```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
+Common URLs for all locations | ```crl.microsoft.com/pki/crl/*```<br> ```ctldl.windowsupdate.com``` <br>```www.microsoft.com/pkiops/*```<br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
 European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` 
 United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` 
 United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net```
@@ -253,9 +253,9 @@ Microsoft Defender ATP is built on Azure cloud, deployed in the following region
 You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
 
 > [!NOTE]
-> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
+> As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them
+|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so that the Microsoft Defender ATP service can get sensor data from them.
