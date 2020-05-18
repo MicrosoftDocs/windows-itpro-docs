@@ -59,4 +59,7 @@ To configure automated investigation and remediation, you turn the features on, 
 
 - [Visit the Action Center to view pending and completed remediation actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center)
 
+- [Review and approve actions following an automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation)
+
 - [Manage indicators for files, IP addresses, URLs, or domains that you want to allow, alert and block, or alert only](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+
