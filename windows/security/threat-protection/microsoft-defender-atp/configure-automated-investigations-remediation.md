@@ -35,7 +35,7 @@ Automated investigation and remediation capabilities mimic the ideal steps that 
 
 ## Configure automated investigation and remediation capabilities
 
-To configure automated investigation and remediation, you turn the features on, and then you set up machine groups.
+To configure automated investigation and remediation, you turn the features on, and then you set up device groups.
 
 ### Turn on automated investigation and remediation
 
@@ -44,9 +44,13 @@ To configure automated investigation and remediation, you turn the features on, 
 3. In the **General** section, select **Advanced features**.
 4. Turn on both **Automated Investigation** and **Automatically resolve alerts**.
 
-### Set up machine groups
+### Set up device groups
 
-1. In the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), on the **Settings** page, under **Permissions**, select **Machine groups**.
-2. Select **+ Add machine group**, and create at least one machine group. In the **Automation level list**, select **Full – remediate threats automatically**.
+1. In the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
+2. Select **+ Add machine group**.
+3. Create at least one device group, as follows:
+   - Specify a name and description for the device group.
+   - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**.
+   - 
 
 The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
