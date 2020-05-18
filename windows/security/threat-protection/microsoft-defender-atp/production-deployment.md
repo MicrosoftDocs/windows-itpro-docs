@@ -198,9 +198,9 @@ Use netsh to configure a system-wide static proxy.
 
 1. Open an elevated command-line:
 
-    a. Go to **Start** and type **cmd**.
+    1. Go to **Start** and type **cmd**.
 
-    b. Right-click **Command prompt** and select **Run as administrator**.
+    1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**:
 
@@ -253,9 +253,9 @@ Microsoft Defender ATP is built on Azure cloud, deployed in the following region
 You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
 
 > [!NOTE]
-> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
+> As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them
+|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so that the Microsoft Defender ATP service can get sensor data from them.
