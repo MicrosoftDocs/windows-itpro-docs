@@ -24,8 +24,10 @@ ms.topic: article
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
+- Windows Server (SAC) version 1803 and later
 - Windows Server, version 1803
-- Windows Server, 2019 and later
+- Windows Server 2019 and later
+- Windows Server 2019 core edition
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -37,9 +39,9 @@ The service supports the onboarding of the following servers:
 - Windows Server 2008 R2 SP1 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server, version 1803
+- Windows Server (SAC) version 1803 and later
 - Windows Server 2019 and later
-
+- Windows Server 2019 core edition
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
@@ -128,9 +130,8 @@ Once completed, you should see onboarded servers in the portal within an hour.
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
 
-
-## Windows Server, version 1803 and Windows Server 2019
-To onboard Windows Server, version 1803 or Windows Server 2019, refer to the supported methods and versions below.
+## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+To onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition, refer to the supported methods and versions below.
 
 > [!NOTE]
 > The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
@@ -191,7 +192,7 @@ The following capabilities are included in this integration:
 
 
 ## Offboard servers 
-You can offboard Windows Server, version 1803 and Windows 2019 in the same method available for Windows 10 client machines. 
+You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client machines.
 
 For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent
