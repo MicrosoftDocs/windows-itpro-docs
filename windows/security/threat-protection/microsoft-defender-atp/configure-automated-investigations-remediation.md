@@ -51,5 +51,5 @@ To configure automated investigation and remediation, you [turn on the features]
 
 - [Review and approve actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation)
 
-- [Manage indicators for files, IP addresses, URLs, or domains that you want to allow, alert and block, or alert only](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+- [Manage indicators for files, IP addresses, URLs, or domains](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 
