@@ -35,3 +35,13 @@ Automated investigation and remediation capabilities mimic the ideal steps that 
 
 ## Configure automated investigation and remediation capabilities
 
+To configure automated investigation and remediation, you turn the features on, and then you set up machine groups.
+
+### Turn on automated investigation and remediation
+
+1. As a global administrator or security administrator, go to the Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) and sign in.
+2. In the navigation pane, choose **Settings**.
+3. In the **General** section, select **Advanced features**.
+4. Turn on both **Automated Investigation** and **Automatically resolve alerts**.
+
+### Set up machine groups
