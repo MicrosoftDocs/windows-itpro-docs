@@ -79,7 +79,7 @@ If all three wake word detectors agree, the Cortana canvas will show what speech
 
 ### Cortana in Windows 10, versions 1909 and earlier
 
-Cortana in Windows 10, versions 1909 and earlier, isn&#39;t a service covered by the Office 365 Trust Center. [Learn more about how Cortana in Windows 10, version 1909 and earlier, treats your data](https://go.microsoft.com/fwlink/p/?LinkId=536419).
+Cortana in Windows 10, versions 1909 and earlier, isn't a service covered by the Office 365 Trust Center. [Learn more about how Cortana in Windows 10, version 1909 and earlier, treats your data](https://go.microsoft.com/fwlink/p/?LinkId=536419).
 
 Cortana is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement).
 
