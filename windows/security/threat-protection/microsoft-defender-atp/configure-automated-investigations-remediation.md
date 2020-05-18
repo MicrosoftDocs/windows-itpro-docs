@@ -29,13 +29,13 @@ Automated investigation and remediation capabilities mimic the ideal steps that 
 1. Investigate alerts that were triggered, and analyze evidence.
 2. Remediate threats quickly, as appropriate.
 3. Resolve alerts as remediation actions are taken, and update investigation status.
-4. Find other impacted devices, and repeat steps 1-3 as necessary.
+4. Find other affected devices, and repeat steps 1-3 as necessary.
 
 [Learn more about automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). 
 
 ## Configure automated investigation and remediation capabilities
 
-To configure automated investigation and remediation, you turn the features on, and then you set up device groups.
+To configure automated investigation and remediation, you turn on the features, and then you set up device groups.
 
 ### Turn on automated investigation and remediation
 
@@ -53,13 +53,13 @@ To configure automated investigation and remediation, you turn the features on, 
    - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
    - In the **Members** section, use one or more conditions to identify and include devices.
    - On the **User access** tab, select the [Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) who should have access to the device group you're creating.
-4. Select **Done** when you are finished setting up your device group.
+4. Select **Done** when you're finished setting up your device group.
 
 ## Next steps
 
 - [Visit the Action Center to view pending and completed remediation actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center)
 
-- [Review and approve actions following an automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation)
+- [Review and approve actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation)
 
 - [Manage indicators for files, IP addresses, URLs, or domains that you want to allow, alert and block, or alert only](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 
