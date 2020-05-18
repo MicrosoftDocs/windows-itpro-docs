@@ -64,7 +64,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Combination PD hubs (USB A plus PD charging)
 
 > [!NOTE]
-> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with the 20H1 OS. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
+> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
 
 ## Connect to Miracast
 
