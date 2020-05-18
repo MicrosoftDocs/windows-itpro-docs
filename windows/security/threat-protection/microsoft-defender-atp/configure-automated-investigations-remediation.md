@@ -33,7 +33,7 @@ Automated investigation and remediation capabilities mimic the ideal steps that 
 
 [Learn more about automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). 
 
-To configure automated investigation and remediation, you turn on the features, and then you set up device groups.
+To configure automated investigation and remediation, you [turn on the features](#turn-on-automated-investigation-and-remediation), and then you [set up device groups](#set-up-device-groups).
 
 ## Turn on automated investigation and remediation
 
