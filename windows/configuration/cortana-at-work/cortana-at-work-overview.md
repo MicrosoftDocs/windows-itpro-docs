@@ -17,7 +17,7 @@ ms.author: dansimp
 
 Cortana is a personal productivity assistant in Microsoft 365, helping your users achieve more with less effort and focus on what matters. The Cortana app in Windows 10 helps users quickly get information across Microsoft 365, using typed or spoken queries to connect with people, check calendars, set reminders, add tasks, and more.
 
-:::image type="content" source="../../media/screenshot1.png" alt-text="Screenshot: Cortana home page example":::
+:::image type="content" source="../../../images/screenshot1.png" alt-text="Screenshot: Cortana home page example":::
 
 ## Where is Cortana available for use in my organization?
 
