@@ -50,8 +50,13 @@ To configure automated investigation and remediation, you turn the features on, 
 2. Select **+ Add machine group**.
 3. Create at least one device group, as follows:
    - Specify a name and description for the device group.
-   - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**.
-   - In the **Members** section, you can use one or more conditions to identify and include devices.
+   - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
+   - In the **Members** section, use one or more conditions to identify and include devices.
    - On the **User access** tab, select the [Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) who should have access to the device group you're creating.
+4. Select **Done** when you are finished setting up your device group.
 
-The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
+## Next steps
+
+- [Visit the Action Center to view pending and completed remediation actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center)
+
+- [Manage indicators for files, IP addresses, URLs, or domains that you want to allow, alert and block, or alert only](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
