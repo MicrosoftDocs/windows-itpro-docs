@@ -72,7 +72,7 @@ You can also delete tags from this view.
 >- Windows 7 SP1
 
 > [!NOTE] 
-> The maximum number of characters that can be set in a tag from the registry is 30.
+> The maximum number of characters that can be set in a tag is 200.
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
