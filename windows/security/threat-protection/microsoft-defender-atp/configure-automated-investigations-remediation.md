@@ -51,6 +51,7 @@ To configure automated investigation and remediation, you turn the features on, 
 3. Create at least one device group, as follows:
    - Specify a name and description for the device group.
    - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**.
-   - 
+   - In the **Members** section, you can use one or more conditions to identify and include devices.
+   - On the **User access** tab, select the [Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) who should have access to the device group you're creating.
 
 The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
