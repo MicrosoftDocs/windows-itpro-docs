@@ -25,7 +25,6 @@ ms.topic: article
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) version 1803 and later
-- Windows Server, version 1803
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
