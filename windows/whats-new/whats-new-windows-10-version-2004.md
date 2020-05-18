@@ -49,7 +49,9 @@ FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to h
 
 ### Microsoft BitLocker
 
+## Edge
 
+https://www.microsoftedgeinsider.com/en-us/whats-new
 
 ## Cortana
 
