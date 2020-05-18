@@ -12,7 +12,7 @@ ms.author: stsyfuhs
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.reviewer:
+ms.reviewer: 
 ---
 
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
@@ -1184,7 +1184,7 @@ if($Enable)
     if(!$_isRedstone)
     {
         LogAndConsole "OS Not Redstone, enabling IsolatedUserMode separately"
-        #Enable/Disable IOMMU seperately
+        #Enable/Disable IOMMU separately
         ExecuteCommandAndLog 'DISM.EXE /Online /Enable-Feature:IsolatedUserMode /NoRestart'
     }
     $CmdOutput =  DISM.EXE /Online /Enable-Feature:Microsoft-Hyper-V-Hypervisor /All /NoRestart | Out-String
@@ -1253,7 +1253,7 @@ if($Disable)
         if(!$_isRedstone)
         {
             LogAndConsole "OS Not Redstone, disabling IsolatedUserMode separately"
-            #Enable/Disable IOMMU seperately
+            #Enable/Disable IOMMU separately
             ExecuteCommandAndLog 'DISM.EXE /Online /disable-Feature /FeatureName:IsolatedUserMode /NoRestart'
         }
         $CmdOutput =  DISM.EXE /Online /disable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /NoRestart | Out-String
