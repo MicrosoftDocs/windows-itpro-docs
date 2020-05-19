@@ -23,6 +23,4 @@ Cortana will respond with the information from Bing.
 :::image type="content" source="../../media/screenshot5.png" alt-text="Screenshot: Cortana showing current time in Hyderbad":::
 
 >[!NOTE]
->This scenario requires Bing Answers to be enabled. For more information, see Set up and configure the Bing Answers feature.
-
-**Set up and configure the Bing Answers feature** needs a link to the appropriate section in main page 2.
+>This scenario requires Bing Answers to be enabled. For more information, see [Set up and configure the Bing Answers feature](https://docs.microsoft.com/en-us/windows/configuration/cortana-at-work/set-up-and-test-cortana-in-windows-10#set-up-and-configure-the-bing-answers-feature).
