@@ -28,7 +28,7 @@ The following features are generally available (GA) in the latest release of Mic
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
-`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Defender+ATP%22&locale=en-us`
+`https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us`
 
 ## April 2020
 
