@@ -97,7 +97,7 @@ Content-type: application/json
     "severity": "Informational",
     "description": "test",
     "recommendedActions": "nothing",
-    “rbacGroupNames": [“group1”, “group2”]
+    "rbacGroupNames": ["group1", "group2"]
 }
 ```
 
