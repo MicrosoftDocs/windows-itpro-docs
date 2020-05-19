@@ -29,6 +29,9 @@ The Microsoft Defender ATP service is constantly being updated to include new fe
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
+>[!TIP]
+>Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+
 For more information on new capabilities that are generally available, see [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md).
 
 ## Turn on preview features
