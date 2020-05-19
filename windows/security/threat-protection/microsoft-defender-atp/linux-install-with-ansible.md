@@ -255,6 +255,10 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
+## Operating system upgrades
+
+When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+
 ## References
 
 - [Add or remove YUM repositories](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
