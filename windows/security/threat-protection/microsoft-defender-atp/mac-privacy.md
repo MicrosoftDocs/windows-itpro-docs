@@ -139,8 +139,8 @@ The following fields are collected:
 | to_version       | New security intelligence version. |
 | status           | Status of the update indicating success or failure. |
 | using_proxy      | Whether the update was done over a proxy. |
-| error            | Error code in case of failed updates. |
-| reason           | Error message in case of failed updates. |
+| error            | Error code if the update failed. |
+| reason           | Error message if the updated filed. |
 
 #### Product and service performance data events
 

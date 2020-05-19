@@ -33,7 +33,7 @@ These applications can increase the risk of your network being infected with mal
 
 Microsoft Defender ATP for Linux can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
 
-When a PUA is detected on an endpoint, Microsoft Defender ATP for Linux keeps a record of the infection in the threat history. This can be visualized from the Microsoft Defender Security Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
+When a PUA is detected on an endpoint, Microsoft Defender ATP for Linux keeps a record of the infection in the threat history. The history can be visualized from the Microsoft Defender Security Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
 
 ## Configure PUA protection
 

@@ -142,8 +142,8 @@ The following fields are collected:
 | to_version       | New security intelligence version. |
 | status           | Status of the update indicating success or failure. |
 | using_proxy      | Whether the update was done over a proxy. |
-| error            | Error code in case of failed updates. |
-| reason           | Error message in case of failed updates. |
+| error            | Error code if the update failed. |
+| reason           | Error message if the update failed. |
 
 #### Product and service performance data events
 
@@ -169,7 +169,7 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 
 - All files under */var/log/microsoft/mdatp*
 - Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Microsoft Defender ATP for Linux
-- Product installation and uninstalltion logs under */var/log/microsoft_mdatp_\*.log*
+- Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
 
 ### Optional diagnostic data
 
@@ -187,7 +187,7 @@ The following fields are collected:
 
 | Field                                              | Description |
 | -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Connection retry time out when communication with the cloud. |
+| connection_retry_timeout                           | Connection retry time-out when communication with the cloud. |
 | file_hash_cache_maximum                            | Size of the product cache. |
 | crash_upload_daily_limit                           | Limit of crash logs uploaded daily. |
 | antivirus_engine.exclusions[].is_directory         | Whether the exclusion from scanning is a directory or not. |
