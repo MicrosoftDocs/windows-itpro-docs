@@ -239,12 +239,12 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
 
     # Extract the Profile XML from the ps1 file #
 
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with the optimize list #
 
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
-    [xml]$VPNprofilexml="<VPNPROFILE>"+$xmlbody+"</VPNPROFILE>"
+    [xml]$VPNprofilexml="<VPNProfile>"+$xmlbody+"</VPNProfile>"
 
         # Loop through each address found in VPNPROFILE XML section #
         foreach ($Route in $VPNprofilexml.VPNProfile.Route)
@@ -349,7 +349,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
     $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #  
 
     # Extract the Profile XML from the XML file #
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with optimize list #
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
@@ -367,7 +367,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
 
     # In VPN list only #
     $In_VPN_only =$ARRVPN | Where {$optimizeIpsv4 -NotContains $_}
-    [array]$Inpfile = get-content $VPNprofilefile
+    [System.Collections.ArrayList]$Inpfile = get-content $VPNprofilefile
 
         if ($In_Opt_Only.Count -gt 0 )
         {
@@ -377,10 +377,10 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
                 {
                     # Add the missing IP address(es) #
                     $IPInfo=$NewIP.Split("/")
-                    $inspoint = $Inpfile[0].IndexOf("</VPNProfile")
-                    $routes += "<Route>"+"<Address>"+$IPInfo[0].Trim()+"</Address>"+"<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>"+"<ExclusionRoute>true</ExclusionRoute>"+"</Route>"
+                    $routes += "<Route>`n"+"`t<Address>"+$IPInfo[0].Trim()+"</Address>`n"+"`t<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>`n"+"`t<ExclusionRoute>true</ExclusionRoute>`n"+"</Route>`n"
                 }
-            $Inpfile = $Inpfile[0].Insert($inspoint,$routes)
+            $inspoint = $Inpfile.IndexOf("</VPNProfile>")
+            $Inpfile.Insert($inspoint,$routes)
 
             # Update filename and write new XML file #
             $NewFileName=(Get-Item $VPNprofilefile).Basename + "-NEW.xml"
@@ -595,7 +595,7 @@ $ProfileXML = '<VPNProfile>
     <ExclusionRoute>true</ExclusionRoute>
     </Route>
     <Proxy>  
-            <AutoConfigUrl>http://webproxy.corp.contsoso.com/proxy.pac</AutoConfigUrl>  
+            <AutoConfigUrl>http://webproxy.corp.contoso.com/proxy.pac</AutoConfigUrl>  
       </Proxy>  
 </VPNProfile>'
 
@@ -672,5 +672,5 @@ An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/secu
 >This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.
 
 ```xml
-<VPNProfile><RememberCredentials>true</RememberCredentials><DnsSuffix>corp.contoso.com</DnsSuffix><AlwaysOn>true</AlwaysOn><TrustedNetworkDetection>corp.contoso.com</TrustedNetworkDetection><NativeProfile><Servers>edge1.contoso.com</Servers><RoutingPolicyType>ForceTunnel</RoutingPolicyType><NativeProtocolType>IKEv2</NativeProtocolType><Authentication><MachineMethod>Certificate</MachineMethod></Authentication></NativeProfile><Route><Address>13.107.6.152</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.18.10</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.128.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>23.103.160.0</Address><PrefixSize>20</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.96.0.0</Address><PrefixSize>13</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.104.0.0</Address><PrefixSize>15</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.96.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>131.253.33.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>132.245.0.0</Address><PrefixSize>16</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.32.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>191.234.140.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>204.79.197.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.136.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.108.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.104.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>104.146.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.40.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.60.1</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.64.0</Address><PrefixSize>18</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.112.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.120.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Proxy><AutoConfigUrl>http://webproxy.corp.contsoso.com/proxy.pac</AutoConfigUrl></Proxy></VPNProfile>
+<VPNProfile><RememberCredentials>true</RememberCredentials><DnsSuffix>corp.contoso.com</DnsSuffix><AlwaysOn>true</AlwaysOn><TrustedNetworkDetection>corp.contoso.com</TrustedNetworkDetection><NativeProfile><Servers>edge1.contoso.com</Servers><RoutingPolicyType>ForceTunnel</RoutingPolicyType><NativeProtocolType>IKEv2</NativeProtocolType><Authentication><MachineMethod>Certificate</MachineMethod></Authentication></NativeProfile><Route><Address>13.107.6.152</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.18.10</Address><PrefixSize>31</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.128.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>23.103.160.0</Address><PrefixSize>20</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.96.0.0</Address><PrefixSize>13</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.104.0.0</Address><PrefixSize>15</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.96.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>131.253.33.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>132.245.0.0</Address><PrefixSize>16</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.32.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>191.234.140.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>204.79.197.215</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.136.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>40.108.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.104.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>104.146.128.0</Address><PrefixSize>17</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>150.171.40.0</Address><PrefixSize>22</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.60.1</Address><PrefixSize>32</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>13.107.64.0</Address><PrefixSize>18</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.112.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Route><Address>52.120.0.0</Address><PrefixSize>14</PrefixSize><ExclusionRoute>true</ExclusionRoute></Route><Proxy><AutoConfigUrl>http://webproxy.corp.contoso.com/proxy.pac</AutoConfigUrl></Proxy></VPNProfile>
 ```

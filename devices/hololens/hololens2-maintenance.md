@@ -1,9 +1,9 @@
 ---
-title: HoloLens 2 device care and cleaning FAQ
+title: HoloLens 2 cleaning FAQ
 description: 
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 3/26/2020
+ms.date: 4/14/2020
 ms.prod: hololens
 ms.topic: article
 ms.custom: 
@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Frequently asked questions about cleaning HoloLens 2 devices
+# HoloLens 2 cleaning FAQ
 
 > [!IMPORTANT]  
 > Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  
@@ -69,10 +69,10 @@ To clean the brow pad, wipe it by using a cloth that's moistened by using water 
 
 ## Can I use ultraviolet (UV) light to sanitize the device?
 
-UV germicidal irradiation has not been tested on HoloLens 2.
+UV-C germicidal irradiation has not been tested on HoloLens 2.
 
 > [!CAUTION]  
-> High levels of UV exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV radiation has the following effects, in order of the duration and intensity of exposure:
+> High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating. Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:
 >  
 > 1. The brow pad and device closures become discolored.
 > 1. Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.

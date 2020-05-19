@@ -119,11 +119,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 
 
-2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager **.
+2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 
-3.    Select **Download package**.
+3. Select **Download package**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
@@ -184,11 +184,11 @@ Before the systems can be onboarded into the workspace, the deployment scripts n
 Edit the InstallMMA.cmd with a text editor, such as notepad and update the
 following lines and save the file:
 
-    ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
+   ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
 
 Edit the ConfiguerOMSAgent.vbs with a text editor, such as notepad, and update the following lines and save the file:
 
-    ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
+   ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
 
 Microsoft Monitoring Agent (MMA) is currently (as of January 2019) supported on the following Windows Operating
 Systems:

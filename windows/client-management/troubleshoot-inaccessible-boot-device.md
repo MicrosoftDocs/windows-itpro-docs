@@ -112,8 +112,8 @@ To verify the BCD entries:
 
 2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
  
-   >[!NOTE]
-   >If the computer is UEFI-based, the **bootmgr**  and **winload**  entires under **{default}**  will contain an **.efi**  extension.
+   > [!NOTE]
+   > If the computer is UEFI-based, the **bootmgr** and **winload** entries under **{default}** will contain an **.efi** extension.
 
    ![bcdedit](images/screenshot1.png)
 
@@ -279,4 +279,3 @@ The reason that these entries may affect us is because there may be an entry in 
 *	`sfc /scannow /offbootdir=OsDrive:\ /offwindir=OsDrive:\Windows`
 
     ![SFC scannow](images/sfc-scannow.png)
-

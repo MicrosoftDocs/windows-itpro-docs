@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: scottmca
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
-ms.audience: itpro
+audience: itpro
+ms.date: 05/11/2020
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -95,7 +96,7 @@ The following list shows all the available devices you can manage in SEMM:
 |Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
 | Security                           | Displays the Surface UEFI **Security** page. If you do not configure this setting, the Security page is displayed.                                                                                                                 |
 | Devices                            | Displays the Surface UEFI **Devices** page. If you do not configure this setting,  the Devices page is displayed.                                                                                                                     |
-| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                                                            |
+| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the Boot page is displayed.                                                                                                                                                            |
 | DateTime                           | Displays the Surface UEFI **DateTime** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                |
 
 
@@ -226,6 +227,11 @@ serial-number independent. If the certificate is still valid, you can
 create a reset package using PowerShell to reset SEMM.
 
 ## Version History
+
+The latest version of SEMM released May 11, 2020 includes: 
+- Support for Surface Go 2
+- Support for Surface Book 3
+- Bug fixes
 
 ### Version 2.59.
 * Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.

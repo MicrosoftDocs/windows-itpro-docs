@@ -5,7 +5,7 @@
 ## [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
 ## [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
-## [Frequently asked questions about cleaning HoloLens 2 devices](hololens2-maintenance.md)
+## [HoloLens 2 cleaning FAQ](hololens2-maintenance.md)
 ## [Supported languages for HoloLens 2](hololens2-language-support.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
@@ -16,6 +16,7 @@
 ## [HoloLens (1st gen) fit and comfort FAQ](hololens1-fit-comfort-faq.md)
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
 # Deploy HoloLens and mixed-reality apps in commercial environments
 ## [Commercial features](hololens-commercial-features.md)
@@ -37,10 +38,9 @@
 # User management and access management
 ## [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk for specific applications](hololens-kiosk.md)
+## [Set up HoloLens as a kiosk](hololens-kiosk.md)
 
 # Holographic applications
-## [Use 3D Viewer on HoloLens](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Manage custom apps for HoloLens](holographic-custom-apps.md)
 
@@ -64,10 +64,13 @@
 ## [Frequently asked questions](hololens-faq.md)
 ## [Frequently asked security questions](hololens-faq-security.md)
 ## [Status of the HoloLens services](hololens-status.md)
-## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)
-## [SCEP whitepaper](scep-whitepaper.md)
+## [Get support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-# [HoloLens release notes](hololens-release-notes.md)
+# Resources
+## [Use 3D Viewer on HoloLens (1st gen)](holographic-3d-viewer-beta.md)
+## [Windows Autopilot for HoloLens 2 evaluation guide](hololens2-autopilot.md)
+
+# [HoloLens 2 release notes](hololens-release-notes.md)
 # [Give us feedback](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)

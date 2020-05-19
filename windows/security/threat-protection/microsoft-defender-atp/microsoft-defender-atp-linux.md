@@ -83,8 +83,11 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
 
-- Minimum kernel version 2.6.38
+- Minimum kernel version 3.10.0-327
 - The `fanotify` kernel option must be enabled
+  > [!CAUTION]
+  > Running Microsoft Defender ATP for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+
 - Disk space: 650 MB
 - The solution currently provides real-time protection for the following file system types:
 
@@ -111,7 +114,7 @@ The following table lists the services and their associated URLs that your netwo
 | United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
 
 > [!NOTE]
-> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server) 
+> For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Transparent proxy
@@ -119,7 +122,12 @@ Microsoft Defender ATP can discover a proxy server by using the following discov
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Microsoft Defender ATP. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
-For troubleshooting steps, see the [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md) page.
+> [!WARNING]
+> PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
+>
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+
+For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux](linux-support-connectivity.md).
 
 ## How to update Microsoft Defender ATP for Linux
 
@@ -131,4 +139,4 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](linux-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).

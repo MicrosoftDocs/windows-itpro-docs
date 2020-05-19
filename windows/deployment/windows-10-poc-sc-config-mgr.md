@@ -463,7 +463,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 11. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
-12. Click the **Task Sequence** tab. Under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**. A new group will be added under Tattoo.
+12. Click the **Task Sequence** tab. Under **State Restore** click **Tattoo** to highlight it, then click **Add** and choose **New Group**. A new group will be added under Tattoo.
 
 13. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then click **Apply**. To see the name change, click **Tattoo**, then click the new group again.
 
@@ -775,7 +775,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 9. Close the Map Network Drive window, the Explorer window, and the command prompt.
 
-10. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequenc Wizard. Click **Next** to continue with the deployment.
+10. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequence Wizard. Click **Next** to continue with the deployment.
 
 11. The task sequence will require several minutes to complete. You can monitor progress of the task sequence using the MDT Deployment Workbench under Deployment Shares > MDTProduction > Monitoring. The task sequence will:
     - Install Windows 10
@@ -859,7 +859,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     sc stop ccmsetup
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
-    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the SCCM client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
+    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
 
 9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue:
 
@@ -1027,7 +1027,7 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 ### Deploy the new computer
 
-1. Start PC4 and press ENTER for a network boot when prompted. To start PC4, type the following commands at an elevated Windows Powershell prompt on the Hyper-V host:
+1. Start PC4 and press ENTER for a network boot when prompted. To start PC4, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Start-VM PC4

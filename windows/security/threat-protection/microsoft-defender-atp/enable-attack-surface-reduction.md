@@ -1,5 +1,5 @@
 ---
-title: Enable ASR rules individually to protect your organization
+title: Enable attack surface reduction rules individually to protect your organization
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/13/2019
+ms.date: 05/05/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -43,16 +43,10 @@ Enterprise-level management such as Intune or Microsoft Endpoint Configuration M
 
 You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running. This could potentially allow unsafe files to run and infect your devices.
 
-> [!WARNING]
+> [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
->
 > If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](evaluate-attack-surface-reduction.md).
 
-> [!IMPORTANT]
-> File and folder exclusions do not apply to the following ASR rules:
->
-> * Block process creations originating from PSExec and WMI commands
-> * Block JavaScript or VBScript from launching downloaded executable content
 
 You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
@@ -131,10 +125,13 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+
 ## PowerShell
 
->[!WARNING]
->If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> [!WARNING]
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
 

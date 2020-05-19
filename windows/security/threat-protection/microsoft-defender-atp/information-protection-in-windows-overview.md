@@ -2,7 +2,7 @@
 title: Information protection in Windows overview
 ms.reviewer:
 description: Learn about how information protection works in Windows to identify and protect sensitive information
-keywords: information, protection, dlp, wip, data, loss, prevention, protect
+keywords: information, protection, dlp, data, loss, prevention, protect
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,7 +35,7 @@ Microsoft Defender ATP applies the following methods to discover, classify, and 
 
 - **Data discovery** - Identify sensitive data on Windows devices at risk
 - **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
-- **Data protection** - Windows Information Protection (WIP) as outcome of Azure Information Protection label
+
 
 ## Data discovery and data classification
 
@@ -95,6 +95,4 @@ InformationProtectionLogs_CL
     - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
 
 
-## Related topics
 
-- [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels)
