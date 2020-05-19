@@ -27,6 +27,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
+| Hyper-V vSwitch on LBFO | The Hyper-V vSwitch can not be bound to an LBFO team.  Instead, it can be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 2004 |
 | PNRP APIs| ​The Peer Name Resolution Protocol (PNRP) cloud service was removed in Windows 10, version 1809. We are planning to complete the removal process by removing the corresponding APIs.  | 1909 |
 | Taskbar settings roaming | Roaming of taskbar settings is removed in this release. This feature was announced as no longer being developed in Windows 10, version 1903. | 1909 |
 | Desktop messaging app doesn't offer messages sync |  The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message.  | 1903 |
