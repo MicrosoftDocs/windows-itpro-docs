@@ -2,7 +2,7 @@
 title: Define readiness criteria
 ms.reviewer: 
 manager: laurawi
-description: Learn how to set key benchmarks so you know when you're ready to deploy the next wave of updates
+description: Identify important roles and figure out how to classify apps
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -59,7 +59,7 @@ Some apps in your environment are fundamental to your core business activities. 
 
 In the Prepare phase, you'll apply the criteria you define now to every app in your organization.
 
-Here's a suggested classification scheme: {HOW WOULD YOU FEEL ABOUT SOME SPECIFIC EXAMPLES FOR ALL THESE? MAYBE USING MS AS AN EXAMPLE.}
+Here's a suggested classification scheme:
 
 
 |Classification  |Definition|
@@ -68,7 +68,7 @@ Here's a suggested classification scheme: {HOW WOULD YOU FEEL ABOUT SOME SPECIFI
 |Important     | Applications that individual staff members need to support their productivity. Downtime here would affect individual users, but would only have a minimal impact on the business.       |
 |Not important   | There is no impact on the business if these apps are not available for a while.        |
 
-Once you have classified your applications, you should agree what each classification means to the organization in terms of priority and severity. This will help ensure that issues can be triaged with the right level of urgency. You should assign each app a time-based priority.
+Once you have classified your applications, you should agree what each classification means to the organization in terms of priority and severity. This will help ensure that you can triage problems with the right level of urgency. You should assign each app a time-based priority.
 
 Here's an example priority rating system; of course the specifics could vary for your organization:
 
@@ -80,15 +80,36 @@ Here's an example priority rating system; of course the specifics could vary for
 |3     | Start investigating risks and issues within 10 business days. You don’t have to fix them all within the current deployment cycle. However, all issues must be fixed by the end of the next deployment cycle.        |
 |4     | Start investigating risks and issues within 20 business days. You can fix them in the current or any future development cycle.        |
 
-Related to priority, but distinct, is the concept of severity. You should define a severity ranking as well, based on impact a problem with an app should have on the deployment cycle.
+Related to priority, but distinct, is the concept of severity. You should define a severity ranking as well, based on how you feel a problem with an app should affect the deployment cycle.
 
 Here's an example:
 
 
-|Severity  |Impact  |
+|Severity  |Effect  |
 |---------|---------|
 |1     | Work stoppage or loss of revenue        |
 |2     | Productivity loss for a business unit        |
 |3     | Productivity loss for individual users         |
 |4     | Minimal impact on users        |
+
+## Example: a large financial corporation
+
+Using the suggested scheme, a financial corporation might classify their apps like this:
+
+
+|App  |Classification  |
+|---------|---------|
+|Credit processing app     | Critical        |
+|Frontline customer service app     |  Critical       |
+|PDF viewer     | Important        |
+|Image processing app     | Not important        |
+
+Further, they might combine this classification with severity and priority rankings like this:
+
+
+|Classification  |Severity  |Priority  |Response  |
+|---------|---------|---------|---------|
+|Critical     |  1 or 2       |  1 or 2       | For 1, stop deployment until resolved; for 2, stop deployment for affected devices or users only.       |
+|Important     | 3 or 4        |  3 or 4       | For 3, continue deployment, even for affected devices, as long as there is workaround guidance.        |
+|Not important     |   4      | 4        |  Continue deployment for all devices.       |
 
