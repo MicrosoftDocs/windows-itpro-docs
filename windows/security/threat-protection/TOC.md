@@ -327,8 +327,9 @@
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
-### [Automated investigation and response]()
+### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
@@ -658,7 +659,6 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
-### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
