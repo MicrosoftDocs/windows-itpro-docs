@@ -1,10 +1,10 @@
 ---
-title: Configure a test lab to deploy Windows 10
+title: Placeholder
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
-description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
+description: Placeholder
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +16,7 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Step by step guide: Configure a test lab to deploy Windows 10
+# Document title
 
 **Applies to**
 
