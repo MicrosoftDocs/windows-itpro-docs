@@ -1,7 +1,7 @@
 ---
-title: Privacy for Microsoft Defender ATP for Mac
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Mac.
-keywords: microsoft, defender, atp, mac, privacy, diagnostic
+title: Privacy for Microsoft Defender ATP for Linux
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Linux.
+keywords: microsoft, defender, atp, linux, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -13,23 +13,23 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Privacy for Microsoft Defender ATP for Mac
+# Privacy for Microsoft Defender ATP for Linux
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender ATP for Mac.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft Defender ATP for Linux.
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
 
-## Overview of privacy controls in Microsoft Defender ATP for Mac
+## Overview of privacy controls in Microsoft Defender ATP for Linux
 
-This section describes the privacy controls for the different types of data collected by Microsoft Defender ATP for Mac.
+This section describes the privacy controls for the different types of data collected by Microsoft Defender ATP for Linux.
 
 ### Diagnostic data
 
@@ -55,13 +55,17 @@ Enabling the cloud-delivered protection service is optional, however it is highl
 
 Sample data is used to improve the protection capabilities of the product, by sending Microsoft suspicious samples so they can be analyzed. Enabling automatic sample submission is optional.
 
-When this feature is enabled and the sample that is collected is likely to contain personal information, the user is prompted for consent.
+There are three levels for controlling sample submission:
+
+- **None**: no suspicious samples are submitted to Microsoft.
+- **Safe**: only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
+- **All**: all suspicious samples are submitted to Microsoft.
 
 ## Manage privacy controls with policy settings
 
 If you're an IT administrator, you might want to configure these controls at the enterprise level. 
 
-The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
+The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
@@ -82,11 +86,10 @@ The following fields are considered common for all events:
 | org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
 | hostname                | Local machine name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
-| app_version             | Version of the Microsoft Defender ATP for Mac application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
+| app_version             | Version of the Microsoft Defender ATP for Linux application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
 | sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
 | supported_compressions  | List of compression algorithms supported by the application, for example `['gzip']`. Allows Microsoft to understand what types of compressions can be used when it communicates with the application. |
 | release_ring            | Ring that the device is associated with (for example Insider Fast, Insider Slow, Production). Allows Microsoft to identify on which release ring an issue may be occurring so that it can correctly be prioritized. |
-
 
 ### Required diagnostic data
 
@@ -121,7 +124,7 @@ The following fields are collected:
 | cloud_service.heartbeat_interval                    | Interval between consecutive heartbeats sent by the product to the cloud. |
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
-| cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
+| cloud_service.automatic_sample_submission           | Automatic sample submission level of the device (none, safe, all). |
 | edr.early_preview                                   | Whether the machine should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
 | edr.tags                                            | User-defined tags. |
@@ -140,7 +143,7 @@ The following fields are collected:
 | status           | Status of the update indicating success or failure. |
 | using_proxy      | Whether the update was done over a proxy. |
 | error            | Error code if the update failed. |
-| reason           | Error message if the updated filed. |
+| reason           | Error message if the update failed. |
 
 #### Product and service performance data events
 
@@ -150,7 +153,7 @@ The following fields are collected:
 
 | Field            | Description |
 | ---------------- | ----------- |
-| version          | Version of Microsoft Defender ATP for Mac. |
+| version          | Version of Microsoft Defender ATP for Linux. |
 | instance_id      | Unique identifier generated on kernel extension startup. |
 | trace_level      | Trace level of the kernel extension. |
 | subsystem        | The underlying subsystem used for real-time protection. |
@@ -164,11 +167,9 @@ The following fields are collected:
 
 Diagnostic logs are collected only with the consent of the user as part of the feedback submission feature. The following files are collected as part of the support logs:
 
-- All files under */Library/Logs/Microsoft/mdatp/*
-- Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender ATP for Mac
-- Subset of files under */Library/Managed Preferences* that are used by Microsoft Defender ATP for Mac
-- /Library/Logs/Microsoft/autoupdate.log
-- $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
+- All files under */var/log/microsoft/mdatp*
+- Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Microsoft Defender ATP for Linux
+- Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
 
 ### Optional diagnostic data
 
@@ -186,7 +187,7 @@ The following fields are collected:
 
 | Field                                              | Description |
 | -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Connection retry time out when communication with the cloud. |
+| connection_retry_timeout                           | Connection retry time-out when communication with the cloud. |
 | file_hash_cache_maximum                            | Size of the product cache. |
 | crash_upload_daily_limit                           | Limit of crash logs uploaded daily. |
 | antivirus_engine.exclusions[].is_directory         | Whether the exclusion from scanning is a directory or not. |
@@ -222,7 +223,7 @@ The following fields are collected:
 | ---------------- | ----------- |
 | sha256           | SHA256 identifier of the support log. |
 | size             | Size of the support log. |
-| original_path    | Path to the support log (always under */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
+| original_path    | Path to the support log (always under */var/opt/microsoft/mdatp/wdavdiag/*). |
 | format           | Format of the support log. |
 
 #### Diagnostic log upload completed report
