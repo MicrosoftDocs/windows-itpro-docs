@@ -223,7 +223,7 @@ The following fields are collected:
 | ---------------- | ----------- |
 | sha256           | SHA256 identifier of the support log. |
 | size             | Size of the support log. |
-| original_path    | Path to the support log (always under */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
+| original_path    | Path to the support log (always under */var/opt/microsoft/mdatp/wdavdiag/*). |
 | format           | Format of the support log. |
 
 #### Diagnostic log upload completed report
