@@ -46,3 +46,26 @@ There are a number of Windows policies (set by Group Policy, Intune, or other me
 
 - **Windows 10 Administrative templates**: Each Windows 10 feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 10, version 1909](https://www.microsoft.com/download/100591).
 - **Update and end-user experience policies**: A number of settings affect when a device installs updates, whether and for how long a user can defer an update, restart behavior after installation, and many other aspects of update behavior. {LINK here or elsewhere}
+
+
+## Define operational readiness criteria
+
+When you’ve deployed an update, you’ll need to make sure the update isn’t introducing new operational issues. And you’ll also ensure that if incidents arise, the needed documentation and processes are available. To achieve this, work with your operations and support team to define acceptable trends and what documents or processes require updating:
+
+- **Call trend**: Define what percentage increase in calls relating to Windows 10 feature updates are acceptable or can be supported.
+- **Incident trend**: Define what percentage of increase in calls asking for support relating to Windows 10 feature updates are acceptable or can be supported.
+- **Support documentation**: Review supporting documentation that requires an update to support new infrastructure tooling or configuration as part of the Windows 10 feature update.
+- **Process changes:** Define and update any processes that will change as a result of the Windows 10 feature update.
+
+Your operations and support staff can help you determine if the appropriate information is being tracked at the moment. If it isn't, work out how to get get this information so you can gain the right insight. 
+
+## Tasks
+
+Finally, you can begin to carry out the work needed to ensure your infrastructure and configuration can support the update. To help you keep track, you can classify the work into the following overarching tasks:
+
+- **Review infrastructure requirements**: Go over the details of requirements to support the update, and ensure they’ve all been defined.
+- **Validate infrastructure against requirements**: Compare your infrastructure against the requirements that have been identified for the update.
+- **Define infrastructure update plan**: Detail how your infrastructure must change to support the update.
+- **Review current support volume**: Understand the current support volume to understand how much of an effect the update has when it’s been deployed.
+- **Identify gaps that require attention**: Identify issues that will need to be addressed to successfully deploy the update. For example, will your infrastructure engineer have to research how a new feature that comes with the update might affect the infrastructure?
+- **Define operational update plan**: Detail how your operational services and processes must change to support the update.
