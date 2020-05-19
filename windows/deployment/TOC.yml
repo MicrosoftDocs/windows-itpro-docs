@@ -50,11 +50,11 @@
         - name: Features removed or planned for replacement
           items:
             - name: Windows 10 features lifecycle
-              href: file1.md
+              href: planning/features-lifecycle.md
             - name: Features we're no longer developing
-              href: file1.md
+              href: planning/windows-10-deprecated-features.md
             - name: Features we removed
-              href: file1.md          
+              href: planning/windows-10-removed-features.md         
 
     - name: Prepare
       items: 
@@ -73,11 +73,11 @@
         - name: Prepare your deployment tools
           items:
             - name: Register devices for deployment with Windows Autopilot
-              href: file1.md
+              href: windows-autopilot/add-devices.md
             - name: Prepare for deployment with MDT
-              href: file1.md
+              href: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
             - name: Prepare for deployment with Configuration Manager
-              href: file1.md
+              href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
         - name: Build a successful servicing strategy
           items:
             - name: Build deployment rings for Windows 10 updates
@@ -92,37 +92,37 @@
         - name: Deploy Windows 10
           items:
             - name: Deploy Windows 10 with Autopilot
-              href: file1.md
+              href: windows-autopilot/windows-autopilot-scenarios.md
             - name: Deploy Windows 10 with Configuration Manager
               items:
                 - name: Deploy to a new device
-                  href: file1.md
+                  href: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
                 - name: Refresh a device
-                  href: file1.md
+                  href: deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: Replace a device
-                  href: file1.md
+                  href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: In-place upgrade
-                  href: file1.md
+                  href: deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md
             - name: Deploy Windows 10 with MDT
               items:
                 - name: Deploy to a new device
-                  href: file1.md
+                  href: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
                 - name: Refresh a device
-                  href: file1.md
+                  href: deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md
                 - name: Replace a device
-                  href: file1.md
+                  href: deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md
                 - name: In-place upgrade
-                  href: file1.md
+                  href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
             - name: Subscription Activation
               items:
                 - name: Windows 10 Subscription Activation
-                  href: file1.md
+                  href: windows-10-subscription-activation.md
                 - name: Windows 10 Enterprise E3 in CSP
-                  href: file1.md
+                  href: windows-10-enterprise-e3-overview.md
                 - name: Configure VDA for Subscription Activation
-                  href: file1.md
+                  href: vda-subscription-activation.md
                 - name: Deploy Windows 10 Enterprise licenses
-                  href: file1.md
+                  href: deploy-enterprise-licenses.md
         - name: Deploy Windows 10 updates
           items:
             - name: Assign devices to servicing channels
