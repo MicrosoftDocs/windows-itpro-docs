@@ -1,6 +1,6 @@
 ---
-title: "Create Surface Hub 2S device account"
-description: "This page describes the procedure for creating the Surface Hub 2S device account."
+title: Create Surface Hub 2S device account
+description: This page describes the procedure for creating the Surface Hub 2S device account.
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
@@ -15,18 +15,18 @@ ms.localizationpriority: Medium
 
 # Create Surface Hub 2S device account
 
-Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests and join meetings using either Microsoft Teams or Skype for Business. Configure the device account during Out of Box Experience (OOBE) setup. If needed you can change it later (without going through OOBE setup).
+Creating a Surface Hub device account (also known as a Room mailbox) allows Surface Hub 2S to receive, approve, or decline meeting requests and join meetings using either Microsoft Teams or Skype for Business. Configure the device account during Out-of-Box Experience (OOBE) setup. If needed, you can change it later (without going through OOBE setup).
 
 Unlike standard Room mailboxes that remain disabled by default, you need to enable the Surface Hub 2S device account to sign on to Microsoft Teams and Skype for Business. Surface Hub 2S relies on Exchange ActiveSync, which requires an ActiveSync mailbox policy on the device account. Apply the default ActiveSync mailbox policy that comes with Exchange Online.
 
-Create the account using the Microsoft 365 admin center or by using PowerShell. You can use Exchange Online PowerShell to configure specific features including:
+Create the account by using the Microsoft 365 admin center or by using PowerShell. You can use Exchange Online PowerShell to configure specific features including:
 
 - Calendar processing for every Surface Hub device account.
 - Custom auto replies to scheduling requests.
-- If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy
+- If the default ActiveSync mailbox policy has already been modified by someone else or by another process, you will likely have to create and assign a new ActiveSync mailbox policy.
 
-> [!NOTE]
-> The Surface Hub device account doesn’t support 3rd party Federated Identity Providers (FIPs) and must be a standard Active Directory or Azure Active Directory account.
+> [!NOTE]  
+> The Surface Hub device account doesn’t support third-party Federated Identity Providers (FIPs) and must be a standard Active Directory or Azure Active Directory account.
 
 ## Create account using Microsoft 365 admin center
 
