@@ -24,7 +24,7 @@ landingContent:
   # Card (optional)
   - title: Concepts
     linkLists:
-      - linkListType: concepts
+      - linkListType: overview
         links:
           - text: Windows 10 deployment scenarios
             url: file1.md
@@ -48,7 +48,7 @@ landingContent:
   # Card (optional)
   - title: Deployment planning
     linkLists:
-      - linkListType: design-guide
+      - linkListType: how-to-guide
         links:
           - text: Create a deployment plan
             url: file1.md
@@ -60,7 +60,7 @@ landingContent:
    # Card
   - title: Prepare to deploy Windows 10
     linkLists:
-      - linkListType: guide
+      - linkListType: how-to-guide
         links:
           - text: Prepare to deploy Windows 10
             url: file1.md
@@ -72,7 +72,7 @@ landingContent:
   # Card
   - title: Deploy Windows 10
     linkLists:
-      - linkListType: checklist
+      - linkListType: deploy
         links:
           - text: Deploy Windows 10
             url: file1.md
@@ -84,7 +84,7 @@ landingContent:
   # Card (optional)
   - title: Also see
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: Windows 10 release information
             url: file1.md

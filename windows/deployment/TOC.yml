@@ -4,49 +4,49 @@
     - name: Get started
       items: 
         - name: What's new in Windows 10 deployment
-          href: file1.md
-        - name: Windows 10 deployment scenarios (update)
-          href: file1.md
+          href: deploy-whats-new.md
+        - name: Windows 10 deployment scenarios
+          href: windows-10-deployment-scenarios.md
         - name: Deployment process posters
-          href: file1.md
-        - name: What is Windows as a service? (retitled, consolidated)
-          href: file1.md
+          href: windows-10-deployment-posters.md
+        - name: What is Windows as a service?
+          href: update/waas-quick-start.md
         - name: Windows update fundamentals
-          href: file1.md
-        - name: Types of Windows updates (consolidate)
-          href: file1.md
-        - name: Servicing the Windows 10 operating system (retitled, consolidate?)
-          href: file1.md
+          href: update/waas-overview.md
+        - name: Types of Windows updates
+          href: update/servicing-stack-updates
+        - name: Servicing the Windows 10 operating system
+          href: update/windows-update-overview.md
 
         - name: Deployment proof of concept
           items: 
             - name: Demonstrate Autopilot deployment on a VM
-              href: file1.md
+              href: windows-autopilot/demonstrate-deployment-on-vm.md
             - name: Deploy Windows 10 with MDT and Configuration Manager
               items:
                 - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
-                  href: file1.md
+                  href: windows-10-poc.md
                 - name: Deploy Windows 10 in a test lab using MDT
-                  href: file1.md
+                  href: windows-10-poc-mdt.md
                 - name: Deploy Windows 10 in a test lab using Configuration Manager
-                  href: file1.md         
+                  href: windows-10-poc-sc-config-mgr.md       
 
     - name: Plan
       items:
-        - name: Windows 10 deployment considerations (rewrite)
-          href: file1.md  
-        - name: Create a deployment plan (new)
+        - name: Windows 10 deployment considerations
+          href: planning/windows-10-deployment-considerations.md
+        - name: Create a deployment plan
           href: file1.md
-        - name: Evaluate infrastructure and tools (new)
+        - name: Evaluate infrastructure and tools
           href: file1.md
-        - name: Determine application readiness (new)
+        - name: Determine application readiness
           href: file1.md 
-        - name: Define your servicing strategy (new)
+        - name: Define your servicing strategy
           href: file1.md
         - name: Best practices for feature updates on mission-critical devices
           href: file1.md  
         - name: Plan for volume activation
-          href: file1.md 
+          href: volume-activation/plan-for-volume-activation-client.md
         - name: Features removed or planned for replacement
           items:
             - name: Windows 10 features lifecycle
