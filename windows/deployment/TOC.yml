@@ -3,12 +3,10 @@
   items: 
     - name: Get started
       items: 
-        - name: What's new in Windows 10 deployment
+        - name: What's new
           href: deploy-whats-new.md
         - name: Windows 10 deployment scenarios
           href: windows-10-deployment-scenarios.md
-        - name: Deployment process posters
-          href: windows-10-deployment-posters.md
         - name: What is Windows as a service?
           href: update/waas-quick-start.md
         - name: Windows update fundamentals
@@ -29,11 +27,13 @@
                 - name: Deploy Windows 10 in a test lab using MDT
                   href: windows-10-poc-mdt.md
                 - name: Deploy Windows 10 in a test lab using Configuration Manager
-                  href: windows-10-poc-sc-config-mgr.md       
+                  href: windows-10-poc-sc-config-mgr.md 
+        - name: Deployment process posters
+          href: windows-10-deployment-posters.md      
 
     - name: Plan
       items:
-        - name: Windows 10 deployment considerations
+        - name: Deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Create a deployment plan
           href: file1.md
