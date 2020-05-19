@@ -14,7 +14,7 @@
         - name: Windows update fundamentals
           href: update/waas-overview.md
         - name: Types of Windows updates
-          href: update/servicing-stack-updates
+          href: update/servicing-stack-updates.md
         - name: Servicing the Windows 10 operating system
           href: update/windows-update-overview.md
 
