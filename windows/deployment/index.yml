@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  ms.date: 05/19/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,74 +22,73 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Title1
+  - title: Concepts
     linkLists:
-      - linkListType: overview
+      - linkListType: concepts
         links:
-          - text: Article1a
+          - text: Windows 10 deployment scenarios
             url: file1.md
-          - text: Article1b
+          - text: What is Windows as a service?
             url:  file1.md
-          - text: Article1c
+          - text: Types of Windows updates
             url: file1.md
 
   # Card (optional)
-  - title: Title2
+  - title: Get started
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: Article2a
+          - text: Demonstrate Autopilot deployment
             url: file1.md
-          - text: Article2b
+          - text: Servicing the Windows 10 operating system
             url: file1.md
-          - text: Article2c
+          - text: Deploy Windows 10 in a test lab
             url: file1.md
 
   # Card (optional)
-  - title: Title3
+  - title: Deployment planning
     linkLists:
-      - linkListType: overview
+      - linkListType: design-guide
         links:
-          - text: Article3a
+          - text: Create a deployment plan
             url: file1.md
-          - text: Article3b
+          - text: Evaluate infrastructure and tools
             url: file1.md
-          - text: Article3c
+          - text: Define your servicing strategy
             url: file1.md
  
    # Card
-  - title: Title4
+  - title: Prepare to deploy Windows 10
     linkLists:
-      - linkListType: overview
+      - linkListType: guide
         links:
-          - text: Article4a
+          - text: Prepare to deploy Windows 10
             url: file1.md
-          - text: Article4b
+          - text: Evaluate and update deployment processes
             url: file1.md
-          - text: Article4c
+          - text: Build a successful servicing strategy
             url: file1.md
 
   # Card
-  - title: Title5 
+  - title: Deploy Windows 10
     linkLists:
-      - linkListType: overview
+      - linkListType: checklist
         links:
-          - text: Article5a
+          - text: Deploy Windows 10
             url: file1.md
-          - text: Article5b
+          - text: Assign devices to servicing channels
             url: file1.md
-          - text: Article5c
+          - text: Deploy Windows 10 updates
             url: file1.md
 
   # Card (optional)
-  - title: Title6
+  - title: Also see
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
-          - text: Article6a
+          - text: Windows 10 release information
             url: file1.md
-          - text: Article6b
+          - text: What's new in Windows 10
             url: file1.md
-          - text: Article6c
+          - text: Windows 10 Enterprise Security
             url: file1.md
-            
