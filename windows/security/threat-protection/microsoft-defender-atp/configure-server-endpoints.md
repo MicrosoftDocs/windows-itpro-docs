@@ -24,8 +24,9 @@ ms.topic: article
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server, version 1803
-- Windows Server, 2019 and later
+- Windows Server (SAC) version 1803 and later
+- Windows Server 2019 and later
+- Windows Server 2019 core edition
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -37,9 +38,9 @@ The service supports the onboarding of the following servers:
 - Windows Server 2008 R2 SP1 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server, version 1803
+- Windows Server (SAC) version 1803 and later
 - Windows Server 2019 and later
-
+- Windows Server 2019 core edition
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
@@ -58,21 +59,23 @@ There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012
 ### Option 1: Onboard servers through Microsoft Defender Security Center
 You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
 
-- For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
+ - For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
     - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/en-us/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
     
-- In addition, for Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
+ - In addition, for Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
     - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
     - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-- For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
+ - For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
 
-> [!NOTE]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
+    > [!NOTE]
+    > This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
-- Turn on server monitoring from Microsoft Defender Security Center.
-- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+ - Turn on server monitoring from Microsoft Defender Security Center.
 
+ - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. 
+
+    Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 > [!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
@@ -83,6 +86,7 @@ Microsoft Defender ATP integrates with System Center Endpoint Protection. The in
 
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
 
@@ -128,9 +132,8 @@ Once completed, you should see onboarded servers in the portal within an hour.
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
 
-
-## Windows Server, version 1803 and Windows Server 2019
-To onboard Windows Server, version 1803 or Windows Server 2019, refer to the supported methods and versions below.
+## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+To onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition, refer to the supported methods and versions below.
 
 > [!NOTE]
 > The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
@@ -150,20 +153,20 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
 2. If you're running a third-party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings. Verify that it was configured correctly:
 
-    a. Set the following registry entry:
+    1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
        - Name: ForceDefenderPassiveMode
        - Value: 1
 
-    b. Run the following PowerShell command to verify that the passive mode was configured:
+    1. Run the following PowerShell command to verify that the passive mode was configured:
 
-      ```PowerShell
-      Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-      ```
+       ```PowerShell
+       Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+       ```
 
-    c. Confirm  that a recent event containing the passive mode event is found:
+    1. Confirm  that a recent event containing the passive mode event is found:
        
-      ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
@@ -191,7 +194,7 @@ The following capabilities are included in this integration:
 
 
 ## Offboard servers 
-You can offboard Windows Server, version 1803 and Windows 2019 in the same method available for Windows 10 client machines. 
+You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client machines.
 
 For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent
@@ -221,11 +224,12 @@ To offboard the server, you can use either of the following methods:
 #### Run a PowerShell command to remove the configuration
 
 1. Get your Workspace ID:
-   a. In the navigation pane, select **Settings** > **Onboarding**.
 
-   b. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
+   1. In the navigation pane, select **Settings** > **Onboarding**.
+
+   1. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
     
-   ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
+      ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
