@@ -61,7 +61,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 5. In the **Enter the object names to select** text box, type the name of the Azure AD Connect service account.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
-Note: if your AD forest has multiple domains. Please make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
+> [!NOTE]
+> If your AD forest has multiple domains. Please make sure you add the ADConnect sync service account (that is, MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
 
 ### Section Review
 
