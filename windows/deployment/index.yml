@@ -22,9 +22,9 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Concepts
+  - title: Overview
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
           - text: Windows 10 deployment scenarios
             url: file1.md
