@@ -58,19 +58,19 @@
 
     - name: Prepare
       items: 
-        - name: Prepare to deploy Windows 10 (new)
+        - name: Prepare to deploy Windows 10
           href: file1.md 
-        - name: Evaluate and update infrastructure (new)
+        - name: Evaluate and update infrastructure
           href: file1.md 
-        - name: Evaluate and update deployment processes (new)
+        - name: Evaluate and update deployment processes
           href: file1.md 
-        - name: Test and remediate your applications (new)
+        - name: Test and remediate your applications
           href: file1.md
         - name: Set up Delivery Optimization for Windows 10 updates
           href: file1.md
         - name: Configure BranchCache for Windows 10 updates
           href: file1.md
-        - name: Prepare your deployment tools (new)
+        - name: Prepare your deployment tools
           items:
             - name: Register devices for deployment with Windows Autopilot
               href: file1.md
@@ -84,7 +84,7 @@
               href: file1.md
             - name: Prepare updates using Windows Update for Business
               href: file1.md
-            - name: Prepare updates using WSUS (retitle)
+            - name: Prepare updates using WSUS
               href: file1.md
 
     - name: Deploy
@@ -115,7 +115,7 @@
                   href: file1.md
             - name: Subscription Activation
               items:
-                - name: Windows 10 Subscription Activation (update)
+                - name: Windows 10 Subscription Activation
                   href: file1.md
                 - name: Windows 10 Enterprise E3 in CSP
                   href: file1.md
@@ -125,7 +125,7 @@
                   href: file1.md
         - name: Deploy Windows 10 updates
           items:
-            - name: Assign devices to servicing channels (retitle)
+            - name: Assign devices to servicing channels
               href: file1.md
             - name: Deploy updates with Configuration Manager
               href: file1.md
@@ -167,7 +167,7 @@
               items:
               - name: Get started
                 items: 
-                  - name: Get started with Update Compliance (consolidate)
+                  - name: Get started with Update Compliance
                     href: file1.md
                   - name: Update Compliance configuration script
                     href: file1.md
@@ -250,7 +250,7 @@
           href: file1.md
         - name: Windows 10 deployment tools
           items:
-            - name: Windows 10 deployment scenarios and tools (retitle)
+            - name: Windows 10 deployment scenarios and tools
               items:
                 - name: Convert MBR partition to GPT
                   href: file1.md
