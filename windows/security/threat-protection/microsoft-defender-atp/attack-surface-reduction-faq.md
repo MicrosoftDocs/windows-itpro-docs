@@ -31,7 +31,7 @@ ASR was originally a feature of the suite of exploit guard features introduced a
 
 The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full capabilities of ASR will not be available.
 
-To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](http://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 ## Is ASR supported if I have an E3 license?
 
@@ -75,7 +75,9 @@ Keep the rule in audit mode for about 30 days to get a good baseline for how the
 
 ## I'm making the switch from a third-party security solution to Microsoft Defender ATP. Is there an "easy" way to export rules from another security solution to ASR?
 
-Rather than attempting to import sets of rules from another security solution, it is, in most cases, easier and safer to start with the baseline recommendations suggested for your organization by Microsoft Defender ATP, then use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. The default configuration for most ASR rules, combined with Defender's real-time protection, will protect against a large number of exploits and vulnerabilities.
+In most cases, it's easier and better to start with the baseline recommendations suggested by [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) (Microsoft Defender ATP) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
+
+The default configuration for most ASR rules, combined with Microsoft Defender ATP's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
 From within Microsoft Defender ATP, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
 
@@ -105,19 +107,19 @@ Try opening the indexing options directly from Windows 10.
 
 ## Are the criteria used by the rule, "Block executable files from running unless they meet a prevalence, age, or trusted list criterion," configurable by an admin?
 
-No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up-to-date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
+No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up to date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
 
 ## I enabled the ASR rule, *Block executable files from running unless they meet a prevalence, age, or trusted list criterion*. After some time, I updated a piece of software, and the rule is now blocking it, even though it didn't before. Did something go wrong?
 
 This rule relies upon each application having a known reputation, as measured by prevalence, age, or inclusion on a list of trusted apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
 
-Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be re-assessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with very new versions of applications, you may opt instead to run this rule in audit mode.
+Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be reassessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with new versions of applications, you may opt instead to run this rule in audit mode.
 
 ## I recently enabled the ASR rule, *Block credential stealing from the Windows local security authority subsystem (lsass.exe)*, and I am getting a large number of notifications. What is going on?
 
-A notification generated by this rule does not necessarily indicate malicious activity; however, this rule is still useful for blocking malicious activity, since malware often target lsass.exe to gain illicit access to accounts. The lsass.exe process stores user credentials in memory after a user has logged in. Windows uses these credentials to validate users and apply local security policies.
+A notification generated by this rule does not necessarily indicate malicious activity; however, this rule is still useful for blocking malicious activity, since malware often targets lsass.exe to gain illicit access to accounts. The lsass.exe process stores user credentials in memory after a user has logged in. Windows uses these credentials to validate users and apply local security policies.
 
-Because many legitimate processes throughout a typical day will be calling on lsass.exe for credentials, this rule can be especially noisy. If a known legitimate application causes this rule to generate an excessive amount of notifications, you can add it to the exclusion list. Most other ASR rules will generate a relatively smaller number of notifications, in comparison to this one, since calling on lsass.exe is typical of many applications' normal functioning.
+Because many legitimate processes throughout a typical day will be calling on lsass.exe for credentials, this rule can be especially noisy. If a known legitimate application causes this rule to generate an excessive number of notifications, you can add it to the exclusion list. Most other ASR rules will generate a relatively smaller number of notifications, in comparison to this one, since calling on lsass.exe is typical of many applications' normal functioning.
 
 ## Is it a good idea to enable the rule, *Block credential stealing from the Windows local security authority subsystem (lsass.exe)*, alongside LSA protection?
 
