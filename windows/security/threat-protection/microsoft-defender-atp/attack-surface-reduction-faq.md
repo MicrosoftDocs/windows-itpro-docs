@@ -29,7 +29,9 @@ ASR was originally a feature of the suite of exploit guard features introduced a
 
 ## Do I need to have an enterprise license to run ASR rules?
 
-The full set of ASR rules and features are only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license, if you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full feature-set of ASR will not be available.
+The full set of ASR rules and features are only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license, if you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full capabilities of ASR will not be available.
+
+To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](http://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 ## Is ASR supported if I have an E3 license?
 
@@ -52,8 +54,8 @@ ASR currently supports all of the rules below:
 * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md##block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 * [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
 * [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
-* [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)<!-- Note: Because the following link contains characters the validator is not expecting, it throws a warning that the bookmark does not exist. This is a false positive; the link correctly targets the heading, Block credential stealing from the Windows local security authority subsystem (lsass.exe), when selected -->
-* [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
+* [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
+* [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
 * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
