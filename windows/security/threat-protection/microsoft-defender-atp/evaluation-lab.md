@@ -25,6 +25,8 @@ Conducting a comprehensive security product evaluation can be a complex process 
 
 The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
+
 With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Microsoft Defender ATP performs. 
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
