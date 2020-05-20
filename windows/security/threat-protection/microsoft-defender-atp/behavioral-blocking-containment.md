@@ -90,10 +90,11 @@ Minutes after the alert was triggered, the file was analyzed, and confirmed to b
 
 A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing additional attackers or other malware from deploying on the device. 
 
-With behavioral blocking and containment capabilities, your security operations team gets notified about compromise attempts, and Microsoft Defender ATP automatically contains the incident while your security operations team performs a thorough investigation to understand and remediate the root cause. 
-
+This example shows that with behavioral blocking and containment capabilities, threats are detected, contained, and blocked automatically. 
 
 ## Next steps
+
+- [Learn more about recent global threat activity](https://www.microsoft.com/wdsi/threats)
 
 - [Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 
