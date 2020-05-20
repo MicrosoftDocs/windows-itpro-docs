@@ -155,7 +155,7 @@
 ###### [Configure scheduled scans](windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus.md)
 ###### [Configure and run scans](windows-defender-antivirus/run-scan-windows-defender-antivirus.md)
 ###### [Review scan results](windows-defender-antivirus/review-scan-results-windows-defender-antivirus.md)
-###### [Run and review the results of an offline scan](windows-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](windows-defender-antivirus/microsoft-defender-offline.md)
    
 ##### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
    
@@ -183,7 +183,7 @@
 ###### [Configure scheduled scans](windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus.md)
 ###### [Configure and run scans](windows-defender-antivirus/run-scan-windows-defender-antivirus.md)
 ###### [Review scan results](windows-defender-antivirus/review-scan-results-windows-defender-antivirus.md)
-###### [Run and review the results of an offline scan](windows-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](windows-defender-antivirus/microsoft-defender-offline.md)
 ###### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
    
 ##### [Manage next-generation protection in your business]()
