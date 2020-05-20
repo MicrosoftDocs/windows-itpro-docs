@@ -39,23 +39,20 @@ This feature is forward-looking and currently requires new Intel Comet Lake (CML
 
 [Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
 
-### FIDO2 security key support in Azure Active Directory
 
-FIDO2 security key support in Azure Active Directory (Azure AD) is expanded to hybrid environments, enabling even more customers to take an important step in their journey towards passwordless environments
+### Passwordless authentication in Azure Active Directory
 
-[Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894)
-
-
-
-### Microsoft BitLocker
+Fast Identity Online 2 (FIDO2) security key support is expanded to Azure Active Directory hybrid environments with this release, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 
 ## Edge
 
-https://www.microsoftedgeinsider.com/en-us/whats-new
+Read about plans for the new Microsoft Edge and other innovations announced at [Build 2020](https://blogs.windows.com/msedgedev/2020/05/19/microsoft-edge-news-developers-build-2020/) and [What's new at Microsoft Edge Insider](https://www.microsoftedgeinsider.com/whats-new).
 
 ## Cortana
 
-Cortana: Microsoft says Cortana is evolving into a "personal productivity assistant" that can help you use Microsoft 365 apps. Cortana will be undocked from the taskbar, so you can move or resize it like any other app. An improved email feature lets you use Cortana to create emails (for example, you can say, "Send an email to Mary letting her know I'm running late" or "Show me emails from Jeff"). An improved calendar lets you do the same to create and ask about meetings. And Windows lets you use the assistant to open apps and adjust settings like brightness. 
+Cortana in Windows 10, version 2004 and later is a service covered by the Office 365 Trust Center. See [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later) for more information.
+
+The Cortana app also has several improvements in this release, such as enhanced security and the ability to drag the Cortana window to a more convenient location on your desktop. For more information, see [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ## Virtual Desktops
 
@@ -63,7 +60,7 @@ Virtual desktops: Rename your virtual desktops, instead of getting stuck with th
 
 ## Bluetooth
 
-Bluetooth pairing: Pairing Bluetooth devices with your machine will occur through notifications, so you won't need to go to the Settings app to finish pairing. 
+Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. 
 
 ## 2-in-1 PCs
 
