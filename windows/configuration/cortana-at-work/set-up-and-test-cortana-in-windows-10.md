@@ -18,8 +18,6 @@ ms.author: dansimp
 - If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you will need to re-enable it at least for Windows 10, version 2004 and later.
 - **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
 
-INSERT SCREENSHOT 1
-
 ## Set up and configure the Bing Answers feature
 Bing Answers provides fast, authoritative results to search queries based on search terms. When the Bing Answers feature is enabled, users will be able to ask Cortana web-related questions in the Cortana in Windows app, such as &quot;What&#39;s the current weather?&quot; or &quot;Who is the president of the U.S.?,&quot; and get a response, based on public results from Bing.com.
 
