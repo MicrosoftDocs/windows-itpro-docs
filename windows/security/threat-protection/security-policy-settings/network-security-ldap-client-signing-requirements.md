@@ -43,7 +43,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 ### Best practices
 
--   Set both **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings to **Require signing**. To avoid usage of unsigned treaffic, set both cleint and server sides to require signing. Not setting one of the sides will prevent client computers from communicating with the server. This can cause many features to fail, including user authentication, Group Policy, and logon scripts.
+-   Set both the **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings to **Require signing**. To avoid usage of unsigned traffic, set both client and server sides to require signing. Not setting one of the sides will prevent client computers from communicating with the server. This can cause many features to fail, including user authentication, Group Policy, and logon scripts.
 
 ### Location
 
