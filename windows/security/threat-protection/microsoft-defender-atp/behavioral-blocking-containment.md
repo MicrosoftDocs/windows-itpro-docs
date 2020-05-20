@@ -24,7 +24,7 @@ ms.collection:
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-## Overview of behavioral blocking and containment
+## Overview
 
 Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised machines. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security). 
 
@@ -74,7 +74,7 @@ While the attack was detected and stopped, alerts, such as an "initial access al
 
 This example shows how behavior-based machine learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
-### Example 2: NTML relay
+### Example 2: NTML relay - Juicy Potato malware variant
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Microsoft Defender ATP detected a privilege escalation activity on a device in an organization. An alert called “Possible privilege escalation using NTLM relay” was triggered.
 
