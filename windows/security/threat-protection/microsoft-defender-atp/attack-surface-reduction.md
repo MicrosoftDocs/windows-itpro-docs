@@ -23,9 +23,6 @@ ms.custom: asr
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Your attack surface is the total number of places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means offering attackers fewer ways to perform attacks.
 
 Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
