@@ -34,7 +34,7 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 
 |**Software**  |**Minimum version**  |
 |---------|---------|
-|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 103 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see **How is my data processed by Cortana** below. |
+|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see **How is my data processed by Cortana** below. |
 |Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn’t required.        |
 |Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word (“Cortana”) for hands-free activation or voice commands to easily ask for help.  |
 
@@ -71,7 +71,7 @@ First, the user must enable the wake word from within Cortana settings. Once it 
 
 The first decision is made by the Windows Multiple Voice Assistant platform leveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
 
-:::image type="content" source="../../../images/screenshot2.png" alt-text="Microphone icon in the system tray indicating an assistant app is listening":::
+:::image type="content" source="images/screenshot2.png" alt-text="Microphone icon in the system tray indicating an assistant app is listening":::
 
 At that point, the Cortana app will receive the audio, run a second, more accurate wake word detector, and optionally send it to a Microsoft cloud service where a third wake word detector will confirm. If the service does not confirm that the activation was valid, the audio will be discarded and deleted from any further processing or server logs. On the user&#39;s PC, the Cortana app will be silently dismissed, and no query will be shown in conversation history because the query was discarded.
 
