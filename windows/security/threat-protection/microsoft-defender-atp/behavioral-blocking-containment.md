@@ -26,7 +26,7 @@ ms.collection:
 
 ## Overview of behavioral blocking and containment
 
-Not all cyberattacks involve a simple piece of [malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware) that's found and removed. Some attacks, such as and “living off the land” binaries, are much more difficult to identify, let alone contain. Fortunately, [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) includes behavioral blocking and containment capabilities. These capabilities can help identify and stop threats, based on their behaviors and process trees. 
+Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised machines. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in Microsoft Defender ATP. Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.
 
 Behavioral blocking and containment capabilities leverage multiple components and features of Microsoft Defender ATP to stop attacks immediately and prevent attacks from progressing.
 
