@@ -66,9 +66,15 @@ Expect more to come in the area of behavioral blocking and containment, as Micro
 
 As described in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks), a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. Spear-phishing email messages that contained a lure document were sent to the targeted organizations. If a recipient opened the attachment, a related remote document was able to execute code on the user’s device and load Lokibot malware, which stole credentials, exfiltrated stolen data, and waited for further instructions from a command-and-control server. 
 
-Behavior-based machine learning models in Microsoft Defender ATP caught the attacker’s techniques at two points in the attack chain:
-- The first protection layer detected [Behavior:Win32/CVE-2017-11882.A](https://www.microsoft.com/wdsi/threats/malware-encyclopedia-description?Name=Behavior:Win32/CVE-2017-11882.A). Machine learning classifiers in the cloud correctly identified the threat and immediately instructed the client device to block the attack.
-- ITEM TWO HERE
+Behavior-based machine learning models in Microsoft Defender ATP caught and stopped the attacker’s techniques at two points in the attack chain:
+- The first protection layer detected exploit behavior. Machine learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
+- The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot). 
+
+While the attack was detected and stopped, alerts, such as an initial access alert, were triggered and appeared in the Microsoft Defender Security Center:
+
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender Security Center":::
+
+This is an example of how behavior-based machine learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
 ### Example 2: NTML relay
 
