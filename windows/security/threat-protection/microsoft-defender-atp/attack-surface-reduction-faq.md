@@ -25,11 +25,11 @@ ms.custom: asr
 
 ## Is attack surface reduction (ASR) part of Windows?
 
-ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10 version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, please note that the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
+ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10 version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
 
 ## Do I need to have an enterprise license to run ASR rules?
 
-The full set of ASR rules and features are only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license, if you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full capabilities of ASR will not be available.
+The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. However, ASR usage without an enterprise license is not officially supported and the full capabilities of ASR will not be available.
 
 To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](http://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
