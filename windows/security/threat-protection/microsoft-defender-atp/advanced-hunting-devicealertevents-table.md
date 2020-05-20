@@ -34,8 +34,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 |-------------|-----------|-------------|
 | `AlertId` | string | Unique identifier for the alert |
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `Severity` | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
 | `Category` | string | Type of threat indicator or breach activity identified by the alert |
 | `Title` | string | Title of the alert |
