@@ -63,7 +63,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
 > [!NOTE]
-> if your AD forest has multiple domains. Please make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
+> If your AD forest has multiple domains, make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
 
 ### Section Review
 
