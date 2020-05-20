@@ -88,7 +88,7 @@ Configure the **Network security: LDAP client signing requirements** setting to 
 
 ### Potential impact
 
-If you configure the client to require LDAP signatures, it may fail to compunicate the LDAP servers that doesn't require the signing of requests. To avoid this issue, make sure that both **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings are set to **Require signing**.
+If you configure the client to require LDAP signatures, it may fail to communicate with the LDAP servers that do not require requests to be signed. To avoid this issue, make sure that both the **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings are set to **Require signing**.
 
 ## Related topics
 
