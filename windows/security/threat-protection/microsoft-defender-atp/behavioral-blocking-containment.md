@@ -46,7 +46,7 @@ The following image shows an example of an alert that was triggered by behaviora
 
 :::image type="content" source="images/blocked-behav-alert.png" alt-text="Example of an alert through behavioral blocking and containment":::
 
-## Behavioral blocking and containment capabilities
+## Components of behavioral blocking and containment
 
 - **On-client, policy-driven [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) as informational alerts. (Attack surface reduction rules are not enabled by default; you configure your policies in the Microsoft Defender Security Center.)
 
