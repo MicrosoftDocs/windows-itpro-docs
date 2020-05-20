@@ -54,8 +54,10 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
 
 3. Select **Windows Defender ATP alerts** under **Local inputs**.
 
-   NOTE:
-   This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
+   >[!NOTE]
+   > - This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
+   > - For Splunk Cloud, use [Microsoft Defender ATP Add-on for Splunk](https://splunkbase.splunk.com/app/4959/).
+
 
 4. Click **New**.
 

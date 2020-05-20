@@ -27,8 +27,13 @@ The following features are generally available (GA) in the latest release of Mic
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
-`https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us`
+
+> [!TIP]
+> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
+> 
+> ```https
+> https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
+> ```
 
 ## April 2020
 
@@ -58,7 +63,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
+- [Tamper Protection settings using Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
 
