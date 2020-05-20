@@ -43,7 +43,7 @@ All of the rules supported with E3 are also supported with E5.
 
 E5 also added greater integration with Microsoft Defender ATP. With E5, you can [use Microsoft Defender ATP to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
-## What are the the currently supported ASR rules?
+## What are the currently supported ASR rules?
 
 ASR currently supports all of the rules below:
 
@@ -65,7 +65,7 @@ ASR currently supports all of the rules below:
 
 ## What are some good recommendations for getting started with ASR?
 
-It is generally best to first test how ASR rules will impact your organization before enabling them, by running them in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
+Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
 
 Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly-broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
 
