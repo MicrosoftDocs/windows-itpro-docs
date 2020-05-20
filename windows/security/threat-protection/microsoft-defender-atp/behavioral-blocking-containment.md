@@ -26,7 +26,11 @@ ms.collection:
 
 ## Overview of behavioral blocking and containment
 
-Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised machines. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security). Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.
+Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised machines. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security). 
+
+Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Microsoft Defender ATP components and features work together in behavioral blocking and containment capabilities. 
+
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment":::
 
 Behavioral blocking and containment capabilities work with multiple components and features of Microsoft Defender ATP to stop attacks immediately and prevent attacks from progressing.
 
@@ -35,10 +39,6 @@ Behavioral blocking and containment capabilities work with multiple components a
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR. A component of [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), Microsoft Defender ATP processes and correlates these signals, raises detection alerts, and connects related alerts in incidents. 
-
-Next-generation protection, EDR, and Microsoft Defender ATP components and features work together in behavioral blocking and containment capabilities, as illustrated in the following image: 
-
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment":::
 
 With these capabilities, more threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
 
