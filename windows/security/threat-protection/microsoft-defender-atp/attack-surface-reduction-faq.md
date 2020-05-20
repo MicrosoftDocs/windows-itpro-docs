@@ -35,7 +35,7 @@ To learn more about Windows licensing, see [Windows 10 Licensing](https://www.mi
 
 ## Is ASR supported if I have an E3 license?
 
-Yes. ASR is supported for Windows Enterprise E3 and above. See [Use attack surface reduction rules in Windows 10 Enterprise E3](attack-surface-reduction-rules-in-windows-10-enterprise-e3.md) for more details.
+Yes. ASR is supported for Windows Enterprise E3 and above. 
 
 ## Which features are supported with an E5 license?
 
@@ -67,11 +67,11 @@ ASR currently supports all of the rules below:
 
 Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
 
-Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly-broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
+Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
 
 ## How long should I test an ASR rule in audit mode before enabling it?
 
-You should keep the rule in audit mode for about 30 days. This amount of time gives you a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
+Keep the rule in audit mode for about 30 days to get a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
 
 ## I'm making the switch from a third-party security solution to Microsoft Defender ATP. Is there an "easy" way to export rules from another security solution to ASR?
 
