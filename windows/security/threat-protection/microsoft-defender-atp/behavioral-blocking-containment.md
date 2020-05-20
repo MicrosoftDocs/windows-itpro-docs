@@ -70,7 +70,7 @@ Behavior-based machine learning models in Microsoft Defender ATP caught and stop
 - The first protection layer detected exploit behavior. Machine learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
 - The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot). 
 
-While the attack was detected and stopped, alerts, such as an initial access alert, were triggered and appeared in the Microsoft Defender Security Center:
+While the attack was detected and stopped, alerts, such as an initial access alert, were triggered and appeared in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)):
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender Security Center":::
 
