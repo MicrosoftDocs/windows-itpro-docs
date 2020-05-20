@@ -45,8 +45,8 @@ id | String | Alert ID.
 title | String | Alert title.
 description | String | Alert description.
 alertCreationTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was created.
-lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
-firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
+lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same device.
+firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that device.
 lastUpdateTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was last updated.
 resolvedTime | Nullable DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
 incidentId | Nullable Long | The [Incident](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert.

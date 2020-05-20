@@ -48,8 +48,8 @@ The following example demonstrates how you can create a Flow that will be trigge
 ![Image of edit credentials](images/api-flow-3.png)
 
 All you need to do now, is to choose your next steps.
-Lets, for example, Isolate the machine if the Severity of the Alert is **High** and mail about it.
-The Alert trigger gives us only the Alert ID and the Machine ID. We can use the Connector to expand these entities.
+Lets, for example, Isolate the device if the Severity of the Alert is **High** and mail about it.
+The Alert trigger gives us only the Alert ID and the Device ID. We can use the Connector to expand these entities.
 
 ### Get the Alert entity using the connector 
 
@@ -61,13 +61,13 @@ The Alert trigger gives us only the Alert ID and the Machine ID. We can use the 
 
 ![Image of edit credentials](images/api-flow-4.png)
 
-### Isolate the machine if the Alert's severity is High
+### Isolate the device if the Alert's severity is High
 
 - Add **Condition** as a new step .
 
 - Check if Alert severity equals to **High**.
 
-- If yes, add Microsoft Defender ATP - Isolate machine action with the Machine Id and a comment.
+- If yes, add Microsoft Defender ATP - Isolate device action with the Device Id and a comment.
 
 ![Image of edit credentials](images/api-flow-5.png)
 

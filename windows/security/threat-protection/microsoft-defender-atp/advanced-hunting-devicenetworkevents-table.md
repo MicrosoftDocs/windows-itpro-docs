@@ -32,14 +32,14 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `ActionType` | string | Type of activity that triggered the event |
 | `RemoteIP` | string | IP address that was being connected to |
 | `RemotePort` | int | TCP port on the remote device that was being connected to |
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
-| `LocalIP` | string | IP address assigned to the local machine used during communication |
-| `LocalPort` | int | TCP port on the local machine used during communication |
+| `LocalIP` | string | IP address assigned to the local device used during communication |
+| `LocalPort` | int | TCP port on the local device used during communication |
 | `Protocol` | string | IP protocol used, whether TCP or UDP |
 | `LocalIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |

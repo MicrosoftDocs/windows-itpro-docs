@@ -33,8 +33,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
 | `IsSigned` | boolean | Indicates whether the file is signed |
 | `SignatureType` | string | Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file |
