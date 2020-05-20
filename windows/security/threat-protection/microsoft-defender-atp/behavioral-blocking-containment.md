@@ -60,7 +60,17 @@ The alert includes recommended actions to help your security operations team fur
 
 Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities. To see what's planned and rolling out now, visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-## An example of behavioral blocking and containment in action
+## Examples of behavioral blocking and containment in action
+
+### Example 1: Credential theft attack against 100 organizations
+
+As described in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks), a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. Spear-phishing email messages that contained a lure document were sent to the targeted organizations. If a recipient opened the attachment, a related remote document was able to execute code on the user’s device and load Lokibot malware, which stole credentials, exfiltrated stolen data, and waited for further instructions from a command-and-control server. 
+
+Behavior-based machine learning models in Microsoft Defender ATP caught the attacker’s techniques at two points in the attack chain:
+- The first protection layer detected [Behavior:Win32/CVE-2017-11882.A](https://www.microsoft.com/wdsi/threats/malware-encyclopedia-description?Name=Behavior:Win32/CVE-2017-11882.A). Machine learning classifiers in the cloud correctly identified the threat and immediately instructed the client device to block the attack.
+- ITEM TWO HERE
+
+### Example 2: NTML relay
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Microsoft Defender ATP detected a privilege escalation activity on a device in an organization. An alert called “Possible privilege escalation using NTLM relay” was triggered.
 
