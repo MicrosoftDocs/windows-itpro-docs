@@ -15,7 +15,7 @@ manager: dansimp
 # Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
 
 >[!NOTE]
->For specific info about how to set, manage, and use each of these MDM policies to configure Cortana in your enterprise, see the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) topic, located in the configuration service provider reference topics.
+>For specific info about how to set, manage, and use each of these MDM policies to configure Cortana in your enterprise, see the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) topic, located in the configuration service provider reference topics.
 
 
 |**Group policy**  |**MDM policy**  |**Description**  |
