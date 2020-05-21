@@ -417,8 +417,6 @@
 ###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [APIs]()
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
@@ -441,7 +439,6 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-
 #### [Microsoft Defender ATP API]()
 ##### [Get started]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
