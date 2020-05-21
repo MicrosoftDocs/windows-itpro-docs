@@ -13,7 +13,7 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
@@ -35,7 +35,7 @@ ms.topic: article
 Microsoft Defender ATP extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
-- Windows Server 2008 R2 SP1 
+- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) version 1803 and later
@@ -57,11 +57,11 @@ There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012
 
 
 ### Option 1: Onboard servers through Microsoft Defender Security Center
-You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center. 
+You'll need to take the following steps if you choose to onboard servers through Microsoft Defender Security Center.
 
  - For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
     - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/en-us/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-    
+
  - In addition, for Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
     - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
     - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
@@ -73,7 +73,7 @@ You'll need to take the following steps if you choose to onboard servers through
 
  - Turn on server monitoring from Microsoft Defender Security Center.
 
- - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. 
+ - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support.
 
     Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
@@ -82,10 +82,10 @@ You'll need to take the following steps if you choose to onboard servers through
 
 ### Configure and update System Center Endpoint Protection clients
 
-Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
+Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
-The following steps are required to enable this integration: 
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+The following steps are required to enable this integration:
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
@@ -95,19 +95,19 @@ The following steps are required to enable this integration:
 1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
 2. Select Windows Server 2012 R2 and 2016 as the operating system.
- 
+
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment setup. When the setup completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
 <span id="server-mma"/>
 
-### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP 
+### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Using the Workspace ID and Workspace key provided in the previous procedure, choose any of the following installation methods to install the agent on the server:
     - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-setup) <br>
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
-    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script). 
+    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script).
 
 3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](configure-proxy-internet.md).
 
@@ -116,7 +116,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 <span id="server-proxy"/>
 
 ### Configure server proxy and Internet connectivity settings
- 
+
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway" data-raw-source="[OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)">OMS Gateway</a>.
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Microsoft Defender ATP service URLs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
@@ -127,7 +127,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 
 2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
 
-3. Click **Onboard Servers in Azure Security Center**. 
+3. Click **Onboard Servers in Azure Security Center**.
 
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
@@ -140,16 +140,16 @@ To onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Se
 
 Supported tools include:
 - Local script
-- Group Policy 
+- Group Policy
 - Microsoft Endpoint Configuration Manager
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
 For more information, see  [Onboard Windows 10 machines](configure-endpoints.md).
 
-Support for Windows Server, provide deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+Support for Windows Server, provide deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well.
 
-1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
+1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md).
 
 2. If you're running a third-party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings. Verify that it was configured correctly:
 
@@ -165,14 +165,14 @@ Support for Windows Server, provide deeper insight into activities happening on 
        ```
 
     1. Confirm  that a recent event containing the passive mode event is found:
-       
+
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
-   ```sc query Windefend```
+   ```sc.exe query Windefend```
 
-    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 
 ## Integration with Azure Security Center
@@ -188,12 +188,12 @@ The following capabilities are included in this integration:
 - Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
 
 > [!IMPORTANT]
-> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default. 
+> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
 > - If you use Microsoft Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
+> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created and the Microsoft Defender ATP data is stored in Europe by default. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
 
-
-## Offboard servers 
+## Offboard servers
 You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client machines.
 
 For other server versions, you have two options to offboard servers from the service:
@@ -210,10 +210,10 @@ For more information, see [To disable an agent](https://docs.microsoft.com/azure
 ### Remove the Microsoft Defender ATP workspace configuration
 To offboard the server, you can use either of the following methods:
 
-- Remove the Microsoft Defender ATP workspace configuration from the MMA agent 
+- Remove the Microsoft Defender ATP workspace configuration from the MMA agent
 - Run a PowerShell command to remove the configuration
 
-#### Remove the Microsoft Defender ATP workspace configuration from the MMA agent 
+#### Remove the Microsoft Defender ATP workspace configuration from the MMA agent
 
 1. In the **Microsoft Monitoring Agent Properties**, select the **Azure Log Analytics (OMS)** tab.
 
@@ -228,7 +228,7 @@ To offboard the server, you can use either of the following methods:
    1. In the navigation pane, select **Settings** > **Onboarding**.
 
    1. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
-    
+
       ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:

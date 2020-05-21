@@ -58,7 +58,7 @@ Informational </br>(Grey) | Alerts that might not be considered harmful to the n
 
 #### Understanding alert severity
 
-Windows Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
+Microsoft Defender Antivirus (Windows Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
 
 The Windows Defender AV threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual machine, if infected.
 
@@ -118,7 +118,7 @@ You can choose between showing alerts that are assigned to you or automation.
 Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
 >[!NOTE]
->The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
+>The Microsoft Defender Antivirus filter will only appear if machines are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
 
 
 ### OS platform

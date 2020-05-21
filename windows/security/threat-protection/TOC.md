@@ -100,7 +100,7 @@
 #### [Evaluate next-generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 #### [Configure next-generation protection]()
-##### [Configure Windows Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
+##### [Configure Microsoft Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
    
 ##### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ###### [Enable cloud-delivered protection](windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
@@ -184,7 +184,7 @@
 ###### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
    
 ##### [Manage next-generation protection in your business]()
-###### [Handle false positives/negatives in Windows Defender Antivirus](windows-defender-antivirus/antivirus-false-positives-negatives.md)
+###### [Handle false positives/negatives in Microsoft Defender Antivirus](windows-defender-antivirus/antivirus-false-positives-negatives.md)
 ###### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ###### [Use Microsoft Intune and Microsoft Endpoint Configuration Manager to manage next generation protection](windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
 ###### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
@@ -193,8 +193,8 @@
 ###### [Use the mpcmdrun.exe command line tool to manage next generation protection](windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-#### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
-#### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac]()
@@ -417,8 +417,6 @@
 ###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [APIs]()
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
@@ -441,7 +439,6 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-
 #### [Microsoft Defender ATP API]()
 ##### [Get started]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
