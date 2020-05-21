@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 2004
-description: New and updated IT Pro content about new features in Windows 10, version 2004 (also known as the Windows 10 May 2020 Update).
+description: New and updated features in Windows 10, version 2004 (also known as the Windows 10 May 2020 Update).
 keywords: ["What's new in Windows 10", "Windows 10", "May 2020 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 2004 IT Pro content
+# What's new in Windows 10, version 2004 for IT Pros
 
 **Applies to**
 -   Windows 10, version 2004
@@ -21,7 +21,7 @@ ms.topic: article
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
 
 > [!NOTE]
-> The version number for this release (2004) is an even number to avoid confusion with major releases of Windows that happened in the year 2003.
+> The version number for this release (2004) is an even number to avoid confusion with Windows releases in the year 2003.
 
 ## Security
 
