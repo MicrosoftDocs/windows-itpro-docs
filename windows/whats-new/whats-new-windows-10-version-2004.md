@@ -29,16 +29,13 @@ This article lists new and updated features and content that are of interest to 
 
 In this release,  [Windows Defender System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
 
-With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities.
-
-This feature is forward-looking and currently requires new Intel Comet Lake (CML) hardware available soon.
+With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. This feature is forward-looking and currently requires new hardware available soon.
 
 ### Widows Defender Application Guard
 
 [Windows Defender Application Guard](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
 
 [Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
-
 
 ### Passwordless authentication in Azure Active Directory
 
@@ -159,39 +156,41 @@ Check out [Windows Virtual Desktop documentation](https://aka.ms/wvdgetstarted) 
 
 Read about plans for the new Microsoft Edge and other innovations announced at [Build 2020](https://blogs.windows.com/msedgedev/2020/05/19/microsoft-edge-news-developers-build-2020/) and [What's new at Microsoft Edge Insider](https://www.microsoftedgeinsider.com/whats-new).
 
-Also see [New year, new browser – The new Microsoft Edge is out of preview and now available for download](https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/).
+Also see information about the exciting new Edge browser [here](https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/).
 
-## Cortana
+## Windows Shell
+
+### Cortana
 
 Cortana in Windows 10, version 2004 and later is a service covered by the Office 365 Trust Center. See [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later) for more information.
 
 The Cortana app also has several improvements in this release, such as enhanced security and the ability to drag the Cortana window to a more convenient location on your desktop. For more information, see [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
-## Windows Search
+### Windows Search
 
 Windows Search is [improved](https://insider.windows.com/community-news/desktop-search/) in several ways.
 
-## DirectX
+### DirectX
 
 [New DirectX 12 features](https://devblogs.microsoft.com/directx/dev-preview-of-new-directx-12-features/) are available in this release.
 
-## Virtual Desktops
+### Virtual Desktops
 
 You can now [rename your virtual desktops](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#renaming-your-virtual-desktops-build-18975), instead of getting stuck with the system-issued names like Desktop 1. 
 
-## Bluetooth
+### Bluetooth pairing
 
 Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/at-home/Whats-new-wip-at-home-20h1#improving-your-bluetooth-pairing-experience-build-18985).
 
-## Reset this PC
+### Reset this PC
 
 The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-reset-this-pc-option-cloud-download-build-18970) option.
 
-## 2-in-1 PCs
+### 2-in-1 PCs
 
 A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch When you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
 
-## Specialized displays
+### Specialized displays
 
 With this update, devices running Windows 10 Enterprise or Windows 10 Pro for Workstations with multiple displays can be configured to prevent Windows from using a display, making it available for a specialized purpose.
 
@@ -205,7 +204,7 @@ Examples include:
  
 To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
 
-## Task Manager
+### Task Manager
 
 The following items are added to Task Manager in this release:
 - GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
