@@ -247,13 +247,17 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You are prompted if the submitted file is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. There are three levels for controlling sample submission:
+
+- **None**: no suspicious samples are submitted to Microsoft.
+- **Safe**: only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
+- **All**: all suspicious samples are submitted to Microsoft.
 
 |||
 |:---|:---|
-| **Key** | automaticSampleSubmission |
+| **Key** | automaticSampleSubmissionConsent |
 | **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
+| **Possible values** | none <br/> safe (default) <br/> all |
 
 ## Recommended configuration profile
 
@@ -266,7 +270,7 @@ The following configuration profile will:
   - **Potentially unwanted applications (PUA)** are blocked.
   - **Archive bombs** (file with a high compression rate) are audited to the product logs.
 - Enable cloud-delivered protection.
-- Enable automatic sample submission.
+- Enable automatic sample submission at `safe` level.
 
 ### Sample profile
 
@@ -286,7 +290,7 @@ The following configuration profile will:
       ]
    },
    "cloudService":{
-      "automaticSampleSubmission":true,
+      "automaticSampleSubmissionConsent":"safe",
       "enabled":true
    }
 }
@@ -346,7 +350,7 @@ The following configuration profile contains entries for all settings described 
    "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
-      "automaticSampleSubmission":true
+      "automaticSampleSubmissionConsent":"safe"
    }
 }
 ```
