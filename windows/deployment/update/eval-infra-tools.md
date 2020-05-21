@@ -29,7 +29,7 @@ Do your deployment tools need updates?
 
 Rely on your experiences and data from previous deployments to help you judge how long infrastructure changes take and identify any problems you've encountered while doing so.
 
-## Configuration
+## Device settings
 
 Make sure your security basline, administrative templates, and policies have the right settings to support your devices once the new Windows 10 update is installed.
 
@@ -45,7 +45,7 @@ Keep security baslines current to help ensure that your environment is secure an
 There are a number of Windows policies (set by Group Policy, Intune, or other methods) that affect when Windows updates are installed, deferral, end-user experience, and many other aspects. Check these policies to make sure they are set appropriately.
 
 - **Windows 10 Administrative templates**: Each Windows 10 feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 10, version 1909](https://www.microsoft.com/download/100591).
-- **Update and end-user experience policies**: A number of settings affect when a device installs updates, whether and for how long a user can defer an update, restart behavior after installation, and many other aspects of update behavior. {LINK here or elsewhere}
+- **Policies for update compliance and end-user experience**: A number of settings affect when a device installs updates, whether and for how long a user can defer an update, restart behavior after installation, and many other aspects of update behavior. It's especially important to look for existing policies that are out of date or could conflict with new ones. {SET COMPLIANCE and other policies}
 
 
 ## Define operational readiness criteria
