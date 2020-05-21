@@ -35,7 +35,7 @@ The action center consists of two main tabs: **Pending actions** and **History**
    - Remediation actions that were taken as a result of an automated investigation
    - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
    - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
-   - Remediation actions that were applied by Windows Defender Antivirus (some actions can be undone) 
+   - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone) 
 
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 

@@ -1595,7 +1595,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 >1. Ensure Windows and Windows Defender are fully up to date.
 >2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
@@ -1608,7 +1608,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 You can stop sending file samples back to Microsoft.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
 
   -or-
 
@@ -1617,11 +1617,11 @@ You can stop sending file samples back to Microsoft.
 
 You can stop downloading **Definition Updates**:
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
   -and-
 
-- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
+- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
 
   -or-
 
@@ -1645,7 +1645,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Reporting**.  
+- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Reporting**.  
 
   -or-
 
