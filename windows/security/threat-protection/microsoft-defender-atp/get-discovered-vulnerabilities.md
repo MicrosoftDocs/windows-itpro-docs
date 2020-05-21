@@ -1,6 +1,6 @@
 ---
 title: Get discovered vulnerabilities
-description: Retrieves a collection of discovered vulnerabilities related to a given machine ID.
+description: Retrieves a collection of discovered vulnerabilities related to a given device ID.
 keywords: apis, graph api, supported apis, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -22,7 +22,7 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a collection of discovered vulnerabilities related to a given machine ID.
+Retrieves a collection of discovered vulnerabilities related to a given device ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
