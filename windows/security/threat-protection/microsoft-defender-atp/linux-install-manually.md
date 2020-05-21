@@ -179,7 +179,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install mdatp
     ```
 
-    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This can happen if you are using multiple Microsoft products on your device.
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
     ```bash
     # list all repositories
@@ -199,7 +199,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper install mdatp
     ```
 
-    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This can happen if you are using multiple Microsoft products on your device.
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
     ```bash
     # list all repositories
@@ -220,7 +220,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install mdatp
     ```
 
-    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This can happen if you are using multiple Microsoft products on your device.
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
     ```bash
     # list all repositories
