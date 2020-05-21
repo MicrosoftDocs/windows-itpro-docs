@@ -103,7 +103,7 @@ Windows PowerShell cmdlets have been improved:
 - Enable-DeliveryOptimizationVerboseLogs is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
 Additional improvements:
-- Enterprise network throttling is enhanced to optimize foreground vs. background throttling.
+- Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
 
 The following [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) policies are removed in this release:
@@ -141,11 +141,17 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 
 Windows Media Player is also added back to the Sandbox image in this release.
 
-## Windows Subsystem for Linux (WSL)
+Windows Sandbox also has improved accessibility in this release, including:
+- Microphone support is available.
+- Added functionality to configure the audio input device via the Windows Sandbox config file.
+- A Shift + Alt + PrintScreen key sequence that activates the ease of access dialog for enabling high contrast mode.
+- A ctrl + alt + break key sequence that allows entering/exiting fullscreen mode.
+
+### Windows Subsystem for Linux (WSL)
 
 With this release, memory that is no longer in use in a Linux VM will be freed back to Windows. Previously, a WSL VM's memory could grow, but would not shrink when no longer needed.
 
-WSL2 support is has been added for ARM64 devices if your device supports virtualization.
+[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) support is has been added for ARM64 devices if your device supports virtualization.
 
 For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
 
