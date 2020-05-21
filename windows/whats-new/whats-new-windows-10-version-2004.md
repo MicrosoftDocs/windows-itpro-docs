@@ -31,6 +31,8 @@ In this release,  [Windows Defender System Guard](https://docs.microsoft.com/win
 
 With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. This feature is forward-looking and currently requires new hardware available soon.
 
+ ![System Guard](images/system-guard2.png)
+
 ### Widows Defender Application Guard
 
 [Windows Defender Application Guard](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
