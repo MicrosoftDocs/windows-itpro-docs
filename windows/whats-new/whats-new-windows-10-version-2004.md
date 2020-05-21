@@ -73,7 +73,7 @@ With this release, memory that is no longer in use in a Linux VM will be freed b
 
 WSL2 support is has been added for ARM64 devices if your device supports virtualization.
 
-For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/en-us/windows/wsl/release-notes).
+For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
 
 ## DirectX
 
