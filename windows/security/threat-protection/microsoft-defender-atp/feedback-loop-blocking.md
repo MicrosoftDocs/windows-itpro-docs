@@ -41,7 +41,8 @@ Make sure the following features and capabilities of Microsoft Defender ATP are 
 
 ## Related articles
 
+- [Behavioral blocking and containment](behavioral-blocking-containment.md)
+
 - [Helpful Microsoft Defender ATP resources](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/helpful-resources)
 
-- [Behavioral blocking and containment](behavioral-blocking-containment.md)
 
