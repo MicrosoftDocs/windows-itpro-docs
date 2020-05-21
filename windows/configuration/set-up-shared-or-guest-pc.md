@@ -80,8 +80,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
 [Policies: Authentication](wcd/wcd-policies.md#authentication) (optional related setting) | Enables a quick first sign-in experience for a user by automatically connecting new non-admin Azure AD accounts to the pre-configured candidate local accounts.
 
-
-## Configuring shared PC mode on Windows
+## Configuring Shared PC mode for Windows
 You can configure Windows to be in shared PC mode in a couple different ways:
 
 - Mobile device management (MDM): Shared PC mode is enabled by the SharedPC configuration service provider (CSP). To setup a shared device policy for Windows 10 in Intune, complete the following steps:
@@ -101,6 +100,8 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   10. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
 ![Shared PC settings in ICD](images/Shared_PC_3.png) 
+
+  11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
 - A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in Windows Configuration Designer as **SharedPC**.
 
