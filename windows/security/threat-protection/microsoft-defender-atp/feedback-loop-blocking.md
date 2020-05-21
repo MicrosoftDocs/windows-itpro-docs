@@ -55,6 +55,6 @@ If your organization is using Microsoft Defender ATP, feedback-loop blocking is 
 
 - [Behavioral blocking and containment](behavioral-blocking-containment.md)
 
-- [Helpful Microsoft Defender ATP resources](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/helpful-resources)
-
 - [(Blog) Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
+
+- [Helpful Microsoft Defender ATP resources](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/helpful-resources)
