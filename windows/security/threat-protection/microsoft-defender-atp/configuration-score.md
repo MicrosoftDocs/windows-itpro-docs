@@ -1,6 +1,6 @@
 ---
 title: Overview of Configuration score in Microsoft Defender Security Center
-description: Your configuration score shows the collective security configuration state of your machines across application, operating system, network, accounts, and security controls
+description: Your configuration score shows the collective security configuration state of your devices across application, operating system, network, accounts, and security controls
 keywords: configuration score, mdatp configuration score, secure score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.topic: conceptual
 >[!NOTE]
 > Secure score is now part of Threat & Vulnerability Management as Configuration score.
 
-Your Configuration score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher configuration score means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your machines across the following categories:
+Your Configuration score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher configuration score means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
 
 - Application
 - Operating system
