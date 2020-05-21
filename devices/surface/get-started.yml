@@ -28,20 +28,9 @@ landingContent:
             url: https://www.microsoft.com/surface/business/surface-go-2
           - text: Surface Book 3 for Business
             url: https://www.microsoft.com/surface/business/surface-book-3
-          - text: Surface Pro 7 for Business
-            url: https://www.microsoft.com/surface/business/surface-pro-7
-          - text: Surface Pro X for Business
-            url: https://www.microsoft.com/surface/business/surface-pro-x
-          - text: Surface Laptop 3 for Business
-            url: https://www.microsoft.com/surface/business/surface-laptop-3
-          - text: Surface Studio 2 for Business
-            url: https://www.microsoft.com/surface/business/surface-studio-2
-          
-      - linkListType: video
-        links:
-          - text: Microsoft Mechanics Surface videos
-            url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-
+          - text: Explore all Surface family products
+            url: https://www.microsoft.com/surface/business
+  
   # Card (optional)
   - title: Get started
     linkLists:
@@ -52,38 +41,34 @@ landingContent:
          - text: Surface Book 3 Quadro RTX 3000 technical overview
            url: surface-book-quadro.md
          - text: What’s new in Surface Dock 2
-           url: surface-dock-whats-new.md
-         - text: Surface and Endpoint Configuration Manager considerations
-           url: considerations-for-surface-and-system-center-configuration-manager.md
-         - text: Wake On LAN for Surface devices
-           url: wake-on-lan-for-surface-devices.md
-
+           url: surface-dock-whats-new.md    
+ 
   # Card
   - title: Deploy Surface devices
     linkLists:
       - linkListType: deploy
         links:
-          - text: Manage and deploy Surface driver and firmware updates
-            url: manage-surface-driver-and-firmware-updates.md
+          - text: Surface Deployment Accelerator tool
+            url: microsoft-surface-deployment-accelerator.md
           - text: Autopilot and Surface devices
             url: windows-autopilot-and-surface-devices.md
-          - text: Deploying, managing, and servicing Surface Pro X
-            url: surface-pro-arm-app-management.md
-
-  # Card
+          - text: Windows Virtual Desktop on Surface
+            url: windows-virtual-desktop-surface.md
+  
+    # Card
   - title: Manage Surface devices
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Optimize Wi-Fi connectivity for Surface devices
-            url: surface-wireless-connect.md
+          - text: Manage and deploy Surface driver and firmware updates
+            url: manage-surface-driver-and-firmware-updates.md
           - text: Best practice power settings for Surface devices
             url: maintain-optimal-power-settings-on-Surface-devices.md
-          - text: Manage battery limit with UEFI
-            url: battery-limit.md
+          - text: Optimize Wi-Fi connectivity for Surface devices
+            url: surface-wireless-connect.md
 
   # Card
-  - title: Secure Surface devices
+  - title: Explore security guidance
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -93,37 +78,39 @@ landingContent:
             url: surface-enterprise-management-mode.md
           - text: Surface Data Eraser tool
             url: microsoft-surface-data-eraser.md
-
-  # Card
+ 
+ # Card
   - title: Discover Surface tools
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Surface Dock Firmware Update
-            url: surface-dock-firmware-update.md
           - text: Surface Diagnostic Toolkit for Business
             url: surface-diagnostic-toolkit-for-business-intro.md
           - text: SEMM and UEFI
             url: surface-enterprise-management-mode.md
-          - text: Surface Brightness Control
-            url: microsoft-surface-brightness-control.md
           - text: Battery Limit setting
             url: battery-limit.md         
 
-  # Card
-  - title: Support and community 
+ # Card
+  - title: Browse support solutions
     linkLists:
       - linkListType: learn
         links:
           - text: Top support solutions
             url: support-solutions-surface.md
-          - text: Maximize your Surface battery life
-            url: https://support.microsoft.com/help/4483194/maximize-surface-battery-life
+          - text: Protecting your data during Surface repair or service
+            url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
           - text: Troubleshoot Surface Dock and docking stations
             url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
-      - linkListType: reference
+            
+# Card
+  - title: Participate in Surface Community 
+    linkLists:
+      - linkListType: learn
         links:
           - text: Surface IT Pro blog
             url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
           - text: Surface Devices Tech Community
             url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+          - text: Microsoft Mechanics Surface videos
+            url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ

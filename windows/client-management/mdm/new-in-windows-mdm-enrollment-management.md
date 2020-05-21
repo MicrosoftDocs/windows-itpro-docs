@@ -429,6 +429,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>TextInput/TouchKeyboardSplitModeAvailability</li>
 <li>TextInput/TouchKeyboardWideModeAvailability</li>
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>Update/TargetReleaseVersion</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li>
@@ -709,6 +710,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
 <li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
@@ -2563,6 +2565,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>

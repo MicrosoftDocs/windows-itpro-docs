@@ -62,11 +62,8 @@
  
 
 #### [Device control]()
+##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-
-##### [Device Guard]()
-###### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-
 
 
 #### [Exploit protection]()
@@ -200,7 +197,8 @@
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender Advanced Threat Protection for Mac]()
+#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
@@ -225,7 +223,8 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+### [Microsoft Defender Advanced Threat Protection for Linux]()
+#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
@@ -239,6 +238,7 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/linux-exclusions.md)
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
@@ -246,6 +246,7 @@
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
 
+#### [Privacy](microsoft-defender-atp/linux-privacy.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
@@ -328,8 +329,9 @@
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
-### [Automated investigation and response]()
+### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
@@ -349,10 +351,10 @@
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
-##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-tvm-softwareinventory-table.md)
-##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md)
-##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-tvm-configassessment-table.md)
-##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-tvm-secureconfigkb-table.md)
+##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)
+##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
+##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
+##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)
 #### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
@@ -656,7 +658,6 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
-### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
