@@ -25,6 +25,23 @@ Please refer to the “[Surface Hub Important Information](https://support.micro
 ## Windows 10 Team Creators Update 1703
 
 <details>
+<summary>May 4, 2020—update for Surface Hub 2S</summary>
+
+This update is specific to the Surface Hub 2S and provides the driver and firmware updates outlined below:
+
+* Surface USB audio driver - 15.3.6.0
+  * Improves directional audio performance.
+* Intel(R) display audio driver - 10.27.0.5
+  * Improves screen sharing scenarios.
+* Intel(R) graphics driver - 26.20.100.7263
+  * Improves system stability.
+* Surface System driver - 1.7.139.0
+  * Improves system stability.
+* Surface SMC Firmware update - 1.176.139.0
+  * Improves system stability.
+</details>
+
+<details>
 <summary>February 28, 2020—update for Surface Hub 2S</summary>
 
 This update is specific to the Surface Hub 2S and provides the driver and firmware updates outlined below:

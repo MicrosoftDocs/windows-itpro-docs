@@ -1,6 +1,6 @@
 ---
 title: Configure Windows 10 (Windows 10)
-description: Learn about configuring Windows 10.
+description: Apply custom accessibility configurations to devices for their users using the all the features and methods available with Windows 10.
 keywords: Windows 10, MDM, WSUS, Windows update
 ms.prod: w10
 ms.mktglfcycl: manage

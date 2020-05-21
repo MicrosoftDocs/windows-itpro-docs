@@ -64,7 +64,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 **To trigger Autopilot Reset**
 
-1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
+1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**. 
 
     ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
 
