@@ -14,7 +14,7 @@ manager: dansimp
 
 # Test scenario 4 - Use Cortana to find free time on your calendar
 
-This process helps you find out if a time slot is free on your calendar.
+This scenario helps you find out if a time slot is free on your calendar.
 
 1. Select the  **Cortana**  icon in the taskbar.
 

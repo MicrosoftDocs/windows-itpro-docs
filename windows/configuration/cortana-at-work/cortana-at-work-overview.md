@@ -48,7 +48,7 @@ Cortana's approach to integration with Microsoft 365 has changed with Windows 10
 
 ### Cortana in Windows 10, version 2004 and later
 
-Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). For more information, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
+Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). To learn more, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
 
 #### How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
