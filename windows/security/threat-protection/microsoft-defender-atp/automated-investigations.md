@@ -1,7 +1,7 @@
 ---
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
-keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
+keywords: automated, investigation, detection, source, threat types, id, tags, devices, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, Microsoft Defender ATP uses automated investigation and remediation capabilities to significantly reduce the volume of alerts that must be investigated individually. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, Microsoft Defender ATP uses automated investigation and remediation capabilities to significantly reduce the volume of alerts that must be investigated individually. 
 
 The automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when the investigation was initiated.
 
@@ -30,7 +30,7 @@ The automated investigation feature leverages various inspection algorithms, and
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a machine. When that file is detected, an alert is triggered. The automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other machines in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
+When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered. The automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
 
 >[!NOTE]
 >Currently, automated investigation only supports the following OS versions:
@@ -57,28 +57,28 @@ During and after an automated investigation, you can view details about the inve
 
 ## How an automated investigation expands its scope
 
-While an investigation is running, any other alerts generated from the machine are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
+While an investigation is running, any other alerts generated from the device are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
 
-If an incriminated entity is seen in another machine, the automated investigation process will expand its scope to include that machine, and a general security playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
+If an incriminated entity is seen in another device, the automated investigation process will expand its scope to include that device, and a general security playbook will start on that device. If 10 or more devices are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ## How threats are remediated
 
-Depending on how you set up the machine groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the device groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|No automated response | Machines do not get any automated investigations run on them. |
+|No automated response | Devices do not get any automated investigations run on them. |
 |Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. |
 |Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
 |Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.|
 |Full - remediate threats automatically | All remediation actions will be performed automatically.|
 
 > [!TIP]
-> For more information on how to configure these automation levels, see [Create and manage machine groups](machine-groups.md).
+> For more information on how to configure these automation levels, see [Create and manage device groups](machine-groups.md).
 
-The default machine group is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
+The default device group is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 

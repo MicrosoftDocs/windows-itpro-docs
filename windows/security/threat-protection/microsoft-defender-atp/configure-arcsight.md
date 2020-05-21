@@ -32,7 +32,7 @@ You'll need to install and configure some files and tools to use Micro Focus Arc
 
 >[!Note]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
 
 ## Before you begin
 
