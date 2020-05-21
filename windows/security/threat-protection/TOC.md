@@ -327,6 +327,7 @@
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
+#### [Feedback-loop blocking](microsoft-defender-atp/feedback-loop-blocking.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 ### [Automated investigation and response (AIR)]()
