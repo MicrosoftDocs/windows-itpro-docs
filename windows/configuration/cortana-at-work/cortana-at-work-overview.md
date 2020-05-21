@@ -30,7 +30,7 @@ The Cortana app in Windows 10, version 2004 requires the latest Microsoft Store 
 Cortana requires a PC running Windows 10, version 1703 or later, as well as the following software to successfully run the included scenario in your organization.
 
 >[!NOTE]
->A microphone is not required to use Cortana.
+>A microphone isn't required to use Cortana.
 
 |**Software**  |**Minimum version**  |
 |---------|---------|
