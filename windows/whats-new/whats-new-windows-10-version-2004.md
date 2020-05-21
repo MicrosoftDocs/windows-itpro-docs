@@ -221,7 +221,7 @@ For the latest information about MDT, see the [MDT release notes](https://docs.m
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.<br>
 [What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new): A preview of new features for businesses.<br>
-[What's new in Windows 10, version 1909 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
+[What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
 [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
 [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
-[What’s new for IT pros in Windows 10, version 1909](https://aka.ms/whats-new-in-2004): Windows IT Pro blog.<br>
+[What’s new for IT pros in Windows 10, version 2004](https://aka.ms/whats-new-in-2004): Windows IT Pro blog.<br>
