@@ -51,69 +51,47 @@ Fast Identity Online 2 (FIDO2) security key support is expanded to Azure Active 
 - Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#windows-hello-pin-in-safe-mode-build-18995).
 - Windows Hello for Business now has Hybrid Azure Active Directory support and Phone number sign-in (MSA).
 
-## Microsoft Edge
+## Deployment
 
-Read about plans for the new Microsoft Edge and other innovations announced at [Build 2020](https://blogs.windows.com/msedgedev/2020/05/19/microsoft-edge-news-developers-build-2020/) and [What's new at Microsoft Edge Insider](https://www.microsoftedgeinsider.com/whats-new).
+### Windows Setup
 
-Also see [New year, new browser – The new Microsoft Edge is out of preview and now available for download](https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/).
+Improvements in Windows Setup with this release include:
+- Reduced offline time during feature updates
+- Improved controls for reserved storage
+- Improved controls and diagnostics
+- New recovery options
 
-## Cortana
+For more information, see Windows Setup enhancements in the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/pilot-new-features-with-the-windows-insider-program-for-business/ba-p/1220464).
 
-Cortana in Windows 10, version 2004 and later is a service covered by the Office 365 Trust Center. See [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later) for more information.
+### SetupDiag
 
-The Cortana app also has [several improvements](https://insider.windows.com/articles/cortana-windows-beta/) in this release, such as enhanced security and the ability to drag the Cortana window to a more convenient location on your desktop. For more information, see [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+In Windows 10, version 2004, SetupDiag is now automatically installed.
 
-## Windows Search
+[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues.
 
-Windows Search is [improved](https://insider.windows.com/community-news/desktop-search/) in several ways.
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there is an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
 
-## Windows Subsystem for Linux (WSL)
+### Windows Autopilot
 
-With this release, memory that is no longer in use in a Linux VM will be freed back to Windows. Previously, a WSL VM's memory could grow, but would not shrink when no longer needed.
+With this release, you can configure User-driven Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
 
-WSL2 support is has been added for ARM64 devices if your device supports virtualization.
+### Microsoft Endpoint Manager
 
-For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
+An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
-## DirectX
+Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 
-[New DirectX 12 features](https://devblogs.microsoft.com/directx/dev-preview-of-new-directx-12-features/) are available in this release.
+### Windows Assessment and Deployment Toolkit (ADK)
 
-## Virtual Desktops
+Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
-You can now [rename your virtual desktops](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#renaming-your-virtual-desktops-build-18975), instead of getting stuck with the system-issued names like Desktop 1. 
+For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
 
-## Bluetooth
+### Microsoft Deployment Toolkit (MDT)
 
-Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/at-home/Whats-new-wip-at-home-20h1#improving-your-bluetooth-pairing-experience-build-18985).
+MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  This issue is currently under investigation.
 
-## Reset this PC
-
-The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-reset-this-pc-option-cloud-download-build-18970) option.
-
-## 2-in-1 PCs
-
-A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch When you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
-
-## Specialized displays
-
-With this update, devices running Windows 10 Enterprise or Windows 10 Pro for Workstations with multiple displays can be configured to prevent Windows from using a display, making it available for a specialized purpose.
-
-Examples include:
-- Fixed-function arcade & gaming such as cockpit, driving, flight, and military simulators
-- Medical imaging devices with custom panels, such as grayscale X-ray displays
-- Video walls like those displayed in Microsoft Store
-- Dedicated video monitoring
-- Monitor panel testing and validation
-- Independent Hardware Vendor (IHV) driver testing and validation
- 
-To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
-
-## Task Manager
-
-The following items are added to Task Manager in this release:
-- GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
-- Disk type is now listed for each disk on the Performance tab.
+For the latest information about MDT, see the [MDT release notes](https://docs.microsoft.com/mem/configmgr/mdt/release-notes).
 
 ## Servicing
 
@@ -164,55 +142,80 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 
 Windows Media Player is also added back to the Sandbox image in this release.
 
+## Windows Subsystem for Linux (WSL)
+
+With this release, memory that is no longer in use in a Linux VM will be freed back to Windows. Previously, a WSL VM's memory could grow, but would not shrink when no longer needed.
+
+WSL2 support is has been added for ARM64 devices if your device supports virtualization.
+
+For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
+
 ### Windows Virtual Desktop
 
 Check out [Windows Virtual Desktop documentation](https://aka.ms/wvdgetstarted) for the latest and greatest information, as well as the [WVD Virtual Event from March](https://aka.ms/wvdvirtualevent).
 
-## Deployment
 
-### Windows Setup
+## Microsoft Edge
 
-Improvements in Windows Setup with this release include:
-- Reduced offline time during feature updates
-- Improved controls for reserved storage
-- Improved controls and diagnostics
-- New recovery options
+Read about plans for the new Microsoft Edge and other innovations announced at [Build 2020](https://blogs.windows.com/msedgedev/2020/05/19/microsoft-edge-news-developers-build-2020/) and [What's new at Microsoft Edge Insider](https://www.microsoftedgeinsider.com/whats-new).
 
-For more information, see Windows Setup enhancements in the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/pilot-new-features-with-the-windows-insider-program-for-business/ba-p/1220464).
+Also see [New year, new browser – The new Microsoft Edge is out of preview and now available for download](https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/).
 
-### SetupDiag
+## Cortana
 
-In Windows 10, version 2004, SetupDiag is now automatically installed.
+Cortana in Windows 10, version 2004 and later is a service covered by the Office 365 Trust Center. See [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later) for more information.
 
-[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues.
+The Cortana app also has several improvements in this release, such as enhanced security and the ability to drag the Cortana window to a more convenient location on your desktop. For more information, see [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
-During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there is an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
+## Windows Search
 
-### Windows Autopilot
+Windows Search is [improved](https://insider.windows.com/community-news/desktop-search/) in several ways.
 
-With this release, you can configure User-driven Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
+## DirectX
 
-### Microsoft Endpoint Manager
+[New DirectX 12 features](https://devblogs.microsoft.com/directx/dev-preview-of-new-directx-12-features/) are available in this release.
 
-An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
+## Virtual Desktops
 
-Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+You can now [rename your virtual desktops](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#renaming-your-virtual-desktops-build-18975), instead of getting stuck with the system-issued names like Desktop 1. 
 
-### Windows Assessment and Deployment Toolkit (ADK)
+## Bluetooth
 
-Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/at-home/Whats-new-wip-at-home-20h1#improving-your-bluetooth-pairing-experience-build-18985).
 
-For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
+## Reset this PC
 
-### Microsoft Deployment Toolkit (MDT)
+The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-reset-this-pc-option-cloud-download-build-18970) option.
 
-MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  This issue is currently under investigation.
+## 2-in-1 PCs
 
-For the latest information about MDT, see the [MDT release notes](https://docs.microsoft.com/mem/configmgr/mdt/release-notes).
+A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch When you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
+
+## Specialized displays
+
+With this update, devices running Windows 10 Enterprise or Windows 10 Pro for Workstations with multiple displays can be configured to prevent Windows from using a display, making it available for a specialized purpose.
+
+Examples include:
+- Fixed-function arcade & gaming such as cockpit, driving, flight, and military simulators
+- Medical imaging devices with custom panels, such as grayscale X-ray displays
+- Video walls like those displayed in Microsoft Store
+- Dedicated video monitoring
+- Monitor panel testing and validation
+- Independent Hardware Vendor (IHV) driver testing and validation
+ 
+To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
+
+## Task Manager
+
+The following items are added to Task Manager in this release:
+- GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
+- Disk type is now listed for each disk on the Performance tab.
 
 ## Desktop Analytics
 
-[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. For information about what's new, see [What's new in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/whats-new).
+[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. 
+
+For information about Desktop Analytics and this release of Windows 10, see [What's new in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/whats-new).
 
 ## See Also
 
