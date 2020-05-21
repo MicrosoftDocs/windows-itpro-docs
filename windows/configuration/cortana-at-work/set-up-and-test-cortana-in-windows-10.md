@@ -32,8 +32,8 @@ Users cannot enable or disable the Bing Answer feature individually. So, if you 
 Sign in to the [Office Configuration Admin tool](https://config.office.com/).
 
 Follow the steps [here](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below:
-    
-:::image type="content" source="../../../images/screenshot3.png" alt-text="Screenshot: Bing policy example":::
+
+:::image type="content" source="../screenshot3.png" alt-text="Screenshot: Bing policy example":::
 
 ## How does Microsoft handle customer data for Bing Answers?
 
