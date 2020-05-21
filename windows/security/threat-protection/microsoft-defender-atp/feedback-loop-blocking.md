@@ -40,10 +40,15 @@ With rapid protection in place, an attack can be stopped on a device, other devi
 ## Configuring feedback-loop blocking
 
 If your organization is using Microsoft Defender ATP, feedback-loop blocking is enabled by default. However, rapid protection occurs through a combination of Microsoft Defender ATP capabilities, machine learning protection features, and signal-sharing across Microsoft security services. Make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
+
 - [Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
+
 - [Devices onboarded to Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+
 - [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode)
+
 - [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+
 - [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) (antivirus)
 
 ## Related articles
