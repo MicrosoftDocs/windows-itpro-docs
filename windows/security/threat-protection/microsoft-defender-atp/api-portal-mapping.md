@@ -91,7 +91,6 @@ Field numbers match the numbers in the images below.
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
 - [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
 - [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
