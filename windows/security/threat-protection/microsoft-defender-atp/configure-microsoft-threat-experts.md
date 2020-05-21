@@ -24,7 +24,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Before you begin 
-Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up.
+Ensure that you have Microsoft Defender ATP deployed in your environment with devices enrolled, and not just on a laboratory set-up.
 
 Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
 
@@ -68,13 +68,13 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard. 
 
 > [!NOTE]
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
 > - You will need to have the "Manage security settings" permission in the Security Center portal to be able to submit a "Consult a threat expert" inquiry.
 
-1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an investigation request. 
+1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request. 
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
@@ -88,7 +88,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
 
-    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
+    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
 
 3.  In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
   
@@ -102,8 +102,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 - I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Microsoft Defender ATP see these attempts? What type of sign-ins are being monitored?
 - Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
-**Possible machine compromise**
-- Can you help answer why we see “Unknown process observed?” This is seen quite frequently on many machines. We appreciate any input to clarify whether this is related to malicious activity.
+**Possible device compromise**
+- Can you help answer why we see “Unknown process observed?” This is seen quite frequently on many devices. We appreciate any input to clarify whether this is related to malicious activity.
 - Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**

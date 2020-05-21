@@ -23,7 +23,7 @@ During and after an automated investigation, certain remediation actions can be 
 If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). You can also use the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to view details about an investigation.
 
 >[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the machine or machine group will be able to view the entire investigation. 
+>If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the device or device group will be able to view the entire investigation. 
 
 ## The Action center
 
@@ -62,7 +62,7 @@ On the **Investigations** page, you can view details and use filters to focus on
 |**Status**     |(See [Automated investigation status](#automated-investigation-status))         |
 |**Triggering alert** | The alert that initiated the automated investigation |
 |**Detection source** |The source of the alert that initiated the automated investigation |
-|**Entities** | Entities can include device or machines, and machine groups. You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine, or to see specific machine groups that were created. |
+|**Entities** | Entities can include device or devices, and device groups. You can filter the automated investigations list to zone in a specific device to see other investigations related to the device, or to see specific device groups that were created. |
 |**Threat** |The category of threat detected during the automated investigation |
 |**Tags** |Filter using manually added tags that capture the context of an automated investigation|
 |**Comments** |Select between filtering the list between automated investigations that have comments and those that don't|
@@ -82,7 +82,7 @@ An automated investigation can have one of the following status values:
 | Terminated by system  | The investigation stopped. An investigation can stop for several reasons:<br/>- The investigation's pending actions expired. Pending actions can time out after awaiting approval for an extended period of time. <br/>- There are too many actions in the list.<br/>Visit the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) to view and approve any pending actions.     |
 | Failed  | At least one investigation analyzer ran into a problem where it could not complete properly. <br/><br/>If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) for detailed results.      |
 | Queued    | An investigation is being held in a queue. When other investigations complete, queued investigations begin.  |
-| Waiting for machine | Investigation paused. The investigation will resume as soon as the machine is available. |
+| Waiting for device | Investigation paused. The investigation will resume as soon as the device is available. |
 | Terminated by user    | A user stopped the investigation before it could complete.  |
 
 
@@ -90,7 +90,7 @@ An automated investigation can have one of the following status values:
 
 ![Image of investigation details window](images/atp-analyze-auto-ir.png)
 
-You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the device that was investigated, and other information.
 
 In this view, you'll see the name of the investigation, when it started and ended. 
 
@@ -112,23 +112,23 @@ From this view, you can also view and add comments and tags about the investigat
 
 ### Alerts
 
-The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned. 
+The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the device associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned. 
 
-Additional alerts seen on a machine can be added to an automated investigation as long as the investigation is ongoing. 
+Additional alerts seen on a device can be added to an automated investigation as long as the investigation is ongoing. 
 
-Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related machine, logged-on users, and comments and history. 
+Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related device, logged-on users, and comments and history. 
 
 Clicking on an alert title brings you the alert page.
 
 ### Machines
 
-The **Machines** tab Shows details the machine name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
+The **Machines** tab Shows details the device name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
 
-Machines that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
+Devices that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more devices are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
-Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
+Selecting a device using the checkbox brings up the device details pane where you can see more information such as device details and logged-on users.
 
-Clicking on a machine name brings you the machine page.
+Clicking on a device name brings you the device page.
 
 ### Evidence
 
@@ -140,11 +140,11 @@ The **Entities** tab shows details about entities such as files, process, servic
 
 ### Log
 
-The **Log** tab gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
+The **Log** tab gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, device name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
 
 As with other sections, you can customize columns, select the number of items to show per page, and filter the log.
 
-Available filters include action type, action, status, machine name, and description.
+Available filters include action type, action, status, device name, and description.
 
 You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
 

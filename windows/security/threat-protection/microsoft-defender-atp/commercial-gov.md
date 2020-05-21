@@ -37,7 +37,7 @@ The following OS versions are supported:
 - Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 
 >[!NOTE]
->A patch must be deployed before machine onboarding in order to configure Microsoft Defender ATP to the correct environment.
+>A patch must be deployed before device onboarding in order to configure Microsoft Defender ATP to the correct environment.
 
 The following OS versions are not supported:
 - Windows Server 2008 R2 SP1
@@ -67,7 +67,7 @@ The following capabilities are not currently available:
 The following capabilities are not currently available:
 
 - Threat protection report
-- Machine health and compliance report
+- Device health and compliance report
 - Integration with third-party products
 
 
@@ -92,7 +92,7 @@ You'll need to ensure that traffic from the following are allowed:
 
 Service location | DNS record
 :---|:---
-Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 machines running version 1803 or earlier.
+Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
 Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
 
 
