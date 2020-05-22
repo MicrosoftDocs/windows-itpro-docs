@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
 description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
+keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, device behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -34,7 +34,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
 
 
--   **Cloud security analytics**: Leveraging big-data, machine-learning, and
+-   **Cloud security analytics**: Leveraging big-data, device-learning, and
     unique Microsoft optics across the Windows ecosystem,
     enterprise cloud products (such as Office 365), and online assets, behavioral signals
     are translated into insights, detections, and recommended responses

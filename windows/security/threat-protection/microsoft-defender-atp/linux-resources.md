@@ -101,11 +101,11 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 - Antivirus alerts, including:
   - Severity
   - Scan type
-  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
+  - Device information (hostname, device identifier, tenant identifier, app version, and OS type)
   - File information (name, path, size, and hash)
   - Threat information (name, type, and state)
 - Device information, including:
-  - Machine identifier
+  - Device identifier
   - Tenant identifier
   - App version
   - Hostname

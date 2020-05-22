@@ -55,7 +55,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Device management > Onboarding**.
 2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android**.
 3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
 
@@ -140,7 +140,7 @@ Use the **Logs** tab to monitor deployment status for each enrolled device.
 
 ### Notification settings
 
-Starting in macOS 10.15 (Catalina) a user must manually allow to display notifications in UI. To auto-enable notifications from Defender and Auto Update, you can import the .mobileconfig below into a separate configuration profile and assign it to all machines with Defender:
+Starting in macOS 10.15 (Catalina) a user must manually allow to display notifications in UI. To auto-enable notifications from Defender and Auto Update, you can import the .mobileconfig below into a separate configuration profile and assign it to all devices with Defender:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -287,4 +287,4 @@ Your policy should contain a single script:
 
 ![Microsoft Defender uninstall script screenshot](../windows-defender-antivirus/images/MDATP-27-UninstallScript.png)
 
-Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
+Configure the appropriate scope in the **Scope** tab to specify the devices that will receive this policy.
