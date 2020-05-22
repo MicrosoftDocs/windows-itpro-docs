@@ -96,7 +96,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
      ![custom OMA-URI policy in Intune](images/Shared_PC_1.png) 
 
   7. Select **Create**.
-  8. Enter a name for the policy (e.g.) My Win10 Shared devices policy. You can optionally add a description should you wish to do so.
+  8. Enter a name for the policy (e.g. My Win10 Shared devices policy). You can optionally add a description should you wish to do so.
   9. Select **Next**.
   10. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
