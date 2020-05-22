@@ -74,7 +74,7 @@ With this release, you can configure [Windows Autopilot user-driven](https://doc
 
 An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
-Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new).
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
@@ -94,9 +94,9 @@ For the latest information about MDT, see the [MDT release notes](https://docs.m
 
 Windows PowerShell cmdlets have been improved:
 
-- Get-DeliveryOptimizationStatus has added the  **-PeerInfo** option for a real-time peak behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent)
-- Get-DeliveryOptimizationLogAnalysis is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the -ListConnections option to for in-depth look at peer-to-peer connections.
-- Enable-DeliveryOptimizationVerboseLogs is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
+- **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peak behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
+- **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
+- **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
 Additional improvements:
 - Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
@@ -167,7 +167,7 @@ This release enables explicit [control over when Windows automatically restarts 
 
 ## Windows Shell
 
-Several enhancements to the Windows 10 user interface are implemented in this release.
+Several enhancements to the Windows 10 user interface are implemented in this release:
 
 ### Cortana
 
