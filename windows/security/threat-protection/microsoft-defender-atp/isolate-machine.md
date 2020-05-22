@@ -69,7 +69,7 @@ IsolationType	| String |	Type of the isolation. Allowed values are: 'Full' or 'S
 
 **IsolationType** controls the type of isolation to perform and can be one of the following:
 - Full – Full isolation
-- Selective – Restrict only limited set of applications from accessing the network (see [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network) for more details)
+- Selective – Restrict only limited set of applications from accessing the network (see [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network) for more details)
 
 
 ## Response
