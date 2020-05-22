@@ -14,10 +14,6 @@ manager: dansimp
 
 # Policy CSP - ApplicationManagement
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
-
 <hr/>
 
 <!--Policies-->
@@ -436,15 +432,15 @@ Most restricted value: 0
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 
 </table>
@@ -462,7 +458,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in the next major release of Windows 10.
+Added in Windows 10, version 2004.
 
 Manages non-administrator users' ability to install Windows app packages.
 
@@ -1112,7 +1108,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
--   7 - Added in the next major release of Windows 10.
-
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 <!--/Policies-->
 

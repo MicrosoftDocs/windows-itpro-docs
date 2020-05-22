@@ -2808,4 +2808,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
 - 7 - Added in Windows 10, version 1909.
-- 8 - Added in the next major release of Windows 10.
+- 8 - Added in Windows 10, version 2004.
