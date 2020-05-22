@@ -30,14 +30,16 @@ Client behavioral blocking is a component of [behavioral blocking and containmen
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Cloud and client protection":::
 
+Antivirus protection works best when paired with cloud protection.
+
 ## How client behavioral blocking works
 
-Antivirus protection works best when paired with cloud protection. [Microsoft Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) can identify malicious behavior, detect malicious code, detect fileless and in-memory attacks, and more on a device. When suspicious behaviors or artifacts are detected, Microsoft Defender Antivirus monitors and sends suspicious behaviors and process trees to the cloud protection service. Machine learning differentiates between malicious applications and good behaviors within milliseconds, and classifies each artifact. In almost real time, as soon as an artifact is found to be malicious, it's blocked on the device.
+[Microsoft Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) can identify malicious behavior, detect malicious code, detect fileless and in-memory attacks, and more on a device. When suspicious behaviors, Microsoft Defender Antivirus monitors and sends suspicious behaviors and process trees to the cloud protection service. Machine learning differentiates between malicious applications and good behaviors within milliseconds, and classifies each artifact. In almost real time, as soon as an artifact is found to be malicious, it's blocked on the device.
 
 
 ## Configuring client behavioral blocking
 
-If your organization is using Microsoft Defender ATP, feedback-loop blocking is enabled by default. However, rapid protection occurs through a combination of Microsoft Defender ATP capabilities, machine learning protection features, and signal-sharing across Microsoft security services. Make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
+If your organization is using Microsoft Defender ATP, client behavioral blocking is enabled by default. However, to benefit from all Microsoft Defender ATP capabilities, including [Behavioral blocking and containment](behavioral-blocking-containment.md), make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
 
 - [Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
 
