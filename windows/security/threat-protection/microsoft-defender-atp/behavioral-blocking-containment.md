@@ -60,6 +60,22 @@ Expect more to come in the area of behavioral blocking and containment, as Micro
 
 ## Examples of behavioral blocking and containment in action
 
+Behavioral blocking and containment capabilities have blocked attacker techniques such as the following:
+
+- Credential dumping from LSASS
+- Cross-process injection
+- Process hollowing
+- User Account Control bypass
+- Tampering with antivirus (such as disabling it or adding the malware as exclusion)
+- Contacting Command and Control (C&C) to download payloads
+- Coin mining
+- Boot record modification
+- Pass-the-hash attacks
+- Installation of root certificate
+- Exploitation attempt for various vulnerabilities
+
+Below are two real-life examples of behavioral blocking and containment in action.
+
 ### Example 1: Credential theft attack against 100 organizations
 
 As described in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks), a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. Spear-phishing email messages that contained a lure document were sent to the targeted organizations. If a recipient opened the attachment, a related remote document was able to execute code on the user’s device and load Lokibot malware, which stole credentials, exfiltrated stolen data, and waited for further instructions from a command-and-control server. 
