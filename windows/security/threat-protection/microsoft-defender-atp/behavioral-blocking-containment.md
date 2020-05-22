@@ -52,7 +52,7 @@ The following image shows an example of an alert that was triggered by behaviora
 
 - **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.) 
 
-- **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections that are assumed to be false negatives are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.) 
+- **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.) 
 
 - **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (EDR in block mode, currently in preview, is not enabled by default; you turn it on in the Microsoft Defender Security Center.) 
 
