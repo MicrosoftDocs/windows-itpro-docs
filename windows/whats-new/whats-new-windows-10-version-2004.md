@@ -25,6 +25,13 @@ This article lists new and updated features and content that are of interest to 
 
 ## Security
 
+### Windows Hello
+
+- Windows Hello is now supported as Fast Identity Online 2 (FIDO2) authenticator across all major browsers including Chrome and Firefox.
+- You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
+- Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#windows-hello-pin-in-safe-mode-build-18995).
+- Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (MSA). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
+
 ### Windows Defender System Guard
 
 In this release,  [Windows Defender System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
@@ -37,18 +44,7 @@ With this improvement, the OS can detect a higher level of SMM compliance, enabl
 
 [Windows Defender Application Guard](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
 
-[Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
-
-### Passwordless authentication in Azure Active Directory
-
-Fast Identity Online 2 (FIDO2) security key support is expanded to Azure Active Directory hybrid environments with this release, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
-
-### Windows Hello
-
-- Windows Hello is now supported as FIDO2 authenticator across all major browsers including Chrome and Firefox.
-- You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
-- Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#windows-hello-pin-in-safe-mode-build-18995).
-- Windows Hello for Business now has Hybrid Azure Active Directory support and Phone number sign-in (MSA).
+Note: [Application Guard for Office](https://support.office.com/article/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) is coming soon.
 
 ## Deployment
 
@@ -72,7 +68,7 @@ During the upgrade process, Windows Setup will extract all its sources files to 
 
 ### Windows Autopilot
 
-With this release, you can configure User-driven Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
+With this release, you can configure [Windows Autopilot user-driven](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
 
 ### Microsoft Endpoint Manager
 
@@ -117,9 +113,9 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ### Windows Update for Business
 
-Windows Update for Business Enhancements  
-- Intune console updates: target version is now available allowing you to specify which Windows 10 OS Version you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy (GP) and Configuration Service Provider (CSP) policy 
-- Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. But we know this can interfere with validations, to better enable IT Administrators to validate on the latest release, we have created a new policy to enable admins to opt devices out of the built-in safeguard holds.
+Windows Update for Business enhancements in this release include:
+- Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
+- Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
 ## Virtualization
 
@@ -155,10 +151,9 @@ With this release, memory that is no longer in use in a Linux VM will be freed b
 
 For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
 
-### Windows Virtual Desktop
+### Windows Virtual Desktop (WVD)
 
-Check out [Windows Virtual Desktop documentation](https://aka.ms/wvdgetstarted) for the latest and greatest information, as well as the [WVD Virtual Event from March](https://aka.ms/wvdvirtualevent).
-
+Windows 10 is an integral part of WVD, and several enhancements are available in the Spring 2020 update. Check out [Windows Virtual Desktop documentation](https://aka.ms/wvdgetstarted) for the latest and greatest information, as well as the [WVD Virtual Event from March](https://aka.ms/wvdvirtualevent).
 
 ## Microsoft Edge
 
@@ -166,7 +161,13 @@ Read about plans for the new Microsoft Edge and other innovations announced at [
 
 Also see information about the exciting new Edge browser [here](https://blogs.windows.com/windowsexperience/2020/01/15/new-year-new-browser-the-new-microsoft-edge-is-out-of-preview-and-now-available-for-download/).
 
+## Application settings
+
+This release enables explicit [control over when Windows automatically restarts apps](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#control-over-restarting-apps-at-sign-in-build-18965) that were open when you restart your PC.
+
 ## Windows Shell
+
+Several enhancements to the Windows 10 user interface are implemented in this release.
 
 ### Cortana
 
@@ -177,10 +178,6 @@ The Cortana app also has several improvements in this release, such as enhanced 
 ### Windows Search
 
 Windows Search is [improved](https://insider.windows.com/community-news/desktop-search/) in several ways.
-
-### DirectX
-
-[New DirectX 12 features](https://devblogs.microsoft.com/directx/dev-preview-of-new-directx-12-features/) are available in this release.
 
 ### Virtual Desktops
 
@@ -193,6 +190,18 @@ Pairing Bluetooth devices with your computer will occur through notifications, s
 ### Reset this PC
 
 The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-reset-this-pc-option-cloud-download-build-18970) option.
+
+### Task Manager
+
+The following items are added to Task Manager in this release:
+- GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
+- Disk type is now [listed for each disk on the Performance tab](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#disk-type-visible-in-task-manager-performance-tab-build-18898).
+
+## Graphics & display
+
+### DirectX
+
+[New DirectX 12 features](https://devblogs.microsoft.com/directx/dev-preview-of-new-directx-12-features/) are available in this release.
 
 ### 2-in-1 PCs
 
@@ -211,12 +220,6 @@ Examples include:
 - Independent Hardware Vendor (IHV) driver testing and validation
  
 To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
-
-### Task Manager
-
-The following items are added to Task Manager in this release:
-- GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
-- Disk type is now listed for each disk on the Performance tab.
 
 ## Desktop Analytics
 
