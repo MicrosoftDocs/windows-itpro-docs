@@ -22,8 +22,8 @@ ms.topic: article
 
 -   Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the “what”, “why”, and “when” questions an IT professional might have when planning to deploy Windows To Go.
 
