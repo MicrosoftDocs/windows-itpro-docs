@@ -28,9 +28,7 @@ ms.collection:
 
 Feedback-loop blocking, also referred to as rapid protection, is a component of [behavioral blocking and containment capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/). With feedback-loop blocking, devices across your organization are better protected from attacks. 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment":::
-
-### How feedback-loop blocking works
+## How feedback-loop blocking works
 
 When a suspicious behavior or file is detected, such as by [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), information about that artifact is sent to multiple classifiers. The rapid protection loop engine inspects and correlates the information with other signals to arrive at a decision as to whether to block a file. All of this happens very quickly. It results in rapid blocking of confirmed malware, and drives protection across the entire ecosystem. 
 
