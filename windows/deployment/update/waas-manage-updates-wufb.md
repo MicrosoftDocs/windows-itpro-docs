@@ -123,7 +123,7 @@ This policy enables you to specify the number of days from an update's publicati
 
 
 
-{ORIGINAL CONTENT BELOW THIS LINE; PRESERVING FOR REFERENCE------------------------------------------------------------------------------}
+<!--
 
 >[!NOTE]
 > To use Windows Update for Business, you must allow devices to access the Windows Update service.
