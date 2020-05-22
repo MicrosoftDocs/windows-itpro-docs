@@ -48,12 +48,12 @@ Behavior-based detections are named according to the [MITRE ATT&CK Matrix for En
 |Tactic |	Detection threat name |
 |----|----|
 |Initial Access	| Behavior:Win32/InitialAccess.*!ml |
-|Execution	|Behavior:Win32/Execution.*!ml |
-|Persistence	|Behavior:Win32/Persistence.*!ml |
-|Privilege Escalation	|Behavior:Win32/PrivilegeEscalation.*!ml |
-|Defense Evasion	|Behavior:Win32/DefenseEvasion.*!ml |
-|Credential Access	|Behavior:Win32/CredentialAccess.*!ml |
-|Discovery	|Behavior:Win32/Discovery.*!ml |
+|Execution	| Behavior:Win32/Execution.*!ml |
+|Persistence	| Behavior:Win32/Persistence.*!ml |
+|Privilege Escalation	| Behavior:Win32/PrivilegeEscalation.*!ml |
+|Defense Evasion	| Behavior:Win32/DefenseEvasion.*!ml |
+|Credential Access	| Behavior:Win32/CredentialAccess.*!ml |
+|Discovery	| Behavior:Win32/Discovery.*!ml |
 |Lateral Movement |	Behavior:Win32/LateralMovement.*!ml |
 |Collection |	Behavior:Win32/Collection.*!ml |
 |Command and Control | Behavior:Win32/CommandAndControl.*!ml |
