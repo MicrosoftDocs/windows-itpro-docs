@@ -92,12 +92,12 @@ This example shows that with behavioral blocking and containment capabilities, t
 
 ## Next steps
 
-- [Learn more about recent global threat activity](https://www.microsoft.com/wdsi/threats)
-
 - [Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 
 - [Configure your attack surface reduction rules](attack-surface-reduction.md)
 
 - [Enable EDR in block mode](edr-in-block-mode.md)
+
+- [See recent global threat activity](https://www.microsoft.com/wdsi/threats)
 
 - [Get an overview of Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
