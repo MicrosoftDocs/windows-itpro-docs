@@ -171,9 +171,16 @@ Several enhancements to the Windows 10 user interface are implemented in this re
 
 ### Cortana
 
-Cortana in Windows 10, version 2004 and later is a service covered by the Office 365 Trust Center. See [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later) for more information.
+[Cortana](https://www.microsoft.com/cortana) has been updated and enhanced in Windows 10, version 2004:
+- Productivity: chat-based UI gives you the ability to [interact with Cortana using typed or spoken natural language queries](https://support.microsoft.com/help/4557165) to easily get information across Microsoft 365 and stay on track. Productivity focused capabilities such as finding people profiles, checking schedules, joining meetings, and adding to lists in Microsoft To Do are currently available to English speakers in the US.
+  - In the coming months, with regular app updates through the Microsoft Store, we’ll enhance this experience to support wake word invocation and enable listening when you say “Cortana”, offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.  
+- Security: tightened access to Cortana so that you must be securely logged in with your work or school account or your Microsoft account before using Cortana. Because of this tightened access, some consumer skills including music, connected home, and third-party skills will no longer be available. Additionally, users can [get cloud-based assistance services that meet Office 365’s enterprise-level privacy, security, and compliance promises](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) as set out in the Online Services Terms 
+- Move the Cortana window: drag the Cortana window to a more convenient location on your desktop
 
-The Cortana app also has several improvements in this release, such as enhanced security and the ability to drag the Cortana window to a more convenient location on your desktop. For more information, see [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+Also see: 
+- [Cortana in Windows 10, version 2004 and later](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#cortana-in-windows-10-version-2004-and-later).
+- [Cortana in the upcoming Windows 10 release](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+- Cortana in the [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/?s=cortana).
 
 ### Windows Search
 
