@@ -1,7 +1,7 @@
 ---
-title: Find machine information by internal IP API
-description: Use this API to create calls related to finding a machine entry around a specific timestamp by internal IP.
-keywords: ip, apis, graph api, supported apis, find machine, machine information
+title: Find device information by internal IP API
+description: Use this API to create calls related to finding a device entry around a specific timestamp by internal IP.
+keywords: ip, apis, graph api, supported apis, find device, device information
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Find machine information by internal IP API
+# Find device information by internal IP API
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Find a machine by internal IP.
+Find a device by internal IP.
 
 >[!NOTE]
 >The timestamp must be within the last 30 days.
@@ -70,7 +70,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
-The response will return a list of all machines that reported this IP address within sixteen minutes prior and after the timestamp. 
+The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp. 
 
 ```
 HTTP/1.1 200 OK

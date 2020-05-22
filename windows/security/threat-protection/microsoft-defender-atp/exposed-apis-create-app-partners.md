@@ -2,7 +2,7 @@
 title: Create an Application to access Microsoft Defender ATP without a user
 ms.reviewer: 
 description: Learn how to design a web app to get programmatic access to Microsoft Defender ATP without a user.
-keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
+keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -68,7 +68,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
    - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
    
-   - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+   - To [isolate a device](isolate-machine.md), select 'Isolate device' permission
 
    In the following example we will use **'Read all alerts'** permission:
 

@@ -33,7 +33,7 @@ There are three phases in deploying Microsoft Defender ATP:
 
  The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
 
-There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
 
 ## In Scope
 

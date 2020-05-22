@@ -64,7 +64,7 @@ DeviceEvents
 
 You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
-1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the machine.
+1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the device.
 
 2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
 

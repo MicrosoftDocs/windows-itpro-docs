@@ -1,7 +1,7 @@
 ---
-title: Get missing KBs by machine ID
-description: Retrieves missing KBs by machine Id
-keywords: apis, graph api, supported apis, get, list, file, information, machine id, threat & vulnerability management api, mdatp tvm api
+title: Get missing KBs by device ID
+description: Retrieves missing KBs by device Id
+keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get missing KBs by machine ID
+# Get missing KBs by device ID
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Retrieves missing KBs by machine Id
+Retrieves missing KBs by device Id
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, with the specified machine missing kb data in the body.
+If successful, this method returns 200 OK, with the specified device missing kb data in the body.
 
 ## Example
 
