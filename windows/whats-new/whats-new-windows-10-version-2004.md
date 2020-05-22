@@ -21,7 +21,7 @@ ms.topic: article
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
 
 > [!NOTE]
-> The version number for this release (2004) is an even number to avoid confusion with Windows releases in the year 2003.
+> The month indicator for this release is 04 instead of 03 to avoid confusion with Windows releases in the year 2003.
 
 ## Security
 
@@ -69,6 +69,8 @@ During the upgrade process, Windows Setup will extract all its sources files to 
 ### Windows Autopilot
 
 With this release, you can configure [Windows Autopilot user-driven](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
+
+If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages.  In previous versions, this was only supported with self-deploying profiles.
 
 ### Microsoft Endpoint Manager
 
