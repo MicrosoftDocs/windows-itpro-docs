@@ -63,7 +63,7 @@ Behavior-based detections are named according to the [MITRE ATT&CK Matrix for En
 
 ## Configuring client behavioral blocking
 
-If your organization is using Microsoft Defender ATP, client behavioral blocking is enabled by default. However, to benefit from all Microsoft Defender ATP capabilities, including [Behavioral blocking and containment](behavioral-blocking-containment.md), make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
+If your organization is using Microsoft Defender ATP, client behavioral blocking is enabled by default. However, to benefit from all Microsoft Defender ATP capabilities, including [behavioral blocking and containment](behavioral-blocking-containment.md), make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
 
 - [Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
 
