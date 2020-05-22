@@ -24,7 +24,7 @@ ms.topic: article
 
 A typical advanced persistent threat lifecycle involves data exfiltration. In a security incident, it's important to have the ability to prioritize investigations where sensitive files may be jeopardy so that corporate data and information are protected.
 
-Microsoft Defender ATP helps to make the prioritization of security incidents much simpler with the use of sensitivity labels. Sensitivity labels quickly identify incidents that may involve machines with sensitive information such as confidential information. 
+Microsoft Defender ATP helps to make the prioritization of security incidents much simpler with the use of sensitivity labels. Sensitivity labels quickly identify incidents that may involve devices with sensitive information such as confidential information. 
 
 ## Investigate incidents that involve sensitive data
 Learn how to use data sensitivity labels to prioritize incident investigation.
@@ -34,7 +34,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 1. In Microsoft Defender Security Center, select **Incidents**. 
 
-2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on machines related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
+2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on devices related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
 
     ![Image of data sensitivity column](images/data-sensitivity-column.png)
 
@@ -46,16 +46,16 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
     ![Image of incident page details](images/incident-page.png)
 
-4. Select the **Machines** tab to identify machines storing files with sensitivity labels.
+4. Select the **Devices** tab to identify devices storing files with sensitivity labels.
 
-    ![Image of machine tab](images/investigate-machines-tab.png)
+    ![Image of device tab](images/investigate-machines-tab.png)
    
 
-5. Select the machines that store sensitive data and search through the timeline to identify which files may be impacted then take appropriate action to ensure that data is protected. 
+5. Select the devices that store sensitive data and search through the timeline to identify which files may be impacted then take appropriate action to ensure that data is protected. 
 
-   You can narrow down the events shown on the machine timeline by searching for data sensitivity labels. Doing this will show only events associated with files that have said label name.
+   You can narrow down the events shown on the device timeline by searching for data sensitivity labels. Doing this will show only events associated with files that have said label name.
 
-    ![Image of machine timeline with narrowed down search results based on label](images/machine-timeline-labels.png)
+    ![Image of device timeline with narrowed down search results based on label](images/machine-timeline-labels.png)
 
 
 >[!TIP]

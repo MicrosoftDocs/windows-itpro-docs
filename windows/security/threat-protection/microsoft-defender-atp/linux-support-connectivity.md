@@ -32,7 +32,7 @@ To test if Microsoft Defender ATP for Linux can communicate to the cloud with th
 $ mdatp --connectivity-test
 ```
 
-If the connectivity test fails, check if the machine has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
+If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 

@@ -1,7 +1,7 @@
 ---
 title: Review and approve actions following automated investigations in the Microsoft Defender Security Center
 description: Review and approve (or reject) remediation actions following an automated investigation.
-keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, machines, duration, filter export
+keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, devices, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
