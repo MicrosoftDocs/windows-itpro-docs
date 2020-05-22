@@ -27,6 +27,8 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
+| Windows To Go | Windows To Go was announced as deprecated in Windows 10, version 1903 and is removed in this release. | 2004 |
+| Mobile Plans and Messaging apps | Both apps are still supported, but are now distributed in a different way. OEMs can now include these apps in Windows images for cellular enabled devices.  The apps are removed for non-cellular devices.| 2004 |
 | Hyper-V vSwitch on LBFO | The Hyper-V vSwitch can not be bound to an LBFO team.  Instead, it can be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 2004 |
 | PNRP APIs| ​The Peer Name Resolution Protocol (PNRP) cloud service was removed in Windows 10, version 1809. We are planning to complete the removal process by removing the corresponding APIs.  | 1909 |
 | Taskbar settings roaming | Roaming of taskbar settings is removed in this release. This feature was announced as no longer being developed in Windows 10, version 1903. | 1909 |
