@@ -429,6 +429,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>TextInput/TouchKeyboardSplitModeAvailability</li>
 <li>TextInput/TouchKeyboardWideModeAvailability</li>
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>Update/TargetReleaseVersion</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li>
@@ -658,7 +659,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policies-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policies-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
+<td style="vertical-align:top"><a href="policy-csps-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
@@ -709,6 +710,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
 <li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
@@ -1874,7 +1876,8 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     ![vpn selfhost properties window](images/certfiltering1.png)
 
-    > **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
+    > [!NOTE]
+    > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
 3.  Click the **Properties** button underneath the drop down menu.
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
@@ -1888,7 +1891,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
->You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
+> You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx).
 
 
 ### Remote PIN reset not supported in Azure Active Directory joined mobile devices
@@ -2433,7 +2436,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </ul>
 <p>Added a new section:</p>
 <ul>
-<li><a href="policies-supported-by-group-policy.md" data-raw-source="[Policies supported by Group Policy](policies-supported-by-group-policy.md)">Policies supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+<li><a href="policy-csps-supported-by-group-policy.md" data-raw-source="[[Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)">[Policy CSPs supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
 </ul>
 </td></tr>
 <tr>
@@ -2562,6 +2565,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>

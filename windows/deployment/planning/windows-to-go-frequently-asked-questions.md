@@ -1,6 +1,6 @@
 ---
 title: Windows To Go frequently asked questions (Windows 10)
-description: Windows To Go frequently asked questions
+description: Though Windows To Go is no longer being developed, these frequently asked questions (FAQ) can provide answers about the feature.
 ms.assetid: bfdfb824-4a19-4401-b369-22c5e6ca9d6e
 ms.reviewer: 
 manager: laurawi

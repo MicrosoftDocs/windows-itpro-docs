@@ -31,7 +31,7 @@ When a user starts the Autopilot self-deploying process, the process completes t
    > [!NOTE]  
    > Autopilot for HoloLens does not support Active Directory join or Hybrid Azure AD join.
 1. Use Azure AD to enroll the device in Microsoft Intune (or another MDM service).
-1. Download the device-targeted policies, certificates, and networking profiles.
+1. Download the device-targeted policies, user-targeted apps, certificates, and networking profiles.
 1. Provision the device.
 1. Present the sign-in screen to the user.
 
@@ -39,8 +39,8 @@ When a user starts the Autopilot self-deploying process, the process completes t
 
 The following steps summarize the process of setting up your environment for the Windows Autopilot for HoloLens 2. The rest of this section provides the details of these steps.
 
-1. Enroll in the Windows Autopilot for HoloLens 2 program.
 1. Make sure that you meet the requirements for Windows Autopilot for HoloLens.
+1. Enroll in the Windows Autopilot for HoloLens 2 program.
 1. Verify that your tenant is flighted (enrolled to participate in the program).
 1. Register devices in Windows Autopilot.
 1. Create a device group.
@@ -49,7 +49,36 @@ The following steps summarize the process of setting up your environment for the
 1. Configure a custom configuration profile for HoloLens devices (known issue).
 1. Verify the profile status of the HoloLens devices.
 
-### 1. Enroll in the Windows Autopilot for HoloLens 2 program
+### 1. Make sure that you meet the requirements for Windows Autopilot for HoloLens
+For the latest information about how to participate in the program, review [Windows Insider Release Notes](hololens-insider.md#windows-insider-release-notes).
+
+Review the following sections of the Windows Autopilot requirements article:
+
+- [Network requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)  
+- [Licensing requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#licensing-requirements)  
+- [Configuration requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#configuration-requirements)
+> [!IMPORTANT]  
+> Unlike other Windows Autopilot programs, Windows Autopilot for HoloLens 2 has specific operating system requirements.
+
+Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" section of the Windows Autopilot Self-Deploying mode article. Your environment has to meet these requirements as well as the standard Windows Autopilot requirements.
+
+> [!NOTE]  
+> You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
+
+> [!IMPORTANT]  
+> For information about how to register devices and configure profiles, see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot) and [6. Create a deployment profile](#6-create-a-deployment-profile) in this article. These sections provide steps that are specific to HoloLens.
+
+Before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:
+
+- The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune.
+- Every device can connect to the internet. You can "USB C to Ethernet" adapters for wired internet connectivity or "USB C to Wifi" adapters for wireless internet connectivity. 
+- Every device can connect to a computer by using a USB-C cable, and that computer has the following available:
+  - Advanced Recovery Companion (ARC)
+  - The latest Windows update: Windows 10, version 19041.1002.200107-0909 or a later version)
+
+To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+
+### 2. Enroll in the Windows Autopilot for HoloLens 2 program
 
 To participate in the program, you have to use a tenant that is flighted for HoloLens. To do this, go to  [Windows Autopilot for HoloLens Private Preview request](https://aka.ms/APHoloLensTAP) or use the following QR code to submit a request.  
 
@@ -61,36 +90,6 @@ In this request, provide the following information:
 - Tenant ID
 - Number of HoloLens 2 devices that are participating in this evaluation
 - Number of HoloLens 2 devices that you plan to deploy by using Autopilot self-deploying mode
-
-### 2. Make sure that you meet the requirements for Windows Autopilot for HoloLens
-
-For the latest information about how to participate in the program, review [Windows Insider Release Notes](hololens-insider.md#windows-insider-release-notes).
-
-Review the following sections of the Windows Autopilot requirements article:
-
-- [Network requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)  
-- [Licensing requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#licensing-requirements)  
-- [Configuration requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#configuration-requirements)
-   > [!IMPORTANT]  
-   > For information about how to register devices and configure profiles, see [4. Register devices in Windows Autopilot](#4-register-devices-in-windows-autopilot) and [6. Create a deployment profile](#6-create-a-deployment-profile) in this article. These sections provide steps that are specific to HoloLens.
-
-> [!IMPORTANT]  
-> Unlike other Windows Autopilot programs, Windows Autopilot for HoloLens 2 has specific operating system requirements.
-
-Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" section of the Windows Autopilot Self-Deploying mode article. Your environment has to meet these requirements as well as the standard Windows Autopilot requirements.
-
-> [!NOTE]  
-> You do not have to review the "Step by step" and "Validation" sections of the article. The procedures later in this article provide corresponding steps that are specific to HoloLens.
-
-Before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:
-
-- The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune.
-- Every device can connect to the internet. You can use a wired or wireless connection.
-- Every device can connect to a computer by using a USB-C cable, and that computer has the following available:
-  - Advanced Recovery Companion (ARC)
-  - The latest Windows update: Windows 10, version 19041.1002.200107-0909 or a later version)
-
-To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 ### 3. Verify that your tenant is flighted
 
@@ -108,7 +107,7 @@ To register a HoloLens device in the Windows Autopilot program, you have to obta
 
 **Retrieve a device hardware hash**
 
-1. Start the HoloLens 2 device, and make sure that you sign in by using an account that is the device owner.
+1. Start the HoloLens 2 device.
 1. On the device, press the Power and Volume Down buttons at the same time and then release them. The device collects diagnostic logs and the hardware hash, and stores them in a set of .zip files.
 1. Use a USB-C cable to connect the device to a computer.
 1. On the computer, open File Explorer. Open **This PC\\\<*HoloLens device name*>\\Internal Storage\\Documents**, and locate the AutopilotDiagnostics.zip file.  

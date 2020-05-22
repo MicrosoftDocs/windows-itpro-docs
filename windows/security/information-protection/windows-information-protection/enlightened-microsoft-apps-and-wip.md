@@ -53,7 +53,7 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Mobile Office apps, including Word, Excel, PowerPoint, OneNote, and Outlook Mail and Calendar
 
-- Office 365 ProPlus apps, including Word, Excel, PowerPoint, OneNote, and Outlook
+- Microsoft 365 Apps for enterprise apps, including Word, Excel, PowerPoint, OneNote, and Outlook
 
 - OneDrive app
 
@@ -71,15 +71,17 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Messaging
 
-- Microsoft Remote Desktop
+- Microsoft Remote Desktop 
 
 > [!NOTE]
-> Microsoft Visio, Microsoft Office Access and Microsoft Project are not enlightended apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioining.
+> Microsoft Visio, Microsoft Office Access, Microsoft Project, and Microsoft Publisher are not enlightened apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioning.
 
 ## List of WIP-work only apps from Microsoft
 Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
 
 - Skype for Business
+
+- Microsoft Teams (build 1.3.00.12058 and later)
 
 ## Adding enlightened Microsoft apps to the allowed apps list
 
@@ -99,7 +101,7 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |                  PowerPoint Mobile                   |                                                                                                                                   **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.PowerPoint<br>**App Type:** Universal app                                                                                                                                    |
 |                       OneNote                        |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.OneNote<br>**App Type:** Universal app                                                                                                                                     |
 |              Outlook Mail and Calendar               |                                                                                                                               **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.windowscommunicationsapps<br>**App Type:** Universal app                                                                                                                                |
-| Office 365 ProPlus and Office 2019 Professional Plus | Office 365 ProPlus and Office 2019 Professional Plus apps are set up as a suite. You must use the [O365 ProPlus - Allow and Exempt AppLocker policy files (.zip files)](https://download.microsoft.com/download/7/0/D/70D72459-D72D-4673-B309-F480E3BEBCC9/O365%20ProPlus%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) to turn the suite on for WIP.<br>We don't recommend setting up Office by using individual paths or publisher rules. |
+| Microsoft 365 Apps for enterprise and Office 2019 Professional Plus | Microsoft 365 Apps for enterprise and Office 2019 Professional Plus apps are set up as a suite. You must use the [O365 ProPlus - Allow and Exempt AppLocker policy files (.zip files)](https://download.microsoft.com/download/7/0/D/70D72459-D72D-4673-B309-F480E3BEBCC9/O365%20ProPlus%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) to turn the suite on for WIP.<br>We don't recommend setting up Office by using individual paths or publisher rules. |
 |                   Microsoft Photos                   |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Windows.Photos<br>**App Type:** Universal app                                                                                                                                     |
 |                     Groove Music                     |                                                                                                                                       **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneMusic<br>**App Type:** Universal app                                                                                                                                        |
 |                Microsoft Movies & TV                 |                                                                                                                                       **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneVideo<br>**App Type:** Universal app                                                                                                                                        |

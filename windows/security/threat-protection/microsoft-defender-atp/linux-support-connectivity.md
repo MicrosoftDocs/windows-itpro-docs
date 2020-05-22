@@ -64,6 +64,9 @@ $ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.mi
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
 
+> [!WARNING]
+> The static proxy cannot be configured through a system-wide `HTTPS_PROXY` environment variable. Instead, ensure that `HTTPS_PROXY` is properly set in the `/lib/system/system/mdatp.service` file.
+
 To use a static proxy, the `mdatp.service` file must be modified. Ensure the leading `#` is removed to uncomment the following line from `/lib/systemd/system/mdatp.service`:
 
 ```bash
