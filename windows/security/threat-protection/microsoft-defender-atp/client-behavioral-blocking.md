@@ -50,7 +50,7 @@ Behavior-based detections are named according to the [MITRE ATT&CK Matrix for En
 |Initial Access	| Behavior:Win32/InitialAccess.*!ml |
 |Execution	|Behavior:Win32/Execution.*!ml |
 |Persistence	|Behavior:Win32/Persistence.*!ml |
-|Privilege Escalation	|Behavior:Win32/|PrivilegeEscalation.*!ml |
+|Privilege Escalation	|Behavior:Win32/PrivilegeEscalation.*!ml |
 |Defense Evasion	|Behavior:Win32/DefenseEvasion.*!ml |
 |Credential Access	|Behavior:Win32/CredentialAccess.*!ml |
 |Discovery	|Behavior:Win32/Discovery.*!ml |
