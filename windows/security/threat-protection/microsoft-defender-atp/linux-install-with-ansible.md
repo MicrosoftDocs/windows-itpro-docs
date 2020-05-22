@@ -60,7 +60,7 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 
 Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
@@ -81,7 +81,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 Create subtask or role files that contribute to an actual task. First create the `download_copy_blob.yml` file under the `/etc/ansible/roles` directory:
 
-- Copy the onboarding package to all client machines:
+- Copy the onboarding package to all client devices:
 
     ```bash
     - name: Copy the zip file

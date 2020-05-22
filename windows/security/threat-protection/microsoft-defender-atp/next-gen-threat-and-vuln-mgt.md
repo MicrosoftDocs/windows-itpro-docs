@@ -42,7 +42,7 @@ It is the first solution in the industry to bridge the gap between security admi
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication.
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
-- Linked machine vulnerability and security configuration assessment data in the context of exposure discovery
+- Linked device vulnerability and security configuration assessment data in the context of exposure discovery
 - Built-in remediation processes through Microsoft Intune and Configuration Manager
 
 ### Real-time discovery
@@ -60,7 +60,7 @@ Threat & Vulnerability Management helps customers prioritize and focus on those 
 
 - Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, Threat & Vulnerability Management dynamically aligns the prioritization of its security recommendations to focus on vulnerabilities that are currently being exploited in the wild and emerging threats that pose the highest risk.
 - Pinpointing active breaches. Microsoft Defender ATP correlates Threat & Vulnerability Management and EDR insights to provide the unique ability to prioritize vulnerabilities that are currently being exploited in an active breach within the organization.
-- Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows Threat & Vulnerability Management to identify the exposed machines with business-critical applications, confidential data, or high-value users.
+- Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows Threat & Vulnerability Management to identify the exposed devices with business-critical applications, confidential data, or high-value users.
 
 ### Seamless remediation
 
@@ -72,13 +72,13 @@ Microsoft Defender ATP's Threat & Vulnerability Management allows security admin
 
 ## Before you begin
 
-Ensure that your machines:
+Ensure that your devices:
 
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Run with Windows 10 1709 (Fall Creators Update) or later
 
 >[!NOTE]
->Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
+>Threat & Vulnerability Management can also scan devices that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
 - Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
 
@@ -90,7 +90,7 @@ Ensure that your machines:
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
-- Have at least one security recommendation that can be viewed in the machine page
+- Have at least one security recommendation that can be viewed in the device page
 - Are tagged or marked as co-managed
 
 ## Related topics

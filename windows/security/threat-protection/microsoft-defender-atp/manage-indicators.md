@@ -28,7 +28,7 @@ ms.topic: article
 
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
 
-Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action as well as the scope of the machine group to apply it to.
+Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action as well as the scope of the device group to apply it to.
 
 Currently supported sources are the cloud detection engine of Microsoft Defender ATP, the automated investigation and remediation engine, and the endpoint prevention engine (Windows Defender AV).
 
@@ -61,7 +61,7 @@ You can create an indicator for:
 
 
 ## Create indicators for files
-You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
 
 There are two ways you can create indicators for files:
 - By creating an indicator through the settings page
@@ -72,7 +72,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be 4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later.
+- Supported on devices on Windows 10, version 1703 or later.
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
 - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
 
@@ -95,14 +95,14 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group.
 
 5. Review the details in the Summary tab, then click **Save**.
 
 ### Create a contextual indicator from the file details page
 One of the options when taking [response actions on a file](respond-file-alerts.md) is adding an indicator for the file. 
 
-When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a machine in your organization attempts to run it.
+When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
@@ -111,13 +111,13 @@ Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs, thr
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by device groups if you deem certain groups to be more or less at risk than others.
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 - URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
-- Supported on machines on Windows 10, version 1709 or later. 
+- Supported on devices on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 
@@ -144,7 +144,7 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group.
 
 5. Review the details in the Summary tab, then click **Save**.
 
@@ -162,7 +162,7 @@ It's important to understand the following requirements prior to creating indica
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later.
+- Supported on devices on Windows 10, version 1703 or later.
 - The virus and threat protection definitions must be up-to-date.
 - This feature currently supports entering .CER or .PEM file extensions.
 
@@ -185,7 +185,7 @@ It's important to understand the following requirements prior to creating indica
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group.
 
 5. Review the details in the Summary tab, then click **Save**.
 

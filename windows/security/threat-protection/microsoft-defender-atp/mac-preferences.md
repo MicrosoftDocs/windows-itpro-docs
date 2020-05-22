@@ -314,7 +314,7 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 Specify a tag name and its value. 
 
-- The GROUP tag, tags the machine with the specified value. The tag is reflected in the portal under the machine page and can be used for filtering and grouping machines.
+- The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 |||
 |:---|:---|

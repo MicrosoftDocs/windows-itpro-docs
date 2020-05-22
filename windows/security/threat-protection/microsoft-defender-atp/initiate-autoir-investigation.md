@@ -1,6 +1,6 @@
 ---
 title: Start Investigation API
-description: Use this API to start investigation on a machine.
+description: Use this API to start investigation on a device.
 keywords: apis, graph api, supported apis, investigation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -24,7 +24,7 @@ ms.topic: article
 
 
 ## API description
-Start automated investigation on a machine.
+Start automated investigation on a device.
 <br>See [Overview of automated investigations](automated-investigations.md) for more information.
 
 
@@ -43,7 +43,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 
 ## HTTP request
