@@ -27,7 +27,7 @@ ms.topic: article
 
 ## Pull detections using security information and events management (SIEM) tools
 
->[!Note]
+>[!NOTE]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
 >- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
 >-The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).

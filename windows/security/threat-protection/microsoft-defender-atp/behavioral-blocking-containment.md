@@ -50,15 +50,31 @@ The following image shows an example of an alert that was triggered by behaviora
 
 - **On-client, policy-driven [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) as informational alerts. (Attack surface reduction rules are not enabled by default; you configure your policies in the Microsoft Defender Security Center.)
 
-- **Client behavioral blocking** Threats on endpoints are detected through device learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.) 
+- **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.) 
 
-- **Feedback-loop blocking** (also referred to as rapid protection) Threat detections that are assumed to be false negatives are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.) 
+- **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.) 
 
 - **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (EDR in block mode, currently in preview, is not enabled by default; you turn it on in the Microsoft Defender Security Center.) 
 
 Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities. To see what's planned and rolling out now, visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## Examples of behavioral blocking and containment in action
+
+Behavioral blocking and containment capabilities have blocked attacker techniques such as the following:
+
+- Credential dumping from LSASS
+- Cross-process injection
+- Process hollowing
+- User Account Control bypass
+- Tampering with antivirus (such as disabling it or adding the malware as exclusion)
+- Contacting Command and Control (C&C) to download payloads
+- Coin mining
+- Boot record modification
+- Pass-the-hash attacks
+- Installation of root certificate
+- Exploitation attempt for various vulnerabilities
+
+Below are two real-life examples of behavioral blocking and containment in action.
 
 ### Example 1: Credential theft attack against 100 organizations
 
