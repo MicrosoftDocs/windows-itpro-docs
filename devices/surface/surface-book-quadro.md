@@ -16,7 +16,7 @@ audience: itpro
 
 # Surface Book 3 Quadro RTX 3000 technical overview
  
-Surface Book 3 for Business powered by the NVIDIA® Quadro RTX™ 3000 GPU is built for professionals who need real-time rendering, AI acceleration, and advanced graphics and compute performance in a portable form factor. Quadro RTX 3000 fundamentally changes what you can do with the new Surface Book 3:
+Surface Book 3 for Business powered by the NVIDIA® Quadro RTX™ 3000 GPU is built for professionals who need real-time rendering, AI acceleration, advanced graphics, and compute performance in a portable form factor. Quadro RTX 3000 fundamentally changes what you can do with the new Surface Book 3:
 
 - **Ray Tracing** - Produce stunning renders, designs and animations faster than ever before with 30 RT Cores for hardware-accelerated ray tracing. 
 - **Artificial Intelligence** - Remove redundant, tedious tasks and compute intensive work with 240 Tensor Cores for GPU-accelerated AI.

@@ -45,10 +45,15 @@ HoloLens (1st gen) supports the following classes of Bluetooth devices:
 ### HoloLens (1st gen): Pair the clicker
 
 1. Use the bloom gesture to go to **Start**, and then select **Settings**.
+
 1. Select **Devices**, and make sure that Bluetooth is on.
+
 1. Use the tip of a pen to press and hold the clicker pairing button until the clicker status light blinks white. Make sure to hold down the button until the light starts blinking.  
+
    The pairing button is on the underside of the clicker, next to the finger loop.
+   
    ![The pairing button is beside the finger loop](images/use-hololens-clicker-1.png)
+   
 1. On the pairing screen, select **Clicker** > **Pair**.
 
 ## HoloLens 2: Connect USB-C devices
@@ -64,7 +69,7 @@ HoloLens 2 supports the following classes of USB-C devices:
 - Combination PD hubs (USB A plus PD charging)
 
 > [!NOTE]
-> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with the 20H1 OS. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
+> Some mobile devices with USB-C connections present themselves to the HoloLens as ethernet adaptors, and therefore could be used in a tethering configuration, starting with Windows Holographic, version 2004. USB LTE modems that require a separate driver, and/or application installed for configuration are not supported
 
 ## Connect to Miracast
 
@@ -77,3 +82,10 @@ To use Miracast, follow these steps:
 
 1. On the list of devices that appears, select an available device.
 1. Complete the pairing to begin projecting.
+
+## Disable Bluetooth
+
+This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.
+
+1. Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.
+1. Move the slider switch for **Bluetooth** to the **Off** position.

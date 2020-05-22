@@ -143,6 +143,11 @@
 {
 "source_path": "windows/security/threat-protection/intelligence/av-tests.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/top-scoring-industry-tests",
 "redirect_document_id": true
 },
 {
@@ -1004,7 +1009,27 @@
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefilecertificateinfobeta-table.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefilecertificateinfo-table",
 "redirect_document_id": true
-    },
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-configassessment-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-secureconfigkb-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-softwareinventory-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+"redirect_document_id": true
+},
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-alertevents-table.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table",
@@ -15508,7 +15533,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction",
 "redirect_document_id": false
 },
 {
