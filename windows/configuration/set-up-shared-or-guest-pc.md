@@ -58,7 +58,7 @@ Apps can take advantage of shared PC mode with the following three APIs:
  
 
 ### Customization
-Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
+Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring Shared PC mode for Windows](#configuring-shared-pc-mode-for-windows). The options are listed in the following table.
 
 | Setting | Value |
 |:---|:---|
