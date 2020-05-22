@@ -30,7 +30,7 @@ ms.topic: article
 
 Run the following PowerShell script on a newly onboarded machine to verify that it is properly reporting to the Microsoft Defender ATP service.
 
-1. Create a folder:  'C:\test-WDATP-test'.
+1. Create a folder:  'C:\test-MDATP-test'.
 2. Open an elevated command-line prompt on the machine and run the script:
 
     a.  Go to **Start** and type **cmd**.
@@ -42,7 +42,7 @@ Run the following PowerShell script on a newly onboarded machine to verify that 
 3. At the prompt, copy and run the following command:
 
     ```
-    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-WDATP-test\\invoice.exe');Start-Process 'C:\\test-WDATP-test\\invoice.exe'
+    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
     ```
 
 The Command Prompt window will close automatically. If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded machine in approximately 10 minutes.
