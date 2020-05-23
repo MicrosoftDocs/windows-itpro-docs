@@ -256,7 +256,7 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 |||
 |:---|:---|
 | **Key** | automaticSampleSubmissionConsent |
-| **Data type** | Boolean |
+| **Data type** | String |
 | **Possible values** | none <br/> safe (default) <br/> all |
 
 ## Recommended configuration profile
