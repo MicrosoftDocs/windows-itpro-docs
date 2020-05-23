@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: mtniehaus
-ms.author: mtniehaus
+ms.author: mniehaus
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -28,7 +28,7 @@ There are a sigificant number of policy settings available for Windows 10, both 
 <table>
 <th>Policy<th>More information
 
-<tr><td width="50%">Device restriction / <a href="https://docs.microsoft.com/en-us/partner-center/regional-authorization-overview">Password policy</a>
+<tr><td width="50%">Device restriction / <a href="https://docs.microsoft.com/partner-center/regional-authorization-overview">Password policy</a>
 <td>When certain <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock">DeviceLock policies</a>, such as minimum password length and password complexity, or any similar group policy settings, including any that disable auto-logon, are applied to a device, and that device reboots during the device Enrollment Status Page (ESP), the out-of-box experience or user desktop auto-logon could fail unexpectantly.
 </table>
 
