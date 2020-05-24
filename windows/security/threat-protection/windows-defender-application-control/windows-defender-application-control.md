@@ -45,8 +45,8 @@ Windows 10 includes two technologies that can be used for application control de
 
 | Topic | Description |
 | - | - |
-| [WDAC and AppLocker Overview](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [WDAC and AppLocker Feature Availability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/feature-availability) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
+| [WDAC and AppLocker Overview](wdac-and-applocker-overview.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
+| [WDAC and AppLocker Feature Availability](feature-availability.md) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
 
 ## See also
 
