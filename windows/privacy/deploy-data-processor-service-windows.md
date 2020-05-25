@@ -33,14 +33,14 @@ Should you desire so, Microsoft will accommodate a DPSW tenant account closure, 
 >[!Note]
 >Tenant account closure will lead to the deletion of all data associated with that tenant. 
 
-# Deployment of Data Processor Service for Windows
+## Deployment of Data Processor Service for Windows
 Use the instructions below to easily manage the Data Processor Service for Windows using a single setting, through Group Policy, or an MDM solution, in Windows 10, version 1809 or Windows Server 2019 and newer. 
 
-## Prerequisites 
-### Versions supported 
+### Prerequisites 
+#### Versions supported 
 DPSW is currently supported on Windows 10, version 1809, and newer versions.
 
-### Network requirements 
+#### Network requirements 
 The following endpoints need to be reachable from devices enrolled into the Data Processor Service for Windows:
  
  login.live.com
@@ -57,7 +57,7 @@ For additional information, see the “device authentication” and “diagnosti
 
 [Windows 10, version 1903 endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
 
-## Deploying Data Processor Service for Windows
+### Deploying Data Processor Service for Windows
 You can use either Group Policy or an MDM solution to deploy the Processor Service for Windows to your supported devices.
 
 In Group Policy, to enable data collection through the Data Processor Service for Windows, go to **Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds** and switch the **Allow commercial data pipeline** setting to **enabled**. 
@@ -77,8 +77,8 @@ If you wish to disable, at any time, switch the same setting to **0** to disable
 >[!Note]
 >Data collected from a device, before it was enrolled into the Data Processor Service for Windows, will not be moved into the enterprise compliance boundary. 
 
-# Managing the Data Processor Service for Windows 
-## Executing user-based data subject requests (DSRs) 
+## Managing the Data Processor Service for Windows 
+### Executing user-based data subject requests (DSRs) 
 To perform user-based DSRs, DPSW requires your organization to be reflected in Azure AD. 
 
 If your environment is cloud-only and managed in Azure, or all your devices are Azure AD joined - you don’t need to take any further action. 
@@ -86,7 +86,7 @@ If your environment is cloud-only and managed in Azure, or all your devices are 
 If your environment uses on-premises Active Directory to manage identities - Azure AD Connect synchronization is required, and your environment needs to be configured for hybrid Azure AD join. 
 To learn more, visit [How To: Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) and [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis). 
 
-## Deleting Data Processor Service for Windows data from a Windows Client 
+### Deleting Data Processor Service for Windows data from a Windows Client 
 A user with local admins rights can delete diagnostic data for your device.
 
 >[!Important] 
@@ -96,7 +96,7 @@ Additionally, selecting this option does not stop data collection.
 1. Go to Start, then select Settings  > Privacy > Diagnostics & feedback. 
 2. Under Delete diagnostic data, select Delete. 
 
-## Deleting Data Processor Service for Windows data from a Windows Server System  
+### Deleting Data Processor Service for Windows data from a Windows Server System  
 For diagnostic data collected on servers through the Data Processor Service for Windows, you can send a request to delete all uploaded diagnostic data to Microsoft. 
 
 In order to do that, you need to utilize the Clear-WindowsDiagnosticData cmdlet. For more information see the [cmdlet reference](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/clear-windowsdiagnosticdata?view=win10-ps).  
@@ -104,12 +104,12 @@ In order to do that, you need to utilize the Clear-WindowsDiagnosticData cmdlet.
 >[!Note]
 >This cmdlet requires the pre-installation of the [WindowsDiagnosticData](https://www.powershellgallery.com/packages/WindowsDiagnosticData) PowerShell module.
 
-## Control diagnostic data deletion on devices 
+### Control diagnostic data deletion on devices 
 You can control a user’s ability to delete their device’s diagnostic data, by using either Group Policy or an MDM policy: 
 
 **Group Policy:** Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > Disable deleting diagnostic data 
 
 **MDM:** System\DisableDeviceDelete 
 
-# Geo-location 
+## Geo-location 
 Windows Diagnostic Data collected through DPSW is hosted in our datacenter in the United States.  
