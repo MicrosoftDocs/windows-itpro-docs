@@ -97,6 +97,29 @@ To support Surface Laptop 3 with Intel Processor, import the following folders:
 - SurfaceUpdate\SurfaceSerialHub
 - SurfaceUpdate\SurfaceHotPlug
 - SurfaceUpdate\Itouch
+
+Importing the following folders will enable full keyboard, trackpad, and touch functionality in PE for Surface Laptop 3.
+
+- IclSerialIOGPIO
+- IclSerialIOI2C
+- IclSerialIOSPI
+- IclSerialIOUART
+- itouch
+- IclChipset
+- IclChipsetLPSS
+- IclChipsetNorthpeak
+- ManagementEngine
+- SurfaceAcpiNotify
+- SurfaceBattery
+- SurfaceDockIntegration
+- SurfaceHidMini
+- SurfaceHotPlug
+- SurfaceIntegration
+- SurfaceSerialHub
+- SurfaceService
+- SurfaceStorageFwUpdate
+
+
     > [!NOTE]
     >  Check the downloaded MSI package to determine the format and directory structure.  The directory structure will start with either SurfacePlatformInstaller (older MSI files) or SurfaceUpdate (Newer MSI files) depending on when the MSI was released. 
 
