@@ -1,6 +1,6 @@
 ---
 title: Enable ADMX-backed policies in MDM
-description: Guide to configuring ADMX-backed policies in MDM
+description: Use this is a step-by-step guide to configuring ADMX-backed policies in MDM.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

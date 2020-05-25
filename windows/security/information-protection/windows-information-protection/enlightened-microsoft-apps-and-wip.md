@@ -71,15 +71,17 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Messaging
 
-- Microsoft Remote Desktop
+- Microsoft Remote Desktop 
 
 > [!NOTE]
-> Microsoft Visio, Microsoft Office Access and Microsoft Project are not enlightended apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioining.
+> Microsoft Visio, Microsoft Office Access, Microsoft Project, and Microsoft Publisher are not enlightened apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioning.
 
 ## List of WIP-work only apps from Microsoft
 Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
 
 - Skype for Business
+
+- Microsoft Teams (build 1.3.00.12058 and later)
 
 ## Adding enlightened Microsoft apps to the allowed apps list
 
