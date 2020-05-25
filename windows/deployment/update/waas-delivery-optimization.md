@@ -32,6 +32,15 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
+## New in Windows 10, version 2004
+
+- Enterprise network throttling: new settings have been added in Group Policy and MDM to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
+
+![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
+
+- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#microsoft-connected-cache).
+
+
 ## Requirements
 
 The following table lists the minimum Windows 10 version that supports Delivery Optimization:
@@ -54,7 +63,15 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Defender definition updates | 1511 |
 | Office Click-to-Run updates | 1709 |
 | Win32 apps for Intune | 1709 |
+| Office installations and updates | 2004 |
+| Xbox game pass games | 2004 |
+| MSIX apps (HTTP downloads only) | 2004 |
 | Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
+
+> [!NOTE]
+> Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
+
+
 
 <!-- ### Network requirements
 
