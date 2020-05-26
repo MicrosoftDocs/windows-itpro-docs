@@ -162,21 +162,21 @@
         - name: Monitor Windows 10 updates
           items:
             - name: Monitor Delivery Optimization
-              href: update/waas-delivery-optimization.md
+              href: update/waas-delivery-optimization-setup.md#monitor-delivery-optimization
             - name: Monitor Windows Updates with Update Compliance
               items:
               - name: Get started
                 items: 
                   - name: Get started with Update Compliance
-                    href: file1.md
+                    href: update/update-compliance-get-started.md
                   - name: Update Compliance configuration script
-                    href: file1.md
+                    href: update/update-compliance-configuration-script.md
                   - name: Manually configuring devices for Update Compliance
-                    href: file1.md
+                    href: update/update-compliance-configuration-manual.md
               - name: Update Compliance monitoring
                 items: 
                   - name: Use Update Compliance
-                    href: file1.md
+                    href: update/update-compliance-using.md
                   - name: Need attention report
                     href: file1.md
                   - name: Security update status report
