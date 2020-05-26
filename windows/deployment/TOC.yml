@@ -178,342 +178,340 @@
                   - name: Use Update Compliance
                     href: update/update-compliance-using.md
                   - name: Need attention report
-                    href: file1.md
+                    href: update/update-compliance-need-attention.md
                   - name: Security update status report
-                    href: file1.md
+                    href: update/update-compliance-security-update-status.md
                   - name: Feature update status report
-                    href: file1.md
+                    href: update/update-compliance-feature-update-status.md
                   - name: Delivery Optimization in Update Compliance
-                    href: file1.md
+                    href: update/update-compliance-delivery-optimization.md
                   - name: Data handling and privacy in Update Compliance
-                    href: file1.md
+                    href: update/update-compliance-privacy.md
                   - name: Update Compliance schema reference
                     items:
                       - name: WaaSUpdateStatus
-                        href: file1.md
+                        href: update/update-compliance-schema-waasupdatestatus.md
                       - name: WaaSInsiderStatus
-                        href: file1.md
+                        href: update/update-compliance-schema-waasinsiderstatus.md
                       - name: WaaSDepoymentStatus
-                        href: file1.md
+                        href: update/update-compliance-schema-waasdeploymentstatus.md
                       - name: WUDOStatus
-                        href: file1.md
+                        href: update/update-compliance-schema-wudostatus.md
                       - name: WUDOAggregatedStatus
-                        href: file1.md
+                        href: update/update-compliance-schema-wudoaggregatedstatus.md
         - name: Troubleshooting
           items:
             - name: Resolve upgrade errors
               items:
                 - name: Resolve Windows 10 upgrade errors
-                  href: file1.md
+                  href: upgrade/resolve-windows-10-upgrade-errors.md
                 - name: Quick fixes
-                  href: file1.md
+                  href: upgrade/quick-fixes.md
                 - name: SetupDiag
-                  href: file1.md
+                  href: upgrade/setupdiag.md
                 - name: Troubleshooting upgrade errors
-                  href: file1.md
+                  href: upgrade/troubleshoot-upgrade-errors.md
                 - name: Windows error reporting
-                  href: file1.md
+                  href: upgrade/windows-error-reporting.md
                 - name: Upgrade error codes
-                  href: file1.md
+                  href: upgrade/upgrade-error-codes.md
                 - name: Log files
-                  href: file1.md
+                  href: upgrade/log-files.md
                 - name: Resolution procedures
-                  href: file1.md
+                  href: upgrade/resolution-procedures.md
                 - name: Submit Windows 10 upgrade errors
-                  href: file1.md
+                  href: upgrade/submit-errors.md
             - name: Troubleshoot Windows Update
               items:
                 - name: How to troubleshoot Windows Update
-                  href: file1.md
-                - name: Determine the source of Windows Updates (find this topic)
-                  href: file1.md
+                  href: update/windows-update-troubleshooting.md
+                - name: Determine the source of Windows Updates
+                  href: update/windows-update-sources.md
                 - name: Common Windows Update errors
-                  href: file1.md
+                  href: update/windows-update-errors.md
                 - name: Windows Update error code reference
-                  href: file1.md
+                  href: update/windows-update-error-reference.md
 
     - name: Reference
       items:
         - name: How does Windows Update work?
-          href: file1.md
+          href: update/how-windows-update-works.md
         - name: Understanding the Unified Update Platform
-          href: file1.md
+          href: update/windows-update-overview.md
         - name: Servicing stack updates
-          href: file1.md
-        - name: How Windows Update works (new)
-          href: file1.md
+          href: update/servicing-stack-updates.md
+        - name: How Windows Update works
+          href: update/how-windows-update-works.md
         - name: Additional Windows Update settings
-          href: file1.md
+          href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
-          href: file1.md
-        - name: Windows 10 in S mode (consolidate)
-          href: file1.md
+          href: update/update-compliance-delivery-optimization.md
+        - name: Windows 10 in S mode
+          href: windows-10-pro-in-s-mode.md
         - name: Windows 10 deployment tools
           items:
             - name: Windows 10 deployment scenarios and tools
               items:
                 - name: Convert MBR partition to GPT
-                  href: file1.md
+                  href: mbr-to-gpt.md
                 - name: Configure a PXE server to load Windows PE
-                  href: file1.md
+                  href: configure-a-pxe-server-to-load-windows-pe.md
                 - name: Windows ADK for Windows 10 scenarios for IT Pros
-                  href: file1.md
+                  href: windows-adk-scenarios-for-it-pros.md
                 - name: Windows To Go
                   items:
                     - name: Deploy Windows To Go in your organization
-                      href: file1.md
-                    - name: Feature overview
-                      items:
-                        - name: "Windows To Go: feature overview"
-                          href: file1.md
-                        - name: Best practice recommendations for Windows To Go
-                          href: file1.md
-                        - name: Deployment considerations for Windows To Go
-                          href: file1.md
-                        - name: Prepare your organization for Windows To Go
-                          href: file1.md
-                        - name: Security and data protection considerations for Windows To Go
-                          href: file1.md
-                        - name: "Windows To Go: frequently asked questions"
-                          href: file1.md
+                      href: deploy-windows-to-go.md
+                    - name: "Windows To Go: feature overview"
+                      href: planning/windows-to-go-overview.md
+                    - name: Best practice recommendations for Windows To Go
+                      href: planning/best-practice-recommendations-for-windows-to-go.md
+                    - name: Deployment considerations for Windows To Go
+                      href: planning/deployment-considerations-for-windows-to-go.md
+                    - name: Prepare your organization for Windows To Go
+                      href: planning/prepare-your-organization-for-windows-to-go.md
+                    - name: Security and data protection considerations for Windows To Go
+                      href: planning/security-and-data-protection-considerations-for-windows-to-go.md
+                    - name: "Windows To Go: frequently asked questions"
+                      href: planning/windows-to-go-frequently-asked-questions.md
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
                     - name: VAMT technical reference
-                      href: file1.md
+                      href: volume-activation/volume-activation-management-tool.md
                     - name: Introduction to VAMT
-                      href: file1.md
+                      href: volume-activation/introduction-vamt.md
                     - name: Active Directory-Based Activation Overview
-                      href: file1.md
+                      href: volume-activation/active-directory-based-activation-overview.md
                     - name: Install and Configure VAMT
-                      href: file1.md
+                      href: volume-activation/install-configure-vamt.md
                     - name: VAMT Requirements
-                      href: file1.md
+                      href: volume-activation/vamt-requirements.md
                     - name: Install VAMT
-                      href: file1.md
+                      href: volume-activation/install-vamt.md
                     - name: Configure Client Computers
-                      href: file1.md
+                      href: volume-activation/configure-client-computers-vamt.md
                     - name: Add and Manage Products
-                      href: file1.md
+                      href: volume-activation/add-manage-products-vamt.md
                     - name: Add and Remove Computers
-                      href: file1.md
+                      href: volume-activation/add-remove-computers-vamt.md
                     - name: Update Product Status
-                      href: file1.md
+                      href: volume-activation/update-product-status-vamt.md
                     - name: Remove Products
-                      href: file1.md
+                      href: volume-activation/remove-products-vamt.md
                     - name: Manage Product Keys
-                      href: file1.md
+                      href: volume-activation/manage-product-keys-vamt.md
                     - name: Add and Remove a Product Key
-                      href: file1.md
+                      href: volume-activation/add-remove-product-key-vamt.md
                     - name: Install a Product Key
-                      href: file1.md
+                      href: volume-activation/install-product-key-vamt.md
                     - name: Install a KMS Client Key
-                      href: file1.md
+                      href: volume-activation/install-kms-client-key-vamt.md
                     - name: Manage Activations
-                      href: file1.md
+                      href: volume-activation/manage-activations-vamt.md
                     - name: Perform Online Activation
-                      href: file1.md
+                      href: volume-activation/online-activation-vamt.md
                     - name: Perform Proxy Activation
-                      href: file1.md
+                      href: volume-activation/proxy-activation-vamt.md
                     - name: Perform KMS Activation
-                      href: file1.md
+                      href: volume-activation/kms-activation-vamt.md
                     - name: Perform Local Reactivation
-                      href: file1.md
+                      href: volume-activation/local-reactivation-vamt.md
                     - name: Activate an Active Directory Forest Online
-                      href: file1.md
+                      href: volume-activation/activate-forest-vamt.md
                     - name: Activate by Proxy an Active Directory Forest
-                      href: file1.md
+                      href: volume-activation/activate-forest-by-proxy-vamt.md
                     - name: Manage VAMT Data
-                      href: file1.md
+                      href: volume-activation/manage-vamt-data.md
                     - name: Import and Export VAMT Data
-                      href: file1.md
+                      href: volume-activation/import-export-vamt-data.md
                     - name: Use VAMT in Windows PowerShell
-                      href: file1.md
+                      href: volume-activation/use-vamt-in-windows-powershell.md
                     - name: VAMT Step-by-Step Scenarios
-                      href: file1.md
+                      href: volume-activation/vamt-step-by-step.md
                     - name: "Scenario 1: Online Activation"
-                      href: file1.md
+                      href: volume-activation/scenario-online-activation-vamt.md
                     - name: "Scenario 2: Proxy Activation"
-                      href: file1.md
+                      href: volume-activation/scenario-proxy-activation-vamt.md
                     - name: "Scenario 3: KMS Client Activation"
-                      href: file1.md
+                      href: volume-activation/scenario-kms-activation-vamt.md
                     - name: VAMT Known Issues
-                      href: file1.md
+                      href: volume-activation/vamt-known-issues.md
         
                 - name: User State Migration Tool (USMT) technical reference
                   items:
                     - name: USMT overview topics
                       items:
                         - name: USMT overview
-                          href: file1.md
+                          href: usmt/usmt-overview.md
                         - name: Getting started with the USMT
-                          href: file1.md
+                          href: usmt/getting-started-with-the-user-state-migration-tool.md
                         - name: Windows upgrade and migration considerations
-                          href: file1.md
+                          href: upgrade/windows-upgrade-and-migration-considerations.md
                     - name: USMT How-to topics
                       items:
                         - name: Exclude Files and Settings
-                          href: file1.md
+                          href: usmt/usmt-exclude-files-and-settings.md
                         - name: Extract Files from a Compressed USMT Migration Store
-                          href: file1.md
+                          href: usmt/usmt-extract-files-from-a-compressed-migration-store.md
                         - name: Include Files and Settings
-                          href: file1.md
+                          href: usmt/usmt-include-files-and-settings.md
                         - name: Migrate Application Settings
-                          href: file1.md
+                          href: usmt/migrate-application-settings.md
                         - name: Migrate EFS Files and Certificates
-                          href: file1.md
+                          href: usmt/usmt-migrate-efs-files-and-certificates.md
                         - name: Migrate User Accounts
-                          href: file1.md
+                          href: usmt/usmt-migrate-user-accounts.md
                         - name: Reroute Files and Settings
-                          href: file1.md
+                          href: usmt/usmt-reroute-files-and-settings.md
                         - name: Verify the Condition of a Compressed Migration Store
-                          href: file1.md
+                          href: usmt/verify-the-condition-of-a-compressed-migration-store.md
                         - name: USMT Troubleshooting
-                          href: file1.md
+                          href: usmt/usmt-troubleshooting.md
                         - name: Common Issues
-                          href: file1.md
+                          href: usmt/usmt-common-issues.md
                         - name: Frequently Asked Questions
-                          href: file1.md
+                          href: usmt/usmt-faq.md
                         - name: Log Files
-                          href: file1.md
+                          href: usmt/usmt-log-files.md
                         - name: Return Codes
-                          href: file1.md
+                          href: usmt/usmt-return-codes.md
                         - name: USMT Resources
-                          href: file1.md
+                          href: usmt/usmt-resources.md
         
                     - name: USMT Reference
                       items:
                         - name: USMT Requirements
-                          href: file1.md
+                          href: usmt/usmt-requirements.md
                         - name: USMT Best Practices
-                          href: file1.md
+                          href: usmt/usmt-best-practices.md
                         - name: How USMT Works
-                          href: file1.md
+                          href: usmt/usmt-how-it-works.md
                         - name: Plan Your Migration
-                          href: file1.md
+                          href: usmt/usmt-plan-your-migration.md
                         - name: Common Migration Scenarios
-                          href: file1.md
+                          href: usmt/usmt-common-migration-scenarios.md
                         - name: What Does USMT Migrate?
-                          href: file1.md
+                          href: usmt/usmt-what-does-usmt-migrate.md
                         - name: Choose a Migration Store Type
-                          href: file1.md
+                          href: usmt/usmt-choose-migration-store-type.md
                         - name: Migration Store Types Overview
-                          href: file1.md
+                          href: usmt/migration-store-types-overview.md
                         - name: Estimate Migration Store Size
-                          href: file1.md
+                          href: usmt/usmt-estimate-migration-store-size.md
                         - name: Hard-Link Migration Store
-                          href: file1.md
+                          href: usmt/usmt-hard-link-migration-store.md
                         - name: Migration Store Encryption
-                          href: file1.md
+                          href: usmt/usmt-migration-store-encryption.md
                         - name: Determine What to Migrate
-                          href: file1.md
-                        - name: Determine What to Migrate
-                          href: file1.md
+                          href: usmt/usmt-determine-what-to-migrate.md
+                        - name: Identify users
+                          href: usmt/usmt-identify-users.md
                         - name: Identify Applications Settings
-                          href: file1.md
+                          href: usmt/usmt-identify-application-settings.md
                         - name: Identify Operating System Settings
-                          href: file1.md
+                          href: usmt/usmt-identify-operating-system-settings.md
                         - name: Identify File Types, Files, and Folders
-                          href: file1.md
+                          href: usmt/usmt-identify-file-types-files-and-folders.md
                         - name: Test Your Migration
-                          href: file1.md
+                          href: usmt/usmt-test-your-migration.md
                         - name: USMT Command-line Syntax
-                          href: file1.md
+                          href: usmt/usmt-command-line-syntax.md
                         - name: ScanState Syntax
-                          href: file1.md
+                          href: usmt/usmt-scanstate-syntax.md
                         - name: LoadState Syntax
-                          href: file1.md
+                          href: usmt/usmt-loadstate-syntax.md
                         - name: UsmtUtils Syntax
-                          href: file1.md
+                          href: usmt/usmt-utilities.md
                         - name: USMT XML Reference
-                          href: file1.md
+                          href: usmt/usmt-xml-reference.md
                         - name: Understanding Migration XML Files
-                          href: file1.md
+                          href: usmt/understanding-migration-xml-files.md
                         - name: Config.xml File
-                          href: file1.md
+                          href: usmt/usmt-configxml-file.md
                         - name: Customize USMT XML Files
-                          href: file1.md
+                          href: usmt/usmt-customize-xml-files.md
                         - name: Custom XML Examples
-                          href: file1.md
+                          href: usmt/usmt-custom-xml-examples.md
                         - name: Conflicts and Precedence
-                          href: file1.md
+                          href: usmt/usmt-conflicts-and-precedence.md
                         - name: General Conventions
-                          href: file1.md
+                          href: usmt/usmt-general-conventions.md
                         - name: XML File Requirements
-                          href: file1.md
+                          href: usmt/xml-file-requirements.md
                         - name: Recognized Environment Variables
-                          href: file1.md
+                          href: usmt/usmt-recognized-environment-variables.md
                         - name: XML Elements Library
-                          href: file1.md
+                          href: usmt/usmt-xml-elements-library.md
                         - name: Offline Migration Reference
-                          href: file1.md
+                          href: usmt/offline-migration-reference.md
         
             - name: Application Compatibility Toolkit (ACT) Technical Reference
               items:
                 - name: SUA User's Guide
-                  href: file1.md
+                  href: planning/sua-users-guide.md
                 - name: Using the SUA Wizard
-                  href: file1.md
+                  href: planning/using-the-sua-wizard.md
                 - name: Using the SUA Tool
-                  href: file1.md
+                  href: planning/using-the-sua-tool.md
                 - name: Tabs on the SUA Tool Interface
-                  href: file1.md
+                  href: planning/tabs-on-the-sua-tool-interface.md
                 - name: Showing Messages Generated by the SUA Tool
-                  href: file1.md
+                  href: planning/showing-messages-generated-by-the-sua-tool.md
                 - name: Applying Filters to Data in the SUA Tool
-                  href: file1.md
+                  href: planning/applying-filters-to-data-in-the-sua-tool.md
                 - name: Fixing Applications by Using the SUA Tool
-                  href: file1.md
+                  href: planning/fixing-applications-by-using-the-sua-tool.md
                 - name: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
-                  href: file1.md
+                  href: planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md
                 - name: Compatibility Administrator User's Guide
-                  href: file1.md
+                  href: planning/compatibility-administrator-users-guide.md
                 - name: Using the Compatibility Administrator Tool
-                  href: file1.md
+                  href: planning/using-the-compatibility-administrator-tool.md
                 - name: Available Data Types and Operators in Compatibility Administrator
-                  href: file1.md
+                  href: planning/available-data-types-and-operators-in-compatibility-administrator.md
                 - name: Searching for Fixed Applications in Compatibility Administrator
-                  href: file1.md
+                  href: planning/searching-for-fixed-applications-in-compatibility-administrator.md
                 - name: Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator
-                  href: file1.md
+                  href: planning/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator.md
                 - name: Creating a Custom Compatibility Fix in Compatibility Administrator
-                  href: file1.md
+                  href: planning/creating-a-custom-compatibility-fix-in-compatibility-administrator.md
                 - name: Creating a Custom Compatibility Mode in Compatibility Administrator
-                  href: file1.md
+                  href: planning/creating-a-custom-compatibility-mode-in-compatibility-administrator.md
                 - name: Creating an AppHelp Message in Compatibility Administrator
-                  href: file1.md
+                  href: planning/creating-an-apphelp-message-in-compatibility-administrator.md
                 - name: Viewing the Events Screen in Compatibility Administrator
-                  href: file1.md
+                  href: planning/viewing-the-events-screen-in-compatibility-administrator.md
                 - name: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
-                  href: file1.md
+                  href: planning/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md
                 - name: Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator
-                  href: file1.md
+                  href: planning/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md
                 - name: Managing Application-Compatibility Fixes and Custom Fix Databases
-                  href: file1.md
+                  href: planning/managing-application-compatibility-fixes-and-custom-fix-databases.md
                 - name: Understanding and Using Compatibility Fixes
-                  href: file1.md
+                  href: planning/understanding-and-using-compatibility-fixes.md
                 - name: Compatibility Fix Database Management Strategies and Deployment
-                  href: file1.md
+                  href: planning/compatibility-fix-database-management-strategies-and-deployment.md
                 - name: Testing Your Application Mitigation Packages
-                  href: file1.md
+                  href: planning/testing-your-application-mitigation-packages.md
                 - name: Using the Sdbinst.exe Command-Line Tool
-                  href: file1.md
+                  href: planning/using-the-sdbinstexe-command-line-tool.md
                 - name: Volume Activation 
-                  href: file1.md
+                  href: volume-activation/volume-activation-windows-10.md
                 - name: Plan for volume activation 
-                  href: file1.md
+                  href: volume-activation/plan-for-volume-activation-client.md
                 - name: Activate using Key Management Service 
-                  href: file1.md
+                  href: volume-activation/activate-using-key-management-service-vamt.md
                 - name: Activate using Active Directory-based activation 
-                  href: file1.md
+                  href: volume-activation/activate-using-active-directory-based-activation-client.md
                 - name: Activate clients running Windows 10
-                  href: file1.md
+                  href: volume-activation/activate-windows-10-clients-vamt.md
                 - name: Monitor activation 
-                  href: file1.md
+                  href: volume-activation/monitor-activation-client.md
                 - name: Use the Volume Activation Management Tool 
-                  href: file1.md
+                  href: volume-activation/use-the-volume-activation-management-tool-client.md
                 - name: "Appendix: Information sent to Microsoft during activation "
-                  href: file1.md
+                  href: file1.mdvolume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
 
         - name: Install fonts in Windows 10
-          href: file1.md
+          href: windows-10-missing-fonts.md
