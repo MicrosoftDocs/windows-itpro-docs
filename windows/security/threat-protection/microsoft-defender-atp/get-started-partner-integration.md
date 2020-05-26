@@ -46,7 +46,13 @@ To have your company listed as a partner in the in-product partner page, you wil
 3. Provide a 15-word product description.
 4. Link to the landing page for the customer to complete the integration or blog post that will include sufficient information for customers. Please note that any press release including the Microsoft Defender ATP product name should be reviewed by the marketing and engineering teams. You should allow at least 10 days for review process to be performed.
 5.	If you use a multi-tenant Azure AD approach, we will need the AAD application name to track usage of the application.
-6. We would like to ask you to include the User-Agent field in each API call made to Microsoft Defender ATP public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a membership requirement in Microsoft Intelligent Security Association (MISA).
+6. We'd like to request that you include the User-Agent field in each API call made to Microsoft Defender ATP public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
+    Follow these steps:
+    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender ATP integrated product with the version of the product that includes this integration. 
+    ISV Nomenclature: `MdatpPartner-{CompanyName}-{TenantID}/{Version}`. 
+    Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`. 
+    2.	Set the User-Agent field in each HTTP request header to the name based on the above nomenclature. 
+    For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43). For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
 
 
 Partnership with Microsoft Defender ATP help our mutual customers to further streamline, integrate, and orchestrate defenses. We are happy that you chose to become a Microsoft Defender ATP partner and to achieve our common goal of effectively protecting customers and their assets by preventing and responding to modern threats together.
