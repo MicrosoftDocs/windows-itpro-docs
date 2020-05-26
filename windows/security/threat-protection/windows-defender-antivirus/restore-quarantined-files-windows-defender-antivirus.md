@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/16/2018
+ms.date: 05/20/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -23,15 +23,15 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-If Windows Defender Antivirus is configured to detect and remediate threats on your device, Windows Defender Antivirus quarantines suspicious files. If you are certain these files do not present a threat, you can restore them.
+If Microsoft Defender Antivirus is configured to detect and remediate threats on your device, Microsoft Defender Antivirus quarantines suspicious files. If you are certain a quarantined file is not a threat, you can restore it.
 
 1. Open **Windows Security**.
-2. Click **Virus & threat protection** and then click **Threat History**.
-3. Under **Quarantined threats**, click **See full history**.
-4. Click an item you want to keep, then click **Restore**. (If you prefer to remove the item, you can click **Remove**.)
+2. Select **Virus & threat protection** and then click **Protection history**.
+3. In the list of all recent items, filter on **Quarantined Items**.
+4. Select an item you want to keep, and take an action, such as restore.
 
-> [!NOTE]
-> You can also use the dedicated command-line tool [mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus) to restore quarantined files in Windows Defender AV.
+> [!TIP]
+> Restoring a file from quarantine can also be done using Command Prompt. See [Restore a file from quarantine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#restore-file-from-quarantine). 
 
 ## Related articles
 
