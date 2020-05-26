@@ -230,7 +230,7 @@ This event generates when a logon session is created (on destination machine). I
 
 **Network Information:**
 
--   **Workstation Name** \[Type = UnicodeString\]**:** machine name from which logon attempt was performed.
+-   **Workstation Name** \[Type = UnicodeString\]**:** machine name to which logon attempt was performed.
 
 -   **Source Network Address** \[Type = UnicodeString\]**:** IP address of machine from which logon attempt was performed.
 
