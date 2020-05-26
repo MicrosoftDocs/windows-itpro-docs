@@ -12,9 +12,9 @@
         - name: Windows update fundamentals
           href: update/waas-overview.md
         - name: Types of Windows updates
-          href: update/servicing-stack-updates.md
+          href: update/waas-quick-start.md#definitions
         - name: Servicing the Windows 10 operating system
-          href: update/windows-update-overview.md
+          href: update/waas-servicing-strategy-windows-10-updates.md
 
         - name: Deployment proof of concept
           items: 
@@ -33,14 +33,14 @@
 
     - name: Plan
       items:
-        - name: Deployment considerations
-          href: planning/windows-10-deployment-considerations.md
         - name: Create a deployment plan
-          href: planning/windows-10-deployment-considerations.md
+          href: update/create-deployment-plan.md
+        - name: Define readiness criteria
+          href: update/plan-define-readiness.md
         - name: Evaluate infrastructure and tools
-          href: planning/windows-10-infrastructure-requirements.md.md
+          href: update/eval-infra-tools.md
         - name: Determine application readiness
-          href: planning/windows-10-compatibility.md 
+          href: update/plan-determine-app-readiness.md 
         - name: Define your servicing strategy
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Best practices for feature updates on mission-critical devices
@@ -61,11 +61,7 @@
         - name: Prepare to deploy Windows 10
           href: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md 
         - name: Evaluate and update infrastructure
-          href: planning/windows-10-infrastructure-requirements.md 
-        - name: Evaluate and update deployment processes
-          href: planning/windows-10-deployment-considerations.md 
-        - name: Test and remediate your applications
-          href: planning/windows-10-compatibility.md
+          href: update/update-policies.md 
         - name: Set up Delivery Optimization for Windows 10 updates
           href: update/waas-delivery-optimization-setup.md
         - name: Configure BranchCache for Windows 10 updates
@@ -81,11 +77,11 @@
         - name: Build a successful servicing strategy
           items:
             - name: Build deployment rings for Windows 10 updates
-              href: file1.md
+              href: update/waas-deployment-rings-windows-10-updates.md
             - name: Prepare updates using Windows Update for Business
-              href: file1.md
+              href: update/waas-manage-updates-wufb.md
             - name: Prepare updates using WSUS
-              href: file1.md
+              href: update/waas-manage-updates-wsus.md
 
     - name: Deploy
       items: 
@@ -245,7 +241,7 @@
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
-          href: update/update-compliance-delivery-optimization.md
+          href: update/waas-delivery-optimization-reference.md
         - name: Windows 10 in S mode
           href: windows-10-pro-in-s-mode.md
         - name: Windows 10 deployment tools
