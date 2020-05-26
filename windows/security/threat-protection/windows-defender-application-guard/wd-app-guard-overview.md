@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Application Guard (Windows 10)
-description: Learn about Windows Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
+title: Microsoft Defender Application Guard (Windows 10)
+description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,11 +14,11 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# Windows Defender Application Guard overview
+# Microsoft Defender Application Guard overview
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
+Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
 
 ## What is Application Guard and how does it work?
 
@@ -44,8 +44,8 @@ Application Guard has been created to target several types of systems:
 
 |Article |Description |
 |------|------------|
-|[System requirements for Windows Defender Application Guard](reqs-wd-app-guard.md) |Specifies the prerequisites necessary to install and use Application Guard.|
-|[Prepare and install Windows Defender Application Guard](install-wd-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
-|[Configure the Group Policy settings for Windows Defender Application Guard](configure-wd-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
-|[Testing scenarios using Windows Defender Application Guard in your business or organization](test-scenarios-wd-app-guard.md)|Provides a list of suggested testing scenarios that you can use to test Application Guard in your organization.|
-|[Frequently asked questions - Windows Defender Application Guard](faq-wd-app-guard.md)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
+|[System requirements for Microsoft Defender Application Guard](reqs-wd-app-guard.md) |Specifies the prerequisites necessary to install and use Application Guard.|
+|[Prepare and install Microsoft Defender Application Guard](install-wd-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
+|[Configure the Group Policy settings for Microsoft Defender Application Guard](configure-wd-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
+|[Testing scenarios using Microsoft Defender Application Guard in your business or organization](test-scenarios-wd-app-guard.md)|Provides a list of suggested testing scenarios that you can use to test Application Guard in your organization.|
+|[Frequently asked questions - Microsoft Defender Application Guard](faq-wd-app-guard.md)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
