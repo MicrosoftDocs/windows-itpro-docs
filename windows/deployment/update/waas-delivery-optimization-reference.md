@@ -119,7 +119,7 @@ Download mode dictates which download sources clients are allowed to use when do
 
 By default, peer sharing on clients using the group download mode is limited to the same domain in Windows 10, version 1511, and the same domain and Active Directory Domain Services site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or Active Directory Domain Services site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a sub-group representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group.
 
-[//]: # (Configuration Manager Boundary Group option; GroupID Source policy)
+[//]: # (Configuration Manager boundary group option; GroupID Source policy)
 
 >[!NOTE]
 >To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
