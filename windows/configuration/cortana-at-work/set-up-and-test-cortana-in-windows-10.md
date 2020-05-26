@@ -32,8 +32,8 @@ Users cannot enable or disable the Bing Answer feature individually. So, if you 
 Sign in to the [Office Configuration Admin tool](https://config.office.com/).
 
 Follow the steps [here](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below:
-    
-:::image type="content" source="../../../images/screenshot3.png" alt-text="Screenshot: Bing policy example":::
+
+:::image type="content" source="../screenshot3.png" alt-text="Screenshot: Bing policy example":::
 
 ## How does Microsoft handle customer data for Bing Answers?
 
@@ -43,7 +43,7 @@ When a user enters a search query (by speech or text), Cortana evaluates if the 
 
 2. If it is not for any of the first-party compliant skills, the query is sent to Bing for a search of public results from Bing.com. Because enterprise searches might be sensitive, similar to [Microsoft Search in Bing](https://docs.microsoft.com/MicrosoftSearch/security-for-search#microsoft-search-in-bing-protects-workplace-searches), Bing Answers in Cortana has implemented a set of trust measures, described below, that govern how the separate search of public results from Bing.com is handled. The Bing Answers in Cortana trust measures are consistent with the enhanced privacy and security measures described in [Microsoft Search in Bing](https://docs.microsoft.com/MicrosoftSearch/security-for-search). All Bing.com search logs that pertain to Cortana traffic are disassociated from users&#39; workplace identity. All Cortana queries issued via a work or school account are stored separately from public, non-Cortana traffic.
 
-Bing Answers is enabled by default for all users. However, admins can configure and change this for specific users/user groups in their organization.
+Bing Answers is enabled by default for all users. However, admins can configure and change this for specific users and user groups in their organization.
 
 ## How the Bing Answer policy configuration is applied
 Before a query is sent to Bing for a search of public results from Bing.com, the Bing Answers service checks with the Office Cloud Policy Service to see if there are any policy configurations that pertain to the user for allowing Bing Answers to respond to questions users ask Cortana. If the user is a member of an AAD group that is assigned that policy configuration, then the appropriate policy settings are applied and a check is made again in 10 minutes.
