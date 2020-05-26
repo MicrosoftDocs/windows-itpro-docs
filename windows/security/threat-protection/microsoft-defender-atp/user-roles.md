@@ -41,7 +41,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
          >[!NOTE]
          >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**.
       
-        - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
+        - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage device tags, and export device timeline.
          - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
             - Security operations - Take response actions
               - Approve or dismiss pending remediation actions
@@ -51,24 +51,24 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
          >[!NOTE]
          >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
         
-        - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
+        - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups.
 
         > [!NOTE]
         > This setting is only available in the Microsoft Defender ATP administrator (default) role.
 
-        - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
+        - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications.
 
         - **Live response capabilities** - Users can take basic or advanced live response commands.
             - Basic commands allow users to:
                 - Start a live response session
-                - Run read only live response commands on a remote machine 
+                - Run read only live response commands on a remote device 
              - Advanced commands allow users to:
                 - Run basic actions
-                - Download a file from the remote machine
+                - Download a file from the remote device
                 - View a script from the files library
-                - Run a script on the remote machine from the files library take read and write commands. 
+                - Run a script on the remote device from the files library take read and write commands. 
 
-        For more information on the available commands, see [Investigate machines using Live response](live-response.md).
+        For more information on the available commands, see [Investigate devices using Live response](live-response.md).
   
 4. Click **Next** to assign the role to an Azure AD Security group.
 
@@ -80,7 +80,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
 
 > [!IMPORTANT]
-> After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
+> After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created. 
 
 
 ## Edit roles
@@ -102,4 +102,4 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
 ## Related topic
 - [User basic permissions to access the portal](basic-permissions.md)
-- [Create and manage machine groups](machine-groups.md)
+- [Create and manage device groups](machine-groups.md)

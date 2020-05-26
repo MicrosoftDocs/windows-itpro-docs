@@ -35,8 +35,8 @@ Watch this short video to quickly understand how threat analytics can help you t
 
 The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It provides several overviews about the threats covered in the reports:
 
-- **Latest threats** — lists the most recently published threat reports, along with the number of machines with resolved and unresolved alerts.
-- **High-impact threats** — lists the threats that have had the highest impact on the organization in terms of the number of machines that have had related alerts, along with the number of machines with resolved and unresolved alerts.
+- **Latest threats** — lists the most recently published threat reports, along with the number of devices with resolved and unresolved alerts.
+- **High-impact threats** — lists the threats that have had the highest impact on the organization in terms of the number of devices that have had related alerts, along with the number of devices with resolved and unresolved alerts.
 - **Threat summary** — shows the number of threats among the threats reported in threat analytics with actual alerts.
 
 ![Image of a threat analytics dashboard](images/ta_dashboard.png)
@@ -51,18 +51,18 @@ Each threat report generally provides an overview of the threat and an analysis 
 
 ### Organizational impact
 Each report includes cards designed to provide information about the organizational impact of a threat:
-- **Machines with alerts** — shows the current number of distinct machines in your organization that have been impacted by the threat. A machine is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the machine have been resolved.
-- **Machines with alerts over time** — shows the number of distinct machines with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
+- **Devices with alerts** — shows the current number of distinct devices in your organization that have been impacted by the threat. A device is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
+- **Devices with alerts over time** — shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
 ### Organizational resilience
 Each report also includes cards that provide an overview of how resilient your organization can be against a given threat:
-- **Mitigation status** — shows the number of machines that have and have not applied mitigations for the threat. Machines are considered mitigated if they have all the measurable mitigations in place.
-- **Vulnerability patching status** — shows the number of machines that have applied security updates or patches that address vulnerabilities exploited by the threat.
-- **Mitigation recommendations** — lists specific actionable recommendations to improve your visibility into the threat and increase your organizational resilience. This card lists only measurable mitigations along with the number of machines that don't have these mitigations in place.
+- **Mitigation status** — shows the number of devices that have and have not applied mitigations for the threat. Devices are considered mitigated if they have all the measurable mitigations in place.
+- **Vulnerability patching status** — shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
+- **Mitigation recommendations** — lists specific actionable recommendations to improve your visibility into the threat and increase your organizational resilience. This card lists only measurable mitigations along with the number of devices that don't have these mitigations in place.
 
 >[!IMPORTANT]
->- Charts only reflect mitigations that are measurable, meaning an evaluation can be made on whether a machine has applied the mitigations or not. Check the report overview for additional mitigations that are not reflected in the charts.
+>- Charts only reflect mitigations that are measurable, meaning an evaluation can be made on whether a device has applied the mitigations or not. Check the report overview for additional mitigations that are not reflected in the charts.
 >- Even if all mitigations were measurable, they don't guarantee complete resilience. They reflect the best possible actions needed to improve resiliency.
 
 >[!NOTE]
->Machines are counted as "unavailable" if they have been unable to transmit data to the service.
+>Devices are counted as "unavailable" if they have been unable to transmit data to the service.

@@ -88,7 +88,7 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.
+If none of the event logs and troubleshooting steps work, download the Local script from the **Device management** section of the portal, and run it in an elevated command prompt.
 
 **Microsoft Intune error codes and OMA-URIs**:
 

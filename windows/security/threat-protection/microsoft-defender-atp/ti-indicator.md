@@ -50,7 +50,7 @@ severity | Enum | The severity of the indicator. possible values are: "Informati
 title | String | Indicator title.
 description | String | Description of the indicator.
 recommendedActions | String | Recommended actions for the indicator.
-rbacGroupNames | List of strings | RBAC machine group names where the indicator is exposed and active. Empty list in case it exposed to all machines.
+rbacGroupNames | List of strings | RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
 
 
 ## Json representation

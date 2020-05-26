@@ -57,7 +57,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
 
 ## Check license state
 
@@ -88,7 +88,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -211,20 +211,20 @@ Use netsh to configure a system-wide static proxy.
    For example: netsh winhttp set proxy 10.0.0.6:8080
 
 
-###  Proxy Configuration for down-level machines
+###  Proxy Configuration for down-level devices
 
-Down-Level machines include Windows 7 SP1 and Windows 8.1 workstations as well
+Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well
 as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
 versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
 systems will have the proxy configured as part of the Microsoft Management Agent
 to handle communication from the endpoint to Azure. Refer to the
 Microsoft Management Agent Fast Deployment Guide for information on how a proxy
-is configured on these machines.
+is configured on these devices.
 
 ### Proxy Service URLs
 URLs that include v20 in them are only needed if you have Windows 10, version
-1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only
-needed if the machine is on Windows 10, version 1803 or later.
+1803 or later devices. For example, ```us-v20.events.data.microsoft.com``` is only
+needed if the device is on Windows 10, version 1803 or later.
 
  Service location | Microsoft.com DNS record
 -|-

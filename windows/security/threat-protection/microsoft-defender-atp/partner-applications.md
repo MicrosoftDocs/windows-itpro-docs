@@ -38,7 +38,7 @@ Microsoft Defender ATP supports SIEM integration through a variety of methods - 
 Ticketing solution integration helps to implement manual and automatic response processes. Microsoft Defender ATP can help to create tickets automatically when an alert is generated and resolve the alerts when tickets are closed using the alerts API. 
 
 ## Security orchestration and automation response (SOAR) integration 
-Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs expose to orchestrate responses, such as query for device data, trigger machine isolation, block/allow, resolve alert and others. 
+Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs expose to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others. 
 
 ## External alert correlation and Automated investigation and remediation  
 Microsoft Defender ATP offers unique automated investigation and remediation capabilities to drive incident response at scale.

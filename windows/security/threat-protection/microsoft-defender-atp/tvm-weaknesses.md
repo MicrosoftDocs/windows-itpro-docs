@@ -58,7 +58,7 @@ To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, the
 
 ## Weaknesses overview
 
-If the **Exposed Machines** column shows 0, that means you are not at risk. If exposed machines exist, the next step is to remediate the vulnerabilities in those machines to reduce the risk to your assets and organization.
+If the **Exposed Devices** column shows 0, that means you are not at risk. If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization.
 
 ![tvm-breach-insights](images/tvm-weaknesses-overview.png)
 
@@ -81,28 +81,28 @@ The threat insights icon is highlighted if there are associated exploits in the 
 ### Top vulnerable software in the dashboard
 
 1. Go to the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
-![Top vulnerable software card with four columns: software, weaknesses, threats, exposed machines.](images/tvm-top-vulnerable-software500.png)
+![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 2. Select the software that you want to investigate to go a drill down page.
 3. Select the **Discovered vulnerabilities** tab.
 4. Select the vulnerability that you want to investigate. A flyout panel will appear with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
 ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
 
-### Discover vulnerabilities in the machine page
+### Discover vulnerabilities in the device page
 
-View related weaknesses information in the machine page.
+View related weaknesses information in the device page.
 
-1. Go to the Microsoft Defender Security Center navigation menu bar, then select the machine icon. The **Machines list** page opens.
-2. In the **Machines list** page, select the machine name that you want to investigate.
-<br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
-3. The machine page will open with details and response options for the machine you want to investigate.
+1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
+2. In the **Devices list** page, select the device name that you want to investigate.
+<br>![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)</br>
+3. The device page will open with details and response options for the device you want to investigate.
 4. Select **Discovered vulnerabilities**.
-<br>![Screenshot of the machine page with details and response options](images/tvm-discovered-vulnerabilities.png)</br>
+<br>![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)</br>
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
 #### CVE Detection logic
 
-Similar to the software evidence, we now show the detection logic we applied on a machine in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the machine page) that shows the detection logic and source.
+Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the device page) that shows the detection logic and source.
 
 ![Detection Logic example which lists the software detected on the device and the KBs.](images/cve-detection-logic.png)
 

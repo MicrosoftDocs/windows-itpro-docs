@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your machines are less vulnerable from exploitation.
+Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
@@ -30,7 +30,7 @@ The card gives you a high-level view of your exposure score trend over time. Any
 
 ## How it works
 
-Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
+Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your devices are to imminent threats.
 
 The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
 
@@ -60,15 +60,15 @@ To lower your threat and vulnerability exposure, follow these steps.
    - ![Red bug](images/tvm_bug_icon.png) Threat insight icon
    - ![Arrow hitting a target](images/tvm_alert_icon.png) Active alert icon
 
-2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
+2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in devices, number of exposed devices and their device names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
 
-3. Select **Installed machines** and then the affected machine from the list. A flyout panel will open with the relevant machine details, exposure and risk levels, alert and incident activities. ![Example of the software page for Git, and a flyout open for a selected machine.](images/tvm_software_page_details.png)
+3. Select **Installed devices** and then the affected device from the list. A flyout panel will open with the relevant device details, exposure and risk levels, alert and incident activities. ![Example of the software page for Git, and a flyout open for a selected device.](images/tvm_software_page_details.png)
 
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details. ![Example of a machine page.](images/tvm_machine_page_details.png)
+4. Click **Open device page** to connect to the device and apply the selected recommendation. See [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md) for details. ![Example of a device page.](images/tvm_machine_page_details.png)
 
 5. Allow a few hours for the changes to propagate in the system.
 
-6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate is removed from the security recommendation list, and the exposure score decreases.
+6. Review the device **Security recommendation** tab again. The recommendation you've chosen to remediate is removed from the security recommendation list, and the exposure score decreases.
 
 ## Related topics
 

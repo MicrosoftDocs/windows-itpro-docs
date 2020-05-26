@@ -64,7 +64,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 - Each blob contains multiple rows.
 - Each row contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 - For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the machine. Here every event will be decorated with this column as well. See [Machine Groups](machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
 
@@ -80,7 +80,7 @@ In order to get the data types for our events properties do the following:
 
 ```
 
-- Here is an example for Machine Info event: 
+- Here is an example for Device Info event: 
 
 ![Image of event hub resource ID](images/machine-info-datatype-example.png)
 
