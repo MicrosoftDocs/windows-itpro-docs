@@ -23,9 +23,9 @@ appliesto:
 
 <table><tbody>
 <tr><td style="border: 0px;width: 75%;valign= top">
-<p>Microsoft HoloLens is the first fully self-contained holographic computer that runs Windows 10.</p>
+<p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p>
 
-<p>Now, with the introduction of HoloLens 2, every device provides commercial-ready management features that are enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
+<p>Now, with the introduction of HoloLens 2, every device provides commercial ready management enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
 
 <p>To learn more about HoloLens 2 for developers, check out the <a href="https://docs.microsoft.com/windows/mixed-reality/">mixed reality developer documentation</a>.</p>
 
@@ -41,19 +41,19 @@ appliesto:
 | --- | --- |
 | [Get started with HoloLens 2](hololens2-setup.md) | Set up HoloLens 2 for the first time.  |
 | [Get started with HoloLens (1st gen)](hololens1-setup.md) | Set up HoloLens (1st gen) for the first time.  |
-| [Deploy HoloLens in a commercial or classroom environment](hololens-requirements.md) | Plan for a multi-device HoloLens deployment and create a strategy for ongoing device management.</br>This section is tailored to IT professionals managing devices with existing device management infrastructure.  |
+| [Get started with HoloLens in a commercial or classroom environment](hololens-requirements.md) | Plan for a multi-device HoloLens deployment and create a strategy for ongoing device management.</br>This section is tailored to IT professionals managing devices with existing device management infrastructure.  |
 
 ## Quick reference by topic
 
 | Topic | Description |
 | --- | --- |
-| [What's new in HoloLens](hololens-release-notes.md) | Discover new features in the latest updates in the HoloLens release notes. |
-| [Install and manage applications on HoloLens](holographic-store-apps.md) | Install and manage important applications on HoloLens at scale. |
-| [Manage HoloLens updates](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
-| [Manage HoloLens users](hololens-multiple-users.md) | Multiple users can share a HoloLens device by using their Azure Active Directory accounts. |
+| [What's new in HoloLens](hololens-whats-new.md) | Discover new features in the latest updates via HoloLens release notes. |
+| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale. |
+| [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
+| [HoloLens user management](hololens-multiple-users.md) | Multiple users can share a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary. |
-| [Contact support](https://support.microsoft.com/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb) | Create a new support request for the business support team. |
+| [Contact Support](https://support.microsoft.com/supportforbusiness/productselection) | Create a new support request for the business support team. | 
 | [More support options](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in the enterprise. |
 
 ## Related resources
