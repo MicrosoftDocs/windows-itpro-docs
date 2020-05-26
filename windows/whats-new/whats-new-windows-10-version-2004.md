@@ -115,7 +115,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ### Windows Update for Business
 
-Windows Update for Business enhancements in this release include:
+[Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) enhancements in this release include:
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
