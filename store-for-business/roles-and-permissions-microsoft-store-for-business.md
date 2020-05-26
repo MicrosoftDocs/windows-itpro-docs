@@ -73,6 +73,8 @@ This table lists the roles and their permissions.
 | ------------| ------ | --------  | ------ |
 | Purchaser   | X      |   X       |      |
 | Basic purchaser |  X     |          | X      |
+>[!Note]
+    >Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions..](https://docs.microsoft.com/en-us/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/). 
 
 ## Assign roles
 **To assign roles to people**
