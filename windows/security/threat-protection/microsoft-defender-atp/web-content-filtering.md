@@ -26,14 +26,14 @@ ms.topic: article
 
 Web content filtering is part of [Web protection](web-protection-overview.md) in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic due to compliance regulations, bandwidth usage, or other concerns.
 
-You can configure policies across your machine groups to block certain categories, effectively preventing users within specified machine groups from accessing URLs within that category. If a category is not blocked, all your users will be able to access the URLs without disruption. However, web content filtering will continue to gather access statistics that you can use to understand web usage and inform future policy decisions. If an element on the page you’re viewing is making calls to a resource which is blocked, you will see a block notification.
+You can configure policies across your device groups to block certain categories, effectively preventing users within specified device groups from accessing URLs within that category. If a category is not blocked, all your users will be able to access the URLs without disruption. However, web content filtering will continue to gather access statistics that you can use to understand web usage and inform future policy decisions. If an element on the page you’re viewing is making calls to a resource which is blocked, you will see a block notification.
 
 Web content filtering is available on most major web browsers, with blocks performed by SmartScreen (Edge) and Network Protection (Internet Explorer, Chrome, Firefox, and all other browsers). See the prerequisites section for more information about browser support.
 
 To summarize the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
-- You can conveniently deploy varied policies to various sets of users using the machine groups defined in the [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - You can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
@@ -47,8 +47,8 @@ Before trying out this feature, make sure you have the following:
 
 - Windows 10 Enterprise E5 license
 - Access to Microsoft Defender Security Center portal
-- Machines running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update (for Network Protection on Internet Explorer, Edge, Chrome, or Firefox)
-- Machines running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking
+- Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update (for Network Protection on Internet Explorer, Edge, Chrome, or Firefox)
+- Devices running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking
 - A valid license with a partner data provider
 
 ## Data handling
@@ -99,9 +99,9 @@ From the left-hand navigation menu, select **Settings > General > Advanced Featu
 
 ### Configure web content filtering policies
 
-Web content filtering policies specify which site categories are blocked on which machine groups. To manage the policies, go to **Settings > Rules > Web content filtering**.
+Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings > Rules > Web content filtering**.
 
-Use the filter to locate policies that contain certain blocked categories or are applied to specific machine groups.
+Use the filter to locate policies that contain certain blocked categories or are applied to specific device groups.
 
 ### Create a policy
 
@@ -110,7 +110,7 @@ To add a new policy:
 1. Select **Add policy** on the **Web content filtering** page in **Settings**.
 2. Specify a name.
 3. Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
-4. Specify the policy scope. Select the machine groups to specify where to apply the policy. Only machines in the selected machine groups will be prevented from accessing websites in the selected categories.
+4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only machines in the selected machine groups will be prevented from accessing websites in the selected categories.
 5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected machines.
 
 >[!NOTE]

@@ -29,7 +29,7 @@ ms.topic: article
 
 ## APIs
 
-Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 See the following topics for related APIs:
 
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
@@ -39,7 +39,7 @@ See the following topics for related APIs:
 - [Software APIs](software.md)
 - [Vulnerability APIs](vulnerability.md)
 
-## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit
+## Use advanced hunting query to search for devices with High active alerts or critical CVE public exploit
 
 1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
 

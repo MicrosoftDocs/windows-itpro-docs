@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Security Center Security operations dashboard
-description: Use the dashboard to identify machines at risk, keep track of the status of the service, and see statistics and information about machines and alerts.
-keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
+description: Use the dashboard to identify devices at risk, keep track of the status of the service, and see statistics and information about devices and alerts.
+keywords: dashboard, alerts, new, in progress, resolved, risk, devices at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -29,10 +29,10 @@ The **Security operations dashboard** is where the endpoint detection and respon
 The dashboard displays a snapshot of:
 
 - Active alerts
-- Machines at risk
+- Devices at risk
 - Sensor health
 - Service health
-- Daily machines reporting
+- Daily devices reporting
 - Active automated investigations
 - Automated investigations statistics
 - Users at risk
@@ -41,9 +41,9 @@ The dashboard displays a snapshot of:
 
 ![Image of Security operations dashboard](images/atp-sec-ops-dashboard.png)
 
-You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
+You can explore and investigate alerts and devices to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
-From the **Security operations dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
+From the **Security operations dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a device. You can also drill down into granular events and low-level indicators.
 
 It also has clickable tiles that give visual cues on the overall health state of your organization. Each tile opens a detailed view of the corresponding overview.
 
@@ -60,26 +60,26 @@ Each row includes an alert severity category and a short description of the aler
 
 
 
-## Machines at risk
-This tile shows you a list of machines with the highest number of active alerts. The total number of alerts for each machine is shown in a circle next to the machine name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
+## Devices at risk
+This tile shows you a list of devices with the highest number of active alerts. The total number of alerts for each device is shown in a circle next to the device name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk-tile.png)
+![The Devices at risk tile shows a list of devices with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk-tile.png)
 
-Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines.md).
+Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
-You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Microsoft Defender Advanced Threat Protection Machines list](investigate-machines.md).
+You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
 ## Sensor health
-The **Sensor health** tile provides information on the individual machine’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
+The **Sensor health** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many devices require attention and helps you identify problematic devices.
 
 ![Sensor health tile](images/atp-tile-sensor-health.png)
 
-There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
-- **Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
-- **Inactive** - Machines that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
+There are two status indicators that provide information on the number of devices that are not reporting properly to the service:
+- **Misconfigured** – These devices might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
+- **Inactive** - Devices that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
 
 
-When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status.md) and [Investigate machines](investigate-machines.md).
+When you click any of the groups, you’ll be directed to devices list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status.md) and [Investigate devices](investigate-machines.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.
@@ -89,15 +89,15 @@ The **Service health** tile informs you if the service is active or if there are
 For more information on the service health, see [Check the Microsoft Defender ATP service health](service-status.md).
 
 
-## Daily machines reporting
-The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
+## Daily devices reporting
+The **Daily devices reporting** tile shows a bar graph that represents the number of devices reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of devices reporting in each day.
 
-![Image of daily machines reporting tile](images/atp-daily-machines-reporting.png)
+![Image of daily devices reporting tile](images/atp-daily-machines-reporting.png)
 
 
 
 ## Active automated investigations
-You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Pending action**, **Waiting for machine**, and **Running**.
+You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Pending action**, **Waiting for device**, and **Running**.
 
 ![Inmage of active automated investigations](images/atp-active-investigations-tile.png)
 
