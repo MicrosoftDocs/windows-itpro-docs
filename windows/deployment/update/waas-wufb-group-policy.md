@@ -122,7 +122,7 @@ If you need a device to stay on a version beyond the point when deferrals on the
 
 #### I want to manage when devices download, install, and restart after updates
 
-We recommended that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
+We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
 
 For more granular control, you can set the maximum period of active hours the user can set with **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify active hours range for auto restart**.
 

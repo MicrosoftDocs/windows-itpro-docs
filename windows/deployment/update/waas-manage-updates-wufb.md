@@ -19,7 +19,7 @@ ms.topic: article
 - Windows 10
 
 
-Windows Update for Business is a free service that is available for all premium versions {what does this mean? Windows 10, version 1903 is a *version*; Windows Pro is an *edition*} including Windows 10 Pro, Enterprise, Pro for Workstation, and Education editions. 
+Windows Update for Business is a free service that is available for all premium editions including Windows 10 Pro, Enterprise, Pro for Workstation, and Education editions. 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -61,11 +61,10 @@ You can defer or pause the installation of updates for a set period of time.
 
 The branch readiness level enables administrators to specify which channel of feature updates they want to receive. Today there are branch readiness level options for both pre-release and released updates:
 
-- Windows Insider Program for Business (for pre-release updates) 
-    - Windows Insider Fast
-    - Windows Insider Slow
-    - Windows Insider Release Preview
-- Semi-annual Channel (for released updates)
+- Windows Insider Fast
+- Windows Insider Slow
+- Windows Insider Release Preview
+- Semi-annual Channel
 
 Prior to Windows 10, version 1903, there are two channels for released updates: Semi-annual Channel and Semi-annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-annual Channel. All deferral days are calculated against a release’s Semi-annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
@@ -108,7 +107,7 @@ Windows Update for Business provides controls to help meet your organization’s
 
 #### Recommended experience settings
 
-Features like the smart busy check (which ensure updates don't happen when a user is signed in) and active hours help provide the best experience for end users while keeping devices more secure and up to date. Follow these steps:
+Features like the smart busy check (which ensure updates don't happen when a user is signed in) and active hours help provide the best experience for end users while keeping devices more secure and up to date. Follow these steps to take advantage of these features:
 
 1.	Automatically download, install and restart (default if no restart policies are set up or enabled)
 2.	Use the default notifications 
