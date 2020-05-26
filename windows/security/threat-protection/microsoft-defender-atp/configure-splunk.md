@@ -54,8 +54,10 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
 
 3. Select **Windows Defender ATP alerts** under **Local inputs**.
 
-   NOTE:
-   This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
+   >[!NOTE]
+   > - This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
+   > - For Splunk Cloud, use [Microsoft Defender ATP Add-on for Splunk](https://splunkbase.splunk.com/app/4959/).
+
 
 4. Click **New**.
 
@@ -78,7 +80,7 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
    <td>URL to authenticate the azure app (Default : https://login.microsoftonline.com)</td>
    </tr>
    <td>Endpoint</td>
-   <td>Depending on the location of your datacenter, select any of the following URL: </br></br> <strong>For EU</strong>:  <code>https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts</code><br></br><strong>For US:</strong><code>https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</code> <br><br> <strong>For UK:</strong><code>https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts</code>
+   <td>Depending on the location of your datacenter, select any of the following URL: </br></br> <strong>For EU</strong>:  <code>https://wdatp-alertexporter-eu.securitycenter.windows.com</code><br></br><strong>For US:</strong><code>https://wdatp-alertexporter-us.securitycenter.windows.com</code> <br><br> <strong>For UK:</strong><code>https://wdatp-alertexporter-uk.securitycenter.windows.com</code>
    </tr>
    <tr>
    <td>Tenant ID</td>

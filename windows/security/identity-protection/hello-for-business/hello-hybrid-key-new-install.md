@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Key Trust New Installation
-description: Learn how to perform a hybrid key trust deployment of Windows Hello for Business, for systems with no previous installations.
+description: Learn how to configure a hybrid key trust deployment of Windows Hello for Business, for systems with no previous installations.
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -122,11 +122,9 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 > 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
-#### Azure MFA Provider 
-If your organization uses Azure MFA on a per-consumption model (no licenses), then review the [Create a Multifactor Authentication Provider](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider) section to create an Azure MFA Authentication provider and associate it with your Azure tenant. 
 
 #### Configure Azure MFA Settings
-Once you have created your Azure MFA authentication provider and associated it with an Azure tenant, you need to configure the multi-factor authentication settings.  Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
+Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
 #### Azure MFA User States
 After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.

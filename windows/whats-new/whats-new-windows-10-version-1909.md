@@ -72,13 +72,13 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 
 [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) (WVD) is now generally available globally!
 
-Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Office 365 ProPlus, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
+Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
 
 ## Deployment
 
 #### Microsoft Endpoint Manager
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now are [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
 
 ### Windows 10 Pro and Enterprise in S mode
 

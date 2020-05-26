@@ -66,7 +66,7 @@ Threat & Vulnerability Management helps customers prioritize and focus on those 
 
 Microsoft Defender ATP's Threat & Vulnerability Management allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
 
-- Remediation requests to IT. Through Microsoft Defender ATP's integration with Microsoft Intune and Microsoft Endpoint Configuration Manager, security administrators can create a remediation task in Microsoft Intune from the Security recommendation pages. We plan to expand this capability to other IT security management platforms. 
+- Remediation requests to IT. Through Microsoft Defender ATP's integration with Microsoft Intune and Microsoft Endpoint Configuration Manager, security administrators can create a remediation task in Microsoft Intune from the Security recommendation pages. We plan to expand this capability to other IT security management platforms.
 - Alternate mitigations. Threat & Vulnerability Management provides insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
 - Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
 
@@ -84,10 +84,10 @@ Ensure that your machines:
 
 > Release | Security update KB number and link
 > :---|:---
-> RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> RS4 customers| [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-> RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-> 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> Windows 10 Version 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+> Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the machine page
@@ -96,7 +96,7 @@ Ensure that your machines:
 ## Related topics
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -104,10 +104,6 @@ Ensure that your machines:
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
-- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
-- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
-- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
-- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [BLOG: Microsoft's Threat & Vulnerability Management now helps thousands of customers to discover, prioritize, and remediate vulnerabilities in real time](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

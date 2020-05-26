@@ -4,12 +4,11 @@ description: How to use SDT to help users in your organization run the tool to i
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 10/31/2019
 ms.reviewer: hachidan
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ---

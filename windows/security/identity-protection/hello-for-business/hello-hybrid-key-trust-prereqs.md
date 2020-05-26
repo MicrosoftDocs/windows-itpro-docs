@@ -66,7 +66,7 @@ Key trust deployments do not need client issued certificates for on-premises aut
 The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party enterprise certification authority. The detailed requirements for the Domain Controller certificate are shown below.
 
 * The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL.
-* Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name).
+* The certificate Subject section should contain the directory path of the server object (the distinguished name).
 * The certificate Key Usage section must contain Digital Signature and Key Encipherment.
 * Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].
 * The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2), Server Authentication (1.3.6.1.5.5.7.3.1), and KDC Authentication (1.3.6.1.5.2.3.5).
@@ -102,8 +102,8 @@ Organizations using older directory synchronization technology, such as DirSync 
 <br>
 
 
-## Federation with Azure ##
-You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) or [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
+## Federation with Azure
+You can deploy Windows Hello for Business key trust in non-federated and federated environments.  For non-federated environments, key trust deployments work in environments that have deployed [Password Synchronization with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).  For federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) 2012 R2 or later. 
 
 > [!div class="checklist"]
 > * Non-federated environments

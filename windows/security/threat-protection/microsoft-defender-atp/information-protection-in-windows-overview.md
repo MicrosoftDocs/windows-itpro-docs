@@ -2,7 +2,7 @@
 title: Information protection in Windows overview
 ms.reviewer:
 description: Learn about how information protection works in Windows to identify and protect sensitive information
-keywords: information, protection, dlp, wip, data, loss, prevention, protect
+keywords: information, protection, dlp, data, loss, prevention, protect
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,6 @@ ms.topic: conceptual
 
 Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace.
 
-Microsoft Defender ATP is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices. This solution is delivered and managed as part of the unified Microsoft 365 information protection suite.
 
 >[!TIP]
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
@@ -36,7 +35,7 @@ Microsoft Defender ATP applies the following methods to discover, classify, and 
 
 - **Data discovery** - Identify sensitive data on Windows devices at risk
 - **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
-- **Data protection** - Windows Information Protection (WIP) as outcome of Azure Information Protection label
+
 
 ## Data discovery and data classification
 
@@ -95,37 +94,5 @@ InformationProtectionLogs_CL
 - Enable Azure Information Protection integration in Microsoft Defender Security Center:
     - Go to **Settings** in Microsoft Defender Security Center, click on **Advanced Settings** under **General**.
 
-## Data protection
 
-### Endpoint data loss prevention
 
-For data to be protected, they must first be identified through labels.
-
-Sensitivity labels are created in Office 365 Security & Compliance Center. Microsoft Defender ATP then uses the labels to identify endpoints that need Windows Information Protection (WIP) applied on them.
-
-When you create sensitivity labels, you can set the information protection functionalities that will be applied on the file. The setting that applies to Microsoft Defender ATP is the Endpoint data loss prevention.
-
-For the endpoint data loss prevention, you'll need to turn on the Endpoint Data loss prevention and select Enable Windows end point protection (DLP for devices).
-
-![Image of Office 365 Security and Compliance sensitivity label](images/office-scc-label.png)
-
-Once, the policy is set and published, Microsoft Defender ATP automatically enables WIP for labeled files. When a labeled file is created or modified on a Windows device, Microsoft Defender ATP automatically detects it and enables WIP on that file if its label corresponds with Office Security and Compliance (SCC) policy.
-
-This functionality expands the coverage of WIP to protect files based on their label, regardless of their origin.
-
-For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
-
-## Auto labeling
-
-Auto labeling is another way to protect data and can also be configured in Office 365 Security & Compliance Center. Windows automatically detects when an Office file, PDF, CSV or TXT files are being created on a device and inspects it based on context to identify sensitive information types.
-
-Those information types are evaluated against the auto-labeling policy. If a match is found, it is processed in the same way as if the file was labeled; the file is protected with Endpoint data loss prevention.
-
-> [!NOTE]
-> Auto-labeling is supported in Office apps only when the Azure Information Protection unified labeling client is installed. When sensitive content is detected in email or documents matching the conditions you choose, a label can automatically be applied or a message can be shown to users recommending they apply it themselves.
-
-For more information, see [Configure information protection in Windows](information-protection-in-windows-config.md).
-
-## Related topics
-
-- [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels)
