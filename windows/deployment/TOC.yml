@@ -507,7 +507,7 @@
                 - name: Use the Volume Activation Management Tool 
                   href: volume-activation/use-the-volume-activation-management-tool-client.md
                 - name: "Appendix: Information sent to Microsoft during activation "
-                  href: file1.mdvolume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+                  href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
 
         - name: Install fonts in Windows 10
           href: windows-10-missing-fonts.md
