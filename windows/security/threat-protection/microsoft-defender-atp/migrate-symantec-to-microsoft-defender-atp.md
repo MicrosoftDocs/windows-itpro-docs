@@ -69,3 +69,21 @@ Add Symantec and your other security solutions to the Microsoft Defender ATP EDR
 
 ## Step 10: Onboard devices to Microsoft Defender ATP
 
+You can choose from several methods to onboard devices to Microsoft Defender ATP. 
+
+## Post-setup management of Microsoft Defender ATP
+
+After you have set up Microsoft Defender ATP, you can choose from several methods to manage your threat protection features, as listed in the following table:
+
+|Method | Task |
+|---|---|
+|Intune |[Configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus) | 
+| |Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |
+| |Manage device restrictions for Microsoft Defender Antivirus |
+| |Manage Microsoft Defender Antivirus exclusions |
+
+## Related articles
+
+[Microsoft Defender ATP deployment guide](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
+
+
