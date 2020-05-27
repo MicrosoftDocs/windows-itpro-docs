@@ -30,9 +30,9 @@ Windows Defender Antivirus uses multiple detection and prevention technologies t
 
 You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
-See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-delivered protection.
+See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-delivered protection.
 
-There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-delivered protection service. See [Configure and validate network connections](configure-network-connections-windows-defender-antivirus.md) for more details.
+There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-delivered protection service. See [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md) for more details.
 
 > [!NOTE]
 > In Windows 10, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
@@ -54,7 +54,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
         > The **Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
         > [!WARNING]
-        > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
+        > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
@@ -85,7 +85,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
         > The **Send safe samples** (1) option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
         > [!WARNING]
-        > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
+        > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 7. Click **OK**.
 
@@ -98,13 +98,13 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 >[!NOTE]
 > You can also set **-SubmitSamplesConsent** to `SendSafeSamples` (the default setting), `NeverSend`, or `AlwaysPrompt`. The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
 
 >[!WARNING]
-> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
+> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
 ## Use Windows Management Instruction (WMI) to enable cloud-delivered protection
 
@@ -137,11 +137,11 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
-- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md)
-- [Configure block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
+- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+- [Configure block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
 - [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
-- [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

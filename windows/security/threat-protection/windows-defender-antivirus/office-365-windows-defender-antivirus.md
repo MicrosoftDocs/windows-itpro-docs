@@ -28,7 +28,7 @@ manager: dansimp
 
 You might already know that:
 
-- **Windows Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Windows Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Windows Defender Antivirus is your next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10). 
+- **Windows Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Windows Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Windows Defender Antivirus is your next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). 
 
 - **Office 365 includes antiphishing, antispam, and antimalware protection**. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices. This is true for home and business users. And if you're a business user, and your organization is using Office 365 E5, you get even more protection through Office 365 Advanced Threat Protection. [Protect against threats with Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -44,7 +44,7 @@ Read the following sections to learn more.
 
 ## Ransomware protection and recovery
 
-When you save your files to [OneDrive](https://docs.microsoft.com/onedrive), and [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) detects a ransomware threat on your device, the following things occur:
+When you save your files to [OneDrive](https://docs.microsoft.com/onedrive), and [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) detects a ransomware threat on your device, the following things occur:
 
 1. **You are told about the threat**. (If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (ATP), your security operations team is notified, too.)
 

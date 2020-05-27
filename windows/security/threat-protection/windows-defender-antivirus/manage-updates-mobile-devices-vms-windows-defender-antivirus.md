@@ -31,9 +31,9 @@ There are two settings that are particularly useful for these devices:
 - Prevent Security intelligence updates when running on battery power
 
 The following topics may also be useful in these situations:
-- [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)
+- [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
@@ -91,5 +91,5 @@ You can configure Windows Defender Antivirus to only download protection updates
 
 ## Related articles
 
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Update and manage Windows Defender Antivirus in Windows 10](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Update and manage Windows Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

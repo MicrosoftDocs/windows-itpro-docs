@@ -73,7 +73,7 @@ The potentially unwanted application (PUA) protection feature in Windows Defende
 
 Windows Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
-When a PUA file is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
+When a PUA file is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
 The notification appears in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
@@ -90,7 +90,7 @@ PUA audit mode is useful if your company is conducting an internal software secu
 
 ##### Use Intune to configure PUA protection
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
 ##### Use Configuration Manager to configure PUA protection
 
@@ -142,7 +142,7 @@ Set-MpPreference -PUAProtection disable
 ```
 Setting the value for this cmdlet to `Disabled` will turn the feature off if it has been enabled.
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 #### View PUA events
 
@@ -150,7 +150,7 @@ PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoi
 
 You can turn on email notifications to receive mail about PUA detections.
 
-See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
+See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 #### Allow-listing apps
 
@@ -158,5 +158,5 @@ Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA
 
 ## Related articles
 
-- [Next-generation protection](windows-defender-antivirus-in-windows-10.md)
-- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
+- [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)
+- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)

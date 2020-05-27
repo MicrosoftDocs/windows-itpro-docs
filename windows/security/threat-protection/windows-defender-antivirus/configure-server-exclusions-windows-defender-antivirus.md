@@ -28,8 +28,8 @@ Windows Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls
 > Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
 
 In addition to server role-defined automatic exclusions, you can add or remove custom exclusions. To do that, refer to these articles:
-- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## A few points to keep in mind
 
@@ -48,7 +48,7 @@ In Windows Server 2016 and 2019, the predefined exclusions delivered by Security
 > [!WARNING]
 > Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles.
 
-Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-windows-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
+Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
@@ -70,7 +70,7 @@ Use the following cmdlets:
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-[Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md).
+[Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
 [Use PowerShell with Windows Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
@@ -168,7 +168,7 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 - The Distributed File System Replication (DFSR) database and working folders. These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\Currentcontrolset\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus#opt-out-of-automatic-exclusions). 
+  > For custom locations, see [Opt out of automatic exclusions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus#opt-out-of-automatic-exclusions). 
 
   - *%systemdrive%*\System Volume Information\DFSR\\$db_normal$
 
@@ -400,12 +400,12 @@ This section lists the folder exclusions that are delivered automatically when y
 
 ## Related articles
 
-- [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 
-- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

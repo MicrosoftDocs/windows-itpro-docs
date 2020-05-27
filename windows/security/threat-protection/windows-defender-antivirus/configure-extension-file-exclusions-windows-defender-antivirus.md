@@ -53,9 +53,9 @@ Exclusion lists have the following characteristics:
 >
 >Folders that are reparse points that are created after the Windows Defender Antivirus service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
 
-To exclude files opened by a specific process, see [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md).
+To exclude files opened by a specific process, see [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md).
 
-The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [real-time protection](configure-real-time-protection-windows-defender-antivirus.md).
+The exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 >[!IMPORTANT]
 >Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
@@ -64,7 +64,7 @@ The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defen
 
 By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence when there are conflicts.
 
-You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
+You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
 
 ## Configure the list of exclusions based on folder name or file extension
 
@@ -72,7 +72,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 See the following articles:
 - [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure)
-- [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus)
+- [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
@@ -146,7 +146,7 @@ For example, the following code snippet would cause Windows Defender AV scans to
 Add-MpPreference -ExclusionExtension ".test"
 ```
 
-For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
+For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
 
@@ -220,7 +220,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 ### Validate the exclusion list by using MpCmdRun
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
 ```DOS
 MpCmdRun.exe -CheckExclusion -path <path>
@@ -241,7 +241,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 ![PowerShell output for Get-MpPreference showing the exclusion list alongside other preferences](images/defender/wdav-powershell-get-exclusions-all.png)
 
-For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
+For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -257,7 +257,7 @@ In the following example, the list is split into new lines for each use of the `
 
 ![PowerShell output showing only the entries in the exclusion list](images/defender/wdav-powershell-get-exclusions-variable.png)
 
-For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
+For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 <a id="validate"></a>
 
@@ -290,6 +290,6 @@ You can also copy the string into a blank text file and attempt to save it with 
 
 ## Related topics
 
-- [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-- [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

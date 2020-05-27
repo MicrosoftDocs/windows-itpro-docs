@@ -24,13 +24,13 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-When Windows Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
+When Windows Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud service](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md).
 
-The default period that the file will be [blocked](configure-block-at-first-sight-windows-defender-antivirus.md) is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Windows Defender Antivirus cloud service.
+The default period that the file will be [blocked](configure-block-at-first-sight-microsoft-defender-antivirus.md) is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Windows Defender Antivirus cloud service.
 
 ## Prerequisites to use the extended cloud block timeout
 
-[Block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md) and its prerequisites must be enabled before you can specify an extended timeout period.
+[Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) and its prerequisites must be enabled before you can specify an extended timeout period.
 
 ## Specify the extended timeout period
 
@@ -48,7 +48,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Use next-generation antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-- [Configure block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Use next-generation antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
+- [Configure block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)

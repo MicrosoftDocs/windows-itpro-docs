@@ -55,18 +55,18 @@ Threats | Specify threats upon which default action should not be taken when det
 > [!IMPORTANT]
 > Windows Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
 > </p>
-> If you are certain Windows Defender Antivirus quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Windows Defender Antivirus](restore-quarantined-files-windows-defender-antivirus.md).
+> If you are certain Windows Defender Antivirus quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Windows Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md).
 > </p>
-> To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md).
+> To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
 
-Also see [Configure remediation-required scheduled full Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md#remed) for more remediation-related settings.
+Also see [Configure remediation-required scheduled full Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
 ## Related topics
 
-- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
-- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
-- [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-- [Configure end-user Windows Defender Antivirus interaction](configure-end-user-interaction-windows-defender-antivirus.md)
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
+- [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
+- [Configure end-user Windows Defender Antivirus interaction](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

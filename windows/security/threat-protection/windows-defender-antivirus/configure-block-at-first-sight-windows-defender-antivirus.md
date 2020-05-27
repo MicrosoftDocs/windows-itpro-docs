@@ -24,7 +24,7 @@ ms.custom: nextgen
 
 Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are also enabled. In most cases, these prerequisite settings are also enabled by default, so the feature is running without any intervention. 
 
-You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
+You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 >[!TIP]
 >Visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
@@ -65,11 +65,11 @@ Block at first sight requires a number of settings to be configured correctly or
    ![Intune config](images/defender/intune-block-at-first-sight.png)
 
    > [!WARNING]
-   > Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus).
+   > Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus).
 
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
-For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
+For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ### Enable block at first sight with Microsoft Endpoint Configuration Manager
 
@@ -152,7 +152,7 @@ Block at first sight is automatically enabled as long as **Cloud-delivered prote
 
 ### Validate block at first sight is working
 
-You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Disable block at first sight
 
@@ -176,5 +176,5 @@ You may choose to disable block at first sight if you want to retain the prerequ
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)

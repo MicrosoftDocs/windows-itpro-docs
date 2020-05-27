@@ -27,7 +27,7 @@ manager: dansimp
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.
 
-It can only be enabled in certain situations. For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md).
+It can only be enabled in certain situations. For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Windows Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 **Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.** This feature only uses a limited subset of the Windows Defender Antivirus capabilities to detect malware, and will not be able to detect most malware and potentially unwanted software. Also, management and reporting capabilities will be limited. Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.
 
@@ -53,5 +53,5 @@ Sliding the switch to **On** will show the standard Windows Defender AV options 
 
 ## Related articles
 
-- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

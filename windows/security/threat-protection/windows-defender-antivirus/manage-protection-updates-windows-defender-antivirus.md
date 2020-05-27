@@ -29,7 +29,7 @@ Keeping your antivirus protection up to date is critical. There are two componen
 - *Where* the updates are downloaded from; and 
 - *When* updates are downloaded and applied. 
 
-This article describes how to specify from where updates should be downloaded (this is also known as the fallback order). See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
+This article describes how to specify from where updates should be downloaded (this is also known as the fallback order). See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
@@ -59,7 +59,7 @@ To ensure the best level of protection, Microsoft Update allows for rapid releas
 
 > [!IMPORTANT]
 > If you have set [Microsoft Malware Protection Center Security intelligence page](https://www.microsoft.com/security/portal/definitions/adl.aspx) (MMPC) updates as a fallback source after Windows Server Update Service or Microsoft Update, updates are only downloaded from security intelligence updates when the current update is considered out-of-date. (By default, this is 14 consecutive days of not being able to apply updates from the Windows Server Update Service or Microsoft Update services).
-> You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
+> You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
 > Starting Monday, October 21, 2019, security intelligence updates will be SHA-2 signed exclusively. Devices must be updated to support SHA-2 in order to get the latest security intelligence updates. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
@@ -68,9 +68,9 @@ Each source has typical scenarios that depend on how your network is configured,
 |---|---|
 |Windows Server Update Service | You are using Windows Server Update Service to manage updates for your network.|
 |Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use Windows Server Update Service to manage your updates.|
-|File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
+|File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
 |Microsoft Endpoint Configuration Manager | You are using Microsoft Endpoint Configuration Manager to update your endpoints.|
-|Security intelligence updates for Windows Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC) |[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|Security intelligence updates for Windows Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC) |[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
 
@@ -123,7 +123,7 @@ Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\
 See the following articles for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
-- [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
+- [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index)
 
 ## Use Windows Management Instruction (WMI) to manage the update location
@@ -146,17 +146,17 @@ See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.
 
 This article describes how to configure and manage updates for Windows Defender Antivirus. However, third-party vendors can be used to perform these tasks. 
 
-For example, suppose that Contoso has hired Fabrikam to manage their security solution, which includes Windows Defender Antivirus. Fabrikam typically uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-wmi-windows-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus) to deploy patches and updates. 
+For example, suppose that Contoso has hired Fabrikam to manage their security solution, which includes Windows Defender Antivirus. Fabrikam typically uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) to deploy patches and updates. 
 
 > [!NOTE]
 > Microsoft does not test third-party solutions for managing Windows Defender Antivirus.
 
 ## Related articles
 
-- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-- [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-- [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
