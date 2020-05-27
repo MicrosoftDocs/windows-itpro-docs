@@ -25,7 +25,7 @@ manager: dansimp
 
 **Use Microsoft Intune to configure scanning options**
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
 <a id="ref1"></a>
 
@@ -50,7 +50,7 @@ Description | Location and setting | Default setting (if not configured) | Power
 Email scanning See [Email scanning limitations](#ref1)| Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
 Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | Not available
 Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`
- Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
+ Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
 Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles`
 Scan packed executables | Scan > Scan packed executables | Enabled | Not available
 Scan removable drives during full scans only | Scan > Scan removable drives | Disabled | `-DisableRemovableDriveScanning`
@@ -64,7 +64,7 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
 
 ## Use PowerShell to configure scanning options
 
-See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ## Use WMI to configure scanning options
 
@@ -87,7 +87,7 @@ If Windows Defender Antivirus detects a threat inside an email, it will show you
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-windows-defender-antivirus.md)
-- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
+- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

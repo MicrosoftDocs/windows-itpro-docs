@@ -65,8 +65,8 @@ The following table summarizes exclusion types, how they're defined, and what ha
 |**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specified process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
 
 To learn more, see: 
-- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus) 
-- [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus)
+- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
+- [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus)
 
 ## Related articles
 

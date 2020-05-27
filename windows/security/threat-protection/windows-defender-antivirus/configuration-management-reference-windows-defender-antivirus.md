@@ -38,8 +38,8 @@ The articles in this section provide further information, links, and resources f
 
 Article | Description
 ---|---
-[Manage Windows Defender Antivirus with Microsoft Intune and Microsoft Endpoint Configuration Manager](use-intune-config-manager-windows-defender-antivirus.md)|Information about using Intune and Configuration Manager to deploy, manage, report, and configure Windows Defender Antivirus
-[Manage Windows Defender Antivirus with Group Policy settings](use-group-policy-windows-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates
-[Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-antivirus.md)|Instructions for using PowerShell cmdlets to manage Windows Defender Antivirus, plus links to documentation for all cmdlets and allowed parameters
-[Manage Windows Defender Antivirus with Windows Management Instrumentation (WMI)](use-wmi-windows-defender-antivirus.md)| Instructions for using WMI to manage Windows Defender Antivirus, plus links to documentation for the WMIv2 APIs (including all classes, methods, and properties)
-[Manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool](command-line-arguments-windows-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Windows Defender Antivirus
+[Manage Windows Defender Antivirus with Microsoft Intune and Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Information about using Intune and Configuration Manager to deploy, manage, report, and configure Windows Defender Antivirus
+[Manage Windows Defender Antivirus with Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates
+[Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instructions for using PowerShell cmdlets to manage Windows Defender Antivirus, plus links to documentation for all cmdlets and allowed parameters
+[Manage Windows Defender Antivirus with Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)| Instructions for using WMI to manage Windows Defender Antivirus, plus links to documentation for the WMIv2 APIs (including all classes, methods, and properties)
+[Manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool](command-line-arguments-microsoft-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Windows Defender Antivirus

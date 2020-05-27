@@ -234,7 +234,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 needs on how Antivirus is configured.
 
   
-    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
     For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
