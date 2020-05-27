@@ -47,7 +47,7 @@ Use the following process to make the switch from Symantec to Microsoft Defender
 
 ## Step 1: Get Microsoft Defender ATP
 
-To get started, you must have Microsoft Defender ATP. [Start a trial today!](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?rtc=1)
+To get started, you must have Microsoft Defender ATP. [Learn more, and start a trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). 
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
 
