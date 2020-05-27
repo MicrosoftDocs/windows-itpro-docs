@@ -38,7 +38,7 @@ To enable and configure always-on protection:
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 ![GPEdit taskbar search result](images/gpedit-search.png)
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
-![Windows Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
+![Windows Defender Antivirus](images/gpedit-microsoft-defender-antivirus.png)
 3. Configure the Windows Defender Antivirus antimalware service policy settings. To do this:  
     1. In the **Windows Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
@@ -75,7 +75,7 @@ To enable and configure always-on protection:
 
 5. Configure the Windows Defender Antivirus scanning policy setting. To do this:  
     1. From the **Windows Defender Antivirus** tree on left pane, click **Scan**.
-    ![Windows Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
+    ![Windows Defender Antivirus Scan options](images/gpedit-microsoft-defender-antivirus-scan.png)
 
     2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
 
@@ -110,5 +110,5 @@ To disable real-time protection in Group policy:
 
 ## Related articles
 
-- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

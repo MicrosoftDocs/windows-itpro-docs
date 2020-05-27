@@ -32,7 +32,7 @@ You can schedule updates for your endpoints by:
 - Specifying the interval to check for protection updates
 - Specifying the time to check for protection updates
 
-You can also randomize the times when each endpoint checks and downloads protection updates. See the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic for more information.
+You can also randomize the times when each endpoint checks and downloads protection updates. See the [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) topic for more information.
 
 ## Use Configuration Manager to schedule protection updates
 
@@ -76,7 +76,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ## Use Windows Management Instruction (WMI) to schedule protection updates
 
@@ -94,12 +94,12 @@ See the following for more information and allowed parameters:
 
 ## Related articles
 
-- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
-- [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
 
 

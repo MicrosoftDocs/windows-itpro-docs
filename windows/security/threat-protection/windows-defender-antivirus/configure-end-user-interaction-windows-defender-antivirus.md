@@ -31,6 +31,6 @@ This includes whether they see the Windows Defender Antivirus interface, what no
 
 Topic | Description 
 ---|---
-[Configure notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md) | Configure and customize additional notifications, customized text for notifications, and notifications about reboots for remediation
-[Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md) | Hide the user interface from users
-[Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) | Prevent (or allow) users from overriding policy settings on their individual endpoints
+[Configure notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md) | Configure and customize additional notifications, customized text for notifications, and notifications about reboots for remediation
+[Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) | Hide the user interface from users
+[Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) | Prevent (or allow) users from overriding policy settings on their individual endpoints

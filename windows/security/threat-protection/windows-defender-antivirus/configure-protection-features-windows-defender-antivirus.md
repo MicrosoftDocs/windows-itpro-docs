@@ -33,11 +33,11 @@ You can configure how Windows Defender Antivirus uses these methods with Group P
 
 This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.
 
-See [Use next-gen Windows Defender Antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for how to enable and configure Windows Defender Antivirus cloud-delivered protection.
+See [Use next-gen Windows Defender Antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for how to enable and configure Windows Defender Antivirus cloud-delivered protection.
 
 ## In this section
 
  Topic | Description
 ---|---
-[Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-windows-defender-antivirus.md) | Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps
-[Enable and configure Windows Defender Antivirus protection capabilities](configure-real-time-protection-windows-defender-antivirus.md) | Enable and configure real-time protection, heuristics, and other always-on Windows Defender Antivirus monitoring features
+[Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps
+[Enable and configure Windows Defender Antivirus protection capabilities](configure-real-time-protection-microsoft-defender-antivirus.md) | Enable and configure real-time protection, heuristics, and other always-on Windows Defender Antivirus monitoring features

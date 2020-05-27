@@ -46,9 +46,9 @@ You can also download a PowerShell that will enable all the settings described i
 > [!IMPORTANT]
 > The guide is currently intended for single-machine evaluation of Windows Defender Antivirus. Enabling all of the settings in this guide may not be suitable for real-world deployment.
 >
-> For the latest recommendations for real-world deployment and monitoring of Windows Defender Antivirus across a network, see [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md).
+> For the latest recommendations for real-world deployment and monitoring of Windows Defender Antivirus across a network, see [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md).
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
