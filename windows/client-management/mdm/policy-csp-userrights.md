@@ -53,17 +53,17 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
  
 - Grant an user right to multiple groups (Administrators, Authenticated Users) via SID
    ```
-   <Data>*S-1-5-32-544&#61440;*S-1-5-11</Data>
+   <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
    ```
 
 - Grant an user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings
    ```
-   <Data>*S-1-5-32-544&#61440;Authenticated Users</Data>
+   <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
    ```
  
 - Grant an user right to multiple groups (Authenticated Users, Administrators) via strings
    ```
-   <Data>Authenticated Users&#61440;Administrators</Data>
+   <Data>Authenticated Users&#xF000;Administrators</Data>
    ```
 
 - Empty input indicates that there are no users configured to have that user right
@@ -1259,6 +1259,11 @@ This user right determines which accounts can use a process with Write Property 
 GP Info:  
 -   GP English name: *Increase scheduling priority*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+
+> [!Warning]  
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
+>  
+> On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 
 <!--/DbMapped-->
 <!--/Policy-->

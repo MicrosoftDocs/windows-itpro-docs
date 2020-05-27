@@ -1,6 +1,6 @@
 ---
 title: Windows security baselines
-description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server, and Office 365 ProPlus.
+description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server, and Microsoft 365 Apps for enterprise.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.reviewer:
 
 -   Windows 10
 -   Windows Server 
--   Office 365 ProPlus 
+-   Microsoft 365 Apps for enterprise 
 
 ## Using security baselines in your organization 
 
@@ -64,7 +64,7 @@ The security baselines are included in the [Security Compliance Toolkit (SCT)](s
 
 ## Community
 
-[![Microsoft Security Guidance Blog](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
+[![Microsoft Security Guidance Blog](images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bd-p/Security-Baselines) 
 
 ## Related Videos
 
@@ -73,9 +73,9 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
--   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
--   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
--   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
--   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
--   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+- [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
+- [Configuration Management for Nano Server](https://docs.microsoft.com/archive/blogs/grouppolicy/configuration-management-on-servers/)
+- [Microsoft Security Guidance Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
+- [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
+- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 

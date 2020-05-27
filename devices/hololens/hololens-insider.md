@@ -11,9 +11,9 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/6/2020
+ms.date: 4/21/2020
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 appliesto:
 - HoloLens 2
 ---
@@ -34,6 +34,9 @@ Select **Confirm -> Restart Now** to finish up. After your device has rebooted, 
 
 If you no longer want to receive Insider builds of Windows Holographic, you can opt out when your HoloLens is running a production build, or you can [recover your device](hololens-recovery.md) using the Advanced Recovery Companion to recover your device to a non-Insider version of Windows Holographic.
 
+> [!CAUTION]
+> There is a known issue in which users who un-enroll from Insider Preview builds after manually reinstalling a fresh preview build would experience a blue screen. Afterwards they must manually recover their device. For full details on if you would be impacted or not, please view more on this [Known Issue](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
+
 To verify that your HoloLens is running a production build:
 
 1. Go to **Settings > System > About**, and find the build number.
@@ -43,6 +46,8 @@ To opt out of Insider builds:
 
 1. On a HoloLens running a production build, go to **Settings > Update & Security > Windows Insider Program**, and select **Stop Insider builds**.
 1. Follow the instructions to opt out your device.
+
+
 
 ## Provide feedback and report issues
 
@@ -58,59 +63,9 @@ You are welcome and encouraged to try developing your applications using Insider
 
 ## Windows Insider Release Notes
 
-HoloLens 2 Windows Insider builds are full of new features and improvements.  Sign up for Windows Insider Fast or Slow flights to test them out!
-Here's a quick summary of what's new:
+As of our [Windows Holographic May 2020 Update](hololens-release-notes.md) release all of our release preview feautres are now generally avalible! Make sure to [update your HoloLens](hololens-update-hololens.md) to get all the latest features.  
 
-- Support for FIDO2 Security Keys to enable secure and easy authentication for shared devices
-- Seamlessly apply a provisioning package from a USB drive to your HoloLens
-- Use a provisioning packages to enroll your HoloLens to your Mobile Device Management system
-- Use Windows AutoPilot to set up and pre-configure new devices, quickly getting them ready for productive use.  Send a note to hlappreview@microsoft.com to join the preview.
-- Dark Mode - HoloLens customers can now choose the default mode for apps that support both color schemes! Based on customer feedback, with this update we are setting the default app mode to "dark," but you can easily change this setting at any time.
-- Support for additional system voice commands
-- Hand Tracking improvements to reduce the tendency to close the index finger when pointing. This should make button pressing and 2D slate usage feel more accurate
-- Performance and stability improvements across the product
-- More information in settings on HoloLens about the policy pushed to the device
-
-Once you've had a chance to explore these new capabilities, use the Feedback Hub app to let us know what you think. Feedback you provide in the Feedback Hub goes directly to our engineers.
-
-### FIDO 2 support
-Many of you share a HoloLens with lots of people in a work or school environment.  Whether devices are shared between students in a classroom or they're checked out from a device locker, it's important to be able to change users quickly and easily without typing long user names and passwords.  FIDO lets anyone in your organization (AAD tenant) seamlessly sign in to HoloLens without entering a username or password.
-
-Read the [passwordless security docs](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to get started.
-
-### Provisioning package updates
-Provisioning packages let you set HoloLens configuration through a config file rather than going through the HoloLens out of box experience.  Previously, provisioning packages had to be copied onto HoloLens' internal memory, now they can be on a USB drive so they're easier to re-use on multiple HoloLens and so more people can provision HoloLens in parallel.
-
-1. To try it out, download the latest version of the Windows Configuration Designer from the Windows store onto your PC.  
-1. Select **Provision HoloLens Devices** > Select **Provision HoloLens 2 devices**
-1. Build your configuration profile and, when you're done, copy all files created to a USB-C storage device.
-1. Plug it into any freshly flashed HoloLens and press **Volume down + Power** to apply your provisioning package.
-
-### System voice commands
-You can now can access these commands with your voice:
-- "Restart device"
-- "Shutdown device"
-- "Brightness up"
-- "Brightness down"
-- "Volume up"
-- "Volume down"
-- "What is my IP address?"
-
-If you're running your system with a different language, please try the appropriate commands in that language.
-
-### Dark mode
-Many Windows apps support both dark and light modes, and now HoloLens customers can choose the default mode for apps that support both. Once updated, the default app mode will be "dark," but can be changed easily. Navigate to **Settings > System > Colors to find "Choose your default app mode."**
-Here are some of the in-box apps that support Dark mode!
-- Settings
-- Microsoft Store
-- Mail
-- Calendar
-- File Explorer
-- Feedback Hub
-- OneDrive
-- Photos
-- 3D Viewer
-- Movies & TV
+We'll be updating this page again with new features again as we release them to Windows Insider builds. 
 
 ### FFU download and flash directions
 To test with a flight signed ffu, you first have to flight unlock your device prior to flashing the flight signed ffu.

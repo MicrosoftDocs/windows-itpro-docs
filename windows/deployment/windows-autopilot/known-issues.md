@@ -26,6 +26,12 @@ ms.topic: article
 <table>
 <th>Issue<th>More information
 
+<tr><td>Blocking apps specified in a user-targeted Enrollment Status Profile are ignored during device ESP.</td>
+<td>The services responsible for determining the list of apps that should be blocking during device ESP are not able to determine the correct ESP profile containing the list of apps because they do not know the user identity.  As a workaround, enable the default ESP profile (which targets all users and devices) and place the blocking app list there.  In the future, it will be possible to instead target the ESP profile to device groups to avoid this issue.</tr>
+
+<tr><td>That username looks like it belongs to another organization. Try signing in again or start over with a different account.</td>
+  <td>Confirm that all of your information is correct at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot. See <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/troubleshooting#windows-10-version-1709-and-above">Troubleshooting Windows Auto Pilot </a> for more details.</td></tr>
+
 <tr><td>Windows Autopilot user-driven Hybrid Azure AD deployments do not grant users Administrator rights even when specified in the Windows Autopilot profile.</td>
 <td>This will occur when there is another user on the device that already has Administrator rights.  For example, a PowerShell script or policy could create an additional local account that is a member of the Administrators group.  To ensure this works properly, do not create an additional account until after the Windows Autopilot process has completed.</tr>
 

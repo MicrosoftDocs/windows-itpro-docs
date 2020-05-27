@@ -31,15 +31,15 @@ To configure your environment for BitLocker, you will need to do the following:
 4. Configure the rules (CustomSettings.ini) for BitLocker.
 
 > [!NOTE]
-> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For additional information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).  
+> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For additional information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).
 If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
 
 > [!NOTE]
-> Backing up TMP to Active Directory was supported only on Windows 10 version 1507 and 1511.
+> Backing up TPM to Active Directory was supported only on Windows 10 version 1507 and 1511.
 
 >[!NOTE]
->Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
- 
+>Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
+
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ## Configure Active Directory for BitLocker
@@ -88,14 +88,13 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
         3. Do not enable BitLocker until recovery information is stored in AD DS for operating system drives
     2. Enable the **Configure TPM platform validation profile for BIOS-based firmware configurations** policy.
     3. Enable the **Configure TPM platform validation profile for native UEFI firmware configurations** policy.
-        Computer Configuration / Policies / Administrative Templates / System / Trusted Platform Module Services
 
 > [!NOTE]
 > If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.
 
 ### Set permissions in Active Directory for BitLocker
 
-In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://go.microsoft.com/fwlink/p/?LinkId=167133) from Microsoft to C:\\Setup\\Scripts on DC01.
+In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://gallery.technet.microsoft.com/ScriptCenter/b4dee016-053e-4aa3-a278-3cebf70d1191) from Microsoft to C:\\Setup\\Scripts on DC01.
 
 1. On DC01, start an elevated PowerShell prompt (run as Administrator).
 2. Configure the permissions by running the following command:

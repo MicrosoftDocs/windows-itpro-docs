@@ -1,7 +1,7 @@
 ---
 title: Technical information for 84" Surface Hub
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Specifications for the 84" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
@@ -134,7 +134,7 @@ RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 ---
 
 
-***Removable lifting handles on 84” Surface Hub ***
+***Removable lifting handles on 84” Surface Hub***
 
 ![](images/sh-84-hand.png)
 
@@ -142,7 +142,7 @@ RJ11, bottom I/O | ![](images/rj11.png) | Connects to room control systems.
 ---
 
 
-***Wall mount threads on back of 84” Surface Hub ***
+***Wall mount threads on back of 84” Surface Hub***
 
 ![](images/sh-84-wall.png)
 

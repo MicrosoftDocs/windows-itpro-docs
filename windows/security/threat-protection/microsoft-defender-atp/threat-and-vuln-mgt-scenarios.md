@@ -27,6 +27,18 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## APIs
+
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+See the following topics for related APIs:
+
+- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
+
 ## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit
 
 1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
@@ -85,27 +97,18 @@ To view a list of version that have reached end of support, or end or support so
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
-## Use APIs
-
-Threat and vulnerability management supports multiple APIs. See the following topics for related APIs:
-
-- [Machine APIs](machine.md)
-- [Recommendation APIs](vulnerability.md)
-- [Score APIs](score.md)
-- [Software APIs](software.md)
-- [Vulnerability APIs](vulnerability.md)
-
 ## Related topics
 
+- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
-- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

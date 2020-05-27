@@ -1,6 +1,6 @@
 ---
 title: List machineActions API
-description: Use this API to create calls related to get machineactions collection
+description: Use the Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) API to create calls related to get machineactions collection.
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
