@@ -99,9 +99,9 @@ In cases where the pause policy is first applied after the configured start date
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | **1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates</br>**1703 and later:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdatesStartDate |
+| GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | **1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates</br>**1703 and later:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdatesStartTime |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
-| MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseFeatureUpdates** | **1607:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdates</br> **1703 and later:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdatesStartDate |
+| MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseFeatureUpdates** | **1607:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdates</br> **1703 and later:** \Microsoft\PolicyManager\default\Update\PauseFeatureUpdatesStartTime |
 | MDM for Windows 10, version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
 You can check the date that Feature Updates were paused by checking the registry key **PausedFeatureDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
@@ -223,10 +223,10 @@ The following are quick-reference tables of the supported policy values for Wind
 | BranchReadinessLevel	| REG_DWORD | 2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdates | REG_DWORD | 1: defer quality updates</br>Other value or absent: don’t defer quality updates | 
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
-| PauseQualityUpdatesStartDate | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
+| PauseQualityUpdatesStartTime | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 |DeferFeatureUpdates | REG_DWORD | 1: defer feature updates</br>Other value or absent: don’t defer feature updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: defer feature updates by given days |
-| PauseFeatureUpdatesStartDate | REG_DWORD |1: pause feature updates</br>Other value or absent: don’t pause feature updates |
+| PauseFeatureUpdatesStartTime | REG_DWORD |1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversInQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
 
@@ -236,9 +236,9 @@ The following are quick-reference tables of the supported policy values for Wind
 | --- | --- | --- |
 | BranchReadinessLevel | REG_DWORD |2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
-| PauseQualityUpdatesStartDate | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
+| PauseQualityUpdatesStartTime | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: defer feature updates by given days |
-| PauseFeatureUpdatesStartDate | REG_DWORD | 1: pause feature updates</br>Other value or absent: don’t pause feature updates |
+| PauseFeatureUpdatesStartTime | REG_DWORD | 1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversinQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
 ## Update devices to newer versions
