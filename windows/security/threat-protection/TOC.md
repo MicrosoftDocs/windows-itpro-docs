@@ -197,7 +197,8 @@
 #### [Better together: Windows Defender Antivirus and Office 365](windows-defender-antivirus/office-365-windows-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender Advanced Threat Protection for Mac]()
+#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
@@ -222,7 +223,8 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+### [Microsoft Defender Advanced Threat Protection for Linux]()
+#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
@@ -236,6 +238,7 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/linux-exclusions.md)
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
+##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
@@ -243,6 +246,7 @@
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
 
 
+#### [Privacy](microsoft-defender-atp/linux-privacy.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
@@ -323,10 +327,13 @@
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
+#### [Client behavioral blocking](microsoft-defender-atp/client-behavioral-blocking.md)
+#### [Feedback-loop blocking](microsoft-defender-atp/feedback-loop-blocking.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
-### [Automated investigation and response]()
+### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
@@ -346,10 +353,10 @@
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
-##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-tvm-softwareinventory-table.md)
-##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md)
-##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-tvm-configassessment-table.md)
-##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-tvm-secureconfigkb-table.md)
+##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)
+##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
+##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
+##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)
 #### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
@@ -412,8 +419,6 @@
 ###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [APIs]()
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
@@ -436,7 +441,6 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-
 #### [Microsoft Defender ATP API]()
 ##### [Get started]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
@@ -569,7 +573,6 @@
 ##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
 ##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
@@ -656,7 +659,6 @@
 ### [How Microsoft identifies malware and PUA](intelligence/criteria.md)
 ### [Submit files for analysis](intelligence/submission-guide.md)
 ### [Safety Scanner download](intelligence/safety-scanner-download.md)
-### [Industry antivirus tests](intelligence/top-scoring-industry-antivirus-tests.md)
 ### [Industry collaboration programs](intelligence/cybersecurity-industry-partners.md)
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)

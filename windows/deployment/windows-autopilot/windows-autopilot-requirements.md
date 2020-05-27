@@ -94,7 +94,7 @@ If the Microsoft Store is not accessible, the AutoPilot process will still conti
 Windows Autopilot depends on specific capabilities available in Windows 10 and Azure Active Directory. It also requires an MDM service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs:
 
 To provide needed Azure Active Directory (automatic MDM enrollment and company branding features) and MDM functionality, one of the following is required:
-- [Microsoft 365 Business subscriptions](https://www.microsoft.com/microsoft-365/business)
+- [Microsoft 365 Business Premium subscriptions](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft 365 F1 subscriptions](https://www.microsoft.com/microsoft-365/enterprise/firstline)
 - [Microsoft 365 Academic A1, A3, or A5 subscriptions](https://www.microsoft.com/education/buy-license/microsoft365/default.aspx)
 - [Microsoft 365 Enterprise E3 or E5 subscriptions](https://www.microsoft.com/microsoft-365/enterprise), which include all Windows 10, Office 365, and EM+S features (Azure AD and Intune).
