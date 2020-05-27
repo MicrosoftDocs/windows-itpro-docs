@@ -73,9 +73,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 
 
-<!-- ### Network requirements
-
-{can you share with me what the network requirements are?}-->
 
 
 
@@ -144,7 +141,7 @@ For the payloads (optional):
 **How does Delivery Optimization handle VPNs?**
 Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
-If the connection is identified as a VPN, Delivery Optimization will not use any peer-to-peer activity. However, you can allow peer-to-peer activity over a VPN by using the {WE SHOULD NAME OR POINT TO THIS POLICY} policy.
+If the connection is identified as a VPN, Delivery Optimization will not use any peer-to-peer activity. However, you can allow peer-to-peer activity over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn)	policy.
 
 If you have defined a boundary group in Configuration Manager and have for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN.
 
