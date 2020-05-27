@@ -217,7 +217,7 @@ At the end of OOBE, you can sign in to the device by using your user name and pa
 
 ## Known Issues
 
-- Application installs which are in device context are not supported.
+- You cannot install applications that use the device security context.
 
 ## Feedback
 
