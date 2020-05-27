@@ -22,6 +22,7 @@ ms.reviewer:
 -   Windows 10
 -   Windows Server 
 -   Microsoft 365 Apps for enterprise 
+-   Microsoft Edge
 
 ## Using security baselines in your organization 
 

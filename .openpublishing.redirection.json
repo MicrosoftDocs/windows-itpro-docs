@@ -14392,11 +14392,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/update/waas-wufb-intune.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/manage/manage-settings-app-with-group-policy.md",
 "redirect_url": "https://docs.microsoft.com/windows/client-management/manage-settings-app-with-group-policy",
 "redirect_document_id": true
