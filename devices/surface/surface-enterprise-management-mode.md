@@ -9,11 +9,11 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: scottmca
+ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 05/11/2020
+ms.date: 05/26/2020
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -228,14 +228,27 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-The latest version of SEMM released May 11, 2020 includes: 
+### Version 2.71.139.0
+
+This version of SEMM adds support for Surface Dock 2 management features  for Surface Book 3, Surface Laptop 3, and Surface Pro 7 including:
+
+- Enabling audio (locking/unlocking), Ethernet and USB ports
+- Ability to create dock packages for both authenticated and unauthenticated hosts
+
+### Version 2.70.130.0
+
+This version of SEMM includes:
+
 - Support for Surface Go 2
 - Support for Surface Book 3
 - Bug fixes
 
-### Version 2.59.
-* Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
-- Support to Wake on Power feature
+
+### Version 2.59.139.0
+
+* Support for Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
+
+- Support for Wake on Power feature
 
 ### Version 2.54.139.0
 * Support to Surface Hub 2S
