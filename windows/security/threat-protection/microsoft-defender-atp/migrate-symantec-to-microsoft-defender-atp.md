@@ -19,10 +19,36 @@ ms.topic: article
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection
 
-If you are thinking about switching from your current endpoint protection and antivirus solution offered by Symantec to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration from Symantec to Microsoft Defender ATP. In addition to step-by-step guidance, you'll get some best practices and tips to help ensure a successful, efficient migration. 
+If you are thinking about switching from Symantec Endpoint Protection to endpoint protection with Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration. In addition to step-by-step guidance, you'll get some best practices and tips to help ensure a successful, efficient migration. 
+
+## Requirements
 
 
+|Requirements  |Details  |
+|---------|---------|
+|Row1     |         |
+|Row2     |         |
 
-This document provides good practices, tips and what to watch out for when migrating from Symantec Endpoint Protection (SEP) to Microsoft Defender Antivirus (MDAV formerly known as Windows Defender Antivirus (WDAV)) (AV, EPP)* and/or System Center Endpoint Protection (SCEP) (AV, EPP)
 
-? Migrating from Symantec Endpoint Protection AV and EDR to MDAV (AV/EPP) MDATP (EDR).
+## The process at a high level
+
+1. Get Microsoft Defender ATP. Purchase licenses, or start a trial.
+2. Grant access to the Microsoft Defender Security Center. 
+3. Configure machine proxy and internet connectivity settings.
+4. Set Microsoft Defender ATP to passive mode.
+5. Re-enable Microsoft Defender Antivirus in Group Policy.
+6. Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
+7. Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
+8. Set up your device groups, device collections, and OUs.
+9. Install Microsoft Defender ATP and uninstall Symantec.
+10. Onboard devices to Microsoft Defender ATP.
+
+## Get Microsoft Defender ATP
+
+## Grant access to the Microsoft Defender Security Center
+
+## Configure device proxy and internet connectivity settings
+
+## Set Microsoft Defender ATP to passive mode
+
+## 
