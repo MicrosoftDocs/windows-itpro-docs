@@ -19,18 +19,20 @@ ms.topic: article
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection
 
-If you are thinking about switching from Symantec Endpoint Protection to endpoint protection with Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration. In addition to step-by-step guidance, you'll get some best practices and tips to help ensure a successful, efficient migration. 
+If you are thinking about switching from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan and execute your migration.  
 
-## Requirements
-
-
-|Requirements  |Details  |
-|---------|---------|
-|Row1     |         |
-|Row2     |         |
-
+Microsoft Defender ATP includes the following capabilities:
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Tools to surgically reduce the attack surface](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
+- [Next-generation protection to block threats and malware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
+- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 
 ## The process at a high level
+
+Use the following process to make the switch from Symantec to Microsoft Defender ATP:
 
 1. Get Microsoft Defender ATP. 
 2. Grant access to the Microsoft Defender Security Center. 
@@ -39,13 +41,13 @@ If you are thinking about switching from Symantec Endpoint Protection to endpoin
 5. Re-enable Microsoft Defender Antivirus.
 6. Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
 7. Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
-8. Set up your device groups, device collections, and OUs.
+8. Set up your device groups, device collections, and organizational units.
 9. Install Microsoft Defender ATP and uninstall Symantec.
 10. Onboard devices to Microsoft Defender ATP.
 
 ## Step 1: Get Microsoft Defender ATP
 
-Purchase licenses, or start a trial.
+To get started, you must have Microsoft Defender ATP. [Start a trial today!](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?rtc=1)
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
 
@@ -63,7 +65,7 @@ Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other 
 
 Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
 
-## Step 8: Set up your device groups, device collections, and OUs
+## Step 8: Set up your device groups, device collections, and organizational units
 
 ## Step 9: Install Microsoft Defender ATP and uninstall Symantec
 
@@ -77,13 +79,13 @@ After you have set up Microsoft Defender ATP, you can choose from several method
 
 |Method | Task |
 |---|---|
-|Intune |[Configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus) | 
+|Intune |[Configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus) | 
 | |Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |
 | |Manage device restrictions for Microsoft Defender Antivirus |
 | |Manage Microsoft Defender Antivirus exclusions |
 
 ## Related articles
 
-[Microsoft Defender ATP deployment guide](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
+[Microsoft Defender ATP deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
 
 
