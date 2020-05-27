@@ -151,7 +151,7 @@ is enough power.
 
 Set the following policies to **Enable** or **Do Not Configure** in order to allow the device to use sleep mode:
 - [Power/AllowStandbyStatesWhenSleepingOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-allowstandbystateswhensleepingonbattery)
-- [Power/AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+- [Power/AllowStandbyWhenSleepingPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
 
 Set the following policies to **1 (Sleep)** so that when a user closes the lid of a device, the system goes to
 sleep mode and the device has an opportunity to take an update:
