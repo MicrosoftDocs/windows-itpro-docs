@@ -40,7 +40,7 @@ For more information about onboarding methods, see the following articles:
 - [Onboard servers to the Microsoft Defender ATP service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## On-premise machines
+## On-premises machines
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

@@ -18,7 +18,7 @@
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 ## [HoloLens (1st Gen) release notes](hololens1-release-notes.md)
 
-# Deploy HoloLens and mixed-reality apps in commercial environments
+# Deploy HoloLens and mixed reality apps in commercial environments
 ## [Commercial features](hololens-commercial-features.md)
 ## [Deploy HoloLens in a commercial environment](hololens-requirements.md)
 ## [Determine what licenses you need](hololens-licenses-requirements.md)
@@ -29,13 +29,13 @@
 ## [Manage HoloLens updates](hololens-updates.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
-# Navigating Windows Holographic
-## [Start menu and mixed reality home](holographic-home.md)
-## [Use your voice with HoloLens](hololens-cortana.md)
+# Navigate the Windows Holographic environment
+## [Use the Start menu and mixed reality home](holographic-home.md)
+## [Use your voice to operate HoloLens](hololens-cortana.md)
 ## [Find, open, and save files](holographic-data.md)
 ## [Create mixed reality photos and videos](holographic-photos-and-videos.md)
 
-# User management and access management
+# Manage users and access
 ## [Manage user identity and sign-in for HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
 ## [Set up HoloLens as a kiosk](hololens-kiosk.md)
