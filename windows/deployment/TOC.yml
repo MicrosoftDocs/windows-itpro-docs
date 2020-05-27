@@ -145,6 +145,8 @@
                   href: update/feature-update-user-install.md        
         - name: Use Windows Update for Business
           items:
+            - name: What is Windows Update for Business?
+              href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
             - name: Enforcing compliance deadlines for updates
