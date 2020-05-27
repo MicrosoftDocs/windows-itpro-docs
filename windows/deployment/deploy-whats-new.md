@@ -27,12 +27,10 @@ This topic provides an overview of new solutions and online content related to d
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://docs.microsoft.com/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
-## Recent additions to this page
+## Recent changes
 
-[SetupDiag](#setupdiag) 1.6 is released.<br>
-The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
-New [Windows Autopilot](#windows-autopilot) content is available.<br>
-[Windows 10 Subscription Activation](#windows-10-subscription-activation) now supports Windows 10 Education.
+[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
+The [Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
 
 ## The Modern Desktop Deployment Center
 
