@@ -64,7 +64,7 @@ In Group Policy, to enable data collection through the Data Processor Service fo
 
 If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**.
 
-To use an MDM solution, such as [Microsoft Intune](https://docs.microsoft.com/en-us/intune/custom-settings-windows-10), to deploy the Data Processor Service for Windows to your supported devices, use the following custom OMA-URI setting configuration:
+To use an MDM solution, such as [Microsoft Intune](https://docs.microsoft.com/intune/custom-settings-windows-10), to deploy the Data Processor Service for Windows to your supported devices, use the following custom OMA-URI setting configuration:
 
 - **Name:** System/AllowCommercialDataPipeline 
 - **OMA-URI:** ./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline 
