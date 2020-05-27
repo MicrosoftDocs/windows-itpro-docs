@@ -32,23 +32,40 @@ If you are thinking about switching from Symantec Endpoint Protection to endpoin
 
 ## The process at a high level
 
-1. Get Microsoft Defender ATP. Purchase licenses, or start a trial.
+1. Get Microsoft Defender ATP. 
 2. Grant access to the Microsoft Defender Security Center. 
 3. Configure machine proxy and internet connectivity settings.
 4. Set Microsoft Defender ATP to passive mode.
-5. Re-enable Microsoft Defender Antivirus in Group Policy.
+5. Re-enable Microsoft Defender Antivirus.
 6. Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
 7. Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
 8. Set up your device groups, device collections, and OUs.
 9. Install Microsoft Defender ATP and uninstall Symantec.
 10. Onboard devices to Microsoft Defender ATP.
 
-## Get Microsoft Defender ATP
+## Step 1: Get Microsoft Defender ATP
 
-## Grant access to the Microsoft Defender Security Center
+Purchase licenses, or start a trial.
 
-## Configure device proxy and internet connectivity settings
+## Step 2: Grant access to the Microsoft Defender Security Center
 
-## Set Microsoft Defender ATP to passive mode
+## Step 3: Configure device proxy and internet connectivity settings
 
-## 
+## Step 4: Set Microsoft Defender ATP to passive mode
+
+## Step 5: Re-enable Microsoft Defender Antivirus
+
+## Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec
+
+Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
+
+## Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list
+
+Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
+
+## Step 8: Set up your device groups, device collections, and OUs
+
+## Step 9: Install Microsoft Defender ATP and uninstall Symantec
+
+## Step 10: Onboard devices to Microsoft Defender ATP
+
