@@ -67,7 +67,7 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | De
 This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
-> If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
+> If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
 <a id="scan"></a>
 
@@ -108,7 +108,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
     >[!NOTE]
     >If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
-    >If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+    >If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 
 <a id="exclusions"></a>
@@ -136,8 +136,8 @@ The following table summarizes exclusion types and what happens:
 |**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
 
 To learn more, see: 
-- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus) 
-- [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus)
+- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
+- [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus)
 
 ### Review threat detection history in the Windows Defender Security Center app
 
@@ -167,6 +167,6 @@ To learn more, see:
 
 ## Related articles
 
-- [Windows Defender Antivirus](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
 
 

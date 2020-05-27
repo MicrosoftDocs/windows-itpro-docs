@@ -29,16 +29,16 @@ Microsoft Operations Management Suite has an [Update Compliance add-in](/windows
 
 If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](https://msdn.microsoft.com/library/windows/desktop/aa964766(v=vs.85).aspx). 
 
-Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](https://technet.microsoft.com/library/mt431757.aspx), also see the [Security auditing](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-windows-defender-antivirus.md). 
+Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](https://technet.microsoft.com/library/mt431757.aspx), also see the [Security auditing](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md). 
 
 These events can be centrally aggregated using the [Windows event collector](https://msdn.microsoft.com/library/windows/desktop/bb427443(v=vs.85).aspx). Often, SIEM servers have connectors for Windows events, allowing you to correlate all security events in your SIEM server. 
 
 You can also [monitor malware events using the Malware Assessment solution in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-malware).
 
-For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref2).
+For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 
 ## Related articles
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
-- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

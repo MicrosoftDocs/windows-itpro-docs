@@ -34,7 +34,7 @@ PowerShell cmdlets are most useful in Windows Server environments that don't rel
 
 Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell.
 
-You can [configure which settings can be overridden locally with local policy overrides](configure-local-policy-overrides-windows-defender-antivirus.md).
+You can [configure which settings can be overridden locally with local policy overrides](configure-local-policy-overrides-microsoft-defender-antivirus.md).
 
 PowerShell is typically installed under the folder `%SystemRoot%\system32\WindowsPowerShell`.
 
@@ -57,5 +57,5 @@ Omit the `-online` parameter to get locally cached help.
 
 ## Related topics
 
-- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

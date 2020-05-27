@@ -43,7 +43,7 @@ The tables list:
 
 Windows Defender Antivirus records event IDs in the Windows event log.
 
-You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender Antivirus client event IDs](troubleshoot-windows-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender Antivirus client event IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
 
 The table in this section lists the main Windows Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
@@ -1541,7 +1541,7 @@ User action:
 This error occurs when there is a problem updating definitions.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-windows-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-windows-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
@@ -1634,7 +1634,7 @@ User action:
 The Windows Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
-<li><a href="manage-updates-baselines-windows-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-windows-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
+<li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
@@ -2910,7 +2910,7 @@ You can only use Windows Defender Antivirus in Windows 10. For Windows 8, Window
 <a id="internal-error-codes"></a>
 The following error codes are used during internal testing of Windows Defender Antivirus.
 
-If you see these errors, you can try to [update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.
+If you see these errors, you can try to [update definitions](manage-updates-baselines-microsoft-defender-antivirus.md) and force a rescan directly on the endpoint.
 
 
 <table> 
@@ -3240,5 +3240,5 @@ This is an internal error. It might have triggered when a scan fails to complete
 
 ## Related topics
 
-- [Report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Report on Windows Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
