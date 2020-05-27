@@ -37,7 +37,7 @@ To use HoloLens, each user follows these steps:
 
 1. If another user has been using the device, do one of the following:
    - Press the power button once to go to standby, and then press the power button again to return to the lock screen
-   - HoloLens 2 users may select the user tile on the top of the Pins panel to sign out the current user.
+   - HoloLens 2 users may select the user tile from the Start menu to sign out the current user.
 
 1. Use your Azure AD account credentials to sign in to the device.  
     If this is the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.
