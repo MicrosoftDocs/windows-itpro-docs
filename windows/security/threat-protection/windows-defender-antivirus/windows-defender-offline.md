@@ -50,7 +50,7 @@ Windows Defender Offline uses the most recent protection updates available on th
 > [!NOTE]
 > Before running an offline scan, you should attempt to update Windows Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-See the [Manage Windows Defender Antivirus Security intelligence  updates](manage-protection-updates-windows-defender-antivirus.md) topic for more information.
+See the [Manage Windows Defender Antivirus Security intelligence  updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
 
 ## Usage scenarios
 
@@ -77,7 +77,7 @@ Windows Defender Offline scans are indicated under **Malware remediation status*
 
 Windows Defender Offline notifications are configured in the same policy setting as other Windows Defender AV notifications.
 
-For more information about notifications in Windows Defender, see the [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md) topic.
+For more information about notifications in Windows Defender, see the [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md) topic.
 
 ## Run a scan 
 
@@ -100,7 +100,7 @@ Use the following cmdlets:
 Start-MpWDOScan
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to run an offline scan
 
@@ -137,5 +137,5 @@ Windows Defender Offline scan results will be listed in the [Scan history sectio
 
 ## Related articles
 
-- [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

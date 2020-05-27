@@ -38,7 +38,7 @@ With the setting set to **Disabled** or not configured:
 ![Screenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+>Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app."
 
@@ -56,7 +56,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 5. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**. 
 
-See [Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) for more options on preventing users form modifying protection on their PCs.
+See [Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) for more options on preventing users form modifying protection on their PCs.
 
 ## Prevent users from pausing a scan
 
@@ -76,8 +76,8 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 ## Related articles
 
-- [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+- [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 
-- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
+- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -30,7 +30,7 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-windows-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
 In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
@@ -50,7 +50,7 @@ Use the following `-scan` parameter:
 ```DOS
 mpcmdrun.exe -scan -scantype 1
 ```
-See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
+See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
 
 ## Use Microsoft Intune to run a scan
 
@@ -70,7 +70,7 @@ Use the following cmdlet:
 ```PowerShell
 Start-MpScan
 ```
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ## Use Windows Management Instruction (WMI) to run a scan
 
@@ -82,6 +82,6 @@ See the following for more information and allowed parameters:
 
 ## Related articles
 
-- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-windows-defender-antivirus.md)
-- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

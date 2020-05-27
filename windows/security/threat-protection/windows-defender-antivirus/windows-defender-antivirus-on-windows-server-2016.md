@@ -26,7 +26,7 @@ Windows Defender Antivirus is available on Windows Server 2016 and Windows Serve
 
 While the functionality, configuration, and management are largely the same for Windows Defender Antivirus on Windows 10, there are a few key differences on Windows Server 2016 or Windows Server 2019:
 
-- In Windows Server, [automatic exclusions](configure-server-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
+- In Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 - In Windows Server, Windows Defender Antivirus does not automatically disable itself if you are running another antivirus product.
 
 ## The process at a glance
@@ -35,9 +35,9 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
 
-2. [Install Windows Defender Antivirus](#install-windows-defender-antivirus-on-windows-server-2016-or-2019)
+2. [Install Windows Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019)
 
-2. [Verify Windows Defender Antivirus is running](#verify-windows-defender-antivirus-is-running)
+2. [Verify Windows Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running)
 
 3. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence)
 
@@ -45,7 +45,7 @@ The process of setting up and running Windows Defender Antivirus on a server pla
 
 5. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions)
 
-6. (Only if necessary) [Uninstall Windows Defender Antivirus](#need-to-uninstall-windows-defender-antivirus)
+6. (Only if necessary) [Uninstall Windows Defender Antivirus](#need-to-uninstall-microsoft-defender-antivirus)
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
@@ -91,7 +91,7 @@ To use PowerShell to install Windows Defender Antivirus, run the following cmdle
 Install-WindowsFeature -Name Windows-Defender
 ```
 
-Event messages for the antimalware engine included with Windows Defender Antivirus can be found in [Windows Defender AV Events](troubleshoot-windows-defender-antivirus.md).
+Event messages for the antimalware engine included with Windows Defender Antivirus can be found in [Windows Defender AV Events](troubleshoot-microsoft-defender-antivirus.md).
 
 
 ## Verify Windows Defender Antivirus is running
@@ -170,7 +170,7 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender Antivirus on Windows Server 2016 or 2019.
 
-See [Configure exclusions in Windows Defender Antivirus on Windows Server](configure-server-exclusions-windows-defender-antivirus.md). 
+See [Configure exclusions in Windows Defender Antivirus on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md). 
 
 ## Need to uninstall Windows Defender Antivirus?
 
@@ -178,7 +178,7 @@ If you are using a third-party antivirus solution and you're running into issues
 
 - See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
 
-- See [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection.
+- See [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection.
 
 If you determine you do want to uninstall Windows Defender Antivirus, follow the steps in the following sections.
 
@@ -214,8 +214,8 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
-- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) 
+- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md) 
 
 

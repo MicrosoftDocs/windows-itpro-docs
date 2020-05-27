@@ -27,7 +27,7 @@ manager: dansimp
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - If your organization's endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, then Windows Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Windows Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Windows Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/shadow-protection) (currently in private preview) enabled, then Windows Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/shadow-protection) (currently in private preview) enabled, then Windows Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
 
 ## Antivirus and Microsoft Defender ATP
 
@@ -45,14 +45,14 @@ The following table summarizes what happens with Windows Defender Antivirus when
 | Windows Server 2016 or 2019 |                         Windows Defender Antivirus                         |                       Yes                       |            Active mode            |
 | Windows Server 2016 or 2019 |                         Windows Defender Antivirus                         |                       No                        |            Active mode            |
 
-(<a id="fn1">1</a>)  On Windows Server 2016 or 2019, Windows Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [consider uninstalling Windows Defender Antivirus on Windows Server 2016 or 2019](windows-defender-antivirus-on-windows-server-2016.md#need-to-uninstall-windows-defender-antivirus) to prevent problems caused by having multiple antivirus products installed on a machine.
+(<a id="fn1">1</a>)  On Windows Server 2016 or 2019, Windows Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [consider uninstalling Windows Defender Antivirus on Windows Server 2016 or 2019](microsoft-defender-antivirus-on-windows-server-2016.md#need-to-uninstall-microsoft-defender-antivirus) to prevent problems caused by having multiple antivirus products installed on a machine.
 
 If you are Using Windows Server, version 1803 and Windows 2019, you can enable passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: ForceDefenderPassiveMode
 - Value: 1
 
-See [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
+See [Windows Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
 
 > [!IMPORTANT]
 > Windows Defender Antivirus is only available on endpoints running Windows 10, Windows Server 2016, and Windows Server 2019.
@@ -65,7 +65,7 @@ See [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defende
 
 The following table summarizes the functionality and features that are available in each state:
 
-|State |[Real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) | [Limited periodic scanning availability](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/limited-periodic-scanning-windows-defender-antivirus) | [File scanning and detection information](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus) | [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-remediation-windows-defender-antivirus) | [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus) |
+|State |[Real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) | [Limited periodic scanning availability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus) | [File scanning and detection information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus) | [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus) | [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) |
 |--|--|--|--|--|--|
 |Active mode <br/><br/>  |Yes |No |Yes |Yes |Yes |
 |Passive mode  |No |No |Yes |No |Yes |
@@ -81,9 +81,9 @@ The following table summarizes the functionality and features that are available
 
 If you are enrolled in Microsoft Defender ATP and you are using a third party antimalware product then passive mode is enabled because [the service requires common information sharing from the Windows Defender Antivirus service](../microsoft-defender-atp/defender-compatibility.md) in order to properly monitor your devices and network for intrusion attempts and attacks.
 
-When Windows Defender Antivirus is automatic disabled, it can automatically re-enable if the protection offered by a third-party antivirus product expires or otherwise stops providing real-time protection from viruses, malware or other threats. This is to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md), which uses the Windows Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
+When Windows Defender Antivirus is automatic disabled, it can automatically re-enable if the protection offered by a third-party antivirus product expires or otherwise stops providing real-time protection from viruses, malware or other threats. This is to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Windows Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
 
-In passive and automatic disabled mode, you can still [manage updates for Windows Defender Antivirus](manage-updates-baselines-windows-defender-antivirus.md); however, you can't move Windows Defender Antivirus into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
+In passive and automatic disabled mode, you can still [manage updates for Windows Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Windows Defender Antivirus into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
 
 If you uninstall the other product, and choose to use Windows Defender Antivirus to provide protection to your endpoints, Windows Defender Antivirus will automatically return to its normal active mode.
 
@@ -93,6 +93,6 @@ If you uninstall the other product, and choose to use Windows Defender Antivirus
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)

@@ -34,5 +34,5 @@ For Microsoft Intune, consult the [Microsoft Intune library](https://docs.micros
 
 ## Related articles
 
-- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

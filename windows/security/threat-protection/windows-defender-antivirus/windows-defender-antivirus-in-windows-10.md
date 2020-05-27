@@ -27,9 +27,9 @@ ms.custom: nextgen
 
 Windows Defender Antivirus is the next-generation protection component of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). Next-generation protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Next-generation protection services include the following:
 
-- [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-windows-defender-antivirus.md). This includes always-on scanning using file and process behavior monitoring and other heuristics (also known as "real-time protection"). It also includes detecting and blocking apps that are deemed unsafe, but may not be detected as malware.
-- [Cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md). This includes near-instant detection and blocking of new and emerging threats.
-- [Dedicated protection and product updates](manage-updates-baselines-windows-defender-antivirus.md). This includes updates related to keeping Windows Defender Antivirus up to date.
+- [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-microsoft-defender-antivirus.md). This includes always-on scanning using file and process behavior monitoring and other heuristics (also known as "real-time protection"). It also includes detecting and blocking apps that are deemed unsafe, but may not be detected as malware.
+- [Cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). This includes near-instant detection and blocking of new and emerging threats.
+- [Dedicated protection and product updates](manage-updates-baselines-microsoft-defender-antivirus.md). This includes updates related to keeping Windows Defender Antivirus up to date.
 
 ## Try a demo!
 
@@ -47,13 +47,13 @@ Windows Defender Antivirus has the same hardware requirements as of Windows 10. 
 
 ## Configure next-generation protection services
 
-For information on how to configure next-generation protection services, see [Configure Windows Defender Antivirus features](configure-windows-defender-antivirus-features.md).
+For information on how to configure next-generation protection services, see [Configure Windows Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
 
 > [!Note]  
-> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016 and 2019](windows-defender-antivirus-on-windows-server-2016.md).
+> Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md).
 
 ## Related articles
 
-- [Windows Defender Antivirus management and configuration](configuration-management-reference-windows-defender-antivirus.md)
+- [Windows Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 
-- [Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md)
+- [Evaluate Windows Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)

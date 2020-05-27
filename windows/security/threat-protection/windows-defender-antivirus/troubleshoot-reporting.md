@@ -34,7 +34,7 @@ Typically, the most common indicators of a problem are:
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Windows Defender Antivirus service that are not related to Update Compliance, see [Windows Defender Antivirus events](troubleshoot-windows-defender-antivirus.md). 
+For common error codes and event IDs related to the Windows Defender Antivirus service that are not related to Update Compliance, see [Windows Defender Antivirus events](troubleshoot-microsoft-defender-antivirus.md). 
 
 There are three steps to troubleshooting these problems:
 
@@ -51,9 +51,9 @@ There are three steps to troubleshooting these problems:
 In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Windows Defender Antivirus:
 
 >[!div class="checklist"]
->- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
-> - [Cloud-delivered protection is enabled](enable-cloud-protection-windows-defender-antivirus.md).
-> - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+>- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](microsoft-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
+> - [Cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).
+> - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
@@ -71,5 +71,5 @@ If the above prerequisites have all been met, you might need to proceed to the n
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
