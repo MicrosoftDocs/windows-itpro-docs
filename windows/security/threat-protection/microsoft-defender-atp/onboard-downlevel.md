@@ -51,7 +51,7 @@ Microsoft Defender ATP integrates with System Center Endpoint Protection to prov
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
-- Configure your network to allow connections to the Windows Defender Antivirus cloud. For more information, see [Allow connections to the Windows Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud)
+- Configure your network to allow connections to the Windows Defender Antivirus cloud. For more information, see [Allow connections to the Windows Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP
 
