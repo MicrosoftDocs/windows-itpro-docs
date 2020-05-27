@@ -22,6 +22,7 @@
 ## [DFCI management](dfci-management.md)
 ## [Windows Autopilot update](autopilot-update.md)
 ## [Troubleshooting](troubleshooting.md)
+## [Policy conflicts](policy-conflicts.md)
 ## [Known issues](known-issues.md)
 
 # Support
