@@ -314,7 +314,7 @@ Azure Information Protection also helps your users share sensitive data in a sec
 
 - **Windows Hello for Business:** https://www.youtube.com/watch?v=WOvoXQdj-9E and https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification
 
-- **Microsoft Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10
+- **Microsoft Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
 
 - **Windows Defender Advanced Threat Protection:** https://www.youtube.com/watch?v=qxeGa3pxIwg and https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection
 

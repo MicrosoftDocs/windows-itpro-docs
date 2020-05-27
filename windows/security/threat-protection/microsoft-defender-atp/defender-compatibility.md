@@ -35,7 +35,7 @@ The Microsoft Defender Advanced Threat Protection agent depends on Windows Defen
 >[!IMPORTANT]
 >Microsoft Defender ATP does not adhere to the Windows Defender Antivirus Exclusions settings. 
 
-You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
 If an onboarded machine is protected by a third-party antimalware client, Windows Defender Antivirus on that endpoint will enter into passive mode.
 
@@ -43,4 +43,4 @@ Windows Defender Antivirus will continue to receive updates, and the *mspeng.exe
 
 The Windows Defender Antivirus interface will be disabled, and users on the machine will not be able to use Windows Defender Antivirus to perform on-demand scans or configure most options.
 
-For more information, see the [Windows Defender Antivirus and Microsoft Defender ATP compatibility topic](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+For more information, see the [Windows Defender Antivirus and Microsoft Defender ATP compatibility topic](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).

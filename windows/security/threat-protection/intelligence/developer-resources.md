@@ -40,4 +40,4 @@ Find more guidance about the file submission and detection dispute process in ou
 
 ### Scan your software
 
-Use [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) to check your software against the latest Security intelligence and cloud protection from Microsoft.
+Use [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) to check your software against the latest Security intelligence and cloud protection from Microsoft.
