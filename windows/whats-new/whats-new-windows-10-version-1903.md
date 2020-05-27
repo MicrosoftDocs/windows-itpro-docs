@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1903
-description: New and updated IT Pro content about new features in Windows 10, version 1903 (also known as the Windows 10 May 2019 Update).
+description: New and updated features in Windows 10, version 1903 (also known as the Windows 10 May 2019 Update).
 keywords: ["What's new in Windows 10", "Windows 10", "May 2019 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1903 IT Pro content
+# What's new in Windows 10, version 1903 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1903
