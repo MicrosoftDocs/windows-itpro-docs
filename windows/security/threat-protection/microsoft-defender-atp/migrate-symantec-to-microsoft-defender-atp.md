@@ -61,6 +61,8 @@ Use the following resources to plan your roles and permissions:
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
+
+
 ## Step 4: Set Microsoft Defender ATP to passive mode
 
 ## Step 5: Re-enable Microsoft Defender Antivirus
