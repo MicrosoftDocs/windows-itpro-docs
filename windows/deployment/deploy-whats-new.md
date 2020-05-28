@@ -27,12 +27,10 @@ This topic provides an overview of new solutions and online content related to d
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://docs.microsoft.com/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
-## Recent additions to this page
+## Recent changes
 
-[SetupDiag](#setupdiag) 1.6 is released.<br>
-The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
-New [Windows Autopilot](#windows-autopilot) content is available.<br>
-[Windows 10 Subscription Activation](#windows-10-subscription-activation) now supports Windows 10 Education.
+[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
+The [Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
 
 ## The Modern Desktop Deployment Center
 
@@ -50,8 +48,8 @@ See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, whic
 ## Windows 10 servicing and support
 
 - [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Configuration Manager content coming soon! 
-- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
-- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
+- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
 - **Improved update notifications**: When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.

@@ -145,8 +145,8 @@ This table provides info about the most common problems you might encounter whil
 > [!NOTE]
 > When corporate data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity. One caveat to keep in mind is that the Preview Pane in File Explorer will not work for encrypted files. 
 
-> [!NOTE]
-> Chromium-based versions of Microsoft Edge (versions since 79) don't fully support WIP yet. The functionality could be partially enabled by going to the local page **edge://flags/#edge-dataprotection** and setting the **Windows Information Protection** flag to **enabled**.
+
+
 
 > [!NOTE]
 > Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       

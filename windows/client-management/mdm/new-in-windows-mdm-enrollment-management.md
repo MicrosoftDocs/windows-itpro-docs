@@ -24,6 +24,7 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
+  - [What’s new in MDM for Windows 10, version 2004](#whats-new-in-mdm-for-windows-10-version-2004)
   - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
@@ -58,6 +59,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [May 2020](#may-2020)
     - [February 2020](#february-2020)
     - [January 2020](#january-2020)
     - [November 2019](#november-2019)
@@ -86,6 +88,45 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
+
+## What’s new in MDM for Windows 10, version 2004
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall" data-raw-source="[ApplicationManagement/BlockNonAdminUserInstall](policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall)">ApplicationManagement/BlockNonAdminUserInstall</a></li>
+<li><a href="policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize" data-raw-source="[Bluetooth/SetMinimumEncryptionKeySize](policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize)">Bluetooth/SetMinimumEncryptionKeySize</a></li>
+<li><a href="policy-csp-education.md#education-allowgraphingcalculator" data-raw-source="[Education/AllowGraphingCalculator](policy-csp-education.md#education-allowgraphingcalculator)">Education/AllowGraphingCalculator</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configurejapaneseimeversion" data-raw-source="[TextInput/ConfigureJapaneseIMEVersion](policy-csp-textinput.md#textinput-configurejapaneseimeversion)">TextInput/ConfigureJapaneseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion" data-raw-source="[TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)">TextInput/ConfigureSimplifiedChineseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion" data-raw-source="[TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)">TextInput/ConfigureTraditionalChineseIMEVersion</a></li>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>Ext/Microsoft/DNSComputerName</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>IsStub</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="supl-csp.md" data-raw-source="[SUPL CSP](supl-csp.md)">SUPL CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>FullVersion</p>
+</td></tr>
+</tbody>
+</table>
 
 ## What’s new in MDM for Windows 10, version 1909
 <table class="mx-tdBreakAll">
@@ -1939,6 +1980,13 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### May 2020
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
+|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with additional details. Added policy timeline table. 
+
 
 ### February 2020
 |New or updated topic | Description|

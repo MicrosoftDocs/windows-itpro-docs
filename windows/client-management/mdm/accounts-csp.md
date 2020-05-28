@@ -40,7 +40,7 @@ Available naming macros:
 Supported operation is Add.
 
 > [!Note]
-> For desktop PCs on the next major release of Windows 10 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
+> For desktop PCs on Windows 10, version 2004 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
 
 <a href="" id="users"></a>**Users**  
 Interior node for the user account information.

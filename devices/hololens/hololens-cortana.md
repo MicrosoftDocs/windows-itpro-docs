@@ -1,5 +1,5 @@
 ---
-title: Use your voice with HoloLens
+title: Use your voice to operate HoloLens
 description: Cortana can help you do all kinds of things on your HoloLens
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Use your voice with HoloLens
+# Use your voice to operate HoloLens
 
 You can use your voice to do almost anything on HoloLens, such as taking a quick photo or opening an app. Many voice commands are built into HoloLens, while others are available through Cortana.
 
@@ -34,14 +34,14 @@ Get around HoloLens faster with these basic commands. In order to use these, you
 
 ### General speech commands
 
-Use these commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you bring up by saying “select.”
+Use these commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you bring up by saying "select."
 
 > [!NOTE]
 > Hand rays are not supported on HoloLens (1st Gen).
 
 | Say this | To do this |
 | - | - |
-| "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
+| "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say "select" again. |
 |Open the Start menu | "Go to Start" |
 |Close the Start menu | "Close" |
 |Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
