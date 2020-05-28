@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what required Windows diagnostic data is gathered.
-title: Windows 10, version 2005 required diagnostic events and fields (Windows 10)
+title: Windows 10, version 2004 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,7 +17,7 @@ ms.date: 03/27/2020
 ---
 
 
-# Windows 10, version 2005 required Windows diagnostic events and fields
+# Windows 10, version 2004 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -26,7 +26,7 @@ ms.date: 03/27/2020
 
  **Applies to**
 
-- Windows 10, version 2005
+- Windows 10, version 2004
 
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
@@ -90,7 +90,6 @@ The following fields are available:
 - **CosDeviceSolutionUrl**  Microsoft.Windows.Appraiser.General.DatasourceDevicePnpAdd . Empty string
 - **CosPopulatedFromId**  The expected uplevel driver matching ID based on driver coverage data.
 - **IsBootCritical**  Indicates whether the device boot is critical.
-- **SdbEntries**  Deprecated in RS3.
 - **UplevelInboxDriver**  Indicates whether there is a driver uplevel for this device.
 - **WuDriverCoverage**  Indicates whether there is a driver uplevel for this device, according to Windows Update.
 - **WuDriverUpdateId**  The Windows Update ID of the applicable uplevel driver.
@@ -102,10 +101,6 @@ The following fields are available:
 This event sends compatibility database data about driver packages to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveRemove
@@ -636,7 +631,6 @@ The following fields are available:
 - **Categories**  A comma separated list of functional categories in which the container belongs.
 - **DiscoveryMethod**  The discovery method for the device container.
 - **FriendlyName**  The name of the device container.
-- **Icon**  Deprecated in RS3. The path or index to the icon file.
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsConnected**  For a physically attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
 - **IsMachineContainer**  Is the container the root device itself?

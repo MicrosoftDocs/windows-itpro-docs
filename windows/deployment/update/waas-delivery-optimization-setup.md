@@ -128,6 +128,8 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
+
+Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
  
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 

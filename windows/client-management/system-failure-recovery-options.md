@@ -8,8 +8,8 @@ author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/22/2019
-ms.reviewer: 
-manager: dcscontentpm
+ms.reviewer: dcscontentpm
+manager: dansimp
 ---
 
 # Configure system failure and recovery options in Windows
