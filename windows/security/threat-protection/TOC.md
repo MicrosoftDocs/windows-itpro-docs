@@ -593,6 +593,9 @@
 
 #### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
+### [Migration guides]
+#### [Migrate from Symantec to Microsoft Defender ATP](microsoft-defender-atp/migrate-symantec-to-microsoft-defender-atp.md)
+
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
 #### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
