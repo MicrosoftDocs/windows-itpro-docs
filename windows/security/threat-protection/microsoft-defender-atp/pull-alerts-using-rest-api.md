@@ -27,8 +27,9 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
 >- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+>-The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 Microsoft Defender ATP supports the OAuth 2.0 protocol to pull detections from the API.
 

@@ -52,8 +52,8 @@ landingContent:
             url: microsoft-surface-deployment-accelerator.md
           - text: Autopilot and Surface devices
             url: windows-autopilot-and-surface-devices.md
-          - text: Deploying, managing, and servicing Surface Pro X
-            url: surface-pro-arm-app-management.md
+          - text: Windows Virtual Desktop on Surface
+            url: windows-virtual-desktop-surface.md
   
     # Card
   - title: Manage Surface devices
