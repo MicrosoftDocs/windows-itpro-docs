@@ -11,8 +11,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 8/30/2018
-ms.author: pashort
-author: shortpatti
 ---
 
 # Applying hotfixes on MBAM 2.5 SP1
