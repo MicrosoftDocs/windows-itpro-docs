@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: danihalfin
-ms.author: v-medgar
+ms.author: dansimp
 manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article

@@ -52,23 +52,23 @@ manager: dansimp
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -85,7 +85,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in next major release of Windows 10. This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
+Added in Windows 10, version 2004. This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -283,6 +283,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 
