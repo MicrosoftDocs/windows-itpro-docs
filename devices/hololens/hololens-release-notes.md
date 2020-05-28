@@ -164,7 +164,7 @@ Improvements and Fixes also in the update:
 
 ### Known issues
 
-We are investigating an issue surrounding the use of the zh-CN system language that prevents the voice commands for taking a mixed reality capture or displaying the device IP address from working.
+- We are investigating an issue surrounding the use of the zh-CN system language that prevents the voice commands for taking a mixed reality capture or displaying the device IP address from working.
 
 ## Windows Holographic, version 1903 - May 2020 Update 
 - Build 18362.1061
