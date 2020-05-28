@@ -68,10 +68,10 @@ Use the following resources to plan your roles and permissions:
 
 ### Several options to set up RBAC
 
-RBAC can be set up and configured using Intune, Configuration Manager, Group Policy Objects, or the Windows Admin Center.  
-- If your organization is using Windows 10, macOS, iOS, or Android devices, consider [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).  
-- If your organization's devices are running other versions of Windows, such as for Windows 7 SP1, Windows 8.0, Windows 8.1, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019 management, consider [setting up RBAC using Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration).  
-- 
+RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), or the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
+
+We recommend [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control), because this method can support Windows 10, macOS, iOS, and Android devices.    
+
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
