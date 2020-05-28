@@ -21,16 +21,7 @@ ms.topic: article
 
 If you are thinking about switching from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan and execute your migration.  
 
-Microsoft Defender ATP includes the following capabilities:
-- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-- [Tools to surgically reduce the attack surface](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
-- [Next-generation protection to block threats and malware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
-- [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
-- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
-
-## The process at a high level
+## The migration process at a high level
 
 Use the following process to make the switch from Symantec to Microsoft Defender ATP:
 
@@ -47,9 +38,26 @@ Use the following process to make the switch from Symantec to Microsoft Defender
 
 ## Step 1: Get Microsoft Defender ATP
 
-To get started, you must have Microsoft Defender ATP. [Learn more, and start a trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). 
+To get started, you must have Microsoft Defender ATP. If you don't already have Microsoft Defender ATP, you can [start a trial](https://aka.ms/mdatp) and see how it works.  
+
+Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response, and includes the following features and capabilities:
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Tools to surgically reduce the attack surface](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
+- [Next-generation protection to block threats and malware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
+- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
+
+The Microsoft Defender Security Center ([https://securitycenter.windows.com/](https://securitycenter.windows.com/)), also referred to as the Microsoft Defender ATP portal, is where you can access the features and capabilities of Microsoft Defender ATP. Permissions to the Microsoft Defender Security Center can be granted using basic permissions, or through role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
+
+Use the following resources to plan your roles and permissions:
+
+- [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control)
+
+[Manage portal access using role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
