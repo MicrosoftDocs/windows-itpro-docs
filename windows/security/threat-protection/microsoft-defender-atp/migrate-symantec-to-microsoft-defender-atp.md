@@ -41,12 +41,19 @@ Use the following process to make the switch from Symantec to Microsoft Defender
 To get started, you must have Microsoft Defender ATP. If you don't already have Microsoft Defender ATP, you can [start a trial](https://aka.ms/mdatp) and see how it works.  
 
 Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response, and includes the following features and capabilities:
+
 - [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+
 - [Tools to surgically reduce the attack surface](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
+
 - [Next-generation protection to block threats and malware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+
 - [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+
 - [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
 - [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
+
 - [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
@@ -59,9 +66,12 @@ Use the following resources to plan your roles and permissions:
 
 - [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-> [!TIP]
-> - If your organization is using Windows 10, macOS, iOS, or Android devices, consider [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).  
-> - If your organization's devices are running other versions of Windows, such as for Windows 7 SP1, Windows 8.0, Windows 8.1, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019 management, consider [setting up RBAC using Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration).  
+### Several options to set up RBAC
+
+RBAC can be set up and configured using Intune, Configuration Manager, Group Policy Objects, or the Windows Admin Center.  
+- If your organization is using Windows 10, macOS, iOS, or Android devices, consider [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).  
+- If your organization's devices are running other versions of Windows, such as for Windows 7 SP1, Windows 8.0, Windows 8.1, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019 management, consider [setting up RBAC using Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration).  
+- 
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
