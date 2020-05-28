@@ -26,6 +26,7 @@ System SKU is a variable (along with System Model and others) stored in System M
 | Surface Book 2 15inch                                        | Surface Book 2   | Surface_Book_1793                |
 | Surface Go Consumer                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
+| Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
 | Surface Pro 6 Consumer                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
 | Surface Pro 6 Commercial                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
 | Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
