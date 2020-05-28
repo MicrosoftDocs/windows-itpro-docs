@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.topic: 
+ms.topic: conceptual
 ---
 
 # How Mobile Device Management Providers support eSIM Management on Windows
