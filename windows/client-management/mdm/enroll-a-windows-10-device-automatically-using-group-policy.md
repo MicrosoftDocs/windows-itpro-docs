@@ -113,7 +113,7 @@ Requirements:
 
     ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
-5. Click **Enable**, then click **OK**.
+5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
 
 > [!NOTE]
 > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. 
