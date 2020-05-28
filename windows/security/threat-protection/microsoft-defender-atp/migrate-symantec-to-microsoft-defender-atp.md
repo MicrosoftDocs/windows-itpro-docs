@@ -57,7 +57,7 @@ Use the following resources to plan your roles and permissions:
 
 - [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control)
 
-[Manage portal access using role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
