@@ -65,8 +65,10 @@ Below are the list of steps you can follow to block one or more packaged apps in
 1. Get the app identifier for an installed package
 
    ```powershell
-   $package = Get-AppxPackage -name <example_app>
+   $package = Get-AppxPackage -name *<example_app>*
    ```
+   Where the name of the app is surrounded by asterisks, for example &ast;windowsstore&ast;
+   
 2. Make a rule by using the New-CIPolicyRule cmdlet
 
    ```powershell   
