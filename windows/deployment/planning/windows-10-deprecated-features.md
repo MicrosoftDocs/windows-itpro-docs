@@ -26,7 +26,9 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it can be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
+| Companion Device Framework | The [Companion Device Framework](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-companion-device-framework) is no longer under active development.| 2004 |
+| Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
+| Dynamic Disks | The [Dynamic Disks](https://docs.microsoft.com/windows/win32/fileio/basic-and-dynamic-disks#dynamic-disks) feature is no longer being developed. This feature will be fully replaced by [Storage Spaces](https://docs.microsoft.com/windows-server/storage/storage-spaces/overview) in a future release.| 2004 |
 | Language Community tab in Feedback Hub | The Language Community tab will be removed from the Feedback Hub. The standard feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2) is the recommended way to provide translation feedback. | 1909 |
 | My People / People in the Shell |  My People is no longer being developed. It may be removed in a future update. | 1909 |
 | Package State Roaming (PSR) |  PSR will be removed in a future update. PSR allows non-Microsoft developers to access roaming data on devices, enabling developers of UWP applications to write data to Windows and synchronize it to other instantiations of Windows for that user. <br>&nbsp;<br>The recommended replacement for PSR is [Azure App Service](https://docs.microsoft.com/azure/app-service/). Azure App Service is widely supported, well documented, reliable, and supports cross-platform/cross-ecosystem scenarios such as iOS, Android and web. | 1909 |
