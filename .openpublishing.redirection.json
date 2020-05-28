@@ -1353,7 +1353,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-splunk.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-siem-integration",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem",
 "redirect_document_id": false
 },
 {
@@ -14392,11 +14392,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/update/waas-wufb-intune.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/manage/manage-settings-app-with-group-policy.md",
 "redirect_url": "https://docs.microsoft.com/windows/client-management/manage-settings-app-with-group-policy",
 "redirect_document_id": true
@@ -14652,9 +14647,9 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
-"redirect_url": "https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1903",
-"redirect_document_id": true
+    "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
+    "redirect_url": "https://docs.microsoft.com/windows/privacy/required-windows-diagnostic-events-and-fields-2005",
+    "redirect_document_id": true
 },
 {
 "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703.md",
