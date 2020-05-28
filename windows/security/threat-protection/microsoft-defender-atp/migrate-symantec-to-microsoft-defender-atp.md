@@ -38,9 +38,11 @@ Use the following process to make the switch from Symantec to Microsoft Defender
 
 ## Step 1: Get Microsoft Defender ATP
 
-To get started, you must have Microsoft Defender ATP. If you don't already have Microsoft Defender ATP, you can [start a trial](https://aka.ms/mdatp) and see how it works.  
+To get started, you must have Microsoft Defender ATP. If you don't already have Microsoft Defender ATP, you can [start a trial](https://aka.ms/mdatp). 
 
-Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response, and includes the following features and capabilities:
+### Wait, what is Microsoft Defender ATP?
+
+Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the following features and capabilities:
 
 - [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 
@@ -66,12 +68,11 @@ Use the following resources to plan your roles and permissions:
 
 - [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### Several options to set up RBAC
+### Set up RBAC
 
-RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), or the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
+RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), and the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
 
-We recommend [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control), because this method can support Windows 10, macOS, iOS, and Android devices.    
-
+We recommend [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control), especially if your organization is using Windows 10, macOS, iOS, and Android devices.    
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
