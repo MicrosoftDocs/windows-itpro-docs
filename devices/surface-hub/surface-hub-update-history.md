@@ -37,7 +37,7 @@ This update is specific to the Surface Hub 2S and provides the driver and firmwa
   * Improves system stability.
 * Surface System driver - 1.7.139.0
   * Improves system stability.
-* Surface SMC Firmware update - 1.173.139.0
+* Surface SMC Firmware update - 1.176.139.0
   * Improves system stability.
 </details>
 

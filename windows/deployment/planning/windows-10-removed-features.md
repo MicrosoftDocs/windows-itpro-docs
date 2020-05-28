@@ -27,6 +27,9 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
+| Cortana | Cortana has been updated and enhanced in the Windows 10 May 2020 Update. With [these changes](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-2004#cortana), some previously available consumer skills such as music, connected home, and other non-Microsoft skills are no longer available. | 2004 |
+| Windows To Go | Windows To Go was announced as deprecated in Windows 10, version 1903 and is removed in this release. | 2004 |
+| Mobile Plans and Messaging apps | Both apps are still supported, but are now distributed in a different way. OEMs can now include these apps in Windows images for cellular enabled devices.  The apps are removed for non-cellular devices.| 2004 |
 | PNRP APIs| ​The Peer Name Resolution Protocol (PNRP) cloud service was removed in Windows 10, version 1809. We are planning to complete the removal process by removing the corresponding APIs.  | 1909 |
 | Taskbar settings roaming | Roaming of taskbar settings is removed in this release. This feature was announced as no longer being developed in Windows 10, version 1903. | 1909 |
 | Desktop messaging app doesn't offer messages sync |  The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message.  | 1903 |

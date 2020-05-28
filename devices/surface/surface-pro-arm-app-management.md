@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.localizationpriority: high
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.date: 4/15/2020
 ms.reviewer: jessko

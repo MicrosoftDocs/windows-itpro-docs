@@ -30,14 +30,17 @@ To onboard machines without Internet access, you'll need to take the following g
 Windows Server 2016 and earlier or Windows 8.1 and earlier.
 
 > [!NOTE]
-> An OMS gateway server can still be used as proxy for disconnected Windows 10 machines when configured via 'TelemetryProxyServer' registry or GPO.
+> - An OMS gateway server cannot be used as proxy for disconnected Windows 10 or Windows Server 2019 machines when configured via 'TelemetryProxyServer' registry or GPO.
+> - For Windows 10 or Windows Server 2019 - while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.
+> - In addition, Windows 10 or Windows Server 2019 in disconnected environments must be able to update Certificate Trust Lists offline via an internal file or web server.
+> - For more information about updating CTLs offline, see (Configure a file or web server to download the CTL files)[https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files].
 
-For more information, see the following articles:
+For more information about onboarding methods, see the following articles:
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel)
 - [Onboard servers to the Microsoft Defender ATP service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## On-premise machines
+## On-premises machines
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
