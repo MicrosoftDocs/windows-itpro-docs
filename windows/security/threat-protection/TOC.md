@@ -328,6 +328,8 @@
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
+#### [Client behavioral blocking](microsoft-defender-atp/client-behavioral-blocking.md)
+#### [Feedback-loop blocking](microsoft-defender-atp/feedback-loop-blocking.md)
 #### [EDR in block mode](microsoft-defender-atp/edr-in-block-mode.md)
 
 ### [Automated investigation and response (AIR)]()
@@ -418,8 +420,6 @@
 ###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [APIs]()
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
@@ -442,7 +442,6 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-
 #### [Microsoft Defender ATP API]()
 ##### [Get started]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
@@ -575,7 +574,6 @@
 ##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
 ##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
