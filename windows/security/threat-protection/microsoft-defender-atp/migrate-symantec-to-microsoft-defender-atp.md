@@ -42,7 +42,7 @@ To get started, you must have Microsoft Defender ATP. If you don't already have 
 
 ### Wait, what is Microsoft Defender ATP?
 
-Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the following features and capabilities:
+Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
 
 - [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 
@@ -52,27 +52,25 @@ Microsoft Defender ATP is a unified platform for preventative protection, post-b
 
 - [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 
-- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
 - [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
 
-- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+- [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
 
-The Microsoft Defender Security Center ([https://securitycenter.windows.com/](https://securitycenter.windows.com/)), also referred to as the Microsoft Defender ATP portal, is where you can access the features and capabilities of Microsoft Defender ATP. Permissions to the Microsoft Defender Security Center can be granted using basic permissions, or through role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
+The Microsoft Defender Security Center ([https://securitycenter.windows.com/](https://securitycenter.windows.com/)), also referred to as the Microsoft Defender ATP portal, is where you can access the features and capabilities of Microsoft Defender ATP. [Get an overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
-Use the following resources to plan your roles and permissions:
+Permissions to the Microsoft Defender Security Center can be granted using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
-- [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control)
+1. Plan roles and permissions. See [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control).
 
-- [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+2. RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), and the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
 
-### Set up RBAC
+   We recommend using Intune, especially if your organization is using Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
-RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), and the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
-
-We recommend [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control), especially if your organization is using Windows 10, macOS, iOS, and Android devices.    
+3. After your roles are defined and RBAC is set up, grant access to the Microsoft Defender Security Center. See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
