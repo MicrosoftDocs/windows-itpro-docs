@@ -196,6 +196,9 @@ Example:
 ## Related articles
 
 - [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
+
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
+
 - [Enable cloud-delivered protection](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)
