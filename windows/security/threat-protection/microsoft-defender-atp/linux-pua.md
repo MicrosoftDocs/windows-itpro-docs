@@ -53,7 +53,7 @@ You can configure how PUA files are handled from the command line or from the ma
 In Terminal, execute the following command to configure PUA protection:
 
 ```bash
-$ mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
+$ mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
 ```
 
 ### Use the management console to configure PUA protection:

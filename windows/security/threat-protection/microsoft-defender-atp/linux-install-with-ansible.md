@@ -241,8 +241,8 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
 - Validation/configuration:
 
     ```bash
-    $ ansible -m shell -a 'mdatp --connectivity-test' all
-    $ ansible -m shell -a 'mdatp --health' all
+    $ ansible -m shell -a 'mdatp connectivity test' all
+    $ ansible -m shell -a 'mdatp health' all
     ```
 
 - Uninstallation:

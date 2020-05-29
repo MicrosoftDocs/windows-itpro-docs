@@ -31,29 +31,24 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
    ```bash
-   $ mdatp --log-level verbose
-   Creating connection to daemon
-   Connection established
-   Operation succeeded
+   $ mdatp log level set --level verbose
+   Log level configured successfully
    ```
 
 2. Reproduce the problem.
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds:
+3. Run `sudo mdatp diagnostic create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds:
 
    ```bash
-   $ sudo mdatp --diagnostic --create
-   Creating connection to daemon
-   Connection established
+   $ sudo mdatp diagnostic create
+   Diagnostic file created: <path to file>
    ```
 
 4. Restore logging level:
 
    ```bash
-   $ mdatp --log-level info
-   Creating connection to daemon
-   Connection established
-   Operation succeeded
+   $ mdatp log level set --level info
+   Log level configured successfully
    ```
 
 ## Log installation issues
@@ -78,21 +73,22 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp --config realTimeProtectionEnabled [true/false]`                |
-|Configuration|Turn on/off cloud protection               |`mdatp --config cloudEnabled [true/false]`                             |
-|Configuration|Turn on/off product diagnostics            |`mdatp --config cloudDiagnosticEnabled [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp --config cloudAutomaticSampleSubmission [true/false]`           |
-|Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
-|Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
-|Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
-|Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
-|Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
+|Configuration|Turn on/off real-time protection           |`mdatp config real_time_protection --value [enabled|disabled]`         |
+|Configuration|Turn on/off cloud protection               |`mdatp config cloud --value [enabled|disabled]`                        |
+|Configuration|Turn on/off product diagnostics            |`mdatp config cloud-diagnostic --value [enabled|disabled]`             |
+|Configuration|Turn on/off automatic sample submission    |`mdatp config cloud-automatic-sample-submission [enabled|disabled]`    |
+|Configuration|Turn on/off AV passive mode                |`mdatp config passive-mode [enabled|disabled]`                         |
+|Configuration|Turn on PUA protection                     |`mdatp threat policy set --type potentially_unwanted_application --action block` |
+|Configuration|Turn off PUA protection                    |`mdatp threat policy set --type potentially_unwanted_application --action off` |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
+|Diagnostics  |Change the log level                       |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create`                                              |
+|Health       |Check the product's health                 |`mdatp health`                                                         |
+|Protection   |Scan a path                                |`mdatp scan custom --path [path]`                                      |
+|Protection   |Do a quick scan                            |`mdatp scan quick`                                                     |
+|Protection   |Do a full scan                             |`mdatp scan full`                                                      |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                    |
+|Protection   |Request a security intelligence update     |`mdatp definitions update`                                             |
 
 ## Microsoft Defender ATP portal information
 
