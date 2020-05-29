@@ -43,9 +43,31 @@ Microsoft Defender ATP is a unified platform for preventative protection, post-b
 
 Use the following process to make the switch from Symantec to Microsoft Defender ATP:
 
-| Part 1: Get Microsoft Defender ATP | Part 2: Configure settings and exclusions | Part 3: Make the switch |
-|---|---|---|
-|[Step 1: Get Microsoft Defender ATP](#step-1-get-microsoft-defender-atp)<br/>[Step 2: Grant access to the Microsoft Defender Security Center](#step-2-grant-access-to-the-microsoft-defender-security-center)<br/>[Step 3: Configure device proxy and internet connectivity settings](#step-3-configure-device-proxy-and-internet-connectivity-settings) |[Step 4: Set Microsoft Defender ATP to passive mode](#step-4-set-microsoft-defender-atp-to-passive-mode)<br/>[Step 5: Re-enable Microsoft Defender Antivirus](#step-5-re-enable-microsoft-defender-antivirus)<br/>[Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#step-6-add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec)<br/>[Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list](#step-7-add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list) |[Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units)<br/>[Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec)<br/>[Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
+### Part 1: Get Microsoft Defender ATP started 
+
+[Step 1: Get Microsoft Defender ATP](#step-1-get-microsoft-defender-atp)
+
+[Step 2: Grant access to the Microsoft Defender Security Center](#step-2-grant-access-to-the-microsoft-defender-security-center)
+
+[Step 3: Configure device proxy and internet connectivity settings](#step-3-configure-device-proxy-and-internet-connectivity-settings)
+
+### Part 2: Configure settings and exclusions 
+
+[Step 4: Set Microsoft Defender ATP to passive mode](#step-4-set-microsoft-defender-atp-to-passive-mode)
+
+[Step 5: Re-enable Microsoft Defender Antivirus](#step-5-re-enable-microsoft-defender-antivirus)
+
+[Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#step-6-add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec)
+
+[Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list](#step-7-add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list)
+
+### Part 3: Finish making the switch to Microsoft Defender ATP
+
+[Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units)
+
+[Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec)
+
+[Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
 
 
 ## Step 1: Get Microsoft Defender ATP
@@ -54,7 +76,7 @@ To get started, you must have Microsoft Defender ATP with licenses assigned and 
 
 1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a trial or request a quote](https://aka.ms/mdatp). 
 
-2. Verify that your licenses are properly provisioned. See [Check license state](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
+2. Verify that your licenses are properly provisioned. See [Check license state](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
 
 3. 
 
@@ -99,14 +121,14 @@ Add Symantec and your other security solutions to the Microsoft Defender ATP EDR
 
 You can choose from several methods to onboard devices to Microsoft Defender ATP. 
 
-## Post-setup management of Microsoft Defender ATP
+## Managing Microsoft Defender ATP
 
-After you have set up Microsoft Defender ATP, you can choose from several methods to manage your threat protection features, as listed in the following table:
+After you have moved to Microsoft Defender ATP, you can choose from several methods to manage your threat protection features. We recommend using Intune. The following table lists various resources to manage features and capabilities of Microsoft Defender ATP with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
-|Method | Task |
+|Task | Resources to learn more |
 |---|---|
-|Intune |[Configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus) | 
-| |Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |
+|Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection) | 
+|Specify device restrictions for Microsoft Defender Antivirus |[Device restrictions: Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) |
 | |Manage device restrictions for Microsoft Defender Antivirus |
 | |Manage Microsoft Defender Antivirus exclusions |
 
