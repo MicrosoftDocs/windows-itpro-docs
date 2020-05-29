@@ -127,7 +127,7 @@ Example:
 
 3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Attack surface reduction**.
 
-4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section:
+4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section.
 
    Click **Show...** and enter the rule ID in the **Value name** column and your desired state in the **Value** column as follows:
 
@@ -176,11 +176,11 @@ Example:
     > Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID 1>,<rule ID 2>,<rule ID 3>,<rule ID 4> -AttackSurfaceReductionRules_Actions Enabled, Enabled, Disabled, AuditMode
     > ```
 
-    You can also the `Add-MpPreference` PowerShell verb to add new rules to the existing list.
+    You can also use the `Add-MpPreference` PowerShell verb to add new rules to the existing list.
 
     > [!WARNING]
     > `Set-MpPreference` will always overwrite the existing set of rules. If you want to add to the existing set, you should use `Add-MpPreference` instead.
-    > You can obtain a list of rules and their current state by using `Get-MpPreference`
+    > You can obtain a list of rules and their current state by using `Get-MpPreference`.
 
 3. To exclude files and folders from ASR rules, use the following cmdlet:
 
