@@ -24,7 +24,7 @@ ms.reviewer:
 
 
 ## Enable Windows Defender Credential Guard
-Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard [hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
+Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard [hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
 The same set of procedures used to enable Windows Defender Credential Guard on physical machines applies also to virtual machines.
 
 
@@ -113,15 +113,15 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 <span id="hardware-readiness-tool"/>
 
-### Enable Windows Defender Credential Guard by using the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool
+### Enable Windows Defender Credential Guard by using the HVCI and Windows Defender Credential Guard hardware readiness tool
 
-You can also enable Windows Defender Credential Guard by using the [Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
+You can also enable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
 ```
 DG_Readiness_Tool.ps1 -Enable -AutoReboot
 ```
 > [!IMPORTANT]
-> When running the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
 > This is a known issue.
 
 ### Review Windows Defender Credential Guard performance
@@ -138,13 +138,13 @@ You can view System Information to check that Windows Defender Credential Guard 
 
     ![System Information](images/credguard-msinfo32.png)
 
-You can also check that Windows Defender Credential Guard is running by using the [Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
+You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
 ```
 DG_Readiness_Tool_v3.6.ps1 -Ready
 ```
 > [!IMPORTANT]
-> When running the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
 > This is a known issue.
 
 > [!NOTE]
@@ -209,20 +209,20 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 > [!NOTE]
 > Credential Guard and Device Guard are not currently supported when using Azure IaaS VMs. These options will be made available with future Gen 2 VMs.
 
-For more info on virtualization-based security and Hypervisor-Protected Code Integrity, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
+For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
 ).
 
 <span id="turn-off-with-hardware-readiness-tool"/>
 
-#### Disable Windows Defender Credential Guard by using the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool
+#### Disable Windows Defender Credential Guard by using the HVCI and Windows Defender Credential Guard hardware readiness tool
 
-You can also disable Windows Defender Credential Guard by using the [Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
+You can also disable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
 ```
 DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
 > [!IMPORTANT]
-> When running the Hypervisor-Protected Code Integrity and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
 > This is a known issue.
 
 #### Disable Windows Defender Credential Guard for a virtual machine

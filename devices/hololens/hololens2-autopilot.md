@@ -71,7 +71,7 @@ Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows
 Before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:
 
 - The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune.
-- Every device can connect to the internet. You can use a wired or wireless connection.
+- Every device can connect to the internet. You can "USB C to Ethernet" adapters for wired internet connectivity or "USB C to Wifi" adapters for wireless internet connectivity. 
 - Every device can connect to a computer by using a USB-C cable, and that computer has the following available:
   - Advanced Recovery Companion (ARC)
   - The latest Windows update: Windows 10, version 19041.1002.200107-0909 or a later version)
@@ -185,24 +185,7 @@ The Enrollment Status Page (ESP) displays the status of the complete device conf
 
 ![ESP configuration](./images/hololens-ap-profile-settings.png)
 
-### 8. Configure a custom configuration profile for HoloLens devices (known issue)
-
-1. In [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), select **Devices** > **Configuration profiles** > **Create profile**.
-1. For **Platform**, specify **Windows 10 and later**, and for **Profile**, select **Custom**.
-1. Select **Create**.
-1. Enter a name for the profile, and then select **Settings** > **Configure**.  
-   
-   ![Settings for the custom configuration profile.](./images/hololens-ap-profile-settings-oma.png)
-1. Select **Add**, and then specify the following information:  
-
-   - **Name**: SidecarPath
-   - **OMA-URI**: ./images/Device/Vendor/MSFT/EnrollmentStatusTracking/DevicePreparation/PolicyProviders/Sidecar/InstallationState
-   - **Data type**: Integer
-   - **Value**: 2
-1. Select **OK** two times, and then select **Create** to create the profile.
-1. After Intune creates the configuration profile, assign the configuration profile to the device group for the HoloLens devices.
-
-### 9. Verify the profile status of the HoloLens devices
+### 8. Verify the profile status of the HoloLens devices
 
 1. In Microsoft Endpoint Manager Admin Center, select **Devices** > **Windows** > **Windows enrollment** > **Devices**.
 1. Verify that the HoloLens devices are listed, and that their profile status is **Assigned**.  
@@ -234,7 +217,7 @@ At the end of OOBE, you can sign in to the device by using your user name and pa
 
 ## Known Issues
 
-- The list of supported languages for Autopilot deployment profiles includes languages that HoloLens does not support. Select a language that [HoloLens supports](hololens2-language-support.md).
+- You cannot install applications that use the device security context.
 
 ## Feedback
 

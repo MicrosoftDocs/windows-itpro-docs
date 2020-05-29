@@ -36,8 +36,6 @@
 
 ## [Safety Scanner download](safety-scanner-download.md)
 
-## [Industry tests](top-scoring-industry-antivirus-tests.md)
-
 ## [Industry collaboration programs](cybersecurity-industry-partners.md)
 
 ### [Virus information alliance](virus-information-alliance-criteria.md)

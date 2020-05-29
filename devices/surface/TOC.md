@@ -29,6 +29,7 @@
 
 ### [Deploy Surface devices](deploy.md)
 ### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
+### [Windows Virtual Desktop on Surface](windows-virtual-desktop-surface.md)
 ### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 ### [Surface Pro X app compatibility](surface-pro-arm-app-performance.md)
 ### [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
@@ -37,7 +38,6 @@
 ### [Enable the Surface Laptop keyboard during MDT deployment](enable-surface-keyboard-for-windows-pe-deployment.md)
 ### [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
 ### [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
-### [Using the Surface Deployment Accelerator deployment share](using-the-sda-deployment-share.md)
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage

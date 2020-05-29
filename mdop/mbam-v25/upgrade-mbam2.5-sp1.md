@@ -2,11 +2,10 @@
 title: Upgrading from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
 author: dansimp
 ms.author: ksharma
-manager: 
+manager: miaposto
 audience: ITPro  
 ms.topic: article  
 ms.prod: w10
-manager: miaposto
 ms.localizationpriority: Normal
 --- 
 

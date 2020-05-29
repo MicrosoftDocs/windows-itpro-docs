@@ -10,7 +10,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
