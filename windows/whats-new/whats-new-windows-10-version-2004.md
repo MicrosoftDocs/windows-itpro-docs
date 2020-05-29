@@ -74,7 +74,7 @@ If you configure the language settings in the Autopilot profile and the device i
 
 ### Microsoft Endpoint Manager
 
-An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
+An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
 Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new).
 
@@ -121,13 +121,9 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ## Virtualization
 
-### Containers on Windows
-
-This update includes 5 fixes to allow the host to run down-level containers on up-level for process (Argon) isolation. Previously [Containers on Windows](https://docs.microsoft.com/virtualization/windowscontainers/) required matched host and container version. This limited Windows containers from supporting mixed-version container pod scenarios.
-
 ### Windows Sandbox
 
-[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature was released with Windows 10, version 1903. Windows 10, version 2004 includes bugfixes and enables even more control over configuration.
+[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature was released with Windows 10, version 1903. Windows 10, version 2004 includes bug fixes and enables even more control over configuration.
 
 [Windows Sandbox configuration](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file) includes:
 - MappedFolders now supports a destination folder. Previously no destination could be specified, it was always mapped to the Sandbox desktop.
@@ -235,6 +231,7 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
+[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/)<br>
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
