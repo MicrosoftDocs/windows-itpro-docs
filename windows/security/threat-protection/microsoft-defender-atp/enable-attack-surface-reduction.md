@@ -131,11 +131,11 @@ Example:
 
    Click **Show...** and enter the rule ID in the **Value name** column and your desired state in the **Value** column as follows:
 
-    - Disable = 0
-    - Block (enable ASR rule) = 1
-    - Audit = 2
+   - Disable = 0
+   - Block (enable ASR rule) = 1
+   - Audit = 2
 
-     ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](../images/asr-rules-gp.png)
+   ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](../images/asr-rules-gp.png)
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
