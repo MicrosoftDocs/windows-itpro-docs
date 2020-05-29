@@ -28,12 +28,22 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.6.0.42</I>
+<I>Current downloadable version of SetupDiag: 1.6.0.42</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
+
+## SetupDiag in Windows 10, version 2004 and later
+
+With the release of Windows 10, version 2004, SetupDiag is included with Windows Setup.
+
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, SetupDiag.exe is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
+
+If the upgrade process proceeds normally, this directory is moved under **%SystemDrive%\Windows.Old** for cleanup. If this directory is deleted, SetupDiag.exe will also be removed.
+
+## Using SetupDiag
 
 To quickly use SetupDiag on your current computer:
 1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
