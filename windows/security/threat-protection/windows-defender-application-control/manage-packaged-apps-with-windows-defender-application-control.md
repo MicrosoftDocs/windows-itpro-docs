@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/14/2019
+ms.date: 05/29/2020
 ---
 
 # Manage Packaged Apps with Windows Defender Application Control 
@@ -121,9 +121,9 @@ If the app you intend to block is not installed on the system you are using the 
 
 3. Copy the GUID in the URL for the app
     - Example: the GUID for the Microsoft To-Do app is 9nblggh5r558
-    - https://www.microsoft.com/p/microsoft-to-do-list-task-reminder/9nblggh5r558?activetab=pivot:overviewtab 
+    - `https://www.microsoft.com/p/microsoft-to-do-list-task-reminder/9nblggh5r558?activetab=pivot:overviewtab` 
 4. Use the GUID in the following REST query URL to retrieve the identifiers for the app
-   - Example: for the Microsoft To-Do app, the URL would be https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblggh5r558/applockerdata
+   - Example: for the Microsoft To-Do app, the URL would be `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblggh5r558/applockerdata`
    - The URL will return:
    
    ```
@@ -143,4 +143,4 @@ The method for allowing specific packaged apps is similar to the method outlined
 $Rule = New-CIPolicyRule -Package $package -allow
 ```
 
-Since a lot of system apps are packaged apps, it is generally advised that customers rely on the sample policies in C:\Windows\schemas\CodeIntegrity\ExamplePolicies to help allow all inbox apps by the Store signature already included in the policies and control apps with deny rules. 
+Since a lot of system apps are packaged apps, it is generally advised that customers rely on the sample policies in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` to help allow all inbox apps by the Store signature already included in the policies and control apps with deny rules. 
