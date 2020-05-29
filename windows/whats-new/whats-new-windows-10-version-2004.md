@@ -123,7 +123,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ### Windows Sandbox
 
-[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature was released with Windows 10, version 1903. Windows 10, version 2004 includes bugfixes and enables even more control over configuration.
+[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature was released with Windows 10, version 1903. Windows 10, version 2004 includes bug fixes and enables even more control over configuration.
 
 [Windows Sandbox configuration](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file) includes:
 - MappedFolders now supports a destination folder. Previously no destination could be specified, it was always mapped to the Sandbox desktop.
