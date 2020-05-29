@@ -25,6 +25,33 @@ ms.topic: reference
 
 Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
 
+## New Group Policy settings in Windows 10, version 1903
+
+The following Group Policy settings were added in Windows 10, version 1903:
+
+**System**
+
+- System\Service Control Manager Settings\Security Settings\Enable svchost.exe mitigation options
+- System\Storage Sense\Allow Storage Sense
+- System\Storage Sense\Allow Storage Sense Temporary Files cleanup
+- System\Storage Sense\Configure Storage Sense
+- System\Storage Sense\Configure Storage Sense Cloud content dehydration threshold
+- System\Storage Sense\Configure Storage Sense Recycle Bin cleanup threshold
+- System\Storage Sense\Configure Storage Sense Downloads cleanup threshold
+- System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool\Troubleshooting:Allow users to access recommended troubleshooting for known problems
+
+
+**Windows Components**
+
+- Windows Components\App Privacy\Let Windows apps activate with voice 
+- Windows Components\App Privacy\Let Windows apps activate with voice while the system is locked
+- Windows Components\Data Collection and Preview Builds\Allow commercial data pipeline
+- Windows Components\Data Collection and Preview Builds\Configure collection of browsing data for Desktop Analytics 
+- Windows Components\Data Collection and Preview Builds\Configure diagnostic data upload endpoint for Desktop Analytics
+- Windows Components\Delivery Optimization\Delay background download Cache Server fallback (in seconds)
+- Windows Components\Delivery Optimization\Delay Foreground download Cache Server fallback (in seconds)
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use WDDM graphics display driver for Remote Desktop Connections
+- Windows Components\Windows Logon Options\Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot
 
 ## New Group Policy settings in Windows 10, version 1809
 
@@ -493,7 +520,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
 
 
 
