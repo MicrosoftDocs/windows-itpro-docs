@@ -235,6 +235,7 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
+[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/)<br>
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
