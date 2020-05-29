@@ -119,7 +119,7 @@ The following Windows Autopilot features are available in Windows 10, version 19
 
 ### Microsoft Endpoint Configuration Manager
 
-An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
+An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
 ### Windows 10 Subscription Activation
 

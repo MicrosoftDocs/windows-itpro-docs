@@ -74,7 +74,7 @@ If you configure the language settings in the Autopilot profile and the device i
 
 ### Microsoft Endpoint Manager
 
-An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuraton Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
+An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
 Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new).
 
@@ -120,10 +120,6 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
 ## Virtualization
-
-### Containers on Windows
-
-This update includes 5 fixes to allow the host to run down-level containers on up-level for process (Argon) isolation. Previously [Containers on Windows](https://docs.microsoft.com/virtualization/windowscontainers/) required matched host and container version. This limited Windows containers from supporting mixed-version container pod scenarios.
 
 ### Windows Sandbox
 
