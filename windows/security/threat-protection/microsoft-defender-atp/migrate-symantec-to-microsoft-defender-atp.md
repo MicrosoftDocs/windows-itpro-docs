@@ -21,26 +21,7 @@ ms.topic: article
 
 If you are thinking about switching from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan and execute your migration.  
 
-## The migration process at a high level
-
-Use the following process to make the switch from Symantec to Microsoft Defender ATP:
-
-1. Get Microsoft Defender ATP. 
-2. Grant access to the Microsoft Defender Security Center. 
-3. Configure machine proxy and internet connectivity settings.
-4. Set Microsoft Defender ATP to passive mode.
-5. Re-enable Microsoft Defender Antivirus.
-6. Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
-7. Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
-8. Set up your device groups, device collections, and organizational units.
-9. Install Microsoft Defender ATP and uninstall Symantec.
-10. Onboard devices to Microsoft Defender ATP.
-
-## Step 1: Get Microsoft Defender ATP
-
-To get started, you must have Microsoft Defender ATP. If you don't already have Microsoft Defender ATP, you can [start a trial](https://aka.ms/mdatp). 
-
-### Wait, what is Microsoft Defender ATP?
+## What is Microsoft Defender ATP?
 
 Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
 
@@ -58,6 +39,34 @@ Microsoft Defender ATP is a unified platform for preventative protection, post-b
 
 - [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)
 
+## The migration process at a high level
+
+Use the following process to make the switch from Symantec to Microsoft Defender ATP:
+
+1. Get Microsoft Defender ATP. 
+2. Grant access to the Microsoft Defender Security Center. 
+3. Configure machine proxy and internet connectivity settings.
+4. Set Microsoft Defender ATP to passive mode.
+5. Re-enable Microsoft Defender Antivirus.
+6. Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
+7. Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
+8. Set up your device groups, device collections, and organizational units.
+9. Deploy Microsoft Defender ATP and uninstall Symantec.
+10. Onboard devices to Microsoft Defender ATP.
+
+## Step 1: Get Microsoft Defender ATP
+
+To get started, you must have Microsoft Defender ATP with licenses assigned and provisioned per the following steps:
+
+1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a trial or request a quote](https://aka.ms/mdatp). 
+
+2. Verify that your licenses are properly provisioned. See [Check license state](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
+
+3. 
+
+
+
+
 ## Step 2: Grant access to the Microsoft Defender Security Center
 
 The Microsoft Defender Security Center ([https://securitycenter.windows.com/](https://securitycenter.windows.com/)), also referred to as the Microsoft Defender ATP portal, is where you can access the features and capabilities of Microsoft Defender ATP. [Get an overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
@@ -66,9 +75,9 @@ Permissions to the Microsoft Defender Security Center can be granted using eithe
 
 1. Plan roles and permissions. See [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control).
 
-2. RBAC can be set up and configured using one of several different methods. These include [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), and the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
+2. RBAC can be set up and configured using one of several different methods. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), especially if your organization is using Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
-   We recommend using Intune, especially if your organization is using Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+    Depending on your organization's needs, you can another method, such as [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration), [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm), or the [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview). 
 
 3. After your roles are defined and RBAC is set up, grant access to the Microsoft Defender Security Center. See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
@@ -90,7 +99,7 @@ Add Symantec and your other security solutions to the Microsoft Defender ATP EDR
 
 ## Step 8: Set up your device groups, device collections, and organizational units
 
-## Step 9: Install Microsoft Defender ATP and uninstall Symantec
+## Step 9: Deploy Microsoft Defender ATP and uninstall Symantec
 
 ## Step 10: Onboard devices to Microsoft Defender ATP
 
