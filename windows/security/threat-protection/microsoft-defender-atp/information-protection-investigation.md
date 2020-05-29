@@ -48,7 +48,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 4. Select the **Devices** tab to identify devices storing files with sensitivity labels.
 
-    ![Image of device tab](images/investigate-machines-tab.png)
+    ![Image of device tab](images/investigate-devices-tab.png)
    
 
 5. Select the devices that store sensitive data and search through the timeline to identify which files may be impacted then take appropriate action to ensure that data is protected. 
