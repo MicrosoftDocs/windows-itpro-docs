@@ -19,7 +19,7 @@ ms.reviewer:
 # Configure Windows Hello for Business: Active Directory Federation Services
 
 **Applies to**
--   Windows10, version 1703 or later
+-   Windows 10, version 1703 or later
 -   Hybrid deployment
 -   Certificate trust
 
