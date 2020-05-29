@@ -37,7 +37,7 @@ The auto-enrollment relies on the presence of an MDM service and the Azure Activ
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
-In Windows 10, version 1709 or later, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. For additional information, see [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/).
+In Windows 10, version 1709 or later, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. For additional information, see [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)
 
 For this policy to work, you must verify that the MDM service provider allows the GP triggered MDM enrollment for domain joined devices.
 
@@ -52,9 +52,10 @@ The following steps demonstrate required settings using the Intune service:
 
     ![Auto-enrollment activation verification](images/auto-enrollment-activation-verification.png)
 
-> [!IMPORTANT]
-> For BYOD devices, the MAM user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device will use Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
-> For corporate devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
+    > [!IMPORTANT]
+    > For BYOD devices, the MAM user scope takes precedence if both MAM user scope and MDM user scope (automatic MDM enrollment) are enabled for all users (or the same groups of users). The device will use Windows Information Protection (WIP) Policies (if you configured them) rather than being MDM enrolled.
+    >
+    > For corporate devices, the MDM user scope takes precedence if both scopes are enabled. The devices get MDM enrolled.
 
 3. Verify that the device OS version is Windows 10, version 1709 or later.
 4. Auto-enrollment into Intune via Group Policy is valid only for devices which are hybrid Azure AD joined. This means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is  hybrid Azure AD joined, run  `dsregcmd /status` from the command line.
@@ -115,21 +116,21 @@ Requirements:
 
 5. Click **Enable**, then click **OK**.
 
-> [!NOTE]
-> In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. 
-The default behavior for older releases is to revert to **User Credential**.
+    > [!NOTE]
+    > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. 
+    > The default behavior for older releases is to revert to **User Credential**.
 
-When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
+    When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
-To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
+    To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
-If two-factor authentication is required, you will be prompted to complete the process. Here is an example screenshot.
+    If two-factor authentication is required, you will be prompted to complete the process. Here is an example screenshot.
 
-![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
+    ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
 
-> [!Tip]
-> You can avoid this behavior by using Conditional Access Policies in Azure AD.
-Learn more by reading [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+    > [!Tip]
+    > You can avoid this behavior by using Conditional Access Policies in Azure AD.
+    Learn more by reading [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 6. To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
 
