@@ -14,7 +14,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: daclark
 ms.topic: article
-ms.audience: itpro
+audience: itpro
 ---
 
 # Manage Surface driver updates in Configuration Manager
@@ -31,7 +31,7 @@ To manage Surface driver updates, the following prerequisites must be met:
 - All Software Update Points (SUPs) must run Windows Server 2016 or a later version. Otherwise, Configuration Manager ignores this setting and Surface drivers won't be synchronized.
 
 > [!NOTE]
-> If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the "FAQ" section.
+> If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the [FAQ](#frequently-asked-questions-faq) section.
 
 ## Useful log files
 
@@ -76,8 +76,8 @@ To enable Surface driver updates management in Configuration Manager, follow the
    - Windows 10 S Version 1709 and Later Servicing Drivers for testing
    - Windows 10 S Version 1709 and Later Upgrade & Servicing Drivers for testing
 
-> [!NOTE]
-> Most Surface drivers belong to multiple Windows 10 product groups. You may not have to select all the products that are listed here. To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.
+   > [!NOTE]
+   > Most Surface drivers belong to multiple Windows 10 product groups. You may not have to select all the products that are listed here. To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.
 
 ## Verifying the configuration
 
@@ -85,7 +85,7 @@ To verify that the SUP is configured correctly, follow these steps:
 
 1. Open WsyncMgr.log, and then look for the following entry:
 
-   ```
+   ```console
    Surface Drivers can be supported in this hierarchy since all SUPs are on Windows Server 2016, WCM SCF property Sync Catalog Drivers is set.
 
    Sync Catalog Drivers SCF value is set to : 1
@@ -93,7 +93,7 @@ To verify that the SUP is configured correctly, follow these steps:
 
    If either of the following entries is logged in WsyncMgr.log, recheck step 4 in the previous section:
 
-   ```
+   ```console
    Sync Surface Drivers option is not set
 
    Sync Catalog Drivers SCF value is set to : 0
@@ -105,7 +105,7 @@ To verify that the SUP is configured correctly, follow these steps:
 
    This entry is an XML element that lists every product group and classification that's currently synchronized by your SUP server. For example, you might see an entry that resembles the following:
 
-   ```
+   ```xml
    <Categories>
        <Category Id="Product:05eebf61-148b-43cf-80da-1c99ab0b8699"><![CDATA[Windows 10 and later drivers]]></Category>
        <Category Id="Product:06da2f0c-7937-4e28-b46c-a37317eade73"><![CDATA[Windows 10 Creators Update and Later Upgrade & Servicing Drivers]]></Category>
@@ -127,7 +127,7 @@ If you don't want to wait until the next synchronization, follow these steps to 
 1. On the ribbon, select **Synchronize Software Updates**. Or, right-click **All Software Update**, and then select **Synchronize Software Update**.
 1. Monitor the synchronization progress by looking for the following entries in WsyncMgr.log:
 
-   ```
+   ```console
    Surface Drivers can be supported in this hierarchy since all SUPs are on Windows Server 2016, WCM SCF property Sync Catalog Drivers is set.
 
    sync: SMS synchronizing categories 
