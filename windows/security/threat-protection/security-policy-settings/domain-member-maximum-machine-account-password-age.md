@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 05/29/2020
 ---
 
 # Domain member: Maximum machine account password age
