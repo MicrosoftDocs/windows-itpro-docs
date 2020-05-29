@@ -105,11 +105,16 @@ Example:
 ## Microsoft Endpoint Configuration Manager
 
 1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
-1. Click **Home** > **Create Exploit Guard Policy**.
-1. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
-1. Choose which rules will block or audit actions and click **Next**.
-1. Review the settings and click **Next** to create the policy.
-1. After the policy is created, click **Close**.
+
+2. Click **Home** > **Create Exploit Guard Policy**.
+
+3. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
+
+4. Choose which rules will block or audit actions and click **Next**.
+
+5. Review the settings and click **Next** to create the policy.
+
+6. After the policy is created, click **Close**.
 
 ## Group Policy
 
