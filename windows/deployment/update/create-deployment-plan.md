@@ -137,3 +137,4 @@ For more about Desktop Analytics, see these articles:
 - [Tutorial: Deploy Windows 10 to Pilot](https://docs.microsoft.com/mem/configmgr/desktop-analytics/tutorial-windows10)
 - [Desktop Analytics documentation](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 - [Intune deployment planning, design, and implementation guide](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+

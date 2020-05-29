@@ -34,7 +34,7 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 
 |**Software**  |**Minimum version**  |
 |---------|---------|
-|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see **How is my data processed by Cortana** below. |
+|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#how-is-my-data-processed-by-cortana) below. |
 |Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn’t required.        |
 |Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word (“Cortana”) for hands-free activation or voice commands to easily ask for help.  |
 
@@ -64,6 +64,9 @@ The table below describes the data handling for Cortana enterprise services.
 |**Usage**     |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud consistent with the Online Services Terms. Your data is not used to target advertising.  |
 
 #### How does the wake word (Cortana) work? If I enable it, is Cortana always listening?
+
+>[!NOTE]
+>The wake word has been temporarily disabled in the latest version of Cortana in Windows but will be restored soon. You can still click on the microphone button to use your voice with Cortana.
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 
