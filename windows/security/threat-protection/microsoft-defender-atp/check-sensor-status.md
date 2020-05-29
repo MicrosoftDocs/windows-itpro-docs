@@ -46,7 +46,7 @@ You can filter the health state list by the following status:
 
 You can view the device details when you click on a misconfigured or inactive device.
 
-![Microsoft Defender ATP sensor filter](images/atp-machine-health-details.png)
+![Microsoft Defender ATP sensor filter](images/atp-device-health-details.png)
 
 In the **Devices list**, you can download a full list of all the devices in your organization in a CSV format. 
 
