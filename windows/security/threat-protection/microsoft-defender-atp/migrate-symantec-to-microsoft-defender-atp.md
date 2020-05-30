@@ -89,7 +89,6 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 ## Step 3: Configure device proxy and internet connectivity settings
 
-|
 For MDATP (EDR):
 Windows:
 Windows 10, Windows Server 1803 and Windows Server 2019:
