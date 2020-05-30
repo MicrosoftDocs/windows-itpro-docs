@@ -25,19 +25,23 @@ If you are thinking about switching from Symantec Endpoint Protection to [Micros
 
 Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
 
-- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which helps identify, assess, adn remediate endpoint weaknesses.
 
-- [Tools to reduce the attack surface](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
+- [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) rules that help protect your organization's devices and applications from cyberthreats and attacks.
 
-- [Next-generation protection to block threats and malware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)  to block threats and malware.
 
-- [Endpoint detection and response to detect advanced attacks](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) to detect, investigate, and respond to intrusion attempts and active breaches.  
 
-- [Behavioral blocking and containment of suspicious behaviors and process trees](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment)
+- [Advanced hunting](advanced-hunting-overview.md) to locate indicators and entities of known or potential threats.
 
-- [Automated investigation and remediation of threats](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Behavioral blocking and containment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) to help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.
 
-- [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)
+- [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) to examine alerts and take immediate remediation action to resolve breaches.
+
+- [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) to provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed.
+
+To learn more about Microsoft Defender ATP, see [threat protection](https://docs.microsoft.com/windows/security/threat-protection).
 
 ## The migration process at a high level
 
@@ -99,7 +103,7 @@ Add Symantec and your other security solutions to the Microsoft Defender ATP EDR
 
 You can choose from several methods to onboard devices to Microsoft Defender ATP. 
 
-## Managing Microsoft Defender ATP
+## Manage Microsoft Defender ATP
 
 After you have moved to Microsoft Defender ATP, you can choose from several methods to manage your threat protection features. We recommend using Intune. The following table lists various tasks and resources to manage features and capabilities of Microsoft Defender ATP with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
