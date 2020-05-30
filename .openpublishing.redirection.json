@@ -2038,7 +2038,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -2368,87 +2368,87 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/prevent-end-user-interaction-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-end-user-interaction-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-end-user-interaction-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/review-scan-results-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/review-scan-results-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/run-scan-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/run-scan-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/troubleshoot-reporting",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/use-wmi-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-wmi-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-offline.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-offline",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-offline",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus",
 "redirect_document_id": true
 },
 {
