@@ -23,7 +23,7 @@ If you are thinking about switching from Symantec Endpoint Protection to [Micros
 
 ## What all is included in Microsoft Defender ATP?
 
-Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
+If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
 
 - [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which helps identify, assess, adn remediate endpoint weaknesses.
 
@@ -41,11 +41,11 @@ Microsoft Defender ATP is a unified platform for preventative protection, post-b
 
 - [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) to provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed.
 
-To learn more about Microsoft Defender ATP, see [threat protection](https://docs.microsoft.com/windows/security/threat-protection).
+[Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
 
 ## The migration process at a high level
 
-The process of switching from Symantec to Microsoft Defender ATP can be divided into three phases or parts, as listed below:
+The process of switching from Symantec to Microsoft Defender ATP can be divided into three phases or parts, as listed in the following table. 
 
 |Phase |Steps |
 |--|--|
@@ -53,17 +53,19 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 | Part 2: Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection |[Step 4: Set Microsoft Defender ATP to passive mode](#step-4-set-microsoft-defender-atp-to-passive-mode)<br/><br/>[Step 5: Re-enable Microsoft Defender Antivirus](#step-5-re-enable-microsoft-defender-antivirus) <br/><br/>[Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#step-6-add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec)<br/><br/>[Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list](#step-7-add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list) |
 | Part 3: Finish making the switch to Microsoft Defender ATP | [Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units) <br/><br/>[Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec) <br/><br/>[Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
 
-After you have Microsoft Defender ATP all set up and in place, you can manage the various features and capabilities.
+After you have Microsoft Defender ATP set up and deployed, you can manage the various features and capabilities.
 
 ## Step 1: Get Microsoft Defender ATP
 
 To get started, you must have Microsoft Defender ATP with licenses assigned and provisioned per the following steps:
 
-1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a trial or request a quote](https://aka.ms/mdatp). 
+1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a free trial or request a quote](https://aka.ms/mdatp). 
 
 2. Verify that your licenses are properly provisioned. See [Check license state](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
 
-3. 
+3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender ATP. See [Microsoft Defender ATP setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
+
+4. If endpoints in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
 
 ## Step 2: Grant access to the Microsoft Defender Security Center
 
