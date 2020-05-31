@@ -38,14 +38,19 @@ On at least two devices that are not reporting or showing up in Update Complianc
     c. Enter administrator credentials or approve the prompt.
         
 2. Navigate to the Windows Defender directory. By default, this is `C:\Program Files\Windows Defender`.
-
+> [!NOTE]
+> If you're running an updated Windows Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 3. Type the following command, and then press **Enter**
         
     ```Dos
-    mpcmdrun -getfiles
+    mpcmdrun.exe -GetFiles
     ```
-    
+  
 4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
+> [!NOTE]
+> To redirect the cab file to a a different path or UNC share, use the below command:  
+> `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  
+> for more information see '[Redirect diagnostic data to a UNC share](#Redirect-diagnostic-data-to-a-UNC-share)'
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 
@@ -60,6 +65,29 @@ On at least two devices that are not reporting or showing up in Update Complianc
 
     Please contact me at:
     ```
+## Redirect diagnostic data to a UNC share
+To collect diagnostic data on a central repository, you can specify the SupportLogLocation parameter.
+
+```Dos
+mpcmdrun.exe -GetFiles -SupportLogLocation <path>
+```
+Copies the diagnostic data to the specified path. If the path is not specified, the diagnostic data will be copied to the location specified in the Support Log Location Configuration.
+
+When the SupportLogLocation parameter is used, a folder structure as below will be created in the destination path:
+```Dos
+<path>\<MMDD>\MpSupport-<hostname>-<HHMM>.cab
+```
+| field  | Description   |
+|:----|:----|
+| path | The path as specified on the commandline or retrieved from configuration
+| MMDD | Month Day when the diagnostic data was collected (eg 0530)
+| hostname | the hostname of the device on which the diagnostic data was collected.
+| HHMM | Hours Minutes when the diagnostic data was collected (eg 1422)
+
+> [!NOTE]
+> When using a File share please make sure that domain accounts used to collect the diagnostic package has write access to the share.  
+> To prevent data loss, you can deny these accounts from deleting data.
+
 
 ## See also
 
