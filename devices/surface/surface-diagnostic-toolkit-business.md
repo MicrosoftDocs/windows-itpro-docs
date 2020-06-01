@@ -176,8 +176,8 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 ## Changes and updates
 
 ### Version 2.94.139.0
-
-This version of Surface Diagnostic Toolkit for Business to be released May 11, 2020 adds support for the following:
+*Release date: May 11, 2020*<br>
+This version of Surface Diagnostic Toolkit for Business adds support for the following:
 
 - Ability to skip Windows Update to perform hardware check.
 - Ability to receive notifications for about the latest version update

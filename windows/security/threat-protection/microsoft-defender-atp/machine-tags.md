@@ -72,7 +72,7 @@ You can also delete tags from this view.
 >- Windows 7 SP1
 
 > [!NOTE] 
-> The maximum number of characters in a tag is 30.
+> The maximum number of characters that can be set in a tag is 200.
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
@@ -86,5 +86,3 @@ Use the following registry key entry to add a tag on a machine:
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.
 > 
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.
-
-

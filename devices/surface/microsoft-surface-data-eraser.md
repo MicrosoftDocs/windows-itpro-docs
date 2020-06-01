@@ -168,7 +168,9 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
 ### 3.30.139
-This version of Surface Data Eraser to be released May 11, 2020 adds support for: 
+*Release Date: 11 May 2020*
+
+This version of Surface Data Eraser adds support for: 
 - Surface Book 3
 - Surface Go 2
 - New SSD in Surface Go

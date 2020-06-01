@@ -82,7 +82,7 @@ It's important to understand the following prerequisites prior to creating indic
 
  
 >[!NOTE]
->There may be up to 2 hours of latency (usually less) between the time the action is taken and the actual file being blocked.
+>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes.
 
 ### Create an indicator for files from the settings page
 

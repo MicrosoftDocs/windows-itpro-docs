@@ -1,6 +1,6 @@
 ---
 title: Get alert related files information 
-description: Retrieves all files related to a specific alert.
+description: Retrieve all files related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get alert information, alert information, related files
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -97,7 +97,7 @@ Content-type: application/json
             "fileType": null,
             "isPeFile": true,
             "filePublisher": "Microsoft Corporation",
-            "fileProductName": "Microsoft® Windows® Operating System",
+            "fileProductName": "Microsoftï¿½ Windowsï¿½ Operating System",
             "signer": "Microsoft Corporation",
             "issuer": "Microsoft Code Signing PCA",
             "signerHash": "9dc17888b5cfad98b3cb35c1994e96227f061675",

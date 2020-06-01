@@ -284,8 +284,6 @@ The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\
 
 - %windir%\Ntds\Ntds*.pat
 
-- %windir%\Ntds\EDB*.log
-
 - %windir%\Ntds\TEMP.edb
 
 #### The NTDS working folder

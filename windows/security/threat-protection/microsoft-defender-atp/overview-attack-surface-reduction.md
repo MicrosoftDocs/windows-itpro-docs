@@ -27,6 +27,10 @@ ms.topic: conceptual
 
 Help reduce your attack surfaces, by minimizing the places where your organization is vulnerable to cyberthreats and attacks. Use the following resources to configure protection for the devices and applications in your organization.
 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
+
+
 Article | Description
 -|-
 [Attack surface reduction](./attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Windows Defender Antivirus).

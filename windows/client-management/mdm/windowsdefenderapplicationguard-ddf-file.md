@@ -1,6 +1,6 @@
 ---
 title: WindowsDefenderApplicationGuard DDF file
-description: WindowsDefenderApplicationGuard DDF file
+description: See the OMA DM device description framework (DDF) for the WindowsDefenderApplicationGuard DDF file configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

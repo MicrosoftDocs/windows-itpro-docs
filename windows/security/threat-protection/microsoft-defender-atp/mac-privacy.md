@@ -43,7 +43,7 @@ There are two levels of diagnostic data for Microsoft Defender ATP client softwa
 
 * **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
-By default, both optional and required diagnostic data are sent to Microsoft.
+By default, only required diagnostic data is sent to Microsoft.
 
 ### Cloud delivered protection data
 
@@ -127,6 +127,21 @@ The following fields are collected:
 | edr.tags                                            | User-defined tags. |
 | features.\[optional feature name\]                  | List of preview features, along with whether they are enabled or not. |
 
+#### Product and service usage data events
+
+**Security intelligence update report**
+
+The following fields are collected:
+
+| Field            | Description |
+| ---------------- | ----------- |
+| from_version     | Original security intelligence version. |
+| to_version       | New security intelligence version. |
+| status           | Status of the update indicating success or failure. |
+| using_proxy      | Whether the update was done over a proxy. |
+| error            | Error code if the update failed. |
+| reason           | Error message if the updated filed. |
+
 #### Product and service performance data events
 
 **Kernel extension statistics**
@@ -138,6 +153,7 @@ The following fields are collected:
 | version          | Version of Microsoft Defender ATP for Mac. |
 | instance_id      | Unique identifier generated on kernel extension startup. |
 | trace_level      | Trace level of the kernel extension. |
+| subsystem        | The underlying subsystem used for real-time protection. |
 | ipc.connects     | Number of connection requests received by the kernel extension. |
 | ipc.rejects      | Number of connection requests rejected by the kernel extension. |
 | ipc.connected    | Whether there is any active connection to the kernel extension. |
@@ -259,7 +275,13 @@ The following fields are collected:
 | ipc.kauth.vnode.read_sec         | |
 | ipc.kauth.vnode.write_sec        | |
 | ipc.kauth.vnode.take_own         | |
+| ipc.kauth.vnode.link             | |
+| ipc.kauth.vnode.create           | |
+| ipc.kauth.vnode.move             | |
+| ipc.kauth.vnode.mount            | |
 | ipc.kauth.vnode.denied           | |
+| ipc.kauth.vnode.ackd_before_deadline | |
+| ipc.kauth.vnode.missed_deadline  | |
 | ipc.kauth.file_op.mask           | |
 | ipc.kauth_file_op.open           | |
 | ipc.kauth.file_op.close          | |
@@ -268,6 +290,7 @@ The following fields are collected:
 | ipc.kauth.file_op.link           | |
 | ipc.kauth.file_op.exec           | |
 | ipc.kauth.file_op.remove         | |
+| ipc.kauth.file_op.unmount        | |
 | ipc.kauth.file_op.fork           | |
 | ipc.kauth.file_op.create         | |
 

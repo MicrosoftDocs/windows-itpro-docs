@@ -136,7 +136,7 @@ The **Evidence** tab shows details related to threats associated with this inves
 
 ### Entities
 
-The **Entities** tab shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or determined to be clean.
+The **Entities** tab shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or had no threats found.
 
 ### Log
 

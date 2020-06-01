@@ -30,7 +30,7 @@ The automated investigation feature leverages various inspection algorithms, and
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a machine. When that file is detected, an alert is triggered. The automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other machines in the organization. Details from the investigation, including verdicts (Malicious, Suspicious, and Clean) are available during and after the automated investigation.
+When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a machine. When that file is detected, an alert is triggered. The automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other machines in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
 
 >[!NOTE]
 >Currently, automated investigation only supports the following OS versions:
@@ -48,7 +48,7 @@ During and after an automated investigation, you can view details about the inve
 |**Alerts**| Shows the alert that started the investigation.|
 |**Machines** |Shows where the alert was seen.|
 |**Evidence** |Shows the entities that were found to be malicious during the investigation.|
-|**Entities** |Provides details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *Clean*). |
+|**Entities** |Provides details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
 |**Log** |Shows the chronological detailed view of all the investigation actions taken on the alert.|
 |**Pending actions** |If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. |
 

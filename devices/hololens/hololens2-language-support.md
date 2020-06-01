@@ -62,7 +62,7 @@ The setup process configures your HoloLens for a specific region and language. Y
 If the supported language that you're looking for is not in the menu, follow these steps:  
 
 1. Under **Preferred languages**, select **Add a language**.
-2. Locater and add the language.
+2. Locate and add the language.
 3. Select the **Windows display language** menu again, and then select the language that you added in the previous step.
 
 ### To change the keyboard layout
