@@ -50,8 +50,8 @@ To have your company listed as a partner in the in-product partner page, you wil
     Follow these steps:
     1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender ATP integrated product with the version of the product that includes this integration. 
 
-      - ISV Nomenclature: `MdatpPartner-{CompanyName}-{TenantID}/{Version}`.
-      - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`. 
+      - ISV nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`.
+      - Security partner nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}`. 
 
     2.	Set the User-Agent field in each HTTP request header to the name based on the above nomenclature. 
     For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43). For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
