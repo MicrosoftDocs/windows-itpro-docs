@@ -37,7 +37,7 @@ SetupDiag works by examining Windows Setup log files. It attempts to parse these
 
 ## SetupDiag in Windows 10, version 2004 and later
 
-With the release of Windows 10, version 2004, SetupDiag is included with Windows Setup.
+With the release of Windows 10, version 2004, SetupDiag is included with [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario).
 
 During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
 
