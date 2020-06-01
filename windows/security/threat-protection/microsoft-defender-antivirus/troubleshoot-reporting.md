@@ -16,25 +16,25 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Troubleshoot Windows Defender Antivirus reporting in Update Compliance
+# Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!IMPORTANT]
-> On March 31, 2020, the Windows Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
+> On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which allows finer control over security features and updates.
 
-You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
+You can use Microsoft Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the [Microsoft Defender ATP portal](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see [Windows 10 product licensing options](https://www.microsoft.com/licensing/product-licensing/windows10.aspx).
 
-When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of devices or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you might encounter problems or issues.
+When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of devices or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Microsoft Defender Antivirus, you might encounter problems or issues.
 
 Typically, the most common indicators of a problem are:
 - You only see a small number or subset of all the devices you were expecting to see
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Windows Defender Antivirus service that are not related to Update Compliance, see [Windows Defender Antivirus events](troubleshoot-microsoft-defender-antivirus.md). 
+For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see [Microsoft Defender Antivirus events](troubleshoot-microsoft-defender-antivirus.md). 
 
 There are three steps to troubleshooting these problems:
 
@@ -48,16 +48,16 @@ There are three steps to troubleshooting these problems:
 
 ## Confirm prerequisites
 
-In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Windows Defender Antivirus:
+In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Microsoft Defender Antivirus:
 
 >[!div class="checklist"]
->- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](microsoft-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
+>- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](microsoft-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
 > - [Cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).
 > - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
-“You can use Windows Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender ATP portal (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
+“You can use Microsoft Defender Antivirus with Update Compliance. You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5 licenses, you need to use the Microsoft Defender ATP portal (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). To learn more about licensing options, see Windows 10 product licensing options"
 
 If the above prerequisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
 
@@ -71,5 +71,5 @@ If the above prerequisites have all been met, you might need to proceed to the n
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

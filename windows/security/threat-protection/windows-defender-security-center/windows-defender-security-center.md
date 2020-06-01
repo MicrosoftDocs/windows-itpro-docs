@@ -40,9 +40,9 @@ In Windows 10, version 1803, the app has two new areas, **Account protection** a
 
 You can't uninstall the Windows Security app, but you can do one of the following:
 
-- Disable the interface on Windows Server 2016. See [Windows Defender Antivirus on Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+- Disable the interface on Windows Server 2016. See [Microsoft Defender Antivirus on Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
 - Hide all of the sections on client computers (see below).
-- Disable Windows Defender Antivirus, if needed. See [Enable and configure Windows Defender AV always-on protection and monitoring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+- Disable Microsoft Defender Antivirus, if needed. See [Enable and configure Windows Defender AV always-on protection and monitoring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 
@@ -103,4 +103,4 @@ Disabling any of the individual features (through Group Policy or other manageme
 > [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.
 
-For example, [using a third-party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.
+For example, [using a third-party antivirus will disable Microsoft Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.

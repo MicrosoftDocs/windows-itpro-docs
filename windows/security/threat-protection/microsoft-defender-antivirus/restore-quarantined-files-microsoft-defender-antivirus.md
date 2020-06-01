@@ -39,5 +39,5 @@ If Microsoft Defender Antivirus is configured to detect and remediate threats on
 - [Review scan results](review-scan-results-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 

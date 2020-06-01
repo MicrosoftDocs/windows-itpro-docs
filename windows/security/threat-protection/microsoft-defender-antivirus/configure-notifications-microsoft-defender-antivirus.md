@@ -1,6 +1,6 @@
 ---
-title: Configure Windows Defender Antivirus notifications
-description: Configure and customize Windows Defender Antivirus notifications.
+title: Configure Microsoft Defender Antivirus notifications
+description: Configure and customize Microsoft Defender Antivirus notifications.
 keywords: notifications, defender, antivirus, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -59,7 +59,7 @@ You can configure the display of additional notifications, such as recent threat
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Reporting**.
+4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Reporting**.
 
 5. Double-click **Turn off enhanced notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
 
@@ -71,7 +71,7 @@ You can use Group Policy to:
 - Hide all notifications on endpoints
 - Hide reboot notifications on endpoints
 
-Hiding notifications can be useful in situations where you can't hide the entire Windows Defender Antivirus interface. See [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. 
+Hiding notifications can be useful in situations where you can't hide the entire Microsoft Defender Antivirus interface. See [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. 
 
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection). 
@@ -84,7 +84,7 @@ See [Customize the Windows Security app for your organization](../windows-defend
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**. 
+3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**. 
 
 4. Double-click **Suppress all notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
 
@@ -96,11 +96,11 @@ See [Customize the Windows Security app for your organization](../windows-defend
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**.
+4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**.
 
 5. Double-click **Suppresses reboot notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

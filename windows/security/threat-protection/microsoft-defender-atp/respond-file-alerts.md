@@ -62,7 +62,7 @@ You can contain an attack in your organization by stopping the malicious process
 >
 > - The machine you're taking the action on is running Windows 10, version 1703 or later
 > - The file does not belong to trusted third-party publishers or not signed by Microsoft
-> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+> - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data, such as any registry keys.
 
@@ -136,7 +136,7 @@ You can prevent further propagation of an attack in your organization by banning
 
 >[!IMPORTANT]
 >
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
+>- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 >
 >- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.

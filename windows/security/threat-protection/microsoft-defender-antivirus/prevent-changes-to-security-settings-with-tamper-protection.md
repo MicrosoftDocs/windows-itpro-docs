@@ -37,7 +37,7 @@ With tamper protection, malicious apps are prevented from taking actions like th
 
 ### How it works
 
- Tamper protection essentially locks Windows Defender Antivirus and prevents your security settings from being changed through apps and methods like these:
+ Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods like these:
 - Configuring settings in Registry Editor on your Windows machine 
 - Changing settings through PowerShell cmdlets
 - Editing or removing security settings through group policies
@@ -60,7 +60,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 ## Turn tamper protection on (or off) for an individual machine
 
 > [!NOTE]
-> Tamper protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
+> Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
 > 
 > To help ensure that tamper protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 > 
@@ -93,7 +93,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
     - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; this is included in Microsoft 365 E5.)
     - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
-    - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
+    - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
 2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
 
@@ -165,7 +165,7 @@ No
 
 No. Third-party antivirus offerings will continue to register with the Windows Security application.
 
-### What happens if Windows Defender Antivirus is not active on a device?
+### What happens if Microsoft Defender Antivirus is not active on a device?
 
 Tamper protection will not have any impact on such devices.
 
@@ -175,18 +175,18 @@ If you are a home user, see [Turn tamper protection on (or off) for an individua
 
 If you are an organization using [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
 
-### How does configuring tamper protection in Intune affect how I manage Windows Defender Antivirus through my group policy?
+### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
-Your regular group policy doesn’t apply to tamper protection, and changes to Windows Defender Antivirus settings are ignored when tamper protection is on.
+Your regular group policy doesn’t apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on.
 
 >[!NOTE]
->A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Windows Defender Antivirus features protected by tamper protection. To avoid any potential delays, we recommend that you remove settings that control Windows Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Windows Defender Antivirus settings. <br><br>
-> Sample Windows Defender Antivirus settings:<br>
-> Turn off Windows Defender Antivirus <br>
+>A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Microsoft Defender Antivirus features protected by tamper protection. To avoid any potential delays, we recommend that you remove settings that control Microsoft Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Microsoft Defender Antivirus settings. <br><br>
+> Sample Microsoft Defender Antivirus settings:<br>
+> Turn off Microsoft Defender Antivirus <br>
 > Computer Configuration\Administrative Templates\Windows Components\Windows Defender\
 Value DisableAntiSpyware = 0 <br><br>
 >Turn off real-time protection<br>
-Computer Configuration\Administrative Templates\Windows Components\Windows Defender Antivirus\Real-time Protection\
+Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\Real-time Protection\
 Value DisableRealtimeMonitoring = 0
 
 ### For Microsoft Defender ATP E5, is configuring tamper protection in Intune targeted to the entire organization only?
@@ -234,4 +234,4 @@ No.
 
 [Get an overview of Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 
-[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](why-use-microsoft-antivirus.md)
+[Better together: Microsoft Defender Antivirus and Microsoft Defender Advanced Threat Protection](why-use-microsoft-antivirus.md)

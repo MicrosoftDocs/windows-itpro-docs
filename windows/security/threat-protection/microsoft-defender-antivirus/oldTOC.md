@@ -1,22 +1,22 @@
 
-#	[Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+#	[Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
 ## [Windows Defender AV in the Microsoft Defender Security Center app](windows-defender-security-center-antivirus.md)
 
 ## [Windows Defender AV on Windows Server 2016](microsoft-defender-antivirus-on-windows-server-2016.md)
 
-## [Windows Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
+## [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
 ### [Use limited periodic scanning in Windows Defender AV](limited-periodic-scanning-microsoft-defender-antivirus.md)
 
 
-## [Evaluate Windows Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)
+## [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)
 
 
-## [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-### [Deploy and enable Windows Defender Antivirus](deploy-microsoft-defender-antivirus.md)
+## [Deploy, manage updates, and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
 #### [Deployment guide for VDI environments](deployment-vdi-microsoft-defender-antivirus.md)
-### [Report on Windows Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
-#### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
+### [Report on Microsoft Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
+#### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ### [Manage updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
 #### [Manage protection and Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md)
 #### [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
@@ -25,7 +25,7 @@
 #### [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 
 
-## [Configure Windows Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
+## [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 ### [Utilize Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
 #### [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 #### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
