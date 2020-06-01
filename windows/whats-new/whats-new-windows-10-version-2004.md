@@ -179,7 +179,7 @@ For updated information, see the [Microsoft 365 blog](https://aka.ms/CortanaUpda
 
 ### Windows Search
 
-Windows Search is [improved](https://insider.windows.com/community-news/desktop-search/) in several ways.
+Windows Search is improved in several ways. For more information, see [Supercharging Windows Search](https://aka.ms/AA8kllm).
 
 ### Virtual Desktops
 
@@ -231,7 +231,8 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
-[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/)<br>
+[What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.<br>
+[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.<br>
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
@@ -240,4 +241,3 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 [What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
 [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
 [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
-[What’s new for IT pros in Windows 10, version 2004](https://aka.ms/whats-new-in-2004): Windows IT Pro blog.<br>
