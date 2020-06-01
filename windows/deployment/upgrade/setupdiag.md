@@ -41,7 +41,14 @@ With the release of Windows 10, version 2004, SetupDiag is included with Windows
 
 During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
 
-When run by Windows Setup, results of the SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\Setup\SetupDiag\Results**.
+When run by Windows Setup, the following [parameters](#parameters) are used:
+
+- /ZipLogs:False
+- /Format:xml
+- /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
+- /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
+
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\Setup\SetupDiag\Results**.
 
 If the upgrade process proceeds normally, the **Sources** directory including **setupdiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **setupdiag.exe** will also be removed.
 
