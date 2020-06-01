@@ -60,10 +60,6 @@ An experimental implementation of TLS 1.3 is included in Windows 10, version 190
 
 ## Virtualization
 
-### Containers on Windows
-
-This update includes 5 fixes to allow the host to run down-level containers on up-level for process (Argon) isolation. Previously [Containers on Windows](https://docs.microsoft.com/virtualization/windowscontainers/) required matched host and container version. This limited Windows containers from supporting mixed-version container pod scenarios.
-
 ### Windows Sandbox
 
 [Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In Windows 10, version 1909 you have even more control over the level of isolation.
