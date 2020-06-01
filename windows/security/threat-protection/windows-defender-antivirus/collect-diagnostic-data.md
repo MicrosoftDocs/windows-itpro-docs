@@ -49,7 +49,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
 > [!NOTE]
-> To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information see [Redirect diagnostic data to a UNC share](#Redirect-diagnostic-data-to-a-UNC-share).
+> To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 
