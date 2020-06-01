@@ -151,6 +151,7 @@ To prevent installation of particular classes of devices:
 
 1. Find the GUID of the device setup class from [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
 2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
+![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 
