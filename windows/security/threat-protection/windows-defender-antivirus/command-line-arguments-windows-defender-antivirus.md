@@ -1,6 +1,6 @@
 ---
-title: Use the command line to manage Microsoft Defender Antivirus
-description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
+title: Use the command line to manage Windows Defender Antivirus
+description: Run Windows Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.reviewer: ksarens
 manager: dansimp
 ---
 
-# Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
+# Configure and manage Windows Defender Antivirus with the mpcmdrun.exe command-line tool
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can perform various Microsoft Defender Antivirus functions with the dedicated command-line tool *mpcmdrun.exe*. This utility is useful when you want to automate Microsoft Defender Antivirus use. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
+You can perform various Windows Defender Antivirus functions with the dedicated command-line tool *mpcmdrun.exe*. This utility is useful when you want to automate Windows Defender Antivirus use. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
 
 > [!NOTE]
 > You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
@@ -60,4 +60,4 @@ MpCmdRun.exe -Scan -ScanType 2
 
 - [Reference topics for collecting diagnostic data](collect-diagnostic-data.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
