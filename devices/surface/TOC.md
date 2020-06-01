@@ -43,6 +43,7 @@
 ## Manage
 
 ### [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
+### [Manage Surface driver updates in Configuration Manager](manage-surface-driver-updates-configuration-manager.md)
 ### [Optimize Wi-Fi connectivity for Surface devices](surface-wireless-connect.md)
 ### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
 ### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
