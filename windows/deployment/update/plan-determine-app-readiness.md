@@ -43,4 +43,34 @@ Combining the various validation methods with the app classifications you've pre
 |Test in pilot     |  x       |  x       |  x       |
 
 
+### Identify users
 
+Since your organization no doubt has a wide variety of users, each with different background and regular tasks, you'll have to choose which users are best suited for validation testing. Some factors to consider include:
+
+- **Location**: If users are in different physical locations, can you support them and get validation feedback from the region they're in?
+- **Application knowledge**: Do the users have appropriate knowledge of how the app is supposed to work?
+- **Technical ability**: Do the users have enough technical competence to provide useful feedback from various test scenarios?
+
+You could seek volunteers who enjoy working with new features and include them in the pilot deployment. You might want to avoid using core users like department heads or project managers. Current application owners, operations personnel, and developers can help you identify the most appropriate pilot users.
+
+### Identify and set up devices for validation
+
+In addition to users, it's important to carefully choose devices to participate in app validation as well. For example, ideally, your selection will include devices representing all of the hardware models in your environment.
+
+There is more than one way to choose devices for app validation:
+
+- **Existing pilot devices**: You might already have a list of devices that you regularly use for testing updates as part of release cycles.
+- **Manual selection**: Some internal groups like operations will have expertise to help choose devices manually based on specifications, usage, or records of past support problems.
+- **Data-driven analysis**: With appropriate tools, you can use diagnostic data from devices to inform your choices.
+
+
+### Desktop Analytics
+
+Desktop Analytics can make all of the tasks discussed in this article significantly easier:
+
+- Creating and maintaining an application and device inventory
+- Assign owners to applications for testing
+- Automatically apply your app classifications (critical, important, not important)
+- Automatically identify application compatibility risks and provide recommendations for reducing those risks
+
+For more information, see [What is Desktop Analytics?](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)

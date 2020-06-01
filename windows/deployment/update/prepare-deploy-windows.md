@@ -49,39 +49,90 @@ However, your configuration will consist of many different settings and policies
 
 ## Prepare applications and devices
 
-You've previously decided on which validation methods you want to use to validate apps. Now is the time to identify users and devices you want to participate in app validation and get them ready.
+You've previously decided on which validation methods you want to use to validate apps in the upcoming pilot deployment phase. Now is a good time to make sure that individual devices are ready and able to install the next update without difficulty.
 
-### Identify users
+### Ensure updates are available
 
-Since your organization no doubt has a wide variety of users, each with different background and regular tasks, you'll have to choose which users are best suited for validation testing. Some factors to consider include:
+Enable update services on devices. Ensure that every device is running all the services Windows Update relies on. Sometimes users or even malware can disable the services Windows Update requires to work correctly. Make sure the following services are running:
 
-- **Location**: If users are in different physical locations, can you support them and get validation feedback from the region they're in?
-- **Application knowledge**: Do the users have appropriate knowledge of how the app is supposed to work?
-- **Technical ability**: Do the users have enough technical competence to provide useful feedback from various test scenarios?
+- Background Intelligent Transfer Service
+- Background Tasks Infrastructure Service
+- BranchCache (if you use this feature for update deployment)
+- ConfigMgr Task Sequence Agent (if you use Configuration Manager to deploy updates)
+- Cryptographic Services
+- DCOM Server Process Launcher
+- Device Install
+- Delivery Optimization
+- Device Setup Manager
+- License Manager
+- Microsoft Account Sign-in Assistant
+- Microsoft Software Shadow Copy Provider
+- Remote Procedure Call (RPC)
+- Remote Procedure Call (RPC) Locator
+- RPC Endpoint Mapper
+- Service Control Manager
+- Task Scheduler
+- Token Broker
+- Update Orchestrator Service
+- Volume Shadow Copy Service
+- Windows Automatic Update Service
+- Windows Backup
+- Windows Defender Firewall
+- Windows Management Instrumentation
+- Windows Management Service
+- Windows Module Installer
+- Windows Push Notification
+- Windows Security Center Service
+- Windows Time Service
+- Windows Update
+- Windows Update Medic Service
 
-You could seek volunteers who enjoy working with new features and include them in the pilot deployment. You might want to avoid using core users like department heads or project managers. Current application owners, operations personnel, and developers can help you identify the most appropriate pilot users.
+You can check these services manually by using Services.msc, or by using PowerShell scripts, Desktop Analytics, or other methods.
 
-### Identify and set up devices for validation
+### Network configuration
 
-In addition to users, it's important to carefully choose devices to participate in app validation as well. For example, ideally, your selection will include devices representing all of the hardware models in your environment.
+Ensure that devices can reach necessary Windows Update endpoints through the firewall. 
 
-There is more than one way to choose devices for app validation:
+### Optimize download bandwidth
+Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
 
-- **Existing pilot devices**: You might already have a list of devices that you regularly use for testing updates as part of release cycles.
-- **Manual selection**: Some internal groups like operations will have expertise to help choose devices manually based on specifications, usage, or records of past support problems.
-- **Data-driven analysis**: With appropriate tools, you can use diagnostic data from devices to inform your choices.
+### Address unhealthy devices
+
+In the course of surveying your device population, either with Desktop Analytics or by some other means, you might find devices that have systemic problems that could interfere with update installation. Now is the time to fix those problems.
+
+- **Low disk space:** Quality updates require a minimum of two GB to successfully install. Feature updates require between 8 and 15 GB depending upon the configuration. On Windows 10, version 1903 and later you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve this by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
+- C:\Windows\temp
+- C:\Windows\cbstemp (though this file might be necessary to investigate update failures)
+- C:\Windows\WindowsUpdate.log (though this file might be necessary to investigate update failures)
+- C:\Windows.Old (these files should automatically clean up after 10 days or might ask the device user for permission to clean up sooner when constrained for disk space)
+
+You can also create and run scripts to perform additional cleanup actions on devices, with administrative rights, or use Group Policy settings.
+
+- Clean up the Windows Store Cache by running C:\Windows\sytem32\wsreset.exe
+- Optimize the WinSxS folder on the client machine by using **Dism.exe /online /Cleanup-Image /StartComponentCleanup**
+- Compact the operating system by running **Compact.exe /CompactOS:always**
+- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
+- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](https://docs.microsoft.com/onedrive/use-group-policy) for more information.
+- Clean up the Software Distribution folder. Try deploying these commands as a batch file to run on devices to reset the download state of Windows Updates:
+
+```
+net stop wuauserv
+net stop cryptSvc
+net stop bits
+net stop msiserver
+ren C:\Windows\SoftwareDistribution C:\Windows\SoftwareDistribution.old
+net start wuauserv
+net start cryptSvc
+net start bits
+net start msiserver
+```
+
+- **Application and driver updates:** Out-of-date app or driver software can prevent devices from updating successfully. Desktop Analytics will help you identify drivers and applications that need attention. You can also
+check for known issues in order to take any appropriate action. Deploy any updates from the vendor(s) for any problematic application or driver versions to resolve issues.
+- **Corruption:** In rare circumstances, a device that has repeated installation errors might be corrupted in a way that prevents the system from applying a new update. You might have to repair the Component Based Store from another source. You can do this with the [System File Checker](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
 
-### Desktop Analytics
 
-Desktop Analytics can make all of the tasks discussed in this article significantly easier:
-
-- Creating and maintaining an application and device inventory
-- Assign owners to applications for testing
-- Automatically apply your app classifications (critical, important, not important)
-- Automatically identify application compatibility risks and provide recommendations for reducing those risks
-
-For more information, see [What is Desktop Analytics?](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 
 
 ## Prepare capability
