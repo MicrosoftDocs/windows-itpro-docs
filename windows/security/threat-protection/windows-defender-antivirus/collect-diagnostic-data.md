@@ -1,5 +1,5 @@
 ---
-title: Collect diagnostic data of Windows Defender Microsoft Defender Antivirus
+title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
