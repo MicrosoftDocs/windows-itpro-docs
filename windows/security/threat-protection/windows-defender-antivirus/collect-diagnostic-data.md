@@ -1,6 +1,6 @@
 ---
-title: Collect diagnostic data of Windows Defender Windows Defender Antivirus
-description: Use a tool to collect data to troubleshoot Windows Defender Antivirus
+title: Collect diagnostic data of Windows Defender Microsoft Defender Antivirus
+description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 06/01/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -58,7 +58,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 > [!NOTE]
 >If you have a problem with Update compliance, send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:
 >```
-> I am encountering the following issue when using Windows Defender Antivirus in Update Compliance:
+> I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
 > I have provided at least 2 support .cab files at the following location:  
 > <accessible share, including access details such as password>
 >
@@ -93,5 +93,5 @@ When the SupportLogLocation parameter is used, a folder structure as below will 
 
 ## See also
 
-- [Troubleshoot Windows Defender Windows Defender Antivirus reporting](troubleshoot-reporting.md)
+- [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
 
