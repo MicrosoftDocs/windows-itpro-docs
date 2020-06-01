@@ -16,30 +16,27 @@ ms.topic: article
 
 ## How Windows updates work
 
-There are four phases to the Windows Update process:
-• Scan. A devices checks the Microsoft Update server or your WSUS endpoint at random intervals to see if
-any updates have been added since the last time updates were searched, and then evaluates whether the
-update is appropriate by checking the guidelines (e.g. Group Policies) that have been set up by the
+There are four phases to the Windows update process:
+
+- **Scan:** A device checks the Microsoft Update server or your Windows Server Update Services (WSUS) endpoint at random intervals to see if
+any updates have been added since the last time updates were searched, and then evaluates whether the update is appropriate by checking the policies that have been set up by the
 administrator. This process is invisible to the user.
-• Download. Once the device determines that an update is available, it begins downloading the update.
-The download process is also invisible to the user. With feature updates, download happens in multiple
+- **Download:** Once the device determines that an update is available, it begins downloading the update. The download process is also invisible to the user. With feature updates, download happens in multiple
 sequential phases.
-• Install. After the update is downloaded, depending on the device’s Windows Update settings, the update
-is installed on the system.
-• Commit and restart. Once installed, the device usually (but not always) must be restarted in order to
-complete the installation and begin using the update. Before that phase a device runs the previous
+- **Install:** After the update is downloaded, depending on the device’s Windows Update settings, the update is installed on the system.
+- **Commit and restart:** Once installed, the device usually (but not always) must be restarted in order to complete the installation and begin using the update. Before that happens, a device is still running the previous
 version of the software.
 
 ## Types of updates
 
 We include information here about a number of different update types you'll hear about, but the two overarching types which you have the most direct control over are *feature updates* and *quality updates*. 
 
-- **Feature updates**: Released twice per year, around March and September. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
-- **Security updates**: Updates that fix security issues that have been discovered are typically included in monthly *quality updates*, but of course can be released out of band whenever necessary for severe issues (referred to as *critical updates*).
-- **Quality updates**: Quality updates deliver both security and non-security fixes to Windows 10. They are typically released on the second Tuesday of each month, though they can be released at any time. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. Quality updates are *cumulative*, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update, including any out-of-band security fixes and any *servicing stack updates* that might have been released previously.
-- **Servicing stack updates**: The "servicing stack" is the code component that actually installs Windows updates. From time to time, the servicing stack itself needs to be updated in order to function smoothly. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes. Servicing stack updates are not necessarily included in *every* monthly quality update, and occasionally are released out of band to address a late-breaking issue. Always install the latest available quality update to catch any servicing stack updates that might have been released. The servicing stack also contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month. You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001). For more detail about servicing stack updates, see s[Servicing stack updates](servicing-stack-updates.md).
- **Driver updates:** these are non-Microsoft drivers that are applicable to your devices. You can turn off driver updates by using Windows Update for Business policies, if desired. 
-- **Microsoft product updates**: these are updates for other Microsoft products, such as Office. You can enable or disable Microsoft updates by using Windows Update for Business policies.
+- **Feature updates:** Released twice per year, around March and September. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
+- **Security updates:** Updates that fix security issues that have been discovered are typically included in monthly *quality updates*, but of course can be released out of band whenever necessary for severe issues (referred to as *critical updates*).
+- **Quality updates:** Quality updates deliver both security and non-security fixes to Windows 10. They are typically released on the second Tuesday of each month, though they can be released at any time. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. Quality updates are *cumulative*, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update, including any out-of-band security fixes and any *servicing stack updates* that might have been released previously.
+- **Servicing stack updates:** The "servicing stack" is the code component that actually installs Windows updates. From time to time, the servicing stack itself needs to be updated in order to function smoothly. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes. Servicing stack updates are not necessarily included in *every* monthly quality update, and occasionally are released out of band to address a late-breaking issue. Always install the latest available quality update to catch any servicing stack updates that might have been released. The servicing stack also contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month. You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001). For more detail about servicing stack updates, see [Servicing stack updates](servicing-stack-updates.md).
+- **Driver updates**: These are updates to non-Microsoft drivers applicable to your devices. You can turn off driver updates by using Windows Update for Business policies, if desired. {WHAT ABOUT MS DRIVERS?} 
+- **Microsoft product updates:** These are updates for other Microsoft products, such as Office. You can enable or disable Microsoft updates by using Windows Update for Business policies.
 
 
 ## Servicing channels
