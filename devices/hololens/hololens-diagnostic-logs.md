@@ -123,7 +123,7 @@ The fallback diagnostics process collects one or more .zip files, depending on t
 |TPMDiagnostics.zip |Information that's related to the trusted platform module (TPM) on the device | | |✔️ |
 
 > [!NOTE]  
-> Starting on May 2, 2019, the fallback diagnostics process collects EventLog*.etl files only if the signed-in user is the device owner. This is because these files may contain PII data. Such data is accessible to device owners only. This behavior matches the behavior of Windows desktop computers, where administrators have access to event log files but other users do not.
+> Starting on May 2, 2019, the diagnostics process collects EventLog*.etl files only if the signed-in user is the device owner. This is because these files may contain PII data. Such data is accessible to device owners only. This behavior matches the behavior of Windows desktop computers, where administrators have access to event log files but other users do not.
 
 **Sample diagnostic content for HoloLens (1st gen)**
 
@@ -137,7 +137,7 @@ HololensDiagnostics.zip contains files such as the following:
 - HoloShell.etl.001
 - WiFi.etl.001
 
-**Sample diagnostic content for HoloLens 2 10.0.18362+**
+**Sample diagnostic content for HoloLens 2 - Windows Holographic, version 1903**
 
 HololensDiagnostics.zip contains files such as the following:
 
@@ -162,7 +162,7 @@ DeviceEnrollmentDiagnostics.zip contains files such as the following:
 - MdmDiagReport_RegistryDump.reg
 - MdmLogCollectorFootPrint.txt
 
-**Sample diagnostic content for HoloLens 2 10.0.19041+**
+**Sample diagnostic content for HoloLens 2 - Windows Holographic, version 2004**
 
 HololensDiagnostics.zip contains files such as the following:
 
