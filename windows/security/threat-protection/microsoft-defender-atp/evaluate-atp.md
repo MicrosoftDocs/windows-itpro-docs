@@ -41,7 +41,7 @@ These capabilities help prevent attacks and exploitations from infecting your or
 
 Next gen protections help detect and block the latest threats.
 
-- [Evaluate antivirus](../windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+- [Evaluate antivirus](../microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus.md)
 
 ## See Also
 
