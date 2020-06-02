@@ -1,6 +1,6 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge (Windows 10)
-description: Learn about the Windows Defender Application Guard modes (Standalone or Enterprise-managed) and how to install Application Guard in your enterprise.
+description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed) and how to install Application Guard in your enterprise.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,19 +14,19 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# Prepare to install Windows Defender Application Guard
+# Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Review system requirements
  
-See [System requirements for Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard) to review the hardware and software installation requirements for Windows Defender Application Guard.
+See [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard) to review the hardware and software installation requirements for Windows Defender Application Guard.
 >[!NOTE]
->Windows Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
+>Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
-## Prepare for Windows Defender Application Guard 
-Before you can install and use Windows Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
+## Prepare for Microsoft Defender Application Guard 
+Before you can install and use Microsoft Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
 
 ### Standalone mode
 
