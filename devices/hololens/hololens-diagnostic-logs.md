@@ -31,7 +31,7 @@ HoloLens users and administrators can choose from among four different methods t
 > [!IMPORTANT]  
 > Device diagnostic logs contain personally identifiable information (PII), such as about what processes or applications the user starts during typical operations. When multiple users share a HoloLens device (for example, users sign in to the same device by using different Microsoft Azure Active Directory (AAD) accounts) the diagnostic logs may contain PII information that applies to multiple users. For more information, see [Microsoft Privacy statement](https://privacy.microsoft.com/privacystatement).
 
-The following table compares the four collection methods. The method names link to more detailed information in the sections that follow the table.
+The following table compares the three collection methods. The method names link to more detailed information in the sections that follow the table.
 
 |Method |Prerequisites |Data locations |Data access and use |Data retention |
 | --- | --- | --- | --- | --- |
