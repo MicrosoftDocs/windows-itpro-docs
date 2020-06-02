@@ -53,7 +53,13 @@ The risk level reflects the overall risk assessment of the device based on a com
 
 ### Exposure level
 
-The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations.
+The exposure level reflects the current exposure of the machine based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your machines are less vulnerable from exploitation.
+
+If the exposure level says "No data available," there are a few reasons why this may be the case:
+
+- Device stopped reporting for more than 30 days – in that case it is considered inactive, and the exposure isn't computed
+- Device OS not supported - see [minimum requirements for Microsoft Defender ATP](minimum-requirements.md)
+- Device with stale agent (very unlikely)
 
 ### OS Platform
 
