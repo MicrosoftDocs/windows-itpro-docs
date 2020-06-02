@@ -59,7 +59,7 @@ You can also exclude ASR rules from triggering based on certificate and file has
 
 You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
-ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 The following procedures for enabling ASR rules include instructions for how to exclude files and folders.
 
@@ -201,4 +201,7 @@ Example:
 
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
 
-- [Enable cloud-delivered protection](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)
+* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+* [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)
+* [Enable cloud-delivered protection](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
