@@ -1,6 +1,6 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge (Windows 10)
-description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed) and how to install Application Guard in your enterprise.
+description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
