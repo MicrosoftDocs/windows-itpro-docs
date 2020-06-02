@@ -59,7 +59,7 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | De
 1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence)
 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
-4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
+4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Microsoft Defender Offline scan
 5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 and later, you can run custom and full scans under the **Advanced scan** option
 
 ## Common tasks

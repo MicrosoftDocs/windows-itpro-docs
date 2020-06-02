@@ -2891,7 +2891,7 @@ Run a full system scan.
 <td>
 This error indicates that an offline scan is required. 
 </td></tr><tr><td>Resolution</td><td>
-Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Windows Defender Antivirus article</a>.
+Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-microsoft-defender-offline">offline Windows Defender Antivirus article</a>.
 </td>
 </tr>
 <tr>
