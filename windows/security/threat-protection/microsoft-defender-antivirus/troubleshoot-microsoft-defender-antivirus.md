@@ -1,6 +1,6 @@
 ---
 title: Windows Defender AV event IDs and error codes
-description: Look up the causes and solutions for Windows Defender Antivirus event IDs and errors
+description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -17,19 +17,19 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus
+# Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
+If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:
 
-- [Windows Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to both Windows 10 and Windows Server 2016)
-- [Windows Defender Antivirus client error codes](#error-codes)
-- [Internal Windows Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
+- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to both Windows 10 and Windows Server 2016)
+- [Microsoft Defender Antivirus client error codes](#error-codes)
+- [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
 > [!TIP]
 > You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
@@ -39,18 +39,18 @@ The tables list:
 > - Potentially unwanted application blocking
 
 <a id="windows-defender-av-ids"></a>
-## Windows Defender Antivirus event IDs
+## Microsoft Defender Antivirus event IDs
 
-Windows Defender Antivirus records event IDs in the Windows event log.
+Microsoft Defender Antivirus records event IDs in the Windows event log.
 
-You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender Antivirus client event IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Microsoft Defender Antivirus client event IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
 
-The table in this section lists the main Windows Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
+The table in this section lists the main Microsoft Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
-## To view a Windows Defender Antivirus event
+## To view a Microsoft Defender Antivirus event
 
 1.  Open **Event Viewer**.
-2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender Antivirus**.
+2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Microsoft Defender Antivirus**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
@@ -324,7 +324,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The antivirus client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (Windows Defender Antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error.
+The antivirus client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (Microsoft Defender Antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error.
 To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
@@ -432,7 +432,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
+Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 <dl>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -484,7 +484,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
+Microsoft Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
 <dl>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -543,7 +543,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has restored an item from quarantine. For more information, see the following:
+Microsoft Defender Antivirus has restored an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -587,7 +587,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
+Microsoft Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -634,7 +634,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has deleted an item from quarantine.<br/>For more information, see the following:
+Microsoft Defender Antivirus has deleted an item from quarantine.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -677,7 +677,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to delete an item from quarantine.
+Microsoft Defender Antivirus has encountered an error trying to delete an item from quarantine.
 For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -725,7 +725,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has removed history of malware and other potentially unwanted software.
+Microsoft Defender Antivirus has removed history of malware and other potentially unwanted software.
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -756,7 +756,7 @@ The antimalware platform could not delete history of malware and other potential
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
+Microsoft Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -791,7 +791,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected a suspicious behavior.<br/>For more information, see the following:
+Microsoft Defender Antivirus has detected a suspicious behavior.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -868,7 +868,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected malware or other potentially unwanted software.<br/>For more information, see the following:
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -921,7 +921,7 @@ UAC</dt>
 User action:
 </td>
 <td >
-No action is required. Windows Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Windows Defender Antivirus interface, click <b>Clean Computer</b>.
+No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click <b>Clean Computer</b>.
 </td>
 </tr>
 <tr>
@@ -949,7 +949,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.<br/>For more information, see the following:
+Microsoft Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1010,7 +1010,7 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 NOTE:
-Whenever Windows Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:<ul>
+Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:<ul>
 <li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
@@ -1049,7 +1049,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Se
 User action:
 </td>
 <td >
-No action is necessary. Windows Defender Antivirus removed or quarantined a threat. 
+No action is necessary. Microsoft Defender Antivirus removed or quarantined a threat. 
 </td>
 </tr>
 <tr>
@@ -1076,7 +1076,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
+Microsoft Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1144,7 +1144,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-No action is necessary. Windows Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
+No action is necessary. Microsoft Defender Antivirus failed to complete a task related to the malware remediation. This is not a critical failure.
 </td>
 </tr>
 <tr>
@@ -1171,7 +1171,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
+Microsoft Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1239,7 +1239,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The Windows Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant <b>User action</b> steps below.
+The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant <b>User action</b> steps below.
 <table>
 <tr>
 <th>Action</th>
@@ -1302,7 +1302,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>Windows Defender Antivirus has deduced the hashes for a threat resource.</b>
+<b>Microsoft Defender Antivirus has deduced the hashes for a threat resource.</b>
 </td>
 </tr>
 <tr>
@@ -1310,7 +1310,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus client is up and running in a healthy state.
+Microsoft Defender Antivirus client is up and running in a healthy state.
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Threat Resource Path: &lt;Path&gt;</dt>
@@ -1349,7 +1349,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus client is up and running in a healthy state.
+Microsoft Defender Antivirus client is up and running in a healthy state.
 <dl>
 <dt>Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
@@ -1362,7 +1362,7 @@ Windows Defender Antivirus client is up and running in a healthy state.
 User action:
 </td>
 <td >
-No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.
+No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.
 </td>
 </tr>
 
@@ -1467,7 +1467,7 @@ Antivirus signature version has been updated.
 User action:
 </td>
 <td >
-No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported when signatures are successfully updated.
+No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when signatures are successfully updated.
 </td>
 </tr>
 <tr>
@@ -1494,7 +1494,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to update signatures.
+Microsoft Defender Antivirus has encountered an error trying to update signatures.
 <dl>
 <dt>New security intelligence version: &lt;New version number&gt;</dt>
 <dt>Previous security intelligence version: &lt;Previous version&gt;</dt>
@@ -1572,7 +1572,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus engine version has been updated.
+Microsoft Defender Antivirus engine version has been updated.
 <dl>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
@@ -1586,7 +1586,7 @@ Windows Defender Antivirus engine version has been updated.
 User action:
 </td>
 <td >
-No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported when the antimalware engine is successfully updated.
+No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when the antimalware engine is successfully updated.
 </td>
 </tr>
 <tr>
@@ -1613,7 +1613,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to update the engine.
+Microsoft Defender Antivirus has encountered an error trying to update the engine.
 <dl>
 <dt>New Engine Version:</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
@@ -1631,7 +1631,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The Windows Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
+The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
@@ -1663,7 +1663,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.
+Microsoft Defender Antivirus has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.
 <dl>
 <dt>Signatures Attempted:</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1680,7 +1680,7 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-The Windows Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Windows Defender Antivirus will attempt to revert back to a known-good set of definitions.
+The Microsoft Defender Antivirus client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Microsoft Defender Antivirus will attempt to revert back to a known-good set of definitions.
 To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
@@ -1715,7 +1715,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus could not load antimalware engine because current platform version is not supported. Windows Defender Antivirus will revert back to the last known-good engine and a platform update will be attempted.
+Microsoft Defender Antivirus could not load antimalware engine because current platform version is not supported. Microsoft Defender Antivirus will revert back to the last known-good engine and a platform update will be attempted.
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 </dl>
@@ -1746,7 +1746,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to update the platform.
+Microsoft Defender Antivirus has encountered an error trying to update the platform.
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1779,7 +1779,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Windows Defender Antivirus platform to maintain the best level of protection available.
+Microsoft Defender Antivirus will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Microsoft Defender Antivirus platform to maintain the best level of protection available.
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 </dl>
@@ -1810,7 +1810,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus used <i>Dynamic Signature Service</i> to retrieve additional signatures to help protect your machine.
+Microsoft Defender Antivirus used <i>Dynamic Signature Service</i> to retrieve additional signatures to help protect your machine.
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -1868,7 +1868,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus used <i>Dynamic Signature Service</i> to discard obsolete signatures.
+Microsoft Defender Antivirus used <i>Dynamic Signature Service</i> to discard obsolete signatures.
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -1907,7 +1907,7 @@ Windows Defender Antivirus used <i>Dynamic Signature Service</i> to discard obso
 User action:
 </td>
 <td >
-No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported when the Dynamic Signature Service successfully deletes out-of-date dynamic definitions.
+No action is necessary. The Microsoft Defender Antivirus client is in a healthy state. This event is reported when the Dynamic Signature Service successfully deletes out-of-date dynamic definitions.
 </td>
 </tr>
 <tr>
@@ -1935,7 +1935,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to use <i>Dynamic Signature Service</i>.
+Microsoft Defender Antivirus has encountered an error trying to use <i>Dynamic Signature Service</i>.
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -2005,7 +2005,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus discarded all <i>Dynamic Signature Service</i> signatures.
+Microsoft Defender Antivirus discarded all <i>Dynamic Signature Service</i> signatures.
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 </dl>
@@ -2036,7 +2036,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus downloaded a clean file.
+Microsoft Defender Antivirus downloaded a clean file.
 <dl>
 <dt>Filename: &lt;File name&gt;
 Name of the file.</dt>
@@ -2069,7 +2069,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to download a clean file.
+Microsoft Defender Antivirus has encountered an error trying to download a clean file.
 <dl>
 <dt>Filename: &lt;File name&gt;
 Name of the file.</dt>
@@ -2088,7 +2088,7 @@ User action:
 </td>
 <td >
 Check your Internet connectivity settings.
-The Windows Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue. 
+The Microsoft Defender Antivirus client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue. 
 </td>
 </tr>
 <tr>
@@ -2114,7 +2114,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus downloaded and configured offline antivirus to run on the next reboot.
+Microsoft Defender Antivirus downloaded and configured offline antivirus to run on the next reboot.
 </td>
 </tr>
 <tr>
@@ -2141,7 +2141,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to download and configure offline antivirus.
+Microsoft Defender Antivirus has encountered an error trying to download and configure offline antivirus.
 <dl>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
@@ -2175,7 +2175,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system will expire shortly. Running Windows Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+The support for your operating system will expire shortly. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
 </td>
 </tr>
 <tr>
@@ -2203,7 +2203,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system has expired. Running Windows Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
+The support for your operating system has expired. Running Microsoft Defender Antivirus on an out of support operating system is not an adequate solution to protect against threats.
 </td>
 </tr>
 <tr>
@@ -2231,7 +2231,7 @@ Message:
 Description:
 </td>
 <td >
-The support for your operating system has expired. Windows Defender Antivirus is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.
+The support for your operating system has expired. Microsoft Defender Antivirus is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.
 </td>
 </tr>
 <tr>
@@ -2258,7 +2258,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus Real-Time Protection feature has encountered an error and failed.
+Microsoft Defender Antivirus Real-Time Protection feature has encountered an error and failed.
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2272,7 +2272,7 @@ Windows Defender Antivirus Real-Time Protection feature has encountered an error
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
 Description of the error. </dt>
-<dt>Reason: The reason Windows Defender Antivirus real-time protection has restarted a feature.</dt>
+<dt>Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.</dt>
 </dl>
 </td>
 </tr>
@@ -2282,7 +2282,7 @@ User action:
 </td>
 <td >
 You should restart the system then run a full scan because it&#39;s possible the system was not protected for some time.
-The Windows Defender Antivirus client&#39;s real-time protection feature encountered an error because one of the services failed to start. 
+The Microsoft Defender Antivirus client&#39;s real-time protection feature encountered an error because one of the services failed to start. 
 If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
 </td>
 </tr>
@@ -2310,7 +2310,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus Real-time Protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
+Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2320,7 +2320,7 @@ Windows Defender Antivirus Real-time Protection has restarted a feature. It is r
 <li>Network Inspection System</li>
 </ul>
 </dt>
-<dt>Reason: The reason Windows Defender Antivirus real-time protection has restarted a feature.</dt>
+<dt>Reason: The reason Microsoft Defender Antivirus real-time protection has restarted a feature.</dt>
 </dl>
 </td>
 </tr>
@@ -2357,7 +2357,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was enabled.
+Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was enabled.
 </td>
 </tr>
 <tr>
@@ -2384,7 +2384,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was disabled. 
+Microsoft Defender Antivirus real-time protection scanning for malware and other potentially unwanted software was disabled. 
 </td>
 </tr>
 <tr>
@@ -2412,7 +2412,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus real-time protection feature configuration has changed.
+Microsoft Defender Antivirus real-time protection feature configuration has changed.
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2450,7 +2450,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
+Microsoft Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
 <dl>
 <dt>Old value: &lt;Old value number&gt;
 Old antivirus configuration value.</dt>
@@ -2482,7 +2482,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus engine has been terminated due to an unexpected error.
+Microsoft Defender Antivirus engine has been terminated due to an unexpected error.
 <dl>
 <dt>Failure Type: &lt;Failure type&gt;, for example:
 Crash
@@ -2513,7 +2513,7 @@ To troubleshoot this event:<ol>
 User action:
 </td>
 <td >
-The Windows Defender Antivirus client engine stopped due to an unexpected error.
+The Microsoft Defender Antivirus client engine stopped due to an unexpected error.
 To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
@@ -2548,7 +2548,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus scanning for malware and other potentially unwanted software has been enabled.
+Microsoft Defender Antivirus scanning for malware and other potentially unwanted software has been enabled.
 </td>
 </tr>
 <tr>
@@ -2575,7 +2575,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus scanning for malware and other potentially unwanted software is disabled.
+Microsoft Defender Antivirus scanning for malware and other potentially unwanted software is disabled.
 </td>
 </tr>
 <tr>
@@ -2601,7 +2601,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus scanning for viruses has been enabled. 
+Microsoft Defender Antivirus scanning for viruses has been enabled. 
 </td>
 </tr>
 <tr>
@@ -2629,7 +2629,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus scanning for viruses is disabled. 
+Microsoft Defender Antivirus scanning for viruses is disabled. 
 </td>
 </tr>
 <tr>
@@ -2657,10 +2657,10 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.
+Microsoft Defender Antivirus has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.
 <dl>
-<dt>Expiration Reason: The reason Windows Defender Antivirus will expire.</dt>
-<dt>Expiration Date: The date Windows Defender Antivirus will expire.</dt>
+<dt>Expiration Reason: The reason Microsoft Defender Antivirus will expire.</dt>
+<dt>Expiration Date: The date Microsoft Defender Antivirus will expire.</dt>
 </dl>
 </td>
 </tr>
@@ -2689,7 +2689,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.
+Microsoft Defender Antivirus grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.
 <dl>
 <dt>Expiration Reason:</dt>
 <dt>Expiration Date: </dt>
@@ -2703,14 +2703,14 @@ Description of the error. </dt>
 </table>
 
 <a id="error-codes"></a>
-## Windows Defender Antivirus client error codes
-If Windows Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Windows Defender Antivirus client errors.
+## Microsoft Defender Antivirus client error codes
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
+This section provides the following information about Microsoft Defender Antivirus client errors.
 -   The error code
 -   The possible reason for the error
 -   Advice on what to do now
 
-Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
+Use the information in these tables to help troubleshoot Microsoft Defender Antivirus error codes.
 
 
 <table> 
@@ -2753,7 +2753,7 @@ This error indicates that there might be a problem with your security product.
 </tr><tr><td>Resolution</td><td>
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender Antivirus"/>Or,
+<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Microsoft Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Or,
 </li>
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
@@ -2785,7 +2785,7 @@ data that does not allow the engine to function properly.
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that Windows Defender Antivirus failed to quarantine a threat. 
+This error indicates that Microsoft Defender Antivirus failed to quarantine a threat. 
 </td>
 </tr>
 <tr>
@@ -2852,7 +2852,7 @@ Follow the manual remediation steps outlined in the <a href="https://www.microso
 <td>
 This error indicates that removal inside the container type might not be not supported. 
 </td></tr><tr><td>Resolution</td><td>
-Windows Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
+Microsoft Defender Antivirus is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
 </td>
 </tr>
 <tr>
@@ -2891,7 +2891,7 @@ Run a full system scan.
 <td>
 This error indicates that an offline scan is required. 
 </td></tr><tr><td>Resolution</td><td>
-Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-microsoft-defender-offline">offline Windows Defender Antivirus article</a>.
+Run offline Microsoft Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Microsoft Defender Antivirus article</a>.
 </td>
 </tr>
 <tr>
@@ -2901,14 +2901,14 @@ Run offline Windows Defender Antivirus. You can read about how to do this in the
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that Windows Defender Antivirus does not support the current version of the platform and requires a new version of the platform. 
+This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform. 
 </td></tr><tr><td>Resolution</td><td>
-You can only use Windows Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+You can only use Microsoft Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
 <a id="internal-error-codes"></a>
-The following error codes are used during internal testing of Windows Defender Antivirus.
+The following error codes are used during internal testing of Microsoft Defender Antivirus.
 
 If you see these errors, you can try to [update definitions](manage-updates-baselines-microsoft-defender-antivirus.md) and force a rescan directly on the endpoint.
 
@@ -3240,5 +3240,5 @@ This is an internal error. It might have triggered when a scan fails to complete
 
 ## Related topics
 
-- [Report on Windows Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Report on Microsoft Defender Antivirus protection](report-monitor-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

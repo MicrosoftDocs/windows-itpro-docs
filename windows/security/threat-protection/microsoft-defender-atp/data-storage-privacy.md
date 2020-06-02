@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Microsoft Defender ATP.
 > [!NOTE]
-> This document explains the data storage and privacy details related to Microsoft Defender ATP. For more information related to Microsoft Defender ATP and other products and services like Windows Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
+> This document explains the data storage and privacy details related to Microsoft Defender ATP. For more information related to Microsoft Defender ATP and other products and services like Microsoft Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
 
 ## What data does Microsoft Defender ATP collect?
 

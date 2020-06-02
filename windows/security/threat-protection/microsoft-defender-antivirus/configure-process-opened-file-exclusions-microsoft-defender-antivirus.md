@@ -1,7 +1,7 @@
 ---
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
-keywords: Windows Defender Antivirus, process, exclusion, files, scans
+keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -22,7 +22,7 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can exclude files that have been opened by specific processes from Windows Defender Antivirus scans. 
+You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. 
 
 This topic describes how to configure exclusion lists for the following:
 
@@ -34,7 +34,7 @@ Any file on the machine that is opened by any process with a specific file name 
 Any file on the machine that is opened by any process under a specific folder | Specifying "c:\test\sample\\*" would exclude files opened by:<ul><li>c:\test\sample\test.exe</li><li>c:\test\sample\test2.exe</li><li>c:\test\sample\utility.exe</li></ul> 
 Any file on the machine that is opened by a specific process in a specific folder | Specifying "c:\test\process.exe" would exclude files only opened by c:\test\process.exe
 
-When you add a process to the process exclusion list, Windows Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+When you add a process to the process exclusion list, Microsoft Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 The exclusions only apply to [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). They don't apply to scheduled or on-demand scans.
 
@@ -54,7 +54,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 ### Use Microsoft Intune to exclude files that have been opened by specified processes from scans
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
 ### Use Microsoft Endpoint Configuration Manager to exclude files that have been opened by specified processes from scans
 
@@ -66,7 +66,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
+3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Exclusions**.
 
 4. Double-click **Process Exclusions** and add the exclusions:
 
@@ -107,7 +107,7 @@ For example, the following code snippet would cause Windows Defender AV scans to
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-See [Manage antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-Windows Defender Antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Manage antivirus with PowerShell cmdlets](use-powershell-cmdlets-windows-defender-Microsoft Defender Antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
 
@@ -153,7 +153,7 @@ You can retrieve the items in the exclusion list with MpCmdRun, PowerShell, [Mic
 
 If you use PowerShell, you can retrieve the list in two ways:
 
-- Retrieve the status of all Windows Defender Antivirus preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
+- Retrieve the status of all Microsoft Defender Antivirus preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
 ### Validate the exclusion list by using MpCmdRun
@@ -165,10 +165,10 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 >[!NOTE]
->Checking exclusions with MpCmdRun requires Windows Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+>Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
 
 
-### Review the list of exclusions alongside all other Windows Defender Antivirus preferences by using PowerShell
+### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
 Use the following cmdlet:
 
@@ -176,7 +176,7 @@ Use the following cmdlet:
 Get-MpPreference
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -187,12 +187,12 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Related articles
 
-- [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

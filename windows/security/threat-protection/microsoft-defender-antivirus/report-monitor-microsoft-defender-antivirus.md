@@ -1,5 +1,5 @@
 ---
-title: Monitor and report on Windows Defender Antivirus protection
+title: Monitor and report on Microsoft Defender Antivirus protection
 description: Use Configuration Manager or security information and event management (SIEM) tools to consume reports, and monitor Windows Defender AV with PowerShell and WMI.
 keywords: siem, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
@@ -17,15 +17,15 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Report on Windows Defender Antivirus
+# Report on Microsoft Defender Antivirus
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-With Windows Defender Antivirus, you have several options for reviewing protection status and alerts. You can use Microsoft Endpoint Configuration Manager to [monitor Windows Defender Antivirus](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune).  
+With Microsoft Defender Antivirus, you have several options for reviewing protection status and alerts. You can use Microsoft Endpoint Configuration Manager to [monitor Microsoft Defender Antivirus](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune).  
 
-Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Windows Defender Antivirus issues, including protection updates and real-time protection settings.
+Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Microsoft Defender Antivirus issues, including protection updates and real-time protection settings.
 
 If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](https://msdn.microsoft.com/library/windows/desktop/aa964766(v=vs.85).aspx). 
 
@@ -39,6 +39,6 @@ For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, s
 
 ## Related articles
 
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
-- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

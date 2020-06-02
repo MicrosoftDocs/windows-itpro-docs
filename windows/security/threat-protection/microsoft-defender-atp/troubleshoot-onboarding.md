@@ -71,7 +71,7 @@ Event ID | Error Type | Resolution steps
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.<br>Verify that the script has been run as an administrator.
 15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the machine is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
-15 | Failed to start SENSE service | If the message of the error is: System error 577  or error 1058 has occurred. You need to enable the Windows Defender Antivirus ELAM driver, see [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
+15 | Failed to start SENSE service | If the message of the error is: System error 577  or error 1058 has occurred. You need to enable the Microsoft Defender Antivirus ELAM driver, see [Ensure that Microsoft Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
@@ -131,7 +131,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the machine has an Internet connection](#ensure-the-machine-has-an-internet-connection)
-- [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [Ensure that Microsoft Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 
 ### View agent onboarding errors in the machine event log
@@ -244,7 +244,7 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
-### Ensure that Windows Defender Antivirus is not disabled by a policy
+### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 **Problem**: The Microsoft Defender ATP service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 or error 1058 when trying to start the service.
@@ -267,7 +267,7 @@ If the verification fails and your environment is using a proxy to connect to th
   1. Open the registry ```key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender```.
   2. Ensure that the value ```DisableAntiSpyware``` is not present.
 
-     ![Image of registry key for Windows Defender Antivirus](images/atp-disableantispyware-regkey.png)
+     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
 
 ## Troubleshoot onboarding issues on a server

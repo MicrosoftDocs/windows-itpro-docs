@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Antivirus in the Windows Security app
+title: Microsoft Defender Antivirus in the Windows Security app
 description: With Windows Defender AV now included in the Windows Security app, you can review, compare, and perform common tasks.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Windows Defender Antivirus in the Windows Security app
+# Microsoft Defender Antivirus in the Windows Security app
 
 **Applies to:**
 
@@ -52,7 +52,7 @@ The following diagrams compare the location of settings and functions between th
 
 ![Version of Windows Defender in Windows 10 before version 1703](images/defender/wdav-windows-defender-app-old.png)
 
-![Windows Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
+![Microsoft Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
 
 Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description
 ---|---|---|---
@@ -64,10 +64,10 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | De
 
 ## Common tasks
 
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the Windows Security app.
+This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
-> If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
+> If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
 <a id="scan"></a>
 
@@ -96,7 +96,7 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Click **Check for updates** to download new protection updates (if there are any).
 
 
-### Ensure Windows Defender Antivirus is enabled in the Windows Security app
+### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -113,7 +113,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 <a id="exclusions"></a>
 
-### Add exclusions for Windows Defender Antivirus in the Windows Security app
+### Add exclusions for Microsoft Defender Antivirus in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -130,10 +130,10 @@ The following table summarizes exclusion types and what happens:
 
 |Exclusion type  |Defined by  |What happens  |
 |---------|---------|---------|
-|**File** |Location <br/>Example: `c:\sample\sample.test` |The specific file is skipped by Windows Defender Antivirus. |
-|**Folder**    |Location <br/>Example: `c:\test\sample`       |All items in the specified folder are skipped by Windows Defender Antivirus.         |
-|**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Windows Defender Antivirus.         |
-|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
+|**File** |Location <br/>Example: `c:\sample\sample.test` |The specific file is skipped by Microsoft Defender Antivirus. |
+|**Folder**    |Location <br/>Example: `c:\test\sample`       |All items in the specified folder are skipped by Microsoft Defender Antivirus.         |
+|**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Microsoft Defender Antivirus.         |
+|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.         |
 
 To learn more, see: 
 - [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
@@ -167,6 +167,6 @@ To learn more, see:
 
 ## Related articles
 
-- [Windows Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
 
 

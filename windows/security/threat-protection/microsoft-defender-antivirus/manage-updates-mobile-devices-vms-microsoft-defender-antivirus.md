@@ -33,11 +33,11 @@ There are two settings that are particularly useful for these devices:
 The following topics may also be useful in these situations:
 - [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
+- [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
-You can use Microsoft Update to keep Security intelligence on mobile devices running Windows Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
+You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
@@ -55,7 +55,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Signature Updates**.
+5.  Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
 
 6.  Double-click the **Allow security intelligence updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
 
@@ -73,7 +73,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 ## Prevent Security intelligence updates when running on battery power
 
-You can configure Windows Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
+You can configure Microsoft Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
 
 ### Use Group Policy to prevent security intelligence updates on battery power
 
@@ -83,7 +83,7 @@ You can configure Windows Defender Antivirus to only download protection updates
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following setting:
+5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following setting:
 
     1. Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**. 
     2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
@@ -91,5 +91,5 @@ You can configure Windows Defender Antivirus to only download protection updates
 
 ## Related articles
 
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Update and manage Windows Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Update and manage Microsoft Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
