@@ -44,6 +44,9 @@ ms.topic: conceptual
 
 <a name="tvm"></a>
 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+
 **[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
@@ -74,14 +77,14 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)**<br>
+**[Next generation protection](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-- [Behavior monitoring](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-- [Cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-protection-features-windows-defender-antivirus)
-- [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus)
-- [URL Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus)
-- [Automated sandbox service](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
+- [Behavior monitoring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [Cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [Automated sandbox service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 

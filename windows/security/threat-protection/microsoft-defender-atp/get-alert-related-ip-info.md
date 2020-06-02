@@ -1,6 +1,6 @@
 ---
 title: Get alert related IPs information 
-description: Retrieves all IPs related to a specific alert.
+description: Retrieve all IPs related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get alert information, alert information, related ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

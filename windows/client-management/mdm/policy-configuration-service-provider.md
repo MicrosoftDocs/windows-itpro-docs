@@ -2391,6 +2391,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam" id="localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam">LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</a>
   </dd>
   <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm">LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests">LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</a>
   </dd>
   <dd>
@@ -2398,6 +2401,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel" id="localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel">LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
@@ -3747,6 +3753,10 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
+  <dd> 
+    <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a> 
+  </dd>
+  <dd>
   <dd>
     <a href="./policy-csp-update.md#update-updatenotificationlevel" id="update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
   </dd>
@@ -4029,24 +4039,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## Policies supported by Group Policy and ADMX-backed policies
-- [Policies supported by Group Policy](policies-supported-by-group-policy.md)
-- [ADMX-backed policies](policies-admx-backed.md)
+## Policy CSPs supported by Group Policy and ADMX-backed policy CSPs
+- [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
+- [ADMX-backed policy CSPs](policy-csps-admx-backed.md)
 
-## Policies supported by HoloLens devices
-- [Policies supported by HoloLens 2](policies-supported-by-hololens2.md)  
-- [Policies supported by HoloLens (1st gen) Commercial Suite](policies-supported-by-hololens-1st-gen-commercial-suite.md)  
-- [Policies supported by HoloLens (1st gen) Development Edition](policies-supported-by-hololens-1st-gen-development-edition.md)
+## Policy CSPs supported by HoloLens devices
+- [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
+- [Policy CSPs supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policy CSPs supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
 
-## Policies supported by Windows 10 IoT
-- [Policies supported by Windows 10 IoT Enterprise](policies-supported-by-iot-enterprise.md)
-- [Policies supported by Windows 10 IoT Core](policies-supported-by-iot-core.md)
+## Policy CSPs supported by Windows 10 IoT
+- [Policy CSPs supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
+- [Policy CSPs supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
 
-## Policies supported by Microsoft Surface Hub
-- [Policies supported by Microsoft Surface Hub](policies-supported-by-surface-hub.md)
+## Policy CSPs supported by Microsoft Surface Hub
+- [Policy CSPs supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
 
-## Policies that can be set using Exchange Active Sync (EAS)
-- [Policies that can be set using Exchange Active Sync (EAS)](policies-that-can-be-set-using-eas.md)
+## Policy CSPs that can be set using Exchange Active Sync (EAS)
+- [Policy CSPs that can be set using Exchange Active Sync (EAS)](policy-csps-that-can-be-set-using-eas.md)
 
 ## Related topics
 

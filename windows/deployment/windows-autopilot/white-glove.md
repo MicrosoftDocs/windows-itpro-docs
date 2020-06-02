@@ -109,7 +109,7 @@ If the pre-provisioning process completed successfully and the device was reseal
 
 - Power on the device.
 - Select the appropriate language, locale, and keyboard layout.
-- Connect to a network (if using Wi-Fi).  If using Hybrid Azure AD Join, there must be connectivity to a domain controller; if using Azure AD Join, internet connectivity is required.
+- Connect to a network (if using Wi-Fi).  Internet access is always required.  If using Hybrid Azure AD Join, there must also be connectivity to a domain controller.
 - On the branded sign-on screen, enter the user’s Azure Active Directory credentials.
 - If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user’s Active Directory credentials.
 - Additional policies and apps will be delivered to the device, as tracked by the Enrollment Status Page (ESP).  Once complete, the user will be able to access the desktop.

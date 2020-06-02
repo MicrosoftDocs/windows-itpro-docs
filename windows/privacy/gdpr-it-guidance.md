@@ -133,7 +133,7 @@ As a result, in terms of the GDPR, the organization that has subscribed to Deskt
 > The IT organization must explicitly enable Desktop Analytics for a device after the organization subscribes.
 
 > [!IMPORTANT]
-> Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/enable-data-sharing)
+> Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/enable-data-sharing)
 
 #### Windows Defender ATP
 
@@ -183,7 +183,7 @@ The basic functionality of Desktop Analytics works at the “Basic” diagnostic
 Those organizations who wish to share the smallest set of events for Desktop Analytics and have set the Windows diagnostic level to “Enhanced” can use the [“Limit Enhanced diagnostic data to the minimum required by Desktop Analytics”](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#limit-enhanced-diagnostic-data-to-the-minimum-required-by-desktop-analytics) setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Desktop Analytics.
 
 > [!NOTE]
-> Additional information can be found at [Desktop Analytics and privacy](/sccm/desktop-analytics/privacy).
+> Additional information can be found at [Desktop Analytics data privacy](https://docs.microsoft.com/configmgr/desktop-analytics/privacy).
 
 ## Controlling Windows 10 data collection and notification about it
 

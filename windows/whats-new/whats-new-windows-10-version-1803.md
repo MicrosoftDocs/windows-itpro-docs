@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1803
-description: New and updated IT Pro content about new features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
+description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
 keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1803 IT Pro content
+# What's new in Windows 10, version 1803 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1803
@@ -173,7 +173,7 @@ The new [security baseline for Windows 10 version 1803](https://docs.microsoft.c
 
 ### Windows Defender Antivirus
 
-Windows Defender Antivirus now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
+Windows Defender Antivirus now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
 ### Windows Defender Exploit Guard
 

@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Defender ATP
-description: Lists the new features and functionality in Microsoft Defender ATP
+description: See what features are generally available (GA) in the latest release of Microsoft Defender ATP, as well as security features in Windows 10 and Windows Server.
 keywords: what's new in microsoft defender atp, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,8 +27,13 @@ The following features are generally available (GA) in the latest release of Mic
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
-`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Defender+ATP%22&locale=en-us`
+
+> [!TIP]
+> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
+> 
+> ```https
+> https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
+> ```
 
 ## April 2020
 
@@ -58,7 +63,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
+- [Tamper Protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
 
@@ -122,10 +127,10 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes.
   
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-    - Windows Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
-    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus) for Windows Defender Antivirus scans.
+    - Windows Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/microsoft-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
+    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus) for Windows Defender Antivirus scans.
 
 
   
@@ -161,9 +166,9 @@ You can now block untrusted processes from writing to disk sectors using Control
     Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal.
 
 
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)<BR>
-Windows Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
+- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
+Windows Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
-    Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus).
+    Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
 
 

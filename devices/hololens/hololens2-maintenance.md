@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 device care and cleaning FAQ
+title: HoloLens 2 cleaning FAQ
 description: 
 author: Teresa-Motiv
 ms.author: v-tea
@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Frequently asked questions about cleaning HoloLens 2 devices
+# HoloLens 2 cleaning FAQ
 
 > [!IMPORTANT]  
 > Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19. Please refer to your local public health authority's guidance about how to stay safe from potential infection.  

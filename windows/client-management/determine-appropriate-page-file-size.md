@@ -8,8 +8,8 @@ author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/28/2019
-ms.reviewer: 
-manager: dcscontentpm
+ms.reviewer: dcscontentpm
+manager: dansimp
 ---
 
 # How to determine the appropriate page file size for 64-bit versions of Windows

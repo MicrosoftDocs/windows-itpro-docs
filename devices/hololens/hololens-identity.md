@@ -32,7 +32,7 @@ HoloLens supports several kinds of user identities. You can use one or more user
 
 | Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 32 (see details) | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
 | [Local account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 

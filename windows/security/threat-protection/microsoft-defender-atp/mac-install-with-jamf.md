@@ -65,7 +65,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-    ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/jamf-onboarding.png)
+    ![Microsoft Defender Security Center screenshot](../microsoft-defender-antivirus/images/jamf-onboarding.png)
 
 6. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
@@ -108,7 +108,7 @@ To approve the kernel extension:
 1. In **Computers > Configuration Profiles** select **Options > Approved Kernel Extensions**.
 2. Use **UBF8T346G9** for Team Id.
 
-    ![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
+    ![Approved kernel extensions screenshot](../microsoft-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
 
 ### Privacy Preferences Policy Control
 
@@ -124,7 +124,7 @@ Add the following JAMF policy to grant Full Disk Access to Microsoft Defender AT
 3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
 4. Set app or service to SystemPolicyAllFiles and access to Allow.
 
-    ![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
+    ![Privacy Preferences Policy Control](../microsoft-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
 
 #### Configuration Profile's Scope
 
@@ -132,7 +132,7 @@ Configure the appropriate scope to specify the devices that will receive the con
 
 Open **Computers** > **Configuration Profiles**, and select **Scope > Targets**. From there, select the devices you want to target.
 
-![Configuration profile scope screenshot](../windows-defender-antivirus/images/MDATP-18-ConfigurationProfilesScope.png)
+![Configuration profile scope screenshot](../microsoft-defender-antivirus/images/MDATP-18-ConfigurationProfilesScope.png)
 
 Save the **Configuration Profile**.
 
@@ -152,7 +152,7 @@ Starting in macOS 10.15 (Catalina) a user must manually allow to display notific
 
 1. Create a package in **Settings > Computer Management > Packages**.
 
-    ![Computer management packages screenshot](../windows-defender-antivirus/images/MDATP-19-MicrosoftDefenderWDAVPKG.png)
+    ![Computer management packages screenshot](../microsoft-defender-antivirus/images/MDATP-19-MicrosoftDefenderWDAVPKG.png)
 
 2. Upload the package to the Distribution Point.
 3. In the **filename** field, enter the name of the package. For example, _wdav.pkg_.
@@ -161,7 +161,7 @@ Starting in macOS 10.15 (Catalina) a user must manually allow to display notific
 
 Your policy should contain a single package for Microsoft Defender.
 
-![Microsoft Defender packages screenshot](../windows-defender-antivirus/images/MDATP-20-MicrosoftDefenderPackages.png)
+![Microsoft Defender packages screenshot](../microsoft-defender-antivirus/images/MDATP-20-MicrosoftDefenderPackages.png)
 
 Configure the appropriate scope to specify the computers that will receive this policy.
 
@@ -176,12 +176,12 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 
  - Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
-    ![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
-    ![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
+    ![MDM approve button screenshot](../microsoft-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
+    ![MDM screenshot](../microsoft-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
 
     After a moment, the device's User Approved MDM status will change to **Yes**.
 
-    ![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
+    ![MDM status screenshot](../microsoft-defender-antivirus/images/MDATP-23-MDMStatus.png)
 
     You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
@@ -196,17 +196,17 @@ You can monitor deployment status in the **Logs** tab:
 - **Pending** means that the deployment is scheduled but has not yet happened
 - **Completed** means that the deployment succeeded and is no longer scheduled
 
-![Status on server screenshot](../windows-defender-antivirus/images/MDATP-24-StatusOnServer.png)
+![Status on server screenshot](../microsoft-defender-antivirus/images/MDATP-24-StatusOnServer.png)
 
 ### Status on client device
 
 After the Configuration Profile is deployed, you'll see the profile for the device in  **System Preferences** > **Profiles >**.
 
-![Status on client screenshot](../windows-defender-antivirus/images/MDATP-25-StatusOnClient.png)
+![Status on client screenshot](../microsoft-defender-antivirus/images/MDATP-25-StatusOnClient.png)
 
 Once the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
 
-![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
 
 You can monitor policy installation on a device by following the JAMF log file:
 
@@ -279,12 +279,12 @@ This script removes Microsoft Defender ATP from the /Applications directory:
    echo "Done!"
 ```
 
-![Microsoft Defender uninstall screenshot](../windows-defender-antivirus/images/MDATP-26-Uninstall.png)
+![Microsoft Defender uninstall screenshot](../microsoft-defender-antivirus/images/MDATP-26-Uninstall.png)
 
 ### Policy
 
 Your policy should contain a single script:
 
-![Microsoft Defender uninstall script screenshot](../windows-defender-antivirus/images/MDATP-27-UninstallScript.png)
+![Microsoft Defender uninstall script screenshot](../microsoft-defender-antivirus/images/MDATP-27-UninstallScript.png)
 
 Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.

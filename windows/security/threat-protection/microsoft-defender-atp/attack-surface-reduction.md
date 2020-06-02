@@ -23,9 +23,6 @@ ms.custom: asr
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Your attack surface is the total number of places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means offering attackers fewer ways to perform attacks.
 
 Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
@@ -44,9 +41,11 @@ For more information about configuring attack surface reduction rules, see [Enab
 
 ## Attack surface reduction features across Windows versions
 
-You can set attack surface reduction rules for computers running the following versions of Windows:
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
-- [Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) (Semi-Annual Channel) or later
+You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
+- Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 To use the entire feature-set of attack surface reduction rules, you need a [Windows 10 Enterprise license](https://www.microsoft.com/licensing/product-licensing/windows10). With a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
@@ -252,7 +251,7 @@ This rule blocks the following file types from launching unless they meet preval
 Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
 
 > [!IMPORTANT]
-> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
+> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
 >
 >You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
@@ -273,7 +272,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or an exclusion list.
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
+> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule.
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -406,4 +405,4 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
+- [Compatibility of Microsoft Defender with other antivirus/antimalware](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)

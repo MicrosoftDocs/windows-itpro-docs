@@ -1,6 +1,6 @@
 ---
-title: Manual deployment for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac manually, from the command line.
+title: Manual deployment for Microsoft Defender ATP for macOS
+description: Install Microsoft Defender ATP for macOS manually, from the command line.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,65 +17,54 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Manual deployment for Microsoft Defender ATP for Mac
+# Manual deployment for Microsoft Defender ATP for macOS
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for macOS](microsoft-defender-atp-mac.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Mac manually. A successful deployment requires the completion of all of the following steps:
+This topic describes how to deploy Microsoft Defender ATP for macOS manually. A successful deployment requires the completion of all of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation](#application-installation)
 - [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender ATP for macOS page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In Section 1 of the page, set operating system to **Linux, macOS, iOS, and Android** and Deployment method to **Local script**.
+2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/ATP-Portal-Onboarding-page.png)
+    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-page.png)
 
 5. From a command prompt, verify that you have the two files.
-    Extract the contents of the .zip files:
-  
-    ```bash
-    $ ls -l
-    total 721152
-    -rw-r--r--  1 test  staff       6185 Mar 15 10:45 WindowsDefenderATPOnboardingPackage.zip
-    -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: WindowsDefenderATPOnboarding.py
-    ```
-
+    
 ## Application installation
 
 To complete this process, you must have admin privileges on the machine.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-28-AppInstall.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-28-AppInstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot](../windows-defender-antivirus/images/MDATP-30-SystemExtension.png)
+   ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-30-SystemExtension.png)
 
 3. Select **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](../windows-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
+    ![Security and privacy window screenshot](../microsoft-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
 
 The installation proceeds.
 
@@ -87,7 +76,7 @@ The installation proceeds.
 
 ## Client configuration
 
-1. Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the machine where you deploy Microsoft Defender ATP for macOS.
 
     The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
 
@@ -98,7 +87,7 @@ The installation proceeds.
 2. Run the Python script to install the configuration file:
 
     ```bash
-    $ /usr/bin/python WindowsDefenderATPOnboarding.py
+    $ /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
@@ -111,7 +100,7 @@ The installation proceeds.
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-   ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+   ![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
    
 
 ## How to Allow Full Disk Access
@@ -127,4 +116,4 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for macOS from client devices.

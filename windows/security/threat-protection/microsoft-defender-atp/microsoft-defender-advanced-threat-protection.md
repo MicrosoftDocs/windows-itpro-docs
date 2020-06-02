@@ -26,7 +26,7 @@ ms.topic: conceptual
 Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 <p></p>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wDob]
 
 Microsoft Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
@@ -67,6 +67,9 @@ Microsoft Defender ATP uses the following combination of technology built into W
 </table>
 <br>
 
+<p></p>
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
 > - Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
@@ -84,7 +87,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)**<br>
+**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>

@@ -21,8 +21,8 @@ ms.date: 03/10/2020
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
 

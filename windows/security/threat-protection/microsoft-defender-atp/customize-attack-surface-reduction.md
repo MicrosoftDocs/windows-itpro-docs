@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/13/2019
+ms.date: 05/20/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -26,11 +26,16 @@ manager: dansimp
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Attack surface reduction rules help prevent software behaviors that are often abused to compromise your device or network. For example, an attacker might try to run an unsigned script off of a USB drive, or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve your organization's defensive posture.
+[Attack surface reduction rules](enable-attack-surface-reduction.md) help prevent software behaviors that are often abused to compromise your device or network. For example, an attacker might try to run an unsigned script off of a USB drive, or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve your organization's defensive posture.
 
 Learn how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
 
-Attack surface reduction rules are supported on Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019. You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
+You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
+- Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
 
 ## Exclude files and folders
 
@@ -43,7 +48,7 @@ An exclusion applies to all rules that allow exclusions. You can specify an indi
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
-Attack surface reduction supports environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+Attack surface reduction supports environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 If you are encountering problems with rules detecting files that you believe should not be detected, you should [use audit mode to test the rule](evaluate-attack-surface-reduction.md).
 
 Rule description | GUID
@@ -72,7 +77,7 @@ See the [attack surface reduction](attack-surface-reduction.md) topic for detail
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus > Windows Defender Exploit Guard > Attack surface reduction**.
+3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Attack surface reduction**.
 
 4. Double-click the **Exclude files and paths from Attack surface reduction Rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
