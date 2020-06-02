@@ -14602,6 +14602,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "browsers/internet-explorer/kb-support/clear-ie-cache-from-command-line.md",
+"redirect_url": "https://docs.microsoft.com/internet-explorer/kb-support/ie-edge-faqs",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/keep-secure/security-technologies.md",
 "redirect_url": "https://docs.microsoft.com/windows/windows-10/index",
 "redirect_document_id": true

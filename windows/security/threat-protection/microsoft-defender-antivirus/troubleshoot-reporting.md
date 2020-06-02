@@ -62,12 +62,7 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 If the above prerequisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
 
 > [!div class="nextstepaction"]
-> [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance.md)
-
-
-
-
-
+> [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data.md)  
 
 ## Related topics
 

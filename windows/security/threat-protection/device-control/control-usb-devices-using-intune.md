@@ -111,7 +111,7 @@ For example:
 If you want to prevent the installation of a device class or certain devices, you can use the prevent device installation policies:
 
 1. Enable **Prevent installation of devices that match any of these device IDs**.
-2. Enable **Prevent installation of devices that match these device setup classes**.
+2. Enable **Prevent installation of devices using drivers that match these device setup classes**.
 
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
@@ -144,6 +144,14 @@ The following is an example for looking up a device vendor ID or product ID usin
 Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
+
+The **Prevent installation of devices using drivers that match these device setup classes** policy allows you to specify device setup classes that Windows is prevented from installing. 
+
+To prevent installation of particular classes of devices: 
+
+1. Find the GUID of the device setup class from [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
+![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 

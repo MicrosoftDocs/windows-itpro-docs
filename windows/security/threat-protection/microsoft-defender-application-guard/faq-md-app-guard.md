@@ -1,6 +1,6 @@
 ---
-title: FAQ - Windows Defender Application Guard (Windows 10)
-description: Learn about the commonly asked questions and answers for Windows Defender Application Guard.
+title: FAQ - Microsoft Defender Application Guard (Windows 10)
+description: Learn about the commonly asked questions and answers for Microsoft Defender Application Guard.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,11 +14,11 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# Frequently asked questions - Windows Defender Application Guard 
+# Frequently asked questions - Microsoft Defender Application Guard 
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
+Answering frequently asked questions about Microsoft Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
 ## Frequently Asked Questions
 
@@ -49,13 +49,13 @@ To help keep the Application Guard Edge session secure and isolated from the hos
 
 Currently, the Application Guard Edge session doesn't support Extensions. However, we're closely monitoring your feedback about this. 
 
-### How do I configure Windows Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
+### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
-Windows Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
-The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in Windows Defender Application Guard.
+The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in Microsoft Defender Application Guard.
 - Vietnam Telex keyboard
 - Vietnam number key-based keyboard
 - Hindi phonetic keyboard
@@ -83,12 +83,12 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard). 
+When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
 Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383B limit.
 
-### Why does my encryption driver break Windows Defender Application Guard?
+### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
