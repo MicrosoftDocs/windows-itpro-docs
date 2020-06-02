@@ -22,7 +22,8 @@ Answering frequently asked questions about Microsoft Defender Application Guard 
 
 ## Frequently Asked Questions
 
-### Can I enable Application Guard on machines equipped with 4GB RAM?                                                                   |
+### Can I enable Application Guard on machines equipped with 4GB RAM?
+
 We recommend 8GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is 4 cores.)                                                   
