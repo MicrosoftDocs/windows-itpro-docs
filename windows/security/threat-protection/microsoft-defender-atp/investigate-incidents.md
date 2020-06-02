@@ -55,7 +55,7 @@ You can also manage an alert and see alert metadata along with other information
 ### Devices
 You can also investigate the devices that are part of, or related to, a given incident. For more information, see [Investigate devices](investigate-machines.md).
 
-![Image of devices tab in incident details page](images/atp-incident-machine-tab.png)
+![Image of devices tab in incident details page](images/atp-incident-device-tab.png)
 
 ### Investigations
 Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.

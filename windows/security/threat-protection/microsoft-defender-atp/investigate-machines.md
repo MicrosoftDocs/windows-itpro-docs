@@ -43,7 +43,7 @@ When you investigate a specific device, you'll see:
 - Cards (active alerts, logged on users, security assessment)
 - Tabs (alerts, timeline, security recommendations, software inventory, discovered vulnerabilities)
 
-![Image of device view](images/specific-machine.png)
+![Image of device view](images/specific-device.png)
 
 ## Device details
 

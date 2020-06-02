@@ -26,7 +26,7 @@ ms.topic: article
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
 The dashboard is structured into two sections:
- ![Image of the device report](images/machine-reports.png)
+ ![Image of the device report](images/device-reports.png)
  
 Section | Description
 :---|:---
