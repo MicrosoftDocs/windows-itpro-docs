@@ -34,7 +34,8 @@ Offboard device from Microsoft Defender ATP.
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> This does not support offboarding macOS Devices.
+> This API is supported on Windows 10, version 1703 and later, or Windows Server 2019 and later. 
+> This API is not supported on MacOS or Linux devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
