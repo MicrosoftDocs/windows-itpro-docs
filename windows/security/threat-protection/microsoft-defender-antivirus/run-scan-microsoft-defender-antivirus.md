@@ -61,7 +61,7 @@ See [Use the mpcmdrun.exe commandline tool to configure and manage Microsoft Def
 
 ## Use the Windows Security app to run a scan
 
-See [Run a scan in the Windows Security app](windows-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
+See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
 
 ## Use PowerShell cmdlets to run a scan
 

@@ -31,7 +31,7 @@ For example, it may be necessary to allow certain user groups (such as security 
 
 The default setting for these policies is **Disabled**.
 
-If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Security](windows-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
+If they are set to **Enabled**, users on endpoints can make changes to the associated setting with the [Windows Security](microsoft-defender-security-center-antivirus.md) app, local Group Policy settings, and PowerShell cmdlets (where appropriate).
 
 The following table lists each of the override policy setting and the configuration instructions for the associated feature or setting.
 
