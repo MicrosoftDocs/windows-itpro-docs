@@ -33,7 +33,7 @@ Before you can deploy and track compliance to security baselines:
 - [Ensure you have the necessary permissions](configure-machines.md#obtain-required-permissions)
 
 ## Compare the Microsoft Defender ATP and the Windows Intune security baselines
-The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure machines running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Windows Defender Antivirus. In contrast, the Microsoft Defender ATP baseline provides settings that optimize all the security controls in the Microsoft Defender ATP stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
+The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure machines running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Microsoft Defender Antivirus. In contrast, the Microsoft Defender ATP baseline provides settings that optimize all the security controls in the Microsoft Defender ATP stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
 
 - [Windows security baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 - [Microsoft Defender ATP baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
