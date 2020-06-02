@@ -36,7 +36,7 @@ MpCmdRun.exe [command] [-options]
 ```
 Here's an example:
 ```
-MpCmdRun.exe -scan -2
+MpCmdRun.exe -Scan -ScanType 2
 ``` 
 
 | Command  | Description   |
@@ -44,7 +44,7 @@ MpCmdRun.exe -scan -2
 | `-?` **or** `-h`   | Displays all available options for this tool |
 | `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan.  CpuThrottling will honor the configured CPU throttling from policy |
 | `-Trace [-Grouping #] [-Level #]` | Starts diagnostic tracing |
-| `-GetFiles` | Collects support information |
+| `-GetFiles [-SupportLogLocation <path>]` | Collects support information. See '[collecting diagnostic data](collect-diagnostic-data.md)'  |
 | `-GetFilesDiagTrack`  | Same as `-GetFiles`, but outputs to temporary DiagTrack folder |
 | `-RemoveDefinitions [-All]` | Restores the installed Security intelligence to a previous backup copy or to the original default set |
 | `-RemoveDefinitions [-DynamicSignatures]` | Removes only the dynamically downloaded Security intelligence |
@@ -58,5 +58,6 @@ MpCmdRun.exe -scan -2
 
 ## Related topics
 
-- [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Reference topics for collecting diagnostic data](collect-diagnostic-data.md)
+- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

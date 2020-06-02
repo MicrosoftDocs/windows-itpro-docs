@@ -58,11 +58,32 @@ All our updates contain:
 * serviceability improvements
 * integration improvements (Cloud, MTP)  
 <br/>
+<details>
+<summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
+
+&ensp;Security intelligence update version: **1.317.20.0**  
+&ensp;Released: **May 26, 2020**  
+&ensp;Platform: **4.18.2005.4**  
+&ensp;Engine: **1.1.17100.2**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Improved logging for scan events
+* Improved user mode crash handling.
+* Added event tracing for Tamper protection
+* Fixed AMSI Sample submission
+* Fixed AMSI Cloud blocking
+* Fixed Security update install log
+
+### Known Issues
+No known issues  
+<br/>
+</details>
 
 <details>
 <summary> April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</summary>
 
-&ensp;Security intelligence update version: **TBD**  
+&ensp;Security intelligence update version: **1.315.12.0**  
 &ensp;Released: **April 30, 2020**  
 &ensp;Platform: **4.18.2004.6**  
 &ensp;Engine: **1.1.17000.2**  
