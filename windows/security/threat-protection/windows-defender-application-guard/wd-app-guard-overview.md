@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Application Guard (Windows 10)
-description: Learn about Windows Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
+title: Microsoft Defender Application Guard (Windows 10)
+description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,11 +14,11 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# Windows Defender Application Guard overview
+# Microsoft Defender Application Guard overview
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
+Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
 
 ## What is Application Guard and how does it work?
 
