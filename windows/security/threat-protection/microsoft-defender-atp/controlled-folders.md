@@ -45,7 +45,7 @@ Controlled folder access is supported on Windows 10, version 1709 and later and 
 
 ## Requirements
 
-Controlled folder access requires enabling [Windows Defender Antivirus real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md).
+Controlled folder access requires enabling [Windows Defender Antivirus real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## Review controlled folder access events in the Microsoft Defender ATP Security Center
 

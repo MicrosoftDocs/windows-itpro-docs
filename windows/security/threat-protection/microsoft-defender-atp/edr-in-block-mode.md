@@ -61,7 +61,7 @@ The following image shows an instance of unwanted software that was detected and
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
-|Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/><br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus). |
+|Cloud-delivered protection |Make sure Windows Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/><br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
 |Windows Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
 |Windows Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
@@ -73,7 +73,7 @@ The following image shows an instance of unwanted software that was detected and
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Windows Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
+No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Windows Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
 
 ### Why do I need to keep Windows Defender Antivirus up to date? 
 
@@ -87,5 +87,5 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 [Behavioral blocking and containment](behavioral-blocking-containment.md)
 
-[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus)
+[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

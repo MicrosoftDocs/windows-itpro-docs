@@ -30,8 +30,8 @@ In Windows 10, version 1803, this section also contains information and settings
 
 IT administrators and IT pros can get more information and documentation about configuration from the following:
 
-- [Windows Defender Antivirus in the Windows Security app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
-- [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in the Windows Security app](../microsoft-defender-antivirus/windows-defender-security-center-antivirus.md)
+- [Windows Defender Antivirus documentation library](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
 - [Protect important folders with Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
 - [Office 365 advanced protection](https://support.office.com/en-us/article/office-365-advanced-protection-82e72640-39be-4dc7-8efd-740fb289123a)
