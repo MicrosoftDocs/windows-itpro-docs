@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/04/2019
+ms.date: 06/02/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -83,7 +83,7 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard). 
+When using Windows Pro or Windows Enterprise, you have access to using Application Guard's Standalone Mode. However, when using Windows Enterprise, you have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
@@ -91,4 +91,8 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Windows Defender Application Guard?
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
+Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+
+### Why did Application Guard stop working after I turned off hyperthreading?
+
+If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
