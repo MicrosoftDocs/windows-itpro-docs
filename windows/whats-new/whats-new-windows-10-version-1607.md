@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 (version 1607) and Windows 10 Mobile.
+description: What's new in Windows 10 for Windows 10 (version 1607) and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.author: greglin
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1607
+# What's new in Windows 10, version 1607 for IT Pros
 
 Below is a list of some of the new and updated features in Windows 10, version 1607 (also known as the Anniversary Update).
 

@@ -28,12 +28,31 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.6.0.42</I>
+<I>Current downloadable version of SetupDiag: 1.6.0.42</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
+
+## SetupDiag in Windows 10, version 2004 and later
+
+With the release of Windows 10, version 2004, SetupDiag is included with [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario).
+
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
+
+When run by Windows Setup, the following [parameters](#parameters) are used:
+
+- /ZipLogs:False
+- /Format:xml
+- /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
+- /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
+
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\Setup\SetupDiag\Results**.
+
+If the upgrade process proceeds normally, the **Sources** directory including **setupdiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **setupdiag.exe** will also be removed.
+
+## Using SetupDiag
 
 To quickly use SetupDiag on your current computer:
 1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).

@@ -14,6 +14,9 @@ manager: dansimp
 
 # Test scenario 1 – Sign into Azure AD, enable the wake word, and try a voice query
 
+>[!NOTE]
+>The wake word has been temporarily disabled in the latest version of Cortana in Windows but will be restored soon.
+
 1. Select the **Cortana** icon in the task bar and sign in using your Azure AD account.
 
 2. Select the &quot;…&quot; menu and select **Talking to Cortana**.
@@ -22,9 +25,9 @@ manager: dansimp
 
 4. Say **Cortana, what can you do?**.
 
-When you say &quot;Cortana&quot;, Cortana will open in listening mode to acknowledge the wake word.
+When you say **Cortana**, Cortana will open in listening mode to acknowledge the wake word.
 
-:::image type="content" source="../../../images/screenshot4.png" alt-text="Screenshot: Cortana listening mode":::
+:::image type="content" source="../screenshot4.png" alt-text="Screenshot: Cortana listening mode":::
 
 Once you finish saying your query, Cortana will open with the result.
 
