@@ -127,10 +127,10 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes.
   
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-    - Windows Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/microsoft-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
-    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus) for Windows Defender Antivirus scans.
+    - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/microsoft-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
+    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus) for Microsoft Defender Antivirus scans.
 
 
   
@@ -166,8 +166,8 @@ You can now block untrusted processes from writing to disk sectors using Control
     Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal.
 
 
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
-Windows Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
+- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
+Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
     Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
 

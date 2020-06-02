@@ -1,9 +1,9 @@
 ---
-title: Configure Windows Defender Antivirus exclusions on Windows Server 2016 or 2019
+title: Configure Microsoft Defender Antivirus exclusions on Windows Server 2016 or 2019
 ms.reviewer: 
 manager: dansimp
 description: Windows Servers 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
-keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Windows Defender Antivirus
+keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -16,13 +16,13 @@ ms.author: deniseb
 ms.custom: nextgen
 ---
 
-# Configure Windows Defender Antivirus exclusions on Windows Server
+# Configure Microsoft Defender Antivirus exclusions on Windows Server
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+Microsoft Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 > [!NOTE]
 > Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a Full/Quick or On-demand scan.
@@ -39,7 +39,7 @@ In addition to server role-defined automatic exclusions, you can add or remove c
 
 - Custom and duplicate exclusions do not conflict with automatic exclusions.
 
-- Windows Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
+- Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 
 ## Opt out of automatic exclusions
 
@@ -58,7 +58,7 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Exclusions**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
 
 4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
@@ -70,9 +70,9 @@ Use the following cmdlets:
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-[Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
-[Use PowerShell with Windows Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
+[Use PowerShell with Microsoft Defender Antivirus](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and 2019
 
@@ -400,12 +400,12 @@ This section lists the folder exclusions that are delivered automatically when y
 
 ## Related articles
 
-- [Configure and validate exclusions for Windows Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

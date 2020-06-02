@@ -1,7 +1,7 @@
 ---
-title: Specify cloud-delivered protection level in Windows Defender Antivirus
-description: Set the aggressiveness of cloud-delivered protection in Windows Defender Antivirus.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
+title: Specify cloud-delivered protection level in Microsoft Defender Antivirus
+description: Set the aggressiveness of cloud-delivered protection in Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -23,24 +23,24 @@ ms.custom: nextgen
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and Microsoft Endpoint Configuration Manager.
+You can specify the level of cloud-protection offered by Microsoft Defender Antivirus with Group Policy and Microsoft Endpoint Configuration Manager.
 
 >[!NOTE]
->The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+>The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 ## Use Intune to specify the level of cloud-delivered protection
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services > Intune**.
 3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
-4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
+4. Select **Properties**, select **Settings: Configure**, and then select **Microsoft Defender Antivirus**.
 5. On the **File Blocking Level** switch, select one of the following:
 
     1. **High**: Applies a strong level of detection.
     2. **High +**: Uses the **High** level and applies additional protection measures (may impact client performance).
     3. **Zero tolerance**: Blocks all unknown executables.
 
-8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
+8. Click **OK** to exit the **Microsoft Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
   
@@ -59,10 +59,10 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 4.  Click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
+5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > MpEngine**.
 
 6.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
-    - **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.
+    - **Default Microsoft Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
     - **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.
@@ -75,7 +75,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
   
 ## Related articles
 
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

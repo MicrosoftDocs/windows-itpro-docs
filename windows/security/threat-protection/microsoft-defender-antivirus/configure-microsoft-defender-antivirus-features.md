@@ -1,7 +1,7 @@
 ---
-title: Configure Windows Defender Antivirus features
-description: You can configure Windows Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
-keywords: Windows Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
+title: Configure Microsoft Defender Antivirus features
+description: You can configure Microsoft Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
+keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -17,13 +17,13 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Configure Windows Defender Antivirus features
+# Configure Microsoft Defender Antivirus features
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can configure Windows Defender Antivirus with a number of tools, including:
+You can configure Microsoft Defender Antivirus with a number of tools, including:
 
 - Microsoft Intune
 - Microsoft Endpoint Configuration Manager
@@ -37,13 +37,13 @@ The following broad categories of features can be configured:
 - Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
 - How end-users interact with the client on individual endpoints
 
-The topics in this section describe how to perform key tasks when configuring Windows Defender Antivirus. Each topic includes instructions for the applicable configuration tool (or tools).
+The topics in this section describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each topic includes instructions for the applicable configuration tool (or tools).
 
 You can also review the [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md) topic for an overview of each tool and links to further help. 
 
 ## In this section
 Topic | Description
 :---|:---
-[Utilize Microsoft cloud-provided Windows Defender Antivirus protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) | Cloud-delivered protection provides an advanced level of fast, robust antivirus detection
+[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) | Cloud-delivered protection provides an advanced level of fast, robust antivirus detection
 [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)|Enable behavior-based, heuristic, and real-time antivirus protection
-[Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)|Configure how end-users interact with Windows Defender Antivirus, what notifications they see, and whether they can override settings
+[Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)|Configure how end-users interact with Microsoft Defender Antivirus, what notifications they see, and whether they can override settings

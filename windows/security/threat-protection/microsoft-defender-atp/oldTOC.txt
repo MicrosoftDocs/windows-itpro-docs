@@ -72,7 +72,7 @@
 ###### [Initiate Automated Investigation](respond-machine-alerts.md#initiate-automated-investigation)
 ###### [Initiate Live Response Session](respond-machine-alerts.md#initiate-live-response-session)
 ###### [Collect investigation package from machines](respond-machine-alerts.md#collect-investigation-package-from-machines)
-###### [Run Windows Defender Antivirus scan on machines](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-machines)
+###### [Run Microsoft Defender Antivirus scan on machines](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network)
 ###### [Check activity details in Action center](respond-machine-alerts.md#check-activity-details-in-action-center)
@@ -204,7 +204,7 @@
 
 
 ### [Configure next generation protection]()
-#### [Configure Windows Defender Antivirus features](../microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features.md)
+#### [Configure Microsoft Defender Antivirus features](../microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection]()
 ##### [Understand cloud-delivered protection](../microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md)
@@ -225,7 +225,7 @@
 ##### [Use limited periodic antivirus scanning](../microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus.md)
 
 #### [Deploy, manage updates, and report on antivirus]()
-##### [Using Windows Defender Antivirus](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Using Microsoft Defender Antivirus](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
 
 ##### [Deploy and enable antivirus]()
 ###### [Preparing to deploy](../microsoft-defender-antivirus/deploy-microsoft-defender-antivirus.md)

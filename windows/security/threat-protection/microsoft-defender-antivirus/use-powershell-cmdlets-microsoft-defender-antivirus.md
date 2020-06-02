@@ -1,6 +1,6 @@
 ---
 title: Use PowerShell cmdlets to configure and run Windows Defender AV
-description: In Windows 10, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Windows Defender Antivirus.
+description: In Windows 10, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Microsoft Defender Antivirus.
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Use PowerShell cmdlets to configure and manage Windows Defender Antivirus
+# Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus
 
 **Applies to:**
 
@@ -30,7 +30,7 @@ For a list of the cmdlets and their functions and available parameters, see the 
 PowerShell cmdlets are most useful in Windows Server environments that don't rely on a graphical user interface (GUI) to configure software.
 
 > [!NOTE]
-> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr), [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), or [Windows Defender Antivirus Group Policy ADMX templates](https://www.microsoft.com/download/100591).
+> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr), [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), or [Microsoft Defender Antivirus Group Policy ADMX templates](https://www.microsoft.com/download/100591).
 
 Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell.
 
@@ -38,7 +38,7 @@ You can [configure which settings can be overridden locally with local policy ov
 
 PowerShell is typically installed under the folder `%SystemRoot%\system32\WindowsPowerShell`.
 
-## Use Windows Defender Antivirus PowerShell cmdlets
+## Use Microsoft Defender Antivirus PowerShell cmdlets
 
 1. In the Windows search bar, type **powershell**.
 2. Select **Windows PowerShell** from the results to open the interface.
@@ -58,4 +58,4 @@ Omit the `-online` parameter to get locally cached help.
 ## Related topics
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
