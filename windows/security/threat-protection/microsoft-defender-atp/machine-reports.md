@@ -61,7 +61,7 @@ The report is made up of cards that display the following device attributes:
  
 - **Health state**: shows information about the sensor state on devices, providing an aggregated view of devices that are active, experiencing impaired communications, inactive, or where no sensor data is seen.
   
-- **Antivirus status for active Windows 10 devices**: shows the number of devices and status of Windows Defender Antivirus.
+- **Antivirus status for active Windows 10 devices**: shows the number of devices and status of Microsoft Defender Antivirus.
     
 - **OS platforms**: shows the distribution of OS platforms that exists within your organization. 
  

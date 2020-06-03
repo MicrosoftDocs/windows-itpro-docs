@@ -157,7 +157,7 @@ The service could not contact the external processing servers at that URL.</td>
 <td>17</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.</td>
 </tr>
@@ -198,8 +198,8 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
 <td>27</td>
-<td>Microsoft Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender Antivirus. Onboarding process failed. Failure code: <code>variable</code>.</td>
-<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Microsoft Defender ATP.</td>
+<td>Microsoft Defender Advanced Threat Protection service failed to enable SENSE aware mode in Microsoft Defender Antivirus. Onboarding process failed. Failure code: <code>variable</code>.</td>
+<td>Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.<br>
 Ensure real-time antimalware protection is running properly.</td>
@@ -208,7 +208,7 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>28</td>
 <td>Microsoft Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.</td>
 </tr>
@@ -220,8 +220,8 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
 <td>30</td>
-<td>Microsoft Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender Antivirus. Failure code: <code>variable</code>.</td>
-<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Microsoft Defender ATP.</td>
+<td>Microsoft Defender Advanced Threat Protection service failed to disable SENSE aware mode in Microsoft Defender Antivirus. Failure code: <code>variable</code>.</td>
+<td>Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a><br>
 Ensure real-time antimalware protection is running properly.</td>
@@ -249,7 +249,7 @@ If the identifier does not persist, the same device might appear twice in the po
 <td>34</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: <code>variable</code>.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
+<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Ensure the diagnostic data service is enabled</a>.<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.</td>
 </tr>

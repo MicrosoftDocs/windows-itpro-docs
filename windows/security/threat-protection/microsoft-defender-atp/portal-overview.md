@@ -42,7 +42,7 @@ When you open the portal, you'll see:
  ![Microsoft Defender Advanced Threat Protection portal](images/mdatp-portal-overview.png)
 
 > [!NOTE]
-> Malware related detections will only appear if your devices are using Windows Defender Antivirus as the default real-time protection antimalware product.
+> Malware related detections will only appear if your devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
@@ -80,8 +80,13 @@ Icon | Description
 ![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the device.
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the device.
 ![Thunderbolt icon](images/atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
+<<<<<<< HEAD
 ![Device icon](images/atp-machine-icon.png)| Device icon
 ![Windows Defender AV events icon](images/atp-windows-defender-av-events-icon.png)| Windows Defender Antivirus events
+=======
+![Machine icon](images/atp-machine-icon.png)| Machine icon
+![Windows Defender AV events icon](images/atp-windows-defender-av-events-icon.png)| Microsoft Defender Antivirus events
+>>>>>>> master
 ![Application Guard events icon](images/atp-Application-Guard-events-icon.png)| Windows Defender Application Guard events
 ![Device Guard events icon](images/atp-Device-Guard-events-icon.png)| Windows Defender Device Guard events
 ![Exploit Guard events icon](images/atp-Exploit-Guard-events-icon.png)| Windows Defender Exploit Guard events

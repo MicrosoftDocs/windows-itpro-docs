@@ -51,20 +51,20 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-28-AppInstall.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-28-AppInstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot](../windows-defender-antivirus/images/MDATP-30-SystemExtension.png)
+   ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-30-SystemExtension.png)
 
 3. Select **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](../windows-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
+    ![Security and privacy window screenshot](../microsoft-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
 
 The installation proceeds.
 
@@ -100,7 +100,7 @@ The installation proceeds.
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-   ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+   ![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
    
 
 ## How to Allow Full Disk Access

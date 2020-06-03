@@ -172,7 +172,7 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
 
 ## Integration with Azure Security Center

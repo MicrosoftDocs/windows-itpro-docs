@@ -79,7 +79,7 @@ Your custom detection rule can automatically take actions on files or devices th
 These actions are applied to devices in the `DeviceId` column of the query results:
 - **Isolate device** — applies full network isolation, preventing the device from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about device isolation](respond-machine-alerts.md#isolate-devices-from-the-network)
 - **Collect investigation package** — collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
-- **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the device
+- **Run antivirus scan** — performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation** — initiates an [automated investigation](automated-investigations.md) on the device
 
 #### Actions on files
