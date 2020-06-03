@@ -12858,17 +12858,17 @@
 },
 {
 "source_path": "windows/keep-secure/use-group-policy-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/use-intune-config-manager-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/use-powershell-cmdlets-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
