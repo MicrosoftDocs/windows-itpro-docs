@@ -2218,12 +2218,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -6133,22 +6133,22 @@
 },
 {
 "source_path": "windows/keep-secure/configure-windows-defender-in-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/enable-pua-windows-defender-for-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/get-started-with-windows-defender-for-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/run-cmd-scan-windows-defender-for-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
