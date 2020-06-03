@@ -19,8 +19,6 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
   items:
     # Card
     - title: Identity and access management
