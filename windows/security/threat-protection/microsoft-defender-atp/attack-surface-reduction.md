@@ -251,7 +251,7 @@ This rule blocks the following file types from launching unless they meet preval
 Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
 
 > [!IMPORTANT]
-> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
+> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
 >
 >You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
@@ -272,7 +272,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or an exclusion list.
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
+> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule.
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -405,4 +405,4 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
+- [Compatibility of Microsoft Defender with other antivirus/antimalware](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)

@@ -46,9 +46,9 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 Network protection requires Windows 10 Pro, Enterprise E3, E5 and Windows Defender AV real-time protection.
 
-Windows 10 version | Windows Defender Antivirus
+Windows 10 version | Microsoft Defender Antivirus
 -|-
-Windows 10 version 1709 or later | [Windows Defender AV real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) must be enabled
+Windows 10 version 1709 or later | [Windows Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
 
 ## Review network protection events in the Microsoft Defender ATP Security Center
 
