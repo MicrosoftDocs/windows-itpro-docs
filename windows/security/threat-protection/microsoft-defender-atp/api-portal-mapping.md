@@ -28,8 +28,9 @@ ms.topic: article
 Understand what data fields are exposed as part of the detections API and how they map to Microsoft Defender Security Center.
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
 >- **Microsoft Defender ATP Detection** is composed from the suspicious event occurred on the Device and its related **Alert** details.
+>- The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Detections API fields and portal mapping
 The following table lists the available fields exposed in the detections API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
