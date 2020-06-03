@@ -9508,7 +9508,7 @@
 },
 {
 "source_path": "windows/keep-secure/configure-protection-features-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-protection-features-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9518,12 +9518,12 @@
 },
 {
 "source_path": "windows/keep-secure/configure-real-time-protection-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/configure-remediation-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-remediation-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
