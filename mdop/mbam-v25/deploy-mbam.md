@@ -8,7 +8,6 @@ ms.author: delhan
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/16/2019
-manager: dcscontentpm
 --- 
 
 # Deploying MBAM 2.5 in a standalone configuration

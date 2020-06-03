@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1909
-description: New and updated IT Pro content about new features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
+description: New and updated features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
 keywords: ["What's new in Windows 10", "Windows 10", "November 2019 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1909 IT Pro content
+# What's new in Windows 10, version 1909 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1909
@@ -59,10 +59,6 @@ Windows 10, version 1909 also includes two new features called **Key-rolling** a
 An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/tls13/).
 
 ## Virtualization
-
-### Containers on Windows
-
-This update includes 5 fixes to allow the host to run down-level containers on up-level for process (Argon) isolation. Previously [Containers on Windows](https://docs.microsoft.com/virtualization/windowscontainers/) required matched host and container version. This limited Windows containers from supporting mixed-version container pod scenarios.
 
 ### Windows Sandbox
 

@@ -14,9 +14,6 @@ manager: dansimp
 
 # Policy CSP - Bluetooth
 
-> [!WARNING] 
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 <hr/>
 
 <!--Policies-->
@@ -412,19 +409,19 @@ The default value is an empty string. For more information, see [ServicesAllowed
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -441,8 +438,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Scope-->
 <!--Description-->
-Added in the next major release of Windows 10.
-There are multiple levels of encryption strength when pairing Bluetooth devices. This policy helps prevent weaker devices cryptographically being used in high security environments.
+Added in Windows 10, version 2004. There are multiple levels of encryption strength when pairing Bluetooth devices. This policy helps prevent weaker devices cryptographically being used in high security environments.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -470,8 +466,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
--   7 - Added in the next major release of Windows 10.
-
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 <!--/Policies-->
 
 <hr/>
