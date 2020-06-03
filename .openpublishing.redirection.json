@@ -13103,22 +13103,22 @@
 },
 {
 "source_path": "windows/keep-secure/windows-defender-antivirus-compatibility.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-antivirus-in-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-antivirus-on-windows-server-2016.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-offline.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-offline",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline",
 "redirect_document_id": true
 },
 {
