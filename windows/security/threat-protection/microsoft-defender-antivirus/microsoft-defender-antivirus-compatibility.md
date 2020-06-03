@@ -69,7 +69,7 @@ The following table summarizes the functionality and features that are available
 |--|--|--|--|--|--|
 |Active mode <br/><br/>  |Yes |No |Yes |Yes |Yes |
 |Passive mode  |No |No |Yes |No |Yes |
-|[EDR in block mode enabled](../../microsoft-defender-atp/edr-in-block-mode.md)  |No |No |Yes |Yes |Yes |
+|[EDR in block mode enabled](../microsoft-defender-atp/edr-in-block-mode.md)  |No |No |Yes |Yes |Yes |
 |Automatic disabled mode  |No |Yes |No |No |No |
 
 - In Active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
