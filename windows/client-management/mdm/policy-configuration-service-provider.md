@@ -15,9 +15,6 @@ ms.date: 07/18/2019
 
 # Policy CSP
 
-> [!WARNING] 
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
