@@ -4052,8 +4052,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## Policy CSPs supported by Microsoft Surface Hub
 - [Policy CSPs supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
 
-## Policy CSPs that can be set using Exchange Active Sync (EAS)
-- [Policy CSPs that can be set using Exchange Active Sync (EAS)](policy-csps-that-can-be-set-using-eas.md)
+## Policy CSPs that can be set using Exchange ActiveSync (EAS)
+- [Policy CSPs that can be set using Exchange ActiveSync (EAS)](policy-csps-that-can-be-set-using-eas.md)
 
 ## Related topics
 
