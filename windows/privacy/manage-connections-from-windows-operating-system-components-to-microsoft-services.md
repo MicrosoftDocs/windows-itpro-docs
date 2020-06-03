@@ -14,7 +14,7 @@ ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 5/14/2020
+ms.date: 6/3/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -37,7 +37,9 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
 > [!Warning] 
-> If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
+> - If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
+> - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode. 
+> - During update or upgrade of Windows, egress traffic may occur.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
@@ -550,7 +552,7 @@ To disable the Microsoft Account Sign-In Assistant:
 
 ### <a href="" id="bkmk-edge"></a>13. Microsoft Edge
 
-Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
+Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge).
 
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
