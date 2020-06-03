@@ -1,6 +1,6 @@
 ---
-title: FAQ - Windows Defender Application Guard (Windows 10)
-description: Learn about the commonly asked questions and answers for Windows Defender Application Guard.
+title: FAQ - Microsoft Defender Application Guard (Windows 10)
+description: Learn about the commonly asked questions and answers for Microsoft Defender Application Guard.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -8,17 +8,17 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/04/2019
+ms.date: 06/02/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
 ---
 
-# Frequently asked questions - Windows Defender Application Guard 
+# Frequently asked questions - Microsoft Defender Application Guard 
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
+Answering frequently asked questions about Microsoft Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
 ## Frequently Asked Questions
 
@@ -83,13 +83,14 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard). 
+When using Windows Pro or Windows Enterprise, you have access to using Application Guard's Standalone Mode. However, when using Windows Enterprise, you have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
 Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383B limit.
 
 ### Why does my encryption driver break Windows Defender Application Guard?
+
 
 Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
 
@@ -100,4 +101,10 @@ There is not a one-to-one mapping among all the Network Isolation policies betwe
 Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
 Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
 For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+
+Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+
+### Why did Application Guard stop working after I turned off hyperthreading?
+
+If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
 

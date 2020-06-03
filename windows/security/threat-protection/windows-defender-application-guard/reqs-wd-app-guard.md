@@ -1,6 +1,6 @@
 ---
-title: System requirements for Windows Defender Application Guard (Windows 10)
-description: Learn about the system requirements for installing and running Windows Defender Application Guard.
+title: System requirements for Microsoft Defender Application Guard (Windows 10)
+description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,17 +14,17 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# System requirements for Windows Defender Application Guard
+# System requirements for Microsoft Defender Application Guard
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
+The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Microsoft Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
 >[!NOTE]
->Windows Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
+>Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
 ## Hardware requirements
-Your environment needs the following hardware to run Windows Defender Application Guard.
+Your environment needs the following hardware to run Microsoft Defender Application Guard.
 
 |Hardware|Description|
 |--------|-----------|
