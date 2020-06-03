@@ -53,7 +53,7 @@ The risk level reflects the overall risk assessment of the device based on a com
 
 ### Exposure level
 
-The exposure level reflects the current exposure of the machine based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your machines are less vulnerable from exploitation.
+The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation.
 
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 

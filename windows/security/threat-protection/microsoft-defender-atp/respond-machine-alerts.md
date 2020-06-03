@@ -129,13 +129,8 @@ The Action center will show the scan information and the device timeline will in
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
-<<<<<<< HEAD
-> - This action is available for devices on Windows 10, version  1709 or later.
-> - This feature is available if your organization uses Windows Defender Antivirus.
-=======
 > - This action is available for machines on Windows 10, version  1709 or later.
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
->>>>>>> master
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised devices and performing further malicious activities.
