@@ -132,7 +132,7 @@ Many Windows apps now support both dark and light modes, and HoloLens 2 customer
 - 3D Viewer 
 - Movies & TV 
 
-![Dark mode windows tiled](images/hololens-darkmode-tiled-picture.jpg)
+![Dark mode windows tiled](images/DarkMode.jpg)
 
 ### System voice commands
 
@@ -141,9 +141,6 @@ You can now quickly access and use commands with your voice while using any app 
 ### Cortana updates 
 
 The updated app integrates with Microsoft 365, currently in English (United States) only, to help you get more done across your devices. On HoloLens 2, Cortana will no longer support certain device-specific commands like adjusting the volume or restarting the device, which are now supported with the new system voice commands mentioned above. Learn more about the new Cortana app and its direction on our blog [here](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
-
-> [!NOTE]
-> There's currently an issue we're investigating that requires you to launch the app after booting the device in order to use the "Hey Cortana" keyword activation, and if you updated from a 18362 build, you may see an app tile for the previous version of the Cortana app in Start that no longer works. 
 
 ### Quality improvements and fixes 
 
@@ -161,6 +158,11 @@ Improvements and Fixes also in the update:
 - Improved stability for depth buffers. 
 - Added ‘Share’ button in Feedback Hub so users can more easily share feedback. 
 - Fixed a bug where RoboRaid did not install correctly. 
+
+### Known issues
+
+- We are investigating an issue surrounding the use of the zh-CN system language that prevents the voice commands for taking a mixed reality capture or displaying the device IP address from working.
+- We're investigating an issue that requires you to launch the Cortana app after booting the device in order to use the "Hey Cortana" voice activation, and if you updated from a 18362 build, you may see a second app tile for the previous version of the Cortana app in Start that no longer works. 
 
 ## Windows Holographic, version 1903 - May 2020 Update 
 - Build 18362.1061
