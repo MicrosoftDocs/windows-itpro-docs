@@ -51,7 +51,7 @@
 ### [Configure scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
 ### [Configure and run scans](run-scan-windows-defender-antivirus.md)
 ### [Review scan results](review-scan-results-windows-defender-antivirus.md)
-### [Run and review the results of a Windows Defender Offline scan](windows-defender-offline.md)
+### [Run and review the results of a Microsoft Defender Offline scan](windows-defender-offline.md)
 
 
 ## [Review event logs and error codes to troubleshoot issues](troubleshoot-windows-defender-antivirus.md)

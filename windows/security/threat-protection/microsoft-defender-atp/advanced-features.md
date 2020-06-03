@@ -59,7 +59,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 Blocking is only available if your organization fulfills these requirements:
 
-- Uses Windows Defender Antivirus as the active antimalware solution and,
+- Uses Microsoft Defender Antivirus as the active antimalware solution and,
 - The cloud-based protection feature is enabled
 
 This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on machines in your organization.
