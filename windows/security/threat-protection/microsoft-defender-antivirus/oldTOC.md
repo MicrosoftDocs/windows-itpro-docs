@@ -1,7 +1,7 @@
 
 #	[Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
-## [Windows Defender AV in the Microsoft Defender Security Center app](windows-defender-security-center-antivirus.md)
+## [Windows Defender AV in the Microsoft Defender Security Center app](microsoft-defender-security-center-antivirus.md)
 
 ## [Windows Defender AV on Windows Server 2016](microsoft-defender-antivirus-on-windows-server-2016.md)
 
@@ -51,7 +51,7 @@
 ### [Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ### [Configure and run scans](run-scan-microsoft-defender-antivirus.md)
 ### [Review scan results](review-scan-results-microsoft-defender-antivirus.md)
-### [Run and review the results of a Windows Defender Offline scan](windows-defender-offline.md)
+### [Run and review the results of a Windows Defender Offline scan](microsoft-defender-offline.md)
 
 
 ## [Review event logs and error codes to troubleshoot issues](troubleshoot-microsoft-defender-antivirus.md)

@@ -31,7 +31,7 @@ You can also configure how standard notifications appear on endpoints, such as n
 
 ## Configure the additional notifications that appear on endpoints
 
-You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Security app](windows-defender-security-center-antivirus.md) and with Group Policy.
+You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Security app](microsoft-defender-security-center-antivirus.md) and with Group Policy.
 
 > [!NOTE]
 > In Windows 10, version 1607 the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings in all versions of Windows 10, it is called **Enhanced notifications**.

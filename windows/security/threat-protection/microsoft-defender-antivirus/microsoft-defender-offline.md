@@ -26,7 +26,7 @@ Microsoft Defender Offline is an antimalware scanning tool that lets you boot an
 
 You can use Microsoft Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
 
-In Windows 10, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
+In Windows 10, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## prerequisites and requirements
 
@@ -132,7 +132,7 @@ See the following for more information:
 
 ## Review scan results
 
-Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](windows-defender-security-center-antivirus.md#detection-history). 
+Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history). 
 
 
 ## Related articles

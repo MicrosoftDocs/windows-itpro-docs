@@ -58,7 +58,7 @@ To exclude files opened by a specific process, see [Configure and validate exclu
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 >[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
 >
 >Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
@@ -165,7 +165,7 @@ For more information, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.c
 
 ### Use the Windows Security app to configure file name, folder, or file extension exclusions
 
-See [Add exclusions in the Windows Security app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
+See [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions) for instructions.
 
 <a id="wildcards"></a>
 
@@ -206,10 +206,10 @@ You can retrieve the items in the exclusion list using one of the following meth
 - [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
 - MpCmdRun
 - PowerShell
-- [Windows Security app](windows-defender-security-center-antivirus.md#exclusions)
+- [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions)
 
 >[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
 >
 >Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
