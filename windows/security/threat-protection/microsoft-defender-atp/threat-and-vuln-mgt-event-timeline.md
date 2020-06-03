@@ -90,7 +90,7 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 
 The following icons show up next to events:
 
-- ![bug icon](images/tvm_bug_icon.png) New public exploit
+- ![bug icon](images/tvm-black-bug-icon.png) New public exploit
 - ![report warning icon](images/report-warning-icon.png) New vulnerability was published
 - ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
 - ![bug icon](images/bug-caution-icon2.png) Exploit verified
