@@ -154,7 +154,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 2. Select the three dots beside the security recommendation that you want to report,  then select **Report inaccuracy**.
 
-![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
+    ![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 

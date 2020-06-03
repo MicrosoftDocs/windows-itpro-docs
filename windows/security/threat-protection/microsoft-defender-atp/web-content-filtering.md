@@ -110,11 +110,11 @@ To add a new policy:
 1. Select **Add policy** on the **Web content filtering** page in **Settings**.
 2. Specify a name.
 3. Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
-4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only machines in the selected machine groups will be prevented from accessing websites in the selected categories.
-5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected machines.
+4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
+5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected devices.
 
 >[!NOTE]
->If you are removing a policy or changing machine groups at the same time, this might cause a delay in policy deployment.
+>If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
 ## Web content filtering cards and details
 
@@ -142,7 +142,7 @@ This card displays the total number of requests for web content in all URLs.
 
 ### View card details
 
-You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and machine groups.
+You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
 ![Image of web protection report details](images/web-protection-report-details.png)
 
@@ -150,7 +150,7 @@ You can access the **Report details** for each card by selecting a table row or 
 
 - **Domains**: Lists the web domains that have been accessed or blocked in your organization. Select a specific domain to view detailed information about that domain.
 
-- **Machine groups**: Lists all the machine groups that have generated web activity in your organization
+- **Device groups**: Lists all the device groups that have generated web activity in your organization
 
 Use the time range filter at the top left of the page to select a time period. You can also filter the information or customize the columns. Select a row to open a flyout pane with even more information about the selected item.
 
@@ -162,7 +162,7 @@ You need to be logged in to an AAD account with either App administrator or Glob
 
 ### Limitations and known issues in this preview
 
-- Unassigned machines will have incorrect data shown within the report. In the Report details > Machine groups pivot, you may see a row with a blank Machine Group field. This group contains your unassigned machines in the interim before they get put into your specified group. The report for this row may not contain an accurate count of machines or access counts.
+- Unassigned devices will have incorrect data shown within the report. In the Report details > Device groups pivot, you may see a row with a blank Device Group field. This group contains your unassigned devices in the interim before they get put into your specified group. The report for this row may not contain an accurate count of devices or access counts.
 
 - The data in our reports may not be congruent with other data on the site. We currently do not support real-time data processing for this feature, so you may see inconsistencies between the data in our reports and the URL entity page.
 

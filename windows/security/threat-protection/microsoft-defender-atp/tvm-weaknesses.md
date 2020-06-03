@@ -81,12 +81,14 @@ The threat insights icon is highlighted if there are associated exploits in the 
 ### Top vulnerable software in the dashboard
 
 1. Go to the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
-![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
+
+    ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
+
 2. Select the software that you want to investigate to go a drill down page.
 3. Select the **Discovered vulnerabilities** tab.
 4. Select the vulnerability that you want to investigate. A flyout panel will appear with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
-![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
+    ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
 
 ### Discover vulnerabilities in the device page
 
@@ -94,10 +96,14 @@ View related weaknesses information in the device page.
 
 1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
 2. In the **Devices list** page, select the device name that you want to investigate.
-<br>![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)</br>
+
+    ![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)
+
 3. The device page will open with details and response options for the device you want to investigate.
 4. Select **Discovered vulnerabilities**.
-<br>![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)</br>
+
+    [Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
+
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
 #### CVE Detection logic
