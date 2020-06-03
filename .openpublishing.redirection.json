@@ -9438,7 +9438,7 @@
 },
 {
 "source_path": "windows/keep-secure/configure-end-user-interaction-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-end-user-interaction-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-end-user-interaction-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9468,12 +9468,12 @@
 },
 {
 "source_path": "windows/keep-secure/configure-exclusions-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-exclusions-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/configure-extension-file-exclusions-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9488,7 +9488,7 @@
 },
 {
 "source_path": "windows/keep-secure/configure-local-policy-overrides-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-local-policy-overrides-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
