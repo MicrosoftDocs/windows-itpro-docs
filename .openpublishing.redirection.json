@@ -9533,7 +9533,7 @@
 },
 {
 "source_path": "windows/keep-secure/configure-server-exclusions-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9573,7 +9573,7 @@
 },
 {
 "source_path": "windows/keep-secure/configure-windows-defender-antivirus-features.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features",
 "redirect_document_id": true
 },
 {
@@ -9788,7 +9788,7 @@
 },
 {
 "source_path": "windows/keep-secure/customize-run-review-remediate-scans-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9883,7 +9883,7 @@
 },
 {
 "source_path": "windows/keep-secure/deploy-manage-report-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9893,7 +9893,7 @@
 },
 {
 "source_path": "windows/keep-secure/deploy-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9903,7 +9903,7 @@
 },
 {
 "source_path": "windows/keep-secure/deployment-vdi-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9913,7 +9913,7 @@
 },
 {
 "source_path": "windows/keep-secure/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
