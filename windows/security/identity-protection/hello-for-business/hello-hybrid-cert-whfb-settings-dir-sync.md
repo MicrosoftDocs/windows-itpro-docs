@@ -16,6 +16,7 @@ localizationpriority: medium
 ms.date: 10/23/2017
 ms.reviewer: 
 ---
+
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
@@ -26,7 +27,7 @@ ms.reviewer:
 
 ## Directory Synchronization
 
-In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
+In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.
 
 The key-trust model needs Windows Server 2016 domain controllers, which configure the key registration permissions automatically; however, the certificate-trust model does not and requires you to add the permissions manually.
 
@@ -45,12 +46,12 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 6. In the **Applies to** list box, select **Descendant User objects**.
 7. Using the scroll bar, scroll to the bottom of the page and click **Clear all**.
 8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCredentialLink**.
-9. Click **OK** three times to complete the task. 
+9. Click **OK** three times to complete the task.
 
 
 ### Group Memberships for the Azure AD Connect Service Account
 
-The KeyAdmins or KeyCredential Admins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.  
+The KeyAdmins or KeyCredential Admins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
@@ -62,14 +63,14 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
 > [!NOTE]
-> If your AD forest has multiple domains. Please make sure you add the ADConnect sync service account (that is, MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
+> If your AD forest has multiple domains, make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
 
 ### Section Review
 
 > [!div class="checklist"]
 > * Configure Permissions for Key Synchronization
 > * Configure group membership for Azure AD Connect
-> 
+>
 > [!div class="step-by-step"]
 > [< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
 > [Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)

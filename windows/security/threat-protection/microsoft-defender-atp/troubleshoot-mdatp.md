@@ -42,7 +42,7 @@ See the topic [Review events and errors using Event Viewer](event-error-codes.md
 
 If onboarding machines successfully completes but Microsoft Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
 
-For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Known issues with regional formats
 
