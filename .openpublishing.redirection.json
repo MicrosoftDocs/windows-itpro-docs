@@ -6153,22 +6153,22 @@
 },
 {
 "source_path": "windows/keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-block-at-first-sight.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-in-windows-10.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-enhanced-notifications.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-notifications-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9388,7 +9388,7 @@
 },
 {
 "source_path": "windows/keep-secure/command-line-arguments-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -9418,12 +9418,12 @@
 },
 {
 "source_path": "windows/keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/configure-cloud-block-timeout-period-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-cloud-block-timeout-period-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/configure-cloud-block-timeout-period-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
