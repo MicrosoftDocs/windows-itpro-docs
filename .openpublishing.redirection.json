@@ -10073,7 +10073,7 @@
 },
 {
 "source_path": "windows/keep-secure/enable-cloud-protection-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -10143,7 +10143,7 @@
 },
 {
 "source_path": "windows/keep-secure/evaluate-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -11778,12 +11778,12 @@
 },
 {
 "source_path": "windows/keep-secure/manage-event-based-updates-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-event-based-updates-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-event-based-updates-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/manage-outdated-endpoints-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -11793,7 +11793,7 @@
 },
 {
 "source_path": "windows/keep-secure/manage-protection-update-schedule-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-protection-update-schedule-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-protection-update-schedule-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
