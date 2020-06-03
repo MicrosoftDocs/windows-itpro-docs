@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL. 
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
 If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
