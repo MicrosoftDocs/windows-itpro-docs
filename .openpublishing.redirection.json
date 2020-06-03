@@ -12398,7 +12398,7 @@
 },
 {
 "source_path": "windows/keep-secure/report-monitor-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
@@ -12463,7 +12463,7 @@
 },
 {
 "source_path": "windows/keep-secure/run-scan-windows-defender-antivirus.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/run-scan-windows-defender-antivirus",
+"redirect_url": "https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus",
 "redirect_document_id": true
 },
 {
