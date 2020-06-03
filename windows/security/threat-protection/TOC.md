@@ -152,7 +152,7 @@
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ###### [Configure and run scans](microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus.md)
 ###### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
-###### [Run and review the results of an offline scan](microsoft-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
    
 ##### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
@@ -180,7 +180,7 @@
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ###### [Configure and run scans](microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus.md)
 ###### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
-###### [Run and review the results of an offline scan](microsoft-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
 ###### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
 ##### [Manage next-generation protection in your business]()
@@ -193,7 +193,7 @@
 ###### [Use the mpcmdrun.exe command line tool to manage next generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
 
 
-#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
 
 
