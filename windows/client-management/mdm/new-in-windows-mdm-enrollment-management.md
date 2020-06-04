@@ -59,6 +59,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [June 2020](#june-2020)
     - [May 2020](#may-2020)
     - [February 2020](#february-2020)
     - [January 2020](#january-2020)
@@ -1980,6 +1981,10 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### June 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description to Integer instead of Boolean for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative|
 
 ### May 2020
 |New or updated topic | Description|

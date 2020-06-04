@@ -24,7 +24,7 @@ ms.topic: article
 
 
 ## API description
-Initiate Windows Defender Antivirus scan on a device.
+Initiate Microsoft Defender Antivirus scan on a device.
 
 
 ## Limitations

@@ -15,9 +15,6 @@ ms.date: 10/21/2019
 
 # Defender CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
 The following image shows the Windows Defender configuration service provider in tree format.
@@ -419,7 +416,7 @@ Node that can be used to perform signature updates for Windows Defender.
 Supported operations are Get and Execute.
 
 <a href="" id="offlinescan"></a>**OfflineScan**  
-Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. After the next OS reboot, the device will start in Windows Defender offline mode to begin the scan.
+Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 

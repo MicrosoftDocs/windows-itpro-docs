@@ -151,7 +151,7 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
-2. If you're running a third-party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings. Verify that it was configured correctly:
+2. If you're running a third-party antimalware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -168,11 +168,11 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
-3. Run the following command to check if Windows Defender AV is installed:
+3. Run the following command to check if Microsoft Defender AV is installed:
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+    If the result is 'The specified service does not exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
 
 ## Integration with Azure Security Center

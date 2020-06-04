@@ -43,8 +43,8 @@ It contains instructions to offer a program classified as unwanted software. You
 
 ## Why is the Windows Firewall blocking my program?
 
-This is not related to Windows Defender Antivirus and other Microsoft antimalware. You can find out more about Windows Firewall from the Microsoft Developer Network.
+This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more about Windows Firewall from the Microsoft Developer Network.
 
 ## Why does the Windows Defender SmartScreen say my program is not commonly downloaded?
 
-This is not related to Windows Defender Antivirus and other Microsoft antimalware. You can find out more from the SmartScreen website.
+This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more from the SmartScreen website.

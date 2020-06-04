@@ -58,7 +58,7 @@ This article explains how to create an Azure AD application, get an access token
      Note that you need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
      - To [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission.
-     - To [isolate a device](isolate-machine.md), select the 'Isolate device' permission.
+     - To [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 5. Select **Grant consent**.

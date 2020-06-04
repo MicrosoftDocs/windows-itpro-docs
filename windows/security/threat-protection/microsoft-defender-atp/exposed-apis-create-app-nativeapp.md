@@ -77,7 +77,7 @@ This page explains how to create an AAD application, get an access token to Micr
       For instance,
 
       - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-      - To [isolate a device](isolate-machine.md), select 'Isolate device' permission
+      - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
       - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
     - Click **Grant consent**
