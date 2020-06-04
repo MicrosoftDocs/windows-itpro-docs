@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/04/2019
+ms.date: 06/02/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -91,4 +91,20 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
+
 Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
+
+### Why do the Network Isolation policies in Group Policy and CSP look different?
+
+There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatary network isolation policies to deploy WDAG are different between CSP and GP.
+
+Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
+Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
+For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+
+Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+
+### Why did Application Guard stop working after I turned off hyperthreading?
+
+If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
+
