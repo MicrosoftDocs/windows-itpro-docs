@@ -155,4 +155,4 @@ You can employ a variety of measures to achieve this, for example:
 - Provide the ability to voluntarily update at users’ convenience.
 - Inform users of a mandatory installation date when the update will be installed on all devices.
 
-{I can include the calendar if desired, but the version in the source material isn't rendering well.}
+
