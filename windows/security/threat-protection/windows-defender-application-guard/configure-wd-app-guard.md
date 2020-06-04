@@ -1,6 +1,6 @@
 ---
-title: Configure the Group Policy settings for Windows Defender Application Guard (Windows 10)
-description: Learn about the available Group Policy settings for Windows Defender Application Guard.
+title: Configure the Group Policy settings for Microsoft Defender Application Guard (Windows 10)
+description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,12 +14,12 @@ manager: dansimp
 ms.custom: asr
 ---
 
-# Configure Windows Defender Application Guard policy settings
+# Configure Microsoft Defender Application Guard policy settings
 
 **Applies to:** 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
+Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 
 Application Guard uses both network isolation and application-specific settings.
 
@@ -36,7 +36,7 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 |-----------|------------------|-----------|
 |Private network ranges for apps|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
 |Enterprise resource domains hosted in the cloud|At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Note: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
-|Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment. Note: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
+|Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment. Proxies should be added to this list. Note: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
 
 ## Network isolation settings wildcards
 
