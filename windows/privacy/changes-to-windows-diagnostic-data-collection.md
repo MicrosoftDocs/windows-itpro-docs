@@ -54,4 +54,37 @@ In an upcoming release of Windows 10, we’re simplifying your diagnostic data c
 Additionally, you will see the following policy changes in an upcoming release of Windows 10:
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |
-| Group Policy | 
+| Group Policy | Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Telemetry**<ul><li>**0 Security** <br /></li><li>**Basic**<br /></li><li>**Enhanced**<br /></li><li>**Full**<br /></li></ul>| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**<ul><li>**Diagnostic data off (not recommended)** <br /></li><li>**Send required diagnostic data**<br /></li><li>**Send optional diagnostic data**<br /></li></ul> |
+| Group Policy |Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure telemetry opt-in settings user interface**| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure diagnostic data opt-in settings user interface** |
+| Group Policy |Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure telemetry opt-in change notifications**| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure diagnostic data opt-in change notifications** |
+| MDM | System/AllowTelemetry <ul><li>**0** <br /></li><li>**2**<br /></li><li>**3**<br /></li><li>**4**<br /></li></ul>|
+
+A final set of changes includes two new policies that can help you fine-tune diagnostic data collection within your organization. These policies let you limit the amount of optional diagnostic data that’s sent back to Microsoft.
+
+- The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
+  - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
+  - MDM policy: System/ LimitDiagnosticLogCollection
+- The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs are not sent back to Microsoft.
+  - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
+  - MDM policy: System/LimitDumpCollection
+
+>[!Important]
+>All of the changes mentioned in this section will not be released on versions of Windows, version 1809 and earlier as well as Windows Server 2019 and earlier.
+
+## Configure a Windows 10 device to limit diagnostics
+
+With the Enhanced diagnostic data level being split out into new policies, we are providing additional controls to manage what types of dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
+
+1. Choose to send optional diagnostic data by setting one of the following policies:
+  - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**. Set the policy value to **Send optional diagnostic data**
+  - MDM: System/AllowTelemetry. Set the policy value to 3.
+2. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
+3. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
+
+## Services that rely on Enhanced diagnostic data
+
+Customers who use services that depend on Windows diagnostic data, such as Microsoft Managed Desktop or Desktop Analytics, may be impacted by the functional changes when they are released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
+
+The following provides a list of the known changes:
+- [Microsoft Managed Desktop](http://aka.ms/mmd-diagnostic-data-level)
+- Desktop Analytics
