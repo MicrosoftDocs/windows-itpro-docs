@@ -97,7 +97,7 @@ landingContent:
           - text: Deploy Windows 10 updates
             url: update/waas-servicing-channels-windows-10-updates.md
           - text: Resolve Windows 10 upgrade errors
-            url: upgrade/resolve-windows-10-upgrade-errors          
+            url: upgrade/resolve-windows-10-upgrade-errors.md          
 
   # Card (optional)
   - title: Windows 10 resources
