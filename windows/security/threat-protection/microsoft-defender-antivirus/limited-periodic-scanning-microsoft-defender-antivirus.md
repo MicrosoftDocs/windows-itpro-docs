@@ -37,7 +37,7 @@ By default, Microsoft Defender Antivirus will enable itself on a Windows 10 devi
 
 If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:
 
-![Windows Security app showing Windows Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
+![Windows Security app showing Microsoft Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
 
 If another antivirus product is installed and working correctly, Microsoft Defender Antivirus will disable itself. The Windows Security app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options:
 
@@ -47,7 +47,7 @@ Underneath any third party AV products, a new link will appear as **Microsoft De
 
 ![The limited periodic option is a toggle to enable or disable **periodic scanning**](images/vtp-3ps-lps.png)
 
-Sliding the switch to **On** will show the standard Windows Defender AV options underneath the third party AV product. The limited periodic scanning option will appear at the bottom of the page.
+Sliding the switch to **On** will show the standard Microsoft Defender AV options underneath the third party AV product. The limited periodic scanning option will appear at the bottom of the page.
 
 ![When enabled, periodic scanning shows the normal Microsoft Defender Antivirus options](images/vtp-3ps-lps-on.png)
 

@@ -48,7 +48,7 @@ To run Microsoft Defender Offline from the endpoint, the user must be logged in 
 Microsoft Defender Offline uses the most recent protection updates available on the endpoint; it's updated whenever Windows Defender Antivirus is updated. 
 
 > [!NOTE]
-> Before running an offline scan, you should attempt to update Windows Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Before running an offline scan, you should attempt to update Microsoft Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 See the [Manage Microsoft Defender Antivirus Security intelligence  updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
 
@@ -75,7 +75,7 @@ Microsoft Defender Offline scans are indicated under **Malware remediation statu
 ## Configure notifications
 <a name="manage-notifications"></a>
 
-Microsoft Defender Offline notifications are configured in the same policy setting as other Windows Defender AV notifications.
+Microsoft Defender Offline notifications are configured in the same policy setting as other Microsoft Defender AV notifications.
 
 For more information about notifications in Windows Defender, see the [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md) topic.
 
