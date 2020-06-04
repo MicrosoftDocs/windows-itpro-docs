@@ -34,7 +34,7 @@ You can add information about your organization in a contact card to the Windows
 
 ![The security center custom fly-out](images/security-center-custom-flyout.png)
 
-This information will also be shown in some enterprise-specific notifications (including those for the [Block at first sight feature](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+This information will also be shown in some enterprise-specific notifications (including those for the [Block at first sight feature](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 ![A security center notification](images/security-center-custom-notif.png)
 
