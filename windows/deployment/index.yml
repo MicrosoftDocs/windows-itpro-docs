@@ -72,7 +72,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Prepare to deploy Windows 10
+          - text: Prepare for Zero Touch Installation with Configuration Manager
+            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          - text: Prepare to deploy Windows 10 with MDT
             url: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
           - text: Evaluate and update infrastructure
             url: update/update-policies.md
@@ -84,12 +86,18 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy Windows 10 with Autopilot
+          - text: Windows Autopilot scenarios and capabilities
             url: windows-autopilot/windows-autopilot-scenarios.md
+          - text: Deploy Windows 10 to a new device with Configuration Manager
+            url: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
+          - text: Deploy a Windows 10 image using MDT
+            url: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
           - text: Deploy Windows 10 updates
-            url: update/index.md
+            url: update/waas-servicing-channels-windows-10-updates.md
+          - text: Resolve Windows 10 upgrade errors
+            url: upgrade/resolve-windows-10-upgrade-errors          
 
   # Card (optional)
   - title: Windows 10 resources
