@@ -1,5 +1,5 @@
 ---
-title: Use PowerShell cmdlets to configure and run Windows Defender AV
+title: Use PowerShell cmdlets to configure and run Microsoft Defender AV
 description: In Windows 10, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Microsoft Defender Antivirus.
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
