@@ -122,7 +122,7 @@ One you have selected **Run antivirus scan**, select the scan type that you'd li
 
 ![Image of notification to select quick scan or full scan and add comment](images/run-antivirus.png)
 
-The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Restrict app execution
 

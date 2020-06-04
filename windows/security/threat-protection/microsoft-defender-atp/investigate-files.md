@@ -61,7 +61,7 @@ For more information on these actions, see [Take response action on a file](resp
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
-You'll see details such as the file’s MD5, the Virus Total detection ratio, and Windows Defender AV detection if available, and the file’s prevalence, both worldwide and within your organizations.
+You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence, both worldwide and within your organizations.
 
 ![Image of file information](images/atp-file-information.png)
 

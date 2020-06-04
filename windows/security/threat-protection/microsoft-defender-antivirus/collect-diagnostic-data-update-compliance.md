@@ -1,7 +1,7 @@
 ---
 title: Collect diagnostic data for Update Compliance and Windows Defender Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Microsoft Defender Antivirus Assessment add in
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -17,13 +17,13 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Collect Update Compliance diagnostic data for Windows Defender AV Assessment
+# Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.
 
 Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
