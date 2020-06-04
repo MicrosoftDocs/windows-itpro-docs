@@ -58,8 +58,12 @@ landingContent:
         links:
           - text: Create a deployment plan
             url: update/create-deployment-plan.md
+          - text: Define readiness criteria
+            url: update/plan-define-readiness.md
           - text: Evaluate infrastructure and tools
             url: update/eval-infra-tools.md
+          - text: Determine application readiness
+            url: update/plan-determine-app-readiness.md
           - text: Define your servicing strategy
             url: update/waas-servicing-strategy-windows-10-updates.md
  
@@ -88,13 +92,16 @@ landingContent:
             url: update/index.md
 
   # Card (optional)
-  - title: Also see
+  - title: Windows 10 resources
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: Windows 10 release information
-            url: https://docs.microsoft.com/en-us/windows/release-information/
+            url: https://docs.microsoft.com/windows/release-information/
           - text: What's new in Windows 10
-            url: https://docs.microsoft.com/en-us/windows/whats-new/
+            url: https://docs.microsoft.com/windows/whats-new/
           - text: Windows 10 Enterprise Security
-            url: https://docs.microsoft.com/en-us/windows/security/
+            url: https://docs.microsoft.com/windows/security/
+          - text: Desktop Deployment Center
+            url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
+
