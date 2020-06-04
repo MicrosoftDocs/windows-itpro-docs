@@ -1,6 +1,6 @@
 ---
 title: Next-generation protection in Windows 10, Windows Server 2016, and Windows Server 2019
-description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10 and Windows Server 2016
+description: Learn how to manage, configure, and use Microsoft Defender AV, the built-in antimalware and antivirus product available in Windows 10 and Windows Server 2016
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

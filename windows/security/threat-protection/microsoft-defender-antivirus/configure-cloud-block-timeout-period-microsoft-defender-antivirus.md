@@ -1,5 +1,5 @@
 ---
-title: Configure the Windows Defender AV cloud block timeout period
+title: Configure the Microsoft Defender AV cloud block timeout period
 description: You can configure how long Microsoft Defender Antivirus will block a file from running while waiting for a cloud determination.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, timeout, block, period, seconds
 search.product: eADQiWindows 10XVcnh
