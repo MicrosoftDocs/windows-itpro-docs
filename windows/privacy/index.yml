@@ -161,12 +161,23 @@ additionalContent:
   sections:
     - items:
         # Card
+        - title: More Windows privacy
+          links:
+            - text: "Windows 10 & Privacy Compliance: A Guide for IT and Compliance Professionals"
+              url: Windows-10-and-privacy-compliance.md
+            - text: Windows 10 personal data services configuration
+              url: windows-personal-data-services-configuration.md 
+            - text: Beginning your GDPR journey for Windows 10
+              url: gdpr-win10-whitepaper.md
+        # Card
         - title: View and manage Windows 10 connection endpoints
           links:
             - text: Manage Windows 10 connection endpoints
               url: manage-windows-endpoints.md
+            - text: Manage connection endpoints for non-Enterprise editions of Windows 10
+              url: windows-endpoints-2004-non-enterprise-editions.md 
             - text: Manage connections from Windows to Microsoft services
-              url: manage-connections-from-windows-operating-system-components-to-microsoft-services
+              url: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
         # Card
         - title: Additional resources
           links:
