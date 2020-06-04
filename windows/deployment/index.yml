@@ -45,7 +45,6 @@ landingContent:
             url:  update/waas-overview.md
           - text: Types of Windows updates
             url: update/waas-quick-start.md#definitions
-            n
       - linkListType: get-started
         links:
           - text: Servicing the Windows 10 operating system
