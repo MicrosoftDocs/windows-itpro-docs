@@ -27,7 +27,7 @@ After you have configured IPsec algorithms and authentication methods, you can c
 
 **Administrative credentials**
 
-To complete this procedure, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs (Group Policy Objects).
+To complete this procedure, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the (Group Policy Objects) GPOs.
 
 To create the authentication request rule:
 
