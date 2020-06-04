@@ -126,7 +126,7 @@
             - name: Deploy updates with Configuration Manager
               href: update/deploy-updates-configmgr.md
             - name: Deploy updates with Intune
-              href: update/waas-wufb-csp-mdm.md
+              href: update/deploy-updates-intune.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
@@ -156,7 +156,7 @@
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
             - name: 'Walkthrough: use Intune to configure Windows Update for Business'
-              href: update/waas-wufb-csp-mdm.md
+              href: update/deploy-updates-intune.md
         - name: Monitor Windows 10 updates
           items:
             - name: Monitor Delivery Optimization

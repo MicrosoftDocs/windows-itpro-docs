@@ -1882,7 +1882,7 @@ This policy controls how BitLocker-enabled system volumes are handled in conjunc
 Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. Secure Boot also provides more flexibility for managing preboot configurations than BitLocker integrity checks prior to Windows Server 2012 and Windows 8.
 When this policy is enabled and the hardware is capable of using Secure Boot for BitLocker scenarios, the **Use enhanced Boot Configuration Data validation profile** Group Policy setting is ignored, and Secure Boot verifies BCD settings according to the Secure Boot policy setting, which is configured separately from BitLocker.
 
->**Warning:**  Enabling this policy might result in BitLocker recovery when manufacturer-specific firmware is updated. If you disable this policy, suspend BitLocker prior to applying firmware updates.
+>**Warning:**  Disabling this policy might result in BitLocker recovery when manufacturer-specific firmware is updated. If you disable this policy, suspend BitLocker prior to applying firmware updates.
 
 ### <a href="" id="bkmk-depopt1"></a>Provide the unique identifiers for your organization
 

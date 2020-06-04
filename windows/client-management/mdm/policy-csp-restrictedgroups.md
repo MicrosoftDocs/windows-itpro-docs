@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - RestrictedGroups
 
-> [!WARNING]
-> Some information in this article relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
