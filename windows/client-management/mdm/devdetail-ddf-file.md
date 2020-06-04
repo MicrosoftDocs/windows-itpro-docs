@@ -9,13 +9,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/11/2018
+ms.date: 06/03/2020
 ---
 
 # DevDetail DDF file
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **DevDetail** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -724,4 +721,5 @@ The XML below is the current version for this CSP.
     </Node>
   </Node>
 </MgmtTree>
+
 ```
