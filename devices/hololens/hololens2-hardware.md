@@ -133,27 +133,11 @@ In order to maintain/advance Internal Battery Charge Percentage while the device
 
 ### Safety
 
-HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+[Product Safety](https://support.microsoft.com/en-us/help/4023454/safety-information)
+Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
-## Care and cleaning
-
-Handle your HoloLens carefully. Use the headband to lift and carry the HoloLens 2.
-
-As you would for eyeglasses or protective eye-wear, try to keep the HoloLens visor free of dust and fingerprints. When possible, avoid touching the visor. Repeated cleaning could damage the visor, so keep your device clean!
-
-Don't use any cleaners or solvents on your HoloLens, and don't submerge it in water or apply water directly to it.
-
-To clean the visor, remove any dust by using a camel or goat hair lens brush or a bulb-style lens blower. Lightly moisten the microfiber cloth with a small amount of distilled water, then use it to wipe the visor gently in a circular motion.
-
-Clean the rest of the device, including the headband and device arms, with a lint-free microfiber cloth moistened with mild soap and water. Let your HoloLens dry completely before reuse.
-
-![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
-
-### Replace the brow pad
-
-The brow pad is magnetically attached to the device. To detach it, pull gently away. To replace it, snap it back into place.
-
-![Remove or replace the brow pad](images/hololens2-remove-browpad.png)
+### Regulatory Information
+[HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)
 
 ## Next step
 

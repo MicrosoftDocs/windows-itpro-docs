@@ -179,16 +179,57 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install mdatp
     ```
 
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+    ```bash
+    # list all repositories
+    $ yum repolist
+    ...
+    packages-microsoft-com-prod               packages-microsoft-com-prod        316
+    packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
+    ...
+
+    # install the package from the production repository
+    $ sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
+    ```
+
 - SLES and variants:
 
     ```bash
     sudo zypper install mdatp
     ```
 
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+    ```bash
+    # list all repositories
+    $ zypper repos
+    ...
+    #  | Alias | Name | ...
+    XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
+    XX | packages-microsoft-com-prod | microsoft-prod | ...
+    ...
+
+    # install the package from the production repository
+    $ sudo zypper install packages-microsoft-com-prod:mdatp
+    ```
+
 - Ubuntu and Debian system:
 
     ```bash
     sudo apt-get install mdatp
+    ```
+
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+    ```bash
+    # list all repositories
+    $ cat /etc/apt/sources.list.d/*
+    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
+    deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+
+    # install the package from the production repository
+    $ sudo apt -t bionic install mdatp
     ```
 
 ## Download the onboarding package
@@ -213,6 +254,8 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
+    Archive:  WindowsDefenderATPOnboardingPackage.zip
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
     `Archive:  WindowsDefenderATPOnboardingPackage.zip`
@@ -220,7 +263,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Client configuration
 
-1. Copy WindowsDefenderATPOnboarding.py to the target machine.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target machine.
 
     Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
 
@@ -228,10 +271,10 @@ Download the onboarding package from Microsoft Defender Security Center:
     mdatp --health orgId
     ```
 
-2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
-    sudo python WindowsDefenderATPOnboarding.py
+    python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
@@ -273,6 +316,10 @@ Download the onboarding package from Microsoft Defender Security Center:
 ## Log installation issues
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+## Operating system upgrades
+
+When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
 
 ## Uninstallation
 

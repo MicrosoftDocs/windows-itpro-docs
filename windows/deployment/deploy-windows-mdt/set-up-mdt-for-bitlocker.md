@@ -89,7 +89,6 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
         3. Do not enable BitLocker until recovery information is stored in AD DS for operating system drives
     2. Enable the **Configure TPM platform validation profile for BIOS-based firmware configurations** policy.
     3. Enable the **Configure TPM platform validation profile for native UEFI firmware configurations** policy.
-        Computer Configuration / Policies / Administrative Templates / System / Trusted Platform Module Services
 
 > [!NOTE]
 > If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.

@@ -17,11 +17,9 @@ ms.topic: article
 
 # USMT XML Reference
 
-
 This section contains topics that you can use to work with and to customize the migration XML files.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -67,14 +65,3 @@ This section contains topics that you can use to work with and to customize the 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

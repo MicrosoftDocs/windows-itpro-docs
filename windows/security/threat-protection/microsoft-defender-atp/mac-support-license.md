@@ -41,6 +41,6 @@ You deployed and/or installed the MDATP for macOS package ("Download installatio
 
 **Solution:**
 
-Follow the WindowsDefenderATPOnboarding.py instructions documented here:
+Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here:
 [Client configuration](mac-install-manually.md#client-configuration)
 

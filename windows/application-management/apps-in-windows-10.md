@@ -2,7 +2,7 @@
 title: Windows 10 - Apps
 ms.reviewer: 
 manager: dansimp
-description: What are Windows, UWP, and Win32 apps
+description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

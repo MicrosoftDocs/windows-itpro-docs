@@ -41,7 +41,7 @@ When auto-enrollment is enabled, no additional manual enrollment is needed. When
 1. Select **Enroll into device management** and enter your organizational account. You will be redirected to your organization's sign in page.
 1. Upon successful authentication to the MDM server, a success message is shown.
 
-Your device is now enrolled with your MDM server. The device will need to restart to acquire policies, certificates, and apps. The Settings app will now reflect that the device is enrolled in device management.
+Your device is now enrolled with your MDM server. The Settings app will now reflect that the device is enrolled in device management.
 
 ## Unenroll HoloLens from Intune
 

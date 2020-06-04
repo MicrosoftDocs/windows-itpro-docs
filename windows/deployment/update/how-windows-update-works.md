@@ -81,7 +81,7 @@ Windows Update takes the following sets of actions when it runs a scan.
 #### Starts the scan for updates  
 When users start scanning in Windows Update through the Settings panel, the following occurs:  
 
-- The scan first generates a "ComApi" message. The caller (Windows Defender Antivirus) tells the WU engine to scan for updates. 
+- The scan first generates a “ComApi” message. The caller (Microsoft Defender Antivirus) tells the WU engine to scan for updates. 
 - "Agent" messages: queueing the scan, then actually starting the work: 
    - Updates are identified by the different IDs ("Id = 10", "Id = 11") and from the different thread ID numbers. 
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 

@@ -22,8 +22,8 @@ ms.date: 11/20/2019
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy for **fully-managed devices** within an organization. The key difference between this scenario and [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully-managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully-managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 

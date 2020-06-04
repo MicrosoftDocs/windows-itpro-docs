@@ -217,12 +217,3 @@ The following examples show how to migrate a file from a specific folder, and ho
 [Conflicts and Precedence](usmt-conflicts-and-precedence.md)
 
 [USMT XML Reference](usmt-xml-reference.md)
-
- 
-
- 
-
-
-
-
-

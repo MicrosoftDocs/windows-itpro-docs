@@ -82,12 +82,12 @@ For details about what information is collected and how it is used, see the Upda
 
 For details about controlling this feature, see the Update Services Privacy Statement at [https://go.microsoft.com/fwlink/?LinkId=244000](https://go.microsoft.com/fwlink/?LinkId=244400).
 
-## Windows Defender Offline
+## Microsoft Defender Offline
 
 
 **What This Feature Does:**
 
-Windows Defender Offline (WDO) is included in the DaRT download. WDO helps protect your PC from malicious software (malware) such as viruses, spyware, and other potentially harmful software.
+Microsoft Defender Offline (WDO) is included in the DaRT download. WDO helps protect your PC from malicious software (malware) such as viruses, spyware, and other potentially harmful software.
 
 **Information Collected, Processed, or Transmitted:**
 
@@ -99,7 +99,7 @@ For details about what information is collected and how it is used, see the WDO 
 
 **Choice/Control:**
 
-For details about controlling this feature, see the Windows Defender Offline Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=246081>.
+For details about controlling this feature, see the Microsoft Defender Offline Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=246081>.
 
 ## Related topics
 

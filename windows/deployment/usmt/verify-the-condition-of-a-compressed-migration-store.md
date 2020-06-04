@@ -1,7 +1,6 @@
 ---
 title: Verify the Condition of a Compressed Migration Store (Windows 10)
 description: In this article you will learn how to verify the Condition of a Compressed Migration Store by displaying information in the UsmtUtils log file.
-
 ms.custom: seo-marvel-apr2020
 ms.assetid: 4a3fda96-5f7d-494a-955f-6b865ec9fcae
 ms.reviewer: 
@@ -17,7 +16,6 @@ ms.topic: article
 ---
 
 # Verify the Condition of a Compressed Migration Store
-
 
 When you migrate files and settings during a typical PC-refresh migration, the user state is usually stored in a compressed folder on the intermediate store. This compressed folder, also called the compressed migration store, is a single image file that contains:
 
@@ -38,7 +36,6 @@ When you use the **/verify** option, you can specify what type of information to
 -   **Failure only**: Displays only the files that are corrupted.
 
 ## In this topic
-
 
 The following sections demonstrate how to run the **UsmtUtils** command with the **/verify** option, and how to specify the information to display in the UsmtUtils log file.
 
@@ -120,12 +117,3 @@ If the **/verify** option indicates that there are corrupted files in the migrat
 [UsmtUtils Syntax](usmt-utilities.md)
 
 [Return Codes](usmt-return-codes.md)
-
- 
-
- 
-
-
-
-
-

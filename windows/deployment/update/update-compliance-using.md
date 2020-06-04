@@ -18,7 +18,7 @@ ms.custom: seo-marvel-apr2020
 
 # Use Update Compliance
 
-In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Windows Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
+In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
 
 
 Update Compliance: 
@@ -51,7 +51,7 @@ When you select this tile, you will be redirected to the Update Compliance works
 Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
-* AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Windows Defender Antivirus. 
+* AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Microsoft Defender Antivirus. 
 
 The blade also provides the time at which your Update Compliance workspace was [refreshed](#update-compliance-data-latency). 
 

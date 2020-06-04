@@ -207,6 +207,10 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
+## Operating system upgrades
+
+When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+
 ## Uninstallation
 
 Create a module *remove_mdatp* similar to *install_mdatp* with the following contents in *init.pp* file:

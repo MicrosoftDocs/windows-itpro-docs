@@ -61,6 +61,7 @@ To support Inherited Activation, both the host computer and the VM must be runni
 
 ## The evolution of deployment
 
+> [!NOTE] 
 > The original version of this section can be found at [Changing between Windows SKUs](https://blogs.technet.microsoft.com/mniehaus/2017/10/09/changing-between-windows-skus/).
 
 The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
@@ -105,9 +106,9 @@ If the device is running Windows 10, version 1809 or later:
 1. Windows 10, version 1809 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
 2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
 
-![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
-![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
-![Subscription Activation with MFA2](images/sa-mfa3.png)
+   ![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
+   ![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
+   ![Subscription Activation with MFA2](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
@@ -116,8 +117,8 @@ If the device is running Windows 10, version 1809 or later:
 3. The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription.
 4. Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
-> If Windows 10 Pro is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.
-
+> [!IMPORTANT]
+> If Windows 10 Pro is converted to Windows 10 Pro Education [by using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device by using a Windows 10 Pro Education edition.
 
 ## Benefits
 
@@ -154,9 +155,10 @@ Before Windows 10, version 1903:<br>
 After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
-Note:
-1. A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-2. A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+> [!NOTE]
+> - A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+> 
+> - A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios
 
@@ -195,7 +197,8 @@ When you have the required Azure AD subscription, group-based licensing is the p
 
 If you are running Windows 10, version 1803 or later, Subscription Activation will automatically pull the firmware-embedded Windows 10 activation key and activate the underlying Pro License. The license will then step-up to Windows 10 Enterprise using Subscription Activation. This automatically migrates your devices from KMS or MAK activated Enterprise to Subscription activated Enterprise.
 
-Caution: Firmware-embedded Windows 10 activation happens automatically only when we go through OOBE(Out Of Box Experience)
+> [!CAUTION]
+> Firmware-embedded Windows 10 activation happens automatically only when we go through the Out-of-Box Experience (OOBE).
 
 If you are using Windows 10, version 1607, 1703, or 1709 and have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you can seamlessly transition as long as the computer has been activated with a firmware-embedded Windows 10 Pro product key.
 

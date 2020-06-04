@@ -17,11 +17,12 @@ manager: dansimp
 ms.date: 03/16/2020
 ---
 
-#  Windows Defender Application Control operational guide
+# Windows Defender Application Control operational guide
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
+
+- Windows 10
+- Windows Server 2016 and above
 
 After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender Advanted Threat Protection (MDATP) Advanced Hunting feature.
 

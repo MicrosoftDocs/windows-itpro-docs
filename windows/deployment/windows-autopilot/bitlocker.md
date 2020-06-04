@@ -40,7 +40,7 @@ An example of Microsoft Intune Windows Encryption settings is shown below.
 
    ![BitLocker encryption settings](images/bitlocker-encryption.png)
 
-Note that a device which is encrypted automatically will need to be decrypted prior to changing the encyption algorithm.
+Note that a device which is encrypted automatically will need to be decrypted prior to changing the encryption algorithm.
 
 The settings are available under Device Configuration -> Profiles -> Create profile -> Platform = Windows 10 and later, Profile type = Endpoint protection -> Configure -> Windows Encryption -> BitLocker base settings, Configure encryption methods = Enable.
 

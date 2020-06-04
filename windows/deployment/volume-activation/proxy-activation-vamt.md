@@ -53,7 +53,7 @@ The product keys that are installed on the client products must have a sufficien
 9.  Click **OK**.
 10. VAMT displays the **Activating products** dialog box until it completes the requested action. If you selected the **Alternate Credentials** option, you will be prompted to enter the credentials.
 
-    **Note**  
+    **Note**
     You can use proxy activation to select products that have different key types and activate the products at the same time.
  
  
