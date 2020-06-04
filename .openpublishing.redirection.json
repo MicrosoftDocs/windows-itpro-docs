@@ -16157,21 +16157,6 @@
     "redirect_document_id": true
   },
   {
-    "source_path": "windows/security/threat-protection/windows-defender-antivirus/office-365-windows-defender-antivirus.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "windows/security/threat-protection/windows-defender-antivirus/oldTOC.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/oldTOC",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection",
-    "redirect_document_id": true
-  },
-  {
     "source_path": "windows/security/threat-protection/windows-defender-antivirus/prevent-end-user-interaction-windows-defender-antivirus.md",
     "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-end-user-interaction-microsoft-defender-antivirus",
     "redirect_document_id": true
@@ -16179,11 +16164,6 @@
   {
     "source_path": "windows/security/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus.md",
     "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus",
     "redirect_document_id": true
   },
   {
@@ -16239,11 +16219,6 @@
   {
     "source_path": "windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md",
     "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "windows/security/threat-protection/windows-defender-antivirus/why-use-microsoft-antivirus.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus",
     "redirect_document_id": true
   },
   {
