@@ -82,7 +82,7 @@ landingContent:
             url: update/waas-deployment-rings-windows-10-updates.md
 
   # Card
-  - title: Deploy Windows 10
+  - title: Deploy and update Windows 10
     linkLists:
       - linkListType: deploy
         links:
