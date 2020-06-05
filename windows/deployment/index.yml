@@ -22,28 +22,34 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Overview
+  - title: Deploy Windows 10
     linkLists:
       - linkListType: overview
         links:
           - text: Windows 10 deployment scenarios
             url: windows-10-deployment-scenarios.md
-          - text: What is Windows as a service?
-            url:  update/waas-overview.md
-          - text: Types of Windows updates
-            url: update/waas-quick-start.md#definitions
 
-  # Card (optional)
-  - title: Get started
-    linkLists:
       - linkListType: get-started
         links:
           - text: Demonstrate Autopilot deployment
             url: windows-autopilot/demonstrate-deployment-on-vm.md
-          - text: Servicing the Windows 10 operating system
-            url: update/waas-servicing-strategy-windows-10-updates.md
           - text: Deploy Windows 10 in a test lab
             url: windows-10-poc.md
+
+  # Card (optional)
+  - title: Update Windows 10
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Windows as a service?
+            url:  update/waas-overview.md
+          - text: Types of Windows updates
+            url: update/waas-quick-start.md#definitions
+      - linkListType: get-started
+        links:
+          - text: Servicing the Windows 10 operating system
+            url: update/waas-servicing-strategy-windows-10-updates.md
+
 
   # Card (optional)
   - title: Deployment planning
@@ -52,8 +58,12 @@ landingContent:
         links:
           - text: Create a deployment plan
             url: update/create-deployment-plan.md
+          - text: Define readiness criteria
+            url: update/plan-define-readiness.md
           - text: Evaluate infrastructure and tools
             url: update/eval-infra-tools.md
+          - text: Determine application readiness
+            url: update/plan-determine-app-readiness.md
           - text: Define your servicing strategy
             url: update/waas-servicing-strategy-windows-10-updates.md
  
@@ -62,7 +72,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Prepare to deploy Windows 10
+          - text: Prepare for Zero Touch Installation with Configuration Manager
+            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          - text: Prepare to deploy Windows 10 with MDT
             url: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
           - text: Evaluate and update infrastructure
             url: update/update-policies.md
@@ -74,21 +86,30 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy Windows 10 with Autopilot
+          - text: Windows Autopilot scenarios and capabilities
             url: windows-autopilot/windows-autopilot-scenarios.md
+          - text: Deploy Windows 10 to a new device with Configuration Manager
+            url: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
+          - text: Deploy a Windows 10 image using MDT
+            url: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
           - text: Deploy Windows 10 updates
-            url: update/index.md
+            url: update/waas-servicing-channels-windows-10-updates.md
+          - text: Resolve Windows 10 upgrade errors
+            url: upgrade/resolve-windows-10-upgrade-errors.md          
 
   # Card (optional)
-  - title: Also see
+  - title: Windows 10 resources
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: Windows 10 release information
-            url: https://docs.microsoft.com/en-us/windows/release-information/
+            url: https://docs.microsoft.com/windows/release-information/
           - text: What's new in Windows 10
-            url: https://docs.microsoft.com/en-us/windows/whats-new/
+            url: https://docs.microsoft.com/windows/whats-new/
           - text: Windows 10 Enterprise Security
-            url: https://docs.microsoft.com/en-us/windows/security/
+            url: https://docs.microsoft.com/windows/security/
+          - text: Desktop Deployment Center
+            url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
+
