@@ -126,7 +126,7 @@
             - name: Deploy updates with Configuration Manager
               href: update/deploy-updates-configmgr.md
             - name: Deploy updates with Intune
-              href: update/waas-wufb-csp-mdm.md
+              href: update/deploy-updates-intune.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
@@ -245,6 +245,8 @@
         - name: Delivery Optimization reference
           href: update/waas-delivery-optimization-reference.md
         - name: Windows 10 in S mode
+          href: s-mode.md
+        - name: Switch to Windows 10 Pro or Enterprise from S mode
           href: windows-10-pro-in-s-mode.md
         - name: Windows 10 deployment tools
           items:
