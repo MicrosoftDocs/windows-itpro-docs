@@ -60,9 +60,9 @@ To lower your threat and vulnerability exposure, follow these steps.
    - ![Red bug](images/tvm_bug_icon.png) Threat insight icon
    - ![Arrow hitting a target](images/tvm_alert_icon.png) Active alert icon
 
-2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in devices, number of exposed devices and their device names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
+2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in devices, number of exposed devices and their device names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Microsoft Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
 
-3. Select **Installed devices** and then the affected device from the list. A flyout panel will open with the relevant device details, exposure and risk levels, alert and incident activities. ![Example of the software page for Git, and a flyout open for a selected device.](images/tvm_software_page_details.png)
+3. The **Overview** tab of the selected software will display. Select the **Installed devices** tab and then the affected device from the list. A flyout panel will open with the relevant device details, exposure and risk levels, alert and incident activities. ![Example of the software page for Windows Server 2019, and a flyout open for a selected device.](images/tvm_software_page_details.png)
 
 4. Click **Open device page** to connect to the device and apply the selected recommendation. See [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md) for details. ![Example of a device page.](images/tvm_machine_page_details.png)
 
