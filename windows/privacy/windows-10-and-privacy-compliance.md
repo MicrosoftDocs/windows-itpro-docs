@@ -26,7 +26,7 @@ Applies to:
 ## Overview
 
 >[!IMPORTANT] 
->Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection).
+>Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
 
 At Microsoft, we are deeply committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
 
@@ -45,7 +45,7 @@ When setting up a device, a user can configure their privacy settings. Those pri
 The following table provides an overview of the Windows 10 privacy settings presented during the device setup experience that involve processing personal data and where to find additional information.
 
 > [!NOTE]
-> This table is limited to the privacy settings that are available as part of setting up a Windows 10 device (Windows 10, version 1809 and newer). For the full list of settings that involve data collection, [see Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services).
+> This table is limited to the privacy settings that are available as part of setting up a Windows 10 device (Windows 10, version 1809 and newer). For the full list of settings that involve data collection, [see Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | Description | Supporting Content | Privacy Statement |
 | --- | --- | --- | --- |
@@ -61,9 +61,9 @@ The following table provides an overview of the Windows 10 privacy settings pres
 
 ### 1.2 Data collection monitoring
 
-[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview) is a Microsoft Store app (available in Windows 10, version 1803 and newer) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
+[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and newer) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
 
-An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer) provides further information.
+An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer.md) provides further information.
 
 
 ## 2. Windows 10 data collection management
@@ -81,7 +81,7 @@ Administrators can configure and control privacy settings across their organizat
 The following table provides an overview of the privacy settings discussed earlier in this document with details on how to configure these policies. The table also provides information on what the default value would be for each of these privacy settings if you do not manage the setting by using policy and suppress the Out-of-box Experience (OOBE) during device setup. If you’re interested in minimizing data collection, we also provide the recommended value to set.
 
 > [!NOTE]
-> This is not a complete list of settings that involve connecting to Microsoft services. To see a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services).
+> This is not a complete list of settings that involve connecting to Microsoft services. To see a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | GP/MDM Documentation | Default State if the Setup experience is suppressed | State to stop/minimize data collection |
 |---|---|---|---|
@@ -115,17 +115,17 @@ You can use the following articles to learn more about Autopilot and how to use 
 
 Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows components.
 
-For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
+For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
 
 #### _2.3.3 Managing Windows 10 connections_
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the [Windows Privacy site](https://docs.microsoft.com/windows/privacy/) under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the [Windows Privacy site](https://docs.microsoft.com/windows/privacy/) under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
-An organization may want to further minimize the amount of data sent back to Microsoft or shared with Microsoft apps by managing the connections and configuring additional settings on their devices. Similar to [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines), Microsoft has released a limited functionality baseline focused on configuring settings to minimize the data sent back to Microsoft. However, the functionality of the device could be impacted by applying these settings. The [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services) article provides details on how to apply the baseline, along with the full list of settings covered in the baseline and the functionality that would be impacted. Administrators that don’t want to apply the baseline can still find details on how to configure each setting individually to find the right balance between data sharing and impact to functionality for their organization.
+An organization may want to further minimize the amount of data sent back to Microsoft or shared with Microsoft apps by managing the connections and configuring additional settings on their devices. Similar to [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines), Microsoft has released a limited functionality baseline focused on configuring settings to minimize the data sent back to Microsoft. However, the functionality of the device could be impacted by applying these settings. The [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) article provides details on how to apply the baseline, along with the full list of settings covered in the baseline and the functionality that would be impacted. Administrators that don’t want to apply the baseline can still find details on how to configure each setting individually to find the right balance between data sharing and impact to functionality for their organization.
 
 >[!IMPORTANT]
 >We recommend that you fully test any modifications to these settings before deploying them in your organization.
@@ -155,7 +155,7 @@ Users can delete their device-based data by going to **Settings** > **Privacy** 
 
 ### 3.2 View
 
-The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview) provides a view into the diagnostic data being collected from a Windows 10 device. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet.
+The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides a view into the diagnostic data being collected from a Windows 10 device. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet.
 
 ### 3.3 Export
 
@@ -204,7 +204,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 * [Microsoft Trust Center: Privacy at Microsoft](https://www.microsoft.com/trust-center/privacy)
 * [Windows IT Pro Docs](https://docs.microsoft.com/windows/#pivot=it-pro)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
-* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services) 
+* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) 
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
-* [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection)
+* [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection,md)
 * [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/)

@@ -86,5 +86,5 @@ With the Enhanced diagnostic data level being split out into new policies, we ar
 Customers who use services that depend on Windows diagnostic data, such as Microsoft Managed Desktop or Desktop Analytics, may be impacted by the functional changes when they are released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
 The following provides a list of the known changes:
-- [Microsoft Managed Desktop](http://aka.ms/mmd-diagnostic-data-level)
+- [Microsoft Managed Desktop](https://aka.ms/mmd-diagnostic-data-level)
 - Desktop Analytics
