@@ -80,15 +80,13 @@ Windows 10 also introduces two additional scenarios that organizations should c
 
 For existing PCs running Windows 7 or Windows 8.1, in-place upgrade is the recommended method for Windows 10 deployment and should be used whenever possible. Although wipe-and-load (OS refresh) deployments are still fully supported (and necessary in some scenarios, as mentioned previously), in-place upgrade is simpler and faster, and enables a faster Windows 10 deployment overall.
 
-Note that the original Windows 8 release is only supported until January 2016. Organizations that do not think they can complete a full Windows 10 migration by that date should deploy Windows 8.1 now and consider Windows 10 after Windows 8 has been removed from the environment.
+The original Windows 8 release was only supported until January 2016. For devices running Windows 8.0, you can update to Windows 8.1 and then upgrade to Windows 10.
 
-For existing Windows PCs running Windows Vista, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
-
-Note that to take advantage of the limited-time free upgrade offer for PCs running Windows 7, Windows 8, or Windows 8.1, you must leverage an in-place upgrade, either from Windows Update or by using the upgrade media available from the [Windows 10 software download page](https://go.microsoft.com/fwlink/p/?LinkId=625073) to acquire a new Windows 10 license from the Windows Store. For more information, refer to the [Windows 10 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=625074).
+For PCs running operating systems older than Windows 7, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
 
 For organizations with Software Assurance for Windows, both in-place upgrade or wipe-and-load can be leveraged (with in-place upgrade being the preferred method, as previously discussed).
 
-For organizations that do not take advantage of the free upgrade offer and are not enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
+For organizations that did not take advantage of the free upgrade offer and are not enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
 
 ## Setting up new computers
 
