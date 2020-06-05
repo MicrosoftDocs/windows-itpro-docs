@@ -101,6 +101,28 @@ landingContent:
             url: update/waas-servicing-channels-windows-10-updates.md
 
   # Card (optional)
+  - title: Technical references
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: How does Windows Update work?
+            url: update/how-windows-update-works.md
+          - text: Unified Update Platform (UUP) architecture
+            url: update/windows-update-overview.md#unified-update-platform-uup-architecture
+          - text: Servicing stack updates
+            url: update/servicing-stack-updates.md
+          - text: Manage additional Windows Update setings
+            url: update/waas-wu-settings.md
+          - text: Delivery Optimization reference
+            url: update/waas-delivery-optimization-reference.md
+          - text: Convert an MBR partition to GPT
+            url: mbr-to-gpt.md
+          - text: VAMT technical reference
+            url: volume-activation/volume-activation-management-tool.md
+          - text: User State Migration Tool (USMT) overview
+            url: usmt/usmt-overview.md  
+
+  # Card (optional)
   - title: Windows 10 resources
     linkLists:
       - linkListType: learn

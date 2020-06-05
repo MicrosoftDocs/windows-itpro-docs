@@ -242,8 +242,6 @@
           href: update/windows-update-overview.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
-        - name: How Windows Update works
-          href: update/how-windows-update-works.md
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
