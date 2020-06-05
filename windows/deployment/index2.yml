@@ -101,7 +101,7 @@ landingContent:
             url: update/waas-servicing-channels-windows-10-updates.md
 
   # Card (optional)
-  - title: Technical references
+  - title: Technical references and additional resources
     linkLists:
       - linkListType: reference
         links:
@@ -121,10 +121,6 @@ landingContent:
             url: volume-activation/volume-activation-management-tool.md
           - text: User State Migration Tool (USMT) overview
             url: usmt/usmt-overview.md  
-
-  # Card (optional)
-  - title: Windows 10 resources
-    linkLists:
       - linkListType: learn
         links:
           - text: Windows 10 release information
@@ -147,4 +143,3 @@ landingContent:
             url: https://docs.microsoft.com/windows/security/
           - text: Desktop Deployment Center
             url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
-
