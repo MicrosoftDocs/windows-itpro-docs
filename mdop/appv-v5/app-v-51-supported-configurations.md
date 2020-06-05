@@ -40,8 +40,8 @@ The App-V 5.1 Server does not support the following scenarios:
 
 The following table lists the operating systems that are supported for the App-V 5.1 Management server installation.
 
-**Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
+> [!NOTE] 
+> Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
 
  | Operating System                 | Service Pack | System Architecture |
 |----------------------------------|--------------|---------------------|
@@ -215,7 +215,8 @@ The following table lists the SQL Server versions that are supported for the App
 
 The following table lists the operating systems that are supported for the App-V 5.1 client installation.
 
-**Note:** With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
+> [!NOTE]
+> With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
 
 <table>
 <colgroup>
@@ -323,7 +324,8 @@ The App-V client supports the following versions of System Center Configuration 
 
 The following App-V and System Center Configuration Manager version matrix shows all officially supported combinations of App-V and Configuration Manager.
 
-**Note:** Both App-V 4.5 and 4.6 have exited Mainstream support.
+> [!NOTE]
+> Both App-V 4.5 and 4.6 have exited Mainstream support.
 
 <table>
 <colgroup>
