@@ -25,7 +25,8 @@ Applies to:
 
 ## Overview
 
-IMPORTANT: Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection).
+>[!IMPORTANT] 
+>Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection).
 
 At Microsoft, we are deeply committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
 
@@ -48,7 +49,7 @@ The following table provides an overview of the Windows 10 privacy settings pres
 
 | Feature/Setting | Description | Supporting Content | Privacy Statement |
 | --- | --- | --- | --- |
-| Diagnostic Data | <p>Microsoft uses diagnostic data to keep Windows secure, up to date, troubleshoot problems, and make product improvements. Regardless of what choices you make for diagnostic data collection, the device will be just as secure and will operate normally. This data is collected by Microsoft and stored with one or more unique identifiers that can help us recognize an individual user on an individual device and understand the device's service issues and use patterns.</p><p>Diagnostic data is categorized into the following:<ul><li>**Required diagnostic data**<br />Previously known as basic diagnostic data, required diagnostic data includes information about your device, its settings, capabilities, and whether it is performing properly, whether a device is ready for an update, and whether there are factors that may impede the ability to receive updates, such as low battery, limited disk space, or connectivity through a paid network. You can find out what is collected with required diagnostic data [here](https://docs.microsoft.com/windows/privacy/required-windows-diagnostic-events-and-fields-2004).</li><li>**Optional diagnostic data**<br />Previously known as full diagnostic data, optional diagnostic data includes more detailed information about your device and its settings, capabilities, and device health. When you choose to send optional diagnostic data, required diagnostic data will always be included. You can find out the types of optional diagnostic data collected [here](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data).</li></ul></p> | [Learn more](https://support.microsoft.com/en-us/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)<br /><br />[Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | [Privacy Statement](https://privacy.microsoft.com/privacystatement#maindiagnosticsmodule) |
+| Diagnostic Data | <p>Microsoft uses diagnostic data to keep Windows secure, up to date, troubleshoot problems, and make product improvements. Regardless of what choices you make for diagnostic data collection, the device will be just as secure and will operate normally. This data is collected by Microsoft and stored with one or more unique identifiers that can help us recognize an individual user on an individual device and understand the device's service issues and use patterns.</p><p>Diagnostic data is categorized into the following:<ul><li>**Required diagnostic data**<br />Previously known as basic diagnostic data, required diagnostic data includes information about your device, its settings, capabilities, and whether it is performing properly, whether a device is ready for an update, and whether there are factors that may impede the ability to receive updates, such as low battery, limited disk space, or connectivity through a paid network. You can find out what is collected with required diagnostic data [here](https://docs.microsoft.com/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004).</li><li>**Optional diagnostic data**<br />Previously known as full diagnostic data, optional diagnostic data includes more detailed information about your device and its settings, capabilities, and device health. When you choose to send optional diagnostic data, required diagnostic data will always be included. You can find out the types of optional diagnostic data collected [here](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data).</li></ul></p> | [Learn more](https://support.microsoft.com/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)<br /><br />[Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | [Privacy Statement](https://privacy.microsoft.com/privacystatement#maindiagnosticsmodule) |
 | Inking and typing diagnostics | Microsoft collects optional inking and typing diagnostic data to improve the language recognition and suggestion capabilities of apps and services running on Windows. | [Learn more](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy) | [Privacy Statement](https://privacy.microsoft.com/privacystatement#maindiagnosticsmodule) |
 | Speech | Use your voice for dictation and to talk to Cortana and other apps that use Windows cloud-based speech recognition. Microsoft collects voice data to help improve speech services. | [Learn more](https://support.microsoft.com/help/4468250/windows-10-speech-voice-activation-inking-typing-privacy) | [Privacy Statement](https://privacy.microsoft.com/privacystatement#mainspeechinkingtypingmodule) |
 | Location | Get location-based experiences like directions and weather. Let Windows and apps request your location and allow Microsoft to use your location data to improve location services. | [Learn more](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy) |[Privacy Statement](https://privacy.microsoft.com/privacystatement#mainlocationservicesmotionsensingmodule) |
@@ -98,11 +99,11 @@ The following table provides an overview of the privacy settings discussed earli
 
 This section provides general details and links to more detailed information, as well as instructions for administrators and compliance professionals. These instructions allow you to manage device settings to manage the compliance objectives of your organization. This information includes details about setting up a device, configuring the device’s settings after setup is complete to minimize data collection, and driving privacy-related user experiences.
 
-#### 2.3.1 Managing the device setup experience
+#### _2.3.1 Managing the device setup experience_
 
 Windows deployment can be configured using several different methods that provide an administrator with options for control, including how a device is set up, which options are enabled by default, and what the user is able to change on the device after they log on.
 
-If you want the ability to fully control and apply restrictions on data being sent back to Microsoft, you can use [Configuration Manager](https://docs.microsoft.com/mem/configmgr/) as a deployment solution. Configuration Manager can be used to deploy a customized boot image using a variety of [deployment methods](https://docs.microsoft.com/en-us/mem/configmgr/osd/get-started/prepare-for-operating-system-deployment). You can further restrict any Configuration Manager-specific diagnostic data from being sent back to Microsoft by turning off this setting as outlined in the instructions [here](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/diagnostics/frequently-asked-questions).
+If you want the ability to fully control and apply restrictions on data being sent back to Microsoft, you can use [Configuration Manager](https://docs.microsoft.com/mem/configmgr/) as a deployment solution. Configuration Manager can be used to deploy a customized boot image using a variety of [deployment methods](https://docs.microsoft.com/mem/configmgr/osd/get-started/prepare-for-operating-system-deployment). You can further restrict any Configuration Manager-specific diagnostic data from being sent back to Microsoft by turning off this setting as outlined in the instructions [here](https://docs.microsoft.com/mem/configmgr/core/plan-design/diagnostics/frequently-asked-questions).
 
 Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
 
@@ -110,34 +111,34 @@ You can use the following articles to learn more about Autopilot and how to use 
 - https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-Autopilot 
 - https://docs.microsoft.com/windows/deployment/windows-Autopilot/deployment-process
 
-#### 2.3.2 Managing connections from Windows components to Microsoft services
+#### _2.3.2 Managing connections from Windows components to Microsoft services_
 
 Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows components.
 
 For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
 
-#### 2.3.3 Managing Windows 10 connections
+#### _2.3.3 Managing Windows 10 connections_
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the Manage Windows 10 connection endpoints section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the [Windows Privacy site](https://docs.microsoft.com/windows/privacy/) under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
 
-#### 2.3.4 Limited functionality baseline
+#### _2.3.4 Limited functionality baseline_
 
 An organization may want to further minimize the amount of data sent back to Microsoft or shared with Microsoft apps by managing the connections and configuring additional settings on their devices. Similar to [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines), Microsoft has released a limited functionality baseline focused on configuring settings to minimize the data sent back to Microsoft. However, the functionality of the device could be impacted by applying these settings. The [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services) article provides details on how to apply the baseline, along with the full list of settings covered in the baseline and the functionality that would be impacted. Administrators that don’t want to apply the baseline can still find details on how to configure each setting individually to find the right balance between data sharing and impact to functionality for their organization.
 
 >[!IMPORTANT]
 >We recommend that you fully test any modifications to these settings before deploying them in your organization.
 
-#### 2.3.5 Diagnostic data: Managing notifications for change of level at logon
+#### _2.3.5 Diagnostic data: Managing notifications for change of level at logon_
 
 Starting with Windows 10, version 1803, if an administrator modifies the diagnostic data collection setting, users are notified of this change during the initial device sign in. For example, if you configure the device to send optional diagnostic data, users will be notified the next time they sign into the device. You can disable these notifications by using the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in change notifications** or the MDM policy `ConfigureTelemetryOptInChangeNotification`.
 
-#### 2.3.6 Diagnostic data: Managing end user choice for changing the setting
+#### _2.3.6 Diagnostic data: Managing end user choice for changing the setting_
 
 Windows 10, version 1803 and newer allows users to change their diagnostic data level to a lower setting than what their administrator has set. For example, if you have configured the device to send optional diagnostic data, a user can change the setting so that only required diagnostic data is sent by going into **Settings** > **Privacy** > **Diagnostics & feedback**. Administrators can restrict a user’s ability to change the setting using **Setting** > **Privacy** by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in setting user interface** or the MDM policy `ConfigureTelemetryOptInSettingsUx`.
 
-#### 2.3.7 Diagnostic data: Managing device-based data delete
+#### _2.3.7 Diagnostic data: Managing device-based data delete_
 
 Windows 10, version 1809 and newer allows a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet.
 
@@ -191,7 +192,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 ### 5.3 Desktop Analytics
 
-[Desktop Analytics](https://docs.microsoft.com/en-us/mem/configmgr/desktop-analytics/overview) is a set of solutions for Azure Portal that provide you with extensive data about the state of devices in your deployment. Desktop Analytics is a separate offering from Windows 10 and is dependent on enabling a minimum set of data collection on the device to function.
+[Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) is a set of solutions for Azure Portal that provide you with extensive data about the state of devices in your deployment. Desktop Analytics is a separate offering from Windows 10 and is dependent on enabling a minimum set of data collection on the device to function.
 
 ### 5.4 Microsoft Managed Desktop
 
@@ -202,7 +203,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 * [Microsoft Trust Center: GDPR Overview](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 * [Microsoft Trust Center: Privacy at Microsoft](https://www.microsoft.com/trust-center/privacy)
 * [Windows IT Pro Docs](https://docs.microsoft.com/windows/#pivot=it-pro)
-* [Microsoft Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement)
+* [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 * [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services) 
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
 * [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection)

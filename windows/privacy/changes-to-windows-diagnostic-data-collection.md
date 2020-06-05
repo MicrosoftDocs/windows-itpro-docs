@@ -76,8 +76,8 @@ A final set of changes includes two new policies that can help you fine-tune dia
 With the Enhanced diagnostic data level being split out into new policies, we are providing additional controls to manage what types of dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
 
 1. Choose to send optional diagnostic data by setting one of the following policies:
-  - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**. Set the policy value to **Send optional diagnostic data**
-  - MDM: System/AllowTelemetry. Set the policy value to 3.
+   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**. Set the policy value to **Send optional diagnostic data**
+   - MDM: System/AllowTelemetry. Set the policy value to 3.
 2. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
 3. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
 
