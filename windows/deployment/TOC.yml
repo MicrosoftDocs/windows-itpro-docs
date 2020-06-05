@@ -48,7 +48,7 @@
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
-          href: planning/windows-10-infrastructure-requirements
+          href: planning/windows-10-infrastructure-requirements.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
         - name: Features removed or planned for replacement

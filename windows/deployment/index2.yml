@@ -87,13 +87,13 @@ landingContent:
             url: update/plan-determine-app-readiness.md
           - text: Define your servicing strategy
             url: update/waas-servicing-strategy-windows-10-updates.md
-        - linkListType: how-to-guide
+      - linkListType: how-to-guide
         links:
           - text: Evaluate and update infrastructure
             url: update/update-policies.md
           - text: Build a successful servicing strategy
             url: update/waas-deployment-rings-windows-10-updates.md
-        - linkListType: deploy
+      - linkListType: deploy
         links:
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
