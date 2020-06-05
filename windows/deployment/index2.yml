@@ -40,7 +40,7 @@ landingContent:
           - text: Windows 10 deployment considerations
             url: planning/windows-10-deployment-considerations.md
           - text: Windows 10 infrastructure requirements
-            url: planning/windows-10-infrastructure-requirements
+            url: planning/windows-10-infrastructure-requirements.md
           - text: Windows 10 features lifecycle
             url: planning/features-lifecycle.md
           - text: Plan for volume activation
