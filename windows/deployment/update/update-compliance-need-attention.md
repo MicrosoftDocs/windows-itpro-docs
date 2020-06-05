@@ -2,7 +2,7 @@
 title: Update Compliance - Need Attention! report
 ms.reviewer: 
 manager: laurawi
-description: This article contains an overview of the Update Compliance Needs Attention! report, which provides information like the number of devices that have issues.
+description: This article contains an overview of the Update Compliance Need Attention! report, which provides information like the number of devices that have issues.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
