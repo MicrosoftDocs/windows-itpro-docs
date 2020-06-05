@@ -40,14 +40,19 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
+Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
+
+- [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
+- Microsoft Defender ATP for Servers (one per covered Server)
+
+> [!NOTE]
+> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Microsoft Defender Advanced Threat Protection, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender ATP for Linux.
+
 For detailed licensing information, see the [Product terms page](https://www.microsoft.com/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
-
-For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
-
 
 ## Browser requirements
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
