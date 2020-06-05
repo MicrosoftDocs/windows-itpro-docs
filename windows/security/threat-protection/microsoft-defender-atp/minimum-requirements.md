@@ -40,6 +40,9 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
+> [!NOTE]
+> Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
 - [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
