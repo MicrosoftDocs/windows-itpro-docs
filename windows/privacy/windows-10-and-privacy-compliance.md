@@ -159,7 +159,7 @@ The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides 
 
 ### 3.3 Export
 
-The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview) provides the ability to export the diagnostic data captured while the app is running, by clicking the **Export** data button in the top menu. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet script.
+The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides the ability to export the diagnostic data captured while the app is running, by clicking the **Export** data button in the top menu. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet script.
 
 ### 3.4 Devices connected to a Microsoft account
 
@@ -206,5 +206,5 @@ An administrator can configure privacy-related settings, such as choosing to onl
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 * [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) 
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
-* [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection,md)
+* [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md)
 * [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/)
