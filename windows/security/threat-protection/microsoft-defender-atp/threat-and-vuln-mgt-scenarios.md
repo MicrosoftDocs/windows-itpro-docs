@@ -91,9 +91,9 @@ To view a list of version that have reached end of support, or end or support so
 
     ![Screenshot of version distribution link](images/software-drilldown-eos.png) <br><br>
 
-3. Select one of the versions in the table to open. For example, version 3.5.2150.0. A flyout will appear with the end of support date.
+3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
 
-![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
+    ![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
