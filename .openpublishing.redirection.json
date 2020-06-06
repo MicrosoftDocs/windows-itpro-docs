@@ -2207,6 +2207,36 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/faq-wd-app-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/test-scenarios-wd-app-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-antivirus/collect-diagnostic-data-update-compliance.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance",
 "redirect_document_id": true
@@ -15969,11 +15999,6 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-antivirus/office-365-windows-defender-antivirus.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-antivirus/oldTOC.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/oldTOC",
 "redirect_document_id": true
 },
 {
