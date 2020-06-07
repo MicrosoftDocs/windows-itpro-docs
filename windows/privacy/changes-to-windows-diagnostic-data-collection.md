@@ -25,8 +25,8 @@ Microsoft is deeply committed to providing you with effective controls over your
 
 This topic is meant for IT administrators and explains the changes Windows is making to align to the new data collection taxonomy. These changes are focused in two areas:
 
-- [Taxonomy changes](#Taxonomy-changes)
-- [Behavioral changes](#Behaviorial-changes)
+- [Taxonomy changes](#taxonomy-changes)
+- [Behavioral changes](#behaviorial-changes)
 
 > [!NOTE]
 > You can test the behavioral changes now in Windows 10 Insider Preview build 19577 and later.
@@ -52,6 +52,7 @@ Starting in Windows 10, version 1903 and newer, both the **Out-of-Box-Experience
 In an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be migrated to the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see the section named, **Services that rely on Enhanced diagnostic data**, later in this topic. Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see the section named **Configure a Windows 10 device to limit diagnostics**. For more information on services that rely on Enhanced diagnostic data, see **Services that rely on Enhanced diagnostic data**.
 
 Additionally, you will see the following policy changes in an upcoming release of Windows 10:
+
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |
 | Group Policy | Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Telemetry**<ul><li>**0 Security** <br /></li><li>**Basic**<br /></li><li>**Enhanced**<br /></li><li>**Full**<br /></li></ul>| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**<ul><li>**Diagnostic data off (not recommended)** <br /></li><li>**Send required diagnostic data**<br /></li><li>**Send optional diagnostic data**<br /></li></ul> |
