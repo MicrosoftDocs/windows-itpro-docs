@@ -28,13 +28,13 @@ Surface Enterprise Management Mode (SEMM) enables IT admins to secure and manage
 Managing Surface Dock 2 with SEMM is available for docks connected to Surface Book 3, Surface Laptop 3, and Surface Pro 7. These compatible Surface devices are commonly referred to as **host devices**. A package is applied to host devices based on if a host device is **authenticated** or **unauthenticated**. Configured settings reside in the UEFI layer on host devices enabling you — the IT admin — to manage Surface Dock 2 just like any other built-in peripheral such as the camera.
 
 >[!NOTE]
->You can only manage Surface Dock 2 ports when the dock is connected to one of the following compatible devices:  Surface Book 3, Surface Laptop 3, and Surface Pro 7. Any device that doesn't receive the UEFI Authenticated policy settings is inherently an unauthenticated device.
+>You can manage Surface Dock 2 ports only when the dock is connected to one of the following compatible devices:  Surface Book 3, Surface Laptop 3, and Surface Pro 7. Any device that doesn't receive the UEFI Authenticated policy settings is inherently an unauthenticated device.
 
 Restricting Surface Dock 2 to authorized persons signed into a corporate host device provides another layer of data protection. This ability to lock down Surface Dock 2 is critical for specific customers in highly secure environments who want the functionality and productivity benefits of the dock while maintaining compliance with strict security protocols. We anticipate SEMM used with Surface Dock 2 will be particularly useful in open offices and shared spaces especially for customers who want to lock USB ports for security reasons.
 
 ## Configuring and deploying UEFI settings for Surface Dock 2
 
-This section provides step by step guidance for the following tasks:
+This section provides step-by-step guidance for the following tasks:
 
 1. Install **Surface UEFI Configurator**.
 1. Create or obtain public key certificates.
