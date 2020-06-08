@@ -22,6 +22,7 @@ appliesto:
 
 ## Windows Holographic, version 2004 - June 2020 Update
 - Build 19041.1106
+
 Improvements and fixes in the update:
 
 - Custom MRC recorders have new default values for certain properties if they aren't specified.
@@ -47,6 +48,7 @@ Improvements and fixes in the update:
 
 ## Windows Holographic, version 1903 - June 2020 Update
 - Build 18362.1064
+
 Improvements and fixes in the update:
 
 - Custom MRC recorders have new default values for certain properties if they aren't specified.
