@@ -69,23 +69,29 @@ Prior to creating the configuration package, you need to prepare public key cert
 
 The required EKU values are listed in Table 1 and Table 2.
 
-#### Table 1. Root and Host Certificate requirements
+#### Table 1. Root and Dock Certificate requirements
 
 |Certificate|Algorithm|Description|Expiration|EKU OID|
 |---|---|---|---|---|
-|Dock Certificate Authority|ECDSA_P384|- Root certificate with 384-bit prime elliptic curve digital signature algorithm (ECDSA)<br>- SHA 256 Key Usage:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>- CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30 years|N/A
-|Host Authentication Certificate|ECC P256 curve|- Host certificate with 256-bit elliptic-curve cryptography (ECC)<br>- SHA 256 Key Usage:<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>- Path Length Constraint = 0|20 years|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3
+|Root Certificate Authority|ECDSA_P384|- Root certificate with 384-bit prime elliptic curve digital signature algorithm (ECDSA)<br>- SHA 256 Key Usage:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>- CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30 years|N/A
+|Dock Certificate Authority|ECC P256 curve|- Host certificate with 256-bit elliptic-curve cryptography (ECC)<br>- SHA 256 Key Usage:<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>- Path Length Constraint = 0|20 years|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3|
+
+   >[!NOTE]
+   >The dock CA must be exported as a .p7b file.
 
 ### Provisioning Administration Certificate requirements
 
-Each host device must have three provisioning certificates.
+Each host device must have the doc CA and two certificates as shown in Table 2.
 
 #### Table 2. Provisioning administration certificate requirements
 
 |Certificate|Algorithm|Description|EKU OID|
 |---|---|---|---|
-|Host authentication|ECC P256<br>SHA 256|Proves the identity of the host device.|1.3.6.1.4.1.311.76.9.21.2|
-|Update CA provisioning|ECC P256<br>SHA256|Enables you to change dock ownership and/or policy settings by allowing you to replace the CA that's currently installed on the dock.|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4
+|Host authentication certificate|ECC P256<br>SHA 256|Proves the identity of the host device.|1.3.6.1.4.1.311.76.9.21.2|
+|Provisioning administration certificate|ECC P256<br>SHA256|Enables you to change dock ownership and/or policy settings by allowing you to replace the CA that's currently installed on the dock.|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4|
+
+   >[!NOTE]
+   >The host authentication and provisioning certificates must be exported as.pfx files.
 
 ### Create configuration package
 
