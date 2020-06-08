@@ -83,9 +83,9 @@ Endpoint detection and response is improved. Enterprise customers can now take a
 - [Configuring features](/windows/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features)
 - [Troubleshooting](/windows/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus)
 
-  Some of the highlights of the new library include [Evaluation guide for Windows Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus) and [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus).
+  Some of the highlights of the new library include [Evaluation guide for Microsoft Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus) and [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus).
 
-  New features for Windows Defender AV in Windows 10 Enterprise 2019 LTSC include:
+  New features for Microsoft Defender AV in Windows 10 Enterprise 2019 LTSC include:
 - [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [The ability to specify the level of cloud-protection](/windows/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 - [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-security-center-antivirus)

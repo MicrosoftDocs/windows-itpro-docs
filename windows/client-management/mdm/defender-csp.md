@@ -15,9 +15,6 @@ ms.date: 10/21/2019
 
 # Defender CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
 The following image shows the Windows Defender configuration service provider in tree format.

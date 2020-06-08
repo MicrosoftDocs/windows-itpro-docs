@@ -38,7 +38,7 @@ To enable and configure always-on protection:
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 ![GPEdit taskbar search result](images/gpedit-search.png)
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
-![Microsoft Defender Antivirus](images/gpedit-microsoft-defender-antivirus.png)
+![Microsoft Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
 3. Configure the Microsoft Defender Antivirus antimalware service policy settings. To do this:  
     1. In the **Microsoft Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
@@ -75,7 +75,7 @@ To enable and configure always-on protection:
 
 5. Configure the Microsoft Defender Antivirus scanning policy setting. To do this:  
     1. From the **Microsoft Defender Antivirus** tree on left pane, click **Scan**.
-    ![Microsoft Defender Antivirus Scan options](images/gpedit-microsoft-defender-antivirus-scan.png)
+    ![Microsoft Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
     2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
 

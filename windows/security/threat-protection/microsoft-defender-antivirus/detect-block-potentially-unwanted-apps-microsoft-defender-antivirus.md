@@ -75,7 +75,7 @@ Microsoft Defender Antivirus blocks detected PUA files and any attempts to downl
 
 When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
-The notification appears in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
+The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history).
 
 #### Configure PUA protection in Microsoft Defender Antivirus
 

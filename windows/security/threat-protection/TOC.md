@@ -46,12 +46,12 @@
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
-##### [Hardware-based isolation evaluation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+##### [Hardware-based isolation evaluation](microsoft-defender-application-guard/test-scenarios-md-app-guard.md)
 
 ##### [Application isolation]()
-###### [Application guard overview](windows-defender-application-guard/wd-app-guard-overview.md)
-###### [System requirements](windows-defender-application-guard/reqs-wd-app-guard.md)
-###### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
+###### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
+###### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
+###### [Install Windows Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ###### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
@@ -152,7 +152,7 @@
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ###### [Configure and run scans](microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus.md)
 ###### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
-###### [Run and review the results of an offline scan](microsoft-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
    
 ##### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
@@ -180,7 +180,7 @@
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ###### [Configure and run scans](microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus.md)
 ###### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
-###### [Run and review the results of an offline scan](microsoft-defender-antivirus/windows-defender-offline.md)
+###### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
 ###### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
 ##### [Manage next-generation protection in your business]()
@@ -193,7 +193,7 @@
 ###### [Use the mpcmdrun.exe command line tool to manage next generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
 
 
-#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
 
 
