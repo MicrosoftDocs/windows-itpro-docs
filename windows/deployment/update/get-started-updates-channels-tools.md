@@ -18,7 +18,7 @@ ms.topic: article
 
 There are four phases to the Windows update process:
 
-- **Scan:** A device checks the Microsoft Update server or your Windows Server Update Services (WSUS) endpoint at random intervals to see if any updates have been added since the last time updates were searched, and then evaluates whether the update is appropriate by checking the policies that have been set up by the
+- **Scan:** A device checks the Microsoft Update server, Windows Update service, or your Windows Server Update Services (WSUS) endpoint at random intervals to see if any updates have been added since the last time updates were searched, and then evaluates whether the update is appropriate by checking the policies that have been set up by the
 administrator. This process is invisible to the user.
 - **Download:** Once the device determines that an update is available, it begins downloading the update. The download process is also invisible to the user. With feature updates, download happens in multiple
 sequential phases.
@@ -88,7 +88,7 @@ Windows Server Update Services (WSUS): you set up a WSUS server, which downloads
 You can set up, control, and manage the server and update process with a number of tools:
 
 - A standalone Windows Server Update Services server operated directly
-- Configuration Manager
+- [Configuration Manager](deploy-updates-configmgr.md)
 - Non-Microsoft tools
 
 For more information, see [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
@@ -99,7 +99,6 @@ Your individual devices connect to Microsoft endpoints directly to get the updat
 
 - [Group Policy Management Console](waas-wufb-group-policy.md) (Gpmc.msc)
 - [Microsoft Intune](waas-wufb-intune.md)
-- [Configuration Manager](deploy-updates-configmgr.md)
 - Non-Microsoft MDM tools
 
 ### Hybrid scenarios
