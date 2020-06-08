@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/27/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/08/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -123,7 +123,7 @@ landingContent:
             url: volume-activation/volume-activation-management-tool.md
           - text: User State Migration Tool (USMT) overview
             url: usmt/usmt-overview.md  
-      - linkListType: learn
+      - linkListType: reference
         links:
           - text: Windows 10 release information
             url: https://docs.microsoft.com/windows/release-information/
