@@ -44,7 +44,7 @@ This guide describes how to configure your VMs for optimal protection and perfor
 You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 > [!IMPORTANT]
-> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.<br/>There are performance and feature improvements to the way in which Windows Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.<br/>There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ### Set up a dedicated VDI file share
 
@@ -194,7 +194,7 @@ If you would prefer to do everything manually, this what you would need to do to
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Windows Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Microsoft Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -219,7 +219,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 3. Click **OK**. 
 
-This prevents notifications from Windows Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
+This prevents notifications from Microsoft Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
 
 ### Disable scans after an update
 
@@ -253,7 +253,7 @@ This forces a scan if the VM has missed two or more consecutive scheduled scans.
 
 2. Click **OK**. 
 
-This hides the entire Windows Defender AV user interface from users.
+This hides the entire Microsoft Defender AV user interface from users.
 
 ### Exclusions
 

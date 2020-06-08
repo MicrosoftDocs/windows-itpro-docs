@@ -95,7 +95,7 @@ below to onboard systems with Configuration Manager.
 
      ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-criteria.png)
 
-7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
+7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and click on **OK**.
 
     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-simple-value.png)
 

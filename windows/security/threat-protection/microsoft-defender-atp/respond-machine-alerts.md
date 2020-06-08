@@ -116,13 +116,13 @@ As part of the investigation or response process, you can remotely initiate an a
 
 >[!IMPORTANT]
 >- This action is available for machines on Windows 10, version  1709 or later.
->- A Microsoft Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
 ![Image of notification to select quick scan or full scan and add comment](images/run-antivirus.png)
 
-The Action center will show the scan information and the machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+The Action center will show the scan information and the machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Restrict app execution
 
