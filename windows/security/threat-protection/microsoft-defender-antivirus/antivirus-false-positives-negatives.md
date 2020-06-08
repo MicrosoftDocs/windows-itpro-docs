@@ -25,17 +25,17 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Microsoft Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud, and the web. 
+Microsoft Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Microsoft Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware, and spyware across email, apps, the cloud, and the web.
 
-But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these things. You can:
-- [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis);
-- [Create an "Allow" indicator to prevent a false positive from recurring](#create-an-allow-indicator-to-prevent-a-false-positive-from-recurring); or 
-- [Define an exclusion on an individual Windows device to prevent an item from being scanned](#define-an-exclusion-on-an-individual-windows-device-to-prevent-an-item-from-being-scanned) by Microsoft Defender Antivirus.
+What if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these issues. You can:
+- [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis)
+- [Create an "Allow" indicator to prevent a false positive from recurring](#create-an-allow-indicator-to-prevent-a-false-positive-from-recurring)
+- [Define an exclusion on an individual Windows device to prevent an item from being scanned](#define-an-exclusion-on-an-individual-windows-device-to-prevent-an-item-from-being-scanned)
 
 ## Submit a file to Microsoft for analysis
 
 1. Review the [submission guidelines](../intelligence/submission-guide.md).
-2. [Submit your file or sample](https://www.microsoft.com/wdsi/filesubmission). 
+2. [Submit your file or sample](https://www.microsoft.com/wdsi/filesubmission).
 
 > [!TIP]
 > We recommend signing in at the submission portal so you can track the results of your submissions.
@@ -48,7 +48,7 @@ To set up your "Allow" indicator, follow the guidance in [Manage indicators](htt
 
 ## Define an exclusion on an individual Windows device to prevent an item from being scanned
 
-When you define an exclusion for Microsoft Defender Antivirus, you configure your antivirus to skip that item. 
+When you define an exclusion for Microsoft Defender Antivirus, you configure your antivirus to skip that item.
 
 1. On your Windows 10 device, open the Windows Security app.
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
@@ -64,8 +64,8 @@ The following table summarizes exclusion types, how they're defined, and what ha
 |**File type**   |File extension <br/>Example: `.test` |All files with the specified extension anywhere on your device are skipped by Microsoft Defender Antivirus.         |
 |**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specified process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.         |
 
-To learn more, see: 
-- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
+To learn more, see:
+- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
 - [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus)
 
 ## Related articles
