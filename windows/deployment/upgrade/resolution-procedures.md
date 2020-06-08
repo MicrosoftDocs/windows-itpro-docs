@@ -24,9 +24,11 @@ ms.topic: article
 > This is a 200 level topic (moderate).  
 > See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
+This topic provides some common causes and solutions that are associated with specific upgrade error codes. If a Windows 10 upgrade fails, you can copy the error code, or find the error code in the Windows [Event Log](windows-error-reporting.md) or in the Windows Setup [log files](log-files.md) (ex: **setuperr.log**) and review the cause and solutions provided here. You should also try running the free [SetupDiag](setupdiag.md) tool provided by Microsoft, which can automatically find the reason for an upgrade failure.
+
 ## 0xC1900101
 
-A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:  
+A frequently observed [result code](upgrade-error-codes.md#result-codes) is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:  
 
 - The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp,
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
