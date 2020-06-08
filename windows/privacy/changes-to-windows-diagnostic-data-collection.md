@@ -55,10 +55,10 @@ Additionally, you will see the following policy changes in an upcoming release o
 
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |
-| Group Policy | Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Telemetry**<ul><li>**0 Security** <br /></li><li>**Basic**<br /></li><li>**Enhanced**<br /></li><li>**Full**<br /></li></ul>| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**<ul><li>**Diagnostic data off (not recommended)** <br /></li><li>**Send required diagnostic data**<br /></li><li>**Send optional diagnostic data**<br /></li></ul> |
+| Group Policy | Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Telemetry**<ul><li>**0 - Security** <br /></li><li>**1 - Basic**<br /></li><li>**2 - Enhanced**<br /></li><li>**3 - Full**<br /></li></ul>| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**<ul><li>**Diagnostic data off (not recommended)** <br /></li><li>**Send required diagnostic data**<br /></li><li>**Send optional diagnostic data**<br /></li></ul> |
 | Group Policy |Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure telemetry opt-in settings user interface**| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure diagnostic data opt-in settings user interface** |
 | Group Policy |Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure telemetry opt-in change notifications**| Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Configure diagnostic data opt-in change notifications** |
-| MDM | System/AllowTelemetry <ul><li>**0** <br /></li><li>**2**<br /></li><li>**3**<br /></li><li>**4**<br /></li></ul>|
+| MDM | System/AllowTelemetry <ul><li>**0** <br /></li><li>**1**<br /></li><li>**2**<br /></li><li>**3**<br /></li></ul>|
 
 A final set of changes includes two new policies that can help you fine-tune diagnostic data collection within your organization. These policies let you limit the amount of optional diagnostic data that’s sent back to Microsoft.
 
@@ -74,11 +74,11 @@ A final set of changes includes two new policies that can help you fine-tune dia
 
 ## Configure a Windows 10 device to limit diagnostics
 
-With the Enhanced diagnostic data level being split out into new policies, we are providing additional controls to manage what types of dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
+With the Enhanced diagnostic data level being split out into new policies, we're providing additional controls to manage what types of dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
 
 1. Choose to send optional diagnostic data by setting one of the following policies:
-   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**. Set the policy value to **Send optional diagnostic data**
-   - MDM: System/AllowTelemetry. Set the policy value to 3.
+   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow Diagnostic Data**. Set the policy value to **Send optional diagnostic data**.
+   - MDM: System/AllowTelemetry. Set the policy value to **3**.
 2. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
 3. Enable the following Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
 

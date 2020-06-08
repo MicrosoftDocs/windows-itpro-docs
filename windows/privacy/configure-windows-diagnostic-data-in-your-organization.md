@@ -26,7 +26,8 @@ ms.date: 04/29/2019
 
 This article applies to Windows 10, Windows Server, Surface Hub, and Hololens diagnostic data only. It describes the types of diagnostic data that’s sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-IMPORTANT: Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
+>[!IMPORTANT]
+>Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
 
 ## Overview 
 
@@ -75,12 +76,8 @@ The following table lists the endpoints related how you can manage the collectio
 
 | Windows service | Endpoint |
 | - | - |
-|Connected User Experiences and Telemetry | v10.events.data.microsoft.com | 
-| | v10c.events.data.microsoft.com |
-| | v10.vortex-win.data.microsoft.com |
-| [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com |
-| | watson.microsoft.com |
-| | umwatsonc.telemetry.microsoft.com |
+|Connected User Experiences and Telemetry | v10.events.data.microsoft.com <br></br> v10c.events.data.microsoft.com <br></br> v10.vortex-win.data.microsoft.com |
+| [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com <br></br> watson.microsoft.com <br></br> umwatsonc.telemetry.microsoft.com |
 | | umwatsonc.events.data.microsoft.com |
 | | *-umwatsonc.events.data.microsoft.com |
 | | ceuswatcab01.blob.core.windows.net |
@@ -117,10 +114,10 @@ Here’s a summary of the types of data that is included with each setting:
 
 | | **Diagnostic data off (Security)** | **Required (Basic)** | **Enhanced** |**Optional (Full)**|
 | --- | --- | --- | --- | --- |
-| **Diagnostic data events** | No Windows diagnostic data sent. | Minimum data required data to keep the device secure, up to date, and performing as expected. | Additional data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users. | Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.|
+| **Diagnostic data events** | No Windows diagnostic data sent. | Minimum data required to keep the device secure, up to date, and performing as expected. | Additional data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users. | Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.|
 | **Crash Metadata** | N/A | Yes | Yes | Yes |
 | **Crash Dumps** | N/A | No | Triage dumps only <br></br>For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting). | Full memory dumps <br></br>For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting).  |
-| **Crash Metadata** | N/A | No | No | No |
+| **Diagnostic logs** | N/A | No | No | No |
 | **Data collection** | N/A | 100% | Sampling applies | Sampling applies |
 
 
