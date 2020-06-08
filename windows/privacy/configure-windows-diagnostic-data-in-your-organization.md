@@ -208,7 +208,7 @@ You can use Group Policy to set your organization’s diagnostic data setting:
 
 ### Use MDM to manage diagnostic data collection
 
-[Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) to apply the System/AllowTelemetry MDM policy.
+Use [Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) to apply the System/AllowTelemetry MDM policy.
 
 ## Limit optional diagnostic data for Desktop Analytics
 
