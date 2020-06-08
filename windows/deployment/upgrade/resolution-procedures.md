@@ -43,6 +43,12 @@ See the following general troubleshooting procedures associated with a result co
 | :---     |  :---  |  :--- |
 | 0xC1900101 - 0x20004   | Uninstall antivirus applications.<br>Remove all unused SATA devices. <br>Remove all unused devices and drivers. <br>Update drivers and BIOS.     | Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation. <br>This is generally caused by out-of-date drivers.    |
 | 0xC1900101 - 0x2000c     | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br> Contact your hardware vendor to obtain updated device drivers.<br> Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.       | Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.<br> This is generally caused by out-of-date drivers      |
+| one | two | three |
+| one | two | three |
+| one | two | three |
+| one | two | three |
+| one | two | three |
+
 
 <table border="1" cellspacing="0" cellpadding="0">
 
