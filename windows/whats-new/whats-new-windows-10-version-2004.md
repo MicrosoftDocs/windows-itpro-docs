@@ -207,7 +207,7 @@ The following items are added to Task Manager in this release:
 
 ### 2-in-1 PCs
 
-A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch When you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
+A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
 
 ### Specialized displays
 
