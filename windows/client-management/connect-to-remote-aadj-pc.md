@@ -74,7 +74,7 @@ In organizations using integrated Active Directory and Azure AD, you can connect
 
 - Password
 - Smartcards
-- Windows Hello for Business, if the domain is managed by Microsoft Endpoint Configuration Manager
+- Windows Hello for Business, if the domain is managed by Microsoft Endpoint Configuration Manager.
 
 In organizations using integrated Active Directory and Azure AD, you can connect from an Azure AD-joined PC to an AD-joined PC when the Azure AD-joined PC is on the corporate network by using any of the following:
 
@@ -99,5 +99,4 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 ## Related topics
 
 [How to use Remote Desktop](https://support.microsoft.com/instantanswers/ff521c86-2803-4bc0-a5da-7df445788eb9/how-to-use-remote-desktop)
-
 
