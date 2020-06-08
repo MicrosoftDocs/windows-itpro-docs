@@ -77,21 +77,13 @@ The following table lists the endpoints related how you can manage the collectio
 | Windows service | Endpoint |
 | - | - |
 |Connected User Experiences and Telemetry | v10.events.data.microsoft.com <br></br> v10c.events.data.microsoft.com <br></br> v10.vortex-win.data.microsoft.com |
-| [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com <br></br> watson.microsoft.com <br></br> umwatsonc.telemetry.microsoft.com |
-| | umwatsonc.events.data.microsoft.com |
-| | *-umwatsonc.events.data.microsoft.com |
-| | ceuswatcab01.blob.core.windows.net |
-| | ceuswatcab02.blob.core.windows.net |
-| | eaus2watcab01.blob.core.windows.net |
-| | eaus2watcab02.blob.core.windows.net |
-| | weus2watcab01.blob.core.windows.net |
-| | weus2watcab02.blob.core.windows.net |
-|Authentication | login.live.com <br></br> IMPORTANT: This endpoint is used for device authentication. We do not recommend disabling this endpoint.
-| [Online Crash Analysis](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis) | oca.telemetry.microsoft.com |
-| | oca.microsoft.com
-| | kmwatsonc.telemetry.microsoft.com
-| | *-kmwatsonc.telemetry.microsoft.com
-|Settings | settings-win.data.microsoft.com <br></br> IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data
+| [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com <br></br> watson.microsoft.com <br></br> umwatsonc.telemetry.microsoft.com <br></br> umwatsonc.events.data.microsoft.com <br></br> *-umwatsonc.events.data.microsoft.com <br></br> ceuswatcab01.blob.core.windows.net <br></br> ceuswatcab02.blob.core.windows.net <br></br> eaus2watcab01.blob.core.windows.net <br></br> eaus2watcab02.blob.core.windows.net <br></br> weus2watcab01.blob.core.windows.net <br></br> weus2watcab02.blob.core.windows.net |
+|Authentication | login.live.com <br></br> 
+IMPORTANT: This endpoint is used for device authentication. We do not recommend disabling this endpoint.|
+| [Online Crash Analysis](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis) | oca.telemetry.microsoft.com <br></br> oca.microsoft.com <br></br> kmwatsonc.telemetry.microsoft.com <br></br> *-kmwatsonc.telemetry.microsoft.com |
+|Settings | settings-win.data.microsoft.com 
+<br></br> 
+IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data
 
 ### Data access
 
@@ -101,7 +93,7 @@ The principle of least privileged access guides access to Windows diagnostic dat
 
 Microsoft believes in and practices data minimization. We strive to gather only the info we need and to store it only for as long as it’s needed to provide a service or for analysis. For more information on how long data is retained, see the section named **Our retention of personal data** in the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement).
 
-#### Diagnostic data settings
+## Diagnostic data settings
 
 There are four diagnostic data collection settings. Each setting is described in more detail in the sections that follow.
 
@@ -121,14 +113,14 @@ Here’s a summary of the types of data that is included with each setting:
 | **Data collection** | N/A | 100% | Sampling applies | Sampling applies |
 
 
-#### Diagnostic data off
+### Diagnostic data off
 
 This setting was previously labeled as **Security**. When you configure this setting, no Windows diagnostic data is sent from your device. This is only available on Windows Server, Windows 10 Enterprise, and Windows 10 Education. If you choose this setting, devices in your organization will still be secure.
 
 >[!NOTE] 
 > If your organization relies on Windows Update, the minimum recommended setting is **Required diagnostic data**. Because no Windows Update information is collected when diagnostic data is off, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
-#### Required diagnostic data
+### Required diagnostic data
 
 Required diagnostic data, previously labeled as **Basic**, gathers a limited set of data that’s critical for understanding the device and its configuration. This data helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version.
 
@@ -160,7 +152,7 @@ Required diagnostic data includes:
 
 - Information about how the Microsoft Store performs, including app downloads, installations, and updates. It also includes Microsoft Store launches, page views, suspend and resumes, and obtaining licenses.
 
-#### Enhanced diagnostic data
+### Enhanced diagnostic data
 
 >[!NOTE] 
 >We’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. making changes to the enhanced diagnostic data level. For more info about this change, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
@@ -171,7 +163,7 @@ Enhanced diagnostic data includes data about the websites you browse, how Window
  - Device-specific events that are specific to certain devices, such as Surface Hub and Microsoft HoloLens. For example, Microsoft HoloLens sends Holographic Processing Unit (HPU)-related events.
  - All crash dump types, except for heap dumps and full dumps. For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting).
 
- #### Optional diagnostic data
+ ### Optional diagnostic data
 
 Optional diagnostic data, previously labeled as **Full**, includes more detailed information about your device and its settings, capabilities, and device health. Optional diagnostic data also includes data about the websites you browse, device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users. When you choose to send optional diagnostic data, required diagnostic data will always be included, and we collect the following additional information:
 
@@ -184,7 +176,7 @@ Optional diagnostic data, previously labeled as **Full**, includes more detailed
 >[!Note]
 >Crash dumps collected in optional diagnostic data may unintentionally contain personal data, such as portions of memory from a document and a web page. For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting).
 
-#### Manage enterprise diagnostic data
+## Manage enterprise diagnostic data
 
 Use the steps in this section to configure the diagnostic data settings for Windows and Windows Server in your organization.
 
@@ -205,23 +197,22 @@ Use the appropriate value in the table below when you configure the management p
 >[!Note]
 >When both the Computer Configuration policy and User Configuration policies are set, the more restrictive policy is used.
 
-#### Use Group Policy to manage diagnostic data collection
+### Use Group Policy to manage diagnostic data collection
 
 You can use Group Policy to set your organization’s diagnostic data setting:
 
-1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
-
-   1. Double-click **Allow Telemetry**.
+ 1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
+ 2.  Double-click **Allow Telemetry**.
 
 >[!NOTE]
 > If devices in your organization are running Windows 10, 1803 and newer, the user can still use Settings to set the diagnostic data setting to a more restrictive value, unless the **Configure diagnostic data opt-in settings user interface** policy is set.
 
-   2. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
+ 3. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
 
-#### Use MDM to manage diagnostic data collection
+### Use MDM to manage diagnostic data collection
 
 [Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) to apply the System/AllowTelemetry MDM policy.
 
-#### Limit optional diagnostic data for Desktop Analytics
+## Limit optional diagnostic data for Desktop Analytics
 
 For more information about how to limit the diagnostic data to the minimum required by Desktop Analytics, see [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing).
