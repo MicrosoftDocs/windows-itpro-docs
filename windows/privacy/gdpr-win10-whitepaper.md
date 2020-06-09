@@ -132,24 +132,24 @@ As seen with recent ransomware attacks, once called the "black plague" of the In
 
 In response to these threats and as a part of your mechanisms to resist these types of breaches so that you remain in compliance with the GDPR, Windows 10 provides built in technology, detailed below including the following:
 
-- Windows Defender Antivirus to respond to emerging threats on data.
+- Microsoft Defender Antivirus to respond to emerging threats on data.
 
 - Microsoft Edge to systemically disrupt phishing, malware, and hacking attacks.
 
 - Windows Defender Device Guard to block all unwanted applications on client machines.
 
 #### Responding to emerging data threats
-Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers. In Windows 10, it uses a multi-pronged approach to improve antimalware:
+Microsoft Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers. In Windows 10, it uses a multi-pronged approach to improve antimalware:
 
 - **Cloud-delivered protection.** Helps to detect and block new malware within seconds, even if the malware has never been seen before.
 
-- **Rich local context.** Improves how malware is identified. Windows 10 informs Windows Defender Antivirus not only about content like files and processes, but also where the content came from, where it's been stored, and more. 
+- **Rich local context.** Improves how malware is identified. Windows 10 informs Microsoft Defender Antivirus not only about content like files and processes, but also where the content came from, where it's been stored, and more. 
 
-- **Extensive global sensors.** Help to keep Windows Defender Antivirus current and aware of even the newest malware. This is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data.
+- **Extensive global sensors.** Help to keep Microsoft Defender Antivirus current and aware of even the newest malware. This is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data.
 
-- **Tamper proofing.** Helps to guard Windows Defender Antivirus itself against malware attacks. For example, Windows Defender Antivirus uses Protected Processes, which prevents untrusted processes from attempting to tamper with Windows Defender Antivirus components, its registry keys, and so on.
+- **Tamper proofing.** Helps to guard Microsoft Defender Antivirus itself against malware attacks. For example, Microsoft Defender Antivirus uses Protected Processes, which prevents untrusted processes from attempting to tamper with Microsoft Defender Antivirus components, its registry keys, and so on.
 
-- **Enterprise-level features.** Give IT pros the tools and configuration options necessary to make Windows Defender Antivirus an enterprise-class antimalware solution.
+- **Enterprise-level features.** Give IT pros the tools and configuration options necessary to make Microsoft Defender Antivirus an enterprise-class antimalware solution.
 
 #### Systemically disrupting phishing, malware, and hacking attacks 
 In today’s threat landscape, your ability to provide those mechanisms should be tied to the specific data-focused attacks you face through phishing, malware and hacking due to the browser-related attacks. 
@@ -204,7 +204,7 @@ Among the key benefits of ATP are the following:
 
 - Built in, not bolted on - agentless with high performance and low impact, cloud-powered; easy management with no deployment. 
 
-- Single pane of glass for Windows security - explore 6 months of rich machine timeline that unifies security events from Windows Defender ATP, Windows Defender Antivirus.
+- Single pane of glass for Windows security - explore 6 months of rich machine timeline that unifies security events from Windows Defender ATP, Microsoft Defender Antivirus.
 
 - Power of the Microsoft graph - leverages the Microsoft Intelligence Security Graph to integrate detection and exploration with Office 365 ATP subscription, to track back and respond to attacks.
 
@@ -216,7 +216,7 @@ To provide Detection capabilities, Windows 10 improves our OS memory and kernel 
 
 We continue to upgrade our detections of ransomware and other advanced attacks, applying our behavioral and machine-learning detection library to counter changing attacks trends. Our historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed. Customers can also add customized detection rules or IOCs to augment the detection dictionary.
 
-Customers asked us for a single pane of glass across the entire Windows security stack. Windows Defender Antivirus detections and Windows Defender Device Guard blocks are the first to surface in the Windows Defender ATP portal interleaved with Windows Defender ATP detections. The new user entity adds identity as a pivot, providing insight into actions, relationships, and alerts that span machines and allow us to track attackers moving laterally across the network.
+Customers asked us for a single pane of glass across the entire Windows security stack. Microsoft Defender Antivirus detections and Windows Defender Device Guard blocks are the first to surface in the Windows Defender ATP portal interleaved with Windows Defender ATP detections. The new user entity adds identity as a pivot, providing insight into actions, relationships, and alerts that span machines and allow us to track attackers moving laterally across the network.
 
 Our alert page now includes a new process tree visualization that aggregates multiple detections and related events into a single view that helps security teams reduce the time to resolve cases by providing the information required to understand and resolve incidents without leaving the alert page.
 
@@ -314,7 +314,7 @@ Azure Information Protection also helps your users share sensitive data in a sec
 
 - **Windows Hello for Business:** https://www.youtube.com/watch?v=WOvoXQdj-9E and https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification
 
-- **Windows Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10
+- **Microsoft Defender Antivirus:** https://www.youtube.com/watch?v=P1aNEy09NaI and https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
 
 - **Windows Defender Advanced Threat Protection:** https://www.youtube.com/watch?v=qxeGa3pxIwg and https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection
 

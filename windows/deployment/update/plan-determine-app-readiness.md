@@ -43,7 +43,7 @@ Combining the various validation methods with the app classifications you've pre
 |Test in pilot     |  x       |  x       |  x       |
 
 
-## Identify users
+### Identify users
 
 Since your organization no doubt has a wide variety of users, each with different background and regular tasks, you'll have to choose which users are best suited for validation testing. Some factors to consider include:
 
@@ -53,7 +53,7 @@ Since your organization no doubt has a wide variety of users, each with differen
 
 You could seek volunteers who enjoy working with new features and include them in the pilot deployment. You might want to avoid using core users like department heads or project managers. Current application owners, operations personnel, and developers can help you identify the most appropriate pilot users.
 
-## Identify and set up devices for validation
+### Identify and set up devices for validation
 
 In addition to users, it's important to carefully choose devices to participate in app validation as well. For example, ideally, your selection will include devices representing all of the hardware models in your environment.
 
@@ -64,7 +64,7 @@ There is more than one way to choose devices for app validation:
 - **Data-driven analysis**: With appropriate tools, you can use diagnostic data from devices to inform your choices.
 
 
-## Desktop Analytics
+### Desktop Analytics
 
 Desktop Analytics can make all of the tasks discussed in this article significantly easier:
 
