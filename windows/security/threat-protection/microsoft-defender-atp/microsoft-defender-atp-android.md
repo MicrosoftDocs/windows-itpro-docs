@@ -61,8 +61,8 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
     -   Access to the Microsoft Defender Security Center portal.
 
-        >[!NOTE]
-        >Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender ATP for Android. Currently only enrolled devices are supported for enforcing Microsoft Defender ATP for Android related device compliance policies in Intune. 
+        > [!NOTE]
+        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender ATP for Android. Currently only enrolled devices are supported for enforcing Microsoft Defender ATP for Android related device compliance policies in Intune. 
 
     -   Access [Microsoft Endpoint Manager admin
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
@@ -87,9 +87,9 @@ Refer *Deploy Microsoft Defender ATP for Android with Microsoft Intune*
 
 Guidance on how to configure Microsoft Defender ATP for Android features is available in [Configure Microsoft Defender ATP for Android features].
 
->[!NOTE]
+> [!NOTE]
 > During public preview, instructions to deploy Microsoft Defender ATP for Android on Intune enrolled Android devices are different across Device Administrator and Android Enterprise entrollment modes. <br>
->When Microsoft Defender ATP for Android reacher General Availability (GA), the app will be available on Google Play. 
+> When Microsoft Defender ATP for Android reacher General Availability (GA), the app will be available on Google Play. 
 
 ## Related topics
 - [Deploy Microsoft Defender ATP for with Microsoft Intune](android-intune.md)
