@@ -1,6 +1,5 @@
 - name: Privacy
   href: index.yml
-  expanded: true
   items: 
     - name: "Windows 10 & Privacy Compliance: A Guide for IT and Compliance Professionals"
       href: Windows-10-and-privacy-compliance.md
