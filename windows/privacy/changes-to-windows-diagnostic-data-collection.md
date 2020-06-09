@@ -88,4 +88,4 @@ Customers who use services that depend on Windows diagnostic data, such as Micro
 
 The following provides a list of the known changes:
 - [Microsoft Managed Desktop](https://aka.ms/mmd-diagnostic-data-level)
-- Desktop Analytics
+- [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
