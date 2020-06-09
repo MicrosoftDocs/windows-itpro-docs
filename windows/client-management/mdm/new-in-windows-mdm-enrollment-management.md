@@ -117,7 +117,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion" data-raw-source="[TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)">TextInput/ConfigureSimplifiedChineseIMEVersion</a></li>
 <li><a href="policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion" data-raw-source="[TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)">TextInput/ConfigureTraditionalChineseIMEVersion</a></li></ul>
 
-<p>Updated the following policies in Windows 10, version 2004:</p>
+<p>Updated the following policy in Windows 10, version 2004:</p>
 <ul>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" data-raw-source="[DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)">DeliveryOptimization/DOCacheHost</a></li></ul>
 
