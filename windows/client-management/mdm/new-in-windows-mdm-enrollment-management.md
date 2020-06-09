@@ -1984,7 +1984,8 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### June 2020
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description to Integer instead of Boolean for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative|
+|[BitLocker CSP](bitlocker-csp.md)|Added SKU support table for **AllowStandardUserEncryption**.|
+|[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description from Boolean to Integer for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative.|
 
 ### May 2020
 |New or updated topic | Description|
