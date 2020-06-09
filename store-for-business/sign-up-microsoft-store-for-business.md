@@ -32,7 +32,7 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
 **To sign up for Microsoft Store**
 
-1.  Go to [https://www.microsoft.com/business-store](https://www.microsoft.com/business-store), or [https://www.microsoft.com/education-store](https://www.microsoft.com/education-store) and click **Sign up**.
+1.  Go to the [Microsoft Store for Business](https://www.microsoft.com/business-store) or [Microsoft store for Education](https://www.microsoft.com/education-store). Select any app and then choose **Get the app**. Enter your work email address and select **Next**. 
 
     -   If you start Microsoft Store sign-up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365-welcome).
 
@@ -40,7 +40,6 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
     -   If you already have an Azure AD directory, you'll [sign in to Store for Business](#sign-in), and then accept Store for Business terms.
 
-    ![Image showing Microsoft Store for Business page with invitation to sign up, or sign in.](images/wsfb-landing.png)
 
     **To sign up for Azure AD accounts through Office 365 for Business**
 
@@ -98,7 +97,6 @@ After signing up for Microsoft Store for Business or Microsoft Store for Educati
  
 
  
-
 
 
 
