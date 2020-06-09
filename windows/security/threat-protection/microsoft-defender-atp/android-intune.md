@@ -76,7 +76,8 @@ Microsoft. Other fields are optional and then select **Next**.
 group.** You can then choose the user group(s) that you would like to target
 Microsoft Defender ATP for Android app. Click **Select** and then **Next**.
 
-      >[!NOTE] The selected user group should consist of Intune enrolled users.
+    >[!NOTE]
+    >The selected user group should consist of Intune enrolled users.
 
       ![Image of Microsoft Endpoint Manager Admin Center](images/363bf30f7d69a94db578e8af0ddd044b.png)
 
