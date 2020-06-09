@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 2004
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
 
 > [!NOTE]
 > The month indicator for this release is 04 instead of 03 to avoid confusion with Windows releases in the year 2003.
@@ -207,7 +207,7 @@ The following items are added to Task Manager in this release:
 
 ### 2-in-1 PCs
 
-A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch When you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
+A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
 
 ### Specialized displays
 
