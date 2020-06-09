@@ -105,11 +105,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tbody>
 <tr>
 <td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added and updated the following new policies in Windows 10, version 2004:</p>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 2004:</p>
 <ul>
 <li><a href="policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall" data-raw-source="[ApplicationManagement/BlockNonAdminUserInstall](policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall)">ApplicationManagement/BlockNonAdminUserInstall</a></li>
 <li><a href="policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize" data-raw-source="[Bluetooth/SetMinimumEncryptionKeySize](policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize)">Bluetooth/SetMinimumEncryptionKeySize</a></li>
-<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" data-raw-source="[DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)">DeliveryOptimization/DOCacheHost</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource" data-raw-source="[DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource)">DeliveryOptimization/DOCacheHostSource</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth)">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth)">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a></li>
@@ -118,10 +117,15 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion" data-raw-source="[TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)">TextInput/ConfigureSimplifiedChineseIMEVersion</a></li>
 <li><a href="policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion" data-raw-source="[TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)">TextInput/ConfigureTraditionalChineseIMEVersion</a></li></ul>
 
+<p>Updated the following policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" data-raw-source="[DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)">DeliveryOptimization/DOCacheHost</a></li></ul>
+
 <p>Deprecated the following policies in Windows 10, version 2004:</p>
 <ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth)">DeliveryOptimization/DOMaxDownloadBandwidth</a></li>
 <li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxUploadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth)">DeliveryOptimization/DOMaxUploadBandwidth</a></li>
-<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth)">DeliveryOptimization/DOMaxDownloadBandwidth</a></li></ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a></li></ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top"><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
