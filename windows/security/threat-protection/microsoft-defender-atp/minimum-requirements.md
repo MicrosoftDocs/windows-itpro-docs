@@ -40,14 +40,22 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 
+> [!NOTE]
+> Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+
+Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
+
+- [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
+- Microsoft Defender ATP for Servers (one per covered Server)
+
+> [!NOTE]
+> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Microsoft Defender Advanced Threat Protection, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender ATP for Linux.
+
 For detailed licensing information, see the [Product terms page](https://www.microsoft.com/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
-
-For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
-
 
 ## Browser requirements
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
@@ -165,25 +173,25 @@ For more information on additional proxy configuration settings, see [Configure 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 
-## Windows Defender Antivirus configuration requirement
-The Microsoft Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them.
+## Microsoft Defender Antivirus configuration requirement
+The Microsoft Defender ATP agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
 
-You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Windows Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. If your organization has disabled Microsoft Defender Antivirus through group policy or other methods, machines that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
 
-If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
+If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Microsoft Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
 > [!NOTE]
-> Your regular group policy doesn't apply to Tamper Protection, and changes to Windows Defender Antivirus settings will be ignored when Tamper Protection is on.
+> Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.
 
 
-For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
-## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
-If you're running Windows Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
+## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
+If you're running Microsoft Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 ## Related topics

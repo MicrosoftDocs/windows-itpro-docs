@@ -294,6 +294,8 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
+> [!NOTE]
+> After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
 
 ## Configure Windows Hello for Business Device Enrollment
 

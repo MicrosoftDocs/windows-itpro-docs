@@ -79,7 +79,7 @@ automatic restart. To take advantage of this feature, ensure **ConfigureDeadline
 ## Device activity policies
 
 Windows typically requires that a device is active and connected to the internet for at least six hours, with at least two
-of continuous activity {HOW DO YOU DEFINE ACTIVITY?}, in order to successfully complete a system update. The device could have other
+of continuous activity, in order to successfully complete a system update. The device could have other
 physical circumstances that prevent successful installation of an update--for example, if a laptop is running low
 on battery power, or the user has shut down the device before active hours end and the device cannot comply
 with the deadline.
@@ -201,4 +201,4 @@ Updates** rather than setting a deferral policy. You can choose a longer period 
 - **Pause Quality Updates Start Time**. Set to **Disabled** unless there is a known issue requiring time for a resolution.
 - **Deadline No Auto Reboot**. Default is **Disabled – Set to 0** . We recommend that devices automatically try to restart when an update is received. Windows uses user interactions to dynamically identify the least disruptive time to restart.
 
-There are additional policies are no longer supported or have been superseded. See {LINK TO Policies and settings reference guide – Policies to disable or not configure} for more information.
+There are additional policies are no longer supported or have been superseded. 

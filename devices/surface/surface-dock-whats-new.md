@@ -8,14 +8,14 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 5/06/2020
+ms.date: 5/29/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
 ---
 # What’s new in Surface Dock 2
 
-Surface Dock 2, the next generation Surface dock, lets users connect external monitors and multiple peripherals to obtain a fully modernized desktop experience from a Surface device. Built to maximize efficiency at the office, in a flexible workspace, or at home, Surface Dock 2 features seven ports, including two front-facing USB-C ports, with 15 watts of fast charging power for phone and accessories. Surface Dock 2 is designed to simplify IT management, enabling admins to automate firmware updates using Windows Update or centralize updates with internal software distribution tools. An extended set of management tools will be released via Windows update upon commercial distribution.
+Surface Dock 2, the next generation Surface dock, lets users connect external monitors and multiple peripherals to obtain a fully modernized desktop experience from a Surface device. Built to maximize efficiency at the office, in a flexible workspace, or at home, Surface Dock 2 features seven ports, including two front-facing USB-C ports, with 15 watts of fast charging power for phone and accessories. Surface Dock 2 is designed to simplify IT management, enabling admins to automate firmware updates using Windows Update or centralize updates with internal software distribution tools. Surface Enterprise Management Mode (SEMM) now enables IT admins to secure ports on Surface Dock 2. For more information, see [Secure Surface Dock 2 ports with Surface Enterprise Management Mode](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999).
 
 ## General system requirements
 
@@ -28,8 +28,7 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
   - Surface Book 2
   - Surface Laptop 2
   - Surface Go
-  - Surface Go with LTE Advanced
-  - Surface Studio 2 
+  - Surface Go with LTE Advanced 
   - Surface Pro 7
   - Surface Laptop 3
   - Surface Book 3
@@ -86,7 +85,7 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 |Surflink|Yes|Yes|
 |USB-A|2 front facing USB 3.1 Gen 1<br>2 rear facing USB 3.1 Gen 1|2 rear facing USB 3.2 Gen 2 (7.5W power)|
 |Mini Display port|2 rear facing (DP1.2)|None|
-|USB-C|None|2 front facing USB 3.2 Gen 2<br>[15W power]<br>2 rear facing USB 3.2 Gen 2 (DP1.4a)<br>[7.5W power]|
+|USB-C|None|2 front facing USB 3.2 Gen 2<br>(15W power)<br>2 rear facing USB 3.2 Gen 2 (DP1.4a)<br>(7.5W power)|
 |3.5 mm Audio in/out|Yes|Yes|
 |Ethernet|Yes, 1 gigabit|Yes 1 gigabit|
 |DC power in|Yes|Yes|
@@ -99,20 +98,18 @@ Surface Dock 2, the next generation Surface dock, lets users connect external mo
 |Wake-on-LAN from Connected Standby<sup>1</sup>|Yes|Yes|
 |Wake-on-LAN from S4/S5 sleep modes|No|Yes|
 |Network PXE boot|Yes|Yes|
-|SEMM host access control|No|Coming in Windows Update<sup>2</sup>|
-|SEMM port access control<sup>3</sup>|No|Coming in Windows Update|
+|SEMM host access control|No|Yes
+|SEMM port access control<sup>2</sup>|No|Yes|
 |Servicing support|MSI|Windows Update or MSI|
 ||||
 
 1. *Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Surface Pro 7, Surface Laptop 3, Surface Pro X, Surface Book 3, and Surface Go 2.  Software license required for some features. Sold separately.*
 
-2. *Pending release via Windows Update.*
-
-3. *Software license required for some features. Sold separately.*
+2. *Software license required for some features. Sold separately.*
 
 ## Streamlined device management
 
-Following the public announcement of Surface Dock 2, Surface will release streamlined management functionality via Windows Update enabling IT admins to utilize the following enterprise-grade features:
+Surface has released streamlined management functionality via Windows Update enabling IT admins to utilize the following enterprise-grade features:
 
 - **Frictionless updates**. Update your docks silently and automatically, with Windows Update or Microsoft Endpoint Configuration Manager, (formerly System Center Configuration Manager - SCCM) or other MSI deployment tools. 
 - **Wake from the network**. Manage and access corporate devices without depending on users to keep their devices powered on. Even when a docked device is in sleep, hibernation, or power off mode, your team can wake from the network for service and management, using Endpoint Configuration Manager or other enterprise management tools.
@@ -120,5 +117,6 @@ Following the public announcement of Surface Dock 2, Surface will release stream
 
 ## Next steps
 
+- [Secure Surface Dock 2 ports with Surface Enterprise Management Mode](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
 - [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 - [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
