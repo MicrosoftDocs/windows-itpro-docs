@@ -17,7 +17,7 @@ ms.topic: article
 
 # Changes to Windows diagnostic data collection
 
-Applies to:
+**Applies to**
 - Windows 10, version 1903 and newer
 - The next version of Windows Server
 
