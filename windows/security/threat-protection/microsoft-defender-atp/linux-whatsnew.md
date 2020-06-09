@@ -19,6 +19,12 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
+## 101.00.75
+
+- Added support for the following file system types: ecryptfs, fuse, fuseblk, jfs, nfs, overlay, ramfs, reiserfs, udf, and vfat
+- New syntax for the command-line tool. See [this page](linux-resources.md#configure-from-the-command-line) for more information.
+- Performance improvements & bug fixes
+
 ## 100.90.70
 
 > [!WARNING]
