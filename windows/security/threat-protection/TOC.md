@@ -254,7 +254,7 @@
 #### [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp/microsoft-defender-atp-android.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender ATP for with Microsoft Intune](microsoft-defender-atp/android-intune.md)
+##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](microsoft-defender-atp/android-intune.md)
 
 #### [Configure]()
 ##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)

@@ -71,7 +71,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 ### System Requirements
 
 -   Android devices running Android 6.0 and above.
--   
 -   Intune Company Portal app is downloaded from [Google
     Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
     and installed . Device enrollment is required for Intune device compliance policies to be enforced.
