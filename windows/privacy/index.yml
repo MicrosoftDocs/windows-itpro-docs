@@ -51,6 +51,13 @@ productDirectory:
       imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
       summary: Get examples of the types of optional diagnostic data collected from Windows
       url: windows-diagnostic-data.md
+    # Card
+    - title: Changes to Windows diagnostic data collection
+      imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
+      summary: See what changes Windows is making to align to the new data collection taxonomy
+      url: windows-diagnostic-data.md
+
+      /media/common/i_build.svg
 
 # conceptualContent section (optional)
 # conceptualContent:
