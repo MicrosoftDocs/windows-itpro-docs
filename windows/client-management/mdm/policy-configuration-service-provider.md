@@ -1076,6 +1076,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource" id="deliveryoptimization-docachehostsource">DeliveryOptimization/DOCacheHostSource</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -1096,6 +1099,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dogroupidsource" id="deliveryoptimization-dogroupidsource">DeliveryOptimization/DOGroupIdSource</a>
   </dd>
+    <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth" id="deliveryoptimization-domaxbackgrounddownloadbandwidth">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a>
+  </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxcacheage" id="deliveryoptimization-domaxcacheage">DeliveryOptimization/DOMaxCacheAge</a>
   </dd>
@@ -1104,6 +1110,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" id="deliveryoptimization-domaxdownloadbandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth" id="deliveryoptimization-domaxforegrounddownloadbandwidth">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a>
   </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" id="deliveryoptimization-domaxuploadbandwidth">DeliveryOptimization/DOMaxUploadBandwidth</a>
