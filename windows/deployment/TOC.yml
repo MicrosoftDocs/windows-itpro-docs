@@ -11,7 +11,7 @@
           href: update/waas-quick-start.md
         - name: Windows update fundamentals
           href: update/waas-overview.md
-        - name: Types of Windows updates
+        - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
         - name: Servicing the Windows 10 operating system
           href: update/waas-servicing-strategy-windows-10-updates.md
