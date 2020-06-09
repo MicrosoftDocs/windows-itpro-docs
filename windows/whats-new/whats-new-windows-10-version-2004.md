@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 2004
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](http://aka.ms/Windows-10-May-2020-Update).
 
 > [!NOTE]
 > The month indicator for this release is 04 instead of 03 to avoid confusion with Windows releases in the year 2003.
