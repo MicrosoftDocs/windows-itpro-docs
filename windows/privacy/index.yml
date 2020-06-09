@@ -53,11 +53,9 @@ productDirectory:
       url: windows-diagnostic-data.md
     # Card
     - title: Changes to Windows diagnostic data collection
-      imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
-      url: windows-diagnostic-data.md
-
-      /media/common/i_build.svg
+      url: windows-diagnostic-data.md  
 
 # conceptualContent section (optional)
 # conceptualContent:
