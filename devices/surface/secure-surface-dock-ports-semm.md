@@ -91,7 +91,7 @@ Each host device must have the doc CA and two certificates as shown in Table 2.
 |Provisioning administration certificate|ECC P256<br>SHA256|Enables you to change dock ownership and/or policy settings by allowing you to replace the CA that's currently installed on the dock.|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4|
 
    >[!NOTE]
-   >The host authentication and provisioning certificates must be exported as.pfx files.
+   >The host authentication and provisioning certificates must be exported as .pfx files.
 
 ### Create configuration package
 
