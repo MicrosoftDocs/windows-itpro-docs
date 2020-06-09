@@ -21,6 +21,7 @@ ms.topic: conceptual
 # Microsoft Defender Advanced Threat Protection for Android
 
 > [!IMPORTANT]
+> **PUBLIC PREVIEW EDITION**
 > 
 > This documentation is for a pre-release solution. The guidelines and the solution are subject to change between now and its general availability.
 > 
