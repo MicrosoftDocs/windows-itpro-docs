@@ -51,14 +51,15 @@
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
 
-
 ## Secure
+
 ### [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md)
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ### [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
 ### [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
+### [Secure Surface Dock 2 ports with SEMM](secure-surface-dock-ports-semm.md)
 ### [Use Microsoft Endpoint Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 ### [Surface Data Eraser](microsoft-surface-data-eraser.md)
 

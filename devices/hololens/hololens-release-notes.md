@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/12/2020
+ms.date: 06/9/2020
 ms.custom: 
 - CI 111456
 - CSSTroubleshooting
@@ -19,6 +19,48 @@ appliesto:
 ---
 
 # HoloLens 2 release notes
+
+## Windows Holographic, version 2004 - June 2020 Update
+- Build 19041.1106
+
+Improvements and fixes in the update:
+
+- Custom MRC recorders have new default values for certain properties if they aren't specified.
+  - On the MRC Video Effect:
+    - PreferredHologramPerspective (1 PhotoVideoCamera)
+    - GlobalOpacityCoefficient (0.9 (HoloLens) 1.0 (Immersive headset))
+  - On the MRC Audio Effect:
+    - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
+    - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
+- This update contains a bug fix that improves audio quality in Mixed Reality Capture scenarios. Specifically, it should eliminate any audio glitching in the recording when the Start Menu is displayed.
+- Improved hologram stability in recorded videos.
+- Resolves an issue where mixed reality capture couldn't record video after device is left in standby state for multiple days.
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
+- When accessing Device Portal over a WiFi connection, a web browser might prevent access to due to an invalid certificate, reporting an error such as "ERR_SSL_PROTOCOL_ERROR," even if the device certificate has previously been trusted.  In this case, you would be unable to progress to Device Portal as options to ignore security warnings are not available.  This update resolves the issue.  If the device certificate was previously downloaded and trusted on a PC to remove browser security warnings and the SSL error has been encountered, the new certificate will need to be downloaded and trusted to address browser security warnings.
+- Enabled ability to create a runtime provisioning package which can install an app using MSIX packages.
+- New setting that users can find under Settings > System > Holograms, that allows users to automatically remove all holograms from the mixed reality home when the device shuts down.
+- Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
+- Fixed bug that caused a crash during Iris Login.
+- Fixes an issue around repeated store downloads for already current apps.
+- Fixed a bug to preventing immersive apps from launching Edge multiple times.
+- Fixes an issue around launches of the Photos app in initial boots after updating from the 1903 release.
+- Improved performance and reliability.
+
+## Windows Holographic, version 1903 - June 2020 Update
+- Build 18362.1064
+
+Improvements and fixes in the update:
+
+- Custom MRC recorders have new default values for certain properties if they aren't specified.
+  - On the MRC Video Effect:
+    - PreferredHologramPerspective (1 PhotoVideoCamera)
+    - GlobalOpacityCoefficient (0.9 (HoloLens) 1.0 (Immersive headset))
+  - On the MRC Audio Effect:
+    - LoopbackGain (the current "App Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
+    - MicrophoneGain (the current "Mic Audio Gain" value on the Mixed Reality Capture page in Windows Device Portal)
+- The HolographicSpace.UserPresence API is generally disabled for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled. The API is now enabled for Unity versions 2018.4.18 and higher, and 2019.3.4 and higher.
+- Fixed an issue that caused HoloLens apps that change their pixel format to render black in the HoloLens emulator.
+- Fixes an issue around launches of the Photos app in initial boots after updating from the 1903 release.
 
 ## Windows Holographic, version 2004  
 Build - 19041.1103
@@ -32,7 +74,7 @@ We are excited to announce our May 2020 major software update for HoloLens 2, **
 |       Improved provisioning                      |          Seamlessly apply a provisioning   package from a USB drive to your HoloLens                              |
 |       Application install status                 |          Check install status for apps have   been pushed to HoloLens 2 via MDM, in the Settings app              |
 |       Configuration Service Providers   (CSPs)   |          Added new Configuration Service   Providers (CSPs) enhancing admin control capabilities.                 |
-|       USB 5G/LTE support                       |          Expanded USB Ethernet capability   enables support for 5G/LTE dongles                                    |
+|       USB 5G/LTE support                       |          Expanded USB Ethernet capability   enables support for 5G/LTE                                    |
 |       Dark App Mode                              |          Dark App Mode for apps that support   both dark and light modes, improving the viewing experience        |
 |       Voice Commands                             |          Support for additional system voice   commands to control HoloLens, hands-free                           |
 |       Hand Tracking improvements                 |          Hand Tracking improvements make   buttons and 2D slate interactions more accurate                        |

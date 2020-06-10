@@ -118,7 +118,7 @@ You can choose between showing alerts that are assigned to you or automation.
 Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
 >[!NOTE]
->The Windows Defender Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
+>The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
 
 
 ### OS platform

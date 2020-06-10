@@ -38,7 +38,7 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 - [Windows security baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 - [Microsoft Defender ATP baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
-Both baselines are maintained so that they complement one another and have identical values for shared settings. Deploying both baselines to the same device will not result in conflicts. Ideally, devices onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls.
+Ideally, devices onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls. To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they are released.
 
 >[!NOTE]
 >The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machine (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.
