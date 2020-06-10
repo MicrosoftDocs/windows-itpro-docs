@@ -31,7 +31,7 @@ Until now, managing firmware required enrolling devices into Surface Enterprise 
 
 Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console, now unified as [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). The following figure shows UEFI settings viewed directly on the device (left) and viewed in the Endpoint Manager console (right).
 
-![UEFI settings shown on device (left) and in the Endpoint Manager console (right) ](images/uefidfci.png)
+![UEFI settings shown on device (left) and in the Endpoint Manager console (right)](images/uefidfci.png)
 
 Crucially, DFCI enables zero touch management, eliminating the need for manual interaction by IT admins. DFCI is deployed via Windows Autopilot using the device profiles capability in Intune. A device profile allows you to add and configure settings which can then be deployed to devices enrolled in management within your organization. Once the device receives the device profile, the features and settings are applied automatically. Examples of common device profiles include Email, Device restrictions, VPN, Wi-Fi, and Administrative templates. DFCI is simply an additional device profile that enables you to manage UEFI configuration settings from the cloud without having to maintain on-premises infrastructure.  
 
