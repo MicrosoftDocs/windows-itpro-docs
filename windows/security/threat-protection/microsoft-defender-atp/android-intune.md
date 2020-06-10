@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Deploy Microsoft Defender ATP for with Microsoft Intune 
+# Deploy Microsoft Defender ATP for Android with Microsoft Intune 
 
 **Applies to:**
 
