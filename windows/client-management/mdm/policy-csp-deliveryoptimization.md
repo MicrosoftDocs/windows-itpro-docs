@@ -307,7 +307,8 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Cache Server Hostname*
--   GP name: *Cache Server Hostname*
+-   GP name: *CacheHost*
+-   GP element: *CacheHost*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
@@ -375,8 +376,9 @@ This policy allows you to to configure one or more Delivery Optimization in Netw
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Cache Server Hostname*
--   GP name: *Cache Server Hostname*
+-   GP English name: *Cache Server Hostname Source*
+-   GP name: *CacheHostSource*
+-   GP element: *CacheHostSource*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
@@ -956,7 +958,8 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Maximum Background Download Bandwidth (in KB/s)*
--   GP name: *Maximum Background Download Bandwidth (in KB/s)*
+-   GP name: *MaxBackgroundDownloadBandwidth*
+-   GP element: *MaxBackgroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
@@ -1172,7 +1175,8 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Maximum Foreground Download Bandwidth (in KB/s)*
--   GP name: *Maximum Foreground Download Bandwidth (in KB/s)*
+-   GP name: *DOMaxForegroundDownloadBandwidth*
+-   GP element: *MaxForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
@@ -1191,7 +1195,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy is deprecated. 
+This policy is deprecated because it only applies to uploads to Internet peers (only allowed when DownloadMode is set to 3) which is not used in commercial deployments. There is no alternate policy to use.
 
 <!--/Description-->
 <!--ADMXMapped-->
