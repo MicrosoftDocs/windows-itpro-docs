@@ -1175,7 +1175,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Maximum Foreground Download Bandwidth (in KB/s)*
--   GP name: *DOMaxForegroundDownloadBandwidth*
+-   GP name: *MaxForegroundDownloadBandwidth*
 -   GP element: *MaxForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
