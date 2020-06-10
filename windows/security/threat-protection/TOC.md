@@ -595,7 +595,7 @@
 
 ### [Migration guides]()
 #### [Migrate from Symantec to Microsoft Defender ATP]()
-##### [Overview](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
+##### [Overview and planning](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
 ##### [Part 1: Get Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part1.md)
 ##### [Part 2: Configure settings and exclusions](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part2.md)
 ##### [Part 3: Finish making the switch](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part3.md)
