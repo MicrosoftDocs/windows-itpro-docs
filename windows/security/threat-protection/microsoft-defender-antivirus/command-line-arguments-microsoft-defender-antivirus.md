@@ -27,7 +27,7 @@ You can perform various Microsoft Defender Antivirus functions with the dedicate
 > [!NOTE]
 > You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 >
-> If you're running an updated Windows Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+> If you're running an updated Microsoft Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 The utility has the following commands:
 
