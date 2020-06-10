@@ -85,15 +85,15 @@ To view a list of version that have reached end of support, or end or support so
 
 1. For software that has versions which have reached end of support, or will reach end of support soon, a message will appear in the flyout once the security recommendation is selected.
 
-    ![Screenshot of version distribution link](images/eos-upcoming-eos.png) <br><br>
+    ![Screenshot of version distribution link](images/eos-upcoming-eos.png)
 
 2. Select the **version distribution** link to go to the software drill down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
 
-    ![Screenshot of version distribution link](images/software-drilldown-eos.png) <br><br>
+    ![Screenshot of version distribution link](images/software-drilldown-eos.png)
 
 3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
 
-    ![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
+    ![Screenshot of version distribution link](images/version-eos-date.png)
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
