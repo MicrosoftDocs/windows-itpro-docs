@@ -388,10 +388,12 @@ The following are the supported values:
 - 1 = DHCP Option ID.
 - 2 = DHCP Option ID Force.
 
-When DHCP Option ID (1) is set, the client will query DHCP Option ID 235 and use the returned FQDN or IP value as Cache Server Hostname value. This policy will be overridden when the Cache Server Hostname policy has been set.
+When DHCP Option ID (1) is set, the client will query DHCP Option ID 235 and use the returned FQDN or IP value as Cache Server Hostname value. This policy will be overridden when the [Cache Server Hostname](#deliveryoptimization-docachehost) policy has been set.
+
+When DHCP Option ID Force (2) is set, the client will query DHCP Option ID 235 and use the returned FQDN or IP value as Cache Server Hostname value, and will override the Cache Server Hostname policy if it has been set.
 
 > [!Note]
-> If the DHCP Option ID is formatted incorrectly, the client will fall back to the [Cache Server Hostname policy](#deliveryoptimization-docachehost) value if that value has been set.
+> If the DHCP Option ID is formatted incorrectly, the client will fall back to the [Cache Server Hostname](#deliveryoptimization-docachehost) policy value if that value has been set.
 
 <!--/SupportedValues-->
 <!--Example-->
