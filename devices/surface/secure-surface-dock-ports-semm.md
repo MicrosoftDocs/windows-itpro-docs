@@ -30,13 +30,15 @@ Managing Surface Dock 2 with SEMM is available for docks connected to Surface Bo
 >[!NOTE]
 >You can manage Surface Dock 2 ports only when the dock is connected to one of the following compatible devices:  Surface Book 3, Surface Laptop 3, and Surface Pro 7. Any device that doesn't receive the UEFI Authenticated policy settings is inherently an unauthenticated device.
 
-Restricting Surface Dock 2 to authorized persons signed into a corporate host device provides another layer of data protection. This ability to lock down Surface Dock 2 is critical for specific customers in highly secure environments who want the functionality and productivity benefits of the dock while maintaining compliance with strict security protocols. We anticipate SEMM used with Surface Dock 2 will be particularly useful in open offices and shared spaces especially for customers who want to lock USB ports for security reasons.
+### Scenarios
+
+Restricting Surface Dock 2 to authorized persons signed into a corporate host device provides another layer of data protection. This ability to lock down Surface Dock 2 is critical for specific customers in highly secure environments who want the functionality and productivity benefits of the dock while maintaining compliance with strict security protocols. We anticipate SEMM used with Surface Dock 2 will be particularly useful in open offices and shared spaces especially for customers who want to lock USB ports for security reasons. For a video demo, check out [SEMM for Surface Dock 2](https://youtu.be/VLV19ISvq_s).
 
 ## Configuring and deploying UEFI settings for Surface Dock 2
 
 This section provides step-by-step guidance for the following tasks:
 
-1. Install **Surface UEFI Configurator**.
+1. Install [**Surface UEFI Configurator**](https://www.microsoft.com/en-us/download/details.aspx?id=46703).
 1. Create or obtain public key certificates.
 1. Create an .MSI configuration package.
    1. Add your certificates.
@@ -91,7 +93,7 @@ Each host device must have the doc CA and two certificates as shown in Table 2.
 |Provisioning administration certificate|ECC P256<br>SHA256|Enables you to change dock ownership and/or policy settings by allowing you to replace the CA that's currently installed on the dock.|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4|
 
    >[!NOTE]
-   >The host authentication and provisioning certificates must be exported as.pfx files.
+   >The host authentication and provisioning certificates must be exported as .pfx files.
 
 ### Create configuration package
 
