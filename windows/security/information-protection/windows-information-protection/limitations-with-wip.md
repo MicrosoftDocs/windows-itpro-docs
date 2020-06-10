@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -131,6 +131,11 @@ This table provides info about the most common problems you might encounter whil
         </td>
         <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
         </td>
+      </tr>
+    <tr>
+        <td>By design, OneNote only supports WIP protected notebooks stored on enterprise-managed SharePoint (OneDrive for Business).  Onenote does not support local WIP protected notebooks.</td>
+        <td>OneNote might encounter an error such as "This notebook contains protected content from your organization, which can't be viewed or synced. Please change the file ownership to Personal, or contact your IT administrator." Supported notebooks (OneDrive for Business) should be shown in File Explorer as links and open with your associated browser. Unsupported notebooks would show as folders or .one files (with a OneNote icon)</td>
+        <td>If unsupported files won't open in the browser, then they are 'stuck' in the old local format - incompatible with WIP or viewing online. We recommend that you create a new notebook and copy the contents from the existing notebook into the new one. In OneNote desktop, File > New > OnedDive - company name notebook and create a new one. Then within OneNote, copy over the old 'local' sections into this new notebook to ensure they get upgraded to the modern format. Hold Ctrl + drag and drop the sections into the notebook. Holding Ctrl will copy sections rather than move them,  preserving the old sections as backup copies. Wait for the new notebook to finish syncing to OneDrive for business.</td>    
     </tr>
     <tr>
         <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and are therefore not protected.
