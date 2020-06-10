@@ -38,7 +38,7 @@ Restricting Surface Dock 2 to authorized persons signed into a corporate host de
 
 This section provides step-by-step guidance for the following tasks:
 
-1. Install [**Surface UEFI Configurator**](https://www.microsoft.com/en-us/download/details.aspx?id=46703).
+1. Install [**Surface UEFI Configurator**](https://www.microsoft.com/download/details.aspx?id=46703).
 1. Create or obtain public key certificates.
 1. Create an .MSI configuration package.
    1. Add your certificates.
