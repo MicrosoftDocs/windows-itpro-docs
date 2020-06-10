@@ -24,7 +24,7 @@ ms.topic: article
 
 ## Overview
 
-If you are thinking about switching from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan and execute your migration.  
+If you are planning to switch from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## What all is included in Microsoft Defender ATP?
 
@@ -41,7 +41,7 @@ If you are new to Microsoft Defender ATP, you might be wondering what all is inc
 | [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
 | [Threat hunting service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
 
-[Learn more about Microsoft Defender ATP here](https://docs.microsoft.com/windows/security/threat-protection).
+As you can see, Microsoft Defender ATP includes a wide range of threat protection capabilities. [Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
 
 ## The migration process at a high level
 

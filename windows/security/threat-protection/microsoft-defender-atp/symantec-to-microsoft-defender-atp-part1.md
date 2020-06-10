@@ -1,5 +1,5 @@
 ---
-title: Migrate from Symantec to Microsoft Defender ATP
+title: Part 1 - Migrating from Symantec to Microsoft Defender ATP
 description: Make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -17,30 +17,8 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection
+# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Part 1
 
-If you are thinking about switching from Symantec Endpoint Protection to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan and execute your migration.  
-
-## What all is included in Microsoft Defender ATP?
-
-If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the features and capabilities listed in the following table:
-
-| Feature/Capability | Description |
-|---|---|
-| [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & Vulnerability Management capabilities helps identify, assess, and remediate weaknesses across your endpoints (such as devices). |
-| [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) | Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks. |
-| [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware. |
-| [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) | Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.  |
-| [Advanced hunting](advanced-hunting-overview.md) | Advanced hunting capabilities enable your security operations team to locate indicators and entities of known or potential threats. |
-| [Behavioral blocking and containment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) | Behavioral blocking and containment capabilities help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. |
-| [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
-| [Threat hunting service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
-
-**[Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection)**.
-
-## The migration process at a high level
-
-The process of switching from Symantec to Microsoft Defender ATP can be divided into three phases or parts, as listed in the following table. 
 
 |Phase |Steps |
 |--|--|
@@ -48,7 +26,6 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 | Part 2: Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection |[Step 4: Set Microsoft Defender ATP to passive mode](#step-4-set-microsoft-defender-atp-to-passive-mode)<br/><br/>[Step 5: Re-enable Microsoft Defender Antivirus](#step-5-re-enable-microsoft-defender-antivirus) <br/><br/>[Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#step-6-add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec)<br/><br/>[Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list](#step-7-add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list) |
 | Part 3: Finish making the switch to Microsoft Defender ATP | [Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units) <br/><br/>[Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec) <br/><br/>[Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
 
-After you have Microsoft Defender ATP set up and deployed, you can manage the various features and capabilities.
 
 ## Step 1: Get Microsoft Defender ATP
 
@@ -133,38 +110,6 @@ https://eu-cdn.x.cp.wd.microsoft.com/
 https://wu-cdn.x.cp.wd.microsoft.com/
 https://x.cp.wd.microsoft.com/api/
 
-
-## Step 4: Set Microsoft Defender ATP to passive mode
-
-## Step 5: Re-enable Microsoft Defender Antivirus
-
-## Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec
-
-Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
-
-## Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list
-
-Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
-
-## Step 8: Set up your device groups, device collections, and organizational units
-
-## Step 9: Deploy Microsoft Defender ATP and uninstall Symantec
-
-## Step 10: Onboard devices to Microsoft Defender ATP
-
-You can choose from several methods to onboard devices to Microsoft Defender ATP. 
-
-## Manage Microsoft Defender ATP
-
-After you have moved to Microsoft Defender ATP, you can choose from several methods to manage your threat protection features. We recommend using Intune. The following table lists various tasks and resources to manage features and capabilities of Microsoft Defender ATP with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
-
-|Task | Resources to learn more |
-|---|---|
-|Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection) | 
-|Specify device restrictions for Microsoft Defender Antivirus |[Device restrictions: Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) |
-|Specify exclusions for Microsoft Defender Antivirus|[Device restrictions: Microsoft Defender Antivirus Exclusions](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<br/><br/>[Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus)<br/><br/>[Microsoft Antivirus Exclusion List (Windows Server)](https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx) |
-|Manage attack surface reduction rules <br/><br/>(A sample Power BI dashboard is available to review your attack surface reduction rules. [Get the template here](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules).)|[Endpoint protection: Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=%2Fintune%2Fconfiguration%2Ftoc.json&bc=%2Fintune%2Fconfiguration%2Fbreadcrumb%2Ftoc.json#attack-surface-reduction-rules)<br/><br/>|
-|Manage network protection   |[]()<br/><br/>[]()<br/><br/>    |
 
 ## Related articles
 
