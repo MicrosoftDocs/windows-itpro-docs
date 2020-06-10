@@ -19,7 +19,7 @@ ms.topic: article
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection, Part 3
 
-| Overview | Part 1 | Part 2 | Part 3 <br/>You are here! | Post migration |
+| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | Part 3 <br/>*You are here!*| [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
 
 

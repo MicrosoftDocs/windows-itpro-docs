@@ -19,7 +19,7 @@ ms.topic: article
 
 # Migrate from Symantec - Part 2: Configure settings and exclusions
 
-| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | Part 3 <br/>*You are here!*| [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
+| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  |Part 2 <br/>*You are here!*| [Part 3](symantec-to-microsoft-defender-atp-part2.md)| [Post migration<br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
 
 
