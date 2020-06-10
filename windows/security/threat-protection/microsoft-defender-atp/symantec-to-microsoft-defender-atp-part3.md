@@ -1,5 +1,5 @@
 ---
-title: Migrate from Symantec to Microsoft Defender ATP
+title: Part 3 - Finish making the switch to Microsoft Defender ATP
 description: Make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection, Part 3
+# Migrate from Symantec - Part 3: Finish making the switch to Microsoft Defender ATP
 
 | [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | Part 3 <br/>*You are here!*| [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
 
 
 ## Finish making the switch to Microsoft Defender ATP
-- [Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units) 
-- [Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec)
-- [Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
+- [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
+- [Deploy Microsoft Defender ATP and uninstall Symantec](#deploy-microsoft-defender-atp-and-uninstall-symantec)
+- [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp) |
 
 ## Set up your device groups, device collections, and organizational units
 
