@@ -1,7 +1,7 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -17,13 +17,13 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Collect Windows Defender AV diagnostic data
+# Collect Microsoft Defender AV diagnostic data
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 

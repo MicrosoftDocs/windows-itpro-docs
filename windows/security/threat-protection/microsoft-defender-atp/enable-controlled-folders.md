@@ -41,7 +41,7 @@ Group Policy settings that disable local administrator list merging will overrid
 * Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
 * System Center Endpoint Protection **Allow users to add exclusions and overrides**
 
-For more information about disabling local list merging, see [Prevent or allow users to locally modify Windows Defender AV policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged).
+For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender AV policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged).
 
 ## Windows Security app
 

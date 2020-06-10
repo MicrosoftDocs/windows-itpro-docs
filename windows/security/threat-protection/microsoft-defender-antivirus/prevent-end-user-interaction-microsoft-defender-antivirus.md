@@ -44,7 +44,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703](images/defender/wdav-headless-mode-1607.png)
 
-## Use Group Policy to hide the Windows Defender AV interface from users
+## Use Group Policy to hide the Microsoft Defender AV interface from users
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 

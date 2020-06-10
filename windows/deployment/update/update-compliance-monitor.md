@@ -1,5 +1,5 @@
 ---
-title: Monitor Windows Updates and Windows Defender AV with Update Compliance (Windows 10)
+title: Monitor Windows Updates and Microsoft Defender AV with Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
 description: You can use Update Compliance in Azure Portal to monitor the progress of updates and key antimalware protection features on devices in your network.
