@@ -36,25 +36,6 @@ Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other 
 
 Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
 
-## Step 8: Set up your device groups, device collections, and organizational units
-
-## Step 9: Deploy Microsoft Defender ATP and uninstall Symantec
-
-## Step 10: Onboard devices to Microsoft Defender ATP
-
-You can choose from several methods to onboard devices to Microsoft Defender ATP. 
-
-## Manage Microsoft Defender ATP
-
-After you have moved to Microsoft Defender ATP, you can choose from several methods to manage your threat protection features. We recommend using Intune. The following table lists various tasks and resources to manage features and capabilities of Microsoft Defender ATP with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
-
-|Task | Resources to learn more |
-|---|---|
-|Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection) | 
-|Specify device restrictions for Microsoft Defender Antivirus |[Device restrictions: Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) |
-|Specify exclusions for Microsoft Defender Antivirus|[Device restrictions: Microsoft Defender Antivirus Exclusions](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<br/><br/>[Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus)<br/><br/>[Microsoft Antivirus Exclusion List (Windows Server)](https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx) |
-|Manage attack surface reduction rules <br/><br/>(A sample Power BI dashboard is available to review your attack surface reduction rules. [Get the template here](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules).)|[Endpoint protection: Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=%2Fintune%2Fconfiguration%2Ftoc.json&bc=%2Fintune%2Fconfiguration%2Fbreadcrumb%2Ftoc.json#attack-surface-reduction-rules)<br/><br/>|
-|Manage network protection   |[]()<br/><br/>[]()<br/><br/>    |
 
 ## Related articles
 
