@@ -123,7 +123,8 @@ list in Microsoft Defender Security Center.
 ## Deploy on Android Enterprise enrolled devices
 
 Microsoft Defender ATP for Android supports Android Enterprise enrolled devices.
-For more information on the enrollment options supported by Intune, refer to
+
+For more information on the enrollment options supported by Intune, see 
 [Enrollment
 Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
 
@@ -131,6 +132,117 @@ As Microsoft Defender ATP for Android is deployed via managed Google Play,
 updates to the app are automatic via Google Play.
 
 Currently only Work Profile, Fully Managed devices are supported for deployment.
+
+
+>[!NOTE]
+>During Public Preview, to access Microsoft Defender ATP in your managed Google Play, contact atpm@microsoft.com with the organization ID of your managed Google Play for next steps. This can be found under the **Admin Settings** of [managed Google Play](https://play.google.com/work/).<br>
+> At General Availability (GA), Microsoft Defender ATP for Android will be available as a public app. Upgrades from preview to GA version will be supported.
+
+## Add Microsoft Defender ATP for Android as a managed Google Play app
+
+Once you receive a confirmation e-mail from Microsoft that your managed Google
+Play organization ID has been approved, follow the below steps to add Microsoft
+Defender ATP app into your managed Google Play
+
+1. In [Microsoft Endpoint Manager admin
+center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
+**Android Apps** \> **Add** and select **managed Google Play app**.
+
+    ![Image of Microsoft Endpoint Manager admin center](images/579ff59f31f599414cedf63051628b2e.png)
+
+
+2. On your managed Google Play page that loads subsequently, go to the search
+box and lookup **Microsoft Defender.** Your search should display the Microsoft
+Defender ATP app in your Managed Google Play. Click on the Microsoft Defender
+ATP app from the Apps search result.
+
+    ![Image of Microsoft Endpoint Manager admin center](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
+
+3. In the App description page that comes up next, you should be able to see app
+details on Microsoft Defender ATP. Review the information on the page and then
+select **Approve**.
+
+    ![A screenshot of a Managed Google Play](images/07e6d4119f265037e3b80a20a73b856f.png)
+
+
+4. You should now be presented with the permissions that Microsoft Defender ATP
+obtains for it to work. Review them and then select **Approve**.
+
+    ![A screenshot of Microsoft Defender ATP preview app aproval](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
+
+
+5. You should then be presented with the Approval settings page that confirms
+your preference to handle new app permissions that Microsoft Defender ATP for
+Android might ask. Review the choices and select the desired option. Select
+**Done**.
+
+    By default, managed Google Play selects *Keep approved when app requests new
+permissions*
+
+   ![Image of notifications tab](images/ffecfdda1c4df14148f1526c22cc0236.png)
+
+
+6. After the permissions handling selection is made, select **Sync** to sync
+Microsoft Defender ATP to your apps list.
+
+    ![Image of sync page](images/34e6b9a0dae125d085c84593140180ed.png)
+
+
+7. The sync will complete in a few minutes.
+
+    ![Image of Android app](images/9fc07ffc150171f169dc6e57fe6f1c74.png)
+
+8. Select the **Refresh** button in the Android apps screen and Microsoft
+Defender ATP should be visible in the apps list.
+
+    ![Image of list of Android apps](images/fa4ac18a6333335db3775630b8e6b353.png)
+
+
+9. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
+**Assignments** \> **Edit**.
+
+    ![Image of list of apps](images/9336bbd778cff5e666328bb3db7c76fd.png)
+
+
+10. Assign the app as a *Required* app to a user group so
+that it is automatically installed in the *work profile* during the next sync of
+the device via Company Portal app. This assignment can be done by navigating to
+the *Required* section \> **Add group,** selecting the user group and click
+**Select**.
+
+    ![Image of edit application page](images/ea06643280075f16265a596fb9a96042.png)
+
+
+11. In the **Edit Application** page, review all the information that was entered
+above and then select **Review + Save** and then **Save** again to commence
+assignment.
+
+## Complete onboarding and check status
+
+1. You can confirm the install status of Microsoft Defender ATP for Android by
+clicking on the **Device Install Status and** verifying that the device is
+displayed here.
+
+    ![Image of device installation status](images/900c0197aa59f9b7abd762ab2b32e80c.png)
+
+
+2. On the device, you can confirm the same by going to the **work profile** and
+confirm that Microsoft Defender ATP is available.
+
+    ![Image of app in mobile device](images/c2e647fc8fa31c4f2349c76f2497bc0e.png)
+
+3. When the app is installed, open the app and accept the permissions
+and then your onboarding should be successful.
+
+    ![Image of mobile device with Microsoft Defender ATP app](images/23c125534852dcef09b8e37c98e82148.png)
+
+4. The device at this stage is successfully onboarded onto Microsoft Defender
+ATP for Android. This can also be verified on the [Microsoft Defender Security
+Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/securitycenter.microsoft.com)
+by navigating to the **Devices** page.
+
+    ![Image of Microsoft Defender ATP portal](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
+
 
 ## Related topics
 - [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp-android.md)
