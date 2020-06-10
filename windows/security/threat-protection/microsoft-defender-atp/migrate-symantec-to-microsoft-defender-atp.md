@@ -23,25 +23,20 @@ If you are thinking about switching from Symantec Endpoint Protection to [Micros
 
 ## What all is included in Microsoft Defender ATP?
 
-If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes all the following features and capabilities:
+If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the features and capabilities listed in the following table:
 
-- [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which helps identify, assess, adn remediate endpoint weaknesses.
+| Feature/Capability | Description |
+|---|---|
+| [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & Vulnerability Management capabilities helps identify, assess, and remediate weaknesses across your endpoints (such as devices). |
+| [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) | Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks. |
+| [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware. |
+| [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) | Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.  |
+| [Advanced hunting](advanced-hunting-overview.md) | Advanced hunting capabilities enable your security operations team to locate indicators and entities of known or potential threats. |
+| [Behavioral blocking and containment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) | Behavioral blocking and containment capabilities help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. |
+| [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
+| [Threat hunting service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
 
-- [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) rules that help protect your organization's devices and applications from cyberthreats and attacks.
-
-- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)  to block threats and malware.
-
-- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) to detect, investigate, and respond to intrusion attempts and active breaches.  
-
-- [Advanced hunting](advanced-hunting-overview.md) to locate indicators and entities of known or potential threats.
-
-- [Behavioral blocking and containment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) to help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.
-
-- [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) to examine alerts and take immediate remediation action to resolve breaches.
-
-- [Threat hunting service (Microsoft Threat Experts)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) to provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed.
-
-[Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
+**[Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection)**.
 
 ## The migration process at a high level
 
