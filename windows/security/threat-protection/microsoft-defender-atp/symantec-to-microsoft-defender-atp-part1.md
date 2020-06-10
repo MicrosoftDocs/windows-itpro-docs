@@ -19,15 +19,10 @@ ms.topic: article
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Part 1
 
+| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | Part 1 <br/>*You are here!* | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
+|--|--|--|--|--|
 
-|Phase |Steps |
-|--|--|
-|Part 1: Get Microsoft Defender ATP started |[Step 1: Get Microsoft Defender ATP](#step-1-get-microsoft-defender-atp)<br/><br/>[Step 2: Grant access to the Microsoft Defender Security Center](#step-2-grant-access-to-the-microsoft-defender-security-center)<br/><br/>[Step 3: Configure device proxy and internet connectivity settings](#step-3-configure-device-proxy-and-internet-connectivity-settings) |
-| Part 2: Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection |[Step 4: Set Microsoft Defender ATP to passive mode](#step-4-set-microsoft-defender-atp-to-passive-mode)<br/><br/>[Step 5: Re-enable Microsoft Defender Antivirus](#step-5-re-enable-microsoft-defender-antivirus) <br/><br/>[Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#step-6-add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec)<br/><br/>[Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list](#step-7-add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list) |
-| Part 3: Finish making the switch to Microsoft Defender ATP | [Step 8: Set up your device groups, device collections, and organizational units](#step-8-set-up-your-device-groups-device-collections-and-organizational-units) <br/><br/>[Step 9: Deploy Microsoft Defender ATP and uninstall Symantec](#step-9-deploy-microsoft-defender-atp-and-uninstall-symantec) <br/><br/>[Step 10: Onboard devices to Microsoft Defender ATP](#step-10-onboard-devices-to-microsoft-defender-atp) |
-
-
-## Step 1: Get Microsoft Defender ATP
+## Get Microsoft Defender ATP
 
 To get started, you must have Microsoft Defender ATP with licenses assigned and provisioned per the following steps:
 
@@ -39,7 +34,7 @@ To get started, you must have Microsoft Defender ATP with licenses assigned and 
 
 4. If endpoints in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
 
-## Step 2: Grant access to the Microsoft Defender Security Center
+## Grant access to the Microsoft Defender Security Center
 
 The Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), also referred to as the Microsoft Defender ATP portal, is where you can access the features and capabilities of Microsoft Defender ATP. [Get an overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
@@ -59,7 +54,7 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 3. After your roles are defined and RBAC is set up, grant access to the Microsoft Defender Security Center. See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
-## Step 3: Configure device proxy and internet connectivity settings
+## Configure device proxy and internet connectivity settings
 
 For MDATP (EDR):
 Windows:
@@ -93,6 +88,7 @@ https://au-v20.events.data.microsoft.com/
 https://uk-v20.events.data.microsoft.com/
 https://de-v20.events.data.microsoft.com/
 https://v20.events.data.microsoft.com/
+
 For MDAV/SCEP:
 Windows:
 Allow connections to the Windows Defender Antivirus cloud service (Proxy and/or Firewall)
