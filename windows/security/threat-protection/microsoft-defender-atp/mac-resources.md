@@ -87,6 +87,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
 |Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
+|Configuration|Turn on/off passiveMode                    |`mdatp --config passiveMode [on/off]`                                  |
 |Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
 |Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
