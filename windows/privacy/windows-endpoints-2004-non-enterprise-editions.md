@@ -84,7 +84,7 @@ The following methodology was used to derive the network endpoints:
 |watson.telemetry.microsoft.com|HTTPS|Diagnostic Data
 |wdcp.microsoft.com|TLSv1.2|Used for Windows Defender when Cloud-based Protection is enabled
 |www.bing.com|TLSv1.2|Used for updates for Cortana, apps, and Live Tiles
-|www.msftconnecttest.com|HTTPS|Network Connection (NCSI)
+|www.msftconnecttest.com|HTTP|Network Connection (NCSI)
 |www.office.com|HTTPS|Microsoft Office
 
 
@@ -144,7 +144,7 @@ The following methodology was used to derive the network endpoints:
 |watson.telemetry.microsoft.com|HTTPS|Diagnostic Data
 |wdcp.microsoft.com|TLSv1.2|Used for Windows Defender when Cloud-based Protection is enabled
 |www.bing.com|TLSv1.2|Used for updates for Cortana, apps, and Live Tiles
-|www.msftconnecttest.com|HTTPS|Network Connection (NCSI)
+|www.msftconnecttest.com|HTTP|Network Connection (NCSI)
 |www.msn.com|HTTPS|Network Connection (NCSI)
 |www.office.com|HTTPS|Microsoft Office
 
@@ -198,6 +198,6 @@ The following methodology was used to derive the network endpoints:
 |wdcp.microsoft.com|TLSv1.2|Used for Windows Defender when Cloud-based Protection is enabled
 |www.bing.com|TLSv1.2|Used for updates for Cortana, apps, and Live Tiles
 |www.microsoft.com|HTTP|Connected User Experiences and Telemetry, Microsoft Data Management service
-|www.msftconnecttest.com|HTTPS|Network Connection (NCSI)
+|www.msftconnecttest.com|HTTP|Network Connection (NCSI)
 |www.office.com|HTTPS|Microsoft Office
 
