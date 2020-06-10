@@ -88,5 +88,4 @@ crl.microsoft.com`
 - `https://static2.sharepointonline.com` 
 
 
-## Related topics
-- [Validate licensing provisioning and complete setup for Microsoft Defender ATP](licensing.md)
+

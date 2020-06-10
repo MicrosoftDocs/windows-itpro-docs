@@ -1,6 +1,6 @@
 ---
 title: Virus and threat protection in the Windows Security app
-description: Use the Virus & threat protection section to see and configure Windows Defender Antivirus, Controlled folder access, and 3rd-party AV products.
+description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party AV products.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -24,14 +24,14 @@ manager: dansimp
 - Windows 10, version 1703 and later
 
 
-The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products.
+The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and third-party AV products.
 
 In Windows 10, version 1803, this section also contains information and settings for ransomware protection and recovery. This includes Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions in the event of a ransomware attack.
 
 IT administrators and IT pros can get more information and documentation about configuration from the following:
 
-- [Windows Defender Antivirus in the Windows Security app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
-- [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in the Windows Security app](../microsoft-defender-antivirus/microsoft-defender-security-center-antivirus.md)
+- [Microsoft Defender Antivirus documentation library](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
 - [Protect important folders with Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
 - [Office 365 advanced protection](https://support.office.com/en-us/article/office-365-advanced-protection-82e72640-39be-4dc7-8efd-740fb289123a)

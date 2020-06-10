@@ -123,6 +123,8 @@ The Advanced Recovery Companion is a new app in Microsoft Store restore the oper
 
 If an IT environment prevents the use of the Windows Store app or limits access to the retail store, IT administrators can make this app available through other ‘offline’ deployment paths. 
 
+- This process may also be used for other apps, as seen in step 2. This guide will focus on Advanced Recovery Companion, but my be modified for other offline apps.  
+
 This deployment path can be enabled with the following steps:
 1.	Go to the [Store For Business website](https://businessstore.microsoft.com) and sign-in with an Azure AD identity.
 1.	Go to **Manage – Settings**, and turn on **Show offline apps** under **Shopping experience** as described at https://businessstore.microsoft.com/manage/settings/shop 
@@ -138,6 +140,11 @@ This deployment path can be enabled with the following steps:
       ```console
       C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
       ```
+> [!NOTE]
+> The version number in this code example may not match the currently avalible version. You may have also choosen a different download location than in the example given. Please make sure to make any changes as needed.
+
+> [!TIP]
+> When planning to use Advanced Recovery Companion to install an ffu offline it may be useful to download your flashing image to be availible, here is the [current image for HoloLens 2](https://aka.ms/hololens2download). 
 
 Other resources:
 - https://docs.microsoft.com/microsoft-store/distribute-offline-apps 

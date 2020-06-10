@@ -104,17 +104,7 @@ Similarly, the App-V Remote Desktop Services (RDS) client is included with Windo
 
 ## Sequencer system requirements
 
-The following table lists the operating systems that the App-V Sequencer installation supports.
-
-|Operating system|Service pack|System architecture|
-|---|---|---|
-|Microsoft Windows Server 2012 R2||64-bit|
-|Microsoft Windows Server 2012||64-bit|
-|Microsoft Windows Server 2008 R2|SP1|64-bit|
-|Microsoft Windows 10||32-bit and 64-bit|
-|Microsoft Windows 8.1||32-bit and 64-bit|
-|Microsoft Windows 8||32-bit and 64-bit|
-|Microsoft Windows 7|SP1|32-bit and 64-bit|
+Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
 
 ### Sequencer hardware requirements
 

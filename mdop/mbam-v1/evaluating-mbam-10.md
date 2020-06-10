@@ -55,21 +55,21 @@ Even when you set up a non-production instance of MBAM to evaluate in a lab envi
 <td align="left"><p></p>
 <p>Prepare your computing environment for the MBAM installation. To do so, you must enable the Transparent Data Encryption (TDE) on the SQL Server instances that will host MBAM databases. To enable TDE in your lab environment, you can create a .sql file to run against the master database that is hosted on the instance of the SQL Server that MBAM will use.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>You can use the following example to create a .sql file for your lab environment to quickly enable TDE on the SQL Server instance that will host the MBAM databases. These SQL Server commands will enable TDE by using a locally signed SQL Server certificate. Make sure to back up the TDE certificate and its associated encryption key to the example local backup path of <em>C:\Backup&lt;/em&gt;. The TDE certificate and key are required when recover the database or move the certificate and key to another server that has TDE encryption in place.</p>
+<strong>Note</strong><br/><p>You can use the following example to create a .sql file for your lab environment to quickly enable TDE on the SQL Server instance that will host the MBAM databases. These SQL Server commands will enable TDE by using a locally signed SQL Server certificate. Make sure to back up the TDE certificate and its associated encryption key to the example local backup path of <em>C:\Backup</em>. The TDE certificate and key are required when recover the database or move the certificate and key to another server that has TDE encryption in place.</p>
 </div>
 <div>
 
 </div>
 <pre class="syntax" space="preserve"><code>USE master;
 GO
-CREATE MASTER KEY ENCRYPTION BY PASSWORD = &amp;amp;#39;P@55w0rd&#39;;
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = &#39;P@55w0rd&#39;;
 GO
 CREATE CERTIFICATE tdeCert WITH SUBJECT = &#39;TDE Certificate&#39;;
 GO
 BACKUP CERTIFICATE tdeCert TO FILE = &#39;C:\Backup\TDECertificate.cer&#39;
    WITH PRIVATE KEY (
          FILE = &#39;C:\Backup\TDECertificateKey.pvk&#39;,
-         ENCRYPTION BY PASSWORD = &amp;amp;#39;P@55w0rd&#39;);
+         ENCRYPTION BY PASSWORD = &#39;P@55w0rd&#39;);
 GO</code></pre></td>
 <td align="left"><p><a href="mbam-10-deployment-prerequisites.md" data-raw-source="[MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md)">MBAM 1.0 Deployment Prerequisites</a></p>
 <p><a href="https://go.microsoft.com/fwlink/?LinkId=269703" data-raw-source="[Database Encryption in SQL Server 2008 Enterprise Edition](https://go.microsoft.com/fwlink/?LinkId=269703)">Database Encryption in SQL Server 2008 Enterprise Edition</a></p></td>

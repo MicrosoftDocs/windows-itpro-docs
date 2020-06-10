@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Experience
-description: Policy CSP - Experience
+description: Learn the various Experience policy CSP for Cortana, Sync, Spotlight and more.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

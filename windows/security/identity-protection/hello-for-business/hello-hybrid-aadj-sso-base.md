@@ -33,6 +33,7 @@ Before adding Azure Active Directory (Azure AD) joined devices to your existing 
 - Certificate Revocation List (CRL) Distribution Point (CDP)
 - 2016 Domain Controllers
 - Domain Controller certificate
+- Network infrastructure in place to reach your on-premises domain controller. If the machines are external, this can be achieved using any VPN solution.
 
 ### Azure Active Directory Connect synchronization
 Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
@@ -293,6 +294,8 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
+> [!NOTE]
+> After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
 
 ## Configure Windows Hello for Business Device Enrollment
 

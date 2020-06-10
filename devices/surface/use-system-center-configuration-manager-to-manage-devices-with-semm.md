@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: laurawi
@@ -382,56 +382,11 @@ To configure Surface UEFI settings or permissions for Surface UEFI settings, you
 
 The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.
 
-The following tables show the available settings for Surface Pro 4 and later including Surface Pro 7, Surface Book, Surface Laptop 3, and Surface Go. 
+The best way to view the most current Setting names and IDs for devices is to use the ConfigureSEMM.ps1 script or the ConfigureSEMM - <device name>.ps1 from the SEMM_Powershell.zip in [Surface Tools for IT Downloads](https://www.microsoft.com/download/details.aspx?id=46703).
 
-*Table 1. Surface UEFI settings for Surface Pro 4*
+Setting names and IDs for all devices can be seen in the ConfigureSEMM.ps1 script.
 
-| Setting ID | Setting Name |	Description |	Default Setting |
-| --- | --- | --- | --- |
-|501|	Password | UEFI System Password	|   |
-|200|	Secure Boot Keys | Secure Boot signing keys to enable for EFI applications |	MsPlus3rdParty |
-|300|	Trusted Platform Module (TPM)	| TPM device enabled or disabled |	Enabled |
-|301|	Docking USB Port | Docking USB Port enabled or disabled |	Enabled |
-|302|	Front Camera | Front Camera enabled or disabled |	Enabled |
-|303|	Bluetooth | Bluetooth radio enabled or disabled	 | Enabled | 
-|304|	Rear Camera | Rear Camera enabled or disabled	| Enabled |
-|305|	IR Camera | InfraRed Camera enabled or disabled	 | Enabled |
-|308|	Wi-Fi and Bluetooth | Wi-Fi and Bluetooth enabled or disabled	 | Enabled |
-|310|	Type Cover | Surface Type Cover connector | Enabled |
-|320|	On-board Audio | On-board audio enabled or disabled	| Enabled |
-|330|	Micro SD Card | Micro SD Card enabled or disabled	| Enabled |
-|370|	USB Port 1 | Side USB Port (1) | UsbPortEnabled |
-|400|	IPv6 for PXE Boot | Enable IPv6 PXE boot before IPv4 PXE boot	|Disabled |
-|401|	Alternate Boot | Alternate Boot allows users to override the boot order by holding the volume down button when powering up the device	| Enabled |
-|402|	Boot Order Lock | Boot Order variable lock enabled or disabled	| Disabled |
-|403|	USB Boot | Enable booting from USB devices	| Enabled |
-|500|	TPM clear EFI protocol | Enable EFI protocol for invoking TPM clear	| Disabled |
-|600|	Security | UEFI Security Page Display enabled or disabled	| Enabled |
-|601|	Devices | UEFI Devices Page Display enabled or disabled	| Enabled |
-|602|	Boot | UEFI Boot Manager Page Display enabled or disabled	| Enabled |
-
-*Table 2. Surface UEFI settings for Surface Book*
-
-| Setting ID | Setting Name	| Description	| Default Setting |
-| --- | --- | --- | --- |
-| 501	| Password	| UEFI System Password |   |	
-| 200	| Secure Boot Keys | Secure Boot signing keys to enable for EFI applications	| MsPlus3rdParty |
-| 300	| Trusted Platform Module (TPM) | TPM device enabled or disabled | Enabled |
-| 301	| Docking USB Port | Docking USB Port enabled or disabled | Enabled |
-| 302	| Front Camera | Front Camera enabled or disabled | Enabled |
-| 303	| Bluetooth | Bluetooth radio enabled or disabled | Enabled |
-| 304	| Rear Camera | Rear Camera enabled or disabled | Enabled |
-| 305	| IR Camera | InfraRed Camera enabled or disabled | Enabled |
-| 308	| Wi-Fi and Bluetooth | Wi-Fi and Bluetooth enabled or disabled | Enabled |
-| 320	| On-board Audio | On-board audio enabled or disabled | Enabled |
-| 400	| IPv6 for PXE Boot	Enable | IPv6 PXE boot before IPv4 PXE boot | Disabled |
-| 401	| Alternate Boot | Alternate Boot allows users to override the boot order by holding the volume down button when powering up the device | Enabled |
-| 402	| Boot Order Lock | Boot Order variable lock enabled or disabled | Disabled |
-| 403	| USB Boot | Enable booting from USB devices | Enabled |
-| 500	| TPM clear EFI protocol | Enable EFI protocol for invoking TPM clear | Disabled |
-| 600	| Security | UEFI Security Page Display enabled or disabled | Enabled |
-| 601	| Devices | UEFI Devices Page Display enabled or disabled | Enabled |
-| 602	| Boot | UEFI Boot Manager Page Display enabled or disabled | Enabled |
+Setting names and IDs for specific devices can be seen in the ConfigureSEMM - <device name>.ps1 scripts. For example, setting names and IDs for Surface Pro X can be found in the ConfigureSEMM – ProX.ps1 script.
 
 ## Deploy SEMM Configuration Manager scripts
 

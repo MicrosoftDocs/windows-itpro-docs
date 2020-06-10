@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.localizationpriority: high
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.date: 4/15/2020
 ms.reviewer: jessko
@@ -139,10 +139,10 @@ The following tables show the availability of selected key features on Surface P
 | Endpoint Configuration Manager                                          | Yes               | Yes           |                                                                                       |
 | Power on When AC Restore                      | Yes                 | Yes           |                                                                                   |
 | Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           |                                                                                   |
-| Surface Dock Firmware Update                  | Yes                 | Yes           |                                                                                   |
+| Surface Dock Firmware Update                  | Yes                 | No           |                                                                                   |
 | Asset Tag Utility                             | Yes                 | Yes           |                                                                                   |
 | Surface Enterprise management Mode (SEMM)     | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
-| Surface UEFI Configurator                     | Yes |               | No option to disable hardware. on Surface Pro X at the firmware level.                |
+| Surface UEFI Configurator                     | Yes |   No            | No option to disable hardware. on Surface Pro X at the firmware level.                |
 | Surface UEFI Manager                          | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
 
 
