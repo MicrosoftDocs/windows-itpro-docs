@@ -72,10 +72,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
+            url: secure-surface-dock-ports-semm.md
           - text: Intune management of Surface UEFI settings
             url: surface-manage-dfci-guide.md
-          - text: Surface Enterprise Management Mode (SEMM)
-            url: surface-enterprise-management-mode.md
           - text: Surface Data Eraser tool
             url: microsoft-surface-data-eraser.md
  

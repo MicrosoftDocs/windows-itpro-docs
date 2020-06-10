@@ -30,7 +30,14 @@ ms.date: 04/16/2020
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
-Microsoft Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
+Microsoft Defender ATP supports non-persistent VDI session onboarding. 
+
+>[!Note]
+>To onboard non-persistent VDI sessions, VDI machines must be on Windows 10.
+>
+>While other Windows versions might work, only Windows 10 is supported.
+
+There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft Defender ATP prior to the actual provisioning.
 - The machine name is typically reused for new sessions.
