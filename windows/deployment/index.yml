@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/27/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -29,38 +29,12 @@ landingContent:
           - text: Windows 10 deployment scenarios
             url: windows-10-deployment-scenarios.md
 
-      - linkListType: quickstart
+      - linkListType: get-started
         links:
           - text: Demonstrate Autopilot deployment
             url: windows-autopilot/demonstrate-deployment-on-vm.md
           - text: Deploy Windows 10 in a test lab
             url: windows-10-poc.md
-      - linkListType: architecture
-        links:
-          - text: Windows 10 deployment considerations
-            url: planning/windows-10-deployment-considerations.md
-          - text: Windows 10 infrastructure requirements
-            url: planning/windows-10-infrastructure-requirements.md
-          - text: Windows 10 features lifecycle
-            url: planning/features-lifecycle.md
-          - text: Plan for volume activation
-            url: volume-activation/plan-for-volume-activation-client.md
-      - linkListType: how-to-guide
-        links:
-          - text: Prepare for Zero Touch Installation with Configuration Manager
-            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
-          - text: Prepare to deploy Windows 10 with MDT
-            url: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
-      - linkListType: deploy
-        links:
-          - text: Windows Autopilot scenarios and capabilities
-            url: windows-autopilot/windows-autopilot-scenarios.md
-          - text: Deploy Windows 10 to a new device with Configuration Manager
-            url: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
-          - text: Deploy a Windows 10 image using MDT
-            url: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
-          - text: Resolve Windows 10 upgrade errors
-            url: upgrade/resolve-windows-10-upgrade-errors.md
 
   # Card (optional)
   - title: Update Windows 10
@@ -75,6 +49,11 @@ landingContent:
         links:
           - text: Servicing the Windows 10 operating system
             url: update/waas-servicing-strategy-windows-10-updates.md
+
+
+  # Card (optional)
+  - title: Deployment planning
+    linkLists:
       - linkListType: architecture
         links:
           - text: Create a deployment plan
@@ -87,61 +66,52 @@ landingContent:
             url: update/plan-determine-app-readiness.md
           - text: Define your servicing strategy
             url: update/waas-servicing-strategy-windows-10-updates.md
+ 
+   # Card
+  - title: Prepare to deploy Windows 10
+    linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Prepare for Zero Touch Installation with Configuration Manager
+            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          - text: Prepare to deploy Windows 10 with MDT
+            url: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
           - text: Evaluate and update infrastructure
             url: update/update-policies.md
           - text: Build a successful servicing strategy
             url: update/waas-deployment-rings-windows-10-updates.md
+
+  # Card
+  - title: Deploy and update Windows 10
+    linkLists:
       - linkListType: deploy
         links:
+          - text: Windows Autopilot scenarios and capabilities
+            url: windows-autopilot/windows-autopilot-scenarios.md
+          - text: Deploy Windows 10 to a new device with Configuration Manager
+            url: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
+          - text: Deploy a Windows 10 image using MDT
+            url: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
           - text: Deploy Windows 10 updates
             url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Troubleshoot Windows Update
-            url: update/windows-update-troubleshooting.md
+          - text: Resolve Windows 10 upgrade errors
+            url: upgrade/resolve-windows-10-upgrade-errors.md          
 
   # Card (optional)
-  - title: Resources
+  - title: Windows 10 resources
     linkLists:
       - linkListType: reference
-        links:
-          - text: How does Windows Update work?
-            url: update/how-windows-update-works.md
-          - text: Unified Update Platform (UUP) architecture
-            url: update/windows-update-overview.md#unified-update-platform-uup-architecture
-          - text: Servicing stack updates
-            url: update/servicing-stack-updates.md
-          - text: Manage additional Windows Update setings
-            url: update/waas-wu-settings.md
-          - text: Delivery Optimization reference
-            url: update/waas-delivery-optimization-reference.md
-          - text: Convert an MBR partition to GPT
-            url: mbr-to-gpt.md
-          - text: VAMT technical reference
-            url: volume-activation/volume-activation-management-tool.md
-          - text: User State Migration Tool (USMT) overview
-            url: usmt/usmt-overview.md  
-      - linkListType: learn
         links:
           - text: Windows 10 release information
             url: https://docs.microsoft.com/windows/release-information/
           - text: What's new in Windows 10
             url: https://docs.microsoft.com/windows/whats-new/
-          - text: Microsoft 365 for enterprise documention
-            url: https://docs.microsoft.com/microsoft-365/enterprise/
-          - text: Microsoft Surface documentation
-            url: https://docs.microsoft.com/surface/
-          - text: Evaluate Windows 10 Enterprise
-            url: https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
-          - text: Microsoft FastTrack cloud solutions
-            url: https://www.microsoft.com/fasttrack/
-          - text: Microsoft Intune documentation
-            url: https://docs.microsoft.com/mem/intune/
-          - text: Microsoft Endpoint Configuration Manager documentation
-            url: https://docs.microsoft.com/mem/configmgr/   
           - text: Windows 10 Enterprise Security
             url: https://docs.microsoft.com/windows/security/
           - text: Desktop Deployment Center
             url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
+          - text: Microsoft 365 solution and architecture center
+            url: https://docs.microsoft.com/microsoft-365/solutions/?view=o365-worldwide
+
