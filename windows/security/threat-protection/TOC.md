@@ -594,11 +594,11 @@
 #### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
 ### [Migration guides]()
-#### [Migrate from Symantec to Microsoft Defender Advanced Threat Protection]()
+#### [Migrate from Symantec to Microsoft Defender ATP]()
 ##### [Overview](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
-##### [Migrate from Symantec - Part 1](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part1.md)
-##### [Migrate from Symantec - Part 2](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part2.md)
-##### [Migrate from Symantec - Part 3](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part3.md)
+##### [Part 1: Get Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part1.md)
+##### [Part 2: Configure settings and exclusions](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part2.md)
+##### [Part 3: Finish making the switch](microsoft-defender-atp/symantec-to-microsoft-defender-atp-part3.md)
 #### [Managing Microsoft Defender ATP after migration](microsoft-defender-atp/microsoft-defender-atp-post-migration-management.md)
 
 ### [Partner integration scenarios]()
