@@ -24,15 +24,15 @@ ms.topic: article
 
 
 
-## Step 4: Set Microsoft Defender ATP to passive mode
+## Set Microsoft Defender ATP to passive mode
 
-## Step 5: Re-enable Microsoft Defender Antivirus
+## Re-enable Microsoft Defender Antivirus
 
-## Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec
+## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
 
 Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
 
-## Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list
+## Add Symantec to your Microsoft Defender ATP EDR exclusion list
 
 Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
 
