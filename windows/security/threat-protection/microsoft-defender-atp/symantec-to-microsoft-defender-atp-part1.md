@@ -1,6 +1,6 @@
 ---
-title: Part 1 - Migrating from Symantec to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+title: Part 1 - Get Microsoft Defender ATP started
+description: Part 1 of "Make the switch from Symantec to Microsoft Defender ATP"
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,10 +17,15 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Part 1
+# Migrate from Symantec - Part 1 - Get Microsoft Defender ATP started
 
 | [Overview](symantec-to-microsoft-defender-atp-migration.md)  | Part 1 <br/>*You are here!* | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
+
+Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process-at-a-high-level) includes the following steps:
+1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
+2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
+3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings) 
 
 ## Get Microsoft Defender ATP
 
@@ -45,11 +50,8 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 2. Set up and configure RBAC. You can choose from one of several different methods. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), especially if your organization is using Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
     Depending on your organization's needs, you can use a different method, such as one of the following:
-    
     - [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-    
     - [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm)
-    
     - [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview)
 
 3. After your roles are defined and RBAC is set up, grant access to the Microsoft Defender Security Center. See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
