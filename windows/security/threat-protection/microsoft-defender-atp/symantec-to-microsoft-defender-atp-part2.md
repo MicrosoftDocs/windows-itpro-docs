@@ -1,5 +1,5 @@
 ---
-title: Migrate from Symantec to Microsoft Defender ATP
+title: Part 2 - Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection
 description: Part 2 - Make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -17,9 +17,9 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Part 2
+# Migrate from Symantec - Part 2: Configure settings and exclusions
 
-| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  | Part 2<br/>*You are here!* | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
+| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | [Part 1](symantec-to-microsoft-defender-atp-part1.md)  | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | Part 3 <br/>*You are here!*| [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
 
 

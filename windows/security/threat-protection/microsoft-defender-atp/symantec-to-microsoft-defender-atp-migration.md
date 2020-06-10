@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Overview 
+# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Overview and Planning
 
 | Overview <br/>You are here! | Part 1 | Part 2 | Part 3 | Post migration |
 |--|--|--|--|--|

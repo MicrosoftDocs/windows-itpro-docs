@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 1 - Get Microsoft Defender ATP started
+# Migrate from Symantec - Part 1: Get Microsoft Defender ATP started
 
 | [Overview](symantec-to-microsoft-defender-atp-migration.md)  | Part 1 <br/>*You are here!* | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
 |--|--|--|--|--|
@@ -108,6 +108,10 @@ https://eu-cdn.x.cp.wd.microsoft.com/
 https://wu-cdn.x.cp.wd.microsoft.com/
 https://x.cp.wd.microsoft.com/api/
 
+
+## Next step
+
+- [Migrate from Symantec - Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-part2.md)
 
 ## Related articles
 
