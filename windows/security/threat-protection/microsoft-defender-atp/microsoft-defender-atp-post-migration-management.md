@@ -19,9 +19,9 @@ ms.topic: article
 
 # Manage Microsoft Defender ATP, post migration
 
-## Manage Microsoft Defender ATP
+After you have moved from your previous threat protection solution to Microsoft Defender ATP, you can choose from several methods to manage your features and capabilities. 
 
-After you have moved from a non-Microsoft threat protection solution to Microsoft Defender ATP, you can choose from several methods to manage your features and capabilities. We recommend using Intune. The following table lists various tasks and resources to manage features and capabilities of Microsoft Defender ATP with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
+We recommend using [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune). The following table lists various tasks and resources to manage features and capabilities of Microsoft Defender ATP with Intune.
 
 |Task | Resources to learn more |
 |---|---|
@@ -30,6 +30,11 @@ After you have moved from a non-Microsoft threat protection solution to Microsof
 |Specify exclusions for Microsoft Defender Antivirus|[Device restrictions: Microsoft Defender Antivirus Exclusions](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<br/><br/>[Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-server-exclusions-windows-defender-antivirus)<br/><br/>[Microsoft Antivirus Exclusion List (Windows Server)](https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx) |
 |Manage attack surface reduction rules <br/><br/>(A sample Power BI dashboard is available to review your attack surface reduction rules. [Get the template here](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules).)|[Endpoint protection: Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=%2Fintune%2Fconfiguration%2Ftoc.json&bc=%2Fintune%2Fconfiguration%2Fbreadcrumb%2Ftoc.json#attack-surface-reduction-rules)<br/><br/>|
 |Manage network protection   |*more to come*   |
+
+## Additional methods
+
+In addition to using Intune to manage Microsoft Defender ATP, you can choose from other options. These include the following:
+
 
 ## Related articles
 
