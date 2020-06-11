@@ -58,7 +58,7 @@ Once you are in the Software inventory page and have opened the flyout panel by 
 
 ## Software evidence
 
-We now show evidence of where we detected a specific software on a device from the registry, disk or both device on where we detected a certain software.
+We now show evidence of where we detected a specific software on a device from the registry, disk or both.
 You can find it on any devices found in the [devices list](machines-view-overview.md) in a section called "Software Evidence."
 
 From the Microsoft Defender Security Center navigation panel, go to **Devices list** > select the name of a device to open the device page (like Computer1) > select the **Software inventory** tab > select the software name to open the flyout and view software evidence.
