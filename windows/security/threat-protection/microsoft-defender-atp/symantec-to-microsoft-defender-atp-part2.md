@@ -29,7 +29,15 @@ ms.topic: article
 
 *This is from the Word doc - needs revision and clarification*
 
-Set the registry key for Passive Mode in Windows Server 2016, Windows Server, 1803 (Core only mode) and Windows Server 2019.
+*QUESTION: How/why are we changing registry keys when we haven't onboarded these devices yet? Am I missing something?*
+
+This procedure applies to devices running any of the following versions of Windows:
+- Windows Server 2016
+- Windows Server, version 1803 (core-only mode)
+- Windows Server 2019
+
+For those versions of Windows, you should set the registry key for Microsoft Defender ATP to passive mode. 
+
 HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 ForceDefenderPassiveMode (dword) 1 (hex)
 Note:  You can use “Group Policy Preference” (GPP) or LGPO or a “Package” in SCCM.
