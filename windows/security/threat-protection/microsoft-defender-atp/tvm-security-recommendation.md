@@ -85,7 +85,7 @@ Select the security recommendation that you want to investigate or process.
 
 From the flyout, you can do any of the following:
 
-- **Open software page** - Open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, software or software version end-of-support, and charts of the exposure trend over time.
+- **Open software page** - Open the software page to get more context on the software and how it is distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
 - **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
