@@ -20,7 +20,7 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 
-In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (e.g. Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (e.g. M.2 slots)
+In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (e.g., Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (e.g., M.2 slots)
 
 Drive-by DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely.
 
@@ -34,7 +34,7 @@ PCI devices are DMA-capable, which allows them to read and write to system memor
 The DMA capability is what makes PCI devices the highest performing devices available today. 
 These devices have historically existed only inside the PC chassis, either connected as a card or soldered on the motherboard. 
 Access to these devices required the user to turn off power to the system and disassemble the chassis. 
-Today, this is no longer the case with hot plug PCIe ports (e.g. Thunderbolt™ and CFexpress). 
+Today, this is no longer the case with hot plug PCIe ports (e.g., Thunderbolt™ and CFexpress). 
 
 Hot plug PCIe ports such as Thunderbolt™ technology have provided modern PCs with extensibility that was not available before for PCs. 
 It allows users to attach new classes of external peripherals, such as graphics cards or other PCI devices, to their PCs with a hot plug experience identical to USB. 
@@ -47,7 +47,7 @@ A simple example would be a PC owner leaves the PC for a quick coffee break, and
 
 Windows leverages the system Input/Output Memory Management Unit (IOMMU) to block external peripherals from starting and performing DMA unless the drivers for these peripherals support memory isolation (such as DMA-remapping). 
 Peripherals with [DMA Remapping compatible drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
-By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using the [DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies)
+By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using the [DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies).
 
 ## User experience
 
@@ -110,7 +110,7 @@ Please check the driver instance for the device you are testing. Some drivers ma
 ![Kernel DMA protection user experience](images/device-details-tab.png)
 
 ### What should I do if the drivers for my PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
-If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)
+If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
 ### Do Microsoft drivers support DMA-remapping?
 In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA Remapping.
 
