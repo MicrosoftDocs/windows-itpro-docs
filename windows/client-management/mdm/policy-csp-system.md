@@ -1069,6 +1069,11 @@ ADMX Info:
 -   GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+-   0 (default) - Enable telemetry change notifications
+-   1 - Disable telemetry change notifications
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -1124,7 +1129,7 @@ If you set this policy setting to "Disable Telemetry opt-in Settings", telemetry
 If you set this policy setting to "Enable Telemetry opt-in Settings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
 
 > [!Note]
-> Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
+> Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's acceptable level of data disclosure.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1136,6 +1141,11 @@ ADMX Info:
 -   GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+-   0 (default) - Enable Telemetry opt-in Settings
+-   1 - Disable Telemetry opt-in Settings
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
