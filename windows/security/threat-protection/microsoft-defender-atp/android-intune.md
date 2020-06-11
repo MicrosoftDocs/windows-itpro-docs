@@ -198,6 +198,39 @@ Defender ATP should be visible in the apps list.
     ![Image of list of Android apps](images/fa4ac18a6333335db3775630b8e6b353.png)
 
 
+9. Microsoft Defender ATP supports App configuration policies for managed devices via Intune. This capability can be leveraged to auto-grant applicable Android permission(s), so the end user does not need to accept these permission(s).
+
+    a. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
+
+    ![Image of Microsoft Endpoint Manager admin center](images/android-mem.png)
+
+    b. In the **Create app configuration policy** page, enter the following details:
+        - Name: Microsoft Defender ATP.
+        - Choose **Android Enterprise** as platform.
+        - Choose **Work Profile only** as Profile Type.
+        - Click **Select App**, choose **Microsoft Defender ATP**, select **OK** and then **Next**.
+    
+    ![Image of create app configuration policy page](images/android-create-app.png)
+
+    c. In the **Settings** page, go to the Permissions section click on Add to view the list of supported permissions. In the Add Permissions section, select the following permissions 
+
+       - External storage (read)
+       - External storage (write)
+
+        Then select **OK**.
+
+    ![Image of create app configuration policy](images/android-create-app-config.png)
+
+    
+    d. You should now see both the permissions listed and now you can auto-grant both by choosing auto-grant in the **Permission state** drop down and then select **Next**.
+
+     ![Image of create app configuration policy](images/android-auto-grant.png)
+
+
+    e. 
+
+
+
 9. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
 
