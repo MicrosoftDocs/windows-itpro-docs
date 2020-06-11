@@ -135,7 +135,7 @@ Currently only Work Profile, Fully Managed devices are supported for deployment.
 
 
 >[!NOTE]
->During Public Preview, to access Microsoft Defender ATP in your managed Google Play, contact atpm@microsoft.com with the organization ID of your managed Google Play for next steps. This can be found under the **Admin Settings** of [managed Google Play](https://play.google.com/work/).<br>
+>During Public Preview, to access Microsoft Defender ATP in your managed Google Play, contact [atpm@microsoft.com](mailto:atpm@microsoft.com) with the organization ID of your managed Google Play for next steps. This can be found under the **Admin Settings** of [managed Google Play](https://play.google.com/work/).<br>
 > At General Availability (GA), Microsoft Defender ATP for Android will be available as a public app. Upgrades from preview to GA version will be supported.
 
 ## Add Microsoft Defender ATP for Android as a managed Google Play app
