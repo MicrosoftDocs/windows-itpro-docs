@@ -55,8 +55,7 @@ Recommendation:
 Needs to be set to 0 (hex) which means it’s enabled in order to work.
 Requires a reboot.
 
-<Future item:  Add a CMPivot query that provides the results of the entry>
-
+Future item:  Add a CMPivot query that provides the results of the entry
 
 Reference(s):
 Use Group Policy settings to configure and manage Windows Defender Antivirus
@@ -68,7 +67,6 @@ https://docs.microsoft.com/en-us/intune-user-help/turn-on-defender-windows
 ## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
 
 *This is from the Word doc - needs revision and clarification*
-
 
 Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
 
@@ -99,6 +97,9 @@ Note:  Where Monitoring Host Temporary Files 6\45 can be different numbered subf
 
 ## Add Symantec to your Microsoft Defender ATP EDR exclusion list
 
+*This is from the Word doc - needs revision and clarification*
+
+
 Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
 
 For MDATP (AV and EDR), there are two portions to ‘exclude’ 3rd party security products.
@@ -109,7 +110,109 @@ Process exclusion vs Path exclusion...
  
 2.	And add in EDR, go to Indicator – File Hash.
 
+### MDAV/SCEP
 
+#### Option 1: In the Intune MDAV policies add the exclusions
+ 
+Intune portal (portal.azure.com)
+Device Configuration -> Profiles -> [Select your profile for AV] -> Properties -> Settings -> Microsoft Defender Antivirus -> Microsoft Defender Antivirus Exclusions 
+ 
+Files and folders
+       xxxxx
+ 
+Processes
+       xxxxx
+ 
+
+#### Option 2: In the SCCM MDAV/SCEP policies add the exclusions
+
+Assets and Compliance -> Endpoint Protection -> Antimalware Policies -> [Select the policy that you want to modify] -> Exclusion Settings  
+Excluded files and folders:
+xxxxx
+Excluded processes:
+xxxxx
+
+
+#### Option 3: Create a new GPO w/ the MDAV exclusions
+
+Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions
+Path Exclusions
+    xxxxx
+Process Exclusions
+    xxxxx
+
+#### Option 4: Local gpo
+
+You could setup the 3rd party security product exclusions (SEP or Tanium) on 1 machine by going to:
+              Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions
+              Path Exclusions
+                           xxxxx
+              Process Exclusions
+                           xxxxx
+
+#### Option 5: Export the following registry key:
+ 
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions
+ 
+And import it in as a “regedit.exe /s MDAV_Exclusion.reg”
+
+### MD ATP (EDR)
+
+Indicators – Hash
+Settings -> Indicators ->File hashes tab -> Add indicator
+In the “Indicator” tab
+File hash
+Never
+Click on Next 
+In the “Action” tab
+Response Action: Allow
+Title:
+Description:
+Click on Next
+In the “Scope” tab
+Machine groups:
+All machines in my scope
+or
+Select from list
+Click on Next
+In the “Summary” tab
+Review
+Click on “Save”
+
+*More notes in the Word document:*
+
+How can I find the file hashes of my 3rd party security products?
+There are a few methods, in this e-mail, we will talk about the MDATP “Advanced Hunting” functionality and SCCM’s CMPivot.
+ 
+MDATP “Advanced Hunting”
+ 
+Note:  Change the “Last 7 days” to “Last 30 days”
+ 
+find in (FileCreationEvents, ProcessCreationEvents, MiscEvents, RegistryEvents, NetworkCommunicationEvents, ImageLoadEvents)
+where InitiatingProcessFileName has 'notepad.exe'
+| project EventTime, ComputerName, InitiatingProcessSHA256, InitiatingProcessFolderPath, InitiatingProcessCommandLine
+| distinct InitiatingProcessSHA256
+Note:    Replace notepad.exe with the 3rd party security product process name.
+Note 2:  We added ‘distinct’ query which shows just the unique SHA256’s.
+              
+SCCM CMPivot
+ 
+Pre-req
+Install CMPivot
+C:\Program Files\Microsoft Configuration Manager\tools\CMPivot \cmpivot.msi
+ 
+Start, CMPivot (Run as admin)
+Connect to your SCCM server (SCCM_ServerName.DomainName.com)
+Click on Connect
+ 
+Click on the “Query tab”
+ 
+Select the “Device Collection” (drop down, All Systems (default)).
+Type:
+File(c:\\windows\\notepad.exe)
+| project Hash
+
+<br/><br/><br/><br/>
 
 **Congratulations**! You have completed part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
