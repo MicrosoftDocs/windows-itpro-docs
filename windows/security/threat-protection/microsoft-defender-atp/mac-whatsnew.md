@@ -28,8 +28,10 @@ ms.topic: conceptual
 
 ## 101.00.31
 
+- Improved [product onboarding experience for Intune users](https://docs.microsoft.com/en-us/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)
 - Added the ability to trigger antivirus scans from the macOS contextual menu. You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender ATP**
+- In-place product downgrades are now explictily disallowed by the installer. If you need to downgrade, first uninstall the existing version and reconfigure your device
 - Other performance improvements & bug fixes
 
 ## 100.90.27
