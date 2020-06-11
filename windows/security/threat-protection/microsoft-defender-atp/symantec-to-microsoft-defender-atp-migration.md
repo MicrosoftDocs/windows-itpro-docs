@@ -28,7 +28,7 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 |Phase |Steps |
 |--|--|
 |[Part 1: Get Microsoft Defender ATP started](symantec-to-microsoft-defender-atp-part1.md) |Step 1: Get Microsoft Defender ATP<br/><br/>Step 2: Grant access to the Microsoft Defender Security Center<br/><br/>Step 3: Configure device proxy and internet connectivity settings |
-|[Part 2: Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection](symantec-to-microsoft-defender-atp-part2.md) |Step 4: Set Microsoft Defender ATP to passive mode<br/><br/>Step 5: Re-enable Microsoft Defender Antivirus <br/><br/>Step 6: Add Microsoft Defender ATP EDR to the exclusion list for Symantec<br/><br/>Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list |
+|[Part 2: Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection](symantec-to-microsoft-defender-atp-part2.md) |Step 4: Set Microsoft Defender ATP to passive mode<br/><br/>Step 5: Re-enable Microsoft Defender Antivirus <br/><br/>Step 6: Add Microsoft Defender ATP endpoint detection and response (EDR) capabilities to your exclusion list for Symantec<br/><br/>Step 7: Add Symantec to your Microsoft Defender ATP EDR exclusion list |
 |[Part 3: Finish making the switch to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-part3.md) | Step 8: Set up your device groups, device collections, and organizational units<br/><br/>Step 9: Deploy Microsoft Defender ATP and uninstall Symantec<br/><br/>Step 10: Onboard devices to Microsoft Defender ATP |
 
 After you have Microsoft Defender ATP set up and deployed, you can [manage the various features and capabilities](microsoft-defender-atp-post-migration-management.md).
