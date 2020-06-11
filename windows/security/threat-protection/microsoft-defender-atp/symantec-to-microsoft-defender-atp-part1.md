@@ -19,13 +19,10 @@ ms.topic: article
 
 # Migrate from Symantec - Part 1: Get Microsoft Defender ATP started
 
-| [Overview](symantec-to-microsoft-defender-atp-migration.md)  | Part 1 <br/>*You are here!* | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration<br/>management](microsoft-defender-atp-post-migration-management.md) |
-|--|--|--|--|--|
-
 Welcome to Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level). This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
 2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
-3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings) 
+3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
 ## Get Microsoft Defender ATP
 
@@ -68,17 +65,17 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 |EDR |Windows 7 SP1 <br/>Windows Server 2008 R2 SP1 <br/>Windows 8.1 <br/>Windows Server 2012 R2<br/>Windows Server 2016 |[Configure proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
 |EDR  |macOS <br/>10.15 (Catalina) <br/>10.14 (Mojave) <br/>10.13 (High Sierra)  |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
 |EDR |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) |
-|Microsoft Defender Antivirus (Microsoft Defender AV) |Windows |[Configure and validate Microsoft Defender Antivirus network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-|Antivirus |macOS |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
-|Antivirus |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) 
+|Antivirus (AV) |Windows |[Configure and validate Microsoft Defender Antivirus network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
+|AV |macOS |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
+|AV |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) 
 
+
+Congratulations! You have completed part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 ## Next step
 
-- [Migrate from Symantec - Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-part2.md)
+- [Proceed to Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-part2.md)
 
-## Related articles
 
-[Microsoft Defender ATP deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
 
 
