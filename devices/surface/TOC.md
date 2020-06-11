@@ -62,6 +62,7 @@
 ### [Secure Surface Dock 2 ports with SEMM](secure-surface-dock-ports-semm.md)
 ### [Use Microsoft Endpoint Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 ### [Surface Data Eraser](microsoft-surface-data-eraser.md)
+### [Surface DMA Protection](dma-protect.md)
 
 ## Troubleshoot
 ### [Top support solutions for Surface devices](support-solutions-surface.md)

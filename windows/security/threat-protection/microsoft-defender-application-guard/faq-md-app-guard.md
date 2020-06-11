@@ -91,7 +91,6 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-
 Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT").  
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
