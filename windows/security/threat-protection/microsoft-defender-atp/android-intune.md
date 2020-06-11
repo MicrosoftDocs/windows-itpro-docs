@@ -227,17 +227,26 @@ Defender ATP should be visible in the apps list.
      ![Image of create app configuration policy](images/android-auto-grant.png)
 
 
-    e. 
+    e. In the **Assignments** page, select the user group to which this app config policy would be assigned to. This can be done by clicking **Select groups to include** and selecting the applicable group and then selecting **Next**.  The group selected here is usually the same group to which you would assign Microsoft Defender ATP Android app. 
+
+       ![Image of create app configuration policy](images/android-select-group.png)
+    
+
+     f. In the **Review + Create** page that comes up next, review all the information and then select **Create**. <br>
+    
+        The app configuration policy for Microsoft Defender ATP auto-granting the storage permission would now be assigned to the selected user group.
+
+        ![Image of create app configuration policy](images/android-review-create.png)
 
 
 
-9. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
+10. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
 
     ![Image of list of apps](images/9336bbd778cff5e666328bb3db7c76fd.png)
 
 
-10. Assign the app as a *Required* app to a user group so
+11. Assign the app as a *Required* app to a user group so
 that it is automatically installed in the *work profile* during the next sync of
 the device via Company Portal app. This assignment can be done by navigating to
 the *Required* section \> **Add group,** selecting the user group and click
@@ -246,7 +255,7 @@ the *Required* section \> **Add group,** selecting the user group and click
     ![Image of edit application page](images/ea06643280075f16265a596fb9a96042.png)
 
 
-11. In the **Edit Application** page, review all the information that was entered
+12. In the **Edit Application** page, review all the information that was entered
 above and then select **Review + Save** and then **Save** again to commence
 assignment.
 
