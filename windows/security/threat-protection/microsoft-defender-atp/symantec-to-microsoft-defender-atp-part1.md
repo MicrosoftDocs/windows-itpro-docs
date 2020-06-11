@@ -19,7 +19,7 @@ ms.topic: article
 
 # Migrate from Symantec - Part 1: Get Microsoft Defender ATP started
 
-Welcome to Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level). This migration phase includes the following steps:
+**Welcome to Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
 2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
@@ -46,9 +46,9 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control).
 
-2. Set up and configure RBAC. You can choose from one of several different methods. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune), especially if your organization is using Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+2. Set up and configure RBAC. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to do this, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
-    Although we recommend using Intune, you can use a different method to suit your organization's needs. Other methods include the following:
+    If your organization requires a method other than Intune, choose one of the following options:
     - [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview)
@@ -59,7 +59,7 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 To enable communication between your devices and Microsoft Defender ATP, configure proxy and internet settings. These settings should be configured for certain capabilities in Microsoft Defender ATP and for certain operating systems, as listed in the following table:
 
-| Features/Capabilities  | Operating System | Resources to learn more |
+|Capabilities  | Operating System | Resources |
 |--|--|--|
 |Endpoint detection and response (EDR) | Windows 10 <br/>Windows Server 1803 or later <br/>Windows Server 2019 |[Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet) |
 |EDR |Windows 7 SP1 <br/>Windows Server 2008 R2 SP1 <br/>Windows 8.1 <br/>Windows Server 2012 R2<br/>Windows Server 2016 |[Configure proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
@@ -70,7 +70,7 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 |AV |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) 
 
 
-Congratulations! You have completed part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
+**Congratulations**! You have completed part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 ## Next step
 
