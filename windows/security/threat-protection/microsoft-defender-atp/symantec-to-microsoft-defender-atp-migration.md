@@ -23,9 +23,6 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-| Overview <br/>*You are here!* | [Part 1](symantec-to-microsoft-defender-atp-part1.md) | [Part 2](symantec-to-microsoft-defender-atp-part2.md) | [Part 3](symantec-to-microsoft-defender-atp-part3.md) | [Post migration <br/>management](microsoft-defender-atp-post-migration-management.md) |
-|--|--|--|--|--|
-
 If you are planning to switch from Symantec Endpoint Protection to [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## Planning for migration: The process at a high level
