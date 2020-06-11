@@ -164,7 +164,7 @@ On Windows 10, version 1709 or later, you'll have additional control over the ne
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of isolate device](images/isolate-machine.png)
+![Image of isolate device](images/isolate-device.png)
 
 >[!NOTE]
 >The device will remain connected to the Microsoft Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.

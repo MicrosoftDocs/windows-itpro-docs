@@ -59,25 +59,23 @@ For more information see, [Alerts overview](alerts-queue.md).
 Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md) and [Alerts overview](alerts-queue.md).
 
 
-
 ## Devices at risk
 This tile shows you a list of devices with the highest number of active alerts. The total number of alerts for each device is shown in a circle next to the device name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Devices at risk tile shows a list of devices with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk-tile.png)
+![The Devices at risk tile shows a list of devices with the highest number of alerts, and a breakdown of the severity of the alerts](images/devices-at-risk-tile.png)
 
 Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
-You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
+You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
-## Sensor health
-The **Sensor health** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many devices require attention and helps you identify problematic devices.
+## Devices with sensor issues
+The **Devices with sensor issues** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many devices require attention and helps you identify problematic devices.
 
-![Sensor health tile](images/atp-tile-sensor-health.png)
+![Devices with sensor issues tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of devices that are not reporting properly to the service:
 - **Misconfigured** – These devices might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
 - **Inactive** - Devices that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
-
 
 When you click any of the groups, you’ll be directed to devices list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status.md) and [Investigate devices](investigate-machines.md).
 
@@ -92,8 +90,7 @@ For more information on the service health, see [Check the Microsoft Defender AT
 ## Daily devices reporting
 The **Daily devices reporting** tile shows a bar graph that represents the number of devices reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of devices reporting in each day.
 
-![Image of daily devices reporting tile](images/atp-daily-machines-reporting.png)
-
+![Image of daily devices reporting tile](images/atp-daily-devices-reporting.png)
 
 
 ## Active automated investigations

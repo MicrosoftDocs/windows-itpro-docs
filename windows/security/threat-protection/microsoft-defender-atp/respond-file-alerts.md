@@ -172,7 +172,7 @@ Selecting **Download file** from the response actions allows you to download a l
 
 When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you are downloading the file. You can also set a password to open the file.
 
-![Image of download file fly-out](images/atp-download-file.png)
+![Image of download file fly-out](images/atp-download-file-reason.png)
 
 If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
 
