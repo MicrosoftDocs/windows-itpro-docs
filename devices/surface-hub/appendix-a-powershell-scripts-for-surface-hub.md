@@ -50,8 +50,8 @@ What do you need in order to run the scripts?
 -   Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 -   Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 
->[!NOTE]
->Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
+> [!NOTE]
+> Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
 
 ## Running the scripts
 
@@ -297,8 +297,8 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessLync -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
->[!Note]
->These exchange commandlets do not always throw their errors as exceptions
+> [!Note]
+> These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -664,8 +664,8 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessCS -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
->[!Note]
->These exchange commandlets do not always throw their errors as exceptions
+> [!Note]
+> These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -1662,8 +1662,8 @@ Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 
 For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests. Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.
 
->[!Note]
->If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
+> [!Note]
+> If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true

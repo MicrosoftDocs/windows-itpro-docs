@@ -54,8 +54,8 @@ The following topics describe the end-to-end enrollment process using various au
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
->[!Note]  
->As a best practice, do not use hardcoded server-side checks on values such as:
+> [!Note]  
+> As a best practice, do not use hardcoded server-side checks on values such as:
 > -   User agent string
 > -   Any fixed URIs that are passed during enrollment
 > -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
@@ -292,9 +292,3 @@ TraceID is a freeform text node which is logged. It should identify the server s
 -   [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
-
-
-
-
-
-

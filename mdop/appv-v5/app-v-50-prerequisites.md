@@ -18,8 +18,8 @@ ms.date: 08/30/2016
 
 Before you begin the Microsoft Application Virtualization (App-V) 5.0 Setup, you should make sure that you have met the prerequisites to install the product. This topic contains information to help you successfully plan for preparing your computing environment before you deploy the App-V 5.0 features.
 
->[!Important]
->**The prerequisites in this article apply only to App-V 5.0**. For additional prerequisites that apply to App-V 5.0 Service Packs, see the following web pages:
+> [!Important]
+> **The prerequisites in this article apply only to App-V 5.0**. For additional prerequisites that apply to App-V 5.0 Service Packs, see the following web pages:
 
 -   [What's new in App-V 5.0 SP1](whats-new-in-app-v-50-sp1.md)
 
@@ -68,8 +68,8 @@ The following table lists prerequisite information that pertains to specific ope
 
 ## Installation prerequisites for App-V 5.0
 
->[!Note]  
->The following prerequisites are already installed for computers that run Windows 8.
+> [!Note]  
+> The following prerequisites are already installed for computers that run Windows 8.
 
 Each of the App-V 5.0 features have specific prerequisites that must be met before the App-V 5.0 features can be successfully installed.
 
@@ -126,8 +126,8 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 
 ### Prerequisites for the App-V 5.0 Remote Desktop Services client
 
->[!Note]  
->The following prerequisites are already installed for computers that run Windows Server 2012.
+> [!Note]  
+> The following prerequisites are already installed for computers that run Windows Server 2012.
 
 The following table lists the installation prerequisites for the App-V 5.0 Remote Desktop Services client:
 
@@ -180,13 +180,13 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 
 ### Prerequisites for the App-V 5.0 Sequencer
 
->[!Note]
->The following prerequisites are already installed for computers that run Windows 8 and Windows Server 2012.
+> [!Note]
+> The following prerequisites are already installed for computers that run Windows 8 and Windows Server 2012.
 
 The following table lists the installation prerequisites for the App-V 5.0 Sequencer. If possible, the computer that runs the Sequencer should have the same hardware and software configurations as the computers that will run the virtual applications.
 
->[!Note]  
->If the system requirements of a locally installed application exceed the requirements of the Sequencer, you must meet the requirements of that application. Additionally, because the sequencing process is system resource-intensive, we recommend that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive. For more information see [App-V 5.0 Supported Configurations](app-v-50-supported-configurations.md).
+> [!Note]  
+> If the system requirements of a locally installed application exceed the requirements of the Sequencer, you must meet the requirements of that application. Additionally, because the sequencing process is system resource-intensive, we recommend that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive. For more information see [App-V 5.0 Supported Configurations](app-v-50-supported-configurations.md).
 
 <table>
 <colgroup>
@@ -227,8 +227,8 @@ The following table lists the installation prerequisites for the App-V 5.0 Seque
 
 ### Prerequisites for the App-V 5.0 server
 
->[!Note]
->The following prerequisites are already installed for computers that run Windows Server 2012:
+> [!Note]
+> The following prerequisites are already installed for computers that run Windows Server 2012:
 
 -   Microsoft .NET Framework 4.5. This eliminates the Microsoft .NET Framework 4 requirement.
 
@@ -236,18 +236,18 @@ The following table lists the installation prerequisites for the App-V 5.0 Seque
 
 -   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (https://support.microsoft.com/kb/2533623)
 
-    >[!Important]
-    >You can still download install the previous KB. However, it may have been replaced with a more recent version.
+    > [!Important]
+    > You can still download install the previous KB. However, it may have been replaced with a more recent version.
 
 The following table lists the installation prerequisites for the App-V 5.0 server. The account that you use to install the server components must have administrative rights on the computer that you are installing on. This account must also have the ability to query Active Directory Directory Services. Before you install and configure the App-V 5.0 servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to the specified ports.
 
->[!Note]
->Web Distributed Authoring and Versioning (WebDAV) is automatically disabled for the Management Service.
+> [!Note]
+> Web Distributed Authoring and Versioning (WebDAV) is automatically disabled for the Management Service.
 
 The App-V 5.0 server is supported for a standalone deployment, where all the components are deployed on the same server, and a distributed deployment. Depending on the topology that you use to deploy the App-V 5.0 server, the data that you will need for each component will slightly change.
 
->[!Important]
->The installation of the App-V 5.0 server on a computer that runs any previous version or component of App-V is not supported. Additionally, the installation of the server components on a computer that runs Server Core or a Domain Controller is also not supported.
+> [!Important]
+> The installation of the App-V 5.0 server on a computer that runs any previous version or component of App-V is not supported. Additionally, the installation of the server components on a computer that runs Server Core or a Domain Controller is also not supported.
 
 <table>
 <colgroup>

@@ -84,8 +84,8 @@ Microsoft Error Reporting is not turned on or off by MBAM. MBAM will utilize wha
 
 "HKLM\\Software\\Wow6432Node\\Microsoft\\Microsoft Standalone System Sweeper Tool" (for the 64-bit version)
 
->[!Warning]
->Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the PC. You can also use the Last Known Good Configuration startup option if you encounter problems after manual changes have been applied.
+> [!Warning]
+> Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the PC. You can also use the Last Known Good Configuration startup option if you encounter problems after manual changes have been applied.
 
 Important Information: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their PCs. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available on [TechNet](https://technet.microsoft.com/library/cc709644.aspx).
 
