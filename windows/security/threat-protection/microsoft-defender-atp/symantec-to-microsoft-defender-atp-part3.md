@@ -28,15 +28,22 @@ ms.topic: article
 
 ## Set up your device groups, device collections, and organizational units
 
+stuff (will draw from existing content here)
 
 
 ## Deploy Microsoft Defender ATP and uninstall Symantec
 
-stuff
+stuff (will draw from existing content here)
 
 ## Onboard devices to Microsoft Defender ATP
 
 You can choose from several methods to onboard devices to Microsoft Defender ATP. 
+
+stuff (will draw from existing content here)
+
+
+<br/><br/><br/><br/><br/>
+
 
 **Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
