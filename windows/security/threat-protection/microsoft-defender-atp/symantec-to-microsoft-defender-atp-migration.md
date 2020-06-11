@@ -19,10 +19,6 @@ ms.topic: article
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Overview and Planning
 
-**Applies to:**
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
 If you are planning to switch from Symantec Endpoint Protection to [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## Planning for migration: The process at a high level
@@ -37,7 +33,7 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 
 After you have Microsoft Defender ATP set up and deployed, you can [manage the various features and capabilities](microsoft-defender-atp-post-migration-management.md).
 
-## What all is included in Microsoft Defender ATP?
+## Overview of Microsoft Defender ATP
 
 If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the features and capabilities listed in the following table:
 
@@ -52,10 +48,8 @@ If you are new to Microsoft Defender ATP, you might be wondering what all is inc
 | [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
 | [Threat hunting service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
 
-As you can see, Microsoft Defender ATP includes a wide range of threat protection capabilities. [Learn more about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
+As you can see, Microsoft Defender ATP includes a wide range of threat protection capabilities. Want to learn more? See [about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
 
-## Related articles
+## Next step
 
-[Microsoft Defender ATP deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
-
-
+When you are ready to begin your migration, proceed to [Migrate from Symantec - Part 1: Get Microsoft Defender ATP started](symantec-to-microsoft-defender-atp-part1.md).
