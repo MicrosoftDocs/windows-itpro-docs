@@ -38,9 +38,16 @@ This procedure applies to devices running any of the following versions of Windo
 
 For those versions of Windows, you should set the registry key for Microsoft Defender ATP to passive mode. 
 
-HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-ForceDefenderPassiveMode (dword) 1 (hex)
-Note:  You can use “Group Policy Preference” (GPP) or LGPO or a “Package” in SCCM.
+1. As an administrator on the device, open Registry Editor.
+
+2. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
+
+3. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+   - Set the DWORD's value to 1.
+   - Under **Base**, select **Hexidecimal**.
+
+> [!NOTE]
+> You can use [Group Policy Preference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11)), [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool),  or a [package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs) to perform this task.
 
 
 ## Re-enable Microsoft Defender Antivirus
