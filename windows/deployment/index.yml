@@ -59,7 +59,7 @@ landingContent:
   # Card
   - title: Deploy with Autopilot
     linkLists:
-      - linkListType: deploy
+      - linkListType: overview
         links:
           - text: Learn about Autopilot
             url: windows-autopilot/windows-autopilot-scenarios.md
