@@ -69,6 +69,7 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 |AV |macOS |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
 |AV |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) 
 
+<br/>
 
 **Congratulations**! You have completed part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
