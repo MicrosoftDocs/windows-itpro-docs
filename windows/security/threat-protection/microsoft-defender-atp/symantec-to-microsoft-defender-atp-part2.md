@@ -27,8 +27,6 @@ ms.topic: article
 
 ## Set Microsoft Defender ATP to passive mode
 
-*This is from the Word doc - needs revision and clarification*
-
 *QUESTION: How/why are we changing registry keys when we haven't onboarded these devices yet? Am I missing something?*
 
 This procedure applies to devices running any of the following versions of Windows:
@@ -47,12 +45,17 @@ For those versions of Windows, you should set the registry key for Microsoft Def
    - Under **Base**, select **Hexidecimal**.
 
 > [!NOTE]
-> You can use [Group Policy Preference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11)), [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool),  or a [package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs) to perform this task.
+> You can use other methods to perform this task:
+>- [Group Policy Preference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+>- [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
+>- [A package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 
 ## Re-enable Microsoft Defender Antivirus
 
 *This is from the Word doc - needs revision and clarification*
+
+If your organization is using a third-party antivirus solution (such as Symantec), Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled. Microsoft Defender AV
 
 Many IT Architects/IT Administrators/Security Architects/Security Administrators might have disabled the “Windows Defender” service back in the Windows 7 SP1/Windows Server 2008 R2 SP1 days, when it was just an Antispyware or if you have a 3rd party AV.
 
@@ -75,6 +78,7 @@ Future item:  Add a CMPivot query that provides the results of the entry
 Reference(s):
 Use Group Policy settings to configure and manage Windows Defender Antivirus
 https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus  
+
 Turn on Windows Defender to access company resources
 https://docs.microsoft.com/en-us/intune-user-help/turn-on-defender-windows 
 
