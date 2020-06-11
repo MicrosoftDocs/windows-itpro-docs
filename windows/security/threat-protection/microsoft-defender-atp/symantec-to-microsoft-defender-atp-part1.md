@@ -66,21 +66,11 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 |--|--|--|
 |Endpoint detection and response (EDR) | Windows 10 <br/>Windows Server 1803 or later <br/>Windows Server 2019 |[Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet) |
 |EDR |Windows 7 SP1 <br/>Windows Server 2008 R2 SP1 <br/>Windows 8.1 <br/>Windows Server 2012 R2<br/>Windows Server 2016 |[Configure proxy and Internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |mac OS 10.15 (Catalina) <br/>macOS 10.14 (Mojave) <br/>macOS 10.13 (High Sierra)  |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
+|EDR  |macOS <br/>10.15 (Catalina) <br/>10.14 (Mojave) <br/>10.13 (High Sierra)  |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
 |EDR |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) |
 |Microsoft Defender Antivirus (Microsoft Defender AV) |Windows |[Configure and validate Microsoft Defender Antivirus network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-Important changes to Microsoft Active Protection Service (MAPS) endpoint 
-https://techcommunity.microsoft.com/t5/configuration-manager-archive/important-changes-to-microsoft-active-protection-service-maps/ba-p/274006 
-macOS:
-Network connections -- Microsoft Defender Advanced Threat Protection for Mac
-https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections
-
-Linux:
-AV Endpoints
-https://cdn.x.cp.wd.microsoft.com/
-https://eu-cdn.x.cp.wd.microsoft.com/
-https://wu-cdn.x.cp.wd.microsoft.com/
-https://x.cp.wd.microsoft.com/api/
+|Antivirus |macOS |[Microsoft Defender ATP for Mac: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#network-connections) |
+|Antivirus |Linux |[Microsoft Defender ATP for Linux: Network connections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#network-connections) 
 
 
 ## Next step
