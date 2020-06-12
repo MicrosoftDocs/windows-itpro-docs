@@ -66,8 +66,6 @@ You can use one of several methods to enable Microsoft Defender AV. Select one o
 |[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Windows Defender Antivirus`. <br/>2. Look for a policy that was set to turn off Microsoft Defender Antivirus (or Windows Defender Antivirus). <br/>3. Disable that policy. This enables Microsoft Defender Antivirus.  |
 |Registry Editor |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
 
-
-
 ## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
 
 *This is from the Word doc - needs revision and clarification*
