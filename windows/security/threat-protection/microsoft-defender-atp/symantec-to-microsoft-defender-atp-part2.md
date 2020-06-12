@@ -53,18 +53,18 @@ For those versions of Windows, you should set the registry key for Microsoft Def
 
 ## Re-enable Microsoft Defender Antivirus
 
-*This is from the Word doc - needs revision and clarification*
+Considering your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV. 
 
-Considering your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV. Microsoft Defender AV can run alongside your existing antivirus solution so that protection remains in place.
+Microsoft Defender AV can run alongside your existing antivirus solution so that protection remains in place.
 
-You can use one of several methods to enable Microsoft Defender AV, as listed in the following table:
+You can use one of several methods to enable Microsoft Defender AV. Select one of the following methods:
 
 
 |Method  |What to do  |
 |---------|---------|
-|Turn on Microsoft Defender AV on your device     |[Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)         |
-|Use either [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) or the [Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Windows Defender Antivirus`. <br/>2. Look for a policy that was set to turn off Microsoft Defender Antivirus (or Windows Defender Antivirus). <br/>3. Disable that policy, which enables Microsoft Defender Antivirus.  |
-|Use Registry Editor on a device |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
+|Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)         |
+|[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Windows Defender Antivirus`. <br/>2. Look for a policy that was set to turn off Microsoft Defender Antivirus (or Windows Defender Antivirus). <br/>3. Disable that policy. This enables Microsoft Defender Antivirus.  |
+|Registry Editor |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
 
 
 
