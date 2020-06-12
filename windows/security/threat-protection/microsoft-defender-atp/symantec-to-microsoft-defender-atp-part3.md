@@ -36,6 +36,16 @@ Device groups enable your security operations team to configure security capabil
 
 3. Choose **+ Add device group**.
 
+4. Specify a name and description for the device group.
+
+5. In the **Automation level** list, select an option. (We recommend **Full - remediate threats automatically**.) To learn more about the various automation levels, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
+
+6. Specify conditions for a matching rule to determine which devices belong to the device group. For example, you can choose a domain, OS versions, or even use [device tags](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-tags). 
+
+7. On the **User access** tab, specify roles that should have access to the devices that are included in the device group. 
+
+8. Choose **Done**.
+
 stuff (will draw from existing content here)
 
 Set up Machine Groups or Device Collections or OU such as company department, administrative responsibility, or physical location or subnet.
