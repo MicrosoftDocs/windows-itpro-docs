@@ -41,7 +41,7 @@ For those versions of Windows, you should set the registry key for Microsoft Def
 2. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
 
 3. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
-   - Set the DWORD's value to 1.
+   - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexidecimal**.
 
 > [!NOTE]
@@ -55,32 +55,17 @@ For those versions of Windows, you should set the registry key for Microsoft Def
 
 *This is from the Word doc - needs revision and clarification*
 
-If your organization is using a third-party antivirus solution (such as Symantec), Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled. Microsoft Defender AV
+Considering your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV. Microsoft Defender AV can run alongside your existing antivirus solution so that protection remains in place.
 
-Many IT Architects/IT Administrators/Security Architects/Security Administrators might have disabled the “Windows Defender” service back in the Windows 7 SP1/Windows Server 2008 R2 SP1 days, when it was just an Antispyware or if you have a 3rd party AV.
+You can use one of several methods to enable Microsoft Defender AV, as listed in the following table:
 
-Review in AGPM or GPMC to see if the following policy is set:
-Computer configuration -> Administrative templates -> Windows components > Windows Defender Antivirus 
-Turn off Windows Defender Antivirus
-Disabled.
-Recommendation:
-Enabled.
 
-Locally on a machine:
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
-DisableAntiSpyware (dword) 1 (hex)
-Recommendation:
-Needs to be set to 0 (hex) which means it’s enabled in order to work.
-Requires a reboot.
+|Method  |What to do  |
+|---------|---------|
+|Turn on Microsoft Defender AV on your device     |[Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)         |
+|Use either [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) or the [Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Windows Defender Antivirus`. <br/>2. Look for a policy that was set to turn off Microsoft Defender Antivirus (or Windows Defender Antivirus). <br/>3. Disable that policy, which enables Microsoft Defender Antivirus.  |
+|Use Registry Editor on a device |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
 
-Future item:  Add a CMPivot query that provides the results of the entry
-
-Reference(s):
-Use Group Policy settings to configure and manage Windows Defender Antivirus
-https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/use-group-policy-windows-defender-antivirus  
-
-Turn on Windows Defender to access company resources
-https://docs.microsoft.com/en-us/intune-user-help/turn-on-defender-windows 
 
 
 ## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
