@@ -35,7 +35,7 @@ Microsoft Endpoint Configuration Manager allows you to synchronize and deploy Su
 
 For detailed steps, see the following resources:
 
-- [How to manage Surface driver updates in Configuration Manager](https://docs.microsoft.com/surface/manage-surface-driver-updates-configuration-manager.md)
+- [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)
 - [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications)
 - [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
 
