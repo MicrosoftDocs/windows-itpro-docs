@@ -40,7 +40,9 @@ Hybrid Windows Hello for Business needs two directories: on-premises Active Dire
 
 A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
 
-You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  However, the key trust deployment needs an ***adequate*** number of Windows Server 2016 or later domain controllers at each site where users authenticate using Windows Hello for Business.  Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  
+If using the key trust deployment model, you MUST ensure that you have adequate (at least 1) Windows Server 2016 or later Domain Controllers in each Active Directory site where users will be authenticating for Windows Hello for Business.  
+Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 > [!NOTE]
 >There was an issue with key trust authentication on Windows Server 2019. If you are planning to use Windows Server 2019 domain controllers refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) to fix this issue.
