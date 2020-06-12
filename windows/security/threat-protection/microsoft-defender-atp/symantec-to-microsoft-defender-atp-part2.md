@@ -22,8 +22,8 @@ ms.topic: article
 **Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
 2. [Re-enable Microsoft Defender Antivirus](#re-enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to your Microsoft Defender ATP EDR exclusion list](#add-symantec-to-your-microsoft-defender-atp-edr-exclusion-list). 
+3. [Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec).
+4. [Add Symantec to your Microsoft Defender ATP exclusion list](#add-symantec-to-your-microsoft-defender-atp-exclusion-list). 
 
 ## Set Microsoft Defender ATP to passive mode
 
