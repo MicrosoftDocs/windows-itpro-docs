@@ -26,6 +26,16 @@ ms.topic: article
 
 ## Set up your device groups, device collections, and organizational units
 
+### Device groups
+
+Device groups enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed.
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+
+2. In the navigation pane on the left, choose **Settings** > **Permissions** > **Device groups**.  
+
+3. Choose **+ Add device group**.
+
 stuff (will draw from existing content here)
 
 Set up Machine Groups or Device Collections or OU such as company department, administrative responsibility, or physical location or subnet.
