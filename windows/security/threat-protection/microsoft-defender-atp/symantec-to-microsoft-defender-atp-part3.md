@@ -33,6 +33,8 @@ stuff (will draw from existing content here)
 
 stuff (will draw from existing content here)
 
+[Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
+
 ## Onboard devices to Microsoft Defender ATP
 
 You can choose from several methods to onboard devices to Microsoft Defender ATP. 
