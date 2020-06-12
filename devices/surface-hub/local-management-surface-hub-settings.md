@@ -40,12 +40,12 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 | Wireless projection (Miracast) channel | Surface Hub > Projection | Set the channel for Miracast projection. |
 | Meeting info shown on the welcome screen | Surface Hub > Welcome screen | Choose whether meeting organizer, time, and subject show up on the welcome screen. |
 | Welcome screen background |  Surface Hub > Welcome screen | Choose a background image for the welcome screen. |
-| Idle timeout to Welcome screen | Surface Hub > Session & Power | Choose how long until the Surface Hub returns to the welcome screen after no motion is detected. |
-| Resume session | Surface Hub > Session & Power | Choose to allow users to resume a session after no motion is detected or to automatically clean up a session. |
-| Access to Office 365 meetings and files | Surface Hub > Session & Power | Choose whether a user can sign in to Office 365 to get access to their meetings and files. |
-| Turn on screen with motion sensors | Surface Hub > Session & clean up | Choose whether the screen turns on when motion is detected. |
-| Session time out | Surface Hub > Session & clean up | Choose how long the device needs to be inactive before returning to the welcome screen. |
-| Sleep time out | Surface Hub > Session & clean up | Choose how long the device needs to be inactive before going to sleep mode. |
+| Session timeout to Welcome screen | Surface Hub > Session & power | Choose how long until the Surface Hub returns to the welcome screen after no motion is detected. |
+| Resume session | Surface Hub > Session & power | Choose to allow users to resume a session after no motion is detected or to automatically clean up a session. |
+| Access to Office 365 meetings and files | Surface Hub > Session & power | Choose whether a user can sign in to Office 365 to get access to their meetings and files. |
+| Turn on screen with motion sensors | Surface Hub > Session & power | Choose whether the screen turns on when motion is detected. |
+| Screen time out | Surface Hub > Session & power | Choose how long the device needs to be inactive before turning off the screen. |
+| Sleep time out | Surface Hub > Session & power | Choose how long the device needs to be inactive before going to sleep mode. |
 | Friendly name | Surface Hub > About | Set the Surface Hub name that people will see when connecting wirelessly. |
 | Maintenance hours | Update & security > Windows Update > Advanced options | Configure when updates can be installed. |
 | Configure Windows Server Update Services (WSUS) server | Update & security > Windows Update > Advanced options | Change whether Surface Hub receives updates from a WSUS server instead of Windows Update. |
