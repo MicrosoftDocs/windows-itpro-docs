@@ -45,7 +45,7 @@ For those versions of Windows, you should set the registry key for Microsoft Def
    - Under **Base**, select **Hexidecimal**.
 
 > [!NOTE]
-> You can use other methods to perform this task:
+> You can use other methods to perform this task, such as the following:
 >- [Group Policy Preference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 >- [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)
