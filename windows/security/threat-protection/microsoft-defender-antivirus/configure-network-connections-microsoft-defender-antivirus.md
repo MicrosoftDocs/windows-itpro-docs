@@ -68,7 +68,7 @@ After whitelisting the URLs listed above, you can test if you are connected to t
 
 Use the following argument with the Microsoft Defender Antivirus command-line utility (`mpcmdrun.exe`) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service:
 
-```DOS
+```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
@@ -107,10 +107,10 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware.
 
->[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
+   > [!NOTE]
+   > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
+   The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
 
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
