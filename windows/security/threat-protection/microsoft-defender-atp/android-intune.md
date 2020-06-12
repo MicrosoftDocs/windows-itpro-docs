@@ -28,6 +28,11 @@ This topic describes deploying Microsoft Defender ATP for Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
 device](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/aka.ms/enrollAndroid).
 
+
+> [!NOTE]
+> During public preview, instructions to deploy Microsoft Defender ATP for Android on Intune enrolled Android devices are different across Device Administrator and Android Enterprise entrollment modes. <br>
+> **When Microsoft Defender ATP for Android reaches General Availability (GA), the app will be available on Google Play.**
+
 ## Deploy on Device Administrator enrolled devices
 
 **Deploy Microsoft Defender ATP for Android on Intune Company Portal - Device
@@ -42,13 +47,13 @@ Download the onboarding package from Microsoft Defender Security Center.
 1. In [Microsoft Defender Security
 Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/securitycenter.microsoft.com), go to **Settings** \> **Machine Management** \> **Onboarding**.
 
-2. In the first drop down, select **Android** as the Operating system.
+2. In the first drop-down, select **Android** as the Operating system.
 
 3. Select **Download Onboarding package** and save the downloaded .APK file.
 
 ### Add as Line of Business (LOB) App
 
-The downloaded Microsoft Defender ATP for Android onboarding package which is a
+The downloaded Microsoft Defender ATP for Android onboarding package. It is a
 .APK file can be deployed to user groups as a Line of Business app during the
 preview from Microsoft Endpoint Manager Admin Center.
 
@@ -86,34 +91,32 @@ Microsoft Defender ATP for Android app. Click **Select** and then **Next**.
 correct and then select **Create**.
 
     In a few moments, the Microsoft Defender ATP app would be created successfully,
-and a notification would show up at the top right corner of the page.
+and a notification would show up at the top-right corner of the page.
 
     ![Image of Microsoft Endpoint Manager Admin Center](images/86cbe56f88bb6e93e9c63303397fc24f.png)
 
 
 7. In the app information page that is displayed, in the **Monitor** section,
-click on **Device install status** to verify that the device installation has
+select **Device install status** to verify that the device installation has
 completed successfully.
 
     ![Image of Microsoft Endpoint Manager Admin Center](images/513cf5d59eaaef5d2b5bc122715b5844.png)
 
 
 During Public Preview, to **update** Microsoft Defender ATP for Android deployed
-as a Line of Business app, download the latest APK by following the steps in
-*Download the onboarding package* page and follow instructions on how to [update
+as a Line of Business app, download the latest APK. Following the steps in
+*Download the onboarding package* section and follow instructions on how to [update
 a Line of Business
 App](https://docs.microsoft.com/mem/intune/apps/lob-apps-android#step-5-update-a-line-of-business-app).
 
 ### Complete onboarding and check status
 
-1. Once Microsoft Defender ATP for Android has been installed on the device, you
-should be able to see the app icon.
+1. Once Microsoft Defender ATP for Android has been installed on the device, you'll see the app icon.
 
     ![Icon on mobile device](images/7cf9311ad676ec5142002a4d0c2323ca.jpg)
 
 2. Tap the Microsoft Defender ATP app icon and follow the on-screen instructions
-to complete onboarding the app that includes end user acceptance of Android
-permissions required by Microsoft Defender ATP for Android.
+to complete onboarding the app. The details include end-user acceptance of Android permissions required by Microsoft Defender ATP for Android.
 
 3. Upon successful onboarding, the device will start showing up on the Devices
 list in Microsoft Defender Security Center.
@@ -140,9 +143,9 @@ Currently only Work Profile, Fully Managed devices are supported for deployment.
 
 ## Add Microsoft Defender ATP for Android as a managed Google Play app
 
-Once you receive a confirmation e-mail from Microsoft that your managed Google
-Play organization ID has been approved, follow the below steps to add Microsoft
-Defender ATP app into your managed Google Play
+After receiving a confirmation e-mail from Microsoft that your managed Google
+Play organization ID has been approved, follow the steps below to add Microsoft
+Defender ATP app into your managed Google Play.
 
 1. In [Microsoft Endpoint Manager admin
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
@@ -168,12 +171,12 @@ select **Approve**.
 4. You should now be presented with the permissions that Microsoft Defender ATP
 obtains for it to work. Review them and then select **Approve**.
 
-    ![A screenshot of Microsoft Defender ATP preview app aproval](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
+    ![A screenshot of Microsoft Defender ATP preview app approval](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
 
-5. You should then be presented with the Approval settings page that confirms
+5. You'll be presented with the Approval settings page. The page confirms
 your preference to handle new app permissions that Microsoft Defender ATP for
-Android might ask. Review the choices and select the desired option. Select
+Android might ask. Review the choices and select your preferred option. Select
 **Done**.
 
     By default, managed Google Play selects *Keep approved when app requests new
@@ -198,7 +201,7 @@ Defender ATP should be visible in the apps list.
     ![Image of list of Android apps](images/fa4ac18a6333335db3775630b8e6b353.png)
 
 
-9. Microsoft Defender ATP supports App configuration policies for managed devices via Intune. This capability can be leveraged to auto-grant applicable Android permission(s), so the end user does not need to accept these permission(s).
+9. Microsoft Defender ATP supports App configuration policies for managed devices via Intune. This capability can be leveraged to autogrant applicable Android permission(s), so the end user does not need to accept these permission(s).
 
     a. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
@@ -221,19 +224,19 @@ Defender ATP should be visible in the apps list.
     ![Image of create app configuration policy](images/android-create-app-config.png)
 
     
-    d. You should now see both the permissions listed and now you can auto-grant both by choosing auto-grant in the **Permission state** drop down and then select **Next**.
+    d. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.
 
      ![Image of create app configuration policy](images/android-auto-grant.png)
 
 
-    e. In the **Assignments** page, select the user group to which this app config policy would be assigned to. This can be done by clicking **Select groups to include** and selecting the applicable group and then selecting **Next**.  The group selected here is usually the same group to which you would assign Microsoft Defender ATP Android app. 
+    e. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**.  The group selected here is usually the same group to which you would assign Microsoft Defender ATP Android app. 
 
     ![Image of create app configuration policy](images/android-select-group.png)
     
 
      f. In the **Review + Create** page that comes up next, review all the information and then select **Create**. <br>
     
-    The app configuration policy for Microsoft Defender ATP auto-granting the storage permission would now be assigned to the selected user group.
+    The app configuration policy for Microsoft Defender ATP auto-granting the storage permission is now assigned to the selected user group.
 
     ![Image of create app configuration policy](images/android-review-create.png)
 
@@ -245,8 +248,7 @@ Defender ATP should be visible in the apps list.
     ![Image of list of apps](images/9336bbd778cff5e666328bb3db7c76fd.png)
 
 
-11. Assign the app as a *Required* app to a user group so
-that it is automatically installed in the *work profile* during the next sync of
+11. Assign the app as a *Required* app to a user group. It is automatically installed in the *work profile* during the next sync of
 the device via Company Portal app. This assignment can be done by navigating to
 the *Required* section \> **Add group,** selecting the user group and click
 **Select**.
@@ -255,13 +257,13 @@ the *Required* section \> **Add group,** selecting the user group and click
 
 
 12. In the **Edit Application** page, review all the information that was entered
-above and then select **Review + Save** and then **Save** again to commence
+above. Then select **Review + Save** and then **Save** again to commence
 assignment.
 
 ## Complete onboarding and check status
 
-1. You can confirm the install status of Microsoft Defender ATP for Android by
-clicking on the **Device Install Status and** verifying that the device is
+1. Confirm the installation status of Microsoft Defender ATP for Android by
+clicking on the **Device Install Status**. Verif that the device is
 displayed here.
 
     ![Image of device installation status](images/900c0197aa59f9b7abd762ab2b32e80c.png)
@@ -277,8 +279,8 @@ and then your onboarding should be successful.
 
     ![Image of mobile device with Microsoft Defender ATP app](images/23c125534852dcef09b8e37c98e82148.png)
 
-4. The device at this stage is successfully onboarded onto Microsoft Defender
-ATP for Android. This can also be verified on the [Microsoft Defender Security
+4. At this stage the device is successfully onboarded onto Microsoft Defender
+ATP for Android. You can verify this on the [Microsoft Defender Security
 Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/securitycenter.microsoft.com)
 by navigating to the **Devices** page.
 

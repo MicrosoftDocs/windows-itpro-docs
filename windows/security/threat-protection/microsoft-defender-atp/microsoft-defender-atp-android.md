@@ -81,15 +81,18 @@ Microsoft Defender ATP for Android supports installation on both modes of
 enrolled devices - the legacy Device Administrator and Android Enterprise modes
 
 Deployment of Microsoft Defender ATP for Android is via Microsoft Intune (MDM).
-Refer *Deploy Microsoft Defender ATP for Android with Microsoft Intune*
+For more information, see [Deploy Microsoft Defender ATP for Android with Microsoft Intune](android-intune.md).
 
-## How to Configure Microsoft Defender ATP for Android
-
-Guidance on how to configure Microsoft Defender ATP for Android features is available in [Configure Microsoft Defender ATP for Android features].
 
 > [!NOTE]
 > During public preview, instructions to deploy Microsoft Defender ATP for Android on Intune enrolled Android devices are different across Device Administrator and Android Enterprise entrollment modes. <br>
-> When Microsoft Defender ATP for Android reacher General Availability (GA), the app will be available on Google Play. 
+> **When Microsoft Defender ATP for Android reaches General Availability (GA), the app will be available on Google Play.**
+
+## How to Configure Microsoft Defender ATP for Android
+
+Guidance on how to configure Microsoft Defender ATP for Android features is available in [Configure Microsoft Defender ATP for Android features](android-configure.md).
+
+
 
 ## Related topics
 - [Deploy Microsoft Defender ATP for with Microsoft Intune](android-intune.md)
