@@ -62,9 +62,7 @@ The prompt can occur via a notification, similar to the following:
 
 ![Windows notification showing the requirement to run Microsoft Defender Offline](images/defender/notification.png)
 
-The user will also be notified within the Windows Defender client:
-
-![Windows Defender showing the requirement to run Microsoft Defender Offline](images/defender/client.png)
+The user will also be notified within the Windows Defender client.
 
 In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**. 
 

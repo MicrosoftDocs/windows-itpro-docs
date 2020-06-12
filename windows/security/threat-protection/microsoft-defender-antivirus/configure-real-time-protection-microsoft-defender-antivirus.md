@@ -38,7 +38,6 @@ To enable and configure always-on protection:
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 ![GPEdit taskbar search result](images/gpedit-search.png)
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
-![Microsoft Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
 3. Configure the Microsoft Defender Antivirus antimalware service policy settings. To do this:  
     1. In the **Microsoft Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
@@ -46,14 +45,12 @@ To enable and configure always-on protection:
     |-----------------------------|------------------------|-------------------------------|
     | Allow antimalware service to startup with normal priority | You can lower the priority of the Microsoft Defender Antivirus engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
     | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. This lowers the protection on the endpoint. | Disabled |
-
     2. Configure the setting as appropriate, and click **OK**.
     3. Repeat the previous steps for each setting in the table.
 
 4. Configure the Microsoft Defender Antivirus real-time protection policy settings. To do this:  
     1. In the **Microsoft Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Microsoft Defender Antivirus** tree on left pane, click **Real-time Protection**.
-    ![Microsoft Defender Antivirus Real-time Protection options](images/gpedit-real-time-protection.png)
-    2. In the **Real-time Protection** details pane on right, double-click the policy setting as specified in the following table:  
+       2. In the **Real-time Protection** details pane on right, double-click the policy setting as specified in the following table:  
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|

@@ -112,10 +112,6 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 5. Assign the profile to one or more groups.
 
-    Here's what you see in the Windows Security app:
-
-    ![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)
-
 ### Are you using Windows OS 1709, 1803, or 1809?
 
 If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.

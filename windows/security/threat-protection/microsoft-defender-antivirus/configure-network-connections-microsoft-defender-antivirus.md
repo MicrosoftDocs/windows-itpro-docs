@@ -87,9 +87,7 @@ Download the file by visiting the following link:
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
 
-If you are properly connected, you will see a warning Microsoft Defender Antivirus notification:
-
-![Microsoft Defender Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
+If you are properly connected, you will see a warning Microsoft Defender Antivirus notification.
 
 If you are using Microsoft Edge, you'll also see a notification message:
 
@@ -107,9 +105,7 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
     ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
 
-3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
-
-    ![Screenshot of quarantined items in the Windows Security app](images/defender/wdav-quarantined-history-wdsc.png)
+3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware.
 
 >[!NOTE]
 >Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
