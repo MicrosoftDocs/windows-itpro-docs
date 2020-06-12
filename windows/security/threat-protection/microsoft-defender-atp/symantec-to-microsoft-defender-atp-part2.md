@@ -57,7 +57,7 @@ Considering your organization has been using Symantec as your primary antivirus 
 
 Microsoft Defender AV can run alongside your existing antivirus solution so that protection remains in place.
 
-You can use one of several methods to enable Microsoft Defender AV. Select one of the following methods:
+You can use one of several methods to enable Microsoft Defender AV as listed in the following table:
 
 
 |Method  |What to do  |
