@@ -213,11 +213,10 @@ Defender ATP should be visible in the apps list.
     ![Image of create app configuration policy page](images/android-create-app.png)
 
     c. In the **Settings** page, go to the Permissions section click on Add to view the list of supported permissions. In the Add Permissions section, select the following permissions 
+    - External storage (read)
+    - External storage (write)
 
-       - External storage (read)
-       - External storage (write)
-
-        Then select **OK**.
+    Then select **OK**.
 
     ![Image of create app configuration policy](images/android-create-app-config.png)
 
@@ -229,14 +228,14 @@ Defender ATP should be visible in the apps list.
 
     e. In the **Assignments** page, select the user group to which this app config policy would be assigned to. This can be done by clicking **Select groups to include** and selecting the applicable group and then selecting **Next**.  The group selected here is usually the same group to which you would assign Microsoft Defender ATP Android app. 
 
-       ![Image of create app configuration policy](images/android-select-group.png)
+    ![Image of create app configuration policy](images/android-select-group.png)
     
 
      f. In the **Review + Create** page that comes up next, review all the information and then select **Create**. <br>
     
-        The app configuration policy for Microsoft Defender ATP auto-granting the storage permission would now be assigned to the selected user group.
+    The app configuration policy for Microsoft Defender ATP auto-granting the storage permission would now be assigned to the selected user group.
 
-        ![Image of create app configuration policy](images/android-review-create.png)
+    ![Image of create app configuration policy](images/android-review-create.png)
 
 
 
