@@ -41,10 +41,17 @@ The follow table shows the exclusion types supported by Microsoft Defender ATP f
 
 Exclusion | Definition | Examples
 ---|---|---
-File extension | All files with the extension, anywhere on the device | `.test`
-File | A specific file identified by the full path | `/var/log/test.log`
-Folder | All files under the specified folder | `/var/log/`
-Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`
+File extension | All files with the extension, anywhere on the machine | `.test`
+File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder | All files under the specified folder | `/var/log/`<br/>`/var/*/`
+Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+File, folder, and process exclusions support the following wildcards:
+
+Wildcard | Description | Example | Matches | Does not match
+---|---|---|---|---
+\* |	Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ## How to configure the list of exclusions
 
