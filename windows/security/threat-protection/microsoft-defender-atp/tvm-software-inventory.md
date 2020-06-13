@@ -54,7 +54,7 @@ Once you are in the Software inventory page and have opened the flyout panel by 
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed devices
 - Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
 
-![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
+    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 
 ## Software evidence
 

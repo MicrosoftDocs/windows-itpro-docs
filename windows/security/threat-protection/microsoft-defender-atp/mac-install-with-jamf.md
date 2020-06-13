@@ -56,7 +56,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings > Device management > Onboarding**.
-2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android**.
+2. In Section 1 of the page, set the operating system to **macOS**, **Linux Server**, **iOS**, or **Android**.
 3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
 
     > [!NOTE]
@@ -64,9 +64,6 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
 4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
-
-    ![Microsoft Defender Security Center screenshot](../microsoft-defender-antivirus/images/jamf-onboarding.png)
-
 6. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash

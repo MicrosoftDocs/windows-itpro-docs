@@ -319,7 +319,7 @@ endpoints. (This may take few minutes)
     
     ![Image of attack surface management](images/security-center-attack-surface-mgnt-tile.png)
 
-4. Click **Configuration** tab in Attack Surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each devices.
+4. Click **Configuration** tab in Attack surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each devices.
 
     ![A screenshot of attack surface reduction rules reports](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 

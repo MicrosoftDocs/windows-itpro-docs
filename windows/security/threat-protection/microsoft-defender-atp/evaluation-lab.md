@@ -221,8 +221,6 @@ Running threat simulations using third-party platforms is a good way to evaluate
     
 After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if the attack simulations you ran triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
 
-
-
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
 
