@@ -108,7 +108,7 @@ Get-Service -Name mpssvc
 
 As an alternative to PowerShell, you can use Command Prompt to verify that Microsoft Defender Antivirus is running. To do that, run the following command from a command prompt: 
 
-```DOS
+```console
 sc query Windefend
 ```
 
