@@ -95,7 +95,7 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the machine group according to your [user permissions](machine-groups.md).
 
 5. Review the details in the Summary tab, then click **Save**.
 
