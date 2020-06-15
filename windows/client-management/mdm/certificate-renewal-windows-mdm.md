@@ -1,6 +1,6 @@
 ---
 title: Certificate Renewal
-description: The enrolled client certificate expires after a period of use.
+description: Find all the resources needed to provide continuous access to client certificates.
 MS-HAID: 
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'

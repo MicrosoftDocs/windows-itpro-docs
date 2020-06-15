@@ -2,7 +2,7 @@
 title: Windows Autopilot requirements
 ms.reviewer: 
 manager: laurawi
-description: Inform yourself about software, networking, licensing, and configuration requirements for Windows Autopilot deployment.
+description: See the requirements you need to run Windows Autopilot in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune. 
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
