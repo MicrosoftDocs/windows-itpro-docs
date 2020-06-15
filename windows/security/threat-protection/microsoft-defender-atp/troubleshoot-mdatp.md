@@ -1,7 +1,7 @@
 ---
 title:  Troubleshoot Microsoft Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
-keywords: troubleshoot Microsoft Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
+keywords: troubleshoot Microsoft Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -28,7 +28,7 @@ Configure your browser to allow cookies.
 ## Elements or data missing on the portal
 If some UI elements or data is missing on Microsoft Defender Security Center it’s possible that proxy settings are blocking it.
 
-Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
+Make sure that `*.securitycenter.windows.com` is included the proxy allow list.
 
 
 > [!NOTE]

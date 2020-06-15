@@ -37,7 +37,7 @@ Controlled folder access is especially useful in helping to protect your documen
 
 With Controlled folder access in place, a notification will appear on the computer where the app attempted to make changes to a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
-The protected folders include common system folders, and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow or whitelist apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
+The protected folders include common system folders, and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
 You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 

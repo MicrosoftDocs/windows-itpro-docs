@@ -140,12 +140,12 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender ATP URL exclusions in the proxy, see the
-Appendix section in this document for the URLs Whitelisting or on
+Appendix section in this document for the URLs allow list or on
 [Microsoft
 Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
 > [!NOTE]
-> For a detailed list of URLs that need to be whitelisted, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> For a detailed list of URLs that need to be allowed, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 **Manual static proxy configuration:**
 

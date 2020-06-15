@@ -136,6 +136,7 @@ If offline servicing is not a viable option for your non-persistent VDI environm
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
+    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

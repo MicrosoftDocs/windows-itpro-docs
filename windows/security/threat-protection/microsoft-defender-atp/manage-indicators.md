@@ -2,7 +2,7 @@
 title: Manage indicators 
 ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
-keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
+keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -95,7 +95,7 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the device group.
+   - Scope - Define the scope of the device group according to your [user permissions](machine-groups.md).
 
 5. Review the details in the Summary tab, then click **Save**.
 
