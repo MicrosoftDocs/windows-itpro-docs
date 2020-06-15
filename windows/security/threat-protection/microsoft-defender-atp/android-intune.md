@@ -51,6 +51,8 @@ Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/Gen
 
 3. Select **Download Onboarding package** and save the downloaded .APK file.
 
+    ![Image of onboarding package page](images/android-onboarding-package.png)
+
 ### Add as Line of Business (LOB) App
 
 The downloaded Microsoft Defender ATP for Android onboarding package. It is a
