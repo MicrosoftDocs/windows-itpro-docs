@@ -81,21 +81,19 @@ The installation proceeds.
     The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    $ mdatp --health orgId
+    mdatp --health orgId
     ```
 
 2. Run the Python script to install the configuration file:
 
     ```bash
-    $ /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
-    Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
+    /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    $ mdatp --health orgId
-    E6875323-A6C0-4C60-87AD-114BBE7439B8
+    mdatp --health orgId
     ```
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
