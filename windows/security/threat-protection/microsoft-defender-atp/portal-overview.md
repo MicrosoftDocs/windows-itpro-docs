@@ -81,7 +81,7 @@ Icon | Description
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the machine.
 ![Thunderbolt icon](images/atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
 ![Machine icon](images/atp-machine-icon.png)| Machine icon
-![Windows Defender AV events icon](images/atp-windows-defender-av-events-icon.png)| Microsoft Defender Antivirus events
+![Microsoft Defender AV events icon](images/atp-windows-defender-av-events-icon.png)| Microsoft Defender Antivirus events
 ![Application Guard events icon](images/atp-Application-Guard-events-icon.png)| Windows Defender Application Guard events
 ![Device Guard events icon](images/atp-Device-Guard-events-icon.png)| Windows Defender Device Guard events
 ![Exploit Guard events icon](images/atp-Exploit-Guard-events-icon.png)| Windows Defender Exploit Guard events

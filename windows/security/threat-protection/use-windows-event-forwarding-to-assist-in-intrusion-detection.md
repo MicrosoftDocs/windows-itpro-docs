@@ -174,7 +174,7 @@ To gain the most value out of the baseline subscription we recommend to have the
 -   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A – Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This ensures that the security event log is generating the required events.
 -   Apply at least an Audit-Only AppLocker policy to devices.
 
-    -   If you are already whitelisting or blacklisting events by using AppLocker, then this requirement is met.
+    -   If you are already allowing or restricting events by using AppLocker, then this requirement is met.
     -   AppLocker events contain extremely useful information, such as file hash and digital signature information for executables and scripts.
 
 -   Enable disabled event channels and set the minimum size for modern event files.

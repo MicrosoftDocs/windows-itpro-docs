@@ -1,9 +1,8 @@
 ---
 title: Windows Update - Additional resources
-description: Additional resources for Windows Update
+description: Use these resource to troubleshoot and reset Windows Update.
 ms.prod: w10
 ms.mktglfcycl:
-
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -17,7 +16,7 @@ ms.topic: article
 
 # Windows Update - additional resources
 
->Applies to: Windows 10
+> Applies to: Windows 10
 
 The following resources provide additional information about using Windows Update.
 
@@ -37,43 +36,49 @@ The following resources provide additional information about using Windows Updat
 [This script](https://gallery.technet.microsoft.com/scriptcenter/Reset-WindowsUpdateps1-e0c5eb78) will completely reset the Windows Update client settings. It has been tested on Windows 7, 8, 10, and Windows Server 2012 R2. It will configure the services and registry keys related to Windows Update for default settings. It will also clean up files related to Windows Update, in addition to BITS related data.
 
 
-[This script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc) allow reset the Windows Update Agent resolving issues with Windows Update.
+[This script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc) allows you to reset the Windows Update Agent, resolving issues with Windows Update.
 
 
 ## Reset Windows Update components manually
+
 1. Open a Windows command prompt. To open a command prompt, click **Start > Run**. Copy and paste (or type) the following command and then press ENTER:
-   ```
+   ```console
    cmd
    ```
 2. Stop the BITS service and the Windows Update service. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    net stop bits
    net stop wuauserv
    ```
 3. Delete the qmgr\*.dat files. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    Del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
    ```
 4. If this is your first attempt at resolving your Windows Update issues by using the steps in this article, go to step 5 without carrying out the steps in step 4. The steps in step 4 should only be performed at this point in the troubleshooting if you cannot resolve your Windows Update issues after following all steps but step 4. The steps in step 4 are also performed by the "Aggressive" mode of the Fix it Solution above.
    1. Rename the following folders to *.BAK:
-      - %systemroot%\SoftwareDistribution\DataStore
-      - %systemroot%\SoftwareDistribution\Download
-      - %systemroot%\system32\catroot2
-
-      To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-      - Ren %systemroot%\SoftwareDistribution\DataStore *.bak
-      - Ren %systemroot%\SoftwareDistribution\Download *.bak
-      - Ren %systemroot%\system32\catroot2 *.bak
-   2. Reset the BITS service and the Windows Update service to the default security descriptor. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-      - sc.exe sdset bits D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
-      - sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
-5. Type the following command at a command prompt, and then press ENTER:
+   ```console
+   %systemroot%\SoftwareDistribution\DataStore
+   %systemroot%\SoftwareDistribution\Download
+   %systemroot%\system32\catroot2
    ```
+   To do this, type the following commands at a command prompt. Press ENTER after you type each command.
+   ```console
+   Ren %systemroot%\SoftwareDistribution\DataStore *.bak
+   Ren %systemroot%\SoftwareDistribution\Download *.bak
+   Ren %systemroot%\system32\catroot2 *.bak
+   ```
+   2. Reset the BITS service and the Windows Update service to the default security descriptor. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
+   ```console
+   sc.exe sdset bits D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+   sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+   ```
+5. Type the following command at a command prompt, and then press ENTER:
+   ```console
    cd /d %windir%\system32
    ```
 6. Reregister the BITS files and the Windows Update files. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
 
-   ```
+   ```console
    regsvr32.exe atl.dll
    regsvr32.exe urlmon.dll
    regsvr32.exe mshtml.dll
@@ -113,20 +118,20 @@ The following resources provide additional information about using Windows Updat
    ```
 
 7. Reset Winsock. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    netsh winsock reset
    ```
 8. If you are running Windows XP or Windows Server 2003, you have to set the proxy settings. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    proxycfg.exe -d
    ```
 9. Restart the BITS service and the Windows Update service. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    net start bits
 
    net start wuauserv
    ```
 10. If you are running Windows Vista or Windows Server 2008, clear the BITS queue. To do this, type the following command at a command prompt, and then press ENTER:
-    ```
+    ```console
     bitsadmin.exe /reset /allusers
     ```

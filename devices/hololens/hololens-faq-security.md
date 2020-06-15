@@ -34,7 +34,7 @@ appliesto:
 1. **What frequency range and channels does the device operate on and is it configurable?**
     1. Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
     1. Bluetooth: Bluetooth uses the standard 2.4-2.48 GHz range.
-1. **Can the device blacklist or white list specific frequencies?**
+1. **Can the device allow or block specific frequencies?**
     1. This is not controllable by the user/device
 1. **What is the power level for both transmit and receive? Is it adjustable? What is the range of operation?**
     1. Our emissions testing standards can be found [here](https://fccid.io/C3K1688). Range of operation is highly dependent on the access point and environment - but is roughly equivalent to other high-quality phones, tablets, or PCs.
@@ -63,9 +63,9 @@ appliesto:
     1. Yes
 1. **Is there an ability to control or disable the use of ports on the device?**
     1. The HoloLens only contains 2 ports (one for headphones and one for charging or connecting to PCs). There is not ability to disable the port due to functionality and recovery reasons.
-1. **Antivirus, end point detection, IPS, app control whitelist – Any ability to run antivirus, end point detection, IPS, app control whitelist, etc.**
+1. **Antivirus, end point detection, IPS, app control allow list – Any ability to run antivirus, end point detection, IPS, app control allow list, etc.**
     1. Windows Holographic for Business (commercial suite) does support Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. At present, no companies have done this for HoloLens.
-    1. Whitelisting apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
+    1. Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
 1. **Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  Ex. Device has been sitting in a drawer not powered up for a period (6 months) and has not received any updates, patches, etc.  When it tries to come on the network can we flag it and say you must update on another network prior to being complaint to join the network.**
     1. This is something that can be managed on the infrastructure level by either an MDM or an on-prem server. The device can be flagged as not compliant if it does not meet a specified Update version.
 1. **Does Microsoft include any back doors or access to services that allows Microsoft to connect to the device for screen sharing or remote support at will?**
@@ -85,7 +85,7 @@ appliesto:
     1. C3K1855
 1. **What frequency range and channels does the device operate on and is it configurable?**
     1. Wi-Fi: The frequency range is not user configurable and depends on the country of use. In the US Wi-Fi uses both 2.4 GHz (1-11) channels and 5 GHz (36-64, 100-165) channels.
-1. **Can the device blacklist or white list specific frequencies?**
+1. **Can the device allow or block specific frequencies?**
     1. This is not controllable by the user/device
 1. **What is the power level for both transmit and receive? Is it adjustable? What is the range of operation?**
     1. Wireless power levels depend on the channel of operation. Devices are calibrated to perform at the highest power levels allowed based on the region's regulatory rules.
@@ -113,9 +113,9 @@ appliesto:
     1. Yes
 1. **Is there an ability to control or disable the use of ports on the device?**
     1. The HoloLens only contains 2 ports (one for headphones and one for charging or connecting to PCs). There is not ability to disable the port due to functionality and recovery reasons.
-1. **Antivirus, end point detection, IPS, app control whitelist – Any ability to run antivirus, end point detection, IPS, app control whitelist, etc.**
+1. **Antivirus, end point detection, IPS, app control allow – Any ability to run antivirus, end point detection, IPS, app control allow, etc.**
     1. HoloLens 2nd Gen supports Windows Defender Smart Screen. If an antivirus company were to create and publish their app to the Universal Windows Platform, it could be downloaded on HoloLens. At present, no companies have done this for HoloLens.
-    1. Whitelisting apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
+    1. Allowing apps is possible by using the Microsoft Enterprise Store, where you can choose only what specific apps can be downloaded. Also, through MDM you can lock what specific apps can be run or even seen on the device.
 1. **Can we quarantine the device from prod network until we update the device if it has been offline for an extended period of time?  Ex. Device has been sitting in a drawer not powered up for a period (6 months) and has not received any updates, patches, etc.  When it tries to come on the network can we flag it and say you must update on another network prior to being complaint to join the network.**
     1. This is something that can be managed on the infrastructure level by either an MDM or an on-prem server. The device can be flagged as not compliant if it does not meet a specified Update version.
 1. **Does Microsoft include any back doors or access to services that allows Microsoft to connect to the device for screen sharing or remote support at will?**

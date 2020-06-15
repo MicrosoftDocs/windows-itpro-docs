@@ -110,10 +110,10 @@ To verify the BCD entries:
    >[!NOTE]
    >This output may not contain a path.
 
-2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device** , **path** , **osdevice,**  and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
+2. In the **Windows Boot Loader**  that has the **{default}** identifier, make sure that **device**, **path**, **osdevice**, and **systemroot**  point to the correct device or partition, winload file, OS partition or device, and OS folder.
  
    > [!NOTE]
-   > If the computer is UEFI-based, the **bootmgr** and **winload** entries under **{default}** will contain an **.efi** extension.
+   > If the computer is UEFI-based, the filepath value specified in the **path** parameter of **{bootmgr}** and **{default}** will contain an **.efi** extension.
 
    ![bcdedit](images/screenshot1.png)
 
