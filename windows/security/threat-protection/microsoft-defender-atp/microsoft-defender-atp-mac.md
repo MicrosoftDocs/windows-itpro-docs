@@ -74,15 +74,21 @@ The following table lists the services and their associated URLs that your netwo
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
 | Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
+| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net <br/> winatp-gw-weu.microsoft.com <br/> winatp-gw-neu.microsoft.com |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net <br/> winatp-gw-ukw.microsoft.com <br/> winatp-gw-uks.microsoft.com |
+| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net <br/> winatp-gw-cus.microsoft.com <br/> winatp-gw-eus.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
+- Proxy auto-config (PAC)
 - Web Proxy Auto-discovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+
+> [!WARNING]
+> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
+>
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 

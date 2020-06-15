@@ -10,17 +10,17 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 09/27/2016
+ms.date: 04/02/2020
 ---
 
 
 # App-V 5.1 Supported Configurations
 
+>Applies to: Windows 10, version 1607; Window Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 (Extended Security Update)
 
 This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) 5.1 in your environment.
 
 ## App-V Server system requirements
-
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
@@ -42,48 +42,16 @@ The App-V 5.1 Server does not support the following scenarios:
 
 The following table lists the operating systems that are supported for the App-V 5.1 Management server installation.
 
-**Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
+> [!NOTE]
+> Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
 
- 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
+ | Operating System                 | Service Pack | System Architecture |
+|----------------------------------|--------------|---------------------|
+| Microsoft Windows Server 2019    |              |        64-bit       |
+| Microsoft Windows Server 2016    |              |        64-bit       |
+| Microsoft Windows Server 2012 R2 |              |        64-bit       |
+| Microsoft Windows Server 2012    |              |        64-bit       |
+| Microsoft Windows Server 2008 R2 [Extended Security Update](https://www.microsoft.com/windows-server/extended-security-updates)|      SP1     |        64-bit       |
  
 
 **Important**  
@@ -157,44 +125,13 @@ For more information on user configuration files with SQL server 2016 or later, 
 
 The following table lists the operating systems that are supported for the App-V 5.1 Publishing server installation.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Operating System                 | Service Pack | System Architecture |
+|----------------------------------|--------------|---------------------|
+| Microsoft Windows Server 2019    |              |        64-bit       |
+| Microsoft Windows Server 2016    |              |        64-bit       |
+| Microsoft Windows Server 2012 R2 |              |        64-bit       |
+| Microsoft Windows Server 2012    |              |        64-bit       |
+| Microsoft Windows Server 2008 R2 [Extended Security Update](https://www.microsoft.com/windows-server/extended-security-updates) |      SP1     |        64-bit       |
 
 ### <a href="" id="publishing-server-hardware-requirements-"></a>Publishing server hardware requirements
 
@@ -210,44 +147,13 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 The following table lists the operating systems that are supported for the App-V 5.1 Reporting server installation.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Operating System                 | Service Pack | System Architecture |
+|----------------------------------|--------------|---------------------|
+| Microsoft Windows Server 2019    |              |        64-bit       |
+| Microsoft Windows Server 2016    |              |        64-bit       |
+| Microsoft Windows Server 2012 R2 |              |        64-bit       |
+| Microsoft Windows Server 2012    |              |        64-bit       |
+| Microsoft Windows Server 2008 R2 [Extended Security Update](https://www.microsoft.com/windows-server/extended-security-updates) |      SP1     |        64-bit       |
 
 ### <a href="" id="reporting-server-hardware-requirements-"></a>Reporting server hardware requirements
 
@@ -309,10 +215,10 @@ The following table lists the SQL Server versions that are supported for the App
 
 ## <a href="" id="bkmk-client-supp-cfgs"></a>App-V client system requirements
 
-
 The following table lists the operating systems that are supported for the App-V 5.1 client installation.
 
-**Note:** With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
+> [!NOTE]
+> With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
 
 <table>
 <colgroup>
@@ -371,44 +277,13 @@ The following list displays the supported hardware configuration for the App-V 5
 
 The following table lists the operating systems that are supported for App-V 5.1 Remote Desktop Services (RDS) client installation.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Operating System                 | Service Pack | System Architecture |
+|----------------------------------|--------------|---------------------|
+| Microsoft Windows Server 2019    |              |        64-bit       |
+| Microsoft Windows Server 2016    |              |        64-bit       |
+| Microsoft Windows Server 2012 R2 |              |        64-bit       |
+| Microsoft Windows Server 2012    |              |        64-bit       |
+| Microsoft Windows Server 2008 R2 [Extended Security Update](https://www.microsoft.com/windows-server/extended-security-updates) |      SP1     |        64-bit       |
 
 ### Remote Desktop Services client hardware requirements
 
@@ -422,69 +297,24 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ## Sequencer system requirements
 
-
 The following table lists the operating systems that are supported for the App-V 5.1 Sequencer installation.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows 10</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows 8.1</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows 7</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Operating System                 | Service Pack | System Architecture |
+|----------------------------------|--------------|---------------------|
+| Microsoft Windows Server 2019    |              |        64-bit       |
+| Microsoft Windows Server 2016    |              |        64-bit       |
+| Microsoft Windows Server 2012 R2 |              |        64-bit       |
+| Microsoft Windows Server 2012    |              |        64-bit       |
+| Microsoft Windows Server 2008 R2 [Extended Security Update](https://www.microsoft.com/windows-server/extended-security-updates) |      SP1     |        64-bit       |
+| Microsoft Windows 10             |              | 32-bit and 64-bit   |
+| Microsoft Windows 8.1            |              | 32-bit and 64-bit   |
+| Microsoft Windows 7              |      SP1     | 32-bit and 64-bit   |
 
 ### Sequencer hardware requirements
 
 See the Windows or Windows Server documentation for the hardware requirements. App-V adds no additional hardware requirements.
 
 ## <a href="" id="bkmk-supp-ver-sccm"></a>Supported versions of System Center Configuration Manager
-
 
 The App-V client supports the following versions of System Center Configuration Manager:
 
@@ -496,7 +326,8 @@ The App-V client supports the following versions of System Center Configuration 
 
 The following App-V and System Center Configuration Manager version matrix shows all officially supported combinations of App-V and Configuration Manager.
 
-**Note:** Both App-V 4.5 and 4.6 have exited Mainstream support.
+> [!NOTE]
+> Both App-V 4.5 and 4.6 have exited Mainstream support.
 
 <table>
 <colgroup>
@@ -549,23 +380,8 @@ The following App-V and System Center Configuration Manager version matrix shows
 
 For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
-
-
-
-
-
 ## Related topics
-
 
 [Planning to Deploy App-V](planning-to-deploy-app-v51.md)
 
 [App-V 5.1 Prerequisites](app-v-51-prerequisites.md)
-
- 
-
- 
-
-
-
-
-

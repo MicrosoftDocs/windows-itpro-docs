@@ -29,20 +29,20 @@ This topic provides a roadmap for planning and getting started on the Windows De
 
 1. Review requirements, especially hardware requirements for VBS. 
 
-2. Group devices by degree of control needed. Do most devices fit neatly into a few categories, or are they scattered across all categories? Are users allowed to install any application or must they choose from a list? Are users allowed to use their own peripheral devices?<br>Deployment is simpler if everything is locked down in the same way, but meeting individual departments’ needs, and working with a wide variety of devices, may require a more complicated and flexible deployment.
+2. Group devices by degree of control needed. Do most devices fit neatly into a few categories, or are they scattered across all categories? Are users allowed to install any application or must they choose from a list? Are users allowed to use their own peripheral devices?<br>Deployment is simpler if everything is locked down in the same way, but meeting individual departments' needs, and working with a wide variety of devices, may require a more complicated and flexible deployment.
 
 3. Review how much variety in software and hardware is needed by roles or departments. The following questions can help you clarify how many WDAC policies to create:
 
    - How standardized is the hardware?<br>This can be relevant because of drivers. You could create a WDAC policy on hardware that uses a particular set of drivers, and if other drivers in your environment use the same signature, they would also be allowed to run. However, you might need to create several WDAC policies on different "reference" hardware, then merge the policies together, to ensure that the resulting policy recognizes all the drivers in your environment.
 
-   - What software does each department or role need? Should they be able to install and run other departments’ software?<br>If multiple departments are allowed to run the same list of software, you might be able to merge several WDAC policies to simplify management.
+   - What software does each department or role need? Should they be able to install and run other departments' software?<br>If multiple departments are allowed to run the same list of software, you might be able to merge several WDAC policies to simplify management.
          
    - Are there departments or roles where unique, restricted software is used?<br>If one department needs to run an application that no other department is allowed, it might require a separate WDAC policy. Similarly, if only one department must run an old version of an application (while other departments allow only the newer version), it might require a separate WDAC policy.
 
    - Is there already a list of accepted applications?<br>A list of accepted applications can be used to help create a baseline WDAC policy.<br>As of Windows 10, version 1703, it might also be useful to have a list of plug-ins, add-ins, or modules that you want to allow only in a specific app (such as a line-of-business app). Similarly, it might be useful to have a list of plug-ins, add-ins, or modules that you want to block in a specific app (such as a browser).
 
    - As part of a threat review process, have you reviewed systems for software that can load arbitrary DLLs or run code or scripts? 
-     In day-to-day operations, your organization’s security policy may allow certain applications, code, or scripts to run on your systems depending on their role and the context. However, if your security policy requires that you run only trusted applications, code, and scripts on your systems, you may decide to lock these systems down securely with Windows Defender Application Control policies. 
+     In day-to-day operations, your organization's security policy may allow certain applications, code, or scripts to run on your systems depending on their role and the context. However, if your security policy requires that you run only trusted applications, code, and scripts on your systems, you may decide to lock these systems down securely with Windows Defender Application Control policies. 
     
      Legitimate applications from trusted vendors provide valid functionality. However, an attacker could also potentially use that same functionality to run malicious executable code that could bypass WDAC.
 
@@ -70,7 +70,7 @@ This topic provides a roadmap for planning and getting started on the Windows De
 
 ## Known issues
 
-This section covers known issues with WDAC and Device Guard. Virtualization-based protection of code integrity may be incompatible with some devices and applications, which might cause unexpected failures, data loss, or a blue screen error (also called a stop error). 
+This section covers known issues with WDAC. Virtualization-based protection of code integrity may be incompatible with some devices and applications, which might cause unexpected failures, data loss, or a blue screen error (also called a stop error). 
 Test this configuration in your lab before enabling it in production. 
 
 ### MSI Installations are blocked by WDAC

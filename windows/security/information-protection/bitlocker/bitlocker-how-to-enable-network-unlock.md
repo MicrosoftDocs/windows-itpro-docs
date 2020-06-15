@@ -80,7 +80,9 @@ The server side configuration to enable Network Unlock also requires provisionin
 
 1.  The Windows boot manager detects that a Network Unlock protector exists in the BitLocker configuration.
 2.  The client computer uses its DHCP driver in the UEFI to obtain a valid IPv4 IP address.
-3.  The client computer broadcasts a vendor-specific DHCP request that contains the Network Key (a 256-bit intermediate key) and an AES-256 session key for the reply. Both of these keys are encrypted using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server.
+3.  The client computer broadcasts a vendor-specific DHCP request that contains: 
+    1.  A Network Key (a 256-bit intermediate key) encrypted using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server.
+    2.  An AES-256 session key for the reply.
 4.  The Network Unlock provider on the WDS server recognizes the vendor-specific request.
 5.  The provider decrypts it with the WDS server’s BitLocker Network Unlock certificate RSA private key.
 6.  The WDS provider then returns the network key encrypted with the session key using its own vendor-specific DHCP reply to the client computer. This forms an intermediate key.

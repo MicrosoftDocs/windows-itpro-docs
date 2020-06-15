@@ -23,6 +23,7 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The Security Target describes security functionality and assurance measures used to evaluate Windows.
 
+- [Microsoft Windows 10 (November 2019 Update)](https://download.microsoft.com/download/b/3/7/b37981cf-040a-4b02-a93c-a3d3a93986bf/Windows%2010%201909%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/c/6/9/c6903621-901e-4603-b9cb-fbfe5d6aa691/Windows%2010%201903%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/3/f/e/3fe6938d-2c2d-4ef1-85d5-1d42dc68ea89/Windows%2010%20version%201809%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/0/7/6/0764E933-DD0B-45A7-9144-1DD9F454DCEF/Windows%2010%201803%20GP%20OS%20Security%20Target.pdf)
@@ -61,6 +62,7 @@ These documents describe how to configure Windows to replicate the configuration
 
 **Windows 10, Windows 10 Mobile, Windows Server 2016, Windows Server 2012 R2**
 
+- [Microsoft Windows 10 (November 2019 Update)](https://download.microsoft.com/download/7/7/3/77303254-05fb-4009-8a39-bf5fe7484a41/Windows%2010%201909%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/0/b/b/0bb1c6b7-499a-458e-a5f8-e9cf972dfa8d/Windows%2010%201903%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/f/f/1/ff186e32-35cf-47db-98b0-91ff11763d74/Windows%2010%20version%201809%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/C/1/6C13FBFF-9CB0-455F-A1C8-3E3CB0ACBD7B/Windows%2010%201803%20GP%20OS%20Administrative%20Guide.pdf)
@@ -140,6 +142,7 @@ These documents describe how to configure Windows to replicate the configuration
 
 An Evaluation Technical Report (ETR) is a report submitted to the Common Criteria certification authority for how Windows complies with the claims made in the Security Target. A Certification / Validation Report provides the results of the evaluation by the validation team.
 
+- [Microsoft Windows 10 (November 2019 Update)](https://download.microsoft.com/download/9/f/3/9f350b73-1790-4dcb-97f7-a0e65a00b55f/Windows%2010%201909%20GP%20OS%20Certification%20Report.pdf)
 - [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/2/1/9/219909ad-2f2a-44cc-8fcb-126f28c74d36/Windows%2010%201903%20GP%20OS%20Certification%20Report.pdf)
 - [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/9/4/0/940ac551-7757-486d-9da1-7aa0300ebac0/Windows%2010%20version%201809%20GP%20OS%20Certification%20Report%20-%202018-61-INF-2795.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)

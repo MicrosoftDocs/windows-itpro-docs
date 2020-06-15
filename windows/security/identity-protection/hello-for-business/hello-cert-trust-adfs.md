@@ -75,8 +75,9 @@ Sign-in the federation server with domain administrator equivalent credentials.
 6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
 7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
     ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link](images/hello-internal-web-server-cert.png)
-8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Click **OK** when finished.
-9. Click **Enroll**.
+8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  
+9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Repeat the same to add device registration service name (*enterpriseregistration.contoso.com*) as another alternative name. Click **OK** when finished.
+10. Click **Enroll**.
 
 A server authentication certificate should appear in the computer’s Personal certificate store.
 

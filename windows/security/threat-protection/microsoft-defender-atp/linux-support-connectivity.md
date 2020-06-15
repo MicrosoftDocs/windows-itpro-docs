@@ -54,7 +54,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
 >
-> Intercepting proxies are also not supported for security reasons. Configure your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your proxy certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
@@ -63,6 +63,9 @@ $ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.mi
 ```
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
+
+> [!WARNING]
+> The static proxy cannot be configured through a system-wide `HTTPS_PROXY` environment variable. Instead, ensure that `HTTPS_PROXY` is properly set in the `/lib/system/system/mdatp.service` file.
 
 To use a static proxy, the `mdatp.service` file must be modified. Ensure the leading `#` is removed to uncomment the following line from `/lib/systemd/system/mdatp.service`:
 

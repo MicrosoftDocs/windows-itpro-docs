@@ -1,7 +1,7 @@
 ---
 title: Windows Autopilot and Surface devices
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Find out about Windows Autopilot deployment options for Surface devices.
 keywords: autopilot, windows 10, surface, deployment
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
@@ -37,7 +37,7 @@ These Windows versions support a 4,000-byte (4k) hash value that uniquely identi
 
 ## Exchange experience on Surface devices in need of repair or replacement
 
-Microsoft automatically checks every Surface for Autopilot enrollment and will deregister the device from the customer’s tenant.  Microsoft ensures the replacement device is enrolled into Windows Autopilot once a replacement is shipped back to the customer. This service is available on all device exchange service orders directly with Microsoft.
+Microsoft automatically checks every Surface for Autopilot enrollment and will deregister the device from the customer's tenant.  Microsoft ensures the replacement device is enrolled into Windows Autopilot once a replacement is shipped back to the customer. This service is available on all device exchange service orders directly with Microsoft.
 
 > [!NOTE]
 > When customers use a Partner to return devices, the Partner is responsible for managing the exchange process including deregistering and enrolling devices into Windows Autopilot.
@@ -48,17 +48,15 @@ Select Surface partners can enroll Surface devices in Windows Autopilot for you 
 
 Surface partners that are enabled for Windows Autopilot include:
 
-- [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) 
-- [Atea](https://www.atea.com/)
-- [Bechtle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) 
-- [Cancom](https://www.cancom.de/)
-- [CDW](https://www.cdw.com/)
-- [Computacenter](https://www.computacenter.com/uk)
-- [Connection](https://www.connection.com/brand/microsoft/microsoft-surface) 
-- [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)
-- [SHI](https://www.shi.com/Surface)
-- [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)
-- [Techdata](https://www.techdata.com/)
+| US partners | Global partners | US distributors |
+|--------------|---------------|-------------------|
+| * [CDW](https://www.cdw.com/) | * [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) | * [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)  |
+| * [Connection](https://www.connection.com/brand/microsoft/microsoft-surface)   | * [ATEA](https://www.atea.com/) | * [Techdata](https://www.techdata.com/)  |
+| * [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)  | * [Bechtle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) | * [Ingram](https://go.microsoft.com/fwlink/p/?LinkID=2128954)   |
+| * [SHI](https://www.shi.com/Surface) | * [Cancom](https://www.cancom.de/) |    |
+| * [LDI Connect](https://www.myldi.com/managed-it/)  | * [Computacenter](https://www.computacenter.com/uk) |    |
+| * [F1](https://www.functiononeit.com/#empower)  |   |  |
+| * [Protected Trust](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | | 
 
 ## Learn more
 

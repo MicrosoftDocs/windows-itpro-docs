@@ -73,8 +73,6 @@ appliesto:
 1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it's only on that device, unique to that device, and can't be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
     1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that's sent to the client.
     1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn't be verified on a different device, rendering the certs/key unusable on different devices.
-1. **SCEP is vulnerable. How does Microsoft mitigate the known vulnerabilities of SCEP?**
-    1. This [SCEP Whitepaper](scep-whitepaper.md) addresses how Microsoft mitigates SCEP vulnerabilities.
 
 ## HoloLens 2nd Gen Security Questions
 
@@ -125,5 +123,3 @@ appliesto:
 1. **When a PKI cert is being generated for trusted communication, we want the cert to be generated on the device so that we know it's only on that device, unique to that device, and can't be exported or used to impersonate the device. Is this true on HoloLens? If not is there a potential mitigation?**
     1. CSR for SCEP is generated on the device itself. Intune and the on premise SCEP connector help secure the requests themselves by adding and verifying a challenge string that's sent to the client.
     1. Since HoloLens (1st Gen and 2nd Gen) have a TPM module, these certs would be stored in the TPM module, and are unable to be extracted. Additionally, even if it could be extracted, the challenge strings couldn't be verified on a different device, rendering the certs/key unusable on different devices.
-1. **SCEP is vulnerable. How does Microsoft mitigate the known vulnerabilities of SCEP?**
-    1. This [SCEP Whitepaper](scep-whitepaper.md) addresses how Microsoft mitigates SCEP vulnerabilities.

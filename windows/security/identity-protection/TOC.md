@@ -72,3 +72,4 @@
 ### [VPN profile options](vpn\vpn-profile-options.md)
 ### [How to configure Diffie Hellman protocol over IKEv2 VPN connections](vpn\how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md)
 ### [How to use single sign-on (SSO) over VPN and Wi-Fi connections](vpn\how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md)
+### [Optimizing Office 365 traffic with the Windows 10 VPN client](vpn\vpn-office-365-optimization.md)

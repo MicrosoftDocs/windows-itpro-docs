@@ -14,9 +14,6 @@ manager: dansimp
 
 # Policy CSP - Start
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
@@ -1025,6 +1022,7 @@ To validate on Desktop, do the following:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * User
 > * Device
 
 <hr/>

@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 01/04/2020
+ms.date: 03/27/2020
 ms.reviewer:
 ---
 
@@ -1389,9 +1389,9 @@ The following fields are available:
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
-- **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in a Configuration Manager environment.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Firmware
@@ -1866,7 +1866,7 @@ The following fields are available:
 
 ### CbsServicingProvider.CbsCapabilityEnumeration
 
-This event reports on the results of scanning for optional Windows content on Windows Update.
+This event reports on the results of scanning for optional Windows content on Windows Update to keep Windows up to date.
 
 The following fields are available:
 
@@ -2566,7 +2566,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverBinaryAdd
 
-This event provides the basic metadata about driver binaries running on the system.
+This event sends basic metadata about driver binaries running on the system to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -3225,6 +3225,56 @@ The following fields are available:
 - **resetSettingsResult**  The return code of the action to correct the known issue.
 
 
+## Quality Update Assistant events
+
+### Microsoft.Windows.QualityUpdateAssistant.Applicability
+
+This event sends basic info on whether the device should be updated to the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Applicability check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.DeviceReadinessCheck
+
+This event sends basic info on whether the device is ready to download the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Device readiness check for quality update assistant.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Download
+
+This event sends basic info when download of the latest cumulative update begins.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Download of latest cumulative update payload.
+
+
+### Microsoft.Windows.QualityUpdateAssistant.Install
+
+This event sends basic info on the result of the installation of the latest cumulative update.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
+- **PackageVersion**  Current package version of quality update assistant.
+- **Result**  Install of latest cumulative update payload.
+
+
 ## Remediation events
 
 ### Microsoft.Windows.Remediation.Applicable
@@ -3276,7 +3326,7 @@ The following fields are available:
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by Microsoft Endpoint Configuration Manager.
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by Configuration Manager.
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
@@ -3970,7 +4020,7 @@ This event sends basic metadata about the update installation process generated 
 
 ### SetupPlatformTel.SetupPlatformTelEvent
 
-This service retrieves events generated by SetupPlatform, the engine that drives the various deployment scenarios.
+This service retrieves events generated by SetupPlatform, the engine that drives the various deployment scenarios, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -4512,7 +4562,7 @@ The following fields are available:
 - **DeviceIsMdmManaged**  This device is MDM managed.
 - **IsNetworkAvailable**  If the device network is not available.
 - **IsNetworkMetered**  If network is metered.
-- **IsSccmManaged**  This device is SCCM managed.
+- **IsSccmManaged**  This device is managed by Configuration Manager.
 - **NewlyInstalledOs**  OS is newly installed quiet period.
 - **PausedByPolicy**  Updates are paused by policy.
 - **RecoveredFromRS3**  Previously recovered from RS3.
@@ -6253,7 +6303,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Orchestrator.FlightInapplicable
 
-This event indicates that the update is no longer applicable to this device.
+This event sends data on whether the update was applicable to the device, to help keep Windows up to date.
 
 The following fields are available:
 
@@ -6347,7 +6397,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Orchestrator.PostInstall
 
-This event is sent after a Windows update install completes.
+This event sends data about lite stack devices (mobile, IOT, anything non-PC) immediately before data migration is launched to help keep Windows up to date.
 
 The following fields are available:
 

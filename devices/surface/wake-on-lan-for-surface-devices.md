@@ -8,10 +8,10 @@ ms.pagetype: surface, devices
 ms.sitesec: library
 ms.localizationpriority: medium
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: scottmca
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 

@@ -329,7 +329,7 @@ If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, wri
 
 If box **1a** on your planning worksheet reads **on-premises**, and box **1f** reads **AD FS with third party**, write **No** in box **6a** on your planning worksheet. Otherwise, write **Yes** in box **6a** as you need an Azure account for per-consumption MFA billing. Write **No** in box **6b** on your planning worksheet—on-premises deployments do not use the cloud directory.
 
-Windows Hello for Business does not require an Azure AD premium subscription.  However, some dependencies do.
+Windows Hello for Business does not require an Azure AD premium subscription.  However, some dependencies, such as [MDM automatic enrollment](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment) and [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) do.
 
 If box **1a** on your planning worksheet reads **on-premises**, write **No** in box **6c** on your planning worksheet.
 

@@ -73,39 +73,39 @@ below to onboard systems with Configuration Manager.
 
 1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-device-collections.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-device-collections.png)
 
 2. Right Click **Device Collection** and select **Create Device Collection**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-device-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-device-collection.png)
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-limiting-collection.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-limiting-collection.png)
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-query-rule.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-query-rule.png)
 
 5.  Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-direct-membership.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-direct-membership.png)
 
 6. Select **Criteria** and then choose the star icon.
 
-     ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-criteria.png)
+     ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-criteria.png)
 
-7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
+7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and click on **OK**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-simple-value.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-simple-value.png)
 
 8. Select **Next** and **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-membership-rules.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-membership-rules.png)
 
 9. Select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-confirm.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-confirm.png)
 
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
@@ -119,11 +119,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 
 
-2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager **.
+2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
 
-3.	Select **Download package**.
+3. Select **Download package**.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
@@ -132,11 +132,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-create-policy.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-create-policy.png)
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager wizard](images/sccm-policy-name.png)
+    ![Image of Microsoft Endpoint Configuration Manager wizard](images/configmgr-policy-name.png)
 
 8. Click **Browse**.
 
@@ -179,108 +179,45 @@ Follow the steps below to identify the Microsoft Defender ATP Workspace ID and W
 
 3. Copy the **Workspace ID** and **Workspace Key** and save them. They will be used later in the process.
 
-Before the systems can be onboarded into the workspace, the deployment scripts need to be updated to contain the correct information. Failure to do so will result in the systems not being properly onboarded. Depending on the deployment method, this step may have already been completed.
+4. Install the Microsoft Monitoring Agent (MMA). <br>
+    MMA is currently (as of January 2019) supported on the following Windows Operating
+    Systems:
 
-Edit the InstallMMA.cmd with a text editor, such as notepad and update the
-following lines and save the file:
+    -   Server SKUs: Windows Server 2008 SP1 or Newer
 
-    ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
+    -   Client SKUs: Windows 7 SP1 and later
 
-Edit the ConfiguerOMSAgent.vbs with a text editor, such as notepad, and update the following lines and save the file:
+    The MMA agent will need to be installed on Windows devices. To install the
+    agent, some systems will need to download the [Update for customer experience
+    and diagnostic
+    telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+    in order to collect the data with MMA. These system versions include but may not
+    be limited to:
 
-    ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
+    -   Windows 8.1
 
-Microsoft Monitoring Agent (MMA) is currently (as of January 2019) supported on the following Windows Operating
-Systems:
+    -   Windows 7
 
--   Server SKUs: Windows Server 2008 SP1 or Newer
+    -   Windows Server 2016
 
--   Client SKUs: Windows 7 SP1 and later
+    -   Windows Server 2012 R2
 
-The MMA agent will need to be installed on Windows devices. To install the
-agent, some systems will need to download the [Update for customer experience
-and diagnostic
-telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-in order to collect the data with MMA. These system versions include but may not
-be limited to:
+    -   Windows Server 2008 R2
 
--   Windows 8.1
+    Specifically, for Windows 7 SP1, the following patches must be installed:
 
--   Windows 7
+    -   Install
+        [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
--   Windows Server 2016
+    -   Install either [.NET Framework
+        4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or
+        later) **or**
+        [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
+        Do not install both on the same system.
 
--   Windows Server 2012 R2
+5. If you're using a proxy to connect to the Internet see the Configure proxy settings section.
 
--   Windows Server 2008 R2
-
-Specifically, for Windows 7 SP1, the following patches must be installed:
-
--   Install
-    [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-
--   Install either [.NET Framework
-    4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or
-    later) **or**
-    [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
-    Do not install both on the same system.
-
-To deploy the MMA with Microsoft Endpoint Configuration Manager, follow the steps
-below to utilize the provided batch files to onboard the systems. The CMD file
-when executed, will require the system to copy files from a network share by the
-System, the System will install MMA, Install the DependencyAgent, and configure
-MMA for enrollment into the workspace.
-
-
-1. In  Microsoft Endpoint Configuration Manager console, navigate to **Software
-    Library**.
-
-2.  Expand **Application Management**.
-
-3.  Right-click **Packages**  then select **Create Package**.
-
-4. Provide a Name for the package, then click **Next**
-
-    ![Image of Microsoft Endpoint Configuration Manager console](images/e156a7ef87ea6472d57a3dc594bf08c2.png)
-
-5. Verify **Standard Program** is selected.
-
-   ![Image of Microsoft Endpoint Configuration Manager console](images/227f249bcb6e7f29c4d43aa1ffaccd20.png)
-
-6.  Click **Next**.
-
-    ![Image of Microsoft Endpoint Configuration Manager console](images/2c7f9d05a2ebd19607cc76b6933b945b.png)
-
-7. Enter a program name.
-
-8.  Browse to the location of the InstallMMA.cmd.
-
-9.  Set Run to **Hidden**.
-
-10. Set **Program can run** to **Whether or not a user is logged on**.
-
-11. Click **Next**.
-
-12. Set the **Maximum allowed run time** to 720.
-
-13. Click **Next**.
-
-    ![Image of Microsoft Endpoint Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
-
-14. Verify the configuration, then click **Next**.
-
-    ![Image of Microsoft Endpoint Configuration Manager console](images/a9d3cd78aa5ca90d3c2fbd2e57618faf.png)
-
-15. Click **Next**.
-
-16. Click **Close**.
-
-17. In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP
-    Onboarding Package just created and select **Deploy**.
-
-18. On the right panel select the appropriate collection.
-
-19. Click **OK**.
+Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ## Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
@@ -297,7 +234,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 needs on how Antivirus is configured.
 
   
-    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
     For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   

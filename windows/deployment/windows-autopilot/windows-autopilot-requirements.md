@@ -2,7 +2,7 @@
 title: Windows Autopilot requirements
 ms.reviewer: 
 manager: laurawi
-description: Inform yourself about software, networking, licensing, and configuration requirements for Windows Autopilot deployment.
+description: See the requirements you need to run Windows Autopilot in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune. 
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,9 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: 
+- CI 116757
+- CSSTroubleshooting
 ---
 
 
@@ -68,17 +71,17 @@ If the Delivery Optimization Service is inaccessible, the AutoPilot process will
 <tr><td><b>Diagnostics data<b><td>Starting in Windows 10, 1903, diagnostic data collection will be enabled by default. To disable Windows Analytics and related diagnostics capabilities, see <a href="https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#manage-enterprise-diagnostic-data-level">Manage enterprise diagnostic data level</a>.<br>
 
 If diagnostic data cannot be sent, the Autopilot process will still continue, but services that depend on diagnostic data, such as Windows Analytics, will not work.
-<tr><td><b>Network Connection Status Indicator (NCSI)<b><td>Windows must be able to tell that the device is able to access the internet. For more information, see <a href="https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints#network-connection-status-indicator-ncsi">Network Connection Status Indicator (NCSI)</a>.
+<tr><td><b>Network Connection Status Indicator (NCSI)<b><td>Windows must be able to tell that the device is able to access the internet. For more information, see <a href="https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#14-network-connection-status-indicator">Network Connection Status Indicator (NCSI)</a>.
 
 <a href="http://www.msftconnecttest.com">www.msftconnecttest.com</a> must be resolvable via DNS and accessible via HTTP.
-<tr><td><b>Windows Notification Services (WNS)<b><td>This service is used to enable Windows to receive notifications from apps and services. See <a href="https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#microsoft-store">Microsoft Store</a> for more information.<br>
+<tr><td><b>Windows Notification Services (WNS)<b><td>This service is used to enable Windows to receive notifications from apps and services. See <a href="https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#26-microsoft-store">Microsoft Store</a> for more information.<br>
 
 If the WNS services are not available, the Autopilot process will still continue without notifications.
 <tr><td><b>Microsoft Store, Microsoft Store for Business<b><td>Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see <a href="https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business">Prerequisites for Microsoft Store for Business and Education</a> (also includes Azure AD and Windows Notification Services).<br>
 
 If the Microsoft Store is not accessible, the AutoPilot process will still continue without Microsoft Store apps.
 
-<tr><td><b>Office 365<b><td>As part of the Intune device configuration, installation of Office 365 ProPlus may be required. For more information, see <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2">Office 365 URLs and IP address ranges</a> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
+<tr><td><b>Office 365<b><td>As part of the Intune device configuration, installation of Microsoft 365 Apps for enterprise may be required. For more information, see <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2">Office 365 URLs and IP address ranges</a> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
 <tr><td><b>Certificate revocation lists (CRLs)<b><td>Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl">Office 365 URLs and IP address ranges</a> and <a href="https://aka.ms/o365chains">Office 365 Certificate Chains</a>.
 <tr><td><b>Hybrid AAD join<b><td>The device can be hybrid AAD joined. The computer should be on corporate network for hybrid AAD join to work. See details at <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven-hybrid">Windows Autopilot user-driven mode</a>
 <tr><td><b>Autopilot Self-Deploying mode and Autopilot White Glove<b><td>Firmware TPM devices, which are only provided by Intel, AMD, or Qualcomm, do not include all needed certificates at boot time and must be able to retrieve them from the manufacturer on first use. Devices with discrete TPM chips (including devices from any other manufacturer) come with these certificates preinstalled. See <a href="https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-recommendations">TPM recommendations</a> for more details. Make sure that these URLs are accessible for each firmware TPM provider so that certificates can be successfully requested: 
@@ -94,7 +97,7 @@ If the Microsoft Store is not accessible, the AutoPilot process will still conti
 Windows Autopilot depends on specific capabilities available in Windows 10 and Azure Active Directory. It also requires an MDM service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs:
 
 To provide needed Azure Active Directory (automatic MDM enrollment and company branding features) and MDM functionality, one of the following is required:
-- [Microsoft 365 Business subscriptions](https://www.microsoft.com/microsoft-365/business)
+- [Microsoft 365 Business Premium subscriptions](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft 365 F1 subscriptions](https://www.microsoft.com/microsoft-365/enterprise/firstline)
 - [Microsoft 365 Academic A1, A3, or A5 subscriptions](https://www.microsoft.com/education/buy-license/microsoft365/default.aspx)
 - [Microsoft 365 Enterprise E3 or E5 subscriptions](https://www.microsoft.com/microsoft-365/enterprise), which include all Windows 10, Office 365, and EM+S features (Azure AD and Intune).
@@ -106,7 +109,7 @@ To provide needed Azure Active Directory (automatic MDM enrollment and company b
 > Even when using Microsoft 365 subscriptions, you still need to [assign Intune licenses to the users](https://docs.microsoft.com/intune/fundamentals/licenses-assign).
 
 Additionally, the following are also recommended (but not required):
-- [Office 365 ProPlus](https://www.microsoft.com/p/office-365-proplus/CFQ7TTC0K8R0), which can be deployed easily via Intune (or other MDM services).
+- [Microsoft 365 Apps for enterprise](https://www.microsoft.com/p/office-365-proplus/CFQ7TTC0K8R0), which can be deployed easily via Intune (or other MDM services).
 - [Windows Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation), to automatically step up devices from Windows 10 Pro to Windows 10 Enterprise.
 
 ## Configuration requirements

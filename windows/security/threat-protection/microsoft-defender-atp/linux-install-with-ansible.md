@@ -139,6 +139,9 @@ Create subtask or role files that contribute to an actual task. First create the
 
     In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
+    > [!WARNING]
+    > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
@@ -251,6 +254,10 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
 ## Log installation issues
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+## Operating system upgrades
+
+When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
 
 ## References
 

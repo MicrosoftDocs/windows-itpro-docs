@@ -101,7 +101,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <tr class="odd">
 <td align="left"><p>Deploying any of the following products to a shared computer, for example, by using Remote Desktop Services:</p>
 <ul>
-<li><p>Office 365 ProPlus</p></li>
+<li><p>Microsoft 365 Apps for enterprise</p></li>
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
@@ -640,7 +640,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a PowerShell cmdlet.
 
-2.  Sequence your plug-ins using the App-V 5.0 Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
+2.  Sequence your plug-ins using the App-V 5.0 Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Microsoft 365 Apps for enterprise(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
 
 3.  Create an App-V 5.0 package that includes the desired plug-ins.
 

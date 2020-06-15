@@ -24,17 +24,13 @@ additionalContent:
     - title: For IT Professionals # < 60 chars (optional)
       items:
         # Card
-        - title: Surface devices
+        - title: Surface devices documentation
           summary: Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
           url: https://docs.microsoft.com/en-us/surface/get-started
         # Card
-        - title: Surface Hub
-          summary: Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device that brings the power of Windows 10 to team collaboration. Learn how to plan, deploy, manage, and support your Surface Hub devices.
-          url: https://docs.microsoft.com/surface-hub/index
-        # Card
-        - title: Surface for Business
-          summary: Explore how Surface devices are transforming the modern workplace with people-centric design and flexible form factors, helping you get the most out of AI, big data, the cloud, and other foundational technologies.
-          url: https://www.microsoft.com/surface/business
+        - title: Surface Hub documentation
+          summary: Learn how to deploy and manage Surface Hub 2S, the all-in-one digital interactive whiteboard, meetings platform, and collaborative computing device. 
+          url: https://docs.microsoft.com/surface-hub/index     
     - title: Other resources # < 60 chars (optional)
       items:
         # Card
@@ -49,10 +45,11 @@ additionalContent:
           links:
             - text: Surface training on Microsoft Learn
               url: https://docs.microsoft.com/learn/browse/?term=Surface
+            - text: Surface Hub 2S adoption guidance
+              url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
             - text: Microsoft Mechanics Surface videos
               url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-            - text: Surface Hub 2S adoption and training
-              url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
+            
         # Card
         - title: Need help?
           links:
@@ -60,3 +57,5 @@ additionalContent:
               url: https://support.microsoft.com/products/surface-devices
             - text: Surface Hub
               url: https://support.microsoft.com/hub/4343507/surface-hub-help
+            - text: Contact Surface Hub Support
+              url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e

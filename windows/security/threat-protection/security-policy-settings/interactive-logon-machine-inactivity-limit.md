@@ -28,6 +28,9 @@ Describes the best practices, location, values, management, and security conside
 
 Beginning with Windows Server 2012 and Windows 8, Windows detects user-input inactivity of a sign-in (logon) session by using the security policy setting **Interactive logon: Machine inactivity limit**. If the amount of inactive time exceeds the inactivity limit set by this policy, then the user’s session locks by invoking the screen saver (screen saver should be active on the destination machine). You can activate the screen saver by enabling the Group Policy **User Configuration\Administrative Templates\Control Panel\Personalization\Enable screen saver**. This policy setting allows you to control the locking time by using Group Policy.
 
+> [!NOTE]
+> If the **Interactive logon: Machine inactivity limit** security policy setting is configured, the device locks not only when inactive time exceeds the inactivity limit, but also when the screensaver activates or when the display turns off because of power settings.
+
 ### Possible values
 
 The automatic lock of the device is set in elapsed seconds of inactivity, which can range from zero (0) to 599,940 seconds (166.65 hours).

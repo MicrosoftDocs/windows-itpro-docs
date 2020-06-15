@@ -8,10 +8,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices, surface
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Manage Surface UEFI settings

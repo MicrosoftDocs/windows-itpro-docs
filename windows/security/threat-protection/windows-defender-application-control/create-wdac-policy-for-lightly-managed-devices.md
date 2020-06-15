@@ -22,8 +22,8 @@ ms.date: 11/15/2019
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy for **lightly-managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC managed devices as described in later topics.
 

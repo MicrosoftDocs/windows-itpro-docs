@@ -7,12 +7,12 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ---
 
 # Considerations for Surface and Microsoft Endpoint Configuration Manager

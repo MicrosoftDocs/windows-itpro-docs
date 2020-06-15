@@ -1,7 +1,7 @@
 ---
 title: Change history for Microsoft HoloLens documentation
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: This topic lists new and updated topics for HoloLens.
 keywords: change history
 ms.prod: hololens
@@ -16,6 +16,14 @@ ms.localizationpriority: medium
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## Windows 10 Holographic, version 2004
+
+The topics in this library have been updated for Windows 10 Holographic, version 2004.
+
+## HoloLens 2
+
+The topics in this library have been updated for HoloLens 2 and Windows 10 Holographic, version 1903.
 
 ## April 2019
 

@@ -1,6 +1,6 @@
 ---
 title: Get IP related alerts API
-description: Retrieves a collection of alerts related to a given IP address.
+description: Retrieve a collection of alerts related to a given IP address using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, ip, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

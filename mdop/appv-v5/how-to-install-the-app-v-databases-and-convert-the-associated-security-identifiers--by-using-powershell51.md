@@ -13,19 +13,17 @@ ms.prod: w10
 ms.date: 06/16/2016
 ---
 
-
 # How to Install the App-V Databases and Convert the Associated Security Identifiers by Using PowerShell
-
 
 Use the following PowerShell procedure to convert any number of Active Directory Domain Services (AD DS) user or machine accounts into formatted Security Identifiers (SIDs) both in the standard format and in the hexadecimal format used by Microsoft SQL Server when running SQL scripts.
 
 Before attempting this procedure, you should read and understand the information and examples displayed in the following list:
 
--   **.INPUTS** – The account or accounts used to convert to SID format. This can be a single account name or an array of account names.
+- **.INPUTS** – The account or accounts used to convert to SID format. This can be a single account name or an array of account names.
 
--   **.OUTPUTS** - A list of account names with the corresponding SID in standard and hexadecimal formats.
+- **.OUTPUTS** - A list of account names with the corresponding SID in standard and hexadecimal formats.
 
--   **Examples** -
+- **Examples** -
 
     **.\\ConvertToSID.ps1 DOMAIN\\user\_account1 DOMAIN\\machine\_account1$ DOMAIN\\user\_account2 | Format-List**.
 
@@ -33,13 +31,10 @@ Before attempting this procedure, you should read and understand the information
 
     **.\\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\\SIDs.txt -Width 200**
 
-    \#&gt;
-
-**To convert any number of Active Directory Domain Services (AD DS) user or machine accounts into formatted Security Identifiers (SIDs)**
+## To convert any number of Active Directory Domain Services (AD DS) user or machine accounts into formatted Security Identifiers (SIDs)
 
 1. Copy the following script into a text editor and save it as a PowerShell script file, for example **ConvertToSIDs.ps1**.
-
-2. To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
+1. To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
 
    ```powershell
    <#
@@ -61,7 +56,7 @@ Before attempting this procedure, you should read and understand the information
    function ConvertSIDToHexFormat
    {
 
-      param(\[System.Security.Principal.SecurityIdentifier\]$sidToConvert)
+      param([System.Security.Principal.SecurityIdentifier]$sidToConvert)
 
       $sb = New-Object System.Text.StringBuilder
       [int] $binLength = $sidToConvert.BinaryLength
@@ -79,7 +74,7 @@ Before attempting this procedure, you should read and understand the information
 
     [string]::Format("{0}====== Description ======{0}{0}" +
                   "  Converts any number of user or machine account names to string and hexadecimal SIDs.{0}" +
-                  "  Pass the account(s) as space separated command line parameters. (For example 'ConvertToSID.exe DOMAIN\\Account1 DOMAIN\\Account2 ...'){0}" +
+                  "  Pass the account(s) as space separated command line parameters. (For example 'ConvertToSID.ps1 DOMAIN\Account1 DOMAIN\Account2 ...'){0}" +
                   "  The output is written to the console in the format 'Account name    SID as string   SID as hexadecimal'{0}" +
                   "  And can be written out to a file using standard PowerShell redirection{0}" +
                   "  Please specify user accounts in the format 'DOMAIN\username'{0}" +
@@ -131,17 +126,21 @@ Before attempting this procedure, you should read and understand the information
            Write-Output $SIDs
        }
    }
-3. Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
+   ```
+
+1. Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
 
    For example,
 
-   **.\\ConvertToSID.ps1 DOMAIN\\user\_account1 DOMAIN\\machine\_account1$ DOMAIN\\user\_account2 | Format-List” or “$accountsArray = @("DOMAIN\\user\_account1", "DOMAIN\\machine\_account1$", "DOMAIN\_user\_account2")**
+   **.\\ConvertToSID.ps1 DOMAIN\\user\_account1 DOMAIN\\machine\_account1$ DOMAIN\\user\_account2 | Format-List**
+   
+   or
+   
+   **$accountsArray = @("DOMAIN\\user\_account1", "DOMAIN\\machine\_account1$", "DOMAIN\_user\_account2")**
+   **.\\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\\SIDs.txt -Width 200**
 
-   **.\\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\\SIDs.txt -Width 200”**
-
-   **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+**Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md)

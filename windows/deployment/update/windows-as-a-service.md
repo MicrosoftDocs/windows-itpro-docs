@@ -125,7 +125,7 @@ Looking to learn more? These informative session replays from Microsoft Ignite 2
 
 [BRK3027: Deploying Windows 10: Making the update experience smooth and seamless](https://myignite.techcommunity.microsoft.com/sessions/64612#ignite-html-anchor)
 
-[BRK3039: Windows 10 and Microsoft Office 365 ProPlus lifecycle and servicing update](https://myignite.techcommunity.microsoft.com/sessions/66763#ignite-html-anchor)
+[BRK3039: Windows 10 and Microsoft Microsoft 365 Apps for enterprise lifecycle and servicing update](https://myignite.techcommunity.microsoft.com/sessions/66763#ignite-html-anchor)
 
 [BRK3211: Ask the Experts: Successfully deploying, servicing, managing Windows 10](https://myignite.techcommunity.microsoft.com/sessions/65963#ignite-html-anchor)
 

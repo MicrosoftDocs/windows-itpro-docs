@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.date: 10/03/2019
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Surface Pro X app compatibility

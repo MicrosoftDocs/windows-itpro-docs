@@ -2,21 +2,22 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
-audience: itpromanager: dansimp
+ms.reviewer:
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
 <!-- ## Provision Favorites -->
->*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
->*Default setting:  Disabled or not configured (Customizable)*
+> *Supported versions: Microsoft Edge on Windows 10, version 1511 or later*<br>
+> *Default setting:  Disabled or not configured (Customizable)*
 
 [!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)]
 
 
->[!IMPORTANT]
->Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
+> [!IMPORTANT]
+> Enable only this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy. If you enable both, Microsoft Edge prevents users from syncing their favorites between the two browsers.
 
 ### Supported values
 
@@ -38,7 +39,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[ProvisionFavorites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites
 - **Data type:** String
 
 #### Registry settings

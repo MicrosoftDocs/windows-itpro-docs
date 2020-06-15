@@ -3,7 +3,7 @@ title: Manage Microsoft Surface Hub
 description: How to manage your Surface Hub after finishing the first-run program.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library

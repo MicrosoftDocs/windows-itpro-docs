@@ -1345,7 +1345,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of the DnsUpdateProxy group are DNS clients. They are permitted to perform dynamic updates on behalf of other clients (such as DHCP servers). A DNS server can develop stale resource records when a DHCP server is configured to dynamically register host (A) and pointer (PTR) resource records on behalf of DHCP clients by using dynamic update. Adding clients to this security group mitigates this scenario.
 
-However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account.
+However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
 For information, see [DNS Record Ownership and the DnsUpdateProxy Group](https://technet.microsoft.com/library/dd334715.aspx).
 
@@ -1365,7 +1365,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1103</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1406,7 +1406,7 @@ This security group has not changed since Windows Server 2008.
 
 ### <a href="" id="bkmk-dnsadmins"></a>DnsAdmins
 
-Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions.
+Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
 For more information about security and DNS, see [DNSSEC in Windows Server 2012](https://technet.microsoft.com/library/dn593694(v=ws.11).aspx).
 
@@ -1426,7 +1426,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1102</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>

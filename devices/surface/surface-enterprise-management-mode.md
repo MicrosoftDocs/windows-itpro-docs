@@ -7,12 +7,13 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
-ms.reviewer: scottmca
-manager: dansimp
+ms.reviewer: hachidan
+manager: laurawi
 ms.localizationpriority: medium
-ms.audience: itpro
+audience: itpro
+ms.date: 05/26/2020
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -30,6 +31,9 @@ There are two administrative options you can use to manage SEMM and enrolled Sur
 ## Microsoft Surface UEFI Configurator
 
 The primary workspace of SEMM is Microsoft Surface UEFI Configurator, as shown in Figure 1. Microsoft Surface UEFI Configurator is a tool that is used to create Windows Installer (.msi) packages or WinPE images that are used to enroll, configure, and unenroll SEMM on a Surface device. These packages contain a configuration file where the settings for UEFI are specified. SEMM packages also contain a certificate that is installed and stored in firmware and used to verify the signature of configuration files before UEFI settings are applied.
+
+>[!NOTE]
+>You can now use Surface UEFI Configurator and SEMM to manage ports on Surface Dock 2. To learn more, see [Secure Surface Dock 2 ports with SEMM](secure-surface-dock-ports-semm.md).
 
 ![Microsoft Surface UEFI Configurator](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
 
@@ -95,7 +99,7 @@ The following list shows all the available devices you can manage in SEMM:
 |Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
 | Security                           | Displays the Surface UEFI **Security** page. If you do not configure this setting, the Security page is displayed.                                                                                                                 |
 | Devices                            | Displays the Surface UEFI **Devices** page. If you do not configure this setting,  the Devices page is displayed.                                                                                                                     |
-| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                                                            |
+| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the Boot page is displayed.                                                                                                                                                            |
 | DateTime                           | Displays the Surface UEFI **DateTime** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                |
 
 
@@ -227,9 +231,27 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-### Version 2.59.
-* Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
-- Support to Wake on Power feature
+### Version 2.71.139.0
+
+This version of SEMM adds support for Surface Dock 2 management features  for Surface Book 3, Surface Laptop 3, and Surface Pro 7 including:
+
+- Enabling audio (locking/unlocking), Ethernet and USB ports
+- Ability to create dock packages for both authenticated and unauthenticated hosts
+
+### Version 2.70.130.0
+
+This version of SEMM includes:
+
+- Support for Surface Go 2
+- Support for Surface Book 3
+- Bug fixes
+
+
+### Version 2.59.139.0
+
+* Support for Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
+
+- Support for Wake on Power feature
 
 ### Version 2.54.139.0
 * Support to Surface Hub 2S
@@ -263,6 +285,6 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Related topics
 
-[Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
-
-[Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
+- [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
+- [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
+- [Secure Surface Dock 2 ports with SEMM](secure-surface-dock-ports-semm.md)

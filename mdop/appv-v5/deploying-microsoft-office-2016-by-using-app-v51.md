@@ -102,7 +102,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <tr class="odd">
 <td align="left"><p>Deploying any of the following products to a shared computer, for example, by using Remote Desktop Services:</p>
 <ul>
-<li><p>Office 365 ProPlus</p></li>
+<li><p>Microsoft 365 Apps for enterprise</p></li>
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
@@ -293,7 +293,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
       </tr>
       <tr class="even">
       <td align="left"><p>Branch (attribute of Add element)</p></td>
-      <td align="left"><p>Optional. Specifies the update branch for the product that you want to download or install. </p><p>For more information about update branches, see Overview of update branches for Office 365 ProPlus.</p></td>
+      <td align="left"><p>Optional. Specifies the update branch for the product that you want to download or install. </p><p>For more information about update branches, see Overview of update branches for Microsoft 365 Apps for enterprise.</p></td>
       <td align="left"><p><code>Branch = &quot;Business&quot;</code></p></td>
       </tr>
       </tbody>
@@ -348,7 +348,7 @@ After you download the Office 2016 applications through the Office Deployment To
 
     The following table summarizes the values you need to enter in the CustomConfig.xml file for the licensing model you’re using. The steps in the sections that follow the table will specify the exact entries you need to make.
 
->**Note**&nbsp;&nbsp;You can use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
+>**Note**&nbsp;&nbsp;You can use the Office Deployment Tool to create App-V packages for Microsoft 365 Apps for enterprise. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
 
 <table>
 <colgroup>
@@ -588,7 +588,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a PowerShell cmdlet.
 
-2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2016 plug-ins.
+2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer being used to sequence the plug-in. It is recommended you use Microsoft 365 Apps for enterprise(non-virtual) on the sequencing computer when you sequence Office 2016 plug-ins.
 
 3.  Create an App-V package that includes the desired plug-ins.
 

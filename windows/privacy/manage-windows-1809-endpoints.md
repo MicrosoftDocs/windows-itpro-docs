@@ -85,7 +85,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 |----------------|----------|------------|
 |  |    | star-mini.c10r.facebook.com |
 
-The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office. 
+The following endpoint is used by the Photos app to download configuration files, and to connect to the Microsoft 365 admin center's shared infrastructure, including Office. 
 To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
 Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
@@ -311,7 +311,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Office
 
-The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoints are used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -325,7 +325,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 |   | HTTPS | nexusrules.officeapps.live.com |
 |   | HTTPS | officeclient.microsoft.com |
 
-The following endpoint is used to connect to the Office 365 portal's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoint is used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -398,7 +398,7 @@ The following endpoint is used to retrieve Skype configuration values. To turn o
 ## Windows Defender
 
 The following endpoint is used for Windows Defender when Cloud-based Protection is enabled.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection. For a detailed list of Windows Defender Antivirus cloud service connections, see [Allow connections to the Windows Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud-service).
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection. For a detailed list of Microsoft Defender Antivirus cloud service connections, see [Allow connections to the Microsoft Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud-service).
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|

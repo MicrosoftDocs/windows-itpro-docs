@@ -310,17 +310,6 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-#### Enable / disable early preview
-
-Specify whether to enable EDR early preview features.
-
-|||
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | earlyPreview |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
-
 #### Device tags
 
 Specify a tag name and its value. 

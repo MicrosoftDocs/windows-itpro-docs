@@ -6,10 +6,11 @@ ms.mktglfcycl: manage
 ms.localizationpriority: high
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
+ms.date: 4/15/2020
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Deploying, managing, and servicing Surface Pro X
@@ -43,7 +44,7 @@ Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager 
 
 A component of Microsoft Enterprise Mobility + Security, Intune integrates with Azure Active Directory for identity and access control and provides granular management of enrolled Surface Pro X devices. Intune mobile device management (MDM) policies have a number of advantages over older on-premises tools such as Windows Group Policy. This includes faster device login times and a more streamlined catalog of policies enabling full device management from the cloud. For example, you can manage LTE using eSIM profiles to configure data plans and deploy activation codes to multiple devices.<br> 
 
-For more information about setting up Intune, refer to the [Intune documentation](https://docs.microsoft.com/intune/).
+For more information about using Intune, refer to the [Intune documentation](https://docs.microsoft.com/intune/).
 
 ### Co-management
 
@@ -108,9 +109,9 @@ Popular browsers run on Surface Pro X:
 ## Installing and using Microsoft Office
 
 - Use Office 365 for the best experience on a Windows 10 PC on an ARM-based processor.
-- Office 365 “click-to-run” installs Outlook, Word, Excel, and PowerPoint, optimized to run on a Windows 10 PC on an ARM-based processor.
+- Office 365 "click-to-run" installs Outlook, Word, Excel, and PowerPoint, optimized to run on a Windows 10 PC on an ARM-based processor.
 - Microsoft Teams runs great on Surface Pro X.
-- For “perpetual versions” of Office such as Office 2019, install the 32-bit version.
+- For "perpetual versions" of Office such as Office 2019, install the 32-bit version.
 
 ## VPN
 
@@ -138,10 +139,10 @@ The following tables show the availability of selected key features on Surface P
 | Endpoint Configuration Manager                                          | Yes               | Yes           |                                                                                       |
 | Power on When AC Restore                      | Yes                 | Yes           |                                                                                   |
 | Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           |                                                                                   |
-| Surface Dock Firmware Update                  | Yes                 | Yes           |                                                                                   |
+| Surface Dock Firmware Update                  | Yes                 | No           |                                                                                   |
 | Asset Tag Utility                             | Yes                 | Yes           |                                                                                   |
 | Surface Enterprise management Mode (SEMM)     | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
-| Surface UEFI Configurator                     | Yes |               | No option to disable hardware. on Surface Pro X at the firmware level.                |
+| Surface UEFI Configurator                     | Yes |   No            | No option to disable hardware. on Surface Pro X at the firmware level.                |
 | Surface UEFI Manager                          | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
 
 

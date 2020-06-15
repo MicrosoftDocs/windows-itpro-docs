@@ -77,7 +77,6 @@ Not currently available.
 
 ## Integrations
 Integrations with the following Microsoft products are not currently available:
-- Azure Security Center
 - Azure Advanced Threat Protection
 - Azure Information Protection
 - Office 365 Advanced Threat Protection

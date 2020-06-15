@@ -34,7 +34,7 @@ For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedTh
 ## Before you begin
 If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
 
-For more information on enabling MDM with Microsoft Intune, see [Setup Windows Device Management](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
 ## Onboard machines using Microsoft Intune
 

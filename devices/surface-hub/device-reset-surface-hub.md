@@ -3,7 +3,7 @@ title: Reset or recover a Surface Hub
 description: Describes the reset and recovery processes for the Surface Hub, and provides instructions.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: reset Surface Hub, recover
 ms.prod: surface-hub
 ms.sitesec: library

@@ -3,7 +3,7 @@ title: Install apps on your Microsoft Surface Hub
 description: Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.
 ms.assetid: 3885CB45-D496-4424-8533-C9E3D0EDFD94
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: install apps, Microsoft Store, Microsoft Store for Business
 ms.prod: surface-hub
 ms.sitesec: library

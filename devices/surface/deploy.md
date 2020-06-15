@@ -7,8 +7,8 @@ ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
 ms.reviewer: 
-manager: dansimp
-ms.author: v-jokai
+manager: laurawi
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro

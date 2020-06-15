@@ -25,17 +25,17 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: What is Surface Hub 2S?
-      itemType: overview
-      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099
+    - title: What's new in Surface Hub 2S?
+      itemType: whats-new
+      url: surface-hub-2s-whats-new.md
      # Card
     - title: Surface Hub security overview 
       itemType: learn
       url: surface-hub-security.md
-    # Card
-    - title: What's new in Surface Hub 2S?
-      itemType: whats-new
-      url: surface-hub-2s-whats-new.md
+   # Card
+    - title: Manage Surface Hub 2S with Intune
+      itemType: how-to-guide
+      url: surface-hub-2s-manage-intune.md
     # Card
     - title: Operating system essentials
       itemType: learn

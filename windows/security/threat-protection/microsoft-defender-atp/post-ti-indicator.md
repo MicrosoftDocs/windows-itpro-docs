@@ -71,6 +71,7 @@ description | String | Description of the indicator. **Required**
 expirationTime | DateTimeOffset | The expiration time of the indicator. **Optional**
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions | String | TI indicator alert recommended actions. **Optional**
+rbacGroupNames | String | Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 
 
 ## Response
@@ -87,16 +88,18 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/api/indicators
 Content-type: application/json
 {
-	"indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",
-	"indicatorType": "FileSha1",
-	"title": "test",
-	"application": "demo-test",
-	"expirationTime": "2020-12-12T00:00:00Z",
-	"action": "AlertAndBlock",
-	"severity": "Informational",
-	"description": "test",
-	"recommendedActions": "nothing"
+    "indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",
+    "indicatorType": "FileSha1",
+    "title": "test",
+    "application": "demo-test",
+    "expirationTime": "2020-12-12T00:00:00Z",
+    "action": "AlertAndBlock",
+    "severity": "Informational",
+    "description": "test",
+    "recommendedActions": "nothing",
+    "rbacGroupNames": ["group1", "group2"]
 }
+```
 
 ## Related topic
 - [Manage indicators](manage-indicators.md)

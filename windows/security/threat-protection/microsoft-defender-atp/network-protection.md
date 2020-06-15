@@ -27,7 +27,7 @@ ms.custom: asr
 
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
-Network protection expands the scope of [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
+Network protection expands the scope of [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Network protection is supported beginning with Windows 10, version 1709. 
 
@@ -44,11 +44,11 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 ## Requirements
 
-Network protection requires Windows 10 Pro, Enterprise E3, E5 and Windows Defender AV real-time protection.
+Network protection requires Windows 10 Pro, Enterprise E3, E5 and Microsoft Defender AV real-time protection.
 
-Windows 10 version | Windows Defender Antivirus
+Windows 10 version | Microsoft Defender Antivirus
 -|-
-Windows 10 version 1709 or later | [Windows Defender AV real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) must be enabled
+Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
 
 ## Review network protection events in the Microsoft Defender ATP Security Center
 

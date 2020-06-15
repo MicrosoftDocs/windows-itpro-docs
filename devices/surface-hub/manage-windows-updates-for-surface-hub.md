@@ -3,7 +3,7 @@ title: Manage Windows updates on Surface Hub
 description: You can manage Windows updates on your Microsoft Surface Hub or Surface Hub 2S by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: manage Windows updates, Surface Hub, Windows Server Update Services, WSUS
 ms.prod: surface-hub
 ms.sitesec: library

@@ -52,6 +52,9 @@ From the **Onboarding** card, select **Onboard more machines** to create and ass
 >[!TIP]
 >Alternatively, you can navigate to the Microsoft Defender ATP onboarding compliance page in the [Microsoft Azure portal](https://portal.azure.com/) from **All services > Intune > Device compliance > Microsoft Defender ATP**.
 
+>[!NOTE]
+> If you want to view the most up-to-date device data, click on **List of devices without ATP sensor**.
+
 From the device compliance page, create a configuration profile specifically for the deployment of the Microsoft Defender ATP sensor and assign that profile to the machines you want to onboard. To do this, you can either:
 
 - Select **Create a device configuration profile to configure ATP sensor** to start with a predefined device configuration profile.

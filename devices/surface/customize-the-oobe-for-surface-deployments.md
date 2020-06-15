@@ -3,7 +3,7 @@ title: Customize the OOBE for Surface deployments (Surface)
 description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: deploy, customize, automate, network, Pen, pair, boot
 ms.localizationpriority: medium
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ---

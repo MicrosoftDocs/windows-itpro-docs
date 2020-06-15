@@ -76,10 +76,11 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
     * URL - wildcard supported
     * Command line - wildcard supported
 
-3. Select the **Trigerring IOC**.
+3. Select the **Triggering IOC**.
     
 4. Specify the action and scope on the alert. <br>
-   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on a specific machine group.
+   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and machine timeline and will appear as resolved across Microsoft Defender ATP APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard and will not be streamed across Microsoft Defender ATP APIs.
+
 
 5. Enter a rule name and a comment.
 

@@ -6,10 +6,10 @@ ms.mktglfcycl: manage
 ms.localizationpriority: medium
 ms.sitesec: library
 author: coveminer
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
-manager: dansimp
+manager: laurawi
 ---
 
 # Surface Asset Tag Tool

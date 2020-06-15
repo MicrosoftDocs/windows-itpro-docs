@@ -49,26 +49,7 @@ You can remediate the issues based on prioritized [security recommendations](tvm
 
 ## Reduce your threat and vulnerability exposure
 
-To lower your threat and vulnerability exposure, follow these steps.
-
-1. Review the **Top security recommendations** from your [**Threat & Vulnerability Management dashboard**](tvm-dashboard-insights.md) , and select the first item on the list. The **Security recommendation** page opens.  
-
-   Always prioritize recommendations that are associated with ongoing threats:
-
-   - ![Threat insight](images/tvm_bug_icon.png) Threat insight icon
-   - ![Possible active alert](images/tvm_alert_icon.png) Active alert icon
-
-   ![Screenshot of security recommendations page](images/top-security-recommendations350.png)
-
-2. The **Security recommendations** page shows the list of items to remediate. Select the security recommendation that you need to investigate. When you select a recommendation from the list, a fly-out panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Click **Open software page** option from the flyout panel.  ![Details in security recommendations page](images/tvm_security_recommendations_page.png)
-
-3. Select **Installed machines** and then the affected machine from the list. A flyout panel will open with the relevant machine details, exposure and risk levels, alert and incident activities. ![Details in software page ](images/tvm_software_page_details.png)
-
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details.  ![Details in machine page](images/tvm_machine_page_details.png)
-
-5. Allow a few hours for the changes to propagate in the system.
-
-6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate is removed from the security recommendation list, and the exposure score decreases.
+Lower your threat and vulnerability exposure by remediating [security recommendations](tvm-security-recommendation.md). Make the most impact to your exposure score by remediating the top security recommendations, which can be viewed in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
 
 ## Related topics
 
