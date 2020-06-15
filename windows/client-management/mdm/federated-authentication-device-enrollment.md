@@ -18,7 +18,7 @@ This section provides an example of the mobile device enrollment protocol using 
 
 The &lt;AuthenticationServiceURL&gt; element the discovery response message specifies web authentication broker page start URL.
 
-For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this topic
 
@@ -32,7 +32,7 @@ For the list of enrollment scenarios not supported in Windows 10, see [Enrollme
 
 The discovery web service provides the configuration information necessary for a user to enroll a phone with a management service. The service is a restful web service over HTTPS (server authentication only).
 
-> [!Note]
+> [!NOTE]
 > The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
 The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
@@ -41,28 +41,28 @@ The first request is a standard HTTP GET request.
 
 The following example shows a request via HTTP GET to the discovery server given user@contoso.com as the email address.
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: unknown
 Header Byte Count: 153
 Body Byte Count: 0
 ```
 
-```
+```http
 GET /EnrollmentServer/Discovery.svc HTTP/1.1
 User-Agent: Windows Phone 8 Enrollment Client
 Host: EnterpriseEnrollment.contoso.com
 Pragma: no-cache
 ```
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: text/html
 Header Byte Count: 248
 Body Byte Count: 0
 ```
 
-```
+```http
 HTTP/1.1 200 OK
 Connection: Keep-Alive
 Pragma: no-cache
@@ -82,7 +82,7 @@ The following logic is applied:
 
 The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address
 
-```
+```http
 https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
 ```
 
@@ -127,7 +127,7 @@ The discovery response is in the XML format and includes the following fields:
 -   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
 -   In Windows, Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
-> [!Note]  
+> [!Note]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 When authentication policy is set to be Federated, Web Authentication Broker (WAB) will be leveraged by the enrollment client to get a security token. The WAB start page URL is provided by the discovery service in the response message. The enrollment client will call the WAB API within the response message to start the WAB process. WAB pages are server hosted web pages. The server should build those pages to fit the device screen nicely and be as consistent as possible to other builds in the MDM enrollment UI. The opaque security token that is returned from WAB as an endpage will be used by the enrollment client as the device security secret during the client certificate enrollment request call.
@@ -163,7 +163,7 @@ After authentication is complete, the auth server should return an HTML form doc
 > [!NOTE]
 > To make an application compatible with strict Content Security Policy, it is usually necessary to make some changes to HTML templates and client-side code, add the policy header, and test that everything works properly once the policy is deployed.
 
-```
+```html
 HTTP/1.1 200 OK 
 Content-Type: text/html; charset=UTF-8
 Vary: Accept-Encoding
@@ -294,7 +294,7 @@ After the user is authenticated, the web service retrieves the certificate templ
 
 MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. For Windows device, we will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
-> [!Note]  
+> [!NOTE]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 The following snippet shows the policy web service response.
@@ -541,7 +541,7 @@ The following example shows the enrollment web service response.
 
 The following code shows sample provisioning XML (presented in the preceding package as a security token):
 
-```
+```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
       <characteristic type="Root">
