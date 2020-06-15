@@ -17,7 +17,7 @@ The Microsoft Teams app for Surface Hub is periodically updated and available vi
  
 
 ## Version history
-| **Store app version** | **Updates**                                                                                         | **Published to Microsoft Store** |
+| Store app version | Updates                                                                                         | Published to Microsoft Store |
 | --------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------- |
 | 0.2020.13201.0        | - 3x3 Gallery view on Surface Hub<br>- Ability to search for External users                         | June 10, 2020<br>            |
 | 0.2020.13201          | - Quality improvements and Bug fixes                                                                | June 1, 2020<br>          |
