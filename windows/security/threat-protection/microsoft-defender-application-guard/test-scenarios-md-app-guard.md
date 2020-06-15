@@ -247,7 +247,7 @@ You have the option to change each of these settings to work with your enterpris
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
-## Application Guard Extension for Chrome and Firefox
+## Application Guard Extension for third-party web browsers
 
 The [Application Guard Extension](md-app-guard-browser-extension.md) available for Chrome and Firefox allows Application Guard to protect users even when they are running a web browser other than Microsoft Edge or Internet Explorer.
 
@@ -255,8 +255,8 @@ Once a user has the extension and its companion app installed on their enterpris
 
 1. Open either Firefox or Chrome — whichever browser you have the extension installed on.
 1. Navigate to an enterprise website, i.e. an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
-   ![The evaluation text displayed while the page is being loaded](images/app-guard-chrome-extension-evaluation-page.png)
+   ![The evaluation page displayed while the page is being loaded, explaining that the user must wait](images/app-guard-chrome-extension-evaluation-page.png)
 1. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
-   ![A non-enterprise website being redirected to an Application Guard container](images/app-guard-chrome-extension-launchIng-edge.png)
+   ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge](images/app-guard-chrome-extension-launchIng-edge.png)
 1. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
    ![The "New Application Guard Window" option is highlighted in red]()
