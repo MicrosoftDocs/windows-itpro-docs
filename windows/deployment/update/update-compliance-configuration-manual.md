@@ -55,7 +55,7 @@ All Group Policies that need to be configured for Update Compliance are under **
 |---------------------------|-|-----------------------------------------------------------|
 |**Configure the Commercial ID** |[Your CommercialID](update-compliance-get-started.md#get-your-commercialid) | Identifies the device as belonging to your organization. |
 |**Allow Telemetry** | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this lower than what the policy defines. See the following policy for more information. |
-|**Configure telemetry opt-in setting user interface** | 1 - Disable telemetry opt-in Settings |(in Windows 10, version 1803 and later) Determines whether end-users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this polic, otherwise the effective diagnostic data level on devices might not be sufficient. |
+|**Configure telemetry opt-in setting user interface** | 1 - Disable telemetry opt-in Settings |(in Windows 10, version 1803 and later) Determines whether end-users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. |
 |**Allow device name to be sent in Windows diagnostic data** | 1 - Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 
 ## Required endpoints
