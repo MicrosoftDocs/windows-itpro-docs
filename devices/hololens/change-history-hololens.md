@@ -17,6 +17,14 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
 
+## Windows 10 Holographic, version 2004
+
+The topics in this library have been updated for Windows 10 Holographic, version 2004.
+
+## HoloLens 2
+
+The topics in this library have been updated for HoloLens 2 and Windows 10 Holographic, version 1903.
+
 ## April 2019
 
 New or changed topic | Description

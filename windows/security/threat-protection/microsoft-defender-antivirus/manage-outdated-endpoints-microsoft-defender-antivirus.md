@@ -1,5 +1,5 @@
 ---
-title: Apply Windows Defender AV protection updates to out of date endpoints
+title: Apply Microsoft Defender AV protection updates to out of date endpoints
 description: Define when and how updates should be applied for endpoints that have not updated in a while.
 keywords: updates, protection, out-of-date, outdated, old, catch-up
 search.product: eADQiWindows 10XVcnh
@@ -56,7 +56,7 @@ If Microsoft Defender Antivirus did not download protection updates for a specif
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates**.
 
-5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to check for and download the latest protection update.
+5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to check for and download the latest protection update.
 
 6. Click **OK**.
 
@@ -96,11 +96,11 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1.  Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider spyware Security intelligence to be out-of-date.
+    1.  Double-click **Define the number of days before spyware definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to consider spyware Security intelligence to be out-of-date.
 
     2. Click **OK**.
 
-    3.  Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to consider virus Security intelligence to be out-of-date.
+    3.  Double-click **Define the number of days before virus definitions are considered out of date** and set the option to **Enabled**. Enter the number of days after which you want Microsoft Defender AV to consider virus Security intelligence to be out-of-date.
 
     4. Click **OK**.
 

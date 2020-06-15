@@ -61,7 +61,6 @@
 
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
-
 #### [Device control]()
 ##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -265,6 +264,7 @@
  
 #### [Alerts queue]()
 ##### [View and organize the Alerts queue](microsoft-defender-atp/alerts-queue.md)
+##### [Review alerts](microsoft-defender-atp/review-alerts.md)
 ##### [Manage alerts](microsoft-defender-atp/manage-alerts.md)
 ##### [Investigate alerts](microsoft-defender-atp/investigate-alerts.md)
 ##### [Investigate files](microsoft-defender-atp/investigate-files.md)

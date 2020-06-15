@@ -101,7 +101,7 @@ Remove items from the list | `Remove-MpPreference`
 >[!IMPORTANT]
 >If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by the specified process:
+For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file that is opened by the specified process:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"

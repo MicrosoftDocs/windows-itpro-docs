@@ -69,11 +69,11 @@ If the portal dashboard, and other sections show an error message such as "Data 
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need to whitelist the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
+You'll need to allow the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
 
 
 ## Portal communication issues
-If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are whitelisted and open for communication.
+If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are allowed and open for communication.
 
 - `*.blob.core.windows.net 
 crl.microsoft.com`

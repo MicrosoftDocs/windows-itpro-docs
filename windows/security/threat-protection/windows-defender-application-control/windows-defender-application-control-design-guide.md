@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Application Control design guide (Windows 10)
 description: Microsoft Windows Defender Application Control allows organizations to control what apps and drivers will run on their managed Windows 10 devices.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
