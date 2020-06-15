@@ -49,12 +49,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Deploy with Autopilot
+            url: windows-autopilot/windows-autopilot-scenarios.md
           - text: Deploy with Endpoint Manager
             url: update/create-deployment-plan.md
           - text: Deploy Windows updates
             url: update/eval-infra-tools.md
-          - text: Manage the update experience
-            url: update/waas-servicing-strategy-windows-10-updates.md
  
   # Card
   - title: Keep current
