@@ -41,7 +41,7 @@ During the onboarding process, the **Devices list** is gradually populated with 
 >[!NOTE]
 > If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
 
-![Image of devices list with list of devices](images/machine-list.png)
+![Image of devices list with list of devices](images/device-list.png)
 
 ## Sort and filter the device list
 

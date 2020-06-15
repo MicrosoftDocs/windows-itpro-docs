@@ -120,9 +120,9 @@ Selecting an alert using the check box brings up the alerts details pane where y
 
 Clicking on an alert title brings you the alert page.
 
-### Machines
+### Devices
 
-The **Machines** tab Shows details the device name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
+The **Devices** tab Shows details the device name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
 
 Devices that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more devices are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 

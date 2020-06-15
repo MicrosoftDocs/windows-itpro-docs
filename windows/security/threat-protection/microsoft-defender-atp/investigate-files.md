@@ -92,7 +92,7 @@ The **Deep analysis** tab allows you to [submit the file for deep analysis](resp
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
-![Image of file names tab](images/atp-file-names.PNG)
+![Image of file names tab](images/atp-file-names.png)
 
 ## Related topics
 
