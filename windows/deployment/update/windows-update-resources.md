@@ -42,16 +42,16 @@ The following resources provide additional information about using Windows Updat
 ## Reset Windows Update components manually
 
 1. Open a Windows command prompt. To open a command prompt, click **Start > Run**. Copy and paste (or type) the following command and then press ENTER:
-   ```
+   ```console
    cmd
    ```
 2. Stop the BITS service and the Windows Update service. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    net stop bits
    net stop wuauserv
    ```
 3. Delete the qmgr\*.dat files. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    Del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
    ```
 4. If this is your first attempt at resolving your Windows Update issues by using the steps in this article, go to step 5 without carrying out the steps in step 4. The steps in step 4 should only be performed at this point in the troubleshooting if you cannot resolve your Windows Update issues after following all steps but step 4. The steps in step 4 are also performed by the "Aggressive" mode of the Fix it Solution above.
@@ -73,12 +73,12 @@ The following resources provide additional information about using Windows Updat
    sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
    ```
 5. Type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    cd /d %windir%\system32
    ```
 6. Reregister the BITS files and the Windows Update files. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
 
-   ```
+   ```console
    regsvr32.exe atl.dll
    regsvr32.exe urlmon.dll
    regsvr32.exe mshtml.dll
@@ -118,20 +118,20 @@ The following resources provide additional information about using Windows Updat
    ```
 
 7. Reset Winsock. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    netsh winsock reset
    ```
 8. If you are running Windows XP or Windows Server 2003, you have to set the proxy settings. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
+   ```console
    proxycfg.exe -d
    ```
 9. Restart the BITS service and the Windows Update service. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    net start bits
 
    net start wuauserv
    ```
 10. If you are running Windows Vista or Windows Server 2008, clear the BITS queue. To do this, type the following command at a command prompt, and then press ENTER:
-    ```
+    ```console
     bitsadmin.exe /reset /allusers
     ```
