@@ -29,13 +29,15 @@ ms.topic: article
 
 Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. 
 
-You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
+You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. For more information, see:
+- [Microsoft Defender ATP for Linux system requirements](microsoft-defender-atp-linux.md#system-requirements)  
+- [Microsoft Defender ATP for Mac system requirements](microsoft-defender-atp-mac.md#system-requirements).
 
 ## Onboarding non-Windows machines
 You'll need to take the following steps to onboard non-Windows machines:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac).
+   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-atp-mac).
    - For other non-Windows devices choose **Onboard non-Windows machines through third-party integration**.   
        
      1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.

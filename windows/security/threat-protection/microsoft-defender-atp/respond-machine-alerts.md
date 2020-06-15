@@ -110,19 +110,19 @@ The package contains the following folders:
 |WdSupportLogs| Provides the MpCmdRunLog.txt and MPSupportFiles.cab                                                                                                                   |
 | CollectionSummaryReport.xls| This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code in case of failure. You can use this report to track if the package includes all the expected data and identify if there were any errors. |
 
-## Run Windows Defender Antivirus scan on machines
+## Run Microsoft Defender Antivirus scan on machines
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
 >[!IMPORTANT]
 >- This action is available for machines on Windows 10, version  1709 or later.
->- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+>- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
 ![Image of notification to select quick scan or full scan and add comment](images/run-antivirus.png)
 
-The Action center will show the scan information and the machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+The Action center will show the scan information and the machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Restrict app execution
 
@@ -130,7 +130,7 @@ In addition to containing an attack by stopping malicious processes, you can als
 
 >[!IMPORTANT]
 > - This action is available for machines on Windows 10, version  1709 or later.
-> - This feature is available if your organization uses Windows Defender Antivirus.
+> - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.

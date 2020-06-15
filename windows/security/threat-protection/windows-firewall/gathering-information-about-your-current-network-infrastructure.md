@@ -1,6 +1,6 @@
 ---
 title: Gathering Info about Your Network Infrastructure (Windows 10)
-description: Gathering Information about Your Current Network Infrastructure
+description: Learn how to gather info about your network infrastructure so that you can effectively plan for Windows Defender Firewall with Advanced Security deployment.
 ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
 ms.reviewer: 
 ms.author: dansimp

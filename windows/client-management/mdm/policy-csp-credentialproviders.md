@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialProviders
-description: Policy CSP - CredentialProviders
+description: Learn the policy CSP for credential provider  set up, sign in, PIN requests and so on. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -249,6 +249,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 
