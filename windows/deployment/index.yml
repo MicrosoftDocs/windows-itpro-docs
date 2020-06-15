@@ -57,15 +57,15 @@ landingContent:
             url: update/waas-servicing-strategy-windows-10-updates.md
  
   # Card
-  - title: Deploy with Autopilot
+  - title: Keep current
     linkLists:
       - linkListType: overview
         links:
-          - text: Learn about Autopilot
+          - text: ADD HERE
             url: windows-autopilot/windows-autopilot-scenarios.md
-          - text: Deploy with Autopilot
+          - text: ADD HERE
             url: windows-autopilot/windows-autopilot-scenarios.md
-          - text: Deploy with Autopilot poster
+          - text: ADD HERE
             url: https://docs.microsoft.com/windows/deployment/windows-10-deployment-posters#deploy-windows-10-with-autopilot
 
   # Card
