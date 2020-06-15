@@ -868,7 +868,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Allow list examples
+## <a href="" id="allow-list-examples"></a>Allow list examples
 
 The following example disables the calendar application.
 

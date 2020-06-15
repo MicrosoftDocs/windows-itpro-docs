@@ -2945,7 +2945,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md" data-raw-source="[Whitelist examples](applocker-csp.md#whitelist-examples)">Allow list examples</a>.</p>
+<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#allow-list-examples" data-raw-source="[Allowlist examples](applocker-csp.md#allow-list-examples)">Allow list examples</a>.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>
