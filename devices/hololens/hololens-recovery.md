@@ -38,7 +38,7 @@ If the device is correctly booted and running there are three different ways of 
 
 ![HoloLens 2 ResetRecovery](images/ResetRecovery2.png)
 
-If the device cannot be booted to the Startup Menu, please take note of the LEDs and enumeration on the host PC and follow the troubleshooting guide (https://docs.microsoft.com/en-us/hololens/hololens-troubleshooting). In case the state of the device does not fall in any of the states listed in the troubleshooting guide, execute the **hard reset procedure** without reconnecting the device to your host PC, but connect it instead to the power supply. Wait for at least one hour for the device to charge.
+If the device cannot be booted to the Startup Menu, please take note of the LEDs and enumeration on the host PC and follow the troubleshooting guide (https://docs.microsoft.com/hololens/hololens-troubleshooting). In case the state of the device does not fall in any of the states listed in the troubleshooting guide, execute the **hard reset procedure** without reconnecting the device to your host PC, but connect it instead to the power supply. Wait for at least one hour for the device to charge.
 
 ## Reset the device
 
