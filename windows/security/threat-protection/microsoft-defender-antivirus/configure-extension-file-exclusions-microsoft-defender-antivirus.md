@@ -496,6 +496,9 @@ If you use PowerShell, you can retrieve the list in two ways:
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
 ```DOS
+Start, CMD (Run as admin)
+cd "%programdata%\microsoft\windows defender\platform"
+cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
