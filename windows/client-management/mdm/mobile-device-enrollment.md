@@ -54,7 +54,7 @@ The following topics describe the end-to-end enrollment process using various au
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
-> [!Note]  
+> [!Note]
 > As a best practice, do not use hardcoded server-side checks on values such as:
 > -   User agent string
 > -   Any fixed URIs that are passed during enrollment
