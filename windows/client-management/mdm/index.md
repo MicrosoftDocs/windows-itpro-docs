@@ -1,4 +1,4 @@
----
+<!---index/md
 title: Mobile device management
 description: Windows 10 provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy
 MS-HAID:
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
----
+--->
 
 # Mobile device management
 
