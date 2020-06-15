@@ -21,10 +21,10 @@ The Microsoft Surface Hub's device account uses ActiveSync to sync mail and cale
 
 For these features to work, the ActiveSync policies for your organization must be configured as follows:
 
--   There can't be any global policies that block synchronization of the resource mailbox that's being used by the Surface Hub’s device account. If there is such a blocking policy, you need to whitelist the Surface Hub as an allowed device.
+-   There can't be any global policies that block synchronization of the resource mailbox that's being used by the Surface Hub’s device account. If there is such a blocking policy, you need to add the Surface Hub as an allowed device.
 -   You must set a mobile device mailbox policy where the **PasswordEnabled** setting is set to False. Other mobile device mailbox policy settings are not compatible with the Surface Hub.
 
-## Whitelisting the DeviceID
+## Allowing the DeviceID
 
 
 Your organization may have a global policy that prevents syncing of device accounts provisioned on Surface Hubs. To configure this property, see [Allowing device IDs for ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#whitelisting-device-ids-cmdlet).

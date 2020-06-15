@@ -1,7 +1,7 @@
 ---
 title: Feature Availability
 description: Compare WDAC and AppLocker feature availability.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

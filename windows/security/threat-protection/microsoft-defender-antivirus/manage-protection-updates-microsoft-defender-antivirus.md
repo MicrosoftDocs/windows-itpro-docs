@@ -1,5 +1,5 @@
 ---
-title: Manage how and where Windows Defender AV receives updates
+title: Manage how and where Microsoft Defender AV receives updates
 description: Manage the fallback order for how Microsoft Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
 search.product: eADQiWindows 10XVcnh

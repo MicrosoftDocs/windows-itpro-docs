@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot problems with reporting tools for Windows Defender AV
-description: Identify and solve common problems when attempting to report in Windows Defender AV protection status in Update Compliance
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
+title: Troubleshoot problems with reporting tools for Microsoft Defender AV
+description: Identify and solve common problems when attempting to report in Microsoft Defender AV protection status in Update Compliance
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -51,9 +51,9 @@ There are three steps to troubleshooting these problems:
 In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Microsoft Defender Antivirus:
 
 >[!div class="checklist"]
->- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](microsoft-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
+>- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](microsoft-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
 > - [Cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).
-> - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+> - Endpoints can [connect to the Microsoft Defender AV cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
