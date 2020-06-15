@@ -1,7 +1,7 @@
 ---
 title: Create a WDAC policy for lightly-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10

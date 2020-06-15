@@ -1,7 +1,7 @@
 ---
 title: Audit Windows Defender Application Control policies (Windows 10)
 description: Audits allow admins to discover apps that were missed during an initial policy scan and to identify new apps that were installed since the policy was created.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -23,7 +23,7 @@ This document also assumes that the HoloLens has been evaluated by security team
 1. [Determine what features you need](hololens-requirements.md#step-1-determine-what-you-need)
 1. [Determine what licenses you need](hololens-licenses-requirements.md)
 1. [Configure your network for HoloLens](hololens-commercial-infrastructure.md).
-    1. This section includes bandwidth requirements, URL, and ports that need to be whitelisted on your firewall; Azure AD guidance; Mobile Device Management (MDM) Guidance; app deployment/management guidance; and certificate guidance.
+    1. This section includes bandwidth requirements, URL, and ports that need to be allowed on your firewall; Azure AD guidance; Mobile Device Management (MDM) Guidance; app deployment/management guidance; and certificate guidance.
 1. (Optional) [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 1. [Enroll Device](hololens-enroll-mdm.md)
 1. [Set up ring based updates for HoloLens](hololens-updates.md)
