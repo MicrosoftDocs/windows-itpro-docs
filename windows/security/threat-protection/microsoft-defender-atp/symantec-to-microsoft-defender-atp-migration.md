@@ -48,7 +48,9 @@ If you are new to Microsoft Defender ATP, you might be wondering what all is inc
 | [Automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
 | [Threat hunting service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
 
-As you can see, Microsoft Defender ATP includes a wide range of threat protection capabilities. Want to learn more? See [about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
+<br/>
+
+Want to learn more? See [about Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
 
 ## Next step
 
