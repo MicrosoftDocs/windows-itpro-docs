@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - MSSecurityGuide
-description: Policy CSP - MSSecurityGuide
+description: See how this ADMX-backed policy requires a special SyncML format to enable or disable.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
