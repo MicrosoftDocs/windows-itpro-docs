@@ -93,7 +93,6 @@ When making the move to the new alert page you will notice that we have centrali
 
 ## Related topics
 
-- [Incidents overview](incidents-overview.md)
+- [View and organize the incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)
-- [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
