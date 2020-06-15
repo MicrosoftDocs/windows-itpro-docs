@@ -61,9 +61,7 @@ In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
-In Windows Server 2019, the **Add Roles and Feature Wizard** looks like this:
-
-![Add roles and features wizard Windows Server 2019](images/WDAV-WinSvr2019-turnfeatureson.jpg)
+In Windows Server 2019, the **Add Roles and Feature Wizard** looks much the same.
 
 ### Turn on the GUI using PowerShell
 
@@ -110,7 +108,7 @@ Get-Service -Name mpssvc
 
 As an alternative to PowerShell, you can use Command Prompt to verify that Microsoft Defender Antivirus is running. To do that, run the following command from a command prompt: 
 
-```DOS
+```console
 sc query Windefend
 ```
 

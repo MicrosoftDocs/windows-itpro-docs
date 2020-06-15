@@ -38,7 +38,7 @@ This hardware-based root of trust comes from the device’s Secure Boot feature,
 This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
 
 As there are thousands of PC vendors that produce numerous models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
-Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blacklist), or a list of known 'good' SRTM measurements (also known as a whitelist). 
+Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a block list), or a list of known 'good' SRTM measurements (also known as an allow list). 
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
