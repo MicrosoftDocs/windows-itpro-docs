@@ -56,19 +56,19 @@ The following resources provide additional information about using Windows Updat
    ```
 4. If this is your first attempt at resolving your Windows Update issues by using the steps in this article, go to step 5 without carrying out the steps in step 4. The steps in step 4 should only be performed at this point in the troubleshooting if you cannot resolve your Windows Update issues after following all steps but step 4. The steps in step 4 are also performed by the "Aggressive" mode of the Fix it Solution above.
    1. Rename the following folders to *.BAK:
-   ```
+   ```console
    %systemroot%\SoftwareDistribution\DataStore
    %systemroot%\SoftwareDistribution\Download
    %systemroot%\system32\catroot2
    ```
    To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    Ren %systemroot%\SoftwareDistribution\DataStore *.bak
    Ren %systemroot%\SoftwareDistribution\Download *.bak
    Ren %systemroot%\system32\catroot2 *.bak
    ```
    2. Reset the BITS service and the Windows Update service to the default security descriptor. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
-   ```
+   ```console
    sc.exe sdset bits D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
    sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
    ```
