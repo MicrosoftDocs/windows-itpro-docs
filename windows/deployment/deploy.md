@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 (Windows 10)
-description: Deploying Windows 10 for IT professionals.
+description: Learn Windows 10 upgrade options for planning, testing, and managing your production deployment.
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi

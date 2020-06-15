@@ -1,6 +1,6 @@
 ---
 title: Windows Update - Additional resources
-description: Additional resources for Windows Update
+description: Use these resource to troubleshoot and reset Windows Update.
 ms.prod: w10
 ms.mktglfcycl:
 

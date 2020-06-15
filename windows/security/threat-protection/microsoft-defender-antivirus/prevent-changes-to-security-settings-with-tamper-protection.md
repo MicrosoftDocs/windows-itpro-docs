@@ -73,9 +73,9 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
-Here's what you see in the Windows Security app:
+   Here's what you see in the Windows Security app:
 
-![Tamper protection turned on in Windows 10 Home](images/tamperprotectionturnedon.png)
+   ![Tamper protection turned on in Windows 10 Home](images/tamperprotectionturnedon.png)
 
 ## Turn tamper protection on (or off) for your organization using Intune
 
@@ -111,10 +111,6 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
     ![Turn tamper protection on with Intune](images/turnontamperprotect-intune.png)
 
 5. Assign the profile to one or more groups.
-
-    Here's what you see in the Windows Security app:
-
-    ![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)
 
 ### Are you using Windows OS 1709, 1803, or 1809?
 
