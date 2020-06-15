@@ -28,7 +28,7 @@ ms.topic: article
 
 ### Device groups
 
-Device groups enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed.
+[Device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) (formerly called machine groups) enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
@@ -46,9 +46,13 @@ Device groups enable your security operations team to configure security capabil
 
 8. Choose **Done**.
 
-stuff (will draw from existing content here)
 
-Set up Machine Groups or Device Collections or OU such as company department, administrative responsibility, or physical location or subnet.
+### Device collections
+
+
+### Organizational units
+
+
 
 
 ## Deploy Microsoft Defender ATP and uninstall Symantec
