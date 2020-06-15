@@ -1,7 +1,7 @@
 ---
 title: Deploy catalog files to support Windows Defender Application Control (Windows 10)
 description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

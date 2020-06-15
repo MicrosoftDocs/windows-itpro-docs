@@ -24,7 +24,7 @@ ms.topic: conceptual
 > 
 > In the meantime, starting with macOS Catalina update 10.15.4, Apple introduced a user facing *Legacy System Extension* warning to signal applications that rely on kernel extensions.
 > 
-> If you have previously whitelisted the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to whitelist the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to whitelist the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+> If you have previously allowed the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to allow the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to allow the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 ## 101.00.31
 
