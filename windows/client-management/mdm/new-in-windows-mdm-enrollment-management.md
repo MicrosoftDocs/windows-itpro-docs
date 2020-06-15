@@ -44,8 +44,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Server-initiated unenrollment failure](#server-initiated-unenrollment-failure)
   - [Certificates causing issues with Wi-Fi and VPN](#certificates-causing-issues-with-wi-fi-and-vpn)
   - [Version information for mobile devices](#version-information-for-mobile-devices)
-  - [Upgrading Windows Phone 8.1 devices with app allow list using ApplicationRestriction policy has issues](#upgrading-windows-phone-81-devices-with-app-whitelisting-using-applicationrestriction-policy-has-issues)
-  - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
+    - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
   - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#multiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
@@ -2946,7 +2945,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#whitelist-examples" data-raw-source="[Whitelist examples](applocker-csp.md#whitelist-examples)">Allow list examples</a>.</p>
+<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md" data-raw-source="[Whitelist examples](applocker-csp.md#whitelist-examples)">Allow list examples</a>.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>
