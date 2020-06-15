@@ -748,13 +748,13 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="pcr0"></a>**PCR0**
 <p style="margin-left: 20px">The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
 
-<p style="margin-left: 20px">Enterprise managers can create a whitelist of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the whitelist, and then make a trust decision based on the result of the comparison.</p>
+<p style="margin-left: 20px">Enterprise managers can create a allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
 
-<p style="margin-left: 20px">If your enterprise does not have a whitelist of accepted PCR[0] values, then take no action.</p>
+<p style="margin-left: 20px">If your enterprise does not have a allow list of accepted PCR[0] values, then take no action.</p>
 
-<p style="margin-left: 20px">If PCR[0] equals an accepted whitelisted value, then allow access.</p>
+<p style="margin-left: 20px">If PCR[0] equals an accepted allow list value, then allow access.</p>
 
-<p style="margin-left: 20px">If PCR[0] does not equal any accepted whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
+<p style="margin-left: 20px">If PCR[0] does not equal any accepted listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Direct the device to an enterprise honeypot, to further monitor the device's activities.
@@ -762,9 +762,9 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="sbcphash"></a>**SBCPHash**
 <p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
 
-<p style="margin-left: 20px">If SBCPHash is not present, or is an accepted (whitelisted) value, then allow access.
+<p style="margin-left: 20px">If SBCPHash is not present, or is an accepted allow-listed value, then allow access.
 
-<p style="margin-left: 20px">If SBCPHash is present in DHA-Report, and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
+<p style="margin-left: 20px">If SBCPHash is present in DHA-Report, and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
@@ -772,9 +772,9 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="cipolicy"></a>**CIPolicy**
 <p style="margin-left: 20px">This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.</p>
 
-<p style="margin-left: 20px">If CIPolicy is not present, or is an accepted (whitelisted) value, then allow access.</p>
+<p style="margin-left: 20px">If CIPolicy is not present, or is an accepted allow-listed value, then allow access.</p>
 
-<p style="margin-left: 20px">If CIPolicy is present and is not a whitelisted value, then take one of the following actions that align with your enterprise policies:</p>
+<p style="margin-left: 20px">If CIPolicy is present and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.

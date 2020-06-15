@@ -41,12 +41,12 @@ When an alert is triggered, a security playbook goes into effect. Depending on t
 
 ## Details of an automated investigation
 
-During and after an automated investigation, you can view details about the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Evidence**, **Entities**, and **Log** tabs.
+During and after an automated investigation, you can view details about the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Devices**, **Evidence**, **Entities**, and **Log** tabs.
 
 |Tab |Description |
 |--|--|
 |**Alerts**| Shows the alert that started the investigation.|
-|**Machines** |Shows where the alert was seen.|
+|**Devices** |Shows where the alert was seen.|
 |**Evidence** |Shows the entities that were found to be malicious during the investigation.|
 |**Entities** |Provides details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
 |**Log** |Shows the chronological detailed view of all the investigation actions taken on the alert.|
