@@ -93,7 +93,7 @@ When making the move to the new alert page you will notice that we have centrali
 
 ## Video overview of the new alert page
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Related topics
 
