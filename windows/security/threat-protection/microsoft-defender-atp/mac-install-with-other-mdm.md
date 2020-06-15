@@ -72,7 +72,7 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 
 ### Kernel extension policy
 
-Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to whitelist kernel extensions provided by Microsoft.
+Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.
 
 ## Check installation status
 

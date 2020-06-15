@@ -533,7 +533,7 @@ Learn more about the [Microsoft Store for Business](/microsoft-store/index).
 
 IT administrators can control which apps are allowed to be installed on Windows 10 Mobile devices and how they should be kept up-to-date.
 
-Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow (sometimes also called whitelist/blacklist) lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
+Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
 
 For more details, see [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019(v=vs.85).aspx).
 
@@ -970,7 +970,7 @@ This is a list of attributes that are supported by DHA and can trigger the corre
 -   **Boot Manager Version** The version of the Boot Manager running on the device. The HAS can check this version to determine whether the most current Boot Manager is running, which is more secure (trusted).
 -   **Code integrity version** Specifies the version of code that is performing integrity checks during the boot sequence. The HAS can check this version to determine whether the most current version of code is running, which is more secure (trusted).
 -   **Secure Boot Configuration Policy (SBCP) present** Whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
--   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published whitelist. A device that complies with the whitelist is more trustworthy (secure) than a device that is noncompliant.
+-   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
 
 **Example scenario**
 

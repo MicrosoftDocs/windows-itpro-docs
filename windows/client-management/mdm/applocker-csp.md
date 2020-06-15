@@ -869,7 +869,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Whitelist examples
+## Allow list examples
 
 The following example disables the calendar application.
 

@@ -62,7 +62,7 @@ Because your protection is a cloud service, computers must have access to the in
 
 ## Validate connections between your network and the cloud
 
-After whitelisting the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
+After allowing the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
