@@ -24,10 +24,10 @@ Learn how to deploy Microsoft Defender ATP for macOS with JamF Pro.
 This is a multi step process. You'll need to complete all of the following steps:
 
 - [Login to the JamF Portal](mac-install-jamfpro-login.md)
-- Setup the device groups in JamF
-- Setup the Microsoft Defender ATP policies for JamF
-- Enroll the devices into JamF
-- Enroll your macOS
+- [Setup the device groups in JamF]()
+- [Setup the Microsoft Defender ATP policies for JamF]()
+- [Enroll the devices into JamF]()
+- [Enroll your macOS]()
 
 1. Log in to [JamF Pro](https://contoso.jamfcloud.com/index.html).
 
