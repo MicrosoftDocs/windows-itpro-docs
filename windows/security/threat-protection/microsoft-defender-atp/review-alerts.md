@@ -91,6 +91,10 @@ If you are experiencing a false alert with a line-of-business application, creat
 
 When making the move to the new alert page you will notice that we have centralized information from the alert process tree, the incident graph, and the artifact timeline into the [alert story](#investigate-using-the-alert-story), with some information available through the [affected assets](#review-affected-assets) section. Any additional information has been consolidated into the details pane for the relevant entities.
 
+## Video overview of the new alert page
+
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
+
 ## Related topics
 
 - [View and organize the incidents queue](view-incidents-queue.md)
