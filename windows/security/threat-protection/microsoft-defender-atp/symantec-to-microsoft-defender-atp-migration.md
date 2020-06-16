@@ -37,8 +37,6 @@ After you have Microsoft Defender ATP set up and deployed, you can [manage the v
 
 If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is more than endpoint protection and antivirus. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
-
 The following table lists features and capabilities of Microsoft Defender ATP:
 
 | Feature/Capability | Description |
