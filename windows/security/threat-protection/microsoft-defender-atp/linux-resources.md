@@ -37,7 +37,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem.
 
-3. Run `sudo mdatp diagnostic create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds:
+3. Run `sudo mdatp diagnostic create` to back up Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds:
 
    ```bash
    $ sudo mdatp diagnostic create
