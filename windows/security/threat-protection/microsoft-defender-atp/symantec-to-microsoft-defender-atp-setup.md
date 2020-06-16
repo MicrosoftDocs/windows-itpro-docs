@@ -19,6 +19,11 @@ ms.topic: article
 
 # Migrate from Symantec - Part 2: Set up Microsoft Defender ATP
 
+
+|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|--|--|--|
+||You are here! | |
+
 **Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
 2. [Re-enable Microsoft Defender Antivirus](#re-enable-microsoft-defender-antivirus).

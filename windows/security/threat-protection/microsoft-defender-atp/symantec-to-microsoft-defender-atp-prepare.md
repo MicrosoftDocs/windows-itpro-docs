@@ -25,8 +25,6 @@ ms.topic: article
 
 **Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. 
 
-
-
 This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
 2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
@@ -83,7 +81,7 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-- [Proceed to Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-setup.md)
+- [Proceed to Part 2: Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md)
 
 
 

@@ -19,6 +19,12 @@ ms.topic: article
 
 # Migrate from Symantec - Part 3: Deploy Microsoft Defender ATP
 
+
+|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|--|--|--|
+|| |You are here! |
+
+
 **Welcome to Part 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 - [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
 - [Deploy Microsoft Defender ATP and uninstall Symantec](#deploy-microsoft-defender-atp-and-uninstall-symantec)
