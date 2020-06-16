@@ -40,8 +40,8 @@ When you investigate a specific device, you'll see:
 
 - Device details
 - Response actions
+- Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
 - Cards (active alerts, logged on users, security assessment)
-- Tabs (alerts, timeline, security recommendations, software inventory, discovered vulnerabilities)
 
 ![Image of device view](images/specific-device.png)
 
@@ -54,12 +54,12 @@ The device details section provides information such as the domain, OS, and heal
 Response actions run along the top of a specific device page and include:
 
 - Manage tags
-- Initiate automated investigation
-- Initiate Live Response Session
-- Collect investigation package
-- Run antivirus scan
-- Restrict app execution
 - Isolate device
+- Restrict app execution
+- Run antivirus scan
+- Collect investigation package
+- Initiate Live Response Session
+- Initiate automated investigation
 - Consult a threat expert
 - Action center
 
@@ -69,38 +69,20 @@ For more information on how to take action on a device, see [Take response actio
 
 For more information, see [Investigate user entities](investigate-user.md).
 
-## Cards
-
-### Active alerts
-
-The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Azure ATP feature, and there are any active alerts. More information is available in the "Alerts" drill down.
-
-![Image of active alerts card](images/risk-level-small.png)
-
->[!NOTE]
->You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
-
-### Logged on users
-
-The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
-
-![Image of user details pane](images/logged-on-users.png)
-
-### Security assessments
-
-The **Security assessments** card shows the overall exposure level, security recommendations, installed software, and discovered vulnerabilities. A device's exposure level is determined by the cumulative impact of its pending security recommendations.
-
-![Image of security assessments card](images/security-assessments.png)
-
 ## Tabs
 
-The five tabs under the cards section show relevant security and threat prevention information related to the device. In each tab, you can customize the columns that are shown by selecting **Customize columns** from the bar above the column headers.
+The tabs provide relevant security and threat prevention information related to the device. In each tab, you can customize the columns that are shown by selecting **Customize columns** from the bar above the column headers.
+
+### Overview
+The **Overview** tab displays the [cards](#cards) for active alerts, logged on users, and security assessment.
+
+![Image of overview tab on the device page](images/overview-device.png)
 
 ### Alerts
 
-The **Alerts** section provides a list of alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
+The **Alerts** tab provides a list of alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
 
-![Image of alerts related to the device](images/alerts-machine.png)
+![Image of alerts related to the device](images/alerts-device.png)
 
 When the circle icon to the left of an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related devices. Multiple alerts can be selected at a time.
 
@@ -108,7 +90,7 @@ To see a full page view of an alert including incident graph and process tree, s
 
 ### Timeline
 
-The **Timeline** section provides a chronological view of the events and associated alerts that have been observed on the device. This can help you correlate any events, files, and IP addresses in relation to the device.
+The **Timeline** tab provides a chronological view of the events and associated alerts that have been observed on the device. This can help you correlate any events, files, and IP addresses in relation to the device.
 
 The timeline also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a device over a selected time period. To further control your view, you can filter by event groups or customize the columns.
 
@@ -120,7 +102,7 @@ The timeline also enables you to selectively drill down into events that occurre
 >- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 >- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-![Image of device timeline with events](images/timeline-machine.png)
+![Image of device timeline with events](images/timeline-device.png)
 
 Some of the functionality includes:
 
@@ -155,19 +137,47 @@ To further inspect the event and related events, you can quickly run an [advance
 
 **Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
-![Image of security recommendations tab](images/security-recommendations-machine.png)
+![Image of security recommendations tab](images/security-recommendations-device.png)
 
 ### Software inventory
 
-The **Software inventory** section lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details
+The **Software inventory** tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details
 
-![Image of software inventory tab](images/software-inventory-machine.png)
+![Image of software inventory tab](images/software-inventory-device.png)
 
 ### Discovered vulnerabilities
 
-The **Discovered vulnerabilities** section shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
+The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
 
-![Image of discovered vulnerabilities tab](images/discovered-vulnerabilities-machine.png)
+![Image of discovered vulnerabilities tab](images/discovered-vulnerabilities-device.png)
+
+### Missing KBs
+The **Missing KBs** tab lists the missing security updates for the device.
+
+![Image of missing kbs tab](images/missing-kbs-device.png)
+
+## Cards
+
+### Active alerts
+
+The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Azure ATP feature, and there are any active alerts. More information is available in the "Alerts" drill down.
+
+![Image of active alerts card](images/risk-level-small.png)
+
+>[!NOTE]
+>You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
+
+### Logged on users
+
+The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
+
+![Image of user details pane](images/logged-on-users.png)
+
+### Security assessments
+
+The **Security assessments** card shows the overall exposure level, security recommendations, installed software, and discovered vulnerabilities. A device's exposure level is determined by the cumulative impact of its pending security recommendations.
+
+![Image of security assessments card](images/security-assessments.png)
 
 ## Related topics
 
