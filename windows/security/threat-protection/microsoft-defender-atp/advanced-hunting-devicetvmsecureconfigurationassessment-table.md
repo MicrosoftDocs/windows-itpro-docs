@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema
 description: Learn about Threat & Vulnerability Management security assessment events in the DeviceTvmSecureConfigurationAssessment table of the Advanced hunting schema. These events provide device information as well as security configuration details, impact, and compliance information. 
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment  
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

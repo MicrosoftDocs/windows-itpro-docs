@@ -1,6 +1,6 @@
 ---
 title: Get devices onboarded to Microsoft Defender ATP
-description: Track onboarding of Intune-managed devices to Windows Defender ATP and increase onboarding rate.
+description: Track onboarding of Intune-managed devices to Microsoft Defender ATP and increase onboarding rate.
 keywords: onboard, Intune management, MDATP, WDATP, Microsoft Defender, Windows Defender, advanced threat protection, configuration management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

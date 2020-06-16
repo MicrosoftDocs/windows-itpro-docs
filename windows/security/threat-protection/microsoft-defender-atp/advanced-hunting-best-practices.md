@@ -1,7 +1,7 @@
 ---
 title: Query best practices for advanced hunting
 description: Learn how to construct fast, efficient, and error-free threat hunting queries when using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

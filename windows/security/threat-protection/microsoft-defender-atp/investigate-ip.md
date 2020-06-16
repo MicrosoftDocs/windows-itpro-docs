@@ -1,7 +1,7 @@
 ---
 title: Investigate an IP address associated with an alert
 description: Use the investigation options to examine possible communication between devices and external IP addresses.
-keywords: investigate, investigation, IP address, alert, windows defender atp, external IP
+keywords: investigate, investigation, IP address, alert, microsoft defender atp, external IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

@@ -1,7 +1,7 @@
 ---
 title: Investigate Microsoft Defender Advanced Threat Protection domains
 description: Use the investigation options to see if devices and servers have been communicating with malicious domains.
-keywords: investigate domain, domain, malicious domain, windows defender atp, alert, URL
+keywords: investigate domain, domain, malicious domain, microsoft defender atp, alert, URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

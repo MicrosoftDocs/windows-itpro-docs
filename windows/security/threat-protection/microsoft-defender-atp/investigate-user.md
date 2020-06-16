@@ -1,7 +1,7 @@
 ---
 title: Investigate a user account in Microsoft Defender ATP
 description: Investigate a user account for potential compromised credentials or pivot on the associated user account during an investigation.
-keywords: investigate, account, user, user entity, alert, windows defender atp
+keywords: investigate, account, user, user entity, alert, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

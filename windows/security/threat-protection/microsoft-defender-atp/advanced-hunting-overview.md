@@ -1,7 +1,7 @@
 ---
 title: Overview of advanced hunting in Microsoft Defender ATP
 description: Use threat hunting capabilities in Microsoft Defender ATP to build queries that find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
