@@ -27,15 +27,15 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 
 |Phase |Steps |
 |--|--|
-|[![Phase 1: Plan](images/prepare.png)](symantec-to-microsoft-defender-atp-plan.md)<br/>[Plan your migration](symantec-to-microsoft-defender-atp-plan.md) |During this phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. |
-|[![Phase 2: Setup](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During this phase, you configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection. |
-|[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-deploy.md)<br/>[Deploy Microsoft Defender ATP](symantec-to-microsoft-defender-atp-deploy.md) |During this phase, you turn on Microsoft Defender ATP and uninstall Symantec. |
+|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During this phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. |
+|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During this phase, you configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection. |
+|[![Phase 3: Deploy](images/onboard.png)](symantec-to-microsoft-defender-atp-deploy.md)<br/>[Deploy Microsoft Defender ATP](symantec-to-microsoft-defender-atp-deploy.md) |During this phase, you turn on Microsoft Defender ATP and uninstall Symantec. |
 
 After you have Microsoft Defender ATP set up and deployed, you can [manage the various features and capabilities](microsoft-defender-atp-post-migration-management.md).
 
 ## Overview of Microsoft Defender ATP
 
-If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP includes the features and capabilities listed in the following table:
+If you are new to Microsoft Defender ATP, you might be wondering what all is included. Microsoft Defender ATP is more than endpoint protection and antivirus. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. The following table lists features and capabilities of Microsoft Defender ATP:
 
 | Feature/Capability | Description |
 |---|---|
@@ -54,4 +54,4 @@ Want to learn more? See [about Microsoft Defender ATP](https://docs.microsoft.co
 
 ## Next step
 
-When you are ready to begin your migration, proceed to [Migrate from Symantec - Part 1: Plan your migration](symantec-to-microsoft-defender-atp-plan.md).
+When you are ready to begin your migration, proceed to [Migrate from Symantec - Part 1: Plan your migration](symantec-to-microsoft-defender-atp-prepare.md).
