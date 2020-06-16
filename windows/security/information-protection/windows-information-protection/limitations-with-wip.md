@@ -133,13 +133,14 @@ This table provides info about the most common problems you might encounter whil
         </td>
       </tr>
     <tr>
-        <td>By design, OneNote only supports WIP protected notebooks stored on enterprise-managed SharePoint (OneDrive for Business).  Onenote does not support local WIP protected notebooks.</td>
-        <td>OneNote might encounter an error such as "This notebook contains protected content from your organization, which can't be viewed or synced. Please change the file ownership to Personal, or contact your IT administrator." Supported notebooks (OneDrive for Business) should be shown in File Explorer as links and open with your associated browser. Unsupported notebooks would show as folders or .one files (with a OneNote icon)</td>
-        <td>If unsupported files won't open in the browser, then they are 'stuck' in the old local format - incompatible with WIP or viewing online. 
-OneNote notebooks that are newly copy-pasted ito OneDrive via File Explorer should be automatically fixed. To do this, follow these steps:
-1.	Close the notebook in OneNote
-2.	Move the notebook folder via File Explorer out of the 'OneDrive – company name' (OneDrive for Business folder) to some other location, such as the Desktop.
-3.	Copy and paste the folder back into the OneDrive for Business folder.  Wait a few minutes to allow OneDrive to finish syncing & upgrading the files, and the folder should automatically convert to a URL which will then successfully open in the browser (and OneNote client)..</td>    
+        <td>OneNote notebooks on OneDrive for Business must be properly configured to work with WIP.</td>
+        <td>OneNote might encounter errors syncing a OneDrive for Business notebook and suggest changing the file ownership to Personal. Attempting to view the notebook in OneNote Online in the browser will show an error and unable to view it.</td>
+        <td>"OneNote notebooks that are newly copied into the OneDrive for Business folder via File Explorer should get fixed automatically. To do this, follow these steps:
+1. Close the notebook in OneNote.
+2. Move the notebook folder via File Explorer out of the OneDrive for Business folder to another location, such as the Desktop.
+3. Copy the notebook folder and Paste it back into the OneDrive for Business folder.
+
+Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut.  Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client via the “Open in app” button..</td>    
     </tr>
     <tr>
         <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and are therefore not protected.
