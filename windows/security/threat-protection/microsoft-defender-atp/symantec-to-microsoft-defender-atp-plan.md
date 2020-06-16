@@ -75,7 +75,7 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-- [Proceed to Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-part2.md)
+- [Proceed to Part 2: Configure settings and exclusions](symantec-to-microsoft-defender-atp-setup.md)
 
 
 

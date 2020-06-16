@@ -28,7 +28,7 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 |Phase |Steps |
 |--|--|
 |[Plan your migration](symantec-to-microsoft-defender-atp-plan.md) |During this phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. |
-|[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-part2.md) |During this phase, you configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection. |
+|[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During this phase, you configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection. |
 |[Deploy Microsoft Defender ATP](symantec-to-microsoft-defender-atp-part3.md) |During this phase, you turn on Microsoft Defender ATP and uninstall Symantec. |
 
 After you have Microsoft Defender ATP set up and deployed, you can [manage the various features and capabilities](microsoft-defender-atp-post-migration-management.md).
