@@ -20,7 +20,7 @@ appliesto:
 
 # HoloLens 2 release notes
 
-If you would like to download the latest HoloLens 2 FFU to flash your HoloLens 2 via [Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build. 
+To ensure you have a productive experience with your HoloLens devices, we continue to release feature, bug and security updates. In this page you can learn about what’s new on HoloLens each month. If you would like to download the latest HoloLens 2 FFU to flash your device via [Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build. 
 
 HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
