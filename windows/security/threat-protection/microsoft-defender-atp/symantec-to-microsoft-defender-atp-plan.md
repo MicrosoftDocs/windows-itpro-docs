@@ -1,5 +1,5 @@
 ---
-title: Part 1 - Get Microsoft Defender ATP started
+title: Part 1 - Plan your migration to Microsoft Defender ATP
 description: Part 1 of "Make the switch from Symantec to Microsoft Defender ATP"
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 1: Get Microsoft Defender ATP started
+# Migrate from Symantec - Part 1: Plan your migration
 
 **Welcome to Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
