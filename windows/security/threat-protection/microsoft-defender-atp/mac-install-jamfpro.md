@@ -29,10 +29,6 @@ This is a multi step process. You'll need to complete all of the following steps
 - [Enroll the devices into JamF]()
 - [Enroll your macOS]()
 
-1. Log in to [JamF Pro](https://contoso.jamfcloud.com/index.html).
-
->[!NOTE]
-> Where Contoso is the name of the JamF subscription.
 
 
 
