@@ -222,4 +222,4 @@ File(c:\\windows\\notepad.exe)
 
 ## Next step
 
-- [Proceed to Part 3: Finish making the switch to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-deploy.md)
+- [Proceed to Part 3: Finish making the switch to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)

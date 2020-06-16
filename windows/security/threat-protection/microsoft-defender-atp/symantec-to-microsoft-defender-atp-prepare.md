@@ -19,7 +19,15 @@ ms.topic: article
 
 # Migrate from Symantec - Part 1: Prepare for your migration
 
-**Welcome to Part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
+|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
+|--|--|--|
+|You are here!| | |
+
+**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. 
+
+
+
+This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
 2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
