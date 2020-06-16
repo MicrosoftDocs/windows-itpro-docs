@@ -1,5 +1,5 @@
 ---
-title: Part 3 - Finish making the switch to Microsoft Defender ATP
+title: Part 3 - Deploy Microsoft Defender ATP
 description: Make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 3: Finish making the switch to Microsoft Defender ATP
+# Migrate from Symantec - Part 3: Deploy Microsoft Defender ATP
 
 **Welcome to Part 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 - [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 

@@ -1,6 +1,6 @@
 ---
-title: Part 2 - Configure settings and exclusions for Microsoft Defender ATP and Symantec Endpoint Protection
-description: Part 2 - Make the switch from Symantec to Microsoft Defender ATP
+title: Part 2 - Set up Microsoft Defender ATP
+description: Part 2 - Set up Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 2: Configure settings and exclusions
+# Migrate from Symantec - Part 2: Set up Microsoft Defender ATP
 
 **Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
@@ -27,7 +27,6 @@ ms.topic: article
 
 ## Set Microsoft Defender ATP to passive mode
 
-*QUESTION: How/why are we changing registry keys when we haven't onboarded these devices yet? Am I missing something?*
 
 This procedure applies to devices running any of the following versions of Windows:
 - Windows Server 2016
