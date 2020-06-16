@@ -24,7 +24,7 @@ ms.date: 04/16/2020
 - Virtual desktop infrastructure (VDI) machines
 
 >[!WARNING]
-> Micrsosoft Defender ATP currently does not support Windows Virtual Desktop multi-user session.
+> Microsoft Defender ATP support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
