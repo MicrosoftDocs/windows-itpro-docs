@@ -30,6 +30,7 @@ With properly configured devices, you can boost overall resilience against threa
 - Meet or exceed the Microsoft Defender ATP security baseline configuration
 - Have strategic attack surface mitigations in place
 
+Click **Configuration management** from the navigation menu to open the Device configuration management page.
 ![Security configuration management page](images/secconmgmt_main.png)<br>
 *Device configuration management page*
 
