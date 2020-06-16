@@ -62,13 +62,13 @@ Because your protection is a cloud service, computers must have access to the in
 
 ## Validate connections between your network and the cloud
 
-After whitelisting the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
+After allowing the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
 Use the following argument with the Microsoft Defender Antivirus command-line utility (`mpcmdrun.exe`) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service:
 
-```DOS
+```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
@@ -87,9 +87,7 @@ Download the file by visiting the following link:
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
 
-If you are properly connected, you will see a warning Microsoft Defender Antivirus notification:
-
-![Microsoft Defender Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
+If you are properly connected, you will see a warning Microsoft Defender Antivirus notification.
 
 If you are using Microsoft Edge, you'll also see a notification message:
 
@@ -107,14 +105,12 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
     ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
 
-3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
+3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware.
 
-    ![Screenshot of quarantined items in the Windows Security app](images/defender/wdav-quarantined-history-wdsc.png)
+   > [!NOTE]
+   > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
->[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
-
-The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
+   The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
 
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.

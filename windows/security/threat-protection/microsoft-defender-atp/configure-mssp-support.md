@@ -159,7 +159,7 @@ Step 1: Create a third-party application
 
 Step 2: Get access and refresh tokens from your customer's tenant
  
-Step 3: Whitelist your application on Microsoft Defender Security Center
+Step 3: allow your application on Microsoft Defender Security Center
  
 
 
@@ -279,11 +279,11 @@ After providing your credentials, you'll need to grant consent to the applicatio
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector. 
 
  
-### Step 3: Whitelist your application on Microsoft Defender Security Center
-You'll need to whitelist the application you created in Microsoft Defender Security Center.
+### Step 3: Allow your application on Microsoft Defender Security Center
+You'll need to allow the application you created in Microsoft Defender Security Center.
  
 
-You'll need to have **Manage portal system settings** permission to whitelist the application. Otherwise, you'll need to request your customer to whitelist the application for you.
+You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 
 1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 

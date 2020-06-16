@@ -1,6 +1,6 @@
 ---
 title: Getting Started with App-V (Windows 10)
-description: Getting Started with App-V for Windows 10
+description: Get started with Microsoft Application Virtualization (App-V) for Windows 10.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

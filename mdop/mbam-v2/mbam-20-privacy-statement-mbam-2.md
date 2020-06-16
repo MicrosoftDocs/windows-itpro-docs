@@ -16,9 +16,7 @@ ms.date: 08/30/2016
 
 # MBAM 2.0 Privacy Statement
 
-
 ## Microsoft BitLocker Administration and Monitoring (MBAM) v2 Privacy Statement
-
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you desire in your personal computing. This privacy statement explains many of the data collection and use practices of Microsoft BitLocker Administration and Monitoring v2 (MBAM). This is a preliminary disclosure that focuses on features that communicate with the Internet and is not intended to be an exhaustive list.
 
@@ -86,13 +84,12 @@ Microsoft Error Reporting is not turned on or off by MBAM. MBAM will utilize wha
 
 "HKLM\\Software\\Wow6432Node\\Microsoft\\Microsoft Standalone System Sweeper Tool" (for the 64-bit version)
 
-**Warning**
-
-Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the PC. You can also use the Last Known Good Configuration startup option if you encounter problems after manual changes have been applied.
+> [!Warning]
+> Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the PC. You can also use the Last Known Good Configuration startup option if you encounter problems after manual changes have been applied.
 
 Important Information: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their PCs. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available on [TechNet](https://technet.microsoft.com/library/cc709644.aspx).
 
-Additional information on how to modify enable and disable error reporting is available at this support article: [(https://support.microsoft.com/kb/188296)](https://support.microsoft.com/kb/188296).
+Additional information on how to modify enable and disable error reporting is available at this support article: [How to disable or enable Dr. Watson for Windows](https://support.microsoft.com/kb/188296).
 
 ### Microsoft Update
 
@@ -102,15 +99,15 @@ Microsoft Update is a service that provides Windows updates as well as updates f
 
 **Information Collected, Processed, or Transmitted:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the [Update Services Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=244400).
 
 **Use of Information:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the [Update Services Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=244400).
 
 **Choice/Control:**
 
-For details about controlling this feature, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244000>.
+For details about controlling this feature, see the [Update Services Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=244000).
 
 ### Customer Experience Improvement Program
 
@@ -120,7 +117,7 @@ The Customer Experience Improvement Program (“CEIP”) collects basic informat
 
 **Information Collected, Processed, or Transmitted:**
 
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=52097>.
+For more information about the information collected, processed, or transmitted by CEIP, see the [CEIP privacy statement](https://go.microsoft.com/fwlink/?LinkID=52097).
 
 **Use of Information:**
 
@@ -132,14 +129,4 @@ CEIP is off by default. You're offered the opportunity to participate in CEIP du
 
 ## Related topics
 
-
 [Security and Privacy for MBAM 2.0](security-and-privacy-for-mbam-20-mbam-2.md)
-
- 
-
- 
-
-
-
-
-
