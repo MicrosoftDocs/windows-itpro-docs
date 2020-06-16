@@ -313,8 +313,6 @@ endpoints. (This may take few minutes)
 
 2.  Select **Configuration management** from left side menu.
 
-    ![Image of Security Center left side menu](images/security-center-left-menu.png)
-
 3. Click **Go to attack surface management** in the Attack surface management panel. 
     
     ![Image of attack surface management](images/security-center-attack-surface-mgnt-tile.png)
