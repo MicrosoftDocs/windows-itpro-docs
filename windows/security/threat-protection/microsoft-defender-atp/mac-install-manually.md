@@ -66,10 +66,10 @@ To complete this process, you must have admin privileges on the machine.
 
     ![Security and privacy window screenshot](../microsoft-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
 
-The installation proceeds.
+   The installation proceeds.
 
-> [!CAUTION]
-> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
+   > [!CAUTION]
+   > If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
 
 > [!NOTE]
 > macOS may request to reboot the machine upon the first installation of Microsoft Defender. Real-time protection will not be available until the machine is rebooted.
