@@ -16,11 +16,9 @@ ms.date: 08/30/2016
 
 # Known Issues in the MBAM International Release
 
-
 This section contains known issues for Microsoft BitLocker Administration and Monitoring (MBAM) International Release.
 
 ## Known Issues in the MBAM International Release
-
 
 ### The Installation Process Does Not Specify Update
 
@@ -36,12 +34,11 @@ If you are using a certificate for authentication between MBAM servers, after up
 
 ### MBAM Svclog File Filling Disk Space
 
-If you have followed Knowledge Base article 2668170, [https://support.microsoft.com/kb/2668170](https://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
+If you have followed [Knowledge Base article 2668170](https://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
 
 **Workaround**: None.
 
 ## Related topics
-
 
 [Deploying the MBAM 1.0 Language Release Update](deploying-the-mbam-10-language-release-update.md)
 
