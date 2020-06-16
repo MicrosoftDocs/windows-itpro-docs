@@ -40,7 +40,6 @@ Defines restrictions for applications.
 Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
@@ -869,7 +868,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Whitelist examples
+## <a href="" id="allow-list-examples"></a>Allow list examples
 
 The following example disables the calendar application.
 

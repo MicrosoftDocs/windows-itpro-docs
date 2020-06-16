@@ -32,6 +32,7 @@
 ### [Create provisioning packages for Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Deploy apps to Surface Hub 2S using Intune](surface-hub-2s-deploy-apps-intune.md)
 ### [Create Surface Hub 2S on-premises accounts with PowerShell](surface-hub-2s-onprem-powershell.md)
+### [Surface Hub Teams app](hub-teams-app.md)
 
 ## Manage
 ### [Manage Surface Hub 2S with Microsoft Intune](surface-hub-2s-manage-intune.md)
