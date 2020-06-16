@@ -51,7 +51,7 @@ Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/Gen
 
 3. Select **Download Onboarding package** and save the downloaded .APK file.
 
-    ![Image of onboarding package page](images/android-onboarding-package.png)
+    ![Image of onboarding package page](images/onboarding_package_1.png)
 
 ### Add as Line of Business (LOB) App
 
