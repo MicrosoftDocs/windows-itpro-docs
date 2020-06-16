@@ -507,6 +507,7 @@ The following examples describe how to set an ADMX-ingested app policy.
       </Item>
     </Delete>
     <Final/>
+    </Final/>
   </SyncBody>
 </SyncML>
 ```
