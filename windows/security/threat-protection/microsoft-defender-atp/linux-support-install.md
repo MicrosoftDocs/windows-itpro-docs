@@ -116,6 +116,7 @@ and try again.
 
 If none of the above steps help, collect the diagnostic logs:
 ```bash
-$ sudo mdatp --diagnostic --create
+$ sudo mdatp diagnostic create
+Diagnostic file created: <path to file>
 ```
 Path to a zip file that contains the logs will be displayed as an output. Reach out to our customer support with these logs.
