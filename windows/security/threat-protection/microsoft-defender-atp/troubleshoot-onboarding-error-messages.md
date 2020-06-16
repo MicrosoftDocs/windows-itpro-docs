@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender Advanced Threat Protection.
-keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, windows defender atp
+keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

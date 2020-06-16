@@ -1,7 +1,7 @@
 ---
 title: Configure alert notifications in Microsoft Defender ATP
 description: You can use Microsoft Defender Advanced Threat Protection to configure email notification settings for security alerts, based on severity and other criteria.
-keywords: email notifications, configure alert notifications, windows defender atp notifications, windows defender atp alerts, windows 10 enterprise, windows 10 education
+keywords: email notifications, configure alert notifications, microsoft defender atp notifications, microsoft defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

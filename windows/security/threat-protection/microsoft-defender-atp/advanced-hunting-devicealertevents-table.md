@@ -1,7 +1,7 @@
 ---
 title: DeviceAlertEvents table in the advanced hunting schema
 description: Learn about alert generation events in the DeviceAlertEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
