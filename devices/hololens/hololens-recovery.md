@@ -75,7 +75,7 @@ If the standard reset procedure does not work, you can use the hard-reset proced
 
 In extraordinary situations you may be required to clean flash the device. There are two ways to reflash a HoloLens2 device. For all reflashing procedures you will be required to [install the Advanced Recovery Companion app from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8). If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset.
 
-Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004), if you would like to download the latest HoloLens 2 FFU to flash your device via [Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build. 
+Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004), if you would like to download the latest HoloLens 2 FFU to flash your device via Advanced Recovery Companion then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build. 
 
 Before starting the flashing procedure make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
 
