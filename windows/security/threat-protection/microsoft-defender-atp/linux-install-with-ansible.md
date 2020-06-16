@@ -149,31 +149,31 @@ Create subtask or role files that contribute to an actual task. First create the
     > [!NOTE]
     > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
-        ```bash
-        - name: Add Microsoft apt repository for MDATP
-            apt_repository:
-                repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
-                update_cache: yes
-                state: present
-                filename: microsoft-[channel].list
-            when: ansible_os_family == "Debian"
+  ```bash
+  - name: Add Microsoft apt repository for MDATP
+      apt_repository:
+          repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+          update_cache: yes
+          state: present
+          filename: microsoft-[channel].list
+      when: ansible_os_family == "Debian"
 
-        - name: Add Microsoft APT key
-            apt_key:
-                keyserver: https://packages.microsoft.com/
-                id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
-            when: ansible_os_family == "Debian"
+  - name: Add Microsoft APT key
+      apt_key:
+          keyserver: https://packages.microsoft.com/
+          id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      when: ansible_os_family == "Debian"
 
-        - name: Add  Microsoft yum repository for MDATP
-            yum_repository:
-                name: packages-microsoft-com-prod-[channel]
-                description: Microsoft Defender ATP
-                file: microsoft-[channel]
-                baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
-                gpgcheck: yes
-                enabled: Yes
-            when: ansible_os_family == "RedHat"
-        ```
+  - name: Add  Microsoft yum repository for MDATP
+      yum_repository:
+          name: packages-microsoft-com-prod-[channel]
+          description: Microsoft Defender ATP
+          file: microsoft-[channel]
+          baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+          gpgcheck: yes
+          enabled: Yes
+      when: ansible_os_family == "RedHat"
+  ```
 
 - Create the actual install/uninstall YAML files under `/etc/ansible/playbooks`.
 
