@@ -27,7 +27,7 @@ landingContent:
           - text: What's new in Surface Hub 2S?
             url: surface-hub-2s-whats-new.md
           - text: Surface Hub 2S tech specs
-            url:  surface-hub/surface-hub-2s-techspecs.md
+            url:  surface-hub-2s-techspecs.md
           - text: Operating system essentials
             url: differences-between-surface-hub-and-windows-10-enterprise.md
   
