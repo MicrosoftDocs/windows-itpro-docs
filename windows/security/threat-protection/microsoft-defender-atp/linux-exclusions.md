@@ -64,7 +64,7 @@ For more information on how to configure exclusions from Puppet, Ansible, or ano
 Run the following command to see the available switches for managing exclusions:
 
 ```bash
-$ mdatp --exclusion
+$ mdatp exclusion
 ```
 
 Examples:
@@ -72,29 +72,29 @@ Examples:
 - Add an exclusion for a file extension:
 
     ```bash
-    $ mdatp --exclusion --add-extension .txt
-    Configuration updated successfully
+    $ mdatp exclusion extension add --name .txt
+    Extension exclusion configured successfully
     ```
 
 - Add an exclusion for a file:
 
     ```bash
-    $ mdatp --exclusion --add-folder /var/log/dummy.log
-    Configuration updated successfully
+    $ mdatp exclusion file add --path /var/log/dummy.log
+    File exclusion configured successfully
     ```
 
 - Add an exclusion for a folder:
 
     ```bash
-    $ mdatp --exclusion --add-folder /var/log/
-    Configuration updated successfully
+    $ mdatp exclusion folder add --path /var/log/
+    Folder exclusion configured successfully
     ```
 
 - Add an exclusion for a process:
 
     ```bash
-    $ mdatp --exclusion --add-process cat
-    Configuration updated successfully
+    $ mdatp exclusion process add --name cat
+    Process exclusion configured successfully
     ```
 
 ## Validate exclusions lists with the EICAR test file
