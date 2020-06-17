@@ -32,14 +32,12 @@ ms.topic: article
 
 ## Set Microsoft Defender ATP to passive mode
 
-This procedure applies to devices running any of the following versions of Windows:
-- Windows Server 2016
-- Windows Server, version 1803 (core-only mode)
+Set the registry key for Microsoft Defender ATP to passive mode on any endpoints or devices running the following operating systems:
+- Windows Server 2016;
+- Windows Server, version 1803 (core-only mode); or 
 - Windows Server 2019
 
-For those versions of Windows, you should set the registry key for Microsoft Defender ATP to passive mode. 
-
-1. As an administrator on the device, open Registry Editor.
+1. As an administrator on the endpoint or device, open Registry Editor.
 
 2. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
 
@@ -55,9 +53,9 @@ For those versions of Windows, you should set the registry key for Microsoft Def
 
 ## Enable Microsoft Defender Antivirus
 
-Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. Microsoft Defender AV can run alongside your existing antivirus solution. This step of the migration process involves enabling Microsoft Defender AV. 
+Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV, which can run alongside your existing antivirus solution. 
 
-You can use one of several methods to enable Microsoft Defender AV as listed in the following table:
+Use one the methods listed in the following table:
 
 
 |Method  |What to do  |
@@ -74,7 +72,7 @@ Add the exclusions listed in the following table:
 
 |OS |Exclusions |
 |--|--|
-|Windows 10<br/>Windows Server, version 1803<br/>Windows Server 2019 |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe` <br/>**NOTE**:  On Windows 10 1803 and newer w/o the KB hotfix for April 2019. Available in Windows 10 1709/1703 w/ the KB hotfix for April 2019. |
+|Windows 10, [version 1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803) or later<br/><br/>Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/><br/>[Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2019](https://docs.microsoft.com/en-us/windows/release-information/status-windows-10-1809-and-windows-server-2019) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/> <br/>**NOTE**:  On Windows 10 1803 and newer w/o the KB hotfix for April 2019. Available in Windows 10 1709/1703 w/ the KB hotfix for April 2019. |
 |Windows 7<br/>Windows Server 2008 R2<br/>Windows 8.1 <br/>Windows Server 2012 R2/Windows Server 2016 |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## Add Symantec to your Microsoft Defender ATP exclusion list
