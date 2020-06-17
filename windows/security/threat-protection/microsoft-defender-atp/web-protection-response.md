@@ -45,7 +45,7 @@ You can dive deeper by selecting the URL or domain of the website in the alert. 
 - Incidents and alerts related to the website
 - How frequent the website was seen in events in your organization
 
-![Image of the domain or URL entity details page](images/wtp-website-details.png)
+    ![Image of the domain or URL entity details page](images/wtp-website-details.png)
 
 [Learn more about URL or domain entity pages](investigate-domain.md)
 

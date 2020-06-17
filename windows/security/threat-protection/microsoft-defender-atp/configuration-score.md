@@ -60,7 +60,7 @@ You can improve your security configuration when you remediate issues from the s
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up.
 
 4. **Submit request**. You will see a confirmation message that the remediation task has been created.
-   >![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
+   ![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 5. Save your CSV file.
    ![Save csv file](images/tvm_save_csv_file.png)
