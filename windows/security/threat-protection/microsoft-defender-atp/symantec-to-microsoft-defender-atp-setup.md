@@ -27,7 +27,7 @@ ms.topic: article
 **Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
 2. [Re-enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec).
+3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to your Microsoft Defender ATP exclusion list](#add-symantec-to-your-microsoft-defender-atp-exclusion-list). 
 
 ## Set Microsoft Defender ATP to passive mode
@@ -66,7 +66,7 @@ You can use one of several methods to enable Microsoft Defender AV as listed in 
 |[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus`. <br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**. <br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This enables Microsoft Defender Antivirus.  |
 |Registry Editor |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
 
-## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
+## Add Microsoft Defender ATP to the exclusion list for Symantec
 
 This step of the migration process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using.
 
