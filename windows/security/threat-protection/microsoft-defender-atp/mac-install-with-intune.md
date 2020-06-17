@@ -58,9 +58,12 @@ The following table summarizes the steps you would need to take to deploy and ma
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.
-2. In Section 1 of the page, set the operating system to **macOS**, **Linux Server**, **iOS**, or **Android** and the deployment method to **Mobile Device Management / Microsoft Intune**.
-3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
-4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
+2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
+
+    ![Onboarding settings screenshot](images/atp-mac-install.png)
+
+3. Select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+4. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:
