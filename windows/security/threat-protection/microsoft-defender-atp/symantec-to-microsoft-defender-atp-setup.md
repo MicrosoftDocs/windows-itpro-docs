@@ -26,7 +26,7 @@ ms.topic: article
 
 **Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
-2. [Re-enable Microsoft Defender Antivirus](#re-enable-microsoft-defender-antivirus).
+2. [Re-enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP EDR to the exclusion list for Symantec](#add-microsoft-defender-atp-edr-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to your Microsoft Defender ATP exclusion list](#add-symantec-to-your-microsoft-defender-atp-exclusion-list). 
 
@@ -53,52 +53,44 @@ For those versions of Windows, you should set the registry key for Microsoft Def
 >- [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)
 
+## Enable Microsoft Defender Antivirus
 
-## Re-enable Microsoft Defender Antivirus
-
-Considering your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV. 
-
-Microsoft Defender AV can run alongside your existing antivirus solution so that protection remains in place.
+Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. Microsoft Defender AV can run alongside your existing antivirus solution. This step of the migration process involves enabling Microsoft Defender AV. 
 
 You can use one of several methods to enable Microsoft Defender AV as listed in the following table:
 
 
 |Method  |What to do  |
 |---------|---------|
-|Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)         |
-|[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Windows Defender Antivirus`. <br/>2. Look for a policy that was set to turn off Microsoft Defender Antivirus (or Windows Defender Antivirus). <br/>3. Disable that policy. This enables Microsoft Defender Antivirus.  |
+|Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows).         |
+|[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus`. <br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**. <br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This enables Microsoft Defender Antivirus.  |
 |Registry Editor |1. As an administrator on the device, open Registry Editor.<br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/>4. Reboot the device. |
 
 ## Add Microsoft Defender ATP EDR to the exclusion list for Symantec
 
-*This is from the Word doc - needs revision and clarification*
+This step of the migration process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using.
 
-Add Microsoft Defender ATP EDR to the exclusion list for Symantec (or any other security products).
-
-Adding MDATP (EDR) to the exclusion list to SEP/Trendmicro or any other security product and EDR (RSA Netwitness)
-If you’ll have a 3rd party security product(s) that intercepts MDATP and not let the data get uploaded.
- 
-For these types of issues, please add exclusions for the following services/processes from the 3rd party security product(s):
+Add the following exclusions:
 
 For MDATP built-in to Windows 10, Windows Server 1803, and Windows Server 2019:
-C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
-C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
-C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe
-C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe 
+`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe` 
 Note:  On Windows 10 1803 and newer w/o the KB hotfix for April 2019.  Available in Windows 10 1709/1703 w/ the KB hotfix for April 2019.
  
 For the down-level Windows OS versions (Windows 7/Windows Server 2008R2, Windows 8.1 and Windows Server 2012 R2/Windows Server 2016) that have MMA agent installed:
  
-"C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe"
+`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`
+
 Note:  Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.
  
-"C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe"
-"C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe"
-"C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe"
-"C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe"
-"C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe"
-"C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe"
-
+`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`
+`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`
+`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`
+`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`
+`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`
+`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`
 
 ## Add Symantec to your Microsoft Defender ATP exclusion list
 
