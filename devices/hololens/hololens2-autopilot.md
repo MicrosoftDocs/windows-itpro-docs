@@ -71,10 +71,9 @@ Review the "[Requirements](https://docs.microsoft.com/windows/deployment/windows
 Before you start the OOBE and provisioning process, make sure that the HoloLens devices meet the following requirements:
 
 - The devices are not already members of Azure AD, and are not enrolled in Intune (or another MDM system). The Autopilot self-deploying process completes these steps. To make sure that all the device-related information is cleaned up, check the **Devices** pages in both Azure AD and Intune.
-- Every device can connect to the internet. You can "USB C to Ethernet" adapters for wired internet connectivity or "USB C to Wifi" adapters for wireless internet connectivity. 
-- Every device can connect to a computer by using a USB-C cable, and that computer has the following available:
-  - Advanced Recovery Companion (ARC)
-  - The latest Windows update: Windows 10, version 19041.1002.200107-0909 or a later version)
+- Every device can connect to the internet. You can use "USB C to Ethernet" adapters for wired internet connectivity or "USB C to Wifi" adapters for wireless internet connectivity. 
+- Every device can connect to a computer by using a USB-C cable, and that computer has [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) installed
+- Every device has the latest Windows update: Windows 10, version 19041.1002.200107-0909 or a later version.
 
 To configure and manage the Autopilot self-deploying mode profiles, make sure that you have access to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 

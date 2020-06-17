@@ -91,12 +91,22 @@ If you experience any installation failures, refer to [Troubleshooting installat
 - Disk space: 650 MB
 - The solution currently provides real-time protection for the following file system types:
 
-  - btrfs
-  - ext2
-  - ext3
-  - ext4
-  - tmpfs
-  - xfs
+  - `btrfs`
+  - `ecryptfs`
+  - `ext2`
+  - `ext3`
+  - `ext4`
+  - `fuse`
+  - `fuseblk`
+  - `jfs`
+  - `nfs`
+  - `overlay`
+  - `ramfs`
+  - `reiserfs`
+  - `tmpfs`
+  - `udf`
+  - `vfat`
+  - `xfs`
 
   More file system types will be added in the future.
 

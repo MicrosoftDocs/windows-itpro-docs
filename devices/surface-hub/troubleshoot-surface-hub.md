@@ -415,7 +415,7 @@ Possible fixes for issues with Surface Hub first-run program.
 <td align="left"><p>Can't sync mail/calendar.</p></td>
 <td align="left"><p>The account has not allowed the Surface Hub as an allowed device.</p></td>
 <td align="left"><p>0x86000C1C</p></td>
-<td align="left"><p>Add the Surface Hub device ID to the whitelist by setting the <strong>ActiveSyncAllowedDeviceIds</strong> property for the mailbox.</p></td>
+<td align="left"><p>Add the Surface Hub device ID to the allowed list by setting the <strong>ActiveSyncAllowedDeviceIds</strong> property for the mailbox.</p></td>
 </tr>
 </tbody>
 </table>

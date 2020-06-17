@@ -16,6 +16,8 @@ ms.date: 04/02/2020
 
 # App-V 5.1 Supported Configurations
 
+>Applies to: Windows 10, version 1607; Window Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 (Extended Security Update)
+
 This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) 5.1 in your environment.
 
 ## App-V Server system requirements

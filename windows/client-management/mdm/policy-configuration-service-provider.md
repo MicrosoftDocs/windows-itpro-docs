@@ -1076,6 +1076,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource" id="deliveryoptimization-docachehostsource">DeliveryOptimization/DOCacheHostSource</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -1096,6 +1099,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dogroupidsource" id="deliveryoptimization-dogroupidsource">DeliveryOptimization/DOGroupIdSource</a>
   </dd>
+    <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth" id="deliveryoptimization-domaxbackgrounddownloadbandwidth">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a>
+  </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxcacheage" id="deliveryoptimization-domaxcacheage">DeliveryOptimization/DOMaxCacheAge</a>
   </dd>
@@ -1103,10 +1109,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxcachesize" id="deliveryoptimization-domaxcachesize">DeliveryOptimization/DOMaxCacheSize</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" id="deliveryoptimization-domaxdownloadbandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" id="deliveryoptimization-domaxdownloadbandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a> (deprecated)
   </dd>
   <dd>
-    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" id="deliveryoptimization-domaxuploadbandwidth">DeliveryOptimization/DOMaxUploadBandwidth</a>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth" id="deliveryoptimization-domaxforegrounddownloadbandwidth">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" id="deliveryoptimization-domaxuploadbandwidth">DeliveryOptimization/DOMaxUploadBandwidth</a> (deprecated)
   </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dominbackgroundqos" id="deliveryoptimization-dominbackgroundqos">DeliveryOptimization/DOMinBackgroundQos</a>
@@ -1133,7 +1142,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxbackgroundbandwidth" id="deliveryoptimization-dopercentagemaxbackgroundbandwidth">DeliveryOptimization/DOPercentageMaxBackgroundBandwidth</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" id="deliveryoptimization-dopercentagemaxdownloadbandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" id="deliveryoptimization-dopercentagemaxdownloadbandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a> (deprecated)
   </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxforegroundbandwidth" id="deliveryoptimization-dopercentagemaxforegroundbandwidth">DeliveryOptimization/DOPercentageMaxForegroundBandwidth</a>

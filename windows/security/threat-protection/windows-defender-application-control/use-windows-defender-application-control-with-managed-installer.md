@@ -1,7 +1,7 @@
 ---
 title: Authorize apps deployed with a WDAC managed installer (Windows 10)
 description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -56,7 +56,7 @@ The identity of the managed installer executable(s) is specified in an AppLocker
 Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
 An example of a valid Managed Installer rule collection is shown below.
-For more information about creating an AppLocker policy that includes a managed installer and configuring client devices, see [Simplify application whitelisting with Configuration Manager and Windows 10](https://cloudblogs.microsoft.com/enterprisemobility/2016/06/20/configmgr-as-a-managed-installer-with-win10/).
+For more information about creating an AppLocker policy that includes a managed installer and configuring client devices, see [Simplify application listing with Configuration Manager and Windows 10](https://cloudblogs.microsoft.com/enterprisemobility/2016/06/20/configmgr-as-a-managed-installer-with-win10/).
 As mentioned above, the AppLocker CSP for OMA-URI policies does not currently support the Managed Installer rule collection or the Service Enforcement rule extensions mentioned below.
 
 
