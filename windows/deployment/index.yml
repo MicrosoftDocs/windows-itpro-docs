@@ -32,18 +32,20 @@ landingContent:
             url: update/plan-define-readiness.md
           - text: Evaluate infrastructure and tools
             url: update/eval-infra-tools.md
+          - text: Define your servicing strategy
+            url:  update/define-update-strategy.md
 
   # Card (optional)
   - title: Prepare
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
-          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
           - text: Prepare to deploy Windows 10 updates
             url: update/prepare-deploy-windows.md
           - text: Prepare updates using Windows Update for Business
             url: update/waas-manage-updates-wufb.md
+          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
+            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
 
   # Card (optional)
   - title: Deploy
@@ -68,8 +70,9 @@ landingContent:
             url: windows-10-deployment-scenarios.md
           - text: Basics of Windows updates, channels, and tools
             url:  update/get-started-updates-channels-tools.md
-          - text: Define your servicing strategy
-            url:  update/define-update-strategy.md
+          - text: Overview of Windows Autopilot
+            url:  windows-autopilot/windows-autopilot.md
+
 
   # Card
   - title: Support remote work
