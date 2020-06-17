@@ -9,7 +9,6 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/27/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -93,20 +92,20 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   5. From the **Platform** menu, select **Windows 10 and later**.
   6. From the **Profile** menu, select **Shared multi-user device**.
 
-     ![custom OMA-URI policy in Intune](images/Shared_PC_1.png) 
+     ![custom OMA-URI policy in Intune](images/shared_pc_1.jpg) 
 
   7. Select **Create**.
   8. Enter a name for the policy (e.g. My Win10 Shared devices policy). You can optionally add a description should you wish to do so.
   9. Select **Next**.
   10. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
-     ![Shared PC settings in ICD](images/Shared_PC_3.png) 
+     ![Shared PC settings in ICD](images/shared_pc_3.png) 
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
 - A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 
-     ![Shared PC settings in ICD](images/icd-adv-shared-pc.PNG)
+     ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 - WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
 
