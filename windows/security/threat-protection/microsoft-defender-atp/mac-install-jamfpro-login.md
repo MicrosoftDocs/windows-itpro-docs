@@ -19,3 +19,19 @@ ms.topic: conceptual
 
 # Log in to JamF Pro
 
+1. Enter your credentials.
+
+    ![Image of JamF Pro dashboard](images/jamf-pro-portal1.png)
+
+2. Select **Computers**.
+
+    ![Image of JamF Pro dashboard](images/jamf-pro-dashboard.png)
+
+3. You will see the settings that are available.
+
+     ![Image of JamF Pro dashboard](images/jamfpro-settings.png)
+
+
+## Next step
+[Setup the device groups in Jamf Pro](mac-jamfpro-device-groups.md)
+
