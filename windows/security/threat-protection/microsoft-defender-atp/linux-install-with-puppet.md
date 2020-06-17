@@ -174,10 +174,10 @@ Enrolled agent devices periodically poll the Puppet Server, and install new conf
 On the agent device, you can also check the onboarding status by running:
 
 ```bash
-$ mdatp --health
+$ mdatp health
 ...
 licensed                                : true
-orgId                                   : "[your organization identifier]"
+org_id                                  : "[your organization identifier]"
 ...
 ```
 
@@ -190,7 +190,7 @@ orgId                                   : "[your organization identifier]"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-mdatp --health healthy
+mdatp health --field healthy
 ```
 
 The above command prints `1` if the product is onboarded and functioning as expected.
