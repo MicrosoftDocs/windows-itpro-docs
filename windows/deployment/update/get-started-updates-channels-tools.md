@@ -47,7 +47,7 @@ The first step of controlling when and how devices install updates is assigning 
 
 ### Semi-annual Channel
 
-In the Semi-annual Channel, feature updates are available as soon as Microsoft releases them, twice per year. As long as a device isn't set to defer feature updates, any device using the Semi-annual Channel will install a feature update as soon as it's released. If you use Windows Update for Business, the Semi-annual Channel provides three months of additional total deployment time before being required to update to the next release.{IS THIS STILL TRUE?}
+In the Semi-annual Channel, feature updates are available as soon as Microsoft releases them, twice per year. As long as a device isn't set to defer feature updates, any device using the Semi-annual Channel will install a feature update as soon as it's released. If you use Windows Update for Business, the Semi-annual Channel provides three months of additional total deployment time before being required to update to the next release.
 
 > [!NOTE]
 > All releases of Windows 10 have **18 months of servicing for all editions**--these updates provide security and feature updates for the release. However, fall releases of the **Enterprise and Education editions** will have an **additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release**. This extended servicing window applies to Enterprise and Education editions starting with Windows 10, version 1607.
