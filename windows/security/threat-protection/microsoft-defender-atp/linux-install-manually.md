@@ -268,7 +268,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
@@ -280,17 +280,20 @@ Download the onboarding package from Microsoft Defender Security Center:
 3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
-    mdatp --health healthy
+    mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.<br>
+    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
+    > ```bash
+    > mdatp health --field definitions_status
+    > ```
     > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
@@ -298,7 +301,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
         ```bash
-        mdatp --health realTimeProtectionEnabled
+        mdatp health --field real_time_protection_enabled
         ```
 
     - Open a Terminal window. Copy and execute the following command:
@@ -310,7 +313,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
         ```bash
-        mdatp --threat --list --pretty
+        mdatp threat list
         ```
 
 ## Log installation issues
