@@ -23,7 +23,7 @@ ms.topic: article
 
 - Windows 10
 
-There are a sigificant number of policy settings available for Windows 10, both as native MDM policies and group policy (ADMX-backed) settings. Some of these can cause issues in certain Windows Autopilot scenarios as a result of how they change the behavior of Windows 10. If you encounter any of these issues, remove the policy in question to resolve the issue.
+There are a significant number of policy settings available for Windows 10, both as native MDM policies and group policy (ADMX-backed) settings. Some of these can cause issues in certain Windows Autopilot scenarios as a result of how they change the behavior of Windows 10. If you encounter any of these issues, remove the policy in question to resolve the issue.
 
 <table>
 <th>Policy<th>More information
