@@ -36,7 +36,8 @@ The following steps can be used to troubleshoot and mitigate these issues:
     If your device is not managed by your organization, real-time protection can be disabled from the command line:
 
     ```bash
-    $ mdatp --config realTimeProtectionEnabled false
+    $ mdatp config real-time-protection --value disabled
+    Configuration property updated
     ```
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md).
@@ -49,19 +50,20 @@ The following steps can be used to troubleshoot and mitigate these issues:
     This feature is enabled by default on the `Dogfood` and `InsisderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
  
     ```bash
-    $ mdatp config real_time_protection_statistics_enabled on
+    $ mdatp config real-time-protection-statistics --value enabled
     ```
 
     This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
     ```bash
-    $ mdatp health
+    $ mdatp health --field real_time_protection_enabled
     ```
 
     Verify that the `real_time_protection_enabled` entry is `true`. Otherwise, run the following command to enable it:
 
     ```bash
-    $ mdatp --config realTimeProtectionEnabled true
+    $ mdatp config real-time-protection --value enabled
+    Configuration property updated
     ```
 
     To collect current statistics, run:
