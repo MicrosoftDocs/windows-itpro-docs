@@ -19,6 +19,10 @@ ms.topic: conceptual
 
 # Set up Microsoft Defender ATP for macOS device groups in JamF Pro
 
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune’s device groups.
 
 1. Navigate to **Static Computer Groups**.
@@ -31,6 +35,9 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
     ![Image of JamF Pro](images/jamfpro-machine-group.png)
 
-4. Now you will see the “Contoso’s Machine Group” under “Static Computer Groups”.
+4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-    ![]()
+    ![Image of JamF Pro](images/contoso-machine-group.png)
+
+## Next step
+- [Set up Microsoft Defender ATP for macOS policies in JamF Pro](mac-jamfpro-policies.md)

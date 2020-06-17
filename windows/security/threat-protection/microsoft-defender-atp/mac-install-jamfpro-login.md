@@ -19,6 +19,10 @@ ms.topic: conceptual
 
 # Log in to JamF Pro
 
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+
 1. Enter your credentials.
 
     ![Image of JamF Pro dashboard](images/jamf-pro-portal1.png)
