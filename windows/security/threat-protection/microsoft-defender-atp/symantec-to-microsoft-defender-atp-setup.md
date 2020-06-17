@@ -70,27 +70,12 @@ You can use one of several methods to enable Microsoft Defender AV as listed in 
 
 This step of the migration process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using.
 
-Add the following exclusions:
+Add the exclusions listed in the following table:
 
-For MDATP built-in to Windows 10, Windows Server 1803, and Windows Server 2019:
-`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe` 
-Note:  On Windows 10 1803 and newer w/o the KB hotfix for April 2019.  Available in Windows 10 1709/1703 w/ the KB hotfix for April 2019.
- 
-For the down-level Windows OS versions (Windows 7/Windows Server 2008R2, Windows 8.1 and Windows Server 2012 R2/Windows Server 2016) that have MMA agent installed:
- 
-`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`
-
-Note:  Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.
- 
-`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`
-`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`
-`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`
-`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`
-`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`
-`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`
+|OS |Exclusions |
+|--|--|
+|Windows 10<br/>Windows Server, version 1803<br/>Windows Server 2019 |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe` <br/>**NOTE**:  On Windows 10 1803 and newer w/o the KB hotfix for April 2019. Available in Windows 10 1709/1703 w/ the KB hotfix for April 2019. |
+|Windows 7<br/>Windows Server 2008 R2<br/>Windows 8.1 <br/>Windows Server 2012 R2/Windows Server 2016 |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## Add Symantec to your Microsoft Defender ATP exclusion list
 
