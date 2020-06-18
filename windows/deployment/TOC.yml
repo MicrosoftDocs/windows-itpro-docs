@@ -239,7 +239,7 @@
     - name: Reference
       items:
         - name: How does Windows Update work?
-          href: update/how-windows-update-works.
+          href: update/how-windows-update-works.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
         - name: Understanding the Unified Update Platform
