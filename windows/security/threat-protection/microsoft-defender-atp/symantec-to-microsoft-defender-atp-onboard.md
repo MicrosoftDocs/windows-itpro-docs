@@ -27,8 +27,9 @@ ms.topic: article
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
 - [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
-- [Deploy Microsoft Defender ATP and uninstall Symantec](#deploy-microsoft-defender-atp-and-uninstall-symantec)
+- [Organizational units](#organizational-units)
 - [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp)
+- [Uninstall Symantec](#uninstall-symantec)
 
 ## Set up your device groups, device collections, and organizational units
 
