@@ -29,7 +29,7 @@ ms.topic: conceptual
 To test if Microsoft Defender ATP for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```bash
-$ mdatp --connectivity-test
+$ mdatp connectivity test
 ```
 
 If the connectivity test fails, check if the machine has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
@@ -84,7 +84,7 @@ $ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 Upon success, attempt another connectivity test from the command line:
 
 ```bash
-$ mdatp --connectivity-test
+$ mdatp connectivity test
 ```
 
 If the problem persists, contact customer support.
