@@ -75,12 +75,10 @@ stuff (will draw from existing content here)
 
 
 
-<br/><br/><br/><br/><br/>
-
-
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 ## Next step
+
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 After you have Microsoft Defender ATP set up and deployed, your security operations team can manage the various features and capabilities. See [Manage Microsoft Defender ATP, post migration](microsoft-defender-atp-post-migration-management.md).
 
