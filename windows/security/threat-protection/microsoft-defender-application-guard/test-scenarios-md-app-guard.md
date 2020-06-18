@@ -79,7 +79,7 @@ Before you can use Application Guard in enterprise mode, you must install Window
    >[!NOTE]
    >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
 
-6. Start Microsoft Edge and type *www.microsoft.com*.
+6. Start Microsoft Edge and type *www.microsoft.com*. <!-- The build engine is adding an insecure 'http://' to the front of the sample url, then complaining that it is an insecure link -->
 
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you've marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
