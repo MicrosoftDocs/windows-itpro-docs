@@ -26,45 +26,10 @@ ms.topic: article
 
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
-- [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
-- [Organizational units](#organizational-units)
+[Deploy policies and updates to your device collections](#deploy-policies-and-updates-to-your-device-collections)
 - [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp)
 - [Uninstall Symantec](#uninstall-symantec)
 
-## Set up your device groups, device collections, and organizational units
-
-### Device groups
-
-[Device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) (formerly called machine groups) enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed. Device groups are created in the Microsoft Defender Security Center.
-
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
-
-2. In the navigation pane on the left, choose **Settings** > **Permissions** > **Device groups**.  
-
-3. Choose **+ Add device group**.
-
-4. Specify a name and description for the device group.
-
-5. In the **Automation level** list, select an option. (We recommend **Full - remediate threats automatically**.) To learn more about the various automation levels, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
-
-6. Specify conditions for a matching rule to determine which devices belong to the device group. For example, you can choose a domain, OS versions, or even use [device tags](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-tags). 
-
-7. On the **User access** tab, specify roles that should have access to the devices that are included in the device group. 
-
-8. Choose **Done**.
-
-### Device collections
-
-[Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. Device collections are created by using Configuration Manager.
-
-**[Create a collection](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)**.
-
-
-### Organizational units
-
-[Organizational units](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. Organizational units are defined in [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services).
-
-**[Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou)**.
 
 ## Deploy policies and updates to your device collections
 
