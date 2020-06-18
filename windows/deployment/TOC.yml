@@ -165,8 +165,10 @@
           items:
             - name: Monitor Delivery Optimization
               href: update/waas-delivery-optimization-setup.md#monitor-delivery-optimization
-            - name: Monitor Windows Updates with Update Compliance
+            - name: Monitor Windows Updates
               items:
+              - name: Monitor Windows Updates with Update Compliance
+                href: update/update-compliance-monitor.md
               - name: Get started
                 items: 
                   - name: Get started with Update Compliance
@@ -237,7 +239,9 @@
     - name: Reference
       items:
         - name: How does Windows Update work?
-          href: update/how-windows-update-works.md
+          href: update/how-windows-update-works.
+        - name: Deploy Windows 10 with Microsoft 365
+          href: deploy-m365.md
         - name: Understanding the Unified Update Platform
           href: update/windows-update-overview.md
         - name: Servicing stack updates
