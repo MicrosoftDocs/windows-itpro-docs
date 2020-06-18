@@ -34,7 +34,7 @@ ms.topic: article
 
 ### Device groups
 
-[Device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) (formerly called machine groups) enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed.
+[Device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) (formerly called machine groups) enable your security operations team to configure security capabilities, such as automated investigation and remediation. Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed. Device groups are created in the Microsoft Defender Security Center.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
@@ -57,14 +57,14 @@ ms.topic: article
 
 [Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. Device collections are created by using Configuration Manager.
 
-See [Create a collection](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).
+**[Create a collection](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)**.
 
 
 ### Organizational units
 
 [Organizational units](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. Organizational units are defined in [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services).
 
-To create an organizational unit, see [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou).
+**[Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou)**.
 
 ## Deploy Microsoft Defender ATP and uninstall Symantec
 
