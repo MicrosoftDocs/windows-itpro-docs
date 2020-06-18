@@ -31,6 +31,7 @@ ms.topic: article
 4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
 5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp) 
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
+7. [Configure Endpoint Protection in Configuration Manager](#configure-endpoint-protection-in-configuration-manager) 
 
 ## Set Microsoft Defender AV to passive mode
 
