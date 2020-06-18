@@ -78,11 +78,9 @@ This step of the setup process involves adding Microsoft Defender ATP to the exc
 |Windows 10, [version 1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803) or later (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information))<br/><br/>Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/><br/>[Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2019](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
 |[Windows 7](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2) <br/><br/>[Windows Server 2012 R2](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2016](https://docs.microsoft.com/windows/release-information/status-windows-10-1607-and-windows-server-2016) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
-## Add Symantec to the exclusion list for Microsoft Defender AV and Microsoft Defender ATP
+## Add Symantec to the exclusion list for Microsoft Defender AV
 
-During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender ATP exclusion list. You specify exclusions in both Microsoft Defender AV and Microsoft Defender ATP.
-
-### Add exclusions to Microsoft Defender AV
+During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender AV exclusion list. 
 
 When you add [exclusions to Microsoft Defender AV scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.
@@ -100,7 +98,7 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <br/><br/>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <br/><br/>3. Specify your path and process exclusions. |
 |Registry key |Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`. Then import it as a `regedit.exe /s MDAV_Exclusion.reg` |
 
-### Add exclusions to Microsoft Defender ATP
+## Add Symantec to the exclusion list for Microsoft Defender ATP
 
 To add exclusions to Microsoft Defender ATP, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
 
@@ -122,13 +120,13 @@ To add exclusions to Microsoft Defender ATP, you create [indicators](https://doc
 
 6. On the **Summary** tab, review the settings, and then click **Save**.
 
-#### Find the file hashes of your security solutions
+### How to find the file hashes of your security solutions
 
 You can find the file hashes of your third-party security products by using one of the following methods:
 - [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) in Microsoft Defender ATP
 - [CMPivot](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview) in Configuration Manager
 
-##### Microsoft Defender ATP Advanced Hunting
+#### Find a file hash using Advanced Hunting
  
 Advanced hunting is a query-based threat-hunting tool that lets you explore raw data for the last 30 days. You can use Kusto syntax and operators to construct queries that locate information in the schema specifically structured for advanced hunting. To learn more, see [Learn the advanced hunting query language](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language).
 
@@ -146,7 +144,7 @@ where InitiatingProcessFileName has 'notepad.exe'
 >
 > In our example query, we added the *distinct* query which shows just the unique SHA256’s.
               
-##### CMPivot in Configuration Manager
+#### Find a file hash using CMPivot
 
 CMPivot is an in-console utility that provides access to real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
 
