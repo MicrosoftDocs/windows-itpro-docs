@@ -1,6 +1,6 @@
 ---
-title: Phase 1 - Plan your migration to Microsoft Defender ATP
-description: Phase 1 of "Make the switch from Symantec to Microsoft Defender ATP"
+title: Phase 1 - Prepare for your migration to Microsoft Defender ATP
+description: Phase 1 of "Make the switch from Symantec to Microsoft Defender ATP". Prepare for your migration.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -46,7 +46,7 @@ At this point, you are ready to grant access to those who'll use the Microsoft D
 
 ## Grant access to the Microsoft Defender Security Center
 
-The Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) is where you access and configure features and capabilities of Microsoft Defender ATP. [Get an overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
+The Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) is where you access and configure features and capabilities of Microsoft Defender ATP. [Get an overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
@@ -59,11 +59,11 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
     - [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview)
 
-3. Grant access to the Microsoft Defender Security Center. [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
+3. Grant access to the Microsoft Defender Security Center. (Need help? See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)).
 
 ## Configure device proxy and internet connectivity settings
 
-To enable communication between your devices and Microsoft Defender ATP, configure proxy and internet settings. These settings should be configured for certain capabilities in Microsoft Defender ATP and for certain operating systems, as listed in the following table:
+To enable communication between your devices and Microsoft Defender ATP, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
 
 |Capabilities  | Operating System | Resources |
 |--|--|--|
