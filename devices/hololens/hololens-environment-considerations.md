@@ -29,7 +29,7 @@ Tracking performance is heavily influenced by the environment the user is in, an
 
 ### Lighting
 
-Windows Mixed Reality uses visual light to track the user's location. When an environment is too bright, the cameras can get saturated, and nothing is seen. If the environment is too dark, the cameras cannot pick up enough information, and nothing is seen. Lighting should be even and sufficiently bright that a human can see without effort, but not so bright that the light is painful to look at.  
+Windows Mixed Reality uses visual light to track the user's location. When an environment is too bright, the cameras can get saturated, and nothing is seen. Direct sunlight and overly bright environments can negatively impact spatial mapping, tracking the user’s space, and hand tracking using HoloLens. If the environment is too dark, the cameras cannot pick up enough information, and nothing is seen. Lighting should be even and sufficiently bright that a human can see without effort, but not so bright that the light is painful to look at.  
 
 Areas where there are points of bright light in an overall dim area are also problematic, as the camera has to adjust when moving in and out of bright spaces. This can cause the device to "get lost" and think that the change in light equates to a change in location. Stable light levels in an area will lead to better tracking.  
 
