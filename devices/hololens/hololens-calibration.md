@@ -25,7 +25,7 @@ While both devices need to calibrate for the best hologram viewing experience, t
 
 ## Calibrating your HoloLens 2
 
-HoloLens 2 uses eye-tracking technology to improve your experience seeing and interacting with the virtual environment. Calibrating the HoloLens 2 ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device).  After calibration, holograms will appear correctly even as the visor shifts on your head.
+HoloLens 2 uses eye-tracking technology to improve your experience seeing and interacting with the virtual environment. Calibrating the HoloLens 2 ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device). It also helps with user comfort, hologram alignment, and hand tracking. After calibration, holograms will appear correctly even as the visor shifts on your head.
 
 HoloLens 2 prompts a user to calibrate the device under the following circumstances:
 
