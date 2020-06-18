@@ -36,7 +36,15 @@ ms.topic: article
 
 *WORK IN PROGRESS*
 
-During this step of the migration 
+During this step of the migration process, you deploy antimalware policies. You can do this by using [Configuration Manager](https://docs.microsoft.com/mem/configmgr/). 
+
+
+
+1. [Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure). When finished, you will have a default antimalware policy.
+
+2. 
+
+**[Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)**
 
 SCCM Antimalware policies can be deployed ahead of time to the “Device Collections”.
 
