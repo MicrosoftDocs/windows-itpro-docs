@@ -83,6 +83,27 @@ stuff (will draw from existing content here)
 
 ## Uninstall Symantec
 
+*WORK IN PROGRESS*
+
+Uninstall 3rd party EDR (RSA NetWitness)
+
+Uninstall 3rd party SEP AV
+1)	Unblock password (Anti-tamper, in order to remove)
+2)	Refresh SEP policy 
+<Add the command here.>
+3)	Uninstall the Endpoint Protection client using the command prompt
+https://support.symantec.com/us/en/article.tech102470.html
+
+There is an example for both PowerShell and DOS.  This script could be automated to check for a ReturnValue to equal zero and if not then run “CleanWipe”
+
+Download the CleanWipe removal tool to uninstall Endpoint Protection
+https://support.symantec.com/us/en/article.howto124983.html
+Note:  SEP 14 now forces end-user interaction.
+
+Article has the download and readme.
+ 
+Select all apps in the tool and once completed it will require a reboot and once you log back in the software will continue and show completion.  You will need to periodically check this article as they update the software versions often.  You can also verify when running if it requires an update.
+
 [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
 
