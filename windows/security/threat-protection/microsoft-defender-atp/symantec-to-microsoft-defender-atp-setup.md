@@ -25,17 +25,21 @@ ms.topic: article
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
-1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
-2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
+1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows.
+2. [Enable Microsoft Defender AV](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to the exclusion list for Microsoft Defender AV and Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av-and-microsoft-defender-atp). 
 
-## Set Microsoft Defender ATP to passive mode
+## Set Microsoft Defender AV to passive mode
 
-Set the registry key for Microsoft Defender ATP to passive mode on any endpoints or devices running the following operating systems:
+On certain versions of Windows, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product, such as Symantec. However, you can enable passive mode by setting a registry key. 
+
+The following procedure applies to endpoints or devices that are running the following versions of Windows:
 - Windows Server 2016;
 - Windows Server, version 1803 (core-only mode); or 
 - Windows Server 2019
+
+If you're running Windows 10, you do not need to perform this task.
 
 1. As an administrator on the endpoint or device, open Registry Editor.
 
@@ -46,7 +50,7 @@ Set the registry key for Microsoft Defender ATP to passive mode on any endpoints
    - Under **Base**, select **Hexidecimal**.
 
 > [!NOTE]
-> You can use other methods to perform this task, such as the following:
+> You can use other methods to set the registry key, such as the following:
 >- [Group Policy Preference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 >- [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)
