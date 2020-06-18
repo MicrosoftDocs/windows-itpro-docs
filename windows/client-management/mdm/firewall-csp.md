@@ -20,6 +20,9 @@ Firewall rules in the FirewallRules section must be wrapped in an Atomic block i
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/library/mt620101.aspx).
 
+> [!NOTE]
+> The capability of enabling a rule in Firewall that will enable a port such as TCP 3389 using custom policies is not currently possible using a CSP.
+
 The following diagram shows the Firewall configuration service provider in tree format. 
 
 ![firewall csp](images/provisioning-csp-firewall.png)
