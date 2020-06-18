@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection - Overview and Planning
+# Overview of migrating from Symantec to Microsoft Defender Advanced Threat Protection
 
 If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
 
-## Planning your migration: The process at a high level
+## The migration process
 
 The process of switching from Symantec to Microsoft Defender ATP can be divided into three phases or parts, as listed in the following table. 
 
