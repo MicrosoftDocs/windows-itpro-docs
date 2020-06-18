@@ -24,9 +24,9 @@ ms.topic: article
 |--|--|--|
 ||*You are here!* | |
 
-**Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This migration phase includes the following steps:
+**Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
-2. [Re-enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
+2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to your Microsoft Defender ATP exclusion list](#add-symantec-to-your-microsoft-defender-atp-exclusion-list). 
 
@@ -66,9 +66,7 @@ Use one the methods listed in the following table:
 
 ## Add Microsoft Defender ATP to the exclusion list for Symantec
 
-This step of the migration process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using.
-
-Add the exclusions listed in the following table:
+This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to add depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
@@ -77,34 +75,22 @@ Add the exclusions listed in the following table:
 
 ## Add Symantec to your Microsoft Defender ATP exclusion list
 
-*This is from the Word doc - needs revision and clarification*
+During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender ATP exclusion list. You specify exclusions in Microsoft Defender AV and in Microsoft Defender ATP.
 
+### Add exclusions in Microsoft Defender AV
 
-Add Symantec and your other security solutions to the Microsoft Defender ATP EDR exclusion list.
+First, you add add path and process [exclusions to Microsoft Defender AV scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Keep the following points in mind:
+- Path exclusions exclude specific files and whatever those files access.
+- Process exclusions exclude whatever a process touches, but does not exclude the process itself.
+- If you list each executable (.exe) as both a path exclusion and a process exclusion, you can help ensure that the process and whatever it touches are excluded.
+- List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 
-For MDATP (AV and EDR), there are two portions to exclude third-party security products.
+You can choose from several methods to add your exclusions to Microsoft Defender AV, as listed in the following table:
 
-
- 
-1.	You will need to add exclusions to Path and Process in the AV.
-Process exclusion vs Path exclusion...
-“Process exclusions” exclude everything a process touches but does not exclude the process itself from being scanned on access. Excluding the same EXE as both a “process” and “path exclusion” will exclude the file itself, as well as anything the file accesses. We discourage process exclusions that are 'name only' instead of full path, as they are less secure.
- 
-2.	And add in EDR, go to Indicator – File Hash.
-
-### MDAV/SCEP
-
-#### Option 1: In the Intune MDAV policies add the exclusions
- 
-Intune portal (portal.azure.com)
-Device Configuration -> Profiles -> [Select your profile for AV] -> Properties -> Settings -> Microsoft Defender Antivirus -> Microsoft Defender Antivirus Exclusions 
- 
-Files and folders
-       xxxxx
- 
-Processes
-       xxxxx
- 
+|Method | What to do|
+|--|--|
+|[Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) |1. Go to the Azure portal [https://portal.azure.com](https://portal.azure.com) and sign in.<br/>2. In the list of Azure services, select **Intune**.<br/>3. Go to **Device Configuration** > **Profiles**, and then select your profile for AV. <br/>4. Go to **Properties** > **Settings** > **Microsoft Defender Antivirus** > **Microsoft Defender Antivirus Exclusions**.<br/>4. Set exclusions for files and folders. <br/>5. Set exclusions for processes. |
+|
 
 #### Option 2: In the SCCM MDAV/SCEP policies add the exclusions
 
