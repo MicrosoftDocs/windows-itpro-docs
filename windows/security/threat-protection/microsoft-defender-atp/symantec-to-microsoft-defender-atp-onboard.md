@@ -55,15 +55,16 @@ ms.topic: article
 
 ### Device collections
 
+*WORK IN PROGRESS*
 
 ### Organizational units
 
-
+*WORK IN PROGRESS*
 
 
 ## Deploy Microsoft Defender ATP and uninstall Symantec
 
-stuff (will draw from existing content here)
+*WORK IN PROGRESS*
 
 [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
