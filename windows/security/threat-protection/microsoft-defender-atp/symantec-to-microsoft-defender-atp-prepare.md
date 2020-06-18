@@ -23,7 +23,7 @@ ms.topic: article
 |--|--|--|
 |*You are here!*| | |
 
-**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. 
+**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).

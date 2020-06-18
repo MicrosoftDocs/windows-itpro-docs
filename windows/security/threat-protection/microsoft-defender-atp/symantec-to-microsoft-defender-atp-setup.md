@@ -24,7 +24,7 @@ ms.topic: article
 |--|--|--|
 ||*You are here!* | |
 
-**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows.
 2. [Enable Microsoft Defender AV](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec)
