@@ -91,28 +91,9 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |--|--|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) |1. Go to the Azure portal [https://portal.azure.com](https://portal.azure.com) and sign in.<br/><br/>2. In the list of Azure services, select **Intune**.<br/><br/>3. Go to **Device Configuration** > **Profiles**, and then select your profile for AV. If you need to create a profile, see [Create the profile](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile).<br/><br/>4. Go to **Properties**, and then edit your **Configuration settings**. <br/><br/>5. Expand **Microsoft Defender Antivirus**, and then expand **Microsoft Defender Antivirus Exclusions**.<br/><br/>6. **Settings** > **Microsoft Defender Antivirus** > **Microsoft Defender Antivirus Exclusions**.<br/><br/>7. Specify the files and folders, extensions, and processes to exclude from Microsoft Defender AV scans. For examples of what to enter, see [Microsoft Defender AV exclusions](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions).  |
 |[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) |1. Using the [Configuration Manager console](https://docs.microsoft.com/mem/configmgr/core/servers/manage/admin-console), go to **Assets and Compliance** > **Endpoint Protection** > **Antimalware Policies**, and then select the policy that you want to modify. <br/><br/>2. Specify exclusion settings for files and folders, extensions, and processes to exclude from Microsoft Defender AV scans. |
-|Group Policy Object | w/ the MDAV exclusions
-
-Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions
-Path Exclusions
-    xxxxx
-Process Exclusions
-    xxxxx
-
-#### Option 4: Local gpo
-
-You could setup the 3rd party security product exclusions (SEP or Tanium) on 1 machine by going to:
-              Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions
-              Path Exclusions
-                           xxxxx
-              Process Exclusions
-                           xxxxx
-
-#### Option 5: Export the following registry key:
- 
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions
- 
-And import it in as a “regedit.exe /s MDAV_Exclusion.reg”
+|Group Policy Object | Go to Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions. Specify path and process exclusions. |
+|Local group policy object |You could setup the 3rd party security product exclusions (SEP or Tanium) on 1 machine by going to Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions. Specify your path and process exclusions. |
+|Registry key |Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`. Then import it as a `regedit.exe /s MDAV_Exclusion.reg` |
 
 ### MD ATP (EDR)
 
