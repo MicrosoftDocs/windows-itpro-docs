@@ -66,9 +66,14 @@ ms.topic: article
 
 **[Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou)**.
 
-## Deploy Microsoft Defender ATP and uninstall Symantec
+## Deploy policies and updates to device collections
 
-[Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
+*WORK IN PROGRESS*
+
+SCCM Antimalware policies can be deployed ahead of time to the “Device Collections”.
+
+SCCM ADR for MDAV “Platform update” and SCEP “Platform update” can be deployed ahead of time to the “Device Collections”.
+
 
 ## Onboard devices to Microsoft Defender ATP
 
@@ -76,7 +81,9 @@ You can choose from several methods to onboard devices to Microsoft Defender ATP
 
 stuff (will draw from existing content here)
 
+## Uninstall Symantec
 
+[Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
 
 ## Next step
