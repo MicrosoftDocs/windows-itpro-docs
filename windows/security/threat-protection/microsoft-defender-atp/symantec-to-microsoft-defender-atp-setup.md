@@ -32,15 +32,15 @@ ms.topic: article
 
 ## Set Microsoft Defender AV to passive mode
 
+> [!TIP]
+> If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
+
 On certain versions of Windows, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product, such as Symantec. (See [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)) However, you can enable passive mode by setting a registry key. 
 
 The following procedure applies to endpoints or devices that are running the following versions of Windows:
 - Windows Server 2016;
 - Windows Server, version 1803 (core-only mode); or 
 - Windows Server 2019
-
-> [!TIP]
-> If you're running Windows 10, you do not need to perform this task.
 
 1. As an administrator on the endpoint or device, open Registry Editor.
 
@@ -87,7 +87,7 @@ During this step of the setup process, you add Symantec and your other security 
 When you add [exclusions to Microsoft Defender AV scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.
 - Process exclusions exclude whatever a process touches, but does not exclude the process itself.
-- If you list each executable (.exe) as both a path exclusion and a process exclusion, you can help ensure that the process and whatever it touches are all excluded.
+- If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 
 You can choose from several methods to add your exclusions to Microsoft Defender AV, as listed in the following table:
