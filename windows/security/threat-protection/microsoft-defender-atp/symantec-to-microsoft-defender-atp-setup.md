@@ -109,7 +109,7 @@ To add exclusions to Microsoft Defender ATP, you create [indicators](https://doc
 3.  On the **File hashes** tab, choose **Add indicator**.
 
 3. On the **Indicator** tab, specify the following settings:
-   - File hash (Need help finding this? See [Find the file hashes of your security solutions](#find-the-file-hashes-of-your-security-solutions) section in this article.)
+   - File hash (Need help? See [How to find the file hashes of your security solutions](#how-to-find-the-file-hashes-of-your-security-solutions) in this article.)
    - Under **Expires on (UTC)**, choose **Never**.
 
 4. On the **Action** tab, specify the following settings:
@@ -146,7 +146,9 @@ where InitiatingProcessFileName has 'notepad.exe'
               
 #### Find a file hash using CMPivot
 
-CMPivot is an in-console utility that provides access to real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
+CMPivot is an in-console utility for Configuration Manager. CMPivot provides access to the real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
+
+To use CMPivot to get your file hash, follow these steps:
 
 1. Review the [prerequisites](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot#prerequisites).
 
