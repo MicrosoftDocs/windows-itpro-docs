@@ -1,6 +1,6 @@
 ---
-title: Part 2 - Set up Microsoft Defender ATP
-description: Part 2 - Set up Microsoft Defender ATP
+title: Phase 2 - Set up Microsoft Defender ATP
+description: Phase 2 - Set up Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 2: Set up Microsoft Defender ATP
+# Migrate from Symantec - Phase 2: Set up Microsoft Defender ATP
 
 
 |[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |

@@ -1,6 +1,6 @@
 ---
-title: Part 1 - Plan your migration to Microsoft Defender ATP
-description: Part 1 of "Make the switch from Symantec to Microsoft Defender ATP"
+title: Phase 1 - Plan your migration to Microsoft Defender ATP
+description: Phase 1 of "Make the switch from Symantec to Microsoft Defender ATP"
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Migrate from Symantec - Part 1: Prepare for your migration
+# Migrate from Symantec - Phase 1: Prepare for your migration
 
 |![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
@@ -77,11 +77,11 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 <br/>
 
-**Congratulations**! You have completed part 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
+**Congratulations**! You have completed Phase 1 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 ## Next step
 
-- [Proceed to Part 2: Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md)
+- [Proceed to Phase 2: Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md)
 
 
 

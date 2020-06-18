@@ -56,4 +56,4 @@ The following table lists features and capabilities of Microsoft Defender ATP:
 
 ## Next step
 
-When you are ready to begin your migration, proceed to [Migrate from Symantec - Part 1: Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
+When you are ready to begin your migration, proceed to [Migrate from Symantec - Phase 1: Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
