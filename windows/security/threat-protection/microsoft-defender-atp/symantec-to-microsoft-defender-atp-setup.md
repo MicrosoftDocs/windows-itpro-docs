@@ -61,8 +61,7 @@ The following procedure applies to endpoints or devices that are running the fol
 
 Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV, which can run alongside your existing antivirus solution. 
 
-To enable Microsoft Defender AV, use one of the methods that are listed in the following table:
-
+To enable Microsoft Defender AV, we recommend using Intune. However, you can use any of the methods that are listed in the following table:
 
 |Method  |What to do  |
 |---------|---------|
