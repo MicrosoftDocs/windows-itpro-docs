@@ -146,27 +146,29 @@ where InitiatingProcessFileName has 'notepad.exe'
 CMPivot is an in-console utility that provides access to real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
 
 1. Review the [prerequisites](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot#prerequisites).
+
+2. [Start CMPivot](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot#start-cmpivot). 
+
+3. Connect to Configuration Manager (`SCCM_ServerName.DomainName.com`).
+
+4. Select the **Query** tab.
  
-Pre-req
-Install CMPivot
-C:\Program Files\Microsoft Configuration Manager\tools\CMPivot \cmpivot.msi
- 
-Start, CMPivot (Run as admin)
-Connect to your SCCM server (SCCM_ServerName.DomainName.com)
-Click on Connect
- 
-Click on the “Query tab”
- 
-Select the “Device Collection” (drop down, All Systems (default)).
-Type:
+5. Select **Device Collection** drop down, and choose **All Systems (default)**.
+
+6. In the query box, type the following query:<br/>
+
+```kusto
 File(c:\\windows\\notepad.exe)
 | project Hash
+```
+> [!NOTE]
+> In the query above, replace *notepad.exe* with the your third-party security product process name. 
 
 <br/><br/>
 
-**Congratulations**! You have completed part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
+**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
 
 ## Next step
 
-- [Proceed to Part 3: Finish making the switch to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)
+- [Proceed to Phase 3: Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)
