@@ -28,7 +28,7 @@ The process of switching from Symantec to Microsoft Defender ATP can be divided 
 |Phase |Description |
 |--|--|
 |[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During this phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. |
-|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During this phase, you configure settings and exclusions for Microsoft Defender Antivirus (Microsoft Defender AV), Microsoft Defender ATP, and Symantec Endpoint Protection. |
+|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During this phase, you configure settings and exclusions for Microsoft Defender Antivirus (Microsoft Defender AV), Microsoft Defender ATP, and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. |
 |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md) |During this phase, you onboard your devices to Microsoft Defender ATP and then uninstall Symantec. |
 
 After you have Microsoft Defender ATP set up and deployed, you can [manage the various features and capabilities](microsoft-defender-atp-post-migration-management.md).
@@ -46,4 +46,4 @@ Watch the following video to get an overview:
 
 ## Next step
 
-When you are ready to begin your migration, proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
+- When you are ready to begin your migration, proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
