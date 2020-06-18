@@ -89,19 +89,9 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 
 |Method | What to do|
 |--|--|
-|[Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) |1. Go to the Azure portal [https://portal.azure.com](https://portal.azure.com) and sign in.<br/>2. In the list of Azure services, select **Intune**.<br/>3. Go to **Device Configuration** > **Profiles**, and then select your profile for AV. <br/>4. Go to **Properties** > **Settings** > **Microsoft Defender Antivirus** > **Microsoft Defender Antivirus Exclusions**.<br/>4. Set exclusions for files and folders. <br/>5. Set exclusions for processes. |
-|
-
-#### Option 2: In the SCCM MDAV/SCEP policies add the exclusions
-
-Assets and Compliance -> Endpoint Protection -> Antimalware Policies -> [Select the policy that you want to modify] -> Exclusion Settings  
-Excluded files and folders:
-xxxxx
-Excluded processes:
-xxxxx
-
-
-#### Option 3: Create a new GPO w/ the MDAV exclusions
+|[Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) |1. Go to the Azure portal [https://portal.azure.com](https://portal.azure.com) and sign in.<br/>2. In the list of Azure services, select **Intune**.<br/>3. Go to **Device Configuration** > **Profiles**, and then select your profile for AV. If you need to create a profile, see [Create the profile](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile).<br/>4. Go to **Properties**, and then edit your **Configuration settings**. <br/>5. Expand **Microsoft Defender Antivirus**, and then expand **Microsoft Defender Antivirus Exclusions**.<br/>6. **Settings** > **Microsoft Defender Antivirus** > **Microsoft Defender Antivirus Exclusions**.<br/>7. Specify the files and folders, extensions, and processes to exclude from Microsoft Defender AV scans. For examples of what to enter, see [Microsoft Defender AV exclusions](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions).  |
+|[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) |1. Using the [Configuration Manager console](https://docs.microsoft.com/mem/configmgr/core/servers/manage/admin-console), go to **Assets and Compliance** > **Endpoint Protection** > **Antimalware Policies**, and then select the policy that you want to modify. <br/>3. Specify exclusion settings for files and folders, extensions, and processes to exclude from Microsoft Defender AV scans. |
+|Group Policy Object | w/ the MDAV exclusions
 
 Computer Configuration -> Administrative Templates -> Windows Components -> Windows Defender Antivirus -> Exclusions
 Path Exclusions
