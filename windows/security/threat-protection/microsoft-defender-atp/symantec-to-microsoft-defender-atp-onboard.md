@@ -52,7 +52,6 @@ ms.topic: article
 
 8. Choose **Done**.
 
-
 ### Device collections
 
 [Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. Device collections are created by using Configuration Manager.
