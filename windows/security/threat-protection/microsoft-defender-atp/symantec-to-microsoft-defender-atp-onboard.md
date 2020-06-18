@@ -57,6 +57,12 @@ ms.topic: article
 
 *WORK IN PROGRESS*
 
+[Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization.
+
+
+
+
+
 ### Organizational units
 
 *WORK IN PROGRESS*
