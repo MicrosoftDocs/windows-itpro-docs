@@ -66,7 +66,7 @@ ms.topic: article
 
 **[Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou)**.
 
-## Deploy policies and updates to device collections
+## Deploy policies and updates to your device collections
 
 *WORK IN PROGRESS*
 
@@ -76,6 +76,8 @@ SCCM ADR for MDAV “Platform update” and SCEP “Platform update” can be de
 
 
 ## Onboard devices to Microsoft Defender ATP
+
+*WORK IN PROGRESS*
 
 You can choose from several methods to onboard devices to Microsoft Defender ATP. 
 
