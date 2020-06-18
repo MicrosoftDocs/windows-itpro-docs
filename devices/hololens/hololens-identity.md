@@ -96,13 +96,11 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 > [!NOTE]
 > Users who sign in by using a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
-#### How are Windows Hello for Business Iris scans are supported on HoloLens?
+### How is Iris biometric authentication implemented?
 
-Iris is implemented the same way as other Windows Hello technologies and hit 1/100K FAR. Useful resources about biometric requirements for Windows Hello.
+HoloLens 2 supports Iris authentication. Iris is implemented based on Windows Hello technology. Iris is implemented the same way as other Windows Hello technologies and hit 1/100K FAR. 
 
-- [Biometrics Requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)
-
-Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification).
+You can learn more about biometric requirements and specifications for Windows Hello [here](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
 #### Does the type of account change the sign-in behavior?
 
