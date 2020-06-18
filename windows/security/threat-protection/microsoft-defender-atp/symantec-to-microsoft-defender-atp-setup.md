@@ -77,7 +77,7 @@ This step of the setup process involves adding Microsoft Defender ATP to the exc
 
 During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender ATP exclusion list. You specify exclusions in both Microsoft Defender AV and Microsoft Defender ATP.
 
-### Add exclusions in Microsoft Defender AV
+### Add exclusions to Microsoft Defender AV
 
 When you add [exclusions to Microsoft Defender AV scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.
@@ -95,49 +95,57 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <br/><br/>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <br/><br/>3. Specify your path and process exclusions. |
 |Registry key |Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`. Then import it as a `regedit.exe /s MDAV_Exclusion.reg` |
 
-### MD ATP (EDR)
+### Add exclusions to Microsoft Defender ATP
 
-Indicators – Hash
-Settings -> Indicators ->File hashes tab -> Add indicator
-In the “Indicator” tab
-File hash
-Never
-Click on Next 
-In the “Action” tab
-Response Action: Allow
-Title:
-Description:
-Click on Next
-In the “Scope” tab
-Machine groups:
-All machines in my scope
-or
-Select from list
-Click on Next
-In the “Summary” tab
-Review
-Click on “Save”
+To add exclusions to Microsoft Defender ATP, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
 
-*More notes in the Word document:*
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 
-How can I find the file hashes of my 3rd party security products?
-There are a few methods, in this e-mail, we will talk about the MDATP “Advanced Hunting” functionality and SCCM’s CMPivot.
+2. In the navigation pane, choose **Settings** > **Rules** > **Indicators**.
+
+3.  On the **File hashes** tab, choose **Add indicator**.
+
+3. On the **Indicator** tab, specify the following settings:
+   - File hash (Need help finding this? See [Find the file hashes of your security solutions](#find-the-file-hashes-of-your-security-solutions) section in this article.)
+   - Under **Expires on (UTC)**, choose **Never**.
+
+4. On the **Action** tab, specify the following settings:
+   - **Response Action**: **Allow**
+   - Title and description
+
+5. On the **Scope** tab, under **Device groups**, select either **All devices in my scope** or **Select from list**.
+
+6. On the **Summary** tab, review the settings, and then click **Save**.
+
+#### Find the file hashes of your security solutions
+
+You can find the file hashes of your third-party security products by using one of the following methods:
+- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) in Microsoft Defender ATP
+- [CMPivot](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview) in Configuration Manager
+
+##### Microsoft Defender ATP Advanced Hunting
  
-MDATP “Advanced Hunting”
+Advanced hunting is a query-based threat-hunting tool that lets you explore raw data for the last 30 days. You can use Kusto syntax and operators to construct queries that locate information in the schema specifically structured for advanced hunting. To learn more, see [Learn the advanced hunting query language](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language).
+
+Here's an example query that you can use to find the file hashes for your security solutions: 
  
-Note:  Change the “Last 7 days” to “Last 30 days”
- 
-```
+```kusto
 find in (FileCreationEvents, ProcessCreationEvents, MiscEvents, RegistryEvents, NetworkCommunicationEvents, ImageLoadEvents)
 where InitiatingProcessFileName has 'notepad.exe'
 | project EventTime, ComputerName, InitiatingProcessSHA256, InitiatingProcessFolderPath, InitiatingProcessCommandLine
 | distinct InitiatingProcessSHA256
 ```
 
-Note:    Replace notepad.exe with the 3rd party security product process name.
-Note 2:  We added ‘distinct’ query which shows just the unique SHA256’s.
+> [!NOTE]
+> In the query above, replace *notepad.exe* with the your third-party security product process name. 
+>
+> In our example query, we added the *distinct* query which shows just the unique SHA256’s.
               
-SCCM CMPivot
+##### CMPivot in Configuration Manager
+
+CMPivot is an in-console utility that provides access to real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
+
+1. Review the [prerequisites](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot#prerequisites).
  
 Pre-req
 Install CMPivot
