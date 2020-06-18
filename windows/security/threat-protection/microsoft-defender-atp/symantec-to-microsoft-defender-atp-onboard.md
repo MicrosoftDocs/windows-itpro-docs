@@ -31,11 +31,17 @@ ms.topic: article
 - [Uninstall Symantec](#uninstall-symantec)
 
 
-## Deploy policies and updates to your device collections
+## Deploy antimalware policies to your device collections
 
 *WORK IN PROGRESS*
 
+During this step of the migration 
+
 SCCM Antimalware policies can be deployed ahead of time to the “Device Collections”.
+
+## Deploy platform updates to your device collections
+
+*WORK IN PROGRESS*
 
 SCCM ADR for MDAV “Platform update” and SCEP “Platform update” can be deployed ahead of time to the “Device Collections”.
 
