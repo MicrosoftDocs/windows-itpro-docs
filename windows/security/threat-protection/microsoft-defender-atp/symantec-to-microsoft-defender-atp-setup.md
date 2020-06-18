@@ -27,8 +27,9 @@ ms.topic: article
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
 1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows.
 2. [Enable Microsoft Defender AV](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to the exclusion list for Microsoft Defender AV and Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av-and-microsoft-defender-atp). 
+3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec)
+4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
+5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp) 
 
 ## Set Microsoft Defender AV to passive mode
 
@@ -60,7 +61,7 @@ The following procedure applies to endpoints or devices that are running the fol
 
 Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV, which can run alongside your existing antivirus solution. 
 
-Use one the methods listed in the following table:
+To enable Microsoft Defender AV, use one of the methods that are listed in the following table:
 
 
 |Method  |What to do  |
