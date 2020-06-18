@@ -39,7 +39,8 @@ The following procedure applies to endpoints or devices that are running the fol
 - Windows Server, version 1803 (core-only mode); or 
 - Windows Server 2019
 
-If you're running Windows 10, you do not need to perform this task.
+> [!TIP]
+> If you're running Windows 10, you do not need to perform this task.
 
 1. As an administrator on the endpoint or device, open Registry Editor.
 
