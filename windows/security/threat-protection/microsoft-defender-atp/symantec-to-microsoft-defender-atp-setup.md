@@ -127,10 +127,13 @@ MDATP “Advanced Hunting”
  
 Note:  Change the “Last 7 days” to “Last 30 days”
  
+```
 find in (FileCreationEvents, ProcessCreationEvents, MiscEvents, RegistryEvents, NetworkCommunicationEvents, ImageLoadEvents)
 where InitiatingProcessFileName has 'notepad.exe'
 | project EventTime, ComputerName, InitiatingProcessSHA256, InitiatingProcessFolderPath, InitiatingProcessCommandLine
 | distinct InitiatingProcessSHA256
+```
+
 Note:    Replace notepad.exe with the 3rd party security product process name.
 Note 2:  We added ‘distinct’ query which shows just the unique SHA256’s.
               
@@ -151,7 +154,7 @@ Type:
 File(c:\\windows\\notepad.exe)
 | project Hash
 
-<br/><br/><br/><br/>
+<br/><br/>
 
 **Congratulations**! You have completed part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
 
