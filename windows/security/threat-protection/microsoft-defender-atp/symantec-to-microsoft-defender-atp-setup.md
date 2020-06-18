@@ -24,11 +24,11 @@ ms.topic: article
 |--|--|--|
 ||*You are here!* | |
 
-**Welcome to Part 2 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)**. This phase includes the following steps:
 1. [Set Microsoft Defender ATP to passive mode](#set-microsoft-defender-atp-to-passive-mode).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp). 
+4. [Add Symantec to the exclusion list for Microsoft Defender AV and Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av-and-microsoft-defender-atp). 
 
 ## Set Microsoft Defender ATP to passive mode
 
@@ -73,7 +73,7 @@ This step of the setup process involves adding Microsoft Defender ATP to the exc
 |Windows 10, [version 1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803) or later (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information))<br/><br/>Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/><br/>[Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2019](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
 |[Windows 7](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2) <br/><br/>[Windows Server 2012 R2](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2016](https://docs.microsoft.com/windows/release-information/status-windows-10-1607-and-windows-server-2016) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
-## Add Symantec to the exclusion list for Microsoft Defender ATP
+## Add Symantec to the exclusion list for Microsoft Defender AV and Microsoft Defender ATP
 
 During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender ATP exclusion list. You specify exclusions in both Microsoft Defender AV and Microsoft Defender ATP.
 
