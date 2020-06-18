@@ -63,12 +63,13 @@ To create a device collection, use Configuration Manager and follow the guidance
 
 ### Organizational units
 
-*WORK IN PROGRESS*
+[Organizational units](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings.
 
+Organizational units are defined in Azure Active Directory Domain Services.
+
+To create an organizational unit, see [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou).
 
 ## Deploy Microsoft Defender ATP and uninstall Symantec
-
-*WORK IN PROGRESS*
 
 [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
