@@ -212,4 +212,47 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
     `com.microsoft.autoupdate2.plist: OK`
 
 13. Grant full disk access to Microsoft Defender ATP. 
+    
+    Privacy Preferences Policy Control (TCC,  Full Disk Access for macOS 10.15 (Catalina) and newer).
 
+    For more information, see [Privacy preferences policy control](mac-install-with-jamf.md#privacy-preferences-policy-control).
+
+    a. Select **Options > Privacy Preferences Policy Control**.
+    b. Use any identifier and identifier type = Bundle.
+    c. Set Code Requirement to identifier 'com.microsoft.wdav' and `anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
+    d. Set app or service to `SystemPolicyAllFiles` and access to `Allow`.
+
+14. Approve Kernel Extension for Microsoft Defender ATP.
+
+  a. In **Computers > Configuration Profiles select Options > Approved Kernel Extensions**.
+  b. Use **UBF8T346G9** for **Team Id**.
+
+
+## Onboard the package
+
+1. Locate the file `WindowsDefenderATPOnboarding.plist`.
+
+    ![Image of file](images/plist-onboarding-file.png)
+
+2. In the JamF Pro dashboard, select **New**.
+
+    ![Image of Jamf Pro dashboard](images/jamf-pro-configure-profile.png)
+
+3. Enter the following details:
+
+   **General**
+   - Name: MDATP onboarding for macOS
+   - Description: MDATP EDR onboarding for macOS
+   - Category: None
+   - Distribution Method: Install Automatically
+   - Level: Computer Level
+
+   **General**
+   - Select **Application & Custom Settings**
+   - Select **Configure**.
+
+    ![Image of configuration profile](images/jamfpro-mac-profile.png)
+
+4. Select **Upload File (PLIST file)**.
+
+    ![Image of profile](images/jamfpro-plist.png)
