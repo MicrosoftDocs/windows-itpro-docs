@@ -32,7 +32,7 @@ ms.topic: article
 
 ## Set Microsoft Defender AV to passive mode
 
-On certain versions of Windows, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product, such as Symantec. However, you can enable passive mode by setting a registry key. 
+On certain versions of Windows, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product, such as Symantec. (See [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)) However, you can enable passive mode by setting a registry key. 
 
 The following procedure applies to endpoints or devices that are running the following versions of Windows:
 - Windows Server 2016;
