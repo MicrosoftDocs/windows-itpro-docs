@@ -156,6 +156,7 @@ Support for Windows Server, provide deeper insight into activities happening on 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
        - Name: ForceDefenderPassiveMode
+       - Type: REG_DWORD
        - Value: 1
 
     1. Run the following PowerShell command to verify that the passive mode was configured:
