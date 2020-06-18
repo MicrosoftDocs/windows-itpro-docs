@@ -50,6 +50,7 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 If you are Using Windows Server, version 1803 and Windows 2019, you can enable passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: ForceDefenderPassiveMode
+- Type: REG_DWORD
 - Value: 1
 
 See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
