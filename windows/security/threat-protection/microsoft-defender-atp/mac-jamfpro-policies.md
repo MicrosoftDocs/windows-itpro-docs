@@ -42,33 +42,34 @@ ms.topic: conceptual
 7. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 8. Use the following Microsoft Defender ATP configuration settings:
-  - enableRealTimeProtection
-  - passiveMode
 
+    - enableRealTimeProtection
+    - passiveMode
+    
     >[!NOTE]
     >Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
 
-  - exclusions
-  - excludedPath
-  - excludedFileExtension
-  - excludedFileName
-  - exclusionsMergePolicy
-  - allowedThreats
+    - exclusions
+    - excludedPath
+    - excludedFileExtension
+    - excludedFileName
+    - exclusionsMergePolicy
+    - allowedThreats
+    
+    >[!NOTE]
+    >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
+        
+    - disallowedThreatActions
+    - potentially_unwanted_application
+    - archive_bomb
+    - cloudService
+    - automaticSampleSubmission
+    - tags
+    - hideStatusMenuIcon
+    
+     For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
 
-  >[!NOTE]
-  >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
-  
-  - disallowedThreatActions
-  - potentially_unwanted_application
-  - archive_bomb
-  - cloudService
-  - automaticSampleSubmission
-  - tags
-  - hideStatusMenuIcon
-
-    For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
-
-```
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -171,7 +172,7 @@ ms.topic: conceptual
 
 10. Configure the notification settings (macOS 10.15 (Catalina) or newer). For more information, see [Notification settings](mac-install-with-jamf.md#notification-settings).
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
@@ -193,7 +194,8 @@ ms.topic: conceptual
 </plist>
 
 ```
-   Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDATP_MDAV_notification_settings.plist`.
+
+Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDATP_MDAV_notification_settings.plist`.
 
 
 12. Configure Microsoft AutoUpdate (MAU).
@@ -201,5 +203,13 @@ ms.topic: conceptual
     - JAMF - Set preferences for Microsoft AutoUpdate. For more infomation, see [JAMF](mac-updates.md#jamf).
     - Save the file as e.g. MDATP_MDAV_MAU_settings.plist
 
+    >[!IMPORTANT]
+    >Set the Preference Domain to `com.microsoft.autoupdate2`
 
+    Add path to the location of `com.microsoft.autoupdate2.plist`
+
+    `plutil -lint com.microsoft.autoupdate2.plist`
+    `com.microsoft.autoupdate2.plist: OK`
+
+13. Grant full disk access to Microsoft Defender ATP. 
 
