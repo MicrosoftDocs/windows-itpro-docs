@@ -25,13 +25,13 @@ ms.topic: article
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows
+1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) (on certain versions of Windows).
 2. [Enable Microsoft Defender AV](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec)
-4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av) 
-5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp) 
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection)
+3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
+4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
+5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp).
+6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Set Microsoft Defender AV to passive mode
 
