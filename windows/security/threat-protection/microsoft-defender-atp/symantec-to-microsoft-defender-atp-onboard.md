@@ -27,9 +27,9 @@ ms.topic: article
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
-
-
-#
+1. 
+2. 
+3.  
 
 ## Onboard devices to Microsoft Defender ATP
 
