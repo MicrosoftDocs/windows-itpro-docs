@@ -27,9 +27,9 @@ ms.topic: article
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
-1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp)
-2. [Run a detection test](#run-a-detection-test)
-3. [Uninstall Symantec](#uninstall-symantec) 
+1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
+2. [Run a detection test](#run-a-detection-test).
+3. [Uninstall Symantec](#uninstall-symantec).
 
 ## Onboard devices to Microsoft Defender ATP
 
@@ -66,7 +66,7 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 
 ## Uninstall Symantec
 
-Now that you have configured Microsoft Defender ATP and have onboarded your organization's devices, your next step is to uninstall Symantec.
+Now that you have onboarded your organization's devices to Microsoft Defender ATP, your next step is to uninstall Symantec.
 
 - Follow the guidance in [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
