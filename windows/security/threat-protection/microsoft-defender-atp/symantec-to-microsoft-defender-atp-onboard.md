@@ -45,7 +45,7 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 
 |Operating system  |Method  |
 |---------|---------|
-|Windows 10     |[Group Policy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp)<br/><br/>[Microsoft Endpoing Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)<br/><br/>[Mobile Device Management (Intune)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)         |
+|Windows 10     |[Group Policy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp)<br/><br/>[Microsoft Endpoing Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)<br/><br/>[Mobile Device Management (Intune)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)<br/><br/>[Local script](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script)         |
 |Row2     |         |
 
 
