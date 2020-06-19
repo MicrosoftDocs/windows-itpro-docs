@@ -64,7 +64,6 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Using Terminal, run the following command: <br/>`$ mdatp --connectivity-test` <br/><br/>For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)        |
 |Linux |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled` <br/><br/>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` <br/><br/>3. Run the following command to list any detected threats: <br/>`mdatp threat list` <br/><br/>For more information, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux). |
 
-
 ## Uninstall Symantec
 
 Now that you have configured Microsoft Defender ATP and have onboarded your organization's devices, your next step is to uninstall Symantec.
