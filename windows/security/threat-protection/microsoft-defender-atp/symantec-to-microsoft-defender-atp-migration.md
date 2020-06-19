@@ -46,4 +46,4 @@ Watch the following video to get an overview:
 
 ## Next step
 
-- When you are ready to begin your migration, **proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md)**.
+- When you are ready to begin, **proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md)**.
