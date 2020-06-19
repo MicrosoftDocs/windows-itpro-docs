@@ -239,7 +239,7 @@ If your device was previously set up for someone else, either for a client or fo
 - For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device. The device then re-flashes itself.  
    > [!IMPORTANT]  
    > When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.
-- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#re-install-the-operating-system) to recover the device.
+- For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.
 
 [Back to list](#list)
 
