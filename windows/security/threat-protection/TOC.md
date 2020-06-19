@@ -599,7 +599,6 @@
 ##### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
 ##### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
 ##### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
-#### [Manage Microsoft Defender ATP post migration](microsoft-defender-atp/microsoft-defender-atp-post-migration-management.md)
 
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
