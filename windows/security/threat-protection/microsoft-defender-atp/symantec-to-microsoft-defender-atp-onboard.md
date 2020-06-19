@@ -37,6 +37,17 @@ ms.topic: article
 
 2. Choose **Settings** > **Device management** > **Onboarding**. 
 
+3. In the **Select operating system to start onboarding process** list, select an operating system. 
+
+4. Under **Deployment method**, select an option.
+ 
+Deployment methods vary, depending on which operating system is selected. Refer to the resources listed in the table below to get help with onboarding.
+
+|Operating system  |Method  |
+|---------|---------|
+|Windows 10     |[Group Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp)<br/><br/>[Microsoft Endpoing Configuration Manager](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)<br/><br/>[Mobile Device Management (Intune)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)         |
+|Row2     |         |
+
 
 
 ## Uninstall Symantec
