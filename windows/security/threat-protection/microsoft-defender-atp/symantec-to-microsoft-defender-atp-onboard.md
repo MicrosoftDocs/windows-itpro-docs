@@ -33,12 +33,11 @@ ms.topic: article
 
 ## Onboard devices to Microsoft Defender ATP
 
-*WORK IN PROGRESS*
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 
-You can choose from several methods to onboard devices to Microsoft Defender ATP. 
+2. Choose **Settings** > **Device management** > **Onboarding**. 
 
 
-Deploy MDATP (EDR) can run side-by-side with any 3rd party EDR and/or AV and/or other security products.
 
 ## Uninstall Symantec
 
