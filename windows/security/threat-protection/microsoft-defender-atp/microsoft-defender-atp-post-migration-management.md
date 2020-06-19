@@ -34,7 +34,10 @@ We recommend using [Intune](https://docs.microsoft.com/intune/fundamentals/what-
 ## Additional methods
 
 In addition to using Intune to manage Microsoft Defender ATP, you can choose from other options. These include the following:
-
+- Group Policy Objects
+- PowerShell
+- Windows Management Instrumentation
+- MPCmdRun.exe
 
 ## Related articles
 
