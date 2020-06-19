@@ -72,8 +72,6 @@ Now that you have configured Microsoft Defender ATP and have onboarded your orga
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! You have two next steps:
-
-- After you have Microsoft Defender ATP set up and deployed, your security operations team can **[manage the various features and capabilities of Microsoft Defender ATP, post migration](microsoft-defender-atp-post-migration-management.md)**.
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
 
 - **[Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)** in the Microsoft Defender Security Center 
