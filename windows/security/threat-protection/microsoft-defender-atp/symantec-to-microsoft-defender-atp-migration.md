@@ -23,7 +23,7 @@ If you are planning to switch from Symantec Endpoint Protection (Symantec) to [M
 
 ## The migration process
 
-The process of switching from Symantec to Microsoft Defender ATP can be divided into three phases or parts, as listed in the following table. 
+When you switch from Symantec to Microsoft Defender ATP, you follow a process that can be divided into three phases. The following table lists the three phases and what happens during each phase. 
 
 |Phase |Description |
 |--|--|
