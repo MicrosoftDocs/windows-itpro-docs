@@ -192,6 +192,6 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
+**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
 
 - [Proceed to Phase 3: Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)
