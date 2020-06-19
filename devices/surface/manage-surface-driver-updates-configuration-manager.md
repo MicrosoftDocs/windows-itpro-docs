@@ -11,7 +11,6 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: coveminer
 ms.author: daclark
 ms.topic: article
 audience: itpro
