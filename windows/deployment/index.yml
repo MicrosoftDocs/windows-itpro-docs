@@ -33,7 +33,7 @@ landingContent:
           - text: Evaluate infrastructure and tools
             url: update/eval-infra-tools.md
           - text: Define your servicing strategy
-            url:  update/define-update-strategy.md
+            url:  update/plan-define-strategy.md
 
   # Card (optional)
   - title: Prepare
