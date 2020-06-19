@@ -26,24 +26,10 @@ ms.topic: article
 
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
-- [Deploy antimalware policies to your device collections](#deploy-antimalware-policies-to-your-device-collections)
-- [Deploy platform updates to your device collections](#deploy-platform-updates-to-your-device-collections)
-- [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp)
-- [Uninstall Symantec](#uninstall-symantec)
-
-
-## Deploy antimalware policies to your device collections
-
-*WORK IN PROGRESS*
 
 
 
-## Deploy platform updates to your device collections
-
-*WORK IN PROGRESS*
-
-SCCM ADR for MDAV “Platform update” and SCEP “Platform update” can be deployed ahead of time to the “Device Collections”.
-
+#
 
 ## Onboard devices to Microsoft Defender ATP
 
