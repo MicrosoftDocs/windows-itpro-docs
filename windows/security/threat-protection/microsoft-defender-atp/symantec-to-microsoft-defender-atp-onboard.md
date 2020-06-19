@@ -46,7 +46,9 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 |Operating system  |Method  |
 |---------|---------|
 |Windows 10     |[Group Policy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp)<br/><br/>[Microsoft Endpoing Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)<br/><br/>[Mobile Device Management (Intune)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)<br/><br/>[Local script](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script)         |
-|Row2     |         |
+|Windows 8.1 Enterprise <br/><br/>Windows 8.1 Pro <br/><br/>Windows 7 SP1 Enterprise <br/><br/>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp)        |
+|Windows Server 2019 and later <br/><br/>Windows Server 2019 core edition <br/><br/>Windows Server version 1803 and later |   |
+|Windows Server 2016 <br/><br/>Windows Server 2012 R2 <br/><br/>Windows Server 2008 R2 SP1  |[Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#option-1-onboard-servers-through-microsoft-defender-security-center)<br/><br/>[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
 
 
 
