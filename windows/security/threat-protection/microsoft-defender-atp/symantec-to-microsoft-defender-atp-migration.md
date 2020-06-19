@@ -39,7 +39,7 @@ Microsoft Defender ATP is more than endpoint protection and antivirus. Microsoft
 
 Watch the following video to get an overview:
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
 
 **Want to learn more? See [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).**
