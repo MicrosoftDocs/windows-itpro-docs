@@ -179,11 +179,6 @@ File(c:\\windows\\notepad.exe)
 |[Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. <br/><br/>Device collections are created by using [Configuration Manager](https://docs.microsoft.com/mem/configmgr/). |Follow the steps in [Create a collection](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create). |
 |[Organizational units](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings.<br/><br/> Organizational units are defined in [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services). | Follow the steps in [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou). |
 
-## Configure Endpoint Protection in Configuration Manager
-
-When you configure Endpoint Protection in Configuration Manager, you get an antimalware policy that you can configure for your organization.
-
-1. 
 
 ## Next step
 
