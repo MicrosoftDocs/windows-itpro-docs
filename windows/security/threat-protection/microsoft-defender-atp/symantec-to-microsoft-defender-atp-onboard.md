@@ -66,8 +66,10 @@ Select all apps in the tool and once completed it will require a reboot and once
 [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 
 
-## Next step
+## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)!
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#planning-for-migration-the-process-at-a-high-level)! You have two next steps:
 
 - After you have Microsoft Defender ATP set up and deployed, your security operations team can **[manage the various features and capabilities of Microsoft Defender ATP, post migration](microsoft-defender-atp-post-migration-management.md)**.
+
+- **[Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)** in the Microsoft Defender Security Center 
