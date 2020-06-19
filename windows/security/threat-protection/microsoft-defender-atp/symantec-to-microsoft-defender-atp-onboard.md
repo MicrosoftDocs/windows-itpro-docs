@@ -60,7 +60,7 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 
 |Operating system  |Guidance  |
 |---------|---------|
-|Windows 10 <br/><br/>Windows Server 2019 <br/><br/>Windows Server, version 1803 <br/><br/>Windows Server 2016 <br/><br/>Windows Server 2012 R2     |[Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)         |
+|Windows 10 <br/>Windows Server 2019 <br/>Windows Server, version 1803 <br/>Windows Server 2016 <br/>Windows Server 2012 R2     |[Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)         |
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Using Terminal, run the following command: <br/>`$ mdatp --connectivity-test` <br/><br/>For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)        |
 |Linux |1. Run the following command, and look for a result of **1**: <br/>`Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):` <br/><br/>2. Open a Terminal windows, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` <br/><br/>3. Run the following command to list any detected threats: <br/>`mdatp threat list` <br/><br/>For more information, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux). |
 
