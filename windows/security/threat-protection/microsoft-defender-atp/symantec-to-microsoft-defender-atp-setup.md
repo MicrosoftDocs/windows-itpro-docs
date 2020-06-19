@@ -25,13 +25,13 @@ ms.topic: article
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows.
+1. [Set Microsoft Defender AV to passive mode](#set-microsoft-defender-av-to-passive-mode) on certain versions of Windows
 2. [Enable Microsoft Defender AV](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec)
-4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
+4. [Add Symantec to the exclusion list for Microsoft Defender AV](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av) 
 5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp) 
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units) 
-7. [Configure Endpoint Protection in Configuration Manager](#configure-endpoint-protection-in-configuration-manager) 
+7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection)
 
 ## Set Microsoft Defender AV to passive mode
 
@@ -179,15 +179,16 @@ File(c:\\windows\\notepad.exe)
 |[Device collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. <br/><br/>Device collections are created by using [Configuration Manager](https://docs.microsoft.com/mem/configmgr/). |Follow the steps in [Create a collection](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create). |
 |[Organizational units](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings.<br/><br/> Organizational units are defined in [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services). | Follow the steps in [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/create-ou). |
 
-## Configure antimalware policies
+## Configure antimalware policies and real-time protection
 
 Using Configuration Manager and your device collection(s), configure your antimalware policies.
 
 - See [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies).
 
-- Make sure to review your real-time protection settings for your antimalware policies.
+- While you create and configure your antimalware policies, make sure to review the [real-time protection settings](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings).
 
-- You can deploy the policies before your organization's devices on onboarded.
+> [!TIP]
+> You can deploy the policies before your organization's devices on onboarded.
 
 ## Next step
 
