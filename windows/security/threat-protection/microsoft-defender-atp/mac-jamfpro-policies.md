@@ -260,3 +260,13 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 4. Select **Upload File (PLIST file)**.
 
     ![Image of profile](images/jamfpro-plist.png)
+
+5. Select **Upload File (PLIST file) then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
+
+    ![Image of upload file](images/jamfpro-plist-upload.png)
+
+    ![Image of upload file](images/jamfpro-plist-file.png)
+
+6. Select **Open** and select the onboarding file.
+
+    ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
