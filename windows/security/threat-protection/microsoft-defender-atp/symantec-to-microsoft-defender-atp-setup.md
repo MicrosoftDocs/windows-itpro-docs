@@ -63,13 +63,13 @@ The following procedure applies to endpoints or devices that are running the fol
 
 Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus (Microsoft Defender AV) is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender AV, which can run alongside your existing antivirus solution. 
 
-To enable Microsoft Defender AV, we recommend using Intune. However, you can use any of the methods that are listed in the following table:
+To enable Microsoft Defender AV, we recommend using Intune. However, you can also use one of the methods that are listed in the following table:
 
 |Method  |What to do  |
 |---------|---------|
 |Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender AV](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows).         |
 |[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus`. <br/><br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<br/> <br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This enables Microsoft Defender Antivirus.  |
-|Registry Editor |1. As an administrator on the device, open Registry Editor.<br/><br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/><br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/><br/>4. Reboot the device. |
+
 
 ### Verify that Microsoft Defender AV is in passive mode
 
