@@ -58,6 +58,7 @@
 # Update, troubleshoot, or recover HoloLens
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover HoloLens](hololens-recovery.md)
+## [Restart, reset, or recover HoloLens 1st Gen](hololens1-recovery.md)
 ## [Troubleshoot HoloLens issues](hololens-troubleshooting.md)
 ## [Collect diagnostic information from HoloLens devices](hololens-diagnostic-logs.md)
 ## [Known issues for HoloLens](hololens-known-issues.md)
