@@ -110,7 +110,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 - Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
 **Possible machine compromise**
-- Can you help answer why we see “Unknown process observed?” This message or alert is seen quite frequently on many machines. We appreciate any input to clarify whether this message or alert is related to malicious activity.
+- Can you help answer why we see “Unknown process observed?” This message or alert is seen frequently on many machines. We appreciate any input to clarify whether this message or alert is related to malicious activity.
 - Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**
