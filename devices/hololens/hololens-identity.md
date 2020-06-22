@@ -104,11 +104,11 @@ You can learn more about biometric requirements and specifications for Windows H
 
 ### How does the type of account affect sign-in behavior?
 
-Yes, the behavior for the type of account affects the sign-in behavior. If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
+If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
 
+- **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
 - **Microsoft account**: lock behavior is different allowing automatic unlock, however sign in authentication is still required on reboot.
 - **Local account**: always asks for authentication in the form of a password, not configurable in **Settings**
-- **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
 
 > [!NOTE]
 > Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is only respected when the device goes into StandBy.
