@@ -259,18 +259,29 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | String |
 | **Possible values** | none <br/> safe (default) <br/> all |
 
+#### Enable / disable automatic security intelligence updates
+
+Determines whether security intelligence updates are installed automatically:
+
+|||
+|:---|:---|
+| **Key** | automaticDefinitionUpdateEnabled |
+| **Data type** | Boolean |
+| **Possible values** | true (default) <br/> false |
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
 The following configuration profile will:
 
-- Enable real-time protection (RTP).
+- Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
-  - **Potentially unwanted applications (PUA)** are blocked.
-  - **Archive bombs** (file with a high compression rate) are audited to the product logs.
-- Enable cloud-delivered protection.
-- Enable automatic sample submission at `safe` level.
+  - **Potentially unwanted applications (PUA)** are blocked
+  - **Archive bombs** (file with a high compression rate) are audited to the product logs
+- Enable automatic security intelligence updates
+- Enable cloud-delivered protection
+- Enable automatic sample submission at `safe` level
 
 ### Sample profile
 
@@ -290,6 +301,7 @@ The following configuration profile will:
       ]
    },
    "cloudService":{
+      "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
    }
@@ -350,7 +362,8 @@ The following configuration profile contains entries for all settings described 
    "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
-      "automaticSampleSubmissionConsent":"safe"
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
    }
 }
 ```
