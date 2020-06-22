@@ -2100,6 +2100,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 
