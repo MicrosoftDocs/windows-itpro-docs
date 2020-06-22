@@ -33,12 +33,17 @@ For more infomation on how to setup Microsoft Defender ATP for Android and Condi
 Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
 
-## Configure Custom Indicators  
+## Configure custom indicators  
 
 >[!NOTE]
 > Microsoft Defender ATP for Android only supports creating custom indicators for IP addresses and URLs/domains.
 
 Microsoft Defender ATP for Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
+
+## Configure web protection
+Microsoft Defender ATP for Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Endpoint Manager Admin center.
+
+For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
 ## Related topics
 - [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp-android.md)
