@@ -1,6 +1,6 @@
 ---
-title: Login to JamF Pro
-description: Login to JamF Pro
+title: Login to Jamf Pro
+description: Login to Jamf Pro
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Log in to JamF Pro
+# Log in to Jamf Pro
 
 **Applies to:**
 
@@ -25,15 +25,15 @@ ms.topic: conceptual
 
 1. Enter your credentials.
 
-    ![Image of JamF Pro dashboard](images/jamf-pro-portal1.png)
+    ![Image of Jamf Pro dashboard](images/jamf-pro-portal1.png)
 
 2. Select **Computers**.
 
-    ![Image of JamF Pro dashboard](images/jamf-pro-dashboard.png)
+    ![Image of Jamf Pro dashboard](images/jamf-pro-dashboard.png)
 
 3. You will see the settings that are available.
 
-     ![Image of JamF Pro dashboard](images/jamfpro-settings.png)
+     ![Image of Jamf Pro dashboard](images/jamfpro-settings.png)
 
 
 ## Next step

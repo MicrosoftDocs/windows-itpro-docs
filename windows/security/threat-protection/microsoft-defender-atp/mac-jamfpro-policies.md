@@ -1,6 +1,6 @@
 ---
-title: Setup the Microsoft Defender ATP for macOS device groups in Jamf Pro
-description: Learn how to setup the Microsoft Defender ATP for macOS device groups in Jamf Pro
+title: Setup the Microsoft Defender ATP for macOS policies in Jamf Pro
+description: Learn how to setup the Microsoft Defender ATP for macOS policies in Jamf Pro
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Setup the Microsoft Defender ATP for macOS device groups in Jamf Pro
+# Setup the Microsoft Defender ATP for macOSpolicies in Jamf Pro
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-1. In the JamF Pro dashboard, navigate to **Configuration Profiles**. 
+1. In the Jamf Pro dashboard, navigate to **Configuration Profiles**. 
 
 2. Select **New**.
 
@@ -218,14 +218,18 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
     For more information, see [Privacy preferences policy control](mac-install-with-jamf.md#privacy-preferences-policy-control).
 
     a. Select **Options > Privacy Preferences Policy Control**.
+
     b. Use any identifier and identifier type = Bundle.
+
     c. Set Code Requirement to identifier 'com.microsoft.wdav' and `anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
+
     d. Set app or service to `SystemPolicyAllFiles` and access to `Allow`.
 
 14. Approve Kernel Extension for Microsoft Defender ATP.
 
-  a. In **Computers > Configuration Profiles select Options > Approved Kernel Extensions**.
-  b. Use **UBF8T346G9** for **Team Id**.
+    a. In **Computers > Configuration Profiles select Options > Approved Kernel Extensions**.
+  
+    b. Use **UBF8T346G9** for **Team Id**.
 
 
 ## Onboard the package
@@ -234,7 +238,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of file](images/plist-onboarding-file.png)
 
-2. In the JamF Pro dashboard, select **New**.
+2. In the Jamf Pro dashboard, select **New**.
 
     ![Image of Jamf Pro dashboard](images/jamf-pro-configure-profile.png)
 
