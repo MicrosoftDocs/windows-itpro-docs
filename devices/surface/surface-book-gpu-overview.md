@@ -18,9 +18,9 @@ audience: itpro
 ## Introduction
 
 Surface Book 3, the most powerful Surface laptop yet released, integrates fully modernized compute and graphics capabilities into its famous detachable form factor.  Led by the quad-core 10th Gen Intel® Core™ i7 and NVIDIA® Quadro RTX™ 3000 graphical processing unit (GPU) on the 15-inch model, Surface Book 3 comes in a wide range of configurations for consumers, creative professionals, architects, engineers, and data scientists. This article explains the major differences between the GPU configurations across 13-inch and 15-inch models of Surface Book 3.
- 
-A significant differentiator across Surface Book 3 models is the GPU configuration. In addition to the integrated Intel GPU built into all models, all but the entry-level, 13.5-inch core i5 device also feature a discrete NVIDIA GPU with Max-Q Design, which incorporates features that optimize energy efficiency for mobile form factors.
- 
+
+A significant differentiator across Surface Book 3 models is the GPU configuration. In addition to the integrated Intel GPU built into all models, all but the entry-level 13.5-inch Core i5 device also feature a discrete NVIDIA GPU with Max-Q Design, which incorporates features that optimize energy efficiency for mobile form factors.
+
 Built into the keyboard base, the additional NVIDIA GPU provides advanced graphics rendering capabilities and comes in two primary configurations: GeForce® GTX® 1650/1660 Ti for consumers or creative professionals and Quadro RTX 3000 for creative professionals, engineers, and other business professionals who need advanced graphics or deep learning capabilities. This article also describes how to optimize app utilization of GPUs by specifying which apps should use the integrated iGPU versus the discrete NVIDIA GPU.
 
 ## Surface Book 3 GPUs
@@ -34,17 +34,17 @@ The integrated GPU (iGPU) included on all Surface Book 3 models incorporates a w
 ### NVIDIA GeForce GTX 1650
 
 NVIDIA GeForce GTX 1650 with Max-Q design delivers a major upgrade of the core streaming multiprocessor to more efficiently handle the complex graphics of modern games. Its
-concurrent execution of floating point and integer operations boosts performance in compute-heavy workloads of modern games. A new unified memory architecture with twice the cache of its predecessor allows for better performance on complex modern games. New shading advancements improve performance, enhance image quality, and deliver new levels of geometric complexity.
+concurrent execution of floating point and integer operations boosts performance in the compute-heavy workloads of modern games. A new unified memory architecture with twice the cache of its predecessor allows for better performance on complex modern games. New shading advancements improve performance, enhance image quality, and deliver new levels of geometric complexity.
 
 ### NVIDIA GeForce GTX 1660 Ti
 
 Compared with the GeForce GTX 1650, the faster GeForce GTX 1660 Ti provides Surface Book 3 with additional performance improvements and includes the new and upgraded NVIDIA Encoder, making it better for consumers, gamers, live streamers, and creative professionals.
- 
+
 Thanks to 6 GB of GDDR6 graphics memory, Surface Book 3 models equipped with NVIDIA GeForce GTX 1660 TI provide superior speeds on advanced business productivity software and popular games especially when running the most modern titles or livestreaming. With an optional 2 TB SSD (available in U.S. only), the 15-inch model with GeForce GTX 1660 Ti delivers the most storage of any Surface Book 3 device.
 
 ### NVIDIA Quadro RTX 3000
 
-NVIDIA Quadro RTX 3000 unlocks several key features for professional users:  ray tracing rendering and AI acceleration, and advanced graphics and compute performance. A combination of 30 RT cores, 240 tensor cores, and 6 GB of GDDR6 graphics memory enables multiple advanced workloads including Al-powered workflows, 3D content creation, advanced video editing, professional broadcasting, and multi-app workflows. Enterprise level hardware and software support integrate deployment tools to maximize uptime and minimize IT support requirements. Certified for the world’s most advanced software, Quadro drivers are optimized for professional applications, and are tuned, tested, and validated to provide app certification, enterprise level stability, reliability, availability, and support with extended product availability.
+NVIDIA Quadro RTX 3000 unlocks several key features for professional users:  ray tracing rendering and AI acceleration, and advanced graphics and compute performance. A combination of 30 RT cores, 240 tensor cores, and 6 GB of GDDR6 graphics memory enables multiple advanced workloads including Al-powered workflows, 3D content creation, advanced video editing, professional broadcasting, and multi-app workflows. Enterprise level hardware and software support integrate deployment tools to maximize uptime and minimize IT support requirements. Certified for the world’s most advanced software, Quadro drivers are optimized for professional applications and are tuned, tested, and validated to provide app certification, enterprise level stability, reliability, availability, and support with extended product availability.
  
 
 ## Comparing GPUs across Surface Book 3
@@ -53,7 +53,7 @@ NVIDIA GPUs provide users with great performance for gaming, live streaming, and
 
 - RTX acceleration for ray tracing and AI. This makes it possible to render film-quality, photorealistic objects and environments with physically accurate shadows, reflections and refractions.  And its hardware accelerated AI capabilities means the advanced AI-based features in popular applications can run faster than ever before.
 - Enterprise-level hardware, drivers and support, as well as ISV app certifications.
-- IT management features including an additional layer of dedicated enterprise tools for remote management that help maximize uptime and minimize IT support requirements. 
+- IT management features including an additional layer of dedicated enterprise tools for remote management that help maximize uptime and minimize IT support requirements.
 
  Unless you count yourself among the ranks of advanced engineering, design, architecture, or data science professionals, Surface Book 3 equipped with NVIDIA GeForce graphics capabilities will likely meet your needs. Conversely, if you’re already in -- or aspiring to join -- a profession that requires highly advanced graphics capabilities in a portable form factor that lets you work from anywhere, Surface Book 3 with Quadro RTX 3000 deserves serious consideration. To learn more, refer to the Surface Book 3 Quadro RTX 3000 technical overview.
  
@@ -61,13 +61,12 @@ NVIDIA GPUs provide users with great performance for gaming, live streaming, and
 
 |                      | **GeForce GTX 1650**                   | **GeForce GTX 1660 Ti**                            | **Quadro RTX 3000**                                                                                       |
 | -------------------- | -------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Target users**     | Gamers, hobbyists and online creators  | Gamers, creative professionals and online creators | Creative professionals, architects, engineers, developers, data scientists                                |
+| **Target users**     | Gamers, hobbyists, and online creators  | Gamers, creative professionals, and online creators | Creative professionals, architects, engineers, developers, data scientists                                |
 | **Workflows**        | Graphic design<br>Photography<br>Video | Graphic design<br>Photography<br>Video             | Al-powered Workflows  <br>App certifications<br>High-res video<br>Pro broadcasting<br>Multi-app workflows |
 | **Key apps**         | Adobe Creative Suite                   | Adobe Creative Suite                               | Adobe Creative Suite<br>Autodesk AutoCAD<br>Dassault Systemes SolidWorks                                  |
 | **GPU acceleration** | Video and image processing             | Video and image processing                         | Ray tracing + AI + 6K video<br>Pro broadcasting features<br>Enterprise support                            |
 
- 
- 
+
 **Table 2. GPU tech specs on Surface Book 3**
 
 |                                                          | **GeForce GTX 1650** | **GeForce GTX 1660 Ti** | **Quadro RTX 3000** |
@@ -92,11 +91,11 @@ NVIDIA GPUs provide users with great performance for gaming, live streaming, and
 | **High-bandwidth Digital Content Protection (HDCP) 2.2** | Yes                  | Yes                     | Yes                 |
 | **NVIDIA GPU Boost**                                     | Yes                  | Yes                     | Yes                 |
 
- 
+
  1. *Recommended*
  2.  *Supported*
 
-## Optimizing power and performance on Surface Book 3 
+## Optimizing power and performance on Surface Book 3
 
 Windows 10 includes a Battery Saver mode with a performance slider that lets you maximize app performance (by sliding it to the right) or preserve battery life (by sliding it to the left). Surface Book 3 implements this functionality algorithmically to optimize power and performance across the following components:
 
@@ -106,7 +105,7 @@ Windows 10 includes a Battery Saver mode with a performance slider that lets you
 - Processor IA Turbo limitations.
 
 By default, when the battery drops below 20 percent, the Battery Saver adjusts settings to extend battery life. When connected to power, Surface Book 3 defaults to “Best Performance” settings to ensure apps run in high performance mode on the secondary NVIDIA GPU present on all i7 Surface Book 3 systems.
- 
+
 Using default settings is recommended for optimal performance when used as a laptop or detached in tablet or studio mode. You can access Battery Saver by selecting the battery icon on the far right of the taskbar.
 
 ### Game mode
@@ -115,14 +114,14 @@ Surface Book 3 includes a new game mode that automatically selects maximum perfo
 
 ### Safe Detach
 
-New in Surface Book 3, apps enabled for Safe Detach let you disconnect while the app is using the GPU. For supported apps like *World of Warcraft*, your work is moved to the iGPU. 
+New in Surface Book 3, apps enabled for Safe Detach let you disconnect while the app is using the GPU. For supported apps like *World of Warcraft*, your work is moved to the iGPU.
 
 ### Modifying app settings to always use a specific GPU
 
 You can switch between the power-saving but still capable built-in Intel graphics and the more powerful discrete NVIDIA GPU and associate a GPU with a specific app. By default, Windows 10 automatically chooses the appropriate GPU, assigning graphically demanding apps to the discrete NVIDIA GPU. In most instances there is no need to manually adjust these settings. However, if you frequently detach and reattach the display from the keyboard base while using a graphically demanding app, you’ll typically need to close the app prior to detaching. To enable continuous use of the app without having to close it every time you detach or reattach the display, you can assign it to the integrated GPU, albeit with some loss of graphics performance.  
- 
+
 In some instances, Windows 10 may assign a graphically demanding app to be iGPU; for example, if the app is not fully optimized for hybrid graphics. To remedy this, you can manually assign the app to the discrete NVIDIA GPU.
- 
+
 **To configure apps using custom per-GPU options:**  
 
 1. Go to **Settings** > **System** > **Display** and select **Graphics Settings**.
@@ -157,7 +156,7 @@ In some instances, Windows 10 may assign a graphically demanding app to be iGPU;
 
 ## Summary
 
-Built for performance, Surface Book 3 includes different GPU configurations optimized to meet specific workload and use requirements. An integrated Intel Iris graphics GPU functions as the sole GPU on the entry-level core i5 device and as a secondary GPU on all other models. GeForce GTX 1650 features a major upgrade of the core streaming multiprocessor to run complex graphics more efficiently. The faster GeForce GTX 1660 Ti provides Surface Book 3 with additional performance improvements making it better for consumers, gamers, live streamers, and creative professionals. Quadro RTX 3000 unlocks several key features for professional users:  ray tracing rendering and AI acceleration, and advanced graphics and compute performance.
+Built for performance, Surface Book 3 includes different GPU configurations optimized to meet specific workload and use requirements. An integrated Intel Iris graphics GPU functions as the sole GPU on the entry-level Core i5 device and as a secondary GPU on all other models. GeForce GTX 1650 features a major upgrade of the core streaming multiprocessor to run complex graphics more efficiently. The faster GeForce GTX 1660 Ti provides Surface Book 3 with additional performance improvements making it better for consumers, gamers, live streamers, and creative professionals. Quadro RTX 3000 unlocks several key features for professional users:  ray tracing rendering and AI acceleration, and advanced graphics and compute performance.
 
 
 ## Learn more
