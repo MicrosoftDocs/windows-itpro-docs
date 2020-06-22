@@ -232,7 +232,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
     b. Use **UBF8T346G9** for **Team Id**.
 
 
-## Onboard the package
+## Step 1: Onboard the package
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist`.
 
@@ -270,3 +270,109 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 6. Select **Open** and select the onboarding file.
 
     ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
+
+7. Select **Upload**. 
+
+    ![Image of uploading plist file](images/jamfpro-upload-plist.png)
+
+
+8. Select the **Scope** tab.
+
+    ![Image of scope tab](images/jamfpro-scope-tab.png)
+
+9. Select the target computers.
+
+    ![Image of target computers](images/jamfpro-target-computer.png)
+
+    ![Image of target computers](images/jamfpro-targets.png) 
+
+10. Select **Save**.
+
+    ![Image of target computers](images/jamfpro-deployment-target.png)
+
+    ![Image of target computers selected](images/jamfpro-target-selected.png)
+
+11. Select **Done**.
+
+    ![Image of target computers](images/jamfpro-target-group.png)
+
+    ![List of configuration profiles](images/jamfpro-configuration-policies.png)
+
+## Step 2: Configure Microsoft Defender ATP settings
+
+1. In Jamf Pro dashboard, select **General**.
+
+2. Enter the following values:
+
+  - Name: MDATP MDAV configuration settings
+  - Description:\<blank\>
+  - Category: None (default)
+  - Distribution Method: Install Automatically(default)
+  - Level: Computer Level(default)
+
+    ![Image of configuration settings](images/3160906404bc5a2edf84d1d015894e3b.png)
+
+3. Select **Application & Custom Settings** > **Configure**.
+
+    ![Image of configuration settings](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
+
+4. In **Application & Custom Settings**, select the radio button **Upload File (PLIST file)**.
+
+    ![Image of configuration settings](images/6f85269276b2278eca4bce84f935f87b.png)
+
+5. In **Preferences Domain**, enter `com.microsoft.wdav`.
+
+    ![Image of configuration settings](images/db15f147dd959e872a044184711d7d46.png)
+
+6. Select **Upload PLIST File**.
+
+    ![Image of configuration settings](images/526e978761fc571cca06907da7b01fd6.png)
+
+    ![Image of configuration settings](images/d8254adf4bd30290f9a8a0c131830a1f.png)
+
+7. Select **Choose File**.
+
+    ![Image of configuration settings](images/98acea3750113b8dbab334296e833003.png)
+
+8. Select the **MDATP_MDAV_configuration_settings.plist**.
+
+9. Select **Open**.
+
+    ![Image of configuration settings](images/0adb21c13206861ba9b30a879ade93d3.png)
+
+    ![Image of configuration settings](images/f624de59b3cc86e3e2d32ae5de093e02.png)
+
+    >[!NOTE]
+    >If you end-up uploading the Intune file, you get the following error:<br>
+    >![Image of configuration settings](images/8e69f867664668796a3b2904896f0436.png)
+
+
+10. Select **Upload**. 
+
+    ![Image of configuration settings](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
+
+11. Select **Save**.
+
+    ![Image of configuration settings](images/33e2b2a1611fdddf6b5b79e54496e3bb.png)
+
+    ![Image of configuration settings](images/a422e57fe8d45689227e784443e51bd1.png)
+
+12. Select the **Scope** tab.
+
+13. Select **Add**.
+
+    ![Image of configuration settings](images/9fc17529e5577eefd773c658ec576a7d.png)
+
+14. Select **Computer Groups** next to **Contoso's Machine Group**. 
+
+15. Select **Add**, then select **Save**.
+
+    ![Image of configuration settings](images/cf30438b5512ac89af1d11cbf35219a6.png)
+
+    ![Image of configuration settings](images/6f093e42856753a3955cab7ee14f12d9.png)
+
+16. Select **Done**. You'll see the new **Configuration profile**.
+
+    ![Image of configuration settings](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+
+
