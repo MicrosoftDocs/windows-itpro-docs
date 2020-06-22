@@ -28,7 +28,7 @@ Applies to:
 >[!IMPORTANT] 
 >Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
 
-At Microsoft, we are deeply committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
+At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
 
 Microsoft collects data through multiple interactions with users of Windows 10 devices. This information can contain personal data that may be used to provide, secure, and improve Windows 10 services. To help users and organizations control the collection of personal data, Windows 10 provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
 
