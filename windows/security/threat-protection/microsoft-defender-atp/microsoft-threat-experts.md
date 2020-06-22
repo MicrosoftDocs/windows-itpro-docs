@@ -68,6 +68,7 @@ The option to **Consult a threat expert** is available in several places in the 
 > [!NOTE]
 > Customers with Premier Support subscription mapped to their Office 365 license can track the status of their Experts on Demand cases through Microsoft Services Hub. Watch this video for a quick overview of the Microsoft Services Hub.
 <BR>
+  
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f] 
 <BR>
    
