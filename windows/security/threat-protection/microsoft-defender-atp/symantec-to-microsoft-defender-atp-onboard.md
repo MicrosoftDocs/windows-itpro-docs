@@ -71,19 +71,19 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
 1. [Disable Tamper Protection](https://knowledge.broadcom.com/external/article?legacyId=tech192023) in Symantec.
 
 2. Delete the uninstall password for Symantec:
-   a. On your Windows devices, open Registry Editor as an administrator.
-   b. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
-   c. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
+   1. On your Windows devices, open Registry Editor as an administrator.
+   2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
+   3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
 
-3. Remove Symantec from your devices. You can use SEP Manager to perform this task. See [Configuring client packages to uninstall existing security software](https://techdocs.broadcom.com/content/broadcom/techdocs/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Managing-a-custom-installation/preparing-for-client-installation-v16742985-d21e7/configuring-client-packages-to-uninstall-existing-v73569396-d21e2634.html)
+3. Remove Symantec from your devices. You can use SEP Manager to perform this task. See [Configuring client packages to uninstall existing security software](https://techdocs.broadcom.com/content/broadcom/techdocs/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Managing-a-custom-installation/preparing-for-client-installation-v16742985-d21e7/configuring-client-packages-to-uninstall-existing-v73569396-d21e2634.html).
   
 
 > [!TIP]
 > Need help? See the following Broadcom resources: 
 > - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
 > -  Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040)
-> - macOS: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
-> - Linux [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054) 
+> - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
+> - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054) 
 
 ## Next steps
 
