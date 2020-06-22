@@ -106,7 +106,7 @@ Here’s a summary of the types of data that is included with each setting:
 | **Diagnostic data events** | No Windows diagnostic data sent. | Minimum data required to keep the device secure, up to date, and performing as expected. | Additional data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users. | Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.|
 | **Crash Metadata** | N/A | Yes | Yes | Yes |
 | **Crash Dumps** | N/A | No | Triage dumps only <br></br>For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting). | Full memory dumps <br></br>For more information about crash dumps, see [Windows Error Reporting](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting).  |
-| **Diagnostic logs** | N/A | No | No | No |
+| **Diagnostic logs** | N/A | No | No | Yes |
 | **Data collection** | N/A | 100% | Sampling applies | Sampling applies |
 
 
