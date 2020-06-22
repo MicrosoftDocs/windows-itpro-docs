@@ -34,7 +34,7 @@ If your HoloLens becomes frozen or unresponsive:
 
 - Turn off your HoloLens by pressing the power button until all five of the LEDs turn themselves off, or for 15 seconds if the LEDs are unresponsive. To start your HoloLens, press the power button again.
 
-If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1stgGen) device.](hololens1-recovery.md)
+If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
 
 ## Holograms don't look good
 
