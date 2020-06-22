@@ -49,36 +49,38 @@ Here is an example for setting the user right BackupFilesAndDirectories for Admi
 Here are examples of data fields. The encoded 0xF000 is the standard delimiter/separator.
 
 - Grant a user right to Administrators group via SID:
-   ```
+   ```xml
    <Data>*S-1-5-32-544</Data>
    ```
  
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via SID:
-   ```
+   ```xml
    <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
    ```
 
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings:
-   ```
+   ```xml
    <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
    ```
  
 - Grant a user right to multiple groups (Authenticated Users, Administrators) via strings:
-   ```
+   ```xml
    <Data>Authenticated Users&#xF000;Administrators</Data>
    ```
 
 - Empty input indicates that there are no users configured to have that user right:
-   ```
+   ```xml
    <Data></Data>
    ```
+   
   If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
 
 > [!NOTE]
 > `&#xF000;` is the entity encoding of 0xF000.
 
 For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
-```
+
+```xml
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
@@ -1574,7 +1576,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor.On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should be modified only by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
+This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should be modified only by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
 > [!NOTE]
 > This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
 
