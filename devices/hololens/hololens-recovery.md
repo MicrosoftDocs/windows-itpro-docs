@@ -19,107 +19,99 @@ appliesto:
 - HoloLens 2
 ---
 
-# Restart, reset, or recover HoloLens
+# Reset and Recovery for HoloLens 2
 
-If you're experiencing problems with your HoloLens you may want to try a restart, reset, or even re-flash with device recovery.
+## Charging the device
 
-Here are some things to try if your HoloLens isn't running well.  This article will guide you through the recommended recovery steps in succession.
+Before starting any troubleshooting procedure, if possible, ensure that your device is charged at least between 20% and 40%.
 
-This article focuses on the HoloLens device and software, if your holograms don't look right, [this article](hololens-environment-considerations.md) talks about environmental factors that improve hologram quality.
-
-## Restart your HoloLens
-
-First, try restarting the device.
-
-### Perform a safe restart by using Cortana
-
-The safest way to restart the HoloLens is by using Cortana. This is generally a great first-step when experiencing an issue with HoloLens:
-
-1. Put on your device
-1. Make sure it's powered on, a user is logged in, and the device is not waiting for a password to unlock it.
-1. Say "Hey Cortana, reboot" or "Hey Cortana, restart."
-1. When she acknowledges she will ask you for confirmation. Wait a second for a sound to play after she has finished her question, indicating she is listening to you and then say "Yes."
-1. The device will now restart.
-
-### Perform a safe restart by using the power button
-
-If you still can't restart your device, you can try to restart it by using the power button:
-
-1. Press and hold the power button for five seconds.
-   1. After one second, you will see all five LEDs illuminate, then slowly turn off from right to left.
-   1. After five seconds, all LEDs will be off, indicating the shutdown command was issued successfully.
-   1. Note that it's important to stop pressing the button immediately after all the LEDs have turned off.
-1. Wait one minute for the shutdown to cleanly succeed. Note that the shutdown may still be in progress even if the displays are turned off.
-1. Power on the device again by pressing and holding the power button for one second.
-
-### Perform a safe restart by using Windows Device Portal
+Please ensure you are using the charger and the USB Type-C cables that come with the HoloLens2 device. In case they are not available ensure the charger available can support at least 15W of power.
 
 > [!NOTE]
-> To do this, HoloLens has to be configured as a developer device.  
-> Read more about [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
+> If possible, do not use a PC to charge the device over USB as this will provide a very slow charge.
 
-If the previous procedure doesn't work, you can try to restart the device by using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). In the upper right corner, there is an option to restart or shut down the device.
+If the device is correctly booted and running there are three different ways of checking the charge of your battery.
 
-### Perform an unsafe forced restart
+1. From the main menu of the HoloLens Device UI.
+2. Using the LED close to the power button (for 40% you should see at least two solid LEDS).
+3. On your Host PC open File Explorer window and look for your HoloLens 2 device on left side under “This PC”.
+    
+      a. Right click on the name of the device and select properties. A dialog will appear showing the battery level for your device.
 
-If none of the previous methods are able to successfully restart your device, you can force a restart. This method is equivalent to pulling the battery from the HoloLens.  It is a dangerous operation which may leave your device in a corrupt state.  If that happens, you'll have to flash your HoloLens.  
+![HoloLens 2 ResetRecovery](images/ResetRecovery2.png)
 
-> [!WARNING]
-> This is a potentially harmful method and should only be used in the event none of the above methods work.
+If the device cannot be booted to the Startup Menu, please take note of the LEDs and enumeration on the host PC and follow the troubleshooting guide (https://docs.microsoft.com/hololens/hololens-troubleshooting). In case the state of the device does not fall in any of the states listed in the troubleshooting guide, execute the **hard reset procedure** without reconnecting the device to your host PC, but connect it instead to the power supply. Wait for at least one hour for the device to charge.
 
-1. Press and hold the power button for at least 10 seconds.
+## Reset the device
 
-   - It's okay to hold the button for longer than 10 seconds.
-   - It's safe to ignore any LED activity.
-1. Release the button and wait for two or three seconds.
-1. Power on the device again by pressing and holding the power button for one second.
-If you're still having problems, press the power button for 4 seconds, until all of the battery indicators fade out and the screen stops displaying holograms. Wait 1 minute, then press the power button again to turn on the device.
+Under certain circumstances the customer may be required to manually reset the device without using the SW UI. 
 
-## Reset to factory settings
+### Standard procedure
+1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable.
 
-> [!NOTE]
-> The battery needs at least 40 percent charge to reset.
+2. Press and hold the power button for 15 seconds. All LEDs should be off.
 
-If your HoloLens is still experiencing issues after restarting, try resetting it to factory state.  Resetting your HoloLens keeps the version of the Windows Holographic software that's installed on it and returns everything else to factory settings.
+3. Wait 2-3 seconds and Short press the power button, the LEDs close to the power button will light up and the device will start to boot. 
 
-If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to Wi-Fi, create a user account, download apps, and so forth).
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below:
 
-1. Launch the Settings app, and then select **Update** > **Reset**.
-1. Select the **Reset device** option and read the confirmation message.
-1. If you agree to reset your device, the device will restart and display a set of spinning gears with a progress bar.
-1. Wait about 30 minutes for this process to complete.
-1. The reset will complete and the device will restart into the out-of-the-box experience.
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
-## Re-install the operating system
+### Hard-reset procedure
 
-If the device is still having a problem after rebooting and resetting, you can use a recovery tool on your computer to reinstall the HoloLens' operating system and firmware.  
+If the standard reset procedure does not work, you can use the hard-reset procedure.
 
-HoloLens (1st gen) and HoloLens 2 use different tools but both tools will auto-detect your HoloLens and install new software.
+1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable.
 
-All of the data HoloLens needs to reset is packaged in a Full Flash Update (ffu).  This is similar to an iso, wim, or vhd.  [Learn about FFU image file formats.](https://docs.microsoft.com/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+2. Hold volume down + power for 15 seconds.
 
-### HoloLens 2
+3. The device will automatically reboot. 
 
-The Advanced Recovery Companion is a new app in Microsoft Store restore the operating system image to your HoloLens 2 device. Advanced Recovery Companion erases all your personal data, apps, and settings, and resets TPM.
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below.
 
-1. On your computer, get [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from Microsoft Store.
-2. Connect HoloLens 2 to your computer.
-3. Start Advanced Recovery Companion.
-4. On the **Welcome** page, select your device.
-5. On the **Device info** page, select **Install software** to install the default package. (If you have a Full Flash Update (FFU) image that you want to install instead, select **Manual package selection**.)
-6. Software installation will begin. Do not use the device or disconnect the cable during installation. When you see the **Installation finished** page, you can disconnect and use your device.
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
-#### Manual flashing mode
+## Clean reflash the device
 
-> [!TIP]
-> In the event that a HoloLens 2 gets into a state where Advanced Recovery Companion cannot recognize the device, and it does not boot, try forcing the device into Flashing Mode and recovering it with Advanced Recovery Companion:
+In extraordinary situations you may be required to clean flash the device. There are two ways to reflash a HoloLens2 device. For all reflashing procedures you will be required to [install the Advanced Recovery Companion app from the Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8). If you reset your device, all your personal data, apps, and settings will be erased, including TPM reset.
 
-1.    Connect the HoloLens 2 to a PC with Advanced Recovery Companion installed.
-1.    Press and hold the **Volume Up and Power buttons** until the device reboots.  Release the Power button, but continue to hold the Volume Up button until the third LED is lit.
-1.    The device should be visible in **Device Manager** as a **Microsoft HoloLens Recovery** device.
-1.    Launch Advanced Recovery Companion, and follow the on-screen prompts to reflash the OS to the HoloLens 2.
+Advanced Recovery Companion is currently set to download the feature release build for [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004), if you would like to download the latest HoloLens 2 FFU to flash your device via Advanced Recovery Companion then you may download it from [here](https://aka.ms/hololens2download). This is kept up-to-date and will match the latest generally available build. 
 
-#### Downloading ARC without using the app store
+Before starting the flashing procedure make sure the app is installed and running on your Windows 10 PC and ready to detect the device.
+
+![HoloLens 2 Clean Reflash](images/ARC1.png)
+
+### Normal procedure
+
+1. While the HoloLens device is running, connect it to your Windows 10 PC where you previously launched the Advanced Recovery Companion App.
+
+2. The device will automatically be detected and the Advanced Recovery Companion App UI will update as follows:
+
+![HoloLens 2 Clean Reflash](images/ARC2.png)
+
+3. Select the HoloLens2 device in the Advanced Recovery Companion App UI and follow the instructions to complete the flashing.
+
+### Manual procedure
+
+If the device does not boot correctly you may need to put the HoloLens 2 device in Recovery mode.
+
+1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable. 
+
+2. Press and hold the power button for 15 seconds. All LEDs should turn off. 
+
+3. While pressing the volume up button, press and release the power button to boot the device. Wait 10 seconds before releasing the volume up button. Out of the 5 LEDs on the device, only the middle LED will light up.
+
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the image below.
+
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+
+5. The device will be automatically detected, and the Advanced Recovery Companion app UI will update as follows:
+
+![HoloLens 2 Clean Reflash](images/ARC2.png)
+
+6. Select the HoloLens 2 device in the Advanced Recovery Companion app UI and follow the instructions to complete the flashing.
+
+## Downloading ARC without using the app store
 
 If an IT environment prevents the use of the Windows Store app or limits access to the retail store, IT administrators can make this app available through other ‘offline’ deployment paths. 
 
@@ -151,18 +143,3 @@ Other resources:
 - https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options
 
 
-### HoloLens (1st gen)
-
-If necessary, you can install a completely new operating system on your HoloLens (1st gen) with the Windows Device Recovery Tool.
-
-Before you use this tool, determine if restarting or resetting your HoloLens fixes the problem. The recovery process may take some time.  When you're done, the latest version of the Windows Holographic software approved for your HoloLens will be installed.
-
-To use the tool, you'll need a computer running Windows 10 or later, with at least 4 GB of free storage space.  Please note that you can't run this tool on a virtual machine.
-
-To recover your HoloLens
-
-1. Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.
-1. Connect the HoloLens (1st gen) to your computer using the Micro USB cable that came with your HoloLens.
-1. Run the Windows Device Recovery Tool and follow the instructions.
-
-If the HoloLens (1st gen) isn't automatically detected, select **My device was not detected** and follow the instructions to put your device into recovery mode.
