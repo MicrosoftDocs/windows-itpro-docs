@@ -71,6 +71,26 @@ To enable Microsoft Defender AV, we recommend using Intune. However, you can use
 |[Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus`. <br/><br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<br/> <br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This enables Microsoft Defender Antivirus.  |
 |Registry Editor |1. As an administrator on the device, open Registry Editor.<br/><br/>2. Navigate to `ComputerHKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.<br/><br/>3. Look for a DWORD entry called `DisableAntiSpyware`. If the entry exists, change its value from **1** (Hexidecimal base) to **0**. <br/><br/>4. Reboot the device. |
 
+### Verify that Microsoft Defender AV is in passive mode
+
+You can use either Command Prompt or PowerShell to perform this task.
+
+#### Use Command Prompt
+
+1. On a Windows device, open Command Prompt as an administrator.
+
+2. Type `sc query windefend`, and then press Enter.
+
+3. Review the results to confirm that Microsoft Defender AV is running in passive mode.
+
+#### Use PowerShell
+
+1. On a Windows device, open Windows PowerShell as an administrator.
+
+2. Run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/Get-MpComputerStatus?view=win10-ps) cmdlet. 
+
+3. In the list of results, look for **AntivirusEnabled: True**. 
+
 ## Add Microsoft Defender ATP to the exclusion list for Symantec
 
 This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to add depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
