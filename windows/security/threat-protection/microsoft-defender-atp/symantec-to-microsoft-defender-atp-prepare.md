@@ -79,4 +79,4 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 **Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
 
-- **[Proceed to set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md)**
+- [Proceed to set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md).
