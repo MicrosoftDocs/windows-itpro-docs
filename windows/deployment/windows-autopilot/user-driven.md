@@ -47,7 +47,7 @@ For more information on the available join options, see the following sections:
 
 - [Azure Active Directory join](#user-driven-mode-for-azure-active-directory-join) is available if devices do not need to be joined to an on-prem Active Directory domain.
 - [Hybrid Azure Active Directory join](#user-driven-mode-for-hybrid-azure-active-directory-join) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain.
-- [Hybrid Azure Active Directory join with VPN support](#user-driven-mode-for-hybrid-azure-active-directory-join-with-VPN-support) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain, but are not connected to the corporate network and must use VPN connectivity.
+- [Hybrid Azure Active Directory join with VPN support](#user-driven-mode-for-hybrid-azure-active-directory-join-with-vpn-support) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain, but are not connected to the corporate network and must use VPN connectivity.
 
 ## User-driven mode for Azure Active Directory join
 
